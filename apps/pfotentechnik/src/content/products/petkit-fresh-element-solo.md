@@ -169,8 +169,11 @@ alternatives:
   - xiaomi-smart-pet-food-feeder-2
   - petkit-yumshare-solo
 comparisons:
-  - beste-futterautomaten-fuer-katzen
-  - beste-futterautomaten-fuer-hunde
+  - "beste-futterautomaten-fuer-katzen"
+  - "beste-futterautomaten-fuer-hunde"
+  - "beste-futterautomaten-fuer-kleine-hunde"
+  - "beste-futterautomaten-fuer-welpen"
+  - "futterautomat-mit-app"
 comparisonFilters:
   animal:
     - dog

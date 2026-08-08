@@ -1,0 +1,445 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-08T09:38:45.066Z",
+  "mode": "check",
+  "summary": {
+    "products": 82,
+    "changedProducts": 0,
+    "actions": 0,
+    "missingAssets": 34,
+    "staleComparisonRelations": 36,
+    "errors": 0
+  },
+  "actionCounts": {},
+  "changedProducts": [],
+  "missingAssets": [
+    {
+      "slug": "enabot-ebo-air-2",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "enabot-ebo-air-2",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "enabot-ebo-air-2",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "furbo-360-hundekamera",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "furbo-360-hundekamera",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "furbo-360-hundekamera",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "garmin-alpha-t-20",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "garmin-alpha-tt-25",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "litter-robot-5-pro",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "litter-robot-5-pro",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "litter-robot-5-pro",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "neakasa-m1-plus",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "neakasa-m1-plus",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "neakasa-m1-plus",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "oneisall-2-in-1-feeder-water",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 1
+    },
+    {
+      "slug": "paj-pet-finder-4g-mini",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "pawsync-smart-pet-feeder",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 1
+    },
+    {
+      "slug": "petkit-purobot-max-pro-2",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "petkit-purobot-max-pro-2",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "petkit-purobot-max-pro-2",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "petlibro-scout-smart-camera",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "petlibro-scout-smart-camera",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "petlibro-scout-smart-camera",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "petlibro-space-smart-feeder",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "petsafe-freshfeed-refrigerated-feeder",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 1
+    },
+    {
+      "slug": "petsafe-healthy-pet-simply-feed",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 1
+    },
+    {
+      "slug": "petsafe-smart-feed-2",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 1
+    },
+    {
+      "slug": "petwalk-medium-tiertuer",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "surefeed-microchip-pet-feeder-connect",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 1
+    },
+    {
+      "slug": "tractive-dog-6-xl",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "tractive-dog-6",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "weenect-xs",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "weenect-xt",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "wopet-cube-air-ca10",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    }
+  ],
+  "staleComparisonRelations": [
+    {
+      "slug": "aqara-smart-pet-feeder-c1",
+      "comparisons": [
+        "beste-futterautomaten-fuer-katzen",
+        "beste-futterautomaten-fuer-hunde",
+        "beste-futterautomaten-ohne-wlan"
+      ]
+    },
+    {
+      "slug": "cat-mate-c200",
+      "comparisons": [
+        "beste-futterautomaten-fuer-katzen"
+      ]
+    },
+    {
+      "slug": "cat-mate-c300",
+      "comparisons": [
+        "beste-futterautomaten-fuer-katzen"
+      ]
+    },
+    {
+      "slug": "cat-mate-c500",
+      "comparisons": [
+        "beste-futterautomaten-fuer-hunde"
+      ]
+    },
+    {
+      "slug": "cat-mate-shell-fountain",
+      "comparisons": [
+        "beste-trinkbrunnen-fuer-katzen"
+      ]
+    },
+    {
+      "slug": "catit-pixi-smart-6-meal-feeder",
+      "comparisons": [
+        "beste-futterautomaten-fuer-katzen"
+      ]
+    },
+    {
+      "slug": "catit-pixi-vision-smart-feeder",
+      "comparisons": [
+        "beste-futterautomaten-fuer-katzen",
+        "beste-futterautomaten-mit-kamera"
+      ]
+    },
+    {
+      "slug": "garmin-alpha-tt-25",
+      "comparisons": [
+        "gps-tracker-mit-langer-akkulaufzeit"
+      ]
+    },
+    {
+      "slug": "honeyguardian-smart-pet-feeder-s305d",
+      "comparisons": [
+        "beste-futterautomaten-fuer-katzen"
+      ]
+    },
+    {
+      "slug": "imipaw-3l-automatic-cat-feeder",
+      "comparisons": [
+        "beste-futterautomaten-fuer-katzen",
+        "beste-futterautomaten-fuer-hunde"
+      ]
+    },
+    {
+      "slug": "oneisall-2-2l-cordless-fountain",
+      "comparisons": [
+        "beste-trinkbrunnen-fuer-katzen"
+      ]
+    },
+    {
+      "slug": "oneisall-2-in-1-feeder-water",
+      "comparisons": [
+        "beste-futterautomaten-fuer-katzen"
+      ]
+    },
+    {
+      "slug": "pawsync-smart-pet-feeder",
+      "comparisons": [
+        "beste-futterautomaten-fuer-katzen",
+        "beste-futterautomaten-fuer-hunde"
+      ]
+    },
+    {
+      "slug": "petkit-eversweet-3-pro-uvc",
+      "comparisons": [
+        "beste-trinkbrunnen-fuer-katzen"
+      ]
+    },
+    {
+      "slug": "petkit-eversweet-5-mini",
+      "comparisons": [
+        "beste-trinkbrunnen-fuer-katzen"
+      ]
+    },
+    {
+      "slug": "petkit-eversweet-max-cordless",
+      "comparisons": [
+        "beste-trinkbrunnen-fuer-katzen",
+        "beste-trinkbrunnen-fuer-hunde"
+      ]
+    },
+    {
+      "slug": "petkit-eversweet-solo-se",
+      "comparisons": [
+        "beste-trinkbrunnen-fuer-katzen"
+      ]
+    },
+    {
+      "slug": "petkit-fresh-element-solo",
+      "comparisons": [
+        "beste-futterautomaten-fuer-hunde"
+      ]
+    },
+    {
+      "slug": "petkit-yumshare-dual-hopper",
+      "comparisons": [
+        "beste-futterautomaten-fuer-katzen",
+        "beste-futterautomaten-fuer-hunde"
+      ]
+    },
+    {
+      "slug": "petkit-yumshare-solo-2",
+      "comparisons": [
+        "beste-futterautomaten-mit-kamera",
+        "beste-futterautomaten-fuer-katzen",
+        "beste-futterautomaten-fuer-hunde"
+      ]
+    },
+    {
+      "slug": "petlibro-air-wifi-feeder",
+      "comparisons": [
+        "beste-futterautomaten-fuer-katzen",
+        "beste-futterautomaten-fuer-hunde"
+      ]
+    },
+    {
+      "slug": "petlibro-dockstream-2-smart",
+      "comparisons": [
+        "beste-trinkbrunnen-fuer-hunde"
+      ]
+    },
+    {
+      "slug": "petlibro-dockstream-cordless",
+      "comparisons": [
+        "beste-trinkbrunnen-fuer-katzen"
+      ]
+    },
+    {
+      "slug": "petlibro-dockstream-rfid-smart",
+      "comparisons": [
+        "beste-trinkbrunnen-fuer-katzen"
+      ]
+    },
+    {
+      "slug": "petlibro-glacier-ultrafiltration",
+      "comparisons": [
+        "beste-trinkbrunnen-fuer-katzen"
+      ]
+    },
+    {
+      "slug": "petlibro-granary-2-vision",
+      "comparisons": [
+        "beste-futterautomaten-mit-kamera",
+        "beste-futterautomaten-fuer-katzen"
+      ]
+    },
+    {
+      "slug": "petlibro-granary-camera-feeder",
+      "comparisons": [
+        "beste-futterautomaten-fuer-katzen",
+        "beste-futterautomaten-fuer-hunde"
+      ]
+    },
+    {
+      "slug": "petlibro-granary-dual-feeder",
+      "comparisons": [
+        "beste-futterautomaten-fuer-katzen"
+      ]
+    },
+    {
+      "slug": "petlibro-polar-wet-food-feeder",
+      "comparisons": [
+        "beste-futterautomaten-fuer-katzen",
+        "beste-futterautomaten-fuer-hunde"
+      ]
+    },
+    {
+      "slug": "petsafe-freshfeed-refrigerated-feeder",
+      "comparisons": [
+        "beste-futterautomaten-fuer-katzen"
+      ]
+    },
+    {
+      "slug": "petsafe-healthy-pet-simply-feed",
+      "comparisons": [
+        "beste-futterautomaten-fuer-hunde",
+        "beste-futterautomaten-fuer-katzen",
+        "beste-futterautomaten-ohne-wlan"
+      ]
+    },
+    {
+      "slug": "petsafe-smart-feed-2",
+      "comparisons": [
+        "beste-futterautomaten-fuer-hunde",
+        "beste-futterautomaten-fuer-katzen"
+      ]
+    },
+    {
+      "slug": "surefeed-microchip-pet-feeder",
+      "comparisons": [
+        "beste-futterautomaten-fuer-katzen",
+        "beste-futterautomaten-fuer-nassfutter"
+      ]
+    },
+    {
+      "slug": "wopet-cube-air-ca10",
+      "comparisons": [
+        "futterautomat-mit-app"
+      ]
+    },
+    {
+      "slug": "wopet-patrol-f07-pro",
+      "comparisons": [
+        "beste-futterautomaten-fuer-katzen"
+      ]
+    },
+    {
+      "slug": "xiaomi-smart-pet-fountain-2",
+      "comparisons": [
+        "beste-trinkbrunnen-fuer-katzen",
+        "beste-trinkbrunnen-fuer-hunde"
+      ]
+    }
+  ],
+  "errors": []
+}

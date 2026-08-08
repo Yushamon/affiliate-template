@@ -162,8 +162,10 @@ alternatives:
   - petlibro-air-wifi-feeder
   - petsafe-healthy-pet-simply-feed
 comparisons:
-  - beste-futterautomaten-fuer-katzen
-  - beste-futterautomaten-fuer-hunde
+  - "beste-futterautomaten-fuer-katzen"
+  - "beste-futterautomaten-fuer-hunde"
+  - "beste-futterautomaten-ohne-wlan"
+  - "beste-futterautomaten-unter-100-euro"
 comparisonFilters:
   animal:
     - dog

@@ -15,6 +15,7 @@ category:
   key: "katzenklappen"
   label: "Katzenklappen"
   path: "/katzenklappen/"
+productUrl: "/produkt/sureflap-mikrochip-katzenklappe/"
 publishedAt: "2026-08-04"
 updatedAt: "2026-08-04"
 

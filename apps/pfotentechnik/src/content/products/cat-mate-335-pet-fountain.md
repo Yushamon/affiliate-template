@@ -162,7 +162,8 @@ alternatives:
   - petkit-eversweet-solo-se
   - petlibro-stainless-steel-fountain
 comparisons:
-  - beste-trinkbrunnen-fuer-katzen
+  - "beste-trinkbrunnen-fuer-katzen"
+  - "beste-trinkbrunnen-fuer-hunde"
 comparisonFilters:
   animal:
     - dog

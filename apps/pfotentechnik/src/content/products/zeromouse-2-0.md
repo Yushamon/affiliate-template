@@ -172,7 +172,8 @@ experience:
     Bei Stromausfall funktioniert die vorhandene Klappe ohne ZeroMOUSE weiter. Bei WLAN-Verlust meldet das Gerät laut
     Support einen Fehler, die Beuteerkennung steht dann nicht zuverlässig zur Verfügung.
 alternatives: []
-comparisons: []
+comparisons:
+  - "katzenklappen-mit-app-und-beuteerkennung"
 specs:
   - label: Produkttyp
     value: KI-Nachrüstsensor für Mikrochip-Katzenklappen

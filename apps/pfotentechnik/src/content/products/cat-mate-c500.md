@@ -136,9 +136,12 @@ alternatives:
   - surefeed-microchip-pet-feeder
   - petlibro-polar-wet-food-feeder
 comparisons:
-  - beste-futterautomaten-fuer-katzen
-  - beste-futterautomaten-fuer-hunde
-  - beste-futterautomaten-fuer-nassfutter
+  - "beste-futterautomaten-fuer-katzen"
+  - "beste-futterautomaten-fuer-hunde"
+  - "beste-futterautomaten-fuer-nassfutter"
+  - "beste-futterautomaten-fuer-seniorenkatzen"
+  - "beste-futterautomaten-ohne-wlan"
+  - "beste-futterautomaten-unter-100-euro"
 comparisonFilters:
   animal:
     - dog

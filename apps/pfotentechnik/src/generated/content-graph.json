@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-07T17:58:35.142Z",
+  "generatedAt": "2026-08-08T09:38:44.696Z",
   "taxonomyVersion": 3,
   "nodes": [
     {
@@ -1220,6 +1220,39 @@
       "priority": 60,
       "cornerstone": false,
       "sourceFile": "src/content/manufacturers/catit.md"
+    },
+    {
+      "id": "manufacturer:devoko",
+      "collection": "manufacturers",
+      "slug": "devoko",
+      "route": "/hersteller/devoko/",
+      "title": "Devoko",
+      "description": "Devoko im Überblick: preisorientierte automatische Katzentoiletten mit großem Innenraum, App und mehrstufiger Sensorik.",
+      "type": "manufacturer",
+      "cluster": "hersteller",
+      "topics": [
+        "hersteller",
+        "devoko",
+        "automatische katzentoiletten",
+        "futterautomaten",
+        "gps tracker",
+        "haustierkameras",
+        "haustiertechnik",
+        "katzen",
+        "katzenklappen",
+        "katzentoiletten",
+        "trinkbrunnen"
+      ],
+      "tags": [
+        "hersteller",
+        "devoko",
+        "automatische katzentoiletten"
+      ],
+      "sections": [],
+      "aliases": [],
+      "priority": 50,
+      "cornerstone": false,
+      "sourceFile": "src/content/manufacturers/devoko.md"
     },
     {
       "id": "manufacturer:enabot",
@@ -9225,6 +9258,14 @@
     },
     {
       "source": "comparison:beste-automatische-katzentoiletten",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-automatische-katzentoiletten",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -10946,6 +10987,14 @@
     {
       "source": "comparison:beste-futterautomaten-fuer-berufstaetige",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-berufstaetige",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -13642,6 +13691,14 @@
     {
       "source": "comparison:beste-futterautomaten-fuer-hunde",
       "target": "manufacturer:aqara",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-hunde",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -14409,6 +14466,14 @@
     },
     {
       "source": "comparison:beste-futterautomaten-fuer-katzen",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-katzen",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -16130,6 +16195,14 @@
     {
       "source": "comparison:beste-futterautomaten-fuer-kleine-hunde",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-kleine-hunde",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -18673,6 +18746,14 @@
     },
     {
       "source": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 88,
@@ -19554,6 +19635,14 @@
     {
       "source": "comparison:beste-futterautomaten-fuer-nassfutter",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-nassfutter",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -21297,6 +21386,14 @@
     },
     {
       "source": "comparison:beste-futterautomaten-fuer-seniorenkatzen",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-seniorenkatzen",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -23018,6 +23115,14 @@
     {
       "source": "comparison:beste-futterautomaten-fuer-welpen",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-welpen",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -24882,6 +24987,14 @@
     {
       "source": "comparison:beste-futterautomaten-fuer-zwei-katzen",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-zwei-katzen",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -26633,6 +26746,14 @@
     },
     {
       "source": "comparison:beste-futterautomaten-mit-akku",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-mit-akku",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 66,
@@ -28137,6 +28258,14 @@
     },
     {
       "source": "comparison:beste-futterautomaten-mit-edelstahl-napf",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-mit-edelstahl-napf",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -29857,6 +29986,14 @@
     },
     {
       "source": "comparison:beste-futterautomaten-mit-kamera",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-mit-kamera",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 66,
@@ -31513,6 +31650,14 @@
     },
     {
       "source": "comparison:beste-futterautomaten-ohne-wlan",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-ohne-wlan",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 44,
@@ -33146,6 +33291,14 @@
     {
       "source": "comparison:beste-futterautomaten-unter-100-euro",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-unter-100-euro",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -34858,6 +35011,14 @@
     {
       "source": "comparison:beste-gps-tracker-fuer-hunde",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-gps-tracker-fuer-hunde",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -36593,6 +36754,14 @@
     },
     {
       "source": "comparison:beste-gps-tracker-fuer-katzen",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-gps-tracker-fuer-katzen",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -38305,6 +38474,14 @@
     },
     {
       "source": "comparison:beste-haustierkameras",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-haustierkameras",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -40010,6 +40187,14 @@
     {
       "source": "comparison:beste-mikrochip-katzenklappen",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-mikrochip-katzenklappen",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -41745,6 +41930,14 @@
     },
     {
       "source": "comparison:beste-trinkbrunnen-fuer-hunde",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-trinkbrunnen-fuer-hunde",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -43466,6 +43659,14 @@
     {
       "source": "comparison:beste-trinkbrunnen-fuer-katzen",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-trinkbrunnen-fuer-katzen",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -45201,6 +45402,14 @@
     },
     {
       "source": "comparison:futterautomat-fuer-grosse-hunde",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:futterautomat-fuer-grosse-hunde",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -46898,6 +47107,14 @@
     {
       "source": "comparison:futterautomat-gegen-schlingen",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:futterautomat-gegen-schlingen",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -48626,6 +48843,14 @@
     {
       "source": "comparison:futterautomat-mit-app",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:futterautomat-mit-app",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -50330,6 +50555,14 @@
     {
       "source": "comparison:gps-tracker-mit-langer-akkulaufzeit",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:gps-tracker-mit-langer-akkulaufzeit",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -52065,6 +52298,14 @@
     },
     {
       "source": "comparison:gps-tracker-ohne-abo",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:gps-tracker-ohne-abo",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -53754,6 +53995,14 @@
     {
       "source": "comparison:katzenklappen-mit-app-und-beuteerkennung",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:katzenklappen-mit-app-und-beuteerkennung",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -55473,6 +55722,14 @@
     },
     {
       "source": "comparison:kleine-gps-tracker-fuer-katzen",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:kleine-gps-tracker-fuer-katzen",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -57193,6 +57450,14 @@
     },
     {
       "source": "manufacturer:aqara",
+      "target": "manufacturer:devoko",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:aqara",
       "target": "manufacturer:enabot",
       "type": "cluster",
       "score": 100,
@@ -58969,6 +59234,14 @@
     },
     {
       "source": "manufacturer:cat-mate",
+      "target": "manufacturer:devoko",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:cat-mate",
       "target": "manufacturer:enabot",
       "type": "cluster",
       "score": 100,
@@ -60706,6 +60979,14 @@
     {
       "source": "manufacturer:catit",
       "target": "manufacturer:cat-mate",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:catit",
+      "target": "manufacturer:devoko",
       "type": "cluster",
       "score": 100,
       "explicit": false,
@@ -62240,6 +62521,1750 @@
       "automatic": true
     },
     {
+      "source": "manufacturer:devoko",
+      "target": "product:devoko-90l-automatisches-katzenklo",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:beste-automatische-katzentoiletten",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:beste-futterautomaten-fuer-berufstaetige",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:beste-futterautomaten-fuer-katzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:beste-futterautomaten-fuer-kleine-hunde",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:beste-futterautomaten-fuer-nassfutter",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:beste-futterautomaten-fuer-seniorenkatzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:beste-futterautomaten-fuer-welpen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:beste-futterautomaten-mit-edelstahl-napf",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:beste-futterautomaten-unter-100-euro",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:beste-gps-tracker-fuer-hunde",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:beste-gps-tracker-fuer-katzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:beste-haustierkameras",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:beste-mikrochip-katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:beste-trinkbrunnen-fuer-hunde",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:beste-trinkbrunnen-fuer-katzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:futterautomat-fuer-grosse-hunde",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:futterautomat-gegen-schlingen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:futterautomat-mit-app",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:gps-tracker-mit-langer-akkulaufzeit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:gps-tracker-ohne-abo",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:katzenklappen-mit-app-und-beuteerkennung",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:kleine-gps-tracker-fuer-katzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:aqara",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:cat-mate",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:catit",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:enabot",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:furbo",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:garmin",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:honeyguardian",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:imipaw",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:neakasa",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:oneisall",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:onlycat",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:paj-gps",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:pawbby",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:pawsync",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:petkit",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:petlibro",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:petsafe",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:petwalk",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:surefeed",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:tractive",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:weenect",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:whisker",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:wopet",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:xiaomi",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "manufacturer:zeromouse",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:automatische-katzentoiletten",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:biofilm-im-katzentrinkbrunnen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:datenschutz-bei-gps-trackern",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:filter-im-katzentrinkbrunnen-wechseln",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:fuetterungszeiten-nach-alter",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:futterautomat-bei-stromausfall",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:futterautomat-bei-uebergewicht",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:futterautomat-hund",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:futterautomat-im-urlaub",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:futterautomat-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:futterautomat-richtig-reinigen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:gps-tracker-richtig-befestigen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:haustierkameras",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:hund-entlaufen-gps-sinnvoll",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:hund-frisst-nicht",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:hund-frisst-zu-schnell",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:hund-hat-durchfall",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:hund-ist-muede",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:hund-trinkt-ploetzlich-viel",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:hund-trinkt-viel",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:hund-trinkt-zu-wenig",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:kalk-katzentrinkbrunnen-entfernen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:katze-an-katzenklappe-gewoehnen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:katze-an-trinkbrunnen-gewoehnen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:katze-entlaufen-gps-sinnvoll",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:katze-frisst-nicht",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:katze-trinkt-viel",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:katzentrinkbrunnen-laut-pumpe",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:katzentrinkbrunnen-material-edelstahl-keramik-kunststoff",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:katzentrinkbrunnen-ohne-filter",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:katzentrinkbrunnen-richtig-reinigen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:katzenwasser-taeglich-wechseln",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:nierenkranke-katze-trinken",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:pumpe-katzentrinkbrunnen-reinigen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:seniorenhunde-richtig-versorgen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:smarte-futterautomaten",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:smarte-gadgets-fuer-hunde-und-katzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:smarte-haustiertechnik",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:so-bewerten-wir",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:trinkbrunnen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:trinkbrunnen-fuer-katzen-sinnvoll",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:trinkbrunnen-fuer-kitten-sicher",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:trinkbrunnen-fuer-mehrere-katzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:trinkbrunnen-hund",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:trinkbrunnen-seniorenkatzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:trinkmenge-hund-messen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:trinkmenge-katze-messen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:trockenfutter-oder-nassfutter-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:uebergewicht-bei-katzen-vermeiden",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:warum-brauchen-gps-tracker-ein-abo",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:warum-katzen-fliessendes-wasser-trinken",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:wasserstelle-katze-richtiger-standort",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:wie-funktionieren-gps-tracker",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:wie-kann-technik-gegen-langeweile-helfen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:wie-laut-sind-automatische-futterautomaten",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:wie-viel-wasser-braucht-eine-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:wie-viele-mahlzeiten-hund",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:wie-viele-mahlzeiten-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:wie-viele-wasserstellen-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:cat-mate-335-pet-fountain",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:cat-mate-c200",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:cat-mate-c300",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:cat-mate-c500",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:catit-pixi-smart-6-meal-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:catit-pixi-vision-smart-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:devoko-90l-automatisches-katzenklo",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:enabot-ebo-air-2",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:furbo-360-hundekamera",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:garmin-alpha-t-20",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:garmin-alpha-tt-25",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:honeyguardian-a305d",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:honeyguardian-a68",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:honeyguardian-smart-pet-feeder-s305d",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:imipaw-3l-automatic-cat-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:litter-robot-5-pro",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:neakasa-m1-lite",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:neakasa-m1-plus",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:oneisall-2-in-1-feeder-water",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:oneisall-3-2l-cordless-fountain",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:oneisall-5l-automatic-cat-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:onlycat-mikrochip-katzenklappe",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:paj-pet-finder-4g-mini",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:pawbby-smart-pet-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:pawsync-smart-pet-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petkit-eversweet-3-pro-uvc",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petkit-eversweet-5-mini",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petkit-eversweet-max-2-uvc",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petkit-eversweet-max-cordless",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petkit-eversweet-solo-2-fountain",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petkit-eversweet-solo-se",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petkit-eversweet-ultra",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petkit-fresh-element-infinity",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petkit-fresh-element-solo",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petkit-purobot-max-pro-2",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petkit-yumshare-dual-hopper",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petkit-yumshare-solo-2",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petlibro-air-automatic-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petlibro-air-wifi-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petlibro-dockstream-2-smart",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petlibro-dockstream-2-smart-cordless",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petlibro-dockstream-cordless",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petlibro-dockstream-rfid-smart",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petlibro-granary-2-vision",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petlibro-granary-camera-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petlibro-granary-dual-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petlibro-granary-wifi-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petlibro-one-rfid-smart-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petlibro-polar-wet-food-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petlibro-scout-smart-camera",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petlibro-space-smart-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petsafe-freshfeed-refrigerated-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petsafe-healthy-pet-simply-feed",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petsafe-mikrochip-katzenklappe",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petsafe-smart-feed-2",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petwalk-medium-tiertuer",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:surefeed-microchip-pet-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:surefeed-microchip-pet-feeder-connect",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:sureflap-dualscan-mikrochip-katzenklappe",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:sureflap-mikrochip-katzenklappe",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:sureflap-mikrochip-katzenklappe-connect",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:tractive-cat-6-mini",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:tractive-dog-6",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:tractive-dog-6-xl",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:weenect-xs",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:weenect-xt",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:wopet-cube-air-ca10",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:wopet-heritage-view-camera-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:wopet-patrol-f07-pro",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:wopet-pioneer-f01-plus",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:xiaomi-smart-pet-food-feeder-2",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:xiaomi-smart-pet-fountain-2",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:zeromouse-2-0",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:beste-futterautomaten-fuer-hunde",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:beste-futterautomaten-fuer-zwei-katzen",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:futterautomat-und-ernaehrung",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:futtermenge-hund",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:katzenklappe-fuer-mehrere-katzen",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:warum-hunde-feste-fuetterungszeiten-brauchen",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:warum-schlingt-mein-hund",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:welpen-richtig-fuettern",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:wie-funktioniert-ein-futterautomat",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:wie-lange-bleibt-trockenfutter-frisch",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:aqara-smart-pet-feeder-c1",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:cat-mate-shell-fountain",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:oneisall-2-2l-cordless-fountain",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:oneisall-7l-dog-water-fountain",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petlibro-glacier-ultrafiltration",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petlibro-stainless-steel-fountain",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petsafe-petporte-smart-flap",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:beste-futterautomaten-mit-akku",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:beste-futterautomaten-mit-kamera",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:katzenklappe-einbauen",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:katzenklappe-zugluft-und-waermedaemmung",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:oneisall-3-5l-cordless-fountain",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "product:petlibro-capsule-dog-fountain",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "comparison:beste-futterautomaten-ohne-wlan",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:reichweite-von-gps-trackern",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
+      "target": "page:wie-genau-sind-gps-tracker",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
       "source": "manufacturer:enabot",
       "target": "product:enabot-ebo-air-2",
       "type": "explicit",
@@ -62442,6 +64467,14 @@
     {
       "source": "manufacturer:enabot",
       "target": "manufacturer:catit",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:enabot",
+      "target": "manufacturer:devoko",
       "type": "cluster",
       "score": 100,
       "explicit": false,
@@ -64185,6 +66218,14 @@
     },
     {
       "source": "manufacturer:furbo",
+      "target": "manufacturer:devoko",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:furbo",
       "target": "manufacturer:enabot",
       "type": "cluster",
       "score": 100,
@@ -65754,6 +67795,14 @@
     {
       "source": "manufacturer:garmin",
       "target": "manufacturer:catit",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:garmin",
+      "target": "manufacturer:devoko",
       "type": "cluster",
       "score": 100,
       "explicit": false,
@@ -67337,6 +69386,14 @@
     },
     {
       "source": "manufacturer:honeyguardian",
+      "target": "manufacturer:devoko",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:honeyguardian",
       "target": "manufacturer:enabot",
       "type": "cluster",
       "score": 100,
@@ -69073,6 +71130,14 @@
     },
     {
       "source": "manufacturer:imipaw",
+      "target": "manufacturer:devoko",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:imipaw",
       "target": "manufacturer:enabot",
       "type": "cluster",
       "score": 100,
@@ -70601,6 +72666,14 @@
     },
     {
       "source": "manufacturer:neakasa",
+      "target": "product:neakasa-m1-lite",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "manufacturer:neakasa",
       "target": "product:neakasa-m1-plus",
       "type": "explicit",
       "score": 100,
@@ -70802,6 +72875,14 @@
     {
       "source": "manufacturer:neakasa",
       "target": "manufacturer:catit",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:neakasa",
+      "target": "manufacturer:devoko",
       "type": "cluster",
       "score": 100,
       "explicit": false,
@@ -72601,6 +74682,14 @@
     },
     {
       "source": "manufacturer:oneisall",
+      "target": "manufacturer:devoko",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:oneisall",
       "target": "manufacturer:enabot",
       "type": "cluster",
       "score": 100,
@@ -74314,6 +76403,14 @@
     {
       "source": "manufacturer:onlycat",
       "target": "manufacturer:catit",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:onlycat",
+      "target": "manufacturer:devoko",
       "type": "cluster",
       "score": 100,
       "explicit": false,
@@ -76057,6 +78154,14 @@
     },
     {
       "source": "manufacturer:paj-gps",
+      "target": "manufacturer:devoko",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:paj-gps",
       "target": "manufacturer:enabot",
       "type": "cluster",
       "score": 100,
@@ -77786,6 +79891,14 @@
     {
       "source": "manufacturer:pawbby",
       "target": "manufacturer:catit",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:pawbby",
+      "target": "manufacturer:devoko",
       "type": "cluster",
       "score": 100,
       "explicit": false,
@@ -79529,6 +81642,14 @@
     },
     {
       "source": "manufacturer:pawsync",
+      "target": "manufacturer:devoko",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:pawsync",
       "target": "manufacturer:enabot",
       "type": "cluster",
       "score": 100,
@@ -81338,6 +83459,14 @@
     {
       "source": "manufacturer:petkit",
       "target": "manufacturer:catit",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petkit",
+      "target": "manufacturer:devoko",
       "type": "cluster",
       "score": 100,
       "explicit": false,
@@ -83186,6 +85315,14 @@
     {
       "source": "manufacturer:petlibro",
       "target": "manufacturer:catit",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
+      "target": "manufacturer:devoko",
       "type": "cluster",
       "score": 100,
       "explicit": false,
@@ -84961,6 +87098,14 @@
     },
     {
       "source": "manufacturer:petsafe",
+      "target": "manufacturer:devoko",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petsafe",
       "target": "manufacturer:enabot",
       "type": "cluster",
       "score": 100,
@@ -86681,6 +88826,14 @@
     },
     {
       "source": "manufacturer:petwalk",
+      "target": "manufacturer:devoko",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petwalk",
       "target": "manufacturer:enabot",
       "type": "cluster",
       "score": 100,
@@ -88442,6 +90595,14 @@
     {
       "source": "manufacturer:surefeed",
       "target": "manufacturer:catit",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:surefeed",
+      "target": "manufacturer:devoko",
       "type": "cluster",
       "score": 100,
       "explicit": false,
@@ -90217,6 +92378,14 @@
     },
     {
       "source": "manufacturer:tractive",
+      "target": "manufacturer:devoko",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:tractive",
       "target": "manufacturer:enabot",
       "type": "cluster",
       "score": 100,
@@ -91938,6 +94107,14 @@
     {
       "source": "manufacturer:weenect",
       "target": "manufacturer:catit",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:weenect",
+      "target": "manufacturer:devoko",
       "type": "cluster",
       "score": 100,
       "explicit": false,
@@ -93681,6 +95858,14 @@
     },
     {
       "source": "manufacturer:whisker",
+      "target": "manufacturer:devoko",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:whisker",
       "target": "manufacturer:enabot",
       "type": "cluster",
       "score": 100,
@@ -95457,6 +97642,14 @@
     },
     {
       "source": "manufacturer:wopet",
+      "target": "manufacturer:devoko",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:wopet",
       "target": "manufacturer:enabot",
       "type": "cluster",
       "score": 100,
@@ -97185,6 +99378,14 @@
     },
     {
       "source": "manufacturer:xiaomi",
+      "target": "manufacturer:devoko",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:xiaomi",
       "target": "manufacturer:enabot",
       "type": "cluster",
       "score": 100,
@@ -98882,6 +101083,14 @@
     {
       "source": "manufacturer:zeromouse",
       "target": "manufacturer:catit",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:zeromouse",
+      "target": "manufacturer:devoko",
       "type": "cluster",
       "score": 100,
       "explicit": false,
@@ -100649,6 +102858,14 @@
     },
     {
       "source": "page:automatische-katzentoiletten",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:automatische-katzentoiletten",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -102346,6 +104563,14 @@
     {
       "source": "page:biofilm-im-katzentrinkbrunnen",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:biofilm-im-katzentrinkbrunnen",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -104065,6 +106290,14 @@
     },
     {
       "source": "page:datenschutz-bei-gps-trackern",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:datenschutz-bei-gps-trackern",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -105809,6 +108042,14 @@
     },
     {
       "source": "page:filter-im-katzentrinkbrunnen-wechseln",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:filter-im-katzentrinkbrunnen-wechseln",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -107538,6 +109779,14 @@
     {
       "source": "page:fuetterungszeiten-nach-alter",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:fuetterungszeiten-nach-alter",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -109282,6 +111531,14 @@
     {
       "source": "page:futterautomat-bei-stromausfall",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:futterautomat-bei-stromausfall",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -111009,6 +113266,14 @@
     },
     {
       "source": "page:futterautomat-bei-uebergewicht",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:futterautomat-bei-uebergewicht",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -112737,6 +115002,14 @@
     },
     {
       "source": "page:futterautomat-hund",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:futterautomat-hund",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -114442,6 +116715,14 @@
     {
       "source": "page:futterautomat-im-urlaub",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:futterautomat-im-urlaub",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -116193,6 +118474,14 @@
     },
     {
       "source": "page:futterautomat-katze",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:futterautomat-katze",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -117897,6 +120186,14 @@
     },
     {
       "source": "page:futterautomat-richtig-reinigen",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:futterautomat-richtig-reinigen",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -120657,6 +122954,14 @@
     },
     {
       "source": "page:futterautomat-und-ernaehrung",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:futterautomat-und-ernaehrung",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 88,
@@ -122274,6 +124579,14 @@
     {
       "source": "page:futtermenge-hund",
       "target": "manufacturer:aqara",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:futtermenge-hund",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -123009,6 +125322,14 @@
     },
     {
       "source": "page:futtermenge-katze",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:futtermenge-katze",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -124730,6 +127051,14 @@
     {
       "source": "page:gps-oder-bluetooth",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -126482,6 +128811,14 @@
     {
       "source": "page:gps-tracker",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -128137,6 +130474,14 @@
     },
     {
       "source": "page:gps-tracker-richtig-befestigen",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:gps-tracker-richtig-befestigen",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -129929,6 +132274,14 @@
     },
     {
       "source": "page:haustierkameras",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -131626,6 +133979,14 @@
     {
       "source": "page:hund-entlaufen-gps-sinnvoll",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-entlaufen-gps-sinnvoll",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -133362,6 +135723,14 @@
     {
       "source": "page:hund-frisst-nicht",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-frisst-nicht",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -135089,6 +137458,14 @@
     },
     {
       "source": "page:hund-frisst-zu-schnell",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-frisst-zu-schnell",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -136810,6 +139187,14 @@
     {
       "source": "page:hund-hat-durchfall",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -138545,6 +140930,14 @@
     },
     {
       "source": "page:hund-ist-muede",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -140266,6 +142659,14 @@
     {
       "source": "page:hund-trinkt-ploetzlich-viel",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-trinkt-ploetzlich-viel",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -142001,6 +144402,14 @@
     },
     {
       "source": "page:hund-trinkt-viel",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-trinkt-viel",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -143730,6 +146139,14 @@
     {
       "source": "page:hund-trinkt-zu-wenig",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-trinkt-zu-wenig",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -145457,6 +147874,14 @@
     },
     {
       "source": "page:kalk-katzentrinkbrunnen-entfernen",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:kalk-katzentrinkbrunnen-entfernen",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -147169,6 +149594,14 @@
     },
     {
       "source": "page:katze-an-katzenklappe-gewoehnen",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katze-an-katzenklappe-gewoehnen",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -148866,6 +151299,14 @@
     {
       "source": "page:katze-an-trinkbrunnen-gewoehnen",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katze-an-trinkbrunnen-gewoehnen",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -150641,6 +153082,14 @@
     },
     {
       "source": "page:katze-entlaufen-gps-sinnvoll",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katze-entlaufen-gps-sinnvoll",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -152362,6 +154811,14 @@
     {
       "source": "page:katze-frisst-nicht",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katze-frisst-nicht",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -154057,6 +156514,14 @@
     },
     {
       "source": "page:katze-trinkt-viel",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katze-trinkt-viel",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -156209,6 +158674,14 @@
     },
     {
       "source": "page:katzenklappe-einbauen",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappe-einbauen",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 66,
@@ -157450,6 +159923,14 @@
     {
       "source": "page:katzenklappe-fuer-mehrere-katzen",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappe-fuer-mehrere-katzen",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -159177,6 +161658,14 @@
     },
     {
       "source": "page:katzenklappe-zugluft-und-waermedaemmung",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappe-zugluft-und-waermedaemmung",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 66,
@@ -160682,6 +163171,14 @@
     {
       "source": "page:katzenklappen",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -162417,6 +164914,14 @@
     },
     {
       "source": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -164098,6 +166603,14 @@
     {
       "source": "page:katzentrinkbrunnen-laut-pumpe",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzentrinkbrunnen-laut-pumpe",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -165897,6 +168410,14 @@
     },
     {
       "source": "page:katzentrinkbrunnen-material-edelstahl-keramik-kunststoff",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzentrinkbrunnen-material-edelstahl-keramik-kunststoff",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -167625,6 +170146,14 @@
     },
     {
       "source": "page:katzentrinkbrunnen-ohne-filter",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzentrinkbrunnen-ohne-filter",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -169322,6 +171851,14 @@
     {
       "source": "page:katzentrinkbrunnen-richtig-reinigen",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzentrinkbrunnen-richtig-reinigen",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -171057,6 +173594,14 @@
     },
     {
       "source": "page:katzenwasser-taeglich-wechseln",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenwasser-taeglich-wechseln",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -172778,6 +175323,14 @@
     {
       "source": "page:nierenkranke-katze-trinken",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:nierenkranke-katze-trinken",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -174506,6 +177059,14 @@
     {
       "source": "page:pumpe-katzentrinkbrunnen-reinigen",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:pumpe-katzentrinkbrunnen-reinigen",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -176457,6 +179018,14 @@
     },
     {
       "source": "page:reichweite-von-gps-trackern",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:reichweite-von-gps-trackern",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 44,
@@ -177626,6 +180195,14 @@
     {
       "source": "page:seniorenhunde-richtig-versorgen",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:seniorenhunde-richtig-versorgen",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -179393,6 +181970,14 @@
     },
     {
       "source": "page:smarte-futterautomaten",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:smarte-futterautomaten",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -181098,6 +183683,14 @@
     {
       "source": "page:smarte-gadgets-fuer-hunde-und-katzen",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:smarte-gadgets-fuer-hunde-und-katzen",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -182826,6 +185419,14 @@
     {
       "source": "page:smarte-haustiertechnik",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -184553,6 +187154,14 @@
     },
     {
       "source": "page:so-bewerten-wir",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:so-bewerten-wir",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -186281,6 +188890,14 @@
     },
     {
       "source": "page:trinkbrunnen",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:trinkbrunnen",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -187993,6 +190610,14 @@
     },
     {
       "source": "page:trinkbrunnen-fuer-katzen-sinnvoll",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:trinkbrunnen-fuer-katzen-sinnvoll",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -189690,6 +192315,14 @@
     {
       "source": "page:trinkbrunnen-fuer-kitten-sicher",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:trinkbrunnen-fuer-kitten-sicher",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -191441,6 +194074,14 @@
     },
     {
       "source": "page:trinkbrunnen-fuer-mehrere-katzen",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:trinkbrunnen-fuer-mehrere-katzen",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -193177,6 +195818,14 @@
     },
     {
       "source": "page:trinkbrunnen-hund",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -194897,6 +197546,14 @@
     },
     {
       "source": "page:trinkbrunnen-seniorenkatzen",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:trinkbrunnen-seniorenkatzen",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -196602,6 +199259,14 @@
     {
       "source": "page:trinkmenge-hund-messen",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:trinkmenge-hund-messen",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -198345,6 +201010,14 @@
     },
     {
       "source": "page:trinkmenge-katze-messen",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:trinkmenge-katze-messen",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -200089,6 +202762,14 @@
     },
     {
       "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -201786,6 +204467,14 @@
     {
       "source": "page:trockenfutter-oder-nassfutter-katze",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-katze",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -203545,6 +206234,14 @@
     },
     {
       "source": "page:uebergewicht-bei-katzen-vermeiden",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:uebergewicht-bei-katzen-vermeiden",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -205233,6 +207930,14 @@
     },
     {
       "source": "page:warum-brauchen-gps-tracker-ein-abo",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:warum-brauchen-gps-tracker-ein-abo",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -207962,6 +210667,14 @@
     {
       "source": "page:warum-hunde-feste-fuetterungszeiten-brauchen",
       "target": "manufacturer:aqara",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:warum-hunde-feste-fuetterungszeiten-brauchen",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -208697,6 +211410,14 @@
     },
     {
       "source": "page:warum-katzen-fliessendes-wasser-trinken",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:warum-katzen-fliessendes-wasser-trinken",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -211353,6 +214074,14 @@
     },
     {
       "source": "page:warum-schlingt-mein-hund",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:warum-schlingt-mein-hund",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 88,
@@ -212090,6 +214819,14 @@
     {
       "source": "page:wasserstelle-katze-richtiger-standort",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wasserstelle-katze-richtiger-standort",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -213890,6 +216627,14 @@
     {
       "source": "page:welche-portionsgroesse-ist-richtig",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -215633,6 +218378,14 @@
     },
     {
       "source": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:welcher-futterautomat-ist-der-richtige",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -218306,6 +221059,14 @@
     {
       "source": "page:welpen-richtig-fuettern",
       "target": "manufacturer:aqara",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:welpen-richtig-fuettern",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -219025,6 +221786,14 @@
     },
     {
       "source": "page:wie-funktionieren-gps-tracker",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-funktionieren-gps-tracker",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -221570,6 +224339,14 @@
     {
       "source": "page:wie-funktioniert-ein-futterautomat",
       "target": "manufacturer:aqara",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-funktioniert-ein-futterautomat",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -222641,6 +225418,14 @@
     },
     {
       "source": "page:wie-genau-sind-gps-tracker",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-genau-sind-gps-tracker",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 44,
@@ -223890,6 +226675,14 @@
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -225593,6 +228386,14 @@
     },
     {
       "source": "page:wie-kann-technik-gegen-langeweile-helfen",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-kann-technik-gegen-langeweile-helfen",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -228138,6 +230939,14 @@
     {
       "source": "page:wie-lange-bleibt-trockenfutter-frisch",
       "target": "manufacturer:aqara",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-lange-bleibt-trockenfutter-frisch",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -229057,6 +231866,14 @@
     },
     {
       "source": "page:wie-laut-sind-automatische-futterautomaten",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-laut-sind-automatische-futterautomaten",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -230761,6 +233578,14 @@
     },
     {
       "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -232474,6 +235299,14 @@
     {
       "source": "page:wie-viel-wasser-braucht-eine-katze",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-eine-katze",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -234234,6 +237067,14 @@
     {
       "source": "page:wie-viele-mahlzeiten-hund",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-viele-mahlzeiten-hund",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -235977,6 +238818,14 @@
     },
     {
       "source": "page:wie-viele-mahlzeiten-katze",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-viele-mahlzeiten-katze",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -237673,6 +240522,14 @@
     },
     {
       "source": "page:wie-viele-wasserstellen-katze",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-viele-wasserstellen-katze",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -239346,6 +242203,14 @@
     {
       "source": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -242306,6 +245171,14 @@
     {
       "source": "product:aqara-smart-pet-feeder-c1",
       "target": "comparison:kleine-gps-tracker-fuer-katzen",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:aqara-smart-pet-feeder-c1",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -242681,6 +245554,14 @@
     },
     {
       "source": "product:cat-mate-335-pet-fountain",
+      "target": "comparison:beste-trinkbrunnen-fuer-hunde",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:cat-mate-335-pet-fountain",
       "target": "comparison:beste-trinkbrunnen-fuer-katzen",
       "type": "explicit",
       "score": 100,
@@ -242898,6 +245779,14 @@
     {
       "source": "product:cat-mate-335-pet-fountain",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:cat-mate-335-pet-fountain",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -244666,6 +247555,14 @@
     {
       "source": "product:cat-mate-c200",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:cat-mate-c200",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -246433,6 +249330,14 @@
     },
     {
       "source": "product:cat-mate-c300",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:cat-mate-c300",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -247985,6 +250890,30 @@
     },
     {
       "source": "product:cat-mate-c500",
+      "target": "comparison:beste-futterautomaten-fuer-seniorenkatzen",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:cat-mate-c500",
+      "target": "comparison:beste-futterautomaten-ohne-wlan",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:cat-mate-c500",
+      "target": "comparison:beste-futterautomaten-unter-100-euro",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:cat-mate-c500",
       "target": "product:cat-mate-c300",
       "type": "explicit",
       "score": 100,
@@ -248202,6 +251131,14 @@
     {
       "source": "product:cat-mate-c500",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:cat-mate-c500",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -251065,6 +254002,14 @@
     },
     {
       "source": "product:cat-mate-shell-fountain",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:cat-mate-shell-fountain",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 88,
@@ -251714,6 +254659,14 @@
     {
       "source": "product:catit-pixi-smart-6-meal-feeder",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:catit-pixi-smart-6-meal-feeder",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -253466,6 +256419,14 @@
     {
       "source": "product:catit-pixi-vision-smart-feeder",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:catit-pixi-vision-smart-feeder",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -255225,6 +258186,14 @@
     },
     {
       "source": "product:devoko-90l-automatisches-katzenklo",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:devoko-90l-automatisches-katzenklo",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -256993,6 +259962,14 @@
     },
     {
       "source": "product:enabot-ebo-air-2",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:enabot-ebo-air-2",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -258745,6 +261722,14 @@
     },
     {
       "source": "product:furbo-360-hundekamera",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:furbo-360-hundekamera",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -260482,6 +263467,14 @@
     {
       "source": "product:garmin-alpha-t-20",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:garmin-alpha-t-20",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -262241,6 +265234,14 @@
     },
     {
       "source": "product:garmin-alpha-tt-25",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:garmin-alpha-tt-25",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -263969,6 +266970,14 @@
     },
     {
       "source": "product:honeyguardian-a305d",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:honeyguardian-a305d",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -265713,6 +268722,14 @@
     },
     {
       "source": "product:honeyguardian-a68",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:honeyguardian-a68",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -267241,6 +270258,22 @@
     },
     {
       "source": "product:honeyguardian-smart-pet-feeder-s305d",
+      "target": "comparison:beste-futterautomaten-mit-edelstahl-napf",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:honeyguardian-smart-pet-feeder-s305d",
+      "target": "comparison:beste-futterautomaten-unter-100-euro",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:honeyguardian-smart-pet-feeder-s305d",
       "target": "product:oneisall-5l-automatic-cat-feeder",
       "type": "explicit",
       "score": 100,
@@ -267474,6 +270507,14 @@
     {
       "source": "product:honeyguardian-smart-pet-feeder-s305d",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:honeyguardian-smart-pet-feeder-s305d",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -269009,6 +272050,22 @@
     },
     {
       "source": "product:imipaw-3l-automatic-cat-feeder",
+      "target": "comparison:beste-futterautomaten-ohne-wlan",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:imipaw-3l-automatic-cat-feeder",
+      "target": "comparison:beste-futterautomaten-unter-100-euro",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:imipaw-3l-automatic-cat-feeder",
       "target": "product:petlibro-air-automatic-feeder",
       "type": "explicit",
       "score": 100,
@@ -269226,6 +272283,14 @@
     {
       "source": "product:imipaw-3l-automatic-cat-feeder",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:imipaw-3l-automatic-cat-feeder",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -270985,6 +274050,14 @@
     },
     {
       "source": "product:litter-robot-5-pro",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:litter-robot-5-pro",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -272745,6 +275818,14 @@
     },
     {
       "source": "product:neakasa-m1-lite",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:neakasa-m1-lite",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -274490,6 +277571,14 @@
     {
       "source": "product:neakasa-m1-plus",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:neakasa-m1-plus",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -277345,6 +280434,14 @@
     },
     {
       "source": "product:oneisall-2-2l-cordless-fountain",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:oneisall-2-2l-cordless-fountain",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 88,
@@ -277994,6 +281091,14 @@
     {
       "source": "product:oneisall-2-in-1-feeder-water",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:oneisall-2-in-1-feeder-water",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -279753,6 +282858,14 @@
     },
     {
       "source": "product:oneisall-3-2l-cordless-fountain",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:oneisall-3-2l-cordless-fountain",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -281278,6 +284391,14 @@
       "score": 44,
       "explicit": false,
       "automatic": true
+    },
+    {
+      "source": "product:oneisall-3-5l-cordless-fountain",
+      "target": "comparison:beste-trinkbrunnen-fuer-hunde",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
     },
     {
       "source": "product:oneisall-3-5l-cordless-fountain",
@@ -282329,6 +285450,14 @@
     },
     {
       "source": "product:oneisall-3-5l-cordless-fountain",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:oneisall-3-5l-cordless-fountain",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 66,
@@ -282993,6 +286122,14 @@
     },
     {
       "source": "product:oneisall-5l-automatic-cat-feeder",
+      "target": "comparison:beste-futterautomaten-fuer-zwei-katzen",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:oneisall-5l-automatic-cat-feeder",
       "target": "product:honeyguardian-smart-pet-feeder-s305d",
       "type": "explicit",
       "score": 100,
@@ -283218,6 +286355,14 @@
     {
       "source": "product:oneisall-5l-automatic-cat-feeder",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:oneisall-5l-automatic-cat-feeder",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -286065,6 +289210,14 @@
     },
     {
       "source": "product:oneisall-7l-dog-water-fountain",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:oneisall-7l-dog-water-fountain",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 88,
@@ -286690,6 +289843,14 @@
     {
       "source": "product:onlycat-mikrochip-katzenklappe",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:onlycat-mikrochip-katzenklappe",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -288474,6 +291635,14 @@
     {
       "source": "product:paj-pet-finder-4g-mini",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:paj-pet-finder-4g-mini",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -290233,6 +293402,14 @@
     },
     {
       "source": "product:pawbby-smart-pet-feeder",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:pawbby-smart-pet-feeder",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -291993,6 +295170,14 @@
     },
     {
       "source": "product:pawsync-smart-pet-feeder",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:pawsync-smart-pet-feeder",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -293714,6 +296899,14 @@
     {
       "source": "product:petkit-eversweet-3-pro-uvc",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-eversweet-3-pro-uvc",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -295465,6 +298658,14 @@
     },
     {
       "source": "product:petkit-eversweet-5-mini",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-eversweet-5-mini",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -297218,6 +300419,14 @@
     {
       "source": "product:petkit-eversweet-max-2-uvc",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-eversweet-max-2-uvc",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -298978,6 +302187,14 @@
     {
       "source": "product:petkit-eversweet-max-cordless",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-eversweet-max-cordless",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -300497,6 +303714,14 @@
     },
     {
       "source": "product:petkit-eversweet-solo-2-fountain",
+      "target": "comparison:beste-trinkbrunnen-fuer-katzen",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petkit-eversweet-solo-2-fountain",
       "target": "product:petkit-eversweet-3-pro-uvc",
       "type": "explicit",
       "score": 100,
@@ -300698,6 +303923,14 @@
     {
       "source": "product:petkit-eversweet-solo-2-fountain",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-eversweet-solo-2-fountain",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -302449,6 +305682,14 @@
     },
     {
       "source": "product:petkit-eversweet-solo-se",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-eversweet-solo-se",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -304217,6 +307458,14 @@
     },
     {
       "source": "product:petkit-eversweet-ultra",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-eversweet-ultra",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -305945,6 +309194,14 @@
     },
     {
       "source": "product:petkit-fresh-element-infinity",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-fresh-element-infinity",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -307473,6 +310730,30 @@
     },
     {
       "source": "product:petkit-fresh-element-solo",
+      "target": "comparison:beste-futterautomaten-fuer-kleine-hunde",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petkit-fresh-element-solo",
+      "target": "comparison:beste-futterautomaten-fuer-welpen",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petkit-fresh-element-solo",
+      "target": "comparison:futterautomat-mit-app",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petkit-fresh-element-solo",
       "target": "product:petlibro-granary-wifi-feeder",
       "type": "explicit",
       "score": 100,
@@ -307698,6 +310979,14 @@
     {
       "source": "product:petkit-fresh-element-solo",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-fresh-element-solo",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -309441,6 +312730,14 @@
     },
     {
       "source": "product:petkit-purobot-max-pro-2",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-purobot-max-pro-2",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -310985,6 +314282,38 @@
     },
     {
       "source": "product:petkit-yumshare-dual-hopper",
+      "target": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petkit-yumshare-dual-hopper",
+      "target": "comparison:beste-futterautomaten-fuer-zwei-katzen",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petkit-yumshare-dual-hopper",
+      "target": "comparison:beste-futterautomaten-mit-kamera",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petkit-yumshare-dual-hopper",
+      "target": "comparison:futterautomat-mit-app",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petkit-yumshare-dual-hopper",
       "target": "product:petlibro-granary-camera-feeder",
       "type": "explicit",
       "score": 100,
@@ -311210,6 +314539,14 @@
     {
       "source": "product:petkit-yumshare-dual-hopper",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-yumshare-dual-hopper",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -312993,6 +316330,14 @@
     },
     {
       "source": "product:petkit-yumshare-solo-2",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-yumshare-solo-2",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -314698,6 +318043,14 @@
     {
       "source": "product:petlibro-air-automatic-feeder",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-air-automatic-feeder",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -316249,6 +319602,14 @@
     },
     {
       "source": "product:petlibro-air-wifi-feeder",
+      "target": "comparison:beste-futterautomaten-fuer-kleine-hunde",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petlibro-air-wifi-feeder",
       "target": "product:petkit-fresh-element-solo",
       "type": "explicit",
       "score": 100,
@@ -316490,6 +319851,14 @@
     {
       "source": "product:petlibro-air-wifi-feeder",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-air-wifi-feeder",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -319361,6 +322730,14 @@
     },
     {
       "source": "product:petlibro-capsule-dog-fountain",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-capsule-dog-fountain",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 66,
@@ -319970,6 +323347,14 @@
     {
       "source": "product:petlibro-dockstream-2-smart",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-dockstream-2-smart",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -321737,6 +325122,14 @@
     },
     {
       "source": "product:petlibro-dockstream-2-smart-cordless",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-dockstream-2-smart-cordless",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -323481,6 +326874,14 @@
     },
     {
       "source": "product:petlibro-dockstream-cordless",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-dockstream-cordless",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -325186,6 +328587,14 @@
     {
       "source": "product:petlibro-dockstream-rfid-smart",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-dockstream-rfid-smart",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -328041,6 +331450,14 @@
     },
     {
       "source": "product:petlibro-glacier-ultrafiltration",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-glacier-ultrafiltration",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 88,
@@ -328698,6 +332115,14 @@
     {
       "source": "product:petlibro-granary-2-vision",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-granary-2-vision",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -330241,6 +333666,30 @@
     },
     {
       "source": "product:petlibro-granary-camera-feeder",
+      "target": "comparison:beste-futterautomaten-mit-kamera",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petlibro-granary-camera-feeder",
+      "target": "comparison:futterautomat-fuer-grosse-hunde",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petlibro-granary-camera-feeder",
+      "target": "comparison:futterautomat-mit-app",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petlibro-granary-camera-feeder",
       "target": "product:petkit-yumshare-dual-hopper",
       "type": "explicit",
       "score": 100,
@@ -330466,6 +333915,14 @@
     {
       "source": "product:petlibro-granary-camera-feeder",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-granary-camera-feeder",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -331993,6 +335450,14 @@
     },
     {
       "source": "product:petlibro-granary-dual-feeder",
+      "target": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petlibro-granary-dual-feeder",
       "target": "product:honeyguardian-smart-pet-feeder-s305d",
       "type": "explicit",
       "score": 100,
@@ -332226,6 +335691,14 @@
     {
       "source": "product:petlibro-granary-dual-feeder",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-granary-dual-feeder",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -333745,6 +337218,14 @@
     },
     {
       "source": "product:petlibro-granary-wifi-feeder",
+      "target": "comparison:beste-futterautomaten-fuer-berufstaetige",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petlibro-granary-wifi-feeder",
       "target": "comparison:beste-futterautomaten-fuer-hunde",
       "type": "explicit",
       "score": 100,
@@ -333754,6 +337235,70 @@
     {
       "source": "product:petlibro-granary-wifi-feeder",
       "target": "comparison:beste-futterautomaten-fuer-katzen",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petlibro-granary-wifi-feeder",
+      "target": "comparison:beste-futterautomaten-fuer-seniorenkatzen",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petlibro-granary-wifi-feeder",
+      "target": "comparison:beste-futterautomaten-fuer-welpen",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petlibro-granary-wifi-feeder",
+      "target": "comparison:beste-futterautomaten-fuer-zwei-katzen",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petlibro-granary-wifi-feeder",
+      "target": "comparison:beste-futterautomaten-mit-akku",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petlibro-granary-wifi-feeder",
+      "target": "comparison:beste-futterautomaten-mit-edelstahl-napf",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petlibro-granary-wifi-feeder",
+      "target": "comparison:futterautomat-fuer-grosse-hunde",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petlibro-granary-wifi-feeder",
+      "target": "comparison:futterautomat-gegen-schlingen",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petlibro-granary-wifi-feeder",
+      "target": "comparison:futterautomat-mit-app",
       "type": "explicit",
       "score": 100,
       "explicit": true,
@@ -333994,6 +337539,14 @@
     {
       "source": "product:petlibro-granary-wifi-feeder",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-granary-wifi-feeder",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -335721,6 +339274,14 @@
     },
     {
       "source": "product:petlibro-one-rfid-smart-feeder",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-one-rfid-smart-feeder",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -337505,6 +341066,14 @@
     },
     {
       "source": "product:petlibro-polar-wet-food-feeder",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-polar-wet-food-feeder",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -339257,6 +342826,14 @@
     },
     {
       "source": "product:petlibro-scout-smart-camera",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-scout-smart-camera",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -341001,6 +344578,14 @@
     },
     {
       "source": "product:petlibro-space-smart-feeder",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-space-smart-feeder",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -343849,6 +347434,14 @@
     },
     {
       "source": "product:petlibro-stainless-steel-fountain",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-stainless-steel-fountain",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 88,
@@ -344498,6 +348091,14 @@
     {
       "source": "product:petsafe-freshfeed-refrigerated-feeder",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petsafe-freshfeed-refrigerated-feeder",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -346025,6 +349626,14 @@
     },
     {
       "source": "product:petsafe-healthy-pet-simply-feed",
+      "target": "comparison:futterautomat-gegen-schlingen",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petsafe-healthy-pet-simply-feed",
       "target": "product:petlibro-air-automatic-feeder",
       "type": "explicit",
       "score": 100,
@@ -346218,6 +349827,14 @@
     {
       "source": "product:petsafe-healthy-pet-simply-feed",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petsafe-healthy-pet-simply-feed",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -347961,6 +351578,14 @@
     },
     {
       "source": "product:petsafe-mikrochip-katzenklappe",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petsafe-mikrochip-katzenklappe",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -349793,6 +353418,14 @@
     },
     {
       "source": "product:petsafe-petporte-smart-flap",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petsafe-petporte-smart-flap",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 88,
@@ -351201,6 +354834,14 @@
     },
     {
       "source": "product:petsafe-smart-feed-2",
+      "target": "comparison:beste-futterautomaten-fuer-berufstaetige",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petsafe-smart-feed-2",
       "target": "comparison:beste-futterautomaten-fuer-hunde",
       "type": "explicit",
       "score": 100,
@@ -351210,6 +354851,14 @@
     {
       "source": "product:petsafe-smart-feed-2",
       "target": "comparison:beste-futterautomaten-fuer-katzen",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petsafe-smart-feed-2",
+      "target": "comparison:beste-futterautomaten-mit-akku",
       "type": "explicit",
       "score": 100,
       "explicit": true,
@@ -351434,6 +355083,14 @@
     {
       "source": "product:petsafe-smart-feed-2",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petsafe-smart-feed-2",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -353146,6 +356803,14 @@
     {
       "source": "product:petwalk-medium-tiertuer",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petwalk-medium-tiertuer",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -354945,6 +358610,14 @@
     },
     {
       "source": "product:surefeed-microchip-pet-feeder",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:surefeed-microchip-pet-feeder",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -356481,6 +360154,54 @@
     },
     {
       "source": "product:surefeed-microchip-pet-feeder-connect",
+      "target": "comparison:beste-futterautomaten-fuer-katzen",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:surefeed-microchip-pet-feeder-connect",
+      "target": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:surefeed-microchip-pet-feeder-connect",
+      "target": "comparison:beste-futterautomaten-fuer-nassfutter",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:surefeed-microchip-pet-feeder-connect",
+      "target": "comparison:beste-futterautomaten-fuer-seniorenkatzen",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:surefeed-microchip-pet-feeder-connect",
+      "target": "comparison:beste-futterautomaten-fuer-zwei-katzen",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:surefeed-microchip-pet-feeder-connect",
+      "target": "comparison:beste-futterautomaten-ohne-wlan",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:surefeed-microchip-pet-feeder-connect",
       "target": "comparison:beste-automatische-katzentoiletten",
       "type": "semantic",
       "score": 100,
@@ -356682,6 +360403,14 @@
     {
       "source": "product:surefeed-microchip-pet-feeder-connect",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:surefeed-microchip-pet-feeder-connect",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -358409,6 +362138,14 @@
     },
     {
       "source": "product:sureflap-dualscan-mikrochip-katzenklappe",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:sureflap-dualscan-mikrochip-katzenklappe",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -360145,6 +363882,14 @@
     },
     {
       "source": "product:sureflap-mikrochip-katzenklappe",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:sureflap-mikrochip-katzenklappe",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -361689,6 +365434,14 @@
     },
     {
       "source": "product:sureflap-mikrochip-katzenklappe-connect",
+      "target": "comparison:katzenklappen-mit-app-und-beuteerkennung",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:sureflap-mikrochip-katzenklappe-connect",
       "target": "product:petsafe-petporte-smart-flap",
       "type": "explicit",
       "score": 100,
@@ -361874,6 +365627,14 @@
     {
       "source": "product:sureflap-mikrochip-katzenklappe-connect",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:sureflap-mikrochip-katzenklappe-connect",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -363586,6 +367347,14 @@
     {
       "source": "product:tractive-cat-6-mini",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:tractive-cat-6-mini",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -365433,6 +369202,14 @@
     },
     {
       "source": "product:tractive-dog-6",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:tractive-dog-6",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -367162,6 +370939,14 @@
     {
       "source": "product:tractive-dog-6-xl",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:tractive-dog-6-xl",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -368945,6 +372730,14 @@
     },
     {
       "source": "product:weenect-xs",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:weenect-xs",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -370706,6 +374499,14 @@
     {
       "source": "product:weenect-xt",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:weenect-xt",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -372465,6 +376266,14 @@
     },
     {
       "source": "product:wopet-cube-air-ca10",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:wopet-cube-air-ca10",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -373977,6 +377786,14 @@
     },
     {
       "source": "product:wopet-heritage-view-camera-feeder",
+      "target": "comparison:beste-futterautomaten-mit-kamera",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:wopet-heritage-view-camera-feeder",
       "target": "product:petlibro-granary-camera-feeder",
       "type": "explicit",
       "score": 100,
@@ -374194,6 +378011,14 @@
     {
       "source": "product:wopet-heritage-view-camera-feeder",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:wopet-heritage-view-camera-feeder",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -375969,6 +379794,14 @@
     },
     {
       "source": "product:wopet-patrol-f07-pro",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:wopet-patrol-f07-pro",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -377674,6 +381507,14 @@
     {
       "source": "product:wopet-pioneer-f01-plus",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:wopet-pioneer-f01-plus",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -379209,6 +383050,14 @@
     },
     {
       "source": "product:xiaomi-smart-pet-food-feeder-2",
+      "target": "comparison:beste-futterautomaten-fuer-berufstaetige",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:xiaomi-smart-pet-food-feeder-2",
       "target": "comparison:beste-futterautomaten-fuer-hunde",
       "type": "explicit",
       "score": 100,
@@ -379218,6 +383067,62 @@
     {
       "source": "product:xiaomi-smart-pet-food-feeder-2",
       "target": "comparison:beste-futterautomaten-fuer-katzen",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:xiaomi-smart-pet-food-feeder-2",
+      "target": "comparison:beste-futterautomaten-fuer-kleine-hunde",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:xiaomi-smart-pet-food-feeder-2",
+      "target": "comparison:beste-futterautomaten-fuer-welpen",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:xiaomi-smart-pet-food-feeder-2",
+      "target": "comparison:beste-futterautomaten-mit-akku",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:xiaomi-smart-pet-food-feeder-2",
+      "target": "comparison:beste-futterautomaten-mit-edelstahl-napf",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:xiaomi-smart-pet-food-feeder-2",
+      "target": "comparison:futterautomat-fuer-grosse-hunde",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:xiaomi-smart-pet-food-feeder-2",
+      "target": "comparison:futterautomat-gegen-schlingen",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:xiaomi-smart-pet-food-feeder-2",
+      "target": "comparison:futterautomat-mit-app",
       "type": "explicit",
       "score": 100,
       "explicit": true,
@@ -379458,6 +383363,14 @@
     {
       "source": "product:xiaomi-smart-pet-food-feeder-2",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:xiaomi-smart-pet-food-feeder-2",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -381233,6 +385146,14 @@
     },
     {
       "source": "product:xiaomi-smart-pet-fountain-2",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:xiaomi-smart-pet-fountain-2",
       "target": "manufacturer:enabot",
       "type": "semantic",
       "score": 100,
@@ -382745,6 +386666,14 @@
     },
     {
       "source": "product:zeromouse-2-0",
+      "target": "comparison:katzenklappen-mit-app-und-beuteerkennung",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:zeromouse-2-0",
       "target": "comparison:beste-automatische-katzentoiletten",
       "type": "semantic",
       "score": 100,
@@ -382938,6 +386867,14 @@
     {
       "source": "product:zeromouse-2-0",
       "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:zeromouse-2-0",
+      "target": "manufacturer:devoko",
       "type": "semantic",
       "score": 100,
       "explicit": false,

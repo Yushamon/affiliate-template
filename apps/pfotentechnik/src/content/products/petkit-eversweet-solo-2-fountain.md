@@ -15,6 +15,7 @@ category:
   key: trinkbrunnen
   label: Trinkbrunnen
   path: /trinkbrunnen/
+productUrl: "/produkt/petkit-eversweet-solo-2-fountain/"
 publishedAt: "2026-07-13"
 updatedAt: "2026-07-13"
 author:
@@ -221,6 +222,8 @@ decisionFacts:
   - label: "Gewicht"
     value: "0,8 kg"
     consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
+comparisons:
+  - "beste-trinkbrunnen-fuer-katzen"
 ---
 Der Eversweet Solo 2 ist technisch weniger ambitioniert als die UVC-Modelle, dafür übersichtlich. Wichtig ist die Unterscheidung zwischen kabelloser Pumpe und kabellosem Gesamtbetrieb.
 

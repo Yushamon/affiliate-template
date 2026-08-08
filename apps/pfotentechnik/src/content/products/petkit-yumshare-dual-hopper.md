@@ -176,8 +176,12 @@ alternatives:
   - petlibro-granary-camera-feeder
   - petlibro-granary-wifi-feeder
 comparisons:
-  - beste-futterautomaten-fuer-katzen
-  - beste-futterautomaten-fuer-hunde
+  - "beste-futterautomaten-fuer-katzen"
+  - "beste-futterautomaten-fuer-hunde"
+  - "beste-futterautomaten-fuer-mehrtierhaushalte"
+  - "beste-futterautomaten-fuer-zwei-katzen"
+  - "beste-futterautomaten-mit-kamera"
+  - "futterautomat-mit-app"
 comparisonFilters:
   animal:
     - dog

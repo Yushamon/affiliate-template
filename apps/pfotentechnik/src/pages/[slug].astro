@@ -231,22 +231,33 @@ const journeyRecommendedProduct =
 const journeyHasExactMatch = Boolean(journeyTopProduct);
 
 const journeyComparisonHref = recommendationJourney
-  ? `${recommendationJourney.comparisonHref}${
-      recommendationJourney.comparisonHref.includes("?") ? "&" : "?"
-    }${[
-      recommendationJourney.animal
-        ? `filter-tier=${recommendationJourney.animal === "dog" ? "hund" : "katze"}`
-        : "",
-      recommendationJourney.petSize
-        ? `filter-tiergroesse=${
-            recommendationJourney.petSize === "small"
-              ? "klein"
-              : recommendationJourney.petSize === "medium"
-                ? "mittel"
-                : "gross"
-          }`
-        : ""
-    ].filter(Boolean).join("&")}#direktvergleich`
+  ? (() => {
+      const params = new URLSearchParams();
+
+      if (recommendationJourney.animal) {
+        params.set(
+          "filter-tier",
+          recommendationJourney.animal === "dog" ? "hund" : "katze"
+        );
+      }
+
+      if (recommendationJourney.petSize) {
+        params.set(
+          "filter-tiergroesse",
+          recommendationJourney.petSize === "small"
+            ? "klein"
+            : recommendationJourney.petSize === "medium"
+              ? "mittel"
+              : "gross"
+        );
+      }
+
+      const baseHref =
+        recommendationJourney.comparisonHref.split(/[?#]/)[0] || "/vergleiche/";
+      const serialized = params.toString();
+
+      return baseHref + "#direktvergleich" + (serialized ? "?" + serialized : "");
+    })()
   : undefined;
 
 const closingProduct = assembledPage.closingCta

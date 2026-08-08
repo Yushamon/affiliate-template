@@ -11,6 +11,7 @@ category:
   key: "katzenklappen"
   label: "Katzenklappen"
   path: "/katzenklappen/"
+productUrl: "/produkt/petsafe-petporte-smart-flap/"
 publishedAt: "2026-08-04"
 updatedAt: "2026-08-07"
 layout: product

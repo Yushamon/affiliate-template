@@ -28,4 +28,3 @@ Die Migration ändert keine Fließtexte pauschal. Die neue Engine bereinigt nur 
 
 ## Verbleibende manuelle Entscheidungen
 
-- /haustierkameras/ besitzt keine Linking-Metadaten.

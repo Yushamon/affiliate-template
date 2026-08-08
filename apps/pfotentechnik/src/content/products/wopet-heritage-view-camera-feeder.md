@@ -216,6 +216,8 @@ decisionFacts:
   - label: "Batterie"
     value: "Nicht vom Hersteller ausgewiesen"
     consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+comparisons:
+  - "beste-futterautomaten-mit-kamera"
 ---
 6-Liter-Futterautomat mit Kamera, App und Zwei-Wege-Audio für die Sichtkontrolle am Futterplatz.
 

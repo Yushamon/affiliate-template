@@ -134,7 +134,8 @@ alternatives:
   - honeyguardian-smart-pet-feeder-s305d
   - petlibro-granary-camera-feeder
 comparisons:
-  - beste-futterautomaten-fuer-katzen
+  - "beste-futterautomaten-fuer-katzen"
+  - "beste-futterautomaten-fuer-mehrtierhaushalte"
 comparisonFilters:
   animal:
     - dog

@@ -19,6 +19,7 @@ category:
   key: futterautomaten
   label: Futterautomaten
   path: /smarte-futterautomaten/
+productUrl: "/produkt/petsafe-smart-feed-2/"
 publishedAt: "2026-07-13"
 updatedAt: "2026-07-13"
 author:
@@ -140,8 +141,10 @@ alternatives:
   - wopet-pioneer-f01-plus
   - pawsync-smart-pet-feeder
 comparisons:
-  - beste-futterautomaten-fuer-hunde
-  - beste-futterautomaten-fuer-katzen
+  - "beste-futterautomaten-fuer-hunde"
+  - "beste-futterautomaten-fuer-katzen"
+  - "beste-futterautomaten-fuer-berufstaetige"
+  - "beste-futterautomaten-mit-akku"
 comparisonFilters:
   animal:
     - dog

@@ -135,7 +135,8 @@ alternatives:
   - honeyguardian-smart-pet-feeder-s305d
   - surefeed-microchip-pet-feeder
 comparisons:
-  - beste-futterautomaten-fuer-katzen
+  - "beste-futterautomaten-fuer-katzen"
+  - "beste-futterautomaten-fuer-zwei-katzen"
 specs:
   - label: Futterart
     value: Trockenfutter

@@ -130,8 +130,11 @@ alternatives:
   - petkit-yumshare-solo
   - petkit-yumshare-dual-hopper
 comparisons:
-  - beste-futterautomaten-fuer-katzen
-  - beste-futterautomaten-fuer-hunde
+  - "beste-futterautomaten-fuer-katzen"
+  - "beste-futterautomaten-fuer-hunde"
+  - "beste-futterautomaten-mit-kamera"
+  - "futterautomat-fuer-grosse-hunde"
+  - "futterautomat-mit-app"
 specs:
   - label: Futterart
     value: Trockenfutter

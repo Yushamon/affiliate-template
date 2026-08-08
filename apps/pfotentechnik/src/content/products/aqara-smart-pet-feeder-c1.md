@@ -19,6 +19,7 @@ category:
   key: futterautomaten
   label: Futterautomaten
   path: /smarte-futterautomaten/
+productUrl: "/produkt/aqara-smart-pet-feeder-c1/"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author:

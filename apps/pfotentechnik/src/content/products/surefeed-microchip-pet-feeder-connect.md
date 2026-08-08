@@ -213,6 +213,13 @@ decisionFacts:
   - label: "Preis und Verfügbarkeit"
     value: "Aktuell prüfen"
     consequence: "Einzelgerät, Hub und Bundle werden getrennt angeboten. Hersteller- und Händlerbestand können voneinander abweichen; ein dauerhaft statischer Preis wäre deshalb irreführend."
+comparisons:
+  - "beste-futterautomaten-fuer-katzen"
+  - "beste-futterautomaten-fuer-mehrtierhaushalte"
+  - "beste-futterautomaten-fuer-nassfutter"
+  - "beste-futterautomaten-fuer-seniorenkatzen"
+  - "beste-futterautomaten-fuer-zwei-katzen"
+  - "beste-futterautomaten-ohne-wlan"
 ---
 ## Kurz eingeordnet
 

@@ -64,6 +64,10 @@ images:
     - src: "../../assets/images/products/devoko-90l-automatisches-katzenklo/gallery-3.webp"
       alt: "Devoko 90L mit App-Steuerung und Geruchskontrolle"
 
+    - src: "../../assets/images/products/devoko-90l-automatisches-katzenklo/gallery-4.webp"
+      alt: "Devoko 90L Automatisches Katzenklo, weitere Produktansicht 1"
+    - src: "../../assets/images/products/devoko-90l-automatisches-katzenklo/gallery-5.webp"
+      alt: "Devoko 90L Automatisches Katzenklo, weitere Produktansicht 2"
 price:
   current: 239.99
   currency: "EUR"

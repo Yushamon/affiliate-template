@@ -17,6 +17,7 @@ category:
   key: futterautomaten
   label: Futterautomaten
   path: /smarte-futterautomaten/
+productUrl: "/produkt/catit-pixi-vision-smart-feeder/"
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-12"
 author:

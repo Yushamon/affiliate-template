@@ -81,6 +81,7 @@ try {
 
   npmScript("Repository- und Umgebungsprüfung", "audit:repository:strict");
   npmScript("Content-Graph und Datenschema", "audit:content-graph");
+  npmScript("Produktdaten-Normalisierungsvertrag", "product:data:normalize:check");
   npmScript("Produktdaten-Audit", "audit:products:strict");
   npmScript("Vergleichsdaten-Audit", "comparison:data:audit:strict");
   npmScript("Vergleichsintegrität", "comparison:audit:strict");
@@ -93,6 +94,7 @@ try {
 
   if (!skipBuild) npmScript("Produktionsnaher Astro-Build", "build");
 
+  npmScript("Kanonische URL-Konsistenz", "audit:url-consistency:strict");
   npmScript("Gerenderte interne Linkziele", "audit:internal-link-targets:strict");
   npmScript("Gerenderter SEO-Build-Output", "audit:release-build-output:strict");
   npmScript("Technischer SEO-Build-Audit", "audit:technical-seo");

@@ -19,6 +19,7 @@ category:
   key: futterautomaten
   label: Futterautomaten
   path: /smarte-futterautomaten/
+productUrl: "/produkt/petsafe-freshfeed-refrigerated-feeder/"
 publishedAt: "2026-07-13"
 updatedAt: "2026-07-13"
 author:

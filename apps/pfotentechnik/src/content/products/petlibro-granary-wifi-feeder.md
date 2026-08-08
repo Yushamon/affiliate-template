@@ -132,8 +132,17 @@ alternatives:
   - xiaomi-smart-pet-food-feeder-2
   - surefeed-microchip-pet-feeder
 comparisons:
-  - beste-futterautomaten-fuer-katzen
-  - beste-futterautomaten-fuer-hunde
+  - "beste-futterautomaten-fuer-katzen"
+  - "beste-futterautomaten-fuer-hunde"
+  - "beste-futterautomaten-fuer-berufstaetige"
+  - "beste-futterautomaten-fuer-seniorenkatzen"
+  - "beste-futterautomaten-fuer-welpen"
+  - "beste-futterautomaten-fuer-zwei-katzen"
+  - "beste-futterautomaten-mit-akku"
+  - "beste-futterautomaten-mit-edelstahl-napf"
+  - "futterautomat-fuer-grosse-hunde"
+  - "futterautomat-gegen-schlingen"
+  - "futterautomat-mit-app"
 specs:
   - label: Modell
     value: PLAF103

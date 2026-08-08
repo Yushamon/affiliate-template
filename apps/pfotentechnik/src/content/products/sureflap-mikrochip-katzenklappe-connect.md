@@ -15,6 +15,7 @@ category:
   key: "katzenklappen"
   label: "Katzenklappen"
   path: "/katzenklappen/"
+productUrl: "/produkt/sureflap-mikrochip-katzenklappe-connect/"
 publishedAt: "2026-08-04"
 updatedAt: "2026-08-05"
 
@@ -140,7 +141,7 @@ alternatives:
 
 comparisons:
   - "beste-mikrochip-katzenklappen"
-
+  - "katzenklappen-mit-app-und-beuteerkennung"
 comparisonFilters:
   animal:
     - "cat"

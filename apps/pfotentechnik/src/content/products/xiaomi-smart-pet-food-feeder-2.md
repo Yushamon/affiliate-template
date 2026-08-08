@@ -139,8 +139,16 @@ alternatives:
   - petkit-fresh-element-solo
   - surefeed-microchip-pet-feeder
 comparisons:
-  - beste-futterautomaten-fuer-katzen
-  - beste-futterautomaten-fuer-hunde
+  - "beste-futterautomaten-fuer-katzen"
+  - "beste-futterautomaten-fuer-hunde"
+  - "beste-futterautomaten-fuer-berufstaetige"
+  - "beste-futterautomaten-fuer-kleine-hunde"
+  - "beste-futterautomaten-fuer-welpen"
+  - "beste-futterautomaten-mit-akku"
+  - "beste-futterautomaten-mit-edelstahl-napf"
+  - "futterautomat-fuer-grosse-hunde"
+  - "futterautomat-gegen-schlingen"
+  - "futterautomat-mit-app"
 specs:
   - label: Modell
     value: XMWSQ02

@@ -135,8 +135,18 @@ const filtersWithDefaults = quickFilters.map((filter) => ({
       const reset = root.querySelector<HTMLButtonElement>("[data-comparison-hero-filter-reset]");
       const apply = root.querySelector<HTMLButtonElement>("[data-comparison-hero-apply]");
       const toggle = root.querySelector<HTMLButtonElement>("[data-comparison-filter-toggle]");
-      const panel = root.querySelector<HTMLElement>("[data-comparison-filter-panel]");
-      const params = new URLSearchParams(window.location.search);
+
+      const parseFragmentState = () => {
+        const raw = window.location.hash.replace(/^#/, "");
+        const separator = raw.indexOf("?");
+        return {
+          anchor: separator >= 0 ? raw.slice(0, separator) : raw,
+          params: new URLSearchParams(separator >= 0 ? raw.slice(separator + 1) : "")
+        };
+      };
+
+      const fragmentState = parseFragmentState();
+      const legacyQuery = new URLSearchParams(window.location.search);
 
       const setOpen = (open: boolean) => {
         root.dataset.mobileCollapsed = String(!open);
@@ -145,23 +155,40 @@ const filtersWithDefaults = quickFilters.map((filter) => ({
 
       for (const select of selects) {
         const key = select.dataset.filterKey ?? "";
-        const fromUrl = key ? params.get(key) : null;
+        const fromFragment = key ? fragmentState.params.get(key) : null;
+        const fromLegacyQuery = key ? legacyQuery.get(key) : null;
         const contextual = select.dataset.defaultValue ?? "";
-        select.value = fromUrl ?? contextual;
+        select.value = fromFragment ?? fromLegacyQuery ?? contextual;
       }
 
       const syncUrl = () => {
         const next = new URL(window.location.href);
+        const state = new URLSearchParams();
+
         for (const select of selects) {
           const key = select.dataset.filterKey;
           if (!key) continue;
-          if (select.value) next.searchParams.set(key, select.value);
-          else next.searchParams.delete(key);
+          next.searchParams.delete(key);
+          if (select.value) state.set(key, select.value);
         }
-        history.replaceState({}, "", next);
+
+        const serialized = state.toString();
+        next.hash = serialized
+          ? "#direktvergleich?" + serialized
+          : "#direktvergleich";
+
+        history.replaceState({}, "", next.pathname + next.search + next.hash);
       };
 
+      const hasLegacyFilterQuery = selects.some((select) => {
+        const key = select.dataset.filterKey;
+        return Boolean(key && legacyQuery.has(key));
+      });
+
+      if (hasLegacyFilterQuery) syncUrl();
+
       selects.forEach((select) => select.addEventListener("change", syncUrl));
+
       toggle?.addEventListener("click", () => {
         setOpen(toggle.getAttribute("aria-expanded") !== "true");
       });
@@ -169,17 +196,17 @@ const filtersWithDefaults = quickFilters.map((filter) => ({
       apply?.addEventListener("click", () => {
         syncUrl();
         setOpen(false);
-        document.getElementById("direktvergleich")?.scrollIntoView({ behavior: "smooth", block: "start" });
+        document.getElementById("direktvergleich")?.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
       });
 
       reset?.addEventListener("click", () => {
-        const next = new URL(window.location.href);
         for (const select of selects) {
-          const key = select.dataset.filterKey;
-          if (key) next.searchParams.delete(key);
           select.value = select.dataset.defaultValue ?? "";
         }
-        history.replaceState({}, "", next);
+        syncUrl();
       });
 
       const desktop = window.matchMedia("(min-width: 48rem)");

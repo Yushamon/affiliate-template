@@ -15,6 +15,7 @@ category:
   key: trinkbrunnen
   label: Trinkbrunnen
   path: /trinkbrunnen/
+productUrl: "/produkt/oneisall-3-5l-cordless-fountain/"
 publishedAt: "2026-07-13"
 updatedAt: "2026-07-13"
 author:
@@ -221,6 +222,8 @@ decisionFacts:
   - label: "Ersatzfilter"
     value: "Herstellerempfehlung: alle 2 bis 3 Wochen wechseln"
     consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
+comparisons:
+  - "beste-trinkbrunnen-fuer-hunde"
 ---
 Der oneisall 3,5L ist besonders wegen seines Verhältnisses aus Tankgröße und kabelloser Nutzung interessant. Vor dem Kauf sollte geklärt werden, ob die Katze Sensorfluss akzeptiert.
 

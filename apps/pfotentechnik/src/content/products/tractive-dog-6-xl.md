@@ -19,6 +19,7 @@ category:
   key: gps-tracker
   label: GPS-Tracker
   path: /gps-tracker/
+productUrl: "/produkt/tractive-dog-6-xl/"
 publishedAt: "2026-07-20"
 updatedAt: "2026-07-25"
 author:

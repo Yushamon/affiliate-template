@@ -17,6 +17,7 @@ category:
   key: futterautomaten
   label: Futterautomaten
   path: /smarte-futterautomaten/
+productUrl: "/produkt/petsafe-healthy-pet-simply-feed/"
 publishedAt: "2026-07-13"
 updatedAt: "2026-07-13"
 author:
@@ -141,9 +142,10 @@ alternatives:
   - wopet-pioneer-f01-plus
   - petlibro-air-automatic-feeder
 comparisons:
-  - beste-futterautomaten-fuer-hunde
-  - beste-futterautomaten-fuer-katzen
-  - beste-futterautomaten-ohne-wlan
+  - "beste-futterautomaten-fuer-hunde"
+  - "beste-futterautomaten-fuer-katzen"
+  - "beste-futterautomaten-ohne-wlan"
+  - "futterautomat-gegen-schlingen"
 comparisonFilters:
   animal:
     - dog

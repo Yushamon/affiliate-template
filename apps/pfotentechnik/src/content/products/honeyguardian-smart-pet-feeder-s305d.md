@@ -128,8 +128,10 @@ alternatives:
   - oneisall-5l-automatic-cat-feeder
   - petkit-fresh-element-solo
 comparisons:
-  - beste-futterautomaten-fuer-katzen
-  - beste-futterautomaten-fuer-hunde
+  - "beste-futterautomaten-fuer-katzen"
+  - "beste-futterautomaten-fuer-hunde"
+  - "beste-futterautomaten-mit-edelstahl-napf"
+  - "beste-futterautomaten-unter-100-euro"
 specs:
   - label: Futterart
     value: Trockenfutter

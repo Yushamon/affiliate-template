@@ -17,6 +17,7 @@ category:
   key: trinkbrunnen
   label: Trinkbrunnen
   path: /trinkbrunnen/
+productUrl: "/produkt/oneisall-2-2l-cordless-fountain/"
 publishedAt: "2026-07-13"
 updatedAt: "2026-07-16"
 author:

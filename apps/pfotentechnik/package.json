@@ -203,7 +203,12 @@
     "audit:seo-growth-clusters": "node scripts/seo/audit-growth-clusters.mjs",
     "seo:discovery:sync": "node scripts/seo/sync-content-discovery-links.mjs --write",
     "seo:discovery:check": "node scripts/seo/sync-content-discovery-links.mjs --check",
-    "test:content-discovery": "node --test test/content-discovery-linking-32.6.0.test.mjs"
+    "test:content-discovery": "node --test test/content-discovery-linking-32.6.0.test.mjs",
+    "product:data:normalize": "node scripts/seo/normalize-product-data.mjs --write",
+    "product:data:normalize:check": "node scripts/seo/normalize-product-data.mjs --check",
+    "test:product-data-normalizer": "node --test test/product-data-normalizer-32.6.1.test.mjs",
+    "audit:url-consistency": "node scripts/seo/audit-url-consistency.mjs",
+    "audit:url-consistency:strict": "node scripts/seo/audit-url-consistency.mjs --strict"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

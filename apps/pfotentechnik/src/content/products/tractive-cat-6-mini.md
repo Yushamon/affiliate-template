@@ -19,6 +19,7 @@ category:
   key: gps-tracker
   label: GPS-Tracker
   path: /gps-tracker/
+productUrl: "/produkt/tractive-cat-6-mini/"
 publishedAt: "2026-07-20"
 updatedAt: "2026-07-22"
 author:

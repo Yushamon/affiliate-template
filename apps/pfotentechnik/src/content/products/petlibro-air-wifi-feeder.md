@@ -171,8 +171,9 @@ alternatives:
   - petkit-fresh-element-solo
   - petlibro-granary-wifi-feeder
 comparisons:
-  - beste-futterautomaten-fuer-katzen
-  - beste-futterautomaten-fuer-hunde
+  - "beste-futterautomaten-fuer-katzen"
+  - "beste-futterautomaten-fuer-hunde"
+  - "beste-futterautomaten-fuer-kleine-hunde"
 comparisonFilters:
   animal:
     - dog
