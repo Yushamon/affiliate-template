@@ -104,7 +104,42 @@ const buildRouteSet = new Set(
     .filter(Boolean)
 );
 
-const routeSet = new Set([...contentRouteSet, ...buildRouteSet]);
+/**
+ * Statische Astro-Seiten gehören zum gültigen Source-Routenvertrag und dürfen
+ * nicht davon abhängen, ob dist vor dem Source-Link-Audit bereits frisch gebaut
+ * wurde. Dynamische Routen ([slug], [...path]) werden hier bewusst ausgelassen,
+ * weil ihre konkreten URLs aus Content bzw. Build stammen müssen.
+ */
+const routeForSourcePage = (file) => {
+  const pagesRoot = path.join(appRoot, "src/pages");
+  const relative = path.relative(pagesRoot, file).replace(/\\/g, "/");
+
+  if (!/\.(astro|md|mdx)$/i.test(relative)) return "";
+  if (relative.split("/").some((segment) => segment.includes("[") || segment.includes("]"))) {
+    return "";
+  }
+
+  const withoutExtension = relative.replace(/\.(astro|md|mdx)$/i, "");
+  if (withoutExtension === "index") return "/";
+
+  const routePath = withoutExtension.endsWith("/index")
+    ? withoutExtension.slice(0, -"/index".length)
+    : withoutExtension;
+
+  return normalizeTaxonomyPath(`/${routePath}/`);
+};
+
+const sourcePageRouteSet = new Set(
+  walkFiles(path.join(appRoot, "src/pages"))
+    .map(routeForSourcePage)
+    .filter(Boolean)
+);
+
+const routeSet = new Set([
+  ...contentRouteSet,
+  ...sourcePageRouteSet,
+  ...buildRouteSet
+]);
 const definitions = docs.flatMap((doc) => {
   const taxonomyAliasSet = new Set(
     LINK_TAXONOMY
