@@ -53,7 +53,7 @@
 - Intentionen: product-research ↔ product-research
 - Maßnahme: DIFFERENTIATE
 - Begründung: Standard- und XL-Variante besitzen unterschiedliche Größen- und Einsatzprofile.
-- Ähnlichkeit: 0.7607
+- Ähnlichkeit: 0.713
 
 ## Audit-Befunde
 
