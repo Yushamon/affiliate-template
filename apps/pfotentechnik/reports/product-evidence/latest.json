@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-10T11:11:52.074Z",
+  "generatedAt": "2026-08-10T11:33:17.652Z",
   "products": 82,
-  "covered": 0,
+  "covered": 4,
   "complete": 0,
   "missing": [
     "aqara-smart-pet-feeder-c1",
@@ -33,7 +33,6 @@
     "onlycat-mikrochip-katzenklappe",
     "paj-pet-finder-4g-mini",
     "pawbby-smart-pet-feeder",
-    "pawsync-smart-pet-feeder",
     "petkit-eversweet-3-pro-uvc",
     "petkit-eversweet-5-mini",
     "petkit-eversweet-max-2-uvc",
@@ -55,7 +54,6 @@
     "petlibro-dockstream-rfid-smart",
     "petlibro-glacier-ultrafiltration",
     "petlibro-granary-2-vision",
-    "petlibro-granary-camera-feeder",
     "petlibro-granary-dual-feeder",
     "petlibro-granary-wifi-feeder",
     "petlibro-one-rfid-smart-feeder",
@@ -76,8 +74,6 @@
     "sureflap-mikrochip-katzenklappe",
     "tractive-cat-6-mini",
     "tractive-dog-6-xl",
-    "tractive-dog-6",
-    "weenect-xs",
     "weenect-xt",
     "wopet-cube-air-ca10",
     "wopet-heritage-view-camera-feeder",
@@ -293,9 +289,9 @@
     },
     {
       "slug": "pawsync-smart-pet-feeder",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
       "consensus": 0
     },
     {
@@ -447,9 +443,9 @@
     },
     {
       "slug": "petlibro-granary-camera-feeder",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
+      "hasExternal": true,
+      "professional": 2,
+      "userSources": 2,
       "consensus": 0
     },
     {
@@ -594,16 +590,16 @@
     },
     {
       "slug": "tractive-dog-6",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
+      "hasExternal": true,
+      "professional": 3,
+      "userSources": 1,
       "consensus": 0
     },
     {
       "slug": "weenect-xs",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
       "consensus": 0
     },
     {

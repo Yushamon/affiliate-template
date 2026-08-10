@@ -19,7 +19,7 @@ category:
   path: /smarte-futterautomaten/
 productUrl: "/produkt/pawsync-smart-pet-feeder/"
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-19"
+updatedAt: "2026-08-10"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -90,6 +90,55 @@ ratings:
   preisleistung: 4.5
   reinigung: 4.4
   portionierung: 4.8
+externalEvidence:
+  professionalReviews:
+    - publisher: "Reviewed"
+      title: "PawSync Smart Pet Feeder Review"
+      url: "https://www.reviewed.com/pets/content/pawsync-smart-pet-feeder-review"
+      publishedAt: "2024-10-17"
+      checkedAt: "2026-08-10"
+      methodology: "hands-on"
+      positives:
+        - "Im zweiwöchigen Praxistest wurden Mahlzeiten pünktlich und in der gewählten Menge ausgegeben."
+        - "Im Test traten keine Futterblockaden auf."
+        - "Einrichtung und App wurden als unkompliziert beschrieben."
+      negatives:
+        - "Der Vorratsbehälter ist kleiner als bei mehreren teureren Vergleichsmodellen."
+        - "Die verfügbaren Portionsschritte können für sehr kleine Einzelmahlzeiten zu grob sein."
+      findings:
+        - "Reviewed kontrollierte die ausgegebene Futtermenge zusätzlich mit einer Küchenwaage."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/pawsync-36-liter-stainless-steel-bowl/product-reviews/1453158"
+      checkedAt: "2026-08-10"
+      rating: 4.5
+      scale: 5
+      reviewCount: 139
+      recurringPositives:
+        - "Fütterungsplan und Portionierung werden überwiegend positiv bewertet."
+        - "Die integrierte Waage und die einfache Einrichtung werden wiederholt gelobt."
+        - "Mehrere Nutzer berichten von zuverlässigem Betrieb im Alltag."
+      recurringCriticism:
+        - "Einzelne Nutzer empfinden die kleinste Portion für kleine oder häufige Mahlzeiten als zu groß."
+        - "In einzelnen Rezensionen werden Support und Ersatzteilversorgung kritisiert."
+  consensus:
+    strengths:
+      - finding: "Zeitgesteuerte Fütterung und Gewichtskontrolle funktionieren in den ausgewerteten Quellen insgesamt zuverlässig."
+        sourceCount: 2
+        confidence: "high"
+        assessment: "Der unabhängige Praxistest und die größere Chewy-Bewertungsbasis zeigen in dieselbe Richtung."
+      - finding: "Einrichtung und App gelten überwiegend als unkompliziert."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Die kleinste verfügbare Portionsstufe kann für sehr kleine, häufige Mahlzeiten zu grob sein."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Die externe Evidenz stärkt vor allem die Aussagen zu zuverlässiger Zeitsteuerung und Gewichtskontrolle.
+      Die Nutzerbewertungen werden getrennt vom redaktionellen PfotenTechnik-Score dargestellt.
+  note: >-
+    Externe Bewertungen werden als Quellenbeleg verwendet und nicht mit der redaktionellen PfotenTechnik-Note verrechnet.
 decision:
   bestFor:
     - Katzen und kleine Hunde

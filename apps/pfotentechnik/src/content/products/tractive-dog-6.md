@@ -21,7 +21,7 @@ category:
   path: /gps-tracker/
 productUrl: "/produkt/tractive-dog-6/"
 publishedAt: "2026-07-20"
-updatedAt: "2026-07-25"
+updatedAt: "2026-08-10"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -94,6 +94,79 @@ ratings:
   akku: 4.5
   tragekomfort: 4.5
   kosten: 4
+externalEvidence:
+  professionalReviews:
+    - publisher: "heise bestenlisten"
+      title: "Tractive Dog 6 im Test"
+      url: "https://www.heise.de/bestenlisten/testbericht/gps-tracker-tractive-dog-6-im-test/yzmc5t8"
+      publishedAt: "2025-06-13"
+      checkedAt: "2026-08-10"
+      methodology: "hands-on"
+      positives:
+        - "Präzise Ortung und einfache, funktionsreiche App."
+        - "Im Test waren nach knapp fünf Tagen mit kurzen Live-Sequenzen noch 46 Prozent Akkuladung vorhanden."
+        - "IP68 und verbesserte Akkulaufzeit wurden positiv bewertet."
+      negatives:
+        - "Abo-Pflicht."
+        - "Gelegentliche Standortungenauigkeiten."
+        - "Hohe Gesamtkosten über längere Nutzung."
+    - publisher: "CHIP"
+      title: "Tractive DOG 6 Hundetracker im Test"
+      url: "https://www.chip.de/test/Tractive-Dog-6-Hundetracker-im-Test_186573405.html"
+      publishedAt: "2026-02-11"
+      checkedAt: "2026-08-10"
+      methodology: "lab-test"
+      positives:
+        - "CHIP bewertet Tracking, Genauigkeit, Ausstattung und App sehr stark."
+        - "Der Tracker erreichte im Testurteil die Note 1,2."
+      negatives:
+        - "Der Akku wurde schwächer bewertet als Tracking und Ausstattung."
+        - "Premium-Abo und laufende Nutzungskosten bleiben Nachteile."
+    - publisher: "TreeLine Review"
+      title: "Tractive Dog 6 GPS Tracker Review"
+      url: "https://www.treelinereview.com/gearreviews/tractive-dog-6-gps-tracker-review"
+      publishedAt: "2026-07-11"
+      checkedAt: "2026-08-10"
+      methodology: "hands-on"
+      positives:
+        - "Schnelle Verbindung, schnelles Live-Tracking und eine gut bedienbare App."
+        - "Im konkreten Test hielt der Akku bei der dortigen Nutzung bis zu 25 Tage."
+      negatives:
+        - "Die tatsächliche Laufzeit hängt stark von Aktivität, WLAN-Nähe und Live-Nutzung ab."
+  userReviews:
+    - platform: "Trustpilot · Tractive gesamt"
+      url: "https://www.trustpilot.com/review/tractive.com"
+      checkedAt: "2026-08-10"
+      rating: 4.7
+      scale: 5
+      reviewCount: 58630
+      recurringPositives:
+        - "Ortung, App und das Sicherheitsgefühl werden häufig positiv beschrieben."
+        - "Viele Bewertungen loben Live-Tracking und Gesundheitsfunktionen."
+      recurringCriticism:
+        - "Ein Teil der Bewertungen kritisiert GPS-Abweichungen oder verzögerte Meldungen."
+        - "Es gibt einzelne Beschwerden über Akkuprobleme und Support."
+  consensus:
+    strengths:
+      - finding: "Ortungsgenauigkeit, Live-Tracking und App gehören zu den am stärksten bestätigten Qualitäten des DOG 6."
+        sourceCount: 4
+        confidence: "high"
+      - finding: "Die reale Akkulaufzeit kann bei moderater Nutzung deutlich besser ausfallen als bei intensiver Live-Ortung."
+        sourceCount: 3
+        confidence: "high"
+    weaknesses:
+      - finding: "Das Pflichtabo und die laufenden Kosten sind ein konsistenter Nachteil."
+        sourceCount: 3
+        confidence: "high"
+      - finding: "GPS-Genauigkeit und Akkulaufzeit bleiben abhängig von Empfang, Aktivität und Nutzungsprofil."
+        sourceCount: 3
+        confidence: "high"
+    editorialAssessment: >-
+      Drei unabhängige Tests stützen die sehr gute Einordnung von Ortung und Bedienung. Der Trustpilot-Wert ist
+      markenweit und nicht DOG-6-spezifisch; er dient nur als breites Nutzersignal.
+  note: >-
+    Die Trustpilot-Bewertung umfasst Tractive als Marke und verschiedene Tracker-Generationen. Sie wird deshalb
+    nicht als produktspezifische Bewertung des DOG 6 behandelt.
 decision:
   bestFor:
     - Hunde ab 4 kg

@@ -19,7 +19,7 @@ category:
   path: /smarte-futterautomaten/
 productUrl: /produkt/petlibro-granary-camera-feeder/
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-17"
+updatedAt: "2026-08-10"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -93,6 +93,74 @@ ratings:
   zuverlaessigkeit: 4.5
   sicherheit: 4.5
   preisleistung: 4
+externalEvidence:
+  professionalReviews:
+    - publisher: "Tom's Guide"
+      title: "My cats tested this smart pet feeder for a month"
+      url: "https://www.tomsguide.com/home/my-cats-tested-this-smart-pet-feeder-for-a-month-and-now-i-cant-stop-watching-them"
+      checkedAt: "2026-08-10"
+      methodology: "hands-on"
+      positives:
+        - "Der Feeder wurde einen Monat mit zwei Katzen genutzt."
+        - "Kamera, Futterplanung und Fernkontrolle wurden als praktisch und zuverlässig beschrieben."
+        - "Lokale Videospeicherung per microSD ergänzt die Cloudoption."
+      negatives:
+        - "Das Batterie-Backup verwendet nicht wiederaufladbare D-Batterien."
+      findings:
+        - "Der Test hebt den Nutzen der Kamera besonders in einem Mehrkatzenhaushalt mit unterschiedlichen Futterbedürfnissen hervor."
+    - publisher: "Cats.com"
+      title: "Petlibro Granary Automatic Pet Feeder with Camera Review"
+      url: "https://cats.com/petlibro-granary-automatic-feeder-with-camera-review"
+      checkedAt: "2026-08-10"
+      methodology: "hands-on"
+      positives:
+        - "Flexible Mahlzeitenplanung und App-Steuerung wurden positiv bewertet."
+        - "Kamera, Zwei-Wege-Audio und Napfüberwachung funktionierten im Test überzeugend."
+        - "Der Feeder wurde insgesamt als leistungsstark eingeordnet."
+      negatives:
+        - "Der Preis liegt über vielen einfachen Futterautomaten."
+  userReviews:
+    - platform: "Best Buy"
+      url: "https://www.bestbuy.com/site/reviews/petlibro-granary-wifi-stainless-steel-5l-automatic-dog-and-cat-feeder-with-camera-monitoring-black/11300635"
+      checkedAt: "2026-08-10"
+      rating: 4.4
+      scale: 5
+      reviewCount: 49
+      recurringPositives:
+        - "Kameraüberwachung wird besonders häufig positiv genannt."
+        - "Fütterungsplan und App-Funktionen werden überwiegend positiv bewertet."
+      recurringCriticism:
+        - "Einzelne Nutzer berichten von Problemen bei der Futterausgabe."
+    - platform: "Chewy"
+      url: "https://www.chewy.com/petlibro-granary-automatic-camera-cat/product-reviews/1042774"
+      checkedAt: "2026-08-10"
+      rating: 4.5
+      scale: 5
+      reviewCount: 11
+      recurringPositives:
+        - "Die Gesamtbewertung ist positiv, die Stichprobe aber klein."
+      recurringCriticism:
+        - "Einzelne Rezensionen berichten über zeitweise Probleme mit der Videofunktion oder viele Bewegungsbenachrichtigungen."
+  consensus:
+    strengths:
+      - finding: "Kamera und App sind der am klarsten bestätigte Mehrwert des Granary Camera Feeders."
+        sourceCount: 4
+        confidence: "high"
+        assessment: "Zwei Hands-on-Reviews und zwei Händler-Bewertungsquellen stützen diesen Punkt."
+      - finding: "Zeitpläne und Fernkontrolle funktionieren in den unabhängigen Tests überzeugend."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "Bei Kamera- und Futterausgabe gibt es vereinzelte Nutzerberichte über technische Unzuverlässigkeit."
+        sourceCount: 2
+        confidence: "medium"
+        assessment: "Die Kritik stammt aus Nutzerquellen und ist nicht als genereller Serienfehler belegt."
+    editorialAssessment: >-
+      Die unabhängigen Tests bestätigen den Nutzen von Kamera, App und Zeitsteuerung. Nutzerkritik zu einzelnen
+      Kamera- oder Ausgabefehlern bleibt ein Beobachtungspunkt, aber kein Beleg für einen generellen Defekt.
+  note: >-
+    Händlerbewertungen sind Momentaufnahmen zum Abrufdatum. Die beiden Händler-Scores werden nicht gemittelt und
+    nicht in den redaktionellen PfotenTechnik-Score eingerechnet.
 decision:
   bestFor:
     - Katzen und kleine bis mittelgroße Hunde

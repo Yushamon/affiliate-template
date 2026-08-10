@@ -29,8 +29,7 @@ category:
 productUrl: "/produkt/weenect-xs/"
 
 publishedAt: "2026-07-20"
-updatedAt: "2026-07-26"
-
+updatedAt: "2026-08-10"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion für smarte Haustiertechnik"
@@ -116,6 +115,51 @@ ratings:
   tragekomfort: 4.8
   kosten: 3.9
 
+externalEvidence:
+  professionalReviews:
+    - publisher: "heise bestenlisten"
+      title: "Weenect XS (2024) im Test"
+      url: "https://www.heise.de/bestenlisten/testbericht/weenect-xs-2024-im-test/yvp0n9f"
+      publishedAt: "2025-01-29"
+      checkedAt: "2026-08-10"
+      methodology: "hands-on"
+      positives:
+        - "Deutlich verbesserte Ortungsgenauigkeit in Stadt und Land."
+        - "Kompaktes, leichtes und wasserdichtes Gehäuse."
+        - "Im Alltagstest wurden gut sieben Tage Akkulaufzeit erreicht."
+      negatives:
+        - "Monatliche Gebühren für die Mobilfunk-SIM."
+        - "Echtzeit-Tracking erhöht den Akkuverbrauch deutlich."
+  userReviews:
+    - platform: "Trustpilot · Weenect gesamt"
+      url: "https://de.trustpilot.com/review/weenect.com"
+      checkedAt: "2026-08-10"
+      rating: 4.6
+      scale: 5
+      reviewCount: 22470
+      recurringPositives:
+        - "App, Ortung und Kundenservice werden häufig positiv bewertet."
+        - "Viele Nutzer beschreiben das Tracking als hilfreich und einfach bedienbar."
+      recurringCriticism:
+        - "Einzelne Nutzer berichten über Verbindungsabbrüche oder kurze Akkulaufzeit bei schwierigen Empfangsbedingungen."
+        - "Es gibt vereinzelte Kritik an Software und Supportabläufen."
+  consensus:
+    strengths:
+      - finding: "Geringes Gewicht und praxistaugliche Ortung sind die am stärksten bestätigten Vorteile."
+        sourceCount: 2
+        confidence: "high"
+      - finding: "Die App wird insgesamt als gut nutzbar beschrieben."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Abo-Kosten und höherer Akkuverbrauch bei intensiver Ortung bleiben die klarsten Gegenargumente."
+        sourceCount: 2
+        confidence: "high"
+    editorialAssessment: >-
+      Der unabhängige Praxistest bestätigt die starke Ortungsleistung und die alltagstaugliche Laufzeit. Die
+      Trustpilot-Bewertung ist markenweit und wird nur ergänzend als Nutzersignal verwendet.
+  note: >-
+    Der Trustpilot-Score bezieht sich auf Weenect insgesamt und nicht ausschließlich auf das XS-Modell.
 decision:
   bestFor:
     - "Katzen ab 3 kg"

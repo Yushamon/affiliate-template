@@ -1,7 +1,7 @@
 # Product External Evidence Audit
 
 - Produkte: 82
-- Mit externalEvidence: 0
+- Mit externalEvidence: 4
 - Vollständig: 0
 
 ## Ohne Evidenz
@@ -35,7 +35,6 @@
 - onlycat-mikrochip-katzenklappe
 - paj-pet-finder-4g-mini
 - pawbby-smart-pet-feeder
-- pawsync-smart-pet-feeder
 - petkit-eversweet-3-pro-uvc
 - petkit-eversweet-5-mini
 - petkit-eversweet-max-2-uvc
@@ -57,7 +56,6 @@
 - petlibro-dockstream-rfid-smart
 - petlibro-glacier-ultrafiltration
 - petlibro-granary-2-vision
-- petlibro-granary-camera-feeder
 - petlibro-granary-dual-feeder
 - petlibro-granary-wifi-feeder
 - petlibro-one-rfid-smart-feeder
@@ -78,8 +76,6 @@
 - sureflap-mikrochip-katzenklappe
 - tractive-cat-6-mini
 - tractive-dog-6-xl
-- tractive-dog-6
-- weenect-xs
 - weenect-xt
 - wopet-cube-air-ca10
 - wopet-heritage-view-camera-feeder
