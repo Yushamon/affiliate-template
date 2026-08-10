@@ -10,12 +10,12 @@
 
 | Route | HTML | CSS | JS | DOM | Bilder | Befunde |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| / | 63100 B | 294344 B | 0 B | 655 | 660046 B | 0 |
+| / | 63092 B | 294344 B | 0 B | 655 | 660046 B | 0 |
 | /vergleiche/ | 48434 B | 275205 B | 0 B | 428 | 0 B | 0 |
-| /vergleiche/beste-futterautomaten-fuer-katzen/ | 144212 B | 320055 B | 0 B | 1294 | 293078 B | 1 |
+| /vergleiche/beste-futterautomaten-fuer-katzen/ | 144214 B | 320055 B | 0 B | 1294 | 293078 B | 1 |
 | /vergleiche/gps-tracker-ohne-abo/ | 90114 B | 320055 B | 0 B | 741 | 271636 B | 0 |
-| /produkt/petlibro-granary-2-vision/ | 90181 B | 334542 B | 5948 B | 732 | 517486 B | 1 |
-| /hersteller/petlibro/ | 77107 B | 303665 B | 0 B | 639 | 1112874 B | 0 |
+| /produkt/petlibro-granary-2-vision/ | 90123 B | 334542 B | 5948 B | 732 | 517486 B | 1 |
+| /hersteller/petlibro/ | 77125 B | 303665 B | 0 B | 639 | 1112874 B | 0 |
 | /wissen/ | 61822 B | 275205 B | 0 B | 664 | 0 B | 0 |
 | /smarte-futterautomaten/ | 130307 B | 336844 B | 0 B | 1395 | 3499826 B | 4 |
 | /hund-trinkt-ploetzlich-viel/ | 43844 B | 336844 B | 0 B | 497 | 240320 B | 1 |
@@ -32,8 +32,8 @@
 
 ## Befunde
 
-- WARNING PERF_HTML_TOO_LARGE (/vergleiche/beste-futterautomaten-fuer-katzen/): HTML-Budget überschritten: 144212 > 130000.
-- WARNING PERF_HTML_TOO_LARGE (/produkt/petlibro-granary-2-vision/): HTML-Budget überschritten: 90181 > 90000.
+- WARNING PERF_HTML_TOO_LARGE (/vergleiche/beste-futterautomaten-fuer-katzen/): HTML-Budget überschritten: 144214 > 130000.
+- WARNING PERF_HTML_TOO_LARGE (/produkt/petlibro-granary-2-vision/): HTML-Budget überschritten: 90123 > 90000.
 - WARNING PERF_HTML_TOO_LARGE (/smarte-futterautomaten/): HTML-Budget überschritten: 130307 > 105000.
 - WARNING PERF_DOM_TOO_COMPLEX (/smarte-futterautomaten/): DOM-Budget überschritten: 1395 > 950.
 - WARNING PERF_IMAGE_BYTES_EXCEEDED (/smarte-futterautomaten/): Bildbudget überschritten: 3499826 > 3200000.
