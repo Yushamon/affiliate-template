@@ -21,7 +21,7 @@ category:
   path: /gps-tracker/
 productUrl: "/produkt/tractive-dog-6-xl/"
 publishedAt: "2026-07-20"
-updatedAt: "2026-07-25"
+updatedAt: "2026-08-10"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -94,6 +94,49 @@ ratings:
   akku: 4.9
   tragekomfort: 4
   kosten: 4
+externalEvidence:
+  professionalReviews:
+    - publisher: "The Verge"
+      title: "Tractive's new dog and cat trackers provide more health insights for your pets"
+      url: "https://www.theverge.com/tech/907947/tractive-dog-6-xl-cat-mini-pet-trackers-health-monitoring-location"
+      publishedAt: "2026-04-08"
+      checkedAt: "2026-08-10"
+      methodology: "editorial-review"
+      positives:
+        - "Die unabhängige Produktberichterstattung bestätigt die Positionierung für große Hunde und die erweiterten Gesundheitsfunktionen."
+        - "Längere Akkulaufzeit und robusteres Gehäuse gegenüber der Vorgängergeneration werden als zentrale Neuerungen genannt."
+      negatives:
+        - "Das Produkt erfordert weiterhin ein kostenpflichtiges Abo."
+      findings:
+        - "Die Quelle ist Produktberichterstattung zum Marktstart, kein Langzeit- oder Hands-on-Test des DOG 6 XL."
+  userReviews:
+    - platform: "Trustpilot · Tractive gesamt"
+      url: "https://www.trustpilot.com/review/tractive.com"
+      checkedAt: "2026-08-10"
+      recurringPositives:
+        - "Es existieren inzwischen einzelne ausdrücklich als DOG 6 XL bezeichnete positive Nutzerberichte."
+        - "Supportreaktion und Ersatzabwicklung werden in einem konkreten DOG-6-XL-Bericht positiv beschrieben."
+      recurringCriticism:
+        - "Ein konkreter DOG-6-XL-Bericht beschreibt einen beim Versand beschädigten Tracker; der Austausch erfolgte laut Nutzer schnell."
+  consensus:
+    strengths:
+      - finding: "Akkureserve, große-Hunde-Fit und Tractive-App-Ökosystem sind plausibel starke Kaufargumente."
+        sourceCount: 2
+        confidence: "medium"
+        assessment: "Die Produktberichterstattung bestätigt die Produktpositionierung; produktspezifische Langzeiterfahrung ist noch dünn."
+    weaknesses:
+      - finding: "Abo-Pflicht und laufende Kosten bleiben der klarste strukturelle Nachteil."
+        sourceCount: 2
+        confidence: "high"
+      - finding: "Für Haltbarkeit und reale Mehrwochen-Akkulaufzeit fehlt noch genügend unabhängige Langzeitevidenz."
+        sourceCount: 2
+        confidence: "high"
+    editorialAssessment: >-
+      Der DOG 6 XL ist noch zu jung für eine belastbare Langzeitbewertung. Deshalb wird die Produktberichterstattung
+      nicht als Praxistest behandelt und die einzelne produktspezifische Nutzererfahrung nicht verallgemeinert.
+  note: >-
+    Trustpilot bewertet Tractive insgesamt. Einzelne Rezensionen nennen den DOG 6 XL ausdrücklich, der Plattformwert
+    selbst ist aber nicht produktspezifisch und wird daher nicht als DOG-6-XL-Score übernommen.
 decision:
   bestFor:
     - Hunde ab 20 kg

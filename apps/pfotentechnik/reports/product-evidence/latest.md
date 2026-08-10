@@ -1,7 +1,7 @@
 # Product External Evidence Audit
 
 - Produkte: 82
-- Mit externalEvidence: 8
+- Mit externalEvidence: 10
 - Vollständig: 0
 
 ## Ohne Evidenz
@@ -28,7 +28,6 @@
 - oneisall-2-2l-cordless-fountain
 - oneisall-2-in-1-feeder-water
 - oneisall-3-2l-cordless-fountain
-- oneisall-3-5l-cordless-fountain
 - oneisall-5l-automatic-cat-feeder
 - oneisall-7l-dog-water-fountain
 - onlycat-mikrochip-katzenklappe
@@ -73,7 +72,6 @@
 - sureflap-mikrochip-katzenklappe-connect
 - sureflap-mikrochip-katzenklappe
 - tractive-cat-6-mini
-- tractive-dog-6-xl
 - weenect-xt
 - wopet-cube-air-ca10
 - wopet-heritage-view-camera-feeder

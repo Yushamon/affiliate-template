@@ -17,7 +17,7 @@ category:
   path: /trinkbrunnen/
 productUrl: "/produkt/oneisall-3-5l-cordless-fountain/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
+updatedAt: "2026-08-10"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -90,6 +90,68 @@ ratings:
   lautstaerke: 4.5
   akkureserve: 4.6
   preisleistung: 4.6
+externalEvidence:
+  professionalReviews:
+    - publisher: "Catster"
+      title: "Oneisall Review 2026: Our Vet's Expert Opinion"
+      url: "https://www.catster.com/lifestyle/oneisall-review/"
+      publishedAt: "2026-03-30"
+      checkedAt: "2026-08-10"
+      methodology: "hands-on"
+      rating:
+        value: 4.9
+        scale: 5
+      positives:
+        - "Sensorbetrieb, sehr leiser Lauf und kabellose Aufstellung wurden im praktischen Einsatz besonders positiv bewertet."
+        - "Reinigung und Filterzugang wurden als unkompliziert beschrieben."
+        - "Die Katzen der Autorin nahmen den Brunnen gut an."
+      negatives:
+        - "Der gebürstete Edelstahl erwies sich im Test nicht als besonders fingerabdruckresistent."
+      findings:
+        - "Der Test wurde in Kooperation mit Oneisall erstellt und vergütet; Catster kennzeichnet dies transparent."
+        - "Die redaktionelle Bewertung und Erfahrung stammen laut Catster dennoch aus eigener Nutzung."
+  userReviews:
+    - platform: "Best Buy"
+      url: "https://www.bestbuy.com/site/reviews/oneisall-3-5l-118oz-cordless-automatic-pet-water-fountain-for-dog-cat-quiet-with-motion-sensor-bpa-free-3-filters-stainless-steel/10146848"
+      checkedAt: "2026-08-10"
+      reviewCount: 14
+      recurringPositives:
+        - "Kabellose Aufstellung, einfache Reinigung und lange Akkulaufzeit werden mehrfach gelobt."
+        - "Mehrere Nutzer beschreiben den Sensorbetrieb als praktisch."
+      recurringCriticism:
+        - "Die Stichprobe ist klein und mehrere Bewertungen sind als incentiviert gekennzeichnet."
+        - "Ersatzfilter werden vereinzelt als schwer erhältlich beschrieben."
+    - platform: "Walmart"
+      url: "https://www.walmart.com/reviews/product/15628758158"
+      checkedAt: "2026-08-10"
+      recurringPositives:
+        - "Leiser Betrieb, großer Tank und kabellose Nutzung werden in verifizierten Käufen positiv beschrieben."
+        - "Der Bewegungssensor wird wiederholt als nützlich genannt."
+      recurringCriticism:
+        - "Filterkosten beziehungsweise Ersatzfilter werden wiederholt als Nachteil genannt."
+        - "Nicht jede Katze akzeptiert den Brunnen oder den Sensorfluss sofort."
+  consensus:
+    strengths:
+      - finding: "Kabellose Aufstellung, Sensorbetrieb und leiser Lauf sind über professionelle und Nutzerquellen gut bestätigt."
+        sourceCount: 3
+        confidence: "high"
+      - finding: "Reinigung und Alltagshandhabung werden überwiegend positiv beschrieben."
+        sourceCount: 3
+        confidence: "high"
+    weaknesses:
+      - finding: "Ersatzfilter und laufende Filterkosten sind der am klarsten wiederkehrende Nachteil."
+        sourceCount: 2
+        confidence: "medium"
+      - finding: "Sensorbetrieb ist nicht für jede Katze automatisch attraktiv."
+        sourceCount: 1
+        confidence: "low"
+    editorialAssessment: >-
+      Für den oneisall 3,5L liegt deutlich bessere externe Evidenz vor als bisher angenommen. Der Catster-Hands-on-Test
+      ist relevant, muss wegen der transparent ausgewiesenen Herstellerkooperation aber mit diesem Kontext gelesen werden.
+      Best-Buy- und Walmart-Nutzerberichte stützen vor allem Kabellosigkeit, leisen Lauf und einfache Reinigung.
+  note: >-
+    Der Catster-Beitrag wurde laut Quelle von Oneisall vergütet. Er wird deshalb nicht wie ein vollständig
+    unbeeinflusster redaktioneller Test gewichtet. Händlerbewertungen bleiben getrennte Nutzersignale.
 decision:
   bestFor:
     - kabellose Aufstellung
