@@ -2,8 +2,8 @@
 
 - Status: OK
 - Modus: production
-- Dauer: 90226 ms
-- Phasen: 22
+- Dauer: 96288 ms
+- Phasen: 23
 - Fehler: 0
 - Warnungen: 0
 
@@ -23,6 +23,7 @@
 - OK **SEO-Wachstumscluster** – npm run audit:seo-growth-clusters
 - OK **Comparison-Snippet- und Schema-Audit** – npm run audit:comparison-schema
 - OK **Produktionsnaher Astro-Build** – npm run build
+- OK **Search-Recovery-Vertrag** – npm run seo:recovery:strict
 - OK **Kanonische URL-Konsistenz** – npm run audit:url-consistency:strict
 - OK **Gerenderte interne Linkziele** – npm run audit:internal-link-targets:strict
 - OK **Gerenderter SEO-Build-Output** – npm run audit:release-build-output:strict

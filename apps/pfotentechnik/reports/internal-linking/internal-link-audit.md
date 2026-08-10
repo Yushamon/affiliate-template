@@ -1,12 +1,12 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-08-10T08:10:45.848Z
+Erstellt: 2026-08-10T15:54:39.996Z
 
 ## Ergebnis
 
 - Dokumente: 218
 - Linkdefinitionen: 484
-- Simulierte automatische Links: 501
+- Simulierte automatische Links: 499
 - Fehler: 0
 - Warnungen: 6
 - Strict-kritisch: 0
@@ -460,12 +460,10 @@ Erstellt: 2026-08-10T08:10:45.848Z
 - /vergleiche/beste-futterautomaten-mit-kamera/ → /hersteller/surefeed/: „SureFeed“
 - /vergleiche/beste-futterautomaten-mit-kamera/ → /hersteller/petkit/: „PETKIT“
 - /vergleiche/beste-futterautomaten-mit-kamera/ → /hersteller/wopet/: „WOPET“
-- /vergleiche/beste-futterautomaten-ohne-wlan/ → /produkt/surefeed-microchip-pet-feeder-connect/: „SureFeed Microchip Pet Feeder Connect“
-- /vergleiche/beste-futterautomaten-ohne-wlan/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für zwei Katzen“
+- /vergleiche/beste-futterautomaten-ohne-wlan/ → /smarte-futterautomaten/: „Futterautomat“
 - /vergleiche/beste-futterautomaten-ohne-wlan/ → /produkt/surefeed-microchip-pet-feeder/: „SureFeed Microchip Pet Feeder“
-- /vergleiche/beste-futterautomaten-ohne-wlan/ → /futterautomat-bei-stromausfall/: „Futterautomat ohne WLAN“
-- /vergleiche/beste-futterautomaten-ohne-wlan/ → /hersteller/cat-mate/: „Cat Mate“
-- /vergleiche/beste-futterautomaten-ohne-wlan/ → /hersteller/petlibro/: „Petlibro“
+- /vergleiche/beste-futterautomaten-ohne-wlan/ → /produkt/cat-mate-c500/: „Cat Mate C500“
+- /vergleiche/beste-futterautomaten-ohne-wlan/ → /hersteller/imipaw/: „IMIPAW“
 - /vergleiche/beste-futterautomaten-unter-100-euro/ → /produkt/cat-mate-c500/: „Cat Mate C500“
 - /vergleiche/beste-futterautomaten-unter-100-euro/ → /hersteller/honeyguardian/: „HoneyGuardian“
 - /vergleiche/beste-futterautomaten-unter-100-euro/ → /hersteller/imipaw/: „IMIPAW“

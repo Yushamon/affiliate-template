@@ -35,8 +35,8 @@
     "search:test": "node scripts/search/test.mjs",
     "search:sync": "node scripts/search/sync.mjs",
     "search:report": "node scripts/search/report.mjs",
-    "seo:sync": "npm run search:sync",
-    "seo:cockpit": "npm run search:sync",
+    "seo:sync": "npm run search:sync && npm run seo:recovery",
+    "seo:cockpit": "npm run seo:sync",
     "seo:admin": "node scripts/search/admin.mjs",
     "dev:seo": "node scripts/search/dev.mjs",
     "test:search": "node --test test/search-platform.test.mjs",
@@ -210,7 +210,10 @@
     "audit:url-consistency": "node scripts/seo/audit-url-consistency.mjs",
     "audit:url-consistency:strict": "node scripts/seo/audit-url-consistency.mjs --strict",
     "audit:product-evidence": "node scripts/product-evidence/audit.mjs",
-    "product-evidence:research": "node scripts/product-evidence/research-queue.mjs"
+    "product-evidence:research": "node scripts/product-evidence/research-queue.mjs",
+    "seo:recovery": "node scripts/seo/audit-search-recovery.mjs",
+    "seo:recovery:strict": "node scripts/seo/audit-search-recovery.mjs --strict",
+    "test:seo-recovery": "node --test test/seo-recovery-opportunity-33.7.0.test.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

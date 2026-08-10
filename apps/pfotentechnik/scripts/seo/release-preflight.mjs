@@ -93,6 +93,7 @@ try {
   npmScript("Comparison-Snippet- und Schema-Audit", "audit:comparison-schema");
 
   if (!skipBuild) npmScript("Produktionsnaher Astro-Build", "build");
+  npmScript("Search-Recovery-Vertrag", "seo:recovery:strict");
 
   npmScript("Kanonische URL-Konsistenz", "audit:url-consistency:strict");
   npmScript("Gerenderte interne Linkziele", "audit:internal-link-targets:strict");

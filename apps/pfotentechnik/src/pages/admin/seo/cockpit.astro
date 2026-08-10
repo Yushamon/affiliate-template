@@ -1,13 +1,26 @@
 ---
 import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
 import { loadSeoDashboard } from "../../../lib/seo/loadDashboard";
+import { loadSeoRecovery } from "../../../lib/seo/loadRecovery";
 
 const payload = loadSeoDashboard();
+const recovery = loadSeoRecovery();
 const serializedPayload = JSON.stringify(payload)
   .replace(/</g, "\\u003c")
   .replace(/\u2028/g, "\\u2028")
   .replace(/\u2029/g, "\\u2029");
 const generatedAt = new Date(payload.generatedAt).toLocaleString("de-DE");
+const recoveryGeneratedAt = recovery.generatedAt ? new Date(recovery.generatedAt).toLocaleString("de-DE") : "noch nicht erzeugt";
+const recoveryMigrationRows = recovery.migrations
+  .filter((row) => row.status !== "healthy" || row.signal.primaryOld.impressions > 0)
+  .slice(0, 12);
+const recoveryOpportunityRows = recovery.opportunities.slice(0, 15);
+const recoveryStatusLabel = {
+  risk: "Risiko",
+  watch: "beobachten",
+  transferring: "Transfer sichtbar",
+  healthy: "sauber",
+} as const;
 ---
 <SeoAdminLayout
   title="Search Cockpit"
@@ -85,6 +98,119 @@ const generatedAt = new Date(payload.generatedAt).toLocaleString("de-DE");
         <div class="seo-list" data-recommendations></div>
       </article>
     </section>
+
+
+    <section class="seo-panel seo-stack" data-seo-recovery>
+      <div class="seo-section-header">
+        <div>
+          <span class="seo-eyebrow">Google Search Console · Recovery</span>
+          <h2>Recovery & Chancen</h2>
+        </div>
+        <span class="seo-muted">Recovery: {recoveryGeneratedAt}</span>
+      </div>
+
+      {!recovery.available ? (
+        <div class="seo-empty">
+          Noch kein Recovery-Report vorhanden. <code>npm run seo:recovery</code> erzeugt Migration- und Opportunity-Daten.
+        </div>
+      ) : (
+        <div class="seo-metrics">
+          <article class="seo-metric">
+            <span>Redirects</span>
+            <strong>{recovery.summary.redirects}</strong>
+            <span>{recovery.summary.transferring} mit sichtbarem Transfer</span>
+          </article>
+          <article class="seo-metric">
+            <span>Signal-Watch</span>
+            <strong>{recovery.summary.migrationWatch}</strong>
+            <span>alte URL hat noch GSC-Signale</span>
+          </article>
+          <article class="seo-metric">
+            <span>Technische Fehler</span>
+            <strong>{recovery.summary.technicalErrors}</strong>
+            <span>{recovery.summary.distAvailable ? "Build geprüft" : "Build noch nicht geprüft"}</span>
+          </article>
+          <article class="seo-metric">
+            <span>Opportunities</span>
+            <strong>{recovery.summary.opportunities}</strong>
+            <span>Google-only, 28 Tage + 3 Monate Kontext</span>
+          </article>
+        </div>
+      )}
+    </section>
+
+    {recovery.available && (
+      <section class="seo-grid" data-columns="2">
+        <article class="seo-panel">
+          <div class="seo-section-header">
+            <div>
+              <span class="seo-eyebrow">URL-Migration</span>
+              <h2>Migration Recovery</h2>
+            </div>
+          </div>
+          <div class="seo-table-wrap">
+            <table class="seo-table">
+              <thead>
+                <tr><th>Alt → Neu</th><th>GSC {recovery.source.primaryRange}</th><th>Status</th></tr>
+              </thead>
+              <tbody>
+                {recoveryMigrationRows.length ? recoveryMigrationRows.map((row) => (
+                  <tr>
+                    <td>
+                      <code>{row.source}</code><br />
+                      <span class="seo-muted">→ {row.target}</span>
+                    </td>
+                    <td>
+                      alt {row.signal.primaryOld.impressions} · neu {row.signal.primaryNew.impressions}
+                    </td>
+                    <td>
+                      <strong>{recoveryStatusLabel[row.status]}</strong>
+                      {row.technicalIssues.length > 0 && (
+                        <><br /><span class="seo-muted">{row.technicalIssues.join("; ")}</span></>
+                      )}
+                    </td>
+                  </tr>
+                )) : (
+                  <tr><td colspan="3">Keine Migration mit aktuellem Beobachtungsbedarf.</td></tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="seo-panel">
+          <div class="seo-section-header">
+            <div>
+              <span class="seo-eyebrow">Google-only Priorisierung</span>
+              <h2>Google Opportunities</h2>
+            </div>
+          </div>
+          <div class="seo-table-wrap">
+            <table class="seo-table">
+              <thead>
+                <tr><th>Seite</th><th>Signal</th><th>Nächster Hebel</th></tr>
+              </thead>
+              <tbody>
+                {recoveryOpportunityRows.length ? recoveryOpportunityRows.map((row) => (
+                  <tr>
+                    <td>
+                      <code>{row.page}</code><br />
+                      <span class="seo-muted">Score {row.score}/100 · {row.confidence}</span>
+                    </td>
+                    <td>
+                      {row.metrics.impressions} Impr. · Pos. {row.metrics.position.toFixed(1)}
+                    </td>
+                    <td>{row.action}</td>
+                  </tr>
+                )) : (
+                  <tr><td colspan="3">Noch keine belastbaren GSC-Opportunities vorhanden.</td></tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+    )}
 
     <script type="application/json" data-search-json set:html={serializedPayload}></script>
   </div>
