@@ -21,7 +21,7 @@ category:
   path: /smarte-futterautomaten/
 productUrl: /produkt/xiaomi-smart-pet-food-feeder-2/
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-16"
+updatedAt: "2026-08-10"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -95,6 +95,38 @@ ratings:
   zuverlaessigkeit: 4.5
   sicherheit: 4.6
   preisleistung: 4.7
+externalEvidence:
+  professionalReviews: []
+  userReviews:
+    - platform: "Yandex Reviews"
+      url: "https://reviews.yandex.ru/product/umnaia-kormushka-dlia-zhivotnykh-xiaomi-smart-pet-food-feeder-2-mjwsq02--5124113032"
+      checkedAt: "2026-08-10"
+      rating: 4.6
+      scale: 5
+      reviewCount: 148
+      recurringPositives:
+        - "Wiegenapf, Automatisierung und große Kapazität werden wiederholt positiv genannt."
+        - "Mehrere Nutzer beschreiben den Alltag mit festen Fütterungszeiten als deutlich bequemer."
+      recurringCriticism:
+        - "Einzelne Rezensionen berichten von Kalibrierungs- oder Anzeigeabweichungen am Wiegenapf."
+        - "Einzelne Nutzer nennen Verbindungs- oder Regionsprobleme bei der Einrichtung."
+        - "Es gibt vereinzelte Fehlerberichte, die jedoch keinen Serienfehler belegen."
+  consensus:
+    strengths:
+      - finding: "Automatisierung und Gewichtserfassung sind die am häufigsten positiv beschriebenen Funktionen."
+        sourceCount: 1
+        confidence: "medium"
+    weaknesses:
+      - finding: "Kalibrierung und regionale App-/Verbindungsfragen bleiben ein realistischer Reibungspunkt."
+        sourceCount: 1
+        confidence: "low"
+    editorialAssessment: >-
+      Die Nutzerbasis ist deutlich größer als bei mehreren neuen Smart-Feedern, stammt aber aus nur einer
+      Bewertungsplattform. Deshalb wird daraus kein quellenübergreifender Hoch-Konfidenz-Konsens abgeleitet.
+  note: >-
+    Yandex weist zum Abrufdatum 251 Bewertungen und 148 schriftliche Rezensionen aus. Im Feld reviewCount wird
+    die Zahl der schriftlichen Rezensionen dokumentiert; ein unabhängiger professioneller Hands-on-Test wurde
+    für diesen Batch nicht als belastbar genug gefunden.
 decision:
   bestFor:
     - Katzen

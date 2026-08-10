@@ -1,7 +1,7 @@
 # Product External Evidence Audit
 
 - Produkte: 82
-- Mit externalEvidence: 4
+- Mit externalEvidence: 8
 - Vollständig: 0
 
 ## Ohne Evidenz
@@ -13,7 +13,6 @@
 - cat-mate-c500
 - cat-mate-shell-fountain
 - catit-pixi-smart-6-meal-feeder
-- catit-pixi-vision-smart-feeder
 - devoko-90l-automatisches-katzenklo
 - enabot-ebo-air-2
 - furbo-360-hundekamera
@@ -45,7 +44,6 @@
 - petkit-fresh-element-infinity
 - petkit-fresh-element-solo
 - petkit-purobot-max-pro-2
-- petkit-yumshare-dual-hopper
 - petkit-yumshare-solo-2
 - petlibro-air-automatic-feeder
 - petlibro-air-wifi-feeder
@@ -81,6 +79,4 @@
 - wopet-heritage-view-camera-feeder
 - wopet-patrol-f07-pro
 - wopet-pioneer-f01-plus
-- xiaomi-smart-pet-food-feeder-2
-- xiaomi-smart-pet-fountain-2
 - zeromouse-2-0

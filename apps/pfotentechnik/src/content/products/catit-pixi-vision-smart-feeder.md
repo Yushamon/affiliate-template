@@ -19,7 +19,7 @@ category:
   path: /smarte-futterautomaten/
 productUrl: "/produkt/catit-pixi-vision-smart-feeder/"
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-12"
+updatedAt: "2026-08-10"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -95,6 +95,46 @@ ratings:
   preisleistung: 4.1
   reinigung: 4.5
   kamera: 4.6
+externalEvidence:
+  professionalReviews: []
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/catit-pixi-vision-smart-cat-feeder/product-reviews/2085086"
+      checkedAt: "2026-08-10"
+      rating: 4.1
+      scale: 5
+      reviewCount: 8
+      recurringPositives:
+        - "Portionskontrolle und Kamera werden in mehreren positiven Rezensionen hervorgehoben."
+        - "Nach erfolgreicher Einrichtung funktioniert die automatische Fütterung laut mehreren Nutzern gut."
+      recurringCriticism:
+        - "Mehrere Rezensionen nennen Schwierigkeiten bei WLAN-, App- oder Smartphone-Einrichtung."
+        - "Einzelne Nutzer kritisieren die starke Abhängigkeit vom Smartphone."
+    - platform: "Apple App Store · Catit App gesamt"
+      url: "https://apps.apple.com/us/app/catit/id1549148066"
+      checkedAt: "2026-08-10"
+      rating: 2.1
+      scale: 5
+      reviewCount: 88
+      recurringPositives:
+        - "Einzelne Bewertungen bestätigen, dass Zeitpläne grundsätzlich funktionieren."
+      recurringCriticism:
+        - "Die App-Bewertung ist insgesamt schwach und enthält Kritik an Flexibilität und Bedienung."
+  consensus:
+    strengths:
+      - finding: "Kamera und Portionssteuerung werden von den produktspezifischen Nutzern überwiegend positiv beschrieben."
+        sourceCount: 1
+        confidence: "medium"
+    weaknesses:
+      - finding: "Einrichtung und App sind der am klarsten erkennbare Reibungspunkt."
+        sourceCount: 2
+        confidence: "medium"
+        assessment: "Chewy enthält produktspezifische Kritik; der App-Store-Wert betrifft die Catit-App insgesamt und nicht nur den PIXI Vision."
+    editorialAssessment: >-
+      Für den PIXI Vision fehlt weiterhin ein belastbarer unabhängiger Hands-on-Test. Die Nutzerbasis ist klein,
+      zeigt aber einen plausiblen Kontrast zwischen guter Hardwarefunktion und teils schwieriger App-Einrichtung.
+  note: >-
+    Die App-Store-Bewertung gilt für die Catit-App insgesamt. Sie ist kein produktspezifischer Score des PIXI Vision.
 decision:
   bestFor:
     - Katzen

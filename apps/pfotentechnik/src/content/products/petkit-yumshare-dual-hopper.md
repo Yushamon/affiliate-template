@@ -22,7 +22,7 @@ category:
   path: /smarte-futterautomaten/
 productUrl: /produkt/petkit-yumshare-dual-hopper/
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-23"
+updatedAt: "2026-08-10"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -104,6 +104,49 @@ ratings:
   zuverlässigkeit: 4.7
   sicherheit: 4.8
   preisleistung: 4.6
+externalEvidence:
+  professionalReviews:
+    - publisher: "Pet Product Compass"
+      title: "PETKIT YumShare Dual-hopper 2 Review: Fit, Tradeoffs, and Evidence"
+      url: "https://petproductcompass.com/reviews/petkit-yumshare-dual-hopper-2/"
+      publishedAt: "2026-07-17"
+      checkedAt: "2026-08-10"
+      methodology: "editorial-review"
+      positives:
+        - "Die zwei getrennten Vorratskammern werden als klarer funktionaler Mehrwert eingeordnet."
+        - "Dual-Band-WLAN, Kamera und individuelle Mahlzeitenprotokolle sind für Mehrkatzenhaushalte praktisch."
+      negatives:
+        - "Die Quelle weist ausdrücklich darauf hin, dass keine physische Zugangskontrolle je Katze vorhanden ist."
+        - "Zuverlässigkeit, Portionierungsgenauigkeit, App-Qualität und Langzeit-Haltbarkeit wurden dort nicht praktisch getestet."
+      findings:
+        - "Die Review ist eine Quellenanalyse und kein Hands-on-Test; diese Grenze wird transparent dokumentiert."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/petkit-yumshare-dual-hopper-2/product-reviews/3842854"
+      checkedAt: "2026-08-10"
+      rating: 5
+      scale: 5
+      reviewCount: 2
+      recurringPositives:
+        - "Beide sichtbaren Bewertungen sind positiv."
+        - "App, Kamera und einfache Einrichtung werden positiv erwähnt."
+      recurringCriticism: []
+  consensus:
+    strengths:
+      - finding: "Zwei Futterkammern plus Kamera sind der klarste belegte Nutzen."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Die derzeitige Nutzerstichprobe ist zu klein für belastbare Aussagen zu Langzeit-Zuverlässigkeit."
+        sourceCount: 2
+        confidence: "high"
+        assessment: "Chewy weist nur zwei Bewertungen aus; die redaktionelle Quelle hat selbst keinen Hands-on-Test durchgeführt."
+    editorialAssessment: >-
+      Die externe Evidenz bestätigt vor allem das Produktkonzept, nicht die Langzeitqualität. Die sehr kleine
+      Nutzerstichprobe wird deshalb nicht als breiter Nutzerkonsens dargestellt.
+  note: >-
+    Chewy weist zum Abrufdatum nur zwei Bewertungen aus. Die 5,0/5 werden deshalb nicht als belastbare
+    produktspezifische Durchschnittserfahrung interpretiert.
 decision:
   bestFor:
     - Katzenhaushalte mit zwei Trockenfuttersorten

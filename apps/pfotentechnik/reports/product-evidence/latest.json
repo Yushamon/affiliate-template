@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-10T11:33:17.652Z",
+  "generatedAt": "2026-08-10T11:41:10.447Z",
   "products": 82,
-  "covered": 4,
+  "covered": 8,
   "complete": 0,
   "missing": [
     "aqara-smart-pet-feeder-c1",
@@ -11,7 +11,6 @@
     "cat-mate-c500",
     "cat-mate-shell-fountain",
     "catit-pixi-smart-6-meal-feeder",
-    "catit-pixi-vision-smart-feeder",
     "devoko-90l-automatisches-katzenklo",
     "enabot-ebo-air-2",
     "furbo-360-hundekamera",
@@ -43,7 +42,6 @@
     "petkit-fresh-element-infinity",
     "petkit-fresh-element-solo",
     "petkit-purobot-max-pro-2",
-    "petkit-yumshare-dual-hopper",
     "petkit-yumshare-solo-2",
     "petlibro-air-automatic-feeder",
     "petlibro-air-wifi-feeder",
@@ -79,8 +77,6 @@
     "wopet-heritage-view-camera-feeder",
     "wopet-patrol-f07-pro",
     "wopet-pioneer-f01-plus",
-    "xiaomi-smart-pet-food-feeder-2",
-    "xiaomi-smart-pet-fountain-2",
     "zeromouse-2-0"
   ],
   "rows": [
@@ -135,9 +131,9 @@
     },
     {
       "slug": "catit-pixi-vision-smart-feeder",
-      "hasExternal": false,
+      "hasExternal": true,
       "professional": 0,
-      "userSources": 0,
+      "userSources": 2,
       "consensus": 0
     },
     {
@@ -366,9 +362,9 @@
     },
     {
       "slug": "petkit-yumshare-dual-hopper",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
       "consensus": 0
     },
     {
@@ -639,16 +635,16 @@
     },
     {
       "slug": "xiaomi-smart-pet-food-feeder-2",
-      "hasExternal": false,
+      "hasExternal": true,
       "professional": 0,
-      "userSources": 0,
+      "userSources": 1,
       "consensus": 0
     },
     {
       "slug": "xiaomi-smart-pet-fountain-2",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 2,
       "consensus": 0
     },
     {

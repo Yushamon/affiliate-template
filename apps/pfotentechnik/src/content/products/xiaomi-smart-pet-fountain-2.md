@@ -19,7 +19,7 @@ category:
   path: /trinkbrunnen/
 productUrl: "/produkt/xiaomi-smart-pet-fountain-2/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-16"
+updatedAt: "2026-08-10"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -93,6 +93,58 @@ ratings:
   lautstaerke: 4.6
   smartfunktionen: 4.8
   preisleistung: 4.7
+externalEvidence:
+  professionalReviews:
+    - publisher: "TecMundo"
+      title: "Xiaomi Smart Pet Fountain 2 não bate a clássica tigelinha [Review]"
+      url: "https://www.tecmundo.com.br/produto/408089-xiaomi-smart-pet-fountain-2-nao-bate-a-classica-tigelinha-review.htm"
+      publishedAt: "2025-10-27"
+      checkedAt: "2026-08-10"
+      methodology: "hands-on"
+      positives:
+        - "Der Brunnen wurde zwei Wochen praktisch getestet."
+        - "Kabellose Nutzung und die drei Betriebsmodi wurden als klare Vorteile beschrieben."
+        - "Der Näherungssensor wurde als sinnvollster der drei Modi hervorgehoben."
+      negatives:
+        - "Der Test stellt den Preis beziehungsweise die laufenden Kosten als wesentlichen Nachteil heraus."
+  userReviews:
+    - platform: "Galaxus · gekaufte Produktbewertungen"
+      url: "https://www.galaxus.de/de/productrating/einer-der-besten-trinkbrunnen-8770031"
+      checkedAt: "2026-08-10"
+      recurringPositives:
+        - "Leise Arbeitsweise, einfache Reinigung und kabellose Nutzung werden positiv hervorgehoben."
+        - "Der verbesserte Aufbau gegenüber dem Vorgänger wird in einer weiteren gekauften Bewertung positiv beschrieben."
+      recurringCriticism:
+        - "Filterkosten werden als Nachteil genannt."
+        - "Eine weitere Langzeitbewertung berichtet nach etwa sechs Monaten über Undichtigkeit und Hygieneprobleme."
+    - platform: "Galaxus · Langzeitbewertung"
+      url: "https://www.galaxus.de/de/productrating/guter-brunnen-und-besseres-design-als-die-version-1-8973075"
+      checkedAt: "2026-08-10"
+      recurringPositives:
+        - "Befüllung, Akkubetrieb und Bedienung wurden gegenüber dem Vorgänger als verbessert beschrieben."
+      recurringCriticism:
+        - "Der konkrete Nutzer berichtet nach rund sechs Monaten über leichte Undichtigkeit."
+        - "Trotz Wasser- und Filterwechsel wurden grünliche Ablagerungen beschrieben."
+  consensus:
+    strengths:
+      - finding: "Kabellose Platzierung und flexible Wasserausgabemodi sind gut belegte Vorteile."
+        sourceCount: 3
+        confidence: "high"
+      - finding: "Reinigung und Handhabung werden überwiegend positiv beschrieben."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Filterkosten sind ein wiederkehrender Nachteil."
+        sourceCount: 2
+        confidence: "medium"
+      - finding: "Es existiert ein konkreter Langzeitbericht über Undichtigkeit und Hygieneprobleme, aber kein Beleg für einen generellen Serienfehler."
+        sourceCount: 1
+        confidence: "low"
+    editorialAssessment: >-
+      Der zweiwöchige Hands-on-Test bestätigt die zentralen Komfortvorteile. Der negative sechsmonatige
+      Nutzerbericht ist als Gegenbeleg relevant, reicht allein aber nicht für eine allgemeine Haltbarkeitsaussage.
+  note: >-
+    Die Galaxus-Einträge sind einzelne gekaufte Produktbewertungen und kein repräsentativer Plattformdurchschnitt.
 decision:
   bestFor:
     - Katzen und kleine Hunde
