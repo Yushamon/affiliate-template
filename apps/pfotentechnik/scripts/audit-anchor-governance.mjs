@@ -28,19 +28,50 @@ if (!fs.existsSync(governanceFile)) {
 } else {
   const data = JSON.parse(fs.readFileSync(governanceFile, "utf8"));
   const owners = data.owners ?? {};
+  // Governance is a source-level contract. The release preflight runs before a
+  // fresh Astro build, so dist/ can legitimately be stale. Build the route
+  // inventory from source content first and only use dist as an additional
+  // signal for static/non-content routes.
   const routes = new Set();
-  const walk = (dir) => {
+  const addRoute = (value) => {
+    const route = normPath(value);
+    if (route) routes.add(route);
+  };
+  const readSlug = (file) => {
+    const source = fs.readFileSync(file, "utf8");
+    const frontmatter = source.match(/^---\\s*\\n([\\s\\S]*?)\\n---/);
+    if (!frontmatter) return "";
+    const slug = frontmatter[1].match(/^slug:\\s*["']?([^"'\\n#]+?)["']?\\s*$/m);
+    return slug ? slug[1].trim() : "";
+  };
+  const collectContentRoutes = (dir, prefix = "/") => {
     if (!fs.existsSync(dir)) return;
     for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
       const file = path.join(dir, entry.name);
-      if (entry.isDirectory()) walk(file);
-      else if (entry.name === "index.html") {
-        const relative = path.relative(dist, file).replace(/\\/g, "/");
-        routes.add(relative === "index.html" ? "/" : "/" + relative.slice(0, -10));
+      if (entry.isDirectory()) collectContentRoutes(file, prefix);
+      else if (entry.isFile() && /\\.mdx?$/.test(entry.name)) {
+        const slug = readSlug(file) || entry.name.replace(/\\.mdx?$/, "");
+        addRoute(prefix + slug + "/");
       }
     }
   };
-  walk(dist);
+  collectContentRoutes(path.join(app, "src/content/pages"), "/");
+  collectContentRoutes(path.join(app, "src/content/comparisons"), "/vergleiche/");
+  collectContentRoutes(path.join(app, "src/content/products"), "/produkt/");
+  collectContentRoutes(path.join(app, "src/content/manufacturers"), "/hersteller/");
+
+  const walkDist = (dir) => {
+    if (!fs.existsSync(dir)) return;
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const file = path.join(dir, entry.name);
+      if (entry.isDirectory()) walkDist(file);
+      else if (entry.name === "index.html") {
+        const relative = path.relative(dist, file).replace(/\\/g, "/");
+        addRoute(relative === "index.html" ? "/" : "/" + relative.slice(0, -10));
+      }
+    }
+  };
+  walkDist(dist);
 
   const redirects = new Map();
   if (fs.existsSync(redirectsFile)) {

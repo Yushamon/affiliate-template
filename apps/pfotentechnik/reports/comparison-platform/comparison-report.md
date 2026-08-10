@@ -1,6 +1,6 @@
 # Comparison Platform Report
 
-Erstellt: 2026-08-10T07:43:11.139Z
+Erstellt: 2026-08-10T08:10:44.041Z
 
 ## Übersicht
 
