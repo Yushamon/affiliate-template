@@ -583,6 +583,20 @@ export const buildProductExperienceModel = ({
     })
     .filter(Boolean);
 
+  const externalEvidence = data.externalEvidence ?? {};
+  const professionalReviews = list<any>(externalEvidence.professionalReviews)
+    .map((item) => ({
+      publisher: text(item?.publisher), title: text(item?.title), url: text(item?.url),
+      methodology: text(item?.methodology, "unknown"),
+      rating: item?.rating ? { value: Number(item.rating.value), scale: Number(item.rating.scale) } : null
+    })).filter((item) => item.publisher && item.url);
+  const userReviewSources = list<any>(externalEvidence.userReviews)
+    .map((item) => ({
+      platform: text(item?.platform), url: text(item?.url),
+      rating: Number.isFinite(Number(item?.rating)) ? Number(item.rating) : null,
+      scale: Number.isFinite(Number(item?.scale)) ? Number(item.scale) : 5,
+      reviewCount: Number.isFinite(Number(item?.reviewCount)) ? Number(item.reviewCount) : null
+    })).filter((item) => item.platform && item.url);
   const rawCommunity = data.communityInsights ?? {};
   const normalizeCommunityInsight = (item: any) => {
     if (typeof item === "string") return { text: item, confidence: "medium" as const };
@@ -599,16 +613,29 @@ export const buildProductExperienceModel = ({
       assessment: text(item?.assessment)
     };
   };
+  const consensus = externalEvidence.consensus ?? {};
+  const consensusItem = (item: any) => ({
+    text: text(item?.finding),
+    confidence: ["high","medium","low"].includes(item?.confidence) ? item.confidence : "medium",
+    sourceCount: Number.isFinite(Number(item?.sourceCount)) ? Number(item.sourceCount) : undefined,
+    assessment: text(item?.assessment)
+  });
+  const consensusPositives = list<any>(consensus.strengths).map(consensusItem).filter((item) => item.text);
+  const consensusNegatives = list<any>(consensus.weaknesses).map(consensusItem).filter((item) => item.text);
   const communityInsights = {
-    positives: list<any>(rawCommunity.positives).map(normalizeCommunityInsight).filter(Boolean),
-    negatives: list<any>(rawCommunity.negatives).map(normalizeCommunityInsight).filter(Boolean),
-    editorialAssessment: text(rawCommunity.editorialAssessment)
+    positives: consensusPositives.length ? consensusPositives : list<any>(rawCommunity.positives).map(normalizeCommunityInsight).filter(Boolean),
+    negatives: consensusNegatives.length ? consensusNegatives : list<any>(rawCommunity.negatives).map(normalizeCommunityInsight).filter(Boolean),
+    editorialAssessment: text(consensus.editorialAssessment) || text(rawCommunity.editorialAssessment),
+    sourcePlatforms: userReviewSources.map((item) => item.platform)
   };
   const evidenceItems = list<string>(editorial.evidence)
     .map((item) => ({ label: evidenceLabels[item] ?? item }))
     .filter((item) => item.label);
   const evidenceSummary = {
     items: evidenceItems,
+    professionalReviews,
+    userReviewSources,
+    externalNote: text(externalEvidence.note),
     handsOn: editorial.testedHandsOn
       ? {
           date: text(editorial.testedAt),

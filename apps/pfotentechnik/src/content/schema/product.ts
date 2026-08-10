@@ -234,6 +234,53 @@ const productEditorialSchema =
   })
   .optional();
 
+const productExternalRatingSchema = z.object({
+  value: z.number().nonnegative(),
+  scale: z.number().positive()
+});
+
+const productProfessionalReviewSchema = z.object({
+  publisher: z.string().min(1),
+  title: z.string().optional(),
+  url: z.string().url(),
+  publishedAt: z.coerce.date().optional(),
+  checkedAt: z.coerce.date(),
+  methodology: z.enum(["hands-on","lab-test","editorial-review","unknown"]).default("unknown"),
+  rating: productExternalRatingSchema.optional(),
+  positives: z.array(z.string()).default([]),
+  negatives: z.array(z.string()).default([]),
+  findings: z.array(z.string()).default([])
+});
+
+const productUserReviewSourceSchema = z.object({
+  platform: z.string().min(1),
+  url: z.string().url(),
+  checkedAt: z.coerce.date(),
+  rating: z.number().nonnegative().optional(),
+  scale: z.number().positive().default(5),
+  reviewCount: z.number().int().nonnegative().optional(),
+  recurringPositives: z.array(z.string()).default([]),
+  recurringCriticism: z.array(z.string()).default([])
+});
+
+const productEvidenceConsensusItemSchema = z.object({
+  finding: z.string().min(1),
+  sourceCount: z.number().int().positive(),
+  confidence: z.enum(["high","medium","low"]).default("medium"),
+  assessment: z.string().optional()
+});
+
+const productExternalEvidenceSchema = z.object({
+  professionalReviews: z.array(productProfessionalReviewSchema).default([]),
+  userReviews: z.array(productUserReviewSourceSchema).default([]),
+  consensus: z.object({
+    strengths: z.array(productEvidenceConsensusItemSchema).default([]),
+    weaknesses: z.array(productEvidenceConsensusItemSchema).default([]),
+    editorialAssessment: z.string().optional()
+  }).default({ strengths: [], weaknesses: [] }),
+  note: z.string().optional()
+}).optional();
+
 const productDecisionSchema =
   z.object({
     bestFor: z
@@ -484,6 +531,8 @@ export const createProductContentSchema = (image: ImageFunction) =>
 
     editorial:
       productEditorialSchema,
+    externalEvidence:
+      productExternalEvidenceSchema,
     rating: z
       .number()
       .min(0)

@@ -4,8 +4,18 @@ interface EvidenceItem {
   detail?: string;
 }
 
+interface ProfessionalReview {
+  publisher: string; title?: string; url: string; methodology?: string;
+  rating?: { value: number; scale: number } | null;
+}
+interface UserReviewSource {
+  platform: string; url: string; rating?: number | null; scale?: number; reviewCount?: number | null;
+}
 interface EvidenceSummary {
   items: EvidenceItem[];
+  professionalReviews?: ProfessionalReview[];
+  userReviewSources?: UserReviewSource[];
+  externalNote?: string;
   handsOn?: {
     date?: string;
     duration?: string;
@@ -20,10 +30,12 @@ interface Props {
 
 const { evidence, updatedAt } = Astro.props;
 const items = evidence?.items ?? [];
+const professionalReviews = evidence?.professionalReviews ?? [];
+const userReviewSources = evidence?.userReviewSources ?? [];
 const formattedDate = updatedAt
   ? new Intl.DateTimeFormat("de-DE", { dateStyle: "medium" }).format(new Date(updatedAt))
   : null;
-const show = items.length > 0 || evidence?.handsOn;
+const show = items.length > 0 || professionalReviews.length > 0 || userReviewSources.length > 0 || evidence?.handsOn;
 const iconFor = (label: string) => {
   const value = label.toLocaleLowerCase("de-DE");
   if (value.includes("hersteller")) return "D";
@@ -52,6 +64,27 @@ const iconFor = (label: string) => {
         </li>
       ))}
     </ul>
+
+    {(professionalReviews.length > 0 || userReviewSources.length > 0) && (
+      <div class="evidence__external">
+        {professionalReviews.length > 0 && <div>
+          <h3>Unabhängige Tests und Reviews</h3>
+          <ul>{professionalReviews.map((item) => <li>
+            <a href={item.url} target="_blank" rel="noopener noreferrer"><strong>{item.publisher}</strong>{item.title && <span>{item.title}</span>}</a>
+            <small>{item.methodology === "hands-on" ? "Hands-on-Test" : item.methodology === "lab-test" ? "Labortest" : "Externe Review"}{item.rating ? ` · ${item.rating.value}/${item.rating.scale}` : ""}</small>
+          </li>)}</ul>
+        </div>}
+        {userReviewSources.length > 0 && <div>
+          <h3>Nutzerbewertungen nach Plattform</h3>
+          <ul>{userReviewSources.map((item) => <li>
+            <a href={item.url} target="_blank" rel="noopener noreferrer"><strong>{item.platform}</strong></a>
+            <small>{item.rating != null ? `${item.rating}/${item.scale ?? 5}` : "Bewertung erfasst"}{item.reviewCount != null ? ` · ${item.reviewCount.toLocaleString("de-DE")} Bewertungen` : ""}</small>
+          </li>)}</ul>
+        </div>}
+        {evidence?.externalNote && <p>{evidence.externalNote}</p>}
+        <p>Bewertungen verschiedener Quellen werden nicht zu einer künstlichen Gesamtnote verrechnet.</p>
+      </div>
+    )}
 
     {evidence?.handsOn && (
       <aside class="evidence__hands-on">
@@ -140,6 +173,18 @@ const iconFor = (label: string) => {
     color: var(--px2-muted);
     line-height: 1.35;
   }
+
+  .evidence__external {
+    display:grid; gap:12px; grid-column:1/-1; padding-top:4px;
+  }
+  .evidence__external > div { display:grid; gap:6px; }
+  .evidence__external h3 { margin:0; font-size:.95rem; }
+  .evidence__external ul { display:grid; gap:6px; margin:0; padding:0; list-style:none; }
+  .evidence__external li { display:grid; gap:2px; padding:9px 11px; border:1px solid var(--px2-border); border-radius:12px; background:var(--px2-surface); }
+  .evidence__external a { display:grid; gap:1px; color:var(--px2-text); text-decoration:none; }
+  .evidence__external a:hover strong { text-decoration:underline; }
+  .evidence__external span,.evidence__external small,.evidence__external p { color:var(--px2-muted); font-size:.78rem; line-height:1.4; }
+  .evidence__external p { margin:0; }
 
   .evidence__hands-on {
     display: grid;

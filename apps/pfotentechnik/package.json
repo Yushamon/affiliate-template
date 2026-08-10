@@ -208,7 +208,9 @@
     "product:data:normalize:check": "node scripts/seo/normalize-product-data.mjs --check",
     "test:product-data-normalizer": "node --test test/product-data-normalizer-32.6.1.test.mjs",
     "audit:url-consistency": "node scripts/seo/audit-url-consistency.mjs",
-    "audit:url-consistency:strict": "node scripts/seo/audit-url-consistency.mjs --strict"
+    "audit:url-consistency:strict": "node scripts/seo/audit-url-consistency.mjs --strict",
+    "audit:product-evidence": "node scripts/product-evidence/audit.mjs",
+    "product-evidence:research": "node scripts/product-evidence/research-queue.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

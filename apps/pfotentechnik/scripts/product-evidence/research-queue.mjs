@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+import fs from "node:fs"; import path from "node:path";
+const app=path.resolve(path.dirname(new URL(import.meta.url).pathname),"../.."), dir=path.join(app,"src/content/products"), out=path.join(app,"reports/product-evidence");
+fs.mkdirSync(out,{recursive:true}); const arg=process.argv.find(x=>x.startsWith("--limit=")); const limit=arg?Math.max(1,Number(arg.split("=")[1])||10):10;
+const items=fs.readdirSync(dir).filter(n=>/\.mdx?$/i.test(n)).map(name=>{const raw=fs.readFileSync(path.join(dir,name),"utf8");const get=k=>raw.match(new RegExp(`^${k}:\\s*["']?([^"'\\n]+)`,"m"))?.[1]?.trim()||"";return {file:`src/content/products/${name}`,slug:get("slug")||name.replace(/\.mdx?$/i,""),title:get("title")||name,testStatus:get("testStatus"),recommendationStatus:get("recommendationStatus"),rating:Number(get("rating"))||0,hasExternal:/^externalEvidence:\s*$/m.test(raw)}}).filter(x=>!x.hasExternal).sort((a,b)=>(b.recommendationStatus==="recommended")-(a.recommendationStatus==="recommended")||b.rating-a.rating).slice(0,limit);
+const payload={generatedAt:new Date().toISOString(),rules:["Keine eigenen Tests behaupten.","Externe Tests mit Publisher, URL, Datum und Methodik getrennt erfassen.","Nutzerbewertungen pro Plattform getrennt erfassen.","Sterne verschiedener Plattformen nicht mitteln.","Konsens nur bei wiederkehrenden Mustern aus mehreren Quellen."],products:items};
+fs.writeFileSync(path.join(out,"research-queue.json"),JSON.stringify(payload,null,2)+"\n");
+fs.writeFileSync(path.join(out,"research-queue.md"),["# Research Queue: externe Produktevidenz","",...items.flatMap(x=>[`## ${x.title}`,`- Slug: ${x.slug}`,`- Datei: ${x.file}`,"- Auftrag: unabhängige professionelle Reviews und belastbare Nutzerquellen recherchieren; wiederkehrende Muster belegen.",""])].join("\n")+"\n");
+console.log(`Research Queue: ${items.length} Produkte`);

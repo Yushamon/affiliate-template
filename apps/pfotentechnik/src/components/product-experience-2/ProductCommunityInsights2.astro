@@ -10,6 +10,7 @@ interface CommunityInsights {
   positives: Insight[];
   negatives: Insight[];
   editorialAssessment?: string;
+  sourcePlatforms?: string[];
 }
 
 interface Props {
@@ -33,6 +34,7 @@ const confidenceLabel = {
       <span>Community-Erfahrungen</span>
       <h2 id="community-title">Was Nutzer wiederholt berichten</h2>
       <p>Zusammengefasste Muster aus mehreren Quellen, keine einzelnen Rezensionen.</p>
+      {insights?.sourcePlatforms?.length > 0 && <small>Ausgewertete Plattformen: {[...new Set(insights.sourcePlatforms)].join(" · ")}</small>}
     </header>
 
     <div class="community__grid">
