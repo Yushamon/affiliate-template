@@ -1,22 +1,22 @@
 {
   "schemaVersion": 2,
   "provider": "bing",
-  "generatedAt": "2026-08-06T10:26:43.614Z",
-  "dataUpdatedAt": "2026-08-04T07:00:00.000Z",
+  "generatedAt": "2026-08-10T14:27:56.632Z",
+  "dataUpdatedAt": "2026-08-09T07:00:00.000Z",
   "siteUrl": "https://pfotentechnik.de/",
   "property": "https://pfotentechnik.de/",
   "freshness": {
     "status": "current",
-    "ageDays": 2,
-    "note": "Bing-Trafficdaten werden periodisch, typischerweise wöchentlich aktualisiert; letzter gelieferter Stand ist 2 Tag(e) alt."
+    "ageDays": 1,
+    "note": "Bing-Trafficdaten werden periodisch, typischerweise wöchentlich aktualisiert; letzter gelieferter Stand ist 1 Tag(e) alt."
   },
   "range": "28d",
   "key": "28d",
   "label": "Letzte 28 Tage",
-  "startDate": "2026-07-09",
-  "endDate": "2026-08-05",
-  "comparisonStartDate": "2026-06-11",
-  "comparisonEndDate": "2026-07-08",
+  "startDate": "2026-07-13",
+  "endDate": "2026-08-09",
+  "comparisonStartDate": "2026-06-15",
+  "comparisonEndDate": "2026-07-12",
   "dataState": "periodic",
   "partial": false,
   "lowData": true,
@@ -24,17 +24,60 @@
   "metrics": {
     "current": {
       "clicks": 0,
-      "impressions": 0,
+      "impressions": 3,
       "ctr": 0,
-      "position": null,
+      "position": 3.3,
       "avgClickPosition": null
     },
     "previous": null,
     "change": null
   },
-  "pages": [],
-  "queries": [],
-  "trend": [],
+  "pages": [
+    {
+      "page": "/produkt/petlibro-granary-2-vision/",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 3,
+      "avgClickPosition": null
+    }
+  ],
+  "queries": [
+    {
+      "query": "ae können filetype:fods",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5,
+      "avgClickPosition": null
+    },
+    {
+      "query": "abs abs f filetype:fods",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1,
+      "avgClickPosition": null
+    },
+    {
+      "query": "about us offline filetype:fods",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4,
+      "avgClickPosition": null
+    }
+  ],
+  "trend": [
+    {
+      "date": "2026-08-07",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 3.3,
+      "avgClickPosition": null
+    }
+  ],
   "crawl": [
     {
       "date": "2026-07-14T07:00:00.000Z",
@@ -408,6 +451,91 @@
       "crawledPages": 13,
       "dnsFailures": 0,
       "inIndex": 12,
+      "inLinks": 0
+    },
+    {
+      "date": "2026-08-05T07:00:00.000Z",
+      "allOtherCodes": 3,
+      "blockedByRobotsTxt": 0,
+      "code2xx": 14,
+      "code301": 0,
+      "code302": 0,
+      "code4xx": 0,
+      "code5xx": 0,
+      "connectionTimeout": 0,
+      "containsMalware": 0,
+      "crawlErrors": 0,
+      "crawledPages": 15,
+      "dnsFailures": 0,
+      "inIndex": 14,
+      "inLinks": 0
+    },
+    {
+      "date": "2026-08-06T07:00:00.000Z",
+      "allOtherCodes": 3,
+      "blockedByRobotsTxt": 0,
+      "code2xx": 19,
+      "code301": 0,
+      "code302": 0,
+      "code4xx": 0,
+      "code5xx": 0,
+      "connectionTimeout": 0,
+      "containsMalware": 0,
+      "crawlErrors": 0,
+      "crawledPages": 25,
+      "dnsFailures": 0,
+      "inIndex": 19,
+      "inLinks": 0
+    },
+    {
+      "date": "2026-08-07T07:00:00.000Z",
+      "allOtherCodes": 3,
+      "blockedByRobotsTxt": 0,
+      "code2xx": 19,
+      "code301": 0,
+      "code302": 0,
+      "code4xx": 0,
+      "code5xx": 0,
+      "connectionTimeout": 0,
+      "containsMalware": 0,
+      "crawlErrors": 0,
+      "crawledPages": 5,
+      "dnsFailures": 0,
+      "inIndex": 19,
+      "inLinks": 0
+    },
+    {
+      "date": "2026-08-08T07:00:00.000Z",
+      "allOtherCodes": 3,
+      "blockedByRobotsTxt": 0,
+      "code2xx": 22,
+      "code301": 0,
+      "code302": 0,
+      "code4xx": 0,
+      "code5xx": 0,
+      "connectionTimeout": 0,
+      "containsMalware": 0,
+      "crawlErrors": 0,
+      "crawledPages": 9,
+      "dnsFailures": 0,
+      "inIndex": 22,
+      "inLinks": 0
+    },
+    {
+      "date": "2026-08-09T07:00:00.000Z",
+      "allOtherCodes": 3,
+      "blockedByRobotsTxt": 0,
+      "code2xx": 28,
+      "code301": 2,
+      "code302": 0,
+      "code4xx": 0,
+      "code5xx": 0,
+      "connectionTimeout": 0,
+      "containsMalware": 0,
+      "crawlErrors": 0,
+      "crawledPages": 11,
+      "dnsFailures": 0,
+      "inIndex": 28,
       "inLinks": 0
     }
   ],
