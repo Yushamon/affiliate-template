@@ -16,14 +16,14 @@
       "comparison-index": 1,
       "decision-guide": 7,
       "editorial-page": 18,
-      "guide": 28,
+      "guide": 27,
       "homepage": 1,
       "knowledge-hub": 1,
       "legal": 4,
       "manufacturer": 26,
       "manufacturer-index": 1,
       "medical-guide": 12,
-      "problem-solving-guide": 16,
+      "problem-solving-guide": 17,
       "product": 82
     },
     "clusters": {
@@ -658,7 +658,7 @@
       "mainEntity": "Systemhistorie",
       "internalIncomingLinks": 0,
       "internalOutgoingLinks": 0,
-      "wordCount": 1965,
+      "wordCount": 1979,
       "headingCount": 103,
       "headings": [
         "Systemhistorie",
@@ -1361,29 +1361,29 @@
         "/produkt/petkit-eversweet-max-2-uvc/",
         "/produkt/petkit-eversweet-max-cordless/",
         "/produkt/weenect-xt/",
-        "/produkt/petlibro-air-wifi-feeder/",
         "/produkt/petkit-fresh-element-infinity/",
+        "/produkt/petlibro-air-wifi-feeder/",
         "/produkt/petlibro-dockstream-rfid-smart/",
         "/produkt/petlibro-glacier-ultrafiltration/",
         "/produkt/wopet-cube-air-ca10/",
         "/produkt/wopet-heritage-view-camera-feeder/",
         "/produkt/wopet-patrol-f07-pro/",
         "/produkt/wopet-pioneer-f01-plus/",
-        "/produkt/petkit-eversweet-solo-se/",
-        "/produkt/petlibro-polar-wet-food-feeder/",
-        "/produkt/tractive-cat-6-mini/",
-        "/produkt/catit-pixi-vision-smart-feeder/",
         "/produkt/imipaw-3l-automatic-cat-feeder/",
         "/produkt/pawsync-smart-pet-feeder/",
+        "/produkt/petkit-eversweet-solo-se/",
         "/produkt/petlibro-one-rfid-smart-feeder/",
+        "/produkt/petlibro-polar-wet-food-feeder/",
+        "/produkt/tractive-cat-6-mini/",
+        "/produkt/weenect-xs/",
+        "/produkt/catit-pixi-vision-smart-feeder/",
         "/produkt/petsafe-freshfeed-refrigerated-feeder/",
         "/produkt/petsafe-smart-feed-2/",
         "/produkt/sureflap-mikrochip-katzenklappe/",
-        "/produkt/weenect-xs/",
         "/produkt/sureflap-dualscan-mikrochip-katzenklappe/",
+        "/produkt/cat-mate-c500/",
         "/produkt/onlycat-mikrochip-katzenklappe/",
         "/produkt/petlibro-capsule-dog-fountain/",
-        "/produkt/cat-mate-c500/",
         "/produkt/surefeed-microchip-pet-feeder-connect/",
         "/produkt/aqara-smart-pet-feeder-c1/",
         "/produkt/cat-mate-c200/",
@@ -13614,7 +13614,7 @@
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Futterautomat im Urlaub: Sicher planen statt allein lassen",
-      "internalIncomingLinks": 15,
+      "internalIncomingLinks": 14,
       "internalOutgoingLinks": 28,
       "wordCount": 2836,
       "headingCount": 38,
@@ -15065,7 +15065,7 @@
         "informational"
       ],
       "mainEntity": "Futterautomat und Ernährung",
-      "internalIncomingLinks": 16,
+      "internalIncomingLinks": 15,
       "internalOutgoingLinks": 23,
       "wordCount": 1824,
       "headingCount": 49,
@@ -21724,7 +21724,7 @@
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "SureFeed",
-      "internalIncomingLinks": 19,
+      "internalIncomingLinks": 20,
       "internalOutgoingLinks": 15,
       "wordCount": 1101,
       "headingCount": 38,
@@ -29702,8 +29702,8 @@
       "mainEntity": "Katzentrinkbrunnen ohne Filter: sinnvoll oder unhygienisch?",
       "internalIncomingLinks": 7,
       "internalOutgoingLinks": 15,
-      "wordCount": 810,
-      "headingCount": 21,
+      "wordCount": 910,
+      "headingCount": 22,
       "headings": [
         "Katzentrinkbrunnen ohne Filter: sinnvoll oder unhygienisch?",
         "Direkt vergleichen oder erst Kriterien prüfen?",
@@ -29711,6 +29711,7 @@
         "Die kurze Antwort",
         "Welche Aufgaben ein Filter übernimmt",
         "Vorteile filterloser Systeme",
+        "Filterlos heißt nicht automatisch verbrauchsmaterialfrei",
         "Nachteile und Grenzen",
         "Worauf du beim Kauf achten solltest",
         "Was ist jetzt sinnvoll?",
@@ -29775,6 +29776,10 @@
         {
           "level": 2,
           "text": "Vorteile filterloser Systeme"
+        },
+        {
+          "level": 2,
+          "text": "Filterlos heißt nicht automatisch verbrauchsmaterialfrei"
         },
         {
           "level": 2,
@@ -30160,8 +30165,8 @@
       "mainEntity": "Wie oft sollte man Katzenwasser wechseln?",
       "internalIncomingLinks": 7,
       "internalOutgoingLinks": 16,
-      "wordCount": 809,
-      "headingCount": 21,
+      "wordCount": 868,
+      "headingCount": 22,
       "headings": [
         "Wie oft sollte man Katzenwasser wechseln?",
         "Das Wichtigste in Kürze",
@@ -30169,6 +30174,7 @@
         "Typische Fehler",
         "Der Punkt, der in der Praxis oft übersehen wird",
         "Die kurze Antwort",
+        "Wasserwechsel auf einen Blick",
         "Warum Nachfüllen nicht dasselbe wie Wechseln ist",
         "Napf und Trinkbrunnen im Vergleich",
         "Woran du einen sofortigen Wechsel erkennst",
@@ -30233,6 +30239,10 @@
         {
           "level": 2,
           "text": "Die kurze Antwort"
+        },
+        {
+          "level": 2,
+          "text": "Wasserwechsel auf einen Blick"
         },
         {
           "level": 2,
@@ -30317,7 +30327,7 @@
         "explicit": false
       },
       "quality": {
-        "score": 95,
+        "score": 100,
         "signals": [
           "clear-title-h1",
           "meta-description",
@@ -30325,6 +30335,7 @@
           "substantive-content",
           "internal-context",
           "structured-data",
+          "table",
           "faq",
           "decision-support"
         ]
@@ -39020,10 +39031,10 @@
     {
       "sourceFile": "apps/pfotentechnik/src/content/products/petkit-eversweet-ultra.md",
       "pageType": "product",
-      "title": "PETKIT Eversweet Ultra im Check",
+      "title": "PETKIT Eversweet Ultra: filterloses OneWay-System im Check",
       "h1": "PETKIT Eversweet Ultra",
       "h1Count": 1,
-      "metaDescription": "PETKIT Eversweet Ultra mit 5 l Frischwasser, 1,8 l Abwasser, OneWay-System, AI-Kamera, Mehrtier-Erkennung und App.",
+      "metaDescription": "PETKIT Eversweet Ultra mit 5 l Frischwasser, 1,8 l Abwasser, OneWay-System ohne klassischen Hauptfilter, AI-Kamera und Cube C: Nutzen, Reinigung und Folgekosten.",
       "canonicalRoute": "/produkt/petkit-eversweet-ultra/",
       "indexable": true,
       "inSitemap": true,
@@ -39034,7 +39045,7 @@
       "mainEntity": "PETKIT Eversweet Ultra",
       "internalIncomingLinks": 7,
       "internalOutgoingLinks": 14,
-      "wordCount": 1546,
+      "wordCount": 1563,
       "headingCount": 29,
       "headings": [
         "PETKIT Eversweet Ultra",
@@ -39083,10 +39094,10 @@
       "renderedComparisonCount": 0,
       "route": "/produkt/petkit-eversweet-ultra/",
       "collection": "products",
-      "metaTitle": "PETKIT Eversweet Ultra im Check",
+      "metaTitle": "PETKIT Eversweet Ultra: filterloses OneWay-System im Check",
       "canonical": "https://pfotentechnik.de/produkt/petkit-eversweet-ultra/",
       "publishedAt": "2026-07-13",
-      "updatedAt": "2026-07-23",
+      "updatedAt": "2026-08-10",
       "author": "PETKIT",
       "animal": "both",
       "productCategory": "trinkbrunnen",
@@ -39487,7 +39498,7 @@
         "transactional-support"
       ],
       "mainEntity": "PETKIT Fresh Element Solo",
-      "internalIncomingLinks": 14,
+      "internalIncomingLinks": 13,
       "internalOutgoingLinks": 12,
       "wordCount": 1507,
       "headingCount": 29,
@@ -40171,10 +40182,10 @@
     {
       "sourceFile": "apps/pfotentechnik/src/content/products/petkit-yumshare-solo-2.md",
       "pageType": "product",
-      "title": "PETKIT YumShare Solo 2: Kamera-Futterautomat im Check",
+      "title": "PETKIT YumShare Solo 2: Kamera, App & Backup im Check",
       "h1": "PETKIT YumShare Solo 2",
       "h1Count": 1,
-      "metaDescription": "PETKIT YumShare Solo 2 mit 1080p-Kamera, 3-Liter-Tank und Dual-Band-WLAN: Mahlzeiten, App, Batterie-Backup und Grenzen der Tiererkennung im Datencheck.",
+      "metaDescription": "PETKIT YumShare Solo 2 P572 mit 1080p-Kamera, 3-Liter-Tank, Dual-Band-WLAN und bis zu 14 Tagen Backup: Mahlzeiten, App, Batteriebetrieb und Grenzen der Tiererkennung.",
       "canonicalRoute": "/produkt/petkit-yumshare-solo-2/",
       "indexable": true,
       "inSitemap": true,
@@ -40185,7 +40196,7 @@
       "mainEntity": "PETKIT YumShare Solo 2",
       "internalIncomingLinks": 5,
       "internalOutgoingLinks": 13,
-      "wordCount": 1279,
+      "wordCount": 1283,
       "headingCount": 29,
       "headings": [
         "PETKIT YumShare Solo 2",
@@ -40235,10 +40246,10 @@
       "renderedComparisonCount": 0,
       "route": "/produkt/petkit-yumshare-solo-2/",
       "collection": "products",
-      "metaTitle": "PETKIT YumShare Solo 2: Kamera-Futterautomat im Check",
+      "metaTitle": "PETKIT YumShare Solo 2: Kamera, App & Backup im Check",
       "canonical": "https://pfotentechnik.de/produkt/petkit-yumshare-solo-2/",
       "publishedAt": "2026-07-12",
-      "updatedAt": "2026-08-06",
+      "updatedAt": "2026-08-10",
       "author": "PETKIT",
       "animal": "both",
       "productCategory": "futterautomat",
@@ -42981,7 +42992,7 @@
         "transactional-support"
       ],
       "mainEntity": "PETLIBRO Granary WiFi Feeder",
-      "internalIncomingLinks": 28,
+      "internalIncomingLinks": 27,
       "internalOutgoingLinks": 13,
       "wordCount": 942,
       "headingCount": 29,
@@ -43426,10 +43437,10 @@
     {
       "sourceFile": "apps/pfotentechnik/src/content/products/petlibro-polar-wet-food-feeder.md",
       "pageType": "product",
-      "title": "PETLIBRO Polar Wet Food Feeder: Kühlung im Check",
+      "title": "PETLIBRO Polar Wet Food Feeder: Kühlung & Stromausfall im Check",
       "h1": "PETLIBRO Polar Wet Food Feeder",
       "h1Count": 1,
-      "metaDescription": "PETLIBRO Polar Wet Food Feeder PLAF109 mit aktiver Kühlung: drei 200-ml-Fächer, App, Edelstahl-Schale und Grenzen des 12-Stunden-Ausfallschutzes.",
+      "metaDescription": "PETLIBRO Polar PLAF109 mit aktiver Kühlung, drei 200-ml-Fächern und App: Was die 72-Stunden-Angabe bedeutet und was das 12-Stunden-Batterie-Backup bei Stromausfall tatsächlich absichert.",
       "canonicalRoute": "/produkt/petlibro-polar-wet-food-feeder/",
       "indexable": true,
       "inSitemap": true,
@@ -43440,7 +43451,7 @@
       "mainEntity": "PETLIBRO Polar Wet Food Feeder",
       "internalIncomingLinks": 26,
       "internalOutgoingLinks": 12,
-      "wordCount": 1137,
+      "wordCount": 1157,
       "headingCount": 28,
       "headings": [
         "PETLIBRO Polar Wet Food Feeder",
@@ -43489,7 +43500,7 @@
       "renderedComparisonCount": 0,
       "route": "/produkt/petlibro-polar-wet-food-feeder/",
       "collection": "products",
-      "metaTitle": "PETLIBRO Polar Wet Food Feeder: Kühlung im Check",
+      "metaTitle": "PETLIBRO Polar Wet Food Feeder: Kühlung & Stromausfall im Check",
       "canonical": "https://pfotentechnik.de/produkt/petlibro-polar-wet-food-feeder/",
       "publishedAt": "2026-07-12",
       "updatedAt": "2026-08-06",
@@ -52533,11 +52544,11 @@
     },
     {
       "sourceFile": "apps/pfotentechnik/src/content/pages/trinkbrunnen-fuer-mehrere-katzen.md",
-      "pageType": "guide",
-      "title": "Trinkbrunnen für 2 Katzen: Größe, Anzahl & RFID",
+      "pageType": "problem-solving-guide",
+      "title": "Wie viele Wasserstellen für 2 Katzen? Trinkbrunnen & Näpfe",
       "h1": "Trinkbrunnen für zwei oder mehr Katzen",
       "h1Count": 1,
-      "metaDescription": "Für zwei Katzen reichen nicht nur ein großer Tank: drei getrennte Wasserstellen, Hygiene, RFID-Grenzen und passende Katzenbrunnen.",
+      "metaDescription": "Für zwei Katzen sind mehrere getrennte Wasserstellen sinnvoll. So planst du Anzahl, Standorte, Trinkbrunnen, Näpfe und Tankgröße im Mehrkatzenhaushalt.",
       "canonicalRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
       "indexable": true,
       "inSitemap": true,
@@ -52546,7 +52557,7 @@
       "mainEntity": "Trinkbrunnen für zwei oder mehr Katzen",
       "internalIncomingLinks": 43,
       "internalOutgoingLinks": 18,
-      "wordCount": 947,
+      "wordCount": 1022,
       "headingCount": 27,
       "headings": [
         "Trinkbrunnen für zwei oder mehr Katzen",
@@ -52591,7 +52602,7 @@
       "renderedComparisonCount": 0,
       "route": "/trinkbrunnen-fuer-mehrere-katzen/",
       "collection": "pages",
-      "metaTitle": "Trinkbrunnen für 2 Katzen: Größe, Anzahl & RFID",
+      "metaTitle": "Wie viele Wasserstellen für 2 Katzen? Trinkbrunnen & Näpfe",
       "canonical": "https://pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/",
       "publishedAt": "2026-07-13",
       "updatedAt": "2026-07-25",
@@ -52740,7 +52751,7 @@
         "explicit": false
       },
       "quality": {
-        "score": 95,
+        "score": 100,
         "signals": [
           "clear-title-h1",
           "meta-description",
@@ -52748,6 +52759,7 @@
           "substantive-content",
           "internal-context",
           "structured-data",
+          "table",
           "faq",
           "decision-support"
         ]
@@ -58643,7 +58655,7 @@
         "transactional-support"
       ],
       "mainEntity": "Beste Futterautomaten für zwei Katzen",
-      "internalIncomingLinks": 17,
+      "internalIncomingLinks": 16,
       "internalOutgoingLinks": 33,
       "wordCount": 5932,
       "headingCount": 93,
@@ -60186,9 +60198,9 @@
       ],
       "mainEntity": "Beste Futterautomaten ohne WLAN",
       "internalIncomingLinks": 12,
-      "internalOutgoingLinks": 32,
-      "wordCount": 2816,
-      "headingCount": 50,
+      "internalOutgoingLinks": 26,
+      "wordCount": 1720,
+      "headingCount": 34,
       "headings": [
         "Beste Futterautomaten ohne WLAN",
         "IMIPAW 3L Automatic Cat Feeder",
@@ -60206,19 +60218,6 @@
         "SureFeed Connect richtig einordnen",
         "Quellen",
         "Weiterführende Links",
-        "Lokale Zeitsteuerung reicht für viele Routinen",
-        "Wann weniger Vernetzung sinnvoll ist",
-        "Was „ohne WLAN“ konkret bedeutet",
-        "Vorteile einer lokalen Lösung",
-        "Stromversorgung ist wichtiger als Vernetzung",
-        "Welche Funktionen fehlen?",
-        "Portionierung bleibt eine mechanische Frage",
-        "Sicher einrichten und testen",
-        "Drei Offline-Bauarten direkt vergleichen",
-        "Methodik unserer Einordnung",
-        "Interne Links und weiterführende Ratgeber",
-        "Welches Offline-Modell lohnt sich wirklich?",
-        "Typische Offline-Probleme",
         "So ist diese Seite einzuordnen",
         "Welche Geräteklasse passt zu deinen Anforderungen?",
         "Was ist jetzt sinnvoll?",
@@ -60231,9 +60230,6 @@
         "Fachautomat",
         "Mikrochip-Napf",
         "Vorratsautomat",
-        "Fester Tagesplan",
-        "Kein Konto nötig",
-        "Weniger Meldungen",
         "Welcher Futterautomat passt zu mir? Auswahlhilfe in 5 Schritten",
         "PetSafe FreshFeed Refrigerated Pet Feeder",
         "Aqara Smart Pet Feeder C1",
@@ -60333,58 +60329,6 @@
         },
         {
           "level": 2,
-          "text": "Lokale Zeitsteuerung reicht für viele Routinen"
-        },
-        {
-          "level": 2,
-          "text": "Wann weniger Vernetzung sinnvoll ist"
-        },
-        {
-          "level": 2,
-          "text": "Was „ohne WLAN“ konkret bedeutet"
-        },
-        {
-          "level": 2,
-          "text": "Vorteile einer lokalen Lösung"
-        },
-        {
-          "level": 2,
-          "text": "Stromversorgung ist wichtiger als Vernetzung"
-        },
-        {
-          "level": 2,
-          "text": "Welche Funktionen fehlen?"
-        },
-        {
-          "level": 2,
-          "text": "Portionierung bleibt eine mechanische Frage"
-        },
-        {
-          "level": 2,
-          "text": "Sicher einrichten und testen"
-        },
-        {
-          "level": 2,
-          "text": "Drei Offline-Bauarten direkt vergleichen"
-        },
-        {
-          "level": 2,
-          "text": "Methodik unserer Einordnung"
-        },
-        {
-          "level": 2,
-          "text": "Interne Links und weiterführende Ratgeber"
-        },
-        {
-          "level": 2,
-          "text": "Welches Offline-Modell lohnt sich wirklich?"
-        },
-        {
-          "level": 2,
-          "text": "Typische Offline-Probleme"
-        },
-        {
-          "level": 2,
           "text": "So ist diese Seite einzuordnen"
         },
         {
@@ -60433,18 +60377,6 @@
         },
         {
           "level": 3,
-          "text": "Fester Tagesplan"
-        },
-        {
-          "level": 3,
-          "text": "Kein Konto nötig"
-        },
-        {
-          "level": 3,
-          "text": "Weniger Meldungen"
-        },
-        {
-          "level": 3,
           "text": "Welcher Futterautomat passt zu mir? Auswahlhilfe in 5 Schritten"
         },
         {
@@ -60476,8 +60408,6 @@
         "/produkt/cat-mate-c500/",
         "/produkt/surefeed-microchip-pet-feeder-connect/",
         "/produkt/surefeed-microchip-pet-feeder/",
-        "/produkt/petlibro-granary-wifi-feeder/",
-        "/produkt/petkit-fresh-element-solo/",
         "/produkt/petkit-yumshare-dual-hopper/",
         "/produkt/petlibro-granary-camera-feeder/",
         "/produkt/xiaomi-smart-pet-food-feeder-2/",
@@ -60486,8 +60416,6 @@
       ],
       "relatedComparisons": [
         "/vergleiche/",
-        "/vergleiche/futterautomat-mit-app/",
-        "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
         "/vergleiche/beste-mikrochip-katzenklappen/",
         "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/"
       ],
@@ -60507,7 +60435,7 @@
         "explicit": false
       },
       "quality": {
-        "score": 100,
+        "score": 95,
         "signals": [
           "clear-title-h1",
           "meta-description",
@@ -60515,7 +60443,6 @@
           "substantive-content",
           "internal-context",
           "structured-data",
-          "table",
           "faq",
           "decision-support"
         ]
@@ -62866,7 +62793,7 @@
         "transactional-support"
       ],
       "mainEntity": "Futterautomaten mit App",
-      "internalIncomingLinks": 17,
+      "internalIncomingLinks": 16,
       "internalOutgoingLinks": 25,
       "wordCount": 3232,
       "headingCount": 61,
@@ -66535,7 +66462,7 @@
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Wie funktioniert ein Futterautomat?",
-      "internalIncomingLinks": 8,
+      "internalIncomingLinks": 7,
       "internalOutgoingLinks": 25,
       "wordCount": 1255,
       "headingCount": 25,

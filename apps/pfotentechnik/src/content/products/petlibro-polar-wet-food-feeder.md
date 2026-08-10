@@ -26,10 +26,10 @@ author:
   name: PfotenTechnik Redaktion
   role: Redaktion
 seo:
-  title: "PETLIBRO Polar Wet Food Feeder: Kühlung im Check"
+  title: "PETLIBRO Polar Wet Food Feeder: Kühlung & Stromausfall im Check"
   description: >-
-    PETLIBRO Polar Wet Food Feeder PLAF109 mit aktiver Kühlung: drei 200-ml-Fächer, App, Edelstahl-Schale und Grenzen
-    des 12-Stunden-Ausfallschutzes.
+    PETLIBRO Polar PLAF109 mit aktiver Kühlung, drei 200-ml-Fächern und App: Was die 72-Stunden-Angabe bedeutet und
+    was das 12-Stunden-Batterie-Backup bei Stromausfall tatsächlich absichert.
   canonical: /produkt/petlibro-polar-wet-food-feeder/
   sitemap: true
   priority: 0.9
@@ -118,9 +118,10 @@ review:
     Der Polar PLAF109 kombiniert thermoelektrische Kühlung mit drei einzeln planbaren 200-ml-Fächern und einer
     spülmaschinengeeigneten Edelstahl-Schale.
   verdict: >-
-    Der PETLIBRO Polar ist technisch deutlich überzeugender als ein einfacher Fachautomat mit Kühlakkus. Seine Grenzen
-    bleiben die vollständige Abhängigkeit der aktiven Kühlung vom Netzstrom, nur drei Mahlzeiten und die
-    App-Abhängigkeit für spontane Öffnungen.
+    Der PETLIBRO Polar ist technisch deutlich überzeugender als ein einfacher Fachautomat mit Kühlakkus. Wichtig ist die
+    Trennung zweier Versprechen: PETLIBRO nennt bis zu 72 Stunden Frische unter definierten Bedingungen, während das
+    Batterie-Backup bei Stromausfall den Fütterungsplan bis zu 12 Stunden weiterführt. Eine fortgesetzte aktive Kühlung
+    im Batteriebetrieb ist damit nicht belegt. Dazu kommen nur drei Mahlzeiten und die App-Abhängigkeit für spontane Öffnungen.
 strengths:
   - aktive thermoelektrische Kühlung statt Kühlakkus
   - drei Fächer mit jeweils 200 ml
@@ -203,10 +204,11 @@ specs:
   - label: Geeignet für
     value: Katzen und kleine Hunde
 faq:
-  - question: Wie lange kühlt der PETLIBRO Polar Nassfutter?
+  - question: Bedeutet die 72-Stunden-Angabe, dass Nassfutter immer drei Tage sicher bleibt?
     answer: >-
-      PETLIBRO nennt bis zu 72 Stunden. Das ist eine Herstellerangabe unter definierten Bedingungen und keine pauschale
-      Haltbarkeitsgarantie für jedes Futter und jede Raumtemperatur.
+      Nein. PETLIBRO nennt bis zu 72 Stunden Frische als Herstellerangabe für den vorgesehenen Betrieb. Das ist keine
+      pauschale Haltbarkeitsgarantie für jedes Futter, jede Raumtemperatur oder einen Stromausfall. Futterreste sollten
+      nach dem Fütterungsplan entfernt und die Schale gereinigt werden.
   - question: Welche Temperatur erreicht der PETLIBRO Polar?
     answer: >-
       PETLIBRO nennt aus Labortests bei 25 °C Raumtemperatur ungefähr 12 °C Futtertemperatur. Vor der Ausgabe wird die

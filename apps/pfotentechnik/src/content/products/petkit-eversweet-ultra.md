@@ -22,12 +22,14 @@ category:
   path: /trinkbrunnen/
 productUrl: /produkt/petkit-eversweet-ultra/
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-23"
+updatedAt: "2026-08-10"
 author:
   name: PfotenTechnik Redaktion
 seo:
-  title: PETKIT Eversweet Ultra im Check
-  description: PETKIT Eversweet Ultra mit 5 l Frischwasser, 1,8 l Abwasser, OneWay-System, AI-Kamera, Mehrtier-Erkennung und App.
+  title: "PETKIT Eversweet Ultra: filterloses OneWay-System im Check"
+  description: >-
+    PETKIT Eversweet Ultra mit 5 l Frischwasser, 1,8 l Abwasser, OneWay-System ohne klassischen Hauptfilter,
+    AI-Kamera und Cube C: Nutzen, Reinigung und Folgekosten.
   canonical: /produkt/petkit-eversweet-ultra/
   sitemap: true
   priority: 0.8
@@ -114,9 +116,10 @@ review:
     Der Eversweet Ultra führt Frischwasser aus einem 5-Liter-Tank in eine 350-ml-Edelstahlschale und leitet gebrauchtes
     Wasser in einen separaten 1,8-Liter-Tank. Eine 1080p-Kamera ordnet Trinkereignisse laut PETKIT bis zu 15 Tieren zu.
   verdict: >-
-    Ein technisch ungewöhnliches und durchdachtes Trinksystem für Mehrtierhaushalte. Trennung der Wasserwege, Kamera und
-    automatische Spülung bieten echten Zusatznutzen. Hoher Preis, Größe, Cloud-Abhängigkeit und noch begrenzte
-    Langzeiterfahrung verhindern jedoch eine uneingeschränkte Empfehlung.
+    Ein technisch ungewöhnliches Trinksystem für Mehrtierhaushalte. Der entscheidende Unterschied zu klassischen
+    Trinkbrunnen ist die Trennung von Frisch- und gebrauchtem Wasser: Ein klassischer Hauptfilter entfällt. Cube C bleibt
+    jedoch als Bauteil eingesetzt; PETKIT empfiehlt den Austausch ungefähr alle 30 Tage, macht ihn für den Betrieb aber
+    nicht zwingend. Hoher Preis, Größe, Cloud-Abhängigkeit und begrenzte Langzeiterfahrung bleiben die wichtigsten Grenzen.
 strengths:
   - 5 Liter Frischwasserreserve
   - 1,8 Liter separater Abwassertank
@@ -271,10 +274,11 @@ specs:
   - label: Geeignet für
     value: Katzen und kleine Hunde
 faq:
-  - question: Benötigt der PETKIT Eversweet Ultra einen Filter?
+  - question: Ist der PETKIT Eversweet Ultra wirklich filterlos?
     answer: >-
-      Er verwendet keinen klassischen Hauptfilter, weil gebrauchtes Wasser nicht in den Frischwassertank zurückgeführt
-      wird. Cube C sitzt jedoch als strukturelles Hygieneelement im Auslauf und muss eingesetzt bleiben.
+      Er benötigt keinen klassischen Hauptfilter, weil gebrauchtes Wasser nicht in den Frischwassertank zurückgeführt
+      wird. Vollständig verbrauchsmaterialfrei ist das System trotzdem nicht: Cube C bleibt als Bauteil eingesetzt.
+      PETKIT empfiehlt einen Austausch ungefähr alle 30 Tage, der Brunnen funktioniert laut Hersteller aber auch darüber hinaus.
   - question: Muss Cube C regelmäßig ersetzt werden?
     answer: >-
       PETKIT empfiehlt einen Austausch ungefähr alle 30 Tage für optimale Wasserqualität. Der Brunnen funktioniert laut

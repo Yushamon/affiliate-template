@@ -16,14 +16,14 @@ Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus d
 - comparison-index: 1
 - decision-guide: 7
 - editorial-page: 18
-- guide: 28
+- guide: 27
 - homepage: 1
 - knowledge-hub: 1
 - legal: 4
 - manufacturer: 26
 - manufacturer-index: 1
 - medical-guide: 12
-- problem-solving-guide: 16
+- problem-solving-guide: 17
 - product: 82
 
 ## Suchintentionen

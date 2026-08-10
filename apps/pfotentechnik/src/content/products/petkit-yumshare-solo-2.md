@@ -22,15 +22,15 @@ category:
   path: /smarte-futterautomaten/
 productUrl: /produkt/petkit-yumshare-solo-2/
 publishedAt: "2026-07-12"
-updatedAt: "2026-08-06"
+updatedAt: "2026-08-10"
 author:
   name: PfotenTechnik Redaktion
   role: Redaktion
 seo:
-  title: "PETKIT YumShare Solo 2: Kamera-Futterautomat im Check"
+  title: "PETKIT YumShare Solo 2: Kamera, App & Backup im Check"
   description: >-
-    PETKIT YumShare Solo 2 mit 1080p-Kamera, 3-Liter-Tank und Dual-Band-WLAN: Mahlzeiten, App, Batterie-Backup und
-    Grenzen der Tiererkennung im Datencheck.
+    PETKIT YumShare Solo 2 P572 mit 1080p-Kamera, 3-Liter-Tank, Dual-Band-WLAN und bis zu 14 Tagen Backup:
+    Mahlzeiten, App, Batteriebetrieb und Grenzen der Tiererkennung.
   canonical: /produkt/petkit-yumshare-solo-2/
   sitemap: true
   priority: 0.9
@@ -113,7 +113,7 @@ decision:
     - Kamera, Fernzugriff und AI-Funktionen benötigen Netzwerk und App
     - Video-Wiedergabe und erweiterte Cloudfunktionen können ein Abo erfordern
     - AI-Erkennung ist kein sicherer Nachweis der aufgenommenen Futtermenge
-    - PETKIT macht auf der aktuellen Produktseite widersprüchliche Angaben zur Art der Backup-Batterien
+    - für das Backup werden laut aktueller PETKIT-Produktseite fünf AAA-Alkaline-Batterien benötigt
     - Kamera ist im Batteriebetrieb laut Hersteller deaktiviert
 review:
   summary: >-
@@ -121,8 +121,8 @@ review:
     und bis zu zehn geplanten Mahlzeiten.
   verdict: >-
     Eine starke Kamera-Lösung für Haushalte, die das Livebild tatsächlich nutzen. Die Kernfunktion ist gut dokumentiert;
-    Batterieart, kostenlose Video-Historie und AI-Zuordnung sollten wegen regionaler beziehungsweise widersprüchlicher
-    Herstellerangaben vor dem Kauf nochmals geprüft werden.
+    Video-Historie, AI-Zuordnung und der regionale App-Funktionsumfang sollten vor dem Kauf geprüft werden. Die aktuelle
+    PETKIT-Produktseite nennt für das Backup fünf AAA-Alkaline-Batterien und wirbt mit bis zu 14 Tagen Reserve.
 strengths:
   - 1080p-Kamera mit Livebild
   - Zwei-Wege-Audio und persönlicher Mahlzeitenruf
@@ -137,7 +137,7 @@ weaknesses:
   - Kamera und Fernfunktionen bleiben cloud- und appabhängig
   - AI-Zuordnung ersetzt keine physische Zugangskontrolle
   - Video-Wiedergabe kann ein Abonnement benötigen
-  - widersprüchliche Herstellerangaben zur Backup-Batterie
+  - fünf AAA-Alkaline-Batterien für den Backup-Betrieb erforderlich
   - Kamera im Batteriebetrieb deaktiviert
 experience:
   summary: >-
@@ -205,7 +205,7 @@ specs:
   - label: Stromversorgung
     value: 6-V-Netzteil; Backup-Stromversorgung vorhanden
   - label: Batterie-Backup
-    value: Hersteller wirbt mit bis zu 14 Tagen; Batterieart ist auf der aktuellen Produktseite widersprüchlich dokumentiert
+    value: laut aktueller PETKIT-Produktseite bis zu 14 Tage mit fünf AAA-Alkaline-Batterien
   - label: Batteriemodus
     value: Kamera laut Hersteller deaktiviert
   - label: Napf
@@ -243,8 +243,8 @@ faq:
     answer: Nein. PETKIT weist darauf hin, dass die Kamera im Backup-Betrieb deaktiviert ist.
   - question: Welche Batterien benötigt der YumShare Solo 2?
     answer: >-
-      Die aktuelle PETKIT-Produktseite enthält widersprüchliche Angaben zur Batterieart. Deshalb sollte vor dem Kauf die
-      regionale Anleitung für das Modell P572 geprüft werden.
+      Die aktuelle PETKIT-Produktseite nennt fünf AAA-Alkaline-Batterien für die Backup-Stromversorgung. PETKIT wirbt mit
+      bis zu 14 Tagen Reserve; die Kamera ist im Batteriebetrieb deaktiviert.
   - question: Erkennt die Kamera sicher, welches Tier gefressen hat?
     answer: >-
       Nein. AI-Erkennung kann Ereignisse und Tiere einordnen, ersetzt aber weder Mikrochip-Zugang noch eine sichere
@@ -274,7 +274,7 @@ comparisonData:
     mahlzeiten: 1 bis 10 täglich
     wlan: 2,4 und 5 GHz
     offline: gespeicherte Pläne laufen laut Hersteller weiter
-    stromreserve: vorhanden; Batterieart auf aktueller Herstellerseite widersprüchlich
+    stromreserve: bis zu 14 Tage laut Hersteller; fünf AAA-Alkaline-Batterien
     wichtigstegrenze: Kamera und AI liefern keinen sicheren Fressnachweis
     futterart: Trockenfutter; Kroketten bis 12 mm und gefriergetrocknete Stücke bis 9 mm laut Hersteller
     kapazitat: 3 Liter beziehungsweise 12 Cups
@@ -283,7 +283,7 @@ comparisonData:
     app: PETKIT-App
     offline_verhalten: Gespeicherte Mahlzeiten laufen laut Hersteller bei WLAN-Ausfall weiter
     stromversorgung: 6-V-Netzteil; Backup-Stromversorgung vorhanden
-    batterie_backup: Hersteller wirbt mit bis zu 14 Tagen; Batterieart ist auf der aktuellen Produktseite widersprüchlich dokumentiert
+    batterie_backup: laut aktueller PETKIT-Produktseite bis zu 14 Tage mit fünf AAA-Alkaline-Batterien
     batteriemodus: Kamera laut Hersteller deaktiviert
     napf: Edelstahl 304
     material: ABS, Edelstahl 304 und Silikon
@@ -311,7 +311,7 @@ decisionFacts:
     value: "6-V-Netzteil; Backup-Stromversorgung vorhanden"
     consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
   - label: "Batterie-Backup"
-    value: "Hersteller wirbt mit bis zu 14 Tagen; Batterieart ist auf der aktuellen Produktseite widersprüchlich dokumentiert"
+    value: "Laut aktueller PETKIT-Produktseite bis zu 14 Tage mit fünf AAA-Alkaline-Batterien"
     consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
   - label: "Batteriemodus"
     value: "Kamera laut Hersteller deaktiviert"
@@ -342,7 +342,7 @@ Die 1080p-Kamera bietet Livebild, Ereigniserfassung und Zwei-Wege-Audio. Sie kan
 
 Der Solo 2 unterstützt laut PETKIT 2,4- und 5-GHz-WLAN. Gespeicherte Mahlzeiten sollen bei einem WLAN-Ausfall weiterlaufen.
 
-Zur Backup-Stromversorgung macht die aktuelle Produktseite widersprüchliche Angaben. Gleichzeitig wirbt PETKIT mit bis zu 14 Tagen Backup und weist darauf hin, dass die Kamera im Batteriebetrieb deaktiviert ist. Die regionale Anleitung für Modell P572 sollte deshalb vor dem Kauf geprüft werden.
+Für die Backup-Stromversorgung nennt die aktuelle PETKIT-Produktseite fünf AAA-Alkaline-Batterien und wirbt mit bis zu 14 Tagen Reserve. Im Batteriebetrieb ist die Kamera laut Hersteller deaktiviert; die lokale Futterausgabe bleibt damit klar von den Kamera- und Cloudfunktionen zu trennen.
 
 ## Solo 2 oder Dual-Hopper 2?
 
@@ -360,4 +360,4 @@ Diese Seite ist ein Datencheck und kein eigener Langzeittest.
 
 ## Fazit
 
-Der PETKIT YumShare Solo 2 ist ein gut ausgestatteter Kamera-Futterautomat für Trockenfutter. Dual-Band-WLAN, flexible Zeitpläne und der Edelstahl-Napf sind klare Vorteile. Die wichtigsten Grenzen sind die fehlende Zugangskontrolle, mögliche Abo-Funktionen und widersprüchliche Herstellerangaben zur Backup-Batterie.
+Der PETKIT YumShare Solo 2 ist ein gut ausgestatteter Kamera-Futterautomat für Trockenfutter. Dual-Band-WLAN, flexible Zeitpläne und der Edelstahl-Napf sind klare Vorteile. Die wichtigsten Grenzen sind die fehlende Zugangskontrolle, mögliche Abo-Funktionen und die deaktivierte Kamera im Batteriebetrieb.
