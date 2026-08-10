@@ -53,6 +53,12 @@ Ein verschmutzter Filter kann selbst den Durchfluss bremsen und muss nach Herste
 
 Es müssen keine kompatiblen Kartuschen gelagert oder nachgekauft werden. Weniger Bauteile können die Reinigung vereinfachen. Modelle mit offenem Wasserweg und herausnehmbarer Pumpe lassen sich leichter kontrollieren. Für Haushalte, die ohnehin konsequent Wasser wechseln und reinigen, kann das attraktiv sein.
 
+## Filterlos heißt nicht automatisch verbrauchsmaterialfrei
+
+Der Verzicht auf Wechselkartuschen beseitigt nur **eine** laufende Verbrauchsposition. Je nach Konstruktion können weiterhin Pumpen, Vorfilter oder Siebe, Dichtungen, Reinigungsbürsten oder andere Verschleißteile ersetzt werden müssen. Vor dem Kauf lohnt deshalb der Blick in Ersatzteilshop und Anleitung: Welche Teile sind vorgesehen, was kosten sie und lässt sich die Pumpe separat ersetzen?
+
+Ein günstiger Brunnen ohne Filter kann langfristig unattraktiv sein, wenn eine verschlissene Pumpe nur zusammen mit dem ganzen Gerät ersetzt werden kann. Umgekehrt kann ein gut zerlegbares System trotz einzelner Ersatzteile wirtschaftlicher und hygienisch einfacher zu betreiben sein.
+
 ## Nachteile und Grenzen
 
 Haare gelangen schneller zur Pumpe. Feine Partikel bleiben im Kreislauf. Bei hartem Wasser können Mineralablagerungen stärker auffallen. Der Reinigungsrhythmus muss zur tatsächlichen Nutzung passen; ein großer Tank ist kein Argument, Wasser tagelang stehen zu lassen.

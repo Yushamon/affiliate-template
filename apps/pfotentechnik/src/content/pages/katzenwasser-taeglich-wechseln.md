@@ -31,6 +31,16 @@ Dieser Ratgeber vertieft den Wasserwechsel innerhalb des Themenbereichs [Trinkbr
 
 Stilles Wasser im Napf sollte **mindestens einmal täglich vollständig erneuert** werden. Bei sichtbaren Haaren, Futterresten, Staub, ungewöhnlichem Geruch oder warmem Wetter ist ein zusätzlicher Wechsel sinnvoll. Ein Trinkbrunnen hat zwar einen größeren Vorrat und oft einen Filter, macht das Wasser aber nicht unbegrenzt frisch. Auch dort gehören die tägliche Kontrolle und regelmäßiges vollständiges Entleeren zur Routine.
 
+## Wasserwechsel auf einen Blick
+
+| Situation | Sinnvoller Rhythmus |
+| --- | --- |
+| Wassernapf | mindestens täglich vollständig erneuern |
+| Sichtbare Haare, Futterreste, Geruch oder Trübung | sofort wechseln und Gefäß reinigen |
+| Warmes Wetter oder starke Verschmutzung | zusätzlich zur täglichen Routine kontrollieren und bei Bedarf wechseln |
+| Trinkbrunnen | täglich kontrollieren; regelmäßig vollständig entleeren und nach Herstellerangaben reinigen |
+| Nur Wasser nachgefüllt | ersetzt keinen vollständigen Wasserwechsel |
+
 ## Warum Nachfüllen nicht dasselbe wie Wechseln ist
 
 Beim Trinken gelangen Speichel und kleine Schmutzpartikel ins Wasser. Haare, Hausstaub und gelegentlich Futterkrümel kommen hinzu. Wird nur neues Wasser aufgefüllt, bleiben diese Einträge im System. In einem Brunnen zirkulieren sie außerdem durch Auslauf, Tank, Filter und Pumpe.

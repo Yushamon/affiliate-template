@@ -17,8 +17,8 @@ author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkbrunnen, mehrkatzen, rfid, wasser]
 hub: { sections: [wissen], title: "Trinkbrunnen für mehrere Katzen", description: "Tankgröße, Ausweichstellen und RFID sinnvoll planen.", order: 54 }
 seo:
-  title: "Trinkbrunnen für 2 Katzen: Größe, Anzahl & RFID"
-  description: "Für zwei Katzen reichen nicht nur ein großer Tank: drei getrennte Wasserstellen, Hygiene, RFID-Grenzen und passende Katzenbrunnen."
+  title: "Wie viele Wasserstellen für 2 Katzen? Trinkbrunnen & Näpfe"
+  description: "Für zwei Katzen sind mehrere getrennte Wasserstellen sinnvoll. So planst du Anzahl, Standorte, Trinkbrunnen, Näpfe und Tankgröße im Mehrkatzenhaushalt."
   canonical: "/trinkbrunnen-fuer-mehrere-katzen/"
   sitemap: true
   priority: 0.85
@@ -45,7 +45,16 @@ Dieser Ratgeber vertieft die Mehrkatzen-Nutzung innerhalb des Themenbereichs [Tr
 
 ## Kurzantwort
 
-Für mehrere Katzen ist nicht der größte Tank automatisch die beste Lösung. Wichtiger sind **mehrere räumlich getrennte Wasserstellen**, gute Zugänglichkeit und eine Bauform, die sich trotz höherer Nutzung schnell reinigen lässt. Ein Brunnen darf nicht zur einzigen Ressource werden.
+Für **zwei Katzen sind drei räumlich getrennte Wasserstellen ein sinnvoller Planungswert**: eine Stelle pro Katze plus eine zusätzliche Ausweichmöglichkeit. Das müssen nicht drei Trinkbrunnen sein. Ein Brunnen kann mit gut platzierten Wassernäpfen kombiniert werden. Entscheidend ist, dass keine Katze den einzigen Zugang blockieren kann.
+
+| Haushalt | Sinnvoller Ausgangspunkt | Praktische Umsetzung |
+| --- | --- | --- |
+| 1 Katze | 2 Wasserstellen | z. B. 1 Brunnen + 1 Napf |
+| 2 Katzen | 3 Wasserstellen | z. B. 1 Brunnen + 2 Näpfe |
+| 3 Katzen | 4 Wasserstellen | auf mehrere Räume verteilen |
+| 4 Katzen | 5 Wasserstellen | mehrere unabhängige Standorte |
+
+Die Tabelle ist eine **Planungshilfe, keine starre medizinische Regel**. Wohnungsgrundriss, soziale Konflikte und individuelle Vorlieben können zusätzliche Stellen sinnvoll machen. Mehrere Gefäße direkt nebeneinander zählen praktisch nicht als getrennte Ausweichorte.
 
 ## Tankgröße realistisch wählen
 
