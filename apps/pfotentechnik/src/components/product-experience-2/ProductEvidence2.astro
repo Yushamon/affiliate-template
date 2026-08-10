@@ -1,89 +1,40 @@
 ---
-interface EvidenceItem {
-  label: string;
-  detail?: string;
-}
-
-interface ProfessionalReview {
-  publisher: string; title?: string; url: string; methodology?: string;
-  rating?: { value: number; scale: number } | null;
-}
-interface UserReviewSource {
-  platform: string; url: string; rating?: number | null; scale?: number; reviewCount?: number | null;
-}
+interface EvidenceItem { label: string; detail?: string; }
+interface ProfessionalReview { publisher: string; title?: string; url: string; methodology?: string; rating?: { value: number; scale: number } | null; }
+interface UserReviewSource { platform: string; url: string; rating?: number | null; scale?: number; reviewCount?: number | null; }
 interface EvidenceSummary {
   items: EvidenceItem[];
   professionalReviews?: ProfessionalReview[];
   userReviewSources?: UserReviewSource[];
   externalNote?: string;
-  handsOn?: {
-    date?: string;
-    duration?: string;
-    scope?: string[];
-  } | null;
+  handsOn?: { date?: string; duration?: string; scope?: string[] } | null;
 }
-
-interface Props {
-  evidence?: EvidenceSummary;
-  updatedAt?: string;
-}
-
+interface Props { evidence?: EvidenceSummary; updatedAt?: string; }
 const { evidence, updatedAt } = Astro.props;
 const items = evidence?.items ?? [];
 const professionalReviews = evidence?.professionalReviews ?? [];
 const userReviewSources = evidence?.userReviewSources ?? [];
-const formattedDate = updatedAt
-  ? new Intl.DateTimeFormat("de-DE", { dateStyle: "medium" }).format(new Date(updatedAt))
-  : null;
-const show = items.length > 0 || professionalReviews.length > 0 || userReviewSources.length > 0 || evidence?.handsOn;
-const iconFor = (label: string) => {
-  const value = label.toLocaleLowerCase("de-DE");
-  if (value.includes("hersteller")) return "D";
-  if (value.includes("spezifikation") || value.includes("technisch")) return "T";
-  if (value.includes("vergleich")) return "V";
-  return "Q";
-};
+const formattedDate = updatedAt ? new Intl.DateTimeFormat("de-DE", { dateStyle: "medium" }).format(new Date(updatedAt)) : null;
+const externalCount = professionalReviews.length + userReviewSources.length;
+const show = items.length > 0 || externalCount > 0 || evidence?.handsOn;
+const summaryParts = [
+  professionalReviews.length ? `${professionalReviews.length} unabhängige ${professionalReviews.length === 1 ? "Review" : "Reviews"}` : "",
+  userReviewSources.length ? `${userReviewSources.length} Nutzerplattform${userReviewSources.length === 1 ? "" : "en"}` : ""
+].filter(Boolean);
+const methodologyLabel = (value?: string) => value === "hands-on" ? "Hands-on-Test" : value === "lab-test" ? "Labortest" : "Externe Review";
 ---
 
 {show && (
   <section class="evidence" aria-labelledby="evidence-title">
-    <header>
-      <span>Unsere Quellen</span>
-      <h2 id="evidence-title">So ist die Einordnung belegt</h2>
-      {formattedDate && <p>Zuletzt inhaltlich geprüft: {formattedDate}</p>}
+    <header class="evidence__header">
+      <div><span>Transparenz</span><h2 id="evidence-title">Quellen und Prüfgrundlage</h2></div>
+      {formattedDate && <p>Inhaltlich geprüft: {formattedDate}</p>}
     </header>
 
-    <ul class="evidence__items">
-      {items.map((item) => (
-        <li>
-          <span class="evidence__icon" aria-hidden="true">{iconFor(item.label)}</span>
-          <div>
-            <strong>{item.label}</strong>
-            {item.detail && <small>{item.detail}</small>}
-          </div>
-        </li>
-      ))}
-    </ul>
-
-    {(professionalReviews.length > 0 || userReviewSources.length > 0) && (
-      <div class="evidence__external">
-        {professionalReviews.length > 0 && <div>
-          <h3>Unabhängige Tests und Reviews</h3>
-          <ul>{professionalReviews.map((item) => <li>
-            <a href={item.url} target="_blank" rel="noopener noreferrer"><strong>{item.publisher}</strong>{item.title && <span>{item.title}</span>}</a>
-            <small>{item.methodology === "hands-on" ? "Hands-on-Test" : item.methodology === "lab-test" ? "Labortest" : "Externe Review"}{item.rating ? ` · ${item.rating.value}/${item.rating.scale}` : ""}</small>
-          </li>)}</ul>
-        </div>}
-        {userReviewSources.length > 0 && <div>
-          <h3>Nutzerbewertungen nach Plattform</h3>
-          <ul>{userReviewSources.map((item) => <li>
-            <a href={item.url} target="_blank" rel="noopener noreferrer"><strong>{item.platform}</strong></a>
-            <small>{item.rating != null ? `${item.rating}/${item.scale ?? 5}` : "Bewertung erfasst"}{item.reviewCount != null ? ` · ${item.reviewCount.toLocaleString("de-DE")} Bewertungen` : ""}</small>
-          </li>)}</ul>
-        </div>}
-        {evidence?.externalNote && <p>{evidence.externalNote}</p>}
-        <p>Bewertungen verschiedener Quellen werden nicht zu einer künstlichen Gesamtnote verrechnet.</p>
-      </div>
+    {items.length > 0 && (
+      <ul class="evidence__basis" aria-label="Prüfgrundlage">
+        {items.map((item) => <li><strong>{item.label}</strong>{item.detail && <span>{item.detail}</span>}</li>)}
+      </ul>
     )}
 
     {evidence?.handsOn && (
@@ -93,121 +44,82 @@ const iconFor = (label: string) => {
         {evidence.handsOn.scope?.length > 0 && <span>{evidence.handsOn.scope.join(" · ")}</span>}
       </aside>
     )}
+
+    {externalCount > 0 && (
+      <details class="evidence__sources">
+        <summary>
+          <span><strong>Externe Belege ansehen</strong><small>{summaryParts.join(" · ")}</small></span>
+          <span class="evidence__chevron" aria-hidden="true">⌄</span>
+        </summary>
+        <div class="evidence__source-content">
+          {professionalReviews.length > 0 && (
+            <section aria-labelledby="professional-evidence-title">
+              <h3 id="professional-evidence-title">Unabhängige Tests und Reviews</h3>
+              <ul>{professionalReviews.map((item) => (
+                <li>
+                  <div><strong>{item.publisher}</strong>{item.title && <span>{item.title}</span>}<small>{methodologyLabel(item.methodology)}{item.rating ? ` · ${item.rating.value}/${item.rating.scale}` : ""}</small></div>
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">Quelle öffnen <span aria-hidden="true">↗</span></a>
+                </li>
+              ))}</ul>
+            </section>
+          )}
+          {userReviewSources.length > 0 && (
+            <section aria-labelledby="user-evidence-title">
+              <h3 id="user-evidence-title">Nutzerbewertungen nach Plattform</h3>
+              <ul>{userReviewSources.map((item) => (
+                <li>
+                  <div><strong>{item.platform}</strong><small>{item.rating != null ? `${item.rating}/${item.scale ?? 5}` : "Bewertung erfasst"}{item.reviewCount != null ? ` · ${item.reviewCount.toLocaleString("de-DE")} Bewertungen` : ""}</small></div>
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">Quelle öffnen <span aria-hidden="true">↗</span></a>
+                </li>
+              ))}</ul>
+            </section>
+          )}
+          {evidence?.externalNote && <p class="evidence__note">{evidence.externalNote}</p>}
+          <p class="evidence__method">Bewertungen verschiedener Quellen werden nicht zu einer künstlichen Gesamtnote verrechnet.</p>
+        </div>
+      </details>
+    )}
   </section>
 )}
 
 <style>
-  .evidence {
-    display: grid;
-    gap: 14px;
-    padding: 16px;
-    border: 1px solid var(--px2-border);
-    border-radius: 18px;
-    background: var(--px2-surface-soft);
+  .evidence { display:grid; gap:12px; padding:15px 16px; border:1px solid var(--px2-border); border-radius:18px; background:var(--px2-surface-soft); }
+  .evidence__header { display:flex; gap:12px; align-items:end; justify-content:space-between; }
+  .evidence__header > div { min-width:0; }
+  .evidence__header span { color:var(--px2-accent-text); font-size:.7rem; font-weight:850; letter-spacing:.07em; text-transform:uppercase; }
+  .evidence__header h2 { margin:3px 0 0; font-size:clamp(1.15rem,4.6vw,1.5rem); letter-spacing:-.02em; }
+  .evidence__header p { flex:0 0 auto; margin:0; color:var(--px2-muted); font-size:.76rem; text-align:right; }
+  .evidence__basis { display:flex; flex-wrap:wrap; gap:6px; margin:0; padding:0; list-style:none; }
+  .evidence__basis li { display:inline-flex; gap:5px; align-items:baseline; max-width:100%; padding:6px 9px; border:1px solid var(--px2-border); border-radius:999px; background:var(--px2-surface); font-size:.78rem; }
+  .evidence__basis span { overflow:hidden; color:var(--px2-muted); text-overflow:ellipsis; white-space:nowrap; }
+  .evidence__hands-on { display:flex; flex-wrap:wrap; gap:5px 10px; align-items:baseline; padding:9px 10px; border-radius:11px; background:var(--px2-green-soft); font-size:.78rem; }
+  .evidence__hands-on span { color:var(--px2-muted); }
+  .evidence__sources { overflow:clip; border:1px solid var(--px2-border); border-radius:13px; background:var(--px2-surface); }
+  .evidence__sources summary { display:flex; gap:10px; align-items:center; justify-content:space-between; min-height:48px; padding:10px 12px; cursor:pointer; list-style:none; }
+  .evidence__sources summary::-webkit-details-marker { display:none; }
+  .evidence__sources summary > span:first-child { display:grid; gap:1px; }
+  .evidence__sources summary strong { font-size:.88rem; }
+  .evidence__sources summary small { color:var(--px2-muted); font-size:.74rem; }
+  .evidence__chevron { flex:0 0 auto; color:var(--px2-muted); transition:transform .16s ease; }
+  .evidence__sources[open] .evidence__chevron { transform:rotate(180deg); }
+  .evidence__source-content { display:grid; gap:15px; padding:0 12px 12px; border-top:1px solid var(--px2-border); }
+  .evidence__source-content > section { display:grid; gap:7px; padding-top:12px; }
+  .evidence__source-content h3 { margin:0; font-size:.9rem; }
+  .evidence__source-content ul { display:grid; gap:6px; margin:0; padding:0; list-style:none; }
+  .evidence__source-content li { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:10px; align-items:center; padding:9px 0; border-top:1px solid var(--px2-border); }
+  .evidence__source-content li:first-child { border-top:0; }
+  .evidence__source-content li > div { display:grid; gap:1px; min-width:0; }
+  .evidence__source-content li strong { font-size:.84rem; }
+  .evidence__source-content li span, .evidence__source-content li small, .evidence__note, .evidence__method { color:var(--px2-muted); font-size:.75rem; line-height:1.4; }
+  .evidence__source-content a { display:inline-flex; gap:4px; align-items:center; min-height:36px; padding:6px 8px; color:var(--px2-accent-text); font-size:.76rem; font-weight:800; text-decoration:none; }
+  .evidence__source-content a:hover { text-decoration:underline; text-underline-offset:3px; }
+  .evidence__note, .evidence__method { margin:0; }
+  .evidence__method { padding-top:9px; border-top:1px solid var(--px2-border); }
+  @media (max-width:559px) {
+    .evidence__header { display:grid; align-items:start; }
+    .evidence__header p { text-align:left; }
+    .evidence__source-content li { grid-template-columns:minmax(0,1fr); gap:3px; }
+    .evidence__source-content a { justify-self:start; padding-inline:0; }
   }
-
-  .evidence header > span {
-    color: var(--px2-accent-text);
-    font-size: .72rem;
-    font-weight: 850;
-    letter-spacing: .07em;
-    text-transform: uppercase;
-  }
-
-  .evidence h2 {
-    margin: 4px 0 3px;
-    font-size: clamp(1.25rem, 5vw, 1.7rem);
-    letter-spacing: -.02em;
-  }
-
-  .evidence header p {
-    margin: 0;
-    color: var(--px2-muted);
-    font-size: .82rem;
-  }
-
-  .evidence__items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .evidence__items li {
-    display: grid;
-    grid-template-columns: 1.8rem minmax(0, 1fr);
-    gap: 8px;
-    align-items: center;
-    min-width: min(100%, 13rem);
-    padding: 9px 11px;
-    border: 1px solid var(--px2-border);
-    border-radius: 12px;
-    background: var(--px2-surface);
-  }
-
-  .evidence__icon {
-    display: grid;
-    width: 1.75rem;
-    height: 1.75rem;
-    place-items: center;
-    border-radius: 9px;
-    background: var(--px2-green-soft);
-    color: var(--px2-accent-text);
-    font-size: .72rem;
-    font-weight: 900;
-  }
-
-  .evidence__items div {
-    display: grid;
-    gap: 1px;
-    min-width: 0;
-  }
-
-  .evidence__items strong {
-    font-size: .86rem;
-  }
-
-  .evidence__items small {
-    color: var(--px2-muted);
-    line-height: 1.35;
-  }
-
-  .evidence__external {
-    display:grid; gap:12px; grid-column:1/-1; padding-top:4px;
-  }
-  .evidence__external > div { display:grid; gap:6px; }
-  .evidence__external h3 { margin:0; font-size:.95rem; }
-  .evidence__external ul { display:grid; gap:6px; margin:0; padding:0; list-style:none; }
-  .evidence__external li { display:grid; gap:2px; padding:9px 11px; border:1px solid var(--px2-border); border-radius:12px; background:var(--px2-surface); }
-  .evidence__external a { display:grid; gap:1px; color:var(--px2-text); text-decoration:none; }
-  .evidence__external a:hover strong { text-decoration:underline; }
-  .evidence__external span,.evidence__external small,.evidence__external p { color:var(--px2-muted); font-size:.78rem; line-height:1.4; }
-  .evidence__external p { margin:0; }
-
-  .evidence__hands-on {
-    display: grid;
-    gap: 3px;
-    padding: 11px 12px;
-    border-radius: 12px;
-    background: var(--px2-green-soft);
-  }
-
-  .evidence__hands-on span {
-    color: var(--px2-muted);
-    font-size: .82rem;
-  }
-
-  @media (min-width: 720px) {
-    .evidence {
-      grid-template-columns: minmax(210px, .65fr) minmax(0, 1.35fr);
-      padding: 20px;
-      align-items: center;
-    }
-
-    .evidence__hands-on {
-      grid-column: 1 / -1;
-    }
-  }
+  @media (min-width:760px) { .evidence { padding:18px 20px; } }
 </style>

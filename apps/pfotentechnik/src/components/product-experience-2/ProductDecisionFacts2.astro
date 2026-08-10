@@ -5,46 +5,28 @@ interface DecisionFact {
   consequence: string;
   source: "product-data" | "technical-specification" | "editorial";
 }
-
-interface Props {
-  facts?: DecisionFact[];
-}
-
+interface Props { facts?: DecisionFact[]; }
 const { facts = [] } = Astro.props;
-
 const sentenceCase = (value: string) => {
   const trimmed = String(value ?? "").trim();
   if (!trimmed) return "";
-
   const firstWord = trimmed.match(/^[„"'([{]*([^\s,;:]+)/u)?.[1] ?? "";
   if (/^\p{Ll}.*\p{Lu}/u.test(firstWord)) return trimmed;
-
-  return trimmed.replace(
-    /^([„"'([{]*)(\p{Ll})/u,
-    (_match, prefix: string, letter: string) =>
-      `${prefix}${letter.toLocaleUpperCase("de-DE")}`
-  );
+  return trimmed.replace(/^([„"'([{]*)(\p{Ll})/u, (_m, p: string, l: string) => `${p}${l.toLocaleUpperCase("de-DE")}`);
 };
 ---
 
 {facts.length > 0 && (
   <section class="decision-facts" aria-labelledby="decision-facts-title">
     <header>
-      <span>Eigenschaft und Konsequenz</span>
-      <h2 id="decision-facts-title">Was die Daten wirklich bedeuten</h2>
+      <span>Für die Kaufentscheidung</span>
+      <h2 id="decision-facts-title">Was die wichtigsten Daten bedeuten</h2>
     </header>
-
     <dl>
       {facts.map((fact) => (
         <div>
-          <dt>
-            <span>{fact.label}</span>
-            <strong>{sentenceCase(fact.value)}</strong>
-          </dt>
-          <dd>
-            <span aria-hidden="true">→</span>
-            <p>{fact.consequence}</p>
-          </dd>
+          <dt><span>{fact.label}</span><strong>{sentenceCase(fact.value)}</strong></dt>
+          <dd>{fact.consequence}</dd>
         </div>
       ))}
     </dl>
@@ -52,98 +34,22 @@ const sentenceCase = (value: string) => {
 )}
 
 <style>
-  .decision-facts {
-    display: grid;
-    gap: 16px;
-    padding: 16px;
-    border: 1px solid var(--px2-border);
-    border-radius: 20px;
-    background: var(--px2-surface);
-  }
-
-  .decision-facts header > span {
-    color: var(--px2-accent-text);
-    font-size: .72rem;
-    font-weight: 850;
-    letter-spacing: .07em;
-    text-transform: uppercase;
-  }
-
-  .decision-facts h2 {
-    margin: 4px 0 0;
-    font-size: clamp(1.35rem, 5.5vw, 1.9rem);
-    letter-spacing: -.025em;
-  }
-
-  .decision-facts dl {
-    display: grid;
-    gap: 10px;
-    margin: 0;
-  }
-
-  .decision-facts dl > div {
-    display: grid;
-    gap: 10px;
-    min-width: 0;
-    padding: 15px;
-    border: 1px solid var(--px2-border);
-    border-radius: 15px;
-    background: var(--px2-surface-raised);
-  }
-
-  .decision-facts dt {
-    display: grid;
-    gap: 3px;
-    min-width: 0;
-  }
-
-  .decision-facts dt span {
-    color: var(--px2-muted);
-    font-size: .7rem;
-    font-weight: 850;
-    letter-spacing: .055em;
-    text-transform: uppercase;
-  }
-
-  .decision-facts dt strong {
-    color: var(--px2-text);
-    font-size: clamp(1.05rem, 4.5vw, 1.3rem);
-    line-height: 1.25;
-    overflow-wrap: anywhere;
-  }
-
-  .decision-facts dd {
-    display: grid;
-    grid-template-columns: 1.2rem minmax(0, 1fr);
-    gap: 7px;
-    margin: 0;
-    color: var(--px2-muted);
-    font-size: .89rem;
-    line-height: 1.5;
-  }
-
-  .decision-facts dd > span {
-    color: var(--px2-accent-text);
-    font-weight: 900;
-  }
-
-  .decision-facts dd p {
-    margin: 0;
-  }
-
-  @media (min-width: 720px) {
-    .decision-facts {
-      padding: 22px;
-    }
-
-    .decision-facts dl {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-
-  @media (min-width: 1040px) {
-    .decision-facts dl {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
+  .decision-facts { display:grid; gap:13px; padding:16px; border:1px solid var(--px2-border); border-radius:20px; background:var(--px2-surface); }
+  .decision-facts header > span { color:var(--px2-accent-text); font-size:.72rem; font-weight:850; letter-spacing:.07em; text-transform:uppercase; }
+  .decision-facts h2 { margin:4px 0 0; font-size:clamp(1.35rem,5.5vw,1.9rem); letter-spacing:-.025em; }
+  .decision-facts dl { display:grid; margin:0; overflow:clip; border:1px solid var(--px2-border); border-radius:15px; }
+  .decision-facts dl > div { display:grid; gap:6px; min-width:0; padding:13px 14px; border-top:1px solid var(--px2-border); background:var(--px2-surface-raised); }
+  .decision-facts dl > div:first-child { border-top:0; }
+  .decision-facts dt { display:grid; gap:2px; min-width:0; }
+  .decision-facts dt span { color:var(--px2-muted); font-size:.68rem; font-weight:850; letter-spacing:.055em; text-transform:uppercase; }
+  .decision-facts dt strong { color:var(--px2-text); font-size:clamp(1rem,4vw,1.17rem); line-height:1.28; overflow-wrap:anywhere; }
+  .decision-facts dd { position:relative; margin:0; padding-left:1.25rem; color:var(--px2-muted); font-size:.84rem; line-height:1.47; }
+  .decision-facts dd::before { position:absolute; left:0; color:var(--px2-accent-text); content:"→"; font-weight:900; }
+  @media (min-width:720px) {
+    .decision-facts { padding:20px; }
+    .decision-facts dl { grid-template-columns:1fr 1fr; }
+    .decision-facts dl > div { border-left:1px solid var(--px2-border); }
+    .decision-facts dl > div:nth-child(-n + 2) { border-top:0; }
+    .decision-facts dl > div:nth-child(odd) { border-left:0; }
   }
 </style>

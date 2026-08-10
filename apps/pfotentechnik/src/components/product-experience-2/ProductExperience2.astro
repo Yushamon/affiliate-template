@@ -11,30 +11,24 @@ import ProductCategoryFitAssistant from "./ProductCategoryFitAssistant.astro";
 import ProductDetails2 from "./ProductDetails2.astro";
 import ProductAlternatives2 from "./ProductAlternatives2.astro";
 
-interface Props {
-  model: ProductExperienceModel;
-}
-
+interface Props { model: ProductExperienceModel; }
 const { model } = Astro.props;
 ---
 
-<article class="px2" data-product-experience="2.1" data-product-layout="decision-first">
+<article class="px2" data-product-experience="2.2" data-product-layout="decision-first">
   <ProductHero2 model={model} />
   <ProductVerdict2 model={model} />
-  <ProductEvidence2 evidence={model.evidenceSummary} updatedAt={model.updatedAt} />
+
+  <div class="px2__decision-zone" aria-label="Kaufentscheidung">
+    <ProductDecisionFacts2 facts={model.decisionFacts} />
+    <ProductPurchaseMistakes2 items={model.purchaseMistakes} />
+    <ProductCategoryFitAssistant profile={model.categoryFitProfile} alternatives={model.alternatives} />
+  </div>
+
+  <ProductEverydayTimeline items={model.timeline} heading={model.usageHeading} eyebrow={model.usageEyebrow} />
   <ProductCommunityInsights2 insights={model.communityInsights} />
-  <ProductDecisionFacts2 facts={model.decisionFacts} />
-  <ProductPurchaseMistakes2 items={model.purchaseMistakes} />
-  <ProductEverydayTimeline
-    items={model.timeline}
-    heading={model.usageHeading}
-    eyebrow={model.usageEyebrow}
-  />
-  <ProductCategoryFitAssistant
-    profile={model.categoryFitProfile}
-    alternatives={model.alternatives}
-  />
   <ProductDetails2 model={model} />
+  <ProductEvidence2 evidence={model.evidenceSummary} updatedAt={model.updatedAt} />
   <ProductAlternatives2 alternatives={model.alternatives.slice(0, 3)} />
 </article>
 
@@ -62,21 +56,16 @@ const { model } = Astro.props;
     --px2-on-accent: var(--px2-action-text);
     display: grid;
     gap: clamp(24px, 4vw, 46px);
-    width: 100%;
-    min-width: 0;
-    margin: 0;
-    padding: 0;
+    width: 100%; min-width: 0; margin: 0; padding: 0;
     color: var(--px2-text);
   }
-
-  .px2 :global(*) {
-    box-sizing: border-box;
-  }
-
+  .px2 :global(*) { box-sizing: border-box; }
+  .px2__decision-zone { display: grid; gap: clamp(18px, 3vw, 30px); min-width: 0; }
   @media (max-width: 759px) {
-    .px2 > :not(.px2-hero) {
+    .px2 > :not(.px2-hero), .px2__decision-zone {
       width: calc(100% - 2 * var(--pt-page-gutter));
       margin-inline: auto;
     }
+    .px2__decision-zone > :global(*) { width: 100%; min-width: 0; }
   }
 </style>

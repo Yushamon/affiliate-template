@@ -1,194 +1,61 @@
 ---
-interface Insight {
-  text: string;
-  confidence?: "high" | "medium" | "low";
-  sourceCount?: number;
-  assessment?: string;
-}
-
-interface CommunityInsights {
-  positives: Insight[];
-  negatives: Insight[];
-  editorialAssessment?: string;
-  sourcePlatforms?: string[];
-}
-
-interface Props {
-  insights?: CommunityInsights;
-}
-
+interface Insight { text: string; confidence?: "high" | "medium" | "low"; sourceCount?: number; assessment?: string; }
+interface CommunityInsights { positives: Insight[]; negatives: Insight[]; editorialAssessment?: string; sourcePlatforms?: string[]; }
+interface Props { insights?: CommunityInsights; }
 const { insights } = Astro.props;
 const positives = insights?.positives ?? [];
 const negatives = insights?.negatives ?? [];
 const show = positives.length > 0 || negatives.length > 0;
-const confidenceLabel = {
-  high: "hohe Übereinstimmung",
-  medium: "mittlere Übereinstimmung",
-  low: "geringe Aussagekraft"
-};
+const confidenceLabel = { high: "hohe Übereinstimmung", medium: "mittlere Übereinstimmung", low: "geringe Aussagekraft" };
+const platforms = [...new Set(insights?.sourcePlatforms ?? [])];
 ---
 
 {show && (
   <section class="community" aria-labelledby="community-title">
-    <header>
-      <span>Community-Erfahrungen</span>
-      <h2 id="community-title">Was Nutzer wiederholt berichten</h2>
-      <p>Zusammengefasste Muster aus mehreren Quellen, keine einzelnen Rezensionen.</p>
-      {insights?.sourcePlatforms?.length > 0 && <small>Ausgewertete Plattformen: {[...new Set(insights.sourcePlatforms)].join(" · ")}</small>}
-    </header>
-
-    <div class="community__grid">
+    <header><span>Community-Erfahrungen</span><h2 id="community-title">Was Nutzer wiederholt berichten</h2><p>Verdichtete Muster aus mehreren Quellen, keine einzelnen Rezensionen.</p></header>
+    <div class="community__groups">
       {positives.length > 0 && (
-        <article class="is-positive">
-          <h3>Häufig positiv erwähnt</h3>
-          <ul>
-            {positives.map((item) => (
-              <li>
-                <strong>{item.text}</strong>
-                <small>
-                  {item.sourceCount ? `${item.sourceCount} Quellen · ` : ""}
-                  {item.confidence ? confidenceLabel[item.confidence] : "redaktionell geprüft"}
-                </small>
-              </li>
-            ))}
-          </ul>
-        </article>
+        <section class="community__group is-positive" aria-labelledby="community-positive">
+          <h3 id="community-positive"><span aria-hidden="true">+</span>Häufig positiv</h3>
+          <ul>{positives.map((item) => <li><strong>{item.text}</strong><small>{item.sourceCount ? `${item.sourceCount} Quellen` : "Mehrere Quellen"}{item.confidence ? ` · ${confidenceLabel[item.confidence]}` : ""}</small></li>)}</ul>
+        </section>
       )}
-
       {negatives.length > 0 && (
-        <article class="is-negative">
-          <h3>Häufig kritisiert</h3>
-          <ul>
-            {negatives.map((item) => (
-              <li>
-                <strong>{item.text}</strong>
-                <small>
-                  {item.sourceCount ? `${item.sourceCount} Quellen · ` : ""}
-                  {item.confidence ? confidenceLabel[item.confidence] : "redaktionell geprüft"}
-                </small>
-                {item.assessment && <p>{item.assessment}</p>}
-              </li>
-            ))}
-          </ul>
-        </article>
+        <section class="community__group is-negative" aria-labelledby="community-negative">
+          <h3 id="community-negative"><span aria-hidden="true">−</span>Häufig kritisch</h3>
+          <ul>{negatives.map((item) => <li><strong>{item.text}</strong><small>{item.sourceCount ? `${item.sourceCount} Quellen` : "Mehrere Quellen"}{item.confidence ? ` · ${confidenceLabel[item.confidence]}` : ""}</small>{item.assessment && <p>{item.assessment}</p>}</li>)}</ul>
+        </section>
       )}
     </div>
-
-    {insights?.editorialAssessment && (
-      <aside>
-        <strong>Redaktionelle Einordnung</strong>
-        <p>{insights.editorialAssessment}</p>
-      </aside>
+    {(insights?.editorialAssessment || platforms.length > 0) && (
+      <footer class="community__footer">
+        {insights?.editorialAssessment && <p><strong>Einordnung:</strong> {insights.editorialAssessment}</p>}
+        {platforms.length > 0 && <small>Ausgewertet: {platforms.join(" · ")}</small>}
+      </footer>
     )}
   </section>
 )}
 
 <style>
-  .community {
-    display: grid;
-    gap: 14px;
-    padding: 16px;
-    border: 1px solid var(--px2-border);
-    border-radius: 20px;
-    background: var(--px2-surface);
-    box-shadow: var(--px2-shadow);
-  }
-
-  .community header span {
-    color: var(--px2-accent-text);
-    font-size: .74rem;
-    font-weight: 850;
-    letter-spacing: .07em;
-    text-transform: uppercase;
-  }
-
-  .community h2 {
-    margin: 5px 0 5px;
-    font-size: clamp(1.4rem, 6vw, 2rem);
-  }
-
-  .community header p {
-    margin: 0;
-    color: var(--px2-muted);
-    font-size: .88rem;
-    line-height: 1.45;
-  }
-
-  .community__grid {
-    display: grid;
-    gap: 10px;
-  }
-
-  .community article {
-    min-width: 0;
-    padding: 14px;
-    border: 1px solid var(--px2-border);
-    border-radius: 15px;
-  }
-
-  .community article.is-positive {
-    background: var(--px2-green-soft);
-  }
-
-  .community article.is-negative {
-    background: var(--px2-red-soft);
-  }
-
-  .community h3 {
-    margin: 0 0 10px;
-    font-size: 1rem;
-  }
-
-  .community ul {
-    display: grid;
-    gap: 11px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .community li {
-    display: grid;
-    gap: 2px;
-  }
-
-  .community li strong {
-    font-size: .9rem;
-    line-height: 1.42;
-  }
-
-  .community li small {
-    color: var(--px2-muted);
-    font-size: .75rem;
-  }
-
-  .community li p {
-    margin: 5px 0 0;
-    color: var(--px2-muted);
-    font-size: .84rem;
-    line-height: 1.45;
-  }
-
-  .community > aside {
-    padding: 13px 14px;
-    border-left: 4px solid var(--px2-indigo);
-    border-radius: 0 13px 13px 0;
-    background: var(--px2-surface-soft);
-  }
-
-  .community > aside p {
-    margin: 5px 0 0;
-    color: var(--px2-muted);
-    line-height: 1.52;
-  }
-
-  @media (min-width: 720px) {
-    .community {
-      padding: 22px;
-    }
-
-    .community__grid {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
+  .community { display:grid; gap:14px; padding:16px; border:1px solid var(--px2-border); border-radius:20px; background:var(--px2-surface); }
+  .community header > span { color:var(--px2-accent-text); font-size:.72rem; font-weight:850; letter-spacing:.07em; text-transform:uppercase; }
+  .community h2 { margin:4px 0 3px; font-size:clamp(1.35rem,5.4vw,1.9rem); letter-spacing:-.025em; }
+  .community header p { margin:0; color:var(--px2-muted); font-size:.84rem; line-height:1.45; }
+  .community__groups { display:grid; gap:1px; overflow:clip; border:1px solid var(--px2-border); border-radius:15px; background:var(--px2-border); }
+  .community__group { display:grid; gap:9px; padding:13px 14px; background:var(--px2-surface-raised); }
+  .community__group h3 { display:flex; gap:7px; align-items:center; margin:0; font-size:.9rem; }
+  .community__group h3 span { display:grid; width:1.3rem; height:1.3rem; place-items:center; border-radius:999px; font-size:.82rem; font-weight:900; }
+  .community__group.is-positive h3 span { background:var(--px2-green-soft); color:var(--px2-accent-text); }
+  .community__group.is-negative h3 span { background:var(--px2-red-soft); color:var(--px2-red); }
+  .community__group ul { display:grid; gap:9px; margin:0; padding:0; list-style:none; }
+  .community__group li { display:grid; gap:2px; padding-top:9px; border-top:1px solid var(--px2-border); }
+  .community__group li:first-child { padding-top:0; border-top:0; }
+  .community__group li strong { font-size:.88rem; line-height:1.42; }
+  .community__group li small { color:var(--px2-muted); font-size:.73rem; }
+  .community__group li p { margin:3px 0 0; color:var(--px2-muted); font-size:.8rem; line-height:1.45; }
+  .community__footer { display:grid; gap:5px; padding-top:2px; }
+  .community__footer p { margin:0; color:var(--px2-muted); font-size:.82rem; line-height:1.5; }
+  .community__footer p strong { color:var(--px2-text); }
+  .community__footer small { color:var(--px2-muted); font-size:.72rem; }
+  @media (min-width:720px) { .community { padding:20px; } .community__groups { grid-template-columns:1fr 1fr; } }
 </style>

@@ -62,7 +62,12 @@ const implicationFor = (
     if (["nein", "kein", "ohne", "nicht vorhanden", "nicht vorgesehen"].some((term) => normalizedValue.includes(term))) {
       return "Kein integrierter Akku: Ohne Netzstrom läuft das Gerät nur weiter, wenn eine separate Batterie- oder Notstromlösung ausdrücklich vorgesehen ist.";
     }
-    return "Ein integrierter Akku erlaubt einen flexibleren Standort. Laufzeit, Ladezeit und Verhalten während des Ladens bleiben dabei kaufentscheidend.";
+
+    if (normalizedCategory.includes("gps") || normalizedCategory.includes("tracker")) {
+      return "Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert.";
+    }
+
+    return "Ein integrierter Akku ermöglicht Betrieb ohne permanente Stromverbindung. Entscheidend bleiben reale Laufzeit, Ladezeit und die Nutzung während des Ladens.";
   }
 
   if (key.includes("batterie") || key.includes("notstrom")) {
