@@ -93,6 +93,41 @@ ratings:
   zuverlaessigkeit: 4
   sicherheit: 3.65
   preisleistung: 4
+externalEvidence:
+  professionalReviews:
+    - publisher: "Cats.com"
+      title: "Cat Mate C500 Automatic Pet Feeder Review"
+      url: "https://cats.com/cat-mate-c500-automatic-pet-feeder-review"
+      checkedAt: "2026-08-10"
+      methodology: "hands-on"
+      positives:
+        - "Mehrwöchiger Test bestätigt die einfache Grundfunktion für zeitgesteuerte Mahlzeiten."
+      negatives:
+        - "Kühlakkus sind nur eine zeitlich begrenzte Kühlhilfe und keine aktive Kühlung."
+      findings:
+        - "Cats.com testete den C500 über mehrere Wochen mit Katzen."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/cat-mate-c500-digital-5-meal/product-reviews/154555"
+      checkedAt: "2026-08-10"
+      rating: 4.0
+      scale: 5
+      reviewCount: 407
+      recurringPositives:
+        - "Einfache Zeitsteuerung und Eignung für Nassfutter werden häufig positiv bewertet."
+      recurringCriticism:
+        - "Einzelne Nutzer berichten von blockierten oder nicht korrekt weiterdrehenden Schalen."
+  consensus:
+    strengths:
+      - finding: "Der C500 ist eine einfache Lösung für mehrere zeitversetzte Mahlzeiten ohne App-Abhängigkeit."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "Die Kühlung durch Akkus ist begrenzt und ersetzt keine aktive Kühlung."
+        sourceCount: 2
+        confidence: "high"
+    editorialAssessment: >-
+      Der C500 punktet mit Einfachheit und Nassfuttertauglichkeit, bleibt bei Kühlung technisch simpel.
 decision:
   bestFor:
     - eine bis zwei Katzen

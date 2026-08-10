@@ -91,6 +91,42 @@ ratings:
   lautstaerke: 4
   smartfunktionen: 4.2
   preisleistung: 3.7
+externalEvidence:
+  professionalReviews:
+    - publisher: "WIRED"
+      title: "The 21 Best Early Amazon Pet Day Deals"
+      url: "https://www.wired.com/story/amazon-pet-day-deals"
+      publishedAt: "2025-05-09"
+      checkedAt: "2026-08-10"
+      methodology: "editorial-review"
+      positives:
+        - "RFID ermöglicht individuelle Trinkprotokolle in Mehrkatzenhaushalten."
+      negatives:
+        - "Für die individuelle Zuordnung muss die Katze den RFID-Anhänger tragen."
+      findings:
+        - "WIRED ordnet die RFID-Version als besonders interessant für Monitoringbedarf ein."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/petlibro-dockstream-rfid-smart/product-reviews/1311742"
+      checkedAt: "2026-08-10"
+      rating: 3.5
+      scale: 5
+      reviewCount: 33
+      recurringPositives:
+        - "Sehr leiser Betrieb und individuelles Monitoring werden positiv hervorgehoben."
+      recurringCriticism:
+        - "Einzelne Nutzer berichten von Zuverlässigkeits- oder Erkennungsproblemen."
+  consensus:
+    strengths:
+      - finding: "Individuelles RFID-Trinktracking ist der klare Mehrwert gegenüber normalen Smart-Fountains."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "Das System ist vom RFID-Anhänger und korrekter Erkennung abhängig."
+        sourceCount: 1
+        confidence: "medium"
+    editorialAssessment: >-
+      Das Monitoring-Konzept ist stark; Zuverlässigkeit und Tag-Akzeptanz bleiben wichtige Prüfpunkte.
 decision:
   bestFor:
     - Mehrkatzenhaushalte

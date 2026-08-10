@@ -1,0 +1,15 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import path from "node:path";
+import test from "node:test";
+import { fileURLToPath } from "node:url";
+const app=path.resolve(path.dirname(fileURLToPath(import.meta.url)),"..");
+const read=(r)=>fs.readFileSync(path.join(app,r),"utf8");
+const audit=read("scripts/product-evidence/audit.mjs"), queue=read("scripts/product-evidence/research-queue.mjs");
+test("Audit erkennt missing partial complete",()=>{for(const s of ["missing","partial","complete"])assert.match(audit,new RegExp(s));assert.match(audit,/finding/);});
+test("Queue nutzt nur GSC",()=>{assert.match(queue,/gsc-dashboard-ranges\.json/);assert.doesNotMatch(queue,/search-dashboard-ranges\.json|bing-dashboard/);});
+test("Complete fliegt aus Queue",()=>assert.match(queue,/evidence\.status!=="complete"/));
+test("Confidence dämpft kleine Datenmengen",()=>{for(const n of [20,10,6,3,1])assert.match(queue,new RegExp("i>="+n));assert.match(queue,/searchBase\*cf/);});
+test("Partial ergänzt nur fehlende Bausteine",()=>{assert.match(queue,/Ergänze ausschließlich die fehlenden Evidence-Bausteine/);assert.match(queue,/nicht ersetzen oder doppeln/);});
+test("Research schützt Scores und Claims",()=>{assert.match(queue,/PfotenTechnik-Score/);assert.match(queue,/Keine eigenen Tests/);assert.match(queue,/Herstellerquellen/);assert.match(queue,/Widersprüche/);});
+test("bestehende drei Batches bleiben vorhanden",()=>{for(const r of ["test/external-evidence-batch-1-33.6.0.test.mjs","test/external-evidence-batch-2-33.6.1.test.mjs","test/external-evidence-batch-3-33.6.2.test.mjs"])assert.ok(fs.existsSync(path.join(app,r)));});

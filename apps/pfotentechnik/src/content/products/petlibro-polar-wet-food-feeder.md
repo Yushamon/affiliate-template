@@ -98,6 +98,57 @@ ratings:
   zuverlaessigkeit: 4
   sicherheit: 4.4
   preisleistung: 3.7
+externalEvidence:
+  professionalReviews:
+    - publisher: "Reviewed"
+      title: "Petlibro Polar Wet Food Feeder Review"
+      url: "https://www.reviewed.com/pets/content/petlibro-polar-wet-food-feeder-high-tech-mealtime"
+      publishedAt: "2024-07-23"
+      checkedAt: "2026-08-10"
+      methodology: "hands-on"
+      positives:
+        - "Einrichtung und Bedienung wurden im Praxistest als unkompliziert beschrieben."
+        - "Die aktive Kühlung löst das zentrale Frischeproblem von Nassfutter ohne wechselnde Kühlakkus."
+      negatives:
+        - "Das Gerät benötigt relativ viel Stellfläche."
+        - "Es bietet nur wenige vorbereitete Mahlzeiten."
+      findings:
+        - "Reviewed bewertete das Gerät im realen Einsatz mit Nassfutter."
+    - publisher: "Cats.com"
+      title: "Petlibro Polar Wet Food Feeder Review"
+      url: "https://cats.com/petlibro-polar-wet-food-feeder-review"
+      checkedAt: "2026-08-10"
+      methodology: "hands-on"
+      positives:
+        - "Mehrwöchiger Einsatz mit Katzen bestätigte den praktischen Nutzen für geplante Nassfuttermahlzeiten."
+      negatives:
+        - "Reinigung und Preis wurden schwächer bewertet als der Kernnutzen."
+      findings:
+        - "Cats.com testete den Polar über mehrere Wochen."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/petlibro-polar-automatic-smart-dog/product-reviews/1311726"
+      checkedAt: "2026-08-10"
+      rating: 3.9
+      scale: 5
+      reviewCount: 153
+      recurringPositives:
+        - "Kühlung und geplante frische Mahlzeiten werden häufig als Hauptnutzen genannt."
+      recurringCriticism:
+        - "Einzelne Berichte nennen Probleme mit Kühlung oder Software."
+  consensus:
+    strengths:
+      - finding: "Aktive Kühlung ist der klar belegte Kernvorteil gegenüber einfachen Kühlakku-Lösungen."
+        sourceCount: 3
+        confidence: "high"
+    weaknesses:
+      - finding: "Platzbedarf und begrenzte Mahlzeitenzahl schränken die Flexibilität ein."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Die unabhängigen Praxistests stützen den Kernnutzen der aktiven Kühlung deutlich.
+  note: >-
+    Externe Ratings bleiben von der redaktionellen PfotenTechnik-Bewertung getrennt.
 decision:
   bestFor:
     - Katzen und kleine Hunde mit Nassfutter

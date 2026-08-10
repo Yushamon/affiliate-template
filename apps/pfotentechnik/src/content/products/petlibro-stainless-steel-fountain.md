@@ -92,6 +92,41 @@ ratings:
   lautstaerke: 3.85
   smartfunktionen: 2.85
   preisleistung: 3.9
+externalEvidence:
+  professionalReviews:
+    - publisher: "Cat Food Dispensers Reviews"
+      title: "Petlibro Stainless Steel Cat Water Fountain Review"
+      url: "https://www.catfooddispensersreviews.com/petlibro-stainless-steel-cat-water-fountain-review/"
+      checkedAt: "2026-08-10"
+      methodology: "hands-on"
+      positives:
+        - "Stabile Edelstahlkonstruktion und kompakte Größe wurden positiv bewertet."
+      negatives:
+        - "Pumpe und Kunststoffteile bleiben wartungsrelevant."
+      findings:
+        - "Der Review beschreibt Material, Aufbau und Nutzung im Alltag."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/petlibro-stainless-steel-dog-cat/product-reviews/1391262"
+      checkedAt: "2026-08-10"
+      rating: 4.0
+      scale: 5
+      reviewCount: 2388
+      recurringPositives:
+        - "Leiser Betrieb, Edelstahloberfläche und gute Akzeptanz werden häufig genannt."
+      recurringCriticism:
+        - "Pumpenausfälle und schwer zugängliche Reinigungsbereiche werden wiederholt kritisiert."
+  consensus:
+    strengths:
+      - finding: "Edelstahl-Trinkfläche, leiser Betrieb und gute Tierakzeptanz sind die am besten gestützten Stärken."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "Pumpe und kleinere Kunststoffkomponenten bleiben die wichtigsten Wartungsrisiken."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Die große Nutzerbasis stützt die positiven Alltagssignale, zeigt aber ein relevantes Pumpenrisiko.
 decision:
   bestFor:
     - Katzen

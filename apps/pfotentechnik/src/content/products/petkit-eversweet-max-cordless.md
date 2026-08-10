@@ -90,6 +90,42 @@ ratings:
   reinigung: 3.9
   lautstaerke: 4.05
   preisleistung: 3.85
+externalEvidence:
+  professionalReviews:
+    - publisher: "WIRED"
+      title: "My Cat's Favorite Pet Fountain Is on Sale Right Now"
+      url: "https://www.wired.com/story/petkit-eversweet-max-prime-big-deal-day-deal"
+      publishedAt: "2025-10-08"
+      checkedAt: "2026-08-10"
+      methodology: "hands-on"
+      positives:
+        - "Kabelloser Betrieb, Edelstahl-Trinkfläche und App-Protokollierung werden positiv hervorgehoben."
+      negatives:
+        - "Der Wasserstand wird in der App nicht direkt angezeigt."
+      findings:
+        - "WIRED beschreibt den Eversweet Max als im eigenen Haushalt getesteten Brunnen."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/petkit-eversweet-max-stainless-steel/product-reviews/1351358"
+      checkedAt: "2026-08-10"
+      rating: 4.4
+      scale: 5
+      reviewCount: 32
+      recurringPositives:
+        - "Leiser Betrieb und einfache Reinigung werden wiederholt gelobt."
+      recurringCriticism:
+        - "Einrichtung, App-Verbindung und Sensoranzeigen bereiten einzelnen Nutzern Probleme."
+  consensus:
+    strengths:
+      - finding: "Sehr leiser Betrieb und flexible kabellose Aufstellung gehören zu den am besten gestützten Vorteilen."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "App-Einrichtung und Sensorik können im Einzelfall erklärungsbedürftig sein."
+        sourceCount: 1
+        confidence: "medium"
+    editorialAssessment: >-
+      Hands-on-Eindruck und Nutzerfeedback passen beim leisen Betrieb und der flexiblen Aufstellung gut zusammen.
 decision:
   bestFor:
     - Katzen und kleine Hunde

@@ -92,6 +92,27 @@ ratings:
   preisleistung: 3.9
   reinigung: 4.6
   nassfutter: 4.8
+externalEvidence:
+  professionalReviews: []
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/petsafe-freshfeed-refrigerated-dog/product-reviews/3967438"
+      checkedAt: "2026-08-10"
+      rating: 4.5
+      scale: 5
+      reviewCount: 31
+      recurringPositives:
+        - "Aktive Kühlung, App-Einrichtung und planbare Mahlzeiten werden häufig positiv beschrieben."
+      recurringCriticism:
+        - "Viele Rezensionen stammen aus kostenlos bereitgestellten Produkttests und sind vorsichtig zu gewichten."
+        - "Hohe Bauform und schmale Näpfe können für manche Katzen unpassend sein."
+  consensus:
+    strengths: []
+    weaknesses: []
+    editorialAssessment: >-
+      Die frühe Nutzerbasis ist überwiegend positiv, enthält aber viele incentivierte Bewertungen. Ohne unabhängigen Praxistest wird noch kein Mehrquellen-Konsens abgeleitet.
+  note: >-
+    Teil-Evidenz. Die Nutzerquelle wird wegen des hohen Anteils kostenlos bereitgestellter Testprodukte vorsichtig gewichtet.
 decision:
   bestFor:
     - Katzen und kleine Hunde

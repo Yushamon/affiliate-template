@@ -93,6 +93,27 @@ ratings:
   reinigung: 3.5
   zuverlässigkeit: 3.7
   preisleistung: 4.1
+externalEvidence:
+  professionalReviews:
+    - publisher: "WIRED"
+      title: "These 11 Automatic Cat Feeders Were the Best We Tested in 2026"
+      url: "https://www.wired.com/gallery/best-automatic-cat-feeders/"
+      checkedAt: "2026-08-10"
+      methodology: "hands-on"
+      positives:
+        - "WIRED beschreibt das Modell nach eigenem Test als einfach, zuverlässig und preiswert."
+      negatives:
+        - "Futter und Wasser stehen konstruktionsbedingt sehr nah beieinander."
+      findings:
+        - "Das Gerät eignet sich laut WIRED vor allem als einfache, platzsparende Lösung."
+  userReviews: []
+  consensus:
+    strengths: []
+    weaknesses: []
+    editorialAssessment: >-
+      Der unabhängige WIRED-Test ist belastbar, eine ausreichend große unabhängige Nutzerbasis fehlt noch.
+  note: >-
+    Teil-Evidenz. Herstellerangaben werden nur als Spezifikation genutzt, nicht als unabhängige Bewertung.
 decision:
   bestFor:
     - eine Katze mit Trockenfutter

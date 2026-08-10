@@ -89,6 +89,53 @@ ratings:
   zuverlaessigkeit: 3.95
   sicherheit: 4.3
   preisleistung: 3.35
+externalEvidence:
+  professionalReviews:
+    - publisher: "Expert Reviews"
+      title: "SureFeed Microchip Pet Feeder Connect review"
+      url: "https://www.expertreviews.co.uk/archived/surefeed-microchip-pet-feeder-connect-review"
+      publishedAt: "2019-05-30"
+      checkedAt: "2026-08-10"
+      methodology: "hands-on"
+      positives:
+        - "Futtermenge und Fressverhalten lassen sich pro Tier nachvollziehen."
+      negatives:
+        - "Angewöhnung kann dauern und die Kosten steigen im Mehrtierhaushalt."
+      findings:
+        - "Der Review bewertet die Connect-Funktionen einschließlich Waage, Hub und App."
+    - publisher: "Tech Advisor"
+      title: "Sure Petcare Microchip Pet Feeder review"
+      url: "https://www.techadvisor.com/article/720358/sure-petcare-microchip-pet-feeder-review.html"
+      checkedAt: "2026-08-10"
+      methodology: "hands-on"
+      positives:
+        - "Mikrochip-Zugang verhindert im Test Futterdiebstahl zwischen Katzen."
+      negatives:
+        - "Für Connect-Funktionen ist ein zusätzlicher Hub nötig."
+      findings:
+        - "Der Test erfolgte im Mehrkatzen-Haushalt."
+  userReviews:
+    - platform: "Zooplus UK"
+      url: "https://www.zooplus.co.uk/feedback/shop/cats/cat_bowls_feeders/feeders/programmable/761816"
+      checkedAt: "2026-08-10"
+      rating: 3.2
+      scale: 5
+      reviewCount: 10
+      recurringPositives:
+        - "Selektive Fütterung und App-Protokollierung werden bei funktionierenden Geräten gelobt."
+      recurringCriticism:
+        - "Mehrere Berichte nennen Defekte an Öffnungsmechanik oder Batteriekontakten."
+  consensus:
+    strengths:
+      - finding: "Selektiver Mikrochip-Zugang und individuelle Futterprotokollierung lösen reale Mehrtierprobleme."
+        sourceCount: 3
+        confidence: "high"
+    weaknesses:
+      - finding: "Preis, Hub-Abhängigkeit und Zusatzkosten sind klare Nachteile."
+        sourceCount: 3
+        confidence: "high"
+    editorialAssessment: >-
+      Die professionellen Tests stützen die Kernfunktion deutlich; Haltbarkeitsberichte werden vorsichtig gewichtet.
 decision:
   bestFor:
     - katze

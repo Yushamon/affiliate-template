@@ -98,6 +98,26 @@ ratings:
   smartfunktionen: 4.5
   tiererkennung: 3.8
   preisleistung: 3.6
+externalEvidence:
+  professionalReviews: []
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/petkit-ever-sweet-ultra-automatic/product-reviews/4452958"
+      checkedAt: "2026-08-10"
+      rating: 4.3
+      scale: 5
+      reviewCount: 4
+      recurringPositives:
+        - "Reinigungskonzept und reduzierte Filterwartung werden positiv hervorgehoben."
+      recurringCriticism:
+        - "Die kleine Stichprobe enthält Kritik an App-Abhängigkeit und Bedienung."
+  consensus:
+    strengths: []
+    weaknesses: []
+    editorialAssessment: >-
+      Die vorhandene Nutzerstichprobe ist zu klein für belastbaren Konsens.
+  note: >-
+    Teil-Evidenz. Zum Prüfzeitpunkt liegt keine ausreichend belastbare unabhängige Hands-on-Review des konkreten Modells vor.
 decision:
   bestFor:
     - Mehrkatzenhaushalte mit individueller Trinkauswertung

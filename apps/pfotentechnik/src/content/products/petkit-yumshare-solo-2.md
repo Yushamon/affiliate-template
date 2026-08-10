@@ -102,6 +102,17 @@ ratings:
   preisleistung: 3.85
   reinigung: 4
   kamera: 4.2
+externalEvidence:
+  professionalReviews: []
+  userReviews: []
+  consensus:
+    strengths: []
+    weaknesses: []
+    editorialAssessment: >-
+      Für das konkrete Modell YumShare Solo 2 ist die unabhängige, modellgenaue Review-Lage zum Prüfzeitpunkt noch zu dünn.
+      Bewertungen und Tests des älteren YumShare Solo werden nicht auf Solo 2 übertragen.
+  note: >-
+    Evidence-Gap bewusst dokumentiert. Externe Bewertungen des Vorgängers werden nicht als Solo-2-Evidenz verwendet.
 decision:
   bestFor:
     - Katzen und kleine Hunde mit Trockenfutter
