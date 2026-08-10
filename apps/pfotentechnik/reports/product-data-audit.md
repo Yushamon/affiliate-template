@@ -1,6 +1,6 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-08-08T09:51:34.089Z
+Erstellt: 2026-08-10T06:47:36.510Z
 
 ## Zusammenfassung
 

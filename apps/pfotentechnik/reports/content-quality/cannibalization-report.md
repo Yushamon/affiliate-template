@@ -1,6 +1,6 @@
 # Content-Quality- und Kannibalisierungsreport
 
-- Indexierbare Seiten: 227
+- Indexierbare Seiten: 230
 - Exakte Duplikate: 0
 - Near-Duplicates: 0
 - Offene Intent-Konflikte: 0
@@ -53,7 +53,7 @@
 - Intentionen: product-research ↔ product-research
 - Maßnahme: DIFFERENTIATE
 - Begründung: Standard- und XL-Variante besitzen unterschiedliche Größen- und Einsatzprofile.
-- Ähnlichkeit: 0.7471
+- Ähnlichkeit: 0.7607
 
 ## Audit-Befunde
 
@@ -62,5 +62,5 @@ Keine offenen Befunde.
 ## Entscheidungsmatrix
 
 - CONSOLIDATE: 2
-- KEEP: 227
-- NOINDEX: 90
+- KEEP: 230
+- NOINDEX: 92

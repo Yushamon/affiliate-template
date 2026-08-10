@@ -2,8 +2,8 @@
 
 Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus den Quelldateien.
 
-- Indexierbare Seiten: 227
-- Gerenderte HTML-Seiten insgesamt: 317
+- Indexierbare Seiten: 230
+- Gerenderte HTML-Seiten insgesamt: 322
 - Cluster: 17
 - Primäre Intent-Kategorien: 8
 - Harte Fehler: 0
@@ -20,30 +20,30 @@ Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus d
 - homepage: 1
 - knowledge-hub: 1
 - legal: 4
-- manufacturer: 25
+- manufacturer: 26
 - manufacturer-index: 1
 - medical-guide: 12
 - problem-solving-guide: 16
-- product: 80
+- product: 82
 
 ## Suchintentionen
 
-- brand-navigation: 25
+- brand-navigation: 26
 - category-discovery: 9
 - commercial-investigation: 34
 - comparison: 28
 - informational: 23
 - medical-information: 14
 - problem-solving: 14
-- product-research: 80
+- product-research: 82
 
 ## Cluster
 
-- automatische-katzentoiletten: 5
+- automatische-katzentoiletten: 7
 - futterautomaten: 82
 - gps-tracker: 26
-- haustierkameras: 4
-- hersteller: 20
+- haustierkameras: 5
+- hersteller: 21
 - hundeernaehrung: 3
 - hundegesundheit: 4
 - katzen-und-hundespezifische-hardware: 1
@@ -52,7 +52,7 @@ Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus d
 - katzenhaltung: 1
 - katzenklappen: 13
 - katzenverhalten: 1
-- smarte-haustiertechnik: 14
+- smarte-haustiertechnik: 13
 - tierbeschaeftigung: 1
 - tierernaehrung: 1
 - trinkbrunnen: 49
