@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-08-10T06:47:35.177Z",
+    "generatedAt": "2026-08-10T07:43:09.035Z",
     "countsByCollection": {
       "pages": 82,
       "products": 82,
@@ -33,7 +33,7 @@
     "routes": 240,
     "findings": {
       "error": 0,
-      "warning": 10,
+      "warning": 9,
       "info": 54
     }
   },
@@ -67,12 +67,6 @@
       "area": "maintainability",
       "message": "Sehr große Datei mit 1079 Zeilen",
       "file": "src/content/pages/katze-trinkt-viel.md"
-    },
-    {
-      "severity": "warning",
-      "area": "maintainability",
-      "message": "Sehr große Datei mit 1010 Zeilen",
-      "file": "src/content/pages/smarte-futterautomaten.md"
     },
     {
       "severity": "warning",

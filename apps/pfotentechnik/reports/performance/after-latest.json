@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-10T06:49:02.317Z",
+  "generatedAt": "2026-08-10T07:44:19.900Z",
   "mode": "strict",
   "status": "error",
   "environment": {
@@ -102,8 +102,8 @@
       "category": "home",
       "label": "Startseite",
       "metrics": {
-        "htmlBytes": 63064,
-        "htmlBrotliBytes": 11441,
+        "htmlBytes": 63056,
+        "htmlBrotliBytes": 11470,
         "domNodes": 655,
         "domDepth": 13,
         "stylesheets": 3,
@@ -158,8 +158,8 @@
       "category": "comparison",
       "label": "Vergleich Futterautomaten",
       "metrics": {
-        "htmlBytes": 144222,
-        "htmlBrotliBytes": 23152,
+        "htmlBytes": 144176,
+        "htmlBrotliBytes": 23159,
         "domNodes": 1294,
         "domDepth": 16,
         "stylesheets": 4,
@@ -184,8 +184,8 @@
           "code": "PERF_HTML_TOO_LARGE",
           "severity": "warning",
           "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-          "message": "HTML-Budget überschritten: 144222 > 130000.",
-          "actual": 144222,
+          "message": "HTML-Budget überschritten: 144176 > 130000.",
+          "actual": 144176,
           "limit": 130000
         }
       ]
@@ -223,8 +223,8 @@
       "category": "product",
       "label": "Produktdetail",
       "metrics": {
-        "htmlBytes": 90189,
-        "htmlBrotliBytes": 16333,
+        "htmlBytes": 90174,
+        "htmlBrotliBytes": 16337,
         "domNodes": 732,
         "domDepth": 15,
         "stylesheets": 4,
@@ -249,8 +249,8 @@
           "code": "PERF_HTML_TOO_LARGE",
           "severity": "warning",
           "route": "/produkt/petlibro-granary-2-vision/",
-          "message": "HTML-Budget überschritten: 90189 > 90000.",
-          "actual": 90189,
+          "message": "HTML-Budget überschritten: 90174 > 90000.",
+          "actual": 90174,
           "limit": 90000
         }
       ]
@@ -260,8 +260,8 @@
       "category": "listing",
       "label": "Herstellerdetail",
       "metrics": {
-        "htmlBytes": 77117,
-        "htmlBrotliBytes": 14082,
+        "htmlBytes": 77112,
+        "htmlBrotliBytes": 14051,
         "domNodes": 639,
         "domDepth": 11,
         "stylesheets": 4,
@@ -316,9 +316,9 @@
       "category": "article",
       "label": "Cornerstone",
       "metrics": {
-        "htmlBytes": 133379,
-        "htmlBrotliBytes": 28571,
-        "domNodes": 1433,
+        "htmlBytes": 131282,
+        "htmlBrotliBytes": 28273,
+        "domNodes": 1403,
         "domDepth": 11,
         "stylesheets": 4,
         "cssBytes": 336844,
@@ -342,16 +342,16 @@
           "code": "PERF_HTML_TOO_LARGE",
           "severity": "warning",
           "route": "/smarte-futterautomaten/",
-          "message": "HTML-Budget überschritten: 133379 > 105000.",
-          "actual": 133379,
+          "message": "HTML-Budget überschritten: 131282 > 105000.",
+          "actual": 131282,
           "limit": 105000
         },
         {
           "code": "PERF_DOM_TOO_COMPLEX",
           "severity": "error",
           "route": "/smarte-futterautomaten/",
-          "message": "DOM-Budget überschritten: 1433 > 1400.",
-          "actual": 1433,
+          "message": "DOM-Budget überschritten: 1403 > 1400.",
+          "actual": 1403,
           "limit": 1400
         },
         {
@@ -443,32 +443,32 @@
       "code": "PERF_HTML_TOO_LARGE",
       "severity": "warning",
       "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-      "message": "HTML-Budget überschritten: 144222 > 130000.",
-      "actual": 144222,
+      "message": "HTML-Budget überschritten: 144176 > 130000.",
+      "actual": 144176,
       "limit": 130000
     },
     {
       "code": "PERF_HTML_TOO_LARGE",
       "severity": "warning",
       "route": "/produkt/petlibro-granary-2-vision/",
-      "message": "HTML-Budget überschritten: 90189 > 90000.",
-      "actual": 90189,
+      "message": "HTML-Budget überschritten: 90174 > 90000.",
+      "actual": 90174,
       "limit": 90000
     },
     {
       "code": "PERF_HTML_TOO_LARGE",
       "severity": "warning",
       "route": "/smarte-futterautomaten/",
-      "message": "HTML-Budget überschritten: 133379 > 105000.",
-      "actual": 133379,
+      "message": "HTML-Budget überschritten: 131282 > 105000.",
+      "actual": 131282,
       "limit": 105000
     },
     {
       "code": "PERF_DOM_TOO_COMPLEX",
       "severity": "error",
       "route": "/smarte-futterautomaten/",
-      "message": "DOM-Budget überschritten: 1433 > 1400.",
-      "actual": 1433,
+      "message": "DOM-Budget überschritten: 1403 > 1400.",
+      "actual": 1403,
       "limit": 1400
     },
     {

@@ -1,11 +1,101 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-08-10T06:47:39.337Z",
+  "generatedAt": "2026-08-10T07:43:13.273Z",
   "summary": {
-    "errors": 0,
+    "errors": 15,
     "warnings": 6
   },
   "findings": [
+    {
+      "severity": "error",
+      "code": "ANCHOR_TARGET_MISSING",
+      "anchor": "futterautomat für große hunde",
+      "target": "/vergleiche/futterautomat-fuer-grosse-hunde/"
+    },
+    {
+      "severity": "error",
+      "code": "ANCHOR_TARGET_MISSING",
+      "anchor": "futterautomaten für große hunde",
+      "target": "/vergleiche/futterautomat-fuer-grosse-hunde/"
+    },
+    {
+      "severity": "error",
+      "code": "ANCHOR_TARGET_MISSING",
+      "anchor": "katze trinkt viel",
+      "target": "/katze-trinkt-viel/"
+    },
+    {
+      "severity": "error",
+      "code": "ANCHOR_TARGET_MISSING",
+      "anchor": "katze trinkt zu viel",
+      "target": "/katze-trinkt-viel/"
+    },
+    {
+      "severity": "error",
+      "code": "ANCHOR_TARGET_MISSING",
+      "anchor": "hund trinkt viel",
+      "target": "/hund-trinkt-ploetzlich-viel/"
+    },
+    {
+      "severity": "error",
+      "code": "ANCHOR_TARGET_MISSING",
+      "anchor": "hund trinkt plötzlich viel",
+      "target": "/hund-trinkt-ploetzlich-viel/"
+    },
+    {
+      "severity": "error",
+      "code": "ANCHOR_TARGET_MISSING",
+      "anchor": "gps-tracker ohne abo",
+      "target": "/vergleiche/gps-tracker-ohne-abo/"
+    },
+    {
+      "severity": "error",
+      "code": "ANCHOR_TARGET_MISSING",
+      "anchor": "bluetooth-tag",
+      "target": "/gps-oder-bluetooth/"
+    },
+    {
+      "severity": "error",
+      "code": "ANCHOR_TARGET_MISSING",
+      "anchor": "gps-tracker oder bluetooth-tag",
+      "target": "/gps-oder-bluetooth/"
+    },
+    {
+      "severity": "error",
+      "code": "ANCHOR_TARGET_MISSING",
+      "anchor": "hund frisst zu schnell",
+      "target": "/hund-frisst-zu-schnell/"
+    },
+    {
+      "severity": "error",
+      "code": "ANCHOR_TARGET_MISSING",
+      "anchor": "futterautomat gegen schlingen",
+      "target": "/hund-frisst-zu-schnell/"
+    },
+    {
+      "severity": "error",
+      "code": "ANCHOR_TARGET_MISSING",
+      "anchor": "futterautomat mit kamera",
+      "target": "/vergleiche/beste-futterautomaten-mit-kamera/"
+    },
+    {
+      "severity": "error",
+      "code": "ANCHOR_TARGET_MISSING",
+      "anchor": "futterautomat ohne wlan",
+      "target": "/vergleiche/beste-futterautomaten-ohne-wlan/"
+    },
+    {
+      "severity": "error",
+      "code": "ANCHOR_TARGET_MISSING",
+      "anchor": "futterautomat für zwei katzen",
+      "target": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/"
+    },
+    {
+      "severity": "error",
+      "code": "ANCHOR_TARGET_MISSING",
+      "anchor": "futterautomat für nassfutter",
+      "target": "/vergleiche/beste-futterautomaten-fuer-nassfutter/"
+    },
     {
       "severity": "warning",
       "code": "ANCHOR_TARGET_UNRESOLVED",

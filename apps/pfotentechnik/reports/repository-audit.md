@@ -1,12 +1,12 @@
 # Pfotentechnik Repository Audit
 
-Erstellt: 2026-08-10T06:47:35.177Z
+Erstellt: 2026-08-10T07:43:09.035Z
 
 ## Zusammenfassung
 
 - Routen: 240
 - Fehler: 0
-- Warnungen: 10
+- Warnungen: 9
 - Hinweise: 54
 
 ## Content-Bestand
@@ -23,7 +23,6 @@ Erstellt: 2026-08-10T06:47:35.177Z
 - **WARNING · maintainability**: Sehr große Datei mit 1685 Zeilen (`src/content/pages/futterautomat-richtig-reinigen.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1494 Zeilen (`src/content/pages/katze-frisst-nicht.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1079 Zeilen (`src/content/pages/katze-trinkt-viel.md`)
-- **WARNING · maintainability**: Sehr große Datei mit 1010 Zeilen (`src/content/pages/smarte-futterautomaten.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1016 Zeilen (`src/content/pages/trockenfutter-oder-nassfutter-katze.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1037 Zeilen (`src/content/pages/wie-gross-sollte-ein-futterautomat-sein.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1198 Zeilen (`src/content/pages/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt.md`)
