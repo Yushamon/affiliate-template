@@ -83,7 +83,7 @@ externalEvidence:
       title: "OnlyCat Review: The AI Microchip Cat Flap That Stops Prey at the Door"
       url: "https://thatcatflapcompany.co.uk/blog/onlycat-microchip-cat-flap-with-prey-detection-review"
       checkedAt: "2026-08-11"
-      methodology: "editorial-product-review-commercial-installer"
+      methodology: "editorial-review"
       positives:
         - "Die Beuteerkennung wird als klarer Differenzierungsfaktor gegenüber klassischen Mikrochip-Klappen eingeordnet."
         - "App-Steuerung, Kamera und beidseitige Mikrochip-Erkennung werden als zusammenhängendes System bewertet."

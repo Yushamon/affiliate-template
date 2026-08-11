@@ -97,9 +97,7 @@ externalEvidence:
     - platform: "Desertcart"
       url: "https://www.desertcart.ae/products/772556800-oneisall-wireless-cat-water-fountain-for-drinking-2-2l-20db"
       checkedAt: "2026-08-11"
-      rating: null
       scale: 5
-      reviewCount: null
       recurringPositives:
         - "Mehrere Käufer loben sehr leisen Betrieb, einfache Reinigung, Sensorbetrieb und kabellose Nutzung."
       recurringCriticism:

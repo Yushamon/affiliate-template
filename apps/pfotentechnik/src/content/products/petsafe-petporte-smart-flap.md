@@ -80,7 +80,7 @@ externalEvidence:
       title: "PetSafe Petporte Smart Flap Microchip Cat Flap Review"
       url: "https://content.tailster.com/petsafe-petporte-smart-flap-review/"
       checkedAt: "2026-08-11"
-      methodology: "editorial-product-review"
+      methodology: "editorial-review"
       positives:
         - "Der Review bewertet Verarbeitung, Einrichtung sowie die Wahl zwischen Netz- und Batteriebetrieb positiv."
         - "Die flexible Vier-Wege-Steuerung und die hohe Zahl speicherbarer Chips werden als Pluspunkte genannt."

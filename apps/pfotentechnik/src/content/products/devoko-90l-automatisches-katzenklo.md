@@ -120,7 +120,9 @@ externalEvidence:
       recurringCriticism:
         - "Ein ausführlicher Langzeitbericht nennt wiederkehrende WLAN-Abbrüche, schwache App-Nutzung und Geruchsprobleme nach mehreren Monaten."
         - "Die Herkunft und Moderation der weitergereichten Marketplace-Bewertungen ist nicht so transparent wie bei einer direkten Händlerplattform."
-  consensus: []
+  consensus:
+    strengths: []
+    weaknesses: []
   constraintReason: >-
     Eine große Nutzerstichprobe ist auffindbar, aber keine belastbare unabhängige professionelle Review-Quelle des
     konkreten Devoko-90L-Modells. Deshalb wird kein Consensus konstruiert.

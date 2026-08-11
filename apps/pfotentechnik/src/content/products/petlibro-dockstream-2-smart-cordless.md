@@ -112,7 +112,7 @@ externalEvidence:
       title: "Petlibro Dockstream 2 Smart Cordless Water Fountain Review"
       url: "https://cats.com/petlibro-dockstream-2-smart-cordless-water-fountain-review"
       checkedAt: "2026-08-11"
-      methodology: "multi-week-hands-on-home-test"
+      methodology: "hands-on"
       positives:
         - "Der mehrwöchige Test lobt die sehr leise Arbeitsweise, den pumpenfreien Aufbau, die einfache Demontage und die App-basierte Trinküberwachung."
         - "Die kabellose Version behält Smart-Funktionen und bietet flexible Aufstellung."

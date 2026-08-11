@@ -97,7 +97,7 @@ externalEvidence:
       title: "PetSafe Healthy Pet Simply Feed Automatic Cat & Dog Feeder Review"
       url: "https://kittyclysm.com/petsafe-healthy-pet-simply-feed-automatic-feeder-review/"
       checkedAt: "2026-08-11"
-      methodology: "owner-hands-on-review"
+      methodology: "hands-on"
       positives:
         - "Der Autor berichtet nach mehr als einem Monat Nutzung von zuverlässiger automatischer Fütterung und guter Eignung für mehrere kleine Mahlzeiten."
         - "Die feine Portionierung und der große Vorrat werden als alltagstauglich beschrieben."

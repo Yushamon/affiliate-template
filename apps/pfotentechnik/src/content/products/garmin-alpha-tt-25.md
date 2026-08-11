@@ -96,7 +96,7 @@ externalEvidence:
       title: "Test Garmin Alpha TT 25"
       url: "https://www.chien-de-chasse.net/test-garmin-alpha-tt-25-gps-collier-de-suivi-et-dentrainement-pour-chiens"
       checkedAt: "2026-08-11"
-      methodology: "hands-on-editorial-review"
+      methodology: "hands-on"
       positives:
         - "Der Test beschreibt präzise GPS-Ortung, schnelle Aktualisierung und robuste Verarbeitung im Gelände."
         - "Akkulaufzeit und Trainingsoptionen werden für Arbeits- und Jagdhunde positiv bewertet."
@@ -114,7 +114,9 @@ externalEvidence:
       recurringPositives:
         - "Die einzige verfügbare Chewy-Rezension bestätigt vollständigen Lieferumfang und einfache Kopplung."
       recurringCriticism: []
-  consensus: []
+  consensus:
+    strengths: []
+    weaknesses: []
   constraintReason: >-
     Ein professioneller Test ist vorhanden, die direkt produktspezifische Nutzerbasis ist mit nur einer Bewertung aber
     zu klein für einen belastbaren Consensus.

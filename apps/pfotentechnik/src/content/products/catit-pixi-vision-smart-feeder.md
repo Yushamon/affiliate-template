@@ -101,7 +101,7 @@ externalEvidence:
       title: "Review: Catit PIXI Smart Products Make Life Easier (and Cuter!) for Cat Parents"
       url: "https://catingtonpost.com/review-catit-pixi-smart-products/"
       checkedAt: "2026-08-11"
-      methodology: "hands-on-editorial-review"
+      methodology: "hands-on"
       positives:
         - "Der Autor beschreibt eine einfache Einrichtung des PIXI Vision über die Catit-App."
         - "Kameraqualität und Nachtsicht werden im praktischen Einsatz ausdrücklich positiv bewertet."

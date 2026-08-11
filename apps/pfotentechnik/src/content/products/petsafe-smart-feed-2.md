@@ -96,7 +96,7 @@ externalEvidence:
       title: "PetSafe Smart Feed 2.0 review: The perfect feeder for busy pet parents"
       url: "https://www.tomsguide.com/reviews/petsafe-smart-feed"
       checkedAt: "2026-08-11"
-      methodology: "hands-on-editorial-review"
+      methodology: "hands-on"
       positives:
         - "Tom's Guide lobt einfache Bedienung, anpassbare Fütterungen und den großen Futterbehälter."
       negatives:

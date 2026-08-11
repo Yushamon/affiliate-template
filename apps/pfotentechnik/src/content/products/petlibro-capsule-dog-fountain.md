@@ -100,7 +100,7 @@ externalEvidence:
       title: "The Best Cat Water Fountains of 2026: Petlibro, Petkit, Oneisall"
       url: "https://www.wired.com/gallery/the-best-cat-water-fountains/"
       checkedAt: "2026-08-11"
-      methodology: "hands-on-home-testing"
+      methodology: "hands-on"
       positives:
         - "WIRED lobt den großen 8-Liter-Tank, den leisen Betrieb und den wirksamen Spritzschutz im Alltag mit zwei Hunden."
         - "Die transparente Seitenwand erleichtert die Kontrolle des Wasserstands."

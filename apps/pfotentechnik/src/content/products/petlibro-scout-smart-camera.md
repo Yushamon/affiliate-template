@@ -38,7 +38,7 @@ externalEvidence:
       title: "Petlibro Scout Smart Camera: Filled With Both Features and Kinks"
       url: "https://www.wired.com/review/petlibro-scout-smart-camera/"
       checkedAt: "2026-08-11"
-      methodology: "hands-on-editorial-review"
+      methodology: "hands-on"
       positives:
         - "Der Hands-on-Test lobt das klare 1080p-Bild, die intuitive App, flexible Montage und die automatische Schwenk- und Neigefunktion."
         - "Die Kamera kann mehrere Haustiere unterscheiden und Aufnahmen nach Tier und Aktivität organisieren."

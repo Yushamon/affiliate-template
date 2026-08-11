@@ -102,7 +102,7 @@ externalEvidence:
       title: "Best GPS Dog Collars of 2026"
       url: "https://www.treelinereview.com/gearreviews/best-gps-dog-collars"
       checkedAt: "2026-08-11"
-      methodology: "comparative-hands-on-testing"
+      methodology: "hands-on"
       positives:
         - "Im Vergleichstest hatte der Alpha T 20 die schnellste Verbindungsaufnahme der getesteten GPS-Halsbänder."
         - "Dynamische Aktualisierung und Off-grid-Funk machen das Modell besonders für weit laufende Arbeits- und Jagdhunde interessant."
@@ -125,7 +125,6 @@ externalEvidence:
     - platform: "Varuste.net · verifizierte Käufer"
       url: "https://varuste.net/en/tahdet.php?_id=125253"
       checkedAt: "2026-08-11"
-      rating: null
       scale: 5
       reviewCount: 18
       recurringPositives:

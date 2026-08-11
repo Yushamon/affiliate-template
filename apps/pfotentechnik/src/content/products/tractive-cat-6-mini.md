@@ -98,7 +98,7 @@ externalEvidence:
       title: "Tractive CAT 6 Mini im Test 2026: App-Sieger für Katzen"
       url: "https://gpstracker-tests.de/test/tractive-cat-mini/"
       checkedAt: "2026-08-11"
-      methodology: "14-day-hands-on-editorial-test"
+      methodology: "hands-on"
       positives:
         - "Der Test bewertet Ortungsgenauigkeit, App-Bedienung und Tragekomfort besonders stark."
         - "Live-Modus, Revierdarstellung sowie Ton- und Lichtfunktion werden als praktische Stärken eingeordnet."

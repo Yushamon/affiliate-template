@@ -112,7 +112,7 @@ externalEvidence:
       title: "Petlibro Trinkbrunnen Dockstream 2 im Praxistest"
       url: "https://www.petbook.de/katzen/katzenzubehoer/petlibro-dockstream-2-test"
       checkedAt: "2026-08-11"
-      methodology: "hands-on-editorial-review"
+      methodology: "hands-on"
       positives:
         - "Der Praxistest bewertet den Betrieb als sehr leise und die Trinkstatistik sowie Wartungserinnerungen als praktisch."
         - "Drei Liter Volumen und der grundsätzlich einfache Reinigungsaufbau werden positiv eingeordnet."

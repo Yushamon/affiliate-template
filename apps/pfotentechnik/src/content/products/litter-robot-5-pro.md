@@ -37,7 +37,7 @@ externalEvidence:
       title: "Litter-Robot 5 Pro Review: We Tested It"
       url: "https://cats.com/litter-robot-5-pro-review"
       checkedAt: "2026-08-11"
-      methodology: "three-week-hands-on-test-with-two-cats"
+      methodology: "hands-on"
       positives:
         - "Reinigungsleistung, Geruchskontrolle, Verarbeitung und Einrichtung werden im mehrwöchigen Test sehr positiv bewertet."
       negatives:
@@ -48,7 +48,7 @@ externalEvidence:
       title: "Is the Litter-Robot 5 Pro Worth It? I Reviewed It With My Cat"
       url: "https://www.goodhousekeeping.com/home-products/a69733299/litter-robot-5-review/"
       checkedAt: "2026-08-11"
-      methodology: "independent-editorial-home-test"
+      methodology: "editorial-review"
       positives:
         - "Komfort, automatische Reinigung und Monitoring-Funktionen werden positiv eingeordnet."
       negatives:

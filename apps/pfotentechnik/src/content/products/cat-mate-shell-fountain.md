@@ -103,7 +103,9 @@ externalEvidence:
         - "Einzelne Langzeitnutzer berichten von jahrelanger Nutzung und anschließendem Kauf desselben Modells."
       recurringCriticism:
         - "Der Wasserfluss wird vereinzelt als zu schwach oder nicht durchgehend gleichmäßig beschrieben."
-  consensus: []
+  consensus:
+    strengths: []
+    weaknesses: []
   researchStatus: "constrained"
   researchReason: >-
     Große produktspezifische Nutzerbasis vorhanden, aber zum Prüfzeitpunkt keine ausreichend belastbare unabhängige professionelle Reviewquelle für genau die Shell Pet Fountain.

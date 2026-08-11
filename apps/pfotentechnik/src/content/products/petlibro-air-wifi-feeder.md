@@ -107,7 +107,7 @@ externalEvidence:
       title: "The 10 Best Automatic Cat Feeders Tested With Real Cats"
       url: "https://www.thesprucepets.com/best-automatic-cat-feeders-4175145"
       checkedAt: "2026-08-11"
-      methodology: "lab-and-at-home-product-testing"
+      methodology: "lab-test"
       positives:
         - "Der AIR WiFi wurde nach Labor- und Heimtests wegen langer Akkulaufzeit, kompakter Bauform, nützlicher App und zuverlässiger Ausgabe sehr positiv bewertet."
         - "Die kabellose Aufstellung und die einfache Verwaltung mehrerer Geräte beziehungsweise Nutzer werden als klare Vorteile genannt."

@@ -102,7 +102,7 @@ externalEvidence:
       title: "Aqara Smart Pet Feeder C1"
       url: "https://www.testbericht.de/produkte/aqara-smart-pet-feeder-c1"
       checkedAt: "2026-08-11"
-      methodology: "professional-magazine-review-summary"
+      methodology: "editorial-review"
       positives:
         - "Die zusammengefasste c't-Einordnung beschreibt den C1 als eleganten und zuverlässigen Trockenfutterautomaten."
         - "Die Einbindung in das Aqara-Smart-Home wird als zentrale Stärke hervorgehoben."

@@ -80,7 +80,7 @@ externalEvidence:
       title: "PetSafe Microchip Cat Flap"
       url: "https://www.testbericht.de/produkte/petsafe-microchip-cat-flap"
       checkedAt: "2026-08-11"
-      methodology: "independent-comparative-test-reported-by-testbericht.de"
+      methodology: "editorial-review"
       positives:
         - "Der dokumentierte Test bewertet Anlernen, Zugangskontrolle und Bedienung sehr positiv."
         - "Die Klappe erreichte laut Testbericht.de in Haus & Garten Test 01/2026 Platz 1 von 3."

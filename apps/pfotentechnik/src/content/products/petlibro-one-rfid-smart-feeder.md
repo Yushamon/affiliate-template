@@ -106,7 +106,7 @@ externalEvidence:
       title: "These 11 Automatic Cat Feeders Were the Best We Tested in 2026"
       url: "https://www.wired.com/gallery/best-automatic-cat-feeders/"
       checkedAt: "2026-08-11"
-      methodology: "comparative hands-on"
+      methodology: "hands-on"
       positives:
         - "WIRED bewertet die taggesteuerte Zugangskontrolle als besonders sinnvoll bei Futterdiebstahl, Spezialdiäten und Mehrtierhaushalten."
         - "App-Zeitpläne und die automatische Abdeckung werden als zentrale praktische Funktionen hervorgehoben."

@@ -103,7 +103,7 @@ externalEvidence:
       title: "Sureflap Microchip Cat Flap Connect review: Keep tabs on tabbies"
       url: "https://www.expertreviews.co.uk/archived/sureflap-microchip-cat-flap-connect-review"
       checkedAt: "2026-08-11"
-      methodology: "hands-on-editorial-review"
+      methodology: "hands-on"
       positives:
         - "Der Review lobt App, Bewegungsprotokolle und Verarbeitungsqualität."
       negatives:

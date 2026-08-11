@@ -58,7 +58,7 @@ externalEvidence:
       title: "Sureflap Dual Scan Microchip Cat Flap Review"
       url: "https://content.tailster.com/sureflap-dualscan-microchip-cat-flap-review/"
       checkedAt: "2026-08-11"
-      methodology: "editorial-product-review"
+      methodology: "editorial-review"
       positives:
         - "Der Review hebt selektive Ein- und Ausgangsrechte sowie die höhere Sicherheit gegenüber der Standard-Version hervor."
         - "Programmierung, Verarbeitung und Preis-Leistung werden positiv bewertet."

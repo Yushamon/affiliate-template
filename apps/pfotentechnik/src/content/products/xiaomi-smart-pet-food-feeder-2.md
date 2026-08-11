@@ -101,7 +101,7 @@ externalEvidence:
       title: "TESTISSÄ: Xiaomi Smart Pet Food Feeder 2"
       url: "https://www.lbaanijakuva.fi/test/6-lemmikin-juoma-ja-ruoka-automaattia/xiaomi-smart-pet-food-feeder-2"
       checkedAt: "2026-08-11"
-      methodology: "editorial-product-test"
+      methodology: "editorial-review"
       positives:
         - "Der Test hebt Fütterungsplanung, integrierte Waage, Protokollierung und einfache Reinigung positiv hervor."
         - "Der Batteriebetrieb als Reserve bei Stromausfall wird als praktische Absicherung bewertet."

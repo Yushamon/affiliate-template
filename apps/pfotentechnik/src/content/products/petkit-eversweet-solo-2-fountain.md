@@ -98,7 +98,7 @@ externalEvidence:
       title: "Petkit Eversweet Solo 2 Review 2026"
       url: "https://availpet.com/petkit-eversweet-solo-2-review/"
       checkedAt: "2026-08-11"
-      methodology: "hands-on-editorial-review-with-veterinary-review"
+      methodology: "hands-on"
       positives:
         - "Sehr leiser Betrieb, einfache Reinigung und App-Hinweise zum Wasserstand werden positiv bewertet."
         - "Die drei Betriebsmodi werden als praktisch eingeordnet."

@@ -112,7 +112,7 @@ externalEvidence:
       title: "Sureflap Microchip Cat Flap Review"
       url: "https://content.tailster.com/sureflap-review/"
       checkedAt: "2026-08-11"
-      methodology: "editorial-product-review"
+      methodology: "editorial-review"
       positives:
         - "Der Review lobt einfache Programmierung, solide Konstruktion und guten Alltagsnutzen."
       negatives:

@@ -38,7 +38,7 @@ externalEvidence:
       title: "Review: Furbo 360 Dog Camera"
       url: "https://www.wired.com/review/furbo-360-dog-camera/"
       checkedAt: "2026-08-11"
-      methodology: "hands-on-editorial-review"
+      methodology: "hands-on"
       positives:
         - "360-Grad-Drehung und Auto Dog Tracking erweitern die Abdeckung gegenüber dem Vorgänger deutlich."
         - "1080p-Bild und Farbnachtsicht werden als klar und praktisch beschrieben."
@@ -51,7 +51,7 @@ externalEvidence:
       title: "Furbo 360 Dog camera review"
       url: "https://www.digitalcameraworld.com/reviews/furbo-360-dog-camera-review"
       checkedAt: "2026-08-11"
-      methodology: "hands-on-editorial-review"
+      methodology: "hands-on"
       positives:
         - "Bild, Audio, App-Bedienung und Funktionsumfang werden insgesamt positiv bewertet."
         - "Der Leckerliwerfer ist im passenden Größenbereich praktisch und unterhaltsam."
@@ -64,9 +64,7 @@ externalEvidence:
     - platform: "Trustpilot · Furbo markenweit"
       url: "https://www.trustpilot.com/review/furbo.com"
       checkedAt: "2026-08-11"
-      rating: null
       scale: 5
-      reviewCount: null
       recurringPositives:
         - "Aktuelle markenweite Rezensionen nennen 360-Ansicht, Treat-Tossing und das beruhigende Fernmonitoring positiv."
       recurringCriticism:

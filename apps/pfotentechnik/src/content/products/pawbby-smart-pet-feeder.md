@@ -94,7 +94,9 @@ ratings:
 externalEvidence:
   professionalReviews: []
   userReviews: []
-  consensus: []
+  consensus:
+    strengths: []
+    weaknesses: []
   researchStatus: "constrained"
   researchReason: >-
     Die auffindbaren Quellen vermischen PAWBBY Smart Pet Feeder, Xiaomi/Mijia XWPF01MG sowie Kamera- und Regionalvarianten. Ohne eindeutige Modellidentität wäre eine Übernahme von Reviews methodisch nicht belastbar.

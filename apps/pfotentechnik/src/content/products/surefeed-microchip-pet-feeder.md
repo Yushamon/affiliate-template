@@ -100,7 +100,7 @@ externalEvidence:
       title: "Sure Petcare Microchip Pet Feeder review"
       url: "https://www.techadvisor.com/article/720358/sure-petcare-microchip-pet-feeder-review.html"
       checkedAt: "2026-08-11"
-      methodology: "hands-on-editorial-review"
+      methodology: "hands-on"
       positives:
         - "Der Review bewertet die selektive Futterfreigabe für Mehrtierhaushalte als best-in-class."
         - "Das Gerät wird besonders für getrennte Diäten und Schutz vor Futterdiebstahl empfohlen."

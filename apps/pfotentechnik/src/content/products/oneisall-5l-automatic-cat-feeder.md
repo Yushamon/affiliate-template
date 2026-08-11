@@ -103,7 +103,7 @@ externalEvidence:
       title: "Oneisall Review 2026: Our Vet's Expert Opinion"
       url: "https://www.catster.com/lifestyle/oneisall-review/"
       checkedAt: "2026-08-11"
-      methodology: "hands-on-editorial-review"
+      methodology: "hands-on"
       positives:
         - "Der konkrete 5-Liter-Futterautomat wird für einfache Einrichtung, unkomplizierte Wartung und praxistaugliches Design gelobt."
         - "Die Redaktion bewertet Bedienbarkeit, Qualität, Design und Nutzwert sehr positiv."

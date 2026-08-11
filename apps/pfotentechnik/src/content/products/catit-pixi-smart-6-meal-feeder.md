@@ -104,7 +104,7 @@ externalEvidence:
       url: "https://meowinggoods.com/reviews/tech/catit-pixi-smart-fountain/"
       publishedAt: "2026-02-20"
       checkedAt: "2026-08-11"
-      methodology: "30-day hands-on"
+      methodology: "hands-on"
       positives:
         - "Im 30-Tage-Einsatz mit zwei Katzen wurden App-Zeitpläne und die rotierende Ausgabe überwiegend zuverlässig beschrieben."
         - "Die sechs Fächer und die Möglichkeit, Trocken- und Nassfutter zeitgesteuert bereitzustellen, wurden als alltagstauglich bewertet."

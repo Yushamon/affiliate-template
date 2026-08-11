@@ -102,7 +102,9 @@ externalEvidence:
   constrained: true
   professionalReviews: []
   userReviews: []
-  consensus: []
+  consensus:
+    strengths: []
+    weaknesses: []
   constraintReason: >-
     Für das konkrete Modell Cat Mate Pet Fountain 335 ließ sich im aktuellen Recherchelauf keine ausreichend belastbare
     Kombination aus unabhängigem professionellem Review und produktspezifischer Nutzerbasis verifizieren.

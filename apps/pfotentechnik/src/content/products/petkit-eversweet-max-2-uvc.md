@@ -101,7 +101,7 @@ externalEvidence:
       title: "PETKIT EverSweet Max 2 Review (2026): Is Cordless Convenience Worth the Premium?"
       url: "https://pettechai.com/petkit-eversweet-max-2-review/"
       checkedAt: "2026-08-11"
-      methodology: "research-led-editorial-review"
+      methodology: "editorial-review"
       positives:
         - "Kabellose Platzierung, drahtlose UVC-Pumpe und vereinfachte Reinigung werden als zentrale Vorteile eingeordnet."
       negatives:

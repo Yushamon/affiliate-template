@@ -107,7 +107,7 @@ externalEvidence:
       title: "PETKIT Fresh Element Infinity Review 2025"
       url: "https://pettechai.com/petkit-fresh-element-infinity-review-2025/"
       checkedAt: "2026-08-11"
-      methodology: "research-led-editorial-review"
+      methodology: "editorial-review"
       positives:
         - "Anti-Jam-Konzept, versiegelter Futterbehälter und Edelstahl-Napf werden als zentrale Stärken eingeordnet."
       negatives:

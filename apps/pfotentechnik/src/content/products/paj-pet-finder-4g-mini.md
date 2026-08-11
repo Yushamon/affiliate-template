@@ -99,7 +99,7 @@ externalEvidence:
       title: "PAJ PET Finder 4G Mini Test 2026"
       url: "https://gpstracker-tests.de/test/paj-pet-finder-4g-mini/"
       checkedAt: "2026-08-11"
-      methodology: "editorial-comparison-test"
+      methodology: "editorial-review"
       positives:
         - "Ortungsgenauigkeit, kompakte Bauform und Preis-Leistungs-Verhältnis werden positiv bewertet."
         - "Das integrierte LED-Licht wird als praktischer Zusatznutzen hervorgehoben."

@@ -124,7 +124,7 @@ externalEvidence:
       url: "https://www.chip.de/test/Weenect-XT-Hundetracker-im-Test_186575552.html"
       publishedAt: "2026-02-23"
       checkedAt: "2026-08-11"
-      methodology: "comparative hands-on"
+      methodology: "hands-on"
       positives:
         - "CHIP bewertet Tracking-Geschwindigkeit und Tracking-Genauigkeit im Praxistest jeweils mit sehr gut."
         - "Sitz am Halsband, weltweite Nutzung, Vibration und Ton werden als klare Stärken genannt."

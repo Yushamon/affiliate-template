@@ -38,7 +38,7 @@ externalEvidence:
       title: "Enabot Ebo Air 2 review: a companion robot that can keep an eye on your home, pets, and people"
       url: "https://www.digitalcameraworld.com/cameras/security-cameras/enabot-ebo-air-2-review"
       checkedAt: "2026-08-11"
-      methodology: "hands-on-editorial-review"
+      methodology: "hands-on"
       positives:
         - "Der mobile Fernzugriff und die Perspektive auf Bodenhöhe werden als praktisch für Haustiere und Heimüberwachung bewertet."
         - "Video- und Interaktionsfunktionen machen den EBO Air 2 zu mehr als einer stationären Kamera."

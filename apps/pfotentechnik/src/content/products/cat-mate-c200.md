@@ -101,7 +101,7 @@ externalEvidence:
       title: "Cat Mate C200 Wet Food Automatic Feeder Review"
       url: "https://www.reviewed.com/pets/content/cat-mate-c200-review-automatic-cat-feeder-wet-food"
       checkedAt: "2026-08-11"
-      methodology: "hands-on-editorial-review"
+      methodology: "hands-on"
       positives:
         - "Im persönlichen Einsatz löste der C200 zuverlässig die zeitversetzte Nassfutter-Fütterung."
         - "Die geschlossene Konstruktion wird als schwer von der Katze vorzeitig zu öffnen beschrieben."
@@ -114,7 +114,7 @@ externalEvidence:
       title: "The Best Automatic Cat Feeders Tested With Real Cats"
       url: "https://www.thesprucepets.com/best-automatic-cat-feeders-4175145"
       checkedAt: "2026-08-11"
-      methodology: "comparative-lab-and-home-testing"
+      methodology: "lab-test"
       positives:
         - "Der C200 wird als besonders portable Lösung für Nass- oder Trockenfutter eingeordnet."
         - "Batteriebetrieb, geringes Gewicht und die Möglichkeit für Kühlakkus werden positiv bewertet."

@@ -38,7 +38,7 @@ externalEvidence:
       title: "Selbstreinigendes Katzenklo Neakasa M1 Plus im Test: offen, smart und mit App"
       url: "https://www.heise.de/bestenlisten/testbericht/selbstreinigendes-katzenklo-neakasa-m1-plus-im-test-offen-smart-und-mit-app/m3dcek4"
       checkedAt: "2026-08-11"
-      methodology: "hands-on-editorial-test"
+      methodology: "hands-on"
       positives:
         - "Die Selbstreinigung arbeitet im Test zuverlässig; offene Bauform und App werden als Vorteile eingeordnet."
       negatives:

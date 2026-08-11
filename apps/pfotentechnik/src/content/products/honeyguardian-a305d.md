@@ -103,7 +103,9 @@ externalEvidence:
   constrained: true
   professionalReviews: []
   userReviews: []
-  consensus: []
+  consensus:
+    strengths: []
+    weaknesses: []
   constraintReason: >-
     Für die konkrete Modellbezeichnung HoneyGuardian A305D konnte im aktuellen Recherchelauf keine hinreichend sichere
     unabhängige Review- und Nutzerquellenkombination verifiziert werden. Ähnliche HoneyGuardian-Modelle und Marketplace-

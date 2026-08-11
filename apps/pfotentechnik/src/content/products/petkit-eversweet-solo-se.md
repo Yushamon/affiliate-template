@@ -96,7 +96,7 @@ externalEvidence:
       title: "Petkit Eversweet Solo SE Review 2026"
       url: "https://availpet.com/petkit-eversweet-solo-se-review/"
       checkedAt: "2026-08-11"
-      methodology: "editorial-product-review-with-veterinary-review"
+      methodology: "editorial-review"
       positives:
         - "Leiser Betrieb, einfache Reinigung und die kabellose Pumpe werden positiv bewertet."
       negatives:

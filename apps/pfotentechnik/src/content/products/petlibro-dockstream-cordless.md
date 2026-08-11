@@ -99,7 +99,7 @@ externalEvidence:
       title: "Petlibro Dockstream Battery-Operated Water Fountain for Cats Review"
       url: "https://cats.com/petlibro-dockstream-water-fountain-review"
       checkedAt: "2026-08-11"
-      methodology: "three-week-hands-on-home-test"
+      methodology: "hands-on"
       positives:
         - "Der dreiwöchige Test bestätigt den Nutzen der kabellosen Aufstellung und eine für zwei Katzen ausreichende Kapazität."
         - "Die Grundfunktion als leiser gefilterter Brunnen wird positiv bewertet."

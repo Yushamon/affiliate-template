@@ -38,7 +38,7 @@ externalEvidence:
       title: "I thought it was weird spying on my cats with this new robotic litter box - but it does more than just record them"
       url: "https://www.tomsguide.com/home/smart-home/i-thought-it-was-weird-spying-on-my-cats-with-this-new-robotic-litter-box-but-it-does-more-than-just-record-them"
       checkedAt: "2026-08-11"
-      methodology: "hands-on-editorial-review"
+      methodology: "hands-on"
       positives:
         - "Der Praxistest hebt die interne Kamera, Nutzungs- und Gewichtsprotokolle sowie die starke Geruchskontrolle hervor."
         - "Die Basisfunktionen zur Überwachung werden als nützlich eingeordnet, besonders wenn Veränderungen im Toilettenverhalten beobachtet werden sollen."

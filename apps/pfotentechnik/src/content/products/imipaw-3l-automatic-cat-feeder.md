@@ -103,7 +103,7 @@ externalEvidence:
       title: "The 10 Best Automatic Cat Feeders Tested With Real Cats"
       url: "https://www.thesprucepets.com/best-automatic-cat-feeders-4175145"
       checkedAt: "2026-08-11"
-      methodology: "comparative-hands-on-testing"
+      methodology: "hands-on"
       positives:
         - "IMIPAW wird nach einem Vergleichstest mit realen Katzen als weitere empfehlenswerte Budget-Option geführt."
       negatives:

@@ -100,7 +100,9 @@ ratings:
 externalEvidence:
   professionalReviews: []
   userReviews: []
-  consensus: []
+  consensus:
+    strengths: []
+    weaknesses: []
   researchStatus: "constrained"
   researchReason: >-
     Modellgenaue Manuals- und Supportspuren für den A68 sind vorhanden, aber zum Prüfzeitpunkt kein belastbarer unabhängiger professioneller Produkttest und keine ausreichend belastbare produktspezifische Bewertungsbasis mit Rating und Review-Anzahl.

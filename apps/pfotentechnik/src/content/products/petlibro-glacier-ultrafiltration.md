@@ -99,7 +99,7 @@ externalEvidence:
       url: "https://www.floppycats.com/pet-water-fountain.html"
       publishedAt: "2023-11-20"
       checkedAt: "2026-08-11"
-      methodology: "hands-on sponsored product"
+      methodology: "hands-on"
       positives:
         - "Im Haushaltstest werden leiser Betrieb, Edelstahlkonstruktion, einfache Reinigung und gute Trinkakzeptanz positiv beschrieben."
         - "Die große Wassermenge und die geringe Verschmutzung der Trinkfläche werden als alltagstauglich eingeordnet."
@@ -118,7 +118,9 @@ externalEvidence:
       recurringPositives: []
       recurringCriticism:
         - "Die einzige sichtbare verifizierte, incentivierte Bewertung berichtet über einen Defekt nach kurzer Nutzung."
-  consensus: []
+  consensus:
+    strengths: []
+    weaknesses: []
   researchStatus: "constrained"
   researchReason: >-
     Eine belastbare Hands-on-Quelle ist vorhanden, die unabhängige produktspezifische Nutzerbasis ist jedoch zu klein,

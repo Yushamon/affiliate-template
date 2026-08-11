@@ -108,7 +108,7 @@ externalEvidence:
       url: "https://www.catfooddispensersreviews.com/petlibro-air-automatic-pet-feeder-review/"
       updatedAt: "2025-01-05"
       checkedAt: "2026-08-11"
-      methodology: "two-month hands-on"
+      methodology: "hands-on"
       positives:
         - "Die Autorin berichtet nach mehr als zwei Monaten Nutzung über zuverlässige Zeitpläne und konsistente Portionierung."
         - "Reinigung, verriegelter Deckel, geschütztes Bedienfeld und Backup-Stromversorgung werden positiv bewertet."
@@ -121,7 +121,7 @@ externalEvidence:
       title: "The 8 Best Cat Bowls, Tested With Real Cats In Their Own Homes"
       url: "https://www.thesprucepets.com/best-cat-bowls-8399598"
       checkedAt: "2026-08-11"
-      methodology: "comparative hands-on"
+      methodology: "hands-on"
       positives:
         - "Die Redaktion nennt den PETLIBRO Air als beste automatische Futterlösung im Testfeld und lobt einfache Programmierung und Backup-Batterien."
       negatives:

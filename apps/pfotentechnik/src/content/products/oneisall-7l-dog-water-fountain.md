@@ -111,7 +111,9 @@ externalEvidence:
       recurringCriticism:
         - "Das Gerät läuft dauerhaft und muss am Strom bleiben."
         - "Ein Teil der sichtbaren Rezensionen ist als incentiviert gekennzeichnet und wird deshalb vorsichtig gewichtet."
-  consensus: []
+  consensus:
+    strengths: []
+    weaknesses: []
   researchStatus: "constrained"
   researchReason: >-
     Produktspezifische Nutzerbasis vorhanden, aber zum Prüfzeitpunkt keine ausreichend belastbare unabhängige professionelle Reviewquelle für genau das 7-Liter-Modell.

@@ -124,7 +124,9 @@ externalEvidence:
       findings:
         - "Der Beitrag beschreibt tatsächliche Nutzung mit der eigenen Katze und konkreten Zeitplänen."
   userReviews: []
-  consensus: []
+  consensus:
+    strengths: []
+    weaknesses: []
   researchStatus: "constrained"
   researchReason: >-
     Zwei belastbare unabhängige Hands-on-Reviews für das konkrete Space-Modell sind vorhanden. Zum Prüfzeitpunkt

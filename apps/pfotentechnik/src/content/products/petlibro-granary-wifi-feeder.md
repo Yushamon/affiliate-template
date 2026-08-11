@@ -101,7 +101,7 @@ externalEvidence:
       title: "PETLIBRO Granary WiFi Feeder Review: PLAF103 Limits & Verdict"
       url: "https://furryadvisor.com/product-review/petlibro-cat-feeder-review/"
       checkedAt: "2026-08-11"
-      methodology: "independent-documentation-based-editorial-assessment"
+      methodology: "editorial-review"
       positives:
         - "Die Analyse bestätigt die klar dokumentierte Modellidentität PLAF103, App-Zeitpläne, Dual-Band-WLAN und den großen 5-Liter-Vorrat."
         - "Gespeicherte Zeitpläne und Batterie-Backup werden als sinnvolle Ausfallsicherheit eingeordnet."
