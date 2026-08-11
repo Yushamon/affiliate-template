@@ -90,6 +90,44 @@ ratings:
   reinigung: 3.75
   lautstaerke: 3.9
   preisleistung: 3.7
+externalEvidence:
+  professionalReviews:
+    - publisher: "AvailPet"
+      title: "Petkit Eversweet Solo SE Review 2026"
+      url: "https://availpet.com/petkit-eversweet-solo-se-review/"
+      checkedAt: "2026-08-11"
+      methodology: "editorial-product-review-with-veterinary-review"
+      positives:
+        - "Leiser Betrieb, einfache Reinigung und die kabellose Pumpe werden positiv bewertet."
+      negatives:
+        - "Das Gerät selbst ist nicht akkubetrieben; nur die Pumpe kommt ohne Kabel im Wasser aus."
+        - "Die Kunststoffkonstruktion und geringe Kapazität begrenzen den Premium-Anspruch."
+      findings:
+        - "Die Quelle grenzt Solo SE ausdrücklich von Solo 2 und höher positionierten PETKIT-Modellen ab."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/petkit-eversweet-solo-se-plastic-dog/product-reviews/1185182"
+      checkedAt: "2026-08-11"
+      rating: 4.3
+      scale: 5
+      reviewCount: 95
+      recurringPositives:
+        - "Sehr leiser Betrieb und unkomplizierte Reinigung werden häufig gelobt."
+        - "Die kabellose Pumpe erleichtert das Herausnehmen des Wasserbehälters."
+      recurringCriticism:
+        - "Einige Nutzer missverstehen 'wireless pump' als vollständig kabellosen Brunnen."
+        - "Tierakzeptanz ist individuell; einzelne Katzen ignorieren den Brunnen."
+  consensus:
+    strengths:
+      - finding: "Sehr leiser Betrieb und einfache Reinigung sind über unabhängige Review- und Nutzerquellen hinweg konsistent."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "Die Bezeichnung der kabellosen Pumpe kann zu falschen Erwartungen an einen Akkubetrieb des gesamten Brunnens führen."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Für die Kernfragen Lautstärke, Reinigung und Stromkonzept liegt eine vergleichsweise gute externe Evidenz vor.
 decision:
   bestFor:
     - eine bis zwei Katzen

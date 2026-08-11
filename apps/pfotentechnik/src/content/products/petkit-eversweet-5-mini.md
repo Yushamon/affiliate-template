@@ -88,6 +88,20 @@ ratings:
   reinigung: 3.65
   lautstaerke: 3.8
   preisleistung: 3.6
+externalEvidence:
+  status: constrained
+  constrained: true
+  userReviews:
+    - platform: "Trustpilot / PETKIT"
+      url: "https://www.trustpilot.com/review/petkit.com"
+      checkedAt: "2026-08-11"
+      scope: "brand-wide-with-product-mention"
+      recurringPositives: []
+      recurringCriticism:
+        - "Ein konkreter Eversweet-5-Mini-Bericht beschreibt einen Komplettausfall und unbefriedigende Support-Abwicklung nach Händlerkauf."
+  note: >-
+    Es liegt ein konkretes Nutzersignal zum Eversweet 5 Mini vor, aber keine belastbare unabhängige professionelle
+    Review und keine ausreichend große produktspezifische Nutzerbasis. Kein Consensus.
 decision:
   bestFor:
     - eine Katze

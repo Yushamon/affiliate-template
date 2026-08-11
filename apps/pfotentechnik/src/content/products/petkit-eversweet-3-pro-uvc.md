@@ -96,6 +96,21 @@ ratings:
   smartfunktionen: 4
   hygiene: 4.3
   preisleistung: 3.8
+externalEvidence:
+  status: constrained
+  constrained: true
+  userReviews:
+    - platform: "Petco"
+      url: "https://www.petco.com/product/petkit-eversweet-3-pro-%28uvc%29-pet-water-fountain-for-dogs-pearl-white-4634140"
+      checkedAt: "2026-08-11"
+      reviewCount: 37
+      recurringPositives:
+        - "Leiser Betrieb und einfache Reinigung werden mehrfach positiv genannt."
+      recurringCriticism:
+        - "Einzelne Nutzer berichten über Bluetooth-/App-Verbindungsprobleme."
+  note: >-
+    Für den exakt abgegrenzten Eversweet 3 Pro UVC wurde keine ausreichend belastbare unabhängige professionelle
+    Review gefunden. Herstellerblog und Händlerbewertungen reichen nicht für einen vollständigen Consensus.
 decision:
   bestFor:
     - eine Katze oder einen kleinen Hund

@@ -97,6 +97,45 @@ ratings:
   zuverlaessigkeit: 3.65
   sicherheit: 3.35
   preisleistung: 4
+externalEvidence:
+  professionalReviews:
+    - publisher: "Catster"
+      title: "Oneisall Review 2026: Our Vet's Expert Opinion"
+      url: "https://www.catster.com/lifestyle/oneisall-review/"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on-editorial-review"
+      positives:
+        - "Der konkrete 5-Liter-Futterautomat wird für einfache Einrichtung, unkomplizierte Wartung und praxistaugliches Design gelobt."
+        - "Die Redaktion bewertet Bedienbarkeit, Qualität, Design und Nutzwert sehr positiv."
+      negatives:
+        - "Das Gehäuse wird optisch als vergleichsweise klobig beschrieben."
+      findings:
+        - "Catster behandelt ausdrücklich den Oneisall 5L Automatic Cat Feeder und beschreibt praktische Nutzung statt nur Herstellerdaten."
+  userReviews:
+    - platform: "Trustpilot / oneisall.com"
+      url: "https://www.trustpilot.com/review/oneisall.com"
+      checkedAt: "2026-08-11"
+      rating: 4.9
+      scale: 5
+      reviewCount: 552
+      scope: "brand-wide"
+      recurringPositives:
+        - "Markenweit werden Bedienbarkeit, Produktqualität und schneller Support häufig positiv genannt."
+        - "Einzelne Futterautomaten-Nutzer berichten über zuverlässige Ausgabe und einfache App-Bedienung."
+      recurringCriticism:
+        - "Die Plattformbasis ist markenweit und darf nicht als produktspezifischer 5-Liter-Score interpretiert werden."
+  consensus:
+    strengths:
+      - finding: "Einfache Einrichtung und unkomplizierte tägliche Bedienung sind das belastbarste wiederkehrende Signal."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Für Langzeitzuverlässigkeit des exakt abgegrenzten 5-Liter-Modells ist die unabhängige Datenbasis noch begrenzt."
+        sourceCount: 2
+        confidence: "low"
+    editorialAssessment: >-
+      Der konkrete Catster-Review stützt die Alltagstauglichkeit. Das Trustpilot-Signal bleibt ausdrücklich markenweit
+      und dient nur als ergänzender Kontext, nicht als produktspezifische Sternebewertung.
 decision:
   bestFor:
     - zwei friedlich fressende Katzen

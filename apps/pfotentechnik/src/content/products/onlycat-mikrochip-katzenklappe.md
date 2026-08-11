@@ -77,6 +77,46 @@ ratings:
   einbau_und_passform: 3.0
   strom_und_ausfallverhalten: 3.3
   systemabhaengigkeit_und_folgekosten: 2.5
+externalEvidence:
+  professionalReviews:
+    - publisher: "That Cat Flap Company"
+      title: "OnlyCat Review: The AI Microchip Cat Flap That Stops Prey at the Door"
+      url: "https://thatcatflapcompany.co.uk/blog/onlycat-microchip-cat-flap-with-prey-detection-review"
+      checkedAt: "2026-08-11"
+      methodology: "editorial-product-review-commercial-installer"
+      positives:
+        - "Die Beuteerkennung wird als klarer Differenzierungsfaktor gegenüber klassischen Mikrochip-Klappen eingeordnet."
+        - "App-Steuerung, Kamera und beidseitige Mikrochip-Erkennung werden als zusammenhängendes System bewertet."
+      negatives:
+        - "Der hohe Anschaffungspreis wird als wesentliche Hürde genannt."
+        - "Die Quelle ist ein kommerzieller Katzenklappen-Anbieter und daher nicht als vollständig interessenfreie Testinstanz zu behandeln."
+      findings:
+        - "Die Quelle behandelt das konkrete OnlyCat-System und trennt dessen Funktionsumfang von klassischen Mikrochip-Katzenklappen."
+  userReviews:
+    - platform: "Trustpilot"
+      url: "https://www.trustpilot.com/review/onlycat.com"
+      checkedAt: "2026-08-11"
+      rating: 4.8
+      scale: 5
+      reviewCount: 292
+      recurringPositives:
+        - "Viele Nutzer berichten, dass Beute zuverlässig am Eintritt gehindert wird."
+        - "Support und App-Steuerung werden häufig positiv beschrieben."
+      recurringCriticism:
+        - "Einzelne Nutzer kritisieren die relativ kleine Öffnung, schwierigen Einbau oder WLAN-/Software-Themen."
+        - "Der hohe Preis wird wiederholt als Nachteil genannt."
+  consensus:
+    strengths:
+      - finding: "Die Beuteerkennung ist in den verfügbaren externen Signalen der klarste und wiederkehrend bestätigte Nutzwert."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Preis, Passform der Öffnung und Einbauaufwand sind die wiederkehrenden Gegenargumente."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Die Nutzerbasis ist für ein junges Nischenprodukt ungewöhnlich groß. Die professionelle Quelle ist jedoch kommerziell
+      geprägt; deshalb bleibt die Gesamt-Confidence trotz konsistenter Nutzerberichte bei medium.
 decision: { bestFor: ["Wiederkehrender Beuteeintrag", "App-Steuerung und Videoereignisse", "Individuelle Richtungsregeln"], attention: ["USB-C-Netzstrom am Einbauort", "WLAN für Einrichtung und App", "Abo-Version benötigt laufendes Abo"] }
 review: { summary: "OnlyCat kombiniert die Klappe und Beuteerkennung in einem System.", verdict: "Der klarste Komplettsystem-Intent für Beuteerkennung; die höhere Strom-, WLAN- und Kostenabhängigkeit muss bewusst passen." }
 strengths: ["Integrierte Kamera und Beuteerkennung", "Individuelle Ein-/Ausgangsregeln", "Grundbetrieb bei WLAN-Ausfall laut Hersteller"]

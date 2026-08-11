@@ -95,6 +95,43 @@ ratings:
   lautstaerke: 4.15
   smartfunktionen: 4.2
   preisleistung: 3.65
+externalEvidence:
+  professionalReviews:
+    - publisher: "PetTech AI"
+      title: "PETKIT EverSweet Max 2 Review (2026): Is Cordless Convenience Worth the Premium?"
+      url: "https://pettechai.com/petkit-eversweet-max-2-review/"
+      checkedAt: "2026-08-11"
+      methodology: "research-led-editorial-review"
+      positives:
+        - "Kabellose Platzierung, drahtlose UVC-Pumpe und vereinfachte Reinigung werden als zentrale Vorteile eingeordnet."
+      negatives:
+        - "Die Quelle weist darauf hin, dass App- und Gesundheitsdaten nicht mit individueller Tiererkennung verwechselt werden dürfen."
+      findings:
+        - "Die Analyse trennt Alltagskomfort, Wartung und Smart-Funktionen und behauptet keinen eigenen Langzeittest."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/petkit-eversweet-max-2-cordless-uvc/dp/3491590"
+      checkedAt: "2026-08-11"
+      rating: 3.8
+      scale: 5
+      reviewCount: 22
+      recurringPositives:
+        - "Leiser Betrieb, Filtration, Kapazität und einfache Reinigung werden wiederholt gelobt."
+      recurringCriticism:
+        - "Einzelne Nutzer kritisieren die App beziehungsweise Verbindungsprobleme."
+        - "Nicht jede Katze akzeptiert den Brunnen."
+  consensus:
+    strengths:
+      - finding: "Leiser Betrieb und leichte Reinigung sind die stabilsten wiederkehrenden Stärken."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "App-Verbindung und individuelle Akzeptanz durch das Tier bleiben die wichtigsten Unsicherheiten."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Die Kombination aus research-led Review und produktspezifischen Chewy-Bewertungen reicht für eine vorsichtige
+      externe Einordnung, nicht für Aussagen zur langfristigen Ausfallrate.
 decision:
   bestFor:
     - Katzen und kleine Hunde

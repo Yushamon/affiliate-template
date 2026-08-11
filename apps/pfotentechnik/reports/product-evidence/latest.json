@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-11T08:14:26.637Z",
+  "generatedAt": "2026-08-11T08:58:54.073Z",
   "summary": {
     "products": 82,
-    "covered": 46,
-    "complete": 31,
-    "partial": 15,
-    "missing": 36
+    "covered": 56,
+    "complete": 37,
+    "partial": 19,
+    "missing": 26
   },
   "rows": [
     {
@@ -263,8 +263,8 @@
     {
       "slug": "oneisall-3-2l-cordless-fountain",
       "file": "src/content/products/oneisall-3-2l-cordless-fountain.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
       "userSources": 0,
       "consensus": 0,
@@ -287,16 +287,12 @@
     {
       "slug": "oneisall-5l-automatic-cat-feeder",
       "file": "src/content/products/oneisall-5l-automatic-cat-feeder.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "oneisall-7l-dog-water-fountain",
@@ -314,30 +310,22 @@
     {
       "slug": "onlycat-mikrochip-katzenklappe",
       "file": "src/content/products/onlycat-mikrochip-katzenklappe.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "paj-pet-finder-4g-mini",
       "file": "src/content/products/paj-pet-finder-4g-mini.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "pawbby-smart-pet-feeder",
@@ -366,44 +354,38 @@
     {
       "slug": "petkit-eversweet-3-pro-uvc",
       "file": "src/content/products/petkit-eversweet-3-pro-uvc.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
-      "userSources": 0,
+      "userSources": 1,
       "consensus": 0,
       "missingParts": [
         "professionalReviews",
-        "userReviews",
         "consensus"
       ]
     },
     {
       "slug": "petkit-eversweet-5-mini",
       "file": "src/content/products/petkit-eversweet-5-mini.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
-      "userSources": 0,
+      "userSources": 1,
       "consensus": 0,
       "missingParts": [
         "professionalReviews",
-        "userReviews",
         "consensus"
       ]
     },
     {
       "slug": "petkit-eversweet-max-2-uvc",
       "file": "src/content/products/petkit-eversweet-max-2-uvc.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "petkit-eversweet-max-cordless",
@@ -418,30 +400,22 @@
     {
       "slug": "petkit-eversweet-solo-2-fountain",
       "file": "src/content/products/petkit-eversweet-solo-2-fountain.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "petkit-eversweet-solo-se",
       "file": "src/content/products/petkit-eversweet-solo-se.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "petkit-eversweet-ultra",
@@ -456,13 +430,12 @@
     {
       "slug": "petkit-fresh-element-infinity",
       "file": "src/content/products/petkit-fresh-element-infinity.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
+      "status": "partial",
+      "hasExternal": true,
+      "professional": 1,
       "userSources": 0,
       "consensus": 0,
       "missingParts": [
-        "professionalReviews",
         "userReviews",
         "consensus"
       ]

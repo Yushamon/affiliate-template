@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-11T08:17:24.617Z",
+  "generatedAt": "2026-08-11T08:59:22.739Z",
   "source": {
     "provider": "google",
     "file": "gsc-dashboard-ranges.json",
     "primaryRange": "28d",
     "contextRange": "3m"
   },
-  "lane": "HOLD",
+  "lane": "BACKLOG",
   "counts": {
-    "open": 51,
-    "selected": 0,
-    "missing": 36,
-    "partial": 15,
-    "now": 7,
+    "open": 45,
+    "selected": 10,
+    "missing": 26,
+    "partial": 19,
+    "now": 0,
     "watch": 0,
-    "hold": 0,
-    "backlog": 44
+    "hold": 18,
+    "backlog": 27
   },
   "rules": [
     "Keine eigenen Tests behaupten.",
@@ -28,5 +28,406 @@
     "Externe Bewertungen niemals in den redaktionellen PfotenTechnik-Score einrechnen.",
     "GSC-Signale priorisieren Recherche, ersetzen aber keine Evidenzprüfung."
   ],
-  "products": []
+  "products": [
+    {
+      "file": "src/content/products/petkit-fresh-element-solo.md",
+      "slug": "petkit-fresh-element-solo",
+      "title": "PETKIT Fresh Element Solo",
+      "lane": "BACKLOG",
+      "evidence": {
+        "status": "missing",
+        "professional": 0,
+        "userSources": 0,
+        "consensus": 0,
+        "missingParts": [
+          "professionalReviews",
+          "userReviews",
+          "consensus"
+        ],
+        "constrained": false,
+        "evidenceStatus": "",
+        "researchStatus": ""
+      },
+      "search": {
+        "primaryRange": "28d",
+        "impressions": 0,
+        "clicks": 0,
+        "position": 0,
+        "ctr": 0,
+        "contextRange": "3m",
+        "contextImpressions": 0,
+        "queries": [],
+        "confidence": 0
+      },
+      "score": {
+        "total": 0,
+        "rawTotal": 35,
+        "searchBase": 0,
+        "searchWeighted": 0,
+        "evidenceGap": 30,
+        "commercial": 5
+      },
+      "action": "backlog-research"
+    },
+    {
+      "file": "src/content/products/petkit-purobot-max-pro-2.md",
+      "slug": "petkit-purobot-max-pro-2",
+      "title": "PETKIT PUROBOT MAX PRO 2",
+      "lane": "BACKLOG",
+      "evidence": {
+        "status": "missing",
+        "professional": 0,
+        "userSources": 0,
+        "consensus": 0,
+        "missingParts": [
+          "professionalReviews",
+          "userReviews",
+          "consensus"
+        ],
+        "constrained": false,
+        "evidenceStatus": "",
+        "researchStatus": ""
+      },
+      "search": {
+        "primaryRange": "28d",
+        "impressions": 0,
+        "clicks": 0,
+        "position": 0,
+        "ctr": 0,
+        "contextRange": "3m",
+        "contextImpressions": 0,
+        "queries": [],
+        "confidence": 0
+      },
+      "score": {
+        "total": 0,
+        "rawTotal": 35,
+        "searchBase": 0,
+        "searchWeighted": 0,
+        "evidenceGap": 30,
+        "commercial": 5
+      },
+      "action": "backlog-research"
+    },
+    {
+      "file": "src/content/products/petlibro-air-wifi-feeder.md",
+      "slug": "petlibro-air-wifi-feeder",
+      "title": "PETLIBRO Air WiFi Feeder",
+      "lane": "BACKLOG",
+      "evidence": {
+        "status": "missing",
+        "professional": 0,
+        "userSources": 0,
+        "consensus": 0,
+        "missingParts": [
+          "professionalReviews",
+          "userReviews",
+          "consensus"
+        ],
+        "constrained": false,
+        "evidenceStatus": "",
+        "researchStatus": ""
+      },
+      "search": {
+        "primaryRange": "28d",
+        "impressions": 0,
+        "clicks": 0,
+        "position": 0,
+        "ctr": 0,
+        "contextRange": "3m",
+        "contextImpressions": 0,
+        "queries": [],
+        "confidence": 0
+      },
+      "score": {
+        "total": 0,
+        "rawTotal": 35,
+        "searchBase": 0,
+        "searchWeighted": 0,
+        "evidenceGap": 30,
+        "commercial": 5
+      },
+      "action": "backlog-research"
+    },
+    {
+      "file": "src/content/products/petlibro-capsule-dog-fountain.md",
+      "slug": "petlibro-capsule-dog-fountain",
+      "title": "PETLIBRO Capsule Dog Fountain",
+      "lane": "BACKLOG",
+      "evidence": {
+        "status": "missing",
+        "professional": 0,
+        "userSources": 0,
+        "consensus": 0,
+        "missingParts": [
+          "professionalReviews",
+          "userReviews",
+          "consensus"
+        ],
+        "constrained": false,
+        "evidenceStatus": "",
+        "researchStatus": ""
+      },
+      "search": {
+        "primaryRange": "28d",
+        "impressions": 0,
+        "clicks": 0,
+        "position": 0,
+        "ctr": 0,
+        "contextRange": "3m",
+        "contextImpressions": 0,
+        "queries": [],
+        "confidence": 0
+      },
+      "score": {
+        "total": 0,
+        "rawTotal": 32,
+        "searchBase": 0,
+        "searchWeighted": 0,
+        "evidenceGap": 30,
+        "commercial": 2
+      },
+      "action": "backlog-research"
+    },
+    {
+      "file": "src/content/products/petlibro-dockstream-2-smart.md",
+      "slug": "petlibro-dockstream-2-smart",
+      "title": "PETLIBRO Dockstream 2 Smart",
+      "lane": "BACKLOG",
+      "evidence": {
+        "status": "missing",
+        "professional": 0,
+        "userSources": 0,
+        "consensus": 0,
+        "missingParts": [
+          "professionalReviews",
+          "userReviews",
+          "consensus"
+        ],
+        "constrained": false,
+        "evidenceStatus": "",
+        "researchStatus": ""
+      },
+      "search": {
+        "primaryRange": "28d",
+        "impressions": 0,
+        "clicks": 0,
+        "position": 0,
+        "ctr": 0,
+        "contextRange": "3m",
+        "contextImpressions": 0,
+        "queries": [],
+        "confidence": 0
+      },
+      "score": {
+        "total": 0,
+        "rawTotal": 35,
+        "searchBase": 0,
+        "searchWeighted": 0,
+        "evidenceGap": 30,
+        "commercial": 5
+      },
+      "action": "backlog-research"
+    },
+    {
+      "file": "src/content/products/petlibro-dockstream-2-smart-cordless.md",
+      "slug": "petlibro-dockstream-2-smart-cordless",
+      "title": "PETLIBRO Dockstream 2 Smart Cordless",
+      "lane": "BACKLOG",
+      "evidence": {
+        "status": "missing",
+        "professional": 0,
+        "userSources": 0,
+        "consensus": 0,
+        "missingParts": [
+          "professionalReviews",
+          "userReviews",
+          "consensus"
+        ],
+        "constrained": false,
+        "evidenceStatus": "",
+        "researchStatus": ""
+      },
+      "search": {
+        "primaryRange": "28d",
+        "impressions": 0,
+        "clicks": 0,
+        "position": 0,
+        "ctr": 0,
+        "contextRange": "3m",
+        "contextImpressions": 0,
+        "queries": [],
+        "confidence": 0
+      },
+      "score": {
+        "total": 0,
+        "rawTotal": 35,
+        "searchBase": 0,
+        "searchWeighted": 0,
+        "evidenceGap": 30,
+        "commercial": 5
+      },
+      "action": "backlog-research"
+    },
+    {
+      "file": "src/content/products/petlibro-dockstream-cordless.md",
+      "slug": "petlibro-dockstream-cordless",
+      "title": "PETLIBRO Dockstream Cordless",
+      "lane": "BACKLOG",
+      "evidence": {
+        "status": "missing",
+        "professional": 0,
+        "userSources": 0,
+        "consensus": 0,
+        "missingParts": [
+          "professionalReviews",
+          "userReviews",
+          "consensus"
+        ],
+        "constrained": false,
+        "evidenceStatus": "",
+        "researchStatus": ""
+      },
+      "search": {
+        "primaryRange": "28d",
+        "impressions": 0,
+        "clicks": 0,
+        "position": 0,
+        "ctr": 0,
+        "contextRange": "3m",
+        "contextImpressions": 0,
+        "queries": [],
+        "confidence": 0
+      },
+      "score": {
+        "total": 0,
+        "rawTotal": 35,
+        "searchBase": 0,
+        "searchWeighted": 0,
+        "evidenceGap": 30,
+        "commercial": 5
+      },
+      "action": "backlog-research"
+    },
+    {
+      "file": "src/content/products/petlibro-granary-2-vision.md",
+      "slug": "petlibro-granary-2-vision",
+      "title": "PETLIBRO Granary 2 Vision",
+      "lane": "BACKLOG",
+      "evidence": {
+        "status": "missing",
+        "professional": 0,
+        "userSources": 0,
+        "consensus": 0,
+        "missingParts": [
+          "professionalReviews",
+          "userReviews",
+          "consensus"
+        ],
+        "constrained": false,
+        "evidenceStatus": "",
+        "researchStatus": ""
+      },
+      "search": {
+        "primaryRange": "28d",
+        "impressions": 0,
+        "clicks": 0,
+        "position": 0,
+        "ctr": 0,
+        "contextRange": "3m",
+        "contextImpressions": 0,
+        "queries": [],
+        "confidence": 0
+      },
+      "score": {
+        "total": 0,
+        "rawTotal": 35,
+        "searchBase": 0,
+        "searchWeighted": 0,
+        "evidenceGap": 30,
+        "commercial": 5
+      },
+      "action": "backlog-research"
+    },
+    {
+      "file": "src/content/products/petlibro-granary-dual-feeder.md",
+      "slug": "petlibro-granary-dual-feeder",
+      "title": "PETLIBRO Granary WiFi Dual Food Tray Feeder",
+      "lane": "BACKLOG",
+      "evidence": {
+        "status": "missing",
+        "professional": 0,
+        "userSources": 0,
+        "consensus": 0,
+        "missingParts": [
+          "professionalReviews",
+          "userReviews",
+          "consensus"
+        ],
+        "constrained": false,
+        "evidenceStatus": "",
+        "researchStatus": ""
+      },
+      "search": {
+        "primaryRange": "28d",
+        "impressions": 0,
+        "clicks": 0,
+        "position": 0,
+        "ctr": 0,
+        "contextRange": "3m",
+        "contextImpressions": 0,
+        "queries": [],
+        "confidence": 0
+      },
+      "score": {
+        "total": 0,
+        "rawTotal": 35,
+        "searchBase": 0,
+        "searchWeighted": 0,
+        "evidenceGap": 30,
+        "commercial": 5
+      },
+      "action": "backlog-research"
+    },
+    {
+      "file": "src/content/products/petlibro-granary-wifi-feeder.md",
+      "slug": "petlibro-granary-wifi-feeder",
+      "title": "PETLIBRO Granary WiFi Feeder",
+      "lane": "BACKLOG",
+      "evidence": {
+        "status": "missing",
+        "professional": 0,
+        "userSources": 0,
+        "consensus": 0,
+        "missingParts": [
+          "professionalReviews",
+          "userReviews",
+          "consensus"
+        ],
+        "constrained": false,
+        "evidenceStatus": "",
+        "researchStatus": ""
+      },
+      "search": {
+        "primaryRange": "28d",
+        "impressions": 0,
+        "clicks": 0,
+        "position": 0,
+        "ctr": 0,
+        "contextRange": "3m",
+        "contextImpressions": 0,
+        "queries": [],
+        "confidence": 0
+      },
+      "score": {
+        "total": 0,
+        "rawTotal": 35,
+        "searchBase": 0,
+        "searchWeighted": 0,
+        "evidenceGap": 30,
+        "commercial": 5
+      },
+      "action": "backlog-research"
+    }
+  ]
 }

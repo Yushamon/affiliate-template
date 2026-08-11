@@ -93,6 +93,47 @@ ratings:
   tragekomfort: 4.2
   kosten: 4.4
   wasserschutz: 3.8
+externalEvidence:
+  professionalReviews:
+    - publisher: "gpstracker-tests.de"
+      title: "PAJ PET Finder 4G Mini Test 2026"
+      url: "https://gpstracker-tests.de/test/paj-pet-finder-4g-mini/"
+      checkedAt: "2026-08-11"
+      methodology: "editorial-comparison-test"
+      positives:
+        - "Ortungsgenauigkeit, kompakte Bauform und Preis-Leistungs-Verhältnis werden positiv bewertet."
+        - "Das integrierte LED-Licht wird als praktischer Zusatznutzen hervorgehoben."
+      negatives:
+        - "Die Nutzung bleibt an ein Mobilfunk-/Abo-Modell gebunden."
+        - "Die Quelle arbeitet mit Affiliate-Links; ihre Wertung wird deshalb nicht als neutrale Messinstanz behandelt."
+      findings:
+        - "Der Test behandelt das konkrete PET Finder 4G Mini Modell und nennt mess- bzw. vergleichbare Kriterien."
+  userReviews:
+    - platform: "Trustpilot / PAJ GPS"
+      url: "https://de.trustpilot.com/review/paj-gps.com"
+      checkedAt: "2026-08-11"
+      rating: 4.7
+      scale: 5
+      reviewCount: 417
+      scope: "brand-wide"
+      recurringPositives:
+        - "Markenweit werden einfache Bedienung, zuverlässige Ortung und schneller Support häufig genannt."
+        - "Einzelne Tiertracker-Nutzer beschreiben genaue Ortung und eine hilfreiche App."
+      recurringCriticism:
+        - "Einzelne Nutzer berichten über defekte Geräte, Erstverbindungsprobleme oder unerwartetes Energiesparverhalten."
+        - "Die Plattformbasis ist markenweit und nicht ausschließlich dem PET Finder 4G Mini zuzuordnen."
+  consensus:
+    strengths:
+      - finding: "Einfache Bedienung und brauchbare Ortungsleistung sind die konsistentesten externen Signale."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Abo-Abhängigkeit und vereinzelte Hardware- beziehungsweise Verbindungsprobleme bleiben relevante Gegenpunkte."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Der konkrete redaktionelle Test wird durch eine große, aber markenweite Nutzerbasis ergänzt. Die Markenbewertungen
+      werden ausdrücklich nicht als produktspezifischer Score übernommen.
 decision:
   bestFor:
     - Hunde ab 3 kg

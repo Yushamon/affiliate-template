@@ -1,10 +1,10 @@
 # Product External Evidence Audit
 
 - Produkte: 82
-- Mit externalEvidence: 46
-- Vollständig: 31
-- Teilweise: 15
-- Ohne Evidenz: 36
+- Mit externalEvidence: 56
+- Vollständig: 37
+- Teilweise: 19
+- Ohne Evidenz: 26
 
 ## Vollständig
 
@@ -21,8 +21,14 @@
 - litter-robot-5-pro
 - neakasa-m1-plus
 - oneisall-3-5l-cordless-fountain
+- oneisall-5l-automatic-cat-feeder
+- onlycat-mikrochip-katzenklappe
+- paj-pet-finder-4g-mini
 - pawsync-smart-pet-feeder
+- petkit-eversweet-max-2-uvc
 - petkit-eversweet-max-cordless
+- petkit-eversweet-solo-2-fountain
+- petkit-eversweet-solo-se
 - petkit-eversweet-ultra
 - petkit-yumshare-dual-hopper
 - petkit-yumshare-solo-2
@@ -52,24 +58,18 @@
 - neakasa-m1-lite · fehlt: professionalReviews, consensus
 - oneisall-2-2l-cordless-fountain · fehlt: professionalReviews, consensus
 - oneisall-2-in-1-feeder-water · fehlt: userReviews, consensus
+- oneisall-3-2l-cordless-fountain · fehlt: professionalReviews, userReviews, consensus
 - oneisall-7l-dog-water-fountain · fehlt: professionalReviews, consensus
 - pawbby-smart-pet-feeder · fehlt: professionalReviews, userReviews, consensus
+- petkit-eversweet-3-pro-uvc · fehlt: professionalReviews, consensus
+- petkit-eversweet-5-mini · fehlt: professionalReviews, consensus
+- petkit-fresh-element-infinity · fehlt: userReviews, consensus
 - petlibro-glacier-ultrafiltration · fehlt: consensus
 - petlibro-space-smart-feeder · fehlt: userReviews, consensus
 - xiaomi-smart-pet-food-feeder-2 · fehlt: professionalReviews
 
 ## Ohne Evidenz
 
-- oneisall-3-2l-cordless-fountain
-- oneisall-5l-automatic-cat-feeder
-- onlycat-mikrochip-katzenklappe
-- paj-pet-finder-4g-mini
-- petkit-eversweet-3-pro-uvc
-- petkit-eversweet-5-mini
-- petkit-eversweet-max-2-uvc
-- petkit-eversweet-solo-2-fountain
-- petkit-eversweet-solo-se
-- petkit-fresh-element-infinity
 - petkit-fresh-element-solo
 - petkit-purobot-max-pro-2
 - petlibro-air-wifi-feeder

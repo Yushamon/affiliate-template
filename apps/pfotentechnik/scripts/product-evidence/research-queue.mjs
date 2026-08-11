@@ -22,18 +22,111 @@ const num = (v) => Number.isFinite(Number(v)) ? Number(v) : 0;
 const norm = (v) => { try { const u = new URL(String(v).startsWith("http") ? v : "https://pfotentechnik.de/" + String(v||"").replace(/^\/+/,"")); return (u.pathname.replace(/\/+/g,"/").replace(/\/+$/,"") || "") + "/"; } catch { return "/"; } };
 const field = (raw,k) => raw.match(new RegExp("^" + k + ":\\s*[\"']?([^\"'\\n]+)","m"))?.[1]?.trim() || "";
 const block = (raw,key) => { const lines=raw.split(/\r?\n/); const start=lines.findIndex((l)=>new RegExp("^"+key+":\\s*$").test(l)); if(start<0)return""; let end=lines.length; for(let i=start+1;i<lines.length;i++){if(/^[A-Za-z0-9_äöüÄÖÜß-]+:\s*/.test(lines[i])){end=i;break;}} return lines.slice(start,end).join("\n"); };
-const evidence = (raw) => { const ext=block(raw,"externalEvidence"); if(!ext)return{status:"missing",professional:0,userSources:0,consensus:0,missingParts:["professionalReviews","userReviews","consensus"],researchStatus:""}; const professional=(ext.match(/^\s*-\s+publisher:\s*/gm)||[]).length; const userSources=(ext.match(/^\s*-\s+platform:\s*/gm)||[]).length; const consensus=(ext.match(/^\s*-\s+finding:\s*/gm)||[]).length; const missingParts=[]; if(!professional)missingParts.push("professionalReviews"); if(!userSources)missingParts.push("userReviews"); if(!consensus)missingParts.push("consensus"); const researchStatus=ext.match(/^\s*researchStatus:\s*["\']?([^"\'\n]+)["\']?/m)?.[1]?.trim()||""; return{status:missingParts.length?"partial":"complete",professional,userSources,consensus,missingParts,researchStatus}; };
+const externalEvidenceMeta = (raw) => {
+  const lines = raw.split(/\r?\n/);
+  const start = lines.findIndex((line) => /^externalEvidence:\s*$/.test(line));
+  if (start < 0) {
+    return {
+      exists:false,
+      constrained:false,
+      status:"",
+      researchStatus:""
+    };
+  }
+
+  let constrained = false;
+  let status = "";
+  let researchStatus = "";
+
+  for (let i = start + 1; i < lines.length; i++) {
+    const line = lines[i];
+
+    if (!line.trim()) continue;
+
+    // Sobald wieder ein echter Top-Level-Key beginnt, ist externalEvidence beendet.
+    if (/^[^\s#][A-Za-z0-9_äöüÄÖÜß-]*:\s*/.test(line)) break;
+
+    const trimmed = line.trim();
+
+    if (/^constrained:\s*(true|yes|1)\s*$/i.test(trimmed)) {
+      constrained = true;
+    }
+
+    const statusMatch = trimmed.match(/^status:\s*["']?([^"'\n]+)["']?\s*$/i);
+    if (statusMatch) {
+      status = statusMatch[1].trim().toLowerCase();
+    }
+
+    const researchMatch = trimmed.match(/^researchStatus:\s*["']?([^"'\n]+)["']?\s*$/i);
+    if (researchMatch) {
+      researchStatus = researchMatch[1].trim().toLowerCase();
+    }
+  }
+
+  const normalizedConstrained =
+    constrained === true ||
+    status === "constrained" ||
+    researchStatus === "constrained";
+
+  return {
+    exists:true,
+    constrained:normalizedConstrained,
+    status,
+    researchStatus
+  };
+};
+
+const evidence = (raw) => {
+  const meta = externalEvidenceMeta(raw);
+  const ext = block(raw,"externalEvidence");
+
+  if (!ext) {
+    return {
+      status:"missing",
+      professional:0,
+      userSources:0,
+      consensus:0,
+      missingParts:["professionalReviews","userReviews","consensus"],
+      constrained:meta.constrained,
+      evidenceStatus:meta.status,
+      researchStatus:meta.researchStatus
+    };
+  }
+
+  const professional=(ext.match(/^\s*-\s+publisher:\s*/gm)||[]).length;
+  const userSources=(ext.match(/^\s*-\s+platform:\s*/gm)||[]).length;
+  const consensus=(ext.match(/^\s*-\s+finding:\s*/gm)||[]).length;
+  const missingParts=[];
+
+  if(!professional) missingParts.push("professionalReviews");
+  if(!userSources) missingParts.push("userReviews");
+  if(!consensus) missingParts.push("consensus");
+
+  return {
+    status:missingParts.length ? "partial" : "complete",
+    professional,
+    userSources,
+    consensus,
+    missingParts,
+    constrained:meta.constrained,
+    evidenceStatus:meta.status,
+    researchStatus:meta.researchStatus
+  };
+};
 const pageSignal = (range,slug) => { if(!range)return{impressions:0,clicks:0,position:0,ctr:0,queries:[]}; const page="/produkt/"+slug+"/"; const p=(range.pages||[]).find((r)=>norm(r.page)===page); const q=(range.pageQueries||[]).filter((r)=>norm(r.page)===page).sort((a,b)=>num(b.impressions)-num(a.impressions)); const impressions=num(p?.impressions)||q.reduce((s,r)=>s+num(r.impressions),0); const clicks=num(p?.clicks)||q.reduce((s,r)=>s+num(r.clicks),0); let position=num(p?.position); if(!position&&q.length){const w=q.reduce((s,r)=>s+Math.max(1,num(r.impressions)),0); position=q.reduce((s,r)=>s+num(r.position)*Math.max(1,num(r.impressions)),0)/Math.max(1,w);} return{impressions,clicks,position,ctr:impressions?clicks/impressions*100:num(p?.ctr),queries:q.slice(0,8)}; };
 const confidence = (i) => i>=20?1:i>=10?.9:i>=6?.75:i>=3?.55:i>=1?.35:0;
 const rankPotential = (p,i) => !i||!p?0:p<=3?20:p<=10?30:p<=20?28:p<=30?20:p<=50?12:5;
 const gap = (e) => e.status==="missing"?30:e.status==="complete"?0:Math.round(30*e.missingParts.length/3);
 const classifyLane = (search, ctx, ev) => {
-  if (ev.constrained) return "HOLD";
+  // Quellenlage ist redaktioneller Zustand und hat immer Vorrang vor Traffic.
+  if (ev.constrained === true) return "HOLD";
+
   const hasSearch = search.impressions > 0 || ctx.impressions > 0;
   if (!hasSearch) return "BACKLOG";
-  if (ev.researchStatus === "constrained") return "HOLD";
+
   if (search.impressions >= 3 || ctx.impressions >= 5) return "NOW";
   if (ev.status === "partial" && search.impressions >= 1) return "NOW";
+
   return "WATCH";
 };
 const products = fs.readdirSync(productDir).filter((n)=>/\.mdx?$/i.test(n)).map((name)=>{

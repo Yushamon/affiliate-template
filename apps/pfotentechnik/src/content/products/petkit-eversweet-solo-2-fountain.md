@@ -92,6 +92,44 @@ ratings:
   lautstaerke: 4.7
   smartfunktionen: 4.1
   preisleistung: 4.3
+externalEvidence:
+  professionalReviews:
+    - publisher: "AvailPet"
+      title: "Petkit Eversweet Solo 2 Review 2026"
+      url: "https://availpet.com/petkit-eversweet-solo-2-review/"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on-editorial-review-with-veterinary-review"
+      positives:
+        - "Sehr leiser Betrieb, einfache Reinigung und App-Hinweise zum Wasserstand werden positiv bewertet."
+        - "Die drei Betriebsmodi werden als praktisch eingeordnet."
+      negatives:
+        - "Der fehlende USB-Netzadapter wird kritisiert."
+        - "Bluetooth statt WLAN und die kleine Kapazitätssteigerung gegenüber dem Solo SE begrenzen den Mehrwert."
+      findings:
+        - "Die Quelle beschreibt das konkrete Solo-2-Modell und grenzt es ausdrücklich gegen Solo SE und 3 Pro ab."
+  userReviews:
+    - platform: "Wayfair"
+      url: "https://www.wayfair.com/pet/pdp/petkit-eversweet-solo-2-pekt1173.html"
+      checkedAt: "2026-08-11"
+      rating: 4.6
+      scale: 5
+      reviewCount: 18
+      recurringPositives:
+        - "Leiser Betrieb, einfache Reinigung und gefälliges Design werden häufig genannt."
+      recurringCriticism:
+        - "Einzelne Nutzer wünschen zusätzliche Funktionen; die Stichprobe bleibt relativ klein."
+  consensus:
+    strengths:
+      - finding: "Leiser Betrieb und einfache Reinigung werden von professioneller und Nutzerseite konsistent bestätigt."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Der Smart-Mehrwert bleibt begrenzt, wenn Bluetooth-App und Zusatzmodi nicht benötigt werden."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Modellidentität und Kernaussagen sind ausreichend klar. Die Nutzerbasis ist kleiner als bei älteren PETKIT-Brunnen,
+      daher keine starken Langzeitaussagen.
 decision:
   bestFor:
     - eine bis zwei Katzen

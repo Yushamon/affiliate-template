@@ -99,6 +99,24 @@ ratings:
   zuverlaessigkeit: 4
   sicherheit: 4
   preisleistung: 3.65
+externalEvidence:
+  status: constrained
+  constrained: true
+  professionalReviews:
+    - publisher: "PetTech AI"
+      title: "PETKIT Fresh Element Infinity Review 2025"
+      url: "https://pettechai.com/petkit-fresh-element-infinity-review-2025/"
+      checkedAt: "2026-08-11"
+      methodology: "research-led-editorial-review"
+      positives:
+        - "Anti-Jam-Konzept, versiegelter Futterbehälter und Edelstahl-Napf werden als zentrale Stärken eingeordnet."
+      negatives:
+        - "Funktionsumfang unterscheidet sich je nach 3L-, 5L- und Kamera-Variante."
+      findings:
+        - "Die Quelle warnt indirekt vor Variantengleichsetzung, da einzelne Funktionen nur in bestimmten Ausführungen vorhanden sind."
+  note: >-
+    Es existieren unabhängige redaktionelle Einordnungen, aber keine ausreichend belastbare produktspezifische
+    Nutzerbasis für die konkrete im Repository geführte Infinity-Variante. Deshalb kein Consensus.
 decision:
   bestFor:
     - katze

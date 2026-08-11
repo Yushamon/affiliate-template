@@ -96,6 +96,13 @@ ratings:
   akku: 4.3
   zuverlaessigkeit: 4.2
   preisleistung: 4.5
+externalEvidence:
+  status: constrained
+  constrained: true
+  note: >-
+    Für die exakt als oneisall 3,2L Cordless Cat Fountain identifizierte Variante wurde am 11.08.2026
+    keine ausreichend belastbare Kombination aus unabhängigem Professional Review und produktspezifischer
+    Nutzerbasis gefunden. Markenweite oneisall-Bewertungen werden nicht auf dieses Modell übertragen.
 decision:
   bestFor:
     - ein bis zwei Katzen
