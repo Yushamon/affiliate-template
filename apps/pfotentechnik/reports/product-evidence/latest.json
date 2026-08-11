@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-10T20:36:47.997Z",
+  "generatedAt": "2026-08-11T06:21:45.532Z",
   "summary": {
     "products": 82,
     "covered": 20,
-    "complete": 14,
-    "partial": 6,
+    "complete": 17,
+    "partial": 3,
     "missing": 62
   },
   "rows": [
@@ -496,15 +496,12 @@
     {
       "slug": "petkit-eversweet-ultra",
       "file": "src/content/products/petkit-eversweet-ultra.md",
-      "status": "partial",
+      "status": "complete",
       "hasExternal": true,
-      "professional": 0,
+      "professional": 1,
       "userSources": 1,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "consensus"
-      ]
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "petkit-fresh-element-infinity",
@@ -561,16 +558,12 @@
     {
       "slug": "petkit-yumshare-solo-2",
       "file": "src/content/products/petkit-yumshare-solo-2.md",
-      "status": "partial",
+      "status": "complete",
       "hasExternal": true,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "petlibro-air-automatic-feeder",
@@ -797,15 +790,12 @@
     {
       "slug": "petsafe-freshfeed-refrigerated-feeder",
       "file": "src/content/products/petsafe-freshfeed-refrigerated-feeder.md",
-      "status": "partial",
+      "status": "complete",
       "hasExternal": true,
-      "professional": 0,
+      "professional": 2,
       "userSources": 1,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "consensus"
-      ]
+      "consensus": 4,
+      "missingParts": []
     },
     {
       "slug": "petsafe-healthy-pet-simply-feed",

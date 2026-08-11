@@ -93,26 +93,65 @@ ratings:
   reinigung: 4.6
   nassfutter: 4.8
 externalEvidence:
-  professionalReviews: []
+  professionalReviews:
+    - publisher: "Her Cozy Crew"
+      title: "PetSafe FreshFeed Review: Automatic Wet Food Feeder for Cats"
+      url: "https://www.hercozycrew.com/post/petsafe-freshfeed-refrigerated-pet-feeder-review"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on"
+      positives:
+        - "Die Autorin nutzte das Gerät im eigenen Haushalt mit zwei Katzen und beschreibt Einrichtung und Zeitplanung als unkompliziert."
+        - "Die aktive Kühlung erleichterte die planbare Nassfutterfütterung im Alltag."
+      negatives:
+        - "Das Testgerät wurde von PetSafe kostenlos zur Verfügung gestellt."
+      findings:
+        - "Der Beitrag basiert auf tatsächlicher Nutzung im Haushalt und kennzeichnet die Produktbereitstellung transparent."
+    - publisher: "Spchlang"
+      title: "PetSafe FreshFeed Frozen Pet Food Review: Fresh Food on Schedule Without Rushing"
+      url: "https://www.spchlang.com/index.php/2026/07/03/petsafe-freshfeed-frozen-pet-food-review-fresh-food-on-schedule-without-rushing/"
+      publishedAt: "2026-07-03"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on"
+      positives:
+        - "Der Praxiseinsatz hebt aktive Kühlung und vorbereitete kleine Mahlzeiten als Hauptnutzen hervor."
+      negatives:
+        - "Der Beitrag liefert noch keine belastbare Langzeiterfahrung über viele Monate."
+      findings:
+        - "Die Quelle beschreibt den Einsatz mit einem Hund, der frische beziehungsweise gekühlte Nahrung erhält."
   userReviews:
     - platform: "Chewy"
       url: "https://www.chewy.com/petsafe-freshfeed-refrigerated-dog/product-reviews/3967438"
-      checkedAt: "2026-08-10"
+      checkedAt: "2026-08-11"
       rating: 4.5
       scale: 5
       reviewCount: 31
       recurringPositives:
-        - "Aktive Kühlung, App-Einrichtung und planbare Mahlzeiten werden häufig positiv beschrieben."
+        - "Aktive Kühlung, einfache App-Einrichtung und planbare Mahlzeiten werden häufig positiv beschrieben."
+        - "Leiser Betrieb und leicht herausnehmbare Edelstahl-Einsätze werden wiederholt gelobt."
       recurringCriticism:
-        - "Viele Rezensionen stammen aus kostenlos bereitgestellten Produkttests und sind vorsichtig zu gewichten."
-        - "Hohe Bauform und schmale Näpfe können für manche Katzen unpassend sein."
+        - "Ein großer Teil der frühen Rezensionen stammt aus kostenlos bereitgestellten Produkttests und ist daher vorsichtig zu gewichten."
+        - "Hohe Bauform und schmale Näpfe passen nicht zu jedem Tier; eine organische Rezension nennt Whisker-Stress bei einer Katze."
   consensus:
-    strengths: []
-    weaknesses: []
+    strengths:
+      - finding: "Aktive Kühlung und vorbereitete zeitgesteuerte Nass- oder Frischfuttermahlzeiten funktionieren in mehreren Quellen als klarer Alltagsvorteil."
+        sourceCount: 3
+        confidence: "high"
+      - finding: "Einrichtung und App-Steuerung werden überwiegend als unkompliziert beschrieben."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Napfform und Bauhöhe können für einzelne Katzen unpassend sein."
+        sourceCount: 1
+        confidence: "medium"
+      - finding: "Die Nutzerbasis ist wegen vieler incentivierter Frühbewertungen noch kein starker Beleg für Langzeitzuverlässigkeit."
+        sourceCount: 1
+        confidence: "high"
     editorialAssessment: >-
-      Die frühe Nutzerbasis ist überwiegend positiv, enthält aber viele incentivierte Bewertungen. Ohne unabhängigen Praxistest wird noch kein Mehrquellen-Konsens abgeleitet.
+      Zwei Hands-on-Berichte und die Chewy-Basis stützen den Kernnutzen der aktiven Kühlung. Wegen des jungen Produkts
+      und vieler incentivierter Frühbewertungen bleiben Haltbarkeit und Langzeitzuverlässigkeit offen.
   note: >-
-    Teil-Evidenz. Die Nutzerquelle wird wegen des hohen Anteils kostenlos bereitgestellter Testprodukte vorsichtig gewichtet.
+    Die kostenlose Bereitstellung im Her-Cozy-Crew-Test und der hohe Anteil incentivierter Chewy-Bewertungen werden
+    ausdrücklich berücksichtigt. Externe Ratings fließen nicht in den PfotenTechnik-Score ein.
 decision:
   bestFor:
     - Katzen und kleine Hunde
@@ -268,3 +307,4 @@ decisionFacts:
 Der PetSafe FreshFeed ist das interessanteste der drei Modelle, weil er eine echte Marktlücke schließt. Im Gegensatz zu Drehtellern mit Eisakku soll er Nass- und Frischfutter aktiv auf Kühlschranktemperatur halten. Das ist praktisch, macht den Automaten aber vollständig von einer stabilen Stromversorgung abhängig.
 
 Quellen: [PetSafe Produktseite](https://www.petsafe.com/p/freshfeed-refrigerated-pet-feeder/PFD00-18290/), [Chewy-Käuferberichte](https://www.chewy.com/petsafe-freshfeed-refrigerated-dog/dp/3967454) und [Nutzererfahrung 2026](https://www.reddit.com/r/catfood/comments/1tucb4m/new_petsafe_automatic_wet_food_refrigerated_feeder/).
+

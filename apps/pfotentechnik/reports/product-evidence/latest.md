@@ -2,8 +2,8 @@
 
 - Produkte: 82
 - Mit externalEvidence: 20
-- Vollständig: 14
-- Teilweise: 6
+- Vollständig: 17
+- Teilweise: 3
 - Ohne Evidenz: 62
 
 ## Vollständig
@@ -12,11 +12,14 @@
 - oneisall-3-5l-cordless-fountain
 - pawsync-smart-pet-feeder
 - petkit-eversweet-max-cordless
+- petkit-eversweet-ultra
 - petkit-yumshare-dual-hopper
+- petkit-yumshare-solo-2
 - petlibro-dockstream-rfid-smart
 - petlibro-granary-camera-feeder
 - petlibro-polar-wet-food-feeder
 - petlibro-stainless-steel-fountain
+- petsafe-freshfeed-refrigerated-feeder
 - surefeed-microchip-pet-feeder-connect
 - tractive-dog-6-xl
 - tractive-dog-6
@@ -27,9 +30,6 @@
 
 - catit-pixi-vision-smart-feeder · fehlt: professionalReviews
 - oneisall-2-in-1-feeder-water · fehlt: userReviews, consensus
-- petkit-eversweet-ultra · fehlt: professionalReviews, consensus
-- petkit-yumshare-solo-2 · fehlt: professionalReviews, userReviews, consensus
-- petsafe-freshfeed-refrigerated-feeder · fehlt: professionalReviews, consensus
 - xiaomi-smart-pet-food-feeder-2 · fehlt: professionalReviews
 
 ## Ohne Evidenz

@@ -103,16 +103,45 @@ ratings:
   reinigung: 4
   kamera: 4.2
 externalEvidence:
-  professionalReviews: []
-  userReviews: []
+  professionalReviews:
+    - publisher: "PetTech AI"
+      title: "PETKIT YumShare Solo 2 Review: Useful AI or Breakfast Surveillance?"
+      url: "https://pettechai.com/petkit-yumshare-solo-2-camera-review/"
+      checkedAt: "2026-08-11"
+      methodology: "editorial-review"
+      positives:
+        - "Die redaktionelle Analyse sieht den größten Mehrwert in der Verbindung aus Futterausgabe, Kamera, Tiererkennung und Mahlzeitenhistorie."
+        - "Für Haushalte, die visuell prüfen möchten, was nach der Futterausgabe passiert, wird das Konzept als sinnvoll eingeordnet."
+      negatives:
+        - "Die Tiererkennung steuert keinen physischen Zugang und verhindert daher nicht, dass ein anderes Tier frisst."
+        - "Für das 2026 eingeführte Modell fehlt noch belastbare Langzeiterfahrung."
+      findings:
+        - "Die Quelle kennzeichnet ausdrücklich, dass kein Langzeit-Hands-on-Test durchgeführt wurde und basiert ihre Einordnung auf Spezifikationen, Softwarebedingungen und früher Eigentümer-Evidenz."
+  userReviews:
+    - platform: "TikTok Shop"
+      url: "https://shop.tiktok.com/us/pdp/smart-automatic-pet-feeder-petkit-yumshare-solo-with-1080p-camera-app/1729471870039069198"
+      checkedAt: "2026-08-11"
+      rating: 5
+      scale: 5
+      reviewCount: 7
+      recurringPositives:
+        - "Die kleine frühe Stichprobe lobt Kameraqualität, einfache Bedienung und Komfort der automatischen Fütterung."
+      recurringCriticism: []
   consensus:
-    strengths: []
-    weaknesses: []
+    strengths:
+      - finding: "Kamera, Zeitplanung und visuelle Mahlzeitenkontrolle sind der klar erkennbare Mehrwert des Solo 2."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Die AI-Zuordnung ist keine physische Zugangskontrolle und die Langzeitzuverlässigkeit des jungen Modells ist noch nicht belastbar."
+        sourceCount: 1
+        confidence: "medium"
     editorialAssessment: >-
-      Für das konkrete Modell YumShare Solo 2 ist die unabhängige, modellgenaue Review-Lage zum Prüfzeitpunkt noch zu dünn.
-      Bewertungen und Tests des älteren YumShare Solo werden nicht auf Solo 2 übertragen.
+      Die externe Evidenz reicht jetzt für eine vorsichtige Einordnung, aber nicht für starke Langzeitaussagen.
+      Die Nutzerstichprobe ist klein und die professionelle Quelle ist ausdrücklich research-led statt hands-on.
   note: >-
-    Evidence-Gap bewusst dokumentiert. Externe Bewertungen des Vorgängers werden nicht als Solo-2-Evidenz verwendet.
+    Bewertungen des älteren YumShare Solo werden nicht auf Solo 2 übertragen. Die kleine TikTok-Shop-Stichprobe
+    wird nur als frühes produktspezifisches Nutzersignal gewertet.
 decision:
   bestFor:
     - Katzen und kleine Hunde mit Trockenfutter
@@ -372,3 +401,4 @@ Diese Seite ist ein Datencheck und kein eigener Langzeittest.
 ## Fazit
 
 Der PETKIT YumShare Solo 2 ist ein gut ausgestatteter Kamera-Futterautomat für Trockenfutter. Dual-Band-WLAN, flexible Zeitpläne und der Edelstahl-Napf sind klare Vorteile. Die wichtigsten Grenzen sind die fehlende Zugangskontrolle, mögliche Abo-Funktionen und die deaktivierte Kamera im Batteriebetrieb.
+

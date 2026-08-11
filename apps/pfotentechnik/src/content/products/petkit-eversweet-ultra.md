@@ -99,25 +99,45 @@ ratings:
   tiererkennung: 3.8
   preisleistung: 3.6
 externalEvidence:
-  professionalReviews: []
+  professionalReviews:
+    - publisher: "The Verge"
+      title: "Petkit's first automatic wet food feeder keeps track of how much your pet eats"
+      url: "https://www.theverge.com/news/850992/petkit-ai-camera-yumshare-daily-feast-automatic-wet-food-feeder-eversweet-ultra-fountain"
+      publishedAt: "2026-01-02"
+      checkedAt: "2026-08-11"
+      methodology: "editorial-review"
+      positives:
+        - "Die unabhängige CES-Berichterstattung hebt das nicht-rezirkulierende Wasserprinzip und die individuelle Trinkbeobachtung per Kamera als Kernunterschiede hervor."
+      negatives:
+        - "Die Berichterstattung ist Produktvorstellung und kein Langzeit-Praxistest."
+      findings:
+        - "The Verge beschreibt das konkrete Eversweet-Ultra-Modell mit 1080p-Kamera, Mehrtier-Erkennung und getrenntem Frisch-/Abwasserprinzip."
   userReviews:
     - platform: "Chewy"
       url: "https://www.chewy.com/petkit-ever-sweet-ultra-automatic/product-reviews/4452958"
-      checkedAt: "2026-08-10"
+      checkedAt: "2026-08-11"
       rating: 4.3
       scale: 5
       reviewCount: 4
       recurringPositives:
-        - "Reinigungskonzept und reduzierte Filterwartung werden positiv hervorgehoben."
+        - "Die kleine Stichprobe lobt Trinkakzeptanz, Kamera und das wartungsarme Reinigungskonzept."
       recurringCriticism:
-        - "Die kleine Stichprobe enthält Kritik an App-Abhängigkeit und Bedienung."
+        - "Ein Käufer berichtet, dass die Erstinbetriebnahme entgegen der Erwartung eine App-Bindung erforderte."
+        - "Ein weiterer Nutzer berichtet von unzuverlässiger Tiererkennung."
   consensus:
-    strengths: []
-    weaknesses: []
+    strengths:
+      - finding: "Frisch-/Abwassertrennung und individuelle Trinkbeobachtung sind die klarsten Differenzierungsmerkmale."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "App-Abhängigkeit und Tiererkennung sind in der frühen Nutzerbasis noch nicht durchgehend verlässlich."
+        sourceCount: 1
+        confidence: "low"
     editorialAssessment: >-
-      Die vorhandene Nutzerstichprobe ist zu klein für belastbaren Konsens.
+      Die unabhängige Produktberichterstattung bestätigt das technische Konzept, während die kleine Chewy-Stichprobe
+      erste praktische Stärken und Schwächen zeigt. Für Langzeitzuverlässigkeit ist die Datenlage weiterhin zu jung.
   note: >-
-    Teil-Evidenz. Zum Prüfzeitpunkt liegt keine ausreichend belastbare unabhängige Hands-on-Review des konkreten Modells vor.
+    Kein unabhängiger Langzeit-Hands-on-Test. Herstellerbewertungen werden nicht als unabhängige Nutzerquelle gewertet.
 decision:
   bestFor:
     - Mehrkatzenhaushalte mit individueller Trinkauswertung
@@ -553,3 +573,4 @@ Weniger passend ist er für:
 Die technischen Angaben stammen von der [aktuellen PETKIT-Produktseite](https://www.petkit.com/products/eversweet-ultra-with-camera-pet-water-fountain), der [offiziellen Vorstellung des OneWay-Systems](https://www.petkit.com/blogs/blog/introducing-eversweet-ultra-cat-water-fountain-with-wastewater-separation-system-and-ai-hydration-tracking), der [PETKIT-Pflegeeinordnung](https://www.petkit.com/blogs/blog/2026-best-no-filter-cat-water-fountain-how-petkit-eversweet-ultra-keeps-water-clean), der [Modellvergleichsseite](https://www.petkit.com/blogs/blog/how-to-choose-an-automatic-water-fountain-for-senior-cats) und der [Cube-C-Produktseite](https://www.petkit.com/products/fountain-cubec).
 
 Für die frühe Alltagseinordnung wurden außerdem öffentlich sichtbare Bewertungen auf der offiziellen Produktseite berücksichtigt. Es liegt kein eigener Langzeit-, Hygiene-, Kamera-, Trinkmengen-, App- oder Cloudtest vor. Die Produktbilder sind redaktionelle Darstellungen und müssen hinsichtlich Farbe, Form und Lieferumfang mit dem konkret verlinkten Amazon-Angebot abgeglichen werden.
+
