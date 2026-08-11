@@ -91,6 +91,16 @@ ratings:
   zuverlaessigkeit: 3.35
   sicherheit: 3.6
   preisleistung: 3.6
+externalEvidence:
+  professionalReviews: []
+  userReviews: []
+  consensus: []
+  researchStatus: "constrained"
+  researchReason: >-
+    Die auffindbaren Quellen vermischen PAWBBY Smart Pet Feeder, Xiaomi/Mijia XWPF01MG sowie Kamera- und Regionalvarianten. Ohne eindeutige Modellidentität wäre eine Übernahme von Reviews methodisch nicht belastbar.
+  researchCheckedAt: "2026-08-11"
+  note: >-
+    Bewertungen von Xiaomi XWPF01MG oder PAWBBY Treat-Cam-Varianten werden nicht auf diese generische Produktseite übertragen.
 decision:
   bestFor:
     - katze
@@ -208,3 +218,4 @@ decisionFacts:
 Vernetzter Trockenfutterautomat aus dem PAWBBY-Umfeld mit Xiaomi-Home-Anbindung je nach Modellversion.
 
 Nur empfehlenswert, wenn Modellnummer, App-Region und Händlerangaben eindeutig zusammenpassen.
+

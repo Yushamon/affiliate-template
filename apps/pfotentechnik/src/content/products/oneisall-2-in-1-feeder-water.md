@@ -107,6 +107,11 @@ externalEvidence:
       findings:
         - "Das Gerät eignet sich laut WIRED vor allem als einfache, platzsparende Lösung."
   userReviews: []
+  researchStatus: "constrained"
+  researchReason: >-
+    Belastbarer unabhängiger WIRED-Test vorhanden, aber zum Prüfzeitpunkt keine ausreichend belastbare
+    produktspezifische Nutzerbasis für einen Mehrquellen-Konsens.
+  researchCheckedAt: "2026-08-11"
   consensus:
     strengths: []
     weaknesses: []

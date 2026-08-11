@@ -104,6 +104,29 @@ ratings:
   service_und_transparenz: 3.2
   folgekosten: 4.0
 
+externalEvidence:
+  constrained: true
+  professionalReviews: []
+  userReviews:
+    - platform: "Desertcart · weitergereichte Marketplace-Bewertungen"
+      url: "https://www.desertcart.in/products/765634740-90l-self-cleaning-cat-litter-tray-app-control-6-safety-sensors-easy-clean-litter-robot-extra-large-litter-boxes-for-multiple-cats-anti-pinch-smart-robot-automatic-cat-litter-tray-for-multi-cats"
+      checkedAt: "2026-08-11"
+      rating: 4.4
+      scale: 5
+      reviewCount: 290
+      recurringPositives:
+        - "Positive Berichte nennen weniger tägliches Schaufeln, große Nutzfläche und funktionierende Sicherheitssensoren."
+        - "Mehrere Nutzer beschreiben die automatische Reinigung als deutliche Alltagserleichterung."
+      recurringCriticism:
+        - "Ein ausführlicher Langzeitbericht nennt wiederkehrende WLAN-Abbrüche, schwache App-Nutzung und Geruchsprobleme nach mehreren Monaten."
+        - "Die Herkunft und Moderation der weitergereichten Marketplace-Bewertungen ist nicht so transparent wie bei einer direkten Händlerplattform."
+  consensus: []
+  constraintReason: >-
+    Eine große Nutzerstichprobe ist auffindbar, aber keine belastbare unabhängige professionelle Review-Quelle des
+    konkreten Devoko-90L-Modells. Deshalb wird kein Consensus konstruiert.
+  note: >-
+    Die Nutzerquelle wird als eingeschränkt belastbar markiert; keine Hersteller- oder Marketplace-Aussage wird als
+    professioneller Test ausgegeben.
 decision:
   bestFor:
     - "Mehrkatzenhaushalte mit Bedarf an großem Innenraum"

@@ -32,6 +32,50 @@ price:
     type: "merchant"
 rating: 3.9
 ratings: { sicherheit: 4.0, platz: 3.5, reinigung: 3.8, folgekosten: 3.6, datenschutz: 3.5 }
+externalEvidence:
+  professionalReviews:
+    - publisher: "heise bestenlisten"
+      title: "Selbstreinigendes Katzenklo Neakasa M1 Plus im Test: offen, smart und mit App"
+      url: "https://www.heise.de/bestenlisten/testbericht/selbstreinigendes-katzenklo-neakasa-m1-plus-im-test-offen-smart-und-mit-app/m3dcek4"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on-editorial-test"
+      positives:
+        - "Die Selbstreinigung arbeitet im Test zuverlässig; offene Bauform und App werden als Vorteile eingeordnet."
+      negatives:
+        - "Der obere Rand wird im Betrieb als hygienische Schwachstelle beschrieben."
+      findings:
+        - "Heise testet ausdrücklich das M1-Plus-Modell."
+  userReviews:
+    - platform: "Rakuten"
+      url: "https://review.rakuten.co.jp/item/1/387047_10000133/1.1/"
+      checkedAt: "2026-08-11"
+      rating: 4.47
+      scale: 5
+      reviewCount: 62
+      recurringPositives:
+        - "Viele Käufer beschreiben eine deutliche Entlastung bei der täglichen Reinigung und gute Akzeptanz."
+      recurringCriticism:
+        - "Einzelne Rückmeldungen nennen Größe, Streuverteilung und Geruch als Nachteile."
+    - platform: "Rentio"
+      url: "https://www.rentio.jp/products/ps0122gj/reviews"
+      checkedAt: "2026-08-11"
+      rating: 2.0
+      scale: 5
+      reviewCount: 2
+      recurringPositives: []
+      recurringCriticism:
+        - "Beide Produktbewertungen kritisieren Größe beziehungsweise Streuverteilung und Staub."
+  consensus:
+    strengths:
+      - finding: "Die offene Bauform und zuverlässige automatische Reinigung sind die am besten gestützten Stärken."
+        sourceCount: 3
+        confidence: "high"
+    weaknesses:
+      - finding: "Große Stellfläche, Streuverteilung und Reinigungsbedarf an Randbereichen bleiben reale Gegenpunkte."
+        sourceCount: 3
+        confidence: "medium"
+    editorialAssessment: >-
+      Professioneller Test und Nutzerquellen stimmen beim Nutzen der offenen Bauform überein; bei Sauberkeit und Streuverteilung fallen Nutzerberichte gemischter aus.
 decision:
   bestFor: ["offene Bauform", "Katzen von etwa 1 bis 15 kg laut Hersteller", "große Katzen mit genügend Platz zum Drehen"]
   attention: ["Einstieg liegt laut Hersteller etwa 35,2 cm hoch", "unter 1 kg nur Kitten-Modus ohne Automatik", "nur schnell klumpende, siebfähige Streu verwenden"]

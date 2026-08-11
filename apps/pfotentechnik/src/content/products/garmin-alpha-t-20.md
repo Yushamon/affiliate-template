@@ -96,6 +96,56 @@ ratings:
   robustheit: 4.4
   tragekomfort: 3.2
   preisleistung: 3.1
+externalEvidence:
+  professionalReviews:
+    - publisher: "Treeline Review"
+      title: "Best GPS Dog Collars of 2026"
+      url: "https://www.treelinereview.com/gearreviews/best-gps-dog-collars"
+      checkedAt: "2026-08-11"
+      methodology: "comparative-hands-on-testing"
+      positives:
+        - "Im Vergleichstest hatte der Alpha T 20 die schnellste Verbindungsaufnahme der getesteten GPS-Halsbänder."
+        - "Dynamische Aktualisierung und Off-grid-Funk machen das Modell besonders für weit laufende Arbeits- und Jagdhunde interessant."
+      negatives:
+        - "Das Halsband wird als relativ sperrig beschrieben."
+        - "Für die vollständige Nutzung ist ein separates kompatibles Garmin-Handgerät nötig."
+      findings:
+        - "Der Test bewertet Verbindungsgeschwindigkeit, Laufzeit und Nutzung im Gelände mit einem Alpha-10-Handgerät."
+  userReviews:
+    - platform: "LivingActive"
+      url: "https://www.livingactive.de/garmin-alpha-t-20-k-gps-hundehalsband"
+      checkedAt: "2026-08-11"
+      rating: 4.95
+      scale: 5
+      reviewCount: 9
+      recurringPositives:
+        - "Käufer loben Verarbeitung, einfache Nutzung und Reichweite gegenüber älteren Garmin-Systemen."
+      recurringCriticism:
+        - "Die Stichprobe ist klein und überwiegend sehr positiv, weshalb sie nur ergänzend gewertet wird."
+    - platform: "Varuste.net · verifizierte Käufer"
+      url: "https://varuste.net/en/tahdet.php?_id=125253"
+      checkedAt: "2026-08-11"
+      rating: null
+      scale: 5
+      reviewCount: 18
+      recurringPositives:
+        - "Mehrere verifizierte Käufer berichten von zuverlässigem Einsatz in unterschiedlichem Gelände."
+      recurringCriticism:
+        - "Einzelne Käufer berichten von deutlich geringerer realer Reichweite als der maximal beworbenen Distanz."
+  consensus:
+    strengths:
+      - finding: "Schnelle Positionsupdates und robuste Off-grid-Ortung sind die stärksten wiederkehrenden Argumente für den Alpha T 20."
+        sourceCount: 3
+        confidence: "high"
+    weaknesses:
+      - finding: "Das System ist teuer und auf ein separates Garmin-Handgerät angewiesen; reale Funkreichweite kann im Gelände deutlich unter dem Maximalwert liegen."
+        sourceCount: 3
+        confidence: "high"
+    editorialAssessment: >-
+      Hands-on-Vergleich und zwei Käuferquellen liefern ein belastbares Bild für den Einsatz mit Arbeits- und Jagdhunden.
+      Die maximale Herstellerreichweite wird ausdrücklich nicht als garantierte Praxisreichweite übernommen.
+  note: >-
+    Nutzerbewertungen und professionelle Tests bleiben vom redaktionellen PfotenTechnik-Score getrennt.
 decision:
   bestFor:
     - Jagd-, Such- und Arbeitshunde

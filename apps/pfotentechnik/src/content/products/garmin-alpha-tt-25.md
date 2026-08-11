@@ -89,6 +89,37 @@ ratings:
   akku: 4.5
   tragekomfort: 3.2
   kosten: 3.1
+externalEvidence:
+  constrained: true
+  professionalReviews:
+    - publisher: "Chien-de-chasse.net"
+      title: "Test Garmin Alpha TT 25"
+      url: "https://www.chien-de-chasse.net/test-garmin-alpha-tt-25-gps-collier-de-suivi-et-dentrainement-pour-chiens"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on-editorial-review"
+      positives:
+        - "Der Test beschreibt präzise GPS-Ortung, schnelle Aktualisierung und robuste Verarbeitung im Gelände."
+        - "Akkulaufzeit und Trainingsoptionen werden für Arbeits- und Jagdhunde positiv bewertet."
+      negatives:
+        - "Preis und notwendiges kompatibles Handgerät machen das System für normale Alltagsspaziergänge überdimensioniert."
+      findings:
+        - "Die Quelle ordnet das TT 25 ausdrücklich als spezialisiertes Arbeits- und Jagdhundewerkzeug ein."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/garmin-alpha-tt-25-gps-tracker/product-reviews/929070"
+      checkedAt: "2026-08-11"
+      rating: 5.0
+      scale: 5
+      reviewCount: 1
+      recurringPositives:
+        - "Die einzige verfügbare Chewy-Rezension bestätigt vollständigen Lieferumfang und einfache Kopplung."
+      recurringCriticism: []
+  consensus: []
+  constraintReason: >-
+    Ein professioneller Test ist vorhanden, die direkt produktspezifische Nutzerbasis ist mit nur einer Bewertung aber
+    zu klein für einen belastbaren Consensus.
+  note: >-
+    Bewertungen verwandter Garmin-Modelle werden nicht auf das TT 25 übertragen.
 decision:
   bestFor:
     - erfahrene Jagd- und Arbeitshundeführer

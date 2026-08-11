@@ -117,6 +117,69 @@ ratings:
   tragekomfort: 4.0
   kosten: 3.9
 
+externalEvidence:
+  professionalReviews:
+    - publisher: "CHIP"
+      title: "Weenect XT im Test"
+      url: "https://www.chip.de/test/Weenect-XT-Hundetracker-im-Test_186575552.html"
+      publishedAt: "2026-02-23"
+      checkedAt: "2026-08-11"
+      methodology: "comparative hands-on"
+      positives:
+        - "CHIP bewertet Tracking-Geschwindigkeit und Tracking-Genauigkeit im Praxistest jeweils mit sehr gut."
+        - "Sitz am Halsband, weltweite Nutzung, Vibration und Ton werden als klare Stärken genannt."
+        - "Die gemessene Akkuleistung wird als gut eingeordnet."
+      negatives:
+        - "Premium-Abo und die Befestigung am Geschirr werden als Nachteile genannt."
+        - "Bei leerem Akku kann die App-Verbindung verloren gehen und muss anschließend erneut hergestellt werden."
+      findings:
+        - "Das CHIP-Testcenter prüfte GPS-Tracker über mehrere Wochen mit Hunden im Park, Wald und am Wasser sowie mit mindestens 30 Minuten Live-Tracking."
+    - publisher: "Dogorama"
+      title: "Weenect XT GPS Tracker für Hunde im Test 2026"
+      url: "https://dogorama.app/de-de/tests/hundezubehoer/weenect/xt-gps-tracker-fuer-hunde/"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on"
+      positives:
+        - "Dogorama beschreibt präzise Ortung, robuste Verarbeitung und lange Akkulaufzeit als zentrale Stärken."
+        - "Live-Tracking, LED und Rückruffunktionen werden im Alltag positiv bewertet."
+      negatives:
+        - "Das Abo bleibt ein laufender Kostenfaktor."
+      findings:
+        - "Der Beitrag dokumentiert praktischen Einsatz und eine redaktionelle Gesamtwertung von 4,3 von 5 Pfoten."
+  userReviews:
+    - platform: "Trustpilot"
+      url: "https://de.trustpilot.com/review/weenect.com"
+      checkedAt: "2026-08-11"
+      rating: 4.6
+      scale: 5
+      reviewCount: 22470
+      scope: "brand-wide"
+      recurringPositives:
+        - "Viele aktuelle Bewertungen nennen zuverlässiges Tracking, einfache Nutzung und schnellen Austausch beziehungsweise Support positiv."
+      recurringCriticism:
+        - "Wiederkehrende Kritik betrifft Verbindungsabbrüche, abweichende Akkulaufzeit und einzelne Software- beziehungsweise Supportprobleme."
+  consensus:
+    strengths:
+      - finding: "Die unabhängigen XT-Praxistests stimmen bei präzisem Tracking, gutem Sitz und brauchbarer Akkuleistung überein."
+        sourceCount: 2
+        confidence: "high"
+      - finding: "Ton, Vibration und Live-Tracking sind im Alltag sinnvolle Zusatzfunktionen."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "Das verpflichtende Abo ist ein konsistenter Nachteil des Nutzungskonzepts."
+        sourceCount: 2
+        confidence: "high"
+      - finding: "Verbindungsabbrüche und reale Akkulaufzeit können je nach Netz und Nutzung vom Ideal abweichen."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Zwei unabhängige Praxistests liefern für das konkrete XT-Modell eine belastbare technische Einordnung.
+      Die Trustpilot-Basis ist ausdrücklich markenweit und wird nicht als produktspezifisches Rating behandelt,
+      bestätigt aber typische Service-, Verbindungs- und Akku-Themen auf Plattformebene.
+  note: >-
+    Trustpilot bewertet Weenect als Marke und mischt verschiedene Tracker-Modelle. Das Rating wird deshalb nur
+    als markenweites Nutzersignal dokumentiert und nicht auf den XT als produktspezifische Sternebewertung übertragen.
 decision:
   bestFor:
     - "mittelgroße und große Hunde"
@@ -699,3 +762,4 @@ Für den Ernstfall ergänzt der Service den Ablauf aus [Hund entlaufen: Ist GPS 
 - [Weenect Hilfe-Center: Akkulaufzeit verlängern](https://help.weenect.com/hc/de/articles/21490491097490-Wie-verl%C3%A4ngert-man-die-Akkulaufzeit-Ihres-Weenect-Trackers) – Laufzeitbedingungen und Einfluss des Mobilfunks
 - [Weenect Hilfe-Center: XT befestigen](https://help.weenect.com/hc/de/articles/30635678212242-Wie-befestigen-Sie-den-Weenect-XT-an-Ihrem-Halsband-oder-Geschirr) – Silikon- und Klettbefestigung
 - [Weenect Hilfe-Center: Echtzeitverfolgung](https://help.weenect.com/hc/de/articles/360010649413-Wie-kann-ich-mein-Tier-in-Echtzeit-verfolgen) – Superlive mit Sekundenupdates
+

@@ -95,6 +95,59 @@ ratings:
   zuverlaessigkeit: 3.65
   sicherheit: 3.65
   preisleistung: 4
+externalEvidence:
+  professionalReviews:
+    - publisher: "Reviewed"
+      title: "Cat Mate C200 Wet Food Automatic Feeder Review"
+      url: "https://www.reviewed.com/pets/content/cat-mate-c200-review-automatic-cat-feeder-wet-food"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on-editorial-review"
+      positives:
+        - "Im persönlichen Einsatz löste der C200 zuverlässig die zeitversetzte Nassfutter-Fütterung."
+        - "Die geschlossene Konstruktion wird als schwer von der Katze vorzeitig zu öffnen beschrieben."
+      negatives:
+        - "Der mechanische Timer ist nur grob einstellbar und läuft hörbar tickend."
+        - "Der Kühlakku hält laut Hands-on-Erfahrung nur einige Stunden und ist keine Lösung für lange Nassfutter-Zeiträume."
+      findings:
+        - "Der Review basiert auf konkreter Nutzung mit einer Katze und bewertet Timer, Kühlung, Einbruchsicherheit und Alltagstauglichkeit."
+    - publisher: "The Spruce Pets"
+      title: "The Best Automatic Cat Feeders Tested With Real Cats"
+      url: "https://www.thesprucepets.com/best-automatic-cat-feeders-4175145"
+      checkedAt: "2026-08-11"
+      methodology: "comparative-lab-and-home-testing"
+      positives:
+        - "Der C200 wird als besonders portable Lösung für Nass- oder Trockenfutter eingeordnet."
+        - "Batteriebetrieb, geringes Gewicht und die Möglichkeit für Kühlakkus werden positiv bewertet."
+      negatives:
+        - "Der Timer ist weniger präzise als bei moderneren automatischen Futterautomaten."
+      findings:
+        - "Die Vergleichsredaktion testete automatische Futterautomaten im Labor und anschließend in Haushalten mit echten Tieren."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/cat-mate-c200-2-bowl-automatic-dog/product-reviews/103147"
+      checkedAt: "2026-08-11"
+      rating: 4.0
+      scale: 5
+      reviewCount: 387
+      recurringPositives:
+        - "Viele Nutzer beschreiben den C200 als einfache und zuverlässige Lösung für zeitgesteuerte Mahlzeiten."
+        - "Besonders häufig wird die Eignung für Nassfutter und frühe Morgenfütterungen positiv erwähnt."
+      recurringCriticism:
+        - "Kritik betrifft die begrenzte Präzision des mechanischen Timers und die einfache Konstruktion."
+  consensus:
+    strengths:
+      - finding: "Der C200 ist besonders stark, wenn eine einfache, batteriebetriebene und appfreie Lösung für ein bis zwei zeitversetzte Mahlzeiten gesucht wird."
+        sourceCount: 3
+        confidence: "high"
+    weaknesses:
+      - finding: "Timerpräzision und Kühlleistung setzen klare Grenzen; für lange Abwesenheiten mit Nassfutter ist das Konzept nicht gedacht."
+        sourceCount: 3
+        confidence: "high"
+    editorialAssessment: >-
+      Zwei unabhängige Hands-on-/Vergleichsquellen und eine große produktspezifische Nutzerbasis ergeben für den C200
+      eine vergleichsweise belastbare externe Evidenz.
+  note: >-
+    Externe Nutzerbewertungen werden nicht in den PfotenTechnik-Score eingerechnet.
 decision:
   bestFor:
     - eine oder zwei Katzen

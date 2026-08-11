@@ -31,6 +31,52 @@ editorialStatus: "complete"
 recommendationStatus: "limited"
 maintenanceStatus: "complete"
 ratings: { sicherheit: 3.8, platz: 3.1, reinigung: 4.0, folgekosten: 2.8, datenschutz: 2.8 }
+externalEvidence:
+  professionalReviews:
+    - publisher: "Cats.com"
+      title: "Litter-Robot 5 Pro Review: We Tested It"
+      url: "https://cats.com/litter-robot-5-pro-review"
+      checkedAt: "2026-08-11"
+      methodology: "three-week-hands-on-test-with-two-cats"
+      positives:
+        - "Reinigungsleistung, Geruchskontrolle, Verarbeitung und Einrichtung werden im mehrwöchigen Test sehr positiv bewertet."
+      negatives:
+        - "Hoher Preis und ein für ältere Katzen teils anspruchsvoller Einstieg bleiben Nachteile."
+      findings:
+        - "Das konkrete 5-Pro-Modell wurde rund drei Wochen parallel zu Litter-Robot 5 und EVO getestet."
+    - publisher: "Good Housekeeping"
+      title: "Is the Litter-Robot 5 Pro Worth It? I Reviewed It With My Cat"
+      url: "https://www.goodhousekeeping.com/home-products/a69733299/litter-robot-5-review/"
+      checkedAt: "2026-08-11"
+      methodology: "independent-editorial-home-test"
+      positives:
+        - "Komfort, automatische Reinigung und Monitoring-Funktionen werden positiv eingeordnet."
+      negatives:
+        - "Preis und Eingewöhnung einer vorsichtigen Katze werden als Kaufhürden beschrieben."
+      findings:
+        - "Das konkrete 5-Pro-Modell wurde im Haushalt mit einer älteren Katze eingesetzt."
+  userReviews:
+    - platform: "Whisker"
+      url: "https://www.whisker.com/litter-robot-5-pro"
+      checkedAt: "2026-08-11"
+      rating: 4.4
+      scale: 5
+      reviewCount: 70
+      recurringPositives:
+        - "Viele Käufer loben Komfort, Geruchskontrolle und automatische Reinigung."
+      recurringCriticism:
+        - "Ein Teil der Rückmeldungen betrifft Software-, Kamera- oder Verbindungsprobleme."
+  consensus:
+    strengths:
+      - finding: "Reinigungskomfort, Geruchskontrolle und Monitoring sind die am besten gestützten Stärken."
+        sourceCount: 3
+        confidence: "high"
+    weaknesses:
+      - finding: "Hoher Preis sowie noch nicht durchgehend reife Software- und Kamera-Funktionen sind die wiederkehrenden Gegenargumente."
+        sourceCount: 3
+        confidence: "high"
+    editorialAssessment: >-
+      Für das Litter-Robot 5 Pro liegt belastbare produktspezifische Evidenz vor. Die mechanische Grundfunktion ist stärker gestützt als einzelne AI-Funktionen.
 decision:
   bestFor: ["Katzen zwischen rund 1,36 und 13,6 kg laut Hersteller", "bis zu fünf Katzen", "Haushalte mit Platz für ein geschlossenes Trommelsystem"]
   attention: ["Kameraerkennung einzelner Katzen benötigt laut Hersteller Whisker+", "Mindestgewicht und Stellfläche vor Kauf prüfen", "App-Trends sind keine Diagnose"]

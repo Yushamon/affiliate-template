@@ -32,6 +32,60 @@ price:
     type: "merchant"
 rating: 3.6
 ratings: { interaktion: 4.3, datenschutz: 3.0, folgekosten: 2.8, alltag: 3.7 }
+externalEvidence:
+  professionalReviews:
+    - publisher: "WIRED"
+      title: "Review: Furbo 360 Dog Camera"
+      url: "https://www.wired.com/review/furbo-360-dog-camera/"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on-editorial-review"
+      positives:
+        - "360-Grad-Drehung und Auto Dog Tracking erweitern die Abdeckung gegenüber dem Vorgänger deutlich."
+        - "1080p-Bild und Farbnachtsicht werden als klar und praktisch beschrieben."
+      negatives:
+        - "Die App wird als ausbaufähig bewertet."
+        - "Mehrere erweiterte Funktionen liegen hinter dem optionalen Dog-Nanny-Abonnement."
+      findings:
+        - "WIRED bewertete das konkrete 360-Modell mit 9/10 und beschreibt praktische Nutzung mit Hunden."
+    - publisher: "Digital Camera World"
+      title: "Furbo 360 Dog camera review"
+      url: "https://www.digitalcameraworld.com/reviews/furbo-360-dog-camera-review"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on-editorial-review"
+      positives:
+        - "Bild, Audio, App-Bedienung und Funktionsumfang werden insgesamt positiv bewertet."
+        - "Der Leckerliwerfer ist im passenden Größenbereich praktisch und unterhaltsam."
+      negatives:
+        - "Die Kamera kann nicht vertikal neigen."
+        - "Rotation kann hörbar sein und die Leckerliausgabe ist je nach Form und Größe ungleichmäßig."
+      findings:
+        - "Der praktische Test nennt klare Grenzen bei Rotation, Treat-Tossing und Preis trotz insgesamt starker Bewertung."
+  userReviews:
+    - platform: "Trustpilot · Furbo markenweit"
+      url: "https://www.trustpilot.com/review/furbo.com"
+      checkedAt: "2026-08-11"
+      rating: null
+      scale: 5
+      reviewCount: null
+      recurringPositives:
+        - "Aktuelle markenweite Rezensionen nennen 360-Ansicht, Treat-Tossing und das beruhigende Fernmonitoring positiv."
+      recurringCriticism:
+        - "Kritik betrifft Software, Support und den wahrgenommenen Wert des Furbo-Nanny-Abonnements."
+  consensus:
+    strengths:
+      - finding: "360-Grad-Abdeckung, brauchbare Bildqualität und Treat-Tossing sind über unabhängige Tests hinweg die zentralen Stärken."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "Abo-Abhängigkeit für Premiumfunktionen, fehlende vertikale Neigung und gelegentlich ungleichmäßige Leckerliausgabe sind wiederkehrende Grenzen."
+        sourceCount: 3
+        confidence: "medium"
+    editorialAssessment: >-
+      Die professionelle Evidenz ist stark. Das Nutzersignal ist bewusst nur markenweit gekennzeichnet und wird nicht
+      als produktspezifischer Sterne-Score ausgegeben.
+  note: >-
+    Trustpilot wird ausschließlich als markenweites Erfahrungssignal genutzt. Die externe Evidenz verändert den
+    redaktionellen PfotenTechnik-Score nicht.
 decision:
   bestFor: ["Hunde und ein überblickbarer Innenraum", "Ferninteraktion mit Ton und Leckerli", "Nutzer mit geprüfter Nanny-Tarifwahl"]
   attention: ["Leckerliausgabe ersetzt keine Betreuung", "intelligente Hinweise sind tarifabhängig", "nicht jeder Hund reagiert ruhig auf Stimme oder Wurfgeräusch"]

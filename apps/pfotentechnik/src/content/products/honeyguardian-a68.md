@@ -97,6 +97,16 @@ ratings:
   zuverlaessigkeit: 3.95
   sicherheit: 3.95
   preisleistung: 3.95
+externalEvidence:
+  professionalReviews: []
+  userReviews: []
+  consensus: []
+  researchStatus: "constrained"
+  researchReason: >-
+    Modellgenaue Manuals- und Supportspuren für den A68 sind vorhanden, aber zum Prüfzeitpunkt kein belastbarer unabhängiger professioneller Produkttest und keine ausreichend belastbare produktspezifische Bewertungsbasis mit Rating und Review-Anzahl.
+  researchCheckedAt: "2026-08-11"
+  note: >-
+    Einzelne Supportfragen und Händlerzusammenfassungen werden nicht als unabhängiger Review oder belastbarer Nutzerkonsens gewertet.
 decision:
   bestFor:
     - katze
@@ -221,3 +231,4 @@ decisionFacts:
 Der HoneyGuardian A68 kombiniert einen großen Vorratsbehälter mit App-Steuerung und eignet sich besonders für Katzen sowie kleine bis mittelgroße Hunde.
 
 Eine sehr gute Wahl für alle, die einen großen WLAN-Futterautomaten ohne Kamera suchen.
+

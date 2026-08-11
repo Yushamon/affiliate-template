@@ -32,6 +32,47 @@ price:
     type: "merchant"
 rating: 3.5
 ratings: { mobilitaet: 4.2, datenschutz: 3.0, folgekosten: 3.5, alltag: 3.3 }
+externalEvidence:
+  professionalReviews:
+    - publisher: "Digital Camera World"
+      title: "Enabot Ebo Air 2 review: a companion robot that can keep an eye on your home, pets, and people"
+      url: "https://www.digitalcameraworld.com/cameras/security-cameras/enabot-ebo-air-2-review"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on-editorial-review"
+      positives:
+        - "Der mobile Fernzugriff und die Perspektive auf Bodenhöhe werden als praktisch für Haustiere und Heimüberwachung bewertet."
+        - "Video- und Interaktionsfunktionen machen den EBO Air 2 zu mehr als einer stationären Kamera."
+      negatives:
+        - "Der Review beschreibt das Gerät eher als ferngesteuerten Kamera-Roboter als als wirklich autonomen Companion."
+        - "Die Patrol-Funktion wird als weniger nützlich eingeordnet."
+      findings:
+        - "Die Quelle bewertet das konkrete Air-2-Modell im praktischen Einsatz und trennt klar zwischen Fernsteuerung und Autonomie."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/enabot-ebo-air-2-pet-camera/dp/1771910"
+      checkedAt: "2026-08-11"
+      rating: 4.3
+      scale: 5
+      reviewCount: 8
+      recurringPositives:
+        - "Nutzer loben die klare Kamera, Fernsteuerung und die Interaktion mit Katzen."
+        - "Laser- und Bewegungsfunktionen werden als unterhaltsam für Tiere beschrieben."
+      recurringCriticism:
+        - "Die produktspezifische Stichprobe ist noch klein und eignet sich nicht für starke Langzeitaussagen."
+  consensus:
+    strengths:
+      - finding: "Mobile Kamera, Fernsteuerung und direkte Interaktion mit Haustieren sind die klaren Stärken des EBO Air 2."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Der Air 2 ist stärker als ferngesteuerte mobile Kamera denn als autonomer Haushaltsroboter; die Nutzerbasis ist noch klein."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Ein belastbarer Hands-on-Review und produktspezifische Käuferberichte stützen die Kernfunktionen. Für Aussagen zur
+      Langzeitzuverlässigkeit bleibt die Datenbasis noch zu klein.
+  note: >-
+    Bewertungen des EBO Air 2 Plus oder EBO X werden nicht auf den EBO Air 2 übertragen.
 decision:
   bestFor: ["mehrere verbundene Räume auf einer Ebene", "aktive Fernsteuerung", "Haushalte ohne hohe Schwellen und offene Treppen"]
   attention: ["Treppen, Kabel und Schwellen vorab prüfen", "mobiler Blickpunkt ersetzt keine feste Bereichsabdeckung", "Hersteller-KI nicht als validierte Verhaltensanalyse verstehen"]

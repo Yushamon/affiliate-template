@@ -94,6 +94,44 @@ ratings:
   zuverlaessigkeit: 4.1
   sicherheit: 4.3
   preisleistung: 3.9
+externalEvidence:
+  professionalReviews:
+    - publisher: "Reviewed"
+      title: "PetLibro Vacuum-Sealed Automatic Cat Feeder Review"
+      url: "https://www.reviewed.com/pets/content/petlibro-vacuum-sealed-automatic-cat-feeder-review-great-buy-cat-owners"
+      publishedAt: "2023-08-15"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on"
+      positives:
+        - "Reviewed nennt einfache Bedienung, sinnvolle Portionsgrößen und die Vakuumversiegelung als wesentliche Stärken."
+      negatives:
+        - "Der Futterbehälter ist nicht transparent, wodurch der Füllstand weniger unmittelbar sichtbar ist."
+      findings:
+        - "Reviewed testete das konkrete Space Automatic Pet Feeder Modell unabhängig redaktionell."
+    - publisher: "Mic"
+      title: "I tried Petlibro’s new automatic pet feeder with vacuum-sealed storage"
+      url: "https://www.mic.com/shopping/petlibro-space-automatic-pet-feeder-review-launch-2023"
+      publishedAt: "2023-06-24"
+      updatedAt: "2023-09-10"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on"
+      positives:
+        - "Einrichtung, App-Verbindung, Zeitpläne und unmittelbare Futterausgabe werden als unkompliziert beschrieben."
+        - "Die Vakuumversiegelung wird besonders in feuchten Haushalten und bei Schädlingsrisiko als sinnvoller Mehrwert eingeordnet."
+      negatives:
+        - "Das Gerät ist groß und für einen einzelnen kleinen Haushalt überdimensioniert."
+        - "Das Stromkabel wurde im Test als eher kurz empfunden."
+      findings:
+        - "Der Beitrag beschreibt tatsächliche Nutzung mit der eigenen Katze und konkreten Zeitplänen."
+  userReviews: []
+  consensus: []
+  researchStatus: "constrained"
+  researchReason: >-
+    Zwei belastbare unabhängige Hands-on-Reviews für das konkrete Space-Modell sind vorhanden. Zum Prüfzeitpunkt
+    wurde jedoch keine ausreichend belastbare produktspezifische Nutzerplattform mit Rating und Review-Anzahl gefunden.
+  researchCheckedAt: "2026-08-11"
+  note: >-
+    Allgemeine PETLIBRO-App-Bewertungen werden nicht als produktspezifische Nutzerbewertungen des Space Feeders verwendet.
 decision:
   bestFor:
     - Katzen mit mehreren kleinen Trockenfuttermahlzeiten
@@ -625,3 +663,4 @@ Diese Einschätzung ist ein redaktioneller Datencheck und kein eigener Langzeitt
 - PETLIBRO Support: WLAN-, Auslass-, Vakuum- und Batterie-Fehlerbehebung
 
 Stand der Quellenprüfung: 23. Juli 2026.
+

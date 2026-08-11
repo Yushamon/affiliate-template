@@ -98,6 +98,17 @@ ratings:
   zuverlaessigkeit: 3.8
   preisleistung: 4.2
   ersatzteile: 4.7
+externalEvidence:
+  constrained: true
+  professionalReviews: []
+  userReviews: []
+  consensus: []
+  constraintReason: >-
+    Für das konkrete Modell Cat Mate Pet Fountain 335 ließ sich im aktuellen Recherchelauf keine ausreichend belastbare
+    Kombination aus unabhängigem professionellem Review und produktspezifischer Nutzerbasis verifizieren.
+  note: >-
+    Die Lücke wird bewusst dokumentiert. Händlertexte, Herstellerangaben oder Bewertungen anderer Cat-Mate-Brunnen
+    werden nicht auf das Modell 335 übertragen.
 decision:
   bestFor:
     - eine oder mehrere Katzen

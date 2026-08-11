@@ -97,6 +97,42 @@ ratings:
   zuverlaessigkeit: 3.9
   sicherheit: 3.7
   preisleistung: 4.3
+externalEvidence:
+  professionalReviews:
+    - publisher: "The Spruce Pets"
+      title: "The 10 Best Automatic Cat Feeders Tested With Real Cats"
+      url: "https://www.thesprucepets.com/best-automatic-cat-feeders-4175145"
+      checkedAt: "2026-08-11"
+      methodology: "comparative-hands-on-testing"
+      positives:
+        - "IMIPAW wird nach einem Vergleichstest mit realen Katzen als weitere empfehlenswerte Budget-Option geführt."
+      negatives:
+        - "Die Quelle trennt die zahlreichen ähnlich benannten 3-Liter-Varianten nicht vollständig."
+      findings:
+        - "Die unabhängige Quelle stützt die grundsätzliche Alltagstauglichkeit der IMIPAW-Automatenklasse."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/imipaw-automatic-programmable-cat-dog/product-reviews/2480022"
+      checkedAt: "2026-08-11"
+      rating: 4.5
+      scale: 5
+      reviewCount: 110
+      recurringPositives:
+        - "Wiederkehrend genannt werden einfache Programmierung, pünktliche Ausgabe und ein gutes Preis-Leistungs-Verhältnis."
+      recurringCriticism:
+        - "Einige Katzen können einzelne Kroketten aus dem Ausgabeschacht angeln; die Portionsmenge muss mit dem eigenen Futter kalibriert werden."
+  consensus:
+    strengths:
+      - finding: "Einfache lokale Zeitplanung und zuverlässige Grundfunktion sind die wiederkehrenden Stärken."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Portionsmenge und Manipulationssicherheit hängen vom Futter und vom Verhalten der Katze ab."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Unabhängiger Vergleichstest und eine größere produktspezifische Käuferbasis stützen die Budget-Einordnung.
+      Wegen ähnlich benannter IMIPAW-3L-Varianten bleiben Hardwaredetails vorsichtig.
 decision:
   bestFor:
     - Katzen und kleine Hunde mit Trockenfutter

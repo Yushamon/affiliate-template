@@ -96,7 +96,20 @@ ratings:
   reinigung: 4.5
   kamera: 4.6
 externalEvidence:
-  professionalReviews: []
+  professionalReviews:
+    - publisher: "The Catington Post"
+      title: "Review: Catit PIXI Smart Products Make Life Easier (and Cuter!) for Cat Parents"
+      url: "https://catingtonpost.com/review-catit-pixi-smart-products/"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on-editorial-review"
+      positives:
+        - "Der Autor beschreibt eine einfache Einrichtung des PIXI Vision über die Catit-App."
+        - "Kameraqualität und Nachtsicht werden im praktischen Einsatz ausdrücklich positiv bewertet."
+        - "Der Feeder wird im Vergleich zu anderen selbst genutzten Smart Feedern als funktionsreich und zuverlässig eingeordnet."
+      negatives:
+        - "Die Quelle liefert nur eine einzelne Hands-on-Perspektive und keine belastbare Langzeitstichprobe."
+      findings:
+        - "Die Quelle beschreibt persönlichen Einsatz mit einer älteren Katze und bewertet insbesondere Einrichtung, Kamera, Nachtsicht und Alltagskomfort."
   userReviews:
     - platform: "Chewy"
       url: "https://www.chewy.com/catit-pixi-vision-smart-cat-feeder/product-reviews/2085086"

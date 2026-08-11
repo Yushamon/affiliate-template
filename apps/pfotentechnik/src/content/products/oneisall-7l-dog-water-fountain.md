@@ -98,6 +98,27 @@ ratings:
   kapazitaet: 4.8
   zuverlaessigkeit: 4
   preisleistung: 4.1
+externalEvidence:
+  professionalReviews: []
+  userReviews:
+    - platform: "Walmart"
+      url: "https://www.walmart.com/ip/13976503231"
+      checkedAt: "2026-08-11"
+      reviewCount: 20
+      recurringPositives:
+        - "Verifizierte Käufer loben die große Wassermenge, einfache Reinigung und gute Akzeptanz bei größeren Hunden."
+        - "Mehrere Nutzer empfinden den kontinuierlichen Wasserfluss als angenehm und praktisch."
+      recurringCriticism:
+        - "Das Gerät läuft dauerhaft und muss am Strom bleiben."
+        - "Ein Teil der sichtbaren Rezensionen ist als incentiviert gekennzeichnet und wird deshalb vorsichtig gewichtet."
+  consensus: []
+  researchStatus: "constrained"
+  researchReason: >-
+    Produktspezifische Nutzerbasis vorhanden, aber zum Prüfzeitpunkt keine ausreichend belastbare unabhängige professionelle Reviewquelle für genau das 7-Liter-Modell.
+  researchCheckedAt: "2026-08-11"
+  note: >-
+    Produktspezifische Nutzererfahrungen sind vorhanden. Eine ausreichend belastbare unabhängige professionelle
+    Reviewquelle für genau das 7-Liter-Modell wurde am 11.08.2026 nicht gefunden; deshalb bleibt der Block bewusst teilweise.
 decision:
   bestFor:
     - mittelgroße und große Hunde
@@ -456,3 +477,4 @@ Weniger passend ist er für:
 Die aktuellen Produktangaben stammen von der [europäischen oneisall-Produktseite](https://eu.oneisall.com/collections/pet-water-fountain-for-dogs/products/oneisall-7l-dog-water-fountain-with-visual-water-level-for-large-dogs), dem [offiziellen oneisall-Supportbereich](https://oneisall.com/pages/support-fountains), der [zugänglichen PW07-Anleitung](https://manuals.plus/m/04ab08287752fce727c55e1a1d00bc6caf7d5c23c9fda815e76355c514a0ef03), den [Ersatzfilterinformationen](https://eu.oneisall.com/de/products/8pcs-carbon-filters-for-dog-water-fountain) und der [Ersatzpumpenseite](https://oneisall.com/products/oneisall-7l-dog-water-fountain-pump-replacement).
 
 Es liegt kein eigener Langzeit-, Lautstärke-, Hygiene- oder Pumpentest vor. Die Produktbilder sind redaktionelle Darstellungen und müssen hinsichtlich Modellform, SKU und Lieferumfang mit dem konkret verlinkten Amazon-Angebot abgeglichen werden.
+

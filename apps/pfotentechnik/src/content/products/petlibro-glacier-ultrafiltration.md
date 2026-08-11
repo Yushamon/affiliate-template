@@ -92,6 +92,41 @@ ratings:
   reinigung: 3.85
   lautstaerke: 4
   preisleistung: 3.75
+externalEvidence:
+  professionalReviews:
+    - publisher: "Floppycats"
+      title: "PETLIBRO Glacier Stainless Steel Fountain Product Review"
+      url: "https://www.floppycats.com/pet-water-fountain.html"
+      publishedAt: "2023-11-20"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on sponsored product"
+      positives:
+        - "Im Haushaltstest werden leiser Betrieb, Edelstahlkonstruktion, einfache Reinigung und gute Trinkakzeptanz positiv beschrieben."
+        - "Die große Wassermenge und die geringe Verschmutzung der Trinkfläche werden als alltagstauglich eingeordnet."
+      negatives:
+        - "Filterkosten, Kalkflecken auf Edelstahl und die leicht lösbare Vorfilter-Schale werden kritisiert."
+        - "Die Quelle erhielt das Produkt kostenlos und zusätzlich eine Review-Gebühr."
+      findings:
+        - "Der Beitrag beschreibt tatsächliche Nutzung mit Katzen und kennzeichnet Produktbereitstellung sowie Vergütung transparent."
+  userReviews:
+    - platform: "Best Buy"
+      url: "https://www.bestbuy.com/site/reviews/petlibro-glacier-ultrafiltration-stainless-steel-pet-water-fountain-with-replacement-filter-bundle-black/6584640"
+      checkedAt: "2026-08-11"
+      rating: 3
+      scale: 5
+      reviewCount: 1
+      recurringPositives: []
+      recurringCriticism:
+        - "Die einzige sichtbare verifizierte, incentivierte Bewertung berichtet über einen Defekt nach kurzer Nutzung."
+  consensus: []
+  researchStatus: "constrained"
+  researchReason: >-
+    Eine belastbare Hands-on-Quelle ist vorhanden, die unabhängige produktspezifische Nutzerbasis ist jedoch zu klein,
+    um wiederkehrende Muster oder einen seriösen Mehrquellen-Konsens abzuleiten.
+  researchCheckedAt: "2026-08-11"
+  note: >-
+    Die einzelne Best-Buy-Bewertung wird dokumentiert, aber nicht als wiederkehrendes Nutzermuster gewertet.
+    Hersteller-FAQ und Supportartikel dienen nur der Funktions- und Wartungsprüfung.
 decision:
   bestFor:
     - Katzen mit empfindlichen Schnurrhaaren
@@ -248,3 +283,4 @@ PETLIBRO bewirbt eine etwa 9,25 Zoll breite, flache Trinkfläche. Das kann Katze
 Das Ultrafiltrationssystem ist der zentrale Vorteil, bindet den Nutzer aber zugleich an passende Ersatzmodule. Tank, Trinkfläche, Ansaugung und Sensorik müssen unabhängig davon regelmäßig gereinigt werden.
 
 **Quelle:** [PETLIBRO Glacier Ultrafiltration Fountain](https://petlibro.com/pages/glacier-ultrafiltration-stainless-steel-pet-water-fountain). Bild: redaktionelle Visualisierung.
+

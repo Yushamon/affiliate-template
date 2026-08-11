@@ -1,32 +1,28 @@
 {
-  "generatedAt": "2026-08-11T06:21:45.532Z",
+  "generatedAt": "2026-08-11T08:14:26.637Z",
   "summary": {
     "products": 82,
-    "covered": 20,
-    "complete": 17,
-    "partial": 3,
-    "missing": 62
+    "covered": 46,
+    "complete": 31,
+    "partial": 15,
+    "missing": 36
   },
   "rows": [
     {
       "slug": "aqara-smart-pet-feeder-c1",
       "file": "src/content/products/aqara-smart-pet-feeder-c1.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "cat-mate-335-pet-fountain",
       "file": "src/content/products/cat-mate-335-pet-fountain.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
       "userSources": 0,
       "consensus": 0,
@@ -39,30 +35,22 @@
     {
       "slug": "cat-mate-c200",
       "file": "src/content/products/cat-mate-c200.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 2,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "cat-mate-c300",
       "file": "src/content/products/cat-mate-c300.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 3,
+      "missingParts": []
     },
     {
       "slug": "cat-mate-c500",
@@ -77,118 +65,96 @@
     {
       "slug": "cat-mate-shell-fountain",
       "file": "src/content/products/cat-mate-shell-fountain.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
-      "userSources": 0,
+      "userSources": 1,
       "consensus": 0,
       "missingParts": [
         "professionalReviews",
-        "userReviews",
         "consensus"
       ]
     },
     {
       "slug": "catit-pixi-smart-6-meal-feeder",
       "file": "src/content/products/catit-pixi-smart-6-meal-feeder.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 3,
+      "missingParts": []
     },
     {
       "slug": "catit-pixi-vision-smart-feeder",
       "file": "src/content/products/catit-pixi-vision-smart-feeder.md",
-      "status": "partial",
+      "status": "complete",
       "hasExternal": true,
-      "professional": 0,
+      "professional": 1,
       "userSources": 2,
       "consensus": 2,
-      "missingParts": [
-        "professionalReviews"
-      ]
+      "missingParts": []
     },
     {
       "slug": "devoko-90l-automatisches-katzenklo",
       "file": "src/content/products/devoko-90l-automatisches-katzenklo.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
-      "userSources": 0,
+      "userSources": 1,
       "consensus": 0,
       "missingParts": [
         "professionalReviews",
-        "userReviews",
         "consensus"
       ]
     },
     {
       "slug": "enabot-ebo-air-2",
       "file": "src/content/products/enabot-ebo-air-2.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "furbo-360-hundekamera",
       "file": "src/content/products/furbo-360-hundekamera.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 2,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "garmin-alpha-t-20",
       "file": "src/content/products/garmin-alpha-t-20.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 2,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "garmin-alpha-tt-25",
       "file": "src/content/products/garmin-alpha-tt-25.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
+      "status": "partial",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
       "consensus": 0,
       "missingParts": [
-        "professionalReviews",
-        "userReviews",
         "consensus"
       ]
     },
     {
       "slug": "honeyguardian-a305d",
       "file": "src/content/products/honeyguardian-a305d.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
       "userSources": 0,
       "consensus": 0,
@@ -201,8 +167,8 @@
     {
       "slug": "honeyguardian-a68",
       "file": "src/content/products/honeyguardian-a68.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
       "userSources": 0,
       "consensus": 0,
@@ -215,84 +181,69 @@
     {
       "slug": "honeyguardian-smart-pet-feeder-s305d",
       "file": "src/content/products/honeyguardian-smart-pet-feeder-s305d.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
-      "userSources": 0,
+      "userSources": 1,
       "consensus": 0,
       "missingParts": [
         "professionalReviews",
-        "userReviews",
         "consensus"
       ]
     },
     {
       "slug": "imipaw-3l-automatic-cat-feeder",
       "file": "src/content/products/imipaw-3l-automatic-cat-feeder.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "litter-robot-5-pro",
       "file": "src/content/products/litter-robot-5-pro.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 2,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "neakasa-m1-lite",
       "file": "src/content/products/neakasa-m1-lite.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
-      "userSources": 0,
+      "userSources": 2,
       "consensus": 0,
       "missingParts": [
         "professionalReviews",
-        "userReviews",
         "consensus"
       ]
     },
     {
       "slug": "neakasa-m1-plus",
       "file": "src/content/products/neakasa-m1-plus.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 2,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "oneisall-2-2l-cordless-fountain",
       "file": "src/content/products/oneisall-2-2l-cordless-fountain.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
-      "userSources": 0,
+      "userSources": 1,
       "consensus": 0,
       "missingParts": [
         "professionalReviews",
-        "userReviews",
         "consensus"
       ]
     },
@@ -350,14 +301,13 @@
     {
       "slug": "oneisall-7l-dog-water-fountain",
       "file": "src/content/products/oneisall-7l-dog-water-fountain.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
-      "userSources": 0,
+      "userSources": 1,
       "consensus": 0,
       "missingParts": [
         "professionalReviews",
-        "userReviews",
         "consensus"
       ]
     },
@@ -392,8 +342,8 @@
     {
       "slug": "pawbby-smart-pet-feeder",
       "file": "src/content/products/pawbby-smart-pet-feeder.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
       "userSources": 0,
       "consensus": 0,
@@ -568,16 +518,12 @@
     {
       "slug": "petlibro-air-automatic-feeder",
       "file": "src/content/products/petlibro-air-automatic-feeder.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 2,
+      "userSources": 2,
+      "consensus": 3,
+      "missingParts": []
     },
     {
       "slug": "petlibro-air-wifi-feeder",
@@ -662,14 +608,12 @@
     {
       "slug": "petlibro-glacier-ultrafiltration",
       "file": "src/content/products/petlibro-glacier-ultrafiltration.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
+      "status": "partial",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
       "consensus": 0,
       "missingParts": [
-        "professionalReviews",
-        "userReviews",
         "consensus"
       ]
     },
@@ -728,16 +672,12 @@
     {
       "slug": "petlibro-one-rfid-smart-feeder",
       "file": "src/content/products/petlibro-one-rfid-smart-feeder.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "petlibro-polar-wet-food-feeder",
@@ -766,13 +706,12 @@
     {
       "slug": "petlibro-space-smart-feeder",
       "file": "src/content/products/petlibro-space-smart-feeder.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
+      "status": "partial",
+      "hasExternal": true,
+      "professional": 2,
       "userSources": 0,
       "consensus": 0,
       "missingParts": [
-        "professionalReviews",
         "userReviews",
         "consensus"
       ]
@@ -980,16 +919,12 @@
     {
       "slug": "weenect-xt",
       "file": "src/content/products/weenect-xt.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 2,
+      "userSources": 1,
+      "consensus": 4,
+      "missingParts": []
     },
     {
       "slug": "wopet-cube-air-ca10",

@@ -90,6 +90,21 @@ ratings:
   zuverlaessigkeit: 3.65
   sicherheit: 3.65
   preisleistung: 4
+externalEvidence:
+  status: constrained
+  userReviews:
+    - platform: "Desertcart"
+      url: "https://www.desertcart.in/products/638972209-honeyguaridan-5l-automatic-cat-feeder-for-two-cats-2-4g"
+      checkedAt: "2026-08-11"
+      rating: 4.0
+      scale: 5
+      reviewCount: 5
+      recurringPositives:
+        - "Einzelne Käufer beschreiben Einrichtung und Futterausgabe als einfach und zuverlässig."
+      recurringCriticism:
+        - "Mindestens ein Bericht beschreibt wiederholte Offline-Ausfälle in der App bei zwei Geräten."
+  note: >-
+    Die Nutzerbasis ist klein. Eine belastbare unabhängige professionelle Review des exakt als S305D identifizierten Modells wurde nicht gefunden. Kein Consensus.
 decision:
   bestFor:
     - Katzen

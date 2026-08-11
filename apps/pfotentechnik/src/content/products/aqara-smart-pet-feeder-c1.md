@@ -96,6 +96,47 @@ ratings:
   preisleistung: 4.3
   reinigung: 4.5
   smartHome: 4.7
+externalEvidence:
+  professionalReviews:
+    - publisher: "c't Magazin · via Testberichte-Aggregation"
+      title: "Aqara Smart Pet Feeder C1"
+      url: "https://www.testbericht.de/produkte/aqara-smart-pet-feeder-c1"
+      checkedAt: "2026-08-11"
+      methodology: "professional-magazine-review-summary"
+      positives:
+        - "Die zusammengefasste c't-Einordnung beschreibt den C1 als eleganten und zuverlässigen Trockenfutterautomaten."
+        - "Die Einbindung in das Aqara-Smart-Home wird als zentrale Stärke hervorgehoben."
+      negatives:
+        - "Die öffentlich zugängliche Zusammenfassung ersetzt nicht den vollständigen Originaltest und begrenzt die Detailtiefe."
+      findings:
+        - "Die Fachmagazin-Einordnung stützt die bestehende Bewertung der Smart-Home-Integration und Zuverlässigkeit, ohne einen eigenen PfotenTechnik-Test zu implizieren."
+  userReviews:
+    - platform: "Alza"
+      url: "https://www.alza.de/bewertungen/aqara-smart-pet-feeder-c1-7597970.htm"
+      checkedAt: "2026-08-11"
+      rating: 4.0
+      scale: 5
+      reviewCount: 9
+      recurringPositives:
+        - "Verifizierte Käufer nennen zuverlässige Futterausgabe und gute Smart-Home-Integration."
+        - "Mehrere Rückmeldungen loben die Alltagstauglichkeit für regelmäßige Fütterungen."
+      recurringCriticism:
+        - "Die fehlende echte Napfwaage beziehungsweise Verbrauchsmessung wird kritisiert."
+        - "Einzelne Nutzer nennen Grenzen bei HomeKit/Home-Assistant- beziehungsweise Offline-Szenarien."
+  consensus:
+    strengths:
+      - finding: "Zuverlässige Futterausgabe und die Integration in das Aqara-Ökosystem sind die am klarsten wiederkehrenden Stärken."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Der Mehrwert hängt stark vom vorhandenen Aqara-Setup ab; eine echte Gewichtsmessung des gefressenen Futters fehlt."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Professionelle und verifizierte Nutzersignale stützen die Smart-Home-Stärken des C1. Die professionelle Quelle
+      ist öffentlich nur als Testzusammenfassung zugänglich, daher bleibt die Confidence bewusst unter high.
+  note: >-
+    Herstellerangaben werden nicht als unabhängige Bewertung gezählt. Redaktioneller PfotenTechnik-Score und ratings bleiben unverändert.
 decision:
   bestFor:
     - Aqara-Smart-Home

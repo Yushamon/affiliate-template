@@ -81,6 +81,31 @@ ratings:
   folgekosten: 3.8
   datenschutz: 3.9
 
+externalEvidence:
+  status: constrained
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/neakasa-m1-lite-open-top-self/product-reviews/2049302"
+      checkedAt: "2026-08-11"
+      rating: 3.9
+      scale: 5
+      reviewCount: 35
+      recurringPositives:
+        - "Offene Bauform, einfache Inbetriebnahme und automatische Reinigung werden wiederholt positiv erwähnt."
+      recurringCriticism:
+        - "Mehrere Käufer berichten von Geruch, anhaftendem Abfall am Rand und höherem Reinigungsaufwand als erwartet."
+    - platform: "Best Buy"
+      url: "https://www.bestbuy.com/site/reviews/neakasa-m1-lite-open-top-self-cleaning-cat-litter-box-white/6632926"
+      checkedAt: "2026-08-11"
+      rating: 5.0
+      scale: 5
+      reviewCount: 4
+      recurringPositives:
+        - "Die kleine Stichprobe lobt leisen Betrieb, einfache Einrichtung und schnelle Akzeptanz."
+      recurringCriticism:
+        - "Die Stichprobe ist sehr klein und mehrere Reviews sind als incentiviert gekennzeichnet."
+  note: >-
+    Für das exakt als M1 Lite bezeichnete Modell wurde keine ausreichend belastbare unabhängige Hands-on-Review gefunden. Nutzerquellen allein reichen nicht für einen professionell gestützten Consensus.
 decision:
   bestFor:
     - "Katzen, die offene Toiletten besser akzeptieren als geschlossene Trommelsysteme"

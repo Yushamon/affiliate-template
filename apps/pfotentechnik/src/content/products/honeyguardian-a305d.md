@@ -99,6 +99,17 @@ ratings:
   zuverlaessigkeit: 4
   sicherheit: 3.65
   preisleistung: 4
+externalEvidence:
+  constrained: true
+  professionalReviews: []
+  userReviews: []
+  consensus: []
+  constraintReason: >-
+    Für die konkrete Modellbezeichnung HoneyGuardian A305D konnte im aktuellen Recherchelauf keine hinreichend sichere
+    unabhängige Review- und Nutzerquellenkombination verifiziert werden. Ähnliche HoneyGuardian-Modelle und Marketplace-
+    Varianten werden nicht gleichgesetzt.
+  note: >-
+    Die Modellidentität hat Vorrang vor Vollständigkeit. Der Block bleibt bewusst leer, bis eine direkte belastbare Quelle vorliegt.
 decision:
   bestFor:
     - katze

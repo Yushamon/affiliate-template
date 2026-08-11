@@ -99,6 +99,50 @@ ratings:
   zuverlaessigkeit: 4
   sicherheit: 3.65
   preisleistung: 4
+externalEvidence:
+  professionalReviews:
+    - publisher: "Katzen-Fieber"
+      title: "Cat Mate C300 Futterautomat für Katzen und kleine Hunde im Test"
+      url: "https://www.katzen-fieber.de/cat-mate-c300-futterautomat-test/"
+      publishedAt: "2020-01-31"
+      updatedAt: "2024-05-08"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on"
+      positives:
+        - "Die Autorin beschreibt den C300 nach eigener regelmäßiger Nutzung als praktische Lösung für zeitversetzte Mahlzeiten."
+        - "Kühlakku, einfache Konstruktion und Batteriebetrieb werden als funktionale Stärken eingeordnet."
+      negatives:
+        - "Das Drei-Fach-Prinzip bedeutet praktisch nur zwei programmierbare spätere Mahlzeiten, weil ein Fach sofort offen ist."
+      findings:
+        - "Die Quelle beschreibt tatsächliche Nutzung im eigenen Haushalt und nicht nur Herstellerdaten."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/cat-mate-c300-automatic-dog-cat/product-reviews/202195"
+      checkedAt: "2026-08-11"
+      rating: 4.0
+      scale: 5
+      reviewCount: 202
+      recurringPositives:
+        - "Viele Nutzer beschreiben den C300 als einfach, zuverlässig und hilfreich für Nass- oder Trockenfutter zu festen Zeiten."
+        - "Langjährige Nutzung wird in mehreren Erfahrungsberichten erwähnt."
+      recurringCriticism:
+        - "Neuere Rezensionen berichten vereinzelt über nachlassende Haltbarkeit des Drehmechanismus."
+        - "Leichtes Gehäuse, Deckelzugang und nur zwei programmierbare spätere Mahlzeiten werden wiederholt als Grenzen genannt."
+  consensus:
+    strengths:
+      - finding: "Der C300 ist als einfacher zeitgesteuerter Portionsautomat ohne App gut etabliert."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "Das Konzept bietet nur zwei später programmierbare Fächer; für mehr Mahlzeiten ist ein größeres Rotationsmodell sinnvoller."
+        sourceCount: 2
+        confidence: "high"
+      - finding: "Die Nutzerbasis enthält einzelne aktuelle Hinweise auf nachlassende Haltbarkeit des Rotationsmechanismus."
+        sourceCount: 1
+        confidence: "medium"
+    editorialAssessment: >-
+      Hands-on-Bericht und große Nutzerbasis stützen die Alltagstauglichkeit des einfachen Rotationsprinzips.
+      Die Konstruktion ist bewusst simpel, aber Kapazität und langfristige Mechanik bleiben die wesentlichen Grenzen.
 decision:
   bestFor:
     - eine bis zwei Katzen
@@ -254,3 +298,4 @@ Ein Fach steht sofort bereit. Für die beiden weiteren Fächer werden Öffnungsz
 Closer Pets nennt auf der aktuellen Produktseite 170 g je Fach, in der Supportseite dagegen 330 g. Diese Abweichung sollte nicht stillschweigend geglättet werden.
 
 **Quellen:** [Cat Mate C300 Produktseite](https://closerpets.com/products/three-meal-automatic-pet-feeder-with-digital-timer-c300-petmate), [C300 Support](https://closerpets.com/pages/faq-cat-mate-c500-c300-automatic-pet-feeder-with-digital-timer-365-366). Bild: redaktionelle Visualisierung.
+

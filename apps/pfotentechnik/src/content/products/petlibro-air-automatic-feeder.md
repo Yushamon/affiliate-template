@@ -101,6 +101,70 @@ ratings:
   zuverlaessigkeit: 3.8
   sicherheit: 3.8
   preisleistung: 3.95
+externalEvidence:
+  professionalReviews:
+    - publisher: "Cat Food Dispensers Reviews"
+      title: "My Full Review Of The Petlibro Air Automatic Pet Feeder"
+      url: "https://www.catfooddispensersreviews.com/petlibro-air-automatic-pet-feeder-review/"
+      updatedAt: "2025-01-05"
+      checkedAt: "2026-08-11"
+      methodology: "two-month hands-on"
+      positives:
+        - "Die Autorin berichtet nach mehr als zwei Monaten Nutzung über zuverlässige Zeitpläne und konsistente Portionierung."
+        - "Reinigung, verriegelter Deckel, geschütztes Bedienfeld und Backup-Stromversorgung werden positiv bewertet."
+      negatives:
+        - "Bedienungsanleitung und unbeleuchtetes LCD werden kritisiert."
+        - "Ein Trockenmittelbeutel ist nicht enthalten."
+      findings:
+        - "Der Bericht basiert auf mehrmonatiger Nutzung mit der eigenen Katze."
+    - publisher: "The Spruce Pets"
+      title: "The 8 Best Cat Bowls, Tested With Real Cats In Their Own Homes"
+      url: "https://www.thesprucepets.com/best-cat-bowls-8399598"
+      checkedAt: "2026-08-11"
+      methodology: "comparative hands-on"
+      positives:
+        - "Die Redaktion nennt den PETLIBRO Air als beste automatische Futterlösung im Testfeld und lobt einfache Programmierung und Backup-Batterien."
+      negatives:
+        - "Nicht für Nassfutter geeignet."
+        - "Sehr geschickte Katzen können laut Test den Tankverschluss unter Umständen überwinden."
+      findings:
+        - "Der Vergleich wurde mit realen Katzen in Haushalten durchgeführt."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/petlibro-air-automatic-dog-cat-bowl/dp/1017158"
+      checkedAt: "2026-08-11"
+      rating: 4.2
+      scale: 5
+      reviewCount: 1312
+      recurringPositives:
+        - "Die große Nutzerbasis stützt einfache Programmierung, planbare Portionen und zuverlässige Alltagsnutzung."
+      recurringCriticism:
+        - "Kritik betrifft vor allem Einzelprobleme bei Mechanik, Portionierung oder Bedienung; die Bewertungen sind insgesamt klar positiv."
+    - platform: "Walmart"
+      url: "https://www.walmart.com/ip/14801868934"
+      checkedAt: "2026-08-11"
+      rating: 4.3
+      scale: 5
+      reviewCount: 278
+      recurringPositives:
+        - "Verifizierte Käufer loben einfache Programmierung, abnehmbaren Napf, Verarbeitung und Strom-Backup."
+      recurringCriticism:
+        - "Das kleine Display und der höhere Preis gegenüber sehr einfachen Timern werden vereinzelt genannt."
+  consensus:
+    strengths:
+      - finding: "Einfache Programmierung und zuverlässige zeitgesteuerte Trockenfutter-Portionierung sind über professionelle Tests und Nutzerquellen konsistent."
+        sourceCount: 4
+        confidence: "high"
+      - finding: "Reinigung und geschützte Bedienelemente sind wiederkehrende praktische Stärken."
+        sourceCount: 3
+        confidence: "high"
+    weaknesses:
+      - finding: "Der Air ist auf Trockenfutter beschränkt und bewusst einfacher als appbasierte Modelle."
+        sourceCount: 2
+        confidence: "high"
+    editorialAssessment: >-
+      Zwei unabhängige Praxistests und große Nutzerbasen ergeben für die Kernfunktion eine vergleichsweise starke
+      externe Evidenz. Der Mehrwert liegt in einfacher, offline-naher Zeitsteuerung statt Smart-Home-Funktionen.
 decision:
   bestFor:
     - katze
@@ -224,3 +288,4 @@ decisionFacts:
 Der PETLIBRO Air Automatic Feeder ist ein kompakter Trockenfutterautomat mit lokaler Zeitsteuerung. Er eignet sich für Katzen und kleine Hunde, wenn bewusst keine App oder WLAN-Verbindung benötigt wird.
 
 Eine gute Offline-Alternative zum Air WiFi Feeder, wenn lokale Zeitpläne, kompakte Abmessungen und flexibler Batteriebetrieb wichtiger sind als App-Funktionen.
+

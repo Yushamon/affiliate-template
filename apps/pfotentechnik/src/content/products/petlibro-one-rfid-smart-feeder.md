@@ -100,6 +100,46 @@ ratings:
   zuverlaessigkeit: 3.75
   sicherheit: 3.9
   preisleistung: 3.45
+externalEvidence:
+  professionalReviews:
+    - publisher: "WIRED"
+      title: "These 11 Automatic Cat Feeders Were the Best We Tested in 2026"
+      url: "https://www.wired.com/gallery/best-automatic-cat-feeders/"
+      checkedAt: "2026-08-11"
+      methodology: "comparative hands-on"
+      positives:
+        - "WIRED bewertet die taggesteuerte Zugangskontrolle als besonders sinnvoll bei Futterdiebstahl, Spezialdiäten und Mehrtierhaushalten."
+        - "App-Zeitpläne und die automatische Abdeckung werden als zentrale praktische Funktionen hervorgehoben."
+      negatives:
+        - "Die Abdeckung kann laut Test einen Teil des Futters auch im geöffneten Zustand schwerer erreichbar machen."
+      findings:
+        - "WIRED hat das konkrete One-RFID-Modell im Rahmen eines Vergleichs automatischer Katzenfutterautomaten getestet."
+  userReviews:
+    - platform: "Shop"
+      url: "https://shop.app/products/7400288813103/one-rfid-smart-feeder"
+      checkedAt: "2026-08-11"
+      rating: 4.7
+      scale: 5
+      reviewCount: 16
+      recurringPositives:
+        - "Nutzer loben die Trennung von Futter in Mehrkatzenhaushalten, einfache Einrichtung und App-Zeitpläne."
+      recurringCriticism:
+        - "Ein Nutzer kritisiert die Napfgeometrie, weil Futter nach hinten geschoben werden kann und dann schlechter erreichbar ist."
+  consensus:
+    strengths:
+      - finding: "Die RFID-Zugangskontrolle löst Futterdiebstahl und getrennte Diäten in passenden Mehrtierhaushalten überzeugend."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "Napf- und Abdeckungsgeometrie können den Zugriff auf Futter am hinteren Rand erschweren."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Der unabhängige WIRED-Test und die produktspezifische Nutzerbasis bestätigen denselben Kernnutzen.
+      Die Lösung ist jedoch nur dann sinnvoll, wenn ein Halsband-Tag akzeptiert wird und tatsächlich Zugangskontrolle benötigt wird.
+  note: >-
+    App-weite Bewertungen werden nicht in das produktspezifische Rating eingerechnet. Einzelne App-Rezensionen nennen
+    Verbindungsprobleme ausdrücklich beim One RFID, dienen hier aber nur als ergänzender Risikohinweis.
 decision:
   bestFor:
     - katze
@@ -217,3 +257,4 @@ decisionFacts:
 Der PETLIBRO One RFID Smart Feeder kombiniert automatische Fütterung mit einem geschützten Napfzugang und eignet sich ideal für Mehrkatzenhaushalte.
 
 Eine der besten Lösungen für Mehrkatzenhaushalte, wenn jedes Tier zuverlässig nur sein eigenes Futter erhalten soll.
+

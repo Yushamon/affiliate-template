@@ -91,6 +91,21 @@ ratings:
   reinigung: 3.75
   lautstaerke: 3.9
   preisleistung: 3.7
+externalEvidence:
+  status: constrained
+  userReviews:
+    - platform: "Desertcart"
+      url: "https://www.desertcart.ae/products/772556800-oneisall-wireless-cat-water-fountain-for-drinking-2-2l-20db"
+      checkedAt: "2026-08-11"
+      rating: null
+      scale: 5
+      reviewCount: null
+      recurringPositives:
+        - "Mehrere Käufer loben sehr leisen Betrieb, einfache Reinigung, Sensorbetrieb und kabellose Nutzung."
+      recurringCriticism:
+        - "Einzelne Berichte nennen Probleme mit Pumpenleistung, Filterteilen oder kürzerer Akkulaufzeit als erwartet."
+  note: >-
+    Keine belastbare unabhängige professionelle Review des exakt identifizierten 2,2-Liter-Modells gefunden. Händler-Nutzerberichte reichen nicht für einen Consensus.
 decision:
   bestFor:
     - eine Katze

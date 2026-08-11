@@ -91,6 +91,27 @@ ratings:
   reinigung: 3.7
   lautstaerke: 3.85
   preisleistung: 3.65
+externalEvidence:
+  professionalReviews: []
+  userReviews:
+    - platform: "Walmart"
+      url: "https://www.walmart.com/ip/370474093"
+      checkedAt: "2026-08-11"
+      reviewCount: 301
+      recurringPositives:
+        - "Viele Nutzer nennen leisen Betrieb, einfache Reinigung und gute Akzeptanz durch Katzen oder kleine Hunde."
+        - "Einzelne Langzeitnutzer berichten von jahrelanger Nutzung und anschließendem Kauf desselben Modells."
+      recurringCriticism:
+        - "Der Wasserfluss wird vereinzelt als zu schwach oder nicht durchgehend gleichmäßig beschrieben."
+  consensus: []
+  researchStatus: "constrained"
+  researchReason: >-
+    Große produktspezifische Nutzerbasis vorhanden, aber zum Prüfzeitpunkt keine ausreichend belastbare unabhängige professionelle Reviewquelle für genau die Shell Pet Fountain.
+  researchCheckedAt: "2026-08-11"
+  note: >-
+    Die große produktspezifische Nutzerbasis ist belastbar genug für wiederkehrende Nutzungsmuster.
+    Eine unabhängige professionelle Reviewquelle für genau die Shell Pet Fountain wurde nicht ausreichend belegt;
+    deshalb bleibt die Evidence bewusst teilweise.
 decision:
   bestFor:
     - eine bis zwei Katzen
@@ -252,3 +273,4 @@ Die Bauform kann für Tiere praktisch sein, die flaches oder erhöhtes Trinken b
 Closer Pets bietet Aktivkohlefilter für weiches Wasser und dreistufige Filter mit Ionenaustauschharz für hartes Wasser an. Die gute Ersatzteilversorgung ist ein Vorteil gegenüber vielen kurzlebigen No-Name-Modellen.
 
 **Quellen:** [Closer Pets Support](https://closerpets.com/pages/faq-cat-mate-two-level-three-litre-shell-pet-fountain-white-410-410e), [Filter](https://closerpets.com/products/3-stage-filter-cartridges-pet-fountain-4-pack). Bild: redaktionelle Visualisierung.
+

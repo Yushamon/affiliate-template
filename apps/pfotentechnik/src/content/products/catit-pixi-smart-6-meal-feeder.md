@@ -97,6 +97,53 @@ ratings:
   zuverlaessigkeit: 4
   sicherheit: 3.5
   preisleistung: 3.8
+externalEvidence:
+  professionalReviews:
+    - publisher: "Meowing Goods"
+      title: "Catit PIXI Smart 6-Meal Feeder Review (2026): Honest Assessment After Testing"
+      url: "https://meowinggoods.com/reviews/tech/catit-pixi-smart-fountain/"
+      publishedAt: "2026-02-20"
+      checkedAt: "2026-08-11"
+      methodology: "30-day hands-on"
+      positives:
+        - "Im 30-Tage-Einsatz mit zwei Katzen wurden App-Zeitpläne und die rotierende Ausgabe überwiegend zuverlässig beschrieben."
+        - "Die sechs Fächer und die Möglichkeit, Trocken- und Nassfutter zeitgesteuert bereitzustellen, wurden als alltagstauglich bewertet."
+      negatives:
+        - "Die Kühlung per Eispack hat nur ein begrenztes Zeitfenster und eignet sich nicht für längere unbeaufsichtigte Nassfutterlagerung."
+        - "WLAN-Ausfälle führten im Test vereinzelt zu verzögerten Ausgaben beziehungsweise manueller Auslösung."
+      findings:
+        - "Die Quelle dokumentiert 30 Tage Nutzung mit zwei Katzen und nennt 349 von 360 Fütterungen innerhalb von 30 Sekunden."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/catit-pixi-smart-6-meal-cat-feeder/product-reviews/706118"
+      checkedAt: "2026-08-11"
+      rating: 3.6
+      scale: 5
+      reviewCount: 38
+      recurringPositives:
+        - "Mehrere Nutzer loben einfache Zeitplanung, leisen Lauf, Reinigung und die sechs getrennten Fächer."
+        - "Die Kombination aus Eispack und Fächern wird für kurze Nassfutter-Zeitfenster als praktisch beschrieben."
+      recurringCriticism:
+        - "Ein wiederkehrender Kritikpunkt ist die begrenzte Kühlwirkung der Eispacks."
+        - "Einige Nutzer berichten über schwierige Einrichtung, unklare Anleitung oder Bedienprobleme."
+  consensus:
+    strengths:
+      - finding: "Für mehrere kleine Mahlzeiten über einen Tag sind Fächeraufteilung und Zeitsteuerung der zentrale praktische Vorteil."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Die Eispacks ersetzen keine aktive Kühlung und begrenzen die sichere Nassfutter-Nutzung auf kurze Zeiträume."
+        sourceCount: 2
+        confidence: "high"
+      - finding: "Einrichtung und App-Bedienung sind nicht für alle Nutzer reibungslos."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Professioneller 30-Tage-Test und Chewy-Nutzerbasis zeigen ein konsistentes Bild: praktisch für zeitgesteuerte
+      Tagesportionen, aber keine Lösung für lange unbeaufsichtigte Nassfutterlagerung.
+  note: >-
+    Ein erheblicher Teil der frühen Chewy-Rezensionen ist als kostenlos bereitgestelltes Produkt gekennzeichnet.
+    Diese Bewertungen werden deshalb vorsichtiger gewichtet.
 decision:
   bestFor:
     - Katzen mit mehreren kleinen Mahlzeiten
@@ -370,3 +417,4 @@ Weniger passend ist er für sehr geschickte oder futteraggressive Katzen, für g
 Die technischen Angaben stammen von der [deutschen Catit-Produktseite](https://www.catit.com/de/produkte/futterspender-napfe/pixi-smart-futterautomat-mit-6-mahlzeiten/), der [internationalen Catit-Produktseite](https://www.catit.com/products/feeders-dishes/pixi-smart-6-meal-feeder/), dem [Catit-Hilfebereich](https://www.catit.com/help-advice/feeders-dishes/catit-pixi-smart-6-meal-feeder/), der [Gebrauchsanleitung](https://www.catit.com/de/hilfe-empfehlungen-gebrauchsanleitung/catit-pixi-smart-futterautomaten-mit-6-mahlzeiten-gebrauchsanleitung/) und dem [App-Walkthrough](https://www.catit.com/spotlight/catit-pixi-6-meal-feeder-app-walkthrough/).
 
 Für die Einordnung der Alltagserfahrungen wurden zusätzlich öffentliche Bewertungen im [Apple App Store](https://apps.apple.com/de/app/catit/id1549148066), bei [Catit UK](https://catit.co.uk/products/catit-pixi-smart-6-meal-feeder), [Chewy](https://www.chewy.com/catit-pixi-smart-6-meal-cat-feeder/product-reviews/706118) und [Zooplus](https://www.zooplus.co.uk/feedback/shop/cats/cat_bowls_feeders/feeders/1982997) berücksichtigt. Es liegt kein eigener Langzeit-, Hygiene- oder Temperaturtest vor. Produktbilder sind redaktionelle Darstellungen.
+

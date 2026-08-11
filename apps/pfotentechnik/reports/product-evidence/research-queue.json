@@ -1,20 +1,21 @@
 {
-  "generatedAt": "2026-08-11T06:21:45.667Z",
+  "generatedAt": "2026-08-11T08:17:24.617Z",
   "source": {
     "provider": "google",
     "file": "gsc-dashboard-ranges.json",
     "primaryRange": "28d",
     "contextRange": "3m"
   },
-  "lane": "NOW",
+  "lane": "HOLD",
   "counts": {
-    "open": 65,
-    "selected": 1,
-    "missing": 62,
-    "partial": 3,
-    "now": 1,
-    "watch": 11,
-    "backlog": 53
+    "open": 51,
+    "selected": 0,
+    "missing": 36,
+    "partial": 15,
+    "now": 7,
+    "watch": 0,
+    "hold": 0,
+    "backlog": 44
   },
   "rules": [
     "Keine eigenen Tests behaupten.",
@@ -27,42 +28,5 @@
     "Externe Bewertungen niemals in den redaktionellen PfotenTechnik-Score einrechnen.",
     "GSC-Signale priorisieren Recherche, ersetzen aber keine Evidenzprüfung."
   ],
-  "products": [
-    {
-      "file": "src/content/products/oneisall-2-in-1-feeder-water.md",
-      "slug": "oneisall-2-in-1-feeder-water",
-      "title": "Oneisall 2-in-1 Automatic Cat Feeder and Water Dispenser",
-      "lane": "NOW",
-      "evidence": {
-        "status": "partial",
-        "professional": 1,
-        "userSources": 0,
-        "consensus": 0,
-        "missingParts": [
-          "userReviews",
-          "consensus"
-        ]
-      },
-      "search": {
-        "primaryRange": "28d",
-        "impressions": 3,
-        "clicks": 0,
-        "position": 5.7,
-        "ctr": 0,
-        "contextRange": "3m",
-        "contextImpressions": 3,
-        "queries": [],
-        "confidence": 0.55
-      },
-      "score": {
-        "total": 49,
-        "rawTotal": 49,
-        "searchBase": 43,
-        "searchWeighted": 24,
-        "evidenceGap": 20,
-        "commercial": 5
-      },
-      "action": "complete-evidence"
-    }
-  ]
+  "products": []
 }
