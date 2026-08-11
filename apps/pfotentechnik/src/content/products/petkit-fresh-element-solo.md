@@ -99,6 +99,26 @@ ratings:
   zuverlaessigkeit: 4
   sicherheit: 4.1
   preisleistung: 4.1
+externalEvidence:
+  constrained: true
+  status: constrained
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/petkit-fresh-element-solo-automatic/product-reviews/1554398"
+      checkedAt: "2026-08-11"
+      rating: 4.6
+      scale: 5
+      reviewCount: 24
+      recurringPositives:
+        - "Käufer loben wiederholt die zuverlässige zeitgesteuerte Ausgabe, die kompakte Bauform und die einfache App-Nutzung."
+        - "Mehrere Bewertungen heben die gute Verarbeitung und die praktische Portionierung für kleine regelmäßige Mahlzeiten hervor."
+      recurringCriticism:
+        - "Einzelne Käufer nennen die Ersteinrichtung als umständlich."
+        - "Mehrfach wird kritisiert, dass Netzadapter beziehungsweise Batterien nicht vollständig mitgeliefert werden und die Backup-Laufzeit begrenzt ist."
+  note: >-
+    Für das exakt als Fresh Element Solo identifizierte Modell wurde keine hinreichend belastbare unabhängige
+    professionelle Hands-on-Review gefunden. Die große Händler-Stichprobe erlaubt ein Nutzersignal, aber keinen
+    belastbaren Quellenkonsens. Deshalb bleibt die Evidenz constrained.
 decision:
   bestFor:
     - eine Katze

@@ -106,7 +106,41 @@ editorial:
   testedHandsOn: false
   lastVerifiedAt: "2026-08-04"
   note: "Bewertung auf Basis von Herstellerunterlagen und Vergleichsdaten; keine eigene Nutzungserfahrung."
-
+externalEvidence:
+  professionalReviews:
+    - publisher: "Tailster"
+      title: "Sureflap Microchip Cat Flap Review"
+      url: "https://content.tailster.com/sureflap-review/"
+      checkedAt: "2026-08-11"
+      methodology: "editorial-product-review"
+      positives:
+        - "Der Review lobt einfache Programmierung, solide Konstruktion und guten Alltagsnutzen."
+      negatives:
+        - "Sicherheitsniveau und Funktionsumfang liegen unter der DualScan-Version."
+        - "Klickgeräusch, Magnetwiderstand und begrenzte Größe können einzelne Katzen stören."
+  userReviews:
+    - platform: "Zooplus"
+      url: "https://www.zooplus.com/feedback/shop/cats/cat_flaps_nets/microchip_cat_flaps/138712"
+      checkedAt: "2026-08-11"
+      rating: 4.2
+      scale: 5
+      reviewCount: 2305
+      recurringPositives:
+        - "Sehr viele Nutzer bestätigen einfache Nutzung und wirksame Abwehr fremder Katzen."
+      recurringCriticism:
+        - "Neuere Berichte nennen gelegentliche Chiperkennungsprobleme, Batterieverschleiß, Zugluft und Feuchtigkeit."
+  consensus:
+    strengths:
+      - finding: "Die einfache Mikrochip-Zugangskontrolle ist über professionellen Review und große Nutzerbasis breit gestützt."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "Langfristig treten bei einem Teil der Nutzer Probleme mit Erkennung, Batteriebedarf oder Witterungseinfluss auf."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Die sehr große Nutzerbasis stützt den Grundnutzen, zeigt aber zugleich, dass Zuverlässigkeit und Witterungseinfluss
+      stärker variieren als ein reiner Funktionscheck vermuten lässt.
 decision:
   bestFor:
     - "Fremde Katzen und Wildtiere aussperren"

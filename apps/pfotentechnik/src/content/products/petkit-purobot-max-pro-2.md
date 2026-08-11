@@ -32,6 +32,48 @@ price:
     type: "merchant"
 rating: 3.8
 ratings: { sicherheit: 3.9, platz: 3.2, reinigung: 3.9, folgekosten: 3.0, datenschutz: 2.7 }
+externalEvidence:
+  professionalReviews:
+    - publisher: "Tom's Guide"
+      title: "I thought it was weird spying on my cats with this new robotic litter box - but it does more than just record them"
+      url: "https://www.tomsguide.com/home/smart-home/i-thought-it-was-weird-spying-on-my-cats-with-this-new-robotic-litter-box-but-it-does-more-than-just-record-them"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on-editorial-review"
+      positives:
+        - "Der Praxistest hebt die interne Kamera, Nutzungs- und Gewichtsprotokolle sowie die starke Geruchskontrolle hervor."
+        - "Die Basisfunktionen zur Überwachung werden als nützlich eingeordnet, besonders wenn Veränderungen im Toilettenverhalten beobachtet werden sollen."
+      negatives:
+        - "Der Innenraum wird als eher knapp für größere Katzen beschrieben."
+        - "Der 8-Liter-Abfallbehälter fällt im Vergleich zu größeren Konkurrenzsystemen klein aus."
+      findings:
+        - "Die Review basiert auf praktischer Nutzung mit mehreren Katzen und trennt kostenlose Basisfunktionen von kostenpflichtiger Video-Historie."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/petkit-purobot-max-pro-2-automatic/product-reviews/2481702"
+      checkedAt: "2026-08-11"
+      rating: 4.1
+      scale: 5
+      reviewCount: 7
+      recurringPositives:
+        - "Die frühe Käuferbasis lobt Geruchskontrolle, Kamera beziehungsweise App und die automatische Reinigung."
+        - "Mehrere Nutzer heben den leichter zugänglichen Reinigungsaufbau gegenüber anderen Robotertoiletten hervor."
+      recurringCriticism:
+        - "Einzelne Nutzer berichten von ausbleibenden automatischen Reinigungszyklen und nötiger manueller Auslösung."
+        - "Es gibt widersprüchliche Erfahrungen zur Katzenakzeptanz, Innenraumgröße und Sicherheit während der Rotation."
+  consensus:
+    strengths:
+      - finding: "Kamera, App-Protokolle und Geruchskontrolle sind die am klarsten wiederkehrenden Stärken."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Innenraumgröße, kleiner Abfallbehälter und einzelne Automatik- beziehungsweise Akzeptanzprobleme begrenzen die Alltagstauglichkeit."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Professioneller Praxistest und produktspezifische Käuferberichte stützen die Kernstärken. Die Nutzerbasis ist
+      noch klein, daher sind Aussagen zur Langzeitzuverlässigkeit nur mit mittlerer bis niedriger Sicherheit möglich.
+    contradictions:
+      - "Tom's Guide bewertet die Überwachungsfunktionen sehr positiv; einzelne Chewy-Nutzer empfinden Teile der Analyse als weniger aussagekräftig und berichten von Automatikproblemen."
 decision:
   bestFor: ["Mehrkatzenhaushalte mit unterscheidbaren Tierprofilen", "Nutzer, die Besuchsdauer und Gewichtstrends beobachten", "ausreichend große Stellfläche"]
   attention: ["Gesichtserkennung und Gesundheitsauswertung sind Herstellerfunktionen", "auffällige Trends ersetzen keine Diagnose", "Mindestgewicht und Streukompatibilität in der aktuellen Anleitung prüfen"]

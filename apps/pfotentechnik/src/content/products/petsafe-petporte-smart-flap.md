@@ -74,7 +74,36 @@ images:
       alt: "PetSafe Petporte smart flap in weiterer Detail- oder Nutzungsperspektive"
     - src: "../../assets/images/products/petsafe-petporte-smart-flap/gallery-3.webp"
       alt: "PetSafe Petporte smart flap in weiterer Einbau- oder Anwendungsperspektive"
-
+externalEvidence:
+  professionalReviews:
+    - publisher: "Tailster"
+      title: "PetSafe Petporte Smart Flap Microchip Cat Flap Review"
+      url: "https://content.tailster.com/petsafe-petporte-smart-flap-review/"
+      checkedAt: "2026-08-11"
+      methodology: "editorial-product-review"
+      positives:
+        - "Der Review bewertet Verarbeitung, Einrichtung sowie die Wahl zwischen Netz- und Batteriebetrieb positiv."
+        - "Die flexible Vier-Wege-Steuerung und die hohe Zahl speicherbarer Chips werden als Pluspunkte genannt."
+      negatives:
+        - "Die einzelne Scan-/Verriegelungslösung wird gegenüber sichereren Dual-Scan-Systemen als Schwäche bewertet."
+        - "Der Review nennt gelegentliches Nicht-Einrasten der Klappe und den nicht abschaltbaren Signalton als Nachteile."
+  userReviews: []
+  consensus:
+    strengths:
+      - finding: "Netzbetrieb mit Backup-Option, solide Verarbeitung und grundlegende Mikrochip-Zugangskontrolle sind plausibel und im Review konkret beschrieben."
+        sourceCount: 1
+        confidence: "medium"
+    weaknesses:
+      - finding: "Für Sicherheit gegen besonders geschickte Eindringlinge ist die ältere Single-Scan-Konstruktion schwächer als moderne Dual-Scan-Lösungen."
+        sourceCount: 1
+        confidence: "medium"
+    editorialAssessment: >-
+      Es liegt ein konkreter unabhängiger Modellreview vor, aber keine ausreichend belastbare aktuelle,
+      produktspezifische Nutzerbasis mit sauber erfassbarem Rating und Review-Count. Deshalb bleibt die Evidenz bewusst unvollständig.
+  status: constrained
+  constrained: true
+  note: >-
+    Kein belastbarer produktspezifischer User-Review-Datensatz mit Rating, Skala und Review-Anzahl gefunden; kein künstlicher Consensus aus Händlertexten.
 decision:
   bestFor:
     - "Größere oder kräftigere Katzen mit passender Schulterbreite"

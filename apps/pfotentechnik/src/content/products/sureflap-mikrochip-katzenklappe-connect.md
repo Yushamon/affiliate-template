@@ -97,7 +97,41 @@ editorial:
   testedHandsOn: false
   lastVerifiedAt: "2026-08-05"
   note: "Bewertung auf Basis von Herstellerunterlagen und Vergleichsdaten; keine eigene Nutzungserfahrung."
-
+externalEvidence:
+  professionalReviews:
+    - publisher: "Expert Reviews"
+      title: "Sureflap Microchip Cat Flap Connect review: Keep tabs on tabbies"
+      url: "https://www.expertreviews.co.uk/archived/sureflap-microchip-cat-flap-connect-review"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on-editorial-review"
+      positives:
+        - "Der Review lobt App, Bewegungsprotokolle und Verarbeitungsqualität."
+      negatives:
+        - "Klappe plus notwendiger Hub werden als teuer bewertet."
+        - "Aktivitätsstatistiken werden unvollständig, wenn Katzen alternative Ein- oder Ausgänge nutzen."
+  userReviews:
+    - platform: "Zooplus"
+      url: "https://www.zooplus.com/feedback/shop/cats/cat_flaps_nets/sureflap/704236"
+      checkedAt: "2026-08-11"
+      rating: 3.9
+      scale: 5
+      reviewCount: 86
+      recurringPositives:
+        - "Viele Nutzer loben die Mikrochip-Zugangskontrolle und die zusätzliche Transparenz durch die App."
+      recurringCriticism:
+        - "Ein Teil der Nutzer meldet Funktionsausfälle, Installationsprobleme und unzureichende Dämmung."
+  consensus:
+    strengths:
+      - finding: "App-Protokolle und Fernfunktionen erweitern die bewährte Mikrochip-Zugangskontrolle sinnvoll."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "Preis, Hub-Abhängigkeit und lückenhafte Aktivitätsdaten bei alternativen Wegen begrenzen den Mehrwert."
+        sourceCount: 2
+        confidence: "high"
+    editorialAssessment: >-
+      Professioneller Test und Nutzerberichte stützen den Smart-Mehrwert, zeigen aber klar, dass die Daten nur den
+      tatsächlichen Durchgang durch diese eine Klappe abbilden und die Installation energetisch relevant sein kann.
 decision:
   bestFor:
     - "Mehrkatzenhaushalte mit individuellen Ein- und Ausgangsrechten"

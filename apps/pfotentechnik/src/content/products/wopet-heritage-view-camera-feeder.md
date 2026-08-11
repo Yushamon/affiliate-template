@@ -93,6 +93,27 @@ ratings:
   zuverlaessigkeit: 3.6
   sicherheit: 3.6
   preisleistung: 3.6
+externalEvidence:
+  status: constrained
+  constrained: true
+  professionalReviews: []
+  userReviews:
+    - platform: "WOPET Produktbewertungen"
+      url: "https://wopet.com/shop/all/product/wopet-heritage-view-pet-feeder-with-camera-app-control/"
+      checkedAt: "2026-08-11"
+      rating: 4.8
+      scale: 5
+      reviewCount: 5
+      recurringPositives:
+        - "Kamera, App-Steuerung und planmäßige Fütterung werden von mehreren Käufern positiv beschrieben."
+        - "Mehrere Berichte nennen die Einrichtung und Reinigung als unkompliziert."
+      recurringCriticism:
+        - "Ein Nutzer weist darauf hin, dass standfeste Platzierung bei sehr aktiven Katzen wichtig ist."
+        - "Die Stichprobe ist klein und liegt direkt auf der Herstellerseite."
+  note: >-
+    Ein unabhängiger K9-Magazine-Hands-on-Test existiert für die Heritage-View-Dual-Bowl-Variante.
+    Da die vorhandene PfotenTechnik-Datei keine eindeutige Modellnummer beziehungsweise Dual-Bowl-Identität festlegt,
+    wird dieser Test nicht auf das hier geführte Produkt übertragen. Deshalb bleibt Professional Reviews leer und die Evidence constrained.
 decision:
   bestFor:
     - katze

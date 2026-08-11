@@ -96,6 +96,26 @@ ratings:
   zuverlaessigkeit: 3.85
   sicherheit: 3.85
   preisleistung: 4.05
+externalEvidence:
+  status: constrained
+  constrained: true
+  professionalReviews: []
+  userReviews:
+    - platform: "WOPET Produktbewertungen"
+      url: "https://wopet.com/product/wopet-cube-air-wifi-pet-feeder/"
+      checkedAt: "2026-08-11"
+      rating: 4.85
+      scale: 5
+      reviewCount: 20
+      recurringPositives:
+        - "App-Steuerung, Zeitpläne und die 4-Liter-Kapazität werden wiederholt positiv beschrieben."
+        - "Mehrere Nutzer nennen Einrichtung und planmäßige Futterausgabe als unkompliziert."
+      recurringCriticism:
+        - "Einzelne Berichte nennen Probleme bei WLAN-Einrichtung oder App-Kopplung."
+        - "Die Bewertungen liegen auf der Herstellerseite und sind deshalb keine unabhängige Nutzerplattform."
+  note: >-
+    Für das konkrete Modell CA10 wurde keine belastbare unabhängige professionelle Review gefunden.
+    Die vorhandenen Nutzerbewertungen werden nur als herstellergehostetes Nutzersignal dokumentiert; kein Consensus.
 decision:
   bestFor:
     - katze

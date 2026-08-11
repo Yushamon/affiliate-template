@@ -94,6 +94,51 @@ ratings:
   lautstaerke: 3.85
   kapazitaet: 4.25
   preisleistung: 3.8
+externalEvidence:
+  professionalReviews:
+    - publisher: "WIRED"
+      title: "The Best Cat Water Fountains of 2026: Petlibro, Petkit, Oneisall"
+      url: "https://www.wired.com/gallery/the-best-cat-water-fountains/"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on-home-testing"
+      positives:
+        - "WIRED lobt den großen 8-Liter-Tank, den leisen Betrieb und den wirksamen Spritzschutz im Alltag mit zwei Hunden."
+        - "Die transparente Seitenwand erleichtert die Kontrolle des Wasserstands."
+      negatives:
+        - "Der empfohlene Filterwechsel etwa alle zwei Wochen verursacht laufende Kosten."
+        - "Der Kunststoffkörper wird hygienisch kritischer eingeordnet als Glas oder Edelstahl."
+      findings:
+        - "Die Quelle beschreibt die Capsule Dog Fountain als im Haushalt praktisch eingesetztes Produkt und nennt konkrete Wartungs- und Materialnachteile."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/petlibro-ultra-quiet-dog-water/dp/1311790"
+      checkedAt: "2026-08-11"
+      rating: 4.4
+      scale: 5
+      reviewCount: 264
+      recurringPositives:
+        - "Käufer loben wiederholt die große Wasserkapazität, den sehr leisen Betrieb und die einfache Reinigung."
+        - "Viele Berichte nennen den Spritzschutz und die gute Akzeptanz durch Hunde als praktische Vorteile."
+      recurringCriticism:
+        - "Wiederkehrend werden der häufige Reinigungs- und Filterwechsel sowie die Folgekosten kritisiert."
+        - "Einzelne Nutzer berichten über Pumpen- beziehungsweise Haltbarkeitsprobleme; der gefüllte Behälter wird als unhandlich beschrieben."
+  consensus:
+    strengths:
+      - finding: "Großer Tank, leiser Betrieb und geringe Spritzneigung werden von professioneller Review und Käufern übereinstimmend bestätigt."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "Regelmäßige Reinigung und kurze Filterintervalle erzeugen spürbaren Wartungsaufwand und Folgekosten."
+        sourceCount: 2
+        confidence: "high"
+      - finding: "Der Kunststoffaufbau ist pflegeintensiver als eine vollständig metallische Lösung."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Die Quellen stimmen bei den wichtigsten Alltagsstärken und beim Wartungsaufwand deutlich überein. Für die
+      Langzeithaltbarkeit der Pumpe sind die Käuferberichte gemischt.
+    contradictions:
+      - "Viele Käufer bewerten die Reinigung als einfach, während andere den häufigen Wartungsrhythmus und das Handling des gefüllten Tanks als belastend empfinden."
 decision:
   bestFor:
     - mittelgroße und große Hunde

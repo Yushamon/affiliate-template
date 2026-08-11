@@ -96,7 +96,19 @@ ratings:
   sicherheit: 4.6
   preisleistung: 4.7
 externalEvidence:
-  professionalReviews: []
+  professionalReviews:
+    - publisher: "Ääni & Kuva"
+      title: "TESTISSÄ: Xiaomi Smart Pet Food Feeder 2"
+      url: "https://www.lbaanijakuva.fi/test/6-lemmikin-juoma-ja-ruoka-automaattia/xiaomi-smart-pet-food-feeder-2"
+      checkedAt: "2026-08-11"
+      methodology: "editorial-product-test"
+      positives:
+        - "Der Test hebt Fütterungsplanung, integrierte Waage, Protokollierung und einfache Reinigung positiv hervor."
+        - "Der Batteriebetrieb als Reserve bei Stromausfall wird als praktische Absicherung bewertet."
+      negatives:
+        - "Als konkreter Nachteil wird das nicht standardkonforme Netzteil genannt."
+      findings:
+        - "Die Quelle testet ausdrücklich den Xiaomi Smart Pet Food Feeder 2 und nicht den Vorgänger."
   userReviews:
     - platform: "Yandex Reviews"
       url: "https://reviews.yandex.ru/product/umnaia-kormushka-dlia-zhivotnykh-xiaomi-smart-pet-food-feeder-2-mjwsq02--5124113032"

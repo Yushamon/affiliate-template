@@ -106,6 +106,48 @@ ratings:
   reinigung: 4.0
   tracking: 4.3
   preisleistung: 4.0
+externalEvidence:
+  professionalReviews:
+    - publisher: "PETBOOK"
+      title: "Petlibro Trinkbrunnen Dockstream 2 im Praxistest"
+      url: "https://www.petbook.de/katzen/katzenzubehoer/petlibro-dockstream-2-test"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on-editorial-review"
+      positives:
+        - "Der Praxistest bewertet den Betrieb als sehr leise und die Trinkstatistik sowie Wartungserinnerungen als praktisch."
+        - "Drei Liter Volumen und der grundsätzlich einfache Reinigungsaufbau werden positiv eingeordnet."
+      negatives:
+        - "Die App-Benutzerführung wird als ausbaufähig beschrieben."
+        - "Ein Teil weitergehender Funktionen ist an ein Abo gebunden; auch das Lade- beziehungsweise Basisdesign wird kritisiert."
+      findings:
+        - "PETBOOK testete den Dockstream 2 mit einer Katze im Alltag und dokumentierte Einrichtung, App, Lautstärke und Pflege."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/petlibro-dockstream-2-smart-stainless/product-reviews/2460566"
+      checkedAt: "2026-08-11"
+      rating: 4.4
+      scale: 5
+      reviewCount: 115
+      recurringPositives:
+        - "Käufer loben häufig den leisen Betrieb, die leichte Reinigung und die Trinkmengen-Erfassung."
+        - "Der getrennte beziehungsweise pumpenarme Aufbau wird als hygienisch und wartungsfreundlich wahrgenommen."
+      recurringCriticism:
+        - "Wiederkehrend werden WLAN-Verbindungsprobleme, Resets und unzuverlässige Smart-Anzeigen genannt."
+        - "Einzelne Berichte kritisieren Support- und Garantieabwicklung."
+  consensus:
+    strengths:
+      - finding: "Leiser Betrieb, einfache Reinigung und nützliche Trinkstatistiken werden über beide Quellen hinweg bestätigt."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "App- und Verbindungsqualität sind der deutlichste wiederkehrende Schwachpunkt."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Die externe Evidenz ist für Alltag, Reinigung und Smart-Funktionen belastbar. Aussagen zur mehrjährigen
+      Haltbarkeit bleiben trotz größerer Nutzerbasis vorsichtig.
+    contradictions:
+      - "Professioneller Test bewertet die App grundsätzlich als hilfreich, während ein Teil der Käufer von Verbindungs- und Zuverlässigkeitsproblemen berichtet."
 decision:
   bestFor:
     - "eine Katze mit festem Brunnenplatz in Steckdosennähe"

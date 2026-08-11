@@ -106,6 +106,14 @@ ratings:
   portionierung: 4.5
   tracking: 4.5
   preisleistung: 3.7
+externalEvidence:
+  constrained: true
+  status: constrained
+  note: >-
+    Für das exakt als PETLIBRO Granary 2 Vision identifizierte Modell wurde bei der Recherche am 2026-08-11 keine
+    belastbare unabhängige professionelle Review mit eindeutig geprüfter Modellidentität und keine ausreichend große
+    produktspezifische Nutzerquelle gefunden. Reviews älterer Granary-Camera-Modelle werden nicht übertragen. Kein
+    Consensus wird konstruiert.
 decision:
   bestFor:
     - "eine Katze mit Trockenfutter und genauem Fressprotokoll"

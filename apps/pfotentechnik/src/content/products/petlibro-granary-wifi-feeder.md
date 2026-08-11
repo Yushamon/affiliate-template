@@ -95,6 +95,46 @@ ratings:
   zuverlaessigkeit: 4.05
   sicherheit: 4.05
   preisleistung: 4.05
+externalEvidence:
+  professionalReviews:
+    - publisher: "FurryAdvisor"
+      title: "PETLIBRO Granary WiFi Feeder Review: PLAF103 Limits & Verdict"
+      url: "https://furryadvisor.com/product-review/petlibro-cat-feeder-review/"
+      checkedAt: "2026-08-11"
+      methodology: "independent-documentation-based-editorial-assessment"
+      positives:
+        - "Die Analyse bestätigt die klar dokumentierte Modellidentität PLAF103, App-Zeitpläne, Dual-Band-WLAN und den großen 5-Liter-Vorrat."
+        - "Gespeicherte Zeitpläne und Batterie-Backup werden als sinnvolle Ausfallsicherheit eingeordnet."
+      negatives:
+        - "Die Quelle hat Portionierungsgenauigkeit, App-Stabilität, Jam-Häufigkeit und Langzeithaltbarkeit nicht physisch getestet."
+        - "Im reinen Batteriebetrieb sind App- beziehungsweise WLAN-Funktionen eingeschränkt."
+      findings:
+        - "Die Quelle kennzeichnet transparent, dass es sich um eine dokumentationsbasierte und nicht um eine Hands-on-Review handelt."
+  userReviews:
+    - platform: "Best Buy"
+      url: "https://www.bestbuy.com/site/reviews/petlibro-granary-wifi-stainless-steel-5l-automatic-dog-and-cat-feeder-with-voice-recorder-black/12358573?page=2"
+      checkedAt: "2026-08-11"
+      rating: 4.4
+      scale: 5
+      reviewCount: 38
+      recurringPositives:
+        - "Käufer loben vor allem die zuverlässige Futterausgabe, einfache Bedienung und insgesamt gute Verarbeitungsqualität."
+      recurringCriticism:
+        - "Konnektivitätsprobleme werden wiederholt genannt, insbesondere bei größerer Entfernung zum Router."
+  consensus:
+    strengths:
+      - finding: "Der Granary WiFi bietet eine gut dokumentierte Kombination aus 5-Liter-Vorrat, Zeitplänen und App-Steuerung; Nutzer bestätigen überwiegend die zuverlässige Kernfunktion."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Netzwerk- und App-Abhängigkeit bleiben die am klarsten belegte praktische Schwäche."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Die Nutzerbasis ist brauchbar, die unabhängige professionelle Quelle jedoch research-led statt hands-on. Der
+      Consensus ist deshalb auf klar belegte Kernfunktionen und wiederkehrende Konnektivitätskritik begrenzt.
+    contradictions:
+      - "Die Dokumentationsanalyse kann keine reale App-Stabilität messen; die Käuferberichte zeigen hierzu sowohl problemlose Nutzung als auch Verbindungsprobleme."
 decision:
   bestFor:
     - Katzen

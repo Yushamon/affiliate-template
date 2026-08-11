@@ -92,6 +92,49 @@ ratings:
   akku: 4.5
   tragekomfort: 4.7
   kosten: 4
+externalEvidence:
+  professionalReviews:
+    - publisher: "GPS-Tracker-Tests.de"
+      title: "Tractive CAT 6 Mini im Test 2026: App-Sieger für Katzen"
+      url: "https://gpstracker-tests.de/test/tractive-cat-mini/"
+      checkedAt: "2026-08-11"
+      methodology: "14-day-hands-on-editorial-test"
+      positives:
+        - "Der Test bewertet Ortungsgenauigkeit, App-Bedienung und Tragekomfort besonders stark."
+        - "Live-Modus, Revierdarstellung sowie Ton- und Lichtfunktion werden als praktische Stärken eingeordnet."
+      negatives:
+        - "Die laufenden Abo-Kosten werden als wesentlicher Nachteil bewertet."
+        - "Gesundheitsfunktionen werden ausdrücklich nicht als medizinische Diagnostik eingeordnet."
+      findings:
+        - "Die Quelle beschreibt einen 14-tägigen Alltagstest des konkreten CAT-6-Mini-Modells."
+  userReviews:
+    - platform: "Trustpilot / Tractive"
+      url: "https://www.trustpilot.com/review/tractive.com"
+      checkedAt: "2026-08-11"
+      rating: 4.7
+      scale: 5
+      reviewCount: 58082
+      recurringPositives:
+        - "Produktspezifische CAT-6-Mini-Berichte loben die Ortung und den praktischen Überblick über Freigänge."
+        - "Mehrere aktuelle Berichte beschreiben die Passform als unauffällig und die App als hilfreich."
+      recurringCriticism:
+        - "Einzelne CAT-6-Mini-Berichte kritisieren, dass sich der Sicherheitsverschluss beziehungsweise das Halsband im Freigang lösen kann."
+        - "Die tatsächliche Akkulaufzeit kann bei aktiver Nutzung deutlich unter dem Hersteller-Maximum liegen."
+  consensus:
+    strengths:
+      - finding: "Ortung, App und die katzenspezifische Bauform sind die am klarsten gestützten Stärken des CAT 6 Mini."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Abo-Kosten und das sicherheitsbedingt lösbare Halsband bleiben reale Trade-offs."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Ein produktspezifischer Hands-on-Test und aktuelle CAT-6-Mini-Erfahrungsberichte stützen die Kernfunktionen.
+      Der Trustpilot-Gesamtscore ist allerdings markenweit und wird nicht als produktspezifische Durchschnittsnote interpretiert.
+  note: >-
+    Der Trustpilot-Ratingwert und die Review-Anzahl beziehen sich auf das Tractive-Unternehmensprofil.
+    Für die inhaltlichen Muster wurden nur eindeutig als CAT 6 Mini erkennbare aktuelle Berichte herangezogen.
 decision:
   bestFor:
     - Freigängerkatzen von 3 bis 8 kg

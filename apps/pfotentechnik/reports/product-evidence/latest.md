@@ -1,10 +1,10 @@
 # Product External Evidence Audit
 
 - Produkte: 82
-- Mit externalEvidence: 56
-- Vollständig: 37
-- Teilweise: 19
-- Ohne Evidenz: 26
+- Mit externalEvidence: 82
+- Vollständig: 53
+- Teilweise: 29
+- Ohne Evidenz: 0
 
 ## Vollständig
 
@@ -30,20 +30,36 @@
 - petkit-eversweet-solo-2-fountain
 - petkit-eversweet-solo-se
 - petkit-eversweet-ultra
+- petkit-purobot-max-pro-2
 - petkit-yumshare-dual-hopper
 - petkit-yumshare-solo-2
 - petlibro-air-automatic-feeder
+- petlibro-capsule-dog-fountain
+- petlibro-dockstream-2-smart-cordless
+- petlibro-dockstream-2-smart
+- petlibro-dockstream-cordless
 - petlibro-dockstream-rfid-smart
 - petlibro-granary-camera-feeder
+- petlibro-granary-wifi-feeder
 - petlibro-one-rfid-smart-feeder
 - petlibro-polar-wet-food-feeder
+- petlibro-scout-smart-camera
 - petlibro-stainless-steel-fountain
 - petsafe-freshfeed-refrigerated-feeder
+- petsafe-healthy-pet-simply-feed
+- petsafe-mikrochip-katzenklappe
+- petsafe-smart-feed-2
 - surefeed-microchip-pet-feeder-connect
+- surefeed-microchip-pet-feeder
+- sureflap-dualscan-mikrochip-katzenklappe
+- sureflap-mikrochip-katzenklappe-connect
+- sureflap-mikrochip-katzenklappe
+- tractive-cat-6-mini
 - tractive-dog-6-xl
 - tractive-dog-6
 - weenect-xs
 - weenect-xt
+- xiaomi-smart-pet-food-feeder-2
 - xiaomi-smart-pet-fountain-2
 
 ## Teilweise
@@ -64,35 +80,20 @@
 - petkit-eversweet-3-pro-uvc · fehlt: professionalReviews, consensus
 - petkit-eversweet-5-mini · fehlt: professionalReviews, consensus
 - petkit-fresh-element-infinity · fehlt: userReviews, consensus
+- petkit-fresh-element-solo · fehlt: professionalReviews, consensus
+- petlibro-air-wifi-feeder · fehlt: consensus
 - petlibro-glacier-ultrafiltration · fehlt: consensus
+- petlibro-granary-2-vision · fehlt: professionalReviews, userReviews, consensus
+- petlibro-granary-dual-feeder · fehlt: professionalReviews, consensus
 - petlibro-space-smart-feeder · fehlt: userReviews, consensus
-- xiaomi-smart-pet-food-feeder-2 · fehlt: professionalReviews
+- petsafe-petporte-smart-flap · fehlt: userReviews
+- petwalk-medium-tiertuer · fehlt: professionalReviews, userReviews, consensus
+- wopet-cube-air-ca10 · fehlt: professionalReviews, consensus
+- wopet-heritage-view-camera-feeder · fehlt: professionalReviews, consensus
+- wopet-patrol-f07-pro · fehlt: professionalReviews, consensus
+- wopet-pioneer-f01-plus · fehlt: professionalReviews, consensus
+- zeromouse-2-0 · fehlt: professionalReviews, consensus
 
 ## Ohne Evidenz
 
-- petkit-fresh-element-solo
-- petkit-purobot-max-pro-2
-- petlibro-air-wifi-feeder
-- petlibro-capsule-dog-fountain
-- petlibro-dockstream-2-smart-cordless
-- petlibro-dockstream-2-smart
-- petlibro-dockstream-cordless
-- petlibro-granary-2-vision
-- petlibro-granary-dual-feeder
-- petlibro-granary-wifi-feeder
-- petlibro-scout-smart-camera
-- petsafe-healthy-pet-simply-feed
-- petsafe-mikrochip-katzenklappe
-- petsafe-petporte-smart-flap
-- petsafe-smart-feed-2
-- petwalk-medium-tiertuer
-- surefeed-microchip-pet-feeder
-- sureflap-dualscan-mikrochip-katzenklappe
-- sureflap-mikrochip-katzenklappe-connect
-- sureflap-mikrochip-katzenklappe
-- tractive-cat-6-mini
-- wopet-cube-air-ca10
-- wopet-heritage-view-camera-feeder
-- wopet-patrol-f07-pro
-- wopet-pioneer-f01-plus
-- zeromouse-2-0
+Keine.

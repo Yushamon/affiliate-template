@@ -97,6 +97,21 @@ ratings:
   zuverlaessigkeit: 4.4
   sicherheit: 3.8
   preisleistung: 4.4
+externalEvidence:
+  constrained: true
+  status: constrained
+  userReviews:
+    - platform: "PetSmart"
+      url: "https://www.petsmart.com/cat/bowls-and-feeders/food-and-water-bowls/catit-design-fresh-and-clear-pet-feeder-and-fountain-replacement-pump-5122580.html"
+      checkedAt: "2026-08-11"
+      reviewCount: 3
+      recurringPositives: []
+      recurringCriticism:
+        - "Die sichtbare produktspezifische Stichprobe ist zu klein, um wiederkehrende Muster belastbar abzuleiten."
+  note: >-
+    The Spruce Pets hat einen PETLIBRO Granary Feeder für zwei Katzen praktisch getestet, die dort beschriebene
+    Variante ist jedoch nicht eindeutig als WiFi Dual Food Tray Feeder identifiziert. Diese Review wird deshalb nicht
+    als professioneller Beleg für das konkrete Modell übernommen. Die Nutzerbasis ist ebenfalls zu klein. Constrained.
 decision:
   bestFor:
     - Zwei Katzen mit ähnlichem Futterbedarf

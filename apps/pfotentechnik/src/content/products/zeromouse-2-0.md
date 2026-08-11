@@ -114,6 +114,27 @@ ratings:
   alltag: 4.2
   zuverlaessigkeit: 3.9
   preisleistung: 3.7
+externalEvidence:
+  status: constrained
+  constrained: true
+  professionalReviews: []
+  userReviews:
+    - platform: "Trustpilot / ZeroMOUSE"
+      url: "https://de.trustpilot.com/review/zeromouse.com"
+      checkedAt: "2026-08-11"
+      rating: 4.2
+      scale: 5
+      reviewCount: 1583
+      recurringPositives:
+        - "Viele aktuelle, ausdrücklich auf ZeroMOUSE 2.0 bezogene Berichte beschreiben erfolgreich blockierte Beuteversuche."
+        - "Installation und Alltagsnutzen werden häufig positiv bewertet, wenn WLAN, Stromversorgung und Positionierung passen."
+      recurringCriticism:
+        - "Mehrere aktuelle Berichte nennen Fehl- oder Unklar-Erkennungen, Verzögerungen und App-/Verbindungsprobleme."
+        - "Einzelne Nutzer berichten von Kompatibilitätsproblemen mit bestimmten Katzenklappen oder Installationssituationen."
+  note: >-
+    Der Trustpilot-Gesamtscore umfasst das Unternehmensprofil und ist nicht ausschließlich ein ZeroMOUSE-2.0-Produktmittel.
+    Für die Muster wurden aktuelle, ausdrücklich auf ZeroMOUSE 2.0 beziehungsweise dessen Beuteerkennung bezogene Berichte betrachtet.
+    Eine belastbare unabhängige professionelle Review wurde nicht gefunden; deshalb kein Consensus.
 decision:
   bestFor:
     - Freigängerkatzen, die wiederholt Mäuse, Vögel oder andere Beute ins Haus bringen

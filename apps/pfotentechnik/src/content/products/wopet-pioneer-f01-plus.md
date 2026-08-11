@@ -97,6 +97,24 @@ ratings:
   zuverlaessigkeit: 3.95
   sicherheit: 3.6
   preisleistung: 3.95
+externalEvidence:
+  status: constrained
+  constrained: true
+  professionalReviews: []
+  userReviews:
+    - platform: "WOPET Produktbewertungen"
+      url: "https://test.wopet.com/product/wopet-sprite-automatic-cat-dog-feeder-4-meal-7l/"
+      checkedAt: "2026-08-11"
+      rating: 5
+      scale: 5
+      reviewCount: 9
+      recurringPositives:
+        - "Die kleine Nutzerstichprobe bewertet die grundlegende automatische Futterausgabe positiv."
+      recurringCriticism:
+        - "Die Stichprobe ist klein und wird direkt vom Hersteller gehostet."
+  note: >-
+    Die WOPET-Supportseite identifiziert das Produkt ausdrücklich als Pioneer F01 Plus.
+    Eine belastbare unabhängige professionelle Review des konkreten Modells wurde nicht gefunden; kein Consensus.
 decision:
   bestFor:
     - katze

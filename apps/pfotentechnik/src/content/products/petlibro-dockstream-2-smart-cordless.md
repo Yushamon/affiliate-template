@@ -106,6 +106,44 @@ ratings:
   reinigung: 4.0
   tracking: 4.4
   preisleistung: 3.9
+externalEvidence:
+  professionalReviews:
+    - publisher: "Cats.com"
+      title: "Petlibro Dockstream 2 Smart Cordless Water Fountain Review"
+      url: "https://cats.com/petlibro-dockstream-2-smart-cordless-water-fountain-review"
+      checkedAt: "2026-08-11"
+      methodology: "multi-week-hands-on-home-test"
+      positives:
+        - "Der mehrwöchige Test lobt die sehr leise Arbeitsweise, den pumpenfreien Aufbau, die einfache Demontage und die App-basierte Trinküberwachung."
+        - "Die kabellose Version behält Smart-Funktionen und bietet flexible Aufstellung."
+      negatives:
+        - "Im Akkubetrieb läuft Wasser nur bei erkannter Annäherung; die Testkatzen ignorierten diesen Modus teilweise."
+        - "Der Preis ist hoch und der Wasserbehälter bleibt überwiegend aus Kunststoff."
+      findings:
+        - "Cats.com testete das konkrete Dockstream-2-Cordless-Modell mehrere Wochen mit eigenen Katzen und verglich es mit früheren Dockstream-Versionen."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/petlibro-dockstream-2-stainless-steel/product-reviews/2460542"
+      checkedAt: "2026-08-11"
+      recurringPositives:
+        - "Nutzer loben den sehr leisen Betrieb, die einfache Reinigung und die Trinkmengen-Anzeige."
+      recurringCriticism:
+        - "Mehrere Berichte nennen WLAN-Abbrüche, fehlerhafte Batterieanzeigen oder Probleme der Smart-Funktionen."
+        - "Die Erfahrungen mit Support und Zuverlässigkeit sind nicht einheitlich."
+  consensus:
+    strengths:
+      - finding: "Leiser Betrieb, einfache Reinigung und flexible kabellose Aufstellung sind die konsistentesten Stärken."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "Der Sensormodus ist nicht für jede Katze ideal und Smart-Konnektivität kann im Alltag störanfällig sein."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Hands-on-Test und produktspezifische Nutzerberichte liefern ein schlüssiges Bild. Die größte Unsicherheit betrifft
+      die langfristige Zuverlässigkeit der Smart-Funktionen.
+    contradictions:
+      - "Cats.com bewertet den Cordless-Modus technisch positiv, beobachtet aber geringe Akzeptanz bei den eigenen Katzen; Nutzerberichte konzentrieren sich stärker auf Konnektivität und Batterieanzeigen."
 decision:
   bestFor:
     - "eine Katze mit Interesse an nachvollziehbaren Trinkdaten"

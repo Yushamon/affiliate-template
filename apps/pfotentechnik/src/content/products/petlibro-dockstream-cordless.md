@@ -93,6 +93,48 @@ ratings:
   reinigung: 3.9
   lautstaerke: 4.05
   preisleistung: 3.85
+externalEvidence:
+  professionalReviews:
+    - publisher: "Cats.com"
+      title: "Petlibro Dockstream Battery-Operated Water Fountain for Cats Review"
+      url: "https://cats.com/petlibro-dockstream-water-fountain-review"
+      checkedAt: "2026-08-11"
+      methodology: "three-week-hands-on-home-test"
+      positives:
+        - "Der dreiwöchige Test bestätigt den Nutzen der kabellosen Aufstellung und eine für zwei Katzen ausreichende Kapazität."
+        - "Die Grundfunktion als leiser gefilterter Brunnen wird positiv bewertet."
+      negatives:
+        - "Zum Laden beziehungsweise Bedienen muss der Wasserbehälter teilweise angehoben werden, was mit gefülltem Tank unpraktisch ist."
+        - "Im Akkubetrieb arbeitet der Brunnen nur sensorgesteuert und nicht kontinuierlich."
+      findings:
+        - "Die Quelle testete die konkrete batteriebetriebene Dockstream-Version mit zwei Katzen und dokumentierte Handhabung, Laufmodi und Reinigung."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/petlibro-dockstream-battery-operated/product-reviews/842446"
+      checkedAt: "2026-08-11"
+      rating: 4.3
+      scale: 5
+      reviewCount: 1173
+      recurringPositives:
+        - "Sehr viele Käufer loben die kabellose Aufstellung, den leisen Betrieb und die leichte Reinigung."
+        - "Die Wasserqualität und die gute Tierakzeptanz werden häufig positiv erwähnt."
+      recurringCriticism:
+        - "Wiederkehrend werden Ladezustandsanzeigen, Sensorerkennung und langfristige Pumpen- beziehungsweise Akkuzuverlässigkeit kritisiert."
+        - "Bei einzelnen hellen Katzen wird berichtet, dass der Bewegungssensor nicht immer zuverlässig auslöst."
+  consensus:
+    strengths:
+      - finding: "Kabellose Flexibilität, leiser Betrieb und unkomplizierte Reinigung sind über Test und große Nutzerbasis hinweg gut belegt."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "Sensorbetrieb und Lade- beziehungsweise Langzeitzuverlässigkeit sind die wiederkehrenden Schwachstellen."
+        sourceCount: 2
+        confidence: "high"
+    editorialAssessment: >-
+      Die große Nutzerbasis stützt die im Praxistest beobachteten Stärken. Gleichzeitig zeigen die Käuferberichte,
+      dass Sensor- und Haltbarkeitsprobleme nicht nur Einzelfälle sind.
+    contradictions:
+      - "Der professionelle Test bewertet den Sensorbetrieb als funktional, während einzelne Käufer von Erkennungsproblemen bei bestimmten Katzen berichten."
 decision:
   bestFor:
     - eine bis zwei Katzen

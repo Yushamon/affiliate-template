@@ -91,6 +91,44 @@ ratings:
   reinigung: 4.4
   portionierung: 4.6
   offline: 4.8
+externalEvidence:
+  professionalReviews:
+    - publisher: "KittyClysm"
+      title: "PetSafe Healthy Pet Simply Feed Automatic Cat & Dog Feeder Review"
+      url: "https://kittyclysm.com/petsafe-healthy-pet-simply-feed-automatic-feeder-review/"
+      checkedAt: "2026-08-11"
+      methodology: "owner-hands-on-review"
+      positives:
+        - "Der Autor berichtet nach mehr als einem Monat Nutzung von zuverlässiger automatischer Fütterung und guter Eignung für mehrere kleine Mahlzeiten."
+        - "Die feine Portionierung und der große Vorrat werden als alltagstauglich beschrieben."
+      negatives:
+        - "Die Programmierung wird als wenig intuitiv beschrieben."
+        - "Noch kleinere Portionsschritte wären für einzelne Katzen wünschenswert."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/petsafe-healthy-pet-simply-feed/product-reviews/126449"
+      checkedAt: "2026-08-11"
+      rating: 4.0
+      scale: 5
+      reviewCount: 487
+      recurringPositives:
+        - "Wiederkehrend gelobt werden zuverlässige Zeitpläne, große Kapazität und lange Nutzungsdauer."
+        - "Viele Käufer schätzen, dass das Gerät ohne App funktioniert."
+      recurringCriticism:
+        - "Programmierung und kleine Anzeige werden wiederholt als umständlich beschrieben."
+        - "Einzelne Tiere können den Mechanismus manipulieren; ungeeignetes oder zu großes Futter kann den Auslass blockieren."
+  consensus:
+    strengths:
+      - finding: "Zuverlässige Zeitpläne, große Kapazität und flexible Portionierung sind über Hands-on- und Nutzerquellen gut gestützt."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "Die Bedienoberfläche ist weniger intuitiv als bei App-Feedern und der Futtertyp muss zum Ausgabemechanismus passen."
+        sourceCount: 2
+        confidence: "high"
+    editorialAssessment: >-
+      Die große Nutzerbasis und ein modellbezogener Hands-on-Bericht stützen die Kernfunktion deutlich.
+      Kritik konzentriert sich auf Programmierung, Geräusch, Manipulationsversuche einzelner Tiere und Futterkompatibilität.
 decision:
   bestFor:
     - Offline-Betrieb

@@ -32,6 +32,48 @@ price:
     type: "merchant"
 rating: 3.7
 ratings: { bild: 4.0, datenschutz: 2.7, folgekosten: 2.5, alltag: 3.8 }
+externalEvidence:
+  professionalReviews:
+    - publisher: "WIRED"
+      title: "Petlibro Scout Smart Camera: Filled With Both Features and Kinks"
+      url: "https://www.wired.com/review/petlibro-scout-smart-camera/"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on-editorial-review"
+      positives:
+        - "Der Hands-on-Test lobt das klare 1080p-Bild, die intuitive App, flexible Montage und die automatische Schwenk- und Neigefunktion."
+        - "Die Kamera kann mehrere Haustiere unterscheiden und Aufnahmen nach Tier und Aktivität organisieren."
+      negatives:
+        - "Die entscheidenden AI-Funktionen liegen hinter einem vergleichsweise teuren Abonnement."
+        - "Im Test traten mehrtägige Ausfälle bei Tracking, Aktivitätsprotokoll und gespeicherten Clips auf."
+        - "WIRED kritisiert die Cloud-Abhängigkeit und unklare Datenschutzaspekte."
+      findings:
+        - "Der Test lief zunächst ohne, anschließend mit bezahltem AI-Abo und dokumentiert konkrete Funktionsausfälle nach dem Upgrade."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/petlibro-scout-smart-pet-camera-ai/product-reviews/2289534"
+      checkedAt: "2026-08-11"
+      rating: 4.3
+      scale: 5
+      reviewCount: 22
+      recurringPositives:
+        - "Käufer loben Bildqualität, einfache Bedienung und den Live-Zugriff von unterwegs."
+      recurringCriticism:
+        - "Mehrere Rückmeldungen beschreiben unzuverlässige Bewegungs- beziehungsweise Ereigniserkennung und Lücken in der Video-Historie."
+  consensus:
+    strengths:
+      - finding: "Bildqualität, Live-Zugriff und die übersichtliche App sind die am besten gestützten Stärken."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "AI-Mehrwert und Ereigniserkennung sind weniger zuverlässig als die Basiskamera; der volle Funktionsumfang ist zudem abonnementabhängig."
+        sourceCount: 2
+        confidence: "high"
+    editorialAssessment: >-
+      Professioneller Hands-on-Test und produktspezifische Nutzerberichte stimmen beim guten Kamerabild überein,
+      zeigen aber zugleich Schwächen bei Tracking, Historie und AI-Zuverlässigkeit. Langzeitzuverlässigkeit bleibt offen.
+  note: >-
+    Die externe Evidenz bezieht sich auf die PETLIBRO Scout Smart Camera; Aussagen zu anderen PETLIBRO-Kameras
+    wurden nicht übertragen.
 decision:
   bestFor: ["fester Innenbereich", "bis zu fünf unterscheidbare Hunde oder Katzen", "Nutzer mit bewusst gewähltem Cloud-Abo"]
   attention: ["keine SD-Karte", "KI- und Cloudfunktionen benötigen laut Hersteller ein Abo", "ähnlich aussehende Tiere können verwechselt werden"]

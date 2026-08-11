@@ -94,6 +94,42 @@ ratings:
   zuverlaessigkeit: 4.5
   sicherheit: 5
   preisleistung: 4.5
+externalEvidence:
+  professionalReviews:
+    - publisher: "Tech Advisor"
+      title: "Sure Petcare Microchip Pet Feeder review"
+      url: "https://www.techadvisor.com/article/720358/sure-petcare-microchip-pet-feeder-review.html"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on-editorial-review"
+      positives:
+        - "Der Review bewertet die selektive Futterfreigabe für Mehrtierhaushalte als best-in-class."
+        - "Das Gerät wird besonders für getrennte Diäten und Schutz vor Futterdiebstahl empfohlen."
+      negatives:
+        - "Der hohe Preis wird ausdrücklich als wesentlicher Nachteil genannt."
+  userReviews:
+    - platform: "Zooplus"
+      url: "https://www.zooplus.com/feedback/shop/cats/cat_bowls_feeders/feeders/479556?page=1"
+      checkedAt: "2026-08-11"
+      rating: 4.3
+      scale: 5
+      reviewCount: 1726
+      recurringPositives:
+        - "Viele Nutzer bestätigen den Nutzen bei Futterdiebstahl und unterschiedlichen Diäten."
+      recurringCriticism:
+        - "Einzelne geschickte Zweittiere können seitlich oder von hinten an Futter gelangen."
+        - "Manche Katzen benötigen längere Eingewöhnung; Zubehör zur stärkeren Abschirmung kostet extra."
+  consensus:
+    strengths:
+      - finding: "Die selektive Futterfreigabe löst das Problem unterschiedlicher Diäten in Mehrtierhaushalten nachweislich gut."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "Der hohe Preis und mögliche Umgehung durch sehr geschickte Zweittiere sind die wichtigsten Grenzen."
+        sourceCount: 2
+        confidence: "high"
+    editorialAssessment: >-
+      Der unabhängige Review und eine sehr große Nutzerbasis stützen den Kernnutzen deutlich. Das Produkt ersetzt
+      dennoch keine vollständige räumliche Trennung, wenn ein zweites Tier den offenen Zugang mechanisch ausnutzt.
 decision:
   bestFor:
     - Mehrkatzenhaushalte mit Futterklau

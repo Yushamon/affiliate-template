@@ -76,6 +76,15 @@ experience: { summary: "Datenreview der Bauproduktrolle.", methodology: "Deutsch
 alternatives: ["onlycat-mikrochip-katzenklappe", "sureflap-mikrochip-katzenklappe-connect", "petsafe-mikrochip-katzenklappe"]
 comparisons: ["beste-mikrochip-katzenklappen", "katzenklappen-mit-app-und-beuteerkennung"]
 comparisonFilters: { animal: ["cat", "dog"], petSize: ["small", "medium"], foodType: [], app: true, access: "microchip", backupPower: true, priceTier: "premium" }
+externalEvidence:
+  professionalReviews: []
+  userReviews: []
+  status: constrained
+  constrained: true
+  note: >-
+    Am 2026-08-11 wurde keine ausreichend belastbare unabhängige professionelle Review und keine produktspezifische
+    Nutzerquelle mit sauber erfassbarem Rating, Skala und Review-Anzahl für die konkrete petWALK Medium Tiertür gefunden.
+    Herstellerangaben werden deshalb nicht als externe Evidenz umgedeutet; ein Consensus wird bewusst nicht erzeugt.
 specs:
   - { label: "Produktart", value: "Motorisierte Tiertür Medium" }
   - { label: "Erkennung", value: "Bewegungs- und Chip-Erkennung" }

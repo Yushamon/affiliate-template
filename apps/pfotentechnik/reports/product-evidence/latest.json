@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-11T08:58:54.073Z",
+  "generatedAt": "2026-08-11T09:54:56.388Z",
   "summary": {
     "products": 82,
-    "covered": 56,
-    "complete": 37,
-    "partial": 19,
-    "missing": 26
+    "covered": 82,
+    "complete": 53,
+    "partial": 29,
+    "missing": 0
   },
   "rows": [
     {
@@ -443,30 +443,25 @@
     {
       "slug": "petkit-fresh-element-solo",
       "file": "src/content/products/petkit-fresh-element-solo.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
-      "userSources": 0,
+      "userSources": 1,
       "consensus": 0,
       "missingParts": [
         "professionalReviews",
-        "userReviews",
         "consensus"
       ]
     },
     {
       "slug": "petkit-purobot-max-pro-2",
       "file": "src/content/products/petkit-purobot-max-pro-2.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "petkit-yumshare-dual-hopper",
@@ -501,72 +496,54 @@
     {
       "slug": "petlibro-air-wifi-feeder",
       "file": "src/content/products/petlibro-air-wifi-feeder.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
+      "status": "partial",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
       "consensus": 0,
       "missingParts": [
-        "professionalReviews",
-        "userReviews",
         "consensus"
       ]
     },
     {
       "slug": "petlibro-capsule-dog-fountain",
       "file": "src/content/products/petlibro-capsule-dog-fountain.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 3,
+      "missingParts": []
     },
     {
       "slug": "petlibro-dockstream-2-smart-cordless",
       "file": "src/content/products/petlibro-dockstream-2-smart-cordless.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "petlibro-dockstream-2-smart",
       "file": "src/content/products/petlibro-dockstream-2-smart.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "petlibro-dockstream-cordless",
       "file": "src/content/products/petlibro-dockstream-cordless.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "petlibro-dockstream-rfid-smart",
@@ -593,8 +570,8 @@
     {
       "slug": "petlibro-granary-2-vision",
       "file": "src/content/products/petlibro-granary-2-vision.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
       "userSources": 0,
       "consensus": 0,
@@ -617,30 +594,25 @@
     {
       "slug": "petlibro-granary-dual-feeder",
       "file": "src/content/products/petlibro-granary-dual-feeder.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
-      "userSources": 0,
+      "userSources": 1,
       "consensus": 0,
       "missingParts": [
         "professionalReviews",
-        "userReviews",
         "consensus"
       ]
     },
     {
       "slug": "petlibro-granary-wifi-feeder",
       "file": "src/content/products/petlibro-granary-wifi-feeder.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "petlibro-one-rfid-smart-feeder",
@@ -665,16 +637,12 @@
     {
       "slug": "petlibro-scout-smart-camera",
       "file": "src/content/products/petlibro-scout-smart-camera.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "petlibro-space-smart-feeder",
@@ -712,64 +680,50 @@
     {
       "slug": "petsafe-healthy-pet-simply-feed",
       "file": "src/content/products/petsafe-healthy-pet-simply-feed.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "petsafe-mikrochip-katzenklappe",
       "file": "src/content/products/petsafe-mikrochip-katzenklappe.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "petsafe-petporte-smart-flap",
       "file": "src/content/products/petsafe-petporte-smart-flap.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
+      "status": "partial",
+      "hasExternal": true,
+      "professional": 1,
       "userSources": 0,
-      "consensus": 0,
+      "consensus": 2,
       "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
+        "userReviews"
       ]
     },
     {
       "slug": "petsafe-smart-feed-2",
       "file": "src/content/products/petsafe-smart-feed-2.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "petwalk-medium-tiertuer",
       "file": "src/content/products/petwalk-medium-tiertuer.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
       "userSources": 0,
       "consensus": 0,
@@ -792,72 +746,52 @@
     {
       "slug": "surefeed-microchip-pet-feeder",
       "file": "src/content/products/surefeed-microchip-pet-feeder.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "sureflap-dualscan-mikrochip-katzenklappe",
       "file": "src/content/products/sureflap-dualscan-mikrochip-katzenklappe.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "sureflap-mikrochip-katzenklappe-connect",
       "file": "src/content/products/sureflap-mikrochip-katzenklappe-connect.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "sureflap-mikrochip-katzenklappe",
       "file": "src/content/products/sureflap-mikrochip-katzenklappe.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "tractive-cat-6-mini",
       "file": "src/content/products/tractive-cat-6-mini.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "tractive-dog-6-xl",
@@ -902,70 +836,64 @@
     {
       "slug": "wopet-cube-air-ca10",
       "file": "src/content/products/wopet-cube-air-ca10.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
-      "userSources": 0,
+      "userSources": 1,
       "consensus": 0,
       "missingParts": [
         "professionalReviews",
-        "userReviews",
         "consensus"
       ]
     },
     {
       "slug": "wopet-heritage-view-camera-feeder",
       "file": "src/content/products/wopet-heritage-view-camera-feeder.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
-      "userSources": 0,
+      "userSources": 1,
       "consensus": 0,
       "missingParts": [
         "professionalReviews",
-        "userReviews",
         "consensus"
       ]
     },
     {
       "slug": "wopet-patrol-f07-pro",
       "file": "src/content/products/wopet-patrol-f07-pro.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
-      "userSources": 0,
+      "userSources": 1,
       "consensus": 0,
       "missingParts": [
         "professionalReviews",
-        "userReviews",
         "consensus"
       ]
     },
     {
       "slug": "wopet-pioneer-f01-plus",
       "file": "src/content/products/wopet-pioneer-f01-plus.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
-      "userSources": 0,
+      "userSources": 1,
       "consensus": 0,
       "missingParts": [
         "professionalReviews",
-        "userReviews",
         "consensus"
       ]
     },
     {
       "slug": "xiaomi-smart-pet-food-feeder-2",
       "file": "src/content/products/xiaomi-smart-pet-food-feeder-2.md",
-      "status": "partial",
+      "status": "complete",
       "hasExternal": true,
-      "professional": 0,
+      "professional": 1,
       "userSources": 1,
       "consensus": 2,
-      "missingParts": [
-        "professionalReviews"
-      ]
+      "missingParts": []
     },
     {
       "slug": "xiaomi-smart-pet-fountain-2",
@@ -980,14 +908,13 @@
     {
       "slug": "zeromouse-2-0",
       "file": "src/content/products/zeromouse-2-0.md",
-      "status": "missing",
-      "hasExternal": false,
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
-      "userSources": 0,
+      "userSources": 1,
       "consensus": 0,
       "missingParts": [
         "professionalReviews",
-        "userReviews",
         "consensus"
       ]
     }

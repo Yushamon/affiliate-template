@@ -94,6 +94,26 @@ ratings:
   zuverlaessigkeit: 3.65
   sicherheit: 3.65
   preisleistung: 4
+externalEvidence:
+  status: constrained
+  constrained: true
+  professionalReviews: []
+  userReviews:
+    - platform: "WOPET Produktbewertungen"
+      url: "https://wopet.com/product/wopet-patrol-automatic-cat-dog-feeder-wifi-15-meal-6l/"
+      checkedAt: "2026-08-11"
+      rating: 4.8
+      scale: 5
+      reviewCount: 50
+      recurringPositives:
+        - "App-Fütterung, Zeitpläne und flexible Portionssteuerung werden wiederholt positiv beschrieben."
+        - "Mehrere Käufer berichten von zuverlässiger planmäßiger Ausgabe im Alltag."
+      recurringCriticism:
+        - "Einzelne Berichte nennen Verbindungs- oder Einrichtungsprobleme und Defekte bei einzelnen Geräten."
+        - "Die Bewertungen werden vom Hersteller gehostet und sind keine unabhängige Review-Plattform."
+  note: >-
+    Für das konkrete F07-Pro-Modell wurde keine belastbare unabhängige professionelle Review gefunden.
+    Herstellerangaben bestätigen Modellidentität und Funktionen, zählen aber nicht als unabhängiger Review; kein Consensus.
 decision:
   bestFor:
     - Katzen

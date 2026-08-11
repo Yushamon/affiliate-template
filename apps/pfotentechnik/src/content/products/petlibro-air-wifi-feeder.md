@@ -99,6 +99,34 @@ ratings:
   sicherheit: 4.2
   akku: 4.5
   preisleistung: 4.2
+externalEvidence:
+  constrained: true
+  status: constrained
+  professionalReviews:
+    - publisher: "The Spruce Pets"
+      title: "The 10 Best Automatic Cat Feeders Tested With Real Cats"
+      url: "https://www.thesprucepets.com/best-automatic-cat-feeders-4175145"
+      checkedAt: "2026-08-11"
+      methodology: "lab-and-at-home-product-testing"
+      positives:
+        - "Der AIR WiFi wurde nach Labor- und Heimtests wegen langer Akkulaufzeit, kompakter Bauform, nützlicher App und zuverlässiger Ausgabe sehr positiv bewertet."
+        - "Die kabellose Aufstellung und die einfache Verwaltung mehrerer Geräte beziehungsweise Nutzer werden als klare Vorteile genannt."
+      negatives:
+        - "Die Futterkapazität ist relativ klein."
+        - "Ein vollständiger Ladevorgang dauert laut Test rund acht Stunden; Kamera und zusätzliche Komfortfunktionen fehlen."
+      findings:
+        - "The Spruce Pets beschreibt einen strukturierten Test von 24 Futterautomaten mit Aufbau, Portionierung, Software, Reinigung und anschließendem Einsatz in realen Haushalten."
+  userReviews:
+    - platform: "PetSmart"
+      url: "https://www.petsmart.com/cat/bowls-and-feeders/food-and-water-bowls/catit-design-fresh-and-clear-pet-feeder-and-fountain-replacement-pump-5122580.html"
+      checkedAt: "2026-08-11"
+      reviewCount: 1
+      recurringPositives: []
+      recurringCriticism:
+        - "Die produktspezifische Nutzerbasis ist mit nur einer sichtbaren Bewertung zu klein für wiederkehrende Muster."
+  note: >-
+    Der unabhängige Praxistest ist belastbar, die öffentlich auffindbare produktspezifische Nutzerbasis jedoch zu klein,
+    um einen Consensus aus professioneller und Nutzer-Evidenz zu bilden. Deshalb bleibt die Evidenz constrained.
 decision:
   bestFor:
     - eine Katze

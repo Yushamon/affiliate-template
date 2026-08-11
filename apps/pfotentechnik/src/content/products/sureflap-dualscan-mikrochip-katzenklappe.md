@@ -52,7 +52,42 @@ images:
       alt: "SureFlap DualScan Mikrochip Katzenklappe in 45-Grad-Perspektive"
     - src: "../../assets/images/products/sureflap-dualscan-mikrochip-katzenklappe/gallery-3.webp"
       alt: "Detailaufnahme der SureFlap DualScan Mikrochip Katzenklappe"
-
+externalEvidence:
+  professionalReviews:
+    - publisher: "Tailster"
+      title: "Sureflap Dual Scan Microchip Cat Flap Review"
+      url: "https://content.tailster.com/sureflap-dualscan-microchip-cat-flap-review/"
+      checkedAt: "2026-08-11"
+      methodology: "editorial-product-review"
+      positives:
+        - "Der Review hebt selektive Ein- und Ausgangsrechte sowie die höhere Sicherheit gegenüber der Standard-Version hervor."
+        - "Programmierung, Verarbeitung und Preis-Leistung werden positiv bewertet."
+      negatives:
+        - "Die Öffnung kann für große Katzen knapp sein."
+        - "Verzögerte Entriegelung und das Klickgeräusch können einzelne Katzen stören."
+  userReviews:
+    - platform: "Zooplus"
+      url: "https://www.zooplus.ie/feedback/shop/cats/cat_flaps_nets/microchip_cat_flaps/408870"
+      checkedAt: "2026-08-11"
+      rating: 4.8
+      scale: 5
+      reviewCount: 158
+      recurringPositives:
+        - "Die Mehrzahl der Nutzer bewertet Funktion und Einrichtung sehr positiv."
+      recurringCriticism:
+        - "Einzelne besonders geschickte Katzen können mechanische Sperren überwinden."
+  consensus:
+    strengths:
+      - finding: "Selektive Ein- und Ausgangsrechte und die gegenüber der Standardklappe erhöhte Zutrittskontrolle sind gut gestützt."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "Größe, Entriegelungsgeräusch und mechanische Umgehung durch einzelne Tiere bleiben reale Grenzen."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: >-
+      Professioneller Modellreview und produktspezifische Nutzerbasis ergeben insgesamt ein konsistentes positives Bild,
+      ohne die mechanischen Grenzen elektronischer Katzenklappen zu überdecken.
 decision:
   bestFor:
     - "Mehrkatzenhaushalte mit unterschiedlichen Ausgangsrechten"

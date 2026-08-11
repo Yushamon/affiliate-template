@@ -74,6 +74,48 @@ experience: { summary: "Datenreview mit Fokus auf Chipformat und Einbau.", metho
 alternatives: ["sureflap-mikrochip-katzenklappe", "sureflap-dualscan-mikrochip-katzenklappe", "sureflap-mikrochip-katzenklappe-connect"]
 comparisons: ["beste-mikrochip-katzenklappen"]
 comparisonFilters: { animal: ["cat"], petSize: ["small"], foodType: [], app: false, access: "microchip", priceTier: "midrange" }
+externalEvidence:
+  professionalReviews:
+    - publisher: "Haus & Garten Test"
+      title: "PetSafe Microchip Cat Flap"
+      url: "https://www.testbericht.de/produkte/petsafe-microchip-cat-flap"
+      checkedAt: "2026-08-11"
+      methodology: "independent-comparative-test-reported-by-testbericht.de"
+      positives:
+        - "Der dokumentierte Test bewertet Anlernen, Zugangskontrolle und Bedienung sehr positiv."
+        - "Die Klappe erreichte laut Testbericht.de in Haus & Garten Test 01/2026 Platz 1 von 3."
+      negatives:
+        - "Die Fachtest-Zusammenfassung bildet keine belastbare Langzeitbeobachtung ab."
+      findings:
+        - "Die positive Fachtest-Einordnung steht im deutlichen Kontrast zu einem Teil der neueren Nutzerberichte."
+  userReviews:
+    - platform: "Zooplus"
+      url: "https://www.zooplus.com/feedback/shop/cats/cat_flaps_nets/microchip_cat_flaps/663246"
+      checkedAt: "2026-08-11"
+      rating: 3.0
+      scale: 5
+      reviewCount: 198
+      recurringPositives:
+        - "Ein Teil der Nutzer berichtet von einfacher Einrichtung und zuverlässiger Abwehr fremder Katzen."
+      recurringCriticism:
+        - "Wiederkehrend genannt werden ausbleibendes Entriegeln, Probleme bei der Chiperkennung und mechanische Verriegelungsfehler."
+        - "Mehrere neuere Berichte kritisieren Batterieverbrauch und nachlassende Zuverlässigkeit."
+  consensus:
+    strengths:
+      - finding: "Wenn Chiperkennung und Verriegelung korrekt arbeiten, erfüllt die Klappe den vorgesehenen selektiven Zutritt."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Die Langzeit- und Nutzererfahrung ist deutlich gemischter als die Fachtest-Einordnung; Entriegelung und Chiperkennung sind die zentralen Risikopunkte."
+        sourceCount: 2
+        confidence: "high"
+    editorialAssessment: >-
+      Die Quellen widersprechen sich substanziell: Der Fachtest bewertet Funktion und Bedienung sehr gut,
+      während die deutlich größere Nutzerbasis zahlreiche Ausfälle der Kernfunktion meldet. Dieser Widerspruch darf
+      nicht zu einem pauschal positiven Urteil geglättet werden.
+  note: >-
+    Die professionelle Quelle ist über Testbericht.de dokumentiert; die Originalausgabe von Haus & Garten Test
+    wurde nicht als frei zugängliche Vollquelle ausgewertet.
 specs:
   - { label: "Chipformat", value: "FDX-B, 15-stellig; Kompatibilitätsprüfung empfohlen" }
   - { label: "Speicher", value: "Bis zu 40 Katzen" }

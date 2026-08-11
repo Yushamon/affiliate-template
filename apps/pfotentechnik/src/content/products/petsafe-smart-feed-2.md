@@ -90,6 +90,42 @@ ratings:
   preisleistung: 4.1
   reinigung: 4.4
   portionierung: 4.6
+externalEvidence:
+  professionalReviews:
+    - publisher: "Tom's Guide"
+      title: "PetSafe Smart Feed 2.0 review: The perfect feeder for busy pet parents"
+      url: "https://www.tomsguide.com/reviews/petsafe-smart-feed"
+      checkedAt: "2026-08-11"
+      methodology: "hands-on-editorial-review"
+      positives:
+        - "Tom's Guide lobt einfache Bedienung, anpassbare Fütterungen und den großen Futterbehälter."
+      negatives:
+        - "Im Test war nicht jedes Trockenfutter mit dem Ausgabemechanismus kompatibel."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/petsafe-smart-feed-20-wifi-enabled/product-reviews/218595"
+      checkedAt: "2026-08-11"
+      rating: 3.9
+      scale: 5
+      reviewCount: 145
+      recurringPositives:
+        - "Viele Nutzer loben planbare Fütterungen, Fernsteuerung, Benachrichtigungen und große Kapazität."
+        - "Mehrere Langzeitberichte nennen mehrjährige Nutzung."
+      recurringCriticism:
+        - "Wiederkehrend werden WLAN-Verbindungsprobleme, Neustarts und einzelne Ausgabefehler genannt."
+        - "Die Ausgabe in den Edelstahlnapf wird als deutlich hörbar beschrieben."
+  consensus:
+    strengths:
+      - finding: "App-Zeitpläne, Fernfütterung und große Kapazität sind über Review und Nutzerbasis gut belegt."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "WLAN-Stabilität und Futterkompatibilität sind die wichtigsten wiederkehrenden Einschränkungen."
+        sourceCount: 2
+        confidence: "high"
+    editorialAssessment: >-
+      Professioneller Test und große produktspezifische Nutzerbasis bestätigen den Komfortgewinn, zeigen aber,
+      dass das Gerät nicht als ausfallsichere Lösung ohne Kontrolle betrachtet werden sollte.
 decision:
   bestFor:
     - Katzen und kleine bis mittelgroße Hunde
