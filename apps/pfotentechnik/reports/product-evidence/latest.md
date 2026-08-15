@@ -1,10 +1,10 @@
 # Product External Evidence Audit
 
-- Produkte: 82
+- Produkte: 85
 - Mit externalEvidence: 82
 - Vollständig: 53
 - Teilweise: 29
-- Ohne Evidenz: 0
+- Ohne Evidenz: 3
 
 ## Vollständig
 
@@ -96,4 +96,6 @@
 
 ## Ohne Evidenz
 
-Keine.
+- enabot-rola-mini
+- furbo-mini-360
+- petlibro-luma-smart-litter-box

@@ -8,8 +8,8 @@
     "matchedPages": 11
   },
   "summary": {
-    "indexablePages": 230,
-    "totalHtmlPages": 322,
+    "indexablePages": 232,
+    "totalHtmlPages": 326,
     "pageTypes": {
       "category-hub": 5,
       "comparison": 28,
@@ -24,13 +24,13 @@
       "manufacturer-index": 1,
       "medical-guide": 12,
       "problem-solving-guide": 17,
-      "product": 82
+      "product": 84
     },
     "clusters": {
       "automatische-katzentoiletten": 7,
       "futterautomaten": 82,
       "gps-tracker": 26,
-      "haustierkameras": 5,
+      "haustierkameras": 7,
       "hersteller": 21,
       "hundeernaehrung": 3,
       "hundegesundheit": 4,
@@ -53,14 +53,14 @@
       "informational": 23,
       "medical-information": 14,
       "problem-solving": 14,
-      "product-research": 82
+      "product-research": 84
     },
     "decisions": {
       "CONSOLIDATE": 2,
-      "KEEP": 230,
-      "NOINDEX": 92
+      "KEEP": 232,
+      "NOINDEX": 94
     },
-    "errors": 0,
+    "errors": 1,
     "warnings": 0,
     "exactDuplicates": 0,
     "nearDuplicates": 0,
@@ -82,7 +82,7 @@
       "metaDescription": "Unabhängige Kaufberatung, verständliche Vergleiche und praxisnahe Empfehlungen für Futterautomaten, Trinkbrunnen und weitere Haustier-Technik.",
       "canonicalRoute": "/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "smarte-haustiertechnik",
       "secondaryIntents": [
         "informational"
@@ -90,7 +90,7 @@
       "mainEntity": "Unabhängige Orientierung für smarte Haustiertechnik",
       "internalIncomingLinks": 109,
       "internalOutgoingLinks": 30,
-      "wordCount": 1133,
+      "wordCount": 1136,
       "headingCount": 42,
       "headings": [
         "Unabhängige Orientierung für smarte Haustiertechnik",
@@ -129,9 +129,9 @@
         "Für Hunde",
         "Für Katzen",
         "Für Reisen und Betreuung",
+        "Haustierkameras im Vergleich",
         "Automatische Katzentoiletten im Vergleich",
         "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten",
-        "Automatische Katzentoiletten sicher auswählen",
         "Für Katzen",
         "Für Hunde",
         "Orientierung"
@@ -302,15 +302,15 @@
         },
         {
           "level": 3,
+          "text": "Haustierkameras im Vergleich"
+        },
+        {
+          "level": 3,
           "text": "Automatische Katzentoiletten im Vergleich"
         },
         {
           "level": 3,
           "text": "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten"
-        },
-        {
-          "level": 3,
-          "text": "Automatische Katzentoiletten sicher auswählen"
         },
         {
           "level": 3,
@@ -343,6 +343,7 @@
         "/vergleiche/beste-gps-tracker-fuer-katzen/",
         "/vergleiche/beste-gps-tracker-fuer-hunde/",
         "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+        "/vergleiche/beste-haustierkameras/",
         "/vergleiche/beste-automatische-katzentoiletten/"
       ],
       "searchPerformance": null,
@@ -1333,8 +1334,8 @@
       "secondaryIntents": [],
       "mainEntity": "Produktpflege",
       "internalIncomingLinks": 0,
-      "internalOutgoingLinks": 82,
-      "wordCount": 7327,
+      "internalOutgoingLinks": 84,
+      "wordCount": 7507,
       "headingCount": 2,
       "headings": [
         "Produktpflege",
@@ -1367,6 +1368,8 @@
       ],
       "recommendationTypes": [],
       "relatedProducts": [
+        "/produkt/enabot-rola-mini/",
+        "/produkt/furbo-mini-360/",
         "/produkt/litter-robot-5-pro/",
         "/produkt/cat-mate-shell-fountain/",
         "/produkt/garmin-alpha-tt-25/",
@@ -1491,7 +1494,7 @@
       "headingCount": 2,
       "headings": [
         "Seiten-Workspaces",
-        "82 Workspaces"
+        "84 Workspaces"
       ],
       "structuredData": [],
       "expectedComparisonCount": 0,
@@ -1515,7 +1518,7 @@
         },
         {
           "level": 2,
-          "text": "82 Workspaces"
+          "text": "84 Workspaces"
         }
       ],
       "recommendationTypes": [],
@@ -2612,6 +2615,113 @@
       }
     },
     {
+      "sourceFile": "apps/pfotentechnik/dist/admin/seo/products/enabot-rola-mini/index.html",
+      "pageType": "technical",
+      "title": "Enabot ROLA Mini | PfotenTechnik SEO",
+      "h1": "Enabot ROLA Mini",
+      "h1Count": 1,
+      "metaDescription": "",
+      "canonicalRoute": "/",
+      "indexable": false,
+      "inSitemap": false,
+      "cluster": "smarte-haustiertechnik",
+      "secondaryIntents": [],
+      "mainEntity": "Enabot ROLA Mini",
+      "internalIncomingLinks": 0,
+      "internalOutgoingLinks": 1,
+      "wordCount": 190,
+      "headingCount": 9,
+      "headings": [
+        "Enabot ROLA Mini",
+        "Enabot ROLA Mini",
+        "Findings und AI Actions",
+        "Seiteninhalt",
+        "Indexierung und Struktur",
+        "Entscheidungsweg",
+        "Vertrauen und Nachweise",
+        "UX, CSS und Performance",
+        "0 vorhandene Dateien"
+      ],
+      "structuredData": [],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/admin/seo/products/enabot-rola-mini/",
+      "collection": "static",
+      "metaTitle": "Enabot ROLA Mini | PfotenTechnik SEO",
+      "canonical": "",
+      "publishedAt": "",
+      "updatedAt": "",
+      "author": "",
+      "animal": "",
+      "productCategory": "",
+      "audience": "pet-owners",
+      "character": "informational",
+      "linkDepth": null,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Enabot ROLA Mini"
+        },
+        {
+          "level": 2,
+          "text": "Enabot ROLA Mini"
+        },
+        {
+          "level": 2,
+          "text": "Findings und AI Actions"
+        },
+        {
+          "level": 3,
+          "text": "Seiteninhalt"
+        },
+        {
+          "level": 3,
+          "text": "Indexierung und Struktur"
+        },
+        {
+          "level": 3,
+          "text": "Entscheidungsweg"
+        },
+        {
+          "level": 3,
+          "text": "Vertrauen und Nachweise"
+        },
+        {
+          "level": 3,
+          "text": "UX, CSS und Performance"
+        },
+        {
+          "level": 3,
+          "text": "0 vorhandene Dateien"
+        }
+      ],
+      "recommendationTypes": [],
+      "relatedProducts": [
+        "/produkt/enabot-rola-mini/"
+      ],
+      "relatedComparisons": [],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "informational",
+        "secondary": [],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/admin/seo/products/enabot-rola-mini/",
+        "route": "/admin/seo/products/enabot-rola-mini/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 57,
+        "signals": [
+          "clear-title-h1",
+          "structured-headings",
+          "substantive-content"
+        ]
+      }
+    },
+    {
       "sourceFile": "apps/pfotentechnik/dist/admin/seo/products/furbo-360-hundekamera/index.html",
       "pageType": "technical",
       "title": "Furbo 360° Hundekamera | PfotenTechnik SEO",
@@ -2707,6 +2817,113 @@
       "topicOwner": {
         "id": "route:/admin/seo/products/furbo-360-hundekamera/",
         "route": "/admin/seo/products/furbo-360-hundekamera/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 57,
+        "signals": [
+          "clear-title-h1",
+          "structured-headings",
+          "substantive-content"
+        ]
+      }
+    },
+    {
+      "sourceFile": "apps/pfotentechnik/dist/admin/seo/products/furbo-mini-360/index.html",
+      "pageType": "technical",
+      "title": "Furbo Mini 360 | PfotenTechnik SEO",
+      "h1": "Furbo Mini 360",
+      "h1Count": 1,
+      "metaDescription": "",
+      "canonicalRoute": "/",
+      "indexable": false,
+      "inSitemap": false,
+      "cluster": "smarte-haustiertechnik",
+      "secondaryIntents": [],
+      "mainEntity": "Furbo Mini 360",
+      "internalIncomingLinks": 0,
+      "internalOutgoingLinks": 1,
+      "wordCount": 187,
+      "headingCount": 9,
+      "headings": [
+        "Furbo Mini 360",
+        "Furbo Mini 360",
+        "Findings und AI Actions",
+        "Seiteninhalt",
+        "Indexierung und Struktur",
+        "Entscheidungsweg",
+        "Vertrauen und Nachweise",
+        "UX, CSS und Performance",
+        "0 vorhandene Dateien"
+      ],
+      "structuredData": [],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/admin/seo/products/furbo-mini-360/",
+      "collection": "static",
+      "metaTitle": "Furbo Mini 360 | PfotenTechnik SEO",
+      "canonical": "",
+      "publishedAt": "",
+      "updatedAt": "",
+      "author": "",
+      "animal": "",
+      "productCategory": "",
+      "audience": "pet-owners",
+      "character": "informational",
+      "linkDepth": null,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Furbo Mini 360"
+        },
+        {
+          "level": 2,
+          "text": "Furbo Mini 360"
+        },
+        {
+          "level": 2,
+          "text": "Findings und AI Actions"
+        },
+        {
+          "level": 3,
+          "text": "Seiteninhalt"
+        },
+        {
+          "level": 3,
+          "text": "Indexierung und Struktur"
+        },
+        {
+          "level": 3,
+          "text": "Entscheidungsweg"
+        },
+        {
+          "level": 3,
+          "text": "Vertrauen und Nachweise"
+        },
+        {
+          "level": 3,
+          "text": "UX, CSS und Performance"
+        },
+        {
+          "level": 3,
+          "text": "0 vorhandene Dateien"
+        }
+      ],
+      "recommendationTypes": [],
+      "relatedProducts": [
+        "/produkt/furbo-mini-360/"
+      ],
+      "relatedComparisons": [],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "informational",
+        "secondary": [],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/admin/seo/products/furbo-mini-360/",
+        "route": "/admin/seo/products/furbo-mini-360/",
         "explicit": false
       },
       "quality": {
@@ -10880,11 +11097,11 @@
       "metaDescription": "Transparente Informationen zur Finanzierung von PfotenTechnik und zum Einsatz von Affiliate-Links.",
       "canonicalRoute": "/affiliate-hinweis/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "smarte-haustiertechnik",
       "secondaryIntents": [],
       "mainEntity": "Affiliate-Hinweis",
-      "internalIncomingLinks": 113,
+      "internalIncomingLinks": 115,
       "internalOutgoingLinks": 2,
       "wordCount": 364,
       "headingCount": 8,
@@ -10987,11 +11204,11 @@
       "metaDescription": "Selbstreinigende Katzenklos nach Mindestgewicht, Einstieg, Streu, Sicherheit, Platz und Folgekosten auswählen.",
       "canonicalRoute": "/automatische-katzentoiletten/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "automatische-katzentoiletten",
       "secondaryIntents": [],
       "mainEntity": "Automatische Katzentoiletten sicher auswählen",
-      "internalIncomingLinks": 20,
+      "internalIncomingLinks": 19,
       "internalOutgoingLinks": 15,
       "wordCount": 715,
       "headingCount": 22,
@@ -11033,13 +11250,13 @@
       "metaTitle": "Automatische Katzentoiletten: Sicherheit & Kaufcheck",
       "canonical": "https://pfotentechnik.de/automatische-katzentoiletten/",
       "publishedAt": "2026-08-06",
-      "updatedAt": "2026-08-07",
+      "updatedAt": "2026-08-15",
       "author": "PfotenTechnik Redaktion",
       "animal": "cat",
       "productCategory": "",
       "audience": "cat",
       "character": "informational",
-      "linkDepth": 1,
+      "linkDepth": 2,
       "headingStructure": [
         {
           "level": 1,
@@ -11180,7 +11397,7 @@
       "metaDescription": "Interaktive Auswahlhilfe für Futterautomaten nach Tier, Futterart, Portionsgröße, Steuerung und gewünschter Ausstattung.",
       "canonicalRoute": "/berater/futterautomat/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Kaufberatung",
@@ -11260,7 +11477,7 @@
       "metaDescription": "Glitschigen Biofilm im Katzenbrunnen erkennen und entfernen: Tank, Pumpe, Rotor, Leitungen und Filter mechanisch richtig reinigen.",
       "canonicalRoute": "/biofilm-im-katzentrinkbrunnen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Schleim im Katzentrinkbrunnen: Biofilm entfernen",
@@ -11455,7 +11672,7 @@
       "metaDescription": "GPS-Tracker-Datenschutz prüfen: Standortverlauf, Server, App-Berechtigungen, Freigaben, Löschung, Export und Kontoschutz.",
       "canonicalRoute": "/datenschutz-bei-gps-trackern/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [],
       "mainEntity": "Datenschutz bei GPS-Trackern",
@@ -11637,7 +11854,7 @@
       "metaDescription": "Informationen zur Verarbeitung personenbezogener Daten bei der Nutzung von PfotenTechnik.",
       "canonicalRoute": "/datenschutz/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "smarte-haustiertechnik",
       "secondaryIntents": [],
       "mainEntity": "Datenschutzerklärung",
@@ -11753,7 +11970,7 @@
       "metaDescription": "Katzenbrunnen-Filter meist alle zwei bis vier Wochen wechseln. Tierzahl, Haare, Geruch, Wasserhärte und Durchfluss können das Intervall verkürzen.",
       "canonicalRoute": "/filter-im-katzentrinkbrunnen-wechseln/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "problem-solving"
@@ -11954,7 +12171,7 @@
       "metaDescription": "Wie oft sollten Kitten, Welpen, erwachsene Tiere und Senioren fressen? Mit Tagesplänen, Altersstufen und wichtigen Ausnahmen.",
       "canonicalRoute": "/fuetterungszeiten-nach-alter/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "tierernaehrung",
       "secondaryIntents": [],
       "mainEntity": "Fütterungszeiten nach Alter: Katze und Hund richtig planen",
@@ -12276,7 +12493,7 @@
       "metaDescription": "Was bleibt bei Strom-, WLAN- oder Internetausfall aktiv? Batterie-Backup, lokale Fütterungspläne und sicheren Ausfalltest erklärt.",
       "canonicalRoute": "/futterautomat-bei-stromausfall/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Futterautomat bei Stromausfall: Batterie, WLAN und Offline-Betrieb",
@@ -12747,7 +12964,7 @@
       "metaDescription": "Futterautomat bei Übergewicht: Tagesration abwiegen, Extras einrechnen, Futterzugang sichern und Gewichtsverlauf bei Hund oder Katze kontrollieren.",
       "canonicalRoute": "/futterautomat-bei-uebergewicht/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Futterautomat bei Übergewicht",
@@ -13118,7 +13335,7 @@
       "metaDescription": "Beantworte sechs kurze Fragen und finde passende Futterautomaten für Tier, Futterart, Alltag, Funktionen und Budget.",
       "canonicalRoute": "/futterautomat-berater/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Welcher Futterautomat passt wirklich zu deinem Alltag?",
@@ -13205,13 +13422,13 @@
       "metaDescription": "Welcher Futterautomat passt zu deinem Hund? Kaufberatung nach Größe, Portion, Krokettengröße, App, Schlingverhalten und Alltag – mit Entscheidungsmatrix.",
       "canonicalRoute": "/futterautomat-hund/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Futterautomaten für Hunde",
-      "internalIncomingLinks": 44,
+      "internalIncomingLinks": 43,
       "internalOutgoingLinks": 23,
-      "wordCount": 2998,
+      "wordCount": 2978,
       "headingCount": 66,
       "headings": [
         "Futterautomaten für Hunde",
@@ -13261,8 +13478,8 @@
         "Größe, Standfestigkeit und Zugang abstimmen",
         "App oder Kamera nur bei echtem Bedarf wählen",
         "Enabot EBO Air 2",
+        "Enabot ROLA Mini",
         "Furbo 360° Hundekamera",
-        "Garmin Alpha T 20",
         "Tagesration und Futter prüfen",
         "Hund und Gehäuse abgleichen",
         "Technik begrenzen",
@@ -13496,11 +13713,11 @@
         },
         {
           "level": 3,
-          "text": "Furbo 360° Hundekamera"
+          "text": "Enabot ROLA Mini"
         },
         {
           "level": 3,
-          "text": "Garmin Alpha T 20"
+          "text": "Furbo 360° Hundekamera"
         },
         {
           "level": 3,
@@ -13576,8 +13793,8 @@
       ],
       "relatedProducts": [
         "/produkt/enabot-ebo-air-2/",
+        "/produkt/enabot-rola-mini/",
         "/produkt/furbo-360-hundekamera/",
-        "/produkt/garmin-alpha-t-20/",
         "/produkt/petlibro-granary-wifi-feeder/",
         "/produkt/petlibro-polar-wet-food-feeder/"
       ],
@@ -13627,7 +13844,7 @@
       "metaDescription": "Futterautomat im Urlaub nutzen: So planst du Betreuung, Probelauf, Wasser, Stromreserve, Nassfutter und Notfälle sicher und realistisch.",
       "canonicalRoute": "/futterautomat-im-urlaub/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Futterautomat im Urlaub: Sicher planen statt allein lassen",
@@ -13908,7 +14125,7 @@
       "metaDescription": "Welcher Futterautomat passt zu Katzen? Vergleich von App-Modellen, Nassfutter-Lösungen und Funktionen für verlässliche Routinen.",
       "canonicalRoute": "/futterautomat-katze/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Futterautomaten für Katzen",
@@ -14125,7 +14342,7 @@
       "metaDescription": "So reinigst du Napf, Behälter, Auslass und Rotor richtig. Mit Intervallen, Spülmaschinenhinweisen, Geruchsdiagnose und Wartungsplan.",
       "canonicalRoute": "/futterautomat-richtig-reinigen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Futterautomat richtig reinigen: Anleitung, Intervalle und Fehlerdiagnose",
@@ -15071,7 +15288,7 @@
       "metaDescription": "Futterautomat und Ernährung: So planst du Tagesration, Mahlzeiten, Snacks und Futterart richtig und nutzt Technik ohne die Ernährung zu überschätzen.",
       "canonicalRoute": "/futterautomat-und-ernaehrung/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "informational"
@@ -15410,7 +15627,7 @@
       "metaDescription": "Futtermenge beim Hund bestimmen: Herstellerangabe prüfen, kcal in Gramm umrechnen, Leckerli einplanen und Körperkondition kontrollieren.",
       "canonicalRoute": "/futtermenge-hund/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Futtermenge beim Hund richtig berechnen",
@@ -15582,7 +15799,7 @@
       "metaDescription": "Wie viel Futter braucht eine Katze? Mit Gewichtstabelle, Kalorienformel, Beispielen für Nass- und Trockenfutter sowie Mischfütterung.",
       "canonicalRoute": "/futtermenge-katze/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "katzenernaehrung",
       "secondaryIntents": [],
       "mainEntity": "Futtermenge bei Katzen berechnen: Tabelle, Formel und Beispiele",
@@ -16070,7 +16287,7 @@
       "metaDescription": "GPS oder Bluetooth für Haustiere: echte Unterschiede bei Reichweite, Live-Ortung, Fremdgeräte-Netzwerk, Akku und Kosten.",
       "canonicalRoute": "/gps-oder-bluetooth/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [],
       "mainEntity": "GPS oder Bluetooth?",
@@ -16235,7 +16452,7 @@
       "metaDescription": "GPS-Tracker richtig befestigen: Hundehalsband, Geschirr, Katzen-Sicherheitsverschluss, Gewöhnung und Kontrollcheck.",
       "canonicalRoute": "/gps-tracker-richtig-befestigen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [],
       "mainEntity": "GPS-Tracker richtig befestigen",
@@ -16431,7 +16648,7 @@
       "metaDescription": "GPS-Tracker für Hund und Katze verstehen und auswählen: Gewicht, Befestigung, Mobilfunk, Akku, Abo, Genauigkeit, Datenschutz und aktuelle Vergleiche.",
       "canonicalRoute": "/gps-tracker/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [
         "informational"
@@ -16735,14 +16952,14 @@
       "metaDescription": "Haustierkamera nach Blickbereich, Interaktion, Speicherung, Datenschutz, Abo und 24-Monats-Kosten auswählen.",
       "canonicalRoute": "/haustierkameras/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "haustierkameras",
       "secondaryIntents": [],
       "mainEntity": "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten",
-      "internalIncomingLinks": 12,
+      "internalIncomingLinks": 14,
       "internalOutgoingLinks": 10,
-      "wordCount": 1157,
-      "headingCount": 29,
+      "wordCount": 1220,
+      "headingCount": 31,
       "headings": [
         "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten",
         "Das Wichtigste in Kürze",
@@ -16755,6 +16972,7 @@
         "Blickbereich vor Auflösung",
         "Interaktion ist eine eigene Entscheidung",
         "Cloud, Konto und Speicherung vor dem Kauf klären",
+        "Internet- und Herstellerdienste als Systemgrenze",
         "Gesamtkosten über 24 Monate rechnen",
         "Einrichtung vor der endgültigen Platzierung testen",
         "Typische Fehlkäufe",
@@ -16767,7 +16985,8 @@
         "Eher nicht geeignet für",
         "Haustierkameras vergleichen",
         "PETLIBRO Scout",
-        "Furbo 360°",
+        "Furbo Mini 360",
+        "Enabot ROLA Mini",
         "SureFeed Microchip Pet Feeder Connect",
         "Haustierkameras im Vergleich",
         "Haustierkameras im Vergleich",
@@ -16791,7 +17010,7 @@
       "metaTitle": "Haustierkameras: Datenschutz, Abo & Kaufberatung",
       "canonical": "https://pfotentechnik.de/haustierkameras/",
       "publishedAt": "2026-08-06",
-      "updatedAt": "2026-08-07",
+      "updatedAt": "2026-08-15",
       "author": "PfotenTechnik Redaktion",
       "animal": "",
       "productCategory": "",
@@ -16845,6 +17064,10 @@
         },
         {
           "level": 2,
+          "text": "Internet- und Herstellerdienste als Systemgrenze"
+        },
+        {
+          "level": 2,
           "text": "Gesamtkosten über 24 Monate rechnen"
         },
         {
@@ -16893,7 +17116,11 @@
         },
         {
           "level": 3,
-          "text": "Furbo 360°"
+          "text": "Furbo Mini 360"
+        },
+        {
+          "level": 3,
+          "text": "Enabot ROLA Mini"
         },
         {
           "level": 3,
@@ -16921,8 +17148,8 @@
       ],
       "relatedProducts": [
         "/produkt/petlibro-scout-smart-camera/",
-        "/produkt/furbo-360-hundekamera/",
-        "/produkt/enabot-ebo-air-2/",
+        "/produkt/furbo-mini-360/",
+        "/produkt/enabot-rola-mini/",
         "/produkt/surefeed-microchip-pet-feeder-connect/"
       ],
       "relatedComparisons": [
@@ -16964,7 +17191,7 @@
       "metaDescription": "Alle Hersteller für smarte Haustiertechnik mit Bewertungen, Produktschwerpunkten und Erfahrungen.",
       "canonicalRoute": "/hersteller/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hersteller",
       "secondaryIntents": [
         "informational"
@@ -17137,7 +17364,7 @@
       "metaDescription": "Aqara im Überblick: Smart-Home-Geräte und der Smart Pet Feeder C1 mit Zigbee-Anbindung.",
       "canonicalRoute": "/hersteller/aqara/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "Aqara",
@@ -17347,7 +17574,7 @@
       "metaDescription": "Cat Mate im Überblick: einfache Futterautomaten für Nass- und Trockenfutter, Zielgruppen, Ersatzteile, Garantie und Alternativen.",
       "canonicalRoute": "/hersteller/cat-mate/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "Cat Mate",
@@ -17621,7 +17848,7 @@
       "metaDescription": "Catit Futterautomaten und Trinkbrunnen nach App, Futterart, Reinigung, Kühlung und Alltagstauglichkeit eingeordnet.",
       "canonicalRoute": "/hersteller/catit/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Catit",
@@ -17842,7 +18069,7 @@
       "metaDescription": "Devoko im Überblick: preisorientierte automatische Katzentoiletten mit großem Innenraum, App und mehrstufiger Sensorik.",
       "canonicalRoute": "/hersteller/devoko/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "Devoko",
@@ -18059,13 +18286,13 @@
       "metaDescription": "Enabot im Überblick: mobile Kamera- und Familienroboter mit App-Steuerung.",
       "canonicalRoute": "/hersteller/enabot/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "Enabot",
-      "internalIncomingLinks": 3,
-      "internalOutgoingLinks": 11,
-      "wordCount": 381,
+      "internalIncomingLinks": 4,
+      "internalOutgoingLinks": 13,
+      "wordCount": 406,
       "headingCount": 27,
       "headings": [
         "Enabot",
@@ -18110,7 +18337,7 @@
       "metaTitle": "Enabot: Erfahrungen und Produkte",
       "canonical": "https://pfotentechnik.de/hersteller/enabot/",
       "publishedAt": "2026-08-06",
-      "updatedAt": "2026-08-06",
+      "updatedAt": "2026-08-15",
       "author": "Enabot",
       "animal": "",
       "productCategory": "",
@@ -18229,7 +18456,8 @@
       ],
       "recommendationTypes": [],
       "relatedProducts": [
-        "/produkt/enabot-ebo-air-2/"
+        "/produkt/enabot-ebo-air-2/",
+        "/produkt/enabot-rola-mini/"
       ],
       "relatedComparisons": [
         "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
@@ -18269,13 +18497,13 @@
       "metaDescription": "Furbo im Überblick: spezialisierte Haustierkameras, Interaktion, App und optionale Nanny-Dienste.",
       "canonicalRoute": "/hersteller/furbo/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "Furbo",
-      "internalIncomingLinks": 3,
-      "internalOutgoingLinks": 11,
-      "wordCount": 390,
+      "internalIncomingLinks": 4,
+      "internalOutgoingLinks": 12,
+      "wordCount": 412,
       "headingCount": 27,
       "headings": [
         "Furbo",
@@ -18299,8 +18527,8 @@
         "Vergleich zum Wettbewerb",
         "PETLIBRO",
         "Enabot",
-        "Beste Futterautomaten für Hunde",
-        "Futterautomaten für Hunde",
+        "Haustierkameras im Vergleich",
+        "Smarte Futterautomaten für Hunde und Katzen",
         "Enabot",
         "Haustierkameras im Vergleich",
         "Haustierkameras",
@@ -18320,7 +18548,7 @@
       "metaTitle": "Furbo: Erfahrungen und Produkte",
       "canonical": "https://pfotentechnik.de/hersteller/furbo/",
       "publishedAt": "2026-08-06",
-      "updatedAt": "2026-08-06",
+      "updatedAt": "2026-08-15",
       "author": "Furbo",
       "animal": "dog",
       "productCategory": "",
@@ -18414,11 +18642,11 @@
         },
         {
           "level": 3,
-          "text": "Beste Futterautomaten für Hunde"
+          "text": "Haustierkameras im Vergleich"
         },
         {
           "level": 3,
-          "text": "Futterautomaten für Hunde"
+          "text": "Smarte Futterautomaten für Hunde und Katzen"
         },
         {
           "level": 3,
@@ -18439,10 +18667,10 @@
       ],
       "recommendationTypes": [],
       "relatedProducts": [
-        "/produkt/furbo-360-hundekamera/"
+        "/produkt/furbo-360-hundekamera/",
+        "/produkt/furbo-mini-360/"
       ],
       "relatedComparisons": [
-        "/vergleiche/beste-futterautomaten-fuer-hunde/",
         "/vergleiche/beste-haustierkameras/"
       ],
       "searchPerformance": null,
@@ -18479,7 +18707,7 @@
       "metaDescription": "Garmin Alpha mit T 20, TT 25, Handgerät, VHF-Reichweite, Akku, Zubehör und Abgrenzung zu Mobilfunktrackern.",
       "canonicalRoute": "/hersteller/garmin/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [],
       "mainEntity": "Garmin",
@@ -18735,7 +18963,7 @@
       "metaDescription": "HoneyGuardian im Überblick: Futterautomaten mit Timer oder WLAN, Zielgruppen, App, Ersatzteile, Garantie sowie Stärken und Schwächen.",
       "canonicalRoute": "/hersteller/honeyguardian/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "HoneyGuardian",
@@ -19002,7 +19230,7 @@
       "metaDescription": "IMIPAW im Überblick: einfache Futterautomaten für den Einstieg, Zielgruppen, Funktionen, Ersatzteile, Garantie und passende Alternativen.",
       "canonicalRoute": "/hersteller/imipaw/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "IMIPAW",
@@ -19253,7 +19481,7 @@
       "metaDescription": "Neakasa im Überblick: offene automatische Katzentoiletten mit App und Sensorik.",
       "canonicalRoute": "/hersteller/neakasa/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "Neakasa",
@@ -19471,7 +19699,7 @@
       "metaDescription": "oneisall im Überblick: Futterautomaten und Trinkbrunnen für Hunde und Katzen, Zielgruppen, Ersatzteile, Garantie und Alternativen.",
       "canonicalRoute": "/hersteller/oneisall/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "oneisall",
@@ -19734,7 +19962,7 @@
       "metaDescription": "OnlyCat als Hersteller: Produktrolle, App, Kamera, Strom, WLAN und Preismodelle.",
       "canonicalRoute": "/hersteller/onlycat/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "OnlyCat",
@@ -19963,7 +20191,7 @@
       "metaDescription": "PAJ GPS Herstellerprofil mit PET Finder 4G Mini, FINDER Portal, 27 Monaten Tracking, EU-Servern und Folgekosten.",
       "canonicalRoute": "/hersteller/paj-gps/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [],
       "mainEntity": "PAJ GPS",
@@ -20215,7 +20443,7 @@
       "metaDescription": "PAWBBY im Überblick: smarte Haustiertechnik im Xiaomi-Umfeld, Zielgruppen, App-Ökosystem, Ersatzteile, Garantie und Alternativen.",
       "canonicalRoute": "/hersteller/pawbby/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "PAWBBY",
@@ -20466,7 +20694,7 @@
       "metaDescription": "PawSync im Überblick: datenorientierte Futterautomaten mit Gewichtsmessung und Fressprotokoll.",
       "canonicalRoute": "/hersteller/pawsync/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "PawSync",
@@ -20676,7 +20904,7 @@
       "metaDescription": "PETKIT im Überblick: smarte Futterautomaten und Trinkbrunnen, App-Ökosystem, Zielgruppen, Filter, Ersatzteile, Garantie und Alternativen.",
       "canonicalRoute": "/hersteller/petkit/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "PETKIT",
@@ -20960,7 +21188,7 @@
       "metaDescription": "PETLIBRO Futterautomaten und Trinkbrunnen einordnen: Granary, Polar, One RFID, Space und Dockstream nach App, Kamera, Kühlung und Zugang.",
       "canonicalRoute": "/hersteller/petlibro/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "PETLIBRO",
@@ -21222,9 +21450,9 @@
         "/produkt/petlibro-capsule-dog-fountain/",
         "/produkt/petlibro-stainless-steel-fountain/",
         "/produkt/petlibro-glacier-ultrafiltration/",
+        "/produkt/petlibro-scout-smart-camera/",
         "/produkt/petlibro-dockstream-2-smart-cordless/",
         "/produkt/petlibro-granary-2-vision/",
-        "/produkt/petlibro-scout-smart-camera/",
         "/produkt/catit-pixi-smart-6-meal-feeder/"
       ],
       "relatedComparisons": [
@@ -21265,7 +21493,7 @@
       "metaDescription": "PetSafe Futterautomaten und Versorgungstechnik nach Futterart, App, Stromversorgung, Reinigung und Alltagstauglichkeit eingeordnet.",
       "canonicalRoute": "/hersteller/petsafe/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "PetSafe",
@@ -21502,7 +21730,7 @@
       "metaDescription": "petWALK als Hersteller motorisierter Tiertüren: Dämmung, Chip, App, Notstrom und Einbau.",
       "canonicalRoute": "/hersteller/petwalk/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "petWALK",
@@ -21732,7 +21960,7 @@
       "metaDescription": "SureFeed im Überblick: Mikrochip-Futterautomaten für getrennte Rationen, Zielgruppen, Ersatzteile, Garantie und Alternativen.",
       "canonicalRoute": "/hersteller/surefeed/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "SureFeed",
@@ -22004,7 +22232,7 @@
       "metaDescription": "Tractive Herstellerprofil mit DOG 6, DOG 6 XL, CAT 6 Mini, App, Abo, Zubehör, Garantie und Alternativen.",
       "canonicalRoute": "/hersteller/tractive/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "katzen-und-hundespezifische-hardware",
       "secondaryIntents": [],
       "mainEntity": "Tractive",
@@ -22271,7 +22499,7 @@
       "metaDescription": "Weenect Herstellerprofil mit XS, XT, App, Multi-Netz-SIM, Zubehör, Abo und lebenslanger Garantie.",
       "canonicalRoute": "/hersteller/weenect/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [],
       "mainEntity": "Weenect",
@@ -22537,7 +22765,7 @@
       "metaDescription": "Whisker im Überblick: Litter-Robot, App, Kamera- und optionale Whisker+-Funktionen.",
       "canonicalRoute": "/hersteller/whisker/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "Whisker",
@@ -22748,7 +22976,7 @@
       "metaDescription": "WOPET im Überblick: Futterautomaten ohne WLAN sowie Modelle mit App und Kamera, Zielgruppen, Ersatzteile, Garantie und Alternativen.",
       "canonicalRoute": "/hersteller/wopet/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "WOPET",
@@ -23026,7 +23254,7 @@
       "metaDescription": "Xiaomi Smart Pet im Überblick: Futterautomaten und Trinkbrunnen, App-Ökosystem, Zielgruppen, Filter, Ersatzteile und Alternativen.",
       "canonicalRoute": "/hersteller/xiaomi/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "Xiaomi",
@@ -23281,7 +23509,7 @@
       "metaDescription": "ZeroMOUSE im Überblick: KI-Sensor für Mikrochip-Katzenklappen, Kompatibilität, App, Strombedarf und Grenzen der Beuteerkennung.",
       "canonicalRoute": "/hersteller/zeromouse/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "ZeroMOUSE",
@@ -23526,7 +23754,7 @@
       "metaDescription": "Hund entlaufen trotz GPS? Sofortplan mit Zeitstempel, Live-Modus, Standortfreigabe, TASSO-Meldung und Grenzen des Trackers.",
       "canonicalRoute": "/hund-entlaufen-gps-sinnvoll/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [],
       "mainEntity": "Hund entlaufen – GPS sinnvoll?",
@@ -23696,7 +23924,7 @@
       "metaDescription": "Hund frisst nicht? Erkennen Sie Notfälle, messen Sie die tatsächliche Futteraufnahme und erfahren Sie, wann tierärztliche Hilfe nötig ist.",
       "canonicalRoute": "/hund-frisst-nicht/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "problem-solving"
@@ -24247,7 +24475,7 @@
       "metaDescription": "Erfahren Sie, warum Hunde ihr Futter herunterschlingen, welche Risiken bestehen und welche Maßnahmen wirklich helfen.",
       "canonicalRoute": "/hund-frisst-zu-schnell/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "problem-solving"
@@ -24531,7 +24759,7 @@
       "metaDescription": "Hund hat Durchfall? Erkennen Sie Dehydration, Blut, Fremdkörper und andere Warnzeichen.",
       "canonicalRoute": "/hund-hat-durchfall/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hundegesundheit",
       "secondaryIntents": [
         "problem-solving"
@@ -24807,7 +25035,7 @@
       "metaDescription": "Hund ist ungewöhnlich müde oder schlapp? Erkennen Sie Notfälle, typische Ursachen und sinnvolle Beobachtungen vor dem Tierarzttermin.",
       "canonicalRoute": "/hund-ist-muede/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hundegesundheit",
       "secondaryIntents": [
         "problem-solving"
@@ -25178,7 +25406,7 @@
       "metaDescription": "Erfahren Sie, wann vermehrtes Trinken normal ist, welche Krankheiten dahinterstecken können und wann Sie zum Tierarzt sollten.",
       "canonicalRoute": "/hund-trinkt-ploetzlich-viel/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "smarte-haustiertechnik",
       "secondaryIntents": [
         "problem-solving"
@@ -25432,7 +25660,7 @@
       "metaDescription": "Der Hund trinkt plötzlich viel? So misst du die Trinkmenge, erkennst Begleitsymptome und weißt, wann tierärztliche Abklärung nötig ist.",
       "canonicalRoute": "/hund-trinkt-viel/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hundegesundheit",
       "secondaryIntents": [
         "problem-solving"
@@ -25623,7 +25851,7 @@
       "metaDescription": "Hund trinkt wenig oder gar nicht? So messen Sie die Wasseraufnahme, erkennen Dehydration und wissen, wann tierärztliche Hilfe nötig ist.",
       "canonicalRoute": "/hund-trinkt-zu-wenig/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "problem-solving"
@@ -26084,7 +26312,7 @@
       "metaDescription": "Anbieterkennzeichnung und rechtliche Informationen zu PfotenTechnik.",
       "canonicalRoute": "/impressum/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "smarte-haustiertechnik",
       "secondaryIntents": [],
       "mainEntity": "Impressum",
@@ -26185,7 +26413,7 @@
       "metaDescription": "Kalk im Katzenbrunnen materialschonend entfernen: Pumpe, Rotor, Tank und Edelstahl reinigen, gründlich spülen und Schäden vermeiden.",
       "canonicalRoute": "/kalk-katzentrinkbrunnen-entfernen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Katzenbrunnen entkalken: Kalk sicher entfernen",
@@ -26375,7 +26603,7 @@
       "metaDescription": "Katzenklappen-Training in kleinen Stufen: offene Passage, Bewegung, Geräusch, Chip und Verriegelung.",
       "canonicalRoute": "/katze-an-katzenklappe-gewoehnen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "katzenklappen",
       "secondaryIntents": [],
       "mainEntity": "Katze an die Katzenklappe gewöhnen",
@@ -26505,7 +26733,7 @@
       "metaDescription": "Trinkbrunnen stressarm einführen: Standort, Geräusch, Belohnung und paralleler Wassernapf.",
       "canonicalRoute": "/katze-an-trinkbrunnen-gewoehnen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "katzenverhalten",
       "secondaryIntents": [],
       "mainEntity": "Katze an einen Trinkbrunnen gewöhnen: ohne Druck und ohne Durststrecke",
@@ -26697,7 +26925,7 @@
       "metaDescription": "Katze entlaufen trotz Tracker? Suchplan mit GPS, ruhigen Zeiten, Nahbereich, TASSO-Meldung und sicherer Annäherung.",
       "canonicalRoute": "/katze-entlaufen-gps-sinnvoll/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [],
       "mainEntity": "Katze entlaufen – GPS sinnvoll?",
@@ -26866,7 +27094,7 @@
       "metaDescription": "Katze frisst nicht? So schätzen Sie die Dringlichkeit ein, erkennen Warnzeichen und wissen, was Sie bis zum Tierarzttermin sicher tun können.",
       "canonicalRoute": "/katze-frisst-nicht/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "problem-solving"
@@ -27613,7 +27841,7 @@
       "metaDescription": "Ihre Katze trinkt plötzlich viel? So messen Sie die Veränderung, erkennen Begleitsymptome und wissen, wann tierärztliche Hilfe nötig ist.",
       "canonicalRoute": "/katze-trinkt-viel/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "problem-solving"
@@ -28229,7 +28457,7 @@
       "metaDescription": "Schritt-für-Schritt-Anleitung für den Einbau einer Katzenklappe mit Planung von Ausschnitt, Durchgang, Glas, Wand, Stromversorgung und typischen Fehlern.",
       "canonicalRoute": "/katzenklappe-einbauen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "smarte-haustiertechnik",
       "secondaryIntents": [],
       "mainEntity": "Katzenklappe einbauen: Tür, Glas und Wand richtig planen",
@@ -28461,7 +28689,7 @@
       "metaDescription": "Praxisratgeber für Mehrkatzenhaushalte: Welche Katzenklappe passt, wie Ein- und Ausgangsrechte geplant werden und welche Fehler sich vermeiden lassen.",
       "canonicalRoute": "/katzenklappe-fuer-mehrere-katzen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "smarte-haustiertechnik",
       "secondaryIntents": [],
       "mainEntity": "Katzenklappe für mehrere Katzen: Rechte richtig planen",
@@ -28680,7 +28908,7 @@
       "metaDescription": "Zugluft an Katzenklappen beurteilen: Klappendichtung, Einbauanschluss, Wärmebrücke, Wind und Gebäudebauteil.",
       "canonicalRoute": "/katzenklappe-zugluft-und-waermedaemmung/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "katzenklappen",
       "secondaryIntents": [],
       "mainEntity": "Katzenklappe: Zugluft und Wärmedämmung richtig bewerten",
@@ -28819,7 +29047,7 @@
       "metaDescription": "Katzenklappe nach Zugang, Mehrkatzen-Rechten, Durchgang, Einbau, App und Beuteerkennung auswählen.",
       "canonicalRoute": "/katzenklappen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "katzenklappen",
       "secondaryIntents": [],
       "mainEntity": "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen",
@@ -29094,7 +29322,7 @@
       "metaDescription": "Katzentrinkbrunnen durchlaufen lassen? So sicherst du Wasser bei Urlaub, Stromausfall, leerem Tank oder Pumpenstörung ab.",
       "canonicalRoute": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Katzentrinkbrunnen im Dauerbetrieb und im Urlaub",
@@ -29285,7 +29513,7 @@
       "metaDescription": "Katzenbrunnen brummt oder rattert? Wasserstand, Luft, Filter, Haare, Kalk, Rotor und Untergrund in der richtigen Reihenfolge prüfen.",
       "canonicalRoute": "/katzentrinkbrunnen-laut-pumpe/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Katzenbrunnen laut? Pumpe in 6 Schritten prüfen",
@@ -29503,7 +29731,7 @@
       "metaDescription": "Edelstahl, Keramik und Kunststoff bei Katzenbrunnen vergleichen: Hygiene, Kratzer, Gewicht, Bruchrisiko, Geräusch und Reinigung.",
       "canonicalRoute": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Katzenbrunnen: Edelstahl, Keramik oder Kunststoff?",
@@ -29708,7 +29936,7 @@
       "metaDescription": "Filterloser Katzenbrunnen erklärt: Was Filter auffangen, warum Reinigung trotzdem nötig ist und für wen ein Modell ohne Kartusche passt.",
       "canonicalRoute": "/katzentrinkbrunnen-ohne-filter/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Katzentrinkbrunnen ohne Filter: sinnvoll oder unhygienisch?",
@@ -29903,7 +30131,7 @@
       "metaDescription": "Katzenbrunnen richtig reinigen: Wasser wechseln, Filter entnehmen, Tank, Dichtungen, Auslauf, Pumpe und Rotorraum gründlich säubern.",
       "canonicalRoute": "/katzentrinkbrunnen-richtig-reinigen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Katzentrinkbrunnen reinigen: Pumpe, Tank und Filter",
@@ -30171,7 +30399,7 @@
       "metaDescription": "Katzenwasser täglich wechseln: Unterschiede zwischen Wassernapf und Trinkbrunnen, Reinigung und Warnzeichen verständlich erklärt.",
       "canonicalRoute": "/katzenwasser-taeglich-wechseln/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Wie oft sollte man Katzenwasser wechseln?",
@@ -30362,7 +30590,7 @@
       "metaDescription": "Geführter Futterautomaten-Berater sowie unabhängige Vergleiche und Ratgeber für Trinkbrunnen und GPS-Tracker.",
       "canonicalRoute": "/kaufberatung/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "smarte-haustiertechnik",
       "secondaryIntents": [],
       "mainEntity": "Welche Haustiertechnik passt wirklich zu dir?",
@@ -30463,11 +30691,11 @@
       "metaDescription": "Kontakt zur PfotenTechnik-Redaktion für Hinweise, Korrekturen und allgemeine Anfragen.",
       "canonicalRoute": "/kontakt/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "smarte-haustiertechnik",
       "secondaryIntents": [],
       "mainEntity": "Kontakt",
-      "internalIncomingLinks": 112,
+      "internalIncomingLinks": 114,
       "internalOutgoingLinks": 0,
       "wordCount": 161,
       "headingCount": 5,
@@ -30553,7 +30781,7 @@
       "metaDescription": "Wasseraufnahme bei Katzen mit chronischer Nierenerkrankung unterstützen: mehrere Quellen, Nassfutter, Beobachtung und tierärztliche Grenzen.",
       "canonicalRoute": "/nierenkranke-katze-trinken/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Nierenkranke Katze zum Trinken animieren",
@@ -30728,7 +30956,7 @@
       "metaDescription": "Aqara Smart Pet Feeder C1 im Recherche-Test: Zigbee, Hub, Portionen, Batterie-Backup, Erfahrungen und Schwächen.",
       "canonicalRoute": "/produkt/aqara-smart-pet-feeder-c1/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -30987,7 +31215,7 @@
       "metaDescription": "Cat Mate 335 mit rund 2 Litern, drei Trinkebenen, regelbarer Pumpe, spülmaschinengeeigneten Schalen und verfügbaren Ersatzteilen.",
       "canonicalRoute": "/produkt/cat-mate-335-pet-fountain/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "transactional-support"
@@ -31221,7 +31449,7 @@
       "metaDescription": "Cat Mate C200 mit zwei 48-Stunden-Timern, zwei 400-g-Fächern, Kühlakku und rund zwölf Monaten Batterielaufzeit.",
       "canonicalRoute": "/produkt/cat-mate-c200/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -31480,7 +31708,7 @@
       "metaDescription": "Cat Mate C300 mit drei 170-g-Fächern, zwei programmierbaren Zeiten, Kühlakku und rund zwölf Monaten Batterielaufzeit.",
       "canonicalRoute": "/produkt/cat-mate-c300/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -31739,7 +31967,7 @@
       "metaDescription": "Cat Mate C500 mit fünf 155-g-Fächern, zwei Kühlakkus, drei AA-Batterien und spülmaschinengeeignetem Einsatz.",
       "canonicalRoute": "/produkt/cat-mate-c500/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -31998,7 +32226,7 @@
       "metaDescription": "Cat Mate Shell Pet Fountain mit 3 Litern, zwei Trinkhöhen, BPA-freiem Kunststoff und monatlichem Filterwechsel.",
       "canonicalRoute": "/produkt/cat-mate-shell-fountain/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "transactional-support"
@@ -32241,7 +32469,7 @@
       "metaDescription": "Catit PIXI Smart 6-Meal Feeder mit sechs 170-ml-Fächern, App, Touchpanel, Kühlakkus und den wichtigsten Grenzen im Alltag.",
       "canonicalRoute": "/produkt/catit-pixi-smart-6-meal-feeder/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -32505,7 +32733,7 @@
       "metaDescription": "Catit PIXI Vision Smart Feeder im Recherche-Test: Kamera, App, Portionierung, Erfahrungen, Schwächen und Alternativen.",
       "canonicalRoute": "/produkt/catit-pixi-vision-smart-feeder/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -32769,7 +32997,7 @@
       "metaDescription": "Devoko 90L eingeordnet: 90 l Innenraum, 8,5 l Abfallbehälter, 23 cm Einstieg, 1,5–10 kg Katzengewicht, App, Sensorik, Deo-System und Datenlücken.",
       "canonicalRoute": "/produkt/devoko-90l-automatisches-katzenklo/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "automatische-katzentoiletten",
       "secondaryIntents": [
         "transactional-support"
@@ -33007,13 +33235,13 @@
       "metaDescription": "Enabot EBO Air 2 als mobiler 2K-Kameraroboter: Reichweite im Zuhause, Hindernisse, App und Datenschutz eingeordnet.",
       "canonicalRoute": "/produkt/enabot-ebo-air-2/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "haustierkameras",
       "secondaryIntents": [
         "transactional-support"
       ],
       "mainEntity": "Enabot EBO Air 2",
-      "internalIncomingLinks": 8,
+      "internalIncomingLinks": 9,
       "internalOutgoingLinks": 14,
       "wordCount": 763,
       "headingCount": 32,
@@ -33247,6 +33475,239 @@
       }
     },
     {
+      "sourceFile": "apps/pfotentechnik/src/content/products/enabot-rola-mini.md",
+      "pageType": "product",
+      "title": "Enabot ROLA Mini im Datencheck",
+      "h1": "Enabot ROLA Mini",
+      "h1Count": 1,
+      "metaDescription": "Enabot ROLA Mini als mobile 2K-Roboterkamera: Sichtfeld, Audio, App-Fahrt, Akku und offene Verfügbarkeitsfragen.",
+      "canonicalRoute": "/produkt/enabot-rola-mini/",
+      "indexable": true,
+      "inSitemap": false,
+      "cluster": "haustierkameras",
+      "secondaryIntents": [
+        "transactional-support"
+      ],
+      "mainEntity": "Enabot ROLA Mini",
+      "internalIncomingLinks": 6,
+      "internalOutgoingLinks": 13,
+      "wordCount": 709,
+      "headingCount": 29,
+      "headings": [
+        "Enabot ROLA Mini",
+        "Aktueller Preis",
+        "Lohnt sich Enabot ROLA Mini?",
+        "Was die wichtigsten Daten bedeuten",
+        "Passt dieses Produkt zu deinem Alltag?",
+        "So funktioniert die Nutzung laut Dokumentation und Quellen",
+        "Stärken",
+        "Schwächen",
+        "Technik ersetzt keine Kontrolle",
+        "Quellen und Prüfgrundlage",
+        "Besser passend, nicht nur ähnlich",
+        "So ist diese Seite einzuordnen",
+        "Passend weiterentscheiden",
+        "Passend zum Produkt weiterlesen",
+        "Ja, wenn …",
+        "Nein, wenn …",
+        "Dann lieber …",
+        "Beantworte die Fragen für eine persönliche Einordnung.",
+        "Einrichten",
+        "Routine starten",
+        "Kontrollieren",
+        "Reinigen und nachstellen",
+        "Enabot EBO Air 2",
+        "PETLIBRO Scout Smart Camera",
+        "Furbo 360° Hundekamera",
+        "Beste Futterautomaten für Nassfutter",
+        "Smarte Haustiertechnik – Der große Ratgeber",
+        "Enabot",
+        "Smarte Futterautomaten"
+      ],
+      "structuredData": [
+        "Organization",
+        "WebPage",
+        "WebSite",
+        "BreadcrumbList",
+        "ListItem",
+        "Product",
+        "Brand",
+        "Review",
+        "Rating",
+        "ItemList"
+      ],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/produkt/enabot-rola-mini/",
+      "collection": "products",
+      "metaTitle": "Enabot ROLA Mini im Datencheck",
+      "canonical": "https://pfotentechnik.de/produkt/enabot-rola-mini/",
+      "publishedAt": "2026-08-15",
+      "updatedAt": "2026-08-15",
+      "author": "PfotenTechnik Redaktion",
+      "animal": "both",
+      "productCategory": "",
+      "audience": "both",
+      "character": "commercial",
+      "linkDepth": 2,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Enabot ROLA Mini"
+        },
+        {
+          "level": 2,
+          "text": "Aktueller Preis"
+        },
+        {
+          "level": 2,
+          "text": "Lohnt sich Enabot ROLA Mini?"
+        },
+        {
+          "level": 2,
+          "text": "Was die wichtigsten Daten bedeuten"
+        },
+        {
+          "level": 2,
+          "text": "Passt dieses Produkt zu deinem Alltag?"
+        },
+        {
+          "level": 2,
+          "text": "So funktioniert die Nutzung laut Dokumentation und Quellen"
+        },
+        {
+          "level": 2,
+          "text": "Stärken"
+        },
+        {
+          "level": 2,
+          "text": "Schwächen"
+        },
+        {
+          "level": 2,
+          "text": "Technik ersetzt keine Kontrolle"
+        },
+        {
+          "level": 2,
+          "text": "Quellen und Prüfgrundlage"
+        },
+        {
+          "level": 2,
+          "text": "Besser passend, nicht nur ähnlich"
+        },
+        {
+          "level": 2,
+          "text": "So ist diese Seite einzuordnen"
+        },
+        {
+          "level": 2,
+          "text": "Passend weiterentscheiden"
+        },
+        {
+          "level": 2,
+          "text": "Passend zum Produkt weiterlesen"
+        },
+        {
+          "level": 3,
+          "text": "Ja, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Nein, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Dann lieber …"
+        },
+        {
+          "level": 3,
+          "text": "Beantworte die Fragen für eine persönliche Einordnung."
+        },
+        {
+          "level": 3,
+          "text": "Einrichten"
+        },
+        {
+          "level": 3,
+          "text": "Routine starten"
+        },
+        {
+          "level": 3,
+          "text": "Kontrollieren"
+        },
+        {
+          "level": 3,
+          "text": "Reinigen und nachstellen"
+        },
+        {
+          "level": 3,
+          "text": "Enabot EBO Air 2"
+        },
+        {
+          "level": 3,
+          "text": "PETLIBRO Scout Smart Camera"
+        },
+        {
+          "level": 3,
+          "text": "Furbo 360° Hundekamera"
+        },
+        {
+          "level": 3,
+          "text": "Beste Futterautomaten für Nassfutter"
+        },
+        {
+          "level": 3,
+          "text": "Smarte Haustiertechnik – Der große Ratgeber"
+        },
+        {
+          "level": 3,
+          "text": "Enabot"
+        },
+        {
+          "level": 3,
+          "text": "Smarte Futterautomaten"
+        }
+      ],
+      "recommendationTypes": [
+        "alternatives"
+      ],
+      "relatedProducts": [
+        "/produkt/enabot-ebo-air-2/",
+        "/produkt/petlibro-scout-smart-camera/",
+        "/produkt/furbo-360-hundekamera/"
+      ],
+      "relatedComparisons": [
+        "/vergleiche/beste-haustierkameras/",
+        "/vergleiche/beste-futterautomaten-fuer-nassfutter/"
+      ],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "product-research",
+        "secondary": [
+          "transactional-support"
+        ],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/produkt/enabot-rola-mini/",
+        "route": "/produkt/enabot-rola-mini/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 90,
+        "signals": [
+          "clear-title-h1",
+          "meta-description",
+          "structured-headings",
+          "substantive-content",
+          "internal-context",
+          "structured-data",
+          "decision-support"
+        ]
+      }
+    },
+    {
       "sourceFile": "apps/pfotentechnik/src/content/products/furbo-360-hundekamera.md",
       "pageType": "product",
       "title": "Furbo 360° Hundekamera im Check",
@@ -33255,13 +33716,13 @@
       "metaDescription": "Furbo 360° Hundekamera mit Leckerliausgabe, Zwei-Wege-Audio, Tracking und optionalem Nanny-Abo eingeordnet.",
       "canonicalRoute": "/produkt/furbo-360-hundekamera/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "haustierkameras",
       "secondaryIntents": [
         "transactional-support"
       ],
       "mainEntity": "Furbo 360° Hundekamera",
-      "internalIncomingLinks": 8,
+      "internalIncomingLinks": 9,
       "internalOutgoingLinks": 15,
       "wordCount": 772,
       "headingCount": 33,
@@ -33500,6 +33961,233 @@
       }
     },
     {
+      "sourceFile": "apps/pfotentechnik/src/content/products/furbo-mini-360.md",
+      "pageType": "product",
+      "title": "Furbo Mini 360 im Datencheck",
+      "h1": "Furbo Mini 360",
+      "h1Count": 1,
+      "metaDescription": "Furbo Mini 360: 2K, 360-Grad-Rotation, Audio, Nachtsicht, Leckerliausgabe und offene Dienstfragen eingeordnet.",
+      "canonicalRoute": "/produkt/furbo-mini-360/",
+      "indexable": true,
+      "inSitemap": false,
+      "cluster": "haustierkameras",
+      "secondaryIntents": [
+        "transactional-support"
+      ],
+      "mainEntity": "Furbo Mini 360",
+      "internalIncomingLinks": 5,
+      "internalOutgoingLinks": 11,
+      "wordCount": 683,
+      "headingCount": 28,
+      "headings": [
+        "Furbo Mini 360",
+        "Aktueller Preis",
+        "Lohnt sich Furbo Mini 360?",
+        "Passt dieses Produkt zu deinem Alltag?",
+        "So funktioniert die Nutzung laut Dokumentation und Quellen",
+        "Stärken",
+        "Schwächen",
+        "Technik ersetzt keine Kontrolle",
+        "Quellen und Prüfgrundlage",
+        "Besser passend, nicht nur ähnlich",
+        "So ist diese Seite einzuordnen",
+        "Passend weiterentscheiden",
+        "Passend zum Produkt weiterlesen",
+        "Ja, wenn …",
+        "Nein, wenn …",
+        "Dann lieber …",
+        "Beantworte die Fragen für eine persönliche Einordnung.",
+        "Einrichten",
+        "Routine starten",
+        "Kontrollieren",
+        "Reinigen und nachstellen",
+        "Enabot EBO Air 2",
+        "PETLIBRO Scout Smart Camera",
+        "Furbo 360° Hundekamera",
+        "Haustierkameras im Vergleich",
+        "Smarte Futterautomaten für Hunde und Katzen",
+        "Furbo",
+        "Smarte Futterautomaten"
+      ],
+      "structuredData": [
+        "Organization",
+        "WebPage",
+        "WebSite",
+        "BreadcrumbList",
+        "ListItem",
+        "Product",
+        "Brand",
+        "Review",
+        "Rating",
+        "ItemList"
+      ],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/produkt/furbo-mini-360/",
+      "collection": "products",
+      "metaTitle": "Furbo Mini 360 im Datencheck",
+      "canonical": "https://pfotentechnik.de/produkt/furbo-mini-360/",
+      "publishedAt": "2026-08-15",
+      "updatedAt": "2026-08-15",
+      "author": "PfotenTechnik Redaktion",
+      "animal": "both",
+      "productCategory": "",
+      "audience": "both",
+      "character": "commercial",
+      "linkDepth": 2,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Furbo Mini 360"
+        },
+        {
+          "level": 2,
+          "text": "Aktueller Preis"
+        },
+        {
+          "level": 2,
+          "text": "Lohnt sich Furbo Mini 360?"
+        },
+        {
+          "level": 2,
+          "text": "Passt dieses Produkt zu deinem Alltag?"
+        },
+        {
+          "level": 2,
+          "text": "So funktioniert die Nutzung laut Dokumentation und Quellen"
+        },
+        {
+          "level": 2,
+          "text": "Stärken"
+        },
+        {
+          "level": 2,
+          "text": "Schwächen"
+        },
+        {
+          "level": 2,
+          "text": "Technik ersetzt keine Kontrolle"
+        },
+        {
+          "level": 2,
+          "text": "Quellen und Prüfgrundlage"
+        },
+        {
+          "level": 2,
+          "text": "Besser passend, nicht nur ähnlich"
+        },
+        {
+          "level": 2,
+          "text": "So ist diese Seite einzuordnen"
+        },
+        {
+          "level": 2,
+          "text": "Passend weiterentscheiden"
+        },
+        {
+          "level": 2,
+          "text": "Passend zum Produkt weiterlesen"
+        },
+        {
+          "level": 3,
+          "text": "Ja, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Nein, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Dann lieber …"
+        },
+        {
+          "level": 3,
+          "text": "Beantworte die Fragen für eine persönliche Einordnung."
+        },
+        {
+          "level": 3,
+          "text": "Einrichten"
+        },
+        {
+          "level": 3,
+          "text": "Routine starten"
+        },
+        {
+          "level": 3,
+          "text": "Kontrollieren"
+        },
+        {
+          "level": 3,
+          "text": "Reinigen und nachstellen"
+        },
+        {
+          "level": 3,
+          "text": "Enabot EBO Air 2"
+        },
+        {
+          "level": 3,
+          "text": "PETLIBRO Scout Smart Camera"
+        },
+        {
+          "level": 3,
+          "text": "Furbo 360° Hundekamera"
+        },
+        {
+          "level": 3,
+          "text": "Haustierkameras im Vergleich"
+        },
+        {
+          "level": 3,
+          "text": "Smarte Futterautomaten für Hunde und Katzen"
+        },
+        {
+          "level": 3,
+          "text": "Furbo"
+        },
+        {
+          "level": 3,
+          "text": "Smarte Futterautomaten"
+        }
+      ],
+      "recommendationTypes": [
+        "alternatives"
+      ],
+      "relatedProducts": [
+        "/produkt/enabot-ebo-air-2/",
+        "/produkt/petlibro-scout-smart-camera/",
+        "/produkt/furbo-360-hundekamera/"
+      ],
+      "relatedComparisons": [
+        "/vergleiche/beste-haustierkameras/"
+      ],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "product-research",
+        "secondary": [
+          "transactional-support"
+        ],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/produkt/furbo-mini-360/",
+        "route": "/produkt/furbo-mini-360/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 90,
+        "signals": [
+          "clear-title-h1",
+          "meta-description",
+          "structured-headings",
+          "substantive-content",
+          "internal-context",
+          "structured-data",
+          "decision-support"
+        ]
+      }
+    },
+    {
       "sourceFile": "apps/pfotentechnik/src/content/products/garmin-alpha-t-20.md",
       "pageType": "product",
       "title": "Garmin Alpha T 20 im Check: Akku, Reichweite, Zulassung",
@@ -33508,13 +34196,13 @@
       "metaDescription": "Garmin Alpha T 20 mit VHF-Ortung, bis zu 14,48 km Reichweite, 68 Stunden Akku, kompatiblem Alpha-Handgerät und wichtigen Funkhinweisen.",
       "canonicalRoute": "/produkt/garmin-alpha-t-20/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [
         "transactional-support"
       ],
       "mainEntity": "Garmin Alpha T 20",
-      "internalIncomingLinks": 9,
+      "internalIncomingLinks": 8,
       "internalOutgoingLinks": 15,
       "wordCount": 1744,
       "headingCount": 34,
@@ -33766,7 +34454,7 @@
       "metaDescription": "Garmin Alpha TT 25 mit VHF, bis zu 14,48 km, 68 Stunden Akku und notwendigem Alpha-Handgerät.",
       "canonicalRoute": "/produkt/garmin-alpha-tt-25/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [
         "transactional-support"
@@ -34009,7 +34697,7 @@
       "metaDescription": "HoneyGuardian A305D mit 5-Liter-Behälter und zwei Edelstahl-Näpfen: Portionierung, Stromversorgung und Eignung ohne App.",
       "canonicalRoute": "/produkt/honeyguardian-a305d/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -34231,7 +34919,7 @@
       "metaDescription": "Der HoneyGuardian A68 kombiniert einen großen Vorratsbehälter mit App-Steuerung und eignet sich besonders für Katzen sowie kleine bis mittelgroße Hunde.",
       "canonicalRoute": "/produkt/honeyguardian-a68/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -34454,7 +35142,7 @@
       "metaDescription": "HoneyGuardian S305D mit 5-Liter-Vorrat, App-Zeitplänen, Edelstahl-Napf und wichtigen Hinweisen zu Modellvarianten.",
       "canonicalRoute": "/produkt/honeyguardian-smart-pet-feeder-s305d/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -34697,7 +35385,7 @@
       "metaDescription": "IMIPAW 3L mit sechs Mahlzeiten, Portionen von etwa 7 bis 9 g, lokalem Timer, 3 D-Batterien als Backup und den wichtigsten Grenzen.",
       "canonicalRoute": "/produkt/imipaw-3l-automatic-cat-feeder/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -34961,7 +35649,7 @@
       "metaDescription": "Litter-Robot 5 Pro: geschlossenes Siebsystem, Mindestgewicht, Dualkamera, WasteID, App und Folgekosten eingeordnet.",
       "canonicalRoute": "/produkt/litter-robot-5-pro/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "automatische-katzentoiletten",
       "secondaryIntents": [
         "transactional-support"
@@ -35218,7 +35906,7 @@
       "metaDescription": "Neakasa M1 Lite eingeordnet: offene Bauform, Selbstreinigung, App, 1–15 kg Katzengewicht, 7,17 l Streu, 11,23 l Abfallbehälter und Unterschiede zum M1 Plus.",
       "canonicalRoute": "/produkt/neakasa-m1-lite/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "automatische-katzentoiletten",
       "secondaryIntents": [
         "transactional-support"
@@ -35456,7 +36144,7 @@
       "metaDescription": "Neakasa M1 Plus: offene Bauform, Mindestgewicht, Einstieg, Sensoren, Streu, App und Folgekosten eingeordnet.",
       "canonicalRoute": "/produkt/neakasa-m1-plus/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "automatische-katzentoiletten",
       "secondaryIntents": [
         "transactional-support"
@@ -35714,7 +36402,7 @@
       "metaDescription": "oneisall 2,2L Cordless Cat Fountain mit PP-Tank, Akku, Bewegungssensor, 20 dB und fünfstufigem Filter.",
       "canonicalRoute": "/produkt/oneisall-2-2l-cordless-fountain/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "transactional-support"
@@ -35958,7 +36646,7 @@
       "metaDescription": "Oneisall PF14 mit 5 l Futter, 3,5 l Wasser, sechs Mahlzeiten, Schwerkraftspender, Edelstahlnäpfen und Batterie-Backup.",
       "canonicalRoute": "/produkt/oneisall-2-in-1-feeder-water/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -36207,7 +36895,7 @@
       "metaDescription": "oneisall PW14 mit 3,2 Litern, Edelstahl-Trinkfläche, 4.000-mAh-Akku, Bewegungssensor, Intervall- und Dauerbetrieb.",
       "canonicalRoute": "/produkt/oneisall-3-2l-cordless-fountain/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "transactional-support"
@@ -36441,7 +37129,7 @@
       "metaDescription": "Kabelloser Edelstahl-Trinkbrunnen mit Sensor: Laufzeit, Reinigung und Alternativen.",
       "canonicalRoute": "/produkt/oneisall-3-5l-cordless-fountain/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "transactional-support"
@@ -36705,7 +37393,7 @@
       "metaDescription": "oneisall 5L Futterautomat mit Doppelschale, Varianten mit und ohne App sowie den wichtigsten Grenzen für Mehrkatzenhaushalte.",
       "canonicalRoute": "/produkt/oneisall-5l-automatic-cat-feeder/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -36969,7 +37657,7 @@
       "metaDescription": "oneisall 7L mit Edelstahl-Trinkschale, Sichtfenster, Niedrigwasserwarnung, unter 35 dB und wichtigen Hinweisen zu Pflege und Modellversion.",
       "canonicalRoute": "/produkt/oneisall-7l-dog-water-fountain/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "transactional-support"
@@ -37212,7 +37900,7 @@
       "metaDescription": "OnlyCat: Beuteerkennung, App, Kamera, Strom- und WLAN-Abhängigkeit sowie Preismodelle.",
       "canonicalRoute": "/produkt/onlycat-mikrochip-katzenklappe/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "katzenklappen",
       "secondaryIntents": [
         "transactional-support"
@@ -37476,7 +38164,7 @@
       "metaDescription": "PAJ PET Finder 4G Mini mit 33,1 g, 4G, IP67, bis zu 10 Tagen Akku und 3 Monaten Premium plus 2 Jahren Lite.",
       "canonicalRoute": "/produkt/paj-pet-finder-4g-mini/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [
         "transactional-support"
@@ -37741,7 +38429,7 @@
       "metaDescription": "Vernetzter Trockenfutterautomat aus dem PAWBBY-Umfeld mit Xiaomi-Home-Anbindung je nach Modellversion.",
       "canonicalRoute": "/produkt/pawbby-smart-pet-feeder/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -37963,7 +38651,7 @@
       "metaDescription": "PawSync Smart Pet Feeder mit Waage im Recherche-Test: Genauigkeit, App, Erfahrungen, Vorteile und Schwächen.",
       "canonicalRoute": "/produkt/pawsync-smart-pet-feeder/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -38227,7 +38915,7 @@
       "metaDescription": "PETKIT Eversweet 3 Pro UVC mit 1,6 Litern, Edelstahlbehälter, UVC-Pumpe, Bluetooth-App, drei Modi und Filterkosten.",
       "canonicalRoute": "/produkt/petkit-eversweet-3-pro-uvc/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "transactional-support"
@@ -38472,7 +39160,7 @@
       "metaDescription": "PETKIT Eversweet 5 Mini mit 1 Liter Kapazität, Keramikeinsatz, Bluetooth und mehrstufiger Filterung eingeordnet.",
       "canonicalRoute": "/produkt/petkit-eversweet-5-mini/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "transactional-support"
@@ -38715,7 +39403,7 @@
       "metaDescription": "PETKIT Eversweet Max 2 UVC mit 3 Litern, Akku, UVC-Pumpe, Edelstahl-Trinkfläche und App sachlich eingeordnet.",
       "canonicalRoute": "/produkt/petkit-eversweet-max-2-uvc/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "transactional-support"
@@ -38978,7 +39666,7 @@
       "metaDescription": "PETKIT Eversweet Max Cordless mit 3 Litern, Akku, Edelstahl-Trinkfläche, Bewegungssensor und Bluetooth-App.",
       "canonicalRoute": "/produkt/petkit-eversweet-max-cordless/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "transactional-support"
@@ -39241,7 +39929,7 @@
       "metaDescription": "PETKIT Eversweet Solo 2 im Datencheck: 2-Liter-Tank, kabellose Pumpe, Lautstärke, Filter, Reinigung und Bluetooth-App.",
       "canonicalRoute": "/produkt/petkit-eversweet-solo-2-fountain/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "transactional-support"
@@ -39505,7 +40193,7 @@
       "metaDescription": "PETKIT Eversweet Solo SE mit 1,8 Litern, kabelloser Pumpe, Dauerbetrieb und mehrstufigem Filter eingeordnet.",
       "canonicalRoute": "/produkt/petkit-eversweet-solo-se/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "transactional-support"
@@ -39769,7 +40457,7 @@
       "metaDescription": "PETKIT Eversweet Ultra mit 5 l Frischwasser, 1,8 l Abwasser, OneWay-System ohne klassischen Hauptfilter, AI-Kamera und Cube C: Nutzen, Reinigung und Folgekosten.",
       "canonicalRoute": "/produkt/petkit-eversweet-ultra/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "transactional-support"
@@ -40038,7 +40726,7 @@
       "metaDescription": "Der PETKIT Fresh Element Infinity richtet sich an Haushalte, die einen größeren Trockenfuttervorrat, App-Steuerung und eine integrierte Napfwaage ohne Kamera benötigen.",
       "canonicalRoute": "/produkt/petkit-fresh-element-infinity/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -40270,7 +40958,7 @@
       "metaDescription": "PETKIT Fresh Element Solo P570 mit 3 Litern, App, Edelstahl-Napf, 2,4-GHz-WLAN, fünf AAA-Batterien und 10-g-Portionen.",
       "canonicalRoute": "/produkt/petkit-fresh-element-solo/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -40514,7 +41202,7 @@
       "metaDescription": "PUROBOT MAX PRO 2: Kamera, Mehrkatzenprofile, Sensorstopp, Streu, App-Daten und Pflege eingeordnet.",
       "canonicalRoute": "/produkt/petkit-purobot-max-pro-2/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "automatische-katzentoiletten",
       "secondaryIntents": [
         "transactional-support"
@@ -40580,8 +41268,8 @@
       "metaTitle": "PETKIT PUROBOT MAX PRO 2 im Check",
       "canonical": "https://pfotentechnik.de/produkt/petkit-purobot-max-pro-2/",
       "publishedAt": "2026-08-06",
-      "updatedAt": "2026-08-06",
-      "author": "PfotenTechnik Redaktion",
+      "updatedAt": "2026-08-15",
+      "author": "PETKIT",
       "animal": "cat",
       "productCategory": "",
       "audience": "cat",
@@ -40772,7 +41460,7 @@
       "metaDescription": "PETKIT YumShare Dual-Hopper 2 P592 mit 5 Litern, zwei Kammern, 1080p-Kamera, Tiererkennung, Dual-Band-WLAN und Batterie-Backup.",
       "canonicalRoute": "/produkt/petkit-yumshare-dual-hopper/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -41036,7 +41724,7 @@
       "metaDescription": "PETKIT YumShare Solo 2 P572 mit 1080p-Kamera, 3-Liter-Tank, Dual-Band-WLAN und bis zu 14 Tagen Backup: Mahlzeiten, App, Batteriebetrieb und Grenzen der Tiererkennung.",
       "canonicalRoute": "/produkt/petkit-yumshare-solo-2/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -41300,7 +41988,7 @@
       "metaDescription": "PETLIBRO Air Automatic Feeder im Datencheck: kompakter Trockenfutterautomat mit Zeitsteuerung, Portionierung und Batterieoption ohne App.",
       "canonicalRoute": "/produkt/petlibro-air-automatic-feeder/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -41553,7 +42241,7 @@
       "metaDescription": "PETLIBRO Air WiFi Feeder PLAF108 mit 2 Litern, App, 5.200-mAh-Akku, zehn Mahlzeiten, 16 Portionen und Edelstahl-Napf.",
       "canonicalRoute": "/produkt/petlibro-air-wifi-feeder/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -41801,7 +42489,7 @@
       "metaDescription": "PETLIBRO Capsule Dog Fountain mit knapp 8 Litern, breiter Trinkfläche, Spritzschutz, fünfstufigem Filter und Notstromreserve.",
       "canonicalRoute": "/produkt/petlibro-capsule-dog-fountain/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "transactional-support"
@@ -42058,7 +42746,7 @@
       "metaDescription": "Dockstream 2 Smart Cordless mit 3 Litern, 5200-mAh-Akku, App-Trinktracking, Dual-Band-WLAN und klarer Einordnung der Grenzen.",
       "canonicalRoute": "/produkt/petlibro-dockstream-2-smart-cordless/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "transactional-support"
@@ -42317,7 +43005,7 @@
       "metaDescription": "Dockstream 2 Smart PLWF106 mit 3 Litern, App-Trinktracking, Dual-Band-WLAN und klarer Abgrenzung zur kabellosen PLWF116-Variante.",
       "canonicalRoute": "/produkt/petlibro-dockstream-2-smart/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "transactional-support"
@@ -42581,7 +43269,7 @@
       "metaDescription": "PETLIBRO Dockstream Cordless mit 2,5 Litern, 5000-mAh-Akku, Sensorbetrieb, 23 dB und vierstufiger Filterung.",
       "canonicalRoute": "/produkt/petlibro-dockstream-cordless/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "transactional-support"
@@ -42845,7 +43533,7 @@
       "metaDescription": "PETLIBRO Dockstream RFID Smart mit 3 Litern, RFID-Tierzuordnung, App, Edelstahl-Trinkfläche und 2,4-GHz-WLAN.",
       "canonicalRoute": "/produkt/petlibro-dockstream-rfid-smart/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "transactional-support"
@@ -43107,7 +43795,7 @@
       "metaDescription": "PETLIBRO Glacier mit 2,5 Litern, Edelstahl 304, Ultrafiltration, Bewegungssensor und spülmaschinengeeignetem Tank.",
       "canonicalRoute": "/produkt/petlibro-glacier-ultrafiltration/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "transactional-support"
@@ -43356,7 +44044,7 @@
       "metaDescription": "Granary 2 Vision mit 5 Litern, 1-g-Waage, 1080p-Kamera, 48-h-Backup, App-Tracking und klarer Abgrenzung zum Granary 2 X.",
       "canonicalRoute": "/produkt/petlibro-granary-2-vision/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -43595,7 +44283,7 @@
       "metaDescription": "PETLIBRO Granary Camera Feeder mit 5 Litern, 1080p-Kamera, Nachtsicht, Zwei-Wege-Audio und App eingeordnet.",
       "canonicalRoute": "/produkt/petlibro-granary-camera-feeder/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -43859,7 +44547,7 @@
       "metaDescription": "PETLIBRO Granary Dual Feeder mit 5 Litern, zwei Edelstahlnäpfen, zehn Mahlzeiten, 2,4/5-GHz-WLAN und Batterie-Backup.",
       "canonicalRoute": "/produkt/petlibro-granary-dual-feeder/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -44103,7 +44791,7 @@
       "metaDescription": "PETLIBRO Granary WiFi Feeder mit 5 Litern, zehn Mahlzeiten, 2,4/5-GHz-WLAN und Batterie-Backup eingeordnet.",
       "canonicalRoute": "/produkt/petlibro-granary-wifi-feeder/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -44367,7 +45055,7 @@
       "metaDescription": "Der PETLIBRO One RFID Smart Feeder kombiniert automatische Fütterung mit einem geschützten Napfzugang und eignet sich ideal für Mehrkatzenhaushalte.",
       "canonicalRoute": "/produkt/petlibro-one-rfid-smart-feeder/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -44620,7 +45308,7 @@
       "metaDescription": "PETLIBRO Polar PLAF109 mit aktiver Kühlung, drei 200-ml-Fächern und App: Was die 72-Stunden-Angabe bedeutet und was das 12-Stunden-Batterie-Backup bei Stromausfall tatsächlich absichert.",
       "canonicalRoute": "/produkt/petlibro-polar-wet-food-feeder/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -44879,15 +45567,15 @@
       "metaDescription": "PETLIBRO Scout: 1080p, Schwenken und Neigen, Mehrtiererkennung, Cloud-Abo und fehlende SD-Karte eingeordnet.",
       "canonicalRoute": "/produkt/petlibro-scout-smart-camera/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "haustierkameras",
       "secondaryIntents": [
         "transactional-support"
       ],
       "mainEntity": "PETLIBRO Scout Smart Camera",
-      "internalIncomingLinks": 7,
-      "internalOutgoingLinks": 15,
-      "wordCount": 806,
+      "internalIncomingLinks": 9,
+      "internalOutgoingLinks": 13,
+      "wordCount": 838,
       "headingCount": 33,
       "headings": [
         "PETLIBRO Scout Smart Camera",
@@ -44919,10 +45607,10 @@
         "Nutzerbewertungen nach Plattform",
         "Furbo 360° Hundekamera",
         "Enabot EBO Air 2",
-        "Automatische Katzentoiletten im Vergleich",
+        "Haustierkameras im Vergleich",
         "Smarte Haustiertechnik – Der große Ratgeber",
-        "Haustierkameras",
-        "Smarte Futterautomaten"
+        "PETLIBRO",
+        "Haustierkameras"
       ],
       "structuredData": [
         "Organization",
@@ -44944,8 +45632,8 @@
       "metaTitle": "PETLIBRO Scout Smart Camera im Check",
       "canonical": "https://pfotentechnik.de/produkt/petlibro-scout-smart-camera/",
       "publishedAt": "2026-08-06",
-      "updatedAt": "2026-08-06",
-      "author": "PfotenTechnik Redaktion",
+      "updatedAt": "2026-08-15",
+      "author": "PETLIBRO",
       "animal": "both",
       "productCategory": "",
       "audience": "both",
@@ -45070,7 +45758,7 @@
         },
         {
           "level": 3,
-          "text": "Automatische Katzentoiletten im Vergleich"
+          "text": "Haustierkameras im Vergleich"
         },
         {
           "level": 3,
@@ -45078,11 +45766,11 @@
         },
         {
           "level": 3,
-          "text": "Haustierkameras"
+          "text": "PETLIBRO"
         },
         {
           "level": 3,
-          "text": "Smarte Futterautomaten"
+          "text": "Haustierkameras"
         }
       ],
       "recommendationTypes": [
@@ -45093,8 +45781,7 @@
         "/produkt/enabot-ebo-air-2/"
       ],
       "relatedComparisons": [
-        "/vergleiche/beste-haustierkameras/",
-        "/vergleiche/beste-automatische-katzentoiletten/"
+        "/vergleiche/beste-haustierkameras/"
       ],
       "searchPerformance": null,
       "searchIntent": {
@@ -45132,7 +45819,7 @@
       "metaDescription": "PETLIBRO Space Smart Feeder: Vakuumbehälter, App, Portionen, Trockenfutter-Kompatibilität und Notstrom redaktionell eingeordnet.",
       "canonicalRoute": "/produkt/petlibro-space-smart-feeder/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -45375,7 +46062,7 @@
       "metaDescription": "PETLIBRO Edelstahl-Trinkbrunnen mit 3 Litern, 30 dB, einstellbarem Dauerfluss und spülmaschinengeeignetem Tank.",
       "canonicalRoute": "/produkt/petlibro-stainless-steel-fountain/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "transactional-support"
@@ -45639,7 +46326,7 @@
       "metaDescription": "PetSafe FreshFeed im Recherche-Test: aktive Kühlung, sechs Nassfuttermahlzeiten, App, Erfahrungen, Stärken und Schwächen.",
       "canonicalRoute": "/produkt/petsafe-freshfeed-refrigerated-feeder/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -45902,7 +46589,7 @@
       "metaDescription": "PetSafe Healthy Pet Simply Feed im Recherche-Test: Offline-Betrieb, Förderband, 24 Cups, Slow Feed, Erfahrungen und Schwächen.",
       "canonicalRoute": "/produkt/petsafe-healthy-pet-simply-feed/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -46161,7 +46848,7 @@
       "metaDescription": "PetSafe Mikrochip Katzenklappe: Chip-Kompatibilität, Speicher, Einbau, Dichtung und Grenzen.",
       "canonicalRoute": "/produkt/petsafe-mikrochip-katzenklappe/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "katzenklappen",
       "secondaryIntents": [
         "transactional-support"
@@ -46420,7 +47107,7 @@
       "metaDescription": "Netzbetriebene Mikrochip-Katzenklappe mit 160 × 160 mm Durchgang, selektivem Eingang für bis zu 25 Katzen und optionalem Nachtmodus. Chipgrenzen, Einbau und Herstellerdaten geprüft.",
       "canonicalRoute": "/produkt/petsafe-petporte-smart-flap/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "katzenklappen",
       "secondaryIntents": [
         "transactional-support"
@@ -46674,7 +47361,7 @@
       "metaDescription": "PetSafe Smart Feed 2.0 im Recherche-Test: 24 Cups, Förderband, App, Slow Feed, Erfahrungen und Schwächen.",
       "canonicalRoute": "/produkt/petsafe-smart-feed-2/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -46938,7 +47625,7 @@
       "metaDescription": "petWALK Medium: Dämmung, Chip- und Bewegungserkennung, App, Notstrom und professionelle Einbauplanung.",
       "canonicalRoute": "/produkt/petwalk-medium-tiertuer/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "katzenklappen",
       "secondaryIntents": [
         "transactional-support"
@@ -47172,7 +47859,7 @@
       "metaDescription": "App-gestützter Mikrochip-Napf für getrennte Fütterung und nachvollziehbare Fressgewohnheiten im Mehrtierhaushalt.",
       "canonicalRoute": "/produkt/surefeed-microchip-pet-feeder-connect/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -47430,7 +48117,7 @@
       "metaDescription": "SureFeed Mikrochip-Napf für Nass- und Trockenfutter mit bis zu 32 Chipnummern, Batteriebetrieb und kontrolliertem Zugang.",
       "canonicalRoute": "/produkt/surefeed-microchip-pet-feeder/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -47694,7 +48381,7 @@
       "metaDescription": "Lokale Mikrochip-Katzenklappe mit individuellen Ausgangsrechten für bis zu 32 Tiere. Ohne App oder Hub, mit 142 × 120 mm Durchgang und Batteriebetrieb.",
       "canonicalRoute": "/produkt/sureflap-dualscan-mikrochip-katzenklappe/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "katzenklappen",
       "secondaryIntents": [
         "transactional-support"
@@ -47952,7 +48639,7 @@
       "metaDescription": "SureFlap Connect im Datencheck: Mikrochipzugang, individuelle Rechte, App, Hub-Abhängigkeit, Maße, Batteriebetrieb und Einbau.",
       "canonicalRoute": "/produkt/sureflap-mikrochip-katzenklappe-connect/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "katzenklappen",
       "secondaryIntents": [
         "transactional-support"
@@ -48216,7 +48903,7 @@
       "metaDescription": "SureFlap Mikrochip Katzenklappe im Datencheck: Zugang, 142 × 120 mm Durchgang, Batteriebetrieb, Einbau, Kompatibilität und Grenzen.",
       "canonicalRoute": "/produkt/sureflap-mikrochip-katzenklappe/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "katzenklappen",
       "secondaryIntents": [
         "transactional-support"
@@ -48474,7 +49161,7 @@
       "metaDescription": "Tractive CAT 6 Mini mit 32 g inklusive Halsband, IP68, LTE/4G, Sicherheitsverschluss und bis zu sieben Tagen Akku.",
       "canonicalRoute": "/produkt/tractive-cat-6-mini/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [
         "transactional-support"
@@ -48717,7 +49404,7 @@
       "metaDescription": "Tractive DOG 6 XL eingeordnet: rund 70 g, LTE-Live-Ortung, IP68, Gesundheits-Trends, Abo und bis zu 42 Tage Akkulaufzeit.",
       "canonicalRoute": "/produkt/tractive-dog-6-xl/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [
         "transactional-support"
@@ -48980,7 +49667,7 @@
       "metaDescription": "Tractive DOG 6 eingeordnet: 39 g, LTE-Live-Ortung, IP68, Vitalwert-Trends, Sicherheitszonen, Abo und bis zu 14 Tage Akkulaufzeit.",
       "canonicalRoute": "/produkt/tractive-dog-6/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [
         "transactional-support"
@@ -49243,7 +49930,7 @@
       "metaDescription": "Weenect XS mit 27 g, IP68, Echtzeitortung und Abo: Akku, Mobilfunk, Sicherheitszonen, Befestigung und laufende Kosten realistisch einordnen.",
       "canonicalRoute": "/produkt/weenect-xs/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [
         "transactional-support"
@@ -49507,7 +50194,7 @@
       "metaDescription": "Weenect XT mit 54,2 g, IP68 und bis zu 3 Wochen Akku: Live-Ortung, Mobilfunk, Abo, LED, Befestigung und Grenzen im Outdoor-Einsatz prüfen.",
       "canonicalRoute": "/produkt/weenect-xt/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [
         "transactional-support"
@@ -49775,7 +50462,7 @@
       "metaDescription": "Der WOPET Cube Air CA10 ist ein kompakter WLAN Futterautomat mit App Steuerung, Langsam Fütterungsmodus und flexiblem Zeitplan für Katzen und kleine Hunde.",
       "canonicalRoute": "/produkt/wopet-cube-air-ca10/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -50008,7 +50695,7 @@
       "metaDescription": "6-Liter-Futterautomat mit Kamera, App und Zwei-Wege-Audio für die Sichtkontrolle am Futterplatz.",
       "canonicalRoute": "/produkt/wopet-heritage-view-camera-feeder/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -50241,7 +50928,7 @@
       "metaDescription": "WOPET Patrol F07 Pro mit 6 Litern, 15 Mahlzeiten, 1 bis 50 Portionen, 2,4-GHz-WLAN und Batterie-Backup.",
       "canonicalRoute": "/produkt/wopet-patrol-f07-pro/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -50484,7 +51171,7 @@
       "metaDescription": "WOPET Pioneer F01 Plus im Datencheck: 7-Liter-Vorrat, lokale Zeitsteuerung, Portionierung, Stromversorgung und Betrieb ohne App.",
       "canonicalRoute": "/produkt/wopet-pioneer-f01-plus/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -50716,7 +51403,7 @@
       "metaDescription": "Xiaomi Smart Pet Food Feeder 2 mit 5 Litern, Wiegenapf, 1-g-Erfassung, App und zwei Wochen Notstrom.",
       "canonicalRoute": "/produkt/xiaomi-smart-pet-food-feeder-2/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "transactional-support"
@@ -50980,7 +51667,7 @@
       "metaDescription": "Xiaomi Smart Pet Fountain 2 mit 3 Litern, 4000-mAh-Akku, App, vierstufigem Filter und drei Modi eingeordnet.",
       "canonicalRoute": "/produkt/xiaomi-smart-pet-fountain-2/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "transactional-support"
@@ -51244,7 +51931,7 @@
       "metaDescription": "ZeroMOUSE 2.0 im Datencheck: kompatible Katzenklappen, KI-Beuteerkennung, WLAN, Strombedarf, Abmessungen und wichtige Grenzen.",
       "canonicalRoute": "/produkt/zeromouse-2-0/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "katzenklappen",
       "secondaryIntents": [
         "transactional-support"
@@ -51488,7 +52175,7 @@
       "metaDescription": "Die Pumpe im Katzentrinkbrunnen reinigen: sicher zerlegen, Rotor säubern, Fehler erkennen und leisen Durchfluss wiederherstellen.",
       "canonicalRoute": "/pumpe-katzentrinkbrunnen-reinigen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Pumpe im Katzentrinkbrunnen richtig reinigen",
@@ -51673,11 +52360,11 @@
       "metaDescription": "Wer hinter PfotenTechnik steht, wie Inhalte verantwortet werden und welche Regeln Redaktion, Empfehlungen und Finanzierung voneinander trennen.",
       "canonicalRoute": "/redaktion/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "smarte-haustiertechnik",
       "secondaryIntents": [],
       "mainEntity": "Redaktion und Unabhängigkeit",
-      "internalIncomingLinks": 115,
+      "internalIncomingLinks": 117,
       "internalOutgoingLinks": 4,
       "wordCount": 378,
       "headingCount": 8,
@@ -51780,7 +52467,7 @@
       "metaDescription": "Wie weit reicht ein Haustier-GPS? Mobilfunk ohne feste Distanzgrenze, VHF-Maximalreichweite, Funklöcher und Innenräume erklärt.",
       "canonicalRoute": "/reichweite-von-gps-trackern/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [],
       "mainEntity": "Reichweite von GPS-Trackern",
@@ -51950,7 +52637,7 @@
       "metaDescription": "Seniorenhunde sinnvoll unterstützen: Vorsorge, Gewicht, Muskeln, Futter, Bewegung, Schmerzzeichen, Zähne und ein sicheres Zuhause.",
       "canonicalRoute": "/seniorenhunde-richtig-versorgen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hundegesundheit",
       "secondaryIntents": [],
       "mainEntity": "Seniorenhunde richtig versorgen",
@@ -52203,13 +52890,13 @@
       "metaDescription": "Smarte Futterautomaten auswählen: Trocken- oder Nassfutter, App, Kamera, Ausfallsicherheit und passende spezialisierte Modellvergleiche.",
       "canonicalRoute": "/smarte-futterautomaten/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "informational"
       ],
       "mainEntity": "Smarte Futterautomaten für Hunde und Katzen",
-      "internalIncomingLinks": 143,
+      "internalIncomingLinks": 145,
       "internalOutgoingLinks": 80,
       "wordCount": 6519,
       "headingCount": 133,
@@ -53009,7 +53696,7 @@
       "metaDescription": "Welche vernetzten Helfer im Haustieralltag sinnvoll sein können und worauf Halter vor dem Kauf achten sollten.",
       "canonicalRoute": "/smarte-gadgets-fuer-hunde-und-katzen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "smarte-haustiertechnik",
       "secondaryIntents": [],
       "mainEntity": "Smarte Gadgets für Hunde und Katzen: ein erster Überblick",
@@ -53162,13 +53849,13 @@
       "metaDescription": "Smarte Haustiertechnik verstehen und sinnvoll auswählen: Gerätearten, Datenschutz, WLAN, Bluetooth, Offline-Betrieb, Kosten und Kaufcheck.",
       "canonicalRoute": "/smarte-haustiertechnik/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "smarte-haustiertechnik",
       "secondaryIntents": [
         "informational"
       ],
       "mainEntity": "Smarte Haustiertechnik – Der große Ratgeber",
-      "internalIncomingLinks": 30,
+      "internalIncomingLinks": 31,
       "internalOutgoingLinks": 47,
       "wordCount": 3217,
       "headingCount": 59,
@@ -53547,11 +54234,11 @@
       "metaDescription": "Quellen, Bewertungskriterien, Gewichtung und Aktualisierung: So ordnet PfotenTechnik Futterautomaten und Haustier-Technik ein.",
       "canonicalRoute": "/so-bewerten-wir/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "So bewertet PfotenTechnik Produkte",
-      "internalIncomingLinks": 116,
+      "internalIncomingLinks": 118,
       "internalOutgoingLinks": 19,
       "wordCount": 1428,
       "headingCount": 23,
@@ -53750,7 +54437,7 @@
       "metaDescription": "Ein Katzenbrunnen kann zum Trinken anregen, ist aber kein Muss. Vorteile, Nachteile, Hygiene, Studienlage und passende Modelle im Überblick.",
       "canonicalRoute": "/trinkbrunnen-fuer-katzen-sinnvoll/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Ist ein Trinkbrunnen für Katzen sinnvoll?",
@@ -54138,7 +54825,7 @@
       "metaDescription": "Ist ein Katzenbrunnen für Kitten sicher? Worauf bei Trinkfläche, Tank, Kabel, Stand, Reinigung und Einführung zu achten ist.",
       "canonicalRoute": "/trinkbrunnen-fuer-kitten-sicher/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Ist ein Trinkbrunnen für Kitten sicher?",
@@ -54348,7 +55035,7 @@
       "metaDescription": "Für zwei Katzen sind mehrere getrennte Wasserstellen sinnvoll. So planst du Anzahl, Standorte, Trinkbrunnen, Näpfe und Tankgröße im Mehrkatzenhaushalt.",
       "canonicalRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Trinkbrunnen für zwei oder mehr Katzen",
@@ -54571,7 +55258,7 @@
       "metaDescription": "Welcher Trinkbrunnen passt zum Hund? Größe, Trinkhöhe, Standfestigkeit, Reinigung, Filterkosten und Stromversorgung richtig vergleichen.",
       "canonicalRoute": "/trinkbrunnen-hund/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Trinkbrunnen für Hunde: Auswahl und Pflege",
@@ -54750,7 +55437,7 @@
       "metaDescription": "Katzenbrunnen für Senioren nach Zugang, Trinkhöhe, Lautstärke, Hygiene und Gesundheitsbeobachtung auswählen.",
       "canonicalRoute": "/trinkbrunnen-seniorenkatzen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Trinkbrunnen für Seniorenkatzen auswählen",
@@ -54962,7 +55649,7 @@
       "metaDescription": "Trinkbrunnen richtig auswählen: Tiergröße, Trinkfläche, Reinigung, Filter, Material, Lautstärke, Akku und Mehrtierhaushalt verständlich einordnen.",
       "canonicalRoute": "/trinkbrunnen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "informational"
@@ -55324,7 +56011,7 @@
       "metaDescription": "Trinkmenge beim Hund zuverlässig messen: 24-Stunden-Protokoll, Kontrollnapf, Futterwasser und Lösungen für mehrere Tiere.",
       "canonicalRoute": "/trinkmenge-hund-messen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "problem-solving"
@@ -55505,7 +56192,7 @@
       "metaDescription": "Trinkmenge bei Katzen messen: einfache Methode mit Messbecher, Fehlerquellen bei Brunnen und Mehrkatzenhaushalten sowie Warnzeichen.",
       "canonicalRoute": "/trinkmenge-katze-messen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Trinkmenge bei Katzen richtig messen",
@@ -55673,7 +56360,7 @@
       "metaDescription": "Was ist besser für Hunde: Trocken- oder Nassfutter? Vergleich zu Nährstoffen, Wasser, Kalorien, Zähnen, Kosten und Mischfütterung.",
       "canonicalRoute": "/trockenfutter-oder-nassfutter-hund/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hundeernaehrung",
       "secondaryIntents": [],
       "mainEntity": "Trockenfutter oder Nassfutter für Hunde: Was ist besser?",
@@ -56190,7 +56877,7 @@
       "metaDescription": "Was ist besser für Katzen: Trocken- oder Nassfutter? Der sachliche Vergleich zu Wasser, Kalorien, Zähnen, Kosten und Mischfütterung.",
       "canonicalRoute": "/trockenfutter-oder-nassfutter-katze/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Trockenfutter oder Nassfutter für Katzen? Der ehrliche Vergleich",
@@ -56937,7 +57624,7 @@
       "metaDescription": "So bleibt deine Katze im Idealgewicht: BCS prüfen, Portionen berechnen, Leckerlis einrechnen, Gewicht dokumentieren und Futterneid verhindern.",
       "canonicalRoute": "/uebergewicht-bei-katzen-vermeiden/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Übergewicht bei Katzen vermeiden",
@@ -57248,7 +57935,7 @@
       "metaDescription": "Vergleiche Futterautomaten, Hersteller und Funktionen. Finde schneller heraus, welches Produkt zu deinem Tier und deinem Alltag passt.",
       "canonicalRoute": "/vergleiche/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "informational"
@@ -57506,14 +58193,14 @@
       "metaDescription": "Fünf automatische Katzenklos nach Mindestgewicht, Einstieg, Sicherheit, Streu, App und Drei-Jahres-Kosten vergleichen.",
       "canonicalRoute": "/vergleiche/beste-automatische-katzentoiletten/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "automatische-katzentoiletten",
       "secondaryIntents": [
         "commercial-investigation",
         "transactional-support"
       ],
       "mainEntity": "Automatische Katzentoiletten im Vergleich",
-      "internalIncomingLinks": 17,
+      "internalIncomingLinks": 16,
       "internalOutgoingLinks": 16,
       "wordCount": 1320,
       "headingCount": 21,
@@ -57551,7 +58238,7 @@
         "Answer",
         "ItemList"
       ],
-      "expectedComparisonCount": 5,
+      "expectedComparisonCount": 4,
       "renderedComparisonCount": 5,
       "route": "/vergleiche/beste-automatische-katzentoiletten/",
       "collection": "comparisons",
@@ -57704,7 +58391,7 @@
       "metaDescription": "Die besten Futterautomaten für Berufstätige im Vergleich. Finde Modelle mit App, Zeitplänen und zuverlässiger Portionierung.",
       "canonicalRoute": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "commercial-investigation",
@@ -57974,14 +58661,14 @@
       "metaDescription": "Futterautomaten für Hunde vergleichen: Xiaomi, PETLIBRO, WOPET und HoneyGuardian nach Portion, Krokettengröße, Napf, Notstrom und App.",
       "canonicalRoute": "/vergleiche/beste-futterautomaten-fuer-hunde/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "commercial-investigation",
         "transactional-support"
       ],
       "mainEntity": "Beste Futterautomaten für Hunde",
-      "internalIncomingLinks": 32,
+      "internalIncomingLinks": 31,
       "internalOutgoingLinks": 27,
       "wordCount": 3086,
       "headingCount": 48,
@@ -58311,7 +58998,7 @@
       "metaDescription": "PETLIBRO, PETKIT, Xiaomi, Cat Mate, SureFeed und oneisall nach Futterart, Portionierung, Zugang, App und Ausfallsicherheit vergleichen.",
       "canonicalRoute": "/vergleiche/beste-futterautomaten-fuer-katzen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "commercial-investigation",
@@ -58660,7 +59347,7 @@
       "metaDescription": "Die besten Futterautomaten für kleine Hunde im Vergleich. Erfahre, welche Modelle sich für kleine Portionen und feste Fütterungszeiten besonders eignen.",
       "canonicalRoute": "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "commercial-investigation",
@@ -58930,7 +59617,7 @@
       "metaDescription": "Futterautomaten für mehrere Hunde oder Katzen: Futterplätze, Mikrochip-Zugang, Portionen, Futterneid und unterschiedliche Rationen richtig planen.",
       "canonicalRoute": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "commercial-investigation",
@@ -59208,14 +59895,14 @@
       "metaDescription": "PETLIBRO Polar, PetSafe FreshFeed, Catit PIXI, Cat Mate C500 und SureFeed nach Kühlung, Mahlzeiten, Hygiene und Ausfallsicherheit vergleichen.",
       "canonicalRoute": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "commercial-investigation",
         "transactional-support"
       ],
       "mainEntity": "Beste Futterautomaten für Nassfutter",
-      "internalIncomingLinks": 25,
+      "internalIncomingLinks": 26,
       "internalOutgoingLinks": 34,
       "wordCount": 5079,
       "headingCount": 85,
@@ -59736,7 +60423,7 @@
       "metaDescription": "Die besten Futterautomaten für Seniorenkatzen im Vergleich. Empfehlungen für zuverlässige Fütterung und einfache Bedienung.",
       "canonicalRoute": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "commercial-investigation",
@@ -60012,7 +60699,7 @@
       "metaDescription": "Futterautomaten für Welpen vergleichen: Welche Modelle kleine Portionen zuverlässig ausgeben und wann ein Automat noch nicht sinnvoll ist.",
       "canonicalRoute": "/vergleiche/beste-futterautomaten-fuer-welpen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "commercial-investigation",
@@ -60440,7 +61127,7 @@
       "metaDescription": "Fünf Futterautomaten für zwei Katzen vergleichen: Mikrochip-Zugang, Doppelschale, Dual-Hopper, App, Portionierung und Schutz vor Futterklau.",
       "canonicalRoute": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "commercial-investigation",
@@ -61011,7 +61698,7 @@
       "metaDescription": "Die besten Futterautomaten mit Akku oder Batterie-Backup im Vergleich. Ideal bei Stromausfällen und flexibler Aufstellung.",
       "canonicalRoute": "/vergleiche/beste-futterautomaten-mit-akku/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "commercial-investigation",
@@ -61286,7 +61973,7 @@
       "metaDescription": "Die besten Futterautomaten mit Edelstahlnapf. Empfehlungen für einfache Reinigung und hygienische Fütterung.",
       "canonicalRoute": "/vergleiche/beste-futterautomaten-mit-edelstahl-napf/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "commercial-investigation",
@@ -61564,7 +62251,7 @@
       "metaDescription": "Futterautomaten mit Kamera nach Bildqualität, Kontrolle, Offline-Verhalten, Datenschutz und tatsächlichem Mehrwert vergleichen.",
       "canonicalRoute": "/vergleiche/beste-futterautomaten-mit-kamera/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "commercial-investigation",
@@ -61982,7 +62669,7 @@
       "metaDescription": "Futterautomaten ohne WLAN nach Offline-Zuverlässigkeit, Batteriebetrieb, Futterart, Zugangskontrolle und Alltagstauglichkeit vergleichen.",
       "canonicalRoute": "/vergleiche/beste-futterautomaten-ohne-wlan/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "commercial-investigation",
@@ -62249,7 +62936,7 @@
       "metaDescription": "Die besten Futterautomaten unter 100 Euro im Vergleich. Erfahre, welche Modelle trotz kleinerem Budget überzeugen.",
       "canonicalRoute": "/vergleiche/beste-futterautomaten-unter-100-euro/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "commercial-investigation",
@@ -62522,7 +63209,7 @@
       "metaDescription": "GPS-Tracker für Hunde nach Tiergröße, Übertragung, Akku, Abo, Wasserschutz und Einsatzgebiet vergleichen.",
       "canonicalRoute": "/vergleiche/beste-gps-tracker-fuer-hunde/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [
         "commercial-investigation",
@@ -62813,7 +63500,7 @@
       "metaDescription": "GPS-Tracker für Katzen nach Passform, Sicherheitshalsband, Gewicht, Akku, Abo, Wasserschutz und Ortung vergleichen.",
       "canonicalRoute": "/vergleiche/beste-gps-tracker-fuer-katzen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [
         "commercial-investigation",
@@ -63075,37 +63762,38 @@
     {
       "sourceFile": "apps/pfotentechnik/src/content/comparisons/beste-haustierkameras.md",
       "pageType": "comparison",
-      "title": "Haustierkameras im Vergleich: 3 Klassen",
+      "title": "Haustierkameras 2026: Typ, Cloud & Abo vergleichen",
       "h1": "Haustierkameras im Vergleich",
       "h1Count": 1,
-      "metaDescription": "PETLIBRO Scout, Furbo 360 und Enabot EBO Air 2 nach Klasse, Speicher, Abo, Datenschutz und Kosten vergleichen.",
+      "metaDescription": "PETLIBRO Scout, Furbo Mini 360 und Enabot ROLA Mini nach Kameratyp, Speicher, Cloud, Abo, Interaktion und Raumabdeckung vergleichen.",
       "canonicalRoute": "/vergleiche/beste-haustierkameras/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "haustierkameras",
       "secondaryIntents": [
         "commercial-investigation",
         "transactional-support"
       ],
       "mainEntity": "Haustierkameras im Vergleich",
-      "internalIncomingLinks": 9,
-      "internalOutgoingLinks": 12,
-      "wordCount": 1088,
-      "headingCount": 20,
+      "internalIncomingLinks": 12,
+      "internalOutgoingLinks": 14,
+      "wordCount": 1240,
+      "headingCount": 21,
       "headings": [
         "Haustierkameras im Vergleich",
         "PETLIBRO Scout Smart Camera",
         "Welche Empfehlung passt zu dir?",
         "Wähle bis zu 3 Modelle",
         "Darauf solltest du bei der Auswahl achten",
+        "Auswahlreihenfolge 2026",
         "So ist diese Seite einzuordnen",
         "Welche Geräteklasse passt zu deinen Anforderungen?",
         "Was ist jetzt sinnvoll?",
         "Vom Vergleich zur Entscheidung",
         "Häufige Fragen",
         "Das könnte dich auch interessieren",
-        "Furbo 360° Hundekamera",
-        "Enabot EBO Air 2",
+        "Furbo Mini 360",
+        "Enabot ROLA Mini",
         "Wähle mindestens zwei Modelle",
         "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten",
         "Weenect XT GPS-Tracker",
@@ -63129,16 +63817,16 @@
       "renderedComparisonCount": 3,
       "route": "/vergleiche/beste-haustierkameras/",
       "collection": "comparisons",
-      "metaTitle": "Haustierkameras im Vergleich: 3 Klassen",
+      "metaTitle": "Haustierkameras 2026: Typ, Cloud & Abo vergleichen",
       "canonical": "https://pfotentechnik.de/vergleiche/beste-haustierkameras/",
       "publishedAt": "2026-08-06",
-      "updatedAt": "2026-08-06",
+      "updatedAt": "2026-08-15",
       "author": "PfotenTechnik Redaktion",
       "animal": "both",
       "productCategory": "",
       "audience": "both",
       "character": "commercial",
-      "linkDepth": 2,
+      "linkDepth": 1,
       "headingStructure": [
         {
           "level": 1,
@@ -63159,6 +63847,10 @@
         {
           "level": 2,
           "text": "Darauf solltest du bei der Auswahl achten"
+        },
+        {
+          "level": 2,
+          "text": "Auswahlreihenfolge 2026"
         },
         {
           "level": 2,
@@ -63186,11 +63878,11 @@
         },
         {
           "level": 3,
-          "text": "Furbo 360° Hundekamera"
+          "text": "Furbo Mini 360"
         },
         {
           "level": 3,
-          "text": "Enabot EBO Air 2"
+          "text": "Enabot ROLA Mini"
         },
         {
           "level": 3,
@@ -63222,13 +63914,16 @@
         }
       ],
       "recommendationTypes": [
-        "top-recommendation"
+        "top-recommendation",
+        "alternatives"
       ],
       "relatedProducts": [
         "/produkt/petlibro-scout-smart-camera/",
+        "/produkt/furbo-mini-360/",
+        "/produkt/enabot-rola-mini/",
+        "/produkt/weenect-xt/",
         "/produkt/furbo-360-hundekamera/",
-        "/produkt/enabot-ebo-air-2/",
-        "/produkt/weenect-xt/"
+        "/produkt/enabot-ebo-air-2/"
       ],
       "relatedComparisons": [
         "/vergleiche/futterautomat-mit-app/"
@@ -63271,7 +63966,7 @@
       "metaDescription": "Mikrochip-Katzenklappen nach Zugang, Mehrkatzen-Rechten, App, Strom, Einbau und Passform vergleichen.",
       "canonicalRoute": "/vergleiche/beste-mikrochip-katzenklappen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "katzenklappen",
       "secondaryIntents": [
         "commercial-investigation",
@@ -63476,7 +64171,7 @@
       "metaDescription": "Sechs Hundetrinkbrunnen vergleichen: Modelle bis knapp 8 Liter, breite Trinkflächen, Akku, Edelstahl, Reinigung und passende Bauformen für kleine bis große Hunde.",
       "canonicalRoute": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "commercial-investigation",
@@ -63755,7 +64450,7 @@
       "metaDescription": "Neun Katzenbrunnen im Vergleich: Netzbetrieb, Akku, Edelstahl, UVC, Mehrkatzen-Tracking, Filterkosten und Reinigungsaufwand transparent eingeordnet.",
       "canonicalRoute": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "commercial-investigation",
@@ -64041,7 +64736,7 @@
       "metaDescription": "Futterautomat für große Hunde auswählen: Ausgabemenge, Krokettengröße, Napfhöhe, Standfestigkeit und Betreuung richtig prüfen.",
       "canonicalRoute": "/vergleiche/futterautomat-fuer-grosse-hunde/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "commercial-investigation",
@@ -64319,7 +65014,7 @@
       "metaDescription": "Futterautomat gegen Schlingen im Vergleich. Erfahre, welche Modelle kleinere Portionen zuverlässig ausgeben und wann ein Slow Feeder sinnvoller ist.",
       "canonicalRoute": "/vergleiche/futterautomat-gegen-schlingen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "commercial-investigation",
@@ -64588,7 +65283,7 @@
       "metaDescription": "Futterautomat mit App gesucht? Erfahre, welche Funktionen wirklich wichtig sind, wie Offline-Betrieb funktioniert und welche Modelle sinnvoll sind.",
       "canonicalRoute": "/vergleiche/futterautomat-mit-app/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "commercial-investigation",
@@ -64989,7 +65684,7 @@
       "metaDescription": "GPS-Tracker nach Akku vergleichen: sechs Wochen, drei Wochen oder Tage – mit Modus, Gewicht, Abo und Tier-Fit.",
       "canonicalRoute": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [
         "commercial-investigation",
@@ -65242,7 +65937,7 @@
       "metaDescription": "GPS ohne Mobilfunkabo: Garmin T 20 und TT 25 mit VHF, Handgerät, Reichweite, Akku und Gesamtkosten.",
       "canonicalRoute": "/vergleiche/gps-tracker-ohne-abo/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [
         "commercial-investigation",
@@ -65477,7 +66172,7 @@
       "metaDescription": "App-Katzenklappen und Beuteerkennung nach Systemrolle, Hub, WLAN, Strom und Ausfallverhalten vergleichen.",
       "canonicalRoute": "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "katzenklappen",
       "secondaryIntents": [
         "commercial-investigation",
@@ -65678,7 +66373,7 @@
       "metaDescription": "Kleine Katzen-GPS vergleichen: 27 g, 31 g inklusive Halsband, 33 g, Abmessungen, Sicherheitsverschluss, Akku und Abo.",
       "canonicalRoute": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [
         "commercial-investigation",
@@ -65921,7 +66616,7 @@
       "metaDescription": "GPS-Tracker-Abo verständlich: laufende Technik, Tarifmodelle, Gesamtkosten und echte Alternativen ohne Mobilfunkgebühr.",
       "canonicalRoute": "/warum-brauchen-gps-tracker-ein-abo/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [],
       "mainEntity": "Warum benötigen viele Tracker ein Abo?",
@@ -66089,7 +66784,7 @@
       "metaDescription": "Hund morgens oder abends füttern? Erfahre, wie oft Hunde fressen sollten, wann Fütterungszeiten sinnvoll sind und wie ein Tagesplan aussieht.",
       "canonicalRoute": "/warum-hunde-feste-fuetterungszeiten-brauchen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hundeernaehrung",
       "secondaryIntents": [],
       "mainEntity": "Wann und wie oft sollte man einen Hund füttern?",
@@ -66338,7 +67033,7 @@
       "metaDescription": "Katzen und fließendes Wasser: mögliche Gründe, Studienlage, Trinkbrunnen und praktische Tipps für eine bessere Wasseraufnahme.",
       "canonicalRoute": "/warum-katzen-fliessendes-wasser-trinken/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "katzengesundheit",
       "secondaryIntents": [],
       "mainEntity": "Warum Katzen lieber fließendes Wasser trinken – und warum das nicht für jede Katze gilt",
@@ -66524,7 +67219,7 @@
       "metaDescription": "Warum Hunde hastig fressen, wie kleinere Mahlzeiten und Futterspiele helfen und wann tierärztlicher Rat nötig ist.",
       "canonicalRoute": "/warum-schlingt-mein-hund/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [
         "problem-solving"
@@ -66699,7 +67394,7 @@
       "metaDescription": "Richtiger Standort für Wassernapf und Trinkbrunnen: Abstand, Ruhe, mehrere Katzen und Senioren.",
       "canonicalRoute": "/wasserstelle-katze-richtiger-standort/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "katzenhaltung",
       "secondaryIntents": [],
       "mainEntity": "Wo sollte das Wasser für Katzen stehen?",
@@ -66880,7 +67575,7 @@
       "metaDescription": "Portionsgröße am Futterautomaten messen und berechnen – mit Kalibrierung, Rechenbeispielen, Messprotokoll und Fehlerdiagnose.",
       "canonicalRoute": "/welche-portionsgroesse-ist-richtig/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Futterautomat richtig einstellen: Portionsgröße messen und berechnen",
@@ -67388,7 +68083,7 @@
       "metaDescription": "Futterautomat auswählen in fünf Schritten: Tier, Futterart, Portion, Mehrtierhaushalt und Technik prüfen und den passenden Vergleich öffnen.",
       "canonicalRoute": "/welcher-futterautomat-ist-der-richtige/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Welcher Futterautomat passt zu mir? Auswahlhilfe in 5 Schritten",
@@ -67776,7 +68471,7 @@
       "metaDescription": "Wie oft und wie viel sollte ein Welpe fressen? Welpenfutter auswählen, Tagesration berechnen, Wachstum kontrollieren und Fehler vermeiden.",
       "canonicalRoute": "/welpen-richtig-fuettern/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "hundeernaehrung",
       "secondaryIntents": [],
       "mainEntity": "Welpen richtig füttern",
@@ -68068,7 +68763,7 @@
       "metaDescription": "So funktionieren Haustier-GPS-Tracker: Position bestimmen, übertragen und anzeigen – inklusive Mobilfunk, VHF, Live-Modus und Fehlerkette.",
       "canonicalRoute": "/wie-funktionieren-gps-tracker/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [],
       "mainEntity": "Wie funktionieren GPS-Tracker?",
@@ -68260,7 +68955,7 @@
       "metaDescription": "So funktionieren Futterautomaten: Vorrat, Dosierung, Zeitplan, App, Notstrom und Reinigung bei Modellen für Hunde und Katzen.",
       "canonicalRoute": "/wie-funktioniert-ein-futterautomat/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Wie funktioniert ein Futterautomat?",
@@ -68478,7 +69173,7 @@
       "metaDescription": "Wie genau ist Haustier-GPS? Faktoren, typische Abweichungen, Aktualisierungsverzug und richtiges Lesen der Karte.",
       "canonicalRoute": "/wie-genau-sind-gps-tracker/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "gps-tracker",
       "secondaryIntents": [],
       "mainEntity": "Wie genau sind GPS-Tracker?",
@@ -68655,7 +69350,7 @@
       "metaDescription": "Wie groß muss ein Futterautomat sein? Kapazität aus Tagesration, Tierzahl, Reichweite und Gramm pro Liter berechnen – mit Tabelle.",
       "canonicalRoute": "/wie-gross-sollte-ein-futterautomat-sein/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Wie groß sollte ein Futterautomat sein? Kapazität richtig berechnen",
@@ -69230,7 +69925,7 @@
       "metaDescription": "Futterpuzzles, Kameras und automatische Spielzeuge: sinnvoller Einsatz, Sicherheit und Grenzen technischer Beschäftigung.",
       "canonicalRoute": "/wie-kann-technik-gegen-langeweile-helfen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "tierbeschaeftigung",
       "secondaryIntents": [],
       "mainEntity": "Wie kann Technik gegen Langeweile bei Haustieren helfen?",
@@ -69418,7 +70113,7 @@
       "metaDescription": "Wie lange bleibt Trockenfutter frisch? Herstellerfristen einordnen, Verbrauchsdauer berechnen und Futter in Originalbeutel, Box oder Automat lagern.",
       "canonicalRoute": "/wie-lange-bleibt-trockenfutter-frisch/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Wie lange bleibt Trockenfutter frisch? Lagerung, Fristen und Rechner",
@@ -69989,7 +70684,7 @@
       "metaDescription": "Motorbrummen und fallende Kroketten: Lautstärke von Futterautomaten beurteilen und Hund oder Katze behutsam gewöhnen.",
       "canonicalRoute": "/wie-laut-sind-automatische-futterautomaten/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Wie laut sind automatische Futterautomaten?",
@@ -70184,7 +70879,7 @@
       "metaDescription": "Wasserbedarf beim Hund berechnen: Richtwert nach Gewicht, Wasser aus Nassfutter und Warnzeichen für zu wenig oder zu viel Trinken.",
       "canonicalRoute": "/wie-viel-wasser-braucht-ein-hund/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Wie viel Wasser braucht ein Hund am Tag?",
@@ -70362,7 +71057,7 @@
       "metaDescription": "Eine Katze braucht grob 50–60 ml Wasser je kg Körpergewicht. So zählen Nassfutter, Hitze und Aktivität mit – plus Warnzeichen.",
       "canonicalRoute": "/wie-viel-wasser-braucht-eine-katze/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "problem-solving"
@@ -70672,7 +71367,7 @@
       "metaDescription": "Wie oft Hunde füttern? Mahlzeitenzahl, Tagesration, Welpen, erwachsene Hunde, Senioren und Futterautomaten fachlich eingeordnet.",
       "canonicalRoute": "/wie-viele-mahlzeiten-hund/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Wie viele Mahlzeiten braucht ein Hund?",
@@ -70879,7 +71574,7 @@
       "metaDescription": "Wie oft Katzen füttern? Kleine Mahlzeiten, Tagesration, Automaten, Mehrkatzenhaushalt und besondere Lebensphasen fachlich eingeordnet.",
       "canonicalRoute": "/wie-viele-mahlzeiten-katze/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Wie viele Mahlzeiten braucht eine Katze?",
@@ -71081,7 +71776,7 @@
       "metaDescription": "Eine Katze: zwei Wasserstellen. Zwei Katzen: drei. So verteilst du Wassernäpfe und Katzenbrunnen sinnvoll über Räume und Etagen.",
       "canonicalRoute": "/wie-viele-wasserstellen-katze/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Wie viele Wasserstellen braucht eine Katze?",
@@ -71398,7 +72093,7 @@
       "metaDescription": "Ratgeber, Vergleiche und Kaufberatung rund um smarte Haustiertechnik für Hunde und Katzen.",
       "canonicalRoute": "/wissen/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "smarte-haustiertechnik",
       "secondaryIntents": [
         "informational"
@@ -71877,7 +72572,7 @@
       "metaDescription": "So erkennen Sie möglichen Flüssigkeitsmangel bei Katzen und erfahren, wann eine tierärztliche Untersuchung nötig ist.",
       "canonicalRoute": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
       "indexable": true,
-      "inSitemap": true,
+      "inSitemap": false,
       "cluster": "trinkbrunnen",
       "secondaryIntents": [
         "problem-solving"

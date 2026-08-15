@@ -1,15 +1,15 @@
 {
   "version": "25.3.6",
-  "generatedAt": "2026-08-06T12:51:26.502Z",
+  "generatedAt": "2026-08-15T20:33:04.167Z",
   "summary": {
-    "products": 80,
+    "products": 85,
     "blocked": 0,
-    "needsWork": 9,
-    "good": 0,
-    "strong": 71,
+    "needsWork": 10,
+    "good": 1,
+    "strong": 74,
     "errors": 0,
-    "warnings": 35,
-    "info": 141
+    "warnings": 40,
+    "info": 146
   },
   "products": [
     {
@@ -258,55 +258,6 @@
       ]
     },
     {
-      "slug": "petkit-purobot-max-pro-2",
-      "file": "apps/pfotentechnik/src/content/products/petkit-purobot-max-pro-2.md",
-      "category": "{ key:",
-      "score": 60,
-      "status": "needs-work",
-      "metrics": {
-        "specs": 0,
-        "strengths": 0,
-        "weaknesses": 0,
-        "faq": 0,
-        "evidenceCount": 1,
-        "communityInsights": 0,
-        "decisionFacts": 0,
-        "purchaseMistakes": 0
-      },
-      "findings": [
-        {
-          "severity": "warning",
-          "code": "SPECS_THIN",
-          "message": "Nur 0 technische Daten hinterlegt.",
-          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
-        },
-        {
-          "severity": "warning",
-          "code": "STRENGTHS_THIN",
-          "message": "Nur 0 Stärken hinterlegt.",
-          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
-        },
-        {
-          "severity": "warning",
-          "code": "WEAKNESSES_MISSING",
-          "message": "Keine klare Schwäche hinterlegt.",
-          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
-        },
-        {
-          "severity": "warning",
-          "code": "EVIDENCE_THIN",
-          "message": "Nur 1 Evidenzarten hinterlegt.",
-          "recommendation": "Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen."
-        },
-        {
-          "severity": "info",
-          "code": "COMMUNITY_EMPTY",
-          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
-          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
-        }
-      ]
-    },
-    {
       "slug": "petsafe-mikrochip-katzenklappe",
       "file": "apps/pfotentechnik/src/content/products/petsafe-mikrochip-katzenklappe.md",
       "category": "key:",
@@ -405,8 +356,8 @@
       ]
     },
     {
-      "slug": "petlibro-scout-smart-camera",
-      "file": "apps/pfotentechnik/src/content/products/petlibro-scout-smart-camera.md",
+      "slug": "enabot-rola-mini",
+      "file": "apps/pfotentechnik/src/content/products/enabot-rola-mini.md",
       "category": "{ key:",
       "score": 70,
       "status": "needs-work",
@@ -444,6 +395,160 @@
           "code": "COMMUNITY_EMPTY",
           "message": "Noch keine strukturierten Community-Muster hinterlegt.",
           "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "furbo-mini-360",
+      "file": "apps/pfotentechnik/src/content/products/furbo-mini-360.md",
+      "category": "{ key:",
+      "score": 70,
+      "status": "needs-work",
+      "metrics": {
+        "specs": 0,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 2,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 0 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-luma-smart-litter-box",
+      "file": "apps/pfotentechnik/src/content/products/petlibro-luma-smart-litter-box.md",
+      "category": "{ key:",
+      "score": 70,
+      "status": "needs-work",
+      "metrics": {
+        "specs": 0,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 2,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 0 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "neakasa-m1-lite",
+      "file": "apps/pfotentechnik/src/content/products/neakasa-m1-lite.md",
+      "category": "key:",
+      "score": 80,
+      "status": "good",
+      "metrics": {
+        "specs": 0,
+        "strengths": 11,
+        "weaknesses": 8,
+        "faq": 16,
+        "evidenceCount": 3,
+        "communityInsights": 0,
+        "decisionFacts": 6,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 0 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "FAQ_EXCESSIVE",
+          "message": "16 FAQ-Einträge können die Produktseite unnötig verlängern.",
+          "recommendation": "Nur echte Kauffragen behalten."
+        }
+      ]
+    },
+    {
+      "slug": "devoko-90l-automatisches-katzenklo",
+      "file": "apps/pfotentechnik/src/content/products/devoko-90l-automatisches-katzenklo.md",
+      "category": "key:",
+      "score": 90,
+      "status": "strong",
+      "metrics": {
+        "specs": 32,
+        "strengths": 14,
+        "weaknesses": 10,
+        "faq": 22,
+        "evidenceCount": 4,
+        "communityInsights": 0,
+        "decisionFacts": 8,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "FAQ_EXCESSIVE",
+          "message": "22 FAQ-Einträge können die Produktseite unnötig verlängern.",
+          "recommendation": "Nur echte Kauffragen behalten."
         }
       ]
     },
@@ -613,7 +718,7 @@
         "strengths": 6,
         "weaknesses": 4,
         "faq": 4,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 6,
         "purchaseMistakes": 0
@@ -675,7 +780,7 @@
         "strengths": 6,
         "weaknesses": 4,
         "faq": 2,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 5,
         "purchaseMistakes": 0
@@ -737,7 +842,7 @@
         "strengths": 5,
         "weaknesses": 3,
         "faq": 3,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 6,
         "purchaseMistakes": 0
@@ -830,7 +935,7 @@
         "strengths": 5,
         "weaknesses": 4,
         "faq": 4,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 6,
         "purchaseMistakes": 0
@@ -1202,7 +1307,7 @@
         "strengths": 4,
         "weaknesses": 4,
         "faq": 3,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 6,
         "purchaseMistakes": 0
@@ -1233,7 +1338,7 @@
         "strengths": 6,
         "weaknesses": 4,
         "faq": 3,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 6,
         "purchaseMistakes": 0
@@ -1264,7 +1369,7 @@
         "strengths": 6,
         "weaknesses": 4,
         "faq": 3,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 6,
         "purchaseMistakes": 0
@@ -1440,6 +1545,31 @@
       ]
     },
     {
+      "slug": "petkit-purobot-max-pro-2",
+      "file": "apps/pfotentechnik/src/content/products/petkit-purobot-max-pro-2.md",
+      "category": "key:",
+      "score": 100,
+      "status": "strong",
+      "metrics": {
+        "specs": 15,
+        "strengths": 3,
+        "weaknesses": 3,
+        "faq": 0,
+        "evidenceCount": 2,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
       "slug": "petkit-yumshare-dual-hopper",
       "file": "apps/pfotentechnik/src/content/products/petkit-yumshare-dual-hopper.md",
       "category": "key: futterautomaten",
@@ -1481,7 +1611,7 @@
         "strengths": 8,
         "weaknesses": 6,
         "faq": 10,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 6,
         "purchaseMistakes": 0
@@ -1543,7 +1673,7 @@
         "strengths": 12,
         "weaknesses": 9,
         "faq": 10,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 6,
         "purchaseMistakes": 0
@@ -1574,7 +1704,7 @@
         "strengths": 6,
         "weaknesses": 4,
         "faq": 4,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 6,
         "purchaseMistakes": 0
@@ -1655,7 +1785,7 @@
         "strengths": 6,
         "weaknesses": 4,
         "faq": 4,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 6,
         "purchaseMistakes": 0
@@ -1686,7 +1816,7 @@
         "strengths": 6,
         "weaknesses": 4,
         "faq": 4,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 6,
         "purchaseMistakes": 0
@@ -1717,7 +1847,7 @@
         "strengths": 6,
         "weaknesses": 4,
         "faq": 3,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 6,
         "purchaseMistakes": 0
@@ -1773,7 +1903,7 @@
         "strengths": 6,
         "weaknesses": 4,
         "faq": 4,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 6,
         "purchaseMistakes": 0
@@ -1804,7 +1934,7 @@
         "strengths": 6,
         "weaknesses": 4,
         "faq": 4,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 6,
         "purchaseMistakes": 0
@@ -1835,7 +1965,7 @@
         "strengths": 6,
         "weaknesses": 4,
         "faq": 4,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 6,
         "purchaseMistakes": 0
@@ -1897,7 +2027,7 @@
         "strengths": 7,
         "weaknesses": 6,
         "faq": 8,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 6,
         "purchaseMistakes": 0
@@ -1909,6 +2039,31 @@
           "message": "Keine expliziten Fehlkauf-Szenarien hinterlegt.",
           "recommendation": "Für priorisierte Produkte ein bis drei typische Fehlkäufe ergänzen."
         },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-scout-smart-camera",
+      "file": "apps/pfotentechnik/src/content/products/petlibro-scout-smart-camera.md",
+      "category": "key:",
+      "score": 100,
+      "status": "strong",
+      "metrics": {
+        "specs": 8,
+        "strengths": 3,
+        "weaknesses": 3,
+        "faq": 0,
+        "evidenceCount": 2,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
         {
           "severity": "info",
           "code": "COMMUNITY_EMPTY",
@@ -1990,7 +2145,7 @@
         "strengths": 6,
         "weaknesses": 5,
         "faq": 2,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 4,
         "purchaseMistakes": 0
@@ -2048,13 +2203,13 @@
       "score": 100,
       "status": "strong",
       "metrics": {
-        "specs": 11,
-        "strengths": 5,
-        "weaknesses": 4,
-        "faq": 5,
+        "specs": 15,
+        "strengths": 10,
+        "weaknesses": 7,
+        "faq": 9,
         "evidenceCount": 2,
         "communityInsights": 0,
-        "decisionFacts": 5,
+        "decisionFacts": 7,
         "purchaseMistakes": 0
       },
       "findings": [
@@ -2077,7 +2232,7 @@
         "strengths": 7,
         "weaknesses": 5,
         "faq": 2,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 5,
         "purchaseMistakes": 0
@@ -2108,7 +2263,7 @@
         "strengths": 5,
         "weaknesses": 4,
         "faq": 4,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 6,
         "purchaseMistakes": 0
@@ -2170,7 +2325,7 @@
         "strengths": 5,
         "weaknesses": 4,
         "faq": 5,
-        "evidenceCount": 2,
+        "evidenceCount": 3,
         "communityInsights": 0,
         "decisionFacts": 4,
         "purchaseMistakes": 0
@@ -2450,7 +2605,7 @@
         "strengths": 6,
         "weaknesses": 4,
         "faq": 4,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 6,
         "purchaseMistakes": 0
@@ -2543,7 +2698,7 @@
         "strengths": 6,
         "weaknesses": 4,
         "faq": 3,
-        "evidenceCount": 3,
+        "evidenceCount": 2,
         "communityInsights": 0,
         "decisionFacts": 6,
         "purchaseMistakes": 0

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-11T11:26:56.533Z",
+  "generatedAt": "2026-08-15T20:33:05.373Z",
   "summary": {
-    "products": 82,
+    "products": 85,
     "covered": 82,
     "complete": 53,
     "partial": 29,
-    "missing": 0
+    "missing": 3
   },
   "rows": [
     {
@@ -119,6 +119,20 @@
       "missingParts": []
     },
     {
+      "slug": "enabot-rola-mini",
+      "file": "src/content/products/enabot-rola-mini.md",
+      "status": "missing",
+      "hasExternal": false,
+      "professional": 0,
+      "userSources": 0,
+      "consensus": 0,
+      "missingParts": [
+        "professionalReviews",
+        "userReviews",
+        "consensus"
+      ]
+    },
+    {
       "slug": "furbo-360-hundekamera",
       "file": "src/content/products/furbo-360-hundekamera.md",
       "status": "complete",
@@ -127,6 +141,20 @@
       "userSources": 1,
       "consensus": 2,
       "missingParts": []
+    },
+    {
+      "slug": "furbo-mini-360",
+      "file": "src/content/products/furbo-mini-360.md",
+      "status": "missing",
+      "hasExternal": false,
+      "professional": 0,
+      "userSources": 0,
+      "consensus": 0,
+      "missingParts": [
+        "professionalReviews",
+        "userReviews",
+        "consensus"
+      ]
     },
     {
       "slug": "garmin-alpha-t-20",
@@ -613,6 +641,20 @@
       "userSources": 1,
       "consensus": 2,
       "missingParts": []
+    },
+    {
+      "slug": "petlibro-luma-smart-litter-box",
+      "file": "src/content/products/petlibro-luma-smart-litter-box.md",
+      "status": "missing",
+      "hasExternal": false,
+      "professional": 0,
+      "userSources": 0,
+      "consensus": 0,
+      "missingParts": [
+        "professionalReviews",
+        "userReviews",
+        "consensus"
+      ]
     },
     {
       "slug": "petlibro-one-rfid-smart-feeder",

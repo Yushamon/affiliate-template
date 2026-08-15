@@ -1,12 +1,12 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-08-15T18:00:46.075Z
+Erstellt: 2026-08-15T20:33:11.384Z
 
 ## Ergebnis
 
-- Dokumente: 218
-- Linkdefinitionen: 484
-- Simulierte automatische Links: 499
+- Dokumente: 221
+- Linkdefinitionen: 489
+- Simulierte automatische Links: 505
 - Fehler: 0
 - Warnungen: 6
 - Strict-kritisch: 0
@@ -33,7 +33,7 @@ Erstellt: 2026-08-15T18:00:46.075Z
 
 ## Tatsächlich simulierte Anchor-Texte
 
-- /automatische-katzentoiletten/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
+- /automatische-katzentoiletten/ → /hersteller/petlibro/: „PETLIBRO“
 - /automatische-katzentoiletten/ → /hersteller/neakasa/: „Neakasa“
 - /automatische-katzentoiletten/ → /hersteller/devoko/: „Devoko“
 - /automatische-katzentoiletten/ → /hersteller/petkit/: „PETKIT“
@@ -276,6 +276,7 @@ Erstellt: 2026-08-15T18:00:46.075Z
 - /produkt/devoko-90l-automatisches-katzenklo/ → /hersteller/neakasa/: „Neakasa“
 - /produkt/devoko-90l-automatisches-katzenklo/ → /hersteller/whisker/: „Whisker“
 - /produkt/devoko-90l-automatisches-katzenklo/ → /hersteller/devoko/: „Devoko“
+- /produkt/furbo-mini-360/ → /hersteller/furbo/: „Furbo“
 - /produkt/garmin-alpha-t-20/ → /vergleiche/gps-tracker-ohne-abo/: „GPS-Tracker ohne Abo“
 - /produkt/garmin-alpha-t-20/ → /gps-tracker/: „Haustiertracker“
 - /produkt/garmin-alpha-t-20/ → /hersteller/garmin/: „Garmin“
@@ -333,6 +334,7 @@ Erstellt: 2026-08-15T18:00:46.075Z
 - /produkt/petkit-fresh-element-solo/ → /smarte-futterautomaten/: „Futterautomaten“
 - /produkt/petkit-fresh-element-solo/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
 - /produkt/petkit-fresh-element-solo/ → /hersteller/petkit/: „PETKIT“
+- /produkt/petkit-purobot-max-pro-2/ → /hersteller/petkit/: „PETKIT“
 - /produkt/petkit-yumshare-dual-hopper/ → /smarte-futterautomaten/: „Futterautomat“
 - /produkt/petkit-yumshare-dual-hopper/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrkatzenhaushalt“
 - /produkt/petkit-yumshare-dual-hopper/ → /hersteller/petkit/: „PETKIT“
@@ -356,6 +358,7 @@ Erstellt: 2026-08-15T18:00:46.075Z
 - /produkt/petlibro-granary-camera-feeder/ → /hersteller/petlibro/: „PETLIBRO“
 - /produkt/petlibro-granary-dual-feeder/ → /hersteller/petlibro/: „PETLIBRO“
 - /produkt/petlibro-granary-wifi-feeder/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/petlibro-luma-smart-litter-box/ → /hersteller/petlibro/: „PETLIBRO“
 - /produkt/petlibro-one-rfid-smart-feeder/ → /smarte-futterautomaten/: „automatische Fütterung“
 - /produkt/petlibro-one-rfid-smart-feeder/ → /hersteller/petlibro/: „PETLIBRO“
 - /produkt/petlibro-polar-wet-food-feeder/ → /hersteller/petlibro/: „PETLIBRO“
@@ -408,8 +411,11 @@ Erstellt: 2026-08-15T18:00:46.075Z
 - /produkt/xiaomi-smart-pet-fountain-2/ → /hersteller/xiaomi/: „Xiaomi“
 - /produkt/zeromouse-2-0/ → /hersteller/petsafe/: „PetSafe“
 - /produkt/zeromouse-2-0/ → /hersteller/zeromouse/: „ZeroMOUSE“
+- /vergleiche/beste-automatische-katzentoiletten/ → /hersteller/petlibro/: „PETLIBRO“
 - /vergleiche/beste-automatische-katzentoiletten/ → /hersteller/neakasa/: „Neakasa“
+- /vergleiche/beste-automatische-katzentoiletten/ → /hersteller/whisker/: „Whisker“
 - /vergleiche/beste-automatische-katzentoiletten/ → /hersteller/devoko/: „Devoko“
+- /vergleiche/beste-automatische-katzentoiletten/ → /hersteller/petkit/: „PETKIT“
 - /vergleiche/beste-futterautomaten-fuer-berufstaetige/ → /produkt/xiaomi-smart-pet-food-feeder-2/: „Xiaomi Smart Pet Food Feeder 2“
 - /vergleiche/beste-futterautomaten-fuer-berufstaetige/ → /hersteller/petsafe/: „PetSafe“
 - /vergleiche/beste-futterautomaten-fuer-berufstaetige/ → /hersteller/petlibro/: „PETLIBRO“

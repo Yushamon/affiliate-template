@@ -1,20 +1,20 @@
 # Comparison Data Platform Audit
 
-Erstellt: 2026-08-11T11:29:10.996Z
+Erstellt: 2026-08-15T20:33:06.835Z
 
 **Status: BESTANDEN**
 
 - Vergleiche: 28 (Mindestbestand 26)
-- Quellabdeckung: 89 %
+- Quellabdeckung: 89.1 %
 - öffentlich gerenderte Abdeckung: 100 %
-- alte values-Felder: 605
+- alte values-Felder: 615
 - bewusste Overrides: 218
 
 ## Vergleichsseiten
 
 | Vergleich | Items | Kriterien sichtbar | ausgeblendet | Status |
 |---|---:|---:|---:|---|
-| `beste-automatische-katzentoiletten` | 5 | 7 | 0 | OK |
+| `beste-automatische-katzentoiletten` | 4 | 12 | 0 | OK |
 | `beste-futterautomaten-fuer-berufstaetige` | 3 | 3 | 3 | OK |
 | `beste-futterautomaten-fuer-hunde` | 4 | 10 | 0 | OK |
 | `beste-futterautomaten-fuer-katzen` | 8 | 10 | 0 | OK |
@@ -31,7 +31,7 @@ Erstellt: 2026-08-11T11:29:10.996Z
 | `beste-futterautomaten-unter-100-euro` | 3 | 3 | 5 | OK |
 | `beste-gps-tracker-fuer-hunde` | 6 | 4 | 0 | OK |
 | `beste-gps-tracker-fuer-katzen` | 3 | 8 | 0 | OK |
-| `beste-haustierkameras` | 3 | 7 | 0 | OK |
+| `beste-haustierkameras` | 3 | 6 | 0 | OK |
 | `beste-mikrochip-katzenklappen` | 7 | 7 | 0 | OK |
 | `beste-trinkbrunnen-fuer-hunde` | 6 | 7 | 0 | OK |
 | `beste-trinkbrunnen-fuer-katzen` | 9 | 7 | 0 | OK |

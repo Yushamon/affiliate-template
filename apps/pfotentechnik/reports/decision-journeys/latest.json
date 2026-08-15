@@ -1,8 +1,8 @@
 {
   "version": "2.0.0",
-  "generatedAt": "2026-08-15T18:00:31.017Z",
+  "generatedAt": "2026-08-15T20:33:27.961Z",
   "summary": {
-    "documents": 159,
+    "documents": 162,
     "technicalErrors": 0,
     "editorialWarnings": 138
   },
@@ -2071,19 +2071,19 @@
       "source": "frontmatter",
       "steps": [
         {
-          "href": "/produkt/litter-robot-5-pro/",
+          "href": "/produkt/neakasa-m1-lite/",
           "kind": "Produkt",
-          "label": "Litter-Robot 5 Pro im Detail prüfen"
+          "label": "Neakasa M1 Lite im Detail prüfen"
         },
         {
-          "href": "/produkt/petkit-purobot-max-pro-2/",
+          "href": "/produkt/devoko-90l-automatisches-katzenklo/",
           "kind": "Produkt",
-          "label": "PETKIT PUROBOT MAX PRO 2 im Detail prüfen"
+          "label": "Devoko 90L Automatisches Katzenklo im Detail prüfen"
         },
         {
-          "href": "/produkt/neakasa-m1-plus/",
+          "href": "/produkt/petlibro-luma-smart-litter-box/",
           "kind": "Produkt",
-          "label": "Neakasa M1 Plus im Detail prüfen"
+          "label": "PETLIBRO Luma Smart Self-Cleaning Litter Box im Detail prüfen"
         }
       ],
       "file": "src/content/comparisons/beste-automatische-katzentoiletten.md"
@@ -2501,14 +2501,14 @@
           "label": "PETLIBRO Scout Smart Camera im Detail prüfen"
         },
         {
-          "href": "/produkt/furbo-360-hundekamera/",
+          "href": "/produkt/furbo-mini-360/",
           "kind": "Produkt",
-          "label": "Furbo 360° Hundekamera im Detail prüfen"
+          "label": "Furbo Mini 360 im Detail prüfen"
         },
         {
-          "href": "/produkt/enabot-ebo-air-2/",
+          "href": "/produkt/enabot-rola-mini/",
           "kind": "Produkt",
-          "label": "Enabot EBO Air 2 im Detail prüfen"
+          "label": "Enabot ROLA Mini im Detail prüfen"
         }
       ],
       "file": "src/content/comparisons/beste-haustierkameras.md"
@@ -3006,12 +3006,37 @@
           "label": "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten"
         },
         {
-          "href": "/produkt/furbo-360-hundekamera/",
+          "href": "/produkt/enabot-rola-mini/",
           "kind": "Produkt",
-          "label": "Furbo 360° Hundekamera im Detail prüfen"
+          "label": "Enabot ROLA Mini im Detail prüfen"
         }
       ],
       "file": "src/content/products/enabot-ebo-air-2.md"
+    },
+    {
+      "route": "/produkt/enabot-rola-mini/",
+      "type": "product",
+      "cluster": "haustierkameras",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-haustierkameras/",
+          "kind": "Vergleich",
+          "label": "Haustierkameras im Vergleich vergleichen"
+        },
+        {
+          "href": "/haustierkameras/",
+          "kind": "Ratgeber",
+          "label": "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten"
+        },
+        {
+          "href": "/produkt/enabot-ebo-air-2/",
+          "kind": "Produkt",
+          "label": "Enabot EBO Air 2 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/enabot-rola-mini.md"
     },
     {
       "route": "/produkt/furbo-360-hundekamera/",
@@ -3037,6 +3062,31 @@
         }
       ],
       "file": "src/content/products/furbo-360-hundekamera.md"
+    },
+    {
+      "route": "/produkt/furbo-mini-360/",
+      "type": "product",
+      "cluster": "haustierkameras",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-haustierkameras/",
+          "kind": "Vergleich",
+          "label": "Haustierkameras im Vergleich vergleichen"
+        },
+        {
+          "href": "/haustierkameras/",
+          "kind": "Ratgeber",
+          "label": "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten"
+        },
+        {
+          "href": "/produkt/enabot-ebo-air-2/",
+          "kind": "Produkt",
+          "label": "Enabot EBO Air 2 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/furbo-mini-360.md"
     },
     {
       "route": "/produkt/garmin-alpha-t-20/",
@@ -4112,6 +4162,31 @@
         }
       ],
       "file": "src/content/products/petlibro-granary-wifi-feeder.md"
+    },
+    {
+      "route": "/produkt/petlibro-luma-smart-litter-box/",
+      "type": "product",
+      "cluster": "automatische-katzentoiletten",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-automatische-katzentoiletten/",
+          "kind": "Vergleich",
+          "label": "Automatische Katzentoiletten im Vergleich vergleichen"
+        },
+        {
+          "href": "/automatische-katzentoiletten/",
+          "kind": "Ratgeber",
+          "label": "Automatische Katzentoiletten sicher auswählen"
+        },
+        {
+          "href": "/produkt/devoko-90l-automatisches-katzenklo/",
+          "kind": "Produkt",
+          "label": "Devoko 90L Automatisches Katzenklo im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petlibro-luma-smart-litter-box.md"
     },
     {
       "route": "/produkt/petlibro-one-rfid-smart-feeder/",

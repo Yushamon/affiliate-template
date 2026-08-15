@@ -1,14 +1,14 @@
 {
   "version": "3.0.3",
-  "generatedAt": "2026-08-15T18:00:46.075Z",
+  "generatedAt": "2026-08-15T20:33:11.384Z",
   "strict": false,
   "summary": {
-    "documents": 218,
-    "contentRoutes": 218,
-    "buildRoutes": 322,
-    "validRoutes": 322,
-    "definitions": 484,
-    "renderedAutomaticLinks": 499,
+    "documents": 221,
+    "contentRoutes": 221,
+    "buildRoutes": 326,
+    "validRoutes": 327,
+    "definitions": 489,
+    "renderedAutomaticLinks": 505,
     "errors": 0,
     "warnings": 6,
     "critical": 0
@@ -209,9 +209,9 @@
   "renderedAnchors": [
     {
       "sourceRoute": "/automatische-katzentoiletten/",
-      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
-      "anchor": "mehrere Katzen",
-      "score": 3014
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 2008
     },
     {
       "sourceRoute": "/automatische-katzentoiletten/",
@@ -1666,6 +1666,12 @@
       "score": 1806
     },
     {
+      "sourceRoute": "/produkt/furbo-mini-360/",
+      "targetRoute": "/hersteller/furbo/",
+      "anchor": "Furbo",
+      "score": 1805
+    },
+    {
       "sourceRoute": "/produkt/garmin-alpha-t-20/",
       "targetRoute": "/vergleiche/gps-tracker-ohne-abo/",
       "anchor": "GPS-Tracker ohne Abo",
@@ -2008,6 +2014,12 @@
       "score": 1806
     },
     {
+      "sourceRoute": "/produkt/petkit-purobot-max-pro-2/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1806
+    },
+    {
       "sourceRoute": "/produkt/petkit-yumshare-dual-hopper/",
       "targetRoute": "/smarte-futterautomaten/",
       "anchor": "Futterautomat",
@@ -2144,6 +2156,12 @@
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
       "score": 1908
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-luma-smart-litter-box/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1808
     },
     {
       "sourceRoute": "/produkt/petlibro-one-rfid-smart-feeder/",
@@ -2459,14 +2477,32 @@
     },
     {
       "sourceRoute": "/vergleiche/beste-automatische-katzentoiletten/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1908
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-automatische-katzentoiletten/",
       "targetRoute": "/hersteller/neakasa/",
       "anchor": "Neakasa",
       "score": 1807
     },
     {
       "sourceRoute": "/vergleiche/beste-automatische-katzentoiletten/",
+      "targetRoute": "/hersteller/whisker/",
+      "anchor": "Whisker",
+      "score": 1807
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-automatische-katzentoiletten/",
       "targetRoute": "/hersteller/devoko/",
       "anchor": "Devoko",
+      "score": 1806
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-automatische-katzentoiletten/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
       "score": 1806
     },
     {
@@ -3203,7 +3239,7 @@
     }
   ],
   "incomingLinks": {
-    "/automatische-katzentoiletten/": 4,
+    "/automatische-katzentoiletten/": 6,
     "/biofilm-im-katzentrinkbrunnen/": 17,
     "/datenschutz-bei-gps-trackern/": 1,
     "/filter-im-katzentrinkbrunnen-wechseln/": 14,
@@ -3220,13 +3256,13 @@
     "/gps-oder-bluetooth/": 2,
     "/gps-tracker-richtig-befestigen/": 3,
     "/gps-tracker/": 7,
-    "/haustierkameras/": 4,
+    "/haustierkameras/": 6,
     "/hersteller/aqara/": 4,
     "/hersteller/cat-mate/": 14,
     "/hersteller/catit/": 5,
     "/hersteller/devoko/": 4,
     "/hersteller/enabot/": 2,
-    "/hersteller/furbo/": 2,
+    "/hersteller/furbo/": 3,
     "/hersteller/garmin/": 13,
     "/hersteller/honeyguardian/": 8,
     "/hersteller/imipaw/": 5,
@@ -3236,14 +3272,14 @@
     "/hersteller/paj-gps/": 4,
     "/hersteller/pawbby/": 3,
     "/hersteller/pawsync/": 3,
-    "/hersteller/petkit/": 33,
-    "/hersteller/petlibro/": 57,
+    "/hersteller/petkit/": 35,
+    "/hersteller/petlibro/": 60,
     "/hersteller/petsafe/": 16,
     "/hersteller/petwalk/": 4,
     "/hersteller/surefeed/": 13,
     "/hersteller/tractive/": 12,
     "/hersteller/weenect/": 16,
-    "/hersteller/whisker/": 3,
+    "/hersteller/whisker/": 4,
     "/hersteller/wopet/": 7,
     "/hersteller/xiaomi/": 17,
     "/hersteller/zeromouse/": 5,
@@ -3281,17 +3317,19 @@
     "/produkt/catit-pixi-smart-6-meal-feeder/": 3,
     "/produkt/catit-pixi-vision-smart-feeder/": 2,
     "/produkt/devoko-90l-automatisches-katzenklo/": 3,
-    "/produkt/enabot-ebo-air-2/": 2,
-    "/produkt/furbo-360-hundekamera/": 2,
+    "/produkt/enabot-ebo-air-2/": 1,
+    "/produkt/enabot-rola-mini/": 2,
+    "/produkt/furbo-360-hundekamera/": 1,
+    "/produkt/furbo-mini-360/": 2,
     "/produkt/garmin-alpha-t-20/": 8,
     "/produkt/garmin-alpha-tt-25/": 2,
     "/produkt/honeyguardian-a305d/": 2,
     "/produkt/honeyguardian-a68/": 2,
     "/produkt/honeyguardian-smart-pet-feeder-s305d/": 2,
     "/produkt/imipaw-3l-automatic-cat-feeder/": 2,
-    "/produkt/litter-robot-5-pro/": 2,
+    "/produkt/litter-robot-5-pro/": 1,
     "/produkt/neakasa-m1-lite/": 4,
-    "/produkt/neakasa-m1-plus/": 2,
+    "/produkt/neakasa-m1-plus/": 1,
     "/produkt/oneisall-2-2l-cordless-fountain/": 2,
     "/produkt/oneisall-2-in-1-feeder-water/": 2,
     "/produkt/oneisall-3-2l-cordless-fountain/": 2,
@@ -3311,7 +3349,7 @@
     "/produkt/petkit-eversweet-ultra/": 5,
     "/produkt/petkit-fresh-element-infinity/": 2,
     "/produkt/petkit-fresh-element-solo/": 10,
-    "/produkt/petkit-purobot-max-pro-2/": 2,
+    "/produkt/petkit-purobot-max-pro-2/": 3,
     "/produkt/petkit-yumshare-dual-hopper/": 7,
     "/produkt/petkit-yumshare-solo-2/": 3,
     "/produkt/petlibro-air-automatic-feeder/": 2,
@@ -3326,6 +3364,7 @@
     "/produkt/petlibro-granary-camera-feeder/": 8,
     "/produkt/petlibro-granary-dual-feeder/": 2,
     "/produkt/petlibro-granary-wifi-feeder/": 17,
+    "/produkt/petlibro-luma-smart-litter-box/": 3,
     "/produkt/petlibro-one-rfid-smart-feeder/": 2,
     "/produkt/petlibro-polar-wet-food-feeder/": 4,
     "/produkt/petlibro-scout-smart-camera/": 2,
@@ -3363,7 +3402,7 @@
     "/so-bewerten-wir/": 15,
     "/trinkbrunnen-fuer-katzen-sinnvoll/": 4,
     "/trinkbrunnen-fuer-kitten-sicher/": 0,
-    "/trinkbrunnen-fuer-mehrere-katzen/": 26,
+    "/trinkbrunnen-fuer-mehrere-katzen/": 25,
     "/trinkbrunnen-hund/": 3,
     "/trinkbrunnen-seniorenkatzen/": 2,
     "/trinkbrunnen/": 41,
@@ -3372,7 +3411,7 @@
     "/trockenfutter-oder-nassfutter-hund/": 5,
     "/trockenfutter-oder-nassfutter-katze/": 2,
     "/uebergewicht-bei-katzen-vermeiden/": 2,
-    "/vergleiche/beste-automatische-katzentoiletten/": 6,
+    "/vergleiche/beste-automatische-katzentoiletten/": 8,
     "/vergleiche/beste-futterautomaten-fuer-berufstaetige/": 4,
     "/vergleiche/beste-futterautomaten-fuer-hunde/": 10,
     "/vergleiche/beste-futterautomaten-fuer-katzen/": 9,
@@ -3389,7 +3428,7 @@
     "/vergleiche/beste-futterautomaten-unter-100-euro/": 3,
     "/vergleiche/beste-gps-tracker-fuer-hunde/": 10,
     "/vergleiche/beste-gps-tracker-fuer-katzen/": 8,
-    "/vergleiche/beste-haustierkameras/": 4,
+    "/vergleiche/beste-haustierkameras/": 6,
     "/vergleiche/beste-mikrochip-katzenklappen/": 10,
     "/vergleiche/beste-trinkbrunnen-fuer-hunde/": 3,
     "/vergleiche/beste-trinkbrunnen-fuer-katzen/": 10,

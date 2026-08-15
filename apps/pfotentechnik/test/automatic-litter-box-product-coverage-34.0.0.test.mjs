@@ -2,9 +2,12 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
+import { createRequire } from "node:module";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const require = createRequire(path.join(appRoot, "package.json"));
+const yaml = require("js-yaml");
 const loaderUrl = pathToFileURL(
   path.join(appRoot, "src/lib/seo/topical-authority/loadTopicalAuthority.ts"),
 );
@@ -29,7 +32,7 @@ test("Katzentoiletten erfassen Inline-Kategorien und Herstellerbeziehungen", asy
   );
 });
 
-test("Vergleich grenzt M1-Lieferumfang und Devoko-Datenlage ab", () => {
+test("Vergleich trennt M1-Variante und Devoko-Datenlage strukturell", () => {
   const comparison = fs.readFileSync(
     path.join(
       appRoot,
@@ -37,8 +40,14 @@ test("Vergleich grenzt M1-Lieferumfang und Devoko-Datenlage ab", () => {
     ),
     "utf8",
   );
-
-  assert.match(comparison, /Lite ist vor allem eine Lieferumfangsvariante/);
-  assert.match(comparison, /Devoko ist die preisorientierte geschlossene Alternative/);
-  assert.match(comparison, /uneinheitlicher Modell- und Servicedaten/);
+  const match = comparison.match(/^---\s*\r?\n([\s\S]*?)\r?\n---/);
+  assert.ok(match, "Vergleichs-Frontmatter fehlt");
+  const parsed = yaml.load(match[1], { schema: yaml.JSON_SCHEMA });
+  const slugs = parsed.items.map((item) => item.slug);
+  assert.ok(slugs.includes("neakasa-m1-lite"));
+  assert.equal(slugs.includes("neakasa-m1-plus"), false);
+  const devoko = parsed.items.find((item) => item.slug === "devoko-90l-automatisches-katzenklo");
+  assert.ok(devoko);
+  assert.match(devoko.values.sicherheit, /widerspruechlich/);
+  assert.match(devoko.values.platz, /uneinheitlich/);
 });

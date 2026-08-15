@@ -1,12 +1,12 @@
 # Content-Quality- und Kannibalisierungsreport
 
-- Indexierbare Seiten: 230
+- Indexierbare Seiten: 232
 - Exakte Duplikate: 0
 - Near-Duplicates: 0
 - Offene Intent-Konflikte: 0
 - Gelöste Konflikte: 2
 - Manuelle Prüffälle: 0
-- Harte Fehler: 0
+- Harte Fehler: 1
 - Warnungen: 0
 
 ## Konflikte und bewusste Abgrenzungen
@@ -57,10 +57,10 @@
 
 ## Audit-Befunde
 
-Keine offenen Befunde.
+- **ERROR · CONTENT_COMPARISON_COUNT_MISMATCH** · /vergleiche/beste-automatische-katzentoiletten/: Quelldaten nennen 4 Vergleichsprodukte, gerendert erkannt wurden 5.
 
 ## Entscheidungsmatrix
 
 - CONSOLIDATE: 2
-- KEEP: 230
-- NOINDEX: 92
+- KEEP: 232
+- NOINDEX: 94

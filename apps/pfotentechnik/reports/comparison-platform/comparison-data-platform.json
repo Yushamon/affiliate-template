@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T11:29:10.996Z",
+  "generatedAt": "2026-08-15T20:33:06.835Z",
   "minimumComparisons": 26,
   "thresholds": {
     "minimumVisibleRows": 3,
@@ -8,16 +8,16 @@
   "passed": true,
   "summary": {
     "comparisons": 28,
-    "products": 82,
-    "sourceCells": 847,
-    "allResolved": 754,
+    "products": 85,
+    "sourceCells": 857,
+    "allResolved": 764,
     "allUnresolved": 93,
-    "sourceCoverage": 89,
-    "renderedCells": 720,
-    "renderedResolved": 720,
+    "sourceCoverage": 89.1,
+    "renderedCells": 730,
+    "renderedResolved": 730,
     "renderedUnresolved": 0,
     "renderedCoverage": 100,
-    "legacyValueCount": 605,
+    "legacyValueCount": 615,
     "overrideCount": 218
   },
   "failures": [],
@@ -25,253 +25,368 @@
     {
       "slug": "beste-automatische-katzentoiletten",
       "file": "src/content/comparisons/beste-automatische-katzentoiletten.md",
-      "items": 5,
-      "criteria": 7,
-      "visibleRows": 7,
+      "items": 4,
+      "criteria": 12,
+      "visibleRows": 12,
       "hiddenRows": 0,
       "passed": true,
       "rows": [
         {
-          "key": "system",
-          "label": "Systemtyp",
-          "resolved": 5,
-          "total": 5,
+          "key": "bauform",
+          "label": "Bauform / Reinigung",
+          "resolved": 4,
+          "total": 4,
           "coverage": 100,
           "visible": true,
           "cells": [
             {
-              "product": "litter-robot-5-pro",
-              "value": "Geschlossene Siebtrommel",
-              "resolved": true
-            },
-            {
-              "product": "petkit-purobot-max-pro-2",
-              "value": "Geschlossene Trommel mit AI-Kamera",
-              "resolved": true
-            },
-            {
-              "product": "neakasa-m1-plus",
-              "value": "Offene Siebtrommel",
-              "resolved": true
-            },
-            {
               "product": "neakasa-m1-lite",
-              "value": "Offene Siebtrommel / Open Top",
+              "value": "Open Top; automatische Siebung",
               "resolved": true
             },
             {
               "product": "devoko-90l-automatisches-katzenklo",
-              "value": "Geschlossene automatische Trommel",
+              "value": "Geschlossene rotierende Siebung",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-luma-smart-litter-box",
+              "value": "Teiloffenes automatisches Siebsystem",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "Geschlossene 76-l-Siebtrommel",
               "resolved": true
             }
           ]
         },
         {
-          "key": "mindestgewicht",
-          "label": "Mindestgewicht",
-          "resolved": 5,
-          "total": 5,
+          "key": "innenraum",
+          "label": "Nutzbarer Innenraum",
+          "resolved": 4,
+          "total": 4,
           "coverage": 100,
           "visible": true,
           "cells": [
             {
-              "product": "litter-robot-5-pro",
-              "value": "ca. 1,36 kg",
-              "resolved": true
-            },
-            {
-              "product": "petkit-purobot-max-pro-2",
-              "value": "Offene Produktfrage",
-              "resolved": true
-            },
-            {
-              "product": "neakasa-m1-plus",
-              "value": "ca. 1 kg; darunter Kitten-Modus",
-              "resolved": true
-            },
-            {
               "product": "neakasa-m1-lite",
-              "value": "ca. 1 kg; darunter Kitten-Modus ohne Automatik",
+              "value": "Offen; 7,17 l Streukapazitaet",
               "resolved": true
             },
             {
               "product": "devoko-90l-automatisches-katzenklo",
-              "value": "ca. 1,5–10 kg",
+              "value": "90 l laut oeffentlichen Produktdaten",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-luma-smart-litter-box",
+              "value": "44,2-cm-Eingang; Nutzraum nicht separat beziffert",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "76 l; Oeffnung 267 x 273 mm",
               "resolved": true
             }
           ]
         },
         {
           "key": "einstieg",
-          "label": "Einstieg und Innenraum",
-          "resolved": 5,
-          "total": 5,
+          "label": "Einstiegshoehe",
+          "resolved": 4,
+          "total": 4,
           "coverage": 100,
           "visible": true,
           "cells": [
             {
-              "product": "litter-robot-5-pro",
-              "value": "Weit, aber geschlossener Innenraum",
-              "resolved": true
-            },
-            {
-              "product": "petkit-purobot-max-pro-2",
-              "value": "Geschlossener Innenraum",
-              "resolved": true
-            },
-            {
-              "product": "neakasa-m1-plus",
-              "value": "ca. 35,2 cm, oben offen",
-              "resolved": true
-            },
-            {
               "product": "neakasa-m1-lite",
-              "value": "ca. 35,2 cm, oben offen",
+              "value": "35,2 cm",
               "resolved": true
             },
             {
               "product": "devoko-90l-automatisches-katzenklo",
-              "value": "ca. 23 cm; großer Innenraum",
+              "value": "ca. 23 cm",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-luma-smart-litter-box",
+              "value": "34 cm; Stufe enthalten",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "25,5 cm",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "katzenprofil",
+          "label": "Groesse / Gewicht",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "neakasa-m1-lite",
+              "value": "ca. 1-15 kg; darunter Automatik aus",
+              "resolved": true
+            },
+            {
+              "product": "devoko-90l-automatisches-katzenklo",
+              "value": "ca. 1,5-10 kg",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-luma-smart-litter-box",
+              "value": "1-10 kg; unter 1 kg/6 Monaten manuell",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "1,5-10 kg; Kitten Protection Mode",
               "resolved": true
             }
           ]
         },
         {
           "key": "sicherheit",
-          "label": "Sicherheitsprinzip",
-          "resolved": 5,
-          "total": 5,
+          "label": "Sicherheitskonzept",
+          "resolved": 4,
+          "total": 4,
           "coverage": 100,
           "visible": true,
           "cells": [
             {
-              "product": "litter-robot-5-pro",
-              "value": "Sensor-/Zykluslogik; Herstellerangabe",
-              "resolved": true
-            },
-            {
-              "product": "petkit-purobot-max-pro-2",
-              "value": "IR- und Gewichtssensoren stoppen laut Hersteller",
-              "resolved": true
-            },
-            {
-              "product": "neakasa-m1-plus",
-              "value": "6 IR-Sensorgruppen; sofortiger Stopp laut Hersteller",
-              "resolved": true
-            },
-            {
               "product": "neakasa-m1-lite",
-              "value": "IR-Sensorik und Stoppfunktion laut Hersteller; Detailangaben uneinheitlich",
+              "value": "IR-Sensorik und Stopp; Details uneinheitlich",
               "resolved": true
             },
             {
               "product": "devoko-90l-automatisches-katzenklo",
-              "value": "IR-, Gewichts- und Radarerkennung; Sensorzahl öffentlich widersprüchlich",
+              "value": "IR, Gewicht, Radar; Sensorzahl widerspruechlich",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-luma-smart-litter-box",
+              "value": "Kamera, IR, Gewicht + Einklemmschutz; Herstellerangabe",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "12 Sensoren + Anti-Pinch; Herstellerangabe",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "mehrkatzen",
+          "label": "Mehrkatzenhaushalt",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "neakasa-m1-lite",
+              "value": "App-Profile; Unterscheidung bei aehnlichem Gewicht pruefen",
+              "resolved": true
+            },
+            {
+              "product": "devoko-90l-automatisches-katzenklo",
+              "value": "Gewicht und Nutzung; keine belegte Individualerkennung",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-luma-smart-litter-box",
+              "value": "Profile fuer bis zu 10 Katzen",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "Gesichts- und Gewichtserkennung",
               "resolved": true
             }
           ]
         },
         {
           "key": "streu",
-          "label": "Streukompatibilität",
-          "resolved": 5,
-          "total": 5,
+          "label": "Streukompatibilitaet",
+          "resolved": 4,
+          "total": 4,
           "coverage": 100,
           "visible": true,
           "cells": [
             {
-              "product": "litter-robot-5-pro",
-              "value": "Klumpend und siebfähig",
-              "resolved": true
-            },
-            {
-              "product": "petkit-purobot-max-pro-2",
-              "value": "Regionale Liste prüfen",
-              "resolved": true
-            },
-            {
-              "product": "neakasa-m1-plus",
-              "value": "Schnell klumpend und siebfähig",
-              "resolved": true
-            },
-            {
               "product": "neakasa-m1-lite",
-              "value": "Klumpend und siebfähig; keine Holzpellets",
+              "value": "Klumpend, siebfaehig; keine Holzpellets",
               "resolved": true
             },
             {
               "product": "devoko-90l-automatisches-katzenklo",
-              "value": "Verschiedene klumpende Streusorten laut Dokumentation",
+              "value": "Verschiedene klumpende Streusorten",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-luma-smart-litter-box",
+              "value": "Klumpend, Tofu, Mischstreu; keine Kristall-/Kieferstreu",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "Bentonit, Tofu, Mischstreu; bis 12 mm",
               "resolved": true
             }
           ]
         },
         {
-          "key": "app",
-          "label": "App und Mehrkatzenzuordnung",
-          "resolved": 5,
-          "total": 5,
+          "key": "wartung",
+          "label": "Wartung / Abfallfach",
+          "resolved": 4,
+          "total": 4,
           "coverage": 100,
           "visible": true,
           "cells": [
             {
-              "product": "litter-robot-5-pro",
-              "value": "Besuche, Gewicht, Dualkamera",
-              "resolved": true
-            },
-            {
-              "product": "petkit-purobot-max-pro-2",
-              "value": "Tierprofile, Dauer und Gewichtstrends",
-              "resolved": true
-            },
-            {
-              "product": "neakasa-m1-plus",
-              "value": "Nutzung und Füllstand",
-              "resolved": true
-            },
-            {
               "product": "neakasa-m1-lite",
-              "value": "Monitoring, Füllstand und Fernsteuerung",
+              "value": "11,23-l-Abfallfach; Lite ohne Matte",
               "resolved": true
             },
             {
               "product": "devoko-90l-automatisches-katzenklo",
-              "value": "2,4-GHz-WLAN; Gewicht, Nutzung und Fernreinigung",
+              "value": "8,5-l-Abfallfach; modulare Reinigung",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-luma-smart-litter-box",
+              "value": "11-l-Schublade; Filter und Einlagen",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "8-l-Abfallfach; abnehmbare Teile",
               "resolved": true
             }
           ]
         },
         {
-          "key": "kosten",
-          "label": "Drei-Jahres-Kosten",
-          "resolved": 5,
-          "total": 5,
+          "key": "geruch",
+          "label": "Geruchskontrolle",
+          "resolved": 4,
+          "total": 4,
           "coverage": 100,
           "visible": true,
           "cells": [
             {
-              "product": "litter-robot-5-pro",
-              "value": "Beutel, Streu, Zubehör, optional Whisker+",
-              "resolved": true
-            },
-            {
-              "product": "petkit-purobot-max-pro-2",
-              "value": "Streu, Beutel, Zubehör, mögliche Cloudkosten",
-              "resolved": true
-            },
-            {
-              "product": "neakasa-m1-plus",
-              "value": "Streu und passende Beutel",
-              "resolved": true
-            },
-            {
               "product": "neakasa-m1-lite",
-              "value": "Streu und Beutel; weniger Zubehör als M1 Plus",
+              "value": "OdorSeal laut Hersteller; offene Bauform",
               "resolved": true
             },
             {
               "product": "devoko-90l-automatisches-katzenklo",
-              "value": "Streu, Beutel, Geruchsneutralisator; Service und Garantie prüfen",
+              "value": "Neutralisator; Ersatzbedarf einplanen",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-luma-smart-litter-box",
+              "value": "Ventilator + Aktivkohlefilter; Herstellerangabe",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "Mehrstufig; Herstellerangabe",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "appdaten",
+          "label": "App / Monitoring",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "neakasa-m1-lite",
+              "value": "Nutzung, Fuellstand, Fernsteuerung",
+              "resolved": true
+            },
+            {
+              "product": "devoko-90l-automatisches-katzenklo",
+              "value": "2,4 GHz; Gewicht, Nutzung, Fernreinigung",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-luma-smart-litter-box",
+              "value": "1080p, Cloud-only-Aufzeichnung; AI tarifabhaengig",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "1080p-Kamera, Cloud, Trends; Grundbetrieb offline",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "folgekosten",
+          "label": "Laufende Kosten",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "neakasa-m1-lite",
+              "value": "Streu, Beutel, optional Stufe/Matte",
+              "resolved": true
+            },
+            {
+              "product": "devoko-90l-automatisches-katzenklo",
+              "value": "Streu, Beutel, Geruchsneutralisator",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-luma-smart-litter-box",
+              "value": "Beutel, Aktivkohlefilter, optional Video Cloud AI",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "Beutel, Geruchszubehoer, optionale Dienste",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "platz",
+          "label": "Platzbedarf",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "neakasa-m1-lite",
+              "value": "525 x 591 x 513 mm; oben Freiraum",
+              "resolved": true
+            },
+            {
+              "product": "devoko-90l-automatisches-katzenklo",
+              "value": "Aussenmasse je nach Quelle uneinheitlich",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-luma-smart-litter-box",
+              "value": "592 x 573 x 714 mm; harter Boden",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "657 x 538 x 603 mm; ca. 11 kg",
               "resolved": true
             }
           ]
@@ -3948,14 +4063,14 @@
       "slug": "beste-haustierkameras",
       "file": "src/content/comparisons/beste-haustierkameras.md",
       "items": 3,
-      "criteria": 7,
-      "visibleRows": 7,
+      "criteria": 6,
+      "visibleRows": 6,
       "hiddenRows": 0,
       "passed": true,
       "rows": [
         {
           "key": "klasse",
-          "label": "Produktklasse",
+          "label": "Kameraklasse",
           "resolved": 3,
           "total": 3,
           "coverage": 100,
@@ -3963,24 +4078,24 @@
           "cells": [
             {
               "product": "petlibro-scout-smart-camera",
-              "value": "Feste Schwenk-/Neigekamera",
+              "value": "Stationaere Pan/Tilt-Pet-Cam",
               "resolved": true
             },
             {
-              "product": "furbo-360-hundekamera",
-              "value": "Feste Interaktionskamera",
+              "product": "furbo-mini-360",
+              "value": "Stationaere Interaktionskamera",
               "resolved": true
             },
             {
-              "product": "enabot-ebo-air-2",
-              "value": "Mobiler Kamera-Roboter",
+              "product": "enabot-rola-mini",
+              "value": "Mobile Roboterkamera",
               "resolved": true
             }
           ]
         },
         {
-          "key": "blick",
-          "label": "Blickbereich",
+          "key": "speicher",
+          "label": "Speicherung / Cloud",
           "resolved": 3,
           "total": 3,
           "coverage": 100,
@@ -3988,17 +4103,42 @@
           "cells": [
             {
               "product": "petlibro-scout-smart-camera",
-              "value": "1080p, 360-Grad-Schwenken",
+              "value": "Cloud-only fuer Video; keine SD-Karte",
               "resolved": true
             },
             {
-              "product": "furbo-360-hundekamera",
-              "value": "360-Grad-Sicht und Tracking",
+              "product": "furbo-mini-360",
+              "value": "Aktuellen Dienstumfang pruefen",
               "resolved": true
             },
             {
-              "product": "enabot-ebo-air-2",
-              "value": "2K laut Hersteller, beweglicher Standort",
+              "product": "enabot-rola-mini",
+              "value": "Nicht belastbar belegt; vor Kauf pruefen",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "abo",
+          "label": "Abo",
+          "resolved": 3,
+          "total": 3,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "Cloud-/KI-Funktionen tarifabhaengig",
+              "resolved": true
+            },
+            {
+              "product": "furbo-mini-360",
+              "value": "Optionale Dienste getrennt pruefen",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-mini",
+              "value": "Kein Pflichtabo belastbar belegt",
               "resolved": true
             }
           ]
@@ -4017,20 +4157,20 @@
               "resolved": true
             },
             {
-              "product": "furbo-360-hundekamera",
-              "value": "Audio und Leckerliausgabe",
+              "product": "furbo-mini-360",
+              "value": "Zwei-Wege-Audio und Leckerliausgabe",
               "resolved": true
             },
             {
-              "product": "enabot-ebo-air-2",
-              "value": "Fernfahrt und Kamerazugriff",
+              "product": "enabot-rola-mini",
+              "value": "App-Fahrt und Zwei-Wege-Audio",
               "resolved": true
             }
           ]
         },
         {
-          "key": "speicher",
-          "label": "Speicherung",
+          "key": "abdeckung",
+          "label": "Raumabdeckung",
           "resolved": 3,
           "total": 3,
           "coverage": 100,
@@ -4038,24 +4178,24 @@
           "cells": [
             {
               "product": "petlibro-scout-smart-camera",
-              "value": "Cloud; keine SD-Karte",
+              "value": "360-Grad-Schwenken und Neigen",
               "resolved": true
             },
             {
-              "product": "furbo-360-hundekamera",
-              "value": "App-/Tarifabhängig",
+              "product": "furbo-mini-360",
+              "value": "360-Grad-Rotation am festen Standort",
               "resolved": true
             },
             {
-              "product": "enabot-ebo-air-2",
-              "value": "Aktuelle App-Angabe prüfen",
+              "product": "enabot-rola-mini",
+              "value": "Mobiler Standort; 137-Grad-Sichtfeld",
               "resolved": true
             }
           ]
         },
         {
-          "key": "abo",
-          "label": "Abo",
+          "key": "bild",
+          "label": "Bild und Nachtmodus",
           "resolved": 3,
           "total": 3,
           "coverage": 100,
@@ -4063,67 +4203,17 @@
           "cells": [
             {
               "product": "petlibro-scout-smart-camera",
-              "value": "KI und Aufzeichnung tarifabhängig",
+              "value": "1080p; Farb- und Schwarz-Weiss-Nachtmodus",
               "resolved": true
             },
             {
-              "product": "furbo-360-hundekamera",
-              "value": "Furbo Nanny optional",
+              "product": "furbo-mini-360",
+              "value": "2K QHD; automatische Nachtsicht",
               "resolved": true
             },
             {
-              "product": "enabot-ebo-air-2",
-              "value": "Kein belegter Pflichttarif",
-              "resolved": true
-            }
-          ]
-        },
-        {
-          "key": "datenschutz",
-          "label": "Datenschutz",
-          "resolved": 3,
-          "total": 3,
-          "coverage": 100,
-          "visible": true,
-          "cells": [
-            {
-              "product": "petlibro-scout-smart-camera",
-              "value": "Manuelle Linsenabdeckung",
-              "resolved": true
-            },
-            {
-              "product": "furbo-360-hundekamera",
-              "value": "Cloud- und Kontoeinstellungen prüfen",
-              "resolved": true
-            },
-            {
-              "product": "enabot-ebo-air-2",
-              "value": "Bewegliche Kamera und Raumfreigaben",
-              "resolved": true
-            }
-          ]
-        },
-        {
-          "key": "kosten",
-          "label": "24-Monats-Kosten",
-          "resolved": 3,
-          "total": 3,
-          "coverage": 100,
-          "visible": true,
-          "cells": [
-            {
-              "product": "petlibro-scout-smart-camera",
-              "value": "Gerät plus 24 Monatsanteile des gewählten Cloud-Tarifs",
-              "resolved": true
-            },
-            {
-              "product": "furbo-360-hundekamera",
-              "value": "Gerät plus 24 Monatsanteile des gewählten Nanny-Tarifs",
-              "resolved": true
-            },
-            {
-              "product": "enabot-ebo-air-2",
-              "value": "Gerät plus mögliche Akku-/Ersatzteilkosten",
+              "product": "enabot-rola-mini",
+              "value": "2K (2304 x 1296); Bewegungsaufzeichnung",
               "resolved": true
             }
           ]
