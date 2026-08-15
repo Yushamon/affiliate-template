@@ -22,10 +22,10 @@ tags: ["haustierkamera", "hund", "leckerlies", "app", "innenkamera"]
 images:
   hero: { src: "../../assets/images/products/furbo-360-hundekamera/hero.webp", alt: "Neutrale redaktionelle Darstellung einer Hundekamera mit Leckerliausgabe" }
 price:
-  current: 79
+  current: 69
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-07T10:03:42.800Z"
+  checkedAt: "2026-08-15T17:08:30.480Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -111,12 +111,12 @@ affiliate:
   rel: "sponsored nofollow noopener"
   target: "_blank"
 priceState: "available"
-priceUpdated: "2026-08-07T10:03:42.800Z"
+priceUpdated: "2026-08-15T17:08:30.480Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-07T10:03:42.800Z"
+availabilityUpdated: "2026-08-15T17:08:30.480Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

@@ -5,7 +5,7 @@ type: "comparison"
 layout: "comparison"
 description: "Fünf automatische Katzentoiletten nach Bauform, Mindestgewicht, Einstieg, Sicherheit, Streu, App und Folgekosten vergleichen."
 publishedAt: "2026-08-06"
-updatedAt: "2026-08-07"
+updatedAt: "2026-08-15"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: ["Automatische Katzentoiletten", "Selbstreinigendes Katzenklo", "Katze", "Vergleich", "Sicherheit"]
 hub: { sections: ["vergleiche", "automatische-katzentoiletten"], title: "Automatische Katzentoiletten im Vergleich", description: "Fünf Modelle nach Sicherheits-, Passform- und Betriebskriterien.", icon: "🐈", featured: true, order: 38 }
@@ -115,7 +115,7 @@ criteria:
     format: "text"
 recommendation:
   title: "Die Passform entscheidet vor den Smartfunktionen"
-  text: "Litter-Robot 5 Pro und PUROBOT sind geschlossene Kamera-Systeme mit unterschiedlicher Datenlogik. Neakasa M1 Plus ist die offene Alternative. Ein Modell mit ungeklärtem Mindestgewicht oder ungeeigneter Streu wird verworfen."
+  text: "Litter-Robot 5 Pro und PUROBOT sind geschlossene Kamera-Systeme mit unterschiedlicher Datenlogik. Neakasa M1 Plus und M1 Lite teilen die offene Systementscheidung; das Lite ist vor allem eine Lieferumfangsvariante. Devoko ist die preisorientierte geschlossene Alternative, bleibt wegen uneinheitlicher Modell- und Servicedaten aber eine eingeschränkte Empfehlung. Ein Modell mit ungeklärtem Mindestgewicht oder ungeeigneter Streu wird verworfen."
   alternativeSlug: "neakasa-m1-plus"
 faq:
   - { question: "Sind automatische Katzentoiletten für Kitten geeignet?", answer: "Nur innerhalb der dokumentierten Gewichtsgrenzen. Unterhalb davon muss die Automatik deaktiviert bleiben; ein Kitten-Modus darf nicht mit aktivem Selbstreinigungsbetrieb verwechselt werden." }

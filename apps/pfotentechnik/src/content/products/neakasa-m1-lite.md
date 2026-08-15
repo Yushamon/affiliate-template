@@ -47,14 +47,14 @@ images:
       alt: "Neakasa M1 Lite im Wohnraum mit Katze"
 
 price:
-  current: 315.99
+  current: 360.42
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-07T11:09:51.513Z"
+  checkedAt: "2026-08-15T17:08:40.257Z"
   source:
-    id: "manual"
-    label: "Neakasa EU"
-    type: "manual"
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 rating: 4.0
 affiliate:
   provider: "neakasa-eu"
@@ -64,12 +64,12 @@ affiliate:
   target: "_blank"
 
 priceState: "available"
-priceUpdated: "2026-08-07T11:09:51.513Z"
+priceUpdated: "2026-08-15T17:08:40.257Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
-availabilityReason: "Im europäischen Neakasa-Shop am 07.08.2026 als M1 Plus Lite mit Warenkorb-Funktion gelistet."
-availabilityUpdated: "2026-08-07T11:09:51.513Z"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-08-15T17:08:40.257Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

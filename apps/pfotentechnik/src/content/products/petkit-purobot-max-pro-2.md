@@ -22,10 +22,10 @@ tags: ["automatische-katzentoilette", "katze", "mehrkatzenhaushalt", "kamera", "
 images:
   hero: { src: "../../assets/images/products/petkit-purobot-max-pro-2/hero.webp", alt: "Neutrale redaktionelle Darstellung einer geschlossenen automatischen Katzentoilette mit Kamera" }
 price:
-  current: 499.98
+  current: 599.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-07T10:04:20.591Z"
+  checkedAt: "2026-08-15T17:09:18.810Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -104,12 +104,12 @@ affiliate:
   rel: "sponsored nofollow noopener"
   target: "_blank"
 priceState: "available"
-priceUpdated: "2026-08-07T10:04:20.591Z"
+priceUpdated: "2026-08-15T17:09:18.810Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-07T10:04:20.591Z"
+availabilityUpdated: "2026-08-15T17:09:18.810Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

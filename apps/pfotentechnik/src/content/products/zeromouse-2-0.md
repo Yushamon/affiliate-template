@@ -66,7 +66,7 @@ price:
   current: 199
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-07T10:05:16.537Z"
+  checkedAt: "2026-08-15T17:11:09.297Z"
   source:
     id: "zeromouse.com"
     label: "zeromouse.com"
@@ -84,12 +84,12 @@ conversion:
   showSecondaryCta: true
 
 priceState: "available"
-priceUpdated: "2026-08-07T10:05:16.537Z"
+priceUpdated: "2026-08-15T17:11:09.297Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-07T10:05:16.537Z"
+availabilityUpdated: "2026-08-15T17:11:09.297Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

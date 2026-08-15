@@ -82,10 +82,10 @@ images:
       alt: "GPS-Ortung in Stadt, Wald und offenem Gelände"
 
 price:
-  current: 64.99
+  current: 49.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-07-27T20:27:11.116Z"
+  checkedAt: "2026-08-15T17:08:33.813Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -100,12 +100,12 @@ rating: 4.5
 score: 90
 
 priceState: "available"
-priceUpdated: "2026-07-27T20:27:11.116Z"
+priceUpdated: "2026-08-15T17:08:33.813Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-07-27T20:27:11.116Z"
+availabilityUpdated: "2026-08-15T17:08:33.813Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
@@ -366,7 +366,6 @@ faq:
       XS. Dafür besitzt er einen stärkeren Akku, eine XL-Antenne, eine
       auffälligere Leuchte und eine robustere Outdoor-Befestigung.
 
-
   - question: "Wie lange hält der Akku des Weenect XT?"
     answer: >-
       Weenect nennt bis zu drei Wochen mit korrekt eingerichteter
@@ -374,19 +373,16 @@ faq:
       Empfang, Positionsintervall, Superlive-Nutzung und Temperatur können die
       reale Laufzeit deutlich verändern.
 
-
   - question: "Braucht der Weenect XT ein Abo?"
     answer: >-
       Ja. Die integrierte SIM überträgt die Positionsdaten über Mobilfunk.
       Deshalb ist für den laufenden Ortungsdienst ein kostenpflichtiges
       Weenect-Abonnement erforderlich.
 
-
   - question: "Kann ein Weenect-Abo mehrere Tracker versorgen?"
     answer: >-
       Mehrere Hunde können in einem Konto angezeigt werden. Jeder aktive
       Tracker benötigt laut Weenect jedoch ein eigenes Abonnement.
-
 
   - question: "Ist der Weenect XT für kleine Hunde geeignet?"
     answer: >-
@@ -395,13 +391,11 @@ faq:
       eher für mittelgroße und große Hunde sinnvoll. Für kleinere Hunde ist der
       leichtere Weenect XS meist die naheliegendere Bauform.
 
-
   - question: "Ist der Weenect XT für Katzen geeignet?"
     answer: >-
       Nein, der XT wird als Hundetracker angeboten. Für Katzen ist der deutlich
       leichtere Weenect XS mit einer geeigneten Anti-Strangulationsbefestigung
       vorgesehen.
-
 
   - question: "Hat der Weenect XT eine unbegrenzte Reichweite?"
     answer: >-
@@ -409,20 +403,17 @@ faq:
       funktioniert jedoch nur, wenn Satellitenempfang und ein unterstütztes
       Mobilfunknetz verfügbar sind.
 
-
   - question: "Was bedeutet die beworbene 99-%-Abdeckung?"
     answer: >-
       Das ist eine Herstellerangabe zur Multi-Netz-SIM und XL-Antenne. Sie
       garantiert keinen Empfang an jedem Standort. Täler, Gebäude, dichter Wald
       und lokale Funklöcher können Positionsupdates verzögern.
 
-
   - question: "Wie schnell aktualisiert der Weenect XT seine Position?"
     answer: >-
       Im Superlive-Modus sind laut Weenect Positionsupdates bis zu einmal pro
       Sekunde möglich. Dieser Modus verbraucht deutlich mehr Akku als ein
       längeres Standardintervall.
-
 
   - question: "Wie wird der Weenect XT befestigt?"
     answer: >-
@@ -431,13 +422,11 @@ faq:
       Silikonhülle am Halsband beziehungsweise zusätzlich eine
       Klettbefestigung am Geschirr.
 
-
   - question: "Kann der Weenect XT am Geschirr befestigt werden?"
     answer: >-
       Ja. Die Universalbefestigung ist für Halsbänder und Geschirre vorgesehen.
       Vor dem Einsatz sollten Sitz, Bewegungsfreiheit und Halt bei Zug geprüft
       werden.
-
 
   - question: "Ist der Weenect XT wasserdicht?"
     answer: >-

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T14:28:12.232Z",
+  "generatedAt": "2026-08-15T16:48:10.226Z",
   "errors": 8,
   "warnings": 93,
   "portfolio": [],
@@ -12718,6 +12718,24 @@
           "reinigung": 4.5,
           "smartHome": 4.7
         },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"c't Magazin · via Testberichte-Aggregation"
+          ],
+          "userReviews": [
+            "platform: \"Alza"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Zuverlässige Futterausgabe und die Integration in das Aqara-Ökosystem sind die am klarsten wiederkehrenden Stärken."
+            ],
+            "weaknesses": [
+              "finding: \"Der Mehrwert hängt stark vom vorhandenen Aqara-Setup ab; eine echte Gewichtsmessung des gefressenen Futters fehlt."
+            ],
+            "editorialAssessment": ">-"
+          },
+          "note": ">-"
+        },
         "decision": {
           "bestFor": [
             "Aqara-Smart-Home",
@@ -12991,6 +13009,17 @@
           "zuverlaessigkeit": 3.8,
           "preisleistung": 4.2,
           "ersatzteile": 4.7
+        },
+        "externalEvidence": {
+          "constrained": true,
+          "professionalReviews": [],
+          "userReviews": [],
+          "consensus": {
+            "strengths": [],
+            "weaknesses": []
+          },
+          "constraintReason": ">-",
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -13285,6 +13314,25 @@
           "sicherheit": 3.65,
           "preisleistung": 4
         },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Reviewed",
+            "publisher: \"The Spruce Pets"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Der C200 ist besonders stark, wenn eine einfache, batteriebetriebene und appfreie Lösung für ein bis zwei zeitversetzte Mahlzeiten gesucht wird."
+            ],
+            "weaknesses": [
+              "finding: \"Timerpräzision und Kühlleistung setzen klare Grenzen; für lange Abwesenheiten mit Nassfutter ist das Konzept nicht gedacht."
+            ],
+            "editorialAssessment": ">-"
+          },
+          "note": ">-"
+        },
         "decision": {
           "bestFor": [
             "eine oder zwei Katzen",
@@ -13533,6 +13581,24 @@
           "zuverlaessigkeit": 4,
           "sicherheit": 3.65,
           "preisleistung": 4
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Katzen-Fieber"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Der C300 ist als einfacher zeitgesteuerter Portionsautomat ohne App gut etabliert."
+            ],
+            "weaknesses": [
+              "finding: \"Das Konzept bietet nur zwei später programmierbare Fächer; für mehr Mahlzeiten ist ein größeres Rotationsmodell sinnvoller.",
+              "finding: \"Die Nutzerbasis enthält einzelne aktuelle Hinweise auf nachlassende Haltbarkeit des Rotationsmechanismus."
+            ],
+            "editorialAssessment": ">-"
+          }
         },
         "decision": {
           "bestFor": [
@@ -13783,6 +13849,23 @@
           "zuverlaessigkeit": 4,
           "sicherheit": 3.65,
           "preisleistung": 4
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Cats.com"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Der C500 ist eine einfache Lösung für mehrere zeitversetzte Mahlzeiten ohne App-Abhängigkeit."
+            ],
+            "weaknesses": [
+              "finding: \"Die Kühlung durch Akkus ist begrenzt und ersetzt keine aktive Kühlung."
+            ],
+            "editorialAssessment": ">-"
+          }
         },
         "decision": {
           "bestFor": [
@@ -14044,6 +14127,20 @@
           "lautstaerke": 3.85,
           "preisleistung": 3.65
         },
+        "externalEvidence": {
+          "professionalReviews": [],
+          "userReviews": [
+            "platform: \"Walmart"
+          ],
+          "consensus": {
+            "strengths": [],
+            "weaknesses": []
+          },
+          "researchStatus": "constrained",
+          "researchReason": ">-",
+          "researchCheckedAt": "2026-08-11",
+          "note": ">-"
+        },
         "decision": {
           "bestFor": [
             "eine bis zwei Katzen",
@@ -14287,6 +14384,26 @@
           "zuverlaessigkeit": 4,
           "sicherheit": 3.5,
           "preisleistung": 3.8
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Meowing Goods"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Für mehrere kleine Mahlzeiten über einen Tag sind Fächeraufteilung und Zeitsteuerung der zentrale praktische Vorteil."
+            ],
+            "weaknesses": [
+              "finding: \"Die Eispacks ersetzen keine aktive Kühlung und begrenzen die sichere Nassfutter-Nutzung auf kurze Zeiträume.",
+              "finding: \"Einrichtung und App-Bedienung sind nicht für alle Nutzer reibungslos."
+            ],
+            "editorialAssessment": ">-",
+            "Professioneller 30-Tage-Test und Chewy-Nutzerbasis zeigen ein konsistentes Bild": "praktisch für zeitgesteuerte"
+          },
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -14586,7 +14703,9 @@
           "kamera": 4.6
         },
         "externalEvidence": {
-          "professionalReviews": [],
+          "professionalReviews": [
+            "publisher: \"The Catington Post"
+          ],
           "userReviews": [
             "platform: \"Chewy",
             "platform: \"Apple App Store · Catit App gesamt"
@@ -14851,6 +14970,19 @@
           "smart_funktionen": 4.1,
           "service_und_transparenz": 3.2,
           "folgekosten": 4
+        },
+        "externalEvidence": {
+          "constrained": true,
+          "professionalReviews": [],
+          "userReviews": [
+            "platform: \"Desertcart · weitergereichte Marketplace-Bewertungen"
+          ],
+          "consensus": {
+            "strengths": [],
+            "weaknesses": []
+          },
+          "constraintReason": ">-",
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -15123,6 +15255,24 @@
         },
         "rating": 3.5,
         "ratings": "{ mobilitaet: 4.2, datenschutz: 3.0, folgekosten: 3.5, alltag: 3.3 }",
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Digital Camera World"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Mobile Kamera, Fernsteuerung und direkte Interaktion mit Haustieren sind die klaren Stärken des EBO Air 2."
+            ],
+            "weaknesses": [
+              "finding: \"Der Air 2 ist stärker als ferngesteuerte mobile Kamera denn als autonomer Haushaltsroboter; die Nutzerbasis ist noch klein."
+            ],
+            "editorialAssessment": ">-"
+          },
+          "note": ">-"
+        },
         "decision": {
           "bestFor": [
             "mehrere verbundene Räume auf einer Ebene",
@@ -15243,6 +15393,25 @@
         },
         "rating": 3.6,
         "ratings": "{ interaktion: 4.3, datenschutz: 3.0, folgekosten: 2.8, alltag: 3.7 }",
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"WIRED",
+            "publisher: \"Digital Camera World"
+          ],
+          "userReviews": [
+            "platform: \"Trustpilot · Furbo markenweit"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"360-Grad-Abdeckung, brauchbare Bildqualität und Treat-Tossing sind über unabhängige Tests hinweg die zentralen Stärken."
+            ],
+            "weaknesses": [
+              "finding: \"Abo-Abhängigkeit für Premiumfunktionen, fehlende vertikale Neigung und gelegentlich ungleichmäßige Leckerliausgabe sind wiederkehrende Grenzen."
+            ],
+            "editorialAssessment": ">-"
+          },
+          "note": ">-"
+        },
         "decision": {
           "bestFor": [
             "Hunde und ein überblickbarer Innenraum",
@@ -15420,6 +15589,25 @@
           "robustheit": 4.4,
           "tragekomfort": 3.2,
           "preisleistung": 3.1
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Treeline Review"
+          ],
+          "userReviews": [
+            "platform: \"LivingActive",
+            "platform: \"Varuste.net · verifizierte Käufer"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Schnelle Positionsupdates und robuste Off-grid-Ortung sind die stärksten wiederkehrenden Argumente für den Alpha T 20."
+            ],
+            "weaknesses": [
+              "finding: \"Das System ist teuer und auf ein separates Garmin-Handgerät angewiesen; reale Funkreichweite kann im Gelände deutlich unter dem Maximalwert liegen."
+            ],
+            "editorialAssessment": ">-"
+          },
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -15754,6 +15942,21 @@
           "tragekomfort": 3.2,
           "kosten": 3.1
         },
+        "externalEvidence": {
+          "constrained": true,
+          "professionalReviews": [
+            "publisher: \"Chien-de-chasse.net"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [],
+            "weaknesses": []
+          },
+          "constraintReason": ">-",
+          "note": ">-"
+        },
         "decision": {
           "bestFor": [
             "erfahrene Jagd- und Arbeitshundeführer",
@@ -16040,6 +16243,17 @@
           "sicherheit": 3.65,
           "preisleistung": 4
         },
+        "externalEvidence": {
+          "constrained": true,
+          "professionalReviews": [],
+          "userReviews": [],
+          "consensus": {
+            "strengths": [],
+            "weaknesses": []
+          },
+          "constraintReason": ">-",
+          "note": ">-"
+        },
         "decision": {
           "bestFor": [
             "katze",
@@ -16268,6 +16482,18 @@
           "sicherheit": 3.95,
           "preisleistung": 3.95
         },
+        "externalEvidence": {
+          "professionalReviews": [],
+          "userReviews": [],
+          "consensus": {
+            "strengths": [],
+            "weaknesses": []
+          },
+          "researchStatus": "constrained",
+          "researchReason": ">-",
+          "researchCheckedAt": "2026-08-11",
+          "note": ">-"
+        },
         "decision": {
           "bestFor": [
             "katze",
@@ -16493,6 +16719,13 @@
           "zuverlaessigkeit": 3.65,
           "sicherheit": 3.65,
           "preisleistung": 4
+        },
+        "externalEvidence": {
+          "status": "constrained",
+          "userReviews": [
+            "platform: \"Desertcart"
+          ],
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -16747,6 +16980,23 @@
           "sicherheit": 3.7,
           "preisleistung": 4.3
         },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"The Spruce Pets"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Einfache lokale Zeitplanung und zuverlässige Grundfunktion sind die wiederkehrenden Stärken."
+            ],
+            "weaknesses": [
+              "finding: \"Portionsmenge und Manipulationssicherheit hängen vom Futter und vom Verhalten der Katze ab."
+            ],
+            "editorialAssessment": ">-"
+          }
+        },
         "decision": {
           "bestFor": [
             "Katzen und kleine Hunde mit Trockenfutter",
@@ -16986,6 +17236,24 @@
         "recommendationStatus": "limited",
         "maintenanceStatus": "complete",
         "ratings": "{ sicherheit: 3.8, platz: 3.1, reinigung: 4.0, folgekosten: 2.8, datenschutz: 2.8 }",
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Cats.com",
+            "publisher: \"Good Housekeeping"
+          ],
+          "userReviews": [
+            "platform: \"Whisker"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Reinigungskomfort, Geruchskontrolle und Monitoring sind die am besten gestützten Stärken."
+            ],
+            "weaknesses": [
+              "finding: \"Hoher Preis sowie noch nicht durchgehend reife Software- und Kamera-Funktionen sind die wiederkehrenden Gegenargumente."
+            ],
+            "editorialAssessment": ">-"
+          }
+        },
         "decision": {
           "bestFor": [
             "Katzen zwischen rund 1",
@@ -17144,6 +17412,14 @@
           "reinigung": 4.1,
           "folgekosten": 3.8,
           "datenschutz": 3.9
+        },
+        "externalEvidence": {
+          "status": "constrained",
+          "userReviews": [
+            "platform: \"Chewy",
+            "platform: \"Best Buy"
+          ],
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -17370,6 +17646,24 @@
         },
         "rating": 3.9,
         "ratings": "{ sicherheit: 4.0, platz: 3.5, reinigung: 3.8, folgekosten: 3.6, datenschutz: 3.5 }",
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"heise bestenlisten"
+          ],
+          "userReviews": [
+            "platform: \"Rakuten",
+            "platform: \"Rentio"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Die offene Bauform und zuverlässige automatische Reinigung sind die am besten gestützten Stärken."
+            ],
+            "weaknesses": [
+              "finding: \"Große Stellfläche, Streuverteilung und Reinigungsbedarf an Randbereichen bleiben reale Gegenpunkte."
+            ],
+            "editorialAssessment": ">-"
+          }
+        },
         "decision": {
           "bestFor": [
             "offene Bauform",
@@ -17553,6 +17847,13 @@
           "reinigung": 3.75,
           "lautstaerke": 3.9,
           "preisleistung": 3.7
+        },
+        "externalEvidence": {
+          "status": "constrained",
+          "userReviews": [
+            "platform: \"Desertcart"
+          ],
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -17787,6 +18088,21 @@
           "reinigung": 3.5,
           "zuverlässigkeit": 3.7,
           "preisleistung": 4.1
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"WIRED"
+          ],
+          "userReviews": [],
+          "researchStatus": "constrained",
+          "researchReason": ">-",
+          "researchCheckedAt": "2026-08-11",
+          "consensus": {
+            "strengths": [],
+            "weaknesses": [],
+            "editorialAssessment": ">-"
+          },
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -18097,6 +18413,11 @@
           "akku": 4.3,
           "zuverlaessigkeit": 4.2,
           "preisleistung": 4.5
+        },
+        "externalEvidence": {
+          "status": "constrained",
+          "constrained": true,
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -18665,6 +18986,23 @@
           "sicherheit": 3.35,
           "preisleistung": 4
         },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Catster"
+          ],
+          "userReviews": [
+            "platform: \"Trustpilot / oneisall.com"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Einfache Einrichtung und unkomplizierte tägliche Bedienung sind das belastbarste wiederkehrende Signal."
+            ],
+            "weaknesses": [
+              "finding: \"Für Langzeitzuverlässigkeit des exakt abgegrenzten 5-Liter-Modells ist die unabhängige Datenbasis noch begrenzt."
+            ],
+            "editorialAssessment": ">-"
+          }
+        },
         "decision": {
           "bestFor": [
             "zwei friedlich fressende Katzen",
@@ -18926,6 +19264,20 @@
           "kapazitaet": 4.8,
           "zuverlaessigkeit": 4,
           "preisleistung": 4.1
+        },
+        "externalEvidence": {
+          "professionalReviews": [],
+          "userReviews": [
+            "platform: \"Walmart"
+          ],
+          "consensus": {
+            "strengths": [],
+            "weaknesses": []
+          },
+          "researchStatus": "constrained",
+          "researchReason": ">-",
+          "researchCheckedAt": "2026-08-11",
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -19220,6 +19572,23 @@
           "strom_und_ausfallverhalten": 3.3,
           "systemabhaengigkeit_und_folgekosten": 2.5
         },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"That Cat Flap Company"
+          ],
+          "userReviews": [
+            "platform: \"Trustpilot"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Die Beuteerkennung ist in den verfügbaren externen Signalen der klarste und wiederkehrend bestätigte Nutzwert."
+            ],
+            "weaknesses": [
+              "finding: \"Preis, Passform der Öffnung und Einbauaufwand sind die wiederkehrenden Gegenargumente."
+            ],
+            "editorialAssessment": ">-"
+          }
+        },
         "decision": "{ bestFor: [\"Wiederkehrender Beuteeintrag\", \"App-Steuerung und Videoereignisse\", \"Individuelle Richtungsregeln\"], attention: [\"USB-C-Netzstrom am Einbauort\", \"WLAN für Einrichtung und App\", \"Abo-Version benötigt laufendes Abo\"] }",
         "review": "{ summary: \"OnlyCat kombiniert die Klappe und Beuteerkennung in einem System.\", verdict: \"Der klarste Komplettsystem-Intent für Beuteerkennung; die höhere Strom-, WLAN- und Kostenabhängigkeit muss bewusst passen.\" }",
         "strengths": [
@@ -19394,6 +19763,23 @@
           "tragekomfort": 4.2,
           "kosten": 4.4,
           "wasserschutz": 3.8
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"gpstracker-tests.de"
+          ],
+          "userReviews": [
+            "platform: \"Trustpilot / PAJ GPS"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Einfache Bedienung und brauchbare Ortungsleistung sind die konsistentesten externen Signale."
+            ],
+            "weaknesses": [
+              "finding: \"Abo-Abhängigkeit und vereinzelte Hardware- beziehungsweise Verbindungsprobleme bleiben relevante Gegenpunkte."
+            ],
+            "editorialAssessment": ">-"
+          }
         },
         "decision": {
           "bestFor": [
@@ -19766,6 +20152,18 @@
           "zuverlaessigkeit": 3.35,
           "sicherheit": 3.6,
           "preisleistung": 3.6
+        },
+        "externalEvidence": {
+          "professionalReviews": [],
+          "userReviews": [],
+          "consensus": {
+            "strengths": [],
+            "weaknesses": []
+          },
+          "researchStatus": "constrained",
+          "researchReason": ">-",
+          "researchCheckedAt": "2026-08-11",
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -20253,6 +20651,14 @@
           "hygiene": 4.3,
           "preisleistung": 3.8
         },
+        "externalEvidence": {
+          "status": "constrained",
+          "constrained": true,
+          "userReviews": [
+            "platform: \"Petco"
+          ],
+          "note": ">-"
+        },
         "decision": {
           "bestFor": [
             "eine Katze oder einen kleinen Hund",
@@ -20583,6 +20989,14 @@
           "lautstaerke": 3.8,
           "preisleistung": 3.6
         },
+        "externalEvidence": {
+          "status": "constrained",
+          "constrained": true,
+          "userReviews": [
+            "platform: \"Trustpilot / PETKIT"
+          ],
+          "note": ">-"
+        },
         "decision": {
           "bestFor": [
             "eine Katze",
@@ -20809,6 +21223,23 @@
           "lautstaerke": 4.15,
           "smartfunktionen": 4.2,
           "preisleistung": 3.65
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"PetTech AI"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Leiser Betrieb und leichte Reinigung sind die stabilsten wiederkehrenden Stärken."
+            ],
+            "weaknesses": [
+              "finding: \"App-Verbindung und individuelle Akzeptanz durch das Tier bleiben die wichtigsten Unsicherheiten."
+            ],
+            "editorialAssessment": ">-"
+          }
         },
         "decision": {
           "bestFor": [
@@ -21050,6 +21481,23 @@
           "reinigung": 3.9,
           "lautstaerke": 4.05,
           "preisleistung": 3.85
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"WIRED"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Sehr leiser Betrieb und flexible kabellose Aufstellung gehören zu den am besten gestützten Vorteilen."
+            ],
+            "weaknesses": [
+              "finding: \"App-Einrichtung und Sensorik können im Einzelfall erklärungsbedürftig sein."
+            ],
+            "editorialAssessment": ">-"
+          }
         },
         "decision": {
           "bestFor": [
@@ -21294,6 +21742,23 @@
           "smartfunktionen": 4.1,
           "preisleistung": 4.3
         },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"AvailPet"
+          ],
+          "userReviews": [
+            "platform: \"Wayfair"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Leiser Betrieb und einfache Reinigung werden von professioneller und Nutzerseite konsistent bestätigt."
+            ],
+            "weaknesses": [
+              "finding: \"Der Smart-Mehrwert bleibt begrenzt, wenn Bluetooth-App und Zusatzmodi nicht benötigt werden."
+            ],
+            "editorialAssessment": ">-"
+          }
+        },
         "decision": {
           "bestFor": [
             "eine bis zwei Katzen",
@@ -21524,6 +21989,23 @@
           "reinigung": 3.75,
           "lautstaerke": 3.9,
           "preisleistung": 3.7
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"AvailPet"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Sehr leiser Betrieb und einfache Reinigung sind über unabhängige Review- und Nutzerquellen hinweg konsistent."
+            ],
+            "weaknesses": [
+              "finding: \"Die Bezeichnung der kabellosen Pumpe kann zu falschen Erwartungen an einen Akkubetrieb des gesamten Brunnens führen."
+            ],
+            "editorialAssessment": ">-"
+          }
         },
         "decision": {
           "bestFor": [
@@ -21768,6 +22250,24 @@
           "smartfunktionen": 4.5,
           "tiererkennung": 3.8,
           "preisleistung": 3.6
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"The Verge"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Frisch-/Abwassertrennung und individuelle Trinkbeobachtung sind die klarsten Differenzierungsmerkmale."
+            ],
+            "weaknesses": [
+              "finding: \"App-Abhängigkeit und Tiererkennung sind in der frühen Nutzerbasis noch nicht durchgehend verlässlich."
+            ],
+            "editorialAssessment": ">-"
+          },
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -22112,6 +22612,14 @@
           "sicherheit": 4,
           "preisleistung": 3.65
         },
+        "externalEvidence": {
+          "status": "constrained",
+          "constrained": true,
+          "professionalReviews": [
+            "publisher: \"PetTech AI"
+          ],
+          "note": ">-"
+        },
         "decision": {
           "bestFor": [
             "katze",
@@ -22335,6 +22843,14 @@
           "zuverlaessigkeit": 4,
           "sicherheit": 4.1,
           "preisleistung": 4.1
+        },
+        "externalEvidence": {
+          "constrained": true,
+          "status": "constrained",
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -22620,6 +23136,26 @@
         },
         "rating": 3.8,
         "ratings": "{ sicherheit: 3.9, platz: 3.2, reinigung: 3.9, folgekosten: 3.0, datenschutz: 2.7 }",
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Tom's Guide"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Kamera, App-Protokolle und Geruchskontrolle sind die am klarsten wiederkehrenden Stärken."
+            ],
+            "weaknesses": [
+              "finding: \"Innenraumgröße, kleiner Abfallbehälter und einzelne Automatik- beziehungsweise Akzeptanzprobleme begrenzen die Alltagstauglichkeit."
+            ],
+            "editorialAssessment": ">-",
+            "contradictions": [
+              "Tom's Guide bewertet die Überwachungsfunktionen sehr positiv; einzelne Chewy-Nutzer empfinden Teile der Analyse als weniger aussagekräftig und berichten von Automatikproblemen."
+            ]
+          }
+        },
         "decision": {
           "bestFor": [
             "Mehrkatzenhaushalte mit unterscheidbaren Tierprofilen",
@@ -23198,6 +23734,24 @@
           "reinigung": 4,
           "kamera": 4.2
         },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"PetTech AI"
+          ],
+          "userReviews": [
+            "platform: \"TikTok Shop"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Kamera, Zeitplanung und visuelle Mahlzeitenkontrolle sind der klar erkennbare Mehrwert des Solo 2."
+            ],
+            "weaknesses": [
+              "finding: \"Die AI-Zuordnung ist keine physische Zugangskontrolle und die Langzeitzuverlässigkeit des jungen Modells ist noch nicht belastbar."
+            ],
+            "editorialAssessment": ">-"
+          },
+          "note": ">-"
+        },
         "decision": {
           "bestFor": [
             "Katzen und kleine Hunde mit Trockenfutter",
@@ -23499,6 +24053,26 @@
           "sicherheit": 3.8,
           "preisleistung": 3.95
         },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Cat Food Dispensers Reviews",
+            "publisher: \"The Spruce Pets"
+          ],
+          "userReviews": [
+            "platform: \"Chewy",
+            "platform: \"Walmart"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Einfache Programmierung und zuverlässige zeitgesteuerte Trockenfutter-Portionierung sind über professionelle Tests und Nutzerquellen konsistent.",
+              "finding: \"Reinigung und geschützte Bedienelemente sind wiederkehrende praktische Stärken."
+            ],
+            "weaknesses": [
+              "finding: \"Der Air ist auf Trockenfutter beschränkt und bewusst einfacher als appbasierte Modelle."
+            ],
+            "editorialAssessment": ">-"
+          }
+        },
         "decision": {
           "bestFor": [
             "katze",
@@ -23727,6 +24301,17 @@
           "sicherheit": 4.2,
           "akku": 4.5,
           "preisleistung": 4.2
+        },
+        "externalEvidence": {
+          "constrained": true,
+          "status": "constrained",
+          "professionalReviews": [
+            "publisher: \"The Spruce Pets"
+          ],
+          "userReviews": [
+            "platform: \"PetSmart"
+          ],
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -24064,6 +24649,27 @@
           "kapazitaet": 4.25,
           "preisleistung": 3.8
         },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"WIRED"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Großer Tank, leiser Betrieb und geringe Spritzneigung werden von professioneller Review und Käufern übereinstimmend bestätigt."
+            ],
+            "weaknesses": [
+              "finding: \"Regelmäßige Reinigung und kurze Filterintervalle erzeugen spürbaren Wartungsaufwand und Folgekosten.",
+              "finding: \"Der Kunststoffaufbau ist pflegeintensiver als eine vollständig metallische Lösung."
+            ],
+            "editorialAssessment": ">-",
+            "contradictions": [
+              "Viele Käufer bewerten die Reinigung als einfach, während andere den häufigen Wartungsrhythmus und das Handling des gefüllten Tanks als belastend empfinden."
+            ]
+          }
+        },
         "decision": {
           "bestFor": [
             "mittelgroße und große Hunde",
@@ -24330,6 +24936,26 @@
           "reinigung": 4,
           "tracking": 4.4,
           "preisleistung": 3.9
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Cats.com"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Leiser Betrieb, einfache Reinigung und flexible kabellose Aufstellung sind die konsistentesten Stärken."
+            ],
+            "weaknesses": [
+              "finding: \"Der Sensormodus ist nicht für jede Katze ideal und Smart-Konnektivität kann im Alltag störanfällig sein."
+            ],
+            "editorialAssessment": ">-",
+            "contradictions": [
+              "Cats.com bewertet den Cordless-Modus technisch positiv, beobachtet aber geringe Akzeptanz bei den eigenen Katzen; Nutzerberichte konzentrieren sich stärker auf Konnektivität und Batterieanzeigen."
+            ]
+          }
         },
         "decision": {
           "bestFor": [
@@ -24629,6 +25255,26 @@
           "tracking": 4.3,
           "preisleistung": 4
         },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"PETBOOK"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Leiser Betrieb, einfache Reinigung und nützliche Trinkstatistiken werden über beide Quellen hinweg bestätigt."
+            ],
+            "weaknesses": [
+              "finding: \"App- und Verbindungsqualität sind der deutlichste wiederkehrende Schwachpunkt."
+            ],
+            "editorialAssessment": ">-",
+            "contradictions": [
+              "Professioneller Test bewertet die App grundsätzlich als hilfreich, während ein Teil der Käufer von Verbindungs- und Zuverlässigkeitsproblemen berichtet."
+            ]
+          }
+        },
         "decision": {
           "bestFor": [
             "eine Katze mit festem Brunnenplatz in Steckdosennähe",
@@ -24909,6 +25555,26 @@
           "lautstaerke": 4.05,
           "preisleistung": 3.85
         },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Cats.com"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Kabellose Flexibilität, leiser Betrieb und unkomplizierte Reinigung sind über Test und große Nutzerbasis hinweg gut belegt."
+            ],
+            "weaknesses": [
+              "finding: \"Sensorbetrieb und Lade- beziehungsweise Langzeitzuverlässigkeit sind die wiederkehrenden Schwachstellen."
+            ],
+            "editorialAssessment": ">-",
+            "contradictions": [
+              "Der professionelle Test bewertet den Sensorbetrieb als funktional, während einzelne Käufer von Erkennungsproblemen bei bestimmten Katzen berichten."
+            ]
+          }
+        },
         "decision": {
           "bestFor": [
             "eine bis zwei Katzen",
@@ -25157,6 +25823,23 @@
           "smartfunktionen": 4.2,
           "preisleistung": 3.7
         },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"WIRED"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Individuelles RFID-Trinktracking ist der klare Mehrwert gegenüber normalen Smart-Fountains."
+            ],
+            "weaknesses": [
+              "finding: \"Das System ist vom RFID-Anhänger und korrekter Erkennung abhängig."
+            ],
+            "editorialAssessment": ">-"
+          }
+        },
         "decision": {
           "bestFor": [
             "Mehrkatzenhaushalte",
@@ -25403,6 +26086,22 @@
           "reinigung": 3.85,
           "lautstaerke": 4,
           "preisleistung": 3.75
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Floppycats"
+          ],
+          "userReviews": [
+            "platform: \"Best Buy"
+          ],
+          "consensus": {
+            "strengths": [],
+            "weaknesses": []
+          },
+          "researchStatus": "constrained",
+          "researchReason": ">-",
+          "researchCheckedAt": "2026-08-11",
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -25662,6 +26361,11 @@
           "portionierung": 4.5,
           "tracking": 4.5,
           "preisleistung": 3.7
+        },
+        "externalEvidence": {
+          "constrained": true,
+          "status": "constrained",
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -26252,6 +26956,14 @@
           "sicherheit": 3.8,
           "preisleistung": 4.4
         },
+        "externalEvidence": {
+          "constrained": true,
+          "status": "constrained",
+          "userReviews": [
+            "platform: \"PetSmart"
+          ],
+          "note": ">-"
+        },
         "decision": {
           "bestFor": [
             "Zwei Katzen mit ähnlichem Futterbedarf",
@@ -26507,6 +27219,26 @@
           "zuverlaessigkeit": 4.05,
           "sicherheit": 4.05,
           "preisleistung": 4.05
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"FurryAdvisor"
+          ],
+          "userReviews": [
+            "platform: \"Best Buy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Der Granary WiFi bietet eine gut dokumentierte Kombination aus 5-Liter-Vorrat, Zeitplänen und App-Steuerung; Nutzer bestätigen überwiegend die zuverlässige Kernfunktion."
+            ],
+            "weaknesses": [
+              "finding: \"Netzwerk- und App-Abhängigkeit bleiben die am klarsten belegte praktische Schwäche."
+            ],
+            "editorialAssessment": ">-",
+            "contradictions": [
+              "Die Dokumentationsanalyse kann keine reale App-Stabilität messen; die Käuferberichte zeigen hierzu sowohl problemlose Nutzung als auch Verbindungsprobleme."
+            ]
+          }
         },
         "decision": {
           "bestFor": [
@@ -26810,6 +27542,24 @@
           "sicherheit": 3.9,
           "preisleistung": 3.45
         },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"WIRED"
+          ],
+          "userReviews": [
+            "platform: \"Shop"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Die RFID-Zugangskontrolle löst Futterdiebstahl und getrennte Diäten in passenden Mehrtierhaushalten überzeugend."
+            ],
+            "weaknesses": [
+              "finding: \"Napf- und Abdeckungsgeometrie können den Zugriff auf Futter am hinteren Rand erschweren."
+            ],
+            "editorialAssessment": ">-"
+          },
+          "note": ">-"
+        },
         "decision": {
           "bestFor": [
             "katze",
@@ -27031,6 +27781,25 @@
           "zuverlaessigkeit": 4,
           "sicherheit": 4.4,
           "preisleistung": 3.7
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Reviewed",
+            "publisher: \"Cats.com"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Aktive Kühlung ist der klar belegte Kernvorteil gegenüber einfachen Kühlakku-Lösungen."
+            ],
+            "weaknesses": [
+              "finding: \"Platzbedarf und begrenzte Mahlzeitenzahl schränken die Flexibilität ein."
+            ],
+            "editorialAssessment": ">-"
+          },
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -27259,6 +28028,24 @@
         },
         "rating": 3.7,
         "ratings": "{ bild: 4.0, datenschutz: 2.7, folgekosten: 2.5, alltag: 3.8 }",
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"WIRED"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Bildqualität, Live-Zugriff und die übersichtliche App sind die am besten gestützten Stärken."
+            ],
+            "weaknesses": [
+              "finding: \"AI-Mehrwert und Ereigniserkennung sind weniger zuverlässig als die Basiskamera; der volle Funktionsumfang ist zudem abonnementabhängig."
+            ],
+            "editorialAssessment": ">-"
+          },
+          "note": ">-"
+        },
         "decision": {
           "bestFor": [
             "fester Innenbereich",
@@ -27441,6 +28228,21 @@
           "zuverlaessigkeit": 4.1,
           "sicherheit": 4.3,
           "preisleistung": 3.9
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Reviewed",
+            "publisher: \"Mic"
+          ],
+          "userReviews": [],
+          "consensus": {
+            "strengths": [],
+            "weaknesses": []
+          },
+          "researchStatus": "constrained",
+          "researchReason": ">-",
+          "researchCheckedAt": "2026-08-11",
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -27716,6 +28518,23 @@
           "smartfunktionen": 2.85,
           "preisleistung": 3.9
         },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Cat Food Dispensers Reviews"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Edelstahl-Trinkfläche, leiser Betrieb und gute Tierakzeptanz sind die am besten gestützten Stärken."
+            ],
+            "weaknesses": [
+              "finding: \"Pumpe und kleinere Kunststoffkomponenten bleiben die wichtigsten Wartungsrisiken."
+            ],
+            "editorialAssessment": ">-"
+          }
+        },
         "decision": {
           "bestFor": [
             "Katzen",
@@ -27953,6 +28772,27 @@
           "preisleistung": 3.9,
           "reinigung": 4.6,
           "nassfutter": 4.8
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Her Cozy Crew",
+            "publisher: \"Spchlang"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Aktive Kühlung und vorbereitete zeitgesteuerte Nass- oder Frischfuttermahlzeiten funktionieren in mehreren Quellen als klarer Alltagsvorteil.",
+              "finding: \"Einrichtung und App-Steuerung werden überwiegend als unkompliziert beschrieben."
+            ],
+            "weaknesses": [
+              "finding: \"Napfform und Bauhöhe können für einzelne Katzen unpassend sein.",
+              "finding: \"Die Nutzerbasis ist wegen vieler incentivierter Frühbewertungen noch kein starker Beleg für Langzeitzuverlässigkeit."
+            ],
+            "editorialAssessment": ">-"
+          },
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -28212,6 +29052,23 @@
           "reinigung": 4.4,
           "portionierung": 4.6,
           "offline": 4.8
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"KittyClysm"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Zuverlässige Zeitpläne, große Kapazität und flexible Portionierung sind über Hands-on- und Nutzerquellen gut gestützt."
+            ],
+            "weaknesses": [
+              "finding: \"Die Bedienoberfläche ist weniger intuitiv als bei App-Feedern und der Futtertyp muss zum Ausgabemechanismus passen."
+            ],
+            "editorialAssessment": ">-"
+          }
         },
         "decision": {
           "bestFor": [
@@ -28473,6 +29330,25 @@
           "beste-mikrochip-katzenklappen"
         ],
         "comparisonFilters": "{ animal: [\"cat\"], petSize: [\"small\"], foodType: [], app: false, access: \"microchip\", priceTier: \"midrange\" }",
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Haus & Garten Test"
+          ],
+          "userReviews": [
+            "platform: \"Zooplus"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Wenn Chiperkennung und Verriegelung korrekt arbeiten, erfüllt die Klappe den vorgesehenen selektiven Zutritt."
+            ],
+            "weaknesses": [
+              "finding: \"Die Langzeit- und Nutzererfahrung ist deutlich gemischter als die Fachtest-Einordnung; Entriegelung und Chiperkennung sind die zentralen Risikopunkte."
+            ],
+            "editorialAssessment": ">-",
+            "Die Quellen widersprechen sich substanziell": "Der Fachtest bewertet Funktion und Bedienung sehr gut,"
+          },
+          "note": ">-"
+        },
         "specs": [
           "{ label: \"Chipformat\", value: \"FDX-B, 15-stellig; Kompatibilitätsprüfung empfohlen\" }",
           "{ label: \"Speicher\", value: \"Bis zu 40 Katzen\" }",
@@ -28583,6 +29459,24 @@
             "src: \"../../assets/images/products/petsafe-petporte-smart-flap/gallery-2.webp",
             "src: \"../../assets/images/products/petsafe-petporte-smart-flap/gallery-3.webp"
           ]
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Tailster"
+          ],
+          "userReviews": [],
+          "consensus": {
+            "strengths": [
+              "finding: \"Netzbetrieb mit Backup-Option, solide Verarbeitung und grundlegende Mikrochip-Zugangskontrolle sind plausibel und im Review konkret beschrieben."
+            ],
+            "weaknesses": [
+              "finding: \"Für Sicherheit gegen besonders geschickte Eindringlinge ist die ältere Single-Scan-Konstruktion schwächer als moderne Dual-Scan-Lösungen."
+            ],
+            "editorialAssessment": ">-"
+          },
+          "status": "constrained",
+          "constrained": true,
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -28840,6 +29734,23 @@
           "preisleistung": 4.1,
           "reinigung": 4.4,
           "portionierung": 4.6
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Tom's Guide"
+          ],
+          "userReviews": [
+            "platform: \"Chewy"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"App-Zeitpläne, Fernfütterung und große Kapazität sind über Review und Nutzerbasis gut belegt."
+            ],
+            "weaknesses": [
+              "finding: \"WLAN-Stabilität und Futterkompatibilität sind die wichtigsten wiederkehrenden Einschränkungen."
+            ],
+            "editorialAssessment": ">-"
+          }
         },
         "decision": {
           "bestFor": [
@@ -29107,6 +30018,13 @@
           "katzenklappen-mit-app-und-beuteerkennung"
         ],
         "comparisonFilters": "{ animal: [\"cat\", \"dog\"], petSize: [\"small\", \"medium\"], foodType: [], app: true, access: \"microchip\", backupPower: true, priceTier: \"premium\" }",
+        "externalEvidence": {
+          "professionalReviews": [],
+          "userReviews": [],
+          "status": "constrained",
+          "constrained": true,
+          "note": ">-"
+        },
         "specs": [
           "{ label: \"Produktart\", value: \"Motorisierte Tiertür Medium\" }",
           "{ label: \"Erkennung\", value: \"Bewegungs- und Chip-Erkennung\" }",
@@ -29244,6 +30162,24 @@
           "zuverlaessigkeit": 3.95,
           "sicherheit": 4.3,
           "preisleistung": 3.35
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Expert Reviews",
+            "publisher: \"Tech Advisor"
+          ],
+          "userReviews": [
+            "platform: \"Zooplus UK"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Selektiver Mikrochip-Zugang und individuelle Futterprotokollierung lösen reale Mehrtierprobleme."
+            ],
+            "weaknesses": [
+              "finding: \"Preis, Hub-Abhängigkeit und Zusatzkosten sind klare Nachteile."
+            ],
+            "editorialAssessment": ">-"
+          }
         },
         "decision": {
           "bestFor": [
@@ -29481,6 +30417,23 @@
           "sicherheit": 5,
           "preisleistung": 4.5
         },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Tech Advisor"
+          ],
+          "userReviews": [
+            "platform: \"Zooplus"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Die selektive Futterfreigabe löst das Problem unterschiedlicher Diäten in Mehrtierhaushalten nachweislich gut."
+            ],
+            "weaknesses": [
+              "finding: \"Der hohe Preis und mögliche Umgehung durch sehr geschickte Zweittiere sind die wichtigsten Grenzen."
+            ],
+            "editorialAssessment": ">-"
+          }
+        },
         "decision": {
           "bestFor": [
             "Mehrkatzenhaushalte mit Futterklau",
@@ -29702,6 +30655,23 @@
             "src: \"../../assets/images/products/sureflap-dualscan-mikrochip-katzenklappe/gallery-2.webp",
             "src: \"../../assets/images/products/sureflap-dualscan-mikrochip-katzenklappe/gallery-3.webp"
           ]
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Tailster"
+          ],
+          "userReviews": [
+            "platform: \"Zooplus"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Selektive Ein- und Ausgangsrechte und die gegenüber der Standardklappe erhöhte Zutrittskontrolle sind gut gestützt."
+            ],
+            "weaknesses": [
+              "finding: \"Größe, Entriegelungsgeräusch und mechanische Umgehung durch einzelne Tiere bleiben reale Grenzen."
+            ],
+            "editorialAssessment": ">-"
+          }
         },
         "decision": {
           "bestFor": [
@@ -29936,6 +30906,23 @@
           "testedHandsOn": false,
           "lastVerifiedAt": "2026-08-05",
           "note": "Bewertung auf Basis von Herstellerunterlagen und Vergleichsdaten; keine eigene Nutzungserfahrung."
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Expert Reviews"
+          ],
+          "userReviews": [
+            "platform: \"Zooplus"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"App-Protokolle und Fernfunktionen erweitern die bewährte Mikrochip-Zugangskontrolle sinnvoll."
+            ],
+            "weaknesses": [
+              "finding: \"Preis, Hub-Abhängigkeit und lückenhafte Aktivitätsdaten bei alternativen Wegen begrenzen den Mehrwert."
+            ],
+            "editorialAssessment": ">-"
+          }
         },
         "decision": {
           "bestFor": [
@@ -30176,6 +31163,23 @@
           "testedHandsOn": false,
           "lastVerifiedAt": "2026-08-04",
           "note": "Bewertung auf Basis von Herstellerunterlagen und Vergleichsdaten; keine eigene Nutzungserfahrung."
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"Tailster"
+          ],
+          "userReviews": [
+            "platform: \"Zooplus"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Die einfache Mikrochip-Zugangskontrolle ist über professionellen Review und große Nutzerbasis breit gestützt."
+            ],
+            "weaknesses": [
+              "finding: \"Langfristig treten bei einem Teil der Nutzer Probleme mit Erkennung, Batteriebedarf oder Witterungseinfluss auf."
+            ],
+            "editorialAssessment": ">-"
+          }
         },
         "decision": {
           "bestFor": [
@@ -30433,6 +31437,24 @@
           "akku": 4.5,
           "tragekomfort": 4.7,
           "kosten": 4
+        },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"GPS-Tracker-Tests.de"
+          ],
+          "userReviews": [
+            "platform: \"Trustpilot / Tractive"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Ortung, App und die katzenspezifische Bauform sind die am klarsten gestützten Stärken des CAT 6 Mini."
+            ],
+            "weaknesses": [
+              "finding: \"Abo-Kosten und das sicherheitsbedingt lösbare Halsband bleiben reale Trade-offs."
+            ],
+            "editorialAssessment": ">-"
+          },
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -31789,6 +32811,27 @@
           "tragekomfort": 4,
           "kosten": 3.9
         },
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"CHIP",
+            "publisher: \"Dogorama"
+          ],
+          "userReviews": [
+            "platform: \"Trustpilot"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Die unabhängigen XT-Praxistests stimmen bei präzisem Tracking, gutem Sitz und brauchbarer Akkuleistung überein.",
+              "finding: \"Ton, Vibration und Live-Tracking sind im Alltag sinnvolle Zusatzfunktionen."
+            ],
+            "weaknesses": [
+              "finding: \"Das verpflichtende Abo ist ein konsistenter Nachteil des Nutzungskonzepts.",
+              "finding: \"Verbindungsabbrüche und reale Akkulaufzeit können je nach Netz und Nutzung vom Ideal abweichen."
+            ],
+            "editorialAssessment": ">-"
+          },
+          "note": ">-"
+        },
         "decision": {
           "bestFor": [
             "mittelgroße und große Hunde",
@@ -32144,6 +33187,15 @@
           "sicherheit": 3.85,
           "preisleistung": 4.05
         },
+        "externalEvidence": {
+          "status": "constrained",
+          "constrained": true,
+          "professionalReviews": [],
+          "userReviews": [
+            "platform: \"WOPET Produktbewertungen"
+          ],
+          "note": ">-"
+        },
         "decision": {
           "bestFor": [
             "katze",
@@ -32378,6 +33430,15 @@
           "sicherheit": 3.6,
           "preisleistung": 3.6
         },
+        "externalEvidence": {
+          "status": "constrained",
+          "constrained": true,
+          "professionalReviews": [],
+          "userReviews": [
+            "platform: \"WOPET Produktbewertungen"
+          ],
+          "note": ">-"
+        },
         "decision": {
           "bestFor": [
             "katze",
@@ -32607,6 +33668,15 @@
           "zuverlaessigkeit": 3.65,
           "sicherheit": 3.65,
           "preisleistung": 4
+        },
+        "externalEvidence": {
+          "status": "constrained",
+          "constrained": true,
+          "professionalReviews": [],
+          "userReviews": [
+            "platform: \"WOPET Produktbewertungen"
+          ],
+          "note": ">-"
         },
         "decision": {
           "bestFor": [
@@ -32878,6 +33948,15 @@
           "sicherheit": 3.6,
           "preisleistung": 3.95
         },
+        "externalEvidence": {
+          "status": "constrained",
+          "constrained": true,
+          "professionalReviews": [],
+          "userReviews": [
+            "platform: \"WOPET Produktbewertungen"
+          ],
+          "note": ">-"
+        },
         "decision": {
           "bestFor": [
             "katze",
@@ -33122,7 +34201,9 @@
           "preisleistung": 4.7
         },
         "externalEvidence": {
-          "professionalReviews": [],
+          "professionalReviews": [
+            "publisher: \"Ääni & Kuva"
+          ],
           "userReviews": [
             "platform: \"Yandex Reviews"
           ],
@@ -33707,6 +34788,15 @@
           "alltag": 4.2,
           "zuverlaessigkeit": 3.9,
           "preisleistung": 3.7
+        },
+        "externalEvidence": {
+          "status": "constrained",
+          "constrained": true,
+          "professionalReviews": [],
+          "userReviews": [
+            "platform: \"Trustpilot / ZeroMOUSE"
+          ],
+          "note": ">-"
         },
         "decision": {
           "bestFor": [

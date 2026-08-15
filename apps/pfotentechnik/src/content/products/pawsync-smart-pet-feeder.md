@@ -53,11 +53,11 @@ images:
     - src: ../../assets/images/products/pawsync-smart-pet-feeder/gallery-1.webp
       alt: PawSync Smart Pet Feeder, weitere redaktionelle Ansicht 1
 price:
-  current: 49.98
+  current: 49.97
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 15 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-08-03T08:16:08.521Z"
+  checkedAt: "2026-08-15T17:09:04.570Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -72,12 +72,12 @@ rating: 4.6
 score: 91
 
 priceState: "available"
-priceUpdated: "2026-08-03T08:16:08.521Z"
+priceUpdated: "2026-08-15T17:09:04.570Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-03T08:16:08.521Z"
+availabilityUpdated: "2026-08-15T17:09:04.570Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

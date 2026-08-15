@@ -57,10 +57,10 @@ images:
     - src: ../../assets/images/products/oneisall-2-2l-cordless-fountain/gallery-3.webp
       alt: oneisall 2,2L Cordless Cat Fountain im Katzenhaushalt
 price:
-  current: 30.99
+  current: 29.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-07T10:03:53.074Z"
+  checkedAt: "2026-08-15T17:08:45.073Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -75,12 +75,12 @@ rating: 3.8
 score: 76
 
 priceState: "available"
-priceUpdated: "2026-08-07T10:03:53.074Z"
+priceUpdated: "2026-08-15T17:08:45.073Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-07T10:03:53.074Z"
+availabilityUpdated: "2026-08-15T17:08:45.073Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

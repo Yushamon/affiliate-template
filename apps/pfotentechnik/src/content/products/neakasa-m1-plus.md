@@ -22,10 +22,10 @@ tags: ["automatische-katzentoilette", "katze", "offenes-katzenklo", "app", "gros
 images:
   hero: { src: "../../assets/images/products/neakasa-m1-plus/hero.webp", alt: "Neutrale redaktionelle Darstellung einer offenen automatischen Katzentoilette" }
 price:
-  current: 379.99
+  current: 399.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-07T10:03:50.919Z"
+  checkedAt: "2026-08-15T17:08:42.423Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -107,12 +107,12 @@ affiliate:
   rel: "sponsored nofollow noopener"
   target: "_blank"
 priceState: "available"
-priceUpdated: "2026-08-07T10:03:50.919Z"
+priceUpdated: "2026-08-15T17:08:42.423Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-07T10:03:50.919Z"
+availabilityUpdated: "2026-08-15T17:08:42.423Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

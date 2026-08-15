@@ -57,11 +57,11 @@ images:
     - src: ../../assets/images/products/cat-mate-c500/gallery-3.webp
       alt: Cat Mate C500 beim Befüllen
 price:
-  current: 31.99
+  current: 36.17
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 12 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-08-06T09:01:54.196Z"
+  checkedAt: "2026-08-15T17:08:19.035Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -76,12 +76,12 @@ rating: 3.6
 score: 73
 
 priceState: "available"
-priceUpdated: "2026-08-06T09:01:54.196Z"
+priceUpdated: "2026-08-15T17:08:19.035Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-06T09:01:54.196Z"
+availabilityUpdated: "2026-08-15T17:08:19.035Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

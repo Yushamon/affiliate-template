@@ -91,6 +91,7 @@ productSlugs:
   - "petkit-eversweet-max-cordless"
   - "petkit-eversweet-max-2-uvc"
   - "petkit-eversweet-ultra"
+  - "petkit-purobot-max-pro-2"
 profile:
   company: "PETKIT entwickelt ein breites Portfolio vernetzter Haustiergeräte: Futterautomaten, Trinkbrunnen, Katzentoiletten und Zubehör. Die Produkte sind überwiegend auf ein gemeinsames digitales Ökosystem ausgerichtet."
   appEcosystem: "Die PETKIT-App bündelt Fütterung, Wasseraufnahme und weitere kompatible Geräte. Einzelne Bluetooth-Produkte benötigen für Fernzugriff ein kompatibles PETKIT-Hauptgerät; Funktionen bleiben deshalb modellabhängig."
