@@ -1,26 +1,25 @@
 # Comparison Platform Report
 
-Erstellt: 2026-08-15T18:11:56.922Z
+Erstellt: 2026-08-11T11:29:11.360Z
 
 ## Übersicht
 
 - Vergleiche: 28
-- Produkte: 84
+- Produkte: 82
 - Hersteller: 26
 - verwendete Produkte: 57
-- Produktabdeckung: 67.9 %
-- Qualitätsscore: 98/100
+- Produktabdeckung: 69.5 %
+- Qualitätsscore: 99/100
 - Fehler: 0
-- Warnungen: 2
+- Warnungen: 0
 
 ## Häufigste Befunde
 
-- **PRODUCT_NOT_COVERED**: 2 (warning, coverage)
+Keine Befunde.
 
 ## Dateien mit den meisten Problemen
 
-- `src/content/products/enabot-ebo-air-2.md`: 0 Fehler, 1 Warnungen
-- `src/content/products/furbo-360-hundekamera.md`: 0 Fehler, 1 Warnungen
+Keine betroffenen Dateien.
 
 ## Fehler
 
@@ -28,5 +27,4 @@ Keine Fehler.
 
 ## Warnungen
 
-- **PRODUCT_NOT_COVERED** – `src/content/products/enabot-ebo-air-2.md`: Aktives Produkt kommt in keiner Vergleichsseite vor.
-- **PRODUCT_NOT_COVERED** – `src/content/products/furbo-360-hundekamera.md`: Aktives Produkt kommt in keiner Vergleichsseite vor.
+Keine Warnungen.

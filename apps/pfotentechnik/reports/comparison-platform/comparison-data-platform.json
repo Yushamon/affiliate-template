@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T18:11:33.110Z",
+  "generatedAt": "2026-08-11T11:29:10.996Z",
   "minimumComparisons": 26,
   "thresholds": {
     "minimumVisibleRows": 3,
@@ -8,16 +8,16 @@
   "passed": true,
   "summary": {
     "comparisons": 28,
-    "products": 84,
-    "sourceCells": 844,
-    "allResolved": 751,
+    "products": 82,
+    "sourceCells": 847,
+    "allResolved": 754,
     "allUnresolved": 93,
     "sourceCoverage": 89,
-    "renderedCells": 717,
-    "renderedResolved": 717,
+    "renderedCells": 720,
+    "renderedResolved": 720,
     "renderedUnresolved": 0,
     "renderedCoverage": 100,
-    "legacyValueCount": 602,
+    "legacyValueCount": 605,
     "overrideCount": 218
   },
   "failures": [],
@@ -3948,14 +3948,14 @@
       "slug": "beste-haustierkameras",
       "file": "src/content/comparisons/beste-haustierkameras.md",
       "items": 3,
-      "criteria": 6,
-      "visibleRows": 6,
+      "criteria": 7,
+      "visibleRows": 7,
       "hiddenRows": 0,
       "passed": true,
       "rows": [
         {
           "key": "klasse",
-          "label": "Kameraklasse",
+          "label": "Produktklasse",
           "resolved": 3,
           "total": 3,
           "coverage": 100,
@@ -3963,24 +3963,24 @@
           "cells": [
             {
               "product": "petlibro-scout-smart-camera",
-              "value": "Stationaere Pan/Tilt-Pet-Cam",
+              "value": "Feste Schwenk-/Neigekamera",
               "resolved": true
             },
             {
-              "product": "furbo-mini-360",
-              "value": "Stationaere Interaktionskamera",
+              "product": "furbo-360-hundekamera",
+              "value": "Feste Interaktionskamera",
               "resolved": true
             },
             {
-              "product": "enabot-rola-mini",
-              "value": "Mobile Roboterkamera",
+              "product": "enabot-ebo-air-2",
+              "value": "Mobiler Kamera-Roboter",
               "resolved": true
             }
           ]
         },
         {
-          "key": "speicher",
-          "label": "Speicherung / Cloud",
+          "key": "blick",
+          "label": "Blickbereich",
           "resolved": 3,
           "total": 3,
           "coverage": 100,
@@ -3988,42 +3988,17 @@
           "cells": [
             {
               "product": "petlibro-scout-smart-camera",
-              "value": "Cloud-only fuer Video; keine SD-Karte",
+              "value": "1080p, 360-Grad-Schwenken",
               "resolved": true
             },
             {
-              "product": "furbo-mini-360",
-              "value": "Aktuellen Dienstumfang pruefen",
+              "product": "furbo-360-hundekamera",
+              "value": "360-Grad-Sicht und Tracking",
               "resolved": true
             },
             {
-              "product": "enabot-rola-mini",
-              "value": "Nicht belastbar belegt; vor Kauf pruefen",
-              "resolved": true
-            }
-          ]
-        },
-        {
-          "key": "abo",
-          "label": "Abo",
-          "resolved": 3,
-          "total": 3,
-          "coverage": 100,
-          "visible": true,
-          "cells": [
-            {
-              "product": "petlibro-scout-smart-camera",
-              "value": "Cloud-/KI-Funktionen tarifabhaengig",
-              "resolved": true
-            },
-            {
-              "product": "furbo-mini-360",
-              "value": "Optionale Dienste getrennt pruefen",
-              "resolved": true
-            },
-            {
-              "product": "enabot-rola-mini",
-              "value": "Kein Pflichtabo belastbar belegt",
+              "product": "enabot-ebo-air-2",
+              "value": "2K laut Hersteller, beweglicher Standort",
               "resolved": true
             }
           ]
@@ -4042,20 +4017,20 @@
               "resolved": true
             },
             {
-              "product": "furbo-mini-360",
-              "value": "Zwei-Wege-Audio und Leckerliausgabe",
+              "product": "furbo-360-hundekamera",
+              "value": "Audio und Leckerliausgabe",
               "resolved": true
             },
             {
-              "product": "enabot-rola-mini",
-              "value": "App-Fahrt und Zwei-Wege-Audio",
+              "product": "enabot-ebo-air-2",
+              "value": "Fernfahrt und Kamerazugriff",
               "resolved": true
             }
           ]
         },
         {
-          "key": "abdeckung",
-          "label": "Raumabdeckung",
+          "key": "speicher",
+          "label": "Speicherung",
           "resolved": 3,
           "total": 3,
           "coverage": 100,
@@ -4063,24 +4038,24 @@
           "cells": [
             {
               "product": "petlibro-scout-smart-camera",
-              "value": "360-Grad-Schwenken und Neigen",
+              "value": "Cloud; keine SD-Karte",
               "resolved": true
             },
             {
-              "product": "furbo-mini-360",
-              "value": "360-Grad-Rotation am festen Standort",
+              "product": "furbo-360-hundekamera",
+              "value": "App-/Tarifabhängig",
               "resolved": true
             },
             {
-              "product": "enabot-rola-mini",
-              "value": "Mobiler Standort; 137-Grad-Sichtfeld",
+              "product": "enabot-ebo-air-2",
+              "value": "Aktuelle App-Angabe prüfen",
               "resolved": true
             }
           ]
         },
         {
-          "key": "bild",
-          "label": "Bild und Nachtmodus",
+          "key": "abo",
+          "label": "Abo",
           "resolved": 3,
           "total": 3,
           "coverage": 100,
@@ -4088,17 +4063,67 @@
           "cells": [
             {
               "product": "petlibro-scout-smart-camera",
-              "value": "1080p; Farb- und Schwarz-Weiss-Nachtmodus",
+              "value": "KI und Aufzeichnung tarifabhängig",
               "resolved": true
             },
             {
-              "product": "furbo-mini-360",
-              "value": "2K QHD; automatische Nachtsicht",
+              "product": "furbo-360-hundekamera",
+              "value": "Furbo Nanny optional",
               "resolved": true
             },
             {
-              "product": "enabot-rola-mini",
-              "value": "2K (2304 x 1296); Bewegungsaufzeichnung",
+              "product": "enabot-ebo-air-2",
+              "value": "Kein belegter Pflichttarif",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "datenschutz",
+          "label": "Datenschutz",
+          "resolved": 3,
+          "total": 3,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "Manuelle Linsenabdeckung",
+              "resolved": true
+            },
+            {
+              "product": "furbo-360-hundekamera",
+              "value": "Cloud- und Kontoeinstellungen prüfen",
+              "resolved": true
+            },
+            {
+              "product": "enabot-ebo-air-2",
+              "value": "Bewegliche Kamera und Raumfreigaben",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "kosten",
+          "label": "24-Monats-Kosten",
+          "resolved": 3,
+          "total": 3,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "Gerät plus 24 Monatsanteile des gewählten Cloud-Tarifs",
+              "resolved": true
+            },
+            {
+              "product": "furbo-360-hundekamera",
+              "value": "Gerät plus 24 Monatsanteile des gewählten Nanny-Tarifs",
+              "resolved": true
+            },
+            {
+              "product": "enabot-ebo-air-2",
+              "value": "Gerät plus mögliche Akku-/Ersatzteilkosten",
               "resolved": true
             }
           ]

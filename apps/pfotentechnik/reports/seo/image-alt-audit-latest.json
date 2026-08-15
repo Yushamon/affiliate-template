@@ -1,11 +1,11 @@
 {
   "version": "24.1.2",
-  "generatedAt": "2026-08-15T18:12:05.077Z",
+  "generatedAt": "2026-08-06T12:51:32.376Z",
   "mode": "source-and-dist",
   "sourceFilesScanned": 138,
   "distAvailable": true,
-  "distFilesScanned": 322,
-  "rawDistFindings": 293,
+  "distFilesScanned": 317,
+  "rawDistFindings": 277,
   "findings": [
     {
       "scope": "source",
@@ -19,8 +19,8 @@
     {
       "scope": "dist",
       "file": "apps/pfotentechnik/dist/index.html",
-      "line": 3,
-      "tag": "<img src=\"/_astro/guide.pxtardyd_afp0.webp\" srcset=\"/_astro/guide.pxtardyd_Z1HQvfC.webp 320w, /_astro/guide.pxtardyd_afp0.webp 900w\" alt sizes=\"(max-width: 900px) 100vw, 900px\" loading=\"lazy\" decoding=\"async\" data-astro-image=\"constrained\" data-astro-image-fit=\"cover\" data-astro-image-pos=\"center\" width=\"900\" height=\"6",
+      "line": 5,
+      "tag": "<img src=\"/_astro/category.pxtardyd_1lKCR9.webp\" srcset=\"/_astro/category.pxtardyd_ZYwdK7.webp 320w, /_astro/category.pxtardyd_1lKCR9.webp 900w\" alt sizes=\"(max-width: 900px) 100vw, 900px\" loading=\"lazy\" decoding=\"async\" data-astro-image=\"constrained\" data-astro-image-fit=\"cover\" data-astro-image-pos=\"center\" width=\"90",
       "severity": "info",
       "code": "IMAGE_ALT_EMPTY_DECORATIVE",
       "message": "Minimierter leerer Alt-Text. Das Bild wird als dekorativ oder redundant behandelt."
@@ -28,7 +28,7 @@
     {
       "scope": "dist",
       "file": "apps/pfotentechnik/dist/produkt/aqara-smart-pet-feeder-c1/index.html",
-      "line": 3,
+      "line": 6,
       "tag": "<img class=\"pg29-lightbox__thumb-image\" src=\"/_astro/hero.DSDz9MJc_Z202SyK.webp\" width=\"1600\" height=\"900\" alt=\"\" loading=\"lazy\" decoding=\"async\">",
       "severity": "info",
       "code": "IMAGE_ALT_EMPTY_DECORATIVE",
@@ -40,7 +40,7 @@
     "errors": 0,
     "info": 3,
     "source": 1,
-    "distRaw": 293,
+    "distRaw": 277,
     "distUnique": 2,
     "missing": 0
   }
