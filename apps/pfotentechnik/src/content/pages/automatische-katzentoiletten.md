@@ -1,113 +1,119 @@
 ---
-title: "Automatische Katzentoiletten sicher auswählen"
-slug: "automatische-katzentoiletten"
-type: "page"
-layout: "page"
-description: "Cornerstone fuer automatische Katzentoiletten: Funktion, Bauform, Innenraum, Einstieg, Sicherheit, Streu, Wartung, Daten und laufende Kosten vor der Modellwahl klaeren."
+title: Automatische Katzentoiletten sicher auswählen
+slug: automatische-katzentoiletten
+type: page
+layout: page
+description: >-
+  Cornerstone fuer automatische Katzentoiletten: Funktion, Bauform, Innenraum, Einstieg, Sicherheit, Streu, Wartung,
+  Daten und laufende Kosten vor der Modellwahl klaeren.
 seoTitle: "Automatische Katzentoiletten: Sicherheit & Kaufcheck"
-seoDescription: "Selbstreinigende Katzenklos nach Sicherheit, Mindestgewicht, Einstieg, Streu, Platz, App und Drei-Jahres-Kosten auswählen."
-category: "haustiertechnik"
-categoryLabel: "Automatische Katzentoiletten"
-categoryPath: "/wissen/"
+seoDescription: >-
+  Selbstreinigende Katzenklos nach Sicherheit, Mindestgewicht, Einstieg, Streu, Platz, App und Drei-Jahres-Kosten
+  auswählen.
+category: haustiertechnik
+categoryLabel: Automatische Katzentoiletten
+categoryPath: /wissen/
 linking:
   keywords:
-    - "automatische Katzentoiletten"
-    - "selbstreinigendes Katzenklo"
-    - "automatisches Katzenklo"
+    - automatische Katzentoiletten
+    - selbstreinigendes Katzenklo
+    - automatisches Katzenklo
   contexts:
-    - "automatische-katzentoiletten"
-    - "smarte-haustiertechnik"
-    - "katze"
-  priority: "high"
+    - automatische-katzentoiletten
+    - smarte-haustiertechnik
+    - katze
+  priority: high
   maxOccurrences: 2
 tags:
-  - "Automatische Katzentoiletten"
-  - "Katze"
-  - "Sicherheit"
-  - "Reinigung"
-  - "App"
-  - "Kaufberatung"
+  - Automatische Katzentoiletten
+  - Katze
+  - Sicherheit
+  - Reinigung
+  - App
+  - Kaufberatung
 author:
-  name: "PfotenTechnik Redaktion"
-  role: "Redaktion"
-publishedAt: "2026-08-06"
-updatedAt: "2026-08-15"
+  name: PfotenTechnik Redaktion
+  role: Redaktion
+publishedAt: 2026-08-06
+updatedAt: 2026-08-15
 hub:
   sections:
-    - "wissen"
-    - "automatische-katzentoiletten"
-  title: "Automatische Katzentoiletten"
-  description: "Sicherheit, Passform, Streu, Gewöhnung und Gesamtkosten vor dem Modell klären."
-  icon: "🐈"
+    - wissen
+    - automatische-katzentoiletten
+  title: Automatische Katzentoiletten
+  description: Sicherheit, Passform, Streu, Gewöhnung und Gesamtkosten vor dem Modell klären.
+  icon: 🐈
   featured: true
   order: 37
 seo:
   title: "Automatische Katzentoiletten: Sicherheit & Kaufcheck"
-  description: "Selbstreinigende Katzenklos nach Mindestgewicht, Einstieg, Streu, Sicherheit, Platz und Folgekosten auswählen."
-  canonical: "/automatische-katzentoiletten/"
+  description: Selbstreinigende Katzenklos nach Mindestgewicht, Einstieg, Streu, Sicherheit, Platz und Folgekosten auswählen.
+  canonical: /automatische-katzentoiletten/
   sitemap: true
   priority: 0.9
-  changefreq: "monthly"
+  changefreq: monthly
 contentPlatform:
   version: 2
-  cluster: "automatische-katzentoiletten"
-  intent: "buying-guide"
-  animal: "cat"
+  cluster: automatische-katzentoiletten
+  intent: buying-guide
+  animal: cat
   products:
-    - "neakasa-m1-lite"
-    - "devoko-90l-automatisches-katzenklo"
-    - "petlibro-luma-smart-litter-box"
-    - "petkit-purobot-max-pro-2"
-  decision: "auto"
+    - neakasa-m1-lite
+    - devoko-90l-automatisches-katzenklo
+    - petlibro-luma-smart-litter-box
+    - petkit-purobot-max-pro-2
+    - petkit-purobot-max-3
+    - petsnowy-snow-plus
+  decision: auto
   blocks:
-    - "summary"
-    - "comparison"
-    - "fit"
-    - "checklist"
-    - "mistakes"
+    - summary
+    - comparison
+    - fit
+    - checklist
+    - mistakes
   summary:
-    - "Bauform, Innenraum, Einstieg und Mindestgewicht sind Ausschlusskriterien."
-    - "Sicherheitsfunktionen bleiben Herstellerangaben und ersetzen keine Kontrolle."
-    - "Monitoring zeigt Trends, nicht Diagnosen; Cloud und Folgekosten vor Kauf pruefen."
+    - Bauform, Innenraum, Einstieg und Mindestgewicht sind Ausschlusskriterien.
+    - Sicherheitsfunktionen bleiben Herstellerangaben und ersetzen keine Kontrolle.
+    - Monitoring zeigt Trends, nicht Diagnosen; Cloud und Folgekosten vor Kauf pruefen.
   suitableFor:
-    - "Katzen über dem dokumentierten Mindestgewicht"
-    - "Haushalte mit passender Stellfläche und kompatibler Streu"
-    - "langsame Gewöhnung mit weiterhin verfügbarem altem Klo"
+    - Katzen über dem dokumentierten Mindestgewicht
+    - Haushalte mit passender Stellfläche und kompatibler Streu
+    - langsame Gewöhnung mit weiterhin verfügbarem altem Klo
   notSuitableFor:
-    - "unbestätigtes Mindestgewicht"
-    - "Ersatz der täglichen Sichtkontrolle"
-    - "sofortiger Zwangswechsel bei ängstlichen Katzen"
+    - unbestätigtes Mindestgewicht
+    - Ersatz der täglichen Sichtkontrolle
+    - sofortiger Zwangswechsel bei ängstlichen Katzen
   checklist:
-    - "Katzengewicht und Alter pruefen"
-    - "Einstieg und nutzbaren Innenraum beurteilen"
-    - "Streu-Freigabe lesen"
-    - "Sicherheits- und Offline-Verhalten verstehen"
-    - "Beutel, Filter und Dienste einrechnen"
+    - Katzengewicht und Alter pruefen
+    - Einstieg und nutzbaren Innenraum beurteilen
+    - Streu-Freigabe lesen
+    - Sicherheits- und Offline-Verhalten verstehen
+    - Beutel, Filter und Dienste einrechnen
   mistakes:
-    - "Aussenvolumen mit Nutzraum verwechseln"
-    - "Kitten-Modus als Automatikfreigabe lesen"
-    - "jede Klumpstreu als kompatibel annehmen"
-    - "Monitoring als Diagnose behandeln"
-    - "Wartung und Verbrauchsmaterial unterschätzen"
-  faqMode: "manual"
-  theme: "amber"
+    - Aussenvolumen mit Nutzraum verwechseln
+    - Kitten-Modus als Automatikfreigabe lesen
+    - jede Klumpstreu als kompatibel annehmen
+    - Monitoring als Diagnose behandeln
+    - Wartung und Verbrauchsmaterial unterschätzen
+  faqMode: manual
+  theme: amber
 decisionJourney:
-  cluster: "automatische-katzentoiletten"
-  stage: "orientation"
-  intent: "automatische-katzentoilette-sicher-auswaehlen"
-  primaryQuestion: "Passen Sicherheitsgrenzen, Bauform, Einstieg, Streu und Stellplatz zu meiner Katze?"
+  cluster: automatische-katzentoiletten
+  stage: orientation
+  intent: automatische-katzentoilette-sicher-auswaehlen
+  primaryQuestion: Passen Sicherheitsgrenzen, Bauform, Einstieg, Streu und Stellplatz zu meiner Katze?
   next:
-    - "/vergleiche/beste-automatische-katzentoiletten/"
+    - /vergleiche/beste-automatische-katzentoiletten/
   fallback:
-    - "/smarte-haustiertechnik/"
+    - /smarte-haustiertechnik/
 evidenceSources:
-  - source: "PETLIBRO und PETKIT Primärquellen"
-    url: "https://de.petlibro.com/products/luma-intelligente-selbstreinigende-katzentoilette-exclusive"
-    accessedAt: "2026-08-15"
-    assertion: "Der Hub verwendet Produktgrenzen nur als Beispiele; die konkrete Modellentscheidung liegt im Vergleich."
+  - source: PETLIBRO und PETKIT Primärquellen
+    url: https://de.petlibro.com/products/luma-intelligente-selbstreinigende-katzentoilette-exclusive
+    accessedAt: 2026-08-15
+    assertion: Der Hub verwendet Produktgrenzen nur als Beispiele; die konkrete Modellentscheidung liegt im Vergleich.
     fields:
-      - "contentPlatform"
-      - "decisionJourney"
+      - contentPlatform
+      - decisionJourney
 ---
 
 ## Wie selbstreinigende Katzentoiletten funktionieren
@@ -160,3 +166,15 @@ Herstellerintervalle wie „bis zu 7 oder 17 Tage“ sind Maximalangaben und ver
 Der [Vergleich automatischer Katzentoiletten](/vergleiche/beste-automatische-katzentoiletten/) ordnet vier unterschiedliche Kaufrollen ein: [Neakasa M1 Lite](/produkt/neakasa-m1-lite/), [Devoko 90L](/produkt/devoko-90l-automatisches-katzenklo/), [PETLIBRO Luma](/produkt/petlibro-luma-smart-litter-box/) und [PETKIT PUROBOT MAX PRO 2](/produkt/petkit-purobot-max-pro-2/).
 
 Zur Eingewöhnung das alte Klo zunächst behalten, das neue Gerät ausgeschaltet anbieten und automatische Zyklen erst nach freiwilliger Nutzung unter Beobachtung aktivieren.
+
+<!-- pt:litter-delta-33-3:start -->
+## Eingang, Sicherheitsprinzip und Streuaustrag getrennt prüfen
+
+Ein großer Eingang ist nicht automatisch ein großer nutzbarer Innenraum. Offene Systeme erleichtern Sicht- und Fluchtweg, geschlossene Kabinen können Geruch und Streuaustrag besser abschirmen, müssen aber zur Akzeptanz und Körpergröße passen.
+
+Elektronische Sensorik reagiert auf erkannte Zustände; mechanische Anti-Pinch-Konstruktionen können eine zusätzliche, anders arbeitende Schutzebene bilden. Beides bleibt ohne eigenen Test eine Herstellerangabe und keine Sicherheitsgarantie.
+
+[PETKIT PUROBOT MAX 3](/produkt/petkit-purobot-max-3/) setzt auf niedrigen Einstieg plus mechanische Struktur. [PetSnowy SNOW+](/produkt/petsnowy-snow-plus/) priorisiert eine geschlossene Anti-Tracking-Führung. Das aktualisierte [Neakasa M1 Plus Lite](/produkt/neakasa-m1-lite/) bleibt die offene Alternative. Der [Vergleich](/vergleiche/beste-automatische-katzentoiletten/) stellt die Rollen gegenüber.
+
+Monitoring zeigt Nutzungstrends, keine Diagnosen. Bei Beuteln, Filtern, Deodorizern und proprietären Linern zählen Verfügbarkeit und Drei-Jahres-Kosten zur Entscheidung.
+<!-- pt:litter-delta-33-3:end -->

@@ -1,17 +1,17 @@
 {
   "summary": {
-    "generatedAt": "2026-08-15T20:33:02.901Z",
-    "totalProducts": 85,
+    "generatedAt": "2026-08-15T21:12:21.510Z",
+    "totalProducts": 87,
     "byCategory": {
       "futterautomaten": 37,
       "trinkbrunnen": 21,
-      "automatische-katzentoiletten": 6,
+      "automatische-katzentoiletten": 8,
       "haustierkameras": 5,
       "gps-tracker": 8,
       "katzenklappen": 8
     },
     "errors": 0,
-    "warnings": 112,
+    "warnings": 125,
     "notes": 145,
     "duplicateSlugs": 0
   },
@@ -1640,93 +1640,65 @@
     {
       "file": "src\\content\\products\\neakasa-m1-lite.md",
       "slug": "neakasa-m1-lite",
-      "title": "Neakasa M1 Lite",
+      "title": "Neakasa M1 Plus Lite",
       "category": "automatische-katzentoiletten",
       "errors": [],
-      "warnings": [],
+      "warnings": [
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt"
+      ],
       "notes": [],
       "specs": [
         {
-          "label": "Systemtyp",
-          "value": "Offene selbstreinigende Katzentoilette mit automatischer Siebung"
+          "label": "Aktuelle Modellbezeichnung",
+          "value": "M1 Plus Lite; Neakasa verwendet zusätzlich M1 Lite Plus"
         },
         {
-          "label": "Bauform",
-          "value": "Open Top"
+          "label": "Katzengewicht",
+          "value": "1 bis 15 kg; unter 1 kg Kitten-Modus ohne Automatik"
         },
         {
-          "label": "Abmessungen",
-          "value": "525 × 591 × 513 mm laut Neakasa"
-        },
-        {
-          "label": "Einstiegshöhe",
+          "label": "Einstieg",
           "value": "352 mm"
-        },
-        {
-          "label": "Eigengewicht",
-          "value": "10,35 kg"
-        },
-        {
-          "label": "Empfohlenes Katzengewicht",
-          "value": "1 bis 15 kg"
-        },
-        {
-          "label": "Streukapazität",
-          "value": "7,17 Liter"
         },
         {
           "label": "Abfallbehälter",
           "value": "11,23 Liter"
         },
         {
-          "label": "Geräusch",
-          "value": "Bis etwa 50 dB laut Hersteller"
+          "label": "Streukapazität",
+          "value": "7,17 Liter"
         },
         {
-          "label": "Nennspannung",
-          "value": "12 V"
+          "label": "Eigengewicht",
+          "value": "10,35 kg"
         },
         {
-          "label": "Material",
-          "value": "PP, ABS und POM"
+          "label": "Sensorik",
+          "value": ">-"
         },
         {
-          "label": "App",
-          "value": "Neakasa App für Android und iOS"
-        },
-        {
-          "label": "Geruchskontrolle",
-          "value": "OdorSeal Technology laut Hersteller"
+          "label": "Abdichtung",
+          "value": "Bristle Seal, Composite-Sealing-Ring und überarbeiteter Silikonliner laut Hersteller"
         },
         {
           "label": "Streu",
-          "value": "Klumpende oder siebfähige Streu"
-        },
-        {
-          "label": "Nicht empfohlen",
-          "value": "Nichtklumpende Streu, Zeitungspapier und Holzpellets"
+          "value": "Schnell klumpende, siebfähige Bentonit-/Mineralstreu; keine Holzpellets, Zeitung oder nicht klumpende Streu"
         },
         {
           "label": "Siebgrenze",
           "value": "Bis 3 mm Durchmesser und 10 mm Länge laut Hersteller"
         },
         {
-          "label": "Müllbeutel",
-          "value": "1 Rolle mit 15 Beuteln im Lite-Lieferumfang"
-        },
-        {
-          "label": "Streumatte",
-          "value": "Nicht im Lite-Lieferumfang enthalten"
-        },
-        {
-          "label": "Garantie",
-          "value": "2 Jahre im europäischen Neakasa-Shop"
+          "label": "Offline",
+          "value": "Grundbetrieb mit gespeicherten Einstellungen; ohne Netz keine Aktualisierung der App-Daten"
         }
       ],
       "unknownSpecs": [],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 100,
-      "completeness": 100
+      "completeness": 91
     },
     {
       "file": "src\\content\\products\\neakasa-m1-plus.md",
@@ -3878,6 +3850,75 @@
       "structuralCompleteness": 100,
       "confirmedCompleteness": 100,
       "completeness": 100
+    },
+    {
+      "file": "src\\content\\products\\petkit-purobot-max-3.md",
+      "slug": "petkit-purobot-max-3",
+      "title": "PETKIT PUROBOT MAX 3",
+      "category": "automatische-katzentoiletten",
+      "errors": [],
+      "warnings": [
+        "decision.bestFor ist zu knapp oder fehlt",
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Modell",
+          "value": "P9906"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "620 × 538 × 552 mm"
+        },
+        {
+          "label": "Einstieg",
+          "value": "204 mm; Öffnung 267 × 273 mm laut Herstellervergleich"
+        },
+        {
+          "label": "Eigengewicht",
+          "value": "10 kg"
+        },
+        {
+          "label": "Katzengewicht",
+          "value": "1,5 bis 10 kg; Hersteller nennt zusätzlich 6+ Monate"
+        },
+        {
+          "label": "Zylinder",
+          "value": "76 Liter"
+        },
+        {
+          "label": "Abfallfach",
+          "value": "7 Liter; bis 15 Tage bei einer Katze ist eine Hersteller-Maximalangabe"
+        },
+        {
+          "label": "Sicherheit",
+          "value": "12 Sensoren plus mechanisch dauerhaft offene Eingangsstruktur laut Hersteller; keine Sicherheitsgarantie"
+        },
+        {
+          "label": "WLAN",
+          "value": "2,4 GHz"
+        },
+        {
+          "label": "Strom",
+          "value": "12 V / 2 A, 24 W"
+        },
+        {
+          "label": "Streu",
+          "value": "Klumpende Ton-, Tofu- oder Mischstreu; zwei Filter, Partikel bis 12 mm Länge/3 mm Durchmesser"
+        },
+        {
+          "label": "Kamera",
+          "value": "Keine Kamera dokumentiert; Funktionen des MAX PRO 2 werden nicht übertragen"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 85
     },
     {
       "file": "src\\content\\products\\petkit-purobot-max-pro-2.md",
@@ -6309,6 +6350,55 @@
       "completeness": 97
     },
     {
+      "file": "src\\content\\products\\petsnowy-snow-plus.md",
+      "slug": "petsnowy-snow-plus",
+      "title": "PetSnowy SNOW+ (SNOW)",
+      "category": "automatische-katzentoiletten",
+      "errors": [],
+      "warnings": [
+        "decision.bestFor ist zu knapp oder fehlt",
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Modellbezeichnung",
+          "value": "PetSnowy SNOW; im Markt auch als SNOW+ geführt"
+        },
+        {
+          "label": "Bauform",
+          "value": "Geschlossene Kabine mit gebogenem Ein-/Ausstiegsweg"
+        },
+        {
+          "label": "Abfallfach",
+          "value": "10 Liter, automatisch versiegelt laut Hersteller"
+        },
+        {
+          "label": "Geruch",
+          "value": "TiO₂-Geruchssystem; 90,5 Prozent Ammoniakreduktion ist ausschließlich ein Herstellerclaim"
+        },
+        {
+          "label": "Sicherheit",
+          "value": "Sieben Schutzebenen laut Hersteller; kein eigener Sicherheitstest"
+        },
+        {
+          "label": "Wartung",
+          "value": "Magnetisch-modularer Aufbau; proprietäre Liner und Deodorizer berücksichtigen"
+        },
+        {
+          "label": "Deutschland/EU",
+          "value": ">-"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 85
+    },
+    {
       "file": "src\\content\\products\\petwalk-medium-tiertuer.md",
       "slug": "petwalk-medium-tiertuer",
       "title": "petWALK Medium Tiertür",
@@ -6592,6 +6682,10 @@
         {
           "label": "Einbau",
           "value": "Tür, Glas und Wand mit passendem Zubehör"
+        },
+        {
+          "label": "Hub-Sicherheitsupdates",
+          "value": "Vom Hersteller für zwei Jahre ab Kaufdatum des Hubs dokumentiert"
         }
       ],
       "unknownSpecs": [],

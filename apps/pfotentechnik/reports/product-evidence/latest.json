@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-15T20:33:05.373Z",
+  "generatedAt": "2026-08-15T21:12:21.888Z",
   "summary": {
-    "products": 85,
-    "covered": 82,
+    "products": 87,
+    "covered": 84,
     "complete": 53,
-    "partial": 29,
+    "partial": 31,
     "missing": 3
   },
   "rows": [
@@ -482,6 +482,20 @@
       ]
     },
     {
+      "slug": "petkit-purobot-max-3",
+      "file": "src/content/products/petkit-purobot-max-3.md",
+      "status": "partial",
+      "hasExternal": true,
+      "professional": 0,
+      "userSources": 0,
+      "consensus": 0,
+      "missingParts": [
+        "professionalReviews",
+        "userReviews",
+        "consensus"
+      ]
+    },
+    {
       "slug": "petkit-purobot-max-pro-2",
       "file": "src/content/products/petkit-purobot-max-pro-2.md",
       "status": "complete",
@@ -760,6 +774,20 @@
       "userSources": 1,
       "consensus": 2,
       "missingParts": []
+    },
+    {
+      "slug": "petsnowy-snow-plus",
+      "file": "src/content/products/petsnowy-snow-plus.md",
+      "status": "partial",
+      "hasExternal": true,
+      "professional": 0,
+      "userSources": 0,
+      "consensus": 0,
+      "missingParts": [
+        "professionalReviews",
+        "userReviews",
+        "consensus"
+      ]
     },
     {
       "slug": "petwalk-medium-tiertuer",

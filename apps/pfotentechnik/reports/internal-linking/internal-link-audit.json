@@ -1,14 +1,14 @@
 {
   "version": "3.0.3",
-  "generatedAt": "2026-08-15T20:33:11.384Z",
-  "strict": false,
+  "generatedAt": "2026-08-15T21:12:24.876Z",
+  "strict": true,
   "summary": {
-    "documents": 221,
-    "contentRoutes": 221,
-    "buildRoutes": 326,
-    "validRoutes": 327,
-    "definitions": 489,
-    "renderedAutomaticLinks": 505,
+    "documents": 223,
+    "contentRoutes": 223,
+    "buildRoutes": 328,
+    "validRoutes": 330,
+    "definitions": 493,
+    "renderedAutomaticLinks": 507,
     "errors": 0,
     "warnings": 6,
     "critical": 0
@@ -209,6 +209,12 @@
   "renderedAnchors": [
     {
       "sourceRoute": "/automatische-katzentoiletten/",
+      "targetRoute": "/produkt/neakasa-m1-plus/",
+      "anchor": "Neakasa M1 Plus",
+      "score": 3815
+    },
+    {
+      "sourceRoute": "/automatische-katzentoiletten/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
       "score": 2008
@@ -229,7 +235,7 @@
       "sourceRoute": "/automatische-katzentoiletten/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1806
+      "score": 1406
     },
     {
       "sourceRoute": "/biofilm-im-katzentrinkbrunnen/",
@@ -247,7 +253,7 @@
       "sourceRoute": "/filter-im-katzentrinkbrunnen-wechseln/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1606
+      "score": 1406
     },
     {
       "sourceRoute": "/fuetterungszeiten-nach-alter/",
@@ -293,12 +299,6 @@
     },
     {
       "sourceRoute": "/futterautomat-bei-stromausfall/",
-      "targetRoute": "/hersteller/petkit/",
-      "anchor": "PETKIT",
-      "score": 1606
-    },
-    {
-      "sourceRoute": "/futterautomat-bei-stromausfall/",
       "targetRoute": "/hersteller/xiaomi/",
       "anchor": "Xiaomi",
       "score": 1606
@@ -308,6 +308,12 @@
       "targetRoute": "/wie-viele-wasserstellen-katze/",
       "anchor": "Wasserstellen",
       "score": 1513
+    },
+    {
+      "sourceRoute": "/futterautomat-bei-stromausfall/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1406
     },
     {
       "sourceRoute": "/futterautomat-bei-uebergewicht/",
@@ -347,8 +353,8 @@
     },
     {
       "sourceRoute": "/futterautomat-bei-uebergewicht/",
-      "targetRoute": "/hersteller/petkit/",
-      "anchor": "PETKIT",
+      "targetRoute": "/hersteller/xiaomi/",
+      "anchor": "Xiaomi",
       "score": 1706
     },
     {
@@ -419,12 +425,6 @@
     },
     {
       "sourceRoute": "/futterautomat-katze/",
-      "targetRoute": "/hersteller/petkit/",
-      "anchor": "PETKIT",
-      "score": 1806
-    },
-    {
-      "sourceRoute": "/futterautomat-katze/",
       "targetRoute": "/hersteller/xiaomi/",
       "anchor": "Xiaomi",
       "score": 1806
@@ -434,6 +434,12 @@
       "targetRoute": "/wie-laut-sind-automatische-futterautomaten/",
       "anchor": "Geräuschentwicklung",
       "score": 1619
+    },
+    {
+      "sourceRoute": "/futterautomat-katze/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1406
     },
     {
       "sourceRoute": "/futterautomat-richtig-reinigen/",
@@ -451,7 +457,7 @@
       "sourceRoute": "/futterautomat-richtig-reinigen/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1506
+      "score": 1406
     },
     {
       "sourceRoute": "/futterautomat-und-ernaehrung/",
@@ -703,7 +709,7 @@
       "sourceRoute": "/katzenklappe-fuer-mehrere-katzen/",
       "targetRoute": "/katzenklappen/",
       "anchor": "Katzenklappen",
-      "score": 6313
+      "score": 6413
     },
     {
       "sourceRoute": "/katzenklappe-zugluft-und-waermedaemmung/",
@@ -715,25 +721,25 @@
       "sourceRoute": "/katzenklappen/",
       "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
       "anchor": "mehrere Katzen",
-      "score": 2614
+      "score": 2714
     },
     {
       "sourceRoute": "/katzenklappen/",
       "targetRoute": "/hersteller/onlycat/",
       "anchor": "OnlyCat",
-      "score": 1607
+      "score": 1707
     },
     {
       "sourceRoute": "/katzenklappen/",
       "targetRoute": "/hersteller/petsafe/",
       "anchor": "PetSafe",
-      "score": 1607
+      "score": 1707
     },
     {
       "sourceRoute": "/katzenklappen/",
       "targetRoute": "/hersteller/petwalk/",
       "anchor": "petWALK",
-      "score": 1607
+      "score": 1707
     },
     {
       "sourceRoute": "/katzenklappen/",
@@ -745,7 +751,7 @@
       "sourceRoute": "/katzenklappen/",
       "targetRoute": "/wie-laut-sind-automatische-futterautomaten/",
       "anchor": "Geräuschentwicklung",
-      "score": 1319
+      "score": 1419
     },
     {
       "sourceRoute": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
@@ -763,7 +769,7 @@
       "sourceRoute": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1606
+      "score": 1406
     },
     {
       "sourceRoute": "/katzentrinkbrunnen-laut-pumpe/",
@@ -793,7 +799,7 @@
       "sourceRoute": "/katzentrinkbrunnen-ohne-filter/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1806
+      "score": 1406
     },
     {
       "sourceRoute": "/katzentrinkbrunnen-richtig-reinigen/",
@@ -829,7 +835,7 @@
       "sourceRoute": "/pumpe-katzentrinkbrunnen-reinigen/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1506
+      "score": 1306
     },
     {
       "sourceRoute": "/reichweite-von-gps-trackern/",
@@ -991,7 +997,7 @@
       "sourceRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1806
+      "score": 1406
     },
     {
       "sourceRoute": "/trinkbrunnen-hund/",
@@ -1079,8 +1085,8 @@
     },
     {
       "sourceRoute": "/trinkbrunnen/",
-      "targetRoute": "/hersteller/petkit/",
-      "anchor": "PETKIT",
+      "targetRoute": "/hersteller/xiaomi/",
+      "anchor": "Xiaomi",
       "score": 1806
     },
     {
@@ -1111,7 +1117,7 @@
       "sourceRoute": "/trinkmenge-katze-messen/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1506
+      "score": 1306
     },
     {
       "sourceRoute": "/trockenfutter-oder-nassfutter-hund/",
@@ -1351,7 +1357,7 @@
       "sourceRoute": "/wie-laut-sind-automatische-futterautomaten/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1506
+      "score": 1306
     },
     {
       "sourceRoute": "/wie-viel-wasser-braucht-ein-hund/",
@@ -1441,7 +1447,7 @@
       "sourceRoute": "/wie-viele-mahlzeiten-katze/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1706
+      "score": 1406
     },
     {
       "sourceRoute": "/wie-viele-wasserstellen-katze/",
@@ -1637,12 +1643,6 @@
     },
     {
       "sourceRoute": "/produkt/devoko-90l-automatisches-katzenklo/",
-      "targetRoute": "/produkt/neakasa-m1-lite/",
-      "anchor": "Neakasa M1 Lite",
-      "score": 3815
-    },
-    {
-      "sourceRoute": "/produkt/devoko-90l-automatisches-katzenklo/",
       "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
       "anchor": "mehrere Katzen",
       "score": 2814
@@ -1664,6 +1664,12 @@
       "targetRoute": "/hersteller/devoko/",
       "anchor": "Devoko",
       "score": 1806
+    },
+    {
+      "sourceRoute": "/produkt/devoko-90l-automatisches-katzenklo/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1406
     },
     {
       "sourceRoute": "/produkt/furbo-mini-360/",
@@ -1921,7 +1927,7 @@
       "sourceRoute": "/produkt/petkit-eversweet-3-pro-uvc/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1606
+      "score": 1406
     },
     {
       "sourceRoute": "/produkt/petkit-eversweet-5-mini/",
@@ -1933,7 +1939,7 @@
       "sourceRoute": "/produkt/petkit-eversweet-5-mini/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1506
+      "score": 1406
     },
     {
       "sourceRoute": "/produkt/petkit-eversweet-max-2-uvc/",
@@ -1945,25 +1951,25 @@
       "sourceRoute": "/produkt/petkit-eversweet-max-2-uvc/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1706
+      "score": 1406
     },
     {
       "sourceRoute": "/produkt/petkit-eversweet-max-cordless/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1806
+      "score": 1406
     },
     {
       "sourceRoute": "/produkt/petkit-eversweet-solo-2-fountain/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1706
+      "score": 1406
     },
     {
       "sourceRoute": "/produkt/petkit-eversweet-solo-se/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1506
+      "score": 1406
     },
     {
       "sourceRoute": "/produkt/petkit-eversweet-ultra/",
@@ -1979,21 +1985,21 @@
     },
     {
       "sourceRoute": "/produkt/petkit-eversweet-ultra/",
-      "targetRoute": "/hersteller/petkit/",
-      "anchor": "PETKIT",
-      "score": 1806
-    },
-    {
-      "sourceRoute": "/produkt/petkit-eversweet-ultra/",
       "targetRoute": "/biofilm-im-katzentrinkbrunnen/",
       "anchor": "Biofilm",
       "score": 1607
     },
     {
+      "sourceRoute": "/produkt/petkit-eversweet-ultra/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1406
+    },
+    {
       "sourceRoute": "/produkt/petkit-fresh-element-infinity/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1806
+      "score": 1406
     },
     {
       "sourceRoute": "/produkt/petkit-fresh-element-solo/",
@@ -2011,13 +2017,19 @@
       "sourceRoute": "/produkt/petkit-fresh-element-solo/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1806
+      "score": 1406
+    },
+    {
+      "sourceRoute": "/produkt/petkit-purobot-max-3/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1406
     },
     {
       "sourceRoute": "/produkt/petkit-purobot-max-pro-2/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1806
+      "score": 1406
     },
     {
       "sourceRoute": "/produkt/petkit-yumshare-dual-hopper/",
@@ -2035,7 +2047,7 @@
       "sourceRoute": "/produkt/petkit-yumshare-dual-hopper/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1806
+      "score": 1406
     },
     {
       "sourceRoute": "/produkt/petkit-yumshare-solo-2/",
@@ -2047,7 +2059,7 @@
       "sourceRoute": "/produkt/petkit-yumshare-solo-2/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1806
+      "score": 1406
     },
     {
       "sourceRoute": "/produkt/petlibro-air-automatic-feeder/",
@@ -2237,21 +2249,21 @@
     },
     {
       "sourceRoute": "/produkt/petsafe-mikrochip-katzenklappe/",
+      "targetRoute": "/katzenklappen/",
+      "anchor": "Katzenklappe",
+      "score": 1712
+    },
+    {
+      "sourceRoute": "/produkt/petsafe-mikrochip-katzenklappe/",
       "targetRoute": "/hersteller/petsafe/",
       "anchor": "PetSafe",
       "score": 1707
     },
     {
-      "sourceRoute": "/produkt/petsafe-mikrochip-katzenklappe/",
-      "targetRoute": "/katzenklappen/",
-      "anchor": "Katzenklappe",
-      "score": 1612
-    },
-    {
       "sourceRoute": "/produkt/petsafe-petporte-smart-flap/",
       "targetRoute": "/katzenklappen/",
       "anchor": "Katzenklappen",
-      "score": 6313
+      "score": 6413
     },
     {
       "sourceRoute": "/produkt/petsafe-petporte-smart-flap/",
@@ -2297,12 +2309,6 @@
     },
     {
       "sourceRoute": "/produkt/sureflap-dualscan-mikrochip-katzenklappe/",
-      "targetRoute": "/katzenklappen/",
-      "anchor": "Katzenklappen",
-      "score": 6613
-    },
-    {
-      "sourceRoute": "/produkt/sureflap-mikrochip-katzenklappe-connect/",
       "targetRoute": "/katzenklappen/",
       "anchor": "Katzenklappen",
       "score": 6613
@@ -2477,33 +2483,39 @@
     },
     {
       "sourceRoute": "/vergleiche/beste-automatische-katzentoiletten/",
+      "targetRoute": "/produkt/neakasa-m1-plus/",
+      "anchor": "Neakasa M1 Plus",
+      "score": 3615
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-automatische-katzentoiletten/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
-      "score": 1908
+      "score": 1608
     },
     {
       "sourceRoute": "/vergleiche/beste-automatische-katzentoiletten/",
       "targetRoute": "/hersteller/neakasa/",
       "anchor": "Neakasa",
-      "score": 1807
+      "score": 1607
     },
     {
       "sourceRoute": "/vergleiche/beste-automatische-katzentoiletten/",
       "targetRoute": "/hersteller/whisker/",
       "anchor": "Whisker",
-      "score": 1807
+      "score": 1607
     },
     {
       "sourceRoute": "/vergleiche/beste-automatische-katzentoiletten/",
       "targetRoute": "/hersteller/devoko/",
       "anchor": "Devoko",
-      "score": 1806
+      "score": 1606
     },
     {
       "sourceRoute": "/vergleiche/beste-automatische-katzentoiletten/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1806
+      "score": 1406
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
@@ -2623,7 +2635,7 @@
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
-      "score": 1406
+      "score": 1306
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
@@ -2711,12 +2723,6 @@
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-welpen/",
-      "targetRoute": "/hersteller/petkit/",
-      "anchor": "PETKIT",
-      "score": 1806
-    },
-    {
-      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-welpen/",
       "targetRoute": "/hersteller/xiaomi/",
       "anchor": "Xiaomi",
       "score": 1806
@@ -2726,6 +2732,12 @@
       "targetRoute": "/welpen-richtig-fuettern/",
       "anchor": "Welpenfutter",
       "score": 1612
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-welpen/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1406
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
@@ -2795,15 +2807,15 @@
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-mit-kamera/",
-      "targetRoute": "/hersteller/petkit/",
-      "anchor": "PETKIT",
-      "score": 1306
-    },
-    {
-      "sourceRoute": "/vergleiche/beste-futterautomaten-mit-kamera/",
       "targetRoute": "/hersteller/wopet/",
       "anchor": "WOPET",
       "score": 1305
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-futterautomaten-mit-kamera/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1206
     },
     {
       "sourceRoute": "/vergleiche/beste-futterautomaten-ohne-wlan/",
@@ -3029,15 +3041,15 @@
     },
     {
       "sourceRoute": "/vergleiche/futterautomat-mit-app/",
-      "targetRoute": "/hersteller/petkit/",
-      "anchor": "PETKIT",
+      "targetRoute": "/hersteller/xiaomi/",
+      "anchor": "Xiaomi",
       "score": 1606
     },
     {
       "sourceRoute": "/vergleiche/futterautomat-mit-app/",
-      "targetRoute": "/hersteller/xiaomi/",
-      "anchor": "Xiaomi",
-      "score": 1606
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1406
     },
     {
       "sourceRoute": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
@@ -3157,7 +3169,7 @@
       "sourceRoute": "/hersteller/onlycat/",
       "targetRoute": "/katzenklappen/",
       "anchor": "Katzenklappe",
-      "score": 1612
+      "score": 1712
     },
     {
       "sourceRoute": "/hersteller/pawbby/",
@@ -3169,13 +3181,13 @@
       "sourceRoute": "/hersteller/petkit/",
       "targetRoute": "/smarte-futterautomaten/",
       "anchor": "Futterautomaten",
-      "score": 6815
+      "score": 6415
     },
     {
       "sourceRoute": "/hersteller/petkit/",
       "targetRoute": "/trinkbrunnen/",
       "anchor": "Trinkbrunnen",
-      "score": 6812
+      "score": 6412
     },
     {
       "sourceRoute": "/hersteller/petlibro/",
@@ -3217,7 +3229,7 @@
       "sourceRoute": "/hersteller/petsafe/",
       "targetRoute": "/katzenklappen/",
       "anchor": "Katzenklappen",
-      "score": 6613
+      "score": 6713
     },
     {
       "sourceRoute": "/hersteller/surefeed/",
@@ -3239,7 +3251,7 @@
     }
   ],
   "incomingLinks": {
-    "/automatische-katzentoiletten/": 6,
+    "/automatische-katzentoiletten/": 8,
     "/biofilm-im-katzentrinkbrunnen/": 17,
     "/datenschutz-bei-gps-trackern/": 1,
     "/filter-im-katzentrinkbrunnen-wechseln/": 14,
@@ -3281,7 +3293,7 @@
     "/hersteller/weenect/": 16,
     "/hersteller/whisker/": 4,
     "/hersteller/wopet/": 7,
-    "/hersteller/xiaomi/": 17,
+    "/hersteller/xiaomi/": 19,
     "/hersteller/zeromouse/": 5,
     "/hund-entlaufen-gps-sinnvoll/": 6,
     "/hund-frisst-nicht/": 5,
@@ -3328,8 +3340,8 @@
     "/produkt/honeyguardian-smart-pet-feeder-s305d/": 2,
     "/produkt/imipaw-3l-automatic-cat-feeder/": 2,
     "/produkt/litter-robot-5-pro/": 1,
-    "/produkt/neakasa-m1-lite/": 4,
-    "/produkt/neakasa-m1-plus/": 1,
+    "/produkt/neakasa-m1-lite/": 3,
+    "/produkt/neakasa-m1-plus/": 3,
     "/produkt/oneisall-2-2l-cordless-fountain/": 2,
     "/produkt/oneisall-2-in-1-feeder-water/": 2,
     "/produkt/oneisall-3-2l-cordless-fountain/": 2,
@@ -3349,6 +3361,7 @@
     "/produkt/petkit-eversweet-ultra/": 5,
     "/produkt/petkit-fresh-element-infinity/": 2,
     "/produkt/petkit-fresh-element-solo/": 10,
+    "/produkt/petkit-purobot-max-3/": 2,
     "/produkt/petkit-purobot-max-pro-2/": 3,
     "/produkt/petkit-yumshare-dual-hopper/": 7,
     "/produkt/petkit-yumshare-solo-2/": 3,
@@ -3375,11 +3388,12 @@
     "/produkt/petsafe-mikrochip-katzenklappe/": 2,
     "/produkt/petsafe-petporte-smart-flap/": 2,
     "/produkt/petsafe-smart-feed-2/": 3,
+    "/produkt/petsnowy-snow-plus/": 1,
     "/produkt/petwalk-medium-tiertuer/": 3,
     "/produkt/surefeed-microchip-pet-feeder-connect/": 5,
     "/produkt/surefeed-microchip-pet-feeder/": 9,
     "/produkt/sureflap-dualscan-mikrochip-katzenklappe/": 3,
-    "/produkt/sureflap-mikrochip-katzenklappe-connect/": 2,
+    "/produkt/sureflap-mikrochip-katzenklappe-connect/": 3,
     "/produkt/sureflap-mikrochip-katzenklappe/": 3,
     "/produkt/tractive-cat-6-mini/": 7,
     "/produkt/tractive-dog-6-xl/": 6,
@@ -3411,7 +3425,7 @@
     "/trockenfutter-oder-nassfutter-hund/": 5,
     "/trockenfutter-oder-nassfutter-katze/": 2,
     "/uebergewicht-bei-katzen-vermeiden/": 2,
-    "/vergleiche/beste-automatische-katzentoiletten/": 8,
+    "/vergleiche/beste-automatische-katzentoiletten/": 10,
     "/vergleiche/beste-futterautomaten-fuer-berufstaetige/": 4,
     "/vergleiche/beste-futterautomaten-fuer-hunde/": 10,
     "/vergleiche/beste-futterautomaten-fuer-katzen/": 9,
@@ -3437,7 +3451,7 @@
     "/vergleiche/futterautomat-mit-app/": 14,
     "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/": 3,
     "/vergleiche/gps-tracker-ohne-abo/": 6,
-    "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/": 5,
+    "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/": 6,
     "/vergleiche/kleine-gps-tracker-fuer-katzen/": 3,
     "/warum-brauchen-gps-tracker-ein-abo/": 3,
     "/warum-hunde-feste-fuetterungszeiten-brauchen/": 2,

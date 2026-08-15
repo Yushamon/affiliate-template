@@ -1,0 +1,12 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import path from "node:path";
+import test from "node:test";
+import { createRequire } from "node:module";
+import { fileURLToPath } from "node:url";
+const app = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const yaml = createRequire(path.join(app, "package.json"))("js-yaml");
+const load = (kind, slug) => { const source = fs.readFileSync(path.join(app, "src/content", kind, slug + ".md"), "utf8"); const m = source.match(/^---\s*\r?\n([\s\S]*?)\r?\n---/); assert.ok(m); return { source, data: yaml.load(m[1], { schema: yaml.JSON_SCHEMA }) }; };
+test("Neakasa route owns current Plus lifecycle", () => { const p = load("products", "neakasa-m1-lite"); assert.equal(p.data.title, "Neakasa M1 Plus Lite"); assert.equal(fs.existsSync(path.join(app, "src/content/products/neakasa-m1-lite-plus.md")), false); assert.match(p.source, /Bristle Seal/); assert.match(p.data.images.hero.src, /default-editorial-hero/); });
+test("MAX 3 and SNOW+ are distinct conservative products", () => { const max = load("products", "petkit-purobot-max-3"); const snow = load("products", "petsnowy-snow-plus"); assert.equal(max.data.rating, 0); assert.match(max.source, /Keine Kamera dokumentiert/); assert.doesNotMatch(max.source, /1080p/); assert.match(snow.source, /Herstellerclaim/); assert.equal(snow.data.availability, "unknown"); });
+test("comparison references existing products and valid assets", () => { const c = load("comparisons", "beste-automatische-katzentoiletten"); for (const item of c.data.items) assert.ok(fs.existsSync(path.join(app, "src/content/products", item.slug + ".md")), item.slug); for (const slug of ["petkit-purobot-max-3", "petsnowy-snow-plus"]) assert.ok(c.data.items.some((i) => i.slug === slug)); for (const slug of ["neakasa-m1-lite", "petkit-purobot-max-3", "petsnowy-snow-plus"]) { const p = load("products", slug); const image = path.resolve(path.join(app, "src/content/products"), p.data.images.hero.src); assert.ok(fs.existsSync(image), image); } });

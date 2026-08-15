@@ -1,9 +1,9 @@
 # Product External Evidence Audit
 
-- Produkte: 85
-- Mit externalEvidence: 82
+- Produkte: 87
+- Mit externalEvidence: 84
 - Vollständig: 53
-- Teilweise: 29
+- Teilweise: 31
 - Ohne Evidenz: 3
 
 ## Vollständig
@@ -81,12 +81,14 @@
 - petkit-eversweet-5-mini · fehlt: professionalReviews, consensus
 - petkit-fresh-element-infinity · fehlt: userReviews, consensus
 - petkit-fresh-element-solo · fehlt: professionalReviews, consensus
+- petkit-purobot-max-3 · fehlt: professionalReviews, userReviews, consensus
 - petlibro-air-wifi-feeder · fehlt: consensus
 - petlibro-glacier-ultrafiltration · fehlt: consensus
 - petlibro-granary-2-vision · fehlt: professionalReviews, userReviews, consensus
 - petlibro-granary-dual-feeder · fehlt: professionalReviews, consensus
 - petlibro-space-smart-feeder · fehlt: userReviews, consensus
 - petsafe-petporte-smart-flap · fehlt: userReviews
+- petsnowy-snow-plus · fehlt: professionalReviews, userReviews, consensus
 - petwalk-medium-tiertuer · fehlt: professionalReviews, userReviews, consensus
 - wopet-cube-air-ca10 · fehlt: professionalReviews, consensus
 - wopet-heritage-view-camera-feeder · fehlt: professionalReviews, consensus

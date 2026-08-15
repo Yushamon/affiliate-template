@@ -212,8 +212,8 @@
     "matchedPages": 11
   },
   "summary": {
-    "indexablePages": 232,
-    "totalHtmlPages": 326,
+    "indexablePages": 233,
+    "totalHtmlPages": 328,
     "pageTypes": {
       "category-hub": 5,
       "comparison": 28,
@@ -228,10 +228,10 @@
       "manufacturer-index": 1,
       "medical-guide": 12,
       "problem-solving-guide": 17,
-      "product": 84
+      "product": 85
     },
     "clusters": {
-      "automatische-katzentoiletten": 7,
+      "automatische-katzentoiletten": 8,
       "futterautomaten": 82,
       "gps-tracker": 26,
       "haustierkameras": 7,
@@ -257,14 +257,14 @@
       "informational": 23,
       "medical-information": 14,
       "problem-solving": 14,
-      "product-research": 84
+      "product-research": 85
     },
     "decisions": {
       "CONSOLIDATE": 2,
-      "KEEP": 232,
-      "NOINDEX": 94
+      "KEEP": 233,
+      "NOINDEX": 95
     },
-    "errors": 1,
+    "errors": 0,
     "warnings": 0,
     "exactDuplicates": 0,
     "nearDuplicates": 0,
@@ -276,17 +276,7 @@
     "differentiatedPages": 0,
     "resolvedConflicts": 2
   },
-  "findings": [
-    {
-      "id": "content_comparison_count_mismatch|/vergleiche/beste-automatische-katzentoiletten/",
-      "code": "CONTENT_COMPARISON_COUNT_MISMATCH",
-      "severity": "error",
-      "routes": [
-        "/vergleiche/beste-automatische-katzentoiletten/"
-      ],
-      "evidence": "Quelldaten nennen 4 Vergleichsprodukte, gerendert erkannt wurden 5."
-    }
-  ],
+  "findings": [],
   "conflicts": [
     {
       "id": "gps-bluetooth-duplicate",

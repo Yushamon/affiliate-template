@@ -1,9 +1,9 @@
 # Audit interne Linkziele und Selbstlinks
 
-Erstellt: 2026-08-15T20:33:11.777Z
+Erstellt: 2026-08-15T20:57:31.383Z
 
-- Gebaute Seiten: 326
-- Routen im Inventar: 326
+- Gebaute Seiten: 328
+- Routen im Inventar: 328
 - Redirect-Aliasse: 33
 - Fehler: 0
 - Warnungen: 0

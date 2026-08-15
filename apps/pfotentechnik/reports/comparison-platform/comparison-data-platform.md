@@ -1,20 +1,20 @@
 # Comparison Data Platform Audit
 
-Erstellt: 2026-08-15T20:33:06.835Z
+Erstellt: 2026-08-15T21:12:22.460Z
 
 **Status: BESTANDEN**
 
 - Vergleiche: 28 (Mindestbestand 26)
-- Quellabdeckung: 89.1 %
+- Quellabdeckung: 89.2 %
 - öffentlich gerenderte Abdeckung: 100 %
-- alte values-Felder: 615
+- alte values-Felder: 659
 - bewusste Overrides: 218
 
 ## Vergleichsseiten
 
 | Vergleich | Items | Kriterien sichtbar | ausgeblendet | Status |
 |---|---:|---:|---:|---|
-| `beste-automatische-katzentoiletten` | 4 | 12 | 0 | OK |
+| `beste-automatische-katzentoiletten` | 6 | 14 | 4 | OK |
 | `beste-futterautomaten-fuer-berufstaetige` | 3 | 3 | 3 | OK |
 | `beste-futterautomaten-fuer-hunde` | 4 | 10 | 0 | OK |
 | `beste-futterautomaten-fuer-katzen` | 8 | 10 | 0 | OK |
@@ -40,7 +40,7 @@ Erstellt: 2026-08-15T20:33:06.835Z
 | `futterautomat-mit-app` | 5 | 3 | 5 | OK |
 | `gps-tracker-mit-langer-akkulaufzeit` | 7 | 6 | 0 | OK |
 | `gps-tracker-ohne-abo` | 2 | 6 | 0 | OK |
-| `katzenklappen-mit-app-und-beuteerkennung` | 4 | 6 | 0 | OK |
+| `katzenklappen-mit-app-und-beuteerkennung` | 4 | 8 | 0 | OK |
 | `kleine-gps-tracker-fuer-katzen` | 3 | 6 | 1 | OK |
 
 ## Blocker

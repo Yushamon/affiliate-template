@@ -1,12 +1,12 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-08-15T20:33:02.901Z
+Erstellt: 2026-08-15T21:12:21.510Z
 
 ## Zusammenfassung
 
-- Produkte: 85
+- Produkte: 87
 - Fehler: 0
-- Warnungen: 112
+- Warnungen: 125
 - Dokumentierte Hinweise: 145
 - Doppelte Slugs: 0
 
@@ -14,7 +14,7 @@ Erstellt: 2026-08-15T20:33:02.901Z
 
 - futterautomaten: 37
 - trinkbrunnen: 21
-- automatische-katzentoiletten: 6
+- automatische-katzentoiletten: 8
 - haustierkameras: 5
 - gps-tracker: 8
 - katzenklappen: 8
@@ -34,6 +34,18 @@ Erstellt: 2026-08-15T20:33:02.901Z
   - Empfohlenes Feld fehlt: batterie
   - Empfohlenes Feld fehlt: maße
   - Empfohlenes Feld fehlt: gewicht
+
+### PETKIT PUROBOT MAX 3
+
+- Datei: `src\content\products\petkit-purobot-max-3.md`
+- Kategorie: automatische-katzentoiletten
+- Vollständigkeit: 85%
+- Warnungen:
+  - decision.bestFor ist zu knapp oder fehlt
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
 
 ### PETLIBRO Dockstream 2 Smart
 
@@ -58,6 +70,18 @@ Erstellt: 2026-08-15T20:33:02.901Z
   - Empfohlenes Feld fehlt: reinigung
   - Empfohlenes Feld fehlt: wlan
   - Empfohlenes Feld fehlt: maße
+
+### PetSnowy SNOW+ (SNOW)
+
+- Datei: `src\content\products\petsnowy-snow-plus.md`
+- Kategorie: automatische-katzentoiletten
+- Vollständigkeit: 85%
+- Warnungen:
+  - decision.bestFor ist zu knapp oder fehlt
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
 
 ### Cat Mate Pet Fountain 335
 
@@ -159,6 +183,16 @@ Erstellt: 2026-08-15T20:33:02.901Z
 ### Neakasa M1 Plus
 
 - Datei: `src\content\products\neakasa-m1-plus.md`
+- Kategorie: automatische-katzentoiletten
+- Vollständigkeit: 91%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+
+### Neakasa M1 Plus Lite
+
+- Datei: `src\content\products\neakasa-m1-lite.md`
 - Kategorie: automatische-katzentoiletten
 - Vollständigkeit: 91%
 - Warnungen:

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T20:33:06.835Z",
+  "generatedAt": "2026-08-15T21:12:22.460Z",
   "minimumComparisons": 26,
   "thresholds": {
     "minimumVisibleRows": 3,
@@ -8,16 +8,16 @@
   "passed": true,
   "summary": {
     "comparisons": 28,
-    "products": 85,
-    "sourceCells": 857,
-    "allResolved": 764,
-    "allUnresolved": 93,
-    "sourceCoverage": 89.1,
-    "renderedCells": 730,
-    "renderedResolved": 730,
+    "products": 87,
+    "sourceCells": 925,
+    "allResolved": 825,
+    "allUnresolved": 100,
+    "sourceCoverage": 89.2,
+    "renderedCells": 774,
+    "renderedResolved": 774,
     "renderedUnresolved": 0,
     "renderedCoverage": 100,
-    "legacyValueCount": 615,
+    "legacyValueCount": 659,
     "overrideCount": 218
   },
   "failures": [],
@@ -25,17 +25,17 @@
     {
       "slug": "beste-automatische-katzentoiletten",
       "file": "src/content/comparisons/beste-automatische-katzentoiletten.md",
-      "items": 4,
-      "criteria": 12,
-      "visibleRows": 12,
-      "hiddenRows": 0,
+      "items": 6,
+      "criteria": 18,
+      "visibleRows": 14,
+      "hiddenRows": 4,
       "passed": true,
       "rows": [
         {
           "key": "bauform",
           "label": "Bauform / Reinigung",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 6,
+          "total": 6,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -58,6 +58,16 @@
               "product": "petkit-purobot-max-pro-2",
               "value": "Geschlossene 76-l-Siebtrommel",
               "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-3",
+              "value": "Geschlossene 76-l-Siebtrommel",
+              "resolved": true
+            },
+            {
+              "product": "petsnowy-snow-plus",
+              "value": "Geschlossene Kabine mit gebogenem Weg",
+              "resolved": true
             }
           ]
         },
@@ -65,9 +75,9 @@
           "key": "innenraum",
           "label": "Nutzbarer Innenraum",
           "resolved": 4,
-          "total": 4,
-          "coverage": 100,
-          "visible": true,
+          "total": 6,
+          "coverage": 66.7,
+          "visible": false,
           "cells": [
             {
               "product": "neakasa-m1-lite",
@@ -88,14 +98,24 @@
               "product": "petkit-purobot-max-pro-2",
               "value": "76 l; Oeffnung 267 x 273 mm",
               "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-3",
+              "value": "–",
+              "resolved": false
+            },
+            {
+              "product": "petsnowy-snow-plus",
+              "value": "–",
+              "resolved": false
             }
           ]
         },
         {
           "key": "einstieg",
           "label": "Einstiegshoehe",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 6,
+          "total": 6,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -118,14 +138,24 @@
               "product": "petkit-purobot-max-pro-2",
               "value": "25,5 cm",
               "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-3",
+              "value": "20,4 cm",
+              "resolved": true
+            },
+            {
+              "product": "petsnowy-snow-plus",
+              "value": "Nicht belastbar dokumentiert",
+              "resolved": true
             }
           ]
         },
         {
           "key": "katzenprofil",
           "label": "Groesse / Gewicht",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 6,
+          "total": 6,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -148,14 +178,24 @@
               "product": "petkit-purobot-max-pro-2",
               "value": "1,5-10 kg; Kitten Protection Mode",
               "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-3",
+              "value": "1,5-10 kg; 6+ Monate",
+              "resolved": true
+            },
+            {
+              "product": "petsnowy-snow-plus",
+              "value": "Passform vor Kauf prüfen",
+              "resolved": true
             }
           ]
         },
         {
           "key": "sicherheit",
           "label": "Sicherheitskonzept",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 6,
+          "total": 6,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -178,6 +218,16 @@
               "product": "petkit-purobot-max-pro-2",
               "value": "12 Sensoren + Anti-Pinch; Herstellerangabe",
               "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-3",
+              "value": "12 Sensoren",
+              "resolved": true
+            },
+            {
+              "product": "petsnowy-snow-plus",
+              "value": "7 Schutzebenen; Herstellerangabe",
+              "resolved": true
             }
           ]
         },
@@ -185,9 +235,9 @@
           "key": "mehrkatzen",
           "label": "Mehrkatzenhaushalt",
           "resolved": 4,
-          "total": 4,
-          "coverage": 100,
-          "visible": true,
+          "total": 6,
+          "coverage": 66.7,
+          "visible": false,
           "cells": [
             {
               "product": "neakasa-m1-lite",
@@ -208,14 +258,24 @@
               "product": "petkit-purobot-max-pro-2",
               "value": "Gesichts- und Gewichtserkennung",
               "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-3",
+              "value": "–",
+              "resolved": false
+            },
+            {
+              "product": "petsnowy-snow-plus",
+              "value": "–",
+              "resolved": false
             }
           ]
         },
         {
           "key": "streu",
           "label": "Streukompatibilitaet",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 6,
+          "total": 6,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -238,16 +298,26 @@
               "product": "petkit-purobot-max-pro-2",
               "value": "Bentonit, Tofu, Mischstreu; bis 12 mm",
               "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-3",
+              "value": "Klumpende Ton-/Tofu-/Mischstreu",
+              "resolved": true
+            },
+            {
+              "product": "petsnowy-snow-plus",
+              "value": "Kompatibilität vor Kauf anhand aktueller Anleitung prüfen",
+              "resolved": true
             }
           ]
         },
         {
           "key": "wartung",
           "label": "Wartung / Abfallfach",
-          "resolved": 4,
-          "total": 4,
-          "coverage": 100,
-          "visible": true,
+          "resolved": 5,
+          "total": 6,
+          "coverage": 83.3,
+          "visible": false,
           "cells": [
             {
               "product": "neakasa-m1-lite",
@@ -268,14 +338,24 @@
               "product": "petkit-purobot-max-pro-2",
               "value": "8-l-Abfallfach; abnehmbare Teile",
               "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-3",
+              "value": "–",
+              "resolved": false
+            },
+            {
+              "product": "petsnowy-snow-plus",
+              "value": "Magnetisch-modularer Aufbau; proprietäre Liner und Deodorizer berücksichtigen",
+              "resolved": true
             }
           ]
         },
         {
           "key": "geruch",
           "label": "Geruchskontrolle",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 6,
+          "total": 6,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -298,14 +378,24 @@
               "product": "petkit-purobot-max-pro-2",
               "value": "Mehrstufig; Herstellerangabe",
               "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-3",
+              "value": "OdorVoid-Zubehör; Herstellerclaim",
+              "resolved": true
+            },
+            {
+              "product": "petsnowy-snow-plus",
+              "value": "TiO₂-System; Prozentwert Herstellerclaim",
+              "resolved": true
             }
           ]
         },
         {
           "key": "appdaten",
           "label": "App / Monitoring",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 6,
+          "total": 6,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -328,14 +418,24 @@
               "product": "petkit-purobot-max-pro-2",
               "value": "1080p-Kamera, Cloud, Trends; Grundbetrieb offline",
               "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-3",
+              "value": "Nutzung/Gewicht; keine Diagnose",
+              "resolved": true
+            },
+            {
+              "product": "petsnowy-snow-plus",
+              "value": "Hersteller-App; Umfang prüfen",
+              "resolved": true
             }
           ]
         },
         {
           "key": "folgekosten",
           "label": "Laufende Kosten",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 6,
+          "total": 6,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -358,6 +458,16 @@
               "product": "petkit-purobot-max-pro-2",
               "value": "Beutel, Geruchszubehoer, optionale Dienste",
               "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-3",
+              "value": "Beutel und optional N50/N60",
+              "resolved": true
+            },
+            {
+              "product": "petsnowy-snow-plus",
+              "value": "Proprietäre Liner/Deodorizer",
+              "resolved": true
             }
           ]
         },
@@ -365,9 +475,9 @@
           "key": "platz",
           "label": "Platzbedarf",
           "resolved": 4,
-          "total": 4,
-          "coverage": 100,
-          "visible": true,
+          "total": 6,
+          "coverage": 66.7,
+          "visible": false,
           "cells": [
             {
               "product": "neakasa-m1-lite",
@@ -387,6 +497,256 @@
             {
               "product": "petkit-purobot-max-pro-2",
               "value": "657 x 538 x 603 mm; ca. 11 kg",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-3",
+              "value": "–",
+              "resolved": false
+            },
+            {
+              "product": "petsnowy-snow-plus",
+              "value": "–",
+              "resolved": false
+            }
+          ]
+        },
+        {
+          "key": "kaufrolle",
+          "label": "Eigenständige Kaufrolle",
+          "resolved": 6,
+          "total": 6,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "neakasa-m1-lite",
+              "value": "Offene Zugänglichkeit",
+              "resolved": true
+            },
+            {
+              "product": "devoko-90l-automatisches-katzenklo",
+              "value": "Preisorientierte geschlossene Option",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-luma-smart-litter-box",
+              "value": "Teiloffenes Kamera-Monitoring",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "Geschlossenes Kamera-Monitoring",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-3",
+              "value": "Niedriger Einstieg und Sicherheitsarchitektur",
+              "resolved": true
+            },
+            {
+              "product": "petsnowy-snow-plus",
+              "value": "Geschlossene Kabine und Anti-Tracking",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "bauform_einstieg",
+          "label": "Bauform / Einstieg",
+          "resolved": 6,
+          "total": 6,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "neakasa-m1-lite",
+              "value": "Offen; 35,2 cm Einstieg",
+              "resolved": true
+            },
+            {
+              "product": "devoko-90l-automatisches-katzenklo",
+              "value": "Geschlossen; ca. 23 cm",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-luma-smart-litter-box",
+              "value": "Teiloffen; 34 cm mit Stufe",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "Geschlossen; 25,5 cm",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-3",
+              "value": "Geschlossen; 20,4 cm",
+              "resolved": true
+            },
+            {
+              "product": "petsnowy-snow-plus",
+              "value": "Geschlossen; Maß offen",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "elektronische_sicherheit",
+          "label": "Elektronische Sicherheit",
+          "resolved": 6,
+          "total": 6,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "neakasa-m1-lite",
+              "value": "IR-Sensorik; Quellenabweichung",
+              "resolved": true
+            },
+            {
+              "product": "devoko-90l-automatisches-katzenklo",
+              "value": "Sensorangaben teils widersprüchlich",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-luma-smart-litter-box",
+              "value": "Kamera, IR, Gewicht; Herstellerangabe",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "12 Sensoren; Herstellerangabe",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-3",
+              "value": "12 Sensoren; Herstellerangabe",
+              "resolved": true
+            },
+            {
+              "product": "petsnowy-snow-plus",
+              "value": "7 Schutzebenen; Herstellerclaim",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "mechanische_sicherheit",
+          "label": "Mechanische Sicherheit",
+          "resolved": 6,
+          "total": 6,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "neakasa-m1-lite",
+              "value": "Keine separate mechanische Struktur dokumentiert",
+              "resolved": true
+            },
+            {
+              "product": "devoko-90l-automatisches-katzenklo",
+              "value": "Nicht belastbar dokumentiert",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-luma-smart-litter-box",
+              "value": "Einklemmschutz laut Hersteller",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "Anti-Pinch laut Hersteller",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-3",
+              "value": "Mechanisch offener Eingang",
+              "resolved": true
+            },
+            {
+              "product": "petsnowy-snow-plus",
+              "value": "Nicht separat dokumentiert",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "tracking",
+          "label": "Streu-Tracking",
+          "resolved": 6,
+          "total": 6,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "neakasa-m1-lite",
+              "value": "Offene Bauform",
+              "resolved": true
+            },
+            {
+              "product": "devoko-90l-automatisches-katzenklo",
+              "value": "Nicht separat dokumentiert",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-luma-smart-litter-box",
+              "value": "Nicht separat dokumentiert",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "Nicht separat dokumentiert",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-3",
+              "value": "Nicht separat dokumentiert",
+              "resolved": true
+            },
+            {
+              "product": "petsnowy-snow-plus",
+              "value": "Gebogener Ein-/Ausstiegsweg",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "kamera",
+          "label": "Kamera / Monitoring",
+          "resolved": 6,
+          "total": 6,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "neakasa-m1-lite",
+              "value": "Keine Kamera",
+              "resolved": true
+            },
+            {
+              "product": "devoko-90l-automatisches-katzenklo",
+              "value": "Keine Kamera dokumentiert",
+              "resolved": true
+            },
+            {
+              "product": "petlibro-luma-smart-litter-box",
+              "value": "1080p-Kamera; Cloud-Aufzeichnung",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-pro-2",
+              "value": "1080p-Kamera; Cloud",
+              "resolved": true
+            },
+            {
+              "product": "petkit-purobot-max-3",
+              "value": "Keine Kamera dokumentiert",
+              "resolved": true
+            },
+            {
+              "product": "petsnowy-snow-plus",
+              "value": "Keine Kamera dokumentiert",
               "resolved": true
             }
           ]
@@ -6262,8 +6622,8 @@
       "slug": "katzenklappen-mit-app-und-beuteerkennung",
       "file": "src/content/comparisons/katzenklappen-mit-app-und-beuteerkennung.md",
       "items": 4,
-      "criteria": 6,
-      "visibleRows": 6,
+      "criteria": 8,
+      "visibleRows": 8,
       "hiddenRows": 0,
       "passed": true,
       "rows": [
@@ -6443,6 +6803,66 @@
             {
               "product": "zeromouse-2-0",
               "value": "Bestehende Klappe bleibt separates System",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "hub_erforderlich",
+          "label": "Hub erforderlich",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "sureflap-mikrochip-katzenklappe-connect",
+              "value": "Ja, für die Verbindung mit der Sure Petcare App",
+              "resolved": true
+            },
+            {
+              "product": "onlycat-mikrochip-katzenklappe",
+              "value": "Nicht dokumentiert",
+              "resolved": true
+            },
+            {
+              "product": "petwalk-medium-tiertuer",
+              "value": "Nicht dokumentiert",
+              "resolved": true
+            },
+            {
+              "product": "zeromouse-2-0",
+              "value": "Nicht dokumentiert",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "security_support",
+          "label": "Dokumentierter Security-Update-Zeitraum",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "sureflap-mikrochip-katzenklappe-connect",
+              "value": "Hub: zwei Jahre ab Kaufdatum des Hubs dokumentiert",
+              "resolved": true
+            },
+            {
+              "product": "onlycat-mikrochip-katzenklappe",
+              "value": "Nicht dokumentiert",
+              "resolved": true
+            },
+            {
+              "product": "petwalk-medium-tiertuer",
+              "value": "Nicht dokumentiert",
+              "resolved": true
+            },
+            {
+              "product": "zeromouse-2-0",
+              "value": "Nicht dokumentiert",
               "resolved": true
             }
           ]
