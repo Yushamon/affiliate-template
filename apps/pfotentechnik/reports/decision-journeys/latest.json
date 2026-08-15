@@ -1,8 +1,8 @@
 {
   "version": "2.0.0",
-  "generatedAt": "2026-08-06T12:51:31.996Z",
+  "generatedAt": "2026-08-15T18:00:31.017Z",
   "summary": {
-    "documents": 147,
+    "documents": 159,
     "technicalErrors": 0,
     "editorialWarnings": 138
   },
@@ -839,6 +839,31 @@
   ],
   "matrix": [
     {
+      "route": "/automatische-katzentoiletten/",
+      "type": "page",
+      "cluster": "automatische-katzentoiletten",
+      "stage": "orientation",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-automatische-katzentoiletten/",
+          "kind": "Vergleich",
+          "label": "Automatische Katzentoiletten im Vergleich vergleichen"
+        },
+        {
+          "href": "/smarte-haustiertechnik/",
+          "kind": "Ratgeber",
+          "label": "Smarte Haustiertechnik – Der große Ratgeber"
+        },
+        {
+          "href": "/produkt/devoko-90l-automatisches-katzenklo/",
+          "kind": "Produkt",
+          "label": "Devoko 90L Automatisches Katzenklo im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/automatische-katzentoiletten.md"
+    },
+    {
       "route": "/biofilm-im-katzentrinkbrunnen/",
       "type": "page",
       "cluster": "trinkbrunnen",
@@ -1164,6 +1189,31 @@
       "file": "src/content/pages/gps-tracker.md"
     },
     {
+      "route": "/haustierkameras/",
+      "type": "page",
+      "cluster": "haustierkameras",
+      "stage": "orientation",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-haustierkameras/",
+          "kind": "Vergleich",
+          "label": "Haustierkameras im Vergleich vergleichen"
+        },
+        {
+          "href": "/smarte-haustiertechnik/",
+          "kind": "Ratgeber",
+          "label": "Smarte Haustiertechnik – Der große Ratgeber"
+        },
+        {
+          "href": "/produkt/enabot-ebo-air-2/",
+          "kind": "Produkt",
+          "label": "Enabot EBO Air 2 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/haustierkameras.md"
+    },
+    {
       "route": "/kalk-katzentrinkbrunnen-entfernen/",
       "type": "page",
       "cluster": "trinkbrunnen",
@@ -1196,19 +1246,19 @@
       "source": "frontmatter",
       "steps": [
         {
+          "href": "/katzenklappe-fuer-mehrere-katzen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappe für mehrere Katzen: Rechte richtig planen"
+        },
+        {
+          "href": "/katzenklappen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen"
+        },
+        {
           "href": "/vergleiche/beste-mikrochip-katzenklappen/",
           "kind": "Vergleich",
           "label": "Mikrochip-Katzenklappen im Vergleich vergleichen"
-        },
-        {
-          "href": "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
-          "kind": "Vergleich",
-          "label": "Katzenklappen mit App und Beuteerkennung im Vergleich vergleichen"
-        },
-        {
-          "href": "/produkt/onlycat-mikrochip-katzenklappe/",
-          "kind": "Produkt",
-          "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
         }
       ],
       "file": "src/content/pages/katze-an-katzenklappe-gewoehnen.md"
@@ -1292,23 +1342,23 @@
       "route": "/katzenklappe-zugluft-und-waermedaemmung/",
       "type": "page",
       "cluster": "katzenklappen",
-      "stage": "orientation",
+      "stage": "problem",
       "source": "frontmatter",
       "steps": [
         {
-          "href": "/vergleiche/beste-mikrochip-katzenklappen/",
-          "kind": "Vergleich",
-          "label": "Mikrochip-Katzenklappen im Vergleich vergleichen"
+          "href": "/katzenklappe-einbauen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappe einbauen: Tür, Glas und Wand richtig planen"
         },
         {
-          "href": "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
-          "kind": "Vergleich",
-          "label": "Katzenklappen mit App und Beuteerkennung im Vergleich vergleichen"
-        },
-        {
-          "href": "/produkt/onlycat-mikrochip-katzenklappe/",
+          "href": "/produkt/petwalk-medium-tiertuer/",
           "kind": "Produkt",
-          "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
+          "label": "petWALK Medium Tiertür im Detail prüfen"
+        },
+        {
+          "href": "/katzenklappen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen"
         }
       ],
       "file": "src/content/pages/katzenklappe-zugluft-und-waermedaemmung.md"
@@ -1331,9 +1381,9 @@
           "label": "Katzenklappen mit App und Beuteerkennung im Vergleich vergleichen"
         },
         {
-          "href": "/produkt/onlycat-mikrochip-katzenklappe/",
-          "kind": "Produkt",
-          "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
+          "href": "/katzenklappe-einbauen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappe einbauen: Tür, Glas und Wand richtig planen"
         }
       ],
       "file": "src/content/pages/katzenklappen.md"
@@ -2014,6 +2064,31 @@
       "file": "src/content/pages/wie-viele-wasserstellen-katze.md"
     },
     {
+      "route": "/vergleiche/beste-automatische-katzentoiletten/",
+      "type": "comparison",
+      "cluster": "automatische-katzentoiletten",
+      "stage": "evaluation",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/produkt/litter-robot-5-pro/",
+          "kind": "Produkt",
+          "label": "Litter-Robot 5 Pro im Detail prüfen"
+        },
+        {
+          "href": "/produkt/petkit-purobot-max-pro-2/",
+          "kind": "Produkt",
+          "label": "PETKIT PUROBOT MAX PRO 2 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/neakasa-m1-plus/",
+          "kind": "Produkt",
+          "label": "Neakasa M1 Plus im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-automatische-katzentoiletten.md"
+    },
+    {
       "route": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
       "type": "comparison",
       "cluster": "futterautomaten",
@@ -2414,6 +2489,31 @@
       "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md"
     },
     {
+      "route": "/vergleiche/beste-haustierkameras/",
+      "type": "comparison",
+      "cluster": "haustierkameras",
+      "stage": "evaluation",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/produkt/petlibro-scout-smart-camera/",
+          "kind": "Produkt",
+          "label": "PETLIBRO Scout Smart Camera im Detail prüfen"
+        },
+        {
+          "href": "/produkt/furbo-360-hundekamera/",
+          "kind": "Produkt",
+          "label": "Furbo 360° Hundekamera im Detail prüfen"
+        },
+        {
+          "href": "/produkt/enabot-ebo-air-2/",
+          "kind": "Produkt",
+          "label": "Enabot EBO Air 2 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-haustierkameras.md"
+    },
+    {
       "route": "/vergleiche/beste-mikrochip-katzenklappen/",
       "type": "comparison",
       "cluster": "katzenklappen",
@@ -2421,19 +2521,19 @@
       "source": "frontmatter",
       "steps": [
         {
-          "href": "/produkt/onlycat-mikrochip-katzenklappe/",
-          "kind": "Produkt",
-          "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
+          "href": "/katzenklappe-fuer-mehrere-katzen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappe für mehrere Katzen: Rechte richtig planen"
         },
         {
-          "href": "/produkt/petsafe-mikrochip-katzenklappe/",
-          "kind": "Produkt",
-          "label": "PetSafe Mikrochip Katzenklappe im Detail prüfen"
+          "href": "/katzenklappe-einbauen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappe einbauen: Tür, Glas und Wand richtig planen"
         },
         {
-          "href": "/produkt/petsafe-petporte-smart-flap/",
+          "href": "/produkt/sureflap-dualscan-mikrochip-katzenklappe/",
           "kind": "Produkt",
-          "label": "PetSafe Petporte smart flap im Detail prüfen"
+          "label": "SureFlap DualScan Mikrochip Katzenklappe im Detail prüfen"
         }
       ],
       "file": "src/content/comparisons/beste-mikrochip-katzenklappen.md"
@@ -2626,14 +2726,14 @@
           "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
         },
         {
-          "href": "/produkt/petsafe-mikrochip-katzenklappe/",
+          "href": "/produkt/sureflap-mikrochip-katzenklappe-connect/",
           "kind": "Produkt",
-          "label": "PetSafe Mikrochip Katzenklappe im Detail prüfen"
+          "label": "SureFlap Mikrochip Katzenklappe Connect im Detail prüfen"
         },
         {
-          "href": "/produkt/petsafe-petporte-smart-flap/",
+          "href": "/produkt/zeromouse-2-0/",
           "kind": "Produkt",
-          "label": "PetSafe Petporte smart flap im Detail prüfen"
+          "label": "ZeroMOUSE 2.0 im Detail prüfen"
         }
       ],
       "file": "src/content/comparisons/katzenklappen-mit-app-und-beuteerkennung.md"
@@ -2864,6 +2964,81 @@
       "file": "src/content/products/catit-pixi-vision-smart-feeder.md"
     },
     {
+      "route": "/produkt/devoko-90l-automatisches-katzenklo/",
+      "type": "product",
+      "cluster": "automatische-katzentoiletten",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-automatische-katzentoiletten/",
+          "kind": "Vergleich",
+          "label": "Automatische Katzentoiletten im Vergleich vergleichen"
+        },
+        {
+          "href": "/automatische-katzentoiletten/",
+          "kind": "Ratgeber",
+          "label": "Automatische Katzentoiletten sicher auswählen"
+        },
+        {
+          "href": "/produkt/litter-robot-5-pro/",
+          "kind": "Produkt",
+          "label": "Litter-Robot 5 Pro im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/devoko-90l-automatisches-katzenklo.md"
+    },
+    {
+      "route": "/produkt/enabot-ebo-air-2/",
+      "type": "product",
+      "cluster": "haustierkameras",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-haustierkameras/",
+          "kind": "Vergleich",
+          "label": "Haustierkameras im Vergleich vergleichen"
+        },
+        {
+          "href": "/haustierkameras/",
+          "kind": "Ratgeber",
+          "label": "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten"
+        },
+        {
+          "href": "/produkt/furbo-360-hundekamera/",
+          "kind": "Produkt",
+          "label": "Furbo 360° Hundekamera im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/enabot-ebo-air-2.md"
+    },
+    {
+      "route": "/produkt/furbo-360-hundekamera/",
+      "type": "product",
+      "cluster": "haustierkameras",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-haustierkameras/",
+          "kind": "Vergleich",
+          "label": "Haustierkameras im Vergleich vergleichen"
+        },
+        {
+          "href": "/haustierkameras/",
+          "kind": "Ratgeber",
+          "label": "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten"
+        },
+        {
+          "href": "/produkt/enabot-ebo-air-2/",
+          "kind": "Produkt",
+          "label": "Enabot EBO Air 2 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/furbo-360-hundekamera.md"
+    },
+    {
       "route": "/produkt/garmin-alpha-t-20/",
       "type": "product",
       "cluster": "gps-tracker",
@@ -3012,6 +3187,81 @@
         }
       ],
       "file": "src/content/products/imipaw-3l-automatic-cat-feeder.md"
+    },
+    {
+      "route": "/produkt/litter-robot-5-pro/",
+      "type": "product",
+      "cluster": "automatische-katzentoiletten",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-automatische-katzentoiletten/",
+          "kind": "Vergleich",
+          "label": "Automatische Katzentoiletten im Vergleich vergleichen"
+        },
+        {
+          "href": "/automatische-katzentoiletten/",
+          "kind": "Ratgeber",
+          "label": "Automatische Katzentoiletten sicher auswählen"
+        },
+        {
+          "href": "/produkt/devoko-90l-automatisches-katzenklo/",
+          "kind": "Produkt",
+          "label": "Devoko 90L Automatisches Katzenklo im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/litter-robot-5-pro.md"
+    },
+    {
+      "route": "/produkt/neakasa-m1-lite/",
+      "type": "product",
+      "cluster": "automatische-katzentoiletten",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-automatische-katzentoiletten/",
+          "kind": "Vergleich",
+          "label": "Automatische Katzentoiletten im Vergleich vergleichen"
+        },
+        {
+          "href": "/automatische-katzentoiletten/",
+          "kind": "Ratgeber",
+          "label": "Automatische Katzentoiletten sicher auswählen"
+        },
+        {
+          "href": "/produkt/devoko-90l-automatisches-katzenklo/",
+          "kind": "Produkt",
+          "label": "Devoko 90L Automatisches Katzenklo im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/neakasa-m1-lite.md"
+    },
+    {
+      "route": "/produkt/neakasa-m1-plus/",
+      "type": "product",
+      "cluster": "automatische-katzentoiletten",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-automatische-katzentoiletten/",
+          "kind": "Vergleich",
+          "label": "Automatische Katzentoiletten im Vergleich vergleichen"
+        },
+        {
+          "href": "/automatische-katzentoiletten/",
+          "kind": "Ratgeber",
+          "label": "Automatische Katzentoiletten sicher auswählen"
+        },
+        {
+          "href": "/produkt/devoko-90l-automatisches-katzenklo/",
+          "kind": "Produkt",
+          "label": "Devoko 90L Automatisches Katzenklo im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/neakasa-m1-plus.md"
     },
     {
       "route": "/produkt/oneisall-2-2l-cordless-fountain/",
@@ -3171,19 +3421,19 @@
       "source": "frontmatter",
       "steps": [
         {
-          "href": "/vergleiche/beste-mikrochip-katzenklappen/",
-          "kind": "Vergleich",
-          "label": "Mikrochip-Katzenklappen im Vergleich vergleichen"
-        },
-        {
           "href": "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
           "kind": "Vergleich",
           "label": "Katzenklappen mit App und Beuteerkennung im Vergleich vergleichen"
         },
         {
-          "href": "/produkt/petsafe-mikrochip-katzenklappe/",
-          "kind": "Produkt",
-          "label": "PetSafe Mikrochip Katzenklappe im Detail prüfen"
+          "href": "/katzenklappen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen"
+        },
+        {
+          "href": "/vergleiche/beste-mikrochip-katzenklappen/",
+          "kind": "Vergleich",
+          "label": "Mikrochip-Katzenklappen im Vergleich vergleichen"
         }
       ],
       "file": "src/content/products/onlycat-mikrochip-katzenklappe.md"
@@ -3487,6 +3737,31 @@
         }
       ],
       "file": "src/content/products/petkit-fresh-element-solo.md"
+    },
+    {
+      "route": "/produkt/petkit-purobot-max-pro-2/",
+      "type": "product",
+      "cluster": "automatische-katzentoiletten",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-automatische-katzentoiletten/",
+          "kind": "Vergleich",
+          "label": "Automatische Katzentoiletten im Vergleich vergleichen"
+        },
+        {
+          "href": "/automatische-katzentoiletten/",
+          "kind": "Ratgeber",
+          "label": "Automatische Katzentoiletten sicher auswählen"
+        },
+        {
+          "href": "/produkt/devoko-90l-automatisches-katzenklo/",
+          "kind": "Produkt",
+          "label": "Devoko 90L Automatisches Katzenklo im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petkit-purobot-max-pro-2.md"
     },
     {
       "route": "/produkt/petkit-yumshare-dual-hopper/",
@@ -3889,6 +4164,31 @@
       "file": "src/content/products/petlibro-polar-wet-food-feeder.md"
     },
     {
+      "route": "/produkt/petlibro-scout-smart-camera/",
+      "type": "product",
+      "cluster": "haustierkameras",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-haustierkameras/",
+          "kind": "Vergleich",
+          "label": "Haustierkameras im Vergleich vergleichen"
+        },
+        {
+          "href": "/haustierkameras/",
+          "kind": "Ratgeber",
+          "label": "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten"
+        },
+        {
+          "href": "/produkt/enabot-ebo-air-2/",
+          "kind": "Produkt",
+          "label": "Enabot EBO Air 2 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petlibro-scout-smart-camera.md"
+    },
+    {
       "route": "/produkt/petlibro-space-smart-feeder/",
       "type": "product",
       "cluster": "futterautomaten",
@@ -4001,14 +4301,14 @@
           "label": "Mikrochip-Katzenklappen im Vergleich vergleichen"
         },
         {
-          "href": "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
-          "kind": "Vergleich",
-          "label": "Katzenklappen mit App und Beuteerkennung im Vergleich vergleichen"
+          "href": "/katzenklappe-einbauen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappe einbauen: Tür, Glas und Wand richtig planen"
         },
         {
-          "href": "/produkt/onlycat-mikrochip-katzenklappe/",
-          "kind": "Produkt",
-          "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
+          "href": "/katzenklappen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen"
         }
       ],
       "file": "src/content/products/petsafe-mikrochip-katzenklappe.md"
@@ -4071,9 +4371,9 @@
       "source": "frontmatter",
       "steps": [
         {
-          "href": "/vergleiche/beste-mikrochip-katzenklappen/",
-          "kind": "Vergleich",
-          "label": "Mikrochip-Katzenklappen im Vergleich vergleichen"
+          "href": "/katzenklappe-zugluft-und-waermedaemmung/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappe: Zugluft und Wärmedämmung richtig bewerten"
         },
         {
           "href": "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
@@ -4081,9 +4381,9 @@
           "label": "Katzenklappen mit App und Beuteerkennung im Vergleich vergleichen"
         },
         {
-          "href": "/produkt/onlycat-mikrochip-katzenklappe/",
-          "kind": "Produkt",
-          "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
+          "href": "/katzenklappen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen"
         }
       ],
       "file": "src/content/products/petwalk-medium-tiertuer.md"
@@ -4201,14 +4501,14 @@
           "label": "Mikrochip-Katzenklappen im Vergleich vergleichen"
         },
         {
-          "href": "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
-          "kind": "Vergleich",
-          "label": "Katzenklappen mit App und Beuteerkennung im Vergleich vergleichen"
+          "href": "/katzenklappe-fuer-mehrere-katzen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappe für mehrere Katzen: Rechte richtig planen"
         },
         {
-          "href": "/produkt/onlycat-mikrochip-katzenklappe/",
-          "kind": "Produkt",
-          "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
+          "href": "/katzenklappe-einbauen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappe einbauen: Tür, Glas und Wand richtig planen"
         }
       ],
       "file": "src/content/products/sureflap-mikrochip-katzenklappe.md"

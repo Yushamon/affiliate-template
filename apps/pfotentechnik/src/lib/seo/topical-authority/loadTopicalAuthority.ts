@@ -340,7 +340,7 @@ export const CLUSTER_DEFINITIONS: ClusterDefinition[] = [
     ],
     hubPatterns: [/^haustierkameras?$/i],
     manufacturerPatterns: [],
-    targets: { pages: 3, comparisons: 1, products: 5, manufacturers: 2 },
+    targets: { pages: 3, comparisons: 1, products: 3, manufacturers: 2 },
     strategy:
       "Vor dem Ausbau Nachfrage, Produktbreite, Primärquellen und Affiliate-Abdeckung validieren.",
     expansion: true,
@@ -519,6 +519,9 @@ function extractLinks(raw: string): string[] {
     output.add(normalizeRoute(match[1]));
   }
   for (const match of raw.matchAll(/href=["'](\/[^"'#?]+)[^"']*["']/g)) {
+    output.add(normalizeRoute(match[1]));
+  }
+  for (const match of raw.matchAll(/["'](\/[^"'\s#?]+)["']/g)) {
     output.add(normalizeRoute(match[1]));
   }
 

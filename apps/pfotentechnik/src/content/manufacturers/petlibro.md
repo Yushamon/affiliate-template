@@ -122,6 +122,7 @@ productSlugs:
   - "petlibro-capsule-dog-fountain"
   - "petlibro-stainless-steel-fountain"
   - "petlibro-glacier-ultrafiltration"
+  - "petlibro-scout-smart-camera"
 
 profile:
   company: "PETLIBRO entwickelt laut eigener Unternehmensdarstellung seit 2019 Haustiertechnik. Das aktuelle Sortiment umfasst vor allem Futterautomaten und Trinkbrunnen; der offizielle Hilfebereich führt außerdem Kameras, eine smarte Katzentoilette und weiteres Zubehör."

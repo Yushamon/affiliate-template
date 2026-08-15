@@ -42,7 +42,7 @@
 - Intentionen: product-research ↔ product-research
 - Maßnahme: DIFFERENTIATE
 - Begründung: Zwei eigenständige PETKIT-Modellvarianten mit unterschiedlicher Produktidentität.
-- Ähnlichkeit: 0.7097
+- Ähnlichkeit: 0.7098
 
 ### separated|/produkt/tractive-dog-6-xl/|/produkt/tractive-dog-6/
 
