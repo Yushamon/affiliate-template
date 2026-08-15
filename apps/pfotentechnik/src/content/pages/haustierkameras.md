@@ -9,58 +9,152 @@ seoDescription: "Haustierkamera nach Blickbereich, Interaktion, Cloud oder lokal
 category: "haustiertechnik"
 categoryLabel: "Haustierkameras"
 categoryPath: "/wissen/"
-linking: { keywords: ["Haustierkameras", "Haustierkamera", "Hundekamera", "Katzenkamera"], contexts: ["haustierkameras", "smarte-haustiertechnik", "kamera", "datenschutz"], priority: "high", maxOccurrences: 2 }
-tags: ["Haustierkameras", "Hundekamera", "Katzenkamera", "Datenschutz", "Cloud", "App", "Kaufberatung"]
-author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
+linking:
+  keywords:
+    - "Haustierkameras"
+    - "Haustierkamera"
+    - "Hundekamera"
+    - "Katzenkamera"
+  contexts:
+    - "haustierkameras"
+    - "smarte-haustiertechnik"
+    - "kamera"
+    - "datenschutz"
+  priority: "high"
+  maxOccurrences: 2
+tags:
+  - "Haustierkameras"
+  - "Hundekamera"
+  - "Katzenkamera"
+  - "Datenschutz"
+  - "Cloud"
+  - "App"
+  - "Kaufberatung"
+author:
+  name: "PfotenTechnik Redaktion"
+  role: "Redaktion"
 publishedAt: "2026-08-06"
-updatedAt: "2026-08-07"
-hub: { sections: ["wissen", "haustierkameras"], title: "Haustierkameras", description: "Blickbereich, Interaktion, Speicherung, Datenschutz und Folgekosten vor dem Modell klären.", icon: "📷", featured: true, order: 36 }
+updatedAt: "2026-08-15"
+hub:
+  sections:
+    - "wissen"
+    - "haustierkameras"
+  title: "Haustierkameras"
+  description: "Blickbereich, Interaktion, Speicherung, Datenschutz und Folgekosten vor dem Modell klären."
+  icon: "📷"
+  featured: true
+  order: 36
 hubPriority: 92
-seo: { title: "Haustierkameras: Datenschutz, Abo & Kaufberatung", description: "Haustierkamera nach Blickbereich, Interaktion, Speicherung, Datenschutz, Abo und 24-Monats-Kosten auswählen.", canonical: "/haustierkameras/", sitemap: true, noindex: false, priority: 0.9, changefreq: "monthly" }
+seo:
+  title: "Haustierkameras: Datenschutz, Abo & Kaufberatung"
+  description: "Haustierkamera nach Blickbereich, Interaktion, Speicherung, Datenschutz, Abo und 24-Monats-Kosten auswählen."
+  canonical: "/haustierkameras/"
+  sitemap: true
+  noindex: false
+  priority: 0.9
+  changefreq: "monthly"
 contentPlatform:
   version: 2
   cluster: "haustierkameras"
   intent: "buying-guide"
-  products: ["petlibro-scout-smart-camera", "furbo-360-hundekamera", "enabot-ebo-air-2"]
+  products:
+    - "petlibro-scout-smart-camera"
+    - "furbo-mini-360"
+    - "enabot-rola-mini"
   decision: "auto"
-  blocks: ["summary", "comparison", "fit", "checklist", "mistakes"]
+  blocks:
+    - "summary"
+    - "comparison"
+    - "fit"
+    - "checklist"
+    - "mistakes"
   summary:
     - "Zuerst den benötigten Blickbereich festlegen, dann Interaktion und erst danach KI- oder Cloudfunktionen bewerten."
     - "Cloudspeicher, KI-Auswertung und Benachrichtigungen können laufende Kosten und zusätzliche Datenverarbeitung erzeugen."
     - "Eine Haustierkamera zeigt Verhalten, ersetzt aber weder Betreuung noch eine fachliche Diagnose."
-  suitableFor: ["Kontrolle eines klar definierten Innenbereichs", "Ferninteraktion mit einem daran gewöhnten Tier", "robotertaugliche Wohnungen bei mobilen Kameras"]
-  notSuitableFor: ["Ersatz regelmäßiger Betreuung", "Kauf ohne Prüfung von Cloud, Konto und Aufbewahrung", "mobile Roboter bei offenen Treppen oder ungeeigneten Fahrwegen"]
-  checklist: ["Blickbereich festlegen", "WLAN am Standort testen", "Speicherweg und Abo prüfen", "Mikrofon und Benachrichtigungen bewusst konfigurieren", "24-Monats-Kosten rechnen"]
-  mistakes: ["Auflösung mit besserer Abdeckung verwechseln", "Cloudkosten erst nach dem Kauf prüfen", "Leckerliausgabe als automatisch sinnvolle Interaktion ansehen", "Kameradaten als Diagnose interpretieren"]
+  suitableFor:
+    - "Kontrolle eines klar definierten Innenbereichs"
+    - "Ferninteraktion mit einem daran gewöhnten Tier"
+    - "robotertaugliche Wohnungen bei mobilen Kameras"
+  notSuitableFor:
+    - "Ersatz regelmäßiger Betreuung"
+    - "Kauf ohne Prüfung von Cloud, Konto und Aufbewahrung"
+    - "mobile Roboter bei offenen Treppen oder ungeeigneten Fahrwegen"
+  checklist:
+    - "Blickbereich festlegen"
+    - "WLAN am Standort testen"
+    - "Speicherweg und Abo prüfen"
+    - "Mikrofon und Benachrichtigungen bewusst konfigurieren"
+    - "24-Monats-Kosten rechnen"
+  mistakes:
+    - "Auflösung mit besserer Abdeckung verwechseln"
+    - "Cloudkosten erst nach dem Kauf prüfen"
+    - "Leckerliausgabe als automatisch sinnvolle Interaktion ansehen"
+    - "Kameradaten als Diagnose interpretieren"
   faqMode: "manual"
   theme: "blue"
 premiumBlocks:
-  - { type: "answer", eyebrow: "Kurzantwort", title: "Welche Haustierkamera passt?", text: "Für einen festen Futter- oder Schlafplatz reicht meist eine stationäre Kamera. Leckerliausgabe ist eine eigene Interaktionsentscheidung. Ein Kameraroboter lohnt nur, wenn mehrere Räume tatsächlich befahrbar sind.", href: "#entscheidung-nach-aufgabe", cta: "Kameraklasse wählen" }
+  - type: "answer"
+    eyebrow: "Kurzantwort"
+    title: "Welche Haustierkamera passt?"
+    text: "Für einen festen Futter- oder Schlafplatz reicht meist eine stationäre Kamera. Leckerliausgabe ist eine eigene Interaktionsentscheidung. Ein Kameraroboter lohnt nur, wenn mehrere Räume tatsächlich befahrbar sind."
+    href: "#entscheidung-nach-aufgabe"
+    cta: "Kameraklasse wählen"
   - type: "quickFacts"
     eyebrow: "Nächste Schritte"
     title: "Modelle und Klassen prüfen"
     cards:
-      - { label: "Vergleich", title: "Haustierkameras vergleichen", text: "Feste Kamera, Interaktionskamera und Kameraroboter nach denselben Entscheidungskriterien.", href: "/vergleiche/beste-haustierkameras/", cta: "Modelle vergleichen" }
-      - { label: "Fester Blickpunkt", title: "PETLIBRO Scout", text: "Cloudbasierte Mehrtierkamera für einen definierten Innenbereich.", href: "/produkt/petlibro-scout-smart-camera/", cta: "Produkt einordnen" }
-      - { label: "Interaktion", title: "Furbo 360°", text: "Hundekamera mit Zwei-Wege-Audio und Leckerliausgabe.", href: "/produkt/furbo-360-hundekamera/", cta: "Produkt einordnen" }
+      - label: "Vergleich"
+        title: "Haustierkameras vergleichen"
+        text: "Kameraklasse, Cloud, Abo, Interaktion und Abdeckung in fester Reihenfolge pruefen."
+        href: "/vergleiche/beste-haustierkameras/"
+        cta: "Modelle vergleichen"
+      - label: "Pan/Tilt"
+        title: "PETLIBRO Scout"
+        text: "Feste Mehrtierkamera mit Cloud-only-Aufzeichnung und Tariffrage."
+        href: "/produkt/petlibro-scout-smart-camera/"
+        cta: "Produkt einordnen"
+      - label: "Interaktion"
+        title: "Furbo Mini 360"
+        text: "Stationaere Pet-Cam mit Audio und Leckerliausgabe."
+        href: "/produkt/furbo-mini-360/"
+        cta: "Produkt einordnen"
+      - label: "Mobil"
+        title: "Enabot ROLA Mini"
+        text: "Mobile Roboterkamera fuer aktive Fahrten auf geeigneten Boeden."
+        href: "/produkt/enabot-rola-mini/"
+        cta: "Produkt einordnen"
 faq:
-  - { question: "Braucht eine Haustierkamera ein Abo?", answer: "Nicht zwingend. Livebild und Basisfunktionen können je nach Modell ohne Tarif verfügbar sein. Cloudaufzeichnung, KI-Auswertung oder spezialisierte Hinweise sind häufig tarifabhängig." }
-  - { question: "Ist lokale Speicherung automatisch datenschutzfreundlicher?", answer: "Nein. Lokale Speicherung reduziert mögliche Cloudabhängigkeit, ersetzt aber keine Prüfung von App-Konto, Fernzugriff, Mikrofon und Updateversorgung." }
-  - { question: "Reicht Full HD für eine Haustierkamera?", answer: "Für einen klar definierten Innenbereich häufig ja. Blickwinkel, Positionierung, Nachtsicht und tatsächliche Abdeckung sind meist wichtiger als eine höhere Auflösung allein." }
-  - { question: "Ist ein Kameraroboter besser als eine feste Kamera?", answer: "Nur wenn mehrere relevante Bereiche auf einer befahrbaren Ebene liegen. Treppen, Schwellen, Kabel, Türen und Hindernisse können den zusätzlichen Blickbereich stark begrenzen." }
-  - { question: "Hilft Gegensprechen bei Trennungsstress?", answer: "Das lässt sich nicht pauschal ableiten. Manche Tiere reagieren ruhig, andere werden durch eine Stimme ohne sichtbare Person eher irritiert. Die Funktion sollte beobachtet und nicht als Therapie verstanden werden." }
-  - { question: "Kann eine Haustierkamera Krankheiten erkennen?", answer: "Nein. Sie kann Verhalten oder Hersteller-KI-Hinweise sichtbar machen. Auffälligkeiten brauchen eine fachliche Einordnung und dürfen nicht als Diagnose aus einer App übernommen werden." }
+  - question: "Braucht eine Haustierkamera ein Abo?"
+    answer: "Nicht zwingend. Livebild und Basisfunktionen können je nach Modell ohne Tarif verfügbar sein. Cloudaufzeichnung, KI-Auswertung oder spezialisierte Hinweise sind häufig tarifabhängig."
+  - question: "Ist lokale Speicherung automatisch datenschutzfreundlicher?"
+    answer: "Nein. Lokale Speicherung reduziert mögliche Cloudabhängigkeit, ersetzt aber keine Prüfung von App-Konto, Fernzugriff, Mikrofon und Updateversorgung."
+  - question: "Reicht Full HD für eine Haustierkamera?"
+    answer: "Für einen klar definierten Innenbereich häufig ja. Blickwinkel, Positionierung, Nachtsicht und tatsächliche Abdeckung sind meist wichtiger als eine höhere Auflösung allein."
+  - question: "Ist ein Kameraroboter besser als eine feste Kamera?"
+    answer: "Nur wenn mehrere relevante Bereiche auf einer befahrbaren Ebene liegen. Treppen, Schwellen, Kabel, Türen und Hindernisse können den zusätzlichen Blickbereich stark begrenzen."
+  - question: "Hilft Gegensprechen bei Trennungsstress?"
+    answer: "Das lässt sich nicht pauschal ableiten. Manche Tiere reagieren ruhig, andere werden durch eine Stimme ohne sichtbare Person eher irritiert. Die Funktion sollte beobachtet und nicht als Therapie verstanden werden."
+  - question: "Kann eine Haustierkamera Krankheiten erkennen?"
+    answer: "Nein. Sie kann Verhalten oder Hersteller-KI-Hinweise sichtbar machen. Auffälligkeiten brauchen eine fachliche Einordnung und dürfen nicht als Diagnose aus einer App übernommen werden."
 decisionJourney:
   cluster: "haustierkameras"
   stage: "orientation"
   intent: "haustierkamera-sinnvoll-auswaehlen"
   primaryQuestion: "Welcher Blickbereich, welche Interaktion und welche Datenverarbeitung passen zu Tier und Wohnung?"
-  next: ["/vergleiche/beste-haustierkameras/"]
-  fallback: ["/smarte-haustiertechnik/"]
+  next:
+    - "/vergleiche/beste-haustierkameras/"
+  fallback:
+    - "/smarte-haustiertechnik/"
 evidenceSources:
-  - { source: "PETLIBRO Deutschland – Scout Smart Camera", url: "https://de.petlibro.com/en/products/scout-smart-camera", accessedAt: "2026-08-06", assertion: "Cloudspeicher, Mehrtiere-Erkennung und Produktrolle werden nur als Herstellerangaben verwendet.", fields: ["contentPlatform", "faq"] }
-  - { source: "Furbo Deutschland – Dog Cam 360", url: "https://furbo.com/eu-de/products/furbo-dog-cam-360", accessedAt: "2026-08-06", assertion: "Leckerliausgabe, Zwei-Wege-Audio und Nanny-Funktionen begründen die Interaktionsklasse.", fields: ["premiumBlocks", "contentPlatform"] }
-  - { source: "Enabot", url: "https://www.enabot.com/de/about-us", accessedAt: "2026-08-06", assertion: "Der mobile Kameraroboter wird als eigene Produktklasse behandelt; Fahrweg und Wohnungsgrenzen bleiben redaktionelle Entscheidungskriterien.", fields: ["contentPlatform", "decisionJourney"] }
+  - source: "Research-Bundle Haustierkameras 2026"
+    url: "https://de.petlibro.com/products/scout-smart-camera"
+    accessedAt: "2026-08-15"
+    assertion: "Der Hub erklaert Kameraklassen und Datenfolgen; konkrete Modellwerte bleiben beim Vergleich und den Produkten."
+    fields:
+      - "contentPlatform"
+      - "premiumBlocks"
+      - "faq"
 ---
 
 Eine Haustierkamera ist zuerst ein **Blickpunkt im Zuhause** und erst danach ein smartes Gerät. Die wichtigste Frage ist, welchen Bereich du zuverlässig sehen möchtest und was du mit dem Bild tatsächlich tun willst.
@@ -86,7 +180,7 @@ Für mehrere Räume ist eine zweite feste Kamera oft berechenbarer als ein Robot
 
 Zwei-Wege-Audio und Leckerliausgabe sind keine automatische Verbesserung. Entscheidend ist, wie das individuelle Tier reagiert.
 
-Die [Furbo 360° Hundekamera](/produkt/furbo-360-hundekamera/) gehört deshalb in eine andere Klasse als eine reine Beobachtungskamera. Stimme oder Wurfgeräusch sollten zunächst kurz und unter Beobachtung ausprobiert werden.
+Die [Furbo Mini 360](/produkt/furbo-mini-360/) gehört deshalb in eine andere Klasse als eine reine Beobachtungskamera. Stimme oder Wurfgeräusch sollten zunächst kurz und unter Beobachtung ausprobiert werden.
 
 ## Cloud, Konto und Speicherung vor dem Kauf klären
 
@@ -101,6 +195,13 @@ Prüfe nicht nur, **ob** eine Kamera speichern kann, sondern **wo** und unter we
 - Wie werden Firmware- und Sicherheitsupdates bereitgestellt?
 
 Die [PETLIBRO Scout Smart Camera](/produkt/petlibro-scout-smart-camera/) zeigt, warum Cloud- und KI-Funktionen getrennt von der Kamerahardware bewertet werden müssen.
+
+<!-- pt:camera-services:start -->
+## Internet- und Herstellerdienste als Systemgrenze
+
+Fernzugriff, Cloudaufzeichnung und App-Auswertung sind keine dauerhafte Eigenschaft der Hardware. Pruefe, welche Funktion ohne Internet, ohne aktiven Tarif und bei einem Ausfall des Herstellerdienstes uebrig bleibt. Eine nicht belegte lokale Speicheroption wird nicht unterstellt.
+
+<!-- pt:camera-services:end -->
 
 ## Gesamtkosten über 24 Monate rechnen
 
@@ -117,7 +218,7 @@ Rechne mindestens Basisbetrieb ohne kostenpflichtige Zusatzfunktionen und den Ta
 5. Mikrofon und Lautsprecher bewusst ausprobieren.
 6. Prüfen, welche Funktionen ohne Cloudtarif übrig bleiben.
 
-Beim [Enabot EBO Air 2](/produkt/enabot-ebo-air-2/) kommt zusätzlich der Fahrweg hinzu. Ein beweglicher Blickpunkt ist nur dann ein Vorteil, wenn der Roboter die relevanten Bereiche tatsächlich erreicht.
+Beim [Enabot ROLA Mini](/produkt/enabot-rola-mini/) kommt zusätzlich der Fahrweg hinzu. Ein beweglicher Blickpunkt ist nur dann ein Vorteil, wenn der Roboter die relevanten Bereiche tatsächlich erreicht.
 
 ## Typische Fehlkäufe
 

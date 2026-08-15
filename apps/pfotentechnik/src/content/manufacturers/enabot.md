@@ -9,18 +9,33 @@ name: "Enabot"
 recommendation: "Enabot ist relevant, wenn ein mobiler Kamerablickpunkt eine robotertaugliche Wohnung abfahren soll."
 summary: "Im Startcluster vertritt EBO Air 2 die mobile Kameraroboter-Klasse."
 publishedAt: "2026-08-06"
-updatedAt: "2026-08-06"
-tags: ["hersteller", "enabot", "haustierkameras", "roboter"]
+updatedAt: "2026-08-15"
+tags:
+  - "hersteller"
+  - "enabot"
+  - "haustierkameras"
+  - "roboter"
 images:
-  hero: { src: "../../assets/images/products/enabot-ebo-air-2/hero.webp", alt: "Neutrale redaktionelle Darstellung eines mobilen Kamera-Roboters" }
+  hero:
+    src: "../../assets/images/products/enabot-ebo-air-2/hero.webp"
+    alt: "Neutrale redaktionelle Darstellung eines mobilen Kamera-Roboters"
   gallery: []
-productCategories: ["Kameraroboter"]
-productAreas: ["mobile Innenkameras", "App-Steuerung"]
-focus: ["beweglicher Blickpunkt", "2K-Video beim EBO Air 2"]
-suitableFor: ["ebene Wohnungen mit freien Fahrwegen"]
-attention: ["Treppen, Schwellen, Kabel und Türen begrenzen die Reichweite"]
-strengths: ["mobile Produktklasse"]
-weaknesses: ["kein Ersatz für feste Bereichsabdeckung"]
+productCategories:
+  - "Kameraroboter"
+productAreas:
+  - "mobile Innenkameras"
+  - "App-Steuerung"
+focus:
+  - "beweglicher Blickpunkt"
+  - "2K-Video beim EBO Air 2"
+suitableFor:
+  - "ebene Wohnungen mit freien Fahrwegen"
+attention:
+  - "Treppen, Schwellen, Kabel und Türen begrenzen die Reichweite"
+strengths:
+  - "mobile Produktklasse"
+weaknesses:
+  - "kein Ersatz für feste Bereichsabdeckung"
 profile:
   company: "Enabot entwickelt laut eigener Darstellung seit 2018 Familienroboter."
   appEcosystem: "Mobile Steuerung und Kamera hängen von App, WLAN und freiem Fahrweg ab."
@@ -28,12 +43,20 @@ profile:
   filterSupply: "Nicht relevant."
   warranty: "Regionale Garantie- und Servicebedingungen vor Kauf prüfen."
   competitorComparison: "Enabot steht im Cluster für mobile Navigation statt festen Blickpunkt oder Leckerliausgabe."
-productSlugs: ["enabot-ebo-air-2"]
-featuredProductSlugs: ["enabot-ebo-air-2"]
+productSlugs:
+  - "enabot-ebo-air-2"
+  - "enabot-rola-mini"
+featuredProductSlugs:
+  - "enabot-ebo-air-2"
 series: []
-alternativeManufacturerSlugs: ["petlibro", "furbo"]
+alternativeManufacturerSlugs:
+  - "petlibro"
+  - "furbo"
 sources:
-  - { label: "Enabot Produktreise", url: "https://www.enabot.com/de/about-us" }
+  - label: "Enabot Produktreise"
+    url: "https://www.enabot.com/de/about-us"
+  - label: "Enabot ROLA Mini"
+    url: "https://www.enabot.com/pet-robot/rola-mini"
 faq: []
 ---
 
@@ -47,4 +70,5 @@ EBO Air 2 bleibt eine klar abgegrenzte mobile Alternative im [Haustierkamera-Ver
 Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
 
 - [Enabot EBO Air 2](/produkt/enabot-ebo-air-2/)
+- [Enabot ROLA Mini](/produkt/enabot-rola-mini/)
 <!-- pt:content-discovery:manufacturer-products:end -->

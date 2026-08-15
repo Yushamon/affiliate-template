@@ -1,12 +1,12 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-08-15T18:00:46.075Z
+Erstellt: 2026-08-15T18:12:01.087Z
 
 ## Ergebnis
 
-- Dokumente: 218
-- Linkdefinitionen: 484
-- Simulierte automatische Links: 499
+- Dokumente: 220
+- Linkdefinitionen: 487
+- Simulierte automatische Links: 500
 - Fehler: 0
 - Warnungen: 6
 - Strict-kritisch: 0
@@ -276,6 +276,7 @@ Erstellt: 2026-08-15T18:00:46.075Z
 - /produkt/devoko-90l-automatisches-katzenklo/ → /hersteller/neakasa/: „Neakasa“
 - /produkt/devoko-90l-automatisches-katzenklo/ → /hersteller/whisker/: „Whisker“
 - /produkt/devoko-90l-automatisches-katzenklo/ → /hersteller/devoko/: „Devoko“
+- /produkt/furbo-mini-360/ → /hersteller/furbo/: „Furbo“
 - /produkt/garmin-alpha-t-20/ → /vergleiche/gps-tracker-ohne-abo/: „GPS-Tracker ohne Abo“
 - /produkt/garmin-alpha-t-20/ → /gps-tracker/: „Haustiertracker“
 - /produkt/garmin-alpha-t-20/ → /hersteller/garmin/: „Garmin“
