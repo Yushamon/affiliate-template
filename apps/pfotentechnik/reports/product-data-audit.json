@@ -1,18 +1,18 @@
 {
   "summary": {
-    "generatedAt": "2026-08-15T21:12:21.510Z",
-    "totalProducts": 87,
+    "generatedAt": "2026-08-15T21:32:20.191Z",
+    "totalProducts": 89,
     "byCategory": {
       "futterautomaten": 37,
       "trinkbrunnen": 21,
       "automatische-katzentoiletten": 8,
-      "haustierkameras": 5,
-      "gps-tracker": 8,
+      "haustierkameras": 6,
+      "gps-tracker": 9,
       "katzenklappen": 8
     },
     "errors": 0,
-    "warnings": 125,
-    "notes": 145,
+    "warnings": 133,
+    "notes": 146,
     "duplicateSlugs": 0
   },
   "duplicateSlugs": [],
@@ -970,6 +970,110 @@
       "completeness": 88
     },
     {
+      "file": "src\\content\\products\\enabot-rola-pettracker.md",
+      "slug": "enabot-rola-pettracker",
+      "title": "Enabot ROLA PetTracker",
+      "category": "gps-tracker",
+      "errors": [],
+      "warnings": [
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: material"
+      ],
+      "specs": [
+        {
+          "label": "Abmessungen",
+          "value": "62 × 37,5 × 27,1 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "70 g"
+        },
+        {
+          "label": "Herstellerempfehlung",
+          "value": "Hunde und Katzen ab 4 kg"
+        },
+        {
+          "label": "Akku",
+          "value": "1500 mAh; 3 bis 5 Tage laut Hersteller"
+        },
+        {
+          "label": "Kamera",
+          "value": "480p, 89,8° Sichtfeld, Sechsachsen-Stabilisierung"
+        },
+        {
+          "label": "Nachtsicht",
+          "value": "Nicht unterstützt"
+        },
+        {
+          "label": "Ortung",
+          "value": "GPS + AGPS, ergänzend LBS sowie Ton-/Licht-/Bildpositionierung"
+        },
+        {
+          "label": "Funk",
+          "value": "2,4-GHz-WLAN, Bluetooth 4.2, Nano-SIM"
+        },
+        {
+          "label": "Speicher",
+          "value": "32 GB ROM, 1 GB RAM; MP4"
+        },
+        {
+          "label": "Übertragung",
+          "value": "Nano-SIM/Mobilfunk zur ROLA-App; 2,4-GHz-WLAN und Bluetooth 4.2 für Gerätefunktionen"
+        },
+        {
+          "label": "Reichweite",
+          "value": "Keine feste Distanzangabe; abhängig von unterstützter Mobilfunk-, Satelliten- und Dienstabdeckung"
+        },
+        {
+          "label": "Abo",
+          "value": "Nano-SIM und Mobilfunkdienst erforderlich; konkreten Tarif vor Kauf prüfen"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Hunde und Katzen ab 4 kg laut Hersteller; 70-g-Komfort individuell prüfen"
+        },
+        {
+          "label": "Befestigung",
+          "value": "Halsbandbefestigung; sicheren Sitz und Scheuern unter Aufsicht prüfen"
+        },
+        {
+          "label": "App",
+          "value": "ROLA-App für iOS und Android laut Hersteller"
+        },
+        {
+          "label": "WLAN",
+          "value": "2,4 GHz"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 4.2"
+        },
+        {
+          "label": "Material",
+          "value": "Nicht ausgewiesen"
+        },
+        {
+          "label": "Temperaturschutz",
+          "value": "Warnung über 45 °C; Kamera ab über 55 °C aus, bis unter 40 °C erreicht sind; Tracker bleibt laut FAQ aktiv"
+        },
+        {
+          "label": "Wasserschutz",
+          "value": "Keine IP-Schutzklasse dokumentiert"
+        }
+      ],
+      "unknownSpecs": [
+        "Material"
+      ],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 93,
+      "completeness": 88
+    },
+    {
       "file": "src\\content\\products\\furbo-360-hundekamera.md",
       "slug": "furbo-360-hundekamera",
       "title": "Furbo 360° Hundekamera",
@@ -1676,7 +1780,7 @@
         },
         {
           "label": "Sensorik",
-          "value": ">-"
+          "value": "Aktuelle Lifecycle-Dokumentation nennt ein 6-Array-Infrarotsystem; eine offizielle Vergleichstabelle ist dazu nicht konsistent"
         },
         {
           "label": "Abdichtung",
@@ -6390,13 +6494,89 @@
         },
         {
           "label": "Deutschland/EU",
-          "value": ">-"
+          "value": "Aktuelle regionale Lieferbarkeit vor Checkout prüfen; deutsche Seite zeigt keine belastbare dauerhafte EU-Verfügbarkeit"
         }
       ],
       "unknownSpecs": [],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 100,
       "completeness": 85
+    },
+    {
+      "file": "src\\content\\products\\pettec-cam-360.md",
+      "slug": "pettec-cam-360",
+      "title": "PetTec Cam 360",
+      "category": "haustierkameras",
+      "errors": [],
+      "warnings": [
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Kamera",
+          "value": "3 MP"
+        },
+        {
+          "label": "Schwenken/Neigen",
+          "value": "Ja; 360°-Rundumsicht ist Herstellerbeschreibung"
+        },
+        {
+          "label": "Erkennung",
+          "value": "Bewegung und Geräusch"
+        },
+        {
+          "label": "Tracking",
+          "value": "Bewegungsverfolgung"
+        },
+        {
+          "label": "Nachtsicht",
+          "value": "Ja"
+        },
+        {
+          "label": "Audio",
+          "value": "Zwei-Wege-Audio"
+        },
+        {
+          "label": "Lokale Speicherung",
+          "value": "microSD möglich"
+        },
+        {
+          "label": "Cloud",
+          "value": "Optionaler Cloud Event Video Service und optionale Cloud-AI-Dienste"
+        },
+        {
+          "label": "Pflichtabo",
+          "value": "Nein für Grundfunktionen laut Hersteller"
+        },
+        {
+          "label": "Kostenlose App",
+          "value": "Livestream, Fotos, Zwei-Wege-Audio und weitere Basisfunktionen laut Hersteller"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "63,5 × 63,5 × 57 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "180 g"
+        },
+        {
+          "label": "Kabel",
+          "value": "2 m"
+        },
+        {
+          "label": "Datenschutz",
+          "value": "DSGVO-Konformität und deutsche Server sind Herstellerangaben, nicht redaktionell rechtlich bestätigt"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 88
     },
     {
       "file": "src\\content\\products\\petwalk-medium-tiertuer.md",

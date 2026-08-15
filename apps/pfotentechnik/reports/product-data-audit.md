@@ -1,13 +1,13 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-08-15T21:12:21.510Z
+Erstellt: 2026-08-15T21:32:20.191Z
 
 ## Zusammenfassung
 
-- Produkte: 87
+- Produkte: 89
 - Fehler: 0
-- Warnungen: 125
-- Dokumentierte Hinweise: 145
+- Warnungen: 133
+- Dokumentierte Hinweise: 146
 - Doppelte Slugs: 0
 
 ## Kategorien
@@ -15,8 +15,8 @@ Erstellt: 2026-08-15T21:12:21.510Z
 - futterautomaten: 37
 - trinkbrunnen: 21
 - automatische-katzentoiletten: 8
-- haustierkameras: 5
-- gps-tracker: 8
+- haustierkameras: 6
+- gps-tracker: 9
 - katzenklappen: 8
 
 ## Produkte mit Handlungsbedarf
@@ -105,6 +105,19 @@ Erstellt: 2026-08-15T21:12:21.510Z
   - Nur 0 Galerie-Bilder hinterlegt
   - Affiliate-Link fehlt
 
+### Enabot ROLA PetTracker
+
+- Datei: `src\content\products\enabot-rola-pettracker.md`
+- Kategorie: gps-tracker
+- Vollständigkeit: 88%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
+- Dokumentierte Hinweise:
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: material
+
 ### Furbo Mini 360
 
 - Datei: `src\content\products\furbo-mini-360.md`
@@ -153,6 +166,17 @@ Erstellt: 2026-08-15T21:12:21.510Z
 
 - Datei: `src\content\products\petlibro-luma-smart-litter-box.md`
 - Kategorie: automatische-katzentoiletten
+- Vollständigkeit: 88%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
+
+### PetTec Cam 360
+
+- Datei: `src\content\products\pettec-cam-360.md`
+- Kategorie: haustierkameras
 - Vollständigkeit: 88%
 - Warnungen:
   - Thumbnail fehlt

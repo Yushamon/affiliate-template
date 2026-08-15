@@ -61,6 +61,7 @@ contentPlatform:
     - "petlibro-scout-smart-camera"
     - "furbo-mini-360"
     - "enabot-rola-mini"
+    - "pettec-cam-360"
   decision: "auto"
   blocks:
     - "summary"
@@ -234,3 +235,11 @@ Beim [Enabot ROLA Mini](/produkt/enabot-rola-mini/) kommt zusätzlich der Fahrwe
 Eine Kamera kann zeigen, was vor dem Objektiv geschieht. Sie beweist nicht, warum ein Tier bellt, miaut, unruhig ist oder sein Verhalten ändert. Die Aufnahme ist ein Beobachtungshinweis und keine Diagnose.
 
 Die Modellunterschiede bei Speicherung, Abo, Interaktion und Beweglichkeit stehen im [Haustierkamera-Vergleich](/vergleiche/beste-haustierkameras/).
+
+<!-- pt:pettec-storage-choice:start -->
+## Lokale Speicherung oder Cloud?
+
+Lokale Speicherung kann laufende Kosten und die Abhängigkeit von einer Video-Cloud reduzieren. Cloud-Speicher kann externen Zugriff und Sicherung vereinfachen, verarbeitet die Aufnahmen aber in einem zusätzlichen Dienst. **Ohne Abo** bedeutet nicht automatisch **ohne Cloud**.
+
+Die [PetTec Cam 360](/produkt/pettec-cam-360/) bietet laut Hersteller microSD-Aufzeichnung und Grundfunktionen ohne Pflichtabo, daneben aber optionale Cloud-Dienste. Datenschutz hängt nicht nur vom Speicherort ab, sondern auch von Konto, App, Mikrofon, Fernzugriff, Updates und Konfiguration. Die Kaufrollen stehen im [Haustierkamera-Vergleich](/vergleiche/beste-haustierkameras/).
+<!-- pt:pettec-storage-choice:end -->

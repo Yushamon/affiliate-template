@@ -1,6 +1,6 @@
 # Content-Quality- und Kannibalisierungsreport
 
-- Indexierbare Seiten: 233
+- Indexierbare Seiten: 237
 - Exakte Duplikate: 0
 - Near-Duplicates: 0
 - Offene Intent-Konflikte: 0
@@ -62,5 +62,5 @@ Keine offenen Befunde.
 ## Entscheidungsmatrix
 
 - CONSOLIDATE: 2
-- KEEP: 233
-- NOINDEX: 95
+- KEEP: 237
+- NOINDEX: 99

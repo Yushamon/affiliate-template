@@ -1,0 +1,230 @@
+---
+title: "PetTec Cam 360"
+slug: "pettec-cam-360"
+type: "product"
+layout: "product"
+testStatus: "manufacturer-data"
+productStatus: "active"
+description: "Stationäre 3-MP-Schwenk-/Neigkamera mit lokaler microSD-Speicherung, Nachtsicht, Bewegungs- und Geräuscherkennung, Tracking und Basisfunktionen ohne Pflichtabo."
+recommendation: "Für einen festen Innenbereich, wenn lokale microSD-Aufzeichnung und kostenlose App-Basisfunktionen wichtiger sind als eine ausschließlich cloudbasierte Historie."
+manufacturer:
+  key: "pettec"
+  name: "PetTec"
+  slug: "pettec"
+category:
+  key: "haustierkameras"
+  label: "Haustierkameras"
+  path: "/haustierkameras/"
+productUrl: "/produkt/pettec-cam-360/"
+publishedAt: "2026-08-15"
+updatedAt: "2026-08-15"
+author:
+  name: "PfotenTechnik Redaktion"
+  role: "Redaktion"
+seo:
+  title: "PetTec Cam 360: lokal speichern ohne Pflichtabo"
+  description: "PetTec Cam 360 mit 3 MP, microSD, optionaler Cloud, Nachtsicht, Tracking und Zwei-Wege-Audio transparent eingeordnet."
+  canonical: "/produkt/pettec-cam-360/"
+  sitemap: true
+  priority: 0.8
+hub:
+  sections:
+    - "produkte"
+    - "haustierkameras"
+tags:
+  - "haustierkamera"
+  - "pettec"
+  - "microsd"
+  - "lokale-speicherung"
+  - "ohne-pflichtabo"
+images:
+  hero:
+    src: "../../assets/images/project/pfotentechnik/comparison/default-editorial-hero.webp"
+    alt: "Neutrale redaktionelle Darstellung einer stationären Schwenk-Neige-Haustierkamera"
+  gallery: []
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-08-15"
+  source:
+    id: "pettec-de"
+    label: "PetTec"
+    type: "editorial"
+priceAutomation: "editorial"
+priceState: "unknown"
+priceAvailable: false
+affiliateAvailable: false
+availability: "unknown"
+availabilityReason: "Preis und Lieferstatus werden nicht als dauerhafte redaktionelle Angabe gespeichert."
+availabilityUpdated: "2026-08-15"
+editorialStatus: "required"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+rating: 0
+ratings: {}
+externalEvidence:
+  status: "constrained"
+  note: "Aktuell nur Herstellerdaten; kein eigener Praxistest oder juristische Datenschutzprüfung."
+decision:
+  bestFor:
+    - "Lokale Videoaufzeichnung auf microSD"
+    - "Grundfunktionen ohne monatliches Pflichtabo"
+    - "Fester Innenbereich mit Schwenk-/Neigeabdeckung"
+  attention:
+    - "Optionaler Cloud Event Video Service bleibt verfügbar"
+    - "Ohne Pflichtabo bedeutet nicht ohne Cloud-Funktionen"
+    - "Herstellerangaben zu DSGVO und deutschen Servern sind keine eigene Rechtsprüfung"
+    - "microSD-Karte und Speicherdauer vor Kauf prüfen"
+review:
+  summary: "PetTec trennt lokale microSD-Aufzeichnung und kostenlose Basisfunktionen von optionalen Cloud- und AI-Diensten."
+  verdict: "Klare lokale Speicheroption für einen festen Bereich; Datenschutz hängt zusätzlich von Konto, App, Fernzugriff und Konfiguration ab."
+strengths:
+  - "Lokale microSD-Speicherung"
+  - "Kein Pflichtabo für Grundfunktionen laut Hersteller"
+  - "3-MP-Kamera mit Schwenken/Neigen"
+  - "Nachtsicht und Zwei-Wege-Audio"
+weaknesses:
+  - "Optionale Cloud bleibt Teil des Systems"
+  - "Datenschutzclaims nur herstellerseitig"
+  - "microSD-Kapazität und Aufbewahrung aktuell prüfen"
+  - "Fester Standort deckt nicht mehrere getrennte Räume ab"
+features:
+  - "3 MP"
+  - "Schwenken und Neigen"
+  - "Bewegungsdetektion"
+  - "Geräuscherkennung"
+  - "Bewegungsverfolgung"
+  - "Nachtsicht"
+  - "Zwei-Wege-Audio"
+  - "microSD"
+  - "optionale Cloud"
+useCase: "Stationäre Haustierkamera mit lokaler Speicherung und optionaler Cloud"
+specs:
+  - label: "Kamera"
+    value: "3 MP"
+  - label: "Schwenken/Neigen"
+    value: "Ja; 360°-Rundumsicht ist Herstellerbeschreibung"
+  - label: "Erkennung"
+    value: "Bewegung und Geräusch"
+  - label: "Tracking"
+    value: "Bewegungsverfolgung"
+  - label: "Nachtsicht"
+    value: "Ja"
+  - label: "Audio"
+    value: "Zwei-Wege-Audio"
+  - label: "Lokale Speicherung"
+    value: "microSD möglich"
+  - label: "Cloud"
+    value: "Optionaler Cloud Event Video Service und optionale Cloud-AI-Dienste"
+  - label: "Pflichtabo"
+    value: "Nein für Grundfunktionen laut Hersteller"
+  - label: "Kostenlose App"
+    value: "Livestream, Fotos, Zwei-Wege-Audio und weitere Basisfunktionen laut Hersteller"
+  - label: "Abmessungen"
+    value: "63,5 × 63,5 × 57 mm"
+  - label: "Gewicht"
+    value: "180 g"
+  - label: "Kabel"
+    value: "2 m"
+  - label: "Datenschutz"
+    value: "DSGVO-Konformität und deutsche Server sind Herstellerangaben, nicht redaktionell rechtlich bestätigt"
+comparisonData:
+  version: 1
+  custom:
+    klasse: "Stationäre Pan/Tilt-Kamera mit lokaler Option"
+    speicher: "microSD lokal möglich; Cloud optional"
+    abo: "Kein Pflichtabo; optionale Bezahldienste"
+    interaktion: "Zwei-Wege-Audio"
+    abdeckung: "Schwenken/Neigen; Hersteller beschreibt 360°"
+    bild: "3 MP; Nachtsicht"
+    lokale_speicherung: "Ja, microSD"
+    cloud_erforderlich: "Nein für lokale Aufzeichnung/Basisfunktionen"
+    cloud_optional: "Ja"
+    pflichtabo: "Nein"
+    bezahlfunktionen: "Cloud Event Video und Cloud AI optional"
+    kostenlose_grundfunktionen: "Livestream, Fotos, Audio laut Hersteller"
+    microsd: "Ja"
+    aufloesung: "3 MP"
+    schwenk_neige: "Ja"
+    tracking: "Bewegungsverfolgung"
+    nachtsicht: "Ja"
+    audio: "Zwei-Wege-Audio"
+comparisonFilters:
+  animal:
+    - "dog"
+    - "cat"
+  petSize:
+    - "small"
+    - "medium"
+    - "large"
+  foodType: []
+  app: true
+  camera: true
+alternatives:
+  - "petlibro-scout-smart-camera"
+  - "furbo-mini-360"
+  - "enabot-rola-mini"
+comparisons:
+  - "beste-haustierkameras"
+decisionJourney:
+  cluster: "haustierkameras"
+  stage: "decision"
+  intent: "haustierkamera-mit-lokaler-speicherung-pruefen"
+  primaryQuestion: "Sind lokale microSD-Aufzeichnung, optionale Cloud und kostenlose Basisfunktionen die passende Datenstrategie?"
+  next:
+    - "/vergleiche/beste-haustierkameras/"
+  fallback:
+    - "/haustierkameras/"
+faq:
+  - question: "Braucht die PetTec Cam 360 ein Abo?"
+    answer: "Für die vom Hersteller genannten Grundfunktionen besteht kein Pflichtabo. Cloud Event Video und Cloud AI sind optionale Bezahldienste."
+  - question: "Kann die Kamera lokal speichern?"
+    answer: "Ja. PetTec dokumentiert Aufzeichnung auf microSD. Karte, Kapazitätsgrenzen und gewünschte Aufbewahrungsdauer sollten aktuell geprüft werden."
+  - question: "Ist die Kamera ohne Cloud nutzbar?"
+    answer: "Lokale microSD-Aufzeichnung und Grundfunktionen sind ohne Pflichtabo vorgesehen. PetTec bietet trotzdem optionale Cloud-Dienste; daher wird das System nicht pauschal als cloudfrei bezeichnet."
+  - question: "Bestätigt PfotenTechnik die DSGVO-Konformität?"
+    answer: "Nein. DSGVO-Konformität und Server in Deutschland sind Aussagen des Herstellers, keine eigene juristische Prüfung oder Garantie."
+editorial:
+  assessmentType: "data-review"
+  evidence:
+    - "manufacturer-documentation"
+    - "technical-specifications"
+    - "comparative-analysis"
+  testedHandsOn: false
+  lastVerifiedAt: "2026-08-15"
+  note: "Herstellerdaten; kein eigener Produkttest und keine Rechtsberatung."
+evidenceSources:
+  - source: "PetTec Cam 360"
+    url: "https://pettec.de/products/pet-cam-360"
+    accessedAt: "2026-08-15"
+    assertion: "3 MP, Pan/Tilt, Erkennung, Tracking, Nachtsicht, Audio, Maße und Speicheroptionen sind Herstellerangaben."
+    fields:
+      - "specs"
+      - "features"
+      - "comparisonData"
+  - source: "PetTec Kameras ohne Abo"
+    url: "https://pettec.de/pages/kameras-ohne-abo"
+    accessedAt: "2026-08-15"
+    assertion: "Lokale microSD-Speicherung und Nutzung ohne Pflichtabo sind Herstellerangaben."
+    fields:
+      - "decision"
+      - "faq"
+      - "comparisonData"
+  - source: "PetTec App"
+    url: "https://pettec.de/pages/app"
+    accessedAt: "2026-08-15"
+    assertion: "Kostenlose Basisfunktionen und optionale Cloud-Dienste sind Herstellerangaben."
+    fields:
+      - "specs"
+      - "faq"
+      - "comparisonData"
+---
+
+## Lokal speichern, Cloud optional halten
+
+Die zentrale Kaufentscheidung ist nicht die höchste Auflösung. Die Cam 360 kann laut PetTec lokal auf **microSD** aufzeichnen und bietet Grundfunktionen ohne monatliches Pflichtabo. Gleichzeitig existieren ein optionaler Cloud Event Video Service und optionale Cloud-AI-Funktionen. „Ohne Abo“ bedeutet deshalb nicht automatisch „ohne Cloud“.
+
+PetTec beschreibt DSGVO-Konformität und Server in Deutschland. Das sind Herstellerangaben, keine juristische Bestätigung durch PfotenTechnik. Datenschutz hängt außerdem von App-Konto, Mikrofon, Fernzugriff, Updates und Konfiguration ab.
+
+Der [Haustierkamera-Hub](/haustierkameras/) erklärt die Speicherentscheidung; der [Vergleich](/vergleiche/beste-haustierkameras/) stellt sie Cloud-only- und mobilen Kameraklassen gegenüber.

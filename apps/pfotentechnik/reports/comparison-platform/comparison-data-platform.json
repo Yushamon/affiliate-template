@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T21:12:22.460Z",
+  "generatedAt": "2026-08-15T21:32:21.243Z",
   "minimumComparisons": 26,
   "thresholds": {
     "minimumVisibleRows": 3,
@@ -8,17 +8,17 @@
   "passed": true,
   "summary": {
     "comparisons": 28,
-    "products": 87,
-    "sourceCells": 925,
-    "allResolved": 825,
+    "products": 89,
+    "sourceCells": 1039,
+    "allResolved": 939,
     "allUnresolved": 100,
-    "sourceCoverage": 89.2,
-    "renderedCells": 774,
-    "renderedResolved": 774,
+    "sourceCoverage": 90.4,
+    "renderedCells": 888,
+    "renderedResolved": 888,
     "renderedUnresolved": 0,
     "renderedCoverage": 100,
-    "legacyValueCount": 659,
-    "overrideCount": 218
+    "legacyValueCount": 725,
+    "overrideCount": 220
   },
   "failures": [],
   "comparisons": [
@@ -4040,17 +4040,17 @@
     {
       "slug": "beste-gps-tracker-fuer-hunde",
       "file": "src/content/comparisons/beste-gps-tracker-fuer-hunde.md",
-      "items": 6,
-      "criteria": 4,
-      "visibleRows": 4,
+      "items": 7,
+      "criteria": 12,
+      "visibleRows": 12,
       "hiddenRows": 0,
       "passed": true,
       "rows": [
         {
           "key": "einsatzgebiet",
           "label": "Einsatzgebiet",
-          "resolved": 6,
-          "total": 6,
+          "resolved": 7,
+          "total": 7,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4083,14 +4083,19 @@
               "product": "garmin-alpha-t-20",
               "value": "Jagd und Arbeit",
               "resolved": true
+            },
+            {
+              "product": "enabot-rola-pettracker",
+              "value": "Ortung plus Live-Bild",
+              "resolved": true
             }
           ]
         },
         {
           "key": "hundegroesse",
           "label": "Geeignete Hundegröße",
-          "resolved": 6,
-          "total": 6,
+          "resolved": 7,
+          "total": 7,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4123,14 +4128,19 @@
               "product": "garmin-alpha-t-20",
               "value": "Mittelgroße bis große Hunde",
               "resolved": true
+            },
+            {
+              "product": "enabot-rola-pettracker",
+              "value": "Ab 4 kg; 70-g-Gerät",
+              "resolved": true
             }
           ]
         },
         {
           "key": "ortung",
           "label": "Ortungssystem",
-          "resolved": 6,
-          "total": 6,
+          "resolved": 7,
+          "total": 7,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4163,14 +4173,19 @@
               "product": "garmin-alpha-t-20",
               "value": "Satellitenposition am Hund, Übertragung per VHF an kompatibles Handgerät",
               "resolved": true
+            },
+            {
+              "product": "enabot-rola-pettracker",
+              "value": "GPS + AGPS/LBS",
+              "resolved": true
             }
           ]
         },
         {
           "key": "abo",
           "label": "Abo erforderlich",
-          "resolved": 6,
-          "total": 6,
+          "resolved": 7,
+          "total": 7,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4202,6 +4217,371 @@
             {
               "product": "garmin-alpha-t-20",
               "value": "für die VHF-Hundeortung nicht erforderlich",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-pettracker",
+              "value": "Nano-SIM/Mobilfunkdienst; Tarif prüfen",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "gewicht",
+          "label": "Gerätegewicht",
+          "resolved": 7,
+          "total": 7,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "tractive-dog-6",
+              "value": "Rund 39 g",
+              "resolved": true
+            },
+            {
+              "product": "weenect-xs",
+              "value": "27 g Gerätegewicht",
+              "resolved": true
+            },
+            {
+              "product": "paj-pet-finder-4g-mini",
+              "value": "33,1 g",
+              "resolved": true
+            },
+            {
+              "product": "tractive-dog-6-xl",
+              "value": "Rund 70 g",
+              "resolved": true
+            },
+            {
+              "product": "weenect-xt",
+              "value": "54,2 g Gerätegewicht",
+              "resolved": true
+            },
+            {
+              "product": "garmin-alpha-t-20",
+              "value": "238",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-pettracker",
+              "value": "70 g",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "mindestgewicht",
+          "label": "Tier-Mindestgewicht",
+          "resolved": 7,
+          "total": 7,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "tractive-dog-6",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "weenect-xs",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "paj-pet-finder-4g-mini",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "tractive-dog-6-xl",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "weenect-xt",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "garmin-alpha-t-20",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-pettracker",
+              "value": "4 kg",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "kamera",
+          "label": "Kamera",
+          "resolved": 7,
+          "total": 7,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "tractive-dog-6",
+              "value": "Tractive GPS App; Android 10 oder neuer, iOS/iPadOS 17 oder neuer",
+              "resolved": true
+            },
+            {
+              "product": "weenect-xs",
+              "value": "Weenect App und Web-App",
+              "resolved": true
+            },
+            {
+              "product": "paj-pet-finder-4g-mini",
+              "value": "PAJ FINDER Portal für iOS und Android",
+              "resolved": true
+            },
+            {
+              "product": "tractive-dog-6-xl",
+              "value": "Tractive GPS App; Android 10 oder neuer, iOS/iPadOS 17 oder neuer",
+              "resolved": true
+            },
+            {
+              "product": "weenect-xt",
+              "value": "Weenect App und Web-App",
+              "resolved": true
+            },
+            {
+              "product": "garmin-alpha-t-20",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-pettracker",
+              "value": "480p, 89,8°",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "nachtsicht",
+          "label": "Nachtsicht",
+          "resolved": 7,
+          "total": 7,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "tractive-dog-6",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "weenect-xs",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "paj-pet-finder-4g-mini",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "tractive-dog-6-xl",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "weenect-xt",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "garmin-alpha-t-20",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-pettracker",
+              "value": "Nein",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "akkulaufzeit",
+          "label": "Akkulaufzeit",
+          "resolved": 7,
+          "total": 7,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "tractive-dog-6",
+              "value": "Bis zu 14 Tage mit Energiesparzonen",
+              "resolved": true
+            },
+            {
+              "product": "weenect-xs",
+              "value": "Bis zu 7 Tage mit WLAN-Energiesparzonen; etwa 2 Tage bei durchgehender Ortung",
+              "resolved": true
+            },
+            {
+              "product": "paj-pet-finder-4g-mini",
+              "value": "integrierter 700-mAh-Lithium-Polymer-Akku mit 3,7 V und 2,59 Wh",
+              "resolved": true
+            },
+            {
+              "product": "tractive-dog-6-xl",
+              "value": "Bis zu 42 Tage mit Energiesparzonen; bis zu 20 Tage ohne",
+              "resolved": true
+            },
+            {
+              "product": "weenect-xt",
+              "value": "Bis zu 3 Wochen mit Energiesparzone; ungefähr 1 Woche bei kontinuierlichem Tracking",
+              "resolved": true
+            },
+            {
+              "product": "garmin-alpha-t-20",
+              "value": "bis zu 68 Stunden mit Standardakku",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-pettracker",
+              "value": "3-5 Tage Herstellerwert",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "geofencing",
+          "label": "Geofencing",
+          "resolved": 7,
+          "total": 7,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "tractive-dog-6",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "weenect-xs",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "paj-pet-finder-4g-mini",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "tractive-dog-6-xl",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "weenect-xt",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "garmin-alpha-t-20",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-pettracker",
+              "value": "50-150 m",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "audio",
+          "label": "Audio",
+          "resolved": 7,
+          "total": 7,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "tractive-dog-6",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "weenect-xs",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "paj-pet-finder-4g-mini",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "tractive-dog-6-xl",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "weenect-xt",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "garmin-alpha-t-20",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-pettracker",
+              "value": "Zwei-Wege-Audio",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "groesse",
+          "label": "Abmessungen",
+          "resolved": 7,
+          "total": 7,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "tractive-dog-6",
+              "value": "71 × 29 × 17 mm",
+              "resolved": true
+            },
+            {
+              "product": "weenect-xs",
+              "value": "60,5 × 24,5 × 15 mm",
+              "resolved": true
+            },
+            {
+              "product": "paj-pet-finder-4g-mini",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "tractive-dog-6-xl",
+              "value": "83 × 47 × 20 mm",
+              "resolved": true
+            },
+            {
+              "product": "weenect-xt",
+              "value": "82 × 35 × 22 mm",
+              "resolved": true
+            },
+            {
+              "product": "garmin-alpha-t-20",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-pettracker",
+              "value": "62 × 37,5 × 27,1 mm",
               "resolved": true
             }
           ]
@@ -4422,17 +4802,17 @@
     {
       "slug": "beste-haustierkameras",
       "file": "src/content/comparisons/beste-haustierkameras.md",
-      "items": 3,
-      "criteria": 6,
-      "visibleRows": 6,
+      "items": 4,
+      "criteria": 18,
+      "visibleRows": 18,
       "hiddenRows": 0,
       "passed": true,
       "rows": [
         {
           "key": "klasse",
           "label": "Kameraklasse",
-          "resolved": 3,
-          "total": 3,
+          "resolved": 4,
+          "total": 4,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4450,14 +4830,19 @@
               "product": "enabot-rola-mini",
               "value": "Mobile Roboterkamera",
               "resolved": true
+            },
+            {
+              "product": "pettec-cam-360",
+              "value": "Stationäre Pan/Tilt-Kamera mit lokaler Option",
+              "resolved": true
             }
           ]
         },
         {
           "key": "speicher",
           "label": "Speicherung / Cloud",
-          "resolved": 3,
-          "total": 3,
+          "resolved": 4,
+          "total": 4,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4475,14 +4860,19 @@
               "product": "enabot-rola-mini",
               "value": "Nicht belastbar belegt; vor Kauf pruefen",
               "resolved": true
+            },
+            {
+              "product": "pettec-cam-360",
+              "value": "microSD lokal; Cloud optional",
+              "resolved": true
             }
           ]
         },
         {
           "key": "abo",
           "label": "Abo",
-          "resolved": 3,
-          "total": 3,
+          "resolved": 4,
+          "total": 4,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4500,14 +4890,19 @@
               "product": "enabot-rola-mini",
               "value": "Kein Pflichtabo belastbar belegt",
               "resolved": true
+            },
+            {
+              "product": "pettec-cam-360",
+              "value": "Kein Pflichtabo; Bezahlfunktionen optional",
+              "resolved": true
             }
           ]
         },
         {
           "key": "interaktion",
           "label": "Interaktion",
-          "resolved": 3,
-          "total": 3,
+          "resolved": 4,
+          "total": 4,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4525,14 +4920,19 @@
               "product": "enabot-rola-mini",
               "value": "App-Fahrt und Zwei-Wege-Audio",
               "resolved": true
+            },
+            {
+              "product": "pettec-cam-360",
+              "value": "Zwei-Wege-Audio",
+              "resolved": true
             }
           ]
         },
         {
           "key": "abdeckung",
           "label": "Raumabdeckung",
-          "resolved": 3,
-          "total": 3,
+          "resolved": 4,
+          "total": 4,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4550,14 +4950,19 @@
               "product": "enabot-rola-mini",
               "value": "Mobiler Standort; 137-Grad-Sichtfeld",
               "resolved": true
+            },
+            {
+              "product": "pettec-cam-360",
+              "value": "Schwenken/Neigen; Hersteller beschreibt 360°",
+              "resolved": true
             }
           ]
         },
         {
           "key": "bild",
           "label": "Bild und Nachtmodus",
-          "resolved": 3,
-          "total": 3,
+          "resolved": 4,
+          "total": 4,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4574,6 +4979,371 @@
             {
               "product": "enabot-rola-mini",
               "value": "2K (2304 x 1296); Bewegungsaufzeichnung",
+              "resolved": true
+            },
+            {
+              "product": "pettec-cam-360",
+              "value": "3 MP; Nachtsicht",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "lokale_speicherung",
+          "label": "Lokale Speicherung",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "Nein dokumentiert",
+              "resolved": true
+            },
+            {
+              "product": "furbo-mini-360",
+              "value": "Nicht belastbar ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-mini",
+              "value": "Nicht belastbar ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "pettec-cam-360",
+              "value": "Ja",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "cloud_erforderlich",
+          "label": "Cloud erforderlich",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "Ja für Aufzeichnung",
+              "resolved": true
+            },
+            {
+              "product": "furbo-mini-360",
+              "value": "Aktuellen Umfang prüfen",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-mini",
+              "value": "Nicht belastbar ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "pettec-cam-360",
+              "value": "Nein für lokale Aufzeichnung",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "cloud_optional",
+          "label": "Cloud optional",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "Nein für Aufzeichnung",
+              "resolved": true
+            },
+            {
+              "product": "furbo-mini-360",
+              "value": "Optionale Dienste",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-mini",
+              "value": "Nicht belastbar ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "pettec-cam-360",
+              "value": "Ja",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "pflichtabo",
+          "label": "Pflichtabo",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "Für Aufzeichnung/KI tarifabhängig",
+              "resolved": true
+            },
+            {
+              "product": "furbo-mini-360",
+              "value": "Kein Pflichtabo für alle Basisfunktionen behauptet",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-mini",
+              "value": "Kein Pflichtabo belastbar belegt",
+              "resolved": true
+            },
+            {
+              "product": "pettec-cam-360",
+              "value": "Nein",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "bezahlfunktionen",
+          "label": "Optionale Bezahlfunktionen",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "Cloud-/KI-Tarif",
+              "resolved": true
+            },
+            {
+              "product": "furbo-mini-360",
+              "value": "Optionale Dienste prüfen",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-mini",
+              "value": "Aktuell prüfen",
+              "resolved": true
+            },
+            {
+              "product": "pettec-cam-360",
+              "value": "Cloud Event Video / Cloud AI optional",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "kostenlose_grundfunktionen",
+          "label": "Kostenlose Grundfunktionen",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "Umfang aktuell prüfen",
+              "resolved": true
+            },
+            {
+              "product": "furbo-mini-360",
+              "value": "Aktuellen Umfang prüfen",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-mini",
+              "value": "App-Fahrt und Audio",
+              "resolved": true
+            },
+            {
+              "product": "pettec-cam-360",
+              "value": "Livestream, Fotos, Audio",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "microsd",
+          "label": "microSD",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "Nein",
+              "resolved": true
+            },
+            {
+              "product": "furbo-mini-360",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-mini",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "pettec-cam-360",
+              "value": "Ja",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "aufloesung",
+          "label": "Auflösung",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "1080p",
+              "resolved": true
+            },
+            {
+              "product": "furbo-mini-360",
+              "value": "2K QHD",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-mini",
+              "value": "2K",
+              "resolved": true
+            },
+            {
+              "product": "pettec-cam-360",
+              "value": "3 MP",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "schwenk_neige",
+          "label": "Schwenken / Neigen",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "Ja",
+              "resolved": true
+            },
+            {
+              "product": "furbo-mini-360",
+              "value": "360°-Rotation",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-mini",
+              "value": "Mobiler Standort statt Pan/Tilt",
+              "resolved": true
+            },
+            {
+              "product": "pettec-cam-360",
+              "value": "Ja",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "tracking",
+          "label": "Tracking",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "KI-/Tariffunktionen prüfen",
+              "resolved": true
+            },
+            {
+              "product": "furbo-mini-360",
+              "value": "Nicht belastbar ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-mini",
+              "value": "Bewegungsaufzeichnung",
+              "resolved": true
+            },
+            {
+              "product": "pettec-cam-360",
+              "value": "Bewegungsverfolgung",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "nachtsicht",
+          "label": "Nachtsicht",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "Farbe und Schwarz-Weiß",
+              "resolved": true
+            },
+            {
+              "product": "furbo-mini-360",
+              "value": "Ja",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-mini",
+              "value": "Nicht belastbar ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "pettec-cam-360",
+              "value": "Ja",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "audio",
+          "label": "Zwei-Wege-Audio",
+          "resolved": 4,
+          "total": 4,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "Zwei-Wege-Audio",
+              "resolved": true
+            },
+            {
+              "product": "furbo-mini-360",
+              "value": "Zwei-Wege-Audio",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-mini",
+              "value": "Zwei-Wege-Audio",
+              "resolved": true
+            },
+            {
+              "product": "pettec-cam-360",
+              "value": "Zwei-Wege-Audio",
               "resolved": true
             }
           ]

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-15T21:12:21.888Z",
+  "generatedAt": "2026-08-15T21:32:20.591Z",
   "summary": {
-    "products": 87,
-    "covered": 84,
+    "products": 89,
+    "covered": 86,
     "complete": 53,
-    "partial": 31,
+    "partial": 33,
     "missing": 3
   },
   "rows": [
@@ -123,6 +123,20 @@
       "file": "src/content/products/enabot-rola-mini.md",
       "status": "missing",
       "hasExternal": false,
+      "professional": 0,
+      "userSources": 0,
+      "consensus": 0,
+      "missingParts": [
+        "professionalReviews",
+        "userReviews",
+        "consensus"
+      ]
+    },
+    {
+      "slug": "enabot-rola-pettracker",
+      "file": "src/content/products/enabot-rola-pettracker.md",
+      "status": "partial",
+      "hasExternal": true,
       "professional": 0,
       "userSources": 0,
       "consensus": 0,
@@ -778,6 +792,20 @@
     {
       "slug": "petsnowy-snow-plus",
       "file": "src/content/products/petsnowy-snow-plus.md",
+      "status": "partial",
+      "hasExternal": true,
+      "professional": 0,
+      "userSources": 0,
+      "consensus": 0,
+      "missingParts": [
+        "professionalReviews",
+        "userReviews",
+        "consensus"
+      ]
+    },
+    {
+      "slug": "pettec-cam-360",
+      "file": "src/content/products/pettec-cam-360.md",
       "status": "partial",
       "hasExternal": true,
       "professional": 0,

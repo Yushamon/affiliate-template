@@ -1,12 +1,12 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-08-15T21:12:24.876Z
+Erstellt: 2026-08-15T21:32:26.910Z
 
 ## Ergebnis
 
-- Dokumente: 223
-- Linkdefinitionen: 493
-- Simulierte automatische Links: 507
+- Dokumente: 225
+- Linkdefinitionen: 495
+- Simulierte automatische Links: 510
 - Fehler: 0
 - Warnungen: 6
 - Strict-kritisch: 0
@@ -48,16 +48,16 @@ Erstellt: 2026-08-15T21:12:24.876Z
 - /futterautomat-bei-stromausfall/ → /smarte-futterautomaten/: „Futterautomaten“
 - /futterautomat-bei-stromausfall/ → /hersteller/petlibro/: „PETLIBRO“
 - /futterautomat-bei-stromausfall/ → /hersteller/petsafe/: „PetSafe“
+- /futterautomat-bei-stromausfall/ → /hersteller/petkit/: „PETKIT“
 - /futterautomat-bei-stromausfall/ → /hersteller/xiaomi/: „Xiaomi“
 - /futterautomat-bei-stromausfall/ → /wie-viele-wasserstellen-katze/: „Wasserstellen“
-- /futterautomat-bei-stromausfall/ → /hersteller/petkit/: „PETKIT“
 - /futterautomat-bei-uebergewicht/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für zwei Katzen“
 - /futterautomat-bei-uebergewicht/ → /futterautomat-hund/: „Futterautomaten für Hunde“
 - /futterautomat-bei-uebergewicht/ → /futterautomat-bei-stromausfall/: „Futterautomat ohne WLAN“
 - /futterautomat-bei-uebergewicht/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
 - /futterautomat-bei-uebergewicht/ → /hersteller/petlibro/: „PETLIBRO“
 - /futterautomat-bei-uebergewicht/ → /hersteller/surefeed/: „SureFeed“
-- /futterautomat-bei-uebergewicht/ → /hersteller/xiaomi/: „Xiaomi“
+- /futterautomat-bei-uebergewicht/ → /hersteller/petkit/: „PETKIT“
 - /futterautomat-hund/ → /smarte-futterautomaten/: „Futterautomat“
 - /futterautomat-hund/ → /wie-viele-mahlzeiten-hund/: „Mahlzeiten pro Tag“
 - /futterautomat-hund/ → /warum-schlingt-mein-hund/: „frisst zu schnell“
@@ -69,9 +69,9 @@ Erstellt: 2026-08-15T21:12:24.876Z
 - /futterautomat-im-urlaub/ → /hersteller/xiaomi/: „Xiaomi“
 - /futterautomat-katze/ → /hersteller/cat-mate/: „Cat Mate“
 - /futterautomat-katze/ → /hersteller/petlibro/: „PETLIBRO“
+- /futterautomat-katze/ → /hersteller/petkit/: „PETKIT“
 - /futterautomat-katze/ → /hersteller/xiaomi/: „Xiaomi“
 - /futterautomat-katze/ → /wie-laut-sind-automatische-futterautomaten/: „Geräuschentwicklung“
-- /futterautomat-katze/ → /hersteller/petkit/: „PETKIT“
 - /futterautomat-richtig-reinigen/ → /hersteller/petlibro/: „PETLIBRO“
 - /futterautomat-richtig-reinigen/ → /hersteller/petsafe/: „PetSafe“
 - /futterautomat-richtig-reinigen/ → /hersteller/petkit/: „PETKIT“
@@ -86,6 +86,7 @@ Erstellt: 2026-08-15T21:12:24.876Z
 - /gps-tracker-richtig-befestigen/ → /produkt/tractive-cat-6-mini/: „Tractive CAT 6 Mini“
 - /gps-tracker-richtig-befestigen/ → /hersteller/weenect/: „Weenect“
 - /gps-tracker-richtig-befestigen/ → /hersteller/garmin/: „Garmin“
+- /gps-tracker/ → /hersteller/enabot/: „Enabot“
 - /haustierkameras/ → /hersteller/petlibro/: „PETLIBRO“
 - /haustierkameras/ → /hersteller/enabot/: „Enabot“
 - /haustierkameras/ → /hersteller/furbo/: „Furbo“
@@ -179,7 +180,7 @@ Erstellt: 2026-08-15T21:12:24.876Z
 - /trinkbrunnen/ → /warum-katzen-fliessendes-wasser-trinken/: „bewegtes Wasser“
 - /trinkbrunnen/ → /hersteller/petlibro/: „PETLIBRO“
 - /trinkbrunnen/ → /hersteller/oneisall/: „oneisall“
-- /trinkbrunnen/ → /hersteller/xiaomi/: „Xiaomi“
+- /trinkbrunnen/ → /hersteller/petkit/: „PETKIT“
 - /trinkmenge-hund-messen/ → /trinkbrunnen/: „Trinkbrunnen“
 - /trinkmenge-hund-messen/ → /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/: „trinkt zu wenig“
 - /trinkmenge-katze-messen/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filterwechsel“
@@ -277,6 +278,7 @@ Erstellt: 2026-08-15T21:12:24.876Z
 - /produkt/devoko-90l-automatisches-katzenklo/ → /hersteller/whisker/: „Whisker“
 - /produkt/devoko-90l-automatisches-katzenklo/ → /hersteller/devoko/: „Devoko“
 - /produkt/devoko-90l-automatisches-katzenklo/ → /hersteller/petkit/: „PETKIT“
+- /produkt/enabot-rola-pettracker/ → /hersteller/enabot/: „Enabot“
 - /produkt/furbo-mini-360/ → /hersteller/furbo/: „Furbo“
 - /produkt/garmin-alpha-t-20/ → /vergleiche/gps-tracker-ohne-abo/: „GPS-Tracker ohne Abo“
 - /produkt/garmin-alpha-t-20/ → /gps-tracker/: „Haustiertracker“
@@ -329,8 +331,8 @@ Erstellt: 2026-08-15T21:12:24.876Z
 - /produkt/petkit-eversweet-solo-se/ → /hersteller/petkit/: „PETKIT“
 - /produkt/petkit-eversweet-ultra/ → /trinkbrunnen/: „Trinkbrunnen“
 - /produkt/petkit-eversweet-ultra/ → /warum-katzen-fliessendes-wasser-trinken/: „fließendes Wasser“
-- /produkt/petkit-eversweet-ultra/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
 - /produkt/petkit-eversweet-ultra/ → /hersteller/petkit/: „PETKIT“
+- /produkt/petkit-eversweet-ultra/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
 - /produkt/petkit-fresh-element-infinity/ → /hersteller/petkit/: „PETKIT“
 - /produkt/petkit-fresh-element-solo/ → /smarte-futterautomaten/: „Futterautomaten“
 - /produkt/petkit-fresh-element-solo/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
@@ -452,9 +454,9 @@ Erstellt: 2026-08-15T21:12:24.876Z
 - /vergleiche/beste-futterautomaten-fuer-welpen/ → /futterautomat-bei-stromausfall/: „Futterautomat ohne WLAN“
 - /vergleiche/beste-futterautomaten-fuer-welpen/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
 - /vergleiche/beste-futterautomaten-fuer-welpen/ → /hersteller/petlibro/: „PETLIBRO“
+- /vergleiche/beste-futterautomaten-fuer-welpen/ → /hersteller/petkit/: „PETKIT“
 - /vergleiche/beste-futterautomaten-fuer-welpen/ → /hersteller/xiaomi/: „Xiaomi“
 - /vergleiche/beste-futterautomaten-fuer-welpen/ → /welpen-richtig-fuettern/: „Welpenfutter“
-- /vergleiche/beste-futterautomaten-fuer-welpen/ → /hersteller/petkit/: „PETKIT“
 - /vergleiche/beste-futterautomaten-fuer-zwei-katzen/ → /wie-gross-sollte-ein-futterautomat-sein/: „Futterautomat für zwei Katzen“
 - /vergleiche/beste-futterautomaten-fuer-zwei-katzen/ → /nierenkranke-katze-trinken/: „Nierenerkrankung“
 - /vergleiche/beste-futterautomaten-mit-akku/ → /produkt/xiaomi-smart-pet-food-feeder-2/: „Xiaomi Smart Pet Food Feeder 2“
@@ -466,8 +468,8 @@ Erstellt: 2026-08-15T21:12:24.876Z
 - /vergleiche/beste-futterautomaten-mit-kamera/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
 - /vergleiche/beste-futterautomaten-mit-kamera/ → /hersteller/petlibro/: „PETLIBRO“
 - /vergleiche/beste-futterautomaten-mit-kamera/ → /hersteller/surefeed/: „SureFeed“
-- /vergleiche/beste-futterautomaten-mit-kamera/ → /hersteller/wopet/: „WOPET“
 - /vergleiche/beste-futterautomaten-mit-kamera/ → /hersteller/petkit/: „PETKIT“
+- /vergleiche/beste-futterautomaten-mit-kamera/ → /hersteller/wopet/: „WOPET“
 - /vergleiche/beste-futterautomaten-ohne-wlan/ → /smarte-futterautomaten/: „Futterautomat“
 - /vergleiche/beste-futterautomaten-ohne-wlan/ → /produkt/surefeed-microchip-pet-feeder/: „SureFeed Microchip Pet Feeder“
 - /vergleiche/beste-futterautomaten-ohne-wlan/ → /produkt/cat-mate-c500/: „Cat Mate C500“
@@ -480,10 +482,11 @@ Erstellt: 2026-08-15T21:12:24.876Z
 - /vergleiche/beste-gps-tracker-fuer-hunde/ → /produkt/tractive-dog-6-xl/: „Tractive DOG 6 XL“
 - /vergleiche/beste-gps-tracker-fuer-hunde/ → /produkt/tractive-dog-6/: „Tractive DOG 6“
 - /vergleiche/beste-gps-tracker-fuer-hunde/ → /hersteller/weenect/: „Weenect“
-- /vergleiche/beste-gps-tracker-fuer-hunde/ → /hersteller/garmin/: „Garmin“
+- /vergleiche/beste-gps-tracker-fuer-hunde/ → /hersteller/enabot/: „Enabot“
 - /vergleiche/beste-gps-tracker-fuer-katzen/ → /produkt/paj-pet-finder-4g-mini/: „PAJ PET Finder 4G Mini“
 - /vergleiche/beste-gps-tracker-fuer-katzen/ → /produkt/tractive-cat-6-mini/: „Tractive CAT 6 Mini“
 - /vergleiche/beste-gps-tracker-fuer-katzen/ → /hersteller/weenect/: „Weenect“
+- /vergleiche/beste-gps-tracker-fuer-katzen/ → /hersteller/enabot/: „Enabot“
 - /vergleiche/beste-trinkbrunnen-fuer-hunde/ → /produkt/petkit-eversweet-max-2-uvc/: „PETKIT Eversweet Max 2 UVC“
 - /vergleiche/beste-trinkbrunnen-fuer-hunde/ → /produkt/oneisall-7l-dog-water-fountain/: „oneisall 7L Dog Water Fountain“
 - /vergleiche/beste-trinkbrunnen-fuer-hunde/ → /produkt/petlibro-capsule-dog-fountain/: „PETLIBRO Capsule Dog Fountain“
@@ -505,8 +508,8 @@ Erstellt: 2026-08-15T21:12:24.876Z
 - /vergleiche/futterautomat-gegen-schlingen/ → /hersteller/petlibro/: „PETLIBRO“
 - /vergleiche/futterautomat-gegen-schlingen/ → /hersteller/xiaomi/: „Xiaomi“
 - /vergleiche/futterautomat-mit-app/ → /hersteller/petlibro/: „PETLIBRO“
-- /vergleiche/futterautomat-mit-app/ → /hersteller/xiaomi/: „Xiaomi“
 - /vergleiche/futterautomat-mit-app/ → /hersteller/petkit/: „PETKIT“
+- /vergleiche/futterautomat-mit-app/ → /hersteller/xiaomi/: „Xiaomi“
 - /vergleiche/gps-tracker-mit-langer-akkulaufzeit/ → /produkt/paj-pet-finder-4g-mini/: „PAJ Pet Finder 4G Mini“
 - /vergleiche/gps-tracker-mit-langer-akkulaufzeit/ → /produkt/garmin-alpha-t-20/: „Garmin Alpha T 20“
 - /vergleiche/gps-tracker-mit-langer-akkulaufzeit/ → /produkt/tractive-dog-6-xl/: „Tractive DOG 6 XL“

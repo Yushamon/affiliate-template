@@ -1,9 +1,9 @@
 # Product External Evidence Audit
 
-- Produkte: 87
-- Mit externalEvidence: 84
+- Produkte: 89
+- Mit externalEvidence: 86
 - Vollständig: 53
-- Teilweise: 31
+- Teilweise: 33
 - Ohne Evidenz: 3
 
 ## Vollständig
@@ -67,6 +67,7 @@
 - cat-mate-335-pet-fountain · fehlt: professionalReviews, userReviews, consensus
 - cat-mate-shell-fountain · fehlt: professionalReviews, consensus
 - devoko-90l-automatisches-katzenklo · fehlt: professionalReviews, consensus
+- enabot-rola-pettracker · fehlt: professionalReviews, userReviews, consensus
 - garmin-alpha-tt-25 · fehlt: consensus
 - honeyguardian-a305d · fehlt: professionalReviews, userReviews, consensus
 - honeyguardian-a68 · fehlt: professionalReviews, userReviews, consensus
@@ -89,6 +90,7 @@
 - petlibro-space-smart-feeder · fehlt: userReviews, consensus
 - petsafe-petporte-smart-flap · fehlt: userReviews
 - petsnowy-snow-plus · fehlt: professionalReviews, userReviews, consensus
+- pettec-cam-360 · fehlt: professionalReviews, userReviews, consensus
 - petwalk-medium-tiertuer · fehlt: professionalReviews, userReviews, consensus
 - wopet-cube-air-ca10 · fehlt: professionalReviews, consensus
 - wopet-heritage-view-camera-feeder · fehlt: professionalReviews, consensus

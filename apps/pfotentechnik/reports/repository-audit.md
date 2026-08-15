@@ -1,10 +1,10 @@
 # Pfotentechnik Repository Audit
 
-Erstellt: 2026-08-15T21:12:26.016Z
+Erstellt: 2026-08-15T21:32:36.801Z
 
 ## Zusammenfassung
 
-- Routen: 245
+- Routen: 247
 - Fehler: 0
 - Warnungen: 9
 - Hinweise: 54
@@ -12,7 +12,7 @@ Erstellt: 2026-08-15T21:12:26.016Z
 ## Content-Bestand
 
 - pages: 82
-- products: 87
+- products: 89
 - manufacturers: 26
 - comparisons: 28
 

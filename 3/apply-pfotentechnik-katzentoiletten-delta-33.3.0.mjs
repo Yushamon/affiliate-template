@@ -39,7 +39,7 @@ function parse(source, label) {
   return { data: yaml.load(match[1], { schema: yaml.JSON_SCHEMA }), body: match[2].trim() };
 }
 function dump(doc) {
-  return `---\n${yaml.dump(doc.data, { schema: yaml.JSON_SCHEMA, noRefs: true, lineWidth: 120, quotingType: '"', forceQuotes: false })}---\n\n${doc.body.trim()}\n`;
+  return `---\n${yaml.dump(doc.data, { schema: yaml.JSON_SCHEMA, noRefs: true, lineWidth: 120, quotingType: '"', forceQuotes: true })}---\n\n${doc.body.trim()}\n`;
 }
 function marker(body, id, content) {
   const start = `<!-- ${id}:start -->`, end = `<!-- ${id}:end -->`;
@@ -60,7 +60,7 @@ function baseProduct({ title, slug, manufacturer, description, recommendation, t
     seo: { title: `${title} im Datencheck`, description, canonical: `/produkt/${slug}/`, sitemap: true, priority: 0.8 },
     hub: { sections: ["produkte", "automatische-katzentoiletten"] }, tags,
     images: { hero: { src: "../../assets/images/project/pfotentechnik/comparison/default-editorial-hero.webp", alt: `Neutrale redaktionelle Darstellung: ${title}` }, gallery: [] },
-    price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-15", source: { id: "manufacturer", label: "Hersteller", type: "manufacturer" } },
+    price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-15", source: { id: "manufacturer", label: "Hersteller", type: "editorial" } },
     priceAutomation: "editorial", priceState: "unknown", priceAvailable: false, affiliateAvailable: false,
     availability, availabilityReason, availabilityUpdated: "2026-08-15",
     editorialStatus: "required", recommendationStatus: "limited", maintenanceStatus: "required",
@@ -89,7 +89,7 @@ function updateNeakasa(source) {
     description: "Aktuelle offene M1-Plus-Lite-Generation mit automatischer Siebung, App, 7,17-Liter-Streukapazität, 11,23-Liter-Abfallbehälter und dokumentiertem Bereich von 1 bis 15 kg.",
     recommendation: "Für Katzen, die eine offene Toilette bevorzugen, wenn der 35,2-cm-Einstieg passt und klumpende, siebfähige Streu verwendet wird.",
     images: { hero: { src: "../../assets/images/project/pfotentechnik/comparison/default-editorial-hero.webp", alt: "Neutrale redaktionelle Darstellung der offenen Neakasa M1 Plus Lite" }, gallery: [] },
-    price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-15", source: { id: "neakasa-eu", label: "Neakasa EU", type: "manufacturer" } },
+    price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-15", source: { id: "neakasa-eu", label: "Neakasa EU", type: "editorial" } },
     priceAutomation: "editorial", priceState: "unknown", priceAvailable: false, availability: "unknown", availabilityReason: "Preis und Lieferstatus werden nicht als dauerhafte redaktionelle Angabe gespeichert.", availabilityUpdated: "2026-08-15",
   });
   doc.data.seo = { ...doc.data.seo, title: "Neakasa M1 Plus Lite im Check", description: "M1 Plus Lite: offene Bauform, 35,2-cm-Einstieg, Abdichtung, Sensorik, Streu und App konservativ eingeordnet." };
@@ -237,8 +237,17 @@ const desired = new Map([
 ]);
 const managedNew = new Set([files.max3, files.snowy, files.promptNeakasa, files.promptMax3, files.promptSnowy, files.test]);
 const changes = [...desired].filter(([file, content]) => !fs.existsSync(file) || fs.readFileSync(file, "utf8") !== content);
+function hasManagedIdentity(file, source) {
+  if (file === files.max3) return /slug:\s*["']?petkit-purobot-max-3/.test(source);
+  if (file === files.snowy) return /slug:\s*["']?petsnowy-snow-plus/.test(source);
+  if (file === files.promptNeakasa) return source.includes("MASTER-PROMPT: Neakasa M1 Plus Lite");
+  if (file === files.promptMax3) return source.includes("MASTER-PROMPT: PETKIT PUROBOT MAX 3 P9906");
+  if (file === files.promptSnowy) return source.includes("MASTER-PROMPT: PetSnowy SNOW+");
+  if (file === files.test) return source.includes("MAX 3 and SNOW+ are distinct conservative products");
+  return false;
+}
 for (const [file, content] of changes) {
-  if (managedNew.has(file) && fs.existsSync(file) && !fs.readFileSync(file, "utf8").includes("33.3.0") && fs.readFileSync(file, "utf8") !== content) throw new Error(`[${PATCH}] Konflikt mit bestehender Datei: ${path.relative(root, file)}`);
+  if (managedNew.has(file) && fs.existsSync(file) && !hasManagedIdentity(file, fs.readFileSync(file, "utf8")) && fs.readFileSync(file, "utf8") !== content) throw new Error(`[${PATCH}] Konflikt mit bestehender Datei: ${path.relative(root, file)}`);
 }
 let backupRoot = null;
 if (changes.length) {

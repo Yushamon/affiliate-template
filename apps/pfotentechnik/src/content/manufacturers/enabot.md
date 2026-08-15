@@ -22,6 +22,7 @@ images:
   gallery: []
 productCategories:
   - "Kameraroboter"
+  - "GPS-Tracker mit Kamera"
 productAreas:
   - "mobile Innenkameras"
   - "App-Steuerung"
@@ -46,6 +47,7 @@ profile:
 productSlugs:
   - "enabot-ebo-air-2"
   - "enabot-rola-mini"
+  - "enabot-rola-pettracker"
 featuredProductSlugs:
   - "enabot-ebo-air-2"
 series: []
@@ -72,3 +74,9 @@ Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen
 - [Enabot EBO Air 2](/produkt/enabot-ebo-air-2/)
 - [Enabot ROLA Mini](/produkt/enabot-rola-mini/)
 <!-- pt:content-discovery:manufacturer-products:end -->
+
+<!-- pt:rola-product:start -->
+## ROLA PetTracker
+
+Der [ROLA PetTracker](/produkt/enabot-rola-pettracker/) ergänzt Enabots Kameraprodukte um GPS/AGPS, Live-Bild und Audio. Die 70-g-Grenze trennt ihn redaktionell von leichten Katzentrackern.
+<!-- pt:rola-product:end -->

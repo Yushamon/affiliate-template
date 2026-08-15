@@ -1,14 +1,14 @@
 # Comparison Data Platform Audit
 
-Erstellt: 2026-08-15T21:12:22.460Z
+Erstellt: 2026-08-15T21:32:21.243Z
 
 **Status: BESTANDEN**
 
 - Vergleiche: 28 (Mindestbestand 26)
-- Quellabdeckung: 89.2 %
+- Quellabdeckung: 90.4 %
 - öffentlich gerenderte Abdeckung: 100 %
-- alte values-Felder: 659
-- bewusste Overrides: 218
+- alte values-Felder: 725
+- bewusste Overrides: 220
 
 ## Vergleichsseiten
 
@@ -29,9 +29,9 @@ Erstellt: 2026-08-15T21:12:22.460Z
 | `beste-futterautomaten-mit-kamera` | 4 | 8 | 0 | OK |
 | `beste-futterautomaten-ohne-wlan` | 3 | 4 | 0 | OK |
 | `beste-futterautomaten-unter-100-euro` | 3 | 3 | 5 | OK |
-| `beste-gps-tracker-fuer-hunde` | 6 | 4 | 0 | OK |
+| `beste-gps-tracker-fuer-hunde` | 7 | 12 | 0 | OK |
 | `beste-gps-tracker-fuer-katzen` | 3 | 8 | 0 | OK |
-| `beste-haustierkameras` | 3 | 6 | 0 | OK |
+| `beste-haustierkameras` | 4 | 18 | 0 | OK |
 | `beste-mikrochip-katzenklappen` | 7 | 7 | 0 | OK |
 | `beste-trinkbrunnen-fuer-hunde` | 6 | 7 | 0 | OK |
 | `beste-trinkbrunnen-fuer-katzen` | 9 | 7 | 0 | OK |
