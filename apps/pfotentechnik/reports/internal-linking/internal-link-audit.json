@@ -1,14 +1,14 @@
 {
   "version": "3.0.3",
-  "generatedAt": "2026-08-15T21:32:26.910Z",
+  "generatedAt": "2026-08-16T06:22:16.758Z",
   "strict": false,
   "summary": {
-    "documents": 225,
-    "contentRoutes": 225,
-    "buildRoutes": 336,
-    "validRoutes": 336,
-    "definitions": 495,
-    "renderedAutomaticLinks": 510,
+    "documents": 227,
+    "contentRoutes": 227,
+    "buildRoutes": 338,
+    "validRoutes": 338,
+    "definitions": 497,
+    "renderedAutomaticLinks": 515,
     "errors": 0,
     "warnings": 6,
     "critical": 0
@@ -236,6 +236,12 @@
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
       "score": 1806
+    },
+    {
+      "sourceRoute": "/automatische-katzentoiletten/",
+      "targetRoute": "/hersteller/petsnowy/",
+      "anchor": "PetSnowy",
+      "score": 1008
     },
     {
       "sourceRoute": "/biofilm-im-katzentrinkbrunnen/",
@@ -548,6 +554,12 @@
       "targetRoute": "/hersteller/furbo/",
       "anchor": "Furbo",
       "score": 1805
+    },
+    {
+      "sourceRoute": "/haustierkameras/",
+      "targetRoute": "/hersteller/pettec/",
+      "anchor": "PetTec",
+      "score": 1206
     },
     {
       "sourceRoute": "/hund-frisst-nicht/",
@@ -2290,6 +2302,18 @@
       "score": 1807
     },
     {
+      "sourceRoute": "/produkt/petsnowy-snow-plus/",
+      "targetRoute": "/hersteller/petsnowy/",
+      "anchor": "PetSnowy",
+      "score": 1008
+    },
+    {
+      "sourceRoute": "/produkt/pettec-cam-360/",
+      "targetRoute": "/hersteller/pettec/",
+      "anchor": "PetTec",
+      "score": 1206
+    },
+    {
       "sourceRoute": "/produkt/petwalk-medium-tiertuer/",
       "targetRoute": "/hersteller/petwalk/",
       "anchor": "petWALK",
@@ -2932,6 +2956,12 @@
       "score": 1806
     },
     {
+      "sourceRoute": "/vergleiche/beste-haustierkameras/",
+      "targetRoute": "/hersteller/pettec/",
+      "anchor": "PetTec",
+      "score": 1206
+    },
+    {
       "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
       "targetRoute": "/produkt/petkit-eversweet-max-2-uvc/",
       "anchor": "PETKIT Eversweet Max 2 UVC",
@@ -3305,6 +3335,8 @@
     "/hersteller/petkit/": 37,
     "/hersteller/petlibro/": 60,
     "/hersteller/petsafe/": 16,
+    "/hersteller/petsnowy/": 2,
+    "/hersteller/pettec/": 3,
     "/hersteller/petwalk/": 4,
     "/hersteller/surefeed/": 13,
     "/hersteller/tractive/": 12,
@@ -3407,8 +3439,8 @@
     "/produkt/petsafe-mikrochip-katzenklappe/": 2,
     "/produkt/petsafe-petporte-smart-flap/": 2,
     "/produkt/petsafe-smart-feed-2/": 3,
-    "/produkt/petsnowy-snow-plus/": 1,
-    "/produkt/pettec-cam-360/": 2,
+    "/produkt/petsnowy-snow-plus/": 2,
+    "/produkt/pettec-cam-360/": 3,
     "/produkt/petwalk-medium-tiertuer/": 3,
     "/produkt/surefeed-microchip-pet-feeder-connect/": 5,
     "/produkt/surefeed-microchip-pet-feeder/": 9,

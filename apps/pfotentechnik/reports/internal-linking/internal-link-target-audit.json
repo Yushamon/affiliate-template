@@ -1,36 +1,13 @@
 {
   "version": "2.0.2",
-  "generatedAt": "2026-08-15T21:32:27.288Z",
+  "generatedAt": "2026-08-16T06:22:17.117Z",
   "strict": false,
   "summary": {
-    "pages": 336,
-    "routes": 336,
+    "pages": 338,
+    "routes": 338,
     "redirectAliases": 33,
-    "errors": 2,
+    "errors": 0,
     "warnings": 0
   },
-  "findings": [
-    {
-      "severity": "error",
-      "code": "MISSING_TARGET",
-      "sourceFile": "apps/pfotentechnik/dist/produkt/petsnowy-snow-plus/index.html",
-      "sourceRoute": "/produkt/petsnowy-snow-plus/",
-      "originalTarget": "/hersteller/petsnowy/",
-      "normalizedTarget": "/hersteller/petsnowy/",
-      "finalTarget": "/hersteller/petsnowy/",
-      "reason": "Internes Ziel ist nicht im Build-Routeninventar vorhanden.",
-      "recommendation": "Link korrigieren oder fehlende Route wiederherstellen."
-    },
-    {
-      "severity": "error",
-      "code": "MISSING_TARGET",
-      "sourceFile": "apps/pfotentechnik/dist/produkt/pettec-cam-360/index.html",
-      "sourceRoute": "/produkt/pettec-cam-360/",
-      "originalTarget": "/hersteller/pettec/",
-      "normalizedTarget": "/hersteller/pettec/",
-      "finalTarget": "/hersteller/pettec/",
-      "reason": "Internes Ziel ist nicht im Build-Routeninventar vorhanden.",
-      "recommendation": "Link korrigieren oder fehlende Route wiederherstellen."
-    }
-  ]
+  "findings": []
 }

@@ -28,6 +28,7 @@ const files = {
   comparison: rel("src/content/comparisons/beste-automatische-katzentoiletten.md"),
   hub: rel("src/content/pages/automatische-katzentoiletten.md"),
   petkit: rel("src/content/manufacturers/petkit.md"),
+  makerSnowy: rel("src/content/manufacturers/petsnowy.md"),
   promptNeakasa: rel("research/visual-prompts/neakasa-m1-plus-lite-visual-master-prompt.txt"),
   promptMax3: rel("research/visual-prompts/petkit-purobot-max-3-visual-master-prompt.txt"),
   promptSnowy: rel("research/visual-prompts/petsnowy-snow-plus-visual-master-prompt.txt"),
@@ -169,6 +170,22 @@ const snowy = baseProduct({
   availability: "unknown", availabilityReason: "Deutschland-/EU-Lieferbarkeit muss im aktuellen Checkout geprüft werden.",
 });
 
+const makerSnowy = dump({ data: {
+  title: "PetSnowy", slug: "petsnowy", type: "manufacturer", layout: "manufacturer", key: "petsnowy", name: "PetSnowy",
+  description: "PetSnowy als Hersteller geschlossener automatischer Katzentoiletten und ergänzender Haustiertechnik.",
+  recommendation: "PetSnowy ist im PfotenTechnik-Bestand für die stark geschlossene SNOW-Systemklasse mit Anti-Tracking-Weg relevant.",
+  summary: "Die Herstellerintegration dient der gültigen Produktzuordnung; sie ist keine pauschale Markenempfehlung.", publishedAt: "2026-08-15", updatedAt: "2026-08-15",
+  author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }, tags: ["hersteller", "petsnowy", "katzentoiletten"],
+  hub: { sections: ["hersteller"], title: "PetSnowy", description: "PetSnowy-Produkte und Systemgrenzen.", icon: "Hersteller", order: 90, featured: false },
+  seo: { title: "PetSnowy: Produkte und Einordnung", description: "PetSnowy im PfotenTechnik-Datenbestand mit SNOW+ und den relevanten Systemgrenzen.", canonical: "/hersteller/petsnowy/", sitemap: true, noindex: false, priority: 0.5 },
+  website: "https://petsnowy.com", images: { hero: { src: "../../assets/images/project/pfotentechnik/comparison/default-editorial-hero.webp", alt: "Neutrale redaktionelle PetSnowy-Herstellerdarstellung" }, gallery: [] },
+  productCategories: ["Automatische Katzentoiletten", "Haustiertechnik"], productAreas: ["geschlossene selbstreinigende Katzentoiletten"], focus: ["geschlossene Kabine", "Anti-Tracking", "Geruchsmanagement"],
+  suitableFor: ["Haushalte mit Fokus auf geschlossene Systeme"], attention: ["regionale Verfügbarkeit", "proprietäre Verbrauchsmaterialien"], strengths: ["eigenständige geschlossene Systemklasse"], weaknesses: ["EU-Verfügbarkeit und Folgekosten aktuell prüfen"],
+  profile: { company: "PetSnowy vertreibt automatisierte Haustierprodukte, darunter die SNOW-Katzentoilette.", appEcosystem: "App- und Cloudumfang bleiben produktabhängig.", replacementParts: "Modellspezifische Teile regional prüfen.", filterSupply: "Liner und Deodorizer sind modellbezogene Verbrauchsmaterialien.", warranty: "Regionale Bedingungen vor Kauf prüfen.", competitorComparison: "SNOW unterscheidet sich vor allem durch geschlossene Kabine und gebogenen Anti-Tracking-Weg." },
+  productSlugs: ["petsnowy-snow-plus"], featuredProductSlugs: [], series: [], alternativeManufacturerSlugs: ["petkit", "neakasa"],
+  sources: [{ label: "PetSnowy", url: "https://petsnowy.com/de/products/petsnowy-snow-self-cleaning-litter-box", description: "Offizielle Produktquelle" }], faq: [],
+}, body: `## PetSnowy bei PfotenTechnik\n\nDie Herstellerroute bindet den [PetSnowy SNOW+ Datencheck](/produkt/petsnowy-snow-plus/) strukturell an. Prozentuale Geruchsclaims bleiben Herstellerangaben; regionale Verfügbarkeit und Verbrauchsmaterialien werden vor dem Kauf neu geprüft.` });
+
 function updateComparison(source) {
   const doc = parse(source, "Katzentoiletten-Vergleich");
   const allowed = new Set(["neakasa-m1-lite", "devoko-90l-automatisches-katzenklo", "petlibro-luma-smart-litter-box", "petkit-purobot-max-pro-2", "petkit-purobot-max-3", "petsnowy-snow-plus"]);
@@ -231,15 +248,16 @@ const prompts = {
 const test = `import assert from "node:assert/strict";\nimport fs from "node:fs";\nimport path from "node:path";\nimport test from "node:test";\nimport { createRequire } from "node:module";\nimport { fileURLToPath } from "node:url";\nconst app = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");\nconst yaml = createRequire(path.join(app, "package.json"))("js-yaml");\nconst load = (kind, slug) => { const source = fs.readFileSync(path.join(app, "src/content", kind, slug + ".md"), "utf8"); const m = source.match(/^---\\s*\\r?\\n([\\s\\S]*?)\\r?\\n---/); assert.ok(m); return { source, data: yaml.load(m[1], { schema: yaml.JSON_SCHEMA }) }; };\ntest("Neakasa route owns current Plus lifecycle", () => { const p = load("products", "neakasa-m1-lite"); assert.equal(p.data.title, "Neakasa M1 Plus Lite"); assert.equal(fs.existsSync(path.join(app, "src/content/products/neakasa-m1-lite-plus.md")), false); assert.match(p.source, /Bristle Seal/); assert.match(p.data.images.hero.src, /default-editorial-hero/); });\ntest("MAX 3 and SNOW+ are distinct conservative products", () => { const max = load("products", "petkit-purobot-max-3"); const snow = load("products", "petsnowy-snow-plus"); assert.equal(max.data.rating, 0); assert.match(max.source, /Keine Kamera dokumentiert/); assert.doesNotMatch(max.source, /1080p/); assert.match(snow.source, /Herstellerclaim/); assert.equal(snow.data.availability, "unknown"); });\ntest("comparison references existing products and valid assets", () => { const c = load("comparisons", "beste-automatische-katzentoiletten"); for (const item of c.data.items) assert.ok(fs.existsSync(path.join(app, "src/content/products", item.slug + ".md")), item.slug); for (const slug of ["petkit-purobot-max-3", "petsnowy-snow-plus"]) assert.ok(c.data.items.some((i) => i.slug === slug)); for (const slug of ["neakasa-m1-lite", "petkit-purobot-max-3", "petsnowy-snow-plus"]) { const p = load("products", slug); const image = path.resolve(path.join(app, "src/content/products"), p.data.images.hero.src); assert.ok(fs.existsSync(image), image); } });\n`;
 
 const desired = new Map([
-  [files.neakasa, updateNeakasa(fs.readFileSync(files.neakasa, "utf8"))], [files.max3, max3], [files.snowy, snowy],
+  [files.neakasa, updateNeakasa(fs.readFileSync(files.neakasa, "utf8"))], [files.max3, max3], [files.snowy, snowy], [files.makerSnowy, makerSnowy],
   [files.comparison, updateComparison(fs.readFileSync(files.comparison, "utf8"))], [files.hub, updateHub(fs.readFileSync(files.hub, "utf8"))],
   [files.petkit, updatePetkit(fs.readFileSync(files.petkit, "utf8"))], ...Object.entries(prompts), [files.test, test],
 ]);
-const managedNew = new Set([files.max3, files.snowy, files.promptNeakasa, files.promptMax3, files.promptSnowy, files.test]);
+const managedNew = new Set([files.max3, files.snowy, files.makerSnowy, files.promptNeakasa, files.promptMax3, files.promptSnowy, files.test]);
 const changes = [...desired].filter(([file, content]) => !fs.existsSync(file) || fs.readFileSync(file, "utf8") !== content);
 function hasManagedIdentity(file, source) {
   if (file === files.max3) return /slug:\s*["']?petkit-purobot-max-3/.test(source);
   if (file === files.snowy) return /slug:\s*["']?petsnowy-snow-plus/.test(source);
+  if (file === files.makerSnowy) return /slug:\s*["']?petsnowy/.test(source) && /type:\s*["']?manufacturer/.test(source);
   if (file === files.promptNeakasa) return source.includes("MASTER-PROMPT: Neakasa M1 Plus Lite");
   if (file === files.promptMax3) return source.includes("MASTER-PROMPT: PETKIT PUROBOT MAX 3 P9906");
   if (file === files.promptSnowy) return source.includes("MASTER-PROMPT: PetSnowy SNOW+");
@@ -257,5 +275,5 @@ if (changes.length) {
     fs.mkdirSync(path.dirname(file), { recursive: true }); const temp = `${file}.${crypto.randomUUID()}.tmp`; fs.writeFileSync(temp, content, "utf8"); fs.renameSync(temp, file);
   }
 }
-for (const file of [files.neakasa, files.max3, files.snowy, files.comparison, files.hub]) parse(fs.readFileSync(file, "utf8"), path.relative(root, file));
+for (const file of [files.neakasa, files.max3, files.snowy, files.makerSnowy, files.comparison, files.hub]) parse(fs.readFileSync(file, "utf8"), path.relative(root, file));
 console.log(`[${PATCH}] ${changes.length ? `${changes.length} Datei(en) installiert; Backup: ${backupRoot}` : "Zielzustand bereits vorhanden (no-op)."}`);

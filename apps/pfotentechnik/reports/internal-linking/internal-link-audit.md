@@ -1,12 +1,12 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-08-15T21:32:26.910Z
+Erstellt: 2026-08-16T06:22:16.758Z
 
 ## Ergebnis
 
-- Dokumente: 225
-- Linkdefinitionen: 495
-- Simulierte automatische Links: 510
+- Dokumente: 227
+- Linkdefinitionen: 497
+- Simulierte automatische Links: 515
 - Fehler: 0
 - Warnungen: 6
 - Strict-kritisch: 0
@@ -38,6 +38,7 @@ Erstellt: 2026-08-15T21:32:26.910Z
 - /automatische-katzentoiletten/ → /hersteller/neakasa/: „Neakasa“
 - /automatische-katzentoiletten/ → /hersteller/devoko/: „Devoko“
 - /automatische-katzentoiletten/ → /hersteller/petkit/: „PETKIT“
+- /automatische-katzentoiletten/ → /hersteller/petsnowy/: „PetSnowy“
 - /biofilm-im-katzentrinkbrunnen/ → /hersteller/petlibro/: „PETLIBRO“
 - /filter-im-katzentrinkbrunnen-wechseln/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
 - /filter-im-katzentrinkbrunnen-wechseln/ → /hersteller/petkit/: „PETKIT“
@@ -90,6 +91,7 @@ Erstellt: 2026-08-15T21:32:26.910Z
 - /haustierkameras/ → /hersteller/petlibro/: „PETLIBRO“
 - /haustierkameras/ → /hersteller/enabot/: „Enabot“
 - /haustierkameras/ → /hersteller/furbo/: „Furbo“
+- /haustierkameras/ → /hersteller/pettec/: „PetTec“
 - /hund-frisst-nicht/ → /smarte-futterautomaten/: „Futterautomaten“
 - /hund-frisst-zu-schnell/ → /smarte-futterautomaten/: „Futterautomat“
 - /hund-frisst-zu-schnell/ → /warum-schlingt-mein-hund/: „Zu schnelles Fressen“
@@ -380,6 +382,8 @@ Erstellt: 2026-08-15T21:32:26.910Z
 - /produkt/petsafe-petporte-smart-flap/ → /katzenklappen/: „Katzenklappen“
 - /produkt/petsafe-petporte-smart-flap/ → /hersteller/petsafe/: „PetSafe“
 - /produkt/petsafe-smart-feed-2/ → /hersteller/petsafe/: „PetSafe“
+- /produkt/petsnowy-snow-plus/ → /hersteller/petsnowy/: „PetSnowy“
+- /produkt/pettec-cam-360/ → /hersteller/pettec/: „PetTec“
 - /produkt/petwalk-medium-tiertuer/ → /hersteller/petwalk/: „petWALK“
 - /produkt/surefeed-microchip-pet-feeder-connect/ → /smarte-futterautomaten/: „Futterautomat“
 - /produkt/surefeed-microchip-pet-feeder-connect/ → /hersteller/surefeed/: „SureFeed“
@@ -487,6 +491,7 @@ Erstellt: 2026-08-15T21:32:26.910Z
 - /vergleiche/beste-gps-tracker-fuer-katzen/ → /produkt/tractive-cat-6-mini/: „Tractive CAT 6 Mini“
 - /vergleiche/beste-gps-tracker-fuer-katzen/ → /hersteller/weenect/: „Weenect“
 - /vergleiche/beste-gps-tracker-fuer-katzen/ → /hersteller/enabot/: „Enabot“
+- /vergleiche/beste-haustierkameras/ → /hersteller/pettec/: „PetTec“
 - /vergleiche/beste-trinkbrunnen-fuer-hunde/ → /produkt/petkit-eversweet-max-2-uvc/: „PETKIT Eversweet Max 2 UVC“
 - /vergleiche/beste-trinkbrunnen-fuer-hunde/ → /produkt/oneisall-7l-dog-water-fountain/: „oneisall 7L Dog Water Fountain“
 - /vergleiche/beste-trinkbrunnen-fuer-hunde/ → /produkt/petlibro-capsule-dog-fountain/: „PETLIBRO Capsule Dog Fountain“
