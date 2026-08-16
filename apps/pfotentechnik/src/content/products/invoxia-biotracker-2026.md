@@ -29,9 +29,9 @@ priceAvailable: false
 affiliateAvailable: false
 availability: "unknown"
 availabilityUpdated: "2026-08-16"
-editorialStatus: "required"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 rating: 4.2
 ratings:
   ortung: 4.4
@@ -138,6 +138,17 @@ evidenceSources:
     fields:
       - "ratings"
       - "externalEvidence"
+experience:
+  summary: >-
+    Redaktionelle Einordnung aus Herstellerdokumentation, unabhängigen Tests und dokumentierten Nutzersignalen.
+    PfotenTechnik behauptet für dieses Produkt keinen eigenen Praxistest.
+  methodology: >-
+    Herstellerangaben werden getrennt von professionellen Tests und Nutzerbewertungen ausgewertet.
+    Externe Sterne werden nicht direkt in den PfotenTechnik-Score übernommen.
+  reliability: >-
+    Langzeit- und Zuverlässigkeitsaussagen werden nur so stark gewichtet, wie sie durch die unter
+    externalEvidence und evidenceSources dokumentierten Quellen gedeckt sind.
+
 ---
 
 ## Gesundheitsdaten mit klarer Grenze
