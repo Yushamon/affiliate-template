@@ -242,4 +242,15 @@ Die Modellunterschiede bei Speicherung, Abo, Interaktion und Beweglichkeit stehe
 Lokale Speicherung kann laufende Kosten und die Abhängigkeit von einer Video-Cloud reduzieren. Cloud-Speicher kann externen Zugriff und Sicherung vereinfachen, verarbeitet die Aufnahmen aber in einem zusätzlichen Dienst. **Ohne Abo** bedeutet nicht automatisch **ohne Cloud**.
 
 Die [PetTec Cam 360](/produkt/pettec-cam-360/) bietet laut Hersteller microSD-Aufzeichnung und Grundfunktionen ohne Pflichtabo, daneben aber optionale Cloud-Dienste. Datenschutz hängt nicht nur vom Speicherort ab, sondern auch von Konto, App, Mikrofon, Fernzugriff, Updates und Konfiguration. Die Kaufrollen stehen im [Haustierkamera-Vergleich](/vergleiche/beste-haustierkameras/).
+
+Die [Reolink E1 Zoom 4K](/produkt/reolink-e1-zoom/) ergänzt eine klassische Indoor-Sicherheitskamera mit lokaler Tiererkennung, microSD und weiteren lokalen Speicherwegen. Sie wird bewusst nicht wie Furbo oder eine Cloud-zentrierte Pet-Cam behandelt.
 <!-- pt:pettec-storage-choice:end -->
+
+<!-- pt:content-discovery:category-products:start -->
+## Weitere Produktseiten im Themenbereich
+
+Diese Modelle gehören ebenfalls zu diesem Themenbereich. In den redaktionellen Vergleichen erscheinen nur Produkte, die zur jeweiligen Suchintention und zu den gemeinsamen Kriterien passen.
+
+- [Enabot EBO Air 2](/produkt/enabot-ebo-air-2/)
+- [Furbo 360° Hundekamera](/produkt/furbo-360-hundekamera/)
+<!-- pt:content-discovery:category-products:end -->

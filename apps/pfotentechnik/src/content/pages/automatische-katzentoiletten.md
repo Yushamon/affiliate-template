@@ -159,7 +159,7 @@ Herstellerintervalle wie „bis zu 7 oder 17 Tage“ sind Maximalangaben und ver
 
 ## Nächste Entscheidung
 
-Der [Vergleich automatischer Katzentoiletten](/vergleiche/beste-automatische-katzentoiletten/) ordnet vier unterschiedliche Kaufrollen ein: [Neakasa M1 Lite](/produkt/neakasa-m1-lite/), [Devoko 90L](/produkt/devoko-90l-automatisches-katzenklo/), [PETLIBRO Luma](/produkt/petlibro-luma-smart-litter-box/) und [PETKIT PUROBOT MAX PRO 2](/produkt/petkit-purobot-max-pro-2/).
+Der [Vergleich automatischer Katzentoiletten](/vergleiche/beste-automatische-katzentoiletten/) ordnet neun unterschiedliche Kaufrollen ein: offene und teiloffene Systeme, niedrige PETKIT-Einstiege, geschlossene Anti-Tracking-Kabinen sowie Whisker- und PETKIT-Kameraplattformen.
 
 Zur Eingewöhnung das alte Klo zunächst behalten, das neue Gerät ausgeschaltet anbieten und automatische Zyklen erst nach freiwilliger Nutzung unter Beobachtung aktivieren.
 
@@ -172,5 +172,18 @@ Elektronische Sensorik reagiert auf erkannte Zustände; mechanische Anti-Pinch-K
 
 [PETKIT PUROBOT MAX 3](/produkt/petkit-purobot-max-3/) setzt auf niedrigen Einstieg plus mechanische Struktur. [PetSnowy SNOW+](/produkt/petsnowy-snow-plus/) priorisiert eine geschlossene Anti-Tracking-Führung. Das aktualisierte [Neakasa M1 Plus Lite](/produkt/neakasa-m1-lite/) bleibt die offene Alternative. Der [Vergleich](/vergleiche/beste-automatische-katzentoiletten/) stellt die Rollen gegenüber.
 
+[PETKIT PuraMax 2](/produkt/petkit-puramax-2/) bildet die PETKIT-Trommel ohne Kamera ab. [Litter-Robot 4](/produkt/litter-robot-4/) ist die etablierte Whisker-Plattform ohne Dualkamera, während [Litter-Robot 5 Pro](/produkt/litter-robot-5-pro/) die Kamera- und WasteID-Rolle besitzt.
+
 Monitoring zeigt Nutzungstrends, keine Diagnosen. Bei Beuteln, Filtern, Deodorizern und proprietären Linern zählen Verfügbarkeit und Drei-Jahres-Kosten zur Entscheidung.
 <!-- pt:litter-delta-33-3:end -->
+
+<!-- pt:content-discovery:category-products:start -->
+## Weitere Produktseiten im Themenbereich
+
+Diese Modelle gehören ebenfalls zu diesem Themenbereich. In den redaktionellen Vergleichen erscheinen nur Produkte, die zur jeweiligen Suchintention und zu den gemeinsamen Kriterien passen.
+
+- [Devoko 90L Automatisches Katzenklo](/produkt/devoko-90l-automatisches-katzenklo/)
+- [Neakasa M1 Plus](/produkt/neakasa-m1-plus/)
+- [PETKIT PUROBOT MAX PRO 2](/produkt/petkit-purobot-max-pro-2/)
+- [PETLIBRO Luma Smart Self-Cleaning Litter Box](/produkt/petlibro-luma-smart-litter-box/)
+<!-- pt:content-discovery:category-products:end -->

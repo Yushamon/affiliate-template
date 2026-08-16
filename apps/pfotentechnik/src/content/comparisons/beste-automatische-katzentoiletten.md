@@ -3,7 +3,7 @@ title: "Automatische Katzentoiletten im Vergleich"
 slug: "beste-automatische-katzentoiletten"
 type: "comparison"
 layout: "comparison"
-description: "Vier automatische Katzentoiletten zuerst nach Bauform, Innenraum, Einstieg, Katzengewicht, Sicherheit, Streu, Wartung, Mehrkatzenlogik und Folgekosten vergleichen."
+description: "Neun automatische Katzentoiletten nach Bauform, Einstieg, Katzengewicht, Sicherheit, Streu, Wartung, Mehrkatzenlogik und Folgekosten vergleichen."
 publishedAt: "2026-08-06"
 updatedAt: "2026-08-15"
 author:
@@ -20,13 +20,13 @@ hub:
     - "vergleiche"
     - "automatische-katzentoiletten"
   title: "Automatische Katzentoiletten im Vergleich"
-  description: "Vier eigenstaendige Kaufrollen mit Sicherheits- und Ausschlusslogik statt Gesamtrangliste."
+  description: "Neun eigenständige Kaufrollen mit Sicherheits- und Ausschlusslogik statt Gesamtrangliste."
   icon: "🐈"
   featured: true
   order: 38
 seo:
   title: "Automatische Katzentoiletten 2026: Sicherheit & Passform"
-  description: "Neakasa M1 Lite, Devoko 90L, PETLIBRO Luma und PETKIT PUROBOT nach Bauform, Einstieg, Sicherheit, Streu, Daten und Folgekosten vergleichen."
+  description: "Neun automatische Katzentoiletten von offen bis geschlossen nach Einstieg, Sicherheit, Streu, Monitoring, Wartung und Folgekosten vergleichen."
   canonical: "/vergleiche/beste-automatische-katzentoiletten/"
   sitemap: true
   priority: 0.9
@@ -136,6 +136,18 @@ items:
     type: "product"
     recommendation: "Niedriger Einstieg und Sicherheitsarchitektur"
     values:
+      bauform: "Geschlossene 76-l-Siebtrommel"
+      innenraum: "76 l; Öffnung 267 × 273 mm"
+      einstieg: "20,4 cm"
+      katzenprofil: "1,5-10 kg; ab 6 Monaten"
+      sicherheit: "12 Sensoren plus mechanisch offene Eingangsstruktur"
+      mehrkatzen: "Gewichts- und Nutzungsdaten; keine Kameraidentifikation"
+      streu: "Klumpende Ton-, Tofu- oder Mischstreu"
+      wartung: "7-l-Abfallfach; Beutel und Geruchszubehör"
+      geruch: "OdorVoid-Zubehör; Herstellerclaim"
+      appdaten: "Nutzung und Gewicht; keine Diagnose"
+      folgekosten: "Beutel, Streu und optional N50/N60"
+      platz: "620 × 538 × 552 mm; 10 kg"
       kaufrolle: "Niedriger Einstieg und Sicherheitsarchitektur"
       bauform_einstieg: "Geschlossen; 20,4 cm"
       elektronische_sicherheit: "12 Sensoren; Herstellerangabe"
@@ -147,6 +159,18 @@ items:
     type: "product"
     recommendation: "Geschlossene Kabine und Anti-Tracking"
     values:
+      bauform: "Geschlossene Kabine mit automatischer Siebung"
+      innenraum: "Aktuelle Produktmaße vor Kauf prüfen"
+      einstieg: "Gebogener Ein-/Ausstiegsweg; Maß nicht belastbar ausgewiesen"
+      katzenprofil: "Herstellergrenzen vor Kauf prüfen"
+      sicherheit: "Sieben Schutzebenen; Herstellerclaim"
+      mehrkatzen: "Nutzungsdaten; Individualerkennung nicht belastbar belegt"
+      streu: "Klumpende, siebfähige Streu; Kompatibilität prüfen"
+      wartung: "Geschlossene Kabine und Abfallfach; Verbrauchsmaterial prüfen"
+      geruch: "Geschlossene Kabine; Herstellerclaim"
+      appdaten: "App-Umfang aktuell prüfen"
+      folgekosten: "Streu, Beutel und modellbezogenes Zubehör"
+      platz: "Große geschlossene Kabine; aktuelle Maße prüfen"
       kaufrolle: "Geschlossene Kabine und Anti-Tracking"
       bauform_einstieg: "Geschlossen; Maß offen"
       elektronische_sicherheit: "7 Schutzebenen; Herstellerclaim"
@@ -154,6 +178,75 @@ items:
       tracking: "Gebogener Ein-/Ausstiegsweg"
       kamera: "Keine Kamera dokumentiert"
     label: "PetSnowy SNOW+"
+  - slug: "petkit-puramax-2"
+    type: "product"
+    label: "PETKIT PuraMax 2"
+    recommendation: "PETKIT-Trommel ohne Kamera"
+    values:
+      bauform: "Geschlossene 76-l-Siebtrommel"
+      innenraum: "76 l; Öffnung 200 × 255 mm"
+      einstieg: "20 cm"
+      katzenprofil: "1,5-10 kg; ab 6 Monaten"
+      sicherheit: "11 Sensoren und Anti-Pinch-Struktur; Herstellerangabe"
+      mehrkatzen: "Gewicht und Nutzung; keine Kameraidentifikation"
+      streu: "Klumpende Ton-/Tofu-/Mischstreu innerhalb Partikelgrenzen"
+      wartung: "7-l-Abfallfach; Beutel und Geruchszubehör"
+      geruch: "ShieldBase und Zubehör; Herstellerclaims"
+      appdaten: "Nutzung und Gewicht; 2,4-GHz-WLAN"
+      folgekosten: "Beutel, Streu, optional N50-Zubehör"
+      platz: "620 × 538 × 552 mm; 10 kg"
+      kaufrolle: "PETKIT-Trommel ohne Kamera"
+      bauform_einstieg: "Geschlossen; 20 cm"
+      elektronische_sicherheit: "11 Sensoren; Herstellerangabe"
+      mechanische_sicherheit: "Anti-Pinch-Struktur laut Hersteller"
+      tracking: "Kein separater Anti-Tracking-Weg"
+      kamera: "Keine Kamera"
+  - slug: "litter-robot-4"
+    type: "product"
+    label: "Litter-Robot 4"
+    recommendation: "Whisker-Referenzplattform ohne Kamera"
+    values:
+      bauform: "Geschlossene rotierende Siebtrommel"
+      innenraum: "40 × 40 cm Eingang; großer Innenraum"
+      einstieg: "30,5 cm vom Boden; optionale Stufe"
+      katzenprofil: "1,36-11,33 kg; bis zu 4 Katzen"
+      sicherheit: "Laser- und Gewichtssensoren; Zyklusverzögerung"
+      mehrkatzen: "Bis zu 4 Katzen; Nutzung und Gewicht in der App"
+      streu: "Klumpend und siebfähig"
+      wartung: "Versiegelte Schublade; Beutel und Filter"
+      geruch: "Geschlossene Schublade; optional OdorTrap"
+      appdaten: "Nutzung, Gewicht, Streu- und Abfallfüllstand"
+      folgekosten: "Beutel, Streu, Filter und optionales Zubehör"
+      platz: "75 × 56 × 68,6 cm; 10,9 kg"
+      kaufrolle: "Whisker-Referenzplattform ohne Kamera"
+      bauform_einstieg: "Geschlossen; 30,5 cm"
+      elektronische_sicherheit: "Laser- und Gewichtssensoren"
+      mechanische_sicherheit: "Keine separate Offenhaltung dokumentiert"
+      tracking: "Zaun und Stufe; Herstellerangabe"
+      kamera: "Keine integrierte Kamera"
+  - slug: "litter-robot-5-pro"
+    type: "product"
+    label: "Litter-Robot 5 Pro"
+    recommendation: "Whisker-Premiumsystem mit Dualkamera"
+    values:
+      bauform: "Geschlossene rotierende Siebtrommel"
+      innenraum: "Großes geschlossenes System; Maße auf Produktseite"
+      einstieg: "Geschlossen; Passform und optionale Stufe prüfen"
+      katzenprofil: "ca. 1,36-13,6 kg; bis zu 5 Katzen"
+      sicherheit: "Sensor- und Zykluslogik; Herstellerangabe"
+      mehrkatzen: "WasteID, Gewicht und Besuche; Identifikation teils Whisker+"
+      streu: "Klumpend und siebfähig"
+      wartung: "Geschlossene Abfallschublade; Beutel und Zubehör"
+      geruch: "Geschlossene Schublade; externe Reviews stützen Geruchskontrolle"
+      appdaten: "Besuche, Gewicht, Dualkamera und WasteID"
+      folgekosten: "Beutel, Streu, Zubehör und gegebenenfalls Whisker+"
+      platz: "Großes Premiumsystem; Stellfläche vor Kauf prüfen"
+      kaufrolle: "Dualkamera-Premiumsystem"
+      bauform_einstieg: "Geschlossen; Passform prüfen"
+      elektronische_sicherheit: "Sensor- und Zykluslogik"
+      mechanische_sicherheit: "Keine separate Offenhaltung dokumentiert"
+      tracking: "Zubehör und Eingangsbereich prüfen"
+      kamera: "Zwei integrierte 1080p-Kameras"
 criteria:
   - key: "bauform"
     label: "Bauform / Reinigung"
@@ -241,7 +334,7 @@ criteria:
     fallback: "Nicht ausgewiesen"
 recommendation:
   title: "Ausschlusskriterien vor Smart-Funktionen"
-  text: "Neakasa priorisiert offene Zugänglichkeit, MAX 3 den niedrigen Einstieg plus mechanische Struktur, PetSnowy geschlossene Streurückhaltung und MAX PRO 2 Kamera-Monitoring. Mehr Sensoren oder App-Funktionen ergeben keinen automatischen Gesamtsieg."
+  text: "Neakasa priorisiert offene Zugänglichkeit, PuraMax 2 und MAX 3 den 20-cm-Einstieg, PetSnowy Streurückhaltung, Litter-Robot 4 die Whisker-Referenzplattform und LR5 Pro beziehungsweise MAX PRO 2 Kamera-Monitoring. Mehr Funktionen ergeben keinen automatischen Gesamtsieg."
   alternativeSlug: "neakasa-m1-lite"
 faq:
   - question: "Ab welchem Gewicht ist die Automatik geeignet?"
@@ -266,6 +359,9 @@ decisionJourney:
     - "/produkt/petkit-purobot-max-pro-2/"
     - "/produkt/petkit-purobot-max-3/"
     - "/produkt/petsnowy-snow-plus/"
+    - "/produkt/petkit-puramax-2/"
+    - "/produkt/litter-robot-4/"
+    - "/produkt/litter-robot-5-pro/"
   fallback:
     - "/automatische-katzentoiletten/"
 evidenceSources:
@@ -298,14 +394,19 @@ Dieser Vergleich besitzt die konkrete Modellentscheidung. Das Prüfprinzip laute
 
 Kitten-Modus bedeutet bei Luma, PUROBOT und M1 Lite nicht, dass eine zu leichte Katze mit aktiver Automatik reinigen darf. Allgemein gilt: Betritt oder nähert sich eine Katze während eines Zyklus, muss das Gerät nach Herstellerlogik stoppen. Bei Sensorfehlern, unebenem Stand, ungewöhnlichem Geräusch oder Stromproblem bleibt die Automatik aus, bis Ursache und Anleitung geklärt sind.
 
-## Vier unterschiedliche Kaufrollen
+## Neun unterschiedliche Kaufrollen
 
 - [Neakasa M1 Lite](/produkt/neakasa-m1-lite/) hält Sicht- und Fluchtweg offen, verlangt aber einen hohen Einstieg.
 - [Devoko 90L](/produkt/devoko-90l-automatisches-katzenklo/) verbindet niedrigeren Einstieg und großen dokumentierten Innenraum mit schwächerer Datenkonsistenz.
 - [PETLIBRO Luma](/produkt/petlibro-luma-smart-litter-box/) kombiniert teiloffenen Zugang und bis zu zehn Profile mit Cloud-only-Video.
 - [PETKIT PUROBOT MAX PRO 2](/produkt/petkit-purobot-max-pro-2/) priorisiert geschlossene Mehrkatzen-Erkennung, Kamera- und Gewichtstrends.
+- [PETKIT PUROBOT MAX 3](/produkt/petkit-purobot-max-3/) kombiniert niedrigen Einstieg und zusätzliche mechanische Eingangsstruktur.
+- [PetSnowy SNOW+](/produkt/petsnowy-snow-plus/) priorisiert eine geschlossene Kabine und Streurückhaltung.
+- [PETKIT PuraMax 2](/produkt/petkit-puramax-2/) bildet die PETKIT-Trommelplattform ohne Kamera ab.
+- [Litter-Robot 4](/produkt/litter-robot-4/) ist die etablierte Whisker-Plattform ohne Dualkamera.
+- [Litter-Robot 5 Pro](/produkt/litter-robot-5-pro/) ergänzt Dualkamera und WasteID als Premiumrolle.
 
-Litter-Robot 5/5 Pro bleibt außerhalb der deutschen Empfehlung, solange Kauf, Versand und App-Kompatibilität laut Whisker regional eingeschränkt sind. M1 Plus bleibt als Produktseite erhalten, ist gegenüber M1 Lite aber vor allem eine Lieferumfangsvariante und keine zusätzliche Systemrolle.
+M1 Plus bleibt als Produktseite erhalten, ist gegenüber M1 Lite aber vor allem eine Lieferumfangsvariante und keine zusätzliche Systemrolle. Eine zweite Vergleichszeile würde keine eigenständige Entscheidung hinzufügen.
 
 ## Streu und Mehrkatzenbetrieb
 
@@ -318,7 +419,7 @@ Monitoring zeigt Nutzung, Gewicht oder Bilddaten – keine Diagnose. Beim PUROBO
 Grundlagen, Gewöhnungsplan und Situationen gegen eine automatische Toilette stehen im [Hub zu automatischen Katzentoiletten](/automatische-katzentoiletten/).
 
 <!-- pt:litter-delta-33-3:start -->
-## Sechs unterschiedliche Kaufrollen
+## Neun Kaufrollen als Ausschlussmatrix
 
 Die Matrix ist keine lineare Rangliste. **Neakasa M1 Plus Lite** steht für offene Zugänglichkeit, **PETKIT MAX 3** für einen niedrigeren Einstieg und zusätzliche mechanische Sicherheitsarchitektur, **PetSnowy SNOW+** für geschlossene Streurückhaltung und **MAX PRO 2** für Kamera-Monitoring.
 

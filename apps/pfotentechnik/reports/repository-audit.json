@@ -1,10 +1,10 @@
 {
   "summary": {
-    "generatedAt": "2026-08-16T06:22:18.366Z",
+    "generatedAt": "2026-08-16T09:00:06.756Z",
     "countsByCollection": {
       "pages": 82,
-      "products": 89,
-      "manufacturers": 28,
+      "products": 98,
+      "manufacturers": 32,
       "comparisons": 28
     },
     "categoryCounts": {
@@ -30,7 +30,7 @@
       "katzenhaltung": 1,
       "tierbeschaeftigung": 1
     },
-    "routes": 249,
+    "routes": 262,
     "findings": {
       "error": 0,
       "warning": 9,
@@ -89,7 +89,7 @@
     {
       "severity": "warning",
       "area": "maintainability",
-      "message": "Sehr große Datei mit 1121 Zeilen",
+      "message": "Sehr große Datei mit 1124 Zeilen",
       "file": "src/lib/seo/topical-authority/loadTopicalAuthority.ts"
     },
     {

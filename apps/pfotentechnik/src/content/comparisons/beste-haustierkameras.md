@@ -3,9 +3,9 @@ title: "Haustierkameras im Vergleich"
 slug: "beste-haustierkameras"
 type: "comparison"
 layout: "comparison"
-description: "Vier Haustierkamera-Klassen nach lokaler Speicherung, Cloud, Pflichtabo, Interaktion, Blickbereich und Bildfunktionen vergleichen."
+description: "Fünf Haustierkamera-Klassen nach lokaler Speicherung, Cloud, Pflichtabo, Tiererkennung, Interaktion und Bildfunktionen vergleichen."
 publishedAt: "2026-08-06"
-updatedAt: "2026-08-15"
+updatedAt: "2026-08-16"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
@@ -20,13 +20,13 @@ hub:
     - "vergleiche"
     - "haustierkameras"
   title: "Haustierkameras im Vergleich"
-  description: "Feste Kamera, Interaktionskamera und mobiler Roboter ohne Testsiegerbehauptung."
+  description: "Pet-Cloud, Interaktionskamera, mobiler Roboter und lokale Indoor-Kamera ohne Testsiegerbehauptung."
   icon: "📷"
   featured: true
   order: 36
 seo:
   title: "Haustierkameras 2026: Typ, Cloud & Abo vergleichen"
-  description: "PETLIBRO Scout, Furbo Mini 360 und Enabot ROLA Mini nach Kameratyp, Speicher, Cloud, Abo, Interaktion und Raumabdeckung vergleichen."
+  description: "Fünf Haustierkameras von Pet-Cloud bis lokaler Indoor-Kamera nach Speicher, Abo, Tiererkennung und Raumabdeckung vergleichen."
   canonical: "/vergleiche/beste-haustierkameras/"
   sitemap: true
   priority: 0.85
@@ -37,7 +37,7 @@ icon: "📷"
 heroImage:
   src: "../../assets/images/products/petlibro-scout-smart-camera/hero.webp"
   alt: "Redaktionelle Darstellung einer festen Haustierkamera als Einstieg in den Klassenvergleich"
-tableTitle: "Vier Speicher- und Kameraklassen direkt vergleichen"
+tableTitle: "Fünf Speicher- und Kameraklassen direkt vergleichen"
 cardsTitle: "Welche Klasse löst die Aufgabe?"
 items:
   - slug: "petlibro-scout-smart-camera"
@@ -132,6 +132,31 @@ items:
       audio: "Zwei-Wege-Audio"
     label: "PetTec Cam 360"
     recommendation: "Für lokale microSD-Aufzeichnung und Basisfunktionen ohne Pflichtabo; optionale Cloud bleibt eine bewusste Zusatzentscheidung."
+  - slug: "reolink-e1-zoom"
+    type: "product"
+    label: "Reolink E1 Zoom 4K"
+    recommendation: "Klassische Indoor-Kamera mit lokaler Tiererkennung, optischem Zoom und mehreren lokalen Speicherwegen."
+    values:
+      klasse: "Klassische Indoor-Pan/Tilt-Kamera"
+      speicher: "microSD, NVR, Home Hub oder FTP/NAS; Cloud optional"
+      abo: "Kein Pflichtabo für lokale Speicherung"
+      interaktion: "Zwei-Wege-Audio"
+      abdeckung: "355° Pan / 50° Tilt; 3× optischer Zoom"
+      bild: "4K 8 MP; IR-Nachtsicht"
+      lokale_speicherung: "Ja"
+      cloud_erforderlich: "Nein für lokale Speicherung"
+      cloud_optional: "Ja, regional"
+      pflichtabo: "Nein"
+      bezahlfunktionen: "Optionale Cloud regional prüfen"
+      kostenlose_grundfunktionen: "Livebild, lokale Erkennung und Speicherung"
+      microsd: "Bis 512 GB"
+      aufloesung: "4K 8 MP"
+      schwenk_neige: "355° / 50°"
+      tracking: "Automatische Schwenkverfolgung"
+      nachtsicht: "IR bis 12 m"
+      audio: "Zwei-Wege-Audio"
+      tiererkennung: "Lokal laut Hersteller"
+      herstellerdienst: "Lokaler Betrieb möglich; Fernzugriff konfigurationsabhängig"
 criteria:
   - key: "klasse"
     label: "Kameraklasse"
@@ -211,15 +236,23 @@ criteria:
     label: "Zwei-Wege-Audio"
     format: "text"
     fallback: "Nicht ausgewiesen"
+  - key: "tiererkennung"
+    label: "Tiererkennung"
+    format: "text"
+    fallback: "Nicht ausgewiesen"
+  - key: "herstellerdienst"
+    label: "Herstellerdienst-Abhängigkeit"
+    format: "text"
+    fallback: "Nicht ausgewiesen"
 recommendation:
   title: "Speicherweg vor Auflösung entscheiden"
-  text: "PetTec ergänzt lokale microSD ohne Pflichtabo, Scout steht für Cloud-only-Aufzeichnung, Furbo für stationäre Interaktion und ROLA Mini für mobile Perspektiven. Unbekannte Daten bleiben offen."
+  text: "Reolink und PetTec ergänzen lokale Speicherung ohne Pflichtabo, Scout steht für Cloud-only-Aufzeichnung, Furbo für Pet-Interaktion und ROLA Mini für mobile Perspektiven. Reolink bleibt eine klassische Indoor-Kamera."
   alternativeSlug: "pettec-cam-360"
 faq:
   - question: "Braucht eine Haustierkamera ein Abo?"
     answer: "Nicht jede Basisfunktion benoetigt einen Tarif. Bei Scout sind Videoaufzeichnung und KI-/Cloudfunktionen tarifabhaengig; bei Furbo und ROLA Mini muss der aktuelle optionale Dienstumfang vor dem Kauf geprueft werden."
   - question: "Welche Kamera speichert lokal statt in der Cloud?"
-    answer: "Fuer keines der drei hier eingeordneten Modelle wird eine lokale Speicheroption pauschal behauptet. Scout hat laut Hersteller keinen SD-Kartenslot und zeichnet nur in der Cloud auf; bei den anderen Modellen bleibt der aktuelle Speicherweg eine konkrete Prueffrage."
+    answer: "Reolink E1 Zoom und PetTec Cam 360 unterstützen lokale microSD-Speicherung. Reolink ergänzt NVR, Home Hub und FTP/NAS. Scout zeichnet laut Hersteller ausschließlich in der Cloud auf; Furbo und ROLA bleiben modellbezogene Prüffragen."
   - question: "Ist 360 Grad besser als eine feste Kamera?"
     answer: "Nur wenn Schwenken die relevanten Bereiche vom Standort aus erreicht. Waende, Moebel und mehrere Raeume bleiben Grenzen; eine mobile Kamera loest dafuer neue Fahrweg- und Privatsphaerefragen aus."
   - question: "Wann lohnt sich eine mobile Roboterkamera?"
@@ -236,6 +269,7 @@ decisionJourney:
     - "/produkt/furbo-mini-360/"
     - "/produkt/enabot-rola-mini/"
     - "/produkt/pettec-cam-360/"
+    - "/produkt/reolink-e1-zoom/"
   fallback:
     - "/haustierkameras/"
 evidenceSources:
@@ -261,6 +295,14 @@ evidenceSources:
     fields:
       - "items"
       - "criteria"
+  - source: "Reolink Deutschland"
+    url: "https://reolink.com/de/product/e1-zoom/"
+    accessedAt: "2026-08-16"
+    assertion: "4K, optischer Zoom, lokale Tiererkennung, microSD und weitere lokale Speicherwege sind Herstellerangaben."
+    fields:
+      - "items"
+      - "criteria"
+      - "faq"
 ---
 
 Der Vergleich besitzt die konkrete Evaluationsintention. Grundlagen zu Aufstellung, Datenschutz und Kostenformel bleiben beim [Haustierkamera-Hub](/haustierkameras/).

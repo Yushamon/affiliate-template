@@ -4,9 +4,9 @@ slug: "beste-mikrochip-katzenklappen"
 canonical: "/vergleiche/beste-mikrochip-katzenklappen/"
 type: "comparison"
 layout: "comparison"
-description: "Sieben belegte Mikrochip-Türen nach Zugangslogik, Richtungsrechten, App-Abhängigkeit, Strom, Einbau und Produktrolle vergleichen."
+description: "Acht belegte Mikrochip-Türen nach Zugangslogik, Richtungsrechten, App-Abhängigkeit, Strom, Einbau und Produktrolle vergleichen."
 publishedAt: "2026-08-04"
-updatedAt: "2026-08-04"
+updatedAt: "2026-08-16"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: ["Katzenklappen", "Mikrochip", "Vergleich", "Kaufberatung"]
 hub: { sections: ["vergleiche", "katzenklappen"], title: "Mikrochip-Katzenklappen im Vergleich", description: "Lokale, vernetzte und motorisierte Systeme ohne Gleichmacherei.", icon: "🐈", featured: true, order: 10 }
@@ -102,6 +102,18 @@ items:
       einbau: "Bauprojekt in Tür, Glas oder Wand"
       durchgang: "Medium; projektspezifisch"
       rolle: "Motorisierte Tiertür"
+  - slug: "cat-mate-elite-355w"
+    type: "product"
+    label: "Cat Mate Elite 355W"
+    recommendation: "Lokale Timer-Klappe ohne App; Timer und Ausgangsregel gelten gemeinsam statt individuell je Katze."
+    values:
+      zugang: "15-stelliger ISO-Chip; selektiver Eingang"
+      richtungsrechte: "Gemeinsamer Timer und 4-Wege-Sperre"
+      app: "Nein"
+      strom: "4 AA; ca. 9-12 Monate bei einer Katze"
+      einbau: "Ausschnitt 178 × 204 mm oder 232 mm rund"
+      durchgang: "145 × 145 mm"
+      rolle: "Lokale Timer-Klappe"
 criteria:
   - key: "zugang"
     label: "Zugangslogik"
@@ -140,14 +152,14 @@ criteria:
     format: "text"
 recommendation:
   title: "Zuerst Rechte und Einbau, erst danach App und Komfort"
-  text: "Für einfachen lokalen Eingang reichen Standardmodelle. Petporte ergänzt eine netzbetriebene Option mit größerem Durchgang und Nachtmodus. DualScan löst individuelle Ausgangsrechte ohne App; Connect ergänzt Fernfunktionen. OnlyCat adressiert Beute als Komplettsystem, petWALK Dämmung und motorisierte Öffnung."
+  text: "Für einfachen lokalen Eingang reichen Standardmodelle. Cat Mate 355W ergänzt einen gemeinsamen Offline-Timer, DualScan individuelle Ausgangsrechte ohne App und Connect Fernfunktionen. Petporte bietet Netzbetrieb, OnlyCat Beuteerkennung und petWALK Dämmung mit Motor."
   winnerSlug: "sureflap-dualscan-mikrochip-katzenklappe"
   alternativeSlug: "petsafe-mikrochip-katzenklappe"
 faq:
   - { question: "Welche Mikrochip-Katzenklappe ist die beste?", answer: "Das hängt von der Aufgabe ab. Selektiver Eingang, individuelle Ausgangsrechte, App, Beuteerkennung und Dämmung sind verschiedene Anforderungen." }
   - { question: "Ist eine App für Mikrochip-Zugang nötig?", answer: "Nein. Standard- und DualScan-Modelle arbeiten lokal. Eine App erweitert Fernsteuerung und Protokolle." }
   - { question: "Kann eine große Katze jede Mikrochip-Klappe nutzen?", answer: "Nein. Der engste Durchgang muss am konkreten Modell und an der Katze geprüft werden." }
-decisionJourney: { cluster: "katzenklappen", stage: "evaluation", intent: "mikrochip-katzenklappen-vergleichen", primaryQuestion: "Welches Mikrochip-System passt zu Zugang, Katze und Einbauort?", next: ["/katzenklappe-fuer-mehrere-katzen/", "/katzenklappe-einbauen/", "/produkt/sureflap-dualscan-mikrochip-katzenklappe/"], fallback: ["/katzenklappen/"] }
+decisionJourney: { cluster: "katzenklappen", stage: "evaluation", intent: "mikrochip-katzenklappen-vergleichen", primaryQuestion: "Welches Mikrochip-System passt zu Zugang, Katze und Einbauort?", next: ["/katzenklappe-fuer-mehrere-katzen/", "/katzenklappe-einbauen/", "/produkt/sureflap-dualscan-mikrochip-katzenklappe/", "/produkt/cat-mate-elite-355w/"], fallback: ["/katzenklappen/"] }
 evidenceSources:
   - { source: "Herstellerquellen der sechs Produktseiten", url: "https://www.surepetcare.com/de-de/haustierklappen", accessedAt: "2026-08-04", assertion: "Vergleich basiert ausschließlich auf den feldbezogenen Quellen der eingebundenen Produktseiten.", fields: ["items", "criteria", "recommendation"] }
 ---

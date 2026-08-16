@@ -26,9 +26,9 @@ hub:
   icon: 🐾
   order: 30
 seo:
-  title: "Futterautomaten für 2 Katzen: 5 Systeme im Vergleich"
+  title: "Futterautomaten für 2 Katzen: 4 Systeme im Vergleich"
   description: >-
-    Fünf Futterautomaten für zwei Katzen vergleichen: Mikrochip-Zugang, Doppelschale, Dual-Hopper, App, Portionierung
+    Vier Futterautomaten für zwei Katzen vergleichen: Mikrochip-Zugang, Doppelschale, Dual-Hopper, App, Portionierung
     und Schutz vor Futterklau.
   canonical: /vergleiche/beste-futterautomaten-fuer-zwei-katzen/
   sitemap: true
@@ -175,7 +175,7 @@ recommendation:
     und günstiger. PETKIT Dual-Hopper löst primär die Bevorratung zweier Futtersorten, nicht den geschützten Zugang.
   winnerSlug: surefeed-microchip-pet-feeder-connect
   alternativeSlug: petlibro-granary-wifi-feeder
-tableTitle: 5 Systeme für zwei Katzen direkt verglichen
+tableTitle: 4 Systeme für zwei Katzen direkt verglichen
 cardsTitle: Welches System passt zu Futterklau, Diät oder gleichem Futter?
 faq:
   - question: Welcher Futterautomat ist für zwei Katzen insgesamt am besten?
@@ -976,7 +976,7 @@ Der übergeordnete Überblick [Smarte Futterautomaten](/smarte-futterautomaten/)
 
 Dieser Ratgeber ist bewusst auf **zwei Katzen** zugeschnitten. Für Haushalte mit mehreren Katzen, mehreren Hunden oder einer Mischung aus Hund und Katze gelten zusätzliche Anforderungen an Napfhöhe, Futterart, Standort und Zugang. Diese breitere Planung behandelt [Futterautomat im Mehrtierhaushalt](/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/).
 
-Steht die passende Bauart bereits fest, zeigt der Vergleich der fünf Systeme für zwei Katzen konkrete Modelle für Doppelschale, zwei Futtersorten und geschützte Rationen.
+Steht die passende Bauart bereits fest, zeigt der Vergleich der vier Systeme für zwei Katzen konkrete Modelle für Doppelschale, zwei Futtersorten und geschützte Rationen.
 
 ## SureFeed Connect richtig einordnen
 

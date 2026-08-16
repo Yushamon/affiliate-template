@@ -356,6 +356,6 @@ Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen
 - [PETLIBRO Dockstream 2 Smart Cordless](/produkt/petlibro-dockstream-2-smart-cordless/)
 - [PETLIBRO Dockstream Cordless](/produkt/petlibro-dockstream-cordless/)
 - [PETLIBRO Dockstream RFID Smart](/produkt/petlibro-dockstream-rfid-smart/)
-- [PETLIBRO Scout Smart Camera](/produkt/petlibro-scout-smart-camera/)
 - [PETLIBRO Luma Smart Self-Cleaning Litter Box](/produkt/petlibro-luma-smart-litter-box/)
+- [PETLIBRO Scout Smart Camera](/produkt/petlibro-scout-smart-camera/)
 <!-- pt:content-discovery:manufacturer-products:end -->

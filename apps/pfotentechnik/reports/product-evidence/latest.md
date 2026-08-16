@@ -1,10 +1,10 @@
 # Product External Evidence Audit
 
-- Produkte: 89
-- Mit externalEvidence: 86
+- Produkte: 98
+- Mit externalEvidence: 87
 - Vollständig: 53
-- Teilweise: 33
-- Ohne Evidenz: 3
+- Teilweise: 34
+- Ohne Evidenz: 11
 
 ## Vollständig
 
@@ -82,6 +82,7 @@
 - petkit-eversweet-5-mini · fehlt: professionalReviews, consensus
 - petkit-fresh-element-infinity · fehlt: userReviews, consensus
 - petkit-fresh-element-solo · fehlt: professionalReviews, consensus
+- petkit-puramax-2 · fehlt: professionalReviews, userReviews, consensus
 - petkit-purobot-max-3 · fehlt: professionalReviews, userReviews, consensus
 - petlibro-air-wifi-feeder · fehlt: consensus
 - petlibro-glacier-ultrafiltration · fehlt: consensus
@@ -100,6 +101,14 @@
 
 ## Ohne Evidenz
 
+- cat-mate-elite-355w
+- catit-pixi-smart-trinkbrunnen
 - enabot-rola-mini
 - furbo-mini-360
+- invoxia-biotracker-2026
+- litter-robot-4
+- pawfit-3
 - petlibro-luma-smart-litter-box
+- petsafe-streamside-trinkbrunnen
+- prothelis-area-pets
+- reolink-e1-zoom

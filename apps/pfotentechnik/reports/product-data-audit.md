@@ -1,25 +1,104 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-08-15T21:32:20.191Z
+Erstellt: 2026-08-16T09:00:04.621Z
 
 ## Zusammenfassung
 
-- Produkte: 89
+- Produkte: 98
 - Fehler: 0
-- Warnungen: 133
+- Warnungen: 193
 - Dokumentierte Hinweise: 146
 - Doppelte Slugs: 0
 
 ## Kategorien
 
 - futterautomaten: 37
-- trinkbrunnen: 21
-- automatische-katzentoiletten: 8
-- haustierkameras: 6
-- gps-tracker: 9
-- katzenklappen: 8
+- trinkbrunnen: 23
+- katzenklappen: 9
+- automatische-katzentoiletten: 10
+- haustierkameras: 7
+- gps-tracker: 12
 
 ## Produkte mit Handlungsbedarf
+
+### PetSafe Keramik-Trinkbrunnen Streamside
+
+- Datei: `src\content\products\petsafe-streamside-trinkbrunnen.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 67%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
+  - Empfohlenes Feld fehlt: lautstärke
+  - Empfohlenes Feld fehlt: akku
+  - Empfohlenes Feld fehlt: uv
+  - Empfohlenes Feld fehlt: trinkhöhe
+  - Empfohlenes Feld fehlt: wasserfluss
+  - Empfohlenes Feld fehlt: ersatzfilter
+  - Empfohlenes Feld fehlt: gewicht
+
+### Catit PIXI Smart-Trinkbrunnen
+
+- Datei: `src\content\products\catit-pixi-smart-trinkbrunnen.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 73%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
+  - Empfohlenes Feld fehlt: lautstärke
+  - Empfohlenes Feld fehlt: akku
+  - Empfohlenes Feld fehlt: trinkhöhe
+  - Empfohlenes Feld fehlt: wasserfluss
+  - Empfohlenes Feld fehlt: ersatzfilter
+
+### Invoxia Biotracker Edition 2026
+
+- Datei: `src\content\products\invoxia-biotracker-2026.md`
+- Kategorie: gps-tracker
+- Vollständigkeit: 76%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
+  - Empfohlenes Feld fehlt: wlan
+  - Empfohlenes Feld fehlt: bluetooth
+  - Empfohlenes Feld fehlt: abmessungen
+  - Empfohlenes Feld fehlt: material
+
+### Pawfit 3
+
+- Datei: `src\content\products\pawfit-3.md`
+- Kategorie: gps-tracker
+- Vollständigkeit: 76%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
+  - Empfohlenes Feld fehlt: app
+  - Empfohlenes Feld fehlt: wlan
+  - Empfohlenes Feld fehlt: bluetooth
+  - Empfohlenes Feld fehlt: material
+
+### Prothelis area Pets
+
+- Datei: `src\content\products\prothelis-area-pets.md`
+- Kategorie: gps-tracker
+- Vollständigkeit: 76%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
+  - Empfohlenes Feld fehlt: app
+  - Empfohlenes Feld fehlt: wlan
+  - Empfohlenes Feld fehlt: bluetooth
+  - Empfohlenes Feld fehlt: material
 
 ### SureFeed Microchip Pet Feeder Connect
 
@@ -83,6 +162,17 @@ Erstellt: 2026-08-15T21:32:20.191Z
   - Nur 0 Galerie-Bilder hinterlegt
   - Affiliate-Link fehlt
 
+### Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer
+
+- Datei: `src\content\products\cat-mate-elite-355w.md`
+- Kategorie: katzenklappen
+- Vollständigkeit: 88%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
+
 ### Cat Mate Pet Fountain 335
 
 - Datei: `src\content\products\cat-mate-335-pet-fountain.md`
@@ -129,6 +219,17 @@ Erstellt: 2026-08-15T21:32:20.191Z
   - Nur 0 Galerie-Bilder hinterlegt
   - Affiliate-Link fehlt
 
+### Litter-Robot 4
+
+- Datei: `src\content\products\litter-robot-4.md`
+- Kategorie: automatische-katzentoiletten
+- Vollständigkeit: 88%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
+
 ### Litter-Robot 5 Pro
 
 - Datei: `src\content\products\litter-robot-5-pro.md`
@@ -150,6 +251,17 @@ Erstellt: 2026-08-15T21:32:20.191Z
   - Empfohlenes Feld fehlt: trinkhöhe
   - Empfohlenes Feld fehlt: wasserfluss
   - Empfohlenes Feld fehlt: ersatzfilter
+
+### PETKIT PuraMax 2
+
+- Datei: `src\content\products\petkit-puramax-2.md`
+- Kategorie: automatische-katzentoiletten
+- Vollständigkeit: 88%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
 
 ### PETLIBRO Dockstream 2 Smart Cordless
 
@@ -176,6 +288,17 @@ Erstellt: 2026-08-15T21:32:20.191Z
 ### PetTec Cam 360
 
 - Datei: `src\content\products\pettec-cam-360.md`
+- Kategorie: haustierkameras
+- Vollständigkeit: 88%
+- Warnungen:
+  - Thumbnail fehlt
+  - Comparison-Bild fehlt
+  - Nur 0 Galerie-Bilder hinterlegt
+  - Affiliate-Link fehlt
+
+### Reolink E1 Zoom (4K)
+
+- Datei: `src\content\products\reolink-e1-zoom.md`
 - Kategorie: haustierkameras
 - Vollständigkeit: 88%
 - Warnungen:

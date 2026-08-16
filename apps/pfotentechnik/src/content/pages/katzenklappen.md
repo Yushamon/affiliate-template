@@ -218,6 +218,8 @@ Batterien, Netzteil, Kabelweg, Hub, Adapter, Tunnelverlängerung, Reinigung und 
 
 Der [Mikrochip-Vergleich](/vergleiche/beste-mikrochip-katzenklappen/) besitzt den herstellerübergreifenden Modellvergleich. [Katzenklappe einbauen](/katzenklappe-einbauen/), [Katze gewöhnen](/katze-an-katzenklappe-gewoehnen/), [mehrere Katzen](/katzenklappe-fuer-mehrere-katzen/) sowie [Zugluft und Wärmedämmung](/katzenklappe-zugluft-und-waermedaemmung/) lösen eigenständige Praxisaufgaben.
 
+Die [Cat Mate Elite 355W](/produkt/cat-mate-elite-355w/) ergänzt dort einen gemeinsamen Offline-Timer. Sie wird nicht mit individuellen Ein- und Ausgangsrechten je Katze gleichgesetzt.
+
 Eine zusätzliche Route „Katzenklappe mit Chip oder App“ entsteht bewusst nicht: Diese Frage ist Teil der grundlegenden Auswahl und gehört diesem Cornerstone. Produktseiten bleiben für konkrete Modelle zuständig.
 
 

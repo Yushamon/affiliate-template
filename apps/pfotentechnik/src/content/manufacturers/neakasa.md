@@ -46,6 +46,6 @@ Die offene Bauform bleibt eine eigene Systementscheidung im [Vergleich automatis
 
 Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
 
-- [Neakasa M1 Lite](/produkt/neakasa-m1-lite/)
 - [Neakasa M1 Plus](/produkt/neakasa-m1-plus/)
+- [Neakasa M1 Plus Lite](/produkt/neakasa-m1-lite/)
 <!-- pt:content-discovery:manufacturer-products:end -->

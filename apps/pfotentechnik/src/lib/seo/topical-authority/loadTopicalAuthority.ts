@@ -11,6 +11,7 @@ import {
   intentOwnershipReason,
   type IntentOwnershipResult,
 } from "./intent-ownership.ts";
+import { buildProductCoverage, type ProductCoverage } from "./product-coverage.ts";
 
 export type DocumentType = "page" | "comparison" | "product" | "manufacturer";
 export type ClusterStatus = "strong" | "developing" | "gap";
@@ -76,6 +77,7 @@ export type Cluster = {
   linkCoverage: number;
   journeyCompletion?: JourneyCompletion;
   intentOwnership?: IntentOwnershipResult;
+  productCoverage?: ProductCoverage;
   gaps: string[];
   nextAction: string;
   documents: Array<{
@@ -792,6 +794,7 @@ function buildCluster(definition: ClusterDefinition): Cluster {
     linkCoverage,
     journeyCompletion,
     intentOwnership,
+    productCoverage: buildProductCoverage(definition.id, counts.products),
     gaps,
     nextAction: definition.strategy,
     documents: members

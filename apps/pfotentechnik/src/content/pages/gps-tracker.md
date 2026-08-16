@@ -230,6 +230,8 @@ Beim Hund helfen klare Herstellergrenzen nach Körpergewicht und Halsbandbreite.
 
 Die passende Geräteauswahl beginnt im [Hundevergleich](/vergleiche/beste-gps-tracker-fuer-hunde/) oder [Katzenvergleich](/vergleiche/beste-gps-tracker-fuer-katzen/). Für kleine Katzen trennt der [Kleinformatvergleich](/vergleiche/kleine-gps-tracker-fuer-katzen/) Geräte- und Gesamtgewicht.
 
+Im Hundevergleich ergänzen [Invoxia Biotracker Edition 2026](/produkt/invoxia-biotracker-2026/) die Gesundheits-/Aktivitätsrolle, [Prothelis area Pets](/produkt/prothelis-area-pets/) zeitplanbare Geofences und [Pawfit 3](/produkt/pawfit-3/) Audio-ID und Warnfunktionen. Keine dieser Rollen ersetzt die Netz-, Tarif- und Befestigungsprüfung.
+
 ## Reichweite und Genauigkeit richtig lesen
 
 „Reichweite“ besteht aus zwei Fragen: Kann der Tracker seine Position bestimmen, und kann er sie übertragen? Freier Himmel hilft dem Satellitenempfang; unterstütztes Mobilfunknetz hilft der App-Verbindung. VHF braucht dagegen Funkkontakt zum Handgerät.
@@ -289,6 +291,12 @@ Technische Grundlagen stammen aus offiziellen Systemquellen; Produktwerte sind a
 - [Bluetooth SIG – Understanding Bluetooth Range](https://www.bluetooth.com/learn-about-bluetooth/key-attributes/range/)
 - Offizielle Produkt- und Supportquellen sind auf jeder [Produktseite](/vergleiche/beste-gps-tracker-fuer-hunde/) verlinkt.
 
+<!-- pt:rola-hybrid:start -->
+## GPS-Tracker mit integrierter Kamera
+
+Kamera-Hybride wie der [Enabot ROLA PetTracker](/produkt/enabot-rola-pettracker/) können Live-Bild und Audio ergänzen. Dafür steigen Gewicht, Gehäusegröße und Energiebedarf; 480p ersetzt keine detailreiche Überwachung und fehlende Nachtsicht begrenzt den Nutzen im Dunkeln. Der Gerätetyp ist deshalb eine Sonderlösung, kein automatisches Upgrade.
+<!-- pt:rola-hybrid:end -->
+
 <!-- pt:content-discovery:category-products:start -->
 ## Weitere Produktseiten im Themenbereich
 
@@ -303,9 +311,3 @@ Diese Modelle gehören ebenfalls zu diesem Themenbereich. In den redaktionellen 
 - [Weenect XS GPS-Tracker](/produkt/weenect-xs/)
 - [Weenect XT GPS-Tracker](/produkt/weenect-xt/)
 <!-- pt:content-discovery:category-products:end -->
-
-<!-- pt:rola-hybrid:start -->
-## GPS-Tracker mit integrierter Kamera
-
-Kamera-Hybride wie der [Enabot ROLA PetTracker](/produkt/enabot-rola-pettracker/) können Live-Bild und Audio ergänzen. Dafür steigen Gewicht, Gehäusegröße und Energiebedarf; 480p ersetzt keine detailreiche Überwachung und fehlende Nachtsicht begrenzt den Nutzen im Dunkeln. Der Gerätetyp ist deshalb eine Sonderlösung, kein automatisches Upgrade.
-<!-- pt:rola-hybrid:end -->

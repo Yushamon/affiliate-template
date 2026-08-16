@@ -203,7 +203,7 @@ Diese Seite beantwortet die vorgelagerte Auswahlfrage: Welche Bauart, Trinkfläc
 
 | Frage | Passender Einstieg |
 |---|---|
-| Welche Modelle passen zu Katzen? | [Sechs Katzenbrunnen im Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/) |
+| Welche Modelle passen zu Katzen? | [Elf Katzenbrunnen im Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/) |
 | Wie viele Trinkorte sind nötig? | [Wasserstellen für Katzen planen](/wie-viele-wasserstellen-katze/) |
 | Was gilt bei zwei oder mehr Katzen? | [Trinkbrunnen im Mehrkatzenhaushalt](/trinkbrunnen-fuer-mehrere-katzen/) |
 | Wie wird der Brunnen hygienisch sauber? | [Katzenbrunnen vollständig reinigen](/katzentrinkbrunnen-richtig-reinigen/) |
@@ -341,6 +341,7 @@ Diese Modelle gehören ebenfalls zu diesem Themenbereich. In den redaktionellen 
 
 - [Cat Mate Pet Fountain 335](/produkt/cat-mate-335-pet-fountain/)
 - [Cat Mate Shell Pet Fountain](/produkt/cat-mate-shell-fountain/)
+- [Catit PIXI Smart-Trinkbrunnen](/produkt/catit-pixi-smart-trinkbrunnen/)
 - [oneisall 2,2L Cordless Cat Fountain](/produkt/oneisall-2-2l-cordless-fountain/)
 - [oneisall 3,2L Cordless Cat Fountain](/produkt/oneisall-3-2l-cordless-fountain/)
 - [oneisall 3,5L Cordless Fountain](/produkt/oneisall-3-5l-cordless-fountain/)
@@ -359,5 +360,6 @@ Diese Modelle gehören ebenfalls zu diesem Themenbereich. In den redaktionellen 
 - [PETLIBRO Dockstream RFID Smart](/produkt/petlibro-dockstream-rfid-smart/)
 - [PETLIBRO Glacier Ultrafiltration Fountain](/produkt/petlibro-glacier-ultrafiltration/)
 - [PETLIBRO Stainless Steel Fountain 3L](/produkt/petlibro-stainless-steel-fountain/)
+- [PetSafe Keramik-Trinkbrunnen Streamside](/produkt/petsafe-streamside-trinkbrunnen/)
 - [Xiaomi Smart Pet Fountain 2](/produkt/xiaomi-smart-pet-fountain-2/)
 <!-- pt:content-discovery:category-products:end -->

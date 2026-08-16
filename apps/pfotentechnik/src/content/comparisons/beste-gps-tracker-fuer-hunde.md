@@ -5,7 +5,7 @@ type: "comparison"
 layout: "comparison"
 description: "GPS-Tracker für Hunde nach Tiergröße, Übertragung, Akku, Abo, Wasserschutz und Einsatzgebiet vergleichen."
 publishedAt: "2026-07-20"
-updatedAt: "2026-08-15"
+updatedAt: "2026-08-16"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
@@ -91,6 +91,57 @@ items:
     overrides: {}
     label: "Kamera-Sonderfall"
     recommendation: "Für Tiere ab 4 kg, wenn Live-Bild und Audio wichtiger sind als geringes Gewicht und lange Laufzeit."
+  - slug: "invoxia-biotracker-2026"
+    type: "product"
+    label: "Gesundheits- und Aktivitätstrends"
+    recommendation: "Für Hundehalter, die GPS mit Aktivitäts-, Schlaf- und Vitalwerttrends verbinden und den Max-GPS-Tarif bewusst wählen."
+    values:
+      einsatzgebiet: "Gesundheits-/Aktivitätstracking plus GPS"
+      hundegroesse: "Passform am Halsband prüfen"
+      ortung: "GPS; 1-Sekunden-Live im Max-GPS-Tarif"
+      abo: "Max GPS für Fernortung und Geofences"
+      gewicht: "37 g"
+      mindestgewicht: "Nicht separat ausgewiesen"
+      kamera: "Nein"
+      nachtsicht: "Nein"
+      akkulaufzeit: "Bis 15 Tage Herstellerwert"
+      geofencing: "Im Max-GPS-Tarif"
+      audio: "Nein"
+      groesse: "Nicht separat ausgewiesen"
+  - slug: "prothelis-area-pets"
+    type: "product"
+    label: "Zeitplanbare Geofences"
+    recommendation: "Deutsche Systemalternative mit variablen Intervallen; GSM/GPRS/EDGE-Unterstützung regional prüfen."
+    values:
+      einsatzgebiet: "Geofence-Zeitpläne und deutsches Systemmodell"
+      hundegroesse: "Befestigung und 38 g prüfen"
+      ortung: "GPS + GLONASS"
+      abo: "Servicepaket für integrierte SIM"
+      gewicht: "38 g"
+      mindestgewicht: "Nicht ausgewiesen"
+      kamera: "Nein"
+      nachtsicht: "Nein"
+      akkulaufzeit: "Bis 8 Tage; bis 30 Tage Standby"
+      geofencing: "Unbegrenzt und zeitplanbar laut Hersteller"
+      audio: "Nein"
+      groesse: "64,3 × 29 × 25,7 mm"
+  - slug: "pawfit-3"
+    type: "product"
+    label: "Audio-ID und Warnfunktionen"
+    recommendation: "Für Hunde über 3,5 kg, wenn Audio-ID, Licht sowie Entfernungs- und Temperaturwarnungen wichtig sind."
+    values:
+      einsatzgebiet: "Audio-ID und Warnfunktionen"
+      hundegroesse: "Hunde über 3,5 kg"
+      ortung: "GPS, WLAN und Bluetooth"
+      abo: "eSIM-Abonnement erforderlich"
+      gewicht: "27 g"
+      mindestgewicht: "3,5 kg"
+      kamera: "Nein"
+      nachtsicht: "Tracking-Licht, keine Kamera"
+      akkulaufzeit: "Bis 8 Tage Herstellerwert"
+      geofencing: "Sicherheitszonen"
+      audio: "Audio-ID und Pawfit Voice"
+      groesse: "ca. 48 × 33 × 14 mm"
 criteria:
   - key: "einsatzgebiet"
     label: "Einsatzgebiet"
@@ -144,7 +195,7 @@ automaticRecommendations:
   enabled: true
 recommendation:
   title: "Der beste Tracker hängt vom Einsatzzweck ab"
-  text: "Tractive DOG 6 eignet sich für die meisten Familienhunde. Kleine Hunde profitieren vom leichteren Weenect XS, große Hunde vom DOG 6 XL und Jagdhunde vom Garmin Alpha T20."
+  text: "Tractive DOG 6 bleibt Alltagsrolle; Weenect XS bedient kleine, DOG 6 XL große Hunde und Garmin VHF-Arbeit. Invoxia ergänzt Gesundheitstrends, Prothelis Zeitpläne, Pawfit Audio-Warnungen und Enabot den Kamera-Sonderfall."
   winnerSlug: "tractive-dog-6"
   alternativeSlug: "weenect-xs"
 tableTitle: "Direkter Vergleich"
@@ -187,6 +238,17 @@ seo:
   priority: 0.8
   changefreq: "monthly"
 canonical: "/vergleiche/beste-gps-tracker-fuer-hunde/"
+decisionJourney:
+  cluster: "gps-tracker"
+  stage: "evaluation"
+  intent: "gps-tracker-fuer-hunde-vergleichen"
+  primaryQuestion: "Welche Ortungs-, Tarif- und Zusatzfunktionsrolle passt zu Hund und Einsatz?"
+  next: ["/produkt/tractive-dog-6/", "/produkt/invoxia-biotracker-2026/", "/produkt/prothelis-area-pets/", "/produkt/pawfit-3/", "/produkt/garmin-alpha-t-20/"]
+  fallback: ["/gps-tracker/"]
+evidenceSources:
+  - { source: "Invoxia Biotracker Edition 2026", url: "https://www.invoxia.com/en-US/petcare/minitailz-dog-tracker", accessedAt: "2026-08-16", assertion: "GPS-, Funk-, Akku- und Gesundheitsfunktionen sind Herstellerangaben.", fields: ["items", "criteria"] }
+  - { source: "Prothelis area Pets", url: "https://www.prothelis.de/de/area-pets/", accessedAt: "2026-08-16", assertion: "Ortung, Geofences und Systemmodell sind Herstellerangaben.", fields: ["items", "criteria"] }
+  - { source: "Pawfit Modellvergleich", url: "https://support.pawfit.com/hc/en-gb/articles/360019893919-What-are-the-differences-between-all-of-the-Pawfit-models", accessedAt: "2026-08-16", assertion: "Gewicht, Akku, Mindestgewicht und Funkprofil sind Herstellerangaben.", fields: ["items", "criteria"] }
 ---
 
 Ein GPS-Tracker verhindert **nicht**, dass ein Hund entläuft. Er hilft lediglich dabei, den Aufenthaltsort schneller zu bestimmen. Die wichtigste Entscheidung ist deshalb nicht die App, sondern das passende Ortungssystem.

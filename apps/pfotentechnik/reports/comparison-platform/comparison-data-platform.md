@@ -1,20 +1,20 @@
 # Comparison Data Platform Audit
 
-Erstellt: 2026-08-15T21:32:21.243Z
+Erstellt: 2026-08-16T09:00:10.423Z
 
 **Status: BESTANDEN**
 
 - Vergleiche: 28 (Mindestbestand 26)
-- Quellabdeckung: 90.4 %
+- Quellabdeckung: 92.1 %
 - öffentlich gerenderte Abdeckung: 100 %
-- alte values-Felder: 725
+- alte values-Felder: 880
 - bewusste Overrides: 220
 
 ## Vergleichsseiten
 
 | Vergleich | Items | Kriterien sichtbar | ausgeblendet | Status |
 |---|---:|---:|---:|---|
-| `beste-automatische-katzentoiletten` | 6 | 14 | 4 | OK |
+| `beste-automatische-katzentoiletten` | 9 | 18 | 0 | OK |
 | `beste-futterautomaten-fuer-berufstaetige` | 3 | 3 | 3 | OK |
 | `beste-futterautomaten-fuer-hunde` | 4 | 10 | 0 | OK |
 | `beste-futterautomaten-fuer-katzen` | 8 | 10 | 0 | OK |
@@ -29,12 +29,12 @@ Erstellt: 2026-08-15T21:32:21.243Z
 | `beste-futterautomaten-mit-kamera` | 4 | 8 | 0 | OK |
 | `beste-futterautomaten-ohne-wlan` | 3 | 4 | 0 | OK |
 | `beste-futterautomaten-unter-100-euro` | 3 | 3 | 5 | OK |
-| `beste-gps-tracker-fuer-hunde` | 7 | 12 | 0 | OK |
+| `beste-gps-tracker-fuer-hunde` | 10 | 12 | 0 | OK |
 | `beste-gps-tracker-fuer-katzen` | 3 | 8 | 0 | OK |
-| `beste-haustierkameras` | 4 | 18 | 0 | OK |
-| `beste-mikrochip-katzenklappen` | 7 | 7 | 0 | OK |
+| `beste-haustierkameras` | 5 | 20 | 0 | OK |
+| `beste-mikrochip-katzenklappen` | 8 | 7 | 0 | OK |
 | `beste-trinkbrunnen-fuer-hunde` | 6 | 7 | 0 | OK |
-| `beste-trinkbrunnen-fuer-katzen` | 9 | 7 | 0 | OK |
+| `beste-trinkbrunnen-fuer-katzen` | 11 | 7 | 0 | OK |
 | `futterautomat-fuer-grosse-hunde` | 3 | 4 | 2 | OK |
 | `futterautomat-gegen-schlingen` | 3 | 3 | 3 | OK |
 | `futterautomat-mit-app` | 5 | 3 | 5 | OK |

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T21:32:21.243Z",
+  "generatedAt": "2026-08-16T09:00:10.423Z",
   "minimumComparisons": 26,
   "thresholds": {
     "minimumVisibleRows": 3,
@@ -8,16 +8,16 @@
   "passed": true,
   "summary": {
     "comparisons": 28,
-    "products": 89,
-    "sourceCells": 1039,
-    "allResolved": 939,
-    "allUnresolved": 100,
-    "sourceCoverage": 90.4,
-    "renderedCells": 888,
-    "renderedResolved": 888,
+    "products": 98,
+    "sourceCells": 1178,
+    "allResolved": 1085,
+    "allUnresolved": 93,
+    "sourceCoverage": 92.1,
+    "renderedCells": 1051,
+    "renderedResolved": 1051,
     "renderedUnresolved": 0,
     "renderedCoverage": 100,
-    "legacyValueCount": 725,
+    "legacyValueCount": 880,
     "overrideCount": 220
   },
   "failures": [],
@@ -25,17 +25,17 @@
     {
       "slug": "beste-automatische-katzentoiletten",
       "file": "src/content/comparisons/beste-automatische-katzentoiletten.md",
-      "items": 6,
+      "items": 9,
       "criteria": 18,
-      "visibleRows": 14,
-      "hiddenRows": 4,
+      "visibleRows": 18,
+      "hiddenRows": 0,
       "passed": true,
       "rows": [
         {
           "key": "bauform",
           "label": "Bauform / Reinigung",
-          "resolved": 6,
-          "total": 6,
+          "resolved": 9,
+          "total": 9,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -66,7 +66,22 @@
             },
             {
               "product": "petsnowy-snow-plus",
-              "value": "Geschlossene Kabine mit gebogenem Weg",
+              "value": "Geschlossene Kabine mit automatischer Siebung",
+              "resolved": true
+            },
+            {
+              "product": "petkit-puramax-2",
+              "value": "Geschlossene 76-l-Siebtrommel",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-4",
+              "value": "Geschlossene rotierende Siebtrommel",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Geschlossene rotierende Siebtrommel",
               "resolved": true
             }
           ]
@@ -74,10 +89,10 @@
         {
           "key": "innenraum",
           "label": "Nutzbarer Innenraum",
-          "resolved": 4,
-          "total": 6,
-          "coverage": 66.7,
-          "visible": false,
+          "resolved": 9,
+          "total": 9,
+          "coverage": 100,
+          "visible": true,
           "cells": [
             {
               "product": "neakasa-m1-lite",
@@ -101,21 +116,36 @@
             },
             {
               "product": "petkit-purobot-max-3",
-              "value": "–",
-              "resolved": false
+              "value": "76 l; Öffnung 267 × 273 mm",
+              "resolved": true
             },
             {
               "product": "petsnowy-snow-plus",
-              "value": "–",
-              "resolved": false
+              "value": "Aktuelle Produktmaße vor Kauf prüfen",
+              "resolved": true
+            },
+            {
+              "product": "petkit-puramax-2",
+              "value": "76 l; Öffnung 200 × 255 mm",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-4",
+              "value": "40 × 40 cm Eingang; großer Innenraum",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Großes geschlossenes System; Maße auf Produktseite",
+              "resolved": true
             }
           ]
         },
         {
           "key": "einstieg",
           "label": "Einstiegshoehe",
-          "resolved": 6,
-          "total": 6,
+          "resolved": 9,
+          "total": 9,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -146,7 +176,22 @@
             },
             {
               "product": "petsnowy-snow-plus",
-              "value": "Nicht belastbar dokumentiert",
+              "value": "Gebogener Ein-/Ausstiegsweg; Maß nicht belastbar ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "petkit-puramax-2",
+              "value": "20 cm",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-4",
+              "value": "30,5 cm vom Boden; optionale Stufe",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Geschlossen; Passform und optionale Stufe prüfen",
               "resolved": true
             }
           ]
@@ -154,8 +199,8 @@
         {
           "key": "katzenprofil",
           "label": "Groesse / Gewicht",
-          "resolved": 6,
-          "total": 6,
+          "resolved": 9,
+          "total": 9,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -181,12 +226,27 @@
             },
             {
               "product": "petkit-purobot-max-3",
-              "value": "1,5-10 kg; 6+ Monate",
+              "value": "1,5-10 kg; ab 6 Monaten",
               "resolved": true
             },
             {
               "product": "petsnowy-snow-plus",
-              "value": "Passform vor Kauf prüfen",
+              "value": "Herstellergrenzen vor Kauf prüfen",
+              "resolved": true
+            },
+            {
+              "product": "petkit-puramax-2",
+              "value": "1,5-10 kg; ab 6 Monaten",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-4",
+              "value": "1,36-11,33 kg; bis zu 4 Katzen",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-5-pro",
+              "value": "ca. 1,36-13,6 kg; bis zu 5 Katzen",
               "resolved": true
             }
           ]
@@ -194,8 +254,8 @@
         {
           "key": "sicherheit",
           "label": "Sicherheitskonzept",
-          "resolved": 6,
-          "total": 6,
+          "resolved": 9,
+          "total": 9,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -221,12 +281,27 @@
             },
             {
               "product": "petkit-purobot-max-3",
-              "value": "12 Sensoren",
+              "value": "12 Sensoren plus mechanisch offene Eingangsstruktur",
               "resolved": true
             },
             {
               "product": "petsnowy-snow-plus",
-              "value": "7 Schutzebenen; Herstellerangabe",
+              "value": "Sieben Schutzebenen; Herstellerclaim",
+              "resolved": true
+            },
+            {
+              "product": "petkit-puramax-2",
+              "value": "11 Sensoren und Anti-Pinch-Struktur; Herstellerangabe",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-4",
+              "value": "Laser- und Gewichtssensoren; Zyklusverzögerung",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Sensor- und Zykluslogik; Herstellerangabe",
               "resolved": true
             }
           ]
@@ -234,10 +309,10 @@
         {
           "key": "mehrkatzen",
           "label": "Mehrkatzenhaushalt",
-          "resolved": 4,
-          "total": 6,
-          "coverage": 66.7,
-          "visible": false,
+          "resolved": 9,
+          "total": 9,
+          "coverage": 100,
+          "visible": true,
           "cells": [
             {
               "product": "neakasa-m1-lite",
@@ -261,21 +336,36 @@
             },
             {
               "product": "petkit-purobot-max-3",
-              "value": "–",
-              "resolved": false
+              "value": "Gewichts- und Nutzungsdaten; keine Kameraidentifikation",
+              "resolved": true
             },
             {
               "product": "petsnowy-snow-plus",
-              "value": "–",
-              "resolved": false
+              "value": "Nutzungsdaten; Individualerkennung nicht belastbar belegt",
+              "resolved": true
+            },
+            {
+              "product": "petkit-puramax-2",
+              "value": "Gewicht und Nutzung; keine Kameraidentifikation",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-4",
+              "value": "Bis zu 4 Katzen; Nutzung und Gewicht in der App",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-5-pro",
+              "value": "WasteID, Gewicht und Besuche; Identifikation teils Whisker+",
+              "resolved": true
             }
           ]
         },
         {
           "key": "streu",
           "label": "Streukompatibilitaet",
-          "resolved": 6,
-          "total": 6,
+          "resolved": 9,
+          "total": 9,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -301,12 +391,27 @@
             },
             {
               "product": "petkit-purobot-max-3",
-              "value": "Klumpende Ton-/Tofu-/Mischstreu",
+              "value": "Klumpende Ton-, Tofu- oder Mischstreu",
               "resolved": true
             },
             {
               "product": "petsnowy-snow-plus",
-              "value": "Kompatibilität vor Kauf anhand aktueller Anleitung prüfen",
+              "value": "Klumpende, siebfähige Streu; Kompatibilität prüfen",
+              "resolved": true
+            },
+            {
+              "product": "petkit-puramax-2",
+              "value": "Klumpende Ton-/Tofu-/Mischstreu innerhalb Partikelgrenzen",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-4",
+              "value": "Klumpend und siebfähig",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Klumpend und siebfähig",
               "resolved": true
             }
           ]
@@ -314,10 +419,10 @@
         {
           "key": "wartung",
           "label": "Wartung / Abfallfach",
-          "resolved": 5,
-          "total": 6,
-          "coverage": 83.3,
-          "visible": false,
+          "resolved": 9,
+          "total": 9,
+          "coverage": 100,
+          "visible": true,
           "cells": [
             {
               "product": "neakasa-m1-lite",
@@ -341,12 +446,27 @@
             },
             {
               "product": "petkit-purobot-max-3",
-              "value": "–",
-              "resolved": false
+              "value": "7-l-Abfallfach; Beutel und Geruchszubehör",
+              "resolved": true
             },
             {
               "product": "petsnowy-snow-plus",
-              "value": "Magnetisch-modularer Aufbau; proprietäre Liner und Deodorizer berücksichtigen",
+              "value": "Geschlossene Kabine und Abfallfach; Verbrauchsmaterial prüfen",
+              "resolved": true
+            },
+            {
+              "product": "petkit-puramax-2",
+              "value": "7-l-Abfallfach; Beutel und Geruchszubehör",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-4",
+              "value": "Versiegelte Schublade; Beutel und Filter",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Geschlossene Abfallschublade; Beutel und Zubehör",
               "resolved": true
             }
           ]
@@ -354,8 +474,8 @@
         {
           "key": "geruch",
           "label": "Geruchskontrolle",
-          "resolved": 6,
-          "total": 6,
+          "resolved": 9,
+          "total": 9,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -386,7 +506,22 @@
             },
             {
               "product": "petsnowy-snow-plus",
-              "value": "TiO₂-System; Prozentwert Herstellerclaim",
+              "value": "Geschlossene Kabine; Herstellerclaim",
+              "resolved": true
+            },
+            {
+              "product": "petkit-puramax-2",
+              "value": "ShieldBase und Zubehör; Herstellerclaims",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-4",
+              "value": "Geschlossene Schublade; optional OdorTrap",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Geschlossene Schublade; externe Reviews stützen Geruchskontrolle",
               "resolved": true
             }
           ]
@@ -394,8 +529,8 @@
         {
           "key": "appdaten",
           "label": "App / Monitoring",
-          "resolved": 6,
-          "total": 6,
+          "resolved": 9,
+          "total": 9,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -421,12 +556,27 @@
             },
             {
               "product": "petkit-purobot-max-3",
-              "value": "Nutzung/Gewicht; keine Diagnose",
+              "value": "Nutzung und Gewicht; keine Diagnose",
               "resolved": true
             },
             {
               "product": "petsnowy-snow-plus",
-              "value": "Hersteller-App; Umfang prüfen",
+              "value": "App-Umfang aktuell prüfen",
+              "resolved": true
+            },
+            {
+              "product": "petkit-puramax-2",
+              "value": "Nutzung und Gewicht; 2,4-GHz-WLAN",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-4",
+              "value": "Nutzung, Gewicht, Streu- und Abfallfüllstand",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Besuche, Gewicht, Dualkamera und WasteID",
               "resolved": true
             }
           ]
@@ -434,8 +584,8 @@
         {
           "key": "folgekosten",
           "label": "Laufende Kosten",
-          "resolved": 6,
-          "total": 6,
+          "resolved": 9,
+          "total": 9,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -461,12 +611,27 @@
             },
             {
               "product": "petkit-purobot-max-3",
-              "value": "Beutel und optional N50/N60",
+              "value": "Beutel, Streu und optional N50/N60",
               "resolved": true
             },
             {
               "product": "petsnowy-snow-plus",
-              "value": "Proprietäre Liner/Deodorizer",
+              "value": "Streu, Beutel und modellbezogenes Zubehör",
+              "resolved": true
+            },
+            {
+              "product": "petkit-puramax-2",
+              "value": "Beutel, Streu, optional N50-Zubehör",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-4",
+              "value": "Beutel, Streu, Filter und optionales Zubehör",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Beutel, Streu, Zubehör und gegebenenfalls Whisker+",
               "resolved": true
             }
           ]
@@ -474,10 +639,10 @@
         {
           "key": "platz",
           "label": "Platzbedarf",
-          "resolved": 4,
-          "total": 6,
-          "coverage": 66.7,
-          "visible": false,
+          "resolved": 9,
+          "total": 9,
+          "coverage": 100,
+          "visible": true,
           "cells": [
             {
               "product": "neakasa-m1-lite",
@@ -501,21 +666,36 @@
             },
             {
               "product": "petkit-purobot-max-3",
-              "value": "–",
-              "resolved": false
+              "value": "620 × 538 × 552 mm; 10 kg",
+              "resolved": true
             },
             {
               "product": "petsnowy-snow-plus",
-              "value": "–",
-              "resolved": false
+              "value": "Große geschlossene Kabine; aktuelle Maße prüfen",
+              "resolved": true
+            },
+            {
+              "product": "petkit-puramax-2",
+              "value": "620 × 538 × 552 mm; 10 kg",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-4",
+              "value": "75 × 56 × 68,6 cm; 10,9 kg",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Großes Premiumsystem; Stellfläche vor Kauf prüfen",
+              "resolved": true
             }
           ]
         },
         {
           "key": "kaufrolle",
           "label": "Eigenständige Kaufrolle",
-          "resolved": 6,
-          "total": 6,
+          "resolved": 9,
+          "total": 9,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -548,14 +728,29 @@
               "product": "petsnowy-snow-plus",
               "value": "Geschlossene Kabine und Anti-Tracking",
               "resolved": true
+            },
+            {
+              "product": "petkit-puramax-2",
+              "value": "PETKIT-Trommel ohne Kamera",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-4",
+              "value": "Whisker-Referenzplattform ohne Kamera",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Dualkamera-Premiumsystem",
+              "resolved": true
             }
           ]
         },
         {
           "key": "bauform_einstieg",
           "label": "Bauform / Einstieg",
-          "resolved": 6,
-          "total": 6,
+          "resolved": 9,
+          "total": 9,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -588,14 +783,29 @@
               "product": "petsnowy-snow-plus",
               "value": "Geschlossen; Maß offen",
               "resolved": true
+            },
+            {
+              "product": "petkit-puramax-2",
+              "value": "Geschlossen; 20 cm",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-4",
+              "value": "Geschlossen; 30,5 cm",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Geschlossen; Passform prüfen",
+              "resolved": true
             }
           ]
         },
         {
           "key": "elektronische_sicherheit",
           "label": "Elektronische Sicherheit",
-          "resolved": 6,
-          "total": 6,
+          "resolved": 9,
+          "total": 9,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -628,14 +838,29 @@
               "product": "petsnowy-snow-plus",
               "value": "7 Schutzebenen; Herstellerclaim",
               "resolved": true
+            },
+            {
+              "product": "petkit-puramax-2",
+              "value": "11 Sensoren; Herstellerangabe",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-4",
+              "value": "Laser- und Gewichtssensoren",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Sensor- und Zykluslogik",
+              "resolved": true
             }
           ]
         },
         {
           "key": "mechanische_sicherheit",
           "label": "Mechanische Sicherheit",
-          "resolved": 6,
-          "total": 6,
+          "resolved": 9,
+          "total": 9,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -668,14 +893,29 @@
               "product": "petsnowy-snow-plus",
               "value": "Nicht separat dokumentiert",
               "resolved": true
+            },
+            {
+              "product": "petkit-puramax-2",
+              "value": "Anti-Pinch-Struktur laut Hersteller",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-4",
+              "value": "Keine separate Offenhaltung dokumentiert",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Keine separate Offenhaltung dokumentiert",
+              "resolved": true
             }
           ]
         },
         {
           "key": "tracking",
           "label": "Streu-Tracking",
-          "resolved": 6,
-          "total": 6,
+          "resolved": 9,
+          "total": 9,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -708,14 +948,29 @@
               "product": "petsnowy-snow-plus",
               "value": "Gebogener Ein-/Ausstiegsweg",
               "resolved": true
+            },
+            {
+              "product": "petkit-puramax-2",
+              "value": "Kein separater Anti-Tracking-Weg",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-4",
+              "value": "Zaun und Stufe; Herstellerangabe",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Zubehör und Eingangsbereich prüfen",
+              "resolved": true
             }
           ]
         },
         {
           "key": "kamera",
           "label": "Kamera / Monitoring",
-          "resolved": 6,
-          "total": 6,
+          "resolved": 9,
+          "total": 9,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -747,6 +1002,21 @@
             {
               "product": "petsnowy-snow-plus",
               "value": "Keine Kamera dokumentiert",
+              "resolved": true
+            },
+            {
+              "product": "petkit-puramax-2",
+              "value": "Keine Kamera",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-4",
+              "value": "Keine integrierte Kamera",
+              "resolved": true
+            },
+            {
+              "product": "litter-robot-5-pro",
+              "value": "Zwei integrierte 1080p-Kameras",
               "resolved": true
             }
           ]
@@ -4040,7 +4310,7 @@
     {
       "slug": "beste-gps-tracker-fuer-hunde",
       "file": "src/content/comparisons/beste-gps-tracker-fuer-hunde.md",
-      "items": 7,
+      "items": 10,
       "criteria": 12,
       "visibleRows": 12,
       "hiddenRows": 0,
@@ -4049,8 +4319,8 @@
         {
           "key": "einsatzgebiet",
           "label": "Einsatzgebiet",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 10,
+          "total": 10,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4088,14 +4358,29 @@
               "product": "enabot-rola-pettracker",
               "value": "Ortung plus Live-Bild",
               "resolved": true
+            },
+            {
+              "product": "invoxia-biotracker-2026",
+              "value": "Gesundheits-/Aktivitätstracking plus GPS",
+              "resolved": true
+            },
+            {
+              "product": "prothelis-area-pets",
+              "value": "Geofence-Zeitpläne und deutsches Systemmodell",
+              "resolved": true
+            },
+            {
+              "product": "pawfit-3",
+              "value": "Audio-ID und Warnfunktionen",
+              "resolved": true
             }
           ]
         },
         {
           "key": "hundegroesse",
           "label": "Geeignete Hundegröße",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 10,
+          "total": 10,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4133,14 +4418,29 @@
               "product": "enabot-rola-pettracker",
               "value": "Ab 4 kg; 70-g-Gerät",
               "resolved": true
+            },
+            {
+              "product": "invoxia-biotracker-2026",
+              "value": "Passform am Halsband prüfen",
+              "resolved": true
+            },
+            {
+              "product": "prothelis-area-pets",
+              "value": "Befestigung und 38 g prüfen",
+              "resolved": true
+            },
+            {
+              "product": "pawfit-3",
+              "value": "Hunde über 3,5 kg",
+              "resolved": true
             }
           ]
         },
         {
           "key": "ortung",
           "label": "Ortungssystem",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 10,
+          "total": 10,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4178,14 +4478,29 @@
               "product": "enabot-rola-pettracker",
               "value": "GPS + AGPS/LBS",
               "resolved": true
+            },
+            {
+              "product": "invoxia-biotracker-2026",
+              "value": "GPS; 1-Sekunden-Live im Max-GPS-Tarif",
+              "resolved": true
+            },
+            {
+              "product": "prothelis-area-pets",
+              "value": "GPS + GLONASS",
+              "resolved": true
+            },
+            {
+              "product": "pawfit-3",
+              "value": "GPS, WLAN und Bluetooth",
+              "resolved": true
             }
           ]
         },
         {
           "key": "abo",
           "label": "Abo erforderlich",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 10,
+          "total": 10,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4223,14 +4538,29 @@
               "product": "enabot-rola-pettracker",
               "value": "Nano-SIM/Mobilfunkdienst; Tarif prüfen",
               "resolved": true
+            },
+            {
+              "product": "invoxia-biotracker-2026",
+              "value": "Max GPS für Fernortung und Geofences",
+              "resolved": true
+            },
+            {
+              "product": "prothelis-area-pets",
+              "value": "Servicepaket für integrierte SIM",
+              "resolved": true
+            },
+            {
+              "product": "pawfit-3",
+              "value": "eSIM-Abonnement erforderlich",
+              "resolved": true
             }
           ]
         },
         {
           "key": "gewicht",
           "label": "Gerätegewicht",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 10,
+          "total": 10,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4268,14 +4598,29 @@
               "product": "enabot-rola-pettracker",
               "value": "70 g",
               "resolved": true
+            },
+            {
+              "product": "invoxia-biotracker-2026",
+              "value": "37 g",
+              "resolved": true
+            },
+            {
+              "product": "prothelis-area-pets",
+              "value": "38 g",
+              "resolved": true
+            },
+            {
+              "product": "pawfit-3",
+              "value": "27 g",
+              "resolved": true
             }
           ]
         },
         {
           "key": "mindestgewicht",
           "label": "Tier-Mindestgewicht",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 10,
+          "total": 10,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4313,14 +4658,29 @@
               "product": "enabot-rola-pettracker",
               "value": "4 kg",
               "resolved": true
+            },
+            {
+              "product": "invoxia-biotracker-2026",
+              "value": "Nicht separat ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "prothelis-area-pets",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "pawfit-3",
+              "value": "3,5 kg",
+              "resolved": true
             }
           ]
         },
         {
           "key": "kamera",
           "label": "Kamera",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 10,
+          "total": 10,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4358,14 +4718,29 @@
               "product": "enabot-rola-pettracker",
               "value": "480p, 89,8°",
               "resolved": true
+            },
+            {
+              "product": "invoxia-biotracker-2026",
+              "value": "Nein",
+              "resolved": true
+            },
+            {
+              "product": "prothelis-area-pets",
+              "value": "Nein",
+              "resolved": true
+            },
+            {
+              "product": "pawfit-3",
+              "value": "Nein",
+              "resolved": true
             }
           ]
         },
         {
           "key": "nachtsicht",
           "label": "Nachtsicht",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 10,
+          "total": 10,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4403,14 +4778,29 @@
               "product": "enabot-rola-pettracker",
               "value": "Nein",
               "resolved": true
+            },
+            {
+              "product": "invoxia-biotracker-2026",
+              "value": "Nein",
+              "resolved": true
+            },
+            {
+              "product": "prothelis-area-pets",
+              "value": "Nein",
+              "resolved": true
+            },
+            {
+              "product": "pawfit-3",
+              "value": "Tracking-Licht, keine Kamera",
+              "resolved": true
             }
           ]
         },
         {
           "key": "akkulaufzeit",
           "label": "Akkulaufzeit",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 10,
+          "total": 10,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4448,14 +4838,29 @@
               "product": "enabot-rola-pettracker",
               "value": "3-5 Tage Herstellerwert",
               "resolved": true
+            },
+            {
+              "product": "invoxia-biotracker-2026",
+              "value": "Bis 15 Tage Herstellerwert",
+              "resolved": true
+            },
+            {
+              "product": "prothelis-area-pets",
+              "value": "Bis 8 Tage; bis 30 Tage Standby",
+              "resolved": true
+            },
+            {
+              "product": "pawfit-3",
+              "value": "Bis 8 Tage Herstellerwert",
+              "resolved": true
             }
           ]
         },
         {
           "key": "geofencing",
           "label": "Geofencing",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 10,
+          "total": 10,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4493,14 +4898,29 @@
               "product": "enabot-rola-pettracker",
               "value": "50-150 m",
               "resolved": true
+            },
+            {
+              "product": "invoxia-biotracker-2026",
+              "value": "Im Max-GPS-Tarif",
+              "resolved": true
+            },
+            {
+              "product": "prothelis-area-pets",
+              "value": "Unbegrenzt und zeitplanbar laut Hersteller",
+              "resolved": true
+            },
+            {
+              "product": "pawfit-3",
+              "value": "Sicherheitszonen",
+              "resolved": true
             }
           ]
         },
         {
           "key": "audio",
           "label": "Audio",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 10,
+          "total": 10,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4538,14 +4958,29 @@
               "product": "enabot-rola-pettracker",
               "value": "Zwei-Wege-Audio",
               "resolved": true
+            },
+            {
+              "product": "invoxia-biotracker-2026",
+              "value": "Nein",
+              "resolved": true
+            },
+            {
+              "product": "prothelis-area-pets",
+              "value": "Nein",
+              "resolved": true
+            },
+            {
+              "product": "pawfit-3",
+              "value": "Audio-ID und Pawfit Voice",
+              "resolved": true
             }
           ]
         },
         {
           "key": "groesse",
           "label": "Abmessungen",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 10,
+          "total": 10,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4582,6 +5017,21 @@
             {
               "product": "enabot-rola-pettracker",
               "value": "62 × 37,5 × 27,1 mm",
+              "resolved": true
+            },
+            {
+              "product": "invoxia-biotracker-2026",
+              "value": "Nicht separat ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "prothelis-area-pets",
+              "value": "64,3 × 29 × 25,7 mm",
+              "resolved": true
+            },
+            {
+              "product": "pawfit-3",
+              "value": "ca. 48 × 33 × 14 mm",
               "resolved": true
             }
           ]
@@ -4802,17 +5252,17 @@
     {
       "slug": "beste-haustierkameras",
       "file": "src/content/comparisons/beste-haustierkameras.md",
-      "items": 4,
-      "criteria": 18,
-      "visibleRows": 18,
+      "items": 5,
+      "criteria": 20,
+      "visibleRows": 20,
       "hiddenRows": 0,
       "passed": true,
       "rows": [
         {
           "key": "klasse",
           "label": "Kameraklasse",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4835,14 +5285,19 @@
               "product": "pettec-cam-360",
               "value": "Stationäre Pan/Tilt-Kamera mit lokaler Option",
               "resolved": true
+            },
+            {
+              "product": "reolink-e1-zoom",
+              "value": "Klassische Indoor-Pan/Tilt-Kamera",
+              "resolved": true
             }
           ]
         },
         {
           "key": "speicher",
           "label": "Speicherung / Cloud",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4865,14 +5320,19 @@
               "product": "pettec-cam-360",
               "value": "microSD lokal; Cloud optional",
               "resolved": true
+            },
+            {
+              "product": "reolink-e1-zoom",
+              "value": "microSD, NVR, Home Hub oder FTP/NAS; Cloud optional",
+              "resolved": true
             }
           ]
         },
         {
           "key": "abo",
           "label": "Abo",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4895,14 +5355,19 @@
               "product": "pettec-cam-360",
               "value": "Kein Pflichtabo; Bezahlfunktionen optional",
               "resolved": true
+            },
+            {
+              "product": "reolink-e1-zoom",
+              "value": "Kein Pflichtabo für lokale Speicherung",
+              "resolved": true
             }
           ]
         },
         {
           "key": "interaktion",
           "label": "Interaktion",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4925,14 +5390,19 @@
               "product": "pettec-cam-360",
               "value": "Zwei-Wege-Audio",
               "resolved": true
+            },
+            {
+              "product": "reolink-e1-zoom",
+              "value": "Zwei-Wege-Audio",
+              "resolved": true
             }
           ]
         },
         {
           "key": "abdeckung",
           "label": "Raumabdeckung",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4955,14 +5425,19 @@
               "product": "pettec-cam-360",
               "value": "Schwenken/Neigen; Hersteller beschreibt 360°",
               "resolved": true
+            },
+            {
+              "product": "reolink-e1-zoom",
+              "value": "355° Pan / 50° Tilt; 3× optischer Zoom",
+              "resolved": true
             }
           ]
         },
         {
           "key": "bild",
           "label": "Bild und Nachtmodus",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -4985,14 +5460,19 @@
               "product": "pettec-cam-360",
               "value": "3 MP; Nachtsicht",
               "resolved": true
+            },
+            {
+              "product": "reolink-e1-zoom",
+              "value": "4K 8 MP; IR-Nachtsicht",
+              "resolved": true
             }
           ]
         },
         {
           "key": "lokale_speicherung",
           "label": "Lokale Speicherung",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -5015,14 +5495,19 @@
               "product": "pettec-cam-360",
               "value": "Ja",
               "resolved": true
+            },
+            {
+              "product": "reolink-e1-zoom",
+              "value": "Ja",
+              "resolved": true
             }
           ]
         },
         {
           "key": "cloud_erforderlich",
           "label": "Cloud erforderlich",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -5045,14 +5530,19 @@
               "product": "pettec-cam-360",
               "value": "Nein für lokale Aufzeichnung",
               "resolved": true
+            },
+            {
+              "product": "reolink-e1-zoom",
+              "value": "Nein für lokale Speicherung",
+              "resolved": true
             }
           ]
         },
         {
           "key": "cloud_optional",
           "label": "Cloud optional",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -5075,14 +5565,19 @@
               "product": "pettec-cam-360",
               "value": "Ja",
               "resolved": true
+            },
+            {
+              "product": "reolink-e1-zoom",
+              "value": "Ja, regional",
+              "resolved": true
             }
           ]
         },
         {
           "key": "pflichtabo",
           "label": "Pflichtabo",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -5105,14 +5600,19 @@
               "product": "pettec-cam-360",
               "value": "Nein",
               "resolved": true
+            },
+            {
+              "product": "reolink-e1-zoom",
+              "value": "Nein",
+              "resolved": true
             }
           ]
         },
         {
           "key": "bezahlfunktionen",
           "label": "Optionale Bezahlfunktionen",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -5135,14 +5635,19 @@
               "product": "pettec-cam-360",
               "value": "Cloud Event Video / Cloud AI optional",
               "resolved": true
+            },
+            {
+              "product": "reolink-e1-zoom",
+              "value": "Optionale Cloud regional prüfen",
+              "resolved": true
             }
           ]
         },
         {
           "key": "kostenlose_grundfunktionen",
           "label": "Kostenlose Grundfunktionen",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -5165,14 +5670,19 @@
               "product": "pettec-cam-360",
               "value": "Livestream, Fotos, Audio",
               "resolved": true
+            },
+            {
+              "product": "reolink-e1-zoom",
+              "value": "Livebild, lokale Erkennung und Speicherung",
+              "resolved": true
             }
           ]
         },
         {
           "key": "microsd",
           "label": "microSD",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -5195,14 +5705,19 @@
               "product": "pettec-cam-360",
               "value": "Ja",
               "resolved": true
+            },
+            {
+              "product": "reolink-e1-zoom",
+              "value": "Bis 512 GB",
+              "resolved": true
             }
           ]
         },
         {
           "key": "aufloesung",
           "label": "Auflösung",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -5225,14 +5740,19 @@
               "product": "pettec-cam-360",
               "value": "3 MP",
               "resolved": true
+            },
+            {
+              "product": "reolink-e1-zoom",
+              "value": "4K 8 MP",
+              "resolved": true
             }
           ]
         },
         {
           "key": "schwenk_neige",
           "label": "Schwenken / Neigen",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -5255,14 +5775,19 @@
               "product": "pettec-cam-360",
               "value": "Ja",
               "resolved": true
+            },
+            {
+              "product": "reolink-e1-zoom",
+              "value": "355° / 50°",
+              "resolved": true
             }
           ]
         },
         {
           "key": "tracking",
           "label": "Tracking",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -5285,14 +5810,19 @@
               "product": "pettec-cam-360",
               "value": "Bewegungsverfolgung",
               "resolved": true
+            },
+            {
+              "product": "reolink-e1-zoom",
+              "value": "Automatische Schwenkverfolgung",
+              "resolved": true
             }
           ]
         },
         {
           "key": "nachtsicht",
           "label": "Nachtsicht",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -5315,14 +5845,19 @@
               "product": "pettec-cam-360",
               "value": "Ja",
               "resolved": true
+            },
+            {
+              "product": "reolink-e1-zoom",
+              "value": "IR bis 12 m",
+              "resolved": true
             }
           ]
         },
         {
           "key": "audio",
           "label": "Zwei-Wege-Audio",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -5345,6 +5880,81 @@
               "product": "pettec-cam-360",
               "value": "Zwei-Wege-Audio",
               "resolved": true
+            },
+            {
+              "product": "reolink-e1-zoom",
+              "value": "Zwei-Wege-Audio",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "tiererkennung",
+          "label": "Tiererkennung",
+          "resolved": 5,
+          "total": 5,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "furbo-mini-360",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-mini",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "pettec-cam-360",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "reolink-e1-zoom",
+              "value": "Lokal laut Hersteller",
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "key": "herstellerdienst",
+          "label": "Herstellerdienst-Abhängigkeit",
+          "resolved": 5,
+          "total": 5,
+          "coverage": 100,
+          "visible": true,
+          "cells": [
+            {
+              "product": "petlibro-scout-smart-camera",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "furbo-mini-360",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "enabot-rola-mini",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "pettec-cam-360",
+              "value": "Nicht ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "reolink-e1-zoom",
+              "value": "Lokaler Betrieb möglich; Fernzugriff konfigurationsabhängig",
+              "resolved": true
             }
           ]
         }
@@ -5353,7 +5963,7 @@
     {
       "slug": "beste-mikrochip-katzenklappen",
       "file": "src/content/comparisons/beste-mikrochip-katzenklappen.md",
-      "items": 7,
+      "items": 8,
       "criteria": 7,
       "visibleRows": 7,
       "hiddenRows": 0,
@@ -5362,8 +5972,8 @@
         {
           "key": "zugang",
           "label": "Zugangslogik",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 8,
+          "total": 8,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -5401,14 +6011,19 @@
               "product": "petwalk-medium-tiertuer",
               "value": "Chip und Bewegung",
               "resolved": true
+            },
+            {
+              "product": "cat-mate-elite-355w",
+              "value": "15-stelliger ISO-Chip; selektiver Eingang",
+              "resolved": true
             }
           ]
         },
         {
           "key": "richtungsrechte",
           "label": "Rechte je Tier",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 8,
+          "total": 8,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -5446,14 +6061,19 @@
               "product": "petwalk-medium-tiertuer",
               "value": "Betriebsmodi",
               "resolved": true
+            },
+            {
+              "product": "cat-mate-elite-355w",
+              "value": "Gemeinsamer Timer und 4-Wege-Sperre",
+              "resolved": true
             }
           ]
         },
         {
           "key": "app",
           "label": "App-Abhängigkeit",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 8,
+          "total": 8,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -5491,14 +6111,19 @@
               "product": "petwalk-medium-tiertuer",
               "value": "Chip und Bewegung",
               "resolved": true
+            },
+            {
+              "product": "cat-mate-elite-355w",
+              "value": "15-stelliger ISO-Chip; selektiver Eingang",
+              "resolved": true
             }
           ]
         },
         {
           "key": "strom",
           "label": "Stromversorgung",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 8,
+          "total": 8,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -5536,14 +6161,19 @@
               "product": "petwalk-medium-tiertuer",
               "value": "24-V-Netz plus Notstrom",
               "resolved": true
+            },
+            {
+              "product": "cat-mate-elite-355w",
+              "value": "4 AA; ca. 9-12 Monate bei einer Katze",
+              "resolved": true
             }
           ]
         },
         {
           "key": "einbau",
           "label": "Einbau",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 8,
+          "total": 8,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -5581,14 +6211,19 @@
               "product": "petwalk-medium-tiertuer",
               "value": "Bauprojekt in Tür, Glas oder Wand",
               "resolved": true
+            },
+            {
+              "product": "cat-mate-elite-355w",
+              "value": "Ausschnitt 178 × 204 mm oder 232 mm rund",
+              "resolved": true
             }
           ]
         },
         {
           "key": "durchgang",
           "label": "Passform",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 8,
+          "total": 8,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -5626,14 +6261,19 @@
               "product": "petwalk-medium-tiertuer",
               "value": "Medium; projektspezifisch",
               "resolved": true
+            },
+            {
+              "product": "cat-mate-elite-355w",
+              "value": "145 × 145 mm",
+              "resolved": true
             }
           ]
         },
         {
           "key": "rolle",
           "label": "Produktrolle",
-          "resolved": 7,
-          "total": 7,
+          "resolved": 8,
+          "total": 8,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -5670,6 +6310,11 @@
             {
               "product": "petwalk-medium-tiertuer",
               "value": "Motorisierte Tiertür",
+              "resolved": true
+            },
+            {
+              "product": "cat-mate-elite-355w",
+              "value": "Lokale Timer-Klappe",
               "resolved": true
             }
           ]
@@ -5970,7 +6615,7 @@
     {
       "slug": "beste-trinkbrunnen-fuer-katzen",
       "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
-      "items": 9,
+      "items": 11,
       "criteria": 7,
       "visibleRows": 7,
       "hiddenRows": 0,
@@ -5979,8 +6624,8 @@
         {
           "key": "reinigung",
           "label": "Reinigung",
-          "resolved": 9,
-          "total": 9,
+          "resolved": 11,
+          "total": 11,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -6028,14 +6673,24 @@
               "product": "petkit-eversweet-3-pro-uvc",
               "value": "vollständig zerlegbar; alle Komponenten von Hand reinigen",
               "resolved": true
+            },
+            {
+              "product": "catit-pixi-smart-trinkbrunnen",
+              "value": "Edelstahleinsatz spülmaschinengeeignet; übrige Teile separat",
+              "resolved": true
+            },
+            {
+              "product": "petsafe-streamside-trinkbrunnen",
+              "value": "Keramikteile oberer Spülmaschinenkorb; Pumpe von Hand",
+              "resolved": true
             }
           ]
         },
         {
           "key": "eignung",
           "label": "Einsatzgebiet",
-          "resolved": 9,
-          "total": 9,
+          "resolved": 11,
+          "total": 11,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -6083,14 +6738,24 @@
               "product": "petkit-eversweet-3-pro-uvc",
               "value": "Nicht in den geprüften Produktdaten ausgewiesen",
               "resolved": true
+            },
+            {
+              "product": "catit-pixi-smart-trinkbrunnen",
+              "value": "Katzen; App-/UVC-Fokus",
+              "resolved": true
+            },
+            {
+              "product": "petsafe-streamside-trinkbrunnen",
+              "value": "Katzen und kleine Hunde; Keramik-Fokus",
+              "resolved": true
             }
           ]
         },
         {
           "key": "material",
           "label": "Material",
-          "resolved": 9,
-          "total": 9,
+          "resolved": 11,
+          "total": 11,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -6138,14 +6803,24 @@
               "product": "petkit-eversweet-3-pro-uvc",
               "value": "BPA-freies ABS, Silikon, Polypropylen und Edelstahl 304",
               "resolved": true
+            },
+            {
+              "product": "catit-pixi-smart-trinkbrunnen",
+              "value": "BPA-freier Kunststoff; Edelstahl-Trinkfläche",
+              "resolved": true
+            },
+            {
+              "product": "petsafe-streamside-trinkbrunnen",
+              "value": "Keramik; offene Trinkschale",
+              "resolved": true
             }
           ]
         },
         {
           "key": "stromversorgung",
           "label": "Stromversorgung",
-          "resolved": 9,
-          "total": 9,
+          "resolved": 11,
+          "total": 11,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -6193,14 +6868,24 @@
               "product": "petkit-eversweet-3-pro-uvc",
               "value": "USB-Stromkabel; Netzteil ist laut aktueller Produktseite nicht enthalten",
               "resolved": true
+            },
+            {
+              "product": "catit-pixi-smart-trinkbrunnen",
+              "value": "Netzbetrieb; 2,4-GHz-WLAN",
+              "resolved": true
+            },
+            {
+              "product": "petsafe-streamside-trinkbrunnen",
+              "value": "Netzbetrieb",
+              "resolved": true
             }
           ]
         },
         {
           "key": "filter",
           "label": "Filter und Folgekosten",
-          "resolved": 9,
-          "total": 9,
+          "resolved": 11,
+          "total": 11,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -6248,14 +6933,24 @@
               "product": "petkit-eversweet-3-pro-uvc",
               "value": "Ionenaustauschfilter",
               "resolved": true
+            },
+            {
+              "product": "catit-pixi-smart-trinkbrunnen",
+              "value": "Dreifachfilter; Wechsel alle 30 Tage laut Hersteller",
+              "resolved": true
+            },
+            {
+              "product": "petsafe-streamside-trinkbrunnen",
+              "value": "Aktivkohle plus Schaum",
+              "resolved": true
             }
           ]
         },
         {
           "key": "lautstaerke",
           "label": "Lautstärke",
-          "resolved": 9,
-          "total": 9,
+          "resolved": 11,
+          "total": 11,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -6303,14 +6998,24 @@
               "product": "petkit-eversweet-3-pro-uvc",
               "value": "Herstellerangabe unter beziehungsweise höchstens 25 dB",
               "resolved": true
+            },
+            {
+              "product": "catit-pixi-smart-trinkbrunnen",
+              "value": "Nicht belastbar ausgewiesen",
+              "resolved": true
+            },
+            {
+              "product": "petsafe-streamside-trinkbrunnen",
+              "value": "Sanftes Blubbern; keine belastbare dB-Angabe",
+              "resolved": true
             }
           ]
         },
         {
           "key": "kapazitaet",
           "label": "Kapazität",
-          "resolved": 9,
-          "total": 9,
+          "resolved": 11,
+          "total": 11,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -6357,6 +7062,16 @@
             {
               "product": "petkit-eversweet-3-pro-uvc",
               "value": "1,6 Liter nutzbar",
+              "resolved": true
+            },
+            {
+              "product": "catit-pixi-smart-trinkbrunnen",
+              "value": "2 Liter",
+              "resolved": true
+            },
+            {
+              "product": "petsafe-streamside-trinkbrunnen",
+              "value": "1,8 Liter",
               "resolved": true
             }
           ]
