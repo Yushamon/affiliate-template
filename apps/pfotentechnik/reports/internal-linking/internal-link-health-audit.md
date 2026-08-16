@@ -1,10 +1,10 @@
 # Internal-Link Health Audit 4.0.1
 
-Erstellt: 2026-08-16T06:22:17.199Z
+Erstellt: 2026-08-16T09:06:54.132Z
 
 ## Zusammenfassung
 
-- Dokumente: 227
+- Dokumente: 240
 - Legacy-Fehler: 0
 - Build-verifizierte Laufzeitfehler: 0
 - Effektive Strict-Fehler: 0

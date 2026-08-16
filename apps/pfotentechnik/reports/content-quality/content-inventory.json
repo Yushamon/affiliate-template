@@ -8,8 +8,8 @@
     "matchedPages": 11
   },
   "summary": {
-    "indexablePages": 237,
-    "totalHtmlPages": 336,
+    "indexablePages": 252,
+    "totalHtmlPages": 360,
     "pageTypes": {
       "category-hub": 5,
       "comparison": 28,
@@ -20,45 +20,45 @@
       "homepage": 1,
       "knowledge-hub": 1,
       "legal": 4,
-      "manufacturer": 26,
+      "manufacturer": 32,
       "manufacturer-index": 1,
       "medical-guide": 12,
       "problem-solving-guide": 17,
-      "product": 89
+      "product": 98
     },
     "clusters": {
-      "automatische-katzentoiletten": 10,
+      "automatische-katzentoiletten": 12,
       "futterautomaten": 82,
-      "gps-tracker": 27,
-      "haustierkameras": 8,
-      "hersteller": 21,
+      "gps-tracker": 32,
+      "haustierkameras": 9,
+      "hersteller": 25,
       "hundeernaehrung": 3,
       "hundegesundheit": 4,
       "katzen-und-hundespezifische-hardware": 1,
       "katzenernaehrung": 1,
       "katzengesundheit": 1,
       "katzenhaltung": 1,
-      "katzenklappen": 13,
+      "katzenklappen": 14,
       "katzenverhalten": 1,
       "smarte-haustiertechnik": 13,
       "tierbeschaeftigung": 1,
       "tierernaehrung": 1,
-      "trinkbrunnen": 49
+      "trinkbrunnen": 51
     },
     "intents": {
-      "brand-navigation": 26,
+      "brand-navigation": 32,
       "category-discovery": 9,
       "commercial-investigation": 34,
       "comparison": 28,
       "informational": 23,
       "medical-information": 14,
       "problem-solving": 14,
-      "product-research": 89
+      "product-research": 98
     },
     "decisions": {
       "CONSOLIDATE": 2,
-      "KEEP": 237,
-      "NOINDEX": 99
+      "KEEP": 252,
+      "NOINDEX": 108
     },
     "errors": 0,
     "warnings": 0,
@@ -88,9 +88,9 @@
         "informational"
       ],
       "mainEntity": "Unabhängige Orientierung für smarte Haustiertechnik",
-      "internalIncomingLinks": 109,
-      "internalOutgoingLinks": 30,
-      "wordCount": 1133,
+      "internalIncomingLinks": 115,
+      "internalOutgoingLinks": 29,
+      "wordCount": 1127,
       "headingCount": 42,
       "headings": [
         "Unabhängige Orientierung für smarte Haustiertechnik",
@@ -129,9 +129,9 @@
         "Für Hunde",
         "Für Katzen",
         "Für Reisen und Betreuung",
-        "Katzenklappen mit App und Beuteerkennung im Vergleich",
+        "Mikrochip-Katzenklappen im Vergleich",
+        "Beste Trinkbrunnen für Katzen",
         "Haustierkameras im Vergleich",
-        "Automatische Katzentoiletten im Vergleich",
         "Für Katzen",
         "Für Hunde",
         "Orientierung"
@@ -302,15 +302,15 @@
         },
         {
           "level": 3,
-          "text": "Katzenklappen mit App und Beuteerkennung im Vergleich"
+          "text": "Mikrochip-Katzenklappen im Vergleich"
+        },
+        {
+          "level": 3,
+          "text": "Beste Trinkbrunnen für Katzen"
         },
         {
           "level": 3,
           "text": "Haustierkameras im Vergleich"
-        },
-        {
-          "level": 3,
-          "text": "Automatische Katzentoiletten im Vergleich"
         },
         {
           "level": 3,
@@ -343,9 +343,8 @@
         "/vergleiche/beste-gps-tracker-fuer-katzen/",
         "/vergleiche/beste-gps-tracker-fuer-hunde/",
         "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
-        "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
-        "/vergleiche/beste-haustierkameras/",
-        "/vergleiche/beste-automatische-katzentoiletten/"
+        "/vergleiche/beste-mikrochip-katzenklappen/",
+        "/vergleiche/beste-haustierkameras/"
       ],
       "searchPerformance": null,
       "searchIntent": {
@@ -1335,8 +1334,8 @@
       "secondaryIntents": [],
       "mainEntity": "Produktpflege",
       "internalIncomingLinks": 0,
-      "internalOutgoingLinks": 89,
-      "wordCount": 7978,
+      "internalOutgoingLinks": 98,
+      "wordCount": 8652,
       "headingCount": 2,
       "headings": [
         "Produktpflege",
@@ -1372,6 +1371,15 @@
         "/produkt/petkit-purobot-max-3/",
         "/produkt/petsnowy-snow-plus/",
         "/produkt/pettec-cam-360/",
+        "/produkt/cat-mate-elite-355w/",
+        "/produkt/catit-pixi-smart-trinkbrunnen/",
+        "/produkt/invoxia-biotracker-2026/",
+        "/produkt/litter-robot-4/",
+        "/produkt/pawfit-3/",
+        "/produkt/petkit-puramax-2/",
+        "/produkt/petsafe-streamside-trinkbrunnen/",
+        "/produkt/prothelis-area-pets/",
+        "/produkt/reolink-e1-zoom/",
         "/produkt/enabot-rola-mini/",
         "/produkt/furbo-mini-360/",
         "/produkt/litter-robot-5-pro/",
@@ -1384,17 +1392,17 @@
         "/produkt/petkit-eversweet-5-mini/",
         "/produkt/petkit-eversweet-max-2-uvc/",
         "/produkt/petkit-eversweet-max-cordless/",
-        "/produkt/petlibro-air-wifi-feeder/",
         "/produkt/petkit-fresh-element-infinity/",
+        "/produkt/petlibro-air-wifi-feeder/",
         "/produkt/petlibro-dockstream-rfid-smart/",
         "/produkt/petlibro-glacier-ultrafiltration/",
         "/produkt/wopet-cube-air-ca10/",
         "/produkt/wopet-heritage-view-camera-feeder/",
         "/produkt/wopet-patrol-f07-pro/",
         "/produkt/wopet-pioneer-f01-plus/",
+        "/produkt/petlibro-one-rfid-smart-feeder/",
         "/produkt/petlibro-polar-wet-food-feeder/",
         "/produkt/catit-pixi-vision-smart-feeder/",
-        "/produkt/petlibro-one-rfid-smart-feeder/",
         "/produkt/petsafe-freshfeed-refrigerated-feeder/",
         "/produkt/petsafe-smart-feed-2/",
         "/produkt/sureflap-mikrochip-katzenklappe/",
@@ -1410,6 +1418,7 @@
         "/produkt/petlibro-granary-wifi-feeder/",
         "/produkt/surefeed-microchip-pet-feeder/",
         "/produkt/xiaomi-smart-pet-fountain-2/",
+        "/produkt/enabot-rola-pettracker/",
         "/produkt/aqara-smart-pet-feeder-c1/",
         "/produkt/cat-mate-c200/",
         "/produkt/cat-mate-c300/",
@@ -1417,7 +1426,6 @@
         "/produkt/cat-mate-335-pet-fountain/",
         "/produkt/catit-pixi-smart-6-meal-feeder/",
         "/produkt/devoko-90l-automatisches-katzenklo/",
-        "/produkt/enabot-rola-pettracker/",
         "/produkt/furbo-360-hundekamera/",
         "/produkt/garmin-alpha-t-20/",
         "/produkt/honeyguardian-a68/",
@@ -1500,7 +1508,7 @@
       "headingCount": 2,
       "headings": [
         "Seiten-Workspaces",
-        "89 Workspaces"
+        "98 Workspaces"
       ],
       "structuredData": [],
       "expectedComparisonCount": 0,
@@ -1524,7 +1532,7 @@
         },
         {
           "level": 2,
-          "text": "89 Workspaces"
+          "text": "98 Workspaces"
         }
       ],
       "recommendationTypes": [],
@@ -2086,6 +2094,113 @@
       }
     },
     {
+      "sourceFile": "apps/pfotentechnik/dist/admin/seo/products/cat-mate-elite-355w/index.html",
+      "pageType": "technical",
+      "title": "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer | PfotenTechnik SEO",
+      "h1": "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer",
+      "h1Count": 1,
+      "metaDescription": "",
+      "canonicalRoute": "/",
+      "indexable": false,
+      "inSitemap": false,
+      "cluster": "smarte-haustiertechnik",
+      "secondaryIntents": [],
+      "mainEntity": "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer",
+      "internalIncomingLinks": 0,
+      "internalOutgoingLinks": 1,
+      "wordCount": 205,
+      "headingCount": 9,
+      "headings": [
+        "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer",
+        "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer",
+        "Findings und AI Actions",
+        "Seiteninhalt",
+        "Indexierung und Struktur",
+        "Entscheidungsweg",
+        "Vertrauen und Nachweise",
+        "UX, CSS und Performance",
+        "0 vorhandene Dateien"
+      ],
+      "structuredData": [],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/admin/seo/products/cat-mate-elite-355w/",
+      "collection": "static",
+      "metaTitle": "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer | PfotenTechnik SEO",
+      "canonical": "",
+      "publishedAt": "",
+      "updatedAt": "",
+      "author": "",
+      "animal": "cat",
+      "productCategory": "",
+      "audience": "cat",
+      "character": "informational",
+      "linkDepth": null,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer"
+        },
+        {
+          "level": 2,
+          "text": "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer"
+        },
+        {
+          "level": 2,
+          "text": "Findings und AI Actions"
+        },
+        {
+          "level": 3,
+          "text": "Seiteninhalt"
+        },
+        {
+          "level": 3,
+          "text": "Indexierung und Struktur"
+        },
+        {
+          "level": 3,
+          "text": "Entscheidungsweg"
+        },
+        {
+          "level": 3,
+          "text": "Vertrauen und Nachweise"
+        },
+        {
+          "level": 3,
+          "text": "UX, CSS und Performance"
+        },
+        {
+          "level": 3,
+          "text": "0 vorhandene Dateien"
+        }
+      ],
+      "recommendationTypes": [],
+      "relatedProducts": [
+        "/produkt/cat-mate-elite-355w/"
+      ],
+      "relatedComparisons": [],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "informational",
+        "secondary": [],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/admin/seo/products/cat-mate-elite-355w/",
+        "route": "/admin/seo/products/cat-mate-elite-355w/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 57,
+        "signals": [
+          "clear-title-h1",
+          "structured-headings",
+          "substantive-content"
+        ]
+      }
+    },
+    {
       "sourceFile": "apps/pfotentechnik/dist/admin/seo/products/cat-mate-shell-fountain/index.html",
       "pageType": "technical",
       "title": "Cat Mate Shell Pet Fountain | PfotenTechnik SEO",
@@ -2288,6 +2403,113 @@
       "topicOwner": {
         "id": "route:/admin/seo/products/catit-pixi-smart-6-meal-feeder/",
         "route": "/admin/seo/products/catit-pixi-smart-6-meal-feeder/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 57,
+        "signals": [
+          "clear-title-h1",
+          "structured-headings",
+          "substantive-content"
+        ]
+      }
+    },
+    {
+      "sourceFile": "apps/pfotentechnik/dist/admin/seo/products/catit-pixi-smart-trinkbrunnen/index.html",
+      "pageType": "technical",
+      "title": "Catit PIXI Smart-Trinkbrunnen | PfotenTechnik SEO",
+      "h1": "Catit PIXI Smart-Trinkbrunnen",
+      "h1Count": 1,
+      "metaDescription": "",
+      "canonicalRoute": "/",
+      "indexable": false,
+      "inSitemap": false,
+      "cluster": "trinkbrunnen",
+      "secondaryIntents": [],
+      "mainEntity": "Catit PIXI Smart-Trinkbrunnen",
+      "internalIncomingLinks": 0,
+      "internalOutgoingLinks": 1,
+      "wordCount": 193,
+      "headingCount": 9,
+      "headings": [
+        "Catit PIXI Smart-Trinkbrunnen",
+        "Catit PIXI Smart-Trinkbrunnen",
+        "Findings und AI Actions",
+        "Seiteninhalt",
+        "Indexierung und Struktur",
+        "Entscheidungsweg",
+        "Vertrauen und Nachweise",
+        "UX, CSS und Performance",
+        "0 vorhandene Dateien"
+      ],
+      "structuredData": [],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/admin/seo/products/catit-pixi-smart-trinkbrunnen/",
+      "collection": "static",
+      "metaTitle": "Catit PIXI Smart-Trinkbrunnen | PfotenTechnik SEO",
+      "canonical": "",
+      "publishedAt": "",
+      "updatedAt": "",
+      "author": "",
+      "animal": "",
+      "productCategory": "trinkbrunnen",
+      "audience": "pet-owners",
+      "character": "informational",
+      "linkDepth": null,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Catit PIXI Smart-Trinkbrunnen"
+        },
+        {
+          "level": 2,
+          "text": "Catit PIXI Smart-Trinkbrunnen"
+        },
+        {
+          "level": 2,
+          "text": "Findings und AI Actions"
+        },
+        {
+          "level": 3,
+          "text": "Seiteninhalt"
+        },
+        {
+          "level": 3,
+          "text": "Indexierung und Struktur"
+        },
+        {
+          "level": 3,
+          "text": "Entscheidungsweg"
+        },
+        {
+          "level": 3,
+          "text": "Vertrauen und Nachweise"
+        },
+        {
+          "level": 3,
+          "text": "UX, CSS und Performance"
+        },
+        {
+          "level": 3,
+          "text": "0 vorhandene Dateien"
+        }
+      ],
+      "recommendationTypes": [],
+      "relatedProducts": [
+        "/produkt/catit-pixi-smart-trinkbrunnen/"
+      ],
+      "relatedComparisons": [],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "informational",
+        "secondary": [],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/admin/seo/products/catit-pixi-smart-trinkbrunnen/",
+        "route": "/admin/seo/products/catit-pixi-smart-trinkbrunnen/",
         "explicit": false
       },
       "quality": {
@@ -3691,6 +3913,220 @@
       }
     },
     {
+      "sourceFile": "apps/pfotentechnik/dist/admin/seo/products/invoxia-biotracker-2026/index.html",
+      "pageType": "technical",
+      "title": "Invoxia Biotracker Edition 2026 | PfotenTechnik SEO",
+      "h1": "Invoxia Biotracker Edition 2026",
+      "h1Count": 1,
+      "metaDescription": "",
+      "canonicalRoute": "/",
+      "indexable": false,
+      "inSitemap": false,
+      "cluster": "gps-tracker",
+      "secondaryIntents": [],
+      "mainEntity": "Invoxia Biotracker Edition 2026",
+      "internalIncomingLinks": 0,
+      "internalOutgoingLinks": 1,
+      "wordCount": 193,
+      "headingCount": 9,
+      "headings": [
+        "Invoxia Biotracker Edition 2026",
+        "Invoxia Biotracker Edition 2026",
+        "Findings und AI Actions",
+        "Seiteninhalt",
+        "Indexierung und Struktur",
+        "Entscheidungsweg",
+        "Vertrauen und Nachweise",
+        "UX, CSS und Performance",
+        "0 vorhandene Dateien"
+      ],
+      "structuredData": [],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/admin/seo/products/invoxia-biotracker-2026/",
+      "collection": "static",
+      "metaTitle": "Invoxia Biotracker Edition 2026 | PfotenTechnik SEO",
+      "canonical": "",
+      "publishedAt": "",
+      "updatedAt": "",
+      "author": "",
+      "animal": "dog",
+      "productCategory": "gps-tracker",
+      "audience": "dog",
+      "character": "informational",
+      "linkDepth": null,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Invoxia Biotracker Edition 2026"
+        },
+        {
+          "level": 2,
+          "text": "Invoxia Biotracker Edition 2026"
+        },
+        {
+          "level": 2,
+          "text": "Findings und AI Actions"
+        },
+        {
+          "level": 3,
+          "text": "Seiteninhalt"
+        },
+        {
+          "level": 3,
+          "text": "Indexierung und Struktur"
+        },
+        {
+          "level": 3,
+          "text": "Entscheidungsweg"
+        },
+        {
+          "level": 3,
+          "text": "Vertrauen und Nachweise"
+        },
+        {
+          "level": 3,
+          "text": "UX, CSS und Performance"
+        },
+        {
+          "level": 3,
+          "text": "0 vorhandene Dateien"
+        }
+      ],
+      "recommendationTypes": [],
+      "relatedProducts": [
+        "/produkt/invoxia-biotracker-2026/"
+      ],
+      "relatedComparisons": [],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "informational",
+        "secondary": [],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/admin/seo/products/invoxia-biotracker-2026/",
+        "route": "/admin/seo/products/invoxia-biotracker-2026/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 57,
+        "signals": [
+          "clear-title-h1",
+          "structured-headings",
+          "substantive-content"
+        ]
+      }
+    },
+    {
+      "sourceFile": "apps/pfotentechnik/dist/admin/seo/products/litter-robot-4/index.html",
+      "pageType": "technical",
+      "title": "Litter-Robot 4 | PfotenTechnik SEO",
+      "h1": "Litter-Robot 4",
+      "h1Count": 1,
+      "metaDescription": "",
+      "canonicalRoute": "/",
+      "indexable": false,
+      "inSitemap": false,
+      "cluster": "smarte-haustiertechnik",
+      "secondaryIntents": [],
+      "mainEntity": "Litter-Robot 4",
+      "internalIncomingLinks": 0,
+      "internalOutgoingLinks": 1,
+      "wordCount": 192,
+      "headingCount": 9,
+      "headings": [
+        "Litter-Robot 4",
+        "Litter-Robot 4",
+        "Findings und AI Actions",
+        "Seiteninhalt",
+        "Indexierung und Struktur",
+        "Entscheidungsweg",
+        "Vertrauen und Nachweise",
+        "UX, CSS und Performance",
+        "0 vorhandene Dateien"
+      ],
+      "structuredData": [],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/admin/seo/products/litter-robot-4/",
+      "collection": "static",
+      "metaTitle": "Litter-Robot 4 | PfotenTechnik SEO",
+      "canonical": "",
+      "publishedAt": "",
+      "updatedAt": "",
+      "author": "",
+      "animal": "cat",
+      "productCategory": "",
+      "audience": "cat",
+      "character": "informational",
+      "linkDepth": null,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Litter-Robot 4"
+        },
+        {
+          "level": 2,
+          "text": "Litter-Robot 4"
+        },
+        {
+          "level": 2,
+          "text": "Findings und AI Actions"
+        },
+        {
+          "level": 3,
+          "text": "Seiteninhalt"
+        },
+        {
+          "level": 3,
+          "text": "Indexierung und Struktur"
+        },
+        {
+          "level": 3,
+          "text": "Entscheidungsweg"
+        },
+        {
+          "level": 3,
+          "text": "Vertrauen und Nachweise"
+        },
+        {
+          "level": 3,
+          "text": "UX, CSS und Performance"
+        },
+        {
+          "level": 3,
+          "text": "0 vorhandene Dateien"
+        }
+      ],
+      "recommendationTypes": [],
+      "relatedProducts": [
+        "/produkt/litter-robot-4/"
+      ],
+      "relatedComparisons": [],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "informational",
+        "secondary": [],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/admin/seo/products/litter-robot-4/",
+        "route": "/admin/seo/products/litter-robot-4/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 57,
+        "signals": [
+          "clear-title-h1",
+          "structured-headings",
+          "substantive-content"
+        ]
+      }
+    },
+    {
       "sourceFile": "apps/pfotentechnik/dist/admin/seo/products/litter-robot-5-pro/index.html",
       "pageType": "technical",
       "title": "Litter-Robot 5 Pro | PfotenTechnik SEO",
@@ -4975,6 +5411,113 @@
       }
     },
     {
+      "sourceFile": "apps/pfotentechnik/dist/admin/seo/products/pawfit-3/index.html",
+      "pageType": "technical",
+      "title": "Pawfit 3 | PfotenTechnik SEO",
+      "h1": "Pawfit 3",
+      "h1Count": 1,
+      "metaDescription": "",
+      "canonicalRoute": "/",
+      "indexable": false,
+      "inSitemap": false,
+      "cluster": "smarte-haustiertechnik",
+      "secondaryIntents": [],
+      "mainEntity": "Pawfit 3",
+      "internalIncomingLinks": 0,
+      "internalOutgoingLinks": 1,
+      "wordCount": 188,
+      "headingCount": 9,
+      "headings": [
+        "Pawfit 3",
+        "Pawfit 3",
+        "Findings und AI Actions",
+        "Seiteninhalt",
+        "Indexierung und Struktur",
+        "Entscheidungsweg",
+        "Vertrauen und Nachweise",
+        "UX, CSS und Performance",
+        "0 vorhandene Dateien"
+      ],
+      "structuredData": [],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/admin/seo/products/pawfit-3/",
+      "collection": "static",
+      "metaTitle": "Pawfit 3 | PfotenTechnik SEO",
+      "canonical": "",
+      "publishedAt": "",
+      "updatedAt": "",
+      "author": "",
+      "animal": "dog",
+      "productCategory": "",
+      "audience": "dog",
+      "character": "informational",
+      "linkDepth": null,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Pawfit 3"
+        },
+        {
+          "level": 2,
+          "text": "Pawfit 3"
+        },
+        {
+          "level": 2,
+          "text": "Findings und AI Actions"
+        },
+        {
+          "level": 3,
+          "text": "Seiteninhalt"
+        },
+        {
+          "level": 3,
+          "text": "Indexierung und Struktur"
+        },
+        {
+          "level": 3,
+          "text": "Entscheidungsweg"
+        },
+        {
+          "level": 3,
+          "text": "Vertrauen und Nachweise"
+        },
+        {
+          "level": 3,
+          "text": "UX, CSS und Performance"
+        },
+        {
+          "level": 3,
+          "text": "0 vorhandene Dateien"
+        }
+      ],
+      "recommendationTypes": [],
+      "relatedProducts": [
+        "/produkt/pawfit-3/"
+      ],
+      "relatedComparisons": [],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "informational",
+        "secondary": [],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/admin/seo/products/pawfit-3/",
+        "route": "/admin/seo/products/pawfit-3/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 57,
+        "signals": [
+          "clear-title-h1",
+          "structured-headings",
+          "substantive-content"
+        ]
+      }
+    },
+    {
       "sourceFile": "apps/pfotentechnik/dist/admin/seo/products/pawsync-smart-pet-feeder/index.html",
       "pageType": "technical",
       "title": "PawSync Smart Pet Feeder | PfotenTechnik SEO",
@@ -6033,6 +6576,113 @@
       "topicOwner": {
         "id": "route:/admin/seo/products/petkit-fresh-element-solo/",
         "route": "/admin/seo/products/petkit-fresh-element-solo/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 57,
+        "signals": [
+          "clear-title-h1",
+          "structured-headings",
+          "substantive-content"
+        ]
+      }
+    },
+    {
+      "sourceFile": "apps/pfotentechnik/dist/admin/seo/products/petkit-puramax-2/index.html",
+      "pageType": "technical",
+      "title": "PETKIT PuraMax 2 | PfotenTechnik SEO",
+      "h1": "PETKIT PuraMax 2",
+      "h1Count": 1,
+      "metaDescription": "",
+      "canonicalRoute": "/",
+      "indexable": false,
+      "inSitemap": false,
+      "cluster": "smarte-haustiertechnik",
+      "secondaryIntents": [],
+      "mainEntity": "PETKIT PuraMax 2",
+      "internalIncomingLinks": 0,
+      "internalOutgoingLinks": 1,
+      "wordCount": 194,
+      "headingCount": 9,
+      "headings": [
+        "PETKIT PuraMax 2",
+        "PETKIT PuraMax 2",
+        "Findings und AI Actions",
+        "Seiteninhalt",
+        "Indexierung und Struktur",
+        "Entscheidungsweg",
+        "Vertrauen und Nachweise",
+        "UX, CSS und Performance",
+        "0 vorhandene Dateien"
+      ],
+      "structuredData": [],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/admin/seo/products/petkit-puramax-2/",
+      "collection": "static",
+      "metaTitle": "PETKIT PuraMax 2 | PfotenTechnik SEO",
+      "canonical": "",
+      "publishedAt": "",
+      "updatedAt": "",
+      "author": "",
+      "animal": "cat",
+      "productCategory": "",
+      "audience": "cat",
+      "character": "informational",
+      "linkDepth": null,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "PETKIT PuraMax 2"
+        },
+        {
+          "level": 2,
+          "text": "PETKIT PuraMax 2"
+        },
+        {
+          "level": 2,
+          "text": "Findings und AI Actions"
+        },
+        {
+          "level": 3,
+          "text": "Seiteninhalt"
+        },
+        {
+          "level": 3,
+          "text": "Indexierung und Struktur"
+        },
+        {
+          "level": 3,
+          "text": "Entscheidungsweg"
+        },
+        {
+          "level": 3,
+          "text": "Vertrauen und Nachweise"
+        },
+        {
+          "level": 3,
+          "text": "UX, CSS und Performance"
+        },
+        {
+          "level": 3,
+          "text": "0 vorhandene Dateien"
+        }
+      ],
+      "recommendationTypes": [],
+      "relatedProducts": [
+        "/produkt/petkit-puramax-2/"
+      ],
+      "relatedComparisons": [],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "informational",
+        "secondary": [],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/admin/seo/products/petkit-puramax-2/",
+        "route": "/admin/seo/products/petkit-puramax-2/",
         "explicit": false
       },
       "quality": {
@@ -8934,6 +9584,113 @@
       }
     },
     {
+      "sourceFile": "apps/pfotentechnik/dist/admin/seo/products/petsafe-streamside-trinkbrunnen/index.html",
+      "pageType": "technical",
+      "title": "PetSafe Keramik-Trinkbrunnen Streamside | PfotenTechnik SEO",
+      "h1": "PetSafe Keramik-Trinkbrunnen Streamside",
+      "h1Count": 1,
+      "metaDescription": "",
+      "canonicalRoute": "/",
+      "indexable": false,
+      "inSitemap": false,
+      "cluster": "trinkbrunnen",
+      "secondaryIntents": [],
+      "mainEntity": "PetSafe Keramik-Trinkbrunnen Streamside",
+      "internalIncomingLinks": 0,
+      "internalOutgoingLinks": 1,
+      "wordCount": 192,
+      "headingCount": 9,
+      "headings": [
+        "PetSafe Keramik-Trinkbrunnen Streamside",
+        "PetSafe Keramik-Trinkbrunnen Streamside",
+        "Findings und AI Actions",
+        "Seiteninhalt",
+        "Indexierung und Struktur",
+        "Entscheidungsweg",
+        "Vertrauen und Nachweise",
+        "UX, CSS und Performance",
+        "0 vorhandene Dateien"
+      ],
+      "structuredData": [],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/admin/seo/products/petsafe-streamside-trinkbrunnen/",
+      "collection": "static",
+      "metaTitle": "PetSafe Keramik-Trinkbrunnen Streamside | PfotenTechnik SEO",
+      "canonical": "",
+      "publishedAt": "",
+      "updatedAt": "",
+      "author": "",
+      "animal": "both",
+      "productCategory": "trinkbrunnen",
+      "audience": "both",
+      "character": "informational",
+      "linkDepth": null,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "PetSafe Keramik-Trinkbrunnen Streamside"
+        },
+        {
+          "level": 2,
+          "text": "PetSafe Keramik-Trinkbrunnen Streamside"
+        },
+        {
+          "level": 2,
+          "text": "Findings und AI Actions"
+        },
+        {
+          "level": 3,
+          "text": "Seiteninhalt"
+        },
+        {
+          "level": 3,
+          "text": "Indexierung und Struktur"
+        },
+        {
+          "level": 3,
+          "text": "Entscheidungsweg"
+        },
+        {
+          "level": 3,
+          "text": "Vertrauen und Nachweise"
+        },
+        {
+          "level": 3,
+          "text": "UX, CSS und Performance"
+        },
+        {
+          "level": 3,
+          "text": "0 vorhandene Dateien"
+        }
+      ],
+      "recommendationTypes": [],
+      "relatedProducts": [
+        "/produkt/petsafe-streamside-trinkbrunnen/"
+      ],
+      "relatedComparisons": [],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "informational",
+        "secondary": [],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/admin/seo/products/petsafe-streamside-trinkbrunnen/",
+        "route": "/admin/seo/products/petsafe-streamside-trinkbrunnen/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 57,
+        "signals": [
+          "clear-title-h1",
+          "structured-headings",
+          "substantive-content"
+        ]
+      }
+    },
+    {
       "sourceFile": "apps/pfotentechnik/dist/admin/seo/products/petsnowy-snow-plus/index.html",
       "pageType": "technical",
       "title": "PetSnowy SNOW+ (SNOW) | PfotenTechnik SEO",
@@ -9243,6 +10000,220 @@
       "topicOwner": {
         "id": "route:/admin/seo/products/petwalk-medium-tiertuer/",
         "route": "/admin/seo/products/petwalk-medium-tiertuer/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 57,
+        "signals": [
+          "clear-title-h1",
+          "structured-headings",
+          "substantive-content"
+        ]
+      }
+    },
+    {
+      "sourceFile": "apps/pfotentechnik/dist/admin/seo/products/prothelis-area-pets/index.html",
+      "pageType": "technical",
+      "title": "Prothelis area Pets | PfotenTechnik SEO",
+      "h1": "Prothelis area Pets",
+      "h1Count": 1,
+      "metaDescription": "",
+      "canonicalRoute": "/",
+      "indexable": false,
+      "inSitemap": false,
+      "cluster": "smarte-haustiertechnik",
+      "secondaryIntents": [],
+      "mainEntity": "Prothelis area Pets",
+      "internalIncomingLinks": 0,
+      "internalOutgoingLinks": 1,
+      "wordCount": 190,
+      "headingCount": 9,
+      "headings": [
+        "Prothelis area Pets",
+        "Prothelis area Pets",
+        "Findings und AI Actions",
+        "Seiteninhalt",
+        "Indexierung und Struktur",
+        "Entscheidungsweg",
+        "Vertrauen und Nachweise",
+        "UX, CSS und Performance",
+        "0 vorhandene Dateien"
+      ],
+      "structuredData": [],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/admin/seo/products/prothelis-area-pets/",
+      "collection": "static",
+      "metaTitle": "Prothelis area Pets | PfotenTechnik SEO",
+      "canonical": "",
+      "publishedAt": "",
+      "updatedAt": "",
+      "author": "",
+      "animal": "",
+      "productCategory": "",
+      "audience": "pet-owners",
+      "character": "informational",
+      "linkDepth": null,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Prothelis area Pets"
+        },
+        {
+          "level": 2,
+          "text": "Prothelis area Pets"
+        },
+        {
+          "level": 2,
+          "text": "Findings und AI Actions"
+        },
+        {
+          "level": 3,
+          "text": "Seiteninhalt"
+        },
+        {
+          "level": 3,
+          "text": "Indexierung und Struktur"
+        },
+        {
+          "level": 3,
+          "text": "Entscheidungsweg"
+        },
+        {
+          "level": 3,
+          "text": "Vertrauen und Nachweise"
+        },
+        {
+          "level": 3,
+          "text": "UX, CSS und Performance"
+        },
+        {
+          "level": 3,
+          "text": "0 vorhandene Dateien"
+        }
+      ],
+      "recommendationTypes": [],
+      "relatedProducts": [
+        "/produkt/prothelis-area-pets/"
+      ],
+      "relatedComparisons": [],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "informational",
+        "secondary": [],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/admin/seo/products/prothelis-area-pets/",
+        "route": "/admin/seo/products/prothelis-area-pets/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 57,
+        "signals": [
+          "clear-title-h1",
+          "structured-headings",
+          "substantive-content"
+        ]
+      }
+    },
+    {
+      "sourceFile": "apps/pfotentechnik/dist/admin/seo/products/reolink-e1-zoom/index.html",
+      "pageType": "technical",
+      "title": "Reolink E1 Zoom (4K) | PfotenTechnik SEO",
+      "h1": "Reolink E1 Zoom (4K)",
+      "h1Count": 1,
+      "metaDescription": "",
+      "canonicalRoute": "/",
+      "indexable": false,
+      "inSitemap": false,
+      "cluster": "smarte-haustiertechnik",
+      "secondaryIntents": [],
+      "mainEntity": "Reolink E1 Zoom (4K)",
+      "internalIncomingLinks": 0,
+      "internalOutgoingLinks": 1,
+      "wordCount": 196,
+      "headingCount": 9,
+      "headings": [
+        "Reolink E1 Zoom (4K)",
+        "Reolink E1 Zoom (4K)",
+        "Findings und AI Actions",
+        "Seiteninhalt",
+        "Indexierung und Struktur",
+        "Entscheidungsweg",
+        "Vertrauen und Nachweise",
+        "UX, CSS und Performance",
+        "0 vorhandene Dateien"
+      ],
+      "structuredData": [],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/admin/seo/products/reolink-e1-zoom/",
+      "collection": "static",
+      "metaTitle": "Reolink E1 Zoom (4K) | PfotenTechnik SEO",
+      "canonical": "",
+      "publishedAt": "",
+      "updatedAt": "",
+      "author": "",
+      "animal": "",
+      "productCategory": "",
+      "audience": "pet-owners",
+      "character": "informational",
+      "linkDepth": null,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Reolink E1 Zoom (4K)"
+        },
+        {
+          "level": 2,
+          "text": "Reolink E1 Zoom (4K)"
+        },
+        {
+          "level": 2,
+          "text": "Findings und AI Actions"
+        },
+        {
+          "level": 3,
+          "text": "Seiteninhalt"
+        },
+        {
+          "level": 3,
+          "text": "Indexierung und Struktur"
+        },
+        {
+          "level": 3,
+          "text": "Entscheidungsweg"
+        },
+        {
+          "level": 3,
+          "text": "Vertrauen und Nachweise"
+        },
+        {
+          "level": 3,
+          "text": "UX, CSS und Performance"
+        },
+        {
+          "level": 3,
+          "text": "0 vorhandene Dateien"
+        }
+      ],
+      "recommendationTypes": [],
+      "relatedProducts": [
+        "/produkt/reolink-e1-zoom/"
+      ],
+      "relatedComparisons": [],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "informational",
+        "secondary": [],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/admin/seo/products/reolink-e1-zoom/",
+        "route": "/admin/seo/products/reolink-e1-zoom/",
         "explicit": false
       },
       "quality": {
@@ -11642,7 +12613,7 @@
       "cluster": "smarte-haustiertechnik",
       "secondaryIntents": [],
       "mainEntity": "Affiliate-Hinweis",
-      "internalIncomingLinks": 120,
+      "internalIncomingLinks": 129,
       "internalOutgoingLinks": 2,
       "wordCount": 364,
       "headingCount": 8,
@@ -11749,10 +12720,10 @@
       "cluster": "automatische-katzentoiletten",
       "secondaryIntents": [],
       "mainEntity": "Automatische Katzentoiletten sicher auswählen",
-      "internalIncomingLinks": 26,
-      "internalOutgoingLinks": 14,
-      "wordCount": 983,
-      "headingCount": 26,
+      "internalIncomingLinks": 27,
+      "internalOutgoingLinks": 19,
+      "wordCount": 1069,
+      "headingCount": 27,
       "headings": [
         "Automatische Katzentoiletten sicher auswählen",
         "Das Wichtigste in Kürze",
@@ -11770,6 +12741,7 @@
         "Wann ist eine automatische Toilette keine gute Wahl?",
         "Nächste Entscheidung",
         "Eingang, Sicherheitsprinzip und Streuaustrag getrennt prüfen",
+        "Weitere Produktseiten im Themenbereich",
         "Was ist jetzt sinnvoll?",
         "Deine nächsten Schritte",
         "Das könnte dich auch interessieren",
@@ -11795,7 +12767,7 @@
       "metaTitle": "Automatische Katzentoiletten: Sicherheit & Kaufcheck",
       "canonical": "https://pfotentechnik.de/automatische-katzentoiletten/",
       "publishedAt": "2026-08-06",
-      "updatedAt": "2026-08-15",
+      "updatedAt": "2026-08-16",
       "author": "PfotenTechnik Redaktion",
       "animal": "cat",
       "productCategory": "",
@@ -11869,6 +12841,10 @@
         },
         {
           "level": 2,
+          "text": "Weitere Produktseiten im Themenbereich"
+        },
+        {
+          "level": 2,
           "text": "Was ist jetzt sinnvoll?"
         },
         {
@@ -11913,12 +12889,16 @@
         "alternatives"
       ],
       "relatedProducts": [
-        "/produkt/neakasa-m1-lite/",
-        "/produkt/devoko-90l-automatisches-katzenklo/",
-        "/produkt/petlibro-luma-smart-litter-box/",
-        "/produkt/petkit-purobot-max-pro-2/",
         "/produkt/petkit-purobot-max-3/",
         "/produkt/petsnowy-snow-plus/",
+        "/produkt/neakasa-m1-lite/",
+        "/produkt/petkit-puramax-2/",
+        "/produkt/litter-robot-4/",
+        "/produkt/litter-robot-5-pro/",
+        "/produkt/devoko-90l-automatisches-katzenklo/",
+        "/produkt/neakasa-m1-plus/",
+        "/produkt/petkit-purobot-max-pro-2/",
+        "/produkt/petlibro-luma-smart-litter-box/",
         "/produkt/surefeed-microchip-pet-feeder-connect/"
       ],
       "relatedComparisons": [
@@ -12538,7 +13518,7 @@
         "problem-solving"
       ],
       "mainEntity": "Katzenbrunnen-Filter wechseln: Intervalle und Warnzeichen",
-      "internalIncomingLinks": 24,
+      "internalIncomingLinks": 25,
       "internalOutgoingLinks": 15,
       "wordCount": 796,
       "headingCount": 23,
@@ -14691,7 +15671,7 @@
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "Futterautomaten für Katzen",
-      "internalIncomingLinks": 39,
+      "internalIncomingLinks": 40,
       "internalOutgoingLinks": 16,
       "wordCount": 904,
       "headingCount": 25,
@@ -17217,9 +18197,9 @@
         "informational"
       ],
       "mainEntity": "GPS-Tracker für Hunde und Katzen",
-      "internalIncomingLinks": 47,
-      "internalOutgoingLinks": 34,
-      "wordCount": 1968,
+      "internalIncomingLinks": 51,
+      "internalOutgoingLinks": 37,
+      "wordCount": 1999,
       "headingCount": 42,
       "headings": [
         "GPS-Tracker für Hunde und Katzen",
@@ -17242,8 +18222,8 @@
         "Wenn das Tier entläuft",
         "Datenschutz",
         "Quellen",
-        "Weitere Produktseiten im Themenbereich",
         "GPS-Tracker mit integrierter Kamera",
+        "Weitere Produktseiten im Themenbereich",
         "Was ist jetzt sinnvoll?",
         "Deine nächsten Schritte",
         "Häufige Fragen",
@@ -17372,11 +18352,11 @@
         },
         {
           "level": 2,
-          "text": "Weitere Produktseiten im Themenbereich"
+          "text": "GPS-Tracker mit integrierter Kamera"
         },
         {
           "level": 2,
-          "text": "GPS-Tracker mit integrierter Kamera"
+          "text": "Weitere Produktseiten im Themenbereich"
         },
         {
           "level": 2,
@@ -17463,6 +18443,10 @@
         "top-recommendation"
       ],
       "relatedProducts": [
+        "/produkt/invoxia-biotracker-2026/",
+        "/produkt/prothelis-area-pets/",
+        "/produkt/pawfit-3/",
+        "/produkt/enabot-rola-pettracker/",
         "/produkt/garmin-alpha-t-20/",
         "/produkt/garmin-alpha-tt-25/",
         "/produkt/paj-pet-finder-4g-mini/",
@@ -17471,7 +18455,6 @@
         "/produkt/tractive-dog-6-xl/",
         "/produkt/weenect-xs/",
         "/produkt/weenect-xt/",
-        "/produkt/enabot-rola-pettracker/",
         "/produkt/petlibro-polar-wet-food-feeder/"
       ],
       "relatedComparisons": [
@@ -17526,9 +18509,9 @@
       "secondaryIntents": [],
       "mainEntity": "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten",
       "internalIncomingLinks": 13,
-      "internalOutgoingLinks": 12,
-      "wordCount": 1307,
-      "headingCount": 32,
+      "internalOutgoingLinks": 16,
+      "wordCount": 1381,
+      "headingCount": 33,
       "headings": [
         "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten",
         "Das Wichtigste in Kürze",
@@ -17547,6 +18530,7 @@
         "Typische Fehlkäufe",
         "Grenzen der Technik",
         "Lokale Speicherung oder Cloud?",
+        "Weitere Produktseiten im Themenbereich",
         "Was ist jetzt sinnvoll?",
         "Deine nächsten Schritte",
         "Häufige Fragen",
@@ -17580,7 +18564,7 @@
       "metaTitle": "Haustierkameras: Datenschutz, Abo & Kaufberatung",
       "canonical": "https://pfotentechnik.de/haustierkameras/",
       "publishedAt": "2026-08-06",
-      "updatedAt": "2026-08-15",
+      "updatedAt": "2026-08-16",
       "author": "PfotenTechnik Redaktion",
       "animal": "",
       "productCategory": "",
@@ -17658,6 +18642,10 @@
         },
         {
           "level": 2,
+          "text": "Weitere Produktseiten im Themenbereich"
+        },
+        {
+          "level": 2,
           "text": "Was ist jetzt sinnvoll?"
         },
         {
@@ -17725,6 +18713,9 @@
         "/produkt/furbo-mini-360/",
         "/produkt/enabot-rola-mini/",
         "/produkt/pettec-cam-360/",
+        "/produkt/reolink-e1-zoom/",
+        "/produkt/enabot-ebo-air-2/",
+        "/produkt/furbo-360-hundekamera/",
         "/produkt/surefeed-microchip-pet-feeder-connect/"
       ],
       "relatedComparisons": [
@@ -17773,10 +18764,10 @@
         "informational"
       ],
       "mainEntity": "Welcher Hersteller passt zu dir?",
-      "internalIncomingLinks": 29,
-      "internalOutgoingLinks": 19,
-      "wordCount": 306,
-      "headingCount": 20,
+      "internalIncomingLinks": 35,
+      "internalOutgoingLinks": 25,
+      "wordCount": 362,
+      "headingCount": 26,
       "headings": [
         "Welcher Hersteller passt zu dir?",
         "PETLIBRO",
@@ -17795,8 +18786,14 @@
         "oneisall",
         "OnlyCat",
         "petWALK",
+        "Invoxia",
+        "Prothelis",
+        "Pawfit",
+        "Reolink",
         "IMIPAW",
+        "PetSnowy",
         "ZeroMOUSE",
+        "PetTec",
         "PAWBBY"
       ],
       "structuredData": [
@@ -17891,11 +18888,35 @@
         },
         {
           "level": 2,
+          "text": "Invoxia"
+        },
+        {
+          "level": 2,
+          "text": "Prothelis"
+        },
+        {
+          "level": 2,
+          "text": "Pawfit"
+        },
+        {
+          "level": 2,
+          "text": "Reolink"
+        },
+        {
+          "level": 2,
           "text": "IMIPAW"
         },
         {
           "level": 2,
+          "text": "PetSnowy"
+        },
+        {
+          "level": 2,
           "text": "ZeroMOUSE"
+        },
+        {
+          "level": 2,
+          "text": "PetTec"
         },
         {
           "level": 2,
@@ -18154,9 +19175,9 @@
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "Cat Mate",
-      "internalIncomingLinks": 24,
+      "internalIncomingLinks": 25,
       "internalOutgoingLinks": 18,
-      "wordCount": 1060,
+      "wordCount": 1087,
       "headingCount": 38,
       "headings": [
         "Cat Mate",
@@ -18195,8 +19216,8 @@
         "Smarte Futterautomaten für Hunde und Katzen",
         "Xiaomi",
         "SureFeed",
-        "Catit PIXI Vision Smart Feeder",
-        "PetSafe Smart Feed 2.0"
+        "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer",
+        "Catit PIXI Vision Smart Feeder"
       ],
       "structuredData": [
         "Organization",
@@ -18215,7 +19236,7 @@
       "metaTitle": "Cat Mate Erfahrungen: Produkte, Bewertung und Empfehlungen",
       "canonical": "https://pfotentechnik.de/hersteller/cat-mate/",
       "publishedAt": "2026-07-12",
-      "updatedAt": "2026-07-19",
+      "updatedAt": "2026-08-16",
       "author": "Cat Mate",
       "animal": "both",
       "productCategory": "",
@@ -18369,11 +19390,11 @@
         },
         {
           "level": 3,
-          "text": "Catit PIXI Vision Smart Feeder"
+          "text": "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer"
         },
         {
           "level": 3,
-          "text": "PetSafe Smart Feed 2.0"
+          "text": "Catit PIXI Vision Smart Feeder"
         }
       ],
       "recommendationTypes": [],
@@ -18383,8 +19404,8 @@
         "/produkt/cat-mate-shell-fountain/",
         "/produkt/cat-mate-c200/",
         "/produkt/cat-mate-335-pet-fountain/",
-        "/produkt/catit-pixi-vision-smart-feeder/",
-        "/produkt/petsafe-smart-feed-2/"
+        "/produkt/cat-mate-elite-355w/",
+        "/produkt/catit-pixi-vision-smart-feeder/"
       ],
       "relatedComparisons": [
         "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/"
@@ -18428,9 +19449,9 @@
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Catit",
-      "internalIncomingLinks": 9,
+      "internalIncomingLinks": 10,
       "internalOutgoingLinks": 11,
-      "wordCount": 614,
+      "wordCount": 639,
       "headingCount": 28,
       "headings": [
         "Catit",
@@ -18455,12 +19476,12 @@
         "Vergleich zum Wettbewerb",
         "PETLIBRO",
         "PETKIT",
-        "Beste Futterautomaten für Katzen",
+        "Beste Trinkbrunnen für Katzen",
         "Futterautomaten für Katzen",
         "PETLIBRO",
         "PetSafe",
-        "PETKIT Eversweet Max 2 UVC",
-        "PETKIT Eversweet 5 Mini"
+        "Catit PIXI Smart-Trinkbrunnen",
+        "PETKIT Eversweet Max 2 UVC"
       ],
       "structuredData": [
         "Organization",
@@ -18479,7 +19500,7 @@
       "metaTitle": "Catit Erfahrungen: Futterautomaten und Trinkbrunnen",
       "canonical": "https://pfotentechnik.de/hersteller/catit/",
       "publishedAt": "2026-07-25",
-      "updatedAt": "2026-07-25",
+      "updatedAt": "2026-08-16",
       "author": "Catit",
       "animal": "cat",
       "productCategory": "trinkbrunnen",
@@ -18577,7 +19598,7 @@
         },
         {
           "level": 3,
-          "text": "Beste Futterautomaten für Katzen"
+          "text": "Beste Trinkbrunnen für Katzen"
         },
         {
           "level": 3,
@@ -18593,22 +19614,22 @@
         },
         {
           "level": 3,
-          "text": "PETKIT Eversweet Max 2 UVC"
+          "text": "Catit PIXI Smart-Trinkbrunnen"
         },
         {
           "level": 3,
-          "text": "PETKIT Eversweet 5 Mini"
+          "text": "PETKIT Eversweet Max 2 UVC"
         }
       ],
       "recommendationTypes": [],
       "relatedProducts": [
         "/produkt/catit-pixi-smart-6-meal-feeder/",
         "/produkt/catit-pixi-vision-smart-feeder/",
-        "/produkt/petkit-eversweet-max-2-uvc/",
-        "/produkt/petkit-eversweet-5-mini/"
+        "/produkt/catit-pixi-smart-trinkbrunnen/",
+        "/produkt/petkit-eversweet-max-2-uvc/"
       ],
       "relatedComparisons": [
-        "/vergleiche/beste-futterautomaten-fuer-katzen/"
+        "/vergleiche/beste-trinkbrunnen-fuer-katzen/"
       ],
       "searchPerformance": null,
       "searchIntent": {
@@ -18866,9 +19887,9 @@
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "Enabot",
-      "internalIncomingLinks": 5,
-      "internalOutgoingLinks": 13,
-      "wordCount": 449,
+      "internalIncomingLinks": 6,
+      "internalOutgoingLinks": 14,
+      "wordCount": 441,
       "headingCount": 27,
       "headings": [
         "Enabot",
@@ -18892,12 +19913,12 @@
         "Vergleich zum Wettbewerb",
         "PETLIBRO",
         "Furbo",
-        "Automatische Katzentoiletten im Vergleich",
+        "Beste Futterautomaten für Nassfutter",
         "Smarte Haustiertechnik – Der große Ratgeber",
-        "Furbo",
+        "PetTec",
+        "Reolink",
         "Haustierkameras im Vergleich",
-        "Enabot ROLA PetTracker",
-        "Haustierkameras"
+        "Enabot ROLA PetTracker"
       ],
       "structuredData": [
         "Organization",
@@ -19007,7 +20028,7 @@
         },
         {
           "level": 3,
-          "text": "Automatische Katzentoiletten im Vergleich"
+          "text": "Beste Futterautomaten für Nassfutter"
         },
         {
           "level": 3,
@@ -19015,7 +20036,11 @@
         },
         {
           "level": 3,
-          "text": "Furbo"
+          "text": "PetTec"
+        },
+        {
+          "level": 3,
+          "text": "Reolink"
         },
         {
           "level": 3,
@@ -19024,10 +20049,6 @@
         {
           "level": 3,
           "text": "Enabot ROLA PetTracker"
-        },
-        {
-          "level": 3,
-          "text": "Haustierkameras"
         }
       ],
       "recommendationTypes": [],
@@ -19037,7 +20058,7 @@
         "/produkt/enabot-rola-pettracker/"
       ],
       "relatedComparisons": [
-        "/vergleiche/beste-automatische-katzentoiletten/",
+        "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
         "/vergleiche/beste-haustierkameras/"
       ],
       "searchPerformance": null,
@@ -19078,9 +20099,9 @@
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "Furbo",
-      "internalIncomingLinks": 4,
-      "internalOutgoingLinks": 12,
-      "wordCount": 412,
+      "internalIncomingLinks": 7,
+      "internalOutgoingLinks": 13,
+      "wordCount": 409,
       "headingCount": 27,
       "headings": [
         "Furbo",
@@ -19106,10 +20127,10 @@
         "Enabot",
         "Haustierkameras im Vergleich",
         "Smarte Futterautomaten für Hunde und Katzen",
-        "Enabot",
+        "PetTec",
+        "Reolink",
         "Haustierkameras im Vergleich",
-        "Haustierkameras",
-        "Weenect"
+        "Haustierkameras"
       ],
       "structuredData": [
         "Organization",
@@ -19227,7 +20248,11 @@
         },
         {
           "level": 3,
-          "text": "Enabot"
+          "text": "PetTec"
+        },
+        {
+          "level": 3,
+          "text": "Reolink"
         },
         {
           "level": 3,
@@ -19236,10 +20261,6 @@
         {
           "level": 3,
           "text": "Haustierkameras"
-        },
-        {
-          "level": 3,
-          "text": "Weenect"
         }
       ],
       "recommendationTypes": [],
@@ -20050,6 +21071,230 @@
       }
     },
     {
+      "sourceFile": "apps/pfotentechnik/src/content/manufacturers/invoxia.md",
+      "pageType": "manufacturer",
+      "title": "Invoxia Petcare: Biotracker, GPS und Tarife",
+      "h1": "Invoxia",
+      "h1Count": 1,
+      "metaDescription": "Invoxia Biotracker Edition 2026 nach GPS, LTE-M, Akku, Tarif und Gesundheitstrends eingeordnet.",
+      "canonicalRoute": "/hersteller/invoxia/",
+      "indexable": true,
+      "inSitemap": true,
+      "cluster": "gps-tracker",
+      "secondaryIntents": [],
+      "mainEntity": "Invoxia",
+      "internalIncomingLinks": 5,
+      "internalOutgoingLinks": 12,
+      "wordCount": 443,
+      "headingCount": 29,
+      "headings": [
+        "Invoxia",
+        "Für wen passt Invoxia?",
+        "Was solltest du berücksichtigen?",
+        "Welche Modelle sind besonders interessant?",
+        "Invoxia Modelle im Überblick",
+        "Stärken und Schwächen",
+        "App, Ersatzteile und Service im Überblick",
+        "Welche Hersteller solltest du vergleichen?",
+        "Marke sinnvoll einordnen",
+        "Das könnte dich auch interessieren",
+        "Häufige Fragen",
+        "Invoxia Biotracker Edition 2026",
+        "Stärken",
+        "Schwächen",
+        "Unternehmen",
+        "App-Ökosystem",
+        "Ersatzteile",
+        "Filterversorgung",
+        "Garantie",
+        "Vergleich zum Wettbewerb",
+        "Tractive",
+        "Weenect",
+        "Pawfit",
+        "Beste GPS-Tracker für Hunde",
+        "Trockenfutter oder Nassfutter für Hunde: Was ist besser?",
+        "Pawfit",
+        "Prothelis",
+        "Invoxia Biotracker Edition 2026",
+        "Garmin Alpha TT 25"
+      ],
+      "structuredData": [
+        "Organization",
+        "Article",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "FAQPage",
+        "Question",
+        "Answer"
+      ],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/hersteller/invoxia/",
+      "collection": "manufacturers",
+      "metaTitle": "Invoxia Petcare: Biotracker, GPS und Tarife",
+      "canonical": "https://pfotentechnik.de/hersteller/invoxia/",
+      "publishedAt": "2026-08-16",
+      "updatedAt": "2026-08-16",
+      "author": "PfotenTechnik Redaktion",
+      "animal": "dog",
+      "productCategory": "gps-tracker",
+      "audience": "dog",
+      "character": "commercial",
+      "linkDepth": 2,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Invoxia"
+        },
+        {
+          "level": 2,
+          "text": "Für wen passt Invoxia?"
+        },
+        {
+          "level": 2,
+          "text": "Was solltest du berücksichtigen?"
+        },
+        {
+          "level": 2,
+          "text": "Welche Modelle sind besonders interessant?"
+        },
+        {
+          "level": 2,
+          "text": "Invoxia Modelle im Überblick"
+        },
+        {
+          "level": 2,
+          "text": "Stärken und Schwächen"
+        },
+        {
+          "level": 2,
+          "text": "App, Ersatzteile und Service im Überblick"
+        },
+        {
+          "level": 2,
+          "text": "Welche Hersteller solltest du vergleichen?"
+        },
+        {
+          "level": 2,
+          "text": "Marke sinnvoll einordnen"
+        },
+        {
+          "level": 2,
+          "text": "Das könnte dich auch interessieren"
+        },
+        {
+          "level": 2,
+          "text": "Häufige Fragen"
+        },
+        {
+          "level": 3,
+          "text": "Invoxia Biotracker Edition 2026"
+        },
+        {
+          "level": 3,
+          "text": "Stärken"
+        },
+        {
+          "level": 3,
+          "text": "Schwächen"
+        },
+        {
+          "level": 3,
+          "text": "Unternehmen"
+        },
+        {
+          "level": 3,
+          "text": "App-Ökosystem"
+        },
+        {
+          "level": 3,
+          "text": "Ersatzteile"
+        },
+        {
+          "level": 3,
+          "text": "Filterversorgung"
+        },
+        {
+          "level": 3,
+          "text": "Garantie"
+        },
+        {
+          "level": 3,
+          "text": "Vergleich zum Wettbewerb"
+        },
+        {
+          "level": 3,
+          "text": "Tractive"
+        },
+        {
+          "level": 3,
+          "text": "Weenect"
+        },
+        {
+          "level": 3,
+          "text": "Pawfit"
+        },
+        {
+          "level": 3,
+          "text": "Beste GPS-Tracker für Hunde"
+        },
+        {
+          "level": 3,
+          "text": "Trockenfutter oder Nassfutter für Hunde: Was ist besser?"
+        },
+        {
+          "level": 3,
+          "text": "Pawfit"
+        },
+        {
+          "level": 3,
+          "text": "Prothelis"
+        },
+        {
+          "level": 3,
+          "text": "Invoxia Biotracker Edition 2026"
+        },
+        {
+          "level": 3,
+          "text": "Garmin Alpha TT 25"
+        }
+      ],
+      "recommendationTypes": [],
+      "relatedProducts": [
+        "/produkt/invoxia-biotracker-2026/",
+        "/produkt/garmin-alpha-tt-25/"
+      ],
+      "relatedComparisons": [
+        "/vergleiche/beste-gps-tracker-fuer-hunde/"
+      ],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "brand-navigation",
+        "secondary": [],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/hersteller/invoxia/",
+        "route": "/hersteller/invoxia/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 95,
+        "signals": [
+          "clear-title-h1",
+          "meta-description",
+          "structured-headings",
+          "substantive-content",
+          "internal-context",
+          "structured-data",
+          "faq",
+          "decision-support"
+        ]
+      }
+    },
+    {
       "sourceFile": "apps/pfotentechnik/src/content/manufacturers/neakasa.md",
       "pageType": "manufacturer",
       "title": "Neakasa: Erfahrungen und Produkte",
@@ -20062,7 +21307,7 @@
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "Neakasa",
-      "internalIncomingLinks": 6,
+      "internalIncomingLinks": 7,
       "internalOutgoingLinks": 11,
       "wordCount": 483,
       "headingCount": 28,
@@ -20772,9 +22017,9 @@
       "cluster": "gps-tracker",
       "secondaryIntents": [],
       "mainEntity": "PAJ GPS",
-      "internalIncomingLinks": 9,
+      "internalIncomingLinks": 10,
       "internalOutgoingLinks": 13,
-      "wordCount": 859,
+      "wordCount": 844,
       "headingCount": 34,
       "headings": [
         "PAJ GPS",
@@ -20809,8 +22054,8 @@
         "GPS-Tracker für Hunde und Katzen",
         "Weenect",
         "Tractive",
-        "Garmin Alpha TT 25",
-        "Tractive CAT 6 Mini"
+        "Prothelis area Pets",
+        "Pawfit 3"
       ],
       "structuredData": [
         "Organization",
@@ -20967,11 +22212,11 @@
         },
         {
           "level": 3,
-          "text": "Garmin Alpha TT 25"
+          "text": "Prothelis area Pets"
         },
         {
           "level": 3,
-          "text": "Tractive CAT 6 Mini"
+          "text": "Pawfit 3"
         }
       ],
       "recommendationTypes": [
@@ -20979,8 +22224,8 @@
       ],
       "relatedProducts": [
         "/produkt/paj-pet-finder-4g-mini/",
-        "/produkt/garmin-alpha-tt-25/",
-        "/produkt/tractive-cat-6-mini/"
+        "/produkt/prothelis-area-pets/",
+        "/produkt/pawfit-3/"
       ],
       "relatedComparisons": [
         "/vergleiche/beste-gps-tracker-fuer-katzen/"
@@ -21263,6 +22508,230 @@
       }
     },
     {
+      "sourceFile": "apps/pfotentechnik/src/content/manufacturers/pawfit.md",
+      "pageType": "manufacturer",
+      "title": "Pawfit: GPS, Audio-ID und Abo",
+      "h1": "Pawfit",
+      "h1Count": 1,
+      "metaDescription": "Pawfit 3 nach Gewicht, GPS, 4G, Akku, Audio-ID, Regionen und Abo eingeordnet.",
+      "canonicalRoute": "/hersteller/pawfit/",
+      "indexable": true,
+      "inSitemap": true,
+      "cluster": "gps-tracker",
+      "secondaryIntents": [],
+      "mainEntity": "Pawfit",
+      "internalIncomingLinks": 5,
+      "internalOutgoingLinks": 12,
+      "wordCount": 430,
+      "headingCount": 29,
+      "headings": [
+        "Pawfit",
+        "Für wen passt Pawfit?",
+        "Was solltest du berücksichtigen?",
+        "Welche Modelle sind besonders interessant?",
+        "Pawfit Modelle im Überblick",
+        "Stärken und Schwächen",
+        "App, Ersatzteile und Service im Überblick",
+        "Welche Hersteller solltest du vergleichen?",
+        "Marke sinnvoll einordnen",
+        "Das könnte dich auch interessieren",
+        "Häufige Fragen",
+        "Pawfit 3",
+        "Stärken",
+        "Schwächen",
+        "Unternehmen",
+        "App-Ökosystem",
+        "Ersatzteile",
+        "Filterversorgung",
+        "Garantie",
+        "Vergleich zum Wettbewerb",
+        "Tractive",
+        "Weenect",
+        "Invoxia",
+        "Beste GPS-Tracker für Hunde",
+        "Trockenfutter oder Nassfutter für Hunde: Was ist besser?",
+        "Prothelis",
+        "Invoxia",
+        "Pawfit 3",
+        "Garmin Alpha TT 25"
+      ],
+      "structuredData": [
+        "Organization",
+        "Article",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "FAQPage",
+        "Question",
+        "Answer"
+      ],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/hersteller/pawfit/",
+      "collection": "manufacturers",
+      "metaTitle": "Pawfit: GPS, Audio-ID und Abo",
+      "canonical": "https://pfotentechnik.de/hersteller/pawfit/",
+      "publishedAt": "2026-08-16",
+      "updatedAt": "2026-08-16",
+      "author": "PfotenTechnik Redaktion",
+      "animal": "dog",
+      "productCategory": "gps-tracker",
+      "audience": "dog",
+      "character": "commercial",
+      "linkDepth": 2,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Pawfit"
+        },
+        {
+          "level": 2,
+          "text": "Für wen passt Pawfit?"
+        },
+        {
+          "level": 2,
+          "text": "Was solltest du berücksichtigen?"
+        },
+        {
+          "level": 2,
+          "text": "Welche Modelle sind besonders interessant?"
+        },
+        {
+          "level": 2,
+          "text": "Pawfit Modelle im Überblick"
+        },
+        {
+          "level": 2,
+          "text": "Stärken und Schwächen"
+        },
+        {
+          "level": 2,
+          "text": "App, Ersatzteile und Service im Überblick"
+        },
+        {
+          "level": 2,
+          "text": "Welche Hersteller solltest du vergleichen?"
+        },
+        {
+          "level": 2,
+          "text": "Marke sinnvoll einordnen"
+        },
+        {
+          "level": 2,
+          "text": "Das könnte dich auch interessieren"
+        },
+        {
+          "level": 2,
+          "text": "Häufige Fragen"
+        },
+        {
+          "level": 3,
+          "text": "Pawfit 3"
+        },
+        {
+          "level": 3,
+          "text": "Stärken"
+        },
+        {
+          "level": 3,
+          "text": "Schwächen"
+        },
+        {
+          "level": 3,
+          "text": "Unternehmen"
+        },
+        {
+          "level": 3,
+          "text": "App-Ökosystem"
+        },
+        {
+          "level": 3,
+          "text": "Ersatzteile"
+        },
+        {
+          "level": 3,
+          "text": "Filterversorgung"
+        },
+        {
+          "level": 3,
+          "text": "Garantie"
+        },
+        {
+          "level": 3,
+          "text": "Vergleich zum Wettbewerb"
+        },
+        {
+          "level": 3,
+          "text": "Tractive"
+        },
+        {
+          "level": 3,
+          "text": "Weenect"
+        },
+        {
+          "level": 3,
+          "text": "Invoxia"
+        },
+        {
+          "level": 3,
+          "text": "Beste GPS-Tracker für Hunde"
+        },
+        {
+          "level": 3,
+          "text": "Trockenfutter oder Nassfutter für Hunde: Was ist besser?"
+        },
+        {
+          "level": 3,
+          "text": "Prothelis"
+        },
+        {
+          "level": 3,
+          "text": "Invoxia"
+        },
+        {
+          "level": 3,
+          "text": "Pawfit 3"
+        },
+        {
+          "level": 3,
+          "text": "Garmin Alpha TT 25"
+        }
+      ],
+      "recommendationTypes": [],
+      "relatedProducts": [
+        "/produkt/pawfit-3/",
+        "/produkt/garmin-alpha-tt-25/"
+      ],
+      "relatedComparisons": [
+        "/vergleiche/beste-gps-tracker-fuer-hunde/"
+      ],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "brand-navigation",
+        "secondary": [],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/hersteller/pawfit/",
+        "route": "/hersteller/pawfit/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 95,
+        "signals": [
+          "clear-title-h1",
+          "meta-description",
+          "structured-headings",
+          "substantive-content",
+          "internal-context",
+          "structured-data",
+          "faq",
+          "decision-support"
+        ]
+      }
+    },
+    {
       "sourceFile": "apps/pfotentechnik/src/content/manufacturers/pawsync.md",
       "pageType": "manufacturer",
       "title": "PawSync: Erfahrungen und Produkte",
@@ -21485,9 +22954,9 @@
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "PETKIT",
-      "internalIncomingLinks": 33,
-      "internalOutgoingLinks": 23,
-      "wordCount": 1396,
+      "internalIncomingLinks": 35,
+      "internalOutgoingLinks": 24,
+      "wordCount": 1424,
       "headingCount": 39,
       "headings": [
         "PETKIT",
@@ -21527,8 +22996,8 @@
         "Smarte Futterautomaten für Hunde und Katzen",
         "Cat Mate",
         "Xiaomi",
-        "PETKIT PUROBOT MAX 3",
-        "PETKIT Eversweet Max 2 UVC"
+        "PETKIT PuraMax 2",
+        "PETKIT PUROBOT MAX 3"
       ],
       "structuredData": [
         "Organization",
@@ -21547,7 +23016,7 @@
       "metaTitle": "PETKIT Erfahrungen: Produkte, Bewertung und Empfehlungen",
       "canonical": "https://pfotentechnik.de/hersteller/petkit/",
       "publishedAt": "2026-07-12",
-      "updatedAt": "2026-08-15",
+      "updatedAt": "2026-08-16",
       "author": "PETKIT",
       "animal": "cat",
       "productCategory": "",
@@ -21705,11 +23174,11 @@
         },
         {
           "level": 3,
-          "text": "PETKIT PUROBOT MAX 3"
+          "text": "PETKIT PuraMax 2"
         },
         {
           "level": 3,
-          "text": "PETKIT Eversweet Max 2 UVC"
+          "text": "PETKIT PUROBOT MAX 3"
         }
       ],
       "recommendationTypes": [],
@@ -21726,7 +23195,8 @@
         "/produkt/petkit-eversweet-max-2-uvc/",
         "/produkt/petkit-eversweet-ultra/",
         "/produkt/petkit-purobot-max-pro-2/",
-        "/produkt/petkit-purobot-max-3/"
+        "/produkt/petkit-purobot-max-3/",
+        "/produkt/petkit-puramax-2/"
       ],
       "relatedComparisons": [
         "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/"
@@ -21770,7 +23240,7 @@
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "PETLIBRO",
-      "internalIncomingLinks": 51,
+      "internalIncomingLinks": 53,
       "internalOutgoingLinks": 34,
       "wordCount": 2203,
       "headingCount": 42,
@@ -22076,9 +23546,9 @@
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "PetSafe",
-      "internalIncomingLinks": 12,
-      "internalOutgoingLinks": 15,
-      "wordCount": 777,
+      "internalIncomingLinks": 13,
+      "internalOutgoingLinks": 16,
+      "wordCount": 799,
       "headingCount": 31,
       "headings": [
         "PetSafe",
@@ -22130,7 +23600,7 @@
       "metaTitle": "PetSafe Erfahrungen: Modelle, Funktionen und Unterschiede",
       "canonical": "https://pfotentechnik.de/hersteller/petsafe/",
       "publishedAt": "2026-07-25",
-      "updatedAt": "2026-08-04",
+      "updatedAt": "2026-08-16",
       "author": "PetSafe",
       "animal": "both",
       "productCategory": "",
@@ -22269,6 +23739,7 @@
         "/produkt/petsafe-mikrochip-katzenklappe/",
         "/produkt/petsafe-healthy-pet-simply-feed/",
         "/produkt/petsafe-petporte-smart-flap/",
+        "/produkt/petsafe-streamside-trinkbrunnen/",
         "/produkt/petsafe-smart-feed-2/"
       ],
       "relatedComparisons": [
@@ -22296,6 +23767,431 @@
           "internal-context",
           "structured-data",
           "faq",
+          "decision-support"
+        ]
+      }
+    },
+    {
+      "sourceFile": "apps/pfotentechnik/src/content/manufacturers/petsnowy.md",
+      "pageType": "manufacturer",
+      "title": "PetSnowy: Produkte und Einordnung",
+      "h1": "PetSnowy",
+      "h1Count": 1,
+      "metaDescription": "PetSnowy im PfotenTechnik-Datenbestand mit SNOW+ und den relevanten Systemgrenzen.",
+      "canonicalRoute": "/hersteller/petsnowy/",
+      "indexable": true,
+      "inSitemap": true,
+      "cluster": "hersteller",
+      "secondaryIntents": [],
+      "mainEntity": "PetSnowy",
+      "internalIncomingLinks": 4,
+      "internalOutgoingLinks": 11,
+      "wordCount": 397,
+      "headingCount": 27,
+      "headings": [
+        "PetSnowy",
+        "Für wen passt PetSnowy?",
+        "Was solltest du berücksichtigen?",
+        "Welche Modelle sind besonders interessant?",
+        "PetSnowy Modelle im Überblick",
+        "Stärken und Schwächen",
+        "App, Ersatzteile und Service im Überblick",
+        "Welche Hersteller solltest du vergleichen?",
+        "Marke sinnvoll einordnen",
+        "Das könnte dich auch interessieren",
+        "PetSnowy SNOW+ (SNOW)",
+        "Stärken",
+        "Schwächen",
+        "Unternehmen",
+        "App-Ökosystem",
+        "Ersatzteile",
+        "Filterversorgung",
+        "Garantie",
+        "Vergleich zum Wettbewerb",
+        "PETKIT",
+        "Neakasa",
+        "Automatische Katzentoiletten im Vergleich",
+        "Futterautomaten für Katzen",
+        "Weenect",
+        "Tractive",
+        "PetSnowy SNOW+ (SNOW)",
+        "PAJ GPS"
+      ],
+      "structuredData": [
+        "Organization",
+        "Article",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/hersteller/petsnowy/",
+      "collection": "manufacturers",
+      "metaTitle": "PetSnowy: Produkte und Einordnung",
+      "canonical": "https://pfotentechnik.de/hersteller/petsnowy/",
+      "publishedAt": "2026-08-15",
+      "updatedAt": "2026-08-15",
+      "author": "PetSnowy",
+      "animal": "",
+      "productCategory": "",
+      "audience": "pet-owners",
+      "character": "commercial",
+      "linkDepth": 2,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "PetSnowy"
+        },
+        {
+          "level": 2,
+          "text": "Für wen passt PetSnowy?"
+        },
+        {
+          "level": 2,
+          "text": "Was solltest du berücksichtigen?"
+        },
+        {
+          "level": 2,
+          "text": "Welche Modelle sind besonders interessant?"
+        },
+        {
+          "level": 2,
+          "text": "PetSnowy Modelle im Überblick"
+        },
+        {
+          "level": 2,
+          "text": "Stärken und Schwächen"
+        },
+        {
+          "level": 2,
+          "text": "App, Ersatzteile und Service im Überblick"
+        },
+        {
+          "level": 2,
+          "text": "Welche Hersteller solltest du vergleichen?"
+        },
+        {
+          "level": 2,
+          "text": "Marke sinnvoll einordnen"
+        },
+        {
+          "level": 2,
+          "text": "Das könnte dich auch interessieren"
+        },
+        {
+          "level": 3,
+          "text": "PetSnowy SNOW+ (SNOW)"
+        },
+        {
+          "level": 3,
+          "text": "Stärken"
+        },
+        {
+          "level": 3,
+          "text": "Schwächen"
+        },
+        {
+          "level": 3,
+          "text": "Unternehmen"
+        },
+        {
+          "level": 3,
+          "text": "App-Ökosystem"
+        },
+        {
+          "level": 3,
+          "text": "Ersatzteile"
+        },
+        {
+          "level": 3,
+          "text": "Filterversorgung"
+        },
+        {
+          "level": 3,
+          "text": "Garantie"
+        },
+        {
+          "level": 3,
+          "text": "Vergleich zum Wettbewerb"
+        },
+        {
+          "level": 3,
+          "text": "PETKIT"
+        },
+        {
+          "level": 3,
+          "text": "Neakasa"
+        },
+        {
+          "level": 3,
+          "text": "Automatische Katzentoiletten im Vergleich"
+        },
+        {
+          "level": 3,
+          "text": "Futterautomaten für Katzen"
+        },
+        {
+          "level": 3,
+          "text": "Weenect"
+        },
+        {
+          "level": 3,
+          "text": "Tractive"
+        },
+        {
+          "level": 3,
+          "text": "PetSnowy SNOW+ (SNOW)"
+        },
+        {
+          "level": 3,
+          "text": "PAJ GPS"
+        }
+      ],
+      "recommendationTypes": [
+        "alternatives"
+      ],
+      "relatedProducts": [
+        "/produkt/petsnowy-snow-plus/"
+      ],
+      "relatedComparisons": [
+        "/vergleiche/beste-automatische-katzentoiletten/"
+      ],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "brand-navigation",
+        "secondary": [],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/hersteller/petsnowy/",
+        "route": "/hersteller/petsnowy/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 90,
+        "signals": [
+          "clear-title-h1",
+          "meta-description",
+          "structured-headings",
+          "substantive-content",
+          "internal-context",
+          "structured-data",
+          "decision-support"
+        ]
+      }
+    },
+    {
+      "sourceFile": "apps/pfotentechnik/src/content/manufacturers/pettec.md",
+      "pageType": "manufacturer",
+      "title": "PetTec: Haustierkameras und Speicherung",
+      "h1": "PetTec",
+      "h1Count": 1,
+      "metaDescription": "PetTec im PfotenTechnik-Bestand mit Cam 360, microSD und optionalen Cloud-Diensten.",
+      "canonicalRoute": "/hersteller/pettec/",
+      "indexable": true,
+      "inSitemap": true,
+      "cluster": "hersteller",
+      "secondaryIntents": [],
+      "mainEntity": "PetTec",
+      "internalIncomingLinks": 6,
+      "internalOutgoingLinks": 12,
+      "wordCount": 414,
+      "headingCount": 28,
+      "headings": [
+        "PetTec",
+        "Für wen passt PetTec?",
+        "Was solltest du berücksichtigen?",
+        "Welche Modelle sind besonders interessant?",
+        "PetTec Modelle im Überblick",
+        "Stärken und Schwächen",
+        "App, Ersatzteile und Service im Überblick",
+        "Welche Hersteller solltest du vergleichen?",
+        "Marke sinnvoll einordnen",
+        "Das könnte dich auch interessieren",
+        "PetTec Cam 360",
+        "Stärken",
+        "Schwächen",
+        "Unternehmen",
+        "App-Ökosystem",
+        "Ersatzteile",
+        "Filterversorgung",
+        "Garantie",
+        "Vergleich zum Wettbewerb",
+        "PETLIBRO",
+        "Furbo",
+        "Enabot",
+        "Haustierkameras im Vergleich",
+        "Smarte Haustiertechnik – Der große Ratgeber",
+        "Reolink",
+        "Weenect",
+        "PetTec Cam 360",
+        "Haustierkameras im Vergleich"
+      ],
+      "structuredData": [
+        "Organization",
+        "Article",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/hersteller/pettec/",
+      "collection": "manufacturers",
+      "metaTitle": "PetTec: Haustierkameras und Speicherung",
+      "canonical": "https://pfotentechnik.de/hersteller/pettec/",
+      "publishedAt": "2026-08-15",
+      "updatedAt": "2026-08-15",
+      "author": "PetTec",
+      "animal": "",
+      "productCategory": "",
+      "audience": "pet-owners",
+      "character": "commercial",
+      "linkDepth": 2,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "PetTec"
+        },
+        {
+          "level": 2,
+          "text": "Für wen passt PetTec?"
+        },
+        {
+          "level": 2,
+          "text": "Was solltest du berücksichtigen?"
+        },
+        {
+          "level": 2,
+          "text": "Welche Modelle sind besonders interessant?"
+        },
+        {
+          "level": 2,
+          "text": "PetTec Modelle im Überblick"
+        },
+        {
+          "level": 2,
+          "text": "Stärken und Schwächen"
+        },
+        {
+          "level": 2,
+          "text": "App, Ersatzteile und Service im Überblick"
+        },
+        {
+          "level": 2,
+          "text": "Welche Hersteller solltest du vergleichen?"
+        },
+        {
+          "level": 2,
+          "text": "Marke sinnvoll einordnen"
+        },
+        {
+          "level": 2,
+          "text": "Das könnte dich auch interessieren"
+        },
+        {
+          "level": 3,
+          "text": "PetTec Cam 360"
+        },
+        {
+          "level": 3,
+          "text": "Stärken"
+        },
+        {
+          "level": 3,
+          "text": "Schwächen"
+        },
+        {
+          "level": 3,
+          "text": "Unternehmen"
+        },
+        {
+          "level": 3,
+          "text": "App-Ökosystem"
+        },
+        {
+          "level": 3,
+          "text": "Ersatzteile"
+        },
+        {
+          "level": 3,
+          "text": "Filterversorgung"
+        },
+        {
+          "level": 3,
+          "text": "Garantie"
+        },
+        {
+          "level": 3,
+          "text": "Vergleich zum Wettbewerb"
+        },
+        {
+          "level": 3,
+          "text": "PETLIBRO"
+        },
+        {
+          "level": 3,
+          "text": "Furbo"
+        },
+        {
+          "level": 3,
+          "text": "Enabot"
+        },
+        {
+          "level": 3,
+          "text": "Haustierkameras im Vergleich"
+        },
+        {
+          "level": 3,
+          "text": "Smarte Haustiertechnik – Der große Ratgeber"
+        },
+        {
+          "level": 3,
+          "text": "Reolink"
+        },
+        {
+          "level": 3,
+          "text": "Weenect"
+        },
+        {
+          "level": 3,
+          "text": "PetTec Cam 360"
+        },
+        {
+          "level": 3,
+          "text": "Haustierkameras im Vergleich"
+        }
+      ],
+      "recommendationTypes": [],
+      "relatedProducts": [
+        "/produkt/pettec-cam-360/"
+      ],
+      "relatedComparisons": [
+        "/vergleiche/beste-haustierkameras/"
+      ],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "brand-navigation",
+        "secondary": [],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/hersteller/pettec/",
+        "route": "/hersteller/pettec/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 90,
+        "signals": [
+          "clear-title-h1",
+          "meta-description",
+          "structured-headings",
+          "substantive-content",
+          "internal-context",
+          "structured-data",
           "decision-support"
         ]
       }
@@ -22514,6 +24410,456 @@
       "topicOwner": {
         "id": "route:/hersteller/petwalk/",
         "route": "/hersteller/petwalk/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 95,
+        "signals": [
+          "clear-title-h1",
+          "meta-description",
+          "structured-headings",
+          "substantive-content",
+          "internal-context",
+          "structured-data",
+          "faq",
+          "decision-support"
+        ]
+      }
+    },
+    {
+      "sourceFile": "apps/pfotentechnik/src/content/manufacturers/prothelis.md",
+      "pageType": "manufacturer",
+      "title": "Prothelis area Pets: System und Mobilfunk",
+      "h1": "Prothelis",
+      "h1Count": 1,
+      "metaDescription": "Prothelis area Pets nach GPS, Geofences, Akku, Servicepaket und Mobilfunk eingeordnet.",
+      "canonicalRoute": "/hersteller/prothelis/",
+      "indexable": true,
+      "inSitemap": true,
+      "cluster": "hersteller",
+      "secondaryIntents": [],
+      "mainEntity": "Prothelis",
+      "internalIncomingLinks": 5,
+      "internalOutgoingLinks": 10,
+      "wordCount": 429,
+      "headingCount": 29,
+      "headings": [
+        "Prothelis",
+        "Für wen passt Prothelis?",
+        "Was solltest du berücksichtigen?",
+        "Welche Modelle sind besonders interessant?",
+        "Prothelis Modelle im Überblick",
+        "Stärken und Schwächen",
+        "App, Ersatzteile und Service im Überblick",
+        "Welche Hersteller solltest du vergleichen?",
+        "Marke sinnvoll einordnen",
+        "Das könnte dich auch interessieren",
+        "Häufige Fragen",
+        "Prothelis area Pets",
+        "Stärken",
+        "Schwächen",
+        "Unternehmen",
+        "App-Ökosystem",
+        "Ersatzteile",
+        "Filterversorgung",
+        "Garantie",
+        "Vergleich zum Wettbewerb",
+        "Tractive",
+        "Pawfit",
+        "Invoxia",
+        "Beste GPS-Tracker für Hunde",
+        "Trockenfutter oder Nassfutter für Hunde: Was ist besser?",
+        "Pawfit",
+        "Invoxia",
+        "Prothelis area Pets",
+        "Garmin Alpha TT 25"
+      ],
+      "structuredData": [
+        "Organization",
+        "Article",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "FAQPage",
+        "Question",
+        "Answer"
+      ],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/hersteller/prothelis/",
+      "collection": "manufacturers",
+      "metaTitle": "Prothelis area Pets: System und Mobilfunk",
+      "canonical": "https://pfotentechnik.de/hersteller/prothelis/",
+      "publishedAt": "2026-08-16",
+      "updatedAt": "2026-08-16",
+      "author": "PfotenTechnik Redaktion",
+      "animal": "dog",
+      "productCategory": "",
+      "audience": "dog",
+      "character": "commercial",
+      "linkDepth": 2,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Prothelis"
+        },
+        {
+          "level": 2,
+          "text": "Für wen passt Prothelis?"
+        },
+        {
+          "level": 2,
+          "text": "Was solltest du berücksichtigen?"
+        },
+        {
+          "level": 2,
+          "text": "Welche Modelle sind besonders interessant?"
+        },
+        {
+          "level": 2,
+          "text": "Prothelis Modelle im Überblick"
+        },
+        {
+          "level": 2,
+          "text": "Stärken und Schwächen"
+        },
+        {
+          "level": 2,
+          "text": "App, Ersatzteile und Service im Überblick"
+        },
+        {
+          "level": 2,
+          "text": "Welche Hersteller solltest du vergleichen?"
+        },
+        {
+          "level": 2,
+          "text": "Marke sinnvoll einordnen"
+        },
+        {
+          "level": 2,
+          "text": "Das könnte dich auch interessieren"
+        },
+        {
+          "level": 2,
+          "text": "Häufige Fragen"
+        },
+        {
+          "level": 3,
+          "text": "Prothelis area Pets"
+        },
+        {
+          "level": 3,
+          "text": "Stärken"
+        },
+        {
+          "level": 3,
+          "text": "Schwächen"
+        },
+        {
+          "level": 3,
+          "text": "Unternehmen"
+        },
+        {
+          "level": 3,
+          "text": "App-Ökosystem"
+        },
+        {
+          "level": 3,
+          "text": "Ersatzteile"
+        },
+        {
+          "level": 3,
+          "text": "Filterversorgung"
+        },
+        {
+          "level": 3,
+          "text": "Garantie"
+        },
+        {
+          "level": 3,
+          "text": "Vergleich zum Wettbewerb"
+        },
+        {
+          "level": 3,
+          "text": "Tractive"
+        },
+        {
+          "level": 3,
+          "text": "Pawfit"
+        },
+        {
+          "level": 3,
+          "text": "Invoxia"
+        },
+        {
+          "level": 3,
+          "text": "Beste GPS-Tracker für Hunde"
+        },
+        {
+          "level": 3,
+          "text": "Trockenfutter oder Nassfutter für Hunde: Was ist besser?"
+        },
+        {
+          "level": 3,
+          "text": "Pawfit"
+        },
+        {
+          "level": 3,
+          "text": "Invoxia"
+        },
+        {
+          "level": 3,
+          "text": "Prothelis area Pets"
+        },
+        {
+          "level": 3,
+          "text": "Garmin Alpha TT 25"
+        }
+      ],
+      "recommendationTypes": [
+        "alternatives"
+      ],
+      "relatedProducts": [
+        "/produkt/prothelis-area-pets/",
+        "/produkt/garmin-alpha-tt-25/"
+      ],
+      "relatedComparisons": [
+        "/vergleiche/beste-gps-tracker-fuer-hunde/"
+      ],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "brand-navigation",
+        "secondary": [],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/hersteller/prothelis/",
+        "route": "/hersteller/prothelis/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 95,
+        "signals": [
+          "clear-title-h1",
+          "meta-description",
+          "structured-headings",
+          "substantive-content",
+          "internal-context",
+          "structured-data",
+          "faq",
+          "decision-support"
+        ]
+      }
+    },
+    {
+      "sourceFile": "apps/pfotentechnik/src/content/manufacturers/reolink.md",
+      "pageType": "manufacturer",
+      "title": "Reolink als Haustierkamera: lokal speichern",
+      "h1": "Reolink",
+      "h1Count": 1,
+      "metaDescription": "Reolink E1 Zoom nach 4K, Tiererkennung, microSD, NVR und optionaler Cloud eingeordnet.",
+      "canonicalRoute": "/hersteller/reolink/",
+      "indexable": true,
+      "inSitemap": true,
+      "cluster": "hersteller",
+      "secondaryIntents": [],
+      "mainEntity": "Reolink",
+      "internalIncomingLinks": 6,
+      "internalOutgoingLinks": 12,
+      "wordCount": 443,
+      "headingCount": 29,
+      "headings": [
+        "Reolink",
+        "Für wen passt Reolink?",
+        "Was solltest du berücksichtigen?",
+        "Welche Modelle sind besonders interessant?",
+        "Reolink Modelle im Überblick",
+        "Stärken und Schwächen",
+        "App, Ersatzteile und Service im Überblick",
+        "Welche Hersteller solltest du vergleichen?",
+        "Marke sinnvoll einordnen",
+        "Das könnte dich auch interessieren",
+        "Häufige Fragen",
+        "Reolink E1 Zoom (4K)",
+        "Stärken",
+        "Schwächen",
+        "Unternehmen",
+        "App-Ökosystem",
+        "Ersatzteile",
+        "Filterversorgung",
+        "Garantie",
+        "Vergleich zum Wettbewerb",
+        "PetTec",
+        "Furbo",
+        "PETLIBRO",
+        "Haustierkameras im Vergleich",
+        "Smarte Haustiertechnik – Der große Ratgeber",
+        "PetTec",
+        "Reolink E1 Zoom (4K)",
+        "Weenect",
+        "PetTec Cam 360"
+      ],
+      "structuredData": [
+        "Organization",
+        "Article",
+        "ImageObject",
+        "BreadcrumbList",
+        "ListItem",
+        "FAQPage",
+        "Question",
+        "Answer"
+      ],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/hersteller/reolink/",
+      "collection": "manufacturers",
+      "metaTitle": "Reolink als Haustierkamera: lokal speichern",
+      "canonical": "https://pfotentechnik.de/hersteller/reolink/",
+      "publishedAt": "2026-08-16",
+      "updatedAt": "2026-08-16",
+      "author": "PfotenTechnik Redaktion",
+      "animal": "",
+      "productCategory": "",
+      "audience": "pet-owners",
+      "character": "commercial",
+      "linkDepth": 2,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Reolink"
+        },
+        {
+          "level": 2,
+          "text": "Für wen passt Reolink?"
+        },
+        {
+          "level": 2,
+          "text": "Was solltest du berücksichtigen?"
+        },
+        {
+          "level": 2,
+          "text": "Welche Modelle sind besonders interessant?"
+        },
+        {
+          "level": 2,
+          "text": "Reolink Modelle im Überblick"
+        },
+        {
+          "level": 2,
+          "text": "Stärken und Schwächen"
+        },
+        {
+          "level": 2,
+          "text": "App, Ersatzteile und Service im Überblick"
+        },
+        {
+          "level": 2,
+          "text": "Welche Hersteller solltest du vergleichen?"
+        },
+        {
+          "level": 2,
+          "text": "Marke sinnvoll einordnen"
+        },
+        {
+          "level": 2,
+          "text": "Das könnte dich auch interessieren"
+        },
+        {
+          "level": 2,
+          "text": "Häufige Fragen"
+        },
+        {
+          "level": 3,
+          "text": "Reolink E1 Zoom (4K)"
+        },
+        {
+          "level": 3,
+          "text": "Stärken"
+        },
+        {
+          "level": 3,
+          "text": "Schwächen"
+        },
+        {
+          "level": 3,
+          "text": "Unternehmen"
+        },
+        {
+          "level": 3,
+          "text": "App-Ökosystem"
+        },
+        {
+          "level": 3,
+          "text": "Ersatzteile"
+        },
+        {
+          "level": 3,
+          "text": "Filterversorgung"
+        },
+        {
+          "level": 3,
+          "text": "Garantie"
+        },
+        {
+          "level": 3,
+          "text": "Vergleich zum Wettbewerb"
+        },
+        {
+          "level": 3,
+          "text": "PetTec"
+        },
+        {
+          "level": 3,
+          "text": "Furbo"
+        },
+        {
+          "level": 3,
+          "text": "PETLIBRO"
+        },
+        {
+          "level": 3,
+          "text": "Haustierkameras im Vergleich"
+        },
+        {
+          "level": 3,
+          "text": "Smarte Haustiertechnik – Der große Ratgeber"
+        },
+        {
+          "level": 3,
+          "text": "PetTec"
+        },
+        {
+          "level": 3,
+          "text": "Reolink E1 Zoom (4K)"
+        },
+        {
+          "level": 3,
+          "text": "Weenect"
+        },
+        {
+          "level": 3,
+          "text": "PetTec Cam 360"
+        }
+      ],
+      "recommendationTypes": [],
+      "relatedProducts": [
+        "/produkt/reolink-e1-zoom/",
+        "/produkt/pettec-cam-360/"
+      ],
+      "relatedComparisons": [
+        "/vergleiche/beste-haustierkameras/"
+      ],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "brand-navigation",
+        "secondary": [],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/hersteller/reolink/",
+        "route": "/hersteller/reolink/",
         "explicit": false
       },
       "quality": {
@@ -22815,7 +25161,7 @@
       "cluster": "katzen-und-hundespezifische-hardware",
       "secondaryIntents": [],
       "mainEntity": "Tractive",
-      "internalIncomingLinks": 18,
+      "internalIncomingLinks": 22,
       "internalOutgoingLinks": 15,
       "wordCount": 1015,
       "headingCount": 37,
@@ -23082,9 +25428,9 @@
       "cluster": "gps-tracker",
       "secondaryIntents": [],
       "mainEntity": "Weenect",
-      "internalIncomingLinks": 16,
-      "internalOutgoingLinks": 17,
-      "wordCount": 931,
+      "internalIncomingLinks": 20,
+      "internalOutgoingLinks": 18,
+      "wordCount": 937,
       "headingCount": 36,
       "headings": [
         "Weenect",
@@ -23122,7 +25468,7 @@
         "Tractive",
         "PAJ GPS",
         "Weenect XS GPS-Tracker",
-        "Weenect XT GPS-Tracker"
+        "Prothelis area Pets"
       ],
       "structuredData": [
         "Organization",
@@ -23291,7 +25637,7 @@
         },
         {
           "level": 3,
-          "text": "Weenect XT GPS-Tracker"
+          "text": "Prothelis area Pets"
         }
       ],
       "recommendationTypes": [
@@ -23299,7 +25645,8 @@
       ],
       "relatedProducts": [
         "/produkt/weenect-xs/",
-        "/produkt/weenect-xt/"
+        "/produkt/weenect-xt/",
+        "/produkt/prothelis-area-pets/"
       ],
       "relatedComparisons": [
         "/vergleiche/beste-gps-tracker-fuer-katzen/"
@@ -23348,9 +25695,9 @@
       "cluster": "hersteller",
       "secondaryIntents": [],
       "mainEntity": "Whisker",
-      "internalIncomingLinks": 6,
-      "internalOutgoingLinks": 10,
-      "wordCount": 416,
+      "internalIncomingLinks": 7,
+      "internalOutgoingLinks": 11,
+      "wordCount": 454,
       "headingCount": 27,
       "headings": [
         "Whisker",
@@ -23377,9 +25724,9 @@
         "Automatische Katzentoiletten im Vergleich",
         "Futterautomaten für Katzen",
         "Neakasa",
+        "Litter-Robot 4",
         "Devoko",
-        "Automatische Katzentoiletten im Vergleich",
-        "Automatische Katzentoiletten"
+        "Automatische Katzentoiletten im Vergleich"
       ],
       "structuredData": [
         "Organization",
@@ -23395,7 +25742,7 @@
       "metaTitle": "Whisker: Erfahrungen und Produkte",
       "canonical": "https://pfotentechnik.de/hersteller/whisker/",
       "publishedAt": "2026-08-06",
-      "updatedAt": "2026-08-06",
+      "updatedAt": "2026-08-16",
       "author": "Whisker",
       "animal": "cat",
       "productCategory": "",
@@ -23501,22 +25848,23 @@
         },
         {
           "level": 3,
+          "text": "Litter-Robot 4"
+        },
+        {
+          "level": 3,
           "text": "Devoko"
         },
         {
           "level": 3,
           "text": "Automatische Katzentoiletten im Vergleich"
-        },
-        {
-          "level": 3,
-          "text": "Automatische Katzentoiletten"
         }
       ],
       "recommendationTypes": [
         "alternatives"
       ],
       "relatedProducts": [
-        "/produkt/litter-robot-5-pro/"
+        "/produkt/litter-robot-5-pro/",
+        "/produkt/litter-robot-4/"
       ],
       "relatedComparisons": [
         "/vergleiche/beste-automatische-katzentoiletten/"
@@ -29630,9 +31978,9 @@
       "cluster": "katzenklappen",
       "secondaryIntents": [],
       "mainEntity": "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen",
-      "internalIncomingLinks": 17,
-      "internalOutgoingLinks": 22,
-      "wordCount": 1254,
+      "internalIncomingLinks": 18,
+      "internalOutgoingLinks": 23,
+      "wordCount": 1276,
       "headingCount": 38,
       "headings": [
         "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen",
@@ -29691,7 +32039,7 @@
       "metaTitle": "Katzenklappen: Mikrochip, App & Einbau auswählen",
       "canonical": "https://pfotentechnik.de/katzenklappen/",
       "publishedAt": "2026-08-04",
-      "updatedAt": "2026-08-15",
+      "updatedAt": "2026-08-16",
       "author": "PfotenTechnik Redaktion",
       "animal": "cat",
       "productCategory": "",
@@ -29857,6 +32205,7 @@
       ],
       "relatedProducts": [
         "/produkt/petsafe-petporte-smart-flap/",
+        "/produkt/cat-mate-elite-355w/",
         "/produkt/onlycat-mikrochip-katzenklappe/",
         "/produkt/petsafe-mikrochip-katzenklappe/",
         "/produkt/petwalk-medium-tiertuer/",
@@ -29912,7 +32261,7 @@
       "mainEntity": "Katzentrinkbrunnen im Dauerbetrieb und im Urlaub",
       "internalIncomingLinks": 2,
       "internalOutgoingLinks": 17,
-      "wordCount": 796,
+      "wordCount": 790,
       "headingCount": 21,
       "headings": [
         "Katzentrinkbrunnen im Dauerbetrieb und im Urlaub",
@@ -29929,7 +32278,7 @@
         "Das könnte dich auch interessieren",
         "Cat Mate Pet Fountain 335",
         "Cat Mate Shell Pet Fountain",
-        "oneisall 2,2L Cordless Cat Fountain",
+        "Catit PIXI Smart-Trinkbrunnen",
         "SureFeed Microchip Pet Feeder",
         "Beste Trinkbrunnen für Katzen",
         "Trinkbrunnen für Kitten sicher nutzen",
@@ -30020,7 +32369,7 @@
         },
         {
           "level": 3,
-          "text": "oneisall 2,2L Cordless Cat Fountain"
+          "text": "Catit PIXI Smart-Trinkbrunnen"
         },
         {
           "level": 3,
@@ -30054,7 +32403,7 @@
       "relatedProducts": [
         "/produkt/cat-mate-335-pet-fountain/",
         "/produkt/cat-mate-shell-fountain/",
-        "/produkt/oneisall-2-2l-cordless-fountain/",
+        "/produkt/catit-pixi-smart-trinkbrunnen/",
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/surefeed-microchip-pet-feeder/"
       ],
@@ -30103,7 +32452,7 @@
       "mainEntity": "Katzenbrunnen laut? Pumpe in 6 Schritten prüfen",
       "internalIncomingLinks": 7,
       "internalOutgoingLinks": 19,
-      "wordCount": 910,
+      "wordCount": 904,
       "headingCount": 27,
       "headings": [
         "Katzenbrunnen laut? Pumpe in 6 Schritten prüfen",
@@ -30125,7 +32474,7 @@
         "Das könnte dich auch interessieren",
         "Cat Mate Pet Fountain 335",
         "Cat Mate Shell Pet Fountain",
-        "oneisall 2,2L Cordless Cat Fountain",
+        "Catit PIXI Smart-Trinkbrunnen",
         "Passende Kaufberatung öffnen",
         "Geeignete Modelle gegenüberstellen",
         "Technik sicher im Alltag nutzen",
@@ -30237,7 +32586,7 @@
         },
         {
           "level": 3,
-          "text": "oneisall 2,2L Cordless Cat Fountain"
+          "text": "Catit PIXI Smart-Trinkbrunnen"
         },
         {
           "level": 3,
@@ -30272,7 +32621,7 @@
       "relatedProducts": [
         "/produkt/cat-mate-335-pet-fountain/",
         "/produkt/cat-mate-shell-fountain/",
-        "/produkt/oneisall-2-2l-cordless-fountain/",
+        "/produkt/catit-pixi-smart-trinkbrunnen/",
         "/produkt/xiaomi-smart-pet-fountain-2/"
       ],
       "relatedComparisons": [
@@ -30319,9 +32668,9 @@
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Katzenbrunnen: Edelstahl, Keramik oder Kunststoff?",
-      "internalIncomingLinks": 14,
+      "internalIncomingLinks": 15,
       "internalOutgoingLinks": 17,
-      "wordCount": 837,
+      "wordCount": 831,
       "headingCount": 24,
       "headings": [
         "Katzenbrunnen: Edelstahl, Keramik oder Kunststoff?",
@@ -30341,7 +32690,7 @@
         "Das könnte dich auch interessieren",
         "Cat Mate Pet Fountain 335",
         "Cat Mate Shell Pet Fountain",
-        "oneisall 2,2L Cordless Cat Fountain",
+        "Catit PIXI Smart-Trinkbrunnen",
         "PETLIBRO Polar Wet Food Feeder",
         "Beste Trinkbrunnen für Katzen",
         "Ist ein Katzenbrunnen sinnvoll?",
@@ -30444,7 +32793,7 @@
         },
         {
           "level": 3,
-          "text": "oneisall 2,2L Cordless Cat Fountain"
+          "text": "Catit PIXI Smart-Trinkbrunnen"
         },
         {
           "level": 3,
@@ -30477,7 +32826,7 @@
       "relatedProducts": [
         "/produkt/cat-mate-335-pet-fountain/",
         "/produkt/cat-mate-shell-fountain/",
-        "/produkt/oneisall-2-2l-cordless-fountain/",
+        "/produkt/catit-pixi-smart-trinkbrunnen/",
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/petlibro-polar-wet-food-feeder/"
       ],
@@ -30526,7 +32875,7 @@
       "mainEntity": "Katzentrinkbrunnen ohne Filter: sinnvoll oder unhygienisch?",
       "internalIncomingLinks": 8,
       "internalOutgoingLinks": 15,
-      "wordCount": 910,
+      "wordCount": 904,
       "headingCount": 22,
       "headings": [
         "Katzentrinkbrunnen ohne Filter: sinnvoll oder unhygienisch?",
@@ -30544,7 +32893,7 @@
         "Das könnte dich auch interessieren",
         "Cat Mate Pet Fountain 335",
         "Cat Mate Shell Pet Fountain",
-        "oneisall 2,2L Cordless Cat Fountain",
+        "Catit PIXI Smart-Trinkbrunnen",
         "SureFeed Microchip Pet Feeder Connect",
         "Beste Trinkbrunnen für Katzen",
         "Ist ein Katzenbrunnen sinnvoll?",
@@ -30639,7 +32988,7 @@
         },
         {
           "level": 3,
-          "text": "oneisall 2,2L Cordless Cat Fountain"
+          "text": "Catit PIXI Smart-Trinkbrunnen"
         },
         {
           "level": 3,
@@ -30672,7 +33021,7 @@
       "relatedProducts": [
         "/produkt/cat-mate-335-pet-fountain/",
         "/produkt/cat-mate-shell-fountain/",
-        "/produkt/oneisall-2-2l-cordless-fountain/",
+        "/produkt/catit-pixi-smart-trinkbrunnen/",
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/surefeed-microchip-pet-feeder-connect/"
       ],
@@ -30987,7 +33336,7 @@
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Wie oft sollte man Katzenwasser wechseln?",
-      "internalIncomingLinks": 7,
+      "internalIncomingLinks": 8,
       "internalOutgoingLinks": 16,
       "wordCount": 868,
       "headingCount": 22,
@@ -31279,7 +33628,7 @@
       "cluster": "smarte-haustiertechnik",
       "secondaryIntents": [],
       "mainEntity": "Kontakt",
-      "internalIncomingLinks": 119,
+      "internalIncomingLinks": 128,
       "internalOutgoingLinks": 0,
       "wordCount": 161,
       "headingCount": 5,
@@ -31805,7 +34154,7 @@
         "transactional-support"
       ],
       "mainEntity": "Cat Mate Pet Fountain 335",
-      "internalIncomingLinks": 20,
+      "internalIncomingLinks": 21,
       "internalOutgoingLinks": 16,
       "wordCount": 1324,
       "headingCount": 29,
@@ -32802,6 +35151,236 @@
       }
     },
     {
+      "sourceFile": "apps/pfotentechnik/src/content/products/cat-mate-elite-355w.md",
+      "pageType": "product",
+      "title": "Cat Mate Elite 355W: Timer und Chiprechte",
+      "h1": "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer",
+      "h1Count": 1,
+      "metaDescription": "Cat Mate Elite 355W mit selektivem Eingang, gemeinsamem Timer, 9 Katzen, 145-mm-Durchgang und 4 AA-Batterien einordnen.",
+      "canonicalRoute": "/produkt/cat-mate-elite-355w/",
+      "indexable": true,
+      "inSitemap": true,
+      "cluster": "katzenklappen",
+      "secondaryIntents": [
+        "transactional-support"
+      ],
+      "mainEntity": "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer",
+      "internalIncomingLinks": 5,
+      "internalOutgoingLinks": 12,
+      "wordCount": 874,
+      "headingCount": 29,
+      "headings": [
+        "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer",
+        "Aktueller Preis",
+        "Lohnt sich Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer?",
+        "Was die wichtigsten Daten bedeuten",
+        "Passt dieses Produkt zu deinem Alltag?",
+        "So funktioniert die Nutzung laut Dokumentation und Quellen",
+        "Stärken",
+        "Schwächen",
+        "Technik ersetzt keine Kontrolle",
+        "Häufige Kauffragen",
+        "Quellen und Prüfgrundlage",
+        "Besser passend, nicht nur ähnlich",
+        "So ist diese Seite einzuordnen",
+        "Passend weiterentscheiden",
+        "Passend zum Produkt weiterlesen",
+        "Ja, wenn …",
+        "Nein, wenn …",
+        "Dann lieber …",
+        "Beantworte die Fragen für eine persönliche Einordnung.",
+        "Einrichten",
+        "Routine starten",
+        "Kontrollieren",
+        "Reinigen und nachstellen",
+        "ZeroMOUSE 2.0",
+        "PetSafe Petporte smart flap",
+        "PetSafe Mikrochip Katzenklappe",
+        "Automatische Katzentoiletten im Vergleich",
+        "Trinkbrunnen für zwei oder mehr Katzen",
+        "Cat Mate"
+      ],
+      "structuredData": [
+        "Organization",
+        "WebPage",
+        "WebSite",
+        "BreadcrumbList",
+        "ListItem",
+        "Product",
+        "Brand"
+      ],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/produkt/cat-mate-elite-355w/",
+      "collection": "products",
+      "metaTitle": "Cat Mate Elite 355W: Timer und Chiprechte",
+      "canonical": "https://pfotentechnik.de/produkt/cat-mate-elite-355w/",
+      "publishedAt": "2026-08-16",
+      "updatedAt": "2026-08-16",
+      "author": "PfotenTechnik Redaktion",
+      "animal": "cat",
+      "productCategory": "",
+      "audience": "cat",
+      "character": "commercial",
+      "linkDepth": 2,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer"
+        },
+        {
+          "level": 2,
+          "text": "Aktueller Preis"
+        },
+        {
+          "level": 2,
+          "text": "Lohnt sich Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer?"
+        },
+        {
+          "level": 2,
+          "text": "Was die wichtigsten Daten bedeuten"
+        },
+        {
+          "level": 2,
+          "text": "Passt dieses Produkt zu deinem Alltag?"
+        },
+        {
+          "level": 2,
+          "text": "So funktioniert die Nutzung laut Dokumentation und Quellen"
+        },
+        {
+          "level": 2,
+          "text": "Stärken"
+        },
+        {
+          "level": 2,
+          "text": "Schwächen"
+        },
+        {
+          "level": 2,
+          "text": "Technik ersetzt keine Kontrolle"
+        },
+        {
+          "level": 2,
+          "text": "Häufige Kauffragen"
+        },
+        {
+          "level": 2,
+          "text": "Quellen und Prüfgrundlage"
+        },
+        {
+          "level": 2,
+          "text": "Besser passend, nicht nur ähnlich"
+        },
+        {
+          "level": 2,
+          "text": "So ist diese Seite einzuordnen"
+        },
+        {
+          "level": 2,
+          "text": "Passend weiterentscheiden"
+        },
+        {
+          "level": 2,
+          "text": "Passend zum Produkt weiterlesen"
+        },
+        {
+          "level": 3,
+          "text": "Ja, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Nein, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Dann lieber …"
+        },
+        {
+          "level": 3,
+          "text": "Beantworte die Fragen für eine persönliche Einordnung."
+        },
+        {
+          "level": 3,
+          "text": "Einrichten"
+        },
+        {
+          "level": 3,
+          "text": "Routine starten"
+        },
+        {
+          "level": 3,
+          "text": "Kontrollieren"
+        },
+        {
+          "level": 3,
+          "text": "Reinigen und nachstellen"
+        },
+        {
+          "level": 3,
+          "text": "ZeroMOUSE 2.0"
+        },
+        {
+          "level": 3,
+          "text": "PetSafe Petporte smart flap"
+        },
+        {
+          "level": 3,
+          "text": "PetSafe Mikrochip Katzenklappe"
+        },
+        {
+          "level": 3,
+          "text": "Automatische Katzentoiletten im Vergleich"
+        },
+        {
+          "level": 3,
+          "text": "Trinkbrunnen für zwei oder mehr Katzen"
+        },
+        {
+          "level": 3,
+          "text": "Cat Mate"
+        }
+      ],
+      "recommendationTypes": [
+        "alternatives"
+      ],
+      "relatedProducts": [
+        "/produkt/zeromouse-2-0/",
+        "/produkt/petsafe-petporte-smart-flap/",
+        "/produkt/petsafe-mikrochip-katzenklappe/"
+      ],
+      "relatedComparisons": [
+        "/vergleiche/beste-mikrochip-katzenklappen/",
+        "/vergleiche/beste-automatische-katzentoiletten/"
+      ],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "product-research",
+        "secondary": [
+          "transactional-support"
+        ],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/produkt/cat-mate-elite-355w/",
+        "route": "/produkt/cat-mate-elite-355w/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 90,
+        "signals": [
+          "clear-title-h1",
+          "meta-description",
+          "structured-headings",
+          "substantive-content",
+          "internal-context",
+          "structured-data",
+          "decision-support"
+        ]
+      }
+    },
+    {
       "sourceFile": "apps/pfotentechnik/src/content/products/cat-mate-shell-fountain.md",
       "pageType": "product",
       "title": "Cat Mate Shell Pet Fountain im Check",
@@ -33309,6 +35888,235 @@
       }
     },
     {
+      "sourceFile": "apps/pfotentechnik/src/content/products/catit-pixi-smart-trinkbrunnen.md",
+      "pageType": "product",
+      "title": "Catit PIXI Smart-Trinkbrunnen: App, UVC und Pflege",
+      "h1": "Catit PIXI Smart-Trinkbrunnen",
+      "h1Count": 1,
+      "metaDescription": "Catit PIXI Smart-Trinkbrunnen mit 2 Litern, WLAN, App, UVC, Edelstahl-Trinkfläche, Filter- und Pumpenpflege einordnen.",
+      "canonicalRoute": "/produkt/catit-pixi-smart-trinkbrunnen/",
+      "indexable": true,
+      "inSitemap": true,
+      "cluster": "trinkbrunnen",
+      "secondaryIntents": [
+        "transactional-support"
+      ],
+      "mainEntity": "Catit PIXI Smart-Trinkbrunnen",
+      "internalIncomingLinks": 15,
+      "internalOutgoingLinks": 13,
+      "wordCount": 906,
+      "headingCount": 29,
+      "headings": [
+        "Catit PIXI Smart-Trinkbrunnen",
+        "Aktueller Preis",
+        "Lohnt sich Catit PIXI Smart-Trinkbrunnen?",
+        "Was die wichtigsten Daten bedeuten",
+        "Passt dieses Produkt zu deinem Alltag?",
+        "So funktioniert die Nutzung laut Dokumentation und Quellen",
+        "Stärken",
+        "Schwächen",
+        "Technik ersetzt keine Kontrolle",
+        "Häufige Kauffragen",
+        "Quellen und Prüfgrundlage",
+        "Besser passend, nicht nur ähnlich",
+        "So ist diese Seite einzuordnen",
+        "Passend weiterentscheiden",
+        "Passend zum Produkt weiterlesen",
+        "Ja, wenn …",
+        "Nein, wenn …",
+        "Dann lieber …",
+        "Beantworte die Fragen für eine persönliche Einordnung.",
+        "Einrichten",
+        "Wasser bereitstellen",
+        "Kontrollieren",
+        "Reinigen und nachstellen",
+        "Xiaomi Smart Pet Fountain 2",
+        "oneisall 3,5L Cordless Fountain",
+        "Cat Mate Pet Fountain 335",
+        "Beste Trinkbrunnen für Katzen",
+        "Trinkbrunnen für zwei oder mehr Katzen",
+        "Catit"
+      ],
+      "structuredData": [
+        "Organization",
+        "WebPage",
+        "WebSite",
+        "BreadcrumbList",
+        "ListItem",
+        "Product",
+        "Brand"
+      ],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/produkt/catit-pixi-smart-trinkbrunnen/",
+      "collection": "products",
+      "metaTitle": "Catit PIXI Smart-Trinkbrunnen: App, UVC und Pflege",
+      "canonical": "https://pfotentechnik.de/produkt/catit-pixi-smart-trinkbrunnen/",
+      "publishedAt": "2026-08-16",
+      "updatedAt": "2026-08-16",
+      "author": "PfotenTechnik Redaktion",
+      "animal": "cat",
+      "productCategory": "trinkbrunnen",
+      "audience": "cat",
+      "character": "commercial",
+      "linkDepth": 2,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Catit PIXI Smart-Trinkbrunnen"
+        },
+        {
+          "level": 2,
+          "text": "Aktueller Preis"
+        },
+        {
+          "level": 2,
+          "text": "Lohnt sich Catit PIXI Smart-Trinkbrunnen?"
+        },
+        {
+          "level": 2,
+          "text": "Was die wichtigsten Daten bedeuten"
+        },
+        {
+          "level": 2,
+          "text": "Passt dieses Produkt zu deinem Alltag?"
+        },
+        {
+          "level": 2,
+          "text": "So funktioniert die Nutzung laut Dokumentation und Quellen"
+        },
+        {
+          "level": 2,
+          "text": "Stärken"
+        },
+        {
+          "level": 2,
+          "text": "Schwächen"
+        },
+        {
+          "level": 2,
+          "text": "Technik ersetzt keine Kontrolle"
+        },
+        {
+          "level": 2,
+          "text": "Häufige Kauffragen"
+        },
+        {
+          "level": 2,
+          "text": "Quellen und Prüfgrundlage"
+        },
+        {
+          "level": 2,
+          "text": "Besser passend, nicht nur ähnlich"
+        },
+        {
+          "level": 2,
+          "text": "So ist diese Seite einzuordnen"
+        },
+        {
+          "level": 2,
+          "text": "Passend weiterentscheiden"
+        },
+        {
+          "level": 2,
+          "text": "Passend zum Produkt weiterlesen"
+        },
+        {
+          "level": 3,
+          "text": "Ja, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Nein, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Dann lieber …"
+        },
+        {
+          "level": 3,
+          "text": "Beantworte die Fragen für eine persönliche Einordnung."
+        },
+        {
+          "level": 3,
+          "text": "Einrichten"
+        },
+        {
+          "level": 3,
+          "text": "Wasser bereitstellen"
+        },
+        {
+          "level": 3,
+          "text": "Kontrollieren"
+        },
+        {
+          "level": 3,
+          "text": "Reinigen und nachstellen"
+        },
+        {
+          "level": 3,
+          "text": "Xiaomi Smart Pet Fountain 2"
+        },
+        {
+          "level": 3,
+          "text": "oneisall 3,5L Cordless Fountain"
+        },
+        {
+          "level": 3,
+          "text": "Cat Mate Pet Fountain 335"
+        },
+        {
+          "level": 3,
+          "text": "Beste Trinkbrunnen für Katzen"
+        },
+        {
+          "level": 3,
+          "text": "Trinkbrunnen für zwei oder mehr Katzen"
+        },
+        {
+          "level": 3,
+          "text": "Catit"
+        }
+      ],
+      "recommendationTypes": [
+        "alternatives"
+      ],
+      "relatedProducts": [
+        "/produkt/xiaomi-smart-pet-fountain-2/",
+        "/produkt/oneisall-3-5l-cordless-fountain/",
+        "/produkt/cat-mate-335-pet-fountain/"
+      ],
+      "relatedComparisons": [
+        "/vergleiche/beste-trinkbrunnen-fuer-katzen/"
+      ],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "product-research",
+        "secondary": [
+          "transactional-support"
+        ],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/produkt/catit-pixi-smart-trinkbrunnen/",
+        "route": "/produkt/catit-pixi-smart-trinkbrunnen/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 90,
+        "signals": [
+          "clear-title-h1",
+          "meta-description",
+          "structured-headings",
+          "substantive-content",
+          "internal-context",
+          "structured-data",
+          "decision-support"
+        ]
+      }
+    },
+    {
       "sourceFile": "apps/pfotentechnik/src/content/products/catit-pixi-vision-smart-feeder.md",
       "pageType": "product",
       "title": "Catit PIXI Vision Smart Feeder Test",
@@ -33587,7 +36395,7 @@
         "transactional-support"
       ],
       "mainEntity": "Devoko 90L Automatisches Katzenklo",
-      "internalIncomingLinks": 13,
+      "internalIncomingLinks": 14,
       "internalOutgoingLinks": 13,
       "wordCount": 1716,
       "headingCount": 29,
@@ -33648,7 +36456,7 @@
       "productCategory": "",
       "audience": "cat",
       "character": "commercial",
-      "linkDepth": 2,
+      "linkDepth": 3,
       "headingStructure": [
         {
           "level": 1,
@@ -33819,7 +36627,7 @@
         "transactional-support"
       ],
       "mainEntity": "Enabot EBO Air 2",
-      "internalIncomingLinks": 10,
+      "internalIncomingLinks": 12,
       "internalOutgoingLinks": 14,
       "wordCount": 763,
       "headingCount": 32,
@@ -33852,7 +36660,7 @@
         "Nutzerbewertungen nach Plattform",
         "Furbo 360° Hundekamera",
         "PETLIBRO Scout Smart Camera",
-        "Automatische Katzentoiletten im Vergleich",
+        "Beste Futterautomaten für Nassfutter",
         "Smarte Futterautomaten für Hunde und Katzen",
         "Enabot",
         "Smarte Futterautomaten"
@@ -33999,7 +36807,7 @@
         },
         {
           "level": 3,
-          "text": "Automatische Katzentoiletten im Vergleich"
+          "text": "Beste Futterautomaten für Nassfutter"
         },
         {
           "level": 3,
@@ -34023,7 +36831,7 @@
       ],
       "relatedComparisons": [
         "/vergleiche/beste-haustierkameras/",
-        "/vergleiche/beste-automatische-katzentoiletten/"
+        "/vergleiche/beste-futterautomaten-fuer-nassfutter/"
       ],
       "searchPerformance": null,
       "searchIntent": {
@@ -34536,7 +37344,7 @@
         "transactional-support"
       ],
       "mainEntity": "Furbo 360° Hundekamera",
-      "internalIncomingLinks": 9,
+      "internalIncomingLinks": 11,
       "internalOutgoingLinks": 15,
       "wordCount": 772,
       "headingCount": 33,
@@ -35274,7 +38082,7 @@
         "transactional-support"
       ],
       "mainEntity": "Garmin Alpha TT 25",
-      "internalIncomingLinks": 7,
+      "internalIncomingLinks": 9,
       "internalOutgoingLinks": 14,
       "wordCount": 1025,
       "headingCount": 31,
@@ -36455,6 +39263,462 @@
       }
     },
     {
+      "sourceFile": "apps/pfotentechnik/src/content/products/invoxia-biotracker-2026.md",
+      "pageType": "product",
+      "title": "Invoxia Biotracker 2026: GPS, Akku und Tarife",
+      "h1": "Invoxia Biotracker Edition 2026",
+      "h1Count": 1,
+      "metaDescription": "Invoxia Biotracker Edition 2026 mit 37 g, LTE-M, GPS, bis 15 Tagen Akku, IP67 und tarifabhängiger Fernortung einordnen.",
+      "canonicalRoute": "/produkt/invoxia-biotracker-2026/",
+      "indexable": true,
+      "inSitemap": true,
+      "cluster": "gps-tracker",
+      "secondaryIntents": [
+        "transactional-support"
+      ],
+      "mainEntity": "Invoxia Biotracker Edition 2026",
+      "internalIncomingLinks": 5,
+      "internalOutgoingLinks": 10,
+      "wordCount": 908,
+      "headingCount": 29,
+      "headings": [
+        "Invoxia Biotracker Edition 2026",
+        "Aktueller Preis",
+        "Lohnt sich Invoxia Biotracker Edition 2026?",
+        "Was die wichtigsten Daten bedeuten",
+        "Passt dieses Produkt zu deinem Alltag?",
+        "So funktioniert die Nutzung laut Dokumentation und Quellen",
+        "Stärken",
+        "Schwächen",
+        "Technik ersetzt keine Kontrolle",
+        "Häufige Kauffragen",
+        "Quellen und Prüfgrundlage",
+        "Besser passend, nicht nur ähnlich",
+        "So ist diese Seite einzuordnen",
+        "Passend weiterentscheiden",
+        "Passend zum Produkt weiterlesen",
+        "Ja, wenn …",
+        "Nein, wenn …",
+        "Dann lieber …",
+        "Beantworte die Fragen für eine persönliche Einordnung.",
+        "Einrichten",
+        "Im Alltag tragen",
+        "Kontrollieren",
+        "Laden und pflegen",
+        "Tractive DOG 6",
+        "Tractive DOG 6 XL",
+        "Beste GPS-Tracker für Hunde",
+        "Trockenfutter oder Nassfutter für Hunde: Was ist besser?",
+        "Invoxia",
+        "GPS-Tracker für Hunde und Katzen"
+      ],
+      "structuredData": [
+        "Organization",
+        "WebPage",
+        "WebSite",
+        "BreadcrumbList",
+        "ListItem",
+        "Product",
+        "Brand"
+      ],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/produkt/invoxia-biotracker-2026/",
+      "collection": "products",
+      "metaTitle": "Invoxia Biotracker 2026: GPS, Akku und Tarife",
+      "canonical": "https://pfotentechnik.de/produkt/invoxia-biotracker-2026/",
+      "publishedAt": "2026-08-16",
+      "updatedAt": "2026-08-16",
+      "author": "PfotenTechnik Redaktion",
+      "animal": "dog",
+      "productCategory": "gps-tracker",
+      "audience": "dog",
+      "character": "commercial",
+      "linkDepth": 2,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Invoxia Biotracker Edition 2026"
+        },
+        {
+          "level": 2,
+          "text": "Aktueller Preis"
+        },
+        {
+          "level": 2,
+          "text": "Lohnt sich Invoxia Biotracker Edition 2026?"
+        },
+        {
+          "level": 2,
+          "text": "Was die wichtigsten Daten bedeuten"
+        },
+        {
+          "level": 2,
+          "text": "Passt dieses Produkt zu deinem Alltag?"
+        },
+        {
+          "level": 2,
+          "text": "So funktioniert die Nutzung laut Dokumentation und Quellen"
+        },
+        {
+          "level": 2,
+          "text": "Stärken"
+        },
+        {
+          "level": 2,
+          "text": "Schwächen"
+        },
+        {
+          "level": 2,
+          "text": "Technik ersetzt keine Kontrolle"
+        },
+        {
+          "level": 2,
+          "text": "Häufige Kauffragen"
+        },
+        {
+          "level": 2,
+          "text": "Quellen und Prüfgrundlage"
+        },
+        {
+          "level": 2,
+          "text": "Besser passend, nicht nur ähnlich"
+        },
+        {
+          "level": 2,
+          "text": "So ist diese Seite einzuordnen"
+        },
+        {
+          "level": 2,
+          "text": "Passend weiterentscheiden"
+        },
+        {
+          "level": 2,
+          "text": "Passend zum Produkt weiterlesen"
+        },
+        {
+          "level": 3,
+          "text": "Ja, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Nein, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Dann lieber …"
+        },
+        {
+          "level": 3,
+          "text": "Beantworte die Fragen für eine persönliche Einordnung."
+        },
+        {
+          "level": 3,
+          "text": "Einrichten"
+        },
+        {
+          "level": 3,
+          "text": "Im Alltag tragen"
+        },
+        {
+          "level": 3,
+          "text": "Kontrollieren"
+        },
+        {
+          "level": 3,
+          "text": "Laden und pflegen"
+        },
+        {
+          "level": 3,
+          "text": "Tractive DOG 6"
+        },
+        {
+          "level": 3,
+          "text": "Tractive DOG 6 XL"
+        },
+        {
+          "level": 3,
+          "text": "Beste GPS-Tracker für Hunde"
+        },
+        {
+          "level": 3,
+          "text": "Trockenfutter oder Nassfutter für Hunde: Was ist besser?"
+        },
+        {
+          "level": 3,
+          "text": "Invoxia"
+        },
+        {
+          "level": 3,
+          "text": "GPS-Tracker für Hunde und Katzen"
+        }
+      ],
+      "recommendationTypes": [
+        "alternatives"
+      ],
+      "relatedProducts": [
+        "/produkt/tractive-dog-6/",
+        "/produkt/tractive-dog-6-xl/"
+      ],
+      "relatedComparisons": [
+        "/vergleiche/beste-gps-tracker-fuer-hunde/"
+      ],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "product-research",
+        "secondary": [
+          "transactional-support"
+        ],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/produkt/invoxia-biotracker-2026/",
+        "route": "/produkt/invoxia-biotracker-2026/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 90,
+        "signals": [
+          "clear-title-h1",
+          "meta-description",
+          "structured-headings",
+          "substantive-content",
+          "internal-context",
+          "structured-data",
+          "decision-support"
+        ]
+      }
+    },
+    {
+      "sourceFile": "apps/pfotentechnik/src/content/products/litter-robot-4.md",
+      "pageType": "product",
+      "title": "Litter-Robot 4: Größe, Gewicht und App im Check",
+      "h1": "Litter-Robot 4",
+      "h1Count": 1,
+      "metaDescription": "Litter-Robot 4 mit 40-cm-Eingang, 1,36-kg-Mindestgewicht, Whisker-App, Streu- und Abfallstand sowie Folgekosten einordnen.",
+      "canonicalRoute": "/produkt/litter-robot-4/",
+      "indexable": true,
+      "inSitemap": true,
+      "cluster": "automatische-katzentoiletten",
+      "secondaryIntents": [
+        "transactional-support"
+      ],
+      "mainEntity": "Litter-Robot 4",
+      "internalIncomingLinks": 5,
+      "internalOutgoingLinks": 10,
+      "wordCount": 944,
+      "headingCount": 29,
+      "headings": [
+        "Litter-Robot 4",
+        "Aktueller Preis",
+        "Lohnt sich Litter-Robot 4?",
+        "Was die wichtigsten Daten bedeuten",
+        "Passt dieses Produkt zu deinem Alltag?",
+        "So funktioniert die Nutzung laut Dokumentation und Quellen",
+        "Stärken",
+        "Schwächen",
+        "Technik ersetzt keine Kontrolle",
+        "Häufige Kauffragen",
+        "Quellen und Prüfgrundlage",
+        "Besser passend, nicht nur ähnlich",
+        "So ist diese Seite einzuordnen",
+        "Passend weiterentscheiden",
+        "Passend zum Produkt weiterlesen",
+        "Ja, wenn …",
+        "Nein, wenn …",
+        "Dann lieber …",
+        "Beantworte die Fragen für eine persönliche Einordnung.",
+        "Einrichten",
+        "Routine starten",
+        "Kontrollieren",
+        "Reinigen und nachstellen",
+        "Devoko 90L Automatisches Katzenklo",
+        "PETKIT PUROBOT MAX PRO 2",
+        "Automatische Katzentoiletten im Vergleich",
+        "Trinkbrunnen für zwei oder mehr Katzen",
+        "Whisker",
+        "Automatische Katzentoiletten"
+      ],
+      "structuredData": [
+        "Organization",
+        "WebPage",
+        "WebSite",
+        "BreadcrumbList",
+        "ListItem",
+        "Product",
+        "Brand"
+      ],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/produkt/litter-robot-4/",
+      "collection": "products",
+      "metaTitle": "Litter-Robot 4: Größe, Gewicht und App im Check",
+      "canonical": "https://pfotentechnik.de/produkt/litter-robot-4/",
+      "publishedAt": "2026-08-16",
+      "updatedAt": "2026-08-16",
+      "author": "PfotenTechnik Redaktion",
+      "animal": "cat",
+      "productCategory": "",
+      "audience": "cat",
+      "character": "commercial",
+      "linkDepth": 3,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Litter-Robot 4"
+        },
+        {
+          "level": 2,
+          "text": "Aktueller Preis"
+        },
+        {
+          "level": 2,
+          "text": "Lohnt sich Litter-Robot 4?"
+        },
+        {
+          "level": 2,
+          "text": "Was die wichtigsten Daten bedeuten"
+        },
+        {
+          "level": 2,
+          "text": "Passt dieses Produkt zu deinem Alltag?"
+        },
+        {
+          "level": 2,
+          "text": "So funktioniert die Nutzung laut Dokumentation und Quellen"
+        },
+        {
+          "level": 2,
+          "text": "Stärken"
+        },
+        {
+          "level": 2,
+          "text": "Schwächen"
+        },
+        {
+          "level": 2,
+          "text": "Technik ersetzt keine Kontrolle"
+        },
+        {
+          "level": 2,
+          "text": "Häufige Kauffragen"
+        },
+        {
+          "level": 2,
+          "text": "Quellen und Prüfgrundlage"
+        },
+        {
+          "level": 2,
+          "text": "Besser passend, nicht nur ähnlich"
+        },
+        {
+          "level": 2,
+          "text": "So ist diese Seite einzuordnen"
+        },
+        {
+          "level": 2,
+          "text": "Passend weiterentscheiden"
+        },
+        {
+          "level": 2,
+          "text": "Passend zum Produkt weiterlesen"
+        },
+        {
+          "level": 3,
+          "text": "Ja, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Nein, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Dann lieber …"
+        },
+        {
+          "level": 3,
+          "text": "Beantworte die Fragen für eine persönliche Einordnung."
+        },
+        {
+          "level": 3,
+          "text": "Einrichten"
+        },
+        {
+          "level": 3,
+          "text": "Routine starten"
+        },
+        {
+          "level": 3,
+          "text": "Kontrollieren"
+        },
+        {
+          "level": 3,
+          "text": "Reinigen und nachstellen"
+        },
+        {
+          "level": 3,
+          "text": "Devoko 90L Automatisches Katzenklo"
+        },
+        {
+          "level": 3,
+          "text": "PETKIT PUROBOT MAX PRO 2"
+        },
+        {
+          "level": 3,
+          "text": "Automatische Katzentoiletten im Vergleich"
+        },
+        {
+          "level": 3,
+          "text": "Trinkbrunnen für zwei oder mehr Katzen"
+        },
+        {
+          "level": 3,
+          "text": "Whisker"
+        },
+        {
+          "level": 3,
+          "text": "Automatische Katzentoiletten"
+        }
+      ],
+      "recommendationTypes": [
+        "alternatives"
+      ],
+      "relatedProducts": [
+        "/produkt/devoko-90l-automatisches-katzenklo/",
+        "/produkt/petkit-purobot-max-pro-2/"
+      ],
+      "relatedComparisons": [
+        "/vergleiche/beste-automatische-katzentoiletten/"
+      ],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "product-research",
+        "secondary": [
+          "transactional-support"
+        ],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/produkt/litter-robot-4/",
+        "route": "/produkt/litter-robot-4/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 90,
+        "signals": [
+          "clear-title-h1",
+          "meta-description",
+          "structured-headings",
+          "substantive-content",
+          "internal-context",
+          "structured-data",
+          "decision-support"
+        ]
+      }
+    },
+    {
       "sourceFile": "apps/pfotentechnik/src/content/products/litter-robot-5-pro.md",
       "pageType": "product",
       "title": "Litter-Robot 5 Pro im Check",
@@ -36469,7 +39733,7 @@
         "transactional-support"
       ],
       "mainEntity": "Litter-Robot 5 Pro",
-      "internalIncomingLinks": 3,
+      "internalIncomingLinks": 5,
       "internalOutgoingLinks": 14,
       "wordCount": 885,
       "headingCount": 34,
@@ -36787,7 +40051,7 @@
       "productCategory": "",
       "audience": "cat",
       "character": "commercial",
-      "linkDepth": 2,
+      "linkDepth": 3,
       "headingStructure": [
         {
           "level": 1,
@@ -36963,7 +40227,7 @@
         "transactional-support"
       ],
       "mainEntity": "Neakasa M1 Plus",
-      "internalIncomingLinks": 9,
+      "internalIncomingLinks": 10,
       "internalOutgoingLinks": 14,
       "wordCount": 830,
       "headingCount": 33,
@@ -37215,7 +40479,7 @@
         "transactional-support"
       ],
       "mainEntity": "oneisall 2,2L Cordless Cat Fountain",
-      "internalIncomingLinks": 13,
+      "internalIncomingLinks": 4,
       "internalOutgoingLinks": 16,
       "wordCount": 983,
       "headingCount": 31,
@@ -37942,7 +41206,7 @@
         "transactional-support"
       ],
       "mainEntity": "oneisall 3,5L Cordless Fountain",
-      "internalIncomingLinks": 22,
+      "internalIncomingLinks": 23,
       "internalOutgoingLinks": 18,
       "wordCount": 1068,
       "headingCount": 35,
@@ -38470,7 +41734,7 @@
         "transactional-support"
       ],
       "mainEntity": "oneisall 7L Dog Water Fountain",
-      "internalIncomingLinks": 25,
+      "internalIncomingLinks": 26,
       "internalOutgoingLinks": 16,
       "wordCount": 1528,
       "headingCount": 31,
@@ -39450,6 +42714,240 @@
       }
     },
     {
+      "sourceFile": "apps/pfotentechnik/src/content/products/pawfit-3.md",
+      "pageType": "product",
+      "title": "Pawfit 3: Gewicht, Akku, Abo und Audio-ID",
+      "h1": "Pawfit 3",
+      "h1Count": 1,
+      "metaDescription": "Pawfit 3 mit 27 g, 4G, GPS, WLAN, Bluetooth, bis 8 Tagen Akku, IP68, Audio-ID und Pflichtabo einordnen.",
+      "canonicalRoute": "/produkt/pawfit-3/",
+      "indexable": true,
+      "inSitemap": true,
+      "cluster": "gps-tracker",
+      "secondaryIntents": [
+        "transactional-support"
+      ],
+      "mainEntity": "Pawfit 3",
+      "internalIncomingLinks": 6,
+      "internalOutgoingLinks": 11,
+      "wordCount": 920,
+      "headingCount": 30,
+      "headings": [
+        "Pawfit 3",
+        "Aktueller Preis",
+        "Lohnt sich Pawfit 3?",
+        "Was die wichtigsten Daten bedeuten",
+        "Passt dieses Produkt zu deinem Alltag?",
+        "So funktioniert die Nutzung laut Dokumentation und Quellen",
+        "Stärken",
+        "Schwächen",
+        "Technik ersetzt keine Kontrolle",
+        "Häufige Kauffragen",
+        "Quellen und Prüfgrundlage",
+        "Besser passend, nicht nur ähnlich",
+        "So ist diese Seite einzuordnen",
+        "Passend weiterentscheiden",
+        "Passend zum Produkt weiterlesen",
+        "Ja, wenn …",
+        "Nein, wenn …",
+        "Dann lieber …",
+        "Beantworte die Fragen für eine persönliche Einordnung.",
+        "Einrichten",
+        "Im Alltag tragen",
+        "Kontrollieren",
+        "Laden und pflegen",
+        "Tractive DOG 6",
+        "Tractive DOG 6 XL",
+        "Weenect XS GPS-Tracker",
+        "Beste GPS-Tracker für Hunde",
+        "Trockenfutter oder Nassfutter für Hunde: Was ist besser?",
+        "Pawfit",
+        "GPS-Tracker für Hunde und Katzen"
+      ],
+      "structuredData": [
+        "Organization",
+        "WebPage",
+        "WebSite",
+        "BreadcrumbList",
+        "ListItem",
+        "Product",
+        "Brand"
+      ],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/produkt/pawfit-3/",
+      "collection": "products",
+      "metaTitle": "Pawfit 3: Gewicht, Akku, Abo und Audio-ID",
+      "canonical": "https://pfotentechnik.de/produkt/pawfit-3/",
+      "publishedAt": "2026-08-16",
+      "updatedAt": "2026-08-16",
+      "author": "PfotenTechnik Redaktion",
+      "animal": "dog",
+      "productCategory": "gps-tracker",
+      "audience": "dog",
+      "character": "commercial",
+      "linkDepth": 2,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Pawfit 3"
+        },
+        {
+          "level": 2,
+          "text": "Aktueller Preis"
+        },
+        {
+          "level": 2,
+          "text": "Lohnt sich Pawfit 3?"
+        },
+        {
+          "level": 2,
+          "text": "Was die wichtigsten Daten bedeuten"
+        },
+        {
+          "level": 2,
+          "text": "Passt dieses Produkt zu deinem Alltag?"
+        },
+        {
+          "level": 2,
+          "text": "So funktioniert die Nutzung laut Dokumentation und Quellen"
+        },
+        {
+          "level": 2,
+          "text": "Stärken"
+        },
+        {
+          "level": 2,
+          "text": "Schwächen"
+        },
+        {
+          "level": 2,
+          "text": "Technik ersetzt keine Kontrolle"
+        },
+        {
+          "level": 2,
+          "text": "Häufige Kauffragen"
+        },
+        {
+          "level": 2,
+          "text": "Quellen und Prüfgrundlage"
+        },
+        {
+          "level": 2,
+          "text": "Besser passend, nicht nur ähnlich"
+        },
+        {
+          "level": 2,
+          "text": "So ist diese Seite einzuordnen"
+        },
+        {
+          "level": 2,
+          "text": "Passend weiterentscheiden"
+        },
+        {
+          "level": 2,
+          "text": "Passend zum Produkt weiterlesen"
+        },
+        {
+          "level": 3,
+          "text": "Ja, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Nein, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Dann lieber …"
+        },
+        {
+          "level": 3,
+          "text": "Beantworte die Fragen für eine persönliche Einordnung."
+        },
+        {
+          "level": 3,
+          "text": "Einrichten"
+        },
+        {
+          "level": 3,
+          "text": "Im Alltag tragen"
+        },
+        {
+          "level": 3,
+          "text": "Kontrollieren"
+        },
+        {
+          "level": 3,
+          "text": "Laden und pflegen"
+        },
+        {
+          "level": 3,
+          "text": "Tractive DOG 6"
+        },
+        {
+          "level": 3,
+          "text": "Tractive DOG 6 XL"
+        },
+        {
+          "level": 3,
+          "text": "Weenect XS GPS-Tracker"
+        },
+        {
+          "level": 3,
+          "text": "Beste GPS-Tracker für Hunde"
+        },
+        {
+          "level": 3,
+          "text": "Trockenfutter oder Nassfutter für Hunde: Was ist besser?"
+        },
+        {
+          "level": 3,
+          "text": "Pawfit"
+        },
+        {
+          "level": 3,
+          "text": "GPS-Tracker für Hunde und Katzen"
+        }
+      ],
+      "recommendationTypes": [
+        "alternatives"
+      ],
+      "relatedProducts": [
+        "/produkt/tractive-dog-6/",
+        "/produkt/tractive-dog-6-xl/",
+        "/produkt/weenect-xs/"
+      ],
+      "relatedComparisons": [
+        "/vergleiche/beste-gps-tracker-fuer-hunde/"
+      ],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "product-research",
+        "secondary": [
+          "transactional-support"
+        ],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/produkt/pawfit-3/",
+        "route": "/produkt/pawfit-3/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 90,
+        "signals": [
+          "clear-title-h1",
+          "meta-description",
+          "structured-headings",
+          "substantive-content",
+          "internal-context",
+          "structured-data",
+          "decision-support"
+        ]
+      }
+    },
+    {
       "sourceFile": "apps/pfotentechnik/src/content/products/pawsync-smart-pet-feeder.md",
       "pageType": "product",
       "title": "PawSync Smart Pet Feeder Test",
@@ -39973,7 +43471,7 @@
         "transactional-support"
       ],
       "mainEntity": "PETKIT Eversweet 5 Mini",
-      "internalIncomingLinks": 5,
+      "internalIncomingLinks": 4,
       "internalOutgoingLinks": 16,
       "wordCount": 938,
       "headingCount": 31,
@@ -42001,6 +45499,234 @@
       }
     },
     {
+      "sourceFile": "apps/pfotentechnik/src/content/products/petkit-puramax-2.md",
+      "pageType": "product",
+      "title": "PETKIT PuraMax 2: Einstieg, Sensoren und Folgekosten",
+      "h1": "PETKIT PuraMax 2",
+      "h1Count": 1,
+      "metaDescription": "PETKIT PuraMax 2 mit 20-cm-Einstieg, 76-Liter-Zylinder, 7-Liter-Abfallfach, elf Sensoren, Streugrenzen und App einordnen.",
+      "canonicalRoute": "/produkt/petkit-puramax-2/",
+      "indexable": true,
+      "inSitemap": true,
+      "cluster": "automatische-katzentoiletten",
+      "secondaryIntents": [
+        "transactional-support"
+      ],
+      "mainEntity": "PETKIT PuraMax 2",
+      "internalIncomingLinks": 5,
+      "internalOutgoingLinks": 10,
+      "wordCount": 892,
+      "headingCount": 29,
+      "headings": [
+        "PETKIT PuraMax 2",
+        "Aktueller Preis",
+        "Lohnt sich PETKIT PuraMax 2?",
+        "Was die wichtigsten Daten bedeuten",
+        "Passt dieses Produkt zu deinem Alltag?",
+        "So funktioniert die Nutzung laut Dokumentation und Quellen",
+        "Stärken",
+        "Schwächen",
+        "Technik ersetzt keine Kontrolle",
+        "Häufige Kauffragen",
+        "Quellen und Prüfgrundlage",
+        "Besser passend, nicht nur ähnlich",
+        "So ist diese Seite einzuordnen",
+        "Passend weiterentscheiden",
+        "Passend zum Produkt weiterlesen",
+        "Ja, wenn …",
+        "Nein, wenn …",
+        "Dann lieber …",
+        "Beantworte die Fragen für eine persönliche Einordnung.",
+        "Einrichten",
+        "Routine starten",
+        "Kontrollieren",
+        "Reinigen und nachstellen",
+        "Devoko 90L Automatisches Katzenklo",
+        "PETKIT PUROBOT MAX PRO 2",
+        "Automatische Katzentoiletten im Vergleich",
+        "Trinkbrunnen für zwei oder mehr Katzen",
+        "PETKIT",
+        "Automatische Katzentoiletten"
+      ],
+      "structuredData": [
+        "Organization",
+        "WebPage",
+        "WebSite",
+        "BreadcrumbList",
+        "ListItem",
+        "Product",
+        "Brand"
+      ],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/produkt/petkit-puramax-2/",
+      "collection": "products",
+      "metaTitle": "PETKIT PuraMax 2: Einstieg, Sensoren und Folgekosten",
+      "canonical": "https://pfotentechnik.de/produkt/petkit-puramax-2/",
+      "publishedAt": "2026-08-16",
+      "updatedAt": "2026-08-16",
+      "author": "PfotenTechnik Redaktion",
+      "animal": "cat",
+      "productCategory": "",
+      "audience": "cat",
+      "character": "commercial",
+      "linkDepth": 3,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "PETKIT PuraMax 2"
+        },
+        {
+          "level": 2,
+          "text": "Aktueller Preis"
+        },
+        {
+          "level": 2,
+          "text": "Lohnt sich PETKIT PuraMax 2?"
+        },
+        {
+          "level": 2,
+          "text": "Was die wichtigsten Daten bedeuten"
+        },
+        {
+          "level": 2,
+          "text": "Passt dieses Produkt zu deinem Alltag?"
+        },
+        {
+          "level": 2,
+          "text": "So funktioniert die Nutzung laut Dokumentation und Quellen"
+        },
+        {
+          "level": 2,
+          "text": "Stärken"
+        },
+        {
+          "level": 2,
+          "text": "Schwächen"
+        },
+        {
+          "level": 2,
+          "text": "Technik ersetzt keine Kontrolle"
+        },
+        {
+          "level": 2,
+          "text": "Häufige Kauffragen"
+        },
+        {
+          "level": 2,
+          "text": "Quellen und Prüfgrundlage"
+        },
+        {
+          "level": 2,
+          "text": "Besser passend, nicht nur ähnlich"
+        },
+        {
+          "level": 2,
+          "text": "So ist diese Seite einzuordnen"
+        },
+        {
+          "level": 2,
+          "text": "Passend weiterentscheiden"
+        },
+        {
+          "level": 2,
+          "text": "Passend zum Produkt weiterlesen"
+        },
+        {
+          "level": 3,
+          "text": "Ja, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Nein, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Dann lieber …"
+        },
+        {
+          "level": 3,
+          "text": "Beantworte die Fragen für eine persönliche Einordnung."
+        },
+        {
+          "level": 3,
+          "text": "Einrichten"
+        },
+        {
+          "level": 3,
+          "text": "Routine starten"
+        },
+        {
+          "level": 3,
+          "text": "Kontrollieren"
+        },
+        {
+          "level": 3,
+          "text": "Reinigen und nachstellen"
+        },
+        {
+          "level": 3,
+          "text": "Devoko 90L Automatisches Katzenklo"
+        },
+        {
+          "level": 3,
+          "text": "PETKIT PUROBOT MAX PRO 2"
+        },
+        {
+          "level": 3,
+          "text": "Automatische Katzentoiletten im Vergleich"
+        },
+        {
+          "level": 3,
+          "text": "Trinkbrunnen für zwei oder mehr Katzen"
+        },
+        {
+          "level": 3,
+          "text": "PETKIT"
+        },
+        {
+          "level": 3,
+          "text": "Automatische Katzentoiletten"
+        }
+      ],
+      "recommendationTypes": [
+        "alternatives"
+      ],
+      "relatedProducts": [
+        "/produkt/devoko-90l-automatisches-katzenklo/",
+        "/produkt/petkit-purobot-max-pro-2/"
+      ],
+      "relatedComparisons": [
+        "/vergleiche/beste-automatische-katzentoiletten/"
+      ],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "product-research",
+        "secondary": [
+          "transactional-support"
+        ],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/produkt/petkit-puramax-2/",
+        "route": "/produkt/petkit-puramax-2/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 90,
+        "signals": [
+          "clear-title-h1",
+          "meta-description",
+          "structured-headings",
+          "substantive-content",
+          "internal-context",
+          "structured-data",
+          "decision-support"
+        ]
+      }
+    },
+    {
       "sourceFile": "apps/pfotentechnik/src/content/products/petkit-purobot-max-3.md",
       "pageType": "product",
       "title": "PETKIT PUROBOT MAX 3 im Datencheck",
@@ -42072,7 +45798,7 @@
       "productCategory": "",
       "audience": "cat",
       "character": "commercial",
-      "linkDepth": 2,
+      "linkDepth": 3,
       "headingStructure": [
         {
           "level": 1,
@@ -42244,7 +45970,7 @@
         "transactional-support"
       ],
       "mainEntity": "PETKIT PUROBOT MAX PRO 2",
-      "internalIncomingLinks": 12,
+      "internalIncomingLinks": 14,
       "internalOutgoingLinks": 13,
       "wordCount": 996,
       "headingCount": 33,
@@ -42309,7 +46035,7 @@
       "productCategory": "",
       "audience": "cat",
       "character": "commercial",
-      "linkDepth": 2,
+      "linkDepth": 3,
       "headingStructure": [
         {
           "level": 1,
@@ -46150,7 +49876,7 @@
       "productCategory": "",
       "audience": "cat",
       "character": "commercial",
-      "linkDepth": 2,
+      "linkDepth": 3,
       "headingStructure": [
         {
           "level": 1,
@@ -46829,7 +50555,7 @@
         "transactional-support"
       ],
       "mainEntity": "PETLIBRO Scout Smart Camera",
-      "internalIncomingLinks": 10,
+      "internalIncomingLinks": 11,
       "internalOutgoingLinks": 13,
       "wordCount": 838,
       "headingCount": 33,
@@ -48110,7 +51836,7 @@
         "transactional-support"
       ],
       "mainEntity": "PetSafe Mikrochip Katzenklappe",
-      "internalIncomingLinks": 7,
+      "internalIncomingLinks": 8,
       "internalOutgoingLinks": 14,
       "wordCount": 874,
       "headingCount": 34,
@@ -48369,7 +52095,7 @@
         "transactional-support"
       ],
       "mainEntity": "PetSafe Petporte smart flap",
-      "internalIncomingLinks": 12,
+      "internalIncomingLinks": 13,
       "internalOutgoingLinks": 13,
       "wordCount": 1233,
       "headingCount": 33,
@@ -48623,7 +52349,7 @@
         "transactional-support"
       ],
       "mainEntity": "PetSafe Smart Feed 2.0",
-      "internalIncomingLinks": 8,
+      "internalIncomingLinks": 7,
       "internalOutgoingLinks": 15,
       "wordCount": 1056,
       "headingCount": 35,
@@ -48873,6 +52599,241 @@
       }
     },
     {
+      "sourceFile": "apps/pfotentechnik/src/content/products/petsafe-streamside-trinkbrunnen.md",
+      "pageType": "product",
+      "title": "PetSafe Streamside: Keramik, Filter und Reinigung",
+      "h1": "PetSafe Keramik-Trinkbrunnen Streamside",
+      "h1Count": 1,
+      "metaDescription": "PetSafe Keramik-Trinkbrunnen Streamside mit 1,8 Litern, offener Schale, Kohle- und Schaumfilter sowie Reinigung einordnen.",
+      "canonicalRoute": "/produkt/petsafe-streamside-trinkbrunnen/",
+      "indexable": true,
+      "inSitemap": true,
+      "cluster": "trinkbrunnen",
+      "secondaryIntents": [
+        "transactional-support"
+      ],
+      "mainEntity": "PetSafe Keramik-Trinkbrunnen Streamside",
+      "internalIncomingLinks": 5,
+      "internalOutgoingLinks": 13,
+      "wordCount": 890,
+      "headingCount": 30,
+      "headings": [
+        "PetSafe Keramik-Trinkbrunnen Streamside",
+        "Aktueller Preis",
+        "Lohnt sich PetSafe Keramik-Trinkbrunnen Streamside?",
+        "Was die wichtigsten Daten bedeuten",
+        "Passt dieses Produkt zu deinem Alltag?",
+        "So funktioniert die Nutzung laut Dokumentation und Quellen",
+        "Stärken",
+        "Schwächen",
+        "Technik ersetzt keine Kontrolle",
+        "Häufige Kauffragen",
+        "Quellen und Prüfgrundlage",
+        "Besser passend, nicht nur ähnlich",
+        "So ist diese Seite einzuordnen",
+        "Passend weiterentscheiden",
+        "Passend zum Produkt weiterlesen",
+        "Ja, wenn …",
+        "Nein, wenn …",
+        "Dann lieber …",
+        "Beantworte die Fragen für eine persönliche Einordnung.",
+        "Einrichten",
+        "Wasser bereitstellen",
+        "Kontrollieren",
+        "Reinigen und nachstellen",
+        "Xiaomi Smart Pet Fountain 2",
+        "oneisall 7L Dog Water Fountain",
+        "oneisall 3,5L Cordless Fountain",
+        "Kleine GPS-Tracker für Katzen",
+        "GPS-Tracker für Hunde und Katzen",
+        "PetSafe",
+        "Welches Material beim Katzenbrunnen?"
+      ],
+      "structuredData": [
+        "Organization",
+        "WebPage",
+        "WebSite",
+        "BreadcrumbList",
+        "ListItem",
+        "Product",
+        "Brand"
+      ],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/produkt/petsafe-streamside-trinkbrunnen/",
+      "collection": "products",
+      "metaTitle": "PetSafe Streamside: Keramik, Filter und Reinigung",
+      "canonical": "https://pfotentechnik.de/produkt/petsafe-streamside-trinkbrunnen/",
+      "publishedAt": "2026-08-16",
+      "updatedAt": "2026-08-16",
+      "author": "PfotenTechnik Redaktion",
+      "animal": "both",
+      "productCategory": "trinkbrunnen",
+      "audience": "both",
+      "character": "commercial",
+      "linkDepth": 2,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "PetSafe Keramik-Trinkbrunnen Streamside"
+        },
+        {
+          "level": 2,
+          "text": "Aktueller Preis"
+        },
+        {
+          "level": 2,
+          "text": "Lohnt sich PetSafe Keramik-Trinkbrunnen Streamside?"
+        },
+        {
+          "level": 2,
+          "text": "Was die wichtigsten Daten bedeuten"
+        },
+        {
+          "level": 2,
+          "text": "Passt dieses Produkt zu deinem Alltag?"
+        },
+        {
+          "level": 2,
+          "text": "So funktioniert die Nutzung laut Dokumentation und Quellen"
+        },
+        {
+          "level": 2,
+          "text": "Stärken"
+        },
+        {
+          "level": 2,
+          "text": "Schwächen"
+        },
+        {
+          "level": 2,
+          "text": "Technik ersetzt keine Kontrolle"
+        },
+        {
+          "level": 2,
+          "text": "Häufige Kauffragen"
+        },
+        {
+          "level": 2,
+          "text": "Quellen und Prüfgrundlage"
+        },
+        {
+          "level": 2,
+          "text": "Besser passend, nicht nur ähnlich"
+        },
+        {
+          "level": 2,
+          "text": "So ist diese Seite einzuordnen"
+        },
+        {
+          "level": 2,
+          "text": "Passend weiterentscheiden"
+        },
+        {
+          "level": 2,
+          "text": "Passend zum Produkt weiterlesen"
+        },
+        {
+          "level": 3,
+          "text": "Ja, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Nein, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Dann lieber …"
+        },
+        {
+          "level": 3,
+          "text": "Beantworte die Fragen für eine persönliche Einordnung."
+        },
+        {
+          "level": 3,
+          "text": "Einrichten"
+        },
+        {
+          "level": 3,
+          "text": "Wasser bereitstellen"
+        },
+        {
+          "level": 3,
+          "text": "Kontrollieren"
+        },
+        {
+          "level": 3,
+          "text": "Reinigen und nachstellen"
+        },
+        {
+          "level": 3,
+          "text": "Xiaomi Smart Pet Fountain 2"
+        },
+        {
+          "level": 3,
+          "text": "oneisall 7L Dog Water Fountain"
+        },
+        {
+          "level": 3,
+          "text": "oneisall 3,5L Cordless Fountain"
+        },
+        {
+          "level": 3,
+          "text": "Kleine GPS-Tracker für Katzen"
+        },
+        {
+          "level": 3,
+          "text": "GPS-Tracker für Hunde und Katzen"
+        },
+        {
+          "level": 3,
+          "text": "PetSafe"
+        },
+        {
+          "level": 3,
+          "text": "Welches Material beim Katzenbrunnen?"
+        }
+      ],
+      "recommendationTypes": [
+        "alternatives"
+      ],
+      "relatedProducts": [
+        "/produkt/xiaomi-smart-pet-fountain-2/",
+        "/produkt/oneisall-7l-dog-water-fountain/",
+        "/produkt/oneisall-3-5l-cordless-fountain/"
+      ],
+      "relatedComparisons": [
+        "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+        "/vergleiche/kleine-gps-tracker-fuer-katzen/"
+      ],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "product-research",
+        "secondary": [
+          "transactional-support"
+        ],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/produkt/petsafe-streamside-trinkbrunnen/",
+        "route": "/produkt/petsafe-streamside-trinkbrunnen/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 90,
+        "signals": [
+          "clear-title-h1",
+          "meta-description",
+          "structured-headings",
+          "substantive-content",
+          "internal-context",
+          "structured-data",
+          "decision-support"
+        ]
+      }
+    },
+    {
       "sourceFile": "apps/pfotentechnik/src/content/products/petsnowy-snow-plus.md",
       "pageType": "product",
       "title": "PetSnowy SNOW+ (SNOW) im Datencheck",
@@ -48887,7 +52848,7 @@
         "transactional-support"
       ],
       "mainEntity": "PetSnowy SNOW+ (SNOW)",
-      "internalIncomingLinks": 4,
+      "internalIncomingLinks": 5,
       "internalOutgoingLinks": 11,
       "wordCount": 732,
       "headingCount": 27,
@@ -48942,7 +52903,7 @@
       "productCategory": "",
       "audience": "cat",
       "character": "commercial",
-      "linkDepth": 2,
+      "linkDepth": 3,
       "headingStructure": [
         {
           "level": 1,
@@ -49106,9 +53067,9 @@
         "transactional-support"
       ],
       "mainEntity": "PetTec Cam 360",
-      "internalIncomingLinks": 4,
+      "internalIncomingLinks": 6,
       "internalOutgoingLinks": 11,
-      "wordCount": 917,
+      "wordCount": 911,
       "headingCount": 29,
       "headings": [
         "PetTec Cam 360",
@@ -49139,7 +53100,7 @@
         "PETLIBRO Scout Smart Camera",
         "Haustierkameras im Vergleich",
         "Trinkbrunnen für zwei oder mehr Katzen",
-        "Haustierkameras"
+        "PetTec"
       ],
       "structuredData": [
         "Organization",
@@ -49279,7 +53240,7 @@
         },
         {
           "level": 3,
-          "text": "Haustierkameras"
+          "text": "PetTec"
         }
       ],
       "recommendationTypes": [
@@ -49539,6 +53500,463 @@
       "topicOwner": {
         "id": "route:/produkt/petwalk-medium-tiertuer/",
         "route": "/produkt/petwalk-medium-tiertuer/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 90,
+        "signals": [
+          "clear-title-h1",
+          "meta-description",
+          "structured-headings",
+          "substantive-content",
+          "internal-context",
+          "structured-data",
+          "decision-support"
+        ]
+      }
+    },
+    {
+      "sourceFile": "apps/pfotentechnik/src/content/products/prothelis-area-pets.md",
+      "pageType": "product",
+      "title": "Prothelis area Pets: Akku, Tarif und Mobilfunk",
+      "h1": "Prothelis area Pets",
+      "h1Count": 1,
+      "metaDescription": "Prothelis area Pets mit 38 g, GPS/GLONASS, bis 8 Tagen Nutzung, IP67, Geofence-Zeitplänen und GSM/GPRS/EDGE einordnen.",
+      "canonicalRoute": "/produkt/prothelis-area-pets/",
+      "indexable": true,
+      "inSitemap": true,
+      "cluster": "gps-tracker",
+      "secondaryIntents": [
+        "transactional-support"
+      ],
+      "mainEntity": "Prothelis area Pets",
+      "internalIncomingLinks": 7,
+      "internalOutgoingLinks": 10,
+      "wordCount": 917,
+      "headingCount": 29,
+      "headings": [
+        "Prothelis area Pets",
+        "Aktueller Preis",
+        "Lohnt sich Prothelis area Pets?",
+        "Was die wichtigsten Daten bedeuten",
+        "Passt dieses Produkt zu deinem Alltag?",
+        "So funktioniert die Nutzung laut Dokumentation und Quellen",
+        "Stärken",
+        "Schwächen",
+        "Technik ersetzt keine Kontrolle",
+        "Häufige Kauffragen",
+        "Quellen und Prüfgrundlage",
+        "Besser passend, nicht nur ähnlich",
+        "So ist diese Seite einzuordnen",
+        "Passend weiterentscheiden",
+        "Passend zum Produkt weiterlesen",
+        "Ja, wenn …",
+        "Nein, wenn …",
+        "Dann lieber …",
+        "Beantworte die Fragen für eine persönliche Einordnung.",
+        "Einrichten",
+        "Im Alltag tragen",
+        "Kontrollieren",
+        "Laden und pflegen",
+        "Tractive DOG 6",
+        "Tractive DOG 6 XL",
+        "Beste GPS-Tracker für Hunde",
+        "Trockenfutter oder Nassfutter für Hunde: Was ist besser?",
+        "Prothelis",
+        "GPS-Tracker für Hunde und Katzen"
+      ],
+      "structuredData": [
+        "Organization",
+        "WebPage",
+        "WebSite",
+        "BreadcrumbList",
+        "ListItem",
+        "Product",
+        "Brand"
+      ],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/produkt/prothelis-area-pets/",
+      "collection": "products",
+      "metaTitle": "Prothelis area Pets: Akku, Tarif und Mobilfunk",
+      "canonical": "https://pfotentechnik.de/produkt/prothelis-area-pets/",
+      "publishedAt": "2026-08-16",
+      "updatedAt": "2026-08-16",
+      "author": "PfotenTechnik Redaktion",
+      "animal": "dog",
+      "productCategory": "gps-tracker",
+      "audience": "dog",
+      "character": "commercial",
+      "linkDepth": 2,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Prothelis area Pets"
+        },
+        {
+          "level": 2,
+          "text": "Aktueller Preis"
+        },
+        {
+          "level": 2,
+          "text": "Lohnt sich Prothelis area Pets?"
+        },
+        {
+          "level": 2,
+          "text": "Was die wichtigsten Daten bedeuten"
+        },
+        {
+          "level": 2,
+          "text": "Passt dieses Produkt zu deinem Alltag?"
+        },
+        {
+          "level": 2,
+          "text": "So funktioniert die Nutzung laut Dokumentation und Quellen"
+        },
+        {
+          "level": 2,
+          "text": "Stärken"
+        },
+        {
+          "level": 2,
+          "text": "Schwächen"
+        },
+        {
+          "level": 2,
+          "text": "Technik ersetzt keine Kontrolle"
+        },
+        {
+          "level": 2,
+          "text": "Häufige Kauffragen"
+        },
+        {
+          "level": 2,
+          "text": "Quellen und Prüfgrundlage"
+        },
+        {
+          "level": 2,
+          "text": "Besser passend, nicht nur ähnlich"
+        },
+        {
+          "level": 2,
+          "text": "So ist diese Seite einzuordnen"
+        },
+        {
+          "level": 2,
+          "text": "Passend weiterentscheiden"
+        },
+        {
+          "level": 2,
+          "text": "Passend zum Produkt weiterlesen"
+        },
+        {
+          "level": 3,
+          "text": "Ja, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Nein, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Dann lieber …"
+        },
+        {
+          "level": 3,
+          "text": "Beantworte die Fragen für eine persönliche Einordnung."
+        },
+        {
+          "level": 3,
+          "text": "Einrichten"
+        },
+        {
+          "level": 3,
+          "text": "Im Alltag tragen"
+        },
+        {
+          "level": 3,
+          "text": "Kontrollieren"
+        },
+        {
+          "level": 3,
+          "text": "Laden und pflegen"
+        },
+        {
+          "level": 3,
+          "text": "Tractive DOG 6"
+        },
+        {
+          "level": 3,
+          "text": "Tractive DOG 6 XL"
+        },
+        {
+          "level": 3,
+          "text": "Beste GPS-Tracker für Hunde"
+        },
+        {
+          "level": 3,
+          "text": "Trockenfutter oder Nassfutter für Hunde: Was ist besser?"
+        },
+        {
+          "level": 3,
+          "text": "Prothelis"
+        },
+        {
+          "level": 3,
+          "text": "GPS-Tracker für Hunde und Katzen"
+        }
+      ],
+      "recommendationTypes": [
+        "alternatives"
+      ],
+      "relatedProducts": [
+        "/produkt/tractive-dog-6/",
+        "/produkt/tractive-dog-6-xl/"
+      ],
+      "relatedComparisons": [
+        "/vergleiche/beste-gps-tracker-fuer-hunde/"
+      ],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "product-research",
+        "secondary": [
+          "transactional-support"
+        ],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/produkt/prothelis-area-pets/",
+        "route": "/produkt/prothelis-area-pets/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 90,
+        "signals": [
+          "clear-title-h1",
+          "meta-description",
+          "structured-headings",
+          "substantive-content",
+          "internal-context",
+          "structured-data",
+          "decision-support"
+        ]
+      }
+    },
+    {
+      "sourceFile": "apps/pfotentechnik/src/content/products/reolink-e1-zoom.md",
+      "pageType": "product",
+      "title": "Reolink E1 Zoom 4K: lokale Speicherung und Tiererkennung",
+      "h1": "Reolink E1 Zoom (4K)",
+      "h1Count": 1,
+      "metaDescription": "Aktuelle Reolink E1 Zoom mit 4K 8 MP, 3-fach Zoom, microSD bis 512 GB, Pet Detection, Pan/Tilt, Nachtsicht und optionaler Cloud.",
+      "canonicalRoute": "/produkt/reolink-e1-zoom/",
+      "indexable": true,
+      "inSitemap": true,
+      "cluster": "haustierkameras",
+      "secondaryIntents": [
+        "transactional-support"
+      ],
+      "mainEntity": "Reolink E1 Zoom (4K)",
+      "internalIncomingLinks": 5,
+      "internalOutgoingLinks": 11,
+      "wordCount": 856,
+      "headingCount": 29,
+      "headings": [
+        "Reolink E1 Zoom (4K)",
+        "Aktueller Preis",
+        "Lohnt sich Reolink E1 Zoom (4K)?",
+        "Was die wichtigsten Daten bedeuten",
+        "Passt dieses Produkt zu deinem Alltag?",
+        "So funktioniert die Nutzung laut Dokumentation und Quellen",
+        "Stärken",
+        "Schwächen",
+        "Technik ersetzt keine Kontrolle",
+        "Häufige Kauffragen",
+        "Quellen und Prüfgrundlage",
+        "Besser passend, nicht nur ähnlich",
+        "So ist diese Seite einzuordnen",
+        "Passend weiterentscheiden",
+        "Passend zum Produkt weiterlesen",
+        "Ja, wenn …",
+        "Nein, wenn …",
+        "Dann lieber …",
+        "Beantworte die Fragen für eine persönliche Einordnung.",
+        "Einrichten",
+        "Routine starten",
+        "Kontrollieren",
+        "Reinigen und nachstellen",
+        "Enabot EBO Air 2",
+        "Furbo 360° Hundekamera",
+        "PETLIBRO Scout Smart Camera",
+        "Haustierkameras im Vergleich",
+        "Trinkbrunnen für zwei oder mehr Katzen",
+        "Reolink"
+      ],
+      "structuredData": [
+        "Organization",
+        "WebPage",
+        "WebSite",
+        "BreadcrumbList",
+        "ListItem",
+        "Product",
+        "Brand"
+      ],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/produkt/reolink-e1-zoom/",
+      "collection": "products",
+      "metaTitle": "Reolink E1 Zoom 4K: lokale Speicherung und Tiererkennung",
+      "canonical": "https://pfotentechnik.de/produkt/reolink-e1-zoom/",
+      "publishedAt": "2026-08-16",
+      "updatedAt": "2026-08-16",
+      "author": "PfotenTechnik Redaktion",
+      "animal": "both",
+      "productCategory": "",
+      "audience": "both",
+      "character": "commercial",
+      "linkDepth": 2,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Reolink E1 Zoom (4K)"
+        },
+        {
+          "level": 2,
+          "text": "Aktueller Preis"
+        },
+        {
+          "level": 2,
+          "text": "Lohnt sich Reolink E1 Zoom (4K)?"
+        },
+        {
+          "level": 2,
+          "text": "Was die wichtigsten Daten bedeuten"
+        },
+        {
+          "level": 2,
+          "text": "Passt dieses Produkt zu deinem Alltag?"
+        },
+        {
+          "level": 2,
+          "text": "So funktioniert die Nutzung laut Dokumentation und Quellen"
+        },
+        {
+          "level": 2,
+          "text": "Stärken"
+        },
+        {
+          "level": 2,
+          "text": "Schwächen"
+        },
+        {
+          "level": 2,
+          "text": "Technik ersetzt keine Kontrolle"
+        },
+        {
+          "level": 2,
+          "text": "Häufige Kauffragen"
+        },
+        {
+          "level": 2,
+          "text": "Quellen und Prüfgrundlage"
+        },
+        {
+          "level": 2,
+          "text": "Besser passend, nicht nur ähnlich"
+        },
+        {
+          "level": 2,
+          "text": "So ist diese Seite einzuordnen"
+        },
+        {
+          "level": 2,
+          "text": "Passend weiterentscheiden"
+        },
+        {
+          "level": 2,
+          "text": "Passend zum Produkt weiterlesen"
+        },
+        {
+          "level": 3,
+          "text": "Ja, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Nein, wenn …"
+        },
+        {
+          "level": 3,
+          "text": "Dann lieber …"
+        },
+        {
+          "level": 3,
+          "text": "Beantworte die Fragen für eine persönliche Einordnung."
+        },
+        {
+          "level": 3,
+          "text": "Einrichten"
+        },
+        {
+          "level": 3,
+          "text": "Routine starten"
+        },
+        {
+          "level": 3,
+          "text": "Kontrollieren"
+        },
+        {
+          "level": 3,
+          "text": "Reinigen und nachstellen"
+        },
+        {
+          "level": 3,
+          "text": "Enabot EBO Air 2"
+        },
+        {
+          "level": 3,
+          "text": "Furbo 360° Hundekamera"
+        },
+        {
+          "level": 3,
+          "text": "PETLIBRO Scout Smart Camera"
+        },
+        {
+          "level": 3,
+          "text": "Haustierkameras im Vergleich"
+        },
+        {
+          "level": 3,
+          "text": "Trinkbrunnen für zwei oder mehr Katzen"
+        },
+        {
+          "level": 3,
+          "text": "Reolink"
+        }
+      ],
+      "recommendationTypes": [
+        "alternatives"
+      ],
+      "relatedProducts": [
+        "/produkt/enabot-ebo-air-2/",
+        "/produkt/furbo-360-hundekamera/",
+        "/produkt/petlibro-scout-smart-camera/"
+      ],
+      "relatedComparisons": [
+        "/vergleiche/beste-haustierkameras/"
+      ],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "product-research",
+        "secondary": [
+          "transactional-support"
+        ],
+        "confidence": "high",
+        "source": "page-type"
+      },
+      "topicOwner": {
+        "id": "route:/produkt/reolink-e1-zoom/",
+        "route": "/produkt/reolink-e1-zoom/",
         "explicit": false
       },
       "quality": {
@@ -50871,7 +55289,7 @@
         "transactional-support"
       ],
       "mainEntity": "Tractive CAT 6 Mini",
-      "internalIncomingLinks": 11,
+      "internalIncomingLinks": 9,
       "internalOutgoingLinks": 13,
       "wordCount": 1308,
       "headingCount": 31,
@@ -51114,7 +55532,7 @@
         "transactional-support"
       ],
       "mainEntity": "Tractive DOG 6 XL",
-      "internalIncomingLinks": 16,
+      "internalIncomingLinks": 19,
       "internalOutgoingLinks": 14,
       "wordCount": 1633,
       "headingCount": 35,
@@ -51377,7 +55795,7 @@
         "transactional-support"
       ],
       "mainEntity": "Tractive DOG 6",
-      "internalIncomingLinks": 22,
+      "internalIncomingLinks": 25,
       "internalOutgoingLinks": 16,
       "wordCount": 1582,
       "headingCount": 35,
@@ -51640,7 +56058,7 @@
         "transactional-support"
       ],
       "mainEntity": "Weenect XS GPS-Tracker",
-      "internalIncomingLinks": 16,
+      "internalIncomingLinks": 17,
       "internalOutgoingLinks": 15,
       "wordCount": 1621,
       "headingCount": 35,
@@ -53377,7 +57795,7 @@
         "transactional-support"
       ],
       "mainEntity": "Xiaomi Smart Pet Fountain 2",
-      "internalIncomingLinks": 44,
+      "internalIncomingLinks": 45,
       "internalOutgoingLinks": 18,
       "wordCount": 1175,
       "headingCount": 35,
@@ -53641,7 +58059,7 @@
         "transactional-support"
       ],
       "mainEntity": "ZeroMOUSE 2.0",
-      "internalIncomingLinks": 13,
+      "internalIncomingLinks": 14,
       "internalOutgoingLinks": 15,
       "wordCount": 1327,
       "headingCount": 31,
@@ -54068,7 +58486,7 @@
       "cluster": "smarte-haustiertechnik",
       "secondaryIntents": [],
       "mainEntity": "Redaktion und Unabhängigkeit",
-      "internalIncomingLinks": 122,
+      "internalIncomingLinks": 131,
       "internalOutgoingLinks": 4,
       "wordCount": 378,
       "headingCount": 8,
@@ -55559,9 +59977,9 @@
         "informational"
       ],
       "mainEntity": "Smarte Haustiertechnik – Der große Ratgeber",
-      "internalIncomingLinks": 33,
-      "internalOutgoingLinks": 47,
-      "wordCount": 3217,
+      "internalIncomingLinks": 35,
+      "internalOutgoingLinks": 53,
+      "wordCount": 3223,
       "headingCount": 59,
       "headings": [
         "Smarte Haustiertechnik – Der große Ratgeber",
@@ -55942,7 +60360,7 @@
       "cluster": "futterautomaten",
       "secondaryIntents": [],
       "mainEntity": "So bewertet PfotenTechnik Produkte",
-      "internalIncomingLinks": 123,
+      "internalIncomingLinks": 132,
       "internalOutgoingLinks": 19,
       "wordCount": 1428,
       "headingCount": 23,
@@ -56147,7 +60565,7 @@
       "mainEntity": "Ist ein Trinkbrunnen für Katzen sinnvoll?",
       "internalIncomingLinks": 12,
       "internalOutgoingLinks": 21,
-      "wordCount": 2612,
+      "wordCount": 2606,
       "headingCount": 60,
       "headings": [
         "Ist ein Trinkbrunnen für Katzen sinnvoll?",
@@ -56176,7 +60594,7 @@
         "Das könnte dich auch interessieren",
         "Cat Mate Pet Fountain 335",
         "Cat Mate Shell Pet Fountain",
-        "oneisall 2,2L Cordless Cat Fountain",
+        "Catit PIXI Smart-Trinkbrunnen",
         "Bewegtes Wasser kann Aufmerksamkeit wecken",
         "Filter halten Haare und Partikel zurück",
         "Größere Wasserreserve",
@@ -56342,7 +60760,7 @@
         },
         {
           "level": 3,
-          "text": "oneisall 2,2L Cordless Cat Fountain"
+          "text": "Catit PIXI Smart-Trinkbrunnen"
         },
         {
           "level": 3,
@@ -56483,7 +60901,7 @@
       "relatedProducts": [
         "/produkt/cat-mate-335-pet-fountain/",
         "/produkt/cat-mate-shell-fountain/",
-        "/produkt/oneisall-2-2l-cordless-fountain/",
+        "/produkt/catit-pixi-smart-trinkbrunnen/",
         "/produkt/petkit-eversweet-3-pro-uvc/",
         "/produkt/petlibro-dockstream-rfid-smart/",
         "/produkt/xiaomi-smart-pet-fountain-2/",
@@ -56535,7 +60953,7 @@
       "mainEntity": "Ist ein Trinkbrunnen für Kitten sicher?",
       "internalIncomingLinks": 2,
       "internalOutgoingLinks": 19,
-      "wordCount": 865,
+      "wordCount": 859,
       "headingCount": 25,
       "headings": [
         "Ist ein Trinkbrunnen für Kitten sicher?",
@@ -56555,7 +60973,7 @@
         "Das könnte dich auch interessieren",
         "Cat Mate Pet Fountain 335",
         "Cat Mate Shell Pet Fountain",
-        "oneisall 2,2L Cordless Cat Fountain",
+        "Catit PIXI Smart-Trinkbrunnen",
         "Passende Kaufberatung öffnen",
         "Geeignete Modelle gegenüberstellen",
         "Technik sicher im Alltag nutzen",
@@ -56659,7 +61077,7 @@
         },
         {
           "level": 3,
-          "text": "oneisall 2,2L Cordless Cat Fountain"
+          "text": "Catit PIXI Smart-Trinkbrunnen"
         },
         {
           "level": 3,
@@ -56696,7 +61114,7 @@
       "relatedProducts": [
         "/produkt/cat-mate-335-pet-fountain/",
         "/produkt/cat-mate-shell-fountain/",
-        "/produkt/oneisall-2-2l-cordless-fountain/",
+        "/produkt/catit-pixi-smart-trinkbrunnen/",
         "/produkt/xiaomi-smart-pet-fountain-2/"
       ],
       "relatedComparisons": [
@@ -56743,9 +61161,9 @@
       "cluster": "trinkbrunnen",
       "secondaryIntents": [],
       "mainEntity": "Trinkbrunnen für zwei oder mehr Katzen",
-      "internalIncomingLinks": 45,
+      "internalIncomingLinks": 50,
       "internalOutgoingLinks": 18,
-      "wordCount": 1022,
+      "wordCount": 1016,
       "headingCount": 27,
       "headings": [
         "Trinkbrunnen für zwei oder mehr Katzen",
@@ -56768,7 +61186,7 @@
         "Das könnte dich auch interessieren",
         "Cat Mate Pet Fountain 335",
         "Cat Mate Shell Pet Fountain",
-        "oneisall 2,2L Cordless Cat Fountain",
+        "Catit PIXI Smart-Trinkbrunnen",
         "SureFeed Microchip Pet Feeder",
         "Beste Trinkbrunnen für Katzen",
         "Ist ein Katzenbrunnen sinnvoll?",
@@ -56883,7 +61301,7 @@
         },
         {
           "level": 3,
-          "text": "oneisall 2,2L Cordless Cat Fountain"
+          "text": "Catit PIXI Smart-Trinkbrunnen"
         },
         {
           "level": 3,
@@ -56917,7 +61335,7 @@
       "relatedProducts": [
         "/produkt/cat-mate-335-pet-fountain/",
         "/produkt/cat-mate-shell-fountain/",
-        "/produkt/oneisall-2-2l-cordless-fountain/",
+        "/produkt/catit-pixi-smart-trinkbrunnen/",
         "/produkt/petkit-eversweet-ultra/",
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/surefeed-microchip-pet-feeder/"
@@ -57147,7 +61565,7 @@
       "mainEntity": "Trinkbrunnen für Seniorenkatzen auswählen",
       "internalIncomingLinks": 4,
       "internalOutgoingLinks": 20,
-      "wordCount": 891,
+      "wordCount": 885,
       "headingCount": 25,
       "headings": [
         "Trinkbrunnen für Seniorenkatzen auswählen",
@@ -57168,7 +61586,7 @@
         "Das könnte dich auch interessieren",
         "Cat Mate Pet Fountain 335",
         "Cat Mate Shell Pet Fountain",
-        "oneisall 2,2L Cordless Cat Fountain",
+        "Catit PIXI Smart-Trinkbrunnen",
         "SureFeed Microchip Pet Feeder",
         "Beste Futterautomaten für Seniorenkatzen",
         "Ist ein Katzenbrunnen sinnvoll?",
@@ -57275,7 +61693,7 @@
         },
         {
           "level": 3,
-          "text": "oneisall 2,2L Cordless Cat Fountain"
+          "text": "Catit PIXI Smart-Trinkbrunnen"
         },
         {
           "level": 3,
@@ -57309,7 +61727,7 @@
       "relatedProducts": [
         "/produkt/cat-mate-335-pet-fountain/",
         "/produkt/cat-mate-shell-fountain/",
-        "/produkt/oneisall-2-2l-cordless-fountain/",
+        "/produkt/catit-pixi-smart-trinkbrunnen/",
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/surefeed-microchip-pet-feeder/"
       ],
@@ -57359,9 +61777,9 @@
         "informational"
       ],
       "mainEntity": "Trinkbrunnen für Katzen und Hunde",
-      "internalIncomingLinks": 58,
-      "internalOutgoingLinks": 42,
-      "wordCount": 2466,
+      "internalIncomingLinks": 60,
+      "internalOutgoingLinks": 44,
+      "wordCount": 2463,
       "headingCount": 51,
       "headings": [
         "Trinkbrunnen für Katzen und Hunde",
@@ -57403,10 +61821,10 @@
         "Ein Brunnen als einzige Wasserstelle",
         "Cat Mate Pet Fountain 335",
         "Cat Mate Shell Pet Fountain",
+        "Catit PIXI Smart-Trinkbrunnen",
         "oneisall 2,2L Cordless Cat Fountain",
         "oneisall 3,2L Cordless Cat Fountain",
         "oneisall 3,5L Cordless Fountain",
-        "oneisall 7L Dog Water Fountain",
         "Kapazität nicht mit Frische verwechseln",
         "Lautstärke realistisch einordnen",
         "Filterkosten über die Nutzungsdauer rechnen",
@@ -57599,6 +62017,10 @@
         },
         {
           "level": 3,
+          "text": "Catit PIXI Smart-Trinkbrunnen"
+        },
+        {
+          "level": 3,
           "text": "oneisall 2,2L Cordless Cat Fountain"
         },
         {
@@ -57608,10 +62030,6 @@
         {
           "level": 3,
           "text": "oneisall 3,5L Cordless Fountain"
-        },
-        {
-          "level": 3,
-          "text": "oneisall 7L Dog Water Fountain"
         },
         {
           "level": 3,
@@ -57652,6 +62070,7 @@
       "relatedProducts": [
         "/produkt/cat-mate-335-pet-fountain/",
         "/produkt/cat-mate-shell-fountain/",
+        "/produkt/catit-pixi-smart-trinkbrunnen/",
         "/produkt/oneisall-2-2l-cordless-fountain/",
         "/produkt/oneisall-3-2l-cordless-fountain/",
         "/produkt/oneisall-3-5l-cordless-fountain/",
@@ -57670,6 +62089,7 @@
         "/produkt/petlibro-dockstream-rfid-smart/",
         "/produkt/petlibro-glacier-ultrafiltration/",
         "/produkt/petlibro-stainless-steel-fountain/",
+        "/produkt/petsafe-streamside-trinkbrunnen/",
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/petlibro-polar-wet-food-feeder/"
       ],
@@ -58068,7 +62488,7 @@
       "cluster": "hundeernaehrung",
       "secondaryIntents": [],
       "mainEntity": "Trockenfutter oder Nassfutter für Hunde: Was ist besser?",
-      "internalIncomingLinks": 18,
+      "internalIncomingLinks": 24,
       "internalOutgoingLinks": 26,
       "wordCount": 4257,
       "headingCount": 86,
@@ -59647,7 +64067,7 @@
       "mainEntity": "Welcher Vergleich hilft dir bei deiner Entscheidung?",
       "internalIncomingLinks": 59,
       "internalOutgoingLinks": 29,
-      "wordCount": 612,
+      "wordCount": 615,
       "headingCount": 31,
       "headings": [
         "Welcher Vergleich hilft dir bei deiner Entscheidung?",
@@ -59894,7 +64314,7 @@
       "title": "Automatische Katzentoiletten 2026: Sicherheit & Passform",
       "h1": "Automatische Katzentoiletten im Vergleich",
       "h1Count": 1,
-      "metaDescription": "Neakasa M1 Lite, Devoko 90L, PETLIBRO Luma und PETKIT PUROBOT nach Bauform, Einstieg, Sicherheit, Streu, Daten und Folgekosten vergleichen.",
+      "metaDescription": "Neun automatische Katzentoiletten von offen bis geschlossen nach Einstieg, Sicherheit, Streu, Monitoring, Wartung und Folgekosten vergleichen.",
       "canonicalRoute": "/vergleiche/beste-automatische-katzentoiletten/",
       "indexable": true,
       "inSitemap": true,
@@ -59904,9 +64324,9 @@
         "transactional-support"
       ],
       "mainEntity": "Automatische Katzentoiletten im Vergleich",
-      "internalIncomingLinks": 21,
-      "internalOutgoingLinks": 18,
-      "wordCount": 2008,
+      "internalIncomingLinks": 22,
+      "internalOutgoingLinks": 21,
+      "wordCount": 2591,
       "headingCount": 26,
       "headings": [
         "Automatische Katzentoiletten im Vergleich",
@@ -59915,10 +64335,10 @@
         "Wähle bis zu 4 Modelle",
         "Darauf solltest du bei der Auswahl achten",
         "Sicherheits- und Ausschlusslogik",
-        "Vier unterschiedliche Kaufrollen",
+        "Neun unterschiedliche Kaufrollen",
         "Streu und Mehrkatzenbetrieb",
         "Daten, Ausfall und Folgekosten",
-        "Sechs unterschiedliche Kaufrollen",
+        "Neun Kaufrollen als Ausschlussmatrix",
         "So ist diese Seite einzuordnen",
         "Welche Geräteklasse passt zu deinen Anforderungen?",
         "Was ist jetzt sinnvoll?",
@@ -59947,8 +64367,8 @@
         "Answer",
         "ItemList"
       ],
-      "expectedComparisonCount": 6,
-      "renderedComparisonCount": 6,
+      "expectedComparisonCount": 9,
+      "renderedComparisonCount": 9,
       "route": "/vergleiche/beste-automatische-katzentoiletten/",
       "collection": "comparisons",
       "metaTitle": "Automatische Katzentoiletten 2026: Sicherheit & Passform",
@@ -59960,7 +64380,7 @@
       "productCategory": "",
       "audience": "cat",
       "character": "commercial",
-      "linkDepth": 1,
+      "linkDepth": 2,
       "headingStructure": [
         {
           "level": 1,
@@ -59988,7 +64408,7 @@
         },
         {
           "level": 2,
-          "text": "Vier unterschiedliche Kaufrollen"
+          "text": "Neun unterschiedliche Kaufrollen"
         },
         {
           "level": 2,
@@ -60000,7 +64420,7 @@
         },
         {
           "level": 2,
-          "text": "Sechs unterschiedliche Kaufrollen"
+          "text": "Neun Kaufrollen als Ausschlussmatrix"
         },
         {
           "level": 2,
@@ -60078,6 +64498,9 @@
         "/produkt/petlibro-luma-smart-litter-box/",
         "/produkt/petkit-purobot-max-3/",
         "/produkt/petsnowy-snow-plus/",
+        "/produkt/petkit-puramax-2/",
+        "/produkt/litter-robot-4/",
+        "/produkt/litter-robot-5-pro/",
         "/produkt/petlibro-polar-wet-food-feeder/"
       ],
       "relatedComparisons": [
@@ -60735,7 +65158,7 @@
         "transactional-support"
       ],
       "mainEntity": "Beste Futterautomaten für Katzen",
-      "internalIncomingLinks": 55,
+      "internalIncomingLinks": 54,
       "internalOutgoingLinks": 35,
       "wordCount": 3506,
       "headingCount": 48,
@@ -61632,7 +66055,7 @@
         "transactional-support"
       ],
       "mainEntity": "Beste Futterautomaten für Nassfutter",
-      "internalIncomingLinks": 24,
+      "internalIncomingLinks": 26,
       "internalOutgoingLinks": 34,
       "wordCount": 5079,
       "headingCount": 85,
@@ -62851,10 +67274,10 @@
     {
       "sourceFile": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
       "pageType": "comparison",
-      "title": "Futterautomaten für 2 Katzen: 5 Systeme im Vergleich",
+      "title": "Futterautomaten für 2 Katzen: 4 Systeme im Vergleich",
       "h1": "Beste Futterautomaten für zwei Katzen",
       "h1Count": 1,
-      "metaDescription": "Fünf Futterautomaten für zwei Katzen vergleichen: Mikrochip-Zugang, Doppelschale, Dual-Hopper, App, Portionierung und Schutz vor Futterklau.",
+      "metaDescription": "Vier Futterautomaten für zwei Katzen vergleichen: Mikrochip-Zugang, Doppelschale, Dual-Hopper, App, Portionierung und Schutz vor Futterklau.",
       "canonicalRoute": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
       "indexable": true,
       "inSitemap": true,
@@ -62978,7 +67401,7 @@
       "renderedComparisonCount": 4,
       "route": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
       "collection": "comparisons",
-      "metaTitle": "Futterautomaten für 2 Katzen: 5 Systeme im Vergleich",
+      "metaTitle": "Futterautomaten für 2 Katzen: 4 Systeme im Vergleich",
       "canonical": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
       "publishedAt": "2026-07-09",
       "updatedAt": "2026-07-30",
@@ -64946,9 +69369,9 @@
         "transactional-support"
       ],
       "mainEntity": "Beste GPS-Tracker für Hunde",
-      "internalIncomingLinks": 22,
-      "internalOutgoingLinks": 21,
-      "wordCount": 2482,
+      "internalIncomingLinks": 28,
+      "internalOutgoingLinks": 23,
+      "wordCount": 2663,
       "headingCount": 39,
       "headings": [
         "Beste GPS-Tracker für Hunde",
@@ -65002,14 +69425,14 @@
         "Answer",
         "ItemList"
       ],
-      "expectedComparisonCount": 7,
-      "renderedComparisonCount": 7,
+      "expectedComparisonCount": 10,
+      "renderedComparisonCount": 10,
       "route": "/vergleiche/beste-gps-tracker-fuer-hunde/",
       "collection": "comparisons",
       "metaTitle": "Beste GPS-Tracker für Hunde",
       "canonical": "https://pfotentechnik.de/vergleiche/beste-gps-tracker-fuer-hunde/",
       "publishedAt": "2026-07-20",
-      "updatedAt": "2026-08-15",
+      "updatedAt": "2026-08-16",
       "author": "PfotenTechnik Redaktion",
       "animal": "both",
       "productCategory": "gps-tracker",
@@ -65185,7 +69608,9 @@
         "/produkt/weenect-xt/",
         "/produkt/garmin-alpha-t-20/",
         "/produkt/enabot-rola-pettracker/",
-        "/produkt/tractive-cat-6-mini/"
+        "/produkt/invoxia-biotracker-2026/",
+        "/produkt/prothelis-area-pets/",
+        "/produkt/pawfit-3/"
       ],
       "relatedComparisons": [
         "/vergleiche/",
@@ -65507,7 +69932,7 @@
       "title": "Haustierkameras 2026: Typ, Cloud & Abo vergleichen",
       "h1": "Haustierkameras im Vergleich",
       "h1Count": 1,
-      "metaDescription": "PETLIBRO Scout, Furbo Mini 360 und Enabot ROLA Mini nach Kameratyp, Speicher, Cloud, Abo, Interaktion und Raumabdeckung vergleichen.",
+      "metaDescription": "Fünf Haustierkameras von Pet-Cloud bis lokaler Indoor-Kamera nach Speicher, Abo, Tiererkennung und Raumabdeckung vergleichen.",
       "canonicalRoute": "/vergleiche/beste-haustierkameras/",
       "indexable": true,
       "inSitemap": true,
@@ -65517,9 +69942,9 @@
         "transactional-support"
       ],
       "mainEntity": "Haustierkameras im Vergleich",
-      "internalIncomingLinks": 12,
-      "internalOutgoingLinks": 16,
-      "wordCount": 1649,
+      "internalIncomingLinks": 15,
+      "internalOutgoingLinks": 17,
+      "wordCount": 1793,
       "headingCount": 23,
       "headings": [
         "Haustierkameras im Vergleich",
@@ -65557,14 +69982,14 @@
         "Answer",
         "ItemList"
       ],
-      "expectedComparisonCount": 4,
-      "renderedComparisonCount": 4,
+      "expectedComparisonCount": 5,
+      "renderedComparisonCount": 5,
       "route": "/vergleiche/beste-haustierkameras/",
       "collection": "comparisons",
       "metaTitle": "Haustierkameras 2026: Typ, Cloud & Abo vergleichen",
       "canonical": "https://pfotentechnik.de/vergleiche/beste-haustierkameras/",
       "publishedAt": "2026-08-06",
-      "updatedAt": "2026-08-15",
+      "updatedAt": "2026-08-16",
       "author": "PfotenTechnik Redaktion",
       "animal": "both",
       "productCategory": "",
@@ -65674,6 +70099,7 @@
         "/produkt/furbo-mini-360/",
         "/produkt/enabot-rola-mini/",
         "/produkt/pettec-cam-360/",
+        "/produkt/reolink-e1-zoom/",
         "/produkt/petlibro-polar-wet-food-feeder/",
         "/produkt/furbo-360-hundekamera/",
         "/produkt/enabot-ebo-air-2/"
@@ -65726,9 +70152,9 @@
         "transactional-support"
       ],
       "mainEntity": "Mikrochip-Katzenklappen im Vergleich",
-      "internalIncomingLinks": 17,
-      "internalOutgoingLinks": 19,
-      "wordCount": 1309,
+      "internalIncomingLinks": 19,
+      "internalOutgoingLinks": 20,
+      "wordCount": 1402,
       "headingCount": 22,
       "headings": [
         "Mikrochip-Katzenklappen im Vergleich",
@@ -65750,7 +70176,7 @@
         "Futterautomaten für Katzen",
         "SureFlap DualScan Mikrochip Katzenklappe",
         "PetSafe Mikrochip Katzenklappe",
-        "OnlyCat",
+        "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer",
         "Beste Trinkbrunnen für Hunde",
         "Beste Trinkbrunnen für Katzen"
       ],
@@ -65765,20 +70191,20 @@
         "Answer",
         "ItemList"
       ],
-      "expectedComparisonCount": 7,
-      "renderedComparisonCount": 7,
+      "expectedComparisonCount": 8,
+      "renderedComparisonCount": 8,
       "route": "/vergleiche/beste-mikrochip-katzenklappen/",
       "collection": "comparisons",
       "metaTitle": "Mikrochip-Katzenklappen: 7 Systeme im Vergleich",
       "canonical": "https://pfotentechnik.de/vergleiche/beste-mikrochip-katzenklappen/",
       "publishedAt": "2026-08-04",
-      "updatedAt": "2026-08-04",
+      "updatedAt": "2026-08-16",
       "author": "PfotenTechnik Redaktion",
       "animal": "both",
       "productCategory": "",
       "audience": "both",
       "character": "commercial",
-      "linkDepth": 2,
+      "linkDepth": 1,
       "headingStructure": [
         {
           "level": 1,
@@ -65858,7 +70284,7 @@
         },
         {
           "level": 3,
-          "text": "OnlyCat"
+          "text": "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer"
         },
         {
           "level": 3,
@@ -65880,7 +70306,8 @@
         "/produkt/sureflap-dualscan-mikrochip-katzenklappe/",
         "/produkt/petsafe-petporte-smart-flap/",
         "/produkt/onlycat-mikrochip-katzenklappe/",
-        "/produkt/petwalk-medium-tiertuer/"
+        "/produkt/petwalk-medium-tiertuer/",
+        "/produkt/cat-mate-elite-355w/"
       ],
       "relatedComparisons": [
         "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
@@ -66197,10 +70624,10 @@
     {
       "sourceFile": "apps/pfotentechnik/src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
       "pageType": "comparison",
-      "title": "Katzenbrunnen Vergleich 2026: 9 Modelle im Check",
+      "title": "Katzenbrunnen Vergleich 2026: 11 Modelle im Check",
       "h1": "Beste Trinkbrunnen für Katzen",
       "h1Count": 1,
-      "metaDescription": "Neun Katzenbrunnen im Vergleich: Netzbetrieb, Akku, Edelstahl, UVC, Mehrkatzen-Tracking, Filterkosten und Reinigungsaufwand transparent eingeordnet.",
+      "metaDescription": "Elf Katzenbrunnen im Vergleich: Netzbetrieb, Akku, Edelstahl, Keramik, UVC, Mehrkatzen-Tracking, Filterkosten und Reinigungsaufwand transparent eingeordnet.",
       "canonicalRoute": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
       "indexable": true,
       "inSitemap": true,
@@ -66210,9 +70637,9 @@
         "transactional-support"
       ],
       "mainEntity": "Beste Trinkbrunnen für Katzen",
-      "internalIncomingLinks": 45,
+      "internalIncomingLinks": 48,
       "internalOutgoingLinks": 32,
-      "wordCount": 2795,
+      "wordCount": 2929,
       "headingCount": 36,
       "headings": [
         "Beste Trinkbrunnen für Katzen",
@@ -66247,8 +70674,8 @@
         "Wähle mindestens zwei Modelle",
         "Futterautomaten für Katzen",
         "PETLIBRO Polar Wet Food Feeder",
+        "PetSafe Keramik-Trinkbrunnen Streamside",
         "PETKIT Eversweet 3 Pro UVC",
-        "PETLIBRO Dockstream 2 Smart",
         "Trinkbrunnen",
         "Beste Trinkbrunnen für Hunde"
       ],
@@ -66263,14 +70690,14 @@
         "Answer",
         "ItemList"
       ],
-      "expectedComparisonCount": 9,
-      "renderedComparisonCount": 9,
+      "expectedComparisonCount": 11,
+      "renderedComparisonCount": 11,
       "route": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
       "collection": "comparisons",
-      "metaTitle": "Katzenbrunnen Vergleich 2026: 9 Modelle im Check",
+      "metaTitle": "Katzenbrunnen Vergleich 2026: 11 Modelle im Check",
       "canonical": "https://pfotentechnik.de/vergleiche/beste-trinkbrunnen-fuer-katzen/",
       "publishedAt": "2026-07-24",
-      "updatedAt": "2026-08-06",
+      "updatedAt": "2026-08-16",
       "author": "PfotenTechnik Redaktion",
       "animal": "both",
       "productCategory": "trinkbrunnen",
@@ -66408,11 +70835,11 @@
         },
         {
           "level": 3,
-          "text": "PETKIT Eversweet 3 Pro UVC"
+          "text": "PetSafe Keramik-Trinkbrunnen Streamside"
         },
         {
           "level": 3,
-          "text": "PETLIBRO Dockstream 2 Smart"
+          "text": "PETKIT Eversweet 3 Pro UVC"
         },
         {
           "level": 3,
@@ -66437,8 +70864,8 @@
         "/produkt/petkit-eversweet-ultra/",
         "/produkt/petlibro-stainless-steel-fountain/",
         "/produkt/cat-mate-335-pet-fountain/",
-        "/produkt/xiaomi-smart-pet-fountain-2/",
-        "/produkt/oneisall-3-5l-cordless-fountain/",
+        "/produkt/catit-pixi-smart-trinkbrunnen/",
+        "/produkt/petsafe-streamside-trinkbrunnen/",
         "/produkt/petlibro-polar-wet-food-feeder/"
       ],
       "relatedComparisons": [
@@ -67932,7 +72359,7 @@
         "transactional-support"
       ],
       "mainEntity": "Katzenklappen mit App und Beuteerkennung im Vergleich",
-      "internalIncomingLinks": 12,
+      "internalIncomingLinks": 11,
       "internalOutgoingLinks": 16,
       "wordCount": 1399,
       "headingCount": 23,
@@ -67985,7 +72412,7 @@
       "productCategory": "",
       "audience": "both",
       "character": "commercial",
-      "linkDepth": 1,
+      "linkDepth": 2,
       "headingStructure": [
         {
           "level": 1,
@@ -68138,7 +72565,7 @@
         "transactional-support"
       ],
       "mainEntity": "Kleine GPS-Tracker für Katzen",
-      "internalIncomingLinks": 5,
+      "internalIncomingLinks": 6,
       "internalOutgoingLinks": 19,
       "wordCount": 1753,
       "headingCount": 30,
@@ -69847,7 +74274,7 @@
       "mainEntity": "Welcher Futterautomat passt zu mir? Auswahlhilfe in 5 Schritten",
       "internalIncomingLinks": 21,
       "internalOutgoingLinks": 29,
-      "wordCount": 2227,
+      "wordCount": 2209,
       "headingCount": 58,
       "headings": [
         "Welcher Futterautomat passt zu mir? Auswahlhilfe in 5 Schritten",
@@ -69885,8 +74312,8 @@
         "Cat Mate C500",
         "SureFeed Microchip Pet Feeder",
         "Catit PIXI Smart 6-Meal Feeder",
+        "Catit PIXI Smart-Trinkbrunnen",
         "Catit PIXI Vision Smart Feeder",
-        "Devoko 90L Automatisches Katzenklo",
         "Futterart festlegen",
         "Tier und Portion prüfen",
         "Komfort begrenzen",
@@ -70076,11 +74503,11 @@
         },
         {
           "level": 3,
-          "text": "Catit PIXI Vision Smart Feeder"
+          "text": "Catit PIXI Smart-Trinkbrunnen"
         },
         {
           "level": 3,
-          "text": "Devoko 90L Automatisches Katzenklo"
+          "text": "Catit PIXI Vision Smart Feeder"
         },
         {
           "level": 3,
@@ -70175,8 +74602,8 @@
         "/produkt/cat-mate-c500/",
         "/produkt/surefeed-microchip-pet-feeder/",
         "/produkt/catit-pixi-smart-6-meal-feeder/",
+        "/produkt/catit-pixi-smart-trinkbrunnen/",
         "/produkt/catit-pixi-vision-smart-feeder/",
-        "/produkt/devoko-90l-automatisches-katzenklo/",
         "/produkt/petlibro-polar-wet-food-feeder/"
       ],
       "relatedComparisons": [
@@ -73540,7 +77967,7 @@
       "mainEntity": "Wie viele Wasserstellen braucht eine Katze?",
       "internalIncomingLinks": 17,
       "internalOutgoingLinks": 24,
-      "wordCount": 3043,
+      "wordCount": 3037,
       "headingCount": 46,
       "headings": [
         "Wie viele Wasserstellen braucht eine Katze?",
@@ -73569,7 +77996,7 @@
         "Das könnte dich auch interessieren",
         "Cat Mate Pet Fountain 335",
         "Cat Mate Shell Pet Fountain",
-        "oneisall 2,2L Cordless Cat Fountain",
+        "Catit PIXI Smart-Trinkbrunnen",
         "Zwei Näpfe nebeneinander",
         "Ein Trinkbrunnen mit mehreren Auslässen",
         "Ein Napf auf jeder Etage",
@@ -73721,7 +78148,7 @@
         },
         {
           "level": 3,
-          "text": "oneisall 2,2L Cordless Cat Fountain"
+          "text": "Catit PIXI Smart-Trinkbrunnen"
         },
         {
           "level": 3,
@@ -73806,7 +78233,7 @@
       "relatedProducts": [
         "/produkt/cat-mate-335-pet-fountain/",
         "/produkt/cat-mate-shell-fountain/",
-        "/produkt/oneisall-2-2l-cordless-fountain/",
+        "/produkt/catit-pixi-smart-trinkbrunnen/",
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/petlibro-granary-2-vision/"
       ],

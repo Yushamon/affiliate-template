@@ -1,18 +1,50 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-11T11:29:10.262Z",
+  "generatedAt": "2026-08-16T09:10:14.913Z",
   "mode": "check",
   "summary": {
-    "products": 82,
+    "products": 98,
     "changedProducts": 0,
     "actions": 0,
-    "missingAssets": 34,
-    "staleComparisonRelations": 36,
+    "missingAssets": 85,
+    "staleComparisonRelations": 39,
     "errors": 0
   },
   "actionCounts": {},
   "changedProducts": [],
   "missingAssets": [
+    {
+      "slug": "cat-mate-elite-355w",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "cat-mate-elite-355w",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "cat-mate-elite-355w",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "catit-pixi-smart-trinkbrunnen",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "catit-pixi-smart-trinkbrunnen",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "catit-pixi-smart-trinkbrunnen",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
     {
       "slug": "enabot-ebo-air-2",
       "role": "thumbnail",
@@ -30,6 +62,38 @@
       "available": 0
     },
     {
+      "slug": "enabot-rola-mini",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "enabot-rola-mini",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "enabot-rola-mini",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "enabot-rola-pettracker",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "enabot-rola-pettracker",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "enabot-rola-pettracker",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
       "slug": "furbo-360-hundekamera",
       "role": "thumbnail",
       "expected": "thumbnail.webp"
@@ -41,6 +105,22 @@
     },
     {
       "slug": "furbo-360-hundekamera",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "furbo-mini-360",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "furbo-mini-360",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "furbo-mini-360",
       "role": "gallery",
       "expected": "gallery-1.webp + gallery-2.webp",
       "available": 0
@@ -58,6 +138,38 @@
       "available": 0
     },
     {
+      "slug": "invoxia-biotracker-2026",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "invoxia-biotracker-2026",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "invoxia-biotracker-2026",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "litter-robot-4",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "litter-robot-4",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "litter-robot-4",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
       "slug": "litter-robot-5-pro",
       "role": "thumbnail",
       "expected": "thumbnail.webp"
@@ -69,6 +181,22 @@
     },
     {
       "slug": "litter-robot-5-pro",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "neakasa-m1-lite",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "neakasa-m1-lite",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "neakasa-m1-lite",
       "role": "gallery",
       "expected": "gallery-1.webp + gallery-2.webp",
       "available": 0
@@ -102,10 +230,58 @@
       "available": 0
     },
     {
+      "slug": "pawfit-3",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "pawfit-3",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "pawfit-3",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
       "slug": "pawsync-smart-pet-feeder",
       "role": "gallery",
       "expected": "gallery-1.webp + gallery-2.webp",
       "available": 1
+    },
+    {
+      "slug": "petkit-puramax-2",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "petkit-puramax-2",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "petkit-puramax-2",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "petkit-purobot-max-3",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "petkit-purobot-max-3",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "petkit-purobot-max-3",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
     },
     {
       "slug": "petkit-purobot-max-pro-2",
@@ -119,6 +295,22 @@
     },
     {
       "slug": "petkit-purobot-max-pro-2",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "petlibro-luma-smart-litter-box",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "petlibro-luma-smart-litter-box",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "petlibro-luma-smart-litter-box",
       "role": "gallery",
       "expected": "gallery-1.webp + gallery-2.webp",
       "available": 0
@@ -163,7 +355,87 @@
       "available": 1
     },
     {
+      "slug": "petsafe-streamside-trinkbrunnen",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "petsafe-streamside-trinkbrunnen",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "petsafe-streamside-trinkbrunnen",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "petsnowy-snow-plus",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "petsnowy-snow-plus",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "petsnowy-snow-plus",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "pettec-cam-360",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "pettec-cam-360",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "pettec-cam-360",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
       "slug": "petwalk-medium-tiertuer",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "prothelis-area-pets",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "prothelis-area-pets",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "prothelis-area-pets",
+      "role": "gallery",
+      "expected": "gallery-1.webp + gallery-2.webp",
+      "available": 0
+    },
+    {
+      "slug": "reolink-e1-zoom",
+      "role": "thumbnail",
+      "expected": "thumbnail.webp"
+    },
+    {
+      "slug": "reolink-e1-zoom",
+      "role": "comparison",
+      "expected": "comparison.webp"
+    },
+    {
+      "slug": "reolink-e1-zoom",
       "role": "gallery",
       "expected": "gallery-1.webp + gallery-2.webp",
       "available": 0
@@ -252,6 +524,18 @@
       ]
     },
     {
+      "slug": "enabot-ebo-air-2",
+      "comparisons": [
+        "beste-haustierkameras"
+      ]
+    },
+    {
+      "slug": "furbo-360-hundekamera",
+      "comparisons": [
+        "beste-haustierkameras"
+      ]
+    },
+    {
       "slug": "garmin-alpha-tt-25",
       "comparisons": [
         "gps-tracker-mit-langer-akkulaufzeit"
@@ -268,6 +552,12 @@
       "comparisons": [
         "beste-futterautomaten-fuer-katzen",
         "beste-futterautomaten-fuer-hunde"
+      ]
+    },
+    {
+      "slug": "neakasa-m1-plus",
+      "comparisons": [
+        "beste-automatische-katzentoiletten"
       ]
     },
     {

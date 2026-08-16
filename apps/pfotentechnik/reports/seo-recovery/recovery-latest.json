@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-11T11:30:36.431Z",
+  "generatedAt": "2026-08-16T09:13:50.325Z",
   "source": {
     "provider": "google",
     "gscFile": "src/data/seo/gsc-dashboard-ranges.json",
@@ -11,14 +11,62 @@
   "summary": {
     "redirects": 33,
     "migrationRisk": 0,
-    "migrationWatch": 5,
-    "transferring": 10,
+    "migrationWatch": 7,
+    "transferring": 8,
     "technicalErrors": 0,
     "warnings": 0,
-    "opportunities": 105,
+    "opportunities": 91,
     "distAvailable": true
   },
   "migrations": [
+    {
+      "source": "/futterautomat-mit-kamera/",
+      "target": "/vergleiche/beste-futterautomaten-mit-kamera/",
+      "finalTarget": "/vergleiche/beste-futterautomaten-mit-kamera/",
+      "status": "watch",
+      "redirectStatus": 301,
+      "oneHop": true,
+      "technicalIssues": [],
+      "technical": {
+        "distAvailable": true,
+        "targetBuilt": true,
+        "sourceBuilt": false,
+        "canonical": "/vergleiche/beste-futterautomaten-mit-kamera/",
+        "noindex": false,
+        "sourceInSitemap": false,
+        "targetInSitemap": true,
+        "sourceInternalLinks": 0,
+        "targetInternalLinks": 22
+      },
+      "signal": {
+        "primaryRange": "28d",
+        "primaryOld": {
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 18.7
+        },
+        "primaryNew": {
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        "contextRange": "3m",
+        "contextOld": {
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 18.7
+        },
+        "contextNew": {
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 14.5
+        }
+      }
+    },
     {
       "source": "/futterautomat-fuer-grosse-hunde/",
       "target": "/vergleiche/futterautomat-fuer-grosse-hunde/",
@@ -260,6 +308,54 @@
       }
     },
     {
+      "source": "/produkt/petkit-yumshare-dual/",
+      "target": "/produkt/petkit-yumshare-dual-hopper/",
+      "finalTarget": "/produkt/petkit-yumshare-dual-hopper/",
+      "status": "watch",
+      "redirectStatus": 301,
+      "oneHop": true,
+      "technicalIssues": [],
+      "technical": {
+        "distAvailable": true,
+        "targetBuilt": true,
+        "sourceBuilt": false,
+        "canonical": "/produkt/petkit-yumshare-dual-hopper/",
+        "noindex": false,
+        "sourceInSitemap": false,
+        "targetInSitemap": true,
+        "sourceInternalLinks": 0,
+        "targetInternalLinks": 109
+      },
+      "signal": {
+        "primaryRange": "28d",
+        "primaryOld": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
+        },
+        "primaryNew": {
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        "contextRange": "3m",
+        "contextOld": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
+        },
+        "contextNew": {
+          "clicks": 2,
+          "impressions": 4,
+          "ctr": 50,
+          "position": 3.7
+        }
+      }
+    },
+    {
       "source": "/futterautomat-fuer-zwei-katzen/",
       "target": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
       "finalTarget": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
@@ -282,15 +378,15 @@
         "primaryRange": "28d",
         "primaryOld": {
           "clicks": 1,
-          "impressions": 37,
-          "ctr": 2.7,
-          "position": 23.3
+          "impressions": 36,
+          "ctr": 2.78,
+          "position": 23.6
         },
         "primaryNew": {
           "clicks": 0,
-          "impressions": 8,
+          "impressions": 5,
           "ctr": 0,
-          "position": 60.5
+          "position": 56
         },
         "contextRange": "3m",
         "contextOld": {
@@ -301,105 +397,9 @@
         },
         "contextNew": {
           "clicks": 0,
-          "impressions": 8,
+          "impressions": 9,
           "ctr": 0,
-          "position": 60.5
-        }
-      }
-    },
-    {
-      "source": "/beste-futterautomaten-fuer-zwei-katzen/",
-      "target": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
-      "finalTarget": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
-      "status": "transferring",
-      "redirectStatus": 301,
-      "oneHop": true,
-      "technicalIssues": [],
-      "technical": {
-        "distAvailable": true,
-        "targetBuilt": true,
-        "sourceBuilt": false,
-        "canonical": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
-        "noindex": false,
-        "sourceInSitemap": false,
-        "targetInSitemap": true,
-        "sourceInternalLinks": 0,
-        "targetInternalLinks": 30
-      },
-      "signal": {
-        "primaryRange": "28d",
-        "primaryOld": {
-          "clicks": 0,
-          "impressions": 23,
-          "ctr": 0,
-          "position": 20
-        },
-        "primaryNew": {
-          "clicks": 0,
-          "impressions": 8,
-          "ctr": 0,
-          "position": 60.5
-        },
-        "contextRange": "3m",
-        "contextOld": {
-          "clicks": 0,
-          "impressions": 27,
-          "ctr": 0,
-          "position": 22.8
-        },
-        "contextNew": {
-          "clicks": 0,
-          "impressions": 8,
-          "ctr": 0,
-          "position": 60.5
-        }
-      }
-    },
-    {
-      "source": "/futterautomat-ohne-wlan/",
-      "target": "/vergleiche/beste-futterautomaten-ohne-wlan/",
-      "finalTarget": "/vergleiche/beste-futterautomaten-ohne-wlan/",
-      "status": "transferring",
-      "redirectStatus": 301,
-      "oneHop": true,
-      "technicalIssues": [],
-      "technical": {
-        "distAvailable": true,
-        "targetBuilt": true,
-        "sourceBuilt": false,
-        "canonical": "/vergleiche/beste-futterautomaten-ohne-wlan/",
-        "noindex": false,
-        "sourceInSitemap": false,
-        "targetInSitemap": true,
-        "sourceInternalLinks": 0,
-        "targetInternalLinks": 20
-      },
-      "signal": {
-        "primaryRange": "28d",
-        "primaryOld": {
-          "clicks": 1,
-          "impressions": 17,
-          "ctr": 5.88,
-          "position": 7.8
-        },
-        "primaryNew": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 12
-        },
-        "contextRange": "3m",
-        "contextOld": {
-          "clicks": 1,
-          "impressions": 19,
-          "ctr": 5.26,
-          "position": 8.2
-        },
-        "contextNew": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 12
+          "position": 59.9
         }
       }
     },
@@ -431,10 +431,10 @@
           "position": 46.6
         },
         "primaryNew": {
-          "clicks": 1,
-          "impressions": 14,
-          "ctr": 7.14,
-          "position": 34.9
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 6.3
         },
         "contextRange": "3m",
         "contextOld": {
@@ -468,7 +468,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 35
+        "targetInternalLinks": 36
       },
       "signal": {
         "primaryRange": "28d",
@@ -500,9 +500,9 @@
       }
     },
     {
-      "source": "/futterautomat-mit-kamera/",
-      "target": "/vergleiche/beste-futterautomaten-mit-kamera/",
-      "finalTarget": "/vergleiche/beste-futterautomaten-mit-kamera/",
+      "source": "/futterautomat-ohne-wlan/",
+      "target": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+      "finalTarget": "/vergleiche/beste-futterautomaten-ohne-wlan/",
       "status": "transferring",
       "redirectStatus": 301,
       "oneHop": true,
@@ -511,39 +511,87 @@
         "distAvailable": true,
         "targetBuilt": true,
         "sourceBuilt": false,
-        "canonical": "/vergleiche/beste-futterautomaten-mit-kamera/",
+        "canonical": "/vergleiche/beste-futterautomaten-ohne-wlan/",
         "noindex": false,
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 22
+        "targetInternalLinks": 20
       },
       "signal": {
         "primaryRange": "28d",
         "primaryOld": {
           "clicks": 0,
-          "impressions": 11,
+          "impressions": 14,
           "ctr": 0,
-          "position": 18.7
+          "position": 7.6
         },
         "primaryNew": {
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 1,
           "ctr": 0,
-          "position": 14.5
+          "position": 12
+        },
+        "contextRange": "3m",
+        "contextOld": {
+          "clicks": 1,
+          "impressions": 19,
+          "ctr": 5.26,
+          "position": 8.2
+        },
+        "contextNew": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 12
+        }
+      }
+    },
+    {
+      "source": "/beste-futterautomaten-fuer-zwei-katzen/",
+      "target": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "finalTarget": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "status": "transferring",
+      "redirectStatus": 301,
+      "oneHop": true,
+      "technicalIssues": [],
+      "technical": {
+        "distAvailable": true,
+        "targetBuilt": true,
+        "sourceBuilt": false,
+        "canonical": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+        "noindex": false,
+        "sourceInSitemap": false,
+        "targetInSitemap": true,
+        "sourceInternalLinks": 0,
+        "targetInternalLinks": 30
+      },
+      "signal": {
+        "primaryRange": "28d",
+        "primaryOld": {
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 12
+        },
+        "primaryNew": {
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 56
         },
         "contextRange": "3m",
         "contextOld": {
           "clicks": 0,
-          "impressions": 11,
+          "impressions": 27,
           "ctr": 0,
-          "position": 18.7
+          "position": 22.8
         },
         "contextNew": {
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 9,
           "ctr": 0,
-          "position": 14.5
+          "position": 59.9
         }
       }
     },
@@ -570,9 +618,9 @@
         "primaryRange": "28d",
         "primaryOld": {
           "clicks": 0,
-          "impressions": 5,
+          "impressions": 4,
           "ctr": 0,
-          "position": 9.6
+          "position": 10.3
         },
         "primaryNew": {
           "clicks": 0,
@@ -596,54 +644,6 @@
       }
     },
     {
-      "source": "/beste-futterautomaten-fuer-nassfutter/",
-      "target": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
-      "finalTarget": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
-      "status": "transferring",
-      "redirectStatus": 301,
-      "oneHop": true,
-      "technicalIssues": [],
-      "technical": {
-        "distAvailable": true,
-        "targetBuilt": true,
-        "sourceBuilt": false,
-        "canonical": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
-        "noindex": false,
-        "sourceInSitemap": false,
-        "targetInSitemap": true,
-        "sourceInternalLinks": 0,
-        "targetInternalLinks": 35
-      },
-      "signal": {
-        "primaryRange": "28d",
-        "primaryOld": {
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 23.3
-        },
-        "primaryNew": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 39
-        },
-        "contextRange": "3m",
-        "contextOld": {
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 23.3
-        },
-        "contextNew": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 39
-        }
-      }
-    },
-    {
       "source": "/beste-futterautomaten-fuer-hunde/",
       "target": "/vergleiche/beste-futterautomaten-fuer-hunde/",
       "finalTarget": "/vergleiche/beste-futterautomaten-fuer-hunde/",
@@ -660,7 +660,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 40
+        "targetInternalLinks": 39
       },
       "signal": {
         "primaryRange": "28d",
@@ -692,9 +692,9 @@
       }
     },
     {
-      "source": "/produkt/petkit-yumshare-dual/",
-      "target": "/produkt/petkit-yumshare-dual-hopper/",
-      "finalTarget": "/produkt/petkit-yumshare-dual-hopper/",
+      "source": "/beste-futterautomaten-fuer-nassfutter/",
+      "target": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "finalTarget": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
       "status": "transferring",
       "redirectStatus": 301,
       "oneHop": true,
@@ -703,12 +703,12 @@
         "distAvailable": true,
         "targetBuilt": true,
         "sourceBuilt": false,
-        "canonical": "/produkt/petkit-yumshare-dual-hopper/",
+        "canonical": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
         "noindex": false,
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 114
+        "targetInternalLinks": 36
       },
       "signal": {
         "primaryRange": "28d",
@@ -716,74 +716,26 @@
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 2
+          "position": 10
         },
         "primaryNew": {
-          "clicks": 2,
-          "impressions": 4,
-          "ctr": 50,
-          "position": 3.7
-        },
-        "contextRange": "3m",
-        "contextOld": {
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 2
-        },
-        "contextNew": {
-          "clicks": 2,
-          "impressions": 4,
-          "ctr": 50,
-          "position": 3.7
-        }
-      }
-    },
-    {
-      "source": "/beste-trinkbrunnen-fuer-katzen/",
-      "target": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-      "finalTarget": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-      "status": "healthy",
-      "redirectStatus": 301,
-      "oneHop": true,
-      "technicalIssues": [],
-      "technical": {
-        "distAvailable": true,
-        "targetBuilt": true,
-        "sourceBuilt": false,
-        "canonical": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-        "noindex": false,
-        "sourceInSitemap": false,
-        "targetInSitemap": true,
-        "sourceInternalLinks": 0,
-        "targetInternalLinks": 81
-      },
-      "signal": {
-        "primaryRange": "28d",
-        "primaryOld": {
-          "clicks": 0,
-          "impressions": 0,
-          "ctr": 0,
-          "position": 0
-        },
-        "primaryNew": {
-          "clicks": 0,
-          "impressions": 23,
-          "ctr": 0,
-          "position": 56.4
+          "position": 39
         },
         "contextRange": "3m",
         "contextOld": {
           "clicks": 0,
-          "impressions": 0,
+          "impressions": 3,
           "ctr": 0,
-          "position": 0
+          "position": 23.3
         },
         "contextNew": {
           "clicks": 0,
-          "impressions": 23,
+          "impressions": 1,
           "ctr": 0,
-          "position": 56.4
+          "position": 39
         }
       }
     },
@@ -804,7 +756,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 55
+        "targetInternalLinks": 56
       },
       "signal": {
         "primaryRange": "28d",
@@ -816,9 +768,9 @@
         },
         "primaryNew": {
           "clicks": 0,
-          "impressions": 21,
+          "impressions": 20,
           "ctr": 0,
-          "position": 18.1
+          "position": 18.8
         },
         "contextRange": "3m",
         "contextOld": {
@@ -836,9 +788,9 @@
       }
     },
     {
-      "source": "/vergleiche/-fuer-katzen/",
-      "target": "/vergleiche/",
-      "finalTarget": "/vergleiche/",
+      "source": "/beste-trinkbrunnen-fuer-katzen/",
+      "target": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "finalTarget": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
       "status": "healthy",
       "redirectStatus": 301,
       "oneHop": true,
@@ -847,12 +799,12 @@
         "distAvailable": true,
         "targetBuilt": true,
         "sourceBuilt": false,
-        "canonical": "/vergleiche/",
+        "canonical": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
         "noindex": false,
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 745
+        "targetInternalLinks": 86
       },
       "signal": {
         "primaryRange": "28d",
@@ -864,9 +816,9 @@
         },
         "primaryNew": {
           "clicks": 0,
-          "impressions": 16,
+          "impressions": 20,
           "ctr": 0,
-          "position": 62.7
+          "position": 60.3
         },
         "contextRange": "3m",
         "contextOld": {
@@ -877,57 +829,9 @@
         },
         "contextNew": {
           "clicks": 0,
-          "impressions": 16,
+          "impressions": 23,
           "ctr": 0,
-          "position": 62.7
-        }
-      }
-    },
-    {
-      "source": "/beste-futterautomaten-mit-kamera/",
-      "target": "/vergleiche/beste-futterautomaten-mit-kamera/",
-      "finalTarget": "/vergleiche/beste-futterautomaten-mit-kamera/",
-      "status": "healthy",
-      "redirectStatus": 301,
-      "oneHop": true,
-      "technicalIssues": [],
-      "technical": {
-        "distAvailable": true,
-        "targetBuilt": true,
-        "sourceBuilt": false,
-        "canonical": "/vergleiche/beste-futterautomaten-mit-kamera/",
-        "noindex": false,
-        "sourceInSitemap": false,
-        "targetInSitemap": true,
-        "sourceInternalLinks": 0,
-        "targetInternalLinks": 22
-      },
-      "signal": {
-        "primaryRange": "28d",
-        "primaryOld": {
-          "clicks": 0,
-          "impressions": 0,
-          "ctr": 0,
-          "position": 0
-        },
-        "primaryNew": {
-          "clicks": 0,
-          "impressions": 6,
-          "ctr": 0,
-          "position": 14.5
-        },
-        "contextRange": "3m",
-        "contextOld": {
-          "clicks": 0,
-          "impressions": 0,
-          "ctr": 0,
-          "position": 0
-        },
-        "contextNew": {
-          "clicks": 0,
-          "impressions": 6,
-          "ctr": 0,
-          "position": 14.5
+          "position": 56.4
         }
       }
     },
@@ -948,7 +852,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 6
+        "targetInternalLinks": 7
       },
       "signal": {
         "primaryRange": "28d",
@@ -960,9 +864,9 @@
         },
         "primaryNew": {
           "clicks": 0,
-          "impressions": 5,
+          "impressions": 7,
           "ctr": 0,
-          "position": 55.2
+          "position": 42.3
         },
         "contextRange": "3m",
         "contextOld": {
@@ -973,9 +877,9 @@
         },
         "contextNew": {
           "clicks": 0,
-          "impressions": 5,
+          "impressions": 7,
           "ctr": 0,
-          "position": 55.2
+          "position": 42.3
         }
       }
     },
@@ -996,7 +900,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 32
+        "targetInternalLinks": 43
       },
       "signal": {
         "primaryRange": "28d",
@@ -1024,6 +928,54 @@
           "impressions": 4,
           "ctr": 0,
           "position": 48.8
+        }
+      }
+    },
+    {
+      "source": "/vergleiche/-fuer-katzen/",
+      "target": "/vergleiche/",
+      "finalTarget": "/vergleiche/",
+      "status": "healthy",
+      "redirectStatus": 301,
+      "oneHop": true,
+      "technicalIssues": [],
+      "technical": {
+        "distAvailable": true,
+        "targetBuilt": true,
+        "sourceBuilt": false,
+        "canonical": "/vergleiche/",
+        "noindex": false,
+        "sourceInSitemap": false,
+        "targetInSitemap": true,
+        "sourceInternalLinks": 0,
+        "targetInternalLinks": 811
+      },
+      "signal": {
+        "primaryRange": "28d",
+        "primaryOld": {
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        "primaryNew": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6
+        },
+        "contextRange": "3m",
+        "contextOld": {
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        "contextNew": {
+          "clicks": 0,
+          "impressions": 16,
+          "ctr": 0,
+          "position": 62.7
         }
       }
     },
@@ -1168,6 +1120,54 @@
           "impressions": 0,
           "ctr": 0,
           "position": 0
+        }
+      }
+    },
+    {
+      "source": "/beste-futterautomaten-mit-kamera/",
+      "target": "/vergleiche/beste-futterautomaten-mit-kamera/",
+      "finalTarget": "/vergleiche/beste-futterautomaten-mit-kamera/",
+      "status": "healthy",
+      "redirectStatus": 301,
+      "oneHop": true,
+      "technicalIssues": [],
+      "technical": {
+        "distAvailable": true,
+        "targetBuilt": true,
+        "sourceBuilt": false,
+        "canonical": "/vergleiche/beste-futterautomaten-mit-kamera/",
+        "noindex": false,
+        "sourceInSitemap": false,
+        "targetInSitemap": true,
+        "sourceInternalLinks": 0,
+        "targetInternalLinks": 22
+      },
+      "signal": {
+        "primaryRange": "28d",
+        "primaryOld": {
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        "primaryNew": {
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        "contextRange": "3m",
+        "contextOld": {
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        "contextNew": {
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 14.5
         }
       }
     },
@@ -1428,7 +1428,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 10
+        "targetInternalLinks": 9
       },
       "signal": {
         "primaryRange": "28d",
@@ -1572,7 +1572,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 725
+        "targetInternalLinks": 792
       },
       "signal": {
         "primaryRange": "28d",
@@ -1610,20 +1610,20 @@
       "type": "comparison",
       "status": "improve",
       "confidence": "high",
-      "score": 88,
+      "score": 95,
       "scores": {
         "ranking": 28,
-        "impressions": 14,
+        "impressions": 17,
         "ctrPotential": 15,
         "queryMatch": 15,
-        "context": 6,
+        "context": 10,
         "commercial": 10
       },
       "metrics": {
         "clicks": 0,
-        "impressions": 21,
+        "impressions": 20,
         "ctr": 0,
-        "position": 18.1
+        "position": 18.8
       },
       "contextMetrics": {
         "clicks": 0,
@@ -1667,14 +1667,14 @@
       "action": "SERP-Intent und Konkurrenz-Gaps prüfen, bevor weiterer Content ergänzt wird."
     },
     {
-      "page": "/produkt/petlibro-polar-wet-food-feeder/",
+      "page": "/produkt/petlibro-stainless-steel-fountain/",
       "type": "product",
       "status": "push",
-      "confidence": "high",
-      "score": 85,
+      "confidence": "medium",
+      "score": 83,
       "scores": {
         "ranking": 28,
-        "impressions": 14,
+        "impressions": 12,
         "ctrPotential": 15,
         "queryMatch": 9,
         "context": 10,
@@ -1682,47 +1682,92 @@
       },
       "metrics": {
         "clicks": 0,
-        "impressions": 21,
+        "impressions": 7,
         "ctr": 0,
-        "position": 13.3
+        "position": 13.1
       },
       "contextMetrics": {
         "clicks": 0,
-        "impressions": 25,
+        "impressions": 10,
         "ctr": 0,
         "position": 12.5
       },
       "queries": [
         {
-          "query": "petlibro polar wet food feeder",
+          "query": "petlibro edelstahl trinkbrunnen",
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 3,
           "ctr": 0,
-          "position": 10.5
+          "position": 10
         }
       ],
       "migrationSources": [],
       "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
     },
     {
+      "page": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "type": "content",
+      "status": "push",
+      "confidence": "medium",
+      "score": 82,
+      "scores": {
+        "ranking": 30,
+        "impressions": 12,
+        "ctrPotential": 15,
+        "queryMatch": 11,
+        "context": 10,
+        "commercial": 4
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 6.9
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0,
+        "position": 7.3
+      },
+      "queries": [
+        {
+          "query": "wie viele trinkbrunnen für 2 katzen",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 3.5
+        },
+        {
+          "query": "gibt es vertrauenswürdige katzenbrunnen optionen für mehrere katzen?",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 11
+        }
+      ],
+      "migrationSources": [],
+      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
+    },
+    {
       "page": "/produkt/petkit-yumshare-solo-2/",
       "type": "product",
       "status": "push",
-      "confidence": "high",
-      "score": 79,
+      "confidence": "medium",
+      "score": 78,
       "scores": {
         "ranking": 30,
-        "impressions": 15,
+        "impressions": 16,
         "ctrPotential": 0,
-        "queryMatch": 15,
+        "queryMatch": 13,
         "context": 10,
         "commercial": 9
       },
       "metrics": {
         "clicks": 1,
-        "impressions": 23,
-        "ctr": 4.35,
-        "position": 8.2
+        "impressions": 17,
+        "ctr": 5.88,
+        "position": 6.7
       },
       "contextMetrics": {
         "clicks": 1,
@@ -1748,182 +1793,6 @@
         {
           "query": "yumshare solo 2",
           "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 7
-        },
-        {
-          "query": "petkit yumshare solo mit kamera",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 24
-        }
-      ],
-      "migrationSources": [],
-      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
-    },
-    {
-      "page": "/trinkbrunnen-fuer-mehrere-katzen/",
-      "type": "content",
-      "status": "push",
-      "confidence": "medium",
-      "score": 79,
-      "scores": {
-        "ranking": 30,
-        "impressions": 13,
-        "ctrPotential": 15,
-        "queryMatch": 11,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 15,
-        "ctr": 0,
-        "position": 7.3
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 15,
-        "ctr": 0,
-        "position": 7.3
-      },
-      "queries": [
-        {
-          "query": "wie viele trinkbrunnen für 2 katzen",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 3.5
-        },
-        {
-          "query": "gibt es vertrauenswürdige katzenbrunnen optionen für mehrere katzen?",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 10
-        }
-      ],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
-      "page": "/vergleiche/beste-futterautomaten-mit-kamera/",
-      "type": "comparison",
-      "status": "push",
-      "confidence": "medium",
-      "score": 79,
-      "scores": {
-        "ranking": 28,
-        "impressions": 9,
-        "ctrPotential": 15,
-        "queryMatch": 11,
-        "context": 6,
-        "commercial": 10
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": 0,
-        "position": 14.5
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": 0,
-        "position": 14.5
-      },
-      "queries": [
-        {
-          "query": "\"catit\" -site:reddit.com -site:twitter.com -site:x.com -site:wykop.pl -site:tripadvisor.com -site:youtube.com -site:yelp.com -site:booking.com -site:facebook.com -site:instagram.com -site:tiktok.com",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6
-        },
-        {
-          "query": "foderautomat med kamera",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 48
-        }
-      ],
-      "migrationSources": [
-        "/futterautomat-mit-kamera/",
-        "/beste-futterautomaten-mit-kamera/"
-      ],
-      "action": "Intent-Ownership festigen, unabhängige Evidenz schärfen und gezielte interne/externe Links aufbauen."
-    },
-    {
-      "page": "/produkt/petlibro-stainless-steel-fountain/",
-      "type": "product",
-      "status": "push",
-      "confidence": "medium",
-      "score": 78,
-      "scores": {
-        "ranking": 28,
-        "impressions": 11,
-        "ctrPotential": 15,
-        "queryMatch": 9,
-        "context": 6,
-        "commercial": 9
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 10,
-        "ctr": 0,
-        "position": 12.5
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 10,
-        "ctr": 0,
-        "position": 12.5
-      },
-      "queries": [
-        {
-          "query": "petlibro edelstahl trinkbrunnen",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 10.5
-        }
-      ],
-      "migrationSources": [],
-      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
-    },
-    {
-      "page": "/produkt/petkit-eversweet-max-cordless/",
-      "type": "product",
-      "status": "push",
-      "confidence": "medium",
-      "score": 78,
-      "scores": {
-        "ranking": 30,
-        "impressions": 9,
-        "ctrPotential": 15,
-        "queryMatch": 9,
-        "context": 6,
-        "commercial": 9
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": 0,
-        "position": 9.8
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": 0,
-        "position": 9.8
-      },
-      "queries": [
-        {
-          "query": "petkit eversweet max cordless",
-          "clicks": 0,
           "impressions": 1,
           "ctr": 0,
           "position": 8
@@ -1933,90 +1802,54 @@
       "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
     },
     {
-      "page": "/hersteller/petlibro/",
-      "type": "manufacturer",
+      "page": "/produkt/petlibro-polar-wet-food-feeder/",
+      "type": "product",
       "status": "push",
-      "confidence": "high",
-      "score": 76,
+      "confidence": "medium",
+      "score": 78,
       "scores": {
-        "ranking": 28,
-        "impressions": 17,
-        "ctrPotential": 0,
-        "queryMatch": 15,
+        "ranking": 30,
+        "impressions": 14,
+        "ctrPotential": 15,
+        "queryMatch": 0,
         "context": 10,
-        "commercial": 6
+        "commercial": 9
       },
       "metrics": {
-        "clicks": 2,
-        "impressions": 36,
-        "ctr": 5.56,
-        "position": 13.4
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0,
+        "position": 8.9
       },
       "contextMetrics": {
-        "clicks": 2,
-        "impressions": 38,
-        "ctr": 5.26,
-        "position": 13.6
+        "clicks": 0,
+        "impressions": 25,
+        "ctr": 0,
+        "position": 12.5
       },
-      "queries": [
-        {
-          "query": "petlibro",
-          "clicks": 0,
-          "impressions": 5,
-          "ctr": 0,
-          "position": 21.8
-        },
-        {
-          "query": "petlibro air wifi feeder",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 11
-        },
-        {
-          "query": "pelibro",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 26
-        },
-        {
-          "query": "petlibro futterautomat",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 30
-        },
-        {
-          "query": "petlibro futterautomat test",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 35
-        }
-      ],
+      "queries": [],
       "migrationSources": [],
-      "action": "Marken- und Modellabdeckung schärfen und die wichtigsten Produktziele intern priorisieren."
+      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
     },
     {
       "page": "/katzenwasser-taeglich-wechseln/",
       "type": "content",
       "status": "push",
       "confidence": "medium",
-      "score": 75,
+      "score": 78,
       "scores": {
         "ranking": 28,
-        "impressions": 13,
+        "impressions": 12,
         "ctrPotential": 15,
         "queryMatch": 9,
-        "context": 6,
+        "context": 10,
         "commercial": 4
       },
       "metrics": {
         "clicks": 0,
-        "impressions": 17,
+        "impressions": 7,
         "ctr": 0,
-        "position": 12.5
+        "position": 12.6
       },
       "contextMetrics": {
         "clicks": 0,
@@ -2037,90 +1870,14 @@
       "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
     },
     {
-      "page": "/katzentrinkbrunnen-laut-pumpe/",
-      "type": "content",
-      "status": "push",
-      "confidence": "medium",
-      "score": 75,
-      "scores": {
-        "ranking": 30,
-        "impressions": 11,
-        "ctrPotential": 15,
-        "queryMatch": 9,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 11,
-        "ctr": 0,
-        "position": 8
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 11,
-        "ctr": 0,
-        "position": 8
-      },
-      "queries": [
-        {
-          "query": "katzenbrunnen plätschert laut",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 7
-        }
-      ],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
-      "page": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
-      "type": "content",
-      "status": "push",
-      "confidence": "medium",
-      "score": 75,
-      "scores": {
-        "ranking": 30,
-        "impressions": 11,
-        "ctrPotential": 15,
-        "queryMatch": 9,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 11,
-        "ctr": 0,
-        "position": 9.6
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 11,
-        "ctr": 0,
-        "position": 9.6
-      },
-      "queries": [
-        {
-          "query": "katzenbrunnen keramik oder edelstahl",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 13
-        }
-      ],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
       "page": "/produkt/weenect-xs/",
       "type": "product",
       "status": "improve",
       "confidence": "low",
-      "score": 73,
+      "score": 75,
       "scores": {
         "ranking": 28,
-        "impressions": 6,
+        "impressions": 8,
         "ctrPotential": 15,
         "queryMatch": 9,
         "context": 6,
@@ -2151,78 +1908,206 @@
       "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
     },
     {
-      "page": "/pumpe-katzentrinkbrunnen-reinigen/",
-      "type": "content",
+      "page": "/hersteller/petlibro/",
+      "type": "manufacturer",
+      "status": "push",
+      "confidence": "medium",
+      "score": 73,
+      "scores": {
+        "ranking": 28,
+        "impressions": 16,
+        "ctrPotential": 0,
+        "queryMatch": 13,
+        "context": 10,
+        "commercial": 6
+      },
+      "metrics": {
+        "clicks": 1,
+        "impressions": 17,
+        "ctr": 5.88,
+        "position": 13.5
+      },
+      "contextMetrics": {
+        "clicks": 2,
+        "impressions": 38,
+        "ctr": 5.26,
+        "position": 13.6
+      },
+      "queries": [
+        {
+          "query": "petlibro",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 21
+        },
+        {
+          "query": "petlibro futterautomat",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 30
+        },
+        {
+          "query": "petlibro futterautomat test",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 35
+        }
+      ],
+      "migrationSources": [],
+      "action": "Marken- und Modellabdeckung schärfen und die wichtigsten Produktziele intern priorisieren."
+    },
+    {
+      "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "type": "comparison",
       "status": "push",
       "confidence": "low",
+      "score": 73,
+      "scores": {
+        "ranking": 30,
+        "impressions": 8,
+        "ctrPotential": 15,
+        "queryMatch": 0,
+        "context": 10,
+        "commercial": 10
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 6.3
+      },
+      "contextMetrics": {
+        "clicks": 1,
+        "impressions": 14,
+        "ctr": 7.14,
+        "position": 34.9
+      },
+      "queries": [],
+      "migrationSources": [
+        "/beste-futterautomaten-fuer-katzen/"
+      ],
+      "action": "Intent-Ownership festigen, unabhängige Evidenz schärfen und gezielte interne/externe Links aufbauen."
+    },
+    {
+      "page": "/produkt/petkit-eversweet-max-cordless/",
+      "type": "product",
+      "status": "push",
+      "confidence": "medium",
+      "score": 72,
+      "scores": {
+        "ranking": 28,
+        "impressions": 10,
+        "ctrPotential": 15,
+        "queryMatch": 0,
+        "context": 10,
+        "commercial": 9
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 10.2
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 9.8
+      },
+      "queries": [],
+      "migrationSources": [],
+      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
+    },
+    {
+      "page": "/wie-viele-wasserstellen-katze/",
+      "type": "content",
+      "status": "push",
+      "confidence": "medium",
       "score": 71,
       "scores": {
         "ranking": 30,
-        "impressions": 7,
+        "impressions": 12,
         "ctrPotential": 15,
-        "queryMatch": 9,
-        "context": 6,
+        "queryMatch": 0,
+        "context": 10,
         "commercial": 4
       },
       "metrics": {
         "clicks": 0,
-        "impressions": 4,
+        "impressions": 7,
         "ctr": 0,
-        "position": 8.3
+        "position": 5.9
       },
       "contextMetrics": {
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": 0,
-        "position": 8.3
+        "clicks": 1,
+        "impressions": 10,
+        "ctr": 10,
+        "position": 6.5
       },
-      "queries": [
-        {
-          "query": "pumpe katzenbrunnen reinigen",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 12
-        }
-      ],
+      "queries": [],
       "migrationSources": [],
       "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
     },
     {
-      "page": "/trinkbrunnen-fuer-kitten-sicher/",
+      "page": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
       "type": "content",
       "status": "push",
-      "confidence": "low",
-      "score": 70,
+      "confidence": "medium",
+      "score": 71,
       "scores": {
         "ranking": 30,
-        "impressions": 6,
+        "impressions": 12,
         "ctrPotential": 15,
-        "queryMatch": 9,
-        "context": 6,
+        "queryMatch": 0,
+        "context": 10,
         "commercial": 4
       },
       "metrics": {
         "clicks": 0,
-        "impressions": 3,
+        "impressions": 7,
         "ctr": 0,
-        "position": 9
+        "position": 9.9
       },
       "contextMetrics": {
         "clicks": 0,
-        "impressions": 3,
+        "impressions": 11,
         "ctr": 0,
-        "position": 9
+        "position": 9.6
       },
-      "queries": [
-        {
-          "query": "trinkbrunnen kitten",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 8
-        }
-      ],
+      "queries": [],
+      "migrationSources": [],
+      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
+    },
+    {
+      "page": "/kalk-katzentrinkbrunnen-entfernen/",
+      "type": "content",
+      "status": "push",
+      "confidence": "medium",
+      "score": 70,
+      "scores": {
+        "ranking": 30,
+        "impressions": 11,
+        "ctrPotential": 15,
+        "queryMatch": 0,
+        "context": 10,
+        "commercial": 4
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 9.5
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 9.4
+      },
+      "queries": [],
       "migrationSources": [],
       "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
     },
@@ -2233,18 +2118,18 @@
       "confidence": "medium",
       "score": 69,
       "scores": {
-        "ranking": 30,
+        "ranking": 28,
         "impressions": 13,
         "ctrPotential": 0,
-        "queryMatch": 11,
-        "context": 6,
+        "queryMatch": 9,
+        "context": 10,
         "commercial": 9
       },
       "metrics": {
         "clicks": 2,
-        "impressions": 16,
-        "ctr": 12.5,
-        "position": 9.4
+        "impressions": 10,
+        "ctr": 20,
+        "position": 10.4
       },
       "contextMetrics": {
         "clicks": 2,
@@ -2256,14 +2141,7 @@
         {
           "query": "petkit eversweet ultra",
           "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 9.5
-        },
-        {
-          "query": "eversweet ultra petkit",
-          "clicks": 0,
-          "impressions": 1,
+          "impressions": 2,
           "ctr": 0,
           "position": 11
         }
@@ -2272,14 +2150,44 @@
       "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
     },
     {
+      "page": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "type": "content",
+      "status": "push",
+      "confidence": "medium",
+      "score": 69,
+      "scores": {
+        "ranking": 28,
+        "impressions": 12,
+        "ctrPotential": 15,
+        "queryMatch": 0,
+        "context": 10,
+        "commercial": 4
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 11.9
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0,
+        "position": 13.3
+      },
+      "queries": [],
+      "migrationSources": [],
+      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
+    },
+    {
       "page": "/hersteller/oneisall/",
       "type": "manufacturer",
       "status": "push",
       "confidence": "low",
-      "score": 67,
+      "score": 69,
       "scores": {
         "ranking": 30,
-        "impressions": 6,
+        "impressions": 8,
         "ctrPotential": 15,
         "queryMatch": 0,
         "context": 10,
@@ -2306,10 +2214,10 @@
       "type": "product",
       "status": "push",
       "confidence": "medium",
-      "score": 66,
+      "score": 68,
       "scores": {
         "ranking": 28,
-        "impressions": 8,
+        "impressions": 10,
         "ctrPotential": 15,
         "queryMatch": 0,
         "context": 6,
@@ -2332,44 +2240,44 @@
       "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
     },
     {
-      "page": "/produkt/oneisall-2-in-1-feeder-water/",
-      "type": "product",
+      "page": "/katzentrinkbrunnen-laut-pumpe/",
+      "type": "content",
       "status": "push",
       "confidence": "low",
-      "score": 66,
+      "score": 67,
       "scores": {
         "ranking": 30,
-        "impressions": 6,
+        "impressions": 8,
         "ctrPotential": 15,
         "queryMatch": 0,
-        "context": 6,
-        "commercial": 9
+        "context": 10,
+        "commercial": 4
       },
       "metrics": {
         "clicks": 0,
         "impressions": 3,
         "ctr": 0,
-        "position": 5.7
+        "position": 6.7
       },
       "contextMetrics": {
         "clicks": 0,
-        "impressions": 3,
+        "impressions": 11,
         "ctr": 0,
-        "position": 5.7
+        "position": 8
       },
       "queries": [],
       "migrationSources": [],
-      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
+      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
     },
     {
       "page": "/smarte-futterautomaten/",
       "type": "hub",
       "status": "investigate",
       "confidence": "high",
-      "score": 65,
+      "score": 63,
       "scores": {
         "ranking": 12,
-        "impressions": 20,
+        "impressions": 18,
         "ctrPotential": 0,
         "queryMatch": 15,
         "context": 10,
@@ -2377,9 +2285,9 @@
       },
       "metrics": {
         "clicks": 0,
-        "impressions": 76,
+        "impressions": 24,
         "ctr": 0,
-        "position": 39.2
+        "position": 37
       },
       "contextMetrics": {
         "clicks": 0,
@@ -2389,34 +2297,6 @@
       },
       "queries": [
         {
-          "query": "fütterungsroboter im vergleich",
-          "clicks": 0,
-          "impressions": 15,
-          "ctr": 0,
-          "position": 55.3
-        },
-        {
-          "query": "futterautomat katze vergleich",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 86.8
-        },
-        {
-          "query": "futterziehautomat",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 31
-        },
-        {
-          "query": "pet feeder",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 43
-        },
-        {
           "query": "futterautomat test",
           "clicks": 0,
           "impressions": 2,
@@ -2424,298 +2304,93 @@
           "position": 76.5
         },
         {
+          "query": "xiaomi futterautomat",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 5
+        },
+        {
+          "query": "futterautomaten vergleich",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 12
+        },
+        {
+          "query": "fütterungsroboter im vergleich",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 53
+        },
+        {
+          "query": "futterautomat mit kamera und app",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 66
+        },
+        {
           "query": "futterautomat hund test",
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 1,
           "ctr": 0,
-          "position": 78
+          "position": 76
         }
       ],
       "migrationSources": [],
       "action": "Hub als Verteiler stärken; keine zusätzlichen konkurrierenden Intent-Seiten erzeugen."
     },
     {
-      "page": "/kalk-katzentrinkbrunnen-entfernen/",
+      "page": "/futterautomat-richtig-reinigen/",
       "type": "content",
       "status": "push",
       "confidence": "medium",
-      "score": 65,
+      "score": 58,
       "scores": {
         "ranking": 30,
-        "impressions": 10,
-        "ctrPotential": 15,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 7,
-        "ctr": 0,
-        "position": 9.4
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 7,
-        "ctr": 0,
-        "position": 9.4
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
-      "page": "/filter-im-katzentrinkbrunnen-wechseln/",
-      "type": "content",
-      "status": "push",
-      "confidence": "medium",
-      "score": 64,
-      "scores": {
-        "ranking": 28,
-        "impressions": 11,
-        "ctrPotential": 15,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 10,
-        "ctr": 0,
-        "position": 13.3
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 10,
-        "ctr": 0,
-        "position": 13.3
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
-      "page": "/hersteller/",
-      "type": "manufacturer",
-      "status": "push",
-      "confidence": "low",
-      "score": 64,
-      "scores": {
-        "ranking": 30,
-        "impressions": 7,
-        "ctrPotential": 15,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 6
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": 0,
-        "position": 5.3
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": 0,
-        "position": 5.3
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Marken- und Modellabdeckung schärfen und die wichtigsten Produktziele intern priorisieren."
-    },
-    {
-      "page": "/warum-katzen-fliessendes-wasser-trinken/",
-      "type": "content",
-      "status": "push",
-      "confidence": "low",
-      "score": 62,
-      "scores": {
-        "ranking": 30,
-        "impressions": 7,
-        "ctrPotential": 15,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": 0,
-        "position": 7
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": 0,
-        "position": 7
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
-      "page": "/welcher-futterautomat-ist-der-richtige/",
-      "type": "content",
-      "status": "push",
-      "confidence": "low",
-      "score": 62,
-      "scores": {
-        "ranking": 30,
-        "impressions": 7,
-        "ctrPotential": 15,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": 0,
-        "position": 10
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": 0,
-        "position": 10
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
-      "page": "/fuetterungszeiten-nach-alter/",
-      "type": "content",
-      "status": "push",
-      "confidence": "low",
-      "score": 61,
-      "scores": {
-        "ranking": 30,
-        "impressions": 6,
-        "ctrPotential": 15,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": 0,
-        "position": 8.7
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": 0,
-        "position": 8.7
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
-      "page": "/",
-      "type": "content",
-      "status": "improve",
-      "confidence": "medium",
-      "score": 56,
-      "scores": {
-        "ranking": 20,
-        "impressions": 11,
+        "impressions": 14,
         "ctrPotential": 0,
-        "queryMatch": 11,
+        "queryMatch": 0,
         "context": 10,
         "commercial": 4
       },
       "metrics": {
-        "clicks": 0,
-        "impressions": 9,
-        "ctr": 0,
-        "position": 21.9
-      },
-      "contextMetrics": {
         "clicks": 1,
-        "impressions": 14,
-        "ctr": 7.14,
-        "position": 25.2
-      },
-      "queries": [
-        {
-          "query": "pet feeder",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 49.3
-        },
-        {
-          "query": "petkit futterautomat",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 43
-        }
-      ],
-      "migrationSources": [],
-      "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
-    },
-    {
-      "page": "/produkt/cat-mate-c300/",
-      "type": "product",
-      "status": "improve",
-      "confidence": "low",
-      "score": 55,
-      "scores": {
-        "ranking": 28,
-        "impressions": 3,
-        "ctrPotential": 0,
-        "queryMatch": 9,
-        "context": 6,
-        "commercial": 9
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 18
+        "impressions": 12,
+        "ctr": 8.33,
+        "position": 6.8
       },
       "contextMetrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 18
+        "clicks": 2,
+        "impressions": 17,
+        "ctr": 11.76,
+        "position": 8.9
       },
-      "queries": [
-        {
-          "query": "cat mate futterautomat c300",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 18
-        }
-      ],
+      "queries": [],
       "migrationSources": [],
-      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
+      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
     },
     {
       "page": "/hersteller/petkit/",
       "type": "manufacturer",
       "status": "improve",
       "confidence": "medium",
-      "score": 54,
+      "score": 57,
       "scores": {
         "ranking": 20,
-        "impressions": 11,
+        "impressions": 10,
         "ctrPotential": 0,
         "queryMatch": 11,
-        "context": 6,
+        "context": 10,
         "commercial": 6
       },
       "metrics": {
         "clicks": 0,
-        "impressions": 9,
+        "impressions": 5,
         "ctr": 0,
-        "position": 20.3
+        "position": 20.6
       },
       "contextMetrics": {
         "clicks": 0,
@@ -2727,9 +2402,9 @@
         {
           "query": "petkit futterautomat",
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 1,
           "ctr": 0,
-          "position": 32
+          "position": 28
         },
         {
           "query": "petkit",
@@ -2743,169 +2418,24 @@
       "action": "Marken- und Modellabdeckung schärfen und die wichtigsten Produktziele intern priorisieren."
     },
     {
-      "page": "/futterautomat-richtig-reinigen/",
-      "type": "content",
-      "status": "push",
-      "confidence": "medium",
-      "score": 53,
-      "scores": {
-        "ranking": 30,
-        "impressions": 13,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 2,
-        "impressions": 17,
-        "ctr": 11.76,
-        "position": 8.9
-      },
-      "contextMetrics": {
-        "clicks": 2,
-        "impressions": 17,
-        "ctr": 11.76,
-        "position": 8.9
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
-      "page": "/reichweite-von-gps-trackern/",
-      "type": "content",
-      "status": "push",
-      "confidence": "low",
-      "score": 52,
-      "scores": {
-        "ranking": 28,
-        "impressions": 5,
-        "ctrPotential": 0,
-        "queryMatch": 9,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 11
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 11
-      },
-      "queries": [
-        {
-          "query": "gps tracker reichweite",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 15
-        }
-      ],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
-      "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-      "type": "comparison",
-      "status": "investigate",
-      "confidence": "medium",
-      "score": 51,
-      "scores": {
-        "ranking": 12,
-        "impressions": 12,
-        "ctrPotential": 0,
-        "queryMatch": 11,
-        "context": 6,
-        "commercial": 10
-      },
-      "metrics": {
-        "clicks": 1,
-        "impressions": 14,
-        "ctr": 7.14,
-        "position": 34.9
-      },
-      "contextMetrics": {
-        "clicks": 1,
-        "impressions": 14,
-        "ctr": 7.14,
-        "position": 34.9
-      },
-      "queries": [
-        {
-          "query": "futterautomat katze vergleich",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 73
-        },
-        {
-          "query": "futterautomat katze test",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 83.5
-        }
-      ],
-      "migrationSources": [
-        "/beste-futterautomaten-fuer-katzen/"
-      ],
-      "action": "SERP-Intent und Konkurrenz-Gaps prüfen, bevor weiterer Content ergänzt wird."
-    },
-    {
-      "page": "/wie-viele-wasserstellen-katze/",
-      "type": "content",
-      "status": "push",
-      "confidence": "medium",
-      "score": 51,
-      "scores": {
-        "ranking": 30,
-        "impressions": 11,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 1,
-        "impressions": 10,
-        "ctr": 10,
-        "position": 6.5
-      },
-      "contextMetrics": {
-        "clicks": 1,
-        "impressions": 10,
-        "ctr": 10,
-        "position": 6.5
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
       "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
       "type": "comparison",
       "status": "investigate",
       "confidence": "high",
-      "score": 50,
+      "score": 56,
       "scores": {
         "ranking": 4,
-        "impressions": 15,
+        "impressions": 17,
         "ctrPotential": 0,
         "queryMatch": 15,
-        "context": 6,
+        "context": 10,
         "commercial": 10
       },
       "metrics": {
         "clicks": 0,
-        "impressions": 23,
+        "impressions": 20,
         "ctr": 0,
-        "position": 56.4
+        "position": 60.3
       },
       "contextMetrics": {
         "clicks": 0,
@@ -2967,20 +2497,20 @@
       "type": "content",
       "status": "defend",
       "confidence": "low",
-      "score": 50,
+      "score": 55,
       "scores": {
         "ranking": 18,
-        "impressions": 7,
+        "impressions": 8,
         "ctrPotential": 15,
         "queryMatch": 0,
-        "context": 6,
+        "context": 10,
         "commercial": 4
       },
       "metrics": {
         "clicks": 0,
-        "impressions": 4,
+        "impressions": 3,
         "ctr": 0,
-        "position": 4
+        "position": 3.3
       },
       "contextMetrics": {
         "clicks": 0,
@@ -2993,14 +2523,218 @@
       "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
     },
     {
+      "page": "/vergleiche/",
+      "type": "comparison",
+      "status": "push",
+      "confidence": "low",
+      "score": 54,
+      "scores": {
+        "ranking": 30,
+        "impressions": 4,
+        "ctrPotential": 0,
+        "queryMatch": 0,
+        "context": 10,
+        "commercial": 10
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 6
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0,
+        "position": 62.7
+      },
+      "queries": [],
+      "migrationSources": [
+        "/vergleiche/-fuer-katzen/"
+      ],
+      "action": "Intent-Ownership festigen, unabhängige Evidenz schärfen und gezielte interne/externe Links aufbauen."
+    },
+    {
+      "page": "/trinkbrunnen/",
+      "type": "hub",
+      "status": "investigate",
+      "confidence": "medium",
+      "score": 53,
+      "scores": {
+        "ranking": 4,
+        "impressions": 16,
+        "ctrPotential": 0,
+        "queryMatch": 15,
+        "context": 10,
+        "commercial": 8
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 18,
+        "ctr": 0,
+        "position": 43.2
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 22,
+        "ctr": 0,
+        "position": 42.5
+      },
+      "queries": [
+        {
+          "query": "katzenbrunnen vergleich",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 74.5
+        },
+        {
+          "query": "beste katzenbrunnen",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 79
+        },
+        {
+          "query": "trinkbrunnen mit hygienespülung",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 39.5
+        },
+        {
+          "query": "petkit eversweet max",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 46
+        },
+        {
+          "query": "pet fountain",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 48
+        }
+      ],
+      "migrationSources": [],
+      "action": "Hub als Verteiler stärken; keine zusätzlichen konkurrierenden Intent-Seiten erzeugen."
+    },
+    {
+      "page": "/futterautomat-im-urlaub/",
+      "type": "content",
+      "status": "improve",
+      "confidence": "medium",
+      "score": 53,
+      "scores": {
+        "ranking": 20,
+        "impressions": 10,
+        "ctrPotential": 0,
+        "queryMatch": 9,
+        "context": 10,
+        "commercial": 4
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 24.4
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 22
+      },
+      "queries": [
+        {
+          "query": "futterautomat katze urlaub",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 45.5
+        }
+      ],
+      "migrationSources": [],
+      "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
+    },
+    {
+      "page": "/katzentrinkbrunnen-ohne-filter/",
+      "type": "content",
+      "status": "push",
+      "confidence": "low",
+      "score": 53,
+      "scores": {
+        "ranking": 30,
+        "impressions": 9,
+        "ctrPotential": 0,
+        "queryMatch": 0,
+        "context": 10,
+        "commercial": 4
+      },
+      "metrics": {
+        "clicks": 1,
+        "impressions": 4,
+        "ctr": 25,
+        "position": 5.3
+      },
+      "contextMetrics": {
+        "clicks": 1,
+        "impressions": 5,
+        "ctr": 20,
+        "position": 5.2
+      },
+      "queries": [],
+      "migrationSources": [],
+      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
+    },
+    {
+      "page": "/reichweite-von-gps-trackern/",
+      "type": "content",
+      "status": "push",
+      "confidence": "low",
+      "score": 53,
+      "scores": {
+        "ranking": 28,
+        "impressions": 6,
+        "ctrPotential": 0,
+        "queryMatch": 9,
+        "context": 6,
+        "commercial": 4
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 11
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 11
+      },
+      "queries": [
+        {
+          "query": "gps tracker reichweite",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 15
+        }
+      ],
+      "migrationSources": [],
+      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
+    },
+    {
       "page": "/produkt/pawsync-smart-pet-feeder/",
       "type": "product",
       "status": "push",
       "confidence": "low",
-      "score": 50,
+      "score": 51,
       "scores": {
         "ranking": 30,
-        "impressions": 5,
+        "impressions": 6,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -3017,36 +2751,6 @@
         "impressions": 2,
         "ctr": 0,
         "position": 6.5
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
-    },
-    {
-      "page": "/produkt/petlibro-dockstream-rfid-smart/",
-      "type": "product",
-      "status": "push",
-      "confidence": "low",
-      "score": 50,
-      "scores": {
-        "ranking": 30,
-        "impressions": 5,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 9
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 9
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 9
       },
       "queries": [],
       "migrationSources": [],
@@ -3057,10 +2761,10 @@
       "type": "content",
       "status": "investigate",
       "confidence": "medium",
-      "score": 48,
+      "score": 50,
       "scores": {
         "ranking": 12,
-        "impressions": 11,
+        "impressions": 13,
         "ctrPotential": 0,
         "queryMatch": 15,
         "context": 6,
@@ -3112,82 +2816,104 @@
       "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
     },
     {
-      "page": "/futterautomat-im-urlaub/",
-      "type": "content",
-      "status": "improve",
-      "confidence": "medium",
-      "score": 48,
-      "scores": {
-        "ranking": 20,
-        "impressions": 9,
-        "ctrPotential": 0,
-        "queryMatch": 9,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": 0,
-        "position": 22
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": 0,
-        "position": 22
-      },
-      "queries": [
-        {
-          "query": "futterautomat katze urlaub",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 45.5
-        }
-      ],
-      "migrationSources": [],
-      "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
-    },
-    {
-      "page": "/katzentrinkbrunnen-ohne-filter/",
+      "page": "/welcher-futterautomat-ist-der-richtige/",
       "type": "content",
       "status": "push",
-      "confidence": "medium",
-      "score": 48,
+      "confidence": "low",
+      "score": 50,
       "scores": {
         "ranking": 30,
-        "impressions": 8,
+        "impressions": 6,
         "ctrPotential": 0,
         "queryMatch": 0,
-        "context": 6,
+        "context": 10,
         "commercial": 4
       },
       "metrics": {
-        "clicks": 1,
-        "impressions": 5,
-        "ctr": 20,
-        "position": 5.2
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 8
       },
       "contextMetrics": {
-        "clicks": 1,
-        "impressions": 5,
-        "ctr": 20,
-        "position": 5.2
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 10
       },
       "queries": [],
       "migrationSources": [],
       "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
     },
     {
+      "page": "/hersteller/",
+      "type": "manufacturer",
+      "status": "push",
+      "confidence": "low",
+      "score": 50,
+      "scores": {
+        "ranking": 30,
+        "impressions": 4,
+        "ctrPotential": 0,
+        "queryMatch": 0,
+        "context": 10,
+        "commercial": 6
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 7
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 5.3
+      },
+      "queries": [],
+      "migrationSources": [],
+      "action": "Marken- und Modellabdeckung schärfen und die wichtigsten Produktziele intern priorisieren."
+    },
+    {
+      "page": "/hersteller/xiaomi/",
+      "type": "manufacturer",
+      "status": "push",
+      "confidence": "low",
+      "score": 50,
+      "scores": {
+        "ranking": 30,
+        "impressions": 4,
+        "ctrPotential": 0,
+        "queryMatch": 0,
+        "context": 10,
+        "commercial": 6
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 10
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 33.3
+      },
+      "queries": [],
+      "migrationSources": [],
+      "action": "Marken- und Modellabdeckung schärfen und die wichtigsten Produktziele intern priorisieren."
+    },
+    {
       "page": "/produkt/catit-pixi-smart-6-meal-feeder/",
       "type": "product",
       "status": "push",
       "confidence": "low",
-      "score": 48,
+      "score": 49,
       "scores": {
         "ranking": 30,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -3214,10 +2940,10 @@
       "type": "product",
       "status": "push",
       "confidence": "low",
-      "score": 48,
+      "score": 49,
       "scores": {
         "ranking": 30,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -3240,87 +2966,59 @@
       "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
     },
     {
-      "page": "/trinkbrunnen/",
-      "type": "hub",
+      "page": "/",
+      "type": "content",
       "status": "investigate",
-      "confidence": "high",
-      "score": 47,
+      "confidence": "medium",
+      "score": 48,
       "scores": {
-        "ranking": 4,
-        "impressions": 14,
+        "ranking": 12,
+        "impressions": 11,
         "ctrPotential": 0,
-        "queryMatch": 15,
-        "context": 6,
-        "commercial": 8
+        "queryMatch": 11,
+        "context": 10,
+        "commercial": 4
       },
       "metrics": {
         "clicks": 0,
-        "impressions": 22,
+        "impressions": 6,
         "ctr": 0,
-        "position": 42.5
+        "position": 32.3
       },
       "contextMetrics": {
-        "clicks": 0,
-        "impressions": 22,
-        "ctr": 0,
-        "position": 42.5
+        "clicks": 1,
+        "impressions": 14,
+        "ctr": 7.14,
+        "position": 25.2
       },
       "queries": [
         {
-          "query": "katzenbrunnen vergleich",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 74.5
-        },
-        {
-          "query": "trinkbrunnen mit hygienespülung",
+          "query": "pet feeder",
           "clicks": 0,
           "impressions": 3,
           "ctr": 0,
-          "position": 39
+          "position": 49.3
         },
         {
-          "query": "beste katzenbrunnen",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 79
-        },
-        {
-          "query": "pet fountain",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 40.5
-        },
-        {
-          "query": "petkit eversweet max",
+          "query": "petkit futterautomat",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 46
-        },
-        {
-          "query": "welcher katzenbrunnen ist der beste",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 78
+          "position": 43
         }
       ],
       "migrationSources": [],
-      "action": "Hub als Verteiler stärken; keine zusätzlichen konkurrierenden Intent-Seiten erzeugen."
+      "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
     },
     {
       "page": "/hersteller/surefeed/",
       "type": "manufacturer",
       "status": "push",
       "confidence": "low",
-      "score": 47,
+      "score": 48,
       "scores": {
         "ranking": 30,
-        "impressions": 5,
+        "impressions": 6,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -3343,14 +3041,74 @@
       "action": "Marken- und Modellabdeckung schärfen und die wichtigsten Produktziele intern priorisieren."
     },
     {
+      "page": "/pumpe-katzentrinkbrunnen-reinigen/",
+      "type": "content",
+      "status": "push",
+      "confidence": "low",
+      "score": 48,
+      "scores": {
+        "ranking": 30,
+        "impressions": 4,
+        "ctrPotential": 0,
+        "queryMatch": 0,
+        "context": 10,
+        "commercial": 4
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 6
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 8.3
+      },
+      "queries": [],
+      "migrationSources": [],
+      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
+    },
+    {
+      "page": "/fuetterungszeiten-nach-alter/",
+      "type": "content",
+      "status": "push",
+      "confidence": "low",
+      "score": 48,
+      "scores": {
+        "ranking": 30,
+        "impressions": 4,
+        "ctrPotential": 0,
+        "queryMatch": 0,
+        "context": 10,
+        "commercial": 4
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 10
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 8.7
+      },
+      "queries": [],
+      "migrationSources": [],
+      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
+    },
+    {
       "page": "/vergleiche/beste-futterautomaten-ohne-wlan/",
       "type": "comparison",
       "status": "push",
       "confidence": "low",
-      "score": 47,
+      "score": 48,
       "scores": {
         "ranking": 28,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -3380,10 +3138,10 @@
       "type": "product",
       "status": "push",
       "confidence": "low",
-      "score": 46,
+      "score": 47,
       "scores": {
         "ranking": 28,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -3410,10 +3168,10 @@
       "type": "content",
       "status": "push",
       "confidence": "low",
-      "score": 45,
+      "score": 46,
       "scores": {
         "ranking": 30,
-        "impressions": 5,
+        "impressions": 6,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -3430,66 +3188,6 @@
         "impressions": 2,
         "ctr": 0,
         "position": 6
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
-      "page": "/wie-laut-sind-automatische-futterautomaten/",
-      "type": "content",
-      "status": "push",
-      "confidence": "low",
-      "score": 45,
-      "scores": {
-        "ranking": 30,
-        "impressions": 5,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 6.5
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 6.5
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
-      "page": "/futterautomat-und-ernaehrung/",
-      "type": "content",
-      "status": "push",
-      "confidence": "low",
-      "score": 45,
-      "scores": {
-        "ranking": 30,
-        "impressions": 5,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 7.5
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 7.5
       },
       "queries": [],
       "migrationSources": [],
@@ -3500,10 +3198,10 @@
       "type": "manufacturer",
       "status": "push",
       "confidence": "low",
-      "score": 45,
+      "score": 46,
       "scores": {
         "ranking": 28,
-        "impressions": 5,
+        "impressions": 6,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -3526,99 +3224,14 @@
       "action": "Marken- und Modellabdeckung schärfen und die wichtigsten Produktziele intern priorisieren."
     },
     {
-      "page": "/vergleiche/",
-      "type": "comparison",
-      "status": "investigate",
-      "confidence": "medium",
-      "score": 44,
-      "scores": {
-        "ranking": 4,
-        "impressions": 13,
-        "ctrPotential": 0,
-        "queryMatch": 11,
-        "context": 6,
-        "commercial": 10
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 16,
-        "ctr": 0,
-        "position": 62.7
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 16,
-        "ctr": 0,
-        "position": 62.7
-      },
-      "queries": [
-        {
-          "query": "fütterungsroboter im vergleich",
-          "clicks": 0,
-          "impressions": 9,
-          "ctr": 0,
-          "position": 81.2
-        },
-        {
-          "query": "futterautomat katze vergleich",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 92
-        }
-      ],
-      "migrationSources": [
-        "/vergleiche/-fuer-katzen/"
-      ],
-      "action": "SERP-Intent und Konkurrenz-Gaps prüfen, bevor weiterer Content ergänzt wird."
-    },
-    {
-      "page": "/produkt/petsafe-freshfeed-refrigerated-feeder/",
-      "type": "product",
-      "status": "investigate",
-      "confidence": "medium",
-      "score": 44,
-      "scores": {
-        "ranking": 12,
-        "impressions": 8,
-        "ctrPotential": 0,
-        "queryMatch": 9,
-        "context": 6,
-        "commercial": 9
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": 0,
-        "position": 30.2
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": 0,
-        "position": 30.2
-      },
-      "queries": [
-        {
-          "query": "petsafe fresh feed",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 3
-        }
-      ],
-      "migrationSources": [],
-      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
-    },
-    {
-      "page": "/wissen/",
+      "page": "/futterautomat-und-ernaehrung/",
       "type": "content",
-      "status": "improve",
-      "confidence": "medium",
-      "score": 43,
+      "status": "push",
+      "confidence": "low",
+      "score": 46,
       "scores": {
-        "ranking": 20,
-        "impressions": 9,
+        "ranking": 28,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 10,
@@ -3626,39 +3239,39 @@
       },
       "metrics": {
         "clicks": 0,
-        "impressions": 6,
+        "impressions": 1,
         "ctr": 0,
-        "position": 25.7
+        "position": 11
       },
       "contextMetrics": {
         "clicks": 0,
-        "impressions": 9,
+        "impressions": 2,
         "ctr": 0,
-        "position": 31.3
+        "position": 7.5
       },
       "queries": [],
       "migrationSources": [],
-      "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
+      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
     },
     {
       "page": "/affiliate-hinweis/",
       "type": "content",
       "status": "push",
       "confidence": "low",
-      "score": 43,
+      "score": 46,
       "scores": {
         "ranking": 28,
-        "impressions": 5,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
-        "context": 6,
+        "context": 10,
         "commercial": 4
       },
       "metrics": {
         "clicks": 0,
-        "impressions": 2,
+        "impressions": 1,
         "ctr": 0,
-        "position": 11
+        "position": 15
       },
       "contextMetrics": {
         "clicks": 0,
@@ -3675,10 +3288,10 @@
       "type": "content",
       "status": "push",
       "confidence": "low",
-      "score": 43,
+      "score": 44,
       "scores": {
         "ranking": 28,
-        "impressions": 5,
+        "impressions": 6,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -3705,10 +3318,10 @@
       "type": "content",
       "status": "push",
       "confidence": "low",
-      "score": 43,
+      "score": 44,
       "scores": {
         "ranking": 30,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -3725,36 +3338,6 @@
         "impressions": 1,
         "ctr": 0,
         "position": 6
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
-      "page": "/trinkmenge-katze-messen/",
-      "type": "content",
-      "status": "push",
-      "confidence": "low",
-      "score": 43,
-      "scores": {
-        "ranking": 30,
-        "impressions": 3,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 7
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 7
       },
       "queries": [],
       "migrationSources": [],
@@ -3765,10 +3348,10 @@
       "type": "content",
       "status": "push",
       "confidence": "low",
-      "score": 43,
+      "score": 44,
       "scores": {
         "ranking": 30,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -3785,66 +3368,6 @@
         "impressions": 1,
         "ctr": 0,
         "position": 8
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
-      "page": "/wie-kann-technik-gegen-langeweile-helfen/",
-      "type": "content",
-      "status": "push",
-      "confidence": "low",
-      "score": 43,
-      "scores": {
-        "ranking": 30,
-        "impressions": 3,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 8
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 8
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
-      "page": "/welche-portionsgroesse-ist-richtig/",
-      "type": "content",
-      "status": "push",
-      "confidence": "low",
-      "score": 43,
-      "scores": {
-        "ranking": 30,
-        "impressions": 3,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 9
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 9
       },
       "queries": [],
       "migrationSources": [],
@@ -3855,10 +3378,10 @@
       "type": "content",
       "status": "push",
       "confidence": "low",
-      "score": 43,
+      "score": 44,
       "scores": {
         "ranking": 30,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -3885,10 +3408,10 @@
       "type": "content",
       "status": "push",
       "confidence": "low",
-      "score": 43,
+      "score": 44,
       "scores": {
         "ranking": 30,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -3915,10 +3438,10 @@
       "type": "manufacturer",
       "status": "push",
       "confidence": "low",
-      "score": 43,
+      "score": 44,
       "scores": {
         "ranking": 28,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -3941,152 +3464,14 @@
       "action": "Marken- und Modellabdeckung schärfen und die wichtigsten Produktziele intern priorisieren."
     },
     {
-      "page": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
-      "type": "comparison",
-      "status": "investigate",
-      "confidence": "medium",
-      "score": 41,
-      "scores": {
-        "ranking": 4,
-        "impressions": 10,
-        "ctrPotential": 0,
-        "queryMatch": 11,
-        "context": 6,
-        "commercial": 10
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 8,
-        "ctr": 0,
-        "position": 60.5
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 8,
-        "ctr": 0,
-        "position": 60.5
-      },
-      "queries": [
-        {
-          "query": "futterautomat für 2 katzen",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 56
-        },
-        {
-          "query": "futterautomat katze vergleich",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 76
-        }
-      ],
-      "migrationSources": [
-        "/futterautomat-fuer-zwei-katzen/",
-        "/beste-futterautomaten-fuer-zwei-katzen/"
-      ],
-      "action": "SERP-Intent und Konkurrenz-Gaps prüfen, bevor weiterer Content ergänzt wird."
-    },
-    {
-      "page": "/produkt/surefeed-microchip-pet-feeder-connect/",
-      "type": "product",
-      "status": "improve",
-      "confidence": "low",
-      "score": 41,
-      "scores": {
-        "ranking": 20,
-        "impressions": 6,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 9
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": 0,
-        "position": 20.3
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": 0,
-        "position": 20.3
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
-    },
-    {
-      "page": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
-      "type": "content",
-      "status": "push",
-      "confidence": "low",
-      "score": 41,
-      "scores": {
-        "ranking": 28,
-        "impressions": 3,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 11
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 11
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
-      "page": "/hund-frisst-nicht/",
-      "type": "content",
-      "status": "improve",
-      "confidence": "low",
-      "score": 41,
-      "scores": {
-        "ranking": 28,
-        "impressions": 3,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 20
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 20
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
-    },
-    {
       "page": "/futterautomat-katze/",
       "type": "content",
       "status": "investigate",
       "confidence": "medium",
-      "score": 40,
+      "score": 43,
       "scores": {
         "ranking": 4,
-        "impressions": 11,
+        "impressions": 14,
         "ctrPotential": 0,
         "queryMatch": 15,
         "context": 6,
@@ -4152,35 +3537,151 @@
       "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
     },
     {
-      "page": "/produkt/petkit-yumshare-dual-hopper/",
-      "type": "product",
-      "status": "defend",
-      "confidence": "low",
-      "score": 40,
+      "page": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
+      "type": "comparison",
+      "status": "investigate",
+      "confidence": "medium",
+      "score": 43,
       "scores": {
-        "ranking": 18,
+        "ranking": 4,
+        "impressions": 12,
+        "ctrPotential": 0,
+        "queryMatch": 11,
+        "context": 6,
+        "commercial": 10
+      },
+      "metrics": {
+        "clicks": 0,
         "impressions": 7,
+        "ctr": 0,
+        "position": 42.3
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 42.3
+      },
+      "queries": [
+        {
+          "query": "kleinster gps tracker für katzen",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 39.5
+        },
+        {
+          "query": "katzen gps testsieger",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 79.5
+        }
+      ],
+      "migrationSources": [
+        "/kleine-gps-tracker-fuer-katzen/"
+      ],
+      "action": "SERP-Intent und Konkurrenz-Gaps prüfen, bevor weiterer Content ergänzt wird."
+    },
+    {
+      "page": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "type": "comparison",
+      "status": "investigate",
+      "confidence": "medium",
+      "score": 43,
+      "scores": {
+        "ranking": 4,
+        "impressions": 10,
+        "ctrPotential": 0,
+        "queryMatch": 9,
+        "context": 10,
+        "commercial": 10
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 56
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0,
+        "position": 59.9
+      },
+      "queries": [
+        {
+          "query": "futterautomat für 2 katzen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 56
+        }
+      ],
+      "migrationSources": [
+        "/futterautomat-fuer-zwei-katzen/",
+        "/beste-futterautomaten-fuer-zwei-katzen/"
+      ],
+      "action": "SERP-Intent und Konkurrenz-Gaps prüfen, bevor weiterer Content ergänzt wird."
+    },
+    {
+      "page": "/produkt/surefeed-microchip-pet-feeder-connect/",
+      "type": "product",
+      "status": "improve",
+      "confidence": "low",
+      "score": 43,
+      "scores": {
+        "ranking": 20,
+        "impressions": 8,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
         "commercial": 9
       },
       "metrics": {
-        "clicks": 2,
-        "impressions": 4,
-        "ctr": 50,
-        "position": 3.7
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 20.3
       },
       "contextMetrics": {
-        "clicks": 2,
-        "impressions": 4,
-        "ctr": 50,
-        "position": 3.7
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 20.3
       },
       "queries": [],
-      "migrationSources": [
-        "/produkt/petkit-yumshare-dual/"
-      ],
+      "migrationSources": [],
+      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
+    },
+    {
+      "page": "/produkt/oneisall-2-in-1-feeder-water/",
+      "type": "product",
+      "status": "defend",
+      "confidence": "low",
+      "score": 43,
+      "scores": {
+        "ranking": 18,
+        "impressions": 6,
+        "ctrPotential": 0,
+        "queryMatch": 0,
+        "context": 10,
+        "commercial": 9
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 3.5
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 5.7
+      },
+      "queries": [],
+      "migrationSources": [],
       "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
     },
     {
@@ -4188,10 +3689,10 @@
       "type": "comparison",
       "status": "investigate",
       "confidence": "low",
-      "score": 40,
+      "score": 42,
       "scores": {
         "ranking": 4,
-        "impressions": 7,
+        "impressions": 9,
         "ctrPotential": 0,
         "queryMatch": 13,
         "context": 6,
@@ -4238,127 +3739,44 @@
       "action": "SERP-Intent und Konkurrenz-Gaps prüfen, bevor weiterer Content ergänzt wird."
     },
     {
-      "page": "/uebergewicht-bei-katzen-vermeiden/",
+      "page": "/hund-frisst-nicht/",
       "type": "content",
-      "status": "investigate",
-      "confidence": "medium",
-      "score": 39,
+      "status": "improve",
+      "confidence": "low",
+      "score": 42,
       "scores": {
-        "ranking": 4,
-        "impressions": 10,
+        "ranking": 28,
+        "impressions": 4,
         "ctrPotential": 0,
-        "queryMatch": 15,
+        "queryMatch": 0,
         "context": 6,
         "commercial": 4
       },
       "metrics": {
         "clicks": 0,
-        "impressions": 8,
+        "impressions": 1,
         "ctr": 0,
-        "position": 85.3
+        "position": 20
       },
       "contextMetrics": {
         "clicks": 0,
-        "impressions": 8,
+        "impressions": 1,
         "ctr": 0,
-        "position": 85.3
+        "position": 20
       },
-      "queries": [
-        {
-          "query": "übergewichtige katze richtig füttern",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 93.7
-        },
-        {
-          "query": "übergewicht bei katzen",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 83.5
-        },
-        {
-          "query": "katze muss abnehmen",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 72
-        },
-        {
-          "query": "katze abnehmen tipps",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 74
-        },
-        {
-          "query": "meine katze hat übergewicht",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 88
-        }
-      ],
+      "queries": [],
       "migrationSources": [],
       "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
-    },
-    {
-      "page": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
-      "type": "comparison",
-      "status": "investigate",
-      "confidence": "medium",
-      "score": 39,
-      "scores": {
-        "ranking": 4,
-        "impressions": 8,
-        "ctrPotential": 0,
-        "queryMatch": 11,
-        "context": 6,
-        "commercial": 10
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": 0,
-        "position": 55.2
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": 0,
-        "position": 55.2
-      },
-      "queries": [
-        {
-          "query": "kleinster gps tracker für katzen",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 39.5
-        },
-        {
-          "query": "katzen gps testsieger",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 79.5
-        }
-      ],
-      "migrationSources": [
-        "/kleine-gps-tracker-fuer-katzen/"
-      ],
-      "action": "SERP-Intent und Konkurrenz-Gaps prüfen, bevor weiterer Content ergänzt wird."
     },
     {
       "page": "/futterautomat-hund/",
       "type": "content",
       "status": "investigate",
       "confidence": "low",
-      "score": 38,
+      "score": 40,
       "scores": {
         "ranking": 12,
-        "impressions": 7,
+        "impressions": 9,
         "ctrPotential": 0,
         "queryMatch": 9,
         "context": 6,
@@ -4389,142 +3807,14 @@
       "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
     },
     {
-      "page": "/wie-lange-bleibt-trockenfutter-frisch/",
-      "type": "content",
-      "status": "investigate",
-      "confidence": "low",
-      "score": 38,
-      "scores": {
-        "ranking": 12,
-        "impressions": 7,
-        "ctrPotential": 0,
-        "queryMatch": 9,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": 0,
-        "position": 34.5
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": 0,
-        "position": 34.5
-      },
-      "queries": [
-        {
-          "query": "trockenfutter abgelaufen",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 41
-        }
-      ],
-      "migrationSources": [],
-      "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
-    },
-    {
-      "page": "/produkt/cat-mate-shell-fountain/",
-      "type": "product",
-      "status": "defend",
-      "confidence": "low",
-      "score": 38,
-      "scores": {
-        "ranking": 18,
-        "impressions": 5,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 9
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 4
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 4
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
-    },
-    {
-      "page": "/produkt/petlibro-glacier-ultrafiltration/",
-      "type": "product",
-      "status": "improve",
-      "confidence": "low",
-      "score": 38,
-      "scores": {
-        "ranking": 20,
-        "impressions": 3,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 9
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 22
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 22
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
-    },
-    {
-      "page": "/produkt/petlibro-air-automatic-feeder/",
-      "type": "product",
-      "status": "improve",
-      "confidence": "low",
-      "score": 38,
-      "scores": {
-        "ranking": 20,
-        "impressions": 3,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 9
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 30
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 30
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
-    },
-    {
       "page": "/vergleiche/beste-futterautomaten-fuer-hunde/",
       "type": "comparison",
       "status": "investigate",
       "confidence": "medium",
-      "score": 37,
+      "score": 39,
       "scores": {
         "ranking": 4,
-        "impressions": 8,
+        "impressions": 10,
         "ctrPotential": 0,
         "queryMatch": 9,
         "context": 6,
@@ -4557,14 +3847,104 @@
       "action": "SERP-Intent und Konkurrenz-Gaps prüfen, bevor weiterer Content ergänzt wird."
     },
     {
+      "page": "/produkt/petlibro-glacier-ultrafiltration/",
+      "type": "product",
+      "status": "improve",
+      "confidence": "low",
+      "score": 39,
+      "scores": {
+        "ranking": 20,
+        "impressions": 4,
+        "ctrPotential": 0,
+        "queryMatch": 0,
+        "context": 6,
+        "commercial": 9
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 22
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 22
+      },
+      "queries": [],
+      "migrationSources": [],
+      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
+    },
+    {
+      "page": "/produkt/petlibro-air-automatic-feeder/",
+      "type": "product",
+      "status": "improve",
+      "confidence": "low",
+      "score": 39,
+      "scores": {
+        "ranking": 20,
+        "impressions": 4,
+        "ctrPotential": 0,
+        "queryMatch": 0,
+        "context": 6,
+        "commercial": 9
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 30
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 30
+      },
+      "queries": [],
+      "migrationSources": [],
+      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
+    },
+    {
+      "page": "/warum-katzen-fliessendes-wasser-trinken/",
+      "type": "content",
+      "status": "defend",
+      "confidence": "low",
+      "score": 38,
+      "scores": {
+        "ranking": 18,
+        "impressions": 6,
+        "ctrPotential": 0,
+        "queryMatch": 0,
+        "context": 10,
+        "commercial": 4
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 5
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 7
+      },
+      "queries": [],
+      "migrationSources": [],
+      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
+    },
+    {
       "page": "/hund-hat-durchfall/",
       "type": "content",
       "status": "investigate",
       "confidence": "medium",
-      "score": 35,
+      "score": 37,
       "scores": {
         "ranking": 4,
-        "impressions": 8,
+        "impressions": 10,
         "ctrPotential": 0,
         "queryMatch": 13,
         "context": 6,
@@ -4609,74 +3989,14 @@
       "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
     },
     {
-      "page": "/trinkbrunnen-fuer-katzen-sinnvoll/",
-      "type": "content",
-      "status": "improve",
-      "confidence": "low",
-      "score": 35,
-      "scores": {
-        "ranking": 20,
-        "impressions": 5,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 21
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 21
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
-    },
-    {
-      "page": "/hersteller/weenect/",
-      "type": "manufacturer",
-      "status": "improve",
-      "confidence": "low",
-      "score": 35,
-      "scores": {
-        "ranking": 20,
-        "impressions": 3,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 6
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 23
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 23
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Marken- und Modellabdeckung schärfen und die wichtigsten Produktziele intern priorisieren."
-    },
-    {
       "page": "/hund-trinkt-viel/",
       "type": "content",
       "status": "investigate",
       "confidence": "low",
-      "score": 34,
+      "score": 36,
       "scores": {
         "ranking": 4,
-        "impressions": 7,
+        "impressions": 9,
         "ctrPotential": 0,
         "queryMatch": 13,
         "context": 6,
@@ -4721,89 +4041,82 @@
       "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
     },
     {
-      "page": "/gps-tracker/",
-      "type": "hub",
-      "status": "investigate",
+      "page": "/hersteller/weenect/",
+      "type": "manufacturer",
+      "status": "improve",
       "confidence": "low",
-      "score": 34,
+      "score": 36,
       "scores": {
-        "ranking": 4,
-        "impressions": 5,
-        "ctrPotential": 0,
-        "queryMatch": 11,
-        "context": 6,
-        "commercial": 8
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 84.5
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 84.5
-      },
-      "queries": [
-        {
-          "query": "gps tracker hund test",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 84
-        },
-        {
-          "query": "gps tracker katze test",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 85
-        }
-      ],
-      "migrationSources": [],
-      "action": "Hub als Verteiler stärken; keine zusätzlichen konkurrierenden Intent-Seiten erzeugen."
-    },
-    {
-      "page": "/produkt/honeyguardian-a68/",
-      "type": "product",
-      "status": "defend",
-      "confidence": "low",
-      "score": 34,
-      "scores": {
-        "ranking": 12,
-        "impressions": 3,
+        "ranking": 20,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
-        "context": 10,
-        "commercial": 9
+        "context": 6,
+        "commercial": 6
       },
       "metrics": {
-        "clicks": 1,
+        "clicks": 0,
         "impressions": 1,
-        "ctr": 100,
-        "position": 2
+        "ctr": 0,
+        "position": 23
       },
       "contextMetrics": {
-        "clicks": 1,
-        "impressions": 3,
-        "ctr": 33.33,
-        "position": 13.7
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 23
       },
       "queries": [],
       "migrationSources": [],
-      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
+      "action": "Marken- und Modellabdeckung schärfen und die wichtigsten Produktziele intern priorisieren."
+    },
+    {
+      "page": "/wie-lange-bleibt-trockenfutter-frisch/",
+      "type": "content",
+      "status": "investigate",
+      "confidence": "low",
+      "score": 35,
+      "scores": {
+        "ranking": 4,
+        "impressions": 8,
+        "ctrPotential": 0,
+        "queryMatch": 9,
+        "context": 10,
+        "commercial": 4
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 42.3
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 34.5
+      },
+      "queries": [
+        {
+          "query": "trockenfutter abgelaufen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 41
+        }
+      ],
+      "migrationSources": [],
+      "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
     },
     {
       "page": "/futtermenge-hund/",
       "type": "content",
       "status": "investigate",
       "confidence": "low",
-      "score": 33,
+      "score": 35,
       "scores": {
         "ranking": 4,
-        "impressions": 6,
+        "impressions": 8,
         "ctrPotential": 0,
         "queryMatch": 13,
         "context": 6,
@@ -4848,14 +4161,119 @@
       "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
     },
     {
+      "page": "/gps-tracker/",
+      "type": "hub",
+      "status": "investigate",
+      "confidence": "low",
+      "score": 35,
+      "scores": {
+        "ranking": 4,
+        "impressions": 6,
+        "ctrPotential": 0,
+        "queryMatch": 11,
+        "context": 6,
+        "commercial": 8
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 84.5
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 84.5
+      },
+      "queries": [
+        {
+          "query": "gps tracker hund test",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 84
+        },
+        {
+          "query": "gps tracker katze test",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 85
+        }
+      ],
+      "migrationSources": [],
+      "action": "Hub als Verteiler stärken; keine zusätzlichen konkurrierenden Intent-Seiten erzeugen."
+    },
+    {
+      "page": "/produkt/honeyguardian-a68/",
+      "type": "product",
+      "status": "defend",
+      "confidence": "low",
+      "score": 35,
+      "scores": {
+        "ranking": 12,
+        "impressions": 4,
+        "ctrPotential": 0,
+        "queryMatch": 0,
+        "context": 10,
+        "commercial": 9
+      },
+      "metrics": {
+        "clicks": 1,
+        "impressions": 1,
+        "ctr": 100,
+        "position": 2
+      },
+      "contextMetrics": {
+        "clicks": 1,
+        "impressions": 3,
+        "ctr": 33.33,
+        "position": 13.7
+      },
+      "queries": [],
+      "migrationSources": [],
+      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
+    },
+    {
+      "page": "/produkt/petsafe-freshfeed-refrigerated-feeder/",
+      "type": "product",
+      "status": "defend",
+      "confidence": "low",
+      "score": 35,
+      "scores": {
+        "ranking": 12,
+        "impressions": 4,
+        "ctrPotential": 0,
+        "queryMatch": 0,
+        "context": 10,
+        "commercial": 9
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 2
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 30.2
+      },
+      "queries": [],
+      "migrationSources": [],
+      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
+    },
+    {
       "page": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
       "type": "content",
       "status": "improve",
       "confidence": "low",
-      "score": 33,
+      "score": 34,
       "scores": {
         "ranking": 20,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -4882,10 +4300,10 @@
       "type": "content",
       "status": "improve",
       "confidence": "low",
-      "score": 33,
+      "score": 34,
       "scores": {
         "ranking": 20,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -4908,44 +4326,44 @@
       "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
     },
     {
-      "page": "/hersteller/xiaomi/",
-      "type": "manufacturer",
-      "status": "investigate",
+      "page": "/kontakt/",
+      "type": "content",
+      "status": "defend",
       "confidence": "low",
-      "score": 31,
+      "score": 32,
       "scores": {
         "ranking": 12,
-        "impressions": 7,
+        "impressions": 6,
         "ctrPotential": 0,
         "queryMatch": 0,
-        "context": 6,
-        "commercial": 6
+        "context": 10,
+        "commercial": 4
       },
       "metrics": {
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": 0,
-        "position": 33.3
+        "clicks": 1,
+        "impressions": 2,
+        "ctr": 50,
+        "position": 2
       },
       "contextMetrics": {
-        "clicks": 0,
-        "impressions": 4,
-        "ctr": 0,
-        "position": 33.3
+        "clicks": 1,
+        "impressions": 5,
+        "ctr": 20,
+        "position": 2.6
       },
       "queries": [],
       "migrationSources": [],
-      "action": "Marken- und Modellabdeckung schärfen und die wichtigsten Produktziele intern priorisieren."
+      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
     },
     {
       "page": "/datenschutz/",
       "type": "content",
       "status": "defend",
       "confidence": "low",
-      "score": 31,
+      "score": 32,
       "scores": {
         "ranking": 18,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -4972,10 +4390,10 @@
       "type": "content",
       "status": "defend",
       "confidence": "low",
-      "score": 31,
+      "score": 32,
       "scores": {
         "ranking": 18,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -5002,10 +4420,10 @@
       "type": "comparison",
       "status": "investigate",
       "confidence": "low",
-      "score": 31,
+      "score": 32,
       "scores": {
         "ranking": 12,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -5031,44 +4449,14 @@
       "action": "SERP-Intent und Konkurrenz-Gaps prüfen, bevor weiterer Content ergänzt wird."
     },
     {
-      "page": "/kontakt/",
-      "type": "content",
-      "status": "defend",
-      "confidence": "medium",
-      "score": 30,
-      "scores": {
-        "ranking": 12,
-        "impressions": 8,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 1,
-        "impressions": 5,
-        "ctr": 20,
-        "position": 2.6
-      },
-      "contextMetrics": {
-        "clicks": 1,
-        "impressions": 5,
-        "ctr": 20,
-        "position": 2.6
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
       "page": "/produkt/petlibro-granary-camera-feeder/",
       "type": "product",
       "status": "investigate",
       "confidence": "low",
-      "score": 30,
+      "score": 31,
       "scores": {
         "ranking": 12,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -5095,10 +4483,10 @@
       "type": "product",
       "status": "investigate",
       "confidence": "low",
-      "score": 30,
+      "score": 31,
       "scores": {
         "ranking": 12,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -5125,10 +4513,10 @@
       "type": "product",
       "status": "investigate",
       "confidence": "low",
-      "score": 30,
+      "score": 31,
       "scores": {
         "ranking": 12,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -5155,10 +4543,10 @@
       "type": "product",
       "status": "investigate",
       "confidence": "low",
-      "score": 30,
+      "score": 31,
       "scores": {
         "ranking": 12,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -5181,52 +4569,44 @@
       "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
     },
     {
-      "page": "/nierenkranke-katze-trinken/",
+      "page": "/trinkbrunnen-seniorenkatzen/",
       "type": "content",
-      "status": "investigate",
+      "status": "defend",
       "confidence": "low",
-      "score": 29,
+      "score": 30,
       "scores": {
-        "ranking": 4,
-        "impressions": 6,
+        "ranking": 12,
+        "impressions": 4,
         "ctrPotential": 0,
-        "queryMatch": 9,
-        "context": 6,
+        "queryMatch": 0,
+        "context": 10,
         "commercial": 4
       },
       "metrics": {
         "clicks": 0,
-        "impressions": 3,
+        "impressions": 1,
         "ctr": 0,
-        "position": 68
+        "position": 2
       },
       "contextMetrics": {
         "clicks": 0,
-        "impressions": 3,
+        "impressions": 2,
         "ctr": 0,
-        "position": 68
+        "position": 2
       },
-      "queries": [
-        {
-          "query": "katze trinkt nicht",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 98.5
-        }
-      ],
+      "queries": [],
       "migrationSources": [],
-      "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
+      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
     },
     {
       "page": "/wie-viele-mahlzeiten-hund/",
       "type": "content",
       "status": "defend",
       "confidence": "low",
-      "score": 29,
+      "score": 30,
       "scores": {
         "ranking": 12,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 10,
@@ -5249,14 +4629,44 @@
       "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
     },
     {
+      "page": "/wissen/",
+      "type": "content",
+      "status": "defend",
+      "confidence": "low",
+      "score": 30,
+      "scores": {
+        "ranking": 12,
+        "impressions": 4,
+        "ctrPotential": 0,
+        "queryMatch": 0,
+        "context": 10,
+        "commercial": 4
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 3
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0,
+        "position": 31.3
+      },
+      "queries": [],
+      "migrationSources": [],
+      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
+    },
+    {
       "page": "/hund-trinkt-zu-wenig/",
       "type": "content",
       "status": "investigate",
       "confidence": "low",
-      "score": 28,
+      "score": 29,
       "scores": {
         "ranking": 4,
-        "impressions": 5,
+        "impressions": 6,
         "ctrPotential": 0,
         "queryMatch": 9,
         "context": 6,
@@ -5291,10 +4701,10 @@
       "type": "content",
       "status": "investigate",
       "confidence": "low",
-      "score": 28,
+      "score": 29,
       "scores": {
         "ranking": 4,
-        "impressions": 5,
+        "impressions": 6,
         "ctrPotential": 0,
         "queryMatch": 9,
         "context": 6,
@@ -5325,74 +4735,14 @@
       "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
     },
     {
-      "page": "/trinkbrunnen-seniorenkatzen/",
-      "type": "content",
-      "status": "defend",
-      "confidence": "low",
-      "score": 27,
-      "scores": {
-        "ranking": 12,
-        "impressions": 5,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 2
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 2
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
-      "page": "/hersteller/wopet/",
-      "type": "manufacturer",
-      "status": "defend",
-      "confidence": "low",
-      "score": 27,
-      "scores": {
-        "ranking": 12,
-        "impressions": 3,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 6,
-        "commercial": 6
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 2
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 2
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Marken- und Modellabdeckung schärfen und die wichtigsten Produktziele intern priorisieren."
-    },
-    {
       "page": "/hersteller/pawbby/",
       "type": "manufacturer",
       "status": "defend",
       "confidence": "low",
-      "score": 27,
+      "score": 28,
       "scores": {
         "ranking": 12,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
@@ -5419,10 +4769,10 @@
       "type": "content",
       "status": "investigate",
       "confidence": "low",
-      "score": 26,
+      "score": 27,
       "scores": {
         "ranking": 4,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 9,
         "context": 6,
@@ -5457,10 +4807,10 @@
       "type": "content",
       "status": "investigate",
       "confidence": "low",
-      "score": 26,
+      "score": 27,
       "scores": {
         "ranking": 4,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 9,
         "context": 6,
@@ -5495,10 +4845,10 @@
       "type": "content",
       "status": "investigate",
       "confidence": "low",
-      "score": 26,
+      "score": 27,
       "scores": {
         "ranking": 4,
-        "impressions": 3,
+        "impressions": 4,
         "ctrPotential": 0,
         "queryMatch": 9,
         "context": 6,
@@ -5527,6 +4877,36 @@
       ],
       "migrationSources": [],
       "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
+    },
+    {
+      "page": "/trockenfutter-oder-nassfutter-katze/",
+      "type": "content",
+      "status": "defend",
+      "confidence": "low",
+      "score": 26,
+      "scores": {
+        "ranking": 12,
+        "impressions": 4,
+        "ctrPotential": 0,
+        "queryMatch": 0,
+        "context": 6,
+        "commercial": 4
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      "contextMetrics": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      "queries": [],
+      "migrationSources": [],
+      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
     }
   ],
   "findings": []

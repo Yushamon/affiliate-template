@@ -7,7 +7,10 @@ testStatus: "manufacturer-data"
 productStatus: "active"
 description: "Geschlossene automatische Siebtrommel mit 40 × 40 cm Eingang, Whisker-App, Füllstands- und Gewichtsdaten für bis zu vier Katzen."
 recommendation: "Für Haushalte, die eine etablierte Whisker-Plattform ohne Dualkamera suchen und die 30,5-cm-Einstiegshöhe, Stellfläche und Folgekosten geprüft haben."
-manufacturer: { key: "whisker", name: "Whisker", slug: "whisker" }
+manufacturer:
+  key: "whisker"
+  name: "Whisker"
+  slug: "whisker"
 category: { key: "automatische-katzentoiletten", label: "Automatische Katzentoiletten", path: "/automatische-katzentoiletten/" }
 productUrl: "/produkt/litter-robot-4/"
 publishedAt: "2026-08-16"

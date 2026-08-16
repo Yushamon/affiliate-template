@@ -7,7 +7,10 @@ testStatus: "manufacturer-data"
 productStatus: "active"
 description: "Geschlossene PETKIT-Trommeltoilette P9902 mit 20-cm-Einstieg, 76-Liter-Zylinder, 7-Liter-Abfallfach, App und elf Sensoren – ohne Kamera."
 recommendation: "Für Katzen von 1,5 bis 10 kg, wenn die etablierte PuraMax-Trommelplattform, ein niedriger Einstieg und App-Protokolle wichtiger sind als Kamera-Monitoring."
-manufacturer: { key: "petkit", name: "PETKIT", slug: "petkit" }
+manufacturer:
+  key: "petkit"
+  name: "PETKIT"
+  slug: "petkit"
 category: { key: "automatische-katzentoiletten", label: "Automatische Katzentoiletten", path: "/automatische-katzentoiletten/" }
 productUrl: "/produkt/petkit-puramax-2/"
 publishedAt: "2026-08-16"

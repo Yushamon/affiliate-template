@@ -7,7 +7,10 @@ testStatus: "manufacturer-data"
 productStatus: "active"
 description: "Lokale Mikrochip-Katzenklappe für bis zu neun Katzen mit Timer, LCD, 4-Wege-Sperre und Batteriebetrieb – ohne App oder Hub."
 recommendation: "Für Haushalte, die selektiven Eintritt und einen gemeinsamen Timer lokal ohne App-Zwang steuern möchten."
-manufacturer: { key: "cat-mate", name: "Cat Mate", slug: "cat-mate" }
+manufacturer:
+  key: "cat-mate"
+  name: "Cat Mate"
+  slug: "cat-mate"
 category: { key: "katzenklappen", label: "Katzenklappen", path: "/katzenklappen/" }
 productUrl: "/produkt/cat-mate-elite-355w/"
 publishedAt: "2026-08-16"

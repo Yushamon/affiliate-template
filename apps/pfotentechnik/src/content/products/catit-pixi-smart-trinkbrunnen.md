@@ -7,7 +7,10 @@ testStatus: "manufacturer-data"
 productStatus: "active"
 description: "2-Liter-Netzbrunnen mit Edelstahl-Trinkfläche, 2,4-GHz-WLAN, PIXI-App, UVC-Zyklen und Wartungserinnerungen."
 recommendation: "Für Katzenhaushalte, die App-Steuerung, UVC-Zyklen und Wartungshinweise im Catit-Ökosystem möchten und monatliche Filterwechsel einplanen."
-manufacturer: { key: "catit", name: "Catit", slug: "catit" }
+manufacturer:
+  key: "catit"
+  name: "Catit"
+  slug: "catit"
 category: { key: "trinkbrunnen", label: "Trinkbrunnen", path: "/trinkbrunnen/" }
 productUrl: "/produkt/catit-pixi-smart-trinkbrunnen/"
 publishedAt: "2026-08-16"

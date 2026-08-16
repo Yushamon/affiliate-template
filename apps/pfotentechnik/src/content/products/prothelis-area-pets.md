@@ -7,7 +7,10 @@ testStatus: "manufacturer-data"
 productStatus: "active"
 description: "38-g-GPS-Tracker mit integrierter SIM, GPS/GLONASS, zeitplanbaren Geofences und GSM/GPRS/EDGE-Mobilfunk."
 recommendation: "Für Hundehalter, die eine deutsche Tracker-Alternative mit flexiblen Ortungsintervallen und Geofence-Zeitplänen suchen und das ältere Mobilfunkprofil vor Ort geprüft haben."
-manufacturer: { key: "prothelis", name: "Prothelis", slug: "prothelis" }
+manufacturer:
+  key: "prothelis"
+  name: "Prothelis"
+  slug: "prothelis"
 category: { key: "gps-tracker", label: "GPS-Tracker", path: "/gps-tracker/" }
 productUrl: "/produkt/prothelis-area-pets/"
 publishedAt: "2026-08-16"

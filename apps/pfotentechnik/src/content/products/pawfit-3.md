@@ -7,7 +7,10 @@ testStatus: "manufacturer-data"
 productStatus: "active"
 description: "27-g-Hundetracker mit GPS, 4G, WLAN, Bluetooth, Audio-ID, Sicherheitszonen, IP68 und bis zu acht Tagen Herstellerlaufzeit."
 recommendation: "Für Hunde über 3,5 kg, wenn Audio-ID, Entfernungsmeldung, Licht und Temperaturwarnung neben klassischer Mobilfunkortung wichtig sind."
-manufacturer: { key: "pawfit", name: "Pawfit", slug: "pawfit" }
+manufacturer:
+  key: "pawfit"
+  name: "Pawfit"
+  slug: "pawfit"
 category: { key: "gps-tracker", label: "GPS-Tracker", path: "/gps-tracker/" }
 productUrl: "/produkt/pawfit-3/"
 publishedAt: "2026-08-16"

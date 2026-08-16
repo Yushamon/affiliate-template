@@ -7,7 +7,10 @@ testStatus: "manufacturer-data"
 productStatus: "active"
 description: "Stationäre 4K-8-MP-Innenkamera mit 3-fach optischem Zoom, lokaler KI-Personen-/Tiererkennung, microSD bis 512 GB und optionaler Cloud."
 recommendation: "Für einen festen Innenbereich, wenn lokale Speicherung, Tiererkennung und optischer Zoom wichtiger sind als pet-spezifische Leckerli- oder Gesundheitsfunktionen."
-manufacturer: { key: "reolink", name: "Reolink", slug: "reolink" }
+manufacturer:
+  key: "reolink"
+  name: "Reolink"
+  slug: "reolink"
 category: { key: "haustierkameras", label: "Haustierkameras", path: "/haustierkameras/" }
 productUrl: "/produkt/reolink-e1-zoom/"
 publishedAt: "2026-08-16"

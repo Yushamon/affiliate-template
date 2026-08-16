@@ -5,7 +5,7 @@ type: "page"
 layout: "page"
 description: "Cornerstone für Katzenklappen: Nutzeraufgabe, Mikrochip-Zugang, Mehrkatzen-Rechte, App, Beuteerkennung, Passform und Einbau in der richtigen Reihenfolge klären."
 publishedAt: "2026-08-04"
-updatedAt: "2026-08-15"
+updatedAt: "2026-08-16"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
@@ -65,6 +65,7 @@ contentPlatform:
     - "petsafe-petporte-smart-flap"
     - "onlycat-mikrochip-katzenklappe"
     - "petwalk-medium-tiertuer"
+    - "cat-mate-elite-355w"
     - "zeromouse-2-0"
   decision: "off"
   blocks:

@@ -7,7 +7,10 @@ testStatus: "manufacturer-data"
 productStatus: "active"
 description: "1,8-Liter-Keramikbrunnen für Katzen und kleine Hunde mit offener Schale, Aktivkohle- und Schaumfilter – ohne App."
 recommendation: "Für kleine Tierhaushalte, die Keramik, offene 360-Grad-Trinkzugänglichkeit und einfache Offline-Technik gegenüber App-Funktionen priorisieren."
-manufacturer: { key: "petsafe", name: "PetSafe", slug: "petsafe" }
+manufacturer:
+  key: "petsafe"
+  name: "PetSafe"
+  slug: "petsafe"
 category: { key: "trinkbrunnen", label: "Trinkbrunnen", path: "/trinkbrunnen/" }
 productUrl: "/produkt/petsafe-streamside-trinkbrunnen/"
 publishedAt: "2026-08-16"

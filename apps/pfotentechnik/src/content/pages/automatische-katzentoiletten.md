@@ -31,7 +31,7 @@ author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
 publishedAt: "2026-08-06"
-updatedAt: "2026-08-15"
+updatedAt: "2026-08-16"
 hub:
   sections:
     - "wissen"
@@ -60,6 +60,9 @@ contentPlatform:
     - "petkit-purobot-max-pro-2"
     - "petkit-purobot-max-3"
     - "petsnowy-snow-plus"
+    - "petkit-puramax-2"
+    - "litter-robot-4"
+    - "litter-robot-5-pro"
   decision: "auto"
   blocks:
     - "summary"

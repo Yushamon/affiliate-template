@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-08-15T20:52:44.160Z",
+  "generatedAt": "2026-08-16T09:10:17.019Z",
   "version": "2.2.0",
   "summary": {
     "comparisons": 28,
-    "products": 85,
-    "manufacturers": 26,
-    "usedProducts": 56,
-    "productCoveragePercent": 65.9,
+    "products": 98,
+    "manufacturers": 32,
+    "usedProducts": 70,
+    "productCoveragePercent": 71.4,
     "errors": 0,
-    "warnings": 4,
-    "qualityScore": 98
+    "warnings": 3,
+    "qualityScore": 99
   },
   "byCode": [
     {
       "code": "PRODUCT_NOT_COVERED",
-      "count": 4,
+      "count": 3,
       "category": "coverage",
       "level": "warning"
     }
@@ -28,12 +28,6 @@
     },
     {
       "file": "src/content/products/furbo-360-hundekamera.md",
-      "errors": 0,
-      "warnings": 1,
-      "total": 1
-    },
-    {
-      "file": "src/content/products/litter-robot-5-pro.md",
       "errors": 0,
       "warnings": 1,
       "total": 1
@@ -173,14 +167,6 @@
       "code": "PRODUCT_NOT_COVERED",
       "file": "src/content/products/furbo-360-hundekamera.md",
       "slug": "furbo-360-hundekamera",
-      "message": "Aktives Produkt kommt in keiner Vergleichsseite vor.",
-      "category": "coverage"
-    },
-    {
-      "level": "warning",
-      "code": "PRODUCT_NOT_COVERED",
-      "file": "src/content/products/litter-robot-5-pro.md",
-      "slug": "litter-robot-5-pro",
       "message": "Aktives Produkt kommt in keiner Vergleichsseite vor.",
       "category": "coverage"
     },

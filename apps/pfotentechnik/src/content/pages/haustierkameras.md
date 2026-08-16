@@ -34,7 +34,7 @@ author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
 publishedAt: "2026-08-06"
-updatedAt: "2026-08-15"
+updatedAt: "2026-08-16"
 hub:
   sections:
     - "wissen"
@@ -62,6 +62,7 @@ contentPlatform:
     - "furbo-mini-360"
     - "enabot-rola-mini"
     - "pettec-cam-360"
+    - "reolink-e1-zoom"
   decision: "auto"
   blocks:
     - "summary"

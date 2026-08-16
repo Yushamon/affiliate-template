@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
+import { PRODUCT_COVERAGE } from "../src/lib/seo/topical-authority/product-coverage.data.mjs";
 
 const root = process.cwd();
 const read = (relative) => fs.readFileSync(path.join(root, relative), "utf8");
@@ -48,25 +49,17 @@ test("Haustierkamera-Hub besitzt Premium- und Intent-Struktur", () => {
   ]) assert.ok(cameraHub.includes(marker), marker);
 });
 
-test("Katzentoiletten-Hub führt fünf aktuelle Produkte", () => {
-  for (const slug of [
-    "litter-robot-5-pro",
-    "petkit-purobot-max-pro-2",
-    "neakasa-m1-plus",
-    "neakasa-m1-lite",
-    "devoko-90l-automatisches-katzenklo"
-  ]) assert.ok(litterHub.includes(`"${slug}"`), slug);
+test("Katzentoiletten-Hub führt die bestätigten Decision-Produkte", () => {
+  for (const slug of PRODUCT_COVERAGE.katzentoiletten.decisionProductSlugs) {
+    assert.ok(litterHub.includes(`"${slug}"`), slug);
+  }
 });
 
-test("Katzentoiletten-Vergleich enthält fünf Modelle", () => {
-  for (const slug of [
-    "litter-robot-5-pro",
-    "petkit-purobot-max-pro-2",
-    "neakasa-m1-plus",
-    "neakasa-m1-lite",
-    "devoko-90l-automatisches-katzenklo"
-  ]) assert.ok(litterComparison.includes(`slug: "${slug}"`), slug);
-  assert.match(litterComparison, /5 Modelle/);
+test("Katzentoiletten-Vergleich folgt der bestätigten Decision Coverage", () => {
+  for (const slug of PRODUCT_COVERAGE.katzentoiletten.decisionProductSlugs) {
+    assert.ok(litterComparison.includes(`slug: "${slug}"`), slug);
+  }
+  assert.match(litterComparison, /Neun automatische Katzentoiletten/);
 });
 
 test("Growth-Audit ist Teil des Release-Preflights", () => {

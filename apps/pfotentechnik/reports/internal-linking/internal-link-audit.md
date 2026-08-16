@@ -1,12 +1,12 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-08-16T06:22:16.758Z
+Erstellt: 2026-08-16T09:10:21.552Z
 
 ## Ergebnis
 
-- Dokumente: 227
-- Linkdefinitionen: 497
-- Simulierte automatische Links: 515
+- Dokumente: 240
+- Linkdefinitionen: 510
+- Simulierte automatische Links: 530
 - Fehler: 0
 - Warnungen: 6
 - Strict-kritisch: 0
@@ -33,9 +33,9 @@ Erstellt: 2026-08-16T06:22:16.758Z
 
 ## Tatsächlich simulierte Anchor-Texte
 
-- /automatische-katzentoiletten/ → /produkt/neakasa-m1-plus/: „Neakasa M1 Plus“
 - /automatische-katzentoiletten/ → /hersteller/petlibro/: „PETLIBRO“
 - /automatische-katzentoiletten/ → /hersteller/neakasa/: „Neakasa“
+- /automatische-katzentoiletten/ → /hersteller/whisker/: „Whisker“
 - /automatische-katzentoiletten/ → /hersteller/devoko/: „Devoko“
 - /automatische-katzentoiletten/ → /hersteller/petkit/: „PETKIT“
 - /automatische-katzentoiletten/ → /hersteller/petsnowy/: „PetSnowy“
@@ -88,9 +88,13 @@ Erstellt: 2026-08-16T06:22:16.758Z
 - /gps-tracker-richtig-befestigen/ → /hersteller/weenect/: „Weenect“
 - /gps-tracker-richtig-befestigen/ → /hersteller/garmin/: „Garmin“
 - /gps-tracker/ → /hersteller/enabot/: „Enabot“
+- /gps-tracker/ → /hersteller/prothelis/: „Prothelis“
+- /gps-tracker/ → /hersteller/invoxia/: „Invoxia“
+- /gps-tracker/ → /hersteller/pawfit/: „Pawfit“
 - /haustierkameras/ → /hersteller/petlibro/: „PETLIBRO“
 - /haustierkameras/ → /hersteller/enabot/: „Enabot“
 - /haustierkameras/ → /hersteller/furbo/: „Furbo“
+- /haustierkameras/ → /hersteller/reolink/: „Reolink“
 - /haustierkameras/ → /hersteller/pettec/: „PetTec“
 - /hund-frisst-nicht/ → /smarte-futterautomaten/: „Futterautomaten“
 - /hund-frisst-zu-schnell/ → /smarte-futterautomaten/: „Futterautomat“
@@ -122,6 +126,7 @@ Erstellt: 2026-08-16T06:22:16.758Z
 - /katzenklappe-fuer-mehrere-katzen/ → /katzenklappen/: „Katzenklappen“
 - /katzenklappe-zugluft-und-waermedaemmung/ → /hersteller/petwalk/: „petWALK“
 - /katzenklappen/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
+- /katzenklappen/ → /hersteller/cat-mate/: „Cat Mate“
 - /katzenklappen/ → /hersteller/onlycat/: „OnlyCat“
 - /katzenklappen/ → /hersteller/petsafe/: „PetSafe“
 - /katzenklappen/ → /hersteller/petwalk/: „petWALK“
@@ -181,8 +186,8 @@ Erstellt: 2026-08-16T06:22:16.758Z
 - /trinkbrunnen/ → /hersteller/cat-mate/: „Cat Mate“
 - /trinkbrunnen/ → /warum-katzen-fliessendes-wasser-trinken/: „bewegtes Wasser“
 - /trinkbrunnen/ → /hersteller/petlibro/: „PETLIBRO“
+- /trinkbrunnen/ → /hersteller/catit/: „Catit“
 - /trinkbrunnen/ → /hersteller/oneisall/: „oneisall“
-- /trinkbrunnen/ → /hersteller/petkit/: „PETKIT“
 - /trinkmenge-hund-messen/ → /trinkbrunnen/: „Trinkbrunnen“
 - /trinkmenge-hund-messen/ → /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/: „trinkt zu wenig“
 - /trinkmenge-katze-messen/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filterwechsel“
@@ -294,6 +299,8 @@ Erstellt: 2026-08-16T06:22:16.758Z
 - /produkt/imipaw-3l-automatic-cat-feeder/ → /smarte-futterautomaten/: „Futterautomat“
 - /produkt/imipaw-3l-automatic-cat-feeder/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrkatzenhaushalt“
 - /produkt/imipaw-3l-automatic-cat-feeder/ → /hersteller/imipaw/: „IMIPAW“
+- /produkt/litter-robot-4/ → /hersteller/whisker/: „Whisker“
+- /produkt/litter-robot-4/ → /hersteller/petkit/: „PETKIT“
 - /produkt/neakasa-m1-lite/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
 - /produkt/neakasa-m1-lite/ → /hersteller/neakasa/: „Neakasa“
 - /produkt/neakasa-m1-lite/ → /wie-laut-sind-automatische-futterautomaten/: „Betriebsgeräusch“
@@ -320,6 +327,7 @@ Erstellt: 2026-08-16T06:22:16.758Z
 - /produkt/onlycat-mikrochip-katzenklappe/ → /hersteller/zeromouse/: „ZeroMOUSE“
 - /produkt/pawbby-smart-pet-feeder/ → /hersteller/pawbby/: „PAWBBY“
 - /produkt/pawbby-smart-pet-feeder/ → /hersteller/xiaomi/: „Xiaomi“
+- /produkt/pawfit-3/ → /hersteller/pawfit/: „Pawfit“
 - /produkt/pawsync-smart-pet-feeder/ → /hersteller/pawsync/: „PawSync“
 - /produkt/petkit-eversweet-3-pro-uvc/ → /trinkbrunnen/: „Trinkbrunnen“
 - /produkt/petkit-eversweet-3-pro-uvc/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
@@ -339,6 +347,7 @@ Erstellt: 2026-08-16T06:22:16.758Z
 - /produkt/petkit-fresh-element-solo/ → /smarte-futterautomaten/: „Futterautomaten“
 - /produkt/petkit-fresh-element-solo/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
 - /produkt/petkit-fresh-element-solo/ → /hersteller/petkit/: „PETKIT“
+- /produkt/petkit-puramax-2/ → /hersteller/petkit/: „PETKIT“
 - /produkt/petkit-purobot-max-3/ → /hersteller/petkit/: „PETKIT“
 - /produkt/petkit-purobot-max-pro-2/ → /hersteller/petkit/: „PETKIT“
 - /produkt/petkit-yumshare-dual-hopper/ → /smarte-futterautomaten/: „Futterautomat“
@@ -385,6 +394,8 @@ Erstellt: 2026-08-16T06:22:16.758Z
 - /produkt/petsnowy-snow-plus/ → /hersteller/petsnowy/: „PetSnowy“
 - /produkt/pettec-cam-360/ → /hersteller/pettec/: „PetTec“
 - /produkt/petwalk-medium-tiertuer/ → /hersteller/petwalk/: „petWALK“
+- /produkt/reolink-e1-zoom/ → /haustierkameras/: „Haustierkamera“
+- /produkt/reolink-e1-zoom/ → /hersteller/furbo/: „Furbo“
 - /produkt/surefeed-microchip-pet-feeder-connect/ → /smarte-futterautomaten/: „Futterautomat“
 - /produkt/surefeed-microchip-pet-feeder-connect/ → /hersteller/surefeed/: „SureFeed“
 - /produkt/surefeed-microchip-pet-feeder/ → /smarte-futterautomaten/: „Futterautomaten“
@@ -529,6 +540,8 @@ Erstellt: 2026-08-16T06:22:16.758Z
 - /vergleiche/kleine-gps-tracker-fuer-katzen/ → /hersteller/tractive/: „Tractive“
 - /vergleiche/kleine-gps-tracker-fuer-katzen/ → /hersteller/weenect/: „Weenect“
 - /hersteller/cat-mate/ → /smarte-futterautomaten/: „Futterautomaten“
+- /hersteller/cat-mate/ → /katzenklappen/: „Mikrochip-Katzenklappe“
+- /hersteller/catit/ → /trinkbrunnen/: „Trinkbrunnen“
 - /hersteller/enabot/ → /haustierkameras/: „Haustierkamera“
 - /hersteller/furbo/ → /haustierkameras/: „Haustierkamera“
 - /hersteller/honeyguardian/ → /smarte-futterautomaten/: „Futterautomaten“
@@ -544,7 +557,9 @@ Erstellt: 2026-08-16T06:22:16.758Z
 - /hersteller/petlibro/ → /trinkbrunnen-fuer-katzen-sinnvoll/: „Trinkbrunnen für Katzen“
 - /hersteller/petlibro/ → /trinkbrunnen-hund/: „Trinkbrunnen für Hunde“
 - /hersteller/petlibro/ → /katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/: „Edelstahlbrunnen“
+- /hersteller/petsafe/ → /trinkbrunnen/: „Trinkbrunnen“
 - /hersteller/petsafe/ → /katzenklappen/: „Katzenklappen“
+- /hersteller/reolink/ → /haustierkameras/: „Haustierkamera“
 - /hersteller/surefeed/ → /smarte-futterautomaten/: „Futterautomaten“
 - /hersteller/wopet/ → /smarte-futterautomaten/: „Futterautomaten“
 - /hersteller/xiaomi/ → /smarte-futterautomaten/: „Futterautomaten“

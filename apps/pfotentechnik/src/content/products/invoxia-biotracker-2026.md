@@ -7,7 +7,10 @@ testStatus: "manufacturer-data"
 productStatus: "active"
 description: "37-g-Hundetracker mit GPS, LTE-M, Bluetooth, Aktivitäts- und Vitalwerttrends; Fernortung erfordert den Max-GPS-Tarif."
 recommendation: "Für Hundehalter, die Gesundheits- und Aktivitätstrends mit Mobilfunkortung verbinden möchten und Tarifgrenzen sowie den nichtdiagnostischen Charakter der Daten akzeptieren."
-manufacturer: { key: "invoxia", name: "Invoxia", slug: "invoxia" }
+manufacturer:
+  key: "invoxia"
+  name: "Invoxia"
+  slug: "invoxia"
 category: { key: "gps-tracker", label: "GPS-Tracker", path: "/gps-tracker/" }
 productUrl: "/produkt/invoxia-biotracker-2026/"
 publishedAt: "2026-08-16"

@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import yaml from "js-yaml";
-import { PRODUCT_COVERAGE } from "../src/lib/seo/topical-authority/product-coverage.ts";
+import { PRODUCT_COVERAGE } from "../src/lib/seo/topical-authority/product-coverage.data.mjs";
 
 const root = path.resolve(import.meta.dirname, "..");
 const comparisons = {

@@ -1,11 +1,11 @@
 # Product Data Normalizer
 
 - Modus: check
-- Produkte: 82
+- Produkte: 98
 - Änderungsbedarf: 0
 - Sichere Aktionen: 0
-- Fehlende Bildassets: 34
-- Alte Vergleichsrelationen (nur Report): 36
+- Fehlende Bildassets: 85
+- Alte Vergleichsrelationen (nur Report): 39
 - Parserfehler: 0
 
 ## Auto-Fixes
@@ -14,26 +14,62 @@ Keine.
 
 ## Fehlende Bildassets
 
+- cat-mate-elite-355w: thumbnail (thumbnail.webp)
+- cat-mate-elite-355w: comparison (comparison.webp)
+- cat-mate-elite-355w: gallery (gallery-1.webp + gallery-2.webp)
+- catit-pixi-smart-trinkbrunnen: thumbnail (thumbnail.webp)
+- catit-pixi-smart-trinkbrunnen: comparison (comparison.webp)
+- catit-pixi-smart-trinkbrunnen: gallery (gallery-1.webp + gallery-2.webp)
 - enabot-ebo-air-2: thumbnail (thumbnail.webp)
 - enabot-ebo-air-2: comparison (comparison.webp)
 - enabot-ebo-air-2: gallery (gallery-1.webp + gallery-2.webp)
+- enabot-rola-mini: thumbnail (thumbnail.webp)
+- enabot-rola-mini: comparison (comparison.webp)
+- enabot-rola-mini: gallery (gallery-1.webp + gallery-2.webp)
+- enabot-rola-pettracker: thumbnail (thumbnail.webp)
+- enabot-rola-pettracker: comparison (comparison.webp)
+- enabot-rola-pettracker: gallery (gallery-1.webp + gallery-2.webp)
 - furbo-360-hundekamera: thumbnail (thumbnail.webp)
 - furbo-360-hundekamera: comparison (comparison.webp)
 - furbo-360-hundekamera: gallery (gallery-1.webp + gallery-2.webp)
+- furbo-mini-360: thumbnail (thumbnail.webp)
+- furbo-mini-360: comparison (comparison.webp)
+- furbo-mini-360: gallery (gallery-1.webp + gallery-2.webp)
 - garmin-alpha-t-20: gallery (gallery-1.webp + gallery-2.webp)
 - garmin-alpha-tt-25: gallery (gallery-1.webp + gallery-2.webp)
+- invoxia-biotracker-2026: thumbnail (thumbnail.webp)
+- invoxia-biotracker-2026: comparison (comparison.webp)
+- invoxia-biotracker-2026: gallery (gallery-1.webp + gallery-2.webp)
+- litter-robot-4: thumbnail (thumbnail.webp)
+- litter-robot-4: comparison (comparison.webp)
+- litter-robot-4: gallery (gallery-1.webp + gallery-2.webp)
 - litter-robot-5-pro: thumbnail (thumbnail.webp)
 - litter-robot-5-pro: comparison (comparison.webp)
 - litter-robot-5-pro: gallery (gallery-1.webp + gallery-2.webp)
+- neakasa-m1-lite: thumbnail (thumbnail.webp)
+- neakasa-m1-lite: comparison (comparison.webp)
+- neakasa-m1-lite: gallery (gallery-1.webp + gallery-2.webp)
 - neakasa-m1-plus: thumbnail (thumbnail.webp)
 - neakasa-m1-plus: comparison (comparison.webp)
 - neakasa-m1-plus: gallery (gallery-1.webp + gallery-2.webp)
 - oneisall-2-in-1-feeder-water: gallery (gallery-1.webp + gallery-2.webp)
 - paj-pet-finder-4g-mini: gallery (gallery-1.webp + gallery-2.webp)
+- pawfit-3: thumbnail (thumbnail.webp)
+- pawfit-3: comparison (comparison.webp)
+- pawfit-3: gallery (gallery-1.webp + gallery-2.webp)
 - pawsync-smart-pet-feeder: gallery (gallery-1.webp + gallery-2.webp)
+- petkit-puramax-2: thumbnail (thumbnail.webp)
+- petkit-puramax-2: comparison (comparison.webp)
+- petkit-puramax-2: gallery (gallery-1.webp + gallery-2.webp)
+- petkit-purobot-max-3: thumbnail (thumbnail.webp)
+- petkit-purobot-max-3: comparison (comparison.webp)
+- petkit-purobot-max-3: gallery (gallery-1.webp + gallery-2.webp)
 - petkit-purobot-max-pro-2: thumbnail (thumbnail.webp)
 - petkit-purobot-max-pro-2: comparison (comparison.webp)
 - petkit-purobot-max-pro-2: gallery (gallery-1.webp + gallery-2.webp)
+- petlibro-luma-smart-litter-box: thumbnail (thumbnail.webp)
+- petlibro-luma-smart-litter-box: comparison (comparison.webp)
+- petlibro-luma-smart-litter-box: gallery (gallery-1.webp + gallery-2.webp)
 - petlibro-scout-smart-camera: thumbnail (thumbnail.webp)
 - petlibro-scout-smart-camera: comparison (comparison.webp)
 - petlibro-scout-smart-camera: gallery (gallery-1.webp + gallery-2.webp)
@@ -41,7 +77,22 @@ Keine.
 - petsafe-freshfeed-refrigerated-feeder: gallery (gallery-1.webp + gallery-2.webp)
 - petsafe-healthy-pet-simply-feed: gallery (gallery-1.webp + gallery-2.webp)
 - petsafe-smart-feed-2: gallery (gallery-1.webp + gallery-2.webp)
+- petsafe-streamside-trinkbrunnen: thumbnail (thumbnail.webp)
+- petsafe-streamside-trinkbrunnen: comparison (comparison.webp)
+- petsafe-streamside-trinkbrunnen: gallery (gallery-1.webp + gallery-2.webp)
+- petsnowy-snow-plus: thumbnail (thumbnail.webp)
+- petsnowy-snow-plus: comparison (comparison.webp)
+- petsnowy-snow-plus: gallery (gallery-1.webp + gallery-2.webp)
+- pettec-cam-360: thumbnail (thumbnail.webp)
+- pettec-cam-360: comparison (comparison.webp)
+- pettec-cam-360: gallery (gallery-1.webp + gallery-2.webp)
 - petwalk-medium-tiertuer: gallery (gallery-1.webp + gallery-2.webp)
+- prothelis-area-pets: thumbnail (thumbnail.webp)
+- prothelis-area-pets: comparison (comparison.webp)
+- prothelis-area-pets: gallery (gallery-1.webp + gallery-2.webp)
+- reolink-e1-zoom: thumbnail (thumbnail.webp)
+- reolink-e1-zoom: comparison (comparison.webp)
+- reolink-e1-zoom: gallery (gallery-1.webp + gallery-2.webp)
 - surefeed-microchip-pet-feeder-connect: gallery (gallery-1.webp + gallery-2.webp)
 - tractive-dog-6-xl: gallery (gallery-1.webp + gallery-2.webp)
 - tractive-dog-6: gallery (gallery-1.webp + gallery-2.webp)
