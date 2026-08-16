@@ -1,36 +1,36 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-15T16:47:59.147Z",
+  "generatedAt": "2026-08-16T13:00:28.327Z",
   "property": "sc-domain:pfotentechnik.de",
   "provider": "google",
   "range": "7d",
   "key": "7d",
   "label": "Letzte 7 Tage",
-  "startDate": "2026-08-08",
-  "endDate": "2026-08-14",
-  "comparisonStartDate": "2026-08-01",
-  "comparisonEndDate": "2026-08-07",
+  "startDate": "2026-08-09",
+  "endDate": "2026-08-15",
+  "comparisonStartDate": "2026-08-02",
+  "comparisonEndDate": "2026-08-08",
   "dataState": "all",
   "partial": false,
   "lowData": true,
   "metrics": {
     "current": {
       "clicks": 0,
-      "impressions": 10,
+      "impressions": 7,
       "ctr": 0,
-      "position": 25.1
+      "position": 26.9
     },
     "previous": {
       "clicks": 0,
-      "impressions": 13,
+      "impressions": 17,
       "ctr": 0,
-      "position": 37.2
+      "position": 33.3
     },
     "change": {
       "clicks": 0,
-      "impressions": -23.1,
+      "impressions": -58.8,
       "ctr": 0,
-      "position": 12.1
+      "position": 6.4
     }
   },
   "pages": [
@@ -49,25 +49,11 @@
       "position": 10
     },
     {
-      "page": "/futterautomat-katze/",
+      "page": "/hund-frisst-nicht/",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 60
-    },
-    {
-      "page": "/produkt/oneisall-2-in-1-feeder-water/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 4
-    },
-    {
-      "page": "/produkt/petkit-eversweet-ultra/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 12
+      "position": 19
     },
     {
       "page": "/produkt/weenect-xt/",
@@ -82,47 +68,18 @@
       "impressions": 1,
       "ctr": 0,
       "position": 1
-    },
-    {
-      "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 6
     }
   ],
   "queries": [
-    {
-      "query": "\"garmin alpha\" \"dog\" -\"watch\" -site:reddit.com -site:twitter.com -site:x.com -site:wykop.pl -site:tripadvisor.com -site:youtube.com -site:yelp.com -site:booking.com -site:facebook.com -site:instagram.com -site:tiktok.com",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 6
-    },
     {
       "query": "futterautomat für 2 katzen",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 56
-    },
-    {
-      "query": "nassfutterautomat katze",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 60
     }
   ],
   "pageQueries": [
-    {
-      "page": "/futterautomat-katze/",
-      "query": "nassfutterautomat katze",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 60
-    },
     {
       "page": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
       "query": "futterautomat für 2 katzen",
@@ -130,24 +87,9 @@
       "impressions": 1,
       "ctr": 0,
       "position": 56
-    },
-    {
-      "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-      "query": "\"garmin alpha\" \"dog\" -\"watch\" -site:reddit.com -site:twitter.com -site:x.com -site:wykop.pl -site:tripadvisor.com -site:youtube.com -site:yelp.com -site:booking.com -site:facebook.com -site:instagram.com -site:tiktok.com",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 6
     }
   ],
   "trend": [
-    {
-      "date": "2026-08-08",
-      "clicks": 0,
-      "impressions": 4,
-      "ctr": 0,
-      "position": 20.5
-    },
     {
       "date": "2026-08-09",
       "clicks": 0,
@@ -189,6 +131,13 @@
       "impressions": 0,
       "ctr": 0,
       "position": 0
+    },
+    {
+      "date": "2026-08-15",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 19
     }
   ],
   "recommendations": []
