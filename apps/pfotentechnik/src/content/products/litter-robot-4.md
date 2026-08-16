@@ -32,9 +32,60 @@ availabilityUpdated: "2026-08-16"
 editorialStatus: "required"
 recommendationStatus: "limited"
 maintenanceStatus: "required"
-rating: 0
-ratings: {}
-externalEvidence: { status: "constrained", note: "Herstellerseite und Bedienungsanleitung sind belegt; kein eigener Praxis- oder Langzeittest." }
+rating: 4.4
+ratings:
+  reinigung: 4.8
+  geruchskontrolle: 4.8
+  app: 4.8
+  katzenfit: 4.4
+  preisleistung: 3.4
+externalEvidence:
+  professionalReviews:
+  - publisher: Good Housekeeping
+    title: I Tried Litter-Robot 4 With My Two Cats
+    url: https://www.goodhousekeeping.com/home-products/a40510449/litter-robot-4-review/
+    checkedAt: '2026-08-16'
+    methodology: hands-on
+    positives:
+    - Kein Schaufeln, starke Geruchskontrolle, leiser Betrieb und App.
+    negatives:
+    - Sehr teuer, groß und Eingewöhnung kann Zeit brauchen.
+    publishedAt: '2026-03-03'
+  - publisher: WIRED
+    title: Whisker Litter-Robot 4 Review
+    url: https://www.wired.com/review/whisker-litter-robot-4/
+    checkedAt: '2026-08-16'
+    methodology: hands-on
+    positives:
+    - Sehr gute App, großer geruchsdichter Abfallbehälter und leiser Betrieb.
+    negatives:
+    - Hoher Preis; im Test traten einzelne Ghost-Cycles/Benachrichtigungsprobleme auf.
+  userReviews:
+  - platform: Trustpilot · Litter Robot EU gesamt
+    url: https://de.trustpilot.com/review/www.litter-robot.eu
+    checkedAt: '2026-08-16'
+    rating: 2.3
+    scale: 5
+    reviewCount: 25
+    recurringPositives:
+    - Einzelne Nutzer loben die deutliche Alltagserleichterung.
+    recurringCriticism:
+    - Die sehr kleine EU-Stichprobe kritisiert vor allem Service, Versand und ältere Zuverlässigkeitsprobleme.
+  consensus:
+    strengths:
+    - finding: Reinigungskomfort, Geruchskontrolle und App sind in unabhängigen Praxistests sehr stark bestätigt.
+      sourceCount: 2
+      confidence: high
+    weaknesses:
+    - finding: Preis, Größe und Eingewöhnung sind konsistente Nachteile.
+      sourceCount: 2
+      confidence: high
+    - finding: Das kleine EU-Trustpilot-Signal ist kein belastbarer Litter-Robot-4-Produktscore.
+      sourceCount: 1
+      confidence: high
+    editorialAssessment: Die hohe Produktwertung stützt sich auf unabhängige Tests; das kleine schwache EU-Service-Signal
+      bleibt getrennt.
+  note: Kein eigener PfotenTechnik-Praxistest.
 decision:
   bestFor: ["Geschlossene Whisker-Referenzplattform ohne Dualkamera", "Bis zu vier Katzen laut Hersteller", "Katzen ab 1,36 kg im Automatikmodus"]
   attention: ["30,5 cm vom Boden zum Eingang; optionale Stufe senkt nur den letzten Höhenunterschied", "Ebener fester Stand ist für Gewichtsdaten wichtig", "Beutel, Filter, Streu und optionales Zubehör verursachen Folgekosten"]
@@ -87,6 +138,27 @@ editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentati
 evidenceSources:
   - { source: "Whisker EU – Litter-Robot 4", url: "https://www.litter-robot.com/eu/de/litter-robot-4.html", accessedAt: "2026-08-16", assertion: "Eingang, Gewicht, Katzenprofil, Mehrkatzenangabe, App und Strom sind Herstellerangaben.", fields: ["specs", "decision", "comparisonData"] }
   - { source: "Litter-Robot 4 Bedienungsanleitung", url: "https://www.litter-robot.com/manual_pdf/Litter-Robot-4-Manual-EN-DE-FR-IT_LR4-8018-0B.pdf", accessedAt: "2026-08-16", assertion: "Außenmaße, Einstiegshöhe, Innenraum und Betriebsgrenzen stammen aus dem Herstellerhandbuch.", fields: ["specs", "faq"] }
+  - source: "Good Housekeeping · Litter-Robot 4"
+    url: "https://www.goodhousekeeping.com/home-products/a40510449/litter-robot-4-review/"
+    accessedAt: "2026-08-16"
+    assertion: "Mehrmonatiger Praxistest."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "WIRED · Litter-Robot 4"
+    url: "https://www.wired.com/review/whisker-litter-robot-4/"
+    accessedAt: "2026-08-16"
+    assertion: "Praxistest."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "Trustpilot · Litter Robot EU"
+    url: "https://de.trustpilot.com/review/www.litter-robot.eu"
+    accessedAt: "2026-08-16"
+    assertion: "Kleines markenweites EU-Nutzersignal."
+    fields:
+      - "ratings"
+      - "externalEvidence"
 ---
 
 ## Referenzplattform ohne Kamera

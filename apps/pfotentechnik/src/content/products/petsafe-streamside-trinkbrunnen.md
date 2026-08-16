@@ -32,9 +32,56 @@ availabilityUpdated: "2026-08-16"
 editorialStatus: "required"
 recommendationStatus: "limited"
 maintenanceStatus: "required"
-rating: 0
-ratings: {}
-externalEvidence: { status: "constrained", note: "Herstellerdaten ohne eigenen Geräusch-, Hygiene- oder Langzeittest." }
+rating: 4.3
+ratings:
+  lautstaerke: 4.7
+  material: 4.7
+  reinigung: 4.3
+  kapazitaet: 3.5
+  folgekosten: 4.5
+externalEvidence:
+  professionalReviews:
+  - publisher: F.A.Z. Kaufkompass
+    title: Der beste Katzenbrunnen
+    url: https://www.faz.net/kaufkompass/test/der-beste-katzenbrunnen/
+    checkedAt: '2026-08-16'
+    methodology: hands-on
+    positives:
+    - Keramik, sehr leiser Wasserfluss, langes Kabel und geringe Filterkosten.
+    negatives:
+    - Komplizierter Aufbau, nur 1,8 Liter, schmales Becken und leicht summende Pumpe.
+  - publisher: CHIP
+    title: Katzenbrunnen im Test 2026
+    url: https://www.chip.de/artikel/Katzenbrunnen-im-Test_185370173.html
+    checkedAt: '2026-08-16'
+    methodology: editorial-review
+    positives:
+    - Hochwertige Keramik, langes Kabel, günstige Ersatzfilter und leiser Wasserfluss.
+    negatives:
+    - Geringes Fassungsvermögen, schmales Becken und komplizierter Aufbau.
+  userReviews:
+  - platform: Zooplus Schweiz · Streamside
+    url: https://www.zooplus.ch/feedback/shop/katzen/fressnapf/katzentraenke/pet_safe/1216286
+    checkedAt: '2026-08-16'
+    rating: 4.1
+    scale: 5
+    reviewCount: 403
+    recurringPositives:
+    - Viele Bewertungen loben Reinigung, leisen Betrieb und Akzeptanz.
+    recurringCriticism:
+    - Einzelne Bewertungen thematisieren Pumpe, Haltbarkeit und Pflegeaufwand.
+  consensus:
+    strengths:
+    - finding: Materialqualität und sehr leiser Wasserfluss werden professionell wie nutzerseitig gestützt.
+      sourceCount: 3
+      confidence: high
+    weaknesses:
+    - finding: Kapazität, schmales Becken und Pumpen-/Wartungsthemen sind die wiederkehrenden Schwächen.
+      sourceCount: 3
+      confidence: high
+    editorialAssessment: Die Bewertung priorisiert Material, Lautstärke, Reinigung, Kapazität und Folgekosten; das Zooplus-Signal
+      ist produktspezifisch.
+  note: Kein eigener PfotenTechnik-Praxistest.
 decision:
   bestFor: ["Keramik als Materialalternative", "Katzen und kleine Hunde", "Offene Schale mit Zugang von allen Seiten"]
   attention: ["1,8 Liter erfordern in Mehrtierhaushalten häufigere Kontrolle", "Pumpe wird separat von Hand gereinigt", "Aktivkohle- und Schaumfilter verursachen Folgekosten"]
@@ -64,6 +111,27 @@ faq:
 editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-16", note: "Deutsche Herstellerbezeichnung verifiziert; kein eigener Produkttest." }
 evidenceSources:
   - { source: "PetSafe Keramik-Trinkbrunnen Streamside", url: "https://www.petsafe.com/de/p/keramik-trinkbrunnen-streamside/PWW19-17098/", accessedAt: "2026-08-16", assertion: "Name, Kapazität, Keramik, Filter, Maße, Eignung und Reinigung sind Herstellerangaben.", fields: ["specs", "decision", "comparisonData"] }
+  - source: "F.A.Z. Kaufkompass · Streamside"
+    url: "https://www.faz.net/kaufkompass/test/der-beste-katzenbrunnen/"
+    accessedAt: "2026-08-16"
+    assertion: "Unabhängiger Praxistest."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "CHIP · Katzenbrunnen"
+    url: "https://www.chip.de/artikel/Katzenbrunnen-im-Test_185370173.html"
+    accessedAt: "2026-08-16"
+    assertion: "Redaktionelle Testeinordnung."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "Zooplus CH · Streamside"
+    url: "https://www.zooplus.ch/feedback/shop/katzen/fressnapf/katzentraenke/pet_safe/1216286"
+    accessedAt: "2026-08-16"
+    assertion: "Produktspezifische Nutzerbewertungen."
+    fields:
+      - "ratings"
+      - "externalEvidence"
 ---
 
 ## Keramik statt App

@@ -32,9 +32,60 @@ availabilityUpdated: "2026-08-16"
 editorialStatus: "required"
 recommendationStatus: "limited"
 maintenanceStatus: "required"
-rating: 0
-ratings: {}
-externalEvidence: { status: "constrained", note: "Herstellerdaten ohne eigenen Praxistest; Mobilfunkkompatibilität muss regional aktuell geprüft werden." }
+rating: 4.1
+ratings:
+  ortung: 4.8
+  app: 3.5
+  akku: 3.7
+  tragekomfort: 4.1
+  kosten: 4.4
+externalEvidence:
+  professionalReviews:
+  - publisher: CHIP
+    title: Prothelis Area Hundetracker im Test
+    url: https://www.chip.de/test/Prothelis-area-Hundetracker-im-Test_186581222.html
+    checkedAt: '2026-08-16'
+    methodology: lab-test
+    positives:
+    - Sehr gutes Tracking, klein und leicht, keine Premium-Zusatzgebühren.
+    negatives:
+    - App-Design wirkt älter, Einrichtung nicht ganz unkompliziert, Akku im CHIP-Profil mittelmäßig.
+    publishedAt: '2026-02-27'
+  - publisher: F.A.Z. Kaufkompass
+    title: Der beste GPS-Tracker für Hunde
+    url: https://www.faz.net/kaufkompass/test/der-beste-gps-tracker-fuer-hunde/
+    checkedAt: '2026-08-16'
+    methodology: hands-on
+    positives:
+    - Präzises Tracking, detailreiche Geofences, voller Funktionsumfang und im dortigen Profil lange Akkulaufzeit.
+    negatives:
+    - Keine spezifische Live-Tracking-Funktion, Befestigung nicht überall optimal.
+  userReviews:
+  - platform: Trustpilot · Prothelis gesamt
+    url: https://de.trustpilot.com/review/www.prothelis.de
+    checkedAt: '2026-08-16'
+    rating: 4.0
+    scale: 5
+    reviewCount: 121
+    recurringPositives:
+    - Mehrere Nutzer loben Ortung und langjährige Nutzung.
+    recurringCriticism:
+    - Aktuelle Kritik betrifft unter anderem Support und ältere Geräteprobleme.
+  consensus:
+    strengths:
+    - finding: Ortungsqualität ist durch zwei unabhängige Tests klar bestätigt.
+      sourceCount: 2
+      confidence: high
+    weaknesses:
+    - finding: Akkuaussagen unterscheiden sich je Testprofil; App und Befestigung bleiben Schwachpunkte.
+      sourceCount: 2
+      confidence: high
+    - finding: Trustpilot ist markenweit, nicht produktspezifisch.
+      sourceCount: 1
+      confidence: high
+    editorialAssessment: CHIP und F.A.Z. stützen die Tracking-Stärke; widersprüchliche Akkuaussagen werden nicht künstlich
+      vereinheitlicht.
+  note: Kein eigener PfotenTechnik-Praxistest.
 decision:
   bestFor: ["Zeitplanbare Sicherheitsbereiche", "Variable Ortungsintervalle von 10 Sekunden bis 24 Stunden", "Deutsches Hersteller- und Tarifmodell"]
   attention: ["GSM/GPRS/EDGE ist ein älteres Mobilfunkprofil; regionale Netzunterstützung und Laufzeitperspektive prüfen", "Integrierte SIM erfordert Servicepaket", "Bis-zu-Angaben zu Akku und Genauigkeit sind keine Garantie"]
@@ -68,6 +119,27 @@ editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentati
 evidenceSources:
   - { source: "Prothelis area Pets", url: "https://www.prothelis.de/de/area-pets/", accessedAt: "2026-08-16", assertion: "Ortung, Warnungen, Geofences, Schutzart und Systemmodell sind Herstellerangaben.", fields: ["specs", "features", "decision"] }
   - { source: "Prothelis Shop – area Pets", url: "https://shop.prothelis.de/area-Pets-GPS-Tracker-fuer-Tiere/09054804-02M", accessedAt: "2026-08-16", assertion: "Maße, Gewicht, Akku, Mobilfunk und aktuelle Laufzeitangaben stammen aus dem deutschen Herstellershop.", fields: ["specs", "gps", "comparisonData"] }
+  - source: "CHIP · Prothelis Area"
+    url: "https://www.chip.de/test/Prothelis-area-Hundetracker-im-Test_186581222.html"
+    accessedAt: "2026-08-16"
+    assertion: "Labortest zu Tracking, Akku und App."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "F.A.Z. Kaufkompass · GPS-Tracker"
+    url: "https://www.faz.net/kaufkompass/test/der-beste-gps-tracker-fuer-hunde/"
+    accessedAt: "2026-08-16"
+    assertion: "Praxiseinordnung zu Tracking, Geofence und Akku."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "Trustpilot · Prothelis"
+    url: "https://de.trustpilot.com/review/www.prothelis.de"
+    accessedAt: "2026-08-16"
+    assertion: "Markenweites Nutzersignal."
+    fields:
+      - "ratings"
+      - "externalEvidence"
 ---
 
 ## Mobilfunkprofil vor dem Tarif

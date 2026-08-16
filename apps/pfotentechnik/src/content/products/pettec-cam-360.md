@@ -17,7 +17,7 @@ category:
   path: "/haustierkameras/"
 productUrl: "/produkt/pettec-cam-360/"
 publishedAt: "2026-08-15"
-updatedAt: "2026-08-15"
+updatedAt: "2026-08-16"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
@@ -61,11 +61,47 @@ availabilityUpdated: "2026-08-15"
 editorialStatus: "required"
 recommendationStatus: "limited"
 maintenanceStatus: "required"
-rating: 0
-ratings: {}
+rating: 4.3
+ratings:
+  bildqualitaet: 4.4
+  sichtfeld: 4.8
+  audio: 4.3
+  app: 4.0
+  datenschutz: 3.8
 externalEvidence:
-  status: "constrained"
-  note: "Aktuell nur Herstellerdaten; kein eigener Praxistest oder juristische Datenschutzprüfung."
+  professionalReviews:
+  - publisher: F.A.Z. Kaufkompass
+    title: 'Heim(e)liche Beobachtung: Haustierkameras im Test'
+    url: https://www.faz.net/kaufkompass/quickcheck/heim-liche-beobachtung-haustierkameras-im-test/
+    checkedAt: '2026-08-16'
+    methodology: hands-on
+    positives:
+    - Gute Verarbeitung, Videoqualität, Nachtsicht, sehr gutes Sichtfeld und gute Sprachausgabe.
+    negatives:
+    - Keine ausgeprägten pet-spezifischen Spezialfunktionen über Überwachung hinaus.
+  userReviews:
+  - platform: Trustpilot · PetTec gesamt
+    url: https://de.trustpilot.com/review/pettec.de
+    checkedAt: '2026-08-16'
+    rating: 4.6
+    scale: 5
+    reviewCount: 86
+    recurringPositives:
+    - Aktuelle Bewertungen nennen Kamerafunktion, App und Service positiv.
+    recurringCriticism:
+    - Einzelne Bewertungen berichten über Defekte oder Supportprobleme.
+  consensus:
+    strengths:
+    - finding: Sichtfeld, Videoqualität und Audio sind durch den Praxistest gestützt.
+      sourceCount: 1
+      confidence: high
+    weaknesses:
+    - finding: Trustpilot ist markenweit und umfasst viele andere PetTec-Produkte.
+      sourceCount: 1
+      confidence: high
+    editorialAssessment: Die Kriterienbewertung kombiniert den aktuellen F.A.Z.-Praxistest mit Herstellerdaten; Trustpilot
+      wird nur als Markensignal genutzt.
+  note: Kein eigener PfotenTechnik-Praxistest und keine eigene juristische Datenschutzprüfung.
 decision:
   bestFor:
     - "Lokale Videoaufzeichnung auf microSD"
@@ -219,6 +255,20 @@ evidenceSources:
       - "specs"
       - "faq"
       - "comparisonData"
+  - source: "F.A.Z. Kaufkompass · PetTec Cam 360"
+    url: "https://www.faz.net/kaufkompass/quickcheck/heim-liche-beobachtung-haustierkameras-im-test/"
+    accessedAt: "2026-08-16"
+    assertion: "Unabhängiger Haustierkamera-Praxistest."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "Trustpilot · PetTec"
+    url: "https://de.trustpilot.com/review/pettec.de"
+    accessedAt: "2026-08-16"
+    assertion: "Markenweites Nutzersignal."
+    fields:
+      - "ratings"
+      - "externalEvidence"
 ---
 
 ## Lokal speichern, Cloud optional halten

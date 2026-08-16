@@ -43,11 +43,61 @@ availabilityUpdated: "2026-08-16"
 editorialStatus: "required"
 recommendationStatus: "limited"
 maintenanceStatus: "required"
-rating: 0
-ratings: {}
+rating: 4.4
+ratings:
+  reinigung: 4.6
+  geruchskontrolle: 4.8
+  sicherheit: 4.5
+  app: 3.9
+  wartung: 4.4
 externalEvidence:
-  status: "constrained"
-  note: "Die Einordnung basiert auf Herstellerseite und Bedienungsanleitung; kein eigener Praxis- oder Sicherheitstest."
+  professionalReviews:
+  - publisher: WIRED
+    title: Our Favorite Automatic Litter Box for Most People Is on Sale
+    url: https://www.wired.com/story/petkit-puramax-2-prime-big-deal-day-deal
+    checkedAt: '2026-08-16'
+    methodology: hands-on
+    positives:
+    - Sehr starke Geruchskontrolle, einfache Nutzung und rückenschonendes Nachfüllen.
+    - Für die meisten Haushalte als besonders ausgewogene PETKIT-Option empfohlen.
+    negatives:
+    - App- und Verbrauchsmaterial-Abhängigkeit bleiben Teil des Systems.
+    publishedAt: '2025-10-07'
+  - publisher: The Spruce Pets
+    title: The 10 Best Automatic Litter Boxes, Tested and Reviewed
+    url: https://www.thesprucepets.com/best-automatic-litter-boxes-4684419
+    checkedAt: '2026-08-16'
+    methodology: hands-on
+    positives:
+    - Niedriger Einstieg, leiser Betrieb und gute Geruchskontrolle.
+    negatives:
+    - App wurde im Test als umständlich beschrieben.
+  userReviews:
+  - platform: Trustpilot · PETKIT gesamt
+    url: https://de.trustpilot.com/review/petkit.com
+    checkedAt: '2026-08-16'
+    rating: 3.1
+    scale: 5
+    reviewCount: 140
+    recurringPositives:
+    - Einzelne aktuelle Bewertungen nennen PuraMax/PuraMax 2 ausdrücklich positiv.
+    recurringCriticism:
+    - Das markenweite Signal enthält zugleich viel Kritik zu Support, Lieferung und Defekten.
+  consensus:
+    strengths:
+    - finding: Geruchskontrolle, Reinigungskomfort und niedriger Einstieg werden in unabhängigen Tests konsistent gestützt.
+      sourceCount: 2
+      confidence: high
+    weaknesses:
+    - finding: App-Bedienung und laufende Verbrauchsmaterialien bleiben relevante Nachteile.
+      sourceCount: 2
+      confidence: medium
+    - finding: Trustpilot ist markenweit und darf nicht als PuraMax-2-Produktnote gelesen werden.
+      sourceCount: 1
+      confidence: high
+    editorialAssessment: PfotenTechnik-Kriterienbewertung aus unabhängigen Praxistests und Herstellerdaten; externe Sterne
+      werden nicht in den PfotenTechnik-Score kopiert.
+  note: Kein eigener PfotenTechnik-Praxistest. Markenweite Nutzerbewertungen sind getrennt gekennzeichnet.
 decision:
   bestFor:
     - "Katzen von 1,5 bis 10 kg und laut Hersteller ab sechs Monaten"
@@ -115,6 +165,27 @@ editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentati
 evidenceSources:
   - { source: "PETKIT PuraMax 2", url: "https://www.petkit.com/products/petkit-puramax-2", accessedAt: "2026-08-16", assertion: "Modell, Abmessungen, Kapazität, Katzenprofil, Sensorik, App und Streukompatibilität sind Herstellerangaben.", fields: ["specs", "decision", "comparisonData"] }
   - { source: "PETKIT PuraMax 2 Bedienungsanleitung", url: "https://instructions.petkit.com/App%20Manual/T4-2/T4-2_User%20Manual_EN_V1.1_250305_%20.pdf", accessedAt: "2026-08-16", assertion: "Strom, Funk, Gewichts- und Betriebsgrenzen stammen aus der Herstelleranleitung.", fields: ["specs", "faq"] }
+  - source: "WIRED · PuraMax 2"
+    url: "https://www.wired.com/story/petkit-puramax-2-prime-big-deal-day-deal"
+    accessedAt: "2026-08-16"
+    assertion: "Praxistest zu Geruch, Alltag und Nachfüllen."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "The Spruce Pets · Automatic Litter Boxes"
+    url: "https://www.thesprucepets.com/best-automatic-litter-boxes-4684419"
+    accessedAt: "2026-08-16"
+    assertion: "Vergleichstest zu Geruch, Einstieg, Sensorik und App."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "Trustpilot · PETKIT"
+    url: "https://de.trustpilot.com/review/petkit.com"
+    accessedAt: "2026-08-16"
+    assertion: "Markenweites Nutzersignal; nicht produktspezifisch."
+    fields:
+      - "ratings"
+      - "externalEvidence"
 ---
 
 ## PuraMax statt PUROBOT

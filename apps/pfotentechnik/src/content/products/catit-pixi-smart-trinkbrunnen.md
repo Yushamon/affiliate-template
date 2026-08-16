@@ -32,9 +32,59 @@ availabilityUpdated: "2026-08-16"
 editorialStatus: "required"
 recommendationStatus: "limited"
 maintenanceStatus: "required"
-rating: 0
-ratings: {}
-externalEvidence: { status: "constrained", note: "Herstellerdaten ohne eigenen Hygiene-, UVC- oder Langzeittest." }
+rating: 3.9
+ratings:
+  lautstaerke: 4.7
+  app: 4.2
+  hygiene: 3.6
+  kapazitaet: 4.2
+  preisleistung: 3.0
+externalEvidence:
+  professionalReviews:
+  - publisher: CHIP
+    title: Katzenbrunnen im Test 2026
+    url: https://www.chip.de/artikel/Katzenbrunnen-im-Test_185370173.html
+    checkedAt: '2026-08-16'
+    methodology: editorial-review
+    positives:
+    - Leise Pumpe, Smart-Funktionen, Wasserstandsalarm und automatische Abschaltung.
+    negatives:
+    - Hoher Preis; Kabel/LED bzw. Details der Konstruktion werden kritischer gesehen.
+  - publisher: F.A.Z. Kaufkompass
+    title: Der beste Katzenbrunnen
+    url: https://www.faz.net/kaufkompass/test/der-beste-katzenbrunnen/
+    checkedAt: '2026-08-16'
+    methodology: hands-on
+    positives:
+    - Smart-/Luxusmodell mit Selbstreinigungsfunktion bleibt in der Kategorie relevant.
+    negatives:
+    - Preislich deutlich über einfachen Brunnen.
+  userReviews:
+  - platform: Zooplus · Catit PIXI Smart
+    url: https://www.zooplus.de/feedback/shop/katzen/fressnapf/katzentraenke/brunnen/2115827
+    checkedAt: '2026-08-16'
+    rating: 3.3
+    scale: 5
+    reviewCount: 4
+    recurringPositives:
+    - Zwei der vier Bewertungen sind sehr positiv und loben Akzeptanz bzw. Reinigung.
+    recurringCriticism:
+    - Zwei aktuelle negative Stimmen kritisieren Biofilm/Reinigung, Korrosion/Reparierbarkeit und Preis-Leistung.
+  consensus:
+    strengths:
+    - finding: Lautstärke und Smart-Funktionen werden in professionellen Tests positiv eingeordnet.
+      sourceCount: 2
+      confidence: high
+    weaknesses:
+    - finding: Das kleine aktuelle Nutzersignal wirft konkrete Hygiene-/Haltbarkeitsfragen auf.
+      sourceCount: 1
+      confidence: medium
+    - finding: Vier Nutzerbewertungen sind zu wenig für eine robuste Nutzer-Gesamtaussage.
+      sourceCount: 1
+      confidence: high
+    editorialAssessment: Professionelle Testlage positiv, aber die kleine aktuelle Nutzerstichprobe führt zu einer vorsichtigeren
+      Hygiene- und Preis-Leistungswertung.
+  note: Kein eigener PfotenTechnik-Praxistest.
 decision:
   bestFor: ["App-Steuerung im Catit-PIXI-Ökosystem", "Kompakte 2-Liter-Kapazität", "UVC-Zyklen und Wartungserinnerungen"]
   attention: ["Nur 2,4-GHz-WLAN", "Filterwechsel laut Hersteller alle 30 Tage", "Nur der Edelstahleinsatz ist ausdrücklich spülmaschinengeeignet"]
@@ -65,6 +115,27 @@ faq:
 editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-16", note: "UVC- und Hygieneclaims als Herstellerangaben eingeordnet." }
 evidenceSources:
   - { source: "Catit PIXI Smart-Trinkbrunnen", url: "https://www.catit.com/de/produkte/trinkbrunnen/pixi-smart-trinkbrunnen/", accessedAt: "2026-08-16", assertion: "Kapazität, Maße, Material, WLAN, App, UVC, Filter und Reinigung sind Herstellerangaben.", fields: ["specs", "decision", "comparisonData"] }
+  - source: "CHIP · Catit PIXI Smart"
+    url: "https://www.chip.de/artikel/Katzenbrunnen-im-Test_185370173.html"
+    accessedAt: "2026-08-16"
+    assertion: "Redaktionelle Testeinordnung."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "F.A.Z. Kaufkompass · Katzenbrunnen"
+    url: "https://www.faz.net/kaufkompass/test/der-beste-katzenbrunnen/"
+    accessedAt: "2026-08-16"
+    assertion: "Praxistest."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "Zooplus · Catit PIXI Smart"
+    url: "https://www.zooplus.de/feedback/shop/katzen/fressnapf/katzentraenke/brunnen/2115827"
+    accessedAt: "2026-08-16"
+    assertion: "Produktspezifische Nutzerbewertungen, kleine Stichprobe."
+    fields:
+      - "ratings"
+      - "externalEvidence"
 ---
 
 ## Smart-Komfort bleibt Pflegearbeit

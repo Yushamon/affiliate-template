@@ -17,7 +17,7 @@ category:
   path: "/automatische-katzentoiletten/"
 productUrl: "/produkt/petsnowy-snow-plus/"
 publishedAt: "2026-08-15"
-updatedAt: "2026-08-15"
+updatedAt: "2026-08-16"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
@@ -61,11 +61,56 @@ availabilityUpdated: "2026-08-15"
 editorialStatus: "required"
 recommendationStatus: "limited"
 maintenanceStatus: "required"
-rating: 0
-ratings: {}
+rating: 4.2
+ratings:
+  geruchskontrolle: 4.8
+  wartung: 4.6
+  mehrkatzen: 4.6
+  app: 3.4
+  platzbedarf: 3.6
 externalEvidence:
-  status: "constrained"
-  note: "Aktuell liegen nur Herstellerdaten vor; kein eigener Praxistest und keine belastbare unabhängige Langzeitevidenz."
+  professionalReviews:
+  - publisher: The Spruce Pets
+    title: The 10 Best Automatic Litter Boxes, Tested and Reviewed
+    url: https://www.thesprucepets.com/best-automatic-litter-boxes-4684419
+    checkedAt: '2026-08-16'
+    methodology: hands-on
+    positives:
+    - Sehr gute Mehrkatzen-Eignung, selbstverschließende Beutel und starke Geruchskontrolle.
+    negatives:
+    - Groß und schwer; App-Verbindung im Test unzuverlässig.
+  - publisher: People
+    title: Our Cats Tested Self-Cleaning Litter Boxes
+    url: https://people.com/best-automatic-litter-boxes-8399616
+    checkedAt: '2026-08-16'
+    methodology: hands-on
+    positives:
+    - Einfache Einrichtung, starke Geruchskontrolle, niedriger Einstieg und Design.
+    negatives:
+    - WLAN-Einrichtung schwierig; hoher Preis.
+  userReviews:
+  - platform: Trustpilot · PetSnowy gesamt
+    url: https://de.trustpilot.com/review/petsnowy.com
+    checkedAt: '2026-08-16'
+    rating: 4.5
+    scale: 5
+    reviewCount: 108
+    recurringPositives:
+    - Viele aktuelle Nutzer loben Geruchskontrolle, Reinigungskomfort und Mehrkatzen-Alltag.
+    recurringCriticism:
+    - Einzelne Berichte kritisieren Support, Ersatzteile, Sensorik oder App.
+  consensus:
+    strengths:
+    - finding: Geruchskontrolle, Mehrkatzen-Nutzung und Wartungskomfort werden über Tests und Nutzer hinweg gestützt.
+      sourceCount: 3
+      confidence: high
+    weaknesses:
+    - finding: App/WLAN, Größe und hoher Preis sind wiederkehrende Nachteile.
+      sourceCount: 3
+      confidence: high
+    editorialAssessment: 'Unabhängige Tests und aktuelle Nutzerstimmen ergeben ein konsistentes Bild: starke Hardware, schwächere
+      Software.'
+  note: Kein eigener PfotenTechnik-Praxistest.
 decision:
   bestFor:
     - "Für Haushalte, die eine geschlossene Kabine und Streu-Rückhaltung priorisieren, sofern die Katze enge Systeme akzeptiert und Versand sowie Verbrauchsmaterialien verfügbar sind."
@@ -173,6 +218,27 @@ evidenceSources:
     fields:
       - "availability"
       - "weaknesses"
+  - source: "The Spruce Pets · PetSnowy SNOW+"
+    url: "https://www.thesprucepets.com/best-automatic-litter-boxes-4684419"
+    accessedAt: "2026-08-16"
+    assertion: "Mehrkatzen-Praxistest."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "People · Automatic Litter Boxes"
+    url: "https://people.com/best-automatic-litter-boxes-8399616"
+    accessedAt: "2026-08-16"
+    assertion: "Praxistest."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "Trustpilot · PetSnowy"
+    url: "https://de.trustpilot.com/review/petsnowy.com"
+    accessedAt: "2026-08-16"
+    assertion: "Markenweites Nutzersignal."
+    fields:
+      - "ratings"
+      - "externalEvidence"
 ---
 
 ## Geschlossenes System als eigene Kaufrolle

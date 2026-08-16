@@ -17,7 +17,7 @@ category:
   path: "/gps-tracker/"
 productUrl: "/produkt/enabot-rola-pettracker/"
 publishedAt: "2026-08-15"
-updatedAt: "2026-08-15"
+updatedAt: "2026-08-16"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
@@ -62,11 +62,58 @@ availabilityUpdated: "2026-08-15"
 editorialStatus: "required"
 recommendationStatus: "limited"
 maintenanceStatus: "required"
-rating: 0
-ratings: {}
+rating: 3.7
+ratings:
+  ortung: 4.3
+  kamera: 3.5
+  app: 3.6
+  akku: 2.8
+  notfallfunktionen: 4.3
 externalEvidence:
-  status: "constrained"
-  note: "Nur Herstellerdaten; kein eigener Praxistest und keine unabhängige Langzeitevidenz."
+  professionalReviews:
+  - publisher: Digital Camera World
+    title: Enabot ROLA Pet Tracker review
+    url: https://www.digitalcameraworld.com/photography/pet-photography/enabot-rola-pet-tracker-review
+    checkedAt: '2026-08-16'
+    methodology: hands-on
+    positives:
+    - Genaues GPS, Live-Stream, günstiger Preis und nützliche Notfall-/Audiofunktionen.
+    negatives:
+    - Buggy/teils langsame Verbindung, Befestigung bei größeren Hunden schwierig, Bildqualität begrenzt, häufiges Laden im
+      Test.
+    publishedAt: '2025-04-19'
+  - publisher: Android Central
+    title: Enabot ROLA PetTracker hands-on
+    url: https://www.androidcentral.com/accessories/enabot-rola-pettracker-hands-on
+    checkedAt: '2026-08-16'
+    methodology: hands-on
+    positives:
+    - GPS, Kamera, Zwei-Wege-Kommunikation und SOS wurden praktisch erprobt.
+    negatives:
+    - Für viele Katzen zu groß; komplexer als reine GPS-Tags.
+    publishedAt: '2025-02-18'
+  userReviews:
+  - platform: Trustpilot · Enabot gesamt
+    url: https://de.trustpilot.com/review/enabot.com
+    checkedAt: '2026-08-16'
+    rating: 3.4
+    scale: 5
+    reviewCount: 65
+    recurringPositives:
+    - Ein Teil der Nutzer lobt ROLA-Produkte und Support.
+    recurringCriticism:
+    - Markenweit ist das Signal gemischt; viele Ein-Stern-Bewertungen.
+  consensus:
+    strengths:
+    - finding: GPS plus Kamera und Zwei-Wege-Audio sind ein klarer funktionaler Sonderfall.
+      sourceCount: 2
+      confidence: high
+    weaknesses:
+    - finding: Verbindungsstabilität, Befestigung und reale Akkureserve sind die wiederkehrenden Schwächen.
+      sourceCount: 2
+      confidence: high
+    editorialAssessment: Die Funktionsidee ist stark, wird aber durch Akku, Verbindung und Größe deutlich relativiert.
+  note: Kein eigener PfotenTechnik-Praxistest.
 decision:
   bestFor:
     - "Hunde ab 4 kg, wenn Live-Bild und Zwei-Wege-Audio konkret benötigt werden"
@@ -227,6 +274,27 @@ evidenceSources:
       - "decision"
       - "gps"
       - "comparisonData"
+  - source: "Digital Camera World · ROLA Pet Tracker"
+    url: "https://www.digitalcameraworld.com/photography/pet-photography/enabot-rola-pet-tracker-review"
+    accessedAt: "2026-08-16"
+    assertion: "Mehrmonatiger Praxistest."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "Android Central · ROLA PetTracker"
+    url: "https://www.androidcentral.com/accessories/enabot-rola-pettracker-hands-on"
+    accessedAt: "2026-08-16"
+    assertion: "Hands-on mit Hund."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "Trustpilot · Enabot"
+    url: "https://de.trustpilot.com/review/enabot.com"
+    accessedAt: "2026-08-16"
+    assertion: "Markenweites Nutzersignal."
+    fields:
+      - "ratings"
+      - "externalEvidence"
 ---
 
 ## Kamera-Hybrid statt leichter Allrounder

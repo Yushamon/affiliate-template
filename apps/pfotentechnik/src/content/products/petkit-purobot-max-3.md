@@ -17,7 +17,7 @@ category:
   path: "/automatische-katzentoiletten/"
 productUrl: "/produkt/petkit-purobot-max-3/"
 publishedAt: "2026-08-15"
-updatedAt: "2026-08-15"
+updatedAt: "2026-08-16"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
@@ -60,11 +60,41 @@ availabilityUpdated: "2026-08-15"
 editorialStatus: "required"
 recommendationStatus: "limited"
 maintenanceStatus: "required"
-rating: 0
-ratings: {}
+rating: 4
+ratings:
+  einstieg: 4.2
+  geruchskontrolle: 4.1
+  sicherheit: 4.3
+  app: 3.7
+  wartung: 3.9
 externalEvidence:
-  status: "constrained"
-  note: "Aktuell liegen nur Herstellerdaten vor; kein eigener Praxistest und keine belastbare unabhängige Langzeitevidenz."
+  professionalReviews: []
+  userReviews:
+  - platform: PETKIT Store · gruppierte Bewertungen
+    url: https://www.petkit.com/products/purobot-max-3-automatic-cat-litter-box
+    checkedAt: '2026-08-16'
+    scale: 5
+    reviewCount: 176
+    recurringPositives:
+    - Die Händlerseite zeigt viele positive Stimmen zu verwandten PETKIT-Toiletten und nennt gute Geruchs-/Automations-Erfahrungen.
+    recurringCriticism:
+    - Die Seite weist ausdrücklich darauf hin, dass der MAX 3 keine eigenen Bewertungen besitzt und die 176 Reviews gruppiert
+      sind.
+  consensus:
+    strengths:
+    - finding: Niedriger breiter Einstieg, 7-Liter-Abfallfach und mehrstufige Sicherheit sind technisch gut dokumentiert.
+      sourceCount: 2
+      confidence: medium
+    weaknesses:
+    - finding: Für das konkrete MAX-3-Modell wurde kein belastbarer unabhängiger Fachtest gefunden.
+      sourceCount: 1
+      confidence: high
+    - finding: Die 176 Store-Reviews sind laut Händler gruppiert und dürfen nicht als MAX-3-Produktwertung verwendet werden.
+      sourceCount: 1
+      confidence: high
+    editorialAssessment: Kriterienbewertung basiert vorläufig auf dokumentierten technischen Eigenschaften; wegen fehlender
+      unabhängiger MAX-3-Tests konservativ.
+  note: 'Research-constrained: keine unabhängige MAX-3-Testquelle gefunden; die Händlerbewertungen sind nicht produktspezifisch.'
 decision:
   bestFor:
     - "Für Katzen von 1,5 bis 10 kg, wenn niedriger Einstieg und eine Kombination aus elektronischer und mechanischer Sicherheitsarchitektur wichtiger sind als eine Kamera."
@@ -182,6 +212,13 @@ evidenceSources:
     fields:
       - "strengths"
       - "review"
+  - source: "PETKIT EU · PUROBOT MAX 3"
+    url: "https://www.petkit-eu.com/de/products/purobot-max-3"
+    accessedAt: "2026-08-16"
+    assertion: "EU-Herstellerseite zu Modell und technischen Daten."
+    fields:
+      - "ratings"
+      - "externalEvidence"
 ---
 
 ## Eigenständige Rolle neben MAX PRO 2

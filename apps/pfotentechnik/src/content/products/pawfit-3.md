@@ -32,9 +32,57 @@ availabilityUpdated: "2026-08-16"
 editorialStatus: "required"
 recommendationStatus: "limited"
 maintenanceStatus: "required"
-rating: 0
-ratings: {}
-externalEvidence: { status: "constrained", note: "Hersteller- und Supportdaten; kein eigener Praxis-, Reichweiten- oder Akkutest." }
+rating: 3
+ratings:
+  ortung: 2.0
+  app: 3.0
+  akku: 3.3
+  tragekomfort: 2.8
+  kosten: 4.0
+externalEvidence:
+  professionalReviews:
+  - publisher: CHIP
+    title: Pawfit 3 Hundetracker im Test
+    url: https://www.chip.de/test/Pawfit-3-Hundetracker-im-Test_186582043.html
+    checkedAt: '2026-08-16'
+    methodology: lab-test
+    positives:
+    - Ausstattung gut; Aktivitätsmeldung, Signalton und Signallicht vorhanden.
+    negatives:
+    - Tracking mangelhaft und verzögert; Verarbeitung/Befestigung kritisch; vier Tage aktiver Akku.
+    publishedAt: '2026-02-27'
+  - publisher: F.A.Z. Kaufkompass
+    title: Der beste GPS-Tracker für Hunde
+    url: https://www.faz.net/kaufkompass/test/der-beste-gps-tracker-fuer-hunde/
+    checkedAt: '2026-08-16'
+    methodology: hands-on
+    positives:
+    - Kompakt und grundsätzlich brauchbare Halsbandbefestigung.
+    negatives:
+    - Im Vergleich nicht gut genug für eine Empfehlung.
+  userReviews:
+  - platform: Trustpilot · Pawfit gesamt
+    url: https://de.trustpilot.com/review/pawfit.com
+    checkedAt: '2026-08-16'
+    rating: 4.5
+    scale: 5
+    reviewCount: 3205
+    recurringPositives:
+    - Viele Nutzer loben App, Alltagstauglichkeit und Support.
+    recurringCriticism:
+    - Einzelne aktuelle Bewertungen melden falsche Positionen oder GPS-/Updateprobleme.
+  consensus:
+    strengths:
+    - finding: Ausstattung und Service-Nutzersignal sind besser als die unabhängige Tracking-Bewertung.
+      sourceCount: 3
+      confidence: high
+    weaknesses:
+    - finding: Das Kernkriterium Ortung wird von CHIP und F.A.Z. deutlich kritischer bewertet als das Markensignal.
+      sourceCount: 2
+      confidence: high
+    editorialAssessment: PfotenTechnik priorisiert bei einem GPS-Tracker unabhängige Ortungsleistung vor dem deutlich positiveren
+      markenweiten Trustpilot-Signal.
+  note: Kein eigener PfotenTechnik-Praxistest.
 decision:
   bestFor: ["Hunde über 3,5 kg laut Hersteller", "Audio-ID und Pawfit Voice", "Entfernungs-, Temperatur- und Sicherheitszonen-Warnungen"]
   attention: ["eSIM-Abonnement erforderlich", "Bis zu acht Tage sind eine nutzungsabhängige Herstellerangabe", "Vollständige Länderabdeckung und Mobilfunkstandard regional prüfen"]
@@ -68,6 +116,27 @@ editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentati
 evidenceSources:
   - { source: "Pawfit 3", url: "https://www.pawfit.com/de-us/product/pawfit-3-pet-tracker.html", accessedAt: "2026-08-16", assertion: "Funktionen, Mobilfunk, Warnungen und Abo sind Herstellerangaben.", fields: ["specs", "features", "decision"] }
   - { source: "Pawfit Modellvergleich", url: "https://support.pawfit.com/hc/en-gb/articles/360019893919-What-are-the-differences-between-all-of-the-Pawfit-models", accessedAt: "2026-08-16", assertion: "Gewicht, Maße, Mindestgewicht, Akku und Abgrenzung zum 3s stammen aus dem offiziellen Support.", fields: ["specs", "gps", "comparisonData"] }
+  - source: "CHIP · Pawfit 3"
+    url: "https://www.chip.de/test/Pawfit-3-Hundetracker-im-Test_186582043.html"
+    accessedAt: "2026-08-16"
+    assertion: "Labortest zu Ortung, Akku und Ausstattung."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "F.A.Z. Kaufkompass · GPS-Tracker"
+    url: "https://www.faz.net/kaufkompass/test/der-beste-gps-tracker-fuer-hunde/"
+    accessedAt: "2026-08-16"
+    assertion: "Vergleichstest."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "Trustpilot · Pawfit"
+    url: "https://de.trustpilot.com/review/pawfit.com"
+    accessedAt: "2026-08-16"
+    assertion: "Markenweites Nutzersignal."
+    fields:
+      - "ratings"
+      - "externalEvidence"
 ---
 
 ## Audio statt Kamera

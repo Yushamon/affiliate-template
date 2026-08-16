@@ -32,9 +32,70 @@ availabilityUpdated: "2026-08-16"
 editorialStatus: "required"
 recommendationStatus: "limited"
 maintenanceStatus: "required"
-rating: 0
-ratings: {}
-externalEvidence: { status: "constrained", note: "Herstellerdaten zur aktuellen 4K-Generation; kein eigener Bildqualitäts-, Datenschutz- oder Langzeittest." }
+rating: 4.6
+ratings:
+  bildqualitaet: 4.9
+  tracking: 4.8
+  speicherung: 4.8
+  bedienung: 4.4
+  haustierfit: 3.9
+externalEvidence:
+  professionalReviews:
+  - publisher: CHIP
+    title: Reolink E1 Zoom im Test
+    url: https://www.chip.de/test/Reolink-E1-Zoom-im-Ueberwachungskamera-Test_186226550.html
+    checkedAt: '2026-08-16'
+    methodology: lab-test
+    positives:
+    - Sehr starke 4K-Bildqualität, 3-fach-Zoom, Objektnachverfolgung, lokale Speicherung und kein Onlinekonto-Zwang.
+    negatives:
+    - Kein Geofencing, manuelles Schwenken/Neigen unpräzise, Einstellungen teils schwer zu finden.
+    publishedAt: '2025-09-16'
+  - publisher: F.A.Z. Kaufkompass
+    title: 'Heim(e)liche Beobachtung: Haustierkameras im Test'
+    url: https://www.faz.net/kaufkompass/quickcheck/heim-liche-beobachtung-haustierkameras-im-test/
+    checkedAt: '2026-08-16'
+    methodology: hands-on
+    positives:
+    - Gute Verarbeitung, simple Bedienung, gute Video- und Sprachausgabe.
+    negatives:
+    - Im dortigen Test keine Bewegungsbenachrichtigung; Nachtsicht auf Distanz etwas undeutlich.
+  - publisher: El País Escaparate
+    title: Mejores cámaras para vigilar mascotas
+    url: https://elpais.com/escaparate/comparativas/mejor-camara-para-vigilar-mascotas.html
+    checkedAt: '2026-08-16'
+    methodology: hands-on
+    positives:
+    - Sehr gute Detaildarstellung, 3-fach-Zoom und starke Nachtbeobachtung von Haustieren.
+    negatives:
+    - Viele Konfigurationsoptionen erfordern mehr Einarbeitung.
+    publishedAt: '2026-07-01'
+  userReviews:
+  - platform: Trustpilot · Reolink gesamt
+    url: https://de.trustpilot.com/review/reolink.com
+    checkedAt: '2026-08-16'
+    rating: 3.7
+    scale: 5
+    reviewCount: 3277
+    recurringPositives:
+    - Viele Nutzer loben Einrichtung, Funktionsumfang und Preis-Leistung.
+    recurringCriticism:
+    - Markenweit gibt es deutliche Kritik an Support, Verbindungen und Garantiefällen.
+  consensus:
+    strengths:
+    - finding: Bildqualität, Zoom, Tracking und lokale Speicherung sind durch mehrere unabhängige Tests sehr stark belegt.
+      sourceCount: 3
+      confidence: high
+    weaknesses:
+    - finding: Pet-spezifische Interaktionsfunktionen fehlen; die Konfiguration ist komplexer als bei einfachen Haustierkameras.
+      sourceCount: 3
+      confidence: high
+    - finding: Trustpilot ist ein markenweites Service-/Zuverlässigkeitssignal.
+      sourceCount: 1
+      confidence: high
+    editorialAssessment: Sehr starke Kamera-Kernfunktionen, aber keine spezielle Pet-Interaktionskamera. Markenweite Servicekritik
+      bleibt separat.
+  note: Kein eigener PfotenTechnik-Praxistest.
 decision:
   bestFor: ["Lokale microSD-, NVR-, Home-Hub- oder FTP/NAS-Speicherung", "Fester Innenbereich mit Tiererkennung", "3-fach optischer Zoom und 4K-Auflösung"]
   attention: ["Keine pet-spezifische Leckerli- oder Gesundheitsfunktion", "Cloud kann regional optional angeboten werden; nicht pauschal cloudfrei", "Privatsphäre hängt von Konto, Fernzugriff, Mikrofon, Updates und Konfiguration ab"]
@@ -68,6 +129,34 @@ faq:
 editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-16", note: "Aktuelle 4K-/8-MP-Generation verwendet; ältere 5-MP-Daten nicht vermischt." }
 evidenceSources:
   - { source: "Reolink E1 Zoom Deutschland", url: "https://reolink.com/de/product/e1-zoom/", accessedAt: "2026-08-16", assertion: "4K-Auflösung, Zoom, Pan/Tilt, Erkennung, Speicherwege, WLAN, Maße und Strom sind Herstellerangaben.", fields: ["specs", "decision", "comparisonData"] }
+  - source: "CHIP · Reolink E1 Zoom"
+    url: "https://www.chip.de/test/Reolink-E1-Zoom-im-Ueberwachungskamera-Test_186226550.html"
+    accessedAt: "2026-08-16"
+    assertion: "Labortest zu Bild, Tracking, Speicherung und Bedienung."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "F.A.Z. Kaufkompass · Haustierkameras"
+    url: "https://www.faz.net/kaufkompass/quickcheck/heim-liche-beobachtung-haustierkameras-im-test/"
+    accessedAt: "2026-08-16"
+    assertion: "Haustierkamera-Praxistest."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "El País · Haustierkameras"
+    url: "https://elpais.com/escaparate/comparativas/mejor-camara-para-vigilar-mascotas.html"
+    accessedAt: "2026-08-16"
+    assertion: "Haustierkamera-Praxistest."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "Trustpilot · Reolink"
+    url: "https://de.trustpilot.com/review/reolink.com"
+    accessedAt: "2026-08-16"
+    assertion: "Markenweites Nutzersignal."
+    fields:
+      - "ratings"
+      - "externalEvidence"
 ---
 
 ## Sicherheitskamera statt Pet-Cloud-Paket

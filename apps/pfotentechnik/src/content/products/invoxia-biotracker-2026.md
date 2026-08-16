@@ -32,9 +32,58 @@ availabilityUpdated: "2026-08-16"
 editorialStatus: "required"
 recommendationStatus: "limited"
 maintenanceStatus: "required"
-rating: 0
-ratings: {}
-externalEvidence: { status: "constrained", note: "Aktuell liegen Hersteller- und Supportdaten vor; kein eigener Praxistest und keine medizinische Validierung durch PfotenTechnik." }
+rating: 4.2
+ratings:
+  ortung: 4.4
+  gesundheit: 4.8
+  app: 4.2
+  akku: 4.4
+  kosten: 3.0
+externalEvidence:
+  professionalReviews:
+  - publisher: CHIP
+    title: Invoxia Biotracker GPS Hundetracker im Test
+    url: https://www.chip.de/test/Invoxia-Biotracker-GPS-Hundetracker-im-Test_186580902.html
+    checkedAt: '2026-08-16'
+    methodology: lab-test
+    positives:
+    - Sehr gutes Tracking, viele Gesundheitsfunktionen, gute Bedienung; rund zehn Tage Mischnutzung im Test.
+    negatives:
+    - Verarbeitung könnte besser sein; laufende Nutzungskosten.
+    publishedAt: '2026-02-16'
+  - publisher: Golem.de
+    title: 'Invoxia Biotracker 2026 im Test: Whoop für Wau-Waus'
+    url: https://www.golem.de/news/invoxia-biotracker-2026-im-test-whoop-fuer-wau-waus-2605-208683.html
+    checkedAt: '2026-08-16'
+    methodology: hands-on
+    positives:
+    - Plausible Gesundheitsverläufe, HRV, Herz-/Atemfrequenz, Schlafanalyse und rund zwei Wochen Akku im Test.
+    negatives:
+    - Live-Tracking war zeitweise problematisch; teures Abo für LTE/echtes Live-Tracking; kein Ersatz für Tierarzt.
+    publishedAt: '2026-05-23'
+  userReviews:
+  - platform: Trustpilot · Invoxia gesamt
+    url: https://de.trustpilot.com/review/www.invoxia.com
+    checkedAt: '2026-08-16'
+    rating: 4.1
+    scale: 5
+    reviewCount: 1025
+    recurringPositives:
+    - Aktuelle BioTracker-Nutzer loben Gesundheitswerte und App.
+    recurringCriticism:
+    - Markenweit gibt es Kritik an Support, Abos und älteren Tracker-Generationen.
+  consensus:
+    strengths:
+    - finding: Gesundheitsmonitoring ist durch zwei unabhängige Tests ungewöhnlich stark belegt.
+      sourceCount: 2
+      confidence: high
+    weaknesses:
+    - finding: Live-Tracking ist nicht so souverän wie bei reinen Ortungsspezialisten; Abokosten sind relevant.
+      sourceCount: 2
+      confidence: high
+    editorialAssessment: Starke Gesundheitswertung, aber Ortung und Kosten werden wegen Golem-Live-Tracking-Kritik und Abo
+      konservativer bewertet.
+  note: Kein eigener PfotenTechnik-Praxistest; Gesundheitsdaten ersetzen keine tierärztliche Diagnose.
 decision:
   bestFor: ["Gesundheits- und Aktivitätstrends zusätzlich zur Ortung", "Hunde mit passender Halsbandbefestigung", "LTE-M-Abdeckung und bewusst gewählter Max-GPS-Tarif"]
   attention: ["Fernortung und 1-Sekunden-Live-Tracking sind tarifabhängig", "Vitalwerttrends sind keine Diagnose und ersetzen keine Tierarztpraxis", "Netzabdeckung und Akkulaufzeit sind nutzungsabhängig"]
@@ -68,6 +117,27 @@ editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentati
 evidenceSources:
   - { source: "Invoxia Biotracker Edition 2026", url: "https://www.invoxia.com/en-US/petcare/minitailz-dog-tracker", accessedAt: "2026-08-16", assertion: "Name, Gewicht, Funk, Akku, Schutzart und Trackingfunktionen sind Herstellerangaben.", fields: ["specs", "gps", "decision"] }
   - { source: "Invoxia Support – subscriptions", url: "https://invoxia-petcare.zendesk.com/hc/en-us/articles/9652849499037--Is-a-subscription-required-to-use-the-Minitailz-Biotracker-GPS", accessedAt: "2026-08-16", assertion: "Tarifabhängigkeit von Fernortung, Live-Tracking und Geofences stammt aus dem offiziellen Support.", fields: ["specs", "faq", "comparisonData"] }
+  - source: "CHIP · Invoxia BioTracker"
+    url: "https://www.chip.de/test/Invoxia-Biotracker-GPS-Hundetracker-im-Test_186580902.html"
+    accessedAt: "2026-08-16"
+    assertion: "Labortest."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "Golem · BioTracker 2026"
+    url: "https://www.golem.de/news/invoxia-biotracker-2026-im-test-whoop-fuer-wau-waus-2605-208683.html"
+    accessedAt: "2026-08-16"
+    assertion: "Langzeitnaher Praxistest."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "Trustpilot · Invoxia"
+    url: "https://de.trustpilot.com/review/www.invoxia.com"
+    accessedAt: "2026-08-16"
+    assertion: "Markenweites Nutzersignal."
+    fields:
+      - "ratings"
+      - "externalEvidence"
 ---
 
 ## Gesundheitsdaten mit klarer Grenze

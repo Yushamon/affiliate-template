@@ -32,9 +32,60 @@ availabilityUpdated: "2026-08-16"
 editorialStatus: "required"
 recommendationStatus: "limited"
 maintenanceStatus: "required"
-rating: 0
-ratings: {}
-externalEvidence: { status: "constrained", note: "Hersteller- und Supportdaten; kein eigener Einbau-, Wetter- oder Langzeittest." }
+rating: 4.1
+ratings:
+  chiperkennung: 4.4
+  zeitsteuerung: 4.6
+  mehrkatzen: 4.2
+  einrichtung: 3.7
+  lautstaerke: 3.6
+externalEvidence:
+  professionalReviews:
+  - publisher: Computer Bild · via testbericht.de
+    title: Cat Mate Elite Mikrochip Katzenklappe 355W
+    url: https://www.testbericht.de/produkte/petmate-cat-mate-elite-mikrochip-katzenklappe-mit-zeitschaltuhr-funktion-355w
+    checkedAt: '2026-08-16'
+    methodology: editorial-review
+    positives:
+    - Zeitschaltuhr, Display-Bedienung und Statusanzeige für mehrere Katzen wurden sehr positiv bewertet.
+    negatives:
+    - Der Fachtest stammt aus 2021 und ist aktuell nur über einen Aggregator gut zugänglich.
+  userReviews:
+  - platform: testbericht.de · aggregierte Produktmeinungen
+    url: https://www.testbericht.de/produkte/petmate-cat-mate-elite-mikrochip-katzenklappe-mit-zeitschaltuhr-funktion-355w
+    checkedAt: '2026-08-16'
+    rating: 3.6
+    scale: 5
+    reviewCount: 72
+    recurringPositives:
+    - Viele Stimmen loben Chiperkennung und Zeitsteuerung.
+    recurringCriticism:
+    - Programmierung, Display und Motorgeräusch werden wiederholt kritisiert.
+  - platform: eBay UK · Cat Mate Elite 355W
+    url: https://www.ebay.co.uk/itm/303839895364
+    checkedAt: '2026-08-16'
+    rating: 4.7
+    scale: 5
+    reviewCount: 12
+    recurringPositives:
+    - Kleine produktspezifische Stichprobe fällt überwiegend positiv aus.
+    recurringCriticism:
+    - Stichprobe ist klein und teilweise älter.
+  consensus:
+    strengths:
+    - finding: Chiperkennung und Zeitsteuerung sind die am besten gestützten Kaufargumente.
+      sourceCount: 3
+      confidence: medium
+    weaknesses:
+    - finding: Programmierung und Geräusch sind wiederkehrende Kritikpunkte.
+      sourceCount: 2
+      confidence: medium
+    - finding: Die unabhängige Fachtestlage ist alt und teilweise nur aggregiert verfügbar.
+      sourceCount: 1
+      confidence: high
+    editorialAssessment: Bewertung bewusst konservativ wegen älterer Fachtestlage; aktuelle produktspezifische Nutzerquellen
+      werden ergänzend genutzt.
+  note: Kein eigener PfotenTechnik-Praxistest.
 decision:
   bestFor: ["Selektiver Eintritt für bis zu neun Katzen", "Gemeinsamer Zeitplan ohne App oder Hub", "Lokale LCD- und 4-Wege-Bedienung"]
   attention: ["Timer gilt für alle Katzen, nicht individuell", "Nur selektiver Eintritt; individuelle Ausgangsrechte sind nicht dokumentiert", "Chip, Ausschnitt und Einbaumaterial vor Montage prüfen"]
@@ -65,6 +116,20 @@ editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentati
 evidenceSources:
   - { source: "Closer Pets – Elite Microchip Flap with Timer Control", url: "https://closerpets.co.uk/products/elite-microchip-flap-timer-control", accessedAt: "2026-08-16", assertion: "Chip, Timer, LCD, Maße, Batterien und Kapazität sind Herstellerangaben.", fields: ["specs", "decision", "comparisonData"] }
   - { source: "Closer Pets – 355 FAQ", url: "https://closerpets.co.uk/pages/faq-elite-microchip-cat-flap-with-timer-control-faqs-355", accessedAt: "2026-08-16", assertion: "Gemeinsamer Timer und Grenzen der selektiven Richtungssteuerung stammen aus dem Herstellersupport.", fields: ["faq", "weaknesses"] }
+  - source: "testbericht.de · Cat Mate Elite 355W"
+    url: "https://www.testbericht.de/produkte/petmate-cat-mate-elite-mikrochip-katzenklappe-mit-zeitschaltuhr-funktion-355w"
+    accessedAt: "2026-08-16"
+    assertion: "Fachtest-Aggregat und produktspezifische Nutzermeinungen."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "eBay UK · Cat Mate Elite 355W"
+    url: "https://www.ebay.co.uk/itm/303839895364"
+    accessedAt: "2026-08-16"
+    assertion: "Produktspezifische Nutzerbewertungen."
+    fields:
+      - "ratings"
+      - "externalEvidence"
 ---
 
 ## Timer ist nicht gleich Einzelrecht
