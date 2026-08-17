@@ -118,21 +118,11 @@ export function buildAutomaticRecommendations({
    * auf die kuratierte item-Reihenfolge zurück.
    */
   const normalizedComparisonSlug = normalize(data.slug);
-
-  const broadFeederComparison =
+  const allowAutomaticOverall =
+    family !== "feeder" ||
     normalizedComparisonSlug === "beste-futterautomaten-fuer-katzen" ||
     normalizedComparisonSlug === "beste-futterautomaten-fuer-hunde" ||
     normalizedComparisonSlug === "beste-futterautomaten";
-
-  const broadGpsComparison =
-    normalizedComparisonSlug === "beste-gps-tracker-fuer-hunde" ||
-    normalizedComparisonSlug === "beste-gps-tracker-fuer-katzen" ||
-    normalizedComparisonSlug === "beste-gps-tracker";
-
-  const allowAutomaticOverall =
-    (family === "feeder" && broadFeederComparison) ||
-    (family === "gps-tracker" && broadGpsComparison) ||
-    family === "water-fountain";
 
   const overall = allowAutomaticOverall
     ? rankProducts(candidates, {
@@ -222,23 +212,6 @@ function buildScenarioDefinitions(
   }
 
   if (family === "gps-tracker") {
-    /*
-     * GPS Intent Guard 32.6.19
-     *
-     * Die drei Default-Szenarien sind für breite GPS-Vergleiche sinnvoll,
-     * aber nicht für Spezialseiten wie "lange Akkulaufzeit", "ohne Abo"
-     * oder "kleine Tracker für Katzen".
-     */
-    const normalizedSlug = normalize(comparisonSlug);
-    const broadGpsComparison =
-      normalizedSlug === "beste-gps-tracker-fuer-hunde" ||
-      normalizedSlug === "beste-gps-tracker-fuer-katzen" ||
-      normalizedSlug === "beste-gps-tracker";
-
-    if (!broadGpsComparison) {
-      return [];
-    }
-
     return [
       { key: "lightweight", label: "Leichte Tiere", priority: "lightweight" },
       { key: "battery", label: "Lange Akkulaufzeit", priority: "battery" },
