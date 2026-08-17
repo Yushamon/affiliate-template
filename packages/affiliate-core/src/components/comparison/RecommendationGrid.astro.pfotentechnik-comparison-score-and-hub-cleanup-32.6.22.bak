@@ -184,7 +184,7 @@ const recommendations = products.map((product) => {
               <EditorialScore
                 value={product.rating}
                 scale={100}
-                variant="compact"
+                variant="ring-compact"
                 label=""
               />
             )}

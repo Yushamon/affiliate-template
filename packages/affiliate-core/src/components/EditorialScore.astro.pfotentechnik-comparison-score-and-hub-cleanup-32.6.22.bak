@@ -108,8 +108,6 @@ const tone =
     gap: .55rem;
   }
 
-  /* Global score palette 32.6.22: unabhängig vom Seitentheme. */
-  .pt-score--excellent { --score-accent: var(--pt-color-brand-600, #23845f); }
   .pt-score--good { --score-accent: #75a91b; }
   .pt-score--solid { --score-accent: #c58b00; }
   .pt-score--limited { --score-accent: #d56f1f; }
