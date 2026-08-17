@@ -36,17 +36,34 @@ images:
       alt: "Reolink E1 Zoom (4K) – Produktansicht 2"
     - src: "../../assets/images/products/reolink-e1-zoom/gallery-3.webp"
       alt: "Reolink E1 Zoom (4K) – Produktansicht 3"
-price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-16", source: { id: "reolink", label: "Reolink Deutschland", type: "editorial", url: "https://reolink.com/de/product/e1-zoom/" } }
+price:
+  current: 99.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-08-17T14:37:25.104Z"
+  source:
+    id: "manual"
+    label: "Reolink Deutschland"
+    type: "manual"
 priceAutomation: "editorial"
-priceState: "unknown"
-priceAvailable: false
-affiliateAvailable: false
-availability: "unknown"
-availabilityUpdated: "2026-08-16"
-editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
 rating: 4.6
+affiliate:
+  provider: "reolink-deutschland"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://amzn.to/4qpFTMz"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+
+priceState: "available"
+priceUpdated: "2026-08-17T14:37:25.104Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "unknown"
+availabilityUpdated: "2026-08-17T14:37:25.104Z"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "complete"
+
 ratings:
   bildqualitaet: 4.9
   tracking: 4.8
@@ -181,7 +198,6 @@ experience:
   reliability: >-
     Langzeit- und Zuverlässigkeitsaussagen werden nur so stark gewichtet, wie sie durch die unter
     externalEvidence und evidenceSources dokumentierten Quellen gedeckt sind.
-
 ---
 
 ## Sicherheitskamera statt Pet-Cloud-Paket

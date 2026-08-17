@@ -36,7 +36,15 @@ images:
       alt: "Furbo Mini 360 – Produktansicht 2"
     - src: "../../assets/images/products/furbo-mini-360/gallery-3.webp"
       alt: "Furbo Mini 360 – Produktansicht 3"
-price: { current: null, currency: "EUR", status: "unknown" }
+price:
+  current: 49
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-08-17T14:41:34.487Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 rating: 3.7
 ratings: { interaktion: 4.3, transparenz: 3.0, raumabdeckung: 3.8, alltag: 3.7 }
 editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-15", note: "Datencheck anhand offizieller EU-Produktseite und Kurzanleitung; kein eigener Produkttest." }
@@ -65,14 +73,21 @@ decisionJourney: { cluster: "haustierkameras", stage: "decision", intent: "furbo
 evidenceSources:
   - { source: "Furbo EU Deutschland", url: "https://furbo.com/eu-de/products/furbo-mini-360", accessedAt: "2026-08-15", assertion: "Offizielle deutschsprachige EU-Produktseite für Modellidentität und regionale Produktdarstellung.", fields: ["review", "decision"] }
   - { source: "Furbo Support Deutschland", url: "https://help.furbo.com/hc/de/articles/43637359639321-Furbo-Mini-360-Kurzanleitung", accessedAt: "2026-08-15", assertion: "2K QHD, 360-Grad-Rotation, automatische Nachtsicht, Audio, Leckerliausgabe und USB-C sind Herstellerangaben.", fields: ["specs", "features"] }
-priceState: "unknown"
-priceAvailable: false
-affiliateAvailable: false
-availability: "unknown"
-availabilityReason: "EU-Produktseite bestätigt; konkrete Lieferbarkeit und Preis vor Kauf erneut prüfen."
-availabilityUpdated: "2026-08-15"
+affiliate:
+  provider: "amzn-to"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://amzn.to/4cNekqL"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+priceState: "available"
+priceUpdated: "2026-08-17T14:41:34.487Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-08-17T14:41:34.487Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
+recommendationStatus: "recommended"
 maintenanceStatus: "complete"
 ---
 

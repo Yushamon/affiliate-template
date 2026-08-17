@@ -38,17 +38,34 @@ images:
       alt: "PetSafe Keramik-Trinkbrunnen Streamside – Produktansicht 3"
     - src: "../../assets/images/products/petsafe-streamside-trinkbrunnen/gallery-4.webp"
       alt: "PetSafe Keramik-Trinkbrunnen Streamside – Produktansicht 4"
-price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-16", source: { id: "petsafe", label: "PetSafe Deutschland", type: "editorial", url: "https://www.petsafe.com/de/p/keramik-trinkbrunnen-streamside/PWW19-17098/" } }
+price:
+  current: 70.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-08-17T14:34:46.836Z"
+  source:
+    id: "manual"
+    label: "PetSafe Deutschland"
+    type: "manual"
 priceAutomation: "editorial"
-priceState: "unknown"
-priceAvailable: false
-affiliateAvailable: false
-availability: "unknown"
-availabilityUpdated: "2026-08-16"
-editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
 rating: 4.3
+affiliate:
+  provider: "petsafe-deutschland"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://amzn.to/4qmFLNT"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+
+priceState: "available"
+priceUpdated: "2026-08-17T14:34:46.836Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "unknown"
+availabilityUpdated: "2026-08-17T14:34:46.836Z"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "complete"
+
 ratings:
   lautstaerke: 4.7
   material: 4.7
@@ -158,7 +175,6 @@ experience:
   reliability: >-
     Langzeit- und Zuverlässigkeitsaussagen werden nur so stark gewichtet, wie sie durch die unter
     externalEvidence und evidenceSources dokumentierten Quellen gedeckt sind.
-
 ---
 
 ## Keramik statt App

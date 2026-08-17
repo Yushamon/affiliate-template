@@ -38,17 +38,34 @@ images:
       alt: "Invoxia Biotracker Edition 2026 – Produktansicht 3"
     - src: "../../assets/images/products/invoxia-biotracker-2026/gallery-4.webp"
       alt: "Invoxia Biotracker Edition 2026 – Produktansicht 4"
-price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-16", source: { id: "invoxia", label: "Invoxia", type: "editorial", url: "https://www.invoxia.com/en-US/petcare/minitailz-dog-tracker" } }
+price:
+  current: 119
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-08-17T14:31:04.978Z"
+  source:
+    id: "manual"
+    label: "Invoxia"
+    type: "manual"
 priceAutomation: "editorial"
-priceState: "unknown"
-priceAvailable: false
-affiliateAvailable: false
-availability: "unknown"
-availabilityUpdated: "2026-08-16"
-editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
 rating: 4.2
+affiliate:
+  provider: "invoxia"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://amzn.to/3TWnQS5"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+
+priceState: "available"
+priceUpdated: "2026-08-17T14:31:04.978Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "unknown"
+availabilityUpdated: "2026-08-17T14:31:04.978Z"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "complete"
+
 ratings:
   ortung: 4.4
   gesundheit: 4.8
@@ -164,7 +181,6 @@ experience:
   reliability: >-
     Langzeit- und Zuverlässigkeitsaussagen werden nur so stark gewichtet, wie sie durch die unter
     externalEvidence und evidenceSources dokumentierten Quellen gedeckt sind.
-
 ---
 
 ## Gesundheitsdaten mit klarer Grenze

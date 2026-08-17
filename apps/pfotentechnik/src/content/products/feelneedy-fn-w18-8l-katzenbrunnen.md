@@ -57,12 +57,35 @@ images:
       alt: "Entnehmbares Steuer- und Pumpenmodul des FEELNEEDY FN-W18"
     - src: "../../assets/images/products/feelneedy-fn-w18-8l-katzenbrunnen/gallery-3.webp"
       alt: "Filterhalter, Mehrschichtfilter und Pumpenschwamm des FEELNEEDY FN-W18"
+price:
+  current: 52.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-08-17T14:41:30.873Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
   url: "https://amzn.to/3Rdxsa5"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 4.0
 score: 80
+
+priceState: "available"
+priceUpdated: "2026-08-17T14:41:30.873Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-08-17T14:41:30.873Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
+
 ratings:
   verarbeitung: 4.2
   bedienung: 4.2

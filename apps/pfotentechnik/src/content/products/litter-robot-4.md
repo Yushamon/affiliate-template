@@ -40,17 +40,34 @@ images:
       alt: "Litter-Robot 4 – Produktansicht 4"
     - src: "../../assets/images/products/litter-robot-4/gallery-5.webp"
       alt: "Litter-Robot 4 – Produktansicht 5"
-price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-16", source: { id: "whisker", label: "Whisker EU", type: "editorial", url: "https://www.litter-robot.com/eu/de/litter-robot-4.html" } }
+price:
+  current: 799
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-08-17T14:31:40.245Z"
+  source:
+    id: "manual"
+    label: "Whisker EU"
+    type: "manual"
 priceAutomation: "editorial"
-priceState: "unknown"
-priceAvailable: false
-affiliateAvailable: false
-availability: "unknown"
-availabilityUpdated: "2026-08-16"
-editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
 rating: 4.4
+affiliate:
+  provider: "whisker-eu"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://amzn.to/4xMpzId"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+
+priceState: "available"
+priceUpdated: "2026-08-17T14:31:40.245Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "unknown"
+availabilityUpdated: "2026-08-17T14:31:40.245Z"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "complete"
+
 ratings:
   reinigung: 4.8
   geruchskontrolle: 4.8
@@ -187,7 +204,6 @@ experience:
   reliability: >-
     Langzeit- und Zuverlässigkeitsaussagen werden nur so stark gewichtet, wie sie durch die unter
     externalEvidence und evidenceSources dokumentierten Quellen gedeckt sind.
-
 ---
 
 ## Referenzplattform ohne Kamera

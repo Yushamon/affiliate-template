@@ -38,17 +38,34 @@ images:
       alt: "Catit PIXI Smart-Trinkbrunnen – Produktansicht 3"
     - src: "../../assets/images/products/catit-pixi-smart-trinkbrunnen/gallery-5.webp"
       alt: "Catit PIXI Smart-Trinkbrunnen – Produktansicht 4"
-price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-16", source: { id: "catit", label: "Catit", type: "editorial", url: "https://www.catit.com/de/produkte/trinkbrunnen/pixi-smart-trinkbrunnen/" } }
+price:
+  current: 83.89
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-08-17T14:30:24.155Z"
+  source:
+    id: "manual"
+    label: "Catit"
+    type: "manual"
 priceAutomation: "editorial"
-priceState: "unknown"
-priceAvailable: false
-affiliateAvailable: false
-availability: "unknown"
-availabilityUpdated: "2026-08-16"
-editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
 rating: 3.9
+affiliate:
+  provider: "catit"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://amzn.to/4gdmE46"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+
+priceState: "available"
+priceUpdated: "2026-08-17T14:30:24.155Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "unknown"
+availabilityUpdated: "2026-08-17T14:30:24.155Z"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "complete"
+
 ratings:
   lautstaerke: 4.7
   app: 4.2
@@ -162,7 +179,6 @@ experience:
   reliability: >-
     Langzeit- und Zuverlässigkeitsaussagen werden nur so stark gewichtet, wie sie durch die unter
     externalEvidence und evidenceSources dokumentierten Quellen gedeckt sind.
-
 ---
 
 ## Smart-Komfort bleibt Pflegearbeit

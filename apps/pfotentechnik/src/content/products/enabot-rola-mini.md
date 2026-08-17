@@ -36,7 +36,15 @@ images:
       alt: "Enabot ROLA Mini – Produktansicht 2"
     - src: "../../assets/images/products/enabot-rola-mini/gallery-3.webp"
       alt: "Enabot ROLA Mini – Produktansicht 3"
-price: { current: null, currency: "EUR", status: "unknown" }
+price:
+  current: 124.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-08-17T14:41:29.100Z"
+  source:
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 rating: 3.6
 ratings: { mobilitaet: 4.2, transparenz: 3.1, raumabdeckung: 3.9, alltag: 3.4 }
 editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-15", note: "Datencheck offizieller Enabot-Quellen; kein eigener Produkttest." }
@@ -65,14 +73,21 @@ decisionJourney: { cluster: "haustierkameras", stage: "decision", intent: "enabo
 evidenceSources:
   - { source: "Enabot Store", url: "https://store.enabot.com/products/rola-mini-familybot", accessedAt: "2026-08-15", assertion: "2K, 137-Grad-Sichtfeld, Zwei-Wege-Audio, Bewegungsaufzeichnung, App-Steuerung und 5000-mAh-Akku sind Herstellerangaben.", fields: ["specs", "features"] }
   - { source: "Enabot", url: "https://www.enabot.com/pet-robot/rola-mini", accessedAt: "2026-08-15", assertion: "Offizielle Produktseite bestätigt die mobile Pet-/Family-Kamera-Klasse.", fields: ["review", "decision"] }
-priceState: "unknown"
-priceAvailable: false
-affiliateAvailable: false
-availability: "unknown"
-availabilityReason: "Regionale Verfügbarkeit für Deutschland vor Kauf erneut prüfen."
-availabilityUpdated: "2026-08-15"
+affiliate:
+  provider: "amzn-to"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://amzn.to/4qpFZnp"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+priceState: "available"
+priceUpdated: "2026-08-17T14:41:29.100Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-08-17T14:41:29.100Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
+recommendationStatus: "recommended"
 maintenanceStatus: "complete"
 ---
 

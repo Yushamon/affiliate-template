@@ -40,17 +40,34 @@ images:
       alt: "Pawfit 3 – Produktansicht 4"
     - src: "../../assets/images/products/pawfit-3/gallery-5.webp"
       alt: "Pawfit 3 – Produktansicht 5"
-price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-16", source: { id: "pawfit", label: "Pawfit", type: "editorial", url: "https://www.pawfit.com/de-us/product/pawfit-3-pet-tracker.html" } }
+price:
+  current: 64.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-08-17T14:32:13.337Z"
+  source:
+    id: "manual"
+    label: "Pawfit"
+    type: "manual"
 priceAutomation: "editorial"
-priceState: "unknown"
-priceAvailable: false
-affiliateAvailable: false
-availability: "unknown"
-availabilityUpdated: "2026-08-16"
-editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
 rating: 3
+affiliate:
+  provider: "pawfit"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://amzn.to/4bSAFTs"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+
+priceState: "available"
+priceUpdated: "2026-08-17T14:32:13.337Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "unknown"
+availabilityUpdated: "2026-08-17T14:32:13.337Z"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "complete"
+
 ratings:
   ortung: 2.0
   app: 3.0
@@ -165,7 +182,6 @@ experience:
   reliability: >-
     Langzeit- und Zuverlässigkeitsaussagen werden nur so stark gewichtet, wie sie durch die unter
     externalEvidence und evidenceSources dokumentierten Quellen gedeckt sind.
-
 ---
 
 ## Audio statt Kamera

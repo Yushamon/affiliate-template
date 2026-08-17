@@ -44,22 +44,34 @@ images:
     - src: "../../assets/images/products/petkit-puramax-2/gallery-4.webp"
       alt: "PETKIT PuraMax 2 – Produktansicht 4"
 price:
-  current: null
+  current: 389
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-16"
-  source: { id: "petkit", label: "PETKIT", type: "editorial", url: "https://www.petkit.com/products/petkit-puramax-2" }
+  checkedAt: "2026-08-17T14:33:52.421Z"
+  source:
+    id: "manual"
+    label: "PETKIT"
+    type: "manual"
 priceAutomation: "editorial"
-priceState: "unknown"
-priceAvailable: false
-affiliateAvailable: false
+rating: 4.4
+affiliate:
+  provider: "petkit"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://amzn.to/4bUBBH7"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+
+priceState: "available"
+priceUpdated: "2026-08-17T14:33:52.421Z"
+priceAvailable: true
+affiliateAvailable: true
 availability: "unknown"
 availabilityReason: "Preis und regionale Lieferbarkeit werden nicht als dauerhafte Angabe gespeichert."
-availabilityUpdated: "2026-08-16"
+availabilityUpdated: "2026-08-17T14:33:52.421Z"
 editorialStatus: "complete"
-recommendationStatus: "recommended"
+recommendationStatus: "limited"
 maintenanceStatus: "complete"
-rating: 4.4
+
 ratings:
   reinigung: 4.6
   geruchskontrolle: 4.8
@@ -212,7 +224,6 @@ experience:
   reliability: >-
     Langzeit- und Zuverlässigkeitsaussagen werden nur so stark gewichtet, wie sie durch die unter
     externalEvidence und evidenceSources dokumentierten Quellen gedeckt sind.
-
 ---
 
 ## PuraMax statt PUROBOT
