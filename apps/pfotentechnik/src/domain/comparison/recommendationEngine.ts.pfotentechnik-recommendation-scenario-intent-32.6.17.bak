@@ -99,12 +99,7 @@ export function buildAutomaticRecommendations({
   }
 
   const audience = resolveAudience(data.slug, candidates);
-  const definitions = buildScenarioDefinitions(
-    family,
-    audience,
-    data.slug,
-    config?.scenarios
-  );
+  const definitions = buildScenarioDefinitions(family, audience, config?.scenarios);
 
   const overall = rankProducts(candidates, {
     key: "overall",
@@ -169,7 +164,6 @@ function resolveAudience(slug: string, products: ProductEntry[]) {
 function buildScenarioDefinitions(
   family: string,
   audience: string,
-  comparisonSlug: string,
   configured?: Array<{ key: string; label: string }>
 ): ScenarioDefinition[] {
   if (configured?.length) return configured;
@@ -200,26 +194,6 @@ function buildScenarioDefinitions(
   }
 
   if (family === "feeder") {
-    /*
-     * Scenario Intent Guard 32.6.17
-     *
-     * Die bisherigen Default-Szenarien "Preis-Leistung", "Smart" und
-     * "Kamera" passen nur zu breiten Allround-Vergleichen. Bei
-     * Spezialvergleichen würden sie den eigentlichen Suchintent verwässern.
-     *
-     * Spezialvergleiche erhalten deshalb nur dann automatische Szenarien,
-     * wenn diese explizit in automaticRecommendations.scenarios gepflegt sind.
-     */
-    const normalizedSlug = normalize(comparisonSlug);
-    const broadFeederComparison =
-      normalizedSlug === "beste-futterautomaten-fuer-katzen" ||
-      normalizedSlug === "beste-futterautomaten-fuer-hunde" ||
-      normalizedSlug === "beste-futterautomaten";
-
-    if (!broadFeederComparison) {
-      return [];
-    }
-
     return [
       { key: "value", label: "Preis-Leistung", priority: "value" },
       { key: "smart", label: "App und smarte Funktionen", priority: "smart" },

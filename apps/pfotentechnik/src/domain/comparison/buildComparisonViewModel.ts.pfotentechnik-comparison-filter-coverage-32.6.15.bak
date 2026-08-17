@@ -596,84 +596,111 @@ export function buildComparisonViewModel({
     productBySlug.get(item.slug)?.data.category.key === "gps-tracker"
   );
 
-  /*
-   * Filter Coverage Gate 32.6.15
-   *
-   * Ein Filter ist nur dann hilfreich, wenn er im konkreten Vergleich
-   * ausreichend belegt ist. Das gilt einheitlich für alle Filterfamilien,
-   * nicht nur für Tier und Tiergröße.
-   *
-   * Mindestabdeckung:
-   * - mindestens zwei sichtbare Produkte mit belastbarem Wert
-   * - mindestens 50 % der sichtbaren Produkte abgedeckt
-   *
-   * Fehlt die Abdeckung, bleibt das Produkt sichtbar; lediglich der
-   * unzuverlässige Filter wird nicht angeboten.
-   */
-  const coveredFilter = (
-    key: string,
-    label: string,
-    options: ComparisonFilter["options"]
-  ): ComparisonFilter[] =>
-    hasUsefulFilterCoverage(key)
-      ? [{ key, label, options }]
-      : [];
-
-  const filterDefinitions: ComparisonFilter[] = isGpsComparison
-    ? [
-        ...coveredFilter("tier", "Tier", [
-          { value: "hund", label: "Hund" },
-          { value: "katze", label: "Katze" }
-        ]),
-        ...coveredFilter("abo", "Laufender Dienst", [
-          { value: "mit-abo", label: "Abo erforderlich" },
-          { value: "ohne-abo", label: "Ohne Mobilfunkabo" }
-        ]),
-        ...coveredFilter("system", "Übertragung", [
-          { value: "mobilfunk", label: "Mobilfunk und App" },
-          { value: "vhf", label: "VHF und Handgerät" }
-        ]),
-        ...coveredFilter("gewicht", "Gerätegewicht", [
-          { value: "bis-35-g", label: "Bis 35 g" },
-          { value: "ueber-35-g", label: "Über 35 g" }
-        ])
+  const filterDefinitions: ComparisonFilter[] = isGpsComparison ? [
+    {
+      key: "tier",
+      label: "Tier",
+      options: [
+        { value: "hund", label: "Hund" },
+        { value: "katze", label: "Katze" }
       ]
-    : [
-        ...coveredFilter("tier", "Tier", [
-          { value: "hund", label: "Hund" },
-          { value: "katze", label: "Katze" }
-        ]),
-        ...coveredFilter("tiergroesse", "Tiergröße", [
-          { value: "klein", label: "Klein" },
-          { value: "mittel", label: "Mittel" },
-          { value: "gross", label: "Groß" }
-        ]),
-        ...coveredFilter("futterart", "Futterart", [
-          { value: "trockenfutter", label: "Trockenfutter" },
-          { value: "nassfutter", label: "Nassfutter" }
-        ]),
-        ...coveredFilter("app", "Steuerung", [
-          { value: "mit-app", label: "Mit App" },
-          { value: "ohne-app", label: "Ohne App" }
-        ]),
-        ...coveredFilter("kamera", "Kamera", [
-          { value: "mit-kamera", label: "Mit Kamera" },
-          { value: "ohne-kamera", label: "Ohne Kamera" }
-        ]),
-        ...coveredFilter("zugang", "Zugang", [
-          { value: "mikrochip", label: "Mikrochipgesteuert" },
-          { value: "freier-zugang", label: "Freier Zugang" }
-        ]),
-        ...coveredFilter("strombackup", "Stromversorgung", [
-          { value: "mit-backup", label: "Mit Batterie-Backup" },
-          { value: "ohne-backup", label: "Nur Netzbetrieb" }
-        ]),
-        ...coveredFilter("preisklasse", "Preisklasse", [
-          { value: "budget", label: "Budget" },
-          { value: "midrange", label: "Mittelklasse" },
-          { value: "premium", label: "Premium" }
-        ])
-      ];
+    },
+    {
+      key: "abo",
+      label: "Laufender Dienst",
+      options: [
+        { value: "mit-abo", label: "Abo erforderlich" },
+        { value: "ohne-abo", label: "Ohne Mobilfunkabo" }
+      ]
+    },
+    {
+      key: "system",
+      label: "Übertragung",
+      options: [
+        { value: "mobilfunk", label: "Mobilfunk und App" },
+        { value: "vhf", label: "VHF und Handgerät" }
+      ]
+    },
+    {
+      key: "gewicht",
+      label: "Gerätegewicht",
+      options: [
+        { value: "bis-35-g", label: "Bis 35 g" },
+        { value: "ueber-35-g", label: "Über 35 g" }
+      ]
+    }
+  ] : [
+    ...(hasUsefulFilterCoverage("tier")
+      ? [{
+          key: "tier",
+          label: "Tier",
+          options: [
+            { value: "hund", label: "Hund" },
+            { value: "katze", label: "Katze" }
+          ]
+        }]
+      : []),
+    ...(hasUsefulFilterCoverage("tiergroesse")
+      ? [{
+          key: "tiergroesse",
+          label: "Tiergröße",
+          options: [
+            { value: "klein", label: "Klein" },
+            { value: "mittel", label: "Mittel" },
+            { value: "gross", label: "Groß" }
+          ]
+        }]
+      : []),
+    {
+      key: "futterart",
+      label: "Futterart",
+      options: [
+        { value: "trockenfutter", label: "Trockenfutter" },
+        { value: "nassfutter", label: "Nassfutter" }
+      ]
+    },
+    {
+      key: "app",
+      label: "Steuerung",
+      options: [
+        { value: "mit-app", label: "Mit App oder WLAN" },
+        { value: "ohne-app", label: "Ohne App" }
+      ]
+    },
+    {
+      key: "kamera",
+      label: "Kamera",
+      options: [
+        { value: "mit-kamera", label: "Mit Kamera" },
+        { value: "ohne-kamera", label: "Ohne Kamera" }
+      ]
+    },
+    {
+      key: "zugang",
+      label: "Zugang",
+      options: [
+        { value: "mikrochip", label: "Mikrochipgesteuert" },
+        { value: "freier-zugang", label: "Freier Zugang" }
+      ]
+    },
+    {
+      key: "strombackup",
+      label: "Stromversorgung",
+      options: [
+        { value: "mit-backup", label: "Mit Batterie-Backup" },
+        { value: "ohne-backup", label: "Nur Netzbetrieb" }
+      ]
+    },
+    {
+      key: "preisklasse",
+      label: "Preisklasse",
+      options: [
+        { value: "budget", label: "Budget" },
+        { value: "midrange", label: "Mittelklasse" },
+        { value: "premium", label: "Premium" }
+      ]
+    }
+  ];
 
   const filters = filterDefinitions
     .map((filter) => {
