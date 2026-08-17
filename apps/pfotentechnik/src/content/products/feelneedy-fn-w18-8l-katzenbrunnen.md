@@ -17,11 +17,11 @@ category:
   path: "/trinkbrunnen/"
 productUrl: "/produkt/feelneedy-fn-w18-8l-katzenbrunnen/"
 publishedAt: "2026-07-23"
-updatedAt: "2026-07-23"
+updatedAt: "2026-08-17"
 author:
   name: "PfotenTechnik Redaktion"
 seo:
-  title: "FEELNEEDY FN-W18 8L im Check"
+  title: "FEELNEEDY FN-W18 8L im Datencheck"
   description: "FEELNEEDY FN-W18 mit 8 Litern, 5.000-mAh-Akku, Radarsensor, Edelstahl, drei Modi und Filtertimer im Datencheck."
   canonical: "/produkt/feelneedy-fn-w18-8l-katzenbrunnen/"
   sitemap: true
@@ -57,8 +57,6 @@ images:
       alt: "Entnehmbares Steuer- und Pumpenmodul des FEELNEEDY FN-W18"
     - src: "../../assets/images/products/feelneedy-fn-w18-8l-katzenbrunnen/gallery-3.webp"
       alt: "Filterhalter, Mehrschichtfilter und Pumpenschwamm des FEELNEEDY FN-W18"
-    - src: "../../assets/images/products/feelneedy-fn-w18-8l-katzenbrunnen/gallery-4.webp"
-      alt: "FEELNEEDY FN-W18 an einem Trinkplatz für mehrere Katzen"
 affiliate:
   provider: "amazon"
   label: "Aktuellen Preis prüfen"
@@ -124,7 +122,7 @@ experience:
     - "ein fester 14-Tage-Timer kann sowohl zu frühem als auch zu spätem Filterwechsel führen"
     - "große Wassermenge kann zu zu langen Wasserstandzeiten verleiten"
     - "die allgemeine Anleitung und einzelne Verkaufsvarianten nennen einen unterschiedlichen Filter-Lieferumfang"
-  methodology: "Redaktionelle Einordnung anhand der aktuellen FEELNEEDY-Produktseite, der FN-W18-Bedienungsanleitung, der Ersatzfilterunterlagen und aktueller Händlerdaten; kein eigener Langzeit-, Akku-, Radar-, Lautstärke-, Filter- oder Hygienetest."
+  methodology: "Datencheck anhand der am 17.08.2026 abrufbaren offiziellen FEELNEEDY-Produktseiten sowie der FN-W18-Anleitung. Herstellerangaben zu Akku, Radar, Lautstärke, Kapazität und Reinigung sind keine eigenen Messwerte. Kein eigener Praxis-, Langzeit-, Akku-, Radar-, Lautstärke-, Filter- oder Hygienetest."
   maintenance: "Wasser täglich kontrollieren und regelmäßig vollständig erneuern. Brunnen und Pumpe laut Anleitung ungefähr alle 10 bis 15 Tage vollständig reinigen, bei mehreren Tieren deutlich häufiger. Pumpenschwamm wöchentlich prüfen und Filter abhängig von Verschmutzung ungefähr alle zwei bis vier Wochen ersetzen."
 alternatives:
   - "oneisall-7l-dog-water-fountain"
@@ -167,7 +165,7 @@ specs:
   - label: "Akku"
     value: "integrierter Lithium-Ionen-Akku mit 5.000 mAh"
   - label: "Akkulaufzeit"
-    value: "Herstellerangabe bis zu 60 Tage im Sensor- oder Zeitmodus"
+    value: "Herstellerangabe bis zu 60 Tage im Sensor- oder Zeitmodus; keine eigene Laufzeitmessung"
   - label: "Nennspannung"
     value: "5 V DC, 1 A"
   - label: "Nennleistung"
@@ -177,7 +175,7 @@ specs:
   - label: "Sensortyp"
     value: "Radarsensor"
   - label: "Sensorbereich"
-    value: "ungefähr 120 Grad und bis zu 0,8 m"
+    value: "120° und bis zu 0,8 m laut Hersteller"
   - label: "Sensorbetrieb"
     value: "20 Sekunden Wasserfluss bei erkannter Annäherung"
   - label: "Zeitbetrieb"
@@ -185,9 +183,9 @@ specs:
   - label: "Dauerbetrieb"
     value: "nur bei angeschlossener Stromversorgung"
   - label: "Lautstärke"
-    value: "Herstellerangabe höchstens 45 dB"
+    value: "Herstellerangabe ≤45 dB; keine unabhängige Messung"
   - label: "Wasserstand"
-    value: "rundes Sichtfenster ohne Pumpenbeleuchtung"
+    value: "rundes Sichtfenster; laut Hersteller besitzt die Pumpe keine Beleuchtung"
   - label: "Überlaufschutz"
     value: "rückseitige Überlauföffnung laut Hersteller"
   - label: "Filterung"
@@ -214,12 +212,6 @@ specs:
     value: "Nein"
   - label: "UVC"
     value: "Nein"
-  - label: "Abmessungen"
-    value: "ca. 30,5 × 30,5 × 17,8 cm"
-  - label: "Leergewicht"
-    value: "ca. 1 kg laut zugänglicher Produktunterlage"
-  - label: "Gefülltes Gesamtgewicht"
-    value: "rechnerisch ungefähr 9 kg"
   - label: "Lieferumfang"
     value: "Brunnen, Steuer- und Pumpenmodul, Kabel, Bürste, Pinzette, Anleitung und je nach Angebotsvariante ein oder mehrere Filter"
   - label: "Geeignet für"
@@ -371,13 +363,10 @@ Ein kurzes Geräusch beim Start gilt laut Hersteller als normal, weil die Pumpe 
 
 Bleibt das Geräusch bestehen, sollten Wasserstand, Filter, Schwamm, Rotor und Sitz des Pumpenmoduls geprüft werden.
 
-## Gefülltes Gewicht und Standort
+## Standort und Befüllung
 
-Die zugänglichen Produktunterlagen nennen etwa ein Kilogramm Leergewicht. Mit acht Litern Wasser wiegt der Brunnen ungefähr neun Kilogramm.
+Mit bis zu acht Litern Wasser wird der FN-W18 befüllt deutlich schwerer. Er sollte deshalb möglichst am vorgesehenen Standort befüllt werden. Für diesen Datencheck liegt keine ausreichend belastbar verifizierte offizielle Gewichtsangabe vor; wir nennen deshalb bewusst kein Leer- oder Gesamtgewicht.
 
-Er sollte deshalb möglichst am vorgesehenen Standort befüllt werden. Das Tragen eines vollständig gefüllten Systems erhöht das Risiko von Verschütten und Belastung der Bauteile.
-
-Der Hersteller sieht nur eine Nutzung im Innenbereich vor.
 
 ## Für wen passt der FEELNEEDY FN-W18?
 
@@ -400,6 +389,14 @@ Weniger passend ist er für:
 
 ## Quellen und Methodik
 
-Die technischen Angaben stammen von der [aktuellen FEELNEEDY-Produktseite](https://feelneedy.com/products/feelneedy-fn-w18-water-fountain), der [deutschen FN-W18-Angebotsseite](https://feelneedy.com/products/feelneedy-de-fn-w18-8l-katzenbrunnen-kabellos-5000mah-trinkbrunnen-fur-hunde-mit-3-filters-katzenbrunnen-edelstahl-spulmaschinenfest-verbesserter-radarsensor), der [FN-W18-Bedienungsanleitung](https://manuals.plus/m/8405e994b66a22fcfe40c728cf5e56413230ec91f1b7d2953a42df73b22542ca) und den [Unterlagen für FN-W18-Ersatzfilter](https://manuals.plus/asin/B0FH36V435).
+Stand des Datenchecks: 17. August 2026.
 
-Es liegt kein eigener Langzeit-, Akku-, Radar-, Lautstärke-, Filter-, Spülmaschinen- oder Hygienetest vor. Die Bildpfade sind für ein produktspezifisches Bildpaket vorbereitet. Vor der Veröffentlichung müssen Form, Farbe, Logos und Lieferumfang der Bilder mit dem konkret verlinkten Amazon-Angebot abgeglichen werden.
+Primärquelle ist die aktuelle [FEELNEEDY-Produktseite zum FN-W18](https://feelneedy.com/products/feelneedy-fn-w18-water-fountain). Sie bestätigt unter anderem 8 Liter Gesamtvolumen aus etwa 7 Liter Tank und 1 Liter Trinkschale, 5.000-mAh-Akku, bis zu 60 Tage Herstellerlaufzeit im Sensor- oder Zeitmodus, 120°/0,8-m-Radarbereich, 20 Sekunden Sensorlauf, 15 Sekunden alle 15 Minuten im Zeitmodus, Dauerfluss nur am Strom, Edelstahl 304, Spülmaschinenfreigabe der Edelstahlteile unter 60 °C, 14-Tage-Filtertimer und eine Pumpenangabe von höchstens 45 dB.
+
+Die [deutsche FEELNEEDY-Produktseite](https://feelneedy.com/products/feelneedy-de-fn-w18-8l-katzenbrunnen-kabellos-5000mah-trinkbrunnen-fur-hunde-mit-3-filters-katzenbrunnen-edelstahl-spulmaschinenfest-verbesserter-radarsensor) wurde zusätzlich für die deutschsprachige Angebotsdarstellung herangezogen. Ergänzend wurde die [FN-W18-Anleitung](https://manuals.plus/asin/B0FH33SX4J) zur Funktions- und Pflegeeinordnung geprüft.
+
+PfotenTechnik hat den FN-W18 bislang **nicht selbst praktisch getestet**. Akku-Laufzeit, Radar-Erkennung, Lautstärke, Pumpenhaltbarkeit, Filterwirkung und Langzeithygiene sind daher keine eigenen Messergebnisse. Entsprechende Zahlen sind als Herstellerangaben gekennzeichnet. Die Bewertung ist eine redaktionelle Einordnung des dokumentierten Funktionsumfangs, der Konstruktion, des Pflegeaufwands und der Einschränkungen.
+
+Nicht ausreichend über aktuelle Primärquellen abgesicherte Präzisionswerte wurden entfernt statt aus schwächeren Händlerangaben zu übernehmen. Das betrifft insbesondere die zuvor genannte exakte Abmessung und das Leergewicht.
+
+Für dieses Produkt sind aktuell ausschließlich `hero.webp`, `thumbnail.webp`, `comparison.webp` sowie `gallery-1.webp` bis `gallery-3.webp` vorgesehen. Es bestehen keine Referenzen auf weitere Galeriebilder.
