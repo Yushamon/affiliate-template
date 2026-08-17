@@ -123,23 +123,15 @@ const inferFallbackFilters = (
     addValue(values, "futterart", "nassfutter");
   }
 
-  if (
-    /ohne app|keine app|nicht per app|app nicht verfügbar|app nicht verfuegbar|keine app-steuerung|ohne app-steuerung/.test(evidence)
-  ) {
+  if (/ohne app|keine app|nicht per app/.test(evidence)) {
     addValue(values, "app", "ohne-app");
-  } else if (
-    /app-steuerung|appsteuerung|per app|über die app|ueber die app|mit app|app-gesteuert|app gesteuert|steuerung via app|steuerung über app|steuerung ueber app/.test(evidence)
-  ) {
+  } else if (/app|wlan|wi-fi|wifi/.test(evidence)) {
     addValue(values, "app", "mit-app");
   }
 
-  if (
-    /ohne kamera|keine kamera|kamera fehlt|keine kamerafunktion|ohne kamerafunktion/.test(evidence)
-  ) {
+  if (/ohne kamera|keine kamera/.test(evidence)) {
     addValue(values, "kamera", "ohne-kamera");
-  } else if (
-    /mit kamera|integrierte kamera|eingebaute kamera|videokamera|kamera[: ]|2k-kamera|2k kamera|1080p-kamera|1080p kamera|4k-kamera|4k kamera/.test(evidence)
-  ) {
+  } else if (/kamera|video|ueberwachung|überwachung/.test(evidence)) {
     addValue(values, "kamera", "mit-kamera");
   }
 
