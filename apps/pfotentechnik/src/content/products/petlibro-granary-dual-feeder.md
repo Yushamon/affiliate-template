@@ -61,11 +61,11 @@ images:
     - src: ../../assets/images/products/petlibro-granary-dual-feeder/gallery-3.webp
       alt: PETLIBRO Granary Dual Feeder mit zwei Katzen
 price:
-  current: 104.97
+  current: 104.99
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 17 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-08-07T10:04:38.693Z"
+  checkedAt: "2026-08-17T14:42:38.141Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -80,12 +80,12 @@ rating: 4.5
 score: 90
 
 priceState: "available"
-priceUpdated: "2026-08-07T10:04:38.693Z"
+priceUpdated: "2026-08-17T14:42:38.141Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-07T10:04:38.693Z"
+availabilityUpdated: "2026-08-17T14:42:38.141Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

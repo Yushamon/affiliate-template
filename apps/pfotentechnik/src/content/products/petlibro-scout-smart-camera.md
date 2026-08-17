@@ -43,15 +43,26 @@ images:
     src: "../../assets/images/products/petlibro-scout-smart-camera/hero.webp"
     alt: "Neutrale redaktionelle Darstellung einer festen schwenkbaren Haustierkamera"
 price:
-  current: 89.99
+  current: 99.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-15T17:07:42.105Z"
+  checkedAt: "2026-08-17T14:42:47.374Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
 rating: 3.7
+priceState: "available"
+priceUpdated: "2026-08-17T14:42:47.374Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-08-17T14:42:47.374Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
+
 ratings:
   bild: 4
   datenschutz: 2.7
@@ -184,16 +195,6 @@ affiliate:
   url: "https://amzn.to/4wOAlh0"
   rel: "sponsored nofollow noopener"
   target: "_blank"
-priceState: "available"
-priceUpdated: "2026-08-15T17:07:42.105Z"
-priceAvailable: true
-affiliateAvailable: true
-availability: "available"
-availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-15T17:07:42.105Z"
-editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
 ---
 
 ## Einordnung ohne eigenen Produkttest

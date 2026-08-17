@@ -57,11 +57,11 @@ images:
     - src: ../../assets/images/products/xiaomi-smart-pet-fountain-2/gallery-3.webp
       alt: Xiaomi Smart Pet Fountain 2 im Katzenhaushalt
 price:
-  current: 54.89
+  current: 54.9
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 9 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-08-07T10:05:15.790Z"
+  checkedAt: "2026-08-17T14:43:18.277Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -76,12 +76,12 @@ rating: 4.7
 score: 93
 
 priceState: "available"
-priceUpdated: "2026-08-07T10:05:15.790Z"
+priceUpdated: "2026-08-17T14:43:18.277Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-07T10:05:15.790Z"
+availabilityUpdated: "2026-08-17T14:43:18.277Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
