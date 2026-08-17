@@ -21,7 +21,14 @@ hub: { sections: ["produkte", "automatische-katzentoiletten"] }
 tags: ["automatische-katzentoilette", "katze", "mehrkatzenhaushalt", "kamera", "app"]
 images:
   hero: { src: "../../assets/images/project/pfotentechnik/comparison/default-editorial-hero.webp", alt: "Neutrale redaktionelle Platzhaltergrafik bis zum modellgetreuen PETLIBRO-Luma-Produktbild" }
-price: { current: null, currency: "EUR", status: "unknown" }
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
+  source:
+    id: "manual"
+    label: "amazon.de"
+    type: "manual"
 rating: 3.5
 ratings: { datenlage: 4.1, passform: 3.8, wartung: 3.7, folgekosten: 3.0, datenschutz: 2.9 }
 editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-15", note: "Datencheck offizieller PETLIBRO-Quellen; Sicherheits- und Geruchsclaims sind Herstellerangaben, kein eigener Produkttest." }
@@ -60,15 +67,23 @@ decisionJourney: { cluster: "automatische-katzentoiletten", stage: "decision", i
 evidenceSources:
   - { source: "PETLIBRO Deutschland – Luma", url: "https://de.petlibro.com/products/luma-intelligente-selbstreinigende-katzentoilette-exclusive", accessedAt: "2026-08-15", assertion: "Abmessungen, Einstieg, Gewicht, Katzenprofile, Sicherheit, Streu, Abfallfach, Kamera, Cloud, Geräusch, Strom und Lieferumfang sind Herstellerangaben.", fields: ["specs", "decision", "comparisonData"] }
   - { source: "PETLIBRO Deutschland – Luma Einführung", url: "https://de.petlibro.com/pages/introducing-luma", accessedAt: "2026-08-15", assertion: "Reinigungsverzögerung, Filterwechsel, Gewichtsmessgrenze und fehlende Smart-Home-Integration sind Herstellerangaben.", fields: ["specs", "weaknesses"] }
+affiliate:
+  provider: "amazon-de"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://www.amazon.de/-/en/PETLIBRO-Self-Cleaning-Electric-Analysis-Detection/dp/B0FPXF3CPK?th=1"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+
 priceState: "unknown"
+priceUpdated: "2026-08-17T15:48:40.462Z"
 priceAvailable: false
-affiliateAvailable: false
+affiliateAvailable: true
 availability: "unknown"
 availabilityReason: "Deutsche Herstellerseite bestätigt das Produkt; Preis und konkrete Lieferbarkeit vor Kauf erneut prüfen."
-availabilityUpdated: "2026-08-15"
+availabilityUpdated: "2026-08-17T15:48:40.462Z"
 editorialStatus: "complete"
 recommendationStatus: "limited"
-maintenanceStatus: "complete"
+maintenanceStatus: "required"
 ---
 
 ## Herstellerfunktion, praktische Bedeutung und offene Erfahrung

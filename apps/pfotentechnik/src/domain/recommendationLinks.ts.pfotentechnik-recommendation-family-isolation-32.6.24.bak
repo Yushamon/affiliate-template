@@ -85,28 +85,17 @@ const detectRecommendationFamily = (
   topics: LinkTopic[],
   normalizedText: string
 ): RecommendationFamily | undefined => {
-  const explicitFamilyText = normalize([
-    data.contentPlatform?.cluster,
-    data.decisionJourney?.cluster,
-    ...asArray(data.hub?.sections),
-    ...asArray(data.linking?.contexts),
-    typeof data.category === "string" ? data.category : data.category?.key,
-    typeof data.category === "object" ? data.category?.label : ""
-  ].filter(Boolean).join(" "));
-
-  // Explizite Cluster-/Hub-Metadaten haben Vorrang vor semantischen Topics.
-  // Sonst kann z.B. "Katze" + "App" einer Katzentoiletten-Seite einen
-  // fachfremden Futterautomaten-Kandidaten erlauben.
-  for (const [family, pattern] of FAMILY_PATTERNS) {
-    if (pattern.test(explicitFamilyText)) return family;
-  }
-
   const topicFamily = topics.find((topic): topic is RecommendationFamily =>
     ["futterautomaten", "trinkbrunnen", "gps-tracker", "katzenklappen", "haustierkameras", "katzentoiletten"].includes(topic)
   );
   if (topicFamily) return topicFamily;
 
-  const category = explicitFamilyText;
+  const category = normalize([
+    typeof data.category === "string" ? data.category : data.category?.key,
+    typeof data.category === "object" ? data.category?.label : "",
+    data.contentPlatform?.cluster,
+    ...asArray(data.hub?.sections)
+  ].filter(Boolean).join(" "));
 
   for (const [family, pattern] of FAMILY_PATTERNS) {
     if (pattern.test(category)) return family;
@@ -132,16 +121,11 @@ const buildContext = (data: Record<string, any>): Context => {
   };
 };
 const hasCompatibleRecommendationTopic = (source: Context, candidate: Context) => {
-  // Bei einer erkannten Produktfamilie gilt fail-closed:
-  // Kandidaten ohne dieselbe Familie dürfen nicht als Next Step erscheinen.
-  if (source.family) {
-    return candidate.family === source.family;
-  }
-  if (candidate.family && source.family !== candidate.family && source.topics.size === 0) {
+  if (source.family && candidate.family && source.family !== candidate.family) {
     return false;
   }
   if (source.topics.size === 0 || candidate.topics.size === 0) {
-    return true;
+    return !source.family || !candidate.family || source.family === candidate.family;
   }
   return overlapCount(source.topics, candidate.topics) > 0;
 };
