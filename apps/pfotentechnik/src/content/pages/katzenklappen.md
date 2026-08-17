@@ -5,59 +5,167 @@ type: "page"
 layout: "page"
 description: "Cornerstone für Katzenklappen: Nutzeraufgabe, Mikrochip-Zugang, Mehrkatzen-Rechte, App, Beuteerkennung, Passform und Einbau in der richtigen Reihenfolge klären."
 publishedAt: "2026-08-04"
-updatedAt: "2026-08-04"
-author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
+updatedAt: "2026-08-16"
+author:
+  name: "PfotenTechnik Redaktion"
+  role: "Redaktion"
 category: "katzenklappen"
 categoryLabel: "Katzenklappen"
 categoryPath: "/katzenklappen/"
-tags: ["Katzenklappen", "Mikrochip", "App", "Einbau", "Mehrkatzenhaushalt"]
-linking: { keywords: ["Katzenklappen", "Mikrochip-Katzenklappe", "Katzenklappe mit App"], contexts: ["katzenklappen", "mikrochip", "einbau", "mehrere katzen"], priority: "high", maxOccurrences: 2 }
-navigation: { show: true, label: "Katzenklappen", section: "katzenklappen", order: 40 }
-hub: { sections: ["wissen"], title: "Katzenklappen", description: "Zentrale Auswahl nach Aufgabe, Zugang, Einbau und Systemabhängigkeit.", icon: "🐈", order: 390, featured: true }
+tags:
+  - "Katzenklappen"
+  - "Mikrochip"
+  - "App"
+  - "Einbau"
+  - "Mehrkatzenhaushalt"
+linking:
+  keywords:
+    - "Katzenklappen"
+    - "Mikrochip-Katzenklappe"
+    - "Katzenklappe mit App"
+  contexts:
+    - "katzenklappen"
+    - "mikrochip"
+    - "einbau"
+    - "mehrere katzen"
+  priority: "high"
+  maxOccurrences: 2
+navigation:
+  show: true
+  label: "Katzenklappen"
+  section: "katzenklappen"
+  order: 40
+hub:
+  sections:
+    - "wissen"
+  title: "Katzenklappen"
+  description: "Zentrale Auswahl nach Aufgabe, Zugang, Einbau und Systemabhängigkeit."
+  icon: "🐈"
+  order: 390
+  featured: true
 hubPriority: 98
-seo: { title: "Katzenklappen: Mikrochip, App & Einbau auswählen", description: "Katzenklappe nach Zugang, Mehrkatzen-Rechten, Durchgang, Einbau, App und Beuteerkennung auswählen.", canonical: "/katzenklappen/", sitemap: true, noindex: false, priority: 0.95, changefreq: "monthly" }
+seo:
+  title: "Katzenklappen: Mikrochip, App & Einbau auswählen"
+  description: "Katzenklappe nach Zugang, Mehrkatzen-Rechten, Durchgang, Einbau, App und Beuteerkennung auswählen."
+  canonical: "/katzenklappen/"
+  sitemap: true
+  noindex: false
+  priority: 0.95
+  changefreq: "monthly"
 contentPlatform:
   version: 2
   cluster: "katzenklappen"
   intent: "buying-guide"
   animal: "cat"
-  products: ["sureflap-mikrochip-katzenklappe", "sureflap-dualscan-mikrochip-katzenklappe", "sureflap-mikrochip-katzenklappe-connect", "petsafe-mikrochip-katzenklappe", "petsafe-petporte-smart-flap", "onlycat-mikrochip-katzenklappe", "petwalk-medium-tiertuer", "zeromouse-2-0"]
+  products:
+    - "sureflap-mikrochip-katzenklappe"
+    - "sureflap-dualscan-mikrochip-katzenklappe"
+    - "sureflap-mikrochip-katzenklappe-connect"
+    - "petsafe-mikrochip-katzenklappe"
+    - "petsafe-petporte-smart-flap"
+    - "onlycat-mikrochip-katzenklappe"
+    - "petwalk-medium-tiertuer"
+    - "cat-mate-elite-355w"
+    - "zeromouse-2-0"
   decision: "off"
-  blocks: ["summary", "fit", "checklist", "mistakes"]
+  blocks:
+    - "summary"
+    - "fit"
+    - "checklist"
+    - "mistakes"
   summary:
     - "Zuerst das Zugangsproblem, dann Passform und Einbau, zuletzt App und Komfort klären."
     - "Mikrochip-Erkennung, App und Beuteerkennung sind keine austauschbaren Funktionen."
     - "Komplettklappen, motorisierte Tiertüren und Nachrüstmodule bleiben getrennte Produktrollen."
-  suitableFor: ["Freigänger mit selektivem Zugang", "Mehrkatzenhaushalte", "Haushalte mit konkretem App- oder Beuteproblem"]
-  notSuitableFor: ["Kauf ohne gemessenen Durchgang", "Einbau ohne Materialprüfung", "App-Wunsch ohne geklärtes Ausfallverhalten"]
-  checklist: ["Nutzeraufgabe festlegen", "Katze und Ausschnitt messen", "Einbaumaterial klären", "Rechte je Tier festlegen", "Strom-, WLAN- und Hub-Abhängigkeit prüfen"]
-  mistakes: ["Außenmaß und Durchgang verwechseln", "App mit Tiererkennung gleichsetzen", "Nachrüstmodul als vollständige Klappe vergleichen", "Herstellerwerte als eigenen Test darstellen"]
+  suitableFor:
+    - "Freigänger mit selektivem Zugang"
+    - "Mehrkatzenhaushalte"
+    - "Haushalte mit konkretem App- oder Beuteproblem"
+  notSuitableFor:
+    - "Kauf ohne gemessenen Durchgang"
+    - "Einbau ohne Materialprüfung"
+    - "App-Wunsch ohne geklärtes Ausfallverhalten"
+  checklist:
+    - "Nutzeraufgabe festlegen"
+    - "Katze und Ausschnitt messen"
+    - "Einbaumaterial klären"
+    - "Rechte je Tier festlegen"
+    - "Strom-, WLAN- und Hub-Abhängigkeit prüfen"
+  mistakes:
+    - "Außenmaß und Durchgang verwechseln"
+    - "App mit Tiererkennung gleichsetzen"
+    - "Nachrüstmodul als vollständige Klappe vergleichen"
+    - "Herstellerwerte als eigenen Test darstellen"
   faqMode: "manual"
   theme: "blue"
 premiumBlocks:
-  - { type: "answer", eyebrow: "Kurzantwort", title: "Welche Katzenklappe passt?", text: "Für fremde Tiere genügt oft lokaler Mikrochip-Zugang. Unterschiedliche Ausgangsrechte brauchen beidseitige Erkennung. App, Kamera oder motorisierte Dämmung sind spätere Spezialentscheidungen.", href: "#entscheidung-in-fuenf-schritten", cta: "Entscheidung starten" }
+  - type: "answer"
+    eyebrow: "Kurzantwort"
+    title: "Welche Katzenklappe passt?"
+    text: "Für fremde Tiere genügt oft lokaler Mikrochip-Zugang. Unterschiedliche Ausgangsrechte brauchen beidseitige Erkennung. App, Kamera oder motorisierte Dämmung sind spätere Spezialentscheidungen."
+    href: "#entscheidung-in-fuenf-schritten"
+    cta: "Entscheidung starten"
   - type: "quickFacts"
     eyebrow: "Nächste Schritte"
     title: "Vergleichen oder Praxisproblem lösen"
     cards:
-      - { label: "Modelle", title: "Mikrochip-Katzenklappen", text: "Lokale und vernetzte Systeme nach denselben Kernkriterien.", href: "/vergleiche/beste-mikrochip-katzenklappen/", cta: "Modelle vergleichen" }
-      - { label: "Smarte Systeme", title: "App und Beuteerkennung", text: "Komplettsysteme und Nachrüstung getrennt bewerten.", href: "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/", cta: "Systeme vergleichen" }
-      - { label: "Praxis", title: "Katzenklappe einbauen", text: "Tür, Glas und Wand vor dem Ausschnitt prüfen.", href: "/katzenklappe-einbauen/", cta: "Einbau planen" }
+      - label: "Modelle"
+        title: "Mikrochip-Katzenklappen"
+        text: "Lokale und vernetzte Systeme nach denselben Kernkriterien."
+        href: "/vergleiche/beste-mikrochip-katzenklappen/"
+        cta: "Modelle vergleichen"
+      - label: "Smarte Systeme"
+        title: "App und Beuteerkennung"
+        text: "Komplettsysteme und Nachrüstung getrennt bewerten."
+        href: "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/"
+        cta: "Systeme vergleichen"
+      - label: "Praxis"
+        title: "Katzenklappe einbauen"
+        text: "Tür, Glas und Wand vor dem Ausschnitt prüfen."
+        href: "/katzenklappe-einbauen/"
+        cta: "Einbau planen"
 faq:
-  - { question: "Braucht eine Mikrochip-Katzenklappe WLAN?", answer: "Nein. Lokale Modelle arbeiten ohne WLAN. Vernetzte Fernfunktionen können Hub, WLAN, Internet und Konto benötigen." }
-  - { question: "Was ist wichtiger als die App?", answer: "Zugangsregel, engster Durchgang, Ausschnitt, Einbaumaterial und Verhalten bei Batterie-, Strom- oder Netzausfall." }
-  - { question: "Ist ZeroMOUSE eine Katzenklappe?", answer: "Nein. ZeroMOUSE ist ein Nachrüstmodul für kompatible vorhandene Klappen." }
-  - { question: "Welche Seite hilft bei mehreren Katzen?", answer: "Der Praxisratgeber für mehrere Katzen klärt Rechte je Tier und Richtung; der Mikrochip-Vergleich führt anschließend zu passenden Modellen." }
+  - question: "Braucht eine Mikrochip-Katzenklappe WLAN?"
+    answer: "Nein. Lokale Modelle arbeiten ohne WLAN. Vernetzte Fernfunktionen können Hub, WLAN, Internet und Konto benötigen."
+  - question: "Was ist wichtiger als die App?"
+    answer: "Zugangsregel, engster Durchgang, Ausschnitt, Einbaumaterial und Verhalten bei Batterie-, Strom- oder Netzausfall."
+  - question: "Ist ZeroMOUSE eine Katzenklappe?"
+    answer: "Nein. ZeroMOUSE ist ein Nachrüstmodul für kompatible vorhandene Klappen."
+  - question: "Welche Seite hilft bei mehreren Katzen?"
+    answer: "Der Praxisratgeber für mehrere Katzen klärt Rechte je Tier und Richtung; der Mikrochip-Vergleich führt anschließend zu passenden Modellen."
 decisionJourney:
   cluster: "katzenklappen"
   stage: "orientation"
   intent: "katzenklappen-cornerstone"
   primaryQuestion: "Welche Zugangslösung passt zur Nutzeraufgabe, Katze und Einbausituation?"
-  next: ["/vergleiche/beste-mikrochip-katzenklappen/", "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/", "/katzenklappe-einbauen/"]
-  fallback: ["/smarte-haustiertechnik/"]
+  next:
+    - "/vergleiche/beste-mikrochip-katzenklappen/"
+    - "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/"
+    - "/katzenklappe-einbauen/"
+  fallback:
+    - "/smarte-haustiertechnik/"
 evidenceSources:
-  - { source: "Sure Petcare Deutschland – Klappenübersicht", url: "https://www.surepetcare.com/de-de/haustierklappen", accessedAt: "2026-08-04", assertion: "Abgrenzung lokaler und vernetzter Mikrochip-Funktionen.", fields: ["contentPlatform", "faq"] }
-  - { source: "Produktquellen im Cluster", url: "https://www.onlycat.com/de/specs-de/", accessedAt: "2026-08-04", assertion: "App, Beuteerkennung, Strom und Produktrollen werden nur auf Ebene der konkreten Systeme behauptet.", fields: ["premiumBlocks", "decisionJourney"] }
+  - source: "Sure Petcare Deutschland – Klappenübersicht"
+    url: "https://www.surepetcare.com/de-de/haustierklappen"
+    accessedAt: "2026-08-04"
+    assertion: "Abgrenzung lokaler und vernetzter Mikrochip-Funktionen."
+    fields:
+      - "contentPlatform"
+      - "faq"
+  - source: "Produktquellen im Cluster"
+    url: "https://www.onlycat.com/de/specs-de/"
+    accessedAt: "2026-08-04"
+    assertion: "App, Beuteerkennung, Strom und Produktrollen werden nur auf Ebene der konkreten Systeme behauptet."
+    fields:
+      - "premiumBlocks"
+      - "decisionJourney"
+  - source: "Sure Petcare UK – Microchip Cat Flap Connect"
+    url: "https://www.surepetcare.com/en-gb/pet-doors/microchip-cat-flap-connect"
+    accessedAt: "2026-08-15"
+    assertion: "Bei vernetzten Katzenklappen sind separater Hub, Herstellerdienst und dokumentierter Security-Support als eigene Kaufkriterien zu pruefen."
+    fields:
+      - "contentPlatform"
+      - "body"
 ---
 
 Eine Katzenklappe ist zuerst ein Zugang im Gebäude und erst danach ein smartes Gerät.
@@ -97,6 +205,12 @@ Selektiver Eingang hält fremde Tiere draußen. Individuelle Ausgangsrechte sind
 
 Der Mikrochip identifiziert das Tier; die App bedient Regeln oder zeigt Ereignisse. Prüfe, was ohne Router, Internet, Konto oder Herstellerdienst weiter funktioniert. Der [App- und Beutevergleich](/vergleiche/katzenklappen-mit-app-und-beuteerkennung/) macht diese Abhängigkeiten sichtbar.
 
+<!-- pt:katzenklappen-support-check-33.2.0:start -->
+#### Supporthorizont vernetzter Modelle prüfen
+
+Bei App- oder Cloud-Modellen gehört zur Kaufentscheidung auch, ob ein separater Hub benötigt wird, welche Funktionen vom Herstellerdienst abhängen und ob ein Software- oder Security-Support-Zeitraum dokumentiert ist. Ein genannter Zeitraum darf nicht automatisch mit Produktlebensdauer oder Funktionsende gleichgesetzt werden. Der [App- und Beuteerkennungs-Vergleich](/vergleiche/katzenklappen-mit-app-und-beuteerkennung/) weist bekannte und nicht dokumentierte Angaben getrennt aus.
+<!-- pt:katzenklappen-support-check-33.2.0:end -->
+
 ### 5. Einbau und laufenden Betrieb planen
 
 Batterien, Netzteil, Kabelweg, Hub, Adapter, Tunnelverlängerung, Reinigung und Gewöhnung gehören zur Entscheidung. Eine technisch passende Klappe ist erst dann praxistauglich, wenn Einbau und Training realistisch sind.
@@ -104,6 +218,8 @@ Batterien, Netzteil, Kabelweg, Hub, Adapter, Tunnelverlängerung, Reinigung und 
 ## passende Vertiefungen im Cluster
 
 Der [Mikrochip-Vergleich](/vergleiche/beste-mikrochip-katzenklappen/) besitzt den herstellerübergreifenden Modellvergleich. [Katzenklappe einbauen](/katzenklappe-einbauen/), [Katze gewöhnen](/katze-an-katzenklappe-gewoehnen/), [mehrere Katzen](/katzenklappe-fuer-mehrere-katzen/) sowie [Zugluft und Wärmedämmung](/katzenklappe-zugluft-und-waermedaemmung/) lösen eigenständige Praxisaufgaben.
+
+Die [Cat Mate Elite 355W](/produkt/cat-mate-elite-355w/) ergänzt dort einen gemeinsamen Offline-Timer. Sie wird nicht mit individuellen Ein- und Ausgangsrechten je Katze gleichgesetzt.
 
 Eine zusätzliche Route „Katzenklappe mit Chip oder App“ entsteht bewusst nicht: Diese Frage ist Teil der grundlegenden Auswahl und gehört diesem Cornerstone. Produktseiten bleiben für konkrete Modelle zuständig.
 

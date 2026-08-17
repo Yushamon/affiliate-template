@@ -1,12 +1,12 @@
 ---
-title: "Neakasa M1 Lite"
+title: "Neakasa M1 Plus Lite"
 slug: "neakasa-m1-lite"
 type: "product"
 layout: "product"
 testStatus: "manufacturer-data"
 productStatus: "active"
-description: "Offene selbstreinigende Katzentoilette mit automatischer Siebung, App-Steuerung, 7,17-Liter-Streukapazität und 11,23-Liter-Abfallbehälter. Für Katzen von etwa 1 bis 15 kg laut Hersteller."
-recommendation: "Für Halter, die ein selbstreinigendes Katzenklo mit offener Bauform suchen und auf Matte sowie zusätzlichen Lieferumfang des M1 Plus verzichten können."
+description: "Aktuelle offene M1-Plus-Lite-Generation mit automatischer Siebung, App, 7,17-Liter-Streukapazität, 11,23-Liter-Abfallbehälter und dokumentiertem Bereich von 1 bis 15 kg."
+recommendation: "Für Katzen, die eine offene Toilette bevorzugen, wenn der 35,2-cm-Einstieg passt und klumpende, siebfähige Streu verwendet wird."
 manufacturer:
   key: "neakasa"
   name: "Neakasa"
@@ -17,72 +17,67 @@ category:
   path: "/automatische-katzentoiletten/"
 productUrl: "/produkt/neakasa-m1-lite/"
 publishedAt: "2026-08-07"
-updatedAt: "2026-08-07"
-author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
+updatedAt: "2026-08-15"
+author:
+  name: "PfotenTechnik Redaktion"
+  role: "Redaktion"
 seo:
-  title: "Neakasa M1 Lite im Check: offenes selbstreinigendes Katzenklo"
-  description: "Neakasa M1 Lite eingeordnet: offene Bauform, Selbstreinigung, App, 1–15 kg Katzengewicht, 7,17 l Streu, 11,23 l Abfallbehälter und Unterschiede zum M1 Plus."
+  title: "Neakasa M1 Plus Lite im Check"
+  description: "M1 Plus Lite: offene Bauform, 35,2-cm-Einstieg, Abdichtung, Sensorik, Streu und App konservativ eingeordnet."
   canonical: "/produkt/neakasa-m1-lite/"
   sitemap: true
   priority: 0.8
-hub: { sections: ["produkte", "automatische-katzentoiletten"] }
-tags: ["automatische-katzentoilette", "selbstreinigendes-katzenklo", "katze", "offenes-katzenklo", "app", "grosse-katze", "mehrkatzenhaushalt"]
-
+hub:
+  sections:
+    - "produkte"
+    - "automatische-katzentoiletten"
+tags:
+  - "automatische-katzentoilette"
+  - "selbstreinigendes-katzenklo"
+  - "katze"
+  - "offenes-katzenklo"
+  - "app"
+  - "grosse-katze"
+  - "mehrkatzenhaushalt"
 images:
   hero:
-    src: "../../assets/images/products/neakasa-m1-lite/hero.webp"
-    alt: "Neakasa M1 Lite selbstreinigende Katzentoilette mit offener Bauform"
-  thumbnail:
-    src: "../../assets/images/products/neakasa-m1-lite/thumbnail.webp"
-    alt: "Neakasa M1 Lite automatische Katzentoilette in kompakter Produktansicht"
-  comparison:
-    src: "../../assets/images/products/neakasa-m1-lite/comparison.webp"
-    alt: "Neakasa M1 Lite im Vergleich automatischer Katzentoiletten"
-  gallery:
-    - src: "../../assets/images/products/neakasa-m1-lite/gallery-1.webp"
-      alt: "Neakasa M1 Lite mit offenem Einstieg"
-    - src: "../../assets/images/products/neakasa-m1-lite/gallery-2.webp"
-      alt: "Neakasa M1 Lite in seitlicher Produktansicht"
-    - src: "../../assets/images/products/neakasa-m1-lite/gallery-3.webp"
-      alt: "Neakasa M1 Lite im Wohnraum mit Katze"
-
+    src: "../../assets/images/project/pfotentechnik/comparison/default-editorial-hero.webp"
+    alt: "Neutrale redaktionelle Darstellung der offenen Neakasa M1 Plus Lite"
+  gallery: []
 price:
-  current: 315.99
+  current: null
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-07T11:09:51.513Z"
+  checkedAt: "2026-08-15"
   source:
-    id: "manual"
+    id: "neakasa-eu"
     label: "Neakasa EU"
-    type: "manual"
-rating: 4.0
+    type: "editorial"
+rating: 4
 affiliate:
   provider: "neakasa-eu"
   label: "Preis und Verfügbarkeit prüfen"
   url: "https://amzn.to/4z3W8Ti"
   rel: "sponsored nofollow noopener"
   target: "_blank"
-
-priceState: "available"
-priceUpdated: "2026-08-07T11:09:51.513Z"
-priceAvailable: true
+priceState: "unknown"
+priceUpdated: "2026-08-15T17:08:40.257Z"
+priceAvailable: false
 affiliateAvailable: true
-availability: "available"
-availabilityReason: "Im europäischen Neakasa-Shop am 07.08.2026 als M1 Plus Lite mit Warenkorb-Funktion gelistet."
-availabilityUpdated: "2026-08-07T11:09:51.513Z"
+availability: "unknown"
+availabilityReason: "Preis und Lieferstatus werden nicht als dauerhafte redaktionelle Angabe gespeichert."
+availabilityUpdated: "2026-08-15"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
-
 ratings:
   sicherheit: 4.2
-  platz: 4.0
+  platz: 4
   reinigung: 4.1
   folgekosten: 3.8
   datenschutz: 3.9
-
 externalEvidence:
-  status: constrained
+  status: "constrained"
   userReviews:
     - platform: "Chewy"
       url: "https://www.chewy.com/neakasa-m1-lite-open-top-self/product-reviews/2049302"
@@ -97,81 +92,75 @@ externalEvidence:
     - platform: "Best Buy"
       url: "https://www.bestbuy.com/site/reviews/neakasa-m1-lite-open-top-self-cleaning-cat-litter-box-white/6632926"
       checkedAt: "2026-08-11"
-      rating: 5.0
+      rating: 5
       scale: 5
       reviewCount: 4
       recurringPositives:
         - "Die kleine Stichprobe lobt leisen Betrieb, einfache Einrichtung und schnelle Akzeptanz."
       recurringCriticism:
         - "Die Stichprobe ist sehr klein und mehrere Reviews sind als incentiviert gekennzeichnet."
-  note: >-
-    Für das exakt als M1 Lite bezeichnete Modell wurde keine ausreichend belastbare unabhängige Hands-on-Review gefunden. Nutzerquellen allein reichen nicht für einen professionell gestützten Consensus.
+  note: "Für das exakt als M1 Lite bezeichnete Modell wurde keine ausreichend belastbare unabhängige Hands-on-Review gefunden. Nutzerquellen allein reichen nicht für einen professionell gestützten Consensus."
 decision:
   bestFor:
-    - "Katzen, die offene Toiletten besser akzeptieren als geschlossene Trommelsysteme"
-    - "Katzen von etwa 1 bis 15 kg laut Hersteller"
-    - "Größere Katzen mit Bedarf an mehr Kopffreiheit und offenem Fluchtweg"
-    - "Mehrkatzenhaushalte mit Interesse an App-Monitoring"
-    - "Haushalte, die tägliches manuelles Schaufeln deutlich reduzieren möchten"
+    - "Katzen von 1 bis 15 kg laut Hersteller"
+    - "Katzen, die offene Systeme besser akzeptieren"
+    - "Haushalte mit kompatibler klumpender Streu"
   attention:
-    - "Einstieg liegt rund 35,2 cm hoch"
-    - "Unter etwa 1 kg empfiehlt Neakasa Kitten-Modus ohne Automatik"
-    - "Nur klumpende beziehungsweise siebfähige Streu verwenden"
-    - "Holzpellets und nichtklumpende Streu sind laut Hersteller nicht geeignet"
-    - "Lite-Lieferumfang enthält keine Streumatte"
-    - "Neakasa verwendet aktuell mehrere Modellbezeichnungen: M1 Lite, M1 Plus Lite und M1 Lite Plus"
-
+    - "Unter 1 kg nur Kitten-Modus ohne Automatik"
+    - "35,2 cm Einstiegshöhe"
+    - "Keine Holzpellets oder nicht klumpende Streu"
+    - "Die offiziellen Neakasa-Seiten verwenden M1 Plus Lite und M1 Lite Plus; diese Route ist der gemeinsame Lifecycle-Owner"
+    - "Sensorzahl ist in offiziellen Darstellungen nicht vollständig konsistent"
 review:
   summary: "Das Neakasa M1 Lite kombiniert offene Bauform, automatische Siebung, App-Steuerung und großen Abfallbehälter. Technisch liegt es sehr nah am M1 Plus, spart aber beim Zubehör."
   verdict: "Eine starke offene Alternative zu geschlossenen selbstreinigenden Katzenklos. Besonders interessant für große oder skeptische Katzen sowie für Käufer, denen der reduzierte Lieferumfang genügt."
-
 strengths:
-  - "Offene Bauform mit dauerhaft freiem Ein- und Ausstieg"
+  - "Offene Bauform"
+  - "11,23-Liter-Abfallbehälter"
+  - "Bristle Seal und Composite-Sealing-Ring laut Hersteller"
+  - "Überarbeiteter, 30 Prozent stärkerer Silikonliner laut Hersteller"
+weaknesses:
+  - "Unter 1 kg nur Kitten-Modus ohne Automatik"
+  - "35,2 cm Einstiegshöhe"
+  - "Keine Holzpellets oder nicht klumpende Streu"
+  - "Die offiziellen Neakasa-Seiten verwenden M1 Plus Lite und M1 Lite Plus; diese Route ist der gemeinsame Lifecycle-Owner"
+  - "Sensorzahl ist in offiziellen Darstellungen nicht vollständig konsistent"
+features:
+  - "Offene Bauform"
+  - "Selbstreinigung"
   - "Automatische Siebung"
-  - "Für etwa 1 bis 15 kg Katzengewicht laut Hersteller"
-  - "7,17 Liter Streukapazität"
-  - "11,23 Liter Abfallbehälter"
-  - "Bis zu 14 Tage ohne manuelles Schaufeln als Herstellerangabe"
-  - "App mit Fernsteuerung und Echtzeit-Monitoring"
-  - "Mehrkatzen-Erkennung laut Hersteller"
+  - "Neakasa App"
+  - "Fernsteuerung"
+  - "Echtzeit-Monitoring"
+  - "Mehrkatzen-Erkennung"
+  - "Streufüllstand-Monitoring"
   - "Kitten-Modus"
   - "Ein-Klick-Entleerung"
-  - "Keine proprietäre Spezial-Streukassette nötig"
-
-weaknesses:
-  - "Hoher Einstieg von etwa 35,2 cm"
-  - "Große Stellfläche"
-  - "Keine Streumatte im Lite-Lieferumfang"
-  - "Nur eine Rolle mit 15 Beuteln im Lieferumfang"
-  - "Nicht für Holzpellets oder nichtklumpende Streu geeignet"
-  - "Automatische Reinigung unter etwa 1 kg nicht empfohlen"
-  - "App und Cloud erhöhen die Systemabhängigkeit"
-  - "Herstellerangaben zur Zahl der Infrarot-Sensorpaare sind aktuell nicht konsistent"
-
-features: ["Offene Bauform", "Selbstreinigung", "Automatische Siebung", "Neakasa App", "Fernsteuerung", "Echtzeit-Monitoring", "Mehrkatzen-Erkennung", "Streufüllstand-Monitoring", "Kitten-Modus", "Ein-Klick-Entleerung", "OdorSeal-Geruchskontrolle"]
+  - "OdorSeal-Geruchskontrolle"
 useCase: "Offenes selbstreinigendes Katzenklo für große oder gegenüber geschlossenen Systemen skeptische Katzen"
-
 specs:
-  - { label: "Systemtyp", value: "Offene selbstreinigende Katzentoilette mit automatischer Siebung" }
-  - { label: "Bauform", value: "Open Top" }
-  - { label: "Abmessungen", value: "525 × 591 × 513 mm laut Neakasa" }
-  - { label: "Einstiegshöhe", value: "352 mm" }
-  - { label: "Eigengewicht", value: "10,35 kg" }
-  - { label: "Empfohlenes Katzengewicht", value: "1 bis 15 kg" }
-  - { label: "Streukapazität", value: "7,17 Liter" }
-  - { label: "Abfallbehälter", value: "11,23 Liter" }
-  - { label: "Geräusch", value: "Bis etwa 50 dB laut Hersteller" }
-  - { label: "Nennspannung", value: "12 V" }
-  - { label: "Material", value: "PP, ABS und POM" }
-  - { label: "App", value: "Neakasa App für Android und iOS" }
-  - { label: "Geruchskontrolle", value: "OdorSeal Technology laut Hersteller" }
-  - { label: "Streu", value: "Klumpende oder siebfähige Streu" }
-  - { label: "Nicht empfohlen", value: "Nichtklumpende Streu, Zeitungspapier und Holzpellets" }
-  - { label: "Siebgrenze", value: "Bis 3 mm Durchmesser und 10 mm Länge laut Hersteller" }
-  - { label: "Müllbeutel", value: "1 Rolle mit 15 Beuteln im Lite-Lieferumfang" }
-  - { label: "Streumatte", value: "Nicht im Lite-Lieferumfang enthalten" }
-  - { label: "Garantie", value: "2 Jahre im europäischen Neakasa-Shop" }
-
+  - label: "Aktuelle Modellbezeichnung"
+    value: "M1 Plus Lite; Neakasa verwendet zusätzlich M1 Lite Plus"
+  - label: "Katzengewicht"
+    value: "1 bis 15 kg; unter 1 kg Kitten-Modus ohne Automatik"
+  - label: "Einstieg"
+    value: "352 mm"
+  - label: "Abfallbehälter"
+    value: "11,23 Liter"
+  - label: "Streukapazität"
+    value: "7,17 Liter"
+  - label: "Eigengewicht"
+    value: "10,35 kg"
+  - label: "Sensorik"
+    value: "Aktuelle Lifecycle-Dokumentation nennt ein 6-Array-Infrarotsystem; eine offizielle Vergleichstabelle ist dazu nicht konsistent"
+  - label: "Abdichtung"
+    value: "Bristle Seal, Composite-Sealing-Ring und überarbeiteter Silikonliner laut Hersteller"
+  - label: "Streu"
+    value: "Schnell klumpende, siebfähige Bentonit-/Mineralstreu; keine Holzpellets, Zeitung oder nicht klumpende Streu"
+  - label: "Siebgrenze"
+    value: "Bis 3 mm Durchmesser und 10 mm Länge laut Hersteller"
+  - label: "Offline"
+    value: "Grundbetrieb mit gespeicherten Einstellungen; ohne Netz keine Aktualisierung der App-Daten"
 decisionFacts:
   - label: "Offener Einstieg"
     value: "Open Top"
@@ -191,32 +180,44 @@ decisionFacts:
   - label: "Lite-Lieferumfang"
     value: "15 Beutel, keine Streumatte"
     consequence: "Der Preisvorteil wird teilweise durch weniger Zubehör erkauft."
-
 comparisonData:
   version: 1
   custom:
-    system: "Offene automatische Siebung"
-    bauform: "Open Top"
-    katzengewicht: "ca. 1–15 kg"
-    einstieg: "ca. 35,2 cm"
-    streu: "Klumpend und siebfähig"
-    app: "Ja"
-    abfallbehaelter: "11,23 l"
-    streukapazitaet: "7,17 l"
-    geraeusch: "bis ca. 50 dB"
-    lieferumfang: "1 Rolle/15 Beutel, keine Streumatte"
-comparisonFilters: { animal: ["cat"], petSize: ["small", "medium", "large"], foodType: [] }
-alternatives: ["neakasa-m1-plus", "litter-robot-5-pro", "petkit-purobot-max-pro-2"]
-comparisons: ["beste-automatische-katzentoiletten"]
-
+    bauform: "Offenes Siebsystem"
+    einstieg: "35,2 cm"
+    katzenprofil: "1-15 kg; unter 1 kg manuell"
+    sicherheit: "IR-Array; Quellenabweichung transparent"
+    mechanische_sicherheit: "Keine separate mechanische Anti-Pinch-Struktur dokumentiert"
+    streu: "Klumpend/siebfähig; keine Holzpellets"
+    geruch: "Bristle Seal und Composite-Sealing-Ring; Herstellerangabe"
+    abfall: "11,23 l"
+    tracking: "Offene Bauform; Streumatte separat"
+    appdaten: "App; offline keine neuen Daten"
+    kamera: "Keine Kamera dokumentiert"
+    folgekosten: "Streu, Beutel, optional Matte/Stufe"
+comparisonFilters:
+  animal:
+    - "cat"
+  petSize:
+    - "small"
+    - "medium"
+    - "large"
+  foodType: []
+alternatives:
+  - "neakasa-m1-plus"
+  - "litter-robot-5-pro"
+  - "petkit-purobot-max-pro-2"
+comparisons:
+  - "beste-automatische-katzentoiletten"
 decisionJourney:
   cluster: "automatische-katzentoiletten"
   stage: "decision"
   intent: "neakasa-m1-lite-pruefen"
   primaryQuestion: "Passt die offene Bauform mit 35,2 cm Einstieg, App und klumpender Streu zu Katze und Haushalt?"
-  next: ["/vergleiche/beste-automatische-katzentoiletten/"]
-  fallback: ["/automatische-katzentoiletten/"]
-
+  next:
+    - "/vergleiche/beste-automatische-katzentoiletten/"
+  fallback:
+    - "/automatische-katzentoiletten/"
 faq:
   - question: "Was ist der Unterschied zwischen Neakasa M1 Lite und M1 Plus?"
     answer: "Die Grundtechnik ist sehr ähnlich. Beim Lite fehlen laut Hersteller die Streumatte und die zweite Beutelrolle. Das Lite wird mit einer Rolle mit 15 Beuteln angeboten."
@@ -250,35 +251,36 @@ faq:
     answer: "Die Grundfunktion läuft am Gerät. Für Monitoring und Fernsteuerung wird die App benötigt."
   - question: "Ist das offene Design hygienischer?"
     answer: "Nicht grundsätzlich. Es kann die Akzeptanz verbessern, während geschlossene Systeme Gerüche und Streu stärker abschirmen können."
-
 editorial:
   assessmentType: "data-review"
-  evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"]
+  evidence:
+    - "manufacturer-documentation"
+    - "technical-specifications"
+    - "comparative-analysis"
   testedHandsOn: false
   lastVerifiedAt: "2026-08-07"
   note: "Bewertung auf Basis aktueller Neakasa-Herstellerdaten. Keine eigene Praxiserfahrung oder Langzeitnutzung als Bewertungsgrundlage."
-
 evidenceSources:
-  - source: "Neakasa EU – M1 Plus Lite Open-Top Self-Cleaning Cat Litter Box"
+  - source: "Neakasa EU"
     url: "https://eu.neakasa.com/products/m1-lite-self-cleaning-cat-litter-box"
-    accessedAt: "2026-08-07"
-    assertion: "Preis, Open-Top-Design, Selbstreinigung, Kapazitäten, Gewichtsbereich, Einstieg, Geräusch, App und Lieferumfang."
-    fields: ["price", "availability", "specs", "decision", "review", "faq"]
-  - source: "Neakasa – M1 Plus Produktseite und Modellvergleich"
-    url: "https://neakasa.com/products/neakasa-m1-cat-litter-box"
-    accessedAt: "2026-08-07"
-    assertion: "Abmessungen, Gewichtsbereich, Streukompatibilität, Material, Kapazitäten und Unterschiede im Lieferumfang."
-    fields: ["specs", "decisionFacts", "comparisonData", "faq"]
-  - source: "Neakasa – M1 Lite Self-Cleaning Cat Litter Box"
-    url: "https://neakasa.com/products/m1-lite-self-cleaning-cat-litter-box"
-    accessedAt: "2026-08-07"
-    assertion: "Open-Top-Konzept, Selbstreinigung, App-Monitoring und Kitten-Modus."
-    fields: ["decision", "review", "faq", "editorial"]
-
+    accessedAt: "2026-08-15"
+    assertion: "Aktuelle EU-Modellidentität, Maße, Kapazitäten, Abdichtung und Streugrenzen sind Herstellerangaben."
+    fields:
+      - "title"
+      - "specs"
+      - "decision"
+  - source: "Neakasa Lifecycle-Vergleich"
+    url: "https://neakasa.com/blogs/all/neakasa-m1-vs-m1-lite"
+    accessedAt: "2026-08-15"
+    assertion: "Plus-Generation, Sensorik und Dichtungsänderungen sind Herstellerangaben; Abweichungen werden nicht aufgelöst durch Schätzung."
+    fields:
+      - "specs"
+      - "weaknesses"
 metadata:
   version: "1.0.0"
   normalizedAt: "2026-08-07"
   policy: "Herstellerdaten und vergleichende Einordnung; keine eigene Praxistest- oder Langzeitbehauptung"
+priceAutomation: "editorial"
 ---
 
 ## Kurz eingeordnet
@@ -463,3 +465,13 @@ Die technischen Angaben basieren auf aktuellen Herstellerinformationen von Neaka
 Besonders beim Sensorumfang sind die aktuellen Herstellerseiten nicht vollständig konsistent. Deshalb übernehmen wir dort bewusst keine feste Sensoranzahl als gesicherte Produkteigenschaft.
 
 Preis und Verfügbarkeit können sich kurzfristig ändern.
+
+<!-- pt:neakasa-plus-lifecycle:start -->
+## Aktuelle Plus-Generation statt neuer Route
+
+Diese Seite bleibt unter der bestehenden URL der Intent-Owner. Neakasa verwendet aktuell sowohl **M1 Plus Lite** als auch **M1 Lite Plus**. Die Bezeichnungen werden deshalb nicht in zwei vermeintlich getrennte Produkte aufgespalten.
+
+Die Plus-Generation ergänzt laut Hersteller Bristle Seal, Composite-Sealing-Ring und einen stärkeren Silikonliner. Prozentuale Leckschutz-Aussagen sind Marketingclaims, kein eigener Dichtigkeitstest. Bei der Infrarotsensorik widersprechen sich offizielle Darstellungen; dokumentiert wird daher der Quellenkonflikt statt einer erfundenen Eindeutigkeit.
+
+Für die Auswahl sind der hohe Einstieg, das Mindestgewicht und die Streufreigabe wichtiger als die App. Der [Kaufcheck](/automatische-katzentoiletten/) erklärt die Systemgrenzen, der [Vergleich](/vergleiche/beste-automatische-katzentoiletten/) ordnet offene und geschlossene Alternativen ein.
+<!-- pt:neakasa-plus-lifecycle:end -->

@@ -22,7 +22,7 @@ category:
   path: "/katzenklappen/"
 productUrl: /produkt/zeromouse-2-0/
 publishedAt: "2026-07-26"
-updatedAt: "2026-07-26"
+updatedAt: "2026-08-16"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -66,7 +66,7 @@ price:
   current: 199
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-07T10:05:16.537Z"
+  checkedAt: "2026-08-15T17:11:09.297Z"
   source:
     id: "zeromouse.com"
     label: "zeromouse.com"
@@ -84,12 +84,12 @@ conversion:
   showSecondaryCta: true
 
 priceState: "available"
-priceUpdated: "2026-08-07T10:05:16.537Z"
+priceUpdated: "2026-08-15T17:11:09.297Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-07T10:05:16.537Z"
+availabilityUpdated: "2026-08-15T17:11:09.297Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
@@ -105,36 +105,43 @@ editorial:
   note: >-
     Redaktionelle Datenprüfung anhand Produktseite, Support-FAQ und Installationsanleitung. Die beworbene Erkennungsrate
     ist eine Herstellerangabe und wurde nicht unabhängig verifiziert.
-rating: 4.15
+rating: 3.8
 score: 83
 ratings:
-  innovation: 4.7
-  installation: 4.1
-  kompatibilitaet: 3.8
-  alltag: 4.2
-  zuverlaessigkeit: 3.9
-  preisleistung: 3.7
+  beuteerkennung: 4.4
+  kompatibilitaet: 4.0
+  einrichtung: 3.7
+  zuverlaessigkeit: 3.7
+  systemabhaengigkeit: 3.2
 externalEvidence:
-  status: constrained
-  constrained: true
   professionalReviews: []
   userReviews:
-    - platform: "Trustpilot / ZeroMOUSE"
-      url: "https://de.trustpilot.com/review/zeromouse.com"
-      checkedAt: "2026-08-11"
-      rating: 4.2
-      scale: 5
-      reviewCount: 1583
-      recurringPositives:
-        - "Viele aktuelle, ausdrücklich auf ZeroMOUSE 2.0 bezogene Berichte beschreiben erfolgreich blockierte Beuteversuche."
-        - "Installation und Alltagsnutzen werden häufig positiv bewertet, wenn WLAN, Stromversorgung und Positionierung passen."
-      recurringCriticism:
-        - "Mehrere aktuelle Berichte nennen Fehl- oder Unklar-Erkennungen, Verzögerungen und App-/Verbindungsprobleme."
-        - "Einzelne Nutzer berichten von Kompatibilitätsproblemen mit bestimmten Katzenklappen oder Installationssituationen."
-  note: >-
-    Der Trustpilot-Gesamtscore umfasst das Unternehmensprofil und ist nicht ausschließlich ein ZeroMOUSE-2.0-Produktmittel.
-    Für die Muster wurden aktuelle, ausdrücklich auf ZeroMOUSE 2.0 beziehungsweise dessen Beuteerkennung bezogene Berichte betrachtet.
-    Eine belastbare unabhängige professionelle Review wurde nicht gefunden; deshalb kein Consensus.
+  - platform: Trustpilot · ZeroMOUSE gesamt
+    url: https://de.trustpilot.com/review/zeromouse.com
+    checkedAt: '2026-08-16'
+    rating: 4.2
+    scale: 5
+    reviewCount: 1583
+    recurringPositives:
+    - Viele aktuelle und teils verifizierte Bewertungen berichten von erfolgreich blockierten Mäusen/Vögeln und einfacher
+      Installation.
+    recurringCriticism:
+    - Es gibt zugleich Berichte über Fehlalarme, zu langes Blockieren, App/WLAN, Defekte und Support.
+  consensus:
+    strengths:
+    - finding: Das breite aktuelle Nutzersignal stützt die Kernfunktion Beuteerkennung grundsätzlich.
+      sourceCount: 1
+      confidence: medium
+    weaknesses:
+    - finding: Für ZeroMOUSE 2.0 wurde in der Recherche kein belastbarer unabhängiger Fachtest gefunden.
+      sourceCount: 1
+      confidence: high
+    - finding: Zuverlässigkeit hängt sichtbar von Tier, Montage, WLAN und Klappe ab.
+      sourceCount: 1
+      confidence: medium
+    editorialAssessment: Mangels unabhängigem Fachtest bleibt die PfotenTechnik-Wertung bewusst konservativ und stützt sich
+      auf technische Dokumentation plus breites Nutzersignal.
+  note: 'Research-constrained: kein unabhängiger Fachtest gefunden. Kein eigener PfotenTechnik-Praxistest.'
 decision:
   bestFor:
     - Freigängerkatzen, die wiederholt Mäuse, Vögel oder andere Beute ins Haus bringen
@@ -320,6 +327,21 @@ decisionFacts:
   - label: "Stromversorgung"
     value: "USB-C-Netzteil mit mindestens 2 A und geeignetes USB-C-Kabel erforderlich"
     consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+evidenceSources:
+  - source: "Trustpilot · ZeroMOUSE"
+    url: "https://de.trustpilot.com/review/zeromouse.com"
+    accessedAt: "2026-08-16"
+    assertion: "Aktuelles breites Nutzersignal, darunter explizite ZeroMOUSE-2.0-Erfahrungen."
+    fields:
+      - "ratings"
+      - "externalEvidence"
+  - source: "ZeroMOUSE Support"
+    url: "https://zeromouse.com/de/pages/support"
+    accessedAt: "2026-08-16"
+    assertion: "Herstellerdokumentation zu Funktionsweise und Support."
+    fields:
+      - "ratings"
+      - "externalEvidence"
 ---
 
 Der **ZeroMOUSE 2.0** konkurriert nicht direkt mit einer normalen Katzenklappe. Eine Mikrochip-Klappe beantwortet: „Darf diese Katze hinein?“ ZeroMOUSE ergänzt die zweite Frage: **„Trägt sie Beute im Maul?“**

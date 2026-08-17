@@ -2,6 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { PRODUCT_COVERAGE } from "../../src/lib/seo/topical-authority/product-coverage.data.mjs";
 
 const APP_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const ROOT = path.resolve(APP_ROOT, "../..");
@@ -50,27 +51,27 @@ for (const [name, hub, comparison, hubPath, comparisonPath] of clusters) {
 requireText(recommendations, '| "katzentoiletten"', "Empfehlungslogik kennt Katzentoiletten nicht als Familie.");
 requireText(recommendations, '["katzentoiletten",', "Empfehlungslogik besitzt kein Katzentoiletten-Muster.");
 
-const litterProducts = [
-  "litter-robot-5-pro",
-  "petkit-purobot-max-pro-2",
-  "neakasa-m1-plus",
-  "neakasa-m1-lite",
-  "devoko-90l-automatisches-katzenklo"
+const decisionCoverage = [
+  ["Katzentoiletten", "katzentoiletten", litterHub, litterComparison, "beste-automatische-katzentoiletten"],
+  ["Haustierkameras", "haustierkameras", cameraHub, cameraComparison, "beste-haustierkameras"],
+  ["Katzenklappen", "katzenklappen", catFlapHub, catFlapComparison, "beste-mikrochip-katzenklappen"],
 ];
 
-for (const slug of litterProducts) {
-  const product = read(`apps/pfotentechnik/src/content/products/${slug}.md`);
-  requireText(litterHub, `"${slug}"`, `Katzentoiletten-Hub führt ${slug} nicht.`);
-  requireText(litterComparison, `slug: "${slug}"`, `Katzentoiletten-Vergleich enthält ${slug} nicht.`);
-  requireText(product, "automatische-katzentoiletten", `${slug}: Cluster fehlt.`);
-  requireText(product, "beste-automatische-katzentoiletten", `${slug}: Rückverweis auf Vergleich fehlt.`);
-}
-
-for (const slug of ["petlibro-scout-smart-camera", "furbo-360-hundekamera", "enabot-ebo-air-2"]) {
-  const product = read(`apps/pfotentechnik/src/content/products/${slug}.md`);
-  requireText(cameraHub, `"${slug}"`, `Haustierkamera-Hub führt ${slug} nicht.`);
-  requireText(cameraComparison, `slug: "${slug}"`, `Haustierkamera-Vergleich enthält ${slug} nicht.`);
-  requireText(product, "beste-haustierkameras", `${slug}: Rückverweis auf Vergleich fehlt.`);
+for (const [label, clusterId, hub, comparison, comparisonSlug] of decisionCoverage) {
+  const coverage = PRODUCT_COVERAGE[clusterId];
+  if (!coverage) {
+    errors.push(`${label}: redaktionelle Product Coverage fehlt.`);
+    continue;
+  }
+  if (coverage.confirmedAGaps.length) {
+    errors.push(`${label}: bestätigte A-Gaps offen: ${coverage.confirmedAGaps.join(", ")}.`);
+  }
+  for (const slug of coverage.decisionProductSlugs) {
+    const product = read(`apps/pfotentechnik/src/content/products/${slug}.md`);
+    requireText(hub, `"${slug}"`, `${label}-Hub führt Decision-Produkt ${slug} nicht.`);
+    requireText(comparison, `slug: "${slug}"`, `${label}-Vergleich enthält Decision-Produkt ${slug} nicht.`);
+    requireText(product, comparisonSlug, `${slug}: Rückverweis auf Vergleich fehlt.`);
+  }
 }
 
 for (const marker of ["seo:", "premiumBlocks:", "evidenceSources:", "faq:"]) {

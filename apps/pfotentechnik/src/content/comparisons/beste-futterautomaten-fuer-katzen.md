@@ -241,7 +241,7 @@ recommendation:
     Xiaomi bei Napfübersicht und oneisall bei einer einfachen Doppelschalen-Lösung.
   winnerSlug: petlibro-granary-wifi-feeder
   alternativeSlug: surefeed-microchip-pet-feeder-connect
-tableTitle: Sechs Katzen-Futterautomaten nach Aufgabe verglichen
+tableTitle: Acht Katzen-Futterautomaten nach Aufgabe verglichen
 cardsTitle: Die besten Modelle für unterschiedliche Haushalte
 faq:
   - question: Welcher Futterautomat ist für Katzen insgesamt am ausgewogensten?

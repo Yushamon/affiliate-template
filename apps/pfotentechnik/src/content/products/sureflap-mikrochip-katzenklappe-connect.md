@@ -3,10 +3,8 @@ title: "SureFlap Mikrochip Katzenklappe Connect"
 slug: "sureflap-mikrochip-katzenklappe-connect"
 type: "product"
 layout: "product"
-
 description: "App-fähige Mikrochip-Katzenklappe mit individuellen Ein- und Ausgangsrechten, Aktivitätsprotokollen und Fernfunktionen über den Sure Petcare Hub."
 recommendation: "Geeignet für Mehrkatzenhaushalte, die individuelle Ein- und Ausgangsrechte sowie App-Funktionen benötigen. Für rein lokalen Betrieb ohne Hub sind Standard oder DualScan einfacher."
-
 manufacturer:
   key: "surefeed"
   name: "Sure Petcare"
@@ -17,19 +15,16 @@ category:
   path: "/katzenklappen/"
 productUrl: "/produkt/sureflap-mikrochip-katzenklappe-connect/"
 publishedAt: "2026-08-04"
-updatedAt: "2026-08-05"
-
+updatedAt: "2026-08-15"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
-
 tags:
   - "Katzenklappe"
   - "Mikrochip"
   - "App"
   - "Hub"
   - "individuelle Ausgangsrechte"
-
 seo:
   title: "SureFlap Connect Katzenklappe: Hub, App & Grenzen"
   description: "SureFlap Connect im Datencheck: Mikrochipzugang, individuelle Rechte, App, Hub-Abhängigkeit, Maße, Batteriebetrieb und Einbau."
@@ -38,7 +33,6 @@ seo:
   noindex: false
   priority: 0.8
   changefreq: "monthly"
-
 images:
   hero:
     src: "../../assets/images/products/sureflap-mikrochip-katzenklappe-connect/hero.webp"
@@ -56,12 +50,11 @@ images:
       alt: "SureFlap Mikrochip Katzenklappe Connect eingebaut in einer Terrassentür"
     - src: "../../assets/images/products/sureflap-mikrochip-katzenklappe-connect/gallery-3.webp"
       alt: "Frontansicht der SureFlap Mikrochip Katzenklappe Connect"
-
 price:
   current: 259.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-07T10:05:02.051Z"
+  checkedAt: "2026-08-15T17:08:20.161Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -73,21 +66,18 @@ affiliate:
   rel: "sponsored nofollow noopener"
   target: "_blank"
 productStatus: "active"
-
 testStatus: "manufacturer-data"
 rating: 3.9
-
 priceState: "available"
-priceUpdated: "2026-08-07T10:05:02.051Z"
+priceUpdated: "2026-08-15T17:08:20.161Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-07T10:05:02.051Z"
+availabilityUpdated: "2026-08-15T17:08:20.161Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
-
 editorial:
   assessmentType: "data-review"
   evidence:
@@ -129,9 +119,7 @@ externalEvidence:
       - finding: "Preis, Hub-Abhängigkeit und lückenhafte Aktivitätsdaten bei alternativen Wegen begrenzen den Mehrwert."
         sourceCount: 2
         confidence: "high"
-    editorialAssessment: >-
-      Professioneller Test und Nutzerberichte stützen den Smart-Mehrwert, zeigen aber klar, dass die Daten nur den
-      tatsächlichen Durchgang durch diese eine Klappe abbilden und die Installation energetisch relevant sein kann.
+    editorialAssessment: "Professioneller Test und Nutzerberichte stützen den Smart-Mehrwert, zeigen aber klar, dass die Daten nur den tatsächlichen Durchgang durch diese eine Klappe abbilden und die Installation energetisch relevant sein kann."
 decision:
   bestFor:
     - "Mehrkatzenhaushalte mit individuellen Ein- und Ausgangsrechten"
@@ -144,35 +132,33 @@ decision:
     - "Durchgang von 142 × 120 mm vor dem Kauf prüfen"
     - "Vier AA-Batterien sind erforderlich"
     - "Cloud- und Netzwerkfunktionen ergänzen, ersetzen aber nicht die lokale Klappenfunktion"
-
+    - "Sure Petcare dokumentiert Sicherheitsupdates fuer den benoetigten Hub fuer zwei Jahre ab Kaufdatum des Hubs; daraus folgt keine Aussage zur Produktlebensdauer oder spaeteren Dienstverfuegbarkeit"
+    - "Sure Petcare dokumentiert Sicherheitsupdates für den benötigten Hub für zwei Jahre ab Kaufdatum des Hubs; daraus folgt keine Aussage zur Produktlebensdauer oder späteren Dienstverfügbarkeit"
 review:
   summary: "Die Connect-Version verbindet die lokale Mikrochip-Erkennung mit individuellen Richtungsrechten und App-Funktionen. Der zentrale Unterschied zu DualScan ist die Hub- und App-Anbindung."
   verdict: "Sinnvoll, wenn Fernfunktionen und Aktivitätsdaten tatsächlich genutzt werden. Für rein lokale Zutrittsregeln ist DualScan meist einfacher und weniger systemabhängig."
-
 strengths:
   - "Individuelle Ein- und Ausgangsrechte je Tier"
   - "App-Benachrichtigungen und Aktivitätsprotokolle"
   - "Fernverriegelung und zeitgesteuerte Sperren"
   - "Lokale Mikrochip-Erkennung bleibt an der Klappe"
   - "Für Mehrkatzenhaushalte geeignet"
-
 weaknesses:
   - "App-Funktionen benötigen einen Sure Petcare Hub"
   - "Höhere System- und Gesamtkosten als bei lokalen Modellen"
   - "Vier AA-Batterien erforderlich"
   - "Netzwerk- und Cloudfunktionen schaffen zusätzliche Abhängigkeiten"
   - "Durchgang kann für große Katzen zu knapp sein"
-
+  - "Der dokumentierte Security-Support-Horizont des Hubs ist auf zwei Jahre ab dessen Kaufdatum begrenzt; der Betrieb danach ist damit weder bestaetigt noch ausgeschlossen"
+  - "Der dokumentierte Security-Support-Horizont des Hubs ist auf zwei Jahre ab dessen Kaufdatum begrenzt; der Betrieb danach ist damit weder bestätigt noch ausgeschlossen"
 experience:
   summary: "Datenreview der lokalen Mikrochip-Funktion, Hub-Abhängigkeit, App-Funktionen, Maße und Einbaugrenzen."
   methodology: "Offizielle Herstellerangaben und Vergleichsdaten, geprüft am 05.08.2026."
   maintenance: "Sensorbereich und Klappe sauber halten, Batteriestand prüfen und Hub-Verbindung nach Router- oder Netzwerkänderungen kontrollieren."
-
 alternatives:
   - "sureflap-mikrochip-katzenklappe"
   - "sureflap-dualscan-mikrochip-katzenklappe"
   - "petsafe-petporte-smart-flap"
-
 comparisons:
   - "beste-mikrochip-katzenklappen"
   - "katzenklappen-mit-app-und-beuteerkennung"
@@ -185,7 +171,6 @@ comparisonFilters:
   app: true
   access: "microchip"
   priceTier: "premium"
-
 features:
   - "Mikrochip-Zugang"
   - "Individuelle Ein- und Ausgangsrechte"
@@ -195,9 +180,7 @@ features:
   - "Zeitgesteuerte Sperren"
   - "Hub-Anbindung"
   - "Batteriebetrieb"
-
 useCase: "Vernetzte Zutrittssteuerung mit App"
-
 specs:
   - label: "Klappenöffnung"
     value: "142 × 120 mm"
@@ -217,7 +200,8 @@ specs:
     value: "Für App-Funktionen erforderlich"
   - label: "Einbau"
     value: "Tür, Glas und Wand mit passendem Zubehör"
-
+  - label: "Hub-Sicherheitsupdates"
+    value: "Vom Hersteller für zwei Jahre ab Kaufdatum des Hubs dokumentiert"
 decisionFacts:
   - label: "Lokale Funktion"
     value: "Mikrochip-Erkennung an der Klappe"
@@ -237,7 +221,9 @@ decisionFacts:
   - label: "Bewertungsstatus"
     value: "Herstellerdaten"
     consequence: "Es liegt kein eigener Praxistest vor; Langzeitzuverlässigkeit wird nicht als eigene Erfahrung bewertet."
-
+  - label: "Security-Support des Hubs"
+    value: "Zwei Jahre ab Kaufdatum des Hubs dokumentiert"
+    consequence: "Der Zeitraum beschreibt Sicherheitsupdates für den Hub, nicht die Lebensdauer der Klappe, ein Funktionsende oder eine garantierte Cloud-Laufzeit."
 comparisonData:
   version: 1
   custom:
@@ -248,10 +234,9 @@ comparisonData:
     einbau: "Tür, Glas und Wand mit passendem Zubehör"
     durchgang: "142 × 120 mm"
     rolle: "Vernetzte Mikrochip-Katzenklappe"
-
+    hub_erforderlich: "Ja, für die Verbindung mit der Sure Petcare App"
+    security_support: "Hub: zwei Jahre ab Kaufdatum des Hubs dokumentiert"
 faq:
-  - question: "Braucht die SureFlap Connect Katzenklappe einen Hub?"
-    answer: "Ja, für App-Funktionen, Benachrichtigungen, Aktivitätsdaten und Fernsteuerung wird der Sure Petcare Hub benötigt."
   - question: "Funktioniert die Mikrochip-Erkennung ohne Internet?"
     answer: "Die grundlegende Mikrochip-Erkennung arbeitet lokal an der Klappe. Vernetzte Funktionen benötigen Hub und Internet."
   - question: "Was unterscheidet Connect von DualScan?"
@@ -262,7 +247,14 @@ faq:
     answer: "Nein. Gerät, Hub und Bundle müssen beim konkreten Angebot geprüft werden."
   - question: "Wurde die Klappe selbst getestet?"
     answer: "Nein. Die Einordnung basiert auf Herstellerunterlagen und technischen Vergleichsdaten."
-
+  - question: "Braucht die SureFlap Connect den Hub?"
+    answer: "Für die Verbindung zur Sure Petcare App und damit für Benachrichtigungen, Aktivitätsdaten und Fernfunktionen wird der Sure Petcare Hub benötigt. Die grundlegende Mikrochip-Zutrittsprüfung an der Klappe ist davon zu trennen; der Hersteller belegt nicht, dass die gesamte Klappe ohne Internet unbrauchbar wäre."
+  - question: "Wie lange liefert Sure Petcare Sicherheitsupdates fuer den Hub?"
+    answer: "Sure Petcare dokumentiert Sicherheitsupdates fuer den Hub fuer einen Zeitraum von zwei Jahren ab Kaufdatum des Hubs."
+  - question: "Was passiert nach Ablauf des dokumentierten Security-Zeitraums?"
+    answer: "Dazu erlaubt die Herstellerangabe keine belastbare Prognose. Sie sagt weder, ob danach weitere Updates erscheinen, noch ob Hub, Klappe, App- oder Cloud-Funktionen weiterlaufen oder eingestellt werden. Der Zeitraum ist keine Angabe zur Produktlebensdauer."
+  - question: "Wie lange liefert Sure Petcare Sicherheitsupdates für den Hub?"
+    answer: "Sure Petcare dokumentiert Sicherheitsupdates für den Hub für einen Zeitraum von zwei Jahren ab Kaufdatum des Hubs."
 evidenceSources:
   - source: "Sure Petcare Deutschland – Mikrochip Katzenklappe Connect"
     url: "https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe-connect"
@@ -273,6 +265,17 @@ evidenceSources:
       - "review"
       - "specs"
       - "decisionFacts"
+      - "faq"
+  - source: "Sure Petcare UK – Microchip Cat Flap Connect"
+    url: "https://www.surepetcare.com/en-gb/pet-doors/microchip-cat-flap-connect"
+    accessedAt: "2026-08-15"
+    assertion: "Der Hub ist für die App-Verbindung erforderlich. Sicherheitsupdates für den Hub werden für zwei Jahre ab Kaufdatum des Hubs dokumentiert; die Aussage beschreibt weder Produktlebensdauer noch Cloud-Laufzeit."
+    fields:
+      - "decision"
+      - "weaknesses"
+      - "specs"
+      - "decisionFacts"
+      - "comparisonData"
       - "faq"
 score: 79
 ratings:
@@ -297,3 +300,13 @@ Die Standardversion steuert vor allem den Eintritt und hält fremde Tiere drauß
 Entscheidend ist, ob das konkrete Angebot nur die Klappe, nur den Hub oder ein Bundle enthält. Außerdem sollte der Durchgang von 142 × 120 mm mit dem Körperbau der Katze abgeglichen werden.
 
 Die drei Produktklassen ordnet der [Vergleich der Mikrochip-Katzenklappen](/vergleiche/beste-mikrochip-katzenklappen/) ein.
+
+<!-- pt:sureflap-support-33.2.0:start -->
+## Hub, App und dokumentierter Security-Support
+
+Die grundlegende Mikrochip-Zutrittsprüfung findet an der Katzenklappe statt. Für die Verbindung zur Sure Petcare App – darunter Benachrichtigungen, Aktivitätsdaten und Fernfunktionen – ist zusätzlich der Sure Petcare Hub erforderlich. Damit hängen die Connect-Funktionen je nach Aufgabe von Hub, Netzwerk, Internet, App und Herstellerdiensten ab.
+
+Sure Petcare dokumentiert **Sicherheitsupdates für den Hub für zwei Jahre ab Kaufdatum des Hubs**. Das ist ein Support-Horizont für den Hub, keine Angabe zur Lebensdauer der Katzenklappe. Daraus folgt weder ein Funktionsende nach zwei Jahren noch eine garantierte Abschaltung oder Fortführung von App- und Cloud-Diensten. Ob später weitere Updates erscheinen, lässt die Quelle offen.
+
+Wer diese zusätzliche Systemabhängigkeit bewusst akzeptiert, erhält die Connect-Funktionen. Wer nur lokalen Mikrochip-Zugang benötigt, kann ein nicht vernetztes Modell einfacher betreiben. Der [Vergleich von App-Katzenklappen und Beuteerkennung](/vergleiche/katzenklappen-mit-app-und-beuteerkennung/) stellt Hub- und Supportangaben getrennt dar; der [Katzenklappen-Hub](/katzenklappen/) beginnt bei Zugang, Passform und Einbau.
+<!-- pt:sureflap-support-33.2.0:end -->

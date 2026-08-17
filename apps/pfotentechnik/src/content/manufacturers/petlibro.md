@@ -122,7 +122,9 @@ productSlugs:
   - "petlibro-capsule-dog-fountain"
   - "petlibro-stainless-steel-fountain"
   - "petlibro-glacier-ultrafiltration"
+  - "petlibro-scout-smart-camera"
 
+  - "petlibro-luma-smart-litter-box"
 profile:
   company: "PETLIBRO entwickelt laut eigener Unternehmensdarstellung seit 2019 Haustiertechnik. Das aktuelle Sortiment umfasst vor allem Futterautomaten und Trinkbrunnen; der offizielle Hilfebereich führt außerdem Kameras, eine smarte Katzentoilette und weiteres Zubehör."
   appEcosystem: "Die PETLIBRO-App verwaltet kompatible Feeder, Brunnen und Kamerafunktionen. Zeitpläne, Gerätestatus und Live-Funktionen hängen vom Modell ab. Kostenpflichtige Dienste wie Video Cloud oder Video Cloud AI ergänzen bei kompatiblen Geräten Cloud-Aufzeichnung und Analyse; sie sind nicht pauschal für den Grundbetrieb jedes Feeders erforderlich."
@@ -354,5 +356,6 @@ Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen
 - [PETLIBRO Dockstream 2 Smart Cordless](/produkt/petlibro-dockstream-2-smart-cordless/)
 - [PETLIBRO Dockstream Cordless](/produkt/petlibro-dockstream-cordless/)
 - [PETLIBRO Dockstream RFID Smart](/produkt/petlibro-dockstream-rfid-smart/)
+- [PETLIBRO Luma Smart Self-Cleaning Litter Box](/produkt/petlibro-luma-smart-litter-box/)
 - [PETLIBRO Scout Smart Camera](/produkt/petlibro-scout-smart-camera/)
 <!-- pt:content-discovery:manufacturer-products:end -->

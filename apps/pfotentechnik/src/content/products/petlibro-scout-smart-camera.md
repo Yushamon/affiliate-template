@@ -11,27 +11,52 @@ manufacturer:
   key: "petlibro"
   name: "PETLIBRO"
   slug: "petlibro"
-category: { key: "haustierkameras", label: "Haustierkameras", path: "/haustierkameras/" }
+category:
+  key: "haustierkameras"
+  label: "Haustierkameras"
+  path: "/haustierkameras/"
 productUrl: "/produkt/petlibro-scout-smart-camera/"
 publishedAt: "2026-08-06"
-updatedAt: "2026-08-06"
-author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
-seo: { title: "PETLIBRO Scout Smart Camera im Check", description: "PETLIBRO Scout: 1080p, Schwenken und Neigen, Mehrtiererkennung, Cloud-Abo und fehlende SD-Karte eingeordnet.", canonical: "/produkt/petlibro-scout-smart-camera/", sitemap: true, priority: 0.75 }
-hub: { sections: ["produkte", "haustierkameras"] }
-tags: ["haustierkamera", "katze", "hund", "cloud", "app", "innenkamera"]
+updatedAt: "2026-08-15"
+author:
+  name: "PfotenTechnik Redaktion"
+  role: "Redaktion"
+seo:
+  title: "PETLIBRO Scout Smart Camera im Check"
+  description: "PETLIBRO Scout: 1080p, Schwenken und Neigen, Mehrtiererkennung, Cloud-Abo und fehlende SD-Karte eingeordnet."
+  canonical: "/produkt/petlibro-scout-smart-camera/"
+  sitemap: true
+  priority: 0.75
+hub:
+  sections:
+    - "produkte"
+    - "haustierkameras"
+tags:
+  - "haustierkamera"
+  - "katze"
+  - "hund"
+  - "cloud"
+  - "app"
+  - "innenkamera"
 images:
-  hero: { src: "../../assets/images/products/petlibro-scout-smart-camera/hero.webp", alt: "Neutrale redaktionelle Darstellung einer festen schwenkbaren Haustierkamera" }
+  hero:
+    src: "../../assets/images/products/petlibro-scout-smart-camera/hero.webp"
+    alt: "Neutrale redaktionelle Darstellung einer festen schwenkbaren Haustierkamera"
 price:
   current: 89.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-07T10:04:46.070Z"
+  checkedAt: "2026-08-15T17:07:42.105Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
 rating: 3.7
-ratings: { bild: 4.0, datenschutz: 2.7, folgekosten: 2.5, alltag: 3.8 }
+ratings:
+  bild: 4
+  datenschutz: 2.7
+  folgekosten: 2.5
+  alltag: 3.8
 externalEvidence:
   professionalReviews:
     - publisher: "WIRED"
@@ -68,36 +93,91 @@ externalEvidence:
       - finding: "AI-Mehrwert und Ereigniserkennung sind weniger zuverlässig als die Basiskamera; der volle Funktionsumfang ist zudem abonnementabhängig."
         sourceCount: 2
         confidence: "high"
-    editorialAssessment: >-
-      Professioneller Hands-on-Test und produktspezifische Nutzerberichte stimmen beim guten Kamerabild überein,
-      zeigen aber zugleich Schwächen bei Tracking, Historie und AI-Zuverlässigkeit. Langzeitzuverlässigkeit bleibt offen.
-  note: >-
-    Die externe Evidenz bezieht sich auf die PETLIBRO Scout Smart Camera; Aussagen zu anderen PETLIBRO-Kameras
-    wurden nicht übertragen.
+    editorialAssessment: "Professioneller Hands-on-Test und produktspezifische Nutzerberichte stimmen beim guten Kamerabild überein, zeigen aber zugleich Schwächen bei Tracking, Historie und AI-Zuverlässigkeit. Langzeitzuverlässigkeit bleibt offen."
+  note: "Die externe Evidenz bezieht sich auf die PETLIBRO Scout Smart Camera; Aussagen zu anderen PETLIBRO-Kameras wurden nicht übertragen."
 decision:
-  bestFor: ["fester Innenbereich", "bis zu fünf unterscheidbare Hunde oder Katzen", "Nutzer mit bewusst gewähltem Cloud-Abo"]
-  attention: ["keine SD-Karte", "KI- und Cloudfunktionen benötigen laut Hersteller ein Abo", "ähnlich aussehende Tiere können verwechselt werden"]
+  bestFor:
+    - "fester Innenbereich"
+    - "bis zu fünf unterscheidbare Hunde oder Katzen"
+    - "Nutzer mit bewusst gewähltem Cloud-Abo"
+  attention:
+    - "keine SD-Karte; Videoaufzeichnung nur ueber den Cloud-Dienst"
+    - "KI- und Cloudfunktionen benoetigen laut Hersteller einen passenden Tarif"
+    - "nur fuer Innenraeume; Alexa und Google Home werden derzeit nicht unterstuetzt"
 review:
   summary: "Scout bietet laut PETLIBRO 1080p, Farb-Nachtsicht, Zwei-Wege-Audio sowie Schwenk-, Neige- und Trackingfunktionen."
   verdict: "Eine spezialisierte feste Haustierkamera; lokale Speicherung und ein abofreier Vollbetrieb gehören nicht zu ihren Stärken."
-strengths: ["Mehrtiere-Erkennung bis fünf Tiere laut Hersteller", "manuelle Datenschutzabdeckung", "Zwei-Wege-Audio und Farb-Nachtsicht"]
-weaknesses: ["keine SD-Kartenunterstützung", "Cloud- und KI-Folgekosten", "nur kabelgebundener Innenbetrieb"]
-alternatives: ["furbo-360-hundekamera", "enabot-ebo-air-2"]
-comparisons: ["beste-haustierkameras"]
-comparisonFilters: { animal: ["dog", "cat"], petSize: ["small", "medium", "large"], foodType: [] }
+strengths:
+  - "Mehrtiere-Erkennung bis fünf Tiere laut Hersteller"
+  - "manuelle Datenschutzabdeckung"
+  - "Zwei-Wege-Audio und Farb-Nachtsicht"
+weaknesses:
+  - "keine SD-Kartenunterstützung"
+  - "Cloud- und KI-Folgekosten"
+  - "nur kabelgebundener Innenbetrieb"
+alternatives:
+  - "furbo-360-hundekamera"
+  - "enabot-ebo-air-2"
+comparisons:
+  - "beste-haustierkameras"
+comparisonFilters:
+  animal:
+    - "dog"
+    - "cat"
+  petSize:
+    - "small"
+    - "medium"
+    - "large"
+  foodType: []
 specs:
-  - { label: "Produktklasse", value: "Feste Schwenk-/Neigekamera für innen" }
-  - { label: "Video", value: "1080p HD; Farb- und Schwarz-Weiß-Nachtsicht" }
-  - { label: "Interaktion", value: "Zwei-Wege-Audio" }
-  - { label: "Speicherung", value: "Cloud; keine SD-Karte" }
-  - { label: "Mehrtiererkennung", value: "Bis zu fünf Tiere laut Hersteller" }
-  - { label: "Abo", value: "KI- und Cloudfunktionen abhängig vom Video Cloud AI-Tarif" }
-features: ["1080p", "Schwenken und Neigen", "Zwei-Wege-Audio", "Mehrtiererkennung", "Cloudspeicher"]
+  - label: "Produktklasse"
+    value: "Feste Schwenk-/Neigekamera für innen"
+  - label: "Video"
+    value: "1080p HD; Farb- und Schwarz-Weiß-Nachtsicht"
+  - label: "Interaktion"
+    value: "Zwei-Wege-Audio"
+  - label: "Speicherung"
+    value: "Cloud; keine SD-Karte"
+  - label: "Mehrtiererkennung"
+    value: "Bis zu fünf Tiere laut Hersteller"
+  - label: "Abo"
+    value: "KI- und Cloudfunktionen abhängig vom Video Cloud AI-Tarif"
+  - label: "Einsatz"
+    value: "Kabelgebundener Innenbetrieb; nicht fuer draussen belegt"
+  - label: "Smart Home"
+    value: "Alexa und Google Home laut Hersteller derzeit nicht unterstuetzt"
+features:
+  - "1080p"
+  - "Schwenken und Neigen"
+  - "Zwei-Wege-Audio"
+  - "Mehrtiererkennung"
+  - "Cloudspeicher"
 comparisonData:
-  custom: { klasse: "Feste Kamera", video: "1080p", interaktion: "Zwei-Wege-Audio", speicher: "Nur Cloud", abo: "Für KI und Aufzeichnungen", datenschutz: "Manuelle Linsenabdeckung" }
-decisionJourney: { cluster: "haustierkameras", stage: "decision", intent: "petlibro-scout-pruefen", primaryQuestion: "Rechtfertigen Mehrtiere-Erkennung und Cloudauswertung das Abo ohne lokale SD-Speicherung?", next: ["/vergleiche/beste-haustierkameras/"], fallback: ["/haustierkameras/"] }
+  custom:
+    klasse: "Feste Kamera"
+    video: "1080p"
+    interaktion: "Zwei-Wege-Audio"
+    speicher: "Nur Cloud"
+    abo: "Für KI und Aufzeichnungen"
+    datenschutz: "Manuelle Linsenabdeckung"
+decisionJourney:
+  cluster: "haustierkameras"
+  stage: "decision"
+  intent: "petlibro-scout-pruefen"
+  primaryQuestion: "Rechtfertigen Mehrtiere-Erkennung und Cloudauswertung das Abo ohne lokale SD-Speicherung?"
+  next:
+    - "/vergleiche/beste-haustierkameras/"
+  fallback:
+    - "/haustierkameras/"
 evidenceSources:
-  - { source: "PETLIBRO Deutschland", url: "https://de.petlibro.com/en/products/scout-smart-camera", accessedAt: "2026-08-06", assertion: "1080p, Mehrtiere-Erkennung, Cloudspeicher, Abomodell und fehlende SD-Karte sind Herstellerangaben.", fields: ["specs", "strengths", "weaknesses"] }
+  - source: "PETLIBRO Deutschland"
+    url: "https://de.petlibro.com/en/products/scout-smart-camera"
+    accessedAt: "2026-08-06"
+    assertion: "1080p, Mehrtiere-Erkennung, Cloudspeicher, Abomodell und fehlende SD-Karte sind Herstellerangaben."
+    fields:
+      - "specs"
+      - "strengths"
+      - "weaknesses"
 affiliate:
   provider: "amzn-to"
   label: "Preis und Verfügbarkeit prüfen"
@@ -105,12 +185,12 @@ affiliate:
   rel: "sponsored nofollow noopener"
   target: "_blank"
 priceState: "available"
-priceUpdated: "2026-08-07T10:04:46.070Z"
+priceUpdated: "2026-08-15T17:07:42.105Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-07T10:04:46.070Z"
+availabilityUpdated: "2026-08-15T17:07:42.105Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

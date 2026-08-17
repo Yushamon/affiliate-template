@@ -11,6 +11,7 @@ import {
   intentOwnershipReason,
   type IntentOwnershipResult,
 } from "./intent-ownership.ts";
+import { buildProductCoverage, type ProductCoverage } from "./product-coverage.ts";
 
 export type DocumentType = "page" | "comparison" | "product" | "manufacturer";
 export type ClusterStatus = "strong" | "developing" | "gap";
@@ -23,6 +24,7 @@ type DocumentRecord = {
   description: string;
   manufacturer: string;
   categoryKey: string;
+  productSlugs: string[];
   body: string;
   route: string;
   filePath: string;
@@ -75,6 +77,7 @@ export type Cluster = {
   linkCoverage: number;
   journeyCompletion?: JourneyCompletion;
   intentOwnership?: IntentOwnershipResult;
+  productCoverage?: ProductCoverage;
   gaps: string[];
   nextAction: string;
   documents: Array<{
@@ -339,7 +342,7 @@ export const CLUSTER_DEFINITIONS: ClusterDefinition[] = [
     ],
     hubPatterns: [/^haustierkameras?$/i],
     manufacturerPatterns: [],
-    targets: { pages: 3, comparisons: 1, products: 5, manufacturers: 2 },
+    targets: { pages: 3, comparisons: 1, products: 3, manufacturers: 2 },
     strategy:
       "Vor dem Ausbau Nachfrage, Produktbreite, Primärquellen und Affiliate-Abdeckung validieren.",
     expansion: true,
@@ -415,6 +418,24 @@ function parseNestedFrontmatterValue(
   const match = raw.match(/^---\s*\r?\n([\s\S]*?)\r?\n---/);
   if (!match) return "";
 
+  const inlineSection = match[1].match(
+    new RegExp(`^${section}:\\s*\\{([^\\r\\n]*)\\}\\s*$`, "m"),
+  );
+
+  if (inlineSection) {
+    const inlineValue = inlineSection[1].match(
+      new RegExp(
+        `(?:^|,)\\s*${key}\\s*:\\s*(?:"([^"]*)"|'([^']*)'|([^,}]+))`,
+      ),
+    );
+
+    if (inlineValue) {
+      return String(
+        inlineValue[1] ?? inlineValue[2] ?? inlineValue[3] ?? "",
+      ).trim();
+    }
+  }
+
   const lines = match[1].split(/\r?\n/);
   let inSection = false;
   let sectionIndent = -1;
@@ -460,6 +481,34 @@ function parseNestedFrontmatterValue(
   return "";
 }
 
+function parseFrontmatterStringArray(raw: string, key: string): string[] {
+  const match = raw.match(/^---\s*\r?\n([\s\S]*?)\r?\n---/);
+  if (!match) return [];
+
+  const inline = match[1].match(
+    new RegExp(`^${key}:\\s*\\[([^\\r\\n]*)\\]\\s*$`, "m"),
+  );
+  if (inline) {
+    return [...inline[1].matchAll(/"([^"]+)"|'([^']+)'/g)]
+      .map((item) => String(item[1] ?? item[2] ?? "").trim())
+      .filter(Boolean);
+  }
+
+  const lines = match[1].split(/\r?\n/);
+  const start = lines.findIndex((line) =>
+    new RegExp(`^${key}:\\s*$`).test(line),
+  );
+  if (start < 0) return [];
+
+  const values: string[] = [];
+  for (const line of lines.slice(start + 1)) {
+    const item = line.match(/^\s+-\s*(?:"([^"]+)"|'([^']+)'|([^#\r\n]+))\s*$/);
+    if (!item) break;
+    values.push(String(item[1] ?? item[2] ?? item[3] ?? "").trim());
+  }
+  return values.filter(Boolean);
+}
+
 function normalizeRoute(value: string): string {
   const route = value.startsWith("/") ? value : `/${value}`;
   return route.endsWith("/") ? route : `${route}/`;
@@ -472,6 +521,9 @@ function extractLinks(raw: string): string[] {
     output.add(normalizeRoute(match[1]));
   }
   for (const match of raw.matchAll(/href=["'](\/[^"'#?]+)[^"']*["']/g)) {
+    output.add(normalizeRoute(match[1]));
+  }
+  for (const match of raw.matchAll(/["'](\/[^"'\s#?]+)["']/g)) {
     output.add(normalizeRoute(match[1]));
   }
 
@@ -501,6 +553,10 @@ function loadCollection(
         type === "product"
           ? parseNestedFrontmatterValue(raw, "category", "key")
           : "",
+      productSlugs:
+        type === "manufacturer"
+          ? parseFrontmatterStringArray(raw, "productSlugs")
+          : [],
       body: stripFrontmatter(raw),
       route: normalizeRoute(`${prefix}${slug}`),
       filePath: path.relative(appRoot, file).split(path.sep).join("/"),
@@ -579,13 +635,25 @@ export function belongsToCluster(
   const excluded =
     !primaryEvidence && matches(definition.excludePatterns, exclusionText);
 
-  if (excluded) return false;
-
   if (document.type === "manufacturer") {
     // Herstellerseiten sind meist kategorienübergreifend. Eine beiläufige
     // Produktnennung im Body reicht daher ausdrücklich nicht aus.
-    return manufacturerEvidence;
+    if (manufacturerEvidence) return manufacturerEvidence;
+
+    // Strukturierte Produktreferenzen ordnen auch kategorienuebergreifende
+    // Hersteller zu, ohne beilaufige Begriffe aus dem Body auszuwerten.
+    return document.productSlugs.some((productSlug) => {
+      const product = documents.find(
+        (candidate) =>
+          candidate.type === "product" && candidate.slug === productSlug,
+      );
+      return Boolean(
+        product && productClusterFromCategory(product) === definition.id,
+      );
+    });
   }
+
+  if (excluded) return false;
 
   if (document.type === "product") {
     const categoryCluster = productClusterFromCategory(document);
@@ -726,6 +794,7 @@ function buildCluster(definition: ClusterDefinition): Cluster {
     linkCoverage,
     journeyCompletion,
     intentOwnership,
+    productCoverage: buildProductCoverage(definition.id, counts.products),
     gaps,
     nextAction: definition.strategy,
     documents: members

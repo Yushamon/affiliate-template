@@ -55,10 +55,10 @@ images:
     - src: ../../assets/images/products/oneisall-3-5l-cordless-fountain/gallery-3.webp
       alt: Kabelloser Trinkbrunnen mit Katze
 price:
-  current: 60.87
+  current: 56.67
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-07T10:03:58.971Z"
+  checkedAt: "2026-08-15T17:08:52.705Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -73,12 +73,12 @@ rating: 4.5
 score: 89
 
 priceState: "available"
-priceUpdated: "2026-08-07T10:03:58.971Z"
+priceUpdated: "2026-08-15T17:08:52.705Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-07T10:03:58.971Z"
+availabilityUpdated: "2026-08-15T17:08:52.705Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

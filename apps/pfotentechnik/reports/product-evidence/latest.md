@@ -1,10 +1,10 @@
 # Product External Evidence Audit
 
-- Produkte: 82
-- Mit externalEvidence: 82
-- Vollständig: 53
-- Teilweise: 29
-- Ohne Evidenz: 0
+- Produkte: 98
+- Mit externalEvidence: 95
+- Vollständig: 65
+- Teilweise: 30
+- Ohne Evidenz: 3
 
 ## Vollständig
 
@@ -12,24 +12,31 @@
 - cat-mate-c200
 - cat-mate-c300
 - cat-mate-c500
+- cat-mate-elite-355w
 - catit-pixi-smart-6-meal-feeder
+- catit-pixi-smart-trinkbrunnen
 - catit-pixi-vision-smart-feeder
 - enabot-ebo-air-2
+- enabot-rola-pettracker
 - furbo-360-hundekamera
 - garmin-alpha-t-20
 - imipaw-3l-automatic-cat-feeder
+- invoxia-biotracker-2026
+- litter-robot-4
 - litter-robot-5-pro
 - neakasa-m1-plus
 - oneisall-3-5l-cordless-fountain
 - oneisall-5l-automatic-cat-feeder
 - onlycat-mikrochip-katzenklappe
 - paj-pet-finder-4g-mini
+- pawfit-3
 - pawsync-smart-pet-feeder
 - petkit-eversweet-max-2-uvc
 - petkit-eversweet-max-cordless
 - petkit-eversweet-solo-2-fountain
 - petkit-eversweet-solo-se
 - petkit-eversweet-ultra
+- petkit-puramax-2
 - petkit-purobot-max-pro-2
 - petkit-yumshare-dual-hopper
 - petkit-yumshare-solo-2
@@ -49,6 +56,11 @@
 - petsafe-healthy-pet-simply-feed
 - petsafe-mikrochip-katzenklappe
 - petsafe-smart-feed-2
+- petsafe-streamside-trinkbrunnen
+- petsnowy-snow-plus
+- pettec-cam-360
+- prothelis-area-pets
+- reolink-e1-zoom
 - surefeed-microchip-pet-feeder-connect
 - surefeed-microchip-pet-feeder
 - sureflap-dualscan-mikrochip-katzenklappe
@@ -81,6 +93,7 @@
 - petkit-eversweet-5-mini · fehlt: professionalReviews, consensus
 - petkit-fresh-element-infinity · fehlt: userReviews, consensus
 - petkit-fresh-element-solo · fehlt: professionalReviews, consensus
+- petkit-purobot-max-3 · fehlt: professionalReviews
 - petlibro-air-wifi-feeder · fehlt: consensus
 - petlibro-glacier-ultrafiltration · fehlt: consensus
 - petlibro-granary-2-vision · fehlt: professionalReviews, userReviews, consensus
@@ -92,8 +105,10 @@
 - wopet-heritage-view-camera-feeder · fehlt: professionalReviews, consensus
 - wopet-patrol-f07-pro · fehlt: professionalReviews, consensus
 - wopet-pioneer-f01-plus · fehlt: professionalReviews, consensus
-- zeromouse-2-0 · fehlt: professionalReviews, consensus
+- zeromouse-2-0 · fehlt: professionalReviews
 
 ## Ohne Evidenz
 
-Keine.
+- enabot-rola-mini
+- furbo-mini-360
+- petlibro-luma-smart-litter-box

@@ -171,6 +171,19 @@ function auditProduct(product) {
     errors.push(`Ungültiger Score: ${product.score}`);
   }
 
+  const activeProduct = /^productStatus:\s*["']?active["']?\s*$/m.test(product.source);
+
+  const emptyRatings = /^ratings:\s*\{\s*\}\s*$/m.test(product.source);
+
+  const hasRatingsBlock = /^ratings:\s*$[\s\S]*?^\s{2}[A-Za-z0-9_-]+:\s*[0-5](?:\.\d+)?\s*$/m.test(product.source);
+
+  if (activeProduct && product.rating === 0 && !(Number.isFinite(product.score) && product.score > 0) && emptyRatings && !hasRatingsBlock) {
+
+    errors.push("Aktives Produkt ohne berechenbare Bewertung: rating=0, kein score und keine Kriterienratings");
+
+  }
+
+
   if (product.strengths.length < 3) {
     warnings.push(`Nur ${product.strengths.length} Stärken hinterlegt`);
   }

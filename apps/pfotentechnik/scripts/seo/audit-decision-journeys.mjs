@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
+import yaml from "js-yaml";
 import {
   buildDecisionJourney,
   inferCluster,
@@ -24,31 +25,8 @@ function walk(directory) {
 function parse(raw) {
   const match = raw.match(/^---\s*\r?\n([\s\S]*?)\r?\n---/);
   if (!match) return {};
-  const data = {};
-  const stack = [{ indent: -1, target: data }];
-
-  for (const line of match[1].split(/\r?\n/)) {
-    if (!line.trim() || line.trimStart().startsWith("#")) continue;
-    const indent = line.match(/^\s*/)?.[0].length ?? 0;
-    const item = line.trim().match(/^([\w-]+):(?:\s*(.*))?$/);
-    if (!item) continue;
-
-    while (stack.length > 1 && indent <= stack.at(-1).indent) stack.pop();
-    const parent = stack.at(-1).target;
-    const key = item[1];
-    const rawValue = item[2] ?? "";
-
-    if (!rawValue) {
-      parent[key] = {};
-      stack.push({ indent, target: parent[key] });
-      continue;
-    }
-
-    parent[key] = rawValue
-      .replace(/^['"]|['"]$/g, "")
-      .replace(/^(true|false)$/i, (value) => value.toLowerCase());
-  }
-  return data;
+  const data = yaml.load(match[1]);
+  return data && typeof data === "object" ? data : {};
 }
 
 const specs = [
@@ -75,6 +53,12 @@ const entries = specs.flatMap(([type, folder, route]) =>
             stage: data.decisionJourney.stage,
             intent: data.decisionJourney.intent,
             primaryQuestion: data.decisionJourney.primaryQuestion,
+            next: Array.isArray(data.decisionJourney.next)
+              ? data.decisionJourney.next
+              : [],
+            fallback: Array.isArray(data.decisionJourney.fallback)
+              ? data.decisionJourney.fallback
+              : [],
           }
         : undefined,
       file: path.relative(appRoot, file).split(path.sep).join("/"),

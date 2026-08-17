@@ -4,10 +4,10 @@ slug: beste-trinkbrunnen-fuer-katzen
 type: comparison
 layout: comparison
 description: >-
-  Neun Katzenbrunnen nach Trinkfläche, Material, Reinigung, Filter, Lautstärke, Stromversorgung und Mehrkatzen-Eignung
+  Elf Katzenbrunnen nach Trinkfläche, Material, Reinigung, Filter, Lautstärke, Stromversorgung und Mehrkatzen-Eignung
   vergleichen.
 publishedAt: "2026-07-24"
-updatedAt: "2026-08-06"
+updatedAt: "2026-08-16"
 author:
   name: PfotenTechnik Redaktion
   role: Redaktion
@@ -21,14 +21,14 @@ hub:
   sections:
     - vergleiche
   title: Beste Trinkbrunnen für Katzen
-  description: Neun klar unterscheidbare Katzenbrunnen nach Reinigung, Material, Betrieb und Einsatzgebiet.
+  description: Elf klar unterscheidbare Katzenbrunnen nach Reinigung, Material, Betrieb und Einsatzgebiet.
   icon: 🐈
   featured: true
   order: 20
 seo:
-  title: "Katzenbrunnen Vergleich 2026: 9 Modelle im Check"
+  title: "Katzenbrunnen Vergleich 2026: 11 Modelle im Check"
   description: >-
-    Neun Katzenbrunnen im Vergleich: Netzbetrieb, Akku, Edelstahl, UVC, Mehrkatzen-Tracking, Filterkosten und
+    Elf Katzenbrunnen im Vergleich: Netzbetrieb, Akku, Edelstahl, Keramik, UVC, Mehrkatzen-Tracking, Filterkosten und
     Reinigungsaufwand transparent eingeordnet.
   canonical: /vergleiche/beste-trinkbrunnen-fuer-katzen/
   sitemap: true
@@ -170,6 +170,30 @@ items:
       lautstaerke: Herstellerangabe unter beziehungsweise höchstens 25 dB
       kapazitaet: 1,6 Liter nutzbar
     overrides: {}
+  - slug: catit-pixi-smart-trinkbrunnen
+    type: product
+    label: Catit PIXI Smart-Trinkbrunnen
+    recommendation: App-/UVC-Option im Catit-Ökosystem, wenn 2 Liter und monatliche Filterroutine passen.
+    values:
+      reinigung: Edelstahleinsatz spülmaschinengeeignet; übrige Teile separat
+      eignung: Katzen; App-/UVC-Fokus
+      material: BPA-freier Kunststoff; Edelstahl-Trinkfläche
+      stromversorgung: Netzbetrieb; 2,4-GHz-WLAN
+      filter: Dreifachfilter; Wechsel alle 30 Tage laut Hersteller
+      lautstaerke: Nicht belastbar ausgewiesen
+      kapazitaet: 2 Liter
+  - slug: petsafe-streamside-trinkbrunnen
+    type: product
+    label: PetSafe Keramik-Trinkbrunnen Streamside
+    recommendation: Keramik- und Offline-Alternative für Katzen und kleine Hunde, wenn 1,8 Liter ausreichen.
+    values:
+      reinigung: Keramikteile oberer Spülmaschinenkorb; Pumpe von Hand
+      eignung: Katzen und kleine Hunde; Keramik-Fokus
+      material: Keramik; offene Trinkschale
+      stromversorgung: Netzbetrieb
+      filter: Aktivkohle plus Schaum
+      lautstaerke: Sanftes Blubbern; keine belastbare dB-Angabe
+      kapazitaet: 1,8 Liter
 criteria:
   - key: reinigung
     label: Reinigung
@@ -218,12 +242,11 @@ automaticRecommendations:
 recommendation:
   title: PETKIT Solo 2 für den einfachen Alltag, oneisall 3,2L für kabellose Aufstellung
   text: >-
-    Für viele Katzenhaushalte ist der PETKIT Eversweet Solo 2 die ausgewogenste einfache Lösung. Der oneisall 3,2L ist
-    flexibler ohne Steckdose. Für Mehrkatzen-Tracking ist der Eversweet Ultra spezialisiert; Edelstahl-Fokus bietet
-    PETLIBRO.
+    Für viele Katzenhaushalte ist der PETKIT Eversweet Solo 2 die einfache Lösung; oneisall ist flexibel ohne Steckdose.
+    Eversweet Ultra deckt Mehrkatzen-Tracking ab, Catit PIXI App/UVC, PetSafe Streamside Keramik und PETLIBRO Edelstahl.
   winnerSlug: petkit-eversweet-solo-2-fountain
   alternativeSlug: oneisall-3-2l-cordless-fountain
-tableTitle: 9 Katzenbrunnen direkt verglichen
+tableTitle: 11 Katzenbrunnen direkt verglichen
 cardsTitle: Empfehlungen nach Haushalt und Standort
 faq:
   - question: Ist das ein eigener Katzenbrunnen-Test?
@@ -298,6 +321,16 @@ heroImage:
   src: ../../assets/images/products/petkit-eversweet-solo-2-fountain/comparison.webp
   alt: Beste Trinkbrunnen für Katzen – redaktionelles Vergleichsbild
 canonical: /vergleiche/beste-trinkbrunnen-fuer-katzen/
+decisionJourney:
+  cluster: "trinkbrunnen"
+  stage: "evaluation"
+  intent: "katzenbrunnen-vergleichen"
+  primaryQuestion: "Welche Material-, Strom-, Pflege- und Smart-Rolle passt zum Haushalt?"
+  next: ["/produkt/catit-pixi-smart-trinkbrunnen/", "/produkt/petsafe-streamside-trinkbrunnen/", "/produkt/petkit-eversweet-solo-2-fountain/"]
+  fallback: ["/trinkbrunnen/"]
+evidenceSources:
+  - { source: "Catit PIXI Smart-Trinkbrunnen", url: "https://www.catit.com/de/produkte/trinkbrunnen/pixi-smart-trinkbrunnen/", accessedAt: "2026-08-16", assertion: "App-, UVC-, Kapazitäts-, Material- und Pflegedaten sind Herstellerangaben.", fields: ["items", "criteria"] }
+  - { source: "PetSafe Streamside", url: "https://www.petsafe.com/de/p/keramik-trinkbrunnen-streamside/PWW19-17098/", accessedAt: "2026-08-16", assertion: "Keramik, Kapazität, Filter, Maße und Reinigung sind Herstellerangaben.", fields: ["items", "criteria"] }
 ---
 
 Ein **Katzenbrunnen** muss zum Haushalt passen, nicht nur zur Funktionsliste. Für eine Katze ist ein leises, gut zerlegbares Netzmodell oft sinnvoller als ein großes Tracking-System. Mehrere Katzen benötigen weiterhin räumlich getrennte Wasserstellen.
@@ -310,6 +343,8 @@ Ein **Katzenbrunnen** muss zum Haushalt passen, nicht nur zur Funktionsliste. F�
 - **PETKIT Eversweet Ultra:** spezialisiertes Mehrkatzen-Tracking.
 - **PETLIBRO Edelstahl 3L:** einfacher Edelstahlfokus.
 - **Cat Mate 335:** unkomplizierte Offline-Lösung mit mehreren Trinkhöhen.
+- **Catit PIXI Smart:** App-/UVC-Rolle mit 2-Liter-Tank und Filterroutine.
+- **PetSafe Streamside:** Keramik- und Offline-Rolle für Katzen und kleine Hunde.
 
 ## Welches Modell passt zu welchem Haushalt?
 
@@ -321,6 +356,8 @@ Ein **Katzenbrunnen** muss zum Haushalt passen, nicht nur zur Funktionsliste. F�
 | mehrere Katzen mit Trinktracking | PETKIT Eversweet Ultra |
 | möglichst viel Edelstahl | PETLIBRO Stainless Steel 3L |
 | einfache Technik und Ersatzteile | Cat Mate 335 |
+| App und UVC im Catit-System | Catit PIXI Smart |
+| Keramik ohne Smart-Fokus | PetSafe Streamside |
 
 ## Reinigung ist das wichtigste Vergleichskriterium
 
@@ -351,7 +388,7 @@ Für laufende Pflege helfen:
 
 ## Methodik
 
-Die neun Modelle wurden bewusst nach klar unterscheidbaren Einsatzgebieten kuratiert. Reinigung und Alltagseignung werden stärker gewichtet als App, Beleuchtung oder reine Tankgröße. Nicht dokumentierte Herstellerangaben werden nicht geschätzt.
+Die elf Modelle wurden bewusst nach klar unterscheidbaren Einsatzgebieten kuratiert. Reinigung und Alltagseignung werden stärker gewichtet als App, Beleuchtung oder reine Tankgröße. Nicht dokumentierte Herstellerangaben werden nicht geschätzt.
 
 ## So werden Material, Reinigung und Filter bewertet
 

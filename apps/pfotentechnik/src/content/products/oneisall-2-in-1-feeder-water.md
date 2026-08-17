@@ -58,10 +58,10 @@ images:
     - src: ../../assets/images/products/oneisall-2-in-1-feeder-water/gallery-1.webp
       alt: Getrennte Edelstahlbereiche für Trockenfutter und Wasser am Oneisall PF14
 price:
-  current: 56.52
+  current: 59.49
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-07T10:03:55.048Z"
+  checkedAt: "2026-08-15T17:08:47.229Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -76,12 +76,12 @@ rating: 3.9
 score: 79
 
 priceState: "available"
-priceUpdated: "2026-08-07T10:03:55.048Z"
+priceUpdated: "2026-08-15T17:08:47.229Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-07T10:03:55.048Z"
+availabilityUpdated: "2026-08-15T17:08:47.229Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

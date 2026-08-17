@@ -10,7 +10,7 @@ name: "Cat Mate"
 recommendation: "Cat Mate gehört zur Marke Closer Pets und entwickelt seit vielen Jahren zuverlässige Fütterungslösungen für Hunde und Katzen. Der Schwerpunkt liegt auf einfach bedienbaren Futterautomaten ohne komplizierte Technik, die besonders für Nassfutter, Wochenendtrips und preisbewusste Tierhalter interessant sind."
 summary: "Cat Mate wird von vielen Käufern für seine einfache Bedienung und hohe Zuverlässigkeit gelobt. Die Produkte funktionieren meist viele Jahre problemlos. Kritik richtet sich vor allem gegen den fehlenden Smart-Funktionsumfang."
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-19"
+updatedAt: "2026-08-16"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion für smarte Haustiertechnik"
@@ -82,6 +82,7 @@ productSlugs:
   - "cat-mate-c500"
   - "cat-mate-335-pet-fountain"
   - "cat-mate-shell-fountain"
+  - "cat-mate-elite-355w"
 profile:
   company: "Cat Mate gehört zu Closer Pets. Die Marke konzentriert sich auf Fütterungs-, Trink- und Zugangslösungen für Katzen und kleinere Hunde; viele Geräte sind bewusst ohne Cloud-Zwang ausgelegt."
   appEcosystem: "Die hier eingeordneten Futterautomaten arbeiten überwiegend lokal. Vernetzte Closer-Pets-Produkte existieren, bilden aber kein einheitliches App-Ökosystem für das gesamte Cat-Mate-Sortiment."
@@ -160,6 +161,7 @@ Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen
 - [Cat Mate C200](/produkt/cat-mate-c200/)
 - [Cat Mate C300](/produkt/cat-mate-c300/)
 - [Cat Mate C500](/produkt/cat-mate-c500/)
+- [Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer](/produkt/cat-mate-elite-355w/)
 - [Cat Mate Pet Fountain 335](/produkt/cat-mate-335-pet-fountain/)
 - [Cat Mate Shell Pet Fountain](/produkt/cat-mate-shell-fountain/)
 <!-- pt:content-discovery:manufacturer-products:end -->

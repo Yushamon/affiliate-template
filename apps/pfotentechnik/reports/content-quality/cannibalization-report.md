@@ -1,6 +1,6 @@
 # Content-Quality- und Kannibalisierungsreport
 
-- Indexierbare Seiten: 230
+- Indexierbare Seiten: 252
 - Exakte Duplikate: 0
 - Near-Duplicates: 0
 - Offene Intent-Konflikte: 0
@@ -42,7 +42,7 @@
 - Intentionen: product-research ↔ product-research
 - Maßnahme: DIFFERENTIATE
 - Begründung: Zwei eigenständige PETKIT-Modellvarianten mit unterschiedlicher Produktidentität.
-- Ähnlichkeit: 0.7097
+- Ähnlichkeit: 0.7098
 
 ### separated|/produkt/tractive-dog-6-xl/|/produkt/tractive-dog-6/
 
@@ -62,5 +62,5 @@ Keine offenen Befunde.
 ## Entscheidungsmatrix
 
 - CONSOLIDATE: 2
-- KEEP: 230
-- NOINDEX: 92
+- KEEP: 252
+- NOINDEX: 108

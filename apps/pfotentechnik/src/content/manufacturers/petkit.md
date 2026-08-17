@@ -3,14 +3,13 @@ title: "PETKIT"
 slug: "petkit"
 type: "manufacturer"
 layout: "manufacturer"
-
 description: "PETKIT im Überblick: smarte Futterautomaten und Trinkbrunnen, App-Ökosystem, Zielgruppen, Filter, Ersatzteile, Garantie und Alternativen."
 key: "petkit"
 name: "PETKIT"
 recommendation: "PETKIT gehört weltweit zu den bekanntesten Herstellern smarter Haustiertechnik. Das Unternehmen entwickelt vernetzte Futterautomaten, Trinkbrunnen, selbstreinigende Katzentoiletten und weiteres intelligentes Zubehör mit einem klaren Fokus auf Design, Automatisierung und App-Steuerung."
 summary: "PETKIT wird von vielen Käufern für Design, Verarbeitung und Innovationskraft gelobt. Besonders positiv werden die App sowie das Zusammenspiel verschiedener PETKIT-Produkte bewertet. Kritik betrifft hauptsächlich den höheren Preis und gelegentliche Software- oder Cloud-Themen."
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-25"
+updatedAt: "2026-08-16"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion für smarte Haustiertechnik"
@@ -80,7 +79,6 @@ weaknesses:
 productSlugs:
   - "petkit-yumshare-solo-2"
   - "petkit-yumshare-dual-hopper"
-  - "petkit-yumshare-dual-hopper"
   - "petkit-yumshare-solo"
   - "petkit-fresh-element-solo"
   - "petkit-fresh-element-infinity"
@@ -91,6 +89,9 @@ productSlugs:
   - "petkit-eversweet-max-cordless"
   - "petkit-eversweet-max-2-uvc"
   - "petkit-eversweet-ultra"
+  - "petkit-purobot-max-pro-2"
+  - "petkit-purobot-max-3"
+  - "petkit-puramax-2"
 profile:
   company: "PETKIT entwickelt ein breites Portfolio vernetzter Haustiergeräte: Futterautomaten, Trinkbrunnen, Katzentoiletten und Zubehör. Die Produkte sind überwiegend auf ein gemeinsames digitales Ökosystem ausgerichtet."
   appEcosystem: "Die PETKIT-App bündelt Fütterung, Wasseraufnahme und weitere kompatible Geräte. Einzelne Bluetooth-Produkte benötigen für Fernzugriff ein kompatibles PETKIT-Hauptgerät; Funktionen bleiben deshalb modellabhängig."
@@ -175,6 +176,12 @@ PETKIT gehört weltweit zu den bekanntesten Herstellern smarter Haustiertechnik.
 
 Der [PETKIT YumShare Solo 2](/produkt/petkit-yumshare-solo-2/) kombiniert Trockenfutter-Zeitpläne mit Kamera und Zwei-Wege-Audio. Der [YumShare Dual-Hopper](/produkt/petkit-yumshare-dual-hopper/) ergänzt zwei getrennte Vorräte, aber keine physische Tiertrennung. Bei Trinksystemen ist der [PETKIT Eversweet Ultra](/produkt/petkit-eversweet-ultra/) die spezialisierte Lösung mit getrenntem Frisch- und Abwasser sowie Kamera-Auswertung.
 
+<!-- pt:max3-product:start -->
+## Automatische Katzentoiletten
+
+Der [PUROBOT MAX 3](/produkt/petkit-purobot-max-3/) ergänzt den Bestand als eigenständiges Modell mit 20,4-cm-Einstieg und mechanischer Anti-Pinch-Struktur. Er wird nicht mit den Kamera-Funktionen des MAX PRO 2 vermischt.
+<!-- pt:max3-product:end -->
+
 <!-- pt:content-discovery:manufacturer-products:start -->
 ## Weitere Produkte von PETKIT
 
@@ -188,5 +195,6 @@ Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen
 - [PETKIT Eversweet Solo SE](/produkt/petkit-eversweet-solo-se/)
 - [PETKIT Fresh Element Infinity](/produkt/petkit-fresh-element-infinity/)
 - [PETKIT Fresh Element Solo](/produkt/petkit-fresh-element-solo/)
+- [PETKIT PuraMax 2](/produkt/petkit-puramax-2/)
 - [PETKIT PUROBOT MAX PRO 2](/produkt/petkit-purobot-max-pro-2/)
 <!-- pt:content-discovery:manufacturer-products:end -->

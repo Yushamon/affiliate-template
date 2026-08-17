@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-11T11:26:56.533Z",
+  "generatedAt": "2026-08-16T15:48:55.036Z",
   "summary": {
-    "products": 82,
-    "covered": 82,
-    "complete": 53,
-    "partial": 29,
-    "missing": 0
+    "products": 98,
+    "covered": 95,
+    "complete": 65,
+    "partial": 30,
+    "missing": 3
   },
   "rows": [
     {
@@ -63,6 +63,16 @@
       "missingParts": []
     },
     {
+      "slug": "cat-mate-elite-355w",
+      "file": "src/content/products/cat-mate-elite-355w.md",
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 2,
+      "consensus": 3,
+      "missingParts": []
+    },
+    {
       "slug": "cat-mate-shell-fountain",
       "file": "src/content/products/cat-mate-shell-fountain.md",
       "status": "partial",
@@ -81,6 +91,16 @@
       "status": "complete",
       "hasExternal": true,
       "professional": 1,
+      "userSources": 1,
+      "consensus": 3,
+      "missingParts": []
+    },
+    {
+      "slug": "catit-pixi-smart-trinkbrunnen",
+      "file": "src/content/products/catit-pixi-smart-trinkbrunnen.md",
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 2,
       "userSources": 1,
       "consensus": 3,
       "missingParts": []
@@ -119,6 +139,30 @@
       "missingParts": []
     },
     {
+      "slug": "enabot-rola-mini",
+      "file": "src/content/products/enabot-rola-mini.md",
+      "status": "missing",
+      "hasExternal": false,
+      "professional": 0,
+      "userSources": 0,
+      "consensus": 0,
+      "missingParts": [
+        "professionalReviews",
+        "userReviews",
+        "consensus"
+      ]
+    },
+    {
+      "slug": "enabot-rola-pettracker",
+      "file": "src/content/products/enabot-rola-pettracker.md",
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 2,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
+    },
+    {
       "slug": "furbo-360-hundekamera",
       "file": "src/content/products/furbo-360-hundekamera.md",
       "status": "complete",
@@ -127,6 +171,20 @@
       "userSources": 1,
       "consensus": 2,
       "missingParts": []
+    },
+    {
+      "slug": "furbo-mini-360",
+      "file": "src/content/products/furbo-mini-360.md",
+      "status": "missing",
+      "hasExternal": false,
+      "professional": 0,
+      "userSources": 0,
+      "consensus": 0,
+      "missingParts": [
+        "professionalReviews",
+        "userReviews",
+        "consensus"
+      ]
     },
     {
       "slug": "garmin-alpha-t-20",
@@ -199,6 +257,26 @@
       "professional": 1,
       "userSources": 1,
       "consensus": 2,
+      "missingParts": []
+    },
+    {
+      "slug": "invoxia-biotracker-2026",
+      "file": "src/content/products/invoxia-biotracker-2026.md",
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 2,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
+    },
+    {
+      "slug": "litter-robot-4",
+      "file": "src/content/products/litter-robot-4.md",
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 2,
+      "userSources": 1,
+      "consensus": 3,
       "missingParts": []
     },
     {
@@ -342,6 +420,16 @@
       ]
     },
     {
+      "slug": "pawfit-3",
+      "file": "src/content/products/pawfit-3.md",
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 2,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
+    },
+    {
       "slug": "pawsync-smart-pet-feeder",
       "file": "src/content/products/pawsync-smart-pet-feeder.md",
       "status": "complete",
@@ -451,6 +539,28 @@
       "missingParts": [
         "professionalReviews",
         "consensus"
+      ]
+    },
+    {
+      "slug": "petkit-puramax-2",
+      "file": "src/content/products/petkit-puramax-2.md",
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 2,
+      "userSources": 1,
+      "consensus": 3,
+      "missingParts": []
+    },
+    {
+      "slug": "petkit-purobot-max-3",
+      "file": "src/content/products/petkit-purobot-max-3.md",
+      "status": "partial",
+      "hasExternal": true,
+      "professional": 0,
+      "userSources": 1,
+      "consensus": 3,
+      "missingParts": [
+        "professionalReviews"
       ]
     },
     {
@@ -615,6 +725,20 @@
       "missingParts": []
     },
     {
+      "slug": "petlibro-luma-smart-litter-box",
+      "file": "src/content/products/petlibro-luma-smart-litter-box.md",
+      "status": "missing",
+      "hasExternal": false,
+      "professional": 0,
+      "userSources": 0,
+      "consensus": 0,
+      "missingParts": [
+        "professionalReviews",
+        "userReviews",
+        "consensus"
+      ]
+    },
+    {
       "slug": "petlibro-one-rfid-smart-feeder",
       "file": "src/content/products/petlibro-one-rfid-smart-feeder.md",
       "status": "complete",
@@ -720,6 +844,36 @@
       "missingParts": []
     },
     {
+      "slug": "petsafe-streamside-trinkbrunnen",
+      "file": "src/content/products/petsafe-streamside-trinkbrunnen.md",
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 2,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
+    },
+    {
+      "slug": "petsnowy-snow-plus",
+      "file": "src/content/products/petsnowy-snow-plus.md",
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 2,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
+    },
+    {
+      "slug": "pettec-cam-360",
+      "file": "src/content/products/pettec-cam-360.md",
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
+    },
+    {
       "slug": "petwalk-medium-tiertuer",
       "file": "src/content/products/petwalk-medium-tiertuer.md",
       "status": "partial",
@@ -732,6 +886,26 @@
         "userReviews",
         "consensus"
       ]
+    },
+    {
+      "slug": "prothelis-area-pets",
+      "file": "src/content/products/prothelis-area-pets.md",
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 2,
+      "userSources": 1,
+      "consensus": 3,
+      "missingParts": []
+    },
+    {
+      "slug": "reolink-e1-zoom",
+      "file": "src/content/products/reolink-e1-zoom.md",
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 3,
+      "userSources": 1,
+      "consensus": 3,
+      "missingParts": []
     },
     {
       "slug": "surefeed-microchip-pet-feeder-connect",
@@ -912,10 +1086,9 @@
       "hasExternal": true,
       "professional": 0,
       "userSources": 1,
-      "consensus": 0,
+      "consensus": 3,
       "missingParts": [
-        "professionalReviews",
-        "consensus"
+        "professionalReviews"
       ]
     }
   ]

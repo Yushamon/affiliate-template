@@ -9,7 +9,7 @@ name: "Catit"
 recommendation: "Catit ist besonders für Katzenhaushalte interessant, die zwischen zeitgesteuerten Futterautomaten, Nassfutterlösungen und Trinkbrunnen wählen möchten. App-, Kühl- und Reinigungsfunktionen sollten immer modellbezogen geprüft werden."
 summary: "Catit bietet ein breites Sortiment an Katzenprodukten. Im Bereich smarter Haustiertechnik gehören vor allem Futterautomaten und Trinkbrunnen dazu. Die redaktionelle Einordnung trennt dabei klar zwischen App-Komfort, tatsächlicher Kühlleistung, lokaler Bedienung und laufendem Pflegeaufwand."
 publishedAt: "2026-07-25"
-updatedAt: "2026-07-25"
+updatedAt: "2026-08-16"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
@@ -76,6 +76,7 @@ profile:
 productSlugs:
   - "catit-pixi-smart-6-meal-feeder"
   - "catit-pixi-vision-smart-feeder"
+  - "catit-pixi-smart-trinkbrunnen"
 featuredProductSlugs:
   - "catit-pixi-smart-6-meal-feeder"
 series: []
@@ -103,5 +104,6 @@ Catit deckt verschiedene Aufgaben in Katzenhaushalten ab. Entscheidend ist wenig
 Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
 
 - [Catit PIXI Smart 6-Meal Feeder](/produkt/catit-pixi-smart-6-meal-feeder/)
+- [Catit PIXI Smart-Trinkbrunnen](/produkt/catit-pixi-smart-trinkbrunnen/)
 - [Catit PIXI Vision Smart Feeder](/produkt/catit-pixi-vision-smart-feeder/)
 <!-- pt:content-discovery:manufacturer-products:end -->

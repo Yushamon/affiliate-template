@@ -1,10 +1,10 @@
 {
   "version": "2.0.0",
-  "generatedAt": "2026-08-06T12:51:31.996Z",
+  "generatedAt": "2026-08-16T09:06:50.666Z",
   "summary": {
-    "documents": 147,
+    "documents": 175,
     "technicalErrors": 0,
-    "editorialWarnings": 138
+    "editorialWarnings": 136
   },
   "technical": [],
   "editorial": [
@@ -359,12 +359,6 @@
     {
       "severity": "warning",
       "code": "DERIVED_ONLY",
-      "route": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
-    },
-    {
-      "severity": "warning",
-      "code": "DERIVED_ONLY",
       "route": "/vergleiche/beste-gps-tracker-fuer-katzen/",
       "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
     },
@@ -372,12 +366,6 @@
       "severity": "warning",
       "code": "DERIVED_ONLY",
       "route": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
-      "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
-    },
-    {
-      "severity": "warning",
-      "code": "DERIVED_ONLY",
-      "route": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
       "message": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt."
     },
     {
@@ -839,6 +827,31 @@
   ],
   "matrix": [
     {
+      "route": "/automatische-katzentoiletten/",
+      "type": "page",
+      "cluster": "automatische-katzentoiletten",
+      "stage": "orientation",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-automatische-katzentoiletten/",
+          "kind": "Vergleich",
+          "label": "Automatische Katzentoiletten im Vergleich vergleichen"
+        },
+        {
+          "href": "/smarte-haustiertechnik/",
+          "kind": "Ratgeber",
+          "label": "Smarte Haustiertechnik – Der große Ratgeber"
+        },
+        {
+          "href": "/produkt/devoko-90l-automatisches-katzenklo/",
+          "kind": "Produkt",
+          "label": "Devoko 90L Automatisches Katzenklo im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/automatische-katzentoiletten.md"
+    },
+    {
       "route": "/biofilm-im-katzentrinkbrunnen/",
       "type": "page",
       "cluster": "trinkbrunnen",
@@ -1164,6 +1177,31 @@
       "file": "src/content/pages/gps-tracker.md"
     },
     {
+      "route": "/haustierkameras/",
+      "type": "page",
+      "cluster": "haustierkameras",
+      "stage": "orientation",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-haustierkameras/",
+          "kind": "Vergleich",
+          "label": "Haustierkameras im Vergleich vergleichen"
+        },
+        {
+          "href": "/smarte-haustiertechnik/",
+          "kind": "Ratgeber",
+          "label": "Smarte Haustiertechnik – Der große Ratgeber"
+        },
+        {
+          "href": "/produkt/enabot-ebo-air-2/",
+          "kind": "Produkt",
+          "label": "Enabot EBO Air 2 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/pages/haustierkameras.md"
+    },
+    {
       "route": "/kalk-katzentrinkbrunnen-entfernen/",
       "type": "page",
       "cluster": "trinkbrunnen",
@@ -1196,19 +1234,19 @@
       "source": "frontmatter",
       "steps": [
         {
+          "href": "/katzenklappe-fuer-mehrere-katzen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappe für mehrere Katzen: Rechte richtig planen"
+        },
+        {
+          "href": "/katzenklappen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen"
+        },
+        {
           "href": "/vergleiche/beste-mikrochip-katzenklappen/",
           "kind": "Vergleich",
           "label": "Mikrochip-Katzenklappen im Vergleich vergleichen"
-        },
-        {
-          "href": "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
-          "kind": "Vergleich",
-          "label": "Katzenklappen mit App und Beuteerkennung im Vergleich vergleichen"
-        },
-        {
-          "href": "/produkt/onlycat-mikrochip-katzenklappe/",
-          "kind": "Produkt",
-          "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
         }
       ],
       "file": "src/content/pages/katze-an-katzenklappe-gewoehnen.md"
@@ -1256,9 +1294,9 @@
           "label": "Katzenklappen mit App und Beuteerkennung im Vergleich vergleichen"
         },
         {
-          "href": "/produkt/onlycat-mikrochip-katzenklappe/",
+          "href": "/produkt/cat-mate-elite-355w/",
           "kind": "Produkt",
-          "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
+          "label": "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer im Detail prüfen"
         }
       ],
       "file": "src/content/pages/katzenklappe-einbauen.md"
@@ -1281,9 +1319,9 @@
           "label": "Katzenklappen mit App und Beuteerkennung im Vergleich vergleichen"
         },
         {
-          "href": "/produkt/onlycat-mikrochip-katzenklappe/",
+          "href": "/produkt/cat-mate-elite-355w/",
           "kind": "Produkt",
-          "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
+          "label": "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer im Detail prüfen"
         }
       ],
       "file": "src/content/pages/katzenklappe-fuer-mehrere-katzen.md"
@@ -1292,23 +1330,23 @@
       "route": "/katzenklappe-zugluft-und-waermedaemmung/",
       "type": "page",
       "cluster": "katzenklappen",
-      "stage": "orientation",
+      "stage": "problem",
       "source": "frontmatter",
       "steps": [
         {
-          "href": "/vergleiche/beste-mikrochip-katzenklappen/",
-          "kind": "Vergleich",
-          "label": "Mikrochip-Katzenklappen im Vergleich vergleichen"
+          "href": "/katzenklappe-einbauen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappe einbauen: Tür, Glas und Wand richtig planen"
         },
         {
-          "href": "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
-          "kind": "Vergleich",
-          "label": "Katzenklappen mit App und Beuteerkennung im Vergleich vergleichen"
-        },
-        {
-          "href": "/produkt/onlycat-mikrochip-katzenklappe/",
+          "href": "/produkt/petwalk-medium-tiertuer/",
           "kind": "Produkt",
-          "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
+          "label": "petWALK Medium Tiertür im Detail prüfen"
+        },
+        {
+          "href": "/katzenklappen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen"
         }
       ],
       "file": "src/content/pages/katzenklappe-zugluft-und-waermedaemmung.md"
@@ -1331,9 +1369,9 @@
           "label": "Katzenklappen mit App und Beuteerkennung im Vergleich vergleichen"
         },
         {
-          "href": "/produkt/onlycat-mikrochip-katzenklappe/",
-          "kind": "Produkt",
-          "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
+          "href": "/katzenklappe-einbauen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappe einbauen: Tür, Glas und Wand richtig planen"
         }
       ],
       "file": "src/content/pages/katzenklappen.md"
@@ -2014,6 +2052,31 @@
       "file": "src/content/pages/wie-viele-wasserstellen-katze.md"
     },
     {
+      "route": "/vergleiche/beste-automatische-katzentoiletten/",
+      "type": "comparison",
+      "cluster": "automatische-katzentoiletten",
+      "stage": "evaluation",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/produkt/neakasa-m1-lite/",
+          "kind": "Produkt",
+          "label": "Neakasa M1 Plus Lite im Detail prüfen"
+        },
+        {
+          "href": "/produkt/devoko-90l-automatisches-katzenklo/",
+          "kind": "Produkt",
+          "label": "Devoko 90L Automatisches Katzenklo im Detail prüfen"
+        },
+        {
+          "href": "/produkt/petlibro-luma-smart-litter-box/",
+          "kind": "Produkt",
+          "label": "PETLIBRO Luma Smart Self-Cleaning Litter Box im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-automatische-katzentoiletten.md"
+    },
+    {
       "route": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
       "type": "comparison",
       "cluster": "futterautomaten",
@@ -2368,22 +2431,22 @@
       "type": "comparison",
       "cluster": "gps-tracker",
       "stage": "evaluation",
-      "source": "derived",
+      "source": "frontmatter",
       "steps": [
         {
-          "href": "/produkt/garmin-alpha-t-20/",
+          "href": "/produkt/tractive-dog-6/",
           "kind": "Produkt",
-          "label": "Garmin Alpha T 20 im Detail prüfen"
+          "label": "Tractive DOG 6 im Detail prüfen"
         },
         {
-          "href": "/produkt/garmin-alpha-tt-25/",
+          "href": "/produkt/invoxia-biotracker-2026/",
           "kind": "Produkt",
-          "label": "Garmin Alpha TT 25 im Detail prüfen"
+          "label": "Invoxia Biotracker Edition 2026 im Detail prüfen"
         },
         {
-          "href": "/produkt/paj-pet-finder-4g-mini/",
+          "href": "/produkt/prothelis-area-pets/",
           "kind": "Produkt",
-          "label": "PAJ PET Finder 4G Mini im Detail prüfen"
+          "label": "Prothelis area Pets im Detail prüfen"
         }
       ],
       "file": "src/content/comparisons/beste-gps-tracker-fuer-hunde.md"
@@ -2396,6 +2459,11 @@
       "source": "derived",
       "steps": [
         {
+          "href": "/produkt/enabot-rola-pettracker/",
+          "kind": "Produkt",
+          "label": "Enabot ROLA PetTracker im Detail prüfen"
+        },
+        {
           "href": "/produkt/garmin-alpha-t-20/",
           "kind": "Produkt",
           "label": "Garmin Alpha T 20 im Detail prüfen"
@@ -2404,14 +2472,34 @@
           "href": "/produkt/garmin-alpha-tt-25/",
           "kind": "Produkt",
           "label": "Garmin Alpha TT 25 im Detail prüfen"
-        },
-        {
-          "href": "/produkt/paj-pet-finder-4g-mini/",
-          "kind": "Produkt",
-          "label": "PAJ PET Finder 4G Mini im Detail prüfen"
         }
       ],
       "file": "src/content/comparisons/beste-gps-tracker-fuer-katzen.md"
+    },
+    {
+      "route": "/vergleiche/beste-haustierkameras/",
+      "type": "comparison",
+      "cluster": "haustierkameras",
+      "stage": "evaluation",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/produkt/petlibro-scout-smart-camera/",
+          "kind": "Produkt",
+          "label": "PETLIBRO Scout Smart Camera im Detail prüfen"
+        },
+        {
+          "href": "/produkt/furbo-mini-360/",
+          "kind": "Produkt",
+          "label": "Furbo Mini 360 im Detail prüfen"
+        },
+        {
+          "href": "/produkt/enabot-rola-mini/",
+          "kind": "Produkt",
+          "label": "Enabot ROLA Mini im Detail prüfen"
+        }
+      ],
+      "file": "src/content/comparisons/beste-haustierkameras.md"
     },
     {
       "route": "/vergleiche/beste-mikrochip-katzenklappen/",
@@ -2421,19 +2509,19 @@
       "source": "frontmatter",
       "steps": [
         {
-          "href": "/produkt/onlycat-mikrochip-katzenklappe/",
-          "kind": "Produkt",
-          "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
+          "href": "/katzenklappe-fuer-mehrere-katzen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappe für mehrere Katzen: Rechte richtig planen"
         },
         {
-          "href": "/produkt/petsafe-mikrochip-katzenklappe/",
-          "kind": "Produkt",
-          "label": "PetSafe Mikrochip Katzenklappe im Detail prüfen"
+          "href": "/katzenklappe-einbauen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappe einbauen: Tür, Glas und Wand richtig planen"
         },
         {
-          "href": "/produkt/petsafe-petporte-smart-flap/",
+          "href": "/produkt/sureflap-dualscan-mikrochip-katzenklappe/",
           "kind": "Produkt",
-          "label": "PetSafe Petporte smart flap im Detail prüfen"
+          "label": "SureFlap DualScan Mikrochip Katzenklappe im Detail prüfen"
         }
       ],
       "file": "src/content/comparisons/beste-mikrochip-katzenklappen.md"
@@ -2456,9 +2544,9 @@
           "label": "Cat Mate Shell Pet Fountain im Detail prüfen"
         },
         {
-          "href": "/produkt/oneisall-2-2l-cordless-fountain/",
+          "href": "/produkt/catit-pixi-smart-trinkbrunnen/",
           "kind": "Produkt",
-          "label": "oneisall 2,2L Cordless Cat Fountain im Detail prüfen"
+          "label": "Catit PIXI Smart-Trinkbrunnen im Detail prüfen"
         }
       ],
       "file": "src/content/comparisons/beste-trinkbrunnen-fuer-hunde.md"
@@ -2468,22 +2556,22 @@
       "type": "comparison",
       "cluster": "trinkbrunnen",
       "stage": "evaluation",
-      "source": "derived",
+      "source": "frontmatter",
       "steps": [
         {
-          "href": "/produkt/cat-mate-335-pet-fountain/",
+          "href": "/produkt/catit-pixi-smart-trinkbrunnen/",
           "kind": "Produkt",
-          "label": "Cat Mate Pet Fountain 335 im Detail prüfen"
+          "label": "Catit PIXI Smart-Trinkbrunnen im Detail prüfen"
         },
         {
-          "href": "/produkt/cat-mate-shell-fountain/",
+          "href": "/produkt/petsafe-streamside-trinkbrunnen/",
           "kind": "Produkt",
-          "label": "Cat Mate Shell Pet Fountain im Detail prüfen"
+          "label": "PetSafe Keramik-Trinkbrunnen Streamside im Detail prüfen"
         },
         {
-          "href": "/produkt/oneisall-2-2l-cordless-fountain/",
+          "href": "/produkt/petkit-eversweet-solo-2-fountain/",
           "kind": "Produkt",
-          "label": "oneisall 2,2L Cordless Cat Fountain im Detail prüfen"
+          "label": "PETKIT Eversweet Solo 2 im Detail prüfen"
         }
       ],
       "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md"
@@ -2571,6 +2659,11 @@
       "source": "derived",
       "steps": [
         {
+          "href": "/produkt/enabot-rola-pettracker/",
+          "kind": "Produkt",
+          "label": "Enabot ROLA PetTracker im Detail prüfen"
+        },
+        {
           "href": "/produkt/garmin-alpha-t-20/",
           "kind": "Produkt",
           "label": "Garmin Alpha T 20 im Detail prüfen"
@@ -2579,11 +2672,6 @@
           "href": "/produkt/garmin-alpha-tt-25/",
           "kind": "Produkt",
           "label": "Garmin Alpha TT 25 im Detail prüfen"
-        },
-        {
-          "href": "/produkt/paj-pet-finder-4g-mini/",
-          "kind": "Produkt",
-          "label": "PAJ PET Finder 4G Mini im Detail prüfen"
         }
       ],
       "file": "src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md"
@@ -2596,6 +2684,11 @@
       "source": "derived",
       "steps": [
         {
+          "href": "/produkt/enabot-rola-pettracker/",
+          "kind": "Produkt",
+          "label": "Enabot ROLA PetTracker im Detail prüfen"
+        },
+        {
           "href": "/produkt/garmin-alpha-t-20/",
           "kind": "Produkt",
           "label": "Garmin Alpha T 20 im Detail prüfen"
@@ -2604,11 +2697,6 @@
           "href": "/produkt/garmin-alpha-tt-25/",
           "kind": "Produkt",
           "label": "Garmin Alpha TT 25 im Detail prüfen"
-        },
-        {
-          "href": "/produkt/paj-pet-finder-4g-mini/",
-          "kind": "Produkt",
-          "label": "PAJ PET Finder 4G Mini im Detail prüfen"
         }
       ],
       "file": "src/content/comparisons/gps-tracker-ohne-abo.md"
@@ -2626,14 +2714,14 @@
           "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
         },
         {
-          "href": "/produkt/petsafe-mikrochip-katzenklappe/",
+          "href": "/produkt/sureflap-mikrochip-katzenklappe-connect/",
           "kind": "Produkt",
-          "label": "PetSafe Mikrochip Katzenklappe im Detail prüfen"
+          "label": "SureFlap Mikrochip Katzenklappe Connect im Detail prüfen"
         },
         {
-          "href": "/produkt/petsafe-petporte-smart-flap/",
+          "href": "/produkt/zeromouse-2-0/",
           "kind": "Produkt",
-          "label": "PetSafe Petporte smart flap im Detail prüfen"
+          "label": "ZeroMOUSE 2.0 im Detail prüfen"
         }
       ],
       "file": "src/content/comparisons/katzenklappen-mit-app-und-beuteerkennung.md"
@@ -2646,6 +2734,11 @@
       "source": "derived",
       "steps": [
         {
+          "href": "/produkt/enabot-rola-pettracker/",
+          "kind": "Produkt",
+          "label": "Enabot ROLA PetTracker im Detail prüfen"
+        },
+        {
           "href": "/produkt/garmin-alpha-t-20/",
           "kind": "Produkt",
           "label": "Garmin Alpha T 20 im Detail prüfen"
@@ -2654,11 +2747,6 @@
           "href": "/produkt/garmin-alpha-tt-25/",
           "kind": "Produkt",
           "label": "Garmin Alpha TT 25 im Detail prüfen"
-        },
-        {
-          "href": "/produkt/paj-pet-finder-4g-mini/",
-          "kind": "Produkt",
-          "label": "PAJ PET Finder 4G Mini im Detail prüfen"
         }
       ],
       "file": "src/content/comparisons/kleine-gps-tracker-fuer-katzen.md"
@@ -2789,6 +2877,31 @@
       "file": "src/content/products/cat-mate-c500.md"
     },
     {
+      "route": "/produkt/cat-mate-elite-355w/",
+      "type": "product",
+      "cluster": "katzenklappen",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-mikrochip-katzenklappen/",
+          "kind": "Vergleich",
+          "label": "Mikrochip-Katzenklappen im Vergleich vergleichen"
+        },
+        {
+          "href": "/katzenklappen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen"
+        },
+        {
+          "href": "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
+          "kind": "Vergleich",
+          "label": "Katzenklappen mit App und Beuteerkennung im Vergleich vergleichen"
+        }
+      ],
+      "file": "src/content/products/cat-mate-elite-355w.md"
+    },
+    {
       "route": "/produkt/cat-mate-shell-fountain/",
       "type": "product",
       "cluster": "trinkbrunnen",
@@ -2839,6 +2952,31 @@
       "file": "src/content/products/catit-pixi-smart-6-meal-feeder.md"
     },
     {
+      "route": "/produkt/catit-pixi-smart-trinkbrunnen/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/trinkbrunnen/",
+          "kind": "Ratgeber",
+          "label": "Trinkbrunnen für Katzen und Hunde"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        }
+      ],
+      "file": "src/content/products/catit-pixi-smart-trinkbrunnen.md"
+    },
+    {
       "route": "/produkt/catit-pixi-vision-smart-feeder/",
       "type": "product",
       "cluster": "futterautomaten",
@@ -2862,6 +3000,156 @@
         }
       ],
       "file": "src/content/products/catit-pixi-vision-smart-feeder.md"
+    },
+    {
+      "route": "/produkt/devoko-90l-automatisches-katzenklo/",
+      "type": "product",
+      "cluster": "automatische-katzentoiletten",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-automatische-katzentoiletten/",
+          "kind": "Vergleich",
+          "label": "Automatische Katzentoiletten im Vergleich vergleichen"
+        },
+        {
+          "href": "/automatische-katzentoiletten/",
+          "kind": "Ratgeber",
+          "label": "Automatische Katzentoiletten sicher auswählen"
+        },
+        {
+          "href": "/produkt/litter-robot-4/",
+          "kind": "Produkt",
+          "label": "Litter-Robot 4 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/devoko-90l-automatisches-katzenklo.md"
+    },
+    {
+      "route": "/produkt/enabot-ebo-air-2/",
+      "type": "product",
+      "cluster": "haustierkameras",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-haustierkameras/",
+          "kind": "Vergleich",
+          "label": "Haustierkameras im Vergleich vergleichen"
+        },
+        {
+          "href": "/haustierkameras/",
+          "kind": "Ratgeber",
+          "label": "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten"
+        },
+        {
+          "href": "/produkt/enabot-rola-mini/",
+          "kind": "Produkt",
+          "label": "Enabot ROLA Mini im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/enabot-ebo-air-2.md"
+    },
+    {
+      "route": "/produkt/enabot-rola-mini/",
+      "type": "product",
+      "cluster": "haustierkameras",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-haustierkameras/",
+          "kind": "Vergleich",
+          "label": "Haustierkameras im Vergleich vergleichen"
+        },
+        {
+          "href": "/haustierkameras/",
+          "kind": "Ratgeber",
+          "label": "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten"
+        },
+        {
+          "href": "/produkt/enabot-ebo-air-2/",
+          "kind": "Produkt",
+          "label": "Enabot EBO Air 2 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/enabot-rola-mini.md"
+    },
+    {
+      "route": "/produkt/enabot-rola-pettracker/",
+      "type": "product",
+      "cluster": "gps-tracker",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Hunde vergleichen"
+        },
+        {
+          "href": "/gps-tracker/",
+          "kind": "Ratgeber",
+          "label": "GPS-Tracker für Hunde und Katzen"
+        },
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/enabot-rola-pettracker.md"
+    },
+    {
+      "route": "/produkt/furbo-360-hundekamera/",
+      "type": "product",
+      "cluster": "haustierkameras",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-haustierkameras/",
+          "kind": "Vergleich",
+          "label": "Haustierkameras im Vergleich vergleichen"
+        },
+        {
+          "href": "/haustierkameras/",
+          "kind": "Ratgeber",
+          "label": "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten"
+        },
+        {
+          "href": "/produkt/enabot-ebo-air-2/",
+          "kind": "Produkt",
+          "label": "Enabot EBO Air 2 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/furbo-360-hundekamera.md"
+    },
+    {
+      "route": "/produkt/furbo-mini-360/",
+      "type": "product",
+      "cluster": "haustierkameras",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-haustierkameras/",
+          "kind": "Vergleich",
+          "label": "Haustierkameras im Vergleich vergleichen"
+        },
+        {
+          "href": "/haustierkameras/",
+          "kind": "Ratgeber",
+          "label": "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten"
+        },
+        {
+          "href": "/produkt/enabot-ebo-air-2/",
+          "kind": "Produkt",
+          "label": "Enabot EBO Air 2 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/furbo-mini-360.md"
     },
     {
       "route": "/produkt/garmin-alpha-t-20/",
@@ -3012,6 +3300,131 @@
         }
       ],
       "file": "src/content/products/imipaw-3l-automatic-cat-feeder.md"
+    },
+    {
+      "route": "/produkt/invoxia-biotracker-2026/",
+      "type": "product",
+      "cluster": "gps-tracker",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Hunde vergleichen"
+        },
+        {
+          "href": "/gps-tracker/",
+          "kind": "Ratgeber",
+          "label": "GPS-Tracker für Hunde und Katzen"
+        },
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/invoxia-biotracker-2026.md"
+    },
+    {
+      "route": "/produkt/litter-robot-4/",
+      "type": "product",
+      "cluster": "automatische-katzentoiletten",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-automatische-katzentoiletten/",
+          "kind": "Vergleich",
+          "label": "Automatische Katzentoiletten im Vergleich vergleichen"
+        },
+        {
+          "href": "/automatische-katzentoiletten/",
+          "kind": "Ratgeber",
+          "label": "Automatische Katzentoiletten sicher auswählen"
+        },
+        {
+          "href": "/produkt/devoko-90l-automatisches-katzenklo/",
+          "kind": "Produkt",
+          "label": "Devoko 90L Automatisches Katzenklo im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/litter-robot-4.md"
+    },
+    {
+      "route": "/produkt/litter-robot-5-pro/",
+      "type": "product",
+      "cluster": "automatische-katzentoiletten",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-automatische-katzentoiletten/",
+          "kind": "Vergleich",
+          "label": "Automatische Katzentoiletten im Vergleich vergleichen"
+        },
+        {
+          "href": "/automatische-katzentoiletten/",
+          "kind": "Ratgeber",
+          "label": "Automatische Katzentoiletten sicher auswählen"
+        },
+        {
+          "href": "/produkt/devoko-90l-automatisches-katzenklo/",
+          "kind": "Produkt",
+          "label": "Devoko 90L Automatisches Katzenklo im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/litter-robot-5-pro.md"
+    },
+    {
+      "route": "/produkt/neakasa-m1-lite/",
+      "type": "product",
+      "cluster": "automatische-katzentoiletten",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-automatische-katzentoiletten/",
+          "kind": "Vergleich",
+          "label": "Automatische Katzentoiletten im Vergleich vergleichen"
+        },
+        {
+          "href": "/automatische-katzentoiletten/",
+          "kind": "Ratgeber",
+          "label": "Automatische Katzentoiletten sicher auswählen"
+        },
+        {
+          "href": "/produkt/devoko-90l-automatisches-katzenklo/",
+          "kind": "Produkt",
+          "label": "Devoko 90L Automatisches Katzenklo im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/neakasa-m1-lite.md"
+    },
+    {
+      "route": "/produkt/neakasa-m1-plus/",
+      "type": "product",
+      "cluster": "automatische-katzentoiletten",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-automatische-katzentoiletten/",
+          "kind": "Vergleich",
+          "label": "Automatische Katzentoiletten im Vergleich vergleichen"
+        },
+        {
+          "href": "/automatische-katzentoiletten/",
+          "kind": "Ratgeber",
+          "label": "Automatische Katzentoiletten sicher auswählen"
+        },
+        {
+          "href": "/produkt/devoko-90l-automatisches-katzenklo/",
+          "kind": "Produkt",
+          "label": "Devoko 90L Automatisches Katzenklo im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/neakasa-m1-plus.md"
     },
     {
       "route": "/produkt/oneisall-2-2l-cordless-fountain/",
@@ -3171,19 +3584,19 @@
       "source": "frontmatter",
       "steps": [
         {
-          "href": "/vergleiche/beste-mikrochip-katzenklappen/",
-          "kind": "Vergleich",
-          "label": "Mikrochip-Katzenklappen im Vergleich vergleichen"
-        },
-        {
           "href": "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
           "kind": "Vergleich",
           "label": "Katzenklappen mit App und Beuteerkennung im Vergleich vergleichen"
         },
         {
-          "href": "/produkt/petsafe-mikrochip-katzenklappe/",
-          "kind": "Produkt",
-          "label": "PetSafe Mikrochip Katzenklappe im Detail prüfen"
+          "href": "/katzenklappen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen"
+        },
+        {
+          "href": "/vergleiche/beste-mikrochip-katzenklappen/",
+          "kind": "Vergleich",
+          "label": "Mikrochip-Katzenklappen im Vergleich vergleichen"
         }
       ],
       "file": "src/content/products/onlycat-mikrochip-katzenklappe.md"
@@ -3237,6 +3650,31 @@
         }
       ],
       "file": "src/content/products/pawbby-smart-pet-feeder.md"
+    },
+    {
+      "route": "/produkt/pawfit-3/",
+      "type": "product",
+      "cluster": "gps-tracker",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Hunde vergleichen"
+        },
+        {
+          "href": "/gps-tracker/",
+          "kind": "Ratgeber",
+          "label": "GPS-Tracker für Hunde und Katzen"
+        },
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/pawfit-3.md"
     },
     {
       "route": "/produkt/pawsync-smart-pet-feeder/",
@@ -3487,6 +3925,81 @@
         }
       ],
       "file": "src/content/products/petkit-fresh-element-solo.md"
+    },
+    {
+      "route": "/produkt/petkit-puramax-2/",
+      "type": "product",
+      "cluster": "automatische-katzentoiletten",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-automatische-katzentoiletten/",
+          "kind": "Vergleich",
+          "label": "Automatische Katzentoiletten im Vergleich vergleichen"
+        },
+        {
+          "href": "/automatische-katzentoiletten/",
+          "kind": "Ratgeber",
+          "label": "Automatische Katzentoiletten sicher auswählen"
+        },
+        {
+          "href": "/produkt/devoko-90l-automatisches-katzenklo/",
+          "kind": "Produkt",
+          "label": "Devoko 90L Automatisches Katzenklo im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petkit-puramax-2.md"
+    },
+    {
+      "route": "/produkt/petkit-purobot-max-3/",
+      "type": "product",
+      "cluster": "automatische-katzentoiletten",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-automatische-katzentoiletten/",
+          "kind": "Vergleich",
+          "label": "Automatische Katzentoiletten im Vergleich vergleichen"
+        },
+        {
+          "href": "/automatische-katzentoiletten/",
+          "kind": "Ratgeber",
+          "label": "Automatische Katzentoiletten sicher auswählen"
+        },
+        {
+          "href": "/produkt/devoko-90l-automatisches-katzenklo/",
+          "kind": "Produkt",
+          "label": "Devoko 90L Automatisches Katzenklo im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petkit-purobot-max-3.md"
+    },
+    {
+      "route": "/produkt/petkit-purobot-max-pro-2/",
+      "type": "product",
+      "cluster": "automatische-katzentoiletten",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-automatische-katzentoiletten/",
+          "kind": "Vergleich",
+          "label": "Automatische Katzentoiletten im Vergleich vergleichen"
+        },
+        {
+          "href": "/automatische-katzentoiletten/",
+          "kind": "Ratgeber",
+          "label": "Automatische Katzentoiletten sicher auswählen"
+        },
+        {
+          "href": "/produkt/devoko-90l-automatisches-katzenklo/",
+          "kind": "Produkt",
+          "label": "Devoko 90L Automatisches Katzenklo im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petkit-purobot-max-pro-2.md"
     },
     {
       "route": "/produkt/petkit-yumshare-dual-hopper/",
@@ -3839,6 +4352,31 @@
       "file": "src/content/products/petlibro-granary-wifi-feeder.md"
     },
     {
+      "route": "/produkt/petlibro-luma-smart-litter-box/",
+      "type": "product",
+      "cluster": "automatische-katzentoiletten",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-automatische-katzentoiletten/",
+          "kind": "Vergleich",
+          "label": "Automatische Katzentoiletten im Vergleich vergleichen"
+        },
+        {
+          "href": "/automatische-katzentoiletten/",
+          "kind": "Ratgeber",
+          "label": "Automatische Katzentoiletten sicher auswählen"
+        },
+        {
+          "href": "/produkt/devoko-90l-automatisches-katzenklo/",
+          "kind": "Produkt",
+          "label": "Devoko 90L Automatisches Katzenklo im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petlibro-luma-smart-litter-box.md"
+    },
+    {
       "route": "/produkt/petlibro-one-rfid-smart-feeder/",
       "type": "product",
       "cluster": "futterautomaten",
@@ -3887,6 +4425,31 @@
         }
       ],
       "file": "src/content/products/petlibro-polar-wet-food-feeder.md"
+    },
+    {
+      "route": "/produkt/petlibro-scout-smart-camera/",
+      "type": "product",
+      "cluster": "haustierkameras",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-haustierkameras/",
+          "kind": "Vergleich",
+          "label": "Haustierkameras im Vergleich vergleichen"
+        },
+        {
+          "href": "/haustierkameras/",
+          "kind": "Ratgeber",
+          "label": "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten"
+        },
+        {
+          "href": "/produkt/enabot-ebo-air-2/",
+          "kind": "Produkt",
+          "label": "Enabot EBO Air 2 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petlibro-scout-smart-camera.md"
     },
     {
       "route": "/produkt/petlibro-space-smart-feeder/",
@@ -4001,14 +4564,14 @@
           "label": "Mikrochip-Katzenklappen im Vergleich vergleichen"
         },
         {
-          "href": "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
-          "kind": "Vergleich",
-          "label": "Katzenklappen mit App und Beuteerkennung im Vergleich vergleichen"
+          "href": "/katzenklappe-einbauen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappe einbauen: Tür, Glas und Wand richtig planen"
         },
         {
-          "href": "/produkt/onlycat-mikrochip-katzenklappe/",
-          "kind": "Produkt",
-          "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
+          "href": "/katzenklappen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen"
         }
       ],
       "file": "src/content/products/petsafe-mikrochip-katzenklappe.md"
@@ -4031,9 +4594,9 @@
           "label": "Katzenklappen mit App und Beuteerkennung im Vergleich vergleichen"
         },
         {
-          "href": "/produkt/onlycat-mikrochip-katzenklappe/",
+          "href": "/produkt/cat-mate-elite-355w/",
           "kind": "Produkt",
-          "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
+          "label": "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer im Detail prüfen"
         }
       ],
       "file": "src/content/products/petsafe-petporte-smart-flap.md"
@@ -4064,6 +4627,81 @@
       "file": "src/content/products/petsafe-smart-feed-2.md"
     },
     {
+      "route": "/produkt/petsafe-streamside-trinkbrunnen/",
+      "type": "product",
+      "cluster": "trinkbrunnen",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Katzen vergleichen"
+        },
+        {
+          "href": "/trinkbrunnen/",
+          "kind": "Ratgeber",
+          "label": "Trinkbrunnen für Katzen und Hunde"
+        },
+        {
+          "href": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste Trinkbrunnen für Hunde vergleichen"
+        }
+      ],
+      "file": "src/content/products/petsafe-streamside-trinkbrunnen.md"
+    },
+    {
+      "route": "/produkt/petsnowy-snow-plus/",
+      "type": "product",
+      "cluster": "automatische-katzentoiletten",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-automatische-katzentoiletten/",
+          "kind": "Vergleich",
+          "label": "Automatische Katzentoiletten im Vergleich vergleichen"
+        },
+        {
+          "href": "/automatische-katzentoiletten/",
+          "kind": "Ratgeber",
+          "label": "Automatische Katzentoiletten sicher auswählen"
+        },
+        {
+          "href": "/produkt/devoko-90l-automatisches-katzenklo/",
+          "kind": "Produkt",
+          "label": "Devoko 90L Automatisches Katzenklo im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petsnowy-snow-plus.md"
+    },
+    {
+      "route": "/produkt/pettec-cam-360/",
+      "type": "product",
+      "cluster": "haustierkameras",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-haustierkameras/",
+          "kind": "Vergleich",
+          "label": "Haustierkameras im Vergleich vergleichen"
+        },
+        {
+          "href": "/haustierkameras/",
+          "kind": "Ratgeber",
+          "label": "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten"
+        },
+        {
+          "href": "/produkt/enabot-ebo-air-2/",
+          "kind": "Produkt",
+          "label": "Enabot EBO Air 2 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/pettec-cam-360.md"
+    },
+    {
       "route": "/produkt/petwalk-medium-tiertuer/",
       "type": "product",
       "cluster": "katzenklappen",
@@ -4071,9 +4709,9 @@
       "source": "frontmatter",
       "steps": [
         {
-          "href": "/vergleiche/beste-mikrochip-katzenklappen/",
-          "kind": "Vergleich",
-          "label": "Mikrochip-Katzenklappen im Vergleich vergleichen"
+          "href": "/katzenklappe-zugluft-und-waermedaemmung/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappe: Zugluft und Wärmedämmung richtig bewerten"
         },
         {
           "href": "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
@@ -4081,12 +4719,62 @@
           "label": "Katzenklappen mit App und Beuteerkennung im Vergleich vergleichen"
         },
         {
-          "href": "/produkt/onlycat-mikrochip-katzenklappe/",
-          "kind": "Produkt",
-          "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
+          "href": "/katzenklappen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen"
         }
       ],
       "file": "src/content/products/petwalk-medium-tiertuer.md"
+    },
+    {
+      "route": "/produkt/prothelis-area-pets/",
+      "type": "product",
+      "cluster": "gps-tracker",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Hunde vergleichen"
+        },
+        {
+          "href": "/gps-tracker/",
+          "kind": "Ratgeber",
+          "label": "GPS-Tracker für Hunde und Katzen"
+        },
+        {
+          "href": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "kind": "Vergleich",
+          "label": "Beste GPS-Tracker für Katzen vergleichen"
+        }
+      ],
+      "file": "src/content/products/prothelis-area-pets.md"
+    },
+    {
+      "route": "/produkt/reolink-e1-zoom/",
+      "type": "product",
+      "cluster": "haustierkameras",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-haustierkameras/",
+          "kind": "Vergleich",
+          "label": "Haustierkameras im Vergleich vergleichen"
+        },
+        {
+          "href": "/haustierkameras/",
+          "kind": "Ratgeber",
+          "label": "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten"
+        },
+        {
+          "href": "/produkt/enabot-ebo-air-2/",
+          "kind": "Produkt",
+          "label": "Enabot EBO Air 2 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/reolink-e1-zoom.md"
     },
     {
       "route": "/produkt/surefeed-microchip-pet-feeder-connect/",
@@ -4156,9 +4844,9 @@
           "label": "Katzenklappen mit App und Beuteerkennung im Vergleich vergleichen"
         },
         {
-          "href": "/produkt/onlycat-mikrochip-katzenklappe/",
+          "href": "/produkt/cat-mate-elite-355w/",
           "kind": "Produkt",
-          "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
+          "label": "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer im Detail prüfen"
         }
       ],
       "file": "src/content/products/sureflap-dualscan-mikrochip-katzenklappe.md"
@@ -4181,9 +4869,9 @@
           "label": "Katzenklappen mit App und Beuteerkennung im Vergleich vergleichen"
         },
         {
-          "href": "/produkt/onlycat-mikrochip-katzenklappe/",
+          "href": "/produkt/cat-mate-elite-355w/",
           "kind": "Produkt",
-          "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
+          "label": "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer im Detail prüfen"
         }
       ],
       "file": "src/content/products/sureflap-mikrochip-katzenklappe-connect.md"
@@ -4201,14 +4889,14 @@
           "label": "Mikrochip-Katzenklappen im Vergleich vergleichen"
         },
         {
-          "href": "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
-          "kind": "Vergleich",
-          "label": "Katzenklappen mit App und Beuteerkennung im Vergleich vergleichen"
+          "href": "/katzenklappe-fuer-mehrere-katzen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappe für mehrere Katzen: Rechte richtig planen"
         },
         {
-          "href": "/produkt/onlycat-mikrochip-katzenklappe/",
-          "kind": "Produkt",
-          "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
+          "href": "/katzenklappe-einbauen/",
+          "kind": "Ratgeber",
+          "label": "Katzenklappe einbauen: Tür, Glas und Wand richtig planen"
         }
       ],
       "file": "src/content/products/sureflap-mikrochip-katzenklappe.md"
@@ -4506,9 +5194,9 @@
           "label": "Katzenklappen mit App und Beuteerkennung im Vergleich vergleichen"
         },
         {
-          "href": "/produkt/onlycat-mikrochip-katzenklappe/",
+          "href": "/produkt/cat-mate-elite-355w/",
           "kind": "Produkt",
-          "label": "OnlyCat Mikrochip Katzenklappe im Detail prüfen"
+          "label": "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer im Detail prüfen"
         }
       ],
       "file": "src/content/products/zeromouse-2-0.md"
@@ -5101,7 +5789,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/vergleiche/beste-gps-tracker-fuer-hunde/"
+        "/vergleiche/beste-gps-tracker-fuer-katzen/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5111,7 +5799,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/vergleiche/beste-gps-tracker-fuer-katzen/"
+        "/vergleiche/beste-trinkbrunnen-fuer-hunde/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5121,7 +5809,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/vergleiche/beste-trinkbrunnen-fuer-hunde/"
+        "/vergleiche/futterautomat-fuer-grosse-hunde/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5131,7 +5819,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/vergleiche/beste-trinkbrunnen-fuer-katzen/"
+        "/vergleiche/futterautomat-gegen-schlingen/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5141,7 +5829,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/vergleiche/futterautomat-fuer-grosse-hunde/"
+        "/vergleiche/futterautomat-mit-app/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5151,7 +5839,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/vergleiche/futterautomat-gegen-schlingen/"
+        "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5161,7 +5849,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/vergleiche/futterautomat-mit-app/"
+        "/vergleiche/gps-tracker-ohne-abo/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5171,7 +5859,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/"
+        "/vergleiche/kleine-gps-tracker-fuer-katzen/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5181,7 +5869,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/vergleiche/gps-tracker-ohne-abo/"
+        "/produkt/aqara-smart-pet-feeder-c1/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5191,7 +5879,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/vergleiche/kleine-gps-tracker-fuer-katzen/"
+        "/produkt/cat-mate-335-pet-fountain/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5201,7 +5889,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/aqara-smart-pet-feeder-c1/"
+        "/produkt/cat-mate-c200/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5211,7 +5899,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/cat-mate-335-pet-fountain/"
+        "/produkt/cat-mate-c300/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5221,7 +5909,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/cat-mate-c200/"
+        "/produkt/cat-mate-c500/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5231,7 +5919,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/cat-mate-c300/"
+        "/produkt/cat-mate-shell-fountain/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5241,7 +5929,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/cat-mate-c500/"
+        "/produkt/catit-pixi-smart-6-meal-feeder/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5251,7 +5939,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/cat-mate-shell-fountain/"
+        "/produkt/catit-pixi-vision-smart-feeder/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5261,7 +5949,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/catit-pixi-smart-6-meal-feeder/"
+        "/produkt/garmin-alpha-t-20/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5271,7 +5959,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/catit-pixi-vision-smart-feeder/"
+        "/produkt/garmin-alpha-tt-25/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5281,7 +5969,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/garmin-alpha-t-20/"
+        "/produkt/honeyguardian-a305d/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5291,7 +5979,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/garmin-alpha-tt-25/"
+        "/produkt/honeyguardian-a68/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5301,7 +5989,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/honeyguardian-a305d/"
+        "/produkt/honeyguardian-smart-pet-feeder-s305d/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5311,7 +5999,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/honeyguardian-a68/"
+        "/produkt/imipaw-3l-automatic-cat-feeder/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5321,7 +6009,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/honeyguardian-smart-pet-feeder-s305d/"
+        "/produkt/oneisall-2-2l-cordless-fountain/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5331,7 +6019,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/imipaw-3l-automatic-cat-feeder/"
+        "/produkt/oneisall-2-in-1-feeder-water/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5341,7 +6029,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/oneisall-2-2l-cordless-fountain/"
+        "/produkt/oneisall-3-2l-cordless-fountain/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5351,7 +6039,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/oneisall-2-in-1-feeder-water/"
+        "/produkt/oneisall-3-5l-cordless-fountain/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5361,7 +6049,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/oneisall-3-2l-cordless-fountain/"
+        "/produkt/oneisall-5l-automatic-cat-feeder/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5371,7 +6059,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/oneisall-3-5l-cordless-fountain/"
+        "/produkt/oneisall-7l-dog-water-fountain/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5381,7 +6069,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/oneisall-5l-automatic-cat-feeder/"
+        "/produkt/paj-pet-finder-4g-mini/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5391,7 +6079,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/oneisall-7l-dog-water-fountain/"
+        "/produkt/pawbby-smart-pet-feeder/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5401,7 +6089,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/paj-pet-finder-4g-mini/"
+        "/produkt/pawsync-smart-pet-feeder/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5411,7 +6099,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/pawbby-smart-pet-feeder/"
+        "/produkt/petkit-eversweet-3-pro-uvc/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5421,7 +6109,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/pawsync-smart-pet-feeder/"
+        "/produkt/petkit-eversweet-5-mini/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5431,7 +6119,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petkit-eversweet-3-pro-uvc/"
+        "/produkt/petkit-eversweet-max-2-uvc/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5441,7 +6129,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petkit-eversweet-5-mini/"
+        "/produkt/petkit-eversweet-max-cordless/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5451,7 +6139,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petkit-eversweet-max-2-uvc/"
+        "/produkt/petkit-eversweet-solo-2-fountain/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5461,7 +6149,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petkit-eversweet-max-cordless/"
+        "/produkt/petkit-eversweet-solo-se/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5471,7 +6159,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petkit-eversweet-solo-2-fountain/"
+        "/produkt/petkit-eversweet-ultra/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5481,7 +6169,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petkit-eversweet-solo-se/"
+        "/produkt/petkit-fresh-element-infinity/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5491,7 +6179,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petkit-eversweet-ultra/"
+        "/produkt/petkit-fresh-element-solo/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5501,7 +6189,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petkit-fresh-element-infinity/"
+        "/produkt/petkit-yumshare-dual-hopper/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5511,7 +6199,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petkit-fresh-element-solo/"
+        "/produkt/petkit-yumshare-solo-2/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5521,7 +6209,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petkit-yumshare-dual-hopper/"
+        "/produkt/petlibro-air-automatic-feeder/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5531,7 +6219,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petkit-yumshare-solo-2/"
+        "/produkt/petlibro-air-wifi-feeder/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5541,7 +6229,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petlibro-air-automatic-feeder/"
+        "/produkt/petlibro-capsule-dog-fountain/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5551,7 +6239,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petlibro-air-wifi-feeder/"
+        "/produkt/petlibro-dockstream-2-smart-cordless/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5561,7 +6249,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petlibro-capsule-dog-fountain/"
+        "/produkt/petlibro-dockstream-2-smart/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5571,7 +6259,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petlibro-dockstream-2-smart-cordless/"
+        "/produkt/petlibro-dockstream-cordless/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5581,7 +6269,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petlibro-dockstream-2-smart/"
+        "/produkt/petlibro-dockstream-rfid-smart/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5591,7 +6279,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petlibro-dockstream-cordless/"
+        "/produkt/petlibro-glacier-ultrafiltration/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5601,7 +6289,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petlibro-dockstream-rfid-smart/"
+        "/produkt/petlibro-granary-2-vision/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5611,7 +6299,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petlibro-glacier-ultrafiltration/"
+        "/produkt/petlibro-granary-camera-feeder/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5621,7 +6309,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petlibro-granary-2-vision/"
+        "/produkt/petlibro-granary-dual-feeder/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5631,7 +6319,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petlibro-granary-camera-feeder/"
+        "/produkt/petlibro-granary-wifi-feeder/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5641,7 +6329,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petlibro-granary-dual-feeder/"
+        "/produkt/petlibro-one-rfid-smart-feeder/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5651,7 +6339,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petlibro-granary-wifi-feeder/"
+        "/produkt/petlibro-polar-wet-food-feeder/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5661,7 +6349,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petlibro-one-rfid-smart-feeder/"
+        "/produkt/petlibro-space-smart-feeder/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5671,7 +6359,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petlibro-polar-wet-food-feeder/"
+        "/produkt/petlibro-stainless-steel-fountain/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5681,7 +6369,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petlibro-space-smart-feeder/"
+        "/produkt/petsafe-freshfeed-refrigerated-feeder/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5691,7 +6379,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petlibro-stainless-steel-fountain/"
+        "/produkt/petsafe-healthy-pet-simply-feed/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5701,7 +6389,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petsafe-freshfeed-refrigerated-feeder/"
+        "/produkt/petsafe-petporte-smart-flap/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5711,7 +6399,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petsafe-healthy-pet-simply-feed/"
+        "/produkt/petsafe-smart-feed-2/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5721,7 +6409,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petsafe-petporte-smart-flap/"
+        "/produkt/surefeed-microchip-pet-feeder-connect/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5731,7 +6419,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/petsafe-smart-feed-2/"
+        "/produkt/surefeed-microchip-pet-feeder/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5741,7 +6429,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/surefeed-microchip-pet-feeder-connect/"
+        "/produkt/sureflap-dualscan-mikrochip-katzenklappe/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5751,7 +6439,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/surefeed-microchip-pet-feeder/"
+        "/produkt/sureflap-mikrochip-katzenklappe-connect/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5761,7 +6449,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/sureflap-dualscan-mikrochip-katzenklappe/"
+        "/produkt/tractive-cat-6-mini/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5771,7 +6459,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/sureflap-mikrochip-katzenklappe-connect/"
+        "/produkt/tractive-dog-6-xl/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5781,7 +6469,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/tractive-cat-6-mini/"
+        "/produkt/tractive-dog-6/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5791,7 +6479,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/tractive-dog-6-xl/"
+        "/produkt/weenect-xs/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5801,7 +6489,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/tractive-dog-6/"
+        "/produkt/weenect-xt/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5811,7 +6499,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/weenect-xs/"
+        "/produkt/wopet-cube-air-ca10/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5821,7 +6509,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/weenect-xt/"
+        "/produkt/wopet-heritage-view-camera-feeder/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5831,7 +6519,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/wopet-cube-air-ca10/"
+        "/produkt/wopet-patrol-f07-pro/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5841,7 +6529,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/wopet-heritage-view-camera-feeder/"
+        "/produkt/wopet-pioneer-f01-plus/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5851,7 +6539,7 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/wopet-patrol-f07-pro/"
+        "/produkt/xiaomi-smart-pet-food-feeder-2/"
       ],
       "source": "audit:decision-journeys"
     },
@@ -5861,32 +6549,12 @@
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
       "routes": [
-        "/produkt/wopet-pioneer-f01-plus/"
-      ],
-      "source": "audit:decision-journeys"
-    },
-    {
-      "id": "decision-journey-0136",
-      "priority": "P2",
-      "cluster": "decision-journey",
-      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
-      "routes": [
-        "/produkt/xiaomi-smart-pet-food-feeder-2/"
-      ],
-      "source": "audit:decision-journeys"
-    },
-    {
-      "id": "decision-journey-0137",
-      "priority": "P2",
-      "cluster": "decision-journey",
-      "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
-      "routes": [
         "/produkt/xiaomi-smart-pet-fountain-2/"
       ],
       "source": "audit:decision-journeys"
     },
     {
-      "id": "decision-journey-0138",
+      "id": "decision-journey-0136",
       "priority": "P2",
       "cluster": "decision-journey",
       "title": "Journey wird noch heuristisch statt explizit aus dem Frontmatter erzeugt.",
