@@ -20,24 +20,8 @@ seo: { title: "PetSafe Streamside: Keramik, Filter und Reinigung", description: 
 hub: { sections: ["produkte", "trinkbrunnen"] }
 tags: ["trinkbrunnen", "katze", "kleiner-hund", "petsafe", "keramik"]
 images:
-  hero:
-    src: "../../assets/images/products/petsafe-streamside-trinkbrunnen/hero.webp"
-    alt: "PetSafe Keramik-Trinkbrunnen Streamside in redaktioneller Produktdarstellung"
-  thumbnail:
-    src: "../../assets/images/products/petsafe-streamside-trinkbrunnen/thumbnail.webp"
-    alt: "PetSafe Keramik-Trinkbrunnen Streamside als kompaktes Produktbild"
-  comparison:
-    src: "../../assets/images/products/petsafe-streamside-trinkbrunnen/comparison.webp"
-    alt: "PetSafe Keramik-Trinkbrunnen Streamside für den Produktvergleich"
-  gallery:
-    - src: "../../assets/images/products/petsafe-streamside-trinkbrunnen/gallery-1.webp"
-      alt: "PetSafe Keramik-Trinkbrunnen Streamside – Produktansicht 1"
-    - src: "../../assets/images/products/petsafe-streamside-trinkbrunnen/gallery-2.webp"
-      alt: "PetSafe Keramik-Trinkbrunnen Streamside – Produktansicht 2"
-    - src: "../../assets/images/products/petsafe-streamside-trinkbrunnen/gallery-3.webp"
-      alt: "PetSafe Keramik-Trinkbrunnen Streamside – Produktansicht 3"
-    - src: "../../assets/images/products/petsafe-streamside-trinkbrunnen/gallery-4.webp"
-      alt: "PetSafe Keramik-Trinkbrunnen Streamside – Produktansicht 4"
+  hero: { src: "../../assets/images/project/pfotentechnik/comparison/default-editorial-hero.webp", alt: "Neutrale redaktionelle Darstellung: PetSafe Keramik-Trinkbrunnen Streamside" }
+  gallery: []
 price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-16", source: { id: "petsafe", label: "PetSafe Deutschland", type: "editorial", url: "https://www.petsafe.com/de/p/keramik-trinkbrunnen-streamside/PWW19-17098/" } }
 priceAutomation: "editorial"
 priceState: "unknown"

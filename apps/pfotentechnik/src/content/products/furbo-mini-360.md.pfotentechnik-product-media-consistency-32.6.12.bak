@@ -20,22 +20,7 @@ seo: { title: "Furbo Mini 360 im Datencheck", description: "Furbo Mini 360: 2K, 
 hub: { sections: ["produkte", "haustierkameras"] }
 tags: ["haustierkamera", "hund", "katze", "leckerlies", "app"]
 images:
-  hero:
-    src: "../../assets/images/products/furbo-mini-360/hero.webp"
-    alt: "Furbo Mini 360 in redaktioneller Produktdarstellung"
-  thumbnail:
-    src: "../../assets/images/products/furbo-mini-360/thumbnail.webp"
-    alt: "Furbo Mini 360 als kompaktes Produktbild"
-  comparison:
-    src: "../../assets/images/products/furbo-mini-360/comparison.webp"
-    alt: "Furbo Mini 360 für den Produktvergleich"
-  gallery:
-    - src: "../../assets/images/products/furbo-mini-360/gallery-1.webp"
-      alt: "Furbo Mini 360 – Produktansicht 1"
-    - src: "../../assets/images/products/furbo-mini-360/gallery-2.webp"
-      alt: "Furbo Mini 360 – Produktansicht 2"
-    - src: "../../assets/images/products/furbo-mini-360/gallery-3.webp"
-      alt: "Furbo Mini 360 – Produktansicht 3"
+  hero: { src: "../../assets/images/project/pfotentechnik/comparison/default-editorial-hero.webp", alt: "Neutrale redaktionelle Platzhaltergrafik bis zum modellgetreuen Furbo-Mini-360-Produktbild" }
 price: { current: null, currency: "EUR", status: "unknown" }
 rating: 3.7
 ratings: { interaktion: 4.3, transparenz: 3.0, raumabdeckung: 3.8, alltag: 3.7 }

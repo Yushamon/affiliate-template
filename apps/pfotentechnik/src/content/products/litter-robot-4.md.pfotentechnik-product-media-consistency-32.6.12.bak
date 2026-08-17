@@ -20,26 +20,8 @@ seo: { title: "Litter-Robot 4: Größe, Gewicht und App im Check", description: 
 hub: { sections: ["produkte", "automatische-katzentoiletten"] }
 tags: ["automatische-katzentoilette", "whisker", "katze", "mehrkatzenhaushalt", "app"]
 images:
-  hero:
-    src: "../../assets/images/products/litter-robot-4/hero.webp"
-    alt: "Litter-Robot 4 in redaktioneller Produktdarstellung"
-  thumbnail:
-    src: "../../assets/images/products/litter-robot-4/thumbnail.webp"
-    alt: "Litter-Robot 4 als kompaktes Produktbild"
-  comparison:
-    src: "../../assets/images/products/litter-robot-4/comparison.webp"
-    alt: "Litter-Robot 4 für den Produktvergleich"
-  gallery:
-    - src: "../../assets/images/products/litter-robot-4/gallery-1.webp"
-      alt: "Litter-Robot 4 – Produktansicht 1"
-    - src: "../../assets/images/products/litter-robot-4/gallery-2.webp"
-      alt: "Litter-Robot 4 – Produktansicht 2"
-    - src: "../../assets/images/products/litter-robot-4/gallery-3.webp"
-      alt: "Litter-Robot 4 – Produktansicht 3"
-    - src: "../../assets/images/products/litter-robot-4/gallery-4.webp"
-      alt: "Litter-Robot 4 – Produktansicht 4"
-    - src: "../../assets/images/products/litter-robot-4/gallery-5.webp"
-      alt: "Litter-Robot 4 – Produktansicht 5"
+  hero: { src: "../../assets/images/project/pfotentechnik/comparison/default-editorial-hero.webp", alt: "Neutrale redaktionelle Darstellung: Litter-Robot 4" }
+  gallery: []
 price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-16", source: { id: "whisker", label: "Whisker EU", type: "editorial", url: "https://www.litter-robot.com/eu/de/litter-robot-4.html" } }
 priceAutomation: "editorial"
 priceState: "unknown"

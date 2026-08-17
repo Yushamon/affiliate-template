@@ -20,24 +20,8 @@ seo: { title: "Catit PIXI Smart-Trinkbrunnen: App, UVC und Pflege", description:
 hub: { sections: ["produkte", "trinkbrunnen"] }
 tags: ["trinkbrunnen", "katze", "catit", "app", "uvc"]
 images:
-  hero:
-    src: "../../assets/images/products/catit-pixi-smart-trinkbrunnen/hero.webp"
-    alt: "Catit PIXI Smart-Trinkbrunnen in redaktioneller Produktdarstellung"
-  thumbnail:
-    src: "../../assets/images/products/catit-pixi-smart-trinkbrunnen/thumbnail.webp"
-    alt: "Catit PIXI Smart-Trinkbrunnen als kompaktes Produktbild"
-  comparison:
-    src: "../../assets/images/products/catit-pixi-smart-trinkbrunnen/comparison.webp"
-    alt: "Catit PIXI Smart-Trinkbrunnen für den Produktvergleich"
-  gallery:
-    - src: "../../assets/images/products/catit-pixi-smart-trinkbrunnen/gallery-1.webp"
-      alt: "Catit PIXI Smart-Trinkbrunnen – Produktansicht 1"
-    - src: "../../assets/images/products/catit-pixi-smart-trinkbrunnen/gallery-2.webp"
-      alt: "Catit PIXI Smart-Trinkbrunnen – Produktansicht 2"
-    - src: "../../assets/images/products/catit-pixi-smart-trinkbrunnen/gallery-3.webp"
-      alt: "Catit PIXI Smart-Trinkbrunnen – Produktansicht 3"
-    - src: "../../assets/images/products/catit-pixi-smart-trinkbrunnen/gallery-5.webp"
-      alt: "Catit PIXI Smart-Trinkbrunnen – Produktansicht 4"
+  hero: { src: "../../assets/images/project/pfotentechnik/comparison/default-editorial-hero.webp", alt: "Neutrale redaktionelle Darstellung: Catit PIXI Smart-Trinkbrunnen" }
+  gallery: []
 price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-16", source: { id: "catit", label: "Catit", type: "editorial", url: "https://www.catit.com/de/produkte/trinkbrunnen/pixi-smart-trinkbrunnen/" } }
 priceAutomation: "editorial"
 priceState: "unknown"

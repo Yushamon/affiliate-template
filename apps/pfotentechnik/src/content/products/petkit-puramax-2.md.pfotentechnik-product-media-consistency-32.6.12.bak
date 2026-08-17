@@ -25,24 +25,8 @@ seo:
 hub: { sections: ["produkte", "automatische-katzentoiletten"] }
 tags: ["automatische-katzentoilette", "petkit", "katze", "app", "sicherheit"]
 images:
-  hero:
-    src: "../../assets/images/products/petkit-puramax-2/hero.webp"
-    alt: "PETKIT PuraMax 2 in redaktioneller Produktdarstellung"
-  thumbnail:
-    src: "../../assets/images/products/petkit-puramax-2/thumbnail.webp"
-    alt: "PETKIT PuraMax 2 als kompaktes Produktbild"
-  comparison:
-    src: "../../assets/images/products/petkit-puramax-2/comparison.webp"
-    alt: "PETKIT PuraMax 2 für den Produktvergleich"
-  gallery:
-    - src: "../../assets/images/products/petkit-puramax-2/gallery-1.webp"
-      alt: "PETKIT PuraMax 2 – Produktansicht 1"
-    - src: "../../assets/images/products/petkit-puramax-2/gallery-2.webp"
-      alt: "PETKIT PuraMax 2 – Produktansicht 2"
-    - src: "../../assets/images/products/petkit-puramax-2/gallery-3.webp"
-      alt: "PETKIT PuraMax 2 – Produktansicht 3"
-    - src: "../../assets/images/products/petkit-puramax-2/gallery-4.webp"
-      alt: "PETKIT PuraMax 2 – Produktansicht 4"
+  hero: { src: "../../assets/images/project/pfotentechnik/comparison/default-editorial-hero.webp", alt: "Neutrale redaktionelle Darstellung: PETKIT PuraMax 2" }
+  gallery: []
 price:
   current: null
   currency: "EUR"

@@ -20,26 +20,8 @@ seo: { title: "Pawfit 3: Gewicht, Akku, Abo und Audio-ID", description: "Pawfit 
 hub: { sections: ["produkte", "gps-tracker"] }
 tags: ["gps-tracker", "hund", "pawfit", "audio-id", "abo"]
 images:
-  hero:
-    src: "../../assets/images/products/pawfit-3/hero.webp"
-    alt: "Pawfit 3 in redaktioneller Produktdarstellung"
-  thumbnail:
-    src: "../../assets/images/products/pawfit-3/thumbnail.webp"
-    alt: "Pawfit 3 als kompaktes Produktbild"
-  comparison:
-    src: "../../assets/images/products/pawfit-3/comparison.webp"
-    alt: "Pawfit 3 für den Produktvergleich"
-  gallery:
-    - src: "../../assets/images/products/pawfit-3/gallery-1.webp"
-      alt: "Pawfit 3 – Produktansicht 1"
-    - src: "../../assets/images/products/pawfit-3/gallery-2.webp"
-      alt: "Pawfit 3 – Produktansicht 2"
-    - src: "../../assets/images/products/pawfit-3/gallery-3.webp"
-      alt: "Pawfit 3 – Produktansicht 3"
-    - src: "../../assets/images/products/pawfit-3/gallery-4.webp"
-      alt: "Pawfit 3 – Produktansicht 4"
-    - src: "../../assets/images/products/pawfit-3/gallery-5.webp"
-      alt: "Pawfit 3 – Produktansicht 5"
+  hero: { src: "../../assets/images/project/pfotentechnik/comparison/default-editorial-hero.webp", alt: "Neutrale redaktionelle Darstellung: Pawfit 3" }
+  gallery: []
 price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-16", source: { id: "pawfit", label: "Pawfit", type: "editorial", url: "https://www.pawfit.com/de-us/product/pawfit-3-pet-tracker.html" } }
 priceAutomation: "editorial"
 priceState: "unknown"

@@ -20,24 +20,8 @@ seo: { title: "Invoxia Biotracker 2026: GPS, Akku und Tarife", description: "Inv
 hub: { sections: ["produkte", "gps-tracker"] }
 tags: ["gps-tracker", "hund", "invoxia", "gesundheitstracking", "abo"]
 images:
-  hero:
-    src: "../../assets/images/products/invoxia-biotracker-2026/hero.webp"
-    alt: "Invoxia Biotracker Edition 2026 in redaktioneller Produktdarstellung"
-  thumbnail:
-    src: "../../assets/images/products/invoxia-biotracker-2026/thumbnail.webp"
-    alt: "Invoxia Biotracker Edition 2026 als kompaktes Produktbild"
-  comparison:
-    src: "../../assets/images/products/invoxia-biotracker-2026/comparison.webp"
-    alt: "Invoxia Biotracker Edition 2026 für den Produktvergleich"
-  gallery:
-    - src: "../../assets/images/products/invoxia-biotracker-2026/gallery-1.webp"
-      alt: "Invoxia Biotracker Edition 2026 – Produktansicht 1"
-    - src: "../../assets/images/products/invoxia-biotracker-2026/gallery-2.webp"
-      alt: "Invoxia Biotracker Edition 2026 – Produktansicht 2"
-    - src: "../../assets/images/products/invoxia-biotracker-2026/gallery-3.webp"
-      alt: "Invoxia Biotracker Edition 2026 – Produktansicht 3"
-    - src: "../../assets/images/products/invoxia-biotracker-2026/gallery-4.webp"
-      alt: "Invoxia Biotracker Edition 2026 – Produktansicht 4"
+  hero: { src: "../../assets/images/project/pfotentechnik/comparison/default-editorial-hero.webp", alt: "Neutrale redaktionelle Darstellung: Invoxia Biotracker Edition 2026" }
+  gallery: []
 price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-16", source: { id: "invoxia", label: "Invoxia", type: "editorial", url: "https://www.invoxia.com/en-US/petcare/minitailz-dog-tracker" } }
 priceAutomation: "editorial"
 priceState: "unknown"

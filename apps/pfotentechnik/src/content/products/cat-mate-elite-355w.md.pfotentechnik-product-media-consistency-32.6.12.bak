@@ -20,24 +20,8 @@ seo: { title: "Cat Mate Elite 355W: Timer und Chiprechte", description: "Cat Mat
 hub: { sections: ["produkte", "katzenklappen"] }
 tags: ["katzenklappe", "mikrochip", "cat-mate", "timer", "ohne-app"]
 images:
-  hero:
-    src: "../../assets/images/products/cat-mate-elite-355w/hero.webp"
-    alt: "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer in redaktioneller Produktdarstellung"
-  thumbnail:
-    src: "../../assets/images/products/cat-mate-elite-355w/thumbnail.webp"
-    alt: "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer als kompaktes Produktbild"
-  comparison:
-    src: "../../assets/images/products/cat-mate-elite-355w/comparison.webp"
-    alt: "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer für den Produktvergleich"
-  gallery:
-    - src: "../../assets/images/products/cat-mate-elite-355w/gallery-1.webp"
-      alt: "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer – Produktansicht 1"
-    - src: "../../assets/images/products/cat-mate-elite-355w/gallery-2.webp"
-      alt: "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer – Produktansicht 2"
-    - src: "../../assets/images/products/cat-mate-elite-355w/gallery-3.webp"
-      alt: "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer – Produktansicht 3"
-    - src: "../../assets/images/products/cat-mate-elite-355w/gallery-4.webp"
-      alt: "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer – Produktansicht 4"
+  hero: { src: "../../assets/images/project/pfotentechnik/comparison/default-editorial-hero.webp", alt: "Neutrale redaktionelle Darstellung: Cat Mate Elite 355W" }
+  gallery: []
 price:
   current: 103.99
   currency: "EUR"
