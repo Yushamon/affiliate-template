@@ -472,16 +472,11 @@ export function buildComparisonViewModel({
   }));
 
   const rowCandidates = rawRows.map((row) => {
-    const isResolved = (cell: (typeof row.cells)[number]) =>
-      Boolean(cell.value) &&
-      cell.value !== "–";
-
-    const resolvedCells = row.cells.filter(isResolved);
-    const curatedCells = row.cells.filter((cell) =>
-      explicitSlugs.has(cell.productSlug)
+    const resolvedCells = row.cells.filter(
+      (cell) =>
+        Boolean(cell.value) &&
+        cell.value !== "–"
     );
-    const resolvedCuratedCells = curatedCells.filter(isResolved);
-
     const normalizedValues = new Set(
       resolvedCells.map((cell) =>
         cell.value.trim().toLocaleLowerCase("de")
@@ -491,8 +486,6 @@ export function buildComparisonViewModel({
     return {
       ...row,
       resolvedCount: resolvedCells.length,
-      curatedCount: curatedCells.length,
-      resolvedCuratedCount: resolvedCuratedCells.length,
       coverage:
         row.cells.length > 0
           ? resolvedCells.length / row.cells.length
@@ -502,34 +495,17 @@ export function buildComparisonViewModel({
   });
 
   /*
-   * Curated Row Guard 32.6.9
-   *
-   * Die globale Backlink-Union darf eine bestehende Vergleichsmatrix
-   * erweitern, aber keine bisher vollständig belegte kuratierte Zeile
-   * verschwinden lassen, nur weil ein neu ergänztes Produkt für dieses
-   * Kriterium noch keinen belastbaren Wert besitzt.
-   *
-   * Bei kuratierten items[] entscheidet daher deren Datenabdeckung über die
-   * Sichtbarkeit einer Zeile. Nur wenn ein Vergleich gar keine kuratierten
-   * Produkt-Items besitzt, bleibt die bisherige Vollabdeckungsregel aktiv.
+   * Release Closure 14.0:
+   * Nur vollständig belegte Kriterien werden öffentlich ausgespielt.
+   * Unvollständige Quellkriterien bleiben im Audit sichtbar, erzeugen aber
+   * keine "Keine Angabe"-Wüsten in Desktop-Tabelle oder Mobile Cards.
    */
   const rows: ComparisonRow[] = rowCandidates
-    .filter((row) => {
-      if (row.cells.length < 2) return false;
-
-      if (row.curatedCount >= 2) {
-        return row.resolvedCuratedCount === row.curatedCount;
-      }
-
-      return row.resolvedCount === row.cells.length;
-    })
-    .map(({
-      resolvedCount: _resolvedCount,
-      curatedCount: _curatedCount,
-      resolvedCuratedCount: _resolvedCuratedCount,
-      coverage: _coverage,
-      ...row
-    }) => row);
+    .filter((row) =>
+      row.cells.length >= 2 &&
+      row.resolvedCount === row.cells.length
+    )
+    .map(({ resolvedCount: _resolvedCount, coverage: _coverage, ...row }) => row);
 
 
   const filterValuesBySlug = new Map<
