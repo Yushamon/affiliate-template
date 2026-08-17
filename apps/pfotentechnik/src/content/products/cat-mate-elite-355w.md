@@ -22,17 +22,34 @@ tags: ["katzenklappe", "mikrochip", "cat-mate", "timer", "ohne-app"]
 images:
   hero: { src: "../../assets/images/project/pfotentechnik/comparison/default-editorial-hero.webp", alt: "Neutrale redaktionelle Darstellung: Cat Mate Elite 355W" }
   gallery: []
-price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-16", source: { id: "closer-pets", label: "Closer Pets", type: "editorial", url: "https://closerpets.co.uk/products/elite-microchip-flap-timer-control" } }
+price:
+  current: 103.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-08-17T11:10:48.492Z"
+  source:
+    id: "manual"
+    label: "Closer Pets"
+    type: "manual"
 priceAutomation: "editorial"
-priceState: "unknown"
-priceAvailable: false
-affiliateAvailable: false
-availability: "unknown"
-availabilityUpdated: "2026-08-16"
-editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
 rating: 4.1
+affiliate:
+  provider: "closer-pets"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://amzn.to/4x3ONBM"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+
+priceState: "available"
+priceUpdated: "2026-08-17T11:10:48.492Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "unknown"
+availabilityUpdated: "2026-08-17T11:10:48.492Z"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "complete"
+
 ratings:
   chiperkennung: 4.4
   zeitsteuerung: 4.6
@@ -140,7 +157,6 @@ experience:
   reliability: >-
     Langzeit- und Zuverlässigkeitsaussagen werden nur so stark gewichtet, wie sie durch die unter
     externalEvidence und evidenceSources dokumentierten Quellen gedeckt sind.
-
 ---
 
 ## Timer ist nicht gleich Einzelrecht

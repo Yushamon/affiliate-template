@@ -20,22 +20,8 @@ seo: { title: "Reolink E1 Zoom 4K: lokale Speicherung und Tiererkennung", descri
 hub: { sections: ["produkte", "haustierkameras"] }
 tags: ["haustierkamera", "reolink", "microsd", "lokale-speicherung", "tiererkennung"]
 images:
-  hero:
-    src: "../../assets/images/products/reolink-e1-zoom/hero.webp"
-    alt: "Reolink E1 Zoom (4K) in redaktioneller Produktdarstellung"
-  thumbnail:
-    src: "../../assets/images/products/reolink-e1-zoom/thumbnail.webp"
-    alt: "Reolink E1 Zoom (4K) als kompaktes Produktbild"
-  comparison:
-    src: "../../assets/images/products/reolink-e1-zoom/comparison.webp"
-    alt: "Reolink E1 Zoom (4K) für den Produktvergleich"
-  gallery:
-    - src: "../../assets/images/products/reolink-e1-zoom/gallery-1.webp"
-      alt: "Reolink E1 Zoom (4K) – Produktansicht 1"
-    - src: "../../assets/images/products/reolink-e1-zoom/gallery-2.webp"
-      alt: "Reolink E1 Zoom (4K) – Produktansicht 2"
-    - src: "../../assets/images/products/reolink-e1-zoom/gallery-3.webp"
-      alt: "Reolink E1 Zoom (4K) – Produktansicht 3"
+  hero: { src: "../../assets/images/project/pfotentechnik/comparison/default-editorial-hero.webp", alt: "Neutrale redaktionelle Darstellung: Reolink E1 Zoom 4K" }
+  gallery: []
 price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-16", source: { id: "reolink", label: "Reolink Deutschland", type: "editorial", url: "https://reolink.com/de/product/e1-zoom/" } }
 priceAutomation: "editorial"
 priceState: "unknown"

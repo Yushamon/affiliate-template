@@ -43,25 +43,34 @@ images:
     alt: "Neutrale redaktionelle Darstellung: PetSnowy SNOW+ (SNOW)"
   gallery: []
 price:
-  current: null
+  current: 599
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-15"
+  checkedAt: "2026-08-17T11:07:32.088Z"
   source:
-    id: "manufacturer"
+    id: "manual"
     label: "Hersteller"
-    type: "editorial"
+    type: "manual"
 priceAutomation: "editorial"
-priceState: "unknown"
-priceAvailable: false
-affiliateAvailable: false
+rating: 4.2
+affiliate:
+  provider: "hersteller"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://amzn.to/4gAEoHZ"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+
+priceState: "available"
+priceUpdated: "2026-08-17T11:07:32.088Z"
+priceAvailable: true
+affiliateAvailable: true
 availability: "unknown"
 availabilityReason: "Deutschland-/EU-Lieferbarkeit muss im aktuellen Checkout geprüft werden."
-availabilityUpdated: "2026-08-15"
+availabilityUpdated: "2026-08-17T11:07:32.088Z"
 editorialStatus: "required"
 recommendationStatus: "limited"
-maintenanceStatus: "required"
-rating: 4.2
+maintenanceStatus: "complete"
+
 ratings:
   geruchskontrolle: 4.8
   wartung: 4.6

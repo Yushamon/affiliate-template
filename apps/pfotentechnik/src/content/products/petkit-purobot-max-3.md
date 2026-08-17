@@ -43,24 +43,33 @@ images:
     alt: "Neutrale redaktionelle Darstellung: PETKIT PUROBOT MAX 3"
   gallery: []
 price:
-  current: null
+  current: 649.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-15"
+  checkedAt: "2026-08-17T11:06:34.080Z"
   source:
-    id: "manufacturer"
+    id: "manual"
     label: "Hersteller"
-    type: "editorial"
+    type: "manual"
 priceAutomation: "editorial"
-priceState: "unknown"
-priceAvailable: false
-affiliateAvailable: false
-availability: "unknown"
-availabilityUpdated: "2026-08-15"
-editorialStatus: "required"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
 rating: 4
+affiliate:
+  provider: "hersteller"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://amzn.to/3RY5cZs"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+
+priceState: "available"
+priceUpdated: "2026-08-17T11:06:34.080Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityUpdated: "2026-08-17T11:06:34.080Z"
+editorialStatus: "required"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
+
 ratings:
   einstieg: 4.2
   geruchskontrolle: 4.1

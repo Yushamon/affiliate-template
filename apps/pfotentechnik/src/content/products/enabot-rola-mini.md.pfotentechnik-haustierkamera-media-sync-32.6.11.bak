@@ -20,22 +20,7 @@ seo: { title: "Enabot ROLA Mini im Datencheck", description: "Enabot ROLA Mini a
 hub: { sections: ["produkte", "haustierkameras"] }
 tags: ["haustierkamera", "kameraroboter", "katze", "hund", "app"]
 images:
-  hero:
-    src: "../../assets/images/products/enabot-rola-mini/hero.webp"
-    alt: "Enabot ROLA Mini in redaktioneller Produktdarstellung"
-  thumbnail:
-    src: "../../assets/images/products/enabot-rola-mini/thumbnail.webp"
-    alt: "Enabot ROLA Mini als kompaktes Produktbild"
-  comparison:
-    src: "../../assets/images/products/enabot-rola-mini/comparison.webp"
-    alt: "Enabot ROLA Mini für den Produktvergleich"
-  gallery:
-    - src: "../../assets/images/products/enabot-rola-mini/gallery-1.webp"
-      alt: "Enabot ROLA Mini – Produktansicht 1"
-    - src: "../../assets/images/products/enabot-rola-mini/gallery-2.webp"
-      alt: "Enabot ROLA Mini – Produktansicht 2"
-    - src: "../../assets/images/products/enabot-rola-mini/gallery-3.webp"
-      alt: "Enabot ROLA Mini – Produktansicht 3"
+  hero: { src: "../../assets/images/project/pfotentechnik/comparison/default-editorial-hero.webp", alt: "Neutrale redaktionelle Platzhaltergrafik bis zum modellgetreuen Enabot-ROLA-Mini-Produktbild" }
 price: { current: null, currency: "EUR", status: "unknown" }
 rating: 3.6
 ratings: { mobilitaet: 4.2, transparenz: 3.1, raumabdeckung: 3.9, alltag: 3.4 }

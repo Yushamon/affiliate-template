@@ -20,10 +20,7 @@ seo: { title: "Enabot EBO Air 2 im Check", description: "Enabot EBO Air 2 als mo
 hub: { sections: ["produkte", "haustierkameras"] }
 tags: ["haustierkamera", "kameraroboter", "katze", "hund", "app"]
 images:
-  hero:
-    src: "../../assets/images/products/enabot-ebo-air-2/hero.webp"
-    alt: "Enabot EBO Air 2 in redaktioneller Produktdarstellung"
-  gallery: []
+  hero: { src: "../../assets/images/products/enabot-ebo-air-2/hero.webp", alt: "Neutrale redaktionelle Darstellung eines mobilen Kamera-Roboters für Haustiere" }
 price:
   current: 129.99
   currency: "EUR"
