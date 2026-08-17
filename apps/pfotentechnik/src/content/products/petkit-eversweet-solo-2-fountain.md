@@ -60,7 +60,7 @@ price:
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 8 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-08-15T17:09:09.782Z"
+  checkedAt: "2026-08-17T14:42:06.737Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -75,12 +75,12 @@ rating: 4.4
 score: 87
 
 priceState: "available"
-priceUpdated: "2026-08-15T17:09:09.782Z"
+priceUpdated: "2026-08-17T14:42:06.737Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-15T17:09:09.782Z"
+availabilityUpdated: "2026-08-17T14:42:06.737Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

@@ -45,12 +45,23 @@ price:
   current: 599.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-15T17:09:18.810Z"
+  checkedAt: "2026-08-17T14:42:15.727Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
     type: "merchant"
 rating: 3.3
+priceState: "available"
+priceUpdated: "2026-08-17T14:42:15.727Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-08-17T14:42:15.727Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
+
 ratings:
   sicherheit: 3.9
   platz: 3.2
@@ -215,16 +226,6 @@ affiliate:
   url: "https://amzn.to/3RQ7Lg4"
   rel: "sponsored nofollow noopener"
   target: "_blank"
-priceState: "available"
-priceUpdated: "2026-08-15T17:09:18.810Z"
-priceAvailable: true
-affiliateAvailable: true
-availability: "available"
-availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-15T17:09:18.810Z"
-editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
 ---
 
 ## Offene Produktfragen vor dem Kauf
