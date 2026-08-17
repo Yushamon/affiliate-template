@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-11T11:30:42.403Z",
+  "generatedAt": "2026-08-16T13:05:04.740Z",
   "mode": "strict",
   "status": "ok",
   "environment": {
@@ -102,8 +102,8 @@
       "category": "home",
       "label": "Startseite",
       "metrics": {
-        "htmlBytes": 63092,
-        "htmlBrotliBytes": 11468,
+        "htmlBytes": 63098,
+        "htmlBrotliBytes": 11480,
         "domNodes": 655,
         "domDepth": 13,
         "stylesheets": 3,
@@ -158,8 +158,8 @@
       "category": "comparison",
       "label": "Vergleich Futterautomaten",
       "metrics": {
-        "htmlBytes": 144186,
-        "htmlBrotliBytes": 23207,
+        "htmlBytes": 144204,
+        "htmlBrotliBytes": 23152,
         "domNodes": 1294,
         "domDepth": 16,
         "stylesheets": 4,
@@ -184,8 +184,8 @@
           "code": "PERF_HTML_TOO_LARGE",
           "severity": "warning",
           "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-          "message": "HTML-Budget überschritten: 144186 > 130000.",
-          "actual": 144186,
+          "message": "HTML-Budget überschritten: 144204 > 130000.",
+          "actual": 144204,
           "limit": 130000
         }
       ]
@@ -223,8 +223,8 @@
       "category": "product",
       "label": "Produktdetail",
       "metrics": {
-        "htmlBytes": 89467,
-        "htmlBrotliBytes": 16316,
+        "htmlBytes": 89353,
+        "htmlBrotliBytes": 16356,
         "domNodes": 716,
         "domDepth": 15,
         "stylesheets": 4,
@@ -251,8 +251,8 @@
       "category": "listing",
       "label": "Herstellerdetail",
       "metrics": {
-        "htmlBytes": 77106,
-        "htmlBrotliBytes": 14045,
+        "htmlBytes": 77119,
+        "htmlBrotliBytes": 14046,
         "domNodes": 639,
         "domDepth": 11,
         "stylesheets": 4,
@@ -434,8 +434,8 @@
       "code": "PERF_HTML_TOO_LARGE",
       "severity": "warning",
       "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-      "message": "HTML-Budget überschritten: 144186 > 130000.",
-      "actual": 144186,
+      "message": "HTML-Budget überschritten: 144204 > 130000.",
+      "actual": 144204,
       "limit": 130000
     },
     {

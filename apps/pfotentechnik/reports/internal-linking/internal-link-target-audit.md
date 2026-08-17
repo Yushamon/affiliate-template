@@ -1,6 +1,6 @@
 # Audit interne Linkziele und Selbstlinks
 
-Erstellt: 2026-08-11T11:30:37.206Z
+Erstellt: 2026-08-16T13:04:59.827Z
 
 - Gebaute Seiten: 322
 - Routen im Inventar: 322

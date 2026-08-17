@@ -2,7 +2,7 @@
 
 - Status: OK
 - Modus: production
-- Dauer: 95481 ms
+- Dauer: 88622 ms
 - Phasen: 23
 - Fehler: 0
 - Warnungen: 0
