@@ -14,6 +14,7 @@ import { buildPriceIndex } from "../price/engine";
 import { calculateProductScore } from "../productScore.ts";
 import type { ProductPriceInsight } from "../price/types";
 import { deriveProductOperations } from "../../lib/product-operations/policy.mjs";
+import { getComparisonSelectionRule } from "./comparisonSelectionRegistry";
 
 type ComparisonEntry = CollectionEntry<"comparisons">;
 type ProductEntry = CollectionEntry<"products">;
@@ -380,32 +381,33 @@ export function buildComparisonViewModel({
    * Damit gilt:
    * visible = curated items[] ∪ explicit product.comparisons[]
    */
-  /*
-   * Global Backlink Union 32.6.7
-   *
-   * Mitgliedschaft und technische Selection-Reife sind getrennt:
-   *
-   * - items[] bleibt die kuratierte Basis
-   * - product.comparisons[] ist eine explizite redaktionelle Zuordnung
-   * - explizite Backlinks dürfen für jeden Vergleich ergänzen
-   * - Registry-Modi steuern nur spätere technische Selection Rules
-   * - keine Volltext-Heuristik entscheidet über Mitgliedschaft
-   *
-   * visible = curated items[] ∪ explicit product.comparisons[]
-   */
-  const backlinkItems = products
-    .filter((product) =>
-      product.data.comparisons.includes(data.slug) &&
-      !explicitSlugs.has(product.data.slug)
-    )
-    .map((product) => ({
-      slug: product.data.slug,
-      label: product.data.title,
-      type: "product" as const,
-      recommendation: product.data.recommendation,
-      values: {}
-    }));
+  const selectionRule = getComparisonSelectionRule(data.slug);
+  const hybridMembershipEnabled = selectionRule?.mode === "ready";
 
+  const backlinkItems = hybridMembershipEnabled
+    ? products
+        .filter((product) =>
+          product.data.comparisons.includes(data.slug) &&
+          !explicitSlugs.has(product.data.slug)
+        )
+        .map((product) => ({
+          slug: product.data.slug,
+          label: product.data.title,
+          type: "product" as const,
+          recommendation: product.data.recommendation,
+          values: {}
+        }))
+    : [];
+
+  /*
+   * Safety Gate 32.6.5
+   *
+   * Nur Vergleiche mit Registry-Status "ready" dürfen zusätzliche
+   * product.comparisons[]-Backlinks automatisch übernehmen.
+   *
+   * Alle needs-data/backlink-transition Vergleiche bleiben vollständig
+   * kuratiert über items[].
+   */
   const items = [...explicitItems, ...backlinkItems];
 
   const automaticRecommendation = buildAutomaticRecommendations({
