@@ -1,18 +1,18 @@
 {
   "summary": {
-    "generatedAt": "2026-08-16T13:03:39.620Z",
-    "totalProducts": 82,
+    "generatedAt": "2026-08-17T09:54:05.811Z",
+    "totalProducts": 99,
     "byCategory": {
       "futterautomaten": 37,
-      "trinkbrunnen": 21,
-      "automatische-katzentoiletten": 5,
-      "haustierkameras": 3,
-      "gps-tracker": 8,
-      "katzenklappen": 8
+      "trinkbrunnen": 24,
+      "katzenklappen": 9,
+      "automatische-katzentoiletten": 10,
+      "haustierkameras": 7,
+      "gps-tracker": 12
     },
     "errors": 0,
-    "warnings": 100,
-    "notes": 145,
+    "warnings": 198,
+    "notes": 146,
     "duplicateSlugs": 0
   },
   "duplicateSlugs": [],
@@ -460,6 +460,62 @@
       "completeness": 100
     },
     {
+      "file": "src/content/products/cat-mate-elite-355w.md",
+      "slug": "cat-mate-elite-355w",
+      "title": "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer",
+      "category": "katzenklappen",
+      "errors": [],
+      "warnings": [
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Zugang",
+          "value": "15-stelliger ISO-Mikrochip oder Cat-Mate-ID-Anhänger; selektiver Eingang"
+        },
+        {
+          "label": "Kapazität",
+          "value": "Bis zu neun Katzen; LCD zeigt die ersten drei"
+        },
+        {
+          "label": "Richtungsrechte",
+          "value": "4-Wege-Sperre; Timer gilt gemeinsam, keine individuellen Ausgangszeiten"
+        },
+        {
+          "label": "App",
+          "value": "Nein"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "4 AA-Alkalibatterien; etwa 9 bis 12 Monate bei einer Katze laut Hersteller"
+        },
+        {
+          "label": "Durchgang",
+          "value": "145 × 145 mm"
+        },
+        {
+          "label": "Außenmaß",
+          "value": "248 × 265 mm"
+        },
+        {
+          "label": "Ausschnitt",
+          "value": "178 × 204 mm oder 232 mm rund; Schablone verwenden"
+        },
+        {
+          "label": "Einbau",
+          "value": "Selbstauskleidung bis 100 mm; Material und Adapter prüfen"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 88
+    },
+    {
       "file": "src/content/products/cat-mate-shell-fountain.md",
       "slug": "cat-mate-shell-fountain",
       "title": "Cat Mate Shell Pet Fountain",
@@ -663,6 +719,71 @@
       "structuralCompleteness": 92,
       "confirmedCompleteness": 92,
       "completeness": 97
+    },
+    {
+      "file": "src/content/products/catit-pixi-smart-trinkbrunnen.md",
+      "slug": "catit-pixi-smart-trinkbrunnen",
+      "title": "Catit PIXI Smart-Trinkbrunnen",
+      "category": "trinkbrunnen",
+      "errors": [],
+      "warnings": [
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt",
+        "Empfohlenes Feld fehlt: lautstärke",
+        "Empfohlenes Feld fehlt: akku",
+        "Empfohlenes Feld fehlt: trinkhöhe",
+        "Empfohlenes Feld fehlt: wasserfluss",
+        "Empfohlenes Feld fehlt: ersatzfilter"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Kapazität",
+          "value": "2 Liter"
+        },
+        {
+          "label": "Material",
+          "value": "BPA-freier Kunststoff mit Edelstahl-Trinkfläche"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "Netzbetrieb; durchschnittlich unter 1 W laut Hersteller"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen"
+        },
+        {
+          "label": "App",
+          "value": "PIXI-App über 2,4-GHz-WLAN; Modi, Timer, UVC und Erinnerungen"
+        },
+        {
+          "label": "UVC",
+          "value": "Drei Zyklen täglich zu je 60 Minuten laut aktueller Produktseite"
+        },
+        {
+          "label": "Filter",
+          "value": "Dreifachfilter; Herstellerempfehlung alle 30 Tage wechseln"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Edelstahleinsatz spülmaschinengeeignet; Pumpe und übrige Teile nach Anleitung reinigen"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "20,5 × 20,5 × 17 cm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "800 g"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 67,
+      "confirmedCompleteness": 67,
+      "completeness": 73
     },
     {
       "file": "src/content/products/catit-pixi-vision-smart-feeder.md",
@@ -926,6 +1047,311 @@
       "completeness": 91
     },
     {
+      "file": "src/content/products/enabot-rola-mini.md",
+      "slug": "enabot-rola-mini",
+      "title": "Enabot ROLA Mini",
+      "category": "haustierkameras",
+      "errors": [],
+      "warnings": [
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Produktklasse",
+          "value": "Mobile Roboterkamera"
+        },
+        {
+          "label": "Video",
+          "value": "2K (2304 x 1296) laut Hersteller"
+        },
+        {
+          "label": "Sichtfeld",
+          "value": "137 Grad"
+        },
+        {
+          "label": "Interaktion",
+          "value": "Zwei-Wege-Audio und App-Steuerung"
+        },
+        {
+          "label": "Aufzeichnung",
+          "value": "Bewegungsaufzeichnung; Speicherweg nicht belastbar belegt"
+        },
+        {
+          "label": "Akku",
+          "value": "5000 mAh"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 88
+    },
+    {
+      "file": "src/content/products/enabot-rola-pettracker.md",
+      "slug": "enabot-rola-pettracker",
+      "title": "Enabot ROLA PetTracker",
+      "category": "gps-tracker",
+      "errors": [],
+      "warnings": [
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [
+        "Herstellerangabe dokumentiert, aber nicht bestätigt: material"
+      ],
+      "specs": [
+        {
+          "label": "Abmessungen",
+          "value": "62 × 37,5 × 27,1 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "70 g"
+        },
+        {
+          "label": "Herstellerempfehlung",
+          "value": "Hunde und Katzen ab 4 kg"
+        },
+        {
+          "label": "Akku",
+          "value": "1500 mAh; 3 bis 5 Tage laut Hersteller"
+        },
+        {
+          "label": "Kamera",
+          "value": "480p, 89,8° Sichtfeld, Sechsachsen-Stabilisierung"
+        },
+        {
+          "label": "Nachtsicht",
+          "value": "Nicht unterstützt"
+        },
+        {
+          "label": "Ortung",
+          "value": "GPS + AGPS, ergänzend LBS sowie Ton-/Licht-/Bildpositionierung"
+        },
+        {
+          "label": "Funk",
+          "value": "2,4-GHz-WLAN, Bluetooth 4.2, Nano-SIM"
+        },
+        {
+          "label": "Speicher",
+          "value": "32 GB ROM, 1 GB RAM; MP4"
+        },
+        {
+          "label": "Übertragung",
+          "value": "Nano-SIM/Mobilfunk zur ROLA-App; 2,4-GHz-WLAN und Bluetooth 4.2 für Gerätefunktionen"
+        },
+        {
+          "label": "Reichweite",
+          "value": "Keine feste Distanzangabe; abhängig von unterstützter Mobilfunk-, Satelliten- und Dienstabdeckung"
+        },
+        {
+          "label": "Abo",
+          "value": "Nano-SIM und Mobilfunkdienst erforderlich; konkreten Tarif vor Kauf prüfen"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Hunde und Katzen ab 4 kg laut Hersteller; 70-g-Komfort individuell prüfen"
+        },
+        {
+          "label": "Befestigung",
+          "value": "Halsbandbefestigung; sicheren Sitz und Scheuern unter Aufsicht prüfen"
+        },
+        {
+          "label": "App",
+          "value": "ROLA-App für iOS und Android laut Hersteller"
+        },
+        {
+          "label": "WLAN",
+          "value": "2,4 GHz"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 4.2"
+        },
+        {
+          "label": "Material",
+          "value": "Nicht ausgewiesen"
+        },
+        {
+          "label": "Temperaturschutz",
+          "value": "Warnung über 45 °C; Kamera ab über 55 °C aus, bis unter 40 °C erreicht sind; Tracker bleibt laut FAQ aktiv"
+        },
+        {
+          "label": "Wasserschutz",
+          "value": "Keine IP-Schutzklasse dokumentiert"
+        }
+      ],
+      "unknownSpecs": [
+        "Material"
+      ],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 93,
+      "completeness": 88
+    },
+    {
+      "file": "src/content/products/feelneedy-fn-w18-8l-katzenbrunnen.md",
+      "slug": "feelneedy-fn-w18-8l-katzenbrunnen",
+      "title": "FEELNEEDY FN-W18 8L Katzenbrunnen",
+      "category": "trinkbrunnen",
+      "errors": [],
+      "warnings": [
+        "Empfohlenes Feld fehlt: trinkhöhe",
+        "Empfohlenes Feld fehlt: wasserfluss",
+        "Empfohlenes Feld fehlt: ersatzfilter",
+        "Empfohlenes Feld fehlt: maße",
+        "Empfohlenes Feld fehlt: gewicht"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Modell",
+          "value": "FN-W18"
+        },
+        {
+          "label": "ASIN",
+          "value": "B0FH33SX4J"
+        },
+        {
+          "label": "Produkttyp",
+          "value": "Kabelloser Akku-Trinkbrunnen mit Radarsensor"
+        },
+        {
+          "label": "Gesamtkapazität",
+          "value": "8 Liter beziehungsweise 270 fl. oz."
+        },
+        {
+          "label": "Wassertank",
+          "value": "ungefähr 7 Liter"
+        },
+        {
+          "label": "Trinkschale",
+          "value": "ungefähr 1 Liter; dient bei leerem Tank als kurzfristig zugängliche Reserve"
+        },
+        {
+          "label": "Material",
+          "value": "Tank und Trinkschale aus Edelstahl 304; Filterhalter und Steuermodul enthalten Kunststoff"
+        },
+        {
+          "label": "Akku",
+          "value": "integrierter Lithium-Ionen-Akku mit 5.000 mAh"
+        },
+        {
+          "label": "Akkulaufzeit",
+          "value": "Herstellerangabe bis zu 60 Tage im Sensor- oder Zeitmodus; keine eigene Laufzeitmessung"
+        },
+        {
+          "label": "Nennspannung",
+          "value": "5 V DC, 1 A"
+        },
+        {
+          "label": "Nennleistung",
+          "value": "1 W"
+        },
+        {
+          "label": "Betriebsmodi",
+          "value": "Sensor, Zeitintervall und Dauerfluss"
+        },
+        {
+          "label": "Sensortyp",
+          "value": "Radarsensor"
+        },
+        {
+          "label": "Sensorbereich",
+          "value": "120° und bis zu 0,8 m laut Hersteller"
+        },
+        {
+          "label": "Sensorbetrieb",
+          "value": "20 Sekunden Wasserfluss bei erkannter Annäherung"
+        },
+        {
+          "label": "Zeitbetrieb",
+          "value": "15 Sekunden Wasserfluss alle 15 Minuten"
+        },
+        {
+          "label": "Dauerbetrieb",
+          "value": "nur bei angeschlossener Stromversorgung"
+        },
+        {
+          "label": "Lautstärke",
+          "value": "Herstellerangabe ≤45 dB; keine unabhängige Messung"
+        },
+        {
+          "label": "Wasserstand",
+          "value": "rundes Sichtfenster; laut Hersteller besitzt die Pumpe keine Beleuchtung"
+        },
+        {
+          "label": "Überlaufschutz",
+          "value": "rückseitige Überlauföffnung laut Hersteller"
+        },
+        {
+          "label": "Filterung",
+          "value": "mehrschichtige Filterpatrone plus Pumpenschwamm"
+        },
+        {
+          "label": "Filtermaterial",
+          "value": "hochdichte Baumwolle, Ionenaustauschharz, Kokos-Aktivkohle und Vlies laut Ersatzfilterunterlagen"
+        },
+        {
+          "label": "Filtervorbereitung",
+          "value": "vor dem Einsetzen 5 Minuten in sauberem Wasser einweichen und gründlich abspülen"
+        },
+        {
+          "label": "Filtererinnerung",
+          "value": "fester 14-Tage-Timer mit roter Anzeige"
+        },
+        {
+          "label": "Filtertimer zurücksetzen",
+          "value": "Filtertaste nach dem Wechsel ungefähr 5 Sekunden gedrückt halten beziehungsweise Gerät neu starten, je nach Bedienversion"
+        },
+        {
+          "label": "Filterwechsel",
+          "value": "Anleitung empfiehlt etwa alle 2 bis 4 Wochen; tatsächliches Intervall abhängig von Tierzahl und Wasserqualität"
+        },
+        {
+          "label": "Pumpenreinigung",
+          "value": "Brunnen und Pumpe laut Anleitung ungefähr alle 10 bis 15 Tage; Pumpenschwamm häufiger prüfen"
+        },
+        {
+          "label": "Spülmaschine",
+          "value": "nur Edelstahlteile bei höchstens 60 °C; Kunststoffteile kalt von Hand reinigen"
+        },
+        {
+          "label": "Steuermodul",
+          "value": "nicht eintauchen, nicht abspülen und nicht in der Spülmaschine reinigen"
+        },
+        {
+          "label": "App",
+          "value": "Nein"
+        },
+        {
+          "label": "Trinkmengenmessung",
+          "value": "Nein"
+        },
+        {
+          "label": "UVC",
+          "value": "Nein"
+        },
+        {
+          "label": "Lieferumfang",
+          "value": "Brunnen, Steuer- und Pumpenmodul, Kabel, Bürste, Pinzette, Anleitung und je nach Angebotsvariante ein oder mehrere Filter"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "mehrere Katzen sowie kleine und mittelgroße Hunde"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 67,
+      "confirmedCompleteness": 67,
+      "completeness": 85
+    },
+    {
       "file": "src/content/products/furbo-360-hundekamera.md",
       "slug": "furbo-360-hundekamera",
       "title": "Furbo 360° Hundekamera",
@@ -959,6 +1385,50 @@
       "structuralCompleteness": 100,
       "confirmedCompleteness": 100,
       "completeness": 91
+    },
+    {
+      "file": "src/content/products/furbo-mini-360.md",
+      "slug": "furbo-mini-360",
+      "title": "Furbo Mini 360",
+      "category": "haustierkameras",
+      "errors": [],
+      "warnings": [
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Produktklasse",
+          "value": "Stationäre Interaktionskamera"
+        },
+        {
+          "label": "Video",
+          "value": "2K QHD laut Hersteller"
+        },
+        {
+          "label": "Abdeckung",
+          "value": "360-Grad-Rotation am festen Standort"
+        },
+        {
+          "label": "Nachtmodus",
+          "value": "Automatische Nachtsicht"
+        },
+        {
+          "label": "Interaktion",
+          "value": "Zwei-Wege-Audio und Leckerliausgabe"
+        },
+        {
+          "label": "Versorgung",
+          "value": "USB-C"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 88
     },
     {
       "file": "src/content/products/garmin-alpha-t-20.md",
@@ -1502,6 +1972,134 @@
       "completeness": 97
     },
     {
+      "file": "src/content/products/invoxia-biotracker-2026.md",
+      "slug": "invoxia-biotracker-2026",
+      "title": "Invoxia Biotracker Edition 2026",
+      "category": "gps-tracker",
+      "errors": [],
+      "warnings": [
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt",
+        "Empfohlenes Feld fehlt: wlan",
+        "Empfohlenes Feld fehlt: bluetooth",
+        "Empfohlenes Feld fehlt: abmessungen",
+        "Empfohlenes Feld fehlt: material"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Ortung",
+          "value": "GPS; 1-Sekunden-Live-Tracking im Max-GPS-Tarif"
+        },
+        {
+          "label": "Übertragung",
+          "value": "LTE-M und Bluetooth 5.3"
+        },
+        {
+          "label": "Reichweite",
+          "value": "Mobilfunkabhängig; keine garantierte Distanz"
+        },
+        {
+          "label": "Abo",
+          "value": "Max GPS für Fern-GPS, Live-Tracking und Geofences erforderlich; Tarifumfang aktuell prüfen"
+        },
+        {
+          "label": "Akkulaufzeit",
+          "value": "Bis zu 15 Tage laut Hersteller; nutzungs- und netzabhängig"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "Wiederaufladbarer Akku; volle Ladung laut Hersteller bis zu zwei Stunden"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Hunde; Passform von Tracker und Befestigung prüfen"
+        },
+        {
+          "label": "Befestigung",
+          "value": "Halsband-Clip"
+        },
+        {
+          "label": "Gewicht",
+          "value": "37 g"
+        },
+        {
+          "label": "Wasserschutz",
+          "value": "IP67"
+        },
+        {
+          "label": "App",
+          "value": "Ortung, Aktivität, Schlaf sowie Herz- und Atemfrequenztrends; keine Diagnose"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 73,
+      "confirmedCompleteness": 73,
+      "completeness": 76
+    },
+    {
+      "file": "src/content/products/litter-robot-4.md",
+      "slug": "litter-robot-4",
+      "title": "Litter-Robot 4",
+      "category": "automatische-katzentoiletten",
+      "errors": [],
+      "warnings": [
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Abmessungen",
+          "value": "75 × 56 × 68,6 cm (H × B × T)"
+        },
+        {
+          "label": "Gewicht",
+          "value": "10,9 kg leer"
+        },
+        {
+          "label": "Eingang",
+          "value": "40 × 40 cm; 30,5 cm über dem Boden"
+        },
+        {
+          "label": "Katzengewicht",
+          "value": "Automatik ab 1,36 kg; EU-Seite nennt bis 11,33 kg als geeigneten Bereich"
+        },
+        {
+          "label": "Mehrkatzenbetrieb",
+          "value": "Bis zu vier Katzen laut Hersteller"
+        },
+        {
+          "label": "Sicherheit",
+          "value": "Laser- und Gewichtssensoren mit Zyklusverzögerung; Herstellerangabe, kein eigener Sicherheitstest"
+        },
+        {
+          "label": "Streu",
+          "value": "Klumpende, siebfähige Streu; aktuelle Kompatibilitätsliste prüfen"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "15 V Gleichstrom"
+        },
+        {
+          "label": "App",
+          "value": "Whisker-App für Nutzung, Gewicht, Streu- und Abfallfüllstand"
+        },
+        {
+          "label": "Kamera",
+          "value": "Keine integrierte Dualkamera wie beim Litter-Robot 5 Pro"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 88
+    },
+    {
       "file": "src/content/products/litter-robot-5-pro.md",
       "slug": "litter-robot-5-pro",
       "title": "Litter-Robot 5 Pro",
@@ -1552,93 +2150,65 @@
     {
       "file": "src/content/products/neakasa-m1-lite.md",
       "slug": "neakasa-m1-lite",
-      "title": "Neakasa M1 Lite",
+      "title": "Neakasa M1 Plus Lite",
       "category": "automatische-katzentoiletten",
       "errors": [],
-      "warnings": [],
+      "warnings": [
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt"
+      ],
       "notes": [],
       "specs": [
         {
-          "label": "Systemtyp",
-          "value": "Offene selbstreinigende Katzentoilette mit automatischer Siebung"
+          "label": "Aktuelle Modellbezeichnung",
+          "value": "M1 Plus Lite; Neakasa verwendet zusätzlich M1 Lite Plus"
         },
         {
-          "label": "Bauform",
-          "value": "Open Top"
+          "label": "Katzengewicht",
+          "value": "1 bis 15 kg; unter 1 kg Kitten-Modus ohne Automatik"
         },
         {
-          "label": "Abmessungen",
-          "value": "525 × 591 × 513 mm laut Neakasa"
-        },
-        {
-          "label": "Einstiegshöhe",
+          "label": "Einstieg",
           "value": "352 mm"
-        },
-        {
-          "label": "Eigengewicht",
-          "value": "10,35 kg"
-        },
-        {
-          "label": "Empfohlenes Katzengewicht",
-          "value": "1 bis 15 kg"
-        },
-        {
-          "label": "Streukapazität",
-          "value": "7,17 Liter"
         },
         {
           "label": "Abfallbehälter",
           "value": "11,23 Liter"
         },
         {
-          "label": "Geräusch",
-          "value": "Bis etwa 50 dB laut Hersteller"
+          "label": "Streukapazität",
+          "value": "7,17 Liter"
         },
         {
-          "label": "Nennspannung",
-          "value": "12 V"
+          "label": "Eigengewicht",
+          "value": "10,35 kg"
         },
         {
-          "label": "Material",
-          "value": "PP, ABS und POM"
+          "label": "Sensorik",
+          "value": "Aktuelle Lifecycle-Dokumentation nennt ein 6-Array-Infrarotsystem; eine offizielle Vergleichstabelle ist dazu nicht konsistent"
         },
         {
-          "label": "App",
-          "value": "Neakasa App für Android und iOS"
-        },
-        {
-          "label": "Geruchskontrolle",
-          "value": "OdorSeal Technology laut Hersteller"
+          "label": "Abdichtung",
+          "value": "Bristle Seal, Composite-Sealing-Ring und überarbeiteter Silikonliner laut Hersteller"
         },
         {
           "label": "Streu",
-          "value": "Klumpende oder siebfähige Streu"
-        },
-        {
-          "label": "Nicht empfohlen",
-          "value": "Nichtklumpende Streu, Zeitungspapier und Holzpellets"
+          "value": "Schnell klumpende, siebfähige Bentonit-/Mineralstreu; keine Holzpellets, Zeitung oder nicht klumpende Streu"
         },
         {
           "label": "Siebgrenze",
           "value": "Bis 3 mm Durchmesser und 10 mm Länge laut Hersteller"
         },
         {
-          "label": "Müllbeutel",
-          "value": "1 Rolle mit 15 Beuteln im Lite-Lieferumfang"
-        },
-        {
-          "label": "Streumatte",
-          "value": "Nicht im Lite-Lieferumfang enthalten"
-        },
-        {
-          "label": "Garantie",
-          "value": "2 Jahre im europäischen Neakasa-Shop"
+          "label": "Offline",
+          "value": "Grundbetrieb mit gespeicherten Einstellungen; ohne Netz keine Aktualisierung der App-Daten"
         }
       ],
       "unknownSpecs": [],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 100,
-      "completeness": 100
+      "completeness": 91
     },
     {
       "file": "src/content/products/neakasa-m1-plus.md",
@@ -2634,6 +3204,74 @@
       "structuralCompleteness": 100,
       "confirmedCompleteness": 54,
       "completeness": 97
+    },
+    {
+      "file": "src/content/products/pawfit-3.md",
+      "slug": "pawfit-3",
+      "title": "Pawfit 3",
+      "category": "gps-tracker",
+      "errors": [],
+      "warnings": [
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt",
+        "Empfohlenes Feld fehlt: app",
+        "Empfohlenes Feld fehlt: wlan",
+        "Empfohlenes Feld fehlt: bluetooth",
+        "Empfohlenes Feld fehlt: material"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Ortung",
+          "value": "GPS mit WLAN- und Bluetooth-Unterstützung"
+        },
+        {
+          "label": "Übertragung",
+          "value": "4G-LTE über eSIM"
+        },
+        {
+          "label": "Reichweite",
+          "value": "Mobilfunkabhängig; unterstützte Länder vor Reise prüfen"
+        },
+        {
+          "label": "Abo",
+          "value": "Pawfit-Abonnement erforderlich"
+        },
+        {
+          "label": "Akkulaufzeit",
+          "value": "Bis zu acht Tage laut Hersteller"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "Wiederaufladbarer Akku"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Hunde über 3,5 kg laut Hersteller"
+        },
+        {
+          "label": "Befestigung",
+          "value": "Verriegelbare Halsbandbefestigung"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "1,89 × 1,3 × 0,55 Zoll, etwa 48 × 33 × 14 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "27 g"
+        },
+        {
+          "label": "Wasserschutz",
+          "value": "IP68; Tauchtiefe ist Herstellerclaim"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 73,
+      "confirmedCompleteness": 73,
+      "completeness": 76
     },
     {
       "file": "src/content/products/pawsync-smart-pet-feeder.md",
@@ -3792,6 +4430,139 @@
       "completeness": 100
     },
     {
+      "file": "src/content/products/petkit-puramax-2.md",
+      "slug": "petkit-puramax-2",
+      "title": "PETKIT PuraMax 2",
+      "category": "automatische-katzentoiletten",
+      "errors": [],
+      "warnings": [
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Modell",
+          "value": "P9902"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "620 × 538 × 552 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "10 kg"
+        },
+        {
+          "label": "Einstieg",
+          "value": "200 mm; Öffnung 200 × 255 mm"
+        },
+        {
+          "label": "Katzengewicht",
+          "value": "1,5 bis 10 kg; laut Hersteller ab sechs Monaten"
+        },
+        {
+          "label": "Kapazität",
+          "value": "76-Liter-Zylinder; 7-Liter-Abfallfach"
+        },
+        {
+          "label": "Sicherheit",
+          "value": "Elf Sensoren und Anti-Pinch-Struktur laut Hersteller; keine Sicherheitsgarantie"
+        },
+        {
+          "label": "Streu",
+          "value": "Klumpende Ton-, Tofu- oder Mischstreu; Partikel bis 12 mm Länge und 3 mm Durchmesser"
+        },
+        {
+          "label": "WLAN",
+          "value": "2,4 GHz"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "12 V / 2 A"
+        },
+        {
+          "label": "Kamera",
+          "value": "Nein; PUROBOT-Kamerafunktionen werden nicht übertragen"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 88
+    },
+    {
+      "file": "src/content/products/petkit-purobot-max-3.md",
+      "slug": "petkit-purobot-max-3",
+      "title": "PETKIT PUROBOT MAX 3",
+      "category": "automatische-katzentoiletten",
+      "errors": [],
+      "warnings": [
+        "decision.bestFor ist zu knapp oder fehlt",
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Modell",
+          "value": "P9906"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "620 × 538 × 552 mm"
+        },
+        {
+          "label": "Einstieg",
+          "value": "204 mm; Öffnung 267 × 273 mm laut Herstellervergleich"
+        },
+        {
+          "label": "Eigengewicht",
+          "value": "10 kg"
+        },
+        {
+          "label": "Katzengewicht",
+          "value": "1,5 bis 10 kg; Hersteller nennt zusätzlich 6+ Monate"
+        },
+        {
+          "label": "Zylinder",
+          "value": "76 Liter"
+        },
+        {
+          "label": "Abfallfach",
+          "value": "7 Liter; bis 15 Tage bei einer Katze ist eine Hersteller-Maximalangabe"
+        },
+        {
+          "label": "Sicherheit",
+          "value": "12 Sensoren plus mechanisch dauerhaft offene Eingangsstruktur laut Hersteller; keine Sicherheitsgarantie"
+        },
+        {
+          "label": "WLAN",
+          "value": "2,4 GHz"
+        },
+        {
+          "label": "Strom",
+          "value": "12 V / 2 A, 24 W"
+        },
+        {
+          "label": "Streu",
+          "value": "Klumpende Ton-, Tofu- oder Mischstreu; zwei Filter, Partikel bis 12 mm Länge/3 mm Durchmesser"
+        },
+        {
+          "label": "Kamera",
+          "value": "Keine Kamera dokumentiert; Funktionen des MAX PRO 2 werden nicht übertragen"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 85
+    },
+    {
       "file": "src/content/products/petkit-purobot-max-pro-2.md",
       "slug": "petkit-purobot-max-pro-2",
       "title": "PETKIT PUROBOT MAX PRO 2",
@@ -3806,31 +4577,63 @@
       "specs": [
         {
           "label": "Systemtyp",
-          "value": "Geschlossene rotierende Reinigung"
+          "value": "Geschlossene rotierende Siebtrommel"
         },
         {
-          "label": "Mindestgewicht",
-          "value": "Offene Frage: vor Kauf in regionaler Anleitung bestätigen"
+          "label": "Abmessungen",
+          "value": "657 x 538 x 603 mm"
         },
         {
-          "label": "Kamera",
-          "value": "AI-Kamera mit Gesichtserkennung laut Hersteller"
+          "label": "Trommelraum",
+          "value": "76 Liter"
+        },
+        {
+          "label": "Einstieg",
+          "value": "255 mm hoch; Oeffnung 267 x 273 mm"
+        },
+        {
+          "label": "Produktgewicht",
+          "value": "ca. 11 kg"
+        },
+        {
+          "label": "Katzengewicht",
+          "value": "1,5 bis 10 kg; unter 1,5 kg nicht fuer Automatik empfohlen"
         },
         {
           "label": "Sicherheit",
-          "value": "Infrarot- und Gewichtssensoren mit sofortigem Stopp laut Hersteller"
+          "value": "12 Sensoren und Anti-Pinch-Konstruktion laut Hersteller"
         },
         {
           "label": "Streu",
-          "value": "Offene Frage: regionale Kompatibilitätsliste prüfen"
+          "value": "Klumpende Bentonit-, Tofu- oder Mischstreu; Partikel bis 12 mm"
         },
         {
-          "label": "App",
-          "value": "Besuchsfrequenz, Dauer, Gewicht und Herstellerhinweise"
+          "label": "Abfallfach",
+          "value": "8 Liter; bis 17 Tage ist eine Hersteller-Maximalangabe fuer eine Katze"
         },
         {
-          "label": "Folgekosten",
-          "value": "Streu, Beutel, Geruchszubehör und mögliche App-/Cloudleistungen"
+          "label": "Kamera",
+          "value": "1080p, fest, 210-Grad-Sichtfeld, Mikrofon"
+        },
+        {
+          "label": "Mehrkatzen-Erkennung",
+          "value": "Gesichts- und Gewichtserkennung laut Hersteller"
+        },
+        {
+          "label": "Offline-Verhalten",
+          "value": "Voreinstellungen laufen weiter; App-Nutzungsdaten werden ohne Netz nicht aktualisiert"
+        },
+        {
+          "label": "WLAN",
+          "value": "2,4 und 5 GHz"
+        },
+        {
+          "label": "Strom",
+          "value": "12 V / 2 A, 24 W"
+        },
+        {
+          "label": "Garantie",
+          "value": "24 Monate im offiziellen EU-Shop"
         }
       ],
       "unknownSpecs": [],
@@ -5329,6 +6132,86 @@
       "completeness": 100
     },
     {
+      "file": "src/content/products/petlibro-luma-smart-litter-box.md",
+      "slug": "petlibro-luma-smart-litter-box",
+      "title": "PETLIBRO Luma Smart Self-Cleaning Litter Box",
+      "category": "automatische-katzentoiletten",
+      "errors": [],
+      "warnings": [
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Systemtyp",
+          "value": "Teiloffene automatische Siebung nach Nutzung oder Zeitplan"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "592 x 573 x 714 mm"
+        },
+        {
+          "label": "Einstieg",
+          "value": "34 cm hoch; 442 mm breit; Stufe enthalten"
+        },
+        {
+          "label": "Produktgewicht",
+          "value": "15 kg"
+        },
+        {
+          "label": "Katzengewicht",
+          "value": "1 bis 10 kg für Automatik; bis zu 10 Katzenprofile"
+        },
+        {
+          "label": "Kitten-/Schutzgrenze",
+          "value": "Unter 6 Monaten, unter 1 kg sowie trächtig/säugend nur manuell reinigen"
+        },
+        {
+          "label": "Sicherheit",
+          "value": "Kamera, Infrarot, Gewichtssensoren und Einklemmschutz laut Hersteller"
+        },
+        {
+          "label": "Abfallfach",
+          "value": "11 Liter; bis 7 Tage bei 2 Katzen ist eine Hersteller-Maximalangabe"
+        },
+        {
+          "label": "Streu",
+          "value": "Klumpende, Tofu- und Mischstreu; keine Kristall-, Kiefern- oder ultrafeine Streu"
+        },
+        {
+          "label": "Geruch",
+          "value": "Ventilator mit Aktivkohlefilter; Wechsel etwa alle 3 Monate empfohlen"
+        },
+        {
+          "label": "Kamera/Speicher",
+          "value": "1080p; Livestream kostenlos, Aufzeichnung Cloud-only und tarifabhängig; keine SD-Karte"
+        },
+        {
+          "label": "WLAN",
+          "value": "2,4 und 5 GHz; iOS und Android"
+        },
+        {
+          "label": "Geräusch",
+          "value": "35 bis 47 dB je nach Lüfterstufe laut Hersteller"
+        },
+        {
+          "label": "Strom",
+          "value": "Netzbetrieb; 12 V / 5 A Ausgang"
+        },
+        {
+          "label": "Garantie",
+          "value": "Produktbezogene regionale Bedingungen vor Kauf prüfen"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 88
+    },
+    {
       "file": "src/content/products/petlibro-one-rfid-smart-feeder.md",
       "slug": "petlibro-one-rfid-smart-feeder",
       "title": "PETLIBRO One RFID Smart Feeder",
@@ -5530,6 +6413,14 @@
         {
           "label": "Abo",
           "value": "KI- und Cloudfunktionen abhängig vom Video Cloud AI-Tarif"
+        },
+        {
+          "label": "Einsatz",
+          "value": "Kabelgebundener Innenbetrieb; nicht fuer draussen belegt"
+        },
+        {
+          "label": "Smart Home",
+          "value": "Alexa und Google Home laut Hersteller derzeit nicht unterstuetzt"
         }
       ],
       "unknownSpecs": [],
@@ -6101,6 +6992,194 @@
       "completeness": 97
     },
     {
+      "file": "src/content/products/petsafe-streamside-trinkbrunnen.md",
+      "slug": "petsafe-streamside-trinkbrunnen",
+      "title": "PetSafe Keramik-Trinkbrunnen Streamside",
+      "category": "trinkbrunnen",
+      "errors": [],
+      "warnings": [
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt",
+        "Empfohlenes Feld fehlt: lautstärke",
+        "Empfohlenes Feld fehlt: akku",
+        "Empfohlenes Feld fehlt: uv",
+        "Empfohlenes Feld fehlt: trinkhöhe",
+        "Empfohlenes Feld fehlt: wasserfluss",
+        "Empfohlenes Feld fehlt: ersatzfilter",
+        "Empfohlenes Feld fehlt: gewicht"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Kapazität",
+          "value": "1,8 Liter"
+        },
+        {
+          "label": "Material",
+          "value": "Keramik; laut Hersteller BPA-frei und kratzbeständig"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "Netzbetrieb mit Unterwasserpumpe"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine Hunde"
+        },
+        {
+          "label": "Filter",
+          "value": "Aktivkohlefilter PAC00-13906 und Schaumfilter PAC00-13711"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Schale und Turm im oberen Spülmaschinenkorb; Pumpe von Hand"
+        },
+        {
+          "label": "Trinkfläche",
+          "value": "Offene Schale, Zugang von allen Seiten"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "25,9 × 25,9 × 13,7 cm"
+        },
+        {
+          "label": "App",
+          "value": "Nein"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 53,
+      "confirmedCompleteness": 53,
+      "completeness": 67
+    },
+    {
+      "file": "src/content/products/petsnowy-snow-plus.md",
+      "slug": "petsnowy-snow-plus",
+      "title": "PetSnowy SNOW+ (SNOW)",
+      "category": "automatische-katzentoiletten",
+      "errors": [],
+      "warnings": [
+        "decision.bestFor ist zu knapp oder fehlt",
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Modellbezeichnung",
+          "value": "PetSnowy SNOW; im Markt auch als SNOW+ geführt"
+        },
+        {
+          "label": "Bauform",
+          "value": "Geschlossene Kabine mit gebogenem Ein-/Ausstiegsweg"
+        },
+        {
+          "label": "Abfallfach",
+          "value": "10 Liter, automatisch versiegelt laut Hersteller"
+        },
+        {
+          "label": "Geruch",
+          "value": "TiO₂-Geruchssystem; 90,5 Prozent Ammoniakreduktion ist ausschließlich ein Herstellerclaim"
+        },
+        {
+          "label": "Sicherheit",
+          "value": "Sieben Schutzebenen laut Hersteller; kein eigener Sicherheitstest"
+        },
+        {
+          "label": "Wartung",
+          "value": "Magnetisch-modularer Aufbau; proprietäre Liner und Deodorizer berücksichtigen"
+        },
+        {
+          "label": "Deutschland/EU",
+          "value": "Aktuelle regionale Lieferbarkeit vor Checkout prüfen; deutsche Seite zeigt keine belastbare dauerhafte EU-Verfügbarkeit"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 85
+    },
+    {
+      "file": "src/content/products/pettec-cam-360.md",
+      "slug": "pettec-cam-360",
+      "title": "PetTec Cam 360",
+      "category": "haustierkameras",
+      "errors": [],
+      "warnings": [
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Kamera",
+          "value": "3 MP"
+        },
+        {
+          "label": "Schwenken/Neigen",
+          "value": "Ja; 360°-Rundumsicht ist Herstellerbeschreibung"
+        },
+        {
+          "label": "Erkennung",
+          "value": "Bewegung und Geräusch"
+        },
+        {
+          "label": "Tracking",
+          "value": "Bewegungsverfolgung"
+        },
+        {
+          "label": "Nachtsicht",
+          "value": "Ja"
+        },
+        {
+          "label": "Audio",
+          "value": "Zwei-Wege-Audio"
+        },
+        {
+          "label": "Lokale Speicherung",
+          "value": "microSD möglich"
+        },
+        {
+          "label": "Cloud",
+          "value": "Optionaler Cloud Event Video Service und optionale Cloud-AI-Dienste"
+        },
+        {
+          "label": "Pflichtabo",
+          "value": "Nein für Grundfunktionen laut Hersteller"
+        },
+        {
+          "label": "Kostenlose App",
+          "value": "Livestream, Fotos, Zwei-Wege-Audio und weitere Basisfunktionen laut Hersteller"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "63,5 × 63,5 × 57 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "180 g"
+        },
+        {
+          "label": "Kabel",
+          "value": "2 m"
+        },
+        {
+          "label": "Datenschutz",
+          "value": "DSGVO-Konformität und deutsche Server sind Herstellerangaben, nicht redaktionell rechtlich bestätigt"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 88
+    },
+    {
       "file": "src/content/products/petwalk-medium-tiertuer.md",
       "slug": "petwalk-medium-tiertuer",
       "title": "petWALK Medium Tiertür",
@@ -6111,23 +7190,39 @@
       "specs": [
         {
           "label": "Produktart",
-          "value": "Motorisierte Tiertür Medium"
+          "value": "Motorisierte, automatisch verriegelnde Tiertür Medium"
+        },
+        {
+          "label": "Durchgang",
+          "value": "20 × 30 cm (B × H) laut Hersteller"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Alle Katzenrassen und kleinere Hunde laut Hersteller"
         },
         {
           "label": "Erkennung",
-          "value": "Bewegungs- und Chip-Erkennung"
+          "value": "Bewegungssensoren und RFID-Chiperkennung"
+        },
+        {
+          "label": "Öffnung",
+          "value": "Motorisiertes Türblatt; öffnet nach innen"
+        },
+        {
+          "label": "Anschlag",
+          "value": "Links oder rechts konfigurierbar"
         },
         {
           "label": "App",
-          "value": "petWALK.control App-Modul laut Angebot enthalten"
+          "value": "petWALK.control bei aktuellem Angebot enthalten"
         },
         {
           "label": "Strom",
-          "value": "24-V-Netzgerät; Notstrom-Akku laut Hersteller"
+          "value": "24-V-Netzgerät im Lieferumfang; Notstrom-Akku im System vorgesehen"
         },
         {
           "label": "Einbau",
-          "value": "Glas, Wand oder Tür; projektspezifisch planen"
+          "value": "Glas, Wand oder Tür; Standard-Spacer für ca. 2–10 cm Bauteilstärke"
         },
         {
           "label": "Dämmung",
@@ -6138,6 +7233,146 @@
       "structuralCompleteness": 100,
       "confirmedCompleteness": 100,
       "completeness": 100
+    },
+    {
+      "file": "src/content/products/prothelis-area-pets.md",
+      "slug": "prothelis-area-pets",
+      "title": "Prothelis area Pets",
+      "category": "gps-tracker",
+      "errors": [],
+      "warnings": [
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt",
+        "Empfohlenes Feld fehlt: app",
+        "Empfohlenes Feld fehlt: wlan",
+        "Empfohlenes Feld fehlt: bluetooth",
+        "Empfohlenes Feld fehlt: material"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Ortung",
+          "value": "GPS und GLONASS"
+        },
+        {
+          "label": "Übertragung",
+          "value": "GSM/GPRS/EDGE mit integrierter SIM"
+        },
+        {
+          "label": "Reichweite",
+          "value": "Mobilfunkabhängig; laut Hersteller nahezu weltweit, regional prüfen"
+        },
+        {
+          "label": "Abo",
+          "value": "Servicepaket für integrierte SIM erforderlich; aktuelle Laufzeiten prüfen"
+        },
+        {
+          "label": "Akkulaufzeit",
+          "value": "Bis zu 8 Tage Nutzung, bis zu 30 Tage Standby laut aktuellem deutschen Shop; abhängig vom Intervall"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "950-mAh-LiPo-Akku"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Tiere mit passender Befestigung; hier als Hundetracker eingeordnet"
+        },
+        {
+          "label": "Befestigung",
+          "value": "Halsbandbefestigung; Passform prüfen"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "64,3 × 29 × 25,7 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "38 g"
+        },
+        {
+          "label": "Wasserschutz",
+          "value": "IP67"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 73,
+      "confirmedCompleteness": 73,
+      "completeness": 76
+    },
+    {
+      "file": "src/content/products/reolink-e1-zoom.md",
+      "slug": "reolink-e1-zoom",
+      "title": "Reolink E1 Zoom (4K)",
+      "category": "haustierkameras",
+      "errors": [],
+      "warnings": [
+        "Thumbnail fehlt",
+        "Comparison-Bild fehlt",
+        "Nur 0 Galerie-Bilder hinterlegt",
+        "Affiliate-Link fehlt"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Auflösung",
+          "value": "3840 × 2160, 8 MP bei 20 fps"
+        },
+        {
+          "label": "Zoom",
+          "value": "3-fach optisch"
+        },
+        {
+          "label": "Schwenken/Neigen",
+          "value": "355° schwenken, 50° neigen"
+        },
+        {
+          "label": "Erkennung",
+          "value": "Lokale Personen-, Tier- und Babygeschrei-Erkennung laut Hersteller"
+        },
+        {
+          "label": "Tracking",
+          "value": "Automatische Schwenkverfolgung"
+        },
+        {
+          "label": "Nachtsicht",
+          "value": "Infrarot bis 12 m laut Hersteller"
+        },
+        {
+          "label": "Audio",
+          "value": "Zwei-Wege-Audio"
+        },
+        {
+          "label": "Lokale Speicherung",
+          "value": "microSD bis 512 GB sowie NVR, Home Hub und FTP/NAS"
+        },
+        {
+          "label": "Cloud",
+          "value": "Optional und regional abhängig; für lokale Speicherung nicht erforderlich"
+        },
+        {
+          "label": "WLAN",
+          "value": "Wi-Fi 6, 2,4/5 GHz, WPA3"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "84 mm Durchmesser × 118 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "275 g"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "5 V / 2 A Netzbetrieb"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 88
     },
     {
       "file": "src/content/products/surefeed-microchip-pet-feeder-connect.md",
@@ -6384,6 +7619,10 @@
         {
           "label": "Einbau",
           "value": "Tür, Glas und Wand mit passendem Zubehör"
+        },
+        {
+          "label": "Hub-Sicherheitsupdates",
+          "value": "Vom Hersteller für zwei Jahre ab Kaufdatum des Hubs dokumentiert"
         }
       ],
       "unknownSpecs": [],

@@ -14,7 +14,6 @@ import { buildPriceIndex } from "../price/engine";
 import { calculateProductScore } from "../productScore.ts";
 import type { ProductPriceInsight } from "../price/types";
 import { deriveProductOperations } from "../../lib/product-operations/policy.mjs";
-import { getComparisonSelectionRule } from "./comparisonSelectionRegistry";
 
 type ComparisonEntry = CollectionEntry<"comparisons">;
 type ProductEntry = CollectionEntry<"products">;
@@ -365,50 +364,26 @@ export function buildComparisonViewModel({
   );
 
   const explicitSlugs = new Set(
-    explicitItems.map((item) => item.slug)
+    data.items.map((item) => item.slug)
   );
 
-  /*
-   * Comparison Membership 32.6.4
-   *
-   * Safety-first Hybrid:
-   * - kuratierte items[] bleiben vollständig erhalten
-   * - explizite product.comparisons[]-Backlinks dürfen zusätzliche Produkte ergänzen
-   * - kein bestehendes Produkt wird automatisch entfernt
-   * - keine Volltext-Heuristik entscheidet über Mitgliedschaft
-   * - technische Selection Rules werden in dieser Stufe noch nicht produktiv genutzt
-   *
-   * Damit gilt:
-   * visible = curated items[] ∪ explicit product.comparisons[]
-   */
-  const selectionRule = getComparisonSelectionRule(data.slug);
-  const hybridMembershipEnabled = selectionRule?.mode === "ready";
-
-  const backlinkItems = hybridMembershipEnabled
+  // Kuratierte Vergleichslisten sind autoritativ. Automatische
+  // Produktzuordnung dient nur als Fallback, wenn keine items gepflegt sind.
+  const automaticItems = explicitItems.length === 0
     ? products
-        .filter((product) =>
-          product.data.comparisons.includes(data.slug) &&
-          !explicitSlugs.has(product.data.slug)
-        )
-        .map((product) => ({
-          slug: product.data.slug,
-          label: product.data.title,
-          type: "product" as const,
-          recommendation: product.data.recommendation,
-          values: {}
-        }))
+      .filter((product) =>
+        product.data.comparisons.includes(data.slug)
+      )
+      .map((product) => ({
+        slug: product.data.slug,
+        label: product.data.title,
+        type: "product" as const,
+        recommendation: product.data.recommendation,
+        values: {}
+      }))
     : [];
 
-  /*
-   * Safety Gate 32.6.5
-   *
-   * Nur Vergleiche mit Registry-Status "ready" dürfen zusätzliche
-   * product.comparisons[]-Backlinks automatisch übernehmen.
-   *
-   * Alle needs-data/backlink-transition Vergleiche bleiben vollständig
-   * kuratiert über items[].
-   */
-  const items = [...explicitItems, ...backlinkItems];
+  const items = [...explicitItems, ...automaticItems];
 
   const automaticRecommendation = buildAutomaticRecommendations({
     comparison,
