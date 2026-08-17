@@ -368,6 +368,19 @@ export function buildComparisonViewModel({
   );
 
   /*
+   * Comparison Membership 32.6.4
+   *
+   * Safety-first Hybrid:
+   * - kuratierte items[] bleiben vollständig erhalten
+   * - explizite product.comparisons[]-Backlinks dürfen zusätzliche Produkte ergänzen
+   * - kein bestehendes Produkt wird automatisch entfernt
+   * - keine Volltext-Heuristik entscheidet über Mitgliedschaft
+   * - technische Selection Rules werden in dieser Stufe noch nicht produktiv genutzt
+   *
+   * Damit gilt:
+   * visible = curated items[] ∪ explicit product.comparisons[]
+   */
+  /*
    * Global Backlink Union 32.6.7
    *
    * Mitgliedschaft und technische Selection-Reife sind getrennt:
@@ -409,45 +422,24 @@ export function buildComparisonViewModel({
     )
     .map((item) => item.slug);
 
-  /*
-   * Editorial Ranking Guard 32.6.8
-   *
-   * Die globale Backlink-Union darf die Teilnehmermenge erweitern,
-   * aber keine vorhandene redaktionelle Siegerentscheidung still
-   * überschreiben.
-   *
-   * Priorität:
-   * 1. explizit gepflegter recommendation.winnerSlug / alternativeSlug
-   * 2. automatische Recommendation Engine
-   * 3. erstes kaufbares kuratiertes item[]
-   * 4. erst danach ein ergänztes Backlink-Produkt
-   */
-  const eligibleExplicitSlugs = explicitItems
-    .filter((item) =>
-      item.type === "product" &&
-      recommendationEligible(item.slug)
-    )
-    .map((item) => item.slug);
-
   const winnerCandidate =
-    data.recommendation.winnerSlug ??
-    automaticRecommendation.winnerSlug;
+    automaticRecommendation.winnerSlug ??
+    data.recommendation.winnerSlug;
   const alternativeCandidate =
-    data.recommendation.alternativeSlug ??
-    automaticRecommendation.alternativeSlug;
+    automaticRecommendation.alternativeSlug ??
+    data.recommendation.alternativeSlug;
 
   const resolvedWinnerSlug =
     winnerCandidate && eligibleItemSlugs.includes(winnerCandidate)
       ? winnerCandidate
-      : eligibleExplicitSlugs[0] ?? eligibleItemSlugs[0];
+      : eligibleItemSlugs[0];
 
   const resolvedAlternativeSlug =
     alternativeCandidate &&
     alternativeCandidate !== resolvedWinnerSlug &&
     eligibleItemSlugs.includes(alternativeCandidate)
       ? alternativeCandidate
-      : eligibleExplicitSlugs.find((slug) => slug !== resolvedWinnerSlug) ??
-        eligibleItemSlugs.find((slug) => slug !== resolvedWinnerSlug);
+      : eligibleItemSlugs.find((slug) => slug !== resolvedWinnerSlug);
 
   const getCriterionValue = (
     item: (typeof items)[number],
