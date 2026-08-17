@@ -65,20 +65,21 @@ tags:
 
 images:
   hero:
-    src: "../../assets/images/guides/gps-tracker/hero.webp"
-    alt: "Generische Darstellung eines kleinen GPS-Trackers; nicht das konkrete Produkt"
+    src: "../../assets/images/products/weenect-xs/hero.webp"
+    alt: "Weenect XS"
   thumbnail:
-    src: "../../assets/images/guides/gps-tracker/gps-vs-bluetooth.webp"
-    alt: "Vergleich zwischen Mobilfunk-GPS-Tracker und Bluetooth-Tag"
+    src: "../../assets/images/products/weenect-xs/thumbnail.webp"
+    alt: "Weenect XS – kompakte Produktansicht"
   comparison:
-    src: "../../assets/images/guides/gps-tracker/attachment.webp"
-    alt: "Sichere Befestigung eines kleinen GPS-Trackers am Halsband"
+    src: "../../assets/images/products/weenect-xs/comparison.webp"
+    alt: "Weenect XS im GPS-Tracker-Vergleich"
   gallery:
-    - src: "../../assets/images/guides/gps-tracker/how-it-works.webp"
-      alt: "Funktionskette eines GPS-Trackers mit Mobilfunkübertragung"
-    - src: "../../assets/images/guides/gps-tracker/missing-pet.webp"
-      alt: "Einsatz eines GPS-Trackers bei einem entlaufenen Haustier"
-
+    - src: "../../assets/images/products/weenect-xs/gallery-1.webp"
+      alt: "Weenect XS – Produktansicht"
+    - src: "../../assets/images/products/weenect-xs/gallery-2.webp"
+      alt: "Weenect XS – Lifestyle-Aufnahme"
+    - src: "../../assets/images/products/weenect-xs/gallery-3.webp"
+      alt: "Weenect XS – Outdoor-Aufnahme"
 price:
   current: 44.99
   currency: "EUR"

@@ -46,19 +46,21 @@ tags:
   - abo
 images:
   hero:
-    src: ../../assets/images/guides/gps-tracker/hero.webp
-    alt: Generische redaktionelle Darstellung eines GPS-Trackers am Hund; nicht das konkrete Produkt
+    src: "../../assets/images/products/tractive-dog-6/hero.webp"
+    alt: "Tractive DOG 6"
   thumbnail:
-    src: ../../assets/images/guides/gps-tracker/how-it-works.webp
-    alt: Datenweg eines GPS-Trackers über Satelliten, Mobilfunk und App
+    src: "../../assets/images/products/tractive-dog-6/thumbnail.webp"
+    alt: "Tractive DOG 6 – kompakte Produktansicht"
   comparison:
-    src: ../../assets/images/guides/gps-tracker/battery-subscription.webp
-    alt: Mobilfunktracker mit Akkulaufzeit und laufenden Abokosten im Vergleich
+    src: "../../assets/images/products/tractive-dog-6/comparison.webp"
+    alt: "Tractive DOG 6 im GPS-Tracker-Vergleich"
   gallery:
-    - src: ../../assets/images/guides/gps-tracker/attachment.webp
-      alt: Sichere Befestigung eines kompakten GPS-Trackers am Hundehalsband
-    - src: ../../assets/images/guides/gps-tracker/range-accuracy.webp
-      alt: Einfluss von GPS-Sicht und Mobilfunkempfang auf die Ortung
+    - src: "../../assets/images/products/tractive-dog-6/gallery-1.webp"
+      alt: "Tractive DOG 6 – Produktansicht"
+    - src: "../../assets/images/products/tractive-dog-6/gallery-2.webp"
+      alt: "Tractive DOG 6 – Lifestyle-Aufnahme"
+    - src: "../../assets/images/products/tractive-dog-6/gallery-3.webp"
+      alt: "Tractive DOG 6 – Outdoor-Aufnahme"
 price:
   current: 68.99
   currency: "EUR"

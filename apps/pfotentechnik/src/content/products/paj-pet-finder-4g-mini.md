@@ -44,19 +44,21 @@ tags:
   - inklusive-tracking
 images:
   hero:
-    src: ../../assets/images/guides/gps-tracker/hero.webp
-    alt: Generische Darstellung eines kleinen 4G-Haustiertrackers; nicht der konkrete PAJ PET Finder 4G Mini
+    src: "../../assets/images/products/paj-pet-finder-4g-mini/hero.webp"
+    alt: "PAJ GPS PET Finder 4G Mini"
   thumbnail:
-    src: ../../assets/images/guides/gps-tracker/how-it-works.webp
-    alt: Generische Darstellung des 4G-Datenwegs eines GPS-Haustiertrackers
+    src: "../../assets/images/products/paj-pet-finder-4g-mini/thumbnail.webp"
+    alt: "PAJ GPS PET Finder 4G Mini – kompakte Produktansicht"
   comparison:
-    src: ../../assets/images/guides/gps-tracker/battery-subscription.webp
-    alt: Generischer Vergleich von Trackerlaufzeit und laufenden Dienstkosten
+    src: "../../assets/images/products/paj-pet-finder-4g-mini/comparison.webp"
+    alt: "PAJ GPS PET Finder 4G Mini im GPS-Tracker-Vergleich"
   gallery:
-    - src: ../../assets/images/guides/gps-tracker/attachment.webp
-      alt: Generische Darstellung einer Trackerbefestigung am Halsband
-    - src: ../../assets/images/guides/gps-tracker/privacy.webp
-      alt: Generische Darstellung zu Standortdaten und App-Datenschutz
+    - src: "../../assets/images/products/paj-pet-finder-4g-mini/gallery-1.webp"
+      alt: "PAJ GPS PET Finder 4G Mini – Produktansicht"
+    - src: "../../assets/images/products/paj-pet-finder-4g-mini/gallery-2.webp"
+      alt: "PAJ GPS PET Finder 4G Mini – Lifestyle-Aufnahme"
+    - src: "../../assets/images/products/paj-pet-finder-4g-mini/gallery-3.webp"
+      alt: "PAJ GPS PET Finder 4G Mini – Outdoor-Aufnahme"
 price:
   current: 58.99
   currency: "EUR"
