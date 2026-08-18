@@ -89,6 +89,48 @@ availabilityUpdated: "2026-08-17T14:41:29.100Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
+
+externalEvidence:
+  professionalReviews:
+    - publisher: "TecnoAndroid"
+      title: "ROLA Mini Enabot: il miglior robot per controllare cani e gatti? Recensione"
+      url: "https://www.tecnoandroid.it/recensioni/recensioni-domotica/rola-mini-enabot-1850590/"
+      publishedAt: "2026-03-30"
+      checkedAt: "2026-08-18"
+      methodology: "hands-on"
+      positives:
+        - "Der dreiwöchige Alltagstest bewertet mobile Heimüberwachung, 2K-Kamera und Fernsteuerung als praktisch und alltagstauglich."
+        - "Die Selbstaufrichtung und die Beweglichkeit auf Hartboden sowie flachen Teppichen funktionierten im Test überzeugend."
+      negatives:
+        - "Höhere Teppichkanten und dickere Kabel können den Roboter stoppen oder festsetzen."
+        - "Es gibt keine autonome Hindernis- oder Absturzerkennung und keine selbstständige Rückkehr zu einer Ladestation."
+      findings:
+        - "TecnoAndroid nutzte den ROLA Mini drei Wochen täglich in einem Haushalt mit zwei Hunden."
+  userReviews:
+    - platform: "Chewy"
+      url: "https://www.chewy.com/enabot-rola-mini-moveable-wi-fi-pet/product-reviews/1391246"
+      checkedAt: "2026-08-18"
+      rating: 4
+      scale: 5
+      reviewCount: 8
+      scope: "product-specific"
+      recurringPositives:
+        - "Nutzer heben die mobile Suche nach Haustieren, einfache Einrichtung und brauchbare Videoqualität positiv hervor."
+        - "Die Beweglichkeit bietet gegenüber einer festen Haustierkamera einen klaren praktischen Mehrwert."
+      recurringCriticism:
+        - "Einzelne Bewertungen nennen instabile Verbindung, pixelige Videoübertragung und eingeschränkte Wendigkeit in engen Bereichen."
+        - "Es gibt Berichte, dass sich die Gummikette lösen kann oder Übergänge zwischen Bodenarten problematisch sind."
+  consensus:
+    strengths:
+      - finding: "Der entscheidende Vorteil gegenüber einer stationären Kamera ist die Möglichkeit, Haustiere in verschiedenen Räumen aktiv zu suchen."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "Bodenübergänge, enge Räume und fehlende autonome Hinderniserkennung begrenzen die Beweglichkeit im realen Haushalt."
+        sourceCount: 2
+        confidence: "high"
+    editorialAssessment: "Professional Review und produktspezifische Chewy-Bewertungen zeichnen ein konsistentes Bild: Der ROLA Mini ist als mobile Kamera deutlich flexibler als eine stationäre Lösung, verlangt aber einen weitgehend robotertauglichen Boden und bleibt bei Navigation und Konnektivität fehleranfälliger als ein autonomer Haushaltsroboter."
+  note: "Die professionelle Quelle behandelt eindeutig den aktuellen ROLA Mini und dokumentiert drei Wochen Nutzung. Chewy liefert nur acht Ratings und sieben ausgeschriebene Bewertungen; die Nutzerbasis ist daher noch klein."
 ---
 
 ## Mobile Kamera statt stationärem Rundumblick

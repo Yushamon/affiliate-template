@@ -89,6 +89,48 @@ availabilityUpdated: "2026-08-17T14:41:34.487Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
+
+externalEvidence:
+  professionalReviews:
+    - publisher: "The Independent"
+      title: "Furbo Mini 360 review: A treat-tossing dog cam with clever AI tech and quality video"
+      url: "https://www.the-independent.com/extras/indybest/house-garden/pets/furbo-mini-360-dog-cam-review-b2996642.html"
+      publishedAt: "2026-06-23"
+      checkedAt: "2026-08-18"
+      methodology: "hands-on"
+      positives:
+        - "Der Tester lobt schnelle Bewegungserkennung, hochwertige Videoübertragung, Treat Tossing und weitgehend treffsichere KI-Kategorisierung."
+        - "Die App wird als funktionsreich und im Alltag gut nutzbar beschrieben."
+      negatives:
+        - "Lokale Videospeicherung fehlt; für Aufzeichnungen ist praktisch ein Furbo-Nanny-Abonnement nötig."
+        - "Im Test gab es Schwierigkeiten mit der passenden Stromversorgung und einzelne KI-Ausgaben waren wenig sinnvoll."
+      findings:
+        - "The Independent testete die Mini 360 im eigenen Haushalt mit Hund und probierte Kamera, Treat Tossing, KI, App und Beruhigungsfunktionen praktisch aus."
+  userReviews:
+    - platform: "Trustpilot"
+      url: "https://www.trustpilot.com/review/furbo.com"
+      checkedAt: "2026-08-18"
+      rating: 2.7
+      scale: 5
+      reviewCount: 125
+      scope: "brand-wide"
+      recurringPositives:
+        - "Ein Teil der Nutzer schätzt Haustierüberwachung, Treat Tossing, Benachrichtigungen und einfache Einrichtung."
+        - "Es finden sich konkrete aktuelle Mini-360-Nutzer, die Überwachung und Warnfunktionen als hilfreich beschreiben."
+      recurringCriticism:
+        - "Sehr häufige Kritik betrifft das Abo-Modell und die Erwartung, für wichtige Funktionen zusätzlich zahlen zu müssen."
+        - "Weitere wiederkehrende Beschwerden betreffen App-Verbindung, Zuverlässigkeit und Support."
+  consensus:
+    strengths:
+      - finding: "Kamera, 360-Grad-Abdeckung und Treat Tossing bieten einen echten Mehrwert für die aktive Haustierbeobachtung."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Das Cloud- und Abo-Modell ist der deutlichste wiederkehrende Nachteil des Systems."
+        sourceCount: 2
+        confidence: "high"
+    editorialAssessment: "Der unabhängige Hands-on-Test bewertet die Mini 360 technisch klar positiv, während die markenweite Trustpilot-Basis wesentlich kritischer ausfällt. Die stärkste Übereinstimmung besteht beim Abo-Thema: Viele der interessanten Aufzeichnungs- und KI-Funktionen sind an laufende Kosten gebunden."
+  note: "The Independent testete ausdrücklich die Furbo Mini 360. Trustpilot umfasst die gesamte Furbo-Produkt- und Serviceerfahrung und wird deshalb als brand-wide geführt; die Gesamtwertung darf nicht als produktspezifisches Mini-360-Rating verwendet werden."
 ---
 
 ## Einordnung ohne eigenen Produkttest

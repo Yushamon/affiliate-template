@@ -1,14 +1,15 @@
 # Product External Evidence Audit
 
-- Produkte: 98
-- Mit externalEvidence: 95
-- Vollständig: 65
-- Teilweise: 30
-- Ohne Evidenz: 3
+- Produkte: 99
+- Mit externalEvidence: 99
+- Vollständig: 71
+- Teilweise: 28
+- Ohne Evidenz: 0
 
 ## Vollständig
 
 - aqara-smart-pet-feeder-c1
+- cat-mate-335-pet-fountain
 - cat-mate-c200
 - cat-mate-c300
 - cat-mate-c500
@@ -17,8 +18,10 @@
 - catit-pixi-smart-trinkbrunnen
 - catit-pixi-vision-smart-feeder
 - enabot-ebo-air-2
+- enabot-rola-mini
 - enabot-rola-pettracker
 - furbo-360-hundekamera
+- furbo-mini-360
 - garmin-alpha-t-20
 - imipaw-3l-automatic-cat-feeder
 - invoxia-biotracker-2026
@@ -46,11 +49,14 @@
 - petlibro-dockstream-2-smart
 - petlibro-dockstream-cordless
 - petlibro-dockstream-rfid-smart
+- petlibro-granary-2-vision
 - petlibro-granary-camera-feeder
 - petlibro-granary-wifi-feeder
+- petlibro-luma-smart-litter-box
 - petlibro-one-rfid-smart-feeder
 - petlibro-polar-wet-food-feeder
 - petlibro-scout-smart-camera
+- petlibro-space-smart-feeder
 - petlibro-stainless-steel-fountain
 - petsafe-freshfeed-refrigerated-feeder
 - petsafe-healthy-pet-simply-feed
@@ -76,9 +82,9 @@
 
 ## Teilweise
 
-- cat-mate-335-pet-fountain · fehlt: professionalReviews, userReviews, consensus
 - cat-mate-shell-fountain · fehlt: professionalReviews, consensus
 - devoko-90l-automatisches-katzenklo · fehlt: professionalReviews, consensus
+- feelneedy-fn-w18-8l-katzenbrunnen · fehlt: professionalReviews, userReviews, consensus
 - garmin-alpha-tt-25 · fehlt: consensus
 - honeyguardian-a305d · fehlt: professionalReviews, userReviews, consensus
 - honeyguardian-a68 · fehlt: professionalReviews, userReviews, consensus
@@ -96,11 +102,9 @@
 - petkit-purobot-max-3 · fehlt: professionalReviews
 - petlibro-air-wifi-feeder · fehlt: consensus
 - petlibro-glacier-ultrafiltration · fehlt: consensus
-- petlibro-granary-2-vision · fehlt: professionalReviews, userReviews, consensus
 - petlibro-granary-dual-feeder · fehlt: professionalReviews, consensus
-- petlibro-space-smart-feeder · fehlt: userReviews, consensus
 - petsafe-petporte-smart-flap · fehlt: userReviews
-- petwalk-medium-tiertuer · fehlt: professionalReviews, userReviews, consensus
+- petwalk-medium-tiertuer · fehlt: professionalReviews, consensus
 - wopet-cube-air-ca10 · fehlt: professionalReviews, consensus
 - wopet-heritage-view-camera-feeder · fehlt: professionalReviews, consensus
 - wopet-patrol-f07-pro · fehlt: professionalReviews, consensus
@@ -109,6 +113,4 @@
 
 ## Ohne Evidenz
 
-- enabot-rola-mini
-- furbo-mini-360
-- petlibro-luma-smart-litter-box
+Keine.

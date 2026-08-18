@@ -76,13 +76,24 @@ comparisons: ["beste-mikrochip-katzenklappen", "katzenklappen-mit-app-und-beutee
 comparisonFilters: { animal: ["cat", "dog"], petSize: ["small", "medium"], foodType: [], app: true, access: "microchip", backupPower: true, priceTier: "premium" }
 externalEvidence:
   professionalReviews: []
-  userReviews: []
-  status: constrained
-  constrained: true
-  note: >-
-    Am 2026-08-11 wurde keine ausreichend belastbare unabhängige professionelle Review und keine produktspezifische
-    Nutzerquelle mit sauber erfassbarem Rating, Skala und Review-Anzahl für die konkrete petWALK Medium Tiertür gefunden.
-    Herstellerangaben werden deshalb nicht als externe Evidenz umgedeutet; ein Consensus wird bewusst nicht erzeugt.
+  userReviews:
+    - platform: "Trustpilot"
+      url: "https://ch.trustpilot.com/review/petwalk.at"
+      checkedAt: "2026-08-18"
+      rating: 4.7
+      scale: 5
+      reviewCount: 328
+      scope: "brand-wide"
+      recurringPositives:
+        - "Viele langjährige Nutzer berichten von zuverlässiger Funktion, guter Dämmwirkung und sehr hilfreichem Support."
+        - "Mehrere Bewertungen beschreiben mehrjährige Nutzung der petWALK-Türen und schnelle Ersatzteil- oder Reparaturhilfe."
+      recurringCriticism:
+        - "Einzelne Nutzer nennen Reparaturbedarf nach mehreren Jahren sowie Einschränkungen oder Umstände bei Chip-Anhängern und Ersatzteilversorgung."
+  consensus:
+    strengths: []
+    weaknesses: []
+    editorialAssessment: "Für die konkrete Medium-Ausführung wurde weiterhin keine belastbare unabhängige professionelle Hands-on-Review gefunden. Die markenweite Trustpilot-Basis ist mit mehreren hundert Bewertungen vergleichsweise groß und enthält zahlreiche Langzeiterfahrungen mit petWALK-Türen, ersetzt aber keinen modellbezogenen Test."
+  note: "Trustpilot wird bewusst als brand-wide geführt, obwohl mehrere Rezensionen ausdrücklich Medium- oder petWALK-Türen im Langzeiteinsatz nennen. Ohne unabhängigen professionellen Test bleibt die Evidenz teilweise."
 specs:
   - { label: "Produktart", value: "Motorisierte, automatisch verriegelnde Tiertür Medium" }
   - { label: "Durchgang", value: "20 × 30 cm (B × H) laut Hersteller" }

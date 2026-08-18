@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-16T15:48:55.036Z",
+  "generatedAt": "2026-08-18T09:21:30.682Z",
   "summary": {
-    "products": 98,
-    "covered": 95,
-    "complete": 65,
-    "partial": 30,
-    "missing": 3
+    "products": 99,
+    "covered": 99,
+    "complete": 71,
+    "partial": 28,
+    "missing": 0
   },
   "rows": [
     {
@@ -21,16 +21,12 @@
     {
       "slug": "cat-mate-335-pet-fountain",
       "file": "src/content/products/cat-mate-335-pet-fountain.md",
-      "status": "partial",
+      "status": "complete",
       "hasExternal": true,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "cat-mate-c200",
@@ -141,16 +137,12 @@
     {
       "slug": "enabot-rola-mini",
       "file": "src/content/products/enabot-rola-mini.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "enabot-rola-pettracker",
@@ -161,6 +153,20 @@
       "userSources": 1,
       "consensus": 2,
       "missingParts": []
+    },
+    {
+      "slug": "feelneedy-fn-w18-8l-katzenbrunnen",
+      "file": "src/content/products/feelneedy-fn-w18-8l-katzenbrunnen.md",
+      "status": "partial",
+      "hasExternal": true,
+      "professional": 0,
+      "userSources": 0,
+      "consensus": 0,
+      "missingParts": [
+        "professionalReviews",
+        "userReviews",
+        "consensus"
+      ]
     },
     {
       "slug": "furbo-360-hundekamera",
@@ -175,16 +181,12 @@
     {
       "slug": "furbo-mini-360",
       "file": "src/content/products/furbo-mini-360.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "garmin-alpha-t-20",
@@ -680,16 +682,12 @@
     {
       "slug": "petlibro-granary-2-vision",
       "file": "src/content/products/petlibro-granary-2-vision.md",
-      "status": "partial",
+      "status": "complete",
       "hasExternal": true,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "professional": 2,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "petlibro-granary-camera-feeder",
@@ -727,16 +725,12 @@
     {
       "slug": "petlibro-luma-smart-litter-box",
       "file": "src/content/products/petlibro-luma-smart-litter-box.md",
-      "status": "missing",
-      "hasExternal": false,
-      "professional": 0,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "professionalReviews",
-        "userReviews",
-        "consensus"
-      ]
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": []
     },
     {
       "slug": "petlibro-one-rfid-smart-feeder",
@@ -771,15 +765,12 @@
     {
       "slug": "petlibro-space-smart-feeder",
       "file": "src/content/products/petlibro-space-smart-feeder.md",
-      "status": "partial",
+      "status": "complete",
       "hasExternal": true,
       "professional": 2,
-      "userSources": 0,
-      "consensus": 0,
-      "missingParts": [
-        "userReviews",
-        "consensus"
-      ]
+      "userSources": 1,
+      "consensus": 3,
+      "missingParts": []
     },
     {
       "slug": "petlibro-stainless-steel-fountain",
@@ -879,11 +870,10 @@
       "status": "partial",
       "hasExternal": true,
       "professional": 0,
-      "userSources": 0,
+      "userSources": 1,
       "consensus": 0,
       "missingParts": [
         "professionalReviews",
-        "userReviews",
         "consensus"
       ]
     },

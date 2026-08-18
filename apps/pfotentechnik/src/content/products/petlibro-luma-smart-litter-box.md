@@ -84,6 +84,47 @@ availabilityUpdated: "2026-08-17T15:48:40.462Z"
 editorialStatus: "complete"
 recommendationStatus: "limited"
 maintenanceStatus: "required"
+
+externalEvidence:
+  professionalReviews:
+    - publisher: "Cats.com"
+      title: "PETLIBRO Luma Automatic Litter Box Review"
+      url: "https://cats.com/petlibro-luma-automatic-litter-box-review"
+      publishedAt: "2026-05-06"
+      checkedAt: "2026-08-18"
+      methodology: "hands-on"
+      positives:
+        - "Cats.com berichtet nach mehrwöchigem Einsatz von einfacher Einrichtung, schneller Katzenakzeptanz und einem leisen Reinigungszyklus."
+        - "Offenes Design, Geruchskontrolle sowie Kamera- und App-Protokolle werden als klare Stärken eingeordnet."
+      negatives:
+        - "Der hohe Anschaffungspreis und die Beschränkung auf geeignete klumpende Streuarten werden als Nachteile genannt."
+        - "Der Test verweist auf Nutzerberichte zu Gewichtssensor, inkonsistenten Reinigungszyklen und kleineren Leckageproblemen."
+      findings:
+        - "Cats.com testete die Luma mehrere Wochen im Haushalt und verglich Reinigung, Geruchskontrolle, Verarbeitung und Bedienung mit anderen automatischen Katzentoiletten."
+  userReviews:
+    - platform: "Trustpilot"
+      url: "https://de.trustpilot.com/review/petlibro.com"
+      checkedAt: "2026-08-18"
+      rating: 3.9
+      scale: 5
+      reviewCount: 812
+      scope: "brand-wide"
+      recurringPositives:
+        - "Unter den aktuellen PETLIBRO-Bewertungen finden sich konkrete Luma-Nutzer, die schnelle Katzenakzeptanz, einfache Bedienung und den automatischen Reinigungsablauf positiv beschreiben."
+      recurringCriticism:
+        - "Einzelne Luma-Nutzer berichten, dass saubere Streu mit ausgesiebt wird oder die Trennung nicht immer zuverlässig arbeitet."
+        - "Die Gesamtplattform enthält zusätzlich markenweite Kritik zu App-, Verbindungs- und Supportthemen; diese wird nicht als produktspezifischer Luma-Befund behandelt."
+  consensus:
+    strengths:
+      - finding: "Das offene Konzept erleichtert vielen Katzen offenbar die Umgewöhnung und die automatische Reinigung reduziert den täglichen Schaufelaufwand."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Trennung und Reinigungslogik sind nicht in jeder Kombination aus Streu und Nutzung vollkommen zuverlässig."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: "Für die Luma liegt erstmals eine belastbare unabhängige mehrwöchige Hands-on-Review vor. Die aktuelle Nutzerbasis bestätigt sowohl schnelle Akzeptanz als auch einzelne Schwächen der Reinigungs- und Trennlogik. Die Trustpilot-Gesamtwertung ist jedoch markenweit und darf nicht als Luma-Produktbewertung dargestellt werden."
+  note: "Cats.com bezieht sich eindeutig auf die aktuelle PETLIBRO Luma. Trustpilot wird ausschließlich als markenweite Nutzerplattform geführt; nur ausdrücklich auf Luma bezogene Erfahrungsinhalte fließen vorsichtig in die Einordnung ein."
 ---
 
 ## Herstellerfunktion, praktische Bedeutung und offene Erfahrung

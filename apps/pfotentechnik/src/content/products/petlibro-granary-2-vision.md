@@ -107,13 +107,52 @@ ratings:
   tracking: 4.5
   preisleistung: 3.7
 externalEvidence:
-  constrained: true
-  status: constrained
-  note: >-
-    Für das exakt als PETLIBRO Granary 2 Vision identifizierte Modell wurde bei der Recherche am 2026-08-11 keine
-    belastbare unabhängige professionelle Review mit eindeutig geprüfter Modellidentität und keine ausreichend große
-    produktspezifische Nutzerquelle gefunden. Reviews älterer Granary-Camera-Modelle werden nicht übertragen. Kein
-    Consensus wird konstruiert.
+  professionalReviews:
+    - publisher: "Yahoo Shopping"
+      title: "This Auto Feeder Finally Stopped My Cat From Ruining My Sleep"
+      url: "https://shopping.yahoo.com/home-garden/kitchen/articles/auto-feeder-finally-stopped-cat-155138511.html"
+      checkedAt: "2026-08-18"
+      methodology: "hands-on"
+      positives:
+        - "Der Autor beschreibt den Granary 2 Vision nach praktischem Einsatz als deutlich hochwertiger als zuvor genutzte günstige Automaten."
+        - "Kamera, Futterkontrolle und die Möglichkeit, tatsächliche Mahlzeiten statt nur Ausgabezeiten zu beobachten, werden als zentraler Mehrwert eingeordnet."
+      negatives: []
+      findings:
+        - "Der Beitrag behandelt ausdrücklich die neue Granary-2-Vision-Generation und beschreibt eigene Nutzung."
+    - publisher: "Seek & Score"
+      title: "Petlibro Granary 2 Vision (Model: AF205)"
+      url: "https://seekandscore.com/reviews/petlibro-granary-smart-camera-feeder/"
+      checkedAt: "2026-08-18"
+      methodology: "editorial-review"
+      positives:
+        - "Kameraqualität und -position, Frischhaltung, Edelstahlnapf und App-Einrichtung werden positiv eingeordnet."
+        - "Für Nutzer, die von unterwegs prüfen möchten, ob ihr Tier tatsächlich frisst, wird der Funktionsmix als besonders sinnvoll bewertet."
+      negatives:
+        - "Unregelmäßige Kroketten können zu Ausgabestörungen führen."
+        - "Aufgezeichnete Videohistorie verursacht zusätzliche Cloud-Kosten und die Ersteinrichtung kann WLAN-Reibung erzeugen."
+      findings:
+        - "Die Review identifiziert ausdrücklich Modell AF205 und grenzt es von älteren Granary-Kameraautomaten ab."
+  userReviews:
+    - platform: "Petlibro"
+      url: "https://petlibro.com/products/granary-2-series"
+      checkedAt: "2026-08-18"
+      rating: 5
+      scale: 5
+      scope: "product-specific"
+      recurringPositives:
+        - "Die aktuelle Serienseite zeigt eine sehr frühe positive Beta-Tester-Bewertung für die Granary-2-Serie."
+      recurringCriticism: []
+  consensus:
+    strengths:
+      - finding: "Die Kombination aus Kamera und genauerer Erfassung der Futteraufnahme liefert mehr Entscheidungswert als ein reines Ausgabeprotokoll."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "Cloud- beziehungsweise Aboabhängigkeiten und die Empfindlichkeit gegenüber ungeeigneten Kroketten bleiben praktische Grenzen."
+        sourceCount: 1
+        confidence: "medium"
+    editorialAssessment: "Die Evidenzlage hat sich seit dem letzten Audit klar verbessert: Zwei aktuelle externe Beiträge beziehen sich ausdrücklich auf die Granary-2-Vision-Generation beziehungsweise Modell AF205. Die Nutzerbasis ist noch sehr jung; die Herstellerseite zeigt Beta-Tester-Feedback und ist deshalb deutlich schwächer zu gewichten als eine unabhängige Händlerplattform."
+  note: "Ältere Granary Smart Camera Feeder wurden nicht übertragen. Die professionelle Evidenz bezieht sich auf die aktuelle Granary 2 Vision / AF205. Das Nutzerfeedback auf der Herstellerseite ist früh und herstellergehostet, daher nur als schwaches ergänzendes Signal aufgenommen."
 decision:
   bestFor:
     - "eine Katze mit Trockenfutter und genauem Fressprotokoll"

@@ -112,7 +112,6 @@ externalEvidence:
       title: "I tried Petlibro’s new automatic pet feeder with vacuum-sealed storage"
       url: "https://www.mic.com/shopping/petlibro-space-automatic-pet-feeder-review-launch-2023"
       publishedAt: "2023-06-24"
-      updatedAt: "2023-09-10"
       checkedAt: "2026-08-11"
       methodology: "hands-on"
       positives:
@@ -123,17 +122,32 @@ externalEvidence:
         - "Das Stromkabel wurde im Test als eher kurz empfunden."
       findings:
         - "Der Beitrag beschreibt tatsächliche Nutzung mit der eigenen Katze und konkreten Zeitplänen."
-  userReviews: []
+  userReviews:
+    - platform: "Trustpilot"
+      url: "https://de.trustpilot.com/review/petlibro.com"
+      checkedAt: "2026-08-18"
+      rating: 3.9
+      scale: 5
+      reviewCount: 812
+      scope: "brand-wide"
+      recurringPositives:
+        - "Aktuelle PETLIBRO-Nutzer loben wiederholt einfache Bedienung und hilfreichen Support bei Problemen."
+      recurringCriticism:
+        - "Markenweit treten Beschwerden zu Verbindungsabbrüchen, App-Problemen und einzelnen Hardwarefehlern auf; diese sind nicht spezifisch dem Space Feeder zuzurechnen."
   consensus:
-    strengths: []
-    weaknesses: []
-  researchStatus: "constrained"
-  researchReason: >-
-    Zwei belastbare unabhängige Hands-on-Reviews für das konkrete Space-Modell sind vorhanden. Zum Prüfzeitpunkt
-    wurde jedoch keine ausreichend belastbare produktspezifische Nutzerplattform mit Rating und Review-Anzahl gefunden.
-  researchCheckedAt: "2026-08-11"
-  note: >-
-    Allgemeine PETLIBRO-App-Bewertungen werden nicht als produktspezifische Nutzerbewertungen des Space Feeders verwendet.
+    strengths:
+      - finding: "Beide unabhängigen Praxistests sehen die Vakuum-Frischhaltung als das zentrale Differenzierungsmerkmal des Space Feeders."
+        sourceCount: 2
+        confidence: "high"
+      - finding: "Einrichtung und Zeitplanung werden in beiden Tests als unkompliziert beschrieben."
+        sourceCount: 2
+        confidence: "high"
+    weaknesses:
+      - finding: "Das große Gehäuse und die eingeschränkte unmittelbare Sicht auf den Futtervorrat sind praktische Nachteile des Designs."
+        sourceCount: 2
+        confidence: "medium"
+    editorialAssessment: "Für das konkrete Space-Modell liegen zwei belastbare Hands-on-Reviews vor, die die Vakuumversiegelung als echten Mehrwert bestätigen. Eine ausreichend große produktspezifische Nutzerplattform ließ sich weiterhin nicht verifizieren; die ergänzte Trustpilot-Basis bleibt ausdrücklich markenweit."
+  note: "Die beiden bestehenden professionellen Quellen wurden erhalten. PETLIBRO-Trustpilot wird nur als brand-wide Kontext ergänzt und nicht als Space-Produktbewertung interpretiert."
 decision:
   bestFor:
     - Katzen mit mehreren kleinen Trockenfuttermahlzeiten

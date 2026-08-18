@@ -99,18 +99,43 @@ ratings:
   preisleistung: 4.2
   ersatzteile: 4.7
 externalEvidence:
-  constrained: true
-  professionalReviews: []
-  userReviews: []
+  professionalReviews:
+    - publisher: "Healthy Cat Guide"
+      title: "Cat Mate Pet Fountain: An Honest Review"
+      url: "https://healthycatguide.com/cat-mate-pet-fountain-review/"
+      publishedAt: "2026-04-24"
+      checkedAt: "2026-08-18"
+      methodology: "long-term"
+      positives:
+        - "Die Autorin nutzte den konkreten Cat Mate 335 über eineinhalb Jahre und bewertet Aufbau, geringe Geräuschentwicklung und Haltbarkeit positiv."
+        - "Im Ein-Katzen-Haushalt erwies sich der Brunnen als zuverlässige Alltagslösung."
+      negatives:
+        - "Die Reinigung wird als regelmäßig und vergleichsweise arbeitsintensiv beschrieben."
+        - "Mit zwei Litern ist die Reserve für längere Abwesenheiten oder mehrere Tiere begrenzt."
+      findings:
+        - "Der Langzeitbericht deckt alle vier Jahreszeiten sowie Nutzung mit und ohne Aktivkohlefilter ab."
+  userReviews:
+    - platform: "B&Q"
+      url: "https://www.diy.com/departments/cat-mate-3-level-2-litre-pet-water-fountain-white-335/0035368003356_BQ.prd"
+      checkedAt: "2026-08-18"
+      rating: 5
+      scale: 5
+      reviewCount: 1
+      scope: "product-specific"
+      recurringPositives:
+        - "Die einzelne aktuelle Bewertung beschreibt lange Haltbarkeit, geringe Geräuschentwicklung und gute Nutzung der verschiedenen Trinkhöhen."
+      recurringCriticism: []
   consensus:
-    strengths: []
-    weaknesses: []
-  constraintReason: >-
-    Für das konkrete Modell Cat Mate Pet Fountain 335 ließ sich im aktuellen Recherchelauf keine ausreichend belastbare
-    Kombination aus unabhängigem professionellem Review und produktspezifischer Nutzerbasis verifizieren.
-  note: >-
-    Die Lücke wird bewusst dokumentiert. Händlertexte, Herstellerangaben oder Bewertungen anderer Cat-Mate-Brunnen
-    werden nicht auf das Modell 335 übertragen.
+    strengths:
+      - finding: "Langzeitreview und aktuelle Händlerbewertung stimmen bei leiser Arbeitsweise und alltagstauglicher Haltbarkeit überein."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Die begrenzte Kapazität und der regelmäßige Reinigungsbedarf sprechen gegen eine Set-and-forget-Nutzung."
+        sourceCount: 1
+        confidence: "low"
+    editorialAssessment: "Der neue Langzeitbericht verbessert die Evidenzlage erheblich, weil er das konkrete Modell 335 über mehr als ein Jahr beschreibt. Die produktspezifische Nutzerbasis ist dagegen mit nur einer sauber erfassbaren B&Q-Bewertung sehr klein und darf nicht übergewichtet werden."
+  note: "Healthy Cat Guide behandelt explizit den Cat Mate 335 2L und dokumentiert Langzeitnutzung. Die B&Q-Nutzerbasis besteht nur aus einer Bewertung; sie dient lediglich als schwacher zusätzlicher Abgleich."
 decision:
   bestFor:
     - eine oder mehrere Katzen

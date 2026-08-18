@@ -260,6 +260,15 @@ faq:
     answer: "Der aktuelle deutsche Produkttitel bewirbt drei Filter. Die allgemeine FN-W18-Anleitung listet dagegen nur einen Filter. Der konkrete Lieferumfang sollte deshalb im ausgewählten Amazon-Angebot geprüft werden."
   - question: "Eignet sich der 8-Liter-Brunnen für längere Abwesenheiten?"
     answer: "Die große Reserve kann das Nachfüllen erleichtern, ersetzt aber keine tägliche Betreuung. Wasserqualität, Akkustand, Sensor, Pumpe und Gesundheitszustand der Tiere müssen weiterhin kontrolliert werden."
+
+externalEvidence:
+  professionalReviews: []
+  userReviews: []
+  consensus:
+    strengths: []
+    weaknesses: []
+    editorialAssessment: "Für den FEELNEEDY FN-W18 ließ sich trotz aktueller Modellprüfung keine belastbare unabhängige Hands-on-Review und keine ausreichend transparente produktspezifische Nutzerplattform verifizieren. Die auffindbaren Beiträge waren überwiegend Hersteller-, Händler- oder affiliategetriebene Zusammenstellungen und werden deshalb nicht als externe Evidenz gewertet."
+  note: "Die Produktidentität wurde über die aktuelle offizielle FEELNEEDY-FN-W18-Seite abgeglichen. Ein japanischer Affiliate-Beitrag legt offen, Spezifikationen und Rezensionen teils KI-gestützt zusammenzufassen und wird bewusst nicht als professioneller Praxistest übernommen. Die Evidenzlücke bleibt daher bestehen, statt sie mit schwachen Quellen zu füllen."
 ---
 
 Der FEELNEEDY FN-W18 ist ein ungewöhnlich großer kabelloser Trinkbrunnen. Sein 8-Liter-Gesamtvolumen kombiniert einen ungefähr 7 Liter großen Edelstahltank mit einer breiten Trinkschale von rund einem Liter.
