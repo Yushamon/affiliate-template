@@ -20,7 +20,22 @@ seo: { title: "PETLIBRO Luma im Datencheck", description: "PETLIBRO Luma nach Ei
 hub: { sections: ["produkte", "automatische-katzentoiletten"] }
 tags: ["automatische-katzentoilette", "katze", "mehrkatzenhaushalt", "kamera", "app"]
 images:
-  hero: { src: "../../assets/images/project/pfotentechnik/comparison/default-editorial-hero.webp", alt: "Neutrale redaktionelle Platzhaltergrafik bis zum modellgetreuen PETLIBRO-Luma-Produktbild" }
+  hero:
+    src: "../../assets/images/products/petlibro-luma-smart-litter-box/hero.webp"
+    alt: "PETLIBRO Luma Smart Self-Cleaning Litter Box in hochwertiger Produktansicht"
+  thumbnail:
+    src: "../../assets/images/products/petlibro-luma-smart-litter-box/thumbnail.webp"
+    alt: "PETLIBRO Luma Smart Self-Cleaning Litter Box in kompakter Produktansicht"
+  comparison:
+    src: "../../assets/images/products/petlibro-luma-smart-litter-box/comparison.webp"
+    alt: "PETLIBRO Luma Smart Self-Cleaning Litter Box für den Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/petlibro-luma-smart-litter-box/gallery-1.webp"
+      alt: "PETLIBRO Luma Smart Self-Cleaning Litter Box, Produktansicht 1"
+    - src: "../../assets/images/products/petlibro-luma-smart-litter-box/gallery-2.webp"
+      alt: "PETLIBRO Luma Smart Self-Cleaning Litter Box, Produktansicht 2"
+    - src: "../../assets/images/products/petlibro-luma-smart-litter-box/gallery-3.webp"
+      alt: "PETLIBRO Luma Smart Self-Cleaning Litter Box, Produktansicht 3"
 price:
   current: null
   currency: "EUR"

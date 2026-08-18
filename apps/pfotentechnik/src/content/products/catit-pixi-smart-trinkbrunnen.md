@@ -135,6 +135,14 @@ specs:
   - { label: "Reinigung", value: "Edelstahleinsatz spülmaschinengeeignet; Pumpe und übrige Teile nach Anleitung reinigen" }
   - { label: "Abmessungen", value: "20,5 × 20,5 × 17 cm" }
   - { label: "Gewicht", value: "800 g" }
+  - label: "Lautstärke"
+    value: "Superleise, vollständig abnehmbare Pumpe; kein konkreter dB-Wert veröffentlicht"
+  - label: "Akku"
+    value: "Nein; USB/DC-5-V-1-A-Netzbetrieb, durchschnittlicher Verbrauch unter 1 W"
+  - label: "Wasserfluss"
+    value: "Drei Trinkoptionen: bogenförmiger Wasserstrom mit Düsenkopf, sprudelnder Wasserstrom ohne Düsenkopf und sanft fließender Pool"
+  - label: "Ersatzfilter"
+    value: "Catit PIXI Trinkbrunnenfilter 43721/43722/43723; Wechsel laut Hersteller etwa alle 30 Tage"
 features: ["App-Steuerung", "UVC-Zyklen", "Trockenlaufschutz", "Filter- und Pumpenerinnerung", "Gerätefreigabe"]
 useCase: "Kompakter App- und UVC-Trinkbrunnen für Katzen"
 comparisonData: { version: 1, custom: { kapazitaet: "2 Liter", material: "BPA-freier Kunststoff; Edelstahl-Trinkfläche", lautstaerke: "Nicht belastbar ausgewiesen", filter: "Dreifachfilter; Wechsel alle 30 Tage laut Hersteller", reinigung: "Edelstahleinsatz spülmaschinengeeignet; übrige Teile separat", stromversorgung: "Netzbetrieb; 2,4-GHz-WLAN", eignung: "Katzen; App-/UVC-Fokus" } }

@@ -199,6 +199,16 @@ specs:
     value: Nein
   - label: Geeignet für
     value: Katzen und kleine Hunde mit individuell geschützter Ration
+  - label: "Napf"
+    value: "400-ml-Schale; Vollschale oder zwei Halbschalen, optional Edelstahl-Schalenset"
+  - label: "Reinigung"
+    value: "Schaleneinsätze spülmaschinengeeignet; Deckel und Matte per Hand reinigen; Gerätebasis nur feucht abwischen und nicht eintauchen"
+  - label: "WLAN"
+    value: "App-Anbindung indirekt über den Sure Petcare Hub; der Hub wird mit dem Heimrouter verbunden"
+  - label: "Batterie"
+    value: "4 × C-Batterien; typische Laufzeit etwa 6 Monate"
+  - label: "Maße"
+    value: "200 × 230 × 320 mm (H × B × T)"
 faq: []
 useCase: Für Katzen und kleine Hunde mit individuellem Futterzugang
 capacity: 400 ml

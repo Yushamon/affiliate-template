@@ -131,6 +131,14 @@ specs:
   - { label: "Trinkfläche", value: "Offene Schale, Zugang von allen Seiten" }
   - { label: "Abmessungen", value: "25,9 × 25,9 × 13,7 cm" }
   - { label: "App", value: "Nein" }
+  - label: "Lautstärke"
+    value: "Leiser Betrieb mit tauchfähiger Pumpe und sanft blubberndem Wasserfluss; kein dB-Wert veröffentlicht"
+  - label: "Akku"
+    value: "Nein; Netzbetrieb über Wandadapter"
+  - label: "Wasserfluss"
+    value: "Sanftes Blubbern; 360-Grad-Zugang über Turm und Schale"
+  - label: "Ersatzfilter"
+    value: "PetSafe Aktivkohlefilter PAC00-13906 und Schaumfilter PAC00-13711"
 features: ["Keramik", "Offene Trinkschale", "Aktivkohlefilter", "Schaum-Vorfilter", "Sanfter Wasserfluss"]
 useCase: "Keramik- und Offline-Alternative für Katzen und kleine Hunde"
 comparisonData: { version: 1, custom: { kapazitaet: "1,8 Liter", material: "Keramik; offene Trinkschale", lautstaerke: "Sanftes Blubbern; keine belastbare dB-Angabe", filter: "Aktivkohle plus Schaum", reinigung: "Keramikteile oberer Spülmaschinenkorb; Pumpe von Hand", stromversorgung: "Netzbetrieb", eignung: "Katzen und kleine Hunde; Keramik-Fokus" } }

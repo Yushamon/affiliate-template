@@ -232,6 +232,12 @@ specs:
     value: "Katzen und kleine Hunde"
   - label: "Stromausfall"
     value: "kein Batterie-Backup"
+  - label: "Lautstärke"
+    value: "23 dB laut Hersteller"
+  - label: "Reinigung"
+    value: "Abnehmbarer Tank und spülmaschinenfeste Edelstahlschale; Rotor ausspülbar"
+  - label: "Ersatzfilter"
+    value: "4-stufiger Filter; für ein Haustier etwa alle 2 Wochen ersetzen, bei mehreren Tieren häufiger"
 faq:
   - question: "Ist der Dockstream 2 Smart PLWF106 kabellos?"
     answer: "Nein. PLWF106 ist ausschließlich für den Netzbetrieb ausgelegt."

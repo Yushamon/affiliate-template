@@ -1,12 +1,12 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-08-18T09:29:45.895Z
+Erstellt: 2026-08-18T10:33:30.171Z
 
 ## Zusammenfassung
 
 - Produkte: 99
 - Fehler: 0
-- Warnungen: 143
+- Warnungen: 106
 - Dokumentierte Hinweise: 146
 - Doppelte Slugs: 0
 
@@ -20,132 +20,6 @@ Erstellt: 2026-08-18T09:29:45.895Z
 - gps-tracker: 12
 
 ## Produkte mit Handlungsbedarf
-
-### Prothelis area Pets
-
-- Datei: `src/content/products/prothelis-area-pets.md`
-- Kategorie: gps-tracker
-- Vollständigkeit: 76%
-- Warnungen:
-  - Thumbnail fehlt
-  - Comparison-Bild fehlt
-  - Nur 0 Galerie-Bilder hinterlegt
-  - Affiliate-Link fehlt
-  - Empfohlenes Feld fehlt: app
-  - Empfohlenes Feld fehlt: wlan
-  - Empfohlenes Feld fehlt: bluetooth
-  - Empfohlenes Feld fehlt: material
-
-### PetSafe Keramik-Trinkbrunnen Streamside
-
-- Datei: `src/content/products/petsafe-streamside-trinkbrunnen.md`
-- Kategorie: trinkbrunnen
-- Vollständigkeit: 79%
-- Warnungen:
-  - Empfohlenes Feld fehlt: lautstärke
-  - Empfohlenes Feld fehlt: akku
-  - Empfohlenes Feld fehlt: uv
-  - Empfohlenes Feld fehlt: trinkhöhe
-  - Empfohlenes Feld fehlt: wasserfluss
-  - Empfohlenes Feld fehlt: ersatzfilter
-  - Empfohlenes Feld fehlt: gewicht
-
-### SureFeed Microchip Pet Feeder Connect
-
-- Datei: `src/content/products/surefeed-microchip-pet-feeder-connect.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 79%
-- Warnungen:
-  - Nur 1 Galerie-Bilder hinterlegt
-  - Empfohlenes Feld fehlt: napf
-  - Empfohlenes Feld fehlt: reinigung
-  - Empfohlenes Feld fehlt: wlan
-  - Empfohlenes Feld fehlt: batterie
-  - Empfohlenes Feld fehlt: maße
-  - Empfohlenes Feld fehlt: gewicht
-
-### Catit PIXI Smart-Trinkbrunnen
-
-- Datei: `src/content/products/catit-pixi-smart-trinkbrunnen.md`
-- Kategorie: trinkbrunnen
-- Vollständigkeit: 85%
-- Warnungen:
-  - Empfohlenes Feld fehlt: lautstärke
-  - Empfohlenes Feld fehlt: akku
-  - Empfohlenes Feld fehlt: trinkhöhe
-  - Empfohlenes Feld fehlt: wasserfluss
-  - Empfohlenes Feld fehlt: ersatzfilter
-
-### FEELNEEDY FN-W18 8L Katzenbrunnen
-
-- Datei: `src/content/products/feelneedy-fn-w18-8l-katzenbrunnen.md`
-- Kategorie: trinkbrunnen
-- Vollständigkeit: 85%
-- Warnungen:
-  - Empfohlenes Feld fehlt: trinkhöhe
-  - Empfohlenes Feld fehlt: wasserfluss
-  - Empfohlenes Feld fehlt: ersatzfilter
-  - Empfohlenes Feld fehlt: maße
-  - Empfohlenes Feld fehlt: gewicht
-
-### PETLIBRO Dockstream 2 Smart
-
-- Datei: `src/content/products/petlibro-dockstream-2-smart.md`
-- Kategorie: trinkbrunnen
-- Vollständigkeit: 85%
-- Warnungen:
-  - Empfohlenes Feld fehlt: lautstärke
-  - Empfohlenes Feld fehlt: reinigung
-  - Empfohlenes Feld fehlt: uv
-  - Empfohlenes Feld fehlt: trinkhöhe
-  - Empfohlenes Feld fehlt: ersatzfilter
-
-### PETLIBRO Space Smart Feeder
-
-- Datei: `src/content/products/petlibro-space-smart-feeder.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 85%
-- Warnungen:
-  - Comparison-Bild fehlt
-  - Empfohlenes Feld fehlt: napf
-  - Empfohlenes Feld fehlt: reinigung
-  - Empfohlenes Feld fehlt: wlan
-  - Empfohlenes Feld fehlt: maße
-
-### Cat Mate Pet Fountain 335
-
-- Datei: `src/content/products/cat-mate-335-pet-fountain.md`
-- Kategorie: trinkbrunnen
-- Vollständigkeit: 88%
-- Warnungen:
-  - Empfohlenes Feld fehlt: lautstärke
-  - Empfohlenes Feld fehlt: uv
-  - Empfohlenes Feld fehlt: trinkhöhe
-  - Empfohlenes Feld fehlt: gewicht
-
-### Enabot ROLA PetTracker
-
-- Datei: `src/content/products/enabot-rola-pettracker.md`
-- Kategorie: gps-tracker
-- Vollständigkeit: 88%
-- Warnungen:
-  - Thumbnail fehlt
-  - Comparison-Bild fehlt
-  - Nur 0 Galerie-Bilder hinterlegt
-  - Affiliate-Link fehlt
-- Dokumentierte Hinweise:
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: material
-
-### Invoxia Biotracker Edition 2026
-
-- Datei: `src/content/products/invoxia-biotracker-2026.md`
-- Kategorie: gps-tracker
-- Vollständigkeit: 88%
-- Warnungen:
-  - Empfohlenes Feld fehlt: wlan
-  - Empfohlenes Feld fehlt: bluetooth
-  - Empfohlenes Feld fehlt: abmessungen
-  - Empfohlenes Feld fehlt: material
 
 ### Litter-Robot 5 Pro
 
@@ -191,6 +65,17 @@ Erstellt: 2026-08-18T09:29:45.895Z
   - Empfohlenes Feld fehlt: trinkhöhe
   - Empfohlenes Feld fehlt: ersatzfilter
 
+### Prothelis area Pets
+
+- Datei: `src/content/products/prothelis-area-pets.md`
+- Kategorie: gps-tracker
+- Vollständigkeit: 88%
+- Warnungen:
+  - Affiliate-Link fehlt
+  - Empfohlenes Feld fehlt: wlan
+  - Empfohlenes Feld fehlt: bluetooth
+  - Empfohlenes Feld fehlt: material
+
 ### Enabot EBO Air 2
 
 - Datei: `src/content/products/enabot-ebo-air-2.md`
@@ -200,6 +85,16 @@ Erstellt: 2026-08-18T09:29:45.895Z
   - Thumbnail fehlt
   - Comparison-Bild fehlt
   - Nur 0 Galerie-Bilder hinterlegt
+
+### FEELNEEDY FN-W18 8L Katzenbrunnen
+
+- Datei: `src/content/products/feelneedy-fn-w18-8l-katzenbrunnen.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 91%
+- Warnungen:
+  - Empfohlenes Feld fehlt: trinkhöhe
+  - Empfohlenes Feld fehlt: maße
+  - Empfohlenes Feld fehlt: gewicht
 
 ### Furbo 360° Hundekamera
 
@@ -271,16 +166,6 @@ Erstellt: 2026-08-18T09:29:45.895Z
   - Empfohlenes Feld fehlt: napf
   - Empfohlenes Feld fehlt: reinigung
 
-### PETLIBRO Luma Smart Self-Cleaning Litter Box
-
-- Datei: `src/content/products/petlibro-luma-smart-litter-box.md`
-- Kategorie: automatische-katzentoiletten
-- Vollständigkeit: 91%
-- Warnungen:
-  - Thumbnail fehlt
-  - Comparison-Bild fehlt
-  - Nur 0 Galerie-Bilder hinterlegt
-
 ### PETLIBRO Scout Smart Camera
 
 - Datei: `src/content/products/petlibro-scout-smart-camera.md`
@@ -290,6 +175,25 @@ Erstellt: 2026-08-18T09:29:45.895Z
   - Thumbnail fehlt
   - Comparison-Bild fehlt
   - Nur 0 Galerie-Bilder hinterlegt
+
+### PetSafe Keramik-Trinkbrunnen Streamside
+
+- Datei: `src/content/products/petsafe-streamside-trinkbrunnen.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 91%
+- Warnungen:
+  - Empfohlenes Feld fehlt: uv
+  - Empfohlenes Feld fehlt: trinkhöhe
+  - Empfohlenes Feld fehlt: gewicht
+
+### Cat Mate Pet Fountain 335
+
+- Datei: `src/content/products/cat-mate-335-pet-fountain.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 94%
+- Warnungen:
+  - Empfohlenes Feld fehlt: uv
+  - Empfohlenes Feld fehlt: gewicht
 
 ### Cat Mate Shell Pet Fountain
 
@@ -376,6 +280,33 @@ Erstellt: 2026-08-18T09:29:45.895Z
   - Herstellerangabe dokumentiert, aber nicht bestätigt: maße
   - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
 
+### PETLIBRO Dockstream 2 Smart
+
+- Datei: `src/content/products/petlibro-dockstream-2-smart.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 94%
+- Warnungen:
+  - Empfohlenes Feld fehlt: uv
+  - Empfohlenes Feld fehlt: trinkhöhe
+
+### PETLIBRO Space Smart Feeder
+
+- Datei: `src/content/products/petlibro-space-smart-feeder.md`
+- Kategorie: futterautomaten
+- Vollständigkeit: 94%
+- Warnungen:
+  - Comparison-Bild fehlt
+  - Empfohlenes Feld fehlt: maße
+
+### SureFeed Microchip Pet Feeder Connect
+
+- Datei: `src/content/products/surefeed-microchip-pet-feeder-connect.md`
+- Kategorie: futterautomaten
+- Vollständigkeit: 94%
+- Warnungen:
+  - Nur 1 Galerie-Bilder hinterlegt
+  - Empfohlenes Feld fehlt: gewicht
+
 ### WOPET Patrol F07 Pro
 
 - Datei: `src/content/products/wopet-patrol-f07-pro.md`
@@ -418,6 +349,24 @@ Erstellt: 2026-08-18T09:29:45.895Z
 - Vollständigkeit: 97%
 - Warnungen:
   - Empfohlenes Feld fehlt: napf
+
+### Catit PIXI Smart-Trinkbrunnen
+
+- Datei: `src/content/products/catit-pixi-smart-trinkbrunnen.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 97%
+- Warnungen:
+  - Empfohlenes Feld fehlt: trinkhöhe
+
+### Enabot ROLA PetTracker
+
+- Datei: `src/content/products/enabot-rola-pettracker.md`
+- Kategorie: gps-tracker
+- Vollständigkeit: 97%
+- Warnungen:
+  - Affiliate-Link fehlt
+- Dokumentierte Hinweise:
+  - Herstellerangabe dokumentiert, aber nicht bestätigt: material
 
 ### HoneyGuardian A305D
 

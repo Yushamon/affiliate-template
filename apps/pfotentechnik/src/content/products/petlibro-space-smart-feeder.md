@@ -237,6 +237,12 @@ specs:
     value: Katzen und kleine Hunde mit Trockenfutter
   - label: Nicht geeignet für
     value: Nassfutter, Frischfutter und sehr große oder unregelmäßig geformte Kroketten
+  - label: "Napf"
+    value: "Futternapf vorhanden; zusätzliche beziehungsweise Ersatz-Futternäpfe sind über PETLIBRO Support erhältlich"
+  - label: "Reinigung"
+    value: "Zubehör zerlegbar; Basis nicht direkt mit Wasser abspülen und nicht mit nassem Tuch reinigen; Zubehör vor Zusammenbau vollständig trocknen"
+  - label: "WLAN"
+    value: "WLAN-App-Anbindung vorhanden; Einrichtung über PETLIBRO App, alternativ Bluetooth beziehungsweise Hotspot-Verfahren"
 faq:
   - question: Was ist das Besondere am PETLIBRO Space Smart Feeder?
     answer: >-

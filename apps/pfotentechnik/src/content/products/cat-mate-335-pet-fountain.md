@@ -250,6 +250,10 @@ specs:
     value: ca. 26,7 × 17,1 × 22,2 cm
   - label: Geeignet für
     value: Katzen und kleine Hunde
+  - label: "Lautstärke"
+    value: "Superleiser Betrieb durch isoliertes Pumpensystem (P.S.)"
+  - label: "Trinkhöhe"
+    value: "Drei unterschiedlich hohe Trinkebenen"
 faq:
   - question: Wie viel Wasser fasst der Cat Mate 335?
     answer: >-

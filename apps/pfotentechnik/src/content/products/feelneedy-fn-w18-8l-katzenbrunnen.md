@@ -239,6 +239,10 @@ specs:
     value: "Brunnen, Steuer- und Pumpenmodul, Kabel, Bürste, Pinzette, Anleitung und je nach Angebotsvariante ein oder mehrere Filter"
   - label: "Geeignet für"
     value: "mehrere Katzen sowie kleine und mittelgroße Hunde"
+  - label: "Wasserfluss"
+    value: "Sensor-Modus 20 s bei Annäherung, Zeitmodus 15 s alle 15 min, Dauerfluss nur bei Netzbetrieb"
+  - label: "Ersatzfilter"
+    value: "DE-Angebot mit 3 Filtern; Filtererinnerung als 14-Tage-Timer"
 faq:
   - question: "Ist der FEELNEEDY FN-W18 wirklich kabellos?"
     answer: "Im Sensor- und Zeitmodus kann er über den integrierten Akku ohne angeschlossenes Kabel betrieben werden. Kontinuierlicher Wasserfluss ist nur bei bestehender Stromverbindung verfügbar."

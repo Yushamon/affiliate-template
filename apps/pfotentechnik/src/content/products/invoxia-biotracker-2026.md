@@ -135,6 +135,14 @@ specs:
   - { label: "Gewicht", value: "37 g" }
   - { label: "Wasserschutz", value: "IP67" }
   - { label: "App", value: "Ortung, Aktivität, Schlaf sowie Herz- und Atemfrequenztrends; keine Diagnose" }
+  - label: "WLAN"
+    value: "Wi-Fi/WPS unterstützt"
+  - label: "Bluetooth"
+    value: "Bluetooth 5.3 (BLE)"
+  - label: "Abmessungen"
+    value: "59 × 30 × 23 mm"
+  - label: "Material"
+    value: "PC-LN2250 (Polycarbonat) und eloxiertes Aluminium"
 features: ["GPS-Ortung", "Live-Tracking tarifabhängig", "Geofences tarifabhängig", "Aktivität und Schlaf", "Vitalwerttrends"]
 useCase: "GPS-Tracker mit Schwerpunkt Gesundheits- und Aktivitätstrends"
 gps: { animal: ["dog"], deviceWeightGrams: 37, weightBasis: "device", subscriptionRequired: true, includedServiceMonths: 0, transmission: "lte", batteryMaxDays: 15, batteryCondition: "Herstellermaximum; abhängig von Netz, GPS und Nutzung", waterproofRating: "IP67", liveTracking: true, virtualFence: true, activityTracking: true, attachmentType: "collar-attachment" }

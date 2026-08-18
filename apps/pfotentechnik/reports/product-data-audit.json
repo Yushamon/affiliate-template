@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-08-18T09:29:45.895Z",
+    "generatedAt": "2026-08-18T10:33:30.171Z",
     "totalProducts": 99,
     "byCategory": {
       "futterautomaten": 37,
@@ -11,7 +11,7 @@
       "gps-tracker": 12
     },
     "errors": 0,
-    "warnings": 143,
+    "warnings": 106,
     "notes": 146,
     "duplicateSlugs": 0
   },
@@ -111,9 +111,7 @@
       "category": "trinkbrunnen",
       "errors": [],
       "warnings": [
-        "Empfohlenes Feld fehlt: lautstärke",
         "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
         "Empfohlenes Feld fehlt: gewicht"
       ],
       "notes": [],
@@ -197,12 +195,20 @@
         {
           "label": "Geeignet für",
           "value": "Katzen und kleine Hunde"
+        },
+        {
+          "label": "Lautstärke",
+          "value": "Superleiser Betrieb durch isoliertes Pumpensystem (P.S.)"
+        },
+        {
+          "label": "Trinkhöhe",
+          "value": "Drei unterschiedlich hohe Trinkebenen"
         }
       ],
       "unknownSpecs": [],
-      "structuralCompleteness": 73,
-      "confirmedCompleteness": 73,
-      "completeness": 88
+      "structuralCompleteness": 87,
+      "confirmedCompleteness": 87,
+      "completeness": 94
     },
     {
       "file": "src/content/products/cat-mate-c200.md",
@@ -722,11 +728,7 @@
       "category": "trinkbrunnen",
       "errors": [],
       "warnings": [
-        "Empfohlenes Feld fehlt: lautstärke",
-        "Empfohlenes Feld fehlt: akku",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter"
+        "Empfohlenes Feld fehlt: trinkhöhe"
       ],
       "notes": [],
       "specs": [
@@ -769,12 +771,28 @@
         {
           "label": "Gewicht",
           "value": "800 g"
+        },
+        {
+          "label": "Lautstärke",
+          "value": "Superleise, vollständig abnehmbare Pumpe; kein konkreter dB-Wert veröffentlicht"
+        },
+        {
+          "label": "Akku",
+          "value": "Nein; USB/DC-5-V-1-A-Netzbetrieb, durchschnittlicher Verbrauch unter 1 W"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "Drei Trinkoptionen: bogenförmiger Wasserstrom mit Düsenkopf, sprudelnder Wasserstrom ohne Düsenkopf und sanft fließender Pool"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Catit PIXI Trinkbrunnenfilter 43721/43722/43723; Wechsel laut Hersteller etwa alle 30 Tage"
         }
       ],
       "unknownSpecs": [],
-      "structuralCompleteness": 67,
-      "confirmedCompleteness": 67,
-      "completeness": 85
+      "structuralCompleteness": 93,
+      "confirmedCompleteness": 93,
+      "completeness": 97
     },
     {
       "file": "src/content/products/catit-pixi-vision-smart-feeder.md",
@@ -1083,9 +1101,6 @@
       "category": "gps-tracker",
       "errors": [],
       "warnings": [
-        "Thumbnail fehlt",
-        "Comparison-Bild fehlt",
-        "Nur 0 Galerie-Bilder hinterlegt",
         "Affiliate-Link fehlt"
       ],
       "notes": [
@@ -1178,7 +1193,7 @@
       ],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 93,
-      "completeness": 88
+      "completeness": 97
     },
     {
       "file": "src/content/products/feelneedy-fn-w18-8l-katzenbrunnen.md",
@@ -1188,8 +1203,6 @@
       "errors": [],
       "warnings": [
         "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
         "Empfohlenes Feld fehlt: maße",
         "Empfohlenes Feld fehlt: gewicht"
       ],
@@ -1330,12 +1343,20 @@
         {
           "label": "Geeignet für",
           "value": "mehrere Katzen sowie kleine und mittelgroße Hunde"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "Sensor-Modus 20 s bei Annäherung, Zeitmodus 15 s alle 15 min, Dauerfluss nur bei Netzbetrieb"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "DE-Angebot mit 3 Filtern; Filtererinnerung als 14-Tage-Timer"
         }
       ],
       "unknownSpecs": [],
-      "structuralCompleteness": 67,
-      "confirmedCompleteness": 67,
-      "completeness": 85
+      "structuralCompleteness": 80,
+      "confirmedCompleteness": 80,
+      "completeness": 91
     },
     {
       "file": "src/content/products/furbo-360-hundekamera.md",
@@ -1958,12 +1979,7 @@
       "title": "Invoxia Biotracker Edition 2026",
       "category": "gps-tracker",
       "errors": [],
-      "warnings": [
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: bluetooth",
-        "Empfohlenes Feld fehlt: abmessungen",
-        "Empfohlenes Feld fehlt: material"
-      ],
+      "warnings": [],
       "notes": [],
       "specs": [
         {
@@ -2009,12 +2025,28 @@
         {
           "label": "App",
           "value": "Ortung, Aktivität, Schlaf sowie Herz- und Atemfrequenztrends; keine Diagnose"
+        },
+        {
+          "label": "WLAN",
+          "value": "Wi-Fi/WPS unterstützt"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.3 (BLE)"
+        },
+        {
+          "label": "Abmessungen",
+          "value": "59 × 30 × 23 mm"
+        },
+        {
+          "label": "Material",
+          "value": "PC-LN2250 (Polycarbonat) und eloxiertes Aluminium"
         }
       ],
       "unknownSpecs": [],
-      "structuralCompleteness": 73,
-      "confirmedCompleteness": 73,
-      "completeness": 88
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 100
     },
     {
       "file": "src/content/products/litter-robot-4.md",
@@ -5335,11 +5367,8 @@
       "category": "trinkbrunnen",
       "errors": [],
       "warnings": [
-        "Empfohlenes Feld fehlt: lautstärke",
-        "Empfohlenes Feld fehlt: reinigung",
         "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: ersatzfilter"
+        "Empfohlenes Feld fehlt: trinkhöhe"
       ],
       "notes": [],
       "specs": [
@@ -5410,12 +5439,24 @@
         {
           "label": "Stromausfall",
           "value": "kein Batterie-Backup"
+        },
+        {
+          "label": "Lautstärke",
+          "value": "23 dB laut Hersteller"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Abnehmbarer Tank und spülmaschinenfeste Edelstahlschale; Rotor ausspülbar"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "4-stufiger Filter; für ein Haustier etwa alle 2 Wochen ersetzen, bei mehreren Tieren häufiger"
         }
       ],
       "unknownSpecs": [],
-      "structuralCompleteness": 67,
-      "confirmedCompleteness": 67,
-      "completeness": 85
+      "structuralCompleteness": 87,
+      "confirmedCompleteness": 87,
+      "completeness": 94
     },
     {
       "file": "src/content/products/petlibro-dockstream-cordless.md",
@@ -6092,11 +6133,7 @@
       "title": "PETLIBRO Luma Smart Self-Cleaning Litter Box",
       "category": "automatische-katzentoiletten",
       "errors": [],
-      "warnings": [
-        "Thumbnail fehlt",
-        "Comparison-Bild fehlt",
-        "Nur 0 Galerie-Bilder hinterlegt"
-      ],
+      "warnings": [],
       "notes": [],
       "specs": [
         {
@@ -6163,7 +6200,7 @@
       "unknownSpecs": [],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 100,
-      "completeness": 91
+      "completeness": 100
     },
     {
       "file": "src/content/products/petlibro-one-rfid-smart-feeder.md",
@@ -6390,9 +6427,6 @@
       "errors": [],
       "warnings": [
         "Comparison-Bild fehlt",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
         "Empfohlenes Feld fehlt: maße"
       ],
       "notes": [],
@@ -6472,12 +6506,24 @@
         {
           "label": "Nicht geeignet für",
           "value": "Nassfutter, Frischfutter und sehr große oder unregelmäßig geformte Kroketten"
+        },
+        {
+          "label": "Napf",
+          "value": "Futternapf vorhanden; zusätzliche beziehungsweise Ersatz-Futternäpfe sind über PETLIBRO Support erhältlich"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Zubehör zerlegbar; Basis nicht direkt mit Wasser abspülen und nicht mit nassem Tuch reinigen; Zubehör vor Zusammenbau vollständig trocknen"
+        },
+        {
+          "label": "WLAN",
+          "value": "WLAN-App-Anbindung vorhanden; Einrichtung über PETLIBRO App, alternativ Bluetooth beziehungsweise Hotspot-Verfahren"
         }
       ],
       "unknownSpecs": [],
-      "structuralCompleteness": 69,
-      "confirmedCompleteness": 69,
-      "completeness": 85
+      "structuralCompleteness": 92,
+      "confirmedCompleteness": 92,
+      "completeness": 94
     },
     {
       "file": "src/content/products/petlibro-stainless-steel-fountain.md",
@@ -6952,12 +6998,8 @@
       "category": "trinkbrunnen",
       "errors": [],
       "warnings": [
-        "Empfohlenes Feld fehlt: lautstärke",
-        "Empfohlenes Feld fehlt: akku",
         "Empfohlenes Feld fehlt: uv",
         "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter",
         "Empfohlenes Feld fehlt: gewicht"
       ],
       "notes": [],
@@ -6997,12 +7039,28 @@
         {
           "label": "App",
           "value": "Nein"
+        },
+        {
+          "label": "Lautstärke",
+          "value": "Leiser Betrieb mit tauchfähiger Pumpe und sanft blubberndem Wasserfluss; kein dB-Wert veröffentlicht"
+        },
+        {
+          "label": "Akku",
+          "value": "Nein; Netzbetrieb über Wandadapter"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "Sanftes Blubbern; 360-Grad-Zugang über Turm und Schale"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "PetSafe Aktivkohlefilter PAC00-13906 und Schaumfilter PAC00-13711"
         }
       ],
       "unknownSpecs": [],
-      "structuralCompleteness": 53,
-      "confirmedCompleteness": 53,
-      "completeness": 79
+      "structuralCompleteness": 80,
+      "confirmedCompleteness": 80,
+      "completeness": 91
     },
     {
       "file": "src/content/products/petsnowy-snow-plus.md",
@@ -7184,11 +7242,7 @@
       "category": "gps-tracker",
       "errors": [],
       "warnings": [
-        "Thumbnail fehlt",
-        "Comparison-Bild fehlt",
-        "Nur 0 Galerie-Bilder hinterlegt",
         "Affiliate-Link fehlt",
-        "Empfohlenes Feld fehlt: app",
         "Empfohlenes Feld fehlt: wlan",
         "Empfohlenes Feld fehlt: bluetooth",
         "Empfohlenes Feld fehlt: material"
@@ -7238,12 +7292,16 @@
         {
           "label": "Wasserschutz",
           "value": "IP67"
+        },
+        {
+          "label": "App",
+          "value": "Prothelis-App zur Ortung und Verwaltung des area Pets"
         }
       ],
       "unknownSpecs": [],
-      "structuralCompleteness": 73,
-      "confirmedCompleteness": 73,
-      "completeness": 76
+      "structuralCompleteness": 80,
+      "confirmedCompleteness": 80,
+      "completeness": 88
     },
     {
       "file": "src/content/products/reolink-e1-zoom.md",
@@ -7320,11 +7378,6 @@
       "errors": [],
       "warnings": [
         "Nur 1 Galerie-Bilder hinterlegt",
-        "Empfohlenes Feld fehlt: napf",
-        "Empfohlenes Feld fehlt: reinigung",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: batterie",
-        "Empfohlenes Feld fehlt: maße",
         "Empfohlenes Feld fehlt: gewicht"
       ],
       "notes": [],
@@ -7372,12 +7425,32 @@
         {
           "label": "Geeignet für",
           "value": "Katzen und kleine Hunde mit individuell geschützter Ration"
+        },
+        {
+          "label": "Napf",
+          "value": "400-ml-Schale; Vollschale oder zwei Halbschalen, optional Edelstahl-Schalenset"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Schaleneinsätze spülmaschinengeeignet; Deckel und Matte per Hand reinigen; Gerätebasis nur feucht abwischen und nicht eintauchen"
+        },
+        {
+          "label": "WLAN",
+          "value": "App-Anbindung indirekt über den Sure Petcare Hub; der Hub wird mit dem Heimrouter verbunden"
+        },
+        {
+          "label": "Batterie",
+          "value": "4 × C-Batterien; typische Laufzeit etwa 6 Monate"
+        },
+        {
+          "label": "Maße",
+          "value": "200 × 230 × 320 mm (H × B × T)"
         }
       ],
       "unknownSpecs": [],
-      "structuralCompleteness": 54,
-      "confirmedCompleteness": 54,
-      "completeness": 79
+      "structuralCompleteness": 92,
+      "confirmedCompleteness": 92,
+      "completeness": 94
     },
     {
       "file": "src/content/products/surefeed-microchip-pet-feeder.md",

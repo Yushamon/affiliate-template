@@ -118,6 +118,8 @@ specs:
   - { label: "Abmessungen", value: "64,3 × 29 × 25,7 mm" }
   - { label: "Gewicht", value: "38 g" }
   - { label: "Wasserschutz", value: "IP67" }
+  - label: "App"
+    value: "Prothelis-App zur Ortung und Verwaltung des area Pets"
 features: ["Live-Ortung", "Geofence-Zeitpläne", "Temperatur- und Geschwindigkeitswarnung", "Nurse Mode", "Push- und Anrufalarm"]
 useCase: "Deutsche GPS-Systemalternative mit zeitplanbaren Geofences"
 gps: { animal: ["dog"], deviceWeightGrams: 38, weightBasis: "device", subscriptionRequired: true, includedServiceMonths: 0, transmission: "other", batteryMaxDays: 8, batteryCondition: "Herstellermaximum bei nutzungsabhängigen Ortungsintervallen", waterproofRating: "IP67", liveTracking: true, virtualFence: true, activityTracking: false, attachmentType: "collar-attachment" }
