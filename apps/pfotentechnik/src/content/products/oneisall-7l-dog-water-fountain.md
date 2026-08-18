@@ -249,6 +249,10 @@ specs:
     value: 2 Jahre laut oneisall
   - label: Geeignet für
     value: mittelgroße und große Hunde sowie Mehrtierhaushalte
+  - label: "Wasserfluss"
+    value: "Kontinuierlicher Wasserfluss über Wasserhahn-Auslauf"
+  - label: "Ersatzfilter"
+    value: "Oneisall 7L Ersatzfilter verfügbar; Hersteller empfiehlt Wechsel etwa alle 2 bis 3 Wochen"
 faq:
   - question: Ist der oneisall 7L vollständig aus Edelstahl?
     answer: >-

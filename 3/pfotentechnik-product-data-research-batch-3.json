@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "batch": "pfotentechnik-product-data-research-batch-3",
+  "researchedAt": "2026-08-18",
+  "products": {
+    "oneisall-7l-dog-water-fountain": {
+      "fields": {
+        "uv": {
+          "status": "not_published"
+        },
+        "trinkhöhe": {
+          "status": "not_published"
+        },
+        "wasserfluss": {
+          "status": "confirmed",
+          "value": "Kontinuierlicher Wasserfluss über Wasserhahn-Auslauf",
+          "source": "https://oneisall.com/products/dog-water-fountain-7l",
+          "sourceType": "manufacturer",
+          "confidence": "high"
+        },
+        "ersatzfilter": {
+          "status": "confirmed",
+          "value": "Oneisall 7L Ersatzfilter verfügbar; Hersteller empfiehlt Wechsel etwa alle 2 bis 3 Wochen",
+          "source": "https://oneisall.com/products/oneisall-7l-dog-water-fountain-with-visual-water-level-for-large-dogs",
+          "sourceType": "manufacturer",
+          "confidence": "high"
+        }
+      }
+    },
+    "pawfit-3": {
+      "fields": {
+        "app": {
+          "status": "confirmed",
+          "value": "Pawfit App für iOS und Android; Ortung, Aktivität, Sicherheitszonen, Audio-ID und weitere Trackerfunktionen",
+          "source": "https://www.pawfit.com/de-de/product/pawfit-3.html",
+          "sourceType": "manufacturer",
+          "confidence": "high"
+        },
+        "wlan": {
+          "status": "confirmed",
+          "value": "Wi-Fi wird zusammen mit GPS und Bluetooth zur Standortbestimmung beziehungsweise Ortungsunterstützung genutzt",
+          "source": "https://support.pawfit.com/hc/en-gb/articles/360019893919-What-are-the-differences-between-all-of-the-Pawfit-models",
+          "sourceType": "manufacturer-support",
+          "confidence": "high"
+        },
+        "bluetooth": {
+          "status": "confirmed",
+          "value": "Bluetooth unterstützt; Find Nearby nutzt Bluetooth zur Nahbereichsortung, Audio-ID-Updates benötigen beim Pawfit 3 eine Bluetooth-Verbindung",
+          "source": "https://www.pawfit.com/de-de/product/pawfit-3.html",
+          "sourceType": "manufacturer",
+          "confidence": "high"
+        },
+        "material": {
+          "status": "not_published"
+        }
+      }
+    },
+    "petlibro-dockstream-2-smart-cordless": {
+      "fields": {
+        "lautstärke": {
+          "status": "confirmed",
+          "value": "23 dB laut Hersteller für Dockstream 2",
+          "source": "https://de.petlibro.com/products/dockstream-2-smart-fountain",
+          "sourceType": "manufacturer",
+          "confidence": "high"
+        },
+        "uv": {
+          "status": "not_published"
+        },
+        "trinkhöhe": {
+          "status": "not_published"
+        },
+        "ersatzfilter": {
+          "status": "confirmed",
+          "value": "Dockstream Ersatzfilter; 4-stufige Filterung, Wechsel bei einem Haustier etwa alle 2 Wochen, bei mehreren Tieren häufiger",
+          "source": "https://de.petlibro.com/products/dockstream-2-smart-fountain",
+          "sourceType": "manufacturer",
+          "confidence": "high"
+        }
+      }
+    },
+    "feelneedy-fn-w18-8l-katzenbrunnen": {
+      "fields": {
+        "trinkhöhe": {
+          "status": "not_published"
+        },
+        "maße": {
+          "status": "not_published"
+        },
+        "gewicht": {
+          "status": "not_published"
+        }
+      },
+      "note": "Die aktuelle offizielle FEELNEEDY-FN-W18-Seite bestätigt Kapazität, Material, Akku und Zieltiere, veröffentlicht im auslesbaren Produkttext aber keine belastbaren Außenmaße, Trinkhöhe oder ein Gerätegewicht. Diese Werte werden bewusst nicht geschätzt."
+    },
+    "oneisall-2-in-1-feeder-water": {
+      "fields": {
+        "napf": {
+          "status": "confirmed",
+          "value": "Zwei separate Edelstahlnäpfe mit Basen für Futter und Wasser",
+          "source": "https://oneisall.com/products/oneisall-2-in-1-automatic-cat-feeder-and-water-dispenser",
+          "sourceType": "manufacturer",
+          "confidence": "high"
+        },
+        "gewicht": {
+          "status": "not_published"
+        }
+      }
+    }
+  }
+}

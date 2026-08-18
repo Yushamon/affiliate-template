@@ -248,6 +248,8 @@ specs:
     value: vor allem Katzen mit Trockenfutter
   - label: Akku
     value: Nein
+  - label: "Napf"
+    value: "Zwei separate Edelstahlnäpfe mit Basen für Futter und Wasser"
 faq:
   - question: Ist der Wasserteil ein Trinkbrunnen?
     answer: >-

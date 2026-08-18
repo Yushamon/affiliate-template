@@ -231,6 +231,10 @@ specs:
     value: "Katzen und kleine Hunde"
   - label: "Betriebssysteme"
     value: "iOS 13 oder neuer; Android 7 oder neuer"
+  - label: "Lautstärke"
+    value: "23 dB laut Hersteller für Dockstream 2"
+  - label: "Ersatzfilter"
+    value: "Dockstream Ersatzfilter; 4-stufige Filterung, Wechsel bei einem Haustier etwa alle 2 Wochen, bei mehreren Tieren häufiger"
 faq:
   - question: "Was unterscheidet den Dockstream 2 Smart Cordless vom ersten Dockstream Cordless?"
     answer: "Die zweite Generation ergänzt den kabellosen Betrieb um App-Trinktracking, Dual-Band-WLAN, einen 3-Liter-Tank und einen magnetischen Antrieb. Der ältere Cordless arbeitet ohne App und ohne Trinkprotokoll."

@@ -136,6 +136,12 @@ specs:
   - { label: "Abmessungen", value: "1,89 × 1,3 × 0,55 Zoll, etwa 48 × 33 × 14 mm" }
   - { label: "Gewicht", value: "27 g" }
   - { label: "Wasserschutz", value: "IP68; Tauchtiefe ist Herstellerclaim" }
+  - label: "App"
+    value: "Pawfit App für iOS und Android; Ortung, Aktivität, Sicherheitszonen, Audio-ID und weitere Trackerfunktionen"
+  - label: "WLAN"
+    value: "Wi-Fi wird zusammen mit GPS und Bluetooth zur Standortbestimmung beziehungsweise Ortungsunterstützung genutzt"
+  - label: "Bluetooth"
+    value: "Bluetooth unterstützt; Find Nearby nutzt Bluetooth zur Nahbereichsortung, Audio-ID-Updates benötigen beim Pawfit 3 eine Bluetooth-Verbindung"
 features: ["Live-Ortung", "Sicherheitszonen", "Audio-ID", "Pawfit Voice", "Tracking-Licht", "Entfernungs- und Temperaturwarnung"]
 useCase: "Leichter Mobilfunktracker mit Audio-ID und Warnfunktionen"
 gps: { animal: ["dog"], minimumPetWeightKg: 3.5, deviceWeightGrams: 27, weightBasis: "device", subscriptionRequired: true, includedServiceMonths: 0, transmission: "lte", batteryMaxDays: 8, batteryCondition: "Herstellermaximum; abhängig von Ortung, Netz und Warnfunktionen", waterproofRating: "IP68", liveTracking: true, virtualFence: true, activityTracking: true, attachmentType: "collar-attachment" }
