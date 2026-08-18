@@ -20,7 +20,10 @@ seo: { title: "Neakasa M1 Plus im Check", description: "Neakasa M1 Plus: offene 
 hub: { sections: ["produkte", "automatische-katzentoiletten"] }
 tags: ["automatische-katzentoilette", "katze", "offenes-katzenklo", "app", "grosse-katze"]
 images:
-  hero: { src: "../../assets/images/products/neakasa-m1-plus/hero.webp", alt: "Neutrale redaktionelle Darstellung einer offenen automatischen Katzentoilette" }
+  hero:
+    src: "../../assets/images/products/neakasa-m1-plus/hero.webp"
+    alt: "Neakasa M1 Plus in hochwertiger Produktansicht"
+  gallery: []
 price:
   current: 399.99
   currency: "EUR"

@@ -22,7 +22,7 @@ tags: ["haustierkamera", "kameraroboter", "katze", "hund", "app"]
 images:
   hero:
     src: "../../assets/images/products/enabot-ebo-air-2/hero.webp"
-    alt: "Enabot EBO Air 2 in redaktioneller Produktdarstellung"
+    alt: "Enabot EBO Air 2 in hochwertiger Produktansicht"
   gallery: []
 price:
   current: 129.99

@@ -40,7 +40,8 @@ tags:
 images:
   hero:
     src: "../../assets/images/products/petkit-purobot-max-pro-2/hero.webp"
-    alt: "Neutrale redaktionelle Darstellung einer geschlossenen automatischen Katzentoilette mit Kamera"
+    alt: "PETKIT PUROBOT MAX PRO 2 in hochwertiger Produktansicht"
+  gallery: []
 price:
   current: 599.99
   currency: "EUR"

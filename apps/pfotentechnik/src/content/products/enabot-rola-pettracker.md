@@ -40,9 +40,21 @@ tags:
   - "audio"
 images:
   hero:
-    src: "../../assets/images/project/pfotentechnik/comparison/default-editorial-hero.webp"
-    alt: "Neutrale redaktionelle Darstellung eines GPS-Trackers mit integrierter Kamera"
-  gallery: []
+    src: "../../assets/images/products/enabot-rola-pettracker/hero.webp"
+    alt: "Enabot ROLA PetTracker in hochwertiger Produktansicht"
+  thumbnail:
+    src: "../../assets/images/products/enabot-rola-pettracker/thumbnail.webp"
+    alt: "Enabot ROLA PetTracker in kompakter Produktansicht"
+  comparison:
+    src: "../../assets/images/products/enabot-rola-pettracker/comparison.webp"
+    alt: "Enabot ROLA PetTracker für den Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/enabot-rola-pettracker/gallery-1.webp"
+      alt: "Enabot ROLA PetTracker, Produktansicht 1"
+    - src: "../../assets/images/products/enabot-rola-pettracker/gallery-2.webp"
+      alt: "Enabot ROLA PetTracker, Produktansicht 2"
+    - src: "../../assets/images/products/enabot-rola-pettracker/gallery-3.webp"
+      alt: "Enabot ROLA PetTracker, Produktansicht 3"
 price:
   current: null
   currency: "EUR"

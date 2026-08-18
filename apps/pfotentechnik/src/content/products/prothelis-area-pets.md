@@ -20,8 +20,22 @@ seo: { title: "Prothelis area Pets: Akku, Tarif und Mobilfunk", description: "Pr
 hub: { sections: ["produkte", "gps-tracker"] }
 tags: ["gps-tracker", "hund", "prothelis", "geofence", "abo"]
 images:
-  hero: { src: "../../assets/images/project/pfotentechnik/comparison/default-editorial-hero.webp", alt: "Neutrale redaktionelle Darstellung: Prothelis area Pets" }
-  gallery: []
+  hero:
+    src: "../../assets/images/products/prothelis-area-pets/hero.webp"
+    alt: "Prothelis area Pets in hochwertiger Produktansicht"
+  thumbnail:
+    src: "../../assets/images/products/prothelis-area-pets/thumbnail.webp"
+    alt: "Prothelis area Pets in kompakter Produktansicht"
+  comparison:
+    src: "../../assets/images/products/prothelis-area-pets/comparison.webp"
+    alt: "Prothelis area Pets für den Produktvergleich"
+  gallery:
+    - src: "../../assets/images/products/prothelis-area-pets/gallery-1.webp"
+      alt: "Prothelis area Pets, Produktansicht 1"
+    - src: "../../assets/images/products/prothelis-area-pets/gallery-2.webp"
+      alt: "Prothelis area Pets, Produktansicht 2"
+    - src: "../../assets/images/products/prothelis-area-pets/gallery-3.webp"
+      alt: "Prothelis area Pets, Produktansicht 3"
 price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-16", source: { id: "prothelis", label: "Prothelis", type: "editorial", url: "https://www.prothelis.de/de/area-pets/" } }
 priceAutomation: "editorial"
 priceState: "unknown"

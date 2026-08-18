@@ -20,7 +20,10 @@ seo: { title: "Furbo 360° Hundekamera im Check", description: "Furbo 360° Hund
 hub: { sections: ["produkte", "haustierkameras"] }
 tags: ["haustierkamera", "hund", "leckerlies", "app", "innenkamera"]
 images:
-  hero: { src: "../../assets/images/products/furbo-360-hundekamera/hero.webp", alt: "Neutrale redaktionelle Darstellung einer Hundekamera mit Leckerliausgabe" }
+  hero:
+    src: "../../assets/images/products/furbo-360-hundekamera/hero.webp"
+    alt: "Furbo 360° Hundekamera in hochwertiger Produktansicht"
+  gallery: []
 price:
   current: 69
   currency: "EUR"

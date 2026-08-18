@@ -41,7 +41,8 @@ tags:
 images:
   hero:
     src: "../../assets/images/products/petlibro-scout-smart-camera/hero.webp"
-    alt: "Neutrale redaktionelle Darstellung einer festen schwenkbaren Haustierkamera"
+    alt: "PETLIBRO Scout Smart Camera in hochwertiger Produktansicht"
+  gallery: []
 price:
   current: 99.99
   currency: "EUR"

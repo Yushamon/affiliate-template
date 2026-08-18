@@ -20,7 +20,10 @@ seo: { title: "Litter-Robot 5 Pro im Check", description: "Litter-Robot 5 Pro: g
 hub: { sections: ["produkte", "automatische-katzentoiletten"] }
 tags: ["automatische-katzentoilette", "katze", "mehrkatzenhaushalt", "kamera", "app"]
 images:
-  hero: { src: "../../assets/images/products/litter-robot-5-pro/hero.webp", alt: "Neutrale redaktionelle Darstellung einer geschlossenen automatischen Katzentoilette mit zwei Kameras" }
+  hero:
+    src: "../../assets/images/products/litter-robot-5-pro/hero.webp"
+    alt: "Litter-Robot 5 Pro in hochwertiger Produktansicht"
+  gallery: []
 price: { current: null, currency: "EUR", status: "unknown" }
 rating: 3.8
 priceState: "unknown"
