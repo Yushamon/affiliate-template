@@ -13,8 +13,9 @@ description: >-
 
 recommendation: >-
   Sehr leichte GPS-Lösung für Katzen und kleine Hunde ab 3 kg, wenn
-  Mobilfunkortung ohne feste Distanzgrenze, eine flexible Halsbandbefestigung
-  und akustische Rückrufsignale wichtiger sind als ein Betrieb ohne Abo.
+  Mobilfunkortung ohne feste Distanzgrenze, flexible Befestigung und Rückrufsignale
+  wichtiger sind als niedrige Folgekosten. Das Pflichtabo und die deutlich kürzere
+  Laufzeit bei intensivem Live-Tracking gehören klar in die Kaufentscheidung.
 
 manufacturer:
   key: "weenect"
@@ -29,16 +30,16 @@ category:
 productUrl: "/produkt/weenect-xs/"
 
 publishedAt: "2026-07-20"
-updatedAt: "2026-08-10"
+updatedAt: "2026-08-19"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion für smarte Haustiertechnik"
 
 seo:
-  title: "Weenect XS GPS-Tracker: 27 g, Akku, Abo & Kosten"
+  title: "Weenect XS im Check: GPS, Akku, Abo & Schwächen"
   description: >-
-    Weenect XS mit 27 g, IP68, Echtzeitortung und Abo: Akku, Mobilfunk,
-    Sicherheitszonen, Befestigung und laufende Kosten realistisch einordnen.
+    Weenect XS mit 27 g und guter Ortung: Pflichtabo, reale Akkulaufzeit,
+    Superlive-Grenzen und laufende Kosten für Katzen und kleine Hunde einordnen.
   canonical: "/produkt/weenect-xs/"
   sitemap: true
   priority: 0.85
@@ -171,8 +172,10 @@ decision:
     - "mehrere Nutzer in einem gemeinsamen Konto"
   attention:
     - "für die Mobilfunkübertragung ist ein kostenpflichtiges Abo erforderlich"
+    - "Weenect nennt aktuell 14 € monatlich, 90 € jährlich, 120 € für zwei Jahre oder 250 € für fünf Jahre"
     - "bis zu sieben Tage gelten nur bei Nutzung von WLAN-Energiesparzonen"
     - "bei durchgehender Ortung nennt Weenect etwa zwei Tage Akkulaufzeit"
+    - "Superlive ist im Standardumfang zeitlich begrenzt; längere Sitzungen gehören zum Premium-Paket"
     - "jeder Tracker benötigt ein eigenes Abonnement"
     - "für Katzen ist eine passende Anti-Strangulationslösung besonders wichtig"
     - "Lieferumfang und eventuell enthaltene Abo-Laufzeit des Amazon-Angebots vor dem Kauf prüfen"
@@ -184,8 +187,9 @@ review:
     Ton-, Vibrations- und Lichtsignal.
   verdict: >-
     Eine sehr leichte und funktionsreiche Mobilfunklösung für Katzen und kleine
-    Hunde. Die wichtigsten Grenzen sind das Pflichtabo und die deutlich kürzere
-    Laufzeit bei häufigem Live-Tracking.
+    Hunde. Die unabhängige Evidenz stützt Ortung und Alltagstauglichkeit gut.
+    Gegen den Kauf sprechen vor allem Pflichtabo, Superlive-Limits im Standardumfang
+    und die deutlich kürzere Laufzeit bei häufigem Live-Tracking.
 
 strengths:
   - "nur 27 g Gerätegewicht"
@@ -200,7 +204,9 @@ strengths:
 
 weaknesses:
   - "kostenpflichtiges Abo zwingend erforderlich"
+  - "laufende Kosten je nach Laufzeit aktuell von 90 € pro Jahr bis 250 € für fünf Jahre"
   - "nur etwa zwei Tage bei durchgehender Ortung laut Hersteller"
+  - "Superlive im Standardumfang zeitlich begrenzt; längere Sitzungen nur mit Premium-Paket"
   - "pro Tracker ein eigenes Abo"
   - "WLAN dient dem Energiesparen und ersetzt keine Mobilfunkortung"
   - "relativ langes Gehäuse trotz niedrigen Gewichts"
@@ -268,7 +274,7 @@ specs:
   - label: "Abo"
     value: "Erforderlich; eigenes Abonnement pro Tracker"
   - label: "Abo-Modelle"
-    value: "Monatlich sowie Prepaid-Laufzeiten über ein, zwei oder fünf Jahre"
+    value: "Aktuell 14 €/Monat, 90 €/Jahr, 120 €/2 Jahre oder 250 €/5 Jahre laut Weenect"
   - label: "App"
     value: "Weenect App für iOS und Android sowie Web-App"
   - label: "App-Kompatibilität"
@@ -551,16 +557,11 @@ Außerhalb dieser Zone erfolgen Ortung und Übertragung weiterhin über Satellit
 
 ## Abo und laufende Kosten
 
-Für den Weenect XS ist ein Abonnement erforderlich. Weenect bietet aktuell mehrere Laufzeiten an:
+Der Tracker funktioniert nur mit aktivem Weenect-Abonnement. Weenect nennt aktuell **14 € pro Monat, 90 € pro Jahr, 120 € für zwei Jahre oder 250 € für fünf Jahre**. Jeder Tracker benötigt ein eigenes Abo. Bei mehreren Tieren steigen die laufenden Kosten deshalb direkt mit der Zahl der Geräte.
 
-| Tarif | Aktuelle Herstellerangabe |
-|---|---:|
-| monatlich kündbar | 14,00 € pro Monat |
-| ein Jahr im Voraus | 90,00 € |
-| zwei Jahre im Voraus | 120,00 € |
-| fünf Jahre im Voraus | 250,00 € |
+Auch beim Live-Tracking lohnt ein genauer Blick: Sekundenupdates sind möglich, die **Superlive-Dauer ist im Standardumfang begrenzt**. Längere Sitzungen gehören zum Premium-Paket. Das ist für häufige Suchsituationen relevanter als die bloße Angabe „Live-Tracking vorhanden“.
 
-Die Preise wurden am **26. Juli 2026** geprüft und können sich ändern. Entscheidend ist außerdem der Lieferumfang: Weenect verkauft sowohl reine Tracker als auch Pakete mit bereits enthaltener Abo-Laufzeit. Beim verlinkten Amazon-Angebot sollte deshalb kontrolliert werden, ob ein Abonnement enthalten ist und wie lange es gilt.
+Für die Einordnung gegenüber Alternativen helfen der [GPS-Tracker-Vergleich für Katzen](/vergleiche/beste-gps-tracker-fuer-katzen/), der Vergleich [kleiner GPS-Tracker für Katzen](/vergleiche/kleine-gps-tracker-fuer-katzen/) und der Ratgeber [GPS oder Bluetooth-Tag?](/gps-oder-bluetooth/).
 
 ## Befestigung und Sicherheit bei Katzen
 

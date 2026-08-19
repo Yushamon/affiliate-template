@@ -12,7 +12,7 @@ linking:
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-25"
+updatedAt: "2026-08-19"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkbrunnen, edelstahl, keramik, kunststoff]
 hub: { sections: [wissen], title: "Welches Material beim Katzenbrunnen?", description: "Edelstahl, Keramik und Kunststoff fair vergleichen.", order: 50 }
@@ -41,11 +41,17 @@ recommendationJourney:
   comparisonLabel: Modelle nach tatsächlichen Wasserflächen vergleichen
 ---
 
-Dieser Ratgeber vertieft die Materialwahl innerhalb des Themenbereichs [Trinkbrunnen für Haustiere](/trinkbrunnen/) und vergleicht Edelstahl, Keramik und Kunststoff.
-
 ## Die kurze Antwort
 
-Für viele Haushalte ist **Edelstahl** der praktischste Kompromiss aus Haltbarkeit, geringem Gewicht und Reinigung. **Keramik** steht stabil und dämpft Geräusche, ist aber schwer und zerbrechlich. **Kunststoff** ist leicht und günstig, kann jedoch verkratzen. Kein Material verhindert Biofilm ohne Pflege.
+Für die meisten Katzenbrunnen ist **Edelstahl** die pragmatischste Wahl: robust, relativ leicht und unkompliziert zu reinigen. **Keramik** ist sinnvoll, wenn Standfestigkeit und geringe Vibration wichtiger sind. **Kunststoff** punktet bei Gewicht und Preis, sollte aber ausgetauscht werden, wenn Oberflächen stark zerkratzt sind. Entscheidend ist nicht nur das Außenmaterial: Trinkfläche, Tank, Pumpe und Leitungen können aus unterschiedlichen Materialien bestehen.
+
+### Welches Material passt zu wem?
+
+- **Edelstahl:** für eine robuste, pflegeleichte Lösung mit geringem Bruchrisiko.
+- **Keramik:** für einen schweren, standfesten Brunnen, bei dem geringe Resonanz wichtiger ist als Gewicht und Bruchfestigkeit.
+- **Kunststoff:** für geringes Gewicht und einen meist günstigeren Einstieg, sofern Oberflächen und schwer zugängliche Bereiche regelmäßig kontrolliert werden.
+
+Die Materialbezeichnung allein reicht deshalb nicht für die Kaufentscheidung. Im [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/) lässt sich prüfen, welche Flächen tatsächlich mit Wasser in Berührung kommen und wie gut Tank und Pumpe erreichbar sind.
 
 ## Edelstahl
 
@@ -69,11 +75,10 @@ International Cat Care nennt breite, flache Gefäße aus Glas oder Keramik als h
 
 ## Material im konkreten Modell prüfen
 
-Die Produktbezeichnung sagt nicht immer, welche Flächen tatsächlich aus Edelstahl bestehen. Der [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/) nennt deshalb Tank und Trinkfläche getrennt. Unabhängig vom Material bleiben [vollständige Reinigung](/katzentrinkbrunnen-richtig-reinigen/) und zugängliche Pumpenteile entscheidend.
+Die Produktbezeichnung sagt nicht immer, welche Flächen tatsächlich aus Edelstahl bestehen. Prüfe deshalb Tank, Trinkfläche, Pumpe und Leitungen getrennt. Unabhängig vom Material bleiben [vollständige Reinigung](/katzentrinkbrunnen-richtig-reinigen/) und zugängliche Pumpenteile entscheidend.
 
 **Quellen:** [International Cat Care – Encouraging your cat to drink](https://icatcare.org/resources/encouraging-your-cat-to-drink_caregiver_guide.pdf), [Cats Protection – Cats and drinking](https://www.cats.org.uk/help-and-advice/diet/cats-and-drinking), [VCA – Wasseraufnahme fördern](https://vcahospitals.com/resources/preventive-cat/nutrition/tips-to-encourage-cats-to-drink-more-water).
 
 ## Von der Materialfrage zur Modellauswahl
 
-Die Materialbezeichnung allein entscheidet nicht über Hygiene oder Alltagstauglichkeit. Prüfe im [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/) deshalb getrennt, welche Flächen tatsächlich mit Wasser in Berührung kommen, wie gut sich Pumpe und Tank erreichen lassen und ob Ersatzfilter verfügbar sind.
-Für die Pflege nach dem Kauf führt die [vollständige Reinigungsanleitung](/katzentrinkbrunnen-richtig-reinigen/) durch Tank, Pumpe, Rotorraum und Dichtungen. Der [Trinkbrunnen-Hub](/trinkbrunnen/) ordnet die Materialfrage in Tiergröße, Standort und Betriebsart ein.
+Material ist nur ein Teil der Entscheidung. Auch Tiergröße, Standort, Betriebsart, Filterversorgung und Reinigungsaufwand spielen eine Rolle. Der [Trinkbrunnen-Hub](/trinkbrunnen/) ordnet diese Kriterien für die weitere Auswahl ein.

@@ -4,17 +4,17 @@ slug: "petlibro"
 type: "manufacturer"
 layout: "manufacturer"
 
-description: "PETLIBRO Futterautomaten und Trinkbrunnen im Überblick: Modellreihen, App-Funktionen, optionale Abos, Garantie, Ersatzteile und passende Vergleiche."
+description: "PETLIBRO im Überblick: Granary, Polar, One RFID, Space, Dockstream, Luma und weitere Modellreihen nach Futterart, Kamera, RFID, Kühlung, App und Einsatzzweck einordnen."
 
 key: "petlibro"
 name: "PETLIBRO"
 
-recommendation: "PETLIBRO passt besonders zu Katzen- und Hundehaltern, die zwischen App-Feeder, Kamera, RFID, gekühltem Nassfutter und smarten Trinkbrunnen wählen möchten. Für reine Offline-Nutzung sind einfachere Hersteller oft übersichtlicher."
+recommendation: "PETLIBRO ist besonders stark bei spezialisierten Geräten: Granary Camera für Trockenfutter mit Kamera, Polar für gekühltes Nassfutter, One RFID für getrennte Rationen und Dockstream für smarte Trinkbrunnen. Wer möglichst wenig App-, Cloud- oder Modellabhängigkeit möchte, findet bei einfacheren Herstellern oft die klarere Lösung."
 
-summary: "PETLIBRO entwickelt seit 2019 smarte Futterautomaten und Trinkbrunnen. Die Stärke liegt in der ungewöhnlich breiten Auswahl: Trocken- oder Nassfutter, Kamera, RFID-Zugang sowie Brunnen mit App- oder Verbrauchserfassung. App-, Cloud- und Filterbedarf müssen jedoch für jedes Modell getrennt geprüft werden."
+summary: "PETLIBRO entwickelt seit 2019 smarte Haustiertechnik. Die Marke deckt heute deutlich mehr als klassische Futterautomaten ab: Trocken- und Nassfutter, Kamera, RFID-Zugang, Trinkbrunnen, Haustierkamera und smarte Katzentoilette. Für die Kaufentscheidung ist deshalb die Modellreihe wichtiger als die Marke allein: App-, Cloud-, Filter-, Abo- und Offline-Verhalten unterscheiden sich teils deutlich."
 
 publishedAt: "2026-07-12"
-updatedAt: "2026-08-06"
+updatedAt: "2026-08-19"
 navigation:
   show: true
   label: "Hersteller"
@@ -45,8 +45,8 @@ hub:
   featured: true
 
 seo:
-  title: "PETLIBRO Futterautomaten 2026: Modelle und Unterschiede"
-  description: "PETLIBRO Futterautomaten und Trinkbrunnen einordnen: Granary, Polar, One RFID, Space und Dockstream nach App, Kamera, Kühlung und Zugang."
+  title: "PETLIBRO 2026: Modelle, Unterschiede & beste Optionen"
+  description: "PETLIBRO Granary, Polar, One RFID, Space, Dockstream und Luma vergleichen: Unterschiede bei Kamera, RFID, Nassfutter, App, Trinkbrunnen und Einsatzzweck."
   canonical: "/hersteller/petlibro/"
   noindex: false
   sitemap: true
@@ -66,6 +66,8 @@ images:
 productCategories:
   - "Futterautomaten"
   - "Trinkbrunnen"
+  - "Haustierkameras"
+  - "Automatische Katzentoiletten"
 
 productAreas:
   - "Smarte Trockenfutterautomaten"
@@ -73,6 +75,8 @@ productAreas:
   - "Futterautomaten mit Kamera"
   - "RFID-Futterautomaten"
   - "Trinkbrunnen"
+  - "Haustierkameras"
+  - "Automatische Katzentoiletten"
 
 focus:
   - "App-Steuerung"
@@ -136,6 +140,8 @@ featuredProductSlugs:
   - "petlibro-granary-camera-feeder"
   - "petlibro-polar-wet-food-feeder"
   - "petlibro-one-rfid-smart-feeder"
+  - "petlibro-dockstream-2-smart"
+  - "petlibro-space-smart-feeder"
 
 series:
   - key: "granary"
@@ -215,8 +221,30 @@ series:
     productSlugs:
       - "petlibro-glacier-ultrafiltration"
 
+
+  - key: "luma"
+    name: "Luma"
+    description: "Smarte selbstreinigende Katzentoilette mit App- und Kamera-Fokus. Luma erweitert PETLIBRO deutlich über Fütterung und Wasser hinaus."
+    suitableFor:
+      - "Automatische Katzentoilette"
+      - "App-Auswertung"
+      - "Mehrkatzenhaushalte"
+      - "Kameraüberwachung"
+    productSlugs:
+      - "petlibro-luma-smart-litter-box"
+
+  - key: "scout"
+    name: "Scout"
+    description: "Haustierkamera für Fernbeobachtung. Sie gehört nicht zu den Futterautomaten und sollte deshalb als eigene Produktlinie betrachtet werden."
+    suitableFor:
+      - "Haustierbeobachtung"
+      - "Kamera"
+      - "App"
+    productSlugs:
+      - "petlibro-scout-smart-camera"
+
 experience:
-  summary: "Unsere Einordnung ist kein pauschaler PETLIBRO-Langzeittest. Sie vergleicht die offiziell dokumentierten Funktionen der gepflegten Modelle. Dabei fällt vor allem die Breite des Sortiments positiv auf; App-Abhängigkeit, optionale Cloud-Dienste und modellgebundene Verbrauchsteile müssen dagegen vor dem Kauf einzeln bewertet werden."
+  summary: "Unsere Einordnung ist kein pauschaler PETLIBRO-Langzeittest. Sie trennt die wichtigsten Modellfamilien nach ihrem tatsächlichen Einsatzzweck. Granary Camera, Polar, One RFID, Dockstream 2 Smart und Space sind die zentralen Kaufziele innerhalb des aktuellen PfotenTechnik-Bestands; Luma und Scout zeigen zugleich, dass PETLIBRO inzwischen über Fütterung und Trinkbrunnen hinausgeht. App-Abhängigkeit, optionale Cloud-Dienste und modellgebundene Verbrauchsteile müssen weiterhin pro Gerät bewertet werden."
   positives:
     - "Große Auswahl unterschiedlicher Geräte"
     - "Moderne und übersichtliche Produktgestaltung"
