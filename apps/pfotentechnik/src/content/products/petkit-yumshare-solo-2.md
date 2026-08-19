@@ -22,15 +22,15 @@ category:
   path: /smarte-futterautomaten/
 productUrl: /produkt/petkit-yumshare-solo-2/
 publishedAt: "2026-07-12"
-updatedAt: "2026-08-10"
+updatedAt: "2026-08-19"
 author:
   name: PfotenTechnik Redaktion
   role: Redaktion
 seo:
-  title: "PETKIT YumShare Solo 2: Kamera, App & Backup im Check"
+  title: "PETKIT YumShare Solo 2: Kamera, AI & Schwächen im Check"
   description: >-
-    PETKIT YumShare Solo 2 P572 mit 1080p-Kamera, 3-Liter-Tank, Dual-Band-WLAN und bis zu 14 Tagen Backup:
-    Mahlzeiten, App, Batteriebetrieb und Grenzen der Tiererkennung.
+    PETKIT YumShare Solo 2 P572 mit 1080p-Kamera, 3-Liter-Tank und Dual-Band-WLAN:
+    Stärken, AI-Grenzen, Backup-Betrieb und aktuelle Nutzererfahrungen.
   canonical: /produkt/petkit-yumshare-solo-2/
   sitemap: true
   priority: 0.9
@@ -127,18 +127,29 @@ externalEvidence:
       recurringPositives:
         - "Die kleine frühe Stichprobe lobt Kameraqualität, einfache Bedienung und Komfort der automatischen Fütterung."
       recurringCriticism: []
+    - platform: "Reddit / r/PETKIT"
+      url: "https://www.reddit.com/r/PETKIT/comments/1vmjqo4/automatic_cat_feeder_feedback/"
+      checkedAt: "2026-08-19"
+      recurringPositives:
+        - "Ein aktueller Solo-2-Nutzer beschreibt die zeitgesteuerte Futterausgabe als zuverlässig."
+      recurringCriticism:
+        - "Der Nutzer gab den Solo 2 zurück, weil der Mehrwert der Kamera für ihn den Aufpreis und kostenpflichtigen Zugriff auf aufgezeichnetes Material nicht rechtfertigte."
+      note: >-
+        Einzelne produktspezifische Nutzererfahrung, keine repräsentative Stichprobe. Aussagen zu anderen PETKIT-Modellen
+        werden nicht auf den YumShare Solo 2 übertragen.
   consensus:
     strengths:
       - finding: "Kamera, Zeitplanung und visuelle Mahlzeitenkontrolle sind der klar erkennbare Mehrwert des Solo 2."
         sourceCount: 2
         confidence: "medium"
     weaknesses:
-      - finding: "Die AI-Zuordnung ist keine physische Zugangskontrolle und die Langzeitzuverlässigkeit des jungen Modells ist noch nicht belastbar."
-        sourceCount: 1
+      - finding: "Die AI-Zuordnung ist keine physische Zugangskontrolle; zusätzlich bleibt fraglich, ob Kamera- und Video-Funktionen den Aufpreis für jeden Haushalt rechtfertigen."
+        sourceCount: 2
         confidence: "medium"
     editorialAssessment: >-
-      Die externe Evidenz reicht jetzt für eine vorsichtige Einordnung, aber nicht für starke Langzeitaussagen.
-      Die Nutzerstichprobe ist klein und die professionelle Quelle ist ausdrücklich research-led statt hands-on.
+      Die externe Evidenz reicht für eine vorsichtige Kaufentscheidung, aber weiterhin nicht für starke Langzeitaussagen.
+      Die professionelle Quelle ist research-led statt hands-on; die produktspezifischen Nutzersignale sind noch klein.
+      Wiederkehrend relevant ist die Grenze zwischen visueller Erkennung und echter physischer Zugangskontrolle.
   note: >-
     Bewertungen des älteren YumShare Solo werden nicht auf Solo 2 übertragen. Die kleine TikTok-Shop-Stichprobe
     wird nur als frühes produktspezifisches Nutzersignal gewertet.
@@ -153,6 +164,7 @@ decision:
     - Kamera, Fernzugriff und AI-Funktionen benötigen Netzwerk und App
     - Video-Wiedergabe und erweiterte Cloudfunktionen können ein Abo erfordern
     - AI-Erkennung ist kein sicherer Nachweis der aufgenommenen Futtermenge
+    - für strikt getrennte Rationen ersetzt das System keinen Mikrochip-Futterautomaten mit physischer Zugangskontrolle
     - für das Backup werden laut aktueller PETKIT-Produktseite fünf AAA-Alkaline-Batterien benötigt
     - Kamera ist im Batteriebetrieb laut Hersteller deaktiviert
 review:
@@ -176,6 +188,7 @@ weaknesses:
   - nicht für Nassfutter
   - Kamera und Fernfunktionen bleiben cloud- und appabhängig
   - AI-Zuordnung ersetzt keine physische Zugangskontrolle
+  - Kamera-Mehrwert kann durch kostenpflichtige Video-Historie relativiert werden
   - Video-Wiedergabe kann ein Abonnement benötigen
   - fünf AAA-Alkaline-Batterien für den Backup-Betrieb erforderlich
   - Kamera im Batteriebetrieb deaktiviert
