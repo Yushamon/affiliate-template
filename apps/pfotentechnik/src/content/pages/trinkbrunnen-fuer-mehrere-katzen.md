@@ -41,11 +41,11 @@ recommendationJourney:
   comparisonLabel: Passende Modelle vergleichen
 ---
 
-Dieser Ratgeber vertieft die Mehrkatzen-Nutzung innerhalb des Themenbereichs [Trinkbrunnen für Haustiere](/trinkbrunnen/) und ordnet Tankgröße, Zugang und RFID-Funktionen ein.
-
 ## Kurzantwort
 
-Für **zwei Katzen sind drei räumlich getrennte Wasserstellen ein sinnvoller Planungswert**: eine Stelle pro Katze plus eine zusätzliche Ausweichmöglichkeit. Das müssen nicht drei Trinkbrunnen sein. Ein Brunnen kann mit gut platzierten Wassernäpfen kombiniert werden. Entscheidend ist, dass keine Katze den einzigen Zugang blockieren kann.
+Für **zwei Katzen sind drei räumlich getrennte Wasserstellen ein sinnvoller Ausgangspunkt**: zum Beispiel ein Trinkbrunnen plus zwei getrennt platzierte Näpfe. Ein großer Brunnen allein ersetzt keine Ausweichstelle, wenn eine Katze den Zugang blockiert oder das Gerät ausfällt. Bei drei Katzen sind entsprechend vier unabhängige Trinkorte ein praktikabler Planungswert.
+
+Das ist keine starre medizinische Regel. Entscheidend sind Grundriss, Sozialverhalten und individuelle Trinkvorlieben. Wer jetzt ein Gerät auswählen möchte, findet im [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/) Modelle nach Kapazität, Reinigung, Material, Stromversorgung und Mehrkatzen-Eignung. Die Grundlagen zu Bauarten und Auswahl bündelt der [Trinkbrunnen-Ratgeber](/trinkbrunnen/).
 
 | Haushalt | Sinnvoller Ausgangspunkt | Praktische Umsetzung |
 | --- | --- | --- |
@@ -54,7 +54,7 @@ Für **zwei Katzen sind drei räumlich getrennte Wasserstellen ein sinnvoller Pl
 | 3 Katzen | 4 Wasserstellen | auf mehrere Räume verteilen |
 | 4 Katzen | 5 Wasserstellen | mehrere unabhängige Standorte |
 
-Die Tabelle ist eine **Planungshilfe, keine starre medizinische Regel**. Wohnungsgrundriss, soziale Konflikte und individuelle Vorlieben können zusätzliche Stellen sinnvoll machen. Mehrere Gefäße direkt nebeneinander zählen praktisch nicht als getrennte Ausweichorte.
+Die Tabelle bleibt eine Planungshilfe: Wohnungsgrundriss, soziale Konflikte und individuelle Vorlieben können zusätzliche Stellen sinnvoll machen. Mehrere Gefäße direkt nebeneinander zählen praktisch nicht als getrennte Ausweichorte. Wie sich die Zahl und Platzierung unabhängig vom Brunnen planen lässt, erklärt [Wie viele Wasserstellen braucht eine Katze?](/wie-viele-wasserstellen-katze/).
 
 ## Tankgröße realistisch wählen
 
@@ -78,7 +78,7 @@ Ein Smart-Brunnen kann Veränderungen sichtbar machen. Deutlich mehr Durst, häu
 
 ## Modelle nach Mehrkatzen-Szenario
 
-Der [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/) trennt einfache Netzmodelle, Akku-Brunnen, Edelstahl und Mehrkatzen-Tracking. Ein Tracking-System kann Ereignisse zuordnen, ersetzt aber keine räumlich getrennten Trinkorte. Die konkrete Anzahl erklärt [Wie viele Wasserstellen braucht eine Katze?](/wie-viele-wasserstellen-katze/).
+Für die Kaufentscheidung trennt der [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/) einfache Netzmodelle, Akku-Brunnen, Edelstahl und Mehrkatzen-Tracking. Ein Tracking-System kann Trinkereignisse zuordnen, ersetzt aber keine räumlich getrennten Trinkorte.
 
 Der [PETKIT Eversweet Ultra](/produkt/petkit-eversweet-ultra/) ist der konkrete Spezialfall mit 5-Liter-Frischwassertank, getrenntem 1,8-Liter-Abwasser und kameraunterstützter Zuordnung von bis zu 15 Tieren laut Hersteller. Die Zuordnung und geschätzte Trinkmenge sind keine medizinischen Messwerte; Kamera-, Cloud-, Cube-C- und Reinigungsaufwand gehören in die Kaufentscheidung.
 

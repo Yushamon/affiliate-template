@@ -256,18 +256,18 @@ heroImage:
 canonical: /vergleiche/beste-trinkbrunnen-fuer-hunde/
 ---
 
-Ein **Trinkbrunnen für Hunde** muss mechanisch zum Tier passen. Für einen großen Hund ist ein kompakter Katzenbrunnen mit App oft weniger geeignet als ein einfacher großer Tank mit breiter Trinkfläche.
+Ein **Trinkbrunnen für Hunde** muss mechanisch zum Tier passen. Entscheidend sind nicht App oder Tieretikett, sondern **Trinkfläche, Trinkhöhe, Standfestigkeit und Wasserreserve**. Für große Hunde und Mehrhundehaushalte ist deshalb der **oneisall 7L** unsere stärkste Gesamtoption; kompaktere Modelle spielen ihre Vorteile eher bei kleinen bis mittelgroßen Hunden aus.
 
 ## Schnellentscheidung
 
-- **oneisall 7L:** stärkste Gesamtoption für große Hunde und Mehrhundehaushalte.
-- **PETLIBRO Capsule Dog Fountain:** große Reserve und breite Trinkfläche als Alternative.
-- **oneisall 3,5L Cordless:** flexibel für kleine bis mittelgroße Hunde.
-- **PETKIT Eversweet Max 2 UVC:** smarte Premiumoption für kleine Hunde.
-- **PETLIBRO Stainless Steel 3L:** einfache Edelstahloption ohne App.
-- **Cat Mate 335:** kompakte Offline-Lösung mit mehreren Trinkhöhen.
+- **Gesamtsieger: oneisall 7L** für große Hunde und Mehrhundehaushalte, wenn Reserve und breite Trinkfläche wichtiger sind als Akku oder App.
+- **Großtank-Alternative: PETLIBRO Capsule Dog Fountain** mit knapp acht Litern und breiter Trinkfläche.
+- **Kabellos: oneisall 3,5L Cordless** für kleine bis mittelgroße Hunde und flexible Aufstellung.
+- **Smart/Premium: PETKIT Eversweet Max 2 UVC** für kleine Hunde.
+- **Edelstahl ohne App: PETLIBRO Stainless Steel 3L** für kleine bis mittelgroße Hunde.
+- **Einfach/Offline: Cat Mate 335** für kleine Hunde mit mehreren Trinkhöhen.
 
-## Welche Größe passt?
+## Welche Trinkgeometrie und Größe passen?
 
 | Einsatz | Sinnvolle Ausgangsgröße | Modelle |
 |---|---:|---|
@@ -276,7 +276,18 @@ Ein **Trinkbrunnen für Hunde** muss mechanisch zum Tier passen. Für einen gro�
 | großer Hund | mindestens etwa 5 Liter und breite Fläche | oneisall 7L, PETLIBRO Capsule |
 | mehrere Hunde | große Reserve plus zusätzliche Wasserstelle | oneisall 7L oder Capsule |
 
-Diese Werte sind keine medizinische Bedarfsberechnung. Die tatsächlich nötige Reserve hängt von Temperatur, Futter, Aktivität und Tierzahl ab.
+Diese Werte sind keine medizinische Bedarfsberechnung. Die tatsächlich nötige Reserve hängt von Temperatur, Futter, Aktivität und Tierzahl ab. **Tankvolumen allein reicht als Kriterium nicht:** Ein Hund muss die Wasserfläche bequem erreichen können, der Brunnen darf beim Trinken nicht leicht verrutschen, und die Form sollte zur Schnauzenbreite passen.
+
+### So gewichten wir Hundeeignung
+
+Für die Rangfolge betrachten wir **Hundegröße nicht als bloßes Herstellerlabel**. Wichtiger sind vier praktische Punkte:
+
+1. **Trinkfläche:** Große Hunde brauchen eine ausreichend breite, frei zugängliche Wasserfläche.
+2. **Höhe und Zugang:** Der Kopf sollte ohne enge Öffnung oder ungünstigen Winkel an das Wasser kommen.
+3. **Stand und Reserve:** Mehr Gewicht und ein größerer Tank sind bei kräftigen Hunden und mehreren Tieren oft sinnvoller als zusätzliche App-Funktionen.
+4. **Reinigung und Folgekosten:** Ein großer Brunnen ist nur dann alltagstauglich, wenn Pumpe, Filterkammer und wasserführende Flächen gut erreichbar bleiben.
+
+Deshalb kann ein kleiner Smart-Brunnen technisch umfangreicher sein und trotzdem die schlechtere Wahl für einen großen Hund darstellen.
 
 ### XXL- und 10-Liter-Brunnen richtig einordnen
 

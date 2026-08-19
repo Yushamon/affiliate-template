@@ -26,10 +26,10 @@ author:
   name: PfotenTechnik Redaktion
   role: Redaktion
 seo:
-  title: "PETLIBRO Polar Wet Food Feeder: Kühlung & Stromausfall im Check"
+  title: "PETLIBRO Polar Wet Food Feeder Test 2026: Kühlung & App"
   description: >-
-    PETLIBRO Polar PLAF109 mit aktiver Kühlung, drei 200-ml-Fächern und App: Was die 72-Stunden-Angabe bedeutet und
-    was das 12-Stunden-Batterie-Backup bei Stromausfall tatsächlich absichert.
+    PETLIBRO Polar PLAF109 im Check: aktive Kühlung, 3 Mahlzeiten und App. Was Praxistests zu Schale, Bedienung,
+    Stromausfall und Haustiersicherheit zeigen.
   canonical: /produkt/petlibro-polar-wet-food-feeder/
   sitemap: true
   priority: 0.9
@@ -117,14 +117,29 @@ externalEvidence:
     - publisher: "Cats.com"
       title: "Petlibro Polar Wet Food Feeder Review"
       url: "https://cats.com/petlibro-polar-wet-food-feeder-review"
-      checkedAt: "2026-08-10"
+      checkedAt: "2026-08-19"
       methodology: "hands-on"
       positives:
-        - "Mehrwöchiger Einsatz mit Katzen bestätigte den praktischen Nutzen für geplante Nassfuttermahlzeiten."
+        - "Mehrwöchiger Einsatz mit zwei Katzen bestätigte einfache Einrichtung, intuitive App-Zeitpläne und den praktischen Vorteil der aktiven Kühlung."
       negatives:
-        - "Reinigung und Preis wurden schwächer bewertet als der Kernnutzen."
+        - "Die relativ tiefe Schale und Gerätehöhe können für sehr kleine Katzen oder Kitten ungünstig sein."
+        - "In ausgewerteten Nutzerberichten wurde vereinzelt kritisiert, dass das Futter trotz Aufwärmpause noch zu kalt serviert werde."
       findings:
-        - "Cats.com testete den Polar über mehrere Wochen."
+        - "Cats.com testete Einrichtung, App, Fütterung, Katzenakzeptanz und Reinigung über mehrere Wochen."
+    - publisher: "Testsieger.de"
+      title: "Petlibro Polar Nassfutterautomat im Test: praktisch oder zu abhängig vom Smartphone?"
+      url: "https://www.testsieger.de/testportal/petlibro-polar-nassfutterautomat-im-test-praktisch-oder-zu-abhaengig-vom-smartphone/"
+      publishedAt: "2026-02-20"
+      checkedAt: "2026-08-19"
+      methodology: "lab-test"
+      positives:
+        - "Der Test bewertet Einrichtung, App-Steuerung, Standsicherheit und den entnehmbaren Edelstahlnapf positiv."
+        - "Kühlung und zeitgesteuerte Nassfutterausgabe werden als alltagstaugliches Gesamtkonzept eingeordnet."
+      negatives:
+        - "Ohne App ist die Bedienung stark eingeschränkt; eine lokale spontane Fütterungstaste fehlt."
+        - "Eine sehr hartnäckige Katze konnte im Test Verschluss beziehungsweise Mechanik überwinden und an weitere Mahlzeiten gelangen."
+      findings:
+        - "Testsieger.de prüfte den Polar im Februar 2026 nach Verarbeitung, Sicherheit, Bedienung, Fütterungsfunktionen, Stromversorgung, App und Hygiene."
   userReviews:
     - platform: "Chewy"
       url: "https://www.chewy.com/petlibro-polar-automatic-smart-dog/product-reviews/1311726"
@@ -138,17 +153,29 @@ externalEvidence:
         - "Einzelne Berichte nennen Probleme mit Kühlung oder Software."
   consensus:
     strengths:
-      - finding: "Aktive Kühlung ist der klar belegte Kernvorteil gegenüber einfachen Kühlakku-Lösungen."
+      - finding: "Aktive Kühlung ohne Kühlakkus und planbare Nassfuttermahlzeiten sind der über mehrere Praxistests bestätigte Kernvorteil."
+        sourceCount: 4
+        confidence: "high"
+      - finding: "Einrichtung und App-Zeitpläne werden in den unabhängigen Tests überwiegend als unkompliziert beschrieben."
         sourceCount: 3
         confidence: "high"
     weaknesses:
-      - finding: "Platzbedarf und begrenzte Mahlzeitenzahl schränken die Flexibilität ein."
+      - finding: "Nur drei Mahlzeiten und das große Gehäuse begrenzen die Flexibilität."
+        sourceCount: 3
+        confidence: "medium"
+      - finding: "App-Abhängigkeit und Softwareprobleme sind ein reales Betriebsrisiko, weil spontane Bedienung weitgehend über die App erfolgt."
         sourceCount: 2
         confidence: "medium"
+      - finding: "Tiefe Schale und Zugang können für sehr kleine Katzen oder Kitten weniger komfortabel sein."
+        sourceCount: 1
+        confidence: "low"
     editorialAssessment: >-
-      Die unabhängigen Praxistests stützen den Kernnutzen der aktiven Kühlung deutlich.
+      Die Evidenz für den Kühlungsnutzen ist inzwischen stark. Gleichzeitig zeigen unabhängige Tests konkretere Grenzen
+      bei App-Abhängigkeit, Baugröße, Schalenform und Haustiersicherheit, die für die Kaufentscheidung wichtiger sind
+      als zusätzliche Smart-Funktionen.
   note: >-
-    Externe Ratings bleiben von der redaktionellen PfotenTechnik-Bewertung getrennt.
+    PfotenTechnik hat den Polar nicht selbst getestet. Externe Ratings bleiben von der redaktionellen Bewertung getrennt;
+    Herstellerangaben zur 72-Stunden-Frische und zum Batterie-Backup werden nicht als unabhängiger Testnachweis gewertet.
 decision:
   bestFor:
     - Katzen und kleine Hunde mit Nassfutter
@@ -185,9 +212,11 @@ weaknesses:
   - aktive Kühlung benötigt Netzstrom
   - nur drei Mahlzeiten
   - keine physische Fütterungstaste am Gerät
+  - App und Benutzerkonto gehören zum Bedienkonzept
+  - tiefe Schale und Gerätehöhe können für sehr kleine Katzen oder Kitten ungünstig sein
+  - Verschluss und Mechanik sind laut einem unabhängigen Test nicht gegen jede sehr hartnäckige Katze vollständig geschützt
   - Rohfleisch wird vom Hersteller nicht empfohlen
   - vergleichsweise groß und mit 3,4 kg schwer
-  - App und Benutzerkonto gehören zum Bedienkonzept
 experience:
   summary: >-
     Aktive Kühlung ist kontrollierbarer als einfache Kühlakkus. Die reale Futtertemperatur hängt dennoch von
@@ -354,7 +383,7 @@ decisionFacts:
     value: "drei AA-Batterien; laut Hersteller bis zu 12 Stunden Schutz des Fütterungsplans"
     consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
 ---
-Der **PETLIBRO Polar Wet Food Feeder PLAF109** gehört zu den wenigen Nassfutterautomaten mit aktiver Kühlung. Drei vorbereitete Portionen werden nicht nur mit Kühlakkus temperiert, sondern über ein thermoelektrisches System gekühlt.
+Der **PETLIBRO Polar Wet Food Feeder PLAF109** gehört zu den wenigen Nassfutterautomaten mit aktiver Kühlung. Drei vorbereitete Portionen werden nicht nur mit Kühlakkus temperiert, sondern über ein thermoelektrisches System gekühlt. Im [Vergleich der besten Nassfutterautomaten](/vergleiche/beste-futterautomaten-fuer-nassfutter/) ordnen wir ihn direkt gegen aktive Kühlung, Kühlakku-Modelle und Offline-Lösungen ein.
 
 ## Kurzurteil
 
@@ -390,6 +419,12 @@ Zeitpläne und spontane Öffnungen werden über die PETLIBRO-App gesteuert. Eine
 
 Das ist komfortabel, solange Konto, App und Verbindung funktionieren. Vor längerer Abwesenheit sollten Zeitplan, WLAN-Ausfall, Stromunterbrechung und Batteriewechsel unter Aufsicht getestet werden.
 
+### App und Cloud sind ein echter Abhängigkeitspunkt
+
+Diese Einschränkung ist nicht nur theoretisch. Im August 2026 berichtete [The Verge über einen größeren PETLIBRO-Dienstausfall](https://www.theverge.com/tech/979295/petlibro-outage-smart-pet-feeders), bei dem Nutzer unter anderem auch beim Polar ausgefallene oder nicht ausgeführte Fütterungen meldeten. PETLIBRO erklärte, lokal gespeicherte Zeitpläne sollten grundsätzlich auch ohne Online-Kommunikation funktionieren; zugleich wurden einzelne Fälle untersucht, in denen Geräte trotzdem nicht wie geplant fütterten.
+
+Für die Einordnung heißt das: **Das Batterie-Backup schützt nicht automatisch vor App-, Cloud- oder Geräteproblemen.** Wer den Polar während einer Abwesenheit nutzt, sollte deshalb nicht nur Stromausfall, sondern auch Offline-Verhalten und den konkreten Zeitplan vorher testen.
+
 ## Reinigung
 
 Die aktuelle deutsche Produktseite nennt spülmaschinengeeignete Edelstahl-Futterteile. Die elektrische Basis, Kühlfläche und Mechanik werden von Hand gereinigt.
@@ -413,6 +448,8 @@ Nach jeder Befüllungsrunde sollten kontrolliert werden:
 | Haushalt ohne stabiles WLAN | eingeschränkt |
 | längerer Stromausfall | Kühlung nicht belastbar abgesichert |
 
+Wenn aktive Kühlung nicht nötig ist und Offline-Betrieb wichtiger ist, ist der [Cat Mate C500](/produkt/cat-mate-c500/) die einfachere Gegenposition mit Kühlakkus und lokalem Timer. Wie Futterart, Ration und Technik zusammenpassen, erklärt außerdem der Ratgeber [Futterautomat und Ernährung](/futterautomat-und-ernaehrung/).
+
 ## Methodik und Quellen
 
 Die Einordnung basiert auf aktuellen PETLIBRO-Unterlagen; ein eigener Langzeit- oder Temperaturtest liegt nicht vor.
@@ -424,4 +461,4 @@ Die Einordnung basiert auf aktuellen PETLIBRO-Unterlagen; ein eigener Langzeit- 
 
 ## Fazit
 
-Der PETLIBRO Polar ist eine technisch starke Lösung für drei vorbereitete Nassfutterportionen. Aktive Kühlung, Edelstahl-Schale und App-Zeitpläne sind klare Vorteile. Die wichtigsten Grenzen sind die geringe Fachzahl, die App-Abhängigkeit und die Tatsache, dass das Batterie-Backup den Zeitplan, aber nicht nachweislich die Kühlung schützt.
+Der PETLIBRO Polar ist eine technisch starke Lösung für drei vorbereitete Nassfutterportionen. Mehrere unabhängige Praxistests stützen den Nutzen der aktiven Kühlung und die einfache Zeitplanung. Gegen den Kauf sprechen vor allem nur drei Mahlzeiten, die starke App-Abhängigkeit, das große Gehäuse und mögliche Grenzen bei Schalenkomfort und Haustiersicherheit. Das Batterie-Backup schützt den Zeitplan, aber nicht nachweislich die aktive Kühlung.

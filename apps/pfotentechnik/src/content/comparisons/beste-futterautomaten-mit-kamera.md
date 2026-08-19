@@ -44,30 +44,18 @@ items:
       mehrtiere: Keine Zugangssperre
       kamera: 1080p-HD-Kamera
     overrides: {}
-  - slug: wopet-heritage-view-camera-feeder
-    label: WOPET Heritage View Camera Feeder
-    type: product
-    recommendation: Großer Vorrat mit Kamera.
-    values:
-      profil: Größter Vorrat
-      bild: 1080p
-      kontrollwert: Sichtkontrolle
-      offline: Backup testen
-      datenschutz: Speicheroptionen prüfen
-      futter: Trockenfutter
-      mehrtiere: Keine Tiertrennung
-      kamera: Ja
-    overrides: {}
   - type: product
     slug: petkit-yumshare-solo-2
+    label: PETKIT YumShare Solo 2
+    recommendation: Kompakte Premiumoption mit Kamera, wenn Livebild und App wichtiger sind als zwei getrennte Futterkammern.
     values:
-      profil: Nicht in den geprüften Produktdaten ausgewiesen
-      bild: Nicht in den geprüften Produktdaten ausgewiesen
-      kontrollwert: Nicht in den geprüften Produktdaten ausgewiesen
-      offline: gespeicherte Pläne laufen laut Hersteller weiter
-      datenschutz: Nicht in den geprüften Produktdaten ausgewiesen
-      futter: Trockenfutter; Kroketten bis 12 mm und gefriergetrocknete Stücke bis 9 mm laut Hersteller
-      mehrtiere: Nicht in den geprüften Produktdaten ausgewiesen
+      profil: Beste kompakte PETKIT-Kameraoption
+      bild: 1080p-HD-Kamera, Livebild und Zwei-Wege-Audio
+      kontrollwert: Sichtkontrolle am Napf; AI-Ereignisse sind kein sicherer Fressnachweis
+      offline: gespeicherte Zeitpläne laufen laut Hersteller weiter; Kamera im Batteriebetrieb deaktiviert
+      datenschutz: Cloud- und Video-Wiedergabe abhängig von PETKIT-Funktionen und Region prüfen
+      futter: Trockenfutter bis 12 mm; geeignete gefriergetrocknete Stücke bis 9 mm
+      mehrtiere: AI-Zuordnung, aber keine physische Zugangskontrolle
       kamera: 1080p-HD-Kamera mit Ereigniserfassung
     overrides: {}
 criteria:
@@ -114,10 +102,12 @@ criteria:
 automaticRecommendations:
   enabled: true
 recommendation:
-  title: Kamera ersetzt keine Tiererkennung
+  title: PETLIBRO mit stärkster Evidenz, PETKIT für Spezialfälle
   text: >-
-    PETLIBRO ist der beste Allrounder. PETKIT eignet sich besser für zwei Trockenfuttersorten. Eine Kamera allein
-    verhindert weder Futterklau noch beweist sie sicher, welches Tier gefressen hat.
+    Der PETLIBRO Granary Camera Feeder ist der beste Allrounder, weil Kamera, App und Zeitpläne durch zwei unabhängige
+    Hands-on-Reviews am stärksten belegt sind. PETKIT YumShare Dual-Hopper 2 ist interessanter für zwei Futtersorten,
+    hat aber deutlich schwächere externe Langzeitevidenz. Der YumShare Solo 2 ist die kompaktere Kameraalternative.
+    Keine der drei Kameralösungen ersetzt eine physische Zugangskontrolle oder beweist sicher die gefressene Menge.
   winnerSlug: petlibro-granary-camera-feeder
   alternativeSlug: petkit-yumshare-dual-hopper
 faq:
@@ -204,10 +194,10 @@ hub:
   icon: 📷
   order: 500
 seo:
-  title: Beste Futterautomaten mit Kamera
+  title: "Futterautomaten mit Kamera Test 2026: 3 Modelle im Vergleich"
   description: >-
-    Futterautomaten mit Kamera nach Bildqualität, Kontrolle, Offline-Verhalten, Datenschutz und tatsächlichem Mehrwert
-    vergleichen.
+    Drei Futterautomaten mit Kamera im Vergleich: PETLIBRO Granary und PETKIT YumShare nach Livebild, Fresskontrolle,
+    Offline-Verhalten, Cloudkosten und unabhängiger Evidenz.
   canonical: /vergleiche/beste-futterautomaten-mit-kamera/
   sitemap: true
   noindex: false
@@ -215,13 +205,15 @@ seo:
   changefreq: monthly
 ---
 
-Eine Kamera beantwortet nur eine Frage: **Was passiert im sichtbaren Bereich des Napfes?** Sie beweist weder sicher, welches Tier gefressen hat, noch wie viel aufgenommen wurde.
+Ein **Futterautomat mit Kamera** kombiniert automatische Trockenfutterausgabe mit Livebild am Napf. Das ist vor allem dann sinnvoll, wenn du aus der Ferne prüfen möchtest, ob Futter sichtbar ausgegeben wurde und ob ein Tier am Futterplatz erscheint. Die Kamera beantwortet aber nur, **was im sichtbaren Bereich passiert**. Sie beweist weder sicher, welches Tier gefressen hat, noch wie viel aufgenommen wurde.
 
 ## Schnellentscheidung in 30 Sekunden
 
-- **PETLIBRO Granary Camera**: bester Allrounder.
-- **PETKIT YumShare Dual-Hopper 2**: zwei Trockenfuttersorten.
-- **WOPET Heritage View**: großer Vorrat.
+- **PETLIBRO Granary Camera:** bester Allrounder und stärkste unabhängige Evidenz im Vergleich.
+- **PETKIT YumShare Dual-Hopper 2:** beste Wahl, wenn zwei Trockenfuttersorten getrennt bevorratet werden sollen.
+- **PETKIT YumShare Solo 2:** kompaktere Kameraoption mit Livebild, App und Dual-Band-WLAN.
+
+Der frühere **WOPET Heritage View** bleibt wegen unklarer aktueller Verfügbarkeit und schwacher unabhängiger Evidenz außerhalb der Hauptempfehlungen.
 
 ## Wann lohnt sich eine Kamera?
 
@@ -258,9 +250,21 @@ Vor längerer Abwesenheit immer testen:
 
 Bewertet werden praktischer Kontrollnutzen, Offline-Verhalten, Datenschutz, Futtertechnik und Alltagstauglichkeit – nicht die Kamera allein.
 
+## Unabhängige Evidenz hinter der Rangfolge
+
+Die Modelle sind extern nicht gleich gut belegt:
+
+- **PETLIBRO Granary Camera:** stärkste Evidenz. Ein einmonatiger Hands-on-Test von Tom's Guide sowie ein weiterer Praxistest von Cats.com bestätigen insbesondere Kamera, Zeitpläne und Fernkontrolle. Zusätzlich liegen produktspezifische Händlerbewertungen vor.
+- **PETKIT YumShare Dual-Hopper 2:** Konzept und Funktionen sind gut dokumentiert, aber die externe Evidenz ist schwächer. Die vorhandene professionelle Quelle ist ausdrücklich eine redaktionelle Quellenanalyse und kein Hands-on-Langzeittest; die produktspezifische Nutzerstichprobe ist sehr klein.
+- **PETKIT YumShare Solo 2:** ebenfalls nur vorsichtig einzuordnen. Die vorhandene professionelle Quelle ist research-led statt hands-on, und belastbare Langzeiterfahrung für die neue Generation fehlt noch.
+
+Deshalb gewichten wir beim Gesamtsieger nicht nur Funktionsumfang und Kameraauflösung, sondern auch **wie gut die reale Nutzung unabhängig belegt ist**.
+
 ## Unsere Empfehlung
 
-Unsere stärkste Empfehlung in diesem Vergleich ist **PETLIBRO Granary Camera Feeder**. PETLIBRO ist der beste Allrounder. PETKIT eignet sich besser für zwei Trockenfuttersorten. Eine Kamera allein verhindert weder Futterklau noch beweist sie sicher, welches Tier gefressen hat.
+Unsere stärkste Empfehlung ist der **PETLIBRO Granary Camera Feeder**. Ausschlaggebend ist nicht nur die 1080p-Kamera: Für dieses Modell ist die reale Nutzung durch zwei unabhängige Hands-on-Reviews deutlich besser belegt als bei den aktuellen PETKIT-Alternativen. Der **YumShare Dual-Hopper 2** ist trotzdem die sinnvollere Speziallösung, wenn zwei Futtersorten getrennt gelagert und gemischt ausgegeben werden sollen. Der **YumShare Solo 2** ist kompakter, wenn eine einzelne Futterkammer genügt.
+
+Keine dieser Kameras verhindert Futterklau. Für wirklich getrennte Rationen ist ein Zugangssystem wie ein Mikrochip-Futterautomat die passendere Geräteklasse.
 
 ## Testmethodik
 
@@ -274,13 +278,12 @@ Wir vergleichen dokumentierte Produktdaten, Bedienungsanleitungen, belastbare He
 
 ## Weiterführende Links
 
-- [Alle Vergleiche](/vergleiche/)
-- [Smarte Haustiertechnik im Überblick](/smarte-haustiertechnik/)
-- [Redaktion und Bewertungsgrundsätze](/so-bewerten-wir/)
-
-## Eine Kamera lohnt sich nur mit klarem Kontrollbedarf
-
-Ein Kamera-Futterautomat ist sinnvoll, wenn du aus der Ferne prüfen möchtest, ob dein Tier am Futterplatz erscheint. Blickwinkel, Nachtsicht und zuverlässige Grundfunktion sind wichtiger als hohe Auflösung allein. Video zeigt Aktivität, beweist aber weder die vollständig gefressene Menge noch den Gesundheitszustand.
+- [PETLIBRO Granary Camera Feeder im Detail](/produkt/petlibro-granary-camera-feeder/)
+- [PETKIT YumShare Dual-Hopper 2 im Detail](/produkt/petkit-yumshare-dual-hopper/)
+- [PETKIT YumShare Solo 2 im Detail](/produkt/petkit-yumshare-solo-2/)
+- [Futterautomaten für Katzen vergleichen](/vergleiche/beste-futterautomaten-fuer-katzen/)
+- [Futterautomaten für Mehrtierhaushalte](/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/)
+- [Wie wir Produkte bewerten](/so-bewerten-wir/)
 
 ## Zwei unterschiedliche Kamera-Konzepte
 
