@@ -1,6 +1,6 @@
 # PfotenTechnik SEO Platform Report
 
-- Dokumente: 240
+- Dokumente: 241
 - Fehler: 9
 - Warnungen: 93
 
