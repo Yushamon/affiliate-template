@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-08-18T10:33:30.171Z",
+    "generatedAt": "2026-08-18T10:39:47.644Z",
     "totalProducts": 99,
     "byCategory": {
       "futterautomaten": 37,
@@ -11,7 +11,7 @@
       "gps-tracker": 12
     },
     "errors": 0,
-    "warnings": 106,
+    "warnings": 98,
     "notes": 146,
     "duplicateSlugs": 0
   },
@@ -2364,7 +2364,6 @@
       "errors": [],
       "warnings": [
         "Nur 1 Galerie-Bilder hinterlegt",
-        "Empfohlenes Feld fehlt: napf",
         "Empfohlenes Feld fehlt: gewicht"
       ],
       "notes": [],
@@ -2472,12 +2471,16 @@
         {
           "label": "Akku",
           "value": "Nein"
+        },
+        {
+          "label": "Napf",
+          "value": "Zwei separate Edelstahlnäpfe mit Basen für Futter und Wasser"
         }
       ],
       "unknownSpecs": [],
-      "structuralCompleteness": 85,
-      "confirmedCompleteness": 85,
-      "completeness": 91
+      "structuralCompleteness": 92,
+      "confirmedCompleteness": 92,
+      "completeness": 94
     },
     {
       "file": "src/content/products/oneisall-3-2l-cordless-fountain.md",
@@ -2786,9 +2789,7 @@
       "errors": [],
       "warnings": [
         "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: wasserfluss",
-        "Empfohlenes Feld fehlt: ersatzfilter"
+        "Empfohlenes Feld fehlt: trinkhöhe"
       ],
       "notes": [],
       "specs": [
@@ -2891,12 +2892,20 @@
         {
           "label": "Geeignet für",
           "value": "mittelgroße und große Hunde sowie Mehrtierhaushalte"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "Kontinuierlicher Wasserfluss über Wasserhahn-Auslauf"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Oneisall 7L Ersatzfilter verfügbar; Hersteller empfiehlt Wechsel etwa alle 2 bis 3 Wochen"
         }
       ],
       "unknownSpecs": [],
-      "structuralCompleteness": 73,
-      "confirmedCompleteness": 73,
-      "completeness": 88
+      "structuralCompleteness": 87,
+      "confirmedCompleteness": 87,
+      "completeness": 94
     },
     {
       "file": "src/content/products/onlycat-mikrochip-katzenklappe.md",
@@ -3212,9 +3221,6 @@
       "category": "gps-tracker",
       "errors": [],
       "warnings": [
-        "Empfohlenes Feld fehlt: app",
-        "Empfohlenes Feld fehlt: wlan",
-        "Empfohlenes Feld fehlt: bluetooth",
         "Empfohlenes Feld fehlt: material"
       ],
       "notes": [],
@@ -3262,12 +3268,24 @@
         {
           "label": "Wasserschutz",
           "value": "IP68; Tauchtiefe ist Herstellerclaim"
+        },
+        {
+          "label": "App",
+          "value": "Pawfit App für iOS und Android; Ortung, Aktivität, Sicherheitszonen, Audio-ID und weitere Trackerfunktionen"
+        },
+        {
+          "label": "WLAN",
+          "value": "Wi-Fi wird zusammen mit GPS und Bluetooth zur Standortbestimmung beziehungsweise Ortungsunterstützung genutzt"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth unterstützt; Find Nearby nutzt Bluetooth zur Nahbereichsortung, Audio-ID-Updates benötigen beim Pawfit 3 eine Bluetooth-Verbindung"
         }
       ],
       "unknownSpecs": [],
-      "structuralCompleteness": 73,
-      "confirmedCompleteness": 73,
-      "completeness": 88
+      "structuralCompleteness": 93,
+      "confirmedCompleteness": 93,
+      "completeness": 97
     },
     {
       "file": "src/content/products/pawsync-smart-pet-feeder.md",
@@ -5271,10 +5289,8 @@
       "category": "trinkbrunnen",
       "errors": [],
       "warnings": [
-        "Empfohlenes Feld fehlt: lautstärke",
         "Empfohlenes Feld fehlt: uv",
-        "Empfohlenes Feld fehlt: trinkhöhe",
-        "Empfohlenes Feld fehlt: ersatzfilter"
+        "Empfohlenes Feld fehlt: trinkhöhe"
       ],
       "notes": [],
       "specs": [
@@ -5353,12 +5369,20 @@
         {
           "label": "Betriebssysteme",
           "value": "iOS 13 oder neuer; Android 7 oder neuer"
+        },
+        {
+          "label": "Lautstärke",
+          "value": "23 dB laut Hersteller für Dockstream 2"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Dockstream Ersatzfilter; 4-stufige Filterung, Wechsel bei einem Haustier etwa alle 2 Wochen, bei mehreren Tieren häufiger"
         }
       ],
       "unknownSpecs": [],
-      "structuralCompleteness": 73,
-      "confirmedCompleteness": 73,
-      "completeness": 88
+      "structuralCompleteness": 87,
+      "confirmedCompleteness": 87,
+      "completeness": 94
     },
     {
       "file": "src/content/products/petlibro-dockstream-2-smart.md",

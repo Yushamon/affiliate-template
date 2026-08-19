@@ -105,7 +105,7 @@ externalEvidence:
       url: "https://healthycatguide.com/cat-mate-pet-fountain-review/"
       publishedAt: "2026-04-24"
       checkedAt: "2026-08-18"
-      methodology: "long-term"
+      methodology: "hands-on"
       positives:
         - "Die Autorin nutzte den konkreten Cat Mate 335 über eineinhalb Jahre und bewertet Aufbau, geringe Geräuschentwicklung und Haltbarkeit positiv."
         - "Im Ein-Katzen-Haushalt erwies sich der Brunnen als zuverlässige Alltagslösung."

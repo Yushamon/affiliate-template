@@ -1,12 +1,12 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-08-18T10:33:30.171Z
+Erstellt: 2026-08-18T10:39:47.644Z
 
 ## Zusammenfassung
 
 - Produkte: 99
 - Fehler: 0
-- Warnungen: 106
+- Warnungen: 98
 - Dokumentierte Hinweise: 146
 - Doppelte Slugs: 0
 
@@ -31,39 +31,6 @@ Erstellt: 2026-08-18T10:33:30.171Z
   - Comparison-Bild fehlt
   - Nur 0 Galerie-Bilder hinterlegt
   - Affiliate-Link fehlt
-
-### oneisall 7L Dog Water Fountain
-
-- Datei: `src/content/products/oneisall-7l-dog-water-fountain.md`
-- Kategorie: trinkbrunnen
-- Vollständigkeit: 88%
-- Warnungen:
-  - Empfohlenes Feld fehlt: uv
-  - Empfohlenes Feld fehlt: trinkhöhe
-  - Empfohlenes Feld fehlt: wasserfluss
-  - Empfohlenes Feld fehlt: ersatzfilter
-
-### Pawfit 3
-
-- Datei: `src/content/products/pawfit-3.md`
-- Kategorie: gps-tracker
-- Vollständigkeit: 88%
-- Warnungen:
-  - Empfohlenes Feld fehlt: app
-  - Empfohlenes Feld fehlt: wlan
-  - Empfohlenes Feld fehlt: bluetooth
-  - Empfohlenes Feld fehlt: material
-
-### PETLIBRO Dockstream 2 Smart Cordless
-
-- Datei: `src/content/products/petlibro-dockstream-2-smart-cordless.md`
-- Kategorie: trinkbrunnen
-- Vollständigkeit: 88%
-- Warnungen:
-  - Empfohlenes Feld fehlt: lautstärke
-  - Empfohlenes Feld fehlt: uv
-  - Empfohlenes Feld fehlt: trinkhöhe
-  - Empfohlenes Feld fehlt: ersatzfilter
 
 ### Prothelis area Pets
 
@@ -115,16 +82,6 @@ Erstellt: 2026-08-18T10:33:30.171Z
   - Thumbnail fehlt
   - Comparison-Bild fehlt
   - Nur 0 Galerie-Bilder hinterlegt
-
-### Oneisall 2-in-1 Automatic Cat Feeder and Water Dispenser
-
-- Datei: `src/content/products/oneisall-2-in-1-feeder-water.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 91%
-- Warnungen:
-  - Nur 1 Galerie-Bilder hinterlegt
-  - Empfohlenes Feld fehlt: napf
-  - Empfohlenes Feld fehlt: gewicht
 
 ### oneisall 3,2L Cordless Cat Fountain
 
@@ -218,6 +175,24 @@ Erstellt: 2026-08-18T10:33:30.171Z
   - Empfohlenes Feld fehlt: bluetooth
   - Empfohlenes Feld fehlt: material
 
+### Oneisall 2-in-1 Automatic Cat Feeder and Water Dispenser
+
+- Datei: `src/content/products/oneisall-2-in-1-feeder-water.md`
+- Kategorie: futterautomaten
+- Vollständigkeit: 94%
+- Warnungen:
+  - Nur 1 Galerie-Bilder hinterlegt
+  - Empfohlenes Feld fehlt: gewicht
+
+### oneisall 7L Dog Water Fountain
+
+- Datei: `src/content/products/oneisall-7l-dog-water-fountain.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 94%
+- Warnungen:
+  - Empfohlenes Feld fehlt: uv
+  - Empfohlenes Feld fehlt: trinkhöhe
+
 ### PETKIT Eversweet 5 Mini
 
 - Datei: `src/content/products/petkit-eversweet-5-mini.md`
@@ -283,6 +258,15 @@ Erstellt: 2026-08-18T10:33:30.171Z
 ### PETLIBRO Dockstream 2 Smart
 
 - Datei: `src/content/products/petlibro-dockstream-2-smart.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 94%
+- Warnungen:
+  - Empfohlenes Feld fehlt: uv
+  - Empfohlenes Feld fehlt: trinkhöhe
+
+### PETLIBRO Dockstream 2 Smart Cordless
+
+- Datei: `src/content/products/petlibro-dockstream-2-smart-cordless.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 94%
 - Warnungen:
@@ -436,6 +420,14 @@ Erstellt: 2026-08-18T10:33:30.171Z
   - Herstellerangabe dokumentiert, aber nicht bestätigt: batterie
   - Herstellerangabe dokumentiert, aber nicht bestätigt: maße
   - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
+
+### Pawfit 3
+
+- Datei: `src/content/products/pawfit-3.md`
+- Kategorie: gps-tracker
+- Vollständigkeit: 97%
+- Warnungen:
+  - Empfohlenes Feld fehlt: material
 
 ### PawSync Smart Pet Feeder
 
