@@ -7,7 +7,10 @@ testStatus: "manufacturer-data"
 productStatus: "active"
 description: "Eigenständige Furbo-Katzenkamera mit 1080p, 360°-Rotation, Auto-Tracking, Leckerliwurf, Feder-Spielzeug und optionalem Nanny-Dienst."
 recommendation: "Für Katzenhaushalte, die drehbare Beobachtung mit Leckerliwurf und einem austauschbaren Feder-Spielzeug kombinieren möchten."
-manufacturer: { key: "furbo", name: "Furbo", slug: "furbo" }
+manufacturer:
+  key: "furbo"
+  name: "Furbo"
+  slug: "furbo"
 category: { key: "haustierkameras", label: "Haustierkameras", path: "/haustierkameras/" }
 productUrl: "/produkt/furbo-360-katzenkamera/"
 publishedAt: "2026-08-21"
@@ -24,15 +27,17 @@ images:
     - { src: "../../assets/images/products/furbo-360-katzenkamera/gallery-1.webp", alt: "Geplanter Bildslot: Furbo 360° Katzenkamera mit klar erkennbarem Kamerakopf; aktuell Platzhalter" }
     - { src: "../../assets/images/products/furbo-360-katzenkamera/gallery-2.webp", alt: "Geplanter Bildslot: Feder-Spielzeug und Katzeninteraktion der Furbo 360° Katzenkamera; aktuell Platzhalter" }
     - { src: "../../assets/images/products/furbo-360-katzenkamera/gallery-3.webp", alt: "Geplanter Bildslot: Furbo 360° Katzenkamera in einer Nutzungssituation mit Katze; aktuell Platzhalter" }
-price: { current: 49, currency: "EUR", status: "unknown", checkedAt: "2026-08-21", source: { id: "furbo-eu", label: "Furbo EU", type: "manual" } }
+price:
+  current: 49
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-08-21T11:24:54.276Z"
+  source:
+    id: "manual"
+    label: "Furbo EU"
+    type: "manual"
 priceAutomation: "editorial"
 rating: 3.8
-availability: "available"
-availabilityReason: "Am 21.08.2026 im europäischen Furbo-Shop als eigenes Katzenmodell bestellbar; Angebot und Tarifwahl sind dynamisch."
-availabilityUpdated: "2026-08-21"
-editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "complete"
 ratings: { interaktion: 4.6, datenschutz: 3.0, folgekosten: 2.8, alltag: 3.8 }
 decision:
   bestFor: ["Katzen in einem offenen Hauptraum", "Bewusste Ferninteraktion mit Leckerli und Feder", "Haushalte, die Nanny-Kosten vorab trennen"]
@@ -82,6 +87,23 @@ editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentati
 evidenceSources:
   - { source: "Furbo 360° Cat Camera EU", url: "https://www.furbo.com/eu-en/products/furbo-360-cat-camera", accessedAt: "2026-08-21", assertion: "Eigenständiges EU-Modell, Verfügbarkeit, Angebot und Garantiehinweise.", fields: ["availability", "decision"] }
   - { source: "Furbo EU Kameravergleich", url: "https://furbo.com/eu-en/pages/comparison", accessedAt: "2026-08-21", assertion: "Video, Rotation, Zoom, Tracking, Interaktion, Nanny-Abhängigkeiten, Lieferumfang und Garantie.", fields: ["specs", "features", "comparisonData"] }
+affiliate:
+  provider: "furbo-eu"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://amzn.to/4ydM5Kr"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+
+priceState: "available"
+priceUpdated: "2026-08-21T11:24:54.276Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityReason: "Am 21.08.2026 im europäischen Furbo-Shop als eigenes Katzenmodell bestellbar; Angebot und Tarifwahl sind dynamisch."
+availabilityUpdated: "2026-08-21T11:24:54.276Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 ---
 
 ## Eigenständiges Katzenmodell

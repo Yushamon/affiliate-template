@@ -7,7 +7,10 @@ testStatus: "manufacturer-data"
 productStatus: "active"
 description: "Offene automatische Katzentoilette P9905 mit 18-cm-Einstieg, Zwei-Wege-Rechen, Einwegschale, Kristallstreu und Kamera-Monitoring."
 recommendation: "Für Katzen ab sechs Monaten und 1,5 kg, wenn offener Zugang und niedriger Einstieg wichtiger sind als freie Streuwahl und niedrige Verbrauchskosten."
-manufacturer: { key: "petkit", name: "PETKIT", slug: "petkit" }
+manufacturer:
+  key: "petkit"
+  name: "PETKIT"
+  slug: "petkit"
 category: { key: "automatische-katzentoiletten", label: "Automatische Katzentoiletten", path: "/automatische-katzentoiletten/" }
 productUrl: "/produkt/petkit-purobot-crystal-duo/"
 publishedAt: "2026-08-21"
@@ -24,15 +27,17 @@ images:
     - { src: "../../assets/images/products/petkit-purobot-crystal-duo/gallery-1.webp", alt: "Geplanter Bildslot: offene Bauweise und niedriger Einstieg des PETKIT PUROBOT CRYSTAL DUO; aktuell Platzhalter" }
     - { src: "../../assets/images/products/petkit-purobot-crystal-duo/gallery-2.webp", alt: "Geplanter Bildslot: Rechen, Crystal Litter und Tray des PETKIT PUROBOT CRYSTAL DUO; aktuell Platzhalter" }
     - { src: "../../assets/images/products/petkit-purobot-crystal-duo/gallery-3.webp", alt: "Geplanter Bildslot: PETKIT PUROBOT CRYSTAL DUO in einer Nutzungssituation mit Katze; aktuell Platzhalter" }
-price: { current: 169, currency: "EUR", status: "unknown", checkedAt: "2026-08-21", source: { id: "petkit-eu", label: "PETKIT EU", type: "manual" } }
+price:
+  current: 169
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-08-21T11:26:35.179Z"
+  source:
+    id: "manual"
+    label: "PETKIT EU"
+    type: "manual"
 priceAutomation: "editorial"
 rating: 3.8
-availability: "available"
-availabilityReason: "Am 21.08.2026 im offiziellen deutschsprachigen EU-Shop mit EU-Stecker bestellbar; Preis und Lieferstatus bleiben dynamisch."
-availabilityUpdated: "2026-08-21"
-editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "complete"
 ratings: { einstieg: 4.6, geruchskontrolle: 3.8, sicherheit: 3.8, app: 4.0, wartung: 3.4 }
 decision:
   bestFor: ["Große, ältere oder kurzbeinige Katzen, die eine offene Bauform bevorzugen", "Haushalte, die Kamera- und Toilettentrends bewusst nutzen", "Nutzer, die das proprietäre Crystal-Litter-System akzeptieren"]
@@ -87,6 +92,23 @@ editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentati
 evidenceSources:
   - { source: "PETKIT EU Produktseite", url: "https://www.petkit-eu.com/de/products/purobot-crystal-duo-automatic-cat-litter-box-with-camera", accessedAt: "2026-08-21", assertion: "EU-Verfügbarkeit, Preis, Lieferumfang, Bauart, Einstieg, Verbrauchssystem, Kamera, WLAN und Herstellerfunktionen.", fields: ["availability", "specs", "features", "comparisonData"] }
   - { source: "PETKIT P9905 Bedienungsanleitung", url: "https://instructions.petkit.com/App%20Manual/T7/T7_User%20Manual_EN_V1.0_20250922%20.pdf", accessedAt: "2026-08-21", assertion: "Modell, Maße, Gewicht, Mindestalter/-gewicht, App, Reinigung, Care+ und Sicherheitsgrenzen.", fields: ["specs", "decision", "faq"] }
+affiliate:
+  provider: "petkit-eu"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://www.amazon.de/PETKIT-Selbstreinigende-Katzentoilette-AI-Gesundheits%C3%BCberwachung-Geruchskontrolle/dp/B0FLXZH359/ref=sr_1_6?dib=eyJ2IjoiMSJ9.BsPyhhun0I4X-UULKIa7vUeH6GUdtRTXNGjg0i8TA8F13vpQr2WX7sWVxVUhxH0OK5xRBVSrbAez_I5lxPM5bwo9ZqyyFJbQSSH4L2H0CTZzCDg1vhE5LKwZnhssyzFPrFRTrhIghAKoArbZugF1jSZHkD1EZhpp_6cNCBQWVT3P8PCa5igCliVfJy472sOJiBND9gYPKXhSAJ6HQ2P_H3QqidPdYKWK33uxZ5l7nURg6qUKuzvFoDJnqu16DxWfcK3eG-ySs3Ao7lqwK69CPWCEVRbqtZl-RE4ZU9abBew.xtVAW1Jz51wo7H6cSIyl02tje5Y5gfZZGDnpt8Bk6x0&dib_tag=se&keywords=PETKIT+Purobot+Crystal+Duo&qid=1787311553&sr=8-6"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+
+priceState: "available"
+priceUpdated: "2026-08-21T11:26:35.179Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityReason: "Am 21.08.2026 im offiziellen deutschsprachigen EU-Shop mit EU-Stecker bestellbar; Preis und Lieferstatus bleiben dynamisch."
+availabilityUpdated: "2026-08-21T11:26:35.179Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 ---
 
 ## Offenes Rechensystem statt Trommel

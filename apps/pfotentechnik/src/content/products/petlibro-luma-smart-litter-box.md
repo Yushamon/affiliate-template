@@ -40,7 +40,7 @@ price:
   current: 559.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-19T08:13:00.212Z"
+  checkedAt: "2026-08-21T11:28:03.918Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -89,7 +89,6 @@ affiliate:
   url: "https://www.amazon.de/-/en/PETLIBRO-Self-Cleaning-Electric-Analysis-Detection/dp/B0FPXF3CPK?th=1"
   rel: "sponsored nofollow noopener"
   target: "_blank"
-
 externalEvidence:
   professionalReviews:
     - publisher: "Cats.com"
@@ -131,12 +130,12 @@ externalEvidence:
     editorialAssessment: "Für die Luma liegt erstmals eine belastbare unabhängige mehrwöchige Hands-on-Review vor. Die aktuelle Nutzerbasis bestätigt sowohl schnelle Akzeptanz als auch einzelne Schwächen der Reinigungs- und Trennlogik. Die Trustpilot-Gesamtwertung ist jedoch markenweit und darf nicht als Luma-Produktbewertung dargestellt werden."
   note: "Cats.com bezieht sich eindeutig auf die aktuelle PETLIBRO Luma. Trustpilot wird ausschließlich als markenweite Nutzerplattform geführt; nur ausdrücklich auf Luma bezogene Erfahrungsinhalte fließen vorsichtig in die Einordnung ein."
 priceState: "available"
-priceUpdated: "2026-08-19T08:13:00.212Z"
+priceUpdated: "2026-08-21T11:28:03.918Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-19T08:13:00.212Z"
+availabilityUpdated: "2026-08-21T11:28:03.918Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

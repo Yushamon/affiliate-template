@@ -60,10 +60,10 @@ images:
     - src: ../../assets/images/guides/gps-tracker/range-accuracy.webp
       alt: Einfluss von GPS-Sicht und Mobilfunkempfang auf die Hundeortung
 price:
-  current: 79
+  current: 55.3
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-17T14:43:08.231Z"
+  checkedAt: "2026-08-21T11:28:30.078Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -78,12 +78,12 @@ rating: 4.6
 score: 91
 
 priceState: "available"
-priceUpdated: "2026-08-17T14:43:08.231Z"
+priceUpdated: "2026-08-21T11:28:30.078Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-17T14:43:08.231Z"
+availabilityUpdated: "2026-08-21T11:28:30.078Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

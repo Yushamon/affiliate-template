@@ -40,7 +40,7 @@ price:
   current: 49
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-17T14:41:34.487Z"
+  checkedAt: "2026-08-21T11:27:03.432Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -79,16 +79,6 @@ affiliate:
   url: "https://amzn.to/4cNekqL"
   rel: "sponsored nofollow noopener"
   target: "_blank"
-priceState: "available"
-priceUpdated: "2026-08-17T14:41:34.487Z"
-priceAvailable: true
-affiliateAvailable: true
-availability: "available"
-availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-17T14:41:34.487Z"
-editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
 
 externalEvidence:
   professionalReviews:
@@ -131,6 +121,16 @@ externalEvidence:
         confidence: "high"
     editorialAssessment: "Der unabhängige Hands-on-Test bewertet die Mini 360 technisch klar positiv, während die markenweite Trustpilot-Basis wesentlich kritischer ausfällt. Die stärkste Übereinstimmung besteht beim Abo-Thema: Viele der interessanten Aufzeichnungs- und KI-Funktionen sind an laufende Kosten gebunden."
   note: "The Independent testete ausdrücklich die Furbo Mini 360. Trustpilot umfasst die gesamte Furbo-Produkt- und Serviceerfahrung und wird deshalb als brand-wide geführt; die Gesamtwertung darf nicht als produktspezifisches Mini-360-Rating verwendet werden."
+priceState: "available"
+priceUpdated: "2026-08-21T11:27:03.432Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-08-21T11:27:03.432Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 ---
 
 ## Einordnung ohne eigenen Produkttest

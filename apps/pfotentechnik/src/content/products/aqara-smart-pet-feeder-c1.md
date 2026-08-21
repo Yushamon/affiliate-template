@@ -59,11 +59,11 @@ images:
     - src: ../../assets/images/products/aqara-smart-pet-feeder-c1/gallery-3.webp
       alt: Aqara Smart Pet Feeder C1 – weitere Produktansicht
 price:
-  current: 89.98
+  current: 85.45
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 9 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-08-17T14:41:12.531Z"
+  checkedAt: "2026-08-21T11:26:39.973Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -78,12 +78,12 @@ rating: 4.4
 score: 88
 
 priceState: "available"
-priceUpdated: "2026-08-17T14:41:12.531Z"
+priceUpdated: "2026-08-21T11:26:39.973Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-17T14:41:12.531Z"
+availabilityUpdated: "2026-08-21T11:26:39.973Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
