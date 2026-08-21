@@ -28,10 +28,10 @@ images:
     - { src: "../../assets/images/products/furbo-360-katzenkamera/gallery-2.webp", alt: "Geplanter Bildslot: Feder-Spielzeug und Katzeninteraktion der Furbo 360° Katzenkamera; aktuell Platzhalter" }
     - { src: "../../assets/images/products/furbo-360-katzenkamera/gallery-3.webp", alt: "Geplanter Bildslot: Furbo 360° Katzenkamera in einer Nutzungssituation mit Katze; aktuell Platzhalter" }
 price:
-  current: 49
+  current: 179
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-21T11:24:54.276Z"
+  checkedAt: "2026-08-21T11:39:06.312Z"
   source:
     id: "manual"
     label: "Furbo EU"
@@ -93,14 +93,13 @@ affiliate:
   url: "https://amzn.to/4ydM5Kr"
   rel: "sponsored nofollow noopener"
   target: "_blank"
-
 priceState: "available"
-priceUpdated: "2026-08-21T11:24:54.276Z"
+priceUpdated: "2026-08-21T11:39:06.312Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Am 21.08.2026 im europäischen Furbo-Shop als eigenes Katzenmodell bestellbar; Angebot und Tarifwahl sind dynamisch."
-availabilityUpdated: "2026-08-21T11:24:54.276Z"
+availabilityUpdated: "2026-08-21T11:39:06.312Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

@@ -37,14 +37,14 @@ images:
     - src: "../../assets/images/products/furbo-mini-360/gallery-3.webp"
       alt: "Furbo Mini 360 – Produktansicht 3"
 price:
-  current: 49
+  current: 98
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-21T11:27:03.432Z"
+  checkedAt: "2026-08-21T11:38:35.720Z"
   source:
-    id: "amazon.de"
+    id: "manual"
     label: "amazon.de"
-    type: "merchant"
+    type: "manual"
 rating: 3.7
 ratings: { interaktion: 4.3, transparenz: 3.0, raumabdeckung: 3.8, alltag: 3.7 }
 editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-15", note: "Datencheck anhand offizieller EU-Produktseite und Kurzanleitung; kein eigener Produkttest." }
@@ -76,10 +76,9 @@ evidenceSources:
 affiliate:
   provider: "amzn-to"
   label: "Preis und Verfügbarkeit prüfen"
-  url: "https://amzn.to/4cNekqL"
+  url: "https://amzn.to/4gHcrhI"
   rel: "sponsored nofollow noopener"
   target: "_blank"
-
 externalEvidence:
   professionalReviews:
     - publisher: "The Independent"
@@ -122,12 +121,12 @@ externalEvidence:
     editorialAssessment: "Der unabhängige Hands-on-Test bewertet die Mini 360 technisch klar positiv, während die markenweite Trustpilot-Basis wesentlich kritischer ausfällt. Die stärkste Übereinstimmung besteht beim Abo-Thema: Viele der interessanten Aufzeichnungs- und KI-Funktionen sind an laufende Kosten gebunden."
   note: "The Independent testete ausdrücklich die Furbo Mini 360. Trustpilot umfasst die gesamte Furbo-Produkt- und Serviceerfahrung und wird deshalb als brand-wide geführt; die Gesamtwertung darf nicht als produktspezifisches Mini-360-Rating verwendet werden."
 priceState: "available"
-priceUpdated: "2026-08-21T11:27:03.432Z"
+priceUpdated: "2026-08-21T11:38:35.720Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-21T11:27:03.432Z"
+availabilityUpdated: "2026-08-21T11:38:35.720Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
