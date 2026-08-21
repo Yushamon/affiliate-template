@@ -3,9 +3,9 @@ title: "Haustierkameras im Vergleich"
 slug: "beste-haustierkameras"
 type: "comparison"
 layout: "comparison"
-description: "Fünf Haustierkamera-Klassen nach lokaler Speicherung, Cloud, Pflichtabo, Tiererkennung, Interaktion und Bildfunktionen vergleichen."
+description: "Sechs Haustierkamera-Klassen nach lokaler Speicherung, Cloud, Abo, Tiererkennung, katzenspezifischer Interaktion und Tracking vergleichen."
 publishedAt: "2026-08-06"
-updatedAt: "2026-08-16"
+updatedAt: "2026-08-21"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
@@ -26,7 +26,7 @@ hub:
   order: 36
 seo:
   title: "Haustierkameras 2026: Typ, Cloud & Abo vergleichen"
-  description: "Fünf Haustierkameras von Pet-Cloud bis lokaler Indoor-Kamera nach Speicher, Abo, Tiererkennung und Raumabdeckung vergleichen."
+  description: "Sechs Haustierkameras von Katzeninteraktion bis lokaler Indoor-Kamera nach Speicher, Abo, Tracking und Raumabdeckung vergleichen."
   canonical: "/vergleiche/beste-haustierkameras/"
   sitemap: true
   priority: 0.85
@@ -40,6 +40,32 @@ heroImage:
 tableTitle: "Fünf Speicher- und Kameraklassen direkt vergleichen"
 cardsTitle: "Welche Klasse löst die Aufgabe?"
 items:
+  - slug: "furbo-360-katzenkamera"
+    type: "product"
+    label: "Furbo 360° Katzenkamera"
+    recommendation: "Katzenspezifische Interaktion mit Feder-Spielzeug und Leckerliwurf"
+    values:
+      klasse: "Katzenspezifische Interaktionskamera"
+      speicher: "Videoverlauf über Furbo Nanny; lokal nicht belegt"
+      abo: "Basisfunktionen ohne Nanny; Diary, Verlauf und weitere Alerts tarifabhängig"
+      interaktion: "Audio, Leckerliwurf und Feder-Spielzeug"
+      abdeckung: "360°-Rotation im offenen Raum"
+      bild: "1080p FHD; 4× Digitalzoom; Farbnachtsicht"
+      lokale_speicherung: "Nein belegt"
+      cloud_erforderlich: "Für Videoverlauf und Nanny-Funktionen"
+      cloud_optional: "Ja für Basis-Livenutzung"
+      pflichtabo: "Nein für belegte Basisfunktionen"
+      bezahlfunktionen: "Kitty Diary, Videoverlauf, zusätzliche Smart Alerts"
+      kostenlose_grundfunktionen: "Livebild, Audio, Tracking, Treat Toss, Meowing Alert"
+      microsd: "Nicht ausgewiesen"
+      aufloesung: "1080p FHD"
+      schwenk_neige: "360°-Rotation"
+      tracking: "Automatische Rotation und Digitalzoom"
+      nachtsicht: "Farbe"
+      audio: "Zwei-Wege-Audio"
+      tiererkennung: "Katzentracking; keine Individualerkennung belegt"
+      herstellerdienst: "App; Nanny für Verlauf, Diary und Zusatzalerts"
+      katzeninteraktion: "Feder-Spielzeug, Leckerliwurf, Meowing Alert"
   - slug: "petlibro-scout-smart-camera"
     type: "product"
     label: "PETLIBRO Scout"
@@ -244,6 +270,12 @@ criteria:
     label: "Herstellerdienst-Abhängigkeit"
     format: "text"
     fallback: "Nicht ausgewiesen"
+  - key: "katzeninteraktion"
+    label: "Katzenspezifische Interaktion"
+    description: "Spielzeug, Leckerli und Miau-Erkennung ohne Verhaltens- oder Diagnoseversprechen."
+    weight: 1.2
+    format: "text"
+    fallback: "Keine katzenspezifische Interaktion"
 recommendation:
   title: "Speicherweg vor Auflösung entscheiden"
   text: "Reolink und PetTec ergänzen lokale Speicherung ohne Pflichtabo, Scout steht für Cloud-only-Aufzeichnung, Furbo für Pet-Interaktion und ROLA Mini für mobile Perspektiven. Reolink bleibt eine klassische Indoor-Kamera."
@@ -270,9 +302,15 @@ decisionJourney:
     - "/produkt/enabot-rola-mini/"
     - "/produkt/pettec-cam-360/"
     - "/produkt/reolink-e1-zoom/"
+    - "/produkt/furbo-360-katzenkamera/"
   fallback:
     - "/haustierkameras/"
 evidenceSources:
+  - source: "Furbo EU Kameravergleich"
+    url: "https://furbo.com/eu-en/pages/comparison"
+    accessedAt: "2026-08-21"
+    assertion: "Katzenmodell, Video, Tracking, Interaktion, Nanny-Abhängigkeiten, Lieferumfang und Garantie sind Herstellerangaben."
+    fields: ["items", "criteria", "faq"]
   - source: "PETLIBRO Deutschland"
     url: "https://de.petlibro.com/products/scout-smart-camera"
     accessedAt: "2026-08-15"
@@ -317,6 +355,10 @@ Der Vergleich besitzt die konkrete Evaluationsintention. Grundlagen zu Aufstellu
 5. Erst dann Aufloesung, Nachtmodus und Komfortfunktionen vergleichen.
 
 Eine generische Indoor-Sicherheitskamera wird nicht automatisch zur Haustierkamera. In dieser Auswahl stehen drei Pet-spezifische Aufgaben im Mittelpunkt.
+
+## Katzeninteraktion ist eine eigene Kaufrolle
+
+Die [Furbo 360° Katzenkamera](/produkt/furbo-360-katzenkamera/) ergänzt Feder-Spielzeug, Leckerliwurf und Meowing Alert. Das unterscheidet sie von der Hundekamera und vom kompakteren Mini 360. Meowing Alert erkennt ein Geräuschsignal, aber keine Ursache oder individuelle Katze; Kitty Diary und Videoverlauf benötigen Furbo Nanny.
 <!-- pt:camera-2026:end -->
 
 <!-- pt:pettec-local-storage:start -->

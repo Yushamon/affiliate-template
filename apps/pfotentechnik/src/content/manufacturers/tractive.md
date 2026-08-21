@@ -9,7 +9,7 @@ name: "Tractive"
 recommendation: "Tractive ist die breiteste Alltagslösung im GPS-Cluster: katzen- und hundespezifische Hardware, Mobilfunkortung, Sicherheitszonen sowie Aktivitäts- und Gesundheits-Trends in einer App."
 summary: "Die Stärke liegt im abgestimmten System aus Tracker, Multi-Netz-Mobilfunk und App. Dem stehen ein verpflichtendes Abo pro Gerät, Cloud-Abhängigkeit und modellabhängige Passform gegenüber."
 publishedAt: "2026-07-20"
-updatedAt: "2026-07-20"
+updatedAt: "2026-08-21"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion für smarte Haustiertechnik" }
 tags: ["hersteller", "tractive", "gps-tracker"]
 hub: { sections: ["hersteller", "gps-tracker"], title: "Tractive", description: "GPS-Tracker, App, Abo und Zubehör von Tractive.", icon: "📍", order: 40, featured: true }
@@ -41,6 +41,7 @@ series:
 experience: { summary: "Redaktionelle Herstellerbewertung anhand offizieller Produkt-, Support-, Garantie- und Datenschutzinformationen.", positives: ["klare technische Tabellen", "großes Zubehörangebot", "modellbezogene Tierempfehlungen"], criticism: ["Abo bindet jedes Gerät an den Dienst", "Hersteller-Maximalwerte sind betriebsabhängig"], support: "Tractive stellt ein deutschsprachiges Help Center und Kontaktwege bereit.", methodology: "Keine Übernahme externer Bewertungsportale." }
 alternativeManufacturerSlugs: ["weenect", "paj-gps", "garmin"]
 sources:
+  - { label: "Tractive Kratzverhalten", url: "https://help.tractive.com/hc/de/articles/34400151311506-Was-ist-die-%C3%9Cberwachung-des-Kratzverhaltens" }
   - { label: "Tractive Hundetracker", url: "https://tractive.com/de/pd/gps-tracker-dog?shopCountry=DE" }
   - { label: "Tractive Katzentracker", url: "https://tractive.com/de/pd/gps-tracker-cat" }
   - { label: "Tractive Garantie", url: "https://help.tractive.com/hc/de/articles/360000560400-Tractive-Retoure-und-Garantierichtlinien" }
@@ -55,6 +56,8 @@ faq:
 ---
 
 Tractive eignet sich besonders für Haushalte, die eine fertige Smartphone-Lösung statt eines separaten Funkempfängers suchen. Der Einstieg in die Auswahl führt über [GPS-Tracker für Hunde und Katzen](/gps-tracker/); konkrete Modelle stehen im [Hundevergleich](/vergleiche/beste-gps-tracker-fuer-hunde/) und [Katzenvergleich](/vergleiche/beste-gps-tracker-fuer-katzen/).
+
+DOG 6 und DOG 6 XL erfassen zusätzlich Kratzdauer und Sieben-Tage-Trends. Die Bewegungserkennung kann fremdes Kratzen mitzählen oder sehr leichte beziehungsweise schnelle Bewegungen übersehen; aktuelle Gesundheitsdaten synchronisieren in Bluetooth-Nähe. Ältere DOG-Modelle erhalten diese Funktion nicht automatisch. Das Signal ist keine Hautdiagnose.
 
 <!-- pt:content-discovery:manufacturer-products:start -->
 ## Weitere Produkte von Tractive

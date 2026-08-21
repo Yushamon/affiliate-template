@@ -7,9 +7,9 @@ description: "Furbo im Überblick: spezialisierte Haustierkameras, Interaktion, 
 key: "furbo"
 name: "Furbo"
 recommendation: "Furbo ist vor allem relevant, wenn eine Haustierkamera bewusst Zwei-Wege-Audio und Leckerliausgabe kombinieren soll."
-summary: "Im Startcluster ist Furbo mit der 360° Hundekamera als feste Interaktionskamera vertreten."
+summary: "Furbo ist mit eigenständigen 360°-Kameras für Hunde und Katzen sowie dem kompakten Mini vertreten."
 publishedAt: "2026-08-06"
-updatedAt: "2026-08-15"
+updatedAt: "2026-08-21"
 tags:
   - "hersteller"
   - "furbo"
@@ -50,6 +50,7 @@ profile:
 productSlugs:
   - "furbo-360-hundekamera"
   - "furbo-mini-360"
+  - "furbo-360-katzenkamera"
 featuredProductSlugs:
   - "furbo-360-hundekamera"
 series: []
@@ -57,6 +58,10 @@ alternativeManufacturerSlugs:
   - "petlibro"
   - "enabot"
 sources:
+  - label: "Furbo 360° Katzenkamera"
+    url: "https://www.furbo.com/eu-en/products/furbo-360-cat-camera"
+  - label: "Furbo Kameravergleich"
+    url: "https://furbo.com/eu-en/pages/comparison"
   - label: "Furbo 360° Hundekamera"
     url: "https://furbo.com/eu-de/products/furbo-dog-cam-360"
   - label: "Furbo Mini 360"
@@ -75,4 +80,5 @@ Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen
 
 - [Furbo 360° Hundekamera](/produkt/furbo-360-hundekamera/)
 - [Furbo Mini 360](/produkt/furbo-mini-360/)
+- [Furbo 360° Katzenkamera](/produkt/furbo-360-katzenkamera/)
 <!-- pt:content-discovery:manufacturer-products:end -->

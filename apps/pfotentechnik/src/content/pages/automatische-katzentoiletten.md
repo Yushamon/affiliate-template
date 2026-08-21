@@ -162,7 +162,7 @@ Herstellerintervalle wie „bis zu 7 oder 17 Tage“ sind Maximalangaben und ver
 
 ## Nächste Entscheidung
 
-Der [Vergleich automatischer Katzentoiletten](/vergleiche/beste-automatische-katzentoiletten/) ordnet neun unterschiedliche Kaufrollen ein: offene und teiloffene Systeme, niedrige PETKIT-Einstiege, geschlossene Anti-Tracking-Kabinen sowie Whisker- und PETKIT-Kameraplattformen.
+Der [Vergleich automatischer Katzentoiletten](/vergleiche/beste-automatische-katzentoiletten/) ordnet zehn unterschiedliche Kaufrollen ein: offene und teiloffene Systeme, niedrige PETKIT-Einstiege, geschlossene Anti-Tracking-Kabinen sowie Whisker- und PETKIT-Kameraplattformen.
 
 Zur Eingewöhnung das alte Klo zunächst behalten, das neue Gerät ausgeschaltet anbieten und automatische Zyklen erst nach freiwilliger Nutzung unter Beobachtung aktivieren.
 
@@ -177,6 +177,8 @@ Elektronische Sensorik reagiert auf erkannte Zustände; mechanische Anti-Pinch-K
 
 [PETKIT PuraMax 2](/produkt/petkit-puramax-2/) bildet die PETKIT-Trommel ohne Kamera ab. [Litter-Robot 4](/produkt/litter-robot-4/) ist die etablierte Whisker-Plattform ohne Dualkamera, während [Litter-Robot 5 Pro](/produkt/litter-robot-5-pro/) die Kamera- und WasteID-Rolle besitzt.
 
+Der [PETKIT PUROBOT CRYSTAL DUO](/produkt/petkit-purobot-crystal-duo/) kombiniert offene Schale und 18-cm-Einstieg mit einem Zwei-Wege-Rechen. Seine proprietäre Kristallstreu, Einwegschalen und optionalen Care+-Videofunktionen machen Verbrauchskosten und Lieferbarkeit zum Ausschlusskriterium.
+
 Monitoring zeigt Nutzungstrends, keine Diagnosen. Bei Beuteln, Filtern, Deodorizern und proprietären Linern zählen Verfügbarkeit und Drei-Jahres-Kosten zur Entscheidung.
 <!-- pt:litter-delta-33-3:end -->
 
@@ -188,5 +190,6 @@ Diese Modelle gehören ebenfalls zu diesem Themenbereich. In den redaktionellen 
 - [Devoko 90L Automatisches Katzenklo](/produkt/devoko-90l-automatisches-katzenklo/)
 - [Neakasa M1 Plus](/produkt/neakasa-m1-plus/)
 - [PETKIT PUROBOT MAX PRO 2](/produkt/petkit-purobot-max-pro-2/)
+- [PETKIT PUROBOT CRYSTAL DUO](/produkt/petkit-purobot-crystal-duo/)
 - [PETLIBRO Luma Smart Self-Cleaning Litter Box](/produkt/petlibro-luma-smart-litter-box/)
 <!-- pt:content-discovery:category-products:end -->

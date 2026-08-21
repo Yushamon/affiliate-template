@@ -562,6 +562,8 @@ Der DOG 6 erfasst mehr als Positionen. Zu den dokumentierten Funktionen gehören
 
 Die App kann bei längerfristigen Abweichungen Gesundheitswarnungen ausgeben. Solche Daten können helfen, Veränderungen früher zu bemerken. Sie sind aber nicht mit einer klinischen Untersuchung oder einem medizinischen Messgerät gleichzusetzen.
 
+Beim Kratzverhalten erkennt der Bewegungssensor einzelne Kratzbewegungen und schätzt deren Dauer. Die App zeigt Tagesdauer, den Status „normal“ oder „erhöht“ und einen Sieben-Tage-Trend; anders als andere Gesundheitswerte ist keine Baseline-Phase nötig. Neuere Gesundheitsdaten werden in Bluetooth-Nähe mit dem Smartphone synchronisiert. Fremdes Kratzen am Hund kann fälschlich zählen, sehr leichte oder schnelle Bewegungen können fehlen.
+
 Ruhe-Herzfrequenz, Ruhe-Atemfrequenz und Bellverhalten benötigen laut Tractive mindestens sieben Nutzungstage für eine persönliche Baseline. Aktivität, Schlaf und Kratzverhalten können bereits ab dem ersten Tag ausgewertet werden. Der DOG 6 ist kein Medizinprodukt; die App erkennt keine Krankheit und stellt keine Diagnose.
 
 Ein auffälliger Trend sollte Anlass sein, den Hund genauer zu beobachten und bei Bedarf tierärztlich untersuchen zu lassen. Ein unauffälliger Trackerwert beweist umgekehrt nicht, dass der Hund gesund ist.
@@ -639,3 +641,4 @@ Der wichtigste Prüfpunkt vor dem Kauf ist nicht die Zahl „14 Tage“, sondern
 - [Tractive: Funktionen des Premium-Abos](https://help.tractive.com/hc/de/articles/360000222729-Welche-Funktionen-bietet-das-Premium-Abo)
 - [Tractive: App-Kompatibilität](https://help.tractive.com/hc/de/articles/360002648000-Ist-die-Tractive-GPS-App-mit-meinem-Smartphone-kompatibel)
 - [Tractive: Gesundheitsmerkmale](https://help.tractive.com/hc/de/articles/360011024119-Welche-Gesundheitsmerkmale-werden-von-Tractive-erfasst)
+- [Tractive: Überwachung des Kratzverhaltens](https://help.tractive.com/hc/de/articles/34400151311506-Was-ist-die-%C3%9Cberwachung-des-Kratzverhaltens)

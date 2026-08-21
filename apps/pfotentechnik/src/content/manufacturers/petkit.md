@@ -9,7 +9,7 @@ name: "PETKIT"
 recommendation: "PETKIT gehört weltweit zu den bekanntesten Herstellern smarter Haustiertechnik. Das Unternehmen entwickelt vernetzte Futterautomaten, Trinkbrunnen, selbstreinigende Katzentoiletten und weiteres intelligentes Zubehör mit einem klaren Fokus auf Design, Automatisierung und App-Steuerung."
 summary: "PETKIT wird von vielen Käufern für Design, Verarbeitung und Innovationskraft gelobt. Besonders positiv werden die App sowie das Zusammenspiel verschiedener PETKIT-Produkte bewertet. Kritik betrifft hauptsächlich den höheren Preis und gelegentliche Software- oder Cloud-Themen."
 publishedAt: "2026-07-12"
-updatedAt: "2026-08-16"
+updatedAt: "2026-08-21"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion für smarte Haustiertechnik"
@@ -92,6 +92,7 @@ productSlugs:
   - "petkit-purobot-max-pro-2"
   - "petkit-purobot-max-3"
   - "petkit-puramax-2"
+  - "petkit-purobot-crystal-duo"
 profile:
   company: "PETKIT entwickelt ein breites Portfolio vernetzter Haustiergeräte: Futterautomaten, Trinkbrunnen, Katzentoiletten und Zubehör. Die Produkte sind überwiegend auf ein gemeinsames digitales Ökosystem ausgerichtet."
   appEcosystem: "Die PETKIT-App bündelt Fütterung, Wasseraufnahme und weitere kompatible Geräte. Einzelne Bluetooth-Produkte benötigen für Fernzugriff ein kompatibles PETKIT-Hauptgerät; Funktionen bleiben deshalb modellabhängig."
@@ -147,6 +148,10 @@ alternativeManufacturerSlugs:
   - "surefeed"
   - "cat-mate"
 sources:
+  - label: "PETKIT CES 2026 · YUMSHARE DAILY FEAST"
+    url: "https://www.petkit-eu.com/de/blogs/blog/ces-2026-petkit-showcases-future-of-pet-care-with-eversweet-ultra-and-more"
+  - label: "PETKIT PUROBOT CRYSTAL DUO EU"
+    url: "https://www.petkit-eu.com/de/products/purobot-crystal-duo-automatic-cat-litter-box-with-camera"
   - label: "PETKIT Garantiebedingungen"
     url: "https://www.petkit.com/pages/warranty-policy"
   - label: "PETKIT Zubehör und Ersatzteile"
@@ -180,7 +185,13 @@ Der [PETKIT YumShare Solo 2](/produkt/petkit-yumshare-solo-2/) kombiniert Trocke
 ## Automatische Katzentoiletten
 
 Der [PUROBOT MAX 3](/produkt/petkit-purobot-max-3/) ergänzt den Bestand als eigenständiges Modell mit 20,4-cm-Einstieg und mechanischer Anti-Pinch-Struktur. Er wird nicht mit den Kamera-Funktionen des MAX PRO 2 vermischt.
+
+Der [PUROBOT CRYSTAL DUO](/produkt/petkit-purobot-crystal-duo/) ist die offene Rechen-/Tray-Alternative mit 18-cm-Einstieg. Anders als die Trommelmodelle benötigt er zwingend PETKIT Crystal Litter Sets und Einwegschalen; Kamera-, pH- und Yowling-Hinweise sind Monitoring und keine Diagnose.
 <!-- pt:max3-product:end -->
+
+## Angekündigt: YUMSHARE DAILY FEAST
+
+PETKIT beschreibt den YUMSHARE DAILY FEAST als vollautomatischen Nassfutterautomaten mit versiegelten Packs, automatischem Öffnen und Portionieren, Rückführung der Näpfe, Kamera, Mehrkatzenerkennung und UVC-bezogenen Funktionen für bis zu sieben Tage. Am 21.08.2026 fehlt weiterhin eine offizielle EU-/Deutschland-Produktseite mit Preis, kompatiblen Packs, Pack-Verfügbarkeit und belastbaren Cloud-/Abo-Bedingungen. Deshalb wird das Modell hier nur als **Ankündigung** geführt: keine kaufbare Produktseite, kein Affiliate-Link und keine Aufnahme in den Nassfutterautomaten-Vergleich.
 
 <!-- pt:content-discovery:manufacturer-products:start -->
 ## Weitere Produkte von PETKIT
@@ -197,4 +208,5 @@ Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen
 - [PETKIT Fresh Element Solo](/produkt/petkit-fresh-element-solo/)
 - [PETKIT PuraMax 2](/produkt/petkit-puramax-2/)
 - [PETKIT PUROBOT MAX PRO 2](/produkt/petkit-purobot-max-pro-2/)
+- [PETKIT PUROBOT CRYSTAL DUO](/produkt/petkit-purobot-crystal-duo/)
 <!-- pt:content-discovery:manufacturer-products:end -->

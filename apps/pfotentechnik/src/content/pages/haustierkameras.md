@@ -245,6 +245,8 @@ Lokale Speicherung kann laufende Kosten und die Abhängigkeit von einer Video-Cl
 Die [PetTec Cam 360](/produkt/pettec-cam-360/) bietet laut Hersteller microSD-Aufzeichnung und Grundfunktionen ohne Pflichtabo, daneben aber optionale Cloud-Dienste. Datenschutz hängt nicht nur vom Speicherort ab, sondern auch von Konto, App, Mikrofon, Fernzugriff, Updates und Konfiguration. Die Kaufrollen stehen im [Haustierkamera-Vergleich](/vergleiche/beste-haustierkameras/).
 
 Die [Reolink E1 Zoom 4K](/produkt/reolink-e1-zoom/) ergänzt eine klassische Indoor-Sicherheitskamera mit lokaler Tiererkennung, microSD und weiteren lokalen Speicherwegen. Sie wird bewusst nicht wie Furbo oder eine Cloud-zentrierte Pet-Cam behandelt.
+
+Die [Furbo 360° Katzenkamera](/produkt/furbo-360-katzenkamera/) bildet eine eigene Katzenrolle mit Feder-Spielzeug, Leckerliwurf und Meowing Alert. Videoverlauf und Kitty Diary sind Nanny-Funktionen; eine individuelle Mehrkatzenerkennung ist nicht belegt.
 <!-- pt:pettec-storage-choice:end -->
 
 <!-- pt:content-discovery:category-products:start -->
@@ -254,4 +256,5 @@ Diese Modelle gehören ebenfalls zu diesem Themenbereich. In den redaktionellen 
 
 - [Enabot EBO Air 2](/produkt/enabot-ebo-air-2/)
 - [Furbo 360° Hundekamera](/produkt/furbo-360-hundekamera/)
+- [Furbo 360° Katzenkamera](/produkt/furbo-360-katzenkamera/)
 <!-- pt:content-discovery:category-products:end -->

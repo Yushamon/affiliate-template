@@ -560,6 +560,8 @@ Der DOG 6 XL erfasst neben der Position unter anderem:
 
 Die App kann bei länger anhaltenden Abweichungen Gesundheitswarnungen ausgeben. Das kann helfen, Veränderungen früher zu bemerken.
 
+Beim Kratzverhalten erkennt der Bewegungssensor einzelne Kratzbewegungen und schätzt deren Dauer. Die App zeigt Tagesdauer, „normal“ oder „erhöht“ und einen Sieben-Tage-Trend ohne vorherige Baseline-Phase. Neue Gesundheitsdaten werden in Bluetooth-Nähe mit dem Smartphone synchronisiert. Fremdes Kratzen am Hund kann fälschlich zählen, sehr leichte oder schnelle Bewegungen können fehlen.
+
 Die Daten sind keine klinische Messung. Sie zeigen Trends, keine Diagnose. Auffällige Werte sollten mit dem tatsächlichen Verhalten des Hundes abgeglichen und bei Bedarf tierärztlich untersucht werden.
 
 Für Ruhe-Herzfrequenz, Ruhe-Atemfrequenz und Bellverhalten nennt Tractive mindestens sieben Nutzungstage bis zur persönlichen Baseline. Aktivität, Schlaf und Kratzverhalten stehen früher zur Verfügung. Der DOG 6 XL ist kein Medizinprodukt und darf nicht zur Krankheitserkennung verwendet werden.
@@ -638,3 +640,4 @@ Vor dem Kauf sollten vier Fragen geklärt sein:
 - [Tractive: Funktionen des Premium-Abos](https://help.tractive.com/hc/de/articles/360000222729-Welche-Funktionen-bietet-das-Premium-Abo)
 - [Tractive: App-Kompatibilität](https://help.tractive.com/hc/de/articles/360002648000-Ist-die-Tractive-GPS-App-mit-meinem-Smartphone-kompatibel)
 - [Tractive: Gesundheitsmerkmale](https://help.tractive.com/hc/de/articles/360011024119-Welche-Gesundheitsmerkmale-werden-von-Tractive-erfasst)
+- [Tractive: Überwachung des Kratzverhaltens](https://help.tractive.com/hc/de/articles/34400151311506-Was-ist-die-%C3%9Cberwachung-des-Kratzverhaltens)

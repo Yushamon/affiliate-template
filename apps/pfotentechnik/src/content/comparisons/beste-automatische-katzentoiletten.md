@@ -3,9 +3,9 @@ title: "Automatische Katzentoiletten im Vergleich"
 slug: "beste-automatische-katzentoiletten"
 type: "comparison"
 layout: "comparison"
-description: "Neun automatische Katzentoiletten nach Bauform, Einstieg, Katzengewicht, Sicherheit, Streu, Wartung, Mehrkatzenlogik und Folgekosten vergleichen."
+description: "Zehn automatische Katzentoiletten nach Bauform, Einstieg, Katzengewicht, Sicherheit, Streu, Verbrauchssystem, Kamera und Folgekosten vergleichen."
 publishedAt: "2026-08-06"
-updatedAt: "2026-08-15"
+updatedAt: "2026-08-21"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
@@ -20,13 +20,13 @@ hub:
     - "vergleiche"
     - "automatische-katzentoiletten"
   title: "Automatische Katzentoiletten im Vergleich"
-  description: "Neun eigenständige Kaufrollen mit Sicherheits- und Ausschlusslogik statt Gesamtrangliste."
+  description: "Zehn eigenständige Kaufrollen mit Sicherheits- und Ausschlusslogik statt Gesamtrangliste."
   icon: "🐈"
   featured: true
   order: 38
 seo:
   title: "Automatische Katzentoiletten 2026: Sicherheit & Passform"
-  description: "Neun automatische Katzentoiletten von offen bis geschlossen nach Einstieg, Sicherheit, Streu, Monitoring, Wartung und Folgekosten vergleichen."
+  description: "Zehn automatische Katzentoiletten von offen bis geschlossen nach Einstieg, Sicherheit, Verbrauchssystem, Monitoring und Folgekosten vergleichen."
   canonical: "/vergleiche/beste-automatische-katzentoiletten/"
   sitemap: true
   priority: 0.9
@@ -40,6 +40,32 @@ heroImage:
 tableTitle: "Passform, Sicherheit und Betrieb direkt vergleichen"
 cardsTitle: "Welches System passt zur Katze?"
 items:
+  - slug: "petkit-purobot-crystal-duo"
+    type: "product"
+    label: "PETKIT PUROBOT CRYSTAL DUO"
+    recommendation: "Offener 18-cm-Einstieg mit Kamera und proprietärem Tray-System"
+    values:
+      bauform: "Offene Schale mit Zwei-Wege-Rechen"
+      innenraum: "Offen; kein Trommelinnenraum"
+      einstieg: "18 cm"
+      katzenprofil: "ab 6 Monaten und >1,5 kg; kein oberes Limit ausgewiesen"
+      sicherheit: "Vier Sensoren und Rechenstopp; Herstellerangabe"
+      mehrkatzen: "Keine Gesichtserkennung ausgewiesen"
+      streu: "Nur PETKIT Crystal Litter Set"
+      wartung: "Einwegschale; Wechselintervall nutzungsabhängig"
+      geruch: "Kristallstreu, Seitenfallen und N60"
+      appdaten: "Kamera, Ereignisse, pH-/Yowling-Hinweise; keine Diagnose"
+      folgekosten: "Crystal Litter Set, Einwegschale, N60, optional Care+"
+      platz: "818 × 507 × 334 mm; 5,65 kg"
+      kaufrolle: "Offener niedriger Einstieg mit proprietärem Tray-System"
+      bauform_einstieg: "Offen; 18 cm"
+      elektronische_sicherheit: "Vier Sensoren; Herstellerangabe"
+      mechanische_sicherheit: "Rechen statt rotierender Trommel"
+      tracking: "Kein separater Anti-Tracking-Weg"
+      kamera: "Fester Schalenblick; Vollvideo über Care+"
+      verbrauchssystem: "Proprietäre Kristallstreu plus Einwegschale"
+      video_cloud: "Cloud; Vollwiedergabe über Care+"
+      mindestalter: "6 Monate"
   - slug: "neakasa-m1-lite"
     type: "product"
     label: "Neakasa M1 Plus Lite"
@@ -332,6 +358,24 @@ criteria:
     label: "Kamera / Monitoring"
     format: "text"
     fallback: "Nicht ausgewiesen"
+  - key: "verbrauchssystem"
+    label: "Verbrauchsmaterial-System"
+    description: "Freie Streuwahl oder proprietäre Streu-, Tray- und Beutelsysteme."
+    weight: 1.6
+    format: "text"
+    fallback: "Modellbezogene Streu und Beutel"
+  - key: "video_cloud"
+    label: "Video / Cloud"
+    description: "Kostenlose Ansicht, Cloudspeicher und tarifabhängige Wiedergabe getrennt."
+    weight: 1.2
+    format: "text"
+    fallback: "Keine Kamera"
+  - key: "mindestalter"
+    label: "Mindestalter"
+    description: "Herstellergrenze zusätzlich zum Mindestgewicht."
+    weight: 1.5
+    format: "text"
+    fallback: "Herstelleranleitung prüfen"
 recommendation:
   title: "Ausschlusskriterien vor Smart-Funktionen"
   text: "Neakasa priorisiert offene Zugänglichkeit, PuraMax 2 und MAX 3 den 20-cm-Einstieg, PetSnowy Streurückhaltung, Litter-Robot 4 die Whisker-Referenzplattform und LR5 Pro beziehungsweise MAX PRO 2 Kamera-Monitoring. Mehr Funktionen ergeben keinen automatischen Gesamtsieg."
@@ -362,9 +406,15 @@ decisionJourney:
     - "/produkt/petkit-puramax-2/"
     - "/produkt/litter-robot-4/"
     - "/produkt/litter-robot-5-pro/"
+    - "/produkt/petkit-purobot-crystal-duo/"
   fallback:
     - "/automatische-katzentoiletten/"
 evidenceSources:
+  - source: "PETKIT EU · PUROBOT CRYSTAL DUO"
+    url: "https://www.petkit-eu.com/de/products/purobot-crystal-duo-automatic-cat-litter-box-with-camera"
+    accessedAt: "2026-08-21"
+    assertion: "Offene Bauform, Einstieg, Crystal-Litter-System, Kamera, WLAN und EU-Verfügbarkeit sind Herstellerangaben."
+    fields: ["items", "criteria", "faq"]
   - source: "PETLIBRO Deutschland"
     url: "https://de.petlibro.com/products/luma-intelligente-selbstreinigende-katzentoilette-exclusive"
     accessedAt: "2026-08-15"
@@ -394,7 +444,7 @@ Dieser Vergleich besitzt die konkrete Modellentscheidung. Das Prüfprinzip laute
 
 Kitten-Modus bedeutet bei Luma, PUROBOT und M1 Lite nicht, dass eine zu leichte Katze mit aktiver Automatik reinigen darf. Allgemein gilt: Betritt oder nähert sich eine Katze während eines Zyklus, muss das Gerät nach Herstellerlogik stoppen. Bei Sensorfehlern, unebenem Stand, ungewöhnlichem Geräusch oder Stromproblem bleibt die Automatik aus, bis Ursache und Anleitung geklärt sind.
 
-## Neun unterschiedliche Kaufrollen
+## Zehn unterschiedliche Kaufrollen
 
 - [Neakasa M1 Lite](/produkt/neakasa-m1-lite/) hält Sicht- und Fluchtweg offen, verlangt aber einen hohen Einstieg.
 - [Devoko 90L](/produkt/devoko-90l-automatisches-katzenklo/) verbindet niedrigeren Einstieg und großen dokumentierten Innenraum mit schwächerer Datenkonsistenz.
@@ -405,6 +455,7 @@ Kitten-Modus bedeutet bei Luma, PUROBOT und M1 Lite nicht, dass eine zu leichte 
 - [PETKIT PuraMax 2](/produkt/petkit-puramax-2/) bildet die PETKIT-Trommelplattform ohne Kamera ab.
 - [Litter-Robot 4](/produkt/litter-robot-4/) ist die etablierte Whisker-Plattform ohne Dualkamera.
 - [Litter-Robot 5 Pro](/produkt/litter-robot-5-pro/) ergänzt Dualkamera und WasteID als Premiumrolle.
+- [PETKIT PUROBOT CRYSTAL DUO](/produkt/petkit-purobot-crystal-duo/) kombiniert den niedrigsten PETKIT-Einstieg mit offenem Rechen-/Tray-System, bindet den Haushalt aber an Kristallstreu und Einwegschalen.
 
 M1 Plus bleibt als Produktseite erhalten, ist gegenüber M1 Lite aber vor allem eine Lieferumfangsvariante und keine zusätzliche Systemrolle. Eine zweite Vergleichszeile würde keine eigenständige Entscheidung hinzufügen.
 
@@ -417,6 +468,10 @@ M1 Plus bleibt als Produktseite erhalten, ist gegenüber M1 Lite aber vor allem 
 Monitoring zeigt Nutzung, Gewicht oder Bilddaten – keine Diagnose. Beim PUROBOT läuft der voreingestellte Grundbetrieb ohne Netz weiter, während App-Daten ausbleiben. Für Luma sind Aufzeichnung und AI an Cloud und Tarif gebunden. In die Folgekosten gehören Beutel, Filter, Deodorizer, Streu und optionale Dienste; dynamische Preise werden nicht dauerhaft festgeschrieben.
 
 Grundlagen, Gewöhnungsplan und Situationen gegen eine automatische Toilette stehen im [Hub zu automatischen Katzentoiletten](/automatische-katzentoiletten/).
+
+## Offen gegen Trommel entscheiden
+
+Crystal Duo und Neakasa halten Kopf- und Fluchtweg offen. Crystal Duo senkt den Einstieg auf 18 cm, tauscht freie Streuwahl aber gegen ein proprietäres Rechen-/Tray-System. PuraMax 2, MAX 3 und MAX PRO 2 nutzen eine geschlossene Siebtrommel mit klassischerer Klumpstreu. Beim Crystal Duo betrifft Care+ die vollständige Videowiedergabe; pH- und Verhaltenshinweise bleiben nichtmedizinische Trends.
 
 <!-- pt:litter-delta-33-3:start -->
 ## Neun Kaufrollen als Ausschlussmatrix

@@ -1,231 +1,250 @@
 {
   "version": 2,
-  "updatedAt": "2026-08-15T20:36:00Z",
+  "updatedAt": "2026-08-21T12:47:00+02:00",
   "provider": "manual-chatgpt",
   "scope": [
-    "Katzentoiletten",
-    "GPS-Tracker",
-    "Haustierkameras"
+    "Haustierkameras",
+    "Automatische Katzentoiletten",
+    "Futterautomaten",
+    "GPS-Tracker"
   ],
   "items": [
     {
-      "id": "neakasa-m1-lite-plus-lifecycle-refresh",
-      "type": "content-refresh",
-      "title": "Neakasa M1 Lite auf die aktuelle M1 Lite Plus / M1 Plus Lite Generation aktualisieren",
+      "id": "furbo-360-katzenkamera-erganzen",
+      "type": "product",
+      "title": "Furbo 360° Katzenkamera als eigenständiges Katzenkamera-Modell ergänzen",
       "status": "open",
-      "priority": 94,
-      "confidence": 97,
-      "reason": "Die vorhandene Route führt weiterhin den Namen „Neakasa M1 Lite“. Neakasa beschreibt die aktuelle Generation inzwischen ausdrücklich als M1 Plus und M1 Lite Plus und nennt gegenüber den älteren Modellen eine überarbeitete Kerntechnik mit 6-Array-Infrarotsensorik, neuem Abdichtungssystem und verbessertem Leckschutz. Die EU-Produktseite führt das Modell zugleich als M1 Plus Lite. Das ist eine konkrete Lifecycle- und Identitätsänderung, die auf der bestehenden Produktseite korrigiert werden sollte statt eine zweite Produktseite anzulegen.",
+      "priority": 86,
+      "confidence": 94,
+      "reason": "Im Repository sind Furbo 360° Hundekamera und Furbo Mini 360 vorhanden, die eigenständige Furbo 360° Katzenkamera fehlt. Furbo führt sie im europäischen Shop als separates, katzenspezifisches Modell mit 1080p, rotierender 360°-Ansicht, Auto-Tracking, Leckerliwurf, Feder-Spielzeug und eigenen Meowing-/Kitty-Funktionen. Damit ist sie keine Farbvariante und keine Händler-Dublette.",
       "repositoryMatch": {
-        "exists": true,
+        "exists": false,
         "similarRoutes": [
-          "/produkt/neakasa-m1-lite/",
-          "/vergleiche/beste-automatische-katzentoiletten/"
+          "/produkt/furbo-360-hundekamera/",
+          "/produkt/furbo-mini-360/",
+          "/hersteller/furbo/",
+          "/vergleiche/beste-haustierkameras/"
         ]
       },
       "opportunity": {
-        "seo": 78,
-        "ux": 96,
-        "business": 89,
-        "freshness": 100,
-        "effort": "small",
-        "priority": 94,
-        "reason": "Eine bestehende Produktseite kann sonst technische Daten und Sicherheitsmerkmale einer veralteten Generation zeigen. Der Aufwand ist begrenzt, während Produktidentität, Vergleichbarkeit und Vertrauen direkt betroffen sind."
+        "seo": 79,
+        "ux": 91,
+        "business": 87,
+        "freshness": 68,
+        "effort": "medium",
+        "priority": 86,
+        "reason": "Die bestehende Furbo-Abdeckung ist unvollständig. Das Katzenmodell löst eine andere Nutzeraufgabe als die Hundekamera, weil Interaktion, Meowing Alerts und Feder-Spielzeug ausdrücklich auf Katzen ausgerichtet sind. Gleichzeitig kann es den bestehenden Haustierkamera-Vergleich sinnvoll verbreitern, ohne einen neuen Themencluster zu erzeugen."
       },
       "lifecycle": {
-        "state": "updated",
+        "state": "unchanged",
         "affectedComparisons": [
-          "/vergleiche/beste-automatische-katzentoiletten/"
+          "/vergleiche/beste-haustierkameras/"
         ]
       },
       "refreshPlan": {
-        "targetRoute": "/produkt/neakasa-m1-lite/",
-        "changeType": "update-data",
+        "changeType": "expand",
         "missingSections": [
-          "Lifecycle-Hinweis zur Plus-Generation",
-          "aktuelle Sicherheitsarchitektur",
-          "aktuelle Abdichtung und Leckschutz"
+          "Eigenständige Produktseite für die Furbo 360° Katzenkamera",
+          "Klare Abgrenzung zur Furbo 360° Hundekamera und Furbo Mini 360",
+          "Einordnung der kostenlosen und kostenpflichtigen Furbo-Nanny-Funktionen"
         ],
         "sectionsToUpdate": [
-          "Produktname und Modellbezeichnung",
-          "Entscheidungsfakten",
-          "Sicherheit",
-          "Geruchskontrolle",
-          "Reinigung und Wartung",
-          "FAQ",
-          "Quellen"
+          "Furbo-Herstellerseite",
+          "Haustierkamera-Vergleich"
         ],
         "factsToVerify": [
-          "exakte offizielle Modellbezeichnung für den deutschen/EU-Markt: M1 Lite Plus oder M1 Plus Lite",
-          "6-Array-Infrarotsystem statt älterer Sensorangaben",
-          "Katze 1–15 kg",
-          "Einstiegshöhe ca. 35 cm",
-          "11,2-L-Abfallbehälter und 7,17-L-Streukapazität",
-          "neue Bristle-Seal-Abdichtung",
-          "Composite-Sealing-Ring und dickerer Silikonliner",
-          "zulässige Streuarten; Herstellerangaben hierzu innerhalb der aktuellen Neakasa-Seiten auf Konsistenz prüfen"
+          "EU-Lieferumfang und Garantie",
+          "aktuelle Furbo-Nanny-Preise und enthaltene Funktionen",
+          "1080p-Auflösung, 360°-Rotation, 4x Digitalzoom",
+          "Leckerli-Kapazität und Feder-Spielzeug",
+          "Meowing Alert, Kitty Diary und weitere abonnementspezifische Funktionen"
         ],
         "visuals": [
-          "vorhandene Produktbilder gegen die aktuelle Plus-Generation prüfen und alte Produktidentität nicht weiterverwenden",
-          "Detailmotiv der aktuellen Sensorik",
-          "Detailmotiv Abdichtung/Leckschutz"
+          "Katze vor der Furbo 360° Katzenkamera in realistischer Wohnraumszene",
+          "Detailansicht des Feder-Spielzeugs und Leckerliwurfs",
+          "Vergleichsmotiv Furbo 360° Katzenkamera versus Furbo 360° Hundekamera und Furbo Mini 360"
         ],
         "decisionTools": [
-          "Vergleichsdatensatz für Einstiegshöhe, Sicherheitsprinzip und Streukompatibilität aktualisieren"
+          "Kaufentscheidung: Katzenkamera mit Interaktion vs. kompakte Zusatzkamera vs. Hundekamera"
         ],
         "faqUpdates": [
-          "Ist das M1 Lite noch das aktuelle Modell?",
-          "Was wurde bei der Plus-Generation geändert?",
-          "Welche Katzengewichte und Streuarten sind laut aktueller Herstellerangabe geeignet?"
+          "Welche Funktionen funktionieren ohne Furbo Nanny?",
+          "Was unterscheidet die Katzenkamera von der Hundekamera?",
+          "Ist die Kamera für mehrere Katzen geeignet?"
         ],
         "schemaUpdates": [
-          "Product-Name und Modellbezeichnung auf die verifizierte aktuelle EU-Bezeichnung angleichen"
+          "Product-Daten für das neue Modell",
+          "Vergleichsdaten um das neue Modell ergänzen"
         ],
         "internalLinks": [
-          "/vergleiche/beste-automatische-katzentoiletten/"
+          "/hersteller/furbo/",
+          "/vergleiche/beste-haustierkameras/",
+          "/haustierkameras/"
         ],
         "affectedProducts": [
-          "/produkt/neakasa-m1-lite/"
+          "/produkt/furbo-360-hundekamera/",
+          "/produkt/furbo-mini-360/"
         ],
         "affectedComparisons": [
-          "/vergleiche/beste-automatische-katzentoiletten/"
+          "/vergleiche/beste-haustierkameras/"
         ]
       },
       "impact": {
         "affectedPages": [
-          "/produkt/neakasa-m1-lite/"
+          "/hersteller/furbo/",
+          "/haustierkameras/"
         ],
         "affectedComparisons": [
-          "/vergleiche/beste-automatische-katzentoiletten/"
+          "/vergleiche/beste-haustierkameras/"
         ],
         "affectedProducts": [
-          "/produkt/neakasa-m1-lite/"
+          "/produkt/furbo-360-hundekamera/",
+          "/produkt/furbo-mini-360/"
         ],
-        "estimatedContentHours": 4,
-        "estimatedImageHours": 2,
-        "estimatedSeoImpact": "high"
+        "estimatedContentHours": 4.5,
+        "estimatedImageHours": 2.5,
+        "estimatedSeoImpact": "medium"
       },
       "actionBundle": {
-        "id": "katzentoiletten-delta-2026-08-15",
-        "title": "Katzentoiletten: neue Generationen und Marktbreite",
+        "id": "furbo-cat-camera-coverage",
+        "title": "Furbo-Katzenkamera vollständig in Produkt- und Vergleichsbestand aufnehmen",
         "sequence": [
-          "Neakasa-Bestandsseite auf aktuelle Plus-Generation korrigieren",
-          "PETKIT PUROBOT MAX 3 als neue Modellgeneration ergänzen",
-          "PetSnowy SNOW+ als eigenständige Alternative ergänzen",
-          "Vergleich erst nach validierten Produktdaten aktualisieren"
+          "Herstellerdaten und EU-Modellstand verifizieren",
+          "neue Produktseite anlegen",
+          "Premium-Bildsatz erstellen",
+          "Furbo-Herstellerseite aktualisieren",
+          "Haustierkamera-Vergleich ergänzen",
+          "interne Links und strukturierte Daten prüfen"
         ]
       },
       "visualBrief": {
         "pageType": "product",
-        "subject": "Neakasa M1 Lite Plus / M1 Plus Lite aktuelle EU-Generation",
+        "subject": "Furbo 360° Katzenkamera",
         "motifs": [
-          "aktualisierter Hero der exakten Plus-Generation",
-          "Thumbnail",
-          "offene Perspektivansicht mit realer Einstiegshöhe",
-          "Detail der aktuellen Sensor- und Sicherheitszone",
-          "Detail von Waste-Bin-Abdichtung und Leckschutz",
-          "reale Nutzung durch eine große Hauskatze"
+          "Hero mit identifizierbarer Furbo 360° Katzenkamera",
+          "Thumbnail mit klarer Produktkontur",
+          "Perspektivansicht mit 360°-Kamerakopf",
+          "Funktionsdetail mit Feder-Spielzeug und Leckerliwurf",
+          "reale Nutzungssituation mit Katze im Wohnzimmer"
         ],
         "styleNotes": [
-          "Nur aktuelle Herstellerbilder bzw. Herstellerreferenzen für die Plus-Generation als Identitätsbasis verwenden.",
-          "Keine alte M1-Lite-Optik mit neuen technischen Angaben vermischen."
+          "Produktform, Proportionen, Bedienelemente und Zubehör vor der Generierung gegen aktuelle Furbo-Primärquellen prüfen",
+          "keine Funktionen darstellen, die nur für andere Furbo-Modelle gelten",
+          "alle Bilder als einzelne Outputs erzeugen; Master-Prompt mit robustem Weiter-Modus für ein Bild pro Antwort"
         ],
         "referenceUrls": [
-          "https://eu.neakasa.com/products/m1-lite-self-cleaning-cat-litter-box",
-          "https://neakasa.com/blogs/all/neakasa-m1-vs-m1-lite"
+          "https://furbo.com/eu-de/products/furbo-360-cat-camera",
+          "https://furbo.com/eu-en/pages/comparison"
         ]
       },
       "implementationBrief": {
-        "goal": "Die vorhandene Neakasa-M1-Lite-Produktseite ohne neue Dublettenroute auf die aktuelle Plus-Generation bringen und alle kaufentscheidungsrelevanten Daten im Katzentoiletten-Vergleich konsistent aktualisieren.",
-        "problem": "Der Repository-Bestand nennt weiterhin „Neakasa M1 Lite“, während Neakasa die aktuelle Generation als M1 Lite Plus/M1 Plus Lite mit technisch überarbeitetem Kernsystem beschreibt. Dadurch drohen veraltete Produktidentität, Sicherheitsdaten und Vergleichswerte.",
-        "userValue": "Nutzer sehen, welches Modell aktuell verkauft wird, welche Sicherheits- und Abdichtungsänderungen tatsächlich zur Plus-Generation gehören und ob Einstieg, Größe und Streukompatibilität zur eigenen Katze passen.",
+        "goal": "Die Furbo 360° Katzenkamera als sauber abgegrenztes Produkt in PfotenTechnik integrieren und die bestehende Furbo- sowie Haustierkamera-Abdeckung aktualisieren.",
+        "problem": "Der aktuelle Bestand enthält Furbo 360° Hundekamera und Furbo Mini 360, aber nicht das separat angebotene katzenspezifische Modell. Dadurch fehlt im Vergleich eine relevante Kaufoption für Katzenhalter.",
+        "userValue": "Katzenhalter können danach nachvollziehen, ob sie die katzenspezifische Furbo-Lösung mit Interaktion und Meowing-Funktionen, die Hundekamera oder die kompaktere Mini-Variante benötigen.",
         "implementation": [
-          "Aktuellen Repository-Stand und die bestehende Produkt-MD vollständig lesen und veraltete gegen aktuelle Herstellerangaben diffen.",
-          "Die exakte EU-Modellbezeichnung anhand der offiziellen Produkt- und Vergleichsseiten festlegen; den bestehenden Slug beibehalten, sofern die aktuelle Routing-Architektur keine Migration verlangt.",
-          "Frontmatter, Entscheidungsfakten, Sicherheits-, Geruchs-, Leckschutz-, Wartungs- und FAQ-Daten strukturell auf den bestätigten aktuellen Modellstand bringen.",
-          "Vorhandene Bildpfade gegen die aktuelle Plus-Generation prüfen; alte Identitätsbilder nicht stillschweigend für die neue Generation weiterverwenden.",
-          "Den bestehenden Katzentoiletten-Vergleich nur in den Feldern aktualisieren, die sich aus den verifizierten Produktdaten ergeben.",
-          "Genau einen finalen Installer erzeugen. Strukturelle Dateiänderungen oder vorhandene Repository-Helfer bevorzugen; keine fragilen langen String-Replacements oder komplexen dynamischen RegExp verwenden."
+          "Aktuelle Furbo-EU-Primärquellen einlesen und Modellidentität, technische Daten, Lieferumfang, Garantie und Abo-Abhängigkeiten dokumentieren.",
+          "Eine neue Produktdatei für die Furbo 360° Katzenkamera nach dem bestehenden Product-Data-Schema anlegen; keine eigenen Tests behaupten.",
+          "Die Unterschiede zur Furbo 360° Hundekamera und Furbo Mini 360 explizit in Eignung, Grenzen und FAQ abbilden.",
+          "Die Furbo-Herstellerseite um das neue Modell ergänzen.",
+          "Den Vergleich /vergleiche/beste-haustierkameras/ um das neue Modell und passende Kriterien zu Katzeninteraktion, Abo-Funktionen und Auto-Tracking erweitern.",
+          "Interne Links vom Hub und Hersteller zur Produktseite sowie zurück zu Vergleich und Hub ergänzen.",
+          "Produkt- und Vergleichsbilder nur auf Basis aktueller Herstellerreferenzen vorbereiten.",
+          "Genau einen finalen Installer erstellen. Der Installer muss idempotent, plattformübergreifend und teillauffähig sein, Backups anlegen, Ergebnisse validieren und strukturelle Dateiänderungen statt fragiler langer String-Replacements oder komplexer dynamischer RegExp verwenden.",
+          "Vor Änderungen vorhandene npm-Skripte für Produkt-, Content-, Link- und Build-Prüfungen erkennen und wiederverwenden. Installer selbst mit node --check prüfen und nach erfolgreichem Lauf ein zweites Mal ausführen, das ohne weitere Änderungen oder Fehler erfolgreich endet.",
+          "Tests auf Verhalten und Datenstruktur ausrichten, nicht auf exakte Formatierung, Variablennamen oder zufällige Quelltextfragmente."
         ],
         "files": [
-          "/produkt/neakasa-m1-lite/",
-          "/vergleiche/beste-automatische-katzentoiletten/"
+          "/hersteller/furbo/",
+          "/vergleiche/beste-haustierkameras/",
+          "/haustierkameras/",
+          "/produkt/furbo-360-hundekamera/",
+          "/produkt/furbo-mini-360/"
         ],
         "doNotChange": [
-          "keine zweite Neakasa-M1-Lite-Plus-Produktseite anlegen, solange der Hersteller die Plus-Version als aktuelle Evolution derselben Produktlinie führt",
-          "keine anderen Katzentoiletten ohne belegten Datenbedarf verändern",
-          "keine globale Bewertungslogik oder Layout-Komponenten verändern"
+          "Bewertungssystem oder globale Produktscores ohne neue Evidenz",
+          "andere Kamera-Hersteller oder Kategorien",
+          "bestehende Furbo-Modellbezeichnungen"
         ],
         "acceptanceCriteria": [
-          "Änderungen passen zum tatsächlich aktuellen Repository-Schema und erzeugen keine parallele Datenstruktur.",
-          "Der spätere Installer ist idempotent, plattformübergreifend für Windows, macOS und Linux und kann nach einem erfolgreichen ersten Lauf ein zweites Mal ohne unbeabsichtigte Änderungen ausgeführt werden.",
-          "Der Installer schützt vorhandene Nutzeränderungen, legt Backups geänderter Bestandsdateien an und validiert seinen Zielzustand.",
-          "Tests prüfen Verhalten und Datenstruktur statt exakter Formatierung, Variablennamen oder zufälliger Quelltextfragmente.",
-          "Es wird genau ein finaler Installer geliefert; erwartbare Hotfix-Ketten werden im selben Installer bereinigt.",
-          "Die Produktseite nennt die verifizierte aktuelle EU-Modellbezeichnung und vermischt keine Alt- und Plus-Generation.",
-          "Neue Sicherheits- und Abdichtungsclaims sind durch aktuelle Neakasa-Primärquellen belegt.",
-          "Streuangaben werden nicht aus widersprüchlichen Herstellertexten geraten; Widersprüche werden sichtbar konservativ gelöst."
+          "Die neue Furbo-360°-Katzenkamera ist als separates Produkt vorhanden und nicht mit Hundekamera oder Mini vermischt.",
+          "Alle technischen Kerndaten und Abo-Aussagen sind durch aktuelle Furbo-Primärquellen belegt.",
+          "Herstellerseite und Haustierkamera-Vergleich referenzieren das neue Produkt korrekt.",
+          "Keine 404-Links und keine doppelten Slugs entstehen.",
+          "Der Installer ist beim zweiten Lauf erfolgreich und idempotent."
         ],
         "verification": [
-          "Vor Implementierung vorhandene npm-Skripte aus den package.json-Dateien prüfen und nur tatsächlich existierende Audits verwenden.",
-          "node --check für den finalen Installer und alle neu angelegten oder geänderten JS-/MJS-Dateien ausführen.",
-          "Relevante Produkt-, Evidence-, Vergleichs-, Internal-Link- und Structured-Data-Audits ausführen, soweit im Repository vorhanden.",
-          "Vollständigen Produktions-Build erfolgreich ausführen.",
-          "Finalen Installer ein zweites Mal ausführen und Idempotenz sowie ausbleibende unbeabsichtigte Diffs prüfen."
+          "node --check für den finalen Installer",
+          "vorhandene Produktdaten- und Content-Audits",
+          "interner Link-Audit",
+          "Astro-Build",
+          "zweiter Installerlauf ohne unbeabsichtigte Änderungen"
         ]
       },
       "actions": [
         {
-          "type": "update-product",
-          "target": "/produkt/neakasa-m1-lite/",
-          "reason": "Lifecycle- und technische Aktualisierung der vorhandenen Produktseite."
+          "type": "create-product",
+          "target": "furbo-360-katzenkamera",
+          "reason": "Eigenständiges, aktuell im EU-Shop geführtes Katzenkamera-Modell fehlt."
+        },
+        {
+          "type": "update-manufacturer",
+          "target": "/hersteller/furbo/",
+          "reason": "Herstellerbestand ist ohne das Katzenmodell unvollständig."
         },
         {
           "type": "update-comparison",
-          "target": "/vergleiche/beste-automatische-katzentoiletten/",
-          "reason": "Vergleichswerte der Neakasa-Generation an den verifizierten aktuellen Stand anpassen."
+          "target": "/vergleiche/beste-haustierkameras/",
+          "reason": "Das Modell erweitert die Kaufentscheidung speziell für Katzenhalter."
+        },
+        {
+          "type": "add-internal-links",
+          "target": "/haustierkameras/",
+          "reason": "Produkt, Hersteller, Vergleich und Hub sollen als geschlossener Intent-Cluster verlinkt sein."
         }
       ],
       "evidence": [
         {
-          "source": "Neakasa Official – M1 Plus vs. M1 Lite Plus",
-          "url": "https://neakasa.com/blogs/all/neakasa-m1-vs-m1-lite",
-          "note": "Neakasa bezeichnet M1 Plus und M1 Lite Plus als neueste Evolution, nennt einen komplett überarbeiteten Kern und beschreibt 6-Array-Infrarotsensorik, neue Abdichtung und verbesserten Leckschutz; M1 Lite Plus ist für US und EU ausgewiesen.",
-          "accessedAt": "2026-08-15T20:36:00Z"
+          "source": "Furbo EU Produktseite",
+          "url": "https://furbo.com/eu-de/products/furbo-360-cat-camera",
+          "note": "Furbo führt die 360° Katzenkamera separat im europäischen Shop und weist Furbo-Nanny-Pläne sowie katzenspezifische Nutzung aus.",
+          "accessedAt": "2026-08-21T12:47:00+02:00"
         },
         {
-          "source": "Neakasa EU – M1 Plus Lite Produktseite",
-          "url": "https://eu.neakasa.com/products/m1-lite-self-cleaning-cat-litter-box",
-          "note": "Aktuelle EU-Produktseite führt das Modell als M1 Plus Lite und nennt die aktuelle Ausstattung, EU-Verfügbarkeit sowie 1–15 kg Katzengewicht.",
-          "accessedAt": "2026-08-15T20:36:00Z"
+          "source": "Furbo EU Kameravergleich",
+          "url": "https://furbo.com/eu-en/pages/comparison",
+          "note": "Der Herstellervergleich nennt für die Katzenkamera unter anderem 1080p FHD, rotierende 360°-Ansicht, 4x Digitalzoom, Leckerliwurf, Auto-Tracking, Meowing Alert, Kitty Diary und Feder-Spielzeug.",
+          "accessedAt": "2026-08-21T12:47:00+02:00"
         }
       ],
-      "discoveredAt": "2026-08-15T20:36:00Z",
-      "lastConfirmedAt": "2026-08-15T20:36:00Z"
+      "discoveredAt": "2026-08-21T12:47:00+02:00",
+      "lastConfirmedAt": "2026-08-21T12:47:00+02:00"
     },
     {
-      "id": "petkit-purobot-max-3",
+      "id": "petkit-purobot-crystal-duo-erganzen",
       "type": "product",
-      "title": "PETKIT PUROBOT MAX 3 als neue dritte Modellgeneration ergänzen",
+      "title": "PETKIT PUROBOT CRYSTAL DUO in Katzentoiletten-Cluster aufnehmen",
       "status": "open",
       "priority": 93,
       "confidence": 98,
-      "reason": "PETKIT hat den PUROBOT MAX 3 im Juli 2026 als dritte Generation vorgestellt. Er ist kein Marketplace-Duplikat des bereits recherchierten MAX PRO 2, sondern eine eigenständige Modellposition: ohne AI-Kamera-Schwerpunkt, dafür mit 43 % größerem und niedrigerem Einstieg gegenüber PuraMax 2, 76-L-Zylinder, 7-L-Abfallbehälter, 12 Sensoren plus mechanischer Anti-Pinch-Struktur und breiter Streukompatibilität. PETKIT UK führt das Modell aktuell als neues Kaufprodukt.",
+      "reason": "PETKIT führt den PUROBOT CRYSTAL DUO inzwischen im EU-Shop als verfügbares Modell. Er fehlt im Repository, obwohl der Bestand bereits PuraMax 2, PUROBOT MAX 3 und PUROBOT MAX PRO 2 enthält. Das offene, niedrige Design, Kameraüberwachung und das Kristallstreu-/Tray-Prinzip unterscheiden ihn technisch klar von den vorhandenen Trommelmodellen.",
       "repositoryMatch": {
         "exists": false,
         "similarRoutes": [
-          "/vergleiche/beste-automatische-katzentoiletten/",
-          "/automatische-katzentoiletten/"
+          "/produkt/petkit-puramax-2/",
+          "/produkt/petkit-purobot-max-3/",
+          "/produkt/petkit-purobot-max-pro-2/",
+          "/hersteller/petkit/",
+          "/vergleiche/beste-automatische-katzentoiletten/"
         ]
       },
       "opportunity": {
-        "seo": 86,
-        "ux": 95,
-        "business": 92,
-        "freshness": 100,
+        "seo": 88,
+        "ux": 96,
+        "business": 90,
+        "freshness": 99,
         "effort": "medium",
         "priority": 93,
-        "reason": "Sehr neue, klar abgegrenzte Modellgeneration mit starkem Nutzermehrwert bei Einstieg, Sicherheit und Mehrkatzenbetrieb. Sie erweitert den Vergleich um eine andere Entscheidung als den kamerabasierten MAX PRO 2."
+        "reason": "Das Modell ist aktuell erhältlich und ergänzt eine bislang fehlende Bauart zwischen offener M1-Lösung und geschlossenen Trommelsystemen. Seine laufenden Verbrauchskosten und Gesundheitsfunktionen sind kaufentscheidend und sollten nicht nur in einer Herstellerliste auftauchen."
       },
       "lifecycle": {
         "state": "new",
@@ -233,595 +252,586 @@
           "/vergleiche/beste-automatische-katzentoiletten/"
         ]
       },
+      "refreshPlan": {
+        "changeType": "expand",
+        "missingSections": [
+          "Offenes Rake-/Tray-Prinzip gegenüber Trommelsystemen",
+          "Pflicht- und Folgekosten für Crystal Litter, Trays und N60",
+          "Grenzen der Gesundheits- und Kameraaussagen",
+          "Care+-Abhängigkeit für vollständige Video-Wiedergabe"
+        ],
+        "sectionsToUpdate": [
+          "PETKIT-Herstellerseite",
+          "Vergleich automatische Katzentoiletten",
+          "Hub automatische Katzentoiletten"
+        ],
+        "factsToVerify": [
+          "Modell P9905",
+          "Abmessungen 818 x 507 x 334 mm",
+          "Gewicht etwa 5,65 kg",
+          "Mindestalter 6 Monate und Mindestgewicht 1,5 kg laut Handbuch",
+          "Kamera-, pH- und Yowling-Funktionen",
+          "Care+-Abhängigkeit für vollständige Videos",
+          "EU-Preis und Lieferumfang"
+        ],
+        "visuals": [
+          "Offene Bauweise mit niedriger Einstiegshöhe",
+          "Rake- und Crystal-Litter-Tray-Prinzip",
+          "Kamera-Position und Erfassungsbereich",
+          "Größenvergleich zu geschlossenem PETKIT-Trommelmodell",
+          "reale Nutzung mit großer oder älterer Katze"
+        ],
+        "decisionTools": [
+          "Bauart-Entscheidung: offen mit Rake/Tray vs. geschlossene Trommel",
+          "Folgekosten-Check für Verbrauchsmaterialien"
+        ],
+        "faqUpdates": [
+          "Welche Streu und Trays sind zwingend erforderlich?",
+          "Welche Kamera- und Gesundheitsfunktionen kosten zusätzlich?",
+          "Ist das Modell für Kitten oder sehr kleine Katzen geeignet?"
+        ],
+        "schemaUpdates": [
+          "Product-Daten für PUROBOT CRYSTAL DUO",
+          "Vergleichskriterien um Bauart, Verbrauchsmaterial und Kamera-Abo erweitern"
+        ],
+        "internalLinks": [
+          "/hersteller/petkit/",
+          "/vergleiche/beste-automatische-katzentoiletten/",
+          "/automatische-katzentoiletten/"
+        ],
+        "affectedProducts": [
+          "/produkt/petkit-puramax-2/",
+          "/produkt/petkit-purobot-max-3/",
+          "/produkt/petkit-purobot-max-pro-2/",
+          "/produkt/neakasa-m1-plus/"
+        ],
+        "affectedComparisons": [
+          "/vergleiche/beste-automatische-katzentoiletten/"
+        ]
+      },
       "impact": {
         "affectedPages": [
+          "/hersteller/petkit/",
           "/automatische-katzentoiletten/"
         ],
         "affectedComparisons": [
           "/vergleiche/beste-automatische-katzentoiletten/"
         ],
-        "affectedProducts": [],
-        "estimatedContentHours": 7,
-        "estimatedImageHours": 4,
+        "affectedProducts": [
+          "/produkt/petkit-puramax-2/",
+          "/produkt/petkit-purobot-max-3/",
+          "/produkt/petkit-purobot-max-pro-2/",
+          "/produkt/neakasa-m1-plus/"
+        ],
+        "estimatedContentHours": 6.0,
+        "estimatedImageHours": 3.0,
         "estimatedSeoImpact": "high"
       },
       "actionBundle": {
-        "id": "katzentoiletten-delta-2026-08-15",
-        "title": "Katzentoiletten: neue Generationen und Marktbreite",
+        "id": "petkit-crystal-duo-rollout",
+        "title": "PUROBOT CRYSTAL DUO inklusive Vergleichslogik und Folgekosten integrieren",
         "sequence": [
-          "Neakasa-Bestandsseite auf aktuelle Plus-Generation korrigieren",
-          "PETKIT PUROBOT MAX 3 als neue Modellgeneration ergänzen",
-          "PetSnowy SNOW+ als eigenständige Alternative ergänzen",
-          "Vergleich erst nach validierten Produktdaten aktualisieren"
+          "EU-Produktseite und offizielles Handbuch auswerten",
+          "Produktseite erstellen",
+          "Visuals anhand offizieller Produktidentität erzeugen",
+          "PETKIT-Herstellerseite aktualisieren",
+          "Katzentoiletten-Vergleich um Bauart und Folgekosten ergänzen",
+          "Hub und interne Links aktualisieren",
+          "strukturierte Daten und Audits ausführen"
         ]
       },
       "visualBrief": {
         "pageType": "product",
-        "subject": "PETKIT PUROBOT MAX 3",
+        "subject": "PETKIT PUROBOT CRYSTAL DUO",
         "motifs": [
-          "Premium Hero des exakten PUROBOT MAX 3",
-          "Thumbnail",
-          "Perspektivansicht mit breitem niedrigem Einstieg",
-          "Funktionsdetail der permanent offenen mechanischen Anti-Pinch-Struktur und Sensorik",
-          "Detail des seitlichen 7-L-Abfallbehälters und OdorVoid-Systems",
-          "reale Nutzung durch große oder ältere Katze mit sichtbarem Einstieg"
+          "Hero mit offenem PUROBOT CRYSTAL DUO",
+          "Thumbnail mit klarer Modellidentität",
+          "Perspektivansicht mit niedrigem Einstieg",
+          "Funktionsdetail Rake, Crystal-Litter-Tray und Kamera",
+          "reale Nutzungssituation mit großer Katze"
         ],
         "styleNotes": [
-          "MAX 3 nicht mit MAX PRO 2 oder PUROBOT Ultra verwechseln.",
-          "Keine Kamera am Produkt ergänzen, wenn das konkrete MAX-3-Modell keine besitzt.",
-          "Herstellerclaims zu Gesundheitsrisiken nur als Monitoringdaten, nicht als Diagnose darstellen."
+          "Offene, flache Bauform nicht mit PUROBOT- oder PuraMax-Trommelmodellen verwechseln",
+          "Kamera, Rake, Tray und Gehäuseproportionen anhand offizieller PETKIT-Quellen abgleichen",
+          "alle Bilder als einzelne Outputs erzeugen; Master-Prompt mit robustem Weiter-Modus"
         ],
         "referenceUrls": [
-          "https://www.petkit.com/products/purobot-max-3-automatic-cat-litter-box",
-          "https://www.petkit.com/blogs/blog/introducing-purobot-max-3-wider-entry-for-every-cat-continuous-freshness-for-every-home",
-          "https://petkit.co.uk/products/purobot-max-3-automatic-cat-litter-box-with-n50"
+          "https://www.petkit-eu.com/de/products/purobot-crystal-duo-with-hood",
+          "https://instructions.petkit.com/App%20Manual/T7/T7_User%20Manual_EN_V1.0_20250922%20.pdf"
         ]
       },
       "implementationBrief": {
-        "goal": "Eine eigenständige, evidenzbasierte Produktseite für den PETKIT PUROBOT MAX 3 erstellen und ihn als niedrigere, zugänglichkeitsorientierte dritte Generation sauber in Hub und Vergleich einordnen.",
-        "problem": "Der aktuelle Repository-Bestand enthält den neuen, im Juli/August 2026 ausgerollten PUROBOT MAX 3 nicht. Das Modell löst andere Nutzerfragen als der kamerabasierte MAX PRO 2 und ist daher keine Dublette.",
-        "userValue": "Nutzer können niedrigen Einstieg, Innenraum, mechanische Sicherheit, Sensorik, Streukompatibilität und Mehrkatzenfunktionen gegen andere automatische Katzentoiletten abwägen.",
+        "goal": "PUROBOT CRYSTAL DUO als eigenständige automatische Katzentoilette aufnehmen und die bestehende Vergleichslogik so erweitern, dass Bauart, Folgekosten und Kamera-/Gesundheitsfunktionen korrekt bewertet werden.",
+        "problem": "Das aktuelle Repository deckt mehrere PETKIT-Trommelmodelle ab, aber nicht den inzwischen im EU-Shop verfügbaren offenen PUROBOT CRYSTAL DUO. Dadurch fehlt eine technisch abweichende Alternative mit Rake-/Tray-System und anderen laufenden Kosten.",
+        "userValue": "Nutzer können danach erkennen, ob ein offenes, niedriges System mit Verbrauchstrays besser passt als eine geschlossene Trommel und welche Folgekosten sowie Abo-Grenzen damit verbunden sind.",
         "implementation": [
-          "Vor Anlage prüfen, ob der Slug oder Produktdatensatz inzwischen bereits durch einen anderen Patch existiert; bei vorhandenem korrektem Zustand aktualisieren statt duplizieren.",
-          "Produktseite nach aktuellem Produktschema mit Modell P9906 und ausschließlich verifizierten Primärdaten erstellen.",
-          "Besonders 204-mm-Einstieg, 76-L-Zylinder, 7-L-Abfallbehälter, 1,5–10-kg-Gewichtsbereich, 12 Sensoren und die unabhängig davon wirkende unvollständige Getriebestruktur als Sicherheitsprinzip erklären.",
-          "Gesundheits- und Nutzungstracking als Beobachtungsdaten darstellen; keine Diagnoseversprechen übernehmen.",
-          "Hub und Vergleich um den MAX 3 erweitern und ihn vom MAX PRO 2 über Kamera, Einstieg, Wi-Fi, Sensorik und Nutzungsprofil abgrenzen.",
-          "Bildassets nur referenzieren, wenn sie tatsächlich vorhanden und modellrichtig sind; andernfalls einen Master-Prompt mit einzelnem Weiter-Modus für die Motive erzeugen.",
-          "Genau einen finalen idempotenten, plattformübergreifenden und teillauffähigen Installer mit Backups und Ergebnisvalidierung erzeugen; strukturelle Änderungen statt fragiler String-Replacements verwenden."
+          "Offizielle EU-Produktseite und Handbuch als Primärquellen für Modell P9905, Maße, Gewicht, Mindestalter, Mindestgewicht, App-, Kamera- und Wartungsfunktionen verwenden.",
+          "Neue Produktdatei mit klarer Abgrenzung zu PuraMax 2, PUROBOT MAX 3, PUROBOT MAX PRO 2 und Neakasa M1 Plus erstellen.",
+          "Verbrauchsmaterialien, Austauschlogik, mögliche Folgekosten und Care+-Abhängigkeit für vollständige Videos transparent ausweisen.",
+          "PETKIT-Herstellerseite und den Vergleich /vergleiche/beste-automatische-katzentoiletten/ ergänzen.",
+          "Vergleichsdaten strukturell um Bauart, Einstieg, Verbrauchsmaterial, Kamera und Abo-Abhängigkeit erweitern, sofern diese Kriterien noch fehlen.",
+          "Keine medizinische Diagnose behaupten; pH-, Yowling- und Kameraauswertung als Herstellerfunktion mit klaren Grenzen formulieren.",
+          "Genau einen finalen Installer erstellen. Der Installer muss idempotent, plattformübergreifend und teillauffähig sein, Backups anlegen und Ergebnisvalidierung durchführen.",
+          "Strukturelle Dateiänderungen verwenden, keine fragilen langen String-Replacements oder komplexen dynamischen RegExp.",
+          "Vorhandene npm-Skripte prüfen und wiederverwenden, Installer mit node --check prüfen und nach dem ersten erfolgreichen Lauf ein zweites Mal erfolgreich ausführen.",
+          "Tests auf Verhalten und Datenstruktur ausrichten, nicht auf exakte Formatierung, Variablennamen oder zufällige Quelltextfragmente."
         ],
         "files": [
+          "/hersteller/petkit/",
+          "/vergleiche/beste-automatische-katzentoiletten/",
           "/automatische-katzentoiletten/",
-          "/vergleiche/beste-automatische-katzentoiletten/"
+          "/produkt/petkit-puramax-2/",
+          "/produkt/petkit-purobot-max-3/",
+          "/produkt/petkit-purobot-max-pro-2/",
+          "/produkt/neakasa-m1-plus/"
         ],
         "doNotChange": [
-          "MAX PRO 2 nicht als Vorgänger oder Ersatz des MAX 3 umschreiben, solange PETKIT beide parallel führt",
-          "keine Kamera-, AI-Video- oder Diagnosefunktion vom MAX PRO 2 auf den MAX 3 übertragen",
-          "keine globale Vergleichs- oder Bewertungsarchitektur ändern"
+          "Globale Katzentoiletten-Scores ohne neue Vergleichsdaten",
+          "medizinische Ratgeber außerhalb der belegten Produktgrenzen",
+          "bestehende Produktnamen der PETKIT-Modelle"
         ],
         "acceptanceCriteria": [
-          "Änderungen passen zum tatsächlich aktuellen Repository-Schema und erzeugen keine parallele Datenstruktur.",
-          "Der spätere Installer ist idempotent, plattformübergreifend für Windows, macOS und Linux und kann nach einem erfolgreichen ersten Lauf ein zweites Mal ohne unbeabsichtigte Änderungen ausgeführt werden.",
-          "Der Installer schützt vorhandene Nutzeränderungen, legt Backups geänderter Bestandsdateien an und validiert seinen Zielzustand.",
-          "Tests prüfen Verhalten und Datenstruktur statt exakter Formatierung, Variablennamen oder zufälliger Quelltextfragmente.",
-          "Es wird genau ein finaler Installer geliefert; erwartbare Hotfix-Ketten werden im selben Installer bereinigt.",
-          "Neue Produktseite ist eindeutig PUROBOT MAX 3 und nicht MAX PRO 2, Ultra oder PuraMax 2.",
-          "Vergleich erklärt mindestens Einstieg, Innenraum, mechanische Sicherheit, Sensorik, Streukompatibilität und Mehrkatzen-Tracking.",
-          "Alle technischen Kerndaten stammen aus PETKIT-Primärquellen."
+          "PUROBOT CRYSTAL DUO ist als separates Produkt mit Modell P9905 erfasst.",
+          "Offene Bauart, Maße, Mindestalter, Mindestgewicht, Verbrauchsmaterialien und Kamera-/Care+-Grenzen sind belegt.",
+          "Der Katzentoiletten-Vergleich kann das Modell ohne Datenmodellbruch darstellen.",
+          "Herstellerseite, Hub und Vergleich verlinken korrekt auf das neue Produkt.",
+          "Der Installer läuft zweimal erfolgreich und ohne unbeabsichtigte Folgeänderungen."
         ],
         "verification": [
-          "Vor Implementierung vorhandene npm-Skripte aus den package.json-Dateien prüfen und nur tatsächlich existierende Audits verwenden.",
-          "node --check für den finalen Installer und alle neu angelegten oder geänderten JS-/MJS-Dateien ausführen.",
-          "Relevante Produkt-, Evidence-, Vergleichs-, Internal-Link- und Structured-Data-Audits ausführen, soweit im Repository vorhanden.",
-          "Vollständigen Produktions-Build erfolgreich ausführen.",
-          "Finalen Installer ein zweites Mal ausführen und Idempotenz sowie ausbleibende unbeabsichtigte Diffs prüfen."
+          "node --check für den finalen Installer",
+          "vorhandener Produktdaten-Audit",
+          "Vergleichsdaten-Audit",
+          "interner Link-Audit",
+          "Astro-Build",
+          "zweiter Installerlauf"
         ]
       },
       "actions": [
         {
           "type": "create-product",
-          "target": "petkit-purobot-max-3",
-          "reason": "Neue, eigenständige PETKIT-Modellgeneration mit aktueller offizieller Verfügbarkeit."
+          "target": "petkit-purobot-crystal-duo",
+          "reason": "Aktuell im PETKIT-EU-Shop verfügbares eigenständiges Modell fehlt."
+        },
+        {
+          "type": "update-manufacturer",
+          "target": "/hersteller/petkit/",
+          "reason": "PETKIT-Produktportfolio ist ohne Crystal Duo nicht aktuell."
         },
         {
           "type": "update-comparison",
           "target": "/vergleiche/beste-automatische-katzentoiletten/",
-          "reason": "MAX 3 als eigenständigen Entscheidungstyp gegenüber MAX PRO 2 und anderen Modellen einordnen."
+          "reason": "Offene Bauart und Folgekosten verändern die Kaufentscheidung."
         },
         {
           "type": "update-page",
           "target": "/automatische-katzentoiletten/",
-          "reason": "Hub mit internem Link und aktueller Modellreferenz ergänzen, ohne den Hub in eine zweite Vergleichsseite umzubauen."
+          "reason": "Der Hub sollte die zusätzliche Bauart und deren Grenzen erklären."
         }
       ],
       "evidence": [
         {
-          "source": "PETKIT Official – Einführung PUROBOT MAX 3",
-          "url": "https://www.petkit.com/blogs/blog/introducing-purobot-max-3-wider-entry-for-every-cat-continuous-freshness-for-every-home",
-          "note": "PETKIT stellt MAX 3 als neue dritte Generation vor und nennt gegenüber PuraMax 2 einen 43 % größeren Eingang, 204 mm Einstiegshöhe, 76-L-Innenraum, 12 Sensoren sowie eine mechanisch permanent offene Anti-Pinch-Struktur.",
-          "accessedAt": "2026-08-15T20:36:00Z"
+          "source": "PETKIT EU Produktseite",
+          "url": "https://www.petkit-eu.com/de/products/purobot-crystal-duo-with-hood",
+          "note": "PETKIT EU führt den PUROBOT CRYSTAL DUO aktuell als verfügbares Produkt mit offenem Design und Kamera-/Gesundheitsfunktionen.",
+          "accessedAt": "2026-08-21T12:47:00+02:00"
         },
         {
-          "source": "PETKIT Official – PUROBOT MAX 3 Produktseite",
-          "url": "https://www.petkit.com/products/purobot-max-3-automatic-cat-litter-box",
-          "note": "Aktuelle Produktseite bestätigt Modell P9906, 1,5–10 kg Katzengewicht, 7-L-Abfallbehälter, 2,4-GHz-Wi-Fi, Streukompatibilität und Verkauf als neues Modell.",
-          "accessedAt": "2026-08-15T20:36:00Z"
+          "source": "PETKIT offizielles Benutzerhandbuch",
+          "url": "https://instructions.petkit.com/App%20Manual/T7/T7_User%20Manual_EN_V1.0_20250922%20.pdf",
+          "note": "Das Handbuch bestätigt Modell P9905, 818 x 507 x 334 mm, ca. 5,65 kg, Wi-Fi sowie Einsatz ab 6 Monaten und über 1,5 kg; es dokumentiert außerdem Kamera-, pH-, Yowling- und Care+-Funktionen.",
+          "accessedAt": "2026-08-21T12:47:00+02:00"
         },
         {
-          "source": "PETKIT UK – PUROBOT MAX 3",
-          "url": "https://petkit.co.uk/products/purobot-max-3-automatic-cat-litter-box-with-n50",
-          "note": "Regionale PETKIT-Seite führt PUROBOT MAX 3 aktuell als kaufbares neues Modell und bestätigt die Marktverfügbarkeit außerhalb der US-Hauptseite.",
-          "accessedAt": "2026-08-15T20:36:00Z"
+          "source": "PETKIT 2026 Kaufberatung",
+          "url": "https://www.petkit.com/blogs/blog/2026-petkit-best-automatic-litter-boxes-ultimate-buying-guide",
+          "note": "PETKIT führt Crystal Duo als eines von vier 2026er Katzentoilettenmodellen und grenzt es über Bauart, Einstieg und Kamera von den Trommelmodellen ab.",
+          "accessedAt": "2026-08-21T12:47:00+02:00"
         }
       ],
-      "discoveredAt": "2026-08-15T20:36:00Z",
-      "lastConfirmedAt": "2026-08-15T20:36:00Z"
+      "discoveredAt": "2026-08-21T12:47:00+02:00",
+      "lastConfirmedAt": "2026-08-21T12:47:00+02:00"
     },
     {
-      "id": "petsnowy-snow-plus-self-cleaning-litter-box",
+      "id": "petkit-yumshare-daily-feast-vormerken",
       "type": "product",
-      "title": "PetSnowy SNOW+ als geschlossene automatische Katzentoilette ergänzen",
+      "title": "PETKIT YUMSHARE DAILY FEAST als angekündigten Nassfutterautomaten vorbereiten",
       "status": "open",
-      "priority": 84,
-      "confidence": 95,
-      "reason": "PetSnowy bietet SNOW+ über eine deutsche Shop-Oberfläche und mit EU-Versand an. Das Modell ergänzt den geplanten Katzentoiletten-Bestand um eine klar andere Bauform mit geschlossener Kabine, gebogenem Anti-Tracking-Weg, 10-L-selbstverschließendem Abfallbehälter und eigenem Geruchskontrollsystem. Damit entsteht echter Vergleichsmehrwert gegenüber offenen Systemen wie Neakasa und kamera-/sensorzentrierten PETKIT-Modellen.",
+      "priority": 82,
+      "confidence": 92,
+      "reason": "PETKIT hat YUMSHARE DAILY FEAST als neuen vollautomatischen Nassfutterautomaten für 2026 angekündigt. Das Gerät soll versiegelte Nassfutterpacks öffnen, portionieren, Näpfe nach dem Servieren zurückführen, mehrere Katzen per Kamera unterscheiden und bis zu sieben Tage automatisierte Nassfütterung ermöglichen. Ein entsprechendes Produkt fehlt im Repository; wegen noch nicht eindeutig bestätigter EU-Verfügbarkeit sollte die Seite vorbereitet, aber nicht mit erfundener Kaufbarkeit veröffentlicht werden.",
       "repositoryMatch": {
         "exists": false,
         "similarRoutes": [
-          "/vergleiche/beste-automatische-katzentoiletten/",
-          "/automatische-katzentoiletten/"
+          "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+          "/hersteller/petkit/",
+          "/smarte-futterautomaten/"
         ]
       },
       "opportunity": {
-        "seo": 78,
-        "ux": 91,
-        "business": 83,
-        "freshness": 72,
+        "seo": 80,
+        "ux": 88,
+        "business": 76,
+        "freshness": 100,
         "effort": "medium",
-        "priority": 84,
-        "reason": "Nicht primär wegen Neuheit, sondern wegen eigenständiger Bauform und EU-Verfügbarkeit relevant. Das Modell verbessert die Entscheidung offene vs. geschlossene Systeme und macht Folgekosten durch proprietäre Müllbeutel sichtbar."
+        "priority": 82,
+        "reason": "Die technische Nutzeraufgabe unterscheidet sich deutlich von gekühlten Schalen- oder Fächerautomaten: versiegelte Nassfutterpacks, automatische Ausgabe, Resteverarbeitung und Mehrkatzen-Erkennung. Wegen des angekündigten Status ist Aktualitätsdruck hoch, die unmittelbare Geschäftsrelevanz aber noch begrenzt."
       },
       "lifecycle": {
-        "state": "unchanged",
+        "state": "announced",
         "affectedComparisons": [
-          "/vergleiche/beste-automatische-katzentoiletten/"
+          "/vergleiche/beste-futterautomaten-fuer-nassfutter/"
+        ]
+      },
+      "refreshPlan": {
+        "changeType": "expand",
+        "missingSections": [
+          "Neue Gerätekategorie: automatisches Öffnen und Portionieren versiegelter Nassfutterpacks",
+          "Abgrenzung zu gekühlten Nassfutterautomaten und klassischen Fächerautomaten",
+          "Verfügbarkeits- und Kompatibilitätsprüfung der benötigten Futterpacks"
+        ],
+        "sectionsToUpdate": [
+          "PETKIT-Herstellerseite",
+          "Nassfutterautomaten-Vergleich nach bestätigter Marktverfügbarkeit"
+        ],
+        "factsToVerify": [
+          "finale EU-Markteinführung",
+          "Preis",
+          "unterstützte Packungsformate und Bezugsmodell",
+          "tatsächliche maximale Betriebsdauer",
+          "Reinigungs- und UVC-Ablauf",
+          "AI-Multi-Cat-Erkennung",
+          "App- und Cloud-Abhängigkeiten"
+        ],
+        "visuals": [
+          "Gerät mit korrekt eingelegten versiegelten Nassfutterpacks",
+          "Öffnungs- und Portioniermechanismus",
+          "Mehrkatzen-Erkennung an der Ausgabe",
+          "Ablauf vom Lagern über Servieren bis Rückführen des Napfs"
+        ],
+        "decisionTools": [
+          "Vergleich der Nassfutter-Automationsprinzipien: gekühlt, Fächer, versiegelte Packs"
+        ],
+        "faqUpdates": [
+          "Welche Nassfutterpacks sind kompatibel?",
+          "Wie lange bleibt das Futter tatsächlich sicher verwendbar?",
+          "Was funktioniert ohne Cloud oder Abo?"
+        ],
+        "schemaUpdates": [
+          "Produkt erst nach bestätigten finalen Marktdaten als kaufbares Angebot kennzeichnen"
+        ],
+        "internalLinks": [
+          "/hersteller/petkit/",
+          "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+          "/smarte-futterautomaten/"
+        ],
+        "affectedProducts": [],
+        "affectedComparisons": [
+          "/vergleiche/beste-futterautomaten-fuer-nassfutter/"
         ]
       },
       "impact": {
         "affectedPages": [
-          "/automatische-katzentoiletten/"
+          "/hersteller/petkit/",
+          "/smarte-futterautomaten/"
         ],
         "affectedComparisons": [
-          "/vergleiche/beste-automatische-katzentoiletten/"
+          "/vergleiche/beste-futterautomaten-fuer-nassfutter/"
         ],
         "affectedProducts": [],
-        "estimatedContentHours": 7,
-        "estimatedImageHours": 4,
+        "estimatedContentHours": 4.0,
+        "estimatedImageHours": 2.5,
         "estimatedSeoImpact": "medium"
       },
       "actionBundle": {
-        "id": "katzentoiletten-delta-2026-08-15",
-        "title": "Katzentoiletten: neue Generationen und Marktbreite",
+        "id": "petkit-daily-feast-watch",
+        "title": "YUMSHARE DAILY FEAST vorbereitet erfassen und Marktstart verifizieren",
         "sequence": [
-          "Neakasa-Bestandsseite auf aktuelle Plus-Generation korrigieren",
-          "PETKIT PUROBOT MAX 3 als neue Modellgeneration ergänzen",
-          "PetSnowy SNOW+ als eigenständige Alternative ergänzen",
-          "Vergleich erst nach validierten Produktdaten aktualisieren"
+          "Ankündigungsdaten strukturiert erfassen",
+          "EU-Verfügbarkeit und Pack-Kompatibilität verifizieren",
+          "Produktseite erst bei belastbaren finalen Daten aktivieren",
+          "Herstellerseite aktualisieren",
+          "Nassfutter-Vergleich erst bei realer Kaufbarkeit ergänzen"
         ]
       },
       "visualBrief": {
         "pageType": "product",
-        "subject": "PetSnowy SNOW+ Self-Cleaning Litter Box",
+        "subject": "PETKIT YUMSHARE DAILY FEAST",
         "motifs": [
-          "Hero der exakten SNOW+-Katzentoilette",
+          "Hero des finalen Seriengeräts nach bestätigter Produktidentität",
           "Thumbnail",
-          "Perspektivansicht der geschlossenen Kabine mit gebogenem Ausstiegsweg",
-          "Detail des selbstverschließenden 10-L-Abfallbehälters",
-          "Detail des integrierten Geruchsmanagements ohne erfundene chemische Wirkung",
-          "reale Nutzung durch Katze beim Ein- oder Ausstieg"
+          "Perspektivansicht des Futterpack- und Ausgabebereichs",
+          "Funktionsdetail des automatischen Öffnungs- und Portioniermechanismus",
+          "reale Nutzungssituation mit Katze an einer frisch ausgegebenen Nassfutterportion"
         ],
         "styleNotes": [
-          "Geschlossene Kabine und Anti-Tracking-Weg maßstabsgetreu zeigen.",
-          "Herstellerangaben zur Ammoniakreduktion als Herstellerclaim kennzeichnen und nicht in eine gesundheitliche Garantie umdeuten."
+          "Keine Vorserien- oder CES-Details als finale Serienausstattung erfinden",
+          "Bilder erst gegen aktuelle PETKIT-Primärquellen zum Serienmodell validieren",
+          "alle Bilder als einzelne Outputs erzeugen; Master-Prompt mit robustem Weiter-Modus"
         ],
         "referenceUrls": [
-          "https://petsnowy.com/de/products/petsnowy-snow-self-cleaning-litter-box",
-          "https://petsnowy.com/pages/shipping"
+          "https://www.petkit-eu.com/de/blogs/blog/ces-2026-petkit-showcases-future-of-pet-care-with-eversweet-ultra-and-more",
+          "https://www.petkit.com/blogs/blog/introducing-the-first-fully-automatic-ai-wet-food-feeder-extending-petkit-s-comprehensive-urinary-health-ecosystem"
         ]
       },
       "implementationBrief": {
-        "goal": "PetSnowy SNOW+ als eigenständige geschlossene automatische Katzentoilette aufnehmen und die offene-vs.-geschlossene Entscheidung im bestehenden Vergleich belastbarer machen.",
-        "problem": "Der aktuelle Bestand deckt die PetSnowy-SNOW+-Bauform trotz deutscher Oberfläche und EU-Versand nicht ab. Dadurch fehlen geschlossene Kabine, integrierter Anti-Tracking-Weg und selbstverschließender Abfallbehälter als Vergleichstyp.",
-        "userValue": "Nutzer können Platzbedarf, Akzeptanz einer geschlossenen Kabine, Streuverlust, Geruchssystem, Verbrauchsmaterial und Wartung gegen offene und klassische Trommelsysteme abwägen.",
+        "goal": "YUMSHARE DAILY FEAST als angekündigtes PETKIT-Modell strukturiert vorbereiten, ohne vor bestätigter EU-Verfügbarkeit eine kaufbare Produktseite oder falsche Preisangaben zu erzeugen.",
+        "problem": "PETKIT hat für 2026 einen technisch neuartigen Nassfutterautomaten angekündigt, der im Repository noch nicht berücksichtigt ist. Finale Verfügbarkeit, Preis und Pack-Kompatibilität sind jedoch noch nicht hinreichend belegt.",
+        "userValue": "PfotenTechnik kann den Marktstart schnell und sauber abbilden, ohne Nutzer mit verfrühten oder erfundenen Kaufangaben zu täuschen.",
         "implementation": [
-          "Produktseite nach dem aktuellen Produktschema mit Hersteller-Primärdaten anlegen.",
-          "Geschlossene Bauform, Anti-Tracking-Weg, 10-L-Abfallbehälter, Streukompatibilität, Wartung und proprietäre Verbrauchsmaterialien als zentrale Entscheidungsfakten abbilden.",
-          "Marketingclaim zur Ammoniakreduktion nur mit klarer Herstellerattribution verwenden und nicht als unabhängigen Testwert behandeln.",
-          "EU-/Deutschland-Verfügbarkeit über Versand- und deutsche Produktseite belegen; dynamische Preise nicht als dauerhafte Kerndaten festschreiben.",
-          "Vergleich um Bauform, Ein-/Ausstieg, Tracking-Kontrolle, Abfallbeutel/Folgekosten und Streukompatibilität ergänzen, ohne neue globale Vergleichsarchitektur aufzubauen.",
-          "Für fehlende Assets einen modelltreuen Bild-Master-Prompt mit Hero, Thumbnail, Perspektive, Funktionsdetail und realer Nutzung erzeugen; jedes Bild einzeln und mit robustem Weiter-Modus.",
-          "Genau einen finalen idempotenten und plattformübergreifenden Installer mit Backups, Validierung, node --check und erfolgreichem zweiten Lauf erzeugen."
+          "Offizielle PETKIT-Ankündigungen als Primärquellen erfassen und alle noch offenen Marktdaten explizit als zu verifizieren markieren.",
+          "Keinen Händlerpreis, keine deutsche Verfügbarkeit und keine Pack-Kompatibilität schätzen.",
+          "Eine vorbereitete Produktdatenstruktur nur dann öffentlich aktivieren, wenn Serienmodell, EU-Verfügbarkeit und Kernkompatibilität bestätigt sind.",
+          "Die PETKIT-Herstellerseite um einen klar gekennzeichneten Ankündigungsabschnitt ergänzen, sofern das bestehende Datenmodell angekündigte Produkte unterstützt.",
+          "Den Vergleich /vergleiche/beste-futterautomaten-fuer-nassfutter/ erst nach bestätigter realer Kaufbarkeit um das Modell erweitern.",
+          "Die neue Gerätekategorie gegenüber gekühlten Nassfutterautomaten und Fächermodellen über konkrete Arbeitsweise statt Marketingbegriffe abgrenzen.",
+          "Genau einen finalen Installer erstellen. Er muss idempotent, plattformübergreifend und teillauffähig sein, Backups anlegen und Ergebnisvalidierung durchführen.",
+          "Strukturelle Dateiänderungen verwenden, keine fragilen langen String-Replacements oder komplexen dynamischen RegExp.",
+          "Vorhandene npm-Skripte prüfen und wiederverwenden, Installer mit node --check prüfen und nach dem ersten erfolgreichen Lauf ein zweites Mal erfolgreich ausführen.",
+          "Tests müssen Status, Datenstruktur und Sichtbarkeit angekündigter Produkte prüfen, nicht Quelltextformatierung."
         ],
         "files": [
-          "/automatische-katzentoiletten/",
-          "/vergleiche/beste-automatische-katzentoiletten/"
+          "/hersteller/petkit/",
+          "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+          "/smarte-futterautomaten/"
         ],
         "doNotChange": [
-          "keine Hersteller-Marketingwerte als eigener Produkttest darstellen",
-          "keine neuen allgemeinen Ratgeber nur für PetSnowy anlegen",
-          "keine Preis- oder Lieferzeitwerte dauerhaft als statische redaktionelle Wahrheit speichern"
+          "bestehende Nassfutterautomaten-Scores vor realer Vergleichbarkeit",
+          "bestehende Kaufempfehlungen allein aufgrund der Ankündigung",
+          "Preise oder Verfügbarkeit ohne Primärquelle"
         ],
         "acceptanceCriteria": [
-          "Änderungen passen zum tatsächlich aktuellen Repository-Schema und erzeugen keine parallele Datenstruktur.",
-          "Der spätere Installer ist idempotent, plattformübergreifend für Windows, macOS und Linux und kann nach einem erfolgreichen ersten Lauf ein zweites Mal ohne unbeabsichtigte Änderungen ausgeführt werden.",
-          "Der Installer schützt vorhandene Nutzeränderungen, legt Backups geänderter Bestandsdateien an und validiert seinen Zielzustand.",
-          "Tests prüfen Verhalten und Datenstruktur statt exakter Formatierung, Variablennamen oder zufälliger Quelltextfragmente.",
-          "Es wird genau ein finaler Installer geliefert; erwartbare Hotfix-Ketten werden im selben Installer bereinigt.",
-          "SNOW+ wird als geschlossene Alternative mit klaren Vor- und Nachteilen gegenüber offenen Systemen dargestellt.",
-          "EU-Verfügbarkeit und technische Kerndaten sind durch PetSnowy-Primärquellen belegt.",
-          "Folgekosten und proprietäre Verbrauchsmaterialien werden sichtbar, ohne dynamische Preise festzuschreiben."
+          "Das Modell ist intern als angekündigt und nicht als verfügbar gekennzeichnet.",
+          "Keine unbestätigten Preise, Packformate oder EU-Verfügbarkeiten werden veröffentlicht.",
+          "PETKIT-Herstellerseite kann die Ankündigung ohne Vermischung mit kaufbaren Produkten darstellen.",
+          "Der Nassfutter-Vergleich bleibt bis zur bestätigten Marktverfügbarkeit unverändert oder kennzeichnet das Modell eindeutig nur als angekündigt, falls das System dies unterstützt.",
+          "Der Installer läuft zweimal erfolgreich."
         ],
         "verification": [
-          "Vor Implementierung vorhandene npm-Skripte aus den package.json-Dateien prüfen und nur tatsächlich existierende Audits verwenden.",
-          "node --check für den finalen Installer und alle neu angelegten oder geänderten JS-/MJS-Dateien ausführen.",
-          "Relevante Produkt-, Evidence-, Vergleichs-, Internal-Link- und Structured-Data-Audits ausführen, soweit im Repository vorhanden.",
-          "Vollständigen Produktions-Build erfolgreich ausführen.",
-          "Finalen Installer ein zweites Mal ausführen und Idempotenz sowie ausbleibende unbeabsichtigte Diffs prüfen."
+          "node --check für den finalen Installer",
+          "vorhandener Produktdaten-Audit",
+          "Content-Audit",
+          "Astro-Build",
+          "zweiter Installerlauf"
         ]
       },
       "actions": [
         {
-          "type": "create-product",
-          "target": "petsnowy-snow-plus-self-cleaning-litter-box",
-          "reason": "Eigenständige geschlossene automatische Katzentoilette mit belegter EU-Verfügbarkeit."
+          "type": "manual-review",
+          "target": "petkit-yumshare-daily-feast",
+          "reason": "EU-Verfügbarkeit, Preis und Pack-Kompatibilität vor Veröffentlichung bestätigen."
         },
         {
-          "type": "update-comparison",
-          "target": "/vergleiche/beste-automatische-katzentoiletten/",
-          "reason": "Geschlossene Bauform, Anti-Tracking und Verbrauchsmaterial als zusätzliche Entscheidungsperspektive aufnehmen."
-        },
-        {
-          "type": "update-page",
-          "target": "/automatische-katzentoiletten/",
-          "reason": "Produkt intern anbinden und geschlossene Systeme als Auswahltyp konkretisieren."
+          "type": "update-manufacturer",
+          "target": "/hersteller/petkit/",
+          "reason": "Angekündigte 2026er Produktlinie ist für den Herstellerkontext relevant."
         }
       ],
       "evidence": [
         {
-          "source": "PetSnowy Official DE – SNOW+",
-          "url": "https://petsnowy.com/de/products/petsnowy-snow-self-cleaning-litter-box",
-          "note": "Deutsche Produktseite bestätigt SNOW+ als selbstreinigende Katzentoilette mit sensorgetriggerter Reinigung, geschlossenem System, integriertem Geruchsmanagement und deutscher Shop-Oberfläche.",
-          "accessedAt": "2026-08-15T20:36:00Z"
+          "source": "PETKIT EU CES-2026-Ankündigung",
+          "url": "https://www.petkit-eu.com/de/blogs/blog/ces-2026-petkit-showcases-future-of-pet-care-with-eversweet-ultra-and-more",
+          "note": "PETKIT beschreibt YUMSHARE DAILY FEAST als vollautomatischen Nassfutterautomaten mit automatischem Öffnen versiegelter Packs, Portionierung, Mehrkatzen-Kamera, UVC- und Resteverarbeitung und nennt die Markteinführung für 2026.",
+          "accessedAt": "2026-08-21T12:47:00+02:00"
         },
         {
-          "source": "PetSnowy Official – SNOW+",
-          "url": "https://petsnowy.com/products/snow-self-cleaning-litter-box",
-          "note": "Hersteller nennt gebogenen Anti-Tracking-Weg, 10-L-selbstverschließenden Abfallbehälter, modulares Design und TiO2-Geruchssystem.",
-          "accessedAt": "2026-08-15T20:36:00Z"
-        },
-        {
-          "source": "PetSnowy Official – Versand",
-          "url": "https://petsnowy.com/pages/shipping",
-          "note": "PetSnowy bestätigt Versand in die EU und EU-Versandkonditionen.",
-          "accessedAt": "2026-08-15T20:36:00Z"
+          "source": "PETKIT Produktankündigung",
+          "url": "https://www.petkit.com/blogs/blog/introducing-the-first-fully-automatic-ai-wet-food-feeder-extending-petkit-s-comprehensive-urinary-health-ecosystem",
+          "note": "PETKIT bestätigt automatische Packöffnung, geplante Portionierung, AI-Kamera, Multi-Cat-Erkennung sowie UV-Sterilisation als Kernfunktionen.",
+          "accessedAt": "2026-08-21T12:47:00+02:00"
         }
       ],
-      "discoveredAt": "2026-08-15T20:36:00Z",
-      "lastConfirmedAt": "2026-08-15T20:36:00Z"
+      "discoveredAt": "2026-08-21T12:47:00+02:00",
+      "lastConfirmedAt": "2026-08-21T12:47:00+02:00"
     },
     {
-      "id": "enabot-rola-pettracker-gps-camera",
-      "type": "product",
-      "title": "Enabot ROLA PetTracker als GPS-Tracker mit Live-Kamera ergänzen",
+      "id": "tractive-dog-6-kratzverhalten-refresh",
+      "type": "content-refresh",
+      "title": "Tractive DOG 6 und DOG 6 XL um Überwachung des Kratzverhaltens aktualisieren",
       "status": "open",
-      "priority": 90,
-      "confidence": 96,
-      "reason": "Enabot verkauft den ROLA PetTracker im deutschen Shop als EU-Version. Das Gerät kombiniert Echtzeit-GPS, virtuelle Sicherheitszone, 480p-Live-Kamera, Zwei-Wege-Audio und Aktivitätsdaten in einem 70-g-Gerät. Im bestehenden GPS-Cluster gibt es zwar acht Tracker, aber keinen belegten On-Pet-Tracker mit integrierter Live-Kamera. Wegen 70 g Gewicht und Herstellerempfehlung ab 4 kg ist er vor allem für Hunde und größere Katzen relevant und darf nicht als Mini-Katzentracker positioniert werden.",
+      "priority": 77,
+      "confidence": 90,
+      "reason": "Tractive dokumentiert aktuell eine Überwachung des Kratzverhaltens, die nur DOG 6 und DOG 6 XL unterstützt. Diese modellgebundene Gesundheitsfunktion ist kaufrelevant und sollte auf beiden bestehenden Produktseiten sowie in passenden Vergleichen korrekt als Zusatzfunktion mit Grenzen dargestellt werden.",
       "repositoryMatch": {
-        "exists": false,
+        "exists": true,
         "similarRoutes": [
-          "/gps-tracker/",
+          "/produkt/tractive-dog-6/",
+          "/produkt/tractive-dog-6-xl/",
           "/vergleiche/beste-gps-tracker-fuer-hunde/",
-          "/vergleiche/beste-gps-tracker-fuer-katzen/"
+          "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/"
         ]
       },
       "opportunity": {
-        "seo": 84,
-        "ux": 93,
-        "business": 87,
+        "seo": 62,
+        "ux": 88,
+        "business": 72,
         "freshness": 88,
-        "effort": "medium",
-        "priority": 90,
-        "reason": "Der Tracker eröffnet eine eigenständige Nutzerfrage: Standort plus Sicht aus Tierperspektive. Die klare 4-kg-/70-g-Grenze erzeugt zugleich wichtigen Information Gain gegenüber kleinen GPS-Trackern."
+        "effort": "small",
+        "priority": 77,
+        "reason": "Der Aufwand ist gering, die Funktion hilft aber bei der konkreten Modellwahl zwischen aktueller DOG-6-Serie und älteren Tractive-Modellen. Wichtig ist vor allem die saubere Grenze: Es handelt sich um ein Verhaltenssignal, nicht um eine Diagnose."
       },
-      "lifecycle": {
-        "state": "unchanged",
+      "refreshPlan": {
+        "targetRoute": "/produkt/tractive-dog-6/",
+        "changeType": "update-data",
+        "missingSections": [
+          "Überwachung des Kratzverhaltens als DOG-6-spezifische Funktion",
+          "Grenzen und mögliche Fehlklassifikationen"
+        ],
+        "sectionsToUpdate": [
+          "Gesundheitsfunktionen",
+          "Stärken und Grenzen",
+          "FAQ",
+          "Produktvergleich DOG 6 vs. ältere Tractive-Modelle"
+        ],
+        "factsToVerify": [
+          "Unterstützung nur durch DOG 6 und DOG 6 XL",
+          "Synchronisierung der Gesundheitsdaten über Bluetooth",
+          "mögliche Fehlzählung bei Berührung durch Menschen und Übersehen sehr leichter oder schneller Bewegungen"
+        ],
+        "visuals": [
+          "kleines erklärendes Funktionsvisual zu Kratzverhalten als Trend, nicht Diagnose",
+          "DOG-6-Funktionsmatrix mit Tracking-, Akku- und Gesundheitsfunktionen"
+        ],
+        "decisionTools": [
+          "Funktionsmatrix aktuelle DOG-6-Serie versus ältere Tractive-Hundetracker"
+        ],
+        "faqUpdates": [
+          "Erkennt Tractive Hautkrankheiten?",
+          "Welche Tracker unterstützen Kratzverhalten?",
+          "Wie werden Gesundheitsdaten synchronisiert?"
+        ],
+        "schemaUpdates": [],
+        "internalLinks": [
+          "/hersteller/tractive/",
+          "/vergleiche/beste-gps-tracker-fuer-hunde/"
+        ],
+        "affectedProducts": [
+          "/produkt/tractive-dog-6/",
+          "/produkt/tractive-dog-6-xl/"
+        ],
         "affectedComparisons": [
           "/vergleiche/beste-gps-tracker-fuer-hunde/",
-          "/vergleiche/beste-gps-tracker-fuer-katzen/"
+          "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/"
         ]
       },
       "impact": {
         "affectedPages": [
-          "/gps-tracker/"
+          "/hersteller/tractive/"
         ],
         "affectedComparisons": [
           "/vergleiche/beste-gps-tracker-fuer-hunde/",
-          "/vergleiche/beste-gps-tracker-fuer-katzen/"
+          "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/"
         ],
-        "affectedProducts": [],
-        "estimatedContentHours": 7,
-        "estimatedImageHours": 4,
-        "estimatedSeoImpact": "high"
+        "affectedProducts": [
+          "/produkt/tractive-dog-6/",
+          "/produkt/tractive-dog-6-xl/"
+        ],
+        "estimatedContentHours": 2.0,
+        "estimatedImageHours": 1.0,
+        "estimatedSeoImpact": "medium"
       },
       "actionBundle": {
-        "id": "gps-kamera-tracker-delta-2026-08-15",
-        "title": "GPS-Tracker mit Kamera als neue Geräteklasse",
+        "id": "tractive-dog6-health-feature-refresh",
+        "title": "DOG-6-Gesundheitsfunktionen konsistent aktualisieren",
         "sequence": [
-          "ROLA PetTracker Produktseite anlegen",
-          "Eignungsgrenzen nach Gewicht und Tiergröße modellieren",
-          "Hundevergleich ergänzen",
-          "Katzenvergleich nur mit klarer Größenwarnung ergänzen, falls die aktuelle Vergleichslogik das sinnvoll trägt"
+          "DOG 6 und DOG 6 XL Produktdaten prüfen",
+          "Kratzverhalten mit Grenzen ergänzen",
+          "Vergleichsmatrix aktualisieren",
+          "Herstellerseite auf Funktionskonsistenz prüfen",
+          "Audits und Build ausführen"
         ]
       },
       "visualBrief": {
         "pageType": "product",
-        "subject": "Enabot ROLA PetTracker",
+        "subject": "Tractive DOG 6 Gesundheitsfunktionen",
         "motifs": [
-          "Hero des exakten ROLA PetTracker mit Halteclip",
-          "Thumbnail",
-          "Perspektivansicht am passenden Halsband oder Geschirr",
-          "Detail von Kamera, SOS/QR-Elementen und Befestigung",
-          "reale Nutzung an einem Hund über 4 kg mit plausibler Kameraposition",
-          "Größenvergleich des 70-g-Geräts am Tier"
+          "erklärendes Funktionsvisual: Kratzaktivität als Verlaufssignal",
+          "Vergleichsmatrix DOG 6 und DOG 6 XL mit unterstützten Gesundheitsfunktionen"
         ],
         "styleNotes": [
-          "Nicht als kleiner Katzentracker visualisieren.",
-          "Kamera nur mit den realen 480p- und Sichtfeld-Eigenschaften darstellen; keine Nachtsicht ergänzen.",
-          "Befestigung am Brust- oder Rückenbereich nur so zeigen, wie vom Hersteller vorgesehen."
+          "keine medizinischen Diagnosen visualisieren",
+          "Trackerform und Befestigung anhand aktueller Tractive-Herstellerbilder identifizierbar halten",
+          "alle Bilder als einzelne Outputs erzeugen; Master-Prompt mit robustem Weiter-Modus"
         ],
         "referenceUrls": [
-          "https://de.store.enabot.com/products/rola-pettracker-gps-tracker-for-pets",
-          "https://store.enabot.com/products/rola-pettracker-gps-tracker-for-pets"
+          "https://help.tractive.com/hc/de/articles/34400151311506-Was-ist-die-%C3%9Cberwachung-des-Kratzverhaltens",
+          "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier"
         ]
       },
       "implementationBrief": {
-        "goal": "ROLA PetTracker als eigenständigen GPS-Tracker-mit-Kamera aufnehmen und seine Größen-, Kamera- und Akkugrenzen korrekt in den starken GPS-Cluster integrieren.",
-        "problem": "Der aktuelle GPS-Bestand bildet klassische GPS-Tracker ab, aber keinen aktuellen EU-Tracker mit integrierter Live-Kamera und Zwei-Wege-Audio. Gleichzeitig wäre eine unkritische Aufnahme in Katzenvergleiche wegen 70 g Gewicht und Herstellerempfehlung ab 4 kg irreführend.",
-        "userValue": "Nutzer sehen, wann eine Live-Kamera am Tier tatsächlich Mehrwert bietet und wann Gewicht, Akkulaufzeit, fehlende Nachtsicht oder 480p-Auflösung gegen das Gerät sprechen.",
+        "goal": "Die bestehenden Tractive-DOG-6-Inhalte um die aktuell dokumentierte Kratzverhaltensüberwachung ergänzen und die Funktion mit ihren Grenzen konsistent in Produkt- und Vergleichsdaten abbilden.",
+        "problem": "DOG 6 und DOG 6 XL sind im Repository vorhanden, Tractive dokumentiert jedoch eine zusätzliche modellgebundene Gesundheitsfunktion, die bei der Kaufentscheidung relevant ist und nicht als Diagnose missverstanden werden darf.",
+        "userValue": "Nutzer sehen klar, welche Tractive-Hundetracker die Funktion unterstützen, was sie tatsächlich misst und welche Fehlklassifikationen möglich sind.",
         "implementation": [
-          "Produktseite mit 70 g Gewicht, 62 × 37,5 × 27,1 mm, 1500-mAh-Akku, 3–5 Tagen Hersteller-Akkulaufzeit, 480p-Kamera, 89,8° Sichtfeld, GPS+AGPS, virtueller Zone und Zwei-Wege-Audio anlegen.",
-          "Die Herstellerempfehlung für Tiere über 4 kg prominent in Eignung und Contra modellieren.",
-          "Fehlende Nachtsicht und thermisch bedingte Kameraabschaltung laut Hersteller-FAQ als praktische Grenzen aufnehmen.",
-          "Im Hundevergleich als spezielle Kamera-Option integrieren; im Katzenvergleich nur aufnehmen, wenn Gewicht/Eignung transparent und Vergleichslogik sinnvoll bleibt.",
-          "Keine gesundheitliche Interpretation von Aktivitätsdaten und keine Genauigkeitswerte für GPS erfinden.",
-          "Fehlende Assets nur über einen modelltreuen Master-Prompt vorbereiten; keine erfundenen Bilder oder nicht vorhandenen Pfade referenzieren.",
-          "Genau einen finalen idempotenten, plattformübergreifenden, teillauffähigen Installer mit Backups, Validierung und erfolgreichem zweiten Lauf erzeugen."
+          "Offizielle Tractive-Hilfe als Primärquelle für unterstützte Modelle, Synchronisierung und Grenzen verwenden.",
+          "DOG 6 und DOG 6 XL um die Kratzverhaltensüberwachung ergänzen; ältere Modelle ausdrücklich nicht damit auszeichnen.",
+          "Die Funktion als Trend- bzw. Verhaltenssignal beschreiben, nicht als Haut- oder Krankheitsdiagnose.",
+          "FAQ und Stärken/Grenzen beider Produktseiten aktualisieren.",
+          "Passende Vergleichsdaten im Hundetracker- und Akkulaufzeit-Vergleich nur dort ergänzen, wo Gesundheitsfunktionen tatsächlich als Kriterium vorkommen.",
+          "Genau einen finalen Installer erstellen. Er muss idempotent, plattformübergreifend und teillauffähig sein, Backups anlegen und Ergebnisvalidierung durchführen.",
+          "Strukturelle Dateiänderungen verwenden und fragile lange String-Replacements oder komplexe dynamische RegExp vermeiden.",
+          "Vorhandene npm-Skripte erkennen und wiederverwenden, Installer mit node --check prüfen und nach dem ersten erfolgreichen Lauf ein zweites Mal ausführen.",
+          "Tests müssen Datenwerte und gerendertes Verhalten prüfen, nicht exakte Quelltextformatierung oder Variablennamen."
         ],
         "files": [
-          "/gps-tracker/",
+          "/produkt/tractive-dog-6/",
+          "/produkt/tractive-dog-6-xl/",
+          "/hersteller/tractive/",
           "/vergleiche/beste-gps-tracker-fuer-hunde/",
-          "/vergleiche/beste-gps-tracker-fuer-katzen/"
+          "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/"
         ],
         "doNotChange": [
-          "keine bestehenden Tractive-, Weenect-, Garmin- oder PAJ-Daten ohne konkreten Beleg verändern",
-          "ROLA PetTracker nicht als kleinen Katzentracker oder besonders leichten Tracker bewerben",
-          "keine Nachtsicht, Wasserdichtigkeitsklasse oder GPS-Genauigkeit erfinden"
+          "CAT-6-Funktionen ohne eigene Primärquelle",
+          "medizinische Ratgeber",
+          "Abo-Preise oder GPS-Leistungswerte ohne separaten aktuellen Beleg"
         ],
         "acceptanceCriteria": [
-          "Änderungen passen zum tatsächlich aktuellen Repository-Schema und erzeugen keine parallele Datenstruktur.",
-          "Der spätere Installer ist idempotent, plattformübergreifend für Windows, macOS und Linux und kann nach einem erfolgreichen ersten Lauf ein zweites Mal ohne unbeabsichtigte Änderungen ausgeführt werden.",
-          "Der Installer schützt vorhandene Nutzeränderungen, legt Backups geänderter Bestandsdateien an und validiert seinen Zielzustand.",
-          "Tests prüfen Verhalten und Datenstruktur statt exakter Formatierung, Variablennamen oder zufälliger Quelltextfragmente.",
-          "Es wird genau ein finaler Installer geliefert; erwartbare Hotfix-Ketten werden im selben Installer bereinigt.",
-          "Produktseite nennt 70 g und Herstellerempfehlung ab 4 kg sichtbar.",
-          "Fehlende Nachtsicht und 480p-Kamera werden nicht verschleiert.",
-          "Vergleichsaufnahme erzeugt keine falsche Eignung für kleine Katzen."
+          "DOG 6 und DOG 6 XL nennen Kratzverhaltensüberwachung konsistent.",
+          "Kein älteres Tractive-Modell erhält die Funktion fälschlich.",
+          "Die Grenzen der Erkennung und Bluetooth-Synchronisierung sind sichtbar.",
+          "Vergleichsdaten bleiben schema-konform.",
+          "Der Installer läuft zweimal erfolgreich."
         ],
         "verification": [
-          "Vor Implementierung vorhandene npm-Skripte aus den package.json-Dateien prüfen und nur tatsächlich existierende Audits verwenden.",
-          "node --check für den finalen Installer und alle neu angelegten oder geänderten JS-/MJS-Dateien ausführen.",
-          "Relevante Produkt-, Evidence-, Vergleichs-, Internal-Link- und Structured-Data-Audits ausführen, soweit im Repository vorhanden.",
-          "Vollständigen Produktions-Build erfolgreich ausführen.",
-          "Finalen Installer ein zweites Mal ausführen und Idempotenz sowie ausbleibende unbeabsichtigte Diffs prüfen."
+          "node --check für den finalen Installer",
+          "vorhandener Produktdaten-Audit",
+          "Vergleichsdaten-Audit",
+          "Astro-Build",
+          "zweiter Installerlauf"
         ]
       },
       "actions": [
         {
-          "type": "create-product",
-          "target": "enabot-rola-pettracker",
-          "reason": "Eigenständige GPS+Kamera-Geräteklasse mit offizieller EU-Version."
+          "type": "update-product",
+          "target": "/produkt/tractive-dog-6/",
+          "reason": "Aktuell dokumentierte DOG-6-Funktion ergänzen."
+        },
+        {
+          "type": "update-product",
+          "target": "/produkt/tractive-dog-6-xl/",
+          "reason": "Aktuell dokumentierte DOG-6-XL-Funktion ergänzen."
         },
         {
           "type": "update-comparison",
           "target": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-          "reason": "Kamera-Tracker als speziellen Einsatzfall ergänzen."
-        },
-        {
-          "type": "manual-review",
-          "target": "/vergleiche/beste-gps-tracker-fuer-katzen/",
-          "reason": "Vor Aufnahme prüfen, ob 70 g und >4-kg-Empfehlung zur Zielgruppe des Katzenvergleichs passen."
-        },
-        {
-          "type": "add-internal-links",
-          "target": "/gps-tracker/",
-          "reason": "Neue Produktseite aus dem GPS-Hub auffindbar machen."
+          "reason": "Modellunterschiede bei Gesundheitsfunktionen transparent machen."
         }
       ],
       "evidence": [
         {
-          "source": "Enabot Deutschland – ROLA PetTracker",
-          "url": "https://de.store.enabot.com/products/rola-pettracker-gps-tracker-for-pets",
-          "note": "Deutscher Enabot-Shop listet den ROLA PetTracker als EU-Version mit GPS-Tracking, virtuellem Sicherheitszaun, Foto/Video und Aktivitätsüberwachung.",
-          "accessedAt": "2026-08-15T20:36:00Z"
+          "source": "Tractive Hilfe: Überwachung des Kratzverhaltens",
+          "url": "https://help.tractive.com/hc/de/articles/34400151311506-Was-ist-die-%C3%9Cberwachung-des-Kratzverhaltens",
+          "note": "Tractive nennt DOG 6 und DOG 6 XL als unterstützte Modelle, beschreibt Bluetooth-Synchronisierung und weist auf mögliche Fehl- bzw. Nicht-Erkennungen hin.",
+          "accessedAt": "2026-08-21T12:47:00+02:00"
         },
         {
-          "source": "Enabot Official – ROLA PetTracker Spezifikationen",
-          "url": "https://store.enabot.com/products/rola-pettracker-gps-tracker-for-pets",
-          "note": "Hersteller nennt 70 g, 1500 mAh, 3–5 Tage Akkulaufzeit, 480p-Kamera, keine Nachtsicht, GPS+AGPS und Empfehlung für Katzen/Hunde über 4 kg; FAQ beschreibt thermische Schutzgrenzen der Kamera.",
-          "accessedAt": "2026-08-15T20:36:00Z"
-        },
-        {
-          "source": "Enabot Support – ROLA App",
-          "url": "https://de.store.enabot.com/pages/support-home",
-          "note": "Enabot bestätigt die ROLA-App-Unterstützung für ROLA PetTracker unter iOS und Android.",
-          "accessedAt": "2026-08-15T20:36:00Z"
+          "source": "Tractive Hilfe: Tracker-Auswahl",
+          "url": "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier",
+          "note": "Tractive grenzt die DOG-6-Serie als aktuelle Modellgeneration mit erweiterten Gesundheitsfunktionen von älteren Modellen ab.",
+          "accessedAt": "2026-08-21T12:47:00+02:00"
         }
       ],
-      "discoveredAt": "2026-08-15T20:36:00Z",
-      "lastConfirmedAt": "2026-08-15T20:36:00Z"
-    },
-    {
-      "id": "pettec-cam-360-local-storage",
-      "type": "product",
-      "title": "PetTec Cam 360 als abofreie lokale Speicheroption ergänzen",
-      "status": "open",
-      "priority": 83,
-      "confidence": 95,
-      "reason": "PetTec bietet die Cam 360 aktuell in Deutschland mit 3-MP-Kamera, Schwenk-/Neigfunktion, Bewegungs- und Geräuscherkennung, Zwei-Wege-Audio und einer kostenlosen App an. Besonders relevant für den PfotenTechnik-Vergleich ist die Herstellerpositionierung ohne Pflichtabo sowie die Möglichkeit lokaler microSD-Speicherung. Damit entsteht ein konkreter Gegenpol zu cloud- und abonnementzentrierten Haustierkameras.",
-      "repositoryMatch": {
-        "exists": false,
-        "similarRoutes": [
-          "/haustierkameras/",
-          "/vergleiche/beste-haustierkameras/"
-        ]
-      },
-      "opportunity": {
-        "seo": 79,
-        "ux": 92,
-        "business": 76,
-        "freshness": 75,
-        "effort": "medium",
-        "priority": 83,
-        "reason": "Der Mehrwert liegt nicht in einer weiteren 360°-Kamera, sondern in der belastbaren Entscheidungsachse lokaler Speicher und kein Pflichtabo. Das verbessert Datenschutz- und Folgekostenvergleich."
-      },
-      "lifecycle": {
-        "state": "unchanged",
-        "affectedComparisons": [
-          "/vergleiche/beste-haustierkameras/"
-        ]
-      },
-      "impact": {
-        "affectedPages": [
-          "/haustierkameras/"
-        ],
-        "affectedComparisons": [
-          "/vergleiche/beste-haustierkameras/"
-        ],
-        "affectedProducts": [],
-        "estimatedContentHours": 6,
-        "estimatedImageHours": 3,
-        "estimatedSeoImpact": "medium"
-      },
-      "actionBundle": {
-        "id": "haustierkameras-lokalspeicher-delta-2026-08-15",
-        "title": "Haustierkameras: lokale Speicherung als echter Gegenpol zur Cloud",
-        "sequence": [
-          "PetTec Cam 360 Produktseite anlegen",
-          "Speicher- und Abo-Felder anhand der aktuellen App-/Produktseiten modellieren",
-          "Vergleich um lokale Speicherung versus Cloud vertiefen",
-          "Hub nur um die Auswahlregel ergänzen"
-        ]
-      },
-      "visualBrief": {
-        "pageType": "product",
-        "subject": "PetTec Cam 360°",
-        "motifs": [
-          "Hero der exakten PetTec Cam 360",
-          "Thumbnail",
-          "Perspektivansicht mit realem Schwenk-/Neigbereich",
-          "Detail von Linse und microSD-Speicherbezug",
-          "reale Nutzung in einem Innenraum mit Hund oder Katze"
-        ],
-        "styleNotes": [
-          "Nicht mit Pet Cam Hello, Laser oder Free'n 360 verwechseln.",
-          "Keine Cloudfreiheit behaupten: lokale Speicherung und kostenlose Grundfunktionen sind von optionalen Cloud-Diensten zu trennen."
-        ],
-        "referenceUrls": [
-          "https://pettec.de/products/pet-cam-360",
-          "https://pettec.de/pages/kameras-ohne-abo",
-          "https://pettec.de/pages/app"
-        ]
-      },
-      "implementationBrief": {
-        "goal": "PetTec Cam 360 als lokale, ohne Pflichtabo nutzbare 360°-Haustierkamera aufnehmen und Speicher-/Abo-Unterschiede im Haustierkamera-Vergleich konkret machen.",
-        "problem": "Der bestehende Kamera-Cluster besitzt noch keinen belegten deutschen Produktanker, der lokale microSD-Speicherung und kostenlose Grundfunktionen klar gegen Cloud-/Abo-Modelle stellt.",
-        "userValue": "Nutzer können entscheiden, ob ihnen lokale Speicherung, deutsche Serverangaben und Grundfunktionen ohne Pflichtabo wichtiger sind als AI-Cloudfunktionen anderer Kameras.",
-        "implementation": [
-          "Produktseite nach aktuellem Produktschema mit 3-MP-Kamera, 360°-Schwenk-/Neigfunktion, Bewegungs-/Geräuscherkennung, Tracking, Nachtsicht und Zwei-Wege-Audio anlegen.",
-          "Lokale microSD-Speicherung, kostenlose App-Grundfunktionen und optionalen Cloud Event Video Service sauber voneinander trennen; nicht pauschal „ohne Cloud“ schreiben.",
-          "Herstellerclaim zu DSGVO-Konformität und Servern in Deutschland nur als Herstellerangabe darstellen und nicht als eigene rechtliche Prüfung formulieren.",
-          "Im Vergleich Speicherort, Pflichtabo, optionale Cloud, lokale Aufzeichnung und Privacy-Mechanismen als getrennte Felder nutzen.",
-          "Hub lediglich um die Entscheidungsregel lokale Speicherung vs. Cloud ergänzen; keine neue Ratgeberseite erzeugen.",
-          "Falls Produktassets fehlen, Master-Prompt mit einzelnen Outputs und robustem Weiter-Modus erzeugen; keine Händlerbilder einchecken.",
-          "Genau einen finalen idempotenten, plattformübergreifenden und teillauffähigen Installer mit Backups, Ergebnisvalidierung, node --check und erfolgreichem zweiten Installerlauf erzeugen."
-        ],
-        "files": [
-          "/haustierkameras/",
-          "/vergleiche/beste-haustierkameras/"
-        ],
-        "doNotChange": [
-          "andere PetTec-Kameramodelle nicht automatisch als zusätzliche Produkte anlegen",
-          "optionalen Cloud-Dienst nicht mit Pflichtabo gleichsetzen",
-          "keine eigene DSGVO-Zertifizierung oder rechtliche Garantie behaupten"
-        ],
-        "acceptanceCriteria": [
-          "Änderungen passen zum tatsächlich aktuellen Repository-Schema und erzeugen keine parallele Datenstruktur.",
-          "Der spätere Installer ist idempotent, plattformübergreifend für Windows, macOS und Linux und kann nach einem erfolgreichen ersten Lauf ein zweites Mal ohne unbeabsichtigte Änderungen ausgeführt werden.",
-          "Der Installer schützt vorhandene Nutzeränderungen, legt Backups geänderter Bestandsdateien an und validiert seinen Zielzustand.",
-          "Tests prüfen Verhalten und Datenstruktur statt exakter Formatierung, Variablennamen oder zufälliger Quelltextfragmente.",
-          "Es wird genau ein finaler Installer geliefert; erwartbare Hotfix-Ketten werden im selben Installer bereinigt.",
-          "Produktseite trennt lokale Speicherung, kostenlose Grundfunktionen und optionale Cloud sauber.",
-          "Vergleich kann Pflichtabo und optionales Abo getrennt darstellen.",
-          "Herstellerangaben zu Datenschutz/Serverstandort sind als solche kenntlich und nicht als eigene Rechtsprüfung formuliert."
-        ],
-        "verification": [
-          "Vor Implementierung vorhandene npm-Skripte aus den package.json-Dateien prüfen und nur tatsächlich existierende Audits verwenden.",
-          "node --check für den finalen Installer und alle neu angelegten oder geänderten JS-/MJS-Dateien ausführen.",
-          "Relevante Produkt-, Evidence-, Vergleichs-, Internal-Link- und Structured-Data-Audits ausführen, soweit im Repository vorhanden.",
-          "Vollständigen Produktions-Build erfolgreich ausführen.",
-          "Finalen Installer ein zweites Mal ausführen und Idempotenz sowie ausbleibende unbeabsichtigte Diffs prüfen."
-        ]
-      },
-      "actions": [
-        {
-          "type": "create-product",
-          "target": "pettec-cam-360",
-          "reason": "Deutsche 360°-Haustierkamera mit lokaler Speicheroption und ohne Pflichtabo als eigenständiger Entscheidungstyp."
-        },
-        {
-          "type": "update-comparison",
-          "target": "/vergleiche/beste-haustierkameras/",
-          "reason": "Lokale Speicherung, Pflichtabo und optionale Cloud konkret vergleichbar machen."
-        },
-        {
-          "type": "update-page",
-          "target": "/haustierkameras/",
-          "reason": "Auswahlregel Speicherort/Abo konkretisieren und neue Produktseite intern anbinden."
-        }
-      ],
-      "evidence": [
-        {
-          "source": "PetTec Official – Cam 360",
-          "url": "https://pettec.de/products/pet-cam-360",
-          "note": "Hersteller nennt 3-MP-Kamera, 360°-Rundumsicht, Bewegungs-/Geräuscherkennung, Bewegungsverfolgung, Zwei-Wege-Kommunikation, kostenlose App und Server in Deutschland.",
-          "accessedAt": "2026-08-15T20:36:00Z"
-        },
-        {
-          "source": "PetTec Official – Kameras ohne Abo",
-          "url": "https://pettec.de/pages/kameras-ohne-abo",
-          "note": "PetTec beschreibt lokale Speicherung per microSD und Nutzung ohne monatliche Pflichtgebühren.",
-          "accessedAt": "2026-08-15T20:36:00Z"
-        },
-        {
-          "source": "PetTec Official – App",
-          "url": "https://pettec.de/pages/app",
-          "note": "PetTec trennt kostenlose App-Funktionen von einem optionalen Cloud Event Video Service; dadurch darf 'ohne Pflichtabo' nicht mit 'ohne Cloud-Angebot' gleichgesetzt werden.",
-          "accessedAt": "2026-08-15T20:36:00Z"
-        }
-      ],
-      "discoveredAt": "2026-08-15T20:36:00Z",
-      "lastConfirmedAt": "2026-08-15T20:36:00Z"
+      "discoveredAt": "2026-08-21T12:47:00+02:00",
+      "lastConfirmedAt": "2026-08-21T12:47:00+02:00"
     }
   ]
 }
