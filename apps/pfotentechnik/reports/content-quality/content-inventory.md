@@ -2,11 +2,11 @@
 
 Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus den Quelldateien.
 
-- Indexierbare Seiten: 252
-- Gerenderte HTML-Seiten insgesamt: 360
+- Indexierbare Seiten: 253
+- Gerenderte HTML-Seiten insgesamt: 362
 - Cluster: 17
 - Primäre Intent-Kategorien: 8
-- Harte Fehler: 0
+- Harte Fehler: 11
 - Warnungen: 0
 
 ## Seitentypen
@@ -24,7 +24,7 @@ Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus d
 - manufacturer-index: 1
 - medical-guide: 12
 - problem-solving-guide: 17
-- product: 98
+- product: 99
 
 ## Suchintentionen
 
@@ -35,7 +35,7 @@ Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus d
 - informational: 23
 - medical-information: 14
 - problem-solving: 14
-- product-research: 98
+- product-research: 99
 
 ## Cluster
 
@@ -55,4 +55,4 @@ Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus d
 - smarte-haustiertechnik: 13
 - tierbeschaeftigung: 1
 - tierernaehrung: 1
-- trinkbrunnen: 51
+- trinkbrunnen: 52

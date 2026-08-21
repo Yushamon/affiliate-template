@@ -19,12 +19,12 @@ category:
   path: /trinkbrunnen/
 productUrl: "/produkt/petlibro-dockstream-rfid-smart/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-16"
+updatedAt: "2026-08-21"
 author:
   name: PfotenTechnik Redaktion
 seo:
-  title: PETLIBRO Dockstream RFID Smart im Check
-  description: PETLIBRO Dockstream RFID Smart mit 3 Litern, RFID-Tierzuordnung, App, Edelstahl-Trinkfläche und 2,4-GHz-WLAN.
+  title: PETLIBRO Dockstream RFID Smart: RFID-Trinktracking im Check
+  description: PETLIBRO Dockstream RFID Smart PLWF305: Trinktracking pro Katze, 3-Liter-Tank und App. Was RFID kann und wo Halsbandpflicht und Zuverlässigkeit stören.
   canonical: /produkt/petlibro-dockstream-rfid-smart/
   sitemap: true
   priority: 0.8
@@ -115,18 +115,18 @@ externalEvidence:
       recurringPositives:
         - "Sehr leiser Betrieb und individuelles Monitoring werden positiv hervorgehoben."
       recurringCriticism:
-        - "Einzelne Nutzer berichten von Zuverlässigkeits- oder Erkennungsproblemen."
+        - "Neben Lob für leisen Betrieb und individuelles Monitoring berichten einzelne Nutzer über Probleme mit Erkennung, Wasserstand oder Zuverlässigkeit; die 33 Chewy-Bewertungen ergeben 3,5 von 5 Punkten."
   consensus:
     strengths:
-      - finding: "Individuelles RFID-Trinktracking ist der klare Mehrwert gegenüber normalen Smart-Fountains."
+      - finding: "Individuelles RFID-Trinktracking ist der klare Mehrwert gegenüber normalen Smart-Fountains und wird auch in Nutzerbewertungen als nützliches Monitoring hervorgehoben."
         sourceCount: 2
         confidence: "high"
     weaknesses:
-      - finding: "Das System ist vom RFID-Anhänger und korrekter Erkennung abhängig."
-        sourceCount: 1
+      - finding: "Das System ist vom RFID-Anhänger und korrekter Erkennung abhängig; Nutzerbewertungen liefern zusätzlich ein begrenztes Risikosignal zu Erkennung, Wasserstand und Zuverlässigkeit."
+        sourceCount: 2
         confidence: "medium"
     editorialAssessment: >-
-      Das Monitoring-Konzept ist stark; Zuverlässigkeit und Tag-Akzeptanz bleiben wichtige Prüfpunkte.
+      Das Monitoring-Konzept ist stark, erhöht aber die technische Abhängigkeit von RFID-Erkennung, Kalibrierung, App und WLAN. Die gemischten Nutzerbewertungen sind kein Beleg für einen generellen Defekt, machen Rückgabemöglichkeit und Garantie aber kaufrelevant.
 decision:
   bestFor:
     - Mehrkatzenhaushalte
@@ -138,11 +138,14 @@ decision:
     - liest keinen implantierten Mikrochip
     - RFID-Anhänger kann andere Mikrochip-Futterautomaten beeinflussen
     - nur 2,4-GHz-WLAN und kabelgebundener Betrieb
+    - Einrichtung und zuverlässige Messung hängen zusätzlich von korrekter Aufstellung und Kalibrierung ab
 review:
   summary: Der Dockstream RFID Smart ordnet Trinkereignisse über PETLIBRO-Halsbandanhänger einzelnen Katzen zu.
   verdict: >-
-    Die sinnvollste Dockstream-Variante für echte Mehrtierauswertung, sofern Halsband und proprietärer RFID-Anhänger
-    akzeptiert werden.
+    Der Dockstream RFID Smart ist vor allem interessant, wenn in einem Mehrkatzenhaushalt wirklich erkennbar sein soll,
+    welches Tier wie viel trinkt. Dafür bietet die RFID-Zuordnung einen seltenen Mehrwert. Wer lediglich einen leisen,
+    pflegeleichten Trinkbrunnen sucht, kauft sich dagegen zusätzliche technische Abhängigkeiten ein. Gemischte
+    Nutzerberichte zu Erkennung und Zuverlässigkeit sprechen dafür, Rückgabemöglichkeit und Garantie mitzuwerten.
 strengths:
   - tierbezogene Trinkdaten für bis zu fünf Katzen
   - erfasst Menge, Häufigkeit und Dauer
@@ -155,6 +158,7 @@ weaknesses:
   - kein implantierter Mikrochip lesbar
   - nur 2,4-GHz-WLAN
   - Filterwechsel etwa alle zwei Wochen
+  - gemischte Nutzerberichte zu Erkennung, Wasserstand und Zuverlässigkeit
 experience:
   summary: >-
     RFID kann Unterschiede zwischen Tieren sichtbar machen. Messwerte bleiben Alltagshinweise und ersetzen keine
@@ -294,6 +298,12 @@ Der Dockstream RFID Smart löst ein reales Problem in Mehrkatzenhaushalten: Der 
 ## Proprietäres RFID-System
 
 Die Zuordnung funktioniert ausschließlich über PETLIBRO-Halsbandanhänger. Implantierte Mikrochips und fremde RFID-Tags werden nicht gelesen. Das Halsband ist deshalb keine optionale Ergänzung, sondern Voraussetzung.
+
+Gerade in einem Mehrkatzenhaushalt ist das der entscheidende Unterschied zu einem normalen Smart-Brunnen: Statt nur den Gesamtverbrauch zu sehen, lassen sich Trinkereignisse einzelnen Tieren zuordnen. Mehr zur Auswahl nach Tierzahl findest du im Ratgeber [Trinkbrunnen für mehrere Katzen](/trinkbrunnen-fuer-mehrere-katzen/).
+
+## Was die Smart-Funktionen im Alltag verlangen
+
+Das zusätzliche Monitoring bringt auch mehr Fehlerquellen mit. RFID-Erkennung, Aufstellung und Kalibrierung, App und WLAN müssen zusammenspielen. Die vorhandenen Nutzerbewertungen sind gemischt: Neben Lob für leisen Betrieb und tierbezogene Daten gibt es einzelne Berichte über Erkennungs-, Wasserstands- oder Zuverlässigkeitsprobleme. Das ist kein Beleg für einen generellen Serienfehler, macht eine gute Rückgabemöglichkeit aber relevanter als bei einem einfachen Trinkbrunnen.
 
 ## Grenzen der Daten
 

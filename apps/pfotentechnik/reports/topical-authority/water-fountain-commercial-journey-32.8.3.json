@@ -1,0 +1,88 @@
+{
+  "patch": "pfotentechnik-water-fountain-commercial-journey-32.8.3",
+  "status": "implemented",
+  "opportunity": "Trinkbrunnen um kaufnahe Intentionen ergänzen",
+  "searchData": {
+    "source": "src/data/seo/search-dashboard.json",
+    "generatedAt": "2026-08-19T05:06:34.516Z",
+    "assessment": "lowData",
+    "finding": "Nur die Reinigungsroute besitzt im aktuellen 7-Tage-Fenster sichtbare Trinkbrunnen-Daten; das reicht nicht für neue Seiten oder Zusammenführungen. Ältere Search-Daten bestätigen Hub und Katzenvergleich als getrennte Landingpages."
+  },
+  "intentMatrix": [
+    {
+      "route": "/trinkbrunnen/",
+      "file": "src/content/pages/trinkbrunnen.md",
+      "currentIntent": "Tier- und alltagsbezogene Vorauswahl vor dem Modellvergleich",
+      "targetIntent": "Kaufberatungs-Hub mit Übergängen zu Material, Filterpflege und Tiervergleich",
+      "owner": "/trinkbrunnen/",
+      "overlapRisk": "Niedrig, solange der Hub Kriterien einordnet und keine Detail- oder Modellbewertung übernimmt.",
+      "decision": "Journey neu ordnen",
+      "change": "Direkte kontextuelle Übergänge zum Material- und Filterratgeber ergänzt.",
+      "dependencies": ["Material-Owner vorhanden", "Filter-Owner vorhanden", "Katzenvergleich vorhanden"],
+      "acceptanceCriterion": "Der Hub verlinkt beide Owner genau im jeweiligen Kriterienabschnitt; beide Ziele existieren."
+    },
+    {
+      "route": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "file": "src/content/pages/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff.md",
+      "currentIntent": "Materialvergleich mit kaufnaher Vorselektion",
+      "targetIntent": "Eindeutiger Owner der Materialfrage mit Übergang zum Katzenvergleich",
+      "owner": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "overlapRisk": "Mittel zum Hub, falls der Hub selbst eine Materialrangliste ausbaut.",
+      "decision": "behalten",
+      "change": "Keine Inhaltsänderung; vorhandene recommendationJourney und Vergleichsverlinkung genügen.",
+      "dependencies": ["Katzenvergleich"],
+      "acceptanceCriterion": "Materialfrage bleibt eigenständig und führt strukturell zum Katzenvergleich."
+    },
+    {
+      "route": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "file": "src/content/pages/filter-im-katzentrinkbrunnen-wechseln.md",
+      "currentIntent": "Filterwechsel, Warnzeichen und Folgekosten",
+      "targetIntent": "Eindeutiger Owner der Filterfrage mit kaufnahem Übergang",
+      "owner": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "overlapRisk": "Niedrig; die filterlose Route beantwortet eine andere Betriebsfrage.",
+      "decision": "behalten",
+      "change": "Keine Inhaltsänderung; vorhandene recommendationJourney und Vergleichsverlinkung genügen.",
+      "dependencies": ["Katzenvergleich"],
+      "acceptanceCriterion": "Filterpflege und Kaufkosten bleiben verbunden, ohne neue Filter-Vergleichsseite."
+    },
+    {
+      "route": "/katzentrinkbrunnen-richtig-reinigen/",
+      "file": "src/content/pages/katzentrinkbrunnen-richtig-reinigen.md",
+      "currentIntent": "Operative Reinigung von Tank, Wasserweg und Pumpe",
+      "targetIntent": "Hygiene-Owner mit natürlichem Übergang zur Modellauswahl",
+      "owner": "/katzentrinkbrunnen-richtig-reinigen/",
+      "overlapRisk": "Mittel zu Pumpe, Biofilm und Kalk; diese bleiben engere Problem-Owner.",
+      "decision": "behalten",
+      "change": "Bewusst unverändert; der bestehende Vergleichsübergang schließt die Journey bereits.",
+      "dependencies": ["Pumpe-, Biofilm- und Kalkratgeber", "Katzenvergleich"],
+      "acceptanceCriterion": "Keine Zusammenführung; Spezialrouten bleiben fachlich getrennt."
+    },
+    {
+      "route": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+      "currentIntent": "Kommerzielle Evaluation konkreter Katzenbrunnen",
+      "targetIntent": "Einziger Vergleichs-Owner für Material-, Reinigungs- und Filterkriterien",
+      "owner": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "overlapRisk": "Niedrig, sofern keine separaten Material-, Hygiene- oder Filtervergleiche entstehen.",
+      "decision": "behalten",
+      "change": "Bewusst unverändert; Kriterien und Rücklinks sind bereits vorhanden.",
+      "dependencies": ["Produktdatenbestand", "drei Kriterienratgeber"],
+      "acceptanceCriterion": "Vergleich erläutert alle drei Kriterien und verlinkt deren Owner."
+    }
+  ],
+  "rejected": [
+    "Kein neuer Material-, Hygiene- oder Filtervergleich",
+    "Keine schematischen Änderungen an Produkt- oder Herstellerseiten",
+    "Keine Zusammenführung von Reinigung, Pumpe, Biofilm oder Kalk",
+    "Keine Hundematerial- oder Hundefilterseite ohne belastbare eigene Nachfrage"
+  ],
+  "simpleImprovements": [
+    "Hub → Materialratgeber",
+    "Hub → Filterratgeber",
+    "Regressionsprüfung der bestehenden Rückwege zum Katzenvergleich"
+  ],
+  "openQuestions": [
+    "Die aktuellen Search-Daten sind als lowData markiert; eine spätere Neubewertung braucht ein belastbareres Zeitfenster.",
+    "Für Hunde ist keine eigenständige Material- oder Filterintention belegt."
+  ]
+}

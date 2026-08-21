@@ -6,6 +6,11 @@ import {
   updateProductOperationsState
 } from "../price-intelligence/service.mjs";
 import {
+  getOpportunityState,
+  markOpportunityOptimized,
+  reopenOpportunity
+} from "../seo/opportunity-state.mjs";
+import {
   approveMediaJob,
   buildMediaJob,
   createMediaJob,
@@ -58,6 +63,23 @@ export async function handleOperationsRoute({ request, response, requestUrl, ori
       assertJsonRequest(request);
       const body = await readJsonBody(request, 32_768);
       json(response, 200, await updateProductOperationsState(body), origin);
+      return true;
+    }
+
+    if (request.method === "GET" && pathname === "/api/admin/seo/opportunities/state") {
+      json(response, 200, await getOpportunityState(), origin);
+      return true;
+    }
+    if (request.method === "POST" && pathname === "/api/admin/seo/opportunities/mark") {
+      assertJsonRequest(request);
+      const body = await readJsonBody(request, 32_768);
+      json(response, 200, await markOpportunityOptimized(body), origin);
+      return true;
+    }
+    if (request.method === "POST" && pathname === "/api/admin/seo/opportunities/reopen") {
+      assertJsonRequest(request);
+      const body = await readJsonBody(request, 32_768);
+      json(response, 200, await reopenOpportunity(body), origin);
       return true;
     }
 

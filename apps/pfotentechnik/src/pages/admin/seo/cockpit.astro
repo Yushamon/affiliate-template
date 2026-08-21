@@ -2,9 +2,18 @@
 import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
 import { loadSeoDashboard } from "../../../lib/seo/loadDashboard";
 import { loadSeoRecovery } from "../../../lib/seo/loadRecovery";
+import { isOpportunityObserving, readOpportunityState } from "../../../lib/seo/opportunity-state.mjs";
 
 const payload = loadSeoDashboard();
 const recovery = loadSeoRecovery();
+const opportunityServiceUrl = import.meta.env.PUBLIC_SEARCH_ADMIN_URL || "http://127.0.0.1:4178";
+const serializedOpportunityConfig = JSON.stringify({ serviceUrl: opportunityServiceUrl }).replaceAll("<", "\\u003c");
+const opportunityState = readOpportunityState();
+const opportunityNow = Date.now();
+const observingEntries = Object.values(opportunityState.entries || {})
+  .filter((entry: any) => isOpportunityObserving(entry, opportunityNow))
+  .sort((a: any, b: any) => new Date(b.optimizedAt).getTime() - new Date(a.optimizedAt).getTime());
+const observingPages = new Set(observingEntries.map((entry: any) => entry.page));
 const serializedPayload = JSON.stringify(payload)
   .replace(/</g, "\\u003c")
   .replace(/\u2028/g, "\\u2028")
@@ -14,7 +23,15 @@ const recoveryGeneratedAt = recovery.generatedAt ? new Date(recovery.generatedAt
 const recoveryMigrationRows = recovery.migrations
   .filter((row) => row.status !== "healthy" || row.signal.primaryOld.impressions > 0)
   .slice(0, 12);
-const recoveryOpportunityRows = recovery.opportunities.slice(0, 15);
+const recoveryOpportunityRows = recovery.opportunities
+  .filter((row) => !observingPages.has(row.page))
+  .slice(0, 15);
+const activeOpportunityCount = recovery.opportunities.filter((row) => !observingPages.has(row.page)).length;
+const recoveryOpportunityMap = new Map(recovery.opportunities.map((row) => [row.page, row]));
+const recoveryObservingRows = observingEntries.slice(0, 20).map((entry: any) => ({
+  entry,
+  current: recoveryOpportunityMap.get(entry.page),
+}));
 const recoveryStatusLabel = {
   risk: "Risiko",
   watch: "beobachten",
@@ -132,8 +149,8 @@ const recoveryStatusLabel = {
           </article>
           <article class="seo-metric">
             <span>Opportunities</span>
-            <strong>{recovery.summary.opportunities}</strong>
-            <span>Google-only, 28 Tage + 3 Monate Kontext</span>
+            <strong>{activeOpportunityCount}</strong>
+            <span>{observingEntries.length} in Beobachtung · Google-only</span>
           </article>
         </div>
       )}
@@ -188,7 +205,7 @@ const recoveryStatusLabel = {
           <div class="seo-table-wrap">
             <table class="seo-table">
               <thead>
-                <tr><th>Seite</th><th>Signal</th><th>Nächster Hebel</th></tr>
+                <tr><th>Seite</th><th>Signal</th><th>Nächster Hebel</th><th>Aktion</th></tr>
               </thead>
               <tbody>
                 {recoveryOpportunityRows.length ? recoveryOpportunityRows.map((row) => (
@@ -201,9 +218,23 @@ const recoveryStatusLabel = {
                       {row.metrics.impressions} Impr. · Pos. {row.metrics.position.toFixed(1)}
                     </td>
                     <td>{row.action}</td>
+                    <td>
+                      <button
+                        type="button"
+                        class="pt-button seo-button"
+                        data-opportunity-mark
+                        data-page={row.page}
+                        data-clicks={row.metrics.clicks}
+                        data-impressions={row.metrics.impressions}
+                        data-ctr={row.metrics.ctr}
+                        data-position={row.metrics.position}
+                      >
+                        Bearbeitet
+                      </button>
+                    </td>
                   </tr>
                 )) : (
-                  <tr><td colspan="3">Noch keine belastbaren GSC-Opportunities vorhanden.</td></tr>
+                  <tr><td colspan="4">Keine aktive Opportunity. Bearbeitete Seiten können unten beobachtet werden.</td></tr>
                 )}
               </tbody>
             </table>
@@ -212,6 +243,57 @@ const recoveryStatusLabel = {
       </section>
     )}
 
+    {recovery.available && (
+      <section class="seo-panel seo-stack" data-opportunity-watch>
+        <div class="seo-section-header">
+          <div>
+            <span class="seo-eyebrow">Nach Optimierung</span>
+            <h2>Optimierungen beobachten</h2>
+          </div>
+          <span class="seo-muted">Standard: 21 Tage Cooldown</span>
+        </div>
+        <div class="seo-table-wrap">
+          <table class="seo-table">
+            <thead>
+              <tr><th>Seite</th><th>Bearbeitet</th><th>Baseline</th><th>Aktuelles Signal</th><th>Aktion</th></tr>
+            </thead>
+            <tbody>
+              {recoveryObservingRows.length ? recoveryObservingRows.map(({ entry, current }: any) => (
+                <tr>
+                  <td><code>{entry.page}</code></td>
+                  <td>
+                    {new Date(entry.optimizedAt).toLocaleDateString("de-DE")}<br />
+                    <span class="seo-muted">bis {new Date(entry.observeUntil).toLocaleDateString("de-DE")}</span>
+                  </td>
+                  <td>
+                    {entry.baseline?.impressions ?? 0} Impr. · Pos. {Number(entry.baseline?.position || 0).toFixed(1)}
+                  </td>
+                  <td>
+                    {current
+                      ? `${current.metrics.impressions} Impr. · Pos. ${current.metrics.position.toFixed(1)}`
+                      : "aktuell keine Opportunity"}
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      class="pt-button seo-button"
+                      data-opportunity-reopen
+                      data-page={entry.page}
+                    >
+                      Wieder öffnen
+                    </button>
+                  </td>
+                </tr>
+              )) : (
+                <tr><td colspan="5">Noch keine Optimierung in Beobachtung.</td></tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )}
+
+    <script type="application/json" data-opportunity-config set:html={serializedOpportunityConfig}></script>
     <script type="application/json" data-search-json set:html={serializedPayload}></script>
   </div>
 </SeoAdminLayout>
@@ -338,6 +420,73 @@ const recoveryStatusLabel = {
 
     root.querySelectorAll<HTMLButtonElement>("[data-range]").forEach((button) => {
       button.addEventListener("click", () => render(button.dataset.range || ""));
+    });
+
+    const opportunityConfigNode = root.querySelector<HTMLScriptElement>("[data-opportunity-config]");
+    const opportunityConfig = JSON.parse(opportunityConfigNode?.textContent || "{}");
+    const opportunityServiceUrl = String(
+      opportunityConfig.serviceUrl || "http://127.0.0.1:4178"
+    ).replace(/\/$/, "");
+
+    const postJson = async (url: string, body: Record<string, unknown>) => {
+      const response = await fetch(`${opportunityServiceUrl}${url}`, {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+          "accept": "application/json",
+        },
+        body: JSON.stringify(body),
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        throw new Error(result?.error?.message || `HTTP ${response.status}`);
+      }
+      return result;
+    };
+
+    root.querySelectorAll<HTMLButtonElement>("[data-opportunity-mark]").forEach((button) => {
+      button.addEventListener("click", async () => {
+        const page = button.dataset.page || "";
+        const originalLabel = button.textContent || "Bearbeitet";
+        button.disabled = true;
+        button.textContent = "Speichere…";
+
+        try {
+          await postJson("/api/admin/seo/opportunities/mark", {
+            page,
+            observeDays: 21,
+            baseline: {
+              clicks: Number(button.dataset.clicks || 0),
+              impressions: Number(button.dataset.impressions || 0),
+              ctr: Number(button.dataset.ctr || 0),
+              position: Number(button.dataset.position || 0),
+            },
+          });
+          window.location.reload();
+        } catch (error) {
+          button.disabled = false;
+          button.textContent = originalLabel;
+          window.alert(error instanceof Error ? error.message : String(error));
+        }
+      });
+    });
+
+    root.querySelectorAll<HTMLButtonElement>("[data-opportunity-reopen]").forEach((button) => {
+      button.addEventListener("click", async () => {
+        const page = button.dataset.page || "";
+        const originalLabel = button.textContent || "Wieder öffnen";
+        button.disabled = true;
+        button.textContent = "Öffne…";
+
+        try {
+          await postJson("/api/admin/seo/opportunities/reopen", { page });
+          window.location.reload();
+        } catch (error) {
+          button.disabled = false;
+          button.textContent = originalLabel;
+          window.alert(error instanceof Error ? error.message : String(error));
+        }
+      });
     });
 
     const saved = localStorage.getItem("seo-cockpit-range");

@@ -37,13 +37,14 @@ images:
     - src: "../../assets/images/products/petlibro-luma-smart-litter-box/gallery-3.webp"
       alt: "PETLIBRO Luma Smart Self-Cleaning Litter Box, Produktansicht 3"
 price:
-  current: null
+  current: 559.99
   currency: "EUR"
   status: "unknown"
+  checkedAt: "2026-08-19T08:13:00.212Z"
   source:
-    id: "manual"
+    id: "amazon.de"
     label: "amazon.de"
-    type: "manual"
+    type: "merchant"
 rating: 3.5
 ratings: { datenlage: 4.1, passform: 3.8, wartung: 3.7, folgekosten: 3.0, datenschutz: 2.9 }
 editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-15", note: "Datencheck offizieller PETLIBRO-Quellen; Sicherheits- und Geruchsclaims sind Herstellerangaben, kein eigener Produkttest." }
@@ -89,17 +90,6 @@ affiliate:
   rel: "sponsored nofollow noopener"
   target: "_blank"
 
-priceState: "unknown"
-priceUpdated: "2026-08-17T15:48:40.462Z"
-priceAvailable: false
-affiliateAvailable: true
-availability: "unknown"
-availabilityReason: "Deutsche Herstellerseite bestätigt das Produkt; Preis und konkrete Lieferbarkeit vor Kauf erneut prüfen."
-availabilityUpdated: "2026-08-17T15:48:40.462Z"
-editorialStatus: "complete"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
-
 externalEvidence:
   professionalReviews:
     - publisher: "Cats.com"
@@ -140,6 +130,16 @@ externalEvidence:
         confidence: "medium"
     editorialAssessment: "Für die Luma liegt erstmals eine belastbare unabhängige mehrwöchige Hands-on-Review vor. Die aktuelle Nutzerbasis bestätigt sowohl schnelle Akzeptanz als auch einzelne Schwächen der Reinigungs- und Trennlogik. Die Trustpilot-Gesamtwertung ist jedoch markenweit und darf nicht als Luma-Produktbewertung dargestellt werden."
   note: "Cats.com bezieht sich eindeutig auf die aktuelle PETLIBRO Luma. Trustpilot wird ausschließlich als markenweite Nutzerplattform geführt; nur ausdrücklich auf Luma bezogene Erfahrungsinhalte fließen vorsichtig in die Einordnung ein."
+priceState: "available"
+priceUpdated: "2026-08-19T08:13:00.212Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-08-19T08:13:00.212Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 ---
 
 ## Herstellerfunktion, praktische Bedeutung und offene Erfahrung

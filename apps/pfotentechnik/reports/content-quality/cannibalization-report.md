@@ -1,12 +1,12 @@
 # Content-Quality- und Kannibalisierungsreport
 
-- Indexierbare Seiten: 252
+- Indexierbare Seiten: 253
 - Exakte Duplikate: 0
 - Near-Duplicates: 0
 - Offene Intent-Konflikte: 0
 - Gelöste Konflikte: 2
 - Manuelle Prüffälle: 0
-- Harte Fehler: 0
+- Harte Fehler: 11
 - Warnungen: 0
 
 ## Konflikte und bewusste Abgrenzungen
@@ -42,7 +42,7 @@
 - Intentionen: product-research ↔ product-research
 - Maßnahme: DIFFERENTIATE
 - Begründung: Zwei eigenständige PETKIT-Modellvarianten mit unterschiedlicher Produktidentität.
-- Ähnlichkeit: 0.7098
+- Ähnlichkeit: 0.7198
 
 ### separated|/produkt/tractive-dog-6-xl/|/produkt/tractive-dog-6/
 
@@ -53,14 +53,24 @@
 - Intentionen: product-research ↔ product-research
 - Maßnahme: DIFFERENTIATE
 - Begründung: Standard- und XL-Variante besitzen unterschiedliche Größen- und Einsatzprofile.
-- Ähnlichkeit: 0.7451
+- Ähnlichkeit: 0.741
 
 ## Audit-Befunde
 
-Keine offenen Befunde.
+- **ERROR · CONTENT_COMPARISON_COUNT_MISMATCH** · /vergleiche/beste-automatische-katzentoiletten/: Quelldaten nennen 9 Vergleichsprodukte, gerendert erkannt wurden 10.
+- **ERROR · CONTENT_COMPARISON_COUNT_MISMATCH** · /vergleiche/beste-futterautomaten-fuer-hunde/: Quelldaten nennen 4 Vergleichsprodukte, gerendert erkannt wurden 16.
+- **ERROR · CONTENT_COMPARISON_COUNT_MISMATCH** · /vergleiche/beste-futterautomaten-fuer-katzen/: Quelldaten nennen 8 Vergleichsprodukte, gerendert erkannt wurden 27.
+- **ERROR · CONTENT_COMPARISON_COUNT_MISMATCH** · /vergleiche/beste-futterautomaten-fuer-nassfutter/: Quelldaten nennen 5 Vergleichsprodukte, gerendert erkannt wurden 6.
+- **ERROR · CONTENT_COMPARISON_COUNT_MISMATCH** · /vergleiche/beste-futterautomaten-mit-kamera/: Quelldaten nennen 3 Vergleichsprodukte, gerendert erkannt wurden 6.
+- **ERROR · CONTENT_COMPARISON_COUNT_MISMATCH** · /vergleiche/beste-futterautomaten-ohne-wlan/: Quelldaten nennen 3 Vergleichsprodukte, gerendert erkannt wurden 5.
+- **ERROR · CONTENT_COMPARISON_COUNT_MISMATCH** · /vergleiche/beste-haustierkameras/: Quelldaten nennen 5 Vergleichsprodukte, gerendert erkannt wurden 7.
+- **ERROR · CONTENT_COMPARISON_COUNT_MISMATCH** · /vergleiche/beste-trinkbrunnen-fuer-hunde/: Quelldaten nennen 6 Vergleichsprodukte, gerendert erkannt wurden 10.
+- **ERROR · CONTENT_COMPARISON_COUNT_MISMATCH** · /vergleiche/beste-trinkbrunnen-fuer-katzen/: Quelldaten nennen 11 Vergleichsprodukte, gerendert erkannt wurden 21.
+- **ERROR · CONTENT_COMPARISON_COUNT_MISMATCH** · /vergleiche/futterautomat-mit-app/: Quelldaten nennen 5 Vergleichsprodukte, gerendert erkannt wurden 6.
+- **ERROR · CONTENT_COMPARISON_COUNT_MISMATCH** · /vergleiche/gps-tracker-mit-langer-akkulaufzeit/: Quelldaten nennen 7 Vergleichsprodukte, gerendert erkannt wurden 8.
 
 ## Entscheidungsmatrix
 
 - CONSOLIDATE: 2
-- KEEP: 252
-- NOINDEX: 108
+- KEEP: 253
+- NOINDEX: 109

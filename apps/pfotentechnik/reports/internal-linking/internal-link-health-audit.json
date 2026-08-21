@@ -1,27 +1,29 @@
 {
   "version": "4.0.1",
-  "generatedAt": "2026-08-16T09:06:54.132Z",
+  "generatedAt": "2026-08-21T10:44:29.304Z",
   "strict": true,
   "inputs": {
     "legacyVersion": "3.0.3",
     "targetAuditVersion": "2.0.2",
-    "builtRoutes": 360
+    "builtRoutes": 362
   },
   "summary": {
-    "documents": 240,
+    "documents": 241,
     "legacyErrors": 0,
-    "legacyWarnings": 6,
-    "runtimeErrors": 0,
-    "effectiveErrors": 0,
-    "effectiveWarnings": 6,
+    "legacyWarnings": 9,
+    "runtimeErrors": 1,
+    "effectiveErrors": 1,
+    "effectiveWarnings": 9,
     "falsePositives": 0
   },
   "classifications": {
-    "advisory": 17
+    "advisory": 20,
+    "verified-runtime-error": 1
   },
   "effectiveSeverities": {
+    "error": 1,
     "info": 11,
-    "warning": 6
+    "warning": 9
   },
   "findings": [
     {
@@ -29,6 +31,26 @@
       "code": "NO_INCOMING_INTERNAL_LINK",
       "message": "/hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
       "targetRoute": "/hund-hat-durchfall/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/hund-trinkt-ploetzlich-viel/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/hund-trinkt-ploetzlich-viel/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/katze-an-trinkbrunnen-gewoehnen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/katze-an-trinkbrunnen-gewoehnen/",
       "originalSeverity": "warning",
       "effectiveSeverity": "warning",
       "classification": "advisory",
@@ -49,6 +71,16 @@
       "code": "NO_INCOMING_INTERNAL_LINK",
       "message": "/katzentrinkbrunnen-ohne-filter/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
       "targetRoute": "/katzentrinkbrunnen-ohne-filter/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/produkt/feelneedy-fn-w18-8l-katzenbrunnen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/produkt/feelneedy-fn-w18-8l-katzenbrunnen/",
       "originalSeverity": "warning",
       "effectiveSeverity": "warning",
       "classification": "advisory",
@@ -259,6 +291,21 @@
       "effectiveSeverity": "info",
       "classification": "advisory",
       "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "error",
+      "code": "MISSING_TARGET",
+      "sourceFile": "apps/pfotentechnik/dist/produkt/feelneedy-fn-w18-8l-katzenbrunnen/index.html",
+      "sourceRoute": "/produkt/feelneedy-fn-w18-8l-katzenbrunnen/",
+      "originalTarget": "/hersteller/feelneedy/",
+      "normalizedTarget": "/hersteller/feelneedy/",
+      "finalTarget": "/hersteller/feelneedy/",
+      "reason": "Internes Ziel ist nicht im Build-Routeninventar vorhanden.",
+      "recommendation": "Link korrigieren oder fehlende Route wiederherstellen.",
+      "originalSeverity": "error",
+      "effectiveSeverity": "error",
+      "classification": "verified-runtime-error",
+      "rationale": "Direkt im gebauten HTML durch den Linkziel-Audit bestätigt."
     }
   ]
 }

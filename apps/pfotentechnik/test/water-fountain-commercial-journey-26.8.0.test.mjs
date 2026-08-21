@@ -5,11 +5,23 @@ import test from "node:test";
 
 const APP = process.cwd();
 const files = {
+  hub: path.join(APP, "src/content/pages/trinkbrunnen.md"),
   material: path.join(APP, "src/content/pages/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff.md"),
   cleaning: path.join(APP, "src/content/pages/katzentrinkbrunnen-richtig-reinigen.md"),
   filter: path.join(APP, "src/content/pages/filter-im-katzentrinkbrunnen-wechseln.md"),
   comparison: path.join(APP, "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md"),
 };
+
+test("Hub führt Material- und Filterfragen zu ihren eindeutigen Intent-Ownern", () => {
+  assert.match(
+    source.hub,
+    /\[Materialratgeber für Katzenbrunnen\]\(\/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff\/\)/,
+  );
+  assert.match(
+    source.hub,
+    /\[Filter im Katzenbrunnen wechseln\]\(\/filter-im-katzentrinkbrunnen-wechseln\/\)/,
+  );
+});
 
 const source = Object.fromEntries(
   Object.entries(files).map(([key, file]) => [key, fs.readFileSync(file, "utf8")]),

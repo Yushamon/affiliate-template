@@ -1,14 +1,14 @@
 # Internal-Link Health Audit 4.0.1
 
-Erstellt: 2026-08-16T09:06:54.132Z
+Erstellt: 2026-08-21T10:44:29.304Z
 
 ## Zusammenfassung
 
-- Dokumente: 240
+- Dokumente: 241
 - Legacy-Fehler: 0
-- Build-verifizierte Laufzeitfehler: 0
-- Effektive Strict-Fehler: 0
-- Effektive Warnungen: 6
+- Build-verifizierte Laufzeitfehler: 1
+- Effektive Strict-Fehler: 1
+- Effektive Warnungen: 9
 - Erkannte False Positives: 0
 
 ## Bewertungslogik
@@ -20,7 +20,7 @@ Erstellt: 2026-08-16T09:06:54.132Z
 
 ## Verifizierte Laufzeitfehler
 
-Keine Befunde.
+- **ERROR · MISSING_TARGET · verified-runtime-error:**  — Direkt im gebauten HTML durch den Linkziel-Audit bestätigt.
 
 ## Architekturfehler
 
@@ -37,8 +37,11 @@ Keine Befunde.
 ## Weitere Prüfhinweise
 
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
+- **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /hund-trinkt-ploetzlich-viel/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
+- **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /katze-an-trinkbrunnen-gewoehnen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /katzentrinkbrunnen-ohne-filter/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
+- **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /produkt/feelneedy-fn-w18-8l-katzenbrunnen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /seniorenhunde-richtig-versorgen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /trinkbrunnen-fuer-kitten-sicher/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /wie-kann-technik-gegen-langeweile-helfen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.

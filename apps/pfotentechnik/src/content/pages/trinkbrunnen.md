@@ -204,11 +204,15 @@ Ein Akku ist kein Qualitätsmerkmal an sich. Wenn der Brunnen ohnehin immer am s
 
 Eine pauschale Rangliste nach Material wäre deshalb zu simpel. **Die Konstruktion entscheidet.**
 
+Wenn du die Werkstoffe vor der Modellauswahl genauer abwägen möchtest, vergleicht der [Materialratgeber für Katzenbrunnen](/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/) Edelstahl, Keramik und Kunststoff nach wasserberührten Flächen, Reinigung, Gewicht und Bruchrisiko.
+
 ## 5. Filter, UVC und App: nützlich, aber nachrangig
 
 ### Filter
 
 Filter können Haare und Partikel auffangen. Sie sind Verbrauchsmaterial. Deshalb solltest du vor dem Kauf nicht nur das Wechselintervall, sondern auch Preis und Verfügbarkeit prüfen.
+
+Wie Filtertyp, Wechselintervall und laufende Kosten zusammenhängen, erklärt der Ratgeber [Filter im Katzenbrunnen wechseln](/filter-im-katzentrinkbrunnen-wechseln/). Die konkrete Modellbewertung bleibt anschließend Aufgabe des Katzenbrunnen-Vergleichs.
 
 ### UVC
 

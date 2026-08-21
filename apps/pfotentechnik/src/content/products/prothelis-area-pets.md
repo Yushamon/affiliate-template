@@ -36,17 +36,33 @@ images:
       alt: "Prothelis area Pets, Produktansicht 2"
     - src: "../../assets/images/products/prothelis-area-pets/gallery-3.webp"
       alt: "Prothelis area Pets, Produktansicht 3"
-price: { current: null, currency: "EUR", status: "unknown", checkedAt: "2026-08-16", source: { id: "prothelis", label: "Prothelis", type: "editorial", url: "https://www.prothelis.de/de/area-pets/" } }
+price:
+  current: null
+  currency: "EUR"
+  status: "unknown"
+  source:
+    id: "prothelis"
+    label: "Prothelis"
+    type: "editorial"
 priceAutomation: "editorial"
-priceState: "unknown"
-priceAvailable: false
-affiliateAvailable: false
-availability: "unknown"
-availabilityUpdated: "2026-08-16"
-editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
 rating: 4.1
+affiliate:
+  provider: "prothelis"
+  label: "Preis und Verfügbarkeit prüfen"
+  url: "https://amzn.to/4x85xI6"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
+
+priceState: "unknown"
+priceUpdated: "2026-08-19T08:15:26.775Z"
+priceAvailable: false
+affiliateAvailable: true
+availability: "out-of-stock"
+availabilityUpdated: "2026-08-19T08:15:26.775Z"
+editorialStatus: "archived"
+recommendationStatus: "archived"
+maintenanceStatus: "archived"
+
 ratings:
   ortung: 4.8
   app: 3.5
@@ -166,7 +182,6 @@ experience:
   reliability: >-
     Langzeit- und Zuverlässigkeitsaussagen werden nur so stark gewichtet, wie sie durch die unter
     externalEvidence und evidenceSources dokumentierten Quellen gedeckt sind.
-
 ---
 
 ## Mobilfunkprofil vor dem Tarif
