@@ -23,8 +23,8 @@ updatedAt: "2026-08-21"
 author:
   name: PfotenTechnik Redaktion
 seo:
-  title: PETLIBRO Dockstream RFID Smart: RFID-Trinktracking im Check
-  description: PETLIBRO Dockstream RFID Smart PLWF305: Trinktracking pro Katze, 3-Liter-Tank und App. Was RFID kann und wo Halsbandpflicht und Zuverlässigkeit stören.
+  title: "PETLIBRO Dockstream RFID Smart: RFID-Trinktracking im Check"
+  description: "PETLIBRO Dockstream RFID Smart PLWF305: Trinktracking pro Katze, 3-Liter-Tank und App. Was RFID kann und wo Halsbandpflicht und Zuverlässigkeit stören."
   canonical: /produkt/petlibro-dockstream-rfid-smart/
   sitemap: true
   priority: 0.8

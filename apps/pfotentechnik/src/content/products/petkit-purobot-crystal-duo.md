@@ -17,9 +17,14 @@ seo: { title: "PETKIT PUROBOT CRYSTAL DUO im Datencheck", description: "Offene P
 hub: { sections: ["produkte", "automatische-katzentoiletten"] }
 tags: ["automatische-katzentoilette", "petkit", "open-top", "kamera", "kristallstreu"]
 images:
-  hero: { src: "../../assets/images/guides/smarte-haustiertechnik/category-overview.webp", alt: "Redaktionelle Kategorieillustration zur Einordnung des PETKIT PUROBOT CRYSTAL DUO" }
-  gallery: []
-price: { current: 169, currency: "EUR", status: "unknown", checkedAt: "2026-08-21", source: { id: "petkit-eu", label: "PETKIT EU", type: "manufacturer" } }
+  hero: { src: "../../assets/images/products/petkit-purobot-crystal-duo/hero.webp", alt: "Temporärer Editorial-Platzhalter für PETKIT PUROBOT CRYSTAL DUO; noch kein Produktbild" }
+  thumbnail: { src: "../../assets/images/products/petkit-purobot-crystal-duo/thumbnail.webp", alt: "Temporärer Platzhalter für die kompakte Ansicht des PETKIT PUROBOT CRYSTAL DUO" }
+  comparison: { src: "../../assets/images/products/petkit-purobot-crystal-duo/comparison.webp", alt: "Temporärer Platzhalter für PETKIT PUROBOT CRYSTAL DUO im Vergleich" }
+  gallery:
+    - { src: "../../assets/images/products/petkit-purobot-crystal-duo/gallery-1.webp", alt: "Geplanter Bildslot: offene Bauweise und niedriger Einstieg des PETKIT PUROBOT CRYSTAL DUO; aktuell Platzhalter" }
+    - { src: "../../assets/images/products/petkit-purobot-crystal-duo/gallery-2.webp", alt: "Geplanter Bildslot: Rechen, Crystal Litter und Tray des PETKIT PUROBOT CRYSTAL DUO; aktuell Platzhalter" }
+    - { src: "../../assets/images/products/petkit-purobot-crystal-duo/gallery-3.webp", alt: "Geplanter Bildslot: PETKIT PUROBOT CRYSTAL DUO in einer Nutzungssituation mit Katze; aktuell Platzhalter" }
+price: { current: 169, currency: "EUR", status: "unknown", checkedAt: "2026-08-21", source: { id: "petkit-eu", label: "PETKIT EU", type: "manual" } }
 priceAutomation: "editorial"
 rating: 3.8
 availability: "available"

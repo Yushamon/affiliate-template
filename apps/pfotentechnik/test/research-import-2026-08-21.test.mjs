@@ -42,3 +42,20 @@ test("Kratzmonitoring ist nur DOG 6 und DOG 6 XL zugeordnet", () => {
     assert.match(source, /keine Diagnose|keine klinische Messung/);
   }
 });
+
+test("Produktbilder nutzen sechs produktspezifische, austauschbare Zielslots", () => {
+  for (const slug of ["petkit-purobot-crystal-duo", "furbo-360-katzenkamera"]) {
+    const source = read(`src/content/products/${slug}.md`);
+    for (const role of ["hero", "thumbnail", "comparison", "gallery-1", "gallery-2", "gallery-3"]) {
+      assert.match(source, new RegExp(`products/${slug}/${role}\\.webp`));
+      assert.equal(fs.existsSync(path.join(APP, `src/assets/images/products/${slug}/${role}.webp`)), true);
+    }
+    assert.match(source, /aktuell Platzhalter|Temporärer (?:Editorial-)?Platzhalter/);
+  }
+});
+
+test("Dockstream SEO-Strings mit Doppelpunkt sind YAML-sicher gequotet", () => {
+  const source = read("src/content/products/petlibro-dockstream-rfid-smart.md");
+  assert.match(source, /title: "PETLIBRO Dockstream RFID Smart: RFID-Trinktracking im Check"/);
+  assert.match(source, /description: "PETLIBRO Dockstream RFID Smart PLWF305:/);
+});
