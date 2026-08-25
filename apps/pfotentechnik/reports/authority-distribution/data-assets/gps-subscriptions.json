@@ -1,0 +1,440 @@
+{
+  "schemaVersion": 1,
+  "snapshotVersion": "5ef20a5f081710e5",
+  "generatedAt": "2026-08-25T11:55:10.843Z",
+  "dataUpdatedAt": "2026-08-24T00:00:00.000Z",
+  "population": {
+    "category": "gps-tracker",
+    "definition": "Aktive GPS-Produkte der PfotenTechnik Product Collection mit explizitem gps.subscriptionRequired und aktueller strukturierter Evidence.",
+    "counts": {
+      "total": 12,
+      "eligible": 4,
+      "excluded": 8,
+      "unknown": 0,
+      "required": 4,
+      "optional": 0,
+      "none": 0
+    },
+    "percentages": {
+      "evidenceCoverage": 33.3,
+      "required": 100,
+      "withoutMandatorySubscription": 0
+    }
+  },
+  "products": [
+    {
+      "product": "Enabot ROLA PetTracker",
+      "slug": "enabot-rola-pettracker",
+      "productUrl": "/produkt/enabot-rola-pettracker/",
+      "manufacturer": {
+        "key": "enabot",
+        "name": "Enabot",
+        "slug": "enabot"
+      },
+      "productStatus": "active",
+      "dataUpdatedAt": "2026-08-16T00:00:00.000Z",
+      "subscription": {
+        "status": "required",
+        "price": {
+          "value": null,
+          "currency": null,
+          "interval": null,
+          "unknown": true
+        }
+      },
+      "evidence": [
+        {
+          "source": "Enabot Deutschland",
+          "url": "https://de.store.enabot.com/products/rola-pettracker-gps-tracker-for-pets",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-08-15T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "specs",
+            "decision",
+            "gps",
+            "comparisonData"
+          ],
+          "assertion": "Maße, Gewicht, Kamera, Funk, Akku, Tiergrenze, Nachtsicht und thermische Schutzlogik sind Herstellerangaben.",
+          "stale": false
+        }
+      ],
+      "eligible": true,
+      "exclusionReasons": []
+    },
+    {
+      "product": "Garmin Alpha T 20",
+      "slug": "garmin-alpha-t-20",
+      "productUrl": "/produkt/garmin-alpha-t-20/",
+      "manufacturer": {
+        "key": "garmin",
+        "name": "Garmin",
+        "slug": "garmin"
+      },
+      "productStatus": "active",
+      "dataUpdatedAt": "2026-07-23T00:00:00.000Z",
+      "subscription": {
+        "status": "none",
+        "price": {
+          "value": null,
+          "currency": null,
+          "interval": null,
+          "unknown": true
+        }
+      },
+      "evidence": [],
+      "eligible": false,
+      "exclusionReasons": [
+        "subscription-evidence-missing"
+      ]
+    },
+    {
+      "product": "Garmin Alpha TT 25",
+      "slug": "garmin-alpha-tt-25",
+      "productUrl": "/produkt/garmin-alpha-tt-25/",
+      "manufacturer": {
+        "key": "garmin",
+        "name": "Garmin",
+        "slug": "garmin"
+      },
+      "productStatus": "active",
+      "dataUpdatedAt": "2026-07-20T00:00:00.000Z",
+      "subscription": {
+        "status": "none",
+        "price": {
+          "value": null,
+          "currency": null,
+          "interval": null,
+          "unknown": true
+        }
+      },
+      "evidence": [],
+      "eligible": false,
+      "exclusionReasons": [
+        "subscription-evidence-missing"
+      ]
+    },
+    {
+      "product": "Invoxia Biotracker Edition 2026",
+      "slug": "invoxia-biotracker-2026",
+      "productUrl": "/produkt/invoxia-biotracker-2026/",
+      "manufacturer": {
+        "key": "invoxia",
+        "name": "Invoxia",
+        "slug": "invoxia"
+      },
+      "productStatus": "active",
+      "dataUpdatedAt": "2026-08-16T00:00:00.000Z",
+      "subscription": {
+        "status": "required",
+        "price": {
+          "value": null,
+          "currency": null,
+          "interval": null,
+          "unknown": true
+        }
+      },
+      "evidence": [
+        {
+          "source": "Invoxia Biotracker Edition 2026",
+          "url": "https://www.invoxia.com/en-US/petcare/minitailz-dog-tracker",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-08-16T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "specs",
+            "gps",
+            "decision"
+          ],
+          "assertion": "Name, Gewicht, Funk, Akku, Schutzart und Trackingfunktionen sind Herstellerangaben.",
+          "stale": false
+        },
+        {
+          "source": "Invoxia Support – subscriptions",
+          "url": "https://invoxia-petcare.zendesk.com/hc/en-us/articles/9652849499037--Is-a-subscription-required-to-use-the-Minitailz-Biotracker-GPS",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-08-16T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "specs",
+            "faq",
+            "comparisonData"
+          ],
+          "assertion": "Tarifabhängigkeit von Fernortung, Live-Tracking und Geofences stammt aus dem offiziellen Support.",
+          "stale": false
+        }
+      ],
+      "eligible": true,
+      "exclusionReasons": []
+    },
+    {
+      "product": "PAJ PET Finder 4G Mini",
+      "slug": "paj-pet-finder-4g-mini",
+      "productUrl": "/produkt/paj-pet-finder-4g-mini/",
+      "manufacturer": {
+        "key": "paj-gps",
+        "name": "PAJ GPS",
+        "slug": "paj-gps"
+      },
+      "productStatus": "active",
+      "dataUpdatedAt": "2026-07-23T00:00:00.000Z",
+      "subscription": {
+        "status": "required",
+        "price": {
+          "value": null,
+          "currency": null,
+          "interval": null,
+          "unknown": true
+        }
+      },
+      "evidence": [],
+      "eligible": false,
+      "exclusionReasons": [
+        "subscription-evidence-missing"
+      ]
+    },
+    {
+      "product": "Pawfit 3",
+      "slug": "pawfit-3",
+      "productUrl": "/produkt/pawfit-3/",
+      "manufacturer": {
+        "key": "pawfit",
+        "name": "Pawfit",
+        "slug": "pawfit"
+      },
+      "productStatus": "active",
+      "dataUpdatedAt": "2026-08-16T00:00:00.000Z",
+      "subscription": {
+        "status": "required",
+        "price": {
+          "value": null,
+          "currency": null,
+          "interval": null,
+          "unknown": true
+        }
+      },
+      "evidence": [
+        {
+          "source": "Pawfit 3",
+          "url": "https://www.pawfit.com/de-us/product/pawfit-3-pet-tracker.html",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-08-16T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "specs",
+            "features",
+            "decision"
+          ],
+          "assertion": "Funktionen, Mobilfunk, Warnungen und Abo sind Herstellerangaben.",
+          "stale": false
+        },
+        {
+          "source": "Pawfit Modellvergleich",
+          "url": "https://support.pawfit.com/hc/en-gb/articles/360019893919-What-are-the-differences-between-all-of-the-Pawfit-models",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-08-16T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "specs",
+            "gps",
+            "comparisonData"
+          ],
+          "assertion": "Gewicht, Maße, Mindestgewicht, Akku und Abgrenzung zum 3s stammen aus dem offiziellen Support.",
+          "stale": false
+        }
+      ],
+      "eligible": true,
+      "exclusionReasons": []
+    },
+    {
+      "product": "Prothelis area Pets",
+      "slug": "prothelis-area-pets",
+      "productUrl": "/produkt/prothelis-area-pets/",
+      "manufacturer": {
+        "key": "prothelis",
+        "name": "Prothelis",
+        "slug": "prothelis"
+      },
+      "productStatus": "active",
+      "dataUpdatedAt": "2026-08-16T00:00:00.000Z",
+      "subscription": {
+        "status": "required",
+        "price": {
+          "value": null,
+          "currency": null,
+          "interval": null,
+          "unknown": true
+        }
+      },
+      "evidence": [
+        {
+          "source": "Prothelis Shop – area Pets",
+          "url": "https://shop.prothelis.de/area-Pets-GPS-Tracker-fuer-Tiere/09054804-02M",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-08-16T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "specs",
+            "gps",
+            "comparisonData"
+          ],
+          "assertion": "Maße, Gewicht, Akku, Mobilfunk und aktuelle Laufzeitangaben stammen aus dem deutschen Herstellershop.",
+          "stale": false
+        }
+      ],
+      "eligible": true,
+      "exclusionReasons": []
+    },
+    {
+      "product": "Tractive CAT 6 Mini",
+      "slug": "tractive-cat-6-mini",
+      "productUrl": "/produkt/tractive-cat-6-mini/",
+      "manufacturer": {
+        "key": "tractive",
+        "name": "Tractive",
+        "slug": "tractive"
+      },
+      "productStatus": "active",
+      "dataUpdatedAt": "2026-08-24T00:00:00.000Z",
+      "subscription": {
+        "status": "required",
+        "price": {
+          "value": null,
+          "currency": null,
+          "interval": null,
+          "unknown": true
+        }
+      },
+      "evidence": [],
+      "eligible": false,
+      "exclusionReasons": [
+        "subscription-evidence-missing"
+      ]
+    },
+    {
+      "product": "Tractive DOG 6",
+      "slug": "tractive-dog-6",
+      "productUrl": "/produkt/tractive-dog-6/",
+      "manufacturer": {
+        "key": "tractive",
+        "name": "Tractive",
+        "slug": "tractive"
+      },
+      "productStatus": "active",
+      "dataUpdatedAt": "2026-08-10T00:00:00.000Z",
+      "subscription": {
+        "status": "required",
+        "price": {
+          "value": null,
+          "currency": null,
+          "interval": null,
+          "unknown": true
+        }
+      },
+      "evidence": [],
+      "eligible": false,
+      "exclusionReasons": [
+        "subscription-evidence-missing"
+      ]
+    },
+    {
+      "product": "Tractive DOG 6 XL",
+      "slug": "tractive-dog-6-xl",
+      "productUrl": "/produkt/tractive-dog-6-xl/",
+      "manufacturer": {
+        "key": "tractive",
+        "name": "Tractive",
+        "slug": "tractive"
+      },
+      "productStatus": "active",
+      "dataUpdatedAt": "2026-08-10T00:00:00.000Z",
+      "subscription": {
+        "status": "required",
+        "price": {
+          "value": null,
+          "currency": null,
+          "interval": null,
+          "unknown": true
+        }
+      },
+      "evidence": [],
+      "eligible": false,
+      "exclusionReasons": [
+        "subscription-evidence-missing"
+      ]
+    },
+    {
+      "product": "Weenect XS GPS-Tracker",
+      "slug": "weenect-xs",
+      "productUrl": "/produkt/weenect-xs/",
+      "manufacturer": {
+        "key": "weenect",
+        "name": "Weenect",
+        "slug": "weenect"
+      },
+      "productStatus": "active",
+      "dataUpdatedAt": "2026-08-19T00:00:00.000Z",
+      "subscription": {
+        "status": "required",
+        "price": {
+          "value": null,
+          "currency": null,
+          "interval": null,
+          "unknown": true
+        }
+      },
+      "evidence": [],
+      "eligible": false,
+      "exclusionReasons": [
+        "subscription-evidence-missing"
+      ]
+    },
+    {
+      "product": "Weenect XT GPS-Tracker",
+      "slug": "weenect-xt",
+      "productUrl": "/produkt/weenect-xt/",
+      "manufacturer": {
+        "key": "weenect",
+        "name": "Weenect",
+        "slug": "weenect"
+      },
+      "productStatus": "active",
+      "dataUpdatedAt": "2026-07-26T00:00:00.000Z",
+      "subscription": {
+        "status": "required",
+        "price": {
+          "value": null,
+          "currency": null,
+          "interval": null,
+          "unknown": true
+        }
+      },
+      "evidence": [],
+      "eligible": false,
+      "exclusionReasons": [
+        "subscription-evidence-missing"
+      ]
+    }
+  ],
+  "finding": {
+    "type": "gps-subscription-requirement",
+    "generatedAt": "2026-08-25T11:55:10.843Z",
+    "dataUpdatedAt": "2026-08-24T00:00:00.000Z",
+    "population": 12,
+    "eligible": 4,
+    "excluded": 8,
+    "required": 4,
+    "optional": 0,
+    "none": 0,
+    "statement": "4 von 4 auswertbaren GPS-Produkten in der aktuellen PfotenTechnik-Auswahl benötigen ein Abo; 0 kommen ohne Pflichtabo aus und 0 führen ein optionales Abo.",
+    "methodology": "Nur gps.subscriptionRequired wird als Abo-Status gelesen. Freitext wird nicht in Boolean-Werte umgewandelt. Eligible sind nur aktive Produkte mit explizitem Status und aktueller strukturierter Evidence; Unknown oder unzureichende Evidence bleiben außerhalb des belastbaren Nenners.",
+    "confidence": "low",
+    "status": "needs-review"
+  },
+  "changeFinding": null,
+  "validation": {
+    "passed": true,
+    "blocked": false,
+    "errors": []
+  }
+}

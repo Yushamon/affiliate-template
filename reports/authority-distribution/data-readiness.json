@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-25",
+  "scope": {
+    "project": "apps/pfotentechnik",
+    "productSource": "apps/pfotentechnik/src/content/products/*.{md,mdx}",
+    "products": 101,
+    "categories": {
+      "futterautomaten": 37,
+      "trinkbrunnen": 24,
+      "gps-tracker": 12,
+      "automatische-katzentoiletten": 11,
+      "katzenklappen": 9,
+      "haustierkameras": 8
+    },
+    "method": "Frontmatter was parsed as YAML. Coverage counts only explicit, non-empty values; strings matching unknown/unbekannt/nicht ausgewiesen/nicht dokumentiert/keine Angabe were excluded. Explicit false and zero remain known values. No body-text inference was used."
+  },
+  "rules": {
+    "unknownPolicy": "Unknown is null/missing and is never converted to false, zero or absence.",
+    "populationPolicy": "Every result must name the eligible repository population and observation date; it is not a market-share estimate.",
+    "provenancePolicy": "Manufacturer statements, merchant observations, independent evidence and PfotenTechnik hands-on results must remain distinct.",
+    "publicationPolicy": "Only fields with sufficient coverage, comparable semantics, freshness and field-level evidence may feed a validated finding."
+  },
+  "portfolio": [
+    {"field":"price.current","population":"all","eligibleN":101,"knownN":79,"coveragePct":78.2,"dataType":"number EUR","source":"price.current + price.source","confidence":"high for observed offer, not for list price","freshness":"83/101 have price.checkedAt (82.2%); values are point-in-time offers","comparability":"medium","normalization":"merchant, shipping, variant, coupon and outlier policy required","aggregationReady":"conditional"},
+    {"field":"updatedAt","population":"all","eligibleN":101,"knownN":101,"coveragePct":100,"dataType":"date","source":"product frontmatter","confidence":"high as editorial file date","freshness":"current field, but not proof every fact was reverified","comparability":"high","normalization":"separate content update from fact verification","aggregationReady":"no"},
+    {"field":"productStatus","population":"all","eligibleN":101,"knownN":58,"coveragePct":57.4,"dataType":"enum","source":"productStatus","confidence":"medium","freshness":"no dedicated checkedAt","comparability":"high","normalization":"43 explicit unknown values must remain unknown","aggregationReady":"no"}
+  ],
+  "categories": {
+    "gps-tracker": {
+      "eligibleN": 12,
+      "readiness": "ready for a repository-sample data asset after source review",
+      "fields": [
+        {"field":"purchasePrice","knownN":9,"coveragePct":75,"dataType":"number EUR","source":"price.current/price.source","confidence":"high for dated offer","freshness":"price.checkedAt where present","comparability":"medium","normalization":"offer/variant/outlier policy","aggregationReady":"conditional"},
+        {"field":"subscriptionRequired","knownN":12,"coveragePct":100,"dataType":"boolean","source":"gps.subscriptionRequired","confidence":"high structurally; medium-high fact provenance","freshness":"product updatedAt; no field checkedAt","comparability":"high","normalization":"none; retain false as explicit value","aggregationReady":"yes"},
+        {"field":"subscriptionPrice","knownN":3,"coveragePct":25,"dataType":"string/tariff","source":"specs Abo-Modelle/Kosten danach","confidence":"medium","freshness":"no field checkedAt","comparability":"low","normalization":"billing period, plan, minimum term, introductory price, included service and currency","aggregationReady":"no"},
+        {"field":"batteryMaxDays","knownN":12,"coveragePct":100,"dataType":"number days","source":"gps.batteryMaxDays","confidence":"high structurally; manufacturer maximum unless separately tested","freshness":"product updatedAt; no field checkedAt","comparability":"medium","normalization":"usage mode and batteryCondition must be mandatory in claims","aggregationReady":"conditional"},
+        {"field":"deviceWeightGrams","knownN":12,"coveragePct":100,"dataType":"number grams","source":"gps.deviceWeightGrams","confidence":"high","freshness":"product updatedAt","comparability":"high","normalization":"weightBasis; device vs collar/system","aggregationReady":"yes"},
+        {"field":"transmission","knownN":12,"coveragePct":100,"dataType":"enum","source":"gps.transmission","confidence":"high","freshness":"product updatedAt","comparability":"high","normalization":"LTE generations and VHF use cases may be subgroups","aggregationReady":"yes"},
+        {"field":"liveTracking","knownN":12,"coveragePct":100,"dataType":"boolean","source":"gps.liveTracking","confidence":"high structurally","freshness":"product updatedAt","comparability":"medium-high","normalization":"define live tracking; do not equate update intervals","aggregationReady":"yes"},
+        {"field":"virtualFence","knownN":12,"coveragePct":100,"dataType":"boolean","source":"gps.virtualFence","confidence":"high structurally","freshness":"product updatedAt","comparability":"high","normalization":"distinguish GPS geofence from local radio boundaries","aggregationReady":"yes"},
+        {"field":"app","knownN":12,"coveragePct":100,"dataType":"string","source":"specs/comparisonData.custom","confidence":"medium","freshness":"product updatedAt","comparability":"medium","normalization":"convert to nullable boolean with evidence","aggregationReady":"conditional"}
+      ]
+    },
+    "futterautomaten": {
+      "eligibleN": 37,
+      "readiness": "high descriptive coverage, low typed/provenance readiness",
+      "fields": [
+        {"field":"price","knownN":28,"coveragePct":75.7,"dataType":"number EUR","source":"price.current/price.source","confidence":"high for dated offer","freshness":"price.checkedAt where present","comparability":"medium","normalization":"variant and merchant policy","aggregationReady":"conditional"},
+        {"field":"capacity","knownN":36,"coveragePct":97.3,"dataType":"mostly string; 8 typed","source":"comparisonFilters/comparisonData/specs","confidence":"medium","freshness":"product updatedAt","comparability":"medium","normalization":"liters vs compartments; usable vs nominal volume","aggregationReady":"conditional"},
+        {"field":"camera","knownN":33,"coveragePct":89.2,"dataType":"mostly string; 3 typed boolean","source":"comparisonFilters/comparisonData.custom","confidence":"medium","freshness":"product updatedAt","comparability":"medium","normalization":"nullable boolean; variant ambiguity must be rejected","aggregationReady":"no"},
+        {"field":"app","knownN":35,"coveragePct":94.6,"dataType":"mostly string; 3 typed boolean","source":"comparisonFilters/comparisonData.custom/specs","confidence":"medium","freshness":"product updatedAt","comparability":"medium","normalization":"nullable boolean; distinguish optional/required and variant-specific","aggregationReady":"no"},
+        {"field":"powerSupply","knownN":34,"coveragePct":91.9,"dataType":"string","source":"comparisonData.custom/specs","confidence":"medium","freshness":"product updatedAt","comparability":"medium","normalization":"mains, USB, battery, rechargeable battery, hybrid taxonomy","aggregationReady":"no"},
+        {"field":"batteryBackup","knownN":12,"coveragePct":32.4,"dataType":"mostly string; 3 typed boolean","source":"comparisonFilters/comparisonData/specs","confidence":"medium","freshness":"product updatedAt","comparability":"low-medium","normalization":"backup schedule vs dispensing capability and duration","aggregationReady":"no"},
+        {"field":"foodType","knownN":37,"coveragePct":100,"dataType":"30 typed arrays, 7 strings","source":"comparisonFilters.foodType/comparisonData.custom","confidence":"high-medium","freshness":"product updatedAt","comparability":"high after mapping","normalization":"dry/wet/fresh/freeze-dried and variant rules","aggregationReady":"conditional"},
+        {"field":"animalCountOrFit","knownN":37,"coveragePct":100,"dataType":"string","source":"specs/comparisonData.custom","confidence":"low-medium","freshness":"product updatedAt","comparability":"low","normalization":"fit is not supported animal count; split access control from bowl count","aggregationReady":"no"},
+        {"field":"portionControl","knownN":28,"coveragePct":75.7,"dataType":"mostly string; 6 typed","source":"comparisonFilters/comparisonData/specs","confidence":"medium","freshness":"product updatedAt","comparability":"low-medium","normalization":"grams vs milliliters vs manufacturer units; min/max and tested vs nominal","aggregationReady":"no"}
+      ]
+    },
+    "trinkbrunnen": {
+      "eligibleN": 24,
+      "readiness": "descriptive comparison is possible; statistical claims require normalization",
+      "fields": [
+        {"field":"price","knownN":18,"coveragePct":75,"dataType":"number EUR","source":"price.current/price.source","confidence":"high for dated offer","freshness":"price.checkedAt where present","comparability":"medium","normalization":"variant and merchant policy","aggregationReady":"conditional"},
+        {"field":"volume","knownN":22,"coveragePct":91.7,"dataType":"mostly string; 2 typed","source":"comparisonData/specs","confidence":"medium","freshness":"product updatedAt","comparability":"medium","normalization":"nominal vs usable vs fresh-water/total volume","aggregationReady":"no"},
+        {"field":"filter","knownN":23,"coveragePct":95.8,"dataType":"string","source":"comparisonData.custom/specs","confidence":"medium","freshness":"product updatedAt","comparability":"medium","normalization":"none/classic/pump prefilter/ultrafiltration taxonomy","aggregationReady":"no"},
+        {"field":"filterCost","knownN":8,"coveragePct":33.3,"dataType":"string","source":"specs Ersatzfilter","confidence":"low-medium","freshness":"no dedicated checkedAt","comparability":"low","normalization":"pack size, interval, price date and annualized cost","aggregationReady":"no"},
+        {"field":"material","knownN":24,"coveragePct":100,"dataType":"mostly string; 2 typed arrays","source":"comparisonData/specs","confidence":"medium-high","freshness":"product updatedAt","comparability":"medium","normalization":"drinking surface vs tank vs housing material","aggregationReady":"conditional"},
+        {"field":"powerSupply","knownN":21,"coveragePct":87.5,"dataType":"string","source":"comparisonData.custom/specs","confidence":"medium","freshness":"product updatedAt","comparability":"medium","normalization":"mains/USB/battery/hybrid taxonomy","aggregationReady":"no"},
+        {"field":"batteryOrCordless","knownN":21,"coveragePct":87.5,"dataType":"mostly string; 2 typed","source":"comparisonData/specs","confidence":"medium","freshness":"product updatedAt","comparability":"low-medium","normalization":"battery-powered pump vs backup vs cordless reservoir","aggregationReady":"no"},
+        {"field":"app","knownN":23,"coveragePct":95.8,"dataType":"mostly string; 4 typed boolean","source":"comparisonFilters/comparisonData/specs","confidence":"medium","freshness":"product updatedAt","comparability":"medium","normalization":"nullable boolean and required connectivity","aggregationReady":"no"},
+        {"field":"sensors","knownN":6,"coveragePct":25,"dataType":"mostly string; 1 typed boolean","source":"comparisonData/specs","confidence":"medium","freshness":"product updatedAt","comparability":"low","normalization":"motion, water level, intake and pet identity are separate fields","aggregationReady":"no"}
+      ]
+    },
+    "automatische-katzentoiletten": {
+      "eligibleN": 11,
+      "readiness": "safety descriptions are complete but unsuitable for unsupervised quantitative aggregation",
+      "fields": [
+        {"field":"price","knownN":9,"coveragePct":81.8,"dataType":"number EUR","source":"price.current/price.source","confidence":"high for dated offer","freshness":"price.checkedAt where present","comparability":"medium","normalization":"bundle/variant policy","aggregationReady":"conditional"},
+        {"field":"dimensions","knownN":7,"coveragePct":63.6,"dataType":"string","source":"specs/comparisonData.custom","confidence":"medium","freshness":"product updatedAt","comparability":"low-medium","normalization":"H/B/T order, unit, external vs interior/footprint","aggregationReady":"no"},
+        {"field":"weight","knownN":5,"coveragePct":45.5,"dataType":"string","source":"specs","confidence":"medium","freshness":"product updatedAt","comparability":"medium","normalization":"empty vs filled weight and kg","aggregationReady":"no"},
+        {"field":"app","knownN":7,"coveragePct":63.6,"dataType":"mostly string; 3 typed boolean","source":"comparisonFilters/comparisonData/specs","confidence":"medium","freshness":"product updatedAt","comparability":"medium","normalization":"nullable boolean","aggregationReady":"no"},
+        {"field":"multiCat","knownN":6,"coveragePct":54.5,"dataType":"string","source":"comparisonData/specs","confidence":"medium","freshness":"product updatedAt","comparability":"low-medium","normalization":"manufacturer capacity vs individual recognition vs weight discrimination","aggregationReady":"no"},
+        {"field":"followUpCosts","knownN":10,"coveragePct":90.9,"dataType":"string","source":"comparisonData.custom/specs","confidence":"medium","freshness":"no dedicated checkedAt","comparability":"low","normalization":"bags, litter, filters, subscriptions and accessories as separate dated costs","aggregationReady":"no"},
+        {"field":"consumables","knownN":1,"coveragePct":9.1,"dataType":"string","source":"specs","confidence":"medium","freshness":"product updatedAt","comparability":"low","normalization":"controlled consumable taxonomy","aggregationReady":"no"},
+        {"field":"safetyFunctions","knownN":11,"coveragePct":100,"dataType":"string","source":"comparisonData.custom/specs","confidence":"medium for documentation, not efficacy","freshness":"product updatedAt","comparability":"low","normalization":"mechanical/electronic sensors, limits and test evidence separately","aggregationReady":"no"}
+      ]
+    },
+    "katzenklappen": {
+      "eligibleN": 9,
+      "readiness": "app is typed; most other fields need explicit nullable schema",
+      "fields": [
+        {"field":"price","knownN":7,"coveragePct":77.8,"dataType":"number EUR","source":"price.current/price.source","confidence":"high for dated offer","freshness":"price.checkedAt where present","comparability":"low-medium","normalization":"door class, bundle, hub and installation scope; extreme outlier review","aggregationReady":"conditional"},
+        {"field":"microchipAccess","knownN":8,"coveragePct":88.9,"dataType":"enum","source":"comparisonFilters.access","confidence":"high structurally","freshness":"product updatedAt","comparability":"high","normalization":"one non-microchip smart-door class must remain separate","aggregationReady":"yes"},
+        {"field":"app","knownN":9,"coveragePct":100,"dataType":"boolean","source":"comparisonFilters.app","confidence":"high structurally","freshness":"product updatedAt","comparability":"high","normalization":"distinguish app from local smart behavior","aggregationReady":"yes"},
+        {"field":"hubRequired","knownN":3,"coveragePct":33.3,"dataType":"string","source":"specs/comparisonData.custom","confidence":"medium","freshness":"product updatedAt","comparability":"medium","normalization":"explicit nullable boolean; bundle presence separate","aggregationReady":"no"},
+        {"field":"powerSupply","knownN":9,"coveragePct":100,"dataType":"string","source":"comparisonData.custom/specs","confidence":"medium-high","freshness":"product updatedAt","comparability":"medium","normalization":"battery/mains/USB/hybrid taxonomy","aggregationReady":"conditional"},
+        {"field":"animalProfiles","knownN":8,"coveragePct":88.9,"dataType":"string proxy","source":"comparisonData.custom.richtungsrechte","confidence":"low","freshness":"product updatedAt","comparability":"low","normalization":"profiles/capacity and directional rights must be distinct","aggregationReady":"no"},
+        {"field":"selectiveEntryExit","knownN":8,"coveragePct":88.9,"dataType":"string","source":"comparisonData.custom/specs","confidence":"medium","freshness":"product updatedAt","comparability":"medium","normalization":"entry-only vs bidirectional per-animal control","aggregationReady":"no"}
+      ]
+    },
+    "haustierkameras": {
+      "eligibleN": 8,
+      "readiness": "small population; descriptive cloud/subscription analysis possible after normalization",
+      "fields": [
+        {"field":"price","knownN":8,"coveragePct":100,"dataType":"number EUR","source":"price.current/price.source","confidence":"high for dated offer","freshness":"price.checkedAt","comparability":"medium","normalization":"mobile robot vs fixed camera class","aggregationReady":"conditional"},
+        {"field":"cameraClassOrVideo","knownN":8,"coveragePct":100,"dataType":"mostly string; 4 typed camera flags","source":"comparisonFilters/comparisonData/specs","confidence":"medium","freshness":"product updatedAt","comparability":"low-medium","normalization":"fixed/pan-tilt/mobile robot and resolution","aggregationReady":"no"},
+        {"field":"app","knownN":4,"coveragePct":50,"dataType":"boolean","source":"comparisonFilters.app","confidence":"high where present","freshness":"product updatedAt","comparability":"high","normalization":"missing remains unknown","aggregationReady":"no"},
+        {"field":"storage","knownN":8,"coveragePct":100,"dataType":"string","source":"comparisonData.custom/specs","confidence":"medium","freshness":"product updatedAt","comparability":"medium","normalization":"microSD/cloud/free/paid retention","aggregationReady":"conditional"},
+        {"field":"subscription","knownN":8,"coveragePct":100,"dataType":"string","source":"comparisonData.custom/specs","confidence":"medium","freshness":"no field checkedAt","comparability":"medium","normalization":"required vs optional paid features and tariff date","aggregationReady":"conditional"}
+      ]
+    }
+  },
+  "provenance": {
+    "testStatus": {"editorial-review":54,"manufacturer-data":47,"hands-on":0,"long-term-test":0},
+    "editorialBlock": {"knownN":32,"coveragePct":31.7},
+    "evidenceSourcesBlock": {"knownN":35,"coveragePct":34.7},
+    "externalEvidenceBlock": {"knownN":100,"coveragePct":99},
+    "warning": "External reviews and consensus support editorial evaluation but do not automatically prove every specification field. No field-level source map exists for most products."
+  },
+  "readyAssets": [
+    {"id":"gps-subscription-share","populationN":12,"usableN":12,"resultPreview":"10 of 12 repository GPS trackers require a subscription; 2 do not","status":"ready-after-manual-source-check"},
+    {"id":"gps-weight-distribution","populationN":12,"usableN":12,"status":"ready-after-weight-basis-and-source-check"},
+    {"id":"gps-transmission-mix","populationN":12,"usableN":12,"status":"ready-after-taxonomy-check"}
+  ],
+  "notFactSafe": [
+    "Body prose, strengths, weaknesses, recommendations and decision text parsed as if they were structured facts",
+    "Missing or unknown values interpreted as false, zero or feature absence",
+    "Ratings or PfotenTechnik scores interpreted as measured product performance",
+    "Manufacturer maximum battery life presented as observed real-world battery life",
+    "External review consensus transferred to a different model or variant",
+    "Current merchant offer interpreted as MSRP, permanent market price or complete-market price",
+    "Manufacturer productStatus unknown interpreted as discontinued or active",
+    "Safety functions interpreted as proven safety efficacy",
+    "Any claim of PfotenTechnik hands-on testing; the current 101-product set contains no testStatus hands-on records"
+  ]
+}

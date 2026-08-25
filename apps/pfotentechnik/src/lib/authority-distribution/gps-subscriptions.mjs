@@ -1,0 +1,313 @@
+import crypto from "node:crypto";
+import fs from "node:fs/promises";
+import path from "node:path";
+import yaml from "js-yaml";
+
+export const SNAPSHOT_SCHEMA_VERSION = 1;
+export const FINDING_TYPE = "gps-subscription-requirement";
+export const DEFAULT_STALE_DAYS = 180;
+
+const ISO_DATE = /^\d{4}-\d{2}-\d{2}(?:T.*)?$/;
+const STATUS_VALUES = new Set(["required", "optional", "none", "unknown"]);
+
+const iso = (value) => {
+  if (value instanceof Date && !Number.isNaN(value.valueOf())) return value.toISOString();
+  if (typeof value === "string" && ISO_DATE.test(value) && !Number.isNaN(Date.parse(value))) {
+    return new Date(value).toISOString();
+  }
+  return null;
+};
+
+const daysBetween = (older, newer) =>
+  Math.floor((Date.parse(newer) - Date.parse(older)) / 86_400_000);
+
+const stable = (value) => {
+  if (Array.isArray(value)) return value.map(stable);
+  if (value && typeof value === "object") {
+    return Object.fromEntries(Object.entries(value).sort(([a], [b]) => a.localeCompare(b)).map(([key, child]) => [key, stable(child)]));
+  }
+  return value;
+};
+
+const hash = (value) => crypto.createHash("sha256")
+  .update(JSON.stringify(stable(value)))
+  .digest("hex");
+
+export function splitFrontmatter(source, file = "product") {
+  const match = String(source).replace(/^\uFEFF/, "").match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/);
+  if (!match) throw new Error(`${file}: gültiges YAML-Frontmatter fehlt.`);
+  return match[1];
+}
+
+export async function loadGpsProducts(productDirectory) {
+  const names = (await fs.readdir(productDirectory))
+    .filter((name) => /\.mdx?$/i.test(name))
+    .sort((a, b) => a.localeCompare(b));
+  const products = [];
+  for (const name of names) {
+    const file = path.join(productDirectory, name);
+    const data = yaml.load(splitFrontmatter(await fs.readFile(file, "utf8"), file)) ?? {};
+    if (data?.category?.key === "gps-tracker") products.push({ ...data, sourceFile: file });
+  }
+  return products;
+}
+
+function subscriptionStatus(product) {
+  const value = product?.gps?.subscriptionRequired;
+  if (value === true) return "required";
+  if (value === false) return "none";
+  return "unknown";
+}
+
+function sourceType(source) {
+  const text = `${source?.source ?? ""} ${source?.url ?? ""}`.toLowerCase();
+  if (/support|hersteller|store\.|shop\.|garmin|tractive|weenect|pawfit|prothelis|invoxia|enabot|paj/.test(text)) return "manufacturer";
+  return "unknown";
+}
+
+function sourceSupportsSubscription(source) {
+  const fields = Array.isArray(source?.fields) ? source.fields.map(String) : [];
+  const assertion = String(source?.assertion ?? "");
+  return fields.includes("gps") || (/abo|abonnement|subscription|tarif|servicepaket|sim/i.test(assertion) && fields.includes("specs"));
+}
+
+function evidenceFor(product, generatedAt, staleDays) {
+  const candidates = Array.isArray(product?.evidenceSources) ? product.evidenceSources : [];
+  return candidates
+    .filter((source) => typeof source?.url === "string" && /^https:\/\//.test(source.url))
+    .filter((source) => sourceSupportsSubscription(source))
+    .map((source) => {
+      const checkedAt = iso(source.accessedAt);
+      const stale = !checkedAt || daysBetween(checkedAt, generatedAt) > staleDays;
+      return {
+        source: String(source.source ?? "").trim(),
+        url: source.url,
+        sourceType: sourceType(source),
+        checkedAt,
+        confidence: checkedAt && source.source && !stale ? "high" : "low",
+        supports: Array.isArray(source.fields) ? source.fields.map(String) : [],
+        assertion: String(source.assertion ?? "").trim(),
+        stale,
+      };
+    });
+}
+
+export function normalizeGpsProduct(product, { generatedAt = new Date().toISOString(), staleDays = DEFAULT_STALE_DAYS } = {}) {
+  const normalizedGeneratedAt = iso(generatedAt);
+  if (!normalizedGeneratedAt) throw new Error("generatedAt muss ein gültiges ISO-Datum sein.");
+  const status = subscriptionStatus(product);
+  const evidence = evidenceFor(product, normalizedGeneratedAt, staleDays);
+  const reasons = [];
+  if (!String(product?.slug ?? "").trim()) reasons.push("missing-slug");
+  if (product?.productStatus !== "active") reasons.push(`product-not-active:${product?.productStatus ?? "unknown"}`);
+  if (status === "unknown") reasons.push("subscription-status-unknown");
+  if (!evidence.length) reasons.push("subscription-evidence-missing");
+  if (evidence.length && evidence.every((item) => item.stale)) reasons.push("subscription-evidence-stale");
+
+  const usableEvidence = evidence.filter((item) => !item.stale);
+  return {
+    product: String(product?.title ?? product?.slug ?? "Unbekannt"),
+    slug: String(product?.slug ?? "").trim(),
+    productUrl: String(product?.productUrl ?? (product?.slug ? `/produkt/${product.slug}/` : "")),
+    manufacturer: {
+      key: String(product?.manufacturer?.key ?? ""),
+      name: String(product?.manufacturer?.name ?? ""),
+      slug: String(product?.manufacturer?.slug ?? ""),
+    },
+    productStatus: String(product?.productStatus ?? "unknown"),
+    dataUpdatedAt: iso(product?.updatedAt),
+    subscription: {
+      status,
+      price: { value: null, currency: null, interval: null, unknown: true },
+    },
+    evidence: usableEvidence,
+    eligible: reasons.length === 0,
+    exclusionReasons: reasons,
+  };
+}
+
+function assertUnique(products) {
+  const seen = new Set();
+  for (const product of products) {
+    if (!product.slug) throw new Error("Produkt ohne Slug kann nicht aggregiert werden.");
+    if (seen.has(product.slug)) throw new Error(`Doppeltes GPS-Produkt: ${product.slug}`);
+    seen.add(product.slug);
+  }
+}
+
+const pct = (count, denominator) => denominator ? Number((count / denominator * 100).toFixed(1)) : null;
+
+function findingStatement(counts) {
+  const plural = counts.eligible === 1 ? "GPS-Produkt" : "GPS-Produkten";
+  return `${counts.required} von ${counts.eligible} auswertbaren ${plural} in der aktuellen PfotenTechnik-Auswahl benötigen ein Abo; ${counts.none} kommen ohne Pflichtabo aus und ${counts.optional} führen ein optionales Abo.`;
+}
+
+function snapshotContent(snapshot) {
+  const { generatedAt: _findingGeneratedAt, status: _findingStatus, ...finding } = snapshot.finding;
+  return {
+    schemaVersion: snapshot.schemaVersion,
+    dataUpdatedAt: snapshot.dataUpdatedAt,
+    population: snapshot.population,
+    products: snapshot.products,
+    finding,
+  };
+}
+
+function comparisonRows(snapshot) {
+  return new Map((snapshot?.products ?? []).map((product) => [product.slug, {
+    status: product.subscription?.status,
+    eligible: product.eligible,
+    evidence: (product.evidence ?? []).map((item) => `${item.url}|${item.checkedAt}|${item.confidence}`).sort(),
+  }]));
+}
+
+export function detectChanges(previous, current) {
+  if (!previous?.products) return null;
+  const before = comparisonRows(previous);
+  const after = comparisonRows(current);
+  const changes = [];
+  for (const slug of [...new Set([...before.keys(), ...after.keys()])].sort()) {
+    const oldValue = before.get(slug);
+    const newValue = after.get(slug);
+    if (!oldValue) changes.push({ type: "product-added", slug, after: newValue });
+    else if (!newValue) changes.push({ type: "product-removed", slug, before: oldValue });
+    else {
+      if (oldValue.status !== newValue.status) changes.push({ type: "subscription-status-changed", slug, before: oldValue.status, after: newValue.status });
+      if (oldValue.eligible !== newValue.eligible) changes.push({ type: oldValue.eligible ? "product-excluded" : "unknown-or-evidence-resolved", slug, before: oldValue.eligible, after: newValue.eligible });
+      if (JSON.stringify(oldValue.evidence) !== JSON.stringify(newValue.evidence)) changes.push({ type: "evidence-changed", slug, before: oldValue.evidence, after: newValue.evidence });
+    }
+  }
+  if (!changes.length) return null;
+  return {
+    type: "gps-subscription-data-changed",
+    generatedAt: current.generatedAt,
+    previousSnapshotVersion: previous.snapshotVersion ?? null,
+    snapshotVersion: current.snapshotVersion,
+    changes,
+  };
+}
+
+export function validateSnapshot(snapshot) {
+  const errors = [];
+  const { counts } = snapshot.population;
+  const eligible = snapshot.products.filter((product) => product.eligible);
+  try { assertUnique(snapshot.products); } catch (error) { errors.push(error.message); }
+  if (counts.eligible === 0) errors.push("eligible = 0");
+  if (counts.required + counts.optional + counts.none !== counts.eligible) errors.push("Statussumme entspricht nicht eligible");
+  if (eligible.some((product) => product.subscription.status === "unknown")) errors.push("Unknown-Status in eligible");
+  if (eligible.some((product) => !product.evidence.length)) errors.push("Evidence fehlt für eligible Produkt");
+  if (snapshot.population.percentages.required !== pct(counts.required, counts.eligible)) errors.push("requiredPct passt nicht zum Nenner");
+  if (snapshot.population.percentages.withoutMandatorySubscription !== pct(counts.none + counts.optional, counts.eligible)) errors.push("withoutMandatorySubscriptionPct passt nicht zum Nenner");
+  if (snapshot.finding.statement !== findingStatement(counts)) errors.push("Statement passt nicht zu den Zahlen");
+  if (snapshot.finding.eligible !== counts.eligible || snapshot.finding.excluded !== counts.excluded) errors.push("Finding-Population passt nicht zum Snapshot");
+  return { passed: errors.length === 0, blocked: errors.length > 0, errors };
+}
+
+export function buildSnapshotFromNormalized(normalizedProducts, { generatedAt = new Date().toISOString(), previousSnapshot = null } = {}) {
+  const normalizedGeneratedAt = iso(generatedAt);
+  if (!normalizedGeneratedAt) throw new Error("generatedAt muss ein gültiges ISO-Datum sein.");
+  const normalized = structuredClone(normalizedProducts).sort((a, b) => a.slug.localeCompare(b.slug));
+  assertUnique(normalized);
+  const eligible = normalized.filter((product) => product.eligible);
+  const counts = {
+    total: normalized.length,
+    eligible: eligible.length,
+    excluded: normalized.length - eligible.length,
+    unknown: normalized.filter((product) => product.subscription.status === "unknown").length,
+    required: eligible.filter((product) => product.subscription.status === "required").length,
+    optional: eligible.filter((product) => product.subscription.status === "optional").length,
+    none: eligible.filter((product) => product.subscription.status === "none").length,
+  };
+  const dates = normalized.map((product) => product.dataUpdatedAt).filter(Boolean).sort();
+  const dataUpdatedAt = dates.at(-1) ?? null;
+  const statement = findingStatement(counts);
+  const snapshot = {
+    schemaVersion: SNAPSHOT_SCHEMA_VERSION,
+    snapshotVersion: null,
+    generatedAt: normalizedGeneratedAt,
+    dataUpdatedAt,
+    population: {
+      category: "gps-tracker",
+      definition: "Aktive GPS-Produkte der PfotenTechnik Product Collection mit explizitem gps.subscriptionRequired und aktueller strukturierter Evidence.",
+      counts,
+      percentages: {
+        evidenceCoverage: pct(counts.eligible, counts.total),
+        required: pct(counts.required, counts.eligible),
+        withoutMandatorySubscription: pct(counts.none + counts.optional, counts.eligible),
+      },
+    },
+    products: normalized,
+    finding: {
+      type: FINDING_TYPE,
+      generatedAt: normalizedGeneratedAt,
+      dataUpdatedAt,
+      population: counts.total,
+      eligible: counts.eligible,
+      excluded: counts.excluded,
+      required: counts.required,
+      optional: counts.optional,
+      none: counts.none,
+      statement,
+      methodology: "Nur gps.subscriptionRequired wird als Abo-Status gelesen. Freitext wird nicht in Boolean-Werte umgewandelt. Eligible sind nur aktive Produkte mit explizitem Status und aktueller strukturierter Evidence; Unknown oder unzureichende Evidence bleiben außerhalb des belastbaren Nenners.",
+      confidence: eligible.length === normalized.length && eligible.every((product) => product.evidence.some((item) => item.confidence === "high"))
+        ? "high"
+        : eligible.length / Math.max(1, normalized.length) >= 0.7
+          ? "medium"
+          : "low",
+      status: "candidate",
+    },
+  };
+  snapshot.snapshotVersion = hash(snapshotContent(snapshot)).slice(0, 16);
+  snapshot.changeFinding = detectChanges(previousSnapshot, snapshot);
+  snapshot.validation = validateSnapshot(snapshot);
+  snapshot.finding.status = snapshot.validation.passed ? "needs-review" : "blocked";
+  return snapshot;
+}
+
+export function buildGpsSubscriptionSnapshot(products, { generatedAt = new Date().toISOString(), staleDays = DEFAULT_STALE_DAYS, previousSnapshot = null } = {}) {
+  const normalizedGeneratedAt = iso(generatedAt);
+  if (!normalizedGeneratedAt) throw new Error("generatedAt muss ein gültiges ISO-Datum sein.");
+  const normalized = products.map((product) => normalizeGpsProduct(product, { generatedAt: normalizedGeneratedAt, staleDays }));
+  return buildSnapshotFromNormalized(normalized, { generatedAt: normalizedGeneratedAt, previousSnapshot });
+}
+
+export function renderGpsSubscriptionMarkdown(snapshot) {
+  const included = snapshot.products.filter((product) => product.eligible);
+  const excluded = snapshot.products.filter((product) => !product.eligible);
+  const evidence = (product) => product.evidence.length
+    ? product.evidence.map((item) => `[${item.source}](${item.url}) · geprüft ${item.checkedAt?.slice(0, 10) ?? "unbekannt"} · ${item.confidence}`).join("; ")
+    : "Keine ausreichende strukturierte Evidence";
+  const statusLabel = { required: "required", optional: "optional", none: "none", unknown: "unknown" };
+  return [
+    "# GPS-Abo Data Asset", "",
+    `- Snapshot-Version: \`${snapshot.snapshotVersion}\``,
+    `- Erzeugt: ${snapshot.generatedAt}`,
+    `- Datenstand: ${snapshot.dataUpdatedAt ?? "unbekannt"}`,
+    `- Validation Gate: ${snapshot.validation.passed ? "bestanden" : "BLOCKED"}`, "",
+    "## Kernaussage", "", snapshot.finding.statement, "",
+    `Pflichtabo-Anteil: ${snapshot.population.percentages.required ?? "–"} %. Anteil ohne Pflichtabo: ${snapshot.population.percentages.withoutMandatorySubscription ?? "–"} %. Nenner sind ausschließlich ${snapshot.population.counts.eligible} auswertbare Produkte.`, "",
+    "## Population", "",
+    `- GPS-Produkte gesamt: ${snapshot.population.counts.total}`,
+    `- Auswertbar: ${snapshot.population.counts.eligible}`,
+    `- Ausgeschlossen: ${snapshot.population.counts.excluded}`,
+    `- Evidence-Abdeckung: ${snapshot.population.percentages.evidenceCoverage ?? "–"} %`,
+    `- Status unknown: ${snapshot.population.counts.unknown}`,
+    `- required: ${snapshot.population.counts.required}`,
+    `- optional: ${snapshot.population.counts.optional}`,
+    `- none: ${snapshot.population.counts.none}`, "",
+    "## Methodik", "", snapshot.finding.methodology, "",
+    "Abo-Preise werden nicht aus `specs` oder anderem Freitext geparst. Da kein einheitliches strukturiertes Abo-Preismodell vorhanden ist, bleibt `subscription.price.unknown = true`. Herstellerangabe und externe Reviews werden nicht als PfotenTechnik-Test ausgegeben.", "",
+    "## Eingeschlossene Produkte", "",
+    ...(included.length ? included.map((product) => `- **${product.product}** (\`${product.slug}\`) · ${statusLabel[product.subscription.status]} · ${evidence(product)}`) : ["Keine."]), "",
+    "## Ausgeschlossene Produkte", "",
+    ...(excluded.length ? excluded.map((product) => `- **${product.product}** (\`${product.slug}\`) · Status ${statusLabel[product.subscription.status]} · Grund: ${product.exclusionReasons.join(", ")} · ${evidence(product)}`) : ["Keine."]), "",
+    "## Change Detection", "",
+    snapshot.changeFinding ? `Änderung erkannt: ${snapshot.changeFinding.changes.length} Change(s) gegenüber Snapshot \`${snapshot.changeFinding.previousSnapshotVersion ?? "unbekannt"}\`.` : "Kein Change Finding: kein vorheriger Snapshot oder keine tatsächliche Datenänderung.", "",
+    "## Bekannte Grenzen", "",
+    "- Die Population ist die PfotenTechnik-Auswahl, nicht der vollständige deutsche Markt.",
+    "- Ein vorhandener Boolean ohne passende strukturierte Evidence bleibt ausgeschlossen.",
+    "- `false` bedeutet explizit kein Pflichtabo; missing/unknown wird niemals zu `false`.",
+    "- Optionale Tarife und Abo-Preise können mit dem aktuellen strukturierten Feld nicht zuverlässig ausgewertet werden.",
+    "- Das Finding ist `needs-review`, nicht automatisch öffentlich freigegeben.", "",
+  ].join("\n");
+}
