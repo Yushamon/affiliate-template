@@ -1,13 +1,13 @@
 # Audit interne Linkziele und Selbstlinks
 
-Erstellt: 2026-08-21T10:44:29.269Z
+Erstellt: 2026-08-25T12:01:06.801Z
 
-- Gebaute Seiten: 362
-- Routen im Inventar: 362
+- Gebaute Seiten: 366
+- Routen im Inventar: 366
 - Redirect-Aliasse: 33
-- Fehler: 1
+- Fehler: 0
 - Warnungen: 0
 
 ## Befunde
 
-- **ERROR MISSING_TARGET:** apps/pfotentechnik/dist/produkt/feelneedy-fn-w18-8l-katzenbrunnen/index.html /hersteller/feelneedy/ — Internes Ziel ist nicht im Build-Routeninventar vorhanden.
+Keine Befunde.

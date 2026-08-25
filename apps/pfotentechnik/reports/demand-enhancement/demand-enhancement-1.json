@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-25",
+  "project": "apps/pfotentechnik",
+  "changeBudget": {
+    "maxIntentOwners": 6,
+    "changedIntentOwners": 2,
+    "newUrls": 0
+  },
+  "nodes": [
+    {
+      "id": "feeder-failure-safety",
+      "cluster": "futterautomaten",
+      "demand": "Stromausfall, WLAN-/Internetausfall, lokaler Zeitplan, Batteriebackup und Betrieb ohne App/Cloud",
+      "intentOwner": "/futterautomat-bei-stromausfall/",
+      "sourceFile": "src/content/pages/futterautomat-bei-stromausfall.md",
+      "beforeStatus": "covered",
+      "finding": "Der bestehende dedizierte Ratgeber trennt bereits Strom, WLAN, Internet, Cloud und Mechanik, erklärt lokale Zeitpläne und Backup-Arten, enthält eine Funktionsmatrix, belegte Herstellerbeispiele und einen praktischen Ausfalltest.",
+      "change": "Keine Contentänderung.",
+      "evidence": [
+        "Bestehende Primärquellen im Intent Owner: Xiaomi FAQ, PETKIT-Anleitung, PetSafe Support, PETLIBRO Produktdokumentation."
+      ],
+      "afterStatus": "covered",
+      "confidence": "high",
+      "skipped": true,
+      "skipReason": "Bereits vollständig und prominent abgedeckt; eine weitere Matrix wäre redundant."
+    },
+    {
+      "id": "feeder-two-cats-wet-food-access",
+      "cluster": "futterautomaten",
+      "demand": "Zwei Katzen, Nassfutter, Kühlung, Timer und individueller Mikrochip-/RFID-Zugang als mögliche Komplettlösung",
+      "intentOwner": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "sourceFile": "src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
+      "beforeStatus": "covered",
+      "finding": "Der Owner trennt bereits Kühlung/Zeitsteuerung von Tierzugang: Fachautomaten planen Mahlzeiten, Mikrochip-Näpfe schützen Rationen, und bei unterschiedlichen Anforderungen sind getrennte Plätze/Systeme nötig. Der Nassfuttervergleich bestätigt, dass SureFeed Zugang schützt, aber nicht zeitgesteuert portioniert.",
+      "change": "Keine Contentänderung.",
+      "evidence": [
+        "Bestehende Produkt- und Vergleichsdaten zu SureFeed, Cat Mate C500, PETLIBRO Polar, PetSafe FreshFeed und Catit PIXI."
+      ],
+      "afterStatus": "covered",
+      "confidence": "high",
+      "skipped": true,
+      "skipReason": "Die ehrliche Systemgrenze und fehlende Komplettlösung sind bereits explizit beantwortet."
+    },
+    {
+      "id": "cat-flap-access-logic-tailgating",
+      "cluster": "katzenklappen",
+      "demand": "Fremdtierschutz, selektiver Ein-/Ausgang, Rechte je Tier, App/Offline und Tailgating",
+      "intentOwner": "/katzenklappen/",
+      "sourceFile": "src/content/pages/katzenklappen.md",
+      "beforeStatus": "partial",
+      "finding": "Zugangsarten, Rechte, App/Hub und Offline-Grundlogik waren bereits gut getrennt; die mechanische Tailgating-Grenze fehlte.",
+      "change": "Kurzen Abschnitt „Systemgrenze: Tailgating“ direkt nach der bestehenden Entscheidungsmatrix ergänzt. Er unterscheidet Chipfreigabe von physischem Hinterherlaufen und leitet keine Anti-Tailgating-Funktion aus Mikrochip oder DualScan ab.",
+      "evidence": [
+        "Sure Petcare Deutschland – Klappenübersicht",
+        "Vorhandene Produktdaten zu SureFlap Standard, DualScan und Connect"
+      ],
+      "afterStatus": "covered",
+      "confidence": "high",
+      "skipped": false,
+      "skipReason": null
+    },
+    {
+      "id": "litter-box-maintenance",
+      "cluster": "automatische-katzentoiletten",
+      "demand": "Selbstreinigend ist nicht wartungsfrei",
+      "intentOwner": "/automatische-katzentoiletten/",
+      "sourceFile": "src/content/pages/automatische-katzentoiletten.md",
+      "beforeStatus": "covered",
+      "finding": "Der Cornerstone sagt bereits unmittelbar bei der Funktionsweise, dass Selbstreinigung Sichtkontrolle, Demontage und Grundreinigung nicht ersetzt. Wartung, Streu, Geruch, Verbrauchsmaterial und laufende Kosten werden separat behandelt.",
+      "change": "Keine Contentänderung.",
+      "evidence": [
+        "Bestehende Hersteller-/Produktdaten im Cornerstone und Vergleich"
+      ],
+      "afterStatus": "covered",
+      "confidence": "high",
+      "skipped": true,
+      "skipReason": "Bereits vollständig; zusätzlicher Entscheidungsblock würde Inhalt wiederholen."
+    },
+    {
+      "id": "litter-box-acclimation",
+      "cluster": "automatische-katzentoiletten",
+      "demand": "Katze benutzt automatisches Katzenklo nicht; sicherer Gewöhnungsablauf",
+      "intentOwner": "/automatische-katzentoiletten/",
+      "sourceFile": "src/content/pages/automatische-katzentoiletten.md",
+      "beforeStatus": "covered",
+      "finding": "Der Cornerstone verlangt bereits, das alte Klo verfügbar zu lassen, das neue Gerät ausgeschaltet anzubieten und automatische Zyklen erst nach freiwilliger Nutzung unter Beobachtung zu aktivieren. Standort, Einstieg, Streu und Ausschlussgründe sind im selben Owner vorhanden.",
+      "change": "Keine Contentänderung.",
+      "evidence": [
+        "Bestehende Cornerstone-Logik und modellbezogene Hinweise, unter anderem Neakasa M1 Plus"
+      ],
+      "afterStatus": "covered",
+      "confidence": "high",
+      "skipped": true,
+      "skipReason": "Der sichere Kernablauf ist bereits kompakt vorhanden."
+    },
+    {
+      "id": "pet-camera-indoor-vs-special",
+      "cluster": "haustierkameras",
+      "demand": "Normale Indoor-Kamera oder spezielle Haustierkamera",
+      "intentOwner": "/haustierkameras/",
+      "sourceFile": "src/content/pages/haustierkameras.md",
+      "beforeStatus": "partial",
+      "finding": "Die Produktklassen waren in Matrix und Beispielen vorhanden, die direkte Kurzantwort „eine normale Indoor-Kamera reicht häufig“ jedoch nicht prominent.",
+      "change": "Kurzen Entscheidungsabschnitt vor der vorhandenen Matrix ergänzt: Standardfunktionen einer Indoor-Kamera versus belegte Pet-Spezialfunktionen; Reolink bleibt der bestehende normale Indoor-Kamera-Referenzfall.",
+      "evidence": [
+        "Reolink E1 Zoom Deutschland",
+        "Bestehende Produktdaten zu Furbo und Enabot"
+      ],
+      "afterStatus": "covered",
+      "confidence": "high",
+      "skipped": false,
+      "skipReason": null
+    },
+    {
+      "id": "pet-camera-offline",
+      "cluster": "haustierkameras",
+      "demand": "Funktionen bei Internet-/Herstellerdienstausfall",
+      "intentOwner": "/haustierkameras/",
+      "sourceFile": "src/content/pages/haustierkameras.md",
+      "beforeStatus": "covered",
+      "finding": "Der Hub trennt bereits Fernzugriff, Cloudaufzeichnung, App-Auswertung, Tarif und lokale Speicherung und unterstellt keine unbelegte lokale Restfunktion. Der Vergleich beantwortet den Ausfall ebenfalls modellvorsichtig.",
+      "change": "Keine zusätzliche Offline-Matrix.",
+      "evidence": [
+        "Bestehende Produktdaten zu Reolink, PetTec, PETLIBRO Scout, Furbo und Enabot"
+      ],
+      "afterStatus": "covered",
+      "confidence": "high",
+      "skipped": true,
+      "skipReason": "Produktdaten sind für eine vollständige produktübergreifende Offline-Matrix nicht einheitlich typisiert; die vorhandene allgemeine Funktionslogik ist korrekt und ausreichend."
+    },
+    {
+      "id": "gps-subscription-data-asset",
+      "cluster": "gps-tracker",
+      "demand": "Validiertes GPS-Abo-Finding in bestehende Inhalte integrieren",
+      "intentOwner": "/warum-brauchen-gps-tracker-ein-abo/",
+      "sourceFile": "src/content/pages/warum-brauchen-gps-tracker-ein-abo.md",
+      "beforeStatus": "covered",
+      "finding": "Der aktuelle Data-Asset-Snapshot besteht das Rechengate, steht aber auf needs-review, hat low confidence und nur 4/12 bzw. 33,3 % Evidence-Abdeckung. Die Aussage 4/4 wäre für die gesamte Auswahl leicht missverständlich.",
+      "change": "Keine Statistik veröffentlicht und kein Verweis ergänzt.",
+      "evidence": [
+        "reports/authority-distribution/data-assets/gps-subscriptions.json"
+      ],
+      "afterStatus": "covered",
+      "confidence": "high",
+      "skipped": true,
+      "skipReason": "Finding noch nicht fachlich validiert/publikationsreif; unzureichende Evidence-Abdeckung. Der bestehende Abo-Guide beantwortet die Kostenlogik ohne erfundene Statistik."
+    }
+  ],
+  "notImplemented": [
+    {
+      "id": "feeder-failure-safety",
+      "reason": "bereits ausreichende Abdeckung"
+    },
+    {
+      "id": "feeder-two-cats-wet-food-access",
+      "reason": "bereits ausreichende Abdeckung"
+    },
+    {
+      "id": "litter-box-maintenance",
+      "reason": "bereits ausreichende Abdeckung"
+    },
+    {
+      "id": "litter-box-acclimation",
+      "reason": "bereits ausreichende Abdeckung"
+    },
+    {
+      "id": "pet-camera-offline",
+      "reason": "bereits ausreichende allgemeine Logik; unzureichend typisierte Daten für eine neue Produktmatrix"
+    },
+    {
+      "id": "gps-subscription-data-asset",
+      "reason": "Finding needs-review, low confidence, Evidence-Abdeckung 33,3 %"
+    }
+  ],
+  "intentConflicts": {
+    "created": false,
+    "reason": "Nur zwei bestehende Cornerstones wurden innerhalb ihrer vorhandenen Seitenrolle präzisiert; keine URL, Route, Canonical oder neue Intent-Owner wurden angelegt."
+  }
+}

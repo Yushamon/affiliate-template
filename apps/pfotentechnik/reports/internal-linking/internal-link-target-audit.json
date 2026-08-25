@@ -1,25 +1,13 @@
 {
   "version": "2.0.2",
-  "generatedAt": "2026-08-21T10:44:29.269Z",
-  "strict": false,
+  "generatedAt": "2026-08-25T12:01:06.801Z",
+  "strict": true,
   "summary": {
-    "pages": 362,
-    "routes": 362,
+    "pages": 366,
+    "routes": 366,
     "redirectAliases": 33,
-    "errors": 1,
+    "errors": 0,
     "warnings": 0
   },
-  "findings": [
-    {
-      "severity": "error",
-      "code": "MISSING_TARGET",
-      "sourceFile": "apps/pfotentechnik/dist/produkt/feelneedy-fn-w18-8l-katzenbrunnen/index.html",
-      "sourceRoute": "/produkt/feelneedy-fn-w18-8l-katzenbrunnen/",
-      "originalTarget": "/hersteller/feelneedy/",
-      "normalizedTarget": "/hersteller/feelneedy/",
-      "finalTarget": "/hersteller/feelneedy/",
-      "reason": "Internes Ziel ist nicht im Build-Routeninventar vorhanden.",
-      "recommendation": "Link korrigieren oder fehlende Route wiederherstellen."
-    }
-  ]
+  "findings": []
 }

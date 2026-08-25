@@ -1,13 +1,13 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-08-19T08:07:06.360Z
+Erstellt: 2026-08-25T12:01:07.181Z
 
 ## Zusammenfassung
 
-- Produkte: 99
+- Produkte: 101
 - Fehler: 0
-- Warnungen: 98
-- Dokumentierte Hinweise: 146
+- Warnungen: 96
+- Dokumentierte Hinweise: 143
 - Doppelte Slugs: 0
 
 ## Kategorien
@@ -15,8 +15,8 @@ Erstellt: 2026-08-19T08:07:06.360Z
 - futterautomaten: 37
 - trinkbrunnen: 24
 - katzenklappen: 9
-- automatische-katzentoiletten: 10
-- haustierkameras: 7
+- automatische-katzentoiletten: 11
+- haustierkameras: 8
 - gps-tracker: 12
 
 ## Produkte mit Handlungsbedarf
@@ -31,17 +31,6 @@ Erstellt: 2026-08-19T08:07:06.360Z
   - Comparison-Bild fehlt
   - Nur 0 Galerie-Bilder hinterlegt
   - Affiliate-Link fehlt
-
-### Prothelis area Pets
-
-- Datei: `src/content/products/prothelis-area-pets.md`
-- Kategorie: gps-tracker
-- Vollständigkeit: 88%
-- Warnungen:
-  - Affiliate-Link fehlt
-  - Empfohlenes Feld fehlt: wlan
-  - Empfohlenes Feld fehlt: bluetooth
-  - Empfohlenes Feld fehlt: material
 
 ### Enabot EBO Air 2
 
@@ -142,6 +131,16 @@ Erstellt: 2026-08-19T08:07:06.360Z
   - Empfohlenes Feld fehlt: uv
   - Empfohlenes Feld fehlt: trinkhöhe
   - Empfohlenes Feld fehlt: gewicht
+
+### Prothelis area Pets
+
+- Datei: `src/content/products/prothelis-area-pets.md`
+- Kategorie: gps-tracker
+- Vollständigkeit: 91%
+- Warnungen:
+  - Empfohlenes Feld fehlt: wlan
+  - Empfohlenes Feld fehlt: bluetooth
+  - Empfohlenes Feld fehlt: material
 
 ### Cat Mate Pet Fountain 335
 
@@ -561,19 +560,6 @@ Erstellt: 2026-08-19T08:07:06.360Z
   - Herstellerangabe dokumentiert, aber nicht bestätigt: napf
   - Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung
   - Herstellerangabe dokumentiert, aber nicht bestätigt: batterie
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
-
-### PetSafe Smart Feed 2.0
-
-- Datei: `src/content/products/petsafe-smart-feed-2.md`
-- Kategorie: futterautomaten
-- Vollständigkeit: 97%
-- Warnungen:
-  - Nur 1 Galerie-Bilder hinterlegt
-- Dokumentierte Hinweise:
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: app-steuerung
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: napf
-  - Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung
   - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
 
 ### PetSnowy SNOW+ (SNOW)

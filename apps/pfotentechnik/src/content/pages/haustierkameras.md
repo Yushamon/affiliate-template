@@ -34,7 +34,7 @@ author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
 publishedAt: "2026-08-06"
-updatedAt: "2026-08-16"
+updatedAt: "2026-08-25"
 hub:
   sections:
     - "wissen"
@@ -157,9 +157,21 @@ evidenceSources:
       - "contentPlatform"
       - "premiumBlocks"
       - "faq"
+  - source: "Reolink E1 Zoom Deutschland"
+    url: "https://reolink.com/de/product/e1-zoom/"
+    accessedAt: "2026-08-16"
+    assertion: "Eine klassische Indoor-Kamera kann Livebild, Bewegungserkennung, Gegensprechen und lokale Speicherwege ohne haustierspezifische Interaktionshardware kombinieren."
+    fields:
+      - "body"
 ---
 
 Eine Haustierkamera ist zuerst ein **Blickpunkt im Zuhause** und erst danach ein smartes Gerät. Die wichtigste Frage ist, welchen Bereich du zuverlässig sehen möchtest und was du mit dem Bild tatsächlich tun willst.
+
+## Reicht eine normale Indoor-Kamera?
+
+**Ja, häufig.** Wenn du nur einen festen Bereich live sehen, Bewegungen erkennen, sprechen und lokal aufzeichnen möchtest, kann eine normale Indoor-Kamera die sachlichere und günstigere Produktklasse sein. Ein Haustier-Label ist dafür nicht erforderlich.
+
+Eine spezielle Haustierkamera lohnt erst, wenn du eine belegte Zusatzfunktion wirklich brauchst: etwa Leckerliwurf, Bell- oder Miau-Hinweise, tierbezogenes Tracking, spezielle Tier-KI oder eine mobile Roboterperspektive. Auch dann bleiben Abo, Cloud, Datenschutz und die Reaktion des Tiers eigene Prüfpunkte. Die [Reolink E1 Zoom 4K](/produkt/reolink-e1-zoom/) steht im Vergleich bewusst für die klassische Indoor-Kamera; Furbo- und Enabot-Modelle lösen andere Interaktions- oder Bewegungsaufgaben.
 
 ## Entscheidung nach Aufgabe
 

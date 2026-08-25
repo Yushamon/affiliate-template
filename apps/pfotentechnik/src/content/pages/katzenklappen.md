@@ -5,7 +5,7 @@ type: "page"
 layout: "page"
 description: "Cornerstone für Katzenklappen: Nutzeraufgabe, Mikrochip-Zugang, Mehrkatzen-Rechte, App, Beuteerkennung, Passform und Einbau in der richtigen Reihenfolge klären."
 publishedAt: "2026-08-04"
-updatedAt: "2026-08-16"
+updatedAt: "2026-08-25"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
@@ -148,10 +148,11 @@ evidenceSources:
   - source: "Sure Petcare Deutschland – Klappenübersicht"
     url: "https://www.surepetcare.com/de-de/haustierklappen"
     accessedAt: "2026-08-04"
-    assertion: "Abgrenzung lokaler und vernetzter Mikrochip-Funktionen."
+    assertion: "Abgrenzung lokaler und vernetzter Mikrochip-Funktionen sowie des chipgesteuerten Zugangsprinzips; eine separate Anti-Tailgating-Funktion wird daraus nicht abgeleitet."
     fields:
       - "contentPlatform"
       - "faq"
+      - "body"
   - source: "Produktquellen im Cluster"
     url: "https://www.onlycat.com/de/specs-de/"
     accessedAt: "2026-08-04"
@@ -186,6 +187,10 @@ Netzbetriebene Mikrochip-Klappen bilden eine zusätzliche Betriebsvariante: Sie 
 | Zugluft und Dämmung sind entscheidend | gedämmte oder motorisierte Tiertür | Einbaumaß, Anschluss, Stromversorgung, Notöffnung |
 
 Eine App ersetzt weder die passende Öffnung noch eine verlässliche lokale Verriegelung. Entscheide deshalb zuerst nach Zugangsregel, Katze und Einbauort.
+
+### Systemgrenze: Tailgating
+
+Eine Mikrochip-Freigabe entscheidet, **welches erkannte Tier die Klappe entriegelt**. Sie garantiert nicht, dass eine fremde Katze nicht unmittelbar hinter der berechtigten Katze durch die noch offene Klappe folgt. Dieses sogenannte Tailgating ist eine mechanische Systemgrenze und etwas anderes als ein falsch gelesener Chip. Wer dieses Risiko konkret absichern muss, sollte nur eine ausdrücklich dokumentierte Anti-Tailgating-Lösung berücksichtigen – aus „Mikrochip“ oder „DualScan“ allein lässt sie sich nicht ableiten.
 
 ## Entscheidung in fünf Schritten
 

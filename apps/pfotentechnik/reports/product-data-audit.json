@@ -1,18 +1,18 @@
 {
   "summary": {
-    "generatedAt": "2026-08-19T08:07:06.360Z",
-    "totalProducts": 99,
+    "generatedAt": "2026-08-25T12:01:07.181Z",
+    "totalProducts": 101,
     "byCategory": {
       "futterautomaten": 37,
       "trinkbrunnen": 24,
       "katzenklappen": 9,
-      "automatische-katzentoiletten": 10,
-      "haustierkameras": 7,
+      "automatische-katzentoiletten": 11,
+      "haustierkameras": 8,
       "gps-tracker": 12
     },
     "errors": 0,
-    "warnings": 98,
-    "notes": 146,
+    "warnings": 96,
+    "notes": 143,
     "duplicateSlugs": 0
   },
   "duplicateSlugs": [],
@@ -1392,6 +1392,45 @@
       "structuralCompleteness": 100,
       "confirmedCompleteness": 100,
       "completeness": 91
+    },
+    {
+      "file": "src/content/products/furbo-360-katzenkamera.md",
+      "slug": "furbo-360-katzenkamera",
+      "title": "Furbo 360° Katzenkamera",
+      "category": "haustierkameras",
+      "errors": [],
+      "warnings": [],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Video",
+          "value": "1080p FHD, rotierende 360°-Sicht, 4× Digitalzoom"
+        },
+        {
+          "label": "Tracking",
+          "value": "Automatische Rotation und Zoom-Verfolgung laut Hersteller"
+        },
+        {
+          "label": "Interaktion",
+          "value": "Zwei-Wege-Audio, Leckerliwurf bis etwa 100 Stück, Feder-Spielzeug"
+        },
+        {
+          "label": "Katzenfunktionen",
+          "value": "Meowing Alert; Kitty Diary über Furbo Nanny"
+        },
+        {
+          "label": "Lieferumfang EU",
+          "value": "Furbo 360° Cat Camera, 2-m-USB-C-Kabel, Netzteil und Feather Wand Toy"
+        },
+        {
+          "label": "Garantie",
+          "value": "1 Jahr laut aktuellem Furbo-EU-Vergleich"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 100
     },
     {
       "file": "src/content/products/furbo-mini-360.md",
@@ -4503,6 +4542,69 @@
       "completeness": 100
     },
     {
+      "file": "src/content/products/petkit-purobot-crystal-duo.md",
+      "slug": "petkit-purobot-crystal-duo",
+      "title": "PETKIT PUROBOT CRYSTAL DUO",
+      "category": "automatische-katzentoiletten",
+      "errors": [],
+      "warnings": [],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Modell",
+          "value": "P9905"
+        },
+        {
+          "label": "Maße",
+          "value": "818 × 507 × 334 mm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "ca. 5,65 kg"
+        },
+        {
+          "label": "Einstieg",
+          "value": "180 mm"
+        },
+        {
+          "label": "Katzenprofil",
+          "value": "ab 6 Monaten und über 1,5 kg; kein oberes Gewicht ausgewiesen"
+        },
+        {
+          "label": "Reinigungssystem",
+          "value": "Offene Schale, Zwei-Wege-Rechen und zwei seitliche Abfallfallen"
+        },
+        {
+          "label": "Verbrauchsmaterial",
+          "value": "Ausschließlich PETKIT Crystal Litter Set aus Kristallstreu und Einwegschale; N60-Geruchszubehör"
+        },
+        {
+          "label": "Kamera",
+          "value": "Fester Schalenblick, Einweg-Audio, Livebild und Ereignisclips; Kamera abschalt- und zeitplanbar"
+        },
+        {
+          "label": "App/WLAN",
+          "value": "PETKIT App; 2,4- und 5-GHz-WLAN laut EU-Produktseite"
+        },
+        {
+          "label": "Care+",
+          "value": "Vollständige HD-Videowiedergabe und weitere Videoprivilegien tarifabhängig"
+        },
+        {
+          "label": "Nenneingang",
+          "value": "12 V Gleichstrom, 2 A"
+        },
+        {
+          "label": "Material",
+          "value": "ABS und Silikon laut Hersteller"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 100
+    },
+    {
       "file": "src/content/products/petkit-purobot-max-3.md",
       "slug": "petkit-purobot-max-3",
       "title": "PETKIT PUROBOT MAX 3",
@@ -6938,13 +7040,8 @@
       "title": "PetSafe Smart Feed 2.0",
       "category": "futterautomaten",
       "errors": [],
-      "warnings": [
-        "Nur 1 Galerie-Bilder hinterlegt"
-      ],
+      "warnings": [],
       "notes": [
-        "Herstellerangabe dokumentiert, aber nicht bestätigt: app-steuerung",
-        "Herstellerangabe dokumentiert, aber nicht bestätigt: napf",
-        "Herstellerangabe dokumentiert, aber nicht bestätigt: reinigung",
         "Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht"
       ],
       "specs": [
@@ -6986,7 +7083,7 @@
         },
         {
           "label": "App-Steuerung",
-          "value": "Nicht vom Hersteller ausgewiesen"
+          "value": "My PetSafe App; iOS 12 oder neuer, Android 9 oder neuer"
         },
         {
           "label": "Kamera",
@@ -6994,11 +7091,11 @@
         },
         {
           "label": "Napf",
-          "value": "Nicht vom Hersteller ausgewiesen"
+          "value": "Edelstahlnapf mit Napfhalter"
         },
         {
           "label": "Reinigung",
-          "value": "Nicht vom Hersteller ausgewiesen"
+          "value": "Deckel, Futterbehälter, Edelstahlnapf und Napfhalter laut Hersteller spülmaschinengeeignet"
         },
         {
           "label": "Gewicht",
@@ -7006,14 +7103,11 @@
         }
       ],
       "unknownSpecs": [
-        "App-Steuerung",
-        "Napf",
-        "Reinigung",
         "Gewicht"
       ],
       "structuralCompleteness": 100,
-      "confirmedCompleteness": 69,
-      "completeness": 97
+      "confirmedCompleteness": 92,
+      "completeness": 100
     },
     {
       "file": "src/content/products/petsafe-streamside-trinkbrunnen.md",
@@ -7266,7 +7360,6 @@
       "category": "gps-tracker",
       "errors": [],
       "warnings": [
-        "Affiliate-Link fehlt",
         "Empfohlenes Feld fehlt: wlan",
         "Empfohlenes Feld fehlt: bluetooth",
         "Empfohlenes Feld fehlt: material"
@@ -7325,7 +7418,7 @@
       "unknownSpecs": [],
       "structuralCompleteness": 80,
       "confirmedCompleteness": 80,
-      "completeness": 88
+      "completeness": 91
     },
     {
       "file": "src/content/products/reolink-e1-zoom.md",

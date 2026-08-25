@@ -1,7 +1,7 @@
 # GPS-Abo Data Asset
 
 - Snapshot-Version: `5ef20a5f081710e5`
-- Erzeugt: 2026-08-25T11:55:10.843Z
+- Erzeugt: 2026-08-25T12:01:21.452Z
 - Datenstand: 2026-08-24T00:00:00.000Z
 - Validation Gate: bestanden
 
