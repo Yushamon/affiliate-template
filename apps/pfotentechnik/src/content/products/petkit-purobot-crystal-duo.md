@@ -14,19 +14,19 @@ manufacturer:
 category: { key: "automatische-katzentoiletten", label: "Automatische Katzentoiletten", path: "/automatische-katzentoiletten/" }
 productUrl: "/produkt/petkit-purobot-crystal-duo/"
 publishedAt: "2026-08-21"
-updatedAt: "2026-08-21"
+updatedAt: "2026-08-25"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 seo: { title: "PETKIT PUROBOT CRYSTAL DUO im Datencheck", description: "Offene PETKIT Katzentoilette P9905: Einstieg, Crystal-Litter-System, Kamera, Care+, Grenzen und laufende Kosten.", canonical: "/produkt/petkit-purobot-crystal-duo/", sitemap: true, priority: 0.8 }
 hub: { sections: ["produkte", "automatische-katzentoiletten"] }
 tags: ["automatische-katzentoilette", "petkit", "open-top", "kamera", "kristallstreu"]
 images:
-  hero: { src: "../../assets/images/products/petkit-purobot-crystal-duo/hero.webp", alt: "Temporärer Editorial-Platzhalter für PETKIT PUROBOT CRYSTAL DUO; noch kein Produktbild" }
-  thumbnail: { src: "../../assets/images/products/petkit-purobot-crystal-duo/thumbnail.webp", alt: "Temporärer Platzhalter für die kompakte Ansicht des PETKIT PUROBOT CRYSTAL DUO" }
-  comparison: { src: "../../assets/images/products/petkit-purobot-crystal-duo/comparison.webp", alt: "Temporärer Platzhalter für PETKIT PUROBOT CRYSTAL DUO im Vergleich" }
+  hero: { src: "../../assets/images/products/petkit-purobot-crystal-duo/hero.webp", alt: "PETKIT PUROBOT CRYSTAL DUO mit offener Schale und App-Ansicht" }
+  thumbnail: { src: "../../assets/images/products/petkit-purobot-crystal-duo/thumbnail.webp", alt: "PETKIT PUROBOT CRYSTAL DUO in kompakter Produktansicht" }
+  comparison: { src: "../../assets/images/products/petkit-purobot-crystal-duo/comparison.webp", alt: "PETKIT PUROBOT CRYSTAL DUO im Produktvergleich" }
   gallery:
-    - { src: "../../assets/images/products/petkit-purobot-crystal-duo/gallery-1.webp", alt: "Geplanter Bildslot: offene Bauweise und niedriger Einstieg des PETKIT PUROBOT CRYSTAL DUO; aktuell Platzhalter" }
-    - { src: "../../assets/images/products/petkit-purobot-crystal-duo/gallery-2.webp", alt: "Geplanter Bildslot: Rechen, Crystal Litter und Tray des PETKIT PUROBOT CRYSTAL DUO; aktuell Platzhalter" }
-    - { src: "../../assets/images/products/petkit-purobot-crystal-duo/gallery-3.webp", alt: "Geplanter Bildslot: PETKIT PUROBOT CRYSTAL DUO in einer Nutzungssituation mit Katze; aktuell Platzhalter" }
+    - { src: "../../assets/images/products/petkit-purobot-crystal-duo/gallery-1.webp", alt: "PETKIT PUROBOT CRYSTAL DUO mit niedrigem offenem Einstieg neben Katzen" }
+    - { src: "../../assets/images/products/petkit-purobot-crystal-duo/gallery-2.webp", alt: "Einwegschale des PETKIT PUROBOT CRYSTAL DUO beim Austausch" }
+    - { src: "../../assets/images/products/petkit-purobot-crystal-duo/gallery-3.webp", alt: "Sensorpositionen am PETKIT PUROBOT CRYSTAL DUO" }
 price:
   current: 169
   currency: "EUR"
@@ -39,6 +39,40 @@ price:
 priceAutomation: "editorial"
 rating: 3.8
 ratings: { einstieg: 4.6, geruchskontrolle: 3.8, sicherheit: 3.8, app: 4.0, wartung: 3.4 }
+externalEvidence:
+  professionalReviews:
+    - publisher: "One Man Five Cats"
+      title: "Petkit Purobot Crystal Duo Review"
+      url: "https://www.youtube.com/watch?v=Ds8SUiINuJw"
+      checkedAt: "2026-08-25"
+      methodology: "hands-on"
+      positives:
+        - "Der offengelegt zugeschickte Praxiseindruck zeigt Einrichtung, App und Reinigungsablauf am konkreten Produkt."
+      negatives:
+        - "Das proprietäre Tray-/Kristallstreusystem und seine laufenden Kosten bleiben zentrale Einschränkungen."
+  userReviews:
+    - platform: "PETKIT Shop"
+      url: "https://www.petkit.com/products/purobot-crystal-duo-cat-litter-box-with-camera"
+      checkedAt: "2026-08-25"
+      recurringPositives:
+        - "Produktspezifische Stimmen nennen den offenen Zugang und die einfache Einrichtung positiv."
+      recurringCriticism:
+        - "Einzelne Stimmen thematisieren Folgekosten und die Zuordnung von Ereignissen in Mehrkatzenhaushalten."
+  consensus:
+    strengths:
+      - finding: "Der offene, niedrige Zugang ist der am klarsten gestützte praktische Unterschied zu Trommelmodellen."
+        sourceCount: 2
+        confidence: "medium"
+    weaknesses:
+      - finding: "Die Bindung an Einwegschale und Crystal Litter erzeugt laufende Kosten und eingeschränkte Streuwahl."
+        sourceCount: 2
+        confidence: "high"
+    editorialAssessment: >-
+      Die externe Datenbasis ist noch klein: ein offengelegt zugeschickter Praxiseindruck und Shop-Nutzerstimmen.
+      Herstellerangaben werden deshalb separat belegt und nicht als unabhängige Erfahrung behandelt.
+  note: >-
+    Kein eigener PfotenTechnik-Praxistest. Das Videogerät wurde dem Reviewer nach eigener Kennzeichnung zugeschickt;
+    die PETKIT-Shopbewertungen können auch zusammengeführte Produktvarianten enthalten und werden nicht als Produktnote übernommen.
 decision:
   bestFor: ["Große, ältere oder kurzbeinige Katzen, die eine offene Bauform bevorzugen", "Haushalte, die Kamera- und Toilettentrends bewusst nutzen", "Nutzer, die das proprietäre Crystal-Litter-System akzeptieren"]
   attention: ["Mindestens 6 Monate und über 1,5 kg", "Nur PETKIT Crystal Litter Set mit Einwegschale", "Video-Vollwiedergabe und weitere Privilegien benötigen Care+", "Monitoring ist keine Diagnose"]
@@ -56,6 +90,8 @@ specs:
   - { label: "Kamera", value: "Fester Schalenblick, Einweg-Audio, Livebild und Ereignisclips; Kamera abschalt- und zeitplanbar" }
   - { label: "App/WLAN", value: "PETKIT App; 2,4- und 5-GHz-WLAN laut EU-Produktseite" }
   - { label: "Care+", value: "Vollständige HD-Videowiedergabe und weitere Videoprivilegien tarifabhängig" }
+  - { label: "Nenneingang", value: "12 V Gleichstrom, 2 A" }
+  - { label: "Material", value: "ABS und Silikon laut Hersteller" }
 features: ["Offenes System", "Zwei-Wege-Rechen", "Kamera-Monitoring", "pH-bezogene Hinweise mit separatem Urine Monitor Crystal Litter Set", "Yowling-Hinweise"]
 comparisonData:
   version: 1
@@ -82,16 +118,18 @@ comparisonData:
     video_cloud: "Cloud; Vollwiedergabe über Care+"
     mindestalter: "6 Monate"
 comparisons: ["beste-automatische-katzentoiletten"]
+alternatives: ["petkit-puramax-2", "neakasa-m1-plus"]
 comparisonFilters: { animal: ["cat"], petSize: ["small", "medium", "large"], foodType: [] }
 decisionJourney: { cluster: "automatische-katzentoiletten", stage: "decision", intent: "petkit-crystal-duo-pruefen", primaryQuestion: "Rechtfertigen offener Zugang und Monitoring die Bindung an Crystal Litter Set und Care+?", next: ["/vergleiche/beste-automatische-katzentoiletten/"], fallback: ["/automatische-katzentoiletten/", "/hersteller/petkit/"] }
 faq:
   - { question: "Ist der Crystal Duo eine Trommeltoilette?", answer: "Nein. Eine offene flache Schale wird von einem Zwei-Wege-Rechen gereinigt; Abfall gelangt in zwei seitliche Fallen." }
   - { question: "Kann normale Klumpstreu verwendet werden?", answer: "Nein. PETKIT schreibt das Crystal Litter Set mit passender Kristallstreu und Einwegschale vor." }
   - { question: "Erkennt der Crystal Duo Harnwegserkrankungen?", answer: "Nein. Kamera-, Verhaltens- und pH-bezogene Angaben sind Trends beziehungsweise Herstellerhinweise und keine medizinische Diagnose." }
-editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-21", note: "Herstellerdaten redaktionell eingeordnet; kein eigener Produkttest." }
+editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis", "user-feedback"], testedHandsOn: false, lastVerifiedAt: "2026-08-25", note: "Herstellerdaten redaktionell eingeordnet; kein eigener Produkttest." }
 evidenceSources:
-  - { source: "PETKIT EU Produktseite", url: "https://www.petkit-eu.com/de/products/purobot-crystal-duo-automatic-cat-litter-box-with-camera", accessedAt: "2026-08-21", assertion: "EU-Verfügbarkeit, Preis, Lieferumfang, Bauart, Einstieg, Verbrauchssystem, Kamera, WLAN und Herstellerfunktionen.", fields: ["availability", "specs", "features", "comparisonData"] }
-  - { source: "PETKIT P9905 Bedienungsanleitung", url: "https://instructions.petkit.com/App%20Manual/T7/T7_User%20Manual_EN_V1.0_20250922%20.pdf", accessedAt: "2026-08-21", assertion: "Modell, Maße, Gewicht, Mindestalter/-gewicht, App, Reinigung, Care+ und Sicherheitsgrenzen.", fields: ["specs", "decision", "faq"] }
+  - { source: "PETKIT Produktseite", url: "https://www.petkit.com/products/purobot-crystal-duo-cat-litter-box-with-camera", accessedAt: "2026-08-25", assertion: "Modell, Maße, Gewicht, Material, Nenneingang, Bauart, Einstieg, Verbrauchssystem, Kamera, WLAN und Herstellerfunktionen.", fields: ["specs", "features", "comparisonData", "images"] }
+  - { source: "PETKIT EU Produktseite", url: "https://www.petkit-eu.com/de/products/purobot-crystal-duo-automatic-cat-litter-box-with-camera", accessedAt: "2026-08-25", assertion: "EU-Verfügbarkeit, Lieferumfang, Verbrauchssystem und regional angebotene Funktionen.", fields: ["availability", "specs", "features"] }
+  - { source: "PETKIT P9905 Bedienungsanleitung", url: "https://instructions.petkit.com/App%20Manual/T7/T7_User%20Manual_EN_V1.0_20250922%20.pdf", accessedAt: "2026-08-25", assertion: "Modell, Maße, Gewicht, Mindestalter/-gewicht, App, Reinigung, Care+ und Sicherheitsgrenzen.", fields: ["specs", "decision", "faq"] }
 affiliate:
   provider: "petkit-eu"
   label: "Preis und Verfügbarkeit prüfen"

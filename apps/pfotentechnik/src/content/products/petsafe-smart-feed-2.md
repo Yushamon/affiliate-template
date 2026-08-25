@@ -21,7 +21,7 @@ category:
   path: /smarte-futterautomaten/
 productUrl: "/produkt/petsafe-smart-feed-2/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
+updatedAt: "2026-08-25"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -54,6 +54,10 @@ images:
   gallery:
     - src: ../../assets/images/products/petsafe-smart-feed-2/gallery-1.webp
       alt: PetSafe Smart Feed 2.0, weitere redaktionelle Ansicht 1
+    - src: ../../assets/images/products/petsafe-smart-feed-2/gallery-2.webp
+      alt: PetSafe Smart Feed 2.0 mit Maßangaben und 24-Cup-Futterbehälter
+    - src: ../../assets/images/products/petsafe-smart-feed-2/gallery-3.webp
+      alt: PetSafe Smart Feed 2.0 in Wohnsituationen mit Katzen und Hund
 price:
   current: 211.49
   currency: "EUR"
@@ -126,6 +130,20 @@ externalEvidence:
     editorialAssessment: >-
       Professioneller Test und große produktspezifische Nutzerbasis bestätigen den Komfortgewinn, zeigen aber,
       dass das Gerät nicht als ausfallsichere Lösung ohne Kontrolle betrachtet werden sollte.
+  note: >-
+    Technische Angaben stammen aus PetSafe-Produkt- und Supportunterlagen. Tom's Guide liefert einen unabhängigen
+    Praxistest; Chewy ergänzt produktspezifische Nutzerstimmen. PfotenTechnik hat das Gerät nicht selbst getestet.
+evidenceSources:
+  - source: "PetSafe Smart Feed Produktseite"
+    url: "https://www.petsafe.com/product/smart-feed/?sku=PFD00-16828"
+    accessedAt: "2026-08-25"
+    assertion: "Modell, Kapazität, Futterarten, Portionierung, Slow Feed, Napf, Reinigung, App-Anforderungen, WLAN, Stromversorgung, Zieltiere und Maße."
+    fields: ["specs", "strengths", "decision", "faq"]
+  - source: "PetSafe Smart Feed Produktsupport"
+    url: "https://support.petsafe.net/product-support/smart-feed-automatic-dog-and-cat-feeder-2nd-generation/"
+    accessedAt: "2026-08-25"
+    assertion: "Zuordnung der zweiten Generation zum Modell PFD00-16828 und Zugriff auf die Herstelleranleitung."
+    fields: ["specs", "editorial"]
 decision:
   bestFor:
     - Katzen und kleine bis mittelgroße Hunde
@@ -210,13 +228,13 @@ specs:
   - label: Maße
     value: Etwa 51,6 × 23,9 × 32 cm
   - label: App-Steuerung
-    value: Nicht vom Hersteller ausgewiesen
+    value: My PetSafe App; iOS 12 oder neuer, Android 9 oder neuer
   - label: Kamera
     value: Nein
   - label: Napf
-    value: Nicht vom Hersteller ausgewiesen
+    value: Edelstahlnapf mit Napfhalter
   - label: Reinigung
-    value: Nicht vom Hersteller ausgewiesen
+    value: Deckel, Futterbehälter, Edelstahlnapf und Napfhalter laut Hersteller spülmaschinengeeignet
   - label: Gewicht
     value: Nicht vom Hersteller ausgewiesen
 faq:
@@ -228,6 +246,15 @@ faq:
     answer: >-
       Mit vier eingesetzten D-Alkalibatterien steht eine Backup-Option zur Verfügung. Der konkrete Notbetrieb sollte
       vorab getestet werden.
+  - question: Welches Futter eignet sich für den PetSafe Smart Feed 2.0?
+    answer: >-
+      PetSafe gibt Trocken- und halbfeuchtes Futter an. Ein unabhängiger Praxistest berichtet jedoch, dass nicht jede
+      Krokettenform gleich zuverlässig gefördert wurde; die Ausgabe sollte deshalb mit dem konkret verwendeten Futter
+      kontrolliert werden.
+  - question: Welche Teile dürfen in die Spülmaschine?
+    answer: >-
+      Laut PetSafe sind Deckel, Futterbehälter, Edelstahlnapf und Napfhalter spülmaschinengeeignet. Elektronische
+      Komponenten und das Grundgerät gehören nicht in die Spülmaschine; maßgeblich bleibt die Herstelleranleitung.
 features:
   - App-Steuerung
   - 24-Cup-Förderband

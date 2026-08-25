@@ -11,6 +11,7 @@ manufacturer:
   key: "feelneedy"
   name: "FEELNEEDY"
   slug: "feelneedy"
+  href: "/hersteller/"
 category:
   key: "trinkbrunnen"
   label: "Trinkbrunnen"

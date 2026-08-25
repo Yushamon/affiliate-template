@@ -39,6 +39,7 @@ export const getProductBreadcrumbs = (
   {
     label: entry.data.manufacturer.name,
     href: normalizePath(
+      entry.data.manufacturer.href ??
       `/hersteller/${entry.data.manufacturer.slug}`
     )
   },

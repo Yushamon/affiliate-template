@@ -661,7 +661,7 @@ export const buildProductExperienceModel = ({
     slug,
     name: text(data.title, "Produkt"),
     manufacturer: text(data.manufacturer?.name ?? data.manufacturer),
-    manufacturerHref: data.manufacturer?.slug ? `/hersteller/${data.manufacturer.slug}/` : null,
+    manufacturerHref: data.manufacturer?.href || (data.manufacturer?.slug ? `/hersteller/${data.manufacturer.slug}/` : null),
     category: text(data.category?.label ?? data.category),
     categoryHref: text(data.category?.path, "/vergleiche/"),
     recommendation: operations.availability === "discontinued"

@@ -22,7 +22,8 @@ const productManufacturerSchema =
   z.object({
     key: z.string(),
     name: z.string(),
-    slug: z.string()
+    slug: z.string(),
+    href: z.string().optional()
   });
 
 const productCategorySchema =
