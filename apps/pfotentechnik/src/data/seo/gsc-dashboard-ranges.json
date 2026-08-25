@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-19T05:06:34.471Z",
+  "generatedAt": "2026-08-24T12:23:27.763Z",
   "property": "sc-domain:pfotentechnik.de",
   "provider": "google",
   "defaultRange": "7d",
@@ -8,40 +8,40 @@
     "7d": {
       "key": "7d",
       "label": "Letzte 7 Tage",
-      "startDate": "2026-08-12",
-      "endDate": "2026-08-18",
-      "comparisonStartDate": "2026-08-05",
-      "comparisonEndDate": "2026-08-11",
+      "startDate": "2026-08-17",
+      "endDate": "2026-08-23",
+      "comparisonStartDate": "2026-08-10",
+      "comparisonEndDate": "2026-08-16",
       "dataState": "all",
       "partial": false,
       "lowData": true,
       "metrics": {
         "current": {
           "clicks": 0,
-          "impressions": 8,
+          "impressions": 13,
           "ctr": 0,
-          "position": 23.6
+          "position": 24.8
         },
         "previous": {
           "clicks": 0,
-          "impressions": 13,
+          "impressions": 5,
           "ctr": 0,
-          "position": 30.3
+          "position": 19
         },
         "change": {
           "clicks": 0,
-          "impressions": -38.5,
+          "impressions": 160,
           "ctr": 0,
-          "position": 6.7
+          "position": -5.8
         }
       },
       "pages": [
         {
           "page": "/futterautomat-katze/",
           "clicks": 0,
-          "impressions": 4,
+          "impressions": 5,
           "ctr": 0,
-          "position": 15.8
+          "position": 22.6
         },
         {
           "page": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
@@ -72,6 +72,13 @@
           "position": 6
         },
         {
+          "page": "/hund-ist-muede/",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 8.5
+        },
+        {
           "page": "/",
           "clicks": 0,
           "impressions": 1,
@@ -93,13 +100,6 @@
           "position": 47
         },
         {
-          "page": "/hund-frisst-nicht/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 19
-        },
-        {
           "page": "/produkt/oneisall-5l-automatic-cat-feeder/",
           "clicks": 0,
           "impressions": 1,
@@ -114,11 +114,25 @@
           "position": 1
         },
         {
+          "page": "/produkt/weenect-xt/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6
+        },
+        {
           "page": "/vergleiche/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
           "position": 9
+        },
+        {
+          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 76
         },
         {
           "page": "/vergleiche/futterautomat-mit-app/",
@@ -128,11 +142,11 @@
           "position": 2
         },
         {
-          "page": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
+          "page": "/welpen-richtig-fuettern/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 9
+          "position": 10
         },
         {
           "page": "/wie-funktioniert-ein-futterautomat/",
@@ -154,6 +168,13 @@
           "impressions": 1,
           "ctr": 0,
           "position": 8
+        },
+        {
+          "page": "/redaktion/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
         },
         {
           "page": "/uebergewicht-bei-katzen-vermeiden/",
@@ -179,6 +200,13 @@
           "position": 55
         },
         {
+          "query": "nassfutter automat katzen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 50
+        },
+        {
           "query": "tractive care",
           "clicks": 0,
           "impressions": 1,
@@ -194,6 +222,14 @@
           "impressions": 1,
           "ctr": 0,
           "position": 55
+        },
+        {
+          "page": "/futterautomat-katze/",
+          "query": "nassfutter automat katzen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 50
         },
         {
           "page": "/hersteller/tractive/",
@@ -214,41 +250,6 @@
       ],
       "trend": [
         {
-          "date": "2026-08-12",
-          "clicks": 0,
-          "impressions": 0,
-          "ctr": 0,
-          "position": 0
-        },
-        {
-          "date": "2026-08-13",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 9
-        },
-        {
-          "date": "2026-08-14",
-          "clicks": 0,
-          "impressions": 0,
-          "ctr": 0,
-          "position": 0
-        },
-        {
-          "date": "2026-08-15",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 19
-        },
-        {
-          "date": "2026-08-16",
-          "clicks": 0,
-          "impressions": 0,
-          "ctr": 0,
-          "position": 0
-        },
-        {
           "date": "2026-08-17",
           "clicks": 0,
           "impressions": 5,
@@ -261,6 +262,41 @@
           "impressions": 1,
           "ctr": 0,
           "position": 47
+        },
+        {
+          "date": "2026-08-19",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 63
+        },
+        {
+          "date": "2026-08-20",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6
+        },
+        {
+          "date": "2026-08-21",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        {
+          "date": "2026-08-22",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 6
+        },
+        {
+          "date": "2026-08-23",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 8.5
         }
       ],
       "recommendations": []
@@ -268,278 +304,75 @@
     "28d": {
       "key": "28d",
       "label": "Letzte 28 Tage",
-      "startDate": "2026-07-22",
-      "endDate": "2026-08-18",
-      "comparisonStartDate": "2026-06-24",
-      "comparisonEndDate": "2026-07-21",
+      "startDate": "2026-07-27",
+      "endDate": "2026-08-23",
+      "comparisonStartDate": "2026-06-29",
+      "comparisonEndDate": "2026-07-26",
       "dataState": "all",
       "partial": false,
-      "lowData": false,
+      "lowData": true,
       "metrics": {
         "current": {
-          "clicks": 7,
-          "impressions": 249,
-          "ctr": 2.81,
-          "position": 25.2
+          "clicks": 1,
+          "impressions": 55,
+          "ctr": 1.82,
+          "position": 37.3
         },
         "previous": {
-          "clicks": 13,
-          "impressions": 456,
-          "ctr": 2.85,
-          "position": 22.1
+          "clicks": 19,
+          "impressions": 657,
+          "ctr": 2.89,
+          "position": 22
         },
         "change": {
-          "clicks": -46.2,
-          "impressions": -45.4,
-          "ctr": -0.04,
-          "position": -3.1
+          "clicks": -94.7,
+          "impressions": -91.6,
+          "ctr": -1.07,
+          "position": -15.3
         }
       },
       "pages": [
         {
-          "page": "/futterautomat-fuer-zwei-katzen/",
-          "clicks": 0,
-          "impressions": 23,
-          "ctr": 0,
-          "position": 32.7
-        },
-        {
-          "page": "/smarte-futterautomaten/",
-          "clicks": 0,
-          "impressions": 18,
-          "ctr": 0,
-          "position": 44.2
-        },
-        {
           "page": "/futterautomat-katze/",
-          "clicks": 0,
-          "impressions": 15,
-          "ctr": 0,
-          "position": 47.8
-        },
-        {
-          "page": "/beste-futterautomaten-fuer-katzen/",
-          "clicks": 1,
-          "impressions": 14,
-          "ctr": 7.14,
-          "position": 47.4
-        },
-        {
-          "page": "/futterautomat-nassfutter/",
-          "clicks": 0,
-          "impressions": 13,
-          "ctr": 0,
-          "position": 33.2
-        },
-        {
-          "page": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
           "clicks": 0,
           "impressions": 11,
           "ctr": 0,
-          "position": 13
+          "position": 41.1
         },
         {
-          "page": "/futterautomat-mit-kamera/",
+          "page": "/futterautomat-fuer-zwei-katzen/",
           "clicks": 0,
-          "impressions": 9,
+          "impressions": 6,
           "ctr": 0,
-          "position": 21
-        },
-        {
-          "page": "/futtermenge-katze/",
-          "clicks": 0,
-          "impressions": 9,
-          "ctr": 0,
-          "position": 33.6
-        },
-        {
-          "page": "/produkt/petkit-yumshare-solo-2/",
-          "clicks": 1,
-          "impressions": 8,
-          "ctr": 12.5,
-          "position": 5.3
-        },
-        {
-          "page": "/produkt/petlibro-polar-wet-food-feeder/",
-          "clicks": 0,
-          "impressions": 8,
-          "ctr": 0,
-          "position": 9.1
-        },
-        {
-          "page": "/futterautomat-ohne-wlan/",
-          "clicks": 0,
-          "impressions": 7,
-          "ctr": 0,
-          "position": 6.7
-        },
-        {
-          "page": "/katzenwasser-taeglich-wechseln/",
-          "clicks": 0,
-          "impressions": 7,
-          "ctr": 0,
-          "position": 12.6
+          "position": 70.2
         },
         {
           "page": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
           "clicks": 0,
-          "impressions": 7,
-          "ctr": 0,
-          "position": 45.3
-        },
-        {
-          "page": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
-          "clicks": 0,
-          "impressions": 7,
-          "ctr": 0,
-          "position": 42.3
-        },
-        {
-          "page": "/wie-viele-wasserstellen-katze/",
-          "clicks": 0,
-          "impressions": 7,
-          "ctr": 0,
-          "position": 5.9
-        },
-        {
-          "page": "/futterautomat-richtig-reinigen/",
-          "clicks": 1,
-          "impressions": 6,
-          "ctr": 16.67,
-          "position": 7
-        },
-        {
-          "page": "/trinkbrunnen/",
-          "clicks": 0,
           "impressions": 6,
           "ctr": 0,
-          "position": 15.3
-        },
-        {
-          "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-          "clicks": 0,
-          "impressions": 6,
-          "ctr": 0,
-          "position": 29.2
-        },
-        {
-          "page": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
-          "clicks": 0,
-          "impressions": 5,
-          "ctr": 0,
-          "position": 9.4
-        },
-        {
-          "page": "/vergleiche/beste-futterautomaten-fuer-hunde/",
-          "clicks": 0,
-          "impressions": 5,
-          "ctr": 0,
-          "position": 48.6
-        },
-        {
-          "page": "/beste-futterautomaten-fuer-zwei-katzen/",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 12
-        },
-        {
-          "page": "/filter-im-katzentrinkbrunnen-wechseln/",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 9.8
-        },
-        {
-          "page": "/futterautomat-fuer-grosse-hunde/",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 9.5
-        },
-        {
-          "page": "/futterautomat-hund/",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 32.3
-        },
-        {
-          "page": "/futterautomat-im-urlaub/",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 28.3
-        },
-        {
-          "page": "/hund-trinkt-viel/",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 80.3
-        },
-        {
-          "page": "/produkt/petkit-eversweet-ultra/",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 15.3
-        },
-        {
-          "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 2.5
+          "position": 37.7
         },
         {
           "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
           "clicks": 0,
           "impressions": 4,
           "ctr": 0,
-          "position": 48.8
+          "position": 58.5
         },
         {
-          "page": "/katzentrinkbrunnen-ohne-filter/",
-          "clicks": 1,
-          "impressions": 3,
-          "ctr": 33.33,
-          "position": 4
-        },
-        {
-          "page": "/",
+          "page": "/smarte-futterautomaten/",
           "clicks": 0,
           "impressions": 3,
           "ctr": 0,
-          "position": 3
+          "position": 5.3
         },
         {
-          "page": "/futtermenge-hund/",
+          "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
           "clicks": 0,
           "impressions": 3,
           "ctr": 0,
-          "position": 93.3
-        },
-        {
-          "page": "/kalk-katzentrinkbrunnen-entfernen/",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 8.3
-        },
-        {
-          "page": "/katzentrinkbrunnen-laut-pumpe/",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 6.7
-        },
-        {
-          "page": "/produkt/weenect-xs/",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 17.3
+          "position": 2.3
         },
         {
           "page": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
@@ -549,67 +382,18 @@
           "position": 17
         },
         {
-          "page": "/beste-futterautomaten-fuer-hunde/",
-          "clicks": 1,
-          "impressions": 2,
-          "ctr": 50,
-          "position": 5.5
-        },
-        {
-          "page": "/kontakt/",
-          "clicks": 1,
-          "impressions": 2,
-          "ctr": 50,
-          "position": 2
-        },
-        {
-          "page": "/so-bewerten-wir/",
-          "clicks": 1,
-          "impressions": 2,
-          "ctr": 50,
-          "position": 11.5
-        },
-        {
-          "page": "/gps-tracker/",
+          "page": "/",
           "clicks": 0,
           "impressions": 2,
           "ctr": 0,
-          "position": 84.5
+          "position": 3.5
         },
         {
-          "page": "/hersteller/cat-mate/",
+          "page": "/futterautomat-im-urlaub/",
           "clicks": 0,
           "impressions": 2,
           "ctr": 0,
-          "position": 11.5
-        },
-        {
-          "page": "/hund-frisst-nicht/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 19.5
-        },
-        {
-          "page": "/hund-trinkt-zu-wenig/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 61
-        },
-        {
-          "page": "/impressum/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 6
-        },
-        {
-          "page": "/produkt/cat-mate-c500/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 10
+          "position": 45.5
         },
         {
           "page": "/produkt/oneisall-2-in-1-feeder-water/",
@@ -619,67 +403,46 @@
           "position": 3.5
         },
         {
-          "page": "/produkt/petlibro-one-rfid-smart-feeder/",
+          "page": "/produkt/weenect-xt/",
           "clicks": 0,
           "impressions": 2,
           "ctr": 0,
-          "position": 22.5
+          "position": 21.5
         },
         {
-          "page": "/produkt/petlibro-stainless-steel-fountain/",
+          "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
           "clicks": 0,
           "impressions": 2,
           "ctr": 0,
-          "position": 19
+          "position": 22
         },
         {
-          "page": "/produkt/surefeed-microchip-pet-feeder-connect/",
+          "page": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
           "clicks": 0,
           "impressions": 2,
           "ctr": 0,
-          "position": 25
-        },
-        {
-          "page": "/reichweite-von-gps-trackern/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 11
-        },
-        {
-          "page": "/trinkbrunnen-fuer-mehrere-katzen/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 10.5
-        },
-        {
-          "page": "/vergleiche/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 7.5
+          "position": 10
         },
         {
           "page": "/hund-ist-muede/",
           "clicks": 0,
           "impressions": 2,
           "ctr": 0,
-          "position": 63
+          "position": 8.5
         },
         {
-          "page": "/produkt/honeyguardian-a68/",
+          "page": "/kontakt/",
           "clicks": 1,
           "impressions": 1,
           "ctr": 100,
-          "position": 2
+          "position": 3
         },
         {
-          "page": "/affiliate-hinweis/",
-          "clicks": 0,
+          "page": "/so-bewerten-wir/",
+          "clicks": 1,
           "impressions": 1,
-          "ctr": 0,
-          "position": 15
+          "ctr": 100,
+          "position": 5
         },
         {
           "page": "/beste-futterautomaten-fuer-seniorenkatzen/",
@@ -689,60 +452,11 @@
           "position": 3
         },
         {
-          "page": "/beste-futterautomaten-fuer-welpen/",
+          "page": "/futterautomat-nassfutter/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 6
-        },
-        {
-          "page": "/beste-futterautomaten-mit-akku/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 24
-        },
-        {
-          "page": "/datenschutz/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5
-        },
-        {
-          "page": "/fuetterungszeiten-nach-alter/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 10
-        },
-        {
-          "page": "/futterautomat-und-ernaehrung/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 11
-        },
-        {
-          "page": "/gps-tracker-richtig-befestigen/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 85
-        },
-        {
-          "page": "/hersteller/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 7
-        },
-        {
-          "page": "/hersteller/honeyguardian/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 12
+          "position": 44
         },
         {
           "page": "/hersteller/tractive/",
@@ -759,6 +473,13 @@
           "position": 23
         },
         {
+          "page": "/hund-frisst-nicht/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 19
+        },
+        {
           "page": "/hund-hat-durchfall/",
           "clicks": 0,
           "impressions": 1,
@@ -766,25 +487,18 @@
           "position": 80
         },
         {
-          "page": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
+          "page": "/hund-trinkt-zu-wenig/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 21
+          "position": 99
         },
         {
-          "page": "/katzentrinkbrunnen-richtig-reinigen/",
+          "page": "/impressum/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 10
-        },
-        {
-          "page": "/produkt/catit-pixi-smart-6-meal-feeder/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 10
+          "position": 4
         },
         {
           "page": "/produkt/oneisall-5l-automatic-cat-feeder/",
@@ -794,13 +508,6 @@
           "position": 4
         },
         {
-          "page": "/produkt/oneisall-7l-dog-water-fountain/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 14
-        },
-        {
           "page": "/produkt/pawbby-smart-pet-feeder/",
           "clicks": 0,
           "impressions": 1,
@@ -808,11 +515,11 @@
           "position": 10
         },
         {
-          "page": "/produkt/pawsync-smart-pet-feeder/",
+          "page": "/produkt/petkit-eversweet-ultra/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 5
+          "position": 12
         },
         {
           "page": "/produkt/petkit-fresh-element-solo/",
@@ -829,67 +536,18 @@
           "position": 2
         },
         {
-          "page": "/produkt/petlibro-air-automatic-feeder/",
+          "page": "/produkt/petlibro-stainless-steel-fountain/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 30
+          "position": 3
         },
         {
-          "page": "/produkt/petlibro-glacier-ultrafiltration/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 22
-        },
-        {
-          "page": "/produkt/petlibro-granary-camera-feeder/",
+          "page": "/produkt/weenect-xs/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
           "position": 31
-        },
-        {
-          "page": "/produkt/petlibro-space-smart-feeder/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 32
-        },
-        {
-          "page": "/produkt/petsafe-freshfeed-refrigerated-feeder/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 2
-        },
-        {
-          "page": "/produkt/weenect-xt/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 37
-        },
-        {
-          "page": "/pumpe-katzentrinkbrunnen-reinigen/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6
-        },
-        {
-          "page": "/trinkbrunnen-hund/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6
-        },
-        {
-          "page": "/trinkbrunnen-seniorenkatzen/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 2
         },
         {
           "page": "/trockenfutter-oder-nassfutter-hund/",
@@ -906,11 +564,18 @@
           "position": 1
         },
         {
-          "page": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+          "page": "/vergleiche/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 12
+          "position": 9
+        },
+        {
+          "page": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10
         },
         {
           "page": "/vergleiche/futterautomat-mit-app/",
@@ -920,32 +585,11 @@
           "position": 2
         },
         {
-          "page": "/warum-brauchen-gps-tracker-ein-abo/",
+          "page": "/welpen-richtig-fuettern/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 8
-        },
-        {
-          "page": "/warum-katzen-fliessendes-wasser-trinken/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 7
-        },
-        {
-          "page": "/wasserstelle-katze-richtiger-standort/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5
-        },
-        {
-          "page": "/wie-funktionieren-gps-tracker/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 60
+          "position": 10
         },
         {
           "page": "/wie-funktioniert-ein-futterautomat/",
@@ -955,32 +599,25 @@
           "position": 3
         },
         {
-          "page": "/wie-lange-bleibt-trockenfutter-frisch/",
+          "page": "/produkt/petlibro-one-rfid-smart-feeder/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 11
+          "position": 6
         },
         {
-          "page": "/wissen/",
+          "page": "/produkt/petlibro-polar-wet-food-feeder/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 3
+          "position": 8
         },
         {
-          "page": "/katze-frisst-nicht/",
+          "page": "/redaktion/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 25
-        },
-        {
-          "page": "/produkt/petkit-yumshare-solo/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 33
+          "position": 2
         },
         {
           "page": "/uebergewicht-bei-katzen-vermeiden/",
@@ -992,32 +629,18 @@
       ],
       "queries": [
         {
-          "query": "futterautomat für 2 katzen",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 42.8
-        },
-        {
           "query": "mehrkatzenhaushalt fütterung",
           "clicks": 0,
-          "impressions": 4,
+          "impressions": 3,
           "ctr": 0,
-          "position": 90.5
+          "position": 91
         },
         {
-          "query": "petkit yumshare solo2",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 5.8
-        },
-        {
-          "query": "futterautomat gekühlt",
+          "query": "futterautomat für 2 katzen",
           "clicks": 0,
           "impressions": 2,
           "ctr": 0,
-          "position": 39
+          "position": 51.5
         },
         {
           "query": "futterautomat katze urlaub",
@@ -1027,39 +650,11 @@
           "position": 45.5
         },
         {
-          "query": "futterautomat mit elektrischer kühlung",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 46
-        },
-        {
           "query": "futterautomat nassfutter katze",
           "clicks": 0,
           "impressions": 2,
           "ctr": 0,
           "position": 55
-        },
-        {
-          "query": "futterautomat test",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 76.5
-        },
-        {
-          "query": "katzen gps testsieger",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 79.5
-        },
-        {
-          "query": "kleinster gps tracker für katzen",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 39.5
         },
         {
           "query": "nassfutterautomat für katzen",
@@ -1090,20 +685,6 @@
           "position": 56
         },
         {
-          "query": "futterautomat hund test",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 61
-        },
-        {
-          "query": "futterautomat katze mit kamera",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 65
-        },
-        {
           "query": "futterautomat katze nassfutter",
           "clicks": 0,
           "impressions": 1,
@@ -1111,32 +692,11 @@
           "position": 54
         },
         {
-          "query": "futterautomat katze nassfutter kühlung",
+          "query": "futterautomat mit elektrischer kühlung",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 52
-        },
-        {
-          "query": "futterautomat katze vergleich",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 61
-        },
-        {
-          "query": "futterautomat mit kamera und app",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 66
-        },
-        {
-          "query": "futterautomat mit kühlung",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 41
+          "position": 44
         },
         {
           "query": "futterautomat zwei katzen",
@@ -1146,48 +706,6 @@
           "position": 50
         },
         {
-          "query": "futterautomaten vergleich",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 12
-        },
-        {
-          "query": "futtermenge hund",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 93
-        },
-        {
-          "query": "futtermenge katze rechner",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 73
-        },
-        {
-          "query": "futtermenge katze tabelle",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 87
-        },
-        {
-          "query": "gekühlter futterautomat",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 53
-        },
-        {
-          "query": "gibt es vertrauenswürdige katzenbrunnen optionen für mehrere katzen?",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 11
-        },
-        {
           "query": "gps tracker für kleine hunde",
           "clicks": 0,
           "impressions": 1,
@@ -1195,49 +713,7 @@
           "position": 72
         },
         {
-          "query": "gps tracker hund test",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 84
-        },
-        {
-          "query": "gps tracker katze test",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 85
-        },
-        {
-          "query": "gps tracker reichweite",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 15
-        },
-        {
-          "query": "hund ist apathisch frisst aber",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 98
-        },
-        {
           "query": "hund nur trockenfutter",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 92
-        },
-        {
-          "query": "hund trinkt auf einmal viel",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 75
-        },
-        {
-          "query": "hund trinkt viel",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -1251,53 +727,11 @@
           "position": 99
         },
         {
-          "query": "hund viel trinken",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 49
-        },
-        {
-          "query": "hundeernährung menge",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 94
-        },
-        {
           "query": "katze futterautomat nassfutter",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
           "position": 46
-        },
-        {
-          "query": "katzen futterautomat mit kamera",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 46
-        },
-        {
-          "query": "katzenbrunnen test",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 78
-        },
-        {
-          "query": "katzenfutter kalorien",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 20
-        },
-        {
-          "query": "katzenfutter trocknungsanlage",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 74
         },
         {
           "query": "mini gps tracker hund",
@@ -1307,39 +741,18 @@
           "position": 80
         },
         {
+          "query": "nassfutter automat katzen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 50
+        },
+        {
           "query": "nassfutterautomat katze",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
           "position": 60
-        },
-        {
-          "query": "pet fountain",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 48
-        },
-        {
-          "query": "petkit eversweet ultra",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 13
-        },
-        {
-          "query": "petkit yumshare solo 2",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5
-        },
-        {
-          "query": "sicherheit beim freigang katze gps-tracker",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 85
         },
         {
           "query": "tractive care",
@@ -1349,39 +762,11 @@
           "position": 47
         },
         {
-          "query": "was ist ein gps tracker",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 60
-        },
-        {
           "query": "weenect abo",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
           "position": 31
-        },
-        {
-          "query": "wie oft muss man das wasser vom katzenbrunnen wechseln?",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 42
-        },
-        {
-          "query": "wie viel futter hund",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 93
-        },
-        {
-          "query": "wieviel trockenfutter und nassfutter katze tabelle",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 86
         }
       ],
       "pageQueries": [
@@ -1389,25 +774,9 @@
           "page": "/futterautomat-fuer-zwei-katzen/",
           "query": "mehrkatzenhaushalt fütterung",
           "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 90.5
-        },
-        {
-          "page": "/produkt/petkit-yumshare-solo-2/",
-          "query": "petkit yumshare solo2",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 5.8
-        },
-        {
-          "page": "/futterautomat-fuer-zwei-katzen/",
-          "query": "futterautomat für 2 katzen",
-          "clicks": 0,
           "impressions": 3,
           "ctr": 0,
-          "position": 38.3
+          "position": 91
         },
         {
           "page": "/futterautomat-im-urlaub/",
@@ -1434,70 +803,6 @@
           "position": 62
         },
         {
-          "page": "/futterautomat-nassfutter/",
-          "query": "futterautomat gekühlt",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 39
-        },
-        {
-          "page": "/futterautomat-nassfutter/",
-          "query": "futterautomat mit elektrischer kühlung",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 46
-        },
-        {
-          "page": "/smarte-futterautomaten/",
-          "query": "futterautomat test",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 76.5
-        },
-        {
-          "page": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
-          "query": "katzen gps testsieger",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 79.5
-        },
-        {
-          "page": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
-          "query": "kleinster gps tracker für katzen",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 39.5
-        },
-        {
-          "page": "/beste-futterautomaten-fuer-katzen/",
-          "query": "futterautomat hund test",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 93
-        },
-        {
-          "page": "/beste-futterautomaten-fuer-katzen/",
-          "query": "futterautomat katze vergleich",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 83
-        },
-        {
-          "page": "/beste-futterautomaten-fuer-katzen/",
-          "query": "futterautomat test",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 92
-        },
-        {
           "page": "/futterautomat-fuer-zwei-katzen/",
           "query": "futterautomat 2 katzen",
           "clicks": 0,
@@ -1507,27 +812,19 @@
         },
         {
           "page": "/futterautomat-fuer-zwei-katzen/",
+          "query": "futterautomat für 2 katzen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 47
+        },
+        {
+          "page": "/futterautomat-fuer-zwei-katzen/",
           "query": "futterautomat zwei katzen",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
           "position": 50
-        },
-        {
-          "page": "/futterautomat-hund/",
-          "query": "futterautomat hund test",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 61
-        },
-        {
-          "page": "/futterautomat-katze/",
-          "query": "futterautomat katze vergleich",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 61
         },
         {
           "page": "/futterautomat-katze/",
@@ -1547,11 +844,11 @@
         },
         {
           "page": "/futterautomat-katze/",
-          "query": "katzenfutter trocknungsanlage",
+          "query": "nassfutter automat katzen",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 93
+          "position": 50
         },
         {
           "page": "/futterautomat-katze/",
@@ -1562,132 +859,12 @@
           "position": 60
         },
         {
-          "page": "/futterautomat-mit-kamera/",
-          "query": "futterautomat katze mit kamera",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 65
-        },
-        {
-          "page": "/futterautomat-mit-kamera/",
-          "query": "katzen futterautomat mit kamera",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 46
-        },
-        {
           "page": "/futterautomat-nassfutter/",
-          "query": "futterautomat katze nassfutter kühlung",
+          "query": "futterautomat mit elektrischer kühlung",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 52
-        },
-        {
-          "page": "/futterautomat-nassfutter/",
-          "query": "futterautomat mit kühlung",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 41
-        },
-        {
-          "page": "/futterautomat-nassfutter/",
-          "query": "gekühlter futterautomat",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 53
-        },
-        {
-          "page": "/futterautomat-nassfutter/",
-          "query": "katzenfutter trocknungsanlage",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 74
-        },
-        {
-          "page": "/futtermenge-hund/",
-          "query": "futtermenge hund",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 93
-        },
-        {
-          "page": "/futtermenge-hund/",
-          "query": "hundeernährung menge",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 94
-        },
-        {
-          "page": "/futtermenge-hund/",
-          "query": "wie viel futter hund",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 93
-        },
-        {
-          "page": "/futtermenge-katze/",
-          "query": "futtermenge katze rechner",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 73
-        },
-        {
-          "page": "/futtermenge-katze/",
-          "query": "futtermenge katze tabelle",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 87
-        },
-        {
-          "page": "/futtermenge-katze/",
-          "query": "katzenfutter kalorien",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 20
-        },
-        {
-          "page": "/futtermenge-katze/",
-          "query": "wieviel trockenfutter und nassfutter katze tabelle",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 86
-        },
-        {
-          "page": "/gps-tracker-richtig-befestigen/",
-          "query": "sicherheit beim freigang katze gps-tracker",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 85
-        },
-        {
-          "page": "/gps-tracker/",
-          "query": "gps tracker hund test",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 84
-        },
-        {
-          "page": "/gps-tracker/",
-          "query": "gps tracker katze test",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 85
+          "position": 44
         },
         {
           "page": "/hersteller/tractive/",
@@ -1698,60 +875,12 @@
           "position": 47
         },
         {
-          "page": "/hund-trinkt-viel/",
-          "query": "hund trinkt auf einmal viel",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 75
-        },
-        {
-          "page": "/hund-trinkt-viel/",
-          "query": "hund trinkt viel",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 92
-        },
-        {
-          "page": "/hund-trinkt-viel/",
-          "query": "hund viel trinken",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 49
-        },
-        {
           "page": "/hund-trinkt-zu-wenig/",
           "query": "hund trinkt zu wenig symptome",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
           "position": 99
-        },
-        {
-          "page": "/katzenwasser-taeglich-wechseln/",
-          "query": "wie oft muss man das wasser vom katzenbrunnen wechseln?",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 42
-        },
-        {
-          "page": "/produkt/petkit-eversweet-ultra/",
-          "query": "petkit eversweet ultra",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 13
-        },
-        {
-          "page": "/produkt/petkit-yumshare-solo-2/",
-          "query": "petkit yumshare solo 2",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5
         },
         {
           "page": "/produkt/weenect-xs/",
@@ -1762,76 +891,12 @@
           "position": 31
         },
         {
-          "page": "/reichweite-von-gps-trackern/",
-          "query": "gps tracker reichweite",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 15
-        },
-        {
-          "page": "/smarte-futterautomaten/",
-          "query": "futterautomat hund test",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 76
-        },
-        {
-          "page": "/smarte-futterautomaten/",
-          "query": "futterautomat katze vergleich",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 93
-        },
-        {
-          "page": "/smarte-futterautomaten/",
-          "query": "futterautomat mit kamera und app",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 66
-        },
-        {
-          "page": "/smarte-futterautomaten/",
-          "query": "futterautomaten vergleich",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 12
-        },
-        {
-          "page": "/trinkbrunnen-fuer-mehrere-katzen/",
-          "query": "gibt es vertrauenswürdige katzenbrunnen optionen für mehrere katzen?",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 11
-        },
-        {
-          "page": "/trinkbrunnen/",
-          "query": "pet fountain",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 48
-        },
-        {
           "page": "/trockenfutter-oder-nassfutter-hund/",
           "query": "hund nur trockenfutter",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
           "position": 92
-        },
-        {
-          "page": "/vergleiche/beste-futterautomaten-fuer-hunde/",
-          "query": "futterautomat hund test",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 84
         },
         {
           "page": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
@@ -1872,68 +937,9 @@
           "impressions": 1,
           "ctr": 0,
           "position": 80
-        },
-        {
-          "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-          "query": "katzenbrunnen test",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 78
-        },
-        {
-          "page": "/wie-funktionieren-gps-tracker/",
-          "query": "was ist ein gps tracker",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 60
-        },
-        {
-          "page": "/hund-ist-muede/",
-          "query": "hund ist apathisch frisst aber",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 98
         }
       ],
       "trend": [
-        {
-          "date": "2026-07-22",
-          "clicks": 4,
-          "impressions": 55,
-          "ctr": 7.27,
-          "position": 15.3
-        },
-        {
-          "date": "2026-07-23",
-          "clicks": 0,
-          "impressions": 65,
-          "ctr": 0,
-          "position": 25.7
-        },
-        {
-          "date": "2026-07-24",
-          "clicks": 2,
-          "impressions": 74,
-          "ctr": 2.7,
-          "position": 21
-        },
-        {
-          "date": "2026-07-25",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 30
-        },
-        {
-          "date": "2026-07-26",
-          "clicks": 0,
-          "impressions": 5,
-          "ctr": 0,
-          "position": 49.2
-        },
         {
           "date": "2026-07-27",
           "clicks": 1,
@@ -2094,6 +1100,41 @@
           "impressions": 1,
           "ctr": 0,
           "position": 47
+        },
+        {
+          "date": "2026-08-19",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 63
+        },
+        {
+          "date": "2026-08-20",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6
+        },
+        {
+          "date": "2026-08-21",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        {
+          "date": "2026-08-22",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 6
+        },
+        {
+          "date": "2026-08-23",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 8.5
         }
       ],
       "recommendations": []
@@ -2101,18 +1142,18 @@
     "3m": {
       "key": "3m",
       "label": "Letzte 3 Monate",
-      "startDate": "2026-05-21",
-      "endDate": "2026-08-18",
-      "comparisonStartDate": "2026-02-20",
-      "comparisonEndDate": "2026-05-20",
+      "startDate": "2026-05-26",
+      "endDate": "2026-08-23",
+      "comparisonStartDate": "2026-02-25",
+      "comparisonEndDate": "2026-05-25",
       "dataState": "all",
       "partial": false,
       "lowData": false,
       "metrics": {
         "current": {
           "clicks": 20,
-          "impressions": 705,
-          "ctr": 2.84,
+          "impressions": 712,
+          "ctr": 2.81,
           "position": 23.2
         },
         "previous": {
@@ -2124,7 +1165,7 @@
         "change": {
           "clicks": 100,
           "impressions": 100,
-          "ctr": 2.84,
+          "ctr": 2.81,
           "position": -23.2
         }
       },
@@ -2242,6 +1283,13 @@
           "position": 46.6
         },
         {
+          "page": "/futterautomat-katze/",
+          "clicks": 0,
+          "impressions": 16,
+          "ctr": 0,
+          "position": 47.9
+        },
+        {
           "page": "/futterautomat-nassfutter/",
           "clicks": 0,
           "impressions": 16,
@@ -2254,13 +1302,6 @@
           "impressions": 15,
           "ctr": 6.67,
           "position": 23.9
-        },
-        {
-          "page": "/futterautomat-katze/",
-          "clicks": 0,
-          "impressions": 15,
-          "ctr": 0,
-          "position": 47.8
         },
         {
           "page": "/trinkbrunnen-fuer-mehrere-katzen/",
@@ -2445,6 +1486,13 @@
           "position": 48.6
         },
         {
+          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 54.2
+        },
+        {
           "page": "/produkt/petkit-yumshare-dual-hopper/",
           "clicks": 2,
           "impressions": 4,
@@ -2508,13 +1556,6 @@
           "position": 8.3
         },
         {
-          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 48.8
-        },
-        {
           "page": "/warum-katzen-fliessendes-wasser-trinken/",
           "clicks": 0,
           "impressions": 4,
@@ -2541,6 +1582,13 @@
           "impressions": 4,
           "ctr": 0,
           "position": 34.5
+        },
+        {
+          "page": "/hund-ist-muede/",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 35.8
         },
         {
           "page": "/beste-futterautomaten-fuer-hunde/",
@@ -2725,6 +1773,13 @@
           "position": 22.5
         },
         {
+          "page": "/produkt/weenect-xt/",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 21.5
+        },
+        {
           "page": "/reichweite-von-gps-trackern/",
           "clicks": 0,
           "impressions": 2,
@@ -2758,13 +1813,6 @@
           "impressions": 2,
           "ctr": 0,
           "position": 3
-        },
-        {
-          "page": "/hund-ist-muede/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 63
         },
         {
           "page": "/beste-futterautomaten-mit-akku/",
@@ -2921,13 +1969,6 @@
           "position": 32
         },
         {
-          "page": "/produkt/weenect-xt/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 37
-        },
-        {
           "page": "/trinkbrunnen-hund/",
           "clicks": 0,
           "impressions": 1,
@@ -2998,6 +2039,13 @@
           "position": 9
         },
         {
+          "page": "/welpen-richtig-fuettern/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10
+        },
+        {
           "page": "/wie-funktionieren-gps-tracker/",
           "clicks": 0,
           "impressions": 1,
@@ -3031,6 +2079,13 @@
           "impressions": 1,
           "ctr": 0,
           "position": 25
+        },
+        {
+          "page": "/redaktion/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
         }
       ],
       "queries": [
@@ -3635,6 +2690,13 @@
           "impressions": 1,
           "ctr": 0,
           "position": 80
+        },
+        {
+          "query": "nassfutter automat katzen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 50
         },
         {
           "query": "nassfutterautomat katze",
@@ -4305,6 +3367,14 @@
           "impressions": 1,
           "ctr": 0,
           "position": 93
+        },
+        {
+          "page": "/futterautomat-katze/",
+          "query": "nassfutter automat katzen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 50
         },
         {
           "page": "/futterautomat-katze/",
@@ -5217,6 +4287,41 @@
           "impressions": 1,
           "ctr": 0,
           "position": 47
+        },
+        {
+          "date": "2026-08-19",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 63
+        },
+        {
+          "date": "2026-08-20",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6
+        },
+        {
+          "date": "2026-08-21",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        {
+          "date": "2026-08-22",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 6
+        },
+        {
+          "date": "2026-08-23",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 8.5
         }
       ],
       "recommendations": []
@@ -5224,18 +4329,18 @@
     "6m": {
       "key": "6m",
       "label": "Letzte 6 Monate",
-      "startDate": "2026-02-20",
-      "endDate": "2026-08-18",
-      "comparisonStartDate": "2025-08-24",
-      "comparisonEndDate": "2026-02-19",
+      "startDate": "2026-02-25",
+      "endDate": "2026-08-23",
+      "comparisonStartDate": "2025-08-29",
+      "comparisonEndDate": "2026-02-24",
       "dataState": "all",
       "partial": false,
       "lowData": false,
       "metrics": {
         "current": {
           "clicks": 20,
-          "impressions": 705,
-          "ctr": 2.84,
+          "impressions": 712,
+          "ctr": 2.81,
           "position": 23.2
         },
         "previous": {
@@ -5247,7 +4352,7 @@
         "change": {
           "clicks": 100,
           "impressions": 100,
-          "ctr": 2.84,
+          "ctr": 2.81,
           "position": -23.2
         }
       },
@@ -5365,6 +4470,13 @@
           "position": 46.6
         },
         {
+          "page": "/futterautomat-katze/",
+          "clicks": 0,
+          "impressions": 16,
+          "ctr": 0,
+          "position": 47.9
+        },
+        {
           "page": "/futterautomat-nassfutter/",
           "clicks": 0,
           "impressions": 16,
@@ -5377,13 +4489,6 @@
           "impressions": 15,
           "ctr": 6.67,
           "position": 23.9
-        },
-        {
-          "page": "/futterautomat-katze/",
-          "clicks": 0,
-          "impressions": 15,
-          "ctr": 0,
-          "position": 47.8
         },
         {
           "page": "/trinkbrunnen-fuer-mehrere-katzen/",
@@ -5568,6 +4673,13 @@
           "position": 48.6
         },
         {
+          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 54.2
+        },
+        {
           "page": "/produkt/petkit-yumshare-dual-hopper/",
           "clicks": 2,
           "impressions": 4,
@@ -5631,13 +4743,6 @@
           "position": 8.3
         },
         {
-          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 48.8
-        },
-        {
           "page": "/warum-katzen-fliessendes-wasser-trinken/",
           "clicks": 0,
           "impressions": 4,
@@ -5664,6 +4769,13 @@
           "impressions": 4,
           "ctr": 0,
           "position": 34.5
+        },
+        {
+          "page": "/hund-ist-muede/",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 35.8
         },
         {
           "page": "/beste-futterautomaten-fuer-hunde/",
@@ -5848,6 +4960,13 @@
           "position": 22.5
         },
         {
+          "page": "/produkt/weenect-xt/",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 21.5
+        },
+        {
           "page": "/reichweite-von-gps-trackern/",
           "clicks": 0,
           "impressions": 2,
@@ -5881,13 +5000,6 @@
           "impressions": 2,
           "ctr": 0,
           "position": 3
-        },
-        {
-          "page": "/hund-ist-muede/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 63
         },
         {
           "page": "/beste-futterautomaten-mit-akku/",
@@ -6044,13 +5156,6 @@
           "position": 32
         },
         {
-          "page": "/produkt/weenect-xt/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 37
-        },
-        {
           "page": "/trinkbrunnen-hund/",
           "clicks": 0,
           "impressions": 1,
@@ -6121,6 +5226,13 @@
           "position": 9
         },
         {
+          "page": "/welpen-richtig-fuettern/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10
+        },
+        {
           "page": "/wie-funktionieren-gps-tracker/",
           "clicks": 0,
           "impressions": 1,
@@ -6154,6 +5266,13 @@
           "impressions": 1,
           "ctr": 0,
           "position": 25
+        },
+        {
+          "page": "/redaktion/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
         }
       ],
       "queries": [
@@ -6758,6 +5877,13 @@
           "impressions": 1,
           "ctr": 0,
           "position": 80
+        },
+        {
+          "query": "nassfutter automat katzen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 50
         },
         {
           "query": "nassfutterautomat katze",
@@ -7428,6 +6554,14 @@
           "impressions": 1,
           "ctr": 0,
           "position": 93
+        },
+        {
+          "page": "/futterautomat-katze/",
+          "query": "nassfutter automat katzen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 50
         },
         {
           "page": "/futterautomat-katze/",
@@ -8340,6 +7474,41 @@
           "impressions": 1,
           "ctr": 0,
           "position": 47
+        },
+        {
+          "date": "2026-08-19",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 63
+        },
+        {
+          "date": "2026-08-20",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6
+        },
+        {
+          "date": "2026-08-21",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        {
+          "date": "2026-08-22",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 6
+        },
+        {
+          "date": "2026-08-23",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 8.5
         }
       ],
       "recommendations": []
@@ -8347,18 +7516,18 @@
     "12m": {
       "key": "12m",
       "label": "Letzte 12 Monate",
-      "startDate": "2025-08-19",
-      "endDate": "2026-08-18",
-      "comparisonStartDate": "2024-08-19",
-      "comparisonEndDate": "2025-08-18",
+      "startDate": "2025-08-24",
+      "endDate": "2026-08-23",
+      "comparisonStartDate": "2024-08-24",
+      "comparisonEndDate": "2025-08-23",
       "dataState": "all",
       "partial": false,
       "lowData": false,
       "metrics": {
         "current": {
           "clicks": 20,
-          "impressions": 705,
-          "ctr": 2.84,
+          "impressions": 712,
+          "ctr": 2.81,
           "position": 23.2
         },
         "previous": {
@@ -8370,7 +7539,7 @@
         "change": {
           "clicks": 100,
           "impressions": 100,
-          "ctr": 2.84,
+          "ctr": 2.81,
           "position": -23.2
         }
       },
@@ -8488,6 +7657,13 @@
           "position": 46.6
         },
         {
+          "page": "/futterautomat-katze/",
+          "clicks": 0,
+          "impressions": 16,
+          "ctr": 0,
+          "position": 47.9
+        },
+        {
           "page": "/futterautomat-nassfutter/",
           "clicks": 0,
           "impressions": 16,
@@ -8500,13 +7676,6 @@
           "impressions": 15,
           "ctr": 6.67,
           "position": 23.9
-        },
-        {
-          "page": "/futterautomat-katze/",
-          "clicks": 0,
-          "impressions": 15,
-          "ctr": 0,
-          "position": 47.8
         },
         {
           "page": "/trinkbrunnen-fuer-mehrere-katzen/",
@@ -8691,6 +7860,13 @@
           "position": 48.6
         },
         {
+          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 54.2
+        },
+        {
           "page": "/produkt/petkit-yumshare-dual-hopper/",
           "clicks": 2,
           "impressions": 4,
@@ -8754,13 +7930,6 @@
           "position": 8.3
         },
         {
-          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 48.8
-        },
-        {
           "page": "/warum-katzen-fliessendes-wasser-trinken/",
           "clicks": 0,
           "impressions": 4,
@@ -8787,6 +7956,13 @@
           "impressions": 4,
           "ctr": 0,
           "position": 34.5
+        },
+        {
+          "page": "/hund-ist-muede/",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 35.8
         },
         {
           "page": "/beste-futterautomaten-fuer-hunde/",
@@ -8971,6 +8147,13 @@
           "position": 22.5
         },
         {
+          "page": "/produkt/weenect-xt/",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 21.5
+        },
+        {
           "page": "/reichweite-von-gps-trackern/",
           "clicks": 0,
           "impressions": 2,
@@ -9004,13 +8187,6 @@
           "impressions": 2,
           "ctr": 0,
           "position": 3
-        },
-        {
-          "page": "/hund-ist-muede/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 63
         },
         {
           "page": "/beste-futterautomaten-mit-akku/",
@@ -9167,13 +8343,6 @@
           "position": 32
         },
         {
-          "page": "/produkt/weenect-xt/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 37
-        },
-        {
           "page": "/trinkbrunnen-hund/",
           "clicks": 0,
           "impressions": 1,
@@ -9244,6 +8413,13 @@
           "position": 9
         },
         {
+          "page": "/welpen-richtig-fuettern/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10
+        },
+        {
           "page": "/wie-funktionieren-gps-tracker/",
           "clicks": 0,
           "impressions": 1,
@@ -9277,6 +8453,13 @@
           "impressions": 1,
           "ctr": 0,
           "position": 25
+        },
+        {
+          "page": "/redaktion/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
         }
       ],
       "queries": [
@@ -9881,6 +9064,13 @@
           "impressions": 1,
           "ctr": 0,
           "position": 80
+        },
+        {
+          "query": "nassfutter automat katzen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 50
         },
         {
           "query": "nassfutterautomat katze",
@@ -10551,6 +9741,14 @@
           "impressions": 1,
           "ctr": 0,
           "position": 93
+        },
+        {
+          "page": "/futterautomat-katze/",
+          "query": "nassfutter automat katzen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 50
         },
         {
           "page": "/futterautomat-katze/",
@@ -11463,6 +10661,41 @@
           "impressions": 1,
           "ctr": 0,
           "position": 47
+        },
+        {
+          "date": "2026-08-19",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 63
+        },
+        {
+          "date": "2026-08-20",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6
+        },
+        {
+          "date": "2026-08-21",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        {
+          "date": "2026-08-22",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 6
+        },
+        {
+          "date": "2026-08-23",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 8.5
         }
       ],
       "recommendations": []
