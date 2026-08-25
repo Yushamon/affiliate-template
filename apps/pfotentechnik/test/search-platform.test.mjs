@@ -196,6 +196,20 @@ test("Combined addiert Google und Bing und gewichtet Positionen", () => {
   assert.deepEqual(combined.ranges["7d"].pages[0].sources, ["google", "bing"]);
 });
 
+test("Combined-Datenstand entspricht den jeweiligen Provider-Dashboards", () => {
+  const google = providerPayload("google", { clicks: 1, impressions: 10, ctr: 10, position: 5 });
+  google.generatedAt = "2026-08-24T12:23:27.763Z";
+  const bing = providerPayload("bing", { clicks: 2, impressions: 30, ctr: 6.67, position: 9 });
+  bing.generatedAt = "2026-08-24T12:22:48.729Z";
+  bing.dataUpdatedAt = "2026-08-23T07:00:00.000Z";
+  const combined = buildCombinedDashboard({ google, bing });
+  assert.deepEqual(combined.dataUpdatedAt, {
+    google: google.generatedAt,
+    bing: bing.dataUpdatedAt,
+  });
+  assert.deepEqual(combined.providerStatus, { google: "current", bing: "current" });
+});
+
 test("Combined funktioniert mit nur Google, nur Bing und veralteten Bing-Daten", () => {
   const google = providerPayload("google", { clicks: 1, impressions: 10, ctr: 10, position: 5 });
   const bing = providerPayload("bing", { clicks: 2, impressions: 20, ctr: 10, position: 7 });

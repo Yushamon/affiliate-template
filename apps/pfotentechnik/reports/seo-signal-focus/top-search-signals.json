@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-25T06:21:38.912Z",
+  "scope": "existing-pages-only",
+  "sources": {
+    "google": {
+      "dashboardGeneratedAt": "2026-08-24T12:23:27.763Z",
+      "range": "28d",
+      "clicks": 1,
+      "impressions": 55,
+      "position": 37.3
+    },
+    "bing": {
+      "dashboardGeneratedAt": "2026-08-24T12:22:48.729Z",
+      "dataUpdatedAt": "2026-08-23T07:00:00.000Z",
+      "range": "28d",
+      "clicks": 2,
+      "impressions": 44,
+      "position": 4.9
+    }
+  },
+  "opportunities": [
+    {
+      "url": "/katzentrinkbrunnen-richtig-reinigen/",
+      "provider": "bing",
+      "queryOrSignal": "Pumpenreinigung und Zerlegen; stärkste Query-Gruppe der Seite",
+      "impressions": 11,
+      "position": 2,
+      "problem": "Die konkrete Pumpen-Zerlegeanleitung war erst in Schritt 5 verlinkt, obwohl Pumpenfragen das sichtbare Signal dominieren.",
+      "change": "Link zur vorhandenen Pumpen-Anleitung direkt in der Kurzantwort ergänzt.",
+      "expectedMechanism": "Die Einstiegsantwort führt den spezifischen Intent ohne Umweg zur passenden Detailanleitung und erhält die erfolgreiche Hauptseite als Owner der allgemeinen Reinigung.",
+      "confidence": "high",
+      "status": "implemented"
+    },
+    {
+      "url": "/produkt/tractive-cat-6-mini/",
+      "provider": "bing",
+      "queryOrSignal": "tractive cat 6 mini; cat 6 mini tractive; Akkulaufzeit",
+      "impressions": 10,
+      "position": 6,
+      "problem": "Gute Markenposition, aber noch kein Klick im betrachteten Zeitraum; die Stichprobe reicht nicht für einen Snippet-Rewrite.",
+      "change": "Bestehenden Titel mit Akku, Abo, Gewicht und Preis beibehalten und erst ab mindestens 20 Impressionen erneut auf CTR prüfen.",
+      "expectedMechanism": "Verhindert eine Verschlechterung eines bereits querygenauen Snippets durch Überreaktion auf kleine Datenmengen.",
+      "confidence": "medium",
+      "status": "monitor"
+    },
+    {
+      "url": "/produkt/petkit-eversweet-ultra/",
+      "provider": "bing",
+      "queryOrSignal": "petkit eversweet ultra",
+      "impressions": 4,
+      "position": 5.3,
+      "problem": "Nur vier Impressionen; Inhalt, Modellabgrenzung, Quellen und Kaufkontext decken den Navigational-/Product-Intent bereits ab.",
+      "change": "Keine Sofortänderung; bei mindestens 20 Impressionen CTR und Query-Varianten erneut bewerten.",
+      "expectedMechanism": "Bewahrt die präzise Modellseite und vermeidet unbegründete Title-Änderungen.",
+      "confidence": "low",
+      "status": "monitor"
+    },
+    {
+      "url": "/produkt/petlibro-granary-2-vision/",
+      "provider": "bing",
+      "queryOrSignal": "Produktseite mit drei Impressionen auf Position 3",
+      "impressions": 3,
+      "position": 3,
+      "problem": "Sehr kleine Stichprobe; Schnellentscheidung, Modellabgrenzung und Journey zu Kamera- und Katzenvergleichen sind bereits vorhanden.",
+      "change": "Keine Sofortänderung; Signale sammeln und erst bei belastbarer CTR-Lücke den Snippet-Fokus überprüfen.",
+      "expectedMechanism": "Erhält das gute Ranking und verhindert eine Optimierung aufgrund einzelner Impressionen.",
+      "confidence": "low",
+      "status": "monitor"
+    },
+    {
+      "url": "/wie-funktionieren-gps-tracker/",
+      "provider": "bing",
+      "queryOrSignal": "warum piepsen gps tracker für haustiere in regelmäßigen abständen",
+      "impressions": 1,
+      "position": 3,
+      "problem": "Der einzelne Klick bestätigt eine passende Spezialantwort, liefert aber keine belastbare Grundlage für weitere Ausweitung.",
+      "change": "Vorhandene Pieps-Erklärung und Quellen unverändert lassen; keine neue Spezialseite erzeugen.",
+      "expectedMechanism": "Konsolidiert das Longtail-Signal auf der bestehenden Funktionsseite und vermeidet Kannibalisierung.",
+      "confidence": "low",
+      "status": "monitor"
+    },
+    {
+      "url": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "provider": "google",
+      "queryOrSignal": "kommerzielle Katzen-Futterautomaten-Suche",
+      "impressions": 3,
+      "position": 2.3,
+      "problem": "Sehr gute erste Position bei geringer Reichweite; der Vergleich ist bereits klarer kommerzieller Owner.",
+      "change": "Kommerzielle interne Anchors weiterhin auf diesen Vergleich führen; keinen Title-Rewrite und keine Zusammenlegung mit dem Ratgeber vornehmen.",
+      "expectedMechanism": "Stärkt den bestehenden transaktionalen Owner, ohne das frühe Ranking-Signal zu destabilisieren.",
+      "confidence": "medium",
+      "status": "monitor"
+    },
+    {
+      "url": "/smarte-futterautomaten/",
+      "provider": "google",
+      "queryOrSignal": "breite Technik- und Kaufvorbereitung",
+      "impressions": 3,
+      "position": 5.3,
+      "problem": "Die breite Hub-Seite rankt bereits; eine Umbenennung in einen Best-of-Intent würde mit dem Katzenvergleich kollidieren.",
+      "change": "Hub als technischen Überblick beibehalten und Best-of-Anker weiterhin zum jeweiligen Vergleich führen.",
+      "expectedMechanism": "Erhält getrennte Owner für breite Informationssuche und konkrete Produktauswahl.",
+      "confidence": "medium",
+      "status": "monitor"
+    },
+    {
+      "url": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "provider": "google",
+      "queryOrSignal": "Nassfutterautomaten / elektrische Kühlung",
+      "impressions": 3,
+      "position": 17,
+      "problem": "Der Vergleich ist der richtige kommerzielle Owner; alte Signale auf /futterautomat-nassfutter/ und allgemeine Signale auf /futterautomat-katze/ verteilen sich noch im Suchdatensatz.",
+      "change": "Bestehende 301-Aliasse und interne Direktlinks zum Vergleich beibehalten; keine zusätzliche Redirect- oder URL-Änderung auslösen.",
+      "expectedMechanism": "Lässt historische Signale auf den bestehenden Ziel-Owner konsolidieren, ohne eine neue Migrationswelle zu starten.",
+      "confidence": "medium",
+      "status": "monitor"
+    }
+  ]
+}

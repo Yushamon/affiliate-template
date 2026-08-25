@@ -49,6 +49,8 @@ test("Cockpit zeigt Recovery und Google Opportunities", () => {
   assert.match(cockpit, /Migration Recovery/);
   assert.match(cockpit, /Google Opportunities/);
   assert.match(loader, /recovery-dashboard\.json/);
+  assert.match(loader, /gsc-dashboard-ranges\.json/);
+  assert.match(loader, /recoveryIsStale/);
 });
 
 test("Scripts und Release-Gate sind verdrahtet", () => {

@@ -51,6 +51,8 @@ Kontrolliere das Wasser täglich, ersetze es regelmäßig vollständig und zerle
 
 Fließendes Wasser und ein Filter halten einen Brunnen nicht automatisch hygienisch. Besonders Pumpe, Rotorraum, Auslauf, Dichtungen und die Unterseite des Filterhalters können verschmutzt sein, obwohl Tank und Trinkfläche sauber wirken.
 
+Möchtest du speziell die Pumpe auseinanderbauen, führt die kompakte Anleitung [Pumpe im Katzentrinkbrunnen reinigen](/pumpe-katzentrinkbrunnen-reinigen/) direkt durch Abdeckung, Rotorraum und Zusammenbau. Orientiere dich zusätzlich immer an der Anleitung deines Modells.
+
 ## Einordnung: Reinigung ist nur ein Teil des Trinkbrunnen-Themas
 
 Diese Anleitung konzentriert sich auf die hygienische Pflege eines vorhandenen Geräts. Der übergeordnete Ratgeber [Trinkbrunnen für Haustiere](/trinkbrunnen/) erklärt zusätzlich Funktionsweise, Materialien, Pumpen- und Filtersysteme, sinnvolle Auswahlkriterien sowie die Vor- und Nachteile gegenüber klassischen Wassernäpfen.

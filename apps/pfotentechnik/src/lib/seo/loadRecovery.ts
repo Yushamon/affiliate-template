@@ -127,6 +127,23 @@ export function loadSeoRecovery(): SeoRecoveryPayload {
     try {
       const parsed = JSON.parse(fs.readFileSync(file, "utf8")) as Partial<SeoRecoveryPayload>;
       if (parsed?.source?.provider !== "google") continue;
+      const gscCandidates = resolveCandidate("src/data/seo/gsc-dashboard-ranges.json");
+      const gscGeneratedAt = gscCandidates
+        .filter((candidate) => fs.existsSync(candidate))
+        .map((candidate) => {
+          try {
+            return JSON.parse(fs.readFileSync(candidate, "utf8"))?.generatedAt as string | undefined;
+          } catch {
+            return undefined;
+          }
+        })
+        .find(Boolean);
+      const recoveryIsStale = Boolean(
+        gscGeneratedAt
+        && parsed.generatedAt
+        && Date.parse(gscGeneratedAt) > Date.parse(parsed.generatedAt)
+      );
+      if (recoveryIsStale) return emptyPayload();
       return {
         ...emptyPayload(),
         ...parsed,
