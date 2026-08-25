@@ -12,7 +12,7 @@ linking:
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-25"
+updatedAt: "2026-08-24"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkbrunnen, reinigung, hygiene, biofilm]
 hub: { sections: [wissen], title: "Katzentrinkbrunnen richtig reinigen", description: "Pumpe, Tank und Auslauf ohne blinde Stellen säubern.", order: 48 }
@@ -129,7 +129,7 @@ Drücke Dichtungen nicht mit scharfen Gegenständen aus ihrer Nut. Kratzer und b
 
 ### 5. Pumpe und Rotorraum reinigen
 
-Die Pumpe ist häufig die am stärksten übersehene Stelle. Öffne Pumpenabdeckung und Rotorraum nur so weit, wie es die Anleitung vorsieht. Bei vielen Modellen lässt sich der kleine Rotor oder Impeller vorsichtig herausziehen.
+Die Pumpe ist häufig die am stärksten übersehene Stelle. Öffne Pumpenabdeckung und Rotorraum nur so weit, wie es die Anleitung vorsieht. Bei vielen Modellen lässt sich der kleine Rotor oder Impeller vorsichtig herausziehen. Wenn du genau diesen Teil zerlegen willst, zeigt die separate Anleitung [Pumpe im Katzentrinkbrunnen reinigen](/pumpe-katzentrinkbrunnen-reinigen/) die Reihenfolge für Abdeckung, Rotor, Ansaugung und Zusammenbau kompakt.
 
 Entferne Haare, Schleim und Mineralablagerungen mit einer weichen Bürste. Reinige auch die Achse, den Hohlraum hinter dem Rotor und den Ansaugschlitz. Wende keine Gewalt an: Kleine Keramikachsen, Gummilager und Magnetrotoren können brechen oder sich verformen.
 

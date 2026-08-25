@@ -13,7 +13,7 @@ linking: { keywords: ["wie funktionieren GPS-Tracker", "GPS Tracker Funktionswei
 tags: ["GPS", "Funktionsweise", "Mobilfunk", "VHF", "Haustiere"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion für smarte Haustiertechnik" }
 publishedAt: "2026-07-20"
-updatedAt: "2026-07-20"
+updatedAt: "2026-08-24"
 hub: { sections: ["wissen", "gps-tracker"], title: "Wie funktionieren GPS-Tracker?", description: "Position, Übertragung und App als getrennte Kette.", icon: "🛰️", order: 361, featured: true }
 contentPlatform: { version: 2, cluster: "gps-tracker", intent: "informational", animal: "both", products: [], decision: "off", blocks: [summary, checklist, mistakes], summary: ["Satelliten liefern Signale; der Tracker berechnet seine Position selbst.", "Mobilfunk oder VHF überträgt diese Position erst zum Halter.", "Live-Ortung ist eine Folge diskreter Updates, kein lückenloser Film."], suitableFor: ["technische Kaufvorbereitung"], notSuitableFor: ["Garantien bei Funklöchern"], checklist: ["Zeitstempel prüfen", "Übertragungsweg kennen", "Akku und Abdeckung testen"], mistakes: ["GPS und Mobilfunk verwechseln", "Kartenpunkt ohne Zeitstempel lesen"], faqMode: "manual", theme: "blue" }
 heroImage: { src: "../../assets/images/guides/gps-tracker/how-it-works.webp", alt: "Datenkette eines Haustiertrackers von Satelliten über Mobilfunk und Server zur App" }
@@ -28,6 +28,7 @@ faq:
   - { question: "Wie funktioniert ein virtueller Zaun?", answer: "Du definierst eine Zone in der App. Sobald eine übertragene Position außerhalb erkannt wird, erzeugt der Dienst eine Meldung. Der Alarm ist technisch verzögert und kein echter Zaun. Energiesparmodus und schlechter Empfang können die Reaktionszeit verlängern." }
   - { question: "Warum funktioniert GPS innen schlechter?", answer: "Dach, Wände und Metall schwächen Satellitensignale; Reflexionen erzeugen zusätzliche Wege. Manche Systeme nutzen WLAN- oder Bluetooth-Nähe als Hilfsinformation, doch das ist nicht dasselbe wie ein sauberer Satelliten-Fix." }
   - { question: "Was passiert ohne Mobilfunk?", answer: "Ein Mobilfunktracker kann unter Umständen weiter Positionen bestimmen, sie aber nicht sofort zur App übertragen. Manche Geräte speichern Verlauf und senden später. VHF-Systeme benötigen keinen Mobilfunk, müssen aber den eigenen Funkempfänger erreichen." }
+  - { question: "Warum piept ein GPS-Tracker für Haustiere?", answer: "Ein Ton kommt nicht vom GPS-Satellitensignal selbst. Je nach Modell kann er zu einer Such- oder Tonfunktion, Kopplung, Statusmeldung oder Warnung gehören. Wenn ein Tracker regelmäßig und unerwartet piept, prüfe zuerst App-Einstellungen und das Handbuch des konkreten Modells statt den Ton als Ortungssignal zu interpretieren." }
 ---
 
 Der wichtigste Satz lautet: **GPS bestimmt die Position, aber GPS überträgt sie nicht an dein Smartphone.** Ein Haustiertracker kombiniert deshalb mehrere Systeme.
@@ -52,6 +53,12 @@ GPS ist der Name des US-Systems; viele Tracker nutzen zusätzlich Galileo, GLONA
 ### Mobilfunk oder VHF
 
 Tractive, Weenect und PAJ verhalten sich vereinfacht wie kleine Telefone: SIM, Funknetz, Server, App. Garmin Alpha sendet dagegen direkt per VHF an ein Handgerät. Das hat keine Mobilfunkgebühr, aber eine feste Funkreichweite. Die Modelle stehen im [GPS-Hub](/gps-tracker/).
+
+## Warum piept ein GPS-Tracker manchmal?
+
+Ein regelmäßiger Ton ist **kein Bestandteil der GPS-Ortung selbst**. Satellitensignale sind für den Nutzer nicht hörbar. Ob ein Haustiertracker piept und was der Ton bedeutet, hängt vom Modell ab. Möglich sind eine bewusst ausgelöste Such- oder Tonfunktion, Kopplungs- und Statussignale oder Warnhinweise.
+
+Tritt der Ton ohne erkennbaren Anlass auf, prüfe in dieser Reihenfolge: aktive Ton- oder Suchfunktion in der App, Lade- und Akkustatus, Verbindungs- beziehungsweise Kopplungshinweise und anschließend die Signaltabelle im Handbuch des konkreten Trackers. Ein universeller Piepscode für Haustier-GPS-Tracker existiert nicht.
 
 ## Warum Live-Modus Akku kostet
 

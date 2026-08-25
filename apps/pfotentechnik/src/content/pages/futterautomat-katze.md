@@ -1,9 +1,9 @@
 ---
 title: "Futterautomaten für Katzen"
-seoTitle: "Futterautomat für Katzen: Modelle im Vergleich"
+seoTitle: "Futterautomat für Katzen: Futterart, Portion & Auswahl"
 slug: "futterautomat-katze"
-description: "Futterautomaten für Katzen im Vergleich: Portionierung, App, Mehrkatzenhaushalt und Nassfutter richtig einordnen."
-seoDescription: "Welcher Futterautomat passt zu Katzen? Vergleich von App-Modellen, Nassfutter-Lösungen und Funktionen für verlässliche Routinen."
+description: "Futterautomaten für Katzen auswählen: Futterart, Portionsgröße, Stromreserve und Mehrkatzenhaushalt richtig einordnen."
+seoDescription: "Welcher Futterautomat passt zur Katze? Futterart, Portionsgröße, Mehrkatzenhaushalt, Stromreserve und App vor dem Modellvergleich klären."
 category: "futterautomaten"
 categoryLabel: "Futterautomaten"
 categoryPath: "/smarte-futterautomaten/"
@@ -15,7 +15,7 @@ linking:
 tags: ["Futterautomat", "Katze", "Kaufberatung"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-08"
-updatedAt: "2026-07-08"
+updatedAt: "2026-08-24"
 navigation:
   show: false
   label: "Für Katzen"
@@ -25,7 +25,7 @@ hub:
   sections:
     - "wissen"
   title: "Futterautomaten für Katzen"
-  description: "Futterautomaten für Katzen im Vergleich: Portionierung, App, Mehrkatzenhaushalt und Nassfutter richtig einordnen."
+  description: "Futterart, Portionsgröße, Stromreserve und Zugang klären, bevor konkrete Modelle verglichen werden."
   icon: "📖"
   order: 300
 hubPriority: 90
@@ -36,32 +36,6 @@ premiumBlocks:
     eyebrow: "Kurzantwort"
     title: "Welcher Futterautomat eignet sich für Katzen?"
     text: "Für Trockenfutter ist ein leiser App-Automat mit kleinen, überprüfbaren Portionen und Batterie-Backup meist die beste Wahl. Frisst die Katze Nassfutter, ist ein zeitgesteuertes Fachsystem mit Kühlakkus sinnvoller. In Mehrkatzenhaushalten muss zusätzlich geklärt werden, welches Tier Zugang zum Napf hat."
-  - type: "quickFacts"
-    eyebrow: "Schnell entscheiden"
-    title: "Drei passende Ansätze"
-    cards:
-      - label: "Allrounder"
-        title: "Petlibro Granary WiFi"
-        text: "App-Zeitpläne, großer Vorrat und Batterie-Backup für Trockenfutter."
-        href: "/produkt/petlibro-granary-wifi-feeder/"
-        cta: "Allrounder ansehen"
-      - label: "Kompakt"
-        title: "PETKIT Fresh Element Solo"
-        text: "Kompakte Bauweise und App-Steuerung für Katzen und kleine Tiere."
-        href: "/produkt/petkit-fresh-element-solo/"
-        cta: "Kompaktes Modell ansehen"
-      - label: "Nassfutter"
-        title: "Cat Mate C500"
-        text: "Fünf Fächer und Kühlakkus statt offenem Vorratsbehälter."
-        href: "/vergleiche/beste-futterautomaten-fuer-nassfutter/"
-        cta: "Nassfutter-Lösung ansehen"
-comparisonProducts: ["petlibro-granary-wifi-feeder", "petkit-fresh-element-solo", "xiaomi-smart-pet-food-feeder-2", "cat-mate-c500"]
-comparisonRecommendation:
-  title: "Der Granary WiFi ist die vielseitigste Trockenfutter-Wahl"
-  text: "Er bietet verständliche App-Funktionen und ausreichend Vorrat. Für kleine Stellflächen ist der Fresh Element Solo interessant; bei Nassfutter passt die Konstruktion des Cat Mate C500 besser."
-  tableTitle: "Futterautomaten für Katzen verglichen"
-  cardsTitle: "Passende Modelle im Detail"
-  criteria: ["Kleine Portionen", "App & Zeitpläne", "Lautstärke", "Reinigung", "Ausfallsicherheit", "Preis-Leistung"]
 healthBridge:
   eyebrow: "Gesundheit"
   title: "Verändertes Fressverhalten ernst nehmen"
@@ -94,7 +68,7 @@ recommendationJourney:
   comparisonLabel: Passende Modelle vergleichen
 ---
 
-Katzen profitieren von gleichmäßigen Abläufen, stellen an einen Automaten aber besondere Anforderungen: Portionen sind oft klein, manche Tiere reagieren sensibel auf Motorgeräusche und in Mehrkatzenhaushalten ist nicht automatisch klar, wer tatsächlich gefressen hat.
+Katzen profitieren von gleichmäßigen Abläufen, stellen an einen Automaten aber besondere Anforderungen: Portionen sind oft klein, manche Tiere reagieren sensibel auf Motorgeräusche und in Mehrkatzenhaushalten ist nicht automatisch klar, wer tatsächlich gefressen hat. Diese Seite hilft zuerst bei der Auswahl der passenden Bauart. Konkrete Geräte, Gewinner und Alternativen stehen bewusst getrennt im [Vergleich der besten Futterautomaten für Katzen](/vergleiche/beste-futterautomaten-fuer-katzen/).
 
 ## Trockenfutter oder Nassfutter entscheidet zuerst
 
@@ -112,9 +86,9 @@ Ein Ausgabeprotokoll sagt nur, dass Futter bereitgestellt wurde. Es sagt nicht, 
 
 Napf und Futterkontaktteile sollten leicht abnehmbar sein. Stelle das neue Gerät zuerst ausgeschaltet an den bekannten Platz. Einzelne Testausgaben in ruhiger Umgebung helfen dabei, die Reaktion der Katze auf das Geräusch zu beobachten.
 
-## So bewerten wir Katzen-Futterautomaten
+## Welche Kriterien zuerst entscheiden
 
-Wir gewichten kleine Portionen, Zuverlässigkeit, Reinigung, Geräuschentwicklung, Stromreserve und eine verständliche Bedienung. Kamera oder App sind Zusatznutzen, keine Voraussetzung für eine gute Fütterungsroutine. Einen breiteren Überblick bietet der [Vergleich smarter Futterautomaten](/smarte-futterautomaten/).
+Prüfe vor dem Modellvergleich kleine und reproduzierbare Portionen, Zuverlässigkeit, Reinigung, Geräuschentwicklung, Stromreserve und den tatsächlichen Zugang zum Napf. Kamera oder App sind Zusatznutzen, keine Voraussetzung für eine gute Fütterungsroutine. Die Grundlagen zu Bauarten und Funktionen bündelt der [Ratgeber zu smarten Futterautomaten](/smarte-futterautomaten/); konkrete Modelle werden im [Katzen-Futterautomaten-Vergleich](/vergleiche/beste-futterautomaten-fuer-katzen/) bewertet.
 
 Weitere passende Ratgeber sind [Futterautomaten mit Kamera](/vergleiche/beste-futterautomaten-mit-kamera/), [Modelle für Nassfutter](/vergleiche/beste-futterautomaten-fuer-nassfutter/) und die [Kaufberatung für Hunde](/futterautomat-hund/).
 

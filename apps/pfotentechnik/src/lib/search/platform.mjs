@@ -26,6 +26,49 @@ export function rebuildAdvisorSource() {
   return { ok: true, provider: loaded.root.provider || "combined", rangeCount, generatedAt: loaded.root.generatedAt, message: "Combined-Datenquelle ist valide; der Advisor berechnet seine Empfehlungen beim nächsten Seitenaufruf neu." };
 }
 
+export async function syncSingleSearchProvider(provider, { onProgress } = {}) {
+  if (!new Set(["google", "bing"]).has(provider)) {
+    throw new SearchError("SEARCH_ACTION_NOT_ALLOWED", { message: `Unbekannter Search-Provider: ${provider}` });
+  }
+
+  return withSearchLock("search-sync", async () => {
+    const started = Date.now();
+    onProgress?.({ step: `${provider}-sync`, message: `${provider === "google" ? "Google Search Console" : "Bing Webmaster Tools"} wird synchronisiert.` });
+    const providerResult = await getSearchProvider(provider).sync({ onProgress });
+
+    onProgress?.({ step: "combine", message: "Lokale Google- und Bing-Daten werden nach dem Provider-Sync neu zusammengeführt." });
+    const google = readProviderDashboard("google");
+    const bing = readProviderDashboard("bing");
+    if (!google?.ranges && !bing?.ranges) {
+      throw new SearchError("SEARCH_NO_DATA", { message: "Nach dem Provider-Sync sind keine gültigen Search-Dashboards vorhanden." });
+    }
+
+    const combinedPayload = buildCombinedDashboard({ google, bing, staleProviders: [] });
+    const combined = writeCombinedDashboard(combinedPayload);
+    onProgress?.({ step: "advisor", message: "SEO-Advisor-Datenquelle wird mit dem neuen Combined-Stand validiert." });
+    const advisor = rebuildAdvisorSource();
+
+    updateProviderStatus("combined", {
+      status: "succeeded",
+      lastAttemptAt: combinedPayload.generatedAt,
+      lastSuccessfulSyncAt: combinedPayload.generatedAt,
+      lastDurationMs: Date.now() - started,
+      lastError: null,
+      pagesCount: combined.pagesCount,
+      queriesCount: combined.queriesCount,
+      metrics: combined.metrics,
+      dataUpdatedAt: combinedPayload.dataUpdatedAt,
+    });
+
+    searchLog({ provider: "combined", action: `${provider}-sync-recombine`, status: "succeeded", durationMs: Date.now() - started, records: combined.pagesCount + combined.queriesCount });
+    return {
+      ...providerResult,
+      combined: { ...combined, generatedAt: combinedPayload.generatedAt, dataUpdatedAt: combinedPayload.dataUpdatedAt },
+      advisor,
+    };
+  });
+}
+
 export async function syncSearchPlatform({ onProgress } = {}) {
   return withSearchLock("search-sync", async () => {
     const started = Date.now(); const lastAttemptAt = new Date().toISOString(); const config = safeSearchConfig();

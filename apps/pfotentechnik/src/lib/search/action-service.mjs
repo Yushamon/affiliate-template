@@ -5,7 +5,7 @@ import { APP_ROOT, REPO_ROOT } from "./config.mjs";
 import { SearchError, redactSecrets, toPublicError } from "./errors.mjs";
 import { searchLog } from "./logging.mjs";
 import { getSearchProvider } from "./provider-registry.mjs";
-import { rebuildAdvisorSource, syncSearchPlatform, testSearchPlatform } from "./platform.mjs";
+import { rebuildAdvisorSource, syncSearchPlatform, syncSingleSearchProvider, testSearchPlatform } from "./platform.mjs";
 import { generateSearchReport } from "./search-report.mjs";
 import {
   buildImagePack,
@@ -149,10 +149,10 @@ async function runSafeQualityAutoFix(payload, progress) {
 
 const DEFAULT_HANDLERS = {
   "google.test": ({ progress }) => { progress({ step: "connection", message: "OAuth, Token, API und Property werden geprüft." }); return getSearchProvider("google").test(); },
-  "google.sync": ({ progress }) => getSearchProvider("google").sync({ onProgress: progress }),
+  "google.sync": ({ progress }) => syncSingleSearchProvider("google", { onProgress: progress }),
   "google.report": ({ progress }) => { progress({ step: "report", message: "Bericht wird aus lokalen Sync-Daten erzeugt." }); return getSearchProvider("google").report(); },
   "bing.test": ({ progress }) => { progress({ step: "bing-test", message: "Bing API-Key, Website und Zugriff werden geprüft." }); return getSearchProvider("bing").test(); },
-  "bing.sync": ({ progress }) => getSearchProvider("bing").sync({ onProgress: progress }),
+  "bing.sync": ({ progress }) => syncSingleSearchProvider("bing", { onProgress: progress }),
   "bing.report": ({ progress }) => { progress({ step: "bing-report", message: "Bing-Bericht wird aus lokalen Sync-Daten erzeugt." }); return getSearchProvider("bing").report(); },
   "search.test": ({ progress }) => { progress({ step: "search-test", message: "Alle konfigurierten Search-Provider werden geprüft." }); return testSearchPlatform(); },
   "search.sync": ({ progress }) => syncSearchPlatform({ onProgress: progress }),

@@ -21,11 +21,11 @@ category:
   path: /gps-tracker/
 productUrl: "/produkt/tractive-cat-6-mini/"
 publishedAt: "2026-07-20"
-updatedAt: "2026-07-22"
+updatedAt: "2026-08-24"
 author:
   name: PfotenTechnik Redaktion
 seo:
-  title: "Tractive CAT 6 Mini: Gewicht, Akku und Daten"
+  title: "Tractive CAT 6 Mini: Akku, Abo, Gewicht & Preis"
   description: Tractive CAT 6 Mini mit 32 g inklusive Halsband, IP68, LTE/4G, Sicherheitsverschluss und bis zu sieben Tagen Akku.
   canonical: /produkt/tractive-cat-6-mini/
   sitemap: true
@@ -67,8 +67,8 @@ price:
     label: "amazon.de"
     type: "merchant"
 affiliate:
-  provider: "manufacturer"
-  label: "Beim Hersteller ansehen"
+  provider: "amazon"
+  label: "Aktuellen Preis bei Amazon prüfen"
   url: "https://amzn.to/3Ts7OyY"
   rel: "sponsored nofollow noopener"
   target: "_blank"

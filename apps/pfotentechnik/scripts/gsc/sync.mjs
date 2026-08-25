@@ -1,15 +1,16 @@
 #!/usr/bin/env node
-import { syncGoogleSearch } from "../../src/lib/search/providers/google/sync.mjs";
+import { syncSingleSearchProvider } from "../../src/lib/search/platform.mjs";
 import { toPublicError } from "../../src/lib/search/errors.mjs";
 
 try {
-  const result = await syncGoogleSearch({ onProgress: (progress) => console.log(progress.message) });
+  const result = await syncSingleSearchProvider("google", { onProgress: (progress) => console.log(progress.message) });
   console.log("\nGSC-Dashboard aktualisiert");
   console.log(`- Property: ${result.property}`);
   console.log(`- Zeiträume: ${result.ranges.join(", ")}`);
   console.log(`- Seiten: ${result.pagesCount}`);
   console.log(`- Queries: ${result.queriesCount}`);
   console.log(`- Dauer: ${result.durationMs} ms`);
+  console.log(`- Combined: ${result.combined?.generatedAt || "nicht erzeugt"}`);
 } catch (error) {
   const safe = toPublicError(error);
   console.error(`\nGSC-Synchronisierung fehlgeschlagen: ${safe.message}`);

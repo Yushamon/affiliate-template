@@ -15,7 +15,7 @@ import { createBingClient, unwrapBingResponse } from "../src/lib/search/provider
 import { parseBingDate, mapBingQueryStats, mapBingPageStats, mapBingCrawlStats } from "../src/lib/search/providers/bing/mapper.mjs";
 import { buildBingDashboard, summarizeBingRows } from "../src/lib/search/providers/bing/sync.mjs";
 import { buildCombinedDashboard, combineMetricValues } from "../src/lib/search/combined.mjs";
-import { classifyProviderResults } from "../src/lib/search/platform.mjs";
+import { classifyProviderResults, syncSingleSearchProvider } from "../src/lib/search/platform.mjs";
 import { toPublicError } from "../src/lib/search/errors.mjs";
 import { atomicWriteJson } from "../src/lib/search/config.mjs";
 import { sanitizeLogEntry } from "../src/lib/search/logging.mjs";
@@ -298,4 +298,17 @@ test("Sichere Admin-Actions reichen nur strukturierte Payloads an feste Handler 
   assert.deepEqual(received, { kind: "meta", task: { id: "x" } });
   assert.equal(service.get(queued.id).status, "succeeded");
   assert.throws(() => service.start("shell.exec", { command: "echo unsafe" }), (error) => error.code === "SEARCH_ACTION_NOT_ALLOWED");
+});
+
+
+test("Einzel-Provider-Sync baut Combined nach dem frischen Provider-Write neu", async () => {
+  const actionSource = fs.readFileSync(new URL("../src/lib/search/action-service.mjs", import.meta.url), "utf8");
+  const gscSource = fs.readFileSync(new URL("../scripts/gsc/sync.mjs", import.meta.url), "utf8");
+  const bingSource = fs.readFileSync(new URL("../scripts/bing/sync.mjs", import.meta.url), "utf8");
+
+  assert.match(actionSource, /google\.sync[\s\S]*syncSingleSearchProvider\("google"/);
+  assert.match(actionSource, /bing\.sync[\s\S]*syncSingleSearchProvider\("bing"/);
+  assert.match(gscSource, /syncSingleSearchProvider\("google"/);
+  assert.match(bingSource, /syncSingleSearchProvider\("bing"/);
+  assert.equal(typeof syncSingleSearchProvider, "function");
 });
