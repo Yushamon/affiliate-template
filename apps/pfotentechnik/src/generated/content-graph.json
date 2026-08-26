@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-08-24T12:23:33.107Z",
+  "generatedAt": "2026-08-25T13:23:52.222Z",
   "taxonomyVersion": 3,
   "nodes": [
     {
@@ -2634,7 +2634,7 @@
       "slug": "futterautomat-katze",
       "route": "/futterautomat-katze/",
       "title": "Futterautomaten für Katzen",
-      "description": "Futterautomaten für Katzen im Vergleich: Portionierung, App, Mehrkatzenhaushalt und Nassfutter richtig einordnen.",
+      "description": "Futterautomaten für Katzen auswählen: Futterart, Portionsgröße, Stromreserve und Mehrkatzenhaushalt richtig einordnen.",
       "type": "page",
       "cluster": "futterautomaten",
       "topics": [
@@ -374467,6 +374467,22 @@
     {
       "source": "product:petkit-purobot-crystal-duo",
       "target": "comparison:beste-automatische-katzentoiletten",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petkit-purobot-crystal-duo",
+      "target": "product:neakasa-m1-plus",
+      "type": "explicit",
+      "score": 100,
+      "explicit": true,
+      "automatic": false
+    },
+    {
+      "source": "product:petkit-purobot-crystal-duo",
+      "target": "product:petkit-puramax-2",
       "type": "explicit",
       "score": 100,
       "explicit": true,

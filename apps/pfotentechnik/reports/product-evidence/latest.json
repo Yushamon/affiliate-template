@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-19T08:07:06.003Z",
+  "generatedAt": "2026-08-25T12:51:57.430Z",
   "summary": {
-    "products": 99,
-    "covered": 99,
-    "complete": 71,
+    "products": 101,
+    "covered": 100,
+    "complete": 72,
     "partial": 28,
-    "missing": 0
+    "missing": 1
   },
   "rows": [
     {
@@ -177,6 +177,20 @@
       "userSources": 1,
       "consensus": 2,
       "missingParts": []
+    },
+    {
+      "slug": "furbo-360-katzenkamera",
+      "file": "src/content/products/furbo-360-katzenkamera.md",
+      "status": "missing",
+      "hasExternal": false,
+      "professional": 0,
+      "userSources": 0,
+      "consensus": 0,
+      "missingParts": [
+        "professionalReviews",
+        "userReviews",
+        "consensus"
+      ]
     },
     {
       "slug": "furbo-mini-360",
@@ -551,6 +565,16 @@
       "professional": 2,
       "userSources": 1,
       "consensus": 3,
+      "missingParts": []
+    },
+    {
+      "slug": "petkit-purobot-crystal-duo",
+      "file": "src/content/products/petkit-purobot-crystal-duo.md",
+      "status": "complete",
+      "hasExternal": true,
+      "professional": 1,
+      "userSources": 1,
+      "consensus": 2,
       "missingParts": []
     },
     {

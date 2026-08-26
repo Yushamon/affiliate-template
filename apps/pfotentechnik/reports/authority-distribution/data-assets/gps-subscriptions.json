@@ -1,24 +1,24 @@
 {
   "schemaVersion": 1,
-  "snapshotVersion": "5ef20a5f081710e5",
-  "generatedAt": "2026-08-25T12:01:21.452Z",
+  "snapshotVersion": "ece46b7476866812",
+  "generatedAt": "2026-08-25T12:51:57.475Z",
   "dataUpdatedAt": "2026-08-24T00:00:00.000Z",
   "population": {
     "category": "gps-tracker",
     "definition": "Aktive GPS-Produkte der PfotenTechnik Product Collection mit explizitem gps.subscriptionRequired und aktueller strukturierter Evidence.",
     "counts": {
       "total": 12,
-      "eligible": 4,
-      "excluded": 8,
+      "eligible": 12,
+      "excluded": 0,
       "unknown": 0,
-      "required": 4,
+      "required": 10,
       "optional": 0,
-      "none": 0
+      "none": 2
     },
     "percentages": {
-      "evidenceCoverage": 33.3,
-      "required": 100,
-      "withoutMandatorySubscription": 0
+      "evidenceCoverage": 100,
+      "required": 83.3,
+      "withoutMandatorySubscription": 16.7
     }
   },
   "products": [
@@ -82,11 +82,36 @@
           "unknown": true
         }
       },
-      "evidence": [],
-      "eligible": false,
-      "exclusionReasons": [
-        "subscription-evidence-missing"
-      ]
+      "evidence": [
+        {
+          "source": "Garmin Alpha T 20 K Produktseite",
+          "url": "https://www.garmin.com/de-DE/p/714362",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-08-25T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "gps",
+            "gps.subscriptionRequired"
+          ],
+          "assertion": "Die reguläre Hundeortung erfolgt mit einem kompatiblen Garmin-Alpha-Handgerät; das T 20 überträgt die Position direkt per VHF und benötigt dafür keinen laufenden Dienst oder Mobilfunktarif. Optionale LTE- oder inReach-Funktionen anderer Geräte sind nicht Teil dieses Ortungswegs.",
+          "stale": false
+        },
+        {
+          "source": "Garmin Alpha T 20 Benutzerhandbuch",
+          "url": "https://www8.garmin.com/manuals/webhelp/GUID-74035D64-33C8-4CC0-8053-23CB54692716/DE-DE/Alpha_T_20_OM_DE-DE.pdf",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-08-25T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "gps",
+            "gps.subscriptionRequired"
+          ],
+          "assertion": "Das offizielle Handbuch dokumentiert die direkte VHF-Funkübertragung mit bis zu 14,48 km Reichweite sowie die Kopplung an ein Navigationsgerät; für diesen regulären Ortungsweg ist kein Abonnementdienst vorgesehen.",
+          "stale": false
+        }
+      ],
+      "eligible": true,
+      "exclusionReasons": []
     },
     {
       "product": "Garmin Alpha TT 25",
@@ -108,11 +133,36 @@
           "unknown": true
         }
       },
-      "evidence": [],
-      "eligible": false,
-      "exclusionReasons": [
-        "subscription-evidence-missing"
-      ]
+      "evidence": [
+        {
+          "source": "Garmin Alpha TT 25 Produktseite",
+          "url": "https://www.garmin.com/en-US/p/714439/",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-08-25T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "gps",
+            "gps.subscriptionRequired"
+          ],
+          "assertion": "Die reguläre Ortung des TT 25 überträgt die Position direkt per VHF an ein separat erhältliches kompatibles Garmin-Handgerät; dafür ist kein laufender Dienst oder Mobilfunktarif erforderlich. Optionale LTE- oder inReach-Dienste anderer Geräte sind nicht Teil dieses Ortungswegs.",
+          "stale": false
+        },
+        {
+          "source": "Garmin Alpha TT 25 Benutzerhandbuch – technische Daten",
+          "url": "https://www8.garmin.com/manuals/webhelp/GUID-992E9C90-AE40-4ED4-B3C4-9D812BD4DF89/DE-DE/GUID-436F95DA-B7C8-4AAD-AE07-BDC58BB735C2.html",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-08-25T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "gps",
+            "gps.subscriptionRequired"
+          ],
+          "assertion": "Das offizielle Handbuch dokumentiert VHF als Übertragungsweg mit bis zu 14,48 km Reichweite; für diese reguläre Direktortung ist kein Abonnementdienst vorgesehen.",
+          "stale": false
+        }
+      ],
+      "eligible": true,
+      "exclusionReasons": []
     },
     {
       "product": "Invoxia Biotracker Edition 2026",
@@ -187,11 +237,36 @@
           "unknown": true
         }
       },
-      "evidence": [],
-      "eligible": false,
-      "exclusionReasons": [
-        "subscription-evidence-missing"
-      ]
+      "evidence": [
+        {
+          "source": "PAJ GPS – PET Finder 4G Mini",
+          "url": "https://www.paj-gps.de/store/pet-finder-4g-mini/",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-08-25T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "gps",
+            "gps.subscriptionRequired"
+          ],
+          "assertion": "PAJ nennt drei enthaltene Premium-Monate und verlangt danach einen kostenpflichtigen Tarif für die weitere reguläre Ortung; damit ist ein laufendes Abonnement nach dem Inklusivzeitraum erforderlich.",
+          "stale": false
+        },
+        {
+          "source": "PAJ GPS – PET Finder 4G Mini Schnellstart-Anleitung",
+          "url": "https://www.paj-gps.de/wp-content/uploads/2026/03/Bedienungsanleitung-PET-Finder-4G-Mini-JAN26-DE.pdf",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-08-25T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "gps",
+            "gps.subscriptionRequired"
+          ],
+          "assertion": "Die offizielle Anleitung führt die Aktivierung über das Finder-Portal und die Auswahl von Abo und Laufzeit als Bestandteil der Inbetriebnahme auf.",
+          "stale": false
+        }
+      ],
+      "eligible": true,
+      "exclusionReasons": []
     },
     {
       "product": "Pawfit 3",
@@ -305,11 +380,23 @@
           "unknown": true
         }
       },
-      "evidence": [],
-      "eligible": false,
-      "exclusionReasons": [
-        "subscription-evidence-missing"
-      ]
+      "evidence": [
+        {
+          "source": "Tractive Kundenservice – Tracker-Auswahl und Abo",
+          "url": "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-08-25T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "gps",
+            "gps.subscriptionRequired"
+          ],
+          "assertion": "Tractive führt den CAT 6 Mini als aktuelles Modell und erklärt ausdrücklich, dass jeder Tractive-Tracker ein aktives Abo benötigt, um zu funktionieren.",
+          "stale": false
+        }
+      ],
+      "eligible": true,
+      "exclusionReasons": []
     },
     {
       "product": "Tractive DOG 6",
@@ -331,11 +418,23 @@
           "unknown": true
         }
       },
-      "evidence": [],
-      "eligible": false,
-      "exclusionReasons": [
-        "subscription-evidence-missing"
-      ]
+      "evidence": [
+        {
+          "source": "Tractive Kundenservice – Tracker-Auswahl und Abo",
+          "url": "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-08-25T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "gps",
+            "gps.subscriptionRequired"
+          ],
+          "assertion": "Tractive führt den DOG 6 als aktuelles Modell und erklärt ausdrücklich, dass jeder Tractive-Tracker ein aktives Abo benötigt, um zu funktionieren.",
+          "stale": false
+        }
+      ],
+      "eligible": true,
+      "exclusionReasons": []
     },
     {
       "product": "Tractive DOG 6 XL",
@@ -357,11 +456,23 @@
           "unknown": true
         }
       },
-      "evidence": [],
-      "eligible": false,
-      "exclusionReasons": [
-        "subscription-evidence-missing"
-      ]
+      "evidence": [
+        {
+          "source": "Tractive Kundenservice – Tracker-Auswahl und Abo",
+          "url": "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-08-25T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "gps",
+            "gps.subscriptionRequired"
+          ],
+          "assertion": "Tractive führt den DOG 6 XL als aktuelles Modell und erklärt ausdrücklich, dass jeder Tractive-Tracker ein aktives Abo benötigt, um zu funktionieren.",
+          "stale": false
+        }
+      ],
+      "eligible": true,
+      "exclusionReasons": []
     },
     {
       "product": "Weenect XS GPS-Tracker",
@@ -383,11 +494,36 @@
           "unknown": true
         }
       },
-      "evidence": [],
-      "eligible": false,
-      "exclusionReasons": [
-        "subscription-evidence-missing"
-      ]
+      "evidence": [
+        {
+          "source": "Weenect – GPS-Tracker für Hunde und Abonnements",
+          "url": "https://www.weenect.com/de/de/gps-tracker-hund/",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-08-25T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "gps",
+            "gps.subscriptionRequired"
+          ],
+          "assertion": "Weenect nennt den Abschluss eines Abonnements wegen der integrierten SIM-Karte ausdrücklich notwendig; die reguläre Mobilfunkortung des Weenect XS setzt daher ein laufendes Abo voraus.",
+          "stale": false
+        },
+        {
+          "source": "Weenect Hilfe-Center – Service abonnieren",
+          "url": "https://help.weenect.com/hc/de/articles/208540125-Wie-abonniere-ich-einen-Service",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-08-25T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "gps",
+            "gps.subscriptionRequired"
+          ],
+          "assertion": "Das offizielle Hilfe-Center erklärt, dass jeder Weenect-Tracker wegen seiner eigenen SIM-Karte ein individuelles Abonnement benötigt und erst nach dessen Auswahl aktiviert wird.",
+          "stale": false
+        }
+      ],
+      "eligible": true,
+      "exclusionReasons": []
     },
     {
       "product": "Weenect XT GPS-Tracker",
@@ -409,29 +545,178 @@
           "unknown": true
         }
       },
-      "evidence": [],
-      "eligible": false,
-      "exclusionReasons": [
-        "subscription-evidence-missing"
-      ]
+      "evidence": [
+        {
+          "source": "Weenect XT Produktseite",
+          "url": "https://www.weenect.com/de/de/gps-tracker-hund/weenect-xt/",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-08-25T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "gps",
+            "gps.subscriptionRequired"
+          ],
+          "assertion": "Weenect erklärt auf der XT-Produktseite, dass das Abonnement wegen der integrierten SIM-Karte unerlässlich für Echtzeit-Tracking ohne Entfernungsbeschränkung ist.",
+          "stale": false
+        },
+        {
+          "source": "Weenect Hilfe-Center – Service abonnieren",
+          "url": "https://help.weenect.com/hc/de/articles/208540125-Wie-abonniere-ich-einen-Service",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-08-25T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "gps",
+            "gps.subscriptionRequired"
+          ],
+          "assertion": "Das offizielle Hilfe-Center erklärt, dass jeder Weenect-Tracker wegen seiner eigenen SIM-Karte ein individuelles Abonnement benötigt und erst nach dessen Auswahl aktiviert wird.",
+          "stale": false
+        }
+      ],
+      "eligible": true,
+      "exclusionReasons": []
     }
   ],
   "finding": {
     "type": "gps-subscription-requirement",
-    "generatedAt": "2026-08-25T12:01:21.452Z",
+    "generatedAt": "2026-08-25T12:51:57.475Z",
     "dataUpdatedAt": "2026-08-24T00:00:00.000Z",
     "population": 12,
-    "eligible": 4,
-    "excluded": 8,
-    "required": 4,
+    "eligible": 12,
+    "excluded": 0,
+    "required": 10,
     "optional": 0,
-    "none": 0,
-    "statement": "4 von 4 auswertbaren GPS-Produkten in der aktuellen PfotenTechnik-Auswahl benötigen ein Abo; 0 kommen ohne Pflichtabo aus und 0 führen ein optionales Abo.",
+    "none": 2,
+    "statement": "10 von 12 auswertbaren GPS-Produkten in der aktuellen PfotenTechnik-Auswahl benötigen ein Abo; 2 kommen ohne Pflichtabo aus und 0 führen ein optionales Abo.",
     "methodology": "Nur gps.subscriptionRequired wird als Abo-Status gelesen. Freitext wird nicht in Boolean-Werte umgewandelt. Eligible sind nur aktive Produkte mit explizitem Status und aktueller strukturierter Evidence; Unknown oder unzureichende Evidence bleiben außerhalb des belastbaren Nenners.",
-    "confidence": "low",
+    "confidence": "high",
     "status": "needs-review"
   },
-  "changeFinding": null,
+  "changeFinding": {
+    "type": "gps-subscription-data-changed",
+    "generatedAt": "2026-08-25T12:51:57.475Z",
+    "previousSnapshotVersion": "5ef20a5f081710e5",
+    "snapshotVersion": "ece46b7476866812",
+    "changes": [
+      {
+        "type": "unknown-or-evidence-resolved",
+        "slug": "garmin-alpha-t-20",
+        "before": false,
+        "after": true
+      },
+      {
+        "type": "evidence-changed",
+        "slug": "garmin-alpha-t-20",
+        "before": [],
+        "after": [
+          "https://www.garmin.com/de-DE/p/714362|2026-08-25T00:00:00.000Z|high",
+          "https://www8.garmin.com/manuals/webhelp/GUID-74035D64-33C8-4CC0-8053-23CB54692716/DE-DE/Alpha_T_20_OM_DE-DE.pdf|2026-08-25T00:00:00.000Z|high"
+        ]
+      },
+      {
+        "type": "unknown-or-evidence-resolved",
+        "slug": "garmin-alpha-tt-25",
+        "before": false,
+        "after": true
+      },
+      {
+        "type": "evidence-changed",
+        "slug": "garmin-alpha-tt-25",
+        "before": [],
+        "after": [
+          "https://www.garmin.com/en-US/p/714439/|2026-08-25T00:00:00.000Z|high",
+          "https://www8.garmin.com/manuals/webhelp/GUID-992E9C90-AE40-4ED4-B3C4-9D812BD4DF89/DE-DE/GUID-436F95DA-B7C8-4AAD-AE07-BDC58BB735C2.html|2026-08-25T00:00:00.000Z|high"
+        ]
+      },
+      {
+        "type": "unknown-or-evidence-resolved",
+        "slug": "paj-pet-finder-4g-mini",
+        "before": false,
+        "after": true
+      },
+      {
+        "type": "evidence-changed",
+        "slug": "paj-pet-finder-4g-mini",
+        "before": [],
+        "after": [
+          "https://www.paj-gps.de/store/pet-finder-4g-mini/|2026-08-25T00:00:00.000Z|high",
+          "https://www.paj-gps.de/wp-content/uploads/2026/03/Bedienungsanleitung-PET-Finder-4G-Mini-JAN26-DE.pdf|2026-08-25T00:00:00.000Z|high"
+        ]
+      },
+      {
+        "type": "unknown-or-evidence-resolved",
+        "slug": "tractive-cat-6-mini",
+        "before": false,
+        "after": true
+      },
+      {
+        "type": "evidence-changed",
+        "slug": "tractive-cat-6-mini",
+        "before": [],
+        "after": [
+          "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier|2026-08-25T00:00:00.000Z|high"
+        ]
+      },
+      {
+        "type": "unknown-or-evidence-resolved",
+        "slug": "tractive-dog-6",
+        "before": false,
+        "after": true
+      },
+      {
+        "type": "evidence-changed",
+        "slug": "tractive-dog-6",
+        "before": [],
+        "after": [
+          "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier|2026-08-25T00:00:00.000Z|high"
+        ]
+      },
+      {
+        "type": "unknown-or-evidence-resolved",
+        "slug": "tractive-dog-6-xl",
+        "before": false,
+        "after": true
+      },
+      {
+        "type": "evidence-changed",
+        "slug": "tractive-dog-6-xl",
+        "before": [],
+        "after": [
+          "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier|2026-08-25T00:00:00.000Z|high"
+        ]
+      },
+      {
+        "type": "unknown-or-evidence-resolved",
+        "slug": "weenect-xs",
+        "before": false,
+        "after": true
+      },
+      {
+        "type": "evidence-changed",
+        "slug": "weenect-xs",
+        "before": [],
+        "after": [
+          "https://help.weenect.com/hc/de/articles/208540125-Wie-abonniere-ich-einen-Service|2026-08-25T00:00:00.000Z|high",
+          "https://www.weenect.com/de/de/gps-tracker-hund/|2026-08-25T00:00:00.000Z|high"
+        ]
+      },
+      {
+        "type": "unknown-or-evidence-resolved",
+        "slug": "weenect-xt",
+        "before": false,
+        "after": true
+      },
+      {
+        "type": "evidence-changed",
+        "slug": "weenect-xt",
+        "before": [],
+        "after": [
+          "https://help.weenect.com/hc/de/articles/208540125-Wie-abonniere-ich-einen-Service|2026-08-25T00:00:00.000Z|high",
+          "https://www.weenect.com/de/de/gps-tracker-hund/weenect-xt/|2026-08-25T00:00:00.000Z|high"
+        ]
+      }
+    ]
+  },
   "validation": {
     "passed": true,
     "blocked": false,

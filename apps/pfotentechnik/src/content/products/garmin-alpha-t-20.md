@@ -408,6 +408,17 @@ comparisonData:
       nach Nässe reinigen und trocknen; keine aggressiven Chemikalien oder noch feuchte Floh- und Zeckenmittel an Band
       oder Gehäuse bringen.
     kapazitat: Ein Hundehalsbandgerät; Anzahl gleichzeitig verfolgbarer Hunde vom Handgerät abhängig
+evidenceSources:
+  - source: "Garmin Alpha T 20 K Produktseite"
+    url: "https://www.garmin.com/de-DE/p/714362"
+    accessedAt: "2026-08-25"
+    assertion: "Die reguläre Hundeortung erfolgt mit einem kompatiblen Garmin-Alpha-Handgerät; das T 20 überträgt die Position direkt per VHF und benötigt dafür keinen laufenden Dienst oder Mobilfunktarif. Optionale LTE- oder inReach-Funktionen anderer Geräte sind nicht Teil dieses Ortungswegs."
+    fields: ["gps", "gps.subscriptionRequired"]
+  - source: "Garmin Alpha T 20 Benutzerhandbuch"
+    url: "https://www8.garmin.com/manuals/webhelp/GUID-74035D64-33C8-4CC0-8053-23CB54692716/DE-DE/Alpha_T_20_OM_DE-DE.pdf"
+    accessedAt: "2026-08-25"
+    assertion: "Das offizielle Handbuch dokumentiert die direkte VHF-Funkübertragung mit bis zu 14,48 km Reichweite sowie die Kopplung an ein Navigationsgerät; für diesen regulären Ortungsweg ist kein Abonnementdienst vorgesehen."
+    fields: ["gps", "gps.subscriptionRequired"]
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"

@@ -90,6 +90,8 @@
     "price:audit:strict": "node scripts/price-intelligence/audit.mjs --strict",
     "data:asset:gps-subscriptions": "node scripts/authority-distribution/gps-subscriptions.mjs",
     "test:data-assets": "node --test test/authority-distribution-gps-subscriptions.test.mjs",
+    "demand-discovery:run": "node scripts/demand-discovery/run.mjs",
+    "test:demand-discovery": "node --test test/demand-discovery.test.mjs",
     "test:media-center": "node --test test/media-center.test.mjs",
     "media:audit": "node scripts/media-center/audit.mjs",
     "product-operations:migrate": "node scripts/product-operations/migrate.mjs --write",

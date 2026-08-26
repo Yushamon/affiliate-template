@@ -331,6 +331,12 @@ comparisonData:
     reinigung: >-
       Passform und Sicherheitsverschluss regelmäßig kontrollieren, das Halsband nach starker Belastung prüfen und den
       Akku vor längerem Freigang ausreichend laden.
+evidenceSources:
+  - source: "Tractive Kundenservice – Tracker-Auswahl und Abo"
+    url: "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier"
+    accessedAt: "2026-08-25"
+    assertion: "Tractive führt den CAT 6 Mini als aktuelles Modell und erklärt ausdrücklich, dass jeder Tractive-Tracker ein aktives Abo benötigt, um zu funktionieren."
+    fields: ["gps", "gps.subscriptionRequired"]
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"

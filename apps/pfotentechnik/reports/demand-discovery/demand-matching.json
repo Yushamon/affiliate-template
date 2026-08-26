@@ -1,0 +1,1418 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-25T13:26:35.125Z",
+  "mode": "read-only",
+  "counts": {
+    "covered": 14,
+    "partial": 3,
+    "fragmented": 1,
+    "missing": 0,
+    "overcovered": 1,
+    "uncertain": 1
+  },
+  "activeOpportunities": 6,
+  "matches": [
+    {
+      "demandNodeId": "research:feeder-failure-safety",
+      "cluster": "futterautomaten",
+      "userProblem": "Stromausfall, WLAN-/Internetausfall, lokaler Zeitplan, Batteriebackup und Betrieb ohne App/Cloud",
+      "demandEvidence": [
+        {
+          "type": "existing-research",
+          "source": "demand-enhancement-1",
+          "evidence": "Der bestehende dedizierte Ratgeber trennt bereits Strom, WLAN, Internet, Cloud und Mechanik, erklärt lokale Zeitpläne und Backup-Arten, enthält eine Funktionsmatrix, belegte Herstellerbeispiele und einen praktischen Ausfalltest.",
+          "references": [
+            "Bestehende Primärquellen im Intent Owner: Xiaomi FAQ, PETKIT-Anleitung, PetSafe Support, PETLIBRO Produktdokumentation."
+          ],
+          "observedStatus": "covered"
+        }
+      ],
+      "intentOwner": "/futterautomat-bei-stromausfall/",
+      "status": "covered",
+      "gap": null,
+      "recommendedAction": "Keine Content-Aktion.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/futterautomat-bei-stromausfall/",
+          "title": "Futterautomat bei Stromausfall: Batterie, WLAN und Offline-Betrieb",
+          "score": 0.651,
+          "signals": {
+            "titleScore": 0.5384615384615384,
+            "headingScore": 0.46153846153846156,
+            "bodyScore": 0.6923076923076923,
+            "graphScore": 0.38461538461538464,
+            "clusterMatch": true,
+            "expectedOwner": true,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/vergleiche/futterautomat-mit-app/",
+          "title": "Futterautomaten mit App",
+          "score": 0.395,
+          "signals": {
+            "titleScore": 0.07692307692307693,
+            "headingScore": 0.46153846153846156,
+            "bodyScore": 0.6923076923076923,
+            "graphScore": 0.15384615384615385,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/smarte-futterautomaten/",
+          "title": "Smarte Futterautomaten für Hunde und Katzen",
+          "score": 0.385,
+          "signals": {
+            "titleScore": 0,
+            "headingScore": 0.5384615384615384,
+            "bodyScore": 0.6923076923076923,
+            "graphScore": 0.07692307692307693,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ],
+      "groundTruth": {
+        "beforeStatus": "covered",
+        "afterStatus": "covered",
+        "skipped": true
+      }
+    },
+    {
+      "demandNodeId": "research:feeder-two-cats-wet-food-access",
+      "cluster": "futterautomaten",
+      "userProblem": "Zwei Katzen, Nassfutter, Kühlung, Timer und individueller Mikrochip-/RFID-Zugang als mögliche Komplettlösung",
+      "demandEvidence": [
+        {
+          "type": "existing-research",
+          "source": "demand-enhancement-1",
+          "evidence": "Der Owner trennt bereits Kühlung/Zeitsteuerung von Tierzugang: Fachautomaten planen Mahlzeiten, Mikrochip-Näpfe schützen Rationen, und bei unterschiedlichen Anforderungen sind getrennte Plätze/Systeme nötig. Der Nassfuttervergleich bestätigt, dass SureFeed Zugang schützt, aber nicht zeitgesteuert portioniert.",
+          "references": [
+            "Bestehende Produkt- und Vergleichsdaten zu SureFeed, Cat Mate C500, PETLIBRO Polar, PetSafe FreshFeed und Catit PIXI."
+          ],
+          "observedStatus": "covered"
+        }
+      ],
+      "intentOwner": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "status": "covered",
+      "gap": null,
+      "recommendedAction": "Keine Content-Aktion.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+          "title": "Beste Futterautomaten für zwei Katzen",
+          "score": 0.44,
+          "signals": {
+            "titleScore": 0.11764705882352941,
+            "headingScore": 0.35294117647058826,
+            "bodyScore": 0.47058823529411764,
+            "graphScore": 0.11764705882352941,
+            "clusterMatch": true,
+            "expectedOwner": true,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/smarte-futterautomaten/",
+          "title": "Smarte Futterautomaten für Hunde und Katzen",
+          "score": 0.36,
+          "signals": {
+            "titleScore": 0.058823529411764705,
+            "headingScore": 0.29411764705882354,
+            "bodyScore": 0.7647058823529411,
+            "graphScore": 0.11764705882352941,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+          "title": "Beste Futterautomaten für Nassfutter",
+          "score": 0.342,
+          "signals": {
+            "titleScore": 0.058823529411764705,
+            "headingScore": 0.29411764705882354,
+            "bodyScore": 0.6470588235294118,
+            "graphScore": 0.17647058823529413,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ],
+      "groundTruth": {
+        "beforeStatus": "covered",
+        "afterStatus": "covered",
+        "skipped": true
+      }
+    },
+    {
+      "demandNodeId": "research:cat-flap-access-logic-tailgating",
+      "cluster": "katzenklappen",
+      "userProblem": "Fremdtierschutz, selektiver Ein-/Ausgang, Rechte je Tier, App/Offline und Tailgating",
+      "demandEvidence": [
+        {
+          "type": "existing-research",
+          "source": "demand-enhancement-1",
+          "evidence": "Zugangsarten, Rechte, App/Hub und Offline-Grundlogik waren bereits gut getrennt; die mechanische Tailgating-Grenze fehlte.",
+          "references": [
+            "Sure Petcare Deutschland – Klappenübersicht",
+            "Vorhandene Produktdaten zu SureFlap Standard, DualScan und Connect"
+          ],
+          "observedStatus": "partial"
+        }
+      ],
+      "intentOwner": "/katzenklappen/",
+      "status": "covered",
+      "gap": null,
+      "recommendedAction": "Keine Content-Aktion.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/katzenklappen/",
+          "title": "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen",
+          "score": 0.486,
+          "signals": {
+            "titleScore": 0.16666666666666666,
+            "headingScore": 0.3333333333333333,
+            "bodyScore": 0.6666666666666666,
+            "graphScore": 0.08333333333333333,
+            "clusterMatch": true,
+            "expectedOwner": true,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/produkt/sureflap-mikrochip-katzenklappe/",
+          "title": "SureFlap Mikrochip Katzenklappe",
+          "score": 0.2,
+          "signals": {
+            "titleScore": 0.08333333333333333,
+            "headingScore": 0,
+            "bodyScore": 0.3333333333333333,
+            "graphScore": 0.16666666666666666,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/smarte-futterautomaten/",
+          "title": "Smarte Futterautomaten für Hunde und Katzen",
+          "score": 0.172,
+          "signals": {
+            "titleScore": 0,
+            "headingScore": 0.3333333333333333,
+            "bodyScore": 0.3333333333333333,
+            "graphScore": 0.08333333333333333,
+            "clusterMatch": false,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ],
+      "groundTruth": {
+        "beforeStatus": "partial",
+        "afterStatus": "covered",
+        "skipped": false
+      }
+    },
+    {
+      "demandNodeId": "research:litter-box-maintenance",
+      "cluster": "automatische-katzentoiletten",
+      "userProblem": "Selbstreinigend ist nicht wartungsfrei",
+      "demandEvidence": [
+        {
+          "type": "existing-research",
+          "source": "demand-enhancement-1",
+          "evidence": "Der Cornerstone sagt bereits unmittelbar bei der Funktionsweise, dass Selbstreinigung Sichtkontrolle, Demontage und Grundreinigung nicht ersetzt. Wartung, Streu, Geruch, Verbrauchsmaterial und laufende Kosten werden separat behandelt.",
+          "references": [
+            "Bestehende Hersteller-/Produktdaten im Cornerstone und Vergleich"
+          ],
+          "observedStatus": "covered"
+        }
+      ],
+      "intentOwner": "/automatische-katzentoiletten/",
+      "status": "covered",
+      "gap": null,
+      "recommendedAction": "Keine Content-Aktion.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/automatische-katzentoiletten/",
+          "title": "Automatische Katzentoiletten sicher auswählen",
+          "score": 0.45,
+          "signals": {
+            "titleScore": 0.125,
+            "headingScore": 0.125,
+            "bodyScore": 0.75,
+            "graphScore": 0.125,
+            "clusterMatch": true,
+            "expectedOwner": true,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/produkt/neakasa-m1-lite/",
+          "title": "Neakasa M1 Plus Lite",
+          "score": 0.318,
+          "signals": {
+            "titleScore": 0,
+            "headingScore": 0.375,
+            "bodyScore": 0.625,
+            "graphScore": 0,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/produkt/devoko-90l-automatisches-katzenklo/",
+          "title": "Devoko 90L Automatisches Katzenklo",
+          "score": 0.26,
+          "signals": {
+            "titleScore": 0,
+            "headingScore": 0.375,
+            "bodyScore": 0.375,
+            "graphScore": 0,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ],
+      "groundTruth": {
+        "beforeStatus": "covered",
+        "afterStatus": "covered",
+        "skipped": true
+      }
+    },
+    {
+      "demandNodeId": "research:litter-box-acclimation",
+      "cluster": "automatische-katzentoiletten",
+      "userProblem": "Katze benutzt automatisches Katzenklo nicht; sicherer Gewöhnungsablauf",
+      "demandEvidence": [
+        {
+          "type": "existing-research",
+          "source": "demand-enhancement-1",
+          "evidence": "Der Cornerstone verlangt bereits, das alte Klo verfügbar zu lassen, das neue Gerät ausgeschaltet anzubieten und automatische Zyklen erst nach freiwilliger Nutzung unter Beobachtung zu aktivieren. Standort, Einstieg, Streu und Ausschlussgründe sind im selben Owner vorhanden.",
+          "references": [
+            "Bestehende Cornerstone-Logik und modellbezogene Hinweise, unter anderem Neakasa M1 Plus"
+          ],
+          "observedStatus": "covered"
+        }
+      ],
+      "intentOwner": "/automatische-katzentoiletten/",
+      "status": "covered",
+      "gap": null,
+      "recommendedAction": "Keine Content-Aktion.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/automatische-katzentoiletten/",
+          "title": "Automatische Katzentoiletten sicher auswählen",
+          "score": 0.412,
+          "signals": {
+            "titleScore": 0,
+            "headingScore": 0,
+            "bodyScore": 0.7692307692307693,
+            "graphScore": 0.23076923076923078,
+            "clusterMatch": true,
+            "expectedOwner": true,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/produkt/devoko-90l-automatisches-katzenklo/",
+          "title": "Devoko 90L Automatisches Katzenklo",
+          "score": 0.245,
+          "signals": {
+            "titleScore": 0.15384615384615385,
+            "headingScore": 0.07692307692307693,
+            "bodyScore": 0.38461538461538464,
+            "graphScore": 0.15384615384615385,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/produkt/neakasa-m1-lite/",
+          "title": "Neakasa M1 Plus Lite",
+          "score": 0.228,
+          "signals": {
+            "titleScore": 0,
+            "headingScore": 0.07692307692307693,
+            "bodyScore": 0.46153846153846156,
+            "graphScore": 0.15384615384615385,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ],
+      "groundTruth": {
+        "beforeStatus": "covered",
+        "afterStatus": "covered",
+        "skipped": true
+      }
+    },
+    {
+      "demandNodeId": "research:pet-camera-indoor-vs-special",
+      "cluster": "haustierkameras",
+      "userProblem": "Normale Indoor-Kamera oder spezielle Haustierkamera",
+      "demandEvidence": [
+        {
+          "type": "existing-research",
+          "source": "demand-enhancement-1",
+          "evidence": "Die Produktklassen waren in Matrix und Beispielen vorhanden, die direkte Kurzantwort „eine normale Indoor-Kamera reicht häufig“ jedoch nicht prominent.",
+          "references": [
+            "Reolink E1 Zoom Deutschland",
+            "Bestehende Produktdaten zu Furbo und Enabot"
+          ],
+          "observedStatus": "partial"
+        }
+      ],
+      "intentOwner": "/haustierkameras/",
+      "status": "covered",
+      "gap": null,
+      "recommendedAction": "Keine Content-Aktion.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/haustierkameras/",
+          "title": "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten",
+          "score": 0.514,
+          "signals": {
+            "titleScore": 0,
+            "headingScore": 0.375,
+            "bodyScore": 0.875,
+            "graphScore": 0.125,
+            "clusterMatch": true,
+            "expectedOwner": true,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/vergleiche/beste-haustierkameras/",
+          "title": "Haustierkameras im Vergleich",
+          "score": 0.223,
+          "signals": {
+            "titleScore": 0.125,
+            "headingScore": 0,
+            "bodyScore": 0.5,
+            "graphScore": 0,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/vergleiche/beste-futterautomaten-mit-kamera/",
+          "title": "Beste Futterautomaten mit Kamera",
+          "score": 0.195,
+          "signals": {
+            "titleScore": 0.125,
+            "headingScore": 0.25,
+            "bodyScore": 0.375,
+            "graphScore": 0.125,
+            "clusterMatch": false,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ],
+      "groundTruth": {
+        "beforeStatus": "partial",
+        "afterStatus": "covered",
+        "skipped": false
+      }
+    },
+    {
+      "demandNodeId": "research:pet-camera-offline",
+      "cluster": "haustierkameras",
+      "userProblem": "Funktionen bei Internet-/Herstellerdienstausfall",
+      "demandEvidence": [
+        {
+          "type": "existing-research",
+          "source": "demand-enhancement-1",
+          "evidence": "Der Hub trennt bereits Fernzugriff, Cloudaufzeichnung, App-Auswertung, Tarif und lokale Speicherung und unterstellt keine unbelegte lokale Restfunktion. Der Vergleich beantwortet den Ausfall ebenfalls modellvorsichtig.",
+          "references": [
+            "Bestehende Produktdaten zu Reolink, PetTec, PETLIBRO Scout, Furbo und Enabot"
+          ],
+          "observedStatus": "covered"
+        }
+      ],
+      "intentOwner": "/haustierkameras/",
+      "status": "covered",
+      "gap": null,
+      "recommendedAction": "Keine Content-Aktion.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/haustierkameras/",
+          "title": "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten",
+          "score": 0.457,
+          "signals": {
+            "titleScore": 0,
+            "headingScore": 0.2857142857142857,
+            "bodyScore": 0.7142857142857143,
+            "graphScore": 0.14285714285714285,
+            "clusterMatch": true,
+            "expectedOwner": true,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/futterautomat-bei-stromausfall/",
+          "title": "Futterautomat bei Stromausfall: Batterie, WLAN und Offline-Betrieb",
+          "score": 0.446,
+          "signals": {
+            "titleScore": 0.2857142857142857,
+            "headingScore": 0.5714285714285714,
+            "bodyScore": 0.8571428571428571,
+            "graphScore": 0.2857142857142857,
+            "clusterMatch": false,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/smarte-futterautomaten/",
+          "title": "Smarte Futterautomaten für Hunde und Katzen",
+          "score": 0.304,
+          "signals": {
+            "titleScore": 0,
+            "headingScore": 0.42857142857142855,
+            "bodyScore": 0.8571428571428571,
+            "graphScore": 0,
+            "clusterMatch": false,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ],
+      "groundTruth": {
+        "beforeStatus": "covered",
+        "afterStatus": "covered",
+        "skipped": true
+      }
+    },
+    {
+      "demandNodeId": "research:gps-subscription-data-asset",
+      "cluster": "gps-tracker",
+      "userProblem": "Validiertes GPS-Abo-Finding in bestehende Inhalte integrieren",
+      "demandEvidence": [
+        {
+          "type": "existing-research",
+          "source": "demand-enhancement-1",
+          "evidence": "Der aktuelle Data-Asset-Snapshot besteht das Rechengate, steht aber auf needs-review, hat low confidence und nur 4/12 bzw. 33,3 % Evidence-Abdeckung. Die Aussage 4/4 wäre für die gesamte Auswahl leicht missverständlich.",
+          "references": [
+            "reports/authority-distribution/data-assets/gps-subscriptions.json"
+          ],
+          "observedStatus": "covered"
+        }
+      ],
+      "intentOwner": "/warum-brauchen-gps-tracker-ein-abo/",
+      "status": "partial",
+      "gap": "Das referenzierte Data Finding steht auf needs-review; daraus wird keine Content-Aktion abgeleitet.",
+      "recommendedAction": "Keine Content-Aktion; Data Finding zuerst fachlich validieren.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": true,
+      "matchEvidence": [
+        {
+          "route": "/warum-brauchen-gps-tracker-ein-abo/",
+          "title": "Warum benötigen viele Tracker ein Abo?",
+          "score": 0.343,
+          "signals": {
+            "titleScore": 0.2,
+            "headingScore": 0,
+            "bodyScore": 0.3,
+            "graphScore": 0.2,
+            "clusterMatch": true,
+            "expectedOwner": true,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/produkt/weenect-xs/",
+          "title": "Weenect XS GPS-Tracker",
+          "score": 0.274,
+          "signals": {
+            "titleScore": 0.1,
+            "headingScore": 0.2,
+            "bodyScore": 0.4,
+            "graphScore": 0.2,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/gps-tracker/",
+          "title": "GPS-Tracker für Hunde und Katzen",
+          "score": 0.248,
+          "signals": {
+            "titleScore": 0.2,
+            "headingScore": 0.1,
+            "bodyScore": 0.3,
+            "graphScore": 0.2,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ],
+      "groundTruth": {
+        "beforeStatus": "covered",
+        "afterStatus": "covered",
+        "skipped": true
+      }
+    },
+    {
+      "demandNodeId": "search:gps-tracker:1:tractive-cat-mini",
+      "cluster": "gps-tracker",
+      "userProblem": "tractive cat 6 mini",
+      "demandEvidence": [
+        {
+          "type": "bing",
+          "query": "tractive cat 6 mini",
+          "impressions": 4,
+          "clicks": 0,
+          "position": 6,
+          "range": "28d"
+        },
+        {
+          "type": "bing",
+          "query": "cat 6 mini tractive",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 8,
+          "range": "28d"
+        },
+        {
+          "type": "bing",
+          "query": "tractive cat mini 6",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 4,
+          "range": "28d"
+        }
+      ],
+      "intentOwner": "/produkt/tractive-cat-6-mini/",
+      "status": "covered",
+      "gap": null,
+      "recommendedAction": "Keine Content-Aktion.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/produkt/tractive-cat-6-mini/",
+          "title": "Tractive CAT 6 Mini",
+          "score": 0.46,
+          "signals": {
+            "titleScore": 1,
+            "headingScore": 0,
+            "bodyScore": 1,
+            "graphScore": 0,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/produkt/tractive-dog-6/",
+          "title": "Tractive DOG 6",
+          "score": 0.367,
+          "signals": {
+            "titleScore": 0.3333333333333333,
+            "headingScore": 0.6666666666666666,
+            "bodyScore": 0.6666666666666666,
+            "graphScore": 0,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/hersteller/tractive/",
+          "title": "Tractive",
+          "score": 0.287,
+          "signals": {
+            "titleScore": 0.3333333333333333,
+            "headingScore": 0.3333333333333333,
+            "bodyScore": 1,
+            "graphScore": 0.3333333333333333,
+            "clusterMatch": false,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ]
+    },
+    {
+      "demandNodeId": "search:futterautomaten:2:mehrkatzenhaushalt-futterung",
+      "cluster": "futterautomaten",
+      "userProblem": "mehrkatzenhaushalt fütterung",
+      "demandEvidence": [
+        {
+          "type": "gsc",
+          "query": "mehrkatzenhaushalt fütterung",
+          "impressions": 3,
+          "clicks": 0,
+          "position": 91,
+          "range": "28d"
+        }
+      ],
+      "intentOwner": "/wie-viele-mahlzeiten-katze/",
+      "status": "covered",
+      "gap": null,
+      "recommendedAction": "Keine Content-Aktion.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/wie-viele-mahlzeiten-katze/",
+          "title": "Wie viele Mahlzeiten braucht eine Katze?",
+          "score": 0.41,
+          "signals": {
+            "titleScore": 0.5,
+            "headingScore": 0.5,
+            "bodyScore": 0.5,
+            "graphScore": 0.5,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/trockenfutter-oder-nassfutter-katze/",
+          "title": "Trockenfutter oder Nassfutter für Katzen? Der ehrliche Vergleich",
+          "score": 0.36,
+          "signals": {
+            "titleScore": 0,
+            "headingScore": 1,
+            "bodyScore": 1,
+            "graphScore": 0,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/katze-frisst-nicht/",
+          "title": "Katze frisst nicht: Ursachen, Warnzeichen und richtiges Vorgehen",
+          "score": 0.29,
+          "signals": {
+            "titleScore": 0,
+            "headingScore": 0.5,
+            "bodyScore": 1,
+            "graphScore": 0.5,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ]
+    },
+    {
+      "demandNodeId": "search:trinkbrunnen:3:katzenbrunnen-pumpe-reinigen",
+      "cluster": "trinkbrunnen",
+      "userProblem": "katzenbrunnen pumpe reinigen",
+      "demandEvidence": [
+        {
+          "type": "bing",
+          "query": "katzenbrunnen pumpe reinigen",
+          "impressions": 3,
+          "clicks": 0,
+          "position": 2,
+          "range": "28d"
+        }
+      ],
+      "intentOwner": "/pumpe-katzentrinkbrunnen-reinigen/",
+      "status": "covered",
+      "gap": null,
+      "recommendedAction": "Keine Content-Aktion.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/pumpe-katzentrinkbrunnen-reinigen/",
+          "title": "Pumpe im Katzentrinkbrunnen richtig reinigen",
+          "score": 0.66,
+          "signals": {
+            "titleScore": 1,
+            "headingScore": 0.6666666666666666,
+            "bodyScore": 1,
+            "graphScore": 0.6666666666666666,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/katzentrinkbrunnen-richtig-reinigen/",
+          "title": "Katzentrinkbrunnen reinigen: Pumpe, Tank und Filter",
+          "score": 0.527,
+          "signals": {
+            "titleScore": 0.6666666666666666,
+            "headingScore": 0.6666666666666666,
+            "bodyScore": 1,
+            "graphScore": 0.3333333333333333,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/katzentrinkbrunnen-laut-pumpe/",
+          "title": "Katzenbrunnen laut? Pumpe in 6 Schritten prüfen",
+          "score": 0.453,
+          "signals": {
+            "titleScore": 0.6666666666666666,
+            "headingScore": 0.3333333333333333,
+            "bodyScore": 1,
+            "graphScore": 0.3333333333333333,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ]
+    },
+    {
+      "demandNodeId": "search:futterautomaten:4:futterautomat-fur-katzen",
+      "cluster": "futterautomaten",
+      "userProblem": "futterautomat für 2 katzen",
+      "demandEvidence": [
+        {
+          "type": "gsc",
+          "query": "futterautomat für 2 katzen",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 51.5,
+          "range": "28d"
+        }
+      ],
+      "intentOwner": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "status": "covered",
+      "gap": null,
+      "recommendedAction": "Keine Content-Aktion.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+          "title": "Beste Futterautomaten für zwei Katzen",
+          "score": 0.827,
+          "signals": {
+            "titleScore": 0.6666666666666666,
+            "headingScore": 1,
+            "bodyScore": 1,
+            "graphScore": 0.6666666666666666,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": true
+          }
+        },
+        {
+          "route": "/smarte-futterautomaten/",
+          "title": "Smarte Futterautomaten für Hunde und Katzen",
+          "score": 0.627,
+          "signals": {
+            "titleScore": 0.6666666666666666,
+            "headingScore": 1,
+            "bodyScore": 1,
+            "graphScore": 0.6666666666666666,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "title": "Beste Futterautomaten für Katzen",
+          "score": 0.553,
+          "signals": {
+            "titleScore": 0.6666666666666666,
+            "headingScore": 0.6666666666666666,
+            "bodyScore": 1,
+            "graphScore": 0.6666666666666666,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ]
+    },
+    {
+      "demandNodeId": "search:futterautomaten:5:futterautomat-katze-urlaub",
+      "cluster": "futterautomaten",
+      "userProblem": "futterautomat katze urlaub",
+      "demandEvidence": [
+        {
+          "type": "gsc",
+          "query": "futterautomat katze urlaub",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 45.5,
+          "range": "28d"
+        }
+      ],
+      "intentOwner": "/futterautomat-im-urlaub/",
+      "status": "covered",
+      "gap": null,
+      "recommendedAction": "Keine Content-Aktion.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/futterautomat-im-urlaub/",
+          "title": "Futterautomat im Urlaub: Sicher planen statt allein lassen",
+          "score": 0.753,
+          "signals": {
+            "titleScore": 0.6666666666666666,
+            "headingScore": 0.6666666666666666,
+            "bodyScore": 0.6666666666666666,
+            "graphScore": 1,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": true
+          }
+        },
+        {
+          "route": "/welche-portionsgroesse-ist-richtig/",
+          "title": "Futterautomat richtig einstellen: Portionsgröße messen und berechnen",
+          "score": 0.447,
+          "signals": {
+            "titleScore": 0.3333333333333333,
+            "headingScore": 0.6666666666666666,
+            "bodyScore": 1,
+            "graphScore": 0.6666666666666666,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/welcher-futterautomat-ist-der-richtige/",
+          "title": "Welcher Futterautomat passt zu mir? Auswahlhilfe in 5 Schritten",
+          "score": 0.447,
+          "signals": {
+            "titleScore": 0.3333333333333333,
+            "headingScore": 0.6666666666666666,
+            "bodyScore": 1,
+            "graphScore": 0.6666666666666666,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ]
+    },
+    {
+      "demandNodeId": "search:futterautomaten:6:futterautomat-nassfutter-katze",
+      "cluster": "futterautomaten",
+      "userProblem": "futterautomat nassfutter katze",
+      "demandEvidence": [
+        {
+          "type": "gsc",
+          "query": "futterautomat nassfutter katze",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 55,
+          "range": "28d"
+        },
+        {
+          "type": "gsc",
+          "query": "futterautomat katze nassfutter",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 54,
+          "range": "28d"
+        },
+        {
+          "type": "gsc",
+          "query": "katze futterautomat nassfutter",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 46,
+          "range": "28d"
+        }
+      ],
+      "intentOwner": "/futterautomat-katze/",
+      "status": "fragmented",
+      "gap": "Ähnlich starke Matches auf /katze-frisst-nicht/, /futterautomat-katze/, /futterautomat-und-ernaehrung/.",
+      "recommendedAction": "Intent Ownership und mögliche Konsolidierung manuell prüfen.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/katze-frisst-nicht/",
+          "title": "Katze frisst nicht: Ursachen, Warnzeichen und richtiges Vorgehen",
+          "score": 0.52,
+          "signals": {
+            "titleScore": 0.3333333333333333,
+            "headingScore": 1,
+            "bodyScore": 1,
+            "graphScore": 0.6666666666666666,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/futterautomat-katze/",
+          "title": "Futterautomaten für Katzen",
+          "score": 0.493,
+          "signals": {
+            "titleScore": 0,
+            "headingScore": 0.3333333333333333,
+            "bodyScore": 1,
+            "graphScore": 1,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": true
+          }
+        },
+        {
+          "route": "/futterautomat-und-ernaehrung/",
+          "title": "Futterautomat und Ernährung",
+          "score": 0.48,
+          "signals": {
+            "titleScore": 0.6666666666666666,
+            "headingScore": 0.3333333333333333,
+            "bodyScore": 1,
+            "graphScore": 0.6666666666666666,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ]
+    },
+    {
+      "demandNodeId": "search:futterautomaten:7:nassfutterautomat-fur-katzen",
+      "cluster": "futterautomaten",
+      "userProblem": "nassfutterautomat für katzen",
+      "demandEvidence": [
+        {
+          "type": "gsc",
+          "query": "nassfutterautomat für katzen",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 62,
+          "range": "28d"
+        }
+      ],
+      "intentOwner": "/futterautomat-katze/",
+      "status": "covered",
+      "gap": null,
+      "recommendedAction": "Keine Content-Aktion.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/futterautomat-katze/",
+          "title": "Futterautomaten für Katzen",
+          "score": 0.653,
+          "signals": {
+            "titleScore": 0.6666666666666666,
+            "headingScore": 0.3333333333333333,
+            "bodyScore": 0.6666666666666666,
+            "graphScore": 0.6666666666666666,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": true
+          }
+        },
+        {
+          "route": "/trockenfutter-oder-nassfutter-katze/",
+          "title": "Trockenfutter oder Nassfutter für Katzen? Der ehrliche Vergleich",
+          "score": 0.6,
+          "signals": {
+            "titleScore": 0.6666666666666666,
+            "headingScore": 1,
+            "bodyScore": 1,
+            "graphScore": 0.3333333333333333,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/smarte-futterautomaten/",
+          "title": "Smarte Futterautomaten für Hunde und Katzen",
+          "score": 0.527,
+          "signals": {
+            "titleScore": 0.6666666666666666,
+            "headingScore": 0.6666666666666666,
+            "bodyScore": 1,
+            "graphScore": 0.3333333333333333,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ]
+    },
+    {
+      "demandNodeId": "search:trinkbrunnen:8:you-tube-katzentrinkbrunnen-filter",
+      "cluster": "trinkbrunnen",
+      "userProblem": "you tube katzentrinkbrunnen filter einsetzen",
+      "demandEvidence": [
+        {
+          "type": "bing",
+          "query": "you tube katzentrinkbrunnen filter einsetzen",
+          "impressions": 2,
+          "clicks": 0,
+          "position": 2,
+          "range": "28d"
+        }
+      ],
+      "intentOwner": "/katzentrinkbrunnen-richtig-reinigen/",
+      "status": "partial",
+      "gap": "Der beste Match /katzentrinkbrunnen-richtig-reinigen/ deckt nur einen Teil der Problembegriffe in Überschriften, Inhalt und Graph-Metadaten ab.",
+      "recommendedAction": "Bestehende Intent-Owner-Seite /katzentrinkbrunnen-richtig-reinigen/ auf die konkrete Inhaltslücke prüfen.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/katzentrinkbrunnen-richtig-reinigen/",
+          "title": "Katzentrinkbrunnen reinigen: Pumpe, Tank und Filter",
+          "score": 0.34,
+          "signals": {
+            "titleScore": 0.4,
+            "headingScore": 0.4,
+            "bodyScore": 0.6,
+            "graphScore": 0.2,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/biofilm-im-katzentrinkbrunnen/",
+          "title": "Schleim im Katzentrinkbrunnen: Biofilm entfernen",
+          "score": 0.264,
+          "signals": {
+            "titleScore": 0.4,
+            "headingScore": 0.2,
+            "bodyScore": 0.4,
+            "graphScore": 0,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/katzentrinkbrunnen-ohne-filter/",
+          "title": "Katzentrinkbrunnen ohne Filter: sinnvoll oder unhygienisch?",
+          "score": 0.264,
+          "signals": {
+            "titleScore": 0.4,
+            "headingScore": 0.2,
+            "bodyScore": 0.2,
+            "graphScore": 0.2,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ]
+    },
+    {
+      "demandNodeId": "search:trinkbrunnen:9:pumpe-katzenbrunnens-gereinigt-gibt",
+      "cluster": "trinkbrunnen",
+      "userProblem": "wie wird die pumpe eines katzenbrunnens gereinigt? gibt es eine anleitung wie diese auseinander gebaut werden soll?",
+      "demandEvidence": [
+        {
+          "type": "bing",
+          "query": "wie wird die pumpe eines katzenbrunnens gereinigt? gibt es eine anleitung wie diese auseinander gebaut werden soll?",
+          "impressions": 1,
+          "clicks": 1,
+          "position": 1,
+          "range": "28d"
+        }
+      ],
+      "intentOwner": "/katzentrinkbrunnen-richtig-reinigen/",
+      "status": "uncertain",
+      "gap": "Die vorhandenen Signale ergeben keinen stabilen Match.",
+      "recommendedAction": "Manuell prüfen; Signal reicht für keine Content-Entscheidung.",
+      "confidence": "low",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/katzentrinkbrunnen-richtig-reinigen/",
+          "title": "Katzentrinkbrunnen reinigen: Pumpe, Tank und Filter",
+          "score": 0.206,
+          "signals": {
+            "titleScore": 0.1,
+            "headingScore": 0.3,
+            "bodyScore": 0.6,
+            "graphScore": 0,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/katzentrinkbrunnen-laut-pumpe/",
+          "title": "Katzenbrunnen laut? Pumpe in 6 Schritten prüfen",
+          "score": 0.156,
+          "signals": {
+            "titleScore": 0.2,
+            "headingScore": 0,
+            "bodyScore": 0.3,
+            "graphScore": 0.1,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/pumpe-katzentrinkbrunnen-reinigen/",
+          "title": "Pumpe im Katzentrinkbrunnen richtig reinigen",
+          "score": 0.154,
+          "signals": {
+            "titleScore": 0.1,
+            "headingScore": 0.1,
+            "bodyScore": 0.4,
+            "graphScore": 0.1,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ]
+    },
+    {
+      "demandNodeId": "search:gps-tracker:10:warum-piepsen-gps-tracker",
+      "cluster": "gps-tracker",
+      "userProblem": "warum piepsen gps tracker für haustiere in regelmäßigen abständen",
+      "demandEvidence": [
+        {
+          "type": "bing",
+          "query": "warum piepsen gps tracker für haustiere in regelmäßigen abständen",
+          "impressions": 1,
+          "clicks": 1,
+          "position": 3,
+          "range": "28d"
+        }
+      ],
+      "intentOwner": "/gps-tracker/",
+      "status": "partial",
+      "gap": "Der beste Match /gps-tracker/ deckt nur einen Teil der Problembegriffe in Überschriften, Inhalt und Graph-Metadaten ab.",
+      "recommendedAction": "Bestehende Intent-Owner-Seite /gps-tracker/ auf die konkrete Inhaltslücke prüfen.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/gps-tracker/",
+          "title": "GPS-Tracker für Hunde und Katzen",
+          "score": 0.333,
+          "signals": {
+            "titleScore": 0.375,
+            "headingScore": 0.375,
+            "bodyScore": 0.5,
+            "graphScore": 0.375,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/wie-funktionieren-gps-tracker/",
+          "title": "Wie funktionieren GPS-Tracker?",
+          "score": 0.292,
+          "signals": {
+            "titleScore": 0.25,
+            "headingScore": 0.375,
+            "bodyScore": 0.5,
+            "graphScore": 0.375,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "title": "Beste GPS-Tracker für Katzen",
+          "score": 0.29,
+          "signals": {
+            "titleScore": 0.375,
+            "headingScore": 0.5,
+            "bodyScore": 0.5,
+            "graphScore": 0.25,
+            "clusterMatch": false,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ]
+    },
+    {
+      "demandNodeId": "search:futterautomaten:11:futterautomat-katzen",
+      "cluster": "futterautomaten",
+      "userProblem": "futterautomat 2 katzen",
+      "demandEvidence": [
+        {
+          "type": "gsc",
+          "query": "futterautomat 2 katzen",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 51,
+          "range": "28d"
+        }
+      ],
+      "intentOwner": null,
+      "status": "overcovered",
+      "gap": "Mindestens drei starke Inhaltsmatches ohne eindeutigen Owner: /vergleiche/futterautomat-gegen-schlingen/, /futterautomat-im-urlaub/, /smarte-futterautomaten/, /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/, /vergleiche/beste-futterautomaten-fuer-zwei-katzen/.",
+      "recommendedAction": "Als mögliches Kannibalisierungs-Finding auditieren; nichts automatisch ändern.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/vergleiche/futterautomat-gegen-schlingen/",
+          "title": "Futterautomat gegen Schlingen",
+          "score": 0.65,
+          "signals": {
+            "titleScore": 1,
+            "headingScore": 0.5,
+            "bodyScore": 1,
+            "graphScore": 1,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/futterautomat-im-urlaub/",
+          "title": "Futterautomat im Urlaub: Sicher planen statt allein lassen",
+          "score": 0.6,
+          "signals": {
+            "titleScore": 0.5,
+            "headingScore": 1,
+            "bodyScore": 1,
+            "graphScore": 1,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/smarte-futterautomaten/",
+          "title": "Smarte Futterautomaten für Hunde und Katzen",
+          "score": 0.6,
+          "signals": {
+            "titleScore": 0.5,
+            "headingScore": 1,
+            "bodyScore": 1,
+            "graphScore": 1,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ]
+    },
+    {
+      "demandNodeId": "search:futterautomaten:12:futterautomat-fur-katzen-chip",
+      "cluster": "futterautomaten",
+      "userProblem": "futterautomat für 2 katzen mit chip",
+      "demandEvidence": [
+        {
+          "type": "gsc",
+          "query": "futterautomat für 2 katzen mit chip",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 56,
+          "range": "28d"
+        }
+      ],
+      "intentOwner": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "status": "covered",
+      "gap": null,
+      "recommendedAction": "Keine Content-Aktion.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+          "title": "Beste Futterautomaten für zwei Katzen",
+          "score": 0.685,
+          "signals": {
+            "titleScore": 0.5,
+            "headingScore": 0.75,
+            "bodyScore": 0.75,
+            "graphScore": 0.5,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": true
+          }
+        },
+        {
+          "route": "/smarte-futterautomaten/",
+          "title": "Smarte Futterautomaten für Hunde und Katzen",
+          "score": 0.505,
+          "signals": {
+            "titleScore": 0.5,
+            "headingScore": 0.75,
+            "bodyScore": 1,
+            "graphScore": 0.5,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "title": "Beste Futterautomaten für Katzen",
+          "score": 0.43,
+          "signals": {
+            "titleScore": 0.5,
+            "headingScore": 0.5,
+            "bodyScore": 0.75,
+            "graphScore": 0.5,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -461,6 +461,17 @@ comparisonData:
     sorglos_paket: "Optional 3,99 Euro pro Monat laut Veröffentlichung April 2026; Schutz und Vermisstenhilfe"
     weenect_plus: "Wissensbereich mit Expertenartikeln, Trainingsvideos und Partnerangeboten; aktuelle Tarifzuordnung prüfen"
 
+evidenceSources:
+  - source: "Weenect – GPS-Tracker für Hunde und Abonnements"
+    url: "https://www.weenect.com/de/de/gps-tracker-hund/"
+    accessedAt: "2026-08-25"
+    assertion: "Weenect nennt den Abschluss eines Abonnements wegen der integrierten SIM-Karte ausdrücklich notwendig; die reguläre Mobilfunkortung des Weenect XS setzt daher ein laufendes Abo voraus."
+    fields: ["gps", "gps.subscriptionRequired"]
+  - source: "Weenect Hilfe-Center – Service abonnieren"
+    url: "https://help.weenect.com/hc/de/articles/208540125-Wie-abonniere-ich-einen-Service"
+    accessedAt: "2026-08-25"
+    assertion: "Das offizielle Hilfe-Center erklärt, dass jeder Weenect-Tracker wegen seiner eigenen SIM-Karte ein individuelles Abonnement benötigt und erst nach dessen Auswahl aktiviert wird."
+    fields: ["gps", "gps.subscriptionRequired"]
 metadata:
   version: "4.1.0"
   normalizedAt: "2026-07-26"

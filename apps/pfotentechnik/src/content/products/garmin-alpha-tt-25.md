@@ -272,6 +272,17 @@ comparisonData:
     befestigung: Flexibles Hundehalsband
     material: Genaue Werkstoffe nicht ausgewiesen
     reinigung: Band, Antenne, Akku und Kontaktpunkte nach Garmin-Anleitung kontrollieren.
+evidenceSources:
+  - source: "Garmin Alpha TT 25 Produktseite"
+    url: "https://www.garmin.com/en-US/p/714439/"
+    accessedAt: "2026-08-25"
+    assertion: "Die reguläre Ortung des TT 25 überträgt die Position direkt per VHF an ein separat erhältliches kompatibles Garmin-Handgerät; dafür ist kein laufender Dienst oder Mobilfunktarif erforderlich. Optionale LTE- oder inReach-Dienste anderer Geräte sind nicht Teil dieses Ortungswegs."
+    fields: ["gps", "gps.subscriptionRequired"]
+  - source: "Garmin Alpha TT 25 Benutzerhandbuch – technische Daten"
+    url: "https://www8.garmin.com/manuals/webhelp/GUID-992E9C90-AE40-4ED4-B3C4-9D812BD4DF89/DE-DE/GUID-436F95DA-B7C8-4AAD-AE07-BDC58BB735C2.html"
+    accessedAt: "2026-08-25"
+    assertion: "Das offizielle Handbuch dokumentiert VHF als Übertragungsweg mit bis zu 14,48 km Reichweite; für diese reguläre Direktortung ist kein Abonnementdienst vorgesehen."
+    fields: ["gps", "gps.subscriptionRequired"]
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"

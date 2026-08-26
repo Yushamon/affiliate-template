@@ -1,10 +1,10 @@
 # Product External Evidence Audit
 
-- Produkte: 99
-- Mit externalEvidence: 99
-- Vollständig: 71
+- Produkte: 101
+- Mit externalEvidence: 100
+- Vollständig: 72
 - Teilweise: 28
-- Ohne Evidenz: 0
+- Ohne Evidenz: 1
 
 ## Vollständig
 
@@ -40,6 +40,7 @@
 - petkit-eversweet-solo-se
 - petkit-eversweet-ultra
 - petkit-puramax-2
+- petkit-purobot-crystal-duo
 - petkit-purobot-max-pro-2
 - petkit-yumshare-dual-hopper
 - petkit-yumshare-solo-2
@@ -113,4 +114,4 @@
 
 ## Ohne Evidenz
 
-Keine.
+- furbo-360-katzenkamera

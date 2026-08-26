@@ -444,6 +444,17 @@ comparisonData:
       Schmutz oder starkem Regen reinigen und trocknen. Vor längeren Ausflügen vollständig laden und Mobilfunkabdeckung
       sowie Geozaun testen.
     kapazitat: 27 Monate Tracking enthalten
+evidenceSources:
+  - source: "PAJ GPS – PET Finder 4G Mini"
+    url: "https://www.paj-gps.de/store/pet-finder-4g-mini/"
+    accessedAt: "2026-08-25"
+    assertion: "PAJ nennt drei enthaltene Premium-Monate und verlangt danach einen kostenpflichtigen Tarif für die weitere reguläre Ortung; damit ist ein laufendes Abonnement nach dem Inklusivzeitraum erforderlich."
+    fields: ["gps", "gps.subscriptionRequired"]
+  - source: "PAJ GPS – PET Finder 4G Mini Schnellstart-Anleitung"
+    url: "https://www.paj-gps.de/wp-content/uploads/2026/03/Bedienungsanleitung-PET-Finder-4G-Mini-JAN26-DE.pdf"
+    accessedAt: "2026-08-25"
+    assertion: "Die offizielle Anleitung führt die Aktivierung über das Finder-Portal und die Auswahl von Abo und Laufzeit als Bestandteil der Inbetriebnahme auf."
+    fields: ["gps", "gps.subscriptionRequired"]
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"

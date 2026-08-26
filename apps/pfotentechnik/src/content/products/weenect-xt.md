@@ -495,6 +495,17 @@ comparisonData:
     sorglos_paket: "Optional 3,99 Euro pro Monat laut Veröffentlichung April 2026; Schutz und Vermisstenhilfe"
     weenect_plus: "Wissensbereich mit Expertenartikeln, Trainingsvideos und Partnerangeboten; aktuelle Tarifzuordnung prüfen"
 
+evidenceSources:
+  - source: "Weenect XT Produktseite"
+    url: "https://www.weenect.com/de/de/gps-tracker-hund/weenect-xt/"
+    accessedAt: "2026-08-25"
+    assertion: "Weenect erklärt auf der XT-Produktseite, dass das Abonnement wegen der integrierten SIM-Karte unerlässlich für Echtzeit-Tracking ohne Entfernungsbeschränkung ist."
+    fields: ["gps", "gps.subscriptionRequired"]
+  - source: "Weenect Hilfe-Center – Service abonnieren"
+    url: "https://help.weenect.com/hc/de/articles/208540125-Wie-abonniere-ich-einen-Service"
+    accessedAt: "2026-08-25"
+    assertion: "Das offizielle Hilfe-Center erklärt, dass jeder Weenect-Tracker wegen seiner eigenen SIM-Karte ein individuelles Abonnement benötigt und erst nach dessen Auswahl aktiviert wird."
+    fields: ["gps", "gps.subscriptionRequired"]
 metadata:
   version: "4.1.0"
   normalizedAt: "2026-07-26"
@@ -751,4 +762,3 @@ Für den Ernstfall ergänzt der Service den Ablauf aus [Hund entlaufen: Ist GPS 
 - [Weenect Hilfe-Center: Akkulaufzeit verlängern](https://help.weenect.com/hc/de/articles/21490491097490-Wie-verl%C3%A4ngert-man-die-Akkulaufzeit-Ihres-Weenect-Trackers) – Laufzeitbedingungen und Einfluss des Mobilfunks
 - [Weenect Hilfe-Center: XT befestigen](https://help.weenect.com/hc/de/articles/30635678212242-Wie-befestigen-Sie-den-Weenect-XT-an-Ihrem-Halsband-oder-Geschirr) – Silikon- und Klettbefestigung
 - [Weenect Hilfe-Center: Echtzeitverfolgung](https://help.weenect.com/hc/de/articles/360010649413-Wie-kann-ich-mein-Tier-in-Echtzeit-verfolgen) – Superlive mit Sekundenupdates
-

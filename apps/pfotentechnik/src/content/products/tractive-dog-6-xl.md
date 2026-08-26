@@ -363,6 +363,12 @@ comparisonData:
     reinigung: >-
       Clip, Gehäuse und Ladekontakte regelmäßig auf Schmutz und Schäden prüfen. Vor längeren Touren vollständig laden
       und Ortung sowie Benachrichtigungen im Freien testen.
+evidenceSources:
+  - source: "Tractive Kundenservice – Tracker-Auswahl und Abo"
+    url: "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier"
+    accessedAt: "2026-08-25"
+    assertion: "Tractive führt den DOG 6 XL als aktuelles Modell und erklärt ausdrücklich, dass jeder Tractive-Tracker ein aktives Abo benötigt, um zu funktionieren."
+    fields: ["gps", "gps.subscriptionRequired"]
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"

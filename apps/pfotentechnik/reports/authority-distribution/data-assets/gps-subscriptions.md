@@ -1,26 +1,26 @@
 # GPS-Abo Data Asset
 
-- Snapshot-Version: `5ef20a5f081710e5`
-- Erzeugt: 2026-08-25T12:01:21.452Z
+- Snapshot-Version: `ece46b7476866812`
+- Erzeugt: 2026-08-25T12:51:57.475Z
 - Datenstand: 2026-08-24T00:00:00.000Z
 - Validation Gate: bestanden
 
 ## Kernaussage
 
-4 von 4 auswertbaren GPS-Produkten in der aktuellen PfotenTechnik-Auswahl benötigen ein Abo; 0 kommen ohne Pflichtabo aus und 0 führen ein optionales Abo.
+10 von 12 auswertbaren GPS-Produkten in der aktuellen PfotenTechnik-Auswahl benötigen ein Abo; 2 kommen ohne Pflichtabo aus und 0 führen ein optionales Abo.
 
-Pflichtabo-Anteil: 100 %. Anteil ohne Pflichtabo: 0 %. Nenner sind ausschließlich 4 auswertbare Produkte.
+Pflichtabo-Anteil: 83.3 %. Anteil ohne Pflichtabo: 16.7 %. Nenner sind ausschließlich 12 auswertbare Produkte.
 
 ## Population
 
 - GPS-Produkte gesamt: 12
-- Auswertbar: 4
-- Ausgeschlossen: 8
-- Evidence-Abdeckung: 33.3 %
+- Auswertbar: 12
+- Ausgeschlossen: 0
+- Evidence-Abdeckung: 100 %
 - Status unknown: 0
-- required: 4
+- required: 10
 - optional: 0
-- none: 0
+- none: 2
 
 ## Methodik
 
@@ -31,24 +31,25 @@ Abo-Preise werden nicht aus `specs` oder anderem Freitext geparst. Da kein einhe
 ## Eingeschlossene Produkte
 
 - **Enabot ROLA PetTracker** (`enabot-rola-pettracker`) · required · [Enabot Deutschland](https://de.store.enabot.com/products/rola-pettracker-gps-tracker-for-pets) · geprüft 2026-08-15 · high
+- **Garmin Alpha T 20** (`garmin-alpha-t-20`) · none · [Garmin Alpha T 20 K Produktseite](https://www.garmin.com/de-DE/p/714362) · geprüft 2026-08-25 · high; [Garmin Alpha T 20 Benutzerhandbuch](https://www8.garmin.com/manuals/webhelp/GUID-74035D64-33C8-4CC0-8053-23CB54692716/DE-DE/Alpha_T_20_OM_DE-DE.pdf) · geprüft 2026-08-25 · high
+- **Garmin Alpha TT 25** (`garmin-alpha-tt-25`) · none · [Garmin Alpha TT 25 Produktseite](https://www.garmin.com/en-US/p/714439/) · geprüft 2026-08-25 · high; [Garmin Alpha TT 25 Benutzerhandbuch – technische Daten](https://www8.garmin.com/manuals/webhelp/GUID-992E9C90-AE40-4ED4-B3C4-9D812BD4DF89/DE-DE/GUID-436F95DA-B7C8-4AAD-AE07-BDC58BB735C2.html) · geprüft 2026-08-25 · high
 - **Invoxia Biotracker Edition 2026** (`invoxia-biotracker-2026`) · required · [Invoxia Biotracker Edition 2026](https://www.invoxia.com/en-US/petcare/minitailz-dog-tracker) · geprüft 2026-08-16 · high; [Invoxia Support – subscriptions](https://invoxia-petcare.zendesk.com/hc/en-us/articles/9652849499037--Is-a-subscription-required-to-use-the-Minitailz-Biotracker-GPS) · geprüft 2026-08-16 · high
+- **PAJ PET Finder 4G Mini** (`paj-pet-finder-4g-mini`) · required · [PAJ GPS – PET Finder 4G Mini](https://www.paj-gps.de/store/pet-finder-4g-mini/) · geprüft 2026-08-25 · high; [PAJ GPS – PET Finder 4G Mini Schnellstart-Anleitung](https://www.paj-gps.de/wp-content/uploads/2026/03/Bedienungsanleitung-PET-Finder-4G-Mini-JAN26-DE.pdf) · geprüft 2026-08-25 · high
 - **Pawfit 3** (`pawfit-3`) · required · [Pawfit 3](https://www.pawfit.com/de-us/product/pawfit-3-pet-tracker.html) · geprüft 2026-08-16 · high; [Pawfit Modellvergleich](https://support.pawfit.com/hc/en-gb/articles/360019893919-What-are-the-differences-between-all-of-the-Pawfit-models) · geprüft 2026-08-16 · high
 - **Prothelis area Pets** (`prothelis-area-pets`) · required · [Prothelis Shop – area Pets](https://shop.prothelis.de/area-Pets-GPS-Tracker-fuer-Tiere/09054804-02M) · geprüft 2026-08-16 · high
+- **Tractive CAT 6 Mini** (`tractive-cat-6-mini`) · required · [Tractive Kundenservice – Tracker-Auswahl und Abo](https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier) · geprüft 2026-08-25 · high
+- **Tractive DOG 6** (`tractive-dog-6`) · required · [Tractive Kundenservice – Tracker-Auswahl und Abo](https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier) · geprüft 2026-08-25 · high
+- **Tractive DOG 6 XL** (`tractive-dog-6-xl`) · required · [Tractive Kundenservice – Tracker-Auswahl und Abo](https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier) · geprüft 2026-08-25 · high
+- **Weenect XS GPS-Tracker** (`weenect-xs`) · required · [Weenect – GPS-Tracker für Hunde und Abonnements](https://www.weenect.com/de/de/gps-tracker-hund/) · geprüft 2026-08-25 · high; [Weenect Hilfe-Center – Service abonnieren](https://help.weenect.com/hc/de/articles/208540125-Wie-abonniere-ich-einen-Service) · geprüft 2026-08-25 · high
+- **Weenect XT GPS-Tracker** (`weenect-xt`) · required · [Weenect XT Produktseite](https://www.weenect.com/de/de/gps-tracker-hund/weenect-xt/) · geprüft 2026-08-25 · high; [Weenect Hilfe-Center – Service abonnieren](https://help.weenect.com/hc/de/articles/208540125-Wie-abonniere-ich-einen-Service) · geprüft 2026-08-25 · high
 
 ## Ausgeschlossene Produkte
 
-- **Garmin Alpha T 20** (`garmin-alpha-t-20`) · Status none · Grund: subscription-evidence-missing · Keine ausreichende strukturierte Evidence
-- **Garmin Alpha TT 25** (`garmin-alpha-tt-25`) · Status none · Grund: subscription-evidence-missing · Keine ausreichende strukturierte Evidence
-- **PAJ PET Finder 4G Mini** (`paj-pet-finder-4g-mini`) · Status required · Grund: subscription-evidence-missing · Keine ausreichende strukturierte Evidence
-- **Tractive CAT 6 Mini** (`tractive-cat-6-mini`) · Status required · Grund: subscription-evidence-missing · Keine ausreichende strukturierte Evidence
-- **Tractive DOG 6** (`tractive-dog-6`) · Status required · Grund: subscription-evidence-missing · Keine ausreichende strukturierte Evidence
-- **Tractive DOG 6 XL** (`tractive-dog-6-xl`) · Status required · Grund: subscription-evidence-missing · Keine ausreichende strukturierte Evidence
-- **Weenect XS GPS-Tracker** (`weenect-xs`) · Status required · Grund: subscription-evidence-missing · Keine ausreichende strukturierte Evidence
-- **Weenect XT GPS-Tracker** (`weenect-xt`) · Status required · Grund: subscription-evidence-missing · Keine ausreichende strukturierte Evidence
+Keine.
 
 ## Change Detection
 
-Kein Change Finding: kein vorheriger Snapshot oder keine tatsächliche Datenänderung.
+Änderung erkannt: 16 Change(s) gegenüber Snapshot `5ef20a5f081710e5`.
 
 ## Bekannte Grenzen
 
