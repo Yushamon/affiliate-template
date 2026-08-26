@@ -40,12 +40,21 @@ const optimizedOgImage = await getImage({
   schemaType="website"
   includeBreadcrumbSchema={false}
 >
-  <HomePage model={model} />
-  <div data-advisor-integration="homepage" class="advisor-home-entry">
-    <AdvisorCta />
-  </div>
+  <HomePage model={model}>
+    <div
+      slot="after-comparisons"
+      data-advisor-integration="homepage"
+      class="advisor-home-entry"
+    >
+      <AdvisorCta />
+    </div>
+  </HomePage>
 </ProjectLayout>
 
 <style>
-  .advisor-home-entry { width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
+  .advisor-home-entry { width: 100%; }
+
+  .advisor-home-entry :global(.pt-advisor-cta) {
+    margin: 0;
+  }
 </style>

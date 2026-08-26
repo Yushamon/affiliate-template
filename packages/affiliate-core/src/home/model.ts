@@ -37,13 +37,14 @@ export type HomeProductCard = {
   rating: number;
   image: HomeImage;
   badge?: string;
+  action?: string;
 };
 
 export type HomeUseCase = {
   title: string;
   text: string;
   href: string;
-  icon: "clock" | "cats" | "wet" | "dog" | "cat" | "travel";
+  icon: "bowl" | "drop" | "location" | "door" | "camera" | "litter";
 };
 
 export type HomeFaqItem = {

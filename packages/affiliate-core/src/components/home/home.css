@@ -763,12 +763,15 @@
   font-weight: 900;
 }
 
-.home4-usecases__icon--clock::after { content: "◷"; }
-.home4-usecases__icon--cats::after { content: "● ●"; font-size: .8rem; }
-.home4-usecases__icon--wet::after { content: "◒"; }
-.home4-usecases__icon--dog::after { content: "●"; }
-.home4-usecases__icon--cat::after { content: "◆"; }
-.home4-usecases__icon--travel::after { content: "↗"; }
+.home4-usecases__icon svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 
 .home4-stats {
   display: grid;

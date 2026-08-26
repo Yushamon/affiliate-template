@@ -3,7 +3,6 @@ import type { HomepageModel } from "../../home/model";
 import HomeHero from "./HomeHero.astro";
 import HomeSection from "./HomeSection.astro";
 import HomeNavigation from "./HomeNavigation.astro";
-import HomeBrandStatement from "./HomeBrandStatement.astro";
 import HomeStats from "./HomeStats.astro";
 import HomeUseCases from "./HomeUseCases.astro";
 import HomeFaq from "./HomeFaq.astro";
@@ -19,15 +18,20 @@ const { model } = Astro.props as Props;
 <div class="home3 home5">
   <HomeHero hero={model.hero} />
 
-    <div id="kaufberatung">
-<HomeNavigation
-    mode="comparison-decision"
-    decisionCards={model.decisionComparisons}
-  />
+  <HomeUseCases items={model.useCases} />
+
+  <div id="kaufberatung">
+    <HomeNavigation
+      mode="comparison-decision"
+      decisionCards={model.decisionComparisons}
+    />
   </div>
+
+  <slot name="after-comparisons" />
 
   <HomeSection
     kind="products"
+    id="produktempfehlungen"
     eyebrow="Aktuelle Produktempfehlungen"
     title="Starke Optionen für konkrete Anforderungen"
     text="Keine pauschale Bestenliste. Die Empfehlungen unterscheiden sich nach Futterart, Tierzahl, Bedienung und gewünschter Kontrolle."
@@ -49,12 +53,11 @@ const { model } = Astro.props as Props;
     methodologyAction={model.methodologyAction}
   />
 
-  <HomeUseCases items={model.useCases} />
-
   <HomeStats stats={model.hero.stats} />
 
   <HomeSection
     kind="editorial"
+    id="aktualisiert"
     eyebrow="Aktuell geprüft"
     title="Zuletzt überarbeitete Inhalte"
     text="Diese Seiten wurden zuletzt fachlich, redaktionell oder strukturell aktualisiert."
@@ -68,5 +71,4 @@ const { model } = Astro.props as Props;
     groups={model.topicGroups}
   />
 
-  <HomeBrandStatement />
 </div>

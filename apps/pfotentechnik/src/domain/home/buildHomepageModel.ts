@@ -68,6 +68,43 @@ const sortProducts = (products: ProductEntry[]) =>
       (a.data.score ?? a.data.rating * 20)
   );
 
+const selectDiverseProducts = (
+  products: ProductEntry[],
+  limit: number
+) => {
+  const selected: ProductEntry[] = [];
+  const selectedSlugs = new Set<string>();
+  const selectedCategories = new Set<string>();
+
+  for (const product of products) {
+    const category = product.data.category.key;
+    if (selectedCategories.has(category)) continue;
+
+    selected.push(product);
+    selectedSlugs.add(product.data.slug);
+    selectedCategories.add(category);
+
+    if (selected.length === limit) return selected;
+  }
+
+  for (const product of products) {
+    if (selectedSlugs.has(product.data.slug)) continue;
+    selected.push(product);
+    if (selected.length === limit) break;
+  }
+
+  return selected;
+};
+
+const getProductAction = (product: ProductEntry) => {
+  const isHandsOn =
+    product.data.editorial?.testedHandsOn === true ||
+    product.data.testStatus === "hands-on" ||
+    product.data.testStatus === "long-term-test";
+
+  return isHandsOn ? "Praxistest lesen" : "Produktcheck lesen";
+};
+
 const sortComparisons = (comparisons: ComparisonEntry[]) =>
   [...comparisons].sort((a, b) =>
     Number(b.data.hub?.featured ?? false) -
@@ -169,6 +206,10 @@ export function buildHomepageModel({
   pages
 }: BuildInput): HomepageModel {
   const sortedProducts = sortProducts(products);
+  const featuredProducts = selectDiverseProducts(
+    sortedProducts,
+    3
+  );
   const sortedComparisons = sortComparisons(comparisons);
   const sortedPages = sortPages(pages);
 
@@ -357,7 +398,7 @@ export function buildHomepageModel({
       title:
         "Unabhängige Orientierung für smarte Haustiertechnik",
       text:
-        "Vergleiche, Produkttests und fundierte Ratgeber für Hunde und Katzen.",
+        "Vergleiche, Produktchecks und fundierte Ratgeber für Hunde und Katzen.",
       image: {
         src: petTechHeroImage,
         alt: home.hero.imageAlt
@@ -395,7 +436,7 @@ export function buildHomepageModel({
     categories,
     comparisons: comparisonCards,
     guides: guideCards,
-    products: sortedProducts.slice(0, 3).map(
+    products: featuredProducts.map(
       (product, index) => ({
         href: `/produkt/${product.data.slug}/`,
         title: product.data.title,
@@ -407,6 +448,7 @@ export function buildHomepageModel({
         image:
           product.data.images.thumbnail ??
           product.data.images.hero,
+        action: getProductAction(product),
         badge:
           index === 0
             ? "Redaktionelle Empfehlung"
@@ -445,46 +487,46 @@ export function buildHomepageModel({
     methodologyAction: home.values.methodologyAction,
     useCases: [
       {
-        title: "Für lange Arbeitstage",
+        title: "Fütterung zuverlässig planen",
         text:
-          "Zeitpläne, zuverlässige Ausgabe und gut erreichbare Reinigung stehen im Vordergrund.",
-        href: "/vergleiche/",
-        icon: "clock"
+          "Portionierung, Futterart, Zeitpläne und Ausfallsicherheit passend zum Alltag wählen.",
+        href: "/smarte-futterautomaten/",
+        icon: "bowl"
       },
       {
-        title: "Für mehrere Katzen",
+        title: "Trinken und Filteraufwand einordnen",
         text:
-          "Zugangskontrolle, Futterneid und getrennte Portionen sinnvoll berücksichtigen.",
-        href: "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
-        icon: "cats"
+          "Material, Reinigung, Volumen und laufende Filterkosten realistisch vergleichen.",
+        href: "/trinkbrunnen/",
+        icon: "drop"
       },
       {
-        title: "Für Nassfutter",
+        title: "Freigang besser absichern",
         text:
-          "Kühlung, kurze Standzeiten und hygienische Reinigung sind wichtiger als App-Funktionen.",
-        href: "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
-        icon: "wet"
+          "Ortung, Gewicht, Akkulaufzeit, Netzabdeckung und Abokosten gemeinsam betrachten.",
+        href: "/gps-tracker/",
+        icon: "location"
       },
       {
-        title: "Für Hunde",
+        title: "Zugang gezielt kontrollieren",
         text:
-          "Napfgröße, Standfestigkeit und passende Portionsmengen nach Körpergröße auswählen.",
-        href: "/futterautomat-hund/",
-        icon: "dog"
+          "Mikrochip, Einbau, Richtungssteuerung und App-Abhängigkeit vor der Auswahl klären.",
+        href: "/katzenklappen/",
+        icon: "door"
       },
       {
-        title: "Für Katzen",
+        title: "Tiere zu Hause im Blick behalten",
         text:
-          "Kleine Portionen, ruhige Mechanik und tiergerechte Bauform richtig einordnen.",
-        href: "/futterautomat-katze/",
-        icon: "cat"
+          "Kameraart, Datenschutz, Interaktion und laufende Cloudkosten bewusst abwägen.",
+        href: "/haustierkameras/",
+        icon: "camera"
       },
       {
-        title: "Für Reisen und Betreuung",
+        title: "Katzenklo-Routinen automatisieren",
         text:
-          "Ausfallsicherheit, lokale Zeitpläne und einfache Kontrolle zählen mehr als Zusatzfunktionen.",
-        href: "/vergleiche/",
-        icon: "travel"
+          "Sicherheit, Größe, Streuverbrauch, Reinigung und Folgekosten zusammen prüfen.",
+        href: "/automatische-katzentoiletten/",
+        icon: "litter"
       }
     ],
     faq: [
@@ -516,44 +558,44 @@ export function buildHomepageModel({
     ],
     topicGroups: [
       {
-        title: "Für Katzen",
+        title: "Produktwelten",
         links: [
           {
-            label: "Futterautomaten für Katzen",
-            href: "/futterautomat-katze/"
+            label: "Futterautomaten",
+            href: "/smarte-futterautomaten/"
           },
           {
-            label: "Trinkbrunnen für Katzen",
-            href: "/trinkbrunnen/#katzen"
+            label: "Trinkbrunnen",
+            href: "/trinkbrunnen/"
           },
           {
-            label: "Für mehrere Katzen",
-            href: "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/"
+            label: "GPS-Tracker",
+            href: "/gps-tracker/"
           },
           {
-            label: "Nassfutterautomaten",
-            href: "/vergleiche/beste-futterautomaten-fuer-nassfutter/"
+            label: "Alle Produktwelten",
+            href: "/kaufberatung/"
           }
         ]
       },
       {
-        title: "Für Hunde",
+        title: "Zugang, Kamera & Hygiene",
         links: [
           {
-            label: "Futterautomaten für Hunde",
-            href: "/futterautomat-hund/"
+            label: "Katzenklappen",
+            href: "/katzenklappen/"
           },
           {
-            label: "Trinkbrunnen für Hunde",
-            href: "/trinkbrunnen/#hunde"
+            label: "Haustierkameras",
+            href: "/haustierkameras/"
           },
           {
-            label: "Hund frisst nicht",
-            href: "/hund-frisst-nicht/"
+            label: "Automatische Katzentoiletten",
+            href: "/automatische-katzentoiletten/"
           },
           {
-            label: "Hund trinkt zu wenig",
-            href: "/hund-trinkt-zu-wenig/"
+            label: "Für mehrere Katzen",
+            href: "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/"
           }
         ]
       },
