@@ -17,7 +17,7 @@ category:
   path: "/katzenklappen/"
 productUrl: "/produkt/petsafe-mikrochip-katzenklappe/"
 publishedAt: "2026-08-04"
-updatedAt: "2026-08-04"
+updatedAt: "2026-08-26"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: ["Katzenklappe", "Mikrochip", "PetSafe", "ohne App"]
 seo: { title: "PetSafe Mikrochip Katzenklappe im Datencheck", description: "PetSafe Mikrochip Katzenklappe: Chip-Kompatibilität, Speicher, Einbau, Dichtung und Grenzen.", canonical: "/produkt/petsafe-mikrochip-katzenklappe/", sitemap: true, noindex: false }
@@ -128,10 +128,11 @@ faq:
   - { question: "Ist sie für Metalltüren geeignet?", answer: "Nur nach Funktionsprüfung und mit dem vorgesehenen Installationsadapter, da Metall die RFID-Lesung beeinflussen kann." }
 features: ["Mikrochip-Zugang", "Bis zu 40 Katzen", "Zugluftabdichtung"]
 useCase: "Selektiver Eingang mit großem Speicher"
-comparisonData: { version: 1, custom: { zugang: "15-stelliger FDX-B-Mikrochip oder Schlüssel", richtungsrechte: "Selektiver Eingang; manuelle Gesamtregeln", app: "Nein", strom: "Batterie", einbau: "Holz/PVC; Adapter für Metall, Glas, Ziegel und Wand", durchgang: "Hersteller-Schablone vor Kauf prüfen", produktrolle: "Vollständige Katzenklappe" } }
+comparisonData: { version: 1, custom: { zugang: "15-stelliger FDX-B-Mikrochip oder Schlüssel", richtungsrechte: "Selektiver Eingang; manuelle Gesamtregeln", app: "Nein", strom: "Batterie", einbau: "Holz/PVC; Adapter für Metall, Glas, Ziegel und Wand", durchgang: "Hersteller-Schablone vor Kauf prüfen", produktrolle: "Vollständige Katzenklappe", verriegelungslogik: "Chipprüfung beim Annähern von außen; verstärkte doppelte automatische Verriegelung; exakter Wiederverriegelungszeitpunkt nicht dokumentiert", tailgating_schutz: "Nicht dokumentiert" } }
 decisionJourney: { cluster: "katzenklappen", stage: "decision", intent: "produkt-petsafe-mikrochip", primaryQuestion: "Ist der Chip kompatibel und genügt selektiver Eingang ohne App?", next: ["/vergleiche/beste-mikrochip-katzenklappen/", "/katzenklappe-einbauen/"], fallback: ["/katzenklappen/"] }
 evidenceSources:
   - { source: "PetSafe Deutschland", url: "https://www.petsafe.com/de/p/mikrochip-katzenklappe/PPA19-16145/", accessedAt: "2026-08-04", assertion: "Deutsche Verfügbarkeit, FDX-B-Formate, Speicher, Verriegelung und Einbauhinweise.", fields: ["availability", "specs", "features", "decision"] }
+  - { source: "PetSafe UK – Microchip Cat Flap", url: "https://www.petsafe.com/gb/p/microchip-cat-flaps/PPA19-16145/", accessedAt: "2026-08-26", assertion: "Selektive Chipprüfung bei Annäherung von außen und verstärkte doppelte Auto-Verriegelung. Ein exakter Wiederverriegelungszeitpunkt oder Anti-Tailgating-Schutz wird nicht dokumentiert.", fields: ["specs", "comparisonData"] }
 score: 77
 ---
 

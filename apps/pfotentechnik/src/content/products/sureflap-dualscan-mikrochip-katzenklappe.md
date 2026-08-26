@@ -15,7 +15,7 @@ category:
   path: "/katzenklappen/"
 productUrl: "/produkt/sureflap-dualscan-mikrochip-katzenklappe/"
 publishedAt: "2026-08-04"
-updatedAt: "2026-08-05"
+updatedAt: "2026-08-26"
 testStatus: "manufacturer-data"
 productStatus: "active"
 affiliate:
@@ -165,6 +165,9 @@ decisionFacts:
   - label: "Systemabhängigkeit"
     value: "Vollständig lokal"
     consequence: "Mikrochip-Erkennung und Verriegelung benötigen weder WLAN noch App, Konto oder Hub."
+  - label: "Verriegelung und Tailgating"
+    value: "Chipprüfung auf beiden Seiten; kein Anti-Tailgating-Schutz dokumentiert"
+    consequence: "Die individuellen Richtungsrechte belegen keine mechanische Vereinzelung zweier dicht folgender Tiere."
   - label: "Verfügbarkeit"
     value: "Temporär nicht vorrätig"
     consequence: "Das Modell wird weiterhin geführt, war im deutschen Shop zum Prüfzeitpunkt jedoch nicht auf Lager."
@@ -178,6 +181,8 @@ comparisonData:
     einbau: "Tür, Glas und Wand mit passendem Zubehör"
     durchgang: "142 × 120 mm"
     rolle: "Lokale Mehrkatzenklappe mit Richtungsrechten"
+    verriegelungslogik: "Mikrochipprüfung auf beiden Seiten; unberechtigte Tiere bleiben laut Hersteller ausgesperrt; exakter Wiederverriegelungszeitpunkt nicht dokumentiert"
+    tailgating_schutz: "Nicht dokumentiert"
 alternatives:
   - "sureflap-mikrochip-katzenklappe"
   - "sureflap-mikrochip-katzenklappe-connect"
@@ -215,6 +220,13 @@ evidenceSources:
       - "review"
       - "specs"
       - "faq"
+  - source: "Sure Petcare – DualScan Support und Handbuch"
+    url: "https://www.surepetcare.com/en-gb/support/dualscan-microchip-cat-flap"
+    accessedAt: "2026-08-26"
+    assertion: "DualScan liest für individuelle Richtungsrechte auf beiden Seiten. Ein technischer Anti-Tailgating-Schutz und ein exakter Wiederverriegelungszeitpunkt werden nicht dokumentiert."
+    fields:
+      - "decisionFacts"
+      - "comparisonData"
 score: 84
 ratings:
   zugang_und_sicherheit: 4.3

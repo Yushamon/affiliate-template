@@ -21,7 +21,7 @@ category:
   path: /smarte-futterautomaten/
 productUrl: /produkt/petlibro-polar-wet-food-feeder/
 publishedAt: "2026-07-12"
-updatedAt: "2026-08-06"
+updatedAt: "2026-08-26"
 author:
   name: PfotenTechnik Redaktion
   role: Redaktion
@@ -276,7 +276,7 @@ specs:
   - label: Stromversorgung
     value: Netzteil 12 V/5 A
   - label: Batterie-Backup
-    value: drei AA-Batterien; laut Hersteller bis zu 12 Stunden Schutz des Fütterungsplans
+    value: drei AA-Batterien; laut Hersteller läuft der Fütterungsplan bei Stromausfall bis zu 12 Stunden weiter
   - label: Abmessungen
     value: 361 × 340 × 196 mm
   - label: Gewicht
@@ -299,8 +299,10 @@ faq:
     answer: Drei Fächer mit jeweils bis zu 200 ml.
   - question: Funktioniert der Polar bei Stromausfall?
     answer: >-
-      Drei AA-Batterien sollen laut PETLIBRO den Fütterungsplan bis zu zwölf Stunden weiterführen. Dass die aktive
-      Kühlung dabei weiterläuft, ist nicht belegt.
+      Drei AA-Batterien halten laut PETLIBRO den Fütterungsplan bei Stromausfall bis zu zwölf Stunden aufrecht. Die
+      aktive Kühlung benötigt Netzstrom. Ob Motor und Öffnung unabhängig vom fortgesetzten Plan separat abgesichert
+      sind, dokumentiert PETLIBRO nicht; WLAN, App-Steuerung und laufende Benachrichtigungen werden ebenfalls nicht als
+      Backup-Funktionen zugesagt.
   - question: Kann ich den Polar ohne App öffnen?
     answer: >-
       Eine physische Fütterungstaste besitzt das Gerät nicht. Spontane Öffnungen werden laut PETLIBRO über Feed Now oder
@@ -338,7 +340,7 @@ comparisonData:
     kuehlprinzip: Thermoelektrische Aktivkühlung
     mahlzeiten: 3 Fächer mit je 200 ml
     steuerung: PETLIBRO-App; 2,4-GHz-WLAN
-    stromversorgung: Netzbetrieb; drei AA-Batterien schützen laut Hersteller den Zeitplan bis zu 12 Stunden
+    stromversorgung: Netzbetrieb; drei AA-Batterien halten laut Hersteller den Fütterungsplan bei Stromausfall bis zu 12 Stunden aufrecht
     hygiene: Spülmaschinengeeignete Edelstahl-Futterschale
     tiertrennung: Nein
     geeignetfuer: Katzen und kleine Hunde
@@ -355,7 +357,7 @@ comparisonData:
     kamera: Nein
     napf: spülmaschinengeeignete Edelstahl-Futterschale
     reinigung: Edelstahl-Futterteile spülmaschinengeeignet; Basis von Hand reinigen
-    batterie_backup: drei AA-Batterien; laut Hersteller bis zu 12 Stunden Schutz des Fütterungsplans
+    batterie_backup: drei AA-Batterien; laut Hersteller läuft der Fütterungsplan bei Stromausfall bis zu 12 Stunden weiter; Kühlung, WLAN, App und Benachrichtigungen nicht als Backup-Funktionen dokumentiert
     abmessungen: 361 × 340 × 196 mm
     gewicht: 3,4 kg ohne Netzteil
     geeignet_fur: Katzen und kleine Hunde
@@ -404,7 +406,7 @@ Die Kühlung wird vor einer geplanten Ausgabe zeitweise pausiert, damit die Mahl
 
 ## Stromausfall: Zeitplan ja, Kühlung nicht belegt
 
-Drei AA-Batterien sollen den gespeicherten Fütterungsplan bis zu zwölf Stunden weiterführen. Die aktuelle Herstellerdarstellung belegt jedoch nicht, dass auch die aktive Kühlung im Batteriebetrieb erhalten bleibt.
+Drei AA-Batterien halten laut aktueller PETLIBRO-Produktseite den gespeicherten Fütterungsplan bei Stromausfall bis zu zwölf Stunden aufrecht. Die aktive Kühlung benötigt Netzstrom. Die Formulierung zum Plan belegt nicht separat, welche Motor- oder Öffnungsschritte im Fehlerfall ausgeführt werden; auch WLAN, App-Steuerung und laufende Benachrichtigungsübertragung werden nicht als Batteriefunktionen dokumentiert. PETLIBRO beschreibt allerdings eine Offline-Meldung nach dem Trennen vom Strom, damit der Ausfall geprüft werden kann.
 
 Der Ausfallschutz ist deshalb kein Ersatz für:
 
@@ -457,6 +459,7 @@ Die Einordnung basiert auf aktuellen PETLIBRO-Unterlagen; ein eigener Langzeit- 
 - [PETLIBRO Deutschland: Polar Nassfutterautomat](https://de.petlibro.com/products/polar-wet-food-pet-feeder)
 - [PETLIBRO: Polar Wet Food Feeder PLAF109](https://petlibro.com/products/polar-smart-wet-food-feeder-for-pets)
 - [PETLIBRO Hilfebereich: Polar Smart Wet Food Feeder](https://petlibro.com/pages/faq-product/polar-smart-wet-food-feeder)
+- [PETLIBRO Support: Offline-Meldung nach Trennen vom Strom](https://petlibro.com/pages/what-should-i-do-if-i-dont-want-to-receive-any-offline-notifications-after-i-unplug-the-polar-wet-food-feeder)
 - [PETLIBRO: Manuelle Öffnung des Polar](https://petlibro.com/pages/how-could-i-manually-feed-my-pet-is-there-any-feeding-button-on-the-polar-wet-food-feeder)
 
 ## Fazit

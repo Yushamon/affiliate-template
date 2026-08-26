@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-26",
+  "project": "apps/pfotentechnik",
+  "mode": "read-only-repository-coverage-audit",
+  "source": {
+    "type": "externally-validated-demand-findings",
+    "findingCount": 5,
+    "searchVolumeUsed": false
+  },
+  "statusVocabulary": [
+    "covered",
+    "partial",
+    "fragmented",
+    "missing",
+    "overcovered",
+    "uncertain"
+  ],
+  "summary": {
+    "covered": 2,
+    "partial": 3,
+    "fragmented": 0,
+    "missing": 0,
+    "overcovered": 0,
+    "uncertain": 0,
+    "manualReviewRequired": 3,
+    "newPageRequired": 0
+  },
+  "findings": [
+    {
+      "id": "automatic-litter-box-litter-and-consumables",
+      "cluster": "automatische-katzentoiletten",
+      "userProblem": "Welche Streu ist je Modell kompatibel und welche laufenden Verbrauchsmaterialien beziehungsweise Kosten entstehen?",
+      "intentOwner": "/vergleiche/beste-automatische-katzentoiletten/",
+      "status": "partial",
+      "confidence": "high",
+      "newPageRequired": false,
+      "coverage": {
+        "litterTypes": "covered",
+        "explicitExclusions": "covered-for-documented-models",
+        "grainSize": "partial",
+        "proprietaryConsumables": "covered",
+        "ordinaryBags": "covered-where-documented",
+        "filtersAndDeodorizers": "covered",
+        "replacementIntervals": "partial",
+        "recurringPrices": "not-reliably-covered"
+      },
+      "evidence": [
+        {
+          "file": "src/content/comparisons/beste-automatische-katzentoiletten.md",
+          "detail": "Modellmatrix mit Streu, Wartung, Verbrauchssystem und Folgekosten; Kriterien unterscheiden kompatible/ausgeschlossene Streu, proprietäre Systeme und dynamische Preise."
+        },
+        {
+          "file": "src/content/pages/automatische-katzentoiletten.md",
+          "detail": "Kaufhub nennt Bentonit, Tofu, Mischstreu, Pellets, Kristallstreu, Körnung sowie Beutel, Filter, Deodorizer und eine Gesamtkostenformel."
+        },
+        {
+          "file": "src/content/products/petlibro-luma-smart-litter-box.md",
+          "detail": "Konkrete Freigaben und Ausschlüsse sowie Aktivkohlefilter-Intervall von ungefähr drei Monaten."
+        },
+        {
+          "file": "src/content/products/neakasa-m1-plus.md",
+          "detail": "Klumpende/siebfähige Streu, Ausschluss von Holzpellets und gewöhnliche passende Müllbeutel."
+        },
+        {
+          "file": "src/content/products/petkit-purobot-crystal-duo.md",
+          "detail": "Proprietäre Kristallstreu und Einwegschalen werden als Systembindung ausgewiesen."
+        }
+      ],
+      "gap": "Die Matrix nennt Kostenarten, aber keine belastbare modellbezogene Kostenrechnung. Körnungsgrenzen und Wechselintervalle sind nur für einen Teil der Modelle dokumentiert; fehlende Werte werden nicht als einheitliches Unknown-Feld sichtbar.",
+      "recommendedAction": "Bestehenden Vergleich nach redaktioneller Quellenprüfung um explizite Felder für Körnungsgrenze, Beuteltyp, Filter/Deodorizer, dokumentiertes Wechselintervall und Kostenstatus (known/unknown/not-applicable) ergänzen. Preise nur mit Datum und Quelle; keine Schätzung.",
+      "manualReview": true
+    },
+    {
+      "id": "gps-fix-without-cellular",
+      "cluster": "gps-tracker",
+      "userProblem": "Was passiert, wenn der Tracker einen Satelliten-Fix hat, aber keine Mobilfunkverbindung?",
+      "intentOwner": "/reichweite-von-gps-trackern/",
+      "status": "covered",
+      "confidence": "high",
+      "newPageRequired": false,
+      "coverage": {
+        "satelliteFix": "covered",
+        "cellularTransfer": "covered",
+        "cloudAndApp": "covered",
+        "lastTransmittedPosition": "covered",
+        "storedPositions": "covered-with-device-caveat",
+        "laterUpload": "covered-with-device-caveat",
+        "bluetoothNearby": "covered",
+        "airTagSeparation": "covered"
+      },
+      "evidence": [
+        {
+          "file": "src/content/pages/reichweite-von-gps-trackern.md",
+          "detail": "Trennt Satellit zum Tracker, Tracker zum Netz/Empfänger und Anzeige zum Halter; erklärt letzten übertragenen Punkt, Zeitstempel und möglichen späteren Verlaufstransfer."
+        },
+        {
+          "file": "src/content/pages/wie-funktionieren-gps-tracker.md",
+          "detail": "FAQ beantwortet den Fall ohne Mobilfunk direkt: Position kann weiter bestimmt, aber nicht sofort übertragen werden; lokales Speichern ist geräteabhängig."
+        },
+        {
+          "file": "src/content/pages/gps-oder-bluetooth.md",
+          "detail": "Trennt Mobilfunk-GPS und Bluetooth-Netzwerk-Tags, ohne AirTag als gleichwertige GPS-Lösung darzustellen."
+        },
+        {
+          "file": "src/content/products/paj-pet-finder-4g-mini.md",
+          "detail": "Trennt GPS, 4G, Bluetooth-Näherkennung und WLAN-Energiesparzone; Bluetooth ersetzt 4G nicht."
+        },
+        {
+          "file": "src/content/products/tractive-dog-6-xl.md",
+          "detail": "Beschreibt Bluetooth-Radar als Nahbereichsfunktion und die Grenzen normaler Fern-Live-Ortung."
+        }
+      ],
+      "gap": null,
+      "recommendedAction": "Keine Content-Aktion. Bei künftigen Produktupdates nur gerätespezifische Speicherung und Nachsynchronisierung als belegt übernehmen, wenn eine Primärquelle dies ausdrücklich dokumentiert.",
+      "manualReview": false
+    },
+    {
+      "id": "refrigerated-wet-feeder-power-outage",
+      "cluster": "futterautomaten",
+      "userProblem": "Welche Funktionen aktiv gekühlter Nassfutterautomaten bleiben bei Strom-, Netz- oder Dienstausfall erhalten?",
+      "intentOwner": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "status": "partial",
+      "confidence": "high",
+      "newPageRequired": false,
+      "coverage": {
+        "savedSchedule": "covered-but-inconsistent-for-polar",
+        "clockAndTimer": "covered-generally",
+        "motorAndOpening": "covered-generally",
+        "activeCooling": "covered",
+        "app": "covered",
+        "notifications": "partial",
+        "wifiCloud": "covered-generally",
+        "batteryBackup": "covered-but-inconsistent-for-polar"
+      },
+      "evidence": [
+        {
+          "file": "src/content/pages/futterautomat-bei-stromausfall.md",
+          "detail": "Dedizierter Owner trennt Steckdose, Router, Internet, Cloud, lokale Zeitpläne, Mechanik und Backup-Arten."
+        },
+        {
+          "file": "src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md",
+          "detail": "Trennt Öffnen und Kühlen bei Stromausfall, stellt jedoch widersprüchlich dar, PETLIBRO Polar habe kein dokumentiertes Batterie-Backup."
+        },
+        {
+          "file": "src/content/products/petlibro-polar-wet-food-feeder.md",
+          "detail": "Dokumentiert drei AA-Batterien als Schutz des gespeicherten Plans bis zu zwölf Stunden; fortgesetzte aktive Kühlung ist ausdrücklich nicht belegt."
+        },
+        {
+          "file": "src/content/products/petsafe-freshfeed-refrigerated-feeder.md",
+          "detail": "Aktive Kühlung ist netzabhängig; eine Notstromlösung und das genaue Öffnungsverhalten bei Ausfall sind nicht dokumentiert."
+        }
+      ],
+      "gap": "Der zentrale Nassfuttervergleich widerspricht der detaillierteren Polar-Produktseite. Zudem sind Benachrichtigungen und Restfunktionen nicht für jedes aktiv gekühlte Modell in einer einheitlichen Matrix sichtbar.",
+      "recommendedAction": "Zuerst die Polar-Widerspruchsstelle fachlich gegen die aktuelle Herstellerquelle prüfen und im bestehenden Vergleich korrigieren. Danach die vorhandene Matrix um getrennte Felder für Plan/Uhr, Öffnung/Motor, Kühlung, App/Cloud, Benachrichtigung und Backup erweitern; Unknown beibehalten.",
+      "manualReview": true
+    },
+    {
+      "id": "pet-camera-no-subscription-and-storage",
+      "cluster": "haustierkameras",
+      "userProblem": "Welche Kamerafunktionen funktionieren ohne Abo und wo werden Aufnahmen gespeichert?",
+      "intentOwner": "/vergleiche/beste-haustierkameras/",
+      "status": "covered",
+      "confidence": "high",
+      "newPageRequired": false,
+      "coverage": {
+        "liveView": "covered",
+        "audio": "covered",
+        "detectionAndPetAI": "covered-or-explicitly-unknown",
+        "barkMeowAndSpecialAI": "covered-for-relevant-models",
+        "clipsHistory": "covered-or-explicitly-unknown",
+        "cloud": "covered",
+        "microSD": "covered",
+        "nvrHomeHubOtherLocal": "covered-for-reolink",
+        "localAI": "covered-for-reolink",
+        "accountAndManufacturerService": "covered",
+        "subscription": "covered-without-invented-prices"
+      },
+      "evidence": [
+        {
+          "file": "src/content/comparisons/beste-haustierkameras.md",
+          "detail": "Sechs Modelle/Klassen mit Feldern für Speicher, Abo, lokale Speicherung, Cloud-Pflicht/-Option, Pflichtabo, Bezahl- und Grundfunktionen, microSD, Tracking, Audio und Tiererkennung. Nicht belegte Angaben bleiben ausdrücklich unbekannt."
+        },
+        {
+          "file": "src/content/pages/haustierkameras.md",
+          "detail": "Hub erklärt lokale versus Cloud-Speicherung, Konto, Tarif, Offline-Abhängigkeit und dass 'ohne Abo' nicht 'ohne Cloud' bedeutet."
+        },
+        {
+          "file": "src/content/products/furbo-360-katzenkamera.md",
+          "detail": "Trennt kostenlose Live-/Audio-/Interaktionsfunktionen von Nanny-Verlauf, Diary und Zusatzalerts; keine lokale Speicherung belegt."
+        },
+        {
+          "file": "src/content/products/reolink-e1-zoom.md",
+          "detail": "Dokumentiert microSD, NVR, Home Hub, FTP/NAS, optionale Cloud und lokale Tiererkennung ohne Pflichtabo."
+        },
+        {
+          "file": "src/content/products/pettec-cam-360.md",
+          "detail": "Dokumentiert lokale microSD-Aufzeichnung, optionale Cloud und Basisfunktionen ohne Pflichtabo."
+        }
+      ],
+      "gap": null,
+      "recommendedAction": "Keine neue Seite. Beim regelmäßigen Produkt-Review unbekannte Tarif- und Speicherfelder verifizieren; keine Tarifpreise ohne datierte Quelle ergänzen.",
+      "manualReview": false
+    },
+    {
+      "id": "cat-flap-direction-rights-and-tailgating",
+      "cluster": "katzenklappen",
+      "userProblem": "Welche Klappen erlauben individuelle Ausgangsrechte, und schützt Mikrochip-Zugang vor Tailgating?",
+      "intentOwner": "/katzenklappen/",
+      "status": "partial",
+      "confidence": "high",
+      "newPageRequired": false,
+      "coverage": {
+        "selectiveEntry": "covered",
+        "individualExitRights": "covered",
+        "globalLockAndCurfew": "covered",
+        "appAndHub": "covered",
+        "tailgatingPrinciple": "covered",
+        "mechanismByModel": "partial",
+        "directionAndClosingSpeed": "not-systematically-documented",
+        "twoAnimalsInOpening": "covered-as-system-limit",
+        "antiTailgatingClaims": "safely-constrained"
+      },
+      "evidence": [
+        {
+          "file": "src/content/pages/katzenklappen.md",
+          "detail": "Trennt selektiven Eintritt, individuelle Ausgangsrechte, gemeinsame Sperren und App/Hub. Der Tailgating-Abschnitt erklärt ausdrücklich, dass Chipfreigabe keine Luftschleuse ist."
+        },
+        {
+          "file": "src/content/comparisons/beste-mikrochip-katzenklappen.md",
+          "detail": "Acht Systeme mit Zugangslogik, Richtungsrechten, App-Abhängigkeit und Produktrolle; Standard, DualScan, Connect, gemeinsame Timer und OnlyCat werden getrennt."
+        },
+        {
+          "file": "src/content/products/sureflap-dualscan-mikrochip-katzenklappe.md",
+          "detail": "Belegt individuelle Ausgangsrechte je Tier, beidseitigen Scan und lokalen Betrieb ohne App/Hub."
+        },
+        {
+          "file": "src/content/products/sureflap-mikrochip-katzenklappe-connect.md",
+          "detail": "Belegt individuelle Ein-/Ausgangsrechte und trennt lokale Klappenfunktion von Hub-/App-Fernfunktionen."
+        },
+        {
+          "file": "src/content/products/onlycat-mikrochip-katzenklappe.md",
+          "detail": "Belegt beidseitigen Mikrochip-Scan und individuelle zeitbasierte Richtungsregeln; Beuteerkennung wird nicht als Anti-Tailgating-Nachweis verwendet."
+        }
+      ],
+      "gap": "Die allgemeine Systemgrenze ist korrekt, aber Schließmechanismus, Erkennungsrichtung, Schließzeit und Verhalten bei zwei dicht folgenden Tieren sind nicht modellbezogen für die Vergleichsauswahl dokumentiert. Daher lässt sich kein Modell belastbar als Anti-Tailgating-Lösung empfehlen.",
+      "recommendedAction": "Keine neue Seite. Im bestehenden Mikrochip-Vergleich ein quellengebundenes Feld 'Tailgating/Schließmechanik' ergänzen, standardmäßig unknown. Nur ausdrücklich dokumentierte Hersteller- oder belastbare Testevidenz übernehmen; Mikrochip, DualScan und Beuteerkennung nie als Anti-Tailgating-Garantie ableiten.",
+      "manualReview": true
+    }
+  ],
+  "infrastructureReviewed": [
+    "src/content/pages",
+    "src/content/products",
+    "src/content/comparisons",
+    "src/content/manufacturers",
+    "src/content/schema",
+    "src/domain/contentPlatform",
+    "src/domain/comparison",
+    "src/domain/content/internalLinks.ts",
+    "src/pages/produkt/[product].astro",
+    "src/pages/vergleiche/[comparison].astro"
+  ],
+  "guardrails": {
+    "contentChanged": false,
+    "newUrlsCreated": false,
+    "metadataChanged": false,
+    "affiliateChanged": false,
+    "unknownCoercedToFalse": false,
+    "unsupportedClaimsAdded": false
+  }
+}

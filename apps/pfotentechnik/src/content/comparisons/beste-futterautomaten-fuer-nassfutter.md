@@ -8,7 +8,7 @@ description: >-
   Nassfutterautomaten nach Kühlprinzip, Mahlzeitenzahl, Hygiene, Stromausfallsicherheit, App und Zugangskontrolle
   vergleichen.
 publishedAt: "2026-07-10"
-updatedAt: "2026-07-30"
+updatedAt: "2026-08-26"
 author:
   name: PfotenTechnik Redaktion
   role: Redaktion
@@ -51,7 +51,7 @@ items:
       kuehlprinzip: Thermoelektrische Aktivkühlung
       mahlzeiten: 3 Fächer mit je 200 ml
       steuerung: PETLIBRO-App; 2,4-GHz-WLAN
-      stromversorgung: Netzteil 12 V/5 A
+      stromversorgung: Netzteil 12 V/5 A; 3 AA-Batterien halten laut PETLIBRO den Fütterungsplan bei Stromausfall bis zu 12 Stunden aufrecht
       hygiene: Spülmaschinengeeignete Edelstahl-Futterschale
       tiertrennung: Nein
       geeignetfuer: Katzen und kleine Hunde
@@ -214,7 +214,9 @@ faq:
   - question: Welches Modell funktioniert bei einem Stromausfall weiter?
     answer: >-
       Cat Mate C500 und SureFeed arbeiten vollständig mit Batterien. Der Catit PIXI kann mit eingesetzten C-Batterien
-      weiterlaufen. Aktiv gekühlte Modelle verlieren ohne Netzstrom ihre Kühlfunktion.
+      weiterlaufen. Beim PETLIBRO Polar halten drei AA-Batterien laut Hersteller den Fütterungsplan bis zu zwölf
+      Stunden aufrecht; die aktive Kühlung benötigt weiterhin Netzstrom. Für PetSafe FreshFeed ist keine
+      Notstromlösung dokumentiert.
   - question: Sind sechs Fächer gleichbedeutend mit sechs späteren Mahlzeiten?
     answer: >-
       Nicht immer. Bei Drehteller-Automaten ist das erste Fach häufig sofort zugänglich. Entscheidend ist deshalb die
@@ -331,7 +333,7 @@ Deshalb gibt es keinen pauschalen Testsieger für jeden Haushalt. Die erste Ents
 
 Der PETLIBRO Polar arbeitet mit thermoelektrischer Kühlung statt mit vorgefrorenen Akkus. Drei Edelstahl-Fächer mit jeweils 200 ml lassen sich über die App zeitlich planen.
 
-Das Konzept ist für Katzen und kleine Hunde schlüssig, wenn drei vorbereitete Mahlzeiten reichen. Die größte Schwäche ist zugleich eindeutig: Ohne Netzstrom gibt es weder aktive Kühlung noch ein dokumentiertes Batterie-Backup.
+Das Konzept ist für Katzen und kleine Hunde schlüssig, wenn drei vorbereitete Mahlzeiten reichen. Ohne Netzstrom fällt die aktive Kühlung aus. Drei AA-Batterien halten laut PETLIBRO den Fütterungsplan bis zu zwölf Stunden aufrecht; ob Motor und Öffnung darüber hinaus separat abgesichert sind, dokumentiert die Herstellerseite nicht. WLAN, App-Steuerung und laufende Benachrichtigungsübertragung werden ebenfalls nicht als Backup-Funktionen zugesagt.
 
 ### Meiste aktiv gekühlte Mahlzeiten: PetSafe FreshFeed
 
@@ -364,7 +366,7 @@ Er ist jedoch kein automatischer Portionierer: Der Napf wird manuell befüllt un
 | Nassfutter über viele Stunden möglichst konstant kühlen | Aktiv gekühlter Fachautomat | PETLIBRO Polar, PetSafe FreshFeed |
 | Mehrere kleine Mahlzeiten an einem Tag bereitstellen | Drehteller mit Kühlakkus | Catit PIXI, Cat Mate C500 |
 | Ohne WLAN und Steckdose arbeiten | Batteriebetriebener Fachautomat | Cat Mate C500 |
-| Bei Stromausfall weiter öffnen | Modell mit Batterie-Backup | Catit PIXI oder Cat Mate C500 |
+| Bei Stromausfall weiter öffnen | Modell mit dokumentiertem Batteriebetrieb | Catit PIXI oder Cat Mate C500; beim Polar ist nur die Fortsetzung des Plans bis 12 Stunden zugesagt |
 | Futter vor einer anderen Katze schützen | Mikrochip-Napf | SureFeed |
 | Sechs vorbereitete Portionen nutzen | Sechs-Fächer-System | PetSafe FreshFeed oder Catit PIXI |
 
@@ -401,7 +403,7 @@ Bei einem Stromausfall stellen sich zwei verschiedene Fragen:
 
 Ein Batterie-Backup kann Motor, Uhr und gespeicherten Plan weiterbetreiben. Es ersetzt aber bei aktiv gekühlten Geräten nicht automatisch die Netzleistung der Kühlung.
 
-Cat Mate und SureFeed arbeiten vollständig mit Batterien. Der Catit PIXI kann mit eingesetzten Backup-Batterien weiterlaufen. PETLIBRO Polar und PetSafe FreshFeed sind für ihre aktive Kühlung auf Netzstrom angewiesen.
+Cat Mate und SureFeed arbeiten vollständig mit Batterien. Der Catit PIXI kann mit eingesetzten Backup-Batterien weiterlaufen. PETLIBRO Polar und PetSafe FreshFeed sind für ihre aktive Kühlung auf Netzstrom angewiesen. Beim Polar halten drei AA-Batterien laut PETLIBRO den gespeicherten Fütterungsplan bis zu zwölf Stunden aufrecht. Daraus wird keine Zusage für aktive Kühlung, WLAN, App-Steuerung, Benachrichtigungen oder jede einzelne mechanische Funktion abgeleitet.
 
 ## Hygiene ist kein Nebenkriterium
 

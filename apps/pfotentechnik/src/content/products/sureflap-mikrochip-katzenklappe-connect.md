@@ -15,7 +15,7 @@ category:
   path: "/katzenklappen/"
 productUrl: "/produkt/sureflap-mikrochip-katzenklappe-connect/"
 publishedAt: "2026-08-04"
-updatedAt: "2026-08-15"
+updatedAt: "2026-08-26"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
@@ -238,6 +238,8 @@ comparisonData:
     rolle: "Vernetzte Mikrochip-Katzenklappe"
     hub_erforderlich: "Ja, für die Verbindung mit der Sure Petcare App"
     security_support: "Hub: zwei Jahre ab Kaufdatum des Hubs dokumentiert"
+    verriegelungslogik: "Im Standardbetrieb beidseitig verriegelt; entriegelt nach autorisiertem Chipfund auf der jeweiligen Seite und verriegelt wieder, sobald die Katze vollständig passiert hat"
+    tailgating_schutz: "Nicht dokumentiert; vollständiges Passieren einer autorisierten Katze ist keine mechanische Vereinzelung"
 faq:
   - question: "Funktioniert die Mikrochip-Erkennung ohne Internet?"
     answer: "Die grundlegende Mikrochip-Erkennung arbeitet lokal an der Klappe. Vernetzte Funktionen benötigen Hub und Internet."
@@ -276,6 +278,14 @@ evidenceSources:
       - "decision"
       - "weaknesses"
       - "specs"
+      - "decisionFacts"
+      - "comparisonData"
+      - "faq"
+  - source: "Sure Petcare – Microchip Cat Flap Connect Handbuch"
+    url: "https://media.surepetcare.com/website/support/manuals/112/multi-lang/manual.pdf"
+    accessedAt: "2026-08-26"
+    assertion: "Standardbetrieb, beidseitige Chipprüfung, Entriegelung und Wiederverriegelung nach vollständigem Passieren. Das Handbuch dokumentiert keine Anti-Tailgating-Garantie."
+    fields:
       - "decisionFacts"
       - "comparisonData"
       - "faq"

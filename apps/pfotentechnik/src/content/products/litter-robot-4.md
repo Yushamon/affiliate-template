@@ -14,7 +14,7 @@ manufacturer:
 category: { key: "automatische-katzentoiletten", label: "Automatische Katzentoiletten", path: "/automatische-katzentoiletten/" }
 productUrl: "/produkt/litter-robot-4/"
 publishedAt: "2026-08-16"
-updatedAt: "2026-08-16"
+updatedAt: "2026-08-26"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 seo: { title: "Litter-Robot 4: Größe, Gewicht und App im Check", description: "Litter-Robot 4 mit 40-cm-Eingang, 1,36-kg-Mindestgewicht, Whisker-App, Streu- und Abfallstand sowie Folgekosten einordnen.", canonical: "/produkt/litter-robot-4/", sitemap: true, priority: 0.8 }
 hub: { sections: ["produkte", "automatische-katzentoiletten"] }
@@ -134,7 +134,9 @@ specs:
   - { label: "Katzengewicht", value: "Automatik ab 1,36 kg; EU-Seite nennt bis 11,33 kg als geeigneten Bereich" }
   - { label: "Mehrkatzenbetrieb", value: "Bis zu vier Katzen laut Hersteller" }
   - { label: "Sicherheit", value: "Laser- und Gewichtssensoren mit Zyklusverzögerung; Herstellerangabe, kein eigener Sicherheitstest" }
-  - { label: "Streu", value: "Klumpende, siebfähige Streu; aktuelle Kompatibilitätsliste prüfen" }
+  - { label: "Streu", value: "Standardgewichtige klumpende Tonstreu empfohlen; einzelne siebgängige Silikakristalle möglich; nichtklumpende, lose klumpende, papierbasierte, Holzpellet- und viele pflanzliche Streus ungeeignet" }
+  - { label: "Beutel", value: "Whisker-Einlagen optional; transparente oder weiße 30-49-l-Müllbeutel funktionieren laut Hersteller, dunkle Beutel können die Füllstandsmessung beeinträchtigen" }
+  - { label: "Aktivkohlefilter", value: "Optional für den Betrieb; Wechsel unter normalen Bedingungen ungefähr monatlich beziehungsweise nach Bedarf" }
   - { label: "Stromversorgung", value: "15 V Gleichstrom" }
   - { label: "App", value: "Whisker-App für Nutzung, Gewicht, Streu- und Abfallfüllstand" }
   - { label: "Kamera", value: "Keine integrierte Dualkamera wie beim Litter-Robot 5 Pro" }
@@ -149,11 +151,11 @@ comparisonData:
     katzenprofil: "1,36-11,33 kg; bis zu 4 Katzen laut Hersteller"
     sicherheit: "Laser- und Gewichtssensoren; Zyklusverzögerung"
     mehrkatzen: "Bis zu 4 Katzen; Gewicht und Nutzung in der App"
-    streu: "Klumpend und siebfähig"
-    wartung: "Versiegelte Abfallschublade; Beutel und Filter"
+    streu: "Standardgewichtige klumpende Tonstreu empfohlen; Ausschlüsse dokumentiert; keine feste Körnungsgrenze genannt"
+    wartung: "Versiegelte Abfallschublade; Whisker-Einlagen oder helle/transparente 30-49-l-Müllbeutel; optionaler Aktivkohlefilter etwa monatlich/nach Bedarf"
     geruch: "Geschlossene Schublade; optional OdorTrap"
     appdaten: "Nutzung, Gewicht, Streu- und Abfallfüllstand"
-    folgekosten: "Beutel, Streu, Filter und optionales Zubehör"
+    folgekosten: "Streu; normale passende Müllbeutel möglich; optionaler Aktivkohlefilter/OdorTrap; laufende Kosten mangels belastbarer EUR-Preisgrundlage unknown"
     platz: "75 × 56 × 68,6 cm; 10,9 kg"
     kaufrolle: "Whisker-Referenzplattform ohne Kamera"
     bauform_einstieg: "Geschlossen; 30,5 cm zum Eingang"
@@ -173,6 +175,8 @@ editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentati
 evidenceSources:
   - { source: "Whisker EU – Litter-Robot 4", url: "https://www.litter-robot.com/eu/de/litter-robot-4.html", accessedAt: "2026-08-16", assertion: "Eingang, Gewicht, Katzenprofil, Mehrkatzenangabe, App und Strom sind Herstellerangaben.", fields: ["specs", "decision", "comparisonData"] }
   - { source: "Litter-Robot 4 Bedienungsanleitung", url: "https://www.litter-robot.com/manual_pdf/Litter-Robot-4-Manual-EN-DE-FR-IT_LR4-8018-0B.pdf", accessedAt: "2026-08-16", assertion: "Außenmaße, Einstiegshöhe, Innenraum und Betriebsgrenzen stammen aus dem Herstellerhandbuch.", fields: ["specs", "faq"] }
+  - { source: "Whisker – Litter-Robot 4 Use and Care", url: "https://www.litter-robot.com/support/article/litter-robot-4-use-and-care/", accessedAt: "2026-08-26", assertion: "Normale 30-49-l-Müllbeutel sind möglich; dunkle Beutel können die Füllstandsmessung beeinträchtigen. Der optionale Aktivkohlefilter hält unter normalen Bedingungen ungefähr einen Monat.", fields: ["specs", "comparisonData"] }
+  - { source: "Whisker – Litter-Robot 4 Produkt-FAQ", url: "https://www.litter-robot.com/litter-robot/litter-robot-4.html", accessedAt: "2026-08-26", assertion: "Empfohlene und ausgeschlossene Streuarten; keine feste Partikelgröße angegeben.", fields: ["specs", "comparisonData"] }
   - source: "Good Housekeeping · Litter-Robot 4"
     url: "https://www.goodhousekeeping.com/home-products/a40510449/litter-robot-4-review/"
     accessedAt: "2026-08-16"
