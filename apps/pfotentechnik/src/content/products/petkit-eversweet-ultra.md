@@ -64,10 +64,10 @@ images:
     - src: ../../assets/images/products/petkit-eversweet-ultra/gallery-3.webp
       alt: PETKIT Eversweet Ultra in einem Mehrkatzenhaushalt
 price:
-  current: 269.99
+  current: 279.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-21T11:27:37.771Z"
+  checkedAt: "2026-08-28T09:04:35.656Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -82,12 +82,12 @@ rating: 4.1
 score: 83
 
 priceState: "available"
-priceUpdated: "2026-08-21T11:27:37.771Z"
+priceUpdated: "2026-08-28T09:04:35.656Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-21T11:27:37.771Z"
+availabilityUpdated: "2026-08-28T09:04:35.656Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

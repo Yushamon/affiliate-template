@@ -44,10 +44,10 @@ images:
     alt: "PETLIBRO Scout Smart Camera in hochwertiger Produktansicht"
   gallery: []
 price:
-  current: 99.99
+  current: 85.49
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-21T11:28:09.789Z"
+  checkedAt: "2026-08-28T09:05:09.243Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -55,12 +55,12 @@ price:
 rating: 3.7
 
 priceState: "available"
-priceUpdated: "2026-08-21T11:28:09.789Z"
+priceUpdated: "2026-08-28T09:05:09.243Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-21T11:28:09.789Z"
+availabilityUpdated: "2026-08-28T09:05:09.243Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

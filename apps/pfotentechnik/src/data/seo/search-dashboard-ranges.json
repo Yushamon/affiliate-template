@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
   "provider": "combined",
-  "generatedAt": "2026-08-25T06:21:38.912Z",
+  "generatedAt": "2026-08-28T09:03:13.694Z",
   "property": "sc-domain:pfotentechnik.de",
   "defaultRange": "7d",
   "dataUpdatedAt": {
-    "google": "2026-08-24T12:23:27.763Z",
-    "bing": "2026-08-23T07:00:00.000Z"
+    "google": "2026-08-28T09:03:13.658Z",
+    "bing": "2026-08-27T07:00:00.000Z"
   },
   "providerStatus": {
     "google": "current",
@@ -16,34 +16,52 @@
     "7d": {
       "key": "7d",
       "label": "Letzte 7 Tage",
-      "startDate": "2026-08-17",
-      "endDate": "2026-08-23",
-      "comparisonStartDate": "2026-08-10",
-      "comparisonEndDate": "2026-08-16",
+      "startDate": "2026-08-21",
+      "endDate": "2026-08-27",
+      "comparisonStartDate": "2026-08-14",
+      "comparisonEndDate": "2026-08-20",
       "dataState": "combined",
       "partial": false,
       "lowData": true,
       "metrics": {
         "current": {
           "clicks": 1,
-          "impressions": 35,
-          "ctr": 2.86,
-          "position": 12.4
+          "impressions": 36,
+          "ctr": 2.78,
+          "position": 14.1
         },
         "previous": {
           "clicks": 1,
-          "impressions": 24,
-          "ctr": 4.17,
-          "position": 7.8
+          "impressions": 29,
+          "ctr": 3.45,
+          "position": 13.9
         },
         "change": {
           "clicks": 0,
-          "impressions": 45.8,
-          "ctr": -1.31,
-          "position": -4.6
+          "impressions": 24.1,
+          "ctr": -0.67,
+          "position": -0.2
         }
       },
       "pages": [
+        {
+          "page": "/",
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 44.5,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 8,
+              "ctr": 0,
+              "position": 44.5
+            }
+          }
+        },
         {
           "page": "/katzentrinkbrunnen-richtig-reinigen/",
           "clicks": 0,
@@ -81,24 +99,6 @@
           }
         },
         {
-          "page": "/futterautomat-katze/",
-          "clicks": 0,
-          "impressions": 5,
-          "ctr": 0,
-          "position": 22.6,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 5,
-              "ctr": 0,
-              "position": 22.6
-            }
-          }
-        },
-        {
           "page": "/hund-ist-muede/",
           "clicks": 0,
           "impressions": 5,
@@ -124,11 +124,11 @@
           }
         },
         {
-          "page": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+          "page": "/produkt/petkit-eversweet-ultra/",
           "clicks": 0,
           "impressions": 4,
           "ctr": 0,
-          "position": 16.7,
+          "position": 4.8,
           "sources": [
             "google",
             "bing"
@@ -136,28 +136,10 @@
           "providers": {
             "google": {
               "clicks": 0,
-              "impressions": 3,
-              "ctr": 0,
-              "position": 20.3
-            },
-            "bing": {
-              "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 6
-            }
-          }
-        },
-        {
-          "page": "/produkt/petkit-eversweet-ultra/",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 5,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
+              "position": 4
+            },
             "bing": {
               "clicks": 0,
               "impressions": 3,
@@ -185,60 +167,6 @@
           }
         },
         {
-          "page": "/smarte-futterautomaten/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 7.5,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 2,
-              "ctr": 0,
-              "position": 7.5
-            }
-          }
-        },
-        {
-          "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 2,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 2,
-              "ctr": 0,
-              "position": 2
-            }
-          }
-        },
-        {
-          "page": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 6,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 2,
-              "ctr": 0,
-              "position": 6
-            }
-          }
-        },
-        {
           "page": "/wie-funktionieren-gps-tracker/",
           "clicks": 1,
           "impressions": 1,
@@ -257,7 +185,7 @@
           }
         },
         {
-          "page": "/",
+          "page": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -271,150 +199,6 @@
               "impressions": 1,
               "ctr": 0,
               "position": 6
-            }
-          }
-        },
-        {
-          "page": "/beste-futterautomaten-fuer-seniorenkatzen/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 3,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 3
-            }
-          }
-        },
-        {
-          "page": "/hersteller/tractive/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 47,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 47
-            }
-          }
-        },
-        {
-          "page": "/produkt/oneisall-5l-automatic-cat-feeder/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 4,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 4
-            }
-          }
-        },
-        {
-          "page": "/produkt/petkit-fresh-element-solo/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 1,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 1
-            }
-          }
-        },
-        {
-          "page": "/produkt/weenect-xt/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 6
-            }
-          }
-        },
-        {
-          "page": "/vergleiche/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 9,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 9
-            }
-          }
-        },
-        {
-          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 76,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 76
-            }
-          }
-        },
-        {
-          "page": "/vergleiche/futterautomat-mit-app/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 2,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 2
             }
           }
         },
@@ -437,60 +221,6 @@
           }
         },
         {
-          "page": "/wie-funktioniert-ein-futterautomat/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 3,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 3
-            }
-          }
-        },
-        {
-          "page": "/produkt/petlibro-one-rfid-smart-feeder/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 6
-            }
-          }
-        },
-        {
-          "page": "/produkt/petlibro-polar-wet-food-feeder/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 8,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 8
-            }
-          }
-        },
-        {
           "page": "/redaktion/",
           "clicks": 0,
           "impressions": 1,
@@ -509,24 +239,6 @@
           }
         },
         {
-          "page": "/uebergewicht-bei-katzen-vermeiden/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 7,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 7
-            }
-          }
-        },
-        {
           "page": "/hund-trinkt-ploetzlich-viel/",
           "clicks": 0,
           "impressions": 1,
@@ -541,6 +253,24 @@
               "impressions": 1,
               "ctr": 0,
               "position": 7
+            }
+          }
+        },
+        {
+          "page": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
             }
           }
         },
@@ -564,6 +294,24 @@
         }
       ],
       "queries": [
+        {
+          "query": "petsafe bewertung",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 46.3,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 6,
+              "ctr": 0,
+              "position": 46.3
+            }
+          }
+        },
         {
           "query": "tractive cat 6 mini",
           "clicks": 0,
@@ -637,11 +385,11 @@
           }
         },
         {
-          "query": "futterautomat für 2 katzen mit chip",
+          "query": "beuteerkennung",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 56,
+          "position": 72,
           "sources": [
             "google"
           ],
@@ -650,61 +398,7 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 56
-            }
-          }
-        },
-        {
-          "query": "futterautomat nassfutter katze",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 55,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 55
-            }
-          }
-        },
-        {
-          "query": "nassfutter automat katzen",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 50,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 50
-            }
-          }
-        },
-        {
-          "query": "tractive care",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 47,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 47
+              "position": 72
             }
           }
         },
@@ -723,114 +417,6 @@
               "impressions": 1,
               "ctr": 0,
               "position": 5
-            }
-          }
-        },
-        {
-          "query": "hund ist laufend müde und schlapp",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 5
-            }
-          }
-        },
-        {
-          "query": "eversweet ultra",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 5
-            }
-          }
-        },
-        {
-          "query": "hund trinkt wenig",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 10,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 10
-            }
-          }
-        },
-        {
-          "query": "wieviel wasser sollte eine katze am tag trinken",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 10,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 10
-            }
-          }
-        },
-        {
-          "query": "honeyguardian automatic pet feeder",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 6
-            }
-          }
-        },
-        {
-          "query": "fressengerät",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 6
             }
           }
         },
@@ -889,6 +475,24 @@
           }
         },
         {
+          "query": "eversweet ultra",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 5,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 5
+            }
+          }
+        },
+        {
           "query": "jungen hund abends müde machen",
           "clicks": 0,
           "impressions": 1,
@@ -923,108 +527,36 @@
               "position": 5
             }
           }
-        }
-      ],
-      "pageQueries": [
-        {
-          "page": "/futterautomat-katze/",
-          "query": "futterautomat nassfutter katze",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 55
         },
         {
-          "page": "/futterautomat-katze/",
-          "query": "nassfutter automat katzen",
+          "query": "hund ist laufend müde und schlapp",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 50
-        },
-        {
-          "page": "/hersteller/tractive/",
-          "query": "tractive care",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 47
-        },
-        {
-          "page": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
-          "query": "futterautomat für 2 katzen mit chip",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 56
-        }
-      ],
-      "trend": [
-        {
-          "date": "2026-08-17",
-          "clicks": 0,
-          "impressions": 5,
-          "ctr": 0,
-          "position": 22.8,
+          "position": 5,
           "sources": [
-            "google"
+            "bing"
           ],
           "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 5,
-              "ctr": 0,
-              "position": 22.8
-            }
-          }
-        },
-        {
-          "date": "2026-08-18",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 47,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
+            "bing": {
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 47
+              "position": 5
             }
           }
         },
         {
-          "date": "2026-08-19",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 63,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 2,
-              "ctr": 0,
-              "position": 63
-            }
-          }
-        },
-        {
-          "date": "2026-08-20",
+          "query": "fressengerät",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
           "position": 6,
           "sources": [
-            "google"
+            "bing"
           ],
           "providers": {
-            "google": {
+            "bing": {
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
@@ -1032,6 +564,80 @@
             }
           }
         },
+        {
+          "query": "hund trinkt wenig",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            }
+          }
+        },
+        {
+          "query": "wieviel wasser sollte eine katze am tag trinken",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            }
+          }
+        },
+        {
+          "query": "honeyguardian automatic pet feeder",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
+            }
+          }
+        }
+      ],
+      "pageQueries": [
+        {
+          "page": "/",
+          "query": "petsafe bewertung",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 46.3
+        },
+        {
+          "page": "/",
+          "query": "beuteerkennung",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 72
+        }
+      ],
+      "trend": [
         {
           "date": "2026-08-21",
           "clicks": 1,
@@ -1092,77 +698,81 @@
               "position": 8.5
             }
           }
+        },
+        {
+          "date": "2026-08-24",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 25,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 4,
+              "ctr": 0,
+              "position": 25
+            }
+          }
+        },
+        {
+          "date": "2026-08-25",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 26,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 26
+            }
+          }
+        },
+        {
+          "date": "2026-08-26",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 47,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 47
+            }
+          }
+        },
+        {
+          "date": "2026-08-27",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 55.7,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 3,
+              "ctr": 0,
+              "position": 55.7
+            }
+          }
         }
       ],
       "crawl": [
-        {
-          "date": "2026-08-17T07:00:00.000Z",
-          "allOtherCodes": 36,
-          "blockedByRobotsTxt": 0,
-          "code2xx": 66,
-          "code301": 7,
-          "code302": 0,
-          "code4xx": 0,
-          "code5xx": 0,
-          "connectionTimeout": 0,
-          "containsMalware": 0,
-          "crawlErrors": 0,
-          "crawledPages": 13,
-          "dnsFailures": 0,
-          "inIndex": 63,
-          "inLinks": 0
-        },
-        {
-          "date": "2026-08-18T07:00:00.000Z",
-          "allOtherCodes": 35,
-          "blockedByRobotsTxt": 0,
-          "code2xx": 68,
-          "code301": 7,
-          "code302": 0,
-          "code4xx": 0,
-          "code5xx": 0,
-          "connectionTimeout": 0,
-          "containsMalware": 0,
-          "crawlErrors": 0,
-          "crawledPages": 11,
-          "dnsFailures": 0,
-          "inIndex": 64,
-          "inLinks": 0
-        },
-        {
-          "date": "2026-08-19T07:00:00.000Z",
-          "allOtherCodes": 35,
-          "blockedByRobotsTxt": 0,
-          "code2xx": 70,
-          "code301": 7,
-          "code302": 0,
-          "code4xx": 0,
-          "code5xx": 0,
-          "connectionTimeout": 0,
-          "containsMalware": 0,
-          "crawlErrors": 0,
-          "crawledPages": 19,
-          "dnsFailures": 0,
-          "inIndex": 66,
-          "inLinks": 0
-        },
-        {
-          "date": "2026-08-20T07:00:00.000Z",
-          "allOtherCodes": 33,
-          "blockedByRobotsTxt": 0,
-          "code2xx": 76,
-          "code301": 8,
-          "code302": 0,
-          "code4xx": 0,
-          "code5xx": 0,
-          "connectionTimeout": 0,
-          "containsMalware": 0,
-          "crawlErrors": 0,
-          "crawledPages": 14,
-          "dnsFailures": 0,
-          "inIndex": 72,
-          "inLinks": 0
-        },
         {
           "date": "2026-08-22T07:00:00.000Z",
           "allOtherCodes": 31,
@@ -1196,6 +806,74 @@
           "dnsFailures": 0,
           "inIndex": 90,
           "inLinks": 0
+        },
+        {
+          "date": "2026-08-24T07:00:00.000Z",
+          "allOtherCodes": 47,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 101,
+          "code301": 11,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 10,
+          "dnsFailures": 0,
+          "inIndex": 97,
+          "inLinks": 0
+        },
+        {
+          "date": "2026-08-25T07:00:00.000Z",
+          "allOtherCodes": 53,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 109,
+          "code301": 11,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 14,
+          "dnsFailures": 0,
+          "inIndex": 105,
+          "inLinks": 0
+        },
+        {
+          "date": "2026-08-26T07:00:00.000Z",
+          "allOtherCodes": 54,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 119,
+          "code301": 11,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 19,
+          "dnsFailures": 0,
+          "inIndex": 115,
+          "inLinks": 0
+        },
+        {
+          "date": "2026-08-27T07:00:00.000Z",
+          "allOtherCodes": 53,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 127,
+          "code301": 11,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 28,
+          "dnsFailures": 0,
+          "inIndex": 123,
+          "inLinks": 0
         }
       ],
       "recommendations": [
@@ -1204,7 +882,7 @@
           "type": "provider-comparison-unavailable",
           "title": "Provider-Vergleich nicht belastbar",
           "page": "",
-          "reason": "Google liefert 13, Bing 22 Impressionen im Zeitraum. Einzelne Sichtbarkeitslücken werden deshalb nicht als Findings ausgegeben.",
+          "reason": "Google liefert 14, Bing 22 Impressionen im Zeitraum. Einzelne Sichtbarkeitslücken werden deshalb nicht als Findings ausgegeben.",
           "action": "Erst nach ausreichender Trafficabdeckung beider Provider Unterschiede auf Seitenebene bewerten."
         }
       ],
@@ -1218,31 +896,31 @@
     "28d": {
       "key": "28d",
       "label": "Letzte 28 Tage",
-      "startDate": "2026-07-27",
-      "endDate": "2026-08-23",
-      "comparisonStartDate": "2026-06-29",
-      "comparisonEndDate": "2026-07-26",
+      "startDate": "2026-07-31",
+      "endDate": "2026-08-27",
+      "comparisonStartDate": "2026-07-03",
+      "comparisonEndDate": "2026-07-30",
       "dataState": "combined",
       "partial": false,
       "lowData": true,
       "metrics": {
         "current": {
-          "clicks": 3,
-          "impressions": 99,
-          "ctr": 3.03,
-          "position": 22.9
+          "clicks": 2,
+          "impressions": 91,
+          "ctr": 2.2,
+          "position": 18.2
         },
         "previous": {
-          "clicks": 19,
-          "impressions": 657,
-          "ctr": 2.89,
-          "position": 22
+          "clicks": 20,
+          "impressions": 675,
+          "ctr": 2.96,
+          "position": 22.9
         },
         "change": {
-          "clicks": -84.2,
-          "impressions": -84.9,
-          "ctr": 0.14,
-          "position": -0.9
+          "clicks": -90,
+          "impressions": -86.5,
+          "ctr": -0.76,
+          "position": 4.7
         }
       },
       "pages": [
@@ -1267,18 +945,18 @@
         {
           "page": "/futterautomat-katze/",
           "clicks": 0,
-          "impressions": 11,
+          "impressions": 10,
           "ctr": 0,
-          "position": 41.1,
+          "position": 40.6,
           "sources": [
             "google"
           ],
           "providers": {
             "google": {
               "clicks": 0,
-              "impressions": 11,
+              "impressions": 10,
               "ctr": 0,
-              "position": 41.1
+              "position": 40.6
             }
           }
         },
@@ -1297,6 +975,24 @@
               "impressions": 10,
               "ctr": 0,
               "position": 6
+            }
+          }
+        },
+        {
+          "page": "/",
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 40.2,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 9,
+              "ctr": 0,
+              "position": 40.2
             }
           }
         },
@@ -1351,29 +1047,11 @@
           }
         },
         {
-          "page": "/futterautomat-fuer-zwei-katzen/",
+          "page": "/produkt/petkit-eversweet-ultra/",
           "clicks": 0,
           "impressions": 6,
           "ctr": 0,
-          "position": 70.2,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 6,
-              "ctr": 0,
-              "position": 70.2
-            }
-          }
-        },
-        {
-          "page": "/produkt/petkit-eversweet-ultra/",
-          "clicks": 0,
-          "impressions": 5,
-          "ctr": 0,
-          "position": 6.6,
+          "position": 6.2,
           "sources": [
             "google",
             "bing"
@@ -1381,9 +1059,9 @@
           "providers": {
             "google": {
               "clicks": 0,
-              "impressions": 1,
+              "impressions": 2,
               "ctr": 0,
-              "position": 12
+              "position": 8
             },
             "bing": {
               "clicks": 0,
@@ -1408,24 +1086,6 @@
               "impressions": 5,
               "ctr": 0,
               "position": 7
-            }
-          }
-        },
-        {
-          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 58.5,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 4,
-              "ctr": 0,
-              "position": 58.5
             }
           }
         },
@@ -1520,42 +1180,6 @@
           }
         },
         {
-          "page": "/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 3.5,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 2,
-              "ctr": 0,
-              "position": 3.5
-            }
-          }
-        },
-        {
-          "page": "/futterautomat-im-urlaub/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 45.5,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 2,
-              "ctr": 0,
-              "position": 45.5
-            }
-          }
-        },
-        {
           "page": "/produkt/oneisall-2-in-1-feeder-water/",
           "clicks": 0,
           "impressions": 2,
@@ -1592,11 +1216,11 @@
           }
         },
         {
-          "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
           "clicks": 0,
           "impressions": 2,
           "ctr": 0,
-          "position": 22,
+          "position": 41,
           "sources": [
             "google"
           ],
@@ -1605,7 +1229,7 @@
               "clicks": 0,
               "impressions": 2,
               "ctr": 0,
-              "position": 22
+              "position": 41
             }
           }
         },
@@ -1622,31 +1246,6 @@
             "google": {
               "clicks": 0,
               "impressions": 2,
-              "ctr": 0,
-              "position": 10
-            }
-          }
-        },
-        {
-          "page": "/hund-trinkt-zu-wenig/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 54.5,
-          "sources": [
-            "google",
-            "bing"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 99
-            },
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
               "ctr": 0,
               "position": 10
             }
@@ -1728,42 +1327,6 @@
           }
         },
         {
-          "page": "/kontakt/",
-          "clicks": 1,
-          "impressions": 1,
-          "ctr": 100,
-          "position": 3,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 1,
-              "impressions": 1,
-              "ctr": 100,
-              "position": 3
-            }
-          }
-        },
-        {
-          "page": "/so-bewerten-wir/",
-          "clicks": 1,
-          "impressions": 1,
-          "ctr": 100,
-          "position": 5,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 1,
-              "impressions": 1,
-              "ctr": 100,
-              "position": 5
-            }
-          }
-        },
-        {
           "page": "/wie-funktionieren-gps-tracker/",
           "clicks": 1,
           "impressions": 1,
@@ -1796,24 +1359,6 @@
               "impressions": 1,
               "ctr": 0,
               "position": 3
-            }
-          }
-        },
-        {
-          "page": "/futterautomat-nassfutter/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 44,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 44
             }
           }
         },
@@ -1872,42 +1417,6 @@
           }
         },
         {
-          "page": "/hund-hat-durchfall/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 80,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 80
-            }
-          }
-        },
-        {
-          "page": "/impressum/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 4,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 4
-            }
-          }
-        },
-        {
           "page": "/produkt/oneisall-5l-automatic-cat-feeder/",
           "clicks": 0,
           "impressions": 1,
@@ -1922,24 +1431,6 @@
               "impressions": 1,
               "ctr": 0,
               "position": 4
-            }
-          }
-        },
-        {
-          "page": "/produkt/pawbby-smart-pet-feeder/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 10,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 10
             }
           }
         },
@@ -1980,42 +1471,6 @@
           }
         },
         {
-          "page": "/produkt/petlibro-stainless-steel-fountain/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 3,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 3
-            }
-          }
-        },
-        {
-          "page": "/produkt/weenect-xs/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 31,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 31
-            }
-          }
-        },
-        {
           "page": "/trockenfutter-oder-nassfutter-katze/",
           "clicks": 0,
           "impressions": 1,
@@ -2052,11 +1507,11 @@
           }
         },
         {
-          "page": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+          "page": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 10,
+          "position": 6,
           "sources": [
             "google"
           ],
@@ -2065,7 +1520,25 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 10
+              "position": 6
+            }
+          }
+        },
+        {
+          "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 34,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 34
             }
           }
         },
@@ -2176,9 +1649,45 @@
               "position": 5
             }
           }
+        },
+        {
+          "page": "/hund-trinkt-zu-wenig/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            }
+          }
         }
       ],
       "queries": [
+        {
+          "query": "petsafe bewertung",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 46.3,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 6,
+              "ctr": 0,
+              "position": 46.3
+            }
+          }
+        },
         {
           "query": "tractive cat 6 mini",
           "clicks": 0,
@@ -2198,24 +1707,6 @@
           }
         },
         {
-          "query": "mehrkatzenhaushalt fütterung",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 91,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 3,
-              "ctr": 0,
-              "position": 91
-            }
-          }
-        },
-        {
           "query": "katzenbrunnen pumpe reinigen",
           "clicks": 0,
           "impressions": 3,
@@ -2230,42 +1721,6 @@
               "impressions": 3,
               "ctr": 0,
               "position": 2
-            }
-          }
-        },
-        {
-          "query": "futterautomat für 2 katzen",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 51.5,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 2,
-              "ctr": 0,
-              "position": 51.5
-            }
-          }
-        },
-        {
-          "query": "futterautomat katze urlaub",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 45.5,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 2,
-              "ctr": 0,
-              "position": 45.5
             }
           }
         },
@@ -2414,11 +1869,11 @@
           }
         },
         {
-          "query": "futterautomat 2 katzen",
+          "query": "beuteerkennung",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 51,
+          "position": 72,
           "sources": [
             "google"
           ],
@@ -2427,7 +1882,25 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 51
+              "position": 72
+            }
+          }
+        },
+        {
+          "query": "futterautomat für 2 katzen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 56,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 56
             }
           }
         },
@@ -2468,60 +1941,6 @@
           }
         },
         {
-          "query": "futterautomat mit elektrischer kühlung",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 44,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 44
-            }
-          }
-        },
-        {
-          "query": "futterautomat zwei katzen",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 50,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 50
-            }
-          }
-        },
-        {
-          "query": "gps tracker für kleine hunde",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 72,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 72
-            }
-          }
-        },
-        {
           "query": "hund nur trockenfutter",
           "clicks": 0,
           "impressions": 1,
@@ -2536,60 +1955,6 @@
               "impressions": 1,
               "ctr": 0,
               "position": 92
-            }
-          }
-        },
-        {
-          "query": "hund trinkt zu wenig symptome",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 99,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 99
-            }
-          }
-        },
-        {
-          "query": "katze futterautomat nassfutter",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 46,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 46
-            }
-          }
-        },
-        {
-          "query": "mini gps tracker hund",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 80,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 80
             }
           }
         },
@@ -2648,29 +2013,11 @@
           }
         },
         {
-          "query": "weenect abo",
+          "query": "about us offline filetype:fods",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 31,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 31
-            }
-          }
-        },
-        {
-          "query": "abs abs f filetype:fods",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 1,
+          "position": 4,
           "sources": [
             "bing"
           ],
@@ -2679,7 +2026,7 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 1
+              "position": 4
             }
           }
         },
@@ -2702,7 +2049,61 @@
           }
         },
         {
-          "query": "about us offline filetype:fods",
+          "query": "abs abs f filetype:fods",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 1
+            }
+          }
+        },
+        {
+          "query": "wie wird die pumpe eines katzenbrunnens gereinigt? gibt es eine anleitung wie diese auseinander gebaut werden soll? gibt es dazu einen film/viedeo?",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 1
+            }
+          }
+        },
+        {
+          "query": "hund trinkt viel und leckt sich die pfoten, stuhlgang weich, vermehrter speichelfluss",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
+            }
+          }
+        },
+        {
+          "query": "tractive tracker cat 6 batterielaufzeit",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -2720,11 +2121,11 @@
           }
         },
         {
-          "query": "hund trinkt plötzlich viel wasser",
+          "query": "wie reinige ich den katzenbrunnen der motor der das wasser hochpumpt",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 10,
+          "position": 2,
           "sources": [
             "bing"
           ],
@@ -2733,7 +2134,7 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 10
+              "position": 2
             }
           }
         },
@@ -2774,11 +2175,11 @@
           }
         },
         {
-          "query": "wie wird die pumpe eines katzenbrunnens gereinigt? gibt es eine anleitung wie diese auseinander gebaut werden soll? gibt es dazu einen film/viedeo?",
+          "query": "hund trinkt plötzlich viel wasser",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 1,
+          "position": 10,
           "sources": [
             "bing"
           ],
@@ -2787,133 +2188,7 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 1
-            }
-          }
-        },
-        {
-          "query": "trockenfutter besser als nassfutter auch die wahl des futters könne eine rolle spielen. nassfutter enthält einen hohen anteil an wasser und sorgt dadurch bei gleicher kalorienmenge für mehr volumen. trockenfutter ist dagegen energiereicher, so der rat. wird es ständig zur freien verfügung angeboten, könne das leichter zu einer übermäßigen kalorienaufnahme führen.",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 5
-            }
-          }
-        },
-        {
-          "query": "wie reinige ich den katzenbrunnen der motor der das wasser hochpumpt",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 2,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 2
-            }
-          }
-        },
-        {
-          "query": "tractive tracker cat 6 batterielaufzeit",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 4,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 4
-            }
-          }
-        },
-        {
-          "query": "automatenschlingen",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 5
-            }
-          }
-        },
-        {
-          "query": "wie oft sollte man einen katzentrinkbrunnen reinigen",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 3,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 3
-            }
-          }
-        },
-        {
-          "query": "hund trinkt viel und leckt sich die pfoten, stuhlgang weich, vermehrter speichelfluss",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 6
-            }
-          }
-        },
-        {
-          "query": "welpen futterzeiten?",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 6
+              "position": 10
             }
           }
         },
@@ -2990,7 +2265,7 @@
           }
         },
         {
-          "query": "hund ist laufend müde und schlapp",
+          "query": "automatenschlingen",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -3008,7 +2283,25 @@
           }
         },
         {
-          "query": "eversweet ultra",
+          "query": "wie oft sollte man einen katzentrinkbrunnen reinigen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 3,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 3
+            }
+          }
+        },
+        {
+          "query": "trockenfutter besser als nassfutter auch die wahl des futters könne eine rolle spielen. nassfutter enthält einen hohen anteil an wasser und sorgt dadurch bei gleicher kalorienmenge für mehr volumen. trockenfutter ist dagegen energiereicher, so der rat. wird es ständig zur freien verfügung angeboten, könne das leichter zu einer übermäßigen kalorienaufnahme führen.",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -3026,61 +2319,7 @@
           }
         },
         {
-          "query": "hund trinkt wenig",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 10,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 10
-            }
-          }
-        },
-        {
-          "query": "wieviel wasser sollte eine katze am tag trinken",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 10,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 10
-            }
-          }
-        },
-        {
-          "query": "honeyguardian automatic pet feeder",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 6
-            }
-          }
-        },
-        {
-          "query": "fressengerät",
+          "query": "welpen futterzeiten?",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -3152,6 +2391,24 @@
           }
         },
         {
+          "query": "eversweet ultra",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 5,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 5
+            }
+          }
+        },
+        {
           "query": "jungen hund abends müde machen",
           "clicks": 0,
           "impressions": 1,
@@ -3186,24 +2443,106 @@
               "position": 5
             }
           }
+        },
+        {
+          "query": "hund ist laufend müde und schlapp",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 5,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 5
+            }
+          }
+        },
+        {
+          "query": "fressengerät",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
+            }
+          }
+        },
+        {
+          "query": "hund trinkt wenig",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            }
+          }
+        },
+        {
+          "query": "wieviel wasser sollte eine katze am tag trinken",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            }
+          }
+        },
+        {
+          "query": "honeyguardian automatic pet feeder",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
+            }
+          }
         }
       ],
       "pageQueries": [
         {
-          "page": "/futterautomat-fuer-zwei-katzen/",
-          "query": "mehrkatzenhaushalt fütterung",
+          "page": "/",
+          "query": "petsafe bewertung",
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 6,
           "ctr": 0,
-          "position": 91
-        },
-        {
-          "page": "/futterautomat-im-urlaub/",
-          "query": "futterautomat katze urlaub",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 45.5
+          "position": 46.3
         },
         {
           "page": "/futterautomat-katze/",
@@ -3222,28 +2561,12 @@
           "position": 62
         },
         {
-          "page": "/futterautomat-fuer-zwei-katzen/",
-          "query": "futterautomat 2 katzen",
+          "page": "/",
+          "query": "beuteerkennung",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 51
-        },
-        {
-          "page": "/futterautomat-fuer-zwei-katzen/",
-          "query": "futterautomat für 2 katzen",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 47
-        },
-        {
-          "page": "/futterautomat-fuer-zwei-katzen/",
-          "query": "futterautomat zwei katzen",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 50
+          "position": 72
         },
         {
           "page": "/futterautomat-katze/",
@@ -3252,14 +2575,6 @@
           "impressions": 1,
           "ctr": 0,
           "position": 54
-        },
-        {
-          "page": "/futterautomat-katze/",
-          "query": "katze futterautomat nassfutter",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 46
         },
         {
           "page": "/futterautomat-katze/",
@@ -3278,36 +2593,12 @@
           "position": 60
         },
         {
-          "page": "/futterautomat-nassfutter/",
-          "query": "futterautomat mit elektrischer kühlung",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 44
-        },
-        {
           "page": "/hersteller/tractive/",
           "query": "tractive care",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
           "position": 47
-        },
-        {
-          "page": "/hund-trinkt-zu-wenig/",
-          "query": "hund trinkt zu wenig symptome",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 99
-        },
-        {
-          "page": "/produkt/weenect-xs/",
-          "query": "weenect abo",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 31
         },
         {
           "page": "/trockenfutter-oder-nassfutter-hund/",
@@ -3340,97 +2631,9 @@
           "impressions": 1,
           "ctr": 0,
           "position": 6
-        },
-        {
-          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-          "query": "gps tracker für kleine hunde",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 72
-        },
-        {
-          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-          "query": "mini gps tracker hund",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 80
         }
       ],
       "trend": [
-        {
-          "date": "2026-07-27",
-          "clicks": 1,
-          "impressions": 8,
-          "ctr": 12.5,
-          "position": 46.9,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 1,
-              "impressions": 8,
-              "ctr": 12.5,
-              "position": 46.9
-            }
-          }
-        },
-        {
-          "date": "2026-07-28",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 76.3,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 3,
-              "ctr": 0,
-              "position": 76.3
-            }
-          }
-        },
-        {
-          "date": "2026-07-29",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 80,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 3,
-              "ctr": 0,
-              "position": 80
-            }
-          }
-        },
-        {
-          "date": "2026-07-30",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 33.5,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 0,
-              "impressions": 4,
-              "ctr": 0,
-              "position": 33.5
-            }
-          }
-        },
         {
           "date": "2026-07-31",
           "clicks": 0,
@@ -3883,77 +3086,81 @@
               "position": 8.5
             }
           }
+        },
+        {
+          "date": "2026-08-24",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 25,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 4,
+              "ctr": 0,
+              "position": 25
+            }
+          }
+        },
+        {
+          "date": "2026-08-25",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 26,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 26
+            }
+          }
+        },
+        {
+          "date": "2026-08-26",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 47,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 47
+            }
+          }
+        },
+        {
+          "date": "2026-08-27",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 55.7,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 3,
+              "ctr": 0,
+              "position": 55.7
+            }
+          }
         }
       ],
       "crawl": [
-        {
-          "date": "2026-07-27T07:00:00.000Z",
-          "allOtherCodes": 0,
-          "blockedByRobotsTxt": 0,
-          "code2xx": 0,
-          "code301": 0,
-          "code302": 0,
-          "code4xx": 0,
-          "code5xx": 0,
-          "connectionTimeout": 0,
-          "containsMalware": 0,
-          "crawlErrors": 0,
-          "crawledPages": 0,
-          "dnsFailures": 0,
-          "inIndex": 0,
-          "inLinks": 0
-        },
-        {
-          "date": "2026-07-28T07:00:00.000Z",
-          "allOtherCodes": 0,
-          "blockedByRobotsTxt": 0,
-          "code2xx": 0,
-          "code301": 0,
-          "code302": 0,
-          "code4xx": 0,
-          "code5xx": 0,
-          "connectionTimeout": 0,
-          "containsMalware": 0,
-          "crawlErrors": 0,
-          "crawledPages": 0,
-          "dnsFailures": 0,
-          "inIndex": 0,
-          "inLinks": 0
-        },
-        {
-          "date": "2026-07-29T07:00:00.000Z",
-          "allOtherCodes": 0,
-          "blockedByRobotsTxt": 0,
-          "code2xx": 0,
-          "code301": 0,
-          "code302": 0,
-          "code4xx": 0,
-          "code5xx": 0,
-          "connectionTimeout": 0,
-          "containsMalware": 0,
-          "crawlErrors": 0,
-          "crawledPages": 0,
-          "dnsFailures": 0,
-          "inIndex": 0,
-          "inLinks": 0
-        },
-        {
-          "date": "2026-07-30T07:00:00.000Z",
-          "allOtherCodes": 0,
-          "blockedByRobotsTxt": 0,
-          "code2xx": 0,
-          "code301": 0,
-          "code302": 0,
-          "code4xx": 0,
-          "code5xx": 0,
-          "connectionTimeout": 0,
-          "containsMalware": 0,
-          "crawlErrors": 0,
-          "crawledPages": 6,
-          "dnsFailures": 0,
-          "inIndex": 0,
-          "inLinks": 0
-        },
         {
           "date": "2026-07-31T07:00:00.000Z",
           "allOtherCodes": 0,
@@ -4344,6 +3551,74 @@
           "dnsFailures": 0,
           "inIndex": 90,
           "inLinks": 0
+        },
+        {
+          "date": "2026-08-24T07:00:00.000Z",
+          "allOtherCodes": 47,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 101,
+          "code301": 11,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 10,
+          "dnsFailures": 0,
+          "inIndex": 97,
+          "inLinks": 0
+        },
+        {
+          "date": "2026-08-25T07:00:00.000Z",
+          "allOtherCodes": 53,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 109,
+          "code301": 11,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 14,
+          "dnsFailures": 0,
+          "inIndex": 105,
+          "inLinks": 0
+        },
+        {
+          "date": "2026-08-26T07:00:00.000Z",
+          "allOtherCodes": 54,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 119,
+          "code301": 11,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 19,
+          "dnsFailures": 0,
+          "inIndex": 115,
+          "inLinks": 0
+        },
+        {
+          "date": "2026-08-27T07:00:00.000Z",
+          "allOtherCodes": 53,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 127,
+          "code301": 11,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 28,
+          "dnsFailures": 0,
+          "inIndex": 123,
+          "inLinks": 0
         }
       ],
       "recommendations": [],
@@ -4357,19 +3632,19 @@
     "3m": {
       "key": "3m",
       "label": "Letzte 3 Monate",
-      "startDate": "2026-05-26",
-      "endDate": "2026-08-23",
-      "comparisonStartDate": "2026-02-25",
-      "comparisonEndDate": "2026-05-25",
+      "startDate": "2026-05-30",
+      "endDate": "2026-08-27",
+      "comparisonStartDate": "2026-03-01",
+      "comparisonEndDate": "2026-05-29",
       "dataState": "combined",
       "partial": false,
       "lowData": false,
       "metrics": {
         "current": {
           "clicks": 22,
-          "impressions": 756,
-          "ctr": 2.91,
-          "position": 22.1
+          "impressions": 766,
+          "ctr": 2.87,
+          "position": 22.3
         },
         "previous": {
           "clicks": 0,
@@ -4380,7 +3655,7 @@
         "change": {
           "clicks": 100,
           "impressions": 100,
-          "ctr": 2.91,
+          "ctr": 2.87,
           "position": null
         }
       },
@@ -4494,6 +3769,24 @@
           }
         },
         {
+          "page": "/",
+          "clicks": 1,
+          "impressions": 23,
+          "ctr": 4.35,
+          "position": 31.1,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 1,
+              "impressions": 23,
+              "ctr": 4.35,
+              "position": 31.1
+            }
+          }
+        },
+        {
           "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
           "clicks": 0,
           "impressions": 23,
@@ -4530,6 +3823,31 @@
           }
         },
         {
+          "page": "/produkt/petkit-eversweet-ultra/",
+          "clicks": 2,
+          "impressions": 21,
+          "ctr": 9.52,
+          "position": 8.4,
+          "sources": [
+            "google",
+            "bing"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 2,
+              "impressions": 17,
+              "ctr": 11.76,
+              "position": 9.1
+            },
+            "bing": {
+              "clicks": 0,
+              "impressions": 4,
+              "ctr": 0,
+              "position": 5.3
+            }
+          }
+        },
+        {
           "page": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
           "clicks": 0,
           "impressions": 21,
@@ -4544,31 +3862,6 @@
               "impressions": 21,
               "ctr": 0,
               "position": 18.1
-            }
-          }
-        },
-        {
-          "page": "/produkt/petkit-eversweet-ultra/",
-          "clicks": 2,
-          "impressions": 20,
-          "ctr": 10,
-          "position": 8.6,
-          "sources": [
-            "google",
-            "bing"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 2,
-              "impressions": 16,
-              "ctr": 12.5,
-              "position": 9.4
-            },
-            "bing": {
-              "clicks": 0,
-              "impressions": 4,
-              "ctr": 0,
-              "position": 5.3
             }
           }
         },
@@ -4713,24 +4006,6 @@
               "impressions": 16,
               "ctr": 0,
               "position": 34.7
-            }
-          }
-        },
-        {
-          "page": "/",
-          "clicks": 1,
-          "impressions": 15,
-          "ctr": 6.67,
-          "position": 23.9,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 1,
-              "impressions": 15,
-              "ctr": 6.67,
-              "position": 23.9
             }
           }
         },
@@ -6670,6 +5945,24 @@
           }
         },
         {
+          "page": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
+            }
+          }
+        },
+        {
           "page": "/vergleiche/beste-futterautomaten-ohne-wlan/",
           "clicks": 0,
           "impressions": 1,
@@ -6938,6 +6231,24 @@
               "impressions": 6,
               "ctr": 0,
               "position": 46.5
+            }
+          }
+        },
+        {
+          "query": "petsafe bewertung",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 46.3,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 6,
+              "ctr": 0,
+              "position": 46.3
             }
           }
         },
@@ -7755,6 +7066,24 @@
               "impressions": 1,
               "ctr": 0,
               "position": 77
+            }
+          }
+        },
+        {
+          "query": "beuteerkennung",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 72,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 72
             }
           }
         },
@@ -9073,11 +8402,11 @@
           }
         },
         {
-          "query": "abs abs f filetype:fods",
+          "query": "about us offline filetype:fods",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 1,
+          "position": 4,
           "sources": [
             "bing"
           ],
@@ -9086,7 +8415,7 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 1
+              "position": 4
             }
           }
         },
@@ -9109,7 +8438,61 @@
           }
         },
         {
-          "query": "about us offline filetype:fods",
+          "query": "abs abs f filetype:fods",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 1
+            }
+          }
+        },
+        {
+          "query": "wie wird die pumpe eines katzenbrunnens gereinigt? gibt es eine anleitung wie diese auseinander gebaut werden soll? gibt es dazu einen film/viedeo?",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 1
+            }
+          }
+        },
+        {
+          "query": "hund trinkt viel und leckt sich die pfoten, stuhlgang weich, vermehrter speichelfluss",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
+            }
+          }
+        },
+        {
+          "query": "tractive tracker cat 6 batterielaufzeit",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -9127,11 +8510,11 @@
           }
         },
         {
-          "query": "hund trinkt plötzlich viel wasser",
+          "query": "wie reinige ich den katzenbrunnen der motor der das wasser hochpumpt",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 10,
+          "position": 2,
           "sources": [
             "bing"
           ],
@@ -9140,7 +8523,7 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 10
+              "position": 2
             }
           }
         },
@@ -9181,11 +8564,11 @@
           }
         },
         {
-          "query": "wie wird die pumpe eines katzenbrunnens gereinigt? gibt es eine anleitung wie diese auseinander gebaut werden soll? gibt es dazu einen film/viedeo?",
+          "query": "hund trinkt plötzlich viel wasser",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 1,
+          "position": 10,
           "sources": [
             "bing"
           ],
@@ -9194,133 +8577,7 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 1
-            }
-          }
-        },
-        {
-          "query": "trockenfutter besser als nassfutter auch die wahl des futters könne eine rolle spielen. nassfutter enthält einen hohen anteil an wasser und sorgt dadurch bei gleicher kalorienmenge für mehr volumen. trockenfutter ist dagegen energiereicher, so der rat. wird es ständig zur freien verfügung angeboten, könne das leichter zu einer übermäßigen kalorienaufnahme führen.",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 5
-            }
-          }
-        },
-        {
-          "query": "wie reinige ich den katzenbrunnen der motor der das wasser hochpumpt",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 2,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 2
-            }
-          }
-        },
-        {
-          "query": "tractive tracker cat 6 batterielaufzeit",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 4,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 4
-            }
-          }
-        },
-        {
-          "query": "automatenschlingen",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 5
-            }
-          }
-        },
-        {
-          "query": "wie oft sollte man einen katzentrinkbrunnen reinigen",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 3,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 3
-            }
-          }
-        },
-        {
-          "query": "hund trinkt viel und leckt sich die pfoten, stuhlgang weich, vermehrter speichelfluss",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 6
-            }
-          }
-        },
-        {
-          "query": "welpen futterzeiten?",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 6
+              "position": 10
             }
           }
         },
@@ -9397,7 +8654,7 @@
           }
         },
         {
-          "query": "hund ist laufend müde und schlapp",
+          "query": "automatenschlingen",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -9415,7 +8672,25 @@
           }
         },
         {
-          "query": "eversweet ultra",
+          "query": "wie oft sollte man einen katzentrinkbrunnen reinigen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 3,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 3
+            }
+          }
+        },
+        {
+          "query": "trockenfutter besser als nassfutter auch die wahl des futters könne eine rolle spielen. nassfutter enthält einen hohen anteil an wasser und sorgt dadurch bei gleicher kalorienmenge für mehr volumen. trockenfutter ist dagegen energiereicher, so der rat. wird es ständig zur freien verfügung angeboten, könne das leichter zu einer übermäßigen kalorienaufnahme führen.",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -9433,61 +8708,7 @@
           }
         },
         {
-          "query": "hund trinkt wenig",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 10,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 10
-            }
-          }
-        },
-        {
-          "query": "wieviel wasser sollte eine katze am tag trinken",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 10,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 10
-            }
-          }
-        },
-        {
-          "query": "honeyguardian automatic pet feeder",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 6
-            }
-          }
-        },
-        {
-          "query": "fressengerät",
+          "query": "welpen futterzeiten?",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -9559,6 +8780,24 @@
           }
         },
         {
+          "query": "eversweet ultra",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 5,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 5
+            }
+          }
+        },
+        {
           "query": "jungen hund abends müde machen",
           "clicks": 0,
           "impressions": 1,
@@ -9593,6 +8832,96 @@
               "position": 5
             }
           }
+        },
+        {
+          "query": "hund ist laufend müde und schlapp",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 5,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 5
+            }
+          }
+        },
+        {
+          "query": "fressengerät",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
+            }
+          }
+        },
+        {
+          "query": "hund trinkt wenig",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            }
+          }
+        },
+        {
+          "query": "wieviel wasser sollte eine katze am tag trinken",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            }
+          }
+        },
+        {
+          "query": "honeyguardian automatic pet feeder",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
+            }
+          }
         }
       ],
       "pageQueries": [
@@ -9611,6 +8940,14 @@
           "impressions": 9,
           "ctr": 0,
           "position": 81.2
+        },
+        {
+          "page": "/",
+          "query": "petsafe bewertung",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 46.3
         },
         {
           "page": "/hersteller/petlibro/",
@@ -9939,6 +9276,14 @@
           "impressions": 2,
           "ctr": 0,
           "position": 10.5
+        },
+        {
+          "page": "/",
+          "query": "beuteerkennung",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 72
         },
         {
           "page": "/",
@@ -11560,6 +10905,78 @@
               "position": 8.5
             }
           }
+        },
+        {
+          "date": "2026-08-24",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 25,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 4,
+              "ctr": 0,
+              "position": 25
+            }
+          }
+        },
+        {
+          "date": "2026-08-25",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 26,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 26
+            }
+          }
+        },
+        {
+          "date": "2026-08-26",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 47,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 47
+            }
+          }
+        },
+        {
+          "date": "2026-08-27",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 55.7,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 3,
+              "ctr": 0,
+              "position": 55.7
+            }
+          }
         }
       ],
       "crawl": [
@@ -12242,6 +11659,74 @@
           "dnsFailures": 0,
           "inIndex": 90,
           "inLinks": 0
+        },
+        {
+          "date": "2026-08-24T07:00:00.000Z",
+          "allOtherCodes": 47,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 101,
+          "code301": 11,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 10,
+          "dnsFailures": 0,
+          "inIndex": 97,
+          "inLinks": 0
+        },
+        {
+          "date": "2026-08-25T07:00:00.000Z",
+          "allOtherCodes": 53,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 109,
+          "code301": 11,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 14,
+          "dnsFailures": 0,
+          "inIndex": 105,
+          "inLinks": 0
+        },
+        {
+          "date": "2026-08-26T07:00:00.000Z",
+          "allOtherCodes": 54,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 119,
+          "code301": 11,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 19,
+          "dnsFailures": 0,
+          "inIndex": 115,
+          "inLinks": 0
+        },
+        {
+          "date": "2026-08-27T07:00:00.000Z",
+          "allOtherCodes": 53,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 127,
+          "code301": 11,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 28,
+          "dnsFailures": 0,
+          "inIndex": 123,
+          "inLinks": 0
         }
       ],
       "recommendations": [
@@ -12291,6 +11776,14 @@
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/produkt/petlibro-polar-wet-food-feeder/",
           "reason": "Für „/produkt/petlibro-polar-wet-food-feeder/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/",
+          "reason": "Für „/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -12328,19 +11821,19 @@
     "6m": {
       "key": "6m",
       "label": "Letzte 6 Monate",
-      "startDate": "2026-02-25",
-      "endDate": "2026-08-23",
-      "comparisonStartDate": "2025-08-29",
-      "comparisonEndDate": "2026-02-24",
+      "startDate": "2026-03-01",
+      "endDate": "2026-08-27",
+      "comparisonStartDate": "2025-09-02",
+      "comparisonEndDate": "2026-02-28",
       "dataState": "combined",
       "partial": false,
       "lowData": false,
       "metrics": {
         "current": {
           "clicks": 22,
-          "impressions": 756,
-          "ctr": 2.91,
-          "position": 22.1
+          "impressions": 766,
+          "ctr": 2.87,
+          "position": 22.3
         },
         "previous": {
           "clicks": 0,
@@ -12351,7 +11844,7 @@
         "change": {
           "clicks": 100,
           "impressions": 100,
-          "ctr": 2.91,
+          "ctr": 2.87,
           "position": null
         }
       },
@@ -12465,6 +11958,24 @@
           }
         },
         {
+          "page": "/",
+          "clicks": 1,
+          "impressions": 23,
+          "ctr": 4.35,
+          "position": 31.1,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 1,
+              "impressions": 23,
+              "ctr": 4.35,
+              "position": 31.1
+            }
+          }
+        },
+        {
           "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
           "clicks": 0,
           "impressions": 23,
@@ -12501,6 +12012,31 @@
           }
         },
         {
+          "page": "/produkt/petkit-eversweet-ultra/",
+          "clicks": 2,
+          "impressions": 21,
+          "ctr": 9.52,
+          "position": 8.4,
+          "sources": [
+            "google",
+            "bing"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 2,
+              "impressions": 17,
+              "ctr": 11.76,
+              "position": 9.1
+            },
+            "bing": {
+              "clicks": 0,
+              "impressions": 4,
+              "ctr": 0,
+              "position": 5.3
+            }
+          }
+        },
+        {
           "page": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
           "clicks": 0,
           "impressions": 21,
@@ -12515,31 +12051,6 @@
               "impressions": 21,
               "ctr": 0,
               "position": 18.1
-            }
-          }
-        },
-        {
-          "page": "/produkt/petkit-eversweet-ultra/",
-          "clicks": 2,
-          "impressions": 20,
-          "ctr": 10,
-          "position": 8.6,
-          "sources": [
-            "google",
-            "bing"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 2,
-              "impressions": 16,
-              "ctr": 12.5,
-              "position": 9.4
-            },
-            "bing": {
-              "clicks": 0,
-              "impressions": 4,
-              "ctr": 0,
-              "position": 5.3
             }
           }
         },
@@ -12684,24 +12195,6 @@
               "impressions": 16,
               "ctr": 0,
               "position": 34.7
-            }
-          }
-        },
-        {
-          "page": "/",
-          "clicks": 1,
-          "impressions": 15,
-          "ctr": 6.67,
-          "position": 23.9,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 1,
-              "impressions": 15,
-              "ctr": 6.67,
-              "position": 23.9
             }
           }
         },
@@ -14641,6 +14134,24 @@
           }
         },
         {
+          "page": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
+            }
+          }
+        },
+        {
           "page": "/vergleiche/beste-futterautomaten-ohne-wlan/",
           "clicks": 0,
           "impressions": 1,
@@ -14909,6 +14420,24 @@
               "impressions": 6,
               "ctr": 0,
               "position": 46.5
+            }
+          }
+        },
+        {
+          "query": "petsafe bewertung",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 46.3,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 6,
+              "ctr": 0,
+              "position": 46.3
             }
           }
         },
@@ -15726,6 +15255,24 @@
               "impressions": 1,
               "ctr": 0,
               "position": 77
+            }
+          }
+        },
+        {
+          "query": "beuteerkennung",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 72,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 72
             }
           }
         },
@@ -17044,11 +16591,11 @@
           }
         },
         {
-          "query": "abs abs f filetype:fods",
+          "query": "about us offline filetype:fods",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 1,
+          "position": 4,
           "sources": [
             "bing"
           ],
@@ -17057,7 +16604,7 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 1
+              "position": 4
             }
           }
         },
@@ -17080,7 +16627,61 @@
           }
         },
         {
-          "query": "about us offline filetype:fods",
+          "query": "abs abs f filetype:fods",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 1
+            }
+          }
+        },
+        {
+          "query": "wie wird die pumpe eines katzenbrunnens gereinigt? gibt es eine anleitung wie diese auseinander gebaut werden soll? gibt es dazu einen film/viedeo?",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 1
+            }
+          }
+        },
+        {
+          "query": "hund trinkt viel und leckt sich die pfoten, stuhlgang weich, vermehrter speichelfluss",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
+            }
+          }
+        },
+        {
+          "query": "tractive tracker cat 6 batterielaufzeit",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -17098,11 +16699,11 @@
           }
         },
         {
-          "query": "hund trinkt plötzlich viel wasser",
+          "query": "wie reinige ich den katzenbrunnen der motor der das wasser hochpumpt",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 10,
+          "position": 2,
           "sources": [
             "bing"
           ],
@@ -17111,7 +16712,7 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 10
+              "position": 2
             }
           }
         },
@@ -17152,11 +16753,11 @@
           }
         },
         {
-          "query": "wie wird die pumpe eines katzenbrunnens gereinigt? gibt es eine anleitung wie diese auseinander gebaut werden soll? gibt es dazu einen film/viedeo?",
+          "query": "hund trinkt plötzlich viel wasser",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 1,
+          "position": 10,
           "sources": [
             "bing"
           ],
@@ -17165,133 +16766,7 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 1
-            }
-          }
-        },
-        {
-          "query": "trockenfutter besser als nassfutter auch die wahl des futters könne eine rolle spielen. nassfutter enthält einen hohen anteil an wasser und sorgt dadurch bei gleicher kalorienmenge für mehr volumen. trockenfutter ist dagegen energiereicher, so der rat. wird es ständig zur freien verfügung angeboten, könne das leichter zu einer übermäßigen kalorienaufnahme führen.",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 5
-            }
-          }
-        },
-        {
-          "query": "wie reinige ich den katzenbrunnen der motor der das wasser hochpumpt",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 2,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 2
-            }
-          }
-        },
-        {
-          "query": "tractive tracker cat 6 batterielaufzeit",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 4,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 4
-            }
-          }
-        },
-        {
-          "query": "automatenschlingen",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 5
-            }
-          }
-        },
-        {
-          "query": "wie oft sollte man einen katzentrinkbrunnen reinigen",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 3,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 3
-            }
-          }
-        },
-        {
-          "query": "hund trinkt viel und leckt sich die pfoten, stuhlgang weich, vermehrter speichelfluss",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 6
-            }
-          }
-        },
-        {
-          "query": "welpen futterzeiten?",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 6
+              "position": 10
             }
           }
         },
@@ -17368,7 +16843,7 @@
           }
         },
         {
-          "query": "hund ist laufend müde und schlapp",
+          "query": "automatenschlingen",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -17386,7 +16861,25 @@
           }
         },
         {
-          "query": "eversweet ultra",
+          "query": "wie oft sollte man einen katzentrinkbrunnen reinigen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 3,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 3
+            }
+          }
+        },
+        {
+          "query": "trockenfutter besser als nassfutter auch die wahl des futters könne eine rolle spielen. nassfutter enthält einen hohen anteil an wasser und sorgt dadurch bei gleicher kalorienmenge für mehr volumen. trockenfutter ist dagegen energiereicher, so der rat. wird es ständig zur freien verfügung angeboten, könne das leichter zu einer übermäßigen kalorienaufnahme führen.",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -17404,61 +16897,7 @@
           }
         },
         {
-          "query": "hund trinkt wenig",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 10,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 10
-            }
-          }
-        },
-        {
-          "query": "wieviel wasser sollte eine katze am tag trinken",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 10,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 10
-            }
-          }
-        },
-        {
-          "query": "honeyguardian automatic pet feeder",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 6
-            }
-          }
-        },
-        {
-          "query": "fressengerät",
+          "query": "welpen futterzeiten?",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -17530,6 +16969,24 @@
           }
         },
         {
+          "query": "eversweet ultra",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 5,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 5
+            }
+          }
+        },
+        {
           "query": "jungen hund abends müde machen",
           "clicks": 0,
           "impressions": 1,
@@ -17564,6 +17021,96 @@
               "position": 5
             }
           }
+        },
+        {
+          "query": "hund ist laufend müde und schlapp",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 5,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 5
+            }
+          }
+        },
+        {
+          "query": "fressengerät",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
+            }
+          }
+        },
+        {
+          "query": "hund trinkt wenig",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            }
+          }
+        },
+        {
+          "query": "wieviel wasser sollte eine katze am tag trinken",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            }
+          }
+        },
+        {
+          "query": "honeyguardian automatic pet feeder",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
+            }
+          }
         }
       ],
       "pageQueries": [
@@ -17582,6 +17129,14 @@
           "impressions": 9,
           "ctr": 0,
           "position": 81.2
+        },
+        {
+          "page": "/",
+          "query": "petsafe bewertung",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 46.3
         },
         {
           "page": "/hersteller/petlibro/",
@@ -17910,6 +17465,14 @@
           "impressions": 2,
           "ctr": 0,
           "position": 10.5
+        },
+        {
+          "page": "/",
+          "query": "beuteerkennung",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 72
         },
         {
           "page": "/",
@@ -19531,6 +19094,78 @@
               "position": 8.5
             }
           }
+        },
+        {
+          "date": "2026-08-24",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 25,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 4,
+              "ctr": 0,
+              "position": 25
+            }
+          }
+        },
+        {
+          "date": "2026-08-25",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 26,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 26
+            }
+          }
+        },
+        {
+          "date": "2026-08-26",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 47,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 47
+            }
+          }
+        },
+        {
+          "date": "2026-08-27",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 55.7,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 3,
+              "ctr": 0,
+              "position": 55.7
+            }
+          }
         }
       ],
       "crawl": [
@@ -20213,6 +19848,74 @@
           "dnsFailures": 0,
           "inIndex": 90,
           "inLinks": 0
+        },
+        {
+          "date": "2026-08-24T07:00:00.000Z",
+          "allOtherCodes": 47,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 101,
+          "code301": 11,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 10,
+          "dnsFailures": 0,
+          "inIndex": 97,
+          "inLinks": 0
+        },
+        {
+          "date": "2026-08-25T07:00:00.000Z",
+          "allOtherCodes": 53,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 109,
+          "code301": 11,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 14,
+          "dnsFailures": 0,
+          "inIndex": 105,
+          "inLinks": 0
+        },
+        {
+          "date": "2026-08-26T07:00:00.000Z",
+          "allOtherCodes": 54,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 119,
+          "code301": 11,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 19,
+          "dnsFailures": 0,
+          "inIndex": 115,
+          "inLinks": 0
+        },
+        {
+          "date": "2026-08-27T07:00:00.000Z",
+          "allOtherCodes": 53,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 127,
+          "code301": 11,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 28,
+          "dnsFailures": 0,
+          "inIndex": 123,
+          "inLinks": 0
         }
       ],
       "recommendations": [
@@ -20262,6 +19965,14 @@
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/produkt/petlibro-polar-wet-food-feeder/",
           "reason": "Für „/produkt/petlibro-polar-wet-food-feeder/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/",
+          "reason": "Für „/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {
@@ -20299,19 +20010,19 @@
     "12m": {
       "key": "12m",
       "label": "Letzte 12 Monate",
-      "startDate": "2025-08-24",
-      "endDate": "2026-08-23",
-      "comparisonStartDate": "2024-08-24",
-      "comparisonEndDate": "2025-08-23",
+      "startDate": "2025-08-28",
+      "endDate": "2026-08-27",
+      "comparisonStartDate": "2024-08-28",
+      "comparisonEndDate": "2025-08-27",
       "dataState": "combined",
       "partial": false,
       "lowData": false,
       "metrics": {
         "current": {
           "clicks": 22,
-          "impressions": 756,
-          "ctr": 2.91,
-          "position": 22.1
+          "impressions": 766,
+          "ctr": 2.87,
+          "position": 22.3
         },
         "previous": {
           "clicks": 0,
@@ -20322,7 +20033,7 @@
         "change": {
           "clicks": 100,
           "impressions": 100,
-          "ctr": 2.91,
+          "ctr": 2.87,
           "position": null
         }
       },
@@ -20436,6 +20147,24 @@
           }
         },
         {
+          "page": "/",
+          "clicks": 1,
+          "impressions": 23,
+          "ctr": 4.35,
+          "position": 31.1,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 1,
+              "impressions": 23,
+              "ctr": 4.35,
+              "position": 31.1
+            }
+          }
+        },
+        {
           "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
           "clicks": 0,
           "impressions": 23,
@@ -20472,6 +20201,31 @@
           }
         },
         {
+          "page": "/produkt/petkit-eversweet-ultra/",
+          "clicks": 2,
+          "impressions": 21,
+          "ctr": 9.52,
+          "position": 8.4,
+          "sources": [
+            "google",
+            "bing"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 2,
+              "impressions": 17,
+              "ctr": 11.76,
+              "position": 9.1
+            },
+            "bing": {
+              "clicks": 0,
+              "impressions": 4,
+              "ctr": 0,
+              "position": 5.3
+            }
+          }
+        },
+        {
           "page": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
           "clicks": 0,
           "impressions": 21,
@@ -20486,31 +20240,6 @@
               "impressions": 21,
               "ctr": 0,
               "position": 18.1
-            }
-          }
-        },
-        {
-          "page": "/produkt/petkit-eversweet-ultra/",
-          "clicks": 2,
-          "impressions": 20,
-          "ctr": 10,
-          "position": 8.6,
-          "sources": [
-            "google",
-            "bing"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 2,
-              "impressions": 16,
-              "ctr": 12.5,
-              "position": 9.4
-            },
-            "bing": {
-              "clicks": 0,
-              "impressions": 4,
-              "ctr": 0,
-              "position": 5.3
             }
           }
         },
@@ -20655,24 +20384,6 @@
               "impressions": 16,
               "ctr": 0,
               "position": 34.7
-            }
-          }
-        },
-        {
-          "page": "/",
-          "clicks": 1,
-          "impressions": 15,
-          "ctr": 6.67,
-          "position": 23.9,
-          "sources": [
-            "google"
-          ],
-          "providers": {
-            "google": {
-              "clicks": 1,
-              "impressions": 15,
-              "ctr": 6.67,
-              "position": 23.9
             }
           }
         },
@@ -22612,6 +22323,24 @@
           }
         },
         {
+          "page": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
+            }
+          }
+        },
+        {
           "page": "/vergleiche/beste-futterautomaten-ohne-wlan/",
           "clicks": 0,
           "impressions": 1,
@@ -22880,6 +22609,24 @@
               "impressions": 6,
               "ctr": 0,
               "position": 46.5
+            }
+          }
+        },
+        {
+          "query": "petsafe bewertung",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 46.3,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 6,
+              "ctr": 0,
+              "position": 46.3
             }
           }
         },
@@ -23697,6 +23444,24 @@
               "impressions": 1,
               "ctr": 0,
               "position": 77
+            }
+          }
+        },
+        {
+          "query": "beuteerkennung",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 72,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 72
             }
           }
         },
@@ -25015,11 +24780,11 @@
           }
         },
         {
-          "query": "abs abs f filetype:fods",
+          "query": "about us offline filetype:fods",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 1,
+          "position": 4,
           "sources": [
             "bing"
           ],
@@ -25028,7 +24793,7 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 1
+              "position": 4
             }
           }
         },
@@ -25051,7 +24816,61 @@
           }
         },
         {
-          "query": "about us offline filetype:fods",
+          "query": "abs abs f filetype:fods",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 1
+            }
+          }
+        },
+        {
+          "query": "wie wird die pumpe eines katzenbrunnens gereinigt? gibt es eine anleitung wie diese auseinander gebaut werden soll? gibt es dazu einen film/viedeo?",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 1
+            }
+          }
+        },
+        {
+          "query": "hund trinkt viel und leckt sich die pfoten, stuhlgang weich, vermehrter speichelfluss",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
+            }
+          }
+        },
+        {
+          "query": "tractive tracker cat 6 batterielaufzeit",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -25069,11 +24888,11 @@
           }
         },
         {
-          "query": "hund trinkt plötzlich viel wasser",
+          "query": "wie reinige ich den katzenbrunnen der motor der das wasser hochpumpt",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 10,
+          "position": 2,
           "sources": [
             "bing"
           ],
@@ -25082,7 +24901,7 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 10
+              "position": 2
             }
           }
         },
@@ -25123,11 +24942,11 @@
           }
         },
         {
-          "query": "wie wird die pumpe eines katzenbrunnens gereinigt? gibt es eine anleitung wie diese auseinander gebaut werden soll? gibt es dazu einen film/viedeo?",
+          "query": "hund trinkt plötzlich viel wasser",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 1,
+          "position": 10,
           "sources": [
             "bing"
           ],
@@ -25136,133 +24955,7 @@
               "clicks": 0,
               "impressions": 1,
               "ctr": 0,
-              "position": 1
-            }
-          }
-        },
-        {
-          "query": "trockenfutter besser als nassfutter auch die wahl des futters könne eine rolle spielen. nassfutter enthält einen hohen anteil an wasser und sorgt dadurch bei gleicher kalorienmenge für mehr volumen. trockenfutter ist dagegen energiereicher, so der rat. wird es ständig zur freien verfügung angeboten, könne das leichter zu einer übermäßigen kalorienaufnahme führen.",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 5
-            }
-          }
-        },
-        {
-          "query": "wie reinige ich den katzenbrunnen der motor der das wasser hochpumpt",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 2,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 2
-            }
-          }
-        },
-        {
-          "query": "tractive tracker cat 6 batterielaufzeit",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 4,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 4
-            }
-          }
-        },
-        {
-          "query": "automatenschlingen",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 5
-            }
-          }
-        },
-        {
-          "query": "wie oft sollte man einen katzentrinkbrunnen reinigen",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 3,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 3
-            }
-          }
-        },
-        {
-          "query": "hund trinkt viel und leckt sich die pfoten, stuhlgang weich, vermehrter speichelfluss",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 6
-            }
-          }
-        },
-        {
-          "query": "welpen futterzeiten?",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 6
+              "position": 10
             }
           }
         },
@@ -25339,7 +25032,7 @@
           }
         },
         {
-          "query": "hund ist laufend müde und schlapp",
+          "query": "automatenschlingen",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -25357,7 +25050,25 @@
           }
         },
         {
-          "query": "eversweet ultra",
+          "query": "wie oft sollte man einen katzentrinkbrunnen reinigen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 3,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 3
+            }
+          }
+        },
+        {
+          "query": "trockenfutter besser als nassfutter auch die wahl des futters könne eine rolle spielen. nassfutter enthält einen hohen anteil an wasser und sorgt dadurch bei gleicher kalorienmenge für mehr volumen. trockenfutter ist dagegen energiereicher, so der rat. wird es ständig zur freien verfügung angeboten, könne das leichter zu einer übermäßigen kalorienaufnahme führen.",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -25375,61 +25086,7 @@
           }
         },
         {
-          "query": "hund trinkt wenig",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 10,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 10
-            }
-          }
-        },
-        {
-          "query": "wieviel wasser sollte eine katze am tag trinken",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 10,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 10
-            }
-          }
-        },
-        {
-          "query": "honeyguardian automatic pet feeder",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6,
-          "sources": [
-            "bing"
-          ],
-          "providers": {
-            "bing": {
-              "clicks": 0,
-              "impressions": 1,
-              "ctr": 0,
-              "position": 6
-            }
-          }
-        },
-        {
-          "query": "fressengerät",
+          "query": "welpen futterzeiten?",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -25501,6 +25158,24 @@
           }
         },
         {
+          "query": "eversweet ultra",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 5,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 5
+            }
+          }
+        },
+        {
           "query": "jungen hund abends müde machen",
           "clicks": 0,
           "impressions": 1,
@@ -25535,6 +25210,96 @@
               "position": 5
             }
           }
+        },
+        {
+          "query": "hund ist laufend müde und schlapp",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 5,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 5
+            }
+          }
+        },
+        {
+          "query": "fressengerät",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
+            }
+          }
+        },
+        {
+          "query": "hund trinkt wenig",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            }
+          }
+        },
+        {
+          "query": "wieviel wasser sollte eine katze am tag trinken",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            }
+          }
+        },
+        {
+          "query": "honeyguardian automatic pet feeder",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6,
+          "sources": [
+            "bing"
+          ],
+          "providers": {
+            "bing": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
+            }
+          }
         }
       ],
       "pageQueries": [
@@ -25553,6 +25318,14 @@
           "impressions": 9,
           "ctr": 0,
           "position": 81.2
+        },
+        {
+          "page": "/",
+          "query": "petsafe bewertung",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 46.3
         },
         {
           "page": "/hersteller/petlibro/",
@@ -25881,6 +25654,14 @@
           "impressions": 2,
           "ctr": 0,
           "position": 10.5
+        },
+        {
+          "page": "/",
+          "query": "beuteerkennung",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 72
         },
         {
           "page": "/",
@@ -27502,6 +27283,78 @@
               "position": 8.5
             }
           }
+        },
+        {
+          "date": "2026-08-24",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 25,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 4,
+              "ctr": 0,
+              "position": 25
+            }
+          }
+        },
+        {
+          "date": "2026-08-25",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 26,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 26
+            }
+          }
+        },
+        {
+          "date": "2026-08-26",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 47,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 47
+            }
+          }
+        },
+        {
+          "date": "2026-08-27",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 55.7,
+          "sources": [
+            "google"
+          ],
+          "providers": {
+            "google": {
+              "clicks": 0,
+              "impressions": 3,
+              "ctr": 0,
+              "position": 55.7
+            }
+          }
         }
       ],
       "crawl": [
@@ -28184,6 +28037,74 @@
           "dnsFailures": 0,
           "inIndex": 90,
           "inLinks": 0
+        },
+        {
+          "date": "2026-08-24T07:00:00.000Z",
+          "allOtherCodes": 47,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 101,
+          "code301": 11,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 10,
+          "dnsFailures": 0,
+          "inIndex": 97,
+          "inLinks": 0
+        },
+        {
+          "date": "2026-08-25T07:00:00.000Z",
+          "allOtherCodes": 53,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 109,
+          "code301": 11,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 14,
+          "dnsFailures": 0,
+          "inIndex": 105,
+          "inLinks": 0
+        },
+        {
+          "date": "2026-08-26T07:00:00.000Z",
+          "allOtherCodes": 54,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 119,
+          "code301": 11,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 19,
+          "dnsFailures": 0,
+          "inIndex": 115,
+          "inLinks": 0
+        },
+        {
+          "date": "2026-08-27T07:00:00.000Z",
+          "allOtherCodes": 53,
+          "blockedByRobotsTxt": 0,
+          "code2xx": 127,
+          "code301": 11,
+          "code302": 0,
+          "code4xx": 0,
+          "code5xx": 0,
+          "connectionTimeout": 0,
+          "containsMalware": 0,
+          "crawlErrors": 0,
+          "crawledPages": 28,
+          "dnsFailures": 0,
+          "inIndex": 123,
+          "inLinks": 0
         }
       ],
       "recommendations": [
@@ -28233,6 +28154,14 @@
           "title": "Keine Bing-Impressionen im Zeitraum",
           "page": "/produkt/petlibro-polar-wet-food-feeder/",
           "reason": "Für „/produkt/petlibro-polar-wet-food-feeder/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
+          "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
+        },
+        {
+          "priority": "low",
+          "type": "google-only-visibility",
+          "title": "Keine Bing-Impressionen im Zeitraum",
+          "page": "/",
+          "reason": "Für „/“ liegen Google-, aber keine Bing-Impressionen im gewählten Zeitraum vor.",
           "action": "Bing-Sichtbarkeit, Snippet und Crawl-Hinweise prüfen."
         },
         {

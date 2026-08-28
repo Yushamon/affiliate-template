@@ -59,10 +59,10 @@ images:
     - src: ../../assets/images/products/petlibro-dockstream-cordless/gallery-3.webp
       alt: PETLIBRO Dockstream Cordless im Katzenhaushalt
 price:
-  current: 59.98
+  current: 72.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-21T11:27:52.909Z"
+  checkedAt: "2026-08-28T09:04:52.134Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -77,12 +77,12 @@ rating: 4
 score: 79
 
 priceState: "available"
-priceUpdated: "2026-08-21T11:27:52.909Z"
+priceUpdated: "2026-08-28T09:04:52.134Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-21T11:27:52.909Z"
+availabilityUpdated: "2026-08-28T09:04:52.134Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

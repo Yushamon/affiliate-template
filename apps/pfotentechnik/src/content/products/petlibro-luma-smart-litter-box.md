@@ -37,10 +37,10 @@ images:
     - src: "../../assets/images/products/petlibro-luma-smart-litter-box/gallery-3.webp"
       alt: "PETLIBRO Luma Smart Self-Cleaning Litter Box, Produktansicht 3"
 price:
-  current: 559.99
+  current: 589.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-21T11:28:03.918Z"
+  checkedAt: "2026-08-28T09:05:03.482Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -130,12 +130,12 @@ externalEvidence:
     editorialAssessment: "Für die Luma liegt erstmals eine belastbare unabhängige mehrwöchige Hands-on-Review vor. Die aktuelle Nutzerbasis bestätigt sowohl schnelle Akzeptanz als auch einzelne Schwächen der Reinigungs- und Trennlogik. Die Trustpilot-Gesamtwertung ist jedoch markenweit und darf nicht als Luma-Produktbewertung dargestellt werden."
   note: "Cats.com bezieht sich eindeutig auf die aktuelle PETLIBRO Luma. Trustpilot wird ausschließlich als markenweite Nutzerplattform geführt; nur ausdrücklich auf Luma bezogene Erfahrungsinhalte fließen vorsichtig in die Einordnung ein."
 priceState: "available"
-priceUpdated: "2026-08-21T11:28:03.918Z"
+priceUpdated: "2026-08-28T09:05:03.482Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-21T11:28:03.918Z"
+availabilityUpdated: "2026-08-28T09:05:03.482Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

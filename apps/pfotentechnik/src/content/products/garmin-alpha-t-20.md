@@ -61,10 +61,10 @@ images:
     - src: ../../assets/images/guides/gps-tracker/missing-pet.webp
       alt: Symbolische Darstellung einer Hundeortung im Gelände
 price:
-  current: 312.89
+  current: 308.85
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-17T14:41:36.336Z"
+  checkedAt: "2026-08-28T09:04:01.845Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -79,12 +79,12 @@ rating: 4
 score: 81
 
 priceState: "available"
-priceUpdated: "2026-08-17T14:41:36.336Z"
+priceUpdated: "2026-08-28T09:04:01.845Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-17T14:41:36.336Z"
+availabilityUpdated: "2026-08-28T09:04:01.845Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

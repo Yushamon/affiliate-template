@@ -25,10 +25,10 @@ images:
     alt: "Enabot EBO Air 2 in hochwertiger Produktansicht"
   gallery: []
 price:
-  current: 129.99
+  current: 159.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-07T10:03:40.815Z"
+  checkedAt: "2026-08-28T09:03:51.768Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -103,12 +103,12 @@ affiliate:
   rel: "sponsored nofollow noopener"
   target: "_blank"
 priceState: "available"
-priceUpdated: "2026-08-07T10:03:40.815Z"
+priceUpdated: "2026-08-28T09:03:51.768Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-07T10:03:40.815Z"
+availabilityUpdated: "2026-08-28T09:03:51.768Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

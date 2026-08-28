@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T12:23:34.714Z",
+  "generatedAt": "2026-08-28T09:03:20.419Z",
   "errors": 9,
   "warnings": 93,
   "portfolio": [],
@@ -658,7 +658,7 @@
         "layout": "comparison",
         "description": ">-",
         "publishedAt": "2026-07-10",
-        "updatedAt": "2026-07-30",
+        "updatedAt": "2026-08-26",
         "author": {
           "name": "PfotenTechnik Redaktion",
           "role": "Redaktion"
@@ -7575,10 +7575,10 @@
       "type": "page",
       "data": {
         "title": "Futterautomaten für Katzen",
-        "seoTitle": "Futterautomat für Katzen: Modelle im Vergleich",
+        "seoTitle": "Futterautomat für Katzen: Futterart, Portion & Auswahl",
         "slug": "futterautomat-katze",
-        "description": "Futterautomaten für Katzen im Vergleich: Portionierung, App, Mehrkatzenhaushalt und Nassfutter richtig einordnen.",
-        "seoDescription": "Welcher Futterautomat passt zu Katzen? Vergleich von App-Modellen, Nassfutter-Lösungen und Funktionen für verlässliche Routinen.",
+        "description": "Futterautomaten für Katzen auswählen: Futterart, Portionsgröße, Stromreserve und Mehrkatzenhaushalt richtig einordnen.",
+        "seoDescription": "Welcher Futterautomat passt zur Katze? Futterart, Portionsgröße, Mehrkatzenhaushalt, Stromreserve und App vor dem Modellvergleich klären.",
         "category": "futterautomaten",
         "categoryLabel": "Futterautomaten",
         "categoryPath": "/smarte-futterautomaten/",
@@ -7603,7 +7603,7 @@
         ],
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "publishedAt": "2026-07-08",
-        "updatedAt": "2026-07-08",
+        "updatedAt": "2026-08-24",
         "navigation": {
           "show": false,
           "label": "Für Katzen",
@@ -7615,7 +7615,7 @@
             "wissen"
           ],
           "title": "Futterautomaten für Katzen",
-          "description": "Futterautomaten für Katzen im Vergleich: Portionierung, App, Mehrkatzenhaushalt und Nassfutter richtig einordnen.",
+          "description": "Futterart, Portionsgröße, Stromreserve und Zugang klären, bevor konkrete Modelle verglichen werden.",
           "icon": "📖",
           "order": 300
         },
@@ -7623,29 +7623,8 @@
         "project": "pfotentechnik",
         "heroImageKey": "feederHero",
         "premiumBlocks": [
-          "type: \"answer",
-          "type: \"quickFacts"
+          "type: \"answer"
         ],
-        "comparisonProducts": [
-          "petlibro-granary-wifi-feeder",
-          "petkit-fresh-element-solo",
-          "xiaomi-smart-pet-food-feeder-2",
-          "cat-mate-c500"
-        ],
-        "comparisonRecommendation": {
-          "title": "Der Granary WiFi ist die vielseitigste Trockenfutter-Wahl",
-          "text": "Er bietet verständliche App-Funktionen und ausreichend Vorrat. Für kleine Stellflächen ist der Fresh Element Solo interessant; bei Nassfutter passt die Konstruktion des Cat Mate C500 besser.",
-          "tableTitle": "Futterautomaten für Katzen verglichen",
-          "cardsTitle": "Passende Modelle im Detail",
-          "criteria": [
-            "Kleine Portionen",
-            "App & Zeitpläne",
-            "Lautstärke",
-            "Reinigung",
-            "Ausfallsicherheit",
-            "Preis-Leistung"
-          ]
-        },
         "healthBridge": {
           "eyebrow": "Gesundheit",
           "title": "Verändertes Fressverhalten ernst nehmen",
@@ -8425,7 +8404,7 @@
           "role": "Redaktion"
         },
         "publishedAt": "2026-08-06",
-        "updatedAt": "2026-08-16",
+        "updatedAt": "2026-08-25",
         "hub": {
           "sections": [
             "wissen",
@@ -8522,7 +8501,8 @@
           ]
         },
         "evidenceSources": [
-          "source: \"Research-Bundle Haustierkameras 2026"
+          "source: \"Research-Bundle Haustierkameras 2026",
+          "source: \"Reolink E1 Zoom Deutschland"
         ]
       },
       "issues": [
@@ -9601,7 +9581,7 @@
         "layout": "page",
         "description": "Cornerstone für Katzenklappen: Nutzeraufgabe, Mikrochip-Zugang, Mehrkatzen-Rechte, App, Beuteerkennung, Passform und Einbau in der richtigen Reihenfolge klären.",
         "publishedAt": "2026-08-04",
-        "updatedAt": "2026-08-16",
+        "updatedAt": "2026-08-25",
         "author": {
           "name": "PfotenTechnik Redaktion",
           "role": "Redaktion"
@@ -10028,7 +10008,7 @@
         "categoryLabel": "Trinkbrunnen-Wissen",
         "categoryPath": "/wissen/",
         "publishedAt": "2026-07-13",
-        "updatedAt": "2026-07-25",
+        "updatedAt": "2026-08-24",
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "tags": [
           "katze",
@@ -12418,7 +12398,7 @@
         ],
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion für smarte Haustiertechnik\" }",
         "publishedAt": "2026-07-20",
-        "updatedAt": "2026-07-20",
+        "updatedAt": "2026-08-24",
         "hub": "{ sections: [\"wissen\", \"gps-tracker\"], title: \"Wie funktionieren GPS-Tracker?\", description: \"Position, Übertragung und App als getrennte Kette.\", icon: \"🛰️\", order: 361, featured: true }",
         "contentPlatform": "{ version: 2, cluster: \"gps-tracker\", intent: \"informational\", animal: \"both\", products: [], decision: \"off\", blocks: [summary, checklist, mistakes], summary: [\"Satelliten liefern Signale; der Tracker berechnet seine Position selbst.\", \"Mobilfunk oder VHF überträgt diese Position erst zum Halter.\", \"Live-Ortung ist eine Folge diskreter Updates, kein lückenloser Film.\"], suitableFor: [\"technische Kaufvorbereitung\"], notSuitableFor: [\"Garantien bei Funklöchern\"], checklist: [\"Zeitstempel prüfen\", \"Übertragungsweg kennen\", \"Akku und Abdeckung testen\"], mistakes: [\"GPS und Mobilfunk verwechseln\", \"Kartenpunkt ohne Zeitstempel lesen\"], faqMode: \"manual\", theme: \"blue\" }",
         "heroImage": "{ src: \"../../assets/images/guides/gps-tracker/how-it-works.webp\", alt: \"Datenkette eines Haustiertrackers von Satelliten über Mobilfunk und Server zur App\" }",
@@ -12433,7 +12413,8 @@
           "{ question: \"Was bedeutet Live-Tracking?\", answer: \"Live bedeutet kurze, wiederholte Aktualisierungsintervalle. Es ist kein kontinuierliches Video der Bewegung. Zwischen zwei Punkten bewegt sich das Tier weiter; zusätzlich entstehen Mess-, Sende- und Serververzögerung. Deshalb ist der Zeitstempel genauso wichtig wie der Kartenpunkt.\" }",
           "{ question: \"Wie funktioniert ein virtueller Zaun?\", answer: \"Du definierst eine Zone in der App. Sobald eine übertragene Position außerhalb erkannt wird, erzeugt der Dienst eine Meldung. Der Alarm ist technisch verzögert und kein echter Zaun. Energiesparmodus und schlechter Empfang können die Reaktionszeit verlängern.\" }",
           "{ question: \"Warum funktioniert GPS innen schlechter?\", answer: \"Dach, Wände und Metall schwächen Satellitensignale; Reflexionen erzeugen zusätzliche Wege. Manche Systeme nutzen WLAN- oder Bluetooth-Nähe als Hilfsinformation, doch das ist nicht dasselbe wie ein sauberer Satelliten-Fix.\" }",
-          "{ question: \"Was passiert ohne Mobilfunk?\", answer: \"Ein Mobilfunktracker kann unter Umständen weiter Positionen bestimmen, sie aber nicht sofort zur App übertragen. Manche Geräte speichern Verlauf und senden später. VHF-Systeme benötigen keinen Mobilfunk, müssen aber den eigenen Funkempfänger erreichen.\" }"
+          "{ question: \"Was passiert ohne Mobilfunk?\", answer: \"Ein Mobilfunktracker kann unter Umständen weiter Positionen bestimmen, sie aber nicht sofort zur App übertragen. Manche Geräte speichern Verlauf und senden später. VHF-Systeme benötigen keinen Mobilfunk, müssen aber den eigenen Funkempfänger erreichen.\" }",
+          "{ question: \"Warum piept ein GPS-Tracker für Haustiere?\", answer: \"Ein Ton kommt nicht vom GPS-Satellitensignal selbst. Je nach Modell kann er zu einer Such- oder Tonfunktion, Kopplung, Statusmeldung oder Warnung gehören. Wenn ein Tracker regelmäßig und unerwartet piept, prüfe zuerst App-Einstellungen und das Handbuch des konkreten Modells statt den Ton als Ortungssignal zu interpretieren.\" }"
         ]
       },
       "issues": []
@@ -17130,7 +17111,8 @@
         "manufacturer": {
           "key": "feelneedy",
           "name": "FEELNEEDY",
-          "slug": "feelneedy"
+          "slug": "feelneedy",
+          "href": "/hersteller/"
         },
         "category": {
           "key": "trinkbrunnen",
@@ -17427,7 +17409,8 @@
           "current": 199,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:39:22.314Z",
+          "comparisonText": "https://amzn.to/46asA9o",
+          "checkedAt": "2026-08-21T11:56:26.290Z",
           "source": {
             "id": "manual",
             "label": "amazon.de",
@@ -17513,12 +17496,12 @@
           "target": "_blank"
         },
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:39:22.314Z",
+        "priceUpdated": "2026-08-21T11:56:26.290Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:39:22.314Z",
+        "availabilityUpdated": "2026-08-21T11:56:26.290Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete"
@@ -17657,6 +17640,12 @@
           "beste-haustierkameras"
         ],
         "comparisonFilters": "{ animal: [\"cat\"], petSize: [\"small\", \"medium\", \"large\"], foodType: [] }",
+        "failureModes": {
+          "powerOutage": "{ status: unknown, behavior: \"Notstrom und Wiederanlauf nach Stromausfall sind nicht belegt.\" }",
+          "wifiOutage": "{ status: unknown, behavior: \"Der lokale Funktionsumfang ohne WLAN ist nicht belegt.\" }",
+          "internetOutage": "{ status: unknown, behavior: \"Das Verhalten von Livebild und Interaktion ohne Internet ist nicht dokumentiert.\" }",
+          "cloudOutage": "{ status: unknown, behavior: \"Nanny-Funktionen sind dienstabhängig; Restfunktionen bei einem konkreten Dienstausfall sind nicht belegt.\" }"
+        },
         "decisionJourney": "{ cluster: \"haustierkameras\", stage: \"decision\", intent: \"furbo-katzenkamera-pruefen\", primaryQuestion: \"Sind Feder-Spielzeug und Leckerliwurf wichtiger als lokale Speicherung und niedrige Folgekosten?\", next: [\"/vergleiche/beste-haustierkameras/\"], fallback: [\"/haustierkameras/\", \"/hersteller/furbo/\"] }",
         "faq": [
           "{ question: \"Ist die Katzenkamera nur eine andere Farbe der Hundekamera?\", answer: \"Nein. Furbo führt sie als eigenes Katzenmodell mit Feather Wand Toy und Meowing Alert im europäischen Sortiment.\" }",
@@ -18184,6 +18173,10 @@
             "kapazitat": "Ein Hundehalsbandgerät; Anzahl gleichzeitig verfolgbarer Hunde vom Handgerät abhängig"
           }
         },
+        "evidenceSources": [
+          "source: \"Garmin Alpha T 20 K Produktseite",
+          "source: \"Garmin Alpha T 20 Benutzerhandbuch"
+        ],
         "metadata": {
           "version": "4.0.1",
           "normalizedAt": "2026-07-26",
@@ -18476,6 +18469,10 @@
             "reinigung": "Band, Antenne, Akku und Kontaktpunkte nach Garmin-Anleitung kontrollieren."
           }
         },
+        "evidenceSources": [
+          "source: \"Garmin Alpha TT 25 Produktseite",
+          "source: \"Garmin Alpha TT 25 Benutzerhandbuch – technische Daten"
+        ],
         "metadata": {
           "version": "4.0.1",
           "normalizedAt": "2026-07-26",
@@ -19774,7 +19771,7 @@
         "category": "{ key: \"automatische-katzentoiletten\", label: \"Automatische Katzentoiletten\", path: \"/automatische-katzentoiletten/\" }",
         "productUrl": "/produkt/litter-robot-4/",
         "publishedAt": "2026-08-16",
-        "updatedAt": "2026-08-16",
+        "updatedAt": "2026-08-26",
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "seo": "{ title: \"Litter-Robot 4: Größe, Gewicht und App im Check\", description: \"Litter-Robot 4 mit 40-cm-Eingang, 1,36-kg-Mindestgewicht, Whisker-App, Streu- und Abfallstand sowie Folgekosten einordnen.\", canonical: \"/produkt/litter-robot-4/\", sitemap: true, priority: 0.8 }",
         "hub": "{ sections: [\"produkte\", \"automatische-katzentoiletten\"] }",
@@ -19903,7 +19900,9 @@
           "{ label: \"Katzengewicht\", value: \"Automatik ab 1,36 kg; EU-Seite nennt bis 11,33 kg als geeigneten Bereich\" }",
           "{ label: \"Mehrkatzenbetrieb\", value: \"Bis zu vier Katzen laut Hersteller\" }",
           "{ label: \"Sicherheit\", value: \"Laser- und Gewichtssensoren mit Zyklusverzögerung; Herstellerangabe, kein eigener Sicherheitstest\" }",
-          "{ label: \"Streu\", value: \"Klumpende, siebfähige Streu; aktuelle Kompatibilitätsliste prüfen\" }",
+          "{ label: \"Streu\", value: \"Standardgewichtige klumpende Tonstreu empfohlen; einzelne siebgängige Silikakristalle möglich; nichtklumpende, lose klumpende, papierbasierte, Holzpellet- und viele pflanzliche Streus ungeeignet\" }",
+          "{ label: \"Beutel\", value: \"Whisker-Einlagen optional; transparente oder weiße 30-49-l-Müllbeutel funktionieren laut Hersteller, dunkle Beutel können die Füllstandsmessung beeinträchtigen\" }",
+          "{ label: \"Aktivkohlefilter\", value: \"Optional für den Betrieb; Wechsel unter normalen Bedingungen ungefähr monatlich beziehungsweise nach Bedarf\" }",
           "{ label: \"Stromversorgung\", value: \"15 V Gleichstrom\" }",
           "{ label: \"App\", value: \"Whisker-App für Nutzung, Gewicht, Streu- und Abfallfüllstand\" }",
           "{ label: \"Kamera\", value: \"Keine integrierte Dualkamera wie beim Litter-Robot 5 Pro\" }"
@@ -19925,11 +19924,11 @@
             "katzenprofil": "1,36-11,33 kg; bis zu 4 Katzen laut Hersteller",
             "sicherheit": "Laser- und Gewichtssensoren; Zyklusverzögerung",
             "mehrkatzen": "Bis zu 4 Katzen; Gewicht und Nutzung in der App",
-            "streu": "Klumpend und siebfähig",
-            "wartung": "Versiegelte Abfallschublade; Beutel und Filter",
+            "streu": "Standardgewichtige klumpende Tonstreu empfohlen; Ausschlüsse dokumentiert; keine feste Körnungsgrenze genannt",
+            "wartung": "Versiegelte Abfallschublade; Whisker-Einlagen oder helle/transparente 30-49-l-Müllbeutel; optionaler Aktivkohlefilter etwa monatlich/nach Bedarf",
             "geruch": "Geschlossene Schublade; optional OdorTrap",
             "appdaten": "Nutzung, Gewicht, Streu- und Abfallfüllstand",
-            "folgekosten": "Beutel, Streu, Filter und optionales Zubehör",
+            "folgekosten": "Streu; normale passende Müllbeutel möglich; optionaler Aktivkohlefilter/OdorTrap; laufende Kosten mangels belastbarer EUR-Preisgrundlage unknown",
             "platz": "75 × 56 × 68,6 cm; 10,9 kg",
             "kaufrolle": "Whisker-Referenzplattform ohne Kamera",
             "bauform_einstieg": "Geschlossen; 30,5 cm zum Eingang",
@@ -19958,6 +19957,8 @@
         "evidenceSources": [
           "{ source: \"Whisker EU – Litter-Robot 4\", url: \"https://www.litter-robot.com/eu/de/litter-robot-4.html\", accessedAt: \"2026-08-16\", assertion: \"Eingang, Gewicht, Katzenprofil, Mehrkatzenangabe, App und Strom sind Herstellerangaben.\", fields: [\"specs\", \"decision\", \"comparisonData\"] }",
           "{ source: \"Litter-Robot 4 Bedienungsanleitung\", url: \"https://www.litter-robot.com/manual_pdf/Litter-Robot-4-Manual-EN-DE-FR-IT_LR4-8018-0B.pdf\", accessedAt: \"2026-08-16\", assertion: \"Außenmaße, Einstiegshöhe, Innenraum und Betriebsgrenzen stammen aus dem Herstellerhandbuch.\", fields: [\"specs\", \"faq\"] }",
+          "{ source: \"Whisker – Litter-Robot 4 Use and Care\", url: \"https://www.litter-robot.com/support/article/litter-robot-4-use-and-care/\", accessedAt: \"2026-08-26\", assertion: \"Normale 30-49-l-Müllbeutel sind möglich; dunkle Beutel können die Füllstandsmessung beeinträchtigen. Der optionale Aktivkohlefilter hält unter normalen Bedingungen ungefähr einen Monat.\", fields: [\"specs\", \"comparisonData\"] }",
+          "{ source: \"Whisker – Litter-Robot 4 Produkt-FAQ\", url: \"https://www.litter-robot.com/litter-robot/litter-robot-4.html\", accessedAt: \"2026-08-26\", assertion: \"Empfohlene und ausgeschlossene Streuarten; keine feste Partikelgröße angegeben.\", fields: [\"specs\", \"comparisonData\"] }",
           "source: \"Good Housekeeping · Litter-Robot 4",
           "source: \"WIRED · Litter-Robot 4",
           "source: \"Trustpilot · Litter Robot EU"
@@ -22809,6 +22810,10 @@
             "kapazitat": "27 Monate Tracking enthalten"
           }
         },
+        "evidenceSources": [
+          "source: \"PAJ GPS – PET Finder 4G Mini",
+          "source: \"PAJ GPS – PET Finder 4G Mini Schnellstart-Anleitung"
+        ],
         "metadata": {
           "version": "4.0.1",
           "normalizedAt": "2026-07-26",
@@ -23231,6 +23236,18 @@
         "useCase": "Leichter Mobilfunktracker mit Audio-ID und Warnfunktionen",
         "gps": "{ animal: [\"dog\"], minimumPetWeightKg: 3.5, deviceWeightGrams: 27, weightBasis: \"device\", subscriptionRequired: true, includedServiceMonths: 0, transmission: \"lte\", batteryMaxDays: 8, batteryCondition: \"Herstellermaximum; abhängig von Ortung, Netz und Warnfunktionen\", waterproofRating: \"IP68\", liveTracking: true, virtualFence: true, activityTracking: true, attachmentType: \"collar-attachment\" }",
         "comparisonData": "{ version: 1, custom: { einsatzgebiet: \"Audio-ID und Warnfunktionen\", hundegroesse: \"Hunde über 3,5 kg\", ortung: \"GPS, WLAN und Bluetooth\", abo: \"eSIM-Abonnement erforderlich\", gewicht: \"27 g\", mindestgewicht: \"3,5 kg\", kamera: \"Nein\", nachtsicht: \"Tracking-Licht, keine Kamera\", akkulaufzeit: \"Bis 8 Tage Herstellerwert\", geofencing: \"Sicherheitszonen\", audio: \"Audio-ID und Pawfit Voice\", groesse: \"ca. 48 × 33 × 14 mm\" } }",
+        "failureModes": {
+          "powerOutage": "{ status: notApplicable, behavior: \"Der Tracker ist akkubetrieben; ein Haushalts-Stromausfall ist kein eigener Betriebsmodus.\" }",
+          "wifiOutage": "{ status: unknown, behavior: \"Ein WLAN-Ausfallverhalten ist für dieses Mobilfunkprodukt nicht belastbar dokumentiert.\" }",
+          "internetOutage": {
+            "status": "unavailable",
+            "behavior": "Die Fernortung benötigt die eSIM-Mobilfunkverbindung; lokale Aufzeichnung, spätere Synchronisierung und Restfunktionen im Funkloch sind nicht belegt.",
+            "sourceUrl": "https://www.pawfit.com/de-us/product/pawfit-3-pet-tracker.html",
+            "sourceType": "manufacturer",
+            "verifiedAt": "2026-08-28"
+          },
+          "cloudOutage": "{ status: unknown, behavior: \"Das Verhalten bei Ausfall des Pawfit-Dienstes ist nicht belastbar dokumentiert.\" }"
+        },
         "comparisonFilters": "{ animal: [\"dog\"], petSize: [\"small\", \"medium\", \"large\"], foodType: [], app: true, camera: false }",
         "alternatives": [
           "weenect-xs",
@@ -26338,7 +26355,7 @@
         "category": "{ key: \"automatische-katzentoiletten\", label: \"Automatische Katzentoiletten\", path: \"/automatische-katzentoiletten/\" }",
         "productUrl": "/produkt/petkit-purobot-crystal-duo/",
         "publishedAt": "2026-08-21",
-        "updatedAt": "2026-08-21",
+        "updatedAt": "2026-08-25",
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "seo": "{ title: \"PETKIT PUROBOT CRYSTAL DUO im Datencheck\", description: \"Offene PETKIT Katzentoilette P9905: Einstieg, Crystal-Litter-System, Kamera, Care+, Grenzen und laufende Kosten.\", canonical: \"/produkt/petkit-purobot-crystal-duo/\", sitemap: true, priority: 0.8 }",
         "hub": "{ sections: [\"produkte\", \"automatische-katzentoiletten\"] }",
@@ -26350,13 +26367,13 @@
           "kristallstreu"
         ],
         "images": {
-          "hero": "{ src: \"../../assets/images/products/petkit-purobot-crystal-duo/hero.webp\", alt: \"Temporärer Editorial-Platzhalter für PETKIT PUROBOT CRYSTAL DUO; noch kein Produktbild\" }",
-          "thumbnail": "{ src: \"../../assets/images/products/petkit-purobot-crystal-duo/thumbnail.webp\", alt: \"Temporärer Platzhalter für die kompakte Ansicht des PETKIT PUROBOT CRYSTAL DUO\" }",
-          "comparison": "{ src: \"../../assets/images/products/petkit-purobot-crystal-duo/comparison.webp\", alt: \"Temporärer Platzhalter für PETKIT PUROBOT CRYSTAL DUO im Vergleich\" }",
+          "hero": "{ src: \"../../assets/images/products/petkit-purobot-crystal-duo/hero.webp\", alt: \"PETKIT PUROBOT CRYSTAL DUO mit offener Schale und App-Ansicht\" }",
+          "thumbnail": "{ src: \"../../assets/images/products/petkit-purobot-crystal-duo/thumbnail.webp\", alt: \"PETKIT PUROBOT CRYSTAL DUO in kompakter Produktansicht\" }",
+          "comparison": "{ src: \"../../assets/images/products/petkit-purobot-crystal-duo/comparison.webp\", alt: \"PETKIT PUROBOT CRYSTAL DUO im Produktvergleich\" }",
           "gallery": [
-            "{ src: \"../../assets/images/products/petkit-purobot-crystal-duo/gallery-1.webp\", alt: \"Geplanter Bildslot: offene Bauweise und niedriger Einstieg des PETKIT PUROBOT CRYSTAL DUO; aktuell Platzhalter\" }",
-            "{ src: \"../../assets/images/products/petkit-purobot-crystal-duo/gallery-2.webp\", alt: \"Geplanter Bildslot: Rechen, Crystal Litter und Tray des PETKIT PUROBOT CRYSTAL DUO; aktuell Platzhalter\" }",
-            "{ src: \"../../assets/images/products/petkit-purobot-crystal-duo/gallery-3.webp\", alt: \"Geplanter Bildslot: PETKIT PUROBOT CRYSTAL DUO in einer Nutzungssituation mit Katze; aktuell Platzhalter\" }"
+            "{ src: \"../../assets/images/products/petkit-purobot-crystal-duo/gallery-1.webp\", alt: \"PETKIT PUROBOT CRYSTAL DUO mit niedrigem offenem Einstieg neben Katzen\" }",
+            "{ src: \"../../assets/images/products/petkit-purobot-crystal-duo/gallery-2.webp\", alt: \"Einwegschale des PETKIT PUROBOT CRYSTAL DUO beim Austausch\" }",
+            "{ src: \"../../assets/images/products/petkit-purobot-crystal-duo/gallery-3.webp\", alt: \"Sensorpositionen am PETKIT PUROBOT CRYSTAL DUO\" }"
           ]
         },
         "price": {
@@ -26373,6 +26390,25 @@
         "priceAutomation": "editorial",
         "rating": 3.8,
         "ratings": "{ einstieg: 4.6, geruchskontrolle: 3.8, sicherheit: 3.8, app: 4.0, wartung: 3.4 }",
+        "externalEvidence": {
+          "professionalReviews": [
+            "publisher: \"One Man Five Cats"
+          ],
+          "userReviews": [
+            "platform: \"PETKIT Shop"
+          ],
+          "consensus": {
+            "strengths": [
+              "finding: \"Der offene, niedrige Zugang ist der am klarsten gestützte praktische Unterschied zu Trommelmodellen."
+            ],
+            "weaknesses": [
+              "finding: \"Die Bindung an Einwegschale und Crystal Litter erzeugt laufende Kosten und eingeschränkte Streuwahl."
+            ],
+            "editorialAssessment": ">-",
+            "Die externe Datenbasis ist noch klein": "ein offengelegt zugeschickter Praxiseindruck und Shop-Nutzerstimmen."
+          },
+          "note": ">-"
+        },
         "decision": {
           "bestFor": [
             "Große",
@@ -26415,7 +26451,9 @@
           "{ label: \"Verbrauchsmaterial\", value: \"Ausschließlich PETKIT Crystal Litter Set aus Kristallstreu und Einwegschale; N60-Geruchszubehör\" }",
           "{ label: \"Kamera\", value: \"Fester Schalenblick, Einweg-Audio, Livebild und Ereignisclips; Kamera abschalt- und zeitplanbar\" }",
           "{ label: \"App/WLAN\", value: \"PETKIT App; 2,4- und 5-GHz-WLAN laut EU-Produktseite\" }",
-          "{ label: \"Care+\", value: \"Vollständige HD-Videowiedergabe und weitere Videoprivilegien tarifabhängig\" }"
+          "{ label: \"Care+\", value: \"Vollständige HD-Videowiedergabe und weitere Videoprivilegien tarifabhängig\" }",
+          "{ label: \"Nenneingang\", value: \"12 V Gleichstrom, 2 A\" }",
+          "{ label: \"Material\", value: \"ABS und Silikon laut Hersteller\" }"
         ],
         "features": [
           "Offenes System",
@@ -26453,6 +26491,10 @@
         "comparisons": [
           "beste-automatische-katzentoiletten"
         ],
+        "alternatives": [
+          "petkit-puramax-2",
+          "neakasa-m1-plus"
+        ],
         "comparisonFilters": "{ animal: [\"cat\"], petSize: [\"small\", \"medium\", \"large\"], foodType: [] }",
         "decisionJourney": "{ cluster: \"automatische-katzentoiletten\", stage: \"decision\", intent: \"petkit-crystal-duo-pruefen\", primaryQuestion: \"Rechtfertigen offener Zugang und Monitoring die Bindung an Crystal Litter Set und Care+?\", next: [\"/vergleiche/beste-automatische-katzentoiletten/\"], fallback: [\"/automatische-katzentoiletten/\", \"/hersteller/petkit/\"] }",
         "faq": [
@@ -26460,10 +26502,11 @@
           "{ question: \"Kann normale Klumpstreu verwendet werden?\", answer: \"Nein. PETKIT schreibt das Crystal Litter Set mit passender Kristallstreu und Einwegschale vor.\" }",
           "{ question: \"Erkennt der Crystal Duo Harnwegserkrankungen?\", answer: \"Nein. Kamera-, Verhaltens- und pH-bezogene Angaben sind Trends beziehungsweise Herstellerhinweise und keine medizinische Diagnose.\" }"
         ],
-        "editorial": "{ assessmentType: \"data-review\", evidence: [\"manufacturer-documentation\", \"technical-specifications\", \"comparative-analysis\"], testedHandsOn: false, lastVerifiedAt: \"2026-08-21\", note: \"Herstellerdaten redaktionell eingeordnet; kein eigener Produkttest.\" }",
+        "editorial": "{ assessmentType: \"data-review\", evidence: [\"manufacturer-documentation\", \"technical-specifications\", \"comparative-analysis\", \"user-feedback\"], testedHandsOn: false, lastVerifiedAt: \"2026-08-25\", note: \"Herstellerdaten redaktionell eingeordnet; kein eigener Produkttest.\" }",
         "evidenceSources": [
-          "{ source: \"PETKIT EU Produktseite\", url: \"https://www.petkit-eu.com/de/products/purobot-crystal-duo-automatic-cat-litter-box-with-camera\", accessedAt: \"2026-08-21\", assertion: \"EU-Verfügbarkeit, Preis, Lieferumfang, Bauart, Einstieg, Verbrauchssystem, Kamera, WLAN und Herstellerfunktionen.\", fields: [\"availability\", \"specs\", \"features\", \"comparisonData\"] }",
-          "{ source: \"PETKIT P9905 Bedienungsanleitung\", url: \"https://instructions.petkit.com/App%20Manual/T7/T7_User%20Manual_EN_V1.0_20250922%20.pdf\", accessedAt: \"2026-08-21\", assertion: \"Modell, Maße, Gewicht, Mindestalter/-gewicht, App, Reinigung, Care+ und Sicherheitsgrenzen.\", fields: [\"specs\", \"decision\", \"faq\"] }"
+          "{ source: \"PETKIT Produktseite\", url: \"https://www.petkit.com/products/purobot-crystal-duo-cat-litter-box-with-camera\", accessedAt: \"2026-08-25\", assertion: \"Modell, Maße, Gewicht, Material, Nenneingang, Bauart, Einstieg, Verbrauchssystem, Kamera, WLAN und Herstellerfunktionen.\", fields: [\"specs\", \"features\", \"comparisonData\", \"images\"] }",
+          "{ source: \"PETKIT EU Produktseite\", url: \"https://www.petkit-eu.com/de/products/purobot-crystal-duo-automatic-cat-litter-box-with-camera\", accessedAt: \"2026-08-25\", assertion: \"EU-Verfügbarkeit, Lieferumfang, Verbrauchssystem und regional angebotene Funktionen.\", fields: [\"availability\", \"specs\", \"features\"] }",
+          "{ source: \"PETKIT P9905 Bedienungsanleitung\", url: \"https://instructions.petkit.com/App%20Manual/T7/T7_User%20Manual_EN_V1.0_20250922%20.pdf\", accessedAt: \"2026-08-25\", assertion: \"Modell, Maße, Gewicht, Mindestalter/-gewicht, App, Reinigung, Care+ und Sicherheitsgrenzen.\", fields: [\"specs\", \"decision\", \"faq\"] }"
         ],
         "affiliate": {
           "provider": "petkit-eu",
@@ -27521,6 +27564,24 @@
           "beste-futterautomaten-fuer-katzen",
           "beste-futterautomaten-fuer-hunde"
         ],
+        "failureModes": {
+          "powerOutage": {
+            "status": "partial",
+            "behavior": "Fünf AAA-Batterien versorgen laut PETKIT den lokalen Fütterungsbetrieb; die Kamera ist im Batteriebetrieb deaktiviert.",
+            "sourceUrl": "https://www.petkit.com/products/yumshare-solo-2-automatic-feeder-with-camera",
+            "sourceType": "manufacturer",
+            "verifiedAt": "2026-08-28"
+          },
+          "wifiOutage": {
+            "status": "supported",
+            "behavior": "Bereits gespeicherte Mahlzeiten laufen laut PETKIT weiter; Livebild und Fernfunktionen sind davon nicht umfasst.",
+            "sourceUrl": "https://www.petkit.com/products/yumshare-solo-2-automatic-feeder-with-camera",
+            "sourceType": "manufacturer",
+            "verifiedAt": "2026-08-28"
+          },
+          "internetOutage": "{ status: unknown, behavior: \"Der vom WLAN-Ausfall getrennte Umfang bei Internetunterbrechung ist nicht vollständig dokumentiert.\" }",
+          "cloudOutage": "{ status: unknown, behavior: \"Kamera- und Fernfunktionen sind dienstabhängig; ihr Verhalten bei Dienstausfall ist nicht belegt.\" }"
+        },
         "comparisonFilters": {
           "animal": [
             "dog",
@@ -28101,6 +28162,24 @@
           "beste-futterautomaten-fuer-hunde",
           "beste-futterautomaten-fuer-kleine-hunde"
         ],
+        "failureModes": {
+          "powerOutage": {
+            "status": "supported",
+            "behavior": "Der integrierte Akku kann die lokale Fütterung weiter versorgen; App-Erreichbarkeit oder Protokollübertragung folgen daraus nicht.",
+            "sourceUrl": "https://au.petlibro.com/products/air-wifi-feeder",
+            "sourceType": "manufacturer",
+            "verifiedAt": "2026-08-28"
+          },
+          "wifiOutage": "{ status: unknown, behavior: \"Der separate Umfang bei reinem WLAN-Ausfall ist nicht belastbar ausgewiesen.\" }",
+          "internetOutage": {
+            "status": "supported",
+            "behavior": "Zuvor gespeicherte Zeitpläne laufen mit Netzstrom oder Akku weiter; App-Zugriff und Live-Protokolle fehlen während der Unterbrechung.",
+            "sourceUrl": "https://petlibro.com/pages/pre-sale-inquiries-about-air-smart-feeder-af108-plaf108",
+            "sourceType": "support",
+            "verifiedAt": "2026-08-28"
+          },
+          "cloudOutage": "{ status: unknown, behavior: \"Ein eigenständiges Verhalten bei Ausfall des Herstellerdienstes ist nicht belegt.\" }"
+        },
         "comparisonFilters": {
           "animal": [
             "dog",
@@ -31616,7 +31695,7 @@
         },
         "productUrl": "/produkt/petlibro-polar-wet-food-feeder/",
         "publishedAt": "2026-07-12",
-        "updatedAt": "2026-08-06",
+        "updatedAt": "2026-08-26",
         "author": {
           "name": "PfotenTechnik Redaktion",
           "role": "Redaktion"
@@ -31779,6 +31858,18 @@
           "beste-futterautomaten-fuer-hunde",
           "beste-futterautomaten-fuer-nassfutter"
         ],
+        "failureModes": {
+          "powerOutage": {
+            "status": "partial",
+            "behavior": "Drei AA-Batterien halten den gespeicherten Fütterungsplan laut PETLIBRO bis zu 12 Stunden aufrecht; aktive Kühlung benötigt Netzstrom. WLAN, App und Benachrichtigungen sind nicht als Batteriefunktionen belegt.",
+            "sourceUrl": "https://petlibro.com/products/polar-smart-wet-food-feeder-for-pets",
+            "sourceType": "manufacturer",
+            "verifiedAt": "2026-08-28"
+          },
+          "wifiOutage": "{ status: unknown, behavior: \"Der vollständige lokale Funktionsumfang bei reinem WLAN-Ausfall ist nicht belastbar dokumentiert.\" }",
+          "internetOutage": "{ status: unknown, behavior: \"Lokal gespeicherte Zeitpläne werden genannt; der verlässliche Gesamtumfang bei Dienstausfall bleibt offen.\" }",
+          "cloudOutage": "{ status: unknown, behavior: \"Das Batterie-Backup belegt keine App-, Cloud- oder Gerätefunktion bei Dienstausfall.\" }"
+        },
         "comparisonFilters": {
           "animal": [
             "dog",
@@ -31858,7 +31949,7 @@
             "kuehlprinzip": "Thermoelektrische Aktivkühlung",
             "mahlzeiten": "3 Fächer mit je 200 ml",
             "steuerung": "PETLIBRO-App; 2,4-GHz-WLAN",
-            "stromversorgung": "Netzbetrieb; drei AA-Batterien schützen laut Hersteller den Zeitplan bis zu 12 Stunden",
+            "stromversorgung": "Netzbetrieb; drei AA-Batterien halten laut Hersteller den Fütterungsplan bei Stromausfall bis zu 12 Stunden aufrecht",
             "hygiene": "Spülmaschinengeeignete Edelstahl-Futterschale",
             "tiertrennung": "Nein",
             "geeignetfuer": "Katzen und kleine Hunde",
@@ -31875,7 +31966,7 @@
             "kamera": "Nein",
             "napf": "spülmaschinengeeignete Edelstahl-Futterschale",
             "reinigung": "Edelstahl-Futterteile spülmaschinengeeignet; Basis von Hand reinigen",
-            "batterie_backup": "drei AA-Batterien; laut Hersteller bis zu 12 Stunden Schutz des Fütterungsplans",
+            "batterie_backup": "drei AA-Batterien; laut Hersteller läuft der Fütterungsplan bei Stromausfall bis zu 12 Stunden weiter; Kühlung, WLAN, App und Benachrichtigungen nicht als Backup-Funktionen dokumentiert",
             "abmessungen": "361 × 340 × 196 mm",
             "gewicht": "3,4 kg ohne Netzteil",
             "geeignet_fur": "Katzen und kleine Hunde"
@@ -33242,7 +33333,7 @@
         },
         "productUrl": "/produkt/petsafe-mikrochip-katzenklappe/",
         "publishedAt": "2026-08-04",
-        "updatedAt": "2026-08-04",
+        "updatedAt": "2026-08-26",
         "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion\" }",
         "tags": [
           "Katzenklappe",
@@ -33359,10 +33450,11 @@
           "Zugluftabdichtung"
         ],
         "useCase": "Selektiver Eingang mit großem Speicher",
-        "comparisonData": "{ version: 1, custom: { zugang: \"15-stelliger FDX-B-Mikrochip oder Schlüssel\", richtungsrechte: \"Selektiver Eingang; manuelle Gesamtregeln\", app: \"Nein\", strom: \"Batterie\", einbau: \"Holz/PVC; Adapter für Metall, Glas, Ziegel und Wand\", durchgang: \"Hersteller-Schablone vor Kauf prüfen\", produktrolle: \"Vollständige Katzenklappe\" } }",
+        "comparisonData": "{ version: 1, custom: { zugang: \"15-stelliger FDX-B-Mikrochip oder Schlüssel\", richtungsrechte: \"Selektiver Eingang; manuelle Gesamtregeln\", app: \"Nein\", strom: \"Batterie\", einbau: \"Holz/PVC; Adapter für Metall, Glas, Ziegel und Wand\", durchgang: \"Hersteller-Schablone vor Kauf prüfen\", produktrolle: \"Vollständige Katzenklappe\", verriegelungslogik: \"Chipprüfung beim Annähern von außen; verstärkte doppelte automatische Verriegelung; exakter Wiederverriegelungszeitpunkt nicht dokumentiert\", tailgating_schutz: \"Nicht dokumentiert\" } }",
         "decisionJourney": "{ cluster: \"katzenklappen\", stage: \"decision\", intent: \"produkt-petsafe-mikrochip\", primaryQuestion: \"Ist der Chip kompatibel und genügt selektiver Eingang ohne App?\", next: [\"/vergleiche/beste-mikrochip-katzenklappen/\", \"/katzenklappe-einbauen/\"], fallback: [\"/katzenklappen/\"] }",
         "evidenceSources": [
-          "{ source: \"PetSafe Deutschland\", url: \"https://www.petsafe.com/de/p/mikrochip-katzenklappe/PPA19-16145/\", accessedAt: \"2026-08-04\", assertion: \"Deutsche Verfügbarkeit, FDX-B-Formate, Speicher, Verriegelung und Einbauhinweise.\", fields: [\"availability\", \"specs\", \"features\", \"decision\"] }"
+          "{ source: \"PetSafe Deutschland\", url: \"https://www.petsafe.com/de/p/mikrochip-katzenklappe/PPA19-16145/\", accessedAt: \"2026-08-04\", assertion: \"Deutsche Verfügbarkeit, FDX-B-Formate, Speicher, Verriegelung und Einbauhinweise.\", fields: [\"availability\", \"specs\", \"features\", \"decision\"] }",
+          "{ source: \"PetSafe UK – Microchip Cat Flap\", url: \"https://www.petsafe.com/gb/p/microchip-cat-flaps/PPA19-16145/\", accessedAt: \"2026-08-26\", assertion: \"Selektive Chipprüfung bei Annäherung von außen und verstärkte doppelte Auto-Verriegelung. Ein exakter Wiederverriegelungszeitpunkt oder Anti-Tailgating-Schutz wird nicht dokumentiert.\", fields: [\"specs\", \"comparisonData\"] }"
         ],
         "score": 77
       },
@@ -33647,7 +33739,7 @@
         },
         "productUrl": "/produkt/petsafe-smart-feed-2/",
         "publishedAt": "2026-07-13",
-        "updatedAt": "2026-07-13",
+        "updatedAt": "2026-08-25",
         "author": {
           "name": "PfotenTechnik Redaktion"
         },
@@ -33686,7 +33778,9 @@
             "alt": "PetSafe Smart Feed 2.0 im Produktvergleich"
           },
           "gallery": [
-            "src: ../../assets/images/products/petsafe-smart-feed-2/gallery-1.webp"
+            "src: ../../assets/images/products/petsafe-smart-feed-2/gallery-1.webp",
+            "src: ../../assets/images/products/petsafe-smart-feed-2/gallery-2.webp",
+            "src: ../../assets/images/products/petsafe-smart-feed-2/gallery-3.webp"
           ]
         },
         "price": {
@@ -33742,8 +33836,13 @@
               "finding: \"WLAN-Stabilität und Futterkompatibilität sind die wichtigsten wiederkehrenden Einschränkungen."
             ],
             "editorialAssessment": ">-"
-          }
+          },
+          "note": ">-"
         },
+        "evidenceSources": [
+          "source: \"PetSafe Smart Feed Produktseite",
+          "source: \"PetSafe Smart Feed Produktsupport"
+        ],
         "decision": {
           "bestFor": [
             "Katzen und kleine bis mittelgroße Hunde",
@@ -33834,7 +33933,9 @@
         ],
         "faq": [
           "question: Ist der PetSafe Smart Feed 2.0 für große Hunde geeignet?",
-          "question: Läuft er bei Stromausfall weiter?"
+          "question: Läuft er bei Stromausfall weiter?",
+          "question: Welches Futter eignet sich für den PetSafe Smart Feed 2.0?",
+          "question: Welche Teile dürfen in die Spülmaschine?"
         ],
         "features": [
           "App-Steuerung",
@@ -34564,6 +34665,12 @@
         "comparisons": [
           "beste-haustierkameras"
         ],
+        "failureModes": {
+          "powerOutage": "{ status: unknown, behavior: \"Eine Notstromversorgung oder ein definiertes Wiederanlaufverhalten ist nicht belegt.\" }",
+          "wifiOutage": "{ status: unknown, behavior: \"microSD-Unterstützung allein belegt nicht, welche Erkennung oder Aufnahme bei WLAN-Ausfall weiterläuft.\" }",
+          "internetOutage": "{ status: unknown, behavior: \"Lokale Speicherung ist belegt, der vollständige Funktionsumfang ohne Internet jedoch nicht.\" }",
+          "cloudOutage": "{ status: unknown, behavior: \"Optionale Cloud ist belegt; Verhalten von App und lokalen Funktionen bei Dienstausfall ist nicht dokumentiert.\" }"
+        },
         "decisionJourney": {
           "cluster": "haustierkameras",
           "stage": "decision",
@@ -35128,6 +35235,12 @@
         "comparisons": [
           "beste-haustierkameras"
         ],
+        "failureModes": {
+          "powerOutage": "{ status: unknown, behavior: \"Eine Notstromversorgung oder ein definiertes Wiederanlaufverhalten ist nicht belegt.\" }",
+          "wifiOutage": "{ status: unknown, behavior: \"Lokale Speicherwege belegen nicht automatisch Aufnahme, Erkennung oder LAN-Zugriff bei WLAN-Ausfall.\" }",
+          "internetOutage": "{ status: unknown, behavior: \"Lokale Speicherung und Erkennung sind belegt; der vollständige Funktionsumfang ohne Internet ist nicht getrennt dokumentiert.\" }",
+          "cloudOutage": "{ status: unknown, behavior: \"Cloud ist regional optional; das konkrete Verhalten bei Ausfall des Herstellerdienstes ist nicht belegt.\" }"
+        },
         "decisionJourney": "{ cluster: \"haustierkameras\", stage: \"decision\", intent: \"reolink-e1-zoom-pruefen\", primaryQuestion: \"Passt eine klassische Indoor-Kamera mit lokaler Speicherung besser als eine pet-spezifische Cloud-Kamera?\", next: [\"/vergleiche/beste-haustierkameras/\"], fallback: [\"/haustierkameras/\"] }",
         "faq": [
           "{ question: \"Braucht die Reolink E1 Zoom ein Abo?\", answer: \"Für lokale microSD-, NVR-, Home-Hub- oder FTP/NAS-Speicherung ist kein Pflichtabo dokumentiert. Cloud kann regional optional sein.\" }",
@@ -35715,7 +35828,7 @@
         },
         "productUrl": "/produkt/sureflap-dualscan-mikrochip-katzenklappe/",
         "publishedAt": "2026-08-04",
-        "updatedAt": "2026-08-05",
+        "updatedAt": "2026-08-26",
         "testStatus": "manufacturer-data",
         "productStatus": "active",
         "affiliate": {
@@ -35845,6 +35958,7 @@
           "label: \"DualScan-Funktion",
           "label: \"Sicherheitsmodus",
           "label: \"Systemabhängigkeit",
+          "label: \"Verriegelung und Tailgating",
           "label: \"Verfügbarkeit"
         ],
         "comparisonData": {
@@ -35856,7 +35970,9 @@
             "strom": "4 AA-Batterien",
             "einbau": "Tür, Glas und Wand mit passendem Zubehör",
             "durchgang": "142 × 120 mm",
-            "rolle": "Lokale Mehrkatzenklappe mit Richtungsrechten"
+            "rolle": "Lokale Mehrkatzenklappe mit Richtungsrechten",
+            "verriegelungslogik": "Mikrochipprüfung auf beiden Seiten; unberechtigte Tiere bleiben laut Hersteller ausgesperrt; exakter Wiederverriegelungszeitpunkt nicht dokumentiert",
+            "tailgating_schutz": "Nicht dokumentiert"
           }
         },
         "alternatives": [
@@ -35887,7 +36003,8 @@
           "question: \"Wie groß ist der Durchgang?"
         ],
         "evidenceSources": [
-          "source: \"Sure Petcare Deutschland – DualScan Mikrochip Katzenklappe"
+          "source: \"Sure Petcare Deutschland – DualScan Mikrochip Katzenklappe",
+          "source: \"Sure Petcare – DualScan Support und Handbuch"
         ],
         "score": 84,
         "ratings": {
@@ -35925,7 +36042,7 @@
         },
         "productUrl": "/produkt/sureflap-mikrochip-katzenklappe-connect/",
         "publishedAt": "2026-08-04",
-        "updatedAt": "2026-08-15",
+        "updatedAt": "2026-08-26",
         "author": {
           "name": "PfotenTechnik Redaktion",
           "role": "Redaktion"
@@ -36130,7 +36247,9 @@
             "durchgang": "142 × 120 mm",
             "rolle": "Vernetzte Mikrochip-Katzenklappe",
             "hub_erforderlich": "Ja, für die Verbindung mit der Sure Petcare App",
-            "security_support": "Hub: zwei Jahre ab Kaufdatum des Hubs dokumentiert"
+            "security_support": "Hub: zwei Jahre ab Kaufdatum des Hubs dokumentiert",
+            "verriegelungslogik": "Im Standardbetrieb beidseitig verriegelt; entriegelt nach autorisiertem Chipfund auf der jeweiligen Seite und verriegelt wieder, sobald die Katze vollständig passiert hat",
+            "tailgating_schutz": "Nicht dokumentiert; vollständiges Passieren einer autorisierten Katze ist keine mechanische Vereinzelung"
           }
         },
         "faq": [
@@ -36146,7 +36265,8 @@
         ],
         "evidenceSources": [
           "source: \"Sure Petcare Deutschland – Mikrochip Katzenklappe Connect",
-          "source: \"Sure Petcare UK – Microchip Cat Flap Connect"
+          "source: \"Sure Petcare UK – Microchip Cat Flap Connect",
+          "source: \"Sure Petcare – Microchip Cat Flap Connect Handbuch"
         ],
         "score": 79,
         "ratings": {
@@ -36470,12 +36590,12 @@
         },
         "productUrl": "/produkt/tractive-cat-6-mini/",
         "publishedAt": "2026-07-20",
-        "updatedAt": "2026-07-22",
+        "updatedAt": "2026-08-24",
         "author": {
           "name": "PfotenTechnik Redaktion"
         },
         "seo": {
-          "title": "Tractive CAT 6 Mini: Gewicht, Akku und Daten",
+          "title": "Tractive CAT 6 Mini: Akku, Abo, Gewicht & Preis",
           "description": "Tractive CAT 6 Mini mit 32 g inklusive Halsband, IP68, LTE/4G, Sicherheitsverschluss und bis zu sieben Tagen Akku.",
           "canonical": "/produkt/tractive-cat-6-mini/",
           "sitemap": true,
@@ -36525,8 +36645,8 @@
           }
         },
         "affiliate": {
-          "provider": "manufacturer",
-          "label": "Beim Hersteller ansehen",
+          "provider": "amazon",
+          "label": "Aktuellen Preis bei Amazon prüfen",
           "url": "https://amzn.to/3Ts7OyY",
           "rel": "sponsored nofollow noopener",
           "target": "_blank"
@@ -36734,6 +36854,9 @@
             "reinigung": ">-"
           }
         },
+        "evidenceSources": [
+          "source: \"Tractive Kundenservice – Tracker-Auswahl und Abo"
+        ],
         "metadata": {
           "version": "4.0.1",
           "normalizedAt": "2026-07-26",
@@ -37069,6 +37192,9 @@
             "reinigung": ">-"
           }
         },
+        "evidenceSources": [
+          "source: \"Tractive Kundenservice – Tracker-Auswahl und Abo"
+        ],
         "metadata": {
           "version": "4.0.1",
           "normalizedAt": "2026-07-26",
@@ -37325,6 +37451,18 @@
           "label: Gesundheitstrends",
           "label: Reinigung"
         ],
+        "failureModes": {
+          "powerOutage": "{ status: notApplicable, behavior: \"Der Tracker ist akkubetrieben; ein Haushalts-Stromausfall ist kein eigener Betriebsmodus.\" }",
+          "wifiOutage": "{ status: unknown, behavior: \"WLAN dient Energiesparzonen; das Verhalten bei Ausfall einer eingerichteten Zone ist nicht separat belegt.\" }",
+          "internetOutage": {
+            "status": "unavailable",
+            "behavior": "Ohne unterstützte Mobilfunkverbindung ist reguläre Fernortung in der App nicht verfügbar; lokale Aufzeichnung und spätere Synchronisierung sind nicht belegt.",
+            "sourceUrl": "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier",
+            "sourceType": "support",
+            "verifiedAt": "2026-08-28"
+          },
+          "cloudOutage": "{ status: unknown, behavior: \"Das konkrete Verhalten bei Ausfall der Tractive-Plattform ist nicht belastbar dokumentiert.\" }"
+        },
         "gps": {
           "animal": [
             "dog"
@@ -37414,6 +37552,9 @@
             "reinigung": ">-"
           }
         },
+        "evidenceSources": [
+          "source: \"Tractive Kundenservice – Tracker-Auswahl und Abo"
+        ],
         "metadata": {
           "version": "4.0.1",
           "normalizedAt": "2026-07-26",
@@ -37689,6 +37830,18 @@
           "label: \"Material",
           "label: \"Reinigung"
         ],
+        "failureModes": {
+          "powerOutage": "{ status: notApplicable, behavior: \"Der Tracker ist akkubetrieben; ein Haushalts-Stromausfall ist kein eigener Betriebsmodus.\" }",
+          "wifiOutage": "{ status: unknown, behavior: \"WLAN dient dem Energiesparen; Ausfallverhalten der WLAN-Zone ist nicht separat belegt.\" }",
+          "internetOutage": {
+            "status": "unavailable",
+            "behavior": "Ohne nutzbare Mobilfunkverbindung kann die Position nicht an die App übertragen werden; lokale Speicherung oder spätere Synchronisierung sind nicht belegt.",
+            "sourceUrl": "https://www.weenect.com/de/de/gps-tracker-hund/",
+            "sourceType": "manufacturer",
+            "verifiedAt": "2026-08-28"
+          },
+          "cloudOutage": "{ status: unknown, behavior: \"Das konkrete Verhalten bei Ausfall des Weenect-Dienstes ist nicht dokumentiert.\" }"
+        },
         "gps": {
           "animal": [
             "dog",
@@ -37791,6 +37944,10 @@
             "weenect_plus": "Wissensbereich mit Expertenartikeln, Trainingsvideos und Partnerangeboten; aktuelle Tarifzuordnung prüfen"
           }
         },
+        "evidenceSources": [
+          "source: \"Weenect – GPS-Tracker für Hunde und Abonnements",
+          "source: \"Weenect Hilfe-Center – Service abonnieren"
+        ],
         "metadata": {
           "version": "4.1.0",
           "normalizedAt": "2026-07-26",
@@ -38172,6 +38329,10 @@
             "weenect_plus": "Wissensbereich mit Expertenartikeln, Trainingsvideos und Partnerangeboten; aktuelle Tarifzuordnung prüfen"
           }
         },
+        "evidenceSources": [
+          "source: \"Weenect XT Produktseite",
+          "source: \"Weenect Hilfe-Center – Service abonnieren"
+        ],
         "metadata": {
           "version": "4.1.0",
           "normalizedAt": "2026-07-26",

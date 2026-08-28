@@ -25,15 +25,15 @@ images:
     alt: "Furbo 360° Hundekamera in hochwertiger Produktansicht"
   gallery: []
 price:
-  current: 199
+  current: 49
   currency: "EUR"
   status: "unknown"
   comparisonText: "https://amzn.to/46asA9o"
-  checkedAt: "2026-08-21T11:56:26.290Z"
+  checkedAt: "2026-08-28T09:03:57.726Z"
   source:
-    id: "manual"
+    id: "amazon.de"
     label: "amazon.de"
-    type: "manual"
+    type: "merchant"
 rating: 3.6
 ratings: { interaktion: 4.3, datenschutz: 3.0, folgekosten: 2.8, alltag: 3.7 }
 externalEvidence:
@@ -115,12 +115,12 @@ affiliate:
   rel: "sponsored nofollow noopener"
   target: "_blank"
 priceState: "available"
-priceUpdated: "2026-08-21T11:56:26.290Z"
+priceUpdated: "2026-08-28T09:03:57.726Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-21T11:56:26.290Z"
+availabilityUpdated: "2026-08-28T09:03:57.726Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

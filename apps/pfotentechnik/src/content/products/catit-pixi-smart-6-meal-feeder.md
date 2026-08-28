@@ -62,10 +62,10 @@ images:
     - src: ../../assets/images/products/catit-pixi-smart-6-meal-feeder/gallery-3.webp
       alt: Catit PIXI Smart 6-Meal Feeder – weitere Produktansicht
 price:
-  current: 100.68
+  current: 100.98
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-21T11:26:50.864Z"
+  checkedAt: "2026-08-28T09:03:47.155Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -80,12 +80,12 @@ rating: 4
 score: 80
 
 priceState: "available"
-priceUpdated: "2026-08-21T11:26:50.864Z"
+priceUpdated: "2026-08-28T09:03:47.155Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-21T11:26:50.864Z"
+availabilityUpdated: "2026-08-28T09:03:47.155Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
