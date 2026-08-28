@@ -235,6 +235,16 @@ comparisons:
   - beste-futterautomaten-fuer-katzen
   - beste-futterautomaten-fuer-hunde
   - beste-futterautomaten-fuer-nassfutter
+failureModes:
+  powerOutage:
+    status: partial
+    behavior: "Drei AA-Batterien halten den gespeicherten Fütterungsplan laut PETLIBRO bis zu 12 Stunden aufrecht; aktive Kühlung benötigt Netzstrom. WLAN, App und Benachrichtigungen sind nicht als Batteriefunktionen belegt."
+    sourceUrl: "https://petlibro.com/products/polar-smart-wet-food-feeder-for-pets"
+    sourceType: manufacturer
+    verifiedAt: "2026-08-28"
+  wifiOutage: { status: unknown, behavior: "Der vollständige lokale Funktionsumfang bei reinem WLAN-Ausfall ist nicht belastbar dokumentiert." }
+  internetOutage: { status: unknown, behavior: "Lokal gespeicherte Zeitpläne werden genannt; der verlässliche Gesamtumfang bei Dienstausfall bleibt offen." }
+  cloudOutage: { status: unknown, behavior: "Das Batterie-Backup belegt keine App-, Cloud- oder Gerätefunktion bei Dienstausfall." }
 comparisonFilters:
   animal:
     - dog

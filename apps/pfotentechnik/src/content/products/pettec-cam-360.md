@@ -220,6 +220,11 @@ alternatives:
   - "enabot-rola-mini"
 comparisons:
   - "beste-haustierkameras"
+failureModes:
+  powerOutage: { status: unknown, behavior: "Eine Notstromversorgung oder ein definiertes Wiederanlaufverhalten ist nicht belegt." }
+  wifiOutage: { status: unknown, behavior: "microSD-Unterstützung allein belegt nicht, welche Erkennung oder Aufnahme bei WLAN-Ausfall weiterläuft." }
+  internetOutage: { status: unknown, behavior: "Lokale Speicherung ist belegt, der vollständige Funktionsumfang ohne Internet jedoch nicht." }
+  cloudOutage: { status: unknown, behavior: "Optionale Cloud ist belegt; Verhalten von App und lokalen Funktionen bei Dienstausfall ist nicht dokumentiert." }
 decisionJourney:
   cluster: "haustierkameras"
   stage: "decision"

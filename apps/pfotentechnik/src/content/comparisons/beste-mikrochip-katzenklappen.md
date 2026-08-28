@@ -170,4 +170,16 @@ Dieser Vergleich besitzt den modellübergreifenden Evaluations-Intent. Er ersetz
 
 Klare lokale Zugangsregeln sind meist robuster als unnötige Vernetzung. Bei mehreren Katzen ist entscheidend, ob nur der Eintritt oder auch der Ausgang je Tier geregelt werden muss. Erst danach folgen App, Kamera oder Gebäudetechnik.
 
+## Chip-Kompatibilität und offizieller Fallback
+
+| Modellfamilie | Belegter Chipstandard / Prüfung | Offizieller Fallback |
+|---|---|---|
+| SureFlap Microchip, DualScan und Connect | gängige Identifikationschips; Kompatibilität vor Kauf prüfen | kompatibler SureFlap-RFID-Halsbandanhänger |
+| PetSafe Mikrochip-Katzenklappe | 15-stelliger FDX-B-Chip; Hersteller-Kompatibilitätsprüfung empfohlen | PetSafe-Schlüssel/Anhänger laut Produktdaten |
+| PetSafe Petporte smart flap | mehrere Nummernformate ausdrücklich ausgeschlossen | kein Fallback in der vorhandenen Evidence belegt |
+| Cat Mate Elite 355W | 15-stelliger ISO-Mikrochip | Cat-Mate-ID-Anhänger |
+| OnlyCat / petWALK | Mikrochip-Zugang belegt | Fallback bei inkompatiblem Implantat nicht belastbar dokumentiert |
+
+„Mikrochipfähig“ bedeutet nicht „liest jeden Chip“. Erst Chipnummer beziehungsweise Standard prüfen, dann den Registrierungsprozess und erst danach einen vom Hersteller freigegebenen Halsbandanhänger als Fallback einplanen.
+
 Die breitere Orientierung bleibt beim [Katzenklappen-Hub](/katzenklappen/). Einbaufragen gehören in den [Einbauratgeber](/katzenklappe-einbauen/).

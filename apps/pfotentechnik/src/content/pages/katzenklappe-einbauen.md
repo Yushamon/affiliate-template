@@ -79,6 +79,25 @@ Ein Wanddurchgang benötigt:
 
 OnlyCat nennt eine Öffnung von **170 × 170 mm**. Der Tunnel soll waagerecht beziehungsweise leicht nach außen abfallend verlaufen, damit Regen ablaufen kann. Tunnelverlängerungen werden untereinander verbunden, am Gerät aber nur wie in der Herstelleranleitung vorgesehen befestigt. Außen ist zwischen Tunnel und Rahmen eine wetterfeste Abdichtung nötig. Leitungen, tragende Teile, Feuchteschutz und Wärmebrücke machen dies im Zweifel zu einer Fachbetriebsaufgabe.
 
+### Tunnelbedarf ohne Schätzen bestimmen
+
+| Modell | Belegte Angabe | Konsequenz |
+|---|---|---|
+| PetSafe Petporte smart flap | 40-mm-Tunnelverlängerung verfügbar | Zahl der Module erst aus gemessener Gesamttiefe und aktueller Anleitung bestimmen |
+| SureFlap Microchip / DualScan / Connect | Wandmontage mit Montageadapter und Tunnelverlängerungen vorgesehen | Basistunneltiefe und Überdeckung für das konkrete Modell vor Bestellung im Handbuch prüfen |
+| OnlyCat | Tunnel darf wegen integrierter RFID-Antennen nicht gebohrt oder gekürzt werden | nur vorgesehene Verlängerungen verwenden; Anzahl nach Herstellerplanung |
+
+Eine pauschale Formel ohne Basistunneltiefe wäre irreführend. Praktisch gilt: fertige Wandstärke einschließlich Belag messen, erforderliche Außenabdichtung berücksichtigen und dann mit den ausdrücklich für das Modell freigegebenen Modulen planen.
+
+### Metalltür: modellbezogen vor dem Ausschnitt testen
+
+| Modell | Herstellerhinweis | Adapter / Test |
+|---|---|---|
+| PetSafe Mikrochip-Katzenklappe | Metall kann RFID beeinflussen | vorgesehenen Installationsadapter verwenden und Funktion vor dem Ausschnitt prüfen |
+| PetSafe Petporte smart flap | Metalltür grundsätzlich genannt, RFID-Störung möglich | vollständig montierte und programmierte Klappe am Einbauort mit dem Chip testen |
+| OnlyCat | RFID-Antennen liegen im Tunnel | Metall-/Aluminiumeignung vor dem endgültigen Ausschnitt mit OnlyCat klären |
+| SureFlap-Familie | Metallmontage ist modell- und adapterabhängig | aktuelle Montageanleitung und passenden Adapter prüfen; keine Freigabe von einem Modell übertragen |
+
 ---
 
 ## Stromversorgung

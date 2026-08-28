@@ -367,6 +367,41 @@ const productGpsSchema =
   })
   .optional();
 
+const productFailureModeStatusSchema = z.enum([
+  "supported",
+  "partial",
+  "unavailable",
+  "unknown",
+  "notApplicable"
+]);
+
+const productFailureModeSchema = z
+  .object({
+    status: productFailureModeStatusSchema,
+    behavior: z.string().min(1),
+    sourceUrl: z.string().url().optional(),
+    sourceType: z.enum(["manufacturer", "manual", "support"]).optional(),
+    verifiedAt: z.coerce.date().optional()
+  })
+  .superRefine((value, context) => {
+    const sourcedClaim = !["unknown", "notApplicable"].includes(value.status);
+    if (sourcedClaim && (!value.sourceUrl || !value.sourceType || !value.verifiedAt)) {
+      context.addIssue({
+        code: z.ZodIssueCode.custom,
+        message: "Belegte Failure-Mode-Claims benötigen sourceUrl, sourceType und verifiedAt."
+      });
+    }
+  });
+
+const productFailureModesSchema = z
+  .object({
+    powerOutage: productFailureModeSchema.optional(),
+    wifiOutage: productFailureModeSchema.optional(),
+    internetOutage: productFailureModeSchema.optional(),
+    cloudOutage: productFailureModeSchema.optional()
+  })
+  .optional();
+
 const comparisonPrimitiveSchema = z.union([
   z.string(),
   z.number(),
@@ -619,6 +654,8 @@ export const createProductContentSchema = (image: ImageFunction) =>
       .default([]),
 
     gps: productGpsSchema,
+
+    failureModes: productFailureModesSchema,
 
     comparisonData:
       productComparisonDataSchema,

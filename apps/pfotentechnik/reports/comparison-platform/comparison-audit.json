@@ -1,18 +1,56 @@
 {
-  "generatedAt": "2026-08-16T13:03:40.328Z",
+  "generatedAt": "2026-08-28T08:56:12.716Z",
   "version": "2.2.0",
   "summary": {
     "comparisons": 28,
-    "products": 82,
-    "manufacturers": 26,
-    "usedProducts": 57,
-    "productCoveragePercent": 69.5,
-    "errors": 0,
-    "warnings": 0,
-    "qualityScore": 99
+    "products": 101,
+    "manufacturers": 32,
+    "usedProducts": 71,
+    "productCoveragePercent": 70.3,
+    "errors": 1,
+    "warnings": 4,
+    "qualityScore": 95
   },
-  "byCode": [],
-  "byFile": [],
+  "byCode": [
+    {
+      "code": "MANUFACTURER_REFERENCE_BROKEN",
+      "count": 1,
+      "category": "integrity",
+      "level": "error"
+    },
+    {
+      "code": "PRODUCT_NOT_COVERED",
+      "count": 4,
+      "category": "coverage",
+      "level": "warning"
+    }
+  ],
+  "byFile": [
+    {
+      "file": "src/content/products/feelneedy-fn-w18-8l-katzenbrunnen.md",
+      "errors": 1,
+      "warnings": 1,
+      "total": 2
+    },
+    {
+      "file": "src/content/products/enabot-ebo-air-2.md",
+      "errors": 0,
+      "warnings": 1,
+      "total": 1
+    },
+    {
+      "file": "src/content/products/furbo-360-hundekamera.md",
+      "errors": 0,
+      "warnings": 1,
+      "total": 1
+    },
+    {
+      "file": "src/content/products/neakasa-m1-plus.md",
+      "errors": 0,
+      "warnings": 1,
+      "total": 1
+    }
+  ],
   "comparisons": [
     {
       "slug": "beste-automatische-katzentoiletten",
@@ -127,5 +165,46 @@
       "file": "src/content/comparisons/kleine-gps-tracker-fuer-katzen.md"
     }
   ],
-  "issues": []
+  "issues": [
+    {
+      "level": "warning",
+      "code": "PRODUCT_NOT_COVERED",
+      "file": "src/content/products/enabot-ebo-air-2.md",
+      "slug": "enabot-ebo-air-2",
+      "message": "Aktives Produkt kommt in keiner Vergleichsseite vor.",
+      "category": "coverage"
+    },
+    {
+      "level": "warning",
+      "code": "PRODUCT_NOT_COVERED",
+      "file": "src/content/products/feelneedy-fn-w18-8l-katzenbrunnen.md",
+      "slug": "feelneedy-fn-w18-8l-katzenbrunnen",
+      "message": "Aktives Produkt kommt in keiner Vergleichsseite vor.",
+      "category": "coverage"
+    },
+    {
+      "level": "error",
+      "code": "MANUFACTURER_REFERENCE_BROKEN",
+      "file": "src/content/products/feelneedy-fn-w18-8l-katzenbrunnen.md",
+      "slug": "feelneedy-fn-w18-8l-katzenbrunnen",
+      "message": "Hersteller feelneedy existiert nicht.",
+      "category": "integrity"
+    },
+    {
+      "level": "warning",
+      "code": "PRODUCT_NOT_COVERED",
+      "file": "src/content/products/furbo-360-hundekamera.md",
+      "slug": "furbo-360-hundekamera",
+      "message": "Aktives Produkt kommt in keiner Vergleichsseite vor.",
+      "category": "coverage"
+    },
+    {
+      "level": "warning",
+      "code": "PRODUCT_NOT_COVERED",
+      "file": "src/content/products/neakasa-m1-plus.md",
+      "slug": "neakasa-m1-plus",
+      "message": "Aktives Produkt kommt in keiner Vergleichsseite vor.",
+      "category": "coverage"
+    }
+  ]
 }

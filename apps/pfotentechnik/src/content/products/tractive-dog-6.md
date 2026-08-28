@@ -284,6 +284,16 @@ specs:
     value: >-
       Befestigung, Gehäuse und Ladekontakte regelmäßig auf Schmutz und Schäden prüfen. Vor längeren Ausflügen
       vollständig laden und die Ortung im Freien testen.
+failureModes:
+  powerOutage: { status: notApplicable, behavior: "Der Tracker ist akkubetrieben; ein Haushalts-Stromausfall ist kein eigener Betriebsmodus." }
+  wifiOutage: { status: unknown, behavior: "WLAN dient Energiesparzonen; das Verhalten bei Ausfall einer eingerichteten Zone ist nicht separat belegt." }
+  internetOutage:
+    status: unavailable
+    behavior: "Ohne unterstützte Mobilfunkverbindung ist reguläre Fernortung in der App nicht verfügbar; lokale Aufzeichnung und spätere Synchronisierung sind nicht belegt."
+    sourceUrl: "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier"
+    sourceType: support
+    verifiedAt: "2026-08-28"
+  cloudOutage: { status: unknown, behavior: "Das konkrete Verhalten bei Ausfall der Tractive-Plattform ist nicht belastbar dokumentiert." }
 gps:
   animal:
     - dog

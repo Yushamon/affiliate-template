@@ -210,6 +210,21 @@ comparisons:
   - beste-futterautomaten-mit-kamera
   - beste-futterautomaten-fuer-katzen
   - beste-futterautomaten-fuer-hunde
+failureModes:
+  powerOutage:
+    status: partial
+    behavior: "Fünf AAA-Batterien versorgen laut PETKIT den lokalen Fütterungsbetrieb; die Kamera ist im Batteriebetrieb deaktiviert."
+    sourceUrl: "https://www.petkit.com/products/yumshare-solo-2-automatic-feeder-with-camera"
+    sourceType: manufacturer
+    verifiedAt: "2026-08-28"
+  wifiOutage:
+    status: supported
+    behavior: "Bereits gespeicherte Mahlzeiten laufen laut PETKIT weiter; Livebild und Fernfunktionen sind davon nicht umfasst."
+    sourceUrl: "https://www.petkit.com/products/yumshare-solo-2-automatic-feeder-with-camera"
+    sourceType: manufacturer
+    verifiedAt: "2026-08-28"
+  internetOutage: { status: unknown, behavior: "Der vom WLAN-Ausfall getrennte Umfang bei Internetunterbrechung ist nicht vollständig dokumentiert." }
+  cloudOutage: { status: unknown, behavior: "Kamera- und Fernfunktionen sind dienstabhängig; ihr Verhalten bei Dienstausfall ist nicht belegt." }
 comparisonFilters:
   animal:
     - dog
@@ -414,4 +429,3 @@ Diese Seite ist ein Datencheck und kein eigener Langzeittest.
 ## Fazit
 
 Der PETKIT YumShare Solo 2 ist ein gut ausgestatteter Kamera-Futterautomat für Trockenfutter. Dual-Band-WLAN, flexible Zeitpläne und der Edelstahl-Napf sind klare Vorteile. Die wichtigsten Grenzen sind die fehlende Zugangskontrolle, mögliche Abo-Funktionen und die deaktivierte Kamera im Batteriebetrieb.
-

@@ -153,6 +153,11 @@ comparisonData: { version: 1, custom: { klasse: "Klassische Indoor-Pan/Tilt-Kame
 comparisonFilters: { animal: ["dog", "cat"], petSize: ["small", "medium", "large"], foodType: [], app: true, camera: true }
 alternatives: ["pettec-cam-360", "petlibro-scout-smart-camera", "furbo-mini-360"]
 comparisons: ["beste-haustierkameras"]
+failureModes:
+  powerOutage: { status: unknown, behavior: "Eine Notstromversorgung oder ein definiertes Wiederanlaufverhalten ist nicht belegt." }
+  wifiOutage: { status: unknown, behavior: "Lokale Speicherwege belegen nicht automatisch Aufnahme, Erkennung oder LAN-Zugriff bei WLAN-Ausfall." }
+  internetOutage: { status: unknown, behavior: "Lokale Speicherung und Erkennung sind belegt; der vollständige Funktionsumfang ohne Internet ist nicht getrennt dokumentiert." }
+  cloudOutage: { status: unknown, behavior: "Cloud ist regional optional; das konkrete Verhalten bei Ausfall des Herstellerdienstes ist nicht belegt." }
 decisionJourney: { cluster: "haustierkameras", stage: "decision", intent: "reolink-e1-zoom-pruefen", primaryQuestion: "Passt eine klassische Indoor-Kamera mit lokaler Speicherung besser als eine pet-spezifische Cloud-Kamera?", next: ["/vergleiche/beste-haustierkameras/"], fallback: ["/haustierkameras/"] }
 faq:
   - { question: "Braucht die Reolink E1 Zoom ein Abo?", answer: "Für lokale microSD-, NVR-, Home-Hub- oder FTP/NAS-Speicherung ist kein Pflichtabo dokumentiert. Cloud kann regional optional sein." }

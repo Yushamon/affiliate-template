@@ -207,13 +207,13 @@
   ],
   "searchData": {
     "available": true,
-    "generatedAt": "2026-08-19T05:06:34.516Z",
+    "generatedAt": "2026-08-25T06:21:38.912Z",
     "range": "7d",
-    "matchedPages": 25
+    "matchedPages": 27
   },
   "summary": {
-    "indexablePages": 253,
-    "totalHtmlPages": 362,
+    "indexablePages": 255,
+    "totalHtmlPages": 366,
     "pageTypes": {
       "category-hub": 5,
       "comparison": 28,
@@ -228,13 +228,13 @@
       "manufacturer-index": 1,
       "medical-guide": 12,
       "problem-solving-guide": 17,
-      "product": 99
+      "product": 101
     },
     "clusters": {
-      "automatische-katzentoiletten": 12,
-      "futterautomaten": 82,
+      "automatische-katzentoiletten": 13,
+      "futterautomaten": 81,
       "gps-tracker": 32,
-      "haustierkameras": 9,
+      "haustierkameras": 10,
       "hersteller": 25,
       "hundeernaehrung": 3,
       "hundegesundheit": 4,
@@ -247,7 +247,7 @@
       "smarte-haustiertechnik": 13,
       "tierbeschaeftigung": 1,
       "tierernaehrung": 1,
-      "trinkbrunnen": 52
+      "trinkbrunnen": 53
     },
     "intents": {
       "brand-navigation": 32,
@@ -257,12 +257,12 @@
       "informational": 23,
       "medical-information": 14,
       "problem-solving": 14,
-      "product-research": 99
+      "product-research": 101
     },
     "decisions": {
       "CONSOLIDATE": 2,
-      "KEEP": 253,
-      "NOINDEX": 109
+      "KEEP": 255,
+      "NOINDEX": 111
     },
     "errors": 11,
     "warnings": 0,
@@ -284,7 +284,7 @@
       "routes": [
         "/vergleiche/beste-automatische-katzentoiletten/"
       ],
-      "evidence": "Quelldaten nennen 9 Vergleichsprodukte, gerendert erkannt wurden 10."
+      "evidence": "Quelldaten nennen 10 Vergleichsprodukte, gerendert erkannt wurden 11."
     },
     {
       "id": "content_comparison_count_mismatch|/vergleiche/beste-futterautomaten-fuer-hunde/",
@@ -338,7 +338,7 @@
       "routes": [
         "/vergleiche/beste-haustierkameras/"
       ],
-      "evidence": "Quelldaten nennen 5 Vergleichsprodukte, gerendert erkannt wurden 7."
+      "evidence": "Quelldaten nennen 6 Vergleichsprodukte, gerendert erkannt wurden 8."
     },
     {
       "id": "content_comparison_count_mismatch|/vergleiche/beste-trinkbrunnen-fuer-hunde/",
@@ -495,9 +495,9 @@
       "metrics": {
         "title": 1,
         "headings": 0.75,
-        "body": 0.4471,
+        "body": 0.4455,
         "entities": 1,
-        "combined": 0.7198
+        "combined": 0.7191
       },
       "topicOwners": [
         "/produkt/petkit-eversweet-solo-2-fountain/",
@@ -540,9 +540,9 @@
       "metrics": {
         "title": 1,
         "headings": 0.8889,
-        "body": 0.4416,
+        "body": 0.4418,
         "entities": 1,
-        "combined": 0.741
+        "combined": 0.7411
       },
       "topicOwners": [
         "/produkt/tractive-dog-6/",

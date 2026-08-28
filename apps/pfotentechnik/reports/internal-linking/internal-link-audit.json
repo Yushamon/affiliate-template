@@ -1,14 +1,14 @@
 {
   "version": "3.0.3",
-  "generatedAt": "2026-08-21T10:44:28.919Z",
-  "strict": false,
+  "generatedAt": "2026-08-28T08:56:12.354Z",
+  "strict": true,
   "summary": {
-    "documents": 241,
-    "contentRoutes": 241,
-    "buildRoutes": 362,
-    "validRoutes": 362,
-    "definitions": 512,
-    "renderedAutomaticLinks": 538,
+    "documents": 243,
+    "contentRoutes": 243,
+    "buildRoutes": 366,
+    "validRoutes": 366,
+    "definitions": 514,
+    "renderedAutomaticLinks": 559,
     "errors": 0,
     "warnings": 9,
     "critical": 0
@@ -761,6 +761,12 @@
     },
     {
       "sourceRoute": "/katzenklappe-einbauen/",
+      "targetRoute": "/produkt/petsafe-petporte-smart-flap/",
+      "anchor": "PetSafe Petporte smart flap",
+      "score": 4327
+    },
+    {
+      "sourceRoute": "/katzenklappe-einbauen/",
       "targetRoute": "/hersteller/onlycat/",
       "anchor": "OnlyCat",
       "score": 1307
@@ -863,9 +869,39 @@
     },
     {
       "sourceRoute": "/katzentrinkbrunnen-richtig-reinigen/",
+      "targetRoute": "/produkt/petlibro-dockstream-2-smart-cordless/",
+      "anchor": "PETLIBRO Dockstream 2 Smart Cordless",
+      "score": 5636
+    },
+    {
+      "sourceRoute": "/katzentrinkbrunnen-richtig-reinigen/",
+      "targetRoute": "/produkt/petkit-eversweet-3-pro-uvc/",
+      "anchor": "PETKIT Eversweet 3 Pro UVC",
+      "score": 5626
+    },
+    {
+      "sourceRoute": "/katzentrinkbrunnen-richtig-reinigen/",
+      "targetRoute": "/produkt/petkit-eversweet-max-2-uvc/",
+      "anchor": "PETKIT Eversweet Max 2 UVC",
+      "score": 5526
+    },
+    {
+      "sourceRoute": "/katzentrinkbrunnen-richtig-reinigen/",
+      "targetRoute": "/produkt/petkit-eversweet-ultra/",
+      "anchor": "PETKIT Eversweet Ultra",
+      "score": 3622
+    },
+    {
+      "sourceRoute": "/katzentrinkbrunnen-richtig-reinigen/",
       "targetRoute": "/warum-katzen-fliessendes-wasser-trinken/",
       "anchor": "Fließendes Wasser",
       "score": 2517
+    },
+    {
+      "sourceRoute": "/katzentrinkbrunnen-richtig-reinigen/",
+      "targetRoute": "/hersteller/petsafe/",
+      "anchor": "PetSafe",
+      "score": 1607
     },
     {
       "sourceRoute": "/katzenwasser-taeglich-wechseln/",
@@ -1744,6 +1780,24 @@
       "score": 1513
     },
     {
+      "sourceRoute": "/produkt/furbo-360-katzenkamera/",
+      "targetRoute": "/produkt/furbo-mini-360/",
+      "anchor": "Furbo Mini 360",
+      "score": 3614
+    },
+    {
+      "sourceRoute": "/produkt/furbo-360-katzenkamera/",
+      "targetRoute": "/haustierkameras/",
+      "anchor": "Haustierkamera",
+      "score": 1614
+    },
+    {
+      "sourceRoute": "/produkt/furbo-360-katzenkamera/",
+      "targetRoute": "/hersteller/furbo/",
+      "anchor": "Furbo",
+      "score": 1605
+    },
+    {
       "sourceRoute": "/produkt/furbo-mini-360/",
       "targetRoute": "/hersteller/furbo/",
       "anchor": "Furbo",
@@ -2122,6 +2176,18 @@
       "score": 1806
     },
     {
+      "sourceRoute": "/produkt/petkit-purobot-crystal-duo/",
+      "targetRoute": "/produkt/neakasa-m1-plus/",
+      "anchor": "Neakasa M1 Plus",
+      "score": 3515
+    },
+    {
+      "sourceRoute": "/produkt/petkit-purobot-crystal-duo/",
+      "targetRoute": "/hersteller/petkit/",
+      "anchor": "PETKIT",
+      "score": 1506
+    },
+    {
       "sourceRoute": "/produkt/petkit-purobot-max-3/",
       "targetRoute": "/hersteller/petkit/",
       "anchor": "PETKIT",
@@ -2234,6 +2300,12 @@
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
       "score": 1708
+    },
+    {
+      "sourceRoute": "/produkt/petlibro-dockstream-rfid-smart/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6712
     },
     {
       "sourceRoute": "/produkt/petlibro-dockstream-rfid-smart/",
@@ -3083,9 +3155,63 @@
     },
     {
       "sourceRoute": "/vergleiche/beste-haustierkameras/",
+      "targetRoute": "/hersteller/petlibro/",
+      "anchor": "PETLIBRO",
+      "score": 1908
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-haustierkameras/",
+      "targetRoute": "/hersteller/enabot/",
+      "anchor": "Enabot",
+      "score": 1806
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-haustierkameras/",
+      "targetRoute": "/hersteller/furbo/",
+      "anchor": "Furbo",
+      "score": 1805
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-haustierkameras/",
+      "targetRoute": "/hersteller/reolink/",
+      "anchor": "Reolink",
+      "score": 1207
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-haustierkameras/",
       "targetRoute": "/hersteller/pettec/",
       "anchor": "PetTec",
       "score": 1206
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-mikrochip-katzenklappen/",
+      "targetRoute": "/produkt/petsafe-petporte-smart-flap/",
+      "anchor": "PetSafe Petporte smart flap",
+      "score": 4427
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-mikrochip-katzenklappen/",
+      "targetRoute": "/hersteller/cat-mate/",
+      "anchor": "Cat Mate",
+      "score": 2808
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-mikrochip-katzenklappen/",
+      "targetRoute": "/hersteller/petsafe/",
+      "anchor": "PetSafe",
+      "score": 1807
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-mikrochip-katzenklappen/",
+      "targetRoute": "/hersteller/onlycat/",
+      "anchor": "OnlyCat",
+      "score": 1707
+    },
+    {
+      "sourceRoute": "/vergleiche/beste-mikrochip-katzenklappen/",
+      "targetRoute": "/hersteller/petwalk/",
+      "anchor": "petWALK",
+      "score": 1707
     },
     {
       "sourceRoute": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
@@ -3455,7 +3581,7 @@
     }
   ],
   "incomingLinks": {
-    "/automatische-katzentoiletten/": 9,
+    "/automatische-katzentoiletten/": 10,
     "/biofilm-im-katzentrinkbrunnen/": 15,
     "/datenschutz-bei-gps-trackern/": 1,
     "/filter-im-katzentrinkbrunnen-wechseln/": 14,
@@ -3472,32 +3598,32 @@
     "/gps-oder-bluetooth/": 2,
     "/gps-tracker-richtig-befestigen/": 3,
     "/gps-tracker/": 8,
-    "/haustierkameras/": 9,
+    "/haustierkameras/": 10,
     "/hersteller/aqara/": 4,
-    "/hersteller/cat-mate/": 15,
+    "/hersteller/cat-mate/": 16,
     "/hersteller/catit/": 5,
     "/hersteller/devoko/": 4,
-    "/hersteller/enabot/": 6,
-    "/hersteller/furbo/": 4,
+    "/hersteller/enabot/": 7,
+    "/hersteller/furbo/": 6,
     "/hersteller/garmin/": 12,
     "/hersteller/honeyguardian/": 8,
     "/hersteller/imipaw/": 5,
     "/hersteller/invoxia/": 2,
     "/hersteller/neakasa/": 5,
     "/hersteller/oneisall/": 12,
-    "/hersteller/onlycat/": 5,
+    "/hersteller/onlycat/": 6,
     "/hersteller/paj-gps/": 4,
     "/hersteller/pawbby/": 3,
     "/hersteller/pawfit/": 3,
     "/hersteller/pawsync/": 3,
-    "/hersteller/petkit/": 38,
-    "/hersteller/petlibro/": 59,
-    "/hersteller/petsafe/": 16,
+    "/hersteller/petkit/": 39,
+    "/hersteller/petlibro/": 60,
+    "/hersteller/petsafe/": 18,
     "/hersteller/petsnowy/": 3,
     "/hersteller/pettec/": 4,
-    "/hersteller/petwalk/": 4,
+    "/hersteller/petwalk/": 5,
     "/hersteller/prothelis/": 2,
-    "/hersteller/reolink/": 2,
+    "/hersteller/reolink/": 3,
     "/hersteller/surefeed/": 13,
     "/hersteller/tractive/": 12,
     "/hersteller/weenect/": 16,
@@ -3546,7 +3672,8 @@
     "/produkt/enabot-rola-pettracker/": 4,
     "/produkt/feelneedy-fn-w18-8l-katzenbrunnen/": 0,
     "/produkt/furbo-360-hundekamera/": 2,
-    "/produkt/furbo-mini-360/": 2,
+    "/produkt/furbo-360-katzenkamera/": 3,
+    "/produkt/furbo-mini-360/": 3,
     "/produkt/garmin-alpha-t-20/": 8,
     "/produkt/garmin-alpha-tt-25/": 2,
     "/produkt/honeyguardian-a305d/": 2,
@@ -3557,7 +3684,7 @@
     "/produkt/litter-robot-4/": 3,
     "/produkt/litter-robot-5-pro/": 3,
     "/produkt/neakasa-m1-lite/": 3,
-    "/produkt/neakasa-m1-plus/": 3,
+    "/produkt/neakasa-m1-plus/": 4,
     "/produkt/oneisall-2-2l-cordless-fountain/": 1,
     "/produkt/oneisall-2-in-1-feeder-water/": 2,
     "/produkt/oneisall-3-2l-cordless-fountain/": 1,
@@ -3569,16 +3696,17 @@
     "/produkt/pawbby-smart-pet-feeder/": 2,
     "/produkt/pawfit-3/": 2,
     "/produkt/pawsync-smart-pet-feeder/": 3,
-    "/produkt/petkit-eversweet-3-pro-uvc/": 2,
+    "/produkt/petkit-eversweet-3-pro-uvc/": 3,
     "/produkt/petkit-eversweet-5-mini/": 1,
-    "/produkt/petkit-eversweet-max-2-uvc/": 4,
+    "/produkt/petkit-eversweet-max-2-uvc/": 5,
     "/produkt/petkit-eversweet-max-cordless/": 1,
     "/produkt/petkit-eversweet-solo-2-fountain/": 3,
     "/produkt/petkit-eversweet-solo-se/": 1,
-    "/produkt/petkit-eversweet-ultra/": 4,
+    "/produkt/petkit-eversweet-ultra/": 5,
     "/produkt/petkit-fresh-element-infinity/": 2,
     "/produkt/petkit-fresh-element-solo/": 10,
     "/produkt/petkit-puramax-2/": 3,
+    "/produkt/petkit-purobot-crystal-duo/": 3,
     "/produkt/petkit-purobot-max-3/": 3,
     "/produkt/petkit-purobot-max-pro-2/": 3,
     "/produkt/petkit-yumshare-dual-hopper/": 7,
@@ -3586,7 +3714,7 @@
     "/produkt/petlibro-air-automatic-feeder/": 2,
     "/produkt/petlibro-air-wifi-feeder/": 2,
     "/produkt/petlibro-capsule-dog-fountain/": 2,
-    "/produkt/petlibro-dockstream-2-smart-cordless/": 2,
+    "/produkt/petlibro-dockstream-2-smart-cordless/": 3,
     "/produkt/petlibro-dockstream-2-smart/": 3,
     "/produkt/petlibro-dockstream-cordless/": 2,
     "/produkt/petlibro-dockstream-rfid-smart/": 3,
@@ -3604,7 +3732,7 @@
     "/produkt/petsafe-freshfeed-refrigerated-feeder/": 2,
     "/produkt/petsafe-healthy-pet-simply-feed/": 3,
     "/produkt/petsafe-mikrochip-katzenklappe/": 2,
-    "/produkt/petsafe-petporte-smart-flap/": 2,
+    "/produkt/petsafe-petporte-smart-flap/": 4,
     "/produkt/petsafe-smart-feed-2/": 3,
     "/produkt/petsafe-streamside-trinkbrunnen/": 1,
     "/produkt/petsnowy-snow-plus/": 3,
@@ -3629,7 +3757,7 @@
     "/produkt/xiaomi-smart-pet-food-feeder-2/": 17,
     "/produkt/xiaomi-smart-pet-fountain-2/": 1,
     "/produkt/zeromouse-2-0/": 2,
-    "/pumpe-katzentrinkbrunnen-reinigen/": 4,
+    "/pumpe-katzentrinkbrunnen-reinigen/": 5,
     "/reichweite-von-gps-trackern/": 4,
     "/seniorenhunde-richtig-versorgen/": 0,
     "/smarte-futterautomaten/": 77,
@@ -3638,19 +3766,19 @@
     "/so-bewerten-wir/": 15,
     "/trinkbrunnen-fuer-katzen-sinnvoll/": 7,
     "/trinkbrunnen-fuer-kitten-sicher/": 0,
-    "/trinkbrunnen-fuer-mehrere-katzen/": 25,
+    "/trinkbrunnen-fuer-mehrere-katzen/": 26,
     "/trinkbrunnen-hund/": 5,
     "/trinkbrunnen-seniorenkatzen/": 2,
-    "/trinkbrunnen/": 47,
+    "/trinkbrunnen/": 48,
     "/trinkmenge-hund-messen/": 2,
     "/trinkmenge-katze-messen/": 1,
     "/trockenfutter-oder-nassfutter-hund/": 5,
     "/trockenfutter-oder-nassfutter-katze/": 2,
     "/uebergewicht-bei-katzen-vermeiden/": 2,
-    "/vergleiche/beste-automatische-katzentoiletten/": 12,
+    "/vergleiche/beste-automatische-katzentoiletten/": 13,
     "/vergleiche/beste-futterautomaten-fuer-berufstaetige/": 4,
     "/vergleiche/beste-futterautomaten-fuer-hunde/": 10,
-    "/vergleiche/beste-futterautomaten-fuer-katzen/": 10,
+    "/vergleiche/beste-futterautomaten-fuer-katzen/": 11,
     "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/": 3,
     "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/": 5,
     "/vergleiche/beste-futterautomaten-fuer-nassfutter/": 14,
@@ -3664,7 +3792,7 @@
     "/vergleiche/beste-futterautomaten-unter-100-euro/": 3,
     "/vergleiche/beste-gps-tracker-fuer-hunde/": 17,
     "/vergleiche/beste-gps-tracker-fuer-katzen/": 8,
-    "/vergleiche/beste-haustierkameras/": 9,
+    "/vergleiche/beste-haustierkameras/": 10,
     "/vergleiche/beste-mikrochip-katzenklappen/": 11,
     "/vergleiche/beste-trinkbrunnen-fuer-hunde/": 5,
     "/vergleiche/beste-trinkbrunnen-fuer-katzen/": 17,

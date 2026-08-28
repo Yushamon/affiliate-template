@@ -88,6 +88,18 @@ Ziehe zuerst den Netzstecker oder trenne die Akkueinheit. Leere das Wasser volls
 
 Prüfe vorab, welche Teile spülmaschinengeeignet sind. Edelstahl oder einzelne Kunststoffteile dürfen je nach Modell in die Spülmaschine. Pumpe, Kabel, Kontakte, Akkus und Netzteil gehören dort nicht hinein.
 
+### Spülmaschinenfreigabe ist eine Teilefrage
+
+| Modell | Spülmaschine laut vorhandener Hersteller-Evidence | Handreinigung / Grenze |
+|---|---|---|
+| PetSafe Streamside | Keramikschale und -turm im oberen Korb | Pumpe und elektrische Teile von Hand |
+| PETKIT Eversweet Ultra | Edelstahl-Trinkschale, Auslauf und magnetisches Sieb | übrige Komponenten nach Anleitung von Hand |
+| PETKIT Eversweet 3 Pro UVC | keine Teile freigegeben | alle Teile von Hand |
+| PETLIBRO Dockstream 2 Smart Cordless | keine Teile freigegeben | Handwäsche |
+| PETKIT Eversweet Max 2 UVC | Hersteller bezeichnet das Modell als vollständig spülmaschinengeeignet | Filter entnehmen; Temperaturgrenzen und aktuelle Modellanleitung vor dem Spülgang prüfen |
+
+Die Freigabe eines Teils gilt nicht automatisch für Tank, Deckel, Filterhalter oder Pumpe desselben Modells. Bei widersprüchlicher oder fehlender Anleitung ist Handreinigung die konservative Entscheidung.
+
 ## Katzentrinkbrunnen reinigen: Schritt für Schritt
 
 ### 1. Wasser entsorgen und Brunnen zerlegen

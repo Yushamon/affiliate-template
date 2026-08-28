@@ -310,6 +310,16 @@ specs:
   - label: "Reinigung"
     value: "Gehäuse, Silikonhalter und Ladekontakte regelmäßig reinigen und vollständig trocknen"
 
+failureModes:
+  powerOutage: { status: notApplicable, behavior: "Der Tracker ist akkubetrieben; ein Haushalts-Stromausfall ist kein eigener Betriebsmodus." }
+  wifiOutage: { status: unknown, behavior: "WLAN dient dem Energiesparen; Ausfallverhalten der WLAN-Zone ist nicht separat belegt." }
+  internetOutage:
+    status: unavailable
+    behavior: "Ohne nutzbare Mobilfunkverbindung kann die Position nicht an die App übertragen werden; lokale Speicherung oder spätere Synchronisierung sind nicht belegt."
+    sourceUrl: "https://www.weenect.com/de/de/gps-tracker-hund/"
+    sourceType: manufacturer
+    verifiedAt: "2026-08-28"
+  cloudOutage: { status: unknown, behavior: "Das konkrete Verhalten bei Ausfall des Weenect-Dienstes ist nicht dokumentiert." }
 gps:
   animal:
     - "dog"

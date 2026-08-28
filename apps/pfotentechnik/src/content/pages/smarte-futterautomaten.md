@@ -472,6 +472,18 @@ Ein sinnvoller Praxistest besteht darin, den Automaten nach der Einrichtung bewu
 
 ## Die zehn wichtigsten Kaufkriterien
 
+### Manipulationssicherheit bei Katzen: Schutzmechanismus und Beleg trennen
+
+„Katzensicher“ ist kein einheitlicher Prüfwert. Vergleiche Deckel, Futterweg und Stand getrennt und behandle nicht dokumentierte Eigenschaften als unbekannt.
+
+| Modell | Belegte Konstruktion | Nicht belegt / Grenze |
+|---|---|---|
+| PETKIT Fresh Element Solo | Deckelverriegelung und Rotorverschluss zwischen den Ausgaben | kein Nachweis, dass jede stark futtermotivierte Katze abgehalten wird |
+| PETLIBRO Air WiFi Feeder | verriegelter Deckel, Rotorverschluss und geschlossener Futterweg | kein dedizierter Sensor direkt im Auslass; individuelle Manipulationsfestigkeit unbekannt |
+| Catit PIXI Smart 6-Meal | Deckel, Tastensperre und rücklaufender Motor bei Widerstand laut Hersteller | einzelne als solche gekennzeichnete Nutzerberichte beschreiben dennoch geöffnete Deckel/Einsätze |
+
+Ein Kamerabild verhindert keinen Futterdiebstahl, zwei Näpfe keine gerechte Verteilung. Vor unbeaufsichtigter Nutzung gehören deshalb Umkippversuch, Deckelzugriff und Pfote-am-Auslass unter Aufsicht in den Einrichtungscheck. Das ist ein Haushaltstest nach dem Kauf, kein von PfotenTechnik behaupteter Produkttest.
+
 ### 1. Futterart
 
 Trockenfutter und Nassfutter benötigen unterschiedliche Bauarten. Diese Entscheidung muss vor allen App- und Kamerafunktionen fallen.

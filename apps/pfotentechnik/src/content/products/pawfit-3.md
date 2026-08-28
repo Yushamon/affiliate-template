@@ -146,6 +146,16 @@ features: ["Live-Ortung", "Sicherheitszonen", "Audio-ID", "Pawfit Voice", "Track
 useCase: "Leichter Mobilfunktracker mit Audio-ID und Warnfunktionen"
 gps: { animal: ["dog"], minimumPetWeightKg: 3.5, deviceWeightGrams: 27, weightBasis: "device", subscriptionRequired: true, includedServiceMonths: 0, transmission: "lte", batteryMaxDays: 8, batteryCondition: "Herstellermaximum; abhängig von Ortung, Netz und Warnfunktionen", waterproofRating: "IP68", liveTracking: true, virtualFence: true, activityTracking: true, attachmentType: "collar-attachment" }
 comparisonData: { version: 1, custom: { einsatzgebiet: "Audio-ID und Warnfunktionen", hundegroesse: "Hunde über 3,5 kg", ortung: "GPS, WLAN und Bluetooth", abo: "eSIM-Abonnement erforderlich", gewicht: "27 g", mindestgewicht: "3,5 kg", kamera: "Nein", nachtsicht: "Tracking-Licht, keine Kamera", akkulaufzeit: "Bis 8 Tage Herstellerwert", geofencing: "Sicherheitszonen", audio: "Audio-ID und Pawfit Voice", groesse: "ca. 48 × 33 × 14 mm" } }
+failureModes:
+  powerOutage: { status: notApplicable, behavior: "Der Tracker ist akkubetrieben; ein Haushalts-Stromausfall ist kein eigener Betriebsmodus." }
+  wifiOutage: { status: unknown, behavior: "Ein WLAN-Ausfallverhalten ist für dieses Mobilfunkprodukt nicht belastbar dokumentiert." }
+  internetOutage:
+    status: unavailable
+    behavior: "Die Fernortung benötigt die eSIM-Mobilfunkverbindung; lokale Aufzeichnung, spätere Synchronisierung und Restfunktionen im Funkloch sind nicht belegt."
+    sourceUrl: "https://www.pawfit.com/de-us/product/pawfit-3-pet-tracker.html"
+    sourceType: manufacturer
+    verifiedAt: "2026-08-28"
+  cloudOutage: { status: unknown, behavior: "Das Verhalten bei Ausfall des Pawfit-Dienstes ist nicht belastbar dokumentiert." }
 comparisonFilters: { animal: ["dog"], petSize: ["small", "medium", "large"], foodType: [], app: true, camera: false }
 alternatives: ["weenect-xs", "tractive-dog-6", "invoxia-biotracker-2026"]
 comparisons: ["beste-gps-tracker-fuer-hunde"]

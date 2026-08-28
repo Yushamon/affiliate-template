@@ -78,6 +78,11 @@ comparisonData:
     katzeninteraktion: "Feder-Spielzeug, Leckerliwurf, Meowing Alert"
 comparisons: ["beste-haustierkameras"]
 comparisonFilters: { animal: ["cat"], petSize: ["small", "medium", "large"], foodType: [] }
+failureModes:
+  powerOutage: { status: unknown, behavior: "Notstrom und Wiederanlauf nach Stromausfall sind nicht belegt." }
+  wifiOutage: { status: unknown, behavior: "Der lokale Funktionsumfang ohne WLAN ist nicht belegt." }
+  internetOutage: { status: unknown, behavior: "Das Verhalten von Livebild und Interaktion ohne Internet ist nicht dokumentiert." }
+  cloudOutage: { status: unknown, behavior: "Nanny-Funktionen sind dienstabhängig; Restfunktionen bei einem konkreten Dienstausfall sind nicht belegt." }
 decisionJourney: { cluster: "haustierkameras", stage: "decision", intent: "furbo-katzenkamera-pruefen", primaryQuestion: "Sind Feder-Spielzeug und Leckerliwurf wichtiger als lokale Speicherung und niedrige Folgekosten?", next: ["/vergleiche/beste-haustierkameras/"], fallback: ["/haustierkameras/", "/hersteller/furbo/"] }
 faq:
   - { question: "Ist die Katzenkamera nur eine andere Farbe der Hundekamera?", answer: "Nein. Furbo führt sie als eigenes Katzenmodell mit Feather Wand Toy und Meowing Alert im europäischen Sortiment." }

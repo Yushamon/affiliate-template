@@ -202,6 +202,21 @@ comparisons:
   - "beste-futterautomaten-fuer-katzen"
   - "beste-futterautomaten-fuer-hunde"
   - "beste-futterautomaten-fuer-kleine-hunde"
+failureModes:
+  powerOutage:
+    status: supported
+    behavior: "Der integrierte Akku kann die lokale Fütterung weiter versorgen; App-Erreichbarkeit oder Protokollübertragung folgen daraus nicht."
+    sourceUrl: "https://au.petlibro.com/products/air-wifi-feeder"
+    sourceType: manufacturer
+    verifiedAt: "2026-08-28"
+  wifiOutage: { status: unknown, behavior: "Der separate Umfang bei reinem WLAN-Ausfall ist nicht belastbar ausgewiesen." }
+  internetOutage:
+    status: supported
+    behavior: "Zuvor gespeicherte Zeitpläne laufen mit Netzstrom oder Akku weiter; App-Zugriff und Live-Protokolle fehlen während der Unterbrechung."
+    sourceUrl: "https://petlibro.com/pages/pre-sale-inquiries-about-air-smart-feeder-af108-plaf108"
+    sourceType: support
+    verifiedAt: "2026-08-28"
+  cloudOutage: { status: unknown, behavior: "Ein eigenständiges Verhalten bei Ausfall des Herstellerdienstes ist nicht belegt." }
 comparisonFilters:
   animal:
     - dog

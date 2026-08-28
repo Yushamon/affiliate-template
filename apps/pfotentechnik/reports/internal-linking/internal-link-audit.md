@@ -1,12 +1,12 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-08-21T10:44:28.919Z
+Erstellt: 2026-08-28T08:56:12.354Z
 
 ## Ergebnis
 
-- Dokumente: 241
-- Linkdefinitionen: 512
-- Simulierte automatische Links: 538
+- Dokumente: 243
+- Linkdefinitionen: 514
+- Simulierte automatische Links: 559
 - Fehler: 0
 - Warnungen: 9
 - Strict-kritisch: 0
@@ -125,6 +125,7 @@ Erstellt: 2026-08-21T10:44:28.919Z
 - /katze-trinkt-viel/ → /pumpe-katzentrinkbrunnen-reinigen/: „Pumpe reinigen“
 - /katze-trinkt-viel/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrkatzenhaushalt“
 - /katze-trinkt-viel/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filterwechsel“
+- /katzenklappe-einbauen/ → /produkt/petsafe-petporte-smart-flap/: „PetSafe Petporte smart flap“
 - /katzenklappe-einbauen/ → /hersteller/onlycat/: „OnlyCat“
 - /katzenklappe-fuer-mehrere-katzen/ → /katzenklappen/: „Katzenklappen“
 - /katzenklappe-zugluft-und-waermedaemmung/ → /hersteller/petwalk/: „petWALK“
@@ -142,7 +143,12 @@ Erstellt: 2026-08-21T10:44:28.919Z
 - /katzentrinkbrunnen-laut-pumpe/ → /hersteller/petlibro/: „PETLIBRO“
 - /katzentrinkbrunnen-ohne-filter/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filter wechseln“
 - /katzentrinkbrunnen-ohne-filter/ → /hersteller/petkit/: „PETKIT“
+- /katzentrinkbrunnen-richtig-reinigen/ → /produkt/petlibro-dockstream-2-smart-cordless/: „PETLIBRO Dockstream 2 Smart Cordless“
+- /katzentrinkbrunnen-richtig-reinigen/ → /produkt/petkit-eversweet-3-pro-uvc/: „PETKIT Eversweet 3 Pro UVC“
+- /katzentrinkbrunnen-richtig-reinigen/ → /produkt/petkit-eversweet-max-2-uvc/: „PETKIT Eversweet Max 2 UVC“
+- /katzentrinkbrunnen-richtig-reinigen/ → /produkt/petkit-eversweet-ultra/: „PETKIT Eversweet Ultra“
 - /katzentrinkbrunnen-richtig-reinigen/ → /warum-katzen-fliessendes-wasser-trinken/: „Fließendes Wasser“
+- /katzentrinkbrunnen-richtig-reinigen/ → /hersteller/petsafe/: „PetSafe“
 - /katzenwasser-taeglich-wechseln/ → /trinkbrunnen-fuer-katzen-sinnvoll/: „Trinkbrunnen für Katzen“
 - /nierenkranke-katze-trinken/ → /warum-katzen-fliessendes-wasser-trinken/: „bewegtes Wasser“
 - /pumpe-katzentrinkbrunnen-reinigen/ → /hersteller/petlibro/: „PETLIBRO“
@@ -289,6 +295,9 @@ Erstellt: 2026-08-21T10:44:28.919Z
 - /produkt/feelneedy-fn-w18-8l-katzenbrunnen/ → /trinkbrunnen-hund/: „Hundetrinkbrunnen“
 - /produkt/feelneedy-fn-w18-8l-katzenbrunnen/ → /pumpe-katzentrinkbrunnen-reinigen/: „Pumpenreinigung“
 - /produkt/feelneedy-fn-w18-8l-katzenbrunnen/ → /katzenwasser-taeglich-wechseln/: „Wasserwechsel“
+- /produkt/furbo-360-katzenkamera/ → /produkt/furbo-mini-360/: „Furbo Mini 360“
+- /produkt/furbo-360-katzenkamera/ → /haustierkameras/: „Haustierkamera“
+- /produkt/furbo-360-katzenkamera/ → /hersteller/furbo/: „Furbo“
 - /produkt/furbo-mini-360/ → /hersteller/furbo/: „Furbo“
 - /produkt/garmin-alpha-t-20/ → /vergleiche/gps-tracker-ohne-abo/: „GPS-Tracker ohne Abo“
 - /produkt/garmin-alpha-t-20/ → /gps-tracker/: „Haustiertracker“
@@ -352,6 +361,8 @@ Erstellt: 2026-08-21T10:44:28.919Z
 - /produkt/petkit-fresh-element-solo/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
 - /produkt/petkit-fresh-element-solo/ → /hersteller/petkit/: „PETKIT“
 - /produkt/petkit-puramax-2/ → /hersteller/petkit/: „PETKIT“
+- /produkt/petkit-purobot-crystal-duo/ → /produkt/neakasa-m1-plus/: „Neakasa M1 Plus“
+- /produkt/petkit-purobot-crystal-duo/ → /hersteller/petkit/: „PETKIT“
 - /produkt/petkit-purobot-max-3/ → /hersteller/petkit/: „PETKIT“
 - /produkt/petkit-purobot-max-pro-2/ → /hersteller/petkit/: „PETKIT“
 - /produkt/petkit-yumshare-dual-hopper/ → /smarte-futterautomaten/: „Futterautomat“
@@ -371,6 +382,7 @@ Erstellt: 2026-08-21T10:44:28.919Z
 - /produkt/petlibro-dockstream-2-smart-cordless/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
 - /produkt/petlibro-dockstream-2-smart/ → /hersteller/petlibro/: „PETLIBRO“
 - /produkt/petlibro-dockstream-cordless/ → /hersteller/petlibro/: „PETLIBRO“
+- /produkt/petlibro-dockstream-rfid-smart/ → /trinkbrunnen/: „Trinkbrunnen“
 - /produkt/petlibro-dockstream-rfid-smart/ → /hersteller/petlibro/: „PETLIBRO“
 - /produkt/petlibro-glacier-ultrafiltration/ → /hersteller/petlibro/: „PETLIBRO“
 - /produkt/petlibro-granary-2-vision/ → /hersteller/petlibro/: „PETLIBRO“
@@ -512,7 +524,16 @@ Erstellt: 2026-08-21T10:44:28.919Z
 - /vergleiche/beste-gps-tracker-fuer-katzen/ → /produkt/tractive-cat-6-mini/: „Tractive CAT 6 Mini“
 - /vergleiche/beste-gps-tracker-fuer-katzen/ → /hersteller/weenect/: „Weenect“
 - /vergleiche/beste-gps-tracker-fuer-katzen/ → /hersteller/enabot/: „Enabot“
+- /vergleiche/beste-haustierkameras/ → /hersteller/petlibro/: „PETLIBRO“
+- /vergleiche/beste-haustierkameras/ → /hersteller/enabot/: „Enabot“
+- /vergleiche/beste-haustierkameras/ → /hersteller/furbo/: „Furbo“
+- /vergleiche/beste-haustierkameras/ → /hersteller/reolink/: „Reolink“
 - /vergleiche/beste-haustierkameras/ → /hersteller/pettec/: „PetTec“
+- /vergleiche/beste-mikrochip-katzenklappen/ → /produkt/petsafe-petporte-smart-flap/: „PetSafe Petporte smart flap“
+- /vergleiche/beste-mikrochip-katzenklappen/ → /hersteller/cat-mate/: „Cat Mate“
+- /vergleiche/beste-mikrochip-katzenklappen/ → /hersteller/petsafe/: „PetSafe“
+- /vergleiche/beste-mikrochip-katzenklappen/ → /hersteller/onlycat/: „OnlyCat“
+- /vergleiche/beste-mikrochip-katzenklappen/ → /hersteller/petwalk/: „petWALK“
 - /vergleiche/beste-trinkbrunnen-fuer-hunde/ → /produkt/petkit-eversweet-max-2-uvc/: „PETKIT Eversweet Max 2 UVC“
 - /vergleiche/beste-trinkbrunnen-fuer-hunde/ → /produkt/oneisall-7l-dog-water-fountain/: „oneisall 7L Dog Water Fountain“
 - /vergleiche/beste-trinkbrunnen-fuer-hunde/ → /produkt/petlibro-capsule-dog-fountain/: „PETLIBRO Capsule Dog Fountain“

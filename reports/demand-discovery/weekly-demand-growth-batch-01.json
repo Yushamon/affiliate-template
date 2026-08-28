@@ -1,0 +1,403 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-28",
+  "mode": "read-only",
+  "scope": "apps/pfotentechnik",
+  "summary": {
+    "totalFindings": 3,
+    "coverage": {
+      "covered": 3,
+      "partial": 0,
+      "fragmented": 0,
+      "missing": 0,
+      "overcovered": 0,
+      "uncertain": 0
+    },
+    "newPagesRecommended": 0,
+    "existingPageEnrichments": 0,
+    "dataAssetCandidates": 1
+  },
+  "searchSignalCrossCheck": {
+    "coldStartRuleApplied": true,
+    "absenceIsDemandCounterevidence": false,
+    "sources": [
+      {
+        "path": "apps/pfotentechnik/reports/seo-signal-focus/top-search-signals.json",
+        "googleDashboardGeneratedAt": "2026-08-24T12:23:27.763Z",
+        "bingDashboardGeneratedAt": "2026-08-24T12:22:48.729Z"
+      },
+      {
+        "path": "apps/pfotentechnik/reports/search/search-report.json",
+        "generatedAt": "2026-07-22T21:00:39.211Z",
+        "role": "older supplementary snapshot"
+      }
+    ],
+    "signals": [
+      {
+        "findingId": "finding-1",
+        "provider": "google",
+        "url": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+        "queryOrSignal": "Nassfutterautomaten / elektrische Kühlung",
+        "impressions": 3,
+        "position": 17,
+        "interpretation": "small positive owner signal; not a new-page trigger"
+      },
+      {
+        "findingId": "finding-2",
+        "provider": null,
+        "url": "/katzenklappen/",
+        "queryOrSignal": null,
+        "impressions": null,
+        "position": null,
+        "interpretation": "no exact stored query signal; cold-start neutral"
+      },
+      {
+        "findingId": "finding-3",
+        "provider": "bing",
+        "url": "/produkt/tractive-cat-6-mini/",
+        "queryOrSignal": "tractive cat 6 mini; cat 6 mini tractive; Akkulaufzeit",
+        "impressions": 10,
+        "position": 6,
+        "interpretation": "product-level supporting signal; insufficient for volume inference"
+      }
+    ]
+  },
+  "findings": [
+    {
+      "id": "finding-1",
+      "priority": "P0",
+      "cluster": "Futterautomaten",
+      "demandNode": "Nassfutter + Kühlung + Mikrochip/RFID + Timer im Mehrkatzenhaushalt",
+      "coverage": "covered",
+      "demandConfidence": "high",
+      "assessmentConfidence": "high",
+      "primaryIntentOwner": {
+        "url": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+        "ownerStatus": "bestehende URL ist klarer Owner",
+        "reason": "The comparison combines cooling principle, timed meals, power-failure behavior and animal access, and explicitly explains why no current product covers all requirements."
+      },
+      "secondaryUrls": [
+        {
+          "url": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+          "role": "secondary household-intent owner",
+          "overlap": "Explains that timed cooled feeders do not identify animals and that separate stations or access control are needed."
+        },
+        {
+          "url": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+          "role": "supporting multi-pet decision page",
+          "overlap": "Strong on protected feeding stations; less specific on cooling and timers."
+        },
+        {
+          "url": "/smarte-futterautomaten/",
+          "role": "cluster hub",
+          "overlap": "Broad feeder architecture and links to specialized comparisons."
+        },
+        {
+          "url": "/produkt/petlibro-polar-wet-food-feeder/",
+          "role": "cooling and timer product evidence",
+          "overlap": "Active cooling and timed compartments, no animal separation."
+        },
+        {
+          "url": "/produkt/surefeed-microchip-pet-feeder/",
+          "role": "microchip access product evidence",
+          "overlap": "Protected wet-food bowl, no active cooling or schedule."
+        },
+        {
+          "url": "/produkt/surefeed-microchip-pet-feeder-connect/",
+          "role": "connected microchip access product evidence",
+          "overlap": "Protected bowl and app logs, no active cooling or timed automatic meals."
+        }
+      ],
+      "repositoryEvidence": [
+        {
+          "path": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-nassfutter.md",
+          "evidence": "Separates active cooling from cooling packs, scheduled opening from animal identity, and timer backup from active cooling during power loss."
+        },
+        {
+          "path": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md",
+          "evidence": "States that wet-food timing/cooling does not automatically separate cats and recommends independent stations or access control."
+        },
+        {
+          "path": "apps/pfotentechnik/src/content/products/petlibro-polar-wet-food-feeder.md",
+          "evidence": "Documents active cooling, three timed portions and the boundary of battery backup."
+        },
+        {
+          "path": "apps/pfotentechnik/src/content/products/surefeed-microchip-pet-feeder.md",
+          "evidence": "Documents wet-food suitability and microchip/RFID access but no schedule or active cooling."
+        },
+        {
+          "path": "apps/pfotentechnik/reports/demand-enhancement/demand-enhancement-1.md",
+          "evidence": "Prior current-repository audit classifies the same combination as covered."
+        }
+      ],
+      "missingInformation": [],
+      "cannibalizationRisk": {
+        "level": "high",
+        "reason": "A new combination page would overlap the wet-food, two-cat and multi-pet comparisons without material information gain."
+      },
+      "dataAssetPotential": "none",
+      "recommendation": "no-change",
+      "newPage": "no",
+      "reasoning": "The exact multi-constraint decision is already answered by the natural wet-food comparison and supported by the two-cat comparison. New-page criteria 2 and 3 are not met."
+    },
+    {
+      "id": "finding-2",
+      "priority": "P0",
+      "cluster": "Katzenklappen / Mikrochip-Katzenklappen",
+      "demandNode": "Fremde Katze folgt direkt hinter einer berechtigten Katze durch eine Mikrochip-Katzenklappe",
+      "coverage": "covered",
+      "demandConfidence": "high",
+      "assessmentConfidence": "high",
+      "primaryIntentOwner": {
+        "url": "/katzenklappen/",
+        "ownerStatus": "bestehende URL ist klarer Owner",
+        "reason": "The hub directly explains tailgating as a mechanical system boundary and separates it from chip authorization and directional rights."
+      },
+      "secondaryUrls": [
+        {
+          "url": "/vergleiche/beste-mikrochip-katzenklappen/",
+          "role": "model comparison",
+          "overlap": "Compares selective entry and directional rights but should not duplicate the hub's general system explanation."
+        },
+        {
+          "url": "/katzenklappe-fuer-mehrere-katzen/",
+          "role": "multi-cat rights guide",
+          "overlap": "Tailgating is one subproblem within a broader rights matrix."
+        },
+        {
+          "url": "/produkt/sureflap-dualscan-mikrochip-katzenklappe/",
+          "role": "model locking evidence",
+          "overlap": "No anti-tailgating protection or exact relocking time documented."
+        },
+        {
+          "url": "/produkt/sureflap-mikrochip-katzenklappe-connect/",
+          "role": "model locking evidence",
+          "overlap": "Relocks after the authorized cat has fully passed; no mechanical singulation documented."
+        },
+        {
+          "url": "/produkt/petsafe-mikrochip-katzenklappe/",
+          "role": "model locking evidence",
+          "overlap": "Double automatic lock documented; exact relocking time and anti-tailgating are not."
+        }
+      ],
+      "repositoryEvidence": [
+        {
+          "path": "apps/pfotentechnik/src/content/pages/katzenklappen.md",
+          "evidence": "Dedicated Systemgrenze: Tailgating section directly answers the user problem and forbids inference from Microchip or DualScan alone."
+        },
+        {
+          "path": "apps/pfotentechnik/src/content/products/sureflap-dualscan-mikrochip-katzenklappe.md",
+          "evidence": "Two-sided chip checks documented; anti-tailgating and exact relocking time remain unknown."
+        },
+        {
+          "path": "apps/pfotentechnik/src/content/products/sureflap-mikrochip-katzenklappe-connect.md",
+          "evidence": "Manual-backed relocking after full passage, without an anti-tailgating guarantee."
+        },
+        {
+          "path": "apps/pfotentechnik/src/content/products/petsafe-mikrochip-katzenklappe.md",
+          "evidence": "Double automatic locking is documented but not treated as mechanical anti-tailgating."
+        },
+        {
+          "path": "apps/pfotentechnik/reports/demand-discovery/external-demand-evidence-repair.md",
+          "evidence": "Eight relevant flap models were checked and model-level unknowns were explicitly preserved."
+        }
+      ],
+      "missingInformation": [
+        "Exact relocking time is not published for several models.",
+        "Behavior while the first cat's body or tail keeps the flap open is not uniformly documented.",
+        "No manufacturer anti-tailgating guarantee is documented for the reviewed models."
+      ],
+      "cannibalizationRisk": {
+        "level": "high",
+        "reason": "A standalone page would split a focused system-boundary answer from the category hub and overlap the microchip comparison and multi-cat guide."
+      },
+      "dataAssetPotential": "low",
+      "recommendation": "no-change",
+      "newPage": "no",
+      "reasoning": "The general question is answered clearly in the category hub; remaining model values are honest unknowns, not a coverage gap. New-page criteria 2, 3 and 5 are not met."
+    },
+    {
+      "id": "finding-3",
+      "priority": "P1",
+      "cluster": "GPS-Tracker für Hunde und Katzen",
+      "demandNode": "Aussagekraft von GPS-Tracker-Herstellerakkulaufzeiten nach realem Nutzungsszenario",
+      "coverage": "covered",
+      "demandConfidence": "high",
+      "assessmentConfidence": "high",
+      "primaryIntentOwner": {
+        "url": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+        "ownerStatus": "bestehende URL ist klarer Owner",
+        "reason": "The dedicated comparison explicitly separates maximum values, energy-saving zones, continuous tracking, transmission class and animal fit."
+      },
+      "secondaryUrls": [
+        {
+          "url": "/gps-tracker/",
+          "role": "cluster hub",
+          "overlap": "Explains why mode and energy-saving conditions matter and links to the dedicated comparison."
+        },
+        {
+          "url": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "role": "dog total-fit comparison",
+          "overlap": "Battery is one criterion, not the primary intent."
+        },
+        {
+          "url": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+          "role": "cat total-fit comparison",
+          "overlap": "Battery is one criterion, not the primary intent."
+        },
+        {
+          "url": "/produkt/tractive-dog-6-xl/",
+          "role": "model scenario evidence",
+          "overlap": "Maximum with and without energy-saving zones."
+        },
+        {
+          "url": "/produkt/weenect-xt/",
+          "role": "model scenario evidence",
+          "overlap": "Energy-saving-zone and continuous-tracking values."
+        },
+        {
+          "url": "/produkt/paj-pet-finder-4g-mini/",
+          "role": "model scenario evidence",
+          "overlap": "Energy-saving, mixed-use and continuous-tracking values."
+        }
+      ],
+      "repositoryEvidence": [
+        {
+          "path": "apps/pfotentechnik/src/content/comparisons/gps-tracker-mit-langer-akkulaufzeit.md",
+          "evidence": "Uses a same-operating-mode-or-no-ranking rule and explains zones, live mode, network quality, temperature, motion and update frequency."
+        },
+        {
+          "path": "apps/pfotentechnik/src/content/pages/gps-tracker.md",
+          "evidence": "Treats maximum battery claims as a common mistake and directs users to the dedicated battery comparison."
+        },
+        {
+          "path": "reports/authority-distribution/data-readiness.md",
+          "evidence": "Reports 12/12 coverage for batteryMaxDays, transmission, liveTracking and device weight; conditions must remain attached."
+        },
+        {
+          "path": "reports/authority-distribution/data-asset-opportunities.md",
+          "evidence": "Scores documented GPS manufacturer maximums at 78/100 and explicitly rejects real-runtime claims."
+        }
+      ],
+      "missingInformation": [
+        "Uniform typed per-model values without an energy-saving zone where officially published.",
+        "Uniform typed continuous or live-tracking values where officially published.",
+        "Field-level source URL and checked-at date for every scenario value.",
+        "Explicit known, unknown or not-published status per scenario."
+      ],
+      "structuredData": {
+        "population": 12,
+        "fields": [
+          {
+            "field": "gps.batteryMaxDays",
+            "coverage": "12/12",
+            "coveragePct": 100,
+            "quality": "high as manufacturer maximum; medium comparability"
+          },
+          {
+            "field": "gps.batteryCondition",
+            "coverage": "required companion to maximum",
+            "coveragePct": null,
+            "quality": "textual and not scenario-normalized"
+          },
+          {
+            "field": "gps.liveTracking",
+            "coverage": "12/12",
+            "coveragePct": 100,
+            "quality": "boolean; interval semantics require normalization"
+          },
+          {
+            "field": "gps.transmission",
+            "coverage": "12/12",
+            "coveragePct": 100,
+            "quality": "typed; LTE and VHF must remain separate"
+          },
+          {
+            "field": "gps.deviceWeightGrams",
+            "coverage": "12/12",
+            "coveragePct": 100,
+            "quality": "typed and relevant to animal fit"
+          }
+        ]
+      },
+      "referencedPrimarySourceFamilies": [
+        "Tractive customer service and product documentation",
+        "Weenect XS/XT product pages and official help center",
+        "PAJ PET Finder 4G Mini product page and quick-start manual",
+        "Prothelis product page and German manufacturer shop",
+        "Pawfit product page and official model comparison"
+      ],
+      "cannibalizationRisk": {
+        "level": "medium for a new page; low for a data asset assigned to the existing owner",
+        "reason": "A new real-battery-life page would duplicate the dedicated comparison and invite unsupported claims; structured evidence can safely support the existing owner."
+      },
+      "dataAssetPotential": "medium",
+      "recommendation": "data-asset-candidate",
+      "newPage": "no",
+      "reasoning": "Content coverage and ownership are already clear. Structured maximums have full coverage, but scenario fields and field-level evidence need normalization before a publishable asset. The asset belongs to the current battery comparison."
+    }
+  ],
+  "intentOwnershipMatrix": [
+    {
+      "demandNodeId": "finding-1",
+      "primaryOwner": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "secondaryUrls": [
+        "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+        "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+        "/smarte-futterautomaten/"
+      ],
+      "coverage": "covered",
+      "recommendation": "no-change"
+    },
+    {
+      "demandNodeId": "finding-2",
+      "primaryOwner": "/katzenklappen/",
+      "secondaryUrls": [
+        "/vergleiche/beste-mikrochip-katzenklappen/",
+        "/katzenklappe-fuer-mehrere-katzen/"
+      ],
+      "coverage": "covered",
+      "recommendation": "no-change"
+    },
+    {
+      "demandNodeId": "finding-3",
+      "primaryOwner": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+      "secondaryUrls": [
+        "/gps-tracker/",
+        "/vergleiche/beste-gps-tracker-fuer-hunde/",
+        "/vergleiche/beste-gps-tracker-fuer-katzen/"
+      ],
+      "coverage": "covered",
+      "recommendation": "data-asset-candidate"
+    }
+  ],
+  "recommendedGrowthBatch": [
+    {
+      "priority": "P0",
+      "findingId": "finding-1",
+      "action": "no-change",
+      "detail": "Preserve the wet-food comparison as primary owner and do not create a combination longtail page."
+    },
+    {
+      "priority": "P1",
+      "findingId": "finding-3",
+      "action": "data-asset-candidate",
+      "detail": "In a separate data batch, normalize only officially documented battery scenarios and attach field-level evidence; assign the result to the existing battery comparison."
+    },
+    {
+      "priority": "P2",
+      "findingId": "finding-2",
+      "action": "no-change",
+      "detail": "Preserve the category hub as the general tailgating owner and update model unknowns only when new primary evidence exists."
+    }
+  ],
+  "doNotTouch": [
+    "/vergleiche/beste-futterautomaten-fuer-nassfutter/ as the primary combined cooling and timing owner",
+    "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/ as the household-specific secondary owner",
+    "/katzenklappen/ as the general tailgating system-boundary owner",
+    "/vergleiche/beste-mikrochip-katzenklappen/ as a model comparison rather than a duplicate tailgating guide",
+    "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/ as the sole battery-scenario search-intent owner",
+    "Unknown locking or battery scenario values must not become false, zero or inferred facts",
+    "Manufacturer maximum battery values must not be presented as measured real-world runtime"
+  ]
+}

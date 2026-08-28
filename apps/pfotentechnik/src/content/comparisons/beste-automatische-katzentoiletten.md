@@ -444,6 +444,18 @@ Dieser Vergleich besitzt die konkrete Modellentscheidung. Das Prüfprinzip laute
 
 Kitten-Modus bedeutet bei Luma, PUROBOT und M1 Lite nicht, dass eine zu leichte Katze mit aktiver Automatik reinigen darf. Allgemein gilt: Betritt oder nähert sich eine Katze während eines Zyklus, muss das Gerät nach Herstellerlogik stoppen. Bei Sensorfehlern, unebenem Stand, ungewöhnlichem Geräusch oder Stromproblem bleibt die Automatik aus, bis Ursache und Anleitung geklärt sind.
 
+### Untergrund ist Teil der Sensorfunktion
+
+| Modell | Belegter Untergrundhinweis | Audit-Status |
+|---|---|---|
+| PETLIBRO Luma | harter, ebener Boden; Teppich kann Gewichts- und Sicherheitsmessung beeinträchtigen | belegt |
+| Neakasa M1 Lite / M1 Plus | keine konkrete Teppich- oder Mattenfreigabe in der vorhandenen Evidence | unknown |
+| PETKIT PuraMax 2 / MAX 3 / MAX PRO 2 / Crystal Duo | keine modellübergreifend belastbare Teppichfreigabe in der vorhandenen Evidence | unknown |
+| Litter-Robot 4 / 5 Pro | konkrete Matten-/Teppichbedingungen in der vorhandenen Evidence nicht vollständig dokumentiert | unknown |
+| PetSnowy SNOW+ / Devoko 90L | konkrete Untergrundfreigabe nicht belastbar dokumentiert | unknown |
+
+Bei `unknown` darf aus einer funktionierenden Rotation keine korrekte Waage oder Sicherheitserkennung abgeleitet werden. Bis zur Herstellerbestätigung ist ein fester, ebener und stabiler Stand die konservative Wahl; Unterlegmatten dürfen das Gerät nicht verkanten.
+
 ## Zehn unterschiedliche Kaufrollen
 
 - [Neakasa M1 Lite](/produkt/neakasa-m1-lite/) hält Sicht- und Fluchtweg offen, verlangt aber einen hohen Einstieg.

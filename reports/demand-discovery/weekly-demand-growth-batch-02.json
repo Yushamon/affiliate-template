@@ -1,0 +1,218 @@
+{
+  "batch": "weekly-demand-growth-batch-02",
+  "generatedAt": "2026-08-28",
+  "mode": "read-only",
+  "scope": "apps/pfotentechnik",
+  "totalDemandNodes": 24,
+  "coverage": {
+    "covered": 10,
+    "partial": 13,
+    "fragmented": 0,
+    "missing": 1,
+    "overcovered": 0,
+    "uncertain": 0,
+    "directCoverageRate": 0.4167,
+    "effectiveCoverageRate": 0.6875
+  },
+  "breadthClassification": "breadth-gap-medium",
+  "methodology": {
+    "classificationBasis": "A node is covered only where a clear owner substantively answers the exact problem; keyword occurrences alone were ignored.",
+    "coldStartRuleApplied": true,
+    "unknownHandling": "Unknown product behavior was not inferred from adjacent functions, other models, or absent values.",
+    "priceHandling": "Volatile prices were not converted into durable multi-year totals.",
+    "gscCrossCheck": {
+      "used": false,
+      "reason": "Stored search reports were not sufficiently current or query-specific for these 24 nodes; absence of stored impressions was treated as neutral."
+    }
+  },
+  "findings": [
+    {
+      "id": "A1", "cluster": "Futterautomaten", "demandNode": "Manipulationssicherheit", "priority": "P0", "coverage": "partial", "confidence": "high",
+      "primaryIntentOwner": "/smarte-futterautomaten/", "primaryFile": "apps/pfotentechnik/src/content/pages/smarte-futterautomaten.md",
+      "repositoryEvidence": [{"section": "### 7. Sicherheit / 7-Tage-Plan", "evidence": "The owner tells readers to check tipping, prying/opening, reaching into the outlet, lid, mechanics and stability; day six explicitly tests attempts to open the lid."}, {"file": "apps/pfotentechnik/src/content/pages/futterautomat-hund.md", "section": "## Standfestigkeit und Manipulationsschutz", "evidence": "A secondary dog-specific guide provides detailed base, lid-lock and outlet criteria."}],
+      "secondaryUrls": ["/futterautomat-hund/", "/produkt/catit-pixi-smart-futterautomat/"],
+      "missingInformation": ["No cross-model cat-focused evidence for lid lock, outlet reachability and resistance to highly food-motivated cats."],
+      "cannibalizationRisk": "high: a standalone page would split a safety sub-intent from the feeder owner", "recommendation": "enrich-existing", "newPage": "no", "dataAssetRelation": "failure-mode-matrix", "reasoning": "The owner answers the mechanism and test method, but not the model-selection question with comparable evidence. An evidence-backed table/section is sufficient."
+    },
+    {
+      "id": "A2", "cluster": "Futterautomaten", "demandNode": "5-GHz-WLAN", "priority": "P0", "coverage": "covered", "confidence": "high",
+      "primaryIntentOwner": "/vergleiche/futterautomat-mit-app/", "primaryFile": "apps/pfotentechnik/src/content/comparisons/futterautomat-mit-app.md",
+      "repositoryEvidence": [{"section": "WLAN: 2,4 GHz oder 5 GHz?", "evidence": "Directly distinguishes 2.4-only, dual-band models, combined SSIDs, setup behavior and 5-GHz-only exclusion risk."}],
+      "secondaryUrls": ["/smarte-futterautomaten/"], "missingInformation": [], "cannibalizationRisk": "high if a new 5-GHz page duplicated the exact comparison section", "recommendation": "no-change", "newPage": "no", "dataAssetRelation": "none", "reasoning": "The exact setup and purchase question has a clear comparison owner and a substantive answer."
+    },
+    {
+      "id": "A3", "cluster": "Futterautomaten", "demandNode": "Schalenform / Schnurrhaarstress", "priority": "P1", "coverage": "partial", "confidence": "high",
+      "primaryIntentOwner": "/vergleiche/beste-futterautomaten-mit-edelstahl-napf/", "primaryFile": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-mit-edelstahl-napf.md",
+      "repositoryEvidence": [{"section": "Material- und Reinigungsentscheidung", "evidence": "The comparison correctly separates material from bowl shape, cleaning, residue and skin observations rather than making a medical claim."}],
+      "secondaryUrls": ["/smarte-futterautomaten/"], "missingInformation": ["Comparable bowl width/depth and replaceability are not consistently available.", "No sourced basis supports a universal medical 'whisker stress' claim."],
+      "cannibalizationRisk": "high: shape is a sub-decision of the existing bowl comparison", "recommendation": "data-asset-candidate", "newPage": "no", "dataAssetRelation": "product-fit-fields", "reasoning": "The owner frames the issue safely, but model-level geometry is too sparse for a decisive answer. Normalize dimensions before enriching content."
+    },
+    {
+      "id": "A4", "cluster": "Futterautomaten", "demandNode": "Stromausfall + WLAN-Ausfall", "priority": "P0", "coverage": "covered", "confidence": "high",
+      "primaryIntentOwner": "/futterautomat-bei-stromausfall/", "primaryFile": "apps/pfotentechnik/src/content/pages/futterautomat-bei-stromausfall.md",
+      "repositoryEvidence": [{"section": "Strom, WLAN, Internet, Cloud und Mechanik getrennt prüfen", "evidence": "Separates battery backup, stored schedules, dispensing, app/cloud, notifications, restart and active cooling instead of inferring one function from another."}],
+      "secondaryUrls": ["/vergleiche/beste-futterautomaten-fuer-nassfutter/", "/smarte-futterautomaten/"], "missingInformation": [], "cannibalizationRisk": "high", "recommendation": "no-change", "newPage": "no", "dataAssetRelation": "failure-mode-matrix", "reasoning": "The dedicated owner answers the exact failure-mode intent and preserves model unknowns."
+    },
+    {
+      "id": "B1", "cluster": "Trinkbrunnen", "demandNode": "Folgekosten", "priority": "P0", "coverage": "partial", "confidence": "high",
+      "primaryIntentOwner": "/filter-im-katzentrinkbrunnen-wechseln/", "primaryFile": "apps/pfotentechnik/src/content/pages/filter-im-katzentrinkbrunnen-wechseln.md",
+      "repositoryEvidence": [{"section": "Folgekosten vor dem Kauf prüfen", "evidence": "Explains that filter price, pack size, interval and availability must be checked, but provides no maintainable model-level one-, two- or three-year calculation."}, {"file": "reports/authority-distribution/data-readiness.json", "evidence": "Prior repository audit found fountain filter-cost evidence for only 8 of 24 products (33.3%), primarily in text."}],
+      "secondaryUrls": ["/trinkbrunnen/"], "missingInformation": ["Normalized filter pack price, interval, pump replacement and mandatory-vs-optional consumables."], "cannibalizationRisk": "high", "recommendation": "data-asset-candidate", "newPage": "no", "dataAssetRelation": "total-cost-of-ownership", "reasoning": "The calculation method exists; reliable components do not. Build components, not a seemingly precise long-term total."
+    },
+    {
+      "id": "B2", "cluster": "Trinkbrunnen", "demandNode": "Ohne proprietäre Filter", "priority": "P1", "coverage": "covered", "confidence": "high",
+      "primaryIntentOwner": "/katzentrinkbrunnen-ohne-filter/", "primaryFile": "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-ohne-filter.md",
+      "repositoryEvidence": [{"section": "Betrieb ohne Filter / Systemgrenzen", "evidence": "Distinguishes officially permitted filterless use from improvised third-party compatibility and notes pump and cleaning obligations."}],
+      "secondaryUrls": ["/filter-im-katzentrinkbrunnen-wechseln/", "/trinkbrunnen/"], "missingInformation": [], "cannibalizationRisk": "high", "recommendation": "no-change", "newPage": "no", "dataAssetRelation": "tco-components", "reasoning": "A dedicated owner directly answers lock-in without inventing third-party compatibility."
+    },
+    {
+      "id": "B3", "cluster": "Trinkbrunnen", "demandNode": "Edelstahl vs. Keramik", "priority": "P1", "coverage": "covered", "confidence": "high",
+      "primaryIntentOwner": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/", "primaryFile": "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff.md",
+      "repositoryEvidence": [{"section": "Materialvergleich und reale wasserberührte Flächen", "evidence": "Compares cleaning, scale visibility, weight, breakage, scratches, pump/internal materials and manufacturer-specific dishwasher approval without universal health claims."}],
+      "secondaryUrls": ["/katzentrinkbrunnen-richtig-reinigen/", "/trinkbrunnen/"], "missingInformation": [], "cannibalizationRisk": "high", "recommendation": "no-change", "newPage": "no", "dataAssetRelation": "none", "reasoning": "The exact material decision already has a focused, safety-conscious owner."
+    },
+    {
+      "id": "B4", "cluster": "Trinkbrunnen", "demandNode": "Spülmaschinen-Kompatibilität", "priority": "P1", "coverage": "partial", "confidence": "high",
+      "primaryIntentOwner": "/katzentrinkbrunnen-richtig-reinigen/", "primaryFile": "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-richtig-reinigen.md",
+      "repositoryEvidence": [{"section": "Spülmaschine nur nach Herstellerfreigabe", "evidence": "Correctly excludes pump/electronics and requires explicit approval for removable parts."}, {"file": "apps/pfotentechnik/src/content/products/", "evidence": "Model-specific dishwasher statements exist in individual product evidence, but are not normalized into a complete fountain-parts matrix."}],
+      "secondaryUrls": ["/trinkbrunnen/", "/vergleiche/beste-trinkbrunnen-fuer-katzen/"], "missingInformation": ["Part-by-part approval for bowl, tank, lid and accessories across current models."], "cannibalizationRisk": "high", "recommendation": "enrich-existing", "newPage": "no", "dataAssetRelation": "maintenance-parts-matrix", "reasoning": "The cleaning owner provides the safe rule; a sourced model table would complete it without a new intent owner."
+    },
+    {
+      "id": "C1", "cluster": "GPS-Tracker", "demandNode": "Wald / schlechter Empfang", "priority": "P0", "coverage": "covered", "confidence": "high",
+      "primaryIntentOwner": "/reichweite-von-gps-trackern/", "primaryFile": "apps/pfotentechnik/src/content/pages/reichweite-von-gps-trackern.md",
+      "repositoryEvidence": [{"section": "Wald, GPS-Fix und Mobilfunk getrennt beurteilen", "evidence": "Explains canopy/terrain, GPS fix, cellular transmission, delayed updates, live-tracking battery cost, last position and alternative radio/Bluetooth roles."}],
+      "secondaryUrls": ["/gps-tracker/"], "missingInformation": [], "cannibalizationRisk": "high", "recommendation": "no-change", "newPage": "no", "dataAssetRelation": "failure-mode-matrix", "reasoning": "The owner answers the environmental failure chain and does not promise a universal range."
+    },
+    {
+      "id": "C2", "cluster": "GPS-Tracker", "demandNode": "Funkloch", "priority": "P0", "coverage": "partial", "confidence": "high",
+      "primaryIntentOwner": "/reichweite-von-gps-trackern/", "primaryFile": "apps/pfotentechnik/src/content/pages/reichweite-von-gps-trackern.md",
+      "repositoryEvidence": [{"section": "GPS-Fix ist nicht Datenübertragung", "evidence": "Correctly explains why remote live location and geofence notifications can fail while a device may retain a last position or later history."}],
+      "secondaryUrls": ["/gps-tracker/", "/vergleiche/beste-gps-tracker-fuer-hunde/"], "missingInformation": ["Model-specific official evidence for local track logging, later sync, Bluetooth, light/tone, activity and notification behavior."], "cannibalizationRisk": "high", "recommendation": "data-asset-candidate", "newPage": "no", "dataAssetRelation": "failure-mode-matrix", "reasoning": "The system explanation is present, but the exact residual feature set varies by model and remains unstructured."
+    },
+    {
+      "id": "C3", "cluster": "GPS-Tracker", "demandNode": "Total Cost of Ownership", "priority": "P0", "coverage": "partial", "confidence": "high",
+      "primaryIntentOwner": "/warum-brauchen-gps-tracker-ein-abo/", "primaryFile": "apps/pfotentechnik/src/content/pages/warum-brauchen-gps-tracker-ein-abo.md",
+      "repositoryEvidence": [{"section": "Wie vergleiche ich Gesamtkosten?", "evidence": "Provides the correct formula and distinguishes required subscriptions, included periods, hardware-only systems and cancellation behavior."}, {"file": "reports/authority-distribution/data-readiness.json", "evidence": "Required-subscription status is complete for 12 GPS products, but subscription price is present for only 3 of 12 (25%)."}],
+      "secondaryUrls": ["/gps-tracker/", "/vergleiche/gps-tracker-ohne-abo/"], "missingInformation": ["Current normalized tariff prices, terms, included periods and timestamped price provenance."], "cannibalizationRisk": "high", "recommendation": "data-asset-candidate", "newPage": "no", "dataAssetRelation": "total-cost-of-ownership", "reasoning": "The owner already covers the intent; volatile component data, not another page, is the bottleneck."
+    },
+    {
+      "id": "C4", "cluster": "GPS-Tracker", "demandNode": "Gesundheits- und Vitaldaten", "priority": "P1", "coverage": "partial", "confidence": "high",
+      "primaryIntentOwner": "/gps-tracker/", "primaryFile": "apps/pfotentechnik/src/content/pages/gps-tracker.md",
+      "repositoryEvidence": [{"section": "Gesundheitstrends richtig einordnen", "evidence": "Separates activity, sleep and selected trend metrics from diagnosis and labels manufacturer functions as non-medical."}],
+      "secondaryUrls": ["/produkt/tractive-dog-6/", "/produkt/tractive-cat-6-mini/", "/produkt/invoxia-smart-dog-collar/"], "missingInformation": ["A current cross-model capability matrix separating activity, sleep, respiratory/heart trends, temperature and behavior, with medical status."], "cannibalizationRisk": "high", "recommendation": "enrich-existing", "newPage": "no", "dataAssetRelation": "capability-matrix", "reasoning": "The hub owns the question and provides the safety boundary, but not a complete current-model comparison."
+    },
+    {
+      "id": "D1", "cluster": "Mikrochip-Katzenklappen", "demandNode": "Dicke Wand / Tunnel", "priority": "P1", "coverage": "partial", "confidence": "high",
+      "primaryIntentOwner": "/katzenklappe-einbauen/", "primaryFile": "apps/pfotentechnik/src/content/pages/katzenklappe-einbauen.md",
+      "repositoryEvidence": [{"section": "## Einbau in eine Wand", "evidence": "Covers tunnel/extension need, slope, sealing, moisture, structure and OnlyCat installation specifics."}, {"file": "apps/pfotentechnik/src/content/products/petsafe-petporte-smart-flap.md", "section": "FAQ / wall mounting", "evidence": "Documents 40-mm extension modules for this model."}],
+      "secondaryUrls": ["/katzenklappen/", "/vergleiche/beste-mikrochip-katzenklappen/"], "missingInformation": ["Model-specific base tunnel depth and a sourced extension-count calculation across models."], "cannibalizationRisk": "high", "recommendation": "enrich-existing", "newPage": "no", "dataAssetRelation": "installation-dimensions", "reasoning": "The installation guide is the natural owner; a compact model table/formula is enough."
+    },
+    {
+      "id": "D2", "cluster": "Mikrochip-Katzenklappen", "demandNode": "Metalltür", "priority": "P0", "coverage": "partial", "confidence": "high",
+      "primaryIntentOwner": "/katzenklappe-einbauen/", "primaryFile": "apps/pfotentechnik/src/content/pages/katzenklappe-einbauen.md",
+      "repositoryEvidence": [{"section": "## Türmontage / FAQ: Kann eine Metalltür Probleme verursachen?", "evidence": "Warns that metal can impair RFID and requires manufacturer guidance and testing."}, {"file": "apps/pfotentechnik/src/content/products/petsafe-mikrochip-katzenklappe.md", "evidence": "Requires the intended adapter and function test for metal."}, {"file": "apps/pfotentechnik/src/content/products/petsafe-petporte-smart-flap.md", "evidence": "Requires testing the assembled/programmed unit before cutting."}],
+      "secondaryUrls": ["/vergleiche/beste-mikrochip-katzenklappen/", "/produkt/onlycat-mikrochip-katzenklappe/"], "missingInformation": ["A model-specific adapter, cutout and test-requirement matrix for all compared flaps."], "cannibalizationRisk": "high", "recommendation": "enrich-existing", "newPage": "no", "dataAssetRelation": "installation-compatibility", "reasoning": "The safety rule is clear, but model differences are distributed. Consolidate them into the existing installation owner, not a new page."
+    },
+    {
+      "id": "D3", "cluster": "Mikrochip-Katzenklappen", "demandNode": "Große Katze", "priority": "P1", "coverage": "covered", "confidence": "high",
+      "primaryIntentOwner": "/vergleiche/beste-mikrochip-katzenklappen/", "primaryFile": "apps/pfotentechnik/src/content/comparisons/beste-mikrochip-katzenklappen.md",
+      "repositoryEvidence": [{"section": "Comparison field: Durchgang / FAQ", "evidence": "Compares the narrowest passage by model, distinguishes it from exterior/cutout dimensions, includes the larger 160 × 160-mm Petporte role, and instructs readers to measure the cat."}],
+      "secondaryUrls": ["/katzenklappen/", "/produkt/petsafe-petporte-smart-flap/"], "missingInformation": [], "cannibalizationRisk": "high", "recommendation": "no-change", "newPage": "no", "dataAssetRelation": "installation-dimensions", "reasoning": "The model comparison directly supports the size decision with the correct measurement."
+    },
+    {
+      "id": "D4", "cluster": "Mikrochip-Katzenklappen", "demandNode": "Chip inkompatibel / Fallback", "priority": "P1", "coverage": "partial", "confidence": "high",
+      "primaryIntentOwner": "/vergleiche/beste-mikrochip-katzenklappen/", "primaryFile": "apps/pfotentechnik/src/content/comparisons/beste-mikrochip-katzenklappen.md",
+      "repositoryEvidence": [{"section": "Comparison field: Zugang", "evidence": "Shows 15-digit FDX-B/ISO restrictions for relevant models and flags format checks."}, {"file": "apps/pfotentechnik/src/content/products/sureflap-mikrochip-katzenklappe.md", "evidence": "Documents a compatible RFID collar tag as fallback."}, {"file": "apps/pfotentechnik/src/content/products/petsafe-mikrochip-katzenklappe.md", "evidence": "Documents FDX-B checking and a key/tag fallback in comparison data."}],
+      "secondaryUrls": ["/katzenklappen/", "/produkt/cat-mate-elite-355w/"], "missingInformation": ["A consistent per-model chip-standard, compatibility-check and official fallback column."], "cannibalizationRisk": "high", "recommendation": "enrich-existing", "newPage": "no", "dataAssetRelation": "multi-pet-capability", "reasoning": "The comparison owns the selection intent; fallback details exist but are unevenly presented."
+    },
+    {
+      "id": "E1", "cluster": "Automatische Katzentoiletten", "demandNode": "Streu-Kompatibilität", "priority": "P0", "coverage": "covered", "confidence": "high",
+      "primaryIntentOwner": "/vergleiche/beste-automatische-katzentoiletten/", "primaryFile": "apps/pfotentechnik/src/content/comparisons/beste-automatische-katzentoiletten.md",
+      "repositoryEvidence": [{"section": "Streu comparison field / model-selection guidance", "evidence": "Compares clumping mineral/Bentonite, tofu, mixed, crystal and excluded pellet/non-clumping variants by model; warns that 'clumping' alone is not approval."}],
+      "secondaryUrls": ["/automatische-katzentoiletten/", "/produkt/litter-robot-4/", "/produkt/petkit-purobot-crystal-duo/"], "missingInformation": [], "cannibalizationRisk": "high", "recommendation": "no-change", "newPage": "no", "dataAssetRelation": "litter-compatibility-matrix", "reasoning": "The current comparison provides a useful manufacturer-evidence-based matrix and preserves unknowns."
+    },
+    {
+      "id": "E2", "cluster": "Automatische Katzentoiletten", "demandNode": "Pflanzen-/Tofu-/Holzstreu", "priority": "P0", "coverage": "covered", "confidence": "high",
+      "primaryIntentOwner": "/vergleiche/beste-automatische-katzentoiletten/", "primaryFile": "apps/pfotentechnik/src/content/comparisons/beste-automatische-katzentoiletten.md",
+      "repositoryEvidence": [{"section": "Streu comparison and FAQ", "evidence": "Explicitly distinguishes Tofu/mixed approvals from wood-pellet and non-clumping exclusions and treats alternative litter as a model-level sub-intent."}],
+      "secondaryUrls": ["/automatische-katzentoiletten/", "/produkt/petlibro-luma-smart-litter-box/", "/produkt/neakasa-m1-lite/"], "missingInformation": [], "cannibalizationRisk": "very high: a separate alternative-litter URL would duplicate the comparison", "recommendation": "no-change", "newPage": "no", "dataAssetRelation": "litter-compatibility-matrix", "reasoning": "This is adequately handled as a high-value sub-intent of E1, not an independent page."
+    },
+    {
+      "id": "E3", "cluster": "Automatische Katzentoiletten", "demandNode": "Mehrere ähnlich schwere Katzen", "priority": "P0", "coverage": "partial", "confidence": "high",
+      "primaryIntentOwner": "/automatische-katzentoiletten/", "primaryFile": "apps/pfotentechnik/src/content/pages/automatische-katzentoiletten.md",
+      "repositoryEvidence": [{"section": "## Mehrkatzenhaushalt", "evidence": "Directly warns that profiles and weight recognition do not solve every multi-cat problem and similar weights can be harder to distinguish."}, {"file": "apps/pfotentechnik/src/content/comparisons/beste-automatische-katzentoiletten.md", "section": "Selection guidance", "evidence": "States that manufacturer recognition claims are not independent reliability evidence."}],
+      "secondaryUrls": ["/vergleiche/beste-automatische-katzentoiletten/", "/produkt/petlibro-luma-smart-litter-box/"], "missingInformation": ["Per-model identification method, minimum documented weight difference, camera/RFID role and manufacturer limitations."], "cannibalizationRisk": "high", "recommendation": "data-asset-candidate", "newPage": "no", "dataAssetRelation": "multi-pet-capability", "reasoning": "The owner provides the decisive caveat; a structured identification matrix is needed before stronger model claims."
+    },
+    {
+      "id": "E4", "cluster": "Automatische Katzentoiletten", "demandNode": "Teppich / unebener Boden", "priority": "P1", "coverage": "partial", "confidence": "high",
+      "primaryIntentOwner": "/vergleiche/beste-automatische-katzentoiletten/", "primaryFile": "apps/pfotentechnik/src/content/comparisons/beste-automatische-katzentoiletten.md",
+      "repositoryEvidence": [{"section": "Safety guidance", "evidence": "Requires automation to remain off after sensor problems or uneven placement until corrected."}, {"file": "apps/pfotentechnik/src/content/products/petlibro-luma-smart-litter-box.md", "section": "Safety and placement", "evidence": "Explicitly requires a hard, level surface and warns that carpet can affect weighing and safety checks."}],
+      "secondaryUrls": ["/automatische-katzentoiletten/"], "missingInformation": ["Official hard-floor, mat and leveling requirements across the other current models."], "cannibalizationRisk": "high", "recommendation": "enrich-existing", "newPage": "no", "dataAssetRelation": "failure-mode-matrix", "reasoning": "The general rule and one concrete model exist, but the model-selection answer is incomplete."
+    },
+    {
+      "id": "F1", "cluster": "Haustierkameras", "demandNode": "Funktionen ohne Abo", "priority": "P0", "coverage": "covered", "confidence": "high",
+      "primaryIntentOwner": "/vergleiche/beste-haustierkameras/", "primaryFile": "apps/pfotentechnik/src/content/comparisons/beste-haustierkameras.md",
+      "repositoryEvidence": [{"section": "Comparison fields: Abo, Pflichtabo, Bezahlfunktionen, kostenlose Grundfunktionen", "evidence": "Separates live/basic use, recording, playback, AI/cloud features and local storage by model, preserving unknowns."}],
+      "secondaryUrls": ["/haustierkameras/", "/produkt/pettec-cam-360/", "/produkt/reolink-e1-zoom/"], "missingInformation": [], "cannibalizationRisk": "high", "recommendation": "no-change", "newPage": "no", "dataAssetRelation": "total-cost-of-ownership", "reasoning": "The comparison directly answers which functions remain without a paid plan."
+    },
+    {
+      "id": "F2", "cluster": "Haustierkameras", "demandNode": "Lokale Speicherung vs. Cloud", "priority": "P0", "coverage": "covered", "confidence": "high",
+      "primaryIntentOwner": "/vergleiche/beste-haustierkameras/", "primaryFile": "apps/pfotentechnik/src/content/comparisons/beste-haustierkameras.md",
+      "repositoryEvidence": [{"section": "Comparison fields: lokale_speicherung, cloud_erforderlich, microSD / FAQ", "evidence": "Identifies Reolink and PetTec local paths, Scout cloud-only recording, and explicitly leaves unsupported local-storage claims unknown."}],
+      "secondaryUrls": ["/haustierkameras/", "/produkt/reolink-e1-zoom/", "/produkt/petlibro-scout-smart-camera/"], "missingInformation": [], "cannibalizationRisk": "high", "recommendation": "no-change", "newPage": "no", "dataAssetRelation": "failure-mode-matrix", "reasoning": "A clear comparison owner already handles storage paths and cloud dependency substantively."
+    },
+    {
+      "id": "F3", "cluster": "Haustierkameras", "demandNode": "Internetausfall", "priority": "P0", "coverage": "partial", "confidence": "high",
+      "primaryIntentOwner": "/vergleiche/beste-haustierkameras/", "primaryFile": "apps/pfotentechnik/src/content/comparisons/beste-haustierkameras.md",
+      "repositoryEvidence": [{"section": "FAQ: Was passiert ohne Internet oder Herstellerdienst?", "evidence": "Correctly says remote access, cloud recording and app functions may fail and that residual local behavior must be checked by model, app version and plan."}, {"file": "apps/pfotentechnik/src/content/pages/haustierkameras.md", "section": "## Internet- und Herstellerdienste als Systemgrenze", "evidence": "Separates hardware from remote/cloud service availability."}],
+      "secondaryUrls": ["/haustierkameras/", "/produkt/reolink-e1-zoom/", "/produkt/pettec-cam-360/"], "missingInformation": ["Model-level evidence for local recording, LAN live view, detection, two-way audio, push/cloud loss and reconnect behavior."], "cannibalizationRisk": "high", "recommendation": "data-asset-candidate", "newPage": "no", "dataAssetRelation": "failure-mode-matrix", "reasoning": "The correct principle exists; a trustworthy residual-function matrix does not."
+    },
+    {
+      "id": "F4", "cluster": "Haustierkameras", "demandNode": "Mehrere Kameras / Räume", "priority": "P1", "coverage": "missing", "confidence": "high",
+      "primaryIntentOwner": "/vergleiche/beste-haustierkameras/", "primaryFile": "apps/pfotentechnik/src/content/comparisons/beste-haustierkameras.md",
+      "repositoryEvidence": [{"section": "Room coverage guidance", "evidence": "Explains fixed cameras versus mobile robots and notes that a second fixed camera may be more predictable, but does not answer multi-device app/account support."}],
+      "secondaryUrls": ["/haustierkameras/"], "missingInformation": ["Per-vendor device limits, multi-camera view, mixed-model support and whether subscriptions apply per camera or account."], "cannibalizationRisk": "high: the problem is a comparison attribute, not a proven standalone intent owner", "recommendation": "enrich-existing", "newPage": "no", "dataAssetRelation": "multi-device-capability", "reasoning": "The substantive answer is absent, but a sourced comparison section/table is sufficient; New-Page Gate conditions 3 and 5 fail."
+    }
+  ],
+  "dataAssets": [
+    {
+      "id": "failure-mode-matrix", "name": "Failure Mode Matrix", "potential": "high", "applicableClusters": ["Futterautomaten", "GPS-Tracker", "Automatische Katzentoiletten", "Haustierkameras"],
+      "existingStructuredFields": ["comparisonData.custom.offline_betrieb in selected feeders", "battery/power fields in selected products", "local/cloud storage fields in the camera comparison", "free-text failure behavior with manufacturer evidence"],
+      "missingFields": ["powerOutageBehavior", "scheduleWithoutPower", "worksWithoutInternet", "worksWithoutCloud", "localStorageDuringInternetOutage", "coolingDuringPowerOutage", "reconnectBehavior"],
+      "estimatedRepositoryCoverage": "medium and uneven: strong narrative evidence for feeder outages and camera storage, sparse normalized product-level residual behavior elsewhere", "maintenanceRisk": "medium", "evidenceQuality": "medium-high where official manuals/support are cited; unknown elsewhere", "recommendation": "implement-phased", "reasoning": "It improves multiple owners and purchase decisions without requiring invented values. Start with feeder A4 and camera F3 fields sourced from current official evidence; retain unknown explicitly."
+    },
+    {
+      "id": "total-cost-of-ownership", "name": "Total Cost of Ownership", "potential": "medium", "applicableClusters": ["Trinkbrunnen", "GPS-Tracker", "Automatische Katzentoiletten", "Haustierkameras"],
+      "existingStructuredFields": ["purchase prices", "GPS requiredSubscription 12/12", "subscriptionCost 3/12", "fountain filter-cost text 8/24", "consumables described in litter-box and camera content"],
+      "missingFields": ["timestamped subscriptionCost", "filterReplacementInterval", "normalized filterCost", "bagCost", "mandatory/optional flag", "regional tariff scope"],
+      "estimatedRepositoryCoverage": "low-medium for cost amounts; high for GPS subscription requirement; insufficient for durable 2/5-year totals", "maintenanceRisk": "high", "evidenceQuality": "mixed; component existence is stronger than current price completeness", "recommendation": "normalize-components-only", "reasoning": "The asset passes multi-page and decision-value gates, but calculated long-term totals would be falsely precise. Store timestamped components and calculate only on demand with visible assumptions."
+    },
+    {
+      "id": "multi-pet-capability", "name": "Multi-Pet Capability", "potential": "high", "applicableClusters": ["Futterautomaten", "Mikrochip-Katzenklappen", "Automatische Katzentoiletten"],
+      "existingStructuredFields": ["comparisonData access/richtungsrechte in flaps", "profile and identification descriptions in litter boxes", "RFID/microchip access and individual feeding descriptions in feeders"],
+      "missingFields": ["multiPetSupported", "identificationMethod", "weightIdentification", "cameraIdentification", "individualProfiles", "individualFeeding", "individualUsageData", "minimumWeightDifference", "manufacturerLimitations"],
+      "estimatedRepositoryCoverage": "medium: source-backed information exists across product files but field names and semantics differ", "maintenanceRisk": "medium", "evidenceQuality": "medium-high for identification mechanism; lower for real-world reliability and similar-weight discrimination", "recommendation": "implement-phased", "reasoning": "A normalized capability model would improve several comparisons. It must distinguish manufacturer capability claims from independent reliability and never infer similar-weight performance."
+    },
+    {
+      "id": "litter-compatibility-matrix", "name": "Litter Compatibility Matrix", "potential": "high", "applicableClusters": ["Automatische Katzentoiletten"],
+      "existingStructuredFields": ["comparisonData.custom.streu across the current comparison", "model-level official assertions for clumping mineral/Bentonite, tofu/mixed, crystal and exclusions"],
+      "missingFields": ["normalized litter taxonomy", "per-type status supported/notSupported/conditional/unknown", "particle-size limits", "density/weight limits where official", "manufacturer-vs-community provenance"],
+      "estimatedRepositoryCoverage": "useful but incomplete: 11 current litter-box product files; clear official compatibility for the principal compared models, weaker evidence for marketplace-led products", "maintenanceRisk": "medium", "evidenceQuality": "high for manufacturer-backed current products, low where only retailer/community claims exist", "recommendation": "normalize-existing-evidence", "reasoning": "The existing comparison already proves decision value and source availability. Normalize only official evidence, keep unknowns, and store community experience separately."
+    }
+  ],
+  "newPageCandidates": [],
+  "enrichmentCandidates": [
+    {"id": "A1", "owner": "/smarte-futterautomaten/", "gap": "model-comparable manipulation safeguards"},
+    {"id": "B4", "owner": "/katzentrinkbrunnen-richtig-reinigen/", "gap": "part-by-part dishwasher approvals"},
+    {"id": "C4", "owner": "/gps-tracker/", "gap": "current health/vital capability matrix"},
+    {"id": "D1", "owner": "/katzenklappe-einbauen/", "gap": "tunnel depths and extension-count method"},
+    {"id": "D2", "owner": "/katzenklappe-einbauen/", "gap": "model-specific metal-door adapter/test matrix"},
+    {"id": "D4", "owner": "/vergleiche/beste-mikrochip-katzenklappen/", "gap": "chip standards and official fallbacks"},
+    {"id": "E4", "owner": "/vergleiche/beste-automatische-katzentoiletten/", "gap": "model-specific placement requirements"},
+    {"id": "F4", "owner": "/vergleiche/beste-haustierkameras/", "gap": "multi-camera/app/account capability"}
+  ],
+  "consolidationCandidates": [],
+  "doNotTouch": [
+    "/vergleiche/futterautomat-mit-app/", "/futterautomat-bei-stromausfall/", "/katzentrinkbrunnen-ohne-filter/", "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/", "/reichweite-von-gps-trackern/", "/vergleiche/beste-mikrochip-katzenklappen/ (large-cat intent)", "/vergleiche/beste-automatische-katzentoiletten/ (litter intents)", "/vergleiche/beste-haustierkameras/ (subscription/storage intents)"
+  ]
+}

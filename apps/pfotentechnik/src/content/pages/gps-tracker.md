@@ -242,6 +242,17 @@ Vertiefung: [Wie genau sind GPS-Tracker?](/wie-genau-sind-gps-tracker/) und [Rei
 
 ## Akku und laufende Kosten
 
+### Welche Gesundheitsdaten aktuelle Tracker tatsächlich liefern
+
+| Modell | Aktivität / Schlaf | Weitere Trends oder Warnungen | Medizinische Grenze |
+|---|---|---|---|
+| Tractive DOG 6 | Aktivität und Schlaf | Ruhe-Herz- und Ruhe-Atemfrequenz, Bell- und Kratzverhalten; für mehrere Werte mindestens sieben Tage persönliche Baseline | kein Medizinprodukt, keine Diagnose |
+| Tractive CAT 6 Mini | Aktivität und Schlaf | Herz- und Atemfrequenz-Trends; laut Hersteller ebenfalls Baseline für Vitaltrends | kein Medizinprodukt, keine Diagnose |
+| Weenect XS / XT | Aktivitäts- und Positionsverlauf | keine Herz-/Atemfrequenzmessung in der vorhandenen Evidence belegt | Aktivitätsdaten sind keine Gesundheitsdiagnose |
+| Pawfit 3 | Aktivität | Temperaturwarnung bezieht sich auf die Tracker-/Umgebungssituation; keine Körpertemperaturmessung ableiten | keine Vitaldiagnostik belegt |
+
+„Temperaturwarnung“, „Gesundheitstrend“ und klinischer Vitalwert sind nicht austauschbar. Ein auffälliger Trend kann Beobachtung und tierärztliche Abklärung anstoßen; ein unauffälliger Wert beweist keine Gesundheit.
+
 Der höchste Laufzeitwert ist selten der passende. Ein 70-g-Gerät mit sechs Wochen Herstellerlaufzeit gehört nicht an eine kleine Katze. Energie sparen Tracker häufig in bekannten WLAN-Zonen; Live-Tracking erhöht Mess- und Sendeaktivität.
 
 ![Mobilfunktracker mit Abo und Energiesparzone gegenüber VHF-System mit separatem Empfänger.](../../assets/images/guides/gps-tracker/battery-subscription.webp)

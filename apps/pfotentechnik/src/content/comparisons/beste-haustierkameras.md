@@ -366,3 +366,16 @@ Die [Furbo 360° Katzenkamera](/produkt/furbo-360-katzenkamera/) ergänzt Feder-
 
 Die [PetTec Cam 360](/produkt/pettec-cam-360/) ergänzt den Vergleich um lokale microSD-Aufzeichnung. Pflichtabo, optionale Cloud und kostenlose Grundfunktionen stehen in getrennten Feldern. Unbekannte Angaben anderer Produkte werden nicht aufgefüllt. Lokale Speicherung reduziert Cloud-Abhängigkeit, macht App-Konto, Fernzugriff und Gerätesicherheit aber nicht automatisch datenschutzkonform.
 <!-- pt:pettec-local-storage:end -->
+
+## Mehrere Kameras und Räume: vier Angaben getrennt prüfen
+
+Eine zweite Kamera ist nur dann als gemeinsames System belegt, wenn der Hersteller **Gerätezahl**, **gemeinsame App-Verwaltung**, **Multi-Camera-Ansicht** und **Tariflogik pro Kamera oder Konto** ausdrücklich dokumentiert. Diese vier Punkte sind in der aktuell vorhandenen Repository-Evidence für Furbo, PETLIBRO Scout, PetTec, Reolink und Enabot nicht vollständig belegt und bleiben deshalb `unknown`.
+
+| Frage | Was vor dem Kauf belegt sein muss |
+|---|---|
+| Mehrere Geräte in einem Konto | maximale Zahl und unterstützte Regionen/App-Versionen |
+| Gleichzeitige Ansicht | echtes Multi-Camera-View statt bloßem Umschalten zwischen Geräten |
+| Gemischte Modelle | ausdrücklich unterstützte Modelle innerhalb derselben App |
+| Abo | pro Kamera, pro Konto oder funktionsabhängig; aktuellen Checkout prüfen |
+
+Raumabdeckung und App-Verwaltung sind verschiedene Entscheidungen: Eine schwenkbare Kamera sieht nicht durch Wände, ein Roboter erreicht keine geschlossene Tür, und lokale microSD-Speicherung belegt keine gemeinsame Mehrkamera-Ansicht. Bis die Herstellerangaben je System vollständig vorliegen, wird kein Modell als nachgewiesenes Multi-Camera-System empfohlen.
