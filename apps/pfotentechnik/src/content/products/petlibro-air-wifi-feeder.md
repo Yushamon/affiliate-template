@@ -217,6 +217,25 @@ failureModes:
     sourceType: support
     verifiedAt: "2026-08-28"
   cloudOutage: { status: unknown, behavior: "Ein eigenständiges Verhalten bei Ausfall des Herstellerdienstes ist nicht belegt." }
+dispensingPrecision:
+  status: partial
+  portionUnit: milliliter
+  nominalPortionMilliliters: 10.4
+  minimumPortionsPerDispense: 1
+  maximumPortionsPerDispense: 16
+  portionIsApproximate: true
+  kibbleDependency:
+    status: conditional
+    detail: "Das Portionsvolumen ist dokumentiert; das Gewicht bleibt von Form, Größe und Dichte des Trockenfutters abhängig."
+    sourceUrl: "https://au.petlibro.com/products/air-wifi-feeder"
+    sourceType: manufacturer
+    verifiedAt: "2026-08-31"
+  fillLevelDependency: { status: unknown, detail: "Ein separater Einfluss des Füllstands ist nicht veröffentlicht." }
+  integratedScale: { status: unavailable, detail: "Das Modell dosiert Volumenportionen; eine integrierte Waage ist nicht Bestandteil der dokumentierten Ausstattung.", sourceUrl: "https://au.petlibro.com/products/air-wifi-feeder", sourceType: manufacturer, verifiedAt: "2026-08-31" }
+  calibrationSupported: { status: unknown, detail: "Eine Gram-Kalibrierung ist nicht dokumentiert." }
+  sourceUrl: "https://au.petlibro.com/products/air-wifi-feeder"
+  sourceType: manufacturer
+  verifiedAt: "2026-08-31"
 comparisonFilters:
   animal:
     - dog

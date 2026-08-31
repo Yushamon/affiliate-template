@@ -225,6 +225,25 @@ failureModes:
     verifiedAt: "2026-08-28"
   internetOutage: { status: unknown, behavior: "Der vom WLAN-Ausfall getrennte Umfang bei Internetunterbrechung ist nicht vollständig dokumentiert." }
   cloudOutage: { status: unknown, behavior: "Kamera- und Fernfunktionen sind dienstabhängig; ihr Verhalten bei Dienstausfall ist nicht belegt." }
+dispensingPrecision:
+  status: documented
+  portionUnit: portion
+  nominalPortionGrams: 10
+  minimumPortionsPerDispense: 1
+  maximumPortionsPerDispense: 5
+  portionIsApproximate: true
+  kibbleDependency:
+    status: conditional
+    detail: "PETKIT weist im Handbuch darauf hin, dass das tatsächliche Gewicht je Portion mit Partikelgröße und Dichte variiert."
+    sourceUrl: "https://instructions.petkit.com/App%20Manual/D4H-2/D4H-2_UserManual_EN_V1.1_20260226.pdf"
+    sourceType: manual
+    verifiedAt: "2026-08-31"
+  fillLevelDependency: { status: unknown, detail: "Ein eigener Füllstandseinfluss ist nicht belegt." }
+  integratedScale: { status: unknown, detail: "Eine Waage zur Gram-Verifikation ist für dieses Modell nicht belastbar dokumentiert." }
+  calibrationSupported: { status: unknown, detail: "Eine nutzerseitige Gram-Kalibrierung ist nicht dokumentiert." }
+  sourceUrl: "https://instructions.petkit.com/App%20Manual/D4H-2/D4H-2_UserManual_EN_V1.1_20260226.pdf"
+  sourceType: manual
+  verifiedAt: "2026-08-31"
 comparisonFilters:
   animal:
     - dog

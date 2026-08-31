@@ -101,6 +101,8 @@ features: ["Selbstreinigung", "Dualkamera", "WasteID", "App", "Gewichtstrends"]
 comparisonData:
   custom: { system: "Geschlossene Trommel", mindestgewicht: "ca. 1,36 kg", einstieg: "Weit, aber geschlossen", sicherheit: "Sensorik; Herstellerangabe", streu: "Klumpend und siebfähig", app: "Besuche, Gewicht, Kamera", kosten: "Beutel, Streu, optional Whisker+" }
 decisionJourney: { cluster: "automatische-katzentoiletten", stage: "decision", intent: "litter-robot-5-pro-pruefen", primaryQuestion: "Passen Katze, geschlossenes Trommelsystem, Stellplatz und Whisker+-Kosten zusammen?", next: ["/vergleiche/beste-automatische-katzentoiletten/"], fallback: ["/automatische-katzentoiletten/"] }
+litterCompatibility: { bentoniteClumping: { status: conditional, condition: "Nur klumpende, siebfähige Streu belegt; Material nicht weiter spezifiziert." }, tofu: { status: unknown }, plantBased: { status: unknown }, woodPellets: { status: unknown }, crystal: { status: unknown }, nonClumping: { status: unknown }, evidenceSourceUrls: ["https://www.whisker.com/litter-robot-5-pro"] }
+multiPet: { sharedUse: supported, identificationMethods: [weight, cameraAi], individualProfiles: supported, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: supported, similarPetLimitation: { status: unknown, description: "WasteID belegt; Mindestgewichtsdifferenz nicht." }, evidenceSourceUrls: ["https://www.whisker.com/litter-robot-5-pro"] }
 evidenceSources:
   - { source: "Whisker", url: "https://www.whisker.com/litter-robot-5-pro", accessedAt: "2026-08-06", assertion: "Dualkamera, WasteID, Gewichtsbereich, Mehrkatzenangabe und Whisker+-Abhängigkeit sind Herstellerangaben.", fields: ["specs", "decision", "strengths", "weaknesses"] }
 ---

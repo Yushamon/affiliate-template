@@ -101,6 +101,8 @@ features: ["offene Bauform", "Selbstreinigung", "App", "Infrarot-Sensoren", "Kit
 comparisonData:
   custom: { system: "Offene Siebtrommel", mindestgewicht: "ca. 1 kg; darunter Kitten-Modus", einstieg: "ca. 35,2 cm, oben offen", sicherheit: "6 IR-Sensorgruppen; Herstellerangabe", streu: "Schnell klumpend, siebfähig", app: "Nutzung und Füllstand", kosten: "Streu und passende Beutel" }
 decisionJourney: { cluster: "automatische-katzentoiletten", stage: "decision", intent: "neakasa-m1-plus-pruefen", primaryQuestion: "Passt die offene Bauform trotz hohem Einstieg zu Katze, Streu und Stellplatz?", next: ["/vergleiche/beste-automatische-katzentoiletten/"], fallback: ["/automatische-katzentoiletten/"] }
+litterCompatibility: { bentoniteClumping: { status: conditional, condition: "Schnell klumpend und siebfähig." }, tofu: { status: unknown }, plantBased: { status: unknown }, woodPellets: { status: notSupported }, crystal: { status: unknown }, nonClumping: { status: notSupported }, evidenceSourceUrls: ["https://neakasa.com/products/neakasa-m1-cat-litter-box"] }
+multiPet: { sharedUse: supported, identificationMethods: [weight], individualProfiles: partial, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: partial, similarPetLimitation: { status: unknown, description: "Keine Mindestgewichtsdifferenz dokumentiert." }, evidenceSourceUrls: ["https://neakasa.com/products/neakasa-m1-cat-litter-box"] }
 evidenceSources:
   - { source: "Neakasa", url: "https://neakasa.com/products/neakasa-m1-cat-litter-box", accessedAt: "2026-08-06", assertion: "Offene Bauform, Gewichtsbereich, Einstieg, Sensorik, Streu, App und Volumen sind Herstellerangaben.", fields: ["specs", "decision", "strengths", "weaknesses"] }
 affiliate:

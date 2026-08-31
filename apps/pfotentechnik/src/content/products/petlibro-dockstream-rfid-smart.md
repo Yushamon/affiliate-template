@@ -269,6 +269,36 @@ comparisonData:
     lieferumfang: zwei RFID-Halsbandanhänger
     geeignet_fur: vor allem Katzen, nachrangig kleine Hunde
     akku: Nein
+multiPet:
+  sharedUse: supported
+  identificationMethods: [rfidTag]
+  individualProfiles: supported
+  individualAccess: notApplicable
+  individualFeeding: notApplicable
+  individualUsageData: supported
+  identitiesStored: 5
+  identifiesPresence: supported
+  identifiesIndividual: supported
+  controlsAccess: notApplicable
+  attributesUsage: supported
+  attributesHealthData: unavailable
+  individualRules: unavailable
+  individualSchedules: unavailable
+  similarPetLimitation: { status: documented, description: "Zuordnung setzt den proprietären PETLIBRO-RFID-Halsbandanhänger voraus; implantierte Mikrochips werden nicht gelesen." }
+  evidenceSourceUrls: ["https://petlibro.com/products/dockstream-rfid-smart-fountain"]
+sensorLimits:
+  calibrationRequirement:
+    status: conditional
+    detail: "Individuelle Messwerte hängen von korrektem Aufbau, Kalibrierung und erkanntem PETLIBRO-RFID-Anhänger ab."
+    sourceUrl: "https://petlibro.com/products/dockstream-rfid-smart-fountain"
+    sourceType: manufacturer
+    verifiedAt: "2026-08-31"
+  identificationLimitation:
+    status: conditional
+    detail: "Nur kompatible PETLIBRO-Halsbandanhänger identifizieren Tiere; der implantierte Mikrochip ist kein Fallback."
+    sourceUrl: "https://petlibro.com/products/dockstream-rfid-smart-fountain"
+    sourceType: manufacturer
+    verifiedAt: "2026-08-31"
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"

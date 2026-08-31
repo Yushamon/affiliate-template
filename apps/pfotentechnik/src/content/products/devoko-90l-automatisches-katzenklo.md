@@ -392,6 +392,8 @@ editorial:
   lastVerifiedAt: "2026-08-07"
   note: "Bewertung aus öffentlich zugänglicher Bedienungsdokumentation, deutschen Händlerdaten, Preisvergleichsdaten und verifizierten Marktplatz-Käuferstimmen. Keine eigene Praxiserfahrung. Widersprüchliche Angaben werden ausdrücklich gekennzeichnet."
 
+litterCompatibility: { bentoniteClumping: { status: unknown }, tofu: { status: unknown }, plantBased: { status: unknown }, woodPellets: { status: unknown }, crystal: { status: unknown }, nonClumping: { status: unknown }, evidenceSourceUrls: [] }
+multiPet: { sharedUse: unknown, identificationMethods: [unknown], individualProfiles: unknown, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: unknown, similarPetLimitation: { status: unknown, description: "Händlerangaben bestimmen keinen Herstellerstatus." }, evidenceSourceUrls: [] }
 evidenceSources:
   - source: "Devoko MW-0769A-0808-MSP-2 – öffentlich zugängliche Bedienungsdokumentation"
     url: "https://manuals.plus/asin/B0FLPKZ4RS"

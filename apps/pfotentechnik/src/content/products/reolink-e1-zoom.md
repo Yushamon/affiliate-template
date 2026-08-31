@@ -156,8 +156,40 @@ comparisons: ["beste-haustierkameras"]
 failureModes:
   powerOutage: { status: unknown, behavior: "Eine Notstromversorgung oder ein definiertes Wiederanlaufverhalten ist nicht belegt." }
   wifiOutage: { status: unknown, behavior: "Lokale Speicherwege belegen nicht automatisch Aufnahme, Erkennung oder LAN-Zugriff bei WLAN-Ausfall." }
-  internetOutage: { status: unknown, behavior: "Lokale Speicherung und Erkennung sind belegt; der vollständige Funktionsumfang ohne Internet ist nicht getrennt dokumentiert." }
+  internetOutage:
+    status: partial
+    behavior: "Die aktuelle 4K-Generation speichert bei Netzwerkausfall weiter auf microSD. Fernzugriff und Benachrichtigungen benötigen eine funktionierende Verbindung; lokales Playback während des Ausfalls ist nicht vollständig belegt."
+    sourceUrl: "https://reolink.com/ca/product/e1-zoom/"
+    sourceType: manufacturer
+    verifiedAt: "2026-08-31"
+    functions:
+      localRecording: supported
+      detection: unknown
+      playback: unknown
+      remoteAccess: unavailable
+      notifications: unavailable
+      lanAccess: unknown
   cloudOutage: { status: unknown, behavior: "Cloud ist regional optional; das konkrete Verhalten bei Ausfall des Herstellerdienstes ist nicht belegt." }
+dataPortability:
+  history:
+    status: conditional
+    detail: "Mit 512-GB-microSD nennt Reolink bis zu acht Tage kontinuierliche Aufnahme bei 3.072 kbit/s; Ereignis- und Zeitplanaufnahme sind ebenfalls möglich."
+    sourceUrl: "https://reolink.com/ca/product/e1-zoom/"
+    sourceType: manufacturer
+    verifiedAt: "2026-08-31"
+  historyRetentionDays: 8
+  export: { status: unknown, detail: "Ein standardisiertes Datenexportformat ist für dieses Modell nicht ausgewiesen." }
+  localDownload: { status: unknown, detail: "Wiedergabe in App oder Client ist belegt; ein ausfallunabhängiger Downloadweg ist nicht vollständig dokumentiert." }
+  cloudRetention: { status: unknown, detail: "Cloud-Aufbewahrung ist regional und tarifabhängig; kein stabiler Modellwert wird übernommen." }
+  postSubscriptionAccess: { status: notApplicable, detail: "Lokale microSD-/NVR-/Hub-Speicherung setzt kein Pflichtabo voraus; Cloud-Inhalte werden davon nicht erfasst." }
+  sharedAccess:
+    status: supported
+    detail: "Die aktuelle technische Spezifikation nennt einen Administrator und 19 Benutzerkonten sowie bis zu zwölf simultane Videostreams."
+    sourceUrl: "https://reolink.com/de/product/e1-zoom/"
+    sourceType: manufacturer
+    verifiedAt: "2026-08-31"
+  maximumUsers: 20
+  simultaneousStreams: 12
 decisionJourney: { cluster: "haustierkameras", stage: "decision", intent: "reolink-e1-zoom-pruefen", primaryQuestion: "Passt eine klassische Indoor-Kamera mit lokaler Speicherung besser als eine pet-spezifische Cloud-Kamera?", next: ["/vergleiche/beste-haustierkameras/"], fallback: ["/haustierkameras/"] }
 faq:
   - { question: "Braucht die Reolink E1 Zoom ein Abo?", answer: "Für lokale microSD-, NVR-, Home-Hub- oder FTP/NAS-Speicherung ist kein Pflichtabo dokumentiert. Cloud kann regional optional sein." }

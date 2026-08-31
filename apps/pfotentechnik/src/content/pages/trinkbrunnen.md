@@ -194,6 +194,16 @@ Eine ausführliche Schritt-für-Schritt-Anleitung findest du in unserem Ratgeber
 
 Ein Akku ist kein Qualitätsmerkmal an sich. Wenn der Brunnen ohnehin immer am selben Platz neben einer Steckdose steht, kann Netzbetrieb die praktischere Lösung sein.
 
+### „Kabellos“ und „reparierbar“ getrennt prüfen
+
+| Beispiel | Was kabellos bedeutet | Ersatzteil-Evidence |
+|---|---|---|
+| PETKIT Eversweet Solo 2 | Pumpe ohne Kabel im Wassertank; der Brunnen benötigt weiterhin Netzstrom | keine allgemeine Ersatzpumpenfreigabe aus dem Begriff „kabellose Pumpe“ ableiten |
+| PETLIBRO Dockstream 2 Smart Cordless | 5.200-mAh-Akku im Gerät; im Akkubetrieb sensorgesteuerter Wasserfluss statt automatisch belegtem Dauerfluss | Akku-/Pumpentausch nur nach konkreter Herstellerfreigabe bewerten |
+| PetSafe Streamside | klassischer Netzbrunnen | offizielle EU-Ersatzpumpe PAC00-13150 sowie zwei benannte Filterfamilien verfügbar |
+
+„Wireless pump“, „cordless“ und „ohne Kabel im Tank“ sind drei verschiedene Aussagen. Ebenso macht eine herausnehmbare Pumpe sie nicht automatisch zu einem offiziell verfügbaren Ersatzteil. Vor dem Kauf gehören daher Stromarchitektur, Betriebsmodus und eine konkrete Teile- oder Supportseite in denselben Check.
+
 ## 4. Material: Edelstahl, Keramik oder Kunststoff?
 
 **Edelstahl** ist robust und meist unkompliziert zu reinigen. Entscheidend ist aber, wie viel des tatsächlichen Wasserwegs aus Edelstahl besteht. Eine Edelstahl-Trinkplatte auf einem komplexen Kunststofftank ist nicht dasselbe wie eine weitgehend offene Konstruktion.

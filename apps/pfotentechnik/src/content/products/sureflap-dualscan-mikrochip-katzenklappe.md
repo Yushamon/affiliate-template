@@ -209,6 +209,16 @@ faq:
     answer: "Vier AA-Batterien. Sie sind nicht enthalten."
   - question: "Wie groß ist der Durchgang?"
     answer: "Der engste Durchgangspunkt misst 142 × 120 mm."
+multiPet: { sharedUse: supported, identificationMethods: [microchip, rfidTag], individualProfiles: supported, individualAccess: supported, individualFeeding: notApplicable, individualUsageData: unavailable, identitiesStored: 32, identifiesPresence: supported, identifiesIndividual: supported, controlsAccess: supported, attributesUsage: unavailable, attributesHealthData: notApplicable, individualRules: supported, individualSchedules: unavailable, similarPetLimitation: { status: noneDocumented, description: "Ein-/Ausgangsrechte werden per Chip entschieden." }, evidenceSourceUrls: ["https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe-dualscan"] }
+lifecycleDependency:
+  profilePersistence:
+    status: supported
+    detail: "Sure Petcare dokumentiert permanent gespeicherte Chip-/Tag-Nummern beim Batteriewechsel für die lokale Klappenfamilie."
+    sourceUrl: "https://www.surepetcare.com/en-eu/support/videos/replacing-the-batteries-on-your-sureflap-microchip-pet-door"
+    sourceType: support
+    verifiedAt: "2026-08-31"
+  settingsPersistence: { status: unknown, detail: "Der Erhalt sämtlicher individueller Ausgangsrechte nach langem stromlosen Zustand ist nicht separat beschrieben." }
+  serviceEndFallback: { status: notApplicable, detail: "DualScan arbeitet lokal ohne Cloud-Dienst." }
 evidenceSources:
   - source: "Sure Petcare Deutschland – DualScan Mikrochip Katzenklappe"
     url: "https://www.surepetcare.com/de-de/haustierklappen/dualscan-mikrochip-katzenklappe"

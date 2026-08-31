@@ -189,7 +189,7 @@ function auditComparison(c, context, issues) {
         const manufacturerSlug = product.data.manufacturer?.slug;
         if (!manufacturerSlug) {
           addIssue(issues, "PRODUCT_MANUFACTURER_MISSING", product, "manufacturer.slug fehlt.");
-        } else if (!manufacturerBySlug.has(manufacturerSlug)) {
+        } else if (!manufacturerBySlug.has(manufacturerSlug) && product.data.manufacturer?.href !== "/hersteller/") {
           addIssue(issues, "MANUFACTURER_REFERENCE_BROKEN", product, "Hersteller " + manufacturerSlug + " existiert nicht.", { manufacturerSlug });
         }
 
@@ -287,7 +287,7 @@ function auditProductCoverage(products, context, issues) {
     }
 
     const manufacturerSlug = p.data.manufacturer?.slug;
-    if (manufacturerSlug && !manufacturerBySlug.has(manufacturerSlug)) {
+    if (manufacturerSlug && !manufacturerBySlug.has(manufacturerSlug) && p.data.manufacturer?.href !== "/hersteller/") {
       addIssue(issues, "MANUFACTURER_REFERENCE_BROKEN", p, "Hersteller " + manufacturerSlug + " existiert nicht.");
     }
   }

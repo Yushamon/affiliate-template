@@ -146,6 +146,19 @@ faq:
   - { question: "Kann der Timer je Katze eingestellt werden?", answer: "Nein. Laut Closer Pets gilt der Timer für alle gespeicherten Katzen gemeinsam; individuelle Ausgangszeiten sind nicht vorgesehen." }
   - { question: "Braucht die 355W eine App?", answer: "Nein. Programmierung und Status erfolgen lokal über Tasten und LCD." }
 editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-16", note: "Herstellerdaten; kein eigener Einbau- oder Praxistest." }
+multiPet: { sharedUse: supported, identificationMethods: [microchip, rfidTag], individualProfiles: supported, individualAccess: partial, individualFeeding: notApplicable, individualUsageData: unavailable, identitiesStored: 9, identifiesPresence: supported, identifiesIndividual: supported, controlsAccess: supported, attributesUsage: unavailable, attributesHealthData: notApplicable, individualRules: partial, individualSchedules: unavailable, similarPetLimitation: { status: noneDocumented, description: "Selektiver Eingang; Timer/Ausgang gelten gemeinsam." }, evidenceSourceUrls: ["https://closerpets.co.uk/products/elite-microchip-flap-timer-control"] }
+lifecycleDependency:
+  profilePersistence:
+    status: supported
+    detail: "Closer Pets bestätigt, dass gespeicherte Tier-IDs beim Batteriewechsel erhalten bleiben."
+    sourceUrl: "https://closerpets.co.uk/pages/faq-elite-microchip-cat-flap-with-timer-control-faqs-355"
+    sourceType: support
+    verifiedAt: "2026-08-31"
+  settingsPersistence: { status: unknown, detail: "Der Erhalt aller Timer- und Sperreinstellungen nach längerem stromlosen Zustand ist nicht vollständig dokumentiert." }
+  serviceEndFallback: { status: notApplicable, detail: "Die lokale Chip- und Timerfunktion benötigt keinen Cloud-Dienst." }
+repairability:
+  parts:
+    - { type: door, status: supported, officialPart: true, partNumber: "931", detail: "Closer Pets führt eine offizielle Ersatzklappe als Part 931.", sourceUrl: "https://closerpets.co.uk/products/elite-microchip-flap-timer-control", sourceType: manufacturer, verifiedAt: "2026-08-31" }
 evidenceSources:
   - { source: "Closer Pets – Elite Microchip Flap with Timer Control", url: "https://closerpets.co.uk/products/elite-microchip-flap-timer-control", accessedAt: "2026-08-16", assertion: "Chip, Timer, LCD, Maße, Batterien und Kapazität sind Herstellerangaben.", fields: ["specs", "decision", "comparisonData"] }
   - { source: "Closer Pets – 355 FAQ", url: "https://closerpets.co.uk/pages/faq-elite-microchip-cat-flap-with-timer-control-faqs-355", accessedAt: "2026-08-16", assertion: "Gemeinsamer Timer und Grenzen der selektiven Richtungssteuerung stammen aus dem Herstellersupport.", fields: ["faq", "weaknesses"] }

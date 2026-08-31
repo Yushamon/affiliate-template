@@ -209,6 +209,7 @@ specs:
     value: "4 × C-Batterien; typische Laufzeit etwa 6 Monate"
   - label: "Maße"
     value: "200 × 230 × 320 mm (H × B × T)"
+multiPet: { sharedUse: supported, identificationMethods: [microchip, rfidTag], individualProfiles: supported, individualAccess: supported, individualFeeding: partial, individualUsageData: supported, similarPetLimitation: { status: noneDocumented, description: "Identifikation erfolgt nicht über Gewicht." }, evidenceSourceUrls: ["https://www.surepetcare.com/de-de/futterautomaten/mikrochip-futterautomat-connect"] }
 faq: []
 useCase: Für Katzen und kleine Hunde mit individuellem Futterzugang
 capacity: 400 ml

@@ -259,6 +259,7 @@ faq:
     answer: "Dazu erlaubt die Herstellerangabe keine belastbare Prognose. Sie sagt weder, ob danach weitere Updates erscheinen, noch ob Hub, Klappe, App- oder Cloud-Funktionen weiterlaufen oder eingestellt werden. Der Zeitraum ist keine Angabe zur Produktlebensdauer."
   - question: "Wie lange liefert Sure Petcare Sicherheitsupdates für den Hub?"
     answer: "Sure Petcare dokumentiert Sicherheitsupdates für den Hub für einen Zeitraum von zwei Jahren ab Kaufdatum des Hubs."
+multiPet: { sharedUse: supported, identificationMethods: [microchip, rfidTag], individualProfiles: supported, individualAccess: supported, individualFeeding: notApplicable, individualUsageData: supported, similarPetLimitation: { status: noneDocumented, description: "Zuordnung erfolgt über Chip/Tag, nicht Gewicht." }, evidenceSourceUrls: ["https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe-connect"] }
 evidenceSources:
   - source: "Sure Petcare Deutschland – Mikrochip Katzenklappe Connect"
     url: "https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe-connect"

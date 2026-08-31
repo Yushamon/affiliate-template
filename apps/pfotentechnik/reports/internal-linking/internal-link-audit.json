@@ -1,6 +1,6 @@
 {
   "version": "3.0.3",
-  "generatedAt": "2026-08-28T08:56:12.354Z",
+  "generatedAt": "2026-08-31T07:43:52.771Z",
   "strict": true,
   "summary": {
     "documents": 243,
@@ -8,7 +8,7 @@
     "buildRoutes": 366,
     "validRoutes": 366,
     "definitions": 514,
-    "renderedAutomaticLinks": 559,
+    "renderedAutomaticLinks": 562,
     "errors": 0,
     "warnings": 9,
     "critical": 0
@@ -1145,6 +1145,18 @@
     },
     {
       "sourceRoute": "/trinkbrunnen/",
+      "targetRoute": "/produkt/petlibro-dockstream-2-smart-cordless/",
+      "anchor": "PETLIBRO Dockstream 2 Smart Cordless",
+      "score": 5936
+    },
+    {
+      "sourceRoute": "/trinkbrunnen/",
+      "targetRoute": "/produkt/petkit-eversweet-solo-2-fountain/",
+      "anchor": "PETKIT Eversweet Solo 2",
+      "score": 4923
+    },
+    {
+      "sourceRoute": "/trinkbrunnen/",
       "targetRoute": "/trinkbrunnen-fuer-katzen-sinnvoll/",
       "anchor": "Trinkbrunnen für Katzen",
       "score": 4123
@@ -1160,6 +1172,12 @@
       "targetRoute": "/warum-katzen-fliessendes-wasser-trinken/",
       "anchor": "bewegtes Wasser",
       "score": 2615
+    },
+    {
+      "sourceRoute": "/trinkbrunnen/",
+      "targetRoute": "/hersteller/petsafe/",
+      "anchor": "PetSafe",
+      "score": 1907
     },
     {
       "sourceRoute": "/trinkmenge-hund-messen/",
@@ -3618,7 +3636,7 @@
     "/hersteller/pawsync/": 3,
     "/hersteller/petkit/": 39,
     "/hersteller/petlibro/": 60,
-    "/hersteller/petsafe/": 18,
+    "/hersteller/petsafe/": 19,
     "/hersteller/petsnowy/": 3,
     "/hersteller/pettec/": 4,
     "/hersteller/petwalk/": 5,
@@ -3700,7 +3718,7 @@
     "/produkt/petkit-eversweet-5-mini/": 1,
     "/produkt/petkit-eversweet-max-2-uvc/": 5,
     "/produkt/petkit-eversweet-max-cordless/": 1,
-    "/produkt/petkit-eversweet-solo-2-fountain/": 3,
+    "/produkt/petkit-eversweet-solo-2-fountain/": 4,
     "/produkt/petkit-eversweet-solo-se/": 1,
     "/produkt/petkit-eversweet-ultra/": 5,
     "/produkt/petkit-fresh-element-infinity/": 2,
@@ -3714,7 +3732,7 @@
     "/produkt/petlibro-air-automatic-feeder/": 2,
     "/produkt/petlibro-air-wifi-feeder/": 2,
     "/produkt/petlibro-capsule-dog-fountain/": 2,
-    "/produkt/petlibro-dockstream-2-smart-cordless/": 3,
+    "/produkt/petlibro-dockstream-2-smart-cordless/": 4,
     "/produkt/petlibro-dockstream-2-smart/": 3,
     "/produkt/petlibro-dockstream-cordless/": 2,
     "/produkt/petlibro-dockstream-rfid-smart/": 3,

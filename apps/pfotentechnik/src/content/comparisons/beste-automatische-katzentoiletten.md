@@ -475,6 +475,16 @@ M1 Plus bleibt als Produktseite erhalten, ist gegenüber M1 Lite aber vor allem 
 
 „Klumpend“ genügt nicht als Freigabe. Tofu, Mischstreu, Bentonit, feine Körnung und Pellets werden modellbezogen behandelt. Mehrkatzenfähigkeit hängt zusätzlich von zuverlässiger Zuordnung, Abfallfach, Reinigungsfrequenz und ausreichenden alternativen Toiletten ab. Herstellerangaben zur Erkennung ähnlich schwerer Katzen sind kein unabhängiger Zuverlässigkeitsnachweis.
 
+### Kann die bisherige Streu bleiben?
+
+- **Tofu mit belegter Bedingung:** PuraMax 2, PUROBOT MAX 3, MAX PRO 2 und PETLIBRO Luma; Klumpfähigkeit sowie jeweilige Partikel-/Filtergrenzen bleiben Pflicht.
+- **Bentonit klar oder bedingt belegt:** Neakasa M1 Lite/Plus, Litter-Robot 4 und die genannten PETKIT-Trommelmodelle.
+- **Holzpellets ausdrücklich ausgeschlossen:** Neakasa M1 Lite/Plus und Litter-Robot 4; Luma schließt Kiefernstreu aus.
+- **Nur proprietäre Kristallstreu:** PUROBOT Crystal Duo. Das ist keine allgemeine Kristallfreigabe.
+- **Keine belastbare Herstellerangabe:** PetSnowy und Devoko bleiben `unknown`.
+
+`Unknown` bedeutet nicht ungeeignet, sondern fehlende belastbare Hersteller-Evidence. Bei Mehrkatzenprofilen belegen Gewicht oder Kamera außerdem keine zuverlässige Trennung ähnlich schwerer Tiere; eine universelle Mindestgewichtsdifferenz ist für diese Auswahl nicht dokumentiert.
+
 ## Daten, Ausfall und Folgekosten
 
 Monitoring zeigt Nutzung, Gewicht oder Bilddaten – keine Diagnose. Beim PUROBOT läuft der voreingestellte Grundbetrieb ohne Netz weiter, während App-Daten ausbleiben. Für Luma sind Aufzeichnung und AI an Cloud und Tarif gebunden. In die Folgekosten gehören Beutel, Filter, Deodorizer, Streu und optionale Dienste; dynamische Preise werden nicht dauerhaft festgeschrieben.

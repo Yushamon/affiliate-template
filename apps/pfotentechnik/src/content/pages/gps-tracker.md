@@ -259,6 +259,17 @@ Der höchste Laufzeitwert ist selten der passende. Ein 70-g-Gerät mit sechs Woc
 
 Rechne **Gerät + Abo + Ersatzhalter + Ladekabel + mögliche Ersatzgeräte** über die geplante Nutzungszeit. Der [Abo-Guide](/warum-brauchen-gps-tracker-ein-abo/) und [Vergleich ohne Abo](/vergleiche/gps-tracker-ohne-abo/) zeigen, warum laufende Gebühren nicht die einzige Kostenform sind.
 
+### Positionsdaten gehören nicht automatisch dauerhaft dir
+
+| Frage | Tractive DOG 6 / CAT 6 Mini | Weenect XS |
+|---|---|---|
+| Verlauf | Basic: 24 Stunden; Premium: bis 365 Tage | aktuelle belastbare Dauer in der vorhandenen Primär-Evidence `unknown` |
+| Export | Positionsverlauf mit Premium; EU-Tracker-Daten zusätzlich per EU-Data-Act-Anfrage | Format, Zeitraum und Tarifbedingung `unknown` |
+| Nach Abo-Ende | Fernortung benötigt ein aktives Abo; Zugriff auf bereits gespeicherte Historie nach dem Vertragsende nicht eindeutig belegt | Historienzugriff `unknown` |
+| Gerätewechsel | Abo-Übertragung erhält laut Tractive unter anderem Tierprofil, Zonen, Heimadresse und Familienfreigabe; modellgebundene Funktionen können entfallen | Profil-, Verlaufs- und Einstellungsübernahme `unknown` |
+
+Vor Kündigung oder Hardwarewechsel sollte ein möglicher Export deshalb **vorher** geprüft und ausgeführt werden. „History vorhanden“ sagt ohne Zeitraum, Tarif und Exportweg wenig über Datenhoheit aus.
+
 ## Kaufberatung in sieben Schritten
 
 ### Gesundheitstrends richtig einordnen

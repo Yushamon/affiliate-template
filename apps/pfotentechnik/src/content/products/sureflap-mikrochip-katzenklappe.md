@@ -311,6 +311,23 @@ decisionJourney:
   fallback:
     - "/katzenklappen/"
 
+multiPet: { sharedUse: supported, identificationMethods: [microchip, rfidTag], individualProfiles: supported, individualAccess: partial, individualFeeding: notApplicable, individualUsageData: unavailable, identitiesStored: 32, identifiesPresence: supported, identifiesIndividual: supported, controlsAccess: supported, attributesUsage: unavailable, attributesHealthData: notApplicable, individualRules: partial, individualSchedules: unavailable, similarPetLimitation: { status: noneDocumented, description: "Nur selektiver Eingang; Ausgangsrechte nicht individuell." }, evidenceSourceUrls: ["https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe"] }
+lifecycleDependency:
+  profilePersistence:
+    status: supported
+    detail: "Gelernte Mikrochip- und Halsbandanhänger-Nummern bleiben laut Sure Petcare beim Batteriewechsel dauerhaft gespeichert."
+    sourceUrl: "https://www.surepetcare.com/en-eu/support/videos/replacing-the-batteries-on-your-sureflap-microchip-pet-door"
+    sourceType: support
+    verifiedAt: "2026-08-31"
+  settingsPersistence: { status: unknown, detail: "Der vollständige Erhalt manueller Sperrstellungen oder weiterer Einstellungen ist nicht separat dokumentiert." }
+  serviceEndFallback: { status: notApplicable, detail: "Das Basismodell benötigt keinen Cloud-Dienst für die lokale Chipfreigabe." }
+repairability:
+  parts:
+    - { type: motor, status: supported, officialPart: true, detail: "Sure Petcare stellt eine offizielle Anleitung zum Austausch der Motorkassette bereit.", sourceUrl: "https://www.surepetcare.com/en-us/support/videos", sourceType: support, verifiedAt: "2026-08-31" }
+    - { type: door, status: supported, officialPart: true, detail: "Die transparente Klappe kann nach Herstelleranleitung ersetzt werden.", sourceUrl: "https://www.surepetcare.com/en-us/support/videos", sourceType: support, verifiedAt: "2026-08-31" }
+    - { type: frame, status: supported, officialPart: true, detail: "Für den Frontframe ist ein offizieller Austauschablauf dokumentiert.", sourceUrl: "https://www.surepetcare.com/en-us/support/videos", sourceType: support, verifiedAt: "2026-08-31" }
+    - { type: lock, status: supported, officialPart: true, detail: "Der Drehverschluss besitzt eine offizielle Austauschanleitung.", sourceUrl: "https://www.surepetcare.com/en-us/support/videos", sourceType: support, verifiedAt: "2026-08-31" }
+    - { type: seal, status: supported, officialPart: true, detail: "Das Catch Pad kann nach offizieller Anleitung ersetzt werden.", sourceUrl: "https://www.surepetcare.com/en-us/support/videos", sourceType: support, verifiedAt: "2026-08-31" }
 evidenceSources:
   - source: "Sure Petcare Deutschland – Mikrochip Katzenklappe"
     url: "https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe"

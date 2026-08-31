@@ -272,6 +272,8 @@ editorial:
   testedHandsOn: false
   lastVerifiedAt: "2026-08-07"
   note: "Bewertung auf Basis aktueller Neakasa-Herstellerdaten. Keine eigene Praxiserfahrung oder Langzeitnutzung als Bewertungsgrundlage."
+litterCompatibility: { bentoniteClumping: { status: supported }, tofu: { status: unknown }, plantBased: { status: unknown }, woodPellets: { status: notSupported }, crystal: { status: unknown }, nonClumping: { status: notSupported }, evidenceSourceUrls: ["https://eu.neakasa.com/products/m1-lite-self-cleaning-cat-litter-box"] }
+multiPet: { sharedUse: supported, identificationMethods: [weight], individualProfiles: partial, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: partial, similarPetLimitation: { status: unknown, description: "Keine Mindestgewichtsdifferenz dokumentiert." }, evidenceSourceUrls: ["https://eu.neakasa.com/products/m1-lite-self-cleaning-cat-litter-box"] }
 evidenceSources:
   - source: "Neakasa EU"
     url: "https://eu.neakasa.com/products/m1-lite-self-cleaning-cat-litter-box"

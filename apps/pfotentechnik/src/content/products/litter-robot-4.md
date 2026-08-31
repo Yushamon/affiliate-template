@@ -172,6 +172,40 @@ faq:
   - { question: "Hat der Litter-Robot 4 eine Kamera?", answer: "Nein. Die Dualkamera ist eine eigenständige Rolle des Litter-Robot 5 Pro und wird nicht übertragen." }
   - { question: "Wurde das Gerät selbst getestet?", answer: "Nein. Die Seite ordnet Hersteller- und Manualdaten ein und behauptet keinen eigenen Praxistest." }
 editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-16", note: "Herstellerdaten; kein eigener Produkttest." }
+litterCompatibility: { bentoniteClumping: { status: conditional, condition: "Standardgewichtige klumpende Tonstreu; Siebfähigkeit erforderlich." }, tofu: { status: unknown }, plantBased: { status: notSupported, condition: "Viele pflanzliche Streus ausgeschlossen." }, woodPellets: { status: notSupported }, crystal: { status: conditional, condition: "Nur einzelne siebgängige Silikakristallstreus." }, nonClumping: { status: notSupported }, evidenceSourceUrls: ["https://www.litter-robot.com/litter-robot/litter-robot-4.html"] }
+multiPet: { sharedUse: supported, identificationMethods: [weight], individualProfiles: supported, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: supported, similarPetLimitation: { status: unknown, description: "Keine Mindestgewichtsdifferenz dokumentiert." }, evidenceSourceUrls: ["https://www.litter-robot.com/eu/de/litter-robot-4.html"] }
+sensorLimits:
+  minimumOperationalWeightKg: 1.36
+  automaticModeMinimumWeightKg: 1.36
+  belowMinimumBehavior: manualOnly
+  calibrationRequirement:
+    status: conditional
+    detail: "Die Gewichtssensoren nullen beim Einschalten und nach einem abgeschlossenen Zyklus; Änderungen an Streu oder Standort erfordern einen korrekten Reset."
+    sourceUrl: "https://www.litter-robot.com/manual_pdf/Litter-Robot-4-Manual-EN-DE-FR-IT.pdf"
+    sourceType: manual
+    verifiedAt: "2026-08-31"
+  environmentDependency:
+    status: conditional
+    detail: "Für korrekte Gewichtswerte ist ein fester, ebener Stand nötig; für Teppich bietet Whisker eine modellbezogene Carpet Tray an."
+    sourceUrl: "https://www.litter-robot.com/support/article/litter-robot-4-not-cycling/"
+    sourceType: support
+    verifiedAt: "2026-08-31"
+  identificationLimitation: { status: unknown, detail: "Eine Mindestgewichtsdifferenz zur zuverlässigen Trennung ähnlich schwerer Katzen ist nicht veröffentlicht." }
+  sourceUrl: "https://www.litter-robot.com/eu/litter-robot-4.html"
+  sourceType: manufacturer
+  verifiedAt: "2026-08-31"
+failureModes:
+  mechanicalBlock:
+    status: partial
+    behavior: "Erkennt ein Vorhang- oder Gewichtssensor während des Zyklus eine Katze beziehungsweise Zusatzgewicht, stoppt die Trommel. Nach Freigabe kann sie fortsetzen; bei anhaltender Blockade sind Lichtcode und manueller Reset maßgeblich."
+    sourceUrl: "https://www.litter-robot.com/manual_pdf/Litter-Robot-4-Manual-EN-DE-FR-IT.pdf"
+    sourceType: manual
+    verifiedAt: "2026-08-31"
+repairability:
+  parts:
+    - { type: filter, status: supported, officialPart: true, detail: "Whisker führt den Aktivkohlefilter als offizielles austauschbares Verbrauchsteil.", sourceUrl: "https://www.litter-robot.com/support/article/litter-robot-4-use-and-care/", sourceType: support, verifiedAt: "2026-08-31" }
+    - { type: seal, status: supported, officialPart: true, detail: "Die Bürstendichtstreifen sollen bei Abnutzung ersetzt werden und werden offiziell angeboten.", sourceUrl: "https://www.litter-robot.com/support/article/litter-robot-4-use-and-care/", sourceType: support, verifiedAt: "2026-08-31" }
+    - { type: base, status: supported, officialPart: true, detail: "Für die Basis existiert eine offizielle Installationsanleitung; daraus folgt keine pauschale Nutzerreparatur anderer Elektronik.", sourceUrl: "https://www.litter-robot.com/eu/support/litter-robot-4/", sourceType: support, verifiedAt: "2026-08-31" }
 evidenceSources:
   - { source: "Whisker EU – Litter-Robot 4", url: "https://www.litter-robot.com/eu/de/litter-robot-4.html", accessedAt: "2026-08-16", assertion: "Eingang, Gewicht, Katzenprofil, Mehrkatzenangabe, App und Strom sind Herstellerangaben.", fields: ["specs", "decision", "comparisonData"] }
   - { source: "Litter-Robot 4 Bedienungsanleitung", url: "https://www.litter-robot.com/manual_pdf/Litter-Robot-4-Manual-EN-DE-FR-IT_LR4-8018-0B.pdf", accessedAt: "2026-08-16", assertion: "Außenmaße, Einstiegshöhe, Innenraum und Betriebsgrenzen stammen aus dem Herstellerhandbuch.", fields: ["specs", "faq"] }

@@ -260,6 +260,14 @@ Der Vergleich richtet sich an Haushalte, in denen Futtermenge, Futtersorte oder 
 
 ## Drei Modelle, drei völlig verschiedene Aufgaben
 
+| System | Tiererkennung | Individueller Zugang | Individuelle Fütterung | Individuelle Daten |
+|---|---|---|---|---|
+| SureFeed Mikrochip | Mikrochip oder RFID-Tag | ja | teilweise: geschützter Napf, keine automatisch berechnete Ration | nein |
+| SureFeed Connect | Mikrochip oder RFID-Tag | ja | teilweise | ja, im dokumentierten Protokollumfang |
+| PETLIBRO ONE RFID | PETLIBRO-RFID-Tag | ja | ja, Zugang und Plan für das zugeordnete Tier | ja |
+
+Ein offener Automat mit zwei Näpfen bleibt Shared Use. Kamera, zwei Auslässe oder mehrere App-Nutzer belegen für sich keine Tieridentifikation.
+
 Der **PETLIBRO Granary Dual Feeder** verteilt Trockenfutter auf zwei Schalen. Das schafft zwei Plätze, aber keine verlässliche Zuordnung. Ein schneller Hund oder eine dominante Katze kann weiterhin beide Schalen leeren.
 
 Der **PETKIT YumShare Dual-Hopper** hält zwei Trockenfuttersorten getrennt und mischt sie nach Plan. Das ist sinnvoll, wenn ein Tier morgens und abends unterschiedliche Kroketten bekommt. Zwei Futterkammern bedeuten aber nicht, dass zwei Tiere jeweils nur „ihre“ Kammer erhalten. Auch Kamera- oder Gesichtserkennung dokumentiert einen Napfbesuch, sie verriegelt den Napf nicht wie ein Zugangssystem.

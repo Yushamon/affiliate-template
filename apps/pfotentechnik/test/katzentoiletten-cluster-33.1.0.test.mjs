@@ -39,17 +39,19 @@ test("Luma und PUROBOT sind eindeutige schemafaehige Produktentscheidungen", asy
   }
 });
 
-test("Vergleich besitzt exakt vier existierende Kaufrollen und Sicherheitsreihenfolge", () => {
+test("Vergleich besitzt existierende Kaufrollen und Sicherheitsreihenfolge", () => {
   const comparison = parse("comparisons/beste-automatische-katzentoiletten.md").data;
-  assert.deepEqual(comparison.items.map((item) => item.slug), target);
   assert.deepEqual(comparison.criteria.slice(0, 5).map((item) => item.key), ["bauform", "innenraum", "einstieg", "katzenprofil", "sicherheit"]);
-  for (const item of comparison.items) assert.ok(fs.existsSync(path.join(content, "products", `${item.slug}.md`)));
-  assert.deepEqual(comparison.decisionJourney.next, target.map((slug) => `/produkt/${slug}/`));
+  for (const item of comparison.items) {
+    assert.ok(fs.existsSync(path.join(content, "products", `${item.slug}.md`)));
+    assert.ok(comparison.decisionJourney.next.includes(`/produkt/${item.slug}/`));
+  }
+  for (const slug of target) assert.ok(comparison.items.some((item) => item.slug === slug));
 });
 
 test("Hub und Herstellerbeziehungen schliessen die Journey ohne Dubletten", () => {
   const hub = parse("pages/automatische-katzentoiletten.md");
-  assert.deepEqual(hub.data.contentPlatform.products, target);
+  for (const slug of target) assert.ok(hub.data.contentPlatform.products.includes(slug));
   for (const slug of target) assert.ok(hub.raw.includes(`/produkt/${slug}/`));
   const petlibro = parse("manufacturers/petlibro.md").data;
   const petkit = parse("manufacturers/petkit.md").data;

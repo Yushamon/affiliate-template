@@ -223,6 +223,8 @@ editorial:
   testedHandsOn: false
   lastVerifiedAt: "2026-08-15"
   note: "Herstellerdaten redaktionell eingeordnet; kein eigener Produkttest."
+litterCompatibility: { bentoniteClumping: { status: unknown }, tofu: { status: unknown }, plantBased: { status: unknown }, woodPellets: { status: unknown }, crystal: { status: unknown }, nonClumping: { status: unknown }, evidenceSourceUrls: [] }
+multiPet: { sharedUse: unknown, identificationMethods: [unknown], individualProfiles: unknown, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: unknown, similarPetLimitation: { status: unknown, description: "Mehrtier-Zuordnung nicht ausreichend dokumentiert." }, evidenceSourceUrls: [] }
 evidenceSources:
   - source: "PetSnowy Deutschland"
     url: "https://petsnowy.com/de/products/petsnowy-snow-self-cleaning-litter-box"

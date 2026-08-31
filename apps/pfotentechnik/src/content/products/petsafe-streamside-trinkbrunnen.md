@@ -141,6 +141,24 @@ specs:
     value: "PetSafe Aktivkohlefilter PAC00-13906 und Schaumfilter PAC00-13711"
 features: ["Keramik", "Offene Trinkschale", "Aktivkohlefilter", "Schaum-Vorfilter", "Sanfter Wasserfluss"]
 useCase: "Keramik- und Offline-Alternative für Katzen und kleine Hunde"
+repairability:
+  parts:
+    - type: pump
+      status: supported
+      officialPart: true
+      partNumber: PAC00-13150
+      detail: "PetSafe führt eine offizielle EU-Ersatzpumpe und nennt den Streamside ausdrücklich als kompatibles Modell."
+      sourceUrl: "https://www.petsafe.com/ch/p/ersatzpumpe-drinkwell-trinkbrunnen-360/PAC00-13150/"
+      sourceType: manufacturer
+      verifiedAt: "2026-08-31"
+    - type: filter
+      status: supported
+      officialPart: true
+      partNumber: "PAC00-13906 / PAC00-13711"
+      detail: "Aktivkohle- und Schaumfilter werden als offizielle modellkompatible Verbrauchsteile geführt."
+      sourceUrl: "https://www.petsafe.com/de/p/keramik-trinkbrunnen-streamside/PWW19-17098/"
+      sourceType: manufacturer
+      verifiedAt: "2026-08-31"
 comparisonData: { version: 1, custom: { kapazitaet: "1,8 Liter", material: "Keramik; offene Trinkschale", lautstaerke: "Sanftes Blubbern; keine belastbare dB-Angabe", filter: "Aktivkohle plus Schaum", reinigung: "Keramikteile oberer Spülmaschinenkorb; Pumpe von Hand", stromversorgung: "Netzbetrieb", eignung: "Katzen und kleine Hunde; Keramik-Fokus" } }
 comparisonFilters: { animal: ["cat", "dog"], petSize: ["small"], foodType: [], app: false, reservoirLiters: 1.8 }
 alternatives: ["catit-pixi-smart-trinkbrunnen", "petlibro-stainless-steel-fountain", "cat-mate-335-pet-fountain"]

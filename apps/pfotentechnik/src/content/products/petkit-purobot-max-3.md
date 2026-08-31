@@ -219,6 +219,8 @@ editorial:
   testedHandsOn: false
   lastVerifiedAt: "2026-08-15"
   note: "Herstellerdaten redaktionell eingeordnet; kein eigener Produkttest."
+litterCompatibility: { bentoniteClumping: { status: conditional, condition: "Klumpende Tonstreu; Filter- und Partikelgrenzen beachten." }, tofu: { status: conditional, condition: "Klumpend; Partikel bis 12 mm Länge und 3 mm Durchmesser." }, plantBased: { status: unknown }, woodPellets: { status: unknown }, crystal: { status: unknown }, nonClumping: { status: unknown }, evidenceSourceUrls: ["https://www.petkit.com/products/purobot-max-3"] }
+multiPet: { sharedUse: supported, identificationMethods: [weight, cameraAi], individualProfiles: supported, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: supported, similarPetLimitation: { status: unknown, description: "Keine Mindestgewichtsdifferenz dokumentiert." }, evidenceSourceUrls: ["https://www.petkit.com/products/purobot-max-3"] }
 evidenceSources:
   - source: "PETKIT"
     url: "https://www.petkit.com/products/purobot-max-3-automatic-cat-litter-box"

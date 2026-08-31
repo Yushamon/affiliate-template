@@ -528,6 +528,16 @@ Prüfe, ob Näpfe, Rotoren, Deckel, Netzteile, Trockenmittelfächer oder Kühlak
 
 ## Portionen richtig kalibrieren
 
+### Herstellerportion ist Nennwert, keine Garantie
+
+| Modell | Kleinste dokumentierte Einstellung | Herstellerangabe | Technische Grenze |
+|---|---:|---|---|
+| PETLIBRO Granary Camera | 1 Portion | etwa 20 ml beziehungsweise 10 g | Gewicht hängt von Form und Dichte ab; Doppelschale teilt mechanisch und identifiziert kein Tier |
+| PETLIBRO Air WiFi | 1 Portion | 10,4 ml | kein fester Grammwert; bis zu 16 Portionseinheiten je Mahlzeit |
+| PETKIT YumShare Solo 2 | 1 Portion | ungefähr 10 g | PETKIT nennt Partikelgröße und Dichte als Einfluss; maximal fünf Portionen je Mahlzeit |
+
+Damit beantwortet „eine Portion“ nur die kleinste **Geräteeinstellung**. Ein ungefährer Hersteller-Grammwert ist weder eine garantierte Einzelmessung noch automatisch die reproduzierbare Mindestmenge mit deinem Futter. Eine Doppelschale ändert diese Semantik nicht: Ohne getrennten Ausgabekanal oder Tieridentifikation entstehen keine individuell dosierten Links-/Rechtsportionen.
+
 Die Portionsangabe in einer App ist selten mit einem verbindlichen Grammwert gleichzusetzen. Für eine belastbare Einstellung gehst du besser so vor:
 
 1. Verwende genau das Futter, das später dauerhaft im Automaten liegen soll.

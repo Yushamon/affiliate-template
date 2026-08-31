@@ -1,12 +1,12 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-08-28T08:56:12.354Z
+Erstellt: 2026-08-31T07:43:52.771Z
 
 ## Ergebnis
 
 - Dokumente: 243
 - Linkdefinitionen: 514
-- Simulierte automatische Links: 559
+- Simulierte automatische Links: 562
 - Fehler: 0
 - Warnungen: 9
 - Strict-kritisch: 0
@@ -189,9 +189,12 @@ Erstellt: 2026-08-28T08:56:12.354Z
 - /trinkbrunnen-seniorenkatzen/ → /warum-katzen-fliessendes-wasser-trinken/: „bewegtes Wasser“
 - /trinkbrunnen-seniorenkatzen/ → /nierenkranke-katze-trinken/: „Nierenerkrankung“
 - /trinkbrunnen-seniorenkatzen/ → /wie-viele-wasserstellen-katze/: „Wasserstellen“
+- /trinkbrunnen/ → /produkt/petlibro-dockstream-2-smart-cordless/: „PETLIBRO Dockstream 2 Smart Cordless“
+- /trinkbrunnen/ → /produkt/petkit-eversweet-solo-2-fountain/: „PETKIT Eversweet Solo 2“
 - /trinkbrunnen/ → /trinkbrunnen-fuer-katzen-sinnvoll/: „Trinkbrunnen für Katzen“
 - /trinkbrunnen/ → /trinkbrunnen-hund/: „Trinkbrunnen für Hunde“
 - /trinkbrunnen/ → /warum-katzen-fliessendes-wasser-trinken/: „bewegtes Wasser“
+- /trinkbrunnen/ → /hersteller/petsafe/: „PetSafe“
 - /trinkmenge-hund-messen/ → /trinkbrunnen/: „Trinkbrunnen“
 - /trinkmenge-hund-messen/ → /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/: „trinkt zu wenig“
 - /trinkmenge-katze-messen/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filterwechsel“

@@ -202,6 +202,7 @@ specs:
     value: Nicht vom Hersteller ausgewiesen
   - label: Gewicht
     value: Nicht vom Hersteller ausgewiesen
+multiPet: { sharedUse: partial, identificationMethods: [rfidTag], individualProfiles: supported, individualAccess: supported, individualFeeding: supported, individualUsageData: supported, similarPetLimitation: { status: noneDocumented, description: "Zuordnung erfolgt über PETLIBRO-RFID-Tag, nicht Gewicht." }, evidenceSourceUrls: ["https://petlibro.com/products/one-rfid-smart-feeder"] }
 faq: []
 useCase: Für Katzen in Mehrtierhaushalten mit individuellen Futterplänen oder Futterneid
 capacity: 3 Liter
@@ -257,4 +258,3 @@ decisionFacts:
 Der PETLIBRO One RFID Smart Feeder kombiniert automatische Fütterung mit einem geschützten Napfzugang und eignet sich ideal für Mehrkatzenhaushalte.
 
 Eine der besten Lösungen für Mehrkatzenhaushalte, wenn jedes Tier zuverlässig nur sein eigenes Futter erhalten soll.
-

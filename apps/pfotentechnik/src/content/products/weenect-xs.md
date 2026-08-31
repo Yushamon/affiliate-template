@@ -336,7 +336,26 @@ gps:
   liveTracking: true
   virtualFence: true
   activityTracking: true
+  healthCapabilities:
+    activity: supported
+    sleep: unknown
+    restingHeartRate: unavailable
+    restingRespiratoryRate: unavailable
+    scratching: unavailable
+    barking: unavailable
+    otherBehavior: []
+    healthAlerts: unknown
+    medicalDeviceStatus: wellnessOnly
+    sourceUrl: "https://www.weenect.com/de/de/gps-tracker-hund/"
+    sourceType: manufacturer
+    verifiedAt: "2026-08-31"
   attachmentType: "collar-attachment"
+dataPortability:
+  history: { status: unknown, detail: "Eine belastbare aktuelle Aufbewahrungsdauer ist in der vorhandenen Primär-Evidence nicht eindeutig ausgewiesen." }
+  export: { status: unknown, detail: "Ein offizieller Positionsdatenexport samt Format und Tarifbedingung ist nicht belastbar dokumentiert." }
+  localDownload: { status: unknown, detail: "Ein lokaler Downloadpfad ist nicht belegt." }
+  postSubscriptionAccess: { status: unknown, detail: "Zugriff auf Historie nach Abo-Ende ist nicht geklärt." }
+  deviceMigration: { status: unknown, detail: "Der Erhalt von Profil, Verlauf und Einstellungen bei Hardwarewechsel ist nicht belegt." }
 
 faq:
   - question: "Ist der Weenect XS für Katzen geeignet?"

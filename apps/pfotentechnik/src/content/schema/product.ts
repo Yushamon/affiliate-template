@@ -339,6 +339,39 @@ const productSpecSchema =
     ])
   });
 
+const decisionDepthStatusSchema = z.enum([
+  "supported",
+  "conditional",
+  "unavailable",
+  "unknown",
+  "notApplicable"
+]);
+
+const productHealthCapabilitiesSchema = z.object({
+  activity: decisionDepthStatusSchema,
+  sleep: decisionDepthStatusSchema,
+  restingHeartRate: decisionDepthStatusSchema,
+  restingRespiratoryRate: decisionDepthStatusSchema,
+  scratching: decisionDepthStatusSchema,
+  barking: decisionDepthStatusSchema,
+  otherBehavior: z.array(z.string().min(1)).default([]),
+  healthAlerts: decisionDepthStatusSchema,
+  baselineDaysRequired: z.number().int().nonnegative().optional(),
+  medicalDeviceStatus: z.enum(["notMedicalDevice", "wellnessOnly", "unknown"]),
+  sourceUrl: z.string().url().optional(),
+  sourceType: z.enum(["manufacturer", "manual", "support"]).optional(),
+  verifiedAt: z.coerce.date().optional()
+}).superRefine((value, context) => {
+  const claimed = [value.activity, value.sleep, value.restingHeartRate, value.restingRespiratoryRate,
+    value.scratching, value.barking, value.healthAlerts].some((status) => !["unknown", "notApplicable"].includes(status));
+  if (claimed && (!value.sourceUrl || !value.sourceType || !value.verifiedAt)) {
+    context.addIssue({
+      code: z.ZodIssueCode.custom,
+      message: "Belegte Gesundheitsfunktionen benötigen sourceUrl, sourceType und verifiedAt."
+    });
+  }
+}).optional();
+
 const productGpsSchema =
   z.object({
     animal: z.array(z.enum(["dog", "cat"])).min(1),
@@ -356,6 +389,7 @@ const productGpsSchema =
     liveTracking: z.boolean().default(false),
     virtualFence: z.boolean().default(false),
     activityTracking: z.boolean().default(false),
+    healthCapabilities: productHealthCapabilitiesSchema,
     attachmentType: z.enum([
       "clip",
       "collar",
@@ -375,13 +409,25 @@ const productFailureModeStatusSchema = z.enum([
   "notApplicable"
 ]);
 
+const productFailureFunctionSchema = z.object({
+  localRecording: productFailureModeStatusSchema.optional(),
+  detection: productFailureModeStatusSchema.optional(),
+  playback: productFailureModeStatusSchema.optional(),
+  remoteAccess: productFailureModeStatusSchema.optional(),
+  notifications: productFailureModeStatusSchema.optional(),
+  lanAccess: productFailureModeStatusSchema.optional(),
+  localSchedule: productFailureModeStatusSchema.optional(),
+  cooling: productFailureModeStatusSchema.optional()
+}).optional();
+
 const productFailureModeSchema = z
   .object({
     status: productFailureModeStatusSchema,
     behavior: z.string().min(1),
     sourceUrl: z.string().url().optional(),
     sourceType: z.enum(["manufacturer", "manual", "support"]).optional(),
-    verifiedAt: z.coerce.date().optional()
+    verifiedAt: z.coerce.date().optional(),
+    functions: productFailureFunctionSchema
   })
   .superRefine((value, context) => {
     const sourcedClaim = !["unknown", "notApplicable"].includes(value.status);
@@ -398,9 +444,195 @@ const productFailureModesSchema = z
     powerOutage: productFailureModeSchema.optional(),
     wifiOutage: productFailureModeSchema.optional(),
     internetOutage: productFailureModeSchema.optional(),
-    cloudOutage: productFailureModeSchema.optional()
+    cloudOutage: productFailureModeSchema.optional(),
+    mechanicalBlock: productFailureModeSchema.optional()
   })
   .optional();
+
+const decisionClaimStatusSchema = z.enum([
+  "supported",
+  "conditional",
+  "notSupported",
+  "unknown",
+  "notApplicable"
+]);
+
+const litterCompatibilityEntrySchema = z.object({
+  status: decisionClaimStatusSchema,
+  condition: z.string().min(1).optional()
+});
+
+const productLitterCompatibilitySchema = z.object({
+  bentoniteClumping: litterCompatibilityEntrySchema.optional(),
+  tofu: litterCompatibilityEntrySchema.optional(),
+  plantBased: litterCompatibilityEntrySchema.optional(),
+  woodPellets: litterCompatibilityEntrySchema.optional(),
+  crystal: litterCompatibilityEntrySchema.optional(),
+  nonClumping: litterCompatibilityEntrySchema.optional(),
+  evidenceSourceUrls: z.array(z.string().url()).default([])
+}).optional();
+
+const multiPetCapabilityStatusSchema = z.enum([
+  "supported",
+  "partial",
+  "unavailable",
+  "unknown",
+  "notApplicable"
+]);
+
+const productMultiPetSchema = z.object({
+  sharedUse: multiPetCapabilityStatusSchema,
+  identificationMethods: z.array(z.enum([
+    "microchip",
+    "rfidTag",
+    "weight",
+    "cameraAi",
+    "other",
+    "none",
+    "unknown"
+  ])).min(1),
+  individualProfiles: multiPetCapabilityStatusSchema.optional(),
+  individualAccess: multiPetCapabilityStatusSchema.optional(),
+  individualFeeding: multiPetCapabilityStatusSchema.optional(),
+  individualUsageData: multiPetCapabilityStatusSchema.optional(),
+  identitiesStored: z.number().int().positive().optional(),
+  identifiesPresence: multiPetCapabilityStatusSchema.optional(),
+  identifiesIndividual: multiPetCapabilityStatusSchema.optional(),
+  controlsAccess: multiPetCapabilityStatusSchema.optional(),
+  attributesUsage: multiPetCapabilityStatusSchema.optional(),
+  attributesHealthData: multiPetCapabilityStatusSchema.optional(),
+  individualRules: multiPetCapabilityStatusSchema.optional(),
+  individualSchedules: multiPetCapabilityStatusSchema.optional(),
+  similarPetLimitation: z.object({
+    status: z.enum(["documented", "noneDocumented", "unknown"]),
+    description: z.string().min(1)
+  }).optional(),
+  evidenceSourceUrls: z.array(z.string().url()).default([])
+}).superRefine((value, context) => {
+  const identifies = value.identificationMethods.some((method) =>
+    !["none", "unknown"].includes(method)
+  );
+  if (!identifies && [value.individualAccess, value.individualFeeding, value.individualUsageData]
+    .some((status) => status === "supported")) {
+    context.addIssue({
+      code: z.ZodIssueCode.custom,
+      message: "Individuelle Multi-Pet-Funktionen benötigen eine belegte Identifikationsmethode."
+    });
+  }
+}).optional();
+
+const productDecisionDepthClaimSchema = z.object({
+  status: decisionDepthStatusSchema,
+  detail: z.string().min(1),
+  sourceUrl: z.string().url().optional(),
+  sourceType: z.enum(["manufacturer", "manual", "support"]).optional(),
+  verifiedAt: z.coerce.date().optional()
+}).superRefine((value, context) => {
+  if (!["unknown", "notApplicable"].includes(value.status)
+    && (!value.sourceUrl || !value.sourceType || !value.verifiedAt)) {
+    context.addIssue({
+      code: z.ZodIssueCode.custom,
+      message: "Belegte Decision-Depth-Claims benötigen sourceUrl, sourceType und verifiedAt."
+    });
+  }
+});
+
+const productDispensingPrecisionSchema = z.object({
+  status: z.enum(["documented", "partial", "unknown", "notApplicable"]),
+  portionUnit: z.enum(["portion", "milliliter", "cup", "unknown"]),
+  nominalPortionGrams: z.number().positive().optional(),
+  nominalPortionMilliliters: z.number().positive().optional(),
+  minimumPortionsPerDispense: z.number().int().positive().optional(),
+  maximumPortionsPerDispense: z.number().int().positive().optional(),
+  portionIsApproximate: z.boolean().optional(),
+  kibbleDependency: productDecisionDepthClaimSchema.optional(),
+  fillLevelDependency: productDecisionDepthClaimSchema.optional(),
+  integratedScale: productDecisionDepthClaimSchema.optional(),
+  calibrationSupported: productDecisionDepthClaimSchema.optional(),
+  dualBowlDistribution: z.object({
+    mechanism: z.enum(["mechanicalSplit", "independentOutput", "unknown"]),
+    adjustableSplitRatio: productDecisionDepthClaimSchema,
+    individualPortioning: productDecisionDepthClaimSchema
+  }).optional(),
+  sourceUrl: z.string().url().optional(),
+  sourceType: z.enum(["manufacturer", "manual", "support"]).optional(),
+  verifiedAt: z.coerce.date().optional()
+}).superRefine((value, context) => {
+  if (["documented", "partial"].includes(value.status)
+    && (!value.sourceUrl || !value.sourceType || !value.verifiedAt)) {
+    context.addIssue({
+      code: z.ZodIssueCode.custom,
+      message: "Belegte Portionierdaten benötigen sourceUrl, sourceType und verifiedAt."
+    });
+  }
+}).optional();
+
+const productRepairabilitySchema = z.object({
+  parts: z.array(z.object({
+    type: z.enum(["pump", "motor", "door", "frame", "lock", "seal", "liner", "filter", "base", "other"]),
+    status: decisionDepthStatusSchema,
+    officialPart: z.boolean().optional(),
+    partNumber: z.string().min(1).optional(),
+    replaceableWithoutTools: z.boolean().optional(),
+    detail: z.string().min(1),
+    sourceUrl: z.string().url().optional(),
+    sourceType: z.enum(["manufacturer", "manual", "support"]).optional(),
+    verifiedAt: z.coerce.date().optional()
+  }).superRefine((value, context) => {
+    if (!["unknown", "notApplicable"].includes(value.status)
+      && (!value.sourceUrl || !value.sourceType || !value.verifiedAt)) {
+      context.addIssue({
+        code: z.ZodIssueCode.custom,
+        message: "Belegte Ersatzteilangaben benötigen sourceUrl, sourceType und verifiedAt."
+      });
+    }
+  })).min(1),
+  warrantyNote: z.string().min(1).optional()
+}).optional();
+
+const productDataPortabilitySchema = z.object({
+  history: productDecisionDepthClaimSchema.optional(),
+  historyRetentionDays: z.number().positive().optional(),
+  export: productDecisionDepthClaimSchema.optional(),
+  exportFormats: z.array(z.string().min(1)).default([]),
+  localDownload: productDecisionDepthClaimSchema.optional(),
+  cloudRetention: productDecisionDepthClaimSchema.optional(),
+  postSubscriptionAccess: productDecisionDepthClaimSchema.optional(),
+  deviceMigration: productDecisionDepthClaimSchema.optional(),
+  sharedAccess: productDecisionDepthClaimSchema.optional(),
+  maximumUsers: z.number().int().positive().optional(),
+  simultaneousStreams: z.number().int().positive().optional()
+}).optional();
+
+const productSensorLimitsSchema = z.object({
+  minimumOperationalWeightKg: z.number().nonnegative().optional(),
+  automaticModeMinimumWeightKg: z.number().nonnegative().optional(),
+  baselineDaysRequired: z.number().int().nonnegative().optional(),
+  calibrationRequirement: productDecisionDepthClaimSchema.optional(),
+  environmentDependency: productDecisionDepthClaimSchema.optional(),
+  identificationLimitation: productDecisionDepthClaimSchema.optional(),
+  belowMinimumBehavior: z.enum(["manualOnly", "automationDisabled", "unknown", "notApplicable"]).optional(),
+  sourceUrl: z.string().url().optional(),
+  sourceType: z.enum(["manufacturer", "manual", "support"]).optional(),
+  verifiedAt: z.coerce.date().optional()
+}).superRefine((value, context) => {
+  const hasNumericClaim = value.minimumOperationalWeightKg != null
+    || value.automaticModeMinimumWeightKg != null
+    || value.baselineDaysRequired != null;
+  if (hasNumericClaim && (!value.sourceUrl || !value.sourceType || !value.verifiedAt)) {
+    context.addIssue({
+      code: z.ZodIssueCode.custom,
+      message: "Numerische Sensorgrenzen benötigen sourceUrl, sourceType und verifiedAt."
+    });
+  }
+}).optional();
+
+const productLifecycleDependencySchema = z.object({
+  profilePersistence: productDecisionDepthClaimSchema.optional(),
+  settingsPersistence: productDecisionDepthClaimSchema.optional(),
+  subscriptionTransfer: productDecisionDepthClaimSchema.optional(),
+  serviceEndFallback: productDecisionDepthClaimSchema.optional()
+}).optional();
 
 const comparisonPrimitiveSchema = z.union([
   z.string(),
@@ -656,6 +888,20 @@ export const createProductContentSchema = (image: ImageFunction) =>
     gps: productGpsSchema,
 
     failureModes: productFailureModesSchema,
+
+    litterCompatibility: productLitterCompatibilitySchema,
+
+    multiPet: productMultiPetSchema,
+
+    dispensingPrecision: productDispensingPrecisionSchema,
+
+    repairability: productRepairabilitySchema,
+
+    dataPortability: productDataPortabilitySchema,
+
+    sensorLimits: productSensorLimitsSchema,
+
+    lifecycleDependency: productLifecycleDependencySchema,
 
     comparisonData:
       productComparisonDataSchema,

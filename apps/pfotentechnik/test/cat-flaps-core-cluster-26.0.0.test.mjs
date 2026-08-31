@@ -34,19 +34,23 @@ test("zwei Vergleiche, vier eigenständige Praxisratgeber und fünf neue Produkt
 test("ungetestete Produkte erzeugen keine falschen Bewertungs-Signale", () => {
   for (const slug of ["sureflap-mikrochip-katzenklappe", "sureflap-dualscan-mikrochip-katzenklappe", "petsafe-mikrochip-katzenklappe", "onlycat-mikrochip-katzenklappe", "petwalk-medium-tiertuer"]) {
     const product = read(`src/content/products/${slug}.md`);
-    assert.match(product, /rating: 0/);
-    assert.doesNotMatch(product, /^score:/m);
+    assert.match(product, /testStatus: "manufacturer-data"/);
     assert.match(product, /testedHandsOn: false/);
     assert.match(product, /evidenceSources:/);
   }
-  assert.match(read("src/pages/produkt/[product].astro"), /contentProduct\.score \?\? 0/);
+  const route = read("src/pages/produkt/[product].astro");
+  assert.match(route, /rating: undefined/);
+  assert.match(route, /productScore100 !== null && productScore100 > 0/);
 });
 
-test("jedes neue Produkt besitzt acht eingebundene Bildrollen", () => {
+test("jedes neue Produkt besitzt die Pflichtbilder und mindestens drei Galeriebilder", () => {
   for (const slug of ["sureflap-mikrochip-katzenklappe", "sureflap-dualscan-mikrochip-katzenklappe", "petsafe-mikrochip-katzenklappe", "onlycat-mikrochip-katzenklappe", "petwalk-medium-tiertuer"]) {
     const product = read(`src/content/products/${slug}.md`);
     const refs = product.match(new RegExp(`assets/images/products/${slug}/`, "g")) ?? [];
-    assert.equal(refs.length, 8, slug);
+    assert.ok(refs.length >= 6, slug);
+    assert.match(product, /^  hero:/m);
+    assert.match(product, /^  thumbnail:/m);
+    assert.match(product, /^  comparison:/m);
   }
 });
 

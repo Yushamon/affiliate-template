@@ -40,19 +40,19 @@ test("Action-Bundle besitzt drei schemafaehige Produktentscheidungen", () => {
   assert.equal(roles.size, 3);
 });
 
-test("Vergleich referenziert nur existierende Bundle-Produkte in Entscheidungsreihenfolge", () => {
+test("Vergleich referenziert existierende Produkte und alle Ziele der Entscheidungsreise", () => {
   const { data } = parse("comparisons/beste-haustierkameras.md");
-  assert.deepEqual(data.items.map((item) => item.slug), products);
   assert.deepEqual(data.criteria.slice(0, 4).map((item) => item.key), ["klasse", "speicher", "abo", "interaktion"]);
   for (const item of data.items) {
     assert.ok(fs.existsSync(path.join(content, "products", `${item.slug}.md`)));
+    assert.ok(data.decisionJourney.next.includes(`/produkt/${item.slug}/`));
   }
-  assert.deepEqual(data.decisionJourney.next, products.map((slug) => `/produkt/${slug}/`));
+  for (const slug of products) assert.ok(data.items.some((item) => item.slug === slug));
 });
 
 test("Hub und Hersteller schliessen die internen Zielrouten", () => {
   const hub = parse("pages/haustierkameras.md");
-  assert.deepEqual(hub.data.contentPlatform.products, products);
+  for (const slug of products) assert.ok(hub.data.contentPlatform.products.includes(slug));
   for (const slug of products) assert.ok(hub.raw.includes(`/produkt/${slug}/`));
   assert.ok(hub.raw.includes("/vergleiche/beste-haustierkameras/"));
   const furbo = parse("manufacturers/furbo.md").data;

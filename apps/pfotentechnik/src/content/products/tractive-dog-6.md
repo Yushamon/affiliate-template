@@ -309,7 +309,43 @@ gps:
   liveTracking: true
   virtualFence: true
   activityTracking: true
+  healthCapabilities:
+    activity: supported
+    sleep: supported
+    restingHeartRate: supported
+    restingRespiratoryRate: supported
+    scratching: supported
+    barking: supported
+    otherBehavior: ["Trennungsangst-Monitoring"]
+    healthAlerts: conditional
+    baselineDaysRequired: 7
+    medicalDeviceStatus: wellnessOnly
+    sourceUrl: "https://help.tractive.com/hc/en-us/articles/360011024119-What-health-features-does-Tractive-track"
+    sourceType: support
+    verifiedAt: "2026-08-31"
   attachmentType: clip
+dataPortability:
+  history:
+    status: conditional
+    detail: "Basic zeigt die letzten 24 Stunden; Premium bis zu 365 Tage Positionsverlauf."
+    sourceUrl: "https://help.tractive.com/hc/en-us/articles/360000321545-Checking-your-pet-s-location-history"
+    sourceType: support
+    verifiedAt: "2026-08-31"
+  historyRetentionDays: 365
+  export:
+    status: conditional
+    detail: "Positionsverlauf-Export ist Premium; EU-Nutzer können zusätzlich Tracker-Daten nach EU Data Act anfordern."
+    sourceUrl: "https://help.tractive.com/hc/en-us/articles/29331965045138-Download-your-Tractive-tracker-data"
+    sourceType: support
+    verifiedAt: "2026-08-31"
+  localDownload: { status: unknown, detail: "Ein dauerhaft appunabhängiges lokales Archivformat ist nicht ausgewiesen." }
+  postSubscriptionAccess: { status: unknown, detail: "Der Zugriff auf bereits gespeicherte Historie nach vollständigem Abo-Ende ist nicht eindeutig dokumentiert." }
+  deviceMigration:
+    status: supported
+    detail: "Bei Übertragung des Abos bleiben Tierprofil, Energiesparzonen, virtuelle Zäune, Heimadresse und Familienfreigabe erhalten; modellabhängige Funktionen können entfallen."
+    sourceUrl: "https://help.tractive.com/hc/es/articles/115004050745-C%C3%B3mo-transferir-su-suscripci%C3%B3n-a-otro-localizador"
+    sourceType: support
+    verifiedAt: "2026-08-31"
 faq:
   - question: Braucht der Tractive DOG 6 ein Abo?
     answer: >-

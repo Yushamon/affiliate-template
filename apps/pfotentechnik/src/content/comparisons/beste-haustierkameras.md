@@ -367,6 +367,16 @@ Die [Furbo 360° Katzenkamera](/produkt/furbo-360-katzenkamera/) ergänzt Feder-
 Die [PetTec Cam 360](/produkt/pettec-cam-360/) ergänzt den Vergleich um lokale microSD-Aufzeichnung. Pflichtabo, optionale Cloud und kostenlose Grundfunktionen stehen in getrennten Feldern. Unbekannte Angaben anderer Produkte werden nicht aufgefüllt. Lokale Speicherung reduziert Cloud-Abhängigkeit, macht App-Konto, Fernzugriff und Gerätesicherheit aber nicht automatisch datenschutzkonform.
 <!-- pt:pettec-local-storage:end -->
 
+### Lokale Aufnahme ist nicht lokaler Vollbetrieb
+
+| Modell | Aufnahme bei Internetausfall | LAN / Protokolle | Playback, Push und Fernzugriff |
+|---|---|---|---|
+| Reolink E1 Zoom 4K | microSD-Aufnahme bei Netzwerkausfall laut aktueller Herstellerseite belegt; Ereignis- und Daueraufnahme möglich | RTSP und ONVIF belegt; konkrete App-LAN-Nutzung während des Ausfalls nicht vollständig dokumentiert | Fernzugriff und Push fallen ohne Verbindung aus; Playback während des Ausfalls `unknown` |
+| PetTec Cam 360 | microSD ist belegt, Fortsetzung bei Internet- oder WLAN-Ausfall jedoch nicht separat dokumentiert | `unknown` | `unknown` |
+| Furbo 360° Katzenkamera | keine lokale Speicherung belegt | `unknown` | Live-/Nanny-Restfunktion bei Internet- oder Dienstausfall `unknown` |
+
+Für Reolink nennt der Hersteller mit 512 GB bei der dokumentierten Standardbitrate bis zu acht Tage kontinuierliche Aufnahme sowie bis zu 20 Benutzer und zwölf gleichzeitige Streams. Das ist eine modellbezogene Herstellerangabe der aktuellen 4K-Generation, keine allgemeine Aussage über ältere E1-Zoom-Varianten. Cloud-Aufbewahrung, Downloadpfad und Verhalten nach einem Cloud-Abo bleiben davon getrennt.
+
 ## Mehrere Kameras und Räume: vier Angaben getrennt prüfen
 
 Eine zweite Kamera ist nur dann als gemeinsames System belegt, wenn der Hersteller **Gerätezahl**, **gemeinsame App-Verwaltung**, **Multi-Camera-Ansicht** und **Tariflogik pro Kamera oder Konto** ausdrücklich dokumentiert. Diese vier Punkte sind in der aktuell vorhandenen Repository-Evidence für Furbo, PETLIBRO Scout, PetTec, Reolink und Enabot nicht vollständig belegt und bleiben deshalb `unknown`.

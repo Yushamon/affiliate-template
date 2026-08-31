@@ -253,6 +253,30 @@ comparisonFilters:
   petSize:
     - small
     - medium
+dispensingPrecision:
+  status: documented
+  portionUnit: portion
+  nominalPortionGrams: 10
+  nominalPortionMilliliters: 20
+  minimumPortionsPerDispense: 1
+  maximumPortionsPerDispense: 50
+  portionIsApproximate: true
+  kibbleDependency:
+    status: conditional
+    detail: "PETLIBRO nennt 2–10 mm als passenden Bereich; Form und Dichte bestimmen das tatsächliche Gewicht einer Volumenportion."
+    sourceUrl: "https://petlibro.com/pages/how-the-granary-automatic-feeder-works"
+    sourceType: manufacturer
+    verifiedAt: "2026-08-31"
+  fillLevelDependency: { status: unknown, detail: "Ein eigener Einfluss des Behälterfüllstands ist nicht belastbar dokumentiert." }
+  integratedScale: { status: unknown, detail: "Für diese Granary-Camera-Generation ist keine integrierte Waage belastbar belegt." }
+  calibrationSupported: { status: unknown, detail: "Eine geräteseitige Gram-Kalibrierung ist nicht dokumentiert." }
+  dualBowlDistribution:
+    mechanism: mechanicalSplit
+    adjustableSplitRatio: { status: unknown, detail: "Eine einstellbare Links-rechts-Verteilung ist nicht belegt." }
+    individualPortioning: { status: unavailable, detail: "Die Doppelschale trennt keine individuellen Tiere oder Portionen.", sourceUrl: "https://petlibro.com/pages/how-the-granary-automatic-feeder-works", sourceType: manufacturer, verifiedAt: "2026-08-31" }
+  sourceUrl: "https://petlibro.com/pages/how-the-granary-automatic-feeder-works"
+  sourceType: manufacturer
+  verifiedAt: "2026-08-31"
 faq:
   - question: Kann der PETLIBRO Granary Camera Feeder Nassfutter ausgeben?
     answer: Nein. Das Modell ist nur für Trockenfutter vorgesehen.

@@ -213,6 +213,7 @@ specs:
     value: 210 × 155 mm (B × H)
   - label: Gewicht
     value: Vom Hersteller nicht veröffentlicht
+multiPet: { sharedUse: supported, identificationMethods: [microchip, rfidTag], individualProfiles: supported, individualAccess: supported, individualFeeding: partial, individualUsageData: unavailable, similarPetLimitation: { status: noneDocumented, description: "Identifikation erfolgt nicht über Gewicht." }, evidenceSourceUrls: ["https://www.surepetcare.com/de-de/futterautomaten/mikrochip-futterautomat"] }
 faq:
   - question: Funktioniert der SureFeed mit dem implantierten Mikrochip?
     answer: >-

@@ -205,6 +205,8 @@ decisionJourney:
     - "/vergleiche/beste-automatische-katzentoiletten/"
   fallback:
     - "/automatische-katzentoiletten/"
+litterCompatibility: { bentoniteClumping: { status: conditional, condition: "Klumpende Bentonitstreu innerhalb Partikelgrenze." }, tofu: { status: conditional, condition: "Klumpend; Partikel bis 12 mm." }, plantBased: { status: unknown }, woodPellets: { status: unknown }, crystal: { status: unknown }, nonClumping: { status: unknown }, evidenceSourceUrls: ["https://www.petkit-eu.com/en-de/products/purobot-max-pro-2-automatic-cat-litter-box"] }
+multiPet: { sharedUse: supported, identificationMethods: [weight, cameraAi], individualProfiles: supported, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: supported, similarPetLimitation: { status: unknown, description: "Keine Mindestgewichtsdifferenz dokumentiert." }, evidenceSourceUrls: ["https://www.petkit-eu.com/en-de/products/purobot-max-pro-2-automatic-cat-litter-box"] }
 evidenceSources:
   - source: "PETKIT EU"
     url: "https://www.petkit-eu.com/en-de/products/purobot-max-pro-2-automatic-cat-litter-box"

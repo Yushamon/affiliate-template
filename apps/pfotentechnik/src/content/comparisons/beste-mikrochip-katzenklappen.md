@@ -182,4 +182,22 @@ Klare lokale Zugangsregeln sind meist robuster als unnötige Vernetzung. Bei meh
 
 „Mikrochipfähig“ bedeutet nicht „liest jeden Chip“. Erst Chipnummer beziehungsweise Standard prüfen, dann den Registrierungsprozess und erst danach einen vom Hersteller freigegebenen Halsbandanhänger als Fallback einplanen.
 
+### Welche Rechte gelten wirklich pro Katze?
+
+- **SureFlap Standard, PetSafe und Cat Mate 355W:** individueller Eintritt, aber keine belegten individuellen Ausgangsrechte; gemeinsame Sperre beziehungsweise gemeinsamer Timer bleiben Haushaltseinstellungen.
+- **SureFlap DualScan:** Ein- und Ausgangsrechte werden individuell per Chip oder Tag geprüft.
+- **SureFlap Connect:** individuelle Profile, Zugangsrechte und dokumentierte Nutzungsereignisse; App-/Hub-Abhängigkeiten bleiben eine getrennte Entscheidung.
+
+Mehrere gespeicherte Chips bedeuten zunächst Shared Use plus Identifikation. Erst eine dokumentierte Richtungsregel macht daraus individuellen Zugang in beide Richtungen.
+
+### Batteriewechsel, Speicher und Regeln
+
+| Modell | Gespeicherte Tiere | Was individuell ist | Batteriewechsel / Ersatzteil |
+|---|---:|---|---|
+| SureFlap Microchip | bis 32 | selektiver Eintritt; keine individuellen Ausgangszeiten | gelernte Chip-/Tag-Nummern bleiben gespeichert; Motor, Klappe, Frontframe, Drehverschluss und Catch Pad besitzen offizielle Austauschhilfen |
+| SureFlap DualScan | bis 32 | Ein- und Ausgangsrecht pro Tier; Sicherheitsmodus für eine unbeabsichtigt entlaufene Wohnungskatze | Chip-/Tag-Speicher bleibt laut Familien-Support erhalten; Erhalt jeder Detailregel nach langem stromlosen Zustand bleibt `unknown` |
+| Cat Mate Elite 355W | 9, nur 3 im Display | selektiver Eintritt; Timer gilt gemeinsam | Tier-IDs bleiben beim Batteriewechsel erhalten; Ersatzklappe Part 931 offiziell verfügbar |
+
+Eine Kapazität von 32 IDs ist damit keine Zusage für 32 Zeitpläne. Ebenso beantwortet ein Low-Battery-Licht nicht automatisch den Zustand bei vollständig leerer Batterie; ohne modellbezogene Dokumentation bleibt die finale Verriegelungsstellung `unknown`.
+
 Die breitere Orientierung bleibt beim [Katzenklappen-Hub](/katzenklappen/). Einbaufragen gehören in den [Einbauratgeber](/katzenklappe-einbauen/).
