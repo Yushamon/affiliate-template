@@ -6,7 +6,7 @@ const APP_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../
 const STATE_FILE = path.join(APP_ROOT, "reports", "seo-recovery", "opportunity-state.json");
 
 const defaultState = () => ({
-  schemaVersion: 1,
+  schemaVersion: 2,
   updatedAt: "",
   entries: {}
 });
@@ -39,13 +39,43 @@ const normalizeBaseline = (value = {}) => ({
   position: finite(value.position)
 });
 
+export const evaluateOpportunityMetrics = (baseline, current) => {
+  const impressionDelta = baseline.impressions
+    ? Number((((current.impressions - baseline.impressions) / baseline.impressions) * 100).toFixed(1))
+    : 0;
+  const clickDelta = current.clicks - baseline.clicks;
+  const ctrDelta = Number((current.ctr - baseline.ctr).toFixed(2));
+  const positionDelta = Number((baseline.position - current.position).toFixed(1));
+  const sufficientData = baseline.impressions >= 10 && current.impressions >= 10;
+  const deltas = { impressions: impressionDelta, clicks: clickDelta, ctr: ctrDelta, position: positionDelta };
+  if (!sufficientData) return {
+    status: "insufficient-data",
+    sufficientData,
+    deltas,
+    reason: "Für eine belastbare Bewertung fehlen vor oder nach der Änderung mindestens zehn Impressionen.",
+  };
+  const positive = Number(impressionDelta >= 20) + Number(clickDelta > 0) + Number(ctrDelta >= 0.5) + Number(positionDelta >= 1);
+  const negative = Number(impressionDelta <= -20) + Number(clickDelta < 0) + Number(ctrDelta <= -0.5) + Number(positionDelta <= -1);
+  const status = positive >= 2 ? "improved" : negative >= 2 ? "declined" : "neutral";
+  return {
+    status,
+    sufficientData,
+    deltas,
+    reason: status === "improved"
+      ? "Mindestens zwei belastbare positive Metriksignale liegen vor."
+      : status === "declined"
+        ? "Mindestens zwei belastbare negative Metriksignale liegen vor."
+        : "Die Metriken zeigen noch kein eindeutiges Ergebnis.",
+  };
+};
+
 export function readOpportunityState() {
   try {
     if (!fs.existsSync(STATE_FILE)) return defaultState();
 
     const parsed = JSON.parse(fs.readFileSync(STATE_FILE, "utf8"));
     return {
-      schemaVersion: 1,
+      schemaVersion: 2,
       updatedAt: String(parsed?.updatedAt || ""),
       entries:
         parsed?.entries && typeof parsed.entries === "object"
@@ -61,7 +91,7 @@ function writeOpportunityState(state) {
   fs.mkdirSync(path.dirname(STATE_FILE), { recursive: true });
 
   const next = {
-    schemaVersion: 1,
+    schemaVersion: 2,
     updatedAt: new Date().toISOString(),
     entries: state.entries || {}
   };
@@ -107,7 +137,9 @@ export async function markOpportunityOptimized(input = {}) {
     observeUntil: observeUntil.toISOString(),
     observeDays,
     baseline: normalizeBaseline(input.baseline),
-    note: String(input.note || "").trim().slice(0, 500)
+    note: String(input.note || "").trim().slice(0, 500),
+    measurements: [],
+    outcome: null,
   };
 
   writeOpportunityState(state);
@@ -116,6 +148,28 @@ export async function markOpportunityOptimized(input = {}) {
     ok: true,
     entry: state.entries[page]
   };
+}
+
+export async function evaluateOpportunityOutcome(input = {}, { now = new Date() } = {}) {
+  const page = normalizeOpportunityPage(input.page);
+  const state = readOpportunityState();
+  const entry = state.entries[page];
+  if (!entry) throw new Error("Opportunity wurde nicht gefunden.");
+  const observationEnd = new Date(entry.observeUntil).getTime();
+  if (!Number.isFinite(observationEnd) || now.getTime() < observationEnd) {
+    return { ok: true, pending: true, entry, reason: "Das Beobachtungsfenster ist noch nicht abgeschlossen." };
+  }
+  const current = normalizeBaseline(input.current);
+  const result = evaluateOpportunityMetrics(normalizeBaseline(entry.baseline), current);
+  const measuredAt = String(input.measuredAt || now.toISOString());
+  const measurement = { measuredAt, current, ...result };
+  const measurements = [
+    ...(Array.isArray(entry.measurements) ? entry.measurements.filter((item) => item?.measuredAt !== measuredAt) : []),
+    measurement,
+  ].slice(-20);
+  state.entries[page] = { ...entry, status: result.status, measurements, outcome: measurement, evaluatedAt: measuredAt };
+  writeOpportunityState(state);
+  return { ok: true, pending: false, entry: state.entries[page], outcome: measurement };
 }
 
 export async function reopenOpportunity(input = {}) {

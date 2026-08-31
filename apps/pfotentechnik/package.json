@@ -20,6 +20,7 @@
     "audit:suitability": "node scripts/audit-product-suitability.mjs",
     "audit:decision-data": "node scripts/audit-decision-data.mjs",
     "audit:decision-depth": "node scripts/audit-decision-depth-program-04.mjs",
+    "test:traffic-leverage": "node --test test/traffic-leverage-opportunities.test.mjs",
     "audit:recommendations": "node ../../scripts/audit-recommendation-engine-4.mjs",
     "indexnow:submit": "node scripts/submit-indexnow.mjs --changed",
     "indexnow:submit:all": "node scripts/submit-indexnow.mjs --all",

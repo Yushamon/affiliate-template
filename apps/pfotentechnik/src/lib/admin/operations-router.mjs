@@ -6,6 +6,7 @@ import {
   updateProductOperationsState
 } from "../price-intelligence/service.mjs";
 import {
+  evaluateOpportunityOutcome,
   getOpportunityState,
   markOpportunityOptimized,
   reopenOpportunity
@@ -80,6 +81,12 @@ export async function handleOperationsRoute({ request, response, requestUrl, ori
       assertJsonRequest(request);
       const body = await readJsonBody(request, 32_768);
       json(response, 200, await reopenOpportunity(body), origin);
+      return true;
+    }
+    if (request.method === "POST" && pathname === "/api/admin/seo/opportunities/evaluate") {
+      assertJsonRequest(request);
+      const body = await readJsonBody(request, 32_768);
+      json(response, 200, await evaluateOpportunityOutcome(body), origin);
       return true;
     }
 

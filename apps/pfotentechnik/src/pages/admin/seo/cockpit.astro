@@ -3,9 +3,11 @@ import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
 import { loadSeoDashboard } from "../../../lib/seo/loadDashboard";
 import { loadSeoRecovery } from "../../../lib/seo/loadRecovery";
 import { isOpportunityObserving, readOpportunityState } from "../../../lib/seo/opportunity-state.mjs";
+import { loadTrafficOpportunities } from "../../../lib/seo/traffic-opportunities.mjs";
 
 const payload = loadSeoDashboard();
 const recovery = loadSeoRecovery();
+const traffic = loadTrafficOpportunities();
 const opportunityServiceUrl = import.meta.env.PUBLIC_SEARCH_ADMIN_URL || "http://127.0.0.1:4178";
 const serializedOpportunityConfig = JSON.stringify({ serviceUrl: opportunityServiceUrl }).replaceAll("<", "\\u003c");
 const opportunityState = readOpportunityState();
@@ -28,9 +30,15 @@ const recoveryOpportunityRows = recovery.opportunities
   .slice(0, 15);
 const activeOpportunityCount = recovery.opportunities.filter((row) => !observingPages.has(row.page)).length;
 const recoveryOpportunityMap = new Map(recovery.opportunities.map((row) => [row.page, row]));
+const trafficRows = traffic.opportunities
+  .filter((row) => !observingPages.has(row.page) && !row.lowData)
+  .slice(0, 8);
+const trafficByPage = new Map<string, any>();
+for (const row of traffic.opportunities) if (!trafficByPage.has(row.page)) trafficByPage.set(row.page, row);
 const recoveryObservingRows = observingEntries.slice(0, 20).map((entry: any) => ({
   entry,
   current: recoveryOpportunityMap.get(entry.page),
+  traffic: trafficByPage.get(entry.page),
 }));
 const recoveryStatusLabel = {
   risk: "Risiko",
@@ -114,6 +122,44 @@ const recoveryStatusLabel = {
         <div class="seo-section-header"><div><h2>Search-Empfehlungen</h2></div></div>
         <div class="seo-list" data-recommendations></div>
       </article>
+    </section>
+
+    <section class="seo-panel seo-stack" data-traffic-opportunities>
+      <div class="seo-section-header">
+        <div>
+          <span class="seo-eyebrow">Traffic Leverage · {traffic.rangeKey || "keine Range"}</span>
+          <h2>Eine sinnvolle SEO-Arbeit jetzt</h2>
+          <p>Eine deduplizierte Opportunity verbindet nur vorhandene Google-, Recovery-, Intent-, Link- und Decision-Data-Signale.</p>
+        </div>
+        <span class="seo-muted">{traffic.summary.total} Chancen · {traffic.summary.lowData} Low-Data</span>
+      </div>
+      {!traffic.available ? (
+        <div class="seo-empty">Noch keine auswertbaren Search-Daten. Zuerst <code>npm run gsc:sync</code> ausführen.</div>
+      ) : (
+        <div class="seo-table-wrap">
+          <table class="seo-table">
+            <thead><tr><th>Priorität</th><th>Warum jetzt?</th><th>Konkreter nächster Schritt</th><th>Aktion</th></tr></thead>
+            <tbody>
+              {trafficRows.length ? trafficRows.map((row: any) => (
+                <tr>
+                  <td>
+                    <strong>{row.zone}</strong><br />
+                    <span class="seo-muted">Score {row.score} · {row.confidence}{row.lowData ? " · Low-Data" : ""}</span>
+                  </td>
+                  <td>
+                    <code>{row.page}</code>{row.query && <><br /><span>{row.query}</span></>}<br />
+                    <span class="seo-muted">{row.metrics.impressions} Impr. · {row.metrics.ctr.toFixed(2)} % CTR · Pos. {row.metrics.position.toFixed(1)}<br />{row.signals.join(" · ")}</span>
+                  </td>
+                  <td>{row.action}</td>
+                  <td>
+                    <button type="button" class="pt-button seo-button" data-opportunity-mark data-page={row.page} data-clicks={row.metrics.clicks} data-impressions={row.metrics.impressions} data-ctr={row.metrics.ctr} data-position={row.metrics.position}>Umsetzung markieren</button>
+                  </td>
+                </tr>
+              )) : <tr><td colspan="4">Keine belastbar priorisierbare Chance: Die vorhandenen Page-Query-Signale liegen unter der Low-Data-Grenze oder befinden sich im Beobachtungsfenster.</td></tr>}
+            </tbody>
+          </table>
+        </div>
+      )}
     </section>
 
 
@@ -258,7 +304,7 @@ const recoveryStatusLabel = {
               <tr><th>Seite</th><th>Bearbeitet</th><th>Baseline</th><th>Aktuelles Signal</th><th>Aktion</th></tr>
             </thead>
             <tbody>
-              {recoveryObservingRows.length ? recoveryObservingRows.map(({ entry, current }: any) => (
+              {recoveryObservingRows.length ? recoveryObservingRows.map(({ entry, current, traffic: currentTraffic }: any) => (
                 <tr>
                   <td><code>{entry.page}</code></td>
                   <td>
@@ -269,11 +315,17 @@ const recoveryStatusLabel = {
                     {entry.baseline?.impressions ?? 0} Impr. · Pos. {Number(entry.baseline?.position || 0).toFixed(1)}
                   </td>
                   <td>
-                    {current
-                      ? `${current.metrics.impressions} Impr. · Pos. ${current.metrics.position.toFixed(1)}`
+                    {currentTraffic
+                      ? `${currentTraffic.metrics.impressions} Impr. · Pos. ${currentTraffic.metrics.position.toFixed(1)}`
+                      : current
+                        ? `${current.metrics.impressions} Impr. · Pos. ${current.metrics.position.toFixed(1)}`
                       : "aktuell keine Opportunity"}
+                    {entry.outcome && <><br /><span class="seo-muted">{entry.outcome.status}: {entry.outcome.reason}</span></>}
                   </td>
                   <td>
+                    {currentTraffic && !isOpportunityObserving(entry, opportunityNow) && (
+                      <button type="button" class="pt-button seo-button" data-opportunity-evaluate data-page={entry.page} data-clicks={currentTraffic.metrics.clicks} data-impressions={currentTraffic.metrics.impressions} data-ctr={currentTraffic.metrics.ctr} data-position={currentTraffic.metrics.position}>Ergebnis messen</button>
+                    )}
                     <button
                       type="button"
                       class="pt-button seo-button"
@@ -480,6 +532,30 @@ const recoveryStatusLabel = {
 
         try {
           await postJson("/api/admin/seo/opportunities/reopen", { page });
+          window.location.reload();
+        } catch (error) {
+          button.disabled = false;
+          button.textContent = originalLabel;
+          window.alert(error instanceof Error ? error.message : String(error));
+        }
+      });
+    });
+
+    root.querySelectorAll<HTMLButtonElement>("[data-opportunity-evaluate]").forEach((button) => {
+      button.addEventListener("click", async () => {
+        const originalLabel = button.textContent || "Ergebnis messen";
+        button.disabled = true;
+        button.textContent = "Messe…";
+        try {
+          await postJson("/api/admin/seo/opportunities/evaluate", {
+            page: button.dataset.page || "",
+            current: {
+              clicks: Number(button.dataset.clicks || 0),
+              impressions: Number(button.dataset.impressions || 0),
+              ctr: Number(button.dataset.ctr || 0),
+              position: Number(button.dataset.position || 0),
+            },
+          });
           window.location.reload();
         } catch (error) {
           button.disabled = false;

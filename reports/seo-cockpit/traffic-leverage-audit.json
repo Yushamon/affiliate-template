@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-31T00:00:00.000Z",
+  "baseline": {
+    "branch": "main",
+    "head": "01755b311d2c16528618bbb9144c4aa409935a63",
+    "workingTree": "clean",
+    "gscGeneratedAt": "2026-08-28T09:03:13.658Z",
+    "recovery": { "opportunities": 38, "redirects": 33, "migrationWatch": 2 },
+    "demandProgram04": { "nodes": 33, "covered": 22, "partial": 11 }
+  },
+  "capabilities": [
+    { "id": "gsc-query-discovery", "status": "complete", "trafficValue": "very-high", "recommendation": "reuse" },
+    { "id": "gsc-page-discovery", "status": "complete", "trafficValue": "very-high", "recommendation": "reuse" },
+    { "id": "trends", "status": "partial", "trafficValue": "high", "recommendation": "compose-existing-comparison" },
+    { "id": "query-url-mapping", "status": "complete", "trafficValue": "very-high", "recommendation": "reuse" },
+    { "id": "intent-ownership", "status": "partial", "trafficValue": "very-high", "recommendation": "add-conservative-fit-signal" },
+    { "id": "cannibalization", "status": "partial", "trafficValue": "high", "recommendation": "review-signal-only" },
+    { "id": "internal-authority", "status": "partial", "trafficValue": "very-high", "recommendation": "compose-with-gsc" },
+    { "id": "anchor-governance", "status": "complete", "trafficValue": "medium", "recommendation": "reuse" },
+    { "id": "ctr-snippet", "status": "primitive", "trafficValue": "very-high", "recommendation": "strike-zone" },
+    { "id": "content-gaps", "status": "complete", "trafficValue": "high", "recommendation": "reuse" },
+    { "id": "topical-authority", "status": "complete", "trafficValue": "high", "recommendation": "reuse" },
+    { "id": "structured-decision-data", "status": "partial", "trafficValue": "high", "recommendation": "attach-readiness-evidence" },
+    { "id": "image-seo", "status": "complete", "trafficValue": "medium", "recommendation": "reuse" },
+    { "id": "indexation", "status": "partial", "trafficValue": "high", "recommendation": "attach-existing-signals" },
+    { "id": "freshness", "status": "partial", "trafficValue": "high", "recommendation": "attach-existing-signals" },
+    { "id": "opportunity-prioritization", "status": "duplicated", "trafficValue": "very-high", "recommendation": "composer" },
+    { "id": "work-item-lifecycle", "status": "complete", "trafficValue": "high", "recommendation": "preserve" },
+    { "id": "feedback-loop", "status": "primitive", "trafficValue": "very-high", "recommendation": "outcome-measurement" },
+    { "id": "outcome-measurement", "status": "missing", "trafficValue": "very-high", "recommendation": "add" },
+    { "id": "finding-deduplication", "status": "partial", "trafficValue": "very-high", "recommendation": "composer" }
+  ],
+  "selectedWorkPackages": [
+    { "id": "wp1", "name": "opportunity-composer", "reason": "canonical multi-signal opportunity and cross-system deduplication" },
+    { "id": "wp2", "name": "gsc-strike-zone", "reason": "ranking and low-data context for query-level chances" },
+    { "id": "wp3", "name": "outcome-feedback-loop", "reason": "measure post-change outcome after adequate window" },
+    { "id": "wp4", "name": "cockpit-integration", "reason": "prioritized action inside existing cockpit" }
+  ],
+  "rejected": [
+    "second GSC import", "second technical audit", "second work-item lifecycle", "automatic content edits", "automatic cannibalization claims", "invented traffic forecasts"
+  ]
+}
