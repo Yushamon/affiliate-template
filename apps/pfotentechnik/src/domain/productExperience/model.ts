@@ -6,7 +6,7 @@ import { uniqueTextItems } from "./contentLists.ts";
 import { calculateProductScore } from "../productScore.ts";
 import { buildDecisionFacts } from "./consequences";
 import { deriveProductOperations, isAutoRecommendationEligible } from "../../lib/product-operations/policy.mjs";
-import { resolveProductHeroMedia, resolveProductMedia } from "../comparison/mediaResolver.mjs";
+import { resolveProductHeroMedia, resolveProductMedia } from "../mediaResolver.mjs";
 
 const list = <T>(value: T[] | undefined | null): T[] => Array.isArray(value) ? value : [];
 const text = (value: unknown, fallback = ""): string => {

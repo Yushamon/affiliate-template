@@ -17,9 +17,9 @@ test("Legacy-Aliasse nutzen globale PfotenTechnik-Tokens", () => {
 });
 
 test("Statusflächen besitzen zentrale Dark-Mode-Tokens", () => {
-  assert.match(tokens, /--pt-color-success-soft:\s*#183b23/);
-  assert.match(tokens, /--pt-color-danger-soft:\s*#43201f/);
-  assert.match(tokens, /--pt-color-warning-soft:\s*#3b2d13/);
+  assert.match(tokens, /--pt-color-success-soft:\s*#153126/);
+  assert.match(tokens, /--pt-color-danger-soft:\s*#382023/);
+  assert.match(tokens, /--pt-color-warning-soft:\s*#332b1c/);
 });
 
 test("Product Experience verwendet keine eigene Farbpalette mehr", () => {

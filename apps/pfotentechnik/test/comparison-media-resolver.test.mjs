@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import { createRequire } from "node:module";
-import { resolveComparisonProductImage, resolveMediaSource } from "../src/domain/comparison/mediaResolver.mjs";
+import { resolveComparisonProductImage, resolveMediaSource } from "../src/domain/mediaResolver.mjs";
 
 const yaml = createRequire(import.meta.url)("js-yaml");
 const app = path.resolve(new URL("..", import.meta.url).pathname);

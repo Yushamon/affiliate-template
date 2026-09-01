@@ -1,5 +1,5 @@
 import type { PageEntry, ProductEntry, ComparisonEntry } from "../content/registry";
-import { resolveProductMedia } from "../comparison/mediaResolver.mjs";
+import { resolveProductMedia } from "../mediaResolver.mjs";
 import { toEditorialScore } from "@affiliate-core/utils/editorialScore";
 import { categoryEditorialConfig, isCategoryHubSlug } from "./categoryConfig";
 import {

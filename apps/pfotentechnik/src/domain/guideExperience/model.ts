@@ -1,6 +1,6 @@
 import type { AssembledContentPage } from "../contentPlatform";
 import type { ComparisonEntry, PageEntry, ProductEntry } from "../content/registry";
-import { resolveProductMedia } from "../comparison/mediaResolver.mjs";
+import { resolveProductMedia } from "../mediaResolver.mjs";
 import { getBestComparison } from "../recommendationLinks";
 import { toEditorialScore } from "@affiliate-core/utils/editorialScore";
 

@@ -27,9 +27,9 @@ const formattedUpdatedAt = updatedAt
   schemaType="webpage"
   includeBreadcrumbSchema={false}
 >
-  <div class="pt-legal-page">
+  <div class="pt-legal-page pt-reading-axis">
     <header class="pt-legal-header">
-      <p class="pt-legal-eyebrow">{projectConfig.projectName}</p>
+      <p class="pt-legal-eyebrow pt-eyebrow">{projectConfig.projectName}</p>
       <h1>{title}</h1>
       <p class="pt-legal-lead">{description}</p>
       {formattedUpdatedAt && (
@@ -39,7 +39,7 @@ const formattedUpdatedAt = updatedAt
       )}
     </header>
 
-    <article class="pt-legal-reading">
+    <article class="pt-legal-reading pt-reading-prose">
       <slot />
     </article>
   </div>
@@ -47,8 +47,6 @@ const formattedUpdatedAt = updatedAt
 
 <style is:global>
   .pt-legal-page {
-    width: min(100%, var(--pt-content-narrow));
-    margin-inline: auto;
     padding-block: clamp(2rem, 6vw, 5rem) clamp(4rem, 8vw, 7rem);
     color: var(--pt-theme-text-soft);
   }
@@ -60,11 +58,6 @@ const formattedUpdatedAt = updatedAt
 
   .pt-legal-eyebrow {
     margin: 0 0 0.75rem;
-    color: var(--pt-theme-accent-text);
-    font-size: var(--pt-font-size-xs);
-    font-weight: var(--pt-font-weight-bold);
-    letter-spacing: var(--pt-letter-spacing-label);
-    text-transform: uppercase;
   }
 
   .pt-legal-header h1 {

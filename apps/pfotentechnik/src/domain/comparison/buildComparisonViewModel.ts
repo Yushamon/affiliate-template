@@ -15,7 +15,7 @@ import { calculateProductScore } from "../productScore.ts";
 import type { ProductPriceInsight } from "../price/types";
 import { deriveProductOperations } from "../../lib/product-operations/policy.mjs";
 import { selectComparisonFinalists } from "./finalistSelection.mjs";
-import { resolveComparisonProductImage } from "./mediaResolver.mjs";
+import { resolveComparisonProductImage } from "../mediaResolver.mjs";
 
 type ComparisonEntry = CollectionEntry<"comparisons">;
 type ProductEntry = CollectionEntry<"products">;

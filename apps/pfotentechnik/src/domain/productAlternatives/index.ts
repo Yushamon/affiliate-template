@@ -2,7 +2,7 @@
 import type { CollectionEntry } from "astro:content";
 import type { AlternativeRecommendation } from "@affiliate-core/components/product/alternativeRecommendation.types";
 import { getFutterautomatenAlternatives } from "./categories/futterautomaten";
-import { resolveProductMedia } from "../comparison/mediaResolver.mjs";
+import { resolveProductMedia } from "../mediaResolver.mjs";
 
 export type ProductEntry = CollectionEntry<"products">;
 

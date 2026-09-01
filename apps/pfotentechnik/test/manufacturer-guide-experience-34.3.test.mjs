@@ -11,6 +11,9 @@ const manufacturerModel = read("src/domain/manufacturerExperience/model.ts");
 const guideRoute = read("src/pages/[slug].astro");
 const guideComponent = read("src/components/guide/GuideExperience.astro");
 const guideModel = read("src/domain/guideExperience/model.ts");
+const productMini = read("src/components/foundation/FoundationProductMini.astro");
+const disclosure = read("src/components/foundation/FoundationDisclosure.astro");
+const foundationContracts = read("src/styles/pfotentechnik-foundation-contracts.css");
 const pageSchema = read("src/content/schema/page.ts");
 
 test("Manufacturer 34.3 has one generic portfolio journey", () => {
@@ -18,7 +21,8 @@ test("Manufacturer 34.3 has one generic portfolio journey", () => {
   assert.match(manufacturerComponent, /Wo solltest du anfangen\?/);
   assert.match(manufacturerComponent, /Portfolio nach Aufgabe/);
   assert.match(manufacturerComponent, /Editorial unabhängig bleiben/);
-  assert.match(manufacturerComponent, /<ProductScore/);
+  assert.match(manufacturerComponent, /<FoundationProductMini/);
+  assert.match(productMini, /<ProductScore/);
   assert.match(manufacturerModel, /resolveProductMedia/);
   assert.doesNotMatch(`${manufacturerRoute}\n${manufacturerModel}\n${manufacturerComponent}`, /case\s+["'][a-z0-9-]+["']|switch\s*\(manufacturer/);
 });
@@ -52,16 +56,18 @@ test("Guide answers early, preserves long-form content and uses contextual disco
 
 test("Guide primary article is open, reader-facing and server-rendered", () => {
   assert.match(guideComponent, /<section id="guide-main" class="pt-guide__longform"/);
-  assert.match(guideComponent, /<article class="pt-guide__prose article-content">\s*<slot \/>/);
+  assert.match(guideComponent, /<article class="pt-guide__prose pt-reading-prose article-content">\s*<slot \/>/);
   assert.doesNotMatch(guideComponent, /<details[^>]*id="guide-main"|<details[^>]*>[\s\S]*?<slot \/>/);
   assert.doesNotMatch(guideComponent, /Vollständigen Ratgeber(?: mit Praxisdetails)? öffnen/i);
   assert.doesNotMatch(guideComponent, /Nur wenn es die Frage beantwortet|eingebetteter Katalog|serverseitig verfügbar/i);
   assert.match(guideComponent, /Passende Modelle für diesen Entscheidungsfall/);
-  assert.match(guideComponent, /<strong>Interessant, wenn:<\/strong> \{product\.role\}/);
+  assert.match(guideComponent, /<FoundationProductMini/);
+  assert.match(productMini, /<strong>Interessant, wenn:<\/strong>/);
   assert.match(guideRoute, /<AutoLinkContent[\s\S]*?<Content \/>[\s\S]*?<Fragment slot="after-content">/);
   assert.doesNotMatch(guideComponent, /<script|client:/);
   assert.equal((guideComponent.match(/<h1>/g) ?? []).length, 1);
-  assert.match(guideComponent, /<h2 id="guide-products-title">[\s\S]*?<h3><a href=\{product\.href\}>/);
+  assert.match(guideComponent, /<h2 id="guide-products-title">/);
+  assert.match(productMini, /<h3><a href=\{href\}>\{title\}<\/a><\/h3>/);
 });
 
 test("Guide media is optional and never replaced by a generic rendered hero", () => {
@@ -75,9 +81,12 @@ test("34.3 stays server-rendered, token-based and mobile-safe", () => {
     assert.doesNotMatch(source, /<script|client:/);
     assert.doesNotMatch(source, /!important/);
     assert.doesNotMatch(source, /#[0-9a-f]{3,8}\b/i);
-    assert.match(source, /focus-visible/);
   }
-  assert.match(guideComponent, /overflow-x: auto/);
+  assert.match(manufacturerComponent, /<FoundationDisclosure/);
+  assert.match(guideComponent, /<FoundationDisclosure/);
+  assert.match(disclosure, /<details class="pt-disclosure"/);
+  assert.match(foundationContracts, /\.pt-reading-prose :where\(table\)/);
+  assert.match(foundationContracts, /focus-visible/);
   assert.doesNotMatch(guideComponent, /<details id="guide-main"/);
   assert.match(manufacturerComponent, /Quellen und Datengrundlage/);
 });

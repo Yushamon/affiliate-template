@@ -17,10 +17,10 @@ const LAYOUT = fs.readFileSync(
 
 test("Dark Mode folgt zentral der Systempräferenz", () => {
   assert.match(TOKENS, /@media\s*\(prefers-color-scheme:\s*dark\)/);
-  assert.match(TOKENS, /:root:not\(\[data-theme="light"\]\)/);
-  assert.match(TOKENS, /--pt-color-surface:\s*#16221a/);
-  assert.match(TOKENS, /--pt-color-text:\s*#edf5ef/);
-  assert.match(TOKENS, /--pt-color-page:\s*#101a14/);
+  assert.match(TOKENS, /:root\[data-theme="light"\]/);
+  assert.match(TOKENS, /--pt-color-surface:\s*#101820/);
+  assert.match(TOKENS, /--pt-color-text:\s*#f3f5f4/);
+  assert.match(TOKENS, /--pt-color-page:\s*#091119/);
 });
 
 test("Aktuelles Layout setzt keinen Runtime-Dark-Selektor", () => {

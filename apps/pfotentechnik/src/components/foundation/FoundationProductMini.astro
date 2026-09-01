@@ -1,0 +1,69 @@
+---
+import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
+import ProductScore from "@affiliate-core/components/ProductScore.astro";
+
+interface Props {
+  href: string;
+  title: string;
+  manufacturer?: string;
+  image?: { src: any; alt?: string } | null;
+  rationale: string;
+  description?: string;
+  score?: number;
+  price?: string;
+  ctaLabel?: string;
+  scoreDescription?: string;
+}
+
+const {
+  href,
+  title,
+  manufacturer,
+  image,
+  rationale,
+  description,
+  score,
+  price,
+  ctaLabel = "Produktcheck lesen",
+  scoreDescription = "PfotenTechnik-Score",
+} = Astro.props;
+---
+
+<article class="pt-product-mini">
+  <a class="pt-product-mini__media pt-media" href={href} aria-label={`${title} ansehen`}>
+    {image ? (
+      <OptimizedImage
+        src={image.src}
+        alt={image.alt ?? title}
+        width={360}
+        height={270}
+        layout="constrained"
+        fit="contain"
+      />
+    ) : (
+      <span class="pt-media-fallback" role="img" aria-label="Produktbild nicht verfügbar">
+        Bild nicht verfügbar
+      </span>
+    )}
+  </a>
+
+  <div class="pt-product-mini__copy">
+    {manufacturer && <small class="pt-product-mini__maker">{manufacturer}</small>}
+    <h3><a href={href}>{title}</a></h3>
+    <p><strong>Interessant, wenn:</strong> {rationale}</p>
+    {description && <p class="pt-product-mini__description">{description}</p>}
+    <a class="pt-text-link" href={href}>{ctaLabel} <span aria-hidden="true">→</span></a>
+  </div>
+
+  <div class="pt-product-mini__meta">
+    {typeof score === "number" && score > 0 && (
+      <ProductScore
+        value={score}
+        scale={100}
+        variant="ring-compact"
+        description={scoreDescription}
+      />
+    )}
+    {price && <strong class="pt-product-mini__price">{price}</strong>}
+  </div>
+</article>

@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 import {
   isResolvedProductImage,
   resolveProductHeroMedia
-} from "../src/domain/comparison/mediaResolver.mjs";
+} from "../src/domain/mediaResolver.mjs";
 
 const directory = path.dirname(fileURLToPath(import.meta.url));
 const app = path.resolve(directory, "..");

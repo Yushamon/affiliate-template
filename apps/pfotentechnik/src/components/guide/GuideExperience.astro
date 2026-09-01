@@ -2,7 +2,8 @@
 import ArticleMeta from "@affiliate-core/components/ArticleMeta.astro";
 import TableOfContents from "@affiliate-core/components/TableOfContents.astro";
 import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
-import ProductScore from "@affiliate-core/components/ProductScore.astro";
+import FoundationDisclosure from "../foundation/FoundationDisclosure.astro";
+import FoundationProductMini from "../foundation/FoundationProductMini.astro";
 import type { GuideExperienceModel } from "../../domain/guideExperience/model";
 
 interface Props {
@@ -19,7 +20,7 @@ const { model, headings, author, publishedAt, updatedAt, readingTimeMinutes } = 
 <div class="pt-guide" data-guide-experience="34.3" data-guide-kind={model.kind} data-guide={model.slug}>
   <header class:list={["pt-guide__hero", { "pt-guide__hero--text": !model.heroImage }]}>
     <div class="pt-guide__hero-copy">
-      <p class="pt-guide__eyebrow">{model.eyebrow}</p>
+      <p class="pt-guide__eyebrow pt-eyebrow">{model.eyebrow}</p>
       <h1>{model.title}</h1>
       <p class="pt-guide__answer">{model.answer || model.description}</p>
       <ArticleMeta author={author} publishedAt={publishedAt} updatedAt={updatedAt} readingTimeMinutes={readingTimeMinutes} />
@@ -34,15 +35,15 @@ const { model, headings, author, publishedAt, updatedAt, readingTimeMinutes } = 
 
   {model.quickItems.length > 0 && (
     <section class="pt-guide__summary" aria-labelledby="guide-summary-title">
-      <header><p class="pt-guide__eyebrow">Direkte Orientierung</p><h2 id="guide-summary-title">{model.summaryTitle}</h2></header>
+      <header class="pt-section-header"><p class="pt-guide__eyebrow pt-eyebrow">Direkte Orientierung</p><h2 id="guide-summary-title">{model.summaryTitle}</h2></header>
       <ol>{model.quickItems.map((item, index) => <li><span>{String(index + 1).padStart(2, "0")}</span><p>{item}</p></li>)}</ol>
     </section>
   )}
 
   <section id="guide-main" class="pt-guide__longform" aria-label="Ratgeber">
-    <div class="pt-guide__reading">
+    <div class="pt-guide__reading pt-decision-axis">
       {headings.length > 1 && <aside class="pt-guide__toc"><TableOfContents headings={headings} /></aside>}
-      <article class="pt-guide__prose article-content">
+      <article class="pt-guide__prose pt-reading-prose article-content">
         <slot />
       </article>
     </div>
@@ -50,16 +51,18 @@ const { model, headings, author, publishedAt, updatedAt, readingTimeMinutes } = 
 
   {model.selectedProducts.length > 0 && (
     <section class="pt-guide__products" aria-labelledby="guide-products-title">
-      <header><p class="pt-guide__eyebrow">Passende Modelle</p><h2 id="guide-products-title">Passende Modelle für diesen Entscheidungsfall</h2></header>
-      <div>
+      <header class="pt-section-header"><p class="pt-guide__eyebrow pt-eyebrow">Passende Modelle</p><h2 id="guide-products-title">Passende Modelle für diesen Entscheidungsfall</h2></header>
+      <div class="pt-product-mini-list">
         {model.selectedProducts.map((product) => (
-          <article>
-            <a class="pt-guide__product-media" href={product.href} aria-label={`${product.title} ansehen`}>
-              {product.image ? <OptimizedImage src={product.image.src} alt={product.image.alt ?? product.title} width={280} height={210} layout="constrained" fit="contain" /> : <span role="img" aria-label="Produktbild nicht verfügbar">Bild nicht verfügbar</span>}
-            </a>
-            <div><small>{product.manufacturer}</small><h3><a href={product.href}>{product.title}</a></h3><p class="pt-guide__product-fit"><strong>Interessant, wenn:</strong> {product.role}</p><p class="pt-guide__product-note">{product.recommendation}</p><a href={product.href}>Produktcheck lesen <span aria-hidden="true">→</span></a></div>
-            <ProductScore value={product.score} scale={100} variant="ring-compact" description="PfotenTechnik-Score" />
-          </article>
+          <FoundationProductMini
+            href={product.href}
+            title={product.title}
+            manufacturer={product.manufacturer}
+            image={product.image}
+            rationale={product.role}
+            description={product.recommendation}
+            score={product.score}
+          />
         ))}
       </div>
     </section>
@@ -67,15 +70,16 @@ const { model, headings, author, publishedAt, updatedAt, readingTimeMinutes } = 
 
   {model.supportingBlocks.length > 0 && (
     <section class="pt-guide__depth" aria-labelledby="guide-depth-title">
-      <header><p class="pt-guide__eyebrow">Mehr zum Thema</p><h2 id="guide-depth-title">Zusätzliche Entscheidungshilfen</h2><p>Öffne die Punkte, bei denen du mehr Details brauchst.</p></header>
-      {model.supportingBlocks.map((block) => (
-        <details>
-          <summary>{block.title}</summary>
-          {block.text && <p>{block.text}</p>}
-          {block.items.length > 0 && <ul>{block.items.map((item) => <li>{item}</li>)}</ul>}
-          {block.cards.length > 0 && <dl>{block.cards.map((card) => <div><dt>{card.href ? <a href={card.href}>{card.title}</a> : card.title}</dt>{card.text && <dd>{card.text}</dd>}</div>)}</dl>}
-        </details>
-      ))}
+      <header class="pt-section-header"><p class="pt-guide__eyebrow pt-eyebrow">Mehr zum Thema</p><h2 id="guide-depth-title">Zusätzliche Entscheidungshilfen</h2><p>Öffne die Punkte, bei denen du mehr Details brauchst.</p></header>
+      <div class="pt-disclosure-list">
+        {model.supportingBlocks.map((block) => (
+          <FoundationDisclosure summary={block.title}>
+            {block.text && <p>{block.text}</p>}
+            {block.items.length > 0 && <ul>{block.items.map((item) => <li>{item}</li>)}</ul>}
+            {block.cards.length > 0 && <dl>{block.cards.map((card) => <div><dt>{card.href ? <a href={card.href}>{card.title}</a> : card.title}</dt>{card.text && <dd>{card.text}</dd>}</div>)}</dl>}
+          </FoundationDisclosure>
+        ))}
+      </div>
     </section>
   )}
 
@@ -84,7 +88,7 @@ const { model, headings, author, publishedAt, updatedAt, readingTimeMinutes } = 
 
   {model.nextSteps.length > 0 && (
     <section class="pt-guide__next" aria-labelledby="guide-next-title">
-      <header><p class="pt-guide__eyebrow">Nächste Schritte</p><h2 id="guide-next-title">Was ist jetzt der sinnvolle nächste Schritt?</h2><p>Nutze den Weg, der am besten zu deiner nächsten Frage passt.</p></header>
+      <header class="pt-section-header"><p class="pt-guide__eyebrow pt-eyebrow">Nächste Schritte</p><h2 id="guide-next-title">Was ist jetzt der sinnvolle nächste Schritt?</h2><p>Nutze den Weg, der am besten zu deiner nächsten Frage passt.</p></header>
       <nav aria-label="Kontextuelle nächste Schritte">
         {model.nextSteps.map((step, index) => (
           <a href={step.href}><span>{String(index + 1).padStart(2, "0")}</span><div><small>{step.eyebrow}</small><strong>{step.title}</strong><p>{step.text}</p></div><b>{step.label} <span aria-hidden="true">→</span></b></a>
@@ -97,7 +101,6 @@ const { model, headings, author, publishedAt, updatedAt, readingTimeMinutes } = 
 <style>
   .pt-guide { display: grid; gap: clamp(3.5rem, 8vw, 7rem); min-width: 0; padding-bottom: clamp(3rem, 7vw, 6rem); color: var(--pt-color-text); }
   .pt-guide * { box-sizing: border-box; }
-  .pt-guide__eyebrow { margin: 0; color: var(--pt-color-primary); font-size: .75rem; font-weight: 850; letter-spacing: .09em; text-transform: uppercase; }
   .pt-guide__hero { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(300px, .92fr); min-width: 0; overflow: hidden; border-block: 1px solid var(--pt-color-border); }
   .pt-guide__hero--text { grid-template-columns: minmax(0, 58rem); }
   .pt-guide__hero-copy { display: grid; align-content: center; gap: 1rem; min-width: 0; padding: clamp(2rem, 6vw, 5rem) clamp(0rem, 4vw, 3.5rem) clamp(2rem, 6vw, 5rem) 0; }
@@ -108,7 +111,6 @@ const { model, headings, author, publishedAt, updatedAt, readingTimeMinutes } = 
   .pt-guide__hero-media :global(picture), .pt-guide__hero-media :global(img) { display: block; width: 100%; height: 100%; }
   .pt-guide__hero-media :global(img) { object-fit: cover; }
   .pt-guide__summary { display: grid; grid-template-columns: minmax(12rem, .35fr) minmax(0, 1fr); gap: clamp(1.5rem, 5vw, 4rem); padding-block: clamp(1.5rem, 3vw, 2.5rem); border-block: 1px solid var(--pt-color-border); }
-  .pt-guide__summary h2, .pt-guide__products h2, .pt-guide__depth h2, .pt-guide__next h2 { margin: .4rem 0 0; font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.05; letter-spacing: -.04em; overflow-wrap: anywhere; text-wrap: balance; }
   .pt-guide__summary ol { display: grid; margin: 0; padding: 0; list-style: none; }
   .pt-guide__summary li { display: grid; grid-template-columns: 2.5rem minmax(0, 1fr); gap: 1rem; padding: .9rem 0; border-bottom: 1px solid var(--pt-color-border); }
   .pt-guide__summary li:first-child { padding-top: 0; }
@@ -116,19 +118,7 @@ const { model, headings, author, publishedAt, updatedAt, readingTimeMinutes } = 
   .pt-guide__summary li > span { color: var(--pt-color-primary); font-weight: 850; }
   .pt-guide__summary li p { margin: 0; line-height: 1.55; }
   .pt-guide__products, .pt-guide__depth, .pt-guide__next { display: grid; gap: 1.5rem; }
-  .pt-guide__products > header, .pt-guide__depth > header, .pt-guide__next > header { max-width: 58rem; }
-  .pt-guide__products > header > p:last-child, .pt-guide__depth > header > p:last-child, .pt-guide__next > header > p:last-child { max-width: 68ch; margin: .7rem 0 0; color: var(--pt-color-text-muted); line-height: 1.6; }
-  .pt-guide__products > div { display: grid; border-top: 1px solid var(--pt-color-border); }
-  .pt-guide__products article { display: grid; grid-template-columns: 8rem minmax(0, 1fr) auto; gap: 1.25rem; align-items: center; min-width: 0; padding: 1.1rem 0; border-bottom: 1px solid var(--pt-color-border); }
-  .pt-guide__product-media { display: grid; width: 8rem; height: 6rem; place-items: center; overflow: hidden; background: var(--pt-color-surface-soft); }
-  .pt-guide__product-media :global(picture), .pt-guide__product-media :global(img) { display: block; width: 100%; height: 100%; }
-  .pt-guide__product-media :global(img) { object-fit: contain; }
-  .pt-guide__products article > div { min-width: 0; }
-  .pt-guide__products small, .pt-guide__next small { color: var(--pt-color-text-muted); font-size: .72rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
-  .pt-guide__products h3 { margin: .3rem 0; font-size: 1.2rem; }
-  .pt-guide__products h3 a { color: inherit; text-decoration: none; }
-  .pt-guide__products article p { max-width: 62ch; margin: 0 0 .5rem; color: var(--pt-color-text-muted); line-height: 1.5; }
-  .pt-guide__products article div > a { color: var(--pt-color-primary); font-weight: 800; }
+  .pt-guide__next small { color: var(--pt-color-text-muted); font-size: .72rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
   .pt-guide__longform { min-width: 0; padding-top: clamp(2rem, 5vw, 4rem); border-top: 1px solid var(--pt-color-border); }
   .pt-guide__reading { display: grid; grid-template-columns: minmax(12rem, 17rem) minmax(0, 48rem); gap: clamp(2rem, 6vw, 5rem); align-items: start; min-width: 0; }
   .pt-guide__toc { position: sticky; top: 6rem; min-width: 0; }
@@ -140,14 +130,7 @@ const { model, headings, author, publishedAt, updatedAt, readingTimeMinutes } = 
   .pt-guide__prose :global(p), .pt-guide__prose :global(ul), .pt-guide__prose :global(ol) { max-width: 72ch; }
   .pt-guide__prose :global(a) { color: var(--pt-color-primary); text-underline-offset: .18em; }
   .pt-guide__prose :global(img) { display: block; max-width: 100%; height: auto; margin-block: 1.5rem; background: var(--pt-color-surface-soft); }
-  .pt-guide__prose :global(table) { display: block; width: 100%; max-width: 100%; margin-block: 1.5rem; overflow-x: auto; border-collapse: collapse; overscroll-behavior-inline: contain; }
-  .pt-guide__prose :global(th), .pt-guide__prose :global(td) { min-width: 8rem; padding: .75rem; border: 1px solid var(--pt-color-border); text-align: left; vertical-align: top; }
-  .pt-guide__prose :global(th) { color: var(--pt-color-text); background: var(--pt-color-surface-soft); }
   .pt-guide__prose :global(details) { border-block: 1px solid var(--pt-color-border); }
-  .pt-guide__depth details { border-top: 1px solid var(--pt-color-border); }
-  .pt-guide__depth details:last-child { border-bottom: 1px solid var(--pt-color-border); }
-  .pt-guide__depth summary { padding: 1.05rem 0; cursor: pointer; font-weight: 850; }
-  .pt-guide__depth details > :not(summary) { max-width: 72ch; }
   .pt-guide__depth dl { margin: 0 0 1.2rem; }
   .pt-guide__depth dl div { display: grid; grid-template-columns: minmax(10rem, .35fr) minmax(0, 1fr); gap: 1rem; padding: .8rem 0; border-top: 1px solid var(--pt-color-border); }
   .pt-guide__depth dt { font-weight: 800; }
@@ -159,7 +142,6 @@ const { model, headings, author, publishedAt, updatedAt, readingTimeMinutes } = 
   .pt-guide__next nav strong { font-size: 1.12rem; }
   .pt-guide__next nav p { margin: 0; color: var(--pt-color-text-muted); line-height: 1.5; }
   .pt-guide__next nav b { color: var(--pt-color-primary); font-size: .9rem; white-space: nowrap; }
-  a:focus-visible, summary:focus-visible { outline: 3px solid var(--pt-color-primary); outline-offset: 4px; }
   @media (max-width: 1100px) {
     .pt-guide__hero { grid-template-columns: 1fr; }
     .pt-guide__hero-copy { padding-right: 0; }
@@ -170,10 +152,6 @@ const { model, headings, author, publishedAt, updatedAt, readingTimeMinutes } = 
   @media (max-width: 600px) {
     .pt-guide { gap: 3.5rem; }
     .pt-guide__summary { grid-template-columns: 1fr; }
-    .pt-guide__products article { grid-template-columns: 6rem minmax(0, 1fr); gap: .9rem; }
-    .pt-guide__product-media { width: 6rem; height: 5rem; }
-    .pt-guide__products article > :global(.pt-score) { grid-column: 1 / -1; }
-    .pt-guide__products article .pt-guide__product-note { display: none; }
     .pt-guide__next nav > a { grid-template-columns: 2rem minmax(0, 1fr); }
     .pt-guide__next nav b { grid-column: 2; white-space: normal; }
     .pt-guide__depth dl div { grid-template-columns: 1fr; gap: .4rem; }

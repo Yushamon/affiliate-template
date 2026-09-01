@@ -1,5 +1,5 @@
 import type { ComparisonEntry, ManufacturerEntry, ProductEntry } from "../content/registry";
-import { resolveProductMedia } from "../comparison/mediaResolver.mjs";
+import { resolveProductMedia } from "../mediaResolver.mjs";
 import { toEditorialScore } from "@affiliate-core/utils/editorialScore";
 
 const priceFormatter = new Intl.NumberFormat("de-DE", {

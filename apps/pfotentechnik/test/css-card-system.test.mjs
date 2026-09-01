@@ -8,7 +8,6 @@ const APP = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const styles = path.join(APP, "src", "styles");
 const legacyFile = path.join(styles, "pfotentechnik-design-system.css");
 const componentsIndex = path.join(styles, "components", "index.css");
-const buttonsFile = path.join(styles, "components", "buttons.css");
 const cardsFile = path.join(styles, "components", "cards.css");
 
 const selectors = [
@@ -17,10 +16,10 @@ const selectors = [
   ":where(.pt-category-card, .pt-value-card, .pt-product-card, .product-card, .comparison-card, .guide-card):hover"
 ];
 
-test("Cards werden nach Buttons eingebunden", () => {
+test("Cards werden im Komponenten-Layer eingebunden", () => {
   const index = fs.readFileSync(componentsIndex, "utf8");
-  assert.match(index, /@import "\.\/buttons\.css";[\s\S]*@import "\.\/cards\.css";/);
-  assert.ok(fs.existsSync(buttonsFile));
+  assert.match(index, /@import "\.\/cards\.css";/);
+  assert.doesNotMatch(index, /buttons\.css/);
   assert.ok(fs.existsSync(cardsFile));
 });
 

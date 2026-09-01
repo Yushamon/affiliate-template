@@ -1,6 +1,7 @@
 ---
 import type { ProductExperienceModel } from "../../domain/productExperience/model";
 import { uniqueTextItems } from "../../domain/productExperience/contentLists";
+import FoundationDisclosure from "../foundation/FoundationDisclosure.astro";
 
 interface Props {
   model: ProductExperienceModel;
@@ -43,18 +44,21 @@ const cons = uniqueTextItems(model.cons, { exclude: model.notFor, limit: 6 });
   </aside>
 
   {model.specs.length > 0 && (
-    <details class="details__specs">
-      <summary>Alle technischen Daten</summary>
-      <dl>
-        {model.specs.map((item) => <div><dt>{item.label}</dt><dd>{item.value}</dd></div>)}
-      </dl>
-    </details>
+    <section class="details__specs">
+      <FoundationDisclosure summary="Alle technischen Daten">
+        <dl>
+          {model.specs.map((item) => <div><dt>{item.label}</dt><dd>{item.value}</dd></div>)}
+        </dl>
+      </FoundationDisclosure>
+    </section>
   )}
 
   {model.faq.length > 0 && (
     <section class="details__faq" aria-labelledby="product-faq-title">
       <h2 id="product-faq-title">Häufige Kauffragen</h2>
-      {model.faq.map((item) => <details><summary>{item.question}</summary><p>{item.answer}</p></details>)}
+      <div class="pt-disclosure-list">
+        {model.faq.map((item) => <FoundationDisclosure summary={item.question}><p>{item.answer}</p></FoundationDisclosure>)}
+      </div>
     </section>
   )}
 </section>
@@ -144,12 +148,6 @@ const cons = uniqueTextItems(model.cons, { exclude: model.notFor, limit: 6 });
     margin: 0;
     color: var(--px2-muted);
     line-height: 1.55;
-  }
-
-  .details__specs > summary,
-  .details__faq details > summary {
-    cursor: pointer;
-    font-weight: 850;
   }
 
   .details__specs dl {

@@ -80,48 +80,9 @@
 [data-product-page] [data-product-experience="2.0"] :is( h1, h2, h3, h4, strong, legend, dt ) { color: var(--px2-text) !important; }
 [data-product-page] [data-product-experience="2.0"] :is( p, li, dd, small, figcaption, label ) { color: var(--px2-muted); }
 [data-product-page] [data-product-experience="2.0"] :is( .decision__header > span, .alternatives > header > span, .trust > header > span, .timeline > header > span, .price-box__eyebrow ) { color: var(--px2-green-strong) !important; }
-:root { --pt-cta-primary-bg: var(--pt-theme-accent); --pt-cta-primary-bg-hover: var(--pt-theme-accent-hover); --pt-cta-primary-text: var(--pt-theme-text-inverse); --pt-cta-secondary-bg: var(--pt-theme-surface); --pt-cta-secondary-bg-hover: var(--pt-theme-accent-soft); --pt-cta-secondary-text: var(--pt-theme-accent-text); }
-.pt-button-primary, .button-primary, .cta-button, .affiliate-button, .primary-cta, .header-advisor-link[data-pt-purchase-advice="desktop"], .main-nav-v2 [data-pt-purchase-advice="nav"], .pt-nav-advisor-cta, header a[href="/#kaufberatung"], header a[href="#kaufberatung"], nav a[href="/#kaufberatung"], nav a[href="#kaufberatung"], [data-product-experience="2.0"] .px2-price__cta:not(.is-disabled) { border-color: var(--pt-cta-primary-bg) !important; background: var(--pt-cta-primary-bg) !important; color: var(--pt-cta-primary-text) !important; -webkit-text-fill-color: var(--pt-cta-primary-text) !important; box-shadow: 0 12px 26px color-mix(
-    in srgb,
-    var(--pt-cta-primary-bg) 20%,
-    transparent
-  ) !important; }
-.pt-button-primary:hover, .button-primary:hover, .cta-button:hover, .affiliate-button:hover, .primary-cta:hover, .header-advisor-link[data-pt-purchase-advice="desktop"]:hover, .main-nav-v2 [data-pt-purchase-advice="nav"]:hover, .pt-nav-advisor-cta:hover, header a[href="/#kaufberatung"]:hover, header a[href="#kaufberatung"]:hover, nav a[href="/#kaufberatung"]:hover, nav a[href="#kaufberatung"]:hover, [data-product-experience="2.0"] .px2-price__cta:not(.is-disabled):hover { border-color: var(--pt-cta-primary-bg-hover) !important; background: var(--pt-cta-primary-bg-hover) !important; color: var(--pt-cta-primary-text) !important; -webkit-text-fill-color: var(--pt-cta-primary-text) !important; }
 [data-product-experience="2.0"] .alternatives a, .premium-v3--pfotentechnik .premium-v3-product-cta { border: 1px solid var(--pt-cta-primary-bg) !important; background: var(--pt-cta-secondary-bg) !important; color: var(--pt-cta-secondary-text) !important; -webkit-text-fill-color: var(--pt-cta-secondary-text) !important; box-shadow: none !important; }
 [data-product-experience="2.0"] .alternatives a:hover, .premium-v3--pfotentechnik .premium-v3-product-cta:hover { background: var(--pt-cta-secondary-bg-hover) !important; color: var(--pt-cta-secondary-text) !important; -webkit-text-fill-color: var(--pt-cta-secondary-text) !important; }
-:root { --pt-cta-primary-bg: var(--pt-theme-accent, #1f8f55); --pt-cta-primary-hover: var(--pt-theme-accent-hover, #167548); --pt-cta-primary-text: var(--pt-theme-text-inverse, #ffffff); --pt-cta-secondary-bg: var(--pt-theme-surface, #ffffff); --pt-cta-secondary-hover: var(--pt-theme-surface-2, #f1f6f3); --pt-cta-secondary-text: var(--pt-theme-accent-text, #166534); --pt-cta-text: var(--pt-theme-text, #0f172a); --pt-cta-muted: var(--pt-theme-text-soft, #475569); --pt-cta-border: color-mix(
-    in srgb,
-    var(--pt-cta-primary-bg) 28%,
-    var(--pt-theme-border, rgba(15, 23, 42, 0.14))
-  ); --pt-cta-focus: color-mix(
-    in srgb,
-    var(--pt-cta-primary-bg) 54%,
-    transparent
-  ); --pt-cta-shadow: 0 9px 22px color-mix(
-    in srgb,
-    var(--pt-cta-primary-bg) 16%,
-    transparent
-  ); --pt-cta-radius: 15px; --pt-cta-height: 52px; }
-:is( .pt-button, .ui-button, .ui-callout a, .pt-advisor-cta a, .pt-health-bridge > a, .pt-money-cta-actions a, .money-page-intent-actions a, [data-product-experience="2.0"] .px2-price__cta, [data-product-experience="2.0"] .px2-hero__compare, .header-advisor-link[data-pt-purchase-advice="desktop"], .main-nav-v2 [data-pt-purchase-advice="nav"], .pt-nav-advisor-cta ) { display: inline-flex !important; min-width: 0; min-height: var(--pt-cta-height) !important; align-items: center; justify-content: center; gap: 0.55rem; padding: 0.82rem 1.15rem !important; border: 1px solid transparent; border-radius: var(--pt-cta-radius) !important; font-size: 1rem; font-weight: 820 !important; line-height: 1.2; letter-spacing: -0.015em; text-align: center; text-decoration: none !important; text-wrap: balance; touch-action: manipulation; transition: background-color 150ms ease,
-    border-color 150ms ease,
-    color 150ms ease,
-    box-shadow 150ms ease,
-    transform 150ms ease; }
-:is( .pt-button-primary, .ui-button-primary, .ui-callout a, .pt-advisor-cta a, .pt-health-bridge > a, .pt-money-cta-primary, .money-page-intent-primary, [data-product-experience="2.0"] .px2-price__cta:not(.is-disabled), .header-advisor-link[data-pt-purchase-advice="desktop"], .main-nav-v2 [data-pt-purchase-advice="nav"], .pt-nav-advisor-cta ) { border-color: var(--pt-cta-primary-bg) !important; color: var(--pt-cta-primary-text) !important; background: var(--pt-cta-primary-bg) !important; -webkit-text-fill-color: var(--pt-cta-primary-text) !important; box-shadow: var(--pt-cta-shadow) !important; }
-:is( .pt-button-secondary, .ui-button-secondary, .pt-money-cta-secondary, .money-page-intent-secondary, [data-product-experience="2.0"] .px2-hero__compare ) { border-color: var(--pt-cta-border) !important; color: var(--pt-cta-secondary-text) !important; background: var(--pt-cta-secondary-bg) !important; -webkit-text-fill-color: var(--pt-cta-secondary-text) !important; box-shadow: none !important; }
 [data-product-experience="2.0"] .px2-price__cta.is-disabled { border-color: var(--pt-theme-border, rgba(15, 23, 42, 0.14)) !important; color: var(--pt-cta-muted) !important; background: var(--pt-theme-surface-2, #f1f5f9) !important; -webkit-text-fill-color: var(--pt-cta-muted) !important; box-shadow: none !important; }
-:is( .pt-button-primary, .ui-button-primary, .ui-callout a, .pt-advisor-cta a, .pt-health-bridge > a, .pt-money-cta-primary, .money-page-intent-primary, [data-product-experience="2.0"] .px2-price__cta:not(.is-disabled), .header-advisor-link[data-pt-purchase-advice="desktop"], .main-nav-v2 [data-pt-purchase-advice="nav"], .pt-nav-advisor-cta ):hover { border-color: var(--pt-cta-primary-hover) !important; color: var(--pt-cta-primary-text) !important; background: var(--pt-cta-primary-hover) !important; -webkit-text-fill-color: var(--pt-cta-primary-text) !important; box-shadow: 0 11px 26px color-mix(
-    in srgb,
-    var(--pt-cta-primary-bg) 21%,
-    transparent
-  ) !important; }
-:is( .pt-button-secondary, .ui-button-secondary, .pt-money-cta-secondary, .money-page-intent-secondary, [data-product-experience="2.0"] .px2-hero__compare ):hover { border-color: color-mix(
-    in srgb,
-    var(--pt-cta-primary-bg) 46%,
-    var(--pt-theme-border, rgba(15, 23, 42, 0.14))
-  ) !important; color: var(--pt-cta-secondary-text) !important; background: var(--pt-cta-secondary-hover) !important; -webkit-text-fill-color: var(--pt-cta-secondary-text) !important; }
-:is( .pt-button, .ui-button, .ui-callout a, .pt-advisor-cta a, .pt-health-bridge > a, .pt-money-cta-actions a, .money-page-intent-actions a, [data-product-experience="2.0"] .px2-price__cta, [data-product-experience="2.0"] .px2-hero__compare, .header-advisor-link[data-pt-purchase-advice="desktop"], .main-nav-v2 [data-pt-purchase-advice="nav"], .pt-nav-advisor-cta ):active { transform: translateY(1px); box-shadow: none !important; }
-:is( .pt-button, .ui-button, .ui-callout a, .pt-advisor-cta a, .pt-health-bridge > a, .pt-money-cta-actions a, .money-page-intent-actions a, [data-product-experience="2.0"] .px2-price__cta, [data-product-experience="2.0"] .px2-hero__compare, .header-advisor-link[data-pt-purchase-advice="desktop"], .main-nav-v2 [data-pt-purchase-advice="nav"], .pt-nav-advisor-cta ):focus-visible { outline: 3px solid var(--pt-cta-focus) !important; outline-offset: 3px !important; }
 .money-page-intent-entry { gap: clamp(1rem, 3vw, 1.5rem) !important; padding: clamp(1.15rem, 3vw, 1.65rem) !important; border-color: var(--pt-theme-border, rgba(15, 23, 42, 0.14)) !important; border-radius: 22px !important; background: var(--pt-theme-surface, #ffffff) !important; box-shadow: var(--pt-theme-shadow-xs, 0 10px 28px rgba(15, 23, 42, 0.07)) !important; }
 .money-page-intent-entry > div:first-child { min-width: 0; }
 .money-page-intent-actions { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.7rem !important; margin-top: 1.1rem !important; }

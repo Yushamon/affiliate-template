@@ -152,154 +152,154 @@
   --pt-color-link: var(--pt-color-accent-text);
 }
 
-/* Design Foundation 33.0.0 — opt-in semantic token layer.
- * Legacy tokens above remain authoritative for existing page types. */
+/* Foundation 33 compatibility names are aliases of the active token contract. */
+:root {
+  --pt-color-primary: var(--pt-color-accent-text);
+  --pt-color-surface-subtle: var(--pt-color-surface-soft);
+  --pt-color-warning: var(--pt-color-warning-500);
+  --pt-color-danger: var(--pt-color-danger-600);
+  --pt-color-success: var(--pt-color-success-600);
+}
+
 [data-pt-foundation] {
-  color-scheme: light;
+  color-scheme: inherit;
 
-  /* Primitive */
-  --pt33-mineral-0: #ffffff;
-  --pt33-mineral-50: #f5f6f3;
-  --pt33-mineral-100: #ecefeb;
-  --pt33-mineral-200: #dde1dc;
-  --pt33-mineral-300: #c7cdc8;
-  --pt33-graphite-950: #171a18;
-  --pt33-graphite-700: #545c57;
-  --pt33-graphite-500: #747c77;
-  --pt33-botanical-700: #176b45;
-  --pt33-botanical-800: #105638;
-  --pt33-success-700: #1d7547;
-  --pt33-blue-700: #175ea8;
-  --pt33-amber-800: #8a4b00;
-  --pt33-red-700: #ad2f2f;
+  /* 33.x names remain available, but no longer own an independent palette. */
+  --pt33-mineral-0: var(--pt-color-surface);
+  --pt33-mineral-50: var(--pt-color-page);
+  --pt33-mineral-100: var(--pt-color-surface-soft);
+  --pt33-mineral-200: var(--pt-color-border);
+  --pt33-mineral-300: var(--pt-color-border-strong);
+  --pt33-graphite-950: var(--pt-color-text);
+  --pt33-graphite-700: var(--pt-color-text-muted);
+  --pt33-graphite-500: var(--pt-color-text-muted);
+  --pt33-botanical-700: var(--pt-color-action-bg);
+  --pt33-botanical-800: var(--pt-color-action-bg-hover);
+  --pt33-success-700: var(--pt-color-success-600);
+  --pt33-blue-700: var(--pt-color-accent-600);
+  --pt33-amber-800: var(--pt-color-warning-500);
+  --pt33-red-700: var(--pt-color-danger-600);
 
-  /* Semantic */
-  --pt33-color-page: var(--pt33-mineral-50);
-  --pt33-color-surface: var(--pt33-mineral-0);
-  --pt33-color-surface-subtle: var(--pt33-mineral-100);
-  --pt33-color-surface-raised: var(--pt33-mineral-0);
-  --pt33-color-text-primary: var(--pt33-graphite-950);
-  --pt33-color-text-secondary: var(--pt33-graphite-700);
-  --pt33-color-text-tertiary: var(--pt33-graphite-500);
-  --pt33-color-border-subtle: var(--pt33-mineral-200);
-  --pt33-color-border-default: var(--pt33-mineral-300);
-  --pt33-color-action-primary: var(--pt33-botanical-700);
-  --pt33-color-action-primary-hover: var(--pt33-botanical-800);
-  --pt33-color-action-on-primary: var(--pt33-mineral-0);
-  --pt33-color-status-positive: var(--pt33-success-700);
-  --pt33-color-status-warning: var(--pt33-amber-800);
-  --pt33-color-status-critical: var(--pt33-red-700);
-  --pt33-color-status-info: var(--pt33-blue-700);
-  --pt33-color-status-unknown: var(--pt33-graphite-700);
-  --pt33-color-score-excellent: #237952;
-  --pt33-color-score-good: #5a800e;
-  --pt33-color-score-solid: #9a6900;
-  --pt33-color-score-limited: #b65313;
-  --pt33-color-score-poor: #b63737;
-  --pt33-color-evidence-verified: var(--pt33-blue-700);
-  --pt33-color-evidence-medium: var(--pt33-amber-800);
-  --pt33-color-evidence-low: var(--pt33-graphite-700);
+  --pt33-color-page: var(--pt-color-page);
+  --pt33-color-surface: var(--pt-color-surface);
+  --pt33-color-surface-subtle: var(--pt-color-surface-soft);
+  --pt33-color-surface-raised: var(--pt-color-surface-raised);
+  --pt33-color-text-primary: var(--pt-color-text);
+  --pt33-color-text-secondary: var(--pt-color-text-muted);
+  --pt33-color-text-tertiary: var(--pt-color-text-muted);
+  --pt33-color-border-subtle: var(--pt-color-border);
+  --pt33-color-border-default: var(--pt-color-border-strong);
+  --pt33-color-action-primary: var(--pt-color-action-bg);
+  --pt33-color-action-primary-hover: var(--pt-color-action-bg-hover);
+  --pt33-color-action-on-primary: var(--pt-color-action-text);
+  --pt33-color-status-positive: var(--pt-color-success-600);
+  --pt33-color-status-warning: var(--pt-color-warning-500);
+  --pt33-color-status-critical: var(--pt-color-danger-600);
+  --pt33-color-status-info: var(--pt-color-accent-600);
+  --pt33-color-status-unknown: var(--pt-color-text-muted);
+  --pt33-color-score-excellent: var(--pt-color-success-600);
+  --pt33-color-score-good: var(--pt-color-brand-500);
+  --pt33-color-score-solid: var(--pt-color-warning-500);
+  --pt33-color-score-limited: var(--pt-color-warning-500);
+  --pt33-color-score-poor: var(--pt-color-danger-600);
+  --pt33-color-evidence-verified: var(--pt-color-accent-600);
+  --pt33-color-evidence-medium: var(--pt-color-warning-500);
+  --pt33-color-evidence-low: var(--pt-color-text-muted);
 
-  /* Type, layout, motion and component aliases */
-  --pt33-font-display: clamp(2.5rem, 5vw, 4.5rem);
-  --pt33-font-hero: clamp(2.125rem, 4vw, 3.5rem);
-  --pt33-font-heading: clamp(1.75rem, 3vw, 2.5rem);
-  --pt33-font-subheading: clamp(1.25rem, 2vw, 1.5rem);
-  --pt33-font-body: clamp(1.0625rem, 1vw, 1.125rem);
-  --pt33-font-meta: 0.875rem;
-  --pt33-leading-display: 1.04;
-  --pt33-leading-heading: 1.12;
-  --pt33-leading-body: 1.6;
-  --pt33-tracking-display: -0.045em;
-  --pt33-tracking-heading: -0.025em;
-  --pt33-space-1: 0.25rem;
-  --pt33-space-2: 0.5rem;
-  --pt33-space-3: 0.75rem;
-  --pt33-space-4: 1rem;
-  --pt33-space-6: 1.5rem;
-  --pt33-space-8: 2rem;
-  --pt33-space-12: 3rem;
-  --pt33-space-16: 4rem;
+  --pt33-font-display: var(--pt-font-size-display);
+  --pt33-font-hero: clamp(var(--pt-font-size-3xl), 4vw, var(--pt-font-size-display));
+  --pt33-font-heading: clamp(var(--pt-font-size-2xl), 3vw, var(--pt-font-size-4xl));
+  --pt33-font-subheading: clamp(var(--pt-font-size-xl), 2vw, var(--pt-font-size-2xl));
+  --pt33-font-body: var(--pt-font-size-md);
+  --pt33-font-meta: var(--pt-font-size-sm);
+  --pt33-leading-display: var(--pt-line-height-tight);
+  --pt33-leading-heading: var(--pt-line-height-heading);
+  --pt33-leading-body: var(--pt-line-height-body);
+  --pt33-tracking-display: var(--pt-letter-spacing-tight);
+  --pt33-tracking-heading: var(--pt-letter-spacing-heading);
+  --pt33-space-1: var(--pt-space-1);
+  --pt33-space-2: var(--pt-space-2);
+  --pt33-space-3: var(--pt-space-3);
+  --pt33-space-4: var(--pt-space-4);
+  --pt33-space-6: var(--pt-space-6);
+  --pt33-space-8: var(--pt-space-8);
+  --pt33-space-12: var(--pt-space-12);
+  --pt33-space-16: var(--pt-space-16);
   --pt33-space-20: 5rem;
   --pt33-space-24: 6rem;
   --pt33-space-32: 8rem;
   --pt33-space-40: 10rem;
-  --pt33-radius-sm: 0.375rem;
-  --pt33-radius-md: 0.625rem;
-  --pt33-radius-lg: 1.125rem;
-  --pt33-radius-pill: 999px;
-  --pt33-shadow-raised: 0 12px 32px rgb(23 26 24 / 0.08);
-  --pt33-shadow-overlay: 0 24px 56px rgb(23 26 24 / 0.16);
-  --pt33-motion-fast: 120ms;
-  --pt33-motion-normal: 200ms;
+  --pt33-radius-sm: var(--pt-radius-xs);
+  --pt33-radius-md: var(--pt-radius-sm);
+  --pt33-radius-lg: var(--pt-radius-lg);
+  --pt33-radius-pill: var(--pt-radius-pill);
+  --pt33-shadow-raised: var(--pt-shadow-sm);
+  --pt33-shadow-overlay: var(--pt-shadow-lg);
+  --pt33-motion-fast: 160ms;
+  --pt33-motion-normal: 220ms;
   --pt33-motion-slow: 320ms;
   --pt33-ease-standard: cubic-bezier(.2, .8, .2, 1);
-  --pt33-focus-ring: 0 0 0 3px color-mix(in srgb, var(--pt33-color-action-primary) 35%, transparent);
-  --pt33-grid-wide: 90rem;
-  --pt33-grid-standard: 75rem;
-  --pt33-reading-width: 46rem;
-  --pt33-gutter: clamp(1rem, 3vw, 2rem);
-  --pt33-button-primary-background: var(--pt33-color-action-primary);
-  --pt33-button-primary-text: var(--pt33-color-action-on-primary);
-  --pt33-button-secondary-background: var(--pt33-color-surface);
-  --pt33-button-secondary-text: var(--pt33-color-text-primary);
+  --pt33-focus-ring: var(--pt-focus-ring);
+  --pt33-grid-wide: var(--pt-content-wide);
+  --pt33-grid-standard: var(--pt-content-reading);
+  --pt33-reading-width: var(--pt-content-narrow);
+  --pt33-gutter: var(--pt-page-gutter);
+  --pt33-button-primary-background: var(--pt-color-action-bg);
+  --pt33-button-primary-text: var(--pt-color-action-text);
+  --pt33-button-secondary-background: var(--pt-color-surface);
+  --pt33-button-secondary-text: var(--pt-color-text);
+}
+
+/* Explicit preview modes are the only local palette exception. */
+[data-pt-foundation][data-pt-mode="light"] {
+  color-scheme: light;
+  --pt-color-text: #132019;
+  --pt-color-text-muted: #5a6d62;
+  --pt-color-border: #d8e4dc;
+  --pt-color-border-strong: #c3d3c8;
+  --pt-color-surface: #ffffff;
+  --pt-color-surface-soft: #f4f8f5;
+  --pt-color-surface-raised: #ffffff;
+  --pt-color-page: #f3f7f4;
+  --pt-color-brand-100: #dff3e7;
+  --pt-color-brand-500: #47a66d;
+  --pt-color-brand-600: #2f8f5b;
+  --pt-color-brand-700: #216e45;
+  --pt-color-accent-600: #4f46e5;
+  --pt-color-warning-500: #f59e0b;
+  --pt-color-danger-600: #dc2626;
+  --pt-color-success-600: #2e7d32;
+  --pt-color-accent-text: #216e45;
+  --pt-color-action-bg: #2f8f5b;
+  --pt-color-action-bg-hover: #26784c;
+  --pt-color-action-text: #ffffff;
+  --pt-shadow-sm: 0 4px 14px rgb(17 35 24 / 0.08);
+  --pt-shadow-lg: 0 20px 50px rgb(17 35 24 / 0.14);
 }
 
 [data-pt-foundation][data-pt-mode="dark"] {
   color-scheme: dark;
-  --pt33-mineral-0: #f2f4f1;
-  --pt33-mineral-50: #0c0d0d;
-  --pt33-mineral-100: #1a1d1b;
-  --pt33-mineral-200: #292d2b;
-  --pt33-mineral-300: #3a403d;
-  --pt33-graphite-950: #f2f4f1;
-  --pt33-graphite-700: #adb5af;
-  --pt33-graphite-500: #858c87;
-  --pt33-botanical-700: #55c58a;
-  --pt33-botanical-800: #70d59e;
-  --pt33-success-700: #66c98e;
-  --pt33-blue-700: #73b8ff;
-  --pt33-amber-800: #f0b45a;
-  --pt33-red-700: #ff8d8d;
-  --pt33-color-surface: #141615;
-  --pt33-color-surface-raised: #202321;
-  --pt33-color-action-on-primary: #0c0d0d;
-  --pt33-color-score-excellent: #66c98e;
-  --pt33-color-score-good: #a8d65e;
-  --pt33-color-score-solid: #f0b45a;
-  --pt33-color-score-limited: #ff9d61;
-  --pt33-color-score-poor: #ff8d8d;
-  --pt33-shadow-raised: 0 12px 32px rgb(0 0 0 / 0.24);
-  --pt33-shadow-overlay: 0 24px 56px rgb(0 0 0 / 0.4);
-}
-
-@media (prefers-color-scheme: dark) {
-  [data-pt-foundation]:not([data-pt-mode="light"]) {
-    color-scheme: dark;
-    --pt33-mineral-0: #f2f4f1;
-    --pt33-mineral-50: #0c0d0d;
-    --pt33-mineral-100: #1a1d1b;
-    --pt33-mineral-200: #292d2b;
-    --pt33-mineral-300: #3a403d;
-    --pt33-graphite-950: #f2f4f1;
-    --pt33-graphite-700: #adb5af;
-    --pt33-graphite-500: #858c87;
-    --pt33-botanical-700: #55c58a;
-    --pt33-botanical-800: #70d59e;
-    --pt33-success-700: #66c98e;
-    --pt33-blue-700: #73b8ff;
-    --pt33-amber-800: #f0b45a;
-    --pt33-red-700: #ff8d8d;
-    --pt33-color-surface: #141615;
-    --pt33-color-surface-raised: #202321;
-    --pt33-color-action-on-primary: #0c0d0d;
-    --pt33-color-score-excellent: #66c98e;
-    --pt33-color-score-good: #a8d65e;
-    --pt33-color-score-solid: #f0b45a;
-    --pt33-color-score-limited: #ff9d61;
-    --pt33-color-score-poor: #ff8d8d;
-    --pt33-shadow-raised: 0 12px 32px rgb(0 0 0 / 0.24);
-    --pt33-shadow-overlay: 0 24px 56px rgb(0 0 0 / 0.4);
-  }
+  --pt-color-text: #f3f5f4;
+  --pt-color-text-muted: #a9b3b8;
+  --pt-color-border: #27343e;
+  --pt-color-border-strong: #364651;
+  --pt-color-surface: #101820;
+  --pt-color-surface-soft: #141e27;
+  --pt-color-surface-raised: #19242e;
+  --pt-color-page: #091119;
+  --pt-color-brand-100: #153126;
+  --pt-color-brand-500: #72d69a;
+  --pt-color-brand-600: #3b9b67;
+  --pt-color-brand-700: #72d69a;
+  --pt-color-accent-600: #73b8ff;
+  --pt-color-warning-500: #f0b45a;
+  --pt-color-danger-600: #ff8d8d;
+  --pt-color-success-600: #66c98e;
+  --pt-color-accent-text: #72d69a;
+  --pt-color-action-bg: #3b9b67;
+  --pt-color-action-bg-hover: #49aa75;
+  --pt-color-action-text: #ffffff;
+  --pt-shadow-sm: 0 5px 18px rgb(0 0 0 / 0.28);
+  --pt-shadow-lg: 0 24px 58px rgb(0 0 0 / 0.4);
 }
 /* pfotentechnik-theme-state-machine-26.0.0:end */

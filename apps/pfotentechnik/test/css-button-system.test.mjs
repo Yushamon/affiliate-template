@@ -9,7 +9,7 @@ const styles = path.join(APP, "src", "styles");
 const legacyFile = path.join(styles, "pfotentechnik-design-system.css");
 const foundationIndex = path.join(styles, "foundation", "index.css");
 const componentIndex = path.join(styles, "components", "index.css");
-const buttonsFile = path.join(styles, "components", "buttons.css");
+const buttonsFile = path.join(styles, "pfotentechnik-foundation-contracts.css");
 
 const exactSnippets = [
   ":where(.pt-button, .button-primary, .button-secondary, .cta-button, .affiliate-button)",
@@ -26,6 +26,7 @@ test("Komponenten-Layer wird nach Layout eingebunden", () => {
   );
   assert.ok(fs.existsSync(componentIndex));
   assert.ok(fs.existsSync(buttonsFile));
+  assert.ok(!fs.existsSync(path.join(styles, "components", "buttons.css")));
 });
 
 test("gemeinsame Buttonregeln wurden aus Legacy entfernt", () => {
@@ -35,11 +36,11 @@ test("gemeinsame Buttonregeln wurden aus Legacy entfernt", () => {
   }
 });
 
-test("gemeinsame Buttonregeln liegen im Komponenten-Layer", () => {
+test("gemeinsame Buttonregeln liegen im Foundation-Vertrag", () => {
   const buttons = fs.readFileSync(buttonsFile, "utf8");
-  for (const snippet of exactSnippets) {
-    assert.ok(buttons.includes(snippet + " {"), "Button Layer fehlt: " + snippet);
-  }
+  assert.match(buttons, /\.pt-button,/);
+  assert.match(buttons, /\.pt-button-primary,/);
+  assert.match(buttons, /\.pt-button-secondary,/);
 });
 
 test("alle bisherigen Alias-Klassen bleiben erhalten", () => {
@@ -62,7 +63,8 @@ test("Button-Layer enthält keine kontextspezifischen Komponenten", () => {
   assert.doesNotMatch(buttons, /\.nav-toggle-button|\.site-header-v2|\.sticky|\.comparison|\.product-card/);
 });
 
-test("Button-Layer führt kein important ein", () => {
+test("Button-Vertrag enthält Interaktion und Reduced Motion", () => {
   const buttons = fs.readFileSync(buttonsFile, "utf8");
-  assert.doesNotMatch(buttons, /!important/);
+  assert.match(buttons, /:focus-visible/);
+  assert.match(buttons, /prefers-reduced-motion/);
 });

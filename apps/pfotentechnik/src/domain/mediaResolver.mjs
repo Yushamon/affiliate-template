@@ -1,10 +1,10 @@
 /**
- * Generic comparison media resolution.
+ * Canonical product-media resolution for every PfotenTechnik experience.
  *
  * Content collections emit image metadata in a few compatible shapes
  * (plain strings, Astro metadata, and nested metadata after serialization).
- * Keep the priority in one place so an automatically selected product never
- * needs a slug-specific media branch in a renderer.
+ * Priority and fallback semantics live here so page renderers never need
+ * slug-specific media branches.
  */
 const sourceOf = (value) => {
   if (typeof value === "string") return value.trim() || undefined;
@@ -32,10 +32,8 @@ const imageMetadataOf = (media) => {
 export const isResolvedProductImage = (media) => Boolean(imageMetadataOf(media));
 
 /**
- * Hero media must be backed by Astro image metadata. A raw string can look
- * plausible while still producing a missing production asset, so it is not a
- * successful resolution here. Content collection image() references become
- * metadata only after Astro has verified the local source.
+ * Hero media must be backed by verified Astro image metadata. Raw strings can
+ * look plausible while still producing a missing production asset.
  */
 export const resolveProductHeroMedia = (images) => {
   const candidates = [
@@ -58,10 +56,8 @@ export const resolveProductHeroMedia = (images) => {
 };
 
 /**
- * Product media has one semantic priority everywhere it is rendered as a
- * compact decision image.  The resolver deliberately returns the original
- * metadata object: Astro consumers can then keep its verified asset contract
- * instead of reconstructing a raw `src`/`srcset` pair downstream.
+ * Compact product media has one priority across Product, Comparison, Category,
+ * Manufacturer, Guide and Homepage consumers.
  */
 export const resolveProductMedia = (images) => {
   for (const key of ["comparison", "thumbnail", "hero"]) {

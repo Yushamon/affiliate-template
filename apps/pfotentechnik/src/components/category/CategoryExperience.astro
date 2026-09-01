@@ -1,6 +1,6 @@
 ---
 import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
-import EditorialScore from "@affiliate-core/components/EditorialScore.astro";
+import ProductScore from "@affiliate-core/components/ProductScore.astro";
 import type { CategoryExperienceModel } from "../../domain/category/model";
 
 interface Props {
@@ -146,7 +146,7 @@ const updatedLabel = new Intl.DateTimeFormat("de-DE", {
               <p>{product.reason}</p>
             </div>
             <div class="pt-category-hub__product-decision">
-              <EditorialScore value={product.score} scale={100} variant="ring-compact" description="Redaktioneller ProductScore" />
+              <ProductScore value={product.score} scale={100} variant="ring-compact" description="Redaktioneller ProductScore" />
               <p>{product.price ? <><span>Preis erfasst</span><strong>{product.price}</strong></> : <span>Preis aktuell prüfen</span>}</p>
               <a href={product.href}>Produktcheck <span aria-hidden="true">→</span></a>
             </div>

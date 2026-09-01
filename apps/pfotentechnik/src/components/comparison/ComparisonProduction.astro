@@ -4,7 +4,7 @@ import ProductScore from "@affiliate-core/components/ProductScore.astro";
 import ComparisonExplorer from "@affiliate-core/components/comparison/ComparisonExplorer.astro";
 import { getPriceDisplay } from "@affiliate-core/comparison/price";
 import type { ComparisonProduct, ComparisonViewModel } from "@affiliate-core/comparison/model";
-import { resolveMediaSource } from "../../domain/comparison/mediaResolver.mjs";
+import { resolveMediaSource } from "../../domain/mediaResolver.mjs";
 
 type Props = { model: ComparisonViewModel };
 const { model } = Astro.props as Props;

@@ -2,7 +2,7 @@ import type { CollectionEntry } from "astro:content";
 import type { HomeEditorialCard, HomeImage, HomepageModel } from "@affiliate-core/home/model";
 import petTechHeroImage from "../../assets/images/project/pfotentechnik/pet-tech-hero.webp";
 import guideImage from "../../assets/images/project/pfotentechnik/guide.webp";
-import { resolveProductMedia } from "../comparison/mediaResolver.mjs";
+import { resolveProductMedia } from "../mediaResolver.mjs";
 
 type ProductEntry = CollectionEntry<"products">;
 type ComparisonEntry = CollectionEntry<"comparisons">;
