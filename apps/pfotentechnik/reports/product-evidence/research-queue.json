@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T09:54:57.026Z",
+  "generatedAt": "2026-08-31T19:17:52.929Z",
   "source": {
     "provider": "google",
     "file": "gsc-dashboard-ranges.json",
@@ -9,13 +9,13 @@
   "lane": "HOLD",
   "counts": {
     "open": 29,
-    "selected": 29,
-    "missing": 0,
-    "partial": 29,
+    "selected": 24,
+    "missing": 1,
+    "partial": 28,
     "now": 0,
     "watch": 0,
-    "hold": 29,
-    "backlog": 0
+    "hold": 24,
+    "backlog": 5
   },
   "rules": [
     "Keine eigenen Tests behaupten.",
@@ -49,20 +49,20 @@
       },
       "search": {
         "primaryRange": "28d",
-        "impressions": 3,
+        "impressions": 2,
         "clicks": 0,
-        "position": 5.7,
+        "position": 3.5,
         "ctr": 0,
         "contextRange": "3m",
         "contextImpressions": 3,
         "queries": [],
-        "confidence": 0.55
+        "confidence": 0.35
       },
       "score": {
-        "total": 49,
-        "rawTotal": 49,
-        "searchBase": 43,
-        "searchWeighted": 24,
+        "total": 39,
+        "rawTotal": 39,
+        "searchBase": 41,
+        "searchWeighted": 14,
         "evidenceGap": 20,
         "commercial": 5
       },
@@ -89,177 +89,19 @@
       },
       "search": {
         "primaryRange": "28d",
-        "impressions": 1,
-        "clicks": 1,
-        "position": 2,
-        "ctr": 100,
-        "contextRange": "3m",
-        "contextImpressions": 3,
-        "queries": [],
-        "confidence": 0.35
-      },
-      "score": {
-        "total": 45,
-        "rawTotal": 45,
-        "searchBase": 28,
-        "searchWeighted": 10,
-        "evidenceGap": 30,
-        "commercial": 5
-      },
-      "action": "complete-evidence"
-    },
-    {
-      "file": "src/content/products/pawbby-smart-pet-feeder.md",
-      "slug": "pawbby-smart-pet-feeder",
-      "title": "PAWBBY Smart Pet Feeder",
-      "lane": "HOLD",
-      "evidence": {
-        "status": "partial",
-        "professional": 0,
-        "userSources": 0,
-        "consensus": 0,
-        "missingParts": [
-          "professionalReviews",
-          "userReviews",
-          "consensus"
-        ],
-        "constrained": true,
-        "evidenceStatus": "",
-        "researchStatus": "constrained"
-      },
-      "search": {
-        "primaryRange": "28d",
-        "impressions": 1,
-        "clicks": 0,
-        "position": 10,
-        "ctr": 0,
-        "contextRange": "3m",
-        "contextImpressions": 1,
-        "queries": [],
-        "confidence": 0.35
-      },
-      "score": {
-        "total": 45,
-        "rawTotal": 45,
-        "searchBase": 37,
-        "searchWeighted": 13,
-        "evidenceGap": 30,
-        "commercial": 2
-      },
-      "action": "complete-evidence"
-    },
-    {
-      "file": "src/content/products/oneisall-7l-dog-water-fountain.md",
-      "slug": "oneisall-7l-dog-water-fountain",
-      "title": "oneisall 7L Dog Water Fountain",
-      "lane": "HOLD",
-      "evidence": {
-        "status": "partial",
-        "professional": 0,
-        "userSources": 1,
-        "consensus": 0,
-        "missingParts": [
-          "professionalReviews",
-          "consensus"
-        ],
-        "constrained": true,
-        "evidenceStatus": "",
-        "researchStatus": "constrained"
-      },
-      "search": {
-        "primaryRange": "28d",
-        "impressions": 1,
-        "clicks": 0,
-        "position": 14,
-        "ctr": 0,
-        "contextRange": "3m",
-        "contextImpressions": 1,
-        "queries": [],
-        "confidence": 0.35
-      },
-      "score": {
-        "total": 37,
-        "rawTotal": 37,
-        "searchBase": 35,
-        "searchWeighted": 12,
-        "evidenceGap": 20,
-        "commercial": 5
-      },
-      "action": "complete-evidence"
-    },
-    {
-      "file": "src/content/products/cat-mate-shell-fountain.md",
-      "slug": "cat-mate-shell-fountain",
-      "title": "Cat Mate Shell Pet Fountain",
-      "lane": "HOLD",
-      "evidence": {
-        "status": "partial",
-        "professional": 0,
-        "userSources": 1,
-        "consensus": 0,
-        "missingParts": [
-          "professionalReviews",
-          "consensus"
-        ],
-        "constrained": true,
-        "evidenceStatus": "",
-        "researchStatus": "constrained"
-      },
-      "search": {
-        "primaryRange": "28d",
-        "impressions": 2,
-        "clicks": 0,
-        "position": 4,
-        "ctr": 0,
-        "contextRange": "3m",
-        "contextImpressions": 2,
-        "queries": [],
-        "confidence": 0.35
-      },
-      "score": {
-        "total": 36,
-        "rawTotal": 36,
-        "searchBase": 41,
-        "searchWeighted": 14,
-        "evidenceGap": 20,
-        "commercial": 2
-      },
-      "action": "complete-evidence"
-    },
-    {
-      "file": "src/content/products/cat-mate-335-pet-fountain.md",
-      "slug": "cat-mate-335-pet-fountain",
-      "title": "Cat Mate Pet Fountain 335",
-      "lane": "HOLD",
-      "evidence": {
-        "status": "partial",
-        "professional": 0,
-        "userSources": 0,
-        "consensus": 0,
-        "missingParts": [
-          "professionalReviews",
-          "userReviews",
-          "consensus"
-        ],
-        "constrained": true,
-        "evidenceStatus": "",
-        "researchStatus": ""
-      },
-      "search": {
-        "primaryRange": "28d",
         "impressions": 0,
         "clicks": 0,
         "position": 0,
         "ctr": 0,
         "contextRange": "3m",
-        "contextImpressions": 0,
+        "contextImpressions": 3,
         "queries": [],
         "confidence": 0
       },
       "score": {
         "total": 35,
         "rawTotal": 35,
-        "searchBase": 0,
+        "searchBase": 3,
         "searchWeighted": 0,
         "evidenceGap": 30,
         "commercial": 5
@@ -307,18 +149,17 @@
       "action": "complete-evidence"
     },
     {
-      "file": "src/content/products/petlibro-granary-2-vision.md",
-      "slug": "petlibro-granary-2-vision",
-      "title": "PETLIBRO Granary 2 Vision",
+      "file": "src/content/products/petkit-fresh-element-solo.md",
+      "slug": "petkit-fresh-element-solo",
+      "title": "PETKIT Fresh Element Solo",
       "lane": "HOLD",
       "evidence": {
         "status": "partial",
         "professional": 0,
-        "userSources": 0,
+        "userSources": 1,
         "consensus": 0,
         "missingParts": [
           "professionalReviews",
-          "userReviews",
           "consensus"
         ],
         "constrained": true,
@@ -327,29 +168,29 @@
       },
       "search": {
         "primaryRange": "28d",
-        "impressions": 0,
+        "impressions": 1,
         "clicks": 0,
-        "position": 0,
+        "position": 1,
         "ctr": 0,
         "contextRange": "3m",
-        "contextImpressions": 0,
+        "contextImpressions": 1,
         "queries": [],
-        "confidence": 0
+        "confidence": 0.35
       },
       "score": {
-        "total": 35,
-        "rawTotal": 35,
-        "searchBase": 0,
-        "searchWeighted": 0,
-        "evidenceGap": 30,
+        "total": 34,
+        "rawTotal": 34,
+        "searchBase": 27,
+        "searchWeighted": 9,
+        "evidenceGap": 20,
         "commercial": 5
       },
       "action": "complete-evidence"
     },
     {
-      "file": "src/content/products/petwalk-medium-tiertuer.md",
-      "slug": "petwalk-medium-tiertuer",
-      "title": "petWALK Medium Tiertür",
+      "file": "src/content/products/pawbby-smart-pet-feeder.md",
+      "slug": "pawbby-smart-pet-feeder",
+      "title": "PAWBBY Smart Pet Feeder",
       "lane": "HOLD",
       "evidence": {
         "status": "partial",
@@ -358,45 +199,6 @@
         "consensus": 0,
         "missingParts": [
           "professionalReviews",
-          "userReviews",
-          "consensus"
-        ],
-        "constrained": true,
-        "evidenceStatus": "constrained",
-        "researchStatus": ""
-      },
-      "search": {
-        "primaryRange": "28d",
-        "impressions": 0,
-        "clicks": 0,
-        "position": 0,
-        "ctr": 0,
-        "contextRange": "3m",
-        "contextImpressions": 0,
-        "queries": [],
-        "confidence": 0
-      },
-      "score": {
-        "total": 35,
-        "rawTotal": 35,
-        "searchBase": 0,
-        "searchWeighted": 0,
-        "evidenceGap": 30,
-        "commercial": 5
-      },
-      "action": "complete-evidence"
-    },
-    {
-      "file": "src/content/products/petlibro-space-smart-feeder.md",
-      "slug": "petlibro-space-smart-feeder",
-      "title": "PETLIBRO Space Smart Feeder",
-      "lane": "HOLD",
-      "evidence": {
-        "status": "partial",
-        "professional": 2,
-        "userSources": 0,
-        "consensus": 0,
-        "missingParts": [
           "userReviews",
           "consensus"
         ],
@@ -406,22 +208,22 @@
       },
       "search": {
         "primaryRange": "28d",
-        "impressions": 1,
+        "impressions": 0,
         "clicks": 0,
-        "position": 32,
+        "position": 0,
         "ctr": 0,
         "contextRange": "3m",
         "contextImpressions": 1,
         "queries": [],
-        "confidence": 0.35
+        "confidence": 0
       },
       "score": {
         "total": 32,
         "rawTotal": 32,
-        "searchBase": 19,
-        "searchWeighted": 7,
-        "evidenceGap": 20,
-        "commercial": 5
+        "searchBase": 2,
+        "searchWeighted": 0,
+        "evidenceGap": 30,
+        "commercial": 2
       },
       "action": "complete-evidence"
     },
@@ -462,6 +264,45 @@
         "searchWeighted": 0,
         "evidenceGap": 30,
         "commercial": 2
+      },
+      "action": "complete-evidence"
+    },
+    {
+      "file": "src/content/products/oneisall-7l-dog-water-fountain.md",
+      "slug": "oneisall-7l-dog-water-fountain",
+      "title": "oneisall 7L Dog Water Fountain",
+      "lane": "HOLD",
+      "evidence": {
+        "status": "partial",
+        "professional": 0,
+        "userSources": 1,
+        "consensus": 0,
+        "missingParts": [
+          "professionalReviews",
+          "consensus"
+        ],
+        "constrained": true,
+        "evidenceStatus": "",
+        "researchStatus": "constrained"
+      },
+      "search": {
+        "primaryRange": "28d",
+        "impressions": 0,
+        "clicks": 0,
+        "position": 0,
+        "ctr": 0,
+        "contextRange": "3m",
+        "contextImpressions": 1,
+        "queries": [],
+        "confidence": 0
+      },
+      "score": {
+        "total": 25,
+        "rawTotal": 25,
+        "searchBase": 2,
+        "searchWeighted": 0,
+        "evidenceGap": 20,
+        "commercial": 5
       },
       "action": "complete-evidence"
     },
@@ -507,7 +348,7 @@
     {
       "file": "src/content/products/neakasa-m1-lite.md",
       "slug": "neakasa-m1-lite",
-      "title": "Neakasa M1 Lite",
+      "title": "Neakasa M1 Plus Lite",
       "lane": "HOLD",
       "evidence": {
         "status": "partial",
@@ -622,45 +463,6 @@
       "action": "complete-evidence"
     },
     {
-      "file": "src/content/products/petkit-fresh-element-solo.md",
-      "slug": "petkit-fresh-element-solo",
-      "title": "PETKIT Fresh Element Solo",
-      "lane": "HOLD",
-      "evidence": {
-        "status": "partial",
-        "professional": 0,
-        "userSources": 1,
-        "consensus": 0,
-        "missingParts": [
-          "professionalReviews",
-          "consensus"
-        ],
-        "constrained": true,
-        "evidenceStatus": "constrained",
-        "researchStatus": ""
-      },
-      "search": {
-        "primaryRange": "28d",
-        "impressions": 0,
-        "clicks": 0,
-        "position": 0,
-        "ctr": 0,
-        "contextRange": "3m",
-        "contextImpressions": 0,
-        "queries": [],
-        "confidence": 0
-      },
-      "score": {
-        "total": 25,
-        "rawTotal": 25,
-        "searchBase": 0,
-        "searchWeighted": 0,
-        "evidenceGap": 20,
-        "commercial": 5
-      },
-      "action": "complete-evidence"
-    },
-    {
       "file": "src/content/products/petlibro-granary-dual-feeder.md",
       "slug": "petlibro-granary-dual-feeder",
       "title": "PETLIBRO Granary WiFi Dual Food Tray Feeder",
@@ -700,9 +502,9 @@
       "action": "complete-evidence"
     },
     {
-      "file": "src/content/products/zeromouse-2-0.md",
-      "slug": "zeromouse-2-0",
-      "title": "ZeroMOUSE 2.0",
+      "file": "src/content/products/cat-mate-shell-fountain.md",
+      "slug": "cat-mate-shell-fountain",
+      "title": "Cat Mate Shell Pet Fountain",
       "lane": "HOLD",
       "evidence": {
         "status": "partial",
@@ -714,8 +516,8 @@
           "consensus"
         ],
         "constrained": true,
-        "evidenceStatus": "constrained",
-        "researchStatus": ""
+        "evidenceStatus": "",
+        "researchStatus": "constrained"
       },
       "search": {
         "primaryRange": "28d",
@@ -724,17 +526,17 @@
         "position": 0,
         "ctr": 0,
         "contextRange": "3m",
-        "contextImpressions": 0,
+        "contextImpressions": 2,
         "queries": [],
         "confidence": 0
       },
       "score": {
-        "total": 25,
-        "rawTotal": 25,
-        "searchBase": 0,
+        "total": 22,
+        "rawTotal": 22,
+        "searchBase": 3,
         "searchWeighted": 0,
         "evidenceGap": 20,
-        "commercial": 5
+        "commercial": 2
       },
       "action": "complete-evidence"
     },
@@ -1012,44 +814,6 @@
       "action": "complete-evidence"
     },
     {
-      "file": "src/content/products/petlibro-glacier-ultrafiltration.md",
-      "slug": "petlibro-glacier-ultrafiltration",
-      "title": "PETLIBRO Glacier Ultrafiltration Fountain",
-      "lane": "HOLD",
-      "evidence": {
-        "status": "partial",
-        "professional": 1,
-        "userSources": 1,
-        "consensus": 0,
-        "missingParts": [
-          "consensus"
-        ],
-        "constrained": true,
-        "evidenceStatus": "",
-        "researchStatus": "constrained"
-      },
-      "search": {
-        "primaryRange": "28d",
-        "impressions": 1,
-        "clicks": 0,
-        "position": 22,
-        "ctr": 0,
-        "contextRange": "3m",
-        "contextImpressions": 1,
-        "queries": [],
-        "confidence": 0.35
-      },
-      "score": {
-        "total": 21,
-        "rawTotal": 21,
-        "searchBase": 27,
-        "searchWeighted": 9,
-        "evidenceGap": 10,
-        "commercial": 2
-      },
-      "action": "complete-evidence"
-    },
-    {
       "file": "src/content/products/petlibro-air-wifi-feeder.md",
       "slug": "petlibro-air-wifi-feeder",
       "title": "PETLIBRO Air WiFi Feeder",
@@ -1122,6 +886,44 @@
         "searchWeighted": 0,
         "evidenceGap": 10,
         "commercial": 5
+      },
+      "action": "complete-evidence"
+    },
+    {
+      "file": "src/content/products/petlibro-glacier-ultrafiltration.md",
+      "slug": "petlibro-glacier-ultrafiltration",
+      "title": "PETLIBRO Glacier Ultrafiltration Fountain",
+      "lane": "HOLD",
+      "evidence": {
+        "status": "partial",
+        "professional": 1,
+        "userSources": 1,
+        "consensus": 0,
+        "missingParts": [
+          "consensus"
+        ],
+        "constrained": true,
+        "evidenceStatus": "",
+        "researchStatus": "constrained"
+      },
+      "search": {
+        "primaryRange": "28d",
+        "impressions": 0,
+        "clicks": 0,
+        "position": 0,
+        "ctr": 0,
+        "contextRange": "3m",
+        "contextImpressions": 1,
+        "queries": [],
+        "confidence": 0
+      },
+      "score": {
+        "total": 12,
+        "rawTotal": 12,
+        "searchBase": 2,
+        "searchWeighted": 0,
+        "evidenceGap": 10,
+        "commercial": 2
       },
       "action": "complete-evidence"
     },

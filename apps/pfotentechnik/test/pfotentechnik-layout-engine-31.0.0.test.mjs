@@ -55,9 +55,11 @@ test("identische Breite und mobile Gutter", () => {
   }
 });
 
-test("Produktgalerie bleibt Full-Bleed", () => {
-  assert.match(layout, /\[data-mobile-gallery-full-bleed\][\s\S]*width:\s*100vw/);
-  assert.match(layout, /margin-inline:\s*calc\(50%\s*-\s*50vw\)/);
+test("Produktgalerie hat einen eigenen Mobile-Full-Bleed-Owner", () => {
+  const gallery = read("apps/pfotentechnik/src/components/product-experience-2/product-gallery-29.css");
+  assert.doesNotMatch(layout, /data-mobile-gallery-full-bleed/);
+  assert.match(gallery, /width:\s*100dvw/);
+  assert.match(gallery, /margin-inline:\s*calc\(50%\s*-\s*50dvw\)/);
 });
 
 test("keine eigene Vergleichspalette", () => {
@@ -86,4 +88,3 @@ test("keine Theme-Sonderselektoren oder neuen important-Regeln", () => {
   const generatedOverride = system.split("/* Layout Engine 31 theme normalization. */").at(-1) ?? "";
   assert.doesNotMatch(generatedOverride, /!important/);
 });
-

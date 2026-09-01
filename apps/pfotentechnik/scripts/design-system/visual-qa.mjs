@@ -57,9 +57,9 @@ for (const file of htmlFiles) {
   const findings = [];
 
   const buttons = count(html, /<(?:a|button)\b[^>]*(?:class="[^"]*(?:button|btn|cta)[^"]*"|role="button")[^>]*>/gi);
-  const primitiveButtons = count(html, /<(?:a|button)\b[^>]*class="[^"]*pt-button[^"]*"[^>]*>/gi);
+  const primitiveButtons = count(html, /<(?:a|button)\b[^>]*class="[^"]*(?:pt-button|pt33-button)[^"]*"[^>]*>/gi);
   const chips = count(html, /class="[^"]*(?:chip|pill|tag)[^"]*"/gi);
-  const primitiveChips = count(html, /class="[^"]*pt-chip[^"]*"/gi);
+  const primitiveChips = count(html, /class="[^"]*(?:pt-chip|pt33-chip)[^"]*"/gi);
   const surfaces = count(html, /class="[^"]*(?:pt-surface|card|panel)[^"]*"/gi);
   const nestedSurfaceRisk = count(
     html,
@@ -77,7 +77,7 @@ for (const file of htmlFiles) {
   const main = count(html, /<main\b/gi);
   const darkMarkers = count(
     html,
-    /(?:data-theme|theme-toggle|dark-mode|prefers-color-scheme)/gi
+    /(?:data-theme|data-pt-mode|theme-toggle|dark-mode|prefers-color-scheme)/gi
   );
 
   if (h1 !== 1) findings.push({ level: "warning", code: "H1_COUNT", value: h1 });

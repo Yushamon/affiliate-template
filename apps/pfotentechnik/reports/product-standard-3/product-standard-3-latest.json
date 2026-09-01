@@ -1,15 +1,15 @@
 {
   "version": "25.3.6",
-  "generatedAt": "2026-08-06T12:51:26.502Z",
+  "generatedAt": "2026-08-31T19:17:54.661Z",
   "summary": {
-    "products": 80,
+    "products": 101,
     "blocked": 0,
-    "needsWork": 9,
-    "good": 0,
-    "strong": 71,
+    "needsWork": 18,
+    "good": 3,
+    "strong": 80,
     "errors": 0,
-    "warnings": 35,
-    "info": 141
+    "warnings": 71,
+    "info": 162
   },
   "products": [
     {
@@ -64,6 +64,55 @@
     {
       "slug": "furbo-360-hundekamera",
       "file": "apps/pfotentechnik/src/content/products/furbo-360-hundekamera.md",
+      "category": "{ key:",
+      "score": 60,
+      "status": "needs-work",
+      "metrics": {
+        "specs": 0,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 1,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 0 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "EVIDENCE_THIN",
+          "message": "Nur 1 Evidenzarten hinterlegt.",
+          "recommendation": "Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "furbo-360-katzenkamera",
+      "file": "apps/pfotentechnik/src/content/products/furbo-360-katzenkamera.md",
       "category": "{ key:",
       "score": 60,
       "status": "needs-work",
@@ -258,8 +307,8 @@
       ]
     },
     {
-      "slug": "petkit-purobot-max-pro-2",
-      "file": "apps/pfotentechnik/src/content/products/petkit-purobot-max-pro-2.md",
+      "slug": "petkit-purobot-crystal-duo",
+      "file": "apps/pfotentechnik/src/content/products/petkit-purobot-crystal-duo.md",
       "category": "{ key:",
       "score": 60,
       "status": "needs-work",
@@ -405,8 +454,8 @@
       ]
     },
     {
-      "slug": "petlibro-scout-smart-camera",
-      "file": "apps/pfotentechnik/src/content/products/petlibro-scout-smart-camera.md",
+      "slug": "cat-mate-elite-355w",
+      "file": "apps/pfotentechnik/src/content/products/cat-mate-elite-355w.md",
       "category": "{ key:",
       "score": 70,
       "status": "needs-work",
@@ -448,6 +497,523 @@
       ]
     },
     {
+      "slug": "enabot-rola-mini",
+      "file": "apps/pfotentechnik/src/content/products/enabot-rola-mini.md",
+      "category": "{ key:",
+      "score": 70,
+      "status": "needs-work",
+      "metrics": {
+        "specs": 0,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 2,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 0 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "furbo-mini-360",
+      "file": "apps/pfotentechnik/src/content/products/furbo-mini-360.md",
+      "category": "{ key:",
+      "score": 70,
+      "status": "needs-work",
+      "metrics": {
+        "specs": 0,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 2,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 0 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "litter-robot-4",
+      "file": "apps/pfotentechnik/src/content/products/litter-robot-4.md",
+      "category": "{ key:",
+      "score": 70,
+      "status": "needs-work",
+      "metrics": {
+        "specs": 0,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 2,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 0 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "pawfit-3",
+      "file": "apps/pfotentechnik/src/content/products/pawfit-3.md",
+      "category": "{ key:",
+      "score": 70,
+      "status": "needs-work",
+      "metrics": {
+        "specs": 3,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 2,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 3 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "petkit-puramax-2",
+      "file": "apps/pfotentechnik/src/content/products/petkit-puramax-2.md",
+      "category": "{ key:",
+      "score": 70,
+      "status": "needs-work",
+      "metrics": {
+        "specs": 0,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 3,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 0 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-luma-smart-litter-box",
+      "file": "apps/pfotentechnik/src/content/products/petlibro-luma-smart-litter-box.md",
+      "category": "{ key:",
+      "score": 70,
+      "status": "needs-work",
+      "metrics": {
+        "specs": 0,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 2,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 0 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "prothelis-area-pets",
+      "file": "apps/pfotentechnik/src/content/products/prothelis-area-pets.md",
+      "category": "{ key:",
+      "score": 70,
+      "status": "needs-work",
+      "metrics": {
+        "specs": 1,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 2,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 1 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "reolink-e1-zoom",
+      "file": "apps/pfotentechnik/src/content/products/reolink-e1-zoom.md",
+      "category": "{ key:",
+      "score": 70,
+      "status": "needs-work",
+      "metrics": {
+        "specs": 0,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 2,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 0 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "catit-pixi-smart-trinkbrunnen",
+      "file": "apps/pfotentechnik/src/content/products/catit-pixi-smart-trinkbrunnen.md",
+      "category": "{ key:",
+      "score": 80,
+      "status": "good",
+      "metrics": {
+        "specs": 4,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 2,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "invoxia-biotracker-2026",
+      "file": "apps/pfotentechnik/src/content/products/invoxia-biotracker-2026.md",
+      "category": "{ key:",
+      "score": 80,
+      "status": "good",
+      "metrics": {
+        "specs": 4,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 2,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "petsafe-streamside-trinkbrunnen",
+      "file": "apps/pfotentechnik/src/content/products/petsafe-streamside-trinkbrunnen.md",
+      "category": "{ key:",
+      "score": 80,
+      "status": "good",
+      "metrics": {
+        "specs": 4,
+        "strengths": 0,
+        "weaknesses": 0,
+        "faq": 0,
+        "evidenceCount": 2,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "STRENGTHS_THIN",
+          "message": "Nur 0 Stärken hinterlegt.",
+          "recommendation": "Mindestens zwei belastbare Stärken ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "WEAKNESSES_MISSING",
+          "message": "Keine klare Schwäche hinterlegt.",
+          "recommendation": "Mindestens eine reale Einschränkung ergänzen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "devoko-90l-automatisches-katzenklo",
+      "file": "apps/pfotentechnik/src/content/products/devoko-90l-automatisches-katzenklo.md",
+      "category": "key:",
+      "score": 90,
+      "status": "strong",
+      "metrics": {
+        "specs": 32,
+        "strengths": 14,
+        "weaknesses": 10,
+        "faq": 22,
+        "evidenceCount": 4,
+        "communityInsights": 0,
+        "decisionFacts": 8,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "FAQ_EXCESSIVE",
+          "message": "22 FAQ-Einträge können die Produktseite unnötig verlängern.",
+          "recommendation": "Nur echte Kauffragen behalten."
+        }
+      ]
+    },
+    {
+      "slug": "neakasa-m1-lite",
+      "file": "apps/pfotentechnik/src/content/products/neakasa-m1-lite.md",
+      "category": "key:",
+      "score": 90,
+      "status": "strong",
+      "metrics": {
+        "specs": 11,
+        "strengths": 4,
+        "weaknesses": 5,
+        "faq": 16,
+        "evidenceCount": 3,
+        "communityInsights": 0,
+        "decisionFacts": 6,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        },
+        {
+          "severity": "warning",
+          "code": "FAQ_EXCESSIVE",
+          "message": "16 FAQ-Einträge können die Produktseite unnötig verlängern.",
+          "recommendation": "Nur echte Kauffragen behalten."
+        }
+      ]
+    },
+    {
       "slug": "aqara-smart-pet-feeder-c1",
       "file": "apps/pfotentechnik/src/content/products/aqara-smart-pet-feeder-c1.md",
       "category": "key: futterautomaten",
@@ -485,7 +1051,7 @@
       "score": 100,
       "status": "strong",
       "metrics": {
-        "specs": 20,
+        "specs": 22,
         "strengths": 8,
         "weaknesses": 6,
         "faq": 10,
@@ -687,6 +1253,56 @@
           "message": "Keine expliziten Fehlkauf-Szenarien hinterlegt.",
           "recommendation": "Für priorisierte Produkte ein bis drei typische Fehlkäufe ergänzen."
         },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "enabot-rola-pettracker",
+      "file": "apps/pfotentechnik/src/content/products/enabot-rola-pettracker.md",
+      "category": "key:",
+      "score": 100,
+      "status": "strong",
+      "metrics": {
+        "specs": 20,
+        "strengths": 5,
+        "weaknesses": 5,
+        "faq": 4,
+        "evidenceCount": 3,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "feelneedy-fn-w18-8l-katzenbrunnen",
+      "file": "apps/pfotentechnik/src/content/products/feelneedy-fn-w18-8l-katzenbrunnen.md",
+      "category": "key:",
+      "score": 100,
+      "status": "strong",
+      "metrics": {
+        "specs": 36,
+        "strengths": 12,
+        "weaknesses": 9,
+        "faq": 10,
+        "evidenceCount": 3,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
         {
           "severity": "info",
           "code": "COMMUNITY_EMPTY",
@@ -919,7 +1535,7 @@
       "score": 100,
       "status": "strong",
       "metrics": {
-        "specs": 26,
+        "specs": 27,
         "strengths": 10,
         "weaknesses": 8,
         "faq": 10,
@@ -1043,7 +1659,7 @@
       "score": 100,
       "status": "strong",
       "metrics": {
-        "specs": 25,
+        "specs": 27,
         "strengths": 10,
         "weaknesses": 8,
         "faq": 10,
@@ -1262,7 +1878,7 @@
       "metrics": {
         "specs": 19,
         "strengths": 6,
-        "weaknesses": 4,
+        "weaknesses": 6,
         "faq": 3,
         "evidenceCount": 3,
         "communityInsights": 0,
@@ -1440,6 +2056,56 @@
       ]
     },
     {
+      "slug": "petkit-purobot-max-3",
+      "file": "apps/pfotentechnik/src/content/products/petkit-purobot-max-3.md",
+      "category": "key:",
+      "score": 100,
+      "status": "strong",
+      "metrics": {
+        "specs": 12,
+        "strengths": 4,
+        "weaknesses": 4,
+        "faq": 2,
+        "evidenceCount": 3,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "petkit-purobot-max-pro-2",
+      "file": "apps/pfotentechnik/src/content/products/petkit-purobot-max-pro-2.md",
+      "category": "key:",
+      "score": 100,
+      "status": "strong",
+      "metrics": {
+        "specs": 15,
+        "strengths": 3,
+        "weaknesses": 3,
+        "faq": 0,
+        "evidenceCount": 2,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
       "slug": "petkit-yumshare-dual-hopper",
       "file": "apps/pfotentechnik/src/content/products/petkit-yumshare-dual-hopper.md",
       "category": "key: futterautomaten",
@@ -1479,7 +2145,7 @@
       "metrics": {
         "specs": 19,
         "strengths": 8,
-        "weaknesses": 6,
+        "weaknesses": 7,
         "faq": 10,
         "evidenceCount": 3,
         "communityInsights": 0,
@@ -1601,7 +2267,7 @@
       "score": 100,
       "status": "strong",
       "metrics": {
-        "specs": 17,
+        "specs": 20,
         "strengths": 6,
         "weaknesses": 5,
         "faq": 10,
@@ -1626,7 +2292,7 @@
       "score": 100,
       "status": "strong",
       "metrics": {
-        "specs": 19,
+        "specs": 21,
         "strengths": 6,
         "weaknesses": 5,
         "faq": 10,
@@ -1684,7 +2350,7 @@
       "metrics": {
         "specs": 21,
         "strengths": 6,
-        "weaknesses": 4,
+        "weaknesses": 5,
         "faq": 4,
         "evidenceCount": 3,
         "communityInsights": 0,
@@ -1895,7 +2561,7 @@
       "metrics": {
         "specs": 17,
         "strengths": 7,
-        "weaknesses": 6,
+        "weaknesses": 8,
         "faq": 8,
         "evidenceCount": 3,
         "communityInsights": 0,
@@ -1918,13 +2584,38 @@
       ]
     },
     {
+      "slug": "petlibro-scout-smart-camera",
+      "file": "apps/pfotentechnik/src/content/products/petlibro-scout-smart-camera.md",
+      "category": "key:",
+      "score": 100,
+      "status": "strong",
+      "metrics": {
+        "specs": 8,
+        "strengths": 3,
+        "weaknesses": 3,
+        "faq": 0,
+        "evidenceCount": 2,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
       "slug": "petlibro-space-smart-feeder",
       "file": "apps/pfotentechnik/src/content/products/petlibro-space-smart-feeder.md",
       "category": "key: futterautomaten",
       "score": 100,
       "status": "strong",
       "metrics": {
-        "specs": 19,
+        "specs": 22,
         "strengths": 6,
         "weaknesses": 6,
         "faq": 12,
@@ -1957,7 +2648,7 @@
       "metrics": {
         "specs": 16,
         "strengths": 6,
-        "weaknesses": 4,
+        "weaknesses": 5,
         "faq": 4,
         "evidenceCount": 3,
         "communityInsights": 0,
@@ -2048,13 +2739,13 @@
       "score": 100,
       "status": "strong",
       "metrics": {
-        "specs": 11,
-        "strengths": 5,
-        "weaknesses": 4,
-        "faq": 5,
+        "specs": 15,
+        "strengths": 10,
+        "weaknesses": 7,
+        "faq": 9,
         "evidenceCount": 2,
         "communityInsights": 0,
-        "decisionFacts": 5,
+        "decisionFacts": 7,
         "purchaseMistakes": 0
       },
       "findings": [
@@ -2076,7 +2767,7 @@
         "specs": 14,
         "strengths": 7,
         "weaknesses": 5,
-        "faq": 2,
+        "faq": 4,
         "evidenceCount": 3,
         "communityInsights": 0,
         "decisionFacts": 5,
@@ -2089,6 +2780,56 @@
           "message": "Keine expliziten Fehlkauf-Szenarien hinterlegt.",
           "recommendation": "Für priorisierte Produkte ein bis drei typische Fehlkäufe ergänzen."
         },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "petsnowy-snow-plus",
+      "file": "apps/pfotentechnik/src/content/products/petsnowy-snow-plus.md",
+      "category": "key:",
+      "score": 100,
+      "status": "strong",
+      "metrics": {
+        "specs": 7,
+        "strengths": 4,
+        "weaknesses": 4,
+        "faq": 2,
+        "evidenceCount": 3,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
+        }
+      ]
+    },
+    {
+      "slug": "pettec-cam-360",
+      "file": "apps/pfotentechnik/src/content/products/pettec-cam-360.md",
+      "category": "key:",
+      "score": 100,
+      "status": "strong",
+      "metrics": {
+        "specs": 14,
+        "strengths": 4,
+        "weaknesses": 4,
+        "faq": 4,
+        "evidenceCount": 3,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
         {
           "severity": "info",
           "code": "COMMUNITY_EMPTY",
@@ -2135,7 +2876,7 @@
       "score": 100,
       "status": "strong",
       "metrics": {
-        "specs": 11,
+        "specs": 16,
         "strengths": 4,
         "weaknesses": 4,
         "faq": 0,
@@ -2172,7 +2913,7 @@
         "faq": 5,
         "evidenceCount": 2,
         "communityInsights": 0,
-        "decisionFacts": 4,
+        "decisionFacts": 5,
         "purchaseMistakes": 0
       },
       "findings": [
@@ -2216,13 +2957,13 @@
       "score": 100,
       "status": "strong",
       "metrics": {
-        "specs": 9,
+        "specs": 10,
         "strengths": 5,
-        "weaknesses": 5,
-        "faq": 6,
+        "weaknesses": 7,
+        "faq": 9,
         "evidenceCount": 3,
         "communityInsights": 0,
-        "decisionFacts": 6,
+        "decisionFacts": 7,
         "purchaseMistakes": 0
       },
       "findings": [
@@ -2336,7 +3077,7 @@
       "metrics": {
         "specs": 24,
         "strengths": 9,
-        "weaknesses": 6,
+        "weaknesses": 8,
         "faq": 12,
         "evidenceCount": 3,
         "communityInsights": 0,

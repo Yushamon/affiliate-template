@@ -12,23 +12,24 @@ interface Alternative {
 interface Props {
   profile: FitProfile;
   alternatives?: Alternative[];
+  reference?: boolean;
 }
 
-const { profile, alternatives = [] } = Astro.props;
+const { profile, alternatives = [], reference = false } = Astro.props;
 const questions = questionsForCategory(profile.category);
 const serializedProfile = JSON.stringify(profile).replaceAll("<", "\\u003c");
 const serializedAlternatives = JSON.stringify(alternatives).replaceAll("<", "\\u003c");
 ---
 
-<section class="category-fit" aria-labelledby="category-fit-title" data-category-fit>
+<section class:list={["category-fit", { "category-fit--reference33": reference }]} aria-labelledby="category-fit-title" data-category-fit>
   <header>
     <span>Persönlicher Produkt-Fit</span>
     <h2 id="category-fit-title">Passt dieses Produkt zu deinem Alltag?</h2>
-    <p>{questions.length} kurze Angaben. Das Ergebnis wird direkt auf der Seite berechnet.</p>
+    <p>{reference ? "Starte mit einer Angabe; weitere Kriterien öffnest du nur bei Bedarf." : `${questions.length} kurze Angaben. Das Ergebnis wird direkt auf der Seite berechnet.`}</p>
   </header>
 
   <form data-category-fit-form>
-    {questions.map((question) => (
+    {questions.map((question, index) => (
       <fieldset>
         <legend>{question.label}</legend>
         <div>
@@ -262,6 +263,17 @@ const serializedAlternatives = JSON.stringify(alternatives).replaceAll("<", "\\u
     color: var(--px2-accent-text);
     font-weight: 850;
   }
+
+  .category-fit--reference33 { gap: var(--pt33-space-6, 24px); padding: var(--pt33-space-8, 32px); box-shadow: none; }
+  .category-fit--reference33 form { gap: var(--pt33-space-3, 12px); }
+  .category-fit--reference33 fieldset { padding: 0; border: 0; border-radius: 0; background: transparent; }
+  .category-fit--reference33 fieldset:not(:first-child) { padding-top: var(--pt33-space-4, 16px); border-top: 1px solid var(--px2-border); }
+  .category-fit--reference33 fieldset:not(:first-child) legend::after { color: var(--px2-muted); content: " (optional)"; font-weight: 500; }
+  .category-fit--reference33 label span { border-radius: var(--pt33-radius-pill, 999px); }
+  .category-fit--reference33 aside { border-radius: var(--pt33-radius-md, 10px); }
+  .category-fit--reference33 fieldset:not(:first-child) { display: none; }
+  .category-fit--reference33 form:has(fieldset:first-child input:checked) fieldset:nth-child(2) { display: block; }
+  .category-fit--reference33 form:has(fieldset:nth-child(2) input:checked) fieldset:nth-child(3) { display: block; }
 
   @media (min-width: 720px) {
     .category-fit {

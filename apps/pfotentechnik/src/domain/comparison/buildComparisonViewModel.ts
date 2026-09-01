@@ -14,6 +14,8 @@ import { buildPriceIndex } from "../price/engine";
 import { calculateProductScore } from "../productScore.ts";
 import type { ProductPriceInsight } from "../price/types";
 import { deriveProductOperations } from "../../lib/product-operations/policy.mjs";
+import { selectComparisonFinalists } from "./finalistSelection.mjs";
+import { resolveComparisonProductImage } from "./mediaResolver.mjs";
 
 type ComparisonEntry = CollectionEntry<"comparisons">;
 type ProductEntry = CollectionEntry<"products">;
@@ -437,19 +439,9 @@ export function buildComparisonViewModel({
     )
     .map((item) => item.slug);
 
-  /*
-   * Editorial Ranking Guard 32.6.8
-   *
-   * Die globale Backlink-Union darf die Teilnehmermenge erweitern,
-   * aber keine vorhandene redaktionelle Siegerentscheidung still
-   * überschreiben.
-   *
-   * Priorität:
-   * 1. explizit gepflegter recommendation.winnerSlug / alternativeSlug
-   * 2. automatische Recommendation Engine
-   * 3. erstes kaufbares kuratiertes item[]
-   * 4. erst danach ein ergänztes Backlink-Produkt
-   */
+  /* The backlink union expands the comparison field. Finalist selection below
+   * is data-driven; legacy winner/alternative slugs are compatibility fallbacks
+   * only when a sparse dataset cannot produce finalists. */
   const eligibleExplicitSlugs = explicitItems
     .filter((item) =>
       item.type === "product" &&
@@ -458,12 +450,10 @@ export function buildComparisonViewModel({
     .map((item) => item.slug);
 
   /*
-   * Automatic Winner Resolution 32.6.21
+   * Automatic Winner Resolution 32.6.21 / 33.2.2
    *
-   * winnerSlug ist ein redaktioneller Override, keine Pflichtpflege.
-   * Wenn kein Override und kein fachlich spezialisierter automatischer
-   * Sieger vorliegt, wird aus den bereits vorhandenen Produktbewertungen
-   * ein belastbarer Sieger ermittelt.
+   * The finalist selector is the production default. Legacy winnerSlug and
+   * alternativeSlug values remain only as a last-resort compatibility path.
    *
    * Spezialintents erhalten vorher Hard Gates. Ein Produkt kann also nicht
    * nur wegen eines hohen Basisscores einen Vergleich gewinnen, dessen
@@ -539,6 +529,35 @@ export function buildComparisonViewModel({
       return b.scoreResult.criteriaCount - a.scoreResult.criteriaCount;
     });
 
+  /*
+   * 33.2.2 finalist policy: choose the deep A/B pair from the eligible
+   * comparison field using score, documentation quality and capability
+   * diversity. The complete field remains available to the Explorer/table.
+   */
+  const finalistSelection = selectComparisonFinalists({
+    candidates: eligibleItemSlugs
+      .map((slug) => productBySlug.get(slug))
+      .filter((product): product is ProductEntry => Boolean(product))
+      .map((product) => ({
+        slug: product.data.slug,
+        title: product.data.title,
+        href: product.data.productUrl,
+        score: product.data.score,
+        rating: product.data.rating,
+        recommendation: product.data.recommendation,
+        useCase: product.data.useCase,
+        features: product.data.features,
+        strengths: product.data.strengths,
+        attention: product.data.decision.attention,
+        bestFor: product.data.decision.bestFor,
+        failureModes: product.data.failureModes,
+        comparisonFilters: product.data.comparisonFilters,
+        testStatus: product.data.testStatus,
+        productStatus: product.data.productStatus,
+        evidence: product.data.editorial?.evidence
+      }))
+  });
+
   const scoreWinner =
     scoreCandidates[0] &&
     (scoreCandidates[0].scoreResult.score ?? 0) >= 60
@@ -549,15 +568,20 @@ export function buildComparisonViewModel({
     (candidate) => candidate.slug !== scoreWinner?.slug
   );
 
+  // Automatic finalist resolution is the production default. Legacy
+  // recommendation slugs remain a last-resort fallback for sparse datasets.
+  const selectionSlugs = finalistSelection.finalists.map((candidate) => candidate.slug);
   const winnerCandidate =
-    data.recommendation.winnerSlug ??
-    automaticRecommendation.winnerSlug ??
-    scoreWinner?.slug;
+    selectionSlugs[0] ??
+    (automaticRecommendation.enabled ? automaticRecommendation.winnerSlug : undefined) ??
+    scoreWinner?.slug ??
+    data.recommendation.winnerSlug;
 
   const alternativeCandidate =
-    data.recommendation.alternativeSlug ??
-    automaticRecommendation.alternativeSlug ??
-    scoreAlternative?.slug;
+    selectionSlugs[1] ??
+    (automaticRecommendation.enabled ? automaticRecommendation.alternativeSlug : undefined) ??
+    scoreAlternative?.slug ??
+    data.recommendation.alternativeSlug;
 
   const resolvedWinnerSlug =
     winnerCandidate && eligibleItemSlugs.includes(winnerCandidate)
@@ -835,10 +859,7 @@ export function buildComparisonViewModel({
         title: product.data.title,
         manufacturer: product.data.manufacturer.name,
         href: `/produkt/${item.slug}/`,
-        image:
-          product.data.images.comparison ??
-          product.data.images.thumbnail ??
-          product.data.images.hero,
+        image: resolveComparisonProductImage(product.data.images),
         recommendation:
           item.recommendation ??
           product.data.recommendation,
@@ -866,6 +887,13 @@ export function buildComparisonViewModel({
     .filter(
       (item): item is ComparisonProduct => item !== null
     );
+
+  const relevantAlternatives = finalistSelection.alternatives
+    .map((candidate) => views.find((product) => product.slug === candidate.slug))
+    .filter((product): product is ComparisonProduct => Boolean(product));
+  const technicalCandidates = finalistSelection.technical
+    .map((candidate) => views.find((product) => product.slug === candidate.slug))
+    .filter((product): product is ComparisonProduct => Boolean(product));
 
   const winner = views.find(
     (product) =>
@@ -940,6 +968,10 @@ export function buildComparisonViewModel({
       { label: "Einordnung", value: "Unabhängig" }
     ],
     products: views,
+    relevantAlternatives,
+    technicalCandidates,
+    selectionReasons: finalistSelection.selectionReasons,
+    alternativeReasons: finalistSelection.alternativeReasons,
     recommendationProducts: recommendations,
     rows,
     filters,

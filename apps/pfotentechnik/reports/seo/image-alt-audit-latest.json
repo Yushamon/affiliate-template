@@ -1,47 +1,29 @@
 {
   "version": "24.1.2",
-  "generatedAt": "2026-08-15T21:32:36.174Z",
-  "mode": "source-and-dist",
-  "sourceFilesScanned": 138,
+  "generatedAt": "2026-08-31T19:17:53.173Z",
+  "mode": "source-only",
+  "sourceFilesScanned": 140,
   "distAvailable": true,
-  "distFilesScanned": 336,
-  "rawDistFindings": 287,
+  "distFilesScanned": 0,
+  "rawDistFindings": 0,
   "findings": [
     {
       "scope": "source",
       "file": "apps/pfotentechnik/src/components/product-experience-2/ProductGallery29.astro",
-      "line": 147,
+      "line": 152,
       "tag": "<img class=\"pg29-lightbox__thumb-image\" src={item.thumbSrc} width={item.width} height={item.height} alt=\"\" loading=\"lazy\" decoding=\"async\" />",
-      "severity": "info",
-      "code": "IMAGE_ALT_EMPTY_DECORATIVE",
-      "message": "Leerer Alt-Text. Das Bild wird als dekorativ oder redundant behandelt."
-    },
-    {
-      "scope": "dist",
-      "file": "apps/pfotentechnik/dist/index.html",
-      "line": 3,
-      "tag": "<img src=\"/_astro/guide.pxtardyd_afp0.webp\" srcset=\"/_astro/guide.pxtardyd_Z1HQvfC.webp 320w, /_astro/guide.pxtardyd_afp0.webp 900w\" alt sizes=\"(max-width: 900px) 100vw, 900px\" loading=\"lazy\" decoding=\"async\" data-astro-image=\"constrained\" data-astro-image-fit=\"cover\" data-astro-image-pos=\"center\" width=\"900\" height=\"6",
-      "severity": "info",
-      "code": "IMAGE_ALT_EMPTY_DECORATIVE",
-      "message": "Minimierter leerer Alt-Text. Das Bild wird als dekorativ oder redundant behandelt."
-    },
-    {
-      "scope": "dist",
-      "file": "apps/pfotentechnik/dist/produkt/aqara-smart-pet-feeder-c1/index.html",
-      "line": 3,
-      "tag": "<img class=\"pg29-lightbox__thumb-image\" src=\"/_astro/hero.DSDz9MJc_Z202SyK.webp\" width=\"1600\" height=\"900\" alt=\"\" loading=\"lazy\" decoding=\"async\">",
       "severity": "info",
       "code": "IMAGE_ALT_EMPTY_DECORATIVE",
       "message": "Leerer Alt-Text. Das Bild wird als dekorativ oder redundant behandelt."
     }
   ],
   "summary": {
-    "total": 3,
+    "total": 1,
     "errors": 0,
-    "info": 3,
+    "info": 1,
     "source": 1,
-    "distRaw": 287,
-    "distUnique": 2,
+    "distRaw": 0,
+    "distUnique": 0,
     "missing": 0
   }
 }

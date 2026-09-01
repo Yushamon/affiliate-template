@@ -6,16 +6,18 @@ import PriceBox2 from "./PriceBox2.astro";
 
 interface Props {
   model: ProductExperienceModel;
+  reference?: boolean;
 }
 
-const { model } = Astro.props;
+const { model, reference = false } = Astro.props;
 const suitableFor = model.suitabilitySummary;
 const mainBenefit = model.benefits[0] ?? model.reviewVerdict;
+const suitabilitySignals = model.idealFor.slice(0, 3);
 ---
 
-<section class="px2-hero" aria-labelledby="px2-product-title">
-  <div class="px2-hero__media" data-mobile-gallery-full-bleed>
-    <ProductGallery29 name={model.name} items={model.gallery} />
+<section class:list={["px2-hero", { "px2-hero--reference33": reference }]} aria-labelledby="px2-product-title">
+  <div class="px2-hero__media">
+    <ProductGallery29 name={model.name} items={model.gallery} reference={reference} />
   </div>
 
   <div class="px2-hero__content">
@@ -32,6 +34,7 @@ const mainBenefit = model.benefits[0] ?? model.reviewVerdict;
     <p class="px2-hero__lead">{model.recommendation}</p>
 
     <div class="px2-hero__scoreline">
+      {reference && <span class="px2-hero__score-label">Redaktionelle Einordnung</span>}
       {model.score != null && model.score > 0 ? (
         <EditorialScore
           value={model.score}
@@ -47,20 +50,27 @@ const mainBenefit = model.benefits[0] ?? model.reviewVerdict;
       )}
     </div>
 
-    <dl class="px2-hero__decision">
-      <div>
-        <dt>Geeignet für</dt>
-        <dd>{suitableFor}</dd>
+    {reference ? (
+      <div class="px2-hero__suitability" aria-label="Passt besonders zu">
+        <span>Passt besonders zu</span>
+        <ul>{suitabilitySignals.map((item) => <li>{item}</li>)}</ul>
       </div>
-      <div>
-        <dt>Wichtigster Vorteil</dt>
-        <dd>{mainBenefit}</dd>
-      </div>
-      <div class="is-limitation">
-        <dt>Größte Einschränkung</dt>
-        <dd>{model.mainLimitation}</dd>
-      </div>
-    </dl>
+    ) : (
+      <dl class="px2-hero__decision">
+        <div>
+          <dt>Geeignet für</dt>
+          <dd>{suitableFor}</dd>
+        </div>
+        <div>
+          <dt>Wichtigster Vorteil</dt>
+          <dd>{mainBenefit}</dd>
+        </div>
+        <div class="is-limitation">
+          <dt>Größte Einschränkung</dt>
+          <dd>{model.mainLimitation}</dd>
+        </div>
+      </dl>
+    )}
 
     <PriceBox2 price={model.price} affiliate={model.affiliate} operations={model.operations} />
 
@@ -134,6 +144,87 @@ const mainBenefit = model.benefits[0] ?? model.reviewVerdict;
   .px2-hero__scoreline {
     min-width: 0;
   }
+
+  .px2-hero__score-label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--px2-muted);
+    font-size: .75rem;
+    font-weight: 800;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+  }
+
+  .px2-hero__suitability > span {
+    color: var(--px2-muted);
+    font-size: .75rem;
+    font-weight: 800;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+  }
+
+  .px2-hero__suitability ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 8px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .px2-hero__suitability li {
+    padding: 7px 10px;
+    border: 1px solid var(--px2-border);
+    border-radius: var(--pt33-radius-pill, 999px);
+    color: var(--px2-text);
+    font-size: .82rem;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  .px2-hero--reference33 {
+    gap: clamp(24px, 4vw, 56px);
+    align-items: center;
+  }
+
+  .px2-hero--reference33 .px2-hero__content {
+    display: contents;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .px2-hero--reference33 .px2-hero__media { order: 1; }
+  .px2-hero--reference33 .px2-hero__meta { order: 2; }
+  .px2-hero--reference33 h1 { order: 3; }
+  .px2-hero--reference33 .px2-hero__lead { order: 4; }
+  .px2-hero--reference33 .px2-hero__scoreline { order: 5; }
+  .px2-hero--reference33 .px2-hero__suitability { order: 6; }
+  .px2-hero--reference33 :global(.px2-price) { order: 7; }
+  .px2-hero--reference33 .px2-hero__compare { order: 8; }
+
+  .px2-hero--reference33 .px2-hero__meta a,
+  .px2-hero--reference33 .px2-hero__meta span {
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    color: var(--px2-accent-text);
+    font-size: .78rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+  }
+
+  .px2-hero--reference33 .px2-hero__lead { max-width: 38rem; font-size: var(--pt33-font-body, 1.125rem); line-height: var(--pt33-leading-body, 1.6); }
+  .px2-hero--reference33 .px2-hero__scoreline { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: center; padding-block: 14px; border-block: 1px solid var(--px2-border); }
+  .px2-hero--reference33 .px2-hero__score-label { margin: 0; }
+  .px2-hero--reference33 .px2-hero__scoreline :global(.pt-score) { justify-self: start; }
+  .px2-hero--reference33 :global(.px2-price) { padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+  .px2-hero--reference33 :global(.px2-price__header) { display: none; }
+  .px2-hero--reference33 :global(.px2-price__amount) { display: flex; justify-content: flex-start; padding: 0 0 10px; border-top: 0; }
+  .px2-hero--reference33 :global(.px2-price__amount strong) { font-size: clamp(1.35rem, 6vw, 1.8rem); }
+  .px2-hero--reference33 :global(.px2-price__note) { font-size: .78rem; }
 
   .px2-hero__score-pending {
     display: grid;
@@ -223,10 +314,20 @@ const mainBenefit = model.benefits[0] ?? model.reviewVerdict;
   }
 
   @media (max-width: 759px) {
-    .px2-hero__media[data-mobile-gallery-full-bleed] {
+    .px2-hero--reference33 { gap: var(--pt33-space-6, 24px); }
+    .px2-hero__media {
       width: 100%;
       max-width: none;
       margin: 0;
+    }
+
+    .px2-hero--reference33 .px2-hero__scoreline {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 8px;
+    }
+
+    .px2-hero--reference33 .px2-hero__scoreline :global(.pt-score) {
+      width: 100%;
     }
 
     .px2-hero__content {
@@ -265,5 +366,10 @@ const mainBenefit = model.benefits[0] ?? model.reviewVerdict;
     .px2-hero__decision {
       grid-template-columns: 1fr;
     }
+
+    .px2-hero--reference33 { grid-template-columns: minmax(0, 1.1fr) minmax(23rem, .9fr); }
+    .px2-hero--reference33 .px2-hero__media { grid-column: 1; grid-row: 1 / span 8; }
+    .px2-hero--reference33 :is(.px2-hero__meta, h1, .px2-hero__lead, .px2-hero__scoreline, .px2-hero__suitability, .px2-hero__compare) { grid-column: 2; }
+    .px2-hero--reference33 :global(.px2-price) { grid-column: 2; }
   }
 </style>

@@ -13,23 +13,33 @@ import ProductAlternatives2 from "./ProductAlternatives2.astro";
 
 interface Props { model: ProductExperienceModel; }
 const { model } = Astro.props;
+/* 33.3 production migration: the validated decision-first foundation is the
+ * default for every product route. Product-specific facts stay in the model;
+ * the renderer has no slug-based visual branch. */
+const reference33 = true;
 ---
 
-<article class="px2" data-product-experience="2.2" data-product-layout="decision-first">
-  <ProductHero2 model={model} />
-  <ProductVerdict2 model={model} />
+<article
+  class:list={["px2", { "px2--reference33": reference33 }]}
+  data-product-experience={reference33 ? "33.0.1" : "2.2"}
+  data-product-layout="decision-first"
+  data-pt-foundation={reference33 ? true : undefined}
+>
+  <ProductHero2 model={model} reference={reference33} />
+  <ProductVerdict2 model={model} reference={reference33} />
 
   <div class="px2__decision-zone" aria-label="Kaufentscheidung">
+    {reference33 && <ProductCategoryFitAssistant profile={model.categoryFitProfile} alternatives={model.alternatives} reference={true} />}
     <ProductDecisionFacts2 facts={model.decisionFacts} />
     <ProductPurchaseMistakes2 items={model.purchaseMistakes} />
-    <ProductCategoryFitAssistant profile={model.categoryFitProfile} alternatives={model.alternatives} />
+    {!reference33 && <ProductCategoryFitAssistant profile={model.categoryFitProfile} alternatives={model.alternatives} />}
   </div>
 
   <ProductEverydayTimeline items={model.timeline} heading={model.usageHeading} eyebrow={model.usageEyebrow} />
   <ProductCommunityInsights2 insights={model.communityInsights} />
   <ProductDetails2 model={model} />
   <ProductEvidence2 evidence={model.evidenceSummary} updatedAt={model.updatedAt} />
-  <ProductAlternatives2 alternatives={model.alternatives.slice(0, 3)} />
+  <ProductAlternatives2 alternatives={model.alternatives.slice(0, 3)} reference={reference33} />
 </article>
 
 <style>
@@ -67,5 +77,166 @@ const { model } = Astro.props;
       margin-inline: auto;
     }
     .px2__decision-zone > :global(*) { width: 100%; min-width: 0; }
+  }
+
+  .px2--reference33 {
+    --px2-surface: var(--pt33-color-surface);
+    --px2-surface-soft: var(--pt33-color-surface-subtle);
+    --px2-surface-raised: var(--pt33-color-surface-raised);
+    --px2-text: var(--pt33-color-text-primary);
+    --px2-muted: var(--pt33-color-text-secondary);
+    --px2-border: var(--pt33-color-border-subtle);
+    --px2-action-bg: var(--pt33-color-action-primary);
+    --px2-action-bg-hover: var(--pt33-color-action-primary-hover);
+    --px2-action-text: var(--pt33-color-action-on-primary);
+    --px2-accent-text: var(--pt33-color-action-primary);
+    --px2-green: var(--pt33-color-action-primary);
+    --px2-green-strong: var(--pt33-color-action-primary);
+    --px2-green-soft: var(--pt33-color-surface-subtle);
+    --px2-amber: var(--pt33-color-status-warning);
+    --px2-amber-soft: var(--pt33-color-surface-subtle);
+    --px2-red: var(--pt33-color-status-critical);
+    --px2-red-soft: var(--pt33-color-surface-subtle);
+    --px2-indigo: var(--pt33-color-evidence-verified);
+    --px2-shadow: var(--pt33-shadow-raised);
+    --px2-on-accent: var(--pt33-color-action-on-primary);
+    gap: var(--pt33-space-20);
+    max-width: var(--pt33-grid-wide);
+    margin-inline: auto;
+    padding: var(--pt33-space-8) var(--pt33-gutter) var(--pt33-space-24);
+  }
+
+  .px2--reference33 .px2__decision-zone { gap: var(--pt33-space-16); }
+
+  @media (max-width: 759px) {
+    .px2--reference33 { padding-top: 0; }
+    .px2--reference33 .px2__decision-zone { width: 100%; margin-inline: 0; }
+    :global(.pt-page:has(.px2--reference33)) { overflow-x: visible; }
+  }
+
+  /* 33.0.1b: reference-only longform rhythm. Sections remain semantic; cards are
+     reserved for the interactive fit and alternative products. */
+  .px2--reference33 :global(:is(.decision-facts, .purchase-mistakes, .timeline, .community, .details, .evidence)) {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .px2--reference33 :global(:is(.decision-facts, .purchase-mistakes, .timeline, .community, .details, .evidence) > header),
+  .px2--reference33 :global(.details > section > h2) {
+    padding-bottom: var(--pt33-space-4);
+    border-bottom: 1px solid var(--px2-border);
+  }
+
+  .px2--reference33 :global(.decision-facts dl),
+  .px2--reference33 :global(.community__groups),
+  .px2--reference33 :global(.evidence__sources) {
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .px2--reference33 :global(.decision-facts dl > div),
+  .px2--reference33 :global(.purchase-mistakes article),
+  .px2--reference33 :global(.community__group),
+  .px2--reference33 :global(.details > aside),
+  .px2--reference33 :global(.details > details),
+  .px2--reference33 :global(.details > section) {
+    padding: var(--pt33-space-4) 0;
+    border: 0;
+    border-top: 1px solid var(--px2-border);
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .px2--reference33 :global(.decision-facts dl > div:first-child),
+  .px2--reference33 :global(.purchase-mistakes article:first-child),
+  .px2--reference33 :global(.community__group:first-child) { border-top: 0; }
+
+  .px2--reference33 :global(.purchase-mistakes) { gap: var(--pt33-space-6); }
+  .px2--reference33 :global(.purchase-mistakes header span),
+  .px2--reference33 :global(.details__column--negative .details__eyebrow) { color: var(--px2-text); }
+  .px2--reference33 :global(.purchase-mistakes__grid) { gap: 0; }
+  .px2--reference33 :global(.purchase-mistakes article) { display: grid; gap: 3px; }
+  .px2--reference33 :global(.purchase-mistakes h3) { margin: 0; }
+
+  .px2--reference33 :global(.community__group h3 span) { background: transparent; }
+  .px2--reference33 :global(.community__group.is-negative h3 span) { color: var(--px2-text); }
+  .px2--reference33 :global(.evidence__basis) { display: grid; gap: 0; }
+  .px2--reference33 :global(.evidence__basis li) {
+    padding: var(--pt33-space-3) 0;
+    border: 0;
+    border-top: 1px solid var(--px2-border);
+    border-radius: 0;
+    background: transparent;
+  }
+  .px2--reference33 :global(.evidence__basis li:first-child) { border-top: 0; }
+  .px2--reference33 :global(.evidence__hands-on) { padding: var(--pt33-space-3) 0; border-radius: 0; background: transparent; border-top: 1px solid var(--px2-border); }
+
+  /* 33.0.1g: the remaining decision content follows the hero's editorial rhythm. */
+  .px2--reference33 :global(.category-fit) {
+    padding: var(--pt33-space-6);
+    border: 1px solid var(--px2-border);
+    border-radius: var(--pt33-radius-md);
+    background: var(--px2-surface-soft);
+    box-shadow: none;
+  }
+  .px2--reference33 :global(.category-fit > header) { padding-bottom: var(--pt33-space-4); border-bottom: 1px solid var(--px2-border); }
+  .px2--reference33 :global(.category-fit > form) { padding-top: var(--pt33-space-2); }
+  .px2--reference33 :global(.category-fit aside) { border-color: var(--px2-border); background: var(--px2-surface-raised); }
+
+  .px2--reference33 :global(.decision-facts dd) { padding-left: 0; }
+  .px2--reference33 :global(.decision-facts dd::before) { display: none; }
+  .px2--reference33 :global(.decision-facts dt span) { color: var(--px2-muted); }
+
+  .px2--reference33 :global(.alternatives) { gap: var(--pt33-space-6); }
+  .px2--reference33 :global(.alternatives article) { border-radius: var(--pt33-radius-md); box-shadow: none; }
+  .px2--reference33 :global(.alternatives__image) { aspect-ratio: 16 / 9; background: var(--px2-surface-soft); }
+  .px2--reference33 :global(.alternatives__body) { gap: 0; padding: var(--pt33-space-4); }
+  .px2--reference33 :global(.alternatives__body > p) { order: 1; margin-bottom: var(--pt33-space-4); color: var(--px2-text); font-size: .95rem; }
+  .px2--reference33 :global(.alternatives .pt-score) { order: 2; margin-top: 0; padding-top: var(--pt33-space-3); }
+  .px2--reference33 :global(.alternatives__meta) { order: 3; margin-top: var(--pt33-space-3); margin-bottom: var(--pt33-space-3); color: var(--px2-muted); font-size: .9rem; }
+  .px2--reference33 :global(.alternatives a) { order: 4; padding: 0; background: transparent; color: var(--px2-accent-text); text-align: left; }
+
+  .px2--reference33 :global(.community) { gap: var(--pt33-space-5); }
+  .px2--reference33 :global(.community__groups) { gap: 0; }
+  .px2--reference33 :global(.community__group) { gap: var(--pt33-space-3); }
+  .px2--reference33 :global(.community__group li strong) { color: var(--px2-text); font-size: .95rem; }
+  .px2--reference33 :global(.community__group li small) { font-size: .8rem; }
+  .px2--reference33 :global(.community__group li p) { font-size: .88rem; }
+  .px2--reference33 :global(.community__footer) { padding-top: var(--pt33-space-3); border-top: 1px solid var(--px2-border); }
+
+  /* The reference FAQ remains a native details accordion; only its former card
+     treatment is removed in favour of a single editorial divider list. */
+  .px2--reference33 :global(.details__faq) { display: grid; gap: 0; }
+  .px2--reference33 :global(.details__faq > h2) { margin: 0; }
+  .px2--reference33 :global(.details__faq > details) {
+    padding: var(--pt33-space-4) 0;
+    border: 0;
+    border-top: 1px solid var(--px2-border);
+    border-radius: 0;
+    background: transparent;
+  }
+  .px2--reference33 :global(.details__faq > details:last-child) { border-bottom: 1px solid var(--px2-border); }
+  .px2--reference33 :global(.details__faq > details > summary) { border-radius: var(--pt33-radius-sm); }
+  .px2--reference33 :global(.details__faq > details > summary:focus-visible) {
+    outline: 2px solid var(--px2-accent-text);
+    outline-offset: 4px;
+  }
+
+  .px2--reference33 :global(.px2-hero__suitability ul) { display: grid; gap: 5px; }
+  .px2--reference33 :global(.px2-hero__suitability li) { padding: 0; border: 0; border-radius: 0; font-size: .86rem; }
+  .px2--reference33 :global(.px2-hero__suitability li::before) { color: var(--px2-accent-text); content: "✓ "; font-weight: 850; }
+
+  @media (min-width: 720px) {
+    .px2--reference33 :global(.decision-facts dl > div),
+    .px2--reference33 :global(.details > aside),
+    .px2--reference33 :global(.details > details),
+    .px2--reference33 :global(.details > section) { padding: var(--pt33-space-5) 0; }
+    .px2--reference33 :global(.decision-facts dl > div:nth-child(-n + 2)) { border-top: 0; }
+    .px2--reference33 :global(.decision-facts dl > div:nth-child(odd)) { border-right: 1px solid var(--px2-border); padding-right: var(--pt33-space-6); }
+    .px2--reference33 :global(.decision-facts dl > div:nth-child(even)) { padding-left: var(--pt33-space-6); }
   }
 </style>

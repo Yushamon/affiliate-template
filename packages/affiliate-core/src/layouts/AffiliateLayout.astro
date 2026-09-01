@@ -41,6 +41,7 @@ interface Props {
   includeBreadcrumbSchema?: boolean;
   noindex?: boolean;
   webAnalyticsToken?: string;
+  foundation?: boolean;
   headerLinks?: Array<{
     label: string;
     href: string;
@@ -226,7 +227,7 @@ const breadcrumbSchema = createBreadcrumbSchema(
 const faqSchema = createFaqSchema(faq);
 ---
 
-<html lang="de">
+<html lang="de" data-pt-foundation={Astro.props.foundation ? true : undefined}>
   <head>
     <meta charset="utf-8" />
 
@@ -382,7 +383,7 @@ const faqSchema = createFaqSchema(faq);
     }
   </head>
 
-  <body>
+  <body data-pt-foundation={Astro.props.foundation ? true : undefined}>
     <Header
       projectName={projectConfig.projectName}
       links={headerLinks}

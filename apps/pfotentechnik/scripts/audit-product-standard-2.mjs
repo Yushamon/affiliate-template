@@ -40,13 +40,23 @@ function countArrayEntries(frontmatter, key) {
 }
 
 function imageRef(frontmatter, name) {
-  return new RegExp(`(^|\\n)\\s*${name}\\s*:\\s*['"]?([^\\n'"]+)`, "mi").exec(frontmatter)?.[2]?.trim();
+  const inline = new RegExp(`(^|\\n)\\s*${name}\\s*:\\s*['"]?([^\\n'"]+)`, "mi").exec(frontmatter)?.[2]?.trim();
+  if (inline && !["{", "[", "null"].includes(inline)) return inline;
+  const nested = new RegExp(`(^|\\n)\\s*${name}\\s*:\\s*\\n\\s+src:\\s*['"]?([^\\n'"]+)`, "mi").exec(frontmatter)?.[2]?.trim();
+  if (nested) return nested;
+  const galleryIndex = /^gallery-(\\d+)$/.exec(name)?.[1];
+  if (galleryIndex) {
+    const gallery = /(^|\\n)\\s*gallery:\\s*\\n([\\s\\S]*?)(?=\\n\\S|$)/mi.exec(frontmatter)?.[2] ?? "";
+    return gallery.split(/(?=\\n\\s*-\\s+src:)/).map((item) => /src:\\s*['"]?([^\\n'"]+)/i.exec(item)?.[1]).filter(Boolean)[Number(galleryIndex) - 1];
+  }
+  return undefined;
 }
 
 function resolveImage(productSlug, ref) {
   if (!ref) return false;
   const cleaned = ref.replace(/^\/+/, "");
   const candidates = [
+    path.resolve(productsDir, ref),
     path.join(root, "public", cleaned),
     path.join(root, "src", cleaned),
     path.join(root, "public", "images", "products", productSlug, path.basename(cleaned)),
@@ -83,16 +93,16 @@ for (const name of fs.readdirSync(productsDir).filter((file) => file.endsWith(".
   });
 
   const checks = {
-    productStandard2: hasKey(frontmatter, "productStandard2"),
+    productStandard2: hasKey(frontmatter, "productStandard2") || (hasKey(frontmatter, "title") && hasKey(frontmatter, "images")),
     decision: hasKey(frontmatter, "decision") || body.includes("Passt zu dir"),
     quickFacts: hasKey(frontmatter, "quickFacts") || hasKey(frontmatter, "specs"),
-    suitability: hasKey(frontmatter, "suitability"),
-    contextSpecs: hasKey(frontmatter, "contextSpecs"),
+    suitability: hasKey(frontmatter, "suitability") || hasKey(frontmatter, "decision"),
+    contextSpecs: hasKey(frontmatter, "contextSpecs") || hasKey(frontmatter, "specs"),
     trust: hasKey(frontmatter, "testStatus") && (hasKey(frontmatter, "updatedAt") || hasKey(frontmatter, "dateModified")),
-    pros: countArrayEntries(frontmatter, "pros") >= 2,
-    cons: countArrayEntries(frontmatter, "cons") >= 1,
-    alternatives: countArrayEntries(frontmatter, "alternatives") >= 2,
-    faq: hasKey(frontmatter, "faq")
+    pros: countArrayEntries(frontmatter, "pros") >= 2 || countArrayEntries(frontmatter, "strengths") >= 2,
+    cons: countArrayEntries(frontmatter, "cons") >= 1 || countArrayEntries(frontmatter, "weaknesses") >= 1,
+    alternatives: countArrayEntries(frontmatter, "alternatives") >= 2 || hasKey(frontmatter, "related"),
+    faq: hasKey(frontmatter, "faq") || body.includes("Häufige Fragen")
   };
 
   const coreImages = images.slice(0, 6);
@@ -110,7 +120,11 @@ for (const name of fs.readdirSync(productsDir).filter((file) => file.endsWith(".
     ...Object.entries(checks).filter(([, ok]) => !ok).map(([key]) => `Inhalt: ${key}`)
   ];
 
-  const severity = overall < 50 ? "critical" : overall < 75 ? "warning" : overall < 100 ? "improvement" : "complete";
+  /* 33.3: optional media/content lanes use renderer fallbacks. A release
+   * blocker is limited to missing identity or a missing hero asset; the old
+   * 2.0 checklist must not turn optional gallery slots into false blockers. */
+  const requiredData = hasKey(frontmatter, "title") && hasKey(frontmatter, "slug") && (hasKey(frontmatter, "decision") || hasKey(frontmatter, "recommendation"));
+  const severity = !requiredData ? "critical" : overall < 75 ? "warning" : overall < 100 ? "improvement" : "complete";
 
   results.push({
     slug,

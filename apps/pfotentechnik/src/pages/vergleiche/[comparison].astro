@@ -7,8 +7,8 @@ import DecisionNextSteps from "../../components/DecisionNextSteps.astro";
 import DecisionJourney from "../../components/DecisionJourney.astro";
 import AdvisorCta from "../../components/AdvisorCta.astro";
 import EditorialTransparency from "../../components/EditorialTransparency.astro";
+import ComparisonProduction from "../../components/comparison/ComparisonProduction.astro";
 import { siteMeta } from "../../project.config";
-import ComparisonShell from "@affiliate-core/components/comparison/ComparisonShell.astro";
 import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import { buildComparisonViewModel } from "@app/domain/comparison/buildComparisonViewModel";
 import {
@@ -78,7 +78,6 @@ const model = buildComparisonViewModel({
   products,
   manufacturers
 });
-
 const comparisonAdvisorDimensions = model.filters
   .map((filter) => filter.label)
   .slice(0, 4);
@@ -174,27 +173,30 @@ const comparisonNextSteps = buildComparisonNextSteps({
   publishedAt={comparison.publishedAt}
   updatedAt={comparison.updatedAt ?? comparison.publishedAt}
   author={comparison.author ?? siteMeta.defaultAuthor}
-
+  foundation={true}
   mainClass="container--page">
   <script
     type="application/ld+json"
     set:html={JSON.stringify(comparisonItemListSchema)}
   />
 
-  <div class="pt-page pt-page--comparison">
-    <ComparisonShell model={model} />
+  <div class="pt-page pt-page--comparison pt-page--production-comparison">
+    <ComparisonProduction model={model} />
 
-    <article class="comparison-content">
-      <AutoLinkContent
-        definitions={internalLinkDefinitions}
-        sourcePath={`/vergleiche/${comparison.slug}/`}
-        sourceGroup="comparison"
-        sourceContexts={sourceContexts}
-        maxLinksPerPage={6}
-      >
-        <Content />
-      </AutoLinkContent>
-    </article>
+    <details class="comparison-content comparison-content--production-depth">
+      <summary>Hintergrund, Methodik und alle Quellen anzeigen</summary>
+      <article>
+        <AutoLinkContent
+          definitions={internalLinkDefinitions}
+          sourcePath={`/vergleiche/${comparison.slug}/`}
+          sourceGroup="comparison"
+          sourceContexts={sourceContexts}
+          maxLinksPerPage={6}
+        >
+          <Content />
+        </AutoLinkContent>
+      </article>
+    </details>
 
     <EditorialTransparency
       kind="vergleich"

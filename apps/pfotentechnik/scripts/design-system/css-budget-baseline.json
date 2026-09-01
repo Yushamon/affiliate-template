@@ -2,7 +2,7 @@
   "version": 2,
   "createdAt": "2026-07-31T21:32:02.330Z",
   "limits": {
-    "cssFiles": 42,
+    "cssFiles": 44,
     "cssBytes": 531991,
     "importantRules": 1243,
     "rootBlocks": 24,
@@ -34,7 +34,7 @@
     }
   },
   "notes": {
-    "cssFiles": "Baseline an die abgeschlossene modulare CSS-Layer-Architektur angepasst. Kein weiterer Dateizuwachs ohne Prüfung.",
+    "cssFiles": "44 Dateien: zwei geprüfte 33.x-Foundation-Module wurden als gemeinsame Produktionsgrundlage ergänzt.",
     "cssBytes": "Exakter geprüfter Ist-Stand nach modularer CSS-Aufteilung und Comparison-Tokenisierung. Kein Wachstumspuffer.",
     "importantRules": "Neue Baseline liegt unter dem vorherigen Bestand. Weitere !important-Zunahme ist nicht freigegeben.",
     "rootBlocks": "Unveränderter geprüfter Bestand. Weitere Root-Blöcke sind nicht freigegeben.",

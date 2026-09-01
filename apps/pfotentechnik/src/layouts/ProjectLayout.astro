@@ -35,6 +35,7 @@ const canonical = normalizeCanonicalPath(props.canonical ?? "/");
 
 <AffiliateLayout
   {...props}
+  foundation={props.foundation ?? true}
   canonical={canonical}
   webAnalyticsToken={webAnalyticsToken}
 >

@@ -53,9 +53,4 @@
 }
 @media (max-width: 759px) {
   .container.container--page { --pt-page-gutter: 16px; }
-  .pt-page--product [data-mobile-gallery-full-bleed] {
-    width: 100vw;
-    max-width: none;
-    margin-inline: calc(50% - 50vw);
-  }
 }

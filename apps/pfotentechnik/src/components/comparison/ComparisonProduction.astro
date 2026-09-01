@@ -1,0 +1,101 @@
+---
+import EditorialScore from "@affiliate-core/components/EditorialScore.astro";
+import ComparisonExplorer from "@affiliate-core/components/comparison/ComparisonExplorer.astro";
+import { getPriceDisplay } from "@affiliate-core/comparison/price";
+import type { ComparisonProduct, ComparisonViewModel } from "@affiliate-core/comparison/model";
+import { resolveMediaSource } from "../../domain/comparison/mediaResolver.mjs";
+
+type Props = { model: ComparisonViewModel };
+const { model } = Astro.props as Props;
+const first = model.verdict.winner;
+const second = model.verdict.alternative;
+const products = [first, second].filter(Boolean) as ComparisonProduct[];
+const selectionReasons = model.selectionReasons ?? {};
+const alternativeReasons = model.alternativeReasons ?? {};
+const alternatives = model.relevantAlternatives ?? model.products.filter((product) => !products.some((finalist) => finalist.slug === product.slug));
+const visibleAlternatives = alternatives.slice(0, 3);
+const decisionRows = model.rows.filter((row) => row.hasDifferences).slice(0, 4);
+const imageSource = (image: ComparisonProduct["image"]) => resolveMediaSource(image);
+---
+
+<div class="rc33" data-comparison-production="33.3">
+  <section class="rc33__hero" aria-labelledby="rc33-title">
+    <header><span>Direktvergleich</span><h1 id="rc33-title">{model.title}</h1><p>{model.description}</p></header>
+    <div class="rc33__stage" aria-label="Die zwei wichtigsten Modelle im Vergleich">
+      {products.map((product, index) => {
+        const price = getPriceDisplay(product.price);
+        return <article class:list={["rc33__product", index === 0 && "is-recommended", !imageSource(product.image) && "rc33__product--no-media"]}>
+          <span>{index === 0 ? "Finalist" : "Finalist für einen anderen Schwerpunkt"}</span>
+          {imageSource(product.image) && <img src={imageSource(product.image)} alt={product.image?.alt ?? product.title} width="680" height="510" loading="eager" decoding="async" />}
+          <h2>{product.title}</h2>
+          <p class="rc33__product-fit"><strong>Passt besonders für:</strong> {selectionReasons[product.slug] ?? product.recommendation}</p>
+          <div class="rc33__product-meta">
+            <strong>{price.amountLabel?.replace(/^ca\.\s*/, "") ?? "Preis aktuell prüfen"}</strong>
+            {typeof product.rating === "number" && <EditorialScore value={product.rating} scale={100} variant="inline" label="Redaktioneller Score" />}
+          </div>
+          <a href={product.href}>Produktcheck lesen <span aria-hidden="true">→</span></a>
+        </article>;
+      })}
+    </div>
+    <div class="rc33__verdict"><span>Kurzurteil</span><h2>{model.verdict.title}</h2><p>{model.verdict.text}</p><p class="rc33__shortlist-note"><strong>Warum diese Auswahl?</strong> Die zwei Finalisten werden aus den belegten Produkten dieses Vergleichs nach Datenqualität, Eignung und unterschiedlichen Nutzungsschwerpunkten bestimmt. Weitere relevante Modelle bleiben in den Alternativen und im vollständigen Explorer sichtbar.</p></div>
+  </section>
+
+  {products.length === 2 && <>
+    <section class="rc33__section rc33__fast" aria-labelledby="rc33-fast"><span>In 20 Sekunden entschieden</span><h2 id="rc33-fast">Nimm das Modell, das deinen Alltag wirklich löst.</h2><div>
+      {products.map((product) => <article><span>Entscheidungsprofil</span><h3>{product.title}</h3><p><strong>Wähle es, wenn:</strong></p><ul>{[...product.strengths, ...product.attention].slice(0, 2).map((item) => <li>{item}</li>)}</ul></article>)}
+    </div><p class="rc33__not-for">Prüfe vor dem Kauf die dokumentierten Grenzen und die Anforderungen deines konkreten Alltags.</p></section>
+
+    <section class="rc33__section rc33__differences" aria-labelledby="rc33-differences"><span>Die entscheidenden Unterschiede</span><h2 id="rc33-differences">Was sich im Alltag wirklich unterscheidet.</h2><div class="rc33__difference" aria-labelledby="rc33-difference"><span>Der Unterschied, der wirklich zählt</span><h3 id="rc33-difference">{decisionRows[0]?.criterion.label ?? "Die unterschiedliche Alltagstauglichkeit"}</h3><div class="rc33__split rc33__ab">{products.map((product) => <article><span>{product.title}</span><p>{decisionRows[0]?.cells.find((cell) => cell.productSlug === product.slug)?.value ?? product.recommendation}</p></article>)}</div><p class="rc33__difference-consequence">Deshalb ist das relevant: {decisionRows[0]?.criterion.description ?? "Dieser dokumentierte Unterschied entscheidet, welcher Nutzungsschwerpunkt zu dir passt."}</p></div><dl>{decisionRows.slice(1).map((row) => <div><dt>{row.criterion.label}</dt>{products.map((product) => <dd><strong>{product.title}</strong>{row.cells.find((cell) => cell.productSlug === product.slug)?.value ?? "–"}</dd>)}</div>)}</dl><details class="rc33__technical-details"><summary>Alle technischen Daten anzeigen</summary><dl>{model.rows.filter((row) => !decisionRows.some((decisionRow) => decisionRow.criterion.key === row.criterion.key)).map((row) => <div><dt>{row.criterion.label}</dt>{products.map((product) => <dd><strong>{product.title}</strong>{row.cells.find((cell) => cell.productSlug === product.slug)?.value ?? "–"}</dd>)}</div>)}</dl></details></section>
+
+    <section class="rc33__section rc33__fit" aria-labelledby="rc33-fit"><span>Welcher passt zu dir?</span><h2 id="rc33-fit">Grenze den Vergleich auf deinen Alltag ein.</h2><p>Beantworte ein paar Fragen und sieh, welches Modell besser zu deinem Alltag passt.</p><details class="rc33__explorer" id="direktvergleich"><summary>Persönlichen Vergleich öffnen</summary><ComparisonExplorer products={model.products} rows={model.rows} filters={model.filters} initialVisibleProducts={model.initialVisibleProducts} /></details></section>
+
+    <section class="rc33__section rc33__scenarios" aria-labelledby="rc33-scenarios"><span>Alltag & Grenzen</span><h2 id="rc33-scenarios">Was passiert, wenn der anspruchsvolle Fall eintritt?</h2><dl>{model.scenarioRecommendations.slice(0, 4).map((scenario) => <div><dt>{scenario.label}</dt>{products.map((product) => <dd><strong>{product.title}</strong>{scenario.winner.slug === product.slug ? scenario.reason : scenario.alternative?.slug === product.slug ? scenario.alternative.recommendation : "Für diesen Fall ist keine stärkere Einordnung hinterlegt."}</dd>)}</div>)}</dl><p class="rc33__scenario-takeaway">Die passende Wahl hängt hier am Alltagsszenario, nicht an einem universellen Gesamtsieger.</p></section>
+  </>}
+
+  {visibleAlternatives.length > 0 && <section class="rc33__section rc33__alternatives" aria-labelledby="rc33-alternatives"><span>Weitere interessante Modelle</span><h2 id="rc33-alternatives">Ernsthafte Alternativen für einen anderen Schwerpunkt.</h2><p>Die Finalisten werden vertieft gegenübergestellt; diese Modelle decken weitere eigenständige Fälle ab.</p><div>{visibleAlternatives.map((product) => { const price = getPriceDisplay(product.price); const media = product.image; return <article><>{imageSource(media) && <img src={imageSource(media)} alt={media?.alt ?? product.title} width="360" height="270" loading="lazy" decoding="async" />}</><div><h3>{product.title}</h3><p><strong>Interessant wenn:</strong> {alternativeReasons[product.slug] ?? product.recommendation}</p><div class="rc33__alternative-meta"><strong>{price.amountLabel?.replace(/^ca\.\s*/, "") ?? "Preis aktuell prüfen"}</strong>{typeof product.rating === "number" && <EditorialScore value={product.rating} scale={100} variant="inline" label="Redaktioneller Score" />}</div><p class="rc33__alternative-note"><strong>Kompromiss:</strong> Die vertiefte A/B-Entscheidung bleibt auf die zwei klarsten Alltagswege konzentriert.</p><a href={product.href}>Produktcheck lesen <span aria-hidden="true">→</span></a></div></article>; })}</div></section>}
+
+  <section class="rc33__section rc33__final" aria-labelledby="rc33-final"><span>Finale Entscheidung</span><h2 id="rc33-final">Welches solltest du nehmen?</h2><div>{products.map((product, index) => <article><h3>{product.title}</h3><p>{index === 0 ? model.verdict.text : product.recommendation}</p><a href={product.href}>Zu {product.title} <span aria-hidden="true">→</span></a></article>)}</div></section>
+</div>
+
+<style>
+  .rc33{--rc-text:var(--pt33-color-text-primary);--rc-muted:var(--pt33-color-text-secondary);--rc-line:var(--pt33-color-border-subtle);--rc-surface:var(--pt33-color-surface-raised);--rc-accent:var(--pt33-color-action-primary);color:var(--rc-text)}
+  .rc33__hero,.rc33__section{width:100%;margin:0;padding-block:clamp(3.5rem,7vw,7rem);border-bottom:1px solid var(--rc-line)}
+  .rc33 :is(header>span,.rc33__section>span,.rc33__product>span,.rc33__verdict>span){color:var(--rc-accent);font-size:.78rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.rc33 h1{max-width:18ch;margin:.4rem 0;font-size:clamp(2.4rem,6vw,5.6rem);line-height:.94;overflow-wrap:anywhere}.rc33 h2{max-width:22ch;margin:.4rem 0 1rem;font-size:clamp(1.8rem,3vw,3rem);line-height:1.04}.rc33 p,.rc33 li,.rc33 dd{color:var(--rc-muted);line-height:1.55}.rc33__hero>header>p{max-width:62ch;font-size:1.08rem}.rc33__stage{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1rem,3vw,2.5rem);margin-top:2.5rem}.rc33__product{padding:clamp(1rem,2vw,1.5rem);border:1px solid var(--rc-line);border-radius:var(--pt33-radius-md);background:var(--rc-surface)}.rc33__product picture,.rc33__product :global(img){display:block;width:100%;aspect-ratio:4/3;object-fit:contain}.rc33__product h2{margin-top:1rem;font-size:clamp(1.25rem,2.2vw,2rem)}.rc33__product-meta{display:flex;align-items:center;justify-content:space-between;gap:1rem}.rc33__product a,.rc33__final a{font-weight:800;color:var(--rc-accent)}.rc33__verdict{max-width:760px;margin:3rem auto 0;text-align:center}.rc33__fast>div,.rc33__split,.rc33__final>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}.rc33__fast article,.rc33__split article,.rc33__final article{padding:1.25rem 0;border-top:2px solid var(--rc-accent)}.rc33__difference{background:color-mix(in srgb,var(--rc-accent) 6%,var(--rc-surface));padding-inline:clamp(1.25rem,4vw,3rem);border-radius:var(--pt33-radius-md)}.rc33__ab article>span{color:var(--rc-accent);font-size:.75rem;font-weight:850;letter-spacing:.08em;text-transform:uppercase}.rc33__difference-consequence{max-width:62ch;border-top:1px solid var(--rc-line);margin:1.5rem 0 0;padding-top:1rem;font-weight:700}.rc33 h3{margin:.2rem 0 1rem;font-size:1.15rem}.rc33 ul{padding-left:1.1rem}.rc33__fit{max-width:none;background:color-mix(in srgb,var(--rc-accent) 7%,var(--rc-surface));padding-inline:clamp(1.25rem,4vw,3rem);border-radius:var(--pt33-radius-md)}.rc33__explorer{margin-top:1.75rem}.rc33__explorer[open]{padding-bottom:1rem}.rc33__differences dl{margin:2rem 0}.rc33__differences dl>div{display:grid;grid-template-columns:minmax(180px,.65fr) repeat(2,minmax(0,1fr));gap:1rem;padding:1.1rem 0;border-top:1px solid var(--rc-line)}.rc33 dt{font-weight:800}.rc33 dd{margin:0}.rc33 dd strong{display:block;color:var(--rc-text);font-size:.8rem}.rc33 details{border-top:1px solid var(--rc-line);padding-top:1rem}.rc33 summary{cursor:pointer;font-weight:800;color:var(--rc-accent)}.rc33__final{border-bottom:0}.rc33__final article{padding-top:1.25rem}
+  @media(max-width:700px){.rc33__hero,.rc33__section{padding-block:3rem}.rc33__stage,.rc33__fast>div,.rc33__split,.rc33__final>div{grid-template-columns:1fr}.rc33__product-meta{align-items:flex-start;flex-direction:column}.rc33__differences dl>div{grid-template-columns:1fr;gap:.45rem}.rc33__differences dd{padding-left:1rem}}
+  :global(.pt-page--production-comparison > .comparison-content){width:min(calc(100% - 2*var(--pt-page-gutter)),var(--pt33-reading-width));max-width:var(--pt33-reading-width);margin-inline:auto}
+  :global(.pt-page--production-comparison > .editorial-transparency){width:min(calc(100% - 2*var(--pt-page-gutter)),var(--pt-content-width));margin-inline:auto}
+  :global(.pt-page--production-comparison > .comparison-content--production-depth){margin-block:clamp(3rem,6vw,5.5rem);padding-block:1rem;border-block:1px solid var(--rc-line)}
+  :global(.pt-page--production-comparison > .comparison-content--production-depth > summary){cursor:pointer;color:var(--rc-accent);font-weight:800}
+  :global(.pt-page--production-comparison > .comparison-content--production-depth[open] > article){padding-top:1.5rem}
+  .rc33 details:not([open]) :global(.comparison-lab){display:none}
+  .rc33__alternatives>p{max-width:62ch}.rc33__alternatives>div{display:grid;gap:1rem}.rc33__alternatives article{display:grid;grid-template-columns:minmax(9rem,.32fr) minmax(0,1fr);gap:1.25rem;padding:1.25rem 0;border-top:1px solid var(--rc-line)}.rc33__alternatives img{width:100%;aspect-ratio:4/3;object-fit:contain}.rc33__alternatives h3{font-size:clamp(1.25rem,2vw,1.7rem)}.rc33__alternative-meta{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}.rc33__alternative-note{font-size:.9rem}.rc33__alternatives a{color:var(--rc-accent);font-weight:800}@media(max-width:700px){.rc33__alternatives article{grid-template-columns:1fr}}
+  /* 33.2.1: six-chapter decision density overrides */
+  .rc33__hero,.rc33__section{padding-block:clamp(3rem,6vw,5.5rem)}
+  .rc33__fast{padding-top:1.5rem}
+  .rc33__verdict{margin-top:2.25rem}
+  .rc33__fast>div,.rc33__split,.rc33__final>div,.rc33__compromises{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}
+  .rc33__fast article,.rc33__split article,.rc33__final article,.rc33__compromises article{padding:1rem 0;border-top:2px solid var(--rc-accent)}
+  .rc33__not-for{margin:1rem 0 0;font-size:.92rem}
+  .rc33__difference{margin-top:1.75rem;padding:clamp(1.25rem,3vw,2rem)}
+  .rc33__difference h3{font-size:clamp(1.35rem,2.5vw,2.1rem)}
+  .rc33__difference-consequence{margin-top:1rem}
+  .rc33__explorer{margin-top:1.25rem}
+  .rc33__differences dl,.rc33__scenarios dl{margin:1.5rem 0}
+  .rc33__differences dl>div,.rc33__scenarios dl>div{display:grid;grid-template-columns:minmax(180px,.65fr) repeat(2,minmax(0,1fr));gap:1rem;padding:1rem 0;border-top:1px solid var(--rc-line)}
+  .rc33__technical-details{margin-top:.5rem}
+  .rc33__technical-details[open]>dl{margin-bottom:0}
+  .rc33__compromises{margin-top:1.5rem}
+  .rc33__compromises p{margin:.45rem 0;font-size:.94rem}
+  .rc33__alternatives>div{grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1.25rem,3vw,2.5rem)}
+  .rc33__alternatives article{grid-template-columns:minmax(7rem,.42fr) minmax(0,1fr);gap:1rem;padding:1rem 0}
+  .rc33__alternatives h3{font-size:clamp(1.15rem,1.7vw,1.45rem)}
+  .rc33__alternative-meta{gap:.75rem}
+  .rc33__verdict{text-align:left}.rc33__verdict>p{max-width:62ch;margin-inline:0}.rc33__shortlist-note{margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--rc-line);font-size:.94rem}
+  .rc33__product-fit{margin:0 0 1rem}.rc33__product-meta{align-items:flex-start}.rc33__product-meta :global(.pt-score){margin-left:auto}
+  .rc33__difference .rc33__ab article{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:.75rem;align-items:start}.rc33__difference .rc33__ab article>span{grid-column:1/-1}.rc33__difference .rc33__ab article p{margin:0;font-weight:650}
+  .rc33__explorer{padding:0;border:1px solid color-mix(in srgb,var(--rc-line) 80%,var(--rc-accent));border-radius:var(--pt33-radius-md);background:color-mix(in srgb,var(--rc-accent) 4%,transparent)}
+  .rc33__explorer>summary{display:flex;min-height:3.25rem;padding:0 1rem;align-items:center;justify-content:space-between;color:var(--rc-text);list-style:none}.rc33__explorer>summary::-webkit-details-marker{display:none}.rc33__explorer>summary::after{color:var(--rc-accent);content:"+";font-size:1.35rem;font-weight:700}.rc33__explorer[open]>summary{border-bottom:1px solid var(--rc-line)}.rc33__explorer[open]>summary::after{content:"−"}.rc33__explorer :global(.comparison-lab){padding:1rem}
+  .rc33__stage{gap:clamp(1.5rem,4vw,3.5rem)}.rc33__product{display:grid;grid-template-rows:auto minmax(16rem,1fr) auto;padding:clamp(1.25rem,2.5vw,2rem)}.rc33__product picture,.rc33__product :global(img){min-height:16rem;aspect-ratio:1/1.05}.rc33__product-fit{font-size:1.02rem}.rc33__fast article{padding:1.25rem;border-top:0;border-left:2px solid var(--rc-accent);background:color-mix(in srgb,var(--rc-accent) 4%,transparent)}.rc33__fast article>span{color:var(--rc-accent);font-size:.72rem;font-weight:850;letter-spacing:.08em;text-transform:uppercase}.rc33__fast article p{margin:.5rem 0 0}.rc33__difference .rc33__ab article{padding:1.25rem;border-top:0;border-left:2px solid var(--rc-accent)}.rc33__scenarios dl>div{grid-template-columns:minmax(10rem,.45fr) repeat(2,minmax(0,1fr));padding:1.25rem 0}.rc33__scenarios dd{padding-left:1rem;border-left:1px solid var(--rc-line)}.rc33__scenario-takeaway{margin:1.25rem 0 0;font-weight:700}.rc33__alternatives>div{grid-template-columns:repeat(3,minmax(0,1fr))}.rc33__alternatives article{grid-template-columns:1fr}.rc33__alternatives img{max-height:10rem}.rc33__fit{padding-block:clamp(3.5rem,6vw,5rem)}
+  .rc33__product--no-media{grid-template-rows:auto auto auto}.rc33__product--no-media::before{display:block;content:"Bild nicht verfügbar";min-height:2rem;color:var(--rc-muted);font-size:.82rem}
+  @media(max-width:700px){.rc33__hero,.rc33__section{padding-block:2.75rem}.rc33__stage,.rc33__fast>div,.rc33__split,.rc33__final>div,.rc33__compromises,.rc33__alternatives>div,.rc33__alternatives article{grid-template-columns:1fr}.rc33__differences dl>div,.rc33__scenarios dl>div{grid-template-columns:1fr;gap:.45rem}.rc33__scenarios dd{padding-left:1rem}}
+</style>

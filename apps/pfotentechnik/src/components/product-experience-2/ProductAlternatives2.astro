@@ -13,10 +13,11 @@ interface Alternative {
   reason: string;
 }
 
-interface Props { alternatives: Alternative[] }
-const { alternatives } = Astro.props;
+interface Props { alternatives: Alternative[]; reference?: boolean }
+const { alternatives, reference = false } = Astro.props;
 const cards = await Promise.all(alternatives.slice(0, 4).map(async (item) => ({
   ...item,
+  source: typeof item.image?.src === "string" ? item.image.src : item.image?.src?.src,
   optimized: item.image?.src ? await getCachedImage({ src:item.image.src, width:520, height:390, fit:"contain", quality:"high" }) : null
 })));
 ---
@@ -32,11 +33,11 @@ const cards = await Promise.all(alternatives.slice(0, 4).map(async (item) => ({
     <div class="alternatives__grid">
       {cards.map((item) => (
         <article>
-          <div class="alternatives__image">
-            {item.optimized ? (
+          {item.optimized || item.source ? <div class="alternatives__image">
+            {item.optimized || item.source ? (
               <img
-                src={item.optimized.src}
-                srcset={item.optimized.srcSet.attribute}
+                src={reference && item.source ? item.source : item.optimized?.src}
+                srcset={reference ? undefined : item.optimized?.srcSet.attribute}
                 sizes="(max-width:720px) 100vw, 25vw"
                 width="520"
                 height="390"
@@ -44,8 +45,8 @@ const cards = await Promise.all(alternatives.slice(0, 4).map(async (item) => ({
                 decoding="async"
                 alt={item.image?.alt || item.title}
               />
-            ) : <span aria-hidden="true">PT</span>}
-          </div>
+            ) : null}
+          </div> : null}
 
           <div class="alternatives__body">
             <span>{item.label}</span>

@@ -3,39 +3,46 @@ import { getCachedImage } from "../../lib/imageOptimization";
 import "./product-gallery-29.css";
 
 interface GalleryItem { src: any; alt: string; caption?: string; }
-interface Props { name: string; items: GalleryItem[]; }
+interface Props { name: string; items: GalleryItem[]; reference?: boolean; }
 interface OptimizedItem extends GalleryItem {
-  src: string; srcset: string; thumbSrc: string; width: number; height: number;
+  src: string; srcset: string; mobileSrc: string; thumbSrc: string; width: number; height: number;
 }
 
-const { name, items = [] } = Astro.props;
+const { name, items = [], reference = false } = Astro.props;
 const optimized = (await Promise.all(
   items.filter((item) => item?.src).map(async (item, index): Promise<OptimizedItem | null> => {
+    const source = typeof item.src === "string" ? item.src : item.src?.src;
     try {
-      const [image, thumb] = await Promise.all([
+      const [image, mobileImage, thumb] = await Promise.all([
         getCachedImage({
           src: item.src,
           widths: [480, 760, 1080, 1440],
           sizes: index === 0 ? "(max-width: 759px) 100vw, 58vw" : "(max-width: 759px) 100vw, 28vw",
           quality: "high",
         }),
+        getCachedImage({ src: item.src, width: 760, quality: "high" }),
         getCachedImage({ src: item.src, width: 240, quality: "mid" }),
       ]);
       return {
         ...item,
-        src: image.src,
-        srcset: image.srcSet.attribute,
+        src: reference && source ? source : image.src,
+        srcset: reference ? "" : image.srcSet.attribute,
+        // The reference hero deliberately uses Astro's emitted source asset on
+        // mobile. Its generated responsive derivative is not emitted in the
+        // static output, while this source is both optimized WebP and present.
+        mobileSrc: reference && source ? source : mobileImage.src,
         thumbSrc: thumb.src,
         width: item.src?.width ?? 1400,
         height: item.src?.height ?? 1050,
       };
     } catch {
-      const fallback = typeof item.src === "string" ? item.src : item.src?.src;
+      const fallback = source;
       if (!fallback) return null;
       return {
         ...item,
         src: fallback,
         srcset: "",
+        mobileSrc: fallback,
         thumbSrc: fallback,
         width: item.src?.width ?? 1400,
         height: item.src?.height ?? 1050,
@@ -67,9 +74,7 @@ const data = optimized.map((item) => ({
           <button type="button" class="pg29__slide" data-pg29-open data-pg29-index={index} aria-label={`${item.alt || name} vergrößern`}>
             <img
               class="pg29__image"
-              src={item.src}
-              srcset={item.srcset || undefined}
-              sizes="100vw"
+              src={item.mobileSrc}
               width={item.width}
               height={item.height}
               alt={item.alt || name}
@@ -84,7 +89,7 @@ const data = optimized.map((item) => ({
       {hasMultiple && (
         <div class="pg29__mobile-controls">
           <span data-pg29-mobile-counter aria-live="polite">1 / {count}</span>
-          <button type="button" data-pg29-open data-pg29-index="0"><span aria-hidden="true">▦</span> Alle Bilder</button>
+          <button type="button" data-pg29-open data-pg29-index="0"><span class="pg29__gallery-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg></span> Alle Bilder</button>
         </div>
       )}
 
@@ -107,7 +112,7 @@ const data = optimized.map((item) => ({
         ))}
         {hasMultiple && (
           <button type="button" class="pg29__all" data-pg29-open data-pg29-index="0">
-            <span aria-hidden="true">▦</span> Alle Bilder ({count})
+            <span class="pg29__gallery-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg></span> Alle Bilder ({count})
           </button>
         )}
       </div>

@@ -19,12 +19,14 @@ interface Props {
   title?: string;
   intro?: string;
   items: Item[];
+  referenceSurface?: boolean;
 }
 
 const {
   title = "Deine nächsten Schritte",
   intro = "Direkt zum passenden Produkt oder alle geeigneten Modelle vergleichen.",
-  items
+  items,
+  referenceSurface = false
 } = Astro.props;
 
 const visibleItems = filterSelfLinkItems(
@@ -34,7 +36,13 @@ const visibleItems = filterSelfLinkItems(
 ---
 
 {visibleItems.length > 0 && (
-  <section class="pt-next-steps" aria-labelledby="pt-next-steps-title" data-feature="recommendation-cards-2.0" data-pt-next-steps>
+  <section
+    class="pt-next-steps"
+    aria-labelledby="pt-next-steps-title"
+    data-feature="recommendation-cards-2.0"
+    data-pt-next-steps
+    style={referenceSurface ? "--next-bg: transparent; --next-card: var(--pt33-color-surface-raised); --next-border: var(--pt33-color-border-subtle); --next-text: var(--pt33-color-text-primary); --next-muted: var(--pt33-color-text-secondary); --next-accent: var(--pt33-color-action-primary);" : undefined}
+  >
     <header class="pt-next-steps__header">
       <p class="pt-next-steps__eyebrow">Nächster Schritt</p>
       <h2 id="pt-next-steps-title">{title}</h2>
@@ -56,6 +64,7 @@ const visibleItems = filterSelfLinkItems(
                   width={360}
                   height={270}
                   layout="constrained"
+                  loading={kind === "product" ? "eager" : "lazy"}
                 />
               </div>
             )}

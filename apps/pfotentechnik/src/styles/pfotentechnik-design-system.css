@@ -311,7 +311,7 @@ body { transition: background-color 160ms ease, color 160ms ease; }
 .comparison-sticky-bar { border-color: var(--pt-theme-border-strong) !important; background: rgba(17,29,47,.97) !important; color: var(--pt-theme-text) !important; }
 .comparison-sticky-bar span, .comparison-sticky-bar strong { color: var(--pt-theme-text-soft) !important; }
 @media (prefers-color-scheme: dark) {
-  .home4-usecases__grid a,.home3-editorial-card,.home3-product-card,.home3-card-content,.recommendation-card,.recommendation-card__content,.recommendation-card__actions,.ui-card { background: #111d2f !important; }
+  .home4-usecases__grid a,.home3-editorial-card,.home3-product-card,.home3-card-content,.recommendation-card,.recommendation-card__content,.recommendation-card__actions,.ui-card:not(.pt-page--reference33 .ui-card) { background: #111d2f !important; }
   .recommendation-card__image-link { background: #162338 !important; }
 }
 .comparison-hub-hero,.comparison-hub { --accent: var(--pt-theme-accent)!important; --accent-dark: var(--pt-theme-accent-hover)!important; --text: var(--pt-theme-text)!important; --muted: var(--pt-theme-text-muted)!important; --border: var(--pt-theme-border)!important; }

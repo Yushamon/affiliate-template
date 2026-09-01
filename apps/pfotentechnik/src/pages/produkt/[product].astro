@@ -385,6 +385,7 @@ const productSchema = {
   breadcrumbs={breadcrumbs}
   schemaType="webpage"
   mainClass="container--page"
+  foundation={contentProduct.slug === "petlibro-dockstream-rfid-smart"}
 >
   <script
     type="application/ld+json"
@@ -393,7 +394,7 @@ const productSchema = {
 
   <!-- Breadcrumbs werden ausschließlich als BreadcrumbList-JSON-LD im Layout ausgegeben. -->
 
-  <div class="pt-page pt-page--product pt-product-detail" data-product-page>
+  <div class:list={["pt-page pt-page--product pt-product-detail", { "pt-page--reference33": contentProduct.slug === "petlibro-dockstream-rfid-smart" }]} data-product-page>
     <AutoLinkContent
       definitions={internalLinkDefinitions}
       sourcePath={canonical}
@@ -427,6 +428,7 @@ const productSchema = {
       title="Passend weiterentscheiden"
       intro="Öffne den passenden Vergleich oder die Kaufberatung für diesen Anwendungsfall."
       items={productNextSteps}
+      referenceSurface={contentProduct.slug === "petlibro-dockstream-rfid-smart"}
     />
 
 <RelatedArticles
@@ -437,3 +439,73 @@ const productSchema = {
   </div>
 
 </ProjectLayout>
+
+<style>
+  .pt-page--reference33 {
+    --pt-theme-surface: var(--pt33-color-surface-raised);
+    --pt-theme-text: var(--pt33-color-text-primary);
+    --pt-theme-text-soft: var(--pt33-color-text-primary);
+    --pt-theme-text-muted: var(--pt33-color-text-secondary);
+    --pt-theme-border: var(--pt33-color-border-subtle);
+    --pt-theme-accent: var(--pt33-color-action-primary);
+  }
+  .pt-page--reference33 :global(.editorial-transparency),
+  .pt-page--reference33 :global(.pt-next-steps),
+  .pt-page--reference33 > :global(.ui-section) {
+    width: 100%;
+    margin: 0;
+    padding-inline: var(--pt33-gutter);
+  }
+  .pt-page--reference33 :global(.editorial-transparency),
+  .pt-page--reference33 :global(.pt-next-steps) {
+    padding-block: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+  .pt-page--reference33 :global(.editorial-transparency__facts) {
+    display: grid;
+    gap: 0;
+    margin: 0;
+    border-top: 1px solid var(--pt33-color-border-subtle);
+    background: transparent;
+  }
+  .pt-page--reference33 :global(.pt-next-steps__grid) {
+    border-top: 1px solid var(--pt33-color-border-subtle);
+    background: transparent;
+  }
+  .pt-page--reference33 :global(.editorial-transparency .editorial-transparency__facts > div) {
+    padding: var(--pt33-space-4) 0;
+    border: 0;
+    border-bottom: 1px solid var(--pt33-color-border-subtle);
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+  .pt-page--reference33 :global(.pt-next-steps__card) {
+    border-color: var(--pt33-color-border-subtle);
+    background: transparent;
+    box-shadow: none;
+  }
+  .pt-page--reference33 :global(.editorial-transparency__evidence) {
+    margin-top: 0;
+    padding: var(--pt33-space-4) 0;
+    border-top: 1px solid var(--pt33-color-border-subtle);
+    border-left: 0;
+    background: transparent;
+  }
+  .pt-page--reference33 :global(.editorial-transparency nav) {
+    margin-top: 0;
+    padding-top: var(--pt33-space-4);
+    border-top: 1px solid var(--pt33-color-border-subtle);
+  }
+  @media (min-width: 720px) {
+    .pt-page--reference33 :global(.editorial-transparency__facts) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .pt-page--reference33 :global(.editorial-transparency .editorial-transparency__facts > div:nth-child(odd)) {
+      padding-right: var(--pt33-space-6);
+      border-right: 1px solid var(--pt33-color-border-subtle);
+    }
+    .pt-page--reference33 :global(.editorial-transparency .editorial-transparency__facts > div:nth-child(even)) { padding-left: var(--pt33-space-6); }
+  }
+</style>

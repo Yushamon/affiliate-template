@@ -1,0 +1,104 @@
+---
+import ProjectLayout from "../layouts/ProjectLayout.astro";
+
+const modes = [
+  { id: "light", label: "Light", mode: "light" },
+  { id: "dark", label: "Dark", mode: "dark" },
+];
+---
+
+<ProjectLayout
+  title="PfotenTechnik Foundation 33"
+  description="Interne Design-Foundation-Vorschau für PfotenTechnik."
+  canonical="/foundation/"
+  noindex={true}
+  schemaType="webpage"
+  mainClass="pt33-preview-page"
+>
+  <div class="pt33-preview">
+    {modes.map(({ id, label, mode }) => (
+      <section class="pt33-preview__mode" data-pt-foundation data-pt-mode={mode} aria-labelledby={`${id}-title`}>
+        <div class="pt33-container pt33-container--wide pt33-preview__inner">
+          <header class="pt33-preview__intro">
+            <p class="pt33-meta">PFOTENTECHNIK / FOUNDATION 33.0.0 / {label.toUpperCase()}</p>
+            {mode === "light"
+              ? <h1 id={`${id}-title`} class="pt33-hero">Ruhige Entscheidungen für Haustiertechnik.</h1>
+              : <h2 id={`${id}-title`} class="pt33-hero">Ruhige Entscheidungen für Haustiertechnik.</h2>}
+            <p class="pt33-secondary pt33-reading">Eine opt-in Basis für klare Produkterklärungen, nachvollziehbare Evidenz und Produktflächen mit Raum zum Atmen.</p>
+          </header>
+
+          <div class="pt33-preview__grid pt33-grid">
+            <section class="pt33-preview__block" aria-labelledby={`${id}-type`}>
+              <p class="pt33-meta">TYPOGRAPHY</p>
+              <h2 id={`${id}-type`} class="pt33-display">Eine Entscheidung zuerst.</h2>
+              <h3 class="pt33-heading">Dann die Gründe, Details und Evidenz.</h3>
+              <p class="pt33-subheading pt33-secondary">Subheading mit klarer, ruhiger Hierarchie.</p>
+              <p class="pt33-secondary">Bodytext bleibt lesbar und bewusst auf Editorial-Breite begrenzt. So konkurrieren Information und Oberfläche nicht um dieselbe Aufmerksamkeit.</p>
+            </section>
+
+            <section class="pt33-preview__block pt33-surface--raised" aria-labelledby={`${id}-controls`}>
+              <p class="pt33-meta">CONTROLS</p>
+              <h2 id={`${id}-controls`} class="pt33-heading">Eine primäre Aktion.</h2>
+              <div class="pt33-preview__actions">
+                <a class="pt-button pt33-button pt33-button--primary" href={`#${id}-decision-line`}>Preis prüfen</a>
+                <button class="pt-button pt33-button pt33-button--secondary" type="button">Vergleichen</button>
+                <button class="pt-button pt33-button pt33-button--text" type="button">Alle Details ansehen →</button>
+                <button class="pt-button pt33-button pt33-button--primary" type="button" disabled>Deaktiviert</button>
+              </div>
+              <label class="pt33-preview__label" for={`${id}-search`}>Produkt suchen</label>
+              <input id={`${id}-search`} class="pt-control pt33-control" placeholder="z. B. Futterautomat" />
+              <div class="pt33-preview__chips" aria-label="Beispielhafte Eignungen">
+                <span class="pt-chip pt33-chip">Mehrkatzen</span><span class="pt-chip pt33-chip">Futtertrennung</span><span class="pt-chip pt33-chip">Trinktracking</span>
+              </div>
+            </section>
+
+            <section class="pt33-preview__block pt33-surface--section" aria-labelledby={`${id}-semantics`}>
+              <p class="pt33-meta">SEMANTIC COLOR</p>
+              <h2 id={`${id}-semantics`} class="pt33-heading">Status und Evidenz bleiben getrennt.</h2>
+              <div class="pt33-preview__semantics">
+                <span class="pt33-status pt33-status--positive">Passend</span>
+                <span class="pt33-status pt33-status--warning">Beachten</span>
+                <span class="pt33-status pt33-status--critical">Kritisch</span>
+                <span class="pt33-status pt33-status--info">Einordnung</span>
+                <span class="pt33-status">Unbestätigt</span>
+                <span class="pt33-evidence pt33-evidence--verified">✓ Evidenz verifiziert</span>
+                <span class="pt33-evidence pt33-evidence--medium">△ Evidenz mittel</span>
+                <span class="pt33-evidence">○ Evidenz gering</span>
+              </div>
+            </section>
+
+            <section class="pt33-preview__block" aria-labelledby={`${id}-image`}>
+              <p class="pt33-meta">PRODUCT SURFACE</p>
+              <div class="pt33-image-surface">
+                <img src="/images/manufacturers/petlibro/hero.webp" alt="Beispiel einer ruhigen Produktbildfläche" loading="lazy" />
+              </div>
+              <h2 id={`${id}-image`} class="pt33-heading">Produkt vor UI-Chrome.</h2>
+              <p class="pt33-secondary">Isolierte Produkte erhalten negativen Raum; Kontext- und Evidenzbilder dürfen später andere Rollen übernehmen.</p>
+            </section>
+          </div>
+
+          <section id={`${id}-decision-line`} class="pt33-preview__decision pt33-surface--raised" aria-label="DecisionLine-Beispiel">
+            <p class="pt33-meta">DECISIONLINE / QUALITATIVE GEGENÜBERSTELLUNG</p>
+            <div class="pt33-decision-line"><span>Mehrkatzen</span><strong>●</strong><span>Halsband nötig</span></div>
+            <p class="pt33-secondary">Passt für getrennte Fütterung; das notwendige Halsband bleibt als Kompromiss sichtbar.</p>
+          </section>
+        </div>
+      </section>
+    ))}
+  </div>
+</ProjectLayout>
+
+<style>
+  .pt33-preview { display: grid; gap: 2px; background: var(--pt-color-border); }
+  .pt33-preview__mode { padding-block: clamp(3rem, 8vw, 7rem); }
+  .pt33-preview__inner { display: grid; gap: var(--pt33-space-16); }
+  .pt33-preview__intro { display: grid; gap: var(--pt33-space-4); }
+  .pt33-preview__grid > * { grid-column: span 6; display: grid; gap: var(--pt33-space-4); padding: var(--pt33-space-8); }
+  .pt33-preview__block.pt33-surface--section { border-radius: var(--pt33-radius-lg); }
+  .pt33-preview__actions, .pt33-preview__chips, .pt33-preview__semantics { display: flex; flex-wrap: wrap; gap: var(--pt33-space-3); align-items: center; }
+  .pt33-preview__label { color: var(--pt33-color-text-secondary); font-size: var(--pt33-font-meta); font-weight: 700; }
+  .pt33-preview__semantics { align-items: flex-start; }
+  .pt33-preview__semantics > * { min-width: 10rem; }
+  .pt33-preview__decision { display: grid; gap: var(--pt33-space-4); padding: var(--pt33-space-8); }
+  @media (max-width: 47.99rem) { .pt33-preview__grid > * { grid-column: span 4; padding: var(--pt33-space-6); } .pt33-preview__decision { padding: var(--pt33-space-6); } }
+</style>

@@ -86,6 +86,11 @@ export type ComparisonViewModel = {
   heroImage: CoreImage;
   facts: Array<{ label: string; value: string }>;
   products: ComparisonProduct[];
+  /** Data-driven layers derived from the complete comparison field. */
+  relevantAlternatives?: ComparisonProduct[];
+  technicalCandidates?: ComparisonProduct[];
+  selectionReasons?: Record<string, string>;
+  alternativeReasons?: Record<string, string>;
   recommendationProducts: ComparisonProduct[];
   rows: ComparisonRow[];
   filters: ComparisonFilter[];

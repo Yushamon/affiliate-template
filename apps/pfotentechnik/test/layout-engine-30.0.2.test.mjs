@@ -32,9 +32,11 @@ test('Produkt und Vergleich verwenden denselben Page Owner', () => {
 });
 
 test('Galerie bleibt mobile full bleed', () => {
-  assert.match(hero, /data-mobile-gallery-full-bleed/);
-  assert.match(engine, /data-mobile-gallery-full-bleed/);
-  assert.match(engine, /margin-inline:\s*0/);
+  const galleryCss = readApp('src/components/product-experience-2/product-gallery-29.css');
+  assert.doesNotMatch(hero, /data-mobile-gallery-full-bleed/);
+  assert.doesNotMatch(engine, /data-mobile-gallery-full-bleed/);
+  assert.match(galleryCss, /width:\s*100dvw/);
+  assert.match(galleryCss, /margin-inline:\s*calc\(50%\s*-\s*50dvw\)/);
 });
 
 test('Produktinhalte nutzen exakt den globalen Gutter', () => {
