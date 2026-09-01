@@ -28,8 +28,8 @@ test("generic layout does not own homepage selectors", () => {
 
 test("homepage stylesheet owns its page spacing", () => {
   assert.match(home, /\.container--home\s*\{/);
-  assert.match(home, /\.container--home \.home3-hero\s*\{/);
-  assert.match(home, /\.container--home \.home3-hero__content\s*\{/);
+  assert.match(home, /\.container--home \.pt-home\s*\{/);
+  assert.match(home, /\.pt-home__hero-content\s*\{/);
 });
 
 test("homepage component imports the canonical stylesheet", () => {
@@ -43,4 +43,5 @@ test("cleanup introduces no important declarations", () => {
 
   assert.ok(migratedBlock);
   assert.doesNotMatch(migratedBlock, /!important/);
+  assert.doesNotMatch(home, /!important/);
 });

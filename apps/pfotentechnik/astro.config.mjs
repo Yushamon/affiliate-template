@@ -29,7 +29,10 @@ const excludedSitemapPrefixes = [
 
 const excludedSitemapPaths = new Set([
   "/404/",
-  "/500/"
+  "/500/",
+  // Internal design preview; ProjectLayout emits noindex, so it must never
+  // be advertised as an indexable production URL in the generated sitemap.
+  "/foundation/"
 ]);
 
 const shouldExcludeFromSitemap = (value) => {

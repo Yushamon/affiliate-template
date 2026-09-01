@@ -1,9 +1,5 @@
 import type { CollectionEntry } from "astro:content";
-import type {
-  HomeEditorialCard,
-  HomeImage,
-  HomepageModel
-} from "@affiliate-core/home/model";
+import type { HomeEditorialCard, HomeImage, HomepageModel } from "@affiliate-core/home/model";
 import petTechHeroImage from "../../assets/images/project/pfotentechnik/pet-tech-hero.webp";
 import guideImage from "../../assets/images/project/pfotentechnik/guide.webp";
 
@@ -26,12 +22,6 @@ type HomeConfig = {
       productUseCase?: string;
     }>;
   };
-  intents: {
-    items: Array<{
-      label: string;
-      href: string;
-    }>;
-  };
   values: {
     methodologyAction: {
       label: string;
@@ -45,17 +35,6 @@ type BuildInput = {
   products: ProductEntry[];
   comparisons: ComparisonEntry[];
   pages: PageEntry[];
-};
-
-const formatUpdatedAt = (value?: string) => {
-  if (!value) return undefined;
-
-  const date = new Date(value);
-  if (Number.isNaN(date.getTime())) return undefined;
-
-  return `Aktualisiert am ${new Intl.DateTimeFormat("de-DE", {
-    dateStyle: "medium"
-  }).format(date)}`;
 };
 
 const sortProducts = (products: ProductEntry[]) =>
@@ -96,15 +75,6 @@ const selectDiverseProducts = (
   return selected;
 };
 
-const getProductAction = (product: ProductEntry) => {
-  const isHandsOn =
-    product.data.editorial?.testedHandsOn === true ||
-    product.data.testStatus === "hands-on" ||
-    product.data.testStatus === "long-term-test";
-
-  return isHandsOn ? "Praxistest lesen" : "Produktcheck lesen";
-};
-
 const sortComparisons = (comparisons: ComparisonEntry[]) =>
   [...comparisons].sort((a, b) =>
     Number(b.data.hub?.featured ?? false) -
@@ -126,32 +96,11 @@ const decisionComparisonDefinitions = [
       "Modelle nach Futterart, Portionierung, App, Zugang und Alltagseignung vergleichen."
   },
   {
-    slug: "beste-futterautomaten-fuer-hunde",
-    label: "Hunde · Futterautomaten",
-    title: "Futterautomaten für Hunde",
-    fallbackText:
-      "Kapazität, Napfgröße, Portionierung und Ausfallsicherheit direkt gegenüberstellen."
-  },
-  {
     slug: "beste-futterautomaten-fuer-nassfutter",
     label: "Nassfutter · Futterautomaten",
     title: "Futterautomaten für Nassfutter",
     fallbackText:
       "Aktive Kühlung, Kühlakkus, Mahlzeitenzahl, Hygiene und Ausfallsicherheit vergleichen."
-  },
-  {
-    slug: "beste-trinkbrunnen-fuer-katzen",
-    label: "Katzen · Trinkbrunnen",
-    title: "Trinkbrunnen für Katzen",
-    fallbackText:
-      "Material, Filter, Reinigung, Lautstärke und Trinkfläche sinnvoll vergleichen."
-  },
-  {
-    slug: "beste-trinkbrunnen-fuer-hunde",
-    label: "Hunde · Trinkbrunnen",
-    title: "Trinkbrunnen für Hunde",
-    fallbackText:
-      "Kapazität, Standfestigkeit, Trinkhöhe und Reinigung für Hunde einordnen."
   },
   {
     slug: "beste-gps-tracker-fuer-katzen",
@@ -161,11 +110,11 @@ const decisionComparisonDefinitions = [
       "Gewicht, Ortungsintervall, Akkulaufzeit, Abo und Sicherheitszonen vergleichen."
   },
   {
-    slug: "beste-gps-tracker-fuer-hunde",
-    label: "Hunde · GPS-Tracker",
-    title: "GPS-Tracker für Hunde",
+    slug: "beste-mikrochip-katzenklappen",
+    label: "Katzen · Zugang",
+    title: "Mikrochip-Katzenklappen",
     fallbackText:
-      "Ortung, Robustheit, Akkulaufzeit, Größe und laufende Kosten vergleichen."
+      "Mikrochip-Zugang, Einbau, Richtungssteuerung und Alltagstauglichkeit vergleichen."
   }
 ] as const;
 
@@ -206,10 +155,7 @@ export function buildHomepageModel({
   pages
 }: BuildInput): HomepageModel {
   const sortedProducts = sortProducts(products);
-  const featuredProducts = selectDiverseProducts(
-    sortedProducts,
-    3
-  );
+  const featuredProducts = selectDiverseProducts(sortedProducts, 1);
   const sortedComparisons = sortComparisons(comparisons);
   const sortedPages = sortPages(pages);
 
@@ -280,22 +226,6 @@ export function buildHomepageModel({
         Boolean(category)
     );
 
-  const comparisonCards: HomeEditorialCard[] =
-    sortedComparisons.slice(0, 4).map((entry) => ({
-      href: `/vergleiche/${entry.data.slug}/`,
-      label: "Vergleich",
-      title: entry.data.hub?.title ?? entry.data.title,
-      text:
-        entry.data.hub?.description ??
-        entry.data.description,
-      image: entry.data.heroImage ?? {
-        src: petTechHeroImage,
-        alt: ""
-      },
-      meta: formatUpdatedAt(entry.data.updatedAt),
-      action: "Vergleich öffnen"
-    }));
-
   const guideCards: HomeEditorialCard[] =
     sortedPages.slice(0, 4).map((entry) => ({
       href: `/${entry.data.slug}/`,
@@ -306,52 +236,8 @@ export function buildHomepageModel({
         src: guideImage,
         alt: ""
       },
-      meta: formatUpdatedAt(entry.data.updatedAt),
       action: "Ratgeber lesen"
     }));
-
-  const recentItems = [
-    ...sortedComparisons.map((entry) => ({
-      href: `/vergleiche/${entry.data.slug}/`,
-      label: "Vergleich",
-      title: entry.data.title,
-      text: entry.data.description,
-      image: entry.data.heroImage ?? {
-        src: petTechHeroImage,
-        alt: ""
-      },
-      updatedAt: entry.data.updatedAt,
-      meta: formatUpdatedAt(entry.data.updatedAt),
-      action: "Aktualisierung ansehen"
-    })),
-    ...sortedPages.map((entry) => ({
-      href: `/${entry.data.slug}/`,
-      label: "Ratgeber",
-      title: entry.data.title,
-      text: entry.data.description,
-      image: entry.data.heroImage ?? {
-        src: guideImage,
-        alt: ""
-      },
-      updatedAt: entry.data.updatedAt,
-      meta: formatUpdatedAt(entry.data.updatedAt),
-      action: "Aktualisierung ansehen"
-    }))
-  ]
-    .sort((a, b) =>
-      (b.updatedAt ?? "").localeCompare(
-        a.updatedAt ?? ""
-      )
-    )
-    .filter(
-      (item, index, items) =>
-        items.findIndex(
-          (candidate) => candidate.href === item.href
-        ) === index
-    )
-    .slice(0, 3)
-    .map(({ updatedAt: _updatedAt, ...item }) => item);
-
 
   const decisionComparisons =
     decisionComparisonDefinitions
@@ -380,9 +266,7 @@ export function buildHomepageModel({
           itemCount: getComparisonItemCount(
             entry,
             products
-          ),
-          updatedLabel:
-            formatUpdatedAt(entry.data.updatedAt)
+          )
         };
       })
       .filter(
@@ -431,33 +315,19 @@ export function buildHomepageModel({
         }
       ]
     },
-    decisionLinks: home.intents.items.slice(0, 6),
     decisionComparisons,
     categories,
-    comparisons: comparisonCards,
     guides: guideCards,
     products: featuredProducts.map(
-      (product, index) => ({
+      (product) => ({
         href: `/produkt/${product.data.slug}/`,
         title: product.data.title,
         manufacturer: product.data.manufacturer.name,
-        recommendation: product.data.recommendation,
-        rating:
-          product.data.score ??
-          Math.round(product.data.rating * 20),
         image:
           product.data.images.thumbnail ??
-          product.data.images.hero,
-        action: getProductAction(product),
-        badge:
-          index === 0
-            ? "Redaktionelle Empfehlung"
-            : index === 1
-              ? "Starke Alternative"
-              : "Für besondere Anforderungen"
+          product.data.images.hero
       })
     ),
-    recentlyUpdated: recentItems,
     methods: [
       {
         number: "01",
@@ -527,95 +397,6 @@ export function buildHomepageModel({
           "Sicherheit, Größe, Streuverbrauch, Reinigung und Folgekosten zusammen prüfen.",
         href: "/automatische-katzentoiletten/",
         icon: "litter"
-      }
-    ],
-    faq: [
-      {
-        question: "Wie entstehen die Empfehlungen auf PfotenTechnik?",
-        answer:
-          "Wir vergleichen dokumentierte technische Daten, Bedienungsanleitungen, Herstellerangaben und den konkreten Einsatzzweck. Fehlende Angaben werden nicht aus Bewertungen oder ähnlichen Produkten abgeleitet."
-      },
-      {
-        question: "Testet PfotenTechnik jedes Produkt selbst?",
-        answer:
-          "Nicht jede Einordnung basiert auf einem eigenen Langzeittest. Die jeweilige Produktseite macht kenntlich, worauf die Bewertung beruht. Unbelegte Praxiserfahrungen werden nicht behauptet."
-      },
-      {
-        question: "Beeinflussen Affiliate-Links die Bewertung?",
-        answer:
-          "Nein. Affiliate-Links können die Finanzierung der Seite unterstützen. Die Reihenfolge, Bewertung und redaktionelle Einordnung sollen davon unabhängig bleiben."
-      },
-      {
-        question: "Warum fehlen bei manchen Produkten einzelne Angaben?",
-        answer:
-          "Hersteller veröffentlichen technische Daten nicht immer vollständig oder eindeutig. In solchen Fällen zeigen wir lieber eine fehlende Angabe, statt einen Wert zu schätzen."
-      },
-      {
-        question: "Wie aktuell sind Vergleiche und Ratgeber?",
-        answer:
-          "Inhalte werden bei relevanten Produktänderungen, neuen Modellen oder fachlichen Ergänzungen überarbeitet. Das Aktualisierungsdatum steht auf der jeweiligen Seite."
-      }
-    ],
-    topicGroups: [
-      {
-        title: "Produktwelten",
-        links: [
-          {
-            label: "Futterautomaten",
-            href: "/smarte-futterautomaten/"
-          },
-          {
-            label: "Trinkbrunnen",
-            href: "/trinkbrunnen/"
-          },
-          {
-            label: "GPS-Tracker",
-            href: "/gps-tracker/"
-          },
-          {
-            label: "Alle Produktwelten",
-            href: "/kaufberatung/"
-          }
-        ]
-      },
-      {
-        title: "Zugang, Kamera & Hygiene",
-        links: [
-          {
-            label: "Katzenklappen",
-            href: "/katzenklappen/"
-          },
-          {
-            label: "Haustierkameras",
-            href: "/haustierkameras/"
-          },
-          {
-            label: "Automatische Katzentoiletten",
-            href: "/automatische-katzentoiletten/"
-          },
-          {
-            label: "Für mehrere Katzen",
-            href: "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/"
-          }
-        ]
-      },
-      {
-        title: "Orientierung",
-        links: [
-          {
-            label: "Alle Vergleiche",
-            href: "/vergleiche/"
-          },
-          {
-            label: "Alle Ratgeber",
-            href: "/wissen/"
-          },
-          {
-            label: "Herstellerübersicht",
-            href: "/hersteller/"
-          },
-          home.values.methodologyAction
-        ]
       }
     ]
   };

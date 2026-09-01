@@ -1,7 +1,7 @@
 # Image Alt Audit 24.1.2
 
 - Modus: `source-only`
-- geprüfte Quelldateien: 140
+- geprüfte Quelldateien: 132
 - geprüfte Build-Dateien: 0
 - rohe Build-Fundstellen: 0
 - eindeutige Build-Fundstellen: 0

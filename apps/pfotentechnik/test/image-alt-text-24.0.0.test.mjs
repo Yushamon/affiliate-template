@@ -9,7 +9,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../.
 const APP = path.join(ROOT, "apps", "pfotentechnik");
 
 const files = {
-  home: path.join(ROOT, "packages", "affiliate-core", "src", "components", "home", "HomeHero.astro"),
+  home: path.join(ROOT, "packages", "affiliate-core", "src", "components", "home", "HomePage.astro"),
   gallery: path.join(APP, "src", "components", "product-experience-2", "ProductGallery29.astro"),
   alternatives: path.join(APP, "src", "components", "product-standard-2", "AlternativesGrid.astro"),
   comparisonExperience: path.join(ROOT, "packages", "affiliate-core", "src", "components", "ComparisonExperience.astro"),
@@ -51,7 +51,7 @@ test("Galerie-Thumbnails sind dekorativ und ihr Button besitzt einen zugänglich
 });
 
 test("Komponenten verwenden kontextbezogene Alt-Texte", () => {
-  assert.match(read(files.home), /alt=\{hero\.title\}/);
+  assert.match(read(files.home), /alt=\{model\.hero\.image\.alt \?\? model\.hero\.title\}/);
   assert.match(read(files.gallery), /alt=\{item\.alt \|\| name\}/);
   assert.match(read(files.alternatives), /\$\{item\.title\} – Produktansicht/);
   assert.match(read(files.comparisonExperience), /\$\{product\.name\} im Direktvergleich/);

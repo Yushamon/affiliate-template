@@ -33,11 +33,7 @@ export type HomeProductCard = {
   href: string;
   title: string;
   manufacturer: string;
-  recommendation: string;
-  rating: number;
   image: HomeImage;
-  badge?: string;
-  action?: string;
 };
 
 export type HomeUseCase = {
@@ -45,11 +41,6 @@ export type HomeUseCase = {
   text: string;
   href: string;
   icon: "bowl" | "drop" | "location" | "door" | "camera" | "litter";
-};
-
-export type HomeFaqItem = {
-  question: string;
-  answer: string;
 };
 
 export type HomeDecisionCard = {
@@ -76,13 +67,10 @@ export type HomepageModel = {
       label: string;
     }>;
   };
-  decisionLinks: HomeLink[];
   decisionComparisons: HomeDecisionCard[];
   categories: HomeCategoryCard[];
-  comparisons: HomeEditorialCard[];
   guides: HomeEditorialCard[];
   products: HomeProductCard[];
-  recentlyUpdated: HomeEditorialCard[];
   methods: Array<{
     number: string;
     title: string;
@@ -90,9 +78,4 @@ export type HomepageModel = {
   }>;
   methodologyAction: HomeLink;
   useCases: HomeUseCase[];
-  faq: HomeFaqItem[];
-  topicGroups: Array<{
-    title: string;
-    links: HomeLink[];
-  }>;
 };

@@ -1,74 +1,65 @@
 ---
+import OptimizedImage from "../OptimizedImage.astro";
 import type { HomepageModel } from "../../home/model";
-import HomeHero from "./HomeHero.astro";
-import HomeSection from "./HomeSection.astro";
-import HomeNavigation from "./HomeNavigation.astro";
-import HomeStats from "./HomeStats.astro";
-import HomeUseCases from "./HomeUseCases.astro";
-import HomeFaq from "./HomeFaq.astro";
 import "./home.css";
 
-type Props = {
-  model: HomepageModel;
-};
-
+type Props = { model: HomepageModel };
 const { model } = Astro.props as Props;
+const decisions = model.decisionComparisons.slice(0, 4);
+const guides = model.guides.slice(0, 3);
+const technologyMoment = model.products[0];
+
+const icon = (name: string) => ({
+  bowl: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h16l-1.6 8H5.6L4 10Z"/><path d="M7 10c.3-2.5 2.1-4 5-4s4.7 1.5 5 4"/><path d="M9 14h6"/></svg>',
+  drop: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 6.2 6 11a6 6 0 0 1-12 0c0-4.8 6-11 6-11Z"/><path d="M9.5 15.2c.7 1.1 1.6 1.6 2.8 1.6"/></svg>',
+  location: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-5.4 6-11a6 6 0 1 0-12 0c0 5.6 6 11 6 11Z"/><circle cx="12" cy="10" r="2.2"/></svg>',
+  door: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V4h12v16"/><path d="M17 20h2V4h-2"/><circle cx="14" cy="12" r=".8"/></svg>',
+  camera: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="13" height="11" rx="2"/><path d="m16 11 5-3v9l-5-3"/><circle cx="9.5" cy="12.5" r="2.2"/></svg>',
+  litter: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h16l-1.5 8H5.5L4 10Z"/><path d="M7 10c.6-2.8 2.2-4 5-4s4.4 1.2 5 4"/><path d="M8 14h8"/></svg>'
+}[name] ?? '');
 ---
 
-<div class="home3 home5">
-  <HomeHero hero={model.hero} />
+<div class="pt-home" aria-label="PfotenTechnik entdecken">
+  <section class="pt-home__hero" aria-labelledby="pt-home-title">
+    <div class="pt-home__hero-media" aria-hidden="true"><OptimizedImage src={model.hero.image.src} alt={model.hero.image.alt ?? model.hero.title} layout="full-width" priority /></div>
+    <div class="pt-home__hero-shade" aria-hidden="true"></div>
+    <div class="pt-home__hero-content">
+      <p class="pt-home__eyebrow pt-home__eyebrow--inverse">Unabhängige Orientierung für smarte Haustiertechnik</p>
+      <h1 id="pt-home-title">{model.hero.title}</h1>
+      <p class="pt-home__hero-copy">Finde die Technik, die zu deinem Tier und deinem Alltag passt – mit nachvollziehbaren Vergleichen, Produktchecks und klar benannten Grenzen.</p>
+      <div class="pt-home__actions"><a class="pt-button pt-home__button pt-home__button--primary" href="#alltag">Womit möchtest du anfangen?</a><a class="pt-button pt-home__button pt-home__button--secondary" href="/vergleiche/">Wichtige Vergleiche ansehen</a></div>
+      <ul class="pt-home__hero-signals" aria-label="So arbeitet PfotenTechnik">{model.hero.signals.map((signal) => <li>{signal}</li>)}</ul>
+    </div>
+  </section>
 
-  <HomeUseCases items={model.useCases} />
+  <section id="alltag" class="pt-home__section pt-home__needs" aria-labelledby="pt-home-needs-title">
+    <header class="pt-home__section-intro"><div><p class="pt-home__eyebrow">Im Alltag starten</p><h2 id="pt-home-needs-title">Was möchtest du für dein Tier leichter machen?</h2></div><p>Starte mit der Situation, nicht mit einer Featureliste. Von dort führen wir zur passenden Technik und zur konkreten Entscheidung.</p></header>
+    <ol class="pt-home__need-list">{model.useCases.map((item, index) => <li><a href={item.href}><span class="pt-home__need-index">{String(index + 1).padStart(2, "0")}</span><span class="pt-home__need-icon" aria-hidden="true" set:html={icon(item.icon)}></span><span class="pt-home__need-copy"><strong>{item.title}</strong><small>{item.text}</small></span><span class="pt-home__arrow" aria-hidden="true">→</span></a></li>)}</ol>
+  </section>
 
-  <div id="kaufberatung">
-    <HomeNavigation
-      mode="comparison-decision"
-      decisionCards={model.decisionComparisons}
-    />
-  </div>
+  <section class="pt-home__section pt-home__decisions" aria-labelledby="pt-home-decisions-title">
+    <header class="pt-home__section-intro"><div><p class="pt-home__eyebrow">Wenn Unterschiede zählen</p><h2 id="pt-home-decisions-title">Vier Entscheidungen, die den Alltag wirklich verändern können.</h2></div><p>Diese Vergleiche sind keine Bestenlisten. Sie machen Unterschiede bei Tier, Nutzung und Kompromissen sichtbar.</p></header>
+    <div class="pt-home__decision-grid">{decisions.map((decision, index) => <a class:list={["pt-home__decision", index === 0 && "pt-home__decision--lead"]} href={decision.href}>{decision.image && <div class="pt-home__decision-media"><OptimizedImage src={decision.image.src} alt={decision.image.alt ?? `${decision.title} im Vergleich`} width={720} height={480} layout="constrained" /></div>}<div class="pt-home__decision-copy"><span>{decision.label}</span><h3>{decision.title}</h3><p>{decision.text}</p><small>{decision.itemCount} {decision.itemCount === 1 ? "Modell" : "Modelle"} im Feld · Vergleich öffnen <b aria-hidden="true">→</b></small></div></a>)}</div>
+  </section>
 
-  <slot name="after-comparisons" />
+  <section class="pt-home__method" aria-labelledby="pt-home-method-title">
+    <div><p class="pt-home__eyebrow pt-home__eyebrow--inverse">Was PfotenTechnik anders macht</p><h2 id="pt-home-method-title">Nicht nur welches Produkt besser ist – sondern für wen.</h2><p>Eine Funktion ist nur dann hilfreich, wenn sie zu Tier, Haushalt und Alltag passt. Deshalb bleiben Grenzen und Evidenz neben den Vorteilen sichtbar.</p><a href={model.methodologyAction.href}>So bewerten wir Produkte und Vergleiche <span aria-hidden="true">→</span></a></div>
+    <ol>{model.methods.slice(0, 3).map((method) => <li><span>{method.number}</span><div><h3>{method.title}</h3><p>{method.text}</p></div></li>)}</ol>
+  </section>
 
-  <HomeSection
-    kind="products"
-    id="produktempfehlungen"
-    eyebrow="Aktuelle Produktempfehlungen"
-    title="Starke Optionen für konkrete Anforderungen"
-    text="Keine pauschale Bestenliste. Die Empfehlungen unterscheiden sich nach Futterart, Tierzahl, Bedienung und gewünschter Kontrolle."
-    items={model.products}
-  />
+  <section class="pt-home__section pt-home__categories" aria-labelledby="pt-home-categories-title">
+    <header class="pt-home__section-intro"><div><p class="pt-home__eyebrow">Direkt zur Technik</p><h2 id="pt-home-categories-title">Du weißt schon, wonach du suchst?</h2></div><p>Wähle eine Produktwelt für Kaufberatung, Vergleiche und passende Produktchecks.</p></header>
+    <nav class="pt-home__category-list" aria-label="Produktwelten">{model.categories.map((category) => <a href={category.href}><span>{category.code}</span><strong>{category.title}</strong><small>{category.count} Modelle eingeordnet</small><b aria-hidden="true">→</b></a>)}</nav>
+  </section>
 
-  <HomeSection
-    kind="editorial"
-    id="ratgeber"
-    eyebrow="Neu im Ratgeber"
-    title="Fundierte Antworten auf konkrete Fragen"
-    text="Gesundheitliche Warnzeichen, Fütterung und Haustiertechnik verständlich und ohne unnötige Dramatisierung erklärt."
-    items={model.guides}
-  />
+  {technologyMoment && <section class="pt-home__technology" aria-labelledby="pt-home-technology-title"><div class="pt-home__technology-media"><OptimizedImage src={technologyMoment.image.src} alt={`${technologyMoment.title} als Beispiel für vernetzte Haustiertechnik`} width={960} height={720} layout="constrained" /></div><div class="pt-home__technology-copy"><p class="pt-home__eyebrow">Technik im echten Kontext</p><h2 id="pt-home-technology-title">Smarte Technik beginnt nicht bei der App.</h2><p>Sie muss im Alltag zuverlässig, verständlich und für das Tier passend sein. Deshalb schauen wir auf die Folgen einer Funktion – nicht nur auf ihr Etikett.</p><p class="pt-home__technology-product"><span>Beispiel aus dem Produktcheck</span><strong>{technologyMoment.manufacturer} · {technologyMoment.title}</strong></p><a href={technologyMoment.href}>Produktcheck lesen <span aria-hidden="true">→</span></a></div></section>}
 
-  <HomeNavigation
-    mode="method"
-    methods={model.methods}
-    methodologyAction={model.methodologyAction}
-  />
+  <section class="pt-home__section pt-home__guides" aria-labelledby="pt-home-guides-title">
+    <header class="pt-home__section-intro"><div><p class="pt-home__eyebrow">Wissen für die nächste Entscheidung</p><h2 id="pt-home-guides-title">Fragen, die vor dem Kauf sinnvoll sind.</h2></div><a class="pt-home__text-link" href="/wissen/">Alle Ratgeber ansehen <span aria-hidden="true">→</span></a></header>
+    <div class="pt-home__guide-list">{guides.map((guide) => <a href={guide.href}>{guide.image && <div><OptimizedImage src={guide.image.src} alt={guide.image.alt ?? guide.title} width={560} height={360} layout="constrained" /></div>}<span>{guide.label}</span><h3>{guide.title}</h3><p>{guide.text}</p><small>{guide.action} <b aria-hidden="true">→</b></small></a>)}</div>
+  </section>
 
-  <HomeStats stats={model.hero.stats} />
+  <section class="pt-home__trust" aria-labelledby="pt-home-trust-title"><div><p class="pt-home__eyebrow">Transparenz</p><h2 id="pt-home-trust-title">Orientierung braucht eine offene Grundlage.</h2></div><p>{model.transparency}</p><nav aria-label="Transparenz und Redaktion"><a href="/so-bewerten-wir/">Methodik</a><a href="/redaktion/">Redaktion</a><a href="/affiliate-hinweis/">Affiliate-Hinweis</a></nav></section>
 
-  <HomeSection
-    kind="editorial"
-    id="aktualisiert"
-    eyebrow="Aktuell geprüft"
-    title="Zuletzt überarbeitete Inhalte"
-    text="Diese Seiten wurden zuletzt fachlich, redaktionell oder strukturell aktualisiert."
-    items={model.recentlyUpdated}
-  />
-
-  <HomeFaq items={model.faq} />
-
-  <HomeNavigation
-    mode="topics"
-    groups={model.topicGroups}
-  />
-
+  <section class="pt-home__closing" aria-labelledby="pt-home-closing-title"><p class="pt-home__eyebrow pt-home__eyebrow--inverse">Dein nächster Schritt</p><h2 id="pt-home-closing-title">Starte mit dem, was in deinem Alltag gerade offen ist.</h2><p>Wähle eine Situation oder geh direkt zu der Technik, die du bereits im Blick hast.</p><div class="pt-home__actions"><a class="pt-button pt-home__button pt-home__button--primary" href="#alltag">Alltagsproblem auswählen</a><a class="pt-button pt-home__button pt-home__button--secondary" href="/vergleiche/">Vergleiche durchsuchen</a></div></section>
 </div>
