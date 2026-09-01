@@ -30,7 +30,7 @@ test("reference comparison supplies a compact image-led decision flow without a 
     assert.match(component, new RegExp(landmark));
   }
   assert.match(component, /product\.image/);
-  assert.match(component, /<EditorialScore/);
+  assert.match(component, /<ProductScore/);
   assert.ok(component.indexOf('id="direktvergleich"') < component.indexOf('id="rc33-scenarios"'));
   assert.doesNotMatch(component, /ComparisonFit2|new Score|confidence calculation/i);
 });

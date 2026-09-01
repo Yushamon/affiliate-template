@@ -56,7 +56,8 @@ test("reference longform keeps interactive controls but removes editorial card c
   assert.match(experience, /\.category-fit\) \{[\s\S]*border: 1px solid var\(--px2-border\);/);
   assert.match(experience, /\.decision-facts dl > div\),[\s\S]*border-top: 1px solid var\(--px2-border\)/);
   assert.match(fit, /fieldset:not\(:first-child\) \{ display: none; \}/);
-  assert.match(alternatives, /src=\{reference && item\.source \? item\.source : item\.optimized\?\.src\}/);
+  assert.match(alternatives, /<OptimizedImage/);
+  assert.match(alternatives, /alternatives__image--fallback/);
 });
 
 test("mobile reference gallery uses an emitted Astro source and standard SVG gallery icons", () => {

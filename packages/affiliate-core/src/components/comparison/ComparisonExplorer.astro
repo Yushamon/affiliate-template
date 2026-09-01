@@ -1,6 +1,7 @@
 ---
 import OptimizedImage from "../OptimizedImage.astro";
-import EditorialScore from "../EditorialScore.astro";
+import ProductScore from "../ProductScore.astro";
+import "./comparison-experience.css";
 import type {
   ComparisonFilter,
   ComparisonProduct,
@@ -64,8 +65,7 @@ const rowGroups = Array.from(groupedRows.entries());
     </div>
 
     <div class="comparison-lab__selection-count" aria-live="polite">
-      <strong data-selection-count>{defaultSelection.length}</strong>
-      <span>von {maximumSelection} gewählt</span>
+      <strong data-selection-count>{defaultSelection.length} von {maximumSelection} gewählt</strong>
     </div>
   </header>
 
@@ -89,13 +89,13 @@ const rowGroups = Array.from(groupedRows.entries());
           data-picker-card={product.slug}
         >
           <input
+            class:list={["comparison-pick-card__control"]}
             type="checkbox"
             value={product.slug}
             data-product-picker
             checked={selected}
+            aria-label={`${product.title} für den Vergleich auswählen`}
           />
-
-          <span class="comparison-pick-card__check" aria-hidden="true">✓</span>
 
           <span class="comparison-pick-card__media">
             {product.image && (
@@ -107,19 +107,25 @@ const rowGroups = Array.from(groupedRows.entries());
                 layout="constrained"
               />
             )}
+            {!product.image && <span class="comparison-pick-card__no-media" aria-hidden="true">Bild nicht verfügbar</span>}
           </span>
 
           <span class="comparison-pick-card__body">
             {product.manufacturer && (
               <small>{product.manufacturer}</small>
             )}
-            <strong>{product.title}</strong>
-            <span>
-              {typeof product.rating === "number"
-                ? `${product.rating}/100`
-                : "ohne Score"}
-              {" · "}
-              {price.amountLabel?.replace(/^ca\.\s*/, "") ?? "Preis offen"}
+            <strong data-picker-identity>{product.title}</strong>
+            <span class="comparison-pick-card__meta">
+              {typeof product.rating === "number" ? (
+                <ProductScore
+                  value={product.rating}
+                  scale={100}
+                  variant="ring-compact"
+                  label=""
+                  class="comparison-pick-card__score"
+                />
+              ) : <span class="comparison-pick-card__missing-score">Ohne Score</span>}
+              <b class="comparison-pick-card__price">{price.amountLabel?.replace(/^ca\.\s*/, "") ?? "Preis offen"}</b>
             </span>
           </span>
         </label>
@@ -230,10 +236,10 @@ const rowGroups = Array.from(groupedRows.entries());
           {products.map((product) => (
             <div class="comparison-lab__value" data-product-panel={product.slug}>
               {typeof product.rating === "number" ? (
-                <EditorialScore
+                <ProductScore
                   value={product.rating}
                   scale={100}
-                  variant="inline"
+                  variant="ring-compact"
                   label=""
                 />
               ) : (
@@ -427,7 +433,7 @@ const rowGroups = Array.from(groupedRows.entries());
           onlyDifferences && row.dataset.difference !== "true";
       });
 
-      if (count) count.textContent = String(selected.length);
+      if (count) count.textContent = `${selected.length} von ${MAX_SELECTION} gewählt`;
 
       const hasEnough = selected.length >= 2;
       if (empty instanceof HTMLElement) empty.hidden = hasEnough;

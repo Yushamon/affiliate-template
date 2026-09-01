@@ -1,0 +1,23 @@
+---
+import EditorialScore from "./EditorialScore.astro";
+
+/**
+ * Canonical editorial product-score presentation for production Product and
+ * Comparison surfaces.  Score calculation remains in the owning domain;
+ * this primitive only presents its already-normalized value consistently.
+ */
+interface Props {
+  value: number;
+  scale?: 5 | 10 | 100;
+  variant?: "ring" | "ring-compact" | "inline" | "compact" | "standard" | "detailed";
+  methodologyHref?: string;
+  showMethodology?: boolean;
+  label?: string;
+  description?: string;
+  class?: string;
+}
+
+const props = Astro.props as Props;
+---
+
+<EditorialScore {...props} />

@@ -1,5 +1,5 @@
 ---
-import EditorialScore from "@affiliate-core/components/EditorialScore.astro";
+import ProductScore from "@affiliate-core/components/ProductScore.astro";
 import type { ProductExperienceModel } from "../../domain/productExperience/model";
 import ProductGallery29 from "./ProductGallery29.astro";
 import PriceBox2 from "./PriceBox2.astro";
@@ -36,7 +36,7 @@ const suitabilitySignals = model.idealFor.slice(0, 3);
     <div class="px2-hero__scoreline">
       {reference && <span class="px2-hero__score-label">Redaktionelle Einordnung</span>}
       {model.score != null && model.score > 0 ? (
-        <EditorialScore
+        <ProductScore
           value={model.score}
           scale={100}
           variant="ring"

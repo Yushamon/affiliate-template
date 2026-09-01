@@ -17,10 +17,25 @@ const sourceOf = (value) => {
 
 export const resolveMediaSource = (media) => sourceOf(media);
 
-export const resolveComparisonProductImage = (images) => {
+/**
+ * Product media has one semantic priority everywhere it is rendered as a
+ * compact decision image.  The resolver deliberately returns the original
+ * metadata object: Astro consumers can then keep its verified asset contract
+ * instead of reconstructing a raw `src`/`srcset` pair downstream.
+ */
+export const resolveProductMedia = (images) => {
   for (const key of ["comparison", "thumbnail", "hero"]) {
     const media = images?.[key];
     if (sourceOf(media)) return media;
   }
-  return undefined;
+
+  const gallery = Array.isArray(images?.gallery)
+    ? images.gallery
+    : images?.gallery
+      ? [images.gallery]
+      : [];
+
+  return gallery.find((media) => sourceOf(media));
 };
+
+export const resolveComparisonProductImage = resolveProductMedia;

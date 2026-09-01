@@ -2,6 +2,7 @@
 import type { CollectionEntry } from "astro:content";
 import type { AlternativeRecommendation } from "@affiliate-core/components/product/alternativeRecommendation.types";
 import { getFutterautomatenAlternatives } from "./categories/futterautomaten";
+import { resolveProductMedia } from "../comparison/mediaResolver.mjs";
 
 export type ProductEntry = CollectionEntry<"products">;
 
@@ -270,11 +271,7 @@ const toRecommendation = (
     url:
       data.productUrl ??
       `/produkt/${slugOf(candidate)}/`,
-    image:
-      images.comparison?.src ??
-      images.thumbnail?.src ??
-      images.hero?.src ??
-      images.hero,
+    image: resolveProductMedia(images),
     score: Math.round(editorialScore(candidate)),
     rating: Number(data.rating ?? 0),
     icon: "",

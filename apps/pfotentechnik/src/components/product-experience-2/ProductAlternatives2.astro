@@ -1,6 +1,6 @@
 ---
-import { getCachedImage } from "../../lib/imageOptimization";
-import EditorialScore from "@affiliate-core/components/EditorialScore.astro";
+import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
+import ProductScore from "@affiliate-core/components/ProductScore.astro";
 
 interface Alternative {
   type: string;
@@ -15,11 +15,10 @@ interface Alternative {
 
 interface Props { alternatives: Alternative[]; reference?: boolean }
 const { alternatives, reference = false } = Astro.props;
-const cards = await Promise.all(alternatives.slice(0, 4).map(async (item) => ({
+const cards = alternatives.slice(0, 4).map((item) => ({
   ...item,
-  source: typeof item.image?.src === "string" ? item.image.src : item.image?.src?.src,
-  optimized: item.image?.src ? await getCachedImage({ src:item.image.src, width:520, height:390, fit:"contain", quality:"high" }) : null
-})));
+  media: item.image?.src ? item.image : null
+}));
 ---
 
 {cards.length > 0 && (
@@ -33,27 +32,30 @@ const cards = await Promise.all(alternatives.slice(0, 4).map(async (item) => ({
     <div class="alternatives__grid">
       {cards.map((item) => (
         <article>
-          {item.optimized || item.source ? <div class="alternatives__image">
-            {item.optimized || item.source ? (
-              <img
-                src={reference && item.source ? item.source : item.optimized?.src}
-                srcset={reference ? undefined : item.optimized?.srcSet.attribute}
-                sizes="(max-width:720px) 100vw, 25vw"
-                width="520"
-                height="390"
-                loading="lazy"
-                decoding="async"
-                alt={item.image?.alt || item.title}
+          {item.media ? (
+            <div class="alternatives__image">
+              <OptimizedImage
+                src={item.media.src}
+                alt={item.media.alt || item.title}
+                width={520}
+                height={390}
+                layout="constrained"
+                fit="contain"
+                sizes="(max-width: 720px) 100vw, 25vw"
               />
-            ) : null}
-          </div> : null}
+            </div>
+          ) : (
+            <div class="alternatives__image alternatives__image--fallback" role="img" aria-label="Produktbild nicht verfügbar">
+              <span aria-hidden="true">Produktbild nicht verfügbar</span>
+            </div>
+          )}
 
           <div class="alternatives__body">
             <span>{item.label}</span>
             <h3>{item.title}</h3>
             <p>{item.reason}</p>
             {Number(item.score) > 0 && (
-              <EditorialScore
+              <ProductScore
                 value={Number(item.score)}
                 scale={100}
                 variant="ring-compact"
@@ -79,8 +81,8 @@ const cards = await Promise.all(alternatives.slice(0, 4).map(async (item) => ({
   .alternatives__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
   article{display:flex;flex-direction:column;min-width:0;overflow:hidden;border:1px solid var(--px2-border);border-radius:20px;background:var(--px2-surface);box-shadow:var(--px2-shadow)}
   .alternatives__image{display:grid;place-items:center;aspect-ratio:4/3;background:var(--px2-surface-raised)}
-  .alternatives__image img{width:100%;height:100%;padding:12px;object-fit:contain}
-  .alternatives__image>span{display:grid;place-items:center;width:56px;height:56px;border-radius:18px;background:var(--px2-green-soft);color: var(--px2-accent-text);font-weight:900}
+  .alternatives__image :global(img){width:100%;height:100%;padding:12px;object-fit:contain}
+  .alternatives__image--fallback{min-height:6.5rem;padding:1rem;color:var(--px2-muted);font-size:.8rem;font-weight:750;text-align:center}
   .alternatives__body{display:flex;flex:1;flex-direction:column;padding:16px}
   .alternatives__body>span{color: var(--px2-accent-text);font-size:.74rem;font-weight:850;text-transform:uppercase}
   .alternatives h3{margin:6px 0 8px;font-size:1.05rem}

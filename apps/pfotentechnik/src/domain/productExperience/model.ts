@@ -6,6 +6,7 @@ import { uniqueTextItems } from "./contentLists.ts";
 import { calculateProductScore } from "../productScore.ts";
 import { buildDecisionFacts } from "./consequences";
 import { deriveProductOperations, isAutoRecommendationEligible } from "../../lib/product-operations/policy.mjs";
+import { resolveProductMedia } from "../comparison/mediaResolver.mjs";
 
 const list = <T>(value: T[] | undefined | null): T[] => Array.isArray(value) ? value : [];
 const text = (value: unknown, fallback = ""): string => {
@@ -257,14 +258,14 @@ const candidateScore = (current: any, candidate: any): number => {
 const toAlternative = (entry: any, type: string, label: string, reason: string, price?: ProductPriceInsight) => {
   const data = dataOf(entry);
   const slug = slugOf(entry);
-  const hero = data.images?.comparison ?? data.images?.thumbnail ?? data.images?.hero;
+  const media = resolveProductMedia(data.images);
   const decisionProfile = decisionProfileFor(data, price);
   return {
     type,
     label,
     title: text(data.title, slug),
     href: text(data.productUrl, `/produkt/${slug}/`),
-    image: hero ? { src: imageSource(hero), alt: imageAlt(hero, text(data.title, slug)) } : null,
+    image: media ? { src: media.src ?? media, alt: imageAlt(media, text(data.title, slug)) } : null,
     score: editorialScore(data),
     priceLabel: price?.formattedCurrent,
     reason,

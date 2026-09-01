@@ -1,4 +1,6 @@
 ---
+import { getEditorialScoreLabel, toEditorialScore } from "../utils/editorialScore";
+
 interface Props {
   value: number;
   scale?: 5 | 10 | 100;
@@ -21,18 +23,10 @@ const {
   class: className
 } = Astro.props;
 
-const normalized =
-  scale === 5 ? value * 20 : scale === 10 ? value * 10 : value;
-const score = Math.max(0, Math.min(100, Math.round(normalized)));
+const score = toEditorialScore(value, scale);
 const isRing = variant === "ring" || variant === "ring-compact";
 
-const verdict =
-  score >= 90 ? "Hervorragend"
-  : score >= 80 ? "Sehr gut"
-  : score >= 70 ? "Gut"
-  : score >= 60 ? "Solide"
-  : score >= 50 ? "Mit Einschränkungen"
-  : "Nicht empfohlen";
+const verdict = getEditorialScoreLabel(score);
 
 const tone =
   score >= 80 ? "excellent"
@@ -60,6 +54,7 @@ const tone =
         aria-valuemin="0"
         aria-valuemax="100"
         aria-valuenow={score}
+        aria-hidden="true"
       >
         <span class="pt-score__ring-inner">
           <strong class="pt-score__value">{score}</strong>
