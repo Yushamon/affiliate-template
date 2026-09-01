@@ -26,10 +26,13 @@ const reference33 = true;
   data-pt-foundation={reference33 ? true : undefined}
 >
   <ProductHero2 model={model} reference={reference33} />
-  <ProductVerdict2 model={model} reference={reference33} />
+
+  <div class="px2__verdict-fit">
+    <ProductVerdict2 model={model} reference={reference33} />
+    {reference33 && <ProductCategoryFitAssistant profile={model.categoryFitProfile} alternatives={model.alternatives} reference={true} />}
+  </div>
 
   <div class="px2__decision-zone" aria-label="Kaufentscheidung">
-    {reference33 && <ProductCategoryFitAssistant profile={model.categoryFitProfile} alternatives={model.alternatives} reference={true} />}
     <ProductDecisionFacts2 facts={model.decisionFacts} />
     <ProductPurchaseMistakes2 items={model.purchaseMistakes} />
     {!reference33 && <ProductCategoryFitAssistant profile={model.categoryFitProfile} alternatives={model.alternatives} />}
@@ -70,6 +73,7 @@ const reference33 = true;
     color: var(--px2-text);
   }
   .px2 :global(*) { box-sizing: border-box; }
+  .px2__verdict-fit { display: grid; gap: clamp(18px, 3vw, 30px); min-width: 0; }
   .px2__decision-zone { display: grid; gap: clamp(18px, 3vw, 30px); min-width: 0; }
   @media (max-width: 759px) {
     .px2 > :not(.px2-hero), .px2__decision-zone {
@@ -107,6 +111,7 @@ const reference33 = true;
   }
 
   .px2--reference33 .px2__decision-zone { gap: var(--pt33-space-16); }
+  .px2--reference33 .px2__verdict-fit { gap: var(--pt33-space-8); }
 
   @media (max-width: 759px) {
     .px2--reference33 { padding-top: 0; }

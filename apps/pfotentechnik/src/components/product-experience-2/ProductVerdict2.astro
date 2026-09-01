@@ -10,6 +10,8 @@ const { model, reference = false } = Astro.props;
 const buyIf = model.idealFor.slice(0, 3);
 const avoidIf = model.notFor.slice(0, 3);
 const alternative = model.alternatives[0];
+const primaryFit = model.idealFor[0] ?? model.suitabilitySummary;
+const limitationContext = model.notFor.find((item) => item !== model.mainLimitation) ?? model.reviewVerdict;
 ---
 
 <section class:list={["verdict", { "verdict--reference33": reference }]} aria-labelledby="verdict-title">
@@ -22,17 +24,18 @@ const alternative = model.alternatives[0];
     <div class="verdict__reference-grid">
       <article class="verdict__feature">
         <span>Der wichtigste Vorteil</span>
-        <h3>Du erkennst, welches Tier den Brunnen genutzt hat.</h3>
-        <p>{model.benefits[0] ?? model.reviewSummary}</p>
+        <h3>{model.benefits[0] ?? model.reviewVerdict}</h3>
+        <p>{model.reviewSummary}</p>
       </article>
       <article class="verdict__tradeoff">
         <span>Was du vor dem Kauf wissen solltest</span>
         <h3>{model.mainLimitation}</h3>
-        <p>Die tierbezogene Zuordnung setzt den passenden PETLIBRO-Halsbandanhänger und eine zuverlässige Erkennung voraus.</p>
+        <p>{limitationContext}</p>
       </article>
-      <div class="verdict__decision-line" aria-label="Qualitativer Trade-off">
-        <span>Mehrkatzen</span><strong>●</strong><span>Halsband nötig</span>
-      </div>
+      <dl class="verdict__decision-summary" aria-label="Kompakte Eignungszusammenfassung">
+        <div><dt>Passt besonders</dt><dd>{primaryFit}</dd></div>
+        <div><dt>Kompromiss</dt><dd>{model.mainLimitation}</dd></div>
+      </dl>
     </div>
   ) : (
   <div class="verdict__grid">
@@ -169,17 +172,18 @@ const alternative = model.alternatives[0];
   .verdict--reference33 .verdict__tradeoff > span { color: var(--px2-red); }
   .verdict--reference33 .verdict__tradeoff h3 { margin: 0; font-size: var(--pt33-font-subheading, 1.5rem); }
   .verdict--reference33 .verdict__tradeoff p { max-width: 46rem; margin: 0; color: var(--px2-muted); }
-  .verdict--reference33 .verdict__decision-line { display: grid; grid-template-columns: 1fr auto 1fr; gap: var(--pt33-space-3, 12px); align-items: center; color: var(--px2-muted); font-size: var(--pt33-font-meta, .875rem); }
-  .verdict--reference33 .verdict__decision-line::before, .verdict--reference33 .verdict__decision-line::after { height: 1px; background: var(--px2-border); content: ""; }
-  .verdict--reference33 .verdict__decision-line strong { color: var(--px2-text); }
+  .verdict--reference33 .verdict__decision-summary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0; padding-block: var(--pt33-space-4, 16px); border-block: 1px solid var(--px2-border); }
+  .verdict--reference33 .verdict__decision-summary > div { min-width: 0; }
+  .verdict--reference33 .verdict__decision-summary > div:first-child { padding-right: var(--pt33-space-6, 24px); }
+  .verdict--reference33 .verdict__decision-summary > div:last-child { padding-left: var(--pt33-space-6, 24px); border-left: 1px solid var(--px2-border); }
+  .verdict--reference33 .verdict__decision-summary dt { margin-bottom: var(--pt33-space-2, 8px); color: var(--px2-muted); font-size: .72rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+  .verdict--reference33 .verdict__decision-summary dd { margin: 0; color: var(--px2-text); font-size: var(--pt33-font-body, 1.125rem); font-weight: 750; line-height: 1.35; overflow-wrap: anywhere; }
   @media (max-width: 719px) {
     .verdict--reference33 .verdict__feature { min-height: 0; padding: 0 0 var(--pt33-space-5, 20px); border-bottom: 1px solid var(--px2-border); border-radius: 0; background: transparent; }
-    .verdict--reference33 .verdict__decision-line { grid-template-columns: 1fr; gap: 4px; padding-top: var(--pt33-space-3, 12px); border-top: 1px solid var(--px2-border); }
-    .verdict--reference33 .verdict__decision-line::before, .verdict--reference33 .verdict__decision-line::after { display: none; }
-    .verdict--reference33 .verdict__decision-line span { display: grid; gap: 2px; }
-    .verdict--reference33 .verdict__decision-line span:first-child::before { color: var(--px2-muted); content: "Passt besonders"; font-size: .72rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
-    .verdict--reference33 .verdict__decision-line span:last-child::before { color: var(--px2-muted); content: "Kompromiss"; font-size: .72rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
-    .verdict--reference33 .verdict__decision-line strong { display: none; }
+    .verdict--reference33 .verdict__decision-summary { grid-template-columns: minmax(0, 1fr); padding-block: 0; }
+    .verdict--reference33 .verdict__decision-summary > div:first-child { padding: var(--pt33-space-4, 16px) 0; }
+    .verdict--reference33 .verdict__decision-summary > div:last-child { padding: var(--pt33-space-4, 16px) 0; border-top: 1px solid var(--px2-border); border-left: 0; }
+    .verdict--reference33 .verdict__decision-summary dt { margin-bottom: 4px; }
   }
 
   @media (min-width: 760px) {

@@ -17,6 +17,46 @@ const sourceOf = (value) => {
 
 export const resolveMediaSource = (media) => sourceOf(media);
 
+const imageMetadataOf = (media) => {
+  if (!media || typeof media !== "object") return undefined;
+  const candidate = media.src && typeof media.src === "object"
+    ? media.src
+    : media;
+  return typeof candidate.src === "string" &&
+    Number(candidate.width) > 0 &&
+    Number(candidate.height) > 0
+      ? candidate
+      : undefined;
+};
+
+export const isResolvedProductImage = (media) => Boolean(imageMetadataOf(media));
+
+/**
+ * Hero media must be backed by Astro image metadata. A raw string can look
+ * plausible while still producing a missing production asset, so it is not a
+ * successful resolution here. Content collection image() references become
+ * metadata only after Astro has verified the local source.
+ */
+export const resolveProductHeroMedia = (images) => {
+  const candidates = [
+    { role: "hero", media: images?.hero },
+    ...(Array.isArray(images?.gallery) ? images.gallery : images?.gallery ? [images.gallery] : [])
+      .map((media) => ({ role: "gallery", media })),
+    { role: "comparison", media: images?.comparison },
+    { role: "thumbnail", media: images?.thumbnail }
+  ];
+
+  for (const candidate of candidates) {
+    if (!isResolvedProductImage(candidate.media)) continue;
+    return {
+      ...candidate,
+      fallback: candidate.role !== "hero"
+    };
+  }
+
+  return undefined;
+};
+
 /**
  * Product media has one semantic priority everywhere it is rendered as a
  * compact decision image.  The resolver deliberately returns the original

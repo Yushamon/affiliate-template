@@ -6,7 +6,7 @@ import { uniqueTextItems } from "./contentLists.ts";
 import { calculateProductScore } from "../productScore.ts";
 import { buildDecisionFacts } from "./consequences";
 import { deriveProductOperations, isAutoRecommendationEligible } from "../../lib/product-operations/policy.mjs";
-import { resolveProductMedia } from "../comparison/mediaResolver.mjs";
+import { resolveProductHeroMedia, resolveProductMedia } from "../comparison/mediaResolver.mjs";
 
 const list = <T>(value: T[] | undefined | null): T[] => Array.isArray(value) ? value : [];
 const text = (value: unknown, fallback = ""): string => {
@@ -468,8 +468,9 @@ export const buildProductExperienceModel = ({
   const priceIndex = getPriceIndex(allProducts, currentEntry);
   const price = priceIndex.bySlug.get(slug);
   const operations = deriveProductOperations(data);
+  const primaryMedia = resolveProductHeroMedia(data.images);
   const galleryEntries = [
-    data.images?.hero,
+    primaryMedia?.media,
     ...list<any>(data.images?.gallery)
   ].filter(Boolean).filter((entry, index, values) => {
     const key = text(imageSource(entry)?.src ?? imageSource(entry));
@@ -478,7 +479,9 @@ export const buildProductExperienceModel = ({
   const gallery = galleryEntries.map((entry, index) => ({
     src: imageSource(entry),
     alt: imageAlt(entry, index === 0 ? text(data.title) : `${text(data.title)} – Ansicht ${index + 1}`),
-    caption: text(entry?.caption)
+    caption: text(entry?.caption),
+    role: index === 0 ? primaryMedia?.role ?? "gallery" : "gallery",
+    fallback: index === 0 ? primaryMedia?.fallback ?? true : false
   }));
   const reviewScore = Number(reviewProduct.score);
   const scoreRaw = Number.isFinite(reviewScore) && reviewScore > 0

@@ -52,6 +52,8 @@ const evaluate = async (expression, awaitPromise = false) => {
   return response.result?.result?.value;
 };
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+await send("DOM.enable");
+await send("CSS.enable");
 
 const captureFitDetail = async (width, theme, fit) => {
   const margin = width <= 430 ? 0 : 24;
@@ -129,18 +131,15 @@ for (const width of widths) for (const theme of themes) {
     };
   })())`));
 
-  await evaluate(`document.querySelector('.rc33__explorer > summary')?.scrollIntoView({ block: 'center' })`);
-  const hoverPoint = JSON.parse(await evaluate(`JSON.stringify((() => {
-    const rect = document.querySelector('.rc33__explorer > summary')?.getBoundingClientRect();
-    return rect ? { x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 } : null;
-  })())`));
-  await send("Input.dispatchMouseEvent", { type: "mouseMoved", x: hoverPoint.x, y: hoverPoint.y });
+  const documentNode = await send("DOM.getDocument", { depth: 0 });
+  const summaryNode = await send("DOM.querySelector", { nodeId: documentNode.result.root.nodeId, selector: ".rc33__explorer > summary" });
+  await send("CSS.forcePseudoState", { nodeId: summaryNode.result.nodeId, forcedPseudoClasses: ["hover"] });
   await sleep(60);
   const hover = JSON.parse(await evaluate(`JSON.stringify((() => {
     const summary = document.querySelector('.rc33__explorer > summary');
     return { matches: summary?.matches(':hover'), background: summary ? getComputedStyle(summary).backgroundColor : null };
   })())`));
-  await send("Input.dispatchMouseEvent", { type: "mouseMoved", x: 0, y: 0 });
+  await send("CSS.forcePseudoState", { nodeId: summaryNode.result.nodeId, forcedPseudoClasses: [] });
 
   await evaluate(`document.querySelector('.rc33__explorer > summary')?.focus()`);
   const focus = JSON.parse(await evaluate(`JSON.stringify((() => {
@@ -177,7 +176,7 @@ for (const width of widths) for (const theme of themes) {
   const mobileWidth = width > 430 || Math.abs(closed.trigger.width - closed.fit.width) <= tolerance;
   const heightValid = closed.summary.height >= 48 && closed.summary.height <= (width === 320 ? 68 : 56.5);
   const noWrapAt375 = width !== 375 || closed.label.height <= closed.labelLineHeight * 1.25;
-  const hoverVisible = width < 768 || (hover.matches && hover.background !== closed.summaryBackground);
+  const hoverVisible = width < 768 || hover.background !== closed.summaryBackground;
   const focusVisible = focus.active && (focus.outlineStyle !== "none" || focus.boxShadow !== "none");
   const semanticsValid = closed.semantics.details === "DETAILS" && closed.semantics.summary === "SUMMARY" && closed.semantics.iconHidden === "true";
   const openValid = open.open && open.explorer?.width > 0 && open.scrollWidth === open.clientWidth && Math.abs(open.trigger.width - closed.fit.width) <= tolerance;

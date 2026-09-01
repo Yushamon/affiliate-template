@@ -2,16 +2,15 @@
 import { getCachedImage } from "../../lib/imageOptimization";
 import "./product-gallery-29.css";
 
-interface GalleryItem { src: any; alt: string; caption?: string; }
+interface GalleryItem { src: any; alt: string; caption?: string; role?: string; fallback?: boolean; }
 interface Props { name: string; items: GalleryItem[]; reference?: boolean; }
 interface OptimizedItem extends GalleryItem {
   src: string; srcset: string; mobileSrc: string; thumbSrc: string; width: number; height: number;
 }
 
-const { name, items = [], reference = false } = Astro.props;
+const { name, items = [] } = Astro.props;
 const optimized = (await Promise.all(
   items.filter((item) => item?.src).map(async (item, index): Promise<OptimizedItem | null> => {
-    const source = typeof item.src === "string" ? item.src : item.src?.src;
     try {
       const [image, mobileImage, thumb] = await Promise.all([
         getCachedImage({
@@ -25,29 +24,14 @@ const optimized = (await Promise.all(
       ]);
       return {
         ...item,
-        src: reference && source ? source : image.src,
-        srcset: reference ? "" : image.srcSet.attribute,
-        // The reference hero deliberately uses Astro's emitted source asset on
-        // mobile. Its generated responsive derivative is not emitted in the
-        // static output, while this source is both optimized WebP and present.
-        mobileSrc: reference && source ? source : mobileImage.src,
+        src: image.src,
+        srcset: image.srcSet.attribute,
+        mobileSrc: mobileImage.src,
         thumbSrc: thumb.src,
         width: item.src?.width ?? 1400,
         height: item.src?.height ?? 1050,
       };
-    } catch {
-      const fallback = source;
-      if (!fallback) return null;
-      return {
-        ...item,
-        src: fallback,
-        srcset: "",
-        mobileSrc: fallback,
-        thumbSrc: fallback,
-        width: item.src?.width ?? 1400,
-        height: item.src?.height ?? 1050,
-      };
-    }
+    } catch { return null; }
   }),
 )).filter((item): item is OptimizedItem => item !== null);
 
@@ -65,6 +49,8 @@ const data = optimized.map((item) => ({
   class:list={["pg29", `pg29--${layout}`, { "pg29--empty": !hasImages }]}
   data-product-gallery-v29
   data-image-count={count}
+  data-primary-media-role={optimized[0]?.role}
+  data-primary-media-fallback={optimized[0]?.fallback ? "true" : "false"}
   aria-label={`Produktbilder von ${name}`}
 >
   {hasImages ? (
