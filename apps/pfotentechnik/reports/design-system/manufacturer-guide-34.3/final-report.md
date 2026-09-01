@@ -14,11 +14,11 @@ The page opens with portfolio size, product-area breadth and a supported orienta
 
 ## 4. Guide journey
 
-Existing metadata and generic signals derive problem, buying, how-to and explanation compositions through one renderer. A concise answer appears in the hero, followed by a high-information summary. Only buying intent may surface contextual products. The complete original long form remains in production HTML behind native disclosure, followed by contextual next steps. Explicit media is preserved; routes without a relevant image use a compact text hero. FAQ remains visible, subordinate and native.
+Existing metadata and generic signals derive problem, buying, how-to and explanation compositions through one renderer. A concise answer appears in the hero, followed by a high-information summary and table of contents. The complete original long form is server-rendered, open and directly readable without interaction at every viewport. Contextual products, when relevant, follow the article and explain user fit through “Interessant, wenn …”; no renderer, selection-policy or catalogue-defence copy is exposed. Only secondary depth, FAQ answers and evidence detail may use disclosure. FAQ now precedes contextual next steps. Explicit media is preserved; routes without a relevant image use a compact text hero.
 
 ## 5. Cross-page coverage
 
-Browser QA covers PETKIT (many products/multiple categories), PETLIBRO (many products), Aqara (few products) and Pawsync (sparse data). Guide coverage includes buying, problem, how-to, explanation/technology, media-rich and sparse content across six routes. All ten routes pass every one of nine widths and both themes: 180/180 combinations. `browser-qa.json` records coverage, classification, fallback use, closed/open disclosure checks and media/score geometry.
+Browser QA covers PETKIT (many products/multiple categories), PETLIBRO (many products), Aqara (few products) and Pawsync (sparse data). Guide coverage includes buying, problem, how-to, explanation/technology, media-rich and sparse content across six routes. All ten routes pass every one of nine widths and both themes: 180/180 combinations. `browser-qa.json` records coverage, classification, fallback use, primary-article visibility, absence of a guide gate, secondary disclosure checks and media/score geometry.
 
 ## 6. Internal-link delta
 
@@ -32,25 +32,25 @@ URLs, canonicals, titles, meta descriptions, H1 intent, indexability, author/dat
 
 | Metric at 375 px | PETKIT before | PETKIT after | Cleaning guide before | Cleaning guide after |
 |---|---:|---:|---:|---:|
-| Response HTML | 65,237 B | 72,140 B | 130,012 B | 124,513 B |
-| DOM nodes | 406 | 526 | 1,612 | 1,568 |
+| Response HTML | 65,237 B | 71,851 B | 130,012 B | 124,290 B |
+| DOM nodes | 406 | 518 | 1,612 | 1,565 |
 | Content images | 23 | 7 | 10 | 9 |
 | Uncached image bytes | 194,406 B | 55,944 B | 144,434 B | 167,556 B |
-| Document height | 21,729 px | 12,834 px | 63,969 px | 5,940 px |
+| Document height | 21,729 px | 12,834 px | 63,969 px | 66,919 px |
 | Card-like surfaces | 29 | 5 | 14 | 5 |
 | Hydrated JS | 0 B | 0 B | 0 B | 0 B |
 
-PETKIT trades modest HTML/DOM growth for an explicit structured journey while cutting images by 70%, uncached image transfer by 71%, height by 41% and card surfaces by 83%. The guide cuts HTML by 4.2%, DOM by 2.7%, initial height by 90.7% and card surfaces by 64%; the explicit editorial hero uses a higher-quality image variant, explaining its image-byte increase. PETLIBRO, the largest audited manufacturer, finishes at 84,452 HTML bytes, 746 DOM nodes and 0 JS with no performance warning. The 30-check viewport performance contract passes.
+PETKIT trades modest HTML/DOM growth for an explicit structured journey while cutting images by 70%, uncached image transfer by 71%, height by 41% and card surfaces by 83%. The guide cuts HTML by 4.4%, DOM by 2.9% and card surfaces by 64%. Its 66,919 px document height now honestly represents the complete 5,629-word primary article instead of a collapsed initial state; the 4.6% increase from the legacy page is accepted because the primary editorial content must remain directly readable. Transfer remains static and hydrated JS remains zero. The explicit editorial hero uses a higher-quality image variant, explaining its image-byte increase. PETLIBRO, the largest audited manufacturer, finishes at 84,452 HTML bytes, 746 DOM nodes and 0 JS with no performance warning. The 30-check viewport performance contract passes.
 
 The repository-wide diagnostic still reports three out-of-scope pre-existing errors on frozen `/vergleiche/beste-futterautomaten-fuer-katzen/` (HTML/DOM) and `/produkt/petlibro-granary-2-vision/` (CSS). No 34.3 Manufacturer or Guide route has a remaining finding; frozen page types were not changed to mask those debts.
 
 ## 9. Accessibility
 
-All journey links and summaries expose at least 44 px touch geometry in the browser matrix. Real keyboard traversal verifies a visible outline or Foundation focus ring. Headings, lists, descriptions, tables and native disclosures remain semantic. The Foundation contrast audit passes all 38 tested Light/Dark combinations at WCAG AA thresholds.
+All journey links and secondary summaries expose at least 44 px touch geometry in the browser matrix. Real keyboard traversal verifies a visible outline or Foundation focus ring. The primary guide article is a semantic section/article pair rather than a disclosure; headings, lists, descriptions, tables and optional secondary disclosures remain semantic. The Foundation contrast audit passes all 38 tested Light/Dark combinations at WCAG AA thresholds.
 
 ## 10. Responsive QA
 
-Automated checks at 320, 375, 430, 768, 820, 1024, 1280, 1440 and 1600 validate `clientWidth === scrollWidth`, no hero overlap, no clipped non-ellipsis text, contained/scrollable tables, disclosure and CTA geometry, touch targets, focus, valid scores and decoded visible media. Both closed and fully opened progressive-depth states pass: 180/180.
+Automated checks at 320, 375, 430, 768, 820, 1024, 1280, 1440 and 1600 validate `clientWidth === scrollWidth`, no hero overlap, no clipped non-ellipsis text, contained/scrollable tables, CTA geometry, touch targets, focus, valid scores and decoded visible media. Every Guide check additionally requires visible primary-article geometry, no closed disclosure ancestor and no legacy guide-gate copy. Secondary details also pass in their fully opened state: 180/180.
 
 ## 11. Light/Dark
 
@@ -58,7 +58,7 @@ Both renderers use semantic Foundation tokens only, without local theme branches
 
 ## 12. Visual self-review
 
-All eight final full-page screenshots were opened and inspected. PETKIT communicates brand, breadth and starting point immediately, avoids catalog presentation, differentiates selected products and exposes comparisons/alternatives. The guide answers above the fold, stays scannable, keeps the full article subordinate but accessible, and preserves intent through its next steps. No overlap, malformed score, broken image, giant empty media stage, excessive CTA saturation or dominant FAQ was found.
+All eight final full-page screenshots were opened and inspected. PETKIT communicates brand, breadth and starting point immediately, avoids catalog presentation, differentiates selected products and exposes comparisons/alternatives. At 375 px in both themes, the guide moves from answer and four-point orientation through the table of contents directly into “Die kurze Antwort”; there is no gate before the real article. The full article remains the primary experience and contextual next steps stay subordinate. No overlap, malformed score, broken image, giant empty media stage, excessive CTA saturation or dominant FAQ was found.
 
 ## 13. Eight screenshot paths
 
@@ -76,7 +76,7 @@ Exactly eight PNG files exist in the final directory.
 ## 14. Build/test results
 
 - Production build: PASS, 367 pages.
-- New and migrated 34.3 contracts: PASS, 15/15.
+- New and migrated 34.3 contracts: PASS, including all seven explicit open-guide UX assertions.
 - Foundation suites: PASS, 11/11.
 - ProductScore/current consumer coverage: PASS, 25/25.
 - Media audit: PASS.

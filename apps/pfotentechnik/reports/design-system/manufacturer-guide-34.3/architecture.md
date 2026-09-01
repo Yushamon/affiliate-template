@@ -24,7 +24,7 @@ The selected-product algorithm is manufacturer-agnostic. It excludes discontinue
 - Renderer: `src/components/guide/GuideExperience.astro`
 - Inputs: the page entry, assembled content metadata, current products, comparisons and related pages.
 - Classification: one generic four-way type (`problem`, `buying`, `how-to`, `explanation`) derived from existing `contentPlatform.intent`, health/troubleshooting metadata and generic German intent signals. No content-schema field was added.
-- Output order: early answer and optional explicit hero media → compact quick summary → contextual products only for buying intent → complete long form in native progressive disclosure → secondary structured depth → contextual next steps.
+- Output order: early answer and optional explicit hero media → compact quick summary → table of contents and complete open long form → contextual products only for buying intent → secondary structured depth/evidence/FAQ → contextual next steps.
 - Product rule: only buying guides may render selected products; other guide types prefer relevant category, comparison or guide destinations.
 - Media rule: explicit existing media renders through `OptimizedImage`; absent media produces a compact text hero, never a generic decorative fallback.
 - Runtime: the full Markdown body remains server-rendered and indexable inside native `details`; there is no hydration JavaScript.

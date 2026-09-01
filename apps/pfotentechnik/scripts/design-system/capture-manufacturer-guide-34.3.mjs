@@ -121,7 +121,19 @@ for (const width of widths) for (const theme of themes) for (const page of route
       selectedProducts: root?.querySelectorAll('.pt-manufacturer__products article, .pt-guide__products article').length ?? 0,
       comparisonExits: root?.querySelectorAll('.pt-manufacturer__comparison-list > a[href^="/vergleiche/"]').length ?? 0,
       brandExits: root?.querySelectorAll('.pt-manufacturer__comparison-list > a[href^="/vergleiche/"], .pt-manufacturer__comparison-list > a[href^="/hersteller/"]').length ?? 0,
-      longformClosed: root?.querySelector('.pt-guide__longform') instanceof HTMLDetailsElement ? !root.querySelector('.pt-guide__longform').open : null,
+      longformVisible: (() => {
+        const longform = root?.querySelector('.pt-guide__longform');
+        if (!(longform instanceof HTMLElement)) return false;
+        const rect = longform.getBoundingClientRect();
+        return rect.width > 0 && rect.height > 0 && !longform.closest('details:not([open])');
+      })(),
+      articleVisible: (() => {
+        const article = root?.querySelector('.pt-guide__prose');
+        if (!(article instanceof HTMLElement)) return false;
+        const rect = article.getBoundingClientRect();
+        return rect.width > 0 && rect.height > 0 && !article.closest('details:not([open])');
+      })(),
+      guideGate: /Vollständigen Ratgeber öffnen|Nur wenn es die Frage beantwortet/i.test(root?.textContent ?? ''),
       clientWidth: document.documentElement.clientWidth,
       scrollWidth: document.documentElement.scrollWidth,
       hero: { copy: copyRect, media: mediaRect, overlaps },
@@ -151,7 +163,9 @@ for (const width of widths) for (const theme of themes) for (const page of route
     !initial.h1 && "missing-h1",
     page.type === "guide" && !initial.answer && "missing-answer",
     page.type === "guide" && initial.quickItems === 0 && "missing-summary",
-    page.type === "guide" && initial.longformClosed !== true && "longform-not-progressive",
+    page.type === "guide" && !initial.longformVisible && "longform-hidden",
+    page.type === "guide" && !initial.articleVisible && "article-hidden",
+    page.type === "guide" && initial.guideGate && "internal-guide-gate",
     page.type === "manufacturer" && initial.startPaths === 0 && "missing-start-paths",
     page.type === "manufacturer" && initial.families === 0 && "missing-families",
     page.type === "manufacturer" && initial.brandExits === 0 && "missing-brand-exit",

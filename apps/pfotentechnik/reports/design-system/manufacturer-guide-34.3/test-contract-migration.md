@@ -11,5 +11,7 @@
 | `AutoContentBlocks.astro` | A — removed legacy component after zero production references and test migration | Deleted | Quick answer, summary, contextual products and supporting depth are owned by `GuideExperience` and its ViewModel |
 | `ConversionJourney.astro` | A — removed legacy component after zero production/test references | Deleted | Guide next steps are resolved from current topic, category, comparison and related-guide data |
 | Manufacturer/Guide 34.3 acceptance coverage | C — current regression protection required | Added `manufacturer-guide-experience-34.3.test.mjs` | One systemic renderer per page type, data-driven selection, four guide compositions, contextual links, optional media, semantic tokens, no client JS, frozen Category branch |
+| Primary Guide body behind `details` | A — invalid information hierarchy | Removed the gate and migrated browser/source assertions | Primary article is visible without interaction, is not inside closed `details`, retains server-rendered content and has valid H1/H2/H3 structure |
+| Internal selection-policy copy in Guide products | A — implementation language leaked into reader UI | Removed and replaced with reader-oriented fit rationale | Product section uses “Passende Modelle für diesen Entscheidungsfall” and preserves “Interessant, wenn …” at mobile and desktop widths |
 
 No failing historical test was waived. Valid contracts were migrated; tests tied only to removed legacy components were replaced by current production contracts.
