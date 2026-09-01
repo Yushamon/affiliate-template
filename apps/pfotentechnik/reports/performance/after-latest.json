@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-01T08:35:44.357Z",
-  "mode": "strict",
+  "generatedAt": "2026-09-01T11:31:39.080Z",
+  "mode": "diagnostic",
   "status": "error",
   "environment": {
     "build": "Astro production output",
@@ -102,7 +102,7 @@
       "category": "home",
       "label": "Startseite",
       "metrics": {
-        "htmlBytes": 42079,
+        "htmlBytes": 42078,
         "htmlBrotliBytes": 8244,
         "domNodes": 459,
         "domDepth": 11,
@@ -130,13 +130,13 @@
       "category": "listing",
       "label": "Vergleichsindex",
       "metrics": {
-        "htmlBytes": 48557,
-        "htmlBrotliBytes": 7763,
-        "domNodes": 428,
+        "htmlBytes": 37752,
+        "htmlBrotliBytes": 6362,
+        "domNodes": 352,
         "domDepth": 11,
-        "stylesheets": 2,
-        "cssBytes": 284952,
-        "cssFiles": 2,
+        "stylesheets": 3,
+        "cssBytes": 292538,
+        "cssFiles": 3,
         "scripts": 0,
         "jsBytes": 0,
         "jsFiles": 0,
@@ -158,12 +158,12 @@
       "category": "comparison",
       "label": "Vergleich Futterautomaten",
       "metrics": {
-        "htmlBytes": 245682,
-        "htmlBrotliBytes": 26760,
-        "domNodes": 2218,
+        "htmlBytes": 239164,
+        "htmlBrotliBytes": 25819,
+        "domNodes": 2217,
         "domDepth": 18,
         "stylesheets": 4,
-        "cssBytes": 349361,
+        "cssBytes": 356705,
         "cssFiles": 4,
         "scripts": 0,
         "jsBytes": 0,
@@ -184,16 +184,16 @@
           "code": "PERF_HTML_TOO_LARGE",
           "severity": "error",
           "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-          "message": "HTML-Budget überschritten: 245682 > 150000.",
-          "actual": 245682,
+          "message": "HTML-Budget überschritten: 239164 > 150000.",
+          "actual": 239164,
           "limit": 150000
         },
         {
           "code": "PERF_DOM_TOO_COMPLEX",
           "severity": "error",
           "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-          "message": "DOM-Budget überschritten: 2218 > 1550.",
-          "actual": 2218,
+          "message": "DOM-Budget überschritten: 2217 > 1550.",
+          "actual": 2217,
           "limit": 1550
         }
       ]
@@ -203,12 +203,12 @@
       "category": "comparison",
       "label": "Vergleich GPS-Tracker",
       "metrics": {
-        "htmlBytes": 61309,
-        "htmlBrotliBytes": 12463,
-        "domNodes": 430,
+        "htmlBytes": 54828,
+        "htmlBrotliBytes": 11491,
+        "domNodes": 429,
         "domDepth": 14,
         "stylesheets": 4,
-        "cssBytes": 349361,
+        "cssBytes": 356705,
         "cssFiles": 4,
         "scripts": 0,
         "jsBytes": 0,
@@ -231,20 +231,20 @@
       "category": "product",
       "label": "Produktdetail",
       "metrics": {
-        "htmlBytes": 93255,
-        "htmlBrotliBytes": 17277,
-        "domNodes": 779,
+        "htmlBytes": 89557,
+        "htmlBrotliBytes": 16723,
+        "domNodes": 782,
         "domDepth": 15,
         "stylesheets": 4,
-        "cssBytes": 369374,
+        "cssBytes": 374893,
         "cssFiles": 4,
         "scripts": 1,
         "jsBytes": 5948,
         "jsFiles": 1,
         "inlineScripts": 6,
         "images": 14,
-        "imageAssetFiles": 12,
-        "imageBytes": 3997306,
+        "imageAssetFiles": 21,
+        "imageBytes": 351476,
         "eagerImages": 2,
         "lazyImages": 10,
         "highPriorityImages": 2,
@@ -255,27 +255,11 @@
       "findings": [
         {
           "code": "PERF_BUDGET_CSS_EXCEEDED",
-          "severity": "warning",
-          "route": "/produkt/petlibro-granary-2-vision/",
-          "message": "CSS-Budget überschritten: 369374 > 345000.",
-          "actual": 369374,
-          "limit": 345000
-        },
-        {
-          "code": "PERF_HTML_TOO_LARGE",
-          "severity": "warning",
-          "route": "/produkt/petlibro-granary-2-vision/",
-          "message": "HTML-Budget überschritten: 93255 > 90000.",
-          "actual": 93255,
-          "limit": 90000
-        },
-        {
-          "code": "PERF_IMAGE_BYTES_EXCEEDED",
           "severity": "error",
           "route": "/produkt/petlibro-granary-2-vision/",
-          "message": "Bildbudget überschritten: 3997306 > 3000000.",
-          "actual": 3997306,
-          "limit": 3000000
+          "message": "CSS-Budget überschritten: 374893 > 370000.",
+          "actual": 374893,
+          "limit": 370000
         }
       ]
     },
@@ -284,26 +268,26 @@
       "category": "listing",
       "label": "Herstellerdetail",
       "metrics": {
-        "htmlBytes": 82419,
-        "htmlBrotliBytes": 14747,
-        "domNodes": 690,
-        "domDepth": 11,
-        "stylesheets": 4,
-        "cssBytes": 313412,
-        "cssFiles": 4,
+        "htmlBytes": 84452,
+        "htmlBrotliBytes": 14216,
+        "domNodes": 746,
+        "domDepth": 13,
+        "stylesheets": 3,
+        "cssBytes": 299497,
+        "cssFiles": 3,
         "scripts": 0,
         "jsBytes": 0,
         "jsFiles": 0,
-        "inlineScripts": 3,
-        "images": 28,
-        "imageAssetFiles": 38,
-        "imageBytes": 1142258,
+        "inlineScripts": 2,
+        "images": 7,
+        "imageAssetFiles": 7,
+        "imageBytes": 151412,
         "eagerImages": 1,
-        "lazyImages": 26,
+        "lazyImages": 5,
         "highPriorityImages": 1,
         "missingDimensions": 0,
         "probableLcpLazy": false,
-        "importantDeclarations": 876
+        "importantDeclarations": 850
       },
       "findings": []
     },
@@ -340,13 +324,13 @@
       "category": "article",
       "label": "Cornerstone",
       "metrics": {
-        "htmlBytes": 65967,
-        "htmlBrotliBytes": 12505,
-        "domNodes": 517,
+        "htmlBytes": 64803,
+        "htmlBrotliBytes": 12263,
+        "domNodes": 513,
         "domDepth": 13,
-        "stylesheets": 4,
-        "cssBytes": 368287,
-        "cssFiles": 4,
+        "stylesheets": 3,
+        "cssBytes": 328504,
+        "cssFiles": 3,
         "scripts": 0,
         "jsBytes": 0,
         "jsFiles": 0,
@@ -359,71 +343,37 @@
         "highPriorityImages": 1,
         "missingDimensions": 0,
         "probableLcpLazy": false,
-        "importantDeclarations": 1109
+        "importantDeclarations": 850
       },
-      "findings": [
-        {
-          "code": "PERF_BUDGET_CSS_EXCEEDED",
-          "severity": "warning",
-          "route": "/smarte-futterautomaten/",
-          "message": "CSS-Budget überschritten: 368287 > 360000.",
-          "actual": 368287,
-          "limit": 360000
-        },
-        {
-          "code": "PERF_CSS_SPECIFICITY_HIGH",
-          "severity": "warning",
-          "route": "/smarte-futterautomaten/",
-          "message": "!important-Budget überschritten: 1109 > 1100.",
-          "actual": 1109,
-          "limit": 1100
-        }
-      ]
+      "findings": []
     },
     {
       "route": "/hund-trinkt-ploetzlich-viel/",
       "category": "article",
       "label": "Ratgeber",
       "metrics": {
-        "htmlBytes": 49379,
-        "htmlBrotliBytes": 10471,
-        "domNodes": 498,
-        "domDepth": 11,
-        "stylesheets": 4,
-        "cssBytes": 368287,
-        "cssFiles": 4,
+        "htmlBytes": 48214,
+        "htmlBrotliBytes": 9964,
+        "domNodes": 501,
+        "domDepth": 13,
+        "stylesheets": 3,
+        "cssBytes": 328504,
+        "cssFiles": 3,
         "scripts": 0,
         "jsBytes": 0,
         "jsFiles": 0,
         "inlineScripts": 2,
-        "images": 2,
-        "imageAssetFiles": 4,
-        "imageBytes": 240320,
-        "eagerImages": 1,
+        "images": 1,
+        "imageAssetFiles": 0,
+        "imageBytes": 0,
+        "eagerImages": 0,
         "lazyImages": 0,
-        "highPriorityImages": 1,
+        "highPriorityImages": 0,
         "missingDimensions": 0,
         "probableLcpLazy": false,
-        "importantDeclarations": 1109
+        "importantDeclarations": 850
       },
-      "findings": [
-        {
-          "code": "PERF_BUDGET_CSS_EXCEEDED",
-          "severity": "warning",
-          "route": "/hund-trinkt-ploetzlich-viel/",
-          "message": "CSS-Budget überschritten: 368287 > 360000.",
-          "actual": 368287,
-          "limit": 360000
-        },
-        {
-          "code": "PERF_CSS_SPECIFICITY_HIGH",
-          "severity": "warning",
-          "route": "/hund-trinkt-ploetzlich-viel/",
-          "message": "!important-Budget überschritten: 1109 > 1100.",
-          "actual": 1109,
-          "limit": 1100
-        }
-      ]
+      "findings": []
     },
     {
       "route": "/kontakt/",
@@ -459,79 +409,31 @@
       "code": "PERF_HTML_TOO_LARGE",
       "severity": "error",
       "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-      "message": "HTML-Budget überschritten: 245682 > 150000.",
-      "actual": 245682,
+      "message": "HTML-Budget überschritten: 239164 > 150000.",
+      "actual": 239164,
       "limit": 150000
     },
     {
       "code": "PERF_DOM_TOO_COMPLEX",
       "severity": "error",
       "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-      "message": "DOM-Budget überschritten: 2218 > 1550.",
-      "actual": 2218,
+      "message": "DOM-Budget überschritten: 2217 > 1550.",
+      "actual": 2217,
       "limit": 1550
     },
     {
       "code": "PERF_BUDGET_CSS_EXCEEDED",
-      "severity": "warning",
-      "route": "/produkt/petlibro-granary-2-vision/",
-      "message": "CSS-Budget überschritten: 369374 > 345000.",
-      "actual": 369374,
-      "limit": 345000
-    },
-    {
-      "code": "PERF_HTML_TOO_LARGE",
-      "severity": "warning",
-      "route": "/produkt/petlibro-granary-2-vision/",
-      "message": "HTML-Budget überschritten: 93255 > 90000.",
-      "actual": 93255,
-      "limit": 90000
-    },
-    {
-      "code": "PERF_IMAGE_BYTES_EXCEEDED",
       "severity": "error",
       "route": "/produkt/petlibro-granary-2-vision/",
-      "message": "Bildbudget überschritten: 3997306 > 3000000.",
-      "actual": 3997306,
-      "limit": 3000000
-    },
-    {
-      "code": "PERF_BUDGET_CSS_EXCEEDED",
-      "severity": "warning",
-      "route": "/smarte-futterautomaten/",
-      "message": "CSS-Budget überschritten: 368287 > 360000.",
-      "actual": 368287,
-      "limit": 360000
-    },
-    {
-      "code": "PERF_CSS_SPECIFICITY_HIGH",
-      "severity": "warning",
-      "route": "/smarte-futterautomaten/",
-      "message": "!important-Budget überschritten: 1109 > 1100.",
-      "actual": 1109,
-      "limit": 1100
-    },
-    {
-      "code": "PERF_BUDGET_CSS_EXCEEDED",
-      "severity": "warning",
-      "route": "/hund-trinkt-ploetzlich-viel/",
-      "message": "CSS-Budget überschritten: 368287 > 360000.",
-      "actual": 368287,
-      "limit": 360000
-    },
-    {
-      "code": "PERF_CSS_SPECIFICITY_HIGH",
-      "severity": "warning",
-      "route": "/hund-trinkt-ploetzlich-viel/",
-      "message": "!important-Budget überschritten: 1109 > 1100.",
-      "actual": 1109,
-      "limit": 1100
+      "message": "CSS-Budget überschritten: 374893 > 370000.",
+      "actual": 374893,
+      "limit": 370000
     }
   ],
   "summary": {
     "routes": 10,
     "measuredRoutes": 10,
     "errors": 3,
-    "warnings": 6
+    "warnings": 0
   }
 }

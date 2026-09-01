@@ -1,19 +1,31 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-16T13:03:37.857Z",
+  "generatedAt": "2026-09-01T10:50:36.130Z",
   "mode": "check",
   "summary": {
-    "activeProducts": 82,
-    "manufacturers": 26,
-    "plannedChanges": 0,
+    "activeProducts": 101,
+    "manufacturers": 32,
+    "plannedChanges": 6,
     "orphanProducts": 0,
     "orphanManufacturers": 0,
     "unresolvedCategoryHubs": 0,
-    "missingManufacturerProfiles": 0
+    "missingManufacturerProfiles": 1
   },
-  "changedFiles": [],
+  "changedFiles": [
+    "src/content/manufacturers/furbo.md",
+    "src/content/manufacturers/oneisall.md",
+    "src/content/manufacturers/petkit.md",
+    "src/content/pages/automatische-katzentoiletten.md",
+    "src/content/pages/haustierkameras.md",
+    "src/content/pages/trinkbrunnen.md"
+  ],
   "orphanProducts": [],
   "orphanManufacturers": [],
   "unresolvedCategoryHubs": [],
-  "missingManufacturerProfiles": []
+  "missingManufacturerProfiles": [
+    {
+      "product": "feelneedy-fn-w18-8l-katzenbrunnen",
+      "manufacturerSlug": "feelneedy"
+    }
+  ]
 }

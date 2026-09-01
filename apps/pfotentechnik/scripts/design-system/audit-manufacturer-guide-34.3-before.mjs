@@ -4,6 +4,7 @@ import path from "node:path";
 
 const previewUrl = process.env.PREVIEW_URL ?? "http://127.0.0.1:4330";
 const cdpPort = process.env.CDP_PORT ?? "9227";
+const phase = process.env.AUDIT_PHASE === "after" ? "after" : "before";
 const reportRoot = path.resolve("reports/design-system/manufacturer-guide-34.3");
 const routes = [
   { type: "manufacturer", route: "/hersteller/petkit/" },
@@ -39,8 +40,12 @@ const evaluate = async (expression, awaitPromise = false) => {
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 await send("Emulation.setDeviceMetricsOverride", { width: 375, height: 844, deviceScaleFactor: 1, mobile: true });
+await send("Network.enable");
+await send("Network.setCacheDisabled", { cacheDisabled: true });
+await send("Network.clearBrowserCache");
 const metrics = [];
 for (const entry of routes) {
+  await evaluate("performance.clearResourceTimings()");
   await send("Page.navigate", { url: `${previewUrl}${entry.route}` });
   await sleep(900);
   await evaluate(`Promise.all([...document.images].map(async image => { image.loading = 'eager'; try { await image.decode(); } catch {} }))`, true);
@@ -75,12 +80,15 @@ for (const entry of routes) {
       scriptCount: scripts.length,
       textCharacters: text.length,
       textWords: text.split(/\\s+/).filter(Boolean).length,
+      visibleBlocks: [...main.children].map(element => ({ tag: element.tagName.toLowerCase(), className: element.className, height: element.getBoundingClientRect().height })).filter(item => item.height > 0),
+      experienceBlocks: [...(main.querySelector('[data-manufacturer-experience], [data-guide-experience]')?.children ?? [])].map(element => ({ tag: element.tagName.toLowerCase(), className: element.className, height: element.getBoundingClientRect().height })).filter(item => item.height > 0),
+      comparisonRows: [...main.querySelectorAll('.pt-manufacturer__comparison-list > a')].map(element => ({ height: element.getBoundingClientRect().height, textCharacters: element.textContent.trim().length, href: element.getAttribute('href') })),
       normalizedText: text
     };
   })())`));
   metrics.push({ ...entry, ...runtime });
 }
 
-fs.writeFileSync(path.join(reportRoot, "before-metrics.json"), JSON.stringify({ capturedAt: new Date().toISOString(), viewport: { width: 375, height: 844 }, metrics }, null, 2) + "\n");
+fs.writeFileSync(path.join(reportRoot, `${phase}-metrics.json`), JSON.stringify({ capturedAt: new Date().toISOString(), viewport: { width: 375, height: 844 }, metrics }, null, 2) + "\n");
 socket.close();
-console.log(`34.3 before metrics captured for ${metrics.length} representative routes.`);
+console.log(`34.3 ${phase} metrics captured for ${metrics.length} representative routes.`);

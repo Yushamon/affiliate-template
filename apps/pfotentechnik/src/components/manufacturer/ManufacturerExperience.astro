@@ -1,0 +1,253 @@
+---
+import OptimizedImage from "@affiliate-core/components/OptimizedImage.astro";
+import ProductScore from "@affiliate-core/components/ProductScore.astro";
+import type { ManufacturerExperienceModel } from "../../domain/manufacturerExperience/model";
+
+interface Props { model: ManufacturerExperienceModel; }
+const { model } = Astro.props;
+---
+
+<div class="pt-manufacturer" data-manufacturer-experience="34.3" data-manufacturer={model.slug}>
+  <header class="pt-manufacturer__hero">
+    <div class="pt-manufacturer__hero-copy">
+      <p class="pt-manufacturer__eyebrow">Hersteller</p>
+      <h1>{model.name}</h1>
+      <p class="pt-manufacturer__orientation">{model.orientation}</p>
+      <dl class="pt-manufacturer__hero-facts">
+        <div><dt>Portfolio</dt><dd>{model.productCount} {model.productCount === 1 ? "Produkt" : "Produkte"}</dd></div>
+        <div><dt>Bereiche</dt><dd>{model.categoryCount} {model.categoryCount === 1 ? "Produktwelt" : "Produktwelten"}</dd></div>
+        {model.focus[0] && <div><dt>Schwerpunkt</dt><dd>{model.focus[0]}</dd></div>}
+      </dl>
+    </div>
+    <figure class="pt-manufacturer__hero-media">
+      <OptimizedImage src={model.heroImage.src} alt={model.heroImage.alt ?? model.name} width={760} height={570} layout="constrained" fit="contain" priority loading="eager" />
+    </figure>
+  </header>
+
+  {model.startPaths.length > 0 && (
+    <section class="pt-manufacturer__chapter pt-manufacturer__start" aria-labelledby="manufacturer-start-title">
+      <header class="pt-manufacturer__chapter-heading">
+        <p class="pt-manufacturer__eyebrow">Portfolio-Navigation</p>
+        <h2 id="manufacturer-start-title">Wo solltest du anfangen?</h2>
+        <p>Beginne bei der Produktaufgabe. Die Wege führen in eine vorhandene Produktwelt oder direkt zum passenden Einzelmodell.</p>
+      </header>
+      <nav aria-label={`Einstiege in das ${model.name} Portfolio`}>
+        {model.startPaths.map((path, index) => (
+          <a href={path.href}>
+            <span>{String(index + 1).padStart(2, "0")}</span>
+            <div><small>{path.label}</small><strong>{path.title}</strong><p>{path.text}</p></div>
+            <b>{path.cta}<span aria-hidden="true">→</span></b>
+          </a>
+        ))}
+      </nav>
+    </section>
+  )}
+
+  {model.families.length > 0 && (
+    <section class="pt-manufacturer__chapter" aria-labelledby="manufacturer-portfolio-title">
+      <header class="pt-manufacturer__chapter-heading">
+        <p class="pt-manufacturer__eyebrow">Portfolio nach Aufgabe</p>
+        <h2 id="manufacturer-portfolio-title">Welche Produktfamilien deckt {model.name} ab?</h2>
+        <p>Die Modelle sind nach tatsächlicher Produktkategorie gruppiert, nicht als flacher Markenkatalog.</p>
+      </header>
+      <div class="pt-manufacturer__families">
+        {model.families.map((family) => (
+          <details>
+            <summary>
+              <div><small>{family.products.length} {family.products.length === 1 ? "Modell" : "Modelle"}</small><h3>{family.label}</h3></div>
+              <span>Modelle anzeigen</span>
+            </summary>
+            <div><p>{family.orientation}</p>{family.href && <a href={family.href}>Produktwelt öffnen <span aria-hidden="true">→</span></a>}<ul>{family.products.map((product) => <li><a href={product.href}>{product.title}</a>{!product.current && <small>Archiviert eingeordnet</small>}</li>)}</ul></div>
+          </details>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {model.selectedProducts.length > 0 && (
+    <section class="pt-manufacturer__chapter" aria-labelledby="manufacturer-products-title">
+      <header class="pt-manufacturer__chapter-heading">
+        <p class="pt-manufacturer__eyebrow">Kuratierte Auswahl</p>
+        <h2 id="manufacturer-products-title">Welche Modelle sind als Einstieg interessant?</h2>
+        <p>Die Auswahl priorisiert aktuelle, vollständig eingeordnete Modelle und verteilt die Plätze möglichst über unterschiedliche Produktaufgaben.</p>
+      </header>
+      <div class="pt-manufacturer__products">
+        {model.selectedProducts.map((product) => (
+          <article>
+            <a class="pt-manufacturer__product-media" href={product.href} aria-label={`${product.title} ansehen`}>
+              {product.image ? <OptimizedImage src={product.image.src} alt={product.image.alt ?? product.title} width={320} height={240} layout="constrained" fit="contain" /> : <span role="img" aria-label="Produktbild nicht verfügbar">Bild nicht verfügbar</span>}
+            </a>
+            <div class="pt-manufacturer__product-copy">
+              <small>Interessant, wenn: {product.role}</small>
+              <h3><a href={product.href}>{product.title}</a></h3>
+              <p>{product.recommendation}</p>
+              <a href={product.href}>Produktcheck lesen <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="pt-manufacturer__product-meta">
+              <ProductScore value={product.score} scale={100} variant="ring-compact" description="Redaktioneller ProductScore" />
+              <strong>{product.price ?? "Preis aktuell prüfen"}</strong>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {model.differences.length > 0 && (
+    <section class="pt-manufacturer__chapter" aria-labelledby="manufacturer-differences-title">
+      <header class="pt-manufacturer__chapter-heading">
+        <p class="pt-manufacturer__eyebrow">Innerhalb der Marke unterscheiden</p>
+        <h2 id="manufacturer-differences-title">Wo liegen belastbare Unterschiede?</h2>
+        <p>Nur Merkmale mit mindestens zwei unterschiedlichen, strukturiert dokumentierten Ausprägungen werden gezeigt.</p>
+      </header>
+      <div class="pt-manufacturer__differences">
+        {model.differences.map((difference) => (
+          <section><h3>{difference.label}</h3><dl>{difference.values.map((entry) => <div><dt>{entry.value}</dt><dd>{entry.products.join(", ")}</dd></div>)}</dl></section>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {(model.suitableFor.length > 0 || model.attention.length > 0) && (
+    <section class="pt-manufacturer__chapter pt-manufacturer__fit" aria-labelledby="manufacturer-fit-title">
+      <header class="pt-manufacturer__chapter-heading">
+        <p class="pt-manufacturer__eyebrow">Marke einordnen</p>
+        <h2 id="manufacturer-fit-title">Für wen passt das Portfolio – und wo nicht?</h2>
+      </header>
+      <div><section><h3>Passt besonders</h3><ul>{model.suitableFor.map((item) => <li>{item}</li>)}</ul></section><section><h3>Darauf achten</h3><ul>{model.attention.map((item) => <li>{item}</li>)}</ul></section></div>
+    </section>
+  )}
+
+  {(model.relevantComparisons.length > 0 || model.alternatives.length > 0) && (
+    <section class="pt-manufacturer__chapter pt-manufacturer__compare" aria-labelledby="manufacturer-compare-title">
+      <header class="pt-manufacturer__chapter-heading">
+        <p class="pt-manufacturer__eyebrow">Editorial unabhängig bleiben</p>
+        <h2 id="manufacturer-compare-title">Wenn du auch Alternativen zu {model.name} prüfen möchtest.</h2>
+        <p>Ein Hersteller ist nicht automatisch für jede Anforderung die beste Wahl. Diese vorhandenen Vergleiche und Markenprofile öffnen den Blick.</p>
+      </header>
+      <div class="pt-manufacturer__comparison-list">
+        {model.relevantComparisons.map((comparison) => (
+          <a href={comparison.href}><div><small>{comparison.ownCount} {model.name} {comparison.ownCount === 1 ? "Modell" : "Modelle"} · {comparison.total} insgesamt</small><strong>{comparison.title}</strong><p>{comparison.text}</p></div><b>Vergleich öffnen <span aria-hidden="true">→</span></b></a>
+        ))}
+        {model.alternatives.map((alternative) => (
+          <a href={alternative.href}><div><small>Alternativer Hersteller</small><strong>{alternative.name}</strong><p>{alternative.text}</p></div><b>Markenprofil öffnen <span aria-hidden="true">→</span></b></a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section class="pt-manufacturer__chapter pt-manufacturer__depth" aria-labelledby="manufacturer-depth-title">
+    <header class="pt-manufacturer__chapter-heading"><p class="pt-manufacturer__eyebrow">Transparenz und Hintergrund</p><h2 id="manufacturer-depth-title">Portfolio, Service und Erfahrungen vertiefen.</h2><p>Diese Informationen bleiben vollständig zugänglich, stehen aber hinter der eigentlichen Produktauswahl.</p></header>
+    <details><summary>Stärken, Schwächen und redaktionelle Einordnung</summary><div class="pt-manufacturer__depth-grid"><section><h3>Stärken</h3><ul>{model.strengths.map((item) => <li>{item}</li>)}</ul></section><section><h3>Schwächen</h3><ul>{model.weaknesses.map((item) => <li>{item}</li>)}</ul></section></div><p>{model.summary}</p></details>
+    {model.series.length > 0 && <details><summary>Produktserien und ihre Aufgaben</summary><dl>{model.series.map((series) => <div><dt>{series.name}</dt><dd>{series.description}{series.suitableFor.length > 0 && ` Geeignet für: ${series.suitableFor.join(", ")}.`}</dd></div>)}</dl></details>}
+    <details><summary>App, Ersatzteile, Filter, Garantie und Wettbewerb</summary><dl>{Object.entries(model.profile).map(([key, value]) => <div><dt>{({ company: "Unternehmen", appEcosystem: "App-Ökosystem", replacementParts: "Ersatzteile", filterSupply: "Filterversorgung", warranty: "Garantie", competitorComparison: "Vergleich zum Wettbewerb" } as Record<string, string>)[key] ?? key}</dt><dd>{value}</dd></div>)}</dl></details>
+    {model.experience && <details><summary>Erfahrungen und Support</summary>{model.experience.summary && <p>{model.experience.summary}</p>}<div class="pt-manufacturer__depth-grid"><section><h3>Positive Erfahrungen</h3><ul>{model.experience.positives.map((item) => <li>{item}</li>)}</ul></section><section><h3>Kritikpunkte</h3><ul>{model.experience.criticism.map((item) => <li>{item}</li>)}</ul></section></div>{model.experience.support && <p><strong>Support:</strong> {model.experience.support}</p>}</details>}
+    {model.sources.length > 0 && <details><summary>Quellen und Datengrundlage</summary><ul>{model.sources.map((source) => <li>{source.url ? <a href={source.url} rel="noopener noreferrer" target="_blank">{source.label}</a> : source.label}{source.description && <span> — {source.description}</span>}</li>)}</ul></details>}
+    {model.website && <p class="pt-manufacturer__website"><a href={model.website} rel="noopener noreferrer" target="_blank">Herstellerwebsite öffnen <span aria-hidden="true">↗</span></a></p>}
+  </section>
+</div>
+
+<style>
+  .pt-manufacturer { display: grid; gap: clamp(3.5rem, 8vw, 7rem); min-width: 0; padding-bottom: clamp(4rem, 8vw, 7rem); color: var(--pt-color-text); }
+  .pt-manufacturer * { box-sizing: border-box; }
+  .pt-manufacturer__eyebrow { margin: 0; color: var(--pt-color-primary); font-size: .75rem; font-weight: 850; letter-spacing: .09em; text-transform: uppercase; }
+  .pt-manufacturer__hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(300px, .95fr); min-width: 0; overflow: hidden; border-block: 1px solid var(--pt-color-border); }
+  .pt-manufacturer__hero-copy { display: grid; align-content: center; gap: 1rem; padding: clamp(2rem, 6vw, 5rem) clamp(0rem, 4vw, 3.5rem) clamp(2rem, 6vw, 5rem) 0; }
+  .pt-manufacturer__hero h1 { margin: 0; font-size: clamp(3.2rem, 8vw, 6.5rem); line-height: .92; letter-spacing: -.06em; overflow-wrap: anywhere; }
+  .pt-manufacturer__orientation { max-width: 60ch; margin: 0; color: var(--pt-color-text-muted); font-size: clamp(1.05rem, 2vw, 1.25rem); line-height: 1.6; }
+  .pt-manufacturer__hero-media { display: grid; min-width: 0; margin: 0; padding: clamp(1rem, 3vw, 2rem); place-items: center; background: var(--pt-color-surface-soft); }
+  .pt-manufacturer__hero-media :global(picture), .pt-manufacturer__hero-media :global(img) { display: block; width: 100%; height: 100%; max-height: 32rem; }
+  .pt-manufacturer__hero-media :global(img) { object-fit: contain; }
+  .pt-manufacturer__hero-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 1rem 0 0; padding-top: 1rem; border-top: 1px solid var(--pt-color-border); }
+  .pt-manufacturer__hero-facts div { min-width: 0; padding-right: 1rem; }
+  .pt-manufacturer__hero-facts dt, .pt-manufacturer__products small, .pt-manufacturer__families small, .pt-manufacturer__comparison-list small { color: var(--pt-color-text-muted); font-size: .72rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
+  .pt-manufacturer__hero-facts dd { margin: .3rem 0 0; font-weight: 800; overflow-wrap: anywhere; }
+  .pt-manufacturer__chapter { display: grid; gap: clamp(1.4rem, 3vw, 2.25rem); min-width: 0; }
+  .pt-manufacturer__chapter-heading { max-width: 58rem; }
+  .pt-manufacturer__chapter-heading h2 { margin: .45rem 0 .75rem; font-size: clamp(2rem, 4.5vw, 3.5rem); line-height: 1.02; letter-spacing: -.045em; text-wrap: balance; }
+  .pt-manufacturer__chapter-heading > p:last-child { max-width: 68ch; margin: 0; color: var(--pt-color-text-muted); line-height: 1.65; }
+  .pt-manufacturer__start nav, .pt-manufacturer__comparison-list { display: grid; border-top: 1px solid var(--pt-color-border); }
+  .pt-manufacturer__start nav > a { display: grid; grid-template-columns: 3rem minmax(0, 1fr) auto; gap: 1rem; align-items: center; padding: 1.25rem 0; border-bottom: 1px solid var(--pt-color-border); color: inherit; text-decoration: none; }
+  .pt-manufacturer__start nav > a > span { color: var(--pt-color-primary); font-weight: 850; }
+  .pt-manufacturer__start nav div { display: grid; gap: .25rem; min-width: 0; }
+  .pt-manufacturer__start nav small { color: var(--pt-color-primary); font-weight: 800; }
+  .pt-manufacturer__start nav strong { font-size: 1.15rem; }
+  .pt-manufacturer__start nav p, .pt-manufacturer__comparison-list p { margin: 0; color: var(--pt-color-text-muted); line-height: 1.5; }
+  .pt-manufacturer__start nav b, .pt-manufacturer__comparison-list b { color: var(--pt-color-primary); font-size: .9rem; white-space: nowrap; }
+  .pt-manufacturer__families { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--pt-color-border); }
+  .pt-manufacturer__families > details { min-width: 0; border-bottom: 1px solid var(--pt-color-border); }
+  .pt-manufacturer__families > details:nth-child(odd) { padding-right: 2rem; }
+  .pt-manufacturer__families > details:nth-child(even) { padding-left: 2rem; border-left: 1px solid var(--pt-color-border); }
+  .pt-manufacturer__families summary { display: flex; justify-content: space-between; gap: 1rem; padding: 1.25rem 0; cursor: pointer; list-style: none; }
+  .pt-manufacturer__families summary::-webkit-details-marker { display: none; }
+  .pt-manufacturer__families summary > span { align-self: center; color: var(--pt-color-primary); font-size: .8rem; font-weight: 800; }
+  .pt-manufacturer__families details > div { padding-bottom: 1.25rem; }
+  .pt-manufacturer__families h3 { margin: .25rem 0 0; font-size: 1.45rem; }
+  .pt-manufacturer__families details > div > a, .pt-manufacturer__families li a { color: var(--pt-color-primary); font-weight: 750; }
+  .pt-manufacturer__families details > div > p { color: var(--pt-color-text-muted); line-height: 1.55; }
+  .pt-manufacturer__families ul { display: grid; gap: .4rem; margin: 0; padding: 0; list-style: none; }
+  .pt-manufacturer__families li { display: flex; justify-content: space-between; gap: 1rem; }
+  .pt-manufacturer__products { display: grid; border-top: 1px solid var(--pt-color-border); }
+  .pt-manufacturer__products article { display: grid; grid-template-columns: 10rem minmax(0, 1fr) auto; gap: 1.5rem; align-items: center; min-width: 0; padding: 1.25rem 0; border-bottom: 1px solid var(--pt-color-border); }
+  .pt-manufacturer__product-media { display: grid; width: 10rem; height: 7.5rem; place-items: center; overflow: hidden; background: var(--pt-color-surface-soft); }
+  .pt-manufacturer__product-media :global(picture), .pt-manufacturer__product-media :global(img) { display: block; width: 100%; height: 100%; }
+  .pt-manufacturer__product-media :global(img) { object-fit: contain; }
+  .pt-manufacturer__product-copy { min-width: 0; }
+  .pt-manufacturer__product-copy h3 { margin: .3rem 0 .45rem; font-size: 1.25rem; }
+  .pt-manufacturer__product-copy h3 a { color: inherit; text-decoration: none; }
+  .pt-manufacturer__product-copy p { max-width: 62ch; margin: 0 0 .6rem; color: var(--pt-color-text-muted); line-height: 1.5; }
+  .pt-manufacturer__product-copy > a { color: var(--pt-color-primary); font-weight: 800; }
+  .pt-manufacturer__product-meta { display: grid; justify-items: end; gap: .4rem; }
+  .pt-manufacturer__product-meta > strong { color: var(--pt-color-text-muted); font-size: .8rem; }
+  .pt-manufacturer__differences { display: grid; gap: 1.5rem; }
+  .pt-manufacturer__differences > section { display: grid; grid-template-columns: minmax(8rem, .25fr) minmax(0, 1fr); gap: 2rem; padding-block: 1rem; border-block: 1px solid var(--pt-color-border); }
+  .pt-manufacturer__differences h3 { margin: 0; }
+  .pt-manufacturer__differences dl { display: grid; gap: .8rem; margin: 0; }
+  .pt-manufacturer__differences dl div { display: grid; grid-template-columns: minmax(9rem, .35fr) minmax(0, 1fr); gap: 1rem; }
+  .pt-manufacturer__differences dt { font-weight: 800; }
+  .pt-manufacturer__differences dd { margin: 0; color: var(--pt-color-text-muted); }
+  .pt-manufacturer__fit > div, .pt-manufacturer__depth-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+  .pt-manufacturer__fit section { padding-top: 1rem; border-top: 2px solid var(--pt-color-primary); }
+  .pt-manufacturer__fit section:last-child { border-color: var(--pt-color-warning, var(--pt-color-border)); }
+  .pt-manufacturer__fit h3, .pt-manufacturer__depth h3 { margin-top: 0; }
+  .pt-manufacturer__fit li, .pt-manufacturer__depth li { margin-bottom: .45rem; line-height: 1.5; }
+  .pt-manufacturer__comparison-list > a { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1.5rem; align-items: center; padding: 1.25rem 0; border-bottom: 1px solid var(--pt-color-border); color: inherit; text-decoration: none; }
+  .pt-manufacturer__comparison-list strong { display: block; margin: .3rem 0; font-size: 1.15rem; }
+  .pt-manufacturer__depth { gap: 0; }
+  .pt-manufacturer__depth > header { margin-bottom: 1.5rem; }
+  .pt-manufacturer__depth details { border-top: 1px solid var(--pt-color-border); }
+  .pt-manufacturer__depth details:last-of-type { border-bottom: 1px solid var(--pt-color-border); }
+  .pt-manufacturer__depth summary { padding: 1.1rem 0; cursor: pointer; font-weight: 850; }
+  .pt-manufacturer__depth details > :not(summary) { max-width: 75rem; }
+  .pt-manufacturer__depth dl { margin: 0 0 1.5rem; }
+  .pt-manufacturer__depth dl div { display: grid; grid-template-columns: minmax(8rem, .28fr) minmax(0, 1fr); gap: 1rem; padding: .8rem 0; border-top: 1px solid var(--pt-color-border); }
+  .pt-manufacturer__depth dt { font-weight: 800; }
+  .pt-manufacturer__depth dd { margin: 0; color: var(--pt-color-text-muted); line-height: 1.55; }
+  .pt-manufacturer__website { margin: 1.25rem 0 0; }
+  .pt-manufacturer__website a { color: var(--pt-color-primary); font-weight: 800; }
+  a:focus-visible, summary:focus-visible { outline: 3px solid var(--pt-color-primary); outline-offset: 4px; }
+  @media (max-width: 820px) {
+    .pt-manufacturer__hero { grid-template-columns: 1fr; }
+    .pt-manufacturer__hero-copy { padding-right: 0; }
+    .pt-manufacturer__hero-media { min-height: 16rem; }
+    .pt-manufacturer__families { grid-template-columns: 1fr; }
+    .pt-manufacturer__families > details:nth-child(n) { padding-inline: 0; border-left: 0; }
+    .pt-manufacturer__products article { grid-template-columns: 8rem minmax(0, 1fr); }
+    .pt-manufacturer__product-media { width: 8rem; height: 6rem; }
+    .pt-manufacturer__product-meta { grid-column: 2; grid-row: 2; grid-template-columns: auto 1fr; align-items: center; justify-items: start; }
+  }
+  @media (max-width: 560px) {
+    .pt-manufacturer { gap: 3.5rem; }
+    .pt-manufacturer__hero-facts { grid-template-columns: 1fr; gap: .8rem; }
+    .pt-manufacturer__start nav > a { grid-template-columns: 2rem minmax(0, 1fr); }
+    .pt-manufacturer__start nav b { grid-column: 2; white-space: normal; }
+    .pt-manufacturer__comparison-list > a { grid-template-columns: minmax(0, 1fr); }
+    .pt-manufacturer__comparison-list b { grid-column: 1; white-space: normal; }
+    .pt-manufacturer__products article { grid-template-columns: 6rem minmax(0, 1fr); gap: .9rem; }
+    .pt-manufacturer__product-media { width: 6rem; height: 5rem; }
+    .pt-manufacturer__product-copy p { display: none; }
+    .pt-manufacturer__product-meta { grid-column: 1 / -1; grid-row: auto; }
+    .pt-manufacturer__differences > section, .pt-manufacturer__differences dl div, .pt-manufacturer__fit > div, .pt-manufacturer__depth-grid, .pt-manufacturer__depth dl div { grid-template-columns: 1fr; gap: .5rem; }
+    .pt-manufacturer__families summary { display: grid; }
+  }
+</style>
