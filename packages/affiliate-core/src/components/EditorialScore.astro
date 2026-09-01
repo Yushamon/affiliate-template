@@ -1,5 +1,9 @@
 ---
-import { getEditorialScoreLabel, toEditorialScore } from "../utils/editorialScore";
+import {
+  getEditorialScoreLabel,
+  getEditorialScoreTone,
+  toEditorialScore
+} from "../utils/editorialScore";
 
 interface Props {
   value: number;
@@ -28,12 +32,7 @@ const isRing = variant === "ring" || variant === "ring-compact";
 
 const verdict = getEditorialScoreLabel(score);
 
-const tone =
-  score >= 80 ? "excellent"
-  : score >= 70 ? "good"
-  : score >= 60 ? "solid"
-  : score >= 50 ? "limited"
-  : "poor";
+const tone = getEditorialScoreTone(score);
 ---
 
 <div
@@ -93,22 +92,22 @@ const tone =
 
 <style>
   .pt-score {
-    --score-accent: var(--pt-theme-accent, #22a95b);
-    --score-soft: color-mix(in srgb, var(--score-accent) 13%, transparent);
-    --score-surface: var(--pt-theme-surface, var(--surface, #fff));
-    --score-text: var(--pt-theme-text, var(--text, #10231f));
-    --score-muted: var(--pt-theme-text-soft, var(--muted, #687670));
+    --pt-score-tone-accent: var(--pt33-color-score-excellent, var(--pt-color-brand-600, #23845f));
+    --score-soft: color-mix(in srgb, var(--pt-score-tone-accent) 13%, transparent);
+    --score-surface: var(--pt33-color-surface-raised, var(--pt-theme-surface, var(--pt-color-surface-raised)));
+    --score-text: var(--pt33-color-text-primary, var(--pt-theme-text, var(--pt-color-text)));
+    --score-muted: var(--pt33-color-text-secondary, var(--pt-theme-text-soft, var(--pt-color-text-muted)));
     display: grid;
     min-width: 0;
     gap: .55rem;
   }
 
   /* Global score palette 32.6.22: unabhängig vom Seitentheme. */
-  .pt-score--excellent { --score-accent: var(--pt-color-brand-600, #23845f); }
-  .pt-score--good { --score-accent: #75a91b; }
-  .pt-score--solid { --score-accent: #c58b00; }
-  .pt-score--limited { --score-accent: #d56f1f; }
-  .pt-score--poor { --score-accent: #cf4545; }
+  .pt-score--excellent { --pt-score-tone-accent: var(--pt33-color-score-excellent, #23845f); }
+  .pt-score--good { --pt-score-tone-accent: var(--pt33-color-score-good, #5a800e); }
+  .pt-score--solid { --pt-score-tone-accent: var(--pt33-color-score-solid, #9a6900); }
+  .pt-score--limited { --pt-score-tone-accent: var(--pt33-color-score-limited, #b65313); }
+  .pt-score--poor { --pt-score-tone-accent: var(--pt33-color-score-poor, #b63737); }
 
   .pt-score__summary {
     display: flex;
@@ -159,7 +158,7 @@ const tone =
     width: var(--pt-score-value);
     height: 100%;
     border-radius: inherit;
-    background: var(--score-accent);
+    background: var(--pt-score-tone-accent);
   }
 
   .pt-score__ring {
@@ -170,10 +169,10 @@ const tone =
     place-items: center;
     border-radius: 50%;
     background: conic-gradient(
-      var(--score-accent) calc(var(--pt-score-value) * 1%),
-      color-mix(in srgb, var(--score-accent) 14%, var(--score-surface)) 0
+      var(--pt-score-tone-accent) calc(var(--pt-score-value) * 1%),
+      color-mix(in srgb, var(--pt-score-tone-accent) 14%, var(--score-surface)) 0
     );
-    box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--score-accent) 16%, transparent);
+    box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--pt-score-tone-accent) 16%, transparent);
   }
 
   .pt-score__ring-inner {
@@ -209,7 +208,7 @@ const tone =
   }
 
   .pt-score__method a {
-    color: var(--score-accent);
+    color: var(--pt-score-tone-accent);
     font-weight: 850;
     text-underline-offset: 3px;
   }
@@ -222,7 +221,7 @@ const tone =
   }
 
   .pt-score--inline .pt-score__summary { gap: .45rem; }
-  .pt-score--inline .pt-score__value { color: var(--score-accent); font-size: 1.3rem; }
+  .pt-score--inline .pt-score__value { color: var(--pt-score-tone-accent); font-size: 1.3rem; }
   .pt-score--inline .pt-score__verdict { font-size: .78rem; }
 
   .pt-score--inline .pt-score__label,
@@ -272,7 +271,7 @@ const tone =
   .pt-score--standard,
   .pt-score--detailed {
     padding: 1rem;
-    border: 1px solid color-mix(in srgb, var(--score-accent) 20%, transparent);
+    border: 1px solid color-mix(in srgb, var(--pt-score-tone-accent) 20%, transparent);
     border-radius: 1rem;
     background: color-mix(in srgb, var(--score-soft) 52%, transparent);
   }

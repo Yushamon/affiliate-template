@@ -191,6 +191,11 @@
   --pt33-color-status-critical: var(--pt33-red-700);
   --pt33-color-status-info: var(--pt33-blue-700);
   --pt33-color-status-unknown: var(--pt33-graphite-700);
+  --pt33-color-score-excellent: #237952;
+  --pt33-color-score-good: #5a800e;
+  --pt33-color-score-solid: #9a6900;
+  --pt33-color-score-limited: #b65313;
+  --pt33-color-score-poor: #b63737;
   --pt33-color-evidence-verified: var(--pt33-blue-700);
   --pt33-color-evidence-medium: var(--pt33-amber-800);
   --pt33-color-evidence-low: var(--pt33-graphite-700);
@@ -259,6 +264,11 @@
   --pt33-color-surface: #141615;
   --pt33-color-surface-raised: #202321;
   --pt33-color-action-on-primary: #0c0d0d;
+  --pt33-color-score-excellent: #66c98e;
+  --pt33-color-score-good: #a8d65e;
+  --pt33-color-score-solid: #f0b45a;
+  --pt33-color-score-limited: #ff9d61;
+  --pt33-color-score-poor: #ff8d8d;
   --pt33-shadow-raised: 0 12px 32px rgb(0 0 0 / 0.24);
   --pt33-shadow-overlay: 0 24px 56px rgb(0 0 0 / 0.4);
 }
@@ -283,6 +293,11 @@
     --pt33-color-surface: #141615;
     --pt33-color-surface-raised: #202321;
     --pt33-color-action-on-primary: #0c0d0d;
+    --pt33-color-score-excellent: #66c98e;
+    --pt33-color-score-good: #a8d65e;
+    --pt33-color-score-solid: #f0b45a;
+    --pt33-color-score-limited: #ff9d61;
+    --pt33-color-score-poor: #ff8d8d;
     --pt33-shadow-raised: 0 12px 32px rgb(0 0 0 / 0.24);
     --pt33-shadow-overlay: 0 24px 56px rgb(0 0 0 / 0.4);
   }

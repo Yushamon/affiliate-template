@@ -30,7 +30,11 @@ test("mobile Produktauswahl ist ein vollständiges Raster ohne abgeschnittene Ka
   assert.doesNotMatch(pickerBlock, /overflow-x:\s*auto/);
   assert.match(
     css,
-    /\.comparison-pick-card\s*\{[^}]*grid-template-columns:\s*3\.5rem minmax\(0,\s*1fr\)/s
+    /\.comparison-pick-card\s*\{[^}]*grid-template-columns:\s*1\.35rem 3\.5rem minmax\(0,\s*1fr\)/s
+  );
+  assert.match(
+    css,
+    /@media \(max-width: 47\.99rem\)[\s\S]*?\.comparison-pick-card\s*\{[^}]*grid-template-columns:\s*1\.2rem 3\.25rem minmax\(0,\s*1fr\)/s
   );
 });
 

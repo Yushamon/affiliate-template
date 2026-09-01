@@ -1,26 +1,53 @@
 {
-  "generatedAt": "2026-08-06T10:40:41.503Z",
-  "expectedComparisons": 26,
-  "technicalPassed": true,
+  "generatedAt": "2026-09-01T07:25:43.841Z",
+  "minimumComparisons": 26,
+  "technicalPassed": false,
   "visualPassed": false,
   "finalPassed": false,
   "globalErrors": [],
   "dataSummary": {
-    "comparisons": 26,
-    "products": 74,
-    "sourceCells": 791,
-    "allResolved": 698,
-    "allUnresolved": 93,
-    "sourceCoverage": 88.2,
-    "renderedCells": 664,
-    "renderedResolved": 664,
+    "comparisons": 28,
+    "products": 101,
+    "sourceCells": 1244,
+    "allResolved": 1153,
+    "allUnresolved": 91,
+    "sourceCoverage": 92.7,
+    "renderedCells": 1120,
+    "renderedResolved": 1120,
     "renderedUnresolved": 0,
     "renderedCoverage": 100,
-    "legacyValueCount": 549,
+    "legacyValueCount": 914,
     "overrideCount": 218
   },
   "visualSignoff": null,
   "routes": [
+    {
+      "slug": "beste-automatische-katzentoiletten",
+      "route": "/vergleiche/beste-automatische-katzentoiletten/",
+      "canonical": "https://pfotentechnik.de/vergleiche/beste-automatische-katzentoiletten/",
+      "schemaTypes": [
+        "Organization",
+        "WebPage",
+        "WebSite",
+        "BreadcrumbList",
+        "ListItem",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "ItemList"
+      ],
+      "visibleRows": 21,
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt.",
+        "Öffentliche Ausgabe enthält \"Keine Angabe\"."
+      ],
+      "passed": false
+    },
     {
       "slug": "beste-futterautomaten-fuer-berufstaetige",
       "route": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
@@ -37,9 +64,15 @@
         "ItemList"
       ],
       "visibleRows": 3,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt."
+      ],
+      "passed": false
     },
     {
       "slug": "beste-futterautomaten-fuer-hunde",
@@ -57,9 +90,16 @@
         "ItemList"
       ],
       "visibleRows": 10,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt.",
+        "Öffentliche Ausgabe enthält \"Keine Angabe\"."
+      ],
+      "passed": false
     },
     {
       "slug": "beste-futterautomaten-fuer-katzen",
@@ -77,9 +117,16 @@
         "ItemList"
       ],
       "visibleRows": 10,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt.",
+        "Öffentliche Ausgabe enthält \"Keine Angabe\"."
+      ],
+      "passed": false
     },
     {
       "slug": "beste-futterautomaten-fuer-kleine-hunde",
@@ -97,9 +144,15 @@
         "ItemList"
       ],
       "visibleRows": 3,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt."
+      ],
+      "passed": false
     },
     {
       "slug": "beste-futterautomaten-fuer-mehrtierhaushalte",
@@ -116,10 +169,16 @@
         "Answer",
         "ItemList"
       ],
-      "visibleRows": 4,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "visibleRows": 5,
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt."
+      ],
+      "passed": false
     },
     {
       "slug": "beste-futterautomaten-fuer-nassfutter",
@@ -137,9 +196,15 @@
         "ItemList"
       ],
       "visibleRows": 9,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt."
+      ],
+      "passed": false
     },
     {
       "slug": "beste-futterautomaten-fuer-seniorenkatzen",
@@ -157,9 +222,15 @@
         "ItemList"
       ],
       "visibleRows": 3,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt."
+      ],
+      "passed": false
     },
     {
       "slug": "beste-futterautomaten-fuer-welpen",
@@ -177,9 +248,15 @@
         "ItemList"
       ],
       "visibleRows": 3,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt."
+      ],
+      "passed": false
     },
     {
       "slug": "beste-futterautomaten-fuer-zwei-katzen",
@@ -197,9 +274,15 @@
         "ItemList"
       ],
       "visibleRows": 10,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt."
+      ],
+      "passed": false
     },
     {
       "slug": "beste-futterautomaten-mit-akku",
@@ -217,9 +300,15 @@
         "ItemList"
       ],
       "visibleRows": 4,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt."
+      ],
+      "passed": false
     },
     {
       "slug": "beste-futterautomaten-mit-edelstahl-napf",
@@ -237,9 +326,15 @@
         "ItemList"
       ],
       "visibleRows": 4,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt."
+      ],
+      "passed": false
     },
     {
       "slug": "beste-futterautomaten-mit-kamera",
@@ -257,9 +352,16 @@
         "ItemList"
       ],
       "visibleRows": 8,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt.",
+        "Öffentliche Ausgabe enthält \"Keine Angabe\"."
+      ],
+      "passed": false
     },
     {
       "slug": "beste-futterautomaten-ohne-wlan",
@@ -277,9 +379,16 @@
         "ItemList"
       ],
       "visibleRows": 4,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt.",
+        "Öffentliche Ausgabe enthält \"Keine Angabe\"."
+      ],
+      "passed": false
     },
     {
       "slug": "beste-futterautomaten-unter-100-euro",
@@ -297,9 +406,15 @@
         "ItemList"
       ],
       "visibleRows": 3,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt."
+      ],
+      "passed": false
     },
     {
       "slug": "beste-gps-tracker-fuer-hunde",
@@ -316,10 +431,16 @@
         "Answer",
         "ItemList"
       ],
-      "visibleRows": 4,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "visibleRows": 12,
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt."
+      ],
+      "passed": false
     },
     {
       "slug": "beste-gps-tracker-fuer-katzen",
@@ -337,9 +458,42 @@
         "ItemList"
       ],
       "visibleRows": 8,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt."
+      ],
+      "passed": false
+    },
+    {
+      "slug": "beste-haustierkameras",
+      "route": "/vergleiche/beste-haustierkameras/",
+      "canonical": "https://pfotentechnik.de/vergleiche/beste-haustierkameras/",
+      "schemaTypes": [
+        "Organization",
+        "WebPage",
+        "WebSite",
+        "BreadcrumbList",
+        "ListItem",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "ItemList"
+      ],
+      "visibleRows": 21,
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt.",
+        "Öffentliche Ausgabe enthält \"Keine Angabe\"."
+      ],
+      "passed": false
     },
     {
       "slug": "beste-mikrochip-katzenklappen",
@@ -357,9 +511,15 @@
         "ItemList"
       ],
       "visibleRows": 7,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt."
+      ],
+      "passed": false
     },
     {
       "slug": "beste-trinkbrunnen-fuer-hunde",
@@ -377,9 +537,16 @@
         "ItemList"
       ],
       "visibleRows": 7,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt.",
+        "Öffentliche Ausgabe enthält \"Keine Angabe\"."
+      ],
+      "passed": false
     },
     {
       "slug": "beste-trinkbrunnen-fuer-katzen",
@@ -397,9 +564,16 @@
         "ItemList"
       ],
       "visibleRows": 7,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt.",
+        "Öffentliche Ausgabe enthält \"Keine Angabe\"."
+      ],
+      "passed": false
     },
     {
       "slug": "futterautomat-fuer-grosse-hunde",
@@ -417,9 +591,15 @@
         "ItemList"
       ],
       "visibleRows": 4,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt."
+      ],
+      "passed": false
     },
     {
       "slug": "futterautomat-gegen-schlingen",
@@ -437,9 +617,15 @@
         "ItemList"
       ],
       "visibleRows": 3,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt."
+      ],
+      "passed": false
     },
     {
       "slug": "futterautomat-mit-app",
@@ -457,9 +643,15 @@
         "ItemList"
       ],
       "visibleRows": 3,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt."
+      ],
+      "passed": false
     },
     {
       "slug": "gps-tracker-mit-langer-akkulaufzeit",
@@ -477,9 +669,15 @@
         "ItemList"
       ],
       "visibleRows": 6,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt."
+      ],
+      "passed": false
     },
     {
       "slug": "gps-tracker-ohne-abo",
@@ -497,9 +695,15 @@
         "ItemList"
       ],
       "visibleRows": 6,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt."
+      ],
+      "passed": false
     },
     {
       "slug": "katzenklappen-mit-app-und-beuteerkennung",
@@ -516,10 +720,16 @@
         "Answer",
         "ItemList"
       ],
-      "visibleRows": 6,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "visibleRows": 8,
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt."
+      ],
+      "passed": false
     },
     {
       "slug": "kleine-gps-tracker-fuer-katzen",
@@ -537,9 +747,15 @@
         "ItemList"
       ],
       "visibleRows": 6,
-      "affiliateCtas": 2,
-      "errors": [],
-      "passed": true
+      "affiliateCtas": 0,
+      "errors": [
+        "Dark-Mode-Ready-Marker fehlt.",
+        "Mobile Sticky-Bar fehlt.",
+        "Gewinnerkarte fehlt.",
+        "Gewinnerbild fehlt.",
+        "Produkt-CTA fehlt."
+      ],
+      "passed": false
     }
   ]
 }

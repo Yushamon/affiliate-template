@@ -1,0 +1,3462 @@
+{
+  "preview": "http://127.0.0.1:4328",
+  "generatedAt": "2026-09-01T07:03:05.612Z",
+  "baselineScrollHeight": {
+    "light": 10426,
+    "dark": 10426
+  },
+  "mobile": {
+    "light": {
+      "before": 10426,
+      "after": 7883,
+      "reduction": 2543,
+      "reductionPercent": 24.4
+    },
+    "dark": {
+      "before": 10426,
+      "after": 7883,
+      "reduction": 2543,
+      "reductionPercent": 24.4
+    }
+  },
+  "report": [
+    {
+      "viewport": 320,
+      "theme": "light",
+      "pass": true,
+      "url": "http://127.0.0.1:4328/",
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "scrollHeight": 8240,
+      "h1Count": 1,
+      "h1": {
+        "top": 220,
+        "bottom": 404,
+        "left": 36,
+        "right": 284,
+        "width": 248,
+        "height": 183
+      },
+      "hero": {
+        "top": 73,
+        "bottom": 804,
+        "left": 12,
+        "right": 308,
+        "width": 296,
+        "height": 731
+      },
+      "sections": [
+        {
+          "className": "pt-home__hero",
+          "rect": {
+            "top": 73,
+            "bottom": 804,
+            "left": 12,
+            "right": 308,
+            "width": 296,
+            "height": 731
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__needs",
+          "rect": {
+            "top": 851,
+            "bottom": 1762,
+            "left": 12,
+            "right": 308,
+            "width": 296,
+            "height": 911
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__decisions",
+          "rect": {
+            "top": 1809,
+            "bottom": 3031,
+            "left": 12,
+            "right": 308,
+            "width": 296,
+            "height": 1222
+          }
+        },
+        {
+          "className": "pt-home__method",
+          "rect": {
+            "top": 3078,
+            "bottom": 3847,
+            "left": 12,
+            "right": 308,
+            "width": 296,
+            "height": 769
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__categories",
+          "rect": {
+            "top": 3894,
+            "bottom": 4743,
+            "left": 12,
+            "right": 308,
+            "width": 296,
+            "height": 849
+          }
+        },
+        {
+          "className": "pt-home__technology",
+          "rect": {
+            "top": 4790,
+            "bottom": 5440,
+            "left": 12,
+            "right": 308,
+            "width": 296,
+            "height": 650
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__guides",
+          "rect": {
+            "top": 5487,
+            "bottom": 6224,
+            "left": 12,
+            "right": 308,
+            "width": 296,
+            "height": 737
+          }
+        },
+        {
+          "className": "pt-home__trust",
+          "rect": {
+            "top": 6271,
+            "bottom": 6572,
+            "left": 12,
+            "right": 308,
+            "width": 296,
+            "height": 301
+          }
+        },
+        {
+          "className": "pt-home__closing",
+          "rect": {
+            "top": 6619,
+            "bottom": 7070,
+            "left": 12,
+            "right": 308,
+            "width": 296,
+            "height": 451
+          }
+        }
+      ],
+      "sectionOrderValid": true,
+      "headingsInViewport": true,
+      "tapTargetsValid": true,
+      "images": [
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/pet-tech-hero.BltjJCjD_1ke55M.webp",
+          "complete": true,
+          "naturalWidth": 320,
+          "naturalHeight": 213
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.7a31RfAZ_Z2k312i.webp",
+          "complete": true,
+          "naturalWidth": 320,
+          "naturalHeight": 213
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.CsGMUCQz_2ohAlW.webp",
+          "complete": true,
+          "naturalWidth": 320,
+          "naturalHeight": 213
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.DZCeW_6i_4kmxQ.webp",
+          "complete": true,
+          "naturalWidth": 320,
+          "naturalHeight": 213
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/microchip-comparison.BEWlxtG__lEex9.svg",
+          "complete": true,
+          "naturalWidth": 267,
+          "naturalHeight": 150
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.BVbkNSER_ZCmURe.webp",
+          "complete": true,
+          "naturalWidth": 320,
+          "naturalHeight": 240
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.CpenkRtU_pBOAw.webp",
+          "complete": true,
+          "naturalWidth": 320,
+          "naturalHeight": 206
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.DQV4jENW_Z1t8D6G.webp",
+          "complete": true,
+          "naturalWidth": 320,
+          "naturalHeight": 206
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.ch1MRmM2_1e896g.webp",
+          "complete": true,
+          "naturalWidth": 320,
+          "naturalHeight": 206
+        }
+      ],
+      "focus": {
+        "outlineWidth": "3px",
+        "outlineStyle": "solid"
+      },
+      "pageBackground": "rgb(245, 246, 243)"
+    },
+    {
+      "viewport": 320,
+      "theme": "dark",
+      "pass": true,
+      "url": "http://127.0.0.1:4328/",
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "scrollHeight": 8240,
+      "h1Count": 1,
+      "h1": {
+        "top": 220,
+        "bottom": 404,
+        "left": 36,
+        "right": 284,
+        "width": 248,
+        "height": 183
+      },
+      "hero": {
+        "top": 73,
+        "bottom": 804,
+        "left": 12,
+        "right": 308,
+        "width": 296,
+        "height": 731
+      },
+      "sections": [
+        {
+          "className": "pt-home__hero",
+          "rect": {
+            "top": 73,
+            "bottom": 804,
+            "left": 12,
+            "right": 308,
+            "width": 296,
+            "height": 731
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__needs",
+          "rect": {
+            "top": 851,
+            "bottom": 1762,
+            "left": 12,
+            "right": 308,
+            "width": 296,
+            "height": 911
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__decisions",
+          "rect": {
+            "top": 1809,
+            "bottom": 3031,
+            "left": 12,
+            "right": 308,
+            "width": 296,
+            "height": 1222
+          }
+        },
+        {
+          "className": "pt-home__method",
+          "rect": {
+            "top": 3078,
+            "bottom": 3847,
+            "left": 12,
+            "right": 308,
+            "width": 296,
+            "height": 769
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__categories",
+          "rect": {
+            "top": 3894,
+            "bottom": 4743,
+            "left": 12,
+            "right": 308,
+            "width": 296,
+            "height": 849
+          }
+        },
+        {
+          "className": "pt-home__technology",
+          "rect": {
+            "top": 4790,
+            "bottom": 5440,
+            "left": 12,
+            "right": 308,
+            "width": 296,
+            "height": 650
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__guides",
+          "rect": {
+            "top": 5487,
+            "bottom": 6224,
+            "left": 12,
+            "right": 308,
+            "width": 296,
+            "height": 737
+          }
+        },
+        {
+          "className": "pt-home__trust",
+          "rect": {
+            "top": 6271,
+            "bottom": 6572,
+            "left": 12,
+            "right": 308,
+            "width": 296,
+            "height": 301
+          }
+        },
+        {
+          "className": "pt-home__closing",
+          "rect": {
+            "top": 6619,
+            "bottom": 7070,
+            "left": 12,
+            "right": 308,
+            "width": 296,
+            "height": 451
+          }
+        }
+      ],
+      "sectionOrderValid": true,
+      "headingsInViewport": true,
+      "tapTargetsValid": true,
+      "images": [
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/pet-tech-hero.BltjJCjD_1ke55M.webp",
+          "complete": true,
+          "naturalWidth": 320,
+          "naturalHeight": 213
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.7a31RfAZ_Z2k312i.webp",
+          "complete": true,
+          "naturalWidth": 320,
+          "naturalHeight": 213
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.CsGMUCQz_2ohAlW.webp",
+          "complete": true,
+          "naturalWidth": 320,
+          "naturalHeight": 213
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.DZCeW_6i_4kmxQ.webp",
+          "complete": true,
+          "naturalWidth": 320,
+          "naturalHeight": 213
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/microchip-comparison.BEWlxtG__lEex9.svg",
+          "complete": true,
+          "naturalWidth": 267,
+          "naturalHeight": 150
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.BVbkNSER_ZCmURe.webp",
+          "complete": true,
+          "naturalWidth": 320,
+          "naturalHeight": 240
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.CpenkRtU_pBOAw.webp",
+          "complete": true,
+          "naturalWidth": 320,
+          "naturalHeight": 206
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.DQV4jENW_Z1t8D6G.webp",
+          "complete": true,
+          "naturalWidth": 320,
+          "naturalHeight": 206
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.ch1MRmM2_1e896g.webp",
+          "complete": true,
+          "naturalWidth": 320,
+          "naturalHeight": 206
+        }
+      ],
+      "focus": {
+        "outlineWidth": "3px",
+        "outlineStyle": "solid"
+      },
+      "pageBackground": "rgb(12, 13, 13)"
+    },
+    {
+      "viewport": 375,
+      "theme": "light",
+      "pass": true,
+      "url": "http://127.0.0.1:4328/",
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "scrollHeight": 7883,
+      "h1Count": 1,
+      "h1": {
+        "top": 276,
+        "bottom": 430,
+        "left": 36,
+        "right": 339,
+        "width": 303,
+        "height": 154
+      },
+      "hero": {
+        "top": 73,
+        "bottom": 804,
+        "left": 12,
+        "right": 363,
+        "width": 351,
+        "height": 731
+      },
+      "sections": [
+        {
+          "className": "pt-home__hero",
+          "rect": {
+            "top": 73,
+            "bottom": 804,
+            "left": 12,
+            "right": 363,
+            "width": 351,
+            "height": 731
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__needs",
+          "rect": {
+            "top": 851,
+            "bottom": 1667,
+            "left": 12,
+            "right": 363,
+            "width": 351,
+            "height": 816
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__decisions",
+          "rect": {
+            "top": 1714,
+            "bottom": 2960,
+            "left": 12,
+            "right": 363,
+            "width": 351,
+            "height": 1246
+          }
+        },
+        {
+          "className": "pt-home__method",
+          "rect": {
+            "top": 3007,
+            "bottom": 3711,
+            "left": 12,
+            "right": 363,
+            "width": 351,
+            "height": 704
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__categories",
+          "rect": {
+            "top": 3758,
+            "bottom": 4565,
+            "left": 12,
+            "right": 363,
+            "width": 351,
+            "height": 807
+          }
+        },
+        {
+          "className": "pt-home__technology",
+          "rect": {
+            "top": 4612,
+            "bottom": 5282,
+            "left": 12,
+            "right": 363,
+            "width": 351,
+            "height": 670
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__guides",
+          "rect": {
+            "top": 5329,
+            "bottom": 6009,
+            "left": 12,
+            "right": 363,
+            "width": 351,
+            "height": 680
+          }
+        },
+        {
+          "className": "pt-home__trust",
+          "rect": {
+            "top": 6056,
+            "bottom": 6337,
+            "left": 12,
+            "right": 363,
+            "width": 351,
+            "height": 281
+          }
+        },
+        {
+          "className": "pt-home__closing",
+          "rect": {
+            "top": 6383,
+            "bottom": 6758,
+            "left": 12,
+            "right": 363,
+            "width": 351,
+            "height": 375
+          }
+        }
+      ],
+      "sectionOrderValid": true,
+      "headingsInViewport": true,
+      "tapTargetsValid": true,
+      "images": [
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/pet-tech-hero.BltjJCjD_1ke55M.webp",
+          "complete": true,
+          "naturalWidth": 375,
+          "naturalHeight": 250
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.7a31RfAZ_Z16OD6j.webp",
+          "complete": true,
+          "naturalWidth": 375,
+          "naturalHeight": 250
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.CsGMUCQz_Z1KouPC.webp",
+          "complete": true,
+          "naturalWidth": 375,
+          "naturalHeight": 250
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.DZCeW_6i_Z25tXS4.webp",
+          "complete": true,
+          "naturalWidth": 375,
+          "naturalHeight": 250
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/microchip-comparison.BEWlxtG__28Adc6.svg",
+          "complete": true,
+          "naturalWidth": 267,
+          "naturalHeight": 150
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.BVbkNSER_1hLJhj.webp",
+          "complete": true,
+          "naturalWidth": 375,
+          "naturalHeight": 281
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.CpenkRtU_Z17AbUy.webp",
+          "complete": true,
+          "naturalWidth": 375,
+          "naturalHeight": 241
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.DQV4jENW_23Ptba.webp",
+          "complete": true,
+          "naturalWidth": 375,
+          "naturalHeight": 241
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.ch1MRmM2_ZJYXAl.webp",
+          "complete": true,
+          "naturalWidth": 375,
+          "naturalHeight": 241
+        }
+      ],
+      "focus": {
+        "outlineWidth": "3px",
+        "outlineStyle": "solid"
+      },
+      "pageBackground": "rgb(245, 246, 243)"
+    },
+    {
+      "viewport": 375,
+      "theme": "dark",
+      "pass": true,
+      "url": "http://127.0.0.1:4328/",
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "scrollHeight": 7883,
+      "h1Count": 1,
+      "h1": {
+        "top": 276,
+        "bottom": 430,
+        "left": 36,
+        "right": 339,
+        "width": 303,
+        "height": 154
+      },
+      "hero": {
+        "top": 73,
+        "bottom": 804,
+        "left": 12,
+        "right": 363,
+        "width": 351,
+        "height": 731
+      },
+      "sections": [
+        {
+          "className": "pt-home__hero",
+          "rect": {
+            "top": 73,
+            "bottom": 804,
+            "left": 12,
+            "right": 363,
+            "width": 351,
+            "height": 731
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__needs",
+          "rect": {
+            "top": 851,
+            "bottom": 1667,
+            "left": 12,
+            "right": 363,
+            "width": 351,
+            "height": 816
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__decisions",
+          "rect": {
+            "top": 1714,
+            "bottom": 2960,
+            "left": 12,
+            "right": 363,
+            "width": 351,
+            "height": 1246
+          }
+        },
+        {
+          "className": "pt-home__method",
+          "rect": {
+            "top": 3007,
+            "bottom": 3711,
+            "left": 12,
+            "right": 363,
+            "width": 351,
+            "height": 704
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__categories",
+          "rect": {
+            "top": 3758,
+            "bottom": 4565,
+            "left": 12,
+            "right": 363,
+            "width": 351,
+            "height": 807
+          }
+        },
+        {
+          "className": "pt-home__technology",
+          "rect": {
+            "top": 4612,
+            "bottom": 5282,
+            "left": 12,
+            "right": 363,
+            "width": 351,
+            "height": 670
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__guides",
+          "rect": {
+            "top": 5329,
+            "bottom": 6009,
+            "left": 12,
+            "right": 363,
+            "width": 351,
+            "height": 680
+          }
+        },
+        {
+          "className": "pt-home__trust",
+          "rect": {
+            "top": 6056,
+            "bottom": 6337,
+            "left": 12,
+            "right": 363,
+            "width": 351,
+            "height": 281
+          }
+        },
+        {
+          "className": "pt-home__closing",
+          "rect": {
+            "top": 6383,
+            "bottom": 6758,
+            "left": 12,
+            "right": 363,
+            "width": 351,
+            "height": 375
+          }
+        }
+      ],
+      "sectionOrderValid": true,
+      "headingsInViewport": true,
+      "tapTargetsValid": true,
+      "images": [
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/pet-tech-hero.BltjJCjD_1ke55M.webp",
+          "complete": true,
+          "naturalWidth": 375,
+          "naturalHeight": 250
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.7a31RfAZ_Z16OD6j.webp",
+          "complete": true,
+          "naturalWidth": 375,
+          "naturalHeight": 250
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.CsGMUCQz_Z1KouPC.webp",
+          "complete": true,
+          "naturalWidth": 375,
+          "naturalHeight": 250
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.DZCeW_6i_Z25tXS4.webp",
+          "complete": true,
+          "naturalWidth": 375,
+          "naturalHeight": 250
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/microchip-comparison.BEWlxtG__28Adc6.svg",
+          "complete": true,
+          "naturalWidth": 267,
+          "naturalHeight": 150
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.BVbkNSER_1hLJhj.webp",
+          "complete": true,
+          "naturalWidth": 375,
+          "naturalHeight": 281
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.CpenkRtU_Z17AbUy.webp",
+          "complete": true,
+          "naturalWidth": 375,
+          "naturalHeight": 241
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.DQV4jENW_23Ptba.webp",
+          "complete": true,
+          "naturalWidth": 375,
+          "naturalHeight": 241
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.ch1MRmM2_ZJYXAl.webp",
+          "complete": true,
+          "naturalWidth": 375,
+          "naturalHeight": 241
+        }
+      ],
+      "focus": {
+        "outlineWidth": "3px",
+        "outlineStyle": "solid"
+      },
+      "pageBackground": "rgb(12, 13, 13)"
+    },
+    {
+      "viewport": 430,
+      "theme": "light",
+      "pass": true,
+      "url": "http://127.0.0.1:4328/",
+      "clientWidth": 430,
+      "scrollWidth": 430,
+      "scrollHeight": 7642,
+      "h1Count": 1,
+      "h1": {
+        "top": 280,
+        "bottom": 457,
+        "left": 36,
+        "right": 394,
+        "width": 358,
+        "height": 177
+      },
+      "hero": {
+        "top": 73,
+        "bottom": 804,
+        "left": 12,
+        "right": 418,
+        "width": 406,
+        "height": 731
+      },
+      "sections": [
+        {
+          "className": "pt-home__hero",
+          "rect": {
+            "top": 73,
+            "bottom": 804,
+            "left": 12,
+            "right": 418,
+            "width": 406,
+            "height": 731
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__needs",
+          "rect": {
+            "top": 851,
+            "bottom": 1622,
+            "left": 12,
+            "right": 418,
+            "width": 406,
+            "height": 771
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__decisions",
+          "rect": {
+            "top": 1669,
+            "bottom": 2828,
+            "left": 12,
+            "right": 418,
+            "width": 406,
+            "height": 1159
+          }
+        },
+        {
+          "className": "pt-home__method",
+          "rect": {
+            "top": 2874,
+            "bottom": 3509,
+            "left": 12,
+            "right": 418,
+            "width": 406,
+            "height": 634
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__categories",
+          "rect": {
+            "top": 3556,
+            "bottom": 4372,
+            "left": 12,
+            "right": 418,
+            "width": 406,
+            "height": 816
+          }
+        },
+        {
+          "className": "pt-home__technology",
+          "rect": {
+            "top": 4419,
+            "bottom": 5116,
+            "left": 12,
+            "right": 418,
+            "width": 406,
+            "height": 698
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__guides",
+          "rect": {
+            "top": 5163,
+            "bottom": 5818,
+            "left": 12,
+            "right": 418,
+            "width": 406,
+            "height": 655
+          }
+        },
+        {
+          "className": "pt-home__trust",
+          "rect": {
+            "top": 5865,
+            "bottom": 6126,
+            "left": 12,
+            "right": 418,
+            "width": 406,
+            "height": 261
+          }
+        },
+        {
+          "className": "pt-home__closing",
+          "rect": {
+            "top": 6173,
+            "bottom": 6561,
+            "left": 12,
+            "right": 418,
+            "width": 406,
+            "height": 388
+          }
+        }
+      ],
+      "sectionOrderValid": true,
+      "headingsInViewport": true,
+      "tapTargetsValid": true,
+      "images": [
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/pet-tech-hero.BltjJCjD_1ke55M.webp",
+          "complete": true,
+          "naturalWidth": 430,
+          "naturalHeight": 286
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.7a31RfAZ_Z16OD6j.webp",
+          "complete": true,
+          "naturalWidth": 430,
+          "naturalHeight": 286
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.CsGMUCQz_Z1KouPC.webp",
+          "complete": true,
+          "naturalWidth": 430,
+          "naturalHeight": 286
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.DZCeW_6i_Z25tXS4.webp",
+          "complete": true,
+          "naturalWidth": 430,
+          "naturalHeight": 286
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/microchip-comparison.BEWlxtG__28Adc6.svg",
+          "complete": true,
+          "naturalWidth": 267,
+          "naturalHeight": 150
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.BVbkNSER_1hLJhj.webp",
+          "complete": true,
+          "naturalWidth": 430,
+          "naturalHeight": 322
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.CpenkRtU_Z17AbUy.webp",
+          "complete": true,
+          "naturalWidth": 430,
+          "naturalHeight": 276
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.DQV4jENW_23Ptba.webp",
+          "complete": true,
+          "naturalWidth": 430,
+          "naturalHeight": 276
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.ch1MRmM2_ZJYXAl.webp",
+          "complete": true,
+          "naturalWidth": 430,
+          "naturalHeight": 276
+        }
+      ],
+      "focus": {
+        "outlineWidth": "3px",
+        "outlineStyle": "solid"
+      },
+      "pageBackground": "rgb(245, 246, 243)"
+    },
+    {
+      "viewport": 430,
+      "theme": "dark",
+      "pass": true,
+      "url": "http://127.0.0.1:4328/",
+      "clientWidth": 430,
+      "scrollWidth": 430,
+      "scrollHeight": 7642,
+      "h1Count": 1,
+      "h1": {
+        "top": 280,
+        "bottom": 457,
+        "left": 36,
+        "right": 394,
+        "width": 358,
+        "height": 177
+      },
+      "hero": {
+        "top": 73,
+        "bottom": 804,
+        "left": 12,
+        "right": 418,
+        "width": 406,
+        "height": 731
+      },
+      "sections": [
+        {
+          "className": "pt-home__hero",
+          "rect": {
+            "top": 73,
+            "bottom": 804,
+            "left": 12,
+            "right": 418,
+            "width": 406,
+            "height": 731
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__needs",
+          "rect": {
+            "top": 851,
+            "bottom": 1622,
+            "left": 12,
+            "right": 418,
+            "width": 406,
+            "height": 771
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__decisions",
+          "rect": {
+            "top": 1669,
+            "bottom": 2828,
+            "left": 12,
+            "right": 418,
+            "width": 406,
+            "height": 1159
+          }
+        },
+        {
+          "className": "pt-home__method",
+          "rect": {
+            "top": 2874,
+            "bottom": 3509,
+            "left": 12,
+            "right": 418,
+            "width": 406,
+            "height": 634
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__categories",
+          "rect": {
+            "top": 3556,
+            "bottom": 4372,
+            "left": 12,
+            "right": 418,
+            "width": 406,
+            "height": 816
+          }
+        },
+        {
+          "className": "pt-home__technology",
+          "rect": {
+            "top": 4419,
+            "bottom": 5116,
+            "left": 12,
+            "right": 418,
+            "width": 406,
+            "height": 698
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__guides",
+          "rect": {
+            "top": 5163,
+            "bottom": 5818,
+            "left": 12,
+            "right": 418,
+            "width": 406,
+            "height": 655
+          }
+        },
+        {
+          "className": "pt-home__trust",
+          "rect": {
+            "top": 5865,
+            "bottom": 6126,
+            "left": 12,
+            "right": 418,
+            "width": 406,
+            "height": 261
+          }
+        },
+        {
+          "className": "pt-home__closing",
+          "rect": {
+            "top": 6173,
+            "bottom": 6561,
+            "left": 12,
+            "right": 418,
+            "width": 406,
+            "height": 388
+          }
+        }
+      ],
+      "sectionOrderValid": true,
+      "headingsInViewport": true,
+      "tapTargetsValid": true,
+      "images": [
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/pet-tech-hero.BltjJCjD_1ke55M.webp",
+          "complete": true,
+          "naturalWidth": 430,
+          "naturalHeight": 286
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.7a31RfAZ_Z16OD6j.webp",
+          "complete": true,
+          "naturalWidth": 430,
+          "naturalHeight": 286
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.CsGMUCQz_Z1KouPC.webp",
+          "complete": true,
+          "naturalWidth": 430,
+          "naturalHeight": 286
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.DZCeW_6i_Z25tXS4.webp",
+          "complete": true,
+          "naturalWidth": 430,
+          "naturalHeight": 286
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/microchip-comparison.BEWlxtG__28Adc6.svg",
+          "complete": true,
+          "naturalWidth": 267,
+          "naturalHeight": 150
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.BVbkNSER_1hLJhj.webp",
+          "complete": true,
+          "naturalWidth": 430,
+          "naturalHeight": 322
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.CpenkRtU_Z17AbUy.webp",
+          "complete": true,
+          "naturalWidth": 430,
+          "naturalHeight": 276
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.DQV4jENW_23Ptba.webp",
+          "complete": true,
+          "naturalWidth": 430,
+          "naturalHeight": 276
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.ch1MRmM2_ZJYXAl.webp",
+          "complete": true,
+          "naturalWidth": 430,
+          "naturalHeight": 276
+        }
+      ],
+      "focus": {
+        "outlineWidth": "3px",
+        "outlineStyle": "solid"
+      },
+      "pageBackground": "rgb(12, 13, 13)"
+    },
+    {
+      "viewport": 768,
+      "theme": "light",
+      "pass": true,
+      "url": "http://127.0.0.1:4328/",
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "scrollHeight": 7593,
+      "h1Count": 1,
+      "h1": {
+        "top": 333,
+        "bottom": 533,
+        "left": 55,
+        "right": 713,
+        "width": 659,
+        "height": 200
+      },
+      "hero": {
+        "top": 73,
+        "bottom": 804,
+        "left": 31,
+        "right": 737,
+        "width": 707,
+        "height": 731
+      },
+      "sections": [
+        {
+          "className": "pt-home__hero",
+          "rect": {
+            "top": 73,
+            "bottom": 804,
+            "left": 31,
+            "right": 737,
+            "width": 707,
+            "height": 731
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__needs",
+          "rect": {
+            "top": 868,
+            "bottom": 1613,
+            "left": 31,
+            "right": 737,
+            "width": 707,
+            "height": 745
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__decisions",
+          "rect": {
+            "top": 1677,
+            "bottom": 2926,
+            "left": 31,
+            "right": 737,
+            "width": 707,
+            "height": 1249
+          }
+        },
+        {
+          "className": "pt-home__method",
+          "rect": {
+            "top": 2990,
+            "bottom": 3560,
+            "left": 31,
+            "right": 737,
+            "width": 707,
+            "height": 571
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__categories",
+          "rect": {
+            "top": 3624,
+            "bottom": 4448,
+            "left": 31,
+            "right": 737,
+            "width": 707,
+            "height": 824
+          }
+        },
+        {
+          "className": "pt-home__technology",
+          "rect": {
+            "top": 4512,
+            "bottom": 5362,
+            "left": 31,
+            "right": 737,
+            "width": 707,
+            "height": 850
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__guides",
+          "rect": {
+            "top": 5426,
+            "bottom": 6089,
+            "left": 31,
+            "right": 737,
+            "width": 707,
+            "height": 663
+          }
+        },
+        {
+          "className": "pt-home__trust",
+          "rect": {
+            "top": 6152,
+            "bottom": 6413,
+            "left": 31,
+            "right": 737,
+            "width": 707,
+            "height": 261
+          }
+        },
+        {
+          "className": "pt-home__closing",
+          "rect": {
+            "top": 6477,
+            "bottom": 6885,
+            "left": 31,
+            "right": 737,
+            "width": 707,
+            "height": 408
+          }
+        }
+      ],
+      "sectionOrderValid": true,
+      "headingsInViewport": true,
+      "tapTargetsValid": true,
+      "images": [
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/pet-tech-hero.BltjJCjD_2dXbeA.webp",
+          "complete": true,
+          "naturalWidth": 768,
+          "naturalHeight": 512
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.7a31RfAZ_Z16OD6j.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.CsGMUCQz_Z1KouPC.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.DZCeW_6i_Z25tXS4.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/microchip-comparison.BEWlxtG__28Adc6.svg",
+          "complete": true,
+          "naturalWidth": 267,
+          "naturalHeight": 150
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.BVbkNSER_1hLJhj.webp",
+          "complete": true,
+          "naturalWidth": 768,
+          "naturalHeight": 576
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.CpenkRtU_Z17AbUy.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.DQV4jENW_23Ptba.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.ch1MRmM2_ZJYXAl.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        }
+      ],
+      "focus": {
+        "outlineWidth": "3px",
+        "outlineStyle": "solid"
+      },
+      "pageBackground": "rgb(245, 246, 243)"
+    },
+    {
+      "viewport": 768,
+      "theme": "dark",
+      "pass": true,
+      "url": "http://127.0.0.1:4328/",
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "scrollHeight": 7593,
+      "h1Count": 1,
+      "h1": {
+        "top": 333,
+        "bottom": 533,
+        "left": 55,
+        "right": 713,
+        "width": 659,
+        "height": 200
+      },
+      "hero": {
+        "top": 73,
+        "bottom": 804,
+        "left": 31,
+        "right": 737,
+        "width": 707,
+        "height": 731
+      },
+      "sections": [
+        {
+          "className": "pt-home__hero",
+          "rect": {
+            "top": 73,
+            "bottom": 804,
+            "left": 31,
+            "right": 737,
+            "width": 707,
+            "height": 731
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__needs",
+          "rect": {
+            "top": 868,
+            "bottom": 1613,
+            "left": 31,
+            "right": 737,
+            "width": 707,
+            "height": 745
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__decisions",
+          "rect": {
+            "top": 1677,
+            "bottom": 2926,
+            "left": 31,
+            "right": 737,
+            "width": 707,
+            "height": 1249
+          }
+        },
+        {
+          "className": "pt-home__method",
+          "rect": {
+            "top": 2990,
+            "bottom": 3560,
+            "left": 31,
+            "right": 737,
+            "width": 707,
+            "height": 571
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__categories",
+          "rect": {
+            "top": 3624,
+            "bottom": 4448,
+            "left": 31,
+            "right": 737,
+            "width": 707,
+            "height": 824
+          }
+        },
+        {
+          "className": "pt-home__technology",
+          "rect": {
+            "top": 4512,
+            "bottom": 5362,
+            "left": 31,
+            "right": 737,
+            "width": 707,
+            "height": 850
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__guides",
+          "rect": {
+            "top": 5426,
+            "bottom": 6089,
+            "left": 31,
+            "right": 737,
+            "width": 707,
+            "height": 663
+          }
+        },
+        {
+          "className": "pt-home__trust",
+          "rect": {
+            "top": 6152,
+            "bottom": 6413,
+            "left": 31,
+            "right": 737,
+            "width": 707,
+            "height": 261
+          }
+        },
+        {
+          "className": "pt-home__closing",
+          "rect": {
+            "top": 6477,
+            "bottom": 6885,
+            "left": 31,
+            "right": 737,
+            "width": 707,
+            "height": 408
+          }
+        }
+      ],
+      "sectionOrderValid": true,
+      "headingsInViewport": true,
+      "tapTargetsValid": true,
+      "images": [
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/pet-tech-hero.BltjJCjD_2dXbeA.webp",
+          "complete": true,
+          "naturalWidth": 768,
+          "naturalHeight": 512
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.7a31RfAZ_Z16OD6j.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.CsGMUCQz_Z1KouPC.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.DZCeW_6i_Z25tXS4.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/microchip-comparison.BEWlxtG__28Adc6.svg",
+          "complete": true,
+          "naturalWidth": 267,
+          "naturalHeight": 150
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.BVbkNSER_1hLJhj.webp",
+          "complete": true,
+          "naturalWidth": 768,
+          "naturalHeight": 576
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.CpenkRtU_Z17AbUy.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.DQV4jENW_23Ptba.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.ch1MRmM2_ZJYXAl.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        }
+      ],
+      "focus": {
+        "outlineWidth": "3px",
+        "outlineStyle": "solid"
+      },
+      "pageBackground": "rgb(12, 13, 13)"
+    },
+    {
+      "viewport": 820,
+      "theme": "light",
+      "pass": true,
+      "url": "http://127.0.0.1:4328/",
+      "clientWidth": 820,
+      "scrollWidth": 820,
+      "scrollHeight": 6973,
+      "h1Count": 1,
+      "h1": {
+        "top": 221,
+        "bottom": 324,
+        "left": 82,
+        "right": 738,
+        "width": 656,
+        "height": 103
+      },
+      "hero": {
+        "top": 73,
+        "bottom": 651,
+        "left": 33,
+        "right": 787,
+        "width": 754,
+        "height": 578
+      },
+      "sections": [
+        {
+          "className": "pt-home__hero",
+          "rect": {
+            "top": 73,
+            "bottom": 651,
+            "left": 33,
+            "right": 787,
+            "width": 754,
+            "height": 578
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__needs",
+          "rect": {
+            "top": 719,
+            "bottom": 1438,
+            "left": 33,
+            "right": 787,
+            "width": 754,
+            "height": 718
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__decisions",
+          "rect": {
+            "top": 1506,
+            "bottom": 2728,
+            "left": 33,
+            "right": 787,
+            "width": 754,
+            "height": 1222
+          }
+        },
+        {
+          "className": "pt-home__method",
+          "rect": {
+            "top": 2796,
+            "bottom": 3354,
+            "left": 33,
+            "right": 787,
+            "width": 754,
+            "height": 558
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__categories",
+          "rect": {
+            "top": 3422,
+            "bottom": 4032,
+            "left": 33,
+            "right": 787,
+            "width": 754,
+            "height": 611
+          }
+        },
+        {
+          "className": "pt-home__technology",
+          "rect": {
+            "top": 4100,
+            "bottom": 4621,
+            "left": 33,
+            "right": 787,
+            "width": 754,
+            "height": 521
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__guides",
+          "rect": {
+            "top": 4689,
+            "bottom": 5486,
+            "left": 33,
+            "right": 787,
+            "width": 754,
+            "height": 797
+          }
+        },
+        {
+          "className": "pt-home__trust",
+          "rect": {
+            "top": 5554,
+            "bottom": 5779,
+            "left": 33,
+            "right": 787,
+            "width": 754,
+            "height": 225
+          }
+        },
+        {
+          "className": "pt-home__closing",
+          "rect": {
+            "top": 5847,
+            "bottom": 6257,
+            "left": 33,
+            "right": 787,
+            "width": 754,
+            "height": 410
+          }
+        }
+      ],
+      "sectionOrderValid": true,
+      "headingsInViewport": true,
+      "tapTargetsValid": true,
+      "images": [
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/pet-tech-hero.BltjJCjD_2dXbeA.webp",
+          "complete": true,
+          "naturalWidth": 820,
+          "naturalHeight": 546
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.7a31RfAZ_Z16OD6j.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.CsGMUCQz_Z1KouPC.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.DZCeW_6i_Z25tXS4.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/microchip-comparison.BEWlxtG__28Adc6.svg",
+          "complete": true,
+          "naturalWidth": 267,
+          "naturalHeight": 150
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.BVbkNSER_1hLJhj.webp",
+          "complete": true,
+          "naturalWidth": 820,
+          "naturalHeight": 615
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.CpenkRtU_Z17AbUy.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.DQV4jENW_23Ptba.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.ch1MRmM2_ZJYXAl.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        }
+      ],
+      "focus": {
+        "outlineWidth": "3px",
+        "outlineStyle": "solid"
+      },
+      "pageBackground": "rgb(245, 246, 243)"
+    },
+    {
+      "viewport": 820,
+      "theme": "dark",
+      "pass": true,
+      "url": "http://127.0.0.1:4328/",
+      "clientWidth": 820,
+      "scrollWidth": 820,
+      "scrollHeight": 6973,
+      "h1Count": 1,
+      "h1": {
+        "top": 221,
+        "bottom": 324,
+        "left": 82,
+        "right": 738,
+        "width": 656,
+        "height": 103
+      },
+      "hero": {
+        "top": 73,
+        "bottom": 651,
+        "left": 33,
+        "right": 787,
+        "width": 754,
+        "height": 578
+      },
+      "sections": [
+        {
+          "className": "pt-home__hero",
+          "rect": {
+            "top": 73,
+            "bottom": 651,
+            "left": 33,
+            "right": 787,
+            "width": 754,
+            "height": 578
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__needs",
+          "rect": {
+            "top": 719,
+            "bottom": 1438,
+            "left": 33,
+            "right": 787,
+            "width": 754,
+            "height": 718
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__decisions",
+          "rect": {
+            "top": 1506,
+            "bottom": 2728,
+            "left": 33,
+            "right": 787,
+            "width": 754,
+            "height": 1222
+          }
+        },
+        {
+          "className": "pt-home__method",
+          "rect": {
+            "top": 2796,
+            "bottom": 3354,
+            "left": 33,
+            "right": 787,
+            "width": 754,
+            "height": 558
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__categories",
+          "rect": {
+            "top": 3422,
+            "bottom": 4032,
+            "left": 33,
+            "right": 787,
+            "width": 754,
+            "height": 611
+          }
+        },
+        {
+          "className": "pt-home__technology",
+          "rect": {
+            "top": 4100,
+            "bottom": 4621,
+            "left": 33,
+            "right": 787,
+            "width": 754,
+            "height": 521
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__guides",
+          "rect": {
+            "top": 4689,
+            "bottom": 5486,
+            "left": 33,
+            "right": 787,
+            "width": 754,
+            "height": 797
+          }
+        },
+        {
+          "className": "pt-home__trust",
+          "rect": {
+            "top": 5554,
+            "bottom": 5779,
+            "left": 33,
+            "right": 787,
+            "width": 754,
+            "height": 225
+          }
+        },
+        {
+          "className": "pt-home__closing",
+          "rect": {
+            "top": 5847,
+            "bottom": 6257,
+            "left": 33,
+            "right": 787,
+            "width": 754,
+            "height": 410
+          }
+        }
+      ],
+      "sectionOrderValid": true,
+      "headingsInViewport": true,
+      "tapTargetsValid": true,
+      "images": [
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/pet-tech-hero.BltjJCjD_2dXbeA.webp",
+          "complete": true,
+          "naturalWidth": 820,
+          "naturalHeight": 546
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.7a31RfAZ_Z16OD6j.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.CsGMUCQz_Z1KouPC.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.DZCeW_6i_Z25tXS4.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/microchip-comparison.BEWlxtG__28Adc6.svg",
+          "complete": true,
+          "naturalWidth": 267,
+          "naturalHeight": 150
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.BVbkNSER_1hLJhj.webp",
+          "complete": true,
+          "naturalWidth": 820,
+          "naturalHeight": 615
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.CpenkRtU_Z17AbUy.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.DQV4jENW_23Ptba.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.ch1MRmM2_ZJYXAl.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        }
+      ],
+      "focus": {
+        "outlineWidth": "3px",
+        "outlineStyle": "solid"
+      },
+      "pageBackground": "rgb(12, 13, 13)"
+    },
+    {
+      "viewport": 1024,
+      "theme": "light",
+      "pass": true,
+      "url": "http://127.0.0.1:4328/",
+      "clientWidth": 1024,
+      "scrollWidth": 1024,
+      "scrollHeight": 7038,
+      "h1Count": 1,
+      "h1": {
+        "top": 332,
+        "bottom": 460,
+        "left": 102,
+        "right": 922,
+        "width": 819,
+        "height": 128
+      },
+      "hero": {
+        "top": 133,
+        "bottom": 839,
+        "left": 41,
+        "right": 983,
+        "width": 942,
+        "height": 707
+      },
+      "sections": [
+        {
+          "className": "pt-home__hero",
+          "rect": {
+            "top": 133,
+            "bottom": 839,
+            "left": 41,
+            "right": 983,
+            "width": 942,
+            "height": 707
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__needs",
+          "rect": {
+            "top": 921,
+            "bottom": 1506,
+            "left": 41,
+            "right": 983,
+            "width": 942,
+            "height": 585
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__decisions",
+          "rect": {
+            "top": 1588,
+            "bottom": 2856,
+            "left": 41,
+            "right": 983,
+            "width": 942,
+            "height": 1268
+          }
+        },
+        {
+          "className": "pt-home__method",
+          "rect": {
+            "top": 2938,
+            "bottom": 3501,
+            "left": 41,
+            "right": 983,
+            "width": 942,
+            "height": 564
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__categories",
+          "rect": {
+            "top": 3583,
+            "bottom": 4140,
+            "left": 41,
+            "right": 983,
+            "width": 942,
+            "height": 556
+          }
+        },
+        {
+          "className": "pt-home__technology",
+          "rect": {
+            "top": 4222,
+            "bottom": 4716,
+            "left": 41,
+            "right": 983,
+            "width": 942,
+            "height": 495
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__guides",
+          "rect": {
+            "top": 4798,
+            "bottom": 5497,
+            "left": 41,
+            "right": 983,
+            "width": 942,
+            "height": 699
+          }
+        },
+        {
+          "className": "pt-home__trust",
+          "rect": {
+            "top": 5579,
+            "bottom": 5791,
+            "left": 41,
+            "right": 983,
+            "width": 942,
+            "height": 212
+          }
+        },
+        {
+          "className": "pt-home__closing",
+          "rect": {
+            "top": 5873,
+            "bottom": 6335,
+            "left": 41,
+            "right": 983,
+            "width": 942,
+            "height": 462
+          }
+        }
+      ],
+      "sectionOrderValid": true,
+      "headingsInViewport": true,
+      "tapTargetsValid": true,
+      "images": [
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/pet-tech-hero.BltjJCjD_ZWoE8E.webp",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 682
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.7a31RfAZ_Z16OD6j.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.CsGMUCQz_Z1KouPC.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.DZCeW_6i_Z25tXS4.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/microchip-comparison.BEWlxtG__28Adc6.svg",
+          "complete": true,
+          "naturalWidth": 267,
+          "naturalHeight": 150
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.BVbkNSER_1hLJhj.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 720
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.CpenkRtU_Z17AbUy.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.DQV4jENW_23Ptba.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.ch1MRmM2_ZJYXAl.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        }
+      ],
+      "focus": {
+        "outlineWidth": "3px",
+        "outlineStyle": "solid"
+      },
+      "pageBackground": "rgb(245, 246, 243)"
+    },
+    {
+      "viewport": 1024,
+      "theme": "dark",
+      "pass": true,
+      "url": "http://127.0.0.1:4328/",
+      "clientWidth": 1024,
+      "scrollWidth": 1024,
+      "scrollHeight": 7038,
+      "h1Count": 1,
+      "h1": {
+        "top": 332,
+        "bottom": 460,
+        "left": 102,
+        "right": 922,
+        "width": 819,
+        "height": 128
+      },
+      "hero": {
+        "top": 133,
+        "bottom": 839,
+        "left": 41,
+        "right": 983,
+        "width": 942,
+        "height": 707
+      },
+      "sections": [
+        {
+          "className": "pt-home__hero",
+          "rect": {
+            "top": 133,
+            "bottom": 839,
+            "left": 41,
+            "right": 983,
+            "width": 942,
+            "height": 707
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__needs",
+          "rect": {
+            "top": 921,
+            "bottom": 1506,
+            "left": 41,
+            "right": 983,
+            "width": 942,
+            "height": 585
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__decisions",
+          "rect": {
+            "top": 1588,
+            "bottom": 2856,
+            "left": 41,
+            "right": 983,
+            "width": 942,
+            "height": 1268
+          }
+        },
+        {
+          "className": "pt-home__method",
+          "rect": {
+            "top": 2938,
+            "bottom": 3501,
+            "left": 41,
+            "right": 983,
+            "width": 942,
+            "height": 564
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__categories",
+          "rect": {
+            "top": 3583,
+            "bottom": 4140,
+            "left": 41,
+            "right": 983,
+            "width": 942,
+            "height": 556
+          }
+        },
+        {
+          "className": "pt-home__technology",
+          "rect": {
+            "top": 4222,
+            "bottom": 4716,
+            "left": 41,
+            "right": 983,
+            "width": 942,
+            "height": 495
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__guides",
+          "rect": {
+            "top": 4798,
+            "bottom": 5497,
+            "left": 41,
+            "right": 983,
+            "width": 942,
+            "height": 699
+          }
+        },
+        {
+          "className": "pt-home__trust",
+          "rect": {
+            "top": 5579,
+            "bottom": 5791,
+            "left": 41,
+            "right": 983,
+            "width": 942,
+            "height": 212
+          }
+        },
+        {
+          "className": "pt-home__closing",
+          "rect": {
+            "top": 5873,
+            "bottom": 6335,
+            "left": 41,
+            "right": 983,
+            "width": 942,
+            "height": 462
+          }
+        }
+      ],
+      "sectionOrderValid": true,
+      "headingsInViewport": true,
+      "tapTargetsValid": true,
+      "images": [
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/pet-tech-hero.BltjJCjD_ZWoE8E.webp",
+          "complete": true,
+          "naturalWidth": 1024,
+          "naturalHeight": 682
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.7a31RfAZ_Z16OD6j.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.CsGMUCQz_Z1KouPC.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.DZCeW_6i_Z25tXS4.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/microchip-comparison.BEWlxtG__28Adc6.svg",
+          "complete": true,
+          "naturalWidth": 267,
+          "naturalHeight": 150
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.BVbkNSER_1hLJhj.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 720
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.CpenkRtU_Z17AbUy.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.DQV4jENW_23Ptba.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.ch1MRmM2_ZJYXAl.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        }
+      ],
+      "focus": {
+        "outlineWidth": "3px",
+        "outlineStyle": "solid"
+      },
+      "pageBackground": "rgb(12, 13, 13)"
+    },
+    {
+      "viewport": 1280,
+      "theme": "light",
+      "pass": true,
+      "url": "http://127.0.0.1:4328/",
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "scrollHeight": 7587,
+      "h1Count": 1,
+      "h1": {
+        "top": 324,
+        "bottom": 565,
+        "left": 128,
+        "right": 960,
+        "width": 832,
+        "height": 241
+      },
+      "hero": {
+        "top": 133,
+        "bottom": 949,
+        "left": 51,
+        "right": 1229,
+        "width": 1178,
+        "height": 816
+      },
+      "sections": [
+        {
+          "className": "pt-home__hero",
+          "rect": {
+            "top": 133,
+            "bottom": 949,
+            "left": 51,
+            "right": 1229,
+            "width": 1178,
+            "height": 816
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__needs",
+          "rect": {
+            "top": 1051,
+            "bottom": 1624,
+            "left": 51,
+            "right": 1229,
+            "width": 1178,
+            "height": 573
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__decisions",
+          "rect": {
+            "top": 1726,
+            "bottom": 3157,
+            "left": 51,
+            "right": 1229,
+            "width": 1178,
+            "height": 1431
+          }
+        },
+        {
+          "className": "pt-home__method",
+          "rect": {
+            "top": 3260,
+            "bottom": 3853,
+            "left": 51,
+            "right": 1229,
+            "width": 1178,
+            "height": 593
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__categories",
+          "rect": {
+            "top": 3955,
+            "bottom": 4549,
+            "left": 51,
+            "right": 1229,
+            "width": 1178,
+            "height": 594
+          }
+        },
+        {
+          "className": "pt-home__technology",
+          "rect": {
+            "top": 4652,
+            "bottom": 5105,
+            "left": 51,
+            "right": 1229,
+            "width": 1178,
+            "height": 453
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__guides",
+          "rect": {
+            "top": 5207,
+            "bottom": 5912,
+            "left": 51,
+            "right": 1229,
+            "width": 1178,
+            "height": 705
+          }
+        },
+        {
+          "className": "pt-home__trust",
+          "rect": {
+            "top": 6015,
+            "bottom": 6234,
+            "left": 51,
+            "right": 1229,
+            "width": 1178,
+            "height": 219
+          }
+        },
+        {
+          "className": "pt-home__closing",
+          "rect": {
+            "top": 6337,
+            "bottom": 6863,
+            "left": 51,
+            "right": 1229,
+            "width": 1178,
+            "height": 526
+          }
+        }
+      ],
+      "sectionOrderValid": true,
+      "headingsInViewport": true,
+      "tapTargetsValid": true,
+      "images": [
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/pet-tech-hero.BltjJCjD_ZWoE8E.webp",
+          "complete": true,
+          "naturalWidth": 1280,
+          "naturalHeight": 853
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.7a31RfAZ_Z16OD6j.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.CsGMUCQz_Z1KouPC.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.DZCeW_6i_Z25tXS4.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/microchip-comparison.BEWlxtG__28Adc6.svg",
+          "complete": true,
+          "naturalWidth": 267,
+          "naturalHeight": 150
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.BVbkNSER_1hLJhj.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 720
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.CpenkRtU_Z17AbUy.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.DQV4jENW_23Ptba.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.ch1MRmM2_ZJYXAl.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        }
+      ],
+      "focus": {
+        "outlineWidth": "3px",
+        "outlineStyle": "solid"
+      },
+      "pageBackground": "rgb(245, 246, 243)"
+    },
+    {
+      "viewport": 1280,
+      "theme": "dark",
+      "pass": true,
+      "url": "http://127.0.0.1:4328/",
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "scrollHeight": 7587,
+      "h1Count": 1,
+      "h1": {
+        "top": 324,
+        "bottom": 565,
+        "left": 128,
+        "right": 960,
+        "width": 832,
+        "height": 241
+      },
+      "hero": {
+        "top": 133,
+        "bottom": 949,
+        "left": 51,
+        "right": 1229,
+        "width": 1178,
+        "height": 816
+      },
+      "sections": [
+        {
+          "className": "pt-home__hero",
+          "rect": {
+            "top": 133,
+            "bottom": 949,
+            "left": 51,
+            "right": 1229,
+            "width": 1178,
+            "height": 816
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__needs",
+          "rect": {
+            "top": 1051,
+            "bottom": 1624,
+            "left": 51,
+            "right": 1229,
+            "width": 1178,
+            "height": 573
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__decisions",
+          "rect": {
+            "top": 1726,
+            "bottom": 3157,
+            "left": 51,
+            "right": 1229,
+            "width": 1178,
+            "height": 1431
+          }
+        },
+        {
+          "className": "pt-home__method",
+          "rect": {
+            "top": 3260,
+            "bottom": 3853,
+            "left": 51,
+            "right": 1229,
+            "width": 1178,
+            "height": 593
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__categories",
+          "rect": {
+            "top": 3955,
+            "bottom": 4549,
+            "left": 51,
+            "right": 1229,
+            "width": 1178,
+            "height": 594
+          }
+        },
+        {
+          "className": "pt-home__technology",
+          "rect": {
+            "top": 4652,
+            "bottom": 5105,
+            "left": 51,
+            "right": 1229,
+            "width": 1178,
+            "height": 453
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__guides",
+          "rect": {
+            "top": 5207,
+            "bottom": 5912,
+            "left": 51,
+            "right": 1229,
+            "width": 1178,
+            "height": 705
+          }
+        },
+        {
+          "className": "pt-home__trust",
+          "rect": {
+            "top": 6015,
+            "bottom": 6234,
+            "left": 51,
+            "right": 1229,
+            "width": 1178,
+            "height": 219
+          }
+        },
+        {
+          "className": "pt-home__closing",
+          "rect": {
+            "top": 6337,
+            "bottom": 6863,
+            "left": 51,
+            "right": 1229,
+            "width": 1178,
+            "height": 526
+          }
+        }
+      ],
+      "sectionOrderValid": true,
+      "headingsInViewport": true,
+      "tapTargetsValid": true,
+      "images": [
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/pet-tech-hero.BltjJCjD_ZWoE8E.webp",
+          "complete": true,
+          "naturalWidth": 1280,
+          "naturalHeight": 853
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.7a31RfAZ_Z16OD6j.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.CsGMUCQz_Z1KouPC.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.DZCeW_6i_Z25tXS4.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/microchip-comparison.BEWlxtG__28Adc6.svg",
+          "complete": true,
+          "naturalWidth": 267,
+          "naturalHeight": 150
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.BVbkNSER_1hLJhj.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 720
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.CpenkRtU_Z17AbUy.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.DQV4jENW_23Ptba.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.ch1MRmM2_ZJYXAl.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        }
+      ],
+      "focus": {
+        "outlineWidth": "3px",
+        "outlineStyle": "solid"
+      },
+      "pageBackground": "rgb(12, 13, 13)"
+    },
+    {
+      "viewport": 1440,
+      "theme": "light",
+      "pass": true,
+      "url": "http://127.0.0.1:4328/",
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "scrollHeight": 7859,
+      "h1Count": 1,
+      "h1": {
+        "top": 264,
+        "bottom": 625,
+        "left": 144,
+        "right": 957,
+        "width": 813,
+        "height": 361
+      },
+      "hero": {
+        "top": 133,
+        "bottom": 949,
+        "left": 58,
+        "right": 1382,
+        "width": 1325,
+        "height": 816
+      },
+      "sections": [
+        {
+          "className": "pt-home__hero",
+          "rect": {
+            "top": 133,
+            "bottom": 949,
+            "left": 58,
+            "right": 1382,
+            "width": 1325,
+            "height": 816
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__needs",
+          "rect": {
+            "top": 1064,
+            "bottom": 1655,
+            "left": 58,
+            "right": 1382,
+            "width": 1325,
+            "height": 591
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__decisions",
+          "rect": {
+            "top": 1770,
+            "bottom": 3197,
+            "left": 58,
+            "right": 1382,
+            "width": 1325,
+            "height": 1428
+          }
+        },
+        {
+          "className": "pt-home__method",
+          "rect": {
+            "top": 3312,
+            "bottom": 3927,
+            "left": 58,
+            "right": 1382,
+            "width": 1325,
+            "height": 615
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__categories",
+          "rect": {
+            "top": 4042,
+            "bottom": 4661,
+            "left": 58,
+            "right": 1382,
+            "width": 1325,
+            "height": 619
+          }
+        },
+        {
+          "className": "pt-home__technology",
+          "rect": {
+            "top": 4776,
+            "bottom": 5269,
+            "left": 58,
+            "right": 1382,
+            "width": 1325,
+            "height": 493
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__guides",
+          "rect": {
+            "top": 5384,
+            "bottom": 6084,
+            "left": 58,
+            "right": 1382,
+            "width": 1325,
+            "height": 699
+          }
+        },
+        {
+          "className": "pt-home__trust",
+          "rect": {
+            "top": 6199,
+            "bottom": 6440,
+            "left": 58,
+            "right": 1382,
+            "width": 1325,
+            "height": 241
+          }
+        },
+        {
+          "className": "pt-home__closing",
+          "rect": {
+            "top": 6555,
+            "bottom": 7121,
+            "left": 58,
+            "right": 1382,
+            "width": 1325,
+            "height": 567
+          }
+        }
+      ],
+      "sectionOrderValid": true,
+      "headingsInViewport": true,
+      "tapTargetsValid": true,
+      "images": [
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/pet-tech-hero.BltjJCjD_ZWoE8E.webp",
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 960
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.7a31RfAZ_Z16OD6j.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.CsGMUCQz_Z1KouPC.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.DZCeW_6i_Z25tXS4.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/microchip-comparison.BEWlxtG__28Adc6.svg",
+          "complete": true,
+          "naturalWidth": 267,
+          "naturalHeight": 150
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.BVbkNSER_1hLJhj.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 720
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.CpenkRtU_Z17AbUy.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.DQV4jENW_23Ptba.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.ch1MRmM2_ZJYXAl.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        }
+      ],
+      "focus": {
+        "outlineWidth": "3px",
+        "outlineStyle": "solid"
+      },
+      "pageBackground": "rgb(245, 246, 243)"
+    },
+    {
+      "viewport": 1440,
+      "theme": "dark",
+      "pass": true,
+      "url": "http://127.0.0.1:4328/",
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "scrollHeight": 7859,
+      "h1Count": 1,
+      "h1": {
+        "top": 264,
+        "bottom": 625,
+        "left": 144,
+        "right": 957,
+        "width": 813,
+        "height": 361
+      },
+      "hero": {
+        "top": 133,
+        "bottom": 949,
+        "left": 58,
+        "right": 1382,
+        "width": 1325,
+        "height": 816
+      },
+      "sections": [
+        {
+          "className": "pt-home__hero",
+          "rect": {
+            "top": 133,
+            "bottom": 949,
+            "left": 58,
+            "right": 1382,
+            "width": 1325,
+            "height": 816
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__needs",
+          "rect": {
+            "top": 1064,
+            "bottom": 1655,
+            "left": 58,
+            "right": 1382,
+            "width": 1325,
+            "height": 591
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__decisions",
+          "rect": {
+            "top": 1770,
+            "bottom": 3197,
+            "left": 58,
+            "right": 1382,
+            "width": 1325,
+            "height": 1428
+          }
+        },
+        {
+          "className": "pt-home__method",
+          "rect": {
+            "top": 3312,
+            "bottom": 3927,
+            "left": 58,
+            "right": 1382,
+            "width": 1325,
+            "height": 615
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__categories",
+          "rect": {
+            "top": 4042,
+            "bottom": 4661,
+            "left": 58,
+            "right": 1382,
+            "width": 1325,
+            "height": 619
+          }
+        },
+        {
+          "className": "pt-home__technology",
+          "rect": {
+            "top": 4776,
+            "bottom": 5269,
+            "left": 58,
+            "right": 1382,
+            "width": 1325,
+            "height": 493
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__guides",
+          "rect": {
+            "top": 5384,
+            "bottom": 6084,
+            "left": 58,
+            "right": 1382,
+            "width": 1325,
+            "height": 699
+          }
+        },
+        {
+          "className": "pt-home__trust",
+          "rect": {
+            "top": 6199,
+            "bottom": 6440,
+            "left": 58,
+            "right": 1382,
+            "width": 1325,
+            "height": 241
+          }
+        },
+        {
+          "className": "pt-home__closing",
+          "rect": {
+            "top": 6555,
+            "bottom": 7121,
+            "left": 58,
+            "right": 1382,
+            "width": 1325,
+            "height": 567
+          }
+        }
+      ],
+      "sectionOrderValid": true,
+      "headingsInViewport": true,
+      "tapTargetsValid": true,
+      "images": [
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/pet-tech-hero.BltjJCjD_ZWoE8E.webp",
+          "complete": true,
+          "naturalWidth": 1440,
+          "naturalHeight": 960
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.7a31RfAZ_Z16OD6j.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.CsGMUCQz_Z1KouPC.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.DZCeW_6i_Z25tXS4.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/microchip-comparison.BEWlxtG__28Adc6.svg",
+          "complete": true,
+          "naturalWidth": 267,
+          "naturalHeight": 150
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.BVbkNSER_1hLJhj.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 720
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.CpenkRtU_Z17AbUy.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.DQV4jENW_23Ptba.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.ch1MRmM2_ZJYXAl.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        }
+      ],
+      "focus": {
+        "outlineWidth": "3px",
+        "outlineStyle": "solid"
+      },
+      "pageBackground": "rgb(12, 13, 13)"
+    },
+    {
+      "viewport": 1600,
+      "theme": "light",
+      "pass": true,
+      "url": "http://127.0.0.1:4328/",
+      "clientWidth": 1600,
+      "scrollWidth": 1600,
+      "scrollHeight": 8231,
+      "h1Count": 1,
+      "h1": {
+        "top": 261,
+        "bottom": 661,
+        "left": 158,
+        "right": 957,
+        "width": 799,
+        "height": 400
+      },
+      "hero": {
+        "top": 133,
+        "bottom": 981,
+        "left": 64,
+        "right": 1536,
+        "width": 1472,
+        "height": 848
+      },
+      "sections": [
+        {
+          "className": "pt-home__hero",
+          "rect": {
+            "top": 133,
+            "bottom": 981,
+            "left": 64,
+            "right": 1536,
+            "width": 1472,
+            "height": 848
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__needs",
+          "rect": {
+            "top": 1109,
+            "bottom": 1714,
+            "left": 64,
+            "right": 1536,
+            "width": 1472,
+            "height": 605
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__decisions",
+          "rect": {
+            "top": 1842,
+            "bottom": 3338,
+            "left": 64,
+            "right": 1536,
+            "width": 1472,
+            "height": 1496
+          }
+        },
+        {
+          "className": "pt-home__method",
+          "rect": {
+            "top": 3466,
+            "bottom": 4125,
+            "left": 64,
+            "right": 1536,
+            "width": 1472,
+            "height": 659
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__categories",
+          "rect": {
+            "top": 4253,
+            "bottom": 4882,
+            "left": 64,
+            "right": 1536,
+            "width": 1472,
+            "height": 630
+          }
+        },
+        {
+          "className": "pt-home__technology",
+          "rect": {
+            "top": 5010,
+            "bottom": 5558,
+            "left": 64,
+            "right": 1536,
+            "width": 1472,
+            "height": 548
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__guides",
+          "rect": {
+            "top": 5686,
+            "bottom": 6369,
+            "left": 64,
+            "right": 1536,
+            "width": 1472,
+            "height": 683
+          }
+        },
+        {
+          "className": "pt-home__trust",
+          "rect": {
+            "top": 6497,
+            "bottom": 6751,
+            "left": 64,
+            "right": 1536,
+            "width": 1472,
+            "height": 254
+          }
+        },
+        {
+          "className": "pt-home__closing",
+          "rect": {
+            "top": 6879,
+            "bottom": 7480,
+            "left": 64,
+            "right": 1536,
+            "width": 1472,
+            "height": 602
+          }
+        }
+      ],
+      "sectionOrderValid": true,
+      "headingsInViewport": true,
+      "tapTargetsValid": true,
+      "images": [
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/pet-tech-hero.BltjJCjD_ZWoE8E.webp",
+          "complete": true,
+          "naturalWidth": 1600,
+          "naturalHeight": 1066
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.7a31RfAZ_Z16OD6j.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.CsGMUCQz_Z1KouPC.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.DZCeW_6i_Z25tXS4.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/microchip-comparison.BEWlxtG__28Adc6.svg",
+          "complete": true,
+          "naturalWidth": 267,
+          "naturalHeight": 150
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.BVbkNSER_1hLJhj.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 720
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.CpenkRtU_Z17AbUy.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.DQV4jENW_23Ptba.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.ch1MRmM2_ZJYXAl.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        }
+      ],
+      "focus": {
+        "outlineWidth": "3px",
+        "outlineStyle": "solid"
+      },
+      "pageBackground": "rgb(245, 246, 243)"
+    },
+    {
+      "viewport": 1600,
+      "theme": "dark",
+      "pass": true,
+      "url": "http://127.0.0.1:4328/",
+      "clientWidth": 1600,
+      "scrollWidth": 1600,
+      "scrollHeight": 8231,
+      "h1Count": 1,
+      "h1": {
+        "top": 261,
+        "bottom": 661,
+        "left": 158,
+        "right": 957,
+        "width": 799,
+        "height": 400
+      },
+      "hero": {
+        "top": 133,
+        "bottom": 981,
+        "left": 64,
+        "right": 1536,
+        "width": 1472,
+        "height": 848
+      },
+      "sections": [
+        {
+          "className": "pt-home__hero",
+          "rect": {
+            "top": 133,
+            "bottom": 981,
+            "left": 64,
+            "right": 1536,
+            "width": 1472,
+            "height": 848
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__needs",
+          "rect": {
+            "top": 1109,
+            "bottom": 1714,
+            "left": 64,
+            "right": 1536,
+            "width": 1472,
+            "height": 605
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__decisions",
+          "rect": {
+            "top": 1842,
+            "bottom": 3338,
+            "left": 64,
+            "right": 1536,
+            "width": 1472,
+            "height": 1496
+          }
+        },
+        {
+          "className": "pt-home__method",
+          "rect": {
+            "top": 3466,
+            "bottom": 4125,
+            "left": 64,
+            "right": 1536,
+            "width": 1472,
+            "height": 659
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__categories",
+          "rect": {
+            "top": 4253,
+            "bottom": 4882,
+            "left": 64,
+            "right": 1536,
+            "width": 1472,
+            "height": 630
+          }
+        },
+        {
+          "className": "pt-home__technology",
+          "rect": {
+            "top": 5010,
+            "bottom": 5558,
+            "left": 64,
+            "right": 1536,
+            "width": 1472,
+            "height": 548
+          }
+        },
+        {
+          "className": "pt-home__section pt-home__guides",
+          "rect": {
+            "top": 5686,
+            "bottom": 6369,
+            "left": 64,
+            "right": 1536,
+            "width": 1472,
+            "height": 683
+          }
+        },
+        {
+          "className": "pt-home__trust",
+          "rect": {
+            "top": 6497,
+            "bottom": 6751,
+            "left": 64,
+            "right": 1536,
+            "width": 1472,
+            "height": 254
+          }
+        },
+        {
+          "className": "pt-home__closing",
+          "rect": {
+            "top": 6879,
+            "bottom": 7480,
+            "left": 64,
+            "right": 1536,
+            "width": 1472,
+            "height": 602
+          }
+        }
+      ],
+      "sectionOrderValid": true,
+      "headingsInViewport": true,
+      "tapTargetsValid": true,
+      "images": [
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/pet-tech-hero.BltjJCjD_ZWoE8E.webp",
+          "complete": true,
+          "naturalWidth": 1600,
+          "naturalHeight": 1066
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.7a31RfAZ_Z16OD6j.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.CsGMUCQz_Z1KouPC.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.DZCeW_6i_Z25tXS4.webp",
+          "complete": true,
+          "naturalWidth": 720,
+          "naturalHeight": 480
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/microchip-comparison.BEWlxtG__28Adc6.svg",
+          "complete": true,
+          "naturalWidth": 267,
+          "naturalHeight": 150
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/comparison.BVbkNSER_1hLJhj.webp",
+          "complete": true,
+          "naturalWidth": 960,
+          "naturalHeight": 720
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.CpenkRtU_Z17AbUy.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.DQV4jENW_23Ptba.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        },
+        {
+          "currentSrc": "http://127.0.0.1:4328/_astro/hero.ch1MRmM2_ZJYXAl.webp",
+          "complete": true,
+          "naturalWidth": 560,
+          "naturalHeight": 360
+        }
+      ],
+      "focus": {
+        "outlineWidth": "3px",
+        "outlineStyle": "solid"
+      },
+      "pageBackground": "rgb(12, 13, 13)"
+    }
+  ]
+}

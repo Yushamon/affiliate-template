@@ -34,6 +34,9 @@ export type HomeProductCard = {
   title: string;
   manufacturer: string;
   image: HomeImage;
+  useCase?: string;
+  constraint?: string;
+  category?: HomeLink;
 };
 
 export type HomeUseCase = {
@@ -78,4 +81,5 @@ export type HomepageModel = {
   }>;
   methodologyAction: HomeLink;
   useCases: HomeUseCase[];
+  transparency: string;
 };

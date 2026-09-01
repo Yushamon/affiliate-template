@@ -2,6 +2,7 @@ import type { CollectionEntry } from "astro:content";
 import type { HomeEditorialCard, HomeImage, HomepageModel } from "@affiliate-core/home/model";
 import petTechHeroImage from "../../assets/images/project/pfotentechnik/pet-tech-hero.webp";
 import guideImage from "../../assets/images/project/pfotentechnik/guide.webp";
+import { resolveProductMedia } from "../comparison/mediaResolver.mjs";
 
 type ProductEntry = CollectionEntry<"products">;
 type ComparisonEntry = CollectionEntry<"comparisons">;
@@ -32,6 +33,7 @@ type HomeConfig = {
 
 type BuildInput = {
   home: HomeConfig;
+  transparency: string;
   products: ProductEntry[];
   comparisons: ComparisonEntry[];
   pages: PageEntry[];
@@ -150,6 +152,7 @@ const sortPages = (pages: PageEntry[]) =>
 
 export function buildHomepageModel({
   home,
+  transparency,
   products,
   comparisons,
   pages
@@ -324,28 +327,38 @@ export function buildHomepageModel({
         title: product.data.title,
         manufacturer: product.data.manufacturer.name,
         image:
-          product.data.images.thumbnail ??
-          product.data.images.hero
+          resolveProductMedia(product.data.images) ??
+          product.data.images.hero,
+        useCase: product.data.useCase,
+        constraint:
+          product.data.decision.attention[0] ??
+          product.data.weaknesses[0],
+        category: product.data.category.path
+          ? {
+              label: product.data.category.label,
+              href: product.data.category.path
+            }
+          : undefined
       })
     ),
     methods: [
       {
         number: "01",
-        title: "Quellen prüfen",
+        title: "Passung prüfen",
         text:
-          "Herstellerseiten, Bedienungsanleitungen und dokumentierte technische Angaben bilden die Grundlage."
+          "Tier, Haushalt und Nutzung bestimmen, wann eine Funktion wirklich passt."
       },
       {
         number: "02",
-        title: "Unterschiede einordnen",
+        title: "Grenzen benennen",
         text:
-          "Funktionen werden nach Einsatzzweck, Tier und Alltagssituation bewertet."
+          "Ausfälle, Abhängigkeiten und Ausschlüsse bleiben Teil der Empfehlung."
       },
       {
         number: "03",
-        title: "Grenzen benennen",
+        title: "Evidenz trennen",
         text:
-          "Fehlende oder widersprüchliche Angaben werden sichtbar gemacht statt geraten."
+          "Herstellerangaben, externe Erfahrungen und redaktionelle Schlüsse werden getrennt."
       },
       {
         number: "04",
@@ -398,6 +411,7 @@ export function buildHomepageModel({
         href: "/automatische-katzentoiletten/",
         icon: "litter"
       }
-    ]
+    ],
+    transparency
   };
 }

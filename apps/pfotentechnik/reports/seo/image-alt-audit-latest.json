@@ -1,11 +1,11 @@
 {
   "version": "24.1.2",
-  "generatedAt": "2026-09-01T06:20:47.566Z",
-  "mode": "source-and-dist",
+  "generatedAt": "2026-09-01T07:38:29.905Z",
+  "mode": "source-only",
   "sourceFilesScanned": 133,
   "distAvailable": true,
-  "distFilesScanned": 367,
-  "rawDistFindings": 375,
+  "distFilesScanned": 0,
+  "rawDistFindings": 0,
   "findings": [
     {
       "scope": "source",
@@ -15,24 +15,15 @@
       "severity": "info",
       "code": "IMAGE_ALT_EMPTY_DECORATIVE",
       "message": "Leerer Alt-Text. Das Bild wird als dekorativ oder redundant behandelt."
-    },
-    {
-      "scope": "dist",
-      "file": "apps/pfotentechnik/dist/produkt/aqara-smart-pet-feeder-c1/index.html",
-      "line": 4,
-      "tag": "<img class=\"pg29-lightbox__thumb-image\" src=\"/_astro/hero.DSDz9MJc_Z202SyK.webp\" width=\"1600\" height=\"900\" alt=\"\" loading=\"lazy\" decoding=\"async\">",
-      "severity": "info",
-      "code": "IMAGE_ALT_EMPTY_DECORATIVE",
-      "message": "Leerer Alt-Text. Das Bild wird als dekorativ oder redundant behandelt."
     }
   ],
   "summary": {
-    "total": 2,
+    "total": 1,
     "errors": 0,
-    "info": 2,
+    "info": 1,
     "source": 1,
-    "distRaw": 375,
-    "distUnique": 1,
+    "distRaw": 0,
+    "distUnique": 0,
     "missing": 0
   }
 }
