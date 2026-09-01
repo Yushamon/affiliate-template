@@ -121,8 +121,10 @@ const readingTimeMinutes = Math.max(1, Math.ceil(plainBody.split(" ").filter(Boo
           <EditorialEvidence profile={assembledPage.informationGain} />
           {page.data.healthBridge && <HealthBridge {...page.data.healthBridge} />}
         </Fragment>
+        <Fragment slot="faq">
+          <FAQ items={assembledPage.faq} />
+        </Fragment>
       </GuideExperience>
-      <FAQ items={assembledPage.faq} />
       <RelatedArticles items={relatedItems} />
     </>
   ) : null}

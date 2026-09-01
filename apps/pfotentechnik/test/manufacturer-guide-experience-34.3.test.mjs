@@ -42,12 +42,26 @@ test("Guide 34.3 derives four compositions from existing metadata", () => {
 test("Guide answers early, preserves long-form content and uses contextual discovery", () => {
   assert.match(guideComponent, /pt-guide__answer/);
   assert.match(guideComponent, /pt-guide__summary/);
-  assert.match(guideComponent, /Ausführlicher Ratgeber/);
+  assert.match(guideComponent, /<section id="guide-main" class="pt-guide__longform"/);
   assert.match(guideRoute, /<Content \/>/);
-  assert.match(guideRoute, /<FAQ items=\{assembledPage\.faq\}/);
+  assert.match(guideRoute, /<Fragment slot="faq">[\s\S]*?<FAQ items=\{assembledPage\.faq\}/);
   assert.match(guideModel, /kind === "buying" \? productCandidates/);
   assert.match(guideModel, /getBestComparison/);
   assert.doesNotMatch(`${guideRoute}\n${guideComponent}`, /Passende Kaufberatung öffnen|Geeignete Modelle gegenüberstellen|futterautomat-richtig-reinigen/);
+});
+
+test("Guide primary article is open, reader-facing and server-rendered", () => {
+  assert.match(guideComponent, /<section id="guide-main" class="pt-guide__longform"/);
+  assert.match(guideComponent, /<article class="pt-guide__prose article-content">\s*<slot \/>/);
+  assert.doesNotMatch(guideComponent, /<details[^>]*id="guide-main"|<details[^>]*>[\s\S]*?<slot \/>/);
+  assert.doesNotMatch(guideComponent, /Vollständigen Ratgeber(?: mit Praxisdetails)? öffnen/i);
+  assert.doesNotMatch(guideComponent, /Nur wenn es die Frage beantwortet|eingebetteter Katalog|serverseitig verfügbar/i);
+  assert.match(guideComponent, /Passende Modelle für diesen Entscheidungsfall/);
+  assert.match(guideComponent, /<strong>Interessant, wenn:<\/strong> \{product\.role\}/);
+  assert.match(guideRoute, /<AutoLinkContent[\s\S]*?<Content \/>[\s\S]*?<Fragment slot="after-content">/);
+  assert.doesNotMatch(guideComponent, /<script|client:/);
+  assert.equal((guideComponent.match(/<h1>/g) ?? []).length, 1);
+  assert.match(guideComponent, /<h2 id="guide-products-title">[\s\S]*?<h3><a href=\{product\.href\}>/);
 });
 
 test("Guide media is optional and never replaced by a generic rendered hero", () => {
@@ -64,7 +78,7 @@ test("34.3 stays server-rendered, token-based and mobile-safe", () => {
     assert.match(source, /focus-visible/);
   }
   assert.match(guideComponent, /overflow-x: auto/);
-  assert.match(guideComponent, /<details id="guide-main"/);
+  assert.doesNotMatch(guideComponent, /<details id="guide-main"/);
   assert.match(manufacturerComponent, /Quellen und Datengrundlage/);
 });
 

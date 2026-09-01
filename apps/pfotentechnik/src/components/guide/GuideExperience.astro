@@ -39,37 +39,35 @@ const { model, headings, author, publishedAt, updatedAt, readingTimeMinutes } = 
     </section>
   )}
 
+  <section id="guide-main" class="pt-guide__longform" aria-label="Ratgeber">
+    <div class="pt-guide__reading">
+      {headings.length > 1 && <aside class="pt-guide__toc"><TableOfContents headings={headings} /></aside>}
+      <article class="pt-guide__prose article-content">
+        <slot />
+      </article>
+    </div>
+  </section>
+
   {model.selectedProducts.length > 0 && (
     <section class="pt-guide__products" aria-labelledby="guide-products-title">
-      <header><p class="pt-guide__eyebrow">Nur wenn es die Frage beantwortet</p><h2 id="guide-products-title">Passende Modelle für diesen Entscheidungsfall.</h2><p>Die Auswahl stammt aus Produktdaten und aktuellem Kontext; sie ist kein eingebetteter Katalog.</p></header>
+      <header><p class="pt-guide__eyebrow">Passende Modelle</p><h2 id="guide-products-title">Passende Modelle für diesen Entscheidungsfall</h2></header>
       <div>
         {model.selectedProducts.map((product) => (
           <article>
             <a class="pt-guide__product-media" href={product.href} aria-label={`${product.title} ansehen`}>
               {product.image ? <OptimizedImage src={product.image.src} alt={product.image.alt ?? product.title} width={280} height={210} layout="constrained" fit="contain" /> : <span role="img" aria-label="Produktbild nicht verfügbar">Bild nicht verfügbar</span>}
             </a>
-            <div><small>{product.manufacturer} · Interessant, wenn: {product.role}</small><h3><a href={product.href}>{product.title}</a></h3><p>{product.recommendation}</p><a href={product.href}>Produktcheck lesen <span aria-hidden="true">→</span></a></div>
-            <ProductScore value={product.score} scale={100} variant="ring-compact" description="Redaktioneller ProductScore" />
+            <div><small>{product.manufacturer}</small><h3><a href={product.href}>{product.title}</a></h3><p class="pt-guide__product-fit"><strong>Interessant, wenn:</strong> {product.role}</p><p class="pt-guide__product-note">{product.recommendation}</p><a href={product.href}>Produktcheck lesen <span aria-hidden="true">→</span></a></div>
+            <ProductScore value={product.score} scale={100} variant="ring-compact" description="PfotenTechnik-Score" />
           </article>
         ))}
       </div>
     </section>
   )}
 
-  <details id="guide-main" class="pt-guide__longform">
-    <summary><span>Ausführlicher Ratgeber</span><strong>Vollständigen Ratgeber mit Praxisdetails öffnen</strong></summary>
-    <div class="pt-guide__reading">
-      {headings.length > 1 && <aside class="pt-guide__toc"><TableOfContents headings={headings} /></aside>}
-      <article class="pt-guide__prose article-content">
-        <slot />
-        <slot name="after-content" />
-      </article>
-    </div>
-  </details>
-
   {model.supportingBlocks.length > 0 && (
     <section class="pt-guide__depth" aria-labelledby="guide-depth-title">
-      <header><p class="pt-guide__eyebrow">Sekundäre Tiefe</p><h2 id="guide-depth-title">Zusätzliche Entscheidungshilfen</h2><p>Die Kernantwort steht oben. Ergänzende strukturierte Inhalte bleiben serverseitig verfügbar und lassen sich gezielt öffnen.</p></header>
+      <header><p class="pt-guide__eyebrow">Mehr zum Thema</p><h2 id="guide-depth-title">Zusätzliche Entscheidungshilfen</h2><p>Öffne die Punkte, bei denen du mehr Details brauchst.</p></header>
       {model.supportingBlocks.map((block) => (
         <details>
           <summary>{block.title}</summary>
@@ -81,9 +79,12 @@ const { model, headings, author, publishedAt, updatedAt, readingTimeMinutes } = 
     </section>
   )}
 
+  <slot name="after-content" />
+  <slot name="faq" />
+
   {model.nextSteps.length > 0 && (
     <section class="pt-guide__next" aria-labelledby="guide-next-title">
-      <header><p class="pt-guide__eyebrow">Kontext bewahren</p><h2 id="guide-next-title">Was ist jetzt der sinnvolle nächste Schritt?</h2><p>Diese Wege bleiben beim bereits geklärten Thema und führen gezielt tiefer.</p></header>
+      <header><p class="pt-guide__eyebrow">Nächste Schritte</p><h2 id="guide-next-title">Was ist jetzt der sinnvolle nächste Schritt?</h2><p>Nutze den Weg, der am besten zu deiner nächsten Frage passt.</p></header>
       <nav aria-label="Kontextuelle nächste Schritte">
         {model.nextSteps.map((step, index) => (
           <a href={step.href}><span>{String(index + 1).padStart(2, "0")}</span><div><small>{step.eyebrow}</small><strong>{step.title}</strong><p>{step.text}</p></div><b>{step.label} <span aria-hidden="true">→</span></b></a>
@@ -128,14 +129,8 @@ const { model, headings, author, publishedAt, updatedAt, readingTimeMinutes } = 
   .pt-guide__products h3 a { color: inherit; text-decoration: none; }
   .pt-guide__products article p { max-width: 62ch; margin: 0 0 .5rem; color: var(--pt-color-text-muted); line-height: 1.5; }
   .pt-guide__products article div > a { color: var(--pt-color-primary); font-weight: 800; }
-  .pt-guide__longform { min-width: 0; border-block: 1px solid var(--pt-color-border); }
-  .pt-guide__longform > summary { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1rem; align-items: center; padding: 1.25rem 0; cursor: pointer; list-style: none; }
-  .pt-guide__longform > summary::-webkit-details-marker { display: none; }
-  .pt-guide__longform > summary span { color: var(--pt-color-primary); font-size: .75rem; font-weight: 850; letter-spacing: .09em; text-transform: uppercase; }
-  .pt-guide__longform > summary strong { font-size: clamp(1rem, 2vw, 1.2rem); }
-  .pt-guide__longform[open] > summary { border-bottom: 1px solid var(--pt-color-border); }
+  .pt-guide__longform { min-width: 0; padding-top: clamp(2rem, 5vw, 4rem); border-top: 1px solid var(--pt-color-border); }
   .pt-guide__reading { display: grid; grid-template-columns: minmax(12rem, 17rem) minmax(0, 48rem); gap: clamp(2rem, 6vw, 5rem); align-items: start; min-width: 0; }
-  .pt-guide__longform[open] .pt-guide__reading { padding-top: clamp(2rem, 5vw, 4rem); }
   .pt-guide__toc { position: sticky; top: 6rem; min-width: 0; }
   .pt-guide__prose { min-width: 0; color: var(--pt-color-text); }
   .pt-guide__prose :global(> :first-child) { margin-top: 0; }
@@ -175,11 +170,10 @@ const { model, headings, author, publishedAt, updatedAt, readingTimeMinutes } = 
   @media (max-width: 600px) {
     .pt-guide { gap: 3.5rem; }
     .pt-guide__summary { grid-template-columns: 1fr; }
-    .pt-guide__longform > summary { grid-template-columns: 1fr; gap: .35rem; }
     .pt-guide__products article { grid-template-columns: 6rem minmax(0, 1fr); gap: .9rem; }
     .pt-guide__product-media { width: 6rem; height: 5rem; }
     .pt-guide__products article > :global(.pt-score) { grid-column: 1 / -1; }
-    .pt-guide__products article p { display: none; }
+    .pt-guide__products article .pt-guide__product-note { display: none; }
     .pt-guide__next nav > a { grid-template-columns: 2rem minmax(0, 1fr); }
     .pt-guide__next nav b { grid-column: 2; white-space: normal; }
     .pt-guide__depth dl div { grid-template-columns: 1fr; gap: .4rem; }
