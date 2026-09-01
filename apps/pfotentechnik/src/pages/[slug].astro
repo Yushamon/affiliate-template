@@ -20,6 +20,8 @@ import EditorialEvidence from "../components/EditorialEvidence.astro";
 import EditorialTransparency from "../components/EditorialTransparency.astro";
 import { projectConfig, siteMeta } from "../project.config";
 import { assembleContentPage } from "../domain/contentPlatform";
+import { buildCategoryViewModel } from "../domain/category/buildCategoryViewModel";
+import CategoryExperience from "../components/category/CategoryExperience.astro";
 import {
   getDecisionProductRecommendations,
   getDecisionRule,
@@ -84,6 +86,7 @@ const internalLinkDefinitions = getInternalLinkDefinitions({
 });
 const sourceContexts = getSourceContexts(page.data);
 const assembledPage = assembleContentPage(page.data);
+const categoryModel = buildCategoryViewModel({ page, pages, products, comparisons });
 const productBySlug = new Map(
   products.map((product) => [product.data.slug, product]),
 );
@@ -338,8 +341,18 @@ const relatedItems = relatedEntries.map((entry) => ({
   categoryLabel={assembledPage.categoryLabel}
   breadcrumbs={breadcrumbs}
   schemaType="article"
+  mainClass={categoryModel ? "container--category-34-2" : undefined}
 >
   <Breadcrumbs items={breadcrumbs} />
+
+  {categoryModel ? (
+    <CategoryExperience
+      model={categoryModel}
+      authorName={author.name}
+      updatedAt={updatedAt}
+    />
+  ) : (
+    <>
 
   <header class="article-header">
     <span class="article-category">{assembledPage.categoryLabel}</span>
@@ -696,6 +709,8 @@ const relatedItems = relatedEntries.map((entry) => ({
 )}
 
   <RelatedArticles items={relatedItems} />
+    </>
+  )}
 </ProjectLayout>
 
 <style>

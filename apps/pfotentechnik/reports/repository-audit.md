@@ -1,32 +1,34 @@
 # Pfotentechnik Repository Audit
 
-Erstellt: 2026-08-16T13:03:38.310Z
+Erstellt: 2026-09-01T08:28:47.500Z
 
 ## Zusammenfassung
 
-- Routen: 240
+- Routen: 266
 - Fehler: 0
-- Warnungen: 9
+- Warnungen: 11
 - Hinweise: 54
 
 ## Content-Bestand
 
 - pages: 82
-- products: 82
-- manufacturers: 26
+- products: 101
+- manufacturers: 32
 - comparisons: 28
 
 ## Befunde
 
+- **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hund-trinkt-ploetzlich-viel/ (`src/content/pages/hund-trinkt-ploetzlich-viel.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1509 Zeilen (`src/components/advisor/PetAdvisor.astro`)
 - **WARNING · maintainability**: Sehr große Datei mit 1012 Zeilen (`src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1685 Zeilen (`src/content/pages/futterautomat-richtig-reinigen.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1494 Zeilen (`src/content/pages/katze-frisst-nicht.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1079 Zeilen (`src/content/pages/katze-trinkt-viel.md`)
+- **WARNING · maintainability**: Sehr große Datei mit 1008 Zeilen (`src/content/pages/smarte-futterautomaten.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1016 Zeilen (`src/content/pages/trockenfutter-oder-nassfutter-katze.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1037 Zeilen (`src/content/pages/wie-gross-sollte-ein-futterautomat-sein.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1198 Zeilen (`src/content/pages/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt.md`)
-- **WARNING · maintainability**: Sehr große Datei mit 1055 Zeilen (`src/lib/seo/topical-authority/loadTopicalAuthority.ts`)
+- **WARNING · maintainability**: Sehr große Datei mit 1124 Zeilen (`src/lib/seo/topical-authority/loadTopicalAuthority.ts`)
 - **INFO · css**: Selektor 3× definiert: .brand-mark (`src/styles/pfotentechnik-design-system.css`)
 - **INFO · css**: Selektor 3× definiert: .brand-name (`src/styles/pfotentechnik-design-system.css`)
 - **INFO · css**: Selektor 6× definiert: .main-nav-v2 (`src/styles/pfotentechnik-design-system.css`)

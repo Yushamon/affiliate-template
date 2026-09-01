@@ -1,13 +1,13 @@
 # Internal-Link Health Audit 4.0.1
 
-Erstellt: 2026-08-21T10:44:29.304Z
+Erstellt: 2026-09-01T08:28:29.181Z
 
 ## Zusammenfassung
 
-- Dokumente: 241
+- Dokumente: 243
 - Legacy-Fehler: 0
-- Build-verifizierte Laufzeitfehler: 1
-- Effektive Strict-Fehler: 1
+- Build-verifizierte Laufzeitfehler: 0
+- Effektive Strict-Fehler: 0
 - Effektive Warnungen: 9
 - Erkannte False Positives: 0
 
@@ -20,7 +20,7 @@ Erstellt: 2026-08-21T10:44:29.304Z
 
 ## Verifizierte Laufzeitfehler
 
-- **ERROR · MISSING_TARGET · verified-runtime-error:**  — Direkt im gebauten HTML durch den Linkziel-Audit bestätigt.
+Keine Befunde.
 
 ## Architekturfehler
 

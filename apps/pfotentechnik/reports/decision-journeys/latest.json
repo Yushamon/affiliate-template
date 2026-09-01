@@ -1,8 +1,8 @@
 {
   "version": "2.0.0",
-  "generatedAt": "2026-08-21T10:44:26.783Z",
+  "generatedAt": "2026-09-01T08:28:27.169Z",
   "summary": {
-    "documents": 176,
+    "documents": 178,
     "technicalErrors": 0,
     "editorialWarnings": 137
   },
@@ -3158,6 +3158,31 @@
       "file": "src/content/products/furbo-360-hundekamera.md"
     },
     {
+      "route": "/produkt/furbo-360-katzenkamera/",
+      "type": "product",
+      "cluster": "haustierkameras",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-haustierkameras/",
+          "kind": "Vergleich",
+          "label": "Haustierkameras im Vergleich vergleichen"
+        },
+        {
+          "href": "/haustierkameras/",
+          "kind": "Ratgeber",
+          "label": "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten"
+        },
+        {
+          "href": "/produkt/enabot-ebo-air-2/",
+          "kind": "Produkt",
+          "label": "Enabot EBO Air 2 im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/furbo-360-katzenkamera.md"
+    },
+    {
       "route": "/produkt/furbo-mini-360/",
       "type": "product",
       "cluster": "haustierkameras",
@@ -3981,6 +4006,31 @@
         }
       ],
       "file": "src/content/products/petkit-puramax-2.md"
+    },
+    {
+      "route": "/produkt/petkit-purobot-crystal-duo/",
+      "type": "product",
+      "cluster": "automatische-katzentoiletten",
+      "stage": "decision",
+      "source": "frontmatter",
+      "steps": [
+        {
+          "href": "/vergleiche/beste-automatische-katzentoiletten/",
+          "kind": "Vergleich",
+          "label": "Automatische Katzentoiletten im Vergleich vergleichen"
+        },
+        {
+          "href": "/automatische-katzentoiletten/",
+          "kind": "Ratgeber",
+          "label": "Automatische Katzentoiletten sicher auswählen"
+        },
+        {
+          "href": "/produkt/devoko-90l-automatisches-katzenklo/",
+          "kind": "Produkt",
+          "label": "Devoko 90L Automatisches Katzenklo im Detail prüfen"
+        }
+      ],
+      "file": "src/content/products/petkit-purobot-crystal-duo.md"
     },
     {
       "route": "/produkt/petkit-purobot-max-3/",

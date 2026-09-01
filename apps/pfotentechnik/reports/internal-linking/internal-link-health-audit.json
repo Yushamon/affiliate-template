@@ -1,27 +1,25 @@
 {
   "version": "4.0.1",
-  "generatedAt": "2026-08-21T10:44:29.304Z",
+  "generatedAt": "2026-09-01T08:28:29.181Z",
   "strict": true,
   "inputs": {
     "legacyVersion": "3.0.3",
     "targetAuditVersion": "2.0.2",
-    "builtRoutes": 362
+    "builtRoutes": 367
   },
   "summary": {
-    "documents": 241,
+    "documents": 243,
     "legacyErrors": 0,
     "legacyWarnings": 9,
-    "runtimeErrors": 1,
-    "effectiveErrors": 1,
+    "runtimeErrors": 0,
+    "effectiveErrors": 0,
     "effectiveWarnings": 9,
     "falsePositives": 0
   },
   "classifications": {
-    "advisory": 20,
-    "verified-runtime-error": 1
+    "advisory": 20
   },
   "effectiveSeverities": {
-    "error": 1,
     "info": 11,
     "warning": 9
   },
@@ -291,21 +289,6 @@
       "effectiveSeverity": "info",
       "classification": "advisory",
       "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
-    },
-    {
-      "severity": "error",
-      "code": "MISSING_TARGET",
-      "sourceFile": "apps/pfotentechnik/dist/produkt/feelneedy-fn-w18-8l-katzenbrunnen/index.html",
-      "sourceRoute": "/produkt/feelneedy-fn-w18-8l-katzenbrunnen/",
-      "originalTarget": "/hersteller/feelneedy/",
-      "normalizedTarget": "/hersteller/feelneedy/",
-      "finalTarget": "/hersteller/feelneedy/",
-      "reason": "Internes Ziel ist nicht im Build-Routeninventar vorhanden.",
-      "recommendation": "Link korrigieren oder fehlende Route wiederherstellen.",
-      "originalSeverity": "error",
-      "effectiveSeverity": "error",
-      "classification": "verified-runtime-error",
-      "rationale": "Direkt im gebauten HTML durch den Linkziel-Audit bestätigt."
     }
   ]
 }
