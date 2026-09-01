@@ -1,0 +1,152 @@
+---
+import ProjectLayout from "./ProjectLayout.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  canonical: string;
+  projectConfig: { projectName: string };
+  updatedAt?: string;
+}
+
+const { title, description, canonical, projectConfig, updatedAt } = Astro.props;
+const formattedUpdatedAt = updatedAt
+  ? new Intl.DateTimeFormat("de-DE", {
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
+    }).format(new Date(`${updatedAt}T00:00:00`))
+  : null;
+---
+
+<ProjectLayout
+  title={`${title} | ${projectConfig.projectName}`}
+  description={description}
+  canonical={canonical}
+  updatedAt={updatedAt}
+  schemaType="webpage"
+  includeBreadcrumbSchema={false}
+>
+  <div class="pt-legal-page">
+    <header class="pt-legal-header">
+      <p class="pt-legal-eyebrow">{projectConfig.projectName}</p>
+      <h1>{title}</h1>
+      <p class="pt-legal-lead">{description}</p>
+      {formattedUpdatedAt && (
+        <p class="pt-legal-updated">
+          Stand: <time datetime={updatedAt}>{formattedUpdatedAt}</time>
+        </p>
+      )}
+    </header>
+
+    <article class="pt-legal-reading">
+      <slot />
+    </article>
+  </div>
+</ProjectLayout>
+
+<style is:global>
+  .pt-legal-page {
+    width: min(100%, var(--pt-content-narrow));
+    margin-inline: auto;
+    padding-block: clamp(2rem, 6vw, 5rem) clamp(4rem, 8vw, 7rem);
+    color: var(--pt-theme-text-soft);
+  }
+
+  .pt-legal-header {
+    padding-bottom: clamp(1.75rem, 4vw, 3rem);
+    border-bottom: 1px solid var(--pt-theme-border);
+  }
+
+  .pt-legal-eyebrow {
+    margin: 0 0 0.75rem;
+    color: var(--pt-theme-accent-text);
+    font-size: var(--pt-font-size-xs);
+    font-weight: var(--pt-font-weight-bold);
+    letter-spacing: var(--pt-letter-spacing-label);
+    text-transform: uppercase;
+  }
+
+  .pt-legal-header h1 {
+    margin: 0;
+    color: var(--pt-theme-text);
+    font-size: clamp(2.25rem, 7vw, 4.25rem);
+    line-height: var(--pt-line-height-tight);
+    letter-spacing: var(--pt-letter-spacing-tight);
+  }
+
+  .pt-legal-lead {
+    max-width: 62ch;
+    margin: 1rem 0 0;
+    font-size: var(--pt-font-size-lg);
+    line-height: var(--pt-line-height-body);
+  }
+
+  .pt-legal-updated {
+    margin: 1rem 0 0;
+    color: var(--pt-theme-text-muted);
+    font-size: var(--pt-font-size-sm);
+  }
+
+  .pt-legal-reading {
+    padding-top: clamp(2rem, 5vw, 3.5rem);
+    font-size: var(--pt-font-size-md);
+    line-height: var(--pt-line-height-relaxed);
+  }
+
+  .pt-legal-reading :is(h2, h3) {
+    color: var(--pt-theme-text);
+    line-height: var(--pt-line-height-heading);
+    letter-spacing: var(--pt-letter-spacing-heading);
+  }
+
+  .pt-legal-reading h2 {
+    margin: 2.75rem 0 0.75rem;
+    font-size: clamp(1.45rem, 4vw, 2rem);
+  }
+
+  .pt-legal-reading h3 {
+    margin: 2rem 0 0.6rem;
+    font-size: var(--pt-font-size-xl);
+  }
+
+  .pt-legal-reading :is(p, ul, ol) {
+    margin-block: 0.85rem;
+  }
+
+  .pt-legal-reading :is(ul, ol) {
+    padding-inline-start: 1.35rem;
+  }
+
+  .pt-legal-reading li + li {
+    margin-top: 0.45rem;
+  }
+
+  .pt-legal-reading a {
+    color: var(--pt-theme-accent-text);
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.18em;
+  }
+
+  .pt-legal-reading a:focus-visible {
+    border-radius: var(--pt-radius-xs);
+    outline: none;
+    box-shadow: var(--pt-focus-ring);
+  }
+
+  .pt-legal-reading :is(table, pre, blockquote) {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  @media (max-width: 40rem) {
+    .pt-legal-page {
+      padding-top: 1.5rem;
+    }
+
+    .pt-legal-lead,
+    .pt-legal-reading {
+      font-size: var(--pt-font-size-base);
+    }
+  }
+</style>

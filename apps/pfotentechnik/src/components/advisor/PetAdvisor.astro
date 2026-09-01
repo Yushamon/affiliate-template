@@ -1039,7 +1039,7 @@ const guideData = advisorGuides.map(
   .eyebrow,
   .section-heading p {
     margin: 0 0 8px;
-    color: #2e7d32;
+    color: var(--pt-theme-accent-text);
     font-size: 0.8rem;
     font-weight: 800;
     letter-spacing: 0.09em;
@@ -1048,7 +1048,7 @@ const guideData = advisorGuides.map(
 
   .advisor-hero h1 {
     margin: 0;
-    color: #0f172a;
+    color: var(--pt-theme-text);
     font-size: clamp(2.35rem, 6vw, 4.8rem);
     line-height: 1.02;
     letter-spacing: -0.045em;
@@ -1056,7 +1056,7 @@ const guideData = advisorGuides.map(
 
   .lead {
     max-width: 760px;
-    color: #475569;
+    color: var(--pt-theme-text-soft);
     font-size: 1.12rem;
     line-height: 1.72;
   }
@@ -1070,19 +1070,18 @@ const guideData = advisorGuides.map(
   .trust-row span {
     padding: 8px 12px;
     border-radius: 999px;
-    background: #f0fdf4;
-    color: #166534;
+    background: var(--pt-theme-accent-soft);
+    color: var(--pt-theme-accent-text);
     font-size: 0.82rem;
     font-weight: 750;
   }
 
   .advisor-panel {
     padding: clamp(20px, 4vw, 50px);
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--pt-theme-border);
     border-radius: 32px;
-    background: #ffffff;
-    box-shadow:
-      0 30px 90px rgba(15, 23, 42, 0.09);
+    background: var(--pt-theme-surface);
+    box-shadow: var(--pt-theme-shadow-md);
   }
 
   .advisor-status {
@@ -1094,11 +1093,11 @@ const guideData = advisorGuides.map(
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    color: #64748b;
+    color: var(--pt-theme-text-muted);
   }
 
   .status-copy strong {
-    color: #0f172a;
+    color: var(--pt-theme-text);
   }
 
   .progress-track {
@@ -1106,20 +1105,20 @@ const guideData = advisorGuides.map(
     height: 8px;
     margin-top: 12px;
     border-radius: 999px;
-    background: #e2e8f0;
+    background: var(--pt-theme-border);
   }
 
   .progress-track span {
     display: block;
     height: 100%;
     border-radius: inherit;
-    background: #2e7d32;
+    background: var(--pt-theme-accent);
     transition: width 180ms ease;
   }
 
   .live-note {
     margin: 12px 0 0;
-    color: #64748b;
+    color: var(--pt-theme-text-muted);
     font-size: 0.88rem;
   }
 
@@ -1132,7 +1131,7 @@ const guideData = advisorGuides.map(
 
   legend {
     max-width: 780px;
-    color: #0f172a;
+    color: var(--pt-theme-text);
     font-size: clamp(1.65rem, 4vw, 2.65rem);
     font-weight: 850;
     line-height: 1.14;
@@ -1142,7 +1141,7 @@ const guideData = advisorGuides.map(
   .step-help {
     max-width: 680px;
     margin: 10px 0 0;
-    color: #64748b;
+    color: var(--pt-theme-text-muted);
     line-height: 1.6;
   }
 
@@ -1179,9 +1178,9 @@ const guideData = advisorGuides.map(
     flex-direction: column;
     justify-content: center;
     padding: 22px;
-    border: 2px solid #e2e8f0;
+    border: 2px solid var(--pt-theme-border);
     border-radius: 21px;
-    background: #ffffff;
+    background: var(--pt-theme-surface);
     transition:
       border-color 150ms ease,
       background 150ms ease,
@@ -1190,28 +1189,27 @@ const guideData = advisorGuides.map(
   }
 
   .choice-card strong {
-    color: #0f172a;
+    color: var(--pt-theme-text);
     font-size: 1.04rem;
   }
 
   .choice-card small,
   .choice-card em {
     margin-top: 6px;
-    color: #64748b;
+    color: var(--pt-theme-text-muted);
     font-style: normal;
     line-height: 1.45;
   }
 
   .choice-card input:checked + span {
-    border-color: #2e7d32;
-    background: #f0fdf4;
-    box-shadow:
-      0 10px 28px rgba(46, 125, 50, 0.1);
+    border-color: var(--pt-theme-accent);
+    background: var(--pt-theme-accent-soft);
+    box-shadow: var(--pt-theme-shadow-sm);
   }
 
   .choice-card input:focus-visible + span {
-    outline: 3px solid rgba(79, 70, 229, 0.32);
-    outline-offset: 4px;
+    outline: none;
+    box-shadow: var(--pt-focus-ring);
   }
 
   .choice-card:hover > span {
@@ -1242,27 +1240,27 @@ const guideData = advisorGuides.map(
   }
 
   .button-primary {
-    border: 1px solid #2e7d32;
-    background: #2e7d32;
-    color: #ffffff;
+    border: 1px solid var(--pt-theme-accent);
+    background: var(--pt-theme-accent);
+    color: var(--pt-theme-text-inverse);
   }
 
   .button-primary:hover {
-    background: #256b2a;
+    background: var(--pt-theme-accent-hover);
   }
 
   .button-secondary {
-    border: 1px solid #cbd5e1;
-    background: #ffffff;
-    color: #0f172a;
+    border: 1px solid var(--pt-theme-border-strong);
+    background: var(--pt-theme-surface);
+    color: var(--pt-theme-text);
   }
 
   .form-error {
     margin-top: 20px;
     padding: 12px 14px;
     border-radius: 12px;
-    background: #fef2f2;
-    color: #991b1b;
+    background: var(--pt-color-danger-soft);
+    color: var(--pt-color-danger-600);
   }
 
   .results-heading {
@@ -1272,7 +1270,7 @@ const guideData = advisorGuides.map(
   .results-heading h2,
   .section-heading h2 {
     margin: 0;
-    color: #0f172a;
+    color: var(--pt-theme-text);
     font-size: clamp(1.75rem, 4vw, 2.8rem);
     line-height: 1.12;
   }
@@ -1281,8 +1279,8 @@ const guideData = advisorGuides.map(
     margin: 22px 0 0;
     padding: 15px 16px;
     border-radius: 14px;
-    background: #f8fafc;
-    color: #475569;
+    background: var(--pt-theme-surface-2);
+    color: var(--pt-theme-text-soft);
     line-height: 1.55;
   }
 
@@ -1299,22 +1297,21 @@ const guideData = advisorGuides.map(
     min-width: 0;
     flex-direction: column;
     padding: 23px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--pt-theme-border);
     border-radius: 21px;
-    background: #ffffff;
+    background: var(--pt-theme-surface);
   }
 
   .result-card:first-child {
-    border-color: #86efac;
-    box-shadow:
-      0 18px 44px rgba(46, 125, 50, 0.11);
+    border-color: color-mix(in srgb, var(--pt-theme-accent) 54%, var(--pt-theme-border));
+    box-shadow: var(--pt-theme-shadow-sm);
   }
 
   .result-meta {
     display: flex;
     justify-content: space-between;
     gap: 12px;
-    color: #166534;
+    color: var(--pt-theme-accent-text);
     font-size: 0.78rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -1322,12 +1319,12 @@ const guideData = advisorGuides.map(
 
   .result-card h3 {
     margin: 16px 0 8px;
-    color: #0f172a;
+    color: var(--pt-theme-text);
     font-size: 1.3rem;
   }
 
   .result-card > p {
-    color: #475569;
+    color: var(--pt-theme-text-soft);
     line-height: 1.58;
   }
 
@@ -1342,18 +1339,18 @@ const guideData = advisorGuides.map(
 
   .fit-badge--excellent,
   .fit-badge--good {
-    background: #f0fdf4;
-    color: #166534;
+    background: var(--pt-theme-accent-soft);
+    color: var(--pt-theme-accent-text);
   }
 
   .fit-badge--limited {
-    background: #fffbeb;
-    color: #92400e;
+    background: var(--pt-theme-warning-soft);
+    color: var(--pt-theme-warning);
   }
 
   .result-card h4 {
     margin: 22px 0 8px;
-    color: #0f172a;
+    color: var(--pt-theme-text);
     font-size: 0.92rem;
   }
 
@@ -1361,13 +1358,13 @@ const guideData = advisorGuides.map(
   .result-card details ul {
     margin: 0;
     padding-left: 20px;
-    color: #334155;
+    color: var(--pt-theme-text-soft);
     line-height: 1.58;
   }
 
   .result-card details {
     margin: 16px 0;
-    color: #92400e;
+    color: var(--pt-theme-warning);
   }
 
   .result-link {
@@ -1378,13 +1375,13 @@ const guideData = advisorGuides.map(
   .guide-section {
     margin-top: 48px;
     padding-top: 38px;
-    border-top: 1px solid #e2e8f0;
+    border-top: 1px solid var(--pt-theme-border);
   }
 
   .compare-scroll {
     overflow-x: auto;
     margin-top: 22px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--pt-theme-border);
     border-radius: 18px;
   }
 
@@ -1397,13 +1394,13 @@ const guideData = advisorGuides.map(
   .compare-scroll th,
   .compare-scroll td {
     padding: 16px;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid var(--pt-theme-border);
     text-align: left;
     vertical-align: top;
   }
 
   .compare-scroll thead th {
-    background: #f8fafc;
+    background: var(--pt-theme-surface-2);
   }
 
   .guide-grid {
@@ -1419,25 +1416,25 @@ const guideData = advisorGuides.map(
     flex-direction: column;
     gap: 7px;
     padding: 19px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--pt-theme-border);
     border-radius: 17px;
-    color: #0f172a;
+    color: var(--pt-theme-text);
     text-decoration: none;
   }
 
   .guide-card span {
-    color: #64748b;
+    color: var(--pt-theme-text-muted);
     line-height: 1.5;
   }
 
   .guide-card:hover {
-    border-color: #86efac;
-    background: #f0fdf4;
+    border-color: color-mix(in srgb, var(--pt-theme-accent) 54%, var(--pt-theme-border));
+    background: var(--pt-theme-accent-soft);
   }
 
   .share-status {
     min-height: 1.5em;
-    color: #166534;
+    color: var(--pt-theme-accent-text);
   }
 
   @media (max-width: 840px) {
@@ -1476,7 +1473,7 @@ const guideData = advisorGuides.map(
         linear-gradient(
           to bottom,
           transparent,
-          #ffffff 28%
+          var(--pt-theme-surface) 28%
         );
     }
 
