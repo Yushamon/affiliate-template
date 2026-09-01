@@ -44,6 +44,7 @@ test("34.2 uses one shared category route, ViewModel and renderer", () => {
 test("34.2 primary journey is requirement-first and remains semantic", () => {
   const order = [
     "pt-category-hub__hero",
+    "pt-category-hub__primary-comparison",
     "pt-category-hub__requirements",
     "pt-category-hub__paths",
     "pt-category-hub__comparisons",
@@ -63,25 +64,31 @@ test("34.2 primary journey is requirement-first and remains semantic", () => {
 
 test("34.2 configured destinations and selected products resolve to real content", async () => {
   const { categoryEditorialConfig } = await import("../src/domain/category/categoryConfig.ts");
+  const { categoryDecisionRouting, getComparisonHref } = await import("../src/domain/category/categoryDecisionRouting.ts");
   for (const [slug, config] of Object.entries(categoryEditorialConfig)) {
+    const routing = categoryDecisionRouting[slug];
     assert.ok(categories.includes(slug));
     assert.ok(config.requirements.length >= 3 && config.requirements.length <= 6, `${slug} requirement count`);
     assert.ok(config.paths.length >= 3 && config.paths.length <= 6, `${slug} decision path count`);
-    assert.ok(config.comparisons.length >= 1 && config.comparisons.length <= 4, `${slug} comparison count`);
+    const visibleSecondary = routing.secondaryComparisons.filter((comparison) => comparison.showInCategoryChapter !== false);
+    assert.ok(visibleSecondary.length <= 3, `${slug} secondary comparison count`);
     assert.ok(config.products.length >= 3 && config.products.length <= 6, `${slug} product count`);
     assert.ok(config.guides.length >= 1 && config.guides.length <= 5, `${slug} guide count`);
     assert.ok(config.evidenceHeadings.length >= 3 && config.evidenceHeadings.length <= 5, `${slug} evidence count`);
     const hubSource = read(`src/content/pages/${slug}.md`);
     for (const heading of config.evidenceHeadings) assert.ok(hubSource.includes(`## ${heading}`), `${slug} evidence heading ${heading}`);
-    for (const comparison of config.comparisons) frontmatter("comparisons", comparison.slug);
+    for (const comparison of [routing.primaryComparison, ...routing.secondaryComparisons]) frontmatter("comparisons", comparison.slug);
     for (const product of config.products) frontmatter("products", product.slug);
     for (const guide of config.guides) frontmatter("pages", guide);
-    for (const item of [...config.paths, config.closing]) {
-      if (item.href.startsWith("#")) continue;
-      const route = item.href.split(/[?#]/)[0];
+    for (const item of config.paths) {
+      const href = "comparisonSlug" in item ? getComparisonHref(item.comparisonSlug) : item.href;
+      if (href.startsWith("#")) continue;
+      const route = href.split(/[?#]/)[0];
       const target = route === "/" ? "dist/index.html" : `dist${route}index.html`;
-      assert.ok(fs.existsSync(path.join(app, target)), `${slug} resolves ${item.href}`);
+      assert.ok(fs.existsSync(path.join(app, target)), `${slug} resolves ${href}`);
     }
+    const primaryTarget = `dist${getComparisonHref(routing.primaryComparison.slug)}index.html`;
+    assert.ok(fs.existsSync(path.join(app, primaryTarget)), `${slug} closing resolves primary comparison`);
   }
 });
 
@@ -89,6 +96,7 @@ test("34.2 build output exposes curated category contracts across all six hubs",
   for (const slug of categories) {
     const html = read(`dist/${slug}/index.html`);
     assert.match(html, /data-category-experience="34\.2"/);
+    assert.match(html, /data-primary-comparison="\/vergleiche\/[^"]+\/"/);
     assert.equal((html.match(/<h1\b/g) ?? []).length, 1, `${slug} has one H1`);
     const requirementList = html.match(/class="pt-category-hub__requirement-list"[^>]*>([\s\S]*?)<\/ol>/);
     assert.ok(requirementList, `${slug} has requirement list`);

@@ -1,19 +1,21 @@
 import type { CategoryDecisionPath, CategoryRequirement } from "./model";
 
 type ProductChoice = { slug: string; role: string };
-type ComparisonChoice = { slug: string; question: string; why: string };
+type CategoryDecisionPathConfig = Omit<CategoryDecisionPath, "href"> & (
+  | { href: string }
+  | { comparisonSlug: string }
+);
 
 export type CategoryEditorialConfig = {
   eyebrow: string;
   cue: string;
   requirements: CategoryRequirement[];
-  paths: CategoryDecisionPath[];
-  comparisons: ComparisonChoice[];
+  paths: CategoryDecisionPathConfig[];
   products: ProductChoice[];
   guides: string[];
   evidenceIntro: string;
   evidenceHeadings: string[];
-  closing: { title: string; text: string; href: string; label: string };
+  closing: { title: string; text: string; label: string };
 };
 
 export const categoryEditorialConfig = {
@@ -29,17 +31,11 @@ export const categoryEditorialConfig = {
       { label: "Hygiene", question: "Erreichst du Futterweg und Auslass?", consequence: "Napf, Behälter, Rotor und Ausgabekanal müssen regelmäßig kontrollierbar und reinigbar sein." }
     ],
     paths: [
-      { label: "Futterart", title: "Für Nassfutter", text: "Fachsysteme nach Kühlung, Standzeit und Reinigung auswählen.", href: "/vergleiche/beste-futterautomaten-fuer-nassfutter/", cta: "Nassfutter-Systeme vergleichen" },
-      { label: "Mehrkatzen", title: "Für zwei Katzen", text: "Doppelschale, getrennte Geräte und Zugangskontrolle erfüllen unterschiedliche Aufgaben.", href: "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/", cta: "Passende Bauart wählen" },
-      { label: "Unabhängigkeit", title: "Ohne WLAN", text: "Lokale Zeitpläne und Stromreserve priorisieren, wenn Cloud und Router keine Voraussetzung sein sollen.", href: "/vergleiche/beste-futterautomaten-ohne-wlan/", cta: "Offline-Lösungen prüfen" },
-      { label: "Kontrolle", title: "Mit Kamera", text: "Sichtkontrolle kann helfen, ersetzt aber weder Fressmengenmessung noch Betreuung.", href: "/vergleiche/beste-futterautomaten-mit-kamera/", cta: "Kamera-Modelle einordnen" },
-      { label: "Tier", title: "Für Hunde", text: "Kapazität, Standfestigkeit, Napfhöhe und Portionsbereich nach Hundegröße prüfen.", href: "/vergleiche/beste-futterautomaten-fuer-hunde/", cta: "Hunde-Vergleich öffnen" }
-    ],
-    comparisons: [
-      { slug: "beste-futterautomaten-fuer-katzen", question: "Welcher Automat passt zur Katze und ihrer Futterart?", why: "Trennt Trockenfutter-Allrounder, Nassfutter-Fächer und Zugangssysteme." },
-      { slug: "beste-futterautomaten-fuer-hunde", question: "Welche Bauart passt zu Größe und Ration des Hundes?", why: "Ordnet Kapazität, Napfhöhe und Portionsgrenzen nach Einsatz ein." },
-      { slug: "beste-futterautomaten-fuer-nassfutter", question: "Wie bleiben vorbereitete Nassfutterportionen geschützt?", why: "Vergleicht Fachzahl, Kühlprinzip, Standzeit und Reinigung." },
-      { slug: "beste-futterautomaten-fuer-zwei-katzen", question: "Verteilen oder Tiere wirklich trennen?", why: "Macht den Unterschied zwischen Doppelschale und Zugangskontrolle sichtbar." }
+      { label: "Futterart", title: "Für Nassfutter", text: "Fachsysteme nach Kühlung, Standzeit und Reinigung auswählen.", comparisonSlug: "beste-futterautomaten-fuer-nassfutter", cta: "Nassfutter-Systeme vergleichen" },
+      { label: "Mehrkatzen", title: "Für zwei Katzen", text: "Doppelschale, getrennte Geräte und Zugangskontrolle erfüllen unterschiedliche Aufgaben.", comparisonSlug: "beste-futterautomaten-fuer-zwei-katzen", cta: "Passende Bauart wählen" },
+      { label: "Unabhängigkeit", title: "Ohne WLAN", text: "Lokale Zeitpläne und Stromreserve priorisieren, wenn Cloud und Router keine Voraussetzung sein sollen.", comparisonSlug: "beste-futterautomaten-ohne-wlan", cta: "Offline-Lösungen prüfen" },
+      { label: "Kontrolle", title: "Mit Kamera", text: "Sichtkontrolle kann helfen, ersetzt aber weder Fressmengenmessung noch Betreuung.", comparisonSlug: "beste-futterautomaten-mit-kamera", cta: "Kamera-Modelle einordnen" },
+      { label: "Tier", title: "Für Hunde", text: "Kapazität, Standfestigkeit, Napfhöhe und Portionsbereich nach Hundegröße prüfen.", comparisonSlug: "beste-futterautomaten-fuer-hunde", cta: "Hunde-Vergleich öffnen" }
     ],
     products: [
       { slug: "petlibro-granary-wifi-feeder", role: "Trockenfutter-Allrounder" },
@@ -50,7 +46,7 @@ export const categoryEditorialConfig = {
     guides: ["welcher-futterautomat-ist-der-richtige", "futterautomat-richtig-reinigen", "futterautomat-bei-stromausfall", "futterautomat-im-urlaub"],
     evidenceIntro: "Die ausführliche Kaufberatung erklärt Bauarten, Portionierung, Offline-Verhalten, Hygiene, Langzeitkosten und Grenzen automatisierter Fütterung.",
     evidenceHeadings: ["Entscheidungsmatrix: Welche Bauart passt zu welchem Einsatz?", "WLAN, Internet, Cloud und App: Vier verschiedene Ebenen", "Stromausfall richtig bewerten", "Portionen richtig kalibrieren", "Langzeitkosten: Nicht nur den Kaufpreis vergleichen"],
-    closing: { title: "Jetzt die passende Bauart eingrenzen", text: "Wenn Futterart, Tierzahl und Ausfallanforderung klar sind, führt der direkte Vergleich schneller zu belastbaren Kandidaten.", href: "/vergleiche/beste-futterautomaten-fuer-katzen/", label: "Mit dem Vergleich starten" }
+    closing: { title: "Jetzt die passende Bauart eingrenzen", text: "Wenn Futterart, Tierzahl und Ausfallanforderung klar sind, führt der direkte Vergleich schneller zu belastbaren Kandidaten.", label: "Mit dem Vergleich starten" }
   },
   trinkbrunnen: {
     eyebrow: "Produktwelt · Trinkbrunnen",
@@ -64,16 +60,12 @@ export const categoryEditorialConfig = {
       { label: "Standort", question: "Netz, Akku oder Sensorbetrieb?", consequence: "Die Betriebsart muss zum Standort passen; kabellos bedeutet nicht automatisch dauerhaft unabhängig oder reparierbar." }
     ],
     paths: [
-      { label: "Tier", title: "Für Katzen", text: "Trinkfläche, ruhiger Betrieb und Reinigung nach Katzenalltag vergleichen.", href: "/vergleiche/beste-trinkbrunnen-fuer-katzen/", cta: "Katzenbrunnen vergleichen" },
-      { label: "Tier", title: "Für Hunde", text: "Größe, Stand und Trinkhöhe passend zur Hundegröße einordnen.", href: "/vergleiche/beste-trinkbrunnen-fuer-hunde/", cta: "Hundebrunnen vergleichen" },
+      { label: "Tier", title: "Für Katzen", text: "Trinkfläche, ruhiger Betrieb und Reinigung nach Katzenalltag vergleichen.", comparisonSlug: "beste-trinkbrunnen-fuer-katzen", cta: "Katzenbrunnen vergleichen" },
+      { label: "Tier", title: "Für Hunde", text: "Größe, Stand und Trinkhöhe passend zur Hundegröße einordnen.", comparisonSlug: "beste-trinkbrunnen-fuer-hunde", cta: "Hundebrunnen vergleichen" },
       { label: "Hygiene", title: "Leicht zu reinigen", text: "Wasserweg, Pumpe und Rotorraum vor Zusatzfunktionen prüfen.", href: "/katzentrinkbrunnen-richtig-reinigen/", cta: "Reinigungsaufwand verstehen" },
       { label: "Material", title: "Material sinnvoll wählen", text: "Edelstahl, Keramik und Kunststoff anhand von Alltag und Konstruktion abwägen.", href: "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/", cta: "Materialvergleich lesen" },
       { label: "Verbrauchsteile", title: "Ohne Filter", text: "Filterlose Konstruktionen lösen andere Pflegeaufgaben und brauchen weiterhin regelmäßigen Wasserwechsel.", href: "/katzentrinkbrunnen-ohne-filter/", cta: "Filterlose Systeme einordnen" },
       { label: "Alter", title: "Für Kitten", text: "Trinkhöhe, Standfestigkeit, Kabel und sichere alternative Wasserstellen vor dem Einsatz prüfen.", href: "/trinkbrunnen-fuer-kitten-sicher/", cta: "Kitten-Sicherheit lesen" }
-    ],
-    comparisons: [
-      { slug: "beste-trinkbrunnen-fuer-katzen", question: "Welche Trinkfläche funktioniert im Katzenalltag?", why: "Vergleicht Zugang, Geräusch, Reinigung, Material und Betrieb." },
-      { slug: "beste-trinkbrunnen-fuer-hunde", question: "Welcher Brunnen passt zu Hundegröße und Standort?", why: "Ordnet Volumen, Stabilität und Trinkgeometrie ein." }
     ],
     products: [
       { slug: "catit-pixi-smart-trinkbrunnen", role: "Kompakte App-Lösung" },
@@ -85,7 +77,7 @@ export const categoryEditorialConfig = {
     guides: ["katze-an-trinkbrunnen-gewoehnen", "katzentrinkbrunnen-richtig-reinigen", "katzentrinkbrunnen-material-edelstahl-keramik-kunststoff", "filter-im-katzentrinkbrunnen-wechseln", "katzentrinkbrunnen-dauerbetrieb-urlaub"],
     evidenceIntro: "Die vertiefende Kaufberatung ordnet Trinkfläche, Wasserweg, Pumpe, Material, Filter, Lautstärke und Betriebsart ohne Funktionsmarketing ein.",
     evidenceHeadings: ["2. Reinigung: Der wichtigste Qualitätscheck", "3. Netz, Akku oder Sensorbetrieb?", "4. Material: Edelstahl, Keramik oder Kunststoff?", "5. Filter, UVC und App: nützlich, aber nachrangig", "6. Lautstärke: Nicht nur auf die dB-Zahl schauen"],
-    closing: { title: "Trinkfläche und Pflegeweg geklärt?", text: "Dann vergleiche Modelle für das konkrete Tier statt Tankvolumen und App-Funktionen isoliert zu bewerten.", href: "/vergleiche/beste-trinkbrunnen-fuer-katzen/", label: "Passende Trinkbrunnen vergleichen" }
+    closing: { title: "Trinkfläche und Pflegeweg geklärt?", text: "Dann vergleiche Modelle für das konkrete Tier statt Tankvolumen und App-Funktionen isoliert zu bewerten.", label: "Passende Trinkbrunnen vergleichen" }
   },
   "gps-tracker": {
     eyebrow: "Produktwelt · GPS-Tracker",
@@ -99,17 +91,11 @@ export const categoryEditorialConfig = {
       { label: "Kosten & Daten", question: "Abo, Konto und Standortverlauf akzeptabel?", consequence: "Übertragungskosten, Datenzugriff, Familienfreigabe und Löschung gehören zur Kaufentscheidung." }
     ],
     paths: [
-      { label: "Tier", title: "Für Hunde", text: "Befestigung, Robustheit, Live-Modus und Akku nach Hundealltag vergleichen.", href: "/vergleiche/beste-gps-tracker-fuer-hunde/", cta: "Hunde-Tracker vergleichen" },
-      { label: "Tier", title: "Für Katzen", text: "Gewicht, Sicherheitsverschluss und kleine Bauform zuerst prüfen.", href: "/vergleiche/beste-gps-tracker-fuer-katzen/", cta: "Katzen-Tracker vergleichen" },
-      { label: "Laufende Kosten", title: "Ohne Abo", text: "VHF, Kaufmodelle und ihre Reichweiten- beziehungsweise Infrastrukturgrenzen trennen.", href: "/vergleiche/gps-tracker-ohne-abo/", cta: "Abo-freie Wege prüfen" },
-      { label: "Ausdauer", title: "Lange Akkulaufzeit", text: "Herstellermaxima nur zusammen mit Intervall und Energiesparbedingungen bewerten.", href: "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/", cta: "Akkuvergleich öffnen" },
+      { label: "Tier", title: "Für Hunde", text: "Befestigung, Robustheit, Live-Modus und Akku nach Hundealltag vergleichen.", comparisonSlug: "beste-gps-tracker-fuer-hunde", cta: "Hunde-Tracker vergleichen" },
+      { label: "Tier", title: "Für Katzen", text: "Gewicht, Sicherheitsverschluss und kleine Bauform zuerst prüfen.", comparisonSlug: "beste-gps-tracker-fuer-katzen", cta: "Katzen-Tracker vergleichen" },
+      { label: "Laufende Kosten", title: "Ohne Abo", text: "VHF, Kaufmodelle und ihre Reichweiten- beziehungsweise Infrastrukturgrenzen trennen.", comparisonSlug: "gps-tracker-ohne-abo", cta: "Abo-freie Wege prüfen" },
+      { label: "Ausdauer", title: "Lange Akkulaufzeit", text: "Herstellermaxima nur zusammen mit Intervall und Energiesparbedingungen bewerten.", comparisonSlug: "gps-tracker-mit-langer-akkulaufzeit", cta: "Akkuvergleich öffnen" },
       { label: "Grundsatz", title: "GPS oder Bluetooth?", text: "Reichweite und Funktionskette vor dem Produktvergleich verstehen.", href: "/gps-oder-bluetooth/", cta: "Systeme unterscheiden" }
-    ],
-    comparisons: [
-      { slug: "beste-gps-tracker-fuer-hunde", question: "Welcher Tracker hält im Hundealltag?", why: "Vergleicht Befestigung, Ortungsweg, Akku und Live-Modus." },
-      { slug: "beste-gps-tracker-fuer-katzen", question: "Wie klein und sicher muss ein Katzentracker sein?", why: "Ordnet Gewicht, Halsbandlösung und Ortungsleistung ein." },
-      { slug: "gps-tracker-ohne-abo", question: "Welche Systeme funktionieren ohne laufendes Mobilfunkabo?", why: "Zeigt Reichweiten- und Infrastrukturkompromisse statt nur den Preis." },
-      { slug: "gps-tracker-mit-langer-akkulaufzeit", question: "Welche Laufzeit bleibt unter realen Bedingungen?", why: "Stellt Maximalwerte und ihre Bedingungen gegenüber." }
     ],
     products: [
       { slug: "tractive-dog-6", role: "Hunde-Allrounder" },
@@ -121,7 +107,7 @@ export const categoryEditorialConfig = {
     guides: ["wie-funktionieren-gps-tracker", "wie-genau-sind-gps-tracker", "warum-brauchen-gps-tracker-ein-abo", "gps-tracker-richtig-befestigen", "datenschutz-bei-gps-trackern"],
     evidenceIntro: "Die ausführliche Einordnung trennt Satellitenortung, Übertragung, App, Genauigkeit, Akku, Befestigung, Datenschutz und laufende Kosten.",
     evidenceHeadings: ["Welche Systeme gibt es?", "Hund und Katze brauchen andere Prioritäten", "Reichweite und Genauigkeit richtig lesen", "Akku und laufende Kosten", "Datenschutz"],
-    closing: { title: "Ortungsweg und Tiergröße stehen fest?", text: "Öffne jetzt den Vergleich für das Tier und bewerte Akku sowie Empfang immer im vorgesehenen Einsatz.", href: "/vergleiche/beste-gps-tracker-fuer-hunde/", label: "GPS-Tracker vergleichen" }
+    closing: { title: "Ortungsweg und Tiergröße stehen fest?", text: "Öffne jetzt den Vergleich für das Tier und bewerte Akku sowie Empfang immer im vorgesehenen Einsatz.", label: "GPS-Tracker vergleichen" }
   },
   katzenklappen: {
     eyebrow: "Produktwelt · Katzenklappen",
@@ -135,14 +121,10 @@ export const categoryEditorialConfig = {
       { label: "Komfort", question: "Wie wichtig sind Dämmung und Beuteerkennung?", consequence: "Dichtung, Klappenmechanik und Erkennungsgrenzen sind konkrete Kompromisse, keine bloßen Extras." }
     ],
     paths: [
-      { label: "Zugang", title: "Mikrochip-Katzenklappen", text: "Fremde Tiere aussperren und lokale Rechte je Tier vergleichen.", href: "/vergleiche/beste-mikrochip-katzenklappen/", cta: "Mikrochip-Systeme vergleichen" },
-      { label: "Smart", title: "App und Beuteerkennung", text: "Fernzugriff, lokale Funktion und Erkennungsgrenzen getrennt bewerten.", href: "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/", cta: "Smarte Systeme einordnen" },
+      { label: "Zugang", title: "Mikrochip-Katzenklappen", text: "Fremde Tiere aussperren und lokale Rechte je Tier vergleichen.", comparisonSlug: "beste-mikrochip-katzenklappen", cta: "Mikrochip-Systeme vergleichen" },
+      { label: "Smart", title: "App und Beuteerkennung", text: "Fernzugriff, lokale Funktion und Erkennungsgrenzen getrennt bewerten.", comparisonSlug: "katzenklappen-mit-app-und-beuteerkennung", cta: "Smarte Systeme einordnen" },
       { label: "Haushalt", title: "Für mehrere Katzen", text: "Gespeicherte Tiere, individuelle Regeln und Tailgating-Risiko prüfen.", href: "/katzenklappe-fuer-mehrere-katzen/", cta: "Mehrkatzen-Anforderungen lesen" },
       { label: "Montage", title: "Einbau planen", text: "Ausschnitt, Adapter und Einbauort vor der Modellauswahl klären.", href: "/katzenklappe-einbauen/", cta: "Einbau-Ratgeber öffnen" }
-    ],
-    comparisons: [
-      { slug: "beste-mikrochip-katzenklappen", question: "Welche Klappe kontrolliert den Zugang zuverlässig?", why: "Vergleicht Durchgang, Tier-IDs, lokale Regeln, Einbau und Dämmung." },
-      { slug: "katzenklappen-mit-app-und-beuteerkennung", question: "Wann bringen App und Beuteerkennung echten Zusatznutzen?", why: "Trennt lokale Kernfunktion, Fernzugriff und Erkennungsgrenzen." }
     ],
     products: [
       { slug: "sureflap-mikrochip-katzenklappe", role: "Mikrochip-Basis" },
@@ -154,7 +136,7 @@ export const categoryEditorialConfig = {
     guides: ["katzenklappe-einbauen", "katze-an-katzenklappe-gewoehnen", "katzenklappe-fuer-mehrere-katzen", "katzenklappe-zugluft-und-waermedaemmung"],
     evidenceIntro: "Die vertiefende Kaufberatung erklärt Zugangsrollen, Messung, Tailgating, App-Grenzen, Einbau und den laufenden Betrieb.",
     evidenceHeadings: ["Vier Produktrollen, vier Aufgaben", "Entscheidung in fünf Schritten", "Warum viele Katzenklappen falsch gekauft werden", "Vor dem Kauf messen", "Nach dem Einbau"],
-    closing: { title: "Zugang und Einbauort geklärt?", text: "Dann vergleiche nur Systeme, deren Durchgang, Rechte und lokale Kernfunktion zu deinem Haushalt passen.", href: "/vergleiche/beste-mikrochip-katzenklappen/", label: "Katzenklappen vergleichen" }
+    closing: { title: "Zugang und Einbauort geklärt?", text: "Dann vergleiche nur Systeme, deren Durchgang, Rechte und lokale Kernfunktion zu deinem Haushalt passen.", label: "Katzenklappen vergleichen" }
   },
   haustierkameras: {
     eyebrow: "Produktwelt · Haustierkameras",
@@ -168,13 +150,10 @@ export const categoryEditorialConfig = {
       { label: "Ausfall", question: "Was bleibt ohne Internet oder Cloud?", consequence: "Livebild, lokale Aufnahme, Benachrichtigung und Wiedergabe können bei Ausfällen unterschiedlich reagieren." }
     ],
     paths: [
-      { label: "Überblick", title: "Die besten Haustierkameras", text: "Kameraklassen, Blickbereich, Speicherung, Interaktion und Kosten direkt gegenüberstellen.", href: "/vergleiche/beste-haustierkameras/", cta: "Vergleich öffnen" },
+      { label: "Überblick", title: "Die besten Haustierkameras", text: "Kameraklassen, Blickbereich, Speicherung, Interaktion und Kosten direkt gegenüberstellen.", comparisonSlug: "beste-haustierkameras", cta: "Vergleich öffnen" },
       { label: "Einfach", title: "Nur beobachten", text: "Wenn Livebild und lokale Speicherung reichen, kann eine klassische Indoor-Kamera die klarere Lösung sein.", href: "#auswahl", cta: "Ausgewählte Modelle ansehen" },
       { label: "Interaktion", title: "Sprechen oder Futter werfen", text: "Prüfe, ob die Interaktion im Alltag wirklich genutzt wird und welche Cloud-Funktionen vorausgesetzt werden.", href: "#kaufberatung", cta: "Kriterien vertiefen" },
       { label: "Beschäftigung", title: "Technik gegen Langeweile", text: "Kameras können Kontakt ermöglichen, ersetzen aber weder Bewegung noch soziale Betreuung.", href: "/wie-kann-technik-gegen-langeweile-helfen/", cta: "Grenzen einordnen" }
-    ],
-    comparisons: [
-      { slug: "beste-haustierkameras", question: "Welche Kameraklasse passt zur eigentlichen Aufgabe?", why: "Vergleicht stationäre, interaktive und mobile Lösungen samt Speicherung und Kosten." }
     ],
     products: [
       { slug: "reolink-e1-zoom", role: "Klassische Indoor-Kamera" },
@@ -186,7 +165,7 @@ export const categoryEditorialConfig = {
     guides: ["wie-kann-technik-gegen-langeweile-helfen", "smarte-haustiertechnik"],
     evidenceIntro: "Die ausführliche Einordnung trennt Blickbereich, Interaktion, lokale Aufnahme, Cloudabhängigkeit, Datenschutz und Gesamtkosten.",
     evidenceHeadings: ["Reicht eine normale Indoor-Kamera?", "Entscheidung nach Aufgabe", "Blickbereich vor Auflösung", "Cloud, Konto und Speicherung vor dem Kauf klären", "Gesamtkosten über 24 Monate rechnen"],
-    closing: { title: "Aufgabe und Speicherweg stehen fest?", text: "Dann vergleiche Kameras nach ihrem realen Betrieb – nicht nach einzelnen KI- oder Marketingbegriffen.", href: "/vergleiche/beste-haustierkameras/", label: "Haustierkameras vergleichen" }
+    closing: { title: "Aufgabe und Speicherweg stehen fest?", text: "Dann vergleiche Kameras nach ihrem realen Betrieb – nicht nach einzelnen KI- oder Marketingbegriffen.", label: "Haustierkameras vergleichen" }
   },
   "automatische-katzentoiletten": {
     eyebrow: "Produktwelt · Katzentoiletten",
@@ -202,11 +181,8 @@ export const categoryEditorialConfig = {
     paths: [
       { label: "Sicherheit", title: "Für kleine oder leichte Katzen", text: "Mindestgewicht, Einstieg und Freigaben vor Automatikbetrieb prüfen.", href: "#kaufberatung", cta: "Sicherheitskriterien lesen" },
       { label: "Bauform", title: "Offen oder geschlossen", text: "Innenraum, Akzeptanz, Streuaustrag und Stellfläche gegeneinander abwägen.", href: "#kaufberatung", cta: "Bauformen einordnen" },
-      { label: "Haushalt", title: "Für mehrere Katzen", text: "Kapazität, Erkennung, Profile und Reinigungsrhythmus als Gesamtsystem bewerten.", href: "/vergleiche/beste-automatische-katzentoiletten/", cta: "Modelle vergleichen" },
+      { label: "Haushalt", title: "Für mehrere Katzen", text: "Kapazität, Erkennung, Profile und Reinigungsrhythmus als Gesamtsystem bewerten.", comparisonSlug: "beste-automatische-katzentoiletten", cta: "Modelle vergleichen" },
       { label: "Pflege", title: "Wartung und Streu", text: "Kompatibilität und Zugang zu Trommel, Sieb und Sensoren vor dem Kauf klären.", href: "#auswahl", cta: "Ausgewählte Systeme ansehen" }
-    ],
-    comparisons: [
-      { slug: "beste-automatische-katzentoiletten", question: "Welches Sicherheits- und Raumkonzept passt zur Katze?", why: "Vergleicht Einstieg, Bauform, Sensorik, Streu, Reinigung und laufende Kosten." }
     ],
     products: [
       { slug: "petkit-purobot-max-3", role: "Niedriger Einstieg" },
@@ -218,7 +194,7 @@ export const categoryEditorialConfig = {
     guides: ["smarte-haustiertechnik"],
     evidenceIntro: "Die ausführliche Kaufberatung erklärt Funktionsprinzip, offene und geschlossene Bauformen, Mindestgewicht, Sicherheit, Streu, Wartung, Monitoring und laufende Kosten.",
     evidenceHeadings: ["Wie selbstreinigende Katzentoiletten funktionieren", "Offen oder geschlossen?", "Sicherheit, Kitten und Stromausfall", "Streu, Wartung und Geruch", "Laufende Kosten"],
-    closing: { title: "Sicherheit und Platzbedarf geprüft?", text: "Dann vergleiche nur Toiletten, deren Einstieg, Sensorik und Streu-Kompatibilität zur Katze passen.", href: "/vergleiche/beste-automatische-katzentoiletten/", label: "Katzentoiletten vergleichen" }
+    closing: { title: "Sicherheit und Platzbedarf geprüft?", text: "Dann vergleiche nur Toiletten, deren Einstieg, Sensorik und Streu-Kompatibilität zur Katze passen.", label: "Katzentoiletten vergleichen" }
   }
 } satisfies Record<string, CategoryEditorialConfig>;
 

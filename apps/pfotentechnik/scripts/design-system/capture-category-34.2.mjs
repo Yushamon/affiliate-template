@@ -108,7 +108,7 @@ for (const route of routes) {
           const price = rect(product.querySelector('.pt-category-hub__product-decision > p'));
           return { card: rect(product), media, copy, decision, score, price, overlap: intersects(media, copy) || intersects(copy, decision) || intersects(score, price) };
         });
-        const interactive = [...document.querySelectorAll('.pt-category-hub__path-list > a, .pt-category-hub__comparison-list > a, .pt-category-hub__product-media, .pt-category-hub__product-decision > a, .pt-category-hub__guide-list > a, .pt-category-hub__trust-links a, .pt-category-hub__depth > summary, .pt-category-hub__closing > a')].filter(visible);
+        const interactive = [...document.querySelectorAll('.pt-category-hub__primary-comparison a, .pt-category-hub__path-list > a, .pt-category-hub__comparison-list > a, .pt-category-hub__product-media, .pt-category-hub__product-decision > a, .pt-category-hub__guide-list > a, .pt-category-hub__trust-links a, .pt-category-hub__depth > summary, .pt-category-hub__closing > a')].filter(visible);
         const images = [...document.querySelectorAll('.pt-category-hub img')].filter(visible);
         const surfaces = [...document.querySelectorAll('.pt-category-hub__path-list, .pt-category-hub__products, .pt-category-hub__depth, .pt-category-hub__depth > summary, .pt-category-hub__closing')].map((element) => ({ className: element.className, background: getComputedStyle(element).backgroundColor }));
         const focusTarget = document.querySelector('.pt-category-hub__closing > a');
@@ -123,7 +123,9 @@ for (const route of routes) {
           h1Count: document.querySelectorAll('h1').length,
           requirementCount: document.querySelectorAll('.pt-category-hub__requirement-list > li').length,
           pathCount: document.querySelectorAll('.pt-category-hub__path-list > a').length,
-          comparisonCount: document.querySelectorAll('.pt-category-hub__comparison-list > a').length,
+          primaryComparisonCount: document.querySelectorAll('.pt-category-hub__primary-comparison[data-primary-comparison] a').length,
+          secondaryComparisonCount: document.querySelectorAll('.pt-category-hub__comparison-list > a').length,
+          comparisonCount: document.querySelectorAll('.pt-category-hub__primary-comparison[data-primary-comparison] a, .pt-category-hub__comparison-list > a').length,
           productCount: products.length,
           guideCount: document.querySelectorAll('.pt-category-hub__guide-list > a').length,
           evidenceCount: document.querySelectorAll('.pt-category-hub__reading > section').length,
@@ -143,7 +145,7 @@ for (const route of routes) {
 
       const pass = qa.route === route && qa.dark === (theme === "dark") &&
         qa.clientWidth === qa.scrollWidth && qa.h1Count === 1 && qa.requirementCount === 6 &&
-        qa.pathCount >= 3 && qa.pathCount <= 6 && qa.comparisonCount >= 1 && qa.comparisonCount <= 4 &&
+        qa.pathCount >= 3 && qa.pathCount <= 6 && qa.primaryComparisonCount === 1 && qa.comparisonCount >= 1 && qa.comparisonCount <= 4 &&
         qa.productCount >= 3 && qa.productCount <= 6 && qa.guideCount >= 1 && qa.guideCount <= 5 &&
         qa.evidenceCount >= 3 && qa.evidenceCount <= 5 && qa.sectionsOrdered && qa.headingsInside &&
         qa.interactiveMinHeight >= 43.5 && qa.interactiveInside && qa.imagesReady &&

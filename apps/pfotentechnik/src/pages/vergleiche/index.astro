@@ -1,9 +1,11 @@
 ---
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import { getContentByHub } from "@app/domain/content";
+import { buildComparisonOverviewModel } from "../../domain/comparison/buildComparisonOverviewModel";
 import { siteMeta } from "../../project.config";
 
 const comparisons = await getContentByHub("vergleiche");
+const overview = buildComparisonOverviewModel(comparisons);
 ---
 
 <ProjectLayout
@@ -12,71 +14,100 @@ const comparisons = await getContentByHub("vergleiche");
   description="Vergleiche Futterautomaten, Hersteller und Funktionen. Finde schneller heraus, welches Produkt zu deinem Tier und deinem Alltag passt."
   canonical="/vergleiche/"
   author={siteMeta.defaultAuthor}
+  mainClass="container--comparison-overview"
 >
   <section class="comparison-hub-hero">
     <span>Vergleiche</span>
-
     <h1>Welcher Vergleich hilft dir bei deiner Entscheidung?</h1>
-
     <p>
-      Unsere veröffentlichten Vergleiche zeigen die wichtigsten
-      Unterschiede, ordnen Produkte nach Anwendungsfall ein und
-      erklären, wann sich welches Modell besser eignet.
+      Starte mit dem Produktbereich, der zu deiner Aufgabe passt. Die Vergleiche
+      ordnen Modelle nach Anwendungsfall ein und machen relevante Unterschiede sichtbar.
     </p>
   </section>
 
-  <div class="comparison-hub">
-    <header>
-      <span>Alle Vergleiche</span>
-      <h2>Entscheidungshilfen im Überblick</h2>
-      <p>
-        Jede Karte stammt direkt aus dem Frontmatter der zugehörigen
-        Markdown-Datei. Neue Inhalte erscheinen hier automatisch.
-      </p>
-    </header>
+  <div class="comparison-hub" data-comparison-overview="demand-led">
+    <section class="comparison-chapter comparison-chapter--priority" aria-labelledby="priority-heading">
+      <header>
+        <span>Häufige Entscheidungen</span>
+        <h2 id="priority-heading">Die wichtigsten Produktbereiche</h2>
+        <p>Diese Einstiege decken die breitesten Produktwelten und die häufigsten konkreten Auswahlfragen ab.</p>
+      </header>
 
-    {
-      comparisons.length > 0 ? (
-        <div class="comparison-grid">
-          {comparisons.map((comparison) => (
-            <a class="pt-surface comparison-card" href={comparison.href}>
-              <span class="comparison-icon" aria-hidden="true">
-                {comparison.icon ?? "↔"}
-              </span>
+      <div class="comparison-priority-grid" data-comparison-overview-group="primary">
+        {overview.primaryAreas.map((area, index) => (
+          <article class="pt-surface comparison-priority-card" data-overview-rank={index + 1}>
+            <div class="comparison-icon" aria-hidden="true">{area.icon}</div>
+            <div>
+              <a class="comparison-category-link" href={area.categoryHref}>{area.categoryLabel}</a>
+              <h3>{area.question}</h3>
+              <p>{area.reason}</p>
+              <a class="comparison-action" href={area.href}>{area.title} <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
 
-              <div>
-                <small>Vergleich ansehen</small>
-                <h3>{comparison.hubTitle}</h3>
-                <p>{comparison.hubDescription}</p>
-                <strong>Zur Kaufberatung <span aria-hidden="true">→</span></strong>
-              </div>
+    <section class="comparison-chapter comparison-chapter--areas" aria-labelledby="areas-heading">
+      <header>
+        <span>Weitere Produktbereiche</span>
+        <h2 id="areas-heading">Direkt zur passenden Auswahl</h2>
+      </header>
+
+      <div class="comparison-area-list" data-comparison-overview-group="additional">
+        {overview.additionalAreas.map((area) => (
+          <article class="comparison-area-row">
+            <div class="comparison-icon" aria-hidden="true">{area.icon}</div>
+            <div>
+              <a class="comparison-category-link" href={area.categoryHref}>{area.categoryLabel}</a>
+              <h3>{area.question}</h3>
+              <p>{area.reason}</p>
+            </div>
+            <a class="comparison-action" href={area.href}>{area.title} <span aria-hidden="true">→</span></a>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="comparison-chapter comparison-chapter--specific" aria-labelledby="specific-heading">
+      <header>
+        <span>Konkrete Anforderungen</span>
+        <h2 id="specific-heading">Alle weiteren Vergleiche</h2>
+        <p>Wähle einen Vergleich, wenn Tier, Futterart, Ausstattung oder Alltag bereits feststehen.</p>
+      </header>
+
+      {overview.specialistComparisons.length > 0 ? (
+        <nav class="comparison-specific-list" aria-label="Weitere konkrete Vergleiche" data-comparison-overview-group="specialist">
+          {overview.specialistComparisons.map((comparison) => (
+            <a href={comparison.href}>
+              <small>{comparison.categoryLabel}</small>
+              <strong>{comparison.title}</strong>
+              <span aria-hidden="true">→</span>
             </a>
           ))}
-        </div>
+        </nav>
       ) : (
-        <p class="comparison-empty">
-          Aktuell sind keine Vergleiche veröffentlicht.
-        </p>
-      )
-    }
+        <p class="comparison-empty">Aktuell sind keine weiteren Vergleiche veröffentlicht.</p>
+      )}
+    </section>
 
     <section class="comparison-manufacturer-cta">
       <div>
         <span>Marken einordnen</span>
         <h2>Entdecke alle Hersteller im Überblick</h2>
-        <p>
-          Die Herstellerseiten zeigen Produktschwerpunkte,
-          Bewertungen, Erfahrungen und passende Modelle.
-        </p>
+        <p>Die Herstellerseiten zeigen Produktschwerpunkte, Bewertungen, Erfahrungen und passende Modelle.</p>
       </div>
-
       <a href="/hersteller/">Hersteller ansehen <span aria-hidden="true">→</span></a>
     </section>
   </div>
 </ProjectLayout>
 
 <style>
-.comparison-hub-hero,
+  :global(main.container.container--comparison-overview) {
+    box-sizing: border-box;
+  }
+
+  .comparison-hub-hero,
   .comparison-hub {
     --comparison-accent: var(--pt-color-accent-text);
     --comparison-accent-strong: var(--pt-color-brand-600);
@@ -90,9 +121,7 @@ const comparisons = await getContentByHub("vergleiche");
   }
 
   .comparison-hub-hero *,
-  .comparison-hub * {
-    box-sizing: border-box;
-  }
+  .comparison-hub * { box-sizing: border-box; }
 
   .comparison-hub-hero {
     max-width: 980px;
@@ -101,18 +130,14 @@ const comparisons = await getContentByHub("vergleiche");
     border: 1px solid var(--comparison-border);
     border-radius: 1.75rem;
     background:
-      radial-gradient(
-        circle at top right,
-        color-mix(in srgb, var(--comparison-accent) 16%, transparent),
-        transparent 38%
-      ),
+      radial-gradient(circle at top right, color-mix(in srgb, var(--comparison-accent) 16%, transparent), transparent 38%),
       linear-gradient(145deg, var(--comparison-surface), var(--comparison-surface-soft));
     box-shadow: var(--pt-shadow-md);
     text-align: center;
   }
 
   .comparison-hub-hero > span,
-  .comparison-hub > header > span,
+  .comparison-chapter > header > span,
   .comparison-manufacturer-cta span {
     color: var(--comparison-accent);
     font-size: 0.76rem;
@@ -124,103 +149,140 @@ const comparisons = await getContentByHub("vergleiche");
   .comparison-hub-hero h1 {
     max-width: 18ch;
     margin: 0.75rem auto 1.25rem;
-    color: var(--comparison-text);
     font-size: clamp(2.75rem, 6vw, 5rem);
     line-height: 0.98;
     letter-spacing: -0.05em;
   }
 
   .comparison-hub-hero p,
-  .comparison-hub > header p,
-  .comparison-card p,
+  .comparison-chapter > header p,
+  .comparison-priority-card p,
+  .comparison-area-row p,
   .comparison-manufacturer-cta p {
     color: var(--comparison-muted);
     line-height: 1.7;
   }
 
-  .comparison-hub-hero p {
-    max-width: 66ch;
-    margin: 0 auto;
-  }
-
-  .comparison-hub > header {
-    max-width: 800px;
-    margin-bottom: 1.5rem;
-  }
+  .comparison-hub-hero p { max-width: 66ch; margin: 0 auto; }
+  .comparison-chapter { margin: 0 0 4.5rem; }
+  .comparison-chapter > header { max-width: 800px; margin-bottom: 1.5rem; }
 
   .comparison-hub h2 {
     margin: 0.5rem 0 0.75rem;
-    color: var(--comparison-text);
     font-size: clamp(2rem, 4vw, 3.25rem);
     line-height: 1.08;
     letter-spacing: -0.04em;
   }
 
-  .comparison-grid {
+  .comparison-priority-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.25rem;
   }
 
-  .comparison-card {
+  .comparison-priority-card {
     display: grid;
-    padding: 1.4rem;
+    min-width: 0;
+    padding: clamp(1.25rem, 2.5vw, 2rem);
     grid-template-columns: auto minmax(0, 1fr);
     align-items: start;
     gap: 1rem;
     border: 1px solid var(--comparison-border);
-    border-radius: 1.2rem;
-    color: var(--comparison-text);
+    border-radius: 1.4rem;
     background: linear-gradient(145deg, var(--comparison-surface), var(--comparison-surface-soft));
     box-shadow: var(--pt-shadow-sm);
-    text-decoration: none;
-    transition: transform 180ms ease, box-shadow 180ms ease;
-  }
-
-  .comparison-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--pt-shadow-md);
   }
 
   .comparison-icon {
     display: grid;
     width: 3rem;
     height: 3rem;
+    flex: 0 0 auto;
     place-items: center;
     border-radius: 0.9rem;
     background: color-mix(in srgb, var(--comparison-accent) 14%, transparent);
     font-size: 1.35rem;
   }
 
-  .comparison-card small {
+  .comparison-category-link {
     color: var(--comparison-accent);
+    font-size: 0.75rem;
     font-weight: 900;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.07em;
     text-transform: uppercase;
   }
 
-  .comparison-card h3 {
-    margin: 0.45rem 0 0.65rem;
-    color: var(--comparison-text);
+  .comparison-priority-card h3,
+  .comparison-area-row h3 {
+    margin: 0.45rem 0 0.6rem;
     font-size: 1.2rem;
     line-height: 1.25;
   }
 
-  .comparison-card p {
-    margin: 0 0 1rem;
-    font-size: 0.9rem;
+  .comparison-priority-card p,
+  .comparison-area-row p { margin: 0 0 1rem; font-size: 0.92rem; }
+
+  .comparison-action {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    gap: 0.45rem;
+    color: var(--comparison-accent);
+    font-weight: 850;
+    text-decoration: none;
   }
 
-  .comparison-card strong {
-    color: var(--comparison-accent);
-    font-size: 0.88rem;
+  .comparison-area-list { display: grid; gap: 0.85rem; }
+
+  .comparison-area-row {
+    display: grid;
+    min-width: 0;
+    padding: 1.1rem 1.25rem;
+    grid-template-columns: auto minmax(0, 1fr) minmax(12rem, auto);
+    align-items: center;
+    gap: 1.1rem;
+    border: 1px solid var(--comparison-border);
+    border-radius: 1rem;
+    background: var(--comparison-surface);
   }
+
+  .comparison-area-row p { margin-bottom: 0; }
+  .comparison-area-row > .comparison-action { justify-self: end; text-align: right; }
+
+  .comparison-specific-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+  }
+
+  .comparison-specific-list > a {
+    display: grid;
+    min-width: 0;
+    min-height: 4.25rem;
+    padding: 0.85rem 1rem;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-content: center;
+    gap: 0.2rem 0.8rem;
+    border: 1px solid var(--comparison-border);
+    border-radius: 0.85rem;
+    color: var(--comparison-text);
+    background: var(--comparison-surface-soft);
+    text-decoration: none;
+  }
+
+  .comparison-specific-list small {
+    grid-column: 1;
+    color: var(--comparison-muted);
+    font-size: 0.72rem;
+  }
+
+  .comparison-specific-list strong { grid-column: 1; line-height: 1.3; }
+  .comparison-specific-list > a > span { grid-column: 2; grid-row: 1 / 3; align-self: center; color: var(--comparison-accent); }
 
   .comparison-empty {
     padding: 1.5rem;
     border: 1px dashed var(--comparison-border);
     border-radius: 1rem;
-    color: var(--comparison-text);
     background: var(--comparison-surface-soft);
   }
 
@@ -233,17 +295,10 @@ const comparisons = await getContentByHub("vergleiche");
     gap: 2rem;
     border: 1px solid var(--comparison-border);
     border-radius: 1.4rem;
-    background:
-      linear-gradient(
-        135deg,
-        color-mix(in srgb, var(--comparison-accent) 14%, var(--comparison-surface)),
-        var(--comparison-surface) 54%
-      );
+    background: linear-gradient(135deg, color-mix(in srgb, var(--comparison-accent) 14%, var(--comparison-surface)), var(--comparison-surface) 54%);
   }
 
-  .comparison-manufacturer-cta p {
-    margin: 0;
-  }
+  .comparison-manufacturer-cta p { margin: 0; }
 
   .comparison-manufacturer-cta > a {
     display: inline-flex;
@@ -260,23 +315,25 @@ const comparisons = await getContentByHub("vergleiche");
   }
 
   @media (max-width: 980px) {
-    .comparison-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+    .comparison-priority-grid { grid-template-columns: 1fr; }
   }
 
-  @media (max-width: 700px) {
-    .comparison-grid {
-      grid-template-columns: 1fr;
-    }
+  @media (max-width: 760px) {
+    .comparison-area-row { grid-template-columns: auto minmax(0, 1fr); }
+    .comparison-area-row > .comparison-action { grid-column: 2; justify-self: start; text-align: left; }
+    .comparison-specific-list { grid-template-columns: 1fr; }
+    .comparison-manufacturer-cta { align-items: stretch; flex-direction: column; }
+    .comparison-manufacturer-cta > a { justify-content: center; }
+  }
 
-    .comparison-manufacturer-cta {
-      align-items: stretch;
-      flex-direction: column;
-    }
+  @media (max-width: 520px) {
+    .comparison-priority-card { grid-template-columns: 1fr; }
+    .comparison-area-row { grid-template-columns: 1fr; }
+    .comparison-area-row > .comparison-action { grid-column: 1; }
+  }
 
-    .comparison-manufacturer-cta > a {
-      justify-content: center;
-    }
+  @media (max-width: 360px) {
+    .comparison-hub-hero { padding-inline: 1.25rem; }
+    .comparison-hub-hero h1 { font-size: 2.25rem; }
   }
 </style>

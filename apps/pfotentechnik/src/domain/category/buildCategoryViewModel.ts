@@ -2,6 +2,12 @@ import type { PageEntry, ProductEntry, ComparisonEntry } from "../content/regist
 import { resolveProductMedia } from "../comparison/mediaResolver.mjs";
 import { toEditorialScore } from "@affiliate-core/utils/editorialScore";
 import { categoryEditorialConfig, isCategoryHubSlug } from "./categoryConfig";
+import {
+  categoryDecisionRouting,
+  getCategoryRouteForComparison,
+  getComparisonHref,
+  type CategoryComparisonRoute
+} from "./categoryDecisionRouting";
 import type { CategoryExperienceModel } from "./model";
 
 const priceFormatter = new Intl.NumberFormat("de-DE", {
@@ -57,6 +63,7 @@ export const buildCategoryViewModel = ({
   if (!isCategoryHubSlug(page.data.slug)) return undefined;
 
   const config = categoryEditorialConfig[page.data.slug];
+  const routing = categoryDecisionRouting[page.data.slug];
   const productBySlug = new Map(products.map((product) => [product.data.slug, product]));
   const pageBySlug = new Map(pages.map((entry) => [entry.data.slug, entry]));
   const comparisonBySlug = new Map(comparisons.map((entry) => [entry.data.slug, entry]));
@@ -84,16 +91,44 @@ export const buildCategoryViewModel = ({
     }];
   });
 
-  const comparisonModels = config.comparisons.flatMap(({ slug, question, why }) => {
+  const resolveComparison = ({ slug, question, why }: CategoryComparisonRoute) => {
     const comparison = comparisonBySlug.get(slug);
-    if (!comparison) return [];
-    return [{
+    if (!comparison) return undefined;
+    return {
       title: comparison.data.title,
       question,
       text: why,
-      href: `/vergleiche/${slug}/`,
+      href: getComparisonHref(slug),
       itemCount: comparison.data.items.length
-    }];
+    };
+  };
+
+  const resolvedPrimaryComparison = resolveComparison(routing.primaryComparison);
+  if (!resolvedPrimaryComparison) {
+    throw new Error(`Primary comparison missing for category ${page.data.slug}: ${routing.primaryComparison.slug}`);
+  }
+
+  const primaryComparison = {
+    ...resolvedPrimaryComparison,
+    ctaTitle: routing.primaryComparison.title,
+    ctaText: routing.primaryComparison.text,
+    ctaLabel: routing.primaryComparison.cta
+  };
+
+  const secondaryComparisons = routing.secondaryComparisons.flatMap((comparisonRoute) => {
+    if ("showInCategoryChapter" in comparisonRoute && comparisonRoute.showInCategoryChapter === false) return [];
+    const comparison = resolveComparison(comparisonRoute);
+    return comparison ? [comparison] : [];
+  });
+
+  const paths = config.paths.map((path) => {
+    if (!("comparisonSlug" in path)) return path;
+    const categoryRoute = getCategoryRouteForComparison(path.comparisonSlug);
+    if (categoryRoute?.categorySlug !== page.data.slug) {
+      throw new Error(`Comparison path is not owned by category ${page.data.slug}: ${path.comparisonSlug}`);
+    }
+    const { comparisonSlug, ...content } = path;
+    return { ...content, href: getComparisonHref(comparisonSlug) };
   });
 
   const guides = config.guides.flatMap((slug) => {
@@ -119,12 +154,16 @@ export const buildCategoryViewModel = ({
       ? `${selectedProducts[0].title} als Beispiel für ${page.data.categoryLabel ?? page.data.title}`
       : page.data.title),
     requirements: config.requirements,
-    paths: config.paths,
-    comparisons: comparisonModels,
+    paths,
+    primaryComparison,
+    secondaryComparisons,
     products: selectedProducts,
     guides,
     evidenceIntro: config.evidenceIntro,
     evidenceSections: extractEvidenceSections(page.body ?? "", config.evidenceHeadings),
-    closing: config.closing
+    closing: {
+      ...config.closing,
+      href: primaryComparison.href
+    }
   };
 };

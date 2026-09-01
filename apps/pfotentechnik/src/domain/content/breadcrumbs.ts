@@ -4,6 +4,7 @@ import type {
   PageEntry,
   ProductEntry
 } from "./registry";
+import { getCategoryRouteForComparison } from "../category/categoryDecisionRouting";
 
 export type BreadcrumbItem = {
   label: string;
@@ -63,16 +64,25 @@ export const getManufacturerBreadcrumbs = (
 
 export const getComparisonBreadcrumbs = (
   entry: ComparisonEntry
-): BreadcrumbItem[] => [
-  home,
-  {
-    label: "Vergleiche",
-    href: "/vergleiche/"
-  },
-  {
-    label: entry.data.title
-  }
-];
+): BreadcrumbItem[] => {
+  const category = getCategoryRouteForComparison(entry.data.slug);
+
+  return [
+    home,
+    category
+      ? {
+          label: category.categoryLabel,
+          href: category.categoryHref
+        }
+      : {
+          label: "Vergleiche",
+          href: "/vergleiche/"
+        },
+    {
+      label: entry.data.title
+    }
+  ];
+};
 
 export const getPageBreadcrumbs = (
   entry: PageEntry

@@ -27,6 +27,12 @@ export type CategoryComparison = {
   itemCount: number;
 };
 
+export type CategoryPrimaryComparison = CategoryComparison & {
+  ctaTitle: string;
+  ctaText: string;
+  ctaLabel: string;
+};
+
 export type CategoryProduct = {
   slug: string;
   role: string;
@@ -61,7 +67,8 @@ export type CategoryExperienceModel = {
   heroAlt: string;
   requirements: CategoryRequirement[];
   paths: CategoryDecisionPath[];
-  comparisons: CategoryComparison[];
+  primaryComparison: CategoryPrimaryComparison;
+  secondaryComparisons: CategoryComparison[];
   products: CategoryProduct[];
   guides: CategoryGuide[];
   evidenceIntro: string;
