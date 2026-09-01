@@ -19,7 +19,7 @@ test("Finding-AI behandelt fehlende Action-IDs defensiv", () => {
   const source = fs.readFileSync(target, "utf8");
   assert.ok(source.includes("Array.isArray(finding?.aiActionIds)"));
   assert.ok(source.includes("const actionIds ="));
-  assert.ok(source.includes("actionIds.map("));
+  assert.match(source, /actionIds\s*\.map\(/);
   assert.ok(!/finding\.aiActionIds\s*\.map\(/m.test(source));
 });
 

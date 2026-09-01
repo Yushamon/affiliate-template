@@ -496,7 +496,7 @@ Grundlagen, Gewöhnungsplan und Situationen gegen eine automatische Toilette ste
 Crystal Duo und Neakasa halten Kopf- und Fluchtweg offen. Crystal Duo senkt den Einstieg auf 18 cm, tauscht freie Streuwahl aber gegen ein proprietäres Rechen-/Tray-System. PuraMax 2, MAX 3 und MAX PRO 2 nutzen eine geschlossene Siebtrommel mit klassischerer Klumpstreu. Beim Crystal Duo betrifft Care+ die vollständige Videowiedergabe; pH- und Verhaltenshinweise bleiben nichtmedizinische Trends.
 
 <!-- pt:litter-delta-33-3:start -->
-## Neun Kaufrollen als Ausschlussmatrix
+## Zehn Kaufrollen als Ausschlussmatrix
 
 Die Matrix ist keine lineare Rangliste. **Neakasa M1 Plus Lite** steht für offene Zugänglichkeit, **PETKIT MAX 3** für einen niedrigeren Einstieg und zusätzliche mechanische Sicherheitsarchitektur, **PetSnowy SNOW+** für geschlossene Streurückhaltung und **MAX PRO 2** für Kamera-Monitoring.
 

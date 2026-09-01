@@ -5,64 +5,49 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
-const comparisonDir = path.join(
-  ROOT,
-  "packages",
-  "affiliate-core",
-  "src",
-  "components",
-  "comparison"
-);
-const systemFile = path.join(comparisonDir, "comparison-system.css");
-const tokensFile = path.join(comparisonDir, "comparison-tokens.css");
+const comparisonDir = path.join(ROOT, "packages", "affiliate-core", "src", "components", "comparison");
+const read = (relative) => fs.readFileSync(path.join(comparisonDir, relative), "utf8");
 
-const coreTokens = [
-  "--comparison-text",
-  "--comparison-muted",
-  "--comparison-accent",
-  "--comparison-accent-dark",
-  "--comparison-line",
-  "--comparison-soft",
-  "--comparison-surface",
-  "--comparison-shadow"
+const shell = read("ComparisonShell.astro");
+const explorer = read("ComparisonExplorer.astro");
+const experience = read("comparison-experience.css");
+const retiredFiles = [
+  "comparison-system.css",
+  "comparison-tokens.css",
+  "comparison-explorer-v2.css",
 ];
-const expectedValues = {
-  "--comparison-text": "#13231e",
-  "--comparison-muted": "#66766f",
-  "--comparison-accent": "#238341",
-  "--comparison-accent-dark": "#0f5d2d",
-  "--comparison-line": "#dce6e0",
-  "--comparison-soft": "#f2f8f4",
-  "--comparison-surface": "#ffffff",
-  "--comparison-shadow": "0 14px 38px rgba(20, 32, 26, 0.07)"
-};
 
-test("Comparison Tokens werden vor dem System importiert", () => {
-  const system = fs.readFileSync(systemFile, "utf8");
-  assert.ok(system.startsWith('@import "./comparison-tokens.css";'));
-  assert.ok(fs.existsSync(tokensFile));
+test("Comparison has one active production CSS owner", () => {
+  assert.equal((shell.match(/import "\.\/comparison-experience\.css";/g) ?? []).length, 1);
+  assert.equal((explorer.match(/import "\.\/comparison-experience\.css";/g) ?? []).length, 1);
+  assert.doesNotMatch(shell + explorer, /comparison-(?:system|tokens|explorer-v2)\.css/);
 });
 
-test("Token-Datei enthält die zuvor wirksamen Kaskadenwerte", () => {
-  const tokens = fs.readFileSync(tokensFile, "utf8");
-  for (const [token, value] of Object.entries(expectedValues)) {
-    assert.ok(tokens.includes(token + ": " + value + ";"), token + " hat nicht den erwarteten Wert");
+test("retired Comparison token and tombstone layers are absent", () => {
+  for (const file of retiredFiles) {
+    assert.equal(fs.existsSync(path.join(comparisonDir, file)), false, file);
   }
 });
 
-test("Token-Datei enthält exakt die acht Core-Tokens", () => {
-  const tokens = fs.readFileSync(tokensFile, "utf8");
-  const body = tokens.match(/:root\s*\{([\s\S]*?)\}/)?.[1] ?? "";
-  const properties = [...body.matchAll(/(--comparison-[a-z0-9-]+)\s*:/g)].map((m) => m[1]);
-  assert.deepEqual(properties, coreTokens);
+test("Comparison consumes the shared semantic Foundation contract", () => {
+  for (const token of [
+    "--pt-color-surface",
+    "--pt-color-surface-soft",
+    "--pt-color-surface-raised",
+    "--pt-color-text",
+    "--pt-color-text-muted",
+    "--pt-color-border",
+    "--pt-color-action-bg",
+    "--pt-color-action-bg-hover",
+    "--pt-color-action-text",
+  ]) {
+    assert.ok(experience.includes(token), `Shared token missing: ${token}`);
+  }
+  assert.doesNotMatch(experience, /--comparison-[a-z0-9-]+\s*:/i);
+  assert.doesNotMatch(experience, /var\(--comparison-/i);
 });
 
-test("Token Layer enthält keine Komponentenregeln oder important", () => {
-  const tokens = fs.readFileSync(tokensFile, "utf8");
-  assert.doesNotMatch(tokens, /\.comparison-|@media|!important/);
-});
-
-test("Systemdatei beginnt ohne leere Präfixzeilen", () => {
-  const system = fs.readFileSync(systemFile, "utf8");
-  assert.doesNotMatch(system, /^\s*\n/);
+test("Comparison has no retired palette or local theme branch", () => {
+  assert.doesNotMatch(experience, /#(?:13231e|66766f|238341|0f5d2d|dce6e0|f2f8f4|ffffff)\b/i);
+  assert.doesNotMatch(experience, /\.theme-dark\b|\.dark\b|\[data-theme/);
 });

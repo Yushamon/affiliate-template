@@ -21,17 +21,18 @@ test("Hersteller sind kein Standard-Schritt", () => {
   assert.doesNotMatch(component, /Hersteller/);
 });
 
-test("globale Journey ist in Ratgeber, Vergleich und Produkt eingebaut", () => {
-  const files = [
-    "src/pages/[slug].astro",
-    "src/pages/vergleiche/[comparison].astro",
-    "src/pages/produkt/[product].astro",
-  ];
-  for (const file of files) {
-    const source = read(file);
-    assert.equal((source.match(/import DecisionJourney/g) ?? []).length, 1, file);
-    assert.equal((source.match(/<DecisionJourney/g) ?? []).length, 1, file);
-  }
+test("current experiences expose a contextual next-step journey", () => {
+  const guideRoute = read("src/pages/[slug].astro");
+  const guide = read("src/components/guide/GuideExperience.astro");
+  const comparison = read("src/pages/vergleiche/[comparison].astro");
+  const product = read("src/pages/produkt/[product].astro");
+
+  assert.match(guideRoute, /<GuideExperience/);
+  assert.match(guide, /model\.nextSteps\.map/);
+  assert.equal((comparison.match(/import DecisionJourney/g) ?? []).length, 1);
+  assert.equal((comparison.match(/<DecisionJourney/g) ?? []).length, 1);
+  assert.match(product, /import DecisionNextSteps/);
+  assert.match(product, /<DecisionNextSteps/);
 });
 
 test("Strict blockiert nur technische Fehler", () => {

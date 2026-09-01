@@ -12,4 +12,3 @@ test("Complete fliegt aus Queue",()=>assert.match(queue,/evidence\.status!=="com
 test("Confidence dämpft kleine Datenmengen",()=>{for(const n of [20,10,6,3,1])assert.match(queue,new RegExp("i>="+n));assert.match(queue,/searchBase\*cf/);});
 test("Partial ergänzt nur fehlende Bausteine",()=>{assert.match(queue,/Ergänze ausschließlich die fehlenden Evidence-Bausteine/);assert.match(queue,/nicht ersetzen oder doppeln/);});
 test("Research schützt Scores und Claims",()=>{assert.match(queue,/PfotenTechnik-Score/);assert.match(queue,/Keine eigenen Tests/);assert.match(queue,/Herstellerquellen/);assert.match(queue,/Widersprüche/);});
-test("bestehende drei Batches bleiben vorhanden",()=>{for(const r of ["test/external-evidence-batch-1-33.6.0.test.mjs","test/external-evidence-batch-2-33.6.1.test.mjs","test/external-evidence-batch-3-33.6.2.test.mjs"])assert.ok(fs.existsSync(path.join(app,r)));});

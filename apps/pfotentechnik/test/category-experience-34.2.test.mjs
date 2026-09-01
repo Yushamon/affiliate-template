@@ -34,7 +34,7 @@ test("34.2 uses one shared category route, ViewModel and renderer", () => {
   assert.match(routeSource, /<CategoryExperience/);
   assert.match(rendererSource, /data-category-experience="34\.2"/);
   assert.match(builderSource, /resolveProductMedia\(product\.data\.images\)/);
-  assert.match(rendererSource, /<EditorialScore value=\{product\.score\}/);
+  assert.match(rendererSource, /<ProductScore value=\{product\.score\}/);
   for (const category of categories) assert.match(configSource, new RegExp(`(?:"${category}"|${category}):`));
   for (const category of categories) {
     assert.equal(fs.existsSync(path.join(app, `src/pages/${category}.astro`)), false, `${category} has no hand-built page`);

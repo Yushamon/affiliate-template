@@ -1,13 +1,13 @@
 # Pfotentechnik Repository Audit
 
-Erstellt: 2026-09-01T08:28:47.500Z
+Erstellt: 2026-09-01T18:09:36.311Z
 
 ## Zusammenfassung
 
 - Routen: 266
 - Fehler: 0
 - Warnungen: 11
-- Hinweise: 54
+- Hinweise: 45
 
 ## Content-Bestand
 
@@ -19,7 +19,7 @@ Erstellt: 2026-09-01T08:28:47.500Z
 ## Befunde
 
 - **WARNING · internal-linking**: Verwaister Inhalt ohne erkannten internen Link: /hund-trinkt-ploetzlich-viel/ (`src/content/pages/hund-trinkt-ploetzlich-viel.md`)
-- **WARNING · maintainability**: Sehr große Datei mit 1509 Zeilen (`src/components/advisor/PetAdvisor.astro`)
+- **WARNING · maintainability**: Sehr große Datei mit 1493 Zeilen (`src/components/advisor/PetAdvisor.astro`)
 - **WARNING · maintainability**: Sehr große Datei mit 1012 Zeilen (`src/content/comparisons/beste-futterautomaten-fuer-zwei-katzen.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1685 Zeilen (`src/content/pages/futterautomat-richtig-reinigen.md`)
 - **WARNING · maintainability**: Sehr große Datei mit 1494 Zeilen (`src/content/pages/katze-frisst-nicht.md`)
@@ -66,7 +66,6 @@ Erstellt: 2026-09-01T08:28:47.500Z
 - **INFO · css**: Selektor 3× definiert: .premium-v3--pfotentechnik .premium-v3-product-media img (`src/styles/pfotentechnik-design-system.css`)
 - **INFO · css**: Selektor 4× definiert: [data-product-page] (`src/styles/pfotentechnik-design-system.css`)
 - **INFO · css**: Selektor 3× definiert: [data-product-page] [data-product-experience="2.0"] .alternatives article (`src/styles/pfotentechnik-product-mobile-premium.css`)
-- **INFO · css**: Selektor 3× definiert: :root (`src/styles/pfotentechnik-ui-system.css`)
 - **INFO · css**: Selektor 3× definiert: :where(.pt-surface) (`src/styles/pfotentechnik-visual-density.css`)
 - **INFO · css**: Selektor 3× definiert: @media (max-width: 47.99rem) (`src/styles/pfotentechnik-visual-density.css`)
 - **INFO · css**: Selektor 3× definiert: .container (`src/styles/pfotentechnik.css`)
@@ -75,11 +74,3 @@ Erstellt: 2026-09-01T08:28:47.500Z
 - **INFO · css**: Selektor 4× definiert: .pt-category-card (`src/styles/pfotentechnik.css`)
 - **INFO · css**: Selektor 3× definiert: .pt-values (`src/styles/pfotentechnik.css`)
 - **INFO · css**: Selektor 3× definiert: .pt-value-grid (`src/styles/pfotentechnik.css`)
-- **INFO · unused-components**: Komponente ohne erkannten Import: AdvisorCompare (`src/components/advisor/AdvisorCompare.astro`)
-- **INFO · unused-components**: Komponente ohne erkannten Import: ScenarioRecommendations (`src/components/comparison/ScenarioRecommendations.astro`)
-- **INFO · unused-components**: Komponente ohne erkannten Import: ContentGraphSections (`src/components/ContentGraphSections.astro`)
-- **INFO · unused-components**: Komponente ohne erkannten Import: ProductDecisionAssistant (`src/components/product-experience-2/ProductDecisionAssistant.astro`)
-- **INFO · unused-components**: Komponente ohne erkannten Import: ProductTrust2 (`src/components/product-experience-2/ProductTrust2.astro`)
-- **INFO · unused-components**: Komponente ohne erkannten Import: ProductEngineInsights (`src/components/product-standard-2/ProductEngineInsights.astro`)
-- **INFO · unused-components**: Komponente ohne erkannten Import: ProductStandard2 (`src/components/product-standard-2/ProductStandard2.astro`)
-- **INFO · unused-components**: Komponente ohne erkannten Import: ProductTrustPanel (`src/components/ProductTrustPanel.astro`)

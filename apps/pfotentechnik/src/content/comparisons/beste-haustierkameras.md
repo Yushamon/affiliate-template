@@ -37,7 +37,7 @@ icon: "📷"
 heroImage:
   src: "../../assets/images/products/petlibro-scout-smart-camera/hero.webp"
   alt: "Redaktionelle Darstellung einer festen Haustierkamera als Einstieg in den Klassenvergleich"
-tableTitle: "Fünf Speicher- und Kameraklassen direkt vergleichen"
+tableTitle: "Sechs Speicher- und Kameraklassen direkt vergleichen"
 cardsTitle: "Welche Klasse löst die Aufgabe?"
 items:
   - slug: "furbo-360-katzenkamera"

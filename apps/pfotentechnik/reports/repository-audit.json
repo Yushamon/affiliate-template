@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-09-01T08:28:47.500Z",
+    "generatedAt": "2026-09-01T18:09:36.311Z",
     "countsByCollection": {
       "pages": 82,
       "products": 101,
@@ -34,7 +34,7 @@
     "findings": {
       "error": 0,
       "warning": 11,
-      "info": 54
+      "info": 45
     }
   },
   "findings": [
@@ -47,7 +47,7 @@
     {
       "severity": "warning",
       "area": "maintainability",
-      "message": "Sehr große Datei mit 1509 Zeilen",
+      "message": "Sehr große Datei mit 1493 Zeilen",
       "file": "src/components/advisor/PetAdvisor.astro"
     },
     {
@@ -329,12 +329,6 @@
     {
       "severity": "info",
       "area": "css",
-      "message": "Selektor 3× definiert: :root",
-      "file": "src/styles/pfotentechnik-ui-system.css"
-    },
-    {
-      "severity": "info",
-      "area": "css",
       "message": "Selektor 3× definiert: :where(.pt-surface)",
       "file": "src/styles/pfotentechnik-visual-density.css"
     },
@@ -379,54 +373,6 @@
       "area": "css",
       "message": "Selektor 3× definiert: .pt-value-grid",
       "file": "src/styles/pfotentechnik.css"
-    },
-    {
-      "severity": "info",
-      "area": "unused-components",
-      "message": "Komponente ohne erkannten Import: AdvisorCompare",
-      "file": "src/components/advisor/AdvisorCompare.astro"
-    },
-    {
-      "severity": "info",
-      "area": "unused-components",
-      "message": "Komponente ohne erkannten Import: ScenarioRecommendations",
-      "file": "src/components/comparison/ScenarioRecommendations.astro"
-    },
-    {
-      "severity": "info",
-      "area": "unused-components",
-      "message": "Komponente ohne erkannten Import: ContentGraphSections",
-      "file": "src/components/ContentGraphSections.astro"
-    },
-    {
-      "severity": "info",
-      "area": "unused-components",
-      "message": "Komponente ohne erkannten Import: ProductDecisionAssistant",
-      "file": "src/components/product-experience-2/ProductDecisionAssistant.astro"
-    },
-    {
-      "severity": "info",
-      "area": "unused-components",
-      "message": "Komponente ohne erkannten Import: ProductTrust2",
-      "file": "src/components/product-experience-2/ProductTrust2.astro"
-    },
-    {
-      "severity": "info",
-      "area": "unused-components",
-      "message": "Komponente ohne erkannten Import: ProductEngineInsights",
-      "file": "src/components/product-standard-2/ProductEngineInsights.astro"
-    },
-    {
-      "severity": "info",
-      "area": "unused-components",
-      "message": "Komponente ohne erkannten Import: ProductStandard2",
-      "file": "src/components/product-standard-2/ProductStandard2.astro"
-    },
-    {
-      "severity": "info",
-      "area": "unused-components",
-      "message": "Komponente ohne erkannten Import: ProductTrustPanel",
-      "file": "src/components/ProductTrustPanel.astro"
     }
   ]
 }

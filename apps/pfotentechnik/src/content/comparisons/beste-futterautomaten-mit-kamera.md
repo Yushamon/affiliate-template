@@ -641,7 +641,7 @@ Für reine Fütterungspläne reicht meist ein günstigeres App-Modell. Video ist
 - [Futterautomat für Hunde](/futterautomat-hund/)
 - [Futterautomat im Urlaub](/futterautomat-im-urlaub/)
 
-## Was die vier Kameramodelle tatsächlich unterscheiden
+## Was die drei Kameramodelle tatsächlich unterscheiden
 
 Der **PETLIBRO Granary Camera Feeder** ist die geradlinige Wahl, wenn Livebild und Sicht auf den Napf genügen. Seine gespeicherten Fütterungspläne laufen laut Hersteller auch im Batterie-Notbetrieb weiter, Kamera und WLAN-Funktionen stehen dort jedoch nicht vollständig zur Verfügung.
 

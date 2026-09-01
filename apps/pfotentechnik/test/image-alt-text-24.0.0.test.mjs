@@ -11,7 +11,7 @@ const APP = path.join(ROOT, "apps", "pfotentechnik");
 const files = {
   home: path.join(ROOT, "packages", "affiliate-core", "src", "components", "home", "HomePage.astro"),
   gallery: path.join(APP, "src", "components", "product-experience-2", "ProductGallery29.astro"),
-  alternatives: path.join(APP, "src", "components", "product-standard-2", "AlternativesGrid.astro"),
+  alternatives: path.join(APP, "src", "components", "product-experience-2", "ProductAlternatives2.astro"),
   comparisonExperience: path.join(ROOT, "packages", "affiliate-core", "src", "components", "ComparisonExperience.astro"),
   comparisonExplorer: path.join(ROOT, "packages", "affiliate-core", "src", "components", "comparison", "ComparisonExplorer.astro"),
   lightbox: path.join(ROOT, "packages", "affiliate-core", "src", "components", "ImageLightbox.astro"),
@@ -53,7 +53,7 @@ test("Galerie-Thumbnails sind dekorativ und ihr Button besitzt einen zugänglich
 test("Komponenten verwenden kontextbezogene Alt-Texte", () => {
   assert.match(read(files.home), /alt=\{model\.hero\.image\.alt \?\? model\.hero\.title\}/);
   assert.match(read(files.gallery), /alt=\{item\.alt \|\| name\}/);
-  assert.match(read(files.alternatives), /\$\{item\.title\} – Produktansicht/);
+  assert.match(read(files.alternatives), /alt=\{item\.media\.alt \|\| item\.title\}/);
   assert.match(read(files.comparisonExperience), /\$\{product\.name\} im Direktvergleich/);
   assert.match(read(files.comparisonExplorer), /\$\{product\.title\} im Direktvergleich/);
   assert.match(read(files.lightbox), /alt="Vergrößerte Bildansicht"/);
