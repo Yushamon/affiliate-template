@@ -462,16 +462,16 @@ body:has(.comparison-hub) .footer-v2,body:has(.pt-knowledge-hub) .footer-v2 { ma
 :root[data-theme="dark"] .recommendation-card__image-link,html.dark .recommendation-card__image-link { background: linear-gradient(145deg, #edf2f0, #dfe8e4) !important; }
 @media (prefers-color-scheme: dark) {
   .manufacturer-hub-hero h1 { color: var(--pt-color-text) !important; }
-  .manufacturer-hub-hero p { color: #b8c4d3 !important; }
-  .manufacturer-hub-eyebrow, .manufacturer-divider { color: #5ee19a !important; }
-  .manufacturer-card { border-color: rgba(203, 213, 225, 0.16) !important; background: #101f32 !important; color: #dbe5ef !important; box-shadow: 0 18px 48px rgba(0, 0, 0, 0.26) !important; }
-  .manufacturer-card:hover { border-color: rgba(94, 225, 154, 0.28) !important; box-shadow: 0 22px 56px rgba(0, 0, 0, 0.34) !important; }
-  .manufacturer-card-content { background: #101f32 !important; }
+  .manufacturer-hub-hero p { color: var(--pt-color-text-muted) !important; }
+  .manufacturer-hub-eyebrow, .manufacturer-divider { color: var(--pt-color-accent-text) !important; }
+  .manufacturer-card { border-color: var(--pt-color-border) !important; background: var(--pt-color-surface) !important; color: var(--pt-color-text) !important; box-shadow: var(--pt-shadow-sm) !important; }
+  .manufacturer-card:hover { border-color: var(--pt-color-border-strong) !important; box-shadow: var(--pt-shadow-md) !important; }
+  .manufacturer-card-content { background: var(--pt-color-surface) !important; }
   .manufacturer-card-content h2 { color: var(--pt-color-text) !important; }
-  .manufacturer-card-content p { color: #b8c4d3 !important; }
-  .manufacturer-card-eyebrow, .manufacturer-rating, .manufacturer-link { color: #5ee19a !important; }
+  .manufacturer-card-content p { color: var(--pt-color-text-muted) !important; }
+  .manufacturer-card-eyebrow, .manufacturer-rating, .manufacturer-link { color: var(--pt-color-accent-text) !important; }
 }
-.manufacturer-card-image { position: relative !important; display: grid !important; aspect-ratio: 16 / 10 !important; place-items: center !important; overflow: hidden !important; padding: 0 !important; background: #e9efec !important; }
+.manufacturer-card-image { position: relative !important; display: grid !important; aspect-ratio: 16 / 10 !important; place-items: center !important; overflow: hidden !important; padding: 0 !important; background: var(--pt-color-media-stage) !important; }
 .manufacturer-card-image picture { display: block !important; width: 100% !important; height: 100% !important; }
 .manufacturer-card-image img { display: block !important; width: 100% !important; height: 100% !important; max-width: none !important; object-fit: cover !important; object-position: center 42% !important; transform: none !important; }
 @media (max-width: 760px) {
@@ -481,9 +481,9 @@ body:has(.comparison-hub) .footer-v2,body:has(.pt-knowledge-hub) .footer-v2 { ma
   .manufacturer-card-content { padding: 22px !important; }
   .manufacturer-card-content h2 { font-size: clamp(1.55rem, 7vw, 2rem) !important; }
 }
-:root[data-theme="dark"] .manufacturer-card,html.dark .manufacturer-card,:root[data-theme="dark"] .manufacturer-card-content,html.dark .manufacturer-card-content { border-color: rgba(203, 213, 225, 0.16) !important; background: #101f32 !important; color: #dbe5ef !important; }
+:root[data-theme="dark"] .manufacturer-card,html.dark .manufacturer-card,:root[data-theme="dark"] .manufacturer-card-content,html.dark .manufacturer-card-content { border-color: var(--pt-color-border) !important; background: var(--pt-color-surface) !important; color: var(--pt-color-text) !important; }
 :root[data-theme="dark"] .manufacturer-card-content h2,html.dark .manufacturer-card-content h2 { color: var(--pt-color-text) !important; }
-:root[data-theme="dark"] .manufacturer-card-content p,html.dark .manufacturer-card-content p { color: #b8c4d3 !important; }
+:root[data-theme="dark"] .manufacturer-card-content p,html.dark .manufacturer-card-content p { color: var(--pt-color-text-muted) !important; }
 
 :where( .premium-block, .decision-template-card, .article-callout, .info-card, .feature-card, .health-bridge, .warning-card, .summary-card, .pt-trust-panel, .pt-product-health, .pt-conversion-journey, .pt-everyday-review, .product-decision-v4, .product-ratings-v4, .product-strengths-v4, .product-alternatives-v4, .product-specs-v4 ) { scroll-margin-top: 104px; }
 :where( .pt-everyday-review, .pt-product-health, .pt-conversion-journey, .product-decision-v4, .product-ratings-v4, .product-strengths-v4, .product-alternatives-v4, .product-specs-v4 ) { margin-block: var(--pt-polish-space-section) !important; }

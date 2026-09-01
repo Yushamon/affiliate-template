@@ -287,21 +287,7 @@ const manufacturers =
 <script is:inline>
 (() => {
   const normalize = (root = document) => {
-    const selectors = [
-      '.manufacturer-rating',
-      '.brand-rating',
-      '.manufacturer-card__rating',
-      '[class*="manufacturer"][class*="rating"]',
-      '[class*="brand"][class*="rating"]',
-      '[class*="score"]',
-      '[data-rating]',
-      '[data-score]'
-    ];
-
-    const candidates = new Set();
-    selectors.forEach((selector) => {
-      root.querySelectorAll(selector).forEach((node) => candidates.add(node));
-    });
+    const candidates = root.querySelectorAll('.manufacturer-rating');
 
     for (const node of candidates) {
       if (!(node instanceof HTMLElement)) continue;
@@ -353,16 +339,6 @@ const manufacturers =
   };
 
   normalize();
-  document.addEventListener('astro:page-load', () => normalize());
-
-  const observer = new MutationObserver((mutations) => {
-    for (const mutation of mutations) {
-      for (const added of mutation.addedNodes) {
-        if (added instanceof HTMLElement) normalize(added);
-      }
-    }
-  });
-  observer.observe(document.documentElement, { childList: true, subtree: true });
 })();
 </script>
 
