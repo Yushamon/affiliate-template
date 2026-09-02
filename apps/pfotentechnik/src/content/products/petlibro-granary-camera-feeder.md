@@ -58,10 +58,10 @@ images:
     - src: ../../assets/images/products/petlibro-granary-camera/gallery-3.webp
       alt: PETLIBRO Granary Camera Feeder im Katzenhaushalt
 price:
-  current: 127.49
+  current: 139.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-28T09:04:57.627Z"
+  checkedAt: "2026-09-02T06:04:03.730Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -76,12 +76,12 @@ rating: 4.6
 score: 92
 
 priceState: "available"
-priceUpdated: "2026-08-28T09:04:57.627Z"
+priceUpdated: "2026-09-02T06:04:03.730Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-28T09:04:57.627Z"
+availabilityUpdated: "2026-09-02T06:04:03.730Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

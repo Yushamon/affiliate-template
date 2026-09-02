@@ -1,6 +1,6 @@
 # Demand Discovery
 
-Generiert: 2026-08-25T13:26:35.125Z
+Generiert: 2026-09-02T06:06:21.151Z
 
 ## Trennung der Systeme
 
@@ -20,19 +20,19 @@ Keine Nachfrage, kein Suchvolumen und keine SERP-Beobachtung wird erfunden.
 
 ## Datenstand
 
-- Search: 2026-08-25T06:21:38.912Z
-- Google: 2026-08-24T12:23:27.763Z
-- Bing: 2026-08-23T07:00:00.000Z
-- Content Graph: 2026-08-25T13:23:52.222Z
+- Search: 2026-08-28T09:03:13.694Z
+- Google: 2026-08-28T09:03:13.658Z
+- Bing: 2026-08-27T07:00:00.000Z
+- Content Graph: 2026-09-01T04:06:47.045Z
 - Research Ground Truth: 2026-08-25
 
 ## Matching-Ergebnis
 
 - covered: 14
 - partial: 3
-- fragmented: 1
+- fragmented: 2
 - missing: 0
-- overcovered: 1
+- overcovered: 0
 - uncertain: 1
 
 Aktive Opportunities: 6 von maximal 20.
@@ -44,7 +44,7 @@ Aktive Opportunities: 6 von maximal 20.
 | trinkbrunnen | you tube katzentrinkbrunnen filter einsetzen | /katzentrinkbrunnen-richtig-reinigen/ | partial | medium | false |
 | trinkbrunnen | wie wird die pumpe eines katzenbrunnens gereinigt? gibt es eine anleitung wie diese auseinander gebaut werden soll? | /katzentrinkbrunnen-richtig-reinigen/ | uncertain | low | false |
 | gps-tracker | warum piepsen gps tracker für haustiere in regelmäßigen abständen | /gps-tracker/ | partial | medium | false |
-| futterautomaten | futterautomat 2 katzen | – | overcovered | medium | false |
+| futterautomaten | nassfutterautomat katze | /futterautomat-katze/ | fragmented | medium | false |
 
 ## Manuelle Prüfung
 
@@ -78,11 +78,11 @@ Aktive Opportunities: 6 von maximal 20.
 - Konkreter Gap: Der beste Match /gps-tracker/ deckt nur einen Teil der Problembegriffe in Überschriften, Inhalt und Graph-Metadaten ab.
 - Empfohlene Aktion: Bestehende Intent-Owner-Seite /gps-tracker/ auf die konkrete Inhaltslücke prüfen.
 
-### futterautomat 2 katzen
+### nassfutterautomat katze
 
 - Demand Evidence: gsc
-- Konkreter Gap: Mindestens drei starke Inhaltsmatches ohne eindeutigen Owner: /vergleiche/futterautomat-gegen-schlingen/, /futterautomat-im-urlaub/, /smarte-futterautomaten/, /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/, /vergleiche/beste-futterautomaten-fuer-zwei-katzen/.
-- Empfohlene Aktion: Als mögliches Kannibalisierungs-Finding auditieren; nichts automatisch ändern.
+- Konkreter Gap: Ähnlich starke Matches auf /katze-frisst-nicht/, /trockenfutter-oder-nassfutter-katze/, /vergleiche/beste-futterautomaten-fuer-nassfutter/.
+- Empfohlene Aktion: Intent Ownership und mögliche Konsolidierung manuell prüfen.
 
 
 ## Admin-Integration

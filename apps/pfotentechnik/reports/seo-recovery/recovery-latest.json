@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T06:41:59.467Z",
+  "generatedAt": "2026-09-02T06:06:54.467Z",
   "source": {
     "provider": "google",
     "gscFile": "src/data/seo/gsc-dashboard-ranges.json",
@@ -12,10 +12,10 @@
     "redirects": 33,
     "migrationRisk": 0,
     "migrationWatch": 2,
-    "transferring": 2,
+    "transferring": 0,
     "technicalErrors": 0,
     "warnings": 0,
-    "opportunities": 38,
+    "opportunities": 29,
     "distAvailable": true
   },
   "migrations": [
@@ -36,7 +36,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 15
+        "targetInternalLinks": 14
       },
       "signal": {
         "primaryRange": "28d",
@@ -84,7 +84,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 115
+        "targetInternalLinks": 98
       },
       "signal": {
         "primaryRange": "28d",
@@ -116,102 +116,6 @@
       }
     },
     {
-      "source": "/futterautomat-fuer-zwei-katzen/",
-      "target": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
-      "finalTarget": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
-      "status": "transferring",
-      "redirectStatus": 301,
-      "oneHop": true,
-      "technicalIssues": [],
-      "technical": {
-        "distAvailable": true,
-        "targetBuilt": true,
-        "sourceBuilt": false,
-        "canonical": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
-        "noindex": false,
-        "sourceInSitemap": false,
-        "targetInSitemap": true,
-        "sourceInternalLinks": 0,
-        "targetInternalLinks": 30
-      },
-      "signal": {
-        "primaryRange": "28d",
-        "primaryOld": {
-          "clicks": 0,
-          "impressions": 6,
-          "ctr": 0,
-          "position": 70.2
-        },
-        "primaryNew": {
-          "clicks": 0,
-          "impressions": 6,
-          "ctr": 0,
-          "position": 37.7
-        },
-        "contextRange": "3m",
-        "contextOld": {
-          "clicks": 1,
-          "impressions": 37,
-          "ctr": 2.7,
-          "position": 23.3
-        },
-        "contextNew": {
-          "clicks": 0,
-          "impressions": 12,
-          "ctr": 0,
-          "position": 50
-        }
-      }
-    },
-    {
-      "source": "/futterautomat-nassfutter/",
-      "target": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
-      "finalTarget": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
-      "status": "transferring",
-      "redirectStatus": 301,
-      "oneHop": true,
-      "technicalIssues": [],
-      "technical": {
-        "distAvailable": true,
-        "targetBuilt": true,
-        "sourceBuilt": false,
-        "canonical": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
-        "noindex": false,
-        "sourceInSitemap": false,
-        "targetInSitemap": true,
-        "sourceInternalLinks": 0,
-        "targetInternalLinks": 31
-      },
-      "signal": {
-        "primaryRange": "28d",
-        "primaryOld": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 44
-        },
-        "primaryNew": {
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 17
-        },
-        "contextRange": "3m",
-        "contextOld": {
-          "clicks": 0,
-          "impressions": 16,
-          "ctr": 0,
-          "position": 34.7
-        },
-        "contextNew": {
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 17
-        }
-      }
-    },
-    {
       "source": "/beste-futterautomaten-fuer-zwei-katzen/",
       "target": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
       "finalTarget": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
@@ -228,7 +132,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 30
+        "targetInternalLinks": 24
       },
       "signal": {
         "primaryRange": "28d",
@@ -260,9 +164,9 @@
       }
     },
     {
-      "source": "/beste-gps-tracker-fuer-hunde/",
-      "target": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-      "finalTarget": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "source": "/futterautomat-fuer-zwei-katzen/",
+      "target": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "finalTarget": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
       "status": "healthy",
       "redirectStatus": 301,
       "oneHop": true,
@@ -271,12 +175,12 @@
         "distAvailable": true,
         "targetBuilt": true,
         "sourceBuilt": false,
-        "canonical": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+        "canonical": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
         "noindex": false,
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 50
+        "targetInternalLinks": 24
       },
       "signal": {
         "primaryRange": "28d",
@@ -288,22 +192,22 @@
         },
         "primaryNew": {
           "clicks": 0,
-          "impressions": 4,
+          "impressions": 6,
           "ctr": 0,
-          "position": 58.5
+          "position": 37.7
         },
         "contextRange": "3m",
         "contextOld": {
-          "clicks": 0,
-          "impressions": 0,
-          "ctr": 0,
-          "position": 0
+          "clicks": 1,
+          "impressions": 37,
+          "ctr": 2.7,
+          "position": 23.3
         },
         "contextNew": {
           "clicks": 0,
-          "impressions": 5,
+          "impressions": 12,
           "ctr": 0,
-          "position": 54.2
+          "position": 50
         }
       }
     },
@@ -324,7 +228,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 66
+        "targetInternalLinks": 52
       },
       "signal": {
         "primaryRange": "28d",
@@ -372,7 +276,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 31
+        "targetInternalLinks": 29
       },
       "signal": {
         "primaryRange": "28d",
@@ -404,9 +308,9 @@
       }
     },
     {
-      "source": "/beste-trinkbrunnen-fuer-katzen/",
-      "target": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-      "finalTarget": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "source": "/futterautomat-nassfutter/",
+      "target": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "finalTarget": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
       "status": "healthy",
       "redirectStatus": 301,
       "oneHop": true,
@@ -415,12 +319,60 @@
         "distAvailable": true,
         "targetBuilt": true,
         "sourceBuilt": false,
-        "canonical": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+        "canonical": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
         "noindex": false,
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 119
+        "targetInternalLinks": 29
+      },
+      "signal": {
+        "primaryRange": "28d",
+        "primaryOld": {
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        "primaryNew": {
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 17
+        },
+        "contextRange": "3m",
+        "contextOld": {
+          "clicks": 0,
+          "impressions": 16,
+          "ctr": 0,
+          "position": 34.7
+        },
+        "contextNew": {
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 17
+        }
+      }
+    },
+    {
+      "source": "/beste-gps-tracker-fuer-hunde/",
+      "target": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "finalTarget": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "status": "healthy",
+      "redirectStatus": 301,
+      "oneHop": true,
+      "technicalIssues": [],
+      "technical": {
+        "distAvailable": true,
+        "targetBuilt": true,
+        "sourceBuilt": false,
+        "canonical": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+        "noindex": false,
+        "sourceInSitemap": false,
+        "targetInSitemap": true,
+        "sourceInternalLinks": 0,
+        "targetInternalLinks": 48
       },
       "signal": {
         "primaryRange": "28d",
@@ -434,7 +386,7 @@
           "clicks": 0,
           "impressions": 2,
           "ctr": 0,
-          "position": 22
+          "position": 41
         },
         "contextRange": "3m",
         "contextOld": {
@@ -445,9 +397,9 @@
         },
         "contextNew": {
           "clicks": 0,
-          "impressions": 23,
+          "impressions": 5,
           "ctr": 0,
-          "position": 56.4
+          "position": 54.2
         }
       }
     },
@@ -468,7 +420,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 5
+        "targetInternalLinks": 4
       },
       "signal": {
         "primaryRange": "28d",
@@ -500,9 +452,9 @@
       }
     },
     {
-      "source": "/beste-futterautomaten-fuer-hunde/",
-      "target": "/vergleiche/beste-futterautomaten-fuer-hunde/",
-      "finalTarget": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+      "source": "/beste-futterautomaten-fuer-mehrtierhaushalte/",
+      "target": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+      "finalTarget": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
       "status": "healthy",
       "redirectStatus": 301,
       "oneHop": true,
@@ -511,12 +463,12 @@
         "distAvailable": true,
         "targetBuilt": true,
         "sourceBuilt": false,
-        "canonical": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+        "canonical": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
         "noindex": false,
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 39
+        "targetInternalLinks": 7
       },
       "signal": {
         "primaryRange": "28d",
@@ -530,20 +482,68 @@
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 10
+          "position": 6
         },
         "contextRange": "3m",
         "contextOld": {
-          "clicks": 1,
-          "impressions": 3,
-          "ctr": 33.33,
-          "position": 5.3
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 6
         },
         "contextNew": {
           "clicks": 0,
-          "impressions": 5,
+          "impressions": 1,
           "ctr": 0,
-          "position": 48.6
+          "position": 6
+        }
+      }
+    },
+    {
+      "source": "/beste-trinkbrunnen-fuer-katzen/",
+      "target": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "finalTarget": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "status": "healthy",
+      "redirectStatus": 301,
+      "oneHop": true,
+      "technicalIssues": [],
+      "technical": {
+        "distAvailable": true,
+        "targetBuilt": true,
+        "sourceBuilt": false,
+        "canonical": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+        "noindex": false,
+        "sourceInSitemap": false,
+        "targetInSitemap": true,
+        "sourceInternalLinks": 0,
+        "targetInternalLinks": 113
+      },
+      "signal": {
+        "primaryRange": "28d",
+        "primaryOld": {
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        "primaryNew": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 34
+        },
+        "contextRange": "3m",
+        "contextOld": {
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        "contextNew": {
+          "clicks": 0,
+          "impressions": 23,
+          "ctr": 0,
+          "position": 56.4
         }
       }
     },
@@ -564,7 +564,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 22
+        "targetInternalLinks": 21
       },
       "signal": {
         "primaryRange": "28d",
@@ -612,7 +612,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 819
+        "targetInternalLinks": 790
       },
       "signal": {
         "primaryRange": "28d",
@@ -660,7 +660,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 25
+        "targetInternalLinks": 11
       },
       "signal": {
         "primaryRange": "28d",
@@ -688,6 +688,54 @@
           "impressions": 0,
           "ctr": 0,
           "position": 0
+        }
+      }
+    },
+    {
+      "source": "/beste-futterautomaten-fuer-hunde/",
+      "target": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+      "finalTarget": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+      "status": "healthy",
+      "redirectStatus": 301,
+      "oneHop": true,
+      "technicalIssues": [],
+      "technical": {
+        "distAvailable": true,
+        "targetBuilt": true,
+        "sourceBuilt": false,
+        "canonical": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+        "noindex": false,
+        "sourceInSitemap": false,
+        "targetInSitemap": true,
+        "sourceInternalLinks": 0,
+        "targetInternalLinks": 30
+      },
+      "signal": {
+        "primaryRange": "28d",
+        "primaryOld": {
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        "primaryNew": {
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        "contextRange": "3m",
+        "contextOld": {
+          "clicks": 1,
+          "impressions": 3,
+          "ctr": 33.33,
+          "position": 5.3
+        },
+        "contextNew": {
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 48.6
         }
       }
     },
@@ -708,7 +756,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 40
+        "targetInternalLinks": 34
       },
       "signal": {
         "primaryRange": "28d",
@@ -730,54 +778,6 @@
           "impressions": 0,
           "ctr": 0,
           "position": 0
-        },
-        "contextNew": {
-          "clicks": 0,
-          "impressions": 0,
-          "ctr": 0,
-          "position": 0
-        }
-      }
-    },
-    {
-      "source": "/beste-futterautomaten-fuer-mehrtierhaushalte/",
-      "target": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
-      "finalTarget": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
-      "status": "healthy",
-      "redirectStatus": 301,
-      "oneHop": true,
-      "technicalIssues": [],
-      "technical": {
-        "distAvailable": true,
-        "targetBuilt": true,
-        "sourceBuilt": false,
-        "canonical": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
-        "noindex": false,
-        "sourceInSitemap": false,
-        "targetInSitemap": true,
-        "sourceInternalLinks": 0,
-        "targetInternalLinks": 8
-      },
-      "signal": {
-        "primaryRange": "28d",
-        "primaryOld": {
-          "clicks": 0,
-          "impressions": 0,
-          "ctr": 0,
-          "position": 0
-        },
-        "primaryNew": {
-          "clicks": 0,
-          "impressions": 0,
-          "ctr": 0,
-          "position": 0
-        },
-        "contextRange": "3m",
-        "contextOld": {
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 6
         },
         "contextNew": {
           "clicks": 0,
@@ -852,7 +852,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 6
+        "targetInternalLinks": 5
       },
       "signal": {
         "primaryRange": "28d",
@@ -948,7 +948,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 22
+        "targetInternalLinks": 19
       },
       "signal": {
         "primaryRange": "28d",
@@ -996,7 +996,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 20
+        "targetInternalLinks": 19
       },
       "signal": {
         "primaryRange": "28d",
@@ -1044,7 +1044,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 7
+        "targetInternalLinks": 9
       },
       "signal": {
         "primaryRange": "28d",
@@ -1092,7 +1092,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 19
+        "targetInternalLinks": 13
       },
       "signal": {
         "primaryRange": "28d",
@@ -1140,7 +1140,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 48
+        "targetInternalLinks": 26
       },
       "signal": {
         "primaryRange": "28d",
@@ -1188,7 +1188,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 10
+        "targetInternalLinks": 8
       },
       "signal": {
         "primaryRange": "28d",
@@ -1236,7 +1236,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 24
+        "targetInternalLinks": 22
       },
       "signal": {
         "primaryRange": "28d",
@@ -1284,7 +1284,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 22
+        "targetInternalLinks": 19
       },
       "signal": {
         "primaryRange": "28d",
@@ -1332,7 +1332,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 20
+        "targetInternalLinks": 19
       },
       "signal": {
         "primaryRange": "28d",
@@ -1380,7 +1380,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 15
+        "targetInternalLinks": 12
       },
       "signal": {
         "primaryRange": "28d",
@@ -1428,7 +1428,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 12
+        "targetInternalLinks": 10
       },
       "signal": {
         "primaryRange": "28d",
@@ -1476,7 +1476,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 8
+        "targetInternalLinks": 9
       },
       "signal": {
         "primaryRange": "28d",
@@ -1524,7 +1524,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 4
+        "targetInternalLinks": 8
       },
       "signal": {
         "primaryRange": "28d",
@@ -1572,7 +1572,7 @@
         "sourceInSitemap": false,
         "targetInSitemap": true,
         "sourceInternalLinks": 0,
-        "targetInternalLinks": 812
+        "targetInternalLinks": 826
       },
       "signal": {
         "primaryRange": "28d",
@@ -1610,10 +1610,10 @@
       "type": "hub",
       "status": "push",
       "confidence": "low",
-      "score": 74,
+      "score": 75,
       "scores": {
         "ranking": 30,
-        "impressions": 11,
+        "impressions": 12,
         "ctrPotential": 15,
         "queryMatch": 0,
         "context": 10,
@@ -1640,10 +1640,10 @@
       "type": "comparison",
       "status": "improve",
       "confidence": "low",
-      "score": 70,
+      "score": 71,
       "scores": {
         "ranking": 28,
-        "impressions": 11,
+        "impressions": 12,
         "ctrPotential": 15,
         "queryMatch": 0,
         "context": 6,
@@ -1663,8 +1663,8 @@
       },
       "queries": [],
       "migrationSources": [
-        "/futterautomat-nassfutter/",
-        "/beste-futterautomaten-fuer-nassfutter/"
+        "/beste-futterautomaten-fuer-nassfutter/",
+        "/futterautomat-nassfutter/"
       ],
       "action": "SERP-Intent und Konkurrenz-Gaps prüfen, bevor weiterer Content ergänzt wird."
     },
@@ -1711,10 +1711,42 @@
         }
       ],
       "migrationSources": [
-        "/futterautomat-fuer-zwei-katzen/",
-        "/beste-futterautomaten-fuer-zwei-katzen/"
+        "/beste-futterautomaten-fuer-zwei-katzen/",
+        "/futterautomat-fuer-zwei-katzen/"
       ],
       "action": "SERP-Intent und Konkurrenz-Gaps prüfen, bevor weiterer Content ergänzt wird."
+    },
+    {
+      "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "type": "comparison",
+      "status": "defend",
+      "confidence": "low",
+      "score": 59,
+      "scores": {
+        "ranking": 12,
+        "impressions": 12,
+        "ctrPotential": 15,
+        "queryMatch": 0,
+        "context": 10,
+        "commercial": 10
+      },
+      "metrics": {
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 2.3
+      },
+      "contextMetrics": {
+        "clicks": 1,
+        "impressions": 16,
+        "ctr": 6.25,
+        "position": 30.8
+      },
+      "queries": [],
+      "migrationSources": [
+        "/beste-futterautomaten-fuer-katzen/"
+      ],
+      "action": "Intent-Ownership festigen, unabhängige Evidenz schärfen und gezielte interne/externe Links aufbauen."
     },
     {
       "page": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
@@ -1749,36 +1781,34 @@
       "action": "Intent-Ownership festigen, unabhängige Evidenz schärfen und gezielte interne/externe Links aufbauen."
     },
     {
-      "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-      "type": "comparison",
-      "status": "defend",
+      "page": "/produkt/petkit-eversweet-ultra/",
+      "type": "product",
+      "status": "push",
       "confidence": "low",
       "score": 58,
       "scores": {
-        "ranking": 12,
-        "impressions": 11,
-        "ctrPotential": 15,
+        "ranking": 30,
+        "impressions": 9,
+        "ctrPotential": 0,
         "queryMatch": 0,
         "context": 10,
-        "commercial": 10
+        "commercial": 9
       },
       "metrics": {
         "clicks": 0,
-        "impressions": 3,
+        "impressions": 2,
         "ctr": 0,
-        "position": 2.3
+        "position": 8
       },
       "contextMetrics": {
-        "clicks": 1,
-        "impressions": 16,
-        "ctr": 6.25,
-        "position": 30.8
+        "clicks": 2,
+        "impressions": 17,
+        "ctr": 11.76,
+        "position": 9.1
       },
       "queries": [],
-      "migrationSources": [
-        "/beste-futterautomaten-fuer-katzen/"
-      ],
-      "action": "Intent-Ownership festigen, unabhängige Evidenz schärfen und gezielte interne/externe Links aufbauen."
+      "migrationSources": [],
+      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
     },
     {
       "page": "/vergleiche/",
@@ -1809,38 +1839,6 @@
       "queries": [],
       "migrationSources": [
         "/vergleiche/-fuer-katzen/"
-      ],
-      "action": "Intent-Ownership festigen, unabhängige Evidenz schärfen und gezielte interne/externe Links aufbauen."
-    },
-    {
-      "page": "/vergleiche/beste-futterautomaten-fuer-hunde/",
-      "type": "comparison",
-      "status": "push",
-      "confidence": "low",
-      "score": 56,
-      "scores": {
-        "ranking": 30,
-        "impressions": 6,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 10,
-        "commercial": 10
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 10
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": 0,
-        "position": 48.6
-      },
-      "queries": [],
-      "migrationSources": [
-        "/beste-futterautomaten-fuer-hunde/"
       ],
       "action": "Intent-Ownership festigen, unabhängige Evidenz schärfen und gezielte interne/externe Links aufbauen."
     },
@@ -1920,9 +1918,9 @@
       },
       "metrics": {
         "clicks": 0,
-        "impressions": 11,
+        "impressions": 10,
         "ctr": 0,
-        "position": 41.1
+        "position": 40.6
       },
       "contextMetrics": {
         "clicks": 0,
@@ -1944,13 +1942,6 @@
           "impressions": 2,
           "ctr": 0,
           "position": 62
-        },
-        {
-          "query": "katze futterautomat nassfutter",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 46
         },
         {
           "query": "nassfutter automat katzen",
@@ -2008,118 +1999,36 @@
       "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
     },
     {
-      "page": "/produkt/petkit-eversweet-ultra/",
-      "type": "product",
+      "page": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+      "type": "comparison",
       "status": "push",
       "confidence": "low",
-      "score": 53,
-      "scores": {
-        "ranking": 28,
-        "impressions": 6,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 10,
-        "commercial": 9
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 12
-      },
-      "contextMetrics": {
-        "clicks": 2,
-        "impressions": 16,
-        "ctr": 12.5,
-        "position": 9.4
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
-    },
-    {
-      "page": "/produkt/pawbby-smart-pet-feeder/",
-      "type": "product",
-      "status": "push",
-      "confidence": "low",
-      "score": 51,
+      "score": 52,
       "scores": {
         "ranking": 30,
         "impressions": 6,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 6,
-        "commercial": 9
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 10
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 10
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
-    },
-    {
-      "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-      "type": "comparison",
-      "status": "investigate",
-      "confidence": "low",
-      "score": 50,
-      "scores": {
-        "ranking": 4,
-        "impressions": 13,
-        "ctrPotential": 0,
-        "queryMatch": 13,
-        "context": 10,
         "commercial": 10
       },
       "metrics": {
         "clicks": 0,
-        "impressions": 4,
+        "impressions": 1,
         "ctr": 0,
-        "position": 58.5
+        "position": 6
       },
       "contextMetrics": {
         "clicks": 0,
-        "impressions": 5,
+        "impressions": 1,
         "ctr": 0,
-        "position": 54.2
+        "position": 6
       },
-      "queries": [
-        {
-          "query": "\"garmin alpha\" \"dog\" -\"watch\" -site:reddit.com -site:twitter.com -site:x.com -site:wykop.pl -site:tripadvisor.com -site:youtube.com -site:yelp.com -site:booking.com -site:facebook.com -site:instagram.com -site:tiktok.com",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6
-        },
-        {
-          "query": "gps tracker für kleine hunde",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 72
-        },
-        {
-          "query": "mini gps tracker hund",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 80
-        }
-      ],
+      "queries": [],
       "migrationSources": [
-        "/beste-gps-tracker-fuer-hunde/"
+        "/beste-futterautomaten-fuer-mehrtierhaushalte/"
       ],
-      "action": "SERP-Intent und Konkurrenz-Gaps prüfen, bevor weiterer Content ergänzt wird."
+      "action": "Intent-Ownership festigen, unabhängige Evidenz schärfen und gezielte interne/externe Links aufbauen."
     },
     {
       "page": "/uebergewicht-bei-katzen-vermeiden/",
@@ -2152,36 +2061,49 @@
       "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
     },
     {
-      "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-      "type": "comparison",
-      "status": "improve",
-      "confidence": "low",
-      "score": 49,
+      "page": "/",
+      "type": "content",
+      "status": "investigate",
+      "confidence": "medium",
+      "score": 48,
       "scores": {
-        "ranking": 20,
-        "impressions": 9,
+        "ranking": 4,
+        "impressions": 19,
         "ctrPotential": 0,
-        "queryMatch": 0,
+        "queryMatch": 11,
         "context": 10,
-        "commercial": 10
+        "commercial": 4
       },
       "metrics": {
         "clicks": 0,
-        "impressions": 2,
+        "impressions": 9,
         "ctr": 0,
-        "position": 22
+        "position": 40.2
       },
       "contextMetrics": {
-        "clicks": 0,
+        "clicks": 1,
         "impressions": 23,
-        "ctr": 0,
-        "position": 56.4
+        "ctr": 4.35,
+        "position": 31.1
       },
-      "queries": [],
-      "migrationSources": [
-        "/beste-trinkbrunnen-fuer-katzen/"
+      "queries": [
+        {
+          "query": "petsafe bewertung",
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 46.3
+        },
+        {
+          "query": "beuteerkennung",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 72
+        }
       ],
-      "action": "SERP-Intent und Konkurrenz-Gaps prüfen, bevor weiterer Content ergänzt wird."
+      "migrationSources": [],
+      "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
     },
     {
       "page": "/hund-frisst-nicht/",
@@ -2274,44 +2196,6 @@
       "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
     },
     {
-      "page": "/produkt/weenect-xs/",
-      "type": "product",
-      "status": "investigate",
-      "confidence": "low",
-      "score": 46,
-      "scores": {
-        "ranking": 12,
-        "impressions": 6,
-        "ctrPotential": 0,
-        "queryMatch": 9,
-        "context": 10,
-        "commercial": 9
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 31
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": 0,
-        "position": 17.3
-      },
-      "queries": [
-        {
-          "query": "weenect abo",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 31
-        }
-      ],
-      "migrationSources": [],
-      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
-    },
-    {
       "page": "/produkt/weenect-xt/",
       "type": "product",
       "status": "improve",
@@ -2342,34 +2226,44 @@
       "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
     },
     {
-      "page": "/",
-      "type": "content",
-      "status": "defend",
+      "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "type": "comparison",
+      "status": "investigate",
       "confidence": "low",
-      "score": 41,
+      "score": 42,
       "scores": {
-        "ranking": 18,
+        "ranking": 4,
         "impressions": 9,
         "ctrPotential": 0,
-        "queryMatch": 0,
+        "queryMatch": 9,
         "context": 10,
-        "commercial": 4
+        "commercial": 10
       },
       "metrics": {
         "clicks": 0,
         "impressions": 2,
         "ctr": 0,
-        "position": 3.5
+        "position": 41
       },
       "contextMetrics": {
-        "clicks": 1,
-        "impressions": 15,
-        "ctr": 6.67,
-        "position": 23.9
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 54.2
       },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
+      "queries": [
+        {
+          "query": "\"garmin alpha\" \"dog\" -\"watch\" -site:reddit.com -site:twitter.com -site:x.com -site:wykop.pl -site:tripadvisor.com -site:youtube.com -site:yelp.com -site:booking.com -site:facebook.com -site:instagram.com -site:tiktok.com",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6
+        }
+      ],
+      "migrationSources": [
+        "/beste-gps-tracker-fuer-hunde/"
+      ],
+      "action": "SERP-Intent und Konkurrenz-Gaps prüfen, bevor weiterer Content ergänzt wird."
     },
     {
       "page": "/produkt/oneisall-5l-automatic-cat-feeder/",
@@ -2402,66 +2296,6 @@
       "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
     },
     {
-      "page": "/impressum/",
-      "type": "content",
-      "status": "defend",
-      "confidence": "low",
-      "score": 38,
-      "scores": {
-        "ranking": 18,
-        "impressions": 6,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 10,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 4
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 6
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
-      "page": "/so-bewerten-wir/",
-      "type": "content",
-      "status": "defend",
-      "confidence": "low",
-      "score": 38,
-      "scores": {
-        "ranking": 18,
-        "impressions": 6,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 10,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 1,
-        "impressions": 1,
-        "ctr": 100,
-        "position": 5
-      },
-      "contextMetrics": {
-        "clicks": 1,
-        "impressions": 2,
-        "ctr": 50,
-        "position": 11.5
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
       "page": "/hersteller/weenect/",
       "type": "manufacturer",
       "status": "improve",
@@ -2492,72 +2326,36 @@
       "action": "Marken- und Modellabdeckung schärfen und die wichtigsten Produktziele intern priorisieren."
     },
     {
-      "page": "/produkt/petlibro-stainless-steel-fountain/",
-      "type": "product",
-      "status": "defend",
+      "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "type": "comparison",
+      "status": "investigate",
       "confidence": "low",
-      "score": 37,
+      "score": 38,
       "scores": {
         "ranking": 12,
         "impressions": 6,
         "ctrPotential": 0,
         "queryMatch": 0,
         "context": 10,
-        "commercial": 9
+        "commercial": 10
       },
       "metrics": {
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
-        "position": 3
+        "position": 34
       },
       "contextMetrics": {
         "clicks": 0,
-        "impressions": 10,
+        "impressions": 23,
         "ctr": 0,
-        "position": 12.5
+        "position": 56.4
       },
       "queries": [],
-      "migrationSources": [],
-      "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
-    },
-    {
-      "page": "/futterautomat-im-urlaub/",
-      "type": "content",
-      "status": "investigate",
-      "confidence": "low",
-      "score": 36,
-      "scores": {
-        "ranking": 4,
-        "impressions": 9,
-        "ctrPotential": 0,
-        "queryMatch": 9,
-        "context": 10,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 45.5
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 6,
-        "ctr": 0,
-        "position": 22
-      },
-      "queries": [
-        {
-          "query": "futterautomat katze urlaub",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 45.5
-        }
+      "migrationSources": [
+        "/beste-trinkbrunnen-fuer-katzen/"
       ],
-      "migrationSources": [],
-      "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
+      "action": "SERP-Intent und Konkurrenz-Gaps prüfen, bevor weiterer Content ergänzt wird."
     },
     {
       "page": "/vergleiche/futterautomat-mit-app/",
@@ -2620,74 +2418,6 @@
       "queries": [],
       "migrationSources": [],
       "action": "Externe Evidenz, konkrete Schwächen/Stärken, Snippet und kontextuelle interne Links verbessern."
-    },
-    {
-      "page": "/hund-trinkt-zu-wenig/",
-      "type": "content",
-      "status": "investigate",
-      "confidence": "low",
-      "score": 33,
-      "scores": {
-        "ranking": 4,
-        "impressions": 6,
-        "ctrPotential": 0,
-        "queryMatch": 9,
-        "context": 10,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 99
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 61
-      },
-      "queries": [
-        {
-          "query": "hund trinkt zu wenig symptome",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 99
-        }
-      ],
-      "migrationSources": [],
-      "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
-    },
-    {
-      "page": "/kontakt/",
-      "type": "content",
-      "status": "defend",
-      "confidence": "low",
-      "score": 32,
-      "scores": {
-        "ranking": 12,
-        "impressions": 6,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 10,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 1,
-        "impressions": 1,
-        "ctr": 100,
-        "position": 3
-      },
-      "contextMetrics": {
-        "clicks": 1,
-        "impressions": 5,
-        "ctr": 20,
-        "position": 2.6
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
     },
     {
       "page": "/hersteller/tractive/",
@@ -2854,36 +2584,6 @@
       "queries": [],
       "migrationSources": [],
       "action": "Antwort oberhalb des Folds präzisieren und passende Hub-/Vergleichslinks stärken."
-    },
-    {
-      "page": "/hund-hat-durchfall/",
-      "type": "content",
-      "status": "investigate",
-      "confidence": "low",
-      "score": 24,
-      "scores": {
-        "ranking": 4,
-        "impressions": 6,
-        "ctrPotential": 0,
-        "queryMatch": 0,
-        "context": 10,
-        "commercial": 4
-      },
-      "metrics": {
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 80
-      },
-      "contextMetrics": {
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": 0,
-        "position": 68.6
-      },
-      "queries": [],
-      "migrationSources": [],
-      "action": "Suchintention gegen die rankende Seite prüfen; nur bei klarer Lücke gezielt überarbeiten."
     }
   ],
   "findings": []

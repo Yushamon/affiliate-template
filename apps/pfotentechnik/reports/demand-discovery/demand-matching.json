@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T13:26:35.125Z",
+  "generatedAt": "2026-09-02T06:06:21.151Z",
   "mode": "read-only",
   "counts": {
     "covered": 14,
     "partial": 3,
-    "fragmented": 1,
+    "fragmented": 2,
     "missing": 0,
-    "overcovered": 1,
+    "overcovered": 0,
     "uncertain": 1
   },
   "activeOpportunities": 6,
@@ -195,6 +195,20 @@
           }
         },
         {
+          "route": "/vergleiche/beste-mikrochip-katzenklappen/",
+          "title": "Mikrochip-Katzenklappen im Vergleich",
+          "score": 0.253,
+          "signals": {
+            "titleScore": 0.08333333333333333,
+            "headingScore": 0.08333333333333333,
+            "bodyScore": 0.5833333333333334,
+            "graphScore": 0,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
           "route": "/produkt/sureflap-mikrochip-katzenklappe/",
           "title": "SureFlap Mikrochip Katzenklappe",
           "score": 0.2,
@@ -204,20 +218,6 @@
             "bodyScore": 0.3333333333333333,
             "graphScore": 0.16666666666666666,
             "clusterMatch": true,
-            "expectedOwner": false,
-            "searchPageQuery": false
-          }
-        },
-        {
-          "route": "/smarte-futterautomaten/",
-          "title": "Smarte Futterautomaten für Hunde und Katzen",
-          "score": 0.172,
-          "signals": {
-            "titleScore": 0,
-            "headingScore": 0.3333333333333333,
-            "bodyScore": 0.3333333333333333,
-            "graphScore": 0.08333333333333333,
-            "clusterMatch": false,
             "expectedOwner": false,
             "searchPageQuery": false
           }
@@ -414,11 +414,11 @@
         {
           "route": "/vergleiche/beste-haustierkameras/",
           "title": "Haustierkameras im Vergleich",
-          "score": 0.223,
+          "score": 0.251,
           "signals": {
             "titleScore": 0.125,
             "headingScore": 0,
-            "bodyScore": 0.5,
+            "bodyScore": 0.625,
             "graphScore": 0,
             "clusterMatch": true,
             "expectedOwner": false,
@@ -572,11 +572,11 @@
         {
           "route": "/gps-tracker/",
           "title": "GPS-Tracker für Hunde und Katzen",
-          "score": 0.248,
+          "score": 0.271,
           "signals": {
             "titleScore": 0.2,
             "headingScore": 0.1,
-            "bodyScore": 0.3,
+            "bodyScore": 0.4,
             "graphScore": 0.2,
             "clusterMatch": true,
             "expectedOwner": false,
@@ -673,73 +673,7 @@
       ]
     },
     {
-      "demandNodeId": "search:futterautomaten:2:mehrkatzenhaushalt-futterung",
-      "cluster": "futterautomaten",
-      "userProblem": "mehrkatzenhaushalt fütterung",
-      "demandEvidence": [
-        {
-          "type": "gsc",
-          "query": "mehrkatzenhaushalt fütterung",
-          "impressions": 3,
-          "clicks": 0,
-          "position": 91,
-          "range": "28d"
-        }
-      ],
-      "intentOwner": "/wie-viele-mahlzeiten-katze/",
-      "status": "covered",
-      "gap": null,
-      "recommendedAction": "Keine Content-Aktion.",
-      "confidence": "medium",
-      "newPageRequired": false,
-      "publicationBlocked": false,
-      "matchEvidence": [
-        {
-          "route": "/wie-viele-mahlzeiten-katze/",
-          "title": "Wie viele Mahlzeiten braucht eine Katze?",
-          "score": 0.41,
-          "signals": {
-            "titleScore": 0.5,
-            "headingScore": 0.5,
-            "bodyScore": 0.5,
-            "graphScore": 0.5,
-            "clusterMatch": true,
-            "expectedOwner": false,
-            "searchPageQuery": false
-          }
-        },
-        {
-          "route": "/trockenfutter-oder-nassfutter-katze/",
-          "title": "Trockenfutter oder Nassfutter für Katzen? Der ehrliche Vergleich",
-          "score": 0.36,
-          "signals": {
-            "titleScore": 0,
-            "headingScore": 1,
-            "bodyScore": 1,
-            "graphScore": 0,
-            "clusterMatch": true,
-            "expectedOwner": false,
-            "searchPageQuery": false
-          }
-        },
-        {
-          "route": "/katze-frisst-nicht/",
-          "title": "Katze frisst nicht: Ursachen, Warnzeichen und richtiges Vorgehen",
-          "score": 0.29,
-          "signals": {
-            "titleScore": 0,
-            "headingScore": 0.5,
-            "bodyScore": 1,
-            "graphScore": 0.5,
-            "clusterMatch": true,
-            "expectedOwner": false,
-            "searchPageQuery": false
-          }
-        }
-      ]
-    },
-    {
-      "demandNodeId": "search:trinkbrunnen:3:katzenbrunnen-pumpe-reinigen",
+      "demandNodeId": "search:trinkbrunnen:2:katzenbrunnen-pumpe-reinigen",
       "cluster": "trinkbrunnen",
       "userProblem": "katzenbrunnen pumpe reinigen",
       "demandEvidence": [
@@ -805,139 +739,7 @@
       ]
     },
     {
-      "demandNodeId": "search:futterautomaten:4:futterautomat-fur-katzen",
-      "cluster": "futterautomaten",
-      "userProblem": "futterautomat für 2 katzen",
-      "demandEvidence": [
-        {
-          "type": "gsc",
-          "query": "futterautomat für 2 katzen",
-          "impressions": 2,
-          "clicks": 0,
-          "position": 51.5,
-          "range": "28d"
-        }
-      ],
-      "intentOwner": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
-      "status": "covered",
-      "gap": null,
-      "recommendedAction": "Keine Content-Aktion.",
-      "confidence": "medium",
-      "newPageRequired": false,
-      "publicationBlocked": false,
-      "matchEvidence": [
-        {
-          "route": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
-          "title": "Beste Futterautomaten für zwei Katzen",
-          "score": 0.827,
-          "signals": {
-            "titleScore": 0.6666666666666666,
-            "headingScore": 1,
-            "bodyScore": 1,
-            "graphScore": 0.6666666666666666,
-            "clusterMatch": true,
-            "expectedOwner": false,
-            "searchPageQuery": true
-          }
-        },
-        {
-          "route": "/smarte-futterautomaten/",
-          "title": "Smarte Futterautomaten für Hunde und Katzen",
-          "score": 0.627,
-          "signals": {
-            "titleScore": 0.6666666666666666,
-            "headingScore": 1,
-            "bodyScore": 1,
-            "graphScore": 0.6666666666666666,
-            "clusterMatch": true,
-            "expectedOwner": false,
-            "searchPageQuery": false
-          }
-        },
-        {
-          "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-          "title": "Beste Futterautomaten für Katzen",
-          "score": 0.553,
-          "signals": {
-            "titleScore": 0.6666666666666666,
-            "headingScore": 0.6666666666666666,
-            "bodyScore": 1,
-            "graphScore": 0.6666666666666666,
-            "clusterMatch": true,
-            "expectedOwner": false,
-            "searchPageQuery": false
-          }
-        }
-      ]
-    },
-    {
-      "demandNodeId": "search:futterautomaten:5:futterautomat-katze-urlaub",
-      "cluster": "futterautomaten",
-      "userProblem": "futterautomat katze urlaub",
-      "demandEvidence": [
-        {
-          "type": "gsc",
-          "query": "futterautomat katze urlaub",
-          "impressions": 2,
-          "clicks": 0,
-          "position": 45.5,
-          "range": "28d"
-        }
-      ],
-      "intentOwner": "/futterautomat-im-urlaub/",
-      "status": "covered",
-      "gap": null,
-      "recommendedAction": "Keine Content-Aktion.",
-      "confidence": "medium",
-      "newPageRequired": false,
-      "publicationBlocked": false,
-      "matchEvidence": [
-        {
-          "route": "/futterautomat-im-urlaub/",
-          "title": "Futterautomat im Urlaub: Sicher planen statt allein lassen",
-          "score": 0.753,
-          "signals": {
-            "titleScore": 0.6666666666666666,
-            "headingScore": 0.6666666666666666,
-            "bodyScore": 0.6666666666666666,
-            "graphScore": 1,
-            "clusterMatch": true,
-            "expectedOwner": false,
-            "searchPageQuery": true
-          }
-        },
-        {
-          "route": "/welche-portionsgroesse-ist-richtig/",
-          "title": "Futterautomat richtig einstellen: Portionsgröße messen und berechnen",
-          "score": 0.447,
-          "signals": {
-            "titleScore": 0.3333333333333333,
-            "headingScore": 0.6666666666666666,
-            "bodyScore": 1,
-            "graphScore": 0.6666666666666666,
-            "clusterMatch": true,
-            "expectedOwner": false,
-            "searchPageQuery": false
-          }
-        },
-        {
-          "route": "/welcher-futterautomat-ist-der-richtige/",
-          "title": "Welcher Futterautomat passt zu mir? Auswahlhilfe in 5 Schritten",
-          "score": 0.447,
-          "signals": {
-            "titleScore": 0.3333333333333333,
-            "headingScore": 0.6666666666666666,
-            "bodyScore": 1,
-            "graphScore": 0.6666666666666666,
-            "clusterMatch": true,
-            "expectedOwner": false,
-            "searchPageQuery": false
-          }
-        }
-      ]
-    },
-    {
-      "demandNodeId": "search:futterautomaten:6:futterautomat-nassfutter-katze",
+      "demandNodeId": "search:futterautomaten:3:futterautomat-nassfutter-katze",
       "cluster": "futterautomaten",
       "userProblem": "futterautomat nassfutter katze",
       "demandEvidence": [
@@ -955,14 +757,6 @@
           "impressions": 1,
           "clicks": 0,
           "position": 54,
-          "range": "28d"
-        },
-        {
-          "type": "gsc",
-          "query": "katze futterautomat nassfutter",
-          "impressions": 1,
-          "clicks": 0,
-          "position": 46,
           "range": "28d"
         }
       ],
@@ -1019,7 +813,7 @@
       ]
     },
     {
-      "demandNodeId": "search:futterautomaten:7:nassfutterautomat-fur-katzen",
+      "demandNodeId": "search:futterautomaten:4:nassfutterautomat-fur-katzen",
       "cluster": "futterautomaten",
       "userProblem": "nassfutterautomat für katzen",
       "demandEvidence": [
@@ -1085,7 +879,7 @@
       ]
     },
     {
-      "demandNodeId": "search:trinkbrunnen:8:you-tube-katzentrinkbrunnen-filter",
+      "demandNodeId": "search:trinkbrunnen:5:you-tube-katzentrinkbrunnen-filter",
       "cluster": "trinkbrunnen",
       "userProblem": "you tube katzentrinkbrunnen filter einsetzen",
       "demandEvidence": [
@@ -1151,7 +945,7 @@
       ]
     },
     {
-      "demandNodeId": "search:trinkbrunnen:9:pumpe-katzenbrunnens-gereinigt-gibt",
+      "demandNodeId": "search:trinkbrunnen:6:pumpe-katzenbrunnens-gereinigt-gibt",
       "cluster": "trinkbrunnen",
       "userProblem": "wie wird die pumpe eines katzenbrunnens gereinigt? gibt es eine anleitung wie diese auseinander gebaut werden soll?",
       "demandEvidence": [
@@ -1217,7 +1011,7 @@
       ]
     },
     {
-      "demandNodeId": "search:gps-tracker:10:warum-piepsen-gps-tracker",
+      "demandNodeId": "search:gps-tracker:7:warum-piepsen-gps-tracker",
       "cluster": "gps-tracker",
       "userProblem": "warum piepsen gps tracker für haustiere in regelmäßigen abständen",
       "demandEvidence": [
@@ -1283,64 +1077,64 @@
       ]
     },
     {
-      "demandNodeId": "search:futterautomaten:11:futterautomat-katzen",
+      "demandNodeId": "search:futterautomaten:8:futterautomat-fur-katzen",
       "cluster": "futterautomaten",
-      "userProblem": "futterautomat 2 katzen",
+      "userProblem": "futterautomat für 2 katzen",
       "demandEvidence": [
         {
           "type": "gsc",
-          "query": "futterautomat 2 katzen",
+          "query": "futterautomat für 2 katzen",
           "impressions": 1,
           "clicks": 0,
-          "position": 51,
+          "position": 56,
           "range": "28d"
         }
       ],
-      "intentOwner": null,
-      "status": "overcovered",
-      "gap": "Mindestens drei starke Inhaltsmatches ohne eindeutigen Owner: /vergleiche/futterautomat-gegen-schlingen/, /futterautomat-im-urlaub/, /smarte-futterautomaten/, /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/, /vergleiche/beste-futterautomaten-fuer-zwei-katzen/.",
-      "recommendedAction": "Als mögliches Kannibalisierungs-Finding auditieren; nichts automatisch ändern.",
+      "intentOwner": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "status": "covered",
+      "gap": null,
+      "recommendedAction": "Keine Content-Aktion.",
       "confidence": "medium",
       "newPageRequired": false,
       "publicationBlocked": false,
       "matchEvidence": [
         {
-          "route": "/vergleiche/futterautomat-gegen-schlingen/",
-          "title": "Futterautomat gegen Schlingen",
-          "score": 0.65,
+          "route": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+          "title": "Beste Futterautomaten für zwei Katzen",
+          "score": 0.827,
           "signals": {
-            "titleScore": 1,
-            "headingScore": 0.5,
-            "bodyScore": 1,
-            "graphScore": 1,
-            "clusterMatch": true,
-            "expectedOwner": false,
-            "searchPageQuery": false
-          }
-        },
-        {
-          "route": "/futterautomat-im-urlaub/",
-          "title": "Futterautomat im Urlaub: Sicher planen statt allein lassen",
-          "score": 0.6,
-          "signals": {
-            "titleScore": 0.5,
+            "titleScore": 0.6666666666666666,
             "headingScore": 1,
             "bodyScore": 1,
-            "graphScore": 1,
+            "graphScore": 0.6666666666666666,
             "clusterMatch": true,
             "expectedOwner": false,
-            "searchPageQuery": false
+            "searchPageQuery": true
           }
         },
         {
           "route": "/smarte-futterautomaten/",
           "title": "Smarte Futterautomaten für Hunde und Katzen",
-          "score": 0.6,
+          "score": 0.627,
           "signals": {
-            "titleScore": 0.5,
+            "titleScore": 0.6666666666666666,
             "headingScore": 1,
             "bodyScore": 1,
-            "graphScore": 1,
+            "graphScore": 0.6666666666666666,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "title": "Beste Futterautomaten für Katzen",
+          "score": 0.553,
+          "signals": {
+            "titleScore": 0.6666666666666666,
+            "headingScore": 0.6666666666666666,
+            "bodyScore": 1,
+            "graphScore": 0.6666666666666666,
             "clusterMatch": true,
             "expectedOwner": false,
             "searchPageQuery": false
@@ -1349,7 +1143,7 @@
       ]
     },
     {
-      "demandNodeId": "search:futterautomaten:12:futterautomat-fur-katzen-chip",
+      "demandNodeId": "search:futterautomaten:9:futterautomat-fur-katzen-chip",
       "cluster": "futterautomaten",
       "userProblem": "futterautomat für 2 katzen mit chip",
       "demandEvidence": [
@@ -1406,6 +1200,204 @@
             "titleScore": 0.5,
             "headingScore": 0.5,
             "bodyScore": 0.75,
+            "graphScore": 0.5,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ]
+    },
+    {
+      "demandNodeId": "search:futterautomaten:10:hund-nur-trockenfutter",
+      "cluster": "futterautomaten",
+      "userProblem": "hund nur trockenfutter",
+      "demandEvidence": [
+        {
+          "type": "gsc",
+          "query": "hund nur trockenfutter",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 92,
+          "range": "28d"
+        }
+      ],
+      "intentOwner": "/trockenfutter-oder-nassfutter-hund/",
+      "status": "covered",
+      "gap": null,
+      "recommendedAction": "Keine Content-Aktion.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/trockenfutter-oder-nassfutter-hund/",
+          "title": "Trockenfutter oder Nassfutter für Hunde: Was ist besser?",
+          "score": 0.587,
+          "signals": {
+            "titleScore": 0.3333333333333333,
+            "headingScore": 0.6666666666666666,
+            "bodyScore": 1,
+            "graphScore": 0.6666666666666666,
+            "clusterMatch": false,
+            "expectedOwner": false,
+            "searchPageQuery": true
+          }
+        },
+        {
+          "route": "/wie-lange-bleibt-trockenfutter-frisch/",
+          "title": "Wie lange bleibt Trockenfutter frisch? Lagerung, Fristen und Rechner",
+          "score": 0.493,
+          "signals": {
+            "titleScore": 0.3333333333333333,
+            "headingScore": 1,
+            "bodyScore": 1,
+            "graphScore": 0.3333333333333333,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/hund-frisst-nicht/",
+          "title": "Hund frisst nicht: Ursachen, Warnzeichen und richtiges Vorgehen",
+          "score": 0.42,
+          "signals": {
+            "titleScore": 0.3333333333333333,
+            "headingScore": 0.6666666666666666,
+            "bodyScore": 1,
+            "graphScore": 0.3333333333333333,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ]
+    },
+    {
+      "demandNodeId": "search:futterautomaten:11:nassfutter-automat-katzen",
+      "cluster": "futterautomaten",
+      "userProblem": "nassfutter automat katzen",
+      "demandEvidence": [
+        {
+          "type": "gsc",
+          "query": "nassfutter automat katzen",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 50,
+          "range": "28d"
+        }
+      ],
+      "intentOwner": "/futterautomat-katze/",
+      "status": "covered",
+      "gap": null,
+      "recommendedAction": "Keine Content-Aktion.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/futterautomat-katze/",
+          "title": "Futterautomaten für Katzen",
+          "score": 0.62,
+          "signals": {
+            "titleScore": 0.3333333333333333,
+            "headingScore": 0.6666666666666666,
+            "bodyScore": 0.6666666666666666,
+            "graphScore": 0.6666666666666666,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": true
+          }
+        },
+        {
+          "route": "/trockenfutter-oder-nassfutter-katze/",
+          "title": "Trockenfutter oder Nassfutter für Katzen? Der ehrliche Vergleich",
+          "score": 0.553,
+          "signals": {
+            "titleScore": 0.6666666666666666,
+            "headingScore": 0.6666666666666666,
+            "bodyScore": 1,
+            "graphScore": 0.6666666666666666,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/smarte-futterautomaten/",
+          "title": "Smarte Futterautomaten für Hunde und Katzen",
+          "score": 0.52,
+          "signals": {
+            "titleScore": 0.3333333333333333,
+            "headingScore": 1,
+            "bodyScore": 1,
+            "graphScore": 0.6666666666666666,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        }
+      ]
+    },
+    {
+      "demandNodeId": "search:futterautomaten:12:nassfutterautomat-katze",
+      "cluster": "futterautomaten",
+      "userProblem": "nassfutterautomat katze",
+      "demandEvidence": [
+        {
+          "type": "gsc",
+          "query": "nassfutterautomat katze",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 60,
+          "range": "28d"
+        }
+      ],
+      "intentOwner": "/futterautomat-katze/",
+      "status": "fragmented",
+      "gap": "Ähnlich starke Matches auf /katze-frisst-nicht/, /trockenfutter-oder-nassfutter-katze/, /vergleiche/beste-futterautomaten-fuer-nassfutter/.",
+      "recommendedAction": "Intent Ownership und mögliche Konsolidierung manuell prüfen.",
+      "confidence": "medium",
+      "newPageRequired": false,
+      "publicationBlocked": false,
+      "matchEvidence": [
+        {
+          "route": "/katze-frisst-nicht/",
+          "title": "Katze frisst nicht: Ursachen, Warnzeichen und richtiges Vorgehen",
+          "score": 0.41,
+          "signals": {
+            "titleScore": 0.5,
+            "headingScore": 0.5,
+            "bodyScore": 0.5,
+            "graphScore": 0.5,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/trockenfutter-oder-nassfutter-katze/",
+          "title": "Trockenfutter oder Nassfutter für Katzen? Der ehrliche Vergleich",
+          "score": 0.4,
+          "signals": {
+            "titleScore": 0,
+            "headingScore": 1,
+            "bodyScore": 1,
+            "graphScore": 0.5,
+            "clusterMatch": true,
+            "expectedOwner": false,
+            "searchPageQuery": false
+          }
+        },
+        {
+          "route": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+          "title": "Beste Futterautomaten für Nassfutter",
+          "score": 0.4,
+          "signals": {
+            "titleScore": 0,
+            "headingScore": 1,
+            "bodyScore": 1,
             "graphScore": 0.5,
             "clusterMatch": true,
             "expectedOwner": false,

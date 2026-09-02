@@ -18,6 +18,12 @@ function parseInlineArray(raw) {
     .filter(Boolean);
 }
 
+function parseInlineObjectArray(raw, key) {
+  const escapedKey = key.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const match = raw.match(new RegExp(`(?:^|[,\\s{])${escapedKey}\\s*:\\s*(\\[[^\\]]*\\])`));
+  return match ? parseInlineArray(match[1]) : null;
+}
+
 function inspect(frontmatter) {
   const lines = frontmatter.split(/\r?\n/);
   const topLevelForbidden = [];
@@ -45,6 +51,16 @@ function inspect(frontmatter) {
 
   if (comparisonStart < 0) return result;
 
+  const comparisonDeclaration = lines[comparisonStart].replace(/^comparisonFilters\s*:\s*/, "").trim();
+  if (comparisonDeclaration) {
+    for (const key of ["animal", "petSize"]) {
+      const parsed = parseInlineObjectArray(comparisonDeclaration, key);
+      if (parsed === null) result.malformed.push(key);
+      else result[key] = parsed;
+    }
+    return result;
+  }
+
   for (let i = comparisonStart + 1; i < lines.length; i += 1) {
     const line = lines[i];
     if (line.trim() && !/^[ \t]/.test(line)) break;
@@ -53,9 +69,28 @@ function inspect(frontmatter) {
     if (!child) continue;
 
     if (child[1] === "animal" || child[1] === "petSize") {
-      const parsed = parseInlineArray(child[2]);
-      if (parsed === null) result.malformed.push(child[1]);
-      else result[child[1]] = parsed;
+      const key = child[1];
+      const rawValue = child[2].trim();
+      if (rawValue) {
+        const parsed = parseInlineArray(rawValue);
+        if (parsed === null) result.malformed.push(key);
+        else result[key] = parsed;
+        continue;
+      }
+
+      const values = [];
+      let cursor = i + 1;
+      for (; cursor < lines.length; cursor += 1) {
+        const nested = lines[cursor];
+        if (!nested.trim()) continue;
+        if (/^  [A-Za-z][A-Za-z0-9_-]*\s*:/.test(nested) || !/^[ \t]/.test(nested)) break;
+        const item = nested.match(/^\s{4,}-\s*(.+?)\s*$/)?.[1];
+        if (!item) break;
+        values.push(item.replace(/^['"]|['"]$/g, ""));
+      }
+      if (!values.length) result.malformed.push(key);
+      else result[key] = values;
+      i = cursor - 1;
     }
   }
 

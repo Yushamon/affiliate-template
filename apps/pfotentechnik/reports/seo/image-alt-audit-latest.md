@@ -1,12 +1,12 @@
 # Image Alt Audit 24.1.2
 
-- Modus: `source-only`
+- Modus: `source-and-dist`
 - geprüfte Quelldateien: 121
-- geprüfte Build-Dateien: 0
-- rohe Build-Fundstellen: 0
-- eindeutige Build-Fundstellen: 0
+- geprüfte Build-Dateien: 367
+- rohe Build-Fundstellen: 375
+- eindeutige Build-Fundstellen: 1
 - blockierende Fehler: 0
-- Hinweise: 1
+- Hinweise: 2
 
 ## Blockierende Fehler
 
@@ -15,3 +15,4 @@ Keine blockierenden Alt-Text-Fehler gefunden.
 ## Hinweise
 
 - **INFO · IMAGE_ALT_EMPTY_DECORATIVE** `apps/pfotentechnik/src/components/product-experience-2/ProductGallery29.astro:138` – Leerer Alt-Text. Das Bild wird als dekorativ oder redundant behandelt.
+- **INFO · IMAGE_ALT_EMPTY_DECORATIVE** `apps/pfotentechnik/dist/produkt/aqara-smart-pet-feeder-c1/index.html:5` – Leerer Alt-Text. Das Bild wird als dekorativ oder redundant behandelt.

@@ -264,7 +264,7 @@
       "KEEP": 255,
       "NOINDEX": 112
     },
-    "errors": 11,
+    "errors": 0,
     "warnings": 0,
     "exactDuplicates": 0,
     "nearDuplicates": 0,
@@ -276,107 +276,7 @@
     "differentiatedPages": 0,
     "resolvedConflicts": 2
   },
-  "findings": [
-    {
-      "id": "content_comparison_count_mismatch|/vergleiche/beste-automatische-katzentoiletten/",
-      "code": "CONTENT_COMPARISON_COUNT_MISMATCH",
-      "severity": "error",
-      "routes": [
-        "/vergleiche/beste-automatische-katzentoiletten/"
-      ],
-      "evidence": "Quelldaten nennen 10 Vergleichsprodukte, gerendert erkannt wurden 11."
-    },
-    {
-      "id": "content_comparison_count_mismatch|/vergleiche/beste-futterautomaten-fuer-hunde/",
-      "code": "CONTENT_COMPARISON_COUNT_MISMATCH",
-      "severity": "error",
-      "routes": [
-        "/vergleiche/beste-futterautomaten-fuer-hunde/"
-      ],
-      "evidence": "Quelldaten nennen 4 Vergleichsprodukte, gerendert erkannt wurden 16."
-    },
-    {
-      "id": "content_comparison_count_mismatch|/vergleiche/beste-futterautomaten-fuer-katzen/",
-      "code": "CONTENT_COMPARISON_COUNT_MISMATCH",
-      "severity": "error",
-      "routes": [
-        "/vergleiche/beste-futterautomaten-fuer-katzen/"
-      ],
-      "evidence": "Quelldaten nennen 8 Vergleichsprodukte, gerendert erkannt wurden 27."
-    },
-    {
-      "id": "content_comparison_count_mismatch|/vergleiche/beste-futterautomaten-fuer-nassfutter/",
-      "code": "CONTENT_COMPARISON_COUNT_MISMATCH",
-      "severity": "error",
-      "routes": [
-        "/vergleiche/beste-futterautomaten-fuer-nassfutter/"
-      ],
-      "evidence": "Quelldaten nennen 5 Vergleichsprodukte, gerendert erkannt wurden 6."
-    },
-    {
-      "id": "content_comparison_count_mismatch|/vergleiche/beste-futterautomaten-mit-kamera/",
-      "code": "CONTENT_COMPARISON_COUNT_MISMATCH",
-      "severity": "error",
-      "routes": [
-        "/vergleiche/beste-futterautomaten-mit-kamera/"
-      ],
-      "evidence": "Quelldaten nennen 3 Vergleichsprodukte, gerendert erkannt wurden 6."
-    },
-    {
-      "id": "content_comparison_count_mismatch|/vergleiche/beste-futterautomaten-ohne-wlan/",
-      "code": "CONTENT_COMPARISON_COUNT_MISMATCH",
-      "severity": "error",
-      "routes": [
-        "/vergleiche/beste-futterautomaten-ohne-wlan/"
-      ],
-      "evidence": "Quelldaten nennen 3 Vergleichsprodukte, gerendert erkannt wurden 5."
-    },
-    {
-      "id": "content_comparison_count_mismatch|/vergleiche/beste-haustierkameras/",
-      "code": "CONTENT_COMPARISON_COUNT_MISMATCH",
-      "severity": "error",
-      "routes": [
-        "/vergleiche/beste-haustierkameras/"
-      ],
-      "evidence": "Quelldaten nennen 6 Vergleichsprodukte, gerendert erkannt wurden 8."
-    },
-    {
-      "id": "content_comparison_count_mismatch|/vergleiche/beste-trinkbrunnen-fuer-hunde/",
-      "code": "CONTENT_COMPARISON_COUNT_MISMATCH",
-      "severity": "error",
-      "routes": [
-        "/vergleiche/beste-trinkbrunnen-fuer-hunde/"
-      ],
-      "evidence": "Quelldaten nennen 6 Vergleichsprodukte, gerendert erkannt wurden 10."
-    },
-    {
-      "id": "content_comparison_count_mismatch|/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-      "code": "CONTENT_COMPARISON_COUNT_MISMATCH",
-      "severity": "error",
-      "routes": [
-        "/vergleiche/beste-trinkbrunnen-fuer-katzen/"
-      ],
-      "evidence": "Quelldaten nennen 11 Vergleichsprodukte, gerendert erkannt wurden 21."
-    },
-    {
-      "id": "content_comparison_count_mismatch|/vergleiche/futterautomat-mit-app/",
-      "code": "CONTENT_COMPARISON_COUNT_MISMATCH",
-      "severity": "error",
-      "routes": [
-        "/vergleiche/futterautomat-mit-app/"
-      ],
-      "evidence": "Quelldaten nennen 5 Vergleichsprodukte, gerendert erkannt wurden 6."
-    },
-    {
-      "id": "content_comparison_count_mismatch|/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
-      "code": "CONTENT_COMPARISON_COUNT_MISMATCH",
-      "severity": "error",
-      "routes": [
-        "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/"
-      ],
-      "evidence": "Quelldaten nennen 7 Vergleichsprodukte, gerendert erkannt wurden 8."
-    }
-  ],
+  "findings": [],
   "conflicts": [
     {
       "id": "gps-bluetooth-duplicate",

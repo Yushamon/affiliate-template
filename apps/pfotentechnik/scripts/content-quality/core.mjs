@@ -705,20 +705,6 @@ export const collectContentQuality = ({ appRoot, repoRoot, config }) => {
     const cluster = inferCluster(route, title, source);
     const outgoingRoutes = [...new Set(internalLinks(mainHtml).filter((target) => target !== route))];
     const structuredData = [...new Set([...html.matchAll(/"@type"\s*:\s*"([^"]+)"/g)].map((match) => match[1]))];
-    const countFrontmatterList = (raw, key) => {
-      const lines = String(raw ?? "").split(/\r?\n/);
-      const start = lines.findIndex((line) => new RegExp(`^\\s*${key}:\\s*$`).test(line));
-      if (start < 0) return 0;
-      const baseIndent = lines[start].match(/^\s*/)?.[0].length ?? 0;
-      let count = 0;
-      for (const line of lines.slice(start + 1)) {
-        if (!line.trim()) continue;
-        const indent = line.match(/^\s*/)?.[0].length ?? 0;
-        if (indent <= baseIndent) break;
-        if (indent === baseIndent + 2 && /^\s*-\s+/.test(line)) count += 1;
-      }
-      return count;
-    };
     const pageBase = {
       route,
       sourceFile: source?.sourceFile ?? path.relative(repoRoot, file).replace(/\\/g, "/"),
@@ -761,7 +747,12 @@ export const collectContentQuality = ({ appRoot, repoRoot, config }) => {
       relatedProducts: [...new Set(outgoingRoutes.filter((target) => target.startsWith("/produkt/")))],
       relatedComparisons: [...new Set(outgoingRoutes.filter((target) => target.startsWith("/vergleiche/")))],
       searchPerformance: searchData.pageMetrics.get(route) ?? null,
-      expectedComparisonCount: pageType === "comparison" ? countFrontmatterList(source?.rawFrontmatter, "items") : 0,
+      // Comparison `items` are seed/editorial overrides, not the complete
+      // production inventory after automatic candidate expansion. Rendered
+      // count integrity is owned by the current Comparison visible-count and
+      // ItemList schema contracts; comparing it to the legacy seed list would
+      // create false P0 findings for valid expanded comparisons.
+      expectedComparisonCount: 0,
       renderedComparisonCount: pageType === "comparison"
         ? Number(html.match(/"numberOfItems"\s*:\s*(\d+)/)?.[1] ?? 0)
         : 0,

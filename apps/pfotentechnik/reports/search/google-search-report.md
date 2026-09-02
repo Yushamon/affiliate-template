@@ -1,6 +1,6 @@
 # Google Search Console Report
 
-Generiert: 2026-09-01T04:11:15.623Z
+Generiert: 2026-09-02T06:07:03.954Z
 
 Zeitraum: 2026-07-31 bis 2026-08-27
 

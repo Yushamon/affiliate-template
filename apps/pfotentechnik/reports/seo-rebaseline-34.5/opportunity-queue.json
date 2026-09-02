@@ -1,0 +1,559 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-02T06:31:44.226Z",
+  "model": "existing Traffic Leverage composer enriched with rendered graph, current Evidence, Demand Discovery, and 28d/3m page sufficiency",
+  "dataPeriod": {
+    "current": {
+      "startDate": "2026-07-31",
+      "endDate": "2026-08-27",
+      "lowData": true
+    },
+    "supporting": {
+      "startDate": "2026-05-30",
+      "endDate": "2026-08-27",
+      "lowData": false
+    }
+  },
+  "safeguards": {
+    "currentLowData": true,
+    "minimumQueryImpressionsForStrike": 10,
+    "minimumPageImpressionsForInterpretation": 10,
+    "noAutomaticTitleRewrite": true,
+    "noAutomaticNewPage": true
+  },
+  "summary": {
+    "ZONE A — STRIKING DISTANCE": 6,
+    "ZONE B — CTR OPPORTUNITY": 1,
+    "ZONE C — PAGE-2 OPPORTUNITY": 1,
+    "ZONE D — DISCOVERY": 6,
+    "ZONE E — LOW DATA": 117,
+    "ZONE F — DEFENSIVE": 7
+  },
+  "opportunities": [
+    {
+      "id": "SEO345-01",
+      "url": "/produkt/petlibro-polar-wet-food-feeder/",
+      "pageType": "product",
+      "primaryIntent": "product-research",
+      "zone": "ZONE B — CTR OPPORTUNITY",
+      "score": 86,
+      "queryOrDemandSignal": "petlibro polar wet food feeder",
+      "currentPerformance": {
+        "current28d": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 8
+        },
+        "supporting3m": {
+          "clicks": 0,
+          "impressions": 26,
+          "ctr": 0,
+          "position": 12.4
+        },
+        "lowData": true
+      },
+      "observedProblem": "Sufficient supporting-period impressions at positions 4–15 with CTR below the existing Traffic Leverage threshold.",
+      "evidence": [
+        "GSC 28d: 1 impressions, 0 clicks, position 8.",
+        "GSC 3m: 26 impressions, 0 clicks, position 12.4.",
+        "Existing Traffic Leverage query signal: petlibro polar wet food feeder.",
+        "Evidence status: complete."
+      ],
+      "whyItMatters": "This combines observed search demand with the current page's intent, authority, and evidence state; it is a prioritization signal, not a ranking promise.",
+      "recommendedChange": "Review query-to-title/H1/intro alignment and snippet promise; change only the smallest element with a demonstrated mismatch.",
+      "expectedMechanism": "closer snippet/intent match",
+      "risk": "medium — frozen commercial experience",
+      "effort": "small-medium",
+      "confidence": "medium",
+      "priority": "P1",
+      "measurementPlan": "After implementation, compare the next complete 28-day window with this baseline; require at least 20 impressions before interpreting CTR or position movement."
+    },
+    {
+      "id": "SEO345-02",
+      "url": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "pageType": "problem-solving-guide",
+      "primaryIntent": "commercial-investigation",
+      "zone": "ZONE A — STRIKING DISTANCE",
+      "score": 86,
+      "queryOrDemandSignal": "wie viele trinkbrunnen für 2 katzen",
+      "currentPerformance": {
+        "current28d": null,
+        "supporting3m": {
+          "clicks": 0,
+          "impressions": 15,
+          "ctr": 0,
+          "position": 7.3
+        },
+        "lowData": true
+      },
+      "observedProblem": "Sufficient supporting-period impressions within striking distance; intent/snippet fit needs focused review.",
+      "evidence": [
+        "GSC 3m: 15 impressions, 0 clicks, position 7.3.",
+        "Existing Traffic Leverage query signal: wie viele trinkbrunnen für 2 katzen."
+      ],
+      "whyItMatters": "This combines observed search demand with the current page's intent, authority, and evidence state; it is a prioritization signal, not a ranking promise.",
+      "recommendedChange": "Review query-to-title/H1/intro alignment and snippet promise; change only the smallest element with a demonstrated mismatch.",
+      "expectedMechanism": "closer intent match",
+      "risk": "low-medium",
+      "effort": "small-medium",
+      "confidence": "medium-low",
+      "priority": "P1",
+      "measurementPlan": "After implementation, compare the next complete 28-day window with this baseline; require at least 20 impressions before interpreting CTR or position movement."
+    },
+    {
+      "id": "SEO345-03",
+      "url": "/katzentrinkbrunnen-laut-pumpe/",
+      "pageType": "guide",
+      "primaryIntent": "informational",
+      "zone": "ZONE A — STRIKING DISTANCE",
+      "score": 79,
+      "queryOrDemandSignal": "katzenbrunnen plätschert laut",
+      "currentPerformance": {
+        "current28d": null,
+        "supporting3m": {
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 8
+        },
+        "lowData": true
+      },
+      "observedProblem": "Sufficient supporting-period impressions within striking distance; intent/snippet fit needs focused review.",
+      "evidence": [
+        "GSC 3m: 11 impressions, 0 clicks, position 8.",
+        "Existing Traffic Leverage query signal: katzenbrunnen plätschert laut."
+      ],
+      "whyItMatters": "This combines observed search demand with the current page's intent, authority, and evidence state; it is a prioritization signal, not a ranking promise.",
+      "recommendedChange": "Review query-to-title/H1/intro alignment and snippet promise; change only the smallest element with a demonstrated mismatch.",
+      "expectedMechanism": "closer intent match",
+      "risk": "low-medium",
+      "effort": "small-medium",
+      "confidence": "medium-low",
+      "priority": "P1",
+      "measurementPlan": "After implementation, compare the next complete 28-day window with this baseline; require at least 20 impressions before interpreting CTR or position movement."
+    },
+    {
+      "id": "SEO345-04",
+      "url": "/produkt/petlibro-stainless-steel-fountain/",
+      "pageType": "product",
+      "primaryIntent": "product-research",
+      "zone": "ZONE A — STRIKING DISTANCE",
+      "score": 77,
+      "queryOrDemandSignal": "petlibro edelstahl trinkbrunnen",
+      "currentPerformance": {
+        "current28d": null,
+        "supporting3m": {
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 12.5
+        },
+        "lowData": true
+      },
+      "observedProblem": "Sufficient supporting-period impressions within striking distance; intent/snippet fit needs focused review.",
+      "evidence": [
+        "GSC 3m: 10 impressions, 0 clicks, position 12.5.",
+        "Existing Traffic Leverage query signal: petlibro edelstahl trinkbrunnen.",
+        "Evidence status: complete."
+      ],
+      "whyItMatters": "This combines observed search demand with the current page's intent, authority, and evidence state; it is a prioritization signal, not a ranking promise.",
+      "recommendedChange": "Review query-to-title/H1/intro alignment and snippet promise; change only the smallest element with a demonstrated mismatch.",
+      "expectedMechanism": "closer intent match",
+      "risk": "medium — frozen commercial experience",
+      "effort": "small-medium",
+      "confidence": "medium-low",
+      "priority": "P1",
+      "measurementPlan": "After implementation, compare the next complete 28-day window with this baseline; require at least 20 impressions before interpreting CTR or position movement."
+    },
+    {
+      "id": "SEO345-05",
+      "url": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "pageType": "decision-guide",
+      "primaryIntent": "commercial-investigation",
+      "zone": "ZONE A — STRIKING DISTANCE",
+      "score": 73,
+      "queryOrDemandSignal": "katzenbrunnen keramik oder edelstahl",
+      "currentPerformance": {
+        "current28d": null,
+        "supporting3m": {
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 9.6
+        },
+        "lowData": true
+      },
+      "observedProblem": "Sufficient supporting-period impressions within striking distance; intent/snippet fit needs focused review.",
+      "evidence": [
+        "GSC 3m: 11 impressions, 0 clicks, position 9.6.",
+        "Existing Traffic Leverage query signal: katzenbrunnen keramik oder edelstahl."
+      ],
+      "whyItMatters": "This combines observed search demand with the current page's intent, authority, and evidence state; it is a prioritization signal, not a ranking promise.",
+      "recommendedChange": "Review query-to-title/H1/intro alignment and snippet promise; change only the smallest element with a demonstrated mismatch.",
+      "expectedMechanism": "closer intent match",
+      "risk": "low-medium",
+      "effort": "small-medium",
+      "confidence": "medium-low",
+      "priority": "P1",
+      "measurementPlan": "After implementation, compare the next complete 28-day window with this baseline; require at least 20 impressions before interpreting CTR or position movement."
+    },
+    {
+      "id": "SEO345-06",
+      "url": "/katzenwasser-taeglich-wechseln/",
+      "pageType": "problem-solving-guide",
+      "primaryIntent": "problem-solving",
+      "zone": "ZONE A — STRIKING DISTANCE",
+      "score": 52,
+      "queryOrDemandSignal": "wie oft muss man das wasser vom katzenbrunnen wechseln?",
+      "currentPerformance": {
+        "current28d": null,
+        "supporting3m": {
+          "clicks": 0,
+          "impressions": 17,
+          "ctr": 0,
+          "position": 12.5
+        },
+        "lowData": true
+      },
+      "observedProblem": "Sufficient supporting-period impressions within striking distance; intent/snippet fit needs focused review.",
+      "evidence": [
+        "GSC 3m: 17 impressions, 0 clicks, position 12.5.",
+        "Existing Traffic Leverage query signal: wie oft muss man das wasser vom katzenbrunnen wechseln?."
+      ],
+      "whyItMatters": "This combines observed search demand with the current page's intent, authority, and evidence state; it is a prioritization signal, not a ranking promise.",
+      "recommendedChange": "Review query-to-title/H1/intro alignment and snippet promise; change only the smallest element with a demonstrated mismatch.",
+      "expectedMechanism": "closer intent match",
+      "risk": "low-medium",
+      "effort": "small-medium",
+      "confidence": "medium-low",
+      "priority": "P2",
+      "measurementPlan": "After implementation, compare the next complete 28-day window with this baseline; require at least 20 impressions before interpreting CTR or position movement."
+    },
+    {
+      "id": "SEO345-07",
+      "url": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "pageType": "medical-guide",
+      "primaryIntent": "medical-information",
+      "zone": "ZONE A — STRIKING DISTANCE",
+      "score": 37,
+      "queryOrDemandSignal": "Page-level search performance",
+      "currentPerformance": {
+        "current28d": null,
+        "supporting3m": {
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 13.3
+        },
+        "lowData": true
+      },
+      "observedProblem": "Sufficient supporting-period impressions within striking distance; intent/snippet fit needs focused review.",
+      "evidence": [
+        "GSC 3m: 10 impressions, 0 clicks, position 13.3."
+      ],
+      "whyItMatters": "This combines observed search demand with the current page's intent, authority, and evidence state; it is a prioritization signal, not a ranking promise.",
+      "recommendedChange": "Review query-to-title/H1/intro alignment and snippet promise; change only the smallest element with a demonstrated mismatch.",
+      "expectedMechanism": "closer intent match",
+      "risk": "low-medium",
+      "effort": "small-medium",
+      "confidence": "medium-low",
+      "priority": "P2",
+      "measurementPlan": "After implementation, compare the next complete 28-day window with this baseline; require at least 20 impressions before interpreting CTR or position movement."
+    },
+    {
+      "id": "SEO345-08",
+      "url": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+      "pageType": "comparison",
+      "primaryIntent": "comparison",
+      "zone": "ZONE C — PAGE-2 OPPORTUNITY",
+      "score": 46,
+      "queryOrDemandSignal": "trinkbrunnen hund xxl",
+      "currentPerformance": {
+        "current28d": null,
+        "supporting3m": {
+          "clicks": 0,
+          "impressions": 21,
+          "ctr": 0,
+          "position": 18.1
+        },
+        "lowData": true
+      },
+      "observedProblem": "Meaningful supporting-period demand on page two.",
+      "evidence": [
+        "GSC 3m: 21 impressions, 0 clicks, position 18.1.",
+        "Existing Traffic Leverage query signal: trinkbrunnen hund xxl."
+      ],
+      "whyItMatters": "This combines observed search demand with the current page's intent, authority, and evidence state; it is a prioritization signal, not a ranking promise.",
+      "recommendedChange": "Compare the visible answer and decision depth with the ranking intent; strengthen the existing page before considering a new URL.",
+      "expectedMechanism": "stronger existing-page coverage",
+      "risk": "medium — frozen commercial experience",
+      "effort": "small-medium",
+      "confidence": "medium",
+      "priority": "P2",
+      "measurementPlan": "After implementation, compare the next complete 28-day window with this baseline; require at least 20 impressions before interpreting CTR or position movement."
+    },
+    {
+      "id": "SEO345-09",
+      "url": "/smarte-futterautomaten/",
+      "pageType": "category-hub",
+      "primaryIntent": "category-discovery",
+      "zone": "ZONE D — DISCOVERY",
+      "score": 90,
+      "queryOrDemandSignal": "xiaomi futterautomat",
+      "currentPerformance": {
+        "current28d": {
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 5.3
+        },
+        "supporting3m": {
+          "clicks": 0,
+          "impressions": 87,
+          "ctr": 0,
+          "position": 41.6
+        },
+        "lowData": true
+      },
+      "observedProblem": "Demand is visible, but ranking or current-period volume is not yet strong enough for broad intervention.",
+      "evidence": [
+        "GSC 28d: 3 impressions, 0 clicks, position 5.3.",
+        "GSC 3m: 87 impressions, 0 clicks, position 41.6.",
+        "Existing Traffic Leverage query signal: xiaomi futterautomat."
+      ],
+      "whyItMatters": "This combines observed search demand with the current page's intent, authority, and evidence state; it is a prioritization signal, not a ranking promise.",
+      "recommendedChange": "Observe the next data window and make only a tightly scoped intent or evidence improvement if the signal persists.",
+      "expectedMechanism": "stronger existing-page coverage",
+      "risk": "low-medium",
+      "effort": "small-medium",
+      "confidence": "medium",
+      "priority": "P2",
+      "measurementPlan": "After implementation, compare the next complete 28-day window with this baseline; require at least 20 impressions before interpreting CTR or position movement."
+    },
+    {
+      "id": "SEO345-10",
+      "url": "/trinkbrunnen/",
+      "pageType": "category-hub",
+      "primaryIntent": "category-discovery",
+      "zone": "ZONE D — DISCOVERY",
+      "score": 50,
+      "queryOrDemandSignal": "katzenbrunnen vergleich",
+      "currentPerformance": {
+        "current28d": null,
+        "supporting3m": {
+          "clicks": 0,
+          "impressions": 22,
+          "ctr": 0,
+          "position": 42.5
+        },
+        "lowData": true
+      },
+      "observedProblem": "Demand is visible, but ranking or current-period volume is not yet strong enough for broad intervention.",
+      "evidence": [
+        "GSC 3m: 22 impressions, 0 clicks, position 42.5.",
+        "Existing Traffic Leverage query signal: katzenbrunnen vergleich."
+      ],
+      "whyItMatters": "This combines observed search demand with the current page's intent, authority, and evidence state; it is a prioritization signal, not a ranking promise.",
+      "recommendedChange": "Observe the next data window and make only a tightly scoped intent or evidence improvement if the signal persists.",
+      "expectedMechanism": "stronger existing-page coverage",
+      "risk": "low-medium",
+      "effort": "small-medium",
+      "confidence": "medium",
+      "priority": "P2",
+      "measurementPlan": "After implementation, compare the next complete 28-day window with this baseline; require at least 20 impressions before interpreting CTR or position movement."
+    },
+    {
+      "id": "SEO345-11",
+      "url": "/futterautomat-katze/",
+      "pageType": "editorial-page",
+      "primaryIntent": "commercial-investigation",
+      "zone": "ZONE D — DISCOVERY",
+      "score": 44,
+      "queryOrDemandSignal": "futterautomat nassfutter katze",
+      "currentPerformance": {
+        "current28d": {
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 40.6
+        },
+        "supporting3m": {
+          "clicks": 0,
+          "impressions": 16,
+          "ctr": 0,
+          "position": 47.9
+        },
+        "lowData": false
+      },
+      "observedProblem": "Demand is visible, but ranking or current-period volume is not yet strong enough for broad intervention.",
+      "evidence": [
+        "GSC 28d: 10 impressions, 0 clicks, position 40.6.",
+        "GSC 3m: 16 impressions, 0 clicks, position 47.9.",
+        "Existing Traffic Leverage query signal: futterautomat nassfutter katze.",
+        "Demand Discovery: fragmented, covered, covered, fragmented."
+      ],
+      "whyItMatters": "This combines observed search demand with the current page's intent, authority, and evidence state; it is a prioritization signal, not a ranking promise.",
+      "recommendedChange": "Observe the next data window and make only a tightly scoped intent or evidence improvement if the signal persists.",
+      "expectedMechanism": "stronger existing-page coverage",
+      "risk": "low-medium",
+      "effort": "small-medium",
+      "confidence": "medium-low",
+      "priority": "P3",
+      "measurementPlan": "After implementation, compare the next complete 28-day window with this baseline; require at least 20 impressions before interpreting CTR or position movement."
+    },
+    {
+      "id": "SEO345-12",
+      "url": "/vergleiche/",
+      "pageType": "comparison-index",
+      "primaryIntent": "category-discovery",
+      "zone": "ZONE D — DISCOVERY",
+      "score": 41,
+      "queryOrDemandSignal": "fütterungsroboter im vergleich",
+      "currentPerformance": {
+        "current28d": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 9
+        },
+        "supporting3m": {
+          "clicks": 0,
+          "impressions": 17,
+          "ctr": 0,
+          "position": 59.5
+        },
+        "lowData": true
+      },
+      "observedProblem": "Demand is visible, but ranking or current-period volume is not yet strong enough for broad intervention.",
+      "evidence": [
+        "GSC 28d: 1 impressions, 0 clicks, position 9.",
+        "GSC 3m: 17 impressions, 0 clicks, position 59.5.",
+        "Existing Traffic Leverage query signal: fütterungsroboter im vergleich."
+      ],
+      "whyItMatters": "This combines observed search demand with the current page's intent, authority, and evidence state; it is a prioritization signal, not a ranking promise.",
+      "recommendedChange": "Observe the next data window and make only a tightly scoped intent or evidence improvement if the signal persists.",
+      "expectedMechanism": "stronger existing-page coverage",
+      "risk": "low-medium",
+      "effort": "small-medium",
+      "confidence": "medium-low",
+      "priority": "P3",
+      "measurementPlan": "After implementation, compare the next complete 28-day window with this baseline; require at least 20 impressions before interpreting CTR or position movement."
+    },
+    {
+      "id": "SEO345-13",
+      "url": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "pageType": "comparison",
+      "primaryIntent": "comparison",
+      "zone": "ZONE D — DISCOVERY",
+      "score": 41,
+      "queryOrDemandSignal": "futterautomat für 2 katzen",
+      "currentPerformance": {
+        "current28d": {
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 37.7
+        },
+        "supporting3m": {
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 50
+        },
+        "lowData": true
+      },
+      "observedProblem": "Demand is visible, but ranking or current-period volume is not yet strong enough for broad intervention.",
+      "evidence": [
+        "GSC 28d: 6 impressions, 0 clicks, position 37.7.",
+        "GSC 3m: 12 impressions, 0 clicks, position 50.",
+        "Existing Traffic Leverage query signal: futterautomat für 2 katzen.",
+        "Demand Discovery: covered, covered, covered."
+      ],
+      "whyItMatters": "This combines observed search demand with the current page's intent, authority, and evidence state; it is a prioritization signal, not a ranking promise.",
+      "recommendedChange": "Observe the next data window and make only a tightly scoped intent or evidence improvement if the signal persists.",
+      "expectedMechanism": "stronger existing-page coverage",
+      "risk": "medium — frozen commercial experience",
+      "effort": "small-medium",
+      "confidence": "medium-low",
+      "priority": "P3",
+      "measurementPlan": "After implementation, compare the next complete 28-day window with this baseline; require at least 20 impressions before interpreting CTR or position movement."
+    },
+    {
+      "id": "SEO345-14",
+      "url": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "pageType": "comparison",
+      "primaryIntent": "comparison",
+      "zone": "ZONE D — DISCOVERY",
+      "score": 38,
+      "queryOrDemandSignal": "katzenbrunnen test",
+      "currentPerformance": {
+        "current28d": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 34
+        },
+        "supporting3m": {
+          "clicks": 0,
+          "impressions": 23,
+          "ctr": 0,
+          "position": 56.4
+        },
+        "lowData": true
+      },
+      "observedProblem": "Demand is visible, but ranking or current-period volume is not yet strong enough for broad intervention.",
+      "evidence": [
+        "GSC 28d: 1 impressions, 0 clicks, position 34.",
+        "GSC 3m: 23 impressions, 0 clicks, position 56.4.",
+        "Existing Traffic Leverage query signal: katzenbrunnen test."
+      ],
+      "whyItMatters": "This combines observed search demand with the current page's intent, authority, and evidence state; it is a prioritization signal, not a ranking promise.",
+      "recommendedChange": "Observe the next data window and make only a tightly scoped intent or evidence improvement if the signal persists.",
+      "expectedMechanism": "stronger existing-page coverage",
+      "risk": "medium — frozen commercial experience",
+      "effort": "small-medium",
+      "confidence": "medium",
+      "priority": "P3",
+      "measurementPlan": "After implementation, compare the next complete 28-day window with this baseline; require at least 20 impressions before interpreting CTR or position movement."
+    },
+    {
+      "id": "SEO345-15",
+      "url": "/produkt/oneisall-2-in-1-feeder-water/",
+      "pageType": "product",
+      "primaryIntent": "product-research",
+      "zone": "ZONE E — LOW DATA",
+      "score": 87,
+      "queryOrDemandSignal": "Page-level search performance",
+      "currentPerformance": {
+        "current28d": {
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 3.5
+        },
+        "supporting3m": {
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 5.7
+        },
+        "lowData": true
+      },
+      "observedProblem": "Insufficient data for a confident content change. Product evidence is partial; missing: userReviews, consensus.",
+      "evidence": [
+        "GSC 28d: 2 impressions, 0 clicks, position 3.5.",
+        "GSC 3m: 3 impressions, 0 clicks, position 5.7.",
+        "Evidence status: partial."
+      ],
+      "whyItMatters": "This combines observed search demand with the current page's intent, authority, and evidence state; it is a prioritization signal, not a ranking promise.",
+      "recommendedChange": "Research and close the decision-critical evidence gap; preserve unknowns where sources remain unavailable.",
+      "expectedMechanism": "stronger evidence and decision trust",
+      "risk": "medium — frozen commercial experience",
+      "effort": "medium",
+      "confidence": "low",
+      "priority": "P3",
+      "measurementPlan": "After implementation, compare the next complete 28-day window with this baseline; require at least 20 impressions before interpreting CTR or position movement."
+    }
+  ]
+}

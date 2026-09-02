@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "provider": "bing",
-  "generatedAt": "2026-07-23T07:48:15.970Z",
+  "generatedAt": "2026-09-02T06:07:03.971Z",
   "siteUrl": "https://pfotentechnik.de/",
-  "dataUpdatedAt": "2026-07-22T07:00:00.000Z",
+  "dataUpdatedAt": "2026-08-27T07:00:00.000Z",
   "freshness": {
     "status": "current",
     "ageDays": 1,
@@ -11,22 +11,184 @@
   },
   "range": "28d",
   "period": {
-    "startDate": "2026-06-25",
-    "endDate": "2026-07-22"
+    "startDate": "2026-07-31",
+    "endDate": "2026-08-27"
   },
   "metrics": {
     "current": {
-      "clicks": 0,
-      "impressions": 0,
-      "ctr": 0,
-      "position": null,
-      "avgClickPosition": null
+      "clicks": 2,
+      "impressions": 44,
+      "ctr": 4.55,
+      "position": 4.9,
+      "avgClickPosition": -1
     },
     "previous": null,
     "change": null
   },
-  "topPages": [],
-  "topQueries": [],
+  "topPages": [
+    {
+      "page": "/katzentrinkbrunnen-richtig-reinigen/",
+      "clicks": 1,
+      "impressions": 11,
+      "ctr": 9.09,
+      "position": 2,
+      "avgClickPosition": -1
+    },
+    {
+      "page": "/wie-funktionieren-gps-tracker/",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 100,
+      "position": 3,
+      "avgClickPosition": -1
+    },
+    {
+      "page": "/produkt/tractive-cat-6-mini/",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 6,
+      "avgClickPosition": null
+    },
+    {
+      "page": "/hund-trinkt-ploetzlich-viel/",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 7,
+      "avgClickPosition": null
+    },
+    {
+      "page": "/hund-ist-muede/",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 4.6,
+      "avgClickPosition": null
+    },
+    {
+      "page": "/produkt/petkit-eversweet-ultra/",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 5.3,
+      "avgClickPosition": null
+    },
+    {
+      "page": "/produkt/petlibro-granary-2-vision/",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 3,
+      "avgClickPosition": null
+    },
+    {
+      "page": "/hersteller/honeyguardian/",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 5,
+      "avgClickPosition": null
+    },
+    {
+      "page": "/trockenfutter-oder-nassfutter-hund/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5,
+      "avgClickPosition": null
+    },
+    {
+      "page": "/welpen-richtig-fuettern/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6,
+      "avgClickPosition": null
+    }
+  ],
+  "topQueries": [
+    {
+      "query": "wie wird die pumpe eines katzenbrunnens gereinigt? gibt es eine anleitung wie diese auseinander gebaut werden soll?",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 100,
+      "position": 1,
+      "avgClickPosition": -1
+    },
+    {
+      "query": "warum piepsen gps tracker für haustiere in regelmäßigen abständen",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 100,
+      "position": 3,
+      "avgClickPosition": -1
+    },
+    {
+      "query": "tractive cat 6 mini",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6,
+      "avgClickPosition": null
+    },
+    {
+      "query": "katzenbrunnen pumpe reinigen",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 2,
+      "avgClickPosition": null
+    },
+    {
+      "query": "cat 6 mini tractive",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8,
+      "avgClickPosition": null
+    },
+    {
+      "query": "petkit eversweet ultra",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5.5,
+      "avgClickPosition": null
+    },
+    {
+      "query": "you tube katzentrinkbrunnen filter einsetzen",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2,
+      "avgClickPosition": null
+    },
+    {
+      "query": "about us offline filetype:fods",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4,
+      "avgClickPosition": null
+    },
+    {
+      "query": "ae können filetype:fods",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5,
+      "avgClickPosition": null
+    },
+    {
+      "query": "abs abs f filetype:fods",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1,
+      "avgClickPosition": null
+    }
+  ],
   "quickWins": [],
   "crawlWarnings": []
 }

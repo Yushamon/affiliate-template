@@ -14,9 +14,16 @@ const write = process.argv.includes("--write");
 const files = await readProductFiles(productsDir);
 const differences = [];
 
-const same = (left, right) => {
-  if (left instanceof Date) left = left.toISOString();
-  if (right instanceof Date) right = right.toISOString();
+const same = (key, left, right) => {
+  if (key === "priceUpdated" || key === "availabilityUpdated") {
+    const leftTimestamp = left instanceof Date ? left.getTime() : Date.parse(String(left));
+    const rightTimestamp = right instanceof Date ? right.getTime() : Date.parse(String(right));
+    if (Number.isFinite(leftTimestamp)) left = new Date(leftTimestamp).toISOString();
+    if (Number.isFinite(rightTimestamp)) right = new Date(rightTimestamp).toISOString();
+  } else {
+    if (left instanceof Date) left = left.toISOString();
+    if (right instanceof Date) right = right.toISOString();
+  }
   return String(left ?? "") === String(right ?? "");
 };
 
@@ -24,7 +31,7 @@ for (const file of files) {
   const before = await readProductDocument(file);
   const expected = operationFieldsFrom(before.data);
   const changedKeys = Object.entries(expected)
-    .filter(([key, value]) => !same(before.data[key], value))
+    .filter(([key, value]) => !same(key, before.data[key], value))
     .map(([key]) => key);
 
   if (!changedKeys.length) continue;

@@ -32,7 +32,7 @@ affiliateAvailable: false
 availability: "unknown"
 editorialStatus: "complete"
 recommendationStatus: "limited"
-maintenanceStatus: "complete"
+maintenanceStatus: "required"
 ratings: { sicherheit: 3.8, platz: 3.1, reinigung: 4.0, folgekosten: 2.8, datenschutz: 2.8 }
 externalEvidence:
   professionalReviews:

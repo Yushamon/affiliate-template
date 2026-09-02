@@ -66,14 +66,15 @@ price:
     type: "editorial"
 priceAutomation: "editorial"
 priceState: "unknown"
+priceUpdated: "2026-08-15T00:00:00.000Z"
 priceAvailable: false
 affiliateAvailable: false
 availability: "out-of-stock"
 availabilityReason: "Der offizielle deutsche Enabot-Shop zeigte das Modell am 15.08.2026 als nicht auf Lager; daraus folgt keine Einstellung."
 availabilityUpdated: "2026-08-15"
-editorialStatus: "required"
-recommendationStatus: "limited"
-maintenanceStatus: "required"
+editorialStatus: "archived"
+recommendationStatus: "archived"
+maintenanceStatus: "archived"
 rating: 3.7
 ratings:
   ortung: 4.3

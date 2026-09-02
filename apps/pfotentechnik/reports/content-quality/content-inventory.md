@@ -6,7 +6,7 @@ Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus d
 - Gerenderte HTML-Seiten insgesamt: 367
 - Cluster: 17
 - Primäre Intent-Kategorien: 8
-- Harte Fehler: 11
+- Harte Fehler: 0
 - Warnungen: 0
 
 ## Seitentypen

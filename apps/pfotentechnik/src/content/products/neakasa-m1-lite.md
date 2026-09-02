@@ -80,7 +80,7 @@ availability: "unknown"
 availabilityReason: "Preis und Lieferstatus werden nicht als dauerhafte redaktionelle Angabe gespeichert."
 availabilityUpdated: "2026-08-15"
 editorialStatus: "complete"
-recommendationStatus: "recommended"
+recommendationStatus: "limited"
 maintenanceStatus: "complete"
 ratings:
   sicherheit: 4.2

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T13:26:35.125Z",
+  "generatedAt": "2026-09-02T06:06:21.151Z",
   "mode": "read-only",
   "inputs": {
-    "searchGeneratedAt": "2026-08-25T06:21:38.912Z",
-    "googleUpdatedAt": "2026-08-24T12:23:27.763Z",
-    "bingUpdatedAt": "2026-08-23T07:00:00.000Z",
-    "graphGeneratedAt": "2026-08-25T13:23:52.222Z",
+    "searchGeneratedAt": "2026-08-28T09:03:13.694Z",
+    "googleUpdatedAt": "2026-08-28T09:03:13.658Z",
+    "bingUpdatedAt": "2026-08-27T07:00:00.000Z",
+    "graphGeneratedAt": "2026-09-01T04:06:47.045Z",
     "groundTruthGeneratedAt": "2026-08-25"
   },
   "nodes": [
@@ -274,33 +274,11 @@
         "cat 6 mini tractive",
         "tractive cat mini 6"
       ],
-      "discoveredAt": "2026-08-25T06:21:38.912Z",
+      "discoveredAt": "2026-08-28T09:03:13.694Z",
       "confidence": "medium"
     },
     {
-      "id": "search:futterautomaten:2:mehrkatzenhaushalt-futterung",
-      "cluster": "futterautomaten",
-      "topic": "mehrkatzenhaushalt fütterung",
-      "userProblem": "mehrkatzenhaushalt fütterung",
-      "intent": "informational",
-      "sourceSignals": [
-        {
-          "type": "gsc",
-          "query": "mehrkatzenhaushalt fütterung",
-          "impressions": 3,
-          "clicks": 0,
-          "position": 91,
-          "range": "28d"
-        }
-      ],
-      "candidateQueries": [
-        "mehrkatzenhaushalt fütterung"
-      ],
-      "discoveredAt": "2026-08-25T06:21:38.912Z",
-      "confidence": "medium"
-    },
-    {
-      "id": "search:trinkbrunnen:3:katzenbrunnen-pumpe-reinigen",
+      "id": "search:trinkbrunnen:2:katzenbrunnen-pumpe-reinigen",
       "cluster": "trinkbrunnen",
       "topic": "katzenbrunnen pumpe reinigen",
       "userProblem": "katzenbrunnen pumpe reinigen",
@@ -318,55 +296,11 @@
       "candidateQueries": [
         "katzenbrunnen pumpe reinigen"
       ],
-      "discoveredAt": "2026-08-25T06:21:38.912Z",
+      "discoveredAt": "2026-08-28T09:03:13.694Z",
       "confidence": "medium"
     },
     {
-      "id": "search:futterautomaten:4:futterautomat-fur-katzen",
-      "cluster": "futterautomaten",
-      "topic": "futterautomat für 2 katzen",
-      "userProblem": "futterautomat für 2 katzen",
-      "intent": "commercial-investigation",
-      "sourceSignals": [
-        {
-          "type": "gsc",
-          "query": "futterautomat für 2 katzen",
-          "impressions": 2,
-          "clicks": 0,
-          "position": 51.5,
-          "range": "28d"
-        }
-      ],
-      "candidateQueries": [
-        "futterautomat für 2 katzen"
-      ],
-      "discoveredAt": "2026-08-25T06:21:38.912Z",
-      "confidence": "medium"
-    },
-    {
-      "id": "search:futterautomaten:5:futterautomat-katze-urlaub",
-      "cluster": "futterautomaten",
-      "topic": "futterautomat katze urlaub",
-      "userProblem": "futterautomat katze urlaub",
-      "intent": "informational",
-      "sourceSignals": [
-        {
-          "type": "gsc",
-          "query": "futterautomat katze urlaub",
-          "impressions": 2,
-          "clicks": 0,
-          "position": 45.5,
-          "range": "28d"
-        }
-      ],
-      "candidateQueries": [
-        "futterautomat katze urlaub"
-      ],
-      "discoveredAt": "2026-08-25T06:21:38.912Z",
-      "confidence": "medium"
-    },
-    {
-      "id": "search:futterautomaten:6:futterautomat-nassfutter-katze",
+      "id": "search:futterautomaten:3:futterautomat-nassfutter-katze",
       "cluster": "futterautomaten",
       "topic": "futterautomat nassfutter katze",
       "userProblem": "futterautomat nassfutter katze",
@@ -387,26 +321,17 @@
           "clicks": 0,
           "position": 54,
           "range": "28d"
-        },
-        {
-          "type": "gsc",
-          "query": "katze futterautomat nassfutter",
-          "impressions": 1,
-          "clicks": 0,
-          "position": 46,
-          "range": "28d"
         }
       ],
       "candidateQueries": [
         "futterautomat nassfutter katze",
-        "futterautomat katze nassfutter",
-        "katze futterautomat nassfutter"
+        "futterautomat katze nassfutter"
       ],
-      "discoveredAt": "2026-08-25T06:21:38.912Z",
+      "discoveredAt": "2026-08-28T09:03:13.694Z",
       "confidence": "medium"
     },
     {
-      "id": "search:futterautomaten:7:nassfutterautomat-fur-katzen",
+      "id": "search:futterautomaten:4:nassfutterautomat-fur-katzen",
       "cluster": "futterautomaten",
       "topic": "nassfutterautomat für katzen",
       "userProblem": "nassfutterautomat für katzen",
@@ -424,11 +349,11 @@
       "candidateQueries": [
         "nassfutterautomat für katzen"
       ],
-      "discoveredAt": "2026-08-25T06:21:38.912Z",
+      "discoveredAt": "2026-08-28T09:03:13.694Z",
       "confidence": "medium"
     },
     {
-      "id": "search:trinkbrunnen:8:you-tube-katzentrinkbrunnen-filter",
+      "id": "search:trinkbrunnen:5:you-tube-katzentrinkbrunnen-filter",
       "cluster": "trinkbrunnen",
       "topic": "you tube katzentrinkbrunnen filter einsetzen",
       "userProblem": "you tube katzentrinkbrunnen filter einsetzen",
@@ -446,11 +371,11 @@
       "candidateQueries": [
         "you tube katzentrinkbrunnen filter einsetzen"
       ],
-      "discoveredAt": "2026-08-25T06:21:38.912Z",
+      "discoveredAt": "2026-08-28T09:03:13.694Z",
       "confidence": "medium"
     },
     {
-      "id": "search:trinkbrunnen:9:pumpe-katzenbrunnens-gereinigt-gibt",
+      "id": "search:trinkbrunnen:6:pumpe-katzenbrunnens-gereinigt-gibt",
       "cluster": "trinkbrunnen",
       "topic": "wie wird die pumpe eines katzenbrunnens gereinigt? gibt es eine anleitung wie diese auseinander gebaut werden soll?",
       "userProblem": "wie wird die pumpe eines katzenbrunnens gereinigt? gibt es eine anleitung wie diese auseinander gebaut werden soll?",
@@ -468,11 +393,11 @@
       "candidateQueries": [
         "wie wird die pumpe eines katzenbrunnens gereinigt? gibt es eine anleitung wie diese auseinander gebaut werden soll?"
       ],
-      "discoveredAt": "2026-08-25T06:21:38.912Z",
+      "discoveredAt": "2026-08-28T09:03:13.694Z",
       "confidence": "medium"
     },
     {
-      "id": "search:gps-tracker:10:warum-piepsen-gps-tracker",
+      "id": "search:gps-tracker:7:warum-piepsen-gps-tracker",
       "cluster": "gps-tracker",
       "topic": "warum piepsen gps tracker für haustiere in regelmäßigen abständen",
       "userProblem": "warum piepsen gps tracker für haustiere in regelmäßigen abständen",
@@ -490,33 +415,33 @@
       "candidateQueries": [
         "warum piepsen gps tracker für haustiere in regelmäßigen abständen"
       ],
-      "discoveredAt": "2026-08-25T06:21:38.912Z",
+      "discoveredAt": "2026-08-28T09:03:13.694Z",
       "confidence": "medium"
     },
     {
-      "id": "search:futterautomaten:11:futterautomat-katzen",
+      "id": "search:futterautomaten:8:futterautomat-fur-katzen",
       "cluster": "futterautomaten",
-      "topic": "futterautomat 2 katzen",
-      "userProblem": "futterautomat 2 katzen",
-      "intent": "informational",
+      "topic": "futterautomat für 2 katzen",
+      "userProblem": "futterautomat für 2 katzen",
+      "intent": "commercial-investigation",
       "sourceSignals": [
         {
           "type": "gsc",
-          "query": "futterautomat 2 katzen",
+          "query": "futterautomat für 2 katzen",
           "impressions": 1,
           "clicks": 0,
-          "position": 51,
+          "position": 56,
           "range": "28d"
         }
       ],
       "candidateQueries": [
-        "futterautomat 2 katzen"
+        "futterautomat für 2 katzen"
       ],
-      "discoveredAt": "2026-08-25T06:21:38.912Z",
+      "discoveredAt": "2026-08-28T09:03:13.694Z",
       "confidence": "medium"
     },
     {
-      "id": "search:futterautomaten:12:futterautomat-fur-katzen-chip",
+      "id": "search:futterautomaten:9:futterautomat-fur-katzen-chip",
       "cluster": "futterautomaten",
       "topic": "futterautomat für 2 katzen mit chip",
       "userProblem": "futterautomat für 2 katzen mit chip",
@@ -534,7 +459,73 @@
       "candidateQueries": [
         "futterautomat für 2 katzen mit chip"
       ],
-      "discoveredAt": "2026-08-25T06:21:38.912Z",
+      "discoveredAt": "2026-08-28T09:03:13.694Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "search:futterautomaten:10:hund-nur-trockenfutter",
+      "cluster": "futterautomaten",
+      "topic": "hund nur trockenfutter",
+      "userProblem": "hund nur trockenfutter",
+      "intent": "informational",
+      "sourceSignals": [
+        {
+          "type": "gsc",
+          "query": "hund nur trockenfutter",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 92,
+          "range": "28d"
+        }
+      ],
+      "candidateQueries": [
+        "hund nur trockenfutter"
+      ],
+      "discoveredAt": "2026-08-28T09:03:13.694Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "search:futterautomaten:11:nassfutter-automat-katzen",
+      "cluster": "futterautomaten",
+      "topic": "nassfutter automat katzen",
+      "userProblem": "nassfutter automat katzen",
+      "intent": "informational",
+      "sourceSignals": [
+        {
+          "type": "gsc",
+          "query": "nassfutter automat katzen",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 50,
+          "range": "28d"
+        }
+      ],
+      "candidateQueries": [
+        "nassfutter automat katzen"
+      ],
+      "discoveredAt": "2026-08-28T09:03:13.694Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "search:futterautomaten:12:nassfutterautomat-katze",
+      "cluster": "futterautomaten",
+      "topic": "nassfutterautomat katze",
+      "userProblem": "nassfutterautomat katze",
+      "intent": "informational",
+      "sourceSignals": [
+        {
+          "type": "gsc",
+          "query": "nassfutterautomat katze",
+          "impressions": 1,
+          "clicks": 0,
+          "position": 60,
+          "range": "28d"
+        }
+      ],
+      "candidateQueries": [
+        "nassfutterautomat katze"
+      ],
+      "discoveredAt": "2026-08-28T09:03:13.694Z",
       "confidence": "medium"
     }
   ]

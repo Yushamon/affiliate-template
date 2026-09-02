@@ -16,7 +16,14 @@ const rows = [];
 const errors = [];
 const warnings = [];
 
-const normalize = (value) => value instanceof Date ? value.toISOString() : value;
+const normalize = (key, value) => {
+  if (value == null || value === "") return value;
+  if (key === "priceUpdated" || key === "availabilityUpdated") {
+    const timestamp = value instanceof Date ? value.getTime() : Date.parse(String(value));
+    if (Number.isFinite(timestamp)) return new Date(timestamp).toISOString();
+  }
+  return value;
+};
 for (const file of files) {
   const document = await readProductDocument(file);
   const expected = operationFieldsFrom(document.data);
@@ -24,7 +31,7 @@ for (const file of files) {
   rows.push({ slug: document.slug, operations });
 
   for (const [key, value] of Object.entries(expected)) {
-    if (String(normalize(document.data[key]) ?? "") !== String(normalize(value) ?? "")) {
+    if (String(normalize(key, document.data[key]) ?? "") !== String(normalize(key, value) ?? "")) {
       errors.push(`${document.slug}: ${key} ist nicht mit der Pflegelogik synchronisiert.`);
     }
   }

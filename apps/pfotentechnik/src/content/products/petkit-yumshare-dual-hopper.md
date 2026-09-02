@@ -67,10 +67,10 @@ images:
     - src: ../../assets/images/products/petkit-yumshare-dual-hopper/gallery-4.webp
       alt: PETKIT YumShare Dual-Hopper 2 in einem Mehrkatzenhaushalt
 price:
-  current: 168.99
+  current: 109.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-28T09:04:42.688Z"
+  checkedAt: "2026-09-02T06:03:48.194Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -85,12 +85,12 @@ rating: 4.8
 score: 95
 
 priceState: "available"
-priceUpdated: "2026-08-28T09:04:42.688Z"
+priceUpdated: "2026-09-02T06:03:48.194Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-28T09:04:42.688Z"
+availabilityUpdated: "2026-09-02T06:03:48.194Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
