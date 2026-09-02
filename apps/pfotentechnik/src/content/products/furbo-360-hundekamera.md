@@ -23,7 +23,19 @@ images:
   hero:
     src: "../../assets/images/products/furbo-360-hundekamera/hero.webp"
     alt: "Furbo 360° Hundekamera in hochwertiger Produktansicht"
-  gallery: []
+  gallery:
+    - src: "../../assets/images/products/furbo-360-hundekamera/gallery-1.webp"
+      alt: "Furbo 360° Hundekamera, weitere Produktansicht 1"
+    - src: "../../assets/images/products/furbo-360-hundekamera/gallery-2.webp"
+      alt: "Furbo 360° Hundekamera, weitere Produktansicht 2"
+    - src: "../../assets/images/products/furbo-360-hundekamera/gallery-3.webp"
+      alt: "Furbo 360° Hundekamera, weitere Produktansicht 3"
+  thumbnail:
+    src: "../../assets/images/products/furbo-360-hundekamera/thumbnail.webp"
+    alt: "Furbo 360° Hundekamera als kompakte Produktansicht"
+  comparison:
+    src: "../../assets/images/products/furbo-360-hundekamera/comparison.webp"
+    alt: "Furbo 360° Hundekamera im Produktvergleich"
 price:
   current: 49
   currency: "EUR"

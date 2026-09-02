@@ -1,14 +1,14 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-09-02T06:04:26.651Z
+Erstellt: 2026-09-02T06:40:45.451Z
 
 ## Ergebnis
 
 - Dokumente: 243
 - Linkdefinitionen: 514
-- Simulierte automatische Links: 562
+- Simulierte automatische Links: 564
 - Fehler: 0
-- Warnungen: 9
+- Warnungen: 8
 - Strict-kritisch: 0
 
 ## Befunde
@@ -18,7 +18,6 @@ Erstellt: 2026-09-02T06:04:26.651Z
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /katze-an-trinkbrunnen-gewoehnen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /katzentrinkbrunnen-ohne-filter/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
-- **WARNING NO_INCOMING_INTERNAL_LINK:** /produkt/feelneedy-fn-w18-8l-katzenbrunnen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /seniorenhunde-richtig-versorgen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /trinkbrunnen-fuer-kitten-sicher/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /wie-kann-technik-gegen-langeweile-helfen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
@@ -189,11 +188,13 @@ Erstellt: 2026-09-02T06:04:26.651Z
 - /trinkbrunnen-seniorenkatzen/ → /warum-katzen-fliessendes-wasser-trinken/: „bewegtes Wasser“
 - /trinkbrunnen-seniorenkatzen/ → /nierenkranke-katze-trinken/: „Nierenerkrankung“
 - /trinkbrunnen-seniorenkatzen/ → /wie-viele-wasserstellen-katze/: „Wasserstellen“
-- /trinkbrunnen/ → /produkt/petlibro-dockstream-2-smart-cordless/: „PETLIBRO Dockstream 2 Smart Cordless“
-- /trinkbrunnen/ → /produkt/petkit-eversweet-solo-2-fountain/: „PETKIT Eversweet Solo 2“
 - /trinkbrunnen/ → /trinkbrunnen-fuer-katzen-sinnvoll/: „Trinkbrunnen für Katzen“
 - /trinkbrunnen/ → /trinkbrunnen-hund/: „Trinkbrunnen für Hunde“
+- /trinkbrunnen/ → /hersteller/cat-mate/: „Cat Mate“
 - /trinkbrunnen/ → /warum-katzen-fliessendes-wasser-trinken/: „bewegtes Wasser“
+- /trinkbrunnen/ → /hersteller/petlibro/: „PETLIBRO“
+- /trinkbrunnen/ → /hersteller/catit/: „Catit“
+- /trinkbrunnen/ → /hersteller/oneisall/: „oneisall“
 - /trinkbrunnen/ → /hersteller/petsafe/: „PetSafe“
 - /trinkmenge-hund-messen/ → /trinkbrunnen/: „Trinkbrunnen“
 - /trinkmenge-hund-messen/ → /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/: „trinkt zu wenig“

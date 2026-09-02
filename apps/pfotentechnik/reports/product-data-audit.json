@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-09-02T06:04:38.828Z",
+    "generatedAt": "2026-09-02T06:40:42.618Z",
     "totalProducts": 101,
     "byCategory": {
       "futterautomaten": 37,
@@ -11,7 +11,7 @@
       "gps-tracker": 12
     },
     "errors": 0,
-    "warnings": 96,
+    "warnings": 93,
     "notes": 143,
     "duplicateSlugs": 0
   },
@@ -1364,11 +1364,7 @@
       "title": "Furbo 360° Hundekamera",
       "category": "haustierkameras",
       "errors": [],
-      "warnings": [
-        "Thumbnail fehlt",
-        "Comparison-Bild fehlt",
-        "Nur 0 Galerie-Bilder hinterlegt"
-      ],
+      "warnings": [],
       "notes": [],
       "specs": [
         {
@@ -1391,7 +1387,7 @@
       "unknownSpecs": [],
       "structuralCompleteness": 100,
       "confirmedCompleteness": 100,
-      "completeness": 91
+      "completeness": 100
     },
     {
       "file": "src/content/products/furbo-360-katzenkamera.md",

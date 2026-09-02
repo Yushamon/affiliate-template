@@ -190,6 +190,5 @@ Diese Modelle gehören ebenfalls zu diesem Themenbereich. In den redaktionellen 
 - [Devoko 90L Automatisches Katzenklo](/produkt/devoko-90l-automatisches-katzenklo/)
 - [Neakasa M1 Plus](/produkt/neakasa-m1-plus/)
 - [PETKIT PUROBOT MAX PRO 2](/produkt/petkit-purobot-max-pro-2/)
-- [PETKIT PUROBOT CRYSTAL DUO](/produkt/petkit-purobot-crystal-duo/)
 - [PETLIBRO Luma Smart Self-Cleaning Litter Box](/produkt/petlibro-luma-smart-litter-box/)
 <!-- pt:content-discovery:category-products:end -->

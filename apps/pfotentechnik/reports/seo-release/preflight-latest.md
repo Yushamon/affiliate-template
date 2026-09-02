@@ -2,7 +2,7 @@
 
 - Status: OK
 - Modus: production
-- Dauer: 88622 ms
+- Dauer: 100754 ms
 - Phasen: 23
 - Fehler: 0
 - Warnungen: 0
@@ -44,6 +44,6 @@ Keine.
 ## Content Quality
 
 - Report: /Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/reports/content-quality/cannibalization-report.md
-- Indexierbare Seiten: 230
+- Indexierbare Seiten: 255
 - Harte Fehler: 0
 - Warnungen: 0

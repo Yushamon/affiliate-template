@@ -79,6 +79,6 @@ Die Herstellerroute verbindet die dokumentierte Interaktionskamera mit dem [Haus
 Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
 
 - [Furbo 360° Hundekamera](/produkt/furbo-360-hundekamera/)
-- [Furbo Mini 360](/produkt/furbo-mini-360/)
 - [Furbo 360° Katzenkamera](/produkt/furbo-360-katzenkamera/)
+- [Furbo Mini 360](/produkt/furbo-mini-360/)
 <!-- pt:content-discovery:manufacturer-products:end -->

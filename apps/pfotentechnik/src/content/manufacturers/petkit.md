@@ -208,5 +208,4 @@ Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen
 - [PETKIT Fresh Element Solo](/produkt/petkit-fresh-element-solo/)
 - [PETKIT PuraMax 2](/produkt/petkit-puramax-2/)
 - [PETKIT PUROBOT MAX PRO 2](/produkt/petkit-purobot-max-pro-2/)
-- [PETKIT PUROBOT CRYSTAL DUO](/produkt/petkit-purobot-crystal-duo/)
 <!-- pt:content-discovery:manufacturer-products:end -->

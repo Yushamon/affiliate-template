@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-16T13:03:39.293Z",
+  "generatedAt": "2026-09-02T06:40:42.231Z",
   "mode": "check",
   "summary": {
-    "products": 82,
+    "products": 101,
     "changedProducts": 0,
     "actions": 0,
-    "missingAssets": 34,
-    "staleComparisonRelations": 36,
+    "missingAssets": 27,
+    "staleComparisonRelations": 41,
     "errors": 0
   },
   "actionCounts": {},
@@ -25,22 +25,6 @@
     },
     {
       "slug": "enabot-ebo-air-2",
-      "role": "gallery",
-      "expected": "gallery-1.webp + gallery-2.webp",
-      "available": 0
-    },
-    {
-      "slug": "furbo-360-hundekamera",
-      "role": "thumbnail",
-      "expected": "thumbnail.webp"
-    },
-    {
-      "slug": "furbo-360-hundekamera",
-      "role": "comparison",
-      "expected": "comparison.webp"
-    },
-    {
-      "slug": "furbo-360-hundekamera",
       "role": "gallery",
       "expected": "gallery-1.webp + gallery-2.webp",
       "available": 0
@@ -94,12 +78,6 @@
       "role": "gallery",
       "expected": "gallery-1.webp + gallery-2.webp",
       "available": 1
-    },
-    {
-      "slug": "paj-pet-finder-4g-mini",
-      "role": "gallery",
-      "expected": "gallery-1.webp + gallery-2.webp",
-      "available": 0
     },
     {
       "slug": "pawsync-smart-pet-feeder",
@@ -157,16 +135,10 @@
       "available": 1
     },
     {
-      "slug": "petsafe-smart-feed-2",
+      "slug": "pettec-cam-360",
       "role": "gallery",
       "expected": "gallery-1.webp + gallery-2.webp",
       "available": 1
-    },
-    {
-      "slug": "petwalk-medium-tiertuer",
-      "role": "gallery",
-      "expected": "gallery-1.webp + gallery-2.webp",
-      "available": 0
     },
     {
       "slug": "surefeed-microchip-pet-feeder-connect",
@@ -176,18 +148,6 @@
     },
     {
       "slug": "tractive-dog-6-xl",
-      "role": "gallery",
-      "expected": "gallery-1.webp + gallery-2.webp",
-      "available": 0
-    },
-    {
-      "slug": "tractive-dog-6",
-      "role": "gallery",
-      "expected": "gallery-1.webp + gallery-2.webp",
-      "available": 0
-    },
-    {
-      "slug": "weenect-xs",
       "role": "gallery",
       "expected": "gallery-1.webp + gallery-2.webp",
       "available": 0
@@ -252,6 +212,25 @@
       ]
     },
     {
+      "slug": "enabot-ebo-air-2",
+      "comparisons": [
+        "beste-haustierkameras"
+      ]
+    },
+    {
+      "slug": "feelneedy-fn-w18-8l-katzenbrunnen",
+      "comparisons": [
+        "beste-trinkbrunnen-fuer-katzen",
+        "beste-trinkbrunnen-fuer-hunde"
+      ]
+    },
+    {
+      "slug": "furbo-360-hundekamera",
+      "comparisons": [
+        "beste-haustierkameras"
+      ]
+    },
+    {
       "slug": "garmin-alpha-tt-25",
       "comparisons": [
         "gps-tracker-mit-langer-akkulaufzeit"
@@ -268,6 +247,12 @@
       "comparisons": [
         "beste-futterautomaten-fuer-katzen",
         "beste-futterautomaten-fuer-hunde"
+      ]
+    },
+    {
+      "slug": "neakasa-m1-plus",
+      "comparisons": [
+        "beste-automatische-katzentoiletten"
       ]
     },
     {
@@ -425,6 +410,12 @@
       "slug": "wopet-cube-air-ca10",
       "comparisons": [
         "futterautomat-mit-app"
+      ]
+    },
+    {
+      "slug": "wopet-heritage-view-camera-feeder",
+      "comparisons": [
+        "beste-futterautomaten-mit-kamera"
       ]
     },
     {

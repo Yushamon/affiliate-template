@@ -268,5 +268,4 @@ Diese Modelle gehören ebenfalls zu diesem Themenbereich. In den redaktionellen 
 
 - [Enabot EBO Air 2](/produkt/enabot-ebo-air-2/)
 - [Furbo 360° Hundekamera](/produkt/furbo-360-hundekamera/)
-- [Furbo 360° Katzenkamera](/produkt/furbo-360-katzenkamera/)
 <!-- pt:content-discovery:category-products:end -->

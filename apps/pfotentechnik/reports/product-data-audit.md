@@ -1,12 +1,12 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-09-02T06:04:38.828Z
+Erstellt: 2026-09-02T06:40:42.618Z
 
 ## Zusammenfassung
 
 - Produkte: 101
 - Fehler: 0
-- Warnungen: 96
+- Warnungen: 93
 - Dokumentierte Hinweise: 143
 - Doppelte Slugs: 0
 
@@ -51,16 +51,6 @@ Erstellt: 2026-09-02T06:04:38.828Z
   - Empfohlenes Feld fehlt: trinkhöhe
   - Empfohlenes Feld fehlt: maße
   - Empfohlenes Feld fehlt: gewicht
-
-### Furbo 360° Hundekamera
-
-- Datei: `src/content/products/furbo-360-hundekamera.md`
-- Kategorie: haustierkameras
-- Vollständigkeit: 91%
-- Warnungen:
-  - Thumbnail fehlt
-  - Comparison-Bild fehlt
-  - Nur 0 Galerie-Bilder hinterlegt
 
 ### Neakasa M1 Plus
 

@@ -276,3 +276,34 @@ Für die eigentliche Produktauswahl haben wir Katzen- und Hundemodelle getrennt.
 Ein guter Trinkbrunnen muss nicht besonders smart sein. Er muss **zum Tier passen, stabil laufen und sich ohne Frust reinigen lassen**.
 
 Wenn zwei Modelle technisch ähnlich wirken, würden wir das Modell mit der einfacheren Reinigung, besser verfügbaren Ersatzteilen und der passenderen Trinkfläche bevorzugen. App, UVC und Beleuchtung kommen erst danach.
+
+<!-- pt:content-discovery:category-products:start -->
+## Weitere Produktseiten im Themenbereich
+
+Diese Modelle gehören ebenfalls zu diesem Themenbereich. In den redaktionellen Vergleichen erscheinen nur Produkte, die zur jeweiligen Suchintention und zu den gemeinsamen Kriterien passen.
+
+- [Cat Mate Pet Fountain 335](/produkt/cat-mate-335-pet-fountain/)
+- [Cat Mate Shell Pet Fountain](/produkt/cat-mate-shell-fountain/)
+- [Catit PIXI Smart-Trinkbrunnen](/produkt/catit-pixi-smart-trinkbrunnen/)
+- [FEELNEEDY FN-W18 8L Katzenbrunnen](/produkt/feelneedy-fn-w18-8l-katzenbrunnen/)
+- [oneisall 2,2L Cordless Cat Fountain](/produkt/oneisall-2-2l-cordless-fountain/)
+- [oneisall 3,2L Cordless Cat Fountain](/produkt/oneisall-3-2l-cordless-fountain/)
+- [oneisall 3,5L Cordless Fountain](/produkt/oneisall-3-5l-cordless-fountain/)
+- [oneisall 7L Dog Water Fountain](/produkt/oneisall-7l-dog-water-fountain/)
+- [PETKIT Eversweet 3 Pro UVC](/produkt/petkit-eversweet-3-pro-uvc/)
+- [PETKIT Eversweet 5 Mini](/produkt/petkit-eversweet-5-mini/)
+- [PETKIT Eversweet Max 2 UVC](/produkt/petkit-eversweet-max-2-uvc/)
+- [PETKIT Eversweet Max Cordless](/produkt/petkit-eversweet-max-cordless/)
+- [PETKIT Eversweet Solo 2](/produkt/petkit-eversweet-solo-2-fountain/)
+- [PETKIT Eversweet Solo SE](/produkt/petkit-eversweet-solo-se/)
+- [PETKIT Eversweet Ultra](/produkt/petkit-eversweet-ultra/)
+- [PETLIBRO Capsule Dog Fountain](/produkt/petlibro-capsule-dog-fountain/)
+- [PETLIBRO Dockstream 2 Smart](/produkt/petlibro-dockstream-2-smart/)
+- [PETLIBRO Dockstream 2 Smart Cordless](/produkt/petlibro-dockstream-2-smart-cordless/)
+- [PETLIBRO Dockstream Cordless](/produkt/petlibro-dockstream-cordless/)
+- [PETLIBRO Dockstream RFID Smart](/produkt/petlibro-dockstream-rfid-smart/)
+- [PETLIBRO Glacier Ultrafiltration Fountain](/produkt/petlibro-glacier-ultrafiltration/)
+- [PETLIBRO Stainless Steel Fountain 3L](/produkt/petlibro-stainless-steel-fountain/)
+- [PetSafe Keramik-Trinkbrunnen Streamside](/produkt/petsafe-streamside-trinkbrunnen/)
+- [Xiaomi Smart Pet Fountain 2](/produkt/xiaomi-smart-pet-fountain-2/)
+<!-- pt:content-discovery:category-products:end -->
