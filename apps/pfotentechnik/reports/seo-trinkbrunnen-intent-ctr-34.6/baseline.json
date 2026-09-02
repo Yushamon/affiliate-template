@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-02T08:38:13Z",
+  "scope": "PFOTENTECHNIK 34.6 TRINKBRUNNEN INTENT / CTR BATCH",
+  "dataFreshness": {
+    "latestSearchDate": "2026-08-27",
+    "supportingWindow": {
+      "start": "2026-05-30",
+      "end": "2026-08-27",
+      "label": "Google Search Console 3 months"
+    },
+    "currentWindow": {
+      "start": "2026-07-31",
+      "end": "2026-08-27",
+      "label": "Google Search Console 28 days"
+    },
+    "interpretationThreshold": "At least 20 impressions per URL or coherent query cluster",
+    "constraint": "The latest export contains only six calendar days after the 2026-08-21 intervention and no current-window row for any target URL. Missing rows are UNKNOWN, not zero."
+  },
+  "urls": [
+    {
+      "url": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "titleBefore": "Wie viele Wasserstellen für 2 Katzen? Trinkbrunnen & Näpfe",
+      "descriptionBefore": "Für zwei Katzen sind mehrere getrennte Wasserstellen sinnvoll. So planst du Anzahl, Standorte, Trinkbrunnen, Näpfe und Tankgröße im Mehrkatzenhaushalt.",
+      "h1Before": "Trinkbrunnen für zwei oder mehr Katzen",
+      "primaryIntent": "Mehrkatzenhaushalt: Anzahl und Verteilung geeigneter Wasserstellen planen",
+      "secondaryIntent": "Trinkbrunnen, Näpfe, Tankgröße und Standortwahl einordnen",
+      "historicalOpportunity": "A — striking-distance page with zero-click supporting-window signal",
+      "opportunityType": "E — insufficient post-intervention evidence",
+      "supportingWindowMetrics": { "clicks": 0, "impressions": 15, "ctr": 0, "position": 7.3 },
+      "currentWindowMetrics": { "clicks": "UNKNOWN", "impressions": "UNKNOWN", "ctr": "UNKNOWN", "position": "UNKNOWN" },
+      "knownQueries": [
+        { "query": "gibt es vertrauenswürdige katzenbrunnen optionen für mehrere katzen?", "clicks": 0, "impressions": 2, "ctr": 0, "position": 10 },
+        { "query": "wie viele trinkbrunnen für 2 katzen", "clicks": 0, "impressions": 2, "ctr": 0, "position": 3.5 }
+      ],
+      "unreportedSupportingWindowImpressions": 11,
+      "incomingMeaningfulLinks": 35,
+      "outgoingMeaningfulLinks": 19,
+      "crawlDepth": 2,
+      "observation": { "status": "observing", "optimizedAt": "2026-08-21T10:38:51.780Z", "observeUntil": "2026-09-11T10:38:51.780Z" }
+    },
+    {
+      "url": "/katzentrinkbrunnen-laut-pumpe/",
+      "titleBefore": "Katzenbrunnen laut? Pumpe in 6 Schritten prüfen",
+      "descriptionBefore": "Katzenbrunnen brummt oder rattert? Wasserstand, Luft, Filter, Haare, Kalk, Rotor und Untergrund in der richtigen Reihenfolge prüfen.",
+      "h1Before": "Katzenbrunnen laut? Pumpe in 6 Schritten prüfen",
+      "primaryIntent": "Laute oder ratternde Katzenbrunnen-Pumpe systematisch diagnostizieren",
+      "secondaryIntent": "Plätschern, Vibration, Wasserstand, Haare, Kalk und Rotor prüfen",
+      "historicalOpportunity": "A — striking-distance page with zero-click supporting-window signal",
+      "opportunityType": "E — insufficient post-intervention evidence",
+      "supportingWindowMetrics": { "clicks": 0, "impressions": 11, "ctr": 0, "position": 8 },
+      "currentWindowMetrics": { "clicks": "UNKNOWN", "impressions": "UNKNOWN", "ctr": "UNKNOWN", "position": "UNKNOWN" },
+      "knownQueries": [
+        { "query": "katzenbrunnen plätschert laut", "clicks": 0, "impressions": 1, "ctr": 0, "position": 7 }
+      ],
+      "unreportedSupportingWindowImpressions": 10,
+      "incomingMeaningfulLinks": 7,
+      "outgoingMeaningfulLinks": 19,
+      "crawlDepth": 2,
+      "observation": { "status": "observing", "optimizedAt": "2026-08-21T10:38:53.248Z", "observeUntil": "2026-09-11T10:38:53.248Z" }
+    },
+    {
+      "url": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "titleBefore": "Katzenbrunnen: Edelstahl, Keramik oder Kunststoff?",
+      "descriptionBefore": "Edelstahl, Keramik und Kunststoff bei Katzenbrunnen vergleichen: Hygiene, Kratzer, Gewicht, Bruchrisiko, Geräusch und Reinigung.",
+      "h1Before": "Katzenbrunnen: Edelstahl, Keramik oder Kunststoff?",
+      "primaryIntent": "Materialentscheidung zwischen Edelstahl, Keramik und Kunststoff",
+      "secondaryIntent": "Hygiene, Kratzer, Gewicht, Bruchrisiko, Geräusch und Reinigung vergleichen",
+      "historicalOpportunity": "A — striking-distance page with zero-click supporting-window signal",
+      "opportunityType": "E — insufficient post-intervention evidence",
+      "supportingWindowMetrics": { "clicks": 0, "impressions": 11, "ctr": 0, "position": 9.6 },
+      "currentWindowMetrics": { "clicks": "UNKNOWN", "impressions": "UNKNOWN", "ctr": "UNKNOWN", "position": "UNKNOWN" },
+      "knownQueries": [
+        { "query": "katzenbrunnen keramik oder edelstahl", "clicks": 0, "impressions": 1, "ctr": 0, "position": 13 }
+      ],
+      "unreportedSupportingWindowImpressions": 10,
+      "incomingMeaningfulLinks": 23,
+      "outgoingMeaningfulLinks": 17,
+      "crawlDepth": 2,
+      "observation": { "status": "observing", "optimizedAt": "2026-08-21T10:38:53.463Z", "observeUntil": "2026-09-11T10:38:53.463Z" }
+    },
+    {
+      "url": "/katzenwasser-taeglich-wechseln/",
+      "titleBefore": "Katzenwasser wechseln: Wie oft ist richtig?",
+      "descriptionBefore": "Katzenwasser im Napf täglich komplett wechseln. Beim Trinkbrunnen täglich kontrollieren und regelmäßig vollständig erneuern. So bleibt Wasser frisch.",
+      "h1Before": "Wie oft sollte man Katzenwasser wechseln?",
+      "primaryIntent": "Häufigkeit des vollständigen Wasserwechsels bestimmen",
+      "secondaryIntent": "Routine für Napf und Trinkbrunnen unterscheiden",
+      "historicalOpportunity": "A — striking-distance page with zero-click supporting-window signal",
+      "opportunityType": "E — insufficient post-intervention evidence",
+      "supportingWindowMetrics": { "clicks": 0, "impressions": 17, "ctr": 0, "position": 12.5 },
+      "currentWindowMetrics": { "clicks": "UNKNOWN", "impressions": "UNKNOWN", "ctr": "UNKNOWN", "position": "UNKNOWN" },
+      "knownQueries": [
+        { "query": "wie oft muss man das wasser vom katzenbrunnen wechseln?", "clicks": 0, "impressions": 1, "ctr": 0, "position": 42 }
+      ],
+      "unreportedSupportingWindowImpressions": 16,
+      "incomingMeaningfulLinks": 10,
+      "outgoingMeaningfulLinks": 18,
+      "crawlDepth": 2,
+      "observation": { "status": "observing", "optimizedAt": "2026-08-21T10:38:53.022Z", "observeUntil": "2026-09-11T10:38:53.022Z" }
+    },
+    {
+      "url": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "titleBefore": "Katzenbrunnen-Filter wechseln: alle 2–4 Wochen?",
+      "descriptionBefore": "Katzenbrunnen-Filter meist alle zwei bis vier Wochen wechseln. Tierzahl, Haare, Geruch, Wasserhärte und Durchfluss können das Intervall verkürzen.",
+      "h1Before": "Katzenbrunnen-Filter wechseln: Intervalle und Warnzeichen",
+      "primaryIntent": "Filterwechsel-Intervall für Katzenbrunnen bestimmen",
+      "secondaryIntent": "Warnzeichen, Einflussfaktoren und Folgekosten einordnen",
+      "historicalOpportunity": "A — striking-distance page with zero-click supporting-window signal",
+      "opportunityType": "E — insufficient post-intervention evidence",
+      "supportingWindowMetrics": { "clicks": 0, "impressions": 10, "ctr": 0, "position": 13.3 },
+      "currentWindowMetrics": { "clicks": "UNKNOWN", "impressions": "UNKNOWN", "ctr": "UNKNOWN", "position": "UNKNOWN" },
+      "knownQueries": [],
+      "unreportedSupportingWindowImpressions": 10,
+      "incomingMeaningfulLinks": 28,
+      "outgoingMeaningfulLinks": 18,
+      "crawlDepth": 2,
+      "observation": { "status": "observing", "optimizedAt": "2026-08-21T10:39:03.130Z", "observeUntil": "2026-09-11T10:39:03.130Z" }
+    },
+    {
+      "url": "/produkt/petlibro-stainless-steel-fountain/",
+      "titleBefore": "PETLIBRO Edelstahl-Trinkbrunnen 3L: Stärken & Schwächen",
+      "descriptionBefore": "PETLIBRO Stainless Steel Fountain 3L: Edelstahl-Tank und leiser Dauerfluss treffen auf regelmäßige Filter-, Pumpen- und Detailreinigung.",
+      "h1Before": "PETLIBRO Stainless Steel Fountain 3L",
+      "primaryIntent": "Konkretes PETLIBRO-Edelstahlmodell vor einer Kaufentscheidung prüfen",
+      "secondaryIntent": "Material, Volumen, Dauerfluss, Reinigung sowie App-/Akku-Verzicht einordnen",
+      "historicalOpportunity": "A — striking-distance branded product page with zero-click supporting-window signal",
+      "opportunityType": "E — insufficient post-intervention evidence",
+      "supportingWindowMetrics": { "clicks": 0, "impressions": 10, "ctr": 0, "position": 12.5 },
+      "currentWindowMetrics": { "clicks": "UNKNOWN", "impressions": "UNKNOWN", "ctr": "UNKNOWN", "position": "UNKNOWN" },
+      "knownQueries": [
+        { "query": "petlibro edelstahl trinkbrunnen", "clicks": 0, "impressions": 4, "ctr": 0, "position": 10.5 }
+      ],
+      "unreportedSupportingWindowImpressions": 6,
+      "incomingMeaningfulLinks": 3,
+      "outgoingMeaningfulLinks": 23,
+      "crawlDepth": 3,
+      "observation": { "status": "observing", "optimizedAt": "2026-08-21T10:38:52.121Z", "observeUntil": "2026-09-11T10:38:52.121Z" }
+    }
+  ],
+  "sources": [
+    "reports/seo-rebaseline-34.5/search-performance.md",
+    "reports/seo-rebaseline-34.5/demand-coverage.md",
+    "reports/seo-rebaseline-34.5/evidence-quality.md",
+    "reports/seo-recovery/opportunity-state.json",
+    "reports/seo-rebaseline-34.5/internal-link-graph.json",
+    "dist rendered HTML for all six URLs"
+  ]
+}

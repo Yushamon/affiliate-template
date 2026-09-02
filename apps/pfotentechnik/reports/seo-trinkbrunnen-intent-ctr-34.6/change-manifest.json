@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "batch": "PFOTENTECHNIK 34.6 TRINKBRUNNEN INTENT / CTR",
+  "generatedAt": "2026-09-02T08:38:13Z",
+  "evidenceCutoff": "2026-08-27",
+  "summary": {
+    "urlsReviewed": 6,
+    "urlsChanged": 0,
+    "metadataChanges": 0,
+    "h1Changes": 0,
+    "contentChanges": 0,
+    "internalLinkChanges": 0,
+    "schemaChanges": 0,
+    "redirects": 0,
+    "deletions": 0,
+    "noChangeDecisions": 6
+  },
+  "changes": [],
+  "decisions": [
+    {
+      "url": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "classification": "E",
+      "action": "NO CHANGE",
+      "hypothesis": "The current query-aligned snippet and immediate answer may improve discovery once the active observation window matures.",
+      "reason": "No current-window URL metrics; only six post-intervention calendar days in the latest export."
+    },
+    {
+      "url": "/katzentrinkbrunnen-laut-pumpe/",
+      "classification": "E",
+      "action": "NO CHANGE",
+      "hypothesis": "The symptom-led six-step framing already matches the disclosed noise query.",
+      "reason": "No current-window URL metrics and only one disclosed query impression."
+    },
+    {
+      "url": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "classification": "E",
+      "action": "NO CHANGE",
+      "hypothesis": "The exact three-material comparison and early recommendation already satisfy the decision intent.",
+      "reason": "No current-window URL metrics and only one disclosed query impression."
+    },
+    {
+      "url": "/katzenwasser-taeglich-wechseln/",
+      "classification": "E",
+      "action": "NO CHANGE",
+      "hypothesis": "The snippet and early answer already distinguish the daily bowl routine from qualified fountain replacement guidance.",
+      "reason": "No current-window URL metrics; the only disclosed query has one impression."
+    },
+    {
+      "url": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "classification": "E",
+      "action": "NO CHANGE",
+      "hypothesis": "The interval-plus-warning-sign framing should be evaluated before another lead or snippet edit.",
+      "reason": "No disclosed query rows and no current-window URL metrics."
+    },
+    {
+      "url": "/produkt/petlibro-stainless-steel-fountain/",
+      "classification": "E",
+      "action": "NO CHANGE",
+      "hypothesis": "The brand, stainless-steel material, capacity and trade-off framing already match the disclosed branded query.",
+      "reason": "No current-window URL metrics; the supporting sample contains only four disclosed branded-query impressions."
+    }
+  ]
+}
