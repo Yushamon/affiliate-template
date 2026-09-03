@@ -38,6 +38,19 @@ images:
       alt: "Invoxia Biotracker Edition 2026 – Produktansicht 3"
     - src: "../../assets/images/products/invoxia-biotracker-2026/gallery-4.webp"
       alt: "Invoxia Biotracker Edition 2026 – Produktansicht 4"
+subscription:
+  status: required-subscription
+  requiredForCoreFunction: true
+  serviceType: cellular
+  serviceModel: subscription
+  provider: Invoxia
+  researchedAt: "2026-09-02"
+  source: "https://invoxia-petcare.zendesk.com/hc/en-150/articles/9652732933533--What-are-the-subscription-plans-for-the-Minitailz-Biotracker-GPS-and-how-do-I-subscribe"
+  freeFunctions: ["Basisplan ohne Fern-GPS"]
+  paidFunctions: ["Fern-GPS", "Live-Tracking", "Sicherheitszonen"]
+  plans:
+    - { name: "Max GPS monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 12.99, currency: EUR, effectiveMonthlyPrice: 12.99, autoRenew: true }
+    - { name: "Max GPS jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 129.90, currency: EUR, effectiveMonthlyPrice: 10.83, autoRenew: true, featured: true, notes: "Jahresbetrag im Voraus" }
 price:
   current: 119
   currency: "EUR"

@@ -64,6 +64,18 @@ images:
       alt: Drei-Liter-Futterbehälter des PETKIT YumShare Solo 2
     - src: ../../assets/images/products/petkit-yumshare-solo-2/gallery-3.webp
       alt: PETKIT YumShare Solo 2 an einem Katzenfutterplatz
+subscription:
+  status: optional-subscription
+  requiredForCoreFunction: false
+  serviceType: cloud-storage
+  serviceModel: optional
+  provider: PETKIT Care+
+  researchedAt: "2026-09-02"
+  source: "https://www.petkit.com/products/yumshare-solo-2-automatic-feeder-with-camera"
+  freeFunctions: ["Fütterungspläne", "Futterausgabe", "Livebild"]
+  paidFunctions: ["Video-Wiedergabe", "erweiterter Cloudspeicher"]
+  additionalCostNote: "Der Deutschlandpreis von Care+ ist öffentlich nicht belastbar ausgewiesen; der Fütterungsbetrieb bleibt ohne Abo möglich."
+  plans: []
 price:
   current: 119
   currency: "EUR"

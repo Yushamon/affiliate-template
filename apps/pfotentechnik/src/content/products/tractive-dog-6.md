@@ -61,6 +61,20 @@ images:
       alt: "Tractive DOG 6 – Lifestyle-Aufnahme"
     - src: "../../assets/images/products/tractive-dog-6/gallery-3.webp"
       alt: "Tractive DOG 6 – Outdoor-Aufnahme"
+subscription:
+  status: required-subscription
+  requiredForCoreFunction: true
+  serviceType: cellular
+  serviceModel: subscription
+  provider: Tractive
+  researchedAt: "2026-09-02"
+  source: "https://tractive.com/de/pd/gps-tracker-dog?shopCountry=DE"
+  additionalCostNote: "Jeder Tracker benötigt ein eigenes Abo."
+  plans:
+    - { name: "Basic monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 13, currency: EUR, effectiveMonthlyPrice: 13, autoRenew: true }
+    - { name: "Basic jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 84, currency: EUR, effectiveMonthlyPrice: 7, autoRenew: true, featured: true }
+    - { name: "Basic 2 Jahre", billingPeriod: term, commitmentMonths: 24, billingMode: upfront, price: 120, currency: EUR, effectiveMonthlyPrice: 5, autoRenew: true }
+    - { name: "Premium jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 96, currency: EUR, effectiveMonthlyPrice: 8, autoRenew: true }
 price:
   current: 48.3
   currency: "EUR"

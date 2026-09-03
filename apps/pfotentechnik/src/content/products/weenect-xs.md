@@ -81,6 +81,20 @@ images:
       alt: "Weenect XS – Lifestyle-Aufnahme"
     - src: "../../assets/images/products/weenect-xs/gallery-3.webp"
       alt: "Weenect XS – Outdoor-Aufnahme"
+subscription:
+  status: required-subscription
+  requiredForCoreFunction: true
+  serviceType: cellular
+  serviceModel: subscription
+  provider: Weenect
+  researchedAt: "2026-09-02"
+  source: "https://help.weenect.com/hc/de/articles/207813809-Wie-viel-kostet-ein-Abonnement-f%C3%BCr-den-Weenect-Service"
+  additionalCostNote: "Jeder Tracker benötigt ein eigenes Abo."
+  plans:
+    - { name: "Monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 14, currency: EUR, effectiveMonthlyPrice: 14, autoRenew: true }
+    - { name: "1 Jahr", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 90, currency: EUR, effectiveMonthlyPrice: 7.50, autoRenew: true, featured: true }
+    - { name: "2 Jahre", billingPeriod: term, commitmentMonths: 24, billingMode: upfront, price: 120, currency: EUR, effectiveMonthlyPrice: 5, autoRenew: true }
+    - { name: "5 Jahre", billingPeriod: term, commitmentMonths: 60, billingMode: upfront, price: 250, currency: EUR, effectiveMonthlyPrice: 4.17, autoRenew: true }
 price:
   current: 44.99
   currency: "EUR"

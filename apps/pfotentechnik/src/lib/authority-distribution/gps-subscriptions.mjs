@@ -3,9 +3,9 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import yaml from "js-yaml";
 
-export const SNAPSHOT_SCHEMA_VERSION = 1;
+export const SNAPSHOT_SCHEMA_VERSION = 2;
 export const FINDING_TYPE = "gps-subscription-requirement";
-export const DEFAULT_STALE_DAYS = 180;
+export const DEFAULT_STALE_DAYS = 120;
 
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}(?:T.*)?$/;
 const STATUS_VALUES = new Set(["required", "optional", "none", "unknown"]);
@@ -53,6 +53,11 @@ export async function loadGpsProducts(productDirectory) {
 }
 
 function subscriptionStatus(product) {
+  const structured = product?.subscription?.status;
+  if (["required-subscription", "required-prepaid", "service-included"].includes(structured)) return "required";
+  if (structured === "optional-subscription") return "optional";
+  if (structured === "no-subscription") return "none";
+  if (structured === "unknown") return "unknown";
   const value = product?.gps?.subscriptionRequired;
   if (value === true) return "required";
   if (value === false) return "none";
@@ -68,11 +73,19 @@ function sourceType(source) {
 function sourceSupportsSubscription(source) {
   const fields = Array.isArray(source?.fields) ? source.fields.map(String) : [];
   const assertion = String(source?.assertion ?? "");
-  return fields.includes("gps") || (/abo|abonnement|subscription|tarif|servicepaket|sim/i.test(assertion) && fields.includes("specs"));
+  return fields.includes("subscription") || fields.includes("gps") || (/abo|abonnement|subscription|tarif|servicepaket|sim/i.test(assertion) && fields.includes("specs"));
 }
 
 function evidenceFor(product, generatedAt, staleDays) {
-  const candidates = Array.isArray(product?.evidenceSources) ? product.evidenceSources : [];
+  const structured = product?.subscription;
+  const subscriptionSource = structured?.source ? [{
+    source: structured.provider,
+    url: structured.source,
+    accessedAt: structured.checkedAt ?? structured.researchedAt,
+    fields: ["subscription"],
+    assertion: "Servicemodell und Tarifdaten aus der strukturierten Herstellerrecherche."
+  }] : [];
+  const candidates = [...subscriptionSource, ...(Array.isArray(product?.evidenceSources) ? product.evidenceSources : [])];
   return candidates
     .filter((source) => typeof source?.url === "string" && /^https:\/\//.test(source.url))
     .filter((source) => sourceSupportsSubscription(source))
@@ -89,7 +102,24 @@ function evidenceFor(product, generatedAt, staleDays) {
         assertion: String(source.assertion ?? "").trim(),
         stale,
       };
-    });
+    })
+    .filter((item, index, values) => values.findIndex((candidate) => candidate.url === item.url && candidate.checkedAt === item.checkedAt) === index);
+}
+
+function normalizedPlan(plan, stale) {
+  return {
+    name: String(plan?.name ?? ""),
+    billingPeriod: String(plan?.billingPeriod ?? "unknown"),
+    commitmentMonths: Number.isFinite(Number(plan?.commitmentMonths)) ? Number(plan.commitmentMonths) : null,
+    billingMode: String(plan?.billingMode ?? "unknown"),
+    price: typeof plan?.price === "number" && !stale ? plan.price : null,
+    currency: typeof plan?.price === "number" && !stale ? String(plan?.currency ?? "EUR") : null,
+    effectiveMonthlyPrice: typeof plan?.effectiveMonthlyPrice === "number" && !stale ? plan.effectiveMonthlyPrice : null,
+    autoRenew: typeof plan?.autoRenew === "boolean" ? plan.autoRenew : null,
+    featured: plan?.featured === true,
+    notes: String(plan?.notes ?? "") || null,
+    stale,
+  };
 }
 
 export function normalizeGpsProduct(product, { generatedAt = new Date().toISOString(), staleDays = DEFAULT_STALE_DAYS } = {}) {
@@ -97,6 +127,11 @@ export function normalizeGpsProduct(product, { generatedAt = new Date().toISOStr
   if (!normalizedGeneratedAt) throw new Error("generatedAt muss ein gültiges ISO-Datum sein.");
   const status = subscriptionStatus(product);
   const evidence = evidenceFor(product, normalizedGeneratedAt, staleDays);
+  const structured = product?.subscription;
+  const researchedAt = iso(structured?.checkedAt ?? structured?.researchedAt);
+  const structuredStale = structured ? !researchedAt || daysBetween(researchedAt, normalizedGeneratedAt) > staleDays : false;
+  const plans = Array.isArray(structured?.plans) ? structured.plans.map((plan) => normalizedPlan(plan, structuredStale)) : [];
+  const featuredPlan = plans.find((plan) => plan.featured && plan.price !== null) ?? plans.find((plan) => plan.price !== null) ?? null;
   const reasons = [];
   if (!String(product?.slug ?? "").trim()) reasons.push("missing-slug");
   if (product?.productStatus !== "active") reasons.push(`product-not-active:${product?.productStatus ?? "unknown"}`);
@@ -118,7 +153,17 @@ export function normalizeGpsProduct(product, { generatedAt = new Date().toISOStr
     dataUpdatedAt: iso(product?.updatedAt),
     subscription: {
       status,
-      price: { value: null, currency: null, interval: null, unknown: true },
+      modelStatus: String(structured?.status ?? (status === "required" ? "required-subscription" : status === "none" ? "no-subscription" : "unknown")),
+      requiredForCoreFunction: typeof structured?.requiredForCoreFunction === "boolean" ? structured.requiredForCoreFunction : status === "required" ? true : status === "none" ? false : null,
+      serviceType: String(structured?.serviceType ?? product?.gps?.transmission ?? "unknown"),
+      serviceModel: String(structured?.serviceModel ?? "unknown"),
+      provider: String(structured?.provider ?? product?.manufacturer?.name ?? ""),
+      researchedAt,
+      source: structured?.source ?? null,
+      plans,
+      price: featuredPlan
+        ? { value: featuredPlan.price, currency: featuredPlan.currency, interval: featuredPlan.billingPeriod, billingMode: featuredPlan.billingMode, unknown: false }
+        : { value: null, currency: null, interval: null, billingMode: null, unknown: true },
     },
     evidence: usableEvidence,
     eligible: reasons.length === 0,
@@ -139,7 +184,7 @@ const pct = (count, denominator) => denominator ? Number((count / denominator * 
 
 function findingStatement(counts) {
   const plural = counts.eligible === 1 ? "GPS-Produkt" : "GPS-Produkten";
-  return `${counts.required} von ${counts.eligible} auswertbaren ${plural} in der aktuellen PfotenTechnik-Auswahl benötigen ein Abo; ${counts.none} kommen ohne Pflichtabo aus und ${counts.optional} führen ein optionales Abo.`;
+  return `${counts.required} von ${counts.eligible} auswertbaren ${plural} in der aktuellen PfotenTechnik-Auswahl benötigen einen kostenpflichtigen Ortungsdienst; ${counts.none} kommen ohne Pflichtdienst aus und ${counts.optional} führen einen optionalen Dienst.`;
 }
 
 function snapshotContent(snapshot) {
@@ -156,6 +201,9 @@ function snapshotContent(snapshot) {
 function comparisonRows(snapshot) {
   return new Map((snapshot?.products ?? []).map((product) => [product.slug, {
     status: product.subscription?.status,
+    modelStatus: product.subscription?.modelStatus,
+    serviceModel: product.subscription?.serviceModel,
+    price: product.subscription?.price,
     eligible: product.eligible,
     evidence: (product.evidence ?? []).map((item) => `${item.url}|${item.checkedAt}|${item.confidence}`).sort(),
   }]));
@@ -218,6 +266,12 @@ export function buildSnapshotFromNormalized(normalizedProducts, { generatedAt = 
     optional: eligible.filter((product) => product.subscription.status === "optional").length,
     none: eligible.filter((product) => product.subscription.status === "none").length,
   };
+  const serviceModels = {
+    requiredSubscription: eligible.filter((product) => product.subscription.modelStatus === "required-subscription").length,
+    requiredPrepaid: eligible.filter((product) => product.subscription.modelStatus === "required-prepaid").length,
+    prepaidCapable: eligible.filter((product) => product.subscription.serviceModel === "prepaid" || product.subscription.serviceModel === "subscription-or-prepaid").length,
+    currentPriceKnown: eligible.filter((product) => product.subscription.price?.unknown === false).length,
+  };
   const dates = normalized.map((product) => product.dataUpdatedAt).filter(Boolean).sort();
   const dataUpdatedAt = dates.at(-1) ?? null;
   const statement = findingStatement(counts);
@@ -228,8 +282,9 @@ export function buildSnapshotFromNormalized(normalizedProducts, { generatedAt = 
     dataUpdatedAt,
     population: {
       category: "gps-tracker",
-      definition: "Aktive GPS-Produkte der PfotenTechnik Product Collection mit explizitem gps.subscriptionRequired und aktueller strukturierter Evidence.",
+      definition: "Aktive GPS-Produkte der PfotenTechnik Product Collection mit strukturiertem Servicemodell (Legacy-Fallback: gps.subscriptionRequired) und aktueller Evidence.",
       counts,
+      serviceModels,
       percentages: {
         evidenceCoverage: pct(counts.eligible, counts.total),
         required: pct(counts.required, counts.eligible),
@@ -248,7 +303,7 @@ export function buildSnapshotFromNormalized(normalizedProducts, { generatedAt = 
       optional: counts.optional,
       none: counts.none,
       statement,
-      methodology: "Nur gps.subscriptionRequired wird als Abo-Status gelesen. Freitext wird nicht in Boolean-Werte umgewandelt. Eligible sind nur aktive Produkte mit explizitem Status und aktueller strukturierter Evidence; Unknown oder unzureichende Evidence bleiben außerhalb des belastbaren Nenners.",
+      methodology: "Primär wird subscription.status einschließlich Prepaid-/Abo-Trennung gelesen; gps.subscriptionRequired bleibt nur als rückwärtskompatibler Fallback. Freitext wird nicht in Statuswerte umgewandelt. Eligible sind nur aktive Produkte mit explizitem Status und aktueller Evidence; Unknown oder unzureichende Evidence bleiben außerhalb des belastbaren Nenners.",
       confidence: eligible.length === normalized.length && eligible.every((product) => product.evidence.some((item) => item.confidence === "high"))
         ? "high"
         : eligible.length / Math.max(1, normalized.length) >= 0.7
@@ -285,7 +340,7 @@ export function renderGpsSubscriptionMarkdown(snapshot) {
     `- Datenstand: ${snapshot.dataUpdatedAt ?? "unbekannt"}`,
     `- Validation Gate: ${snapshot.validation.passed ? "bestanden" : "BLOCKED"}`, "",
     "## Kernaussage", "", snapshot.finding.statement, "",
-    `Pflichtabo-Anteil: ${snapshot.population.percentages.required ?? "–"} %. Anteil ohne Pflichtabo: ${snapshot.population.percentages.withoutMandatorySubscription ?? "–"} %. Nenner sind ausschließlich ${snapshot.population.counts.eligible} auswertbare Produkte.`, "",
+    `Pflichtdienst-Anteil: ${snapshot.population.percentages.required ?? "–"} %. Anteil ohne Pflichtdienst: ${snapshot.population.percentages.withoutMandatorySubscription ?? "–"} %. Nenner sind ausschließlich ${snapshot.population.counts.eligible} auswertbare Produkte.`, "",
     "## Population", "",
     `- GPS-Produkte gesamt: ${snapshot.population.counts.total}`,
     `- Auswertbar: ${snapshot.population.counts.eligible}`,
@@ -295,10 +350,15 @@ export function renderGpsSubscriptionMarkdown(snapshot) {
     `- required: ${snapshot.population.counts.required}`,
     `- optional: ${snapshot.population.counts.optional}`,
     `- none: ${snapshot.population.counts.none}`, "",
+    "### Servicemodell", "",
+    `- required-subscription: ${snapshot.population.serviceModels?.requiredSubscription ?? 0}`,
+    `- required-prepaid: ${snapshot.population.serviceModels?.requiredPrepaid ?? 0}`,
+    `- Prepaid-fähig (inklusive Mischmodell): ${snapshot.population.serviceModels?.prepaidCapable ?? 0}`,
+    `- aktueller strukturierter Tarifpreis vorhanden: ${snapshot.population.serviceModels?.currentPriceKnown ?? 0}`, "",
     "## Methodik", "", snapshot.finding.methodology, "",
-    "Abo-Preise werden nicht aus `specs` oder anderem Freitext geparst. Da kein einheitliches strukturiertes Abo-Preismodell vorhanden ist, bleibt `subscription.price.unknown = true`. Herstellerangabe und externe Reviews werden nicht als PfotenTechnik-Test ausgegeben.", "",
+    "Abo-Preise werden ausschließlich aus dem strukturierten `subscription.plans`-Modell gelesen, niemals aus `specs` oder anderem Freitext. Veraltete oder fehlende Tarifpreise bleiben ausdrücklich unknown. Herstellerangaben werden nicht als PfotenTechnik-Test ausgegeben.", "",
     "## Eingeschlossene Produkte", "",
-    ...(included.length ? included.map((product) => `- **${product.product}** (\`${product.slug}\`) · ${statusLabel[product.subscription.status]} · ${evidence(product)}`) : ["Keine."]), "",
+    ...(included.length ? included.map((product) => `- **${product.product}** (\`${product.slug}\`) · ${statusLabel[product.subscription.status]} / ${product.subscription.modelStatus} · ${product.subscription.price.unknown ? "Preis unbekannt" : `${product.subscription.price.value} ${product.subscription.price.currency} (${product.subscription.price.billingMode})`} · ${evidence(product)}`) : ["Keine."]), "",
     "## Ausgeschlossene Produkte", "",
     ...(excluded.length ? excluded.map((product) => `- **${product.product}** (\`${product.slug}\`) · Status ${statusLabel[product.subscription.status]} · Grund: ${product.exclusionReasons.join(", ")} · ${evidence(product)}`) : ["Keine."]), "",
     "## Change Detection", "",
@@ -307,7 +367,7 @@ export function renderGpsSubscriptionMarkdown(snapshot) {
     "- Die Population ist die PfotenTechnik-Auswahl, nicht der vollständige deutsche Markt.",
     "- Ein vorhandener Boolean ohne passende strukturierte Evidence bleibt ausgeschlossen.",
     "- `false` bedeutet explizit kein Pflichtabo; missing/unknown wird niemals zu `false`.",
-    "- Optionale Tarife und Abo-Preise können mit dem aktuellen strukturierten Feld nicht zuverlässig ausgewertet werden.",
+    "- TCO und Tarifvergleiche dürfen nur aus aktuellen strukturierten Plänen berechnet werden.",
     "- Das Finding ist `needs-review`, nicht automatisch öffentlich freigegeben.", "",
   ].join("\n");
 }

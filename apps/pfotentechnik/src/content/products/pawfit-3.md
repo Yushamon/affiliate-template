@@ -40,6 +40,18 @@ images:
       alt: "Pawfit 3 – Produktansicht 4"
     - src: "../../assets/images/products/pawfit-3/gallery-5.webp"
       alt: "Pawfit 3 – Produktansicht 5"
+subscription:
+  status: required-subscription
+  requiredForCoreFunction: true
+  serviceType: cellular
+  serviceModel: subscription
+  provider: Pawfit
+  researchedAt: "2026-09-02"
+  source: "https://www.pawfit.com/de-de/subscription.html"
+  plans:
+    - { name: "Basic 6 Monate", billingPeriod: term, commitmentMonths: 6, billingMode: upfront, price: 27.54, currency: EUR, effectiveMonthlyPrice: 4.59, autoRenew: true }
+    - { name: "Basic jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 49.08, currency: EUR, effectiveMonthlyPrice: 4.09, autoRenew: true, featured: true }
+    - { name: "Premium jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 58.68, currency: EUR, effectiveMonthlyPrice: 4.89, autoRenew: true }
 price:
   current: 64.99
   currency: "EUR"

@@ -36,6 +36,18 @@ images:
       alt: "Reolink E1 Zoom (4K) – Produktansicht 2"
     - src: "../../assets/images/products/reolink-e1-zoom/gallery-3.webp"
       alt: "Reolink E1 Zoom (4K) – Produktansicht 3"
+subscription:
+  status: optional-subscription
+  requiredForCoreFunction: false
+  serviceType: cloud-storage
+  serviceModel: optional
+  provider: Reolink Cloud
+  researchedAt: "2026-09-02"
+  source: "https://reolink.com/de/product/e1-zoom/"
+  freeFunctions: ["Livebild", "lokale microSD-, NVR-, Home-Hub- oder FTP-Speicherung"]
+  paidFunctions: ["regional verfügbare Cloud-Speicherung"]
+  additionalCostNote: "Cloud-Verfügbarkeit und Preis sind regional; für Deutschland ist kein belastbarer produktspezifischer Tarif hinterlegt."
+  plans: []
 price:
   current: 99.99
   currency: "EUR"

@@ -55,6 +55,16 @@ images:
       alt: Halsbandgerät korrekt am Hund anlegen
     - src: ../../assets/images/guides/gps-tracker/missing-pet.webp
       alt: Hundeortung im Vermisstenfall
+subscription:
+  status: no-subscription
+  requiredForCoreFunction: false
+  serviceType: non-cellular
+  serviceModel: none
+  provider: Garmin
+  researchedAt: "2026-09-02"
+  source: "https://www.garmin.com/en-US/p/714439/"
+  additionalCostNote: "Die VHF-Ortung benötigt kein Mobilfunkabo, aber ein kompatibles Garmin-Alpha-Handgerät als separate Hardware."
+  plans: []
 price:
   current: null
   currency: "EUR"

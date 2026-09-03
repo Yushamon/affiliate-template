@@ -1,11 +1,11 @@
 {
-  "schemaVersion": 1,
-  "snapshotVersion": "ece46b7476866812",
-  "generatedAt": "2026-08-25T12:51:57.475Z",
+  "schemaVersion": 2,
+  "snapshotVersion": "fb39ce00d54a9791",
+  "generatedAt": "2026-09-02T11:47:09.404Z",
   "dataUpdatedAt": "2026-08-24T00:00:00.000Z",
   "population": {
     "category": "gps-tracker",
-    "definition": "Aktive GPS-Produkte der PfotenTechnik Product Collection mit explizitem gps.subscriptionRequired und aktueller strukturierter Evidence.",
+    "definition": "Aktive GPS-Produkte der PfotenTechnik Product Collection mit strukturiertem Servicemodell (Legacy-Fallback: gps.subscriptionRequired) und aktueller Evidence.",
     "counts": {
       "total": 12,
       "eligible": 12,
@@ -14,6 +14,12 @@
       "required": 10,
       "optional": 0,
       "none": 2
+    },
+    "serviceModels": {
+      "requiredSubscription": 10,
+      "requiredPrepaid": 0,
+      "prepaidCapable": 1,
+      "currentPriceKnown": 9
     },
     "percentages": {
       "evidenceCoverage": 100,
@@ -35,14 +41,35 @@
       "dataUpdatedAt": "2026-08-16T00:00:00.000Z",
       "subscription": {
         "status": "required",
+        "modelStatus": "required-subscription",
+        "requiredForCoreFunction": true,
+        "serviceType": "external-cellular",
+        "serviceModel": "subscription",
+        "provider": "Mobilfunkanbieter nach Wahl",
+        "researchedAt": "2026-09-02T00:00:00.000Z",
+        "source": "https://de.store.enabot.com/products/rola-pettracker-gps-tracker-for-pets",
+        "plans": [],
         "price": {
           "value": null,
           "currency": null,
           "interval": null,
+          "billingMode": null,
           "unknown": true
         }
       },
       "evidence": [
+        {
+          "source": "Mobilfunkanbieter nach Wahl",
+          "url": "https://de.store.enabot.com/products/rola-pettracker-gps-tracker-for-pets",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-09-02T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "subscription"
+          ],
+          "assertion": "Servicemodell und Tarifdaten aus der strukturierten Herstellerrecherche.",
+          "stale": false
+        },
         {
           "source": "Enabot Deutschland",
           "url": "https://de.store.enabot.com/products/rola-pettracker-gps-tracker-for-pets",
@@ -75,14 +102,35 @@
       "dataUpdatedAt": "2026-07-23T00:00:00.000Z",
       "subscription": {
         "status": "none",
+        "modelStatus": "no-subscription",
+        "requiredForCoreFunction": false,
+        "serviceType": "non-cellular",
+        "serviceModel": "none",
+        "provider": "Garmin",
+        "researchedAt": "2026-09-02T00:00:00.000Z",
+        "source": "https://www.garmin.com/de-DE/p/714362",
+        "plans": [],
         "price": {
           "value": null,
           "currency": null,
           "interval": null,
+          "billingMode": null,
           "unknown": true
         }
       },
       "evidence": [
+        {
+          "source": "Garmin",
+          "url": "https://www.garmin.com/de-DE/p/714362",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-09-02T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "subscription"
+          ],
+          "assertion": "Servicemodell und Tarifdaten aus der strukturierten Herstellerrecherche.",
+          "stale": false
+        },
         {
           "source": "Garmin Alpha T 20 K Produktseite",
           "url": "https://www.garmin.com/de-DE/p/714362",
@@ -126,14 +174,35 @@
       "dataUpdatedAt": "2026-07-20T00:00:00.000Z",
       "subscription": {
         "status": "none",
+        "modelStatus": "no-subscription",
+        "requiredForCoreFunction": false,
+        "serviceType": "non-cellular",
+        "serviceModel": "none",
+        "provider": "Garmin",
+        "researchedAt": "2026-09-02T00:00:00.000Z",
+        "source": "https://www.garmin.com/en-US/p/714439/",
+        "plans": [],
         "price": {
           "value": null,
           "currency": null,
           "interval": null,
+          "billingMode": null,
           "unknown": true
         }
       },
       "evidence": [
+        {
+          "source": "Garmin",
+          "url": "https://www.garmin.com/en-US/p/714439/",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-09-02T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "subscription"
+          ],
+          "assertion": "Servicemodell und Tarifdaten aus der strukturierten Herstellerrecherche.",
+          "stale": false
+        },
         {
           "source": "Garmin Alpha TT 25 Produktseite",
           "url": "https://www.garmin.com/en-US/p/714439/",
@@ -177,14 +246,62 @@
       "dataUpdatedAt": "2026-08-16T00:00:00.000Z",
       "subscription": {
         "status": "required",
+        "modelStatus": "required-subscription",
+        "requiredForCoreFunction": true,
+        "serviceType": "cellular",
+        "serviceModel": "subscription",
+        "provider": "Invoxia",
+        "researchedAt": "2026-09-02T00:00:00.000Z",
+        "source": "https://invoxia-petcare.zendesk.com/hc/en-150/articles/9652732933533--What-are-the-subscription-plans-for-the-Minitailz-Biotracker-GPS-and-how-do-I-subscribe",
+        "plans": [
+          {
+            "name": "Max GPS monatlich",
+            "billingPeriod": "monthly",
+            "commitmentMonths": 1,
+            "billingMode": "recurring",
+            "price": 12.99,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 12.99,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Max GPS jährlich",
+            "billingPeriod": "annual",
+            "commitmentMonths": 12,
+            "billingMode": "upfront",
+            "price": 129.9,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 10.83,
+            "autoRenew": true,
+            "featured": true,
+            "notes": "Jahresbetrag im Voraus",
+            "stale": false
+          }
+        ],
         "price": {
-          "value": null,
-          "currency": null,
-          "interval": null,
-          "unknown": true
+          "value": 129.9,
+          "currency": "EUR",
+          "interval": "annual",
+          "billingMode": "upfront",
+          "unknown": false
         }
       },
       "evidence": [
+        {
+          "source": "Invoxia",
+          "url": "https://invoxia-petcare.zendesk.com/hc/en-150/articles/9652732933533--What-are-the-subscription-plans-for-the-Minitailz-Biotracker-GPS-and-how-do-I-subscribe",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-09-02T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "subscription"
+          ],
+          "assertion": "Servicemodell und Tarifdaten aus der strukturierten Herstellerrecherche.",
+          "stale": false
+        },
         {
           "source": "Invoxia Biotracker Edition 2026",
           "url": "https://www.invoxia.com/en-US/petcare/minitailz-dog-tracker",
@@ -230,14 +347,88 @@
       "dataUpdatedAt": "2026-07-23T00:00:00.000Z",
       "subscription": {
         "status": "required",
+        "modelStatus": "required-subscription",
+        "requiredForCoreFunction": true,
+        "serviceType": "cellular",
+        "serviceModel": "subscription",
+        "provider": "PAJ GPS",
+        "researchedAt": "2026-09-02T00:00:00.000Z",
+        "source": "https://www.paj-gps.de/store/pet-finder-4g-mini-katzen/",
+        "plans": [
+          {
+            "name": "Lite jährlich",
+            "billingPeriod": "annual",
+            "commitmentMonths": 12,
+            "billingMode": "upfront",
+            "price": 36,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 3,
+            "autoRenew": true,
+            "featured": true,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Lite 2 Jahre",
+            "billingPeriod": "term",
+            "commitmentMonths": 24,
+            "billingMode": "upfront",
+            "price": 48,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 2,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Basic monatlich",
+            "billingPeriod": "monthly",
+            "commitmentMonths": 1,
+            "billingMode": "recurring",
+            "price": 12,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 12,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Premium jährlich",
+            "billingPeriod": "annual",
+            "commitmentMonths": 12,
+            "billingMode": "upfront",
+            "price": 96,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 8,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          }
+        ],
         "price": {
-          "value": null,
-          "currency": null,
-          "interval": null,
-          "unknown": true
+          "value": 36,
+          "currency": "EUR",
+          "interval": "annual",
+          "billingMode": "upfront",
+          "unknown": false
         }
       },
       "evidence": [
+        {
+          "source": "PAJ GPS",
+          "url": "https://www.paj-gps.de/store/pet-finder-4g-mini-katzen/",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-09-02T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "subscription"
+          ],
+          "assertion": "Servicemodell und Tarifdaten aus der strukturierten Herstellerrecherche.",
+          "stale": false
+        },
         {
           "source": "PAJ GPS – PET Finder 4G Mini",
           "url": "https://www.paj-gps.de/store/pet-finder-4g-mini/",
@@ -281,14 +472,75 @@
       "dataUpdatedAt": "2026-08-16T00:00:00.000Z",
       "subscription": {
         "status": "required",
+        "modelStatus": "required-subscription",
+        "requiredForCoreFunction": true,
+        "serviceType": "cellular",
+        "serviceModel": "subscription",
+        "provider": "Pawfit",
+        "researchedAt": "2026-09-02T00:00:00.000Z",
+        "source": "https://www.pawfit.com/de-de/subscription.html",
+        "plans": [
+          {
+            "name": "Basic 6 Monate",
+            "billingPeriod": "term",
+            "commitmentMonths": 6,
+            "billingMode": "upfront",
+            "price": 27.54,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 4.59,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Basic jährlich",
+            "billingPeriod": "annual",
+            "commitmentMonths": 12,
+            "billingMode": "upfront",
+            "price": 49.08,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 4.09,
+            "autoRenew": true,
+            "featured": true,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Premium jährlich",
+            "billingPeriod": "annual",
+            "commitmentMonths": 12,
+            "billingMode": "upfront",
+            "price": 58.68,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 4.89,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          }
+        ],
         "price": {
-          "value": null,
-          "currency": null,
-          "interval": null,
-          "unknown": true
+          "value": 49.08,
+          "currency": "EUR",
+          "interval": "annual",
+          "billingMode": "upfront",
+          "unknown": false
         }
       },
       "evidence": [
+        {
+          "source": "Pawfit",
+          "url": "https://www.pawfit.com/de-de/subscription.html",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-09-02T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "subscription"
+          ],
+          "assertion": "Servicemodell und Tarifdaten aus der strukturierten Herstellerrecherche.",
+          "stale": false
+        },
         {
           "source": "Pawfit 3",
           "url": "https://www.pawfit.com/de-us/product/pawfit-3-pet-tracker.html",
@@ -334,14 +586,75 @@
       "dataUpdatedAt": "2026-08-16T00:00:00.000Z",
       "subscription": {
         "status": "required",
+        "modelStatus": "required-subscription",
+        "requiredForCoreFunction": true,
+        "serviceType": "cellular",
+        "serviceModel": "subscription-or-prepaid",
+        "provider": "Prothelis",
+        "researchedAt": "2026-09-02T00:00:00.000Z",
+        "source": "https://shop.prothelis.de/servicegebuehren/",
+        "plans": [
+          {
+            "name": "Abo 12 Monate",
+            "billingPeriod": "monthly",
+            "commitmentMonths": 12,
+            "billingMode": "recurring",
+            "price": 6.99,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 6.99,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Prepaid 12 Monate",
+            "billingPeriod": "term",
+            "commitmentMonths": 12,
+            "billingMode": "prepaid",
+            "price": 71.88,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 5.99,
+            "autoRenew": false,
+            "featured": true,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Prepaid 24 Monate",
+            "billingPeriod": "term",
+            "commitmentMonths": 24,
+            "billingMode": "prepaid",
+            "price": 119.76,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 4.99,
+            "autoRenew": false,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          }
+        ],
         "price": {
-          "value": null,
-          "currency": null,
-          "interval": null,
-          "unknown": true
+          "value": 71.88,
+          "currency": "EUR",
+          "interval": "term",
+          "billingMode": "prepaid",
+          "unknown": false
         }
       },
       "evidence": [
+        {
+          "source": "Prothelis",
+          "url": "https://shop.prothelis.de/servicegebuehren/",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-09-02T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "subscription"
+          ],
+          "assertion": "Servicemodell und Tarifdaten aus der strukturierten Herstellerrecherche.",
+          "stale": false
+        },
         {
           "source": "Prothelis Shop – area Pets",
           "url": "https://shop.prothelis.de/area-Pets-GPS-Tracker-fuer-Tiere/09054804-02M",
@@ -373,14 +686,88 @@
       "dataUpdatedAt": "2026-08-24T00:00:00.000Z",
       "subscription": {
         "status": "required",
+        "modelStatus": "required-subscription",
+        "requiredForCoreFunction": true,
+        "serviceType": "cellular",
+        "serviceModel": "subscription",
+        "provider": "Tractive",
+        "researchedAt": "2026-09-02T00:00:00.000Z",
+        "source": "https://tractive.com/de/pd/gps-tracker-dog?shopCountry=DE",
+        "plans": [
+          {
+            "name": "Basic monatlich",
+            "billingPeriod": "monthly",
+            "commitmentMonths": 1,
+            "billingMode": "recurring",
+            "price": 13,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 13,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Basic jährlich",
+            "billingPeriod": "annual",
+            "commitmentMonths": 12,
+            "billingMode": "upfront",
+            "price": 84,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 7,
+            "autoRenew": true,
+            "featured": true,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Basic 2 Jahre",
+            "billingPeriod": "term",
+            "commitmentMonths": 24,
+            "billingMode": "upfront",
+            "price": 120,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 5,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Premium jährlich",
+            "billingPeriod": "annual",
+            "commitmentMonths": 12,
+            "billingMode": "upfront",
+            "price": 96,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 8,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          }
+        ],
         "price": {
-          "value": null,
-          "currency": null,
-          "interval": null,
-          "unknown": true
+          "value": 84,
+          "currency": "EUR",
+          "interval": "annual",
+          "billingMode": "upfront",
+          "unknown": false
         }
       },
       "evidence": [
+        {
+          "source": "Tractive",
+          "url": "https://tractive.com/de/pd/gps-tracker-dog?shopCountry=DE",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-09-02T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "subscription"
+          ],
+          "assertion": "Servicemodell und Tarifdaten aus der strukturierten Herstellerrecherche.",
+          "stale": false
+        },
         {
           "source": "Tractive Kundenservice – Tracker-Auswahl und Abo",
           "url": "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier",
@@ -411,14 +798,88 @@
       "dataUpdatedAt": "2026-08-10T00:00:00.000Z",
       "subscription": {
         "status": "required",
+        "modelStatus": "required-subscription",
+        "requiredForCoreFunction": true,
+        "serviceType": "cellular",
+        "serviceModel": "subscription",
+        "provider": "Tractive",
+        "researchedAt": "2026-09-02T00:00:00.000Z",
+        "source": "https://tractive.com/de/pd/gps-tracker-dog?shopCountry=DE",
+        "plans": [
+          {
+            "name": "Basic monatlich",
+            "billingPeriod": "monthly",
+            "commitmentMonths": 1,
+            "billingMode": "recurring",
+            "price": 13,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 13,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Basic jährlich",
+            "billingPeriod": "annual",
+            "commitmentMonths": 12,
+            "billingMode": "upfront",
+            "price": 84,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 7,
+            "autoRenew": true,
+            "featured": true,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Basic 2 Jahre",
+            "billingPeriod": "term",
+            "commitmentMonths": 24,
+            "billingMode": "upfront",
+            "price": 120,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 5,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Premium jährlich",
+            "billingPeriod": "annual",
+            "commitmentMonths": 12,
+            "billingMode": "upfront",
+            "price": 96,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 8,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          }
+        ],
         "price": {
-          "value": null,
-          "currency": null,
-          "interval": null,
-          "unknown": true
+          "value": 84,
+          "currency": "EUR",
+          "interval": "annual",
+          "billingMode": "upfront",
+          "unknown": false
         }
       },
       "evidence": [
+        {
+          "source": "Tractive",
+          "url": "https://tractive.com/de/pd/gps-tracker-dog?shopCountry=DE",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-09-02T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "subscription"
+          ],
+          "assertion": "Servicemodell und Tarifdaten aus der strukturierten Herstellerrecherche.",
+          "stale": false
+        },
         {
           "source": "Tractive Kundenservice – Tracker-Auswahl und Abo",
           "url": "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier",
@@ -449,14 +910,88 @@
       "dataUpdatedAt": "2026-08-10T00:00:00.000Z",
       "subscription": {
         "status": "required",
+        "modelStatus": "required-subscription",
+        "requiredForCoreFunction": true,
+        "serviceType": "cellular",
+        "serviceModel": "subscription",
+        "provider": "Tractive",
+        "researchedAt": "2026-09-02T00:00:00.000Z",
+        "source": "https://tractive.com/de/pd/gps-tracker-dog?shopCountry=DE",
+        "plans": [
+          {
+            "name": "Basic monatlich",
+            "billingPeriod": "monthly",
+            "commitmentMonths": 1,
+            "billingMode": "recurring",
+            "price": 13,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 13,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Basic jährlich",
+            "billingPeriod": "annual",
+            "commitmentMonths": 12,
+            "billingMode": "upfront",
+            "price": 84,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 7,
+            "autoRenew": true,
+            "featured": true,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Basic 2 Jahre",
+            "billingPeriod": "term",
+            "commitmentMonths": 24,
+            "billingMode": "upfront",
+            "price": 120,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 5,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Premium jährlich",
+            "billingPeriod": "annual",
+            "commitmentMonths": 12,
+            "billingMode": "upfront",
+            "price": 96,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 8,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          }
+        ],
         "price": {
-          "value": null,
-          "currency": null,
-          "interval": null,
-          "unknown": true
+          "value": 84,
+          "currency": "EUR",
+          "interval": "annual",
+          "billingMode": "upfront",
+          "unknown": false
         }
       },
       "evidence": [
+        {
+          "source": "Tractive",
+          "url": "https://tractive.com/de/pd/gps-tracker-dog?shopCountry=DE",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-09-02T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "subscription"
+          ],
+          "assertion": "Servicemodell und Tarifdaten aus der strukturierten Herstellerrecherche.",
+          "stale": false
+        },
         {
           "source": "Tractive Kundenservice – Tracker-Auswahl und Abo",
           "url": "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier",
@@ -487,14 +1022,88 @@
       "dataUpdatedAt": "2026-08-19T00:00:00.000Z",
       "subscription": {
         "status": "required",
+        "modelStatus": "required-subscription",
+        "requiredForCoreFunction": true,
+        "serviceType": "cellular",
+        "serviceModel": "subscription",
+        "provider": "Weenect",
+        "researchedAt": "2026-09-02T00:00:00.000Z",
+        "source": "https://help.weenect.com/hc/de/articles/207813809-Wie-viel-kostet-ein-Abonnement-f%C3%BCr-den-Weenect-Service",
+        "plans": [
+          {
+            "name": "Monatlich",
+            "billingPeriod": "monthly",
+            "commitmentMonths": 1,
+            "billingMode": "recurring",
+            "price": 14,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 14,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "1 Jahr",
+            "billingPeriod": "annual",
+            "commitmentMonths": 12,
+            "billingMode": "upfront",
+            "price": 90,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 7.5,
+            "autoRenew": true,
+            "featured": true,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "2 Jahre",
+            "billingPeriod": "term",
+            "commitmentMonths": 24,
+            "billingMode": "upfront",
+            "price": 120,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 5,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "5 Jahre",
+            "billingPeriod": "term",
+            "commitmentMonths": 60,
+            "billingMode": "upfront",
+            "price": 250,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 4.17,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          }
+        ],
         "price": {
-          "value": null,
-          "currency": null,
-          "interval": null,
-          "unknown": true
+          "value": 90,
+          "currency": "EUR",
+          "interval": "annual",
+          "billingMode": "upfront",
+          "unknown": false
         }
       },
       "evidence": [
+        {
+          "source": "Weenect",
+          "url": "https://help.weenect.com/hc/de/articles/207813809-Wie-viel-kostet-ein-Abonnement-f%C3%BCr-den-Weenect-Service",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-09-02T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "subscription"
+          ],
+          "assertion": "Servicemodell und Tarifdaten aus der strukturierten Herstellerrecherche.",
+          "stale": false
+        },
         {
           "source": "Weenect – GPS-Tracker für Hunde und Abonnements",
           "url": "https://www.weenect.com/de/de/gps-tracker-hund/",
@@ -538,14 +1147,88 @@
       "dataUpdatedAt": "2026-07-26T00:00:00.000Z",
       "subscription": {
         "status": "required",
+        "modelStatus": "required-subscription",
+        "requiredForCoreFunction": true,
+        "serviceType": "cellular",
+        "serviceModel": "subscription",
+        "provider": "Weenect",
+        "researchedAt": "2026-09-02T00:00:00.000Z",
+        "source": "https://help.weenect.com/hc/de/articles/207813809-Wie-viel-kostet-ein-Abonnement-f%C3%BCr-den-Weenect-Service",
+        "plans": [
+          {
+            "name": "Monatlich",
+            "billingPeriod": "monthly",
+            "commitmentMonths": 1,
+            "billingMode": "recurring",
+            "price": 14,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 14,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "1 Jahr",
+            "billingPeriod": "annual",
+            "commitmentMonths": 12,
+            "billingMode": "upfront",
+            "price": 90,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 7.5,
+            "autoRenew": true,
+            "featured": true,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "2 Jahre",
+            "billingPeriod": "term",
+            "commitmentMonths": 24,
+            "billingMode": "upfront",
+            "price": 120,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 5,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "5 Jahre",
+            "billingPeriod": "term",
+            "commitmentMonths": 60,
+            "billingMode": "upfront",
+            "price": 250,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 4.17,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          }
+        ],
         "price": {
-          "value": null,
-          "currency": null,
-          "interval": null,
-          "unknown": true
+          "value": 90,
+          "currency": "EUR",
+          "interval": "annual",
+          "billingMode": "upfront",
+          "unknown": false
         }
       },
       "evidence": [
+        {
+          "source": "Weenect",
+          "url": "https://help.weenect.com/hc/de/articles/207813809-Wie-viel-kostet-ein-Abonnement-f%C3%BCr-den-Weenect-Service",
+          "sourceType": "manufacturer",
+          "checkedAt": "2026-09-02T00:00:00.000Z",
+          "confidence": "high",
+          "supports": [
+            "subscription"
+          ],
+          "assertion": "Servicemodell und Tarifdaten aus der strukturierten Herstellerrecherche.",
+          "stale": false
+        },
         {
           "source": "Weenect XT Produktseite",
           "url": "https://www.weenect.com/de/de/gps-tracker-hund/weenect-xt/",
@@ -579,7 +1262,7 @@
   ],
   "finding": {
     "type": "gps-subscription-requirement",
-    "generatedAt": "2026-08-25T12:51:57.475Z",
+    "generatedAt": "2026-09-02T11:47:09.404Z",
     "dataUpdatedAt": "2026-08-24T00:00:00.000Z",
     "population": 12,
     "eligible": 12,
@@ -587,136 +1270,12 @@
     "required": 10,
     "optional": 0,
     "none": 2,
-    "statement": "10 von 12 auswertbaren GPS-Produkten in der aktuellen PfotenTechnik-Auswahl benötigen ein Abo; 2 kommen ohne Pflichtabo aus und 0 führen ein optionales Abo.",
-    "methodology": "Nur gps.subscriptionRequired wird als Abo-Status gelesen. Freitext wird nicht in Boolean-Werte umgewandelt. Eligible sind nur aktive Produkte mit explizitem Status und aktueller strukturierter Evidence; Unknown oder unzureichende Evidence bleiben außerhalb des belastbaren Nenners.",
+    "statement": "10 von 12 auswertbaren GPS-Produkten in der aktuellen PfotenTechnik-Auswahl benötigen einen kostenpflichtigen Ortungsdienst; 2 kommen ohne Pflichtdienst aus und 0 führen einen optionalen Dienst.",
+    "methodology": "Primär wird subscription.status einschließlich Prepaid-/Abo-Trennung gelesen; gps.subscriptionRequired bleibt nur als rückwärtskompatibler Fallback. Freitext wird nicht in Statuswerte umgewandelt. Eligible sind nur aktive Produkte mit explizitem Status und aktueller Evidence; Unknown oder unzureichende Evidence bleiben außerhalb des belastbaren Nenners.",
     "confidence": "high",
     "status": "needs-review"
   },
-  "changeFinding": {
-    "type": "gps-subscription-data-changed",
-    "generatedAt": "2026-08-25T12:51:57.475Z",
-    "previousSnapshotVersion": "5ef20a5f081710e5",
-    "snapshotVersion": "ece46b7476866812",
-    "changes": [
-      {
-        "type": "unknown-or-evidence-resolved",
-        "slug": "garmin-alpha-t-20",
-        "before": false,
-        "after": true
-      },
-      {
-        "type": "evidence-changed",
-        "slug": "garmin-alpha-t-20",
-        "before": [],
-        "after": [
-          "https://www.garmin.com/de-DE/p/714362|2026-08-25T00:00:00.000Z|high",
-          "https://www8.garmin.com/manuals/webhelp/GUID-74035D64-33C8-4CC0-8053-23CB54692716/DE-DE/Alpha_T_20_OM_DE-DE.pdf|2026-08-25T00:00:00.000Z|high"
-        ]
-      },
-      {
-        "type": "unknown-or-evidence-resolved",
-        "slug": "garmin-alpha-tt-25",
-        "before": false,
-        "after": true
-      },
-      {
-        "type": "evidence-changed",
-        "slug": "garmin-alpha-tt-25",
-        "before": [],
-        "after": [
-          "https://www.garmin.com/en-US/p/714439/|2026-08-25T00:00:00.000Z|high",
-          "https://www8.garmin.com/manuals/webhelp/GUID-992E9C90-AE40-4ED4-B3C4-9D812BD4DF89/DE-DE/GUID-436F95DA-B7C8-4AAD-AE07-BDC58BB735C2.html|2026-08-25T00:00:00.000Z|high"
-        ]
-      },
-      {
-        "type": "unknown-or-evidence-resolved",
-        "slug": "paj-pet-finder-4g-mini",
-        "before": false,
-        "after": true
-      },
-      {
-        "type": "evidence-changed",
-        "slug": "paj-pet-finder-4g-mini",
-        "before": [],
-        "after": [
-          "https://www.paj-gps.de/store/pet-finder-4g-mini/|2026-08-25T00:00:00.000Z|high",
-          "https://www.paj-gps.de/wp-content/uploads/2026/03/Bedienungsanleitung-PET-Finder-4G-Mini-JAN26-DE.pdf|2026-08-25T00:00:00.000Z|high"
-        ]
-      },
-      {
-        "type": "unknown-or-evidence-resolved",
-        "slug": "tractive-cat-6-mini",
-        "before": false,
-        "after": true
-      },
-      {
-        "type": "evidence-changed",
-        "slug": "tractive-cat-6-mini",
-        "before": [],
-        "after": [
-          "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier|2026-08-25T00:00:00.000Z|high"
-        ]
-      },
-      {
-        "type": "unknown-or-evidence-resolved",
-        "slug": "tractive-dog-6",
-        "before": false,
-        "after": true
-      },
-      {
-        "type": "evidence-changed",
-        "slug": "tractive-dog-6",
-        "before": [],
-        "after": [
-          "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier|2026-08-25T00:00:00.000Z|high"
-        ]
-      },
-      {
-        "type": "unknown-or-evidence-resolved",
-        "slug": "tractive-dog-6-xl",
-        "before": false,
-        "after": true
-      },
-      {
-        "type": "evidence-changed",
-        "slug": "tractive-dog-6-xl",
-        "before": [],
-        "after": [
-          "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier|2026-08-25T00:00:00.000Z|high"
-        ]
-      },
-      {
-        "type": "unknown-or-evidence-resolved",
-        "slug": "weenect-xs",
-        "before": false,
-        "after": true
-      },
-      {
-        "type": "evidence-changed",
-        "slug": "weenect-xs",
-        "before": [],
-        "after": [
-          "https://help.weenect.com/hc/de/articles/208540125-Wie-abonniere-ich-einen-Service|2026-08-25T00:00:00.000Z|high",
-          "https://www.weenect.com/de/de/gps-tracker-hund/|2026-08-25T00:00:00.000Z|high"
-        ]
-      },
-      {
-        "type": "unknown-or-evidence-resolved",
-        "slug": "weenect-xt",
-        "before": false,
-        "after": true
-      },
-      {
-        "type": "evidence-changed",
-        "slug": "weenect-xt",
-        "before": [],
-        "after": [
-          "https://help.weenect.com/hc/de/articles/208540125-Wie-abonniere-ich-einen-Service|2026-08-25T00:00:00.000Z|high",
-          "https://www.weenect.com/de/de/gps-tracker-hund/weenect-xt/|2026-08-25T00:00:00.000Z|high"
-        ]
-      }
-    ]
-  },
+  "changeFinding": null,
   "validation": {
     "passed": true,
     "blocked": false,

@@ -56,6 +56,18 @@ images:
       alt: "Tank, Edelstahl-Trinkfläche und Antrieb des Dockstream 2 Smart PLWF106"
     - src: "../../assets/images/products/petlibro-dockstream-2-smart/gallery-3.webp"
       alt: "PETLIBRO-App mit Trinkprotokoll des Dockstream 2 Smart"
+subscription:
+  status: optional-subscription
+  requiredForCoreFunction: false
+  serviceType: ai-and-cloud
+  serviceModel: optional
+  provider: PETLIBRO Care
+  researchedAt: "2026-09-02"
+  source: "https://de.petlibro.com/products/dockstream-2-smart-fountain"
+  freeFunctions: ["Trinkbrunnen-Grundbetrieb", "App-Steuerung"]
+  paidFunctions: ["erweiterte Verlaufsauswertung", "Care-Erinnerungen und Dashboard"]
+  additionalCostNote: "Die deutsche Produktseite belegt die optionale Care-Auswahl, weist den Tarifpreis aber nicht belastbar im auslesbaren Angebot aus."
+  plans: []
 price:
   current: 99.99
   currency: "EUR"

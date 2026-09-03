@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-09-02",
+  "staleAfterDays": 120,
+  "gps": {
+    "total": 12,
+    "researched": 12,
+    "serviceModelKnown": 12,
+    "currentServicePriceKnown": 9,
+    "priceUnknown": 1,
+    "noPaidServiceApplicable": 2,
+    "evidenceCoverage": { "count": 12, "percent": 100 }
+  },
+  "cameras": {
+    "total": 8,
+    "researched": 8,
+    "mandatoryService": 0,
+    "optionalService": 7,
+    "noServiceRequired": 7,
+    "statusUnknown": 1,
+    "currentServicePriceKnown": 5,
+    "priceUnknown": 3,
+    "evidenceCoverage": { "count": 8, "percent": 100 }
+  },
+  "other": {
+    "total": 7,
+    "researched": 7,
+    "optionalService": 7,
+    "currentServicePriceKnown": 2,
+    "priceUnknown": 5
+  },
+  "all": {
+    "total": 27,
+    "requiredCosts": 10,
+    "optionalCosts": 14,
+    "noMandatorySubscription": 16,
+    "statusUnknown": 1,
+    "currentServicePriceKnown": 16,
+    "servicePriceUnknown": 9,
+    "noPaidServiceApplicable": 2
+  }
+}

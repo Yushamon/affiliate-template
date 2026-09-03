@@ -24,6 +24,16 @@ images:
     src: "../../assets/images/products/enabot-ebo-air-2/hero.webp"
     alt: "Enabot EBO Air 2 in hochwertiger Produktansicht"
   gallery: []
+subscription:
+  status: unknown
+  requiredForCoreFunction: null
+  serviceType: unknown
+  serviceModel: unknown
+  provider: Enabot
+  researchedAt: "2026-09-02"
+  source: "https://de.store.enabot.com/products/ebo-air-2"
+  additionalCostNote: "Für dieses exakte Modell ist kein belastbarer Deutschlandtarif dokumentiert; Cloud-/Serviceumfang vor dem Kauf prüfen."
+  plans: []
 price:
   current: 159.99
   currency: "EUR"

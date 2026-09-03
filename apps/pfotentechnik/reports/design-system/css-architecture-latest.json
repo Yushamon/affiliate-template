@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-02T06:43:43.594Z",
+  "generatedAt": "2026-09-02T11:47:46.661Z",
   "status": "ok",
   "safety": {
     "ruleLevelDeletionEnabled": false,
@@ -10,12 +10,12 @@
     "records": 89,
     "cssFiles": 42,
     "astroStyleFiles": 47,
-    "bytes": 683490,
-    "rules": 7258,
+    "bytes": 687107,
+    "rules": 7294,
     "important": 1168,
     "actualImportantDeclarations": 1168,
-    "duplicateSelectors": 1419,
-    "duplicateDeclarationBlocks": 911,
+    "duplicateSelectors": 1422,
+    "duplicateDeclarationBlocks": 915,
     "importEdges": 71,
     "brokenImports": 0,
     "unimportedCssFiles": 0,
@@ -515,6 +515,19 @@
       "maxSelectorDepth": 7
     },
     {
+      "file": "apps/pfotentechnik/src/components/product-experience-2/PriceBox2.astro",
+      "kind": "astro-style",
+      "category": "product",
+      "owner": "product-experience",
+      "bytes": 6175,
+      "meaningfulBytes": 5731,
+      "importedBy": [],
+      "imports": [],
+      "rules": 52,
+      "important": 0,
+      "maxSelectorDepth": 7
+    },
+    {
       "file": "apps/pfotentechnik/src/pages/admin/seo/topical-authority.astro",
       "kind": "astro-style",
       "category": "admin",
@@ -876,19 +889,6 @@
       "rules": 31,
       "important": 0,
       "maxSelectorDepth": 5
-    },
-    {
-      "file": "apps/pfotentechnik/src/components/product-experience-2/PriceBox2.astro",
-      "kind": "astro-style",
-      "category": "product",
-      "owner": "product-experience",
-      "bytes": 2558,
-      "meaningfulBytes": 2206,
-      "importedBy": [],
-      "imports": [],
-      "rules": 16,
-      "important": 0,
-      "maxSelectorDepth": 2
     },
     {
       "file": "packages/affiliate-core/src/styles/product-box.css",
@@ -7986,7 +7986,7 @@
   "duplicateDeclarationBlocks": [
     {
       "fingerprint": "grid-template-columns: 1fr",
-      "occurrences": 124,
+      "occurrences": 125,
       "selectors": [
         ".footer-values",
         "main.container.container--home .home3-hero__actions",
@@ -8091,6 +8091,7 @@
         ".pt-guide__summary",
         ".pt-manufacturer__hero",
         ".pt-manufacturer__families",
+        ".px2-price__summary",
         ".px2-hero__decision",
         ".media-summary",
         ".media-candidates > div",
@@ -8133,6 +8134,7 @@
         "apps/pfotentechnik/src/components/category/CategoryExperience.astro",
         "apps/pfotentechnik/src/components/guide/GuideExperience.astro",
         "apps/pfotentechnik/src/components/manufacturer/ManufacturerExperience.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/PriceBox2.astro",
         "apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro",
         "apps/pfotentechnik/src/pages/admin/seo/media.astro",
         "apps/pfotentechnik/src/pages/admin/seo/prices.astro",
@@ -8145,7 +8147,7 @@
     },
     {
       "fingerprint": "display: none",
-      "occurrences": 66,
+      "occurrences": 67,
       "selectors": [
         ".pg29__mobile::-webkit-scrollbar",
         ".pg29__desktop",
@@ -8186,6 +8188,7 @@
         ".pt-category-hub__depth summary::-webkit-details-marker",
         ".pt-category-hub__product-decision :global(.pt-score__copy)",
         ".pt-manufacturer__families summary::-webkit-details-marker",
+        ".px2-price__details summary::-webkit-details-marker",
         ".category-fit--reference33 fieldset:not(:first-child)",
         ".px2--reference33 :global(.decision-facts dd::before)",
         ".px2-hero--reference33 :global(.px2-price__header)",
@@ -8225,6 +8228,7 @@
         "apps/pfotentechnik/src/components/EditorialTransparency.astro",
         "apps/pfotentechnik/src/components/category/CategoryExperience.astro",
         "apps/pfotentechnik/src/components/manufacturer/ManufacturerExperience.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/PriceBox2.astro",
         "apps/pfotentechnik/src/components/product-experience-2/ProductCategoryFitAssistant.astro",
         "apps/pfotentechnik/src/components/product-experience-2/ProductExperience2.astro",
         "apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro",
@@ -12256,6 +12260,25 @@
       ]
     },
     {
+      "fingerprint": "transform: rotate(180deg)",
+      "occurrences": 6,
+      "selectors": [
+        ".pt-disclosure[open] > summary .pt-disclosure__icon",
+        ".comparison-lab__group[open] .comparison-lab__group-chevron",
+        ".comparison-methodology[open] .comparison-methodology__summary-icon",
+        ".px2-price__details[open] summary span",
+        ".site-header-v2 .main-nav-v2__desktop-menu[open] .main-nav-v2__desktop-summary svg",
+        ".pt-toc[open] .pt-toc__chevron"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/pfotentechnik-foundation-contracts.css",
+        "packages/affiliate-core/src/components/comparison/comparison-experience.css",
+        "apps/pfotentechnik/src/components/product-experience-2/PriceBox2.astro",
+        "packages/affiliate-core/src/components/Header.astro",
+        "packages/affiliate-core/src/components/TableOfContents.astro"
+      ]
+    },
+    {
       "fingerprint": "color: var(--pt-color-text);font-weight: var(--pt-font-weight-bold);letter-spacing: var(--pt-letter-spacing-heading);line-height: var(--pt-line-height-heading);margin-block: 0;text-wrap: balance",
       "occurrences": 6,
       "selectors": [
@@ -12659,23 +12682,6 @@
       ],
       "files": [
         "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
-      ]
-    },
-    {
-      "fingerprint": "transform: rotate(180deg)",
-      "occurrences": 5,
-      "selectors": [
-        ".pt-disclosure[open] > summary .pt-disclosure__icon",
-        ".comparison-lab__group[open] .comparison-lab__group-chevron",
-        ".comparison-methodology[open] .comparison-methodology__summary-icon",
-        ".site-header-v2 .main-nav-v2__desktop-menu[open] .main-nav-v2__desktop-summary svg",
-        ".pt-toc[open] .pt-toc__chevron"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-foundation-contracts.css",
-        "packages/affiliate-core/src/components/comparison/comparison-experience.css",
-        "packages/affiliate-core/src/components/Header.astro",
-        "packages/affiliate-core/src/components/TableOfContents.astro"
       ]
     },
     {
@@ -14051,6 +14057,21 @@
       ],
       "files": [
         "packages/affiliate-core/src/styles/premium-page.css"
+      ]
+    },
+    {
+      "fingerprint": "grid-column: auto",
+      "occurrences": 4,
+      "selectors": [
+        ".article .premium-block-answer .premium-block-card:first-child",
+        ".px2-price__summary.has-service > div:nth-child(odd):not(:first-child)",
+        ".ops-tabs",
+        ".ops-toolbar label"
+      ],
+      "files": [
+        "packages/affiliate-core/src/styles/premium-page.css",
+        "apps/pfotentechnik/src/components/product-experience-2/PriceBox2.astro",
+        "apps/pfotentechnik/src/pages/admin/seo/prices.astro"
       ]
     },
     {
@@ -15739,19 +15760,6 @@
       ]
     },
     {
-      "fingerprint": "grid-column: auto",
-      "occurrences": 3,
-      "selectors": [
-        ".article .premium-block-answer .premium-block-card:first-child",
-        ".ops-tabs",
-        ".ops-toolbar label"
-      ],
-      "files": [
-        "packages/affiliate-core/src/styles/premium-page.css",
-        "apps/pfotentechnik/src/pages/admin/seo/prices.astro"
-      ]
-    },
-    {
       "fingerprint": "display: grid;gap: 12px",
       "occurrences": 3,
       "selectors": [
@@ -16143,6 +16151,19 @@
       ]
     },
     {
+      "fingerprint": "color: var(--px2-accent-text)",
+      "occurrences": 3,
+      "selectors": [
+        ".px2-price__service.is-required dt",
+        ".px2-price__service.is-unknown dt",
+        ".category-fit li[data-kind=\"positive\"]"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/components/product-experience-2/PriceBox2.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductCategoryFitAssistant.astro"
+      ]
+    },
+    {
       "fingerprint": "grid-template-columns:1fr 1fr",
       "occurrences": 3,
       "selectors": [
@@ -16366,18 +16387,6 @@
       ],
       "files": [
         "apps/pfotentechnik/src/pages/admin/seo/topical-authority.astro"
-      ]
-    },
-    {
-      "fingerprint": "align-items: center;display: flex;flex-wrap: wrap;gap: var(--pt33-space-3)",
-      "occurrences": 3,
-      "selectors": [
-        ".pt33-preview__actions",
-        ".pt33-preview__chips",
-        ".pt33-preview__semantics"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/pages/foundation.astro"
       ]
     }
   ],

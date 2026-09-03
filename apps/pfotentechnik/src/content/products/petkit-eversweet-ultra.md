@@ -63,6 +63,18 @@ images:
       alt: Getrennter Frischwasser- und Abwassertank des PETKIT Eversweet Ultra
     - src: ../../assets/images/products/petkit-eversweet-ultra/gallery-3.webp
       alt: PETKIT Eversweet Ultra in einem Mehrkatzenhaushalt
+subscription:
+  status: optional-subscription
+  requiredForCoreFunction: false
+  serviceType: ai-and-cloud
+  serviceModel: optional
+  provider: PETKIT Care+
+  researchedAt: "2026-09-02"
+  source: "https://www.petkit.com/products/eversweet-ultra-with-camera-pet-water-fountain"
+  freeFunctions: ["Brunnenbetrieb", "Livebild"]
+  paidFunctions: ["erweiterte Video- und Auswertungsfunktionen"]
+  additionalCostNote: "PETKIT belegt den optionalen Care+-Dienst, veröffentlicht aber keinen belastbaren Deutschlandtarif auf der geprüften Produktseite."
+  plans: []
 price:
   current: 279.99
   currency: "EUR"
@@ -575,4 +587,3 @@ Weniger passend ist er für:
 Die technischen Angaben stammen von der [aktuellen PETKIT-Produktseite](https://www.petkit.com/products/eversweet-ultra-with-camera-pet-water-fountain), der [offiziellen Vorstellung des OneWay-Systems](https://www.petkit.com/blogs/blog/introducing-eversweet-ultra-cat-water-fountain-with-wastewater-separation-system-and-ai-hydration-tracking), der [PETKIT-Pflegeeinordnung](https://www.petkit.com/blogs/blog/2026-best-no-filter-cat-water-fountain-how-petkit-eversweet-ultra-keeps-water-clean), der [Modellvergleichsseite](https://www.petkit.com/blogs/blog/how-to-choose-an-automatic-water-fountain-for-senior-cats) und der [Cube-C-Produktseite](https://www.petkit.com/products/fountain-cubec).
 
 Für die frühe Alltagseinordnung wurden außerdem öffentlich sichtbare Bewertungen auf der offiziellen Produktseite berücksichtigt. Es liegt kein eigener Langzeit-, Hygiene-, Kamera-, Trinkmengen-, App- oder Cloudtest vor. Die Produktbilder sind redaktionelle Darstellungen und müssen hinsichtlich Farbe, Form und Lieferumfang mit dem konkret verlinkten Amazon-Angebot abgeglichen werden.
-

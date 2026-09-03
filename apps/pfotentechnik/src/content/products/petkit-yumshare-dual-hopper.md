@@ -66,6 +66,18 @@ images:
       alt: Zerlegbare Futterwege und Rotoren des PETKIT YumShare Dual-Hopper 2
     - src: ../../assets/images/products/petkit-yumshare-dual-hopper/gallery-4.webp
       alt: PETKIT YumShare Dual-Hopper 2 in einem Mehrkatzenhaushalt
+subscription:
+  status: optional-subscription
+  requiredForCoreFunction: false
+  serviceType: cloud-storage
+  serviceModel: optional
+  provider: PETKIT Care+
+  researchedAt: "2026-09-02"
+  source: "https://www.petkit.com/products/yumshare-dual-hopper-2-automatic-feeder-with-camera"
+  freeFunctions: ["Fütterungspläne", "Futterausgabe", "Livebild"]
+  paidFunctions: ["Video-Wiedergabe nach dem Testzeitraum", "erweiterter Cloudspeicher"]
+  additionalCostNote: "Der Deutschlandpreis von Care+ ist öffentlich nicht belastbar ausgewiesen; der Fütterungsbetrieb bleibt ohne Abo möglich."
+  plans: []
 price:
   current: 109.99
   currency: "EUR"

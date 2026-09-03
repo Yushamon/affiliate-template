@@ -7,6 +7,7 @@ import { calculateProductScore } from "../productScore.ts";
 import { buildDecisionFacts } from "./consequences";
 import { deriveProductOperations, isAutoRecommendationEligible } from "../../lib/product-operations/policy.mjs";
 import { resolveProductHeroMedia, resolveProductMedia } from "../mediaResolver.mjs";
+import { buildSubscriptionCostModel } from "../subscriptionCosts.ts";
 
 const list = <T>(value: T[] | undefined | null): T[] => Array.isArray(value) ? value : [];
 const text = (value: unknown, fallback = ""): string => {
@@ -468,6 +469,12 @@ export const buildProductExperienceModel = ({
   const priceIndex = getPriceIndex(allProducts, currentEntry);
   const price = priceIndex.bySlug.get(slug);
   const operations = deriveProductOperations(data);
+  const subscriptionCosts = buildSubscriptionCostModel({
+    subscription: data.subscription,
+    devicePrice: operations.priceAvailable && price && !price.isStale ? price.current : null,
+    deviceCurrency: price?.currency ?? data.price?.currency ?? "EUR",
+    now: priceIndex.generatedAt
+  });
   const primaryMedia = resolveProductHeroMedia(data.images);
   const galleryEntries = [
     primaryMedia?.media,
@@ -687,6 +694,7 @@ export const buildProductExperienceModel = ({
     mainLimitation: limitations[0] ?? notFor[0] ?? "Keine zentrale Einschränkung redaktionell hinterlegt.",
     operations,
     price,
+    subscriptionCosts,
     affiliate: {
       url: text(reviewProduct.affiliate?.url ?? price?.affiliateUrl ?? data.affiliate?.url),
       label: price?.formattedCurrent

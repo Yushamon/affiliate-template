@@ -235,11 +235,14 @@ const getStructuredFilters = (
     gps.animal.forEach((animal) =>
       addValue(values, "tier", animal === "dog" ? "hund" : "katze")
     );
-    addValue(
-      values,
-      "abo",
-      gps.subscriptionRequired ? "mit-abo" : "ohne-abo"
-    );
+    const subscriptionStatus = product.data.subscription?.status;
+    if (["required-subscription", "required-prepaid"].includes(subscriptionStatus ?? "")) {
+      addValue(values, "abo", "mit-abo");
+    } else if (["no-subscription", "optional-subscription"].includes(subscriptionStatus ?? "")) {
+      addValue(values, "abo", "ohne-abo");
+    } else if (!subscriptionStatus) {
+      addValue(values, "abo", gps.subscriptionRequired ? "mit-abo" : "ohne-abo");
+    }
     addValue(
       values,
       "system",
@@ -470,7 +473,9 @@ export function buildComparisonViewModel({
     }
 
     if (/ohne-abo/.test(comparisonSlug)) {
-      return gps ? gps.subscriptionRequired === false : true;
+      return product.data.subscription
+        ? product.data.subscription.status === "no-subscription"
+        : gps ? gps.subscriptionRequired === false : true;
     }
 
     if (/mit-akku|akkulaufzeit/.test(comparisonSlug)) {
@@ -744,7 +749,7 @@ export function buildComparisonViewModel({
           { value: "katze", label: "Katze" }
         ]),
         ...coveredFilter("abo", "Laufender Dienst", [
-          { value: "mit-abo", label: "Abo erforderlich" },
+          { value: "mit-abo", label: "Dienst oder Prepaid erforderlich" },
           { value: "ohne-abo", label: "Ohne Mobilfunkabo" }
         ]),
         ...coveredFilter("system", "Übertragung", [

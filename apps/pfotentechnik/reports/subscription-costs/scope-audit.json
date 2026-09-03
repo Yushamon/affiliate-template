@@ -1,0 +1,21 @@
+{
+  "auditedAt": "2026-09-02",
+  "selectionRule": "All active GPS trackers and pet cameras; other active categories only with an existing concrete digital-service-cost signal.",
+  "counts": {
+    "gps": 12,
+    "cameras": 8,
+    "other": 7,
+    "total": 27
+  },
+  "groups": {
+    "gps": ["enabot-rola-pettracker", "garmin-alpha-t-20", "garmin-alpha-tt-25", "invoxia-biotracker-2026", "paj-pet-finder-4g-mini", "pawfit-3", "prothelis-area-pets", "tractive-cat-6-mini", "tractive-dog-6", "tractive-dog-6-xl", "weenect-xs", "weenect-xt"],
+    "cameras": ["enabot-ebo-air-2", "enabot-rola-mini", "furbo-360-hundekamera", "furbo-360-katzenkamera", "furbo-mini-360", "petlibro-scout-smart-camera", "pettec-cam-360", "reolink-e1-zoom"],
+    "other": ["onlycat-mikrochip-katzenklappe", "petlibro-luma-smart-litter-box", "petkit-eversweet-ultra", "petkit-yumshare-dual-hopper", "petkit-yumshare-solo-2", "petlibro-dockstream-2-smart", "litter-robot-5-pro"]
+  },
+  "excluded": [
+    { "kind": "inactive-products", "reason": "productStatus is not active" },
+    { "kind": "consumables", "reason": "not a recurring digital service" },
+    { "kind": "free-app-only", "reason": "no concrete paid digital service indicated" },
+    { "kind": "spotter-catx", "reason": "research candidate only; no product page requested" }
+  ]
+}

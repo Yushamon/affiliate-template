@@ -36,6 +36,18 @@ images:
       alt: "Prothelis area Pets, Produktansicht 2"
     - src: "../../assets/images/products/prothelis-area-pets/gallery-3.webp"
       alt: "Prothelis area Pets, Produktansicht 3"
+subscription:
+  status: required-subscription
+  requiredForCoreFunction: true
+  serviceType: cellular
+  serviceModel: subscription-or-prepaid
+  provider: Prothelis
+  researchedAt: "2026-09-02"
+  source: "https://shop.prothelis.de/servicegebuehren/"
+  plans:
+    - { name: "Abo 12 Monate", billingPeriod: monthly, commitmentMonths: 12, billingMode: recurring, price: 6.99, currency: EUR, effectiveMonthlyPrice: 6.99, autoRenew: true }
+    - { name: "Prepaid 12 Monate", billingPeriod: term, commitmentMonths: 12, billingMode: prepaid, price: 71.88, currency: EUR, effectiveMonthlyPrice: 5.99, autoRenew: false, featured: true }
+    - { name: "Prepaid 24 Monate", billingPeriod: term, commitmentMonths: 24, billingMode: prepaid, price: 119.76, currency: EUR, effectiveMonthlyPrice: 4.99, autoRenew: false }
 price:
   current: null
   currency: "EUR"

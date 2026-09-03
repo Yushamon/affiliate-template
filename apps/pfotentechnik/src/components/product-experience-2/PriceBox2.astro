@@ -1,5 +1,6 @@
 ---
 import type { ProductPriceInsight } from "../../domain/price/types";
+import type { SubscriptionCostModel } from "../../domain/subscriptionCosts";
 
 interface Operations {
   availability: "available" | "temporarily-unavailable" | "out-of-stock" | "discontinued" | "unknown";
@@ -12,6 +13,7 @@ interface Operations {
 interface Props {
   price?: ProductPriceInsight;
   operations: Operations;
+  subscriptionCost?: SubscriptionCostModel;
   affiliate: {
     url?: string;
     label: string;
@@ -20,7 +22,7 @@ interface Props {
   };
 }
 
-const { price, affiliate, operations } = Astro.props;
+const { price, affiliate, operations, subscriptionCost } = Astro.props;
 const currentPriceLabel = price?.formattedCurrent
   ? price.formattedCurrent
   : operations.purchasable
@@ -36,9 +38,14 @@ const unavailableCopy = operations.availability === "discontinued"
         ? "Die aktuelle Verfügbarkeit ist noch nicht belastbar bestätigt. Deshalb zeigen wir keinen Kaufen-CTA."
         : null;
 const ctaLabel = price?.formattedCurrent ? "Bei Amazon ansehen" : "Aktuellen Preis prüfen";
+const showTotals = Boolean(
+  subscriptionCost &&
+  subscriptionCost.status !== "no-subscription" &&
+  (subscriptionCost.totals.months12 || subscriptionCost.totals.months24)
+);
 ---
 
-<section class="px2-price" aria-labelledby="px2-price-title" data-availability={operations.availability}>
+<section class="px2-price" aria-labelledby="px2-price-title" data-availability={operations.availability} data-subscription-status={subscriptionCost?.status}>
   {unavailableCopy && (
     <aside class:list={["px2-availability", `is-${operations.availability}`]} role="status">
       <strong>{operations.availabilityLabel}</strong>
@@ -47,13 +54,47 @@ const ctaLabel = price?.formattedCurrent ? "Bei Amazon ansehen" : "Aktuellen Pre
   )}
 
   <header class="px2-price__header">
-    <span>Preis</span>
-    <h2 id="px2-price-title">Aktueller Preis</h2>
+    <span>Preisübersicht</span>
+    <h2 id="px2-price-title">{subscriptionCost ? "Preis & laufende Kosten" : "Aktueller Preis"}</h2>
   </header>
 
-  <div class="px2-price__amount">
-    <strong>{currentPriceLabel}</strong>
-  </div>
+  <dl class:list={["px2-price__summary", subscriptionCost && "has-service"]}>
+    <div class="px2-price__purchase">
+      <dt>Anschaffung</dt>
+      <dd>{currentPriceLabel}</dd>
+    </div>
+    {subscriptionCost && (
+      <div class:list={["px2-price__service", `is-${subscriptionCost.tone}`]}>
+        <dt><span aria-hidden="true">{subscriptionCost.symbol}</span> Laufende Kosten</dt>
+        <dd><strong>{subscriptionCost.runningCostLabel}</strong><span>{subscriptionCost.label}</span>{subscriptionCost.billingLabel && <small>{subscriptionCost.billingLabel}</small>}</dd>
+      </div>
+    )}
+    {showTotals && subscriptionCost?.totals.months24 && (
+      <div class="px2-price__total">
+        <dt>Gesamtkosten nach 2 Jahren</dt>
+        <dd><strong>{subscriptionCost.totals.months24.label}</strong><small>{subscriptionCost.totalScenarioLabel}</small></dd>
+      </div>
+    )}
+  </dl>
+
+  {subscriptionCost && (
+    <div class="px2-price__service-note">
+      {subscriptionCost.additionalCostNote && <p>{subscriptionCost.additionalCostNote}</p>}
+      {subscriptionCost.stale && <p><strong>Tarifstand veraltet:</strong> Aktuellen Preis beim Anbieter prüfen; es wird keine Gesamtkostenrechnung gezeigt.</p>}
+    </div>
+  )}
+
+  {subscriptionCost && (subscriptionCost.plans.length > 1 || subscriptionCost.freeFunctions.length > 0 || subscriptionCost.paidFunctions.length > 0 || showTotals) && (
+    <details class="px2-price__details">
+      <summary>Tarife und Berechnung ansehen <span aria-hidden="true">⌄</span></summary>
+      <div class="px2-price__details-body">
+        {subscriptionCost.plans.length > 0 && <div><h3>Tarife</h3><ul>{subscriptionCost.plans.map((plan) => <li><strong>{plan.name}</strong><span>{plan.paymentLabel}</span>{plan.monthlyEquivalentLabel && <small>{plan.monthlyEquivalentLabel}</small>}{plan.billingLabel && <small>{plan.billingLabel}</small>}{plan.notes && <small>{plan.notes}</small>}</li>)}</ul></div>}
+        {(subscriptionCost.freeFunctions.length > 0 || subscriptionCost.paidFunctions.length > 0) && <div class="px2-price__functions">{subscriptionCost.freeFunctions.length > 0 && <p><strong>Ohne Abo:</strong> {subscriptionCost.freeFunctions.join(", ")}</p>}{subscriptionCost.paidFunctions.length > 0 && <p><strong>Mit Dienst:</strong> {subscriptionCost.paidFunctions.join(", ")}</p>}</div>}
+        {showTotals && <div class="px2-price__calculation"><h3>Rechenbeispiel</h3><dl>{subscriptionCost.totals.months12 && <div><dt>Nach 12 Monaten</dt><dd>{subscriptionCost.totals.months12.label}</dd></div>}{subscriptionCost.totals.months24 && <div><dt>Nach 24 Monaten</dt><dd>{subscriptionCost.totals.months24.label}</dd></div>}</dl><p>{subscriptionCost.totalDisclaimer}</p></div>}
+        <a class="px2-price__source" href={subscriptionCost.source} rel="nofollow noopener" target="_blank">Tarifquelle bei {subscriptionCost.provider} prüfen</a>
+      </div>
+    </details>
+  )}
 
   {operations.purchasable && affiliate.url ? (
     <a
@@ -139,24 +180,60 @@ const ctaLabel = price?.formattedCurrent ? "Bei Amazon ansehen" : "Aktuellen Pre
     text-align: right;
   }
 
-  .px2-price__amount {
-    display: flex;
-    justify-content: flex-end;
-    padding: 16px 0;
+  .px2-price__summary {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 0;
     border-top: 1px solid var(--px2-border);
     border-bottom: 1px solid var(--px2-border);
-    text-align: right;
   }
 
-  .px2-price__amount strong {
-    max-width: 100%;
+  .px2-price__summary > div {
+    display: grid;
+    align-content: start;
+    gap: 5px;
+    min-width: 0;
+    padding: 14px 0;
+  }
+
+  .px2-price__summary.has-service > div:nth-child(even) { padding-left: 14px; border-left: 1px solid var(--px2-border); }
+  .px2-price__summary.has-service > div:nth-child(odd):not(:first-child) { grid-column: 1 / -1; border-top: 1px solid var(--px2-border); }
+  .px2-price__summary dt { color: var(--px2-muted); font-size: .72rem; font-weight: 850; letter-spacing: .05em; text-transform: uppercase; }
+  .px2-price__summary dd { display: grid; gap: 3px; min-width: 0; margin: 0; color: var(--px2-text); overflow-wrap: anywhere; }
+  .px2-price__summary dd > strong { font-size: 1rem; line-height: 1.3; }
+  .px2-price__summary dd > span,.px2-price__summary dd > small { color: var(--px2-muted); font-size: .78rem; line-height: 1.35; }
+
+  .px2-price__purchase dd {
     color: var(--px2-text);
-    font-size: clamp(1.8rem, 7vw, 2.4rem);
+    font-size: clamp(1.45rem, 5vw, 2rem);
     font-weight: 950;
     font-variant-numeric: tabular-nums;
     line-height: 1.05;
     letter-spacing: -.035em;
   }
+
+  .px2-price__service.is-required dt,.px2-price__service.is-unknown dt { color: var(--px2-accent-text); }
+  .px2-price__service.is-none dt,.px2-price__service.is-included dt { color: var(--px2-green-strong); }
+  .px2-price__service-note p { margin: 0; color: var(--px2-muted); font-size: .82rem; line-height: 1.5; }
+  .px2-price__service-note p + p { margin-top: 7px; }
+  .px2-price__details { border: 1px solid var(--px2-border); border-radius: 14px; background: var(--px2-surface-soft); overflow: clip; }
+  .px2-price__details summary { display: flex; min-height: 44px; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 12px; color: var(--px2-text); cursor: pointer; font-size: .86rem; font-weight: 850; list-style: none; }
+  .px2-price__details summary::-webkit-details-marker { display: none; }
+  .px2-price__details summary:focus-visible { outline: 3px solid color-mix(in srgb, var(--px2-accent-text) 35%, transparent); outline-offset: -3px; }
+  .px2-price__details[open] summary { border-bottom: 1px solid var(--px2-border); background: var(--px2-surface); }
+  .px2-price__details[open] summary span { transform: rotate(180deg); }
+  .px2-price__details-body { display: grid; gap: 14px; padding: 12px; }
+  .px2-price__details-body h3 { margin: 0 0 8px; color: var(--px2-text); font-size: .86rem; }
+  .px2-price__details-body ul { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+  .px2-price__details-body li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 10px; padding-bottom: 8px; border-bottom: 1px solid var(--px2-border); color: var(--px2-text); font-size: .8rem; }
+  .px2-price__details-body li span { font-variant-numeric: tabular-nums; text-align: right; }
+  .px2-price__details-body li small { grid-column: 1 / -1; color: var(--px2-muted); line-height: 1.35; }
+  .px2-price__functions p,.px2-price__calculation p { margin: 0; color: var(--px2-muted); font-size: .78rem; line-height: 1.5; }
+  .px2-price__functions p + p { margin-top: 6px; }
+  .px2-price__calculation > dl { display: grid; gap: 5px; margin: 0 0 8px; }
+  .px2-price__calculation > dl > div { display: flex; justify-content: space-between; gap: 10px; color: var(--px2-text); font-size: .8rem; }
+  .px2-price__calculation dd { margin: 0; font-weight: 850; font-variant-numeric: tabular-nums; }
+  .px2-price__source { width: fit-content; color: var(--px2-accent-text); font-size: .8rem; font-weight: 800; }
 
   .px2-price__cta {
     display: flex;
@@ -191,5 +268,11 @@ const ctaLabel = price?.formattedCurrent ? "Bei Amazon ansehen" : "Aktuellen Pre
     color: var(--px2-muted);
     font-size: .76rem;
     line-height: 1.45;
+  }
+
+  @media (max-width: 410px) {
+    .px2-price__summary { grid-template-columns: 1fr; }
+    .px2-price__summary.has-service > div:nth-child(even) { padding-left: 0; border-top: 1px solid var(--px2-border); border-left: 0; }
+    .px2-price__summary.has-service > div:nth-child(odd):not(:first-child) { grid-column: auto; }
   }
 </style>

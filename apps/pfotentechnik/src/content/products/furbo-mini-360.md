@@ -36,6 +36,20 @@ images:
       alt: "Furbo Mini 360 – Produktansicht 2"
     - src: "../../assets/images/products/furbo-mini-360/gallery-3.webp"
       alt: "Furbo Mini 360 – Produktansicht 3"
+subscription:
+  status: optional-subscription
+  requiredForCoreFunction: false
+  serviceType: ai-and-cloud
+  serviceModel: optional
+  provider: Furbo Nanny
+  researchedAt: "2026-09-02"
+  source: "https://help.furbo.com/hc/de/articles/17462739016089-Furbo-Nanny-Abonnements-und-Preise"
+  freeFunctions: ["Livebild", "Zwei-Wege-Audio"]
+  paidFunctions: ["erweiterte intelligente Hinweise", "Cloud-Videos", "Tageszusammenfassungen"]
+  plans:
+    - { name: "Basic monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 6.99, currency: EUR, effectiveMonthlyPrice: 6.99, autoRenew: true, featured: true }
+    - { name: "Standard monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 7.99, currency: EUR, effectiveMonthlyPrice: 7.99, autoRenew: true }
+    - { name: "Premium monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 9.99, currency: EUR, effectiveMonthlyPrice: 9.99, autoRenew: true }
 price:
   current: 81
   currency: "EUR"

@@ -55,6 +55,16 @@ images:
       alt: "Enabot ROLA PetTracker, Produktansicht 2"
     - src: "../../assets/images/products/enabot-rola-pettracker/gallery-3.webp"
       alt: "Enabot ROLA PetTracker, Produktansicht 3"
+subscription:
+  status: required-subscription
+  requiredForCoreFunction: true
+  serviceType: external-cellular
+  serviceModel: subscription
+  provider: Mobilfunkanbieter nach Wahl
+  researchedAt: "2026-09-02"
+  source: "https://de.store.enabot.com/products/rola-pettracker-gps-tracker-for-pets"
+  additionalCostNote: "Eine Nano-SIM und ein passender Mobilfunktarif sind erforderlich; Enabot veröffentlicht dafür keinen eigenen Deutschlandtarif."
+  plans: []
 price:
   current: null
   currency: "EUR"

@@ -36,6 +36,18 @@ images:
       alt: "Enabot ROLA Mini – Produktansicht 2"
     - src: "../../assets/images/products/enabot-rola-mini/gallery-3.webp"
       alt: "Enabot ROLA Mini – Produktansicht 3"
+subscription:
+  status: optional-subscription
+  requiredForCoreFunction: false
+  serviceType: cloud-storage
+  serviceModel: optional
+  provider: Enabot Cloud+
+  researchedAt: "2026-09-02"
+  source: "https://de.store.enabot.com/pages/rola-mini-long-battery-life-movable-pet-camera"
+  freeFunctions: ["Livebild", "lokale Speicherung auf microSD"]
+  paidFunctions: ["erweiterter Cloudspeicher", "24/7-Wiedergabe", "automatische Pet-Vlogs"]
+  additionalCostNote: "Ein aktueller Deutschlandpreis für Cloud+ ist öffentlich nicht belastbar ausgewiesen."
+  plans: []
 price:
   current: 124.99
   currency: "EUR"

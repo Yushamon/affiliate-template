@@ -59,6 +59,20 @@ images:
       alt: "PAJ GPS PET Finder 4G Mini – Lifestyle-Aufnahme"
     - src: "../../assets/images/products/paj-pet-finder-4g-mini/gallery-3.webp"
       alt: "PAJ GPS PET Finder 4G Mini – Outdoor-Aufnahme"
+subscription:
+  status: required-subscription
+  requiredForCoreFunction: true
+  serviceType: cellular
+  serviceModel: subscription
+  provider: PAJ GPS
+  researchedAt: "2026-09-02"
+  source: "https://www.paj-gps.de/store/pet-finder-4g-mini-katzen/"
+  additionalCostNote: "Inklusivmonate hängen vom gekauften Paket ab und werden deshalb im Rechenbeispiel nicht pauschal abgezogen."
+  plans:
+    - { name: "Lite jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 36, currency: EUR, effectiveMonthlyPrice: 3, autoRenew: true, featured: true }
+    - { name: "Lite 2 Jahre", billingPeriod: term, commitmentMonths: 24, billingMode: upfront, price: 48, currency: EUR, effectiveMonthlyPrice: 2, autoRenew: true }
+    - { name: "Basic monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 12, currency: EUR, effectiveMonthlyPrice: 12, autoRenew: true }
+    - { name: "Premium jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 96, currency: EUR, effectiveMonthlyPrice: 8, autoRenew: true }
 price:
   current: 58.99
   currency: "EUR"

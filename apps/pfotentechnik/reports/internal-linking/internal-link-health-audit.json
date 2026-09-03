@@ -1,6 +1,6 @@
 {
   "version": "4.0.1",
-  "generatedAt": "2026-09-02T06:04:26.937Z",
+  "generatedAt": "2026-09-02T11:44:04.285Z",
   "strict": true,
   "inputs": {
     "legacyVersion": "3.0.3",
@@ -10,18 +10,18 @@
   "summary": {
     "documents": 243,
     "legacyErrors": 0,
-    "legacyWarnings": 9,
+    "legacyWarnings": 8,
     "runtimeErrors": 0,
     "effectiveErrors": 0,
-    "effectiveWarnings": 9,
+    "effectiveWarnings": 8,
     "falsePositives": 0
   },
   "classifications": {
-    "advisory": 20
+    "advisory": 19
   },
   "effectiveSeverities": {
     "info": 11,
-    "warning": 9
+    "warning": 8
   },
   "findings": [
     {
@@ -69,16 +69,6 @@
       "code": "NO_INCOMING_INTERNAL_LINK",
       "message": "/katzentrinkbrunnen-ohne-filter/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
       "targetRoute": "/katzentrinkbrunnen-ohne-filter/",
-      "originalSeverity": "warning",
-      "effectiveSeverity": "warning",
-      "classification": "advisory",
-      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/produkt/feelneedy-fn-w18-8l-katzenbrunnen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/produkt/feelneedy-fn-w18-8l-katzenbrunnen/",
       "originalSeverity": "warning",
       "effectiveSeverity": "warning",
       "classification": "advisory",

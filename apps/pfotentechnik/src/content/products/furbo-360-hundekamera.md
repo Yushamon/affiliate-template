@@ -36,6 +36,20 @@ images:
   comparison:
     src: "../../assets/images/products/furbo-360-hundekamera/comparison.webp"
     alt: "Furbo 360° Hundekamera im Produktvergleich"
+subscription:
+  status: optional-subscription
+  requiredForCoreFunction: false
+  serviceType: ai-and-cloud
+  serviceModel: optional
+  provider: Furbo Nanny
+  researchedAt: "2026-09-02"
+  source: "https://help.furbo.com/hc/de/articles/17462739016089-Furbo-Nanny-Abonnements-und-Preise"
+  freeFunctions: ["Livebild", "Zwei-Wege-Audio", "Leckerli-Ausgabe"]
+  paidFunctions: ["erweiterte intelligente Hinweise", "Cloud-Videos", "Tageszusammenfassungen"]
+  plans:
+    - { name: "Basic monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 6.99, currency: EUR, effectiveMonthlyPrice: 6.99, autoRenew: true, featured: true }
+    - { name: "Standard monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 7.99, currency: EUR, effectiveMonthlyPrice: 7.99, autoRenew: true }
+    - { name: "Premium monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 9.99, currency: EUR, effectiveMonthlyPrice: 9.99, autoRenew: true }
 price:
   current: 49
   currency: "EUR"

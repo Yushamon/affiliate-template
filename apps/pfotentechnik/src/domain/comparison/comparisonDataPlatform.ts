@@ -1,5 +1,7 @@
 import type { CollectionEntry } from "astro:content";
 import { calculateProductScore } from "../productScore.ts";
+import { formatSubscriptionComparison } from "../subscriptionCosts.ts";
+import { deriveProductOperations } from "../../lib/product-operations/policy.mjs";
 
 type ProductEntry = CollectionEntry<"products">;
 
@@ -344,9 +346,17 @@ const deriveKnownValue = (
     case "bewertung": return calculateProductScore(data).rating ?? undefined;
     case "ortung": return gps ? "GPS-Ortung" : undefined;
     case "uebertragung": return gps?.transmission;
-    case "abo": return typeof gps?.subscriptionRequired === "boolean"
-      ? gps.subscriptionRequired ? "Abo erforderlich" : "Kein Mobilfunkabo erforderlich"
-      : undefined;
+    case "abo": {
+      const checkedAt = data.price?.checkedAt ? Date.parse(String(data.price.checkedAt)) : Number.NaN;
+      const operations = deriveProductOperations(data);
+      const currentPrice = operations.priceAvailable && Number.isFinite(checkedAt) && Date.now() - checkedAt <= 14 * 86_400_000
+        ? data.price?.current
+        : null;
+      return formatSubscriptionComparison(data.subscription, currentPrice)
+        ?? (typeof gps?.subscriptionRequired === "boolean"
+          ? gps.subscriptionRequired ? "Abo erforderlich" : "Kein Mobilfunkabo erforderlich"
+          : undefined);
+    }
     case "akkulaufzeit": return gps?.batteryMaxDays ? `Bis zu ${gps.batteryMaxDays} Tage` : undefined;
     case "gewicht": {
       const grams = gps?.deviceWeightGrams ?? gps?.totalWeightGrams;
@@ -375,6 +385,13 @@ export function resolveComparisonValue({
     const canonicalValue = isScoreCriterion ? calculated.score : calculated.rating;
     const formatted = formatValue(canonicalValue ?? undefined, criterion);
     if (formatted !== undefined) return formatted;
+  }
+
+  // Die Kostenzeile ist wie der Score eine kanonische Produktdimension.
+  // Vergleichsspezifischer Alttext darf aktuelle strukturierte Tarife nicht überschreiben.
+  if (product && normalized === "abo") {
+    const subscriptionValue = formatValue(deriveKnownValue(product, item, normalized), criterion);
+    if (subscriptionValue !== undefined) return subscriptionValue;
   }
 
   for (const record of [item.overrides, item.values]) {

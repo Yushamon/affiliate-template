@@ -1,16 +1,16 @@
 # CSS Architecture Audit
 
-Erzeugt: 2026-09-02T06:43:43.594Z
+Erzeugt: 2026-09-02T11:47:46.661Z
 
 ## Zusammenfassung
 
 - CSS-Dateien: 42
 - Astro-Dateien mit Style-Block: 47
-- Quell-CSS: 683490 Bytes
-- Regeln: 7258
+- Quell-CSS: 687107 Bytes
+- Regeln: 7294
 - !important-Deklarationen: 1168
-- mehrfach definierte Selektoren: 1419
-- identische Deklarationsblöcke: 911
+- mehrfach definierte Selektoren: 1422
+- identische Deklarationsblöcke: 915
 - Importkanten: 71
 - kaputte CSS-Imports: 0
 - nicht statisch importierte CSS-Dateien: 0
@@ -23,7 +23,7 @@ Erzeugt: 2026-09-02T06:43:43.594Z
 | design-system | 36 | 310099 | 3952 | 848 |
 | editorial-content | 1 | 28810 | 172 | 255 |
 | manufacturer-pages | 3 | 17222 | 197 | 27 |
-| product-experience | 17 | 109489 | 921 | 14 |
+| product-experience | 17 | 113106 | 957 | 14 |
 | component-owner-unresolved | 22 | 116544 | 989 | 10 |
 | comparison-platform | 3 | 56895 | 527 | 9 |
 | admin-seo-copilot | 6 | 34290 | 439 | 5 |
@@ -64,6 +64,7 @@ Erzeugt: 2026-09-02T06:43:43.594Z
 | `apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro` | product | product-experience | 7236 | 67 | 0 | 0 |
 | `packages/affiliate-core/src/styles/home.css` | global | design-system | 6844 | 69 | 0 | 2 |
 | `apps/pfotentechnik/src/pages/vergleiche/index.astro` | component-inline | component-owner-unresolved | 6838 | 52 | 0 | 0 |
+| `apps/pfotentechnik/src/components/product-experience-2/PriceBox2.astro` | product | product-experience | 6175 | 52 | 0 | 0 |
 | `apps/pfotentechnik/src/pages/admin/seo/topical-authority.astro` | admin | admin-seo-copilot | 6085 | 96 | 0 | 0 |
 | `apps/pfotentechnik/src/components/admin/ResearchWorkbench.astro` | admin | admin-seo-copilot | 5854 | 76 | 0 | 0 |
 | `apps/pfotentechnik/src/components/guide/GuideExperience.astro` | component-inline | component-owner-unresolved | 5568 | 61 | 0 | 0 |
@@ -72,7 +73,6 @@ Erzeugt: 2026-09-02T06:43:43.594Z
 | `apps/pfotentechnik/src/components/product-experience-2/ProductVerdict2.astro` | product | product-experience | 5021 | 41 | 0 | 0 |
 | `packages/affiliate-core/src/components/ImageLightbox.astro` | component-inline | component-owner-unresolved | 4841 | 40 | 0 | 0 |
 | `apps/pfotentechnik/src/pages/kaufberatung.astro` | component-inline | component-owner-unresolved | 4654 | 35 | 0 | 0 |
-| `apps/pfotentechnik/src/components/EditorialTransparency.astro` | component-inline | component-owner-unresolved | 4566 | 37 | 0 | 0 |
 
 ## Sichere Löschkandidaten
 

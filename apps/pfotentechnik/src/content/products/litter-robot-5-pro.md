@@ -24,6 +24,18 @@ images:
     src: "../../assets/images/products/litter-robot-5-pro/hero.webp"
     alt: "Litter-Robot 5 Pro in hochwertiger Produktansicht"
   gallery: []
+subscription:
+  status: optional-subscription
+  requiredForCoreFunction: false
+  serviceType: ai-and-cloud
+  serviceModel: optional
+  provider: Whisker+
+  researchedAt: "2026-09-02"
+  source: "https://www.litter-robot.com/litter-robot-5-pro-insights-bundle.html"
+  freeFunctions: ["Selbstreinigung", "grundlegende Kameraansicht"]
+  paidFunctions: ["AI-Gesichtserkennung", "vertiefte Gesundheits- und Verhaltensauswertung"]
+  additionalCostNote: "Whisker+ ist derzeit auf den US-Markt begrenzt; ein Deutschlandpreis ist nicht verfügbar."
+  plans: []
 price: { current: null, currency: "EUR", status: "unknown" }
 rating: 3.8
 priceState: "unknown"

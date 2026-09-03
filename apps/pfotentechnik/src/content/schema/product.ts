@@ -166,6 +166,81 @@ const productPriceStateSchema = z.enum([
   "stale"
 ]);
 
+const productSubscriptionPlanSchema = z.object({
+  name: z.string().min(1),
+  billingPeriod: z.enum(["monthly", "annual", "term"]),
+  commitmentMonths: z.number().int().positive(),
+  billingMode: z.enum(["recurring", "upfront", "prepaid"]),
+  price: z.number().positive().nullable(),
+  currency: z.string().length(3).default("EUR"),
+  effectiveMonthlyPrice: z.number().positive().nullable().optional(),
+  autoRenew: z.boolean().nullable(),
+  featured: z.boolean().default(false),
+  notes: z.string().optional()
+});
+
+const productSubscriptionSchema = z.object({
+  status: z.enum([
+    "required-subscription",
+    "required-prepaid",
+    "optional-subscription",
+    "no-subscription",
+    "service-included",
+    "unknown"
+  ]),
+  requiredForCoreFunction: z.boolean().nullable(),
+  serviceType: z.enum([
+    "cellular",
+    "external-cellular",
+    "cloud-storage",
+    "ai-and-cloud",
+    "non-cellular",
+    "mixed",
+    "none",
+    "unknown"
+  ]),
+  serviceModel: z.enum([
+    "subscription",
+    "prepaid",
+    "subscription-or-prepaid",
+    "optional",
+    "included",
+    "none",
+    "unknown"
+  ]),
+  provider: z.string().min(1),
+  includedServiceMonths: z.number().int().nonnegative().default(0),
+  researchedAt: z.coerce.date(),
+  checkedAt: z.coerce.date().optional(),
+  source: z.string().url(),
+  freeFunctions: z.array(z.string().min(1)).default([]),
+  paidFunctions: z.array(z.string().min(1)).default([]),
+  additionalCostNote: z.string().optional(),
+  plans: z.array(productSubscriptionPlanSchema).default([])
+}).superRefine((value, context) => {
+  if (value.status === "no-subscription" && value.requiredForCoreFunction !== false) {
+    context.addIssue({
+      code: z.ZodIssueCode.custom,
+      path: ["requiredForCoreFunction"],
+      message: "no-subscription erfordert requiredForCoreFunction = false."
+    });
+  }
+  if (["required-subscription", "required-prepaid"].includes(value.status) && value.requiredForCoreFunction !== true) {
+    context.addIssue({
+      code: z.ZodIssueCode.custom,
+      path: ["requiredForCoreFunction"],
+      message: "Verpflichtende Dienste erfordern requiredForCoreFunction = true."
+    });
+  }
+  if (value.status === "optional-subscription" && value.requiredForCoreFunction !== false) {
+    context.addIssue({
+      code: z.ZodIssueCode.custom,
+      path: ["requiredForCoreFunction"],
+      message: "Optionale Dienste dürfen nicht als Voraussetzung der Grundfunktion markiert sein."
+    });
+  }
+});
+
 const productAvailabilitySchema = z.enum([
   "available",
   "temporarily-unavailable",
@@ -865,6 +940,8 @@ export const createProductContentSchema = (image: ImageFunction) =>
         "premium"
       ])
       .optional(),
+
+    subscription: productSubscriptionSchema.optional(),
 
     useCase: z
       .string()

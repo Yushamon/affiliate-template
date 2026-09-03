@@ -60,6 +60,16 @@ images:
       alt: Symbolische Darstellung zum korrekten Sitz eines Hundeortungshalsbands
     - src: ../../assets/images/guides/gps-tracker/missing-pet.webp
       alt: Symbolische Darstellung einer Hundeortung im Gelände
+subscription:
+  status: no-subscription
+  requiredForCoreFunction: false
+  serviceType: non-cellular
+  serviceModel: none
+  provider: Garmin
+  researchedAt: "2026-09-02"
+  source: "https://www.garmin.com/de-DE/p/714362"
+  additionalCostNote: "Die VHF-Ortung benötigt kein Mobilfunkabo, aber ein kompatibles Garmin-Alpha-Handgerät als separate Hardware."
+  plans: []
 price:
   current: 308.85
   currency: "EUR"

@@ -27,6 +27,20 @@ images:
     - { src: "../../assets/images/products/furbo-360-katzenkamera/gallery-1.webp", alt: "Geplanter Bildslot: Furbo 360° Katzenkamera mit klar erkennbarem Kamerakopf; aktuell Platzhalter" }
     - { src: "../../assets/images/products/furbo-360-katzenkamera/gallery-2.webp", alt: "Geplanter Bildslot: Feder-Spielzeug und Katzeninteraktion der Furbo 360° Katzenkamera; aktuell Platzhalter" }
     - { src: "../../assets/images/products/furbo-360-katzenkamera/gallery-3.webp", alt: "Geplanter Bildslot: Furbo 360° Katzenkamera in einer Nutzungssituation mit Katze; aktuell Platzhalter" }
+subscription:
+  status: optional-subscription
+  requiredForCoreFunction: false
+  serviceType: ai-and-cloud
+  serviceModel: optional
+  provider: Furbo Nanny
+  researchedAt: "2026-09-02"
+  source: "https://help.furbo.com/hc/de/articles/17462739016089-Furbo-Nanny-Abonnements-und-Preise"
+  freeFunctions: ["Livebild", "Zwei-Wege-Audio", "Leckerli-Ausgabe"]
+  paidFunctions: ["erweiterte intelligente Hinweise", "Cloud-Videos", "Tageszusammenfassungen"]
+  plans:
+    - { name: "Basic monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 6.99, currency: EUR, effectiveMonthlyPrice: 6.99, autoRenew: true, featured: true }
+    - { name: "Standard monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 7.99, currency: EUR, effectiveMonthlyPrice: 7.99, autoRenew: true }
+    - { name: "Premium monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 9.99, currency: EUR, effectiveMonthlyPrice: 9.99, autoRenew: true }
 price:
   current: 179
   currency: "EUR"

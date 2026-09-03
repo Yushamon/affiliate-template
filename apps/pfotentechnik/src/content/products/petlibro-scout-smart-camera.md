@@ -43,6 +43,20 @@ images:
     src: "../../assets/images/products/petlibro-scout-smart-camera/hero.webp"
     alt: "PETLIBRO Scout Smart Camera in hochwertiger Produktansicht"
   gallery: []
+subscription:
+  status: optional-subscription
+  requiredForCoreFunction: false
+  serviceType: ai-and-cloud
+  serviceModel: optional
+  provider: PETLIBRO Video Cloud AI
+  researchedAt: "2026-09-02"
+  source: "https://de.petlibro.com/pages/video-cloud-ai"
+  freeFunctions: ["Livebild", "automatische Verfolgung", "AI-Assistent"]
+  paidFunctions: ["Verhaltenshinweise", "Videoaufzeichnung", "Zusammenfassungen"]
+  plans:
+    - { name: "Standard jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 129.99, currency: EUR, effectiveMonthlyPrice: 10.83, autoRenew: true, featured: true, notes: "7 Tage Videospeicher" }
+    - { name: "Premium jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 189.99, currency: EUR, effectiveMonthlyPrice: 15.83, autoRenew: true, notes: "30 Tage Videospeicher" }
+    - { name: "Family jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 219.99, currency: EUR, effectiveMonthlyPrice: 18.33, autoRenew: true, notes: "für bis zu drei Geräte" }
 price:
   current: 85.29
   currency: "EUR"

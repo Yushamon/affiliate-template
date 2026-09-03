@@ -72,7 +72,7 @@ const suitabilitySignals = model.idealFor.slice(0, 3);
       </dl>
     )}
 
-    <PriceBox2 price={model.price} affiliate={model.affiliate} operations={model.operations} />
+    <PriceBox2 price={model.price} affiliate={model.affiliate} operations={model.operations} subscriptionCost={model.subscriptionCosts} />
 
     <a class="px2-hero__compare" href={model.comparisonHref}>
       {model.comparisonLabel}

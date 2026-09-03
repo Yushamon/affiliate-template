@@ -36,6 +36,19 @@ images:
       alt: "PETLIBRO Luma Smart Self-Cleaning Litter Box, Produktansicht 2"
     - src: "../../assets/images/products/petlibro-luma-smart-litter-box/gallery-3.webp"
       alt: "PETLIBRO Luma Smart Self-Cleaning Litter Box, Produktansicht 3"
+subscription:
+  status: optional-subscription
+  requiredForCoreFunction: false
+  serviceType: ai-and-cloud
+  serviceModel: optional
+  provider: PETLIBRO Video Cloud AI
+  researchedAt: "2026-09-02"
+  source: "https://de.petlibro.com/pages/video-cloud-ai"
+  freeFunctions: ["Selbstreinigung", "Livestream"]
+  paidFunctions: ["Cloud-Videoaufzeichnung", "AI-Auswertungen"]
+  plans:
+    - { name: "Standard jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 129.99, currency: EUR, effectiveMonthlyPrice: 10.83, autoRenew: true, featured: true, notes: "7 Tage Videospeicher" }
+    - { name: "Premium jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 189.99, currency: EUR, effectiveMonthlyPrice: 15.83, autoRenew: true, notes: "30 Tage Videospeicher" }
 price:
   current: 559.98
   currency: "EUR"

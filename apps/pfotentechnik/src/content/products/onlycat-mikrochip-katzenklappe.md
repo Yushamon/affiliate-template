@@ -41,6 +41,19 @@ images:
       alt: OnlyCat Mikrochip Katzenklappe eingebaut in eine moderne Haustür
     - src: ../../assets/images/products/onlycat-mikrochip-katzenklappe/gallery-4.webp
       alt: Katze bei der Nutzung der OnlyCat Mikrochip Katzenklappe
+subscription:
+  status: optional-subscription
+  requiredForCoreFunction: false
+  serviceType: ai-and-cloud
+  serviceModel: optional
+  provider: OnlyCat
+  researchedAt: "2026-09-02"
+  source: "https://help.onlycat.com/en/article/pricing-information-1f9rsr0/"
+  freeFunctions: ["Einmalzahlungs-Version mit dauerhaft enthaltenem Dienst"]
+  paidFunctions: ["günstigere Hardwarevariante mit verpflichtendem Monatsdienst"]
+  additionalCostNote: "Beim Kauf wird zwischen der Einmalzahlungs-Version ohne Monatsgebühr und einer Abo-Version gewählt."
+  plans:
+    - { name: "Abo-Version", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 9.99, currency: EUR, effectiveMonthlyPrice: 9.99, autoRenew: true, featured: true }
 price:
   current: 327.99
   currency: "EUR"

@@ -103,7 +103,8 @@ test("Statement wird aus aktuellen Zahlen erzeugt", () => {
     normalized("c", "none"),
   ], { generatedAt: NOW });
   assert.match(snapshot.finding.statement, /^2 von 3 /);
-  assert.match(snapshot.finding.statement, /1 kommen ohne Pflichtabo/);
+  assert.match(snapshot.finding.statement, /kostenpflichtigen Ortungsdienst/);
+  assert.match(snapshot.finding.statement, /1 kommen ohne Pflichtdienst/);
   assert.equal(snapshot.validation.passed, true);
 });
 
