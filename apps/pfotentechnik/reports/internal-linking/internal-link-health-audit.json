@@ -1,27 +1,27 @@
 {
   "version": "4.0.1",
-  "generatedAt": "2026-09-02T11:44:04.285Z",
+  "generatedAt": "2026-09-03T08:12:24.156Z",
   "strict": true,
   "inputs": {
     "legacyVersion": "3.0.3",
     "targetAuditVersion": "2.0.2",
-    "builtRoutes": 367
+    "builtRoutes": 368
   },
   "summary": {
-    "documents": 243,
+    "documents": 244,
     "legacyErrors": 0,
-    "legacyWarnings": 8,
+    "legacyWarnings": 7,
     "runtimeErrors": 0,
     "effectiveErrors": 0,
-    "effectiveWarnings": 8,
+    "effectiveWarnings": 7,
     "falsePositives": 0
   },
   "classifications": {
-    "advisory": 19
+    "advisory": 18
   },
   "effectiveSeverities": {
     "info": 11,
-    "warning": 8
+    "warning": 7
   },
   "findings": [
     {
@@ -59,16 +59,6 @@
       "code": "NO_INCOMING_INTERNAL_LINK",
       "message": "/katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
       "targetRoute": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
-      "originalSeverity": "warning",
-      "effectiveSeverity": "warning",
-      "classification": "advisory",
-      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
-    },
-    {
-      "severity": "warning",
-      "code": "NO_INCOMING_INTERNAL_LINK",
-      "message": "/katzentrinkbrunnen-ohne-filter/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
-      "targetRoute": "/katzentrinkbrunnen-ohne-filter/",
       "originalSeverity": "warning",
       "effectiveSeverity": "warning",
       "classification": "advisory",

@@ -1,14 +1,14 @@
 # Internal-Link Health Audit 4.0.1
 
-Erstellt: 2026-09-02T11:44:04.285Z
+Erstellt: 2026-09-03T08:12:24.156Z
 
 ## Zusammenfassung
 
-- Dokumente: 243
+- Dokumente: 244
 - Legacy-Fehler: 0
 - Build-verifizierte Laufzeitfehler: 0
 - Effektive Strict-Fehler: 0
-- Effektive Warnungen: 8
+- Effektive Warnungen: 7
 - Erkannte False Positives: 0
 
 ## Bewertungslogik
@@ -40,7 +40,6 @@ Keine Befunde.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /hund-trinkt-ploetzlich-viel/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /katze-an-trinkbrunnen-gewoehnen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
-- **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /katzentrinkbrunnen-ohne-filter/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /seniorenhunde-richtig-versorgen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /trinkbrunnen-fuer-kitten-sicher/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /wie-kann-technik-gegen-langeweile-helfen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.

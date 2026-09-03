@@ -272,7 +272,7 @@ editorial:
   testedHandsOn: false
   lastVerifiedAt: "2026-08-07"
   note: "Bewertung auf Basis aktueller Neakasa-Herstellerdaten. Keine eigene Praxiserfahrung oder Langzeitnutzung als Bewertungsgrundlage."
-litterCompatibility: { bentoniteClumping: { status: supported }, tofu: { status: unknown }, plantBased: { status: unknown }, woodPellets: { status: notSupported }, crystal: { status: unknown }, nonClumping: { status: notSupported }, evidenceSourceUrls: ["https://eu.neakasa.com/products/m1-lite-self-cleaning-cat-litter-box"] }
+litterCompatibility: { status: partial, compatibleTypes: [bentonite, mineral-clumping], conditionalTypes: [], incompatibleTypes: [wood, pellets, paper, non-clumping], clumpingRequirement: required, grainSize: { maxLengthMm: 10, maxDiameterMm: 3, notes: "Partikel müssen das Filtersieb passieren." }, notes: ["Hersteller empfiehlt schnell klumpende körnige Bentonit- oder Mineralstreu."], researchedAt: "2026-09-03", evidence: [{ source: "Neakasa M1 Lite", url: "https://eu.neakasa.com/products/m1-lite-self-cleaning-cat-litter-box", sourceType: manufacturer, verifiedAt: "2026-09-03", assertion: "Hersteller dokumentiert Klumpanforderung, ausgeschlossene Streuarten und maximal 3 mm Durchmesser beziehungsweise 10 mm Länge." }] }
 multiPet: { sharedUse: supported, identificationMethods: [weight], individualProfiles: partial, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: partial, similarPetLimitation: { status: unknown, description: "Keine Mindestgewichtsdifferenz dokumentiert." }, evidenceSourceUrls: ["https://eu.neakasa.com/products/m1-lite-self-cleaning-cat-litter-box"] }
 evidenceSources:
   - source: "Neakasa EU"

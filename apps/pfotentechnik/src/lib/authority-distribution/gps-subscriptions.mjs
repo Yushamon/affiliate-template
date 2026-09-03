@@ -251,6 +251,24 @@ export function validateSnapshot(snapshot) {
   return { passed: errors.length === 0, blocked: errors.length > 0, errors };
 }
 
+export function evaluatePublicationGate(snapshot) {
+  const technicalReasons = snapshot.validation.passed ? [] : [...snapshot.validation.errors];
+  const domainReasons = [];
+  const { counts } = snapshot.population;
+  if (snapshot.finding.confidence !== "high") domainReasons.push("confidence-not-high");
+  if (counts.eligible !== counts.total) domainReasons.push("population-not-fully-eligible");
+  if (counts.unknown !== 0) domainReasons.push("subscription-status-unknown");
+  if (snapshot.population.percentages.evidenceCoverage !== 100) domainReasons.push("evidence-coverage-below-100");
+  if (snapshot.products.some((product) => product.eligible && product.subscription.serviceModel === "unknown")) {
+    domainReasons.push("service-model-unknown");
+  }
+  return {
+    status: technicalReasons.length ? "blocked" : domainReasons.length ? "needs-review" : "ready",
+    technicalReasons,
+    domainReasons,
+  };
+}
+
 export function buildSnapshotFromNormalized(normalizedProducts, { generatedAt = new Date().toISOString(), previousSnapshot = null } = {}) {
   const normalizedGeneratedAt = iso(generatedAt);
   if (!normalizedGeneratedAt) throw new Error("generatedAt muss ein gültiges ISO-Datum sein.");
@@ -315,7 +333,8 @@ export function buildSnapshotFromNormalized(normalizedProducts, { generatedAt = 
   snapshot.snapshotVersion = hash(snapshotContent(snapshot)).slice(0, 16);
   snapshot.changeFinding = detectChanges(previousSnapshot, snapshot);
   snapshot.validation = validateSnapshot(snapshot);
-  snapshot.finding.status = snapshot.validation.passed ? "needs-review" : "blocked";
+  snapshot.publicationGate = evaluatePublicationGate(snapshot);
+  snapshot.finding.status = snapshot.publicationGate.status;
   return snapshot;
 }
 
@@ -339,6 +358,9 @@ export function renderGpsSubscriptionMarkdown(snapshot) {
     `- Erzeugt: ${snapshot.generatedAt}`,
     `- Datenstand: ${snapshot.dataUpdatedAt ?? "unbekannt"}`,
     `- Validation Gate: ${snapshot.validation.passed ? "bestanden" : "BLOCKED"}`, "",
+    `- Publication Gate: ${snapshot.publicationGate.status}`,
+    `- Technische Gate-Gründe: ${snapshot.publicationGate.technicalReasons.join(", ") || "keine"}`,
+    `- Fachliche Gate-Gründe: ${snapshot.publicationGate.domainReasons.join(", ") || "keine"}`, "",
     "## Kernaussage", "", snapshot.finding.statement, "",
     `Pflichtdienst-Anteil: ${snapshot.population.percentages.required ?? "–"} %. Anteil ohne Pflichtdienst: ${snapshot.population.percentages.withoutMandatorySubscription ?? "–"} %. Nenner sind ausschließlich ${snapshot.population.counts.eligible} auswertbare Produkte.`, "",
     "## Population", "",
@@ -368,6 +390,6 @@ export function renderGpsSubscriptionMarkdown(snapshot) {
     "- Ein vorhandener Boolean ohne passende strukturierte Evidence bleibt ausgeschlossen.",
     "- `false` bedeutet explizit kein Pflichtabo; missing/unknown wird niemals zu `false`.",
     "- TCO und Tarifvergleiche dürfen nur aus aktuellen strukturierten Plänen berechnet werden.",
-    "- Das Finding ist `needs-review`, nicht automatisch öffentlich freigegeben.", "",
+    `- Das Finding ist \`${snapshot.finding.status}\`; \`ready\` bestätigt Daten- und Methodikreife, löst aber keine automatische Veröffentlichung aus.`, "",
   ].join("\n");
 }

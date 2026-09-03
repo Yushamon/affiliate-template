@@ -8,8 +8,9 @@ const require = createRequire(path.join(app, "package.json"));
 const yaml = require("js-yaml");
 const productDir = path.join(app, "src", "content", "products");
 
-const litterFields = ["bentoniteClumping", "tofu", "plantBased", "woodPellets", "crystal", "nonClumping"];
-const claimStatuses = new Set(["supported", "conditional", "notSupported", "unknown", "notApplicable"]);
+const litterTypes = new Set(["bentonite", "mineral-clumping", "tofu", "plant-fiber", "silica-crystal", "wood", "pellets", "paper", "non-clumping", "mixed", "unknown"]);
+const litterStatuses = new Set(["complete", "partial", "unknown"]);
+const clumpingStatuses = new Set(["required", "recommended", "not-required", "proprietary-system", "unknown"]);
 const capabilityStatuses = new Set(["supported", "partial", "unavailable", "unknown", "notApplicable"]);
 const methods = new Set(["microchip", "rfidTag", "weight", "cameraAi", "other", "none", "unknown"]);
 const litterSlugs = new Set([
@@ -29,12 +30,15 @@ export function validateDecisionData(data) {
   const errors = [];
   const add = (message) => errors.push(`${data.slug ?? "unbekannt"}: ${message}`);
   if (data.litterCompatibility) {
-    for (const field of litterFields) {
-      const entry = data.litterCompatibility[field];
-      if (!entry || !claimStatuses.has(entry.status)) add(`ungueltiger Streustatus ${field}`);
+    const litter = data.litterCompatibility;
+    if (!litterStatuses.has(litter.status)) add("ungueltiger Streu-Coverage-Status");
+    if (!clumpingStatuses.has(litter.clumpingRequirement)) add("ungueltige Klumpstreu-Anforderung");
+    for (const field of ["compatibleTypes", "conditionalTypes", "incompatibleTypes"]) {
+      if (!Array.isArray(litter[field]) || litter[field].some((item) => !litterTypes.has(item))) add(`ungueltige Streutypen in ${field}`);
     }
-    const claimed = litterFields.some((field) => !["unknown", "notApplicable"].includes(data.litterCompatibility[field]?.status));
-    if (claimed && !(data.litterCompatibility.evidenceSourceUrls?.length > 0)) add("belegte Streuangaben ohne evidenceSourceUrls");
+    const claimed = litter.status !== "unknown";
+    if (claimed && !(litter.evidence?.length > 0)) add("belegte Streuangaben ohne Evidence");
+    if (litter.evidence?.some((item) => !item.url || !item.source || !item.sourceType || !item.verifiedAt || !item.assertion)) add("unvollstaendige Streu-Evidence");
   }
   if (data.multiPet) {
     if (!capabilityStatuses.has(data.multiPet.sharedUse)) add("ungueltiger sharedUse-Status");

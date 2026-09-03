@@ -223,7 +223,7 @@ editorial:
   testedHandsOn: false
   lastVerifiedAt: "2026-08-15"
   note: "Herstellerdaten redaktionell eingeordnet; kein eigener Produkttest."
-litterCompatibility: { bentoniteClumping: { status: unknown }, tofu: { status: unknown }, plantBased: { status: unknown }, woodPellets: { status: unknown }, crystal: { status: unknown }, nonClumping: { status: unknown }, evidenceSourceUrls: [] }
+litterCompatibility: { status: partial, compatibleTypes: [bentonite, mineral-clumping], conditionalTypes: [silica-crystal, tofu, plant-fiber], incompatibleTypes: [wood, pellets, paper, non-clumping], clumpingRequirement: required, notes: ["Standardgewichtige klumpende Tonstreu wird empfohlen; Kristall-, Tofu- und Pflanzenstreu funktionieren nur unter den Herstellerbedingungen."], researchedAt: "2026-09-03", evidence: [{ source: "PetSnowy Support", url: "https://shop.petsnowy.com/pages/support", sourceType: support, verifiedAt: "2026-09-03", assertion: "Herstellersupport dokumentiert geeignete, bedingt geeignete und ungeeignete Streuarten für SNOW+." }] }
 multiPet: { sharedUse: unknown, identificationMethods: [unknown], individualProfiles: unknown, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: unknown, similarPetLimitation: { status: unknown, description: "Mehrtier-Zuordnung nicht ausreichend dokumentiert." }, evidenceSourceUrls: [] }
 evidenceSources:
   - source: "PetSnowy Deutschland"

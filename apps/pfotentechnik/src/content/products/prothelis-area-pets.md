@@ -42,10 +42,12 @@ subscription:
   serviceType: cellular
   serviceModel: subscription-or-prepaid
   provider: Prothelis
-  researchedAt: "2026-09-02"
+  researchedAt: "2026-09-03"
   source: "https://shop.prothelis.de/servicegebuehren/"
   plans:
     - { name: "Abo 12 Monate", billingPeriod: monthly, commitmentMonths: 12, billingMode: recurring, price: 6.99, currency: EUR, effectiveMonthlyPrice: 6.99, autoRenew: true }
+    - { name: "Abo 24 Monate", billingPeriod: monthly, commitmentMonths: 24, billingMode: recurring, price: 5.99, currency: EUR, effectiveMonthlyPrice: 5.99, autoRenew: true }
+    - { name: "Prepaid 1 Monat", billingPeriod: term, commitmentMonths: 1, billingMode: prepaid, price: 8.49, currency: EUR, effectiveMonthlyPrice: 8.49, autoRenew: false }
     - { name: "Prepaid 12 Monate", billingPeriod: term, commitmentMonths: 12, billingMode: prepaid, price: 71.88, currency: EUR, effectiveMonthlyPrice: 5.99, autoRenew: false, featured: true }
     - { name: "Prepaid 24 Monate", billingPeriod: term, commitmentMonths: 24, billingMode: prepaid, price: 119.76, currency: EUR, effectiveMonthlyPrice: 4.99, autoRenew: false }
 price:

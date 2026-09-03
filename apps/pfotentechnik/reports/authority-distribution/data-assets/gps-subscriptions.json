@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "snapshotVersion": "fb39ce00d54a9791",
-  "generatedAt": "2026-09-02T11:47:09.404Z",
+  "snapshotVersion": "c0f6a92f5815f3b3",
+  "generatedAt": "2026-09-03T08:09:00.905Z",
   "dataUpdatedAt": "2026-08-24T00:00:00.000Z",
   "population": {
     "category": "gps-tracker",
@@ -477,9 +477,22 @@
         "serviceType": "cellular",
         "serviceModel": "subscription",
         "provider": "Pawfit",
-        "researchedAt": "2026-09-02T00:00:00.000Z",
-        "source": "https://www.pawfit.com/de-de/subscription.html",
+        "researchedAt": "2026-09-03T00:00:00.000Z",
+        "source": "https://www.pawfit.com/de-de/product/pawfit-3.html?locale=de",
         "plans": [
+          {
+            "name": "Basic monatlich",
+            "billingPeriod": "monthly",
+            "commitmentMonths": 1,
+            "billingMode": "recurring",
+            "price": 6.59,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 6.59,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
           {
             "name": "Basic 6 Monate",
             "billingPeriod": "term",
@@ -507,6 +520,45 @@
             "stale": false
           },
           {
+            "name": "Basic 2 Jahre",
+            "billingPeriod": "term",
+            "commitmentMonths": 24,
+            "billingMode": "upfront",
+            "price": 93.36,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 3.89,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Premium monatlich",
+            "billingPeriod": "monthly",
+            "commitmentMonths": 1,
+            "billingMode": "recurring",
+            "price": 7.69,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 7.69,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Premium 6 Monate",
+            "billingPeriod": "term",
+            "commitmentMonths": 6,
+            "billingMode": "upfront",
+            "price": 33.54,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 5.59,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
+          {
             "name": "Premium jährlich",
             "billingPeriod": "annual",
             "commitmentMonths": 12,
@@ -514,6 +566,19 @@
             "price": 58.68,
             "currency": "EUR",
             "effectiveMonthlyPrice": 4.89,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Premium 2 Jahre",
+            "billingPeriod": "term",
+            "commitmentMonths": 24,
+            "billingMode": "upfront",
+            "price": 110.16,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 4.59,
             "autoRenew": true,
             "featured": false,
             "notes": null,
@@ -531,9 +596,9 @@
       "evidence": [
         {
           "source": "Pawfit",
-          "url": "https://www.pawfit.com/de-de/subscription.html",
+          "url": "https://www.pawfit.com/de-de/product/pawfit-3.html?locale=de",
           "sourceType": "manufacturer",
-          "checkedAt": "2026-09-02T00:00:00.000Z",
+          "checkedAt": "2026-09-03T00:00:00.000Z",
           "confidence": "high",
           "supports": [
             "subscription"
@@ -591,7 +656,7 @@
         "serviceType": "cellular",
         "serviceModel": "subscription-or-prepaid",
         "provider": "Prothelis",
-        "researchedAt": "2026-09-02T00:00:00.000Z",
+        "researchedAt": "2026-09-03T00:00:00.000Z",
         "source": "https://shop.prothelis.de/servicegebuehren/",
         "plans": [
           {
@@ -603,6 +668,32 @@
             "currency": "EUR",
             "effectiveMonthlyPrice": 6.99,
             "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Abo 24 Monate",
+            "billingPeriod": "monthly",
+            "commitmentMonths": 24,
+            "billingMode": "recurring",
+            "price": 5.99,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 5.99,
+            "autoRenew": true,
+            "featured": false,
+            "notes": null,
+            "stale": false
+          },
+          {
+            "name": "Prepaid 1 Monat",
+            "billingPeriod": "term",
+            "commitmentMonths": 1,
+            "billingMode": "prepaid",
+            "price": 8.49,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 8.49,
+            "autoRenew": false,
             "featured": false,
             "notes": null,
             "stale": false
@@ -647,7 +738,7 @@
           "source": "Prothelis",
           "url": "https://shop.prothelis.de/servicegebuehren/",
           "sourceType": "manufacturer",
-          "checkedAt": "2026-09-02T00:00:00.000Z",
+          "checkedAt": "2026-09-03T00:00:00.000Z",
           "confidence": "high",
           "supports": [
             "subscription"
@@ -1262,7 +1353,7 @@
   ],
   "finding": {
     "type": "gps-subscription-requirement",
-    "generatedAt": "2026-09-02T11:47:09.404Z",
+    "generatedAt": "2026-09-03T08:09:00.905Z",
     "dataUpdatedAt": "2026-08-24T00:00:00.000Z",
     "population": 12,
     "eligible": 12,
@@ -1273,12 +1364,50 @@
     "statement": "10 von 12 auswertbaren GPS-Produkten in der aktuellen PfotenTechnik-Auswahl benötigen einen kostenpflichtigen Ortungsdienst; 2 kommen ohne Pflichtdienst aus und 0 führen einen optionalen Dienst.",
     "methodology": "Primär wird subscription.status einschließlich Prepaid-/Abo-Trennung gelesen; gps.subscriptionRequired bleibt nur als rückwärtskompatibler Fallback. Freitext wird nicht in Statuswerte umgewandelt. Eligible sind nur aktive Produkte mit explizitem Status und aktueller Evidence; Unknown oder unzureichende Evidence bleiben außerhalb des belastbaren Nenners.",
     "confidence": "high",
-    "status": "needs-review"
+    "status": "ready"
   },
-  "changeFinding": null,
+  "changeFinding": {
+    "type": "gps-subscription-data-changed",
+    "generatedAt": "2026-09-03T08:09:00.905Z",
+    "previousSnapshotVersion": "fb39ce00d54a9791",
+    "snapshotVersion": "c0f6a92f5815f3b3",
+    "changes": [
+      {
+        "type": "evidence-changed",
+        "slug": "pawfit-3",
+        "before": [
+          "https://support.pawfit.com/hc/en-gb/articles/360019893919-What-are-the-differences-between-all-of-the-Pawfit-models|2026-08-16T00:00:00.000Z|high",
+          "https://www.pawfit.com/de-de/subscription.html|2026-09-02T00:00:00.000Z|high",
+          "https://www.pawfit.com/de-us/product/pawfit-3-pet-tracker.html|2026-08-16T00:00:00.000Z|high"
+        ],
+        "after": [
+          "https://support.pawfit.com/hc/en-gb/articles/360019893919-What-are-the-differences-between-all-of-the-Pawfit-models|2026-08-16T00:00:00.000Z|high",
+          "https://www.pawfit.com/de-de/product/pawfit-3.html?locale=de|2026-09-03T00:00:00.000Z|high",
+          "https://www.pawfit.com/de-us/product/pawfit-3-pet-tracker.html|2026-08-16T00:00:00.000Z|high"
+        ]
+      },
+      {
+        "type": "evidence-changed",
+        "slug": "prothelis-area-pets",
+        "before": [
+          "https://shop.prothelis.de/area-Pets-GPS-Tracker-fuer-Tiere/09054804-02M|2026-08-16T00:00:00.000Z|high",
+          "https://shop.prothelis.de/servicegebuehren/|2026-09-02T00:00:00.000Z|high"
+        ],
+        "after": [
+          "https://shop.prothelis.de/area-Pets-GPS-Tracker-fuer-Tiere/09054804-02M|2026-08-16T00:00:00.000Z|high",
+          "https://shop.prothelis.de/servicegebuehren/|2026-09-03T00:00:00.000Z|high"
+        ]
+      }
+    ]
+  },
   "validation": {
     "passed": true,
     "blocked": false,
     "errors": []
+  },
+  "publicationGate": {
+    "status": "ready",
+    "technicalReasons": [],
+    "domainReasons": []
   }
 }

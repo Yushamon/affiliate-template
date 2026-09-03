@@ -1,6 +1,7 @@
 import type { CollectionEntry } from "astro:content";
 import { calculateProductScore } from "../productScore.ts";
 import { formatSubscriptionComparison } from "../subscriptionCosts.ts";
+import { formatLitterCompatibilityComparison } from "../litterCompatibility.ts";
 import { deriveProductOperations } from "../../lib/product-operations/policy.mjs";
 
 type ProductEntry = CollectionEntry<"products">;
@@ -357,6 +358,7 @@ const deriveKnownValue = (
           ? gps.subscriptionRequired ? "Abo erforderlich" : "Kein Mobilfunkabo erforderlich"
           : undefined);
     }
+    case "streu": return formatLitterCompatibilityComparison(data.litterCompatibility);
     case "akkulaufzeit": return gps?.batteryMaxDays ? `Bis zu ${gps.batteryMaxDays} Tage` : undefined;
     case "gewicht": {
       const grams = gps?.deviceWeightGrams ?? gps?.totalWeightGrams;
@@ -389,7 +391,7 @@ export function resolveComparisonValue({
 
   // Die Kostenzeile ist wie der Score eine kanonische Produktdimension.
   // Vergleichsspezifischer Alttext darf aktuelle strukturierte Tarife nicht überschreiben.
-  if (product && normalized === "abo") {
+  if (product && (normalized === "abo" || normalized === "streu")) {
     const subscriptionValue = formatValue(deriveKnownValue(product, item, normalized), criterion);
     if (subscriptionValue !== undefined) return subscriptionValue;
   }

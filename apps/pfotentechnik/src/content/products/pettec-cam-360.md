@@ -56,7 +56,7 @@ subscription:
   serviceType: ai-and-cloud
   serviceModel: optional
   provider: PetTec Cloud Plus
-  researchedAt: "2026-09-02"
+  researchedAt: "2026-09-03"
   source: "https://pettec.de/pages/cloud-plus"
   freeFunctions: ["Livebild", "Ereignisfotos", "manuelle Aufnahmen", "microSD-Speicherung"]
   paidFunctions: ["Cloud-Ereignisvideos", "Cloud-AI-Erkennung"]
@@ -64,7 +64,9 @@ subscription:
     - { name: "Event Video jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 49.99, currency: EUR, effectiveMonthlyPrice: 4.17, autoRenew: true, featured: true, notes: "pro Kamera" }
     - { name: "Event Video monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 4.99, currency: EUR, effectiveMonthlyPrice: 4.99, autoRenew: true, notes: "pro Kamera" }
     - { name: "AI jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 24.99, currency: EUR, effectiveMonthlyPrice: 2.08, autoRenew: true, notes: "pro Kamera" }
+    - { name: "AI monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 2.49, currency: EUR, effectiveMonthlyPrice: 2.49, autoRenew: true, notes: "pro Kamera" }
     - { name: "Event Video + AI jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 71.90, currency: EUR, effectiveMonthlyPrice: 5.99, autoRenew: true, notes: "pro Kamera" }
+    - { name: "Event Video + AI monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 6.99, currency: EUR, effectiveMonthlyPrice: 6.99, autoRenew: true, notes: "pro Kamera" }
 price:
   current: 59.46
   currency: "EUR"

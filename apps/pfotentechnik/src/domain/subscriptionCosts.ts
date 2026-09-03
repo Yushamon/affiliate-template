@@ -78,6 +78,7 @@ const billingLabel = (plan: SubscriptionPlan): string => {
   if (plan.billingMode === "prepaid") return `${plan.commitmentMonths} Monate im Voraus · keine automatische Verlängerung`;
   if (plan.billingPeriod === "annual") return "jährliche Zahlung";
   if (plan.billingPeriod === "term") return `${plan.commitmentMonths} Monate im Voraus`;
+  if (plan.commitmentMonths > 1) return `${plan.commitmentMonths} Monate Mindestlaufzeit · monatliche Zahlung`;
   return plan.autoRenew === false ? "keine automatische Verlängerung" : "monatliche Zahlung";
 };
 

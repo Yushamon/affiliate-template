@@ -106,6 +106,20 @@ test("Statement wird aus aktuellen Zahlen erzeugt", () => {
   assert.match(snapshot.finding.statement, /kostenpflichtigen Ortungsdienst/);
   assert.match(snapshot.finding.statement, /1 kommen ohne Pflichtdienst/);
   assert.equal(snapshot.validation.passed, true);
+  assert.equal(snapshot.finding.status, "ready");
+  assert.deepEqual(snapshot.publicationGate, { status: "ready", technicalReasons: [], domainReasons: [] });
+});
+
+test("Publication Gate unterscheidet technische und fachliche Gruende", () => {
+  const partial = buildSnapshotFromNormalized([
+    normalized("known", "required"),
+    normalized("unknown", "unknown", false),
+  ], { generatedAt: NOW });
+  assert.equal(partial.validation.passed, true);
+  assert.equal(partial.finding.status, "needs-review");
+  assert.deepEqual(partial.publicationGate.technicalReasons, []);
+  assert.ok(partial.publicationGate.domainReasons.includes("population-not-fully-eligible"));
+  assert.ok(partial.publicationGate.domainReasons.includes("subscription-status-unknown"));
 });
 
 test("Freitext wird nicht in Abo-Status konvertiert", () => {

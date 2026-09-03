@@ -46,12 +46,17 @@ subscription:
   serviceType: cellular
   serviceModel: subscription
   provider: Pawfit
-  researchedAt: "2026-09-02"
-  source: "https://www.pawfit.com/de-de/subscription.html"
+  researchedAt: "2026-09-03"
+  source: "https://www.pawfit.com/de-de/product/pawfit-3.html?locale=de"
   plans:
+    - { name: "Basic monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 6.59, currency: EUR, effectiveMonthlyPrice: 6.59, autoRenew: true }
     - { name: "Basic 6 Monate", billingPeriod: term, commitmentMonths: 6, billingMode: upfront, price: 27.54, currency: EUR, effectiveMonthlyPrice: 4.59, autoRenew: true }
     - { name: "Basic jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 49.08, currency: EUR, effectiveMonthlyPrice: 4.09, autoRenew: true, featured: true }
+    - { name: "Basic 2 Jahre", billingPeriod: term, commitmentMonths: 24, billingMode: upfront, price: 93.36, currency: EUR, effectiveMonthlyPrice: 3.89, autoRenew: true }
+    - { name: "Premium monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 7.69, currency: EUR, effectiveMonthlyPrice: 7.69, autoRenew: true }
+    - { name: "Premium 6 Monate", billingPeriod: term, commitmentMonths: 6, billingMode: upfront, price: 33.54, currency: EUR, effectiveMonthlyPrice: 5.59, autoRenew: true }
     - { name: "Premium jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 58.68, currency: EUR, effectiveMonthlyPrice: 4.89, autoRenew: true }
+    - { name: "Premium 2 Jahre", billingPeriod: term, commitmentMonths: 24, billingMode: upfront, price: 110.16, currency: EUR, effectiveMonthlyPrice: 4.59, autoRenew: true }
 price:
   current: 64.99
   currency: "EUR"

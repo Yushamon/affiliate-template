@@ -524,27 +524,38 @@ const productFailureModesSchema = z
   })
   .optional();
 
-const decisionClaimStatusSchema = z.enum([
-  "supported",
-  "conditional",
-  "notSupported",
-  "unknown",
-  "notApplicable"
+const litterTypeSchema = z.enum([
+  "bentonite", "mineral-clumping", "tofu", "plant-fiber", "silica-crystal",
+  "wood", "pellets", "paper", "non-clumping", "mixed", "unknown"
 ]);
 
-const litterCompatibilityEntrySchema = z.object({
-  status: decisionClaimStatusSchema,
-  condition: z.string().min(1).optional()
-});
-
 const productLitterCompatibilitySchema = z.object({
-  bentoniteClumping: litterCompatibilityEntrySchema.optional(),
-  tofu: litterCompatibilityEntrySchema.optional(),
-  plantBased: litterCompatibilityEntrySchema.optional(),
-  woodPellets: litterCompatibilityEntrySchema.optional(),
-  crystal: litterCompatibilityEntrySchema.optional(),
-  nonClumping: litterCompatibilityEntrySchema.optional(),
-  evidenceSourceUrls: z.array(z.string().url()).default([])
+  status: z.enum(["complete", "partial", "unknown"]),
+  compatibleTypes: z.array(litterTypeSchema).default([]),
+  conditionalTypes: z.array(litterTypeSchema).default([]),
+  incompatibleTypes: z.array(litterTypeSchema).default([]),
+  clumpingRequirement: z.enum(["required", "recommended", "not-required", "proprietary-system", "unknown"]),
+  grainSize: z.object({
+    minMm: z.number().nonnegative().optional(),
+    maxMm: z.number().positive().optional(),
+    maxLengthMm: z.number().positive().optional(),
+    maxDiameterMm: z.number().positive().optional(),
+    notes: z.string().min(1).optional()
+  }).optional(),
+  notes: z.array(z.string().min(1)).default([]),
+  researchedAt: z.coerce.date(),
+  evidence: z.array(z.object({
+    source: z.string().min(1),
+    url: z.string().url(),
+    sourceType: z.enum(["manufacturer", "manual", "support", "official-shop"]),
+    verifiedAt: z.coerce.date(),
+    assertion: z.string().min(1)
+  })).default([])
+}).superRefine((value, context) => {
+  const classified = value.compatibleTypes.length + value.conditionalTypes.length + value.incompatibleTypes.length > 0;
+  if (value.status !== "unknown" && (!classified || value.evidence.length === 0)) {
+    context.addIssue({ code: z.ZodIssueCode.custom, message: "Klassifizierte Streukompatibilität benötigt Typen und nachvollziehbare Evidence." });
+  }
 }).optional();
 
 const multiPetCapabilityStatusSchema = z.enum([

@@ -94,6 +94,7 @@
     "price:audit": "node scripts/price-intelligence/audit.mjs",
     "price:audit:strict": "node scripts/price-intelligence/audit.mjs --strict",
     "data:asset:gps-subscriptions": "node scripts/authority-distribution/gps-subscriptions.mjs",
+    "data:asset:litter-compatibility": "node scripts/authority-distribution/litter-compatibility.mjs",
     "test:data-assets": "node --test test/authority-distribution-gps-subscriptions.test.mjs",
     "demand-discovery:run": "node scripts/demand-discovery/run.mjs",
     "test:demand-discovery": "node --test test/demand-discovery.test.mjs",

@@ -205,7 +205,7 @@ decisionJourney:
     - "/vergleiche/beste-automatische-katzentoiletten/"
   fallback:
     - "/automatische-katzentoiletten/"
-litterCompatibility: { bentoniteClumping: { status: conditional, condition: "Klumpende Bentonitstreu innerhalb Partikelgrenze." }, tofu: { status: conditional, condition: "Klumpend; Partikel bis 12 mm." }, plantBased: { status: unknown }, woodPellets: { status: unknown }, crystal: { status: unknown }, nonClumping: { status: unknown }, evidenceSourceUrls: ["https://www.petkit-eu.com/en-de/products/purobot-max-pro-2-automatic-cat-litter-box"] }
+litterCompatibility: { status: partial, compatibleTypes: [bentonite, mineral-clumping, tofu, mixed], conditionalTypes: [], incompatibleTypes: [non-clumping], clumpingRequirement: required, grainSize: { maxLengthMm: 12, maxDiameterMm: 3 }, notes: ["Zwei Siebe sind für Tofu-/Mischstreu beziehungsweise feinere Bentonit-/Mineralstreu vorgesehen."], researchedAt: "2026-09-03", evidence: [{ source: "PETKIT Purobot Max Pro 2", url: "https://www.petkit-eu.com/en-de/products/purobot-max-pro-2-automatic-cat-litter-box", sourceType: official-shop, verifiedAt: "2026-09-03", assertion: "Offizieller Shop dokumentiert zwei Siebe für klumpende Tofu-, Misch-, Bentonit-, Mineral- und Tonstreu sowie die 12-mm-Grenze." }] }
 multiPet: { sharedUse: supported, identificationMethods: [weight, cameraAi], individualProfiles: supported, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: supported, similarPetLimitation: { status: unknown, description: "Keine Mindestgewichtsdifferenz dokumentiert." }, evidenceSourceUrls: ["https://www.petkit-eu.com/en-de/products/purobot-max-pro-2-automatic-cat-litter-box"] }
 evidenceSources:
   - source: "PETKIT EU"

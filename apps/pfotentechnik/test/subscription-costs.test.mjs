@@ -75,6 +75,23 @@ test("Prepaid trennt Vorauszahlung und automatische Verlängerung", () => {
   assert.equal(model.totals.months24.value, 200);
 });
 
+test("Mehrjahres-Vorauszahlung wird einmalig berechnet und nicht als monatlich kuendbar dargestellt", () => {
+  const model = buildSubscriptionCostModel({
+    subscription: subscription({ plans: [plan({ name: "Basic 2 Jahre", billingPeriod: "term", commitmentMonths: 24, billingMode: "upfront", price: 120, effectiveMonthlyPrice: 5 })] }),
+    devicePrice: 50,
+    now: NOW
+  });
+  assert.equal(model.totals.months12.value, 170);
+  assert.equal(model.totals.months24.value, 170);
+  assert.equal(model.featuredPlan.billingLabel, "24 Monate im Voraus");
+});
+
+test("Ungeklaerter Status bleibt sichtbar und erzeugt keine TCO", () => {
+  const model = buildSubscriptionCostModel({ subscription: subscription({ status: "unknown", requiredForCoreFunction: null, serviceModel: "unknown", plans: [] }), devicePrice: 159.99, now: NOW });
+  assert.equal(model.label, "Zusatzkosten noch nicht geklärt");
+  assert.equal(model.totals.months24, null);
+});
+
 test("optionaler Dienst hält Grundbetrieb und Kosten-Szenario auseinander", () => {
   const model = buildSubscriptionCostModel({
     subscription: subscription({ status: "optional-subscription", requiredForCoreFunction: false, serviceModel: "optional", freeFunctions: ["Livebild"], paidFunctions: ["Cloudvideo"] }),

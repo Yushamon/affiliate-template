@@ -1,0 +1,419 @@
+{
+  "schemaVersion": 1,
+  "snapshotVersion": "12d8db9bd14e0d15",
+  "generatedAt": "2026-09-03T08:09:01.219Z",
+  "population": {
+    "total": 11,
+    "complete": 1,
+    "partial": 9,
+    "withEvidence": 10,
+    "withoutEvidence": 1,
+    "coverage": 90.9
+  },
+  "products": [
+    {
+      "product": "Devoko 90L Automatisches Katzenklo",
+      "slug": "devoko-90l-automatisches-katzenklo",
+      "productUrl": "/produkt/devoko-90l-automatisches-katzenklo/",
+      "status": "unknown",
+      "compatibleTypes": [],
+      "conditionalTypes": [],
+      "incompatibleTypes": [],
+      "clumpingRequirement": "unknown",
+      "grainSize": null,
+      "unknowns": [
+        "compatibility"
+      ],
+      "notes": [
+        "Keine produktspezifische Herstellerquelle zur Streukompatibilität auffindbar; Händlerangaben reichen für eine Klassifizierung nicht aus."
+      ],
+      "researchedAt": "2026-09-03",
+      "evidence": []
+    },
+    {
+      "product": "Litter-Robot 4",
+      "slug": "litter-robot-4",
+      "productUrl": "/produkt/litter-robot-4/",
+      "status": "partial",
+      "compatibleTypes": [
+        "bentonite",
+        "mineral-clumping"
+      ],
+      "conditionalTypes": [
+        "silica-crystal",
+        "tofu",
+        "plant-fiber"
+      ],
+      "incompatibleTypes": [
+        "wood",
+        "pellets",
+        "paper",
+        "non-clumping"
+      ],
+      "clumpingRequirement": "required",
+      "grainSize": null,
+      "unknowns": [],
+      "notes": [
+        "Siebfähige Klumpstreu ist erforderlich; transparente oder weiße Kristalle können Sensorwerte beeinträchtigen."
+      ],
+      "researchedAt": "2026-09-03",
+      "evidence": [
+        {
+          "source": "Whisker Litter-Robot 4 Getting Started",
+          "url": "https://www.litter-robot.com/getting-started/litter-robot-4",
+          "sourceType": "support",
+          "verifiedAt": "2026-09-03",
+          "assertion": "Hersteller nennt Klumpstreu als Voraussetzung und schließt nicht klumpende, absorbierende, Papier- und Holzpelletstreu aus."
+        },
+        {
+          "source": "Whisker Streu-Ratgeber",
+          "url": "https://www.litter-robot.com/blog/best-litter-for-litter-robot/",
+          "sourceType": "manufacturer",
+          "verifiedAt": "2026-09-03",
+          "assertion": "Hersteller differenziert mineralische, pflanzliche, Tofu- und Kristallstreu für aktuelle Litter-Robot-Modelle."
+        }
+      ]
+    },
+    {
+      "product": "Litter-Robot 5 Pro",
+      "slug": "litter-robot-5-pro",
+      "productUrl": "/produkt/litter-robot-5-pro/",
+      "status": "partial",
+      "compatibleTypes": [
+        "bentonite",
+        "mineral-clumping"
+      ],
+      "conditionalTypes": [
+        "silica-crystal",
+        "tofu",
+        "plant-fiber"
+      ],
+      "incompatibleTypes": [
+        "wood",
+        "pellets",
+        "paper",
+        "non-clumping"
+      ],
+      "clumpingRequirement": "required",
+      "grainSize": null,
+      "unknowns": [],
+      "notes": [
+        "Siebfähige Klumpstreu ist erforderlich; helle oder transparente Kristalle werden wegen möglicher Sensorprobleme nicht empfohlen."
+      ],
+      "researchedAt": "2026-09-03",
+      "evidence": [
+        {
+          "source": "Whisker Litter-Robot 5 Pro",
+          "url": "https://www.whisker.com/litter-robot-5-pro",
+          "sourceType": "manufacturer",
+          "verifiedAt": "2026-09-03",
+          "assertion": "Hersteller nennt klumpende Tonstreu als beste Wahl und dokumentiert Einschränkungen für Kristall-, Pflanzen-, Papier- und Holzstreu."
+        }
+      ]
+    },
+    {
+      "product": "Neakasa M1 Plus Lite",
+      "slug": "neakasa-m1-lite",
+      "productUrl": "/produkt/neakasa-m1-lite/",
+      "status": "partial",
+      "compatibleTypes": [
+        "bentonite",
+        "mineral-clumping"
+      ],
+      "conditionalTypes": [],
+      "incompatibleTypes": [
+        "wood",
+        "pellets",
+        "paper",
+        "non-clumping"
+      ],
+      "clumpingRequirement": "required",
+      "grainSize": {
+        "maxLengthMm": 10,
+        "maxDiameterMm": 3,
+        "notes": "Partikel müssen das Filtersieb passieren."
+      },
+      "unknowns": [],
+      "notes": [
+        "Hersteller empfiehlt schnell klumpende körnige Bentonit- oder Mineralstreu."
+      ],
+      "researchedAt": "2026-09-03",
+      "evidence": [
+        {
+          "source": "Neakasa M1 Lite",
+          "url": "https://eu.neakasa.com/products/m1-lite-self-cleaning-cat-litter-box",
+          "sourceType": "manufacturer",
+          "verifiedAt": "2026-09-03",
+          "assertion": "Hersteller dokumentiert Klumpanforderung, ausgeschlossene Streuarten und maximal 3 mm Durchmesser beziehungsweise 10 mm Länge."
+        }
+      ]
+    },
+    {
+      "product": "Neakasa M1 Plus",
+      "slug": "neakasa-m1-plus",
+      "productUrl": "/produkt/neakasa-m1-plus/",
+      "status": "partial",
+      "compatibleTypes": [
+        "bentonite",
+        "mineral-clumping"
+      ],
+      "conditionalTypes": [],
+      "incompatibleTypes": [
+        "wood",
+        "pellets",
+        "paper",
+        "non-clumping"
+      ],
+      "clumpingRequirement": "required",
+      "grainSize": {
+        "maxLengthMm": 10,
+        "maxDiameterMm": 3,
+        "notes": "Partikel müssen das Filtersieb passieren."
+      },
+      "unknowns": [],
+      "notes": [
+        "Hersteller empfiehlt schnell klumpende körnige Bentonit- oder Mineralstreu."
+      ],
+      "researchedAt": "2026-09-03",
+      "evidence": [
+        {
+          "source": "Neakasa M1 Plus",
+          "url": "https://eu.neakasa.com/products/neakasa-m1-cat-litter-box",
+          "sourceType": "manufacturer",
+          "verifiedAt": "2026-09-03",
+          "assertion": "Hersteller dokumentiert Klumpanforderung, ausgeschlossene Streuarten und maximal 3 mm Durchmesser beziehungsweise 10 mm Länge."
+        }
+      ]
+    },
+    {
+      "product": "PETKIT PuraMax 2",
+      "slug": "petkit-puramax-2",
+      "productUrl": "/produkt/petkit-puramax-2/",
+      "status": "partial",
+      "compatibleTypes": [
+        "bentonite",
+        "mineral-clumping",
+        "tofu",
+        "mixed"
+      ],
+      "conditionalTypes": [],
+      "incompatibleTypes": [
+        "non-clumping"
+      ],
+      "clumpingRequirement": "required",
+      "grainSize": {
+        "maxLengthMm": 12,
+        "maxDiameterMm": 3
+      },
+      "unknowns": [],
+      "notes": [
+        "Klumpende Ton-, Tofu- und Mischstreu innerhalb der Partikelgrenze sind dokumentiert."
+      ],
+      "researchedAt": "2026-09-03",
+      "evidence": [
+        {
+          "source": "PETKIT PuraMax 2",
+          "url": "https://www.petkit.com/products/puramax-2-ultimate-bundles",
+          "sourceType": "manufacturer",
+          "verifiedAt": "2026-09-03",
+          "assertion": "Hersteller nennt klumpende Ton-, Tofu- und Mischstreu bis 12 mm Länge und 3 mm Durchmesser."
+        }
+      ]
+    },
+    {
+      "product": "PETKIT PUROBOT CRYSTAL DUO",
+      "slug": "petkit-purobot-crystal-duo",
+      "productUrl": "/produkt/petkit-purobot-crystal-duo/",
+      "status": "complete",
+      "compatibleTypes": [
+        "silica-crystal"
+      ],
+      "conditionalTypes": [],
+      "incompatibleTypes": [
+        "bentonite",
+        "mineral-clumping",
+        "tofu",
+        "plant-fiber",
+        "wood",
+        "pellets",
+        "paper",
+        "mixed"
+      ],
+      "clumpingRequirement": "proprietary-system",
+      "grainSize": null,
+      "unknowns": [],
+      "notes": [
+        "Nur das PETKIT Crystal Litter Set mit passender Einwegschale ist freigegeben; andere Marken und Streuarten sind ausgeschlossen."
+      ],
+      "researchedAt": "2026-09-03",
+      "evidence": [
+        {
+          "source": "PETKIT Purobot Crystal Duo",
+          "url": "https://www.petkit-eu.com/de/products/purobot-crystal-duo-with-hood",
+          "sourceType": "official-shop",
+          "verifiedAt": "2026-09-03",
+          "assertion": "Offizieller Shop verlangt das PETKIT Crystal Litter Set und schließt andere Marken oder Streuarten aus."
+        }
+      ]
+    },
+    {
+      "product": "PETKIT PUROBOT MAX 3",
+      "slug": "petkit-purobot-max-3",
+      "productUrl": "/produkt/petkit-purobot-max-3/",
+      "status": "partial",
+      "compatibleTypes": [
+        "bentonite",
+        "mineral-clumping",
+        "tofu",
+        "mixed"
+      ],
+      "conditionalTypes": [],
+      "incompatibleTypes": [
+        "non-clumping"
+      ],
+      "clumpingRequirement": "required",
+      "grainSize": {
+        "maxLengthMm": 12,
+        "maxDiameterMm": 3
+      },
+      "unknowns": [],
+      "notes": [
+        "Klumpende Ton-, Tofu- und Mischstreu innerhalb der Partikelgrenze sind dokumentiert."
+      ],
+      "researchedAt": "2026-09-03",
+      "evidence": [
+        {
+          "source": "PETKIT Purobot Max 3",
+          "url": "https://www.petkit.com/products/purobot-max-3-automatic-cat-litter-box",
+          "sourceType": "manufacturer",
+          "verifiedAt": "2026-09-03",
+          "assertion": "Hersteller nennt klumpende Ton-, Tofu- und Mischstreu bis 12 mm Länge und 3 mm Durchmesser."
+        }
+      ]
+    },
+    {
+      "product": "PETKIT PUROBOT MAX PRO 2",
+      "slug": "petkit-purobot-max-pro-2",
+      "productUrl": "/produkt/petkit-purobot-max-pro-2/",
+      "status": "partial",
+      "compatibleTypes": [
+        "bentonite",
+        "mineral-clumping",
+        "tofu",
+        "mixed"
+      ],
+      "conditionalTypes": [],
+      "incompatibleTypes": [
+        "non-clumping"
+      ],
+      "clumpingRequirement": "required",
+      "grainSize": {
+        "maxLengthMm": 12,
+        "maxDiameterMm": 3
+      },
+      "unknowns": [],
+      "notes": [
+        "Zwei Siebe sind für Tofu-/Mischstreu beziehungsweise feinere Bentonit-/Mineralstreu vorgesehen."
+      ],
+      "researchedAt": "2026-09-03",
+      "evidence": [
+        {
+          "source": "PETKIT Purobot Max Pro 2",
+          "url": "https://www.petkit-eu.com/en-de/products/purobot-max-pro-2-automatic-cat-litter-box",
+          "sourceType": "official-shop",
+          "verifiedAt": "2026-09-03",
+          "assertion": "Offizieller Shop dokumentiert zwei Siebe für klumpende Tofu-, Misch-, Bentonit-, Mineral- und Tonstreu sowie die 12-mm-Grenze."
+        }
+      ]
+    },
+    {
+      "product": "PETLIBRO Luma Smart Self-Cleaning Litter Box",
+      "slug": "petlibro-luma-smart-litter-box",
+      "productUrl": "/produkt/petlibro-luma-smart-litter-box/",
+      "status": "partial",
+      "compatibleTypes": [
+        "mineral-clumping",
+        "tofu",
+        "mixed"
+      ],
+      "conditionalTypes": [
+        "plant-fiber"
+      ],
+      "incompatibleTypes": [
+        "silica-crystal",
+        "wood",
+        "non-clumping"
+      ],
+      "clumpingRequirement": "required",
+      "grainSize": null,
+      "unknowns": [],
+      "notes": [
+        "Ultrafeine Gras- und Maniokstreu sowie nicht klumpende Kristall- und Kiefernstreu sind ausgeschlossen."
+      ],
+      "researchedAt": "2026-09-03",
+      "evidence": [
+        {
+          "source": "PETLIBRO Luma Deutschland",
+          "url": "https://de.petlibro.com/products/luma-intelligente-selbstreinigende-katzentoilette-exclusive",
+          "sourceType": "manufacturer",
+          "verifiedAt": "2026-09-03",
+          "assertion": "Hersteller nennt klumpende, Tofu- und Mischstreu und schließt nicht klumpende Kristall-/Kiefernstreu sowie ultrafeine Gras-/Maniokstreu aus."
+        }
+      ]
+    },
+    {
+      "product": "PetSnowy SNOW+ (SNOW)",
+      "slug": "petsnowy-snow-plus",
+      "productUrl": "/produkt/petsnowy-snow-plus/",
+      "status": "partial",
+      "compatibleTypes": [
+        "bentonite",
+        "mineral-clumping"
+      ],
+      "conditionalTypes": [
+        "silica-crystal",
+        "tofu",
+        "plant-fiber"
+      ],
+      "incompatibleTypes": [
+        "wood",
+        "pellets",
+        "paper",
+        "non-clumping"
+      ],
+      "clumpingRequirement": "required",
+      "grainSize": null,
+      "unknowns": [],
+      "notes": [
+        "Standardgewichtige klumpende Tonstreu wird empfohlen; Kristall-, Tofu- und Pflanzenstreu funktionieren nur unter den Herstellerbedingungen."
+      ],
+      "researchedAt": "2026-09-03",
+      "evidence": [
+        {
+          "source": "PetSnowy Support",
+          "url": "https://shop.petsnowy.com/pages/support",
+          "sourceType": "support",
+          "verifiedAt": "2026-09-03",
+          "assertion": "Herstellersupport dokumentiert geeignete, bedingt geeignete und ungeeignete Streuarten für SNOW+."
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "passed": true,
+    "errors": []
+  },
+  "publicationGate": {
+    "status": "ready",
+    "threshold": 80,
+    "coverage": 90.9,
+    "evidenceTraceable": true,
+    "reasons": []
+  },
+  "finding": {
+    "type": "automatic-litter-box-clumping-requirement",
+    "numerator": 9,
+    "denominator": 10,
+    "statement": "9 von 10 belastbar ausgewerteten automatischen Katzentoiletten verlangen klumpende Streu; proprietäre Kristallsysteme werden separat gezählt."
+  }
+}

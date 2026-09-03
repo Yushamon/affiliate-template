@@ -30,8 +30,8 @@ subscription:
   serviceType: unknown
   serviceModel: unknown
   provider: Enabot
-  researchedAt: "2026-09-02"
-  source: "https://de.store.enabot.com/products/ebo-air-2"
+  researchedAt: "2026-09-03"
+  source: "https://de.store.enabot.com/products/ebo-air-2-familybot"
   additionalCostNote: "Für dieses exakte Modell ist kein belastbarer Deutschlandtarif dokumentiert; Cloud-/Serviceumfang vor dem Kauf prüfen."
   plans: []
 price:

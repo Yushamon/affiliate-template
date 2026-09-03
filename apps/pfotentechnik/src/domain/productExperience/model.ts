@@ -8,6 +8,7 @@ import { buildDecisionFacts } from "./consequences";
 import { deriveProductOperations, isAutoRecommendationEligible } from "../../lib/product-operations/policy.mjs";
 import { resolveProductHeroMedia, resolveProductMedia } from "../mediaResolver.mjs";
 import { buildSubscriptionCostModel } from "../subscriptionCosts.ts";
+import { buildLitterCompatibilityModel } from "../litterCompatibility.ts";
 
 const list = <T>(value: T[] | undefined | null): T[] => Array.isArray(value) ? value : [];
 const text = (value: unknown, fallback = ""): string => {
@@ -573,9 +574,13 @@ export const buildProductExperienceModel = ({
     ].filter(Boolean)
   };
 
-  const decisionFacts = buildDecisionFacts(data, list<any>(data.specs)
+  const baseDecisionFacts = buildDecisionFacts(data, list<any>(data.specs)
     .map((item) => ({ label: text(item?.label), value: text(item?.value) }))
     .filter((item) => item.label && item.value));
+  const litterCompatibility = buildLitterCompatibilityModel(data.litterCompatibility);
+  const decisionFacts = litterCompatibility
+    ? [...baseDecisionFacts.slice(0, 5), litterCompatibility.decisionFact]
+    : baseDecisionFacts;
 
   const purchaseMistakes = list<any>(data.purchaseMistakes)
     .map((item) => {
@@ -695,6 +700,7 @@ export const buildProductExperienceModel = ({
     operations,
     price,
     subscriptionCosts,
+    litterCompatibility,
     affiliate: {
       url: text(reviewProduct.affiliate?.url ?? price?.affiliateUrl ?? data.affiliate?.url),
       label: price?.formattedCurrent

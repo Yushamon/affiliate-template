@@ -1,0 +1,62 @@
+{
+  "workPackage": "34.7",
+  "reviewedAt": "2026-09-03",
+  "productsReviewed": 27,
+  "priceSample": {
+    "products": 13,
+    "productsWithConcretePrices": 16,
+    "providerSystems": ["Tractive", "Weenect", "Pawfit", "Prothelis", "Furbo", "PETLIBRO", "PetTec"],
+    "incorrectPriceValuesCorrected": 0,
+    "missingCurrentPlanRowsAdded": 9,
+    "serviceModelsCorrected": 0
+  },
+  "unknown": {
+    "product": "Enabot EBO Air 2",
+    "status": "unknown",
+    "sources": [
+      "https://de.store.enabot.com/products/ebo-air-2-familybot",
+      "https://de.store.enabot.com/pages/support-ebo-air-2"
+    ],
+    "reason": "Die offiziellen Seiten belegen für das exakte EBO-Air-2-Modell weder ein Abo-/Cloud-Modell noch einen Deutschlandtarif; Aussagen benachbarter Modelle werden nicht übertragen."
+  },
+  "publicationGate": {
+    "before": "needs-review",
+    "after": "ready",
+    "technicalReasonBefore": "Der Snapshot-Builder setzte jeden validen Snapshot unabhängig von Coverage und Confidence hart auf needs-review.",
+    "technicalReasonsAfter": [],
+    "domainReasonsAfter": [],
+    "criteria": {
+      "validation": "pass",
+      "confidence": "high",
+      "eligible": "12/12",
+      "evidenceCoveragePercent": 100,
+      "unknownStatuses": 0,
+      "unknownServiceModels": 0
+    }
+  },
+  "gpsAssetStatus": "ready",
+  "freezeStatus": "ready",
+  "spotterCatX": {
+    "status": "research-candidate",
+    "germanyAvailable": true,
+    "network": "4G cellular GPS",
+    "serviceModel": "required-prepaid",
+    "periodsMonths": [3, 6, 12, 24],
+    "monthlyEquivalentEur": [7, 6.5, 5, 4.5],
+    "upfrontEur": [21, 39, 60, 108],
+    "autoRenew": false,
+    "source": "https://www.spottergps.com/de/product/spotter-catx/"
+  },
+  "validation": {
+    "tests": "725/725 pass",
+    "productAuditErrors": 0,
+    "comparisonData": "pass",
+    "technicalSeo": "pass",
+    "internalLinkTargets": "368 pages, 0 errors, 0 warnings",
+    "schema": "pass",
+    "build": "pass",
+    "responsive": "30/30",
+    "contrast": "38/38",
+    "performance": "strict pass"
+  }
+}

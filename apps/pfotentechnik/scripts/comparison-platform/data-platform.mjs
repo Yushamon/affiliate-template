@@ -248,6 +248,17 @@ const knownValue = (product, item, normalized) => {
     case "ortung": return gps ? "GPS-Ortung" : undefined;
     case "uebertragung": return gps?.transmission;
     case "abo": return typeof gps?.subscriptionRequired === "boolean" ? (gps.subscriptionRequired ? "Abo erforderlich" : "Kein Mobilfunkabo erforderlich") : undefined;
+    case "streu": {
+      const litter = product?.litterCompatibility;
+      if (!litter) return undefined;
+      if (litter.status === "unknown") return "Kompatibilität nicht ausreichend dokumentiert";
+      const typeLabels = { bentonite: "Bentonitstreu", "mineral-clumping": "klumpende Mineralstreu", tofu: "Tofu-Streu", "plant-fiber": "Pflanzenfaserstreu", "silica-crystal": "Kristallstreu", wood: "Holzstreu", pellets: "Pellets", paper: "Papierstreu", "non-clumping": "nicht klumpende Streu", mixed: "Mischstreu" };
+      const label = (values = []) => values.map((value) => typeLabels[value] ?? value).join(", ");
+      const suitable = label(litter.compatibleTypes);
+      const conditional = label(litter.conditionalTypes);
+      const unsuitable = label(litter.incompatibleTypes);
+      return `${suitable || "Keine allgemeine Freigabe"}${conditional ? `; bedingt: ${conditional}` : ""}${unsuitable ? `; nicht: ${unsuitable}` : ""}`;
+    }
     case "akkulaufzeit": return gps?.batteryMaxDays ? `Bis zu ${gps.batteryMaxDays} Tage` : undefined;
     case "gewicht": {
       const grams = gps?.deviceWeightGrams ?? gps?.totalWeightGrams;
@@ -270,6 +281,11 @@ export function resolveComparisonValue({ product, item = {}, criterion }) {
     const canonicalValue = isScoreCriterion ? calculated.score : calculated.rating;
     const formatted = formatValue(canonicalValue ?? undefined, criterion);
     if (formatted !== undefined) return formatted;
+  }
+
+  if (product && (normalized === "abo" || normalized === "streu")) {
+    const canonical = formatValue(knownValue(product, item, normalized), criterion);
+    if (canonical !== undefined) return canonical;
   }
 
   for (const record of [item.overrides, item.values]) {

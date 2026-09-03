@@ -1,14 +1,14 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-09-02T11:44:03.982Z
+Erstellt: 2026-09-03T08:12:23.873Z
 
 ## Ergebnis
 
-- Dokumente: 243
-- Linkdefinitionen: 514
-- Simulierte automatische Links: 564
+- Dokumente: 244
+- Linkdefinitionen: 516
+- Simulierte automatische Links: 566
 - Fehler: 0
-- Warnungen: 8
+- Warnungen: 7
 - Strict-kritisch: 0
 
 ## Befunde
@@ -17,7 +17,6 @@ Erstellt: 2026-09-02T11:44:03.982Z
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /hund-trinkt-ploetzlich-viel/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /katze-an-trinkbrunnen-gewoehnen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
-- **WARNING NO_INCOMING_INTERNAL_LINK:** /katzentrinkbrunnen-ohne-filter/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /seniorenhunde-richtig-versorgen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /trinkbrunnen-fuer-kitten-sicher/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /wie-kann-technik-gegen-langeweile-helfen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
@@ -85,6 +84,8 @@ Erstellt: 2026-09-02T11:44:03.982Z
 - /futtermenge-hund/ → /futterautomat-hund/: „Futterautomaten für Hunde“
 - /futtermenge-katze/ → /smarte-futterautomaten/: „Futterautomaten“
 - /futtermenge-katze/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
+- /glossar/ → /smarte-futterautomaten/: „Futterautomaten“
+- /glossar/ → /warum-katzen-fliessendes-wasser-trinken/: „Fließendes Wasser“
 - /gps-oder-bluetooth/ → /hersteller/weenect/: „Weenect“
 - /gps-tracker-richtig-befestigen/ → /produkt/tractive-cat-6-mini/: „Tractive CAT 6 Mini“
 - /gps-tracker-richtig-befestigen/ → /hersteller/weenect/: „Weenect“
