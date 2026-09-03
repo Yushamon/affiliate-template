@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-02T06:40:41.818Z",
+  "generatedAt": "2026-09-03T06:55:49.416Z",
   "taxonomyVersion": 3,
   "nodes": [
     {
@@ -2856,6 +2856,45 @@
       "priority": 53,
       "cornerstone": false,
       "sourceFile": "src/content/pages/futtermenge-katze.md"
+    },
+    {
+      "id": "page:glossar",
+      "collection": "pages",
+      "slug": "glossar",
+      "route": "/glossar/",
+      "title": "Glossar für smarte Haustiertechnik",
+      "description": "Acht häufig verwendete Begriffe aus GPS-Ortung, Mikrochip-Zugang, Trinkbrunnen und automatischer Fütterung verständlich und praxisnah erklärt.",
+      "type": "page",
+      "cluster": "haustiertechnik",
+      "topics": [
+        "glossar",
+        "gps",
+        "rfid",
+        "trinkbrunnen",
+        "futterautomaten",
+        "wissen",
+        "gps tracker",
+        "haustiertechnik",
+        "katzen",
+        "katzenklappen"
+      ],
+      "tags": [
+        "glossar",
+        "gps",
+        "rfid",
+        "trinkbrunnen",
+        "futterautomaten"
+      ],
+      "sections": [
+        "wissen"
+      ],
+      "aliases": [
+        "Glossar Haustiertechnik",
+        "Begriffe smarte Haustiertechnik"
+      ],
+      "priority": 390,
+      "cornerstone": false,
+      "sourceFile": "src/content/pages/glossar.md"
     },
     {
       "id": "page:gps-oder-bluetooth",
@@ -10490,6 +10529,14 @@
     },
     {
       "source": "comparison:beste-automatische-katzentoiletten",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-automatische-katzentoiletten",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -12387,6 +12434,14 @@
     {
       "source": "comparison:beste-futterautomaten-fuer-berufstaetige",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-berufstaetige",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -15179,6 +15234,14 @@
     {
       "source": "comparison:beste-futterautomaten-fuer-hunde",
       "target": "manufacturer:xiaomi",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-hunde",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -16202,6 +16265,14 @@
     },
     {
       "source": "comparison:beste-futterautomaten-fuer-katzen",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-katzen",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -18130,6 +18201,14 @@
     },
     {
       "source": "comparison:beste-futterautomaten-fuer-kleine-hunde",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-kleine-hunde",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -20786,6 +20865,14 @@
     },
     {
       "source": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
       "target": "page:kalk-katzentrinkbrunnen-entfernen",
       "type": "semantic",
       "score": 88,
@@ -21899,6 +21986,14 @@
     {
       "source": "comparison:beste-futterautomaten-fuer-nassfutter",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-nassfutter",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -23819,6 +23914,14 @@
     {
       "source": "comparison:beste-futterautomaten-fuer-seniorenkatzen",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-seniorenkatzen",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -25754,6 +25857,14 @@
     },
     {
       "source": "comparison:beste-futterautomaten-fuer-welpen",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-welpen",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -27707,6 +27818,14 @@
     {
       "source": "comparison:beste-futterautomaten-fuer-zwei-katzen",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-zwei-katzen",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -29658,6 +29777,14 @@
     },
     {
       "source": "comparison:beste-futterautomaten-mit-akku",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-mit-akku",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 66,
@@ -32274,6 +32401,14 @@
     },
     {
       "source": "comparison:beste-futterautomaten-mit-edelstahl-napf",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-mit-edelstahl-napf",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 88,
@@ -34034,6 +34169,14 @@
     },
     {
       "source": "comparison:beste-futterautomaten-mit-kamera",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-mit-kamera",
       "target": "page:hund-entlaufen-gps-sinnvoll",
       "type": "semantic",
       "score": 44,
@@ -35139,6 +35282,14 @@
     {
       "source": "comparison:beste-futterautomaten-ohne-wlan",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-ohne-wlan",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 44,
       "explicit": false,
@@ -36923,6 +37074,14 @@
     {
       "source": "comparison:beste-futterautomaten-unter-100-euro",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-unter-100-euro",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -38859,6 +39018,14 @@
     {
       "source": "comparison:beste-gps-tracker-fuer-hunde",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-gps-tracker-fuer-hunde",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -40794,6 +40961,14 @@
     },
     {
       "source": "comparison:beste-gps-tracker-fuer-katzen",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-gps-tracker-fuer-katzen",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -42707,6 +42882,14 @@
     {
       "source": "comparison:beste-haustierkameras",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-haustierkameras",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -44586,6 +44769,14 @@
     },
     {
       "source": "comparison:beste-mikrochip-katzenklappen",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-mikrochip-katzenklappen",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -46546,6 +46737,14 @@
     },
     {
       "source": "comparison:beste-trinkbrunnen-fuer-hunde",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-trinkbrunnen-fuer-hunde",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -48474,6 +48673,14 @@
     },
     {
       "source": "comparison:beste-trinkbrunnen-fuer-katzen",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-trinkbrunnen-fuer-katzen",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -50371,6 +50578,14 @@
     {
       "source": "comparison:futterautomat-fuer-grosse-hunde",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:futterautomat-fuer-grosse-hunde",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -52306,6 +52521,14 @@
     },
     {
       "source": "comparison:futterautomat-gegen-schlingen",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:futterautomat-gegen-schlingen",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -54891,6 +55114,14 @@
     {
       "source": "comparison:futterautomat-mit-app",
       "target": "page:filter-im-katzentrinkbrunnen-wechseln",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:futterautomat-mit-app",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -56131,6 +56362,14 @@
     {
       "source": "comparison:gps-tracker-mit-langer-akkulaufzeit",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:gps-tracker-mit-langer-akkulaufzeit",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -58067,6 +58306,14 @@
     {
       "source": "comparison:gps-tracker-ohne-abo",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:gps-tracker-ohne-abo",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -60602,6 +60849,14 @@
     },
     {
       "source": "comparison:katzenklappen-mit-app-und-beuteerkennung",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:katzenklappen-mit-app-und-beuteerkennung",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 88,
@@ -61835,6 +62090,14 @@
     {
       "source": "comparison:kleine-gps-tracker-fuer-katzen",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:kleine-gps-tracker-fuer-katzen",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -63763,6 +64026,14 @@
     {
       "source": "manufacturer:aqara",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:aqara",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -65786,6 +66057,14 @@
     },
     {
       "source": "manufacturer:cat-mate",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:cat-mate",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -67739,6 +68018,14 @@
     {
       "source": "manufacturer:catit",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:catit",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -69658,6 +69945,14 @@
     },
     {
       "source": "manufacturer:devoko",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:devoko",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -71618,6 +71913,14 @@
     },
     {
       "source": "manufacturer:enabot",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:enabot",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -73571,6 +73874,14 @@
     {
       "source": "manufacturer:furbo",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:furbo",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -75658,6 +75969,14 @@
     },
     {
       "source": "manufacturer:garmin",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:garmin",
       "target": "page:gps-tracker-richtig-befestigen",
       "type": "semantic",
       "score": 44,
@@ -77107,6 +77426,14 @@
     {
       "source": "manufacturer:honeyguardian",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:honeyguardian",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -79051,6 +79378,14 @@
     {
       "source": "manufacturer:imipaw",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:imipaw",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -81699,6 +82034,14 @@
     {
       "source": "manufacturer:invoxia",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:invoxia",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -82914,6 +83257,14 @@
     },
     {
       "source": "manufacturer:neakasa",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:neakasa",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -84938,6 +85289,14 @@
     },
     {
       "source": "manufacturer:oneisall",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:oneisall",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -86835,6 +87194,14 @@
     {
       "source": "manufacturer:onlycat",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:onlycat",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -88786,6 +89153,14 @@
     },
     {
       "source": "manufacturer:paj-gps",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:paj-gps",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -90731,6 +91106,14 @@
     {
       "source": "manufacturer:pawbby",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:pawbby",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -93379,6 +93762,14 @@
     {
       "source": "manufacturer:pawfit",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:pawfit",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -94586,6 +94977,14 @@
     },
     {
       "source": "manufacturer:pawsync",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:pawsync",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -96650,6 +97049,14 @@
     },
     {
       "source": "manufacturer:petkit",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petkit",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -98738,6 +99145,14 @@
     },
     {
       "source": "manufacturer:petlibro",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petlibro",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -100715,6 +101130,14 @@
     {
       "source": "manufacturer:petsafe",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petsafe",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -104090,6 +104513,14 @@
     },
     {
       "source": "manufacturer:petwalk",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:petwalk",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -106739,6 +107170,14 @@
     {
       "source": "manufacturer:prothelis",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:prothelis",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -109186,6 +109625,14 @@
     },
     {
       "source": "manufacturer:surefeed",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:surefeed",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -111163,6 +111610,14 @@
     {
       "source": "manufacturer:tractive",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:tractive",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -113090,6 +113545,14 @@
     },
     {
       "source": "manufacturer:weenect",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:weenect",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -115035,6 +115498,14 @@
     {
       "source": "manufacturer:whisker",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:whisker",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -117050,6 +117521,14 @@
     },
     {
       "source": "manufacturer:wopet",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:wopet",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -118963,6 +119442,14 @@
     {
       "source": "manufacturer:xiaomi",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:xiaomi",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -121459,6 +121946,14 @@
     {
       "source": "manufacturer:zeromouse",
       "target": "page:futterautomat-bei-uebergewicht",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:zeromouse",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -122834,6 +123329,14 @@
     },
     {
       "source": "page:automatische-katzentoiletten",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:automatische-katzentoiletten",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -124698,6 +125201,14 @@
     },
     {
       "source": "page:biofilm-im-katzentrinkbrunnen",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:biofilm-im-katzentrinkbrunnen",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -126539,6 +127050,14 @@
     {
       "source": "page:datenschutz-bei-gps-trackern",
       "target": "page:futterautomat-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:datenschutz-bei-gps-trackern",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -128522,6 +129041,14 @@
     },
     {
       "source": "page:filter-im-katzentrinkbrunnen-wechseln",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:filter-im-katzentrinkbrunnen-wechseln",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -130450,6 +130977,14 @@
     },
     {
       "source": "page:fuetterungszeiten-nach-alter",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:fuetterungszeiten-nach-alter",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -132323,6 +132858,14 @@
     {
       "source": "page:futterautomat-bei-stromausfall",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:futterautomat-bei-stromausfall",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -134290,6 +134833,14 @@
     },
     {
       "source": "page:futterautomat-bei-uebergewicht",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:futterautomat-bei-uebergewicht",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -136187,6 +136738,14 @@
     {
       "source": "page:futterautomat-hund",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:futterautomat-hund",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -138066,6 +138625,14 @@
     },
     {
       "source": "page:futterautomat-im-urlaub",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:futterautomat-im-urlaub",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -140018,6 +140585,14 @@
     },
     {
       "source": "page:futterautomat-katze",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:futterautomat-katze",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -141875,6 +142450,14 @@
     {
       "source": "page:futterautomat-richtig-reinigen",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:futterautomat-richtig-reinigen",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -143611,6 +144194,14 @@
     {
       "source": "page:futterautomat-und-ernaehrung",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:futterautomat-und-ernaehrung",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -146547,6 +147138,14 @@
     {
       "source": "page:futtermenge-hund",
       "target": "manufacturer:xiaomi",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:futtermenge-hund",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -147498,6 +148097,14 @@
     },
     {
       "source": "page:futtermenge-katze",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:futtermenge-katze",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -148937,6 +149544,1910 @@
       "automatic": true
     },
     {
+      "source": "page:glossar",
+      "target": "comparison:beste-automatische-katzentoiletten",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:beste-futterautomaten-fuer-berufstaetige",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:beste-futterautomaten-fuer-katzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:beste-futterautomaten-fuer-kleine-hunde",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:beste-futterautomaten-fuer-nassfutter",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:beste-futterautomaten-fuer-seniorenkatzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:beste-futterautomaten-fuer-welpen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:beste-futterautomaten-unter-100-euro",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:beste-gps-tracker-fuer-hunde",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:beste-gps-tracker-fuer-katzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:beste-haustierkameras",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:beste-mikrochip-katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:beste-trinkbrunnen-fuer-hunde",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:beste-trinkbrunnen-fuer-katzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:futterautomat-fuer-grosse-hunde",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:futterautomat-gegen-schlingen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:gps-tracker-mit-langer-akkulaufzeit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:gps-tracker-ohne-abo",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:kleine-gps-tracker-fuer-katzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:aqara",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:cat-mate",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:catit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:devoko",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:enabot",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:furbo",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:honeyguardian",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:imipaw",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:neakasa",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:oneisall",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:onlycat",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:paj-gps",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:pawbby",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:pawsync",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:petkit",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:petlibro",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:petsafe",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:petwalk",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:surefeed",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:tractive",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:weenect",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:whisker",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:wopet",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:xiaomi",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:automatische-katzentoiletten",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:biofilm-im-katzentrinkbrunnen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:datenschutz-bei-gps-trackern",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:filter-im-katzentrinkbrunnen-wechseln",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:fuetterungszeiten-nach-alter",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:futterautomat-bei-stromausfall",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:futterautomat-bei-uebergewicht",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:futterautomat-hund",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:futterautomat-im-urlaub",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:futterautomat-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:futterautomat-richtig-reinigen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:futterautomat-und-ernaehrung",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:gps-oder-bluetooth",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:gps-tracker",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:gps-tracker-richtig-befestigen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:haustierkameras",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:hund-entlaufen-gps-sinnvoll",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:hund-frisst-nicht",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:hund-frisst-zu-schnell",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:hund-hat-durchfall",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:hund-ist-muede",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:hund-trinkt-ploetzlich-viel",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:hund-trinkt-viel",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:hund-trinkt-zu-wenig",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:kalk-katzentrinkbrunnen-entfernen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:katze-an-katzenklappe-gewoehnen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:katze-an-trinkbrunnen-gewoehnen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:katze-entlaufen-gps-sinnvoll",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:katze-frisst-nicht",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:katze-trinkt-viel",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:katzenklappe-fuer-mehrere-katzen",
+      "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:katzentrinkbrunnen-laut-pumpe",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:katzentrinkbrunnen-material-edelstahl-keramik-kunststoff",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:katzentrinkbrunnen-ohne-filter",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:katzentrinkbrunnen-richtig-reinigen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:katzenwasser-taeglich-wechseln",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:nierenkranke-katze-trinken",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:pumpe-katzentrinkbrunnen-reinigen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:seniorenhunde-richtig-versorgen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:smarte-futterautomaten",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:smarte-gadgets-fuer-hunde-und-katzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:smarte-haustiertechnik",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:so-bewerten-wir",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:trinkbrunnen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:trinkbrunnen-fuer-katzen-sinnvoll",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:trinkbrunnen-fuer-kitten-sicher",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:trinkbrunnen-fuer-mehrere-katzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:trinkbrunnen-hund",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:trinkbrunnen-seniorenkatzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:trinkmenge-hund-messen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:trinkmenge-katze-messen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:trockenfutter-oder-nassfutter-hund",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:trockenfutter-oder-nassfutter-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:uebergewicht-bei-katzen-vermeiden",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:warum-brauchen-gps-tracker-ein-abo",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:warum-hunde-feste-fuetterungszeiten-brauchen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:warum-katzen-fliessendes-wasser-trinken",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:warum-schlingt-mein-hund",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:wasserstelle-katze-richtiger-standort",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:welche-portionsgroesse-ist-richtig",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:welcher-futterautomat-ist-der-richtige",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:welpen-richtig-fuettern",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:wie-funktionieren-gps-tracker",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:wie-funktioniert-ein-futterautomat",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:wie-kann-technik-gegen-langeweile-helfen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:wie-lange-bleibt-trockenfutter-frisch",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:wie-laut-sind-automatische-futterautomaten",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:wie-viel-wasser-braucht-eine-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:wie-viele-mahlzeiten-hund",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:wie-viele-mahlzeiten-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:wie-viele-wasserstellen-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:cat-mate-335-pet-fountain",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:cat-mate-c200",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:cat-mate-c300",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:cat-mate-c500",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:cat-mate-elite-355w",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:cat-mate-shell-fountain",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:catit-pixi-smart-6-meal-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:catit-pixi-smart-trinkbrunnen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:catit-pixi-vision-smart-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:devoko-90l-automatisches-katzenklo",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:enabot-ebo-air-2",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:enabot-rola-mini",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:enabot-rola-pettracker",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:feelneedy-fn-w18-8l-katzenbrunnen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:furbo-360-hundekamera",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:furbo-360-katzenkamera",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:furbo-mini-360",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:honeyguardian-a305d",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:honeyguardian-a68",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:honeyguardian-smart-pet-feeder-s305d",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:imipaw-3l-automatic-cat-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:litter-robot-4",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:litter-robot-5-pro",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:neakasa-m1-lite",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:neakasa-m1-plus",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:oneisall-2-2l-cordless-fountain",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:oneisall-2-in-1-feeder-water",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:oneisall-3-2l-cordless-fountain",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:oneisall-5l-automatic-cat-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:oneisall-7l-dog-water-fountain",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:paj-pet-finder-4g-mini",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:pawbby-smart-pet-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:pawsync-smart-pet-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petkit-eversweet-3-pro-uvc",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petkit-eversweet-5-mini",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petkit-eversweet-max-2-uvc",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petkit-eversweet-max-cordless",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petkit-eversweet-solo-2-fountain",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petkit-eversweet-solo-se",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petkit-eversweet-ultra",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petkit-fresh-element-infinity",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petkit-fresh-element-solo",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petkit-puramax-2",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petkit-purobot-max-3",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petkit-purobot-max-pro-2",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petkit-yumshare-dual-hopper",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petkit-yumshare-solo-2",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petlibro-air-automatic-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petlibro-air-wifi-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petlibro-dockstream-2-smart",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petlibro-dockstream-2-smart-cordless",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petlibro-dockstream-cordless",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petlibro-dockstream-rfid-smart",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petlibro-glacier-ultrafiltration",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petlibro-granary-2-vision",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petlibro-granary-camera-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petlibro-granary-dual-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petlibro-granary-wifi-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petlibro-luma-smart-litter-box",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petlibro-one-rfid-smart-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petlibro-polar-wet-food-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petlibro-scout-smart-camera",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petlibro-space-smart-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petlibro-stainless-steel-fountain",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petsafe-freshfeed-refrigerated-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petsafe-healthy-pet-simply-feed",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petsafe-mikrochip-katzenklappe",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petsafe-smart-feed-2",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petsafe-streamside-trinkbrunnen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petsnowy-snow-plus",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:surefeed-microchip-pet-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:surefeed-microchip-pet-feeder-connect",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:tractive-dog-6",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:weenect-xs",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:wopet-cube-air-ca10",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:wopet-heritage-view-camera-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:wopet-patrol-f07-pro",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:wopet-pioneer-f01-plus",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:xiaomi-smart-pet-food-feeder-2",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:xiaomi-smart-pet-fountain-2",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:zeromouse-2-0",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:beste-futterautomaten-fuer-hunde",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:beste-futterautomaten-fuer-zwei-katzen",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:beste-futterautomaten-mit-edelstahl-napf",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:futterautomat-mit-app",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:katzenklappen-mit-app-und-beuteerkennung",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:invoxia",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:pawfit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:prothelis",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:zeromouse",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:futtermenge-hund",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:aqara-smart-pet-feeder-c1",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:garmin-alpha-t-20",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:garmin-alpha-tt-25",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:invoxia-biotracker-2026",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:onlycat-mikrochip-katzenklappe",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:pawfit-3",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petsafe-petporte-smart-flap",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petwalk-medium-tiertuer",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:prothelis-area-pets",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:sureflap-dualscan-mikrochip-katzenklappe",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:sureflap-mikrochip-katzenklappe",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:sureflap-mikrochip-katzenklappe-connect",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:tractive-cat-6-mini",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:tractive-dog-6-xl",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:weenect-xt",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:reichweite-von-gps-trackern",
+      "type": "semantic",
+      "score": 82,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:wie-genau-sind-gps-tracker",
+      "type": "semantic",
+      "score": 82,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:oneisall-3-5l-cordless-fountain",
+      "type": "semantic",
+      "score": 82,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petlibro-capsule-dog-fountain",
+      "type": "semantic",
+      "score": 82,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:beste-futterautomaten-mit-akku",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:katzenklappe-einbauen",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "page:katzenklappe-zugluft-und-waermedaemmung",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "product:petkit-purobot-crystal-duo",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:beste-futterautomaten-mit-kamera",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "comparison:beste-futterautomaten-ohne-wlan",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:glossar",
+      "target": "manufacturer:garmin",
+      "type": "semantic",
+      "score": 44,
+      "explicit": false,
+      "automatic": true
+    },
+    {
       "source": "page:gps-oder-bluetooth",
       "target": "comparison:beste-automatische-katzentoiletten",
       "type": "semantic",
@@ -149411,6 +151922,14 @@
     {
       "source": "page:gps-oder-bluetooth",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:gps-oder-bluetooth",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -151387,6 +153906,14 @@
     {
       "source": "page:gps-tracker",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:gps-tracker",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -153162,6 +155689,14 @@
     },
     {
       "source": "page:gps-tracker-richtig-befestigen",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:gps-tracker-richtig-befestigen",
       "target": "page:gps-oder-bluetooth",
       "type": "cluster",
       "score": 100,
@@ -155195,6 +157730,14 @@
     {
       "source": "page:haustierkameras",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:haustierkameras",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -157082,6 +159625,14 @@
     },
     {
       "source": "page:hund-entlaufen-gps-sinnvoll",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-entlaufen-gps-sinnvoll",
       "target": "page:gps-oder-bluetooth",
       "type": "cluster",
       "score": 100,
@@ -158994,6 +161545,14 @@
     },
     {
       "source": "page:hund-frisst-nicht",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-frisst-nicht",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -160859,6 +163418,14 @@
     {
       "source": "page:hund-frisst-zu-schnell",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-frisst-zu-schnell",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -162778,6 +165345,14 @@
     },
     {
       "source": "page:hund-hat-durchfall",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-hat-durchfall",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -164674,6 +167249,14 @@
     },
     {
       "source": "page:hund-ist-muede",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-ist-muede",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -166547,6 +169130,14 @@
     {
       "source": "page:hund-trinkt-ploetzlich-viel",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-trinkt-ploetzlich-viel",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -168450,6 +171041,14 @@
     },
     {
       "source": "page:hund-trinkt-viel",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-trinkt-viel",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -170363,6 +172962,14 @@
     {
       "source": "page:hund-trinkt-zu-wenig",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-trinkt-zu-wenig",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -172234,6 +174841,14 @@
     },
     {
       "source": "page:kalk-katzentrinkbrunnen-entfernen",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:kalk-katzentrinkbrunnen-entfernen",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -174083,6 +176698,14 @@
     {
       "source": "page:katze-an-katzenklappe-gewoehnen",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katze-an-katzenklappe-gewoehnen",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -175947,6 +178570,14 @@
     {
       "source": "page:katze-an-trinkbrunnen-gewoehnen",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katze-an-trinkbrunnen-gewoehnen",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -177938,6 +180569,14 @@
     },
     {
       "source": "page:katze-entlaufen-gps-sinnvoll",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katze-entlaufen-gps-sinnvoll",
       "target": "page:gps-oder-bluetooth",
       "type": "cluster",
       "score": 100,
@@ -179818,6 +182457,14 @@
     },
     {
       "source": "page:katze-frisst-nicht",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katze-frisst-nicht",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -181659,6 +184306,14 @@
     {
       "source": "page:katze-trinkt-viel",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katze-trinkt-viel",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -183954,6 +186609,14 @@
     },
     {
       "source": "page:katzenklappe-einbauen",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappe-einbauen",
       "target": "page:hund-frisst-nicht",
       "type": "semantic",
       "score": 66,
@@ -184892,6 +187555,14 @@
       "source": "page:katzenklappe-fuer-mehrere-katzen",
       "target": "page:automatische-katzentoiletten",
       "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappe-fuer-mehrere-katzen",
+      "target": "page:glossar",
+      "type": "cluster",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -187202,6 +189873,14 @@
     },
     {
       "source": "page:katzenklappe-zugluft-und-waermedaemmung",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappe-zugluft-und-waermedaemmung",
       "target": "page:gps-tracker",
       "type": "semantic",
       "score": 66,
@@ -188891,6 +191570,14 @@
     {
       "source": "page:katzenklappen",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -190802,6 +193489,14 @@
     },
     {
       "source": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -192635,6 +195330,14 @@
     {
       "source": "page:katzentrinkbrunnen-laut-pumpe",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzentrinkbrunnen-laut-pumpe",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -194659,6 +197362,14 @@
     {
       "source": "page:katzentrinkbrunnen-material-edelstahl-keramik-kunststoff",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzentrinkbrunnen-material-edelstahl-keramik-kunststoff",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -196594,6 +199305,14 @@
     },
     {
       "source": "page:katzentrinkbrunnen-ohne-filter",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzentrinkbrunnen-ohne-filter",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -198458,6 +201177,14 @@
     },
     {
       "source": "page:katzentrinkbrunnen-richtig-reinigen",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzentrinkbrunnen-richtig-reinigen",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -200354,6 +203081,14 @@
     },
     {
       "source": "page:katzenwasser-taeglich-wechseln",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenwasser-taeglich-wechseln",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -202235,6 +204970,14 @@
     {
       "source": "page:nierenkranke-katze-trinken",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:nierenkranke-katze-trinken",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -204131,6 +206874,14 @@
     {
       "source": "page:pumpe-katzentrinkbrunnen-reinigen",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:pumpe-katzentrinkbrunnen-reinigen",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -205730,6 +208481,14 @@
     },
     {
       "source": "page:reichweite-von-gps-trackern",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 82,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:reichweite-von-gps-trackern",
       "target": "product:petkit-eversweet-3-pro-uvc",
       "type": "semantic",
       "score": 82,
@@ -207602,6 +210361,14 @@
     },
     {
       "source": "page:seniorenhunde-richtig-versorgen",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:seniorenhunde-richtig-versorgen",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -209546,6 +212313,14 @@
     },
     {
       "source": "page:smarte-futterautomaten",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:smarte-futterautomaten",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -211451,6 +214226,14 @@
     {
       "source": "page:smarte-gadgets-fuer-hunde-und-katzen",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:smarte-gadgets-fuer-hunde-und-katzen",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -213379,6 +216162,14 @@
     {
       "source": "page:smarte-haustiertechnik",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:smarte-haustiertechnik",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -215282,6 +218073,14 @@
     },
     {
       "source": "page:so-bewerten-wir",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:so-bewerten-wir",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -217218,6 +220017,14 @@
     },
     {
       "source": "page:trinkbrunnen",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:trinkbrunnen",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -219146,6 +221953,14 @@
     },
     {
       "source": "page:trinkbrunnen-fuer-katzen-sinnvoll",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:trinkbrunnen-fuer-katzen-sinnvoll",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -221018,6 +223833,14 @@
     },
     {
       "source": "page:trinkbrunnen-fuer-kitten-sicher",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:trinkbrunnen-fuer-kitten-sicher",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -222931,6 +225754,14 @@
     {
       "source": "page:trinkbrunnen-fuer-mehrere-katzen",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:trinkbrunnen-fuer-mehrere-katzen",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -224898,6 +227729,14 @@
     },
     {
       "source": "page:trinkbrunnen-hund",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:trinkbrunnen-hund",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -226786,6 +229625,14 @@
     },
     {
       "source": "page:trinkbrunnen-seniorenkatzen",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:trinkbrunnen-seniorenkatzen",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -228659,6 +231506,14 @@
     {
       "source": "page:trinkmenge-hund-messen",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:trinkmenge-hund-messen",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -230578,6 +233433,14 @@
     },
     {
       "source": "page:trinkmenge-katze-messen",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:trinkmenge-katze-messen",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -232514,6 +235377,14 @@
     },
     {
       "source": "page:trockenfutter-oder-nassfutter-hund",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-hund",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -234379,6 +237250,14 @@
     {
       "source": "page:trockenfutter-oder-nassfutter-katze",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:trockenfutter-oder-nassfutter-katze",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -236362,6 +239241,14 @@
     },
     {
       "source": "page:uebergewicht-bei-katzen-vermeiden",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:uebergewicht-bei-katzen-vermeiden",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -238147,6 +241034,14 @@
     {
       "source": "page:warum-brauchen-gps-tracker-ein-abo",
       "target": "page:futterautomat-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:warum-brauchen-gps-tracker-ein-abo",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -239987,6 +242882,14 @@
     {
       "source": "page:warum-hunde-feste-fuetterungszeiten-brauchen",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:warum-hunde-feste-fuetterungszeiten-brauchen",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -242042,6 +244945,14 @@
     },
     {
       "source": "page:warum-katzen-fliessendes-wasser-trinken",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:warum-katzen-fliessendes-wasser-trinken",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -243715,6 +246626,14 @@
     {
       "source": "page:warum-schlingt-mein-hund",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:warum-schlingt-mein-hund",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -245722,6 +248641,14 @@
     },
     {
       "source": "page:wasserstelle-katze-richtiger-standort",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wasserstelle-katze-richtiger-standort",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -247746,6 +250673,14 @@
     },
     {
       "source": "page:welche-portionsgroesse-ist-richtig",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:welche-portionsgroesse-ist-richtig",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -249659,6 +252594,14 @@
     {
       "source": "page:welcher-futterautomat-ist-der-richtige",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:welcher-futterautomat-ist-der-richtige",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -251371,6 +254314,14 @@
     {
       "source": "page:welpen-richtig-fuettern",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:welpen-richtig-fuettern",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -253362,6 +256313,14 @@
     },
     {
       "source": "page:wie-funktionieren-gps-tracker",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-funktionieren-gps-tracker",
       "target": "page:gps-oder-bluetooth",
       "type": "cluster",
       "score": 100,
@@ -255122,6 +258081,14 @@
     },
     {
       "source": "page:wie-funktioniert-ein-futterautomat",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-funktioniert-ein-futterautomat",
       "target": "page:gps-tracker",
       "type": "semantic",
       "score": 100,
@@ -256826,6 +259793,14 @@
     },
     {
       "source": "page:wie-genau-sind-gps-tracker",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 82,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-genau-sind-gps-tracker",
       "target": "comparison:gps-tracker-mit-langer-akkulaufzeit",
       "type": "cluster",
       "score": 74,
@@ -258794,6 +261769,14 @@
     },
     {
       "source": "page:wie-gross-sollte-ein-futterautomat-sein",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-gross-sollte-ein-futterautomat-sein",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -260658,6 +263641,14 @@
     },
     {
       "source": "page:wie-kann-technik-gegen-langeweile-helfen",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-kann-technik-gegen-langeweile-helfen",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -262371,6 +265362,14 @@
     {
       "source": "page:wie-lange-bleibt-trockenfutter-frisch",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-lange-bleibt-trockenfutter-frisch",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -264458,6 +267457,14 @@
     },
     {
       "source": "page:wie-laut-sind-automatische-futterautomaten",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-laut-sind-automatische-futterautomaten",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -266315,6 +269322,14 @@
     {
       "source": "page:wie-viel-wasser-braucht-ein-hund",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -268186,6 +271201,14 @@
     },
     {
       "source": "page:wie-viel-wasser-braucht-eine-katze",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-viel-wasser-braucht-eine-katze",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -270146,6 +273169,14 @@
     },
     {
       "source": "page:wie-viele-mahlzeiten-hund",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-viele-mahlzeiten-hund",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -272058,6 +275089,14 @@
     },
     {
       "source": "page:wie-viele-mahlzeiten-katze",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-viele-mahlzeiten-katze",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -273883,6 +276922,14 @@
     {
       "source": "page:wie-viele-wasserstellen-katze",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:wie-viele-wasserstellen-katze",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -275723,6 +278770,14 @@
     {
       "source": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:woran-erkennt-man-dass-die-katze-zu-wenig-trinkt",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -278819,6 +281874,14 @@
     {
       "source": "product:aqara-smart-pet-feeder-c1",
       "target": "manufacturer:xiaomi",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:aqara-smart-pet-feeder-c1",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -279658,6 +282721,14 @@
     },
     {
       "source": "product:cat-mate-335-pet-fountain",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:cat-mate-335-pet-fountain",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -281595,6 +284666,14 @@
     {
       "source": "product:cat-mate-c200",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:cat-mate-c200",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -283538,6 +286617,14 @@
     },
     {
       "source": "product:cat-mate-c300",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:cat-mate-c300",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -285522,6 +288609,14 @@
     },
     {
       "source": "product:cat-mate-c500",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:cat-mate-c500",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -287379,6 +290474,14 @@
     {
       "source": "product:cat-mate-elite-355w",
       "target": "page:futterautomat-richtig-reinigen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:cat-mate-elite-355w",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -289170,6 +292273,14 @@
     },
     {
       "source": "product:cat-mate-shell-fountain",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:cat-mate-shell-fountain",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -291307,6 +294418,14 @@
     {
       "source": "product:catit-pixi-smart-6-meal-feeder",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:catit-pixi-smart-6-meal-feeder",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -293250,6 +296369,14 @@
     },
     {
       "source": "product:catit-pixi-smart-trinkbrunnen",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:catit-pixi-smart-trinkbrunnen",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -295219,6 +298346,14 @@
     {
       "source": "product:catit-pixi-vision-smart-feeder",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:catit-pixi-vision-smart-feeder",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -297162,6 +300297,14 @@
     },
     {
       "source": "product:devoko-90l-automatisches-katzenklo",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:devoko-90l-automatisches-katzenklo",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -299170,6 +302313,14 @@
     },
     {
       "source": "product:enabot-ebo-air-2",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:enabot-ebo-air-2",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -301122,6 +304273,14 @@
     },
     {
       "source": "product:enabot-rola-mini",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:enabot-rola-mini",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -303027,6 +306186,14 @@
     {
       "source": "product:enabot-rola-pettracker",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:enabot-rola-pettracker",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -305002,6 +308169,14 @@
     },
     {
       "source": "product:feelneedy-fn-w18-8l-katzenbrunnen",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:feelneedy-fn-w18-8l-katzenbrunnen",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -306970,6 +310145,14 @@
     },
     {
       "source": "product:furbo-360-hundekamera",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:furbo-360-hundekamera",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -308795,6 +311978,14 @@
     {
       "source": "product:furbo-360-katzenkamera",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:furbo-360-katzenkamera",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -310851,6 +314042,14 @@
     {
       "source": "product:furbo-mini-360",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:furbo-mini-360",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -313851,6 +317050,14 @@
     {
       "source": "product:garmin-alpha-t-20",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:garmin-alpha-t-20",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -315810,6 +319017,14 @@
     },
     {
       "source": "product:garmin-alpha-tt-25",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:garmin-alpha-tt-25",
       "target": "page:kalk-katzentrinkbrunnen-entfernen",
       "type": "semantic",
       "score": 88,
@@ -316658,6 +319873,14 @@
     },
     {
       "source": "product:honeyguardian-a305d",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:honeyguardian-a305d",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -318595,6 +321818,14 @@
     {
       "source": "product:honeyguardian-a68",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:honeyguardian-a68",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -320586,6 +323817,14 @@
     },
     {
       "source": "product:honeyguardian-smart-pet-feeder-s305d",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:honeyguardian-smart-pet-feeder-s305d",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -322523,6 +325762,14 @@
     {
       "source": "product:imipaw-3l-automatic-cat-feeder",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:imipaw-3l-automatic-cat-feeder",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -325379,6 +328626,14 @@
     {
       "source": "product:invoxia-biotracker-2026",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:invoxia-biotracker-2026",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -326394,6 +329649,14 @@
     },
     {
       "source": "product:litter-robot-4",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:litter-robot-4",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -328339,6 +331602,14 @@
     {
       "source": "product:litter-robot-5-pro",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:litter-robot-5-pro",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -330299,6 +333570,14 @@
     {
       "source": "product:neakasa-m1-lite",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:neakasa-m1-lite",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -332258,6 +335537,14 @@
     },
     {
       "source": "product:neakasa-m1-plus",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:neakasa-m1-plus",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -334003,6 +337290,14 @@
     {
       "source": "product:oneisall-2-2l-cordless-fountain",
       "target": "page:futterautomat-und-ernaehrung",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:oneisall-2-2l-cordless-fountain",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -336154,6 +339449,14 @@
     },
     {
       "source": "product:oneisall-2-in-1-feeder-water",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:oneisall-2-in-1-feeder-water",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -338091,6 +341394,14 @@
     {
       "source": "product:oneisall-3-2l-cordless-fountain",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:oneisall-3-2l-cordless-fountain",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -340402,6 +343713,14 @@
     },
     {
       "source": "product:oneisall-3-5l-cordless-fountain",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 82,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:oneisall-3-5l-cordless-fountain",
       "target": "page:katze-an-trinkbrunnen-gewoehnen",
       "type": "semantic",
       "score": 82,
@@ -341939,6 +345258,14 @@
     {
       "source": "product:oneisall-5l-automatic-cat-feeder",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:oneisall-5l-automatic-cat-feeder",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -343683,6 +347010,14 @@
     {
       "source": "product:oneisall-7l-dog-water-fountain",
       "target": "page:futtermenge-hund",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:oneisall-7l-dog-water-fountain",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -346450,6 +349785,14 @@
     },
     {
       "source": "product:onlycat-mikrochip-katzenklappe",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:onlycat-mikrochip-katzenklappe",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 88,
@@ -347771,6 +351114,14 @@
     {
       "source": "product:paj-pet-finder-4g-mini",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:paj-pet-finder-4g-mini",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -349730,6 +353081,14 @@
     },
     {
       "source": "product:pawbby-smart-pet-feeder",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:pawbby-smart-pet-feeder",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -352563,6 +355922,14 @@
     {
       "source": "product:pawfit-3",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:pawfit-3",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -353610,6 +356977,14 @@
     },
     {
       "source": "product:pawsync-smart-pet-feeder",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:pawsync-smart-pet-feeder",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -355539,6 +358914,14 @@
     {
       "source": "product:petkit-eversweet-3-pro-uvc",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-eversweet-3-pro-uvc",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -357410,6 +360793,14 @@
     },
     {
       "source": "product:petkit-eversweet-5-mini",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-eversweet-5-mini",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -359370,6 +362761,14 @@
     },
     {
       "source": "product:petkit-eversweet-max-2-uvc",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-eversweet-max-2-uvc",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -361378,6 +364777,14 @@
     },
     {
       "source": "product:petkit-eversweet-max-cordless",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-eversweet-max-cordless",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -363259,6 +366666,14 @@
     {
       "source": "product:petkit-eversweet-solo-2-fountain",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-eversweet-solo-2-fountain",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -365178,6 +368593,14 @@
     },
     {
       "source": "product:petkit-eversweet-solo-se",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-eversweet-solo-se",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -367194,6 +370617,14 @@
     },
     {
       "source": "product:petkit-eversweet-ultra",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-eversweet-ultra",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -369122,6 +372553,14 @@
     },
     {
       "source": "product:petkit-fresh-element-infinity",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-fresh-element-infinity",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -371106,6 +374545,14 @@
     },
     {
       "source": "product:petkit-fresh-element-solo",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-fresh-element-solo",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -373010,6 +376457,14 @@
     },
     {
       "source": "product:petkit-puramax-2",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-puramax-2",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -375770,6 +379225,14 @@
     },
     {
       "source": "product:petkit-purobot-crystal-duo",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 66,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-purobot-crystal-duo",
       "target": "page:gps-tracker-richtig-befestigen",
       "type": "semantic",
       "score": 66,
@@ -376867,6 +380330,14 @@
     {
       "source": "product:petkit-purobot-max-3",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-purobot-max-3",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -378834,6 +382305,14 @@
     },
     {
       "source": "product:petkit-purobot-max-pro-2",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-purobot-max-pro-2",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -380875,6 +384354,14 @@
     {
       "source": "product:petkit-yumshare-dual-hopper",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-yumshare-dual-hopper",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -382858,6 +386345,14 @@
     },
     {
       "source": "product:petkit-yumshare-solo-2",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petkit-yumshare-solo-2",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -384739,6 +388234,14 @@
     {
       "source": "product:petlibro-air-automatic-feeder",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-air-automatic-feeder",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -386746,6 +390249,14 @@
     },
     {
       "source": "product:petlibro-air-wifi-feeder",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-air-wifi-feeder",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -389555,6 +393066,14 @@
     {
       "source": "product:petlibro-capsule-dog-fountain",
       "target": "page:futterautomat-bei-stromausfall",
+      "type": "semantic",
+      "score": 82,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-capsule-dog-fountain",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 82,
       "explicit": false,
@@ -390602,6 +394121,14 @@
     },
     {
       "source": "product:petlibro-dockstream-2-smart",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-dockstream-2-smart",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -392562,6 +396089,14 @@
     },
     {
       "source": "product:petlibro-dockstream-2-smart-cordless",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-dockstream-2-smart-cordless",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -394458,6 +397993,14 @@
     },
     {
       "source": "product:petlibro-dockstream-cordless",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-dockstream-cordless",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -396354,6 +399897,14 @@
     },
     {
       "source": "product:petlibro-dockstream-rfid-smart",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-dockstream-rfid-smart",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -398131,6 +401682,14 @@
     {
       "source": "product:petlibro-glacier-ultrafiltration",
       "target": "page:futterautomat-und-ernaehrung",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-glacier-ultrafiltration",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -400282,6 +403841,14 @@
     },
     {
       "source": "product:petlibro-granary-2-vision",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-granary-2-vision",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -402298,6 +405865,14 @@
     },
     {
       "source": "product:petlibro-granary-camera-feeder",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-granary-camera-feeder",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -404266,6 +407841,14 @@
     },
     {
       "source": "product:petlibro-granary-dual-feeder",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-granary-dual-feeder",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -406306,6 +409889,14 @@
     },
     {
       "source": "product:petlibro-granary-wifi-feeder",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-granary-wifi-feeder",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -408203,6 +411794,14 @@
     {
       "source": "product:petlibro-luma-smart-litter-box",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-luma-smart-litter-box",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -410162,6 +413761,14 @@
     },
     {
       "source": "product:petlibro-one-rfid-smart-feeder",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-one-rfid-smart-feeder",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -412170,6 +415777,14 @@
     },
     {
       "source": "product:petlibro-polar-wet-food-feeder",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-polar-wet-food-feeder",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -414115,6 +417730,14 @@
     {
       "source": "product:petlibro-scout-smart-camera",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-scout-smart-camera",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -416066,6 +419689,14 @@
     },
     {
       "source": "product:petlibro-space-smart-feeder",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-space-smart-feeder",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -417779,6 +421410,14 @@
     {
       "source": "product:petlibro-stainless-steel-fountain",
       "target": "page:futterautomat-und-ernaehrung",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-stainless-steel-fountain",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -419922,6 +423561,14 @@
     },
     {
       "source": "product:petsafe-freshfeed-refrigerated-feeder",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petsafe-freshfeed-refrigerated-feeder",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -421828,6 +425475,14 @@
       "source": "product:petsafe-healthy-pet-simply-feed",
       "target": "page:futtermenge-hund",
       "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petsafe-healthy-pet-simply-feed",
+      "target": "page:glossar",
+      "type": "semantic",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -423722,6 +427377,14 @@
     },
     {
       "source": "product:petsafe-mikrochip-katzenklappe",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petsafe-mikrochip-katzenklappe",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -425698,6 +429361,14 @@
     },
     {
       "source": "product:petsafe-petporte-smart-flap",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petsafe-petporte-smart-flap",
       "target": "page:katze-an-katzenklappe-gewoehnen",
       "type": "semantic",
       "score": 88,
@@ -427636,6 +431307,14 @@
       "source": "product:petsafe-smart-feed-2",
       "target": "page:futtermenge-hund",
       "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petsafe-smart-feed-2",
+      "target": "page:glossar",
+      "type": "semantic",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -429602,6 +433281,14 @@
     },
     {
       "source": "product:petsafe-streamside-trinkbrunnen",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petsafe-streamside-trinkbrunnen",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -431443,6 +435130,14 @@
     {
       "source": "product:petsnowy-snow-plus",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petsnowy-snow-plus",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -435450,6 +439145,14 @@
     },
     {
       "source": "product:petwalk-medium-tiertuer",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petwalk-medium-tiertuer",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 88,
@@ -437690,6 +441393,14 @@
     },
     {
       "source": "product:prothelis-area-pets",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:prothelis-area-pets",
       "target": "page:kalk-katzentrinkbrunnen-entfernen",
       "type": "semantic",
       "score": 88,
@@ -439883,6 +443594,14 @@
     {
       "source": "product:surefeed-microchip-pet-feeder",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:surefeed-microchip-pet-feeder",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -441866,6 +445585,14 @@
     },
     {
       "source": "product:surefeed-microchip-pet-feeder-connect",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:surefeed-microchip-pet-feeder-connect",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -444418,6 +448145,14 @@
     },
     {
       "source": "product:sureflap-dualscan-mikrochip-katzenklappe",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:sureflap-dualscan-mikrochip-katzenklappe",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 88,
@@ -446602,6 +450337,14 @@
     },
     {
       "source": "product:sureflap-mikrochip-katzenklappe",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:sureflap-mikrochip-katzenklappe",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 88,
@@ -448307,6 +452050,14 @@
     {
       "source": "product:sureflap-mikrochip-katzenklappe-connect",
       "target": "page:futterautomat-richtig-reinigen",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:sureflap-mikrochip-katzenklappe-connect",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -450451,6 +454202,14 @@
     {
       "source": "product:tractive-cat-6-mini",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:tractive-cat-6-mini",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -451642,6 +455401,14 @@
     },
     {
       "source": "product:tractive-dog-6",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:tractive-dog-6",
       "target": "page:gps-oder-bluetooth",
       "type": "cluster",
       "score": 100,
@@ -454626,6 +458393,14 @@
     },
     {
       "source": "product:tractive-dog-6-xl",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:tractive-dog-6-xl",
       "target": "page:kalk-katzentrinkbrunnen-entfernen",
       "type": "semantic",
       "score": 88,
@@ -455523,6 +459298,14 @@
     {
       "source": "product:weenect-xs",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:weenect-xs",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -458570,6 +462353,14 @@
     },
     {
       "source": "product:weenect-xt",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:weenect-xt",
       "target": "page:kalk-katzentrinkbrunnen-entfernen",
       "type": "semantic",
       "score": 88,
@@ -459474,6 +463265,14 @@
     },
     {
       "source": "product:wopet-cube-air-ca10",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:wopet-cube-air-ca10",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -461411,6 +465210,14 @@
     {
       "source": "product:wopet-heritage-view-camera-feeder",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:wopet-heritage-view-camera-feeder",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -463386,6 +467193,14 @@
     },
     {
       "source": "product:wopet-patrol-f07-pro",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:wopet-patrol-f07-pro",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -465267,6 +469082,14 @@
     {
       "source": "product:wopet-pioneer-f01-plus",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:wopet-pioneer-f01-plus",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -467322,6 +471145,14 @@
     },
     {
       "source": "product:xiaomi-smart-pet-food-feeder-2",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:xiaomi-smart-pet-food-feeder-2",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -469290,6 +473121,14 @@
     },
     {
       "source": "product:xiaomi-smart-pet-fountain-2",
+      "target": "page:glossar",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:xiaomi-smart-pet-fountain-2",
       "target": "page:gps-oder-bluetooth",
       "type": "semantic",
       "score": 100,
@@ -471163,6 +475002,14 @@
     {
       "source": "product:zeromouse-2-0",
       "target": "page:futtermenge-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:zeromouse-2-0",
+      "target": "page:glossar",
       "type": "semantic",
       "score": 100,
       "explicit": false,

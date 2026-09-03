@@ -172,7 +172,7 @@ evidenceSources:
 Eine Katzenklappe ist zuerst ein Zugang im Gebäude und erst danach ein smartes Gerät.
 ## Vier Produktrollen, vier Aufgaben
 
-Eine einfache Mikrochip-Klappe soll fremde Tiere aussperren. DualScan-Modelle regeln zusätzlich, welche Katze hinaus darf. Vernetzte Komplettsysteme ergänzen Fernsteuerung, Ereignisse oder Beuteerkennung. Motorisierte Tiertüren adressieren darüber hinaus Dämmung und Gebäudeintegration. ZeroMOUSE bleibt als Nachrüstung einer vorhandenen Klappe eine fünfte, aber nicht direkt vergleichbare Rolle.
+Eine einfache Mikrochip-Klappe soll fremde Tiere aussperren. Wie sich [RFID, implantierter Mikrochip und Halsband-Tag unterscheiden](/glossar/#rfid-und-mikrochip), erklärt das Glossar. DualScan-Modelle regeln zusätzlich, welche Katze hinaus darf. Vernetzte Komplettsysteme ergänzen Fernsteuerung, Ereignisse oder Beuteerkennung. Motorisierte Tiertüren adressieren darüber hinaus Dämmung und Gebäudeintegration. ZeroMOUSE bleibt als Nachrüstung einer vorhandenen Klappe eine fünfte, aber nicht direkt vergleichbare Rolle.
 
 Netzbetriebene Mikrochip-Klappen bilden eine zusätzliche Betriebsvariante: Sie vermeiden regelmäßige Batteriewechsel, benötigen dafür aber Steckdose und sicheren Kabelweg. Die [PetSafe Petporte smart flap](/produkt/petsafe-petporte-smart-flap/) ergänzt diesen Fall mit größerem Durchgang und lokalem Nachtmodus.
 

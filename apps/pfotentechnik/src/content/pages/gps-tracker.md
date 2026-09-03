@@ -234,7 +234,7 @@ Im Hundevergleich ergänzen [Invoxia Biotracker Edition 2026](/produkt/invoxia-b
 
 ## Reichweite und Genauigkeit richtig lesen
 
-„Reichweite“ besteht aus zwei Fragen: Kann der Tracker seine Position bestimmen, und kann er sie übertragen? Freier Himmel hilft dem Satellitenempfang; unterstütztes Mobilfunknetz hilft der App-Verbindung. VHF braucht dagegen Funkkontakt zum Handgerät.
+„Reichweite“ besteht aus zwei Fragen: Kann der Tracker seine Position bestimmen, und kann er sie übertragen? Freier Himmel hilft dem Satellitenempfang; unterstütztes Mobilfunknetz hilft der App-Verbindung. Die getrennten Rollen von [GPS, LTE und Geofencing erklärt das Glossar](/glossar/#gps-und-lte). VHF braucht dagegen Funkkontakt zum Handgerät.
 
 ![GPS-Genauigkeit im freien Feld, in der Stadt, im Wald und in Innenräumen sowie die getrennte Mobilfunkkette.](../../assets/images/guides/gps-tracker/range-accuracy.webp)
 

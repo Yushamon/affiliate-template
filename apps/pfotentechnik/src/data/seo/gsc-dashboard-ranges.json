@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-28T09:03:13.658Z",
+  "generatedAt": "2026-09-03T06:49:48.837Z",
   "property": "sc-domain:pfotentechnik.de",
   "provider": "google",
   "defaultRange": "7d",
@@ -8,71 +8,57 @@
     "7d": {
       "key": "7d",
       "label": "Letzte 7 Tage",
-      "startDate": "2026-08-21",
-      "endDate": "2026-08-27",
-      "comparisonStartDate": "2026-08-14",
-      "comparisonEndDate": "2026-08-20",
+      "startDate": "2026-08-27",
+      "endDate": "2026-09-02",
+      "comparisonStartDate": "2026-08-20",
+      "comparisonEndDate": "2026-08-26",
       "dataState": "all",
       "partial": false,
       "lowData": true,
       "metrics": {
         "current": {
           "clicks": 0,
-          "impressions": 14,
+          "impressions": 13,
           "ctr": 0,
-          "position": 28.2
+          "position": 49.2
         },
         "previous": {
           "clicks": 0,
-          "impressions": 10,
+          "impressions": 12,
           "ctr": 0,
-          "position": 31.2
+          "position": 19.5
         },
         "change": {
           "clicks": 0,
-          "impressions": 40,
+          "impressions": 8.3,
           "ctr": 0,
-          "position": 3
+          "position": -29.7
         }
       },
       "pages": [
         {
           "page": "/",
           "clicks": 0,
-          "impressions": 8,
+          "impressions": 11,
           "ctr": 0,
-          "position": 44.5
+          "position": 56.1
         },
         {
-          "page": "/hund-ist-muede/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 8.5
-        },
-        {
-          "page": "/produkt/petkit-eversweet-ultra/",
+          "page": "/produkt/petlibro-air-wifi-feeder/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 4
+          "position": 21
         },
         {
-          "page": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+          "page": "/smarte-futterautomaten/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 6
+          "position": 3
         },
         {
-          "page": "/welpen-richtig-fuettern/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 10
-        },
-        {
-          "page": "/redaktion/",
+          "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -83,16 +69,23 @@
         {
           "query": "petsafe bewertung",
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 7,
           "ctr": 0,
-          "position": 46.3
+          "position": 48
         },
         {
           "query": "beuteerkennung",
           "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 70.3
+        },
+        {
+          "query": "pet feeder",
+          "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 72
+          "position": 70
         }
       ],
       "pageQueries": [
@@ -100,68 +93,76 @@
           "page": "/",
           "query": "petsafe bewertung",
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 7,
           "ctr": 0,
-          "position": 46.3
+          "position": 48
         },
         {
           "page": "/",
           "query": "beuteerkennung",
           "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 70.3
+        },
+        {
+          "page": "/",
+          "query": "pet feeder",
+          "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 72
+          "position": 70
         }
       ],
       "trend": [
-        {
-          "date": "2026-08-21",
-          "clicks": 0,
-          "impressions": 0,
-          "ctr": 0,
-          "position": 0
-        },
-        {
-          "date": "2026-08-22",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 6
-        },
-        {
-          "date": "2026-08-23",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 8.5
-        },
-        {
-          "date": "2026-08-24",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 25
-        },
-        {
-          "date": "2026-08-25",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 26
-        },
-        {
-          "date": "2026-08-26",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 47
-        },
         {
           "date": "2026-08-27",
           "clicks": 0,
           "impressions": 3,
           "ctr": 0,
           "position": 55.7
+        },
+        {
+          "date": "2026-08-28",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 58.8
+        },
+        {
+          "date": "2026-08-29",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 55
+        },
+        {
+          "date": "2026-08-30",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 50
+        },
+        {
+          "date": "2026-08-31",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        {
+          "date": "2026-09-01",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 21
+        },
+        {
+          "date": "2026-09-02",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
         }
       ],
       "recommendations": []
@@ -169,75 +170,68 @@
     "28d": {
       "key": "28d",
       "label": "Letzte 28 Tage",
-      "startDate": "2026-07-31",
-      "endDate": "2026-08-27",
-      "comparisonStartDate": "2026-07-03",
-      "comparisonEndDate": "2026-07-30",
+      "startDate": "2026-08-06",
+      "endDate": "2026-09-02",
+      "comparisonStartDate": "2026-07-09",
+      "comparisonEndDate": "2026-08-05",
       "dataState": "all",
       "partial": false,
       "lowData": true,
       "metrics": {
         "current": {
           "clicks": 0,
-          "impressions": 47,
+          "impressions": 48,
           "ctr": 0,
-          "position": 30.7
+          "position": 33
         },
         "previous": {
           "clicks": 20,
-          "impressions": 675,
-          "ctr": 2.96,
-          "position": 22.9
+          "impressions": 684,
+          "ctr": 2.92,
+          "position": 23.1
         },
         "change": {
           "clicks": -100,
           "impressions": -93,
-          "ctr": -2.96,
-          "position": -7.8
+          "ctr": -2.92,
+          "position": -9.9
         }
       },
       "pages": [
         {
-          "page": "/futterautomat-katze/",
-          "clicks": 0,
-          "impressions": 10,
-          "ctr": 0,
-          "position": 40.6
-        },
-        {
           "page": "/",
           "clicks": 0,
-          "impressions": 9,
+          "impressions": 17,
           "ctr": 0,
-          "position": 40.2
+          "position": 47.8
+        },
+        {
+          "page": "/futterautomat-katze/",
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 36
         },
         {
           "page": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 5,
           "ctr": 0,
-          "position": 37.7
+          "position": 34.4
         },
         {
           "page": "/smarte-futterautomaten/",
           "clicks": 0,
           "impressions": 3,
           "ctr": 0,
-          "position": 5.3
+          "position": 6
         },
         {
           "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
           "clicks": 0,
           "impressions": 3,
           "ctr": 0,
-          "position": 2.3
-        },
-        {
-          "page": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 17
+          "position": 2
         },
         {
           "page": "/produkt/oneisall-2-in-1-feeder-water/",
@@ -259,6 +253,13 @@
           "impressions": 2,
           "ctr": 0,
           "position": 21.5
+        },
+        {
+          "page": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 6
         },
         {
           "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
@@ -296,13 +297,6 @@
           "position": 47
         },
         {
-          "page": "/hersteller/weenect/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 23
-        },
-        {
           "page": "/hund-frisst-nicht/",
           "clicks": 0,
           "impressions": 1,
@@ -324,18 +318,11 @@
           "position": 1
         },
         {
-          "page": "/produkt/petkit-yumshare-dual/",
+          "page": "/produkt/petlibro-air-wifi-feeder/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 2
-        },
-        {
-          "page": "/trockenfutter-oder-nassfutter-hund/",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 92
+          "position": 21
         },
         {
           "page": "/trockenfutter-oder-nassfutter-katze/",
@@ -419,23 +406,16 @@
         {
           "query": "petsafe bewertung",
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 11,
           "ctr": 0,
-          "position": 46.3
+          "position": 47.2
         },
         {
-          "query": "futterautomat nassfutter katze",
+          "query": "beuteerkennung",
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 3,
           "ctr": 0,
-          "position": 55
-        },
-        {
-          "query": "nassfutterautomat für katzen",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 62
+          "position": 70.3
         },
         {
           "query": "\"garmin alpha\" \"dog\" -\"watch\" -site:reddit.com -site:twitter.com -site:x.com -site:wykop.pl -site:tripadvisor.com -site:youtube.com -site:yelp.com -site:booking.com -site:facebook.com -site:instagram.com -site:tiktok.com",
@@ -443,13 +423,6 @@
           "impressions": 1,
           "ctr": 0,
           "position": 6
-        },
-        {
-          "query": "beuteerkennung",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 72
         },
         {
           "query": "futterautomat für 2 katzen",
@@ -473,11 +446,11 @@
           "position": 54
         },
         {
-          "query": "hund nur trockenfutter",
+          "query": "futterautomat nassfutter katze",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 92
+          "position": 55
         },
         {
           "query": "nassfutter automat katzen",
@@ -487,11 +460,25 @@
           "position": 50
         },
         {
+          "query": "nassfutterautomat für katzen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 61
+        },
+        {
           "query": "nassfutterautomat katze",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
           "position": 60
+        },
+        {
+          "query": "pet feeder",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 70
         },
         {
           "query": "tractive care",
@@ -506,33 +493,25 @@
           "page": "/",
           "query": "petsafe bewertung",
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 11,
           "ctr": 0,
-          "position": 46.3
-        },
-        {
-          "page": "/futterautomat-katze/",
-          "query": "futterautomat nassfutter katze",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 55
-        },
-        {
-          "page": "/futterautomat-katze/",
-          "query": "nassfutterautomat für katzen",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 62
+          "position": 47.2
         },
         {
           "page": "/",
           "query": "beuteerkennung",
           "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 70.3
+        },
+        {
+          "page": "/",
+          "query": "pet feeder",
+          "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 72
+          "position": 70
         },
         {
           "page": "/futterautomat-katze/",
@@ -544,11 +523,27 @@
         },
         {
           "page": "/futterautomat-katze/",
+          "query": "futterautomat nassfutter katze",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 55
+        },
+        {
+          "page": "/futterautomat-katze/",
           "query": "nassfutter automat katzen",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
           "position": 50
+        },
+        {
+          "page": "/futterautomat-katze/",
+          "query": "nassfutterautomat für katzen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 61
         },
         {
           "page": "/futterautomat-katze/",
@@ -565,14 +560,6 @@
           "impressions": 1,
           "ctr": 0,
           "position": 47
-        },
-        {
-          "page": "/trockenfutter-oder-nassfutter-hund/",
-          "query": "hund nur trockenfutter",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 92
         },
         {
           "page": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
@@ -600,48 +587,6 @@
         }
       ],
       "trend": [
-        {
-          "date": "2026-07-31",
-          "clicks": 0,
-          "impressions": 0,
-          "ctr": 0,
-          "position": 0
-        },
-        {
-          "date": "2026-08-01",
-          "clicks": 0,
-          "impressions": 0,
-          "ctr": 0,
-          "position": 0
-        },
-        {
-          "date": "2026-08-02",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 20.5
-        },
-        {
-          "date": "2026-08-03",
-          "clicks": 0,
-          "impressions": 6,
-          "ctr": 0,
-          "position": 33.2
-        },
-        {
-          "date": "2026-08-04",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 92
-        },
-        {
-          "date": "2026-08-05",
-          "clicks": 0,
-          "impressions": 0,
-          "ctr": 0,
-          "position": 0
-        },
         {
           "date": "2026-08-06",
           "clicks": 0,
@@ -795,6 +740,48 @@
           "impressions": 3,
           "ctr": 0,
           "position": 55.7
+        },
+        {
+          "date": "2026-08-28",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 58.8
+        },
+        {
+          "date": "2026-08-29",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 55
+        },
+        {
+          "date": "2026-08-30",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 50
+        },
+        {
+          "date": "2026-08-31",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        {
+          "date": "2026-09-01",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 21
+        },
+        {
+          "date": "2026-09-02",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
         }
       ],
       "recommendations": []
@@ -802,19 +789,19 @@
     "3m": {
       "key": "3m",
       "label": "Letzte 3 Monate",
-      "startDate": "2026-05-30",
-      "endDate": "2026-08-27",
-      "comparisonStartDate": "2026-03-01",
-      "comparisonEndDate": "2026-05-29",
+      "startDate": "2026-06-05",
+      "endDate": "2026-09-02",
+      "comparisonStartDate": "2026-03-07",
+      "comparisonEndDate": "2026-06-04",
       "dataState": "all",
       "partial": false,
       "lowData": false,
       "metrics": {
         "current": {
           "clicks": 20,
-          "impressions": 722,
-          "ctr": 2.77,
-          "position": 23.4
+          "impressions": 732,
+          "ctr": 2.73,
+          "position": 23.7
         },
         "previous": {
           "clicks": 0,
@@ -825,17 +812,17 @@
         "change": {
           "clicks": 100,
           "impressions": 100,
-          "ctr": 2.77,
-          "position": -23.4
+          "ctr": 2.73,
+          "position": -23.7
         }
       },
       "pages": [
         {
           "page": "/smarte-futterautomaten/",
           "clicks": 0,
-          "impressions": 87,
+          "impressions": 88,
           "ctr": 0,
-          "position": 41.6
+          "position": 41.1
         },
         {
           "page": "/hersteller/petlibro/",
@@ -850,6 +837,13 @@
           "impressions": 37,
           "ctr": 2.7,
           "position": 23.3
+        },
+        {
+          "page": "/",
+          "clicks": 1,
+          "impressions": 31,
+          "ctr": 3.23,
+          "position": 37.6
         },
         {
           "page": "/beste-futterautomaten-fuer-zwei-katzen/",
@@ -871,13 +865,6 @@
           "impressions": 26,
           "ctr": 0,
           "position": 12.4
-        },
-        {
-          "page": "/",
-          "clicks": 1,
-          "impressions": 23,
-          "ctr": 4.35,
-          "position": 31.1
         },
         {
           "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
@@ -922,6 +909,13 @@
           "position": 8.9
         },
         {
+          "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "clicks": 1,
+          "impressions": 17,
+          "ctr": 5.88,
+          "position": 29.1
+        },
+        {
           "page": "/katzenwasser-taeglich-wechseln/",
           "clicks": 0,
           "impressions": 17,
@@ -934,13 +928,6 @@
           "impressions": 17,
           "ctr": 0,
           "position": 59.5
-        },
-        {
-          "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-          "clicks": 1,
-          "impressions": 16,
-          "ctr": 6.25,
-          "position": 30.8
         },
         {
           "page": "/beste-futterautomaten-fuer-katzen/",
@@ -1608,6 +1595,13 @@
           "position": 30
         },
         {
+          "page": "/produkt/petlibro-air-wifi-feeder/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 21
+        },
+        {
           "page": "/produkt/petlibro-glacier-ultrafiltration/",
           "clicks": 0,
           "impressions": 1,
@@ -1764,6 +1758,13 @@
           "position": 55.1
         },
         {
+          "query": "petsafe bewertung",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 47.2
+        },
+        {
           "query": "futterautomat für 2 katzen",
           "clicks": 0,
           "impressions": 7,
@@ -1773,16 +1774,9 @@
         {
           "query": "pet feeder",
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 7,
           "ctr": 0,
-          "position": 46.5
-        },
-        {
-          "query": "petsafe bewertung",
-          "clicks": 0,
-          "impressions": 6,
-          "ctr": 0,
-          "position": 46.3
+          "position": 49.9
         },
         {
           "query": "petkit yumshare solo 2",
@@ -1870,6 +1864,13 @@
         },
         {
           "query": "beste katzenbrunnen",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 70.3
+        },
+        {
+          "query": "beuteerkennung",
           "clicks": 0,
           "impressions": 3,
           "ctr": 0,
@@ -2056,13 +2057,6 @@
           "impressions": 1,
           "ctr": 0,
           "position": 77
-        },
-        {
-          "query": "beuteerkennung",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 72
         },
         {
           "query": "cat feeder",
@@ -2586,6 +2580,14 @@
           "position": 55.1
         },
         {
+          "page": "/",
+          "query": "petsafe bewertung",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 47.2
+        },
+        {
           "page": "/vergleiche/",
           "query": "fütterungsroboter im vergleich",
           "clicks": 0,
@@ -2595,11 +2597,11 @@
         },
         {
           "page": "/",
-          "query": "petsafe bewertung",
+          "query": "pet feeder",
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 5,
           "ctr": 0,
-          "position": 46.3
+          "position": 54
         },
         {
           "page": "/hersteller/petlibro/",
@@ -2616,14 +2618,6 @@
           "impressions": 5,
           "ctr": 0,
           "position": 6.6
-        },
-        {
-          "page": "/",
-          "query": "pet feeder",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 50
         },
         {
           "page": "/futterautomat-fuer-zwei-katzen/",
@@ -2712,6 +2706,14 @@
           "impressions": 4,
           "ctr": 0,
           "position": 7
+        },
+        {
+          "page": "/",
+          "query": "beuteerkennung",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 70.3
         },
         {
           "page": "/beste-futterautomaten-fuer-zwei-katzen/",
@@ -2928,14 +2930,6 @@
           "impressions": 2,
           "ctr": 0,
           "position": 10.5
-        },
-        {
-          "page": "/",
-          "query": "beuteerkennung",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 72
         },
         {
           "page": "/",
@@ -4047,6 +4041,48 @@
           "impressions": 3,
           "ctr": 0,
           "position": 55.7
+        },
+        {
+          "date": "2026-08-28",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 58.8
+        },
+        {
+          "date": "2026-08-29",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 55
+        },
+        {
+          "date": "2026-08-30",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 50
+        },
+        {
+          "date": "2026-08-31",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        {
+          "date": "2026-09-01",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 21
+        },
+        {
+          "date": "2026-09-02",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
         }
       ],
       "recommendations": []
@@ -4054,19 +4090,19 @@
     "6m": {
       "key": "6m",
       "label": "Letzte 6 Monate",
-      "startDate": "2026-03-01",
-      "endDate": "2026-08-27",
-      "comparisonStartDate": "2025-09-02",
-      "comparisonEndDate": "2026-02-28",
+      "startDate": "2026-03-07",
+      "endDate": "2026-09-02",
+      "comparisonStartDate": "2025-09-08",
+      "comparisonEndDate": "2026-03-06",
       "dataState": "all",
       "partial": false,
       "lowData": false,
       "metrics": {
         "current": {
           "clicks": 20,
-          "impressions": 722,
-          "ctr": 2.77,
-          "position": 23.4
+          "impressions": 732,
+          "ctr": 2.73,
+          "position": 23.7
         },
         "previous": {
           "clicks": 0,
@@ -4077,17 +4113,17 @@
         "change": {
           "clicks": 100,
           "impressions": 100,
-          "ctr": 2.77,
-          "position": -23.4
+          "ctr": 2.73,
+          "position": -23.7
         }
       },
       "pages": [
         {
           "page": "/smarte-futterautomaten/",
           "clicks": 0,
-          "impressions": 87,
+          "impressions": 88,
           "ctr": 0,
-          "position": 41.6
+          "position": 41.1
         },
         {
           "page": "/hersteller/petlibro/",
@@ -4102,6 +4138,13 @@
           "impressions": 37,
           "ctr": 2.7,
           "position": 23.3
+        },
+        {
+          "page": "/",
+          "clicks": 1,
+          "impressions": 31,
+          "ctr": 3.23,
+          "position": 37.6
         },
         {
           "page": "/beste-futterautomaten-fuer-zwei-katzen/",
@@ -4123,13 +4166,6 @@
           "impressions": 26,
           "ctr": 0,
           "position": 12.4
-        },
-        {
-          "page": "/",
-          "clicks": 1,
-          "impressions": 23,
-          "ctr": 4.35,
-          "position": 31.1
         },
         {
           "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
@@ -4174,6 +4210,13 @@
           "position": 8.9
         },
         {
+          "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "clicks": 1,
+          "impressions": 17,
+          "ctr": 5.88,
+          "position": 29.1
+        },
+        {
           "page": "/katzenwasser-taeglich-wechseln/",
           "clicks": 0,
           "impressions": 17,
@@ -4186,13 +4229,6 @@
           "impressions": 17,
           "ctr": 0,
           "position": 59.5
-        },
-        {
-          "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-          "clicks": 1,
-          "impressions": 16,
-          "ctr": 6.25,
-          "position": 30.8
         },
         {
           "page": "/beste-futterautomaten-fuer-katzen/",
@@ -4860,6 +4896,13 @@
           "position": 30
         },
         {
+          "page": "/produkt/petlibro-air-wifi-feeder/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 21
+        },
+        {
           "page": "/produkt/petlibro-glacier-ultrafiltration/",
           "clicks": 0,
           "impressions": 1,
@@ -5016,6 +5059,13 @@
           "position": 55.1
         },
         {
+          "query": "petsafe bewertung",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 47.2
+        },
+        {
           "query": "futterautomat für 2 katzen",
           "clicks": 0,
           "impressions": 7,
@@ -5025,16 +5075,9 @@
         {
           "query": "pet feeder",
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 7,
           "ctr": 0,
-          "position": 46.5
-        },
-        {
-          "query": "petsafe bewertung",
-          "clicks": 0,
-          "impressions": 6,
-          "ctr": 0,
-          "position": 46.3
+          "position": 49.9
         },
         {
           "query": "petkit yumshare solo 2",
@@ -5122,6 +5165,13 @@
         },
         {
           "query": "beste katzenbrunnen",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 70.3
+        },
+        {
+          "query": "beuteerkennung",
           "clicks": 0,
           "impressions": 3,
           "ctr": 0,
@@ -5308,13 +5358,6 @@
           "impressions": 1,
           "ctr": 0,
           "position": 77
-        },
-        {
-          "query": "beuteerkennung",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 72
         },
         {
           "query": "cat feeder",
@@ -5838,6 +5881,14 @@
           "position": 55.1
         },
         {
+          "page": "/",
+          "query": "petsafe bewertung",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 47.2
+        },
+        {
           "page": "/vergleiche/",
           "query": "fütterungsroboter im vergleich",
           "clicks": 0,
@@ -5847,11 +5898,11 @@
         },
         {
           "page": "/",
-          "query": "petsafe bewertung",
+          "query": "pet feeder",
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 5,
           "ctr": 0,
-          "position": 46.3
+          "position": 54
         },
         {
           "page": "/hersteller/petlibro/",
@@ -5868,14 +5919,6 @@
           "impressions": 5,
           "ctr": 0,
           "position": 6.6
-        },
-        {
-          "page": "/",
-          "query": "pet feeder",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 50
         },
         {
           "page": "/futterautomat-fuer-zwei-katzen/",
@@ -5964,6 +6007,14 @@
           "impressions": 4,
           "ctr": 0,
           "position": 7
+        },
+        {
+          "page": "/",
+          "query": "beuteerkennung",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 70.3
         },
         {
           "page": "/beste-futterautomaten-fuer-zwei-katzen/",
@@ -6180,14 +6231,6 @@
           "impressions": 2,
           "ctr": 0,
           "position": 10.5
-        },
-        {
-          "page": "/",
-          "query": "beuteerkennung",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 72
         },
         {
           "page": "/",
@@ -7299,6 +7342,48 @@
           "impressions": 3,
           "ctr": 0,
           "position": 55.7
+        },
+        {
+          "date": "2026-08-28",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 58.8
+        },
+        {
+          "date": "2026-08-29",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 55
+        },
+        {
+          "date": "2026-08-30",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 50
+        },
+        {
+          "date": "2026-08-31",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        {
+          "date": "2026-09-01",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 21
+        },
+        {
+          "date": "2026-09-02",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
         }
       ],
       "recommendations": []
@@ -7306,19 +7391,19 @@
     "12m": {
       "key": "12m",
       "label": "Letzte 12 Monate",
-      "startDate": "2025-08-28",
-      "endDate": "2026-08-27",
-      "comparisonStartDate": "2024-08-28",
-      "comparisonEndDate": "2025-08-27",
+      "startDate": "2025-09-03",
+      "endDate": "2026-09-02",
+      "comparisonStartDate": "2024-09-03",
+      "comparisonEndDate": "2025-09-02",
       "dataState": "all",
       "partial": false,
       "lowData": false,
       "metrics": {
         "current": {
           "clicks": 20,
-          "impressions": 722,
-          "ctr": 2.77,
-          "position": 23.4
+          "impressions": 732,
+          "ctr": 2.73,
+          "position": 23.7
         },
         "previous": {
           "clicks": 0,
@@ -7329,17 +7414,17 @@
         "change": {
           "clicks": 100,
           "impressions": 100,
-          "ctr": 2.77,
-          "position": -23.4
+          "ctr": 2.73,
+          "position": -23.7
         }
       },
       "pages": [
         {
           "page": "/smarte-futterautomaten/",
           "clicks": 0,
-          "impressions": 87,
+          "impressions": 88,
           "ctr": 0,
-          "position": 41.6
+          "position": 41.1
         },
         {
           "page": "/hersteller/petlibro/",
@@ -7354,6 +7439,13 @@
           "impressions": 37,
           "ctr": 2.7,
           "position": 23.3
+        },
+        {
+          "page": "/",
+          "clicks": 1,
+          "impressions": 31,
+          "ctr": 3.23,
+          "position": 37.6
         },
         {
           "page": "/beste-futterautomaten-fuer-zwei-katzen/",
@@ -7375,13 +7467,6 @@
           "impressions": 26,
           "ctr": 0,
           "position": 12.4
-        },
-        {
-          "page": "/",
-          "clicks": 1,
-          "impressions": 23,
-          "ctr": 4.35,
-          "position": 31.1
         },
         {
           "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
@@ -7426,6 +7511,13 @@
           "position": 8.9
         },
         {
+          "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "clicks": 1,
+          "impressions": 17,
+          "ctr": 5.88,
+          "position": 29.1
+        },
+        {
           "page": "/katzenwasser-taeglich-wechseln/",
           "clicks": 0,
           "impressions": 17,
@@ -7438,13 +7530,6 @@
           "impressions": 17,
           "ctr": 0,
           "position": 59.5
-        },
-        {
-          "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-          "clicks": 1,
-          "impressions": 16,
-          "ctr": 6.25,
-          "position": 30.8
         },
         {
           "page": "/beste-futterautomaten-fuer-katzen/",
@@ -8112,6 +8197,13 @@
           "position": 30
         },
         {
+          "page": "/produkt/petlibro-air-wifi-feeder/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 21
+        },
+        {
           "page": "/produkt/petlibro-glacier-ultrafiltration/",
           "clicks": 0,
           "impressions": 1,
@@ -8268,6 +8360,13 @@
           "position": 55.1
         },
         {
+          "query": "petsafe bewertung",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 47.2
+        },
+        {
           "query": "futterautomat für 2 katzen",
           "clicks": 0,
           "impressions": 7,
@@ -8277,16 +8376,9 @@
         {
           "query": "pet feeder",
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 7,
           "ctr": 0,
-          "position": 46.5
-        },
-        {
-          "query": "petsafe bewertung",
-          "clicks": 0,
-          "impressions": 6,
-          "ctr": 0,
-          "position": 46.3
+          "position": 49.9
         },
         {
           "query": "petkit yumshare solo 2",
@@ -8374,6 +8466,13 @@
         },
         {
           "query": "beste katzenbrunnen",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 70.3
+        },
+        {
+          "query": "beuteerkennung",
           "clicks": 0,
           "impressions": 3,
           "ctr": 0,
@@ -8560,13 +8659,6 @@
           "impressions": 1,
           "ctr": 0,
           "position": 77
-        },
-        {
-          "query": "beuteerkennung",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 72
         },
         {
           "query": "cat feeder",
@@ -9090,6 +9182,14 @@
           "position": 55.1
         },
         {
+          "page": "/",
+          "query": "petsafe bewertung",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 47.2
+        },
+        {
           "page": "/vergleiche/",
           "query": "fütterungsroboter im vergleich",
           "clicks": 0,
@@ -9099,11 +9199,11 @@
         },
         {
           "page": "/",
-          "query": "petsafe bewertung",
+          "query": "pet feeder",
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 5,
           "ctr": 0,
-          "position": 46.3
+          "position": 54
         },
         {
           "page": "/hersteller/petlibro/",
@@ -9120,14 +9220,6 @@
           "impressions": 5,
           "ctr": 0,
           "position": 6.6
-        },
-        {
-          "page": "/",
-          "query": "pet feeder",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 50
         },
         {
           "page": "/futterautomat-fuer-zwei-katzen/",
@@ -9216,6 +9308,14 @@
           "impressions": 4,
           "ctr": 0,
           "position": 7
+        },
+        {
+          "page": "/",
+          "query": "beuteerkennung",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 70.3
         },
         {
           "page": "/beste-futterautomaten-fuer-zwei-katzen/",
@@ -9432,14 +9532,6 @@
           "impressions": 2,
           "ctr": 0,
           "position": 10.5
-        },
-        {
-          "page": "/",
-          "query": "beuteerkennung",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 72
         },
         {
           "page": "/",
@@ -10551,6 +10643,48 @@
           "impressions": 3,
           "ctr": 0,
           "position": 55.7
+        },
+        {
+          "date": "2026-08-28",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 58.8
+        },
+        {
+          "date": "2026-08-29",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 55
+        },
+        {
+          "date": "2026-08-30",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 50
+        },
+        {
+          "date": "2026-08-31",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        {
+          "date": "2026-09-01",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 21
+        },
+        {
+          "date": "2026-09-02",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
         }
       ],
       "recommendations": []

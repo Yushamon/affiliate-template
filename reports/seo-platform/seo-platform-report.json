@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T09:03:20.419Z",
+  "generatedAt": "2026-09-03T06:49:54.959Z",
   "errors": 9,
   "warnings": 93,
   "portfolio": [],
@@ -1804,7 +1804,7 @@
           "src": "../../assets/images/products/petlibro-scout-smart-camera/hero.webp",
           "alt": "Redaktionelle Darstellung einer festen Haustierkamera als Einstieg in den Klassenvergleich"
         },
-        "tableTitle": "Fünf Speicher- und Kameraklassen direkt vergleichen",
+        "tableTitle": "Sechs Speicher- und Kameraklassen direkt vergleichen",
         "cardsTitle": "Welche Klasse löst die Aufgabe?",
         "items": [
           "slug: \"furbo-360-katzenkamera",
@@ -13887,7 +13887,7 @@
           "current": 29,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:26:42.091Z",
+          "checkedAt": "2026-09-02T05:59:49.976Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -13904,12 +13904,12 @@
         "rating": 3.9,
         "score": 79,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:26:42.091Z",
+        "priceUpdated": "2026-09-02T05:59:49.976Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:26:42.091Z",
+        "availabilityUpdated": "2026-09-02T05:59:49.976Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -14201,7 +14201,7 @@
           "currency": "EUR",
           "status": "unknown",
           "comparisonText": "Die typische Spanne basiert auf 10 aktuell hinterlegten Vergleichspreisen derselben Kategorie.",
-          "checkedAt": "2026-08-21T11:26:44.169Z",
+          "checkedAt": "2026-09-02T05:59:51.972Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -14218,12 +14218,12 @@
         "rating": 3.5,
         "score": 71,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:26:44.169Z",
+        "priceUpdated": "2026-09-02T05:59:51.972Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:26:44.169Z",
+        "availabilityUpdated": "2026-09-02T05:59:51.972Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -14733,11 +14733,11 @@
           ]
         },
         "price": {
-          "current": 42.33,
+          "current": 43.99,
           "currency": "EUR",
           "status": "unknown",
           "comparisonText": "Die typische Spanne basiert auf 12 aktuell hinterlegten Vergleichspreisen derselben Kategorie.",
-          "checkedAt": "2026-08-21T11:26:48.772Z",
+          "checkedAt": "2026-09-02T05:59:55.553Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -14754,12 +14754,12 @@
         "rating": 3.6,
         "score": 73,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:26:48.772Z",
+        "priceUpdated": "2026-09-02T05:59:55.553Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:26:48.772Z",
+        "availabilityUpdated": "2026-09-02T05:59:55.553Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -15118,6 +15118,23 @@
           "{ question: \"Braucht die 355W eine App?\", answer: \"Nein. Programmierung und Status erfolgen lokal über Tasten und LCD.\" }"
         ],
         "editorial": "{ assessmentType: \"data-review\", evidence: [\"manufacturer-documentation\", \"technical-specifications\", \"comparative-analysis\"], testedHandsOn: false, lastVerifiedAt: \"2026-08-16\", note: \"Herstellerdaten; kein eigener Einbau- oder Praxistest.\" }",
+        "multiPet": "{ sharedUse: supported, identificationMethods: [microchip, rfidTag], individualProfiles: supported, individualAccess: partial, individualFeeding: notApplicable, individualUsageData: unavailable, identitiesStored: 9, identifiesPresence: supported, identifiesIndividual: supported, controlsAccess: supported, attributesUsage: unavailable, attributesHealthData: notApplicable, individualRules: partial, individualSchedules: unavailable, similarPetLimitation: { status: noneDocumented, description: \"Selektiver Eingang; Timer/Ausgang gelten gemeinsam.\" }, evidenceSourceUrls: [\"https://closerpets.co.uk/products/elite-microchip-flap-timer-control\"] }",
+        "lifecycleDependency": {
+          "profilePersistence": {
+            "status": "supported",
+            "detail": "Closer Pets bestätigt, dass gespeicherte Tier-IDs beim Batteriewechsel erhalten bleiben.",
+            "sourceUrl": "https://closerpets.co.uk/pages/faq-elite-microchip-cat-flap-with-timer-control-faqs-355",
+            "sourceType": "support",
+            "verifiedAt": "2026-08-31"
+          },
+          "settingsPersistence": "{ status: unknown, detail: \"Der Erhalt aller Timer- und Sperreinstellungen nach längerem stromlosen Zustand ist nicht vollständig dokumentiert.\" }",
+          "serviceEndFallback": "{ status: notApplicable, detail: \"Die lokale Chip- und Timerfunktion benötigt keinen Cloud-Dienst.\" }"
+        },
+        "repairability": {
+          "parts": [
+            "{ type: door, status: supported, officialPart: true, partNumber: \"931\", detail: \"Closer Pets führt eine offizielle Ersatzklappe als Part 931.\", sourceUrl: \"https://closerpets.co.uk/products/elite-microchip-flap-timer-control\", sourceType: manufacturer, verifiedAt: \"2026-08-31\" }"
+          ]
+        },
         "evidenceSources": [
           "{ source: \"Closer Pets – Elite Microchip Flap with Timer Control\", url: \"https://closerpets.co.uk/products/elite-microchip-flap-timer-control\", accessedAt: \"2026-08-16\", assertion: \"Chip, Timer, LCD, Maße, Batterien und Kapazität sind Herstellerangaben.\", fields: [\"specs\", \"decision\", \"comparisonData\"] }",
           "{ source: \"Closer Pets – 355 FAQ\", url: \"https://closerpets.co.uk/pages/faq-elite-microchip-cat-flap-with-timer-control-faqs-355\", accessedAt: \"2026-08-16\", assertion: \"Gemeinsamer Timer und Grenzen der selektiven Richtungssteuerung stammen aus dem Herstellersupport.\", fields: [\"faq\", \"weaknesses\"] }",
@@ -15457,10 +15474,10 @@
           ]
         },
         "price": {
-          "current": 100.68,
+          "current": 101.18,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:26:50.864Z",
+          "checkedAt": "2026-09-02T05:59:57.573Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -15477,12 +15494,12 @@
         "rating": 4,
         "score": 80,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:26:50.864Z",
+        "priceUpdated": "2026-09-02T05:59:57.573Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:26:50.864Z",
+        "availabilityUpdated": "2026-09-02T05:59:57.573Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -16236,10 +16253,10 @@
           ]
         },
         "price": {
-          "current": 239.99,
+          "current": 198.53,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:26:53.241Z",
+          "checkedAt": "2026-08-28T09:03:49.652Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -16255,12 +16272,12 @@
           "target": "_blank"
         },
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:26:53.241Z",
+        "priceUpdated": "2026-08-28T09:03:49.652Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:26:53.241Z",
+        "availabilityUpdated": "2026-08-28T09:03:49.652Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -16485,6 +16502,8 @@
           "lastVerifiedAt": "2026-08-07",
           "note": "Bewertung aus öffentlich zugänglicher Bedienungsdokumentation, deutschen Händlerdaten, Preisvergleichsdaten und verifizierten Marktplatz-Käuferstimmen. Keine eigene Praxiserfahrung. Widersprüchliche Angaben werden ausdrücklich gekennzeichnet."
         },
+        "litterCompatibility": "{ bentoniteClumping: { status: unknown }, tofu: { status: unknown }, plantBased: { status: unknown }, woodPellets: { status: unknown }, crystal: { status: unknown }, nonClumping: { status: unknown }, evidenceSourceUrls: [] }",
+        "multiPet": "{ sharedUse: unknown, identificationMethods: [unknown], individualProfiles: unknown, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: unknown, similarPetLimitation: { status: unknown, description: \"Händlerangaben bestimmen keinen Herstellerstatus.\" }, evidenceSourceUrls: [] }",
         "evidenceSources": [
           "source: \"Devoko MW-0769A-0808-MSP-2 – öffentlich zugängliche Bedienungsdokumentation",
           "source: \"eBay Deutschland – Devoko 90L / GUNJI",
@@ -16548,10 +16567,10 @@
           "gallery": []
         },
         "price": {
-          "current": 129.99,
+          "current": 159.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-07T10:03:40.815Z",
+          "checkedAt": "2026-08-28T09:03:51.768Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -16637,12 +16656,12 @@
           "target": "_blank"
         },
         "priceState": "available",
-        "priceUpdated": "2026-08-07T10:03:40.815Z",
+        "priceUpdated": "2026-08-28T09:03:51.768Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-07T10:03:40.815Z",
+        "availabilityUpdated": "2026-08-28T09:03:51.768Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete"
@@ -16705,7 +16724,7 @@
           "current": 124.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:26:57.194Z",
+          "checkedAt": "2026-09-02T06:00:03.269Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -16800,12 +16819,12 @@
           "note": "Die professionelle Quelle behandelt eindeutig den aktuellen ROLA Mini und dokumentiert drei Wochen Nutzung. Chewy liefert nur acht Ratings und sieben ausgeschriebene Bewertungen; die Nutzerbasis ist daher noch klein."
         },
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:26:57.194Z",
+        "priceUpdated": "2026-09-02T06:00:03.269Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:26:57.194Z",
+        "availabilityUpdated": "2026-09-02T06:00:03.269Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete"
@@ -16896,14 +16915,15 @@
         },
         "priceAutomation": "editorial",
         "priceState": "unknown",
+        "priceUpdated": "2026-08-15T00:00:00.000Z",
         "priceAvailable": false,
         "affiliateAvailable": false,
         "availability": "out-of-stock",
         "availabilityReason": "Der offizielle deutsche Enabot-Shop zeigte das Modell am 15.08.2026 als nicht auf Lager; daraus folgt keine Einstellung.",
         "availabilityUpdated": "2026-08-15",
-        "editorialStatus": "required",
-        "recommendationStatus": "limited",
-        "maintenanceStatus": "required",
+        "editorialStatus": "archived",
+        "recommendationStatus": "archived",
+        "maintenanceStatus": "archived",
         "rating": 3.7,
         "ratings": {
           "ortung": 4.3,
@@ -17403,18 +17423,30 @@
             "src": "../../assets/images/products/furbo-360-hundekamera/hero.webp",
             "alt": "Furbo 360° Hundekamera in hochwertiger Produktansicht"
           },
-          "gallery": []
+          "gallery": [
+            "src: \"../../assets/images/products/furbo-360-hundekamera/gallery-1.webp",
+            "src: \"../../assets/images/products/furbo-360-hundekamera/gallery-2.webp",
+            "src: \"../../assets/images/products/furbo-360-hundekamera/gallery-3.webp"
+          ],
+          "thumbnail": {
+            "src": "../../assets/images/products/furbo-360-hundekamera/thumbnail.webp",
+            "alt": "Furbo 360° Hundekamera als kompakte Produktansicht"
+          },
+          "comparison": {
+            "src": "../../assets/images/products/furbo-360-hundekamera/comparison.webp",
+            "alt": "Furbo 360° Hundekamera im Produktvergleich"
+          }
         },
         "price": {
-          "current": 199,
+          "current": 49,
           "currency": "EUR",
           "status": "unknown",
           "comparisonText": "https://amzn.to/46asA9o",
-          "checkedAt": "2026-08-21T11:56:26.290Z",
+          "checkedAt": "2026-09-02T06:00:07.316Z",
           "source": {
-            "id": "manual",
+            "id": "amazon.de",
             "label": "amazon.de",
-            "type": "manual"
+            "type": "merchant"
           }
         },
         "rating": 3.6,
@@ -17496,12 +17528,12 @@
           "target": "_blank"
         },
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:56:26.290Z",
+        "priceUpdated": "2026-09-02T06:00:07.316Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:56:26.290Z",
+        "availabilityUpdated": "2026-09-02T06:00:07.316Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete"
@@ -17730,14 +17762,14 @@
           ]
         },
         "price": {
-          "current": 98,
+          "current": 81,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:38:35.720Z",
+          "checkedAt": "2026-09-02T06:00:09.313Z",
           "source": {
-            "id": "manual",
+            "id": "amazon.de",
             "label": "amazon.de",
-            "type": "manual"
+            "type": "merchant"
           }
         },
         "rating": 3.7,
@@ -17826,12 +17858,12 @@
           "note": "The Independent testete ausdrücklich die Furbo Mini 360. Trustpilot umfasst die gesamte Furbo-Produkt- und Serviceerfahrung und wird deshalb als brand-wide geführt; die Gesamtwertung darf nicht als produktspezifisches Mini-360-Rating verwendet werden."
         },
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:38:35.720Z",
+        "priceUpdated": "2026-09-02T06:00:09.313Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:38:35.720Z",
+        "availabilityUpdated": "2026-09-02T06:00:09.313Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete"
@@ -17909,10 +17941,10 @@
           ]
         },
         "price": {
-          "current": 312.89,
+          "current": 308.85,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-17T14:41:36.336Z",
+          "checkedAt": "2026-09-02T06:00:11.482Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -17929,12 +17961,12 @@
         "rating": 4,
         "score": 81,
         "priceState": "available",
-        "priceUpdated": "2026-08-17T14:41:36.336Z",
+        "priceUpdated": "2026-09-02T06:00:11.482Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-17T14:41:36.336Z",
+        "availabilityUpdated": "2026-09-02T06:00:11.482Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -18809,10 +18841,10 @@
           ]
         },
         "price": {
-          "current": 99.99,
+          "current": 109.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:27:07.734Z",
+          "checkedAt": "2026-09-02T06:00:13.815Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -18829,12 +18861,12 @@
         "rating": 4,
         "score": 79,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:07.734Z",
+        "priceUpdated": "2026-09-02T06:00:13.815Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:07.734Z",
+        "availabilityUpdated": "2026-09-02T06:00:13.815Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -19307,10 +19339,10 @@
           ]
         },
         "price": {
-          "current": 31.34,
+          "current": 32.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:27:09.998Z",
+          "checkedAt": "2026-09-02T06:00:16.442Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -19327,12 +19359,12 @@
         "rating": 3.9,
         "score": 79,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:09.998Z",
+        "priceUpdated": "2026-09-02T06:00:16.442Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:09.998Z",
+        "availabilityUpdated": "2026-09-02T06:00:16.442Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -19954,6 +19986,47 @@
           "{ question: \"Wurde das Gerät selbst getestet?\", answer: \"Nein. Die Seite ordnet Hersteller- und Manualdaten ein und behauptet keinen eigenen Praxistest.\" }"
         ],
         "editorial": "{ assessmentType: \"data-review\", evidence: [\"manufacturer-documentation\", \"technical-specifications\", \"comparative-analysis\"], testedHandsOn: false, lastVerifiedAt: \"2026-08-16\", note: \"Herstellerdaten; kein eigener Produkttest.\" }",
+        "litterCompatibility": "{ bentoniteClumping: { status: conditional, condition: \"Standardgewichtige klumpende Tonstreu; Siebfähigkeit erforderlich.\" }, tofu: { status: unknown }, plantBased: { status: notSupported, condition: \"Viele pflanzliche Streus ausgeschlossen.\" }, woodPellets: { status: notSupported }, crystal: { status: conditional, condition: \"Nur einzelne siebgängige Silikakristallstreus.\" }, nonClumping: { status: notSupported }, evidenceSourceUrls: [\"https://www.litter-robot.com/litter-robot/litter-robot-4.html\"] }",
+        "multiPet": "{ sharedUse: supported, identificationMethods: [weight], individualProfiles: supported, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: supported, similarPetLimitation: { status: unknown, description: \"Keine Mindestgewichtsdifferenz dokumentiert.\" }, evidenceSourceUrls: [\"https://www.litter-robot.com/eu/de/litter-robot-4.html\"] }",
+        "sensorLimits": {
+          "minimumOperationalWeightKg": 1.36,
+          "automaticModeMinimumWeightKg": 1.36,
+          "belowMinimumBehavior": "manualOnly",
+          "calibrationRequirement": {
+            "status": "conditional",
+            "detail": "Die Gewichtssensoren nullen beim Einschalten und nach einem abgeschlossenen Zyklus; Änderungen an Streu oder Standort erfordern einen korrekten Reset.",
+            "sourceUrl": "https://www.litter-robot.com/manual_pdf/Litter-Robot-4-Manual-EN-DE-FR-IT.pdf",
+            "sourceType": "manual",
+            "verifiedAt": "2026-08-31"
+          },
+          "environmentDependency": {
+            "status": "conditional",
+            "detail": "Für korrekte Gewichtswerte ist ein fester, ebener Stand nötig; für Teppich bietet Whisker eine modellbezogene Carpet Tray an.",
+            "sourceUrl": "https://www.litter-robot.com/support/article/litter-robot-4-not-cycling/",
+            "sourceType": "support",
+            "verifiedAt": "2026-08-31"
+          },
+          "identificationLimitation": "{ status: unknown, detail: \"Eine Mindestgewichtsdifferenz zur zuverlässigen Trennung ähnlich schwerer Katzen ist nicht veröffentlicht.\" }",
+          "sourceUrl": "https://www.litter-robot.com/eu/litter-robot-4.html",
+          "sourceType": "manufacturer",
+          "verifiedAt": "2026-08-31"
+        },
+        "failureModes": {
+          "mechanicalBlock": {
+            "status": "partial",
+            "behavior": "Erkennt ein Vorhang- oder Gewichtssensor während des Zyklus eine Katze beziehungsweise Zusatzgewicht, stoppt die Trommel. Nach Freigabe kann sie fortsetzen; bei anhaltender Blockade sind Lichtcode und manueller Reset maßgeblich.",
+            "sourceUrl": "https://www.litter-robot.com/manual_pdf/Litter-Robot-4-Manual-EN-DE-FR-IT.pdf",
+            "sourceType": "manual",
+            "verifiedAt": "2026-08-31"
+          }
+        },
+        "repairability": {
+          "parts": [
+            "{ type: filter, status: supported, officialPart: true, detail: \"Whisker führt den Aktivkohlefilter als offizielles austauschbares Verbrauchsteil.\", sourceUrl: \"https://www.litter-robot.com/support/article/litter-robot-4-use-and-care/\", sourceType: support, verifiedAt: \"2026-08-31\" }",
+            "{ type: seal, status: supported, officialPart: true, detail: \"Die Bürstendichtstreifen sollen bei Abnutzung ersetzt werden und werden offiziell angeboten.\", sourceUrl: \"https://www.litter-robot.com/support/article/litter-robot-4-use-and-care/\", sourceType: support, verifiedAt: \"2026-08-31\" }",
+            "{ type: base, status: supported, officialPart: true, detail: \"Für die Basis existiert eine offizielle Installationsanleitung; daraus folgt keine pauschale Nutzerreparatur anderer Elektronik.\", sourceUrl: \"https://www.litter-robot.com/eu/support/litter-robot-4/\", sourceType: support, verifiedAt: \"2026-08-31\" }"
+          ]
+        },
         "evidenceSources": [
           "{ source: \"Whisker EU – Litter-Robot 4\", url: \"https://www.litter-robot.com/eu/de/litter-robot-4.html\", accessedAt: \"2026-08-16\", assertion: \"Eingang, Gewicht, Katzenprofil, Mehrkatzenangabe, App und Strom sind Herstellerangaben.\", fields: [\"specs\", \"decision\", \"comparisonData\"] }",
           "{ source: \"Litter-Robot 4 Bedienungsanleitung\", url: \"https://www.litter-robot.com/manual_pdf/Litter-Robot-4-Manual-EN-DE-FR-IT_LR4-8018-0B.pdf\", accessedAt: \"2026-08-16\", assertion: \"Außenmaße, Einstiegshöhe, Innenraum und Betriebsgrenzen stammen aus dem Herstellerhandbuch.\", fields: [\"specs\", \"faq\"] }",
@@ -20019,7 +20092,7 @@
         "availability": "unknown",
         "editorialStatus": "complete",
         "recommendationStatus": "limited",
-        "maintenanceStatus": "complete",
+        "maintenanceStatus": "required",
         "ratings": "{ sicherheit: 3.8, platz: 3.1, reinigung: 4.0, folgekosten: 2.8, datenschutz: 2.8 }",
         "externalEvidence": {
           "professionalReviews": [
@@ -20092,6 +20165,8 @@
           "custom": "{ system: \"Geschlossene Trommel\", mindestgewicht: \"ca. 1,36 kg\", einstieg: \"Weit, aber geschlossen\", sicherheit: \"Sensorik; Herstellerangabe\", streu: \"Klumpend und siebfähig\", app: \"Besuche, Gewicht, Kamera\", kosten: \"Beutel, Streu, optional Whisker+\" }"
         },
         "decisionJourney": "{ cluster: \"automatische-katzentoiletten\", stage: \"decision\", intent: \"litter-robot-5-pro-pruefen\", primaryQuestion: \"Passen Katze, geschlossenes Trommelsystem, Stellplatz und Whisker+-Kosten zusammen?\", next: [\"/vergleiche/beste-automatische-katzentoiletten/\"], fallback: [\"/automatische-katzentoiletten/\"] }",
+        "litterCompatibility": "{ bentoniteClumping: { status: conditional, condition: \"Nur klumpende, siebfähige Streu belegt; Material nicht weiter spezifiziert.\" }, tofu: { status: unknown }, plantBased: { status: unknown }, woodPellets: { status: unknown }, crystal: { status: unknown }, nonClumping: { status: unknown }, evidenceSourceUrls: [\"https://www.whisker.com/litter-robot-5-pro\"] }",
+        "multiPet": "{ sharedUse: supported, identificationMethods: [weight, cameraAi], individualProfiles: supported, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: supported, similarPetLimitation: { status: unknown, description: \"WasteID belegt; Mindestgewichtsdifferenz nicht.\" }, evidenceSourceUrls: [\"https://www.whisker.com/litter-robot-5-pro\"] }",
         "evidenceSources": [
           "{ source: \"Whisker\", url: \"https://www.whisker.com/litter-robot-5-pro\", accessedAt: \"2026-08-06\", assertion: \"Dualkamera, WasteID, Gewichtsbereich, Mehrkatzenangabe und Whisker+-Abhängigkeit sind Herstellerangaben.\", fields: [\"specs\", \"decision\", \"strengths\", \"weaknesses\"] }"
         ]
@@ -20197,7 +20272,7 @@
         "availabilityReason": "Preis und Lieferstatus werden nicht als dauerhafte redaktionelle Angabe gespeichert.",
         "availabilityUpdated": "2026-08-15",
         "editorialStatus": "complete",
-        "recommendationStatus": "recommended",
+        "recommendationStatus": "limited",
         "maintenanceStatus": "complete",
         "ratings": {
           "sicherheit": 4.2,
@@ -20357,6 +20432,8 @@
           "lastVerifiedAt": "2026-08-07",
           "note": "Bewertung auf Basis aktueller Neakasa-Herstellerdaten. Keine eigene Praxiserfahrung oder Langzeitnutzung als Bewertungsgrundlage."
         },
+        "litterCompatibility": "{ bentoniteClumping: { status: supported }, tofu: { status: unknown }, plantBased: { status: unknown }, woodPellets: { status: notSupported }, crystal: { status: unknown }, nonClumping: { status: notSupported }, evidenceSourceUrls: [\"https://eu.neakasa.com/products/m1-lite-self-cleaning-cat-litter-box\"] }",
+        "multiPet": "{ sharedUse: supported, identificationMethods: [weight], individualProfiles: partial, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: partial, similarPetLimitation: { status: unknown, description: \"Keine Mindestgewichtsdifferenz dokumentiert.\" }, evidenceSourceUrls: [\"https://eu.neakasa.com/products/m1-lite-self-cleaning-cat-litter-box\"] }",
         "evidenceSources": [
           "source: \"Neakasa EU",
           "source: \"Neakasa Lifecycle-Vergleich"
@@ -20420,7 +20497,7 @@
           "current": 399.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-15T17:08:42.423Z",
+          "checkedAt": "2026-09-02T06:00:18.369Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -20501,6 +20578,8 @@
           "custom": "{ system: \"Offene Siebtrommel\", mindestgewicht: \"ca. 1 kg; darunter Kitten-Modus\", einstieg: \"ca. 35,2 cm, oben offen\", sicherheit: \"6 IR-Sensorgruppen; Herstellerangabe\", streu: \"Schnell klumpend, siebfähig\", app: \"Nutzung und Füllstand\", kosten: \"Streu und passende Beutel\" }"
         },
         "decisionJourney": "{ cluster: \"automatische-katzentoiletten\", stage: \"decision\", intent: \"neakasa-m1-plus-pruefen\", primaryQuestion: \"Passt die offene Bauform trotz hohem Einstieg zu Katze, Streu und Stellplatz?\", next: [\"/vergleiche/beste-automatische-katzentoiletten/\"], fallback: [\"/automatische-katzentoiletten/\"] }",
+        "litterCompatibility": "{ bentoniteClumping: { status: conditional, condition: \"Schnell klumpend und siebfähig.\" }, tofu: { status: unknown }, plantBased: { status: unknown }, woodPellets: { status: notSupported }, crystal: { status: unknown }, nonClumping: { status: notSupported }, evidenceSourceUrls: [\"https://neakasa.com/products/neakasa-m1-cat-litter-box\"] }",
+        "multiPet": "{ sharedUse: supported, identificationMethods: [weight], individualProfiles: partial, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: partial, similarPetLimitation: { status: unknown, description: \"Keine Mindestgewichtsdifferenz dokumentiert.\" }, evidenceSourceUrls: [\"https://neakasa.com/products/neakasa-m1-cat-litter-box\"] }",
         "evidenceSources": [
           "{ source: \"Neakasa\", url: \"https://neakasa.com/products/neakasa-m1-cat-litter-box\", accessedAt: \"2026-08-06\", assertion: \"Offene Bauform, Gewichtsbereich, Einstieg, Sensorik, Streu, App und Volumen sind Herstellerangaben.\", fields: [\"specs\", \"decision\", \"strengths\", \"weaknesses\"] }"
         ],
@@ -20512,12 +20591,12 @@
           "target": "_blank"
         },
         "priceState": "available",
-        "priceUpdated": "2026-08-15T17:08:42.423Z",
+        "priceUpdated": "2026-09-02T06:00:18.369Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-15T17:08:42.423Z",
+        "availabilityUpdated": "2026-09-02T06:00:18.369Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete"
@@ -20595,10 +20674,10 @@
           ]
         },
         "price": {
-          "current": 27.99,
+          "current": 27.54,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:27:12.624Z",
+          "checkedAt": "2026-09-02T06:00:20.215Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -20615,12 +20694,12 @@
         "rating": 3.8,
         "score": 76,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:12.624Z",
+        "priceUpdated": "2026-09-02T06:00:20.215Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:12.624Z",
+        "availabilityUpdated": "2026-09-02T06:00:20.215Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -20838,7 +20917,7 @@
           "current": 56.52,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:27:14.578Z",
+          "checkedAt": "2026-09-02T06:00:22.298Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -20855,12 +20934,12 @@
         "rating": 3.9,
         "score": 79,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:14.578Z",
+        "priceUpdated": "2026-09-02T06:00:22.298Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:14.578Z",
+        "availabilityUpdated": "2026-09-02T06:00:22.298Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -21160,10 +21239,10 @@
           ]
         },
         "price": {
-          "current": 44.78,
+          "current": 62.93,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:27:16.608Z",
+          "checkedAt": "2026-09-02T06:00:24.088Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -21180,12 +21259,12 @@
         "rating": 4.4,
         "score": 87,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:16.608Z",
+        "priceUpdated": "2026-09-02T06:00:24.088Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:16.608Z",
+        "availabilityUpdated": "2026-09-02T06:00:24.088Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -21732,11 +21811,11 @@
           ]
         },
         "price": {
-          "current": 47.49,
+          "current": 49.99,
           "currency": "EUR",
           "status": "unknown",
           "comparisonText": "Die typische Spanne basiert auf 14 aktuell hinterlegten Vergleichspreisen derselben Kategorie.",
-          "checkedAt": "2026-08-21T11:27:20.584Z",
+          "checkedAt": "2026-09-02T06:00:27.552Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -21753,12 +21832,12 @@
         "rating": 3.6,
         "score": 73,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:20.584Z",
+        "priceUpdated": "2026-09-02T06:00:27.552Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:20.584Z",
+        "availabilityUpdated": "2026-09-02T06:00:27.552Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -22011,10 +22090,10 @@
           ]
         },
         "price": {
-          "current": 69.99,
+          "current": 56.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:27:22.694Z",
+          "checkedAt": "2026-09-02T06:00:29.556Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -22031,12 +22110,12 @@
         "rating": 4.1,
         "score": 82,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:22.694Z",
+        "priceUpdated": "2026-09-02T06:00:29.556Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:22.694Z",
+        "availabilityUpdated": "2026-09-02T06:00:29.556Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -22321,14 +22400,14 @@
           ]
         },
         "price": {
-          "current": 593.99,
+          "current": 327.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-06T07:18:46.717Z",
+          "checkedAt": "2026-09-02T06:00:30.066Z",
           "source": {
-            "id": "manual",
-            "label": "OnlyCat Deutschland",
-            "type": "manual"
+            "id": "onlycat.com",
+            "label": "onlycat.com",
+            "type": "merchant"
           }
         },
         "affiliate": {
@@ -22341,12 +22420,12 @@
         "editorial": "{ assessmentType: \"data-review\", evidence: [\"manufacturer-documentation\", \"technical-specifications\", \"comparative-analysis\"], testedHandsOn: false, lastVerifiedAt: \"2026-08-04\", note: \"Kein eigener Praxistest; Erkennungsleistung nicht unabhängig verifiziert.\" }",
         "rating": 3.6,
         "priceState": "available",
-        "priceUpdated": "2026-08-06T07:18:46.717Z",
+        "priceUpdated": "2026-09-02T06:00:30.066Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
-        "availabilityReason": "Im deutschsprachigen EU-Shop am 04.08.2026 bestellbar; Einmalzahlung und Abo-Hardware werden getrennt angeboten.",
-        "availabilityUpdated": "2026-08-06T07:18:46.717Z",
+        "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
+        "availabilityUpdated": "2026-09-02T06:00:30.066Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -22517,7 +22596,7 @@
           "current": 58.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:27:27.523Z",
+          "checkedAt": "2026-09-02T06:00:31.990Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -22534,12 +22613,12 @@
         "rating": 4.1,
         "score": 82,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:27.523Z",
+        "priceUpdated": "2026-09-02T06:00:31.990Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:27.523Z",
+        "availabilityUpdated": "2026-09-02T06:00:31.990Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -23351,7 +23430,7 @@
           "currency": "EUR",
           "status": "unknown",
           "comparisonText": "Die typische Spanne basiert auf 15 aktuell hinterlegten Vergleichspreisen derselben Kategorie.",
-          "checkedAt": "2026-08-21T11:27:29.618Z",
+          "checkedAt": "2026-09-02T06:00:33.864Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -23368,12 +23447,12 @@
         "rating": 4.6,
         "score": 91,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:29.618Z",
+        "priceUpdated": "2026-09-02T06:00:33.864Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:29.618Z",
+        "availabilityUpdated": "2026-09-02T06:00:33.864Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -23620,7 +23699,7 @@
           "current": 89.98,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:27:31.822Z",
+          "checkedAt": "2026-09-02T06:00:35.908Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -23637,12 +23716,12 @@
         "rating": 4.2,
         "score": 84,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:31.822Z",
+        "priceUpdated": "2026-09-02T06:00:35.908Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:31.822Z",
+        "availabilityUpdated": "2026-09-02T06:00:35.908Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -24718,7 +24797,7 @@
           "currency": "EUR",
           "status": "unknown",
           "comparisonText": "Die typische Spanne basiert auf 8 aktuell hinterlegten Vergleichspreisen derselben Kategorie.",
-          "checkedAt": "2026-08-21T11:27:33.547Z",
+          "checkedAt": "2026-09-02T06:00:37.707Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -24735,12 +24814,12 @@
         "rating": 4.4,
         "score": 87,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:33.547Z",
+        "priceUpdated": "2026-09-02T06:00:37.707Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:33.547Z",
+        "availabilityUpdated": "2026-09-02T06:00:37.707Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -24967,7 +25046,7 @@
           "current": 79,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:27:35.715Z",
+          "checkedAt": "2026-09-02T06:00:39.659Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -24984,12 +25063,12 @@
         "rating": 3.8,
         "score": 76,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:35.715Z",
+        "priceUpdated": "2026-09-02T06:00:39.659Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:35.715Z",
+        "availabilityUpdated": "2026-09-02T06:00:39.659Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -25224,10 +25303,10 @@
           ]
         },
         "price": {
-          "current": 269.99,
+          "current": 279.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:27:37.771Z",
+          "checkedAt": "2026-09-02T06:00:41.505Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -25244,12 +25323,12 @@
         "rating": 4.1,
         "score": 83,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:37.771Z",
+        "priceUpdated": "2026-09-02T06:00:41.505Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:37.771Z",
+        "availabilityUpdated": "2026-09-02T06:00:41.505Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -25818,10 +25897,10 @@
           ]
         },
         "price": {
-          "current": 75.99,
+          "current": 67.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:27:39.926Z",
+          "checkedAt": "2026-09-02T06:00:43.380Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -25838,12 +25917,12 @@
         "rating": 4,
         "score": 81,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:39.926Z",
+        "priceUpdated": "2026-09-02T06:00:43.380Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:39.926Z",
+        "availabilityUpdated": "2026-09-02T06:00:43.380Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -26318,6 +26397,8 @@
           "{ question: \"Welche Streu ist geeignet?\", answer: \"Dokumentiert sind klumpende Ton-, Tofu- und Mischstreu innerhalb der Partikelgrenzen. Nicht klumpende Streu ist keine sichere Annahme.\" }"
         ],
         "editorial": "{ assessmentType: \"data-review\", evidence: [\"manufacturer-documentation\", \"technical-specifications\", \"comparative-analysis\"], testedHandsOn: false, lastVerifiedAt: \"2026-08-16\", note: \"Herstellerdaten redaktionell eingeordnet; kein eigener Produkttest.\" }",
+        "litterCompatibility": "{ bentoniteClumping: { status: conditional, condition: \"Klumpende Tonstreu innerhalb 12 × 3 mm Partikelgrenze.\" }, tofu: { status: conditional, condition: \"Klumpend und innerhalb 12 × 3 mm Partikelgrenze.\" }, plantBased: { status: unknown }, woodPellets: { status: unknown }, crystal: { status: unknown }, nonClumping: { status: unknown }, evidenceSourceUrls: [\"https://www.petkit.com/products/petkit-puramax-2\"] }",
+        "multiPet": "{ sharedUse: supported, identificationMethods: [weight], individualProfiles: partial, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: partial, similarPetLimitation: { status: unknown, description: \"Keine Mindestgewichtsdifferenz abgesichert.\" }, evidenceSourceUrls: [\"https://www.petkit.com/products/petkit-puramax-2\"] }",
         "evidenceSources": [
           "{ source: \"PETKIT PuraMax 2\", url: \"https://www.petkit.com/products/petkit-puramax-2\", accessedAt: \"2026-08-16\", assertion: \"Modell, Abmessungen, Kapazität, Katzenprofil, Sensorik, App und Streukompatibilität sind Herstellerangaben.\", fields: [\"specs\", \"decision\", \"comparisonData\"] }",
           "{ source: \"PETKIT PuraMax 2 Bedienungsanleitung\", url: \"https://instructions.petkit.com/App%20Manual/T4-2/T4-2_User%20Manual_EN_V1.1_250305_%20.pdf\", accessedAt: \"2026-08-16\", assertion: \"Strom, Funk, Gewichts- und Betriebsgrenzen stammen aus der Herstelleranleitung.\", fields: [\"specs\", \"faq\"] }",
@@ -26503,6 +26584,8 @@
           "{ question: \"Erkennt der Crystal Duo Harnwegserkrankungen?\", answer: \"Nein. Kamera-, Verhaltens- und pH-bezogene Angaben sind Trends beziehungsweise Herstellerhinweise und keine medizinische Diagnose.\" }"
         ],
         "editorial": "{ assessmentType: \"data-review\", evidence: [\"manufacturer-documentation\", \"technical-specifications\", \"comparative-analysis\", \"user-feedback\"], testedHandsOn: false, lastVerifiedAt: \"2026-08-25\", note: \"Herstellerdaten redaktionell eingeordnet; kein eigener Produkttest.\" }",
+        "litterCompatibility": "{ bentoniteClumping: { status: notSupported, condition: \"System verlangt PETKIT Crystal Litter Set.\" }, tofu: { status: notSupported }, plantBased: { status: notSupported }, woodPellets: { status: notSupported }, crystal: { status: supported, condition: \"Nur PETKIT Crystal Litter Set mit Einwegschale.\" }, nonClumping: { status: notSupported }, evidenceSourceUrls: [\"https://www.petkit-eu.com/de/products/purobot-crystal-duo-automatic-cat-litter-box-with-camera\"] }",
+        "multiPet": "{ sharedUse: supported, identificationMethods: [weight, cameraAi], individualProfiles: supported, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: supported, similarPetLimitation: { status: unknown, description: \"Keine Mindestgewichtsdifferenz dokumentiert.\" }, evidenceSourceUrls: [\"https://www.petkit-eu.com/de/products/purobot-crystal-duo-automatic-cat-litter-box-with-camera\"] }",
         "evidenceSources": [
           "{ source: \"PETKIT Produktseite\", url: \"https://www.petkit.com/products/purobot-crystal-duo-cat-litter-box-with-camera\", accessedAt: \"2026-08-25\", assertion: \"Modell, Maße, Gewicht, Material, Nenneingang, Bauart, Einstieg, Verbrauchssystem, Kamera, WLAN und Herstellerfunktionen.\", fields: [\"specs\", \"features\", \"comparisonData\", \"images\"] }",
           "{ source: \"PETKIT EU Produktseite\", url: \"https://www.petkit-eu.com/de/products/purobot-crystal-duo-automatic-cat-litter-box-with-camera\", accessedAt: \"2026-08-25\", assertion: \"EU-Verfügbarkeit, Lieferumfang, Verbrauchssystem und regional angebotene Funktionen.\", fields: [\"availability\", \"specs\", \"features\"] }",
@@ -26760,6 +26843,8 @@
           "lastVerifiedAt": "2026-08-15",
           "note": "Herstellerdaten redaktionell eingeordnet; kein eigener Produkttest."
         },
+        "litterCompatibility": "{ bentoniteClumping: { status: conditional, condition: \"Klumpende Tonstreu; Filter- und Partikelgrenzen beachten.\" }, tofu: { status: conditional, condition: \"Klumpend; Partikel bis 12 mm Länge und 3 mm Durchmesser.\" }, plantBased: { status: unknown }, woodPellets: { status: unknown }, crystal: { status: unknown }, nonClumping: { status: unknown }, evidenceSourceUrls: [\"https://www.petkit.com/products/purobot-max-3\"] }",
+        "multiPet": "{ sharedUse: supported, identificationMethods: [weight, cameraAi], individualProfiles: supported, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: supported, similarPetLimitation: { status: unknown, description: \"Keine Mindestgewichtsdifferenz dokumentiert.\" }, evidenceSourceUrls: [\"https://www.petkit.com/products/purobot-max-3\"] }",
         "evidenceSources": [
           "source: \"PETKIT",
           "source: \"PETKIT Produktvorstellung",
@@ -26827,10 +26912,10 @@
           "gallery": []
         },
         "price": {
-          "current": 499.98,
+          "current": 599.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:27:41.708Z",
+          "checkedAt": "2026-08-28T09:04:40.363Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -26839,12 +26924,12 @@
         },
         "rating": 3.3,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:41.708Z",
+        "priceUpdated": "2026-08-28T09:04:40.363Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:41.708Z",
+        "availabilityUpdated": "2026-08-28T09:04:40.363Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -26973,6 +27058,8 @@
             "/automatische-katzentoiletten/"
           ]
         },
+        "litterCompatibility": "{ bentoniteClumping: { status: conditional, condition: \"Klumpende Bentonitstreu innerhalb Partikelgrenze.\" }, tofu: { status: conditional, condition: \"Klumpend; Partikel bis 12 mm.\" }, plantBased: { status: unknown }, woodPellets: { status: unknown }, crystal: { status: unknown }, nonClumping: { status: unknown }, evidenceSourceUrls: [\"https://www.petkit-eu.com/en-de/products/purobot-max-pro-2-automatic-cat-litter-box\"] }",
+        "multiPet": "{ sharedUse: supported, identificationMethods: [weight, cameraAi], individualProfiles: supported, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: supported, similarPetLimitation: { status: unknown, description: \"Keine Mindestgewichtsdifferenz dokumentiert.\" }, evidenceSourceUrls: [\"https://www.petkit-eu.com/en-de/products/purobot-max-pro-2-automatic-cat-litter-box\"] }",
         "evidenceSources": [
           "source: \"PETKIT EU",
           "source: \"PETKIT"
@@ -27065,7 +27152,7 @@
           "current": 109.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:27:43.605Z",
+          "checkedAt": "2026-09-02T06:03:48.194Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -27082,12 +27169,12 @@
         "rating": 4.8,
         "score": 95,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:43.605Z",
+        "priceUpdated": "2026-09-02T06:03:48.194Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:43.605Z",
+        "availabilityUpdated": "2026-09-02T06:03:48.194Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -27455,7 +27542,7 @@
           "currency": "EUR",
           "status": "unknown",
           "comparisonText": "Die typische Spanne basiert auf 16 aktuell hinterlegten Vergleichspreisen derselben Kategorie.",
-          "checkedAt": "2026-08-21T11:27:45.393Z",
+          "checkedAt": "2026-09-02T06:03:50.239Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -27472,12 +27559,12 @@
         "rating": 4.1,
         "score": 82,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:45.393Z",
+        "priceUpdated": "2026-09-02T06:03:50.239Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:45.393Z",
+        "availabilityUpdated": "2026-09-02T06:03:50.239Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -27581,6 +27668,27 @@
           },
           "internetOutage": "{ status: unknown, behavior: \"Der vom WLAN-Ausfall getrennte Umfang bei Internetunterbrechung ist nicht vollständig dokumentiert.\" }",
           "cloudOutage": "{ status: unknown, behavior: \"Kamera- und Fernfunktionen sind dienstabhängig; ihr Verhalten bei Dienstausfall ist nicht belegt.\" }"
+        },
+        "dispensingPrecision": {
+          "status": "documented",
+          "portionUnit": "portion",
+          "nominalPortionGrams": 10,
+          "minimumPortionsPerDispense": 1,
+          "maximumPortionsPerDispense": 5,
+          "portionIsApproximate": true,
+          "kibbleDependency": {
+            "status": "conditional",
+            "detail": "PETKIT weist im Handbuch darauf hin, dass das tatsächliche Gewicht je Portion mit Partikelgröße und Dichte variiert.",
+            "sourceUrl": "https://instructions.petkit.com/App%20Manual/D4H-2/D4H-2_UserManual_EN_V1.1_20260226.pdf",
+            "sourceType": "manual",
+            "verifiedAt": "2026-08-31"
+          },
+          "fillLevelDependency": "{ status: unknown, detail: \"Ein eigener Füllstandseinfluss ist nicht belegt.\" }",
+          "integratedScale": "{ status: unknown, detail: \"Eine Waage zur Gram-Verifikation ist für dieses Modell nicht belastbar dokumentiert.\" }",
+          "calibrationSupported": "{ status: unknown, detail: \"Eine nutzerseitige Gram-Kalibrierung ist nicht dokumentiert.\" }",
+          "sourceUrl": "https://instructions.petkit.com/App%20Manual/D4H-2/D4H-2_UserManual_EN_V1.1_20260226.pdf",
+          "sourceType": "manual",
+          "verifiedAt": "2026-08-31"
         },
         "comparisonFilters": {
           "animal": [
@@ -27796,7 +27904,7 @@
           "current": 62.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:27:46.508Z",
+          "checkedAt": "2026-08-28T09:04:45.926Z",
           "source": {
             "id": "mediamarkt.de",
             "label": "mediamarkt.de",
@@ -27813,12 +27921,12 @@
         "rating": 3.6,
         "score": 72,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:46.508Z",
+        "priceUpdated": "2026-08-28T09:04:45.926Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:46.508Z",
+        "availabilityUpdated": "2026-08-28T09:04:45.926Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -28179,6 +28287,27 @@
             "verifiedAt": "2026-08-28"
           },
           "cloudOutage": "{ status: unknown, behavior: \"Ein eigenständiges Verhalten bei Ausfall des Herstellerdienstes ist nicht belegt.\" }"
+        },
+        "dispensingPrecision": {
+          "status": "partial",
+          "portionUnit": "milliliter",
+          "nominalPortionMilliliters": 10.4,
+          "minimumPortionsPerDispense": 1,
+          "maximumPortionsPerDispense": 16,
+          "portionIsApproximate": true,
+          "kibbleDependency": {
+            "status": "conditional",
+            "detail": "Das Portionsvolumen ist dokumentiert; das Gewicht bleibt von Form, Größe und Dichte des Trockenfutters abhängig.",
+            "sourceUrl": "https://au.petlibro.com/products/air-wifi-feeder",
+            "sourceType": "manufacturer",
+            "verifiedAt": "2026-08-31"
+          },
+          "fillLevelDependency": "{ status: unknown, detail: \"Ein separater Einfluss des Füllstands ist nicht veröffentlicht.\" }",
+          "integratedScale": "{ status: unavailable, detail: \"Das Modell dosiert Volumenportionen; eine integrierte Waage ist nicht Bestandteil der dokumentierten Ausstattung.\", sourceUrl: \"https://au.petlibro.com/products/air-wifi-feeder\", sourceType: manufacturer, verifiedAt: \"2026-08-31\" }",
+          "calibrationSupported": "{ status: unknown, detail: \"Eine Gram-Kalibrierung ist nicht dokumentiert.\" }",
+          "sourceUrl": "https://au.petlibro.com/products/air-wifi-feeder",
+          "sourceType": "manufacturer",
+          "verifiedAt": "2026-08-31"
         },
         "comparisonFilters": {
           "animal": [
@@ -28681,7 +28810,7 @@
           "current": 99.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:27:49.545Z",
+          "checkedAt": "2026-09-02T06:03:54.190Z",
           "source": {
             "id": "de.petlibro.com",
             "label": "de.petlibro.com",
@@ -28702,12 +28831,12 @@
           "showSecondaryCta": true
         },
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:49.545Z",
+        "priceUpdated": "2026-09-02T06:03:54.190Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:49.545Z",
+        "availabilityUpdated": "2026-09-02T06:03:54.190Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -29001,7 +29130,7 @@
           "current": 99.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:27:50.742Z",
+          "checkedAt": "2026-09-02T06:03:55.152Z",
           "source": {
             "id": "de.petlibro.com",
             "label": "de.petlibro.com",
@@ -29022,12 +29151,12 @@
           "showSecondaryCta": true
         },
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:50.742Z",
+        "priceUpdated": "2026-09-02T06:03:55.152Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:50.742Z",
+        "availabilityUpdated": "2026-09-02T06:03:55.152Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -29322,7 +29451,7 @@
           "current": 59.98,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:27:52.909Z",
+          "checkedAt": "2026-09-02T06:03:57.248Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -29339,12 +29468,12 @@
         "rating": 4,
         "score": 79,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:52.909Z",
+        "priceUpdated": "2026-09-02T06:03:57.248Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:52.909Z",
+        "availabilityUpdated": "2026-09-02T06:03:57.248Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -29767,6 +29896,44 @@
             "akku": "Nein"
           }
         },
+        "multiPet": {
+          "sharedUse": "supported",
+          "identificationMethods": [
+            "rfidTag"
+          ],
+          "individualProfiles": "supported",
+          "individualAccess": "notApplicable",
+          "individualFeeding": "notApplicable",
+          "individualUsageData": "supported",
+          "identitiesStored": 5,
+          "identifiesPresence": "supported",
+          "identifiesIndividual": "supported",
+          "controlsAccess": "notApplicable",
+          "attributesUsage": "supported",
+          "attributesHealthData": "unavailable",
+          "individualRules": "unavailable",
+          "individualSchedules": "unavailable",
+          "similarPetLimitation": "{ status: documented, description: \"Zuordnung setzt den proprietären PETLIBRO-RFID-Halsbandanhänger voraus; implantierte Mikrochips werden nicht gelesen.\" }",
+          "evidenceSourceUrls": [
+            "https://petlibro.com/products/dockstream-rfid-smart-fountain"
+          ]
+        },
+        "sensorLimits": {
+          "calibrationRequirement": {
+            "status": "conditional",
+            "detail": "Individuelle Messwerte hängen von korrektem Aufbau, Kalibrierung und erkanntem PETLIBRO-RFID-Anhänger ab.",
+            "sourceUrl": "https://petlibro.com/products/dockstream-rfid-smart-fountain",
+            "sourceType": "manufacturer",
+            "verifiedAt": "2026-08-31"
+          },
+          "identificationLimitation": {
+            "status": "conditional",
+            "detail": "Nur kompatible PETLIBRO-Halsbandanhänger identifizieren Tiere; der implantierte Mikrochip ist kein Fallback.",
+            "sourceUrl": "https://petlibro.com/products/dockstream-rfid-smart-fountain",
+            "sourceType": "manufacturer",
+            "verifiedAt": "2026-08-31"
+          }
+        },
         "metadata": {
           "version": "4.0.1",
           "normalizedAt": "2026-07-26",
@@ -30113,7 +30280,7 @@
           "current": 129.99,
           "currency": "USD",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:27:56.095Z",
+          "checkedAt": "2026-09-02T06:04:01.530Z",
           "source": {
             "id": "petlibro.com",
             "label": "petlibro.com",
@@ -30134,12 +30301,12 @@
           "showSecondaryCta": true
         },
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:56.095Z",
+        "priceUpdated": "2026-09-02T06:04:01.530Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:56.095Z",
+        "availabilityUpdated": "2026-09-02T06:04:01.530Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -30443,10 +30610,10 @@
           ]
         },
         "price": {
-          "current": 127.49,
+          "current": 139.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:27:58.166Z",
+          "checkedAt": "2026-09-02T06:04:03.730Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -30463,12 +30630,12 @@
         "rating": 4.6,
         "score": 92,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:27:58.166Z",
+        "priceUpdated": "2026-09-02T06:04:03.730Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:27:58.166Z",
+        "availabilityUpdated": "2026-09-02T06:04:03.730Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -30587,6 +30754,33 @@
             "small",
             "medium"
           ]
+        },
+        "dispensingPrecision": {
+          "status": "documented",
+          "portionUnit": "portion",
+          "nominalPortionGrams": 10,
+          "nominalPortionMilliliters": 20,
+          "minimumPortionsPerDispense": 1,
+          "maximumPortionsPerDispense": 50,
+          "portionIsApproximate": true,
+          "kibbleDependency": {
+            "status": "conditional",
+            "detail": "PETLIBRO nennt 2–10 mm als passenden Bereich; Form und Dichte bestimmen das tatsächliche Gewicht einer Volumenportion.",
+            "sourceUrl": "https://petlibro.com/pages/how-the-granary-automatic-feeder-works",
+            "sourceType": "manufacturer",
+            "verifiedAt": "2026-08-31"
+          },
+          "fillLevelDependency": "{ status: unknown, detail: \"Ein eigener Einfluss des Behälterfüllstands ist nicht belastbar dokumentiert.\" }",
+          "integratedScale": "{ status: unknown, detail: \"Für diese Granary-Camera-Generation ist keine integrierte Waage belastbar belegt.\" }",
+          "calibrationSupported": "{ status: unknown, detail: \"Eine geräteseitige Gram-Kalibrierung ist nicht dokumentiert.\" }",
+          "dualBowlDistribution": {
+            "mechanism": "mechanicalSplit",
+            "adjustableSplitRatio": "{ status: unknown, detail: \"Eine einstellbare Links-rechts-Verteilung ist nicht belegt.\" }",
+            "individualPortioning": "{ status: unavailable, detail: \"Die Doppelschale trennt keine individuellen Tiere oder Portionen.\", sourceUrl: \"https://petlibro.com/pages/how-the-granary-automatic-feeder-works\", sourceType: manufacturer, verifiedAt: \"2026-08-31\" }"
+          },
+          "sourceUrl": "https://petlibro.com/pages/how-the-granary-automatic-feeder-works",
+          "sourceType": "manufacturer",
+          "verifiedAt": "2026-08-31"
         },
         "faq": [
           "question: Kann der PETLIBRO Granary Camera Feeder Nassfutter ausgeben?",
@@ -30734,11 +30928,11 @@
           ]
         },
         "price": {
-          "current": 129.99,
+          "current": 109.99,
           "currency": "EUR",
           "status": "unknown",
           "comparisonText": "Die typische Spanne basiert auf 17 aktuell hinterlegten Vergleichspreisen derselben Kategorie.",
-          "checkedAt": "2026-08-21T11:28:00.181Z",
+          "checkedAt": "2026-09-02T06:04:05.530Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -30755,12 +30949,12 @@
         "rating": 4.5,
         "score": 90,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:28:00.181Z",
+        "priceUpdated": "2026-09-02T06:04:05.530Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:28:00.181Z",
+        "availabilityUpdated": "2026-09-02T06:04:05.530Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -30999,10 +31193,10 @@
           ]
         },
         "price": {
-          "current": 129.99,
+          "current": 109.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:28:02.157Z",
+          "checkedAt": "2026-09-02T06:04:07.562Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -31019,12 +31213,12 @@
         "rating": 4.1,
         "score": 82,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:28:02.157Z",
+        "priceUpdated": "2026-09-02T06:04:07.562Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:28:02.157Z",
+        "availabilityUpdated": "2026-09-02T06:04:07.562Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -31299,10 +31493,10 @@
           ]
         },
         "price": {
-          "current": 559.99,
+          "current": 559.98,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:28:03.918Z",
+          "checkedAt": "2026-09-02T06:04:09.404Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -31380,6 +31574,8 @@
           "custom": "{ bauform: \"Teiloffenes automatisches Siebsystem\", innenraum: \"442-mm-Eingang; Nutzraum nicht separat beziffert\", einstieg: \"34 cm; Stufe enthalten\", katzenprofil: \"1-10 kg; unter 1 kg/6 Monaten manuell\", sicherheit: \"Kamera + IR + Gewicht + Einklemmschutz; Herstellerangabe\", mehrkatzen: \"Profile für bis zu 10 Katzen\", streu: \"Klumpend, Tofu, Mischstreu; Ausschlüsse dokumentiert\", wartung: \"11-l-Schublade; Filter und Einlagen\", geruch: \"Ventilator + Aktivkohlefilter\", appdaten: \"1080p, Cloud-only-Aufzeichnung; AI tarifabhängig\", folgekosten: \"Beutel, Aktivkohlefilter, optional Video Cloud AI\", platz: \"592 x 573 x 714 mm; harter Boden\" }"
         },
         "decisionJourney": "{ cluster: \"automatische-katzentoiletten\", stage: \"decision\", intent: \"petlibro-luma-pruefen\", primaryQuestion: \"Passen 34 cm Einstieg, Gewichtsgrenze, Streu, Kamera-Cloud und Verbrauchsmaterial zu Katze und Haushalt?\", next: [\"/vergleiche/beste-automatische-katzentoiletten/\"], fallback: [\"/automatische-katzentoiletten/\"] }",
+        "litterCompatibility": "{ bentoniteClumping: { status: unknown }, tofu: { status: conditional, condition: \"Klumpend; ultrafeine Sorten ausgeschlossen.\" }, plantBased: { status: conditional, condition: \"Nur belegte Mischstreu; sehr feine Gras-/Maniokstreu ausgeschlossen.\" }, woodPellets: { status: notSupported, condition: \"Kiefernstreu ausgeschlossen.\" }, crystal: { status: notSupported }, nonClumping: { status: unknown }, evidenceSourceUrls: [\"https://de.petlibro.com/products/luma-intelligente-selbstreinigende-katzentoilette-exclusive\"] }",
+        "multiPet": "{ sharedUse: supported, identificationMethods: [weight, cameraAi], individualProfiles: supported, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: supported, similarPetLimitation: { status: unknown, description: \"Bis zu zehn Profile belegt; Mindestgewichtsdifferenz nicht.\" }, evidenceSourceUrls: [\"https://de.petlibro.com/products/luma-intelligente-selbstreinigende-katzentoilette-exclusive\"] }",
         "evidenceSources": [
           "{ source: \"PETLIBRO Deutschland – Luma\", url: \"https://de.petlibro.com/products/luma-intelligente-selbstreinigende-katzentoilette-exclusive\", accessedAt: \"2026-08-15\", assertion: \"Abmessungen, Einstieg, Gewicht, Katzenprofile, Sicherheit, Streu, Abfallfach, Kamera, Cloud, Geräusch, Strom und Lieferumfang sind Herstellerangaben.\", fields: [\"specs\", \"decision\", \"comparisonData\"] }",
           "{ source: \"PETLIBRO Deutschland – Luma Einführung\", url: \"https://de.petlibro.com/pages/introducing-luma\", accessedAt: \"2026-08-15\", assertion: \"Reinigungsverzögerung, Filterwechsel, Gewichtsmessgrenze und fehlende Smart-Home-Integration sind Herstellerangaben.\", fields: [\"specs\", \"weaknesses\"] }"
@@ -31410,12 +31606,12 @@
           "note": "Cats.com bezieht sich eindeutig auf die aktuelle PETLIBRO Luma. Trustpilot wird ausschließlich als markenweite Nutzerplattform geführt; nur ausdrücklich auf Luma bezogene Erfahrungsinhalte fließen vorsichtig in die Einordnung ein."
         },
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:28:03.918Z",
+        "priceUpdated": "2026-09-02T06:04:09.404Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:28:03.918Z",
+        "availabilityUpdated": "2026-09-02T06:04:09.404Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete"
@@ -31502,11 +31698,11 @@
           ]
         },
         "price": {
-          "current": 159.99,
+          "current": 179.99,
           "currency": "EUR",
           "status": "unknown",
           "comparisonText": "Die typische Spanne basiert auf 18 aktuell hinterlegten Vergleichspreisen derselben Kategorie.",
-          "checkedAt": "2026-08-21T11:28:05.905Z",
+          "checkedAt": "2026-09-02T06:04:11.293Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -31523,12 +31719,12 @@
         "rating": 3.7,
         "score": 74,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:28:05.905Z",
+        "priceUpdated": "2026-09-02T06:04:11.293Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:28:05.905Z",
+        "availabilityUpdated": "2026-09-02T06:04:11.293Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -31613,6 +31809,7 @@
           "label: Maße",
           "label: Gewicht"
         ],
+        "multiPet": "{ sharedUse: partial, identificationMethods: [rfidTag], individualProfiles: supported, individualAccess: supported, individualFeeding: supported, individualUsageData: supported, similarPetLimitation: { status: noneDocumented, description: \"Zuordnung erfolgt über PETLIBRO-RFID-Tag, nicht Gewicht.\" }, evidenceSourceUrls: [\"https://petlibro.com/products/one-rfid-smart-feeder\"] }",
         "faq": [],
         "useCase": "Für Katzen in Mehrtierhaushalten mit individuellen Futterplänen oder Futterneid",
         "capacity": "3 Liter",
@@ -31746,7 +31943,7 @@
           "current": 123.47,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-02T11:24:03.065Z",
+          "checkedAt": "2026-09-02T06:04:12.981Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -31763,12 +31960,12 @@
         "rating": 4,
         "score": 80,
         "priceState": "available",
-        "priceUpdated": "2026-08-02T11:24:03.065Z",
+        "priceUpdated": "2026-09-02T06:04:12.981Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-02T11:24:03.065Z",
+        "availabilityUpdated": "2026-09-02T06:04:12.981Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -32054,10 +32251,10 @@
           "gallery": []
         },
         "price": {
-          "current": 99.99,
+          "current": 85.29,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:28:09.789Z",
+          "checkedAt": "2026-09-02T06:04:14.753Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -32066,12 +32263,12 @@
         },
         "rating": 3.7,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:28:09.789Z",
+        "priceUpdated": "2026-09-02T06:04:14.753Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:28:09.789Z",
+        "availabilityUpdated": "2026-09-02T06:04:14.753Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -32266,10 +32463,10 @@
           ]
         },
         "price": {
-          "current": 65.99,
+          "current": 69.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:28:11.794Z",
+          "checkedAt": "2026-09-02T06:04:16.849Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -32286,12 +32483,12 @@
         "rating": 4.2,
         "score": 84,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:28:11.794Z",
+        "priceUpdated": "2026-09-02T06:04:16.849Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:28:11.794Z",
+        "availabilityUpdated": "2026-09-02T06:04:16.849Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -32563,10 +32760,10 @@
           ]
         },
         "price": {
-          "current": 47.49,
+          "current": 52.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:28:13.749Z",
+          "checkedAt": "2026-09-02T06:04:18.831Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -32583,12 +32780,12 @@
         "rating": 3.8,
         "score": 75,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:28:13.749Z",
+        "priceUpdated": "2026-09-02T06:04:18.831Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:28:13.749Z",
+        "availabilityUpdated": "2026-09-02T06:04:18.831Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -33101,7 +33298,7 @@
           "current": 219.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:28:15.760Z",
+          "checkedAt": "2026-09-02T06:04:20.847Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -33118,12 +33315,12 @@
         "rating": 4.3,
         "score": 86,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:28:15.760Z",
+        "priceUpdated": "2026-09-02T06:04:20.847Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:28:15.760Z",
+        "availabilityUpdated": "2026-09-02T06:04:20.847Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -33354,10 +33551,10 @@
           ]
         },
         "price": {
-          "current": 66.99,
+          "current": 69.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-17T14:42:55.427Z",
+          "checkedAt": "2026-09-02T06:04:22.473Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -33374,12 +33571,12 @@
         "editorial": "{ assessmentType: \"data-review\", evidence: [\"manufacturer-documentation\", \"technical-specifications\", \"comparative-analysis\"], testedHandsOn: false, lastVerifiedAt: \"2026-08-04\", note: \"Kein eigener Praxistest.\" }",
         "rating": 3.8,
         "priceState": "available",
-        "priceUpdated": "2026-08-17T14:42:55.427Z",
+        "priceUpdated": "2026-09-02T06:04:22.473Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-17T14:42:55.427Z",
+        "availabilityUpdated": "2026-09-02T06:04:22.473Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -33452,6 +33649,7 @@
         "useCase": "Selektiver Eingang mit großem Speicher",
         "comparisonData": "{ version: 1, custom: { zugang: \"15-stelliger FDX-B-Mikrochip oder Schlüssel\", richtungsrechte: \"Selektiver Eingang; manuelle Gesamtregeln\", app: \"Nein\", strom: \"Batterie\", einbau: \"Holz/PVC; Adapter für Metall, Glas, Ziegel und Wand\", durchgang: \"Hersteller-Schablone vor Kauf prüfen\", produktrolle: \"Vollständige Katzenklappe\", verriegelungslogik: \"Chipprüfung beim Annähern von außen; verstärkte doppelte automatische Verriegelung; exakter Wiederverriegelungszeitpunkt nicht dokumentiert\", tailgating_schutz: \"Nicht dokumentiert\" } }",
         "decisionJourney": "{ cluster: \"katzenklappen\", stage: \"decision\", intent: \"produkt-petsafe-mikrochip\", primaryQuestion: \"Ist der Chip kompatibel und genügt selektiver Eingang ohne App?\", next: [\"/vergleiche/beste-mikrochip-katzenklappen/\", \"/katzenklappe-einbauen/\"], fallback: [\"/katzenklappen/\"] }",
+        "multiPet": "{ sharedUse: supported, identificationMethods: [microchip, rfidTag], individualProfiles: supported, individualAccess: partial, individualFeeding: notApplicable, individualUsageData: unavailable, similarPetLimitation: { status: noneDocumented, description: \"Selektiver Eingang; individuelle Ausgangsrechte nicht belegt.\" }, evidenceSourceUrls: [\"https://www.petsafe.com/de/p/mikrochip-katzenklappe/PPA19-16145/\"] }",
         "evidenceSources": [
           "{ source: \"PetSafe Deutschland\", url: \"https://www.petsafe.com/de/p/mikrochip-katzenklappe/PPA19-16145/\", accessedAt: \"2026-08-04\", assertion: \"Deutsche Verfügbarkeit, FDX-B-Formate, Speicher, Verriegelung und Einbauhinweise.\", fields: [\"availability\", \"specs\", \"features\", \"decision\"] }",
           "{ source: \"PetSafe UK – Microchip Cat Flap\", url: \"https://www.petsafe.com/gb/p/microchip-cat-flaps/PPA19-16145/\", accessedAt: \"2026-08-26\", assertion: \"Selektive Chipprüfung bei Annäherung von außen und verstärkte doppelte Auto-Verriegelung. Ein exakter Wiederverriegelungszeitpunkt oder Anti-Tailgating-Schutz wird nicht dokumentiert.\", fields: [\"specs\", \"comparisonData\"] }"
@@ -33490,12 +33688,12 @@
         "rating": 4,
         "score": 81,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:28:19.461Z",
+        "priceUpdated": "2026-09-02T06:04:24.634Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:28:19.461Z",
+        "availabilityUpdated": "2026-09-02T06:04:24.634Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -33511,7 +33709,7 @@
           "current": 139.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:28:19.461Z",
+          "checkedAt": "2026-09-02T06:04:24.634Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -34163,6 +34361,12 @@
           "Sanfter Wasserfluss"
         ],
         "useCase": "Keramik- und Offline-Alternative für Katzen und kleine Hunde",
+        "repairability": {
+          "parts": [
+            "type: pump",
+            "type: filter"
+          ]
+        },
         "comparisonData": "{ version: 1, custom: { kapazitaet: \"1,8 Liter\", material: \"Keramik; offene Trinkschale\", lautstaerke: \"Sanftes Blubbern; keine belastbare dB-Angabe\", filter: \"Aktivkohle plus Schaum\", reinigung: \"Keramikteile oberer Spülmaschinenkorb; Pumpe von Hand\", stromversorgung: \"Netzbetrieb\", eignung: \"Katzen und kleine Hunde; Keramik-Fokus\" } }",
         "comparisonFilters": "{ animal: [\"cat\", \"dog\"], petSize: [\"small\"], foodType: [], app: false, reservoirLiters: 1.8 }",
         "alternatives": [
@@ -34425,6 +34629,8 @@
           "lastVerifiedAt": "2026-08-15",
           "note": "Herstellerdaten redaktionell eingeordnet; kein eigener Produkttest."
         },
+        "litterCompatibility": "{ bentoniteClumping: { status: unknown }, tofu: { status: unknown }, plantBased: { status: unknown }, woodPellets: { status: unknown }, crystal: { status: unknown }, nonClumping: { status: unknown }, evidenceSourceUrls: [] }",
+        "multiPet": "{ sharedUse: unknown, identificationMethods: [unknown], individualProfiles: unknown, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: unknown, similarPetLimitation: { status: unknown, description: \"Mehrtier-Zuordnung nicht ausreichend dokumentiert.\" }, evidenceSourceUrls: [] }",
         "evidenceSources": [
           "source: \"PetSnowy Deutschland",
           "source: \"PetSnowy Shipping",
@@ -34761,7 +34967,7 @@
           "current": 2016.67,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:28:21.901Z",
+          "checkedAt": "2026-09-02T06:04:27.519Z",
           "source": {
             "id": "petwalk.at",
             "label": "petwalk.at",
@@ -34778,12 +34984,12 @@
         "editorial": "{ assessmentType: \"data-review\", evidence: [\"manufacturer-documentation\", \"technical-specifications\", \"comparative-analysis\"], testedHandsOn: false, lastVerifiedAt: \"2026-08-17\", note: \"Kein eigener Praxistest; Dämm- und Sicherheitswerte sind Herstellerangaben.\" }",
         "rating": 3.7,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:28:21.901Z",
+        "priceUpdated": "2026-09-02T06:04:27.519Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:28:21.901Z",
+        "availabilityUpdated": "2026-09-02T06:04:27.519Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -35238,8 +35444,45 @@
         "failureModes": {
           "powerOutage": "{ status: unknown, behavior: \"Eine Notstromversorgung oder ein definiertes Wiederanlaufverhalten ist nicht belegt.\" }",
           "wifiOutage": "{ status: unknown, behavior: \"Lokale Speicherwege belegen nicht automatisch Aufnahme, Erkennung oder LAN-Zugriff bei WLAN-Ausfall.\" }",
-          "internetOutage": "{ status: unknown, behavior: \"Lokale Speicherung und Erkennung sind belegt; der vollständige Funktionsumfang ohne Internet ist nicht getrennt dokumentiert.\" }",
+          "internetOutage": {
+            "status": "partial",
+            "behavior": "Die aktuelle 4K-Generation speichert bei Netzwerkausfall weiter auf microSD. Fernzugriff und Benachrichtigungen benötigen eine funktionierende Verbindung; lokales Playback während des Ausfalls ist nicht vollständig belegt.",
+            "sourceUrl": "https://reolink.com/ca/product/e1-zoom/",
+            "sourceType": "manufacturer",
+            "verifiedAt": "2026-08-31",
+            "functions": {
+              "localRecording": "supported",
+              "detection": "unknown",
+              "playback": "unknown",
+              "remoteAccess": "unavailable",
+              "notifications": "unavailable",
+              "lanAccess": "unknown"
+            }
+          },
           "cloudOutage": "{ status: unknown, behavior: \"Cloud ist regional optional; das konkrete Verhalten bei Ausfall des Herstellerdienstes ist nicht belegt.\" }"
+        },
+        "dataPortability": {
+          "history": {
+            "status": "conditional",
+            "detail": "Mit 512-GB-microSD nennt Reolink bis zu acht Tage kontinuierliche Aufnahme bei 3.072 kbit/s; Ereignis- und Zeitplanaufnahme sind ebenfalls möglich.",
+            "sourceUrl": "https://reolink.com/ca/product/e1-zoom/",
+            "sourceType": "manufacturer",
+            "verifiedAt": "2026-08-31"
+          },
+          "historyRetentionDays": 8,
+          "export": "{ status: unknown, detail: \"Ein standardisiertes Datenexportformat ist für dieses Modell nicht ausgewiesen.\" }",
+          "localDownload": "{ status: unknown, detail: \"Wiedergabe in App oder Client ist belegt; ein ausfallunabhängiger Downloadweg ist nicht vollständig dokumentiert.\" }",
+          "cloudRetention": "{ status: unknown, detail: \"Cloud-Aufbewahrung ist regional und tarifabhängig; kein stabiler Modellwert wird übernommen.\" }",
+          "postSubscriptionAccess": "{ status: notApplicable, detail: \"Lokale microSD-/NVR-/Hub-Speicherung setzt kein Pflichtabo voraus; Cloud-Inhalte werden davon nicht erfasst.\" }",
+          "sharedAccess": {
+            "status": "supported",
+            "detail": "Die aktuelle technische Spezifikation nennt einen Administrator und 19 Benutzerkonten sowie bis zu zwölf simultane Videostreams.",
+            "sourceUrl": "https://reolink.com/de/product/e1-zoom/",
+            "sourceType": "manufacturer",
+            "verifiedAt": "2026-08-31"
+          },
+          "maximumUsers": 20,
+          "simultaneousStreams": 12
         },
         "decisionJourney": "{ cluster: \"haustierkameras\", stage: \"decision\", intent: \"reolink-e1-zoom-pruefen\", primaryQuestion: \"Passt eine klassische Indoor-Kamera mit lokaler Speicherung besser als eine pet-spezifische Cloud-Kamera?\", next: [\"/vergleiche/beste-haustierkameras/\"], fallback: [\"/haustierkameras/\"] }",
         "faq": [
@@ -35453,6 +35696,7 @@
           "label: \"Batterie",
           "label: \"Maße"
         ],
+        "multiPet": "{ sharedUse: supported, identificationMethods: [microchip, rfidTag], individualProfiles: supported, individualAccess: supported, individualFeeding: partial, individualUsageData: supported, similarPetLimitation: { status: noneDocumented, description: \"Identifikation erfolgt nicht über Gewicht.\" }, evidenceSourceUrls: [\"https://www.surepetcare.com/de-de/futterautomaten/mikrochip-futterautomat-connect\"] }",
         "faq": [],
         "useCase": "Für Katzen und kleine Hunde mit individuellem Futterzugang",
         "capacity": "400 ml",
@@ -35721,6 +35965,7 @@
           "label: Öffnung",
           "label: Gewicht"
         ],
+        "multiPet": "{ sharedUse: supported, identificationMethods: [microchip, rfidTag], individualProfiles: supported, individualAccess: supported, individualFeeding: partial, individualUsageData: unavailable, similarPetLimitation: { status: noneDocumented, description: \"Identifikation erfolgt nicht über Gewicht.\" }, evidenceSourceUrls: [\"https://www.surepetcare.com/de-de/futterautomaten/mikrochip-futterautomat\"] }",
         "faq": [
           "question: Funktioniert der SureFeed mit dem implantierten Mikrochip?",
           "question: Kann der SureFeed Nassfutter aufnehmen?",
@@ -36002,6 +36247,18 @@
           "question: \"Welche Batterien werden benötigt?",
           "question: \"Wie groß ist der Durchgang?"
         ],
+        "multiPet": "{ sharedUse: supported, identificationMethods: [microchip, rfidTag], individualProfiles: supported, individualAccess: supported, individualFeeding: notApplicable, individualUsageData: unavailable, identitiesStored: 32, identifiesPresence: supported, identifiesIndividual: supported, controlsAccess: supported, attributesUsage: unavailable, attributesHealthData: notApplicable, individualRules: supported, individualSchedules: unavailable, similarPetLimitation: { status: noneDocumented, description: \"Ein-/Ausgangsrechte werden per Chip entschieden.\" }, evidenceSourceUrls: [\"https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe-dualscan\"] }",
+        "lifecycleDependency": {
+          "profilePersistence": {
+            "status": "supported",
+            "detail": "Sure Petcare dokumentiert permanent gespeicherte Chip-/Tag-Nummern beim Batteriewechsel für die lokale Klappenfamilie.",
+            "sourceUrl": "https://www.surepetcare.com/en-eu/support/videos/replacing-the-batteries-on-your-sureflap-microchip-pet-door",
+            "sourceType": "support",
+            "verifiedAt": "2026-08-31"
+          },
+          "settingsPersistence": "{ status: unknown, detail: \"Der Erhalt sämtlicher individueller Ausgangsrechte nach langem stromlosen Zustand ist nicht separat beschrieben.\" }",
+          "serviceEndFallback": "{ status: notApplicable, detail: \"DualScan arbeitet lokal ohne Cloud-Dienst.\" }"
+        },
         "evidenceSources": [
           "source: \"Sure Petcare Deutschland – DualScan Mikrochip Katzenklappe",
           "source: \"Sure Petcare – DualScan Support und Handbuch"
@@ -36086,7 +36343,7 @@
           "current": 259.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:28:26.133Z",
+          "checkedAt": "2026-09-02T06:04:31.330Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -36104,12 +36361,12 @@
         "testStatus": "manufacturer-data",
         "rating": 3.9,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:28:26.133Z",
+        "priceUpdated": "2026-09-02T06:04:31.330Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:28:26.133Z",
+        "availabilityUpdated": "2026-09-02T06:04:31.330Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -36263,6 +36520,7 @@
           "question: \"Was passiert nach Ablauf des dokumentierten Security-Zeitraums?",
           "question: \"Wie lange liefert Sure Petcare Sicherheitsupdates für den Hub?"
         ],
+        "multiPet": "{ sharedUse: supported, identificationMethods: [microchip, rfidTag], individualProfiles: supported, individualAccess: supported, individualFeeding: notApplicable, individualUsageData: supported, similarPetLimitation: { status: noneDocumented, description: \"Zuordnung erfolgt über Chip/Tag, nicht Gewicht.\" }, evidenceSourceUrls: [\"https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe-connect\"] }",
         "evidenceSources": [
           "source: \"Sure Petcare Deutschland – Mikrochip Katzenklappe Connect",
           "source: \"Sure Petcare UK – Microchip Cat Flap Connect",
@@ -36548,6 +36806,27 @@
             "/katzenklappen/"
           ]
         },
+        "multiPet": "{ sharedUse: supported, identificationMethods: [microchip, rfidTag], individualProfiles: supported, individualAccess: partial, individualFeeding: notApplicable, individualUsageData: unavailable, identitiesStored: 32, identifiesPresence: supported, identifiesIndividual: supported, controlsAccess: supported, attributesUsage: unavailable, attributesHealthData: notApplicable, individualRules: partial, individualSchedules: unavailable, similarPetLimitation: { status: noneDocumented, description: \"Nur selektiver Eingang; Ausgangsrechte nicht individuell.\" }, evidenceSourceUrls: [\"https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe\"] }",
+        "lifecycleDependency": {
+          "profilePersistence": {
+            "status": "supported",
+            "detail": "Gelernte Mikrochip- und Halsbandanhänger-Nummern bleiben laut Sure Petcare beim Batteriewechsel dauerhaft gespeichert.",
+            "sourceUrl": "https://www.surepetcare.com/en-eu/support/videos/replacing-the-batteries-on-your-sureflap-microchip-pet-door",
+            "sourceType": "support",
+            "verifiedAt": "2026-08-31"
+          },
+          "settingsPersistence": "{ status: unknown, detail: \"Der vollständige Erhalt manueller Sperrstellungen oder weiterer Einstellungen ist nicht separat dokumentiert.\" }",
+          "serviceEndFallback": "{ status: notApplicable, detail: \"Das Basismodell benötigt keinen Cloud-Dienst für die lokale Chipfreigabe.\" }"
+        },
+        "repairability": {
+          "parts": [
+            "{ type: motor, status: supported, officialPart: true, detail: \"Sure Petcare stellt eine offizielle Anleitung zum Austausch der Motorkassette bereit.\", sourceUrl: \"https://www.surepetcare.com/en-us/support/videos\", sourceType: support, verifiedAt: \"2026-08-31\" }",
+            "{ type: door, status: supported, officialPart: true, detail: \"Die transparente Klappe kann nach Herstelleranleitung ersetzt werden.\", sourceUrl: \"https://www.surepetcare.com/en-us/support/videos\", sourceType: support, verifiedAt: \"2026-08-31\" }",
+            "{ type: frame, status: supported, officialPart: true, detail: \"Für den Frontframe ist ein offizieller Austauschablauf dokumentiert.\", sourceUrl: \"https://www.surepetcare.com/en-us/support/videos\", sourceType: support, verifiedAt: \"2026-08-31\" }",
+            "{ type: lock, status: supported, officialPart: true, detail: \"Der Drehverschluss besitzt eine offizielle Austauschanleitung.\", sourceUrl: \"https://www.surepetcare.com/en-us/support/videos\", sourceType: support, verifiedAt: \"2026-08-31\" }",
+            "{ type: seal, status: supported, officialPart: true, detail: \"Das Catch Pad kann nach offizieller Anleitung ersetzt werden.\", sourceUrl: \"https://www.surepetcare.com/en-us/support/videos\", sourceType: support, verifiedAt: \"2026-08-31\" }"
+          ]
+        },
         "evidenceSources": [
           "source: \"Sure Petcare Deutschland – Mikrochip Katzenklappe",
           "source: \"Sure Petcare Deutschland – Haustierklappen-Vergleich"
@@ -36637,7 +36916,7 @@
           "current": 69,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:28:28.085Z",
+          "checkedAt": "2026-09-02T06:04:33.283Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -36654,12 +36933,12 @@
         "rating": 4.5,
         "score": 91,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:28:28.085Z",
+        "priceUpdated": "2026-09-02T06:04:33.283Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:28:28.085Z",
+        "availabilityUpdated": "2026-09-02T06:04:33.283Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -36794,7 +37073,50 @@
           "liveTracking": true,
           "virtualFence": true,
           "activityTracking": true,
+          "healthCapabilities": {
+            "activity": "supported",
+            "sleep": "supported",
+            "restingHeartRate": "supported",
+            "restingRespiratoryRate": "supported",
+            "scratching": "notApplicable",
+            "barking": "notApplicable",
+            "otherBehavior": [
+              "Territory für Katzen"
+            ],
+            "healthAlerts": "conditional",
+            "baselineDaysRequired": 7,
+            "medicalDeviceStatus": "wellnessOnly",
+            "sourceUrl": "https://help.tractive.com/hc/en-us/articles/360011024119-What-health-features-does-Tractive-track",
+            "sourceType": "support",
+            "verifiedAt": "2026-08-31"
+          },
           "attachmentType": "safety-collar"
+        },
+        "dataPortability": {
+          "history": {
+            "status": "conditional",
+            "detail": "Basic zeigt die letzten 24 Stunden; Premium bis zu 365 Tage Positionsverlauf.",
+            "sourceUrl": "https://help.tractive.com/hc/en-us/articles/360000321545-Checking-your-pet-s-location-history",
+            "sourceType": "support",
+            "verifiedAt": "2026-08-31"
+          },
+          "historyRetentionDays": 365,
+          "export": {
+            "status": "conditional",
+            "detail": "Positionsverlauf-Export ist Premium; EU-Nutzer können zusätzlich Tracker-Daten nach EU Data Act anfordern.",
+            "sourceUrl": "https://help.tractive.com/hc/en-us/articles/29331965045138-Download-your-Tractive-tracker-data",
+            "sourceType": "support",
+            "verifiedAt": "2026-08-31"
+          },
+          "localDownload": "{ status: unknown, detail: \"Ein dauerhaft appunabhängiges lokales Archivformat ist nicht ausgewiesen.\" }",
+          "postSubscriptionAccess": "{ status: unknown, detail: \"Der Zugriff auf bereits gespeicherte Historie nach vollständigem Abo-Ende ist nicht eindeutig dokumentiert.\" }",
+          "deviceMigration": {
+            "status": "supported",
+            "detail": "Tierprofil, Energiesparzonen, virtuelle Zäune, Heimadresse und Familienfreigabe bleiben bei Abo-Übertragung erhalten; hundespezifische Funktionen werden nicht auf das Katzenmodell übertragen.",
+            "sourceUrl": "https://help.tractive.com/hc/es/articles/115004050745-C%C3%B3mo-transferir-su-suscripci%C3%B3n-a-otro-localizador",
+            "sourceType": "support",
+            "verifiedAt": "2026-08-31"
+          }
         },
         "faq": [
           "question: Wie schwer ist der Tractive CAT 6 Mini?",
@@ -36954,7 +37276,7 @@
           "current": 55.3,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:28:30.078Z",
+          "checkedAt": "2026-09-02T06:04:35.326Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -36971,12 +37293,12 @@
         "rating": 4.6,
         "score": 91,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:28:30.078Z",
+        "priceUpdated": "2026-09-02T06:04:35.326Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:28:30.078Z",
+        "availabilityUpdated": "2026-09-02T06:04:35.326Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -37298,7 +37620,7 @@
           "current": 48.3,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:28:31.856Z",
+          "checkedAt": "2026-09-02T06:04:37.155Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -37315,12 +37637,12 @@
         "rating": 4.6,
         "score": 92,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:28:31.856Z",
+        "priceUpdated": "2026-09-02T06:04:37.155Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:28:31.856Z",
+        "availabilityUpdated": "2026-09-02T06:04:37.155Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -37479,7 +37801,50 @@
           "liveTracking": true,
           "virtualFence": true,
           "activityTracking": true,
+          "healthCapabilities": {
+            "activity": "supported",
+            "sleep": "supported",
+            "restingHeartRate": "supported",
+            "restingRespiratoryRate": "supported",
+            "scratching": "supported",
+            "barking": "supported",
+            "otherBehavior": [
+              "Trennungsangst-Monitoring"
+            ],
+            "healthAlerts": "conditional",
+            "baselineDaysRequired": 7,
+            "medicalDeviceStatus": "wellnessOnly",
+            "sourceUrl": "https://help.tractive.com/hc/en-us/articles/360011024119-What-health-features-does-Tractive-track",
+            "sourceType": "support",
+            "verifiedAt": "2026-08-31"
+          },
           "attachmentType": "clip"
+        },
+        "dataPortability": {
+          "history": {
+            "status": "conditional",
+            "detail": "Basic zeigt die letzten 24 Stunden; Premium bis zu 365 Tage Positionsverlauf.",
+            "sourceUrl": "https://help.tractive.com/hc/en-us/articles/360000321545-Checking-your-pet-s-location-history",
+            "sourceType": "support",
+            "verifiedAt": "2026-08-31"
+          },
+          "historyRetentionDays": 365,
+          "export": {
+            "status": "conditional",
+            "detail": "Positionsverlauf-Export ist Premium; EU-Nutzer können zusätzlich Tracker-Daten nach EU Data Act anfordern.",
+            "sourceUrl": "https://help.tractive.com/hc/en-us/articles/29331965045138-Download-your-Tractive-tracker-data",
+            "sourceType": "support",
+            "verifiedAt": "2026-08-31"
+          },
+          "localDownload": "{ status: unknown, detail: \"Ein dauerhaft appunabhängiges lokales Archivformat ist nicht ausgewiesen.\" }",
+          "postSubscriptionAccess": "{ status: unknown, detail: \"Der Zugriff auf bereits gespeicherte Historie nach vollständigem Abo-Ende ist nicht eindeutig dokumentiert.\" }",
+          "deviceMigration": {
+            "status": "supported",
+            "detail": "Bei Übertragung des Abos bleiben Tierprofil, Energiesparzonen, virtuelle Zäune, Heimadresse und Familienfreigabe erhalten; modellabhängige Funktionen können entfallen.",
+            "sourceUrl": "https://help.tractive.com/hc/es/articles/115004050745-C%C3%B3mo-transferir-su-suscripci%C3%B3n-a-otro-localizador",
+            "sourceType": "support",
+            "verifiedAt": "2026-08-31"
+          }
         },
         "faq": [
           "question: Braucht der Tractive DOG 6 ein Abo?",
@@ -37665,7 +38030,7 @@
           "current": 44.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:28:33.884Z",
+          "checkedAt": "2026-09-02T06:04:39.262Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -37682,12 +38047,12 @@
         "rating": 4.6,
         "score": 92,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:28:33.884Z",
+        "priceUpdated": "2026-09-02T06:04:39.262Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:28:33.884Z",
+        "availabilityUpdated": "2026-09-02T06:04:39.262Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -37859,7 +38224,28 @@
           "liveTracking": true,
           "virtualFence": true,
           "activityTracking": true,
+          "healthCapabilities": {
+            "activity": "supported",
+            "sleep": "unknown",
+            "restingHeartRate": "unavailable",
+            "restingRespiratoryRate": "unavailable",
+            "scratching": "unavailable",
+            "barking": "unavailable",
+            "otherBehavior": [],
+            "healthAlerts": "unknown",
+            "medicalDeviceStatus": "wellnessOnly",
+            "sourceUrl": "https://www.weenect.com/de/de/gps-tracker-hund/",
+            "sourceType": "manufacturer",
+            "verifiedAt": "2026-08-31"
+          },
           "attachmentType": "collar-attachment"
+        },
+        "dataPortability": {
+          "history": "{ status: unknown, detail: \"Eine belastbare aktuelle Aufbewahrungsdauer ist in der vorhandenen Primär-Evidence nicht eindeutig ausgewiesen.\" }",
+          "export": "{ status: unknown, detail: \"Ein offizieller Positionsdatenexport samt Format und Tarifbedingung ist nicht belastbar dokumentiert.\" }",
+          "localDownload": "{ status: unknown, detail: \"Ein lokaler Downloadpfad ist nicht belegt.\" }",
+          "postSubscriptionAccess": "{ status: unknown, detail: \"Zugriff auf Historie nach Abo-Ende ist nicht geklärt.\" }",
+          "deviceMigration": "{ status: unknown, detail: \"Der Erhalt von Profil, Verlauf und Einstellungen bei Hardwarewechsel ist nicht belegt.\" }"
         },
         "faq": [
           "question: \"Ist der Weenect XS für Katzen geeignet?",
@@ -38053,7 +38439,7 @@
           "current": 49.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:28:35.762Z",
+          "checkedAt": "2026-09-02T06:04:41.170Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -38070,12 +38456,12 @@
         "rating": 4.5,
         "score": 90,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:28:35.762Z",
+        "priceUpdated": "2026-09-02T06:04:41.170Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:28:35.762Z",
+        "availabilityUpdated": "2026-09-02T06:04:41.170Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -39445,7 +39831,7 @@
           "current": 89.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:28:37.866Z",
+          "checkedAt": "2026-09-02T06:04:43.220Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -39462,12 +39848,12 @@
         "rating": 4.6,
         "score": 92,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:28:37.866Z",
+        "priceUpdated": "2026-09-02T06:04:43.220Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:28:37.866Z",
+        "availabilityUpdated": "2026-09-02T06:04:43.220Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -39745,11 +40131,11 @@
           ]
         },
         "price": {
-          "current": 54.9,
+          "current": 54.99,
           "currency": "EUR",
           "status": "unknown",
           "comparisonText": "Die typische Spanne basiert auf 9 aktuell hinterlegten Vergleichspreisen derselben Kategorie.",
-          "checkedAt": "2026-08-21T11:28:40.019Z",
+          "checkedAt": "2026-09-02T06:04:45.544Z",
           "source": {
             "id": "amazon.de",
             "label": "amazon.de",
@@ -39766,12 +40152,12 @@
         "rating": 4.7,
         "score": 93,
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:28:40.019Z",
+        "priceUpdated": "2026-09-02T06:04:45.544Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:28:40.019Z",
+        "availabilityUpdated": "2026-09-02T06:04:45.544Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",
@@ -40017,7 +40403,7 @@
           "current": 199,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-08-21T11:28:40.506Z",
+          "checkedAt": "2026-09-02T06:04:46.330Z",
           "source": {
             "id": "zeromouse.com",
             "label": "zeromouse.com",
@@ -40038,12 +40424,12 @@
           "showSecondaryCta": true
         },
         "priceState": "available",
-        "priceUpdated": "2026-08-21T11:28:40.506Z",
+        "priceUpdated": "2026-09-02T06:04:46.330Z",
         "priceAvailable": true,
         "affiliateAvailable": true,
         "availability": "available",
         "availabilityReason": "Bei der automatischen Preisprüfung als verfügbar erkannt.",
-        "availabilityUpdated": "2026-08-21T11:28:40.506Z",
+        "availabilityUpdated": "2026-09-02T06:04:46.330Z",
         "editorialStatus": "complete",
         "recommendationStatus": "recommended",
         "maintenanceStatus": "complete",

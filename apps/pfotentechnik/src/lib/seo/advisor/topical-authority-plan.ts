@@ -144,33 +144,6 @@ export const topicalAuthorityOpportunities: AdvisorOpportunity[] = [
     pageType: "Cluster",
   }),
   task({
-    id: "topical-authority|glossary-system",
-    title: "Glossar als begrenztes Support-System aufbauen",
-    description:
-      "Ein strukturiertes Glossar fehlt. Einzelne Begriffserklärungen sollten jedoch nur entstehen, wenn sie mehrere bestehende Inhalte unterstützen.",
-    category: "content-gap",
-    priority: "medium",
-    impact: 3.4,
-    effortValue: 2.8,
-    effort: "mittel",
-    confidence: 0.85,
-    score: 70,
-    estimatedMinutes: 300,
-    rationale:
-      "Begriffe wie Geofencing, RFID, Mikrochip, UV-C, Aktivkohlefilter und Portionierung können mehrere Cluster stärken, bergen aber bei isolierten Kurzseiten Thin-Content-Risiken.",
-    nextAction:
-      "Implementiere zunächst eine Glossar-Hubseite und nur die Begriffe mit hoher interner Wiederverwendung: Geofencing, RFID/Mikrochip, GPS/LTE, UV-C, Aktivkohlefilter, Biofilm, Portionierung und Futterkapazität. Vermeide Ein-Satz-Seiten und verlinke Begriffe kontextuell.",
-    source: "topical-authority-repository-audit",
-    expectedBenefit: "mittel",
-    steps: [
-      "Begriffsvorkommen im Repository zählen.",
-      "Nur mehrfach relevante Begriffe auswählen.",
-      "Glossar-Template mit Definition, Praxisrelevanz und Verweisen entwickeln.",
-      "Keine automatische Überverlinkung jedes Vorkommens.",
-    ],
-    pageType: "Glossar",
-  }),
-  task({
     id: "topical-authority|manufacturer-coverage",
     title: "Herstellerabdeckung an Produkt- und Clusterlücken koppeln",
     description:
@@ -196,59 +169,5 @@ export const topicalAuthorityOpportunities: AdvisorOpportunity[] = [
       "Herstellerseiten mit passenden Vergleichen und Ratgebern verbinden.",
     ],
     pageType: "Hersteller",
-  }),
-  task({
-    id: "topical-authority|pet-cameras-expansion",
-    title: "Haustierkameras nur als validierten Expansionscluster vorbereiten",
-    description:
-      "Haustierkameras fehlen vollständig, liegen aber thematisch weiter von den derzeit stärksten Clustern entfernt.",
-    category: "content-gap",
-    priority: "medium",
-    impact: 3.7,
-    effortValue: 4.4,
-    effort: "hoch",
-    confidence: 0.78,
-    score: 72,
-    estimatedMinutes: 600,
-    rationale:
-      "Die Kategorie passt zur Marke, sollte aber erst nach dem Ausbau der bestehenden Autorität und einer belastbaren Produkt- und Nachfrageprüfung starten.",
-    nextAction:
-      "Erstelle vorerst keinen großen Content-Cluster. Prüfe Nachfrage, Wettbewerb, Affiliate-Verfügbarkeit und mindestens acht belastbare Produkte. Bei positivem Ergebnis einen Hub, einen Hauptvergleich und drei klar differenzierte Ratgeber planen.",
-    source: "topical-authority-repository-audit",
-    expectedBenefit: "mittel",
-    steps: [
-      "Markt- und Affiliate-Abdeckung validieren.",
-      "Produkte und Hersteller mit Primärquellen prüfen.",
-      "Cluster nur bei ausreichender Differenzierung freigeben.",
-      "Start mit Hub, Hauptvergleich und wenigen Support-Ratgebern.",
-    ],
-    pageType: "Expansion",
-  }),
-  task({
-    id: "topical-authority|automatic-litter-boxes-expansion",
-    title: "Automatische Katzentoiletten als spätere Expansion bewerten",
-    description:
-      "Der Cluster fehlt vollständig und wäre kommerziell interessant, ist aber redaktionell und produktspezifisch aufwendig.",
-    category: "content-gap",
-    priority: "low",
-    impact: 3.3,
-    effortValue: 4.8,
-    effort: "hoch",
-    confidence: 0.72,
-    score: 61,
-    estimatedMinutes: 720,
-    rationale:
-      "Hoher Kaufwert steht hohen Anforderungen an Sicherheit, Hygiene, Produkttests und belastbare Herstellerdaten gegenüber.",
-    nextAction:
-      "Nur eine Opportunity-Prüfung anlegen. Vor Content-Produktion Sicherheitsrisiken, Rückrufhistorie, Reinigungsaufwand, Produktverfügbarkeit und Affiliate-Eignung untersuchen. Erst danach über Hub und Vergleich entscheiden.",
-    source: "topical-authority-repository-audit",
-    expectedBenefit: "mittel",
-    steps: [
-      "Kategorie- und Sicherheitsrisiken erfassen.",
-      "Marktbreite und verfügbare Produkte prüfen.",
-      "Test- und Quellenstandard definieren.",
-      "Go/No-Go-Entscheidung dokumentieren.",
-    ],
-    pageType: "Expansion",
   }),
 ];

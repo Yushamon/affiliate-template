@@ -43,7 +43,7 @@ Maßgeblich ist zunächst das Intervall des Herstellers; häufig werden **zwei b
 
 ## Was ein Filter macht – und was nicht
 
-Schaumlagen halten Haare und grobe Partikel zurück. Aktivkohle kann Geruchs- und Geschmacksstoffe binden, Ionentauscher sollen bestimmte Mineralien reduzieren. Keines dieser Elemente macht das System steril. Filter reinigen weder Tank noch Rotorraum und können selbst Biofilm tragen.
+Schaumlagen halten Haare und grobe Partikel zurück. Aktivkohle kann Geruchs- und Geschmacksstoffe binden, Ionentauscher sollen bestimmte Mineralien reduzieren. Das Glossar grenzt [Aktivkohlefilter, UV-C und Biofilm](/glossar/#aktivkohlefilter) voneinander ab. Keines dieser Elemente macht das System steril. Filter reinigen weder Tank noch Rotorraum und können selbst Biofilm tragen.
 
 ## Warnzeichen für einen Wechsel
 

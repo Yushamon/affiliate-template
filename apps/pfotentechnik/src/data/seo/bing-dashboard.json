@@ -1,32 +1,32 @@
 {
   "schemaVersion": 2,
   "provider": "bing",
-  "generatedAt": "2026-08-28T09:03:10.507Z",
-  "dataUpdatedAt": "2026-08-27T07:00:00.000Z",
+  "generatedAt": "2026-09-03T06:49:45.814Z",
+  "dataUpdatedAt": "2026-09-02T07:00:00.000Z",
   "siteUrl": "https://pfotentechnik.de/",
   "property": "https://pfotentechnik.de/",
   "freshness": {
     "status": "current",
-    "ageDays": 1,
-    "note": "Bing-Trafficdaten werden periodisch, typischerweise wöchentlich aktualisiert; letzter gelieferter Stand ist 1 Tag(e) alt."
+    "ageDays": 0,
+    "note": "Bing-Trafficdaten werden periodisch, typischerweise wöchentlich aktualisiert; letzter gelieferter Stand ist 0 Tag(e) alt."
   },
   "range": "28d",
   "key": "28d",
   "label": "Letzte 28 Tage",
-  "startDate": "2026-07-31",
-  "endDate": "2026-08-27",
-  "comparisonStartDate": "2026-07-03",
-  "comparisonEndDate": "2026-07-30",
+  "startDate": "2026-08-06",
+  "endDate": "2026-09-02",
+  "comparisonStartDate": "2026-07-09",
+  "comparisonEndDate": "2026-08-05",
   "dataState": "periodic",
   "partial": false,
   "lowData": true,
   "comparisonAvailable": false,
   "metrics": {
     "current": {
-      "clicks": 2,
-      "impressions": 44,
-      "ctr": 4.55,
-      "position": 4.9,
+      "clicks": 4,
+      "impressions": 74,
+      "ctr": 5.41,
+      "position": 5.2,
       "avgClickPosition": -1
     },
     "previous": null,
@@ -36,33 +36,33 @@
     {
       "page": "/katzentrinkbrunnen-richtig-reinigen/",
       "clicks": 1,
-      "impressions": 11,
-      "ctr": 9.09,
-      "position": 2,
+      "impressions": 15,
+      "ctr": 6.67,
+      "position": 2.5,
       "avgClickPosition": -1
     },
     {
       "page": "/produkt/tractive-cat-6-mini/",
       "clicks": 0,
-      "impressions": 10,
+      "impressions": 11,
       "ctr": 0,
-      "position": 6,
-      "avgClickPosition": null
-    },
-    {
-      "page": "/hund-trinkt-ploetzlich-viel/",
-      "clicks": 0,
-      "impressions": 5,
-      "ctr": 0,
-      "position": 7,
+      "position": 6.2,
       "avgClickPosition": null
     },
     {
       "page": "/hund-ist-muede/",
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 11,
       "ctr": 0,
-      "position": 4.6,
+      "position": 3.7,
+      "avgClickPosition": null
+    },
+    {
+      "page": "/hund-trinkt-ploetzlich-viel/",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 10.1,
       "avgClickPosition": null
     },
     {
@@ -90,11 +90,51 @@
       "avgClickPosition": null
     },
     {
+      "page": "/wie-viel-wasser-braucht-ein-hund/",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 5,
+      "avgClickPosition": null
+    },
+    {
+      "page": "/produkt/weenect-xs/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6,
+      "avgClickPosition": null
+    },
+    {
+      "page": "/hund-frisst-nicht/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8,
+      "avgClickPosition": null
+    },
+    {
       "page": "/wie-funktionieren-gps-tracker/",
       "clicks": 1,
       "impressions": 1,
       "ctr": 100,
       "position": 3,
+      "avgClickPosition": -1
+    },
+    {
+      "page": "/katzentrinkbrunnen-ohne-filter/",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 100,
+      "position": 1,
+      "avgClickPosition": -1
+    },
+    {
+      "page": "/pumpe-katzentrinkbrunnen-reinigen/",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 100,
+      "position": 1,
       "avgClickPosition": -1
     },
     {
@@ -144,6 +184,70 @@
       "ctr": 0,
       "position": 10,
       "avgClickPosition": null
+    },
+    {
+      "page": "/wie-lange-bleibt-trockenfutter-frisch/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8,
+      "avgClickPosition": null
+    },
+    {
+      "page": "/trinkbrunnen-hund/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7,
+      "avgClickPosition": null
+    },
+    {
+      "page": "/wie-viele-mahlzeiten-hund/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6,
+      "avgClickPosition": null
+    },
+    {
+      "page": "/wie-viel-wasser-braucht-eine-katze/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10,
+      "avgClickPosition": null
+    },
+    {
+      "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3,
+      "avgClickPosition": null
+    },
+    {
+      "page": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3,
+      "avgClickPosition": null
+    },
+    {
+      "page": "/futtermenge-katze/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7,
+      "avgClickPosition": null
+    },
+    {
+      "page": "/hund-frisst-zu-schnell/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3,
+      "avgClickPosition": null
     }
   ],
   "queries": [
@@ -164,11 +268,27 @@
       "avgClickPosition": null
     },
     {
+      "query": "katzenbrunnen pumpe wo filter einbauen",
+      "clicks": 1,
+      "impressions": 2,
+      "ctr": 50,
+      "position": 2,
+      "avgClickPosition": -1
+    },
+    {
       "query": "cat 6 mini tractive",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
       "position": 8,
+      "avgClickPosition": null
+    },
+    {
+      "query": "hund trinkt plötzlich viel wasser",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10,
       "avgClickPosition": null
     },
     {
@@ -188,6 +308,14 @@
       "avgClickPosition": null
     },
     {
+      "query": "trinkbrunnen katze auseinander bauen.. reinigen und entkalken",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 3,
+      "avgClickPosition": null
+    },
+    {
       "query": "wie wird die pumpe eines katzenbrunnens gereinigt? gibt es eine anleitung wie diese auseinander gebaut werden soll?",
       "clicks": 1,
       "impressions": 1,
@@ -201,6 +329,14 @@
       "impressions": 1,
       "ctr": 100,
       "position": 3,
+      "avgClickPosition": -1
+    },
+    {
+      "query": "katzenbrunnen ohne filter laufen lassen",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 100,
+      "position": 1,
       "avgClickPosition": -1
     },
     {
@@ -228,27 +364,35 @@
       "avgClickPosition": null
     },
     {
-      "query": "wie wird die pumpe eines katzenbrunnens gereinigt? gibt es eine anleitung wie diese auseinander gebaut werden soll? gibt es dazu einen film/viedeo?",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 1,
-      "avgClickPosition": null
-    },
-    {
-      "query": "hund trinkt viel und leckt sich die pfoten, stuhlgang weich, vermehrter speichelfluss",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 6,
-      "avgClickPosition": null
-    },
-    {
       "query": "tractive tracker cat 6 batterielaufzeit",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 4,
+      "avgClickPosition": null
+    },
+    {
+      "query": "one rfid smart feeder",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4,
+      "avgClickPosition": null
+    },
+    {
+      "query": "trockenfutter besser als nassfutter auch die wahl des futters könne eine rolle spielen. nassfutter enthält einen hohen anteil an wasser und sorgt dadurch bei gleicher kalorienmenge für mehr volumen. trockenfutter ist dagegen energiereicher, so der rat. wird es ständig zur freien verfügung angeboten, könne das leichter zu einer übermäßigen kalorienaufnahme führen.",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5,
+      "avgClickPosition": null
+    },
+    {
+      "query": "automatenschlingen",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5,
       "avgClickPosition": null
     },
     {
@@ -260,27 +404,11 @@
       "avgClickPosition": null
     },
     {
-      "query": "muss katzentrinkbrunnen ständig laufen",
+      "query": "wie wird die pumpe eines katzenbrunnens gereinigt? gibt es eine anleitung wie diese auseinander gebaut werden soll? gibt es dazu einen film/viedeo?",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 2,
-      "avgClickPosition": null
-    },
-    {
-      "query": "tractive cat mini 6",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 4,
-      "avgClickPosition": null
-    },
-    {
-      "query": "hund trinkt plötzlich viel wasser",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 10,
+      "position": 1,
       "avgClickPosition": null
     },
     {
@@ -308,19 +436,19 @@
       "avgClickPosition": null
     },
     {
-      "query": "one rfid smart feeder",
+      "query": "muss katzentrinkbrunnen ständig laufen",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2,
+      "avgClickPosition": null
+    },
+    {
+      "query": "tractive cat mini 6",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 4,
-      "avgClickPosition": null
-    },
-    {
-      "query": "automatenschlingen",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 5,
       "avgClickPosition": null
     },
     {
@@ -332,7 +460,23 @@
       "avgClickPosition": null
     },
     {
-      "query": "trockenfutter besser als nassfutter auch die wahl des futters könne eine rolle spielen. nassfutter enthält einen hohen anteil an wasser und sorgt dadurch bei gleicher kalorienmenge für mehr volumen. trockenfutter ist dagegen energiereicher, so der rat. wird es ständig zur freien verfügung angeboten, könne das leichter zu einer übermäßigen kalorienaufnahme führen.",
+      "query": "hund trinkt viel und leckt sich die pfoten, stuhlgang weich, vermehrter speichelfluss",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6,
+      "avgClickPosition": null
+    },
+    {
+      "query": "welpen futterzeiten?",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6,
+      "avgClickPosition": null
+    },
+    {
+      "query": "wieviel wasser trinkt eine katze pro tag bei hohen temperaturen?",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
@@ -340,7 +484,7 @@
       "avgClickPosition": null
     },
     {
-      "query": "welpen futterzeiten?",
+      "query": "fressengerät",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
@@ -353,6 +497,38 @@
       "impressions": 1,
       "ctr": 0,
       "position": 9,
+      "avgClickPosition": null
+    },
+    {
+      "query": "honeyguardian automatic pet feeder",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6,
+      "avgClickPosition": null
+    },
+    {
+      "query": "eversweet ultra",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5,
+      "avgClickPosition": null
+    },
+    {
+      "query": "wieviel wasser sollte eine katze am tag trinken",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10,
+      "avgClickPosition": null
+    },
+    {
+      "query": "hund ist laufend müde und schlapp",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5,
       "avgClickPosition": null
     },
     {
@@ -372,11 +548,11 @@
       "avgClickPosition": null
     },
     {
-      "query": "eversweet ultra",
+      "query": "hund trinkt wenig",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 5,
+      "position": 10,
       "avgClickPosition": null
     },
     {
@@ -388,7 +564,39 @@
       "avgClickPosition": null
     },
     {
-      "query": "wieviel wasser trinkt eine katze pro tag bei hohen temperaturen?",
+      "query": "hund schlapp und müde hat nicht merh energie wie viorher",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3,
+      "avgClickPosition": null
+    },
+    {
+      "query": "wie lange ist trockenfutter aus der dose nach öffnen verzehrbar für hunde",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8,
+      "avgClickPosition": null
+    },
+    {
+      "query": "hund frisst nicht, aht leichtes fieber halsschmerzen oder zahnprobleme?",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7,
+      "avgClickPosition": null
+    },
+    {
+      "query": "wie oft filter beim katzenbrunnen wechseln",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3,
+      "avgClickPosition": null
+    },
+    {
+      "query": "weenect kosten",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
@@ -396,7 +604,7 @@
       "avgClickPosition": null
     },
     {
-      "query": "hund ist laufend müde und schlapp",
+      "query": "wie oft muss der katzenbrunnen gereinigt werden",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
@@ -404,15 +612,87 @@
       "avgClickPosition": null
     },
     {
-      "query": "fressengerät",
+      "query": "futerst deine hund wasser jeden tag",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 6,
+      "position": 7,
       "avgClickPosition": null
     },
     {
-      "query": "hund trinkt wenig",
+      "query": "was können ursachen seon das derhund so müde und anhänglich ist",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4,
+      "avgClickPosition": null
+    },
+    {
+      "query": "trinkbrunnen hunde wie oft reinigen",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7,
+      "avgClickPosition": null
+    },
+    {
+      "query": "hund 4 jahre ist immer müde",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1,
+      "avgClickPosition": null
+    },
+    {
+      "query": "weenect , der xs",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7,
+      "avgClickPosition": null
+    },
+    {
+      "query": "34kg hund wievioel wasser",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4,
+      "avgClickPosition": null
+    },
+    {
+      "query": "beste futterautomaten für katzen 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3,
+      "avgClickPosition": null
+    },
+    {
+      "query": "reinigung von parner katzenbrunnen reinigen",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5,
+      "avgClickPosition": null
+    },
+    {
+      "query": "6 jähriger hund schlapp und müde schläft viel plötzlich",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5,
+      "avgClickPosition": null
+    },
+    {
+      "query": "hund frisst nach körperlich intensiver bewegung nicht",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8,
+      "avgClickPosition": null
+    },
+    {
+      "query": "wieviel wasser trinkt eine katze am tag",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
@@ -420,19 +700,59 @@
       "avgClickPosition": null
     },
     {
-      "query": "wieviel wasser sollte eine katze am tag trinken",
+      "query": "was ist besser cat6 mini oder cat mini tractive",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 10,
+      "position": 8,
       "avgClickPosition": null
     },
     {
-      "query": "honeyguardian automatic pet feeder",
+      "query": "hunde 3 mahlzeiten aufteilung?",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 6,
+      "avgClickPosition": null
+    },
+    {
+      "query": "futtermenge katze berechnen",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7,
+      "avgClickPosition": null
+    },
+    {
+      "query": "hund volumen wasser",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4,
+      "avgClickPosition": null
+    },
+    {
+      "query": "müdigkeit bei hunden symptome",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4,
+      "avgClickPosition": null
+    },
+    {
+      "query": "trinkmenge polydipsie hund",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 25,
+      "avgClickPosition": null
+    },
+    {
+      "query": "warum schlingen hunde so schnell",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3,
       "avgClickPosition": null
     }
   ],
@@ -460,111 +780,17 @@
       "ctr": 4.55,
       "position": 5.1,
       "avgClickPosition": -1
+    },
+    {
+      "date": "2026-08-28",
+      "clicks": 2,
+      "impressions": 30,
+      "ctr": 6.67,
+      "position": 5.7,
+      "avgClickPosition": -1
     }
   ],
   "crawl": [
-    {
-      "date": "2026-07-31T07:00:00.000Z",
-      "allOtherCodes": 0,
-      "blockedByRobotsTxt": 0,
-      "code2xx": 0,
-      "code301": 0,
-      "code302": 0,
-      "code4xx": 0,
-      "code5xx": 0,
-      "connectionTimeout": 0,
-      "containsMalware": 0,
-      "crawlErrors": 0,
-      "crawledPages": 9,
-      "dnsFailures": 0,
-      "inIndex": 0,
-      "inLinks": 0
-    },
-    {
-      "date": "2026-08-01T07:00:00.000Z",
-      "allOtherCodes": 0,
-      "blockedByRobotsTxt": 0,
-      "code2xx": 10,
-      "code301": 0,
-      "code302": 0,
-      "code4xx": 0,
-      "code5xx": 0,
-      "connectionTimeout": 0,
-      "containsMalware": 0,
-      "crawlErrors": 0,
-      "crawledPages": 14,
-      "dnsFailures": 0,
-      "inIndex": 8,
-      "inLinks": 0
-    },
-    {
-      "date": "2026-08-02T07:00:00.000Z",
-      "allOtherCodes": 0,
-      "blockedByRobotsTxt": 0,
-      "code2xx": 12,
-      "code301": 0,
-      "code302": 0,
-      "code4xx": 0,
-      "code5xx": 0,
-      "connectionTimeout": 0,
-      "containsMalware": 0,
-      "crawlErrors": 0,
-      "crawledPages": 34,
-      "dnsFailures": 0,
-      "inIndex": 12,
-      "inLinks": 0
-    },
-    {
-      "date": "2026-08-03T07:00:00.000Z",
-      "allOtherCodes": 0,
-      "blockedByRobotsTxt": 0,
-      "code2xx": 12,
-      "code301": 0,
-      "code302": 0,
-      "code4xx": 0,
-      "code5xx": 0,
-      "connectionTimeout": 0,
-      "containsMalware": 0,
-      "crawlErrors": 0,
-      "crawledPages": 40,
-      "dnsFailures": 0,
-      "inIndex": 12,
-      "inLinks": 0
-    },
-    {
-      "date": "2026-08-04T07:00:00.000Z",
-      "allOtherCodes": 0,
-      "blockedByRobotsTxt": 0,
-      "code2xx": 12,
-      "code301": 0,
-      "code302": 0,
-      "code4xx": 0,
-      "code5xx": 0,
-      "connectionTimeout": 0,
-      "containsMalware": 0,
-      "crawlErrors": 0,
-      "crawledPages": 13,
-      "dnsFailures": 0,
-      "inIndex": 12,
-      "inLinks": 0
-    },
-    {
-      "date": "2026-08-05T07:00:00.000Z",
-      "allOtherCodes": 3,
-      "blockedByRobotsTxt": 0,
-      "code2xx": 14,
-      "code301": 0,
-      "code302": 0,
-      "code4xx": 0,
-      "code5xx": 0,
-      "connectionTimeout": 0,
-      "containsMalware": 0,
-      "crawlErrors": 0,
-      "crawledPages": 15,
-      "dnsFailures": 0,
-      "inIndex": 14,
-      "inLinks": 0
-    },
     {
       "date": "2026-08-06T07:00:00.000Z",
       "allOtherCodes": 3,
@@ -920,6 +1146,108 @@
       "crawledPages": 28,
       "dnsFailures": 0,
       "inIndex": 123,
+      "inLinks": 0
+    },
+    {
+      "date": "2026-08-28T07:00:00.000Z",
+      "allOtherCodes": 64,
+      "blockedByRobotsTxt": 0,
+      "code2xx": 136,
+      "code301": 11,
+      "code302": 0,
+      "code4xx": 0,
+      "code5xx": 0,
+      "connectionTimeout": 0,
+      "containsMalware": 0,
+      "crawlErrors": 0,
+      "crawledPages": 13,
+      "dnsFailures": 0,
+      "inIndex": 131,
+      "inLinks": 0
+    },
+    {
+      "date": "2026-08-29T07:00:00.000Z",
+      "allOtherCodes": 64,
+      "blockedByRobotsTxt": 0,
+      "code2xx": 136,
+      "code301": 11,
+      "code302": 0,
+      "code4xx": 0,
+      "code5xx": 0,
+      "connectionTimeout": 0,
+      "containsMalware": 0,
+      "crawlErrors": 0,
+      "crawledPages": 68,
+      "dnsFailures": 0,
+      "inIndex": 131,
+      "inLinks": 0
+    },
+    {
+      "date": "2026-08-30T07:00:00.000Z",
+      "allOtherCodes": 59,
+      "blockedByRobotsTxt": 0,
+      "code2xx": 151,
+      "code301": 11,
+      "code302": 0,
+      "code4xx": 0,
+      "code5xx": 0,
+      "connectionTimeout": 0,
+      "containsMalware": 0,
+      "crawlErrors": 0,
+      "crawledPages": 70,
+      "dnsFailures": 0,
+      "inIndex": 145,
+      "inLinks": 0
+    },
+    {
+      "date": "2026-08-31T07:00:00.000Z",
+      "allOtherCodes": 56,
+      "blockedByRobotsTxt": 0,
+      "code2xx": 161,
+      "code301": 13,
+      "code302": 0,
+      "code4xx": 0,
+      "code5xx": 0,
+      "connectionTimeout": 0,
+      "containsMalware": 0,
+      "crawlErrors": 0,
+      "crawledPages": 56,
+      "dnsFailures": 0,
+      "inIndex": 155,
+      "inLinks": 0
+    },
+    {
+      "date": "2026-09-01T07:00:00.000Z",
+      "allOtherCodes": 58,
+      "blockedByRobotsTxt": 0,
+      "code2xx": 163,
+      "code301": 14,
+      "code302": 0,
+      "code4xx": 0,
+      "code5xx": 0,
+      "connectionTimeout": 0,
+      "containsMalware": 0,
+      "crawlErrors": 0,
+      "crawledPages": 62,
+      "dnsFailures": 0,
+      "inIndex": 157,
+      "inLinks": 0
+    },
+    {
+      "date": "2026-09-02T07:00:00.000Z",
+      "allOtherCodes": 54,
+      "blockedByRobotsTxt": 0,
+      "code2xx": 169,
+      "code301": 18,
+      "code302": 0,
+      "code4xx": 0,
+      "code5xx": 0,
+      "connectionTimeout": 0,
+      "containsMalware": 0,
+      "crawlErrors": 0,
+      "crawledPages": 65,
+      "dnsFailures": 0,
+      "inIndex": 163,
       "inLinks": 0
     }
   ],

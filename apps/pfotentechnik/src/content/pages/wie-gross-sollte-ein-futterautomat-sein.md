@@ -174,7 +174,7 @@ recommendationJourney:
 
 ## Die kurze Antwort
 
-Ein Futterautomat sollte nicht möglichst groß sein. Er sollte **zur Tagesration, Tierzahl, gewünschten Reichweite und zum tatsächlichen Trockenfutter** passen.
+Ein Futterautomat sollte nicht möglichst groß sein. Er sollte **zur Tagesration, Tierzahl, gewünschten Reichweite und zum tatsächlichen Trockenfutter** passen. Das Glossar erklärt, warum [Futterkapazität und Portionierung](/glossar/#futterkapazität) getrennt bewertet werden.
 
 Die Größenberechnung besteht aus vier Schritten:
 
