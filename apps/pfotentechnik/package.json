@@ -218,7 +218,12 @@
     "product-evidence:research": "node scripts/product-evidence/research-queue.mjs",
     "seo:recovery": "node scripts/seo/audit-search-recovery.mjs",
     "seo:recovery:strict": "node scripts/seo/audit-search-recovery.mjs --strict",
-    "test:seo-recovery": "node --test test/seo-recovery-opportunity-33.7.0.test.mjs"
+    "test:seo-recovery": "node --test test/seo-recovery-opportunity-33.7.0.test.mjs",
+    "audit:production-http": "node scripts/seo/production-http-integrity.mjs",
+    "test:production-http": "node --test test/production-http-integrity-34.8.test.mjs",
+    "seo:release:prepare": "node scripts/seo/release-preflight.mjs --pre-deploy",
+    "seo:release:verify-production": "node scripts/seo/production-http-integrity.mjs",
+    "seo:release:measurement-baseline": "node scripts/seo/record-http-measurement.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

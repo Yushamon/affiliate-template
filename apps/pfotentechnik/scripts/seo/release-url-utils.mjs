@@ -342,7 +342,7 @@ function isGlobalPath(value) {
   );
 }
 
-function staticPageUrl(relativePath) {
+export function staticPageUrl(relativePath) {
   const prefix = "apps/pfotentechnik/src/pages/";
   if (!relativePath.startsWith(prefix) || !relativePath.endsWith(".astro")) {
     return null;
@@ -350,6 +350,8 @@ function staticPageUrl(relativePath) {
 
   const local = relativePath.slice(prefix.length, -".astro".length);
   if (
+    local === "404" ||
+    local === "500" ||
     local.startsWith("admin/") ||
     local.startsWith("api/") ||
     local.includes("[")

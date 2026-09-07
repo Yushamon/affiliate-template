@@ -1,6 +1,6 @@
 {
   "asOf": "2026-09-07",
-  "dataEnd": "2026-09-02",
+  "dataEnd": "2026-09-05",
   "weekly": [
     {
       "start": "2026-07-13",
@@ -131,20 +131,20 @@
     {
       "start": "2026-08-31",
       "end": "2026-09-06",
-      "availableEnd": "2026-09-02",
+      "availableEnd": "2026-09-05",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 6,
       "ctr": 0,
-      "position": 11.5,
-      "dailyRows": 3,
-      "calendarDays": 3,
+      "position": 6.7,
+      "dailyRows": 6,
+      "calendarDays": 6,
       "activeQueries": null,
       "activeUrls": null,
       "urlsWithImpressions": null,
       "urlsTop10": null,
       "urlsTop20": null,
       "dimensionsSource": null,
-      "note": "Property totals from latest observed daily rows; missing dates inside covered range contribute no observed impressions. URL/query counts only from exact matching window; disclosed rows are lower bounds. Final week incomplete."
+      "note": "Original 07.09 ZIP; data through 05.09. Weekly page/query dimensions unavailable, not zero."
     }
   ],
   "cohortUrls": 118,
@@ -452,5 +452,59 @@
       },
       "caveat": "Source documents, not deployed/indexed URL count; collection moves can preserve document count."
     }
-  ]
+  ],
+  "gscRebaseline": {
+    "sourceFile": "reports/seo-cockpit/http-integrity-34.8-evidence/pfotentechnik.de-Performance-on-Search-2026-09-07.zip",
+    "sourceSha256": "580fc49471dd9f20703a381ce3bc0971b30e1d0667b808fa1e6693215b17d480",
+    "exportedAt": "2026-09-07",
+    "dataThrough": "2026-09-05",
+    "exportPeriod": "Original export: Letzte 3 Monate; first daily row 2026-07-08; page/query rows aggregate the whole exported period",
+    "metrics": {
+      "clicks": 20,
+      "impressions": 736,
+      "ctr": 2.72,
+      "position": 23.6
+    },
+    "recent28": {
+      "start": "2026-08-09",
+      "end": "2026-09-05",
+      "clicks": 0,
+      "impressions": 44,
+      "ctr": 0,
+      "position": 31.1
+    },
+    "recent7": {
+      "start": "2026-08-30",
+      "end": "2026-09-05",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 12.9
+    },
+    "lastWeek": {
+      "start": "2026-08-31",
+      "end": "2026-09-05",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 6.7
+    },
+    "originalHostPageRows": 153,
+    "normalizedPageRows": 134,
+    "disclosedQueries": 117,
+    "exportPeriodTop10": 60,
+    "exportPeriodTop20": 86,
+    "currentWindowActiveUrls": null,
+    "currentWindowActiveQueries": null,
+    "currentWindowTop10": null,
+    "currentWindowTop20": null,
+    "limitations": [
+      "Pages and queries are period aggregates, not daily joins; do not attribute them to the latest week.",
+      "Original host remains in gsc-original-2026-09-07.json. Normalized pages use existing search/normalizer.mjs."
+    ],
+    "conclusionChanged": false,
+    "recoveryEvidence": false,
+    "domainWideRootCauseProven": false
+  },
+  "historicalCohortDataEnd": "2026-09-02"
 }

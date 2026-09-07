@@ -2,13 +2,13 @@
 
 Stand: 07.09.2026. **Der Einbruch beginnt am 25.07.; ein technischer Auslöser für den gesamten Domainverlust ist nicht bewiesen.** Drei aktuelle lokale Serving-/Konsolidierungsbefunde sind real: ein gelöschter Produktalias ohne Redirect, www mit 200 statt Hostredirect und ein Homepage-Fallback mit 200 für unbekannte Pfade. Eine eindeutig zuordenbare Alias-301 wurde lokal ergänzt. Keine Content-, Title-, Meta-, H1- oder Hoständerungen, kein Deployment.
 
-**Datenstand ist nicht Berichtsdatum:** Der angekündigte Export vom 07.09. wurde weder in den bereitgestellten Dateien noch im Repository einschließlich versteckter Backups gefunden. Die aktuellsten lokalen Google/Bing-Payloads sind vom 03.09., Ende 02.09. GSC-Konfiguration, OAuth-Client und Token sind lokal nicht vorhanden; kein API-Abruf möglich. Nach dem Exportpfad wurde während der Arbeit gefragt. Positionen vom 03.09. und 05.09. bleiben Angaben aus dem Auftrag, keine hier verifizierten Exportwerte. Dieser Bericht ersetzt nicht die fehlenden Daten durch Schätzungen.
+**GSC-Rebaseline durch 34.8:** Der Originalexport `pfotentechnik.de-Performance-on-Search-2026-09-07.zip` wurde im Downloads-Verzeichnis gefunden und unverändert samt SHA-256 gesichert. Die frühere Aussage, der Export sei nicht verfügbar, ist damit korrigiert. Verifizierte Tagesdaten reichen bis **05.09.2026**: insgesamt 736 Impressionen / 20 Klicks; 03.09. 2 Impressionen bei Position 4,5, 05.09. 2 bei Position 4. Die Kernaussagen bleiben unverändert: kein belastbarer Recovery-Nachweis, domainweite Root Cause unbewiesen. [Originalquelle und Metriken](http-integrity-34.8-evidence/gsc-rebaseline.json). Die historische Kohorten-, Change- und Bing-Analyse bleibt mit ihrem bisherigen Fenster bis 02.09. als solche erhalten.
 
 ## TIMELINE
 
 - **July visibility peak:** 13.–19.07. 339 Impressionen / 9 Klicks; 20.–26.07. 280 / 9. Das rollierende Fenster 18.–24.07. erreicht 366 / 11.
 - **collapse begins:** 25.07. — von 74 Impressionen am 24.07. auf 2 am 25.07. (−97,3%), 5 am 26.07. und 8 am 27.07. Der Wochenvergleich 280 → 20 entspricht −92,9%.
-- **current state:** 06.08.–02.09. 48 Impressionen / 0 Klicks, CTR 0%, Ø Position 33,0; 27.08.–02.09. 13 / 0. Am 02.09. eine Impression bei Position 2.
+- **current state:** 09.08.–05.09. 44 Impressionen / 0 Klicks, CTR 0%, Ø Position 31,1; 30.08.–05.09. 7 / 0, Ø12,9. Die letzte Kalenderwoche bis 05.09. hat 6 Impressionen / 0 Klicks, Ø6,7.
 - **recovery evidence:** NEIN. Gute Positionen auf Einzelimpressionen ersetzen keinen über mehrere URLs anhaltenden Volumenanstieg.
 
 | Zeitraum | Klicks | Imp. | CTR % | Ø Pos. | aktive Queries* | aktive URLs* | URLs ≤10* | URLs ≤20* | URLs mit Imp.* |
@@ -20,9 +20,9 @@ Stand: 07.09.2026. **Der Einbruch beginnt am 25.07.; ein technischer Auslöser f
 | 2026-08-10–2026-08-16 | 0 | 5 | 0 | 19 | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN |
 | 2026-08-17–2026-08-23 | 0 | 13 | 0 | 24.8 | 4 | 21 | 17 | 17 | 21 |
 | 2026-08-24–2026-08-30 | 0 | 18 | 0 | 45.3 | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN |
-| 2026-08-31–2026-09-02 | 0 | 2 | 0 | 11.5 | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN |
+| 2026-08-31–2026-09-05 | 0 | 6 | 0 | 6.7 | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN |
 
-\* Nur offengelegte Zeilen eines exakt passenden Exports. UNKNOWN bedeutet fehlende Dimension, nicht 0. Das letzte Fenster enthält nur drei verfügbare Tage. Die Tabelle bis aktuell kann wegen des fehlenden 07.09.-Exports nicht weitergeführt werden. Positionen wurden mit Impressionen gewichtet, CTR aus Klicks/Impressionen berechnet. GSC-Reporting-Tage und Commitzeiten (+02:00) werden nicht als dieselbe Zeitzone oder als Deploymentzeiten interpretiert. URL-/Query-Zeilen sind keine vollständigen Propertyzählungen; mehrere URL-Impressionen können auf eine Property-Impression entfallen.
+\* Nur offengelegte Zeilen eines exakt passenden Exports. UNKNOWN bedeutet fehlende Dimension, nicht 0. Das letzte Fenster enthält sechs verfügbare Tage bis 05.09. aus dem Originalexport vom 07.09.; 06.09. fehlt. Der CSV-Export enthält getrennte Periodenaggregate für Seiten und Queries, keine taggenauen URL-/Query-Zuordnungen. Positionen wurden mit Impressionen gewichtet, CTR aus Klicks/Impressionen berechnet. GSC-Reporting-Tage und Commitzeiten (+02:00) werden nicht als dieselbe Zeitzone oder als Deploymentzeiten interpretiert. URL-/Query-Zeilen sind keine vollständigen Propertyzählungen; mehrere URL-Impressionen können auf eine Property-Impression entfallen.
 
 **Datenrebaseline:** 53 eindeutige historische Dashboard-Payloads (29 Google, 24 Bing) aus Git und einem zusätzlichen Originalbackup gesichtet. Die bestehenden JSON-Schnittstellen und `search/normalizer.mjs` werden wiederverwendet; keine zweite Importpipeline, keine Kopien kompletter Roh-Exporte. Tageswerte werden aus der jüngsten verfügbaren Beobachtung je Datum gelesen; überlappende Fenster nicht summiert. Kleinere nachträgliche Revisionen, etwa 325 → 326 Impressionen am frühen 15.–21.07.-Snapshot, sind separat erfasst.
 
@@ -106,7 +106,7 @@ Starke interne Verlinkung allein stabilisiert nicht: `/smarte-futterautomaten/` 
 
 ## TRINKBRUNNEN CLUSTER
 
-53 bestehende Clusterseiten einschließlich Hubs, Produkte, Vergleiche und Ratgeber geprüft. **Die 6/6 NO-CHANGE-Entscheidungen aus 34.6 bleiben bestehen.** Auch im aktuellen 28d-Export bis 02.09. fehlt jede dieser sechs Seitenzeilen; nicht als 0-Impressionen-Beweis auslegen. Kein konkreter neuer Intent- oder CTR-Fehler nachgewiesen.
+53 bestehende Clusterseiten einschließlich Hubs, Produkte, Vergleiche und Ratgeber geprüft. **Die 6/6 NO-CHANGE-Entscheidungen aus 34.6 bleiben bestehen.** Auch im damaligen 28d-Export bis 02.09. fehlt jede dieser sechs Seitenzeilen; nicht als 0-Impressionen-Beweis auslegen. Kein konkreter neuer Intent- oder CTR-Fehler nachgewiesen.
 
 Mehrkatzen deckt Anzahl/Verteilung ab; Wasserstellen allgemeine Standorte; laute Pumpe Symptomdiagnose; Pumpenreinigung Wartung; ohne Filter Betrieb/Folgekosten; Kalk Entkalkung; Materialvergleich Hygiene/Materialwahl. Produktseiten besitzen Marken-/Modellintents, die Vergleichsseiten Auswahlintents. Die offengelegten 3m-Querypaare bestätigen mehrere dieser Zuordnungen, aber nicht vollständige Queryabdeckung jeder URL. Materialguide und Edelstahlprodukt sind ohne geteilte problematische Query kein Kannibalisierungsfall.
 
@@ -218,7 +218,7 @@ Es wird ausdrücklich **nicht** behauptet, dass jeder Workspace-Test grün ist o
 
 Zusätzlich Solo-Altalias als reine Redirectkontrolle, nicht als sechzehnte zu optimierende Contentseite. Nach autorisiertem Deployment beide Slashvarianten 301 → Ziel 200 prüfen. Für die 15 URLs tägliche Property-/URL-Impressionen und Klicks, ursprünglichen Host, Queryzuordnung, Google-selected canonical und letztes Crawldatum erfassen. Am 14.09. und 21.09. vollständige Wochen vergleichen; keine Wiederholung von Metadatenänderungen bei Einzelimpressionen. Für CTR-/Positionsinterpretationen mindestens 20 Impressionen in einem vollständigen vergleichbaren Fenster verlangen (Arbeitsregel aus 34.6, keine Google-Vorgabe).
 
-**Noch benötigte Belege:** tatsächlicher 07.09.-Export; `date × original absolute URL` und `date × query × URL` mit unverändertem Host; Indexierungs-/URL-Inspection-/Crawl-/Security-/Manual-Action-Status; Deploy-/Cloudflare-/Botlogs vom 20.07.–05.08.; optional Bing-Juli-Daten und echte Conversion-/Linkdaten. Solange diese fehlen, bleibt die sitewide Ursache ausdrücklich offen.
+**Noch benötigte Belege:** `date × original absolute URL` und `date × query × URL` mit unverändertem Host; Indexierungs-/URL-Inspection-/Crawl-/Security-/Manual-Action-Status; Deploy-/Cloudflare-/Botlogs vom 20.07.–05.08.; optional Bing-Juli-Daten und echte Conversion-/Linkdaten. Solange diese fehlen, bleibt die sitewide Ursache ausdrücklich offen.
 
 ## Reproduktion
 
@@ -230,3 +230,7 @@ node apps/pfotentechnik/scripts/seo/diagnose-visibility-34.7.mjs
 ```
 
 Der Diagnosescript liest vorhandene Dashboards, Git und das im Quellenmanifest benannte Originalbackup vom 27.07. und erzeugt die analytischen JSON-Tabellen. Dieses lokale Backup ist zur Reproduktion der unveränderten URL-Zuordnung erforderlich; fehlt es, bricht der Script ausdrücklich ab. Live-HTTP-Evidenz und redaktionelle Kausalitätsbewertung sind datierte Momentaufnahmen, keine automatisch aktualisierte GSC-Synchronisation. Fach-Audits erzeugen ihre üblichen Reports; ihre generierten Aktualisierungen wurden zusammen mit den 34.7-Dateien während der Arbeit durch einen extern entstandenen Commit `b3724be` erfasst. Dieser Commit wurde nicht durch den Agenten erstellt oder rückgängig gemacht. Die vollständige Änderungsliste vergleicht den Ausgangsstand `7a30ac5` mit dem abschließenden Arbeitsbaum.
+
+## Ergänzung 34.8 — Original-GSC-Export
+
+Der Import erhält alle 153 absoluten Seitenzeilen einschließlich www unverändert. Der bestehende Normalisierer ergibt 134 URL-Pfade, davon 60 mit Periodenposition ≤10 und 86 ≤20; 117 Queries sind offengelegt. Diese Zahlen gelten für den gesamten Exportzeitraum, nicht für die letzte Woche. Tagesgenaue aktive URLs/Queries und aktuelle URL-Positionen bleiben UNKNOWN. Drei nachträglich umgeschriebene historische Fassungen bleiben ausgeschlossen. Diese Baseline-Ergänzung ändert weder die 118-URL-Historienkohorte noch die 15 Beobachtungs-URLs oder die Root-Cause-Entscheidung.

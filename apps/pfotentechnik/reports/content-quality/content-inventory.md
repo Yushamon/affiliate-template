@@ -3,7 +3,7 @@
 Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus den Quelldateien.
 
 - Indexierbare Seiten: 258
-- Gerenderte HTML-Seiten insgesamt: 371
+- Gerenderte HTML-Seiten insgesamt: 372
 - Cluster: 17
 - Primäre Intent-Kategorien: 8
 - Harte Fehler: 0

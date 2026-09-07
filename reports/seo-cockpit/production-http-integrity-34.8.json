@@ -1,0 +1,715 @@
+{
+  "batch": "34.8",
+  "status": "BLOCKED_LIVE_DEPLOYMENT",
+  "complete": false,
+  "gscRebaseline": {
+    "sourceFile": "reports/seo-cockpit/http-integrity-34.8-evidence/pfotentechnik.de-Performance-on-Search-2026-09-07.zip",
+    "sourceSha256": "580fc49471dd9f20703a381ce3bc0971b30e1d0667b808fa1e6693215b17d480",
+    "exportedAt": "2026-09-07",
+    "dataThrough": "2026-09-05",
+    "exportPeriod": "Original export: Letzte 3 Monate; first daily row 2026-07-08; page/query rows aggregate the whole exported period",
+    "metrics": {
+      "clicks": 20,
+      "impressions": 736,
+      "ctr": 2.72,
+      "position": 23.6
+    },
+    "recent28": {
+      "start": "2026-08-09",
+      "end": "2026-09-05",
+      "clicks": 0,
+      "impressions": 44,
+      "ctr": 0,
+      "position": 31.1
+    },
+    "recent7": {
+      "start": "2026-08-30",
+      "end": "2026-09-05",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 12.9
+    },
+    "lastWeek": {
+      "start": "2026-08-31",
+      "end": "2026-09-05",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 6.7
+    },
+    "originalHostPageRows": 153,
+    "normalizedPageRows": 134,
+    "disclosedQueries": 117,
+    "exportPeriodTop10": 60,
+    "exportPeriodTop20": 86,
+    "currentWindowActiveUrls": null,
+    "currentWindowActiveQueries": null,
+    "currentWindowTop10": null,
+    "currentWindowTop20": null,
+    "limitations": [
+      "Pages and queries are period aggregates, not daily joins; do not attribute them to the latest week.",
+      "Original host remains in gsc-original-2026-09-07.json. Normalized pages use existing search/normalizer.mjs."
+    ],
+    "conclusionChanged": false,
+    "recoveryEvidence": false,
+    "domainWideRootCauseProven": false
+  },
+  "preferredHost": "https://pfotentechnik.de",
+  "liveVerification": {
+    "finishedAt": "2026-09-07T13:03:52.833Z",
+    "status": "FAIL",
+    "summary": {
+      "cases": 16,
+      "sitemapUrls": 258,
+      "sitemapChecked": 258,
+      "legacyRules": 68,
+      "observationUrls": 15,
+      "failedChecks": 9,
+      "documentErrors": 0,
+      "robotsErrors": 0
+    },
+    "failures": [
+      {
+        "url": "https://www.pfotentechnik.de/",
+        "failures": [
+          "FINAL_URL",
+          "INITIAL_PERMANENT_REDIRECT"
+        ]
+      },
+      {
+        "url": "http://www.pfotentechnik.de/",
+        "failures": [
+          "FINAL_URL"
+        ]
+      },
+      {
+        "url": "https://www.pfotentechnik.de/produkt/petkit-yumshare-solo-2/",
+        "failures": [
+          "FINAL_URL",
+          "INITIAL_PERMANENT_REDIRECT"
+        ]
+      },
+      {
+        "url": "https://www.pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/?foo=bar&encoded=%2Ftest%20value",
+        "failures": [
+          "FINAL_URL",
+          "INITIAL_PERMANENT_REDIRECT"
+        ]
+      },
+      {
+        "url": "http://www.pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/?foo=bar&encoded=%2Ftest%20value",
+        "failures": [
+          "FINAL_URL"
+        ]
+      },
+      {
+        "url": "https://pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/a/",
+        "failures": [
+          "FINAL_STATUS",
+          "HOMEPAGE_FALLBACK"
+        ]
+      },
+      {
+        "url": "https://www.pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/a/?foo=bar",
+        "failures": [
+          "FINAL_URL",
+          "FINAL_STATUS",
+          "INITIAL_PERMANENT_REDIRECT",
+          "HOMEPAGE_FALLBACK"
+        ]
+      },
+      {
+        "url": "https://pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/nested/b/",
+        "failures": [
+          "FINAL_STATUS",
+          "HOMEPAGE_FALLBACK"
+        ]
+      },
+      {
+        "url": "https://www.pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/nested/b/?foo=bar",
+        "failures": [
+          "FINAL_URL",
+          "FINAL_STATUS",
+          "INITIAL_PERMANENT_REDIRECT",
+          "HOMEPAGE_FALLBACK"
+        ]
+      }
+    ]
+  },
+  "implementationFiles": [
+    "apps/pfotentechnik/docs/seo-release-workflow.md",
+    "apps/pfotentechnik/package.json",
+    "apps/pfotentechnik/scripts/seo/audit-release-build-output.mjs",
+    "apps/pfotentechnik/scripts/seo/release-preflight.mjs",
+    "apps/pfotentechnik/scripts/seo/release-url-utils.mjs",
+    "apps/pfotentechnik/config/cloudflare-preferred-host-rule.json",
+    "apps/pfotentechnik/docs/production-http-deployment-34.8.md",
+    "apps/pfotentechnik/scripts/seo/production-http-integrity.mjs",
+    "apps/pfotentechnik/scripts/seo/record-http-measurement.mjs",
+    "apps/pfotentechnik/src/pages/404.astro",
+    "apps/pfotentechnik/test/production-http-integrity-34.8.test.mjs"
+  ],
+  "hostingRuleApplied": false,
+  "deploymentAt": null,
+  "blockers": [
+    "Cloudflare authenticated access unavailable: preferred-host rule not applied and new 404 build not deployed."
+  ],
+  "validation": {
+    "pfotentechnikTests": {
+      "pass": 747,
+      "fail": 0
+    },
+    "release": {
+      "status": "ready-to-deploy",
+      "summary": {
+        "phases": 23,
+        "passed": 23,
+        "failed": 0,
+        "criticalFailed": 0,
+        "warnings": 0,
+        "skipped": 1
+      }
+    },
+    "scope": {
+      "protectedUnchanged": true,
+      "contentDiff": "",
+      "sharedCoreUnchanged": true,
+      "sharedCoreKnownFailure": "packages/affiliate-core/src/linking/linkEngine.test.ts:126 pre-existing regex syntax error; outside 34.8"
+    }
+  },
+  "measurement": {
+    "schemaVersion": 1,
+    "status": "PENDING_LIVE_FIX",
+    "capturedAt": "2026-09-07T13:07:15.606Z",
+    "deploymentAt": null,
+    "suppliedDeploymentAt": null,
+    "liveVerifiedAt": "2026-09-07T13:03:52.833Z",
+    "liveGatePass": false,
+    "observationEnd": null,
+    "contentFreeze": "Keep existing cohort stable; post-fix clock not started",
+    "gsc": {
+      "sourceFile": "reports/seo-cockpit/http-integrity-34.8-evidence/pfotentechnik.de-Performance-on-Search-2026-09-07.zip",
+      "sourceSha256": "580fc49471dd9f20703a381ce3bc0971b30e1d0667b808fa1e6693215b17d480",
+      "exportedAt": "2026-09-07",
+      "dataThrough": "2026-09-05",
+      "exportPeriod": "Original export: Letzte 3 Monate; first daily row 2026-07-08; page/query rows aggregate the whole exported period",
+      "metrics": {
+        "clicks": 20,
+        "impressions": 736,
+        "ctr": 2.72,
+        "position": 23.6
+      },
+      "recent28": {
+        "start": "2026-08-09",
+        "end": "2026-09-05",
+        "clicks": 0,
+        "impressions": 44,
+        "ctr": 0,
+        "position": 31.1
+      },
+      "recent7": {
+        "start": "2026-08-30",
+        "end": "2026-09-05",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 12.9
+      },
+      "lastWeek": {
+        "start": "2026-08-31",
+        "end": "2026-09-05",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 6.7
+      },
+      "originalHostPageRows": 153,
+      "normalizedPageRows": 134,
+      "disclosedQueries": 117,
+      "exportPeriodTop10": 60,
+      "exportPeriodTop20": 86,
+      "currentWindowActiveUrls": null,
+      "currentWindowActiveQueries": null,
+      "currentWindowTop10": null,
+      "currentWindowTop20": null,
+      "limitations": [
+        "Pages and queries are period aggregates, not daily joins; do not attribute them to the latest week.",
+        "Original host remains in gsc-original-2026-09-07.json. Normalized pages use existing search/normalizer.mjs."
+      ],
+      "conclusionChanged": false,
+      "recoveryEvidence": false,
+      "domainWideRootCauseProven": false
+    },
+    "urls": [
+      {
+        "url": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-ohne-wlan/",
+        "pageType": null,
+        "cluster": null,
+        "exportPeriodMetrics": {
+          "page": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 12
+        },
+        "currentPosition": null,
+        "bestHistoricalWindowPosition": null,
+        "currentQueryCount": null,
+        "historicalDisclosedQueryCount": null,
+        "canonical": [
+          "https://pfotentechnik.de/vergleiche/beste-futterautomaten-ohne-wlan/"
+        ],
+        "finalHttpStatus": 200,
+        "finalUrl": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-ohne-wlan/",
+        "httpPass": true,
+        "lastRelevantContentChange": null,
+        "lastGitChange": null,
+        "caveat": "Original CSV page metrics cover the whole export period; date×page and query×page are absent. Historical best/query count remain historical, not current."
+      },
+      {
+        "url": "https://pfotentechnik.de/produkt/petkit-yumshare-solo-2/",
+        "pageType": "product",
+        "cluster": "futterautomaten",
+        "exportPeriodMetrics": {
+          "page": "/produkt/petkit-yumshare-solo-2/",
+          "clicks": 1,
+          "impressions": 26,
+          "ctr": 3.85,
+          "position": 8.2
+        },
+        "currentPosition": null,
+        "bestHistoricalWindowPosition": 5,
+        "currentQueryCount": null,
+        "historicalDisclosedQueryCount": 4,
+        "canonical": [
+          "https://pfotentechnik.de/produkt/petkit-yumshare-solo-2/"
+        ],
+        "finalHttpStatus": 200,
+        "finalUrl": "https://pfotentechnik.de/produkt/petkit-yumshare-solo-2/",
+        "httpPass": true,
+        "lastRelevantContentChange": {
+          "commitDate": "2026-08-11T08:22:42+02:00 dfef915",
+          "added": 37,
+          "deleted": 7,
+          "definition": ">=40 added+deleted source lines; mechanical edits included; not proof of semantic rewrite"
+        },
+        "lastGitChange": "2026-09-03T09:03:29+02:00 29d464c",
+        "caveat": "Original CSV page metrics cover the whole export period; date×page and query×page are absent. Historical best/query count remain historical, not current."
+      },
+      {
+        "url": "https://pfotentechnik.de/produkt/petkit-eversweet-ultra/",
+        "pageType": "product",
+        "cluster": "trinkbrunnen",
+        "exportPeriodMetrics": {
+          "page": "/produkt/petkit-eversweet-ultra/",
+          "clicks": 2,
+          "impressions": 17,
+          "ctr": 11.76,
+          "position": 9.1
+        },
+        "currentPosition": null,
+        "bestHistoricalWindowPosition": 4,
+        "currentQueryCount": null,
+        "historicalDisclosedQueryCount": 2,
+        "canonical": [
+          "https://pfotentechnik.de/produkt/petkit-eversweet-ultra/"
+        ],
+        "finalHttpStatus": 200,
+        "finalUrl": "https://pfotentechnik.de/produkt/petkit-eversweet-ultra/",
+        "httpPass": true,
+        "lastRelevantContentChange": {
+          "commitDate": "2026-07-26T06:39:05+02:00 0cf1781",
+          "added": 304,
+          "deleted": 215,
+          "definition": ">=40 added+deleted source lines; mechanical edits included; not proof of semantic rewrite"
+        },
+        "lastGitChange": "2026-09-03T09:03:29+02:00 29d464c",
+        "caveat": "Original CSV page metrics cover the whole export period; date×page and query×page are absent. Historical best/query count remain historical, not current."
+      },
+      {
+        "url": "https://pfotentechnik.de/produkt/petlibro-polar-wet-food-feeder/",
+        "pageType": "product",
+        "cluster": "futterautomaten",
+        "exportPeriodMetrics": {
+          "page": "/produkt/petlibro-polar-wet-food-feeder/",
+          "clicks": 0,
+          "impressions": 26,
+          "ctr": 0,
+          "position": 12.3
+        },
+        "currentPosition": null,
+        "bestHistoricalWindowPosition": 8,
+        "currentQueryCount": null,
+        "historicalDisclosedQueryCount": 1,
+        "canonical": [
+          "https://pfotentechnik.de/produkt/petlibro-polar-wet-food-feeder/"
+        ],
+        "finalHttpStatus": 200,
+        "finalUrl": "https://pfotentechnik.de/produkt/petlibro-polar-wet-food-feeder/",
+        "httpPass": true,
+        "lastRelevantContentChange": {
+          "commitDate": "2026-08-19T09:01:19+02:00 c0b62f3",
+          "added": 51,
+          "deleted": 14,
+          "definition": ">=40 added+deleted source lines; mechanical edits included; not proof of semantic rewrite"
+        },
+        "lastGitChange": "2026-09-02T08:34:34+02:00 c32627b",
+        "caveat": "Original CSV page metrics cover the whole export period; date×page and query×page are absent. Historical best/query count remain historical, not current."
+      },
+      {
+        "url": "https://pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/",
+        "pageType": "problem-solving-guide",
+        "cluster": "trinkbrunnen",
+        "exportPeriodMetrics": {
+          "page": "/trinkbrunnen-fuer-mehrere-katzen/",
+          "clicks": 0,
+          "impressions": 15,
+          "ctr": 0,
+          "position": 7.3
+        },
+        "currentPosition": null,
+        "bestHistoricalWindowPosition": 6.8,
+        "currentQueryCount": null,
+        "historicalDisclosedQueryCount": 2,
+        "canonical": [
+          "https://pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/"
+        ],
+        "finalHttpStatus": 200,
+        "finalUrl": "https://pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/",
+        "httpPass": true,
+        "lastRelevantContentChange": {
+          "commitDate": "2026-07-13T18:09:48+02:00 e119946",
+          "added": 48,
+          "deleted": 0,
+          "definition": ">=40 added+deleted source lines; mechanical edits included; not proof of semantic rewrite"
+        },
+        "lastGitChange": "2026-08-19T09:01:19+02:00 c0b62f3",
+        "caveat": "Original CSV page metrics cover the whole export period; date×page and query×page are absent. Historical best/query count remain historical, not current."
+      },
+      {
+        "url": "https://pfotentechnik.de/katzentrinkbrunnen-laut-pumpe/",
+        "pageType": "guide",
+        "cluster": "trinkbrunnen",
+        "exportPeriodMetrics": {
+          "page": "/katzentrinkbrunnen-laut-pumpe/",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 8
+        },
+        "currentPosition": null,
+        "bestHistoricalWindowPosition": 3,
+        "currentQueryCount": null,
+        "historicalDisclosedQueryCount": 1,
+        "canonical": [
+          "https://pfotentechnik.de/katzentrinkbrunnen-laut-pumpe/"
+        ],
+        "finalHttpStatus": 200,
+        "finalUrl": "https://pfotentechnik.de/katzentrinkbrunnen-laut-pumpe/",
+        "httpPass": true,
+        "lastRelevantContentChange": {
+          "commitDate": "2026-07-13T18:09:48+02:00 e119946",
+          "added": 48,
+          "deleted": 0,
+          "definition": ">=40 added+deleted source lines; mechanical edits included; not proof of semantic rewrite"
+        },
+        "lastGitChange": "2026-08-19T10:09:15+02:00 4f393d6",
+        "caveat": "Original CSV page metrics cover the whole export period; date×page and query×page are absent. Historical best/query count remain historical, not current."
+      },
+      {
+        "url": "https://pfotentechnik.de/katzentrinkbrunnen-ohne-filter/",
+        "pageType": "guide",
+        "cluster": "trinkbrunnen",
+        "exportPeriodMetrics": {
+          "page": "/katzentrinkbrunnen-ohne-filter/",
+          "clicks": 1,
+          "impressions": 5,
+          "ctr": 20,
+          "position": 5.2
+        },
+        "currentPosition": null,
+        "bestHistoricalWindowPosition": 4,
+        "currentQueryCount": null,
+        "historicalDisclosedQueryCount": 0,
+        "canonical": [
+          "https://pfotentechnik.de/katzentrinkbrunnen-ohne-filter/"
+        ],
+        "finalHttpStatus": 200,
+        "finalUrl": "https://pfotentechnik.de/katzentrinkbrunnen-ohne-filter/",
+        "httpPass": true,
+        "lastRelevantContentChange": {
+          "commitDate": "2026-07-13T18:37:57+02:00 86ee461",
+          "added": 54,
+          "deleted": 0,
+          "definition": ">=40 added+deleted source lines; mechanical edits included; not proof of semantic rewrite"
+        },
+        "lastGitChange": "2026-08-10T11:44:58+02:00 e1353dc",
+        "caveat": "Original CSV page metrics cover the whole export period; date×page and query×page are absent. Historical best/query count remain historical, not current."
+      },
+      {
+        "url": "https://pfotentechnik.de/wie-viele-wasserstellen-katze/",
+        "pageType": "problem-solving-guide",
+        "cluster": "trinkbrunnen",
+        "exportPeriodMetrics": {
+          "page": "/wie-viele-wasserstellen-katze/",
+          "clicks": 1,
+          "impressions": 10,
+          "ctr": 10,
+          "position": 6.5
+        },
+        "currentPosition": null,
+        "bestHistoricalWindowPosition": 4,
+        "currentQueryCount": null,
+        "historicalDisclosedQueryCount": 0,
+        "canonical": [
+          "https://pfotentechnik.de/wie-viele-wasserstellen-katze/"
+        ],
+        "finalHttpStatus": 200,
+        "finalUrl": "https://pfotentechnik.de/wie-viele-wasserstellen-katze/",
+        "httpPass": true,
+        "lastRelevantContentChange": {
+          "commitDate": "2026-07-24T14:59:20+02:00 4a375eb",
+          "added": 250,
+          "deleted": 27,
+          "definition": ">=40 added+deleted source lines; mechanical edits included; not proof of semantic rewrite"
+        },
+        "lastGitChange": "2026-07-25T22:00:52+02:00 602c6a1",
+        "caveat": "Original CSV page metrics cover the whole export period; date×page and query×page are absent. Historical best/query count remain historical, not current."
+      },
+      {
+        "url": "https://pfotentechnik.de/kalk-katzentrinkbrunnen-entfernen/",
+        "pageType": "problem-solving-guide",
+        "cluster": "trinkbrunnen",
+        "exportPeriodMetrics": {
+          "page": "/kalk-katzentrinkbrunnen-entfernen/",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 9.4
+        },
+        "currentPosition": null,
+        "bestHistoricalWindowPosition": 8,
+        "currentQueryCount": null,
+        "historicalDisclosedQueryCount": 0,
+        "canonical": [
+          "https://pfotentechnik.de/kalk-katzentrinkbrunnen-entfernen/"
+        ],
+        "finalHttpStatus": 200,
+        "finalUrl": "https://pfotentechnik.de/kalk-katzentrinkbrunnen-entfernen/",
+        "httpPass": true,
+        "lastRelevantContentChange": {
+          "commitDate": "2026-07-13T18:37:57+02:00 86ee461",
+          "added": 52,
+          "deleted": 0,
+          "definition": ">=40 added+deleted source lines; mechanical edits included; not proof of semantic rewrite"
+        },
+        "lastGitChange": "2026-07-25T22:00:52+02:00 602c6a1",
+        "caveat": "Original CSV page metrics cover the whole export period; date×page and query×page are absent. Historical best/query count remain historical, not current."
+      },
+      {
+        "url": "https://pfotentechnik.de/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+        "pageType": "decision-guide",
+        "cluster": "trinkbrunnen",
+        "exportPeriodMetrics": {
+          "page": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 9.5
+        },
+        "currentPosition": null,
+        "bestHistoricalWindowPosition": 9.4,
+        "currentQueryCount": null,
+        "historicalDisclosedQueryCount": 1,
+        "canonical": [
+          "https://pfotentechnik.de/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/"
+        ],
+        "finalHttpStatus": 200,
+        "finalUrl": "https://pfotentechnik.de/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+        "httpPass": true,
+        "lastRelevantContentChange": {
+          "commitDate": "2026-07-13T18:09:48+02:00 e119946",
+          "added": 48,
+          "deleted": 0,
+          "definition": ">=40 added+deleted source lines; mechanical edits included; not proof of semantic rewrite"
+        },
+        "lastGitChange": "2026-08-19T10:09:15+02:00 4f393d6",
+        "caveat": "Original CSV page metrics cover the whole export period; date×page and query×page are absent. Historical best/query count remain historical, not current."
+      },
+      {
+        "url": "https://pfotentechnik.de/katzenwasser-taeglich-wechseln/",
+        "pageType": "problem-solving-guide",
+        "cluster": "trinkbrunnen",
+        "exportPeriodMetrics": {
+          "page": "/katzenwasser-taeglich-wechseln/",
+          "clicks": 0,
+          "impressions": 17,
+          "ctr": 0,
+          "position": 12.5
+        },
+        "currentPosition": null,
+        "bestHistoricalWindowPosition": 10,
+        "currentQueryCount": null,
+        "historicalDisclosedQueryCount": 1,
+        "canonical": [
+          "https://pfotentechnik.de/katzenwasser-taeglich-wechseln/"
+        ],
+        "finalHttpStatus": 200,
+        "finalUrl": "https://pfotentechnik.de/katzenwasser-taeglich-wechseln/",
+        "httpPass": true,
+        "lastRelevantContentChange": {
+          "commitDate": "2026-07-13T18:37:57+02:00 86ee461",
+          "added": 52,
+          "deleted": 0,
+          "definition": ">=40 added+deleted source lines; mechanical edits included; not proof of semantic rewrite"
+        },
+        "lastGitChange": "2026-08-19T09:43:36+02:00 2651254",
+        "caveat": "Original CSV page metrics cover the whole export period; date×page and query×page are absent. Historical best/query count remain historical, not current."
+      },
+      {
+        "url": "https://pfotentechnik.de/filter-im-katzentrinkbrunnen-wechseln/",
+        "pageType": "medical-guide",
+        "cluster": "trinkbrunnen",
+        "exportPeriodMetrics": {
+          "page": "/filter-im-katzentrinkbrunnen-wechseln/",
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 13.3
+        },
+        "currentPosition": null,
+        "bestHistoricalWindowPosition": 9.8,
+        "currentQueryCount": null,
+        "historicalDisclosedQueryCount": 0,
+        "canonical": [
+          "https://pfotentechnik.de/filter-im-katzentrinkbrunnen-wechseln/"
+        ],
+        "finalHttpStatus": 200,
+        "finalUrl": "https://pfotentechnik.de/filter-im-katzentrinkbrunnen-wechseln/",
+        "httpPass": true,
+        "lastRelevantContentChange": {
+          "commitDate": "2026-07-13T18:09:48+02:00 e119946",
+          "added": 42,
+          "deleted": 0,
+          "definition": ">=40 added+deleted source lines; mechanical edits included; not proof of semantic rewrite"
+        },
+        "lastGitChange": "2026-09-03T09:09:26+02:00 6fa68b8",
+        "caveat": "Original CSV page metrics cover the whole export period; date×page and query×page are absent. Historical best/query count remain historical, not current."
+      },
+      {
+        "url": "https://pfotentechnik.de/produkt/petlibro-stainless-steel-fountain/",
+        "pageType": "product",
+        "cluster": "trinkbrunnen",
+        "exportPeriodMetrics": {
+          "page": "/produkt/petlibro-stainless-steel-fountain/",
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 12.5
+        },
+        "currentPosition": null,
+        "bestHistoricalWindowPosition": 3,
+        "currentQueryCount": null,
+        "historicalDisclosedQueryCount": 1,
+        "canonical": [
+          "https://pfotentechnik.de/produkt/petlibro-stainless-steel-fountain/"
+        ],
+        "finalHttpStatus": 200,
+        "finalUrl": "https://pfotentechnik.de/produkt/petlibro-stainless-steel-fountain/",
+        "httpPass": true,
+        "lastRelevantContentChange": {
+          "commitDate": "2026-07-26T06:39:05+02:00 0cf1781",
+          "added": 147,
+          "deleted": 116,
+          "definition": ">=40 added+deleted source lines; mechanical edits included; not proof of semantic rewrite"
+        },
+        "lastGitChange": "2026-09-02T08:34:34+02:00 c32627b",
+        "caveat": "Original CSV page metrics cover the whole export period; date×page and query×page are absent. Historical best/query count remain historical, not current."
+      },
+      {
+        "url": "https://pfotentechnik.de/futterautomat-richtig-reinigen/",
+        "pageType": "problem-solving-guide",
+        "cluster": "futterautomaten",
+        "exportPeriodMetrics": {
+          "page": "/futterautomat-richtig-reinigen/",
+          "clicks": 2,
+          "impressions": 17,
+          "ctr": 11.76,
+          "position": 8.9
+        },
+        "currentPosition": null,
+        "bestHistoricalWindowPosition": 5.9,
+        "currentQueryCount": null,
+        "historicalDisclosedQueryCount": 0,
+        "canonical": [
+          "https://pfotentechnik.de/futterautomat-richtig-reinigen/"
+        ],
+        "finalHttpStatus": 200,
+        "finalUrl": "https://pfotentechnik.de/futterautomat-richtig-reinigen/",
+        "httpPass": true,
+        "lastRelevantContentChange": {
+          "commitDate": "2026-07-19T22:33:55+02:00 00ba32f",
+          "added": 11,
+          "deleted": 35,
+          "definition": ">=40 added+deleted source lines; mechanical edits included; not proof of semantic rewrite"
+        },
+        "lastGitChange": "2026-07-27T08:46:41+02:00 3dc0987",
+        "caveat": "Original CSV page metrics cover the whole export period; date×page and query×page are absent. Historical best/query count remain historical, not current."
+      },
+      {
+        "url": "https://pfotentechnik.de/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+        "pageType": "comparison",
+        "cluster": "trinkbrunnen",
+        "exportPeriodMetrics": {
+          "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "clicks": 0,
+          "impressions": 24,
+          "ctr": 0,
+          "position": 54.3
+        },
+        "currentPosition": null,
+        "bestHistoricalWindowPosition": 10,
+        "currentQueryCount": null,
+        "historicalDisclosedQueryCount": 6,
+        "canonical": [
+          "https://pfotentechnik.de/vergleiche/beste-trinkbrunnen-fuer-katzen/"
+        ],
+        "finalHttpStatus": 200,
+        "finalUrl": "https://pfotentechnik.de/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+        "httpPass": true,
+        "lastRelevantContentChange": {
+          "commitDate": "2026-08-16T11:05:46+02:00 f2a3f8e",
+          "added": 47,
+          "deleted": 10,
+          "definition": ">=40 added+deleted source lines; mechanical edits included; not proof of semantic rewrite"
+        },
+        "lastGitChange": "2026-08-16T11:05:46+02:00 f2a3f8e",
+        "caveat": "Original CSV page metrics cover the whole export period; date×page and query×page are absent. Historical best/query count remain historical, not current."
+      }
+    ],
+    "blockedReasons": [
+      "Production HTTP gate has not passed",
+      "Fresh successful live verification required",
+      "Verified deployment timestamp required; no inferred date"
+    ]
+  },
+  "domainWideRootCauseProven": false,
+  "recoveryProven": false,
+  "artifacts": [
+    "reports/seo-cockpit/http-integrity-34.8-evidence/404-probes.json",
+    "reports/seo-cockpit/http-integrity-34.8-evidence/gsc-original-2026-09-07.json",
+    "reports/seo-cockpit/http-integrity-34.8-evidence/gsc-rebaseline.json",
+    "reports/seo-cockpit/http-integrity-34.8-evidence/measurement-baseline.json",
+    "reports/seo-cockpit/http-integrity-34.8-evidence/pfotentechnik-tests.log",
+    "reports/seo-cockpit/http-integrity-34.8-evidence/pfotentechnik.de-Performance-on-Search-2026-09-07.zip",
+    "reports/seo-cockpit/http-integrity-34.8-evidence/preferred-host-report.json",
+    "reports/seo-cockpit/http-integrity-34.8-evidence/production-http-test-report.json",
+    "reports/seo-cockpit/http-integrity-34.8-evidence/production-http-test-report.md",
+    "reports/seo-cockpit/http-integrity-34.8-evidence/protected-34.6.json",
+    "reports/seo-cockpit/http-integrity-34.8-evidence/redirect-matrix.json",
+    "reports/seo-cockpit/http-integrity-34.8-evidence/release-preflight.json",
+    "reports/seo-cockpit/http-integrity-34.8-evidence/release-prepare.log",
+    "reports/seo-cockpit/http-integrity-34.8-evidence/scope-validation.json"
+  ]
+}

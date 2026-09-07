@@ -9,6 +9,7 @@ const startedAt = new Date();
 const args = new Set(process.argv.slice(2));
 const production = !args.has("--diagnostic");
 const skipBuild = args.has("--skip-build");
+const preDeploy = args.has("--pre-deploy");
 const outputDirectory = path.join(APP_ROOT, ".seo-release");
 const markdownDirectory = path.join(APP_ROOT, "reports/seo-release");
 const npm = process.platform === "win32" ? "npm.cmd" : "npm";
@@ -76,6 +77,7 @@ try {
   if (production && skipBuild) {
     throw new Error("--skip-build ist im Produktionsmodus unzulässig. Nutze --diagnostic --skip-build.");
   }
+  if (preDeploy && !production) throw new Error("--pre-deploy erfordert den vollständigen Produktionsbuild.");
 
   npmScript("Content-Discovery-Link-Vertrag", "seo:discovery:check");
 
@@ -122,7 +124,16 @@ try {
   const buildReportPath = path.join(markdownDirectory, "build-output-latest.json");
   if (fs.existsSync(buildReportPath)) report.sitemap = JSON.parse(fs.readFileSync(buildReportPath, "utf8")).summary ?? {};
 
-  report.status = "ok";
+  // A local build is only a deployment candidate. Full release success also
+  // requires the already published domain to satisfy the HTTP contracts.
+  if (production && !preDeploy) {
+    npmScript("Production HTTP Integrity (veröffentlichte Domain)", "audit:production-http");
+    report.productionHttp = JSON.parse(fs.readFileSync(path.join(markdownDirectory, "production-http-latest.json"), "utf8"));
+  } else {
+    skipped.push("Production HTTP Integrity: nach Deployment zwingend ausführen; keine Production-Freigabe.");
+  }
+  report.status = preDeploy ? "ready-to-deploy" : production ? "ok" : "diagnostic-only";
+  report.productionVerified = production && !preDeploy;
 } catch (error) {
   const message = error instanceof Error ? error.message : String(error);
   errors.push(message);
@@ -178,6 +189,6 @@ try {
   ].join("\n");
   fs.writeFileSync(path.join(markdownDirectory, "preflight-latest.md"), markdown, "utf8");
   console.log("\n=== Ergebnis ===");
-  console.log("Status: " + (report.status === "ok" ? "ERFOLGREICH" : "FEHLER"));
+  console.log("Status: " + (report.status === "ok" ? "ERFOLGREICH — PRODUCTION VERIFIZIERT" : report.status === "ready-to-deploy" ? "DEPLOYMENT-KANDIDAT — LIVE-PRÜFUNG AUSSTEHEND" : report.status === "diagnostic-only" ? "DIAGNOSE — KEINE PRODUCTION-FREIGABE" : "FEHLER"));
   console.log("Report: " + path.join(outputDirectory, "preflight-latest.json"));
 }

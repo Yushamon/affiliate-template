@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 2,
+  "status": "ready-to-deploy",
+  "mode": "production",
+  "startedAt": "2026-09-07T13:07:13.408Z",
+  "finishedAt": "2026-09-07T13:08:47.666Z",
+  "durationMs": 94258,
+  "phases": [
+    {
+      "name": "Content-Discovery-Link-Vertrag",
+      "command": "npm run seo:discovery:check",
+      "critical": true,
+      "status": 0,
+      "durationMs": 323,
+      "ok": true
+    },
+    {
+      "name": "Repository- und Umgebungsprüfung",
+      "command": "npm run audit:repository:strict",
+      "critical": true,
+      "status": 0,
+      "durationMs": 418,
+      "ok": true
+    },
+    {
+      "name": "Content-Graph und Datenschema",
+      "command": "npm run audit:content-graph",
+      "critical": true,
+      "status": 0,
+      "durationMs": 983,
+      "ok": true
+    },
+    {
+      "name": "Produktdaten-Normalisierungsvertrag",
+      "command": "npm run product:data:normalize:check",
+      "critical": true,
+      "status": 0,
+      "durationMs": 418,
+      "ok": true
+    },
+    {
+      "name": "Produktdaten-Audit",
+      "command": "npm run audit:products:strict",
+      "critical": true,
+      "status": 0,
+      "durationMs": 766,
+      "ok": true
+    },
+    {
+      "name": "Vergleichsdaten-Audit",
+      "command": "npm run comparison:data:audit:strict",
+      "critical": true,
+      "status": 0,
+      "durationMs": 620,
+      "ok": true
+    },
+    {
+      "name": "Vergleichsintegrität",
+      "command": "npm run comparison:audit:strict",
+      "critical": true,
+      "status": 0,
+      "durationMs": 752,
+      "ok": true
+    },
+    {
+      "name": "Interner Source-Link-Audit",
+      "command": "npm run audit:internal-links:strict",
+      "critical": true,
+      "status": 0,
+      "durationMs": 2298,
+      "ok": true
+    },
+    {
+      "name": "Anchor-Governance-Audit",
+      "command": "npm run audit:anchor-governance:strict",
+      "critical": true,
+      "status": 0,
+      "durationMs": 290,
+      "ok": true
+    },
+    {
+      "name": "Frontmatter-Datumsvertrag",
+      "command": "npm run audit:frontmatter-dates:strict",
+      "critical": true,
+      "status": 0,
+      "durationMs": 269,
+      "ok": true
+    },
+    {
+      "name": "Technischer SEO-Source-Audit",
+      "command": "npm run audit:technical-seo:source",
+      "critical": true,
+      "status": 0,
+      "durationMs": 260,
+      "ok": true
+    },
+    {
+      "name": "SEO-Wachstumscluster",
+      "command": "npm run audit:seo-growth-clusters",
+      "critical": true,
+      "status": 0,
+      "durationMs": 288,
+      "ok": true
+    },
+    {
+      "name": "Comparison-Snippet- und Schema-Audit",
+      "command": "npm run audit:comparison-schema",
+      "critical": true,
+      "status": 0,
+      "durationMs": 249,
+      "ok": true
+    },
+    {
+      "name": "Produktionsnaher Astro-Build",
+      "command": "npm run build",
+      "critical": true,
+      "status": 0,
+      "durationMs": 78159,
+      "ok": true
+    },
+    {
+      "name": "Search-Recovery-Vertrag",
+      "command": "npm run seo:recovery:strict",
+      "critical": true,
+      "status": 0,
+      "durationMs": 469,
+      "ok": true
+    },
+    {
+      "name": "Kanonische URL-Konsistenz",
+      "command": "npm run audit:url-consistency:strict",
+      "critical": true,
+      "status": 0,
+      "durationMs": 380,
+      "ok": true
+    },
+    {
+      "name": "Gerenderte interne Linkziele",
+      "command": "npm run audit:internal-link-targets:strict",
+      "critical": true,
+      "status": 0,
+      "durationMs": 436,
+      "ok": true
+    },
+    {
+      "name": "Gerenderter SEO-Build-Output",
+      "command": "npm run audit:release-build-output:strict",
+      "critical": true,
+      "status": 0,
+      "durationMs": 463,
+      "ok": true
+    },
+    {
+      "name": "Technischer SEO-Build-Audit",
+      "command": "npm run audit:technical-seo",
+      "critical": true,
+      "status": 0,
+      "durationMs": 358,
+      "ok": true
+    },
+    {
+      "name": "Content-Quality und Kannibalisierung",
+      "command": "npm run audit:content-quality:strict",
+      "critical": true,
+      "status": 0,
+      "durationMs": 3623,
+      "ok": true
+    },
+    {
+      "name": "Performance-Budget",
+      "command": "npm run audit:performance:strict",
+      "critical": true,
+      "status": 0,
+      "durationMs": 1827,
+      "ok": true
+    },
+    {
+      "name": "Zentrale Quality Operations",
+      "command": "npm run quality-ops:check",
+      "critical": true,
+      "status": 0,
+      "durationMs": 369,
+      "ok": true
+    },
+    {
+      "name": "Release-Manifest",
+      "command": "internal",
+      "critical": true,
+      "status": 0,
+      "durationMs": 0,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "skipped": [
+    "Production HTTP Integrity: nach Deployment zwingend ausführen; keine Production-Freigabe."
+  ],
+  "build": {
+    "requested": true,
+    "fastBuild": false
+  },
+  "sitemap": {
+    "pages": 372,
+    "sitemapDocuments": 1,
+    "sitemapUrls": 258,
+    "errors": 0,
+    "warnings": 0,
+    "counts": {}
+  },
+  "contentQuality": {
+    "jsonPath": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/reports/content-quality/cannibalization-report.json",
+    "markdownPath": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/reports/content-quality/cannibalization-report.md",
+    "summary": {
+      "indexablePages": 258,
+      "totalHtmlPages": 372,
+      "pageTypes": {
+        "category-hub": 5,
+        "comparison": 28,
+        "comparison-index": 1,
+        "decision-guide": 7,
+        "editorial-page": 18,
+        "guide": 29,
+        "homepage": 1,
+        "knowledge-hub": 1,
+        "legal": 4,
+        "manufacturer": 33,
+        "manufacturer-index": 1,
+        "medical-guide": 9,
+        "problem-solving-guide": 19,
+        "product": 102
+      },
+      "clusters": {
+        "automatische-katzentoiletten": 13,
+        "futterautomaten": 81,
+        "gps-tracker": 32,
+        "haustierkameras": 10,
+        "hersteller": 26,
+        "hundeernaehrung": 3,
+        "hundegesundheit": 4,
+        "katzen-und-hundespezifische-hardware": 1,
+        "katzenernaehrung": 1,
+        "katzengesundheit": 1,
+        "katzenhaltung": 1,
+        "katzenklappen": 15,
+        "katzenverhalten": 1,
+        "smarte-haustiertechnik": 14,
+        "tierbeschaeftigung": 1,
+        "tierernaehrung": 1,
+        "trinkbrunnen": 53
+      },
+      "intents": {
+        "brand-navigation": 33,
+        "category-discovery": 9,
+        "commercial-investigation": 37,
+        "comparison": 28,
+        "informational": 25,
+        "medical-information": 10,
+        "problem-solving": 14,
+        "product-research": 102
+      },
+      "decisions": {
+        "CONSOLIDATE": 2,
+        "KEEP": 258,
+        "NOINDEX": 114
+      },
+      "errors": 0,
+      "warnings": 0,
+      "exactDuplicates": 0,
+      "nearDuplicates": 0,
+      "intentConflicts": 0,
+      "topicOwnerConflicts": 0,
+      "weakPages": 0,
+      "manualReview": 0,
+      "consolidatedPages": 2,
+      "differentiatedPages": 0,
+      "resolvedConflicts": 2
+    }
+  },
+  "manifest": {
+    "urlCount": 258,
+    "warnings": [],
+    "errors": [],
+    "jsonPath": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/.seo-release/latest.json",
+    "markdownPath": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/.seo-release/latest.md"
+  },
+  "summary": {
+    "phases": 23,
+    "passed": 23,
+    "failed": 0,
+    "criticalFailed": 0,
+    "warnings": 0,
+    "skipped": 1
+  },
+  "productionVerified": false
+}

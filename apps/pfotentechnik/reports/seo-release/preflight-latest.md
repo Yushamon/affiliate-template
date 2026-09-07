@@ -1,8 +1,8 @@
 # SEO Release Preflight
 
-- Status: OK
+- Status: READY-TO-DEPLOY
 - Modus: production
-- Dauer: 98939 ms
+- Dauer: 94258 ms
 - Phasen: 23
 - Fehler: 0
 - Warnungen: 0

@@ -74,6 +74,20 @@ const parseCanonicals = (html) => {
 };
 
 const htmlFiles = walk(dist).filter((file) => file.endsWith(".html"));
+// Without a top-level 404.html Cloudflare Pages treats this static site as an
+// SPA and serves the homepage with 200 for arbitrary unknown paths.
+const errorDocument = path.join(dist, "404.html");
+if (!fs.existsSync(errorDocument)) {
+  add("error", "MISSING_HOST_404_DOCUMENT", { file: "dist/404.html", message: "Cloudflare Pages benötigt einen echten Top-Level-404-Fallback." });
+} else {
+  const errorHtml = fs.readFileSync(errorDocument, "utf8");
+  if (!parseMeta(errorHtml, "robots").some(value => /\bnoindex\b/i.test(value))) {
+    add("error", "ERROR_DOCUMENT_INDEXABLE", { file: "dist/404.html" });
+  }
+  if (/<link\b[^>]*rel=["']canonical["'][^>]*href=["']https:\/\/pfotentechnik\.de\/["']/i.test(errorHtml)) {
+    add("error", "ERROR_DOCUMENT_HOMEPAGE_CANONICAL", { file: "dist/404.html" });
+  }
+}
 const routeToFile = new Map(htmlFiles.map((file) => [routeForFile(file), file]));
 const routes = new Set(routeToFile.keys());
 

@@ -1,0 +1,17 @@
+---
+import ProjectLayout from "../layouts/ProjectLayout.astro";
+// Astro emits /404.html. Cloudflare Pages uses it instead of its SPA fallback.
+---
+
+<ProjectLayout
+  title="Seite nicht gefunden"
+  description="Die angeforderte Seite wurde nicht gefunden."
+  canonical="/404/"
+  noindex={true}
+>
+  <section class="article legal-page">
+    <h1>Seite nicht gefunden</h1>
+    <p>Die angeforderte Seite existiert nicht oder wurde verschoben.</p>
+    <p><a href="/">Zur Startseite</a></p>
+  </section>
+</ProjectLayout>

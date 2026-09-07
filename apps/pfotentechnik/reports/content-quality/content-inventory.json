@@ -9,7 +9,7 @@
   },
   "summary": {
     "indexablePages": 258,
-    "totalHtmlPages": 371,
+    "totalHtmlPages": 372,
     "pageTypes": {
       "category-hub": 5,
       "comparison": 28,
@@ -58,7 +58,7 @@
     "decisions": {
       "CONSOLIDATE": 2,
       "KEEP": 258,
-      "NOINDEX": 113
+      "NOINDEX": 114
     },
     "errors": 0,
     "warnings": 0,
@@ -88,7 +88,7 @@
         "informational"
       ],
       "mainEntity": "Unabhängige Orientierung für smarte Haustiertechnik",
-      "internalIncomingLinks": 117,
+      "internalIncomingLinks": 118,
       "internalOutgoingLinks": 17,
       "wordCount": 645,
       "headingCount": 19,
@@ -250,6 +250,77 @@
           "internal-context",
           "structured-data",
           "decision-support"
+        ]
+      }
+    },
+    {
+      "sourceFile": "apps/pfotentechnik/dist/404.html",
+      "pageType": "editorial-page",
+      "title": "Seite nicht gefunden",
+      "h1": "Seite nicht gefunden",
+      "h1Count": 1,
+      "metaDescription": "Die angeforderte Seite wurde nicht gefunden.",
+      "canonicalRoute": "/404/",
+      "indexable": false,
+      "inSitemap": false,
+      "cluster": "smarte-haustiertechnik",
+      "secondaryIntents": [],
+      "mainEntity": "Seite nicht gefunden",
+      "internalIncomingLinks": 0,
+      "internalOutgoingLinks": 1,
+      "wordCount": 26,
+      "headingCount": 1,
+      "headings": [
+        "Seite nicht gefunden"
+      ],
+      "structuredData": [
+        "Organization",
+        "WebPage",
+        "WebSite",
+        "BreadcrumbList",
+        "ListItem"
+      ],
+      "expectedComparisonCount": 0,
+      "renderedComparisonCount": 0,
+      "route": "/404/",
+      "collection": "static",
+      "metaTitle": "Seite nicht gefunden",
+      "canonical": "https://pfotentechnik.de/404/",
+      "publishedAt": "",
+      "updatedAt": "",
+      "author": "",
+      "animal": "",
+      "productCategory": "",
+      "audience": "pet-owners",
+      "character": "informational",
+      "linkDepth": null,
+      "headingStructure": [
+        {
+          "level": 1,
+          "text": "Seite nicht gefunden"
+        }
+      ],
+      "recommendationTypes": [],
+      "relatedProducts": [],
+      "relatedComparisons": [],
+      "searchPerformance": null,
+      "searchIntent": {
+        "primary": "informational",
+        "secondary": [],
+        "confidence": "medium",
+        "source": "fallback"
+      },
+      "topicOwner": {
+        "id": "route:/404/",
+        "route": "/404/",
+        "explicit": false
+      },
+      "quality": {
+        "score": 45,
+        "signals": [
+          "clear-title-h1",
+          "meta-description",
+          "structured-data"
         ]
       }
     },
@@ -550,7 +621,7 @@
       "mainEntity": "Systemhistorie",
       "internalIncomingLinks": 0,
       "internalOutgoingLinks": 0,
-      "wordCount": 1822,
+      "wordCount": 1850,
       "headingCount": 103,
       "headings": [
         "Systemhistorie",
@@ -1265,8 +1336,8 @@
         "/produkt/sureflap-mikrochip-katzenklappe/",
         "/produkt/sureflap-dualscan-mikrochip-katzenklappe/",
         "/produkt/petlibro-capsule-dog-fountain/",
-        "/produkt/surefeed-microchip-pet-feeder/",
         "/produkt/surefeed-microchip-pet-feeder-connect/",
+        "/produkt/surefeed-microchip-pet-feeder/",
         "/produkt/enabot-rola-pettracker/",
         "/produkt/neakasa-m1-lite/",
         "/produkt/cat-mate-elite-355w/",
@@ -1284,9 +1355,9 @@
         "/produkt/prothelis-area-pets/",
         "/produkt/aqara-smart-pet-feeder-c1/",
         "/produkt/cat-mate-c300/",
+        "/produkt/furbo-360-katzenkamera/",
         "/produkt/oneisall-3-5l-cordless-fountain/",
         "/produkt/petkit-purobot-crystal-duo/",
-        "/produkt/furbo-360-katzenkamera/",
         "/produkt/devoko-90l-automatisches-katzenklo/",
         "/produkt/enabot-ebo-air-2/",
         "/produkt/petkit-purobot-max-pro-2/",
