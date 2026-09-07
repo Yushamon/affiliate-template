@@ -1,6 +1,6 @@
 # PFOTENTECHNIK 34.8 — PRODUCTION HTTP INTEGRITY
 
-**Status: NICHT ABGESCHLOSSEN — Live-Deployment/Zonenregel ausstehend.** Der lokale Fix ist vorbereitet; Production zeigt weiterhin www-200 und Homepage-200 für unbekannte Pfade. Kein Ranking- oder Recovery-Nachweis.
+**Status: ABGESCHLOSSEN MIT AKZEPTIERTER AUSNAHME.** Production-Gate PASS am 2026-09-07T13:27:50.265Z. Der Nutzer akzeptiert ausdrücklich maximal zwei permanente Hops für HTTP-www. Alle anderen HTTP-/URL-Verträge bleiben verbindlich. Kein Ranking- oder Recovery-Nachweis.
 
 ## GSC REBASELINE
 
@@ -14,43 +14,36 @@
 ## PREFERRED HOST
 
 - Canonical host: `https://pfotentechnik.de`.
-- HTTPS non-www: 200 PASS. HTTPS www: 200 **FAIL**, keine permanente Hostweiterleitung.
+- HTTPS non-www: 200 PASS; HTTPS-www: 301 → HTTPS non-www → 200 PASS.
 - HTTP non-www: 301 → HTTPS non-www → 200 PASS.
-- HTTP www: 301 → HTTPS www → 200 **FAIL**, falscher finaler Host.
-- Redirect chains: richtige Ein-Hop-Konsolidierung für www noch nicht wirksam; Gate verlangt höchstens einen Hop und unveränderte Pfade/Queries.
-- Repository/Build: Canonical, Sitemap, robots, JSON-LD, OpenGraph und interne absolute URL-Signale auf apex geprüft. 372 HTML-Dateien; 0 falsche Hostsignale. RSS verwendet `site.domain`; keine hreflang-Ausgabe gefunden. Historische GSC-Daten und Admin-Normalisierung bleiben unverändert.
+- HTTP-www: 301 → HTTPS-www → 301 → HTTPS non-www → 200. **Zwei Hops ausdrücklich vom Nutzer akzeptiert**, keine behauptete Plattformbeschränkung.
+- Pfade, Querystrings und finales Hostziel: PASS. Ausnahme gilt nur für HTTP-www und maximal zwei permanente Weiterleitungen.
+- Bestehender Build-Audit: 372 HTML-Dateien, 0 falsche öffentliche Hostsignale; Canonical, Sitemap, robots, JSON-LD, OpenGraph, interne absolute URLs und RSS geprüft.
 
 ## 404 INTEGRITY
 
-- Zwei je Lauf neue UUID-Pfade, jeweils apex und www: final **200 FAIL**, Homepage-Title/-Canonical/-HTML erkannt.
-- Homepage fallback removed: **NO (live)**.
-- Lokal: `src/pages/404.astro` erzeugt Top-Level `404.html`, noindex, eigener Canonical `/404/`, keine Sitemap-Aufnahme. Der Build-Audit verlangt dieses Artefakt; das Release-Manifest schließt technische 404/500-Routen aus.
-- Cloudflare Pages behandelt eine Site ohne Top-Level-404 als SPA und liefert bei unbekannten Pfaden den Root-Inhalt. Die veröffentlichte 404-Datei beendet diesen dokumentierten Fallback. Eine verdeckte zusätzliche Edge-Regel kann erst durch den abschließenden Live-Gate ausgeschlossen werden. [Cloudflare Serving Pages](https://developers.cloudflare.com/pages/configuration/serving-pages/).
+- Zwei neue zufällige Pfade: non-www direkt 404; www permanent zum identischen non-www-Pfad, final 404. PASS.
+- Homepage fallback removed: **YES (live)**; weder Homepage-200 noch Homepage-Title/-Canonical/-HTML.
+- `404.html` aus Astro, noindex, außerhalb der Sitemap. Bestehende Legacy-Redirects bleiben wirksam.
 
 ## LEGACY REDIRECT
 
-- Source: `/produkt/petkit-yumshare-solo/` (auch ohne Schluss-Slash).
-- Target: `/produkt/petkit-yumshare-solo-2/`.
-- Live: **301 → 200 PASS**, ein Hop, korrekter Canonical.
-- Content changed: **NO**. Die in 34.7 belegte identische Produktidentität bleibt Grundlage.
-- Alle 68 bestehenden Regelvarianten live PASS. Alter Pfad in gerenderten Links/strukturierten Daten und Sitemap: keine Vorkommen; NO CHANGE. Historische Suchdaten werden nicht umgeschrieben.
+- `/produkt/petkit-yumshare-solo/` (auch ohne Schluss-Slash) → 301 → `/produkt/petkit-yumshare-solo-2/` → 200. PASS.
+- Alle 68 Legacy-Regelvarianten PASS. Keine Contentänderung; keine alten Solo-Verweise in gerenderten Links, Schema oder Sitemap.
 
 ## PRODUCTION HTTP GATE
 
-- Added: **YES**, `audit:production-http`, integriert als kritische Phase im bestehenden Release-Preflight.
-- Preferred host / www→non-www: FAIL. HTTP→HTTPS apex: PASS; HTTP-www finaler Host: FAIL.
-- Random 404 / homepage fallback: FAIL. Legacy redirect: PASS.
-- Canonical: repräsentative vier Seitentypen PASS; Sitemap: **258/258 PASS**, Soll-/Live-Mengen abgeglichen. robots PASS.
-- Redirect chains: alle Legacy-Regeln ein Hop; www-Endzielvertrag FAIL. Query-Erhalt wird separat geprüft.
-- Gesamt: **9 fehlgeschlagene URL-Prüfungen**, 0 Sitemap-Dokumentfehler, 0 robots-Fehler. Dieser rote Gate ist ein bestätigter Production-Befund und verhindert eine falsche Freigabe.
-- `seo:release:prepare` bedeutet ausschließlich Deployment-Kandidat; diagnostische Läufe erteilen ebenfalls keine Production-Freigabe.
+- **PASS mit dokumentierter HTTP-www-Ausnahme**, 0 fehlgeschlagene URL-Prüfungen, 0 Sitemap-Dokumentfehler, 0 robots-Fehler.
+- 16 repräsentative Prüfungen, 258/258 Sitemap-URLs, 68/68 Legacy-Regeln und 15/15 Beobachtungs-URLs bestanden.
+- Preferred host, HTTP→HTTPS, www→non-www, Query-Erhalt, echte 404, Legacy, Canonical, Sitemap und Homepage-Fallback-Erkennung: PASS.
+- Der bestehende Release-Gate liest `config/production-http-policy.json`. Nur HTTP-www darf maximal zwei Hops verwenden; HTTPS-www und Legacy bleiben auf einen Hop begrenzt. Drei Hops, temporäre Redirects, falsche Ziele, Queryverlust oder Soft-404 bleiben Fehler.
 
 ## IMPLEMENTATION
 
-- Hosting config changed: Regelbody vorbereitet, **nicht live angewendet**.
+- Hosting config changed: Hostweiterleitung und 404 live wirksam. Tatsächliche Cloudflare-Regelkonfiguration nicht eingesehen; HTTP-www-Zweischritt ausdrücklich akzeptiert.
 - Redirect config changed: vorhandene Solo-Regeln beibehalten; keine unzulässige Domainregel in Pages `_redirects`. Cloudflare unterstützt dort keine Domainweiterleitungen. [Pages Redirects](https://developers.cloudflare.com/pages/configuration/redirects/).
 - Zonenregel: Host `www.pfotentechnik.de`, dynamisches Ziel `concat("https://pfotentechnik.de", http.request.uri.path)`, 301, Query-Erhalt aktiv; ohne Protokollfilter. [Cloudflare www-Redirect](https://developers.cloudflare.com/rules/url-forwarding/examples/redirect-www-to-root/).
-- Tests added: 13 HTTP-/Release-/Messbaseline-Regressionstests.
+- Tests added: 14 HTTP-/Release-/Messbaseline-Regressionstests.
 - Content files changed: **0**; SEO copy changes: **0**; 34.6: **6/6 NO CHANGE**.
 - Files changed (technische Implementierung):
 
@@ -68,33 +61,29 @@
 
 ## VALIDATION
 
-- PfotenTechnik tests: **747/747 PASS**.
-- Production Build / Release phases: **ready-to-deploy**, 23/23 Phasen bestanden.
-- Production HTTP Gate: **FAIL**, oben aufgeführte bestehende Hostingfehler.
-- Schema / Sitemap / robots / rendered links / Canonical / Duplicate-URL-Checks: siehe bestandene bestehende Releasephasen und Build-Report.
-- Orphans: bestehende Befunde nicht durch Content-/Linkänderungen bearbeitet; keine neue Contentroute außer technischer noindex-404.
-- New blockers: kein neuer lokaler P0/P1-Befund; Live-Abschluss benötigt Cloudflare-Zugang und Veröffentlichung.
-- Pre-existing Shared-Core failure: `packages/affiliate-core/src/linking/linkEngine.test.ts:126`, identischer Syntaxfehler, Datei gegenüber `6cbb5b6` unverändert; außerhalb 34.8, nicht repariert und kein zusätzlicher 34.8-Fehler.
+- PfotenTechnik tests: **748/748 PASS**, erneut nach Einführung der Ausnahme. Regression prüft zusätzlich Queryverlust und Homepage-Fallback trotz Ausnahme.
+- Production Build und 23/23 lokale Releasephasen: zuvor bestanden; unveränderte Website-Dateien, keine erneute Build-Behauptung. Neuer vollständiger Live-Gate: PASS mit akzeptierter Ausnahme.
+- Schema, Sitemap, robots, rendered links, Canonical, Duplicate-URL- und Orphan-Checks: bestehende lokale Validierung bleibt gültig; keine Content-/Linkänderungen.
+- New blockers: **0**. 34.6 erneut per Hash geprüft: **6/6 NO CHANGE**.
+- Shared-Core-Syntaxfehler weiterhin vorbestehend und außerhalb 34.8; nicht verändert oder repariert.
 
 ## MEASUREMENT
 
-- Deployment baseline date: **ausstehend**; kein Datum aus lokalem Build oder Git-Commit erfunden.
-- Observation URLs: exakt **15/15 aus 34.7**, mit Seitentyp, Cluster, originalen Zeitraum-Metriken, historischen Bestpositionen/Query-Zahlen, Live-HTTP/Canonical und letzter Änderung gespeichert. Aktuelle Einzel-URL-Position/Queryzahl mangels zeitlich passender Daten unbekannt.
-- Observation window: mindestens **14 Tage ab tatsächlichem Deployment**, erst nach frischem erfolgreichem Live-Gate aktivieren.
-- Content freeze: Kohorte stabil halten; danach 14 Tage, außer belegtem P0/P1.
-- `measurement-baseline.json` ist ausdrücklich **PENDING_LIVE_FIX**, kein abgeschlossener Post-Fix-Messpunkt.
+- Messbeginn: **2026-09-07T13:27:50.265Z**; Ende der ersten 14 Tage: **2026-09-21T13:27:50.265Z**.
+- Zeitbasis: erfolgreiche Live-Verifikation des vom Nutzer bestätigten Fixes. Dies ist der autorisierte Messanker; kein unabhängig aus Cloudflare ausgelesener Deploymentzeitpunkt.
+- Baseline: **POST_FIX_BASELINE**, exakt 15/15 Beobachtungs-URLs aus 34.7, aktuelle HTTP-/Canonical-Signale gespeichert.
+- GSC bleibt Originalexport bis 05.09.; Zeitraum-Metriken und historische Bestpositionen/Queryzahlen klar getrennt. Aktuelle Einzel-URL-Positionen und Queryzahlen mangels passender Tagesdaten unbekannt.
+- Content der 15 URLs mindestens 14 Tage stabil halten, außer belegten P0/P1-Fehlern. Keine kurzfristige Rankingwirkung behauptet.
 
 ## CONCLUSION
 
-1. www/non-www konsolidiert? **Nein, live noch offen.**
-2. Unbekannte URLs echte 404? **Nein; lokaler Fix vorbereitet, Veröffentlichung offen.**
-3. Solo-Legacy-Redirect live? **Ja, 301 → Solo 2 → 200.**
-4. Erkennt Release-QA diese Fehler künftig? **Ja, kritischer Live-Gate mit Regressionstests.**
-5. Ausschließlich bestätigte technische Probleme bearbeitet? **Ja; keine Contentoptimierung.**
-6. Google-Einbruch weiterhin unbewiesen? **Ja, domainweite Ursache bleibt unbewiesen.**
-7. Beginn der Nachmessung? **Tatsächliches Deploymentdatum nach erfolgreicher Live-Verifikation; derzeit nicht festgelegt.**
-
-Der fehlende authentifizierte Cloudflare-Zugang verhindert die Zonenregel und das Pages-Deployment in dieser Sitzung. Es gab keine Ablehnung durch automatische Freigabeprüfung. Die konkrete Umsetzung steht in [Deployment-Anleitung](../../apps/pfotentechnik/docs/production-http-deployment-34.8.md).
+1. www/non-www konsolidiert? **Ja. HTTP-www mit ausdrücklich akzeptierten zwei Hops.**
+2. Unbekannte URLs echte 404? **Ja.**
+3. Solo-Redirect live? **Ja, 301 → Solo 2 → 200.**
+4. Erkennt die Release-QA diese Fehler künftig? **Ja; ausschließlich der autorisierte HTTP-www-Zweischritt ist ausgenommen.**
+5. Ausschließlich bestätigte technische Probleme bearbeitet? **Ja, keine Contentoptimierung.**
+6. Ursache des Google-Einbruchs weiterhin unbewiesen? **Ja; auch kein Recovery-Nachweis.**
+7. Nachmessung? **14 Tage ab dem oben dokumentierten erfolgreichen Live-Prüfzeitpunkt.**
 
 ## Evidenz
 

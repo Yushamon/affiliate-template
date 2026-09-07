@@ -94,8 +94,11 @@ async function pool(items, task, concurrency = 4) {
   return results;
 }
 
-export async function runProductionHttpGate({ fetchImpl = fetch, nonce = randomUUID(), expectedSitemap = [], legacyRules = [], observationUrls = [], onProgress = () => {} } = {}) {
+export async function runProductionHttpGate({ fetchImpl = fetch, nonce = randomUUID(), expectedSitemap = [], legacyRules = [], observationUrls = [], onProgress = () => {}, acceptHttpWwwTwoHops = false } = {}) {
   const startedAt = new Date().toISOString(), cases = probeCases(nonce);
+  if (acceptHttpWwwTwoHops) for (const spec of cases) {
+    if (spec.url.startsWith('http://www.pfotentechnik.de/')) spec.maxRedirects = 2;
+  }
   const home = await traceUrl(SITE + '/', { fetchImpl });
   const results = await pool(cases, async spec => evaluateCase(spec.name === 'homepage' ? home : await traceUrl(spec.url, { fetchImpl }), spec, home));
   const problems = [], documents = [], urls = [], queue = [SITE + '/sitemap-index.xml'], seen = new Set();
@@ -147,7 +150,7 @@ export async function runProductionHttpGate({ fetchImpl = fetch, nonce = randomU
   const all = [...results, ...sitemapResults, ...observations, ...redirects];
   const failed = all.filter(r => !r.pass);
   const pass = failed.length === 0 && problems.length === 0 && robotsFailures.length === 0;
-  return { schemaVersion:1, startedAt, finishedAt:new Date().toISOString(), origin:SITE, method:'Live GET with manual redirects; all published sitemap URLs; random nonce each run', nonce, pass, status:pass?'PASS':'FAIL', summary:{cases:results.length,sitemapUrls:urls.length,sitemapChecked:sitemapResults.length,legacyRules:redirects.length,observationUrls:observations.length,failedChecks:failed.length,documentErrors:problems.length,robotsErrors:robotsFailures.length}, cases:results, sitemap:{documents,problems,urls:sitemapResults}, legacy:redirects, observations, robots:{...robots,body:undefined,pass:!robotsFailures.length,failures:robotsFailures}, failures:failed.map(r=>({url:r.url,failures:r.failures})) };
+  return { acceptedExceptions: acceptHttpWwwTwoHops ? ["34.8: user-authorized maximum two permanent hops for HTTP-www; final host, path, query and all other checks unchanged"] : [], schemaVersion:1, startedAt, finishedAt:new Date().toISOString(), origin:SITE, method:'Live GET with manual redirects; all published sitemap URLs; random nonce each run', nonce, pass, status:pass?'PASS':'FAIL', summary:{cases:results.length,sitemapUrls:urls.length,sitemapChecked:sitemapResults.length,legacyRules:redirects.length,observationUrls:observations.length,failedChecks:failed.length,documentErrors:problems.length,robotsErrors:robotsFailures.length}, cases:results, sitemap:{documents,problems,urls:sitemapResults}, legacy:redirects, observations, robots:{...robots,body:undefined,pass:!robotsFailures.length,failures:robotsFailures}, failures:failed.map(r=>({url:r.url,failures:r.failures})) };
 }
 
 export function readLegacyRules(text) {
@@ -160,7 +163,7 @@ export function writeHttpReport(report, directory = path.join(APP_ROOT, 'reports
   const clean = v => String(v ?? 'UNKNOWN').replaceAll('|',' / ');
   const rows = [...report.cases,...report.legacy,...report.sitemap.urls];
   fs.writeFileSync(path.join(directory,'production-http-latest.md'), [
-    '# Production HTTP Integrity', '', `Status: **${report.status}** · ${report.finishedAt} · ${SITE}`, '',
+    '# Production HTTP Integrity', '', 'Accepted exceptions: '+JSON.stringify(report.acceptedExceptions ?? []), '', `Status: **${report.status}** · ${report.finishedAt} · ${SITE}`, '',
     `Sitemap: ${report.summary.sitemapChecked}/${report.summary.sitemapUrls}; legacy rules: ${report.summary.legacyRules}; failed checks: ${report.summary.failedChecks}.`, '',
     '| URL | Initial | Chain | Final | Final URL | Canonical | Result |', '|---|---|---|---|---|---|---|',
     ...rows.map(r=>'| '+[r.url,r.initialStatus,r.chain.map(h=>h.status).join(' → '),r.finalStatus,r.finalUrl,r.canonical.join(', '),r.pass?'PASS':r.failures.join(', ')].map(clean).join(' | ')+' |'), '',
@@ -173,7 +176,8 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const observationUrls = JSON.parse(fs.readFileSync(watchFile,'utf8')).urls;
   const expectedSitemap = sitemapUrls();
   const legacyRules = readLegacyRules(fs.readFileSync(path.join(APP_ROOT,'public/_redirects'),'utf8'));
-  const report = await runProductionHttpGate({expectedSitemap,legacyRules,observationUrls,onProgress:console.log});
+  const policy = JSON.parse(fs.readFileSync(path.join(APP_ROOT,'config/production-http-policy.json'),'utf8'));
+  const report = await runProductionHttpGate({expectedSitemap,legacyRules,observationUrls,onProgress:console.log,acceptHttpWwwTwoHops:policy.acceptHttpWwwTwoHops === true});
   writeHttpReport(report);
   console.log(`Production HTTP Integrity: ${report.status}; ${report.summary.failedChecks} failed URL checks, ${report.summary.documentErrors} sitemap errors.`);
   process.exitCode = report.pass ? 0 : 1;

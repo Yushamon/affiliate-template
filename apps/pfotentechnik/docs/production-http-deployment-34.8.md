@@ -28,9 +28,11 @@ Wirksamkeit. Domainregeln in `public/_redirects` sind auf Cloudflare Pages nicht
 unterstützt. [Single Redirects](https://developers.cloudflare.com/rules/url-forwarding/single-redirects/settings/),
 [Pages Redirects](https://developers.cloudflare.com/pages/configuration/redirects/).
 
-Die bevorzugte Lösung hat einen Hop auch für HTTP-www. Falls eine vorgeschaltete
-Regel dennoch zwei Hops erzeugt, deren Reihenfolge prüfen; der Gate meldet das
-als FAIL. Keine stillschweigende Ausnahme für längere Ketten.
+Die direkte Ein-Hop-Lösung bleibt bevorzugt. Für 34.8 hat der Nutzer den
+HTTP-www-Zweischritt ausdrücklich akzeptiert. `config/production-http-policy.json`
+erlaubt ausschließlich für HTTP-www maximal zwei permanente Hops. Zielhost,
+Pfad, Querystring und sämtliche übrigen Prüfungen bleiben verbindlich.
+Die Ausnahme wird in jedem Production-HTTP-Report ausgewiesen.
 
 ## Pages-Deployment
 

@@ -108,3 +108,13 @@ test('measurement clock requires a fresh passing live gate and a known deploymen
   assert.equal(measurementBaseline({...options, deployedAt:'2026-09-07T11:50:00Z', http:{...options.http, pass:false}}).deploymentAt, null);
   assert.equal(measurementBaseline({...options, deployedAt:'2026-09-07T11:50:00Z', now:new Date('2026-09-07T14:00:00Z')}).deploymentAt, null);
 });
+
+test('authorized HTTP-www two-hop exception retains query and fallback guards', async () => {
+  const twoHops = u => u.protocol === 'http:' && u.hostname.startsWith('www.') ? redirect('https://' + u.host + u.pathname + u.search) : null;
+  assert.equal((await run(site(twoHops))).pass, false);
+  assert.equal((await run(site(twoHops), {acceptHttpWwwTwoHops:true})).pass, true);
+  const lostQuery = u => u.protocol === 'http:' && u.hostname.startsWith('www.') ? redirect('https://' + u.host + u.pathname) : null;
+  assert.equal((await run(site(lostQuery), {acceptHttpWwwTwoHops:true})).pass, false);
+  const fallback = u => twoHops(u) || (u.pathname.includes('seo-http-integrity-404') && !u.hostname.startsWith('www.') ? response(html('/')) : null);
+  assert.equal((await run(site(fallback), {acceptHttpWwwTwoHops:true})).pass, false);
+});

@@ -2,143 +2,145 @@
   {
     "name": "random-404-a/",
     "category": "random-404",
-    "url": "https://pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/a/",
-    "finalUrl": "https://pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/a/",
+    "url": "https://pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/a/",
+    "finalUrl": "https://pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/a/",
     "status": 404,
     "maxRedirects": 0,
-    "initialStatus": 200,
+    "initialStatus": 404,
     "chain": [
       {
-        "url": "https://pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/a/",
-        "status": 200,
+        "url": "https://pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/a/",
+        "status": 404,
         "location": null,
         "xRobotsTag": null,
-        "date": "Mon, 07 Sep 2026 13:03:41 GMT",
+        "date": "Mon, 07 Sep 2026 13:27:41 GMT",
         "contentType": "text/html; charset=utf-8",
-        "cfRay": "a375ea3e6bb1dacf-LHR"
+        "cfRay": "a3760d66dac1ef31-LHR"
       }
     ],
-    "finalStatus": 200,
+    "finalStatus": 404,
     "redirects": 0,
     "error": null,
     "canonical": [
-      "https://pfotentechnik.de/"
+      "https://pfotentechnik.de/404/"
     ],
-    "title": "Smarte Haustier-Technik im Vergleich | PfotenTechnik",
-    "robots": "index,follow,max-image-preview:large",
-    "bodySha256": "5bba6ba98e199cf6bd5685a1570a3888bb39b09c1a3a4cd139202d37382def17",
-    "pass": false,
-    "failures": [
-      "FINAL_STATUS",
-      "HOMEPAGE_FALLBACK"
-    ]
+    "title": "Seite nicht gefunden",
+    "robots": "noindex,follow,max-image-preview:large",
+    "bodySha256": "51d9707c037703e347216c2a0ba5d9226118fbd7505681b051f0cbb571dfd31f",
+    "pass": true,
+    "failures": []
   },
   {
     "name": "www-random-404-a/",
     "category": "random-404",
-    "url": "https://www.pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/a/?foo=bar",
-    "finalUrl": "https://www.pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/a/?foo=bar",
+    "url": "https://www.pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/a/?foo=bar",
+    "finalUrl": "https://pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/a/?foo=bar",
     "status": 404,
     "redirect": true,
     "maxRedirects": 1,
-    "initialStatus": 200,
+    "initialStatus": 301,
     "chain": [
       {
-        "url": "https://www.pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/a/?foo=bar",
-        "status": 200,
+        "url": "https://www.pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/a/?foo=bar",
+        "status": 301,
+        "location": "https://pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/a/?foo=bar",
+        "xRobotsTag": null,
+        "date": "Mon, 07 Sep 2026 13:27:41 GMT",
+        "contentType": "text/html; charset=UTF-8",
+        "cfRay": "a3760d66ef57911c-LHR"
+      },
+      {
+        "url": "https://pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/a/?foo=bar",
+        "status": 404,
         "location": null,
         "xRobotsTag": null,
-        "date": "Mon, 07 Sep 2026 13:03:41 GMT",
+        "date": "Mon, 07 Sep 2026 13:27:41 GMT",
         "contentType": "text/html; charset=utf-8",
-        "cfRay": "a375ea3edb82d7a5-LHR"
+        "cfRay": "a3760d671a665630-LHR"
       }
     ],
-    "finalStatus": 200,
-    "redirects": 0,
+    "finalStatus": 404,
+    "redirects": 1,
     "error": null,
     "canonical": [
-      "https://pfotentechnik.de/"
+      "https://pfotentechnik.de/404/"
     ],
-    "title": "Smarte Haustier-Technik im Vergleich | PfotenTechnik",
-    "robots": "index,follow,max-image-preview:large",
-    "bodySha256": "5bba6ba98e199cf6bd5685a1570a3888bb39b09c1a3a4cd139202d37382def17",
-    "pass": false,
-    "failures": [
-      "FINAL_URL",
-      "FINAL_STATUS",
-      "INITIAL_PERMANENT_REDIRECT",
-      "HOMEPAGE_FALLBACK"
-    ]
+    "title": "Seite nicht gefunden",
+    "robots": "noindex,follow,max-image-preview:large",
+    "bodySha256": "51d9707c037703e347216c2a0ba5d9226118fbd7505681b051f0cbb571dfd31f",
+    "pass": true,
+    "failures": []
   },
   {
     "name": "random-404-nested/b/",
     "category": "random-404",
-    "url": "https://pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/nested/b/",
-    "finalUrl": "https://pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/nested/b/",
+    "url": "https://pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/nested/b/",
+    "finalUrl": "https://pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/nested/b/",
     "status": 404,
     "maxRedirects": 0,
-    "initialStatus": 200,
+    "initialStatus": 404,
     "chain": [
       {
-        "url": "https://pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/nested/b/",
-        "status": 200,
+        "url": "https://pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/nested/b/",
+        "status": 404,
         "location": null,
         "xRobotsTag": null,
-        "date": "Mon, 07 Sep 2026 13:03:41 GMT",
+        "date": "Mon, 07 Sep 2026 13:27:41 GMT",
         "contentType": "text/html; charset=utf-8",
-        "cfRay": "a375ea3eea6a653c-LHR"
+        "cfRay": "a3760d674bc8ef31-LHR"
       }
     ],
-    "finalStatus": 200,
+    "finalStatus": 404,
     "redirects": 0,
     "error": null,
     "canonical": [
-      "https://pfotentechnik.de/"
+      "https://pfotentechnik.de/404/"
     ],
-    "title": "Smarte Haustier-Technik im Vergleich | PfotenTechnik",
-    "robots": "index,follow,max-image-preview:large",
-    "bodySha256": "5bba6ba98e199cf6bd5685a1570a3888bb39b09c1a3a4cd139202d37382def17",
-    "pass": false,
-    "failures": [
-      "FINAL_STATUS",
-      "HOMEPAGE_FALLBACK"
-    ]
+    "title": "Seite nicht gefunden",
+    "robots": "noindex,follow,max-image-preview:large",
+    "bodySha256": "51d9707c037703e347216c2a0ba5d9226118fbd7505681b051f0cbb571dfd31f",
+    "pass": true,
+    "failures": []
   },
   {
     "name": "www-random-404-nested/b/",
     "category": "random-404",
-    "url": "https://www.pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/nested/b/?foo=bar",
-    "finalUrl": "https://www.pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/nested/b/?foo=bar",
+    "url": "https://www.pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/nested/b/?foo=bar",
+    "finalUrl": "https://pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/nested/b/?foo=bar",
     "status": 404,
     "redirect": true,
     "maxRedirects": 1,
-    "initialStatus": 200,
+    "initialStatus": 301,
     "chain": [
       {
-        "url": "https://www.pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/nested/b/?foo=bar",
-        "status": 200,
+        "url": "https://www.pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/nested/b/?foo=bar",
+        "status": 301,
+        "location": "https://pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/nested/b/?foo=bar",
+        "xRobotsTag": null,
+        "date": "Mon, 07 Sep 2026 13:27:42 GMT",
+        "contentType": "text/html; charset=UTF-8",
+        "cfRay": "a3760d67893a911c-LHR"
+      },
+      {
+        "url": "https://pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/nested/b/?foo=bar",
+        "status": 404,
         "location": null,
         "xRobotsTag": null,
-        "date": "Mon, 07 Sep 2026 13:03:41 GMT",
+        "date": "Mon, 07 Sep 2026 13:27:42 GMT",
         "contentType": "text/html; charset=utf-8",
-        "cfRay": "a375ea3f2f0d4f42-LHR"
+        "cfRay": "a3760d67ce7cece0-LHR"
       }
     ],
-    "finalStatus": 200,
-    "redirects": 0,
+    "finalStatus": 404,
+    "redirects": 1,
     "error": null,
     "canonical": [
-      "https://pfotentechnik.de/"
+      "https://pfotentechnik.de/404/"
     ],
-    "title": "Smarte Haustier-Technik im Vergleich | PfotenTechnik",
-    "robots": "index,follow,max-image-preview:large",
-    "bodySha256": "5bba6ba98e199cf6bd5685a1570a3888bb39b09c1a3a4cd139202d37382def17",
-    "pass": false,
-    "failures": [
-      "FINAL_URL",
-      "FINAL_STATUS",
-      "INITIAL_PERMANENT_REDIRECT",
-      "HOMEPAGE_FALLBACK"
-    ]
+    "title": "Seite nicht gefunden",
+    "robots": "noindex,follow,max-image-preview:large",
+    "bodySha256": "51d9707c037703e347216c2a0ba5d9226118fbd7505681b051f0cbb571dfd31f",
+    "pass": true,
+    "failures": []
   }
 ]

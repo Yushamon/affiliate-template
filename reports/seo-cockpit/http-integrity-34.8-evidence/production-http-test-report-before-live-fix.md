@@ -1,10 +1,8 @@
 # Production HTTP Integrity
 
-Accepted exceptions: ["34.8: user-authorized maximum two permanent hops for HTTP-www; final host, path, query and all other checks unchanged"]
+Status: **FAIL** · 2026-09-07T13:03:52.833Z · https://pfotentechnik.de
 
-Status: **PASS** · 2026-09-07T13:27:50.265Z · https://pfotentechnik.de
-
-Sitemap: 258/258; legacy rules: 68; failed checks: 0.
+Sitemap: 258/258; legacy rules: 68; failed checks: 9.
 
 | URL | Initial | Chain | Final | Final URL | Canonical | Result |
 |---|---|---|---|---|---|---|
@@ -12,18 +10,18 @@ Sitemap: 258/258; legacy rules: 68; failed checks: 0.
 | https://pfotentechnik.de/produkt/petkit-yumshare-solo-2/ | 200 | 200 | 200 | https://pfotentechnik.de/produkt/petkit-yumshare-solo-2/ | https://pfotentechnik.de/produkt/petkit-yumshare-solo-2/ | PASS |
 | https://pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/ | 200 | 200 | 200 | https://pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/ | https://pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/ | PASS |
 | https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-katzen/ | 200 | 200 | 200 | https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-katzen/ | https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-katzen/ | PASS |
-| https://www.pfotentechnik.de/ | 301 | 301 → 200 | 200 | https://pfotentechnik.de/ | https://pfotentechnik.de/ | PASS |
+| https://www.pfotentechnik.de/ | 200 | 200 | 200 | https://www.pfotentechnik.de/ | https://pfotentechnik.de/ | FINAL_URL, INITIAL_PERMANENT_REDIRECT |
 | http://pfotentechnik.de/ | 301 | 301 → 200 | 200 | https://pfotentechnik.de/ | https://pfotentechnik.de/ | PASS |
-| http://www.pfotentechnik.de/ | 301 | 301 → 301 → 200 | 200 | https://pfotentechnik.de/ | https://pfotentechnik.de/ | PASS |
-| https://www.pfotentechnik.de/produkt/petkit-yumshare-solo-2/ | 301 | 301 → 200 | 200 | https://pfotentechnik.de/produkt/petkit-yumshare-solo-2/ | https://pfotentechnik.de/produkt/petkit-yumshare-solo-2/ | PASS |
-| https://www.pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/?foo=bar&encoded=%2Ftest%20value | 301 | 301 → 200 | 200 | https://pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/?foo=bar&encoded=%2Ftest%20value | https://pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/ | PASS |
-| http://www.pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/?foo=bar&encoded=%2Ftest%20value | 301 | 301 → 301 → 200 | 200 | https://pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/?foo=bar&encoded=%2Ftest%20value | https://pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/ | PASS |
+| http://www.pfotentechnik.de/ | 301 | 301 → 200 | 200 | https://www.pfotentechnik.de/ | https://pfotentechnik.de/ | FINAL_URL |
+| https://www.pfotentechnik.de/produkt/petkit-yumshare-solo-2/ | 200 | 200 | 200 | https://www.pfotentechnik.de/produkt/petkit-yumshare-solo-2/ | https://pfotentechnik.de/produkt/petkit-yumshare-solo-2/ | FINAL_URL, INITIAL_PERMANENT_REDIRECT |
+| https://www.pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/?foo=bar&encoded=%2Ftest%20value | 200 | 200 | 200 | https://www.pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/?foo=bar&encoded=%2Ftest%20value | https://pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/ | FINAL_URL, INITIAL_PERMANENT_REDIRECT |
+| http://www.pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/?foo=bar&encoded=%2Ftest%20value | 301 | 301 → 200 | 200 | https://www.pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/?foo=bar&encoded=%2Ftest%20value | https://pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/ | FINAL_URL |
 | https://pfotentechnik.de/produkt/petkit-yumshare-solo/ | 301 | 301 → 200 | 200 | https://pfotentechnik.de/produkt/petkit-yumshare-solo-2/ | https://pfotentechnik.de/produkt/petkit-yumshare-solo-2/ | PASS |
 | https://pfotentechnik.de/produkt/petkit-yumshare-solo | 301 | 301 → 200 | 200 | https://pfotentechnik.de/produkt/petkit-yumshare-solo-2/ | https://pfotentechnik.de/produkt/petkit-yumshare-solo-2/ | PASS |
-| https://pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/a/ | 404 | 404 | 404 | https://pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/a/ | https://pfotentechnik.de/404/ | PASS |
-| https://www.pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/a/?foo=bar | 301 | 301 → 404 | 404 | https://pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/a/?foo=bar | https://pfotentechnik.de/404/ | PASS |
-| https://pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/nested/b/ | 404 | 404 | 404 | https://pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/nested/b/ | https://pfotentechnik.de/404/ | PASS |
-| https://www.pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/nested/b/?foo=bar | 301 | 301 → 404 | 404 | https://pfotentechnik.de/seo-http-integrity-404-cc54fa95-3a08-4e40-89c0-c460d751d9c2/nested/b/?foo=bar | https://pfotentechnik.de/404/ | PASS |
+| https://pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/a/ | 200 | 200 | 200 | https://pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/a/ | https://pfotentechnik.de/ | FINAL_STATUS, HOMEPAGE_FALLBACK |
+| https://www.pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/a/?foo=bar | 200 | 200 | 200 | https://www.pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/a/?foo=bar | https://pfotentechnik.de/ | FINAL_URL, FINAL_STATUS, INITIAL_PERMANENT_REDIRECT, HOMEPAGE_FALLBACK |
+| https://pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/nested/b/ | 200 | 200 | 200 | https://pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/nested/b/ | https://pfotentechnik.de/ | FINAL_STATUS, HOMEPAGE_FALLBACK |
+| https://www.pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/nested/b/?foo=bar | 200 | 200 | 200 | https://www.pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/nested/b/?foo=bar | https://pfotentechnik.de/ | FINAL_URL, FINAL_STATUS, INITIAL_PERMANENT_REDIRECT, HOMEPAGE_FALLBACK |
 | https://pfotentechnik.de/beste-futterautomaten-fuer-berufstaetige | 301 | 301 → 200 | 200 | https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-berufstaetige/ | https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-berufstaetige/ | PASS |
 | https://pfotentechnik.de/beste-futterautomaten-fuer-berufstaetige/ | 301 | 301 → 200 | 200 | https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-berufstaetige/ | https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-berufstaetige/ | PASS |
 | https://pfotentechnik.de/beste-futterautomaten-fuer-hunde | 301 | 301 → 200 | 200 | https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-hunde/ | https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-hunde/ | PASS |

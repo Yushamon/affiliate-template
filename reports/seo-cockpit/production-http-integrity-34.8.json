@@ -1,7 +1,7 @@
 {
   "batch": "34.8",
-  "status": "BLOCKED_LIVE_DEPLOYMENT",
-  "complete": false,
+  "status": "COMPLETE_WITH_ACCEPTED_EXCEPTION",
+  "complete": true,
   "gscRebaseline": {
     "sourceFile": "reports/seo-cockpit/http-integrity-34.8-evidence/pfotentechnik.de-Performance-on-Search-2026-09-07.zip",
     "sourceSha256": "580fc49471dd9f20703a381ce3bc0971b30e1d0667b808fa1e6693215b17d480",
@@ -57,84 +57,21 @@
   },
   "preferredHost": "https://pfotentechnik.de",
   "liveVerification": {
-    "finishedAt": "2026-09-07T13:03:52.833Z",
-    "status": "FAIL",
+    "finishedAt": "2026-09-07T13:27:50.265Z",
+    "status": "PASS",
     "summary": {
       "cases": 16,
       "sitemapUrls": 258,
       "sitemapChecked": 258,
       "legacyRules": 68,
       "observationUrls": 15,
-      "failedChecks": 9,
+      "failedChecks": 0,
       "documentErrors": 0,
       "robotsErrors": 0
     },
-    "failures": [
-      {
-        "url": "https://www.pfotentechnik.de/",
-        "failures": [
-          "FINAL_URL",
-          "INITIAL_PERMANENT_REDIRECT"
-        ]
-      },
-      {
-        "url": "http://www.pfotentechnik.de/",
-        "failures": [
-          "FINAL_URL"
-        ]
-      },
-      {
-        "url": "https://www.pfotentechnik.de/produkt/petkit-yumshare-solo-2/",
-        "failures": [
-          "FINAL_URL",
-          "INITIAL_PERMANENT_REDIRECT"
-        ]
-      },
-      {
-        "url": "https://www.pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/?foo=bar&encoded=%2Ftest%20value",
-        "failures": [
-          "FINAL_URL",
-          "INITIAL_PERMANENT_REDIRECT"
-        ]
-      },
-      {
-        "url": "http://www.pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/?foo=bar&encoded=%2Ftest%20value",
-        "failures": [
-          "FINAL_URL"
-        ]
-      },
-      {
-        "url": "https://pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/a/",
-        "failures": [
-          "FINAL_STATUS",
-          "HOMEPAGE_FALLBACK"
-        ]
-      },
-      {
-        "url": "https://www.pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/a/?foo=bar",
-        "failures": [
-          "FINAL_URL",
-          "FINAL_STATUS",
-          "INITIAL_PERMANENT_REDIRECT",
-          "HOMEPAGE_FALLBACK"
-        ]
-      },
-      {
-        "url": "https://pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/nested/b/",
-        "failures": [
-          "FINAL_STATUS",
-          "HOMEPAGE_FALLBACK"
-        ]
-      },
-      {
-        "url": "https://www.pfotentechnik.de/seo-http-integrity-404-e3ce21c4-2065-4396-ad3f-3e2334f83269/nested/b/?foo=bar",
-        "failures": [
-          "FINAL_URL",
-          "FINAL_STATUS",
-          "INITIAL_PERMANENT_REDIRECT",
-          "HOMEPAGE_FALLBACK"
-        ]
-      }
+    "failures": [],
+    "acceptedExceptions": [
+      "34.8: user-authorized maximum two permanent hops for HTTP-www; final host, path, query and all other checks unchanged"
     ]
   },
   "implementationFiles": [
@@ -150,14 +87,12 @@
     "apps/pfotentechnik/src/pages/404.astro",
     "apps/pfotentechnik/test/production-http-integrity-34.8.test.mjs"
   ],
-  "hostingRuleApplied": false,
+  "hostingRuleApplied": null,
   "deploymentAt": null,
-  "blockers": [
-    "Cloudflare authenticated access unavailable: preferred-host rule not applied and new 404 build not deployed."
-  ],
+  "blockers": [],
   "validation": {
     "pfotentechnikTests": {
-      "pass": 747,
+      "pass": 748,
       "fail": 0
     },
     "release": {
@@ -176,18 +111,36 @@
       "contentDiff": "",
       "sharedCoreUnchanged": true,
       "sharedCoreKnownFailure": "packages/affiliate-core/src/linking/linkEngine.test.ts:126 pre-existing regex syntax error; outside 34.8"
+    },
+    "productionHttp": {
+      "finishedAt": "2026-09-07T13:27:50.265Z",
+      "status": "PASS",
+      "summary": {
+        "cases": 16,
+        "sitemapUrls": 258,
+        "sitemapChecked": 258,
+        "legacyRules": 68,
+        "observationUrls": 15,
+        "failedChecks": 0,
+        "documentErrors": 0,
+        "robotsErrors": 0
+      },
+      "failures": [],
+      "acceptedExceptions": [
+        "34.8: user-authorized maximum two permanent hops for HTTP-www; final host, path, query and all other checks unchanged"
+      ]
     }
   },
   "measurement": {
     "schemaVersion": 1,
-    "status": "PENDING_LIVE_FIX",
-    "capturedAt": "2026-09-07T13:07:15.606Z",
-    "deploymentAt": null,
-    "suppliedDeploymentAt": null,
-    "liveVerifiedAt": "2026-09-07T13:03:52.833Z",
-    "liveGatePass": false,
-    "observationEnd": null,
-    "contentFreeze": "Keep existing cohort stable; post-fix clock not started",
+    "status": "POST_FIX_BASELINE",
+    "capturedAt": "2026-09-07T13:29:06.918Z",
+    "deploymentAt": "2026-09-07T13:27:50.265Z",
+    "suppliedDeploymentAt": "2026-09-07T13:27:50.265Z",
+    "liveVerifiedAt": "2026-09-07T13:27:50.265Z",
+    "liveGatePass": true,
+    "observationEnd": "2026-09-21T13:27:50.265Z",
+    "contentFreeze": "14 days after deployment, except verified P0/P1",
     "gsc": {
       "sourceFile": "reports/seo-cockpit/http-integrity-34.8-evidence/pfotentechnik.de-Performance-on-Search-2026-09-07.zip",
       "sourceSha256": "580fc49471dd9f20703a381ce3bc0971b30e1d0667b808fa1e6693215b17d480",
@@ -688,10 +641,11 @@
         "caveat": "Original CSV page metrics cover the whole export period; date×page and query×page are absent. Historical best/query count remain historical, not current."
       }
     ],
-    "blockedReasons": [
-      "Production HTTP gate has not passed",
-      "Fresh successful live verification required",
-      "Verified deployment timestamp required; no inferred date"
+    "blockedReasons": [],
+    "measurementStartAt": "2026-09-07T13:27:50.265Z",
+    "timestampBasis": "User-authorized observation start at successful live verification; deploymentAt is the measurement anchor, not an independently retrieved Cloudflare deployment timestamp.",
+    "acceptedExceptions": [
+      "34.8: user-authorized maximum two permanent hops for HTTP-www; final host, path, query and all other checks unchanged"
     ]
   },
   "domainWideRootCauseProven": false,
@@ -704,6 +658,10 @@
     "reports/seo-cockpit/http-integrity-34.8-evidence/pfotentechnik-tests.log",
     "reports/seo-cockpit/http-integrity-34.8-evidence/pfotentechnik.de-Performance-on-Search-2026-09-07.zip",
     "reports/seo-cockpit/http-integrity-34.8-evidence/preferred-host-report.json",
+    "reports/seo-cockpit/http-integrity-34.8-evidence/production-http-before-hop-exception.json",
+    "reports/seo-cockpit/http-integrity-34.8-evidence/production-http-before-hop-exception.md",
+    "reports/seo-cockpit/http-integrity-34.8-evidence/production-http-test-report-before-live-fix.json",
+    "reports/seo-cockpit/http-integrity-34.8-evidence/production-http-test-report-before-live-fix.md",
     "reports/seo-cockpit/http-integrity-34.8-evidence/production-http-test-report.json",
     "reports/seo-cockpit/http-integrity-34.8-evidence/production-http-test-report.md",
     "reports/seo-cockpit/http-integrity-34.8-evidence/protected-34.6.json",
@@ -711,5 +669,12 @@
     "reports/seo-cockpit/http-integrity-34.8-evidence/release-preflight.json",
     "reports/seo-cockpit/http-integrity-34.8-evidence/release-prepare.log",
     "reports/seo-cockpit/http-integrity-34.8-evidence/scope-validation.json"
-  ]
+  ],
+  "hostRedirectLiveVerified": true,
+  "homepageFallbackRemoved": true,
+  "acceptedExceptions": [
+    "34.8: user-authorized maximum two permanent hops for HTTP-www; final host, path, query and all other checks unchanged"
+  ],
+  "measurementStartAt": "2026-09-07T13:27:50.265Z",
+  "deploymentTimestampNote": "User-authorized observation start at successful live verification; deploymentAt is the measurement anchor, not an independently retrieved Cloudflare deployment timestamp."
 }

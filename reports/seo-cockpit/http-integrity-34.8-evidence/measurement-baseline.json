@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "status": "PENDING_LIVE_FIX",
-  "capturedAt": "2026-09-07T13:07:15.606Z",
-  "deploymentAt": null,
-  "suppliedDeploymentAt": null,
-  "liveVerifiedAt": "2026-09-07T13:03:52.833Z",
-  "liveGatePass": false,
-  "observationEnd": null,
-  "contentFreeze": "Keep existing cohort stable; post-fix clock not started",
+  "status": "POST_FIX_BASELINE",
+  "capturedAt": "2026-09-07T13:29:06.918Z",
+  "deploymentAt": "2026-09-07T13:27:50.265Z",
+  "suppliedDeploymentAt": "2026-09-07T13:27:50.265Z",
+  "liveVerifiedAt": "2026-09-07T13:27:50.265Z",
+  "liveGatePass": true,
+  "observationEnd": "2026-09-21T13:27:50.265Z",
+  "contentFreeze": "14 days after deployment, except verified P0/P1",
   "gsc": {
     "sourceFile": "reports/seo-cockpit/http-integrity-34.8-evidence/pfotentechnik.de-Performance-on-Search-2026-09-07.zip",
     "sourceSha256": "580fc49471dd9f20703a381ce3bc0971b30e1d0667b808fa1e6693215b17d480",
@@ -508,9 +508,10 @@
       "caveat": "Original CSV page metrics cover the whole export period; date×page and query×page are absent. Historical best/query count remain historical, not current."
     }
   ],
-  "blockedReasons": [
-    "Production HTTP gate has not passed",
-    "Fresh successful live verification required",
-    "Verified deployment timestamp required; no inferred date"
+  "blockedReasons": [],
+  "measurementStartAt": "2026-09-07T13:27:50.265Z",
+  "timestampBasis": "User-authorized observation start at successful live verification; deploymentAt is the measurement anchor, not an independently retrieved Cloudflare deployment timestamp.",
+  "acceptedExceptions": [
+    "34.8: user-authorized maximum two permanent hops for HTTP-www; final host, path, query and all other checks unchanged"
   ]
 }
