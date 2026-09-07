@@ -4,9 +4,6 @@
 
 | URL | H1 / Intent | Links | Tiefe | GSC 3m Imp. / Pos. | 28d Imp. | Entscheidung |
 |---|---|---|---|---|---|---|
-| /admin/seo/products/catit-pixi-smart-trinkbrunnen/ | Catit PIXI Smart-Trinkbrunnen | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | NO CHANGE |
-| /admin/seo/products/feelneedy-fn-w18-8l-katzenbrunnen/ | FEELNEEDY FN-W18 8L Katzenbrunnen | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | NO CHANGE |
-| /admin/seo/products/petsafe-streamside-trinkbrunnen/ | PetSafe Keramik-Trinkbrunnen Streamside | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | NO CHANGE |
 | /biofilm-im-katzentrinkbrunnen/ | Schleim im Katzentrinkbrunnen: Biofilm entfernen | 13 | 2 | 4 / 4 | UNKNOWN | NO CHANGE |
 | /filter-im-katzentrinkbrunnen-wechseln/ | Katzenbrunnen-Filter wechseln: Intervalle und Warnzeichen | 29 | 2 | 10 / 13.3 | UNKNOWN | NO CHANGE |
 | /hersteller/catit/ | Catit | 7 | 2 | UNKNOWN | UNKNOWN | NO CHANGE |

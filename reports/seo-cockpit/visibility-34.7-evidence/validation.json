@@ -382,5 +382,9 @@
   },
   "screenshots": 0,
   "deployment": "NOT DEPLOYED",
-  "edgeRegression": "PENDING after authorized deployment; source/build redirects checked, public origin still old behavior."
+  "edgeRegression": "PENDING after authorized deployment; source/build redirects checked, public origin still old behavior.",
+  "reportConsistency": "PASS: all JSON parses; local Markdown targets exist; cohort counts 118/94/104 agree; 53 indexable fountain pages reachable; 15 monitoring URLs exist",
+  "protected34_6Unchanged": 6,
+  "diffCheck": "PASS",
+  "finalLiveAliasStill200": true
 }

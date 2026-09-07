@@ -9,6 +9,22 @@
       "reason": "git diff changes page identities while generatedAt stays unchanged; original snapshot retained"
     },
     {
+      "engine": "bing",
+      "commit": "d50e45c3be58b07022ecd818eaed3f407110b1ab",
+      "file": "apps/pfotentechnik/src/data/seo/bing-dashboard-ranges.json",
+      "sha256": "8a2786523e2231bfb5f0300bb2db754fccc47f903ad1289cca4e13a66e879fab",
+      "generatedAt": "2026-07-27T20:49:04.533Z",
+      "reason": "git diff changes page identities while generatedAt stays unchanged; original snapshot retained"
+    },
+    {
+      "engine": "gsc",
+      "commit": "d50e45c3be58b07022ecd818eaed3f407110b1ab",
+      "file": "apps/pfotentechnik/src/data/seo/gsc-dashboard-ranges.json",
+      "sha256": "65ca9b3028d351d6f45ba85ee78069b0dca5f2c9a3cca2ab8fa67b090bce96fd",
+      "generatedAt": "2026-07-27T20:49:05.815Z",
+      "reason": "git diff changes page identities while generatedAt stays unchanged; original snapshot retained"
+    },
+    {
       "engine": "gsc",
       "commit": "dc73a31d3bc1381bd72fb1612f311a316ff64ad5",
       "file": "apps/pfotentechnik/src/data/seo/gsc-dashboard-ranges.json",

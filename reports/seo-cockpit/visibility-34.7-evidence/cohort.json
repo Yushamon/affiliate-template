@@ -769,7 +769,7 @@
       "start": "2026-07-20",
       "end": "2026-07-26",
       "snapshot": "2026-07-27T20:49:05.815Z",
-      "commit": "d50e45c3be58b07022ecd818eaed3f407110b1ab",
+      "commit": "BACKUP_ORIGINAL_20260727",
       "range": "7d"
     },
     "current28d": null,
@@ -1418,7 +1418,7 @@
       "start": "2026-07-20",
       "end": "2026-07-26",
       "snapshot": "2026-07-27T20:49:05.815Z",
-      "commit": "d50e45c3be58b07022ecd818eaed3f407110b1ab",
+      "commit": "BACKUP_ORIGINAL_20260727",
       "range": "7d"
     },
     "current28d": {
@@ -1705,17 +1705,17 @@
       "ctr": 0,
       "position": 50
     },
-    "bestObservedWindowAverage": 17.9,
+    "bestObservedWindowAverage": 20.3,
     "bestObservation": {
       "page": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
-      "clicks": 1,
-      "impressions": 31,
-      "ctr": 3.23,
-      "position": 17.9,
-      "start": "2026-07-20",
-      "end": "2026-07-26",
-      "snapshot": "2026-07-27T20:49:05.815Z",
-      "commit": "d50e45c3be58b07022ecd818eaed3f407110b1ab",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 20.3,
+      "start": "2026-08-12",
+      "end": "2026-08-18",
+      "snapshot": "2026-08-19T05:06:34.471Z",
+      "commit": "f4e78e05680c58dd21d5dae80e9aa540e388a5df",
       "range": "7d"
     },
     "current28d": {
@@ -2170,7 +2170,7 @@
       "start": "2026-07-20",
       "end": "2026-07-26",
       "snapshot": "2026-07-27T20:49:05.815Z",
-      "commit": "d50e45c3be58b07022ecd818eaed3f407110b1ab",
+      "commit": "BACKUP_ORIGINAL_20260727",
       "range": "7d"
     },
     "current28d": null,
@@ -3112,7 +3112,7 @@
       "start": "2026-07-20",
       "end": "2026-07-26",
       "snapshot": "2026-07-27T20:49:05.815Z",
-      "commit": "d50e45c3be58b07022ecd818eaed3f407110b1ab",
+      "commit": "BACKUP_ORIGINAL_20260727",
       "range": "7d"
     },
     "current28d": null,
@@ -4929,7 +4929,7 @@
       "start": "2026-07-20",
       "end": "2026-07-26",
       "snapshot": "2026-07-27T20:49:05.815Z",
-      "commit": "d50e45c3be58b07022ecd818eaed3f407110b1ab",
+      "commit": "BACKUP_ORIGINAL_20260727",
       "range": "7d"
     },
     "current28d": null,
@@ -5881,61 +5881,6 @@
     "decision": "NO CHANGE"
   },
   {
-    "url": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-ohne-wlan/",
-    "route": "/vergleiche/beste-futterautomaten-ohne-wlan/",
-    "currentTarget": "/vergleiche/beste-futterautomaten-ohne-wlan/",
-    "pageType": "comparison",
-    "cluster": "futterautomaten",
-    "contextWindow": {
-      "start": "2026-06-05",
-      "end": "2026-09-02"
-    },
-    "metrics": {
-      "page": "/vergleiche/beste-futterautomaten-ohne-wlan/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 12
-    },
-    "bestObservedWindowAverage": 8,
-    "bestObservation": {
-      "page": "/vergleiche/beste-futterautomaten-ohne-wlan/",
-      "clicks": 0,
-      "impressions": 15,
-      "ctr": 0,
-      "position": 8,
-      "start": "2026-07-20",
-      "end": "2026-07-26",
-      "snapshot": "2026-07-27T20:49:05.815Z",
-      "commit": "d50e45c3be58b07022ecd818eaed3f407110b1ab",
-      "range": "7d"
-    },
-    "current28d": null,
-    "queryCountDisclosed": 0,
-    "incomingLinks": 13,
-    "crawlDepth": 2,
-    "relevantHubs": [
-      "/smarte-futterautomaten/",
-      "/vergleiche/"
-    ],
-    "canonical": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-ohne-wlan/",
-    "inSitemap": true,
-    "indexability": "INDEXABLE",
-    "publishedAt": "2026-07-09",
-    "updatedAt": "2026-07-30",
-    "source": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-ohne-wlan.md",
-    "lastGitChange": "2026-08-10T11:44:58+02:00 e1353dc",
-    "firstGitAddition": "2026-07-12T14:40:56+02:00 8755d26",
-    "lastMajorContentChange": {
-      "commitDate": "2026-08-10T11:44:58+02:00 e1353dc",
-      "added": 0,
-      "deleted": 100,
-      "definition": ">=40 added+deleted source lines; mechanical edits included; not proof of semantic rewrite"
-    },
-    "possibleCannibalization": [],
-    "decision": "NO CHANGE"
-  },
-  {
     "url": "https://pfotentechnik.de/datenschutz/",
     "route": "/datenschutz/",
     "currentTarget": "/datenschutz/",
@@ -5962,7 +5907,7 @@
       "start": "2026-07-20",
       "end": "2026-07-26",
       "snapshot": "2026-07-27T20:49:05.815Z",
-      "commit": "d50e45c3be58b07022ecd818eaed3f407110b1ab",
+      "commit": "BACKUP_ORIGINAL_20260727",
       "range": "7d"
     },
     "current28d": null,
@@ -5979,126 +5924,6 @@
     "lastGitChange": null,
     "firstGitAddition": null,
     "lastMajorContentChange": null,
-    "possibleCannibalization": [],
-    "decision": "NO CHANGE"
-  },
-  {
-    "url": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
-    "route": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
-    "currentTarget": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
-    "pageType": "comparison",
-    "cluster": "futterautomaten",
-    "contextWindow": {
-      "start": "2026-06-05",
-      "end": "2026-09-02"
-    },
-    "metrics": {
-      "page": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 6
-    },
-    "bestObservedWindowAverage": 6,
-    "bestObservation": {
-      "page": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 6,
-      "start": "2026-06-29",
-      "end": "2026-07-26",
-      "snapshot": "2026-07-27T20:49:05.815Z",
-      "commit": "d50e45c3be58b07022ecd818eaed3f407110b1ab",
-      "range": "28d"
-    },
-    "current28d": {
-      "page": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 6
-    },
-    "queryCountDisclosed": 0,
-    "incomingLinks": 6,
-    "crawlDepth": 2,
-    "relevantHubs": [
-      "/vergleiche/"
-    ],
-    "canonical": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
-    "inSitemap": true,
-    "indexability": "INDEXABLE",
-    "publishedAt": "2026-07-09",
-    "updatedAt": "2026-07-30",
-    "source": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-mehrtierhaushalte.md",
-    "lastGitChange": "2026-08-31T09:59:32+02:00 01755b3",
-    "firstGitAddition": "2026-07-27T08:01:02+02:00 073a617",
-    "lastMajorContentChange": {
-      "commitDate": "2026-07-27T08:01:02+02:00 073a617",
-      "added": 238,
-      "deleted": 0,
-      "definition": ">=40 added+deleted source lines; mechanical edits included; not proof of semantic rewrite"
-    },
-    "possibleCannibalization": [],
-    "decision": "NO CHANGE"
-  },
-  {
-    "url": "https://pfotentechnik.de/vergleiche/futterautomat-mit-app/",
-    "route": "/vergleiche/futterautomat-mit-app/",
-    "currentTarget": "/vergleiche/futterautomat-mit-app/",
-    "pageType": "comparison",
-    "cluster": "futterautomaten",
-    "contextWindow": {
-      "start": "2026-06-05",
-      "end": "2026-09-02"
-    },
-    "metrics": {
-      "page": "/vergleiche/futterautomat-mit-app/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 2
-    },
-    "bestObservedWindowAverage": 2,
-    "bestObservation": {
-      "page": "/vergleiche/futterautomat-mit-app/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 2,
-      "start": "2026-08-12",
-      "end": "2026-08-18",
-      "snapshot": "2026-08-19T05:06:34.471Z",
-      "commit": "f4e78e05680c58dd21d5dae80e9aa540e388a5df",
-      "range": "7d"
-    },
-    "current28d": {
-      "page": "/vergleiche/futterautomat-mit-app/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 2
-    },
-    "queryCountDisclosed": 0,
-    "incomingLinks": 16,
-    "crawlDepth": 2,
-    "relevantHubs": [
-      "/vergleiche/"
-    ],
-    "canonical": "https://pfotentechnik.de/vergleiche/futterautomat-mit-app/",
-    "inSitemap": true,
-    "indexability": "INDEXABLE",
-    "publishedAt": "2026-07-08",
-    "updatedAt": "2026-07-30",
-    "source": "apps/pfotentechnik/src/content/comparisons/futterautomat-mit-app.md",
-    "lastGitChange": "2026-07-30T09:06:00+02:00 462f25c",
-    "firstGitAddition": "2026-07-27T08:01:02+02:00 073a617",
-    "lastMajorContentChange": {
-      "commitDate": "2026-07-27T08:01:02+02:00 073a617",
-      "added": 546,
-      "deleted": 0,
-      "definition": ">=40 added+deleted source lines; mechanical edits included; not proof of semantic rewrite"
-    },
     "possibleCannibalization": [],
     "decision": "NO CHANGE"
   },
@@ -6499,6 +6324,66 @@
     "decision": "NO CHANGE"
   },
   {
+    "url": "https://pfotentechnik.de/vergleiche/futterautomat-mit-app/",
+    "route": "/vergleiche/futterautomat-mit-app/",
+    "currentTarget": "/vergleiche/futterautomat-mit-app/",
+    "pageType": "comparison",
+    "cluster": "futterautomaten",
+    "contextWindow": {
+      "start": "2026-06-05",
+      "end": "2026-09-02"
+    },
+    "metrics": {
+      "page": "/vergleiche/futterautomat-mit-app/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    "bestObservedWindowAverage": 2,
+    "bestObservation": {
+      "page": "/vergleiche/futterautomat-mit-app/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2,
+      "start": "2026-08-12",
+      "end": "2026-08-18",
+      "snapshot": "2026-08-19T05:06:34.471Z",
+      "commit": "f4e78e05680c58dd21d5dae80e9aa540e388a5df",
+      "range": "7d"
+    },
+    "current28d": {
+      "page": "/vergleiche/futterautomat-mit-app/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    "queryCountDisclosed": 0,
+    "incomingLinks": 16,
+    "crawlDepth": 2,
+    "relevantHubs": [
+      "/vergleiche/"
+    ],
+    "canonical": "https://pfotentechnik.de/vergleiche/futterautomat-mit-app/",
+    "inSitemap": true,
+    "indexability": "INDEXABLE",
+    "publishedAt": "2026-07-08",
+    "updatedAt": "2026-07-30",
+    "source": "apps/pfotentechnik/src/content/comparisons/futterautomat-mit-app.md",
+    "lastGitChange": "2026-07-30T09:06:00+02:00 462f25c",
+    "firstGitAddition": "2026-07-27T08:01:02+02:00 073a617",
+    "lastMajorContentChange": {
+      "commitDate": "2026-07-27T08:01:02+02:00 073a617",
+      "added": 546,
+      "deleted": 0,
+      "definition": ">=40 added+deleted source lines; mechanical edits included; not proof of semantic rewrite"
+    },
+    "possibleCannibalization": [],
+    "decision": "NO CHANGE"
+  },
+  {
     "url": "https://pfotentechnik.de/wie-funktioniert-ein-futterautomat/",
     "route": "/wie-funktioniert-ein-futterautomat/",
     "currentTarget": "/wie-funktioniert-ein-futterautomat/",
@@ -6680,145 +6565,59 @@
     "decision": "NO CHANGE"
   },
   {
-    "url": "https://pfotentechnik.de/vergleiche/futterautomat-fuer-grosse-hunde/",
-    "route": "/vergleiche/futterautomat-fuer-grosse-hunde/",
-    "currentTarget": "/vergleiche/futterautomat-fuer-grosse-hunde/",
+    "url": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+    "route": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+    "currentTarget": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
     "pageType": "comparison",
     "cluster": "futterautomaten",
     "contextWindow": {
       "start": "2026-06-05",
       "end": "2026-09-02"
     },
-    "metrics": null,
-    "bestObservedWindowAverage": 7.7,
-    "bestObservation": {
-      "page": "/vergleiche/futterautomat-fuer-grosse-hunde/",
-      "clicks": 1,
-      "impressions": 7,
-      "ctr": 14.29,
-      "position": 7.7,
-      "start": "2026-06-29",
-      "end": "2026-07-26",
-      "snapshot": "2026-07-27T20:49:05.815Z",
-      "commit": "d50e45c3be58b07022ecd818eaed3f407110b1ab",
-      "range": "28d"
+    "metrics": {
+      "page": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
     },
-    "current28d": null,
+    "bestObservedWindowAverage": 6,
+    "bestObservation": {
+      "page": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6,
+      "start": "2026-08-21",
+      "end": "2026-08-27",
+      "snapshot": "2026-08-28T09:03:13.658Z",
+      "commit": "40540959294a5a91335634b53c1660228458f6d2",
+      "range": "7d"
+    },
+    "current28d": {
+      "page": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
     "queryCountDisclosed": 0,
     "incomingLinks": 6,
     "crawlDepth": 2,
     "relevantHubs": [
       "/vergleiche/"
     ],
-    "canonical": "https://pfotentechnik.de/vergleiche/futterautomat-fuer-grosse-hunde/",
+    "canonical": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
     "inSitemap": true,
     "indexability": "INDEXABLE",
     "publishedAt": "2026-07-09",
     "updatedAt": "2026-07-30",
-    "source": "apps/pfotentechnik/src/content/comparisons/futterautomat-fuer-grosse-hunde.md",
-    "lastGitChange": "2026-07-30T09:06:00+02:00 462f25c",
+    "source": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-mehrtierhaushalte.md",
+    "lastGitChange": "2026-08-31T09:59:32+02:00 01755b3",
     "firstGitAddition": "2026-07-27T08:01:02+02:00 073a617",
     "lastMajorContentChange": {
       "commitDate": "2026-07-27T08:01:02+02:00 073a617",
-      "added": 217,
-      "deleted": 0,
-      "definition": ">=40 added+deleted source lines; mechanical edits included; not proof of semantic rewrite"
-    },
-    "possibleCannibalization": [],
-    "decision": "NO CHANGE"
-  },
-  {
-    "url": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
-    "route": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
-    "currentTarget": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
-    "pageType": "comparison",
-    "cluster": "futterautomaten",
-    "contextWindow": {
-      "start": "2026-06-05",
-      "end": "2026-09-02"
-    },
-    "metrics": null,
-    "bestObservedWindowAverage": 6,
-    "bestObservation": {
-      "page": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 6,
-      "start": "2026-07-20",
-      "end": "2026-07-26",
-      "snapshot": "2026-07-27T20:49:05.815Z",
-      "commit": "d50e45c3be58b07022ecd818eaed3f407110b1ab",
-      "range": "7d"
-    },
-    "current28d": null,
-    "queryCountDisclosed": 0,
-    "incomingLinks": 13,
-    "crawlDepth": 2,
-    "relevantHubs": [
-      "/futterautomat-und-ernaehrung/",
-      "/vergleiche/"
-    ],
-    "canonical": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
-    "inSitemap": true,
-    "indexability": "INDEXABLE",
-    "publishedAt": "2026-07-09",
-    "updatedAt": "2026-07-30",
-    "source": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-seniorenkatzen.md",
-    "lastGitChange": "2026-08-03T20:42:45+02:00 25be9f5",
-    "firstGitAddition": "2026-07-27T08:01:02+02:00 073a617",
-    "lastMajorContentChange": {
-      "commitDate": "2026-07-27T08:01:02+02:00 073a617",
-      "added": 209,
-      "deleted": 0,
-      "definition": ">=40 added+deleted source lines; mechanical edits included; not proof of semantic rewrite"
-    },
-    "possibleCannibalization": [],
-    "decision": "NO CHANGE"
-  },
-  {
-    "url": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-welpen/",
-    "route": "/vergleiche/beste-futterautomaten-fuer-welpen/",
-    "currentTarget": "/vergleiche/beste-futterautomaten-fuer-welpen/",
-    "pageType": "comparison",
-    "cluster": "futterautomaten",
-    "contextWindow": {
-      "start": "2026-06-05",
-      "end": "2026-09-02"
-    },
-    "metrics": null,
-    "bestObservedWindowAverage": 6,
-    "bestObservation": {
-      "page": "/vergleiche/beste-futterautomaten-fuer-welpen/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 6,
-      "start": "2026-07-20",
-      "end": "2026-07-26",
-      "snapshot": "2026-07-27T20:49:05.815Z",
-      "commit": "d50e45c3be58b07022ecd818eaed3f407110b1ab",
-      "range": "7d"
-    },
-    "current28d": null,
-    "queryCountDisclosed": 0,
-    "incomingLinks": 12,
-    "crawlDepth": 2,
-    "relevantHubs": [
-      "/futterautomat-und-ernaehrung/",
-      "/vergleiche/"
-    ],
-    "canonical": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-welpen/",
-    "inSitemap": true,
-    "indexability": "INDEXABLE",
-    "publishedAt": "2026-07-09",
-    "updatedAt": "2026-07-30",
-    "source": "apps/pfotentechnik/src/content/comparisons/beste-futterautomaten-fuer-welpen.md",
-    "lastGitChange": "2026-07-30T09:06:00+02:00 462f25c",
-    "firstGitAddition": "2026-07-27T08:01:02+02:00 073a617",
-    "lastMajorContentChange": {
-      "commitDate": "2026-07-27T08:01:02+02:00 073a617",
-      "added": 596,
+      "added": 238,
       "deleted": 0,
       "definition": ">=40 added+deleted source lines; mechanical edits included; not proof of semantic rewrite"
     },

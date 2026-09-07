@@ -32,11 +32,11 @@
       "dailyRows": 7,
       "calendarDays": 7,
       "activeQueries": 53,
-      "activeUrls": 86,
-      "urlsWithImpressions": 86,
-      "urlsTop10": 36,
-      "urlsTop20": 55,
-      "dimensionsSource": "d50e45c3be58b07022ecd818eaed3f407110b1ab",
+      "activeUrls": 93,
+      "urlsWithImpressions": 93,
+      "urlsTop10": 40,
+      "urlsTop20": 61,
+      "dimensionsSource": "BACKUP_ORIGINAL_20260727",
       "note": "Property totals from latest observed daily rows; missing dates inside covered range contribute no observed impressions. URL/query counts only from exact matching window; disclosed rows are lower bounds. Final week incomplete."
     },
     {
@@ -174,9 +174,9 @@
     "currentWwwImpressions": "UNKNOWN; normalized away"
   },
   "cohort": {
-    "urls": 122,
-    "top10WindowSignals": 98,
-    "top20WindowSignals": 109,
+    "urls": 118,
+    "top10WindowSignals": 94,
+    "top20WindowSignals": 104,
     "uniqueCurrentTargets": 107,
     "strongestByCount": "futterautomaten",
     "fountain": {
@@ -320,7 +320,7 @@
     {
       "cause": "Mess-/Exportartefakt",
       "confidence": 5,
-      "evidenceFor": "Zwei historische Snapshots nachträglich umgeschrieben; Hostnormalisierung vernichtet Dimension.",
+      "evidenceFor": "Drei historische Snapshots nachträglich umgeschrieben; Hostnormalisierung vernichtet Dimension.",
       "evidenceAgainst": "Unveränderte Property-Tagesreihen und aktuelle Originalpayloads bestätigen Einbruch.",
       "possibleImpact": "Verzerrt URL-/Hostanalyse, erklärt nicht Gesamtvolumenverlust.",
       "action": "Manipulierte Fassungen ausschließen; Rohdaten mit Host erhalten."
@@ -333,10 +333,13 @@
     "technicalFix": "Two 301 rules for historical same-product Solo alias to existing Solo 2 URL",
     "contentChanges": 0,
     "protected34_6NoChange": 6,
-    "cohortContentNoChange": 122,
+    "cohortContentNoChange": 118,
     "productionUrlIdentitiesChanged": 1,
     "noHostMigration": true,
-    "deployment": "NOT DEPLOYED"
+    "deployment": "NOT DEPLOYED",
+    "changedFilesManifest": "visibility-34.7-evidence/changed-files.json",
+    "allChangedFilesCount": 76,
+    "externalCommitObserved": "b3724be"
   },
   "validation": {
     "appTests": {
@@ -722,7 +725,11 @@
     },
     "screenshots": 0,
     "deployment": "NOT DEPLOYED",
-    "edgeRegression": "PENDING after authorized deployment; source/build redirects checked, public origin still old behavior."
+    "edgeRegression": "PENDING after authorized deployment; source/build redirects checked, public origin still old behavior.",
+    "protected34_6Unchanged": 6,
+    "finalLiveAliasStill200": true,
+    "reportConsistency": "PASS: all JSON parses; local Markdown targets exist; cohort counts 118/94/104 agree; 53 indexable fountain pages reachable; 15 monitoring URLs exist",
+    "diffCheck": "PASS"
   },
   "watch14Days": [
     "/vergleiche/beste-futterautomaten-ohne-wlan/",
@@ -743,12 +750,15 @@
   ],
   "evidenceFiles": [
     "analysis-summary.json",
+    "backup-source-check.json",
     "change-correlation.json",
     "change-correlation.md",
+    "changed-files.json",
     "cohort.json",
     "cohort.md",
     "content-expansion.json",
     "data-integrity.json",
+    "final-live-regression.json",
     "google-vs-bing.json",
     "historical-www.json",
     "live-http.json",
@@ -758,6 +768,7 @@
     "live-sitemap.xml",
     "monitoring-plan.json",
     "production-preflight.log",
+    "protected-34.6.json",
     "quality-operations-summary.json",
     "query-url-analysis.json",
     "rendering-host-sitemap.json",
@@ -765,6 +776,7 @@
     "root-cause-matrix.json",
     "shared-core-tests.log",
     "source-manifest.json",
+    "synthesis.json",
     "template-patterns.json",
     "tests.log",
     "timeline.json",

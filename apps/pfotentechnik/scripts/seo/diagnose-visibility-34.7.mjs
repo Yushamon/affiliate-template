@@ -30,12 +30,22 @@ for (const engine of ['gsc', 'bing']) {
   }
 }
 snapshots.sort((a,b) => a.generatedAt.localeCompare(b.generatedAt));
+// A pre-maintenance backup preserves the original 27 July export. The Git
+// payload committed later that day already contains route replacements.
+const originalBackup = '.patch-backups/pfotentechnik-comparison-release-closure-14.0.2-2026-07-27T20-51-12-266Z/apps/pfotentechnik/src/data/seo/gsc-dashboard-ranges.json';
+if (!fs.existsSync(path.join(root, originalBackup))) throw new Error(`Original pre-maintenance snapshot required for reliable URL attribution: ${originalBackup}`);
+if (fs.existsSync(path.join(root, originalBackup))) {
+  const raw = fs.readFileSync(path.join(root, originalBackup), 'utf8');
+  const data = JSON.parse(raw);
+  snapshots.push({engine:'gsc',commit:'BACKUP_ORIGINAL_20260727',file:originalBackup,sha256:hash(raw),generatedAt:data.generatedAt,data});
+  snapshots.sort((a,b) => a.generatedAt.localeCompare(b.generatedAt));
+}
 write('source-manifest.json', snapshots.map(({data,...s}) => ({...s, windows: Object.fromEntries(Object.entries(data.ranges).map(([k,r]) => [k,{start:r.startDate,end:r.endDate,partial:r.partial,metrics:r.metrics.current}]))})));
 const latest = engine => snapshots.filter(s => s.engine === engine).at(-1).data;
 const google = latest('gsc'), bing = latest('bing');
 // These commits rewrote dashboard URLs without fetching new GSC data.
 // Keep their provenance, but use the original payload with the same generatedAt.
-const excludedSnapshots = snapshots.filter(s => /^(3dc0987|dc73a31)/.test(s.commit));
+const excludedSnapshots = snapshots.filter(s => /^(3dc0987|dc73a31)/.test(s.commit) || (s.commit.startsWith('d50e45c') && snapshots.some(b=>b.commit==='BACKUP_ORIGINAL_20260727')));
 write('data-integrity.json', {excluded:excludedSnapshots.map(({data,...s})=>({...s,reason:'git diff changes page identities while generatedAt stays unchanged; original snapshot retained'})),policy:'Do not treat maintenance replacements in stored exports as search observations.'});
 const googleSnapshots = snapshots.filter(s => s.engine === 'gsc' && !excludedSnapshots.includes(s));
 const metrics = rows => { const m = summarizeMetrics(rows); return {...m, position:m.impressions ? m.position : null}; };
@@ -180,7 +190,7 @@ for(const s of googleSnapshots) for(const [range,r] of Object.entries(s.data.ran
 write('historical-www.json',{observations:hostHistory,currentHostAttribution:'UNKNOWN: normalized away after 2026-07-22',doNotSumOverlappingWindows:true});
 const reportSources=[];
 const relevant=/seo-rebaseline|seo-baseline|seo-trinkbrunnen|seo-recovery|seo-signal|seo-cockpit|quality-operations|seo-release|url-consistency|internal-link|content-quality|search\/|seo-platform/;
-for(const file of git('ls-files','*.json','*.md').trim().split('\n').filter(p=>p.includes('reports/')&&relevant.test(p))) {
+for(const file of git('ls-files','*.json','*.md').trim().split('\n').filter(p=>p.includes('reports/')&&relevant.test(p)&&!p.includes('visibility-34.7')&&!p.includes('google-visibility-recovery-34.7'))) {
   const raw=fs.readFileSync(path.join(root,file),'utf8');let data;try{data=JSON.parse(raw);}catch{}
   reportSources.push({file,sha256:hash(raw),bytes:Buffer.byteLength(raw),generatedAt:data?.generatedAt||null,summary:data?.summary||data?.indexability||null});
 }

@@ -1,6 +1,6 @@
 # Top Ranking URL Cohort — 34.7
 
-122 beobachtete historische URL-Identitäten einschließlich Redirect-Aliassen. Keine Addition über überlappende Exporte. Beste Position = kleinstes beobachtetes Fenster-Mittel, kein täglicher Best-Rank. Aktuell = 06.08.–02.09.; fehlende Zeile UNKNOWN. Vollständige Query-, Hub-, Canonical- und Git-Felder: cohort.json.
+118 beobachtete historische URL-Identitäten einschließlich Redirect-Aliassen. Keine Addition über überlappende Exporte. Beste Position = kleinstes beobachtetes Fenster-Mittel, kein täglicher Best-Rank. Aktuell = 06.08.–02.09.; fehlende Zeile UNKNOWN. Vollständige Query-, Hub-, Canonical- und Git-Felder: cohort.json.
 
 | URL | Typ / Cluster | Klicks / Imp. 3m | CTR % | Beste / 28d Pos. | Queries | Links / Tiefe | Ziel / Status | updatedAt |
 |---|---|---|---|---|---|---|---|---|
@@ -33,7 +33,7 @@
 | /futterautomat-katze/ | editorial-page / futterautomaten | 0 / 16 | 0 | 15.8 / 36 | 8 | 25 / 2 | /futterautomat-katze/ INDEXABLE | 2026-08-24 |
 | /trinkbrunnen-fuer-mehrere-katzen/ | problem-solving-guide / trinkbrunnen | 0 / 15 | 0 | 6.8 / UNKNOWN | 2 | 32 / 2 | /trinkbrunnen-fuer-mehrere-katzen/ INDEXABLE | 2026-07-25 |
 | /produkt/petkit-yumshare-solo/ | product / futterautomaten | 0 / 12 | 0 | 7 / UNKNOWN | 3 | 4 / 2 | /produkt/petkit-yumshare-solo-2/ 301_TO_INDEXABLE_TARGET | 2026-08-19 |
-| /vergleiche/beste-futterautomaten-fuer-zwei-katzen/ | comparison / futterautomaten | 0 / 12 | 0 | 17.9 / 34.4 | 3 | 15 / 2 | /vergleiche/beste-futterautomaten-fuer-zwei-katzen/ INDEXABLE | 2026-07-30 |
+| /vergleiche/beste-futterautomaten-fuer-zwei-katzen/ | comparison / futterautomaten | 0 / 12 | 0 | 20.3 / 34.4 | 3 | 15 / 2 | /vergleiche/beste-futterautomaten-fuer-zwei-katzen/ INDEXABLE | 2026-07-30 |
 | /katzentrinkbrunnen-laut-pumpe/ | guide / trinkbrunnen | 0 / 11 | 0 | 3 / UNKNOWN | 1 | 7 / 2 | /katzentrinkbrunnen-laut-pumpe/ INDEXABLE | 2026-08-19 |
 | /katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/ | decision-guide / trinkbrunnen | 0 / 11 | 0 | 9.4 / UNKNOWN | 1 | 22 / 2 | /katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/ INDEXABLE | 2026-08-19 |
 | /futterautomat-mit-kamera/ | comparison / futterautomaten | 0 / 11 | 0 | 8.5 / UNKNOWN | 2 | 13 / 2 | /vergleiche/beste-futterautomaten-mit-kamera/ 301_TO_INDEXABLE_TARGET | 2026-07-30 |
@@ -109,10 +109,7 @@
 | /katzentrinkbrunnen-richtig-reinigen/ | problem-solving-guide / trinkbrunnen | 0 / 1 | 0 | 10 / UNKNOWN | 0 | 14 / 2 | /katzentrinkbrunnen-richtig-reinigen/ INDEXABLE | 2026-08-24 |
 | /wie-funktionieren-gps-tracker/ | guide / gps-tracker | 0 / 1 | 0 | 60 / UNKNOWN | 1 | 4 / 2 | /wie-funktionieren-gps-tracker/ INDEXABLE | 2026-08-24 |
 | /produkt/catit-pixi-smart-6-meal-feeder/ | product / futterautomaten | 0 / 1 | 0 | 10 / UNKNOWN | 0 | 3 / 2 | /produkt/catit-pixi-smart-6-meal-feeder/ INDEXABLE | 2026-07-23 |
-| /vergleiche/beste-futterautomaten-ohne-wlan/ | comparison / futterautomaten | 0 / 1 | 0 | 8 / UNKNOWN | 0 | 13 / 2 | /vergleiche/beste-futterautomaten-ohne-wlan/ INDEXABLE | 2026-07-30 |
 | /datenschutz/ | legal / smarte-haustiertechnik | 0 / 1 | 0 | 5 / UNKNOWN | 0 | 0 / None | /datenschutz/ INDEXABLE | UNKNOWN |
-| /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/ | comparison / futterautomaten | 0 / 1 | 0 | 6 / 6 | 0 | 6 / 2 | /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/ INDEXABLE | 2026-07-30 |
-| /vergleiche/futterautomat-mit-app/ | comparison / futterautomaten | 0 / 1 | 0 | 2 / 2 | 0 | 16 / 2 | /vergleiche/futterautomat-mit-app/ INDEXABLE | 2026-07-30 |
 | /produkt/pawbby-smart-pet-feeder/ | product / futterautomaten | 0 / 1 | 0 | 10 / UNKNOWN | 0 | 2 / 3 | /produkt/pawbby-smart-pet-feeder/ INDEXABLE | 2026-07-12 |
 | /produkt/petkit-yumshare-dual/ | product / futterautomaten | 0 / 1 | 0 | 2 / UNKNOWN | 0 | 55 / 2 | /produkt/petkit-yumshare-dual-hopper/ 301_TO_INDEXABLE_TARGET | 2026-08-10 |
 | /trockenfutter-oder-nassfutter-hund/ | decision-guide / hundeernaehrung | 0 / 1 | 0 | 92 / UNKNOWN | 1 | 11 / 2 | /trockenfutter-oder-nassfutter-hund/ INDEXABLE | 2026-07-28 |
@@ -120,9 +117,8 @@
 | /hersteller/tractive/ | manufacturer / katzen-und-hundespezifische-hardware | 0 / 1 | 0 | 47 / 47 | 1 | 19 / 2 | /hersteller/tractive/ INDEXABLE | 2026-08-21 |
 | /produkt/oneisall-5l-automatic-cat-feeder/ | product / futterautomaten | 0 / 1 | 0 | 4 / 4 | 0 | 3 / 2 | /produkt/oneisall-5l-automatic-cat-feeder/ INDEXABLE | 2026-07-17 |
 | /produkt/petkit-fresh-element-solo/ | product / futterautomaten | 0 / 1 | 0 | 1 / 1 | 0 | 10 / 2 | /produkt/petkit-fresh-element-solo/ INDEXABLE | 2026-07-23 |
+| /vergleiche/futterautomat-mit-app/ | comparison / futterautomaten | 0 / 1 | 0 | 2 / 2 | 0 | 16 / 2 | /vergleiche/futterautomat-mit-app/ INDEXABLE | 2026-07-30 |
 | /wie-funktioniert-ein-futterautomat/ | editorial-page / futterautomaten | 0 / 1 | 0 | 3 / 3 | 0 | 7 / 2 | /wie-funktioniert-ein-futterautomat/ INDEXABLE | 2026-07-25 |
 | /welpen-richtig-fuettern/ | problem-solving-guide / hundeernaehrung | 0 / 1 | 0 | 10 / 10 | 0 | 8 / 2 | /welpen-richtig-fuettern/ INDEXABLE | 2026-07-24 |
 | /redaktion/ | editorial-page / smarte-haustiertechnik | 0 / 1 | 0 | 2 / 2 | 0 | 141 / 1 | /redaktion/ INDEXABLE | UNKNOWN |
-| /vergleiche/futterautomat-fuer-grosse-hunde/ | comparison / futterautomaten | UNKNOWN | UNKNOWN | 7.7 / UNKNOWN | 0 | 6 / 2 | /vergleiche/futterautomat-fuer-grosse-hunde/ INDEXABLE | 2026-07-30 |
-| /vergleiche/beste-futterautomaten-fuer-seniorenkatzen/ | comparison / futterautomaten | UNKNOWN | UNKNOWN | 6 / UNKNOWN | 0 | 13 / 2 | /vergleiche/beste-futterautomaten-fuer-seniorenkatzen/ INDEXABLE | 2026-07-30 |
-| /vergleiche/beste-futterautomaten-fuer-welpen/ | comparison / futterautomaten | UNKNOWN | UNKNOWN | 6 / UNKNOWN | 0 | 12 / 2 | /vergleiche/beste-futterautomaten-fuer-welpen/ INDEXABLE | 2026-07-30 |
+| /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/ | comparison / futterautomaten | 0 / 1 | 0 | 6 / 6 | 0 | 6 / 2 | /vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/ INDEXABLE | 2026-07-30 |

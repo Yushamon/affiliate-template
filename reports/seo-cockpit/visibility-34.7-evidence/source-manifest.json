@@ -1123,6 +1123,70 @@
     }
   },
   {
+    "engine": "gsc",
+    "commit": "BACKUP_ORIGINAL_20260727",
+    "file": ".patch-backups/pfotentechnik-comparison-release-closure-14.0.2-2026-07-27T20-51-12-266Z/apps/pfotentechnik/src/data/seo/gsc-dashboard-ranges.json",
+    "sha256": "47bfa5081c071905e7a9845807bf8c6b5b0213f909437c13f5b317e01005d34b",
+    "generatedAt": "2026-07-27T20:49:05.815Z",
+    "windows": {
+      "7d": {
+        "start": "2026-07-20",
+        "end": "2026-07-26",
+        "partial": false,
+        "metrics": {
+          "clicks": 9,
+          "impressions": 280,
+          "ctr": 3.21,
+          "position": 20.5
+        }
+      },
+      "28d": {
+        "start": "2026-06-29",
+        "end": "2026-07-26",
+        "partial": false,
+        "metrics": {
+          "clicks": 19,
+          "impressions": 657,
+          "ctr": 2.89,
+          "position": 22
+        }
+      },
+      "3m": {
+        "start": "2026-04-28",
+        "end": "2026-07-26",
+        "partial": false,
+        "metrics": {
+          "clicks": 19,
+          "impressions": 657,
+          "ctr": 2.89,
+          "position": 22
+        }
+      },
+      "6m": {
+        "start": "2026-01-28",
+        "end": "2026-07-26",
+        "partial": false,
+        "metrics": {
+          "clicks": 19,
+          "impressions": 657,
+          "ctr": 2.89,
+          "position": 22
+        }
+      },
+      "12m": {
+        "start": "2025-07-27",
+        "end": "2026-07-26",
+        "partial": false,
+        "metrics": {
+          "clicks": 19,
+          "impressions": 657,
+          "ctr": 2.89,
+          "position": 22
+        }
+      }
+    }
+  },
+  {
     "engine": "bing",
     "commit": "2b6e19c1f743424c0061bc0187eadbe0fc200da8",
     "file": "apps/pfotentechnik/src/data/seo/bing-dashboard-ranges.json",
