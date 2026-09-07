@@ -433,6 +433,7 @@ Die Herstellerseiten bündeln Produktfamilien, dokumentierte Systemunterschiede 
 - [Catit](/hersteller/catit/)
 - [Devoko](/hersteller/devoko/)
 - [Enabot](/hersteller/enabot/)
+- [Flappie Technologies](/hersteller/flappie/)
 - [Furbo](/hersteller/furbo/)
 - [Garmin](/hersteller/garmin/)
 - [HoneyGuardian](/hersteller/honeyguardian/)

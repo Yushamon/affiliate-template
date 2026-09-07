@@ -44,10 +44,18 @@ test("Vergleich stellt Hub und unbekannten Support ohne erfundene Werte dar", ()
   assert.ok(comparison.criteria.some((item) => item.key === "security_support"));
   const sureflap = comparison.items.find((item) => item.slug === "sureflap-mikrochip-katzenklappe-connect");
   assert.match(sureflap.values.security_support, /zwei Jahre ab Kaufdatum des Hubs/);
-  for (const item of comparison.items.filter((entry) => entry !== sureflap)) {
+  const productsWithoutDocumentedHubOrSupport = new Set([
+    "onlycat-mikrochip-katzenklappe",
+    "petwalk-medium-tiertuer",
+    "zeromouse-2-0"
+  ]);
+  for (const item of comparison.items.filter((entry) => productsWithoutDocumentedHubOrSupport.has(entry.slug))) {
     assert.equal(item.values.hub_erforderlich, "Nicht dokumentiert");
     assert.equal(item.values.security_support, "Nicht dokumentiert");
   }
+  const flappie = comparison.items.find((item) => item.slug === "flappie");
+  assert.equal(flappie.values.hub_erforderlich, "Nein");
+  assert.match(flappie.values.security_support, /fünf Jahre Softwareupdates/i);
 });
 
 test("Journey-Ziele und bestehende Bildreferenzen sind gueltig", () => {

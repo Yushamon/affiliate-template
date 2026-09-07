@@ -37,7 +37,7 @@ const unavailableCopy = operations.availability === "discontinued"
       : operations.availability === "unknown"
         ? "Die aktuelle Verfügbarkeit ist noch nicht belastbar bestätigt. Deshalb zeigen wir keinen Kaufen-CTA."
         : null;
-const ctaLabel = price?.formattedCurrent ? "Bei Amazon ansehen" : "Aktuellen Preis prüfen";
+const ctaLabel = affiliate.label || (price?.formattedCurrent ? "Beim Anbieter ansehen" : "Aktuellen Preis prüfen");
 const showTotals = Boolean(
   subscriptionCost &&
   subscriptionCost.status !== "no-subscription" &&

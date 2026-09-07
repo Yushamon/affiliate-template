@@ -4,9 +4,9 @@ slug: "katzenklappen-mit-app-und-beuteerkennung"
 canonical: "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/"
 type: "comparison"
 layout: "comparison"
-description: "SureFlap Connect, OnlyCat, petWALK und ZeroMOUSE nach Produktrolle, Fernfunktionen, Beuteerkennung, Strom und Ausfallverhalten einordnen."
+description: "Flappie, OnlyCat, SureFlap Connect, petWALK und ZeroMOUSE nach Produktrolle, Identitätslogik, Beuteerkennung, Strom und Ausfallverhalten einordnen."
 publishedAt: "2026-08-04"
-updatedAt: "2026-08-15"
+updatedAt: "2026-09-07"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
@@ -67,6 +67,19 @@ items:
       ausfall: "Lokaler WLAN-Ausfallbetrieb; Stromausfall entsperrt laut Hersteller"
       hub_erforderlich: "Nicht dokumentiert"
       security_support: "Nicht dokumentiert"
+  - slug: "flappie"
+    type: "product"
+    label: "Flappie"
+    recommendation: "Für lokale Beuteerkennung ohne Mikrochip-Zwang; Identitätszugang und individuelle Regeln sind noch nicht allgemein verfügbar."
+    values:
+      rolle: "Vollständige Katzenklappe"
+      app: "iOS und Android"
+      beute: "Lokale Kamera-KI; >98 % laut Hersteller"
+      abhaengigkeit: "Netzstrom; WLAN für App und Updates"
+      strom: "12-V-Netzteil, kein Akku"
+      ausfall: "WLAN-lokal weiter; stromlos frei offen ohne KI und Sperren"
+      hub_erforderlich: "Nein"
+      security_support: "Fünf Jahre Softwareupdates laut Hersteller"
   - slug: "petwalk-medium-tiertuer"
     type: "product"
     label: "petWALK Medium"
@@ -137,8 +150,8 @@ criteria:
     format: "text"
     fallback: "Nicht dokumentiert"
 recommendation:
-  title: "App-Steuerung und Beuteerkennung sind zwei verschiedene Entscheidungen"
-  text: "SureFlap Connect erweitert Zugang um Fernfunktionen. OnlyCat integriert Beuteerkennung, ZeroMOUSE rüstet sie nach. petWALK gehört als motorisierte und gedämmte Tür in eine eigene Premiumklasse."
+  title: "Beuteerkennung, Identitätszugang und App sind drei Entscheidungen"
+  text: "Flappie priorisiert lokale Beute-KI ohne Mikrochip-Zwang. OnlyCat verbindet Beuteerkennung mit Mikrochip-Regeln, ZeroMOUSE rüstet eine vorhandene Klappe nach. SureFlap Connect und petWALK lösen andere Zugangs- und Einbauaufgaben."
   winnerSlug: "onlycat-mikrochip-katzenklappe"
   alternativeSlug: "sureflap-mikrochip-katzenklappe-connect"
 faq:
@@ -156,13 +169,34 @@ decisionJourney:
   intent: "app-und-beuteerkennung-vergleichen"
   primaryQuestion: "Brauche ich Fernfunktionen, Beuteerkennung oder beides – und als Komplettsystem oder Nachrüstung?"
   next:
+    - "/produkt/flappie/"
     - "/produkt/onlycat-mikrochip-katzenklappe/"
     - "/produkt/sureflap-mikrochip-katzenklappe-connect/"
     - "/produkt/zeromouse-2-0/"
   fallback:
     - "/katzenklappen/"
 evidenceSources:
-  - source: "Feldbezogene Herstellerquellen der vier Produktseiten"
+  - source: "Flappie Produktseite · Deutschland"
+    url: "https://flappiedoors.com/en/products/flappie?country=DE"
+    accessedAt: "2026-09-07"
+    assertion: "Aktuelles Komplettsystem, lokale Beute-KI, Netzteil, App und fünf Jahre Softwareupdates laut Hersteller."
+    fields: ["items"]
+  - source: "Flappie Support · Offline-Betrieb"
+    url: "https://support.flappiedoors.com/en-US/use-flappie-without-wi-fi-4794173"
+    accessedAt: "2026-09-07"
+    assertion: "Lokale Beute-KI und Kameraaufzeichnung laufen ohne WLAN; App, Meldungen und Updates fallen aus."
+    fields: ["items", "recommendation", "decisionJourney"]
+  - source: "Flappie Support · Stromausfall"
+    url: "https://support.flappiedoors.com/en-US/what-happens-if-the-power-goes-out-4794140"
+    accessedAt: "2026-09-07"
+    assertion: "Ohne Strom bleibt die Klappe frei passierbar; Kamera, KI und Sperren fallen aus."
+    fields: ["items"]
+  - source: "Flappie Support · Cat ID"
+    url: "https://support.flappiedoors.com/en-US/cat-id-labs-and-planned-launch-4794014"
+    accessedAt: "2026-09-07"
+    assertion: "Cat ID ist nicht allgemein aktiv und darf noch nicht als verfügbarer Identitätszugang behandelt werden."
+    fields: ["items", "recommendation"]
+  - source: "Feldbezogene Herstellerquellen der fünf Produktseiten"
     url: "https://www.onlycat.com/de/specs-de/"
     accessedAt: "2026-08-04"
     assertion: "Systemrollen und Abhängigkeiten werden aus den Produktquellen übernommen; keine eigene Trefferquotenbehauptung."
@@ -180,7 +214,10 @@ evidenceSources:
       - "faq"
 ---
 
-Diese Route besitzt den eigenständigen Evaluations-Intent für vernetzte Systeme. Sie trennt App-Fernfunktionen von Beuteerkennung und kennzeichnet ZeroMOUSE ausdrücklich als Nachrüstung.
+Diese Route besitzt den eigenständigen Evaluations-Intent für vernetzte Systeme. Sie trennt App-Fernfunktionen,
+Beuteerkennung und Identitätszugang. [Flappie](/produkt/flappie/) arbeitet bei der Beuteentscheidung lokal, bietet aber
+derzeit keinen Mikrochip-Zugang und keine allgemein aktive individuelle Cat ID. ZeroMOUSE bleibt ausdrücklich eine
+Nachrüstung.
 
 Wer zuerst nur Zugang, Passform und Einbau klären muss, beginnt beim [Katzenklappen-Hub](/katzenklappen/). Lokale Modelle stehen im [Mikrochip-Vergleich](/vergleiche/beste-mikrochip-katzenklappen/).
 

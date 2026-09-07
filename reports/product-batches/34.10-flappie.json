@@ -1,0 +1,206 @@
+{
+  "batch": {
+    "name": "PFOTENTECHNIK 34.10 FLAPPIE PRODUCT BATCH",
+    "date": "2026-09-07",
+    "workspace": "apps/pfotentechnik",
+    "researchType": "current primary-source product integration"
+  },
+  "productGate": {
+    "marketStatus": "in-stock",
+    "germanyAvailability": "available; 2-3 business days stated by manufacturer",
+    "eeaAvailability": "available; 4-5 business days stated by manufacturer",
+    "shippingModel": "German warehouse, DDP within EEA; shipping cost disclosed at checkout",
+    "modelIdentity": "Flappie FLP1",
+    "manufacturer": "Flappie Technologies AG",
+    "independentProductValue": "integrated cat flap with local camera-based prey decision and no required microchip",
+    "gate": "PASS"
+  },
+  "research": {
+    "researchedAt": "2026-09-07",
+    "devicePrice": {
+      "current": 479,
+      "regular": 509,
+      "currency": "EUR",
+      "localizedFor": "DE",
+      "vatIncluded": true,
+      "source": "https://flappiedoors.com/en/products/flappie?country=DE"
+    },
+    "germanFinalPriceReliable": false,
+    "germanFinalPriceReason": "The localized gross device price is reliable, but shipping is only shown at checkout.",
+    "subscription": {
+      "status": "unknown",
+      "requiredForLocalCore": false,
+      "premiumCommercialStatus": "pre-launch",
+      "premiumPrice": null,
+      "premiumBillingPeriod": null,
+      "source": "https://flappiedoors.com/en/pages/eula"
+    },
+    "catId": {
+      "status": "not-generally-active",
+      "labsOrBetaFirst": true,
+      "widerLaunchExpectation": "September 2026, explicitly subject to change",
+      "representedAsAvailable": false,
+      "source": "https://support.flappiedoors.com/en-US/cat-id-labs-and-planned-launch-4794014"
+    },
+    "microchipRecognition": false,
+    "preyDetection": {
+      "processing": "local on-device camera AI",
+      "nightVision": "infrared",
+      "firstFourDays": "detects and records but does not block",
+      "preyTypes": ["mice", "rats", "birds", "fish", "snakes", "insects"],
+      "manufacturerClaim": "over 98 percent day and night",
+      "claimIndependentVerification": false,
+      "source": "https://support.flappiedoors.com/en-US/understand-prey-detection-4460921"
+    },
+    "offline": {
+      "localPreyDetection": true,
+      "localCameraRecording": true,
+      "physicalButtons": true,
+      "remoteApp": false,
+      "notifications": false,
+      "remoteVideoAccess": false,
+      "scheduleManagement": false,
+      "updates": false,
+      "source": "https://support.flappiedoors.com/en-US/use-flappie-without-wi-fi-4794173"
+    },
+    "powerOutage": {
+      "batteryBackup": false,
+      "physicalFlap": "freely movable/open access",
+      "aiCameraLocks": "inactive",
+      "recovery": "settings restored and Wi-Fi reconnects; boot takes about 1-2 minutes",
+      "source": "https://support.flappiedoors.com/en-US/what-happens-if-the-power-goes-out-4794140"
+    },
+    "wifi": {
+      "band": "2.4 GHz",
+      "wpa2": "confirmed",
+      "wpa3": "unknown-conflicting-official-support-pages",
+      "sources": [
+        "https://support.flappiedoors.com/en-US/use-flappie-without-wi-fi-4794173",
+        "https://support.flappiedoors.com/en-US/connect-flappie-to-wi-fi-and-the-app-4459295"
+      ]
+    },
+    "privacy": {
+      "preyDecision": "local",
+      "connectedOperation": "videos and events are encrypted and transferred to Flappie servers for app and notifications",
+      "offlineOperation": "no data leaves the device without Wi-Fi",
+      "training": "opt-out documented",
+      "sharing": "explicit per-video FlappieTV action",
+      "deletion": "account deletion removes profiles, videos and user data",
+      "source": "https://support.flappiedoors.com/en-US/privacy-and-camera-data-4794401"
+    },
+    "installation": {
+      "outerFrameMm": [223, 259],
+      "passageMm": [150.5, 126],
+      "newRectangularCutoutMm": [166, 170],
+      "existingRectangularMaximumMm": [175, 210],
+      "glassDirectDiameterMm": [212, 215],
+      "glassWithAdapterDiameterMm": [216, 260],
+      "standardThicknessMaximumMm": 36,
+      "totalThicknessMaximumMm": 200,
+      "power": "included 12 V supply; indoor outlet and protected cable route required",
+      "sources": [
+        "https://support.flappiedoors.com/en-US/all-flappie-dimensions-4794786",
+        "https://support.flappiedoors.com/en-US/install-flappie-step-by-step-4458828"
+      ]
+    },
+    "evidenceQuality": {
+      "primary": "complete for product identity, operation, installation and failure modes",
+      "independentProfessional": "none found",
+      "community": "Trustpilot 4.0/5 from 21 reviews checked 2026-09-07; mixed and non-representative",
+      "overall": "partial-no-independent-professional-test"
+    }
+  },
+  "product": {
+    "pageCreated": true,
+    "path": "apps/pfotentechnik/src/content/products/flappie.md",
+    "route": "/produkt/flappie/",
+    "manufacturerIntegrated": true,
+    "manufacturerPath": "apps/pfotentechnik/src/content/manufacturers/flappie.md",
+    "manufacturerRoute": "/hersteller/flappie/",
+    "evidenceStatus": "partial-no-independent-professional-test",
+    "decisionData": "complete",
+    "subscriptionData": "complete-with-unknown-premium-price-and-scope",
+    "failureModes": "complete-for-documented-cases; cloud and mechanical failure remain explicitly unknown",
+    "media": {
+      "status": "complete-official-press-kit",
+      "files": ["hero.webp", "thumbnail.webp", "comparison.webp", "gallery-1.webp", "gallery-2.webp", "gallery-3.webp"],
+      "sourcePage": "https://flappiedoors.com/en/pages/presse",
+      "sourceFolder": "Flappie BrandKit / Product Visuals",
+      "generatedByPfotenTechnik": false
+    }
+  },
+  "positioning": {
+    "onlyCatDifference": "Flappie prioritizes a local prey decision without a microchip requirement; OnlyCat's existing data documents microchip identity and per-cat policies.",
+    "zeroMouseDifference": "Flappie is a complete flap; ZeroMOUSE is an add-on for a compatible existing microchip flap.",
+    "primaryStrength": "Local prey detection continues when Wi-Fi or internet is unavailable.",
+    "primaryCompromise": "No microchip access and Cat ID/per-cat rules are not generally active."
+  },
+  "cluster": {
+    "hubIntegrated": true,
+    "hub": "/katzenklappen/",
+    "appAndPreyComparisonIntegrated": true,
+    "comparison": "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
+    "comparisonReason": "Same purchase decision, current market availability, sufficient comparable data and a distinct integrated-system trade-off.",
+    "otherComparisonsChanged": [],
+    "otherComparisonReason": "Flappie is not a microchip flap and no other existing comparison shares the same decision intent.",
+    "internalLinks": [
+      "hub-to-product",
+      "comparison-to-product",
+      "product-to-comparison",
+      "product-to-manufacturer-via-shared-product-shell",
+      "product-to-installation-guide",
+      "manufacturer-registry-to-manufacturer"
+    ]
+  },
+  "gapResolution": {
+    "statusBefore": "missing-relevant",
+    "statusAfter": "existing-complete",
+    "productInventoryGap": "resolved",
+    "productPageRequired": {
+      "required": true,
+      "status": "resolved"
+    },
+    "newEditorialIntent": false,
+    "newGuideRequired": false,
+    "newComparisonRequired": false
+  },
+  "validation": {
+    "tests": "pass: 733/733 current tests; 8/8 dedicated Flappie regressions included",
+    "productAudit": "pass: 102 products, 0 errors, 93 documented warnings",
+    "evidenceAudit": "pass: 101/102 with external evidence; 72 complete, 29 partial, 1 historical missing; Flappie partial by design because no independent professional test was found",
+    "decisionAudit": "pass: 102 products",
+    "comparisonData": "pass: 28 comparisons, 92.7 percent source coverage, 100 percent rendered coverage; comparison platform 99/100 with 0 errors",
+    "searchSeo": "pass: technical source and 371-page build audit",
+    "schema": "pass: current schema tests, 28 comparison ItemLists and built Flappie Product JSON-LD",
+    "internalLinks": "pass: 246 documents, 0 errors, 0 strict-critical, 7 pre-existing warnings",
+    "media": "pass: six referenced WebP roles exist; 371-page image-alt audit has 0 blocking errors",
+    "build": "pass: 371 pages; +3 versus 34.9 = public product, public manufacturer and generated admin product route",
+    "responsive": "pass: real Chromium at 320, 390, 768, 1024 and 1440 in Light and Dark; 0 overflow, 0 broken content images, 0 primary touch-target findings",
+    "contrast": "pass: 38/38 semantic Light/Dark combinations meet WCAG AA",
+    "performance": "pass: strict performance and 30/30 static viewport contract; existing representative-route warnings remain non-blocking",
+    "visualQa": {
+      "status": "pass-manually-inspected",
+      "fullPageCaptureCount": 4,
+      "captures": [
+        "reports/product-batches/34.10-flappie-visuals/flappie-375-light.png",
+        "reports/product-batches/34.10-flappie-visuals/flappie-375-dark.png",
+        "reports/product-batches/34.10-flappie-visuals/flappie-1600-light.png",
+        "reports/product-batches/34.10-flappie-visuals/flappie-1600-dark.png"
+      ]
+    },
+    "diffCheck": "pass"
+  },
+  "noChange": [
+    "OnlyCat product and manufacturer source",
+    "ZeroMOUSE product and manufacturer source",
+    "GPS domain, data and pages",
+    "litter compatibility and performance domain, data and pages",
+    "subscription cost engine and other product costs",
+    "scores of existing products",
+    "existing URLs, redirects, canonicals and indexability",
+    "new guide creation",
+    "new hub creation",
+    "new comparison URL creation"
+  ],
+  "next": "FREEZE"
+}

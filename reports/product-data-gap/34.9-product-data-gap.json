@@ -1,0 +1,304 @@
+{
+  "audit": {
+    "name": "PFOTENTECHNIK 34.9 REPO-VERIFIED PRODUCT & DATA GAP AUDIT",
+    "date": "2026-09-07",
+    "workspace": "apps/pfotentechnik",
+    "productionChanged": false,
+    "visibleUiChanged": false
+  },
+  "decisions": {
+    "flappie": "missing-relevant",
+    "litterPerformance": "not-ready-no-implementation",
+    "gpsPlanFeatures": "fragmented-no-implementation",
+    "next": "FLAPPIE PRODUCT BATCH"
+  },
+  "flappie": {
+    "repoBefore": "missing",
+    "productGap": true,
+    "status": "missing-relevant",
+    "newProductPageCreated": false,
+    "model": "Flappie®",
+    "manufacturer": "Flappie Technologies AG",
+    "availability": {
+      "status": "in-stock",
+      "germany": "2-3 business days stated",
+      "restOfEea": "4-5 business days stated",
+      "warehouse": "Germany",
+      "checkedAt": "2026-09-07"
+    },
+    "price": {
+      "sale": 449,
+      "regular": 479,
+      "currency": "CHF",
+      "germanCheckoutTotal": "unknown-recheck-before-publication"
+    },
+    "subscription": {
+      "requiredForLocalCore": false,
+      "premiumPrepared": true,
+      "premiumCommercialStatus": "pre-launch-per-eula",
+      "premiumPrice": null,
+      "status": "uncertain"
+    },
+    "features": {
+      "preyDetection": "local on-device AI; manufacturer claims over 98 percent day/night",
+      "firstFourDays": "detects and records but does not block prey",
+      "camera": "motion-triggered day/night camera; no continuous recording; no microphone",
+      "microchipRecognition": false,
+      "individualCatRecognition": "not generally active; Cat ID wider launch expected September 2026 and subject to change",
+      "multipleCats": "profiles and physical use supported; no reliable individual access decision until Cat ID",
+      "perCatRules": false,
+      "directionRules": "global open, closed, keep-in, keep-out",
+      "timeRules": "recurring schedules applying to all cats",
+      "app": "iOS and Android",
+      "eventHistory": "entries and prey attempts; exits not saved",
+      "videoRetention": "unsaved 30 days; saved until deletion or account closure",
+      "cloudDependency": "local prey decision; connected video/event storage in encrypted EU infrastructure in Frankfurt",
+      "offline": "prey AI, camera recording and physical buttons work; remote app, notifications, video access, schedules and updates unavailable",
+      "wifi": "2.4 GHz; WPA3 wording inconsistent across current support pages",
+      "power": "12 V power supply; indoor outlet; 2 m cable",
+      "powerFailure": "no battery; flap remains freely open, AI/camera/locks inactive, settings and Wi-Fi recover automatically"
+    },
+    "installation": {
+      "outerFrameMm": [223, 259],
+      "passageMm": [150.5, 126],
+      "newRectangularCutoutMm": [166, 170],
+      "existingRectangularMaximumMm": [175, 210],
+      "glassDirectDiameterMm": [212, 215],
+      "glassWithAdapterDiameterMm": [216, 260],
+      "standardThicknessMaximumMm": 36,
+      "extensionsMaximum": 6,
+      "totalThicknessMaximumMm": 200,
+      "materials": ["glass", "wood", "PVC", "wall"]
+    },
+    "evidenceQuality": {
+      "officialTechnical": "high",
+      "preyPerformance": "medium-manufacturer-claim",
+      "premiumAndCatIdFuture": "low-or-open"
+    },
+    "onlyCatDifference": {
+      "preyPrinciple": "both integrated camera systems; Flappie explicitly local on-device",
+      "identity": "Flappie has no microchip and Cat ID is not generally active; OnlyCat scans microchips on entry and exit",
+      "multipleCats": "Flappie currently lacks reliable per-cat access decisions; OnlyCat has per-cat policies",
+      "offline": "Flappie documents local AI/camera/button operation; OnlyCat repo documents local base operation",
+      "ongoingCost": "Flappie local core has no mandatory subscription but future Premium price is open; OnlyCat offers one-time and subscription hardware variants",
+      "marketPosition": "distinct trade-off rather than redundant duplicate"
+    },
+    "recheckBeforeProductBatch": [
+      "Cat ID general rollout and per-cat rules",
+      "Premium launch, exact features and price",
+      "German checkout currency and final price",
+      "WPA3 support wording"
+    ],
+    "sources": [
+      "https://flappiedoors.com/en/products/flappie",
+      "https://flappiedoors.com/en/policies/shipping-policy",
+      "https://flappiedoors.com/en/pages/eula",
+      "https://support.flappiedoors.com/en-US/understand-prey-detection-4460921",
+      "https://support.flappiedoors.com/en-US/cat-id-labs-and-planned-launch-4794014",
+      "https://support.flappiedoors.com/en-US/set-lock-times-and-schedules-4460979",
+      "https://support.flappiedoors.com/en-US/privacy-and-camera-data-4794401",
+      "https://support.flappiedoors.com/en-US/use-flappie-without-wi-fi-4794173",
+      "https://support.flappiedoors.com/en-US/what-happens-if-the-power-goes-out-4794140",
+      "https://support.flappiedoors.com/en-US/all-flappie-dimensions-4794786",
+      "https://support.flappiedoors.com/en-US/install-flappie-step-by-step-4458828"
+    ]
+  },
+  "onlyCat": {
+    "repoStatus": "existing-complete",
+    "changed": false,
+    "product": "apps/pfotentechnik/src/content/products/onlycat-mikrochip-katzenklappe.md",
+    "manufacturer": "apps/pfotentechnik/src/content/manufacturers/onlycat.md",
+    "hub": "apps/pfotentechnik/src/content/pages/katzenklappen.md",
+    "comparisons": [
+      "apps/pfotentechnik/src/content/comparisons/katzenklappen-mit-app-und-beuteerkennung.md",
+      "apps/pfotentechnik/src/content/comparisons/beste-mikrochip-katzenklappen.md"
+    ]
+  },
+  "litterPerformance": {
+    "compatibilityProtected": true,
+    "productsChecked": 11,
+    "counts": {
+      "full": 0,
+      "partial": 8,
+      "communityOnly": 2,
+      "missing": 1
+    },
+    "legend": {
+      "O": "official-technical",
+      "I": "independent-test",
+      "C": "community-only",
+      "F": "PfotenTechnik-first-party",
+      "M": "missing"
+    },
+    "products": [
+      {
+        "slug": "devoko-90l-automatisches-katzenklo",
+        "dimensions": {"clumpStability": "M", "sieveBreakage": "M", "adhesion": "M", "cleanLitterWaste": "M", "dust": "M", "consumptionRefill": "M", "tracking": "M", "multiCat": "C"},
+        "status": "community-only"
+      },
+      {
+        "slug": "litter-robot-4",
+        "dimensions": {"clumpStability": "I", "sieveBreakage": "I", "adhesion": "M", "cleanLitterWaste": "M", "dust": "M", "consumptionRefill": "M", "tracking": "I", "multiCat": "I"},
+        "status": "partial"
+      },
+      {
+        "slug": "litter-robot-5-pro",
+        "dimensions": {"clumpStability": "I", "sieveBreakage": "I", "adhesion": "I", "cleanLitterWaste": "I", "dust": "M", "consumptionRefill": "M", "tracking": "M", "multiCat": "I"},
+        "status": "partial"
+      },
+      {
+        "slug": "neakasa-m1-lite",
+        "dimensions": {"clumpStability": "O", "sieveBreakage": "O", "adhesion": "C", "cleanLitterWaste": "M", "dust": "C", "consumptionRefill": "M", "tracking": "C", "multiCat": "C"},
+        "status": "community-only"
+      },
+      {
+        "slug": "neakasa-m1-plus",
+        "dimensions": {"clumpStability": "O", "sieveBreakage": "O", "adhesion": "I", "cleanLitterWaste": "M", "dust": "C", "consumptionRefill": "M", "tracking": "I", "multiCat": "I"},
+        "status": "partial"
+      },
+      {
+        "slug": "petkit-puramax-2",
+        "dimensions": {"clumpStability": "O", "sieveBreakage": "O", "adhesion": "C", "cleanLitterWaste": "M", "dust": "M", "consumptionRefill": "M", "tracking": "C", "multiCat": "I"},
+        "status": "partial"
+      },
+      {
+        "slug": "petkit-purobot-crystal-duo",
+        "dimensions": {"clumpStability": "O", "sieveBreakage": "O", "adhesion": "M", "cleanLitterWaste": "O", "dust": "C", "consumptionRefill": "I", "tracking": "M", "multiCat": "C"},
+        "dimensionNote": "Non-clumping proprietary crystal tray; O marks documented technical non-applicability or system binding.",
+        "status": "partial"
+      },
+      {
+        "slug": "petkit-purobot-max-3",
+        "dimensions": {"clumpStability": "O", "sieveBreakage": "O", "adhesion": "M", "cleanLitterWaste": "M", "dust": "M", "consumptionRefill": "M", "tracking": "M", "multiCat": "M"},
+        "status": "missing"
+      },
+      {
+        "slug": "petkit-purobot-max-pro-2",
+        "dimensions": {"clumpStability": "O", "sieveBreakage": "O", "adhesion": "M", "cleanLitterWaste": "M", "dust": "M", "consumptionRefill": "M", "tracking": "M", "multiCat": "I"},
+        "status": "partial"
+      },
+      {
+        "slug": "petlibro-luma-smart-litter-box",
+        "dimensions": {"clumpStability": "I", "sieveBreakage": "I", "adhesion": "M", "cleanLitterWaste": "C", "dust": "M", "consumptionRefill": "M", "tracking": "M", "multiCat": "I"},
+        "status": "partial"
+      },
+      {
+        "slug": "petsnowy-snow-plus",
+        "dimensions": {"clumpStability": "O", "sieveBreakage": "O", "adhesion": "M", "cleanLitterWaste": "M", "dust": "M", "consumptionRefill": "M", "tracking": "I", "multiCat": "I"},
+        "status": "partial"
+      }
+    ],
+    "dimensionCoverage": {
+      "clumpStability": {"anyProductSpecificSignal": 10, "comparableObjectiveMeasurement": 0},
+      "sieveBreakage": {"anyProductSpecificSignal": 10, "comparableObjectiveMeasurement": 0},
+      "adhesion": {"anyProductSpecificSignal": 4, "comparableObjectiveMeasurement": 0},
+      "cleanLitterWaste": {"anyProductSpecificSignal": 3, "comparableObjectiveMeasurement": 0},
+      "dust": {"anyProductSpecificSignal": 3, "comparableObjectiveMeasurement": 0},
+      "consumptionRefill": {"anyProductSpecificSignal": 1, "comparableObjectiveMeasurement": 0},
+      "tracking": {"anyProductSpecificSignal": 5, "comparableObjectiveMeasurement": 0},
+      "multiCat": {"anyProductSpecificSignal": 10, "comparableObjectiveMeasurement": 0}
+    },
+    "publicationGate": {
+      "status": "NOT READY",
+      "requiredCoveragePercent": "70-80",
+      "actualComparableProducts": 0,
+      "actualComparableCoveragePercent": 0,
+      "dataAssetCreated": false
+    },
+    "firstPartyTest": {
+      "useful": true,
+      "planCreated": true,
+      "testPerformed": false,
+      "robots": ["Litter-Robot 4", "PETKIT PuraMax 2", "PETLIBRO Luma"],
+      "litters": ["CATSAN Ultra Plus", "Ever Clean Extra Strong Clumping Unscented", "Tigerino Premium Sensitive", "Biokat's Micro Classic", "PETKIT Clump+ Tofu Mixed"],
+      "benchReplicatesPerCombination": 10,
+      "criteria": ["clump mass retention and fragment mass", "clean litter waste in grams", "adhesion mass and area", "long-run consumption in grams per use", "PM2.5 and PM10 only with reproducible setup", "tracking grams per use", "multi-cat operational observations"],
+      "assetGateAfterPilot": "Pilot validates method only; public market asset still requires comparable evidence for at least 8 of 11 core products."
+    }
+  },
+  "gpsPlanFeatures": {
+    "subscriptionCostFreezeViolated": false,
+    "uiChanged": false,
+    "implementation": "none",
+    "trackersChecked": 9,
+    "counts": {
+      "covered": 1,
+      "partial": 0,
+      "fragmented": 6,
+      "missing": 1,
+      "notApplicable": 1,
+      "unknown": 0
+    },
+    "trackers": [
+      {"slug": "tractive-cat-6-mini", "brand": "Tractive", "status": "fragmented", "owners": ["subscription.plans", "dataPortability", "body", "decision/evidence"]},
+      {"slug": "tractive-dog-6", "brand": "Tractive", "status": "fragmented", "owners": ["subscription.plans", "dataPortability", "body", "decision/evidence"]},
+      {"slug": "tractive-dog-6-xl", "brand": "Tractive", "status": "fragmented", "owners": ["subscription.plans", "specs", "body", "comparisonData"]},
+      {"slug": "weenect-xs", "brand": "Weenect", "status": "fragmented", "owners": ["subscription", "specs", "body", "evidenceSources"]},
+      {"slug": "weenect-xt", "brand": "Weenect", "status": "fragmented", "owners": ["subscription", "specs", "body", "evidenceSources"]},
+      {"slug": "pawfit-3", "brand": "Pawfit", "status": "missing", "owners": ["subscription.plans"], "missingFacts": ["Basic vs Premium walk duration", "walk update frequency", "premium map differences"]},
+      {"slug": "prothelis-area-pets", "brand": "Prothelis", "status": "not-applicable", "reason": "payment and commitment variants, no functional premium tiers"},
+      {"slug": "paj-pet-finder-4g-mini", "brand": "PAJ", "status": "fragmented", "owners": ["subscription.plans", "specs", "faq", "comparisonData", "body"]},
+      {"slug": "invoxia-biotracker-2026", "brand": "Invoxia", "status": "covered", "owners": ["subscription.freeFunctions", "subscription.paidFunctions", "subscription.plans", "body/evidence"]}
+    ],
+    "recommendedCanonicalContract": {
+      "featureOwner": "existing structured decision facts such as dataPortability and GPS/decision fields",
+      "subscriptionOwner": "price, duration, billing and stable references to tier-dependent decision facts",
+      "ui": "small generated base-versus-upgrade summary only",
+      "noThirdCopy": true
+    },
+    "sources": [
+      "https://help.tractive.com/hc/en-us/articles/360000222729-What-features-does-the-Premium-plan-offer",
+      "https://help.weenect.com/hc/de/articles/7506962973458-Was-beinhaltet-das-Weenect-Premium-Paket",
+      "https://www.pawfit.com/en-gb/product/pawfit-3.html",
+      "https://support.pawfit.com/hc/en-gb/article_attachments/20453070258716",
+      "https://www.invoxia.com/de/petcare/minitailz-dog-tracker"
+    ]
+  },
+  "contentGap": {
+    "newIndependentIntents": [
+      "Flappie product decision: local prey detection without microchip versus currently unavailable individual Cat ID rules",
+      "specific litter in specific robot performance, blocked until first-party comparable evidence exists"
+    ],
+    "gpsRequiresNewPage": false,
+    "newPageRequired": true,
+    "newPageScope": "future Flappie Product Batch only",
+    "newPageCreatedIn349": false
+  },
+  "noChange": [
+    "OnlyCat product/manufacturer/hub/comparisons",
+    "litterCompatibility domain/schema/data asset and 11 product blocks",
+    "GPS subscription prices, plan durations, TCO and cost engine",
+    "product pages, guides, comparisons, hubs and UI components",
+    "URLs, redirects, canonicals, indexability, scores and affiliate targets",
+    "production media"
+  ],
+  "validation": {
+    "productAudit": "pass: 101 products, 0 errors, 93 documented warnings",
+    "evidenceAudit": "pass: 100/101 external evidence, 72 complete, 28 partial, 1 missing",
+    "dataAssetTests": "pass: 12/12",
+    "demandDiscoveryTests": "pass: 8/8",
+    "searchSeo": "pass: source and build technical SEO audit",
+    "comparisonData": "pass: 28 comparisons, 92.7 percent source coverage, 100 percent rendered coverage",
+    "schema": "pass: 28 comparison pages and ItemLists plus parseable product, guide and manufacturer JSON-LD",
+    "internalLinksStrict": "pass: 244 documents, 0 errors, 0 strict-critical, 7 warnings",
+    "currentTestSuite": "pass: 725/725",
+    "build": "pass: 368 pages",
+    "diffCheck": "pass",
+    "visualQa": "not-triggered-no-visible-ui-change"
+  },
+  "resolution34_10": {
+    "historicalFindingPreserved": true,
+    "product": "flappie",
+    "statusBefore": "missing-relevant",
+    "statusAfter": "existing-complete",
+    "productInventoryGap": "resolved",
+    "productPageRequired": {
+      "required": true,
+      "status": "resolved"
+    },
+    "newEditorialIntent": false,
+    "newGuideRequired": false,
+    "newComparisonRequired": false,
+    "report": "reports/product-batches/34.10-flappie.json"
+  }
+}
