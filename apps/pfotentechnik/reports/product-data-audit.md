@@ -1,10 +1,10 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-09-03T08:12:20.282Z
+Erstellt: 2026-09-07T11:31:45.030Z
 
 ## Zusammenfassung
 
-- Produkte: 101
+- Produkte: 102
 - Fehler: 0
 - Warnungen: 93
 - Dokumentierte Hinweise: 143
@@ -14,7 +14,7 @@ Erstellt: 2026-09-03T08:12:20.282Z
 
 - futterautomaten: 37
 - trinkbrunnen: 24
-- katzenklappen: 9
+- katzenklappen: 10
 - automatische-katzentoiletten: 11
 - haustierkameras: 8
 - gps-tracker: 12

@@ -1,0 +1,31 @@
+{
+  "start": "2026-09-07",
+  "end": "2026-09-21",
+  "urls": [
+    "/vergleiche/beste-futterautomaten-ohne-wlan/",
+    "/produkt/petkit-yumshare-solo-2/",
+    "/produkt/petkit-eversweet-ultra/",
+    "/produkt/petlibro-polar-wet-food-feeder/",
+    "/trinkbrunnen-fuer-mehrere-katzen/",
+    "/katzentrinkbrunnen-laut-pumpe/",
+    "/katzentrinkbrunnen-ohne-filter/",
+    "/wie-viele-wasserstellen-katze/",
+    "/kalk-katzentrinkbrunnen-entfernen/",
+    "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+    "/katzenwasser-taeglich-wechseln/",
+    "/filter-im-katzentrinkbrunnen-wechseln/",
+    "/produkt/petlibro-stainless-steel-fountain/",
+    "/futterautomat-richtig-reinigen/",
+    "/vergleiche/beste-trinkbrunnen-fuer-katzen/"
+  ],
+  "historicalAliasControl": "/produkt/petkit-yumshare-solo/",
+  "checks": [
+    "Daily property clicks/impressions; only complete dates",
+    "date×original absolute page URL, separate host and query×page; retain raw dimensions",
+    "At 7 and 14 days: impressions, clicks, disclosed URLs/queries; do not infer zero from absent rows",
+    "Inspect Google-selected vs user canonical, last crawl, fetch, index reason on cohort sample",
+    "After deployment: Solo aliases 301 one hop, target 200/self-canonical, all other 33 redirects intact",
+    "Require sustained growth across two complete weeks and multiple URLs; isolated positions 2–4 are not recovery",
+    "Per-URL CTR/position interpretation only after >=20 impressions in complete comparable window; threshold is operational, not Google rule"
+  ]
+}

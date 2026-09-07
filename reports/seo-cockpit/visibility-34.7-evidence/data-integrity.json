@@ -1,0 +1,21 @@
+{
+  "excluded": [
+    {
+      "engine": "gsc",
+      "commit": "3dc09874c5193f19f7f8d39232910e91c21212e4",
+      "file": "apps/pfotentechnik/src/data/seo/gsc-dashboard-ranges.json",
+      "sha256": "f1672f53d75a9bb46f76fe1b1cd403e9719aa84895e8e63fc0ed24557861ea28",
+      "generatedAt": "2026-07-26T21:36:29.232Z",
+      "reason": "git diff changes page identities while generatedAt stays unchanged; original snapshot retained"
+    },
+    {
+      "engine": "gsc",
+      "commit": "dc73a31d3bc1381bd72fb1612f311a316ff64ad5",
+      "file": "apps/pfotentechnik/src/data/seo/gsc-dashboard-ranges.json",
+      "sha256": "a17e7bed9d5b9fa247e7393b212046c8448d48e003e9e5db0095e60cd490d0d2",
+      "generatedAt": "2026-07-28T19:59:58.760Z",
+      "reason": "git diff changes page identities while generatedAt stays unchanged; original snapshot retained"
+    }
+  ],
+  "policy": "Do not treat maintenance replacements in stored exports as search observations."
+}

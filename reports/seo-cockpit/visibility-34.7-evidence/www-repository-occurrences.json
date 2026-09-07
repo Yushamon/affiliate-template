@@ -1,0 +1,320 @@
+{
+  "scope": "working tree including hidden/ignored backups; excluding dependencies, Git database, dist/cache and new diagnostic self-references",
+  "rows": [
+    {
+      "file": "./packages/affiliate-core/src/linking/linkEngine.ts",
+      "line": 87,
+      "occurrences": 1,
+      "classification": "audit/normalization (accept both inputs)",
+      "excerpt": "if (![\"pfotentechnik.de\", \"www.pfotentechnik.de\"].includes(url.hostname.toLowerCase())) return \"\";"
+    },
+    {
+      "file": "./apps/pfotentechnik/src/domain/content/internalUrlPolicy.ts",
+      "line": 2,
+      "occurrences": 1,
+      "classification": "audit/normalization (accept both inputs)",
+      "excerpt": "export const PFOTENTECHNIK_HOSTS = new Set([\"pfotentechnik.de\", \"www.pfotentechnik.de\"]);"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-seo-copilot-cleanup-1.0.2-2026-07-31T05-48-38-747Z/files/apps/pfotentechnik/src/pages/admin/seo/cockpit.astro",
+      "line": 184,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": ".replace(\"https://www.pfotentechnik.de\", \"\")"
+    },
+    {
+      "file": "./apps/pfotentechnik/scripts/seo/audit-production-baseline.mjs",
+      "line": 55,
+      "occurrences": 1,
+      "classification": "audit/normalization (accept both inputs)",
+      "excerpt": "if (!new Set([\"pfotentechnik.de\", \"www.pfotentechnik.de\"]).has(url.hostname)) return \"\";"
+    },
+    {
+      "file": "./apps/pfotentechnik/scripts/audit-internal-link-targets.mjs",
+      "line": 14,
+      "occurrences": 1,
+      "classification": "audit/normalization (accept both inputs)",
+      "excerpt": "const HOSTS = new Set([\"pfotentechnik.de\", \"www.pfotentechnik.de\"]);"
+    },
+    {
+      "file": "./apps/pfotentechnik/scripts/seo/audit-url-consistency.mjs",
+      "line": 11,
+      "occurrences": 1,
+      "classification": "audit/normalization (accept both inputs)",
+      "excerpt": "const INTERNAL_HOSTS = new Set([\"pfotentechnik.de\", \"www.pfotentechnik.de\"]);"
+    },
+    {
+      "file": "./apps/pfotentechnik/scripts/seo/audit-search-recovery.mjs",
+      "line": 155,
+      "occurrences": 1,
+      "classification": "audit/normalization (accept both inputs)",
+      "excerpt": "if (![\"pfotentechnik.de\", \"www.pfotentechnik.de\"].includes(url.hostname.toLowerCase())) continue;"
+    },
+    {
+      "file": "./apps/pfotentechnik/test/search-platform.test.mjs",
+      "line": 25,
+      "occurrences": 1,
+      "classification": "test fixture",
+      "excerpt": "assert.equal(normalizeUrl(\"http://www.pfotentechnik.de//ratgeber/?utm_source=x#teil\"), \"/ratgeber/\");"
+    },
+    {
+      "file": "./apps/pfotentechnik/test/search-platform.test.mjs",
+      "line": 42,
+      "occurrences": 1,
+      "classification": "test fixture",
+      "excerpt": "{ page: \"https://www.pfotentechnik.de/a/?x=1\", clicks: 1, impressions: 10, position: 4 },"
+    },
+    {
+      "file": "./apps/pfotentechnik/test/search-platform.test.mjs",
+      "line": 119,
+      "occurrences": 1,
+      "classification": "test fixture",
+      "excerpt": "if (dimension === \"page\") return { rows: [{ keys: [\"https://www.pfotentechnik.de/a/?utm=x\"], clicks: 2, impressions: 50, ctr: .04, position: 8 }, { keys: [\"https://pfotentechnik.de/a/#x\"], clicks: 2, impressions: 50, ctr: .04, position: 10 }] };"
+    },
+    {
+      "file": "./apps/pfotentechnik/test/search-platform.test.mjs",
+      "line": 144,
+      "occurrences": 1,
+      "classification": "test fixture",
+      "excerpt": "captured.push(url); return { ok: true, status: 200, headers: { get: () => null }, text: async () => JSON.stringify({ d: [{ Url: \"http://www.pfotentechnik.de/\", IsVerified: true }] }) };"
+    },
+    {
+      "file": "./apps/pfotentechnik/test/search-platform.test.mjs",
+      "line": 170,
+      "occurrences": 1,
+      "classification": "test fixture",
+      "excerpt": "assert.equal(mapBingPageStats([{ ...raw, Query: \"https://www.pfotentechnik.de/a/?x=1\" }])[0].page, \"/a/\");"
+    },
+    {
+      "file": "./apps/pfotentechnik/test/search-platform.test.mjs",
+      "line": 192,
+      "occurrences": 1,
+      "classification": "test fixture",
+      "excerpt": "const bing = providerPayload(\"bing\", { clicks: 5, impressions: 50, ctr: 10, position: 10 }, { pages: [{ page: \"http://www.pfotentechnik.de/a\", clicks: 5, impressions: 50, ctr: 10, position: 10 }] });"
+    },
+    {
+      "file": "./apps/pfotentechnik/test/internal-url-policy.test.mjs",
+      "line": 6,
+      "occurrences": 1,
+      "classification": "test fixture",
+      "excerpt": "assert.equal(normalizeInternalPath(\"https://www.pfotentechnik.de/futterautomat-mit-kamera?utm_source=x#modelle\"), \"/vergleiche/beste-futterautomaten-mit-kamera/\");"
+    },
+    {
+      "file": "./apps/pfotentechnik/test/internal-url-policy.test.mjs",
+      "line": 10,
+      "occurrences": 1,
+      "classification": "test fixture",
+      "excerpt": "assert.equal(isSelfLinkTarget(\"http://www.pfotentechnik.de/vergleiche/beste-futterautomaten-ohne-wlan\", \"https://pfotentechnik.de/vergleiche/beste-futterautomaten-ohne-wlan/\"), true);"
+    },
+    {
+      "file": "./apps/pfotentechnik/src/pages/admin/seo/cockpit.astro.bak-seo-periods-3.0.0",
+      "line": 44,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": "const cleanUrl = (value) => value.replace(\"https://www.pfotentechnik.de\", \"\") || \"/\";"
+    },
+    {
+      "file": "./apps/pfotentechnik/src/pages/admin/seo/cockpit.astro.bak-seo-cockpit-4.0.0",
+      "line": 54,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": "const clean=(url)=>url?.replace(\"https://www.pfotentechnik.de\",\"\")||\"/\";"
+    },
+    {
+      "file": "./apps/pfotentechnik/src/pages/admin/seo/cockpit.astro",
+      "line": 361,
+      "occurrences": 1,
+      "classification": "admin display normalization",
+      "excerpt": ".replace(\"https://www.pfotentechnik.de\", \"\")"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-seo-copilot-cleanup-1.0.5-2026-07-31T06-44-55-990Z/files/apps/pfotentechnik/src/pages/admin/seo/cockpit.astro",
+      "line": 184,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": ".replace(\"https://www.pfotentechnik.de\", \"\")"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-seo-signal-focus-33.9.0-2026-08-25T06-00-28-132Z/apps/pfotentechnik/test/search-platform.test.mjs",
+      "line": 25,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": "assert.equal(normalizeUrl(\"http://www.pfotentechnik.de//ratgeber/?utm_source=x#teil\"), \"/ratgeber/\");"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-seo-signal-focus-33.9.0-2026-08-25T06-00-28-132Z/apps/pfotentechnik/test/search-platform.test.mjs",
+      "line": 42,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": "{ page: \"https://www.pfotentechnik.de/a/?x=1\", clicks: 1, impressions: 10, position: 4 },"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-seo-signal-focus-33.9.0-2026-08-25T06-00-28-132Z/apps/pfotentechnik/test/search-platform.test.mjs",
+      "line": 119,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": "if (dimension === \"page\") return { rows: [{ keys: [\"https://www.pfotentechnik.de/a/?utm=x\"], clicks: 2, impressions: 50, ctr: .04, position: 8 }, { keys: [\"https://pfotentechnik.de/a/#x\"], clicks: 2, impressions: 50, ctr: .04, position: 10 }] };"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-seo-signal-focus-33.9.0-2026-08-25T06-00-28-132Z/apps/pfotentechnik/test/search-platform.test.mjs",
+      "line": 144,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": "captured.push(url); return { ok: true, status: 200, headers: { get: () => null }, text: async () => JSON.stringify({ d: [{ Url: \"http://www.pfotentechnik.de/\", IsVerified: true }] }) };"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-seo-signal-focus-33.9.0-2026-08-25T06-00-28-132Z/apps/pfotentechnik/test/search-platform.test.mjs",
+      "line": 170,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": "assert.equal(mapBingPageStats([{ ...raw, Query: \"https://www.pfotentechnik.de/a/?x=1\" }])[0].page, \"/a/\");"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-seo-signal-focus-33.9.0-2026-08-25T06-00-28-132Z/apps/pfotentechnik/test/search-platform.test.mjs",
+      "line": 192,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": "const bing = providerPayload(\"bing\", { clicks: 5, impressions: 50, ctr: 10, position: 10 }, { pages: [{ page: \"http://www.pfotentechnik.de/a\", clicks: 5, impressions: 50, ctr: 10, position: 10 }] });"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-internal-link-and-selflink-cleanup-1.0.2-2026-07-29T08-27-30-063Z/apps/pfotentechnik/src/domain/content/internalUrlPolicy.ts",
+      "line": 2,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": "export const PFOTENTECHNIK_HOSTS = new Set([\"pfotentechnik.de\", \"www.pfotentechnik.de\"]);"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-seo-copilot-cleanup-1.0.4-2026-07-31T06-34-29-123Z/files/apps/pfotentechnik/src/pages/admin/seo/cockpit.astro",
+      "line": 184,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": ".replace(\"https://www.pfotentechnik.de\", \"\")"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-internal-link-and-selflink-cleanup-1.0.3-2026-07-29T08-35-04-781Z/apps/pfotentechnik/src/domain/content/internalUrlPolicy.ts",
+      "line": 2,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": "export const PFOTENTECHNIK_HOSTS = new Set([\"pfotentechnik.de\", \"www.pfotentechnik.de\"]);"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-internal-link-and-selflink-cleanup-1.0.5-2026-07-29T08-44-49-534Z/apps/pfotentechnik/src/domain/content/internalUrlPolicy.ts",
+      "line": 2,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": "export const PFOTENTECHNIK_HOSTS = new Set([\"pfotentechnik.de\", \"www.pfotentechnik.de\"]);"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-internal-link-and-selflink-cleanup-1.0.3-2026-07-29T08-35-04-781Z/apps/pfotentechnik/scripts/audit-internal-link-targets.mjs",
+      "line": 13,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": "const HOSTS = new Set([\"pfotentechnik.de\", \"www.pfotentechnik.de\"]);"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-selflink-and-link-audit-fix-1.0.1-2026-07-29T09-46-33-726Z/apps/pfotentechnik/scripts/audit-internal-link-targets.mjs",
+      "line": 13,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": "const HOSTS = new Set([\"pfotentechnik.de\", \"www.pfotentechnik.de\"]);"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-seo-copilot-cleanup-1.0.0-2026-07-31T05-36-03-819Z/files/apps/pfotentechnik/src/pages/admin/seo/cockpit.astro",
+      "line": 184,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": ".replace(\"https://www.pfotentechnik.de\", \"\")"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-selflink-and-link-audit-fix-1.0.2-2026-07-29T10-57-11-840Z/apps/pfotentechnik/scripts/audit-internal-link-targets.mjs",
+      "line": 14,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": "const HOSTS = new Set([\"pfotentechnik.de\", \"www.pfotentechnik.de\"]);"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-seo-copilot-cleanup-1.0.1-2026-07-31T05-40-06-017Z/files/apps/pfotentechnik/src/pages/admin/seo/cockpit.astro",
+      "line": 184,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": ".replace(\"https://www.pfotentechnik.de\", \"\")"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-internal-link-and-selflink-cleanup-1.0.2-2026-07-29T09-38-37-447Z/apps/pfotentechnik/src/domain/content/internalUrlPolicy.ts",
+      "line": 2,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": "export const PFOTENTECHNIK_HOSTS = new Set([\"pfotentechnik.de\", \"www.pfotentechnik.de\"]);"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-internal-link-and-selflink-cleanup-1.0.2-2026-07-29T09-38-37-447Z/apps/pfotentechnik/scripts/audit-internal-link-targets.mjs",
+      "line": 13,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": "const HOSTS = new Set([\"pfotentechnik.de\", \"www.pfotentechnik.de\"]);"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-internal-link-and-selflink-cleanup-1.0.4-2026-07-29T08-39-11-278Z/apps/pfotentechnik/src/domain/content/internalUrlPolicy.ts",
+      "line": 2,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": "export const PFOTENTECHNIK_HOSTS = new Set([\"pfotentechnik.de\", \"www.pfotentechnik.de\"]);"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-internal-link-and-selflink-cleanup-1.0.4-2026-07-29T08-39-11-278Z/apps/pfotentechnik/scripts/audit-internal-link-targets.mjs",
+      "line": 13,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": "const HOSTS = new Set([\"pfotentechnik.de\", \"www.pfotentechnik.de\"]);"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-component-adoption-11.5.0-2026-07-27T09-20-48-690Z/apps/pfotentechnik/src/pages/admin/seo/cockpit.astro",
+      "line": 184,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": ".replace(\"https://www.pfotentechnik.de\", \"\")"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-selflink-and-link-audit-fix-1.0.3-2026-07-29T11-02-16-547Z/apps/pfotentechnik/scripts/audit-internal-link-targets.mjs",
+      "line": 14,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": "const HOSTS = new Set([\"pfotentechnik.de\", \"www.pfotentechnik.de\"]);"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-seo-copilot-cleanup-1.0.3-2026-07-31T05-55-42-230Z/files/apps/pfotentechnik/src/pages/admin/seo/cockpit.astro",
+      "line": 184,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": ".replace(\"https://www.pfotentechnik.de\", \"\")"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-internal-link-and-selflink-cleanup-1.0.1-2026-07-29T08-20-10-083Z/apps/pfotentechnik/src/domain/content/internalUrlPolicy.ts",
+      "line": 2,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": "export const PFOTENTECHNIK_HOSTS = new Set([\"pfotentechnik.de\", \"www.pfotentechnik.de\"]);"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-internal-link-and-selflink-cleanup-1.0.1-2026-07-29T08-20-10-083Z/apps/pfotentechnik/scripts/audit-internal-link-targets.mjs",
+      "line": 12,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": "const HOSTS = new Set([\"pfotentechnik.de\", \"www.pfotentechnik.de\"]);"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-seo-copilot-cleanup-1.0.6-2026-07-31T06-48-36-704Z/files/apps/pfotentechnik/src/pages/admin/seo/cockpit.astro",
+      "line": 184,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": ".replace(\"https://www.pfotentechnik.de\", \"\")"
+    },
+    {
+      "file": "./.patch-backups/pfotentechnik-seo-recovery-opportunity-33.7.0-2026-08-10T15-54-25-371Z/apps/pfotentechnik/src/pages/admin/seo/cockpit.astro",
+      "line": 101,
+      "occurrences": 1,
+      "classification": "inactive backup",
+      "excerpt": ".replace(\"https://www.pfotentechnik.de\", \"\")"
+    }
+  ]
+}

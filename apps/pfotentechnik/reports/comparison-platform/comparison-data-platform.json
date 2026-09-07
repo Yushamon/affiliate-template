@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T08:12:20.672Z",
+  "generatedAt": "2026-09-07T11:31:45.417Z",
   "minimumComparisons": 26,
   "thresholds": {
     "minimumVisibleRows": 3,
@@ -8,16 +8,16 @@
   "passed": true,
   "summary": {
     "comparisons": 28,
-    "products": 101,
-    "sourceCells": 1244,
-    "allResolved": 1153,
+    "products": 102,
+    "sourceCells": 1252,
+    "allResolved": 1161,
     "allUnresolved": 91,
     "sourceCoverage": 92.7,
-    "renderedCells": 1120,
-    "renderedResolved": 1120,
+    "renderedCells": 1128,
+    "renderedResolved": 1128,
     "renderedUnresolved": 0,
     "renderedCoverage": 100,
-    "legacyValueCount": 914,
+    "legacyValueCount": 922,
     "overrideCount": 218
   },
   "failures": [],
@@ -8476,7 +8476,7 @@
     {
       "slug": "katzenklappen-mit-app-und-beuteerkennung",
       "file": "src/content/comparisons/katzenklappen-mit-app-und-beuteerkennung.md",
-      "items": 4,
+      "items": 5,
       "criteria": 8,
       "visibleRows": 8,
       "hiddenRows": 0,
@@ -8485,8 +8485,8 @@
         {
           "key": "rolle",
           "label": "Produktrolle",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -8497,6 +8497,11 @@
             },
             {
               "product": "onlycat-mikrochip-katzenklappe",
+              "value": "Vollständige Katzenklappe",
+              "resolved": true
+            },
+            {
+              "product": "flappie",
               "value": "Vollständige Katzenklappe",
               "resolved": true
             },
@@ -8515,8 +8520,8 @@
         {
           "key": "app",
           "label": "App-Funktion",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -8528,6 +8533,11 @@
             {
               "product": "onlycat-mikrochip-katzenklappe",
               "value": "iOS, Android, Web",
+              "resolved": true
+            },
+            {
+              "product": "flappie",
+              "value": "iOS und Android",
               "resolved": true
             },
             {
@@ -8545,8 +8555,8 @@
         {
           "key": "beute",
           "label": "Beuteerkennung",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -8558,6 +8568,11 @@
             {
               "product": "onlycat-mikrochip-katzenklappe",
               "value": "Integrierte Kamera",
+              "resolved": true
+            },
+            {
+              "product": "flappie",
+              "value": "Lokale Kamera-KI; >98 % laut Hersteller",
               "resolved": true
             },
             {
@@ -8575,8 +8590,8 @@
         {
           "key": "abhaengigkeit",
           "label": "Abhängigkeiten",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -8588,6 +8603,11 @@
             {
               "product": "onlycat-mikrochip-katzenklappe",
               "value": "WLAN für Einrichtung und App",
+              "resolved": true
+            },
+            {
+              "product": "flappie",
+              "value": "Netzstrom; WLAN für App und Updates",
               "resolved": true
             },
             {
@@ -8605,8 +8625,8 @@
         {
           "key": "strom",
           "label": "Strom",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -8618,6 +8638,11 @@
             {
               "product": "onlycat-mikrochip-katzenklappe",
               "value": "USB-C-Netzstrom",
+              "resolved": true
+            },
+            {
+              "product": "flappie",
+              "value": "12-V-Netzteil, kein Akku",
               "resolved": true
             },
             {
@@ -8635,8 +8660,8 @@
         {
           "key": "ausfall",
           "label": "Ausfallverhalten",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -8648,6 +8673,11 @@
             {
               "product": "onlycat-mikrochip-katzenklappe",
               "value": "Lokaler WLAN-Ausfallbetrieb; Stromausfall entsperrt laut Hersteller",
+              "resolved": true
+            },
+            {
+              "product": "flappie",
+              "value": "WLAN-lokal weiter; stromlos frei offen ohne KI und Sperren",
               "resolved": true
             },
             {
@@ -8665,8 +8695,8 @@
         {
           "key": "hub_erforderlich",
           "label": "Hub erforderlich",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -8678,6 +8708,11 @@
             {
               "product": "onlycat-mikrochip-katzenklappe",
               "value": "Nicht dokumentiert",
+              "resolved": true
+            },
+            {
+              "product": "flappie",
+              "value": "Nein",
               "resolved": true
             },
             {
@@ -8695,8 +8730,8 @@
         {
           "key": "security_support",
           "label": "Dokumentierter Security-Update-Zeitraum",
-          "resolved": 4,
-          "total": 4,
+          "resolved": 5,
+          "total": 5,
           "coverage": 100,
           "visible": true,
           "cells": [
@@ -8708,6 +8743,11 @@
             {
               "product": "onlycat-mikrochip-katzenklappe",
               "value": "Nicht dokumentiert",
+              "resolved": true
+            },
+            {
+              "product": "flappie",
+              "value": "Fünf Jahre Softwareupdates laut Hersteller",
               "resolved": true
             },
             {

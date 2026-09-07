@@ -1,14 +1,14 @@
 # Comparison Platform Report
 
-Erstellt: 2026-09-02T06:40:43.456Z
+Erstellt: 2026-09-07T11:31:45.778Z
 
 ## Übersicht
 
 - Vergleiche: 28
-- Produkte: 101
-- Hersteller: 32
-- verwendete Produkte: 71
-- Produktabdeckung: 70.3 %
+- Produkte: 102
+- Hersteller: 33
+- verwendete Produkte: 72
+- Produktabdeckung: 70.6 %
 - Qualitätsscore: 99/100
 - Fehler: 0
 - Warnungen: 4

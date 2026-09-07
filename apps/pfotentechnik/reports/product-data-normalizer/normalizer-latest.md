@@ -1,7 +1,7 @@
 # Product Data Normalizer
 
 - Modus: check
-- Produkte: 101
+- Produkte: 102
 - Änderungsbedarf: 0
 - Sichere Aktionen: 0
 - Fehlende Bildassets: 27

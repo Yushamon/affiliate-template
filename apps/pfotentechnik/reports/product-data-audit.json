@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generatedAt": "2026-09-03T08:12:20.282Z",
-    "totalProducts": 101,
+    "generatedAt": "2026-09-07T11:31:45.030Z",
+    "totalProducts": 102,
     "byCategory": {
       "futterautomaten": 37,
       "trinkbrunnen": 24,
-      "katzenklappen": 9,
+      "katzenklappen": 10,
       "automatische-katzentoiletten": 11,
       "haustierkameras": 8,
       "gps-tracker": 12
@@ -1357,6 +1357,97 @@
       "structuralCompleteness": 80,
       "confirmedCompleteness": 80,
       "completeness": 91
+    },
+    {
+      "file": "src/content/products/flappie.md",
+      "slug": "flappie",
+      "title": "Flappie",
+      "category": "katzenklappen",
+      "errors": [],
+      "warnings": [],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Modell",
+          "value": "Flappie FLP1"
+        },
+        {
+          "label": "Produkttyp",
+          "value": "Vollständige KI-Katzenklappe mit Beuteerkennung"
+        },
+        {
+          "label": "Zugang",
+          "value": "Aktuell ohne Mikrochip- oder allgemein aktive individuelle Cat-ID-Erkennung"
+        },
+        {
+          "label": "Beuteerkennung",
+          "value": "Lokale Kamera-KI; über 98 % laut Hersteller, nicht unabhängig verifiziert"
+        },
+        {
+          "label": "Beutearten",
+          "value": "Mäuse, Ratten, Vögel, Fische, Schlangen und Insekten laut Hersteller"
+        },
+        {
+          "label": "Nachtsicht",
+          "value": "Infrarotbeleuchtung"
+        },
+        {
+          "label": "Startphase",
+          "value": "Vier Tage Erkennung und Aufzeichnung ohne aktive Beuteblockade"
+        },
+        {
+          "label": "Außenmaß",
+          "value": "223 × 259 mm"
+        },
+        {
+          "label": "Durchgang",
+          "value": "150,5 × 126 mm"
+        },
+        {
+          "label": "Neue Tür-/Wandöffnung",
+          "value": "166 × 170 mm"
+        },
+        {
+          "label": "Bestehende Rechtecköffnung",
+          "value": "maximal 175 × 210 mm"
+        },
+        {
+          "label": "Glasausschnitt",
+          "value": "Ø 212–215 mm direkt; über 215 bis 260 mm mit Adapter"
+        },
+        {
+          "label": "Einbautiefe",
+          "value": "bis 36 mm ohne Erweiterung; bis 200 mm mit maximal sechs Erweiterungen"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "mitgeliefertes 12-V-Netzteil; Innensteckdose erforderlich"
+        },
+        {
+          "label": "Notstrom",
+          "value": "kein integrierter Akku"
+        },
+        {
+          "label": "WLAN",
+          "value": "2,4 GHz; WPA2 bestätigt, WPA3 widersprüchlich dokumentiert"
+        },
+        {
+          "label": "App",
+          "value": "iOS und Android; Konto für verbundene Funktionen"
+        },
+        {
+          "label": "Offline",
+          "value": "Beute-KI, Kameraaufzeichnung und Tasten lokal; keine Remote-App, Meldungen oder Updates"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Hauskatzen; besonders große Rassen vorab am Durchgang prüfen"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 100,
+      "confirmedCompleteness": 100,
+      "completeness": 100
     },
     {
       "file": "src/content/products/furbo-360-hundekamera.md",

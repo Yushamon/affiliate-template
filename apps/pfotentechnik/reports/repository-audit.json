@@ -1,14 +1,14 @@
 {
   "summary": {
-    "generatedAt": "2026-09-02T06:40:41.071Z",
+    "generatedAt": "2026-09-07T11:31:42.811Z",
     "countsByCollection": {
-      "pages": 82,
-      "products": 101,
-      "manufacturers": 32,
+      "pages": 83,
+      "products": 102,
+      "manufacturers": 33,
       "comparisons": 28
     },
     "categoryCounts": {
-      "haustiertechnik": 3,
+      "haustiertechnik": 4,
       "trinkbrunnen": 17,
       "gps-tracker": 10,
       "tierernaehrung": 2,
@@ -30,10 +30,10 @@
       "katzenhaltung": 1,
       "tierbeschaeftigung": 1
     },
-    "routes": 266,
+    "routes": 269,
     "findings": {
       "error": 0,
-      "warning": 11,
+      "warning": 12,
       "info": 45
     }
   },
@@ -97,6 +97,12 @@
       "area": "maintainability",
       "message": "Sehr große Datei mit 1198 Zeilen",
       "file": "src/content/pages/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt.md"
+    },
+    {
+      "severity": "warning",
+      "area": "maintainability",
+      "message": "Sehr große Datei mit 1019 Zeilen",
+      "file": "src/content/schema/product.ts"
     },
     {
       "severity": "warning",

@@ -1,15 +1,15 @@
 {
   "version": "25.3.6",
-  "generatedAt": "2026-09-03T08:10:20.419Z",
+  "generatedAt": "2026-09-07T11:31:43.425Z",
   "summary": {
-    "products": 101,
+    "products": 102,
     "blocked": 0,
     "needsWork": 18,
     "good": 3,
-    "strong": 80,
+    "strong": 81,
     "errors": 0,
-    "warnings": 71,
-    "info": 162
+    "warnings": 72,
+    "info": 163
   },
   "products": [
     {
@@ -979,6 +979,37 @@
           "code": "FAQ_EXCESSIVE",
           "message": "22 FAQ-Einträge können die Produktseite unnötig verlängern.",
           "recommendation": "Nur echte Kauffragen behalten."
+        }
+      ]
+    },
+    {
+      "slug": "flappie",
+      "file": "apps/pfotentechnik/src/content/products/flappie.md",
+      "category": "key:",
+      "score": 90,
+      "status": "strong",
+      "metrics": {
+        "specs": 0,
+        "strengths": 4,
+        "weaknesses": 4,
+        "faq": 7,
+        "evidenceCount": 4,
+        "communityInsights": 0,
+        "decisionFacts": 0,
+        "purchaseMistakes": 0
+      },
+      "findings": [
+        {
+          "severity": "warning",
+          "code": "SPECS_THIN",
+          "message": "Nur 0 technische Daten hinterlegt.",
+          "recommendation": "Mindestens vier kaufrelevante Spezifikationen pflegen."
+        },
+        {
+          "severity": "info",
+          "code": "COMMUNITY_EMPTY",
+          "message": "Noch keine strukturierten Community-Muster hinterlegt.",
+          "recommendation": "Nur bei belastbarer Mehrquellen-Auswertung ergänzen."
         }
       ]
     },

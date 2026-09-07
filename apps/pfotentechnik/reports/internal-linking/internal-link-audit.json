@@ -1,14 +1,14 @@
 {
   "version": "3.0.3",
-  "generatedAt": "2026-09-03T08:12:23.873Z",
-  "strict": false,
+  "generatedAt": "2026-09-07T11:31:47.835Z",
+  "strict": true,
   "summary": {
-    "documents": 244,
-    "contentRoutes": 244,
-    "buildRoutes": 368,
-    "validRoutes": 368,
-    "definitions": 516,
-    "renderedAutomaticLinks": 566,
+    "documents": 246,
+    "contentRoutes": 246,
+    "buildRoutes": 371,
+    "validRoutes": 371,
+    "definitions": 518,
+    "renderedAutomaticLinks": 572,
     "errors": 0,
     "warnings": 7,
     "critical": 0
@@ -1036,6 +1036,12 @@
       "score": 1813
     },
     {
+      "sourceRoute": "/smarte-haustiertechnik/",
+      "targetRoute": "/produkt/flappie/",
+      "anchor": "Flappie",
+      "score": 1607
+    },
+    {
       "sourceRoute": "/so-bewerten-wir/",
       "targetRoute": "/trinkbrunnen/",
       "anchor": "Trinkbrunnen",
@@ -1808,6 +1814,18 @@
       "targetRoute": "/katzenwasser-taeglich-wechseln/",
       "anchor": "Wasserwechsel",
       "score": 1513
+    },
+    {
+      "sourceRoute": "/produkt/flappie/",
+      "targetRoute": "/hersteller/onlycat/",
+      "anchor": "OnlyCat",
+      "score": 1607
+    },
+    {
+      "sourceRoute": "/produkt/flappie/",
+      "targetRoute": "/hersteller/zeromouse/",
+      "anchor": "ZeroMOUSE",
+      "score": 1509
     },
     {
       "sourceRoute": "/produkt/furbo-360-katzenkamera/",
@@ -3484,6 +3502,24 @@
       "score": 1814
     },
     {
+      "sourceRoute": "/hersteller/flappie/",
+      "targetRoute": "/hersteller/onlycat/",
+      "anchor": "OnlyCat",
+      "score": 1807
+    },
+    {
+      "sourceRoute": "/hersteller/flappie/",
+      "targetRoute": "/katzenklappen/",
+      "anchor": "Katzenklappe",
+      "score": 1712
+    },
+    {
+      "sourceRoute": "/hersteller/flappie/",
+      "targetRoute": "/hersteller/zeromouse/",
+      "anchor": "ZeroMOUSE",
+      "score": 1509
+    },
+    {
       "sourceRoute": "/hersteller/furbo/",
       "targetRoute": "/haustierkameras/",
       "anchor": "Haustierkamera",
@@ -3635,6 +3671,7 @@
     "/hersteller/catit/": 6,
     "/hersteller/devoko/": 4,
     "/hersteller/enabot/": 7,
+    "/hersteller/flappie/": 1,
     "/hersteller/furbo/": 6,
     "/hersteller/garmin/": 12,
     "/hersteller/honeyguardian/": 8,
@@ -3642,7 +3679,7 @@
     "/hersteller/invoxia/": 2,
     "/hersteller/neakasa/": 5,
     "/hersteller/oneisall/": 13,
-    "/hersteller/onlycat/": 6,
+    "/hersteller/onlycat/": 8,
     "/hersteller/paj-gps/": 4,
     "/hersteller/pawbby/": 3,
     "/hersteller/pawfit/": 3,
@@ -3661,7 +3698,7 @@
     "/hersteller/whisker/": 6,
     "/hersteller/wopet/": 7,
     "/hersteller/xiaomi/": 17,
-    "/hersteller/zeromouse/": 5,
+    "/hersteller/zeromouse/": 7,
     "/hund-entlaufen-gps-sinnvoll/": 6,
     "/hund-frisst-nicht/": 5,
     "/hund-frisst-zu-schnell/": 1,
@@ -3676,10 +3713,10 @@
     "/katze-entlaufen-gps-sinnvoll/": 5,
     "/katze-frisst-nicht/": 3,
     "/katze-trinkt-viel/": 1,
-    "/katzenklappe-einbauen/": 8,
+    "/katzenklappe-einbauen/": 9,
     "/katzenklappe-fuer-mehrere-katzen/": 2,
     "/katzenklappe-zugluft-und-waermedaemmung/": 5,
-    "/katzenklappen/": 20,
+    "/katzenklappen/": 21,
     "/katzentrinkbrunnen-dauerbetrieb-urlaub/": 0,
     "/katzentrinkbrunnen-laut-pumpe/": 4,
     "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/": 10,
@@ -3702,6 +3739,7 @@
     "/produkt/enabot-rola-mini/": 2,
     "/produkt/enabot-rola-pettracker/": 4,
     "/produkt/feelneedy-fn-w18-8l-katzenbrunnen/": 1,
+    "/produkt/flappie/": 4,
     "/produkt/furbo-360-hundekamera/": 2,
     "/produkt/furbo-360-katzenkamera/": 3,
     "/produkt/furbo-mini-360/": 3,
@@ -3722,7 +3760,7 @@
     "/produkt/oneisall-3-5l-cordless-fountain/": 2,
     "/produkt/oneisall-5l-automatic-cat-feeder/": 2,
     "/produkt/oneisall-7l-dog-water-fountain/": 4,
-    "/produkt/onlycat-mikrochip-katzenklappe/": 2,
+    "/produkt/onlycat-mikrochip-katzenklappe/": 3,
     "/produkt/paj-pet-finder-4g-mini/": 8,
     "/produkt/pawbby-smart-pet-feeder/": 2,
     "/produkt/pawfit-3/": 2,
@@ -3787,7 +3825,7 @@
     "/produkt/wopet-pioneer-f01-plus/": 2,
     "/produkt/xiaomi-smart-pet-food-feeder-2/": 17,
     "/produkt/xiaomi-smart-pet-fountain-2/": 2,
-    "/produkt/zeromouse-2-0/": 2,
+    "/produkt/zeromouse-2-0/": 3,
     "/pumpe-katzentrinkbrunnen-reinigen/": 6,
     "/reichweite-von-gps-trackern/": 5,
     "/seniorenhunde-richtig-versorgen/": 0,
@@ -3832,7 +3870,7 @@
     "/vergleiche/futterautomat-mit-app/": 14,
     "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/": 3,
     "/vergleiche/gps-tracker-ohne-abo/": 6,
-    "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/": 6,
+    "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/": 8,
     "/vergleiche/kleine-gps-tracker-fuer-katzen/": 3,
     "/warum-brauchen-gps-tracker-ein-abo/": 4,
     "/warum-hunde-feste-fuetterungszeiten-brauchen/": 2,

@@ -1,8 +1,8 @@
 # Content Discovery Linking
 
 - Modus: check
-- Aktive Produkte: 101
-- Hersteller: 32
+- Aktive Produkte: 102
+- Hersteller: 33
 - Geplante Änderungen: 0
 - Verwaiste Produkte nach Sollzustand: 0
 - Verwaiste Hersteller nach Sollzustand: 0

@@ -1,0 +1,386 @@
+{
+  "appTests": {
+    "pass": 734,
+    "fail": 0,
+    "command": "npm --workspace apps/pfotentechnik test"
+  },
+  "sharedCoreTests": {
+    "pass": 10,
+    "fail": 1,
+    "command": "npm --workspace packages/affiliate-core test",
+    "failure": "Pre-existing SyntaxError ERR_INVALID_TYPESCRIPT_SYNTAX in packages/affiliate-core/src/linking/linkEngine.test.ts:126; malformed regex; file unchanged from HEAD."
+  },
+  "productionPreflight": {
+    "schemaVersion": 2,
+    "status": "ok",
+    "mode": "production",
+    "startedAt": "2026-09-07T11:31:41.519Z",
+    "finishedAt": "2026-09-07T11:33:20.458Z",
+    "durationMs": 98939,
+    "phases": [
+      {
+        "name": "Content-Discovery-Link-Vertrag",
+        "command": "npm run seo:discovery:check",
+        "critical": true,
+        "status": 0,
+        "durationMs": 662,
+        "ok": true
+      },
+      {
+        "name": "Repository- und Umgebungsprüfung",
+        "command": "npm run audit:repository:strict",
+        "critical": true,
+        "status": 0,
+        "durationMs": 642,
+        "ok": true
+      },
+      {
+        "name": "Content-Graph und Datenschema",
+        "command": "npm run audit:content-graph",
+        "critical": true,
+        "status": 0,
+        "durationMs": 1467,
+        "ok": true
+      },
+      {
+        "name": "Produktdaten-Normalisierungsvertrag",
+        "command": "npm run product:data:normalize:check",
+        "critical": true,
+        "status": 0,
+        "durationMs": 389,
+        "ok": true
+      },
+      {
+        "name": "Produktdaten-Audit",
+        "command": "npm run audit:products:strict",
+        "critical": true,
+        "status": 0,
+        "durationMs": 369,
+        "ok": true
+      },
+      {
+        "name": "Vergleichsdaten-Audit",
+        "command": "npm run comparison:data:audit:strict",
+        "critical": true,
+        "status": 0,
+        "durationMs": 379,
+        "ok": true
+      },
+      {
+        "name": "Vergleichsintegrität",
+        "command": "npm run comparison:audit:strict",
+        "critical": true,
+        "status": 0,
+        "durationMs": 360,
+        "ok": true
+      },
+      {
+        "name": "Interner Source-Link-Audit",
+        "command": "npm run audit:internal-links:strict",
+        "critical": true,
+        "status": 0,
+        "durationMs": 2063,
+        "ok": true
+      },
+      {
+        "name": "Anchor-Governance-Audit",
+        "command": "npm run audit:anchor-governance:strict",
+        "critical": true,
+        "status": 0,
+        "durationMs": 291,
+        "ok": true
+      },
+      {
+        "name": "Frontmatter-Datumsvertrag",
+        "command": "npm run audit:frontmatter-dates:strict",
+        "critical": true,
+        "status": 0,
+        "durationMs": 264,
+        "ok": true
+      },
+      {
+        "name": "Technischer SEO-Source-Audit",
+        "command": "npm run audit:technical-seo:source",
+        "critical": true,
+        "status": 0,
+        "durationMs": 254,
+        "ok": true
+      },
+      {
+        "name": "SEO-Wachstumscluster",
+        "command": "npm run audit:seo-growth-clusters",
+        "critical": true,
+        "status": 0,
+        "durationMs": 276,
+        "ok": true
+      },
+      {
+        "name": "Comparison-Snippet- und Schema-Audit",
+        "command": "npm run audit:comparison-schema",
+        "critical": true,
+        "status": 0,
+        "durationMs": 284,
+        "ok": true
+      },
+      {
+        "name": "Produktionsnaher Astro-Build",
+        "command": "npm run build",
+        "critical": true,
+        "status": 0,
+        "durationMs": 82807,
+        "ok": true
+      },
+      {
+        "name": "Search-Recovery-Vertrag",
+        "command": "npm run seo:recovery:strict",
+        "critical": true,
+        "status": 0,
+        "durationMs": 530,
+        "ok": true
+      },
+      {
+        "name": "Kanonische URL-Konsistenz",
+        "command": "npm run audit:url-consistency:strict",
+        "critical": true,
+        "status": 0,
+        "durationMs": 402,
+        "ok": true
+      },
+      {
+        "name": "Gerenderte interne Linkziele",
+        "command": "npm run audit:internal-link-targets:strict",
+        "critical": true,
+        "status": 0,
+        "durationMs": 433,
+        "ok": true
+      },
+      {
+        "name": "Gerenderter SEO-Build-Output",
+        "command": "npm run audit:release-build-output:strict",
+        "critical": true,
+        "status": 0,
+        "durationMs": 478,
+        "ok": true
+      },
+      {
+        "name": "Technischer SEO-Build-Audit",
+        "command": "npm run audit:technical-seo",
+        "critical": true,
+        "status": 0,
+        "durationMs": 344,
+        "ok": true
+      },
+      {
+        "name": "Content-Quality und Kannibalisierung",
+        "command": "npm run audit:content-quality:strict",
+        "critical": true,
+        "status": 0,
+        "durationMs": 3705,
+        "ok": true
+      },
+      {
+        "name": "Performance-Budget",
+        "command": "npm run audit:performance:strict",
+        "critical": true,
+        "status": 0,
+        "durationMs": 1876,
+        "ok": true
+      },
+      {
+        "name": "Zentrale Quality Operations",
+        "command": "npm run quality-ops:check",
+        "critical": true,
+        "status": 0,
+        "durationMs": 383,
+        "ok": true
+      },
+      {
+        "name": "Release-Manifest",
+        "command": "internal",
+        "critical": true,
+        "status": 0,
+        "durationMs": 0,
+        "ok": true
+      }
+    ],
+    "errors": [],
+    "warnings": [],
+    "skipped": [],
+    "build": {
+      "requested": true,
+      "fastBuild": false
+    },
+    "sitemap": {
+      "pages": 371,
+      "sitemapDocuments": 1,
+      "sitemapUrls": 258,
+      "errors": 0,
+      "warnings": 0,
+      "counts": {}
+    },
+    "contentQuality": {
+      "jsonPath": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/reports/content-quality/cannibalization-report.json",
+      "markdownPath": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/reports/content-quality/cannibalization-report.md",
+      "summary": {
+        "indexablePages": 258,
+        "totalHtmlPages": 371,
+        "pageTypes": {
+          "category-hub": 5,
+          "comparison": 28,
+          "comparison-index": 1,
+          "decision-guide": 7,
+          "editorial-page": 18,
+          "guide": 29,
+          "homepage": 1,
+          "knowledge-hub": 1,
+          "legal": 4,
+          "manufacturer": 33,
+          "manufacturer-index": 1,
+          "medical-guide": 9,
+          "problem-solving-guide": 19,
+          "product": 102
+        },
+        "clusters": {
+          "automatische-katzentoiletten": 13,
+          "futterautomaten": 81,
+          "gps-tracker": 32,
+          "haustierkameras": 10,
+          "hersteller": 26,
+          "hundeernaehrung": 3,
+          "hundegesundheit": 4,
+          "katzen-und-hundespezifische-hardware": 1,
+          "katzenernaehrung": 1,
+          "katzengesundheit": 1,
+          "katzenhaltung": 1,
+          "katzenklappen": 15,
+          "katzenverhalten": 1,
+          "smarte-haustiertechnik": 14,
+          "tierbeschaeftigung": 1,
+          "tierernaehrung": 1,
+          "trinkbrunnen": 53
+        },
+        "intents": {
+          "brand-navigation": 33,
+          "category-discovery": 9,
+          "commercial-investigation": 37,
+          "comparison": 28,
+          "informational": 25,
+          "medical-information": 10,
+          "problem-solving": 14,
+          "product-research": 102
+        },
+        "decisions": {
+          "CONSOLIDATE": 2,
+          "KEEP": 258,
+          "NOINDEX": 113
+        },
+        "errors": 0,
+        "warnings": 0,
+        "exactDuplicates": 0,
+        "nearDuplicates": 0,
+        "intentConflicts": 0,
+        "topicOwnerConflicts": 0,
+        "weakPages": 0,
+        "manualReview": 0,
+        "consolidatedPages": 2,
+        "differentiatedPages": 0,
+        "resolvedConflicts": 2
+      }
+    },
+    "manifest": {
+      "urlCount": 292,
+      "warnings": [],
+      "errors": [],
+      "jsonPath": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/.seo-release/latest.json",
+      "markdownPath": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/.seo-release/latest.md"
+    },
+    "summary": {
+      "phases": 23,
+      "passed": 23,
+      "failed": 0,
+      "criticalFailed": 0,
+      "warnings": 0,
+      "skipped": 0
+    }
+  },
+  "indexability": {
+    "generatedHtml": 371,
+    "indexable": 258,
+    "noindexIntentional": 113,
+    "errors": 0,
+    "sitemapUrls": 258,
+    "redirects": 34,
+    "roleCounts": {
+      "category-hub": 6,
+      "comparison": 28,
+      "comparison-index": 1,
+      "decision-guide": 7,
+      "editorial-page": 15,
+      "guide": 29,
+      "homepage": 1,
+      "knowledge-hub": 1,
+      "legal": 4,
+      "manufacturer": 33,
+      "manufacturer-index": 1,
+      "medical-guide": 9,
+      "problem-solving-guide": 19,
+      "product": 102,
+      "secondary-hub": 2
+    },
+    "duplicateCanonicalTargets": []
+  },
+  "rendering": {
+    "liveSitemapUrls": 258,
+    "localSitemapUrls": 258,
+    "liveOnly": [],
+    "localOnly": [],
+    "nonCanonicalHosts": [],
+    "futureLastmod": [],
+    "lastmodDistribution": {
+      "absent": 12,
+      "2026-08-16": 25,
+      "2026-07-25": 9,
+      "2026-07-20": 13,
+      "2026-07-28": 8,
+      "2026-07-24": 3,
+      "2026-08-24": 4,
+      "2026-07-19": 20,
+      "2026-07-23": 16,
+      "2026-09-03": 1,
+      "2026-08-15": 11,
+      "2026-08-25": 4,
+      "2026-07-26": 6,
+      "2026-08-07": 4,
+      "2026-09-07": 3,
+      "2026-08-21": 7,
+      "2026-08-19": 11,
+      "2026-08-04": 5,
+      "2026-08-06": 9,
+      "2026-07-27": 1,
+      "2026-07-16": 14,
+      "2026-07-29": 2,
+      "2026-07-15": 1,
+      "2026-07-13": 6,
+      "2026-07-12": 13,
+      "2026-08-10": 10,
+      "2026-08-17": 3,
+      "2026-07-17": 3,
+      "2026-08-26": 6,
+      "2026-08-05": 1,
+      "2026-08-03": 1,
+      "2026-07-31": 2,
+      "2026-07-30": 20,
+      "2026-07-14": 3,
+      "2026-07-09": 1
+    },
+    "missingMain": [],
+    "shortMainUnder100Words": [],
+    "exactMainDuplicates": [],
+    "wwwInRenderedCanonicalPages": 0,
+    "hreflangCount": 0,
+    "topLevel404Exists": false
+  },
+  "screenshots": 0,
+  "deployment": "NOT DEPLOYED",
+  "edgeRegression": "PENDING after authorized deployment; source/build redirects checked, public origin still old behavior."
+}

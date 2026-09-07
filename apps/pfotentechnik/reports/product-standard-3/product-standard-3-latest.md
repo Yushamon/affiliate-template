@@ -1,12 +1,12 @@
 # Product Standard 3 Audit
 
-- Produkte: 101
+- Produkte: 102
 - Blockiert: 0
 - Verbesserungsbedarf: 18
 - Gut: 3
-- Stark: 80
+- Stark: 81
 - Fehler: 0
-- Warnungen: 71
+- Warnungen: 72
 
 ## Übersicht
 
@@ -34,6 +34,7 @@
 | invoxia-biotracker-2026 | 80 | good | 2 |
 | petsafe-streamside-trinkbrunnen | 80 | good | 2 |
 | devoko-90l-automatisches-katzenklo | 90 | strong | 1 |
+| flappie | 90 | strong | 1 |
 | neakasa-m1-lite | 90 | strong | 1 |
 | aqara-smart-pet-feeder-c1 | 100 | strong | 0 |
 | cat-mate-335-pet-fountain | 100 | strong | 0 |

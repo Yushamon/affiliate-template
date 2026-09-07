@@ -1,13 +1,13 @@
 # Comparison Data Platform Audit
 
-Erstellt: 2026-09-03T08:12:20.672Z
+Erstellt: 2026-09-07T11:31:45.417Z
 
 **Status: BESTANDEN**
 
 - Vergleiche: 28 (Mindestbestand 26)
 - Quellabdeckung: 92.7 %
 - öffentlich gerenderte Abdeckung: 100 %
-- alte values-Felder: 914
+- alte values-Felder: 922
 - bewusste Overrides: 218
 
 ## Vergleichsseiten
@@ -40,7 +40,7 @@ Erstellt: 2026-09-03T08:12:20.672Z
 | `futterautomat-mit-app` | 5 | 3 | 5 | OK |
 | `gps-tracker-mit-langer-akkulaufzeit` | 7 | 6 | 0 | OK |
 | `gps-tracker-ohne-abo` | 2 | 6 | 0 | OK |
-| `katzenklappen-mit-app-und-beuteerkennung` | 4 | 8 | 0 | OK |
+| `katzenklappen-mit-app-und-beuteerkennung` | 5 | 8 | 0 | OK |
 | `kleine-gps-tracker-fuer-katzen` | 3 | 6 | 1 | OK |
 
 ## Blocker

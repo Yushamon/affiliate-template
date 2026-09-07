@@ -1,12 +1,12 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-09-03T08:12:23.873Z
+Erstellt: 2026-09-07T11:31:47.835Z
 
 ## Ergebnis
 
-- Dokumente: 244
-- Linkdefinitionen: 516
-- Simulierte automatische Links: 566
+- Dokumente: 246
+- Linkdefinitionen: 518
+- Simulierte automatische Links: 572
 - Fehler: 0
 - Warnungen: 7
 - Strict-kritisch: 0
@@ -171,6 +171,7 @@ Erstellt: 2026-09-03T08:12:23.873Z
 - /smarte-haustiertechnik/ → /trinkbrunnen-fuer-katzen-sinnvoll/: „Trinkbrunnen für Katzen“
 - /smarte-haustiertechnik/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filterwechsel“
 - /smarte-haustiertechnik/ → /katzenwasser-taeglich-wechseln/: „Wasserwechsel“
+- /smarte-haustiertechnik/ → /produkt/flappie/: „Flappie“
 - /so-bewerten-wir/ → /trinkbrunnen/: „Trinkbrunnen“
 - /trinkbrunnen-fuer-katzen-sinnvoll/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
 - /trinkbrunnen-fuer-katzen-sinnvoll/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filter wechseln“
@@ -300,6 +301,8 @@ Erstellt: 2026-09-03T08:12:23.873Z
 - /produkt/feelneedy-fn-w18-8l-katzenbrunnen/ → /trinkbrunnen-hund/: „Hundetrinkbrunnen“
 - /produkt/feelneedy-fn-w18-8l-katzenbrunnen/ → /pumpe-katzentrinkbrunnen-reinigen/: „Pumpenreinigung“
 - /produkt/feelneedy-fn-w18-8l-katzenbrunnen/ → /katzenwasser-taeglich-wechseln/: „Wasserwechsel“
+- /produkt/flappie/ → /hersteller/onlycat/: „OnlyCat“
+- /produkt/flappie/ → /hersteller/zeromouse/: „ZeroMOUSE“
 - /produkt/furbo-360-katzenkamera/ → /produkt/furbo-mini-360/: „Furbo Mini 360“
 - /produkt/furbo-360-katzenkamera/ → /haustierkameras/: „Haustierkamera“
 - /produkt/furbo-360-katzenkamera/ → /hersteller/furbo/: „Furbo“
@@ -579,6 +582,9 @@ Erstellt: 2026-09-03T08:12:23.873Z
 - /hersteller/cat-mate/ → /katzenklappen/: „Mikrochip-Katzenklappe“
 - /hersteller/catit/ → /trinkbrunnen/: „Trinkbrunnen“
 - /hersteller/enabot/ → /haustierkameras/: „Haustierkamera“
+- /hersteller/flappie/ → /hersteller/onlycat/: „OnlyCat“
+- /hersteller/flappie/ → /katzenklappen/: „Katzenklappe“
+- /hersteller/flappie/ → /hersteller/zeromouse/: „ZeroMOUSE“
 - /hersteller/furbo/ → /haustierkameras/: „Haustierkamera“
 - /hersteller/honeyguardian/ → /smarte-futterautomaten/: „Futterautomaten“
 - /hersteller/imipaw/ → /smarte-futterautomaten/: „Futterautomaten“

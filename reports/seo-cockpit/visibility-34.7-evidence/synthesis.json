@@ -1,0 +1,289 @@
+{
+  "monitoring": [
+    "/vergleiche/beste-futterautomaten-ohne-wlan/",
+    "/produkt/petkit-yumshare-solo-2/",
+    "/produkt/petkit-eversweet-ultra/",
+    "/produkt/petlibro-polar-wet-food-feeder/",
+    "/trinkbrunnen-fuer-mehrere-katzen/",
+    "/katzentrinkbrunnen-laut-pumpe/",
+    "/katzentrinkbrunnen-ohne-filter/",
+    "/wie-viele-wasserstellen-katze/",
+    "/kalk-katzentrinkbrunnen-entfernen/",
+    "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+    "/katzenwasser-taeglich-wechseln/",
+    "/filter-im-katzentrinkbrunnen-wechseln/",
+    "/produkt/petlibro-stainless-steel-fountain/",
+    "/futterautomat-richtig-reinigen/",
+    "/vergleiche/beste-trinkbrunnen-fuer-katzen/"
+  ],
+  "matrix": [
+    {
+      "cause": "technischer Fehler",
+      "confidence": 35,
+      "evidenceFor": "Solo-Alias am 23.07. gelöscht, heute 200/Startseite; unbekannte Pfade ebenfalls 200.",
+      "evidenceAgainst": "258 vorhandene Canonicals technisch sauber; nur 12 historische Solo-Impressionen; kein Ausfall- oder Crawlprotokoll.",
+      "possibleImpact": "Lokaler Verlust belegt; sitewide Wirkung unbewiesen.",
+      "action": "Solo-301 vorbereitet; 404-Serving separat beheben/verifizieren."
+    },
+    {
+      "cause": "Host-/Canonical-Problem",
+      "confidence": 30,
+      "evidenceFor": "www und apex gleichzeitig 200; frühe Originalexporte enthalten www.",
+      "evidenceAgainst": "www Canonical/OG zeigen korrekt apex; kein aktueller Hostsplit verfügbar.",
+      "possibleImpact": "Zusätzliche Konsolidierungsarbeit möglich.",
+      "action": "Keine Hostmigration; Edge-Regel und Google-selected canonical prüfen."
+    },
+    {
+      "cause": "Sitemap-/Discovery-Problem",
+      "confidence": 15,
+      "evidenceFor": "URL-Migrationen und fehlender 404-Fallback können Discovery verwirren.",
+      "evidenceAgainst": "Live und Build exakt 258 kanonische URLs, robots Allow, keine zukünftigen lastmod.",
+      "possibleImpact": "Keine aktuelle Sitemap-Sperre belegt.",
+      "action": "Sitemap beibehalten; Alt-URL-Recovery beobachten."
+    },
+    {
+      "cause": "Rendering-Problem",
+      "confidence": 5,
+      "evidenceFor": "Historische JS-Nachbearbeitung ab 23.07.; Edge-SPA-Fallback für unbekannte Pfade.",
+      "evidenceAgainst": "Primärinhalt und Links auf allen 258 kanonischen Seiten im HTML, keine leeren main-Bereiche.",
+      "possibleImpact": "Kein client-only Hauptcontentfehler belegt.",
+      "action": "Keine Template-/JS-Umbauten."
+    },
+    {
+      "cause": "interne Verlinkung",
+      "confidence": 15,
+      "evidenceFor": "Ein echter Orphan /futterautomat-berater/; vier schwache URLs.",
+      "evidenceAgainst": "Rankende Kohorte erreichbar, tiefe Seiten überwiegend <=3; keine Isolation der Trinkbrunnen-Ziele.",
+      "possibleImpact": "Lokaler IA-Befund, keine plausible Gesamterklärung.",
+      "action": "Orphan-Ownership separat prüfen, keine kosmetischen Links."
+    },
+    {
+      "cause": "Kannibalisierung",
+      "confidence": 10,
+      "evidenceFor": "11 Query-Überlappungskandidaten nach Aliasbereinigung.",
+      "evidenceAgainst": "Keine wiederholten schädlichen Wechsel in unabhängigen Zeitfenstern nachgewiesen; 3 Aliasfälle keine Konkurrenz.",
+      "possibleImpact": "Kleine Intent-Reibung möglich, nicht belegt.",
+      "action": "Keine Zusammenlegung, keine Titles ändern."
+    },
+    {
+      "cause": "Sitewide Qualitätsproblem",
+      "confidence": 25,
+      "evidenceFor": "Knappe Google-Ausspielung trotz Contentumfang; redaktionelle Evidenz historisch teilweise unvollständig.",
+      "evidenceAgainst": "Passende Top-10- und Bing-Signale; lokale QA ohne harte Fehler. QA misst nicht Googles Qualitätsurteil.",
+      "possibleImpact": "Mögliche Neubewertung; nicht diagnostiziert.",
+      "action": "Keine pauschale Content-Reaktion; ausgewählte URL-Inspection."
+    },
+    {
+      "cause": "Thin/Duplicate Content",
+      "confidence": 15,
+      "evidenceFor": "Unbekannte URLs liefern identische Homepage; das erzeugt technische Duplikate.",
+      "evidenceAgainst": "258 kanonische main-Inhalte >100 Wörter, keine exakten main-Duplikate; Content-Audit ohne Near-Duplicate-Konflikte.",
+      "possibleImpact": "Serving-Duplikate konkreter als Thin-Content-Hypothese.",
+      "action": "404-Fallback als gesonderten technischen Auftrag behandeln."
+    },
+    {
+      "cause": "algorithmischer Neubewertungstest",
+      "confidence": 50,
+      "evidenceFor": "Abrupter Volumenverlust, einzelne relevante Rankings bleiben; mehrere Seitentypen betroffen.",
+      "evidenceAgainst": "Kein bestätigtes Update, keine Google-interne Klassifikation; technische/strukturelle Alternativen offen.",
+      "possibleImpact": "Kompatible Arbeitshypothese, kein Nachweis eines Google-Tests.",
+      "action": "Stabil halten, 14 Tage getrennte Kohorten beobachten."
+    },
+    {
+      "cause": "junge Domain / Trust",
+      "confidence": 40,
+      "evidenceFor": "Kurze beobachtete Suchhistorie; großer relativer Ausschlag bei kleinem absoluten Volumen.",
+      "evidenceAgainst": "Registrierungsalter und externe Autorität unbekannt; Repositoryalter ist nicht Domainalter.",
+      "possibleImpact": "Plausible, schwach messbare Alternative.",
+      "action": "Nicht als erwiesene Sandbox/Trust-Sperre bezeichnen."
+    },
+    {
+      "cause": "zu große Content-Expansion in kurzer Zeit",
+      "confidence": 35,
+      "evidenceFor": "140 auf 185 Quelldokumente zwischen 13. und 24.07. (+32,1%); 201 am 05.08.",
+      "evidenceAgainst": "Quelldokumente sind keine indexierten URLs; Zuwachs kann angemessen sein, kein Grenzwert belegt.",
+      "possibleImpact": "Expansion plus Migration als Neubewertungsfaktor möglich.",
+      "action": "Keine weitere Expansion als Recovery-Maßnahme."
+    },
+    {
+      "cause": "externe Signalschwäche",
+      "confidence": 25,
+      "evidenceFor": "Geringes Suchvolumen kompatibel mit wenig externer Bekanntheit.",
+      "evidenceAgainst": "Kein Backlink-, Referral- oder Link-GSC-Export; keine Messung vorhanden.",
+      "possibleImpact": "Nicht quantifizierbar.",
+      "action": "Datenlücke schließen, keine spekulative Linkkampagne."
+    },
+    {
+      "cause": "normale Discovery-Volatilität",
+      "confidence": 50,
+      "evidenceFor": "Einzelne Top-10-Signale bei 0–wenigen täglichen Impressionen nach kurzem Peak.",
+      "evidenceAgainst": "Über Wochen >90% weniger Volumen; mehrere Serving-/Migrationsbefunde verhindern Entwarnung.",
+      "possibleImpact": "Kompatibel, aber nicht als alleinige Erklärung bestätigt.",
+      "action": "Beobachten und belegte technische Lücken gezielt isolieren."
+    },
+    {
+      "cause": "URL-Migration / strukturelle Konsolidierung",
+      "confidence": 55,
+      "evidenceFor": "Solo-Löschung 23.07., Nassfutter-Move 24.07., Vergleichsmoves 25.–27.07.; Tagesbruch 25.07.",
+      "evidenceAgainst": "Viele Vergleichsmoves nach Bruch; unveränderte Guides ebenfalls schwach; Deploy/Crawlzeiten unbekannt.",
+      "possibleImpact": "Wahrscheinlicher lokaler Mitfaktor, nur möglicher siteweiter Mitfaktor.",
+      "action": "Eine klare fehlende Alias-301; übrige Migrationen nicht zurückrollen."
+    },
+    {
+      "cause": "Mess-/Exportartefakt",
+      "confidence": 5,
+      "evidenceFor": "Zwei historische Snapshots nachträglich umgeschrieben; Hostnormalisierung vernichtet Dimension.",
+      "evidenceAgainst": "Unveränderte Property-Tagesreihen und aktuelle Originalpayloads bestätigen Einbruch.",
+      "possibleImpact": "Verzerrt URL-/Hostanalyse, erklärt nicht Gesamtvolumenverlust.",
+      "action": "Manipulierte Fassungen ausschließen; Rohdaten mit Host erhalten."
+    }
+  ],
+  "templatePatterns": [
+    {
+      "start": "2026-07-20",
+      "end": "2026-07-26",
+      "byType": {
+        "comparison": {
+          "urls": 20,
+          "impressions": 127,
+          "clicks": 4
+        },
+        "category-hub": {
+          "urls": 3,
+          "impressions": 27,
+          "clicks": 0
+        },
+        "product": {
+          "urls": 13,
+          "impressions": 44,
+          "clicks": 3
+        },
+        "guide": {
+          "urls": 30,
+          "impressions": 94,
+          "clicks": 2
+        },
+        "editorial-page": {
+          "urls": 4,
+          "impressions": 13,
+          "clicks": 0
+        },
+        "manufacturer": {
+          "urls": 5,
+          "impressions": 11,
+          "clicks": 0
+        },
+        "homepage": {
+          "urls": 1,
+          "impressions": 3,
+          "clicks": 0
+        },
+        "legal": {
+          "urls": 4,
+          "impressions": 4,
+          "clicks": 0
+        },
+        "other/unknown": {
+          "urls": 9,
+          "impressions": 9,
+          "clicks": 0
+        },
+        "secondary-hub": {
+          "urls": 1,
+          "impressions": 1,
+          "clicks": 0
+        },
+        "manufacturer-index": {
+          "urls": 1,
+          "impressions": 1,
+          "clicks": 0
+        },
+        "comparison-index": {
+          "urls": 1,
+          "impressions": 1,
+          "clicks": 0
+        },
+        "knowledge-hub": {
+          "urls": 1,
+          "impressions": 1,
+          "clicks": 0
+        }
+      },
+      "source": "d50e45c3be58b07022ecd818eaed3f407110b1ab"
+    },
+    {
+      "start": "2026-07-27",
+      "end": "2026-08-02",
+      "byType": {
+        "comparison": {
+          "urls": 6,
+          "impressions": 12,
+          "clicks": 0
+        },
+        "editorial-page": {
+          "urls": 2,
+          "impressions": 3,
+          "clicks": 0
+        },
+        "legal": {
+          "urls": 2,
+          "impressions": 2,
+          "clicks": 1
+        },
+        "guide": {
+          "urls": 3,
+          "impressions": 3,
+          "clicks": 1
+        },
+        "homepage": {
+          "urls": 1,
+          "impressions": 1,
+          "clicks": 0
+        },
+        "product": {
+          "urls": 4,
+          "impressions": 4,
+          "clicks": 0
+        }
+      },
+      "source": "2df65c84914e903fbe16a04c31263ed0f1179557"
+    },
+    {
+      "start": "2026-08-03",
+      "end": "2026-08-09",
+      "byType": {
+        "editorial-page": {
+          "urls": 1,
+          "impressions": 5,
+          "clicks": 0
+        },
+        "product": {
+          "urls": 3,
+          "impressions": 4,
+          "clicks": 0
+        },
+        "comparison": {
+          "urls": 4,
+          "impressions": 5,
+          "clicks": 0
+        },
+        "other/unknown": {
+          "urls": 1,
+          "impressions": 1,
+          "clicks": 0
+        },
+        "category-hub": {
+          "urls": 1,
+          "impressions": 1,
+          "clicks": 0
+        },
+        "guide": {
+          "urls": 1,
+          "impressions": 1,
+          "clicks": 0
+        }
+      },
+      "source": "d6ac24f4e8c084dbb9acf776536a77ff26b7d916"
+    }
+  ]
+}
