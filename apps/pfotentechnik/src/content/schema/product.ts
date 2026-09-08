@@ -1,3 +1,5 @@
+import { consumablesSchema, consumablePolicySchema, replacementCommerceShape, fountainOperatingShape, validateFoundationEvidence } from "./consumables.mjs";
+import { productAffiliateSchema, productPriceSchema, productPriceStateSchema, productAvailabilitySchema } from "./commerce.mjs";
 import {
   defineCollection,
   type ImageFunction
@@ -51,34 +53,6 @@ const createProductImagesSchema = (image: ImageFunction) => {
   });
 };
 
-const productAffiliateSchema =
-  z.object({
-    provider: z
-      .string()
-      .optional(),
-
-    label: z
-      .string()
-      .default(
-        "Aktuellen Preis prüfen"
-      ),
-
-    url: z.string(),
-
-    rel: z
-      .string()
-      .default(
-        "sponsored nofollow noopener"
-      ),
-
-    target: z
-      .enum([
-        "_blank",
-        "_self"
-      ])
-      .default("_blank")
-  });
-
 const productConversionSchema =
   z.object({
     badge: z
@@ -109,62 +83,6 @@ const productConversionSchema =
   .optional();
 
 
-
-const productPriceSourceSchema =
-  z.object({
-    id: z.string(),
-    label: z.string(),
-    type: z
-      .enum([
-        "merchant",
-        "affiliate",
-        "editorial",
-        "manual",
-        "unknown"
-      ])
-      .default("unknown"),
-    url: z.string().url().optional()
-  });
-
-const productPriceRangeSchema =
-  z.object({
-    min: z.number().nonnegative(),
-    max: z.number().nonnegative(),
-    sampleSize: z.number().int().nonnegative(),
-    generatedAt: z.coerce.date().optional(),
-    source: z.literal("category-engine").default("category-engine")
-  });
-
-const productPriceSchema =
-  z.object({
-    current: z.number().positive().nullable().default(null),
-    currency: z.string().length(3).default("EUR"),
-    status: z
-      .enum([
-        "cheap",
-        "fair",
-        "expensive",
-        "unknown"
-      ])
-      .default("unknown"),
-    range: productPriceRangeSchema.optional(),
-    comparisonText: z.string().optional(),
-    checkedAt: z.coerce.date().optional(),
-    affiliateUrl: z.string().url().optional(),
-    source: productPriceSourceSchema.optional()
-  })
-  .default({
-    current: null,
-    currency: "EUR",
-    status: "unknown"
-  });
-
-const productPriceStateSchema = z.enum([
-  "available",
-  "unknown",
-  "removed",
-  "stale"
-]);
 
 const productSubscriptionPlanSchema = z.object({
   name: z.string().min(1),
@@ -240,14 +158,6 @@ const productSubscriptionSchema = z.object({
     });
   }
 });
-
-const productAvailabilitySchema = z.enum([
-  "available",
-  "temporarily-unavailable",
-  "out-of-stock",
-  "discontinued",
-  "unknown"
-]);
 
 const productRecommendationStatusSchema = z.enum([
   "recommended",
@@ -655,6 +565,7 @@ const productDispensingPrecisionSchema = z.object({
 
 const productRepairabilitySchema = z.object({
   parts: z.array(z.object({
+    ...replacementCommerceShape,
     type: z.enum(["pump", "motor", "door", "frame", "lock", "seal", "liner", "filter", "base", "other"]),
     status: decisionDepthStatusSchema,
     officialPart: z.boolean().optional(),
@@ -746,7 +657,7 @@ const productComparisonDataSchema = z
     version: z.literal(1).optional(),
     general: comparisonRecordSchema.optional(),
     feeder: comparisonRecordSchema.optional(),
-    fountain: comparisonRecordSchema.optional(),
+    fountain: z.object(fountainOperatingShape).catchall(comparisonValueSchema).optional(),
     gps: comparisonRecordSchema.optional(),
     editorial: comparisonRecordSchema.optional(),
     custom: comparisonRecordSchema.optional()
@@ -985,6 +896,9 @@ export const createProductContentSchema = (image: ImageFunction) =>
 
     repairability: productRepairabilitySchema,
 
+    consumables: consumablesSchema.optional(),
+    consumablePolicy: consumablePolicySchema.optional(),
+
     dataPortability: productDataPortabilitySchema,
 
     sensorLimits: productSensorLimitsSchema,
@@ -996,7 +910,7 @@ export const createProductContentSchema = (image: ImageFunction) =>
 
     comparisonFilters:
       productComparisonFiltersSchema
-  });
+  }).superRefine(validateFoundationEvidence);
 
 export const productsCollection =
   defineCollection({

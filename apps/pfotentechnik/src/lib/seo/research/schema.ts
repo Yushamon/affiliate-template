@@ -1,3 +1,4 @@
+import { provenanceTypes } from "../../../content/schema/evidence.mjs";
 export const RESEARCH_TYPES = ["topic", "product", "manufacturer", "content-refresh"] as const;
 export const RESEARCH_STATUSES = ["open", "planned", "implemented", "rejected"] as const;
 export const RESEARCH_EFFORTS = ["small", "medium", "large"] as const;
@@ -10,7 +11,7 @@ export type ResearchEffort = (typeof RESEARCH_EFFORTS)[number];
 export type ResearchImpact = (typeof RESEARCH_IMPACTS)[number];
 export type ResearchLifecycleState = (typeof RESEARCH_LIFECYCLE_STATES)[number];
 
-export interface ResearchEvidence { source: string; url?: string; note: string; accessedAt?: string; }
+export interface ResearchEvidence { source: string; url?: string; note: string; accessedAt?: string; sourceType?: string; fields?: string[]; }
 export interface ResearchAction { type: "create-page"|"update-page"|"create-product"|"update-product"|"update-manufacturer"|"update-comparison"|"add-internal-links"|"manual-review"; target?: string; reason: string; }
 export interface ResearchOpportunity { seo:number; ux:number; business:number; freshness:number; effort:ResearchEffort; priority:number; reason:string; }
 export interface ResearchSerpGap { score:number; query?:string; analyzedResults:number; missingContent:string[]; missingVisuals:string[]; missingCalculators:string[]; missingDecisionTools:string[]; competitorPatterns:string[]; informationGain:string; }
@@ -97,7 +98,7 @@ export const normalizeResearchStore=(input:unknown):ResearchStore=>{
    repositoryMatch:record(raw.repositoryMatch)?{exists:raw.repositoryMatch.exists===true,route:optionalText(raw.repositoryMatch.route),file:optionalText(raw.repositoryMatch.file),similarRoutes:strings(raw.repositoryMatch.similarRoutes)}:undefined,
    opportunity:opportunity(raw.opportunity,`items[${index}].opportunity`),serpGap:serpGap(raw.serpGap,`items[${index}].serpGap`),lifecycle:lifecycle(raw.lifecycle,`items[${index}].lifecycle`),refreshPlan:refreshPlan(raw.refreshPlan,`items[${index}].refreshPlan`),impact:impact(raw.impact,`items[${index}].impact`),actionBundle:bundle(raw.actionBundle,`items[${index}].actionBundle`),implementationBrief:normalizeImplementationBrief(raw.implementationBrief,`items[${index}].implementationBrief`),
    actions:(Array.isArray(raw.actions)?raw.actions:[]).map((a,i)=>{if(!record(a))throw new Error(`items[${index}].actions[${i}] muss ein Objekt sein.`);return{type:text(a.type,`items[${index}].actions[${i}].type`) as ResearchAction["type"],target:optionalText(a.target),reason:text(a.reason,`items[${index}].actions[${i}].reason`)};}),
-   evidence:evidence.map((e,i)=>{if(!record(e))throw new Error(`items[${index}].evidence[${i}] muss ein Objekt sein.`);return{source:text(e.source,`items[${index}].evidence[${i}].source`),url:optionalText(e.url),note:text(e.note,`items[${index}].evidence[${i}].note`),accessedAt:optionalText(e.accessedAt)};}),
+   evidence:evidence.map((e,i)=>{if(!record(e))throw new Error(`items[${index}].evidence[${i}] muss ein Objekt sein.`);return{source:text(e.source,`items[${index}].evidence[${i}].source`),url:optionalText(e.url),note:text(e.note,`items[${index}].evidence[${i}].note`),accessedAt:optionalText(e.accessedAt), ...(e.sourceType != null ? {sourceType:provenanceTypes.includes(e.sourceType) ? e.sourceType : (()=>{throw new Error("Invalid evidence sourceType");})()} : {}), ...(e.fields != null ? {fields:strings(e.fields)} : {})};}),
    discoveredAt:optionalText(raw.discoveredAt)??now,lastConfirmedAt:optionalText(raw.lastConfirmedAt)??now
   };
  });

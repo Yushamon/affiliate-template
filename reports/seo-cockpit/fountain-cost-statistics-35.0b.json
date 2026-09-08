@@ -1,0 +1,1659 @@
+{
+  "batch": "35.0B",
+  "asOf": "2026-09-08T11:05:58.643712+00:00",
+  "products": 24,
+  "filterPresent": 23,
+  "filterRequired": 6,
+  "filterlessConfirmed": 1,
+  "proprietaryRequired": 1,
+  "genericConfirmed": 0,
+  "calculablePrimaryFilterCosts": 11,
+  "insufficientData": 12,
+  "notApplicable": 1,
+  "pumpsAvailable": 8,
+  "pumpsUnavailableConfirmed": 0,
+  "pumpsUnknown": 16,
+  "inventoryWideCostStatistics": null,
+  "subset": {
+    "n": 11,
+    "min": 19.85194444444444,
+    "max": 158.10583333333332,
+    "medianBounds": {
+      "low": 52.11678571428571,
+      "high": 52.11678571428571
+    },
+    "fixedInterval": 11,
+    "intervalBased": 0
+  },
+  "method": "Only calculated primary-filter observations, not whole stock or complete mandatory recurring cost. Independent medians of low/high endpoints; no midpoint substitution. Shared accessory families are correlated. No quartiles or representative inventory claims at current incomplete coverage.",
+  "lowestProducts": [
+    "catit-pixi-smart-trinkbrunnen"
+  ],
+  "highestProducts": [
+    "petlibro-glacier-ultrafiltration"
+  ],
+  "outliers": [
+    {
+      "kind": "lowestAnnualCost",
+      "products": [
+        "catit-pixi-smart-trinkbrunnen"
+      ],
+      "result": "CONFIRMED",
+      "review": "Catit 43722: Händlerseite exakt Variante 2235929.1, sechs Ersatzfilter, Einzelkauf 9,79 EUR. Kein Brunnenbundle, kein Abo 8,32 EUR. Hersteller bestätigt PIXI-Smart-Kompatibilität und 30 Tage."
+    },
+    {
+      "kind": "highestAnnualCost",
+      "products": [
+        "petlibro-glacier-ultrafiltration"
+      ],
+      "result": "CONFIRMED",
+      "review": "Glacier: Variante 45005300695282, EIN Ultrafilter zu 25,99 EUR. Hersteller-FAQ zwei Monate = 60 Tage. Nur Hauptfilter; Vorfilter bleibt unberechnet."
+    },
+    {
+      "kind": "shortestInterval",
+      "products": [
+        "petlibro-dockstream-rfid-smart",
+        "petlibro-stainless-steel-fountain",
+        "petlibro-dockstream-2-smart",
+        "petlibro-dockstream-2-smart-cordless",
+        "petlibro-capsule-dog-fountain",
+        "petlibro-dockstream-cordless",
+        "petsafe-streamside-trinkbrunnen"
+      ],
+      "result": "CONFIRMED",
+      "review": "14 Tage = zwei Wochen; bei Streamside unteres Ende 14–28. Modell-/kompatible EU-Zubehörquellen erneut geprüft. Verschmutzungsbedingte Capsule-Dog-Ausnahme drei Tage separat, keine universelle Rate."
+    },
+    {
+      "kind": "longestInterval",
+      "products": [
+        "petlibro-glacier-ultrafiltration"
+      ],
+      "result": "CONFIRMED",
+      "review": "Glacier-Hauptfilter 60 Tage; nicht mit 14/15-Tage-Vorfilter verwechselt."
+    },
+    {
+      "kind": "largestRepresentativePack",
+      "products": [
+        "oneisall-7l-dog-water-fountain"
+      ],
+      "result": "CONFIRMED",
+      "review": "Oneisall 7 l: SKU PJ17023, Variante 46677157544171: 8 Stück für 16,99 EUR. Keine Kostenberechnung wegen widersprüchlichem Intervall. Größere Sparpacks beobachtet, nicht als Standard ausgewählt."
+    },
+    {
+      "kind": "filterPriceExtremes",
+      "products": [
+        "catit-pixi-smart-trinkbrunnen",
+        "petlibro-glacier-ultrafiltration"
+      ],
+      "result": "CONFIRMED",
+      "review": "Niedrigster/höchster Preis je Filter im berechenbaren Teilbestand: Catit 9,79/6 und Glacier 25,99/1. Packpreise und Stückpreise strikt getrennt."
+    },
+    {
+      "kind": "filterless",
+      "products": [
+        "petkit-eversweet-ultra"
+      ],
+      "result": "CONFIRMED_WITH_REQUIRED_OTHER_CONSUMABLE",
+      "review": "Hersteller nennt OneWay filterlos und Cube C ausdrücklich kein Filter. Dieselbe FAQ verlangt dennoch dessen Einbau; 30-Tage-Wechsel empfohlen. Keine Nullkostenannahme; EU-Cube-C aktuell ausverkauft."
+    },
+    {
+      "kind": "generic",
+      "products": [],
+      "result": "NO_CONFIRMED_CASES",
+      "review": "Kein generischer Ersatz ausdrücklich freigegeben. Nicht als Beweis interpretiert, dass generischer Betrieb unmöglich ist."
+    },
+    {
+      "kind": "pumpNotAvailable",
+      "products": [],
+      "result": "NO_CONFIRMED_CASES",
+      "review": "Keine dauerhaft ausdrücklich nicht erhältliche Pumpe belegt. Dockstream PLWF115 ausverkauft bleibt UNKNOWN für aktuelle Beschaffbarkeit; fehlende Suchetreffer ebenfalls UNKNOWN."
+    }
+  ],
+  "publication": "internal-only",
+  "rows": [
+    {
+      "slug": "cat-mate-shell-fountain",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "Cat Mate 386 Dreistufenfilter",
+        "status": "insufficientData",
+        "reasons": [
+          "currentAvailablePrice"
+        ],
+        "unitCost": null,
+        "annualCostLow": null,
+        "annualCostHigh": null,
+        "threeYearConsumableCost": null,
+        "provenance": null
+      },
+      "otherConsumables": [],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "oneisall-7l-dog-water-fountain",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "Oneisall modellspezifischer Filter",
+        "status": "insufficientData",
+        "reasons": [
+          "replacementInterval"
+        ],
+        "unitCost": null,
+        "annualCostLow": null,
+        "annualCostHigh": null,
+        "threeYearConsumableCost": null,
+        "provenance": null
+      },
+      "otherConsumables": [
+        {
+          "id": "sponge-1",
+          "type": "sponge",
+          "name": "Oneisall 7L Pumpenschwamm",
+          "status": "insufficientData",
+          "reasons": [
+            "packSize",
+            "replacementInterval",
+            "selectedOffer"
+          ],
+          "unitCost": null,
+          "annualCostLow": null,
+          "annualCostHigh": null,
+          "threeYearConsumableCost": null,
+          "provenance": null
+        }
+      ],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "petkit-eversweet-max-cordless",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "PETKIT Filtereinheit",
+        "status": "calculated",
+        "reasons": [],
+        "currency": "EUR",
+        "unitCost": 3.9979999999999998,
+        "annualCostLow": 52.11678571428571,
+        "annualCostHigh": 52.11678571428571,
+        "threeYearConsumableCost": {
+          "low": 156.35035714285715,
+          "high": 156.35035714285715
+        },
+        "mandatory": true,
+        "provenance": {
+          "sourceType": "calculated",
+          "formulaVersion": "consumable-cost-v1",
+          "formula": "unit = packPrice / packSize; annualLow = unit * 365 / maxDays; annualHigh = unit * 365 / minDays; threeYear = annual * 3",
+          "calculatedAt": "2026-09-08T11:05:58.643Z",
+          "productSlug": "petkit-eversweet-max-cordless",
+          "consumableId": "primary-filter-0",
+          "offerId": "primary-filter-0-eu-standard",
+          "priceField": "consumables.0.offers.0.price",
+          "priceTimestamp": "2026-09-08T10:00:41.929Z",
+          "inputs": {
+            "packPrice": 19.99,
+            "currency": "EUR",
+            "packSize": 5,
+            "minDays": 28,
+            "maxDays": 28
+          },
+          "source": {
+            "id": "www.petkit-eu.com",
+            "label": "www.petkit-eu.com · Einzelkauf",
+            "type": "merchant",
+            "url": "https://www.petkit-eu.com/de/products/petkit-filter-unit-rect?variant=46302723244267"
+          },
+          "fieldPaths": [
+            "consumables.0.packSize",
+            "consumables.0.replacementInterval",
+            "consumables.0.compatibility",
+            "consumables.0.required",
+            "consumables.0.dependency"
+          ],
+          "evidence": [
+            {
+              "source": "www.petkit.com",
+              "url": "https://www.petkit.com/products/petkit-eversweet-max-cordless",
+              "accessedAt": "2026-09-08T09:55:48.204340+00:00",
+              "sourceType": "manufacturer",
+              "fields": [
+                "slug",
+                "consumablePolicy.filterPresent",
+                "consumables.0.compatibility",
+                "consumables.0.filterType",
+                "consumables.0.replacementInterval",
+                "consumables.0.required",
+                "consumablePolicy.filterlessOperationPossible",
+                "comparisonData.fountain.lowWaterShutdown",
+                "comparisonData.fountain.powerType",
+                "comparisonData.fountain.filterRequired",
+                "comparisonData.fountain.capacityLiters"
+              ],
+              "assertion": "Identität des konkreten Modells geprüft: P4115. Textlicher Lieferumfang/Filterwartung bzw. explizite Filterfunktion des exakten Modells. Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. Hersteller benennt Aufbau/Funktion des Verbrauchsteils. Offizielles modellspezifisches Austauschintervall; Wochen × 7, Monate × 30. Hersteller bestätigt Erforderlichkeit des eingesetzten Verbrauchsteils. Modell-FAQ beantwortet die Notwendigkeit des Filters auch bei reinem Wasser ausdrücklich mit Ja. Modell-FAQ: automatische Abschaltung bei zu wenig Wasser. Modell-FAQ unterscheidet Akkubetrieb von dauerhaft notwendiger Stromversorgung."
+            },
+            {
+              "source": "www.petkit-eu.com",
+              "url": "https://www.petkit-eu.com/de/products/petkit-filter-unit-rect",
+              "accessedAt": "2026-09-08T10:00:41.929795+00:00",
+              "sourceType": "officialStore",
+              "fields": [
+                "consumables.0.packSize",
+                "consumables.0.compatibility"
+              ],
+              "assertion": "Gewählte Einzelkauf-Variante: 5 Stück; 19.99 EUR; Variante 46302723244267. RECT 5.0: Anwendungsbereich ausdrücklich EVERSWEET MAX CORDLESS."
+            }
+          ],
+          "assumptions": [
+            "365 days/year",
+            "constant selected price and interval for projection",
+            "amortized use; no pack rounding, shipping, electricity or failure-dependent replacements"
+          ]
+        }
+      },
+      "otherConsumables": [],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "petkit-eversweet-ultra",
+      "annualFilterCost": {
+        "status": "notApplicable",
+        "annualCostLow": null,
+        "annualCostHigh": null,
+        "reasons": [
+          "noConventionalFilter; otherConsumablesNotZero"
+        ]
+      },
+      "otherConsumables": [
+        {
+          "id": "waterTreatment-0",
+          "type": "waterTreatment",
+          "name": "Fountain Cube C",
+          "status": "insufficientData",
+          "reasons": [
+            "currentAvailablePrice"
+          ],
+          "unitCost": null,
+          "annualCostLow": null,
+          "annualCostHigh": null,
+          "threeYearConsumableCost": null,
+          "provenance": null
+        }
+      ],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "petlibro-dockstream-rfid-smart",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "Dockstream RFID Filter PLWF305",
+        "status": "calculated",
+        "reasons": [],
+        "currency": "EUR",
+        "unitCost": 3.9975,
+        "annualCostLow": 104.22053571428572,
+        "annualCostHigh": 104.22053571428572,
+        "threeYearConsumableCost": {
+          "low": 312.6616071428572,
+          "high": 312.6616071428572
+        },
+        "mandatory": null,
+        "provenance": {
+          "sourceType": "calculated",
+          "formulaVersion": "consumable-cost-v1",
+          "formula": "unit = packPrice / packSize; annualLow = unit * 365 / maxDays; annualHigh = unit * 365 / minDays; threeYear = annual * 3",
+          "calculatedAt": "2026-09-08T11:05:58.643Z",
+          "productSlug": "petlibro-dockstream-rfid-smart",
+          "consumableId": "primary-filter-0",
+          "offerId": "primary-filter-0-eu-standard",
+          "priceField": "consumables.0.offers.0.price",
+          "priceTimestamp": "2026-09-08T11:05:02.613Z",
+          "inputs": {
+            "packPrice": 15.99,
+            "currency": "EUR",
+            "packSize": 4,
+            "minDays": 14,
+            "maxDays": 14
+          },
+          "source": {
+            "id": "de.petlibro.com",
+            "label": "de.petlibro.com · Einzelkauf",
+            "type": "merchant",
+            "url": "https://de.petlibro.com/products/dockstream-rfid-fountain-replacement-filter?variant=51661786612078"
+          },
+          "fieldPaths": [
+            "consumables.0.packSize",
+            "consumables.0.replacementInterval",
+            "consumables.0.compatibility",
+            "consumables.0.required",
+            "consumables.0.dependency"
+          ],
+          "evidence": [
+            {
+              "source": "de.petlibro.com",
+              "url": "https://de.petlibro.com/pages/how-often-do-i-need-to-replace-the-filter-wf305-plwf305",
+              "accessedAt": "2026-09-08T10:00:31.297404+00:00",
+              "sourceType": "manufacturer",
+              "fields": [
+                "consumables.0.compatibility",
+                "consumables.0.filterType",
+                "consumables.0.replacementInterval",
+                "consumables.1.compatibility",
+                "consumables.1.filterType",
+                "consumables.1.replacementInterval"
+              ],
+              "assertion": "Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. Hersteller benennt Aufbau/Funktion des Verbrauchsteils. Offizielles modellspezifisches Austauschintervall; Wochen × 7, Monate × 30. Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. Hersteller benennt Aufbau/Funktion des Verbrauchsteils. Offizielles modellspezifisches Austauschintervall; Wochen × 7, Monate × 30."
+            },
+            {
+              "source": "de.petlibro.com",
+              "url": "https://de.petlibro.com/products/dockstream-rfid-fountain-replacement-filter",
+              "accessedAt": "2026-09-08T11:05:02.613768+00:00",
+              "sourceType": "officialStore",
+              "fields": [
+                "consumables.0.packSize"
+              ],
+              "assertion": "Gewählte Einzelkauf-Variante: 4 Stück; 15.99 EUR; Variante 51661786612078."
+            }
+          ],
+          "assumptions": [
+            "365 days/year",
+            "constant selected price and interval for projection",
+            "amortized use; no pack rounding, shipping, electricity or failure-dependent replacements"
+          ]
+        }
+      },
+      "otherConsumables": [
+        {
+          "id": "sponge-1",
+          "type": "sponge",
+          "name": "RFID schwarzer Vorfilterschwamm",
+          "status": "insufficientData",
+          "reasons": [
+            "packSize",
+            "selectedOffer"
+          ],
+          "unitCost": null,
+          "annualCostLow": null,
+          "annualCostHigh": null,
+          "threeYearConsumableCost": null,
+          "provenance": null
+        }
+      ],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "petlibro-glacier-ultrafiltration",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "Glacier Ultrafiltrationsfilter PL-FF007",
+        "status": "calculated",
+        "reasons": [],
+        "currency": "EUR",
+        "unitCost": 25.99,
+        "annualCostLow": 158.10583333333332,
+        "annualCostHigh": 158.10583333333332,
+        "threeYearConsumableCost": {
+          "low": 474.3175,
+          "high": 474.3175
+        },
+        "mandatory": true,
+        "provenance": {
+          "sourceType": "calculated",
+          "formulaVersion": "consumable-cost-v1",
+          "formula": "unit = packPrice / packSize; annualLow = unit * 365 / maxDays; annualHigh = unit * 365 / minDays; threeYear = annual * 3",
+          "calculatedAt": "2026-09-08T11:05:58.643Z",
+          "productSlug": "petlibro-glacier-ultrafiltration",
+          "consumableId": "primary-filter-0",
+          "offerId": "primary-filter-0-eu-standard",
+          "priceField": "consumables.0.offers.0.price",
+          "priceTimestamp": "2026-09-08T09:57:08.507Z",
+          "inputs": {
+            "packPrice": 25.99,
+            "currency": "EUR",
+            "packSize": 1,
+            "minDays": 60,
+            "maxDays": 60
+          },
+          "source": {
+            "id": "de.petlibro.com",
+            "label": "de.petlibro.com · Einzelkauf",
+            "type": "merchant",
+            "url": "https://de.petlibro.com/products/glacier-replacement-filter?variant=45005300695282"
+          },
+          "fieldPaths": [
+            "consumables.0.packSize",
+            "consumables.0.replacementInterval",
+            "consumables.0.compatibility",
+            "consumables.0.required",
+            "consumables.0.dependency"
+          ],
+          "evidence": [
+            {
+              "source": "de.petlibro.com",
+              "url": "https://de.petlibro.com/pages/pre-sale-inquries-for-the-glacier-ultrafiltration-water-fountain-wf007-plwf007",
+              "accessedAt": "2026-09-08T10:00:34.111640+00:00",
+              "sourceType": "manufacturer",
+              "fields": [
+                "slug",
+                "consumablePolicy.filterPresent",
+                "consumables.0.compatibility",
+                "consumables.0.filterType",
+                "consumables.0.replacementInterval",
+                "consumables.0.required",
+                "consumables.0.dependency",
+                "consumablePolicy.filterlessOperationPossible",
+                "consumables.1.compatibility",
+                "consumables.1.filterType",
+                "comparisonData.fountain.filterRequired"
+              ],
+              "assertion": "Identität des konkreten Modells geprüft: PLWF007. Textlicher Lieferumfang/Filterwartung bzw. explizite Filterfunktion des exakten Modells. Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. Hersteller benennt Aufbau/Funktion des Verbrauchsteils. Offizielles modellspezifisches Austauschintervall; Wochen × 7, Monate × 30. Hersteller bestätigt Erforderlichkeit des eingesetzten Verbrauchsteils. Betrieb ist an das konkret benannte System-Verbrauchsteil gebunden; keine generische Freigabe abgeleitet. FAQ: funktioniert nur mit installiertem Ultrafiltrationsfilter. Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. Hersteller benennt Aufbau/Funktion des Verbrauchsteils."
+            },
+            {
+              "source": "de.petlibro.com",
+              "url": "https://de.petlibro.com/products/glacier-replacement-filter",
+              "accessedAt": "2026-09-08T09:57:08.507833+00:00",
+              "sourceType": "officialStore",
+              "fields": [
+                "consumables.0.packSize"
+              ],
+              "assertion": "Gewählte Einzelkauf-Variante: 1 Stück; 25.99 EUR; Variante 45005300695282."
+            }
+          ],
+          "assumptions": [
+            "365 days/year",
+            "constant selected price and interval for projection",
+            "amortized use; no pack rounding, shipping, electricity or failure-dependent replacements"
+          ]
+        }
+      },
+      "otherConsumables": [
+        {
+          "id": "prefilter-1",
+          "type": "prefilter",
+          "name": "Glacier Vorfilter",
+          "status": "insufficientData",
+          "reasons": [
+            "packSize",
+            "replacementInterval",
+            "selectedOffer"
+          ],
+          "unitCost": null,
+          "annualCostLow": null,
+          "annualCostHigh": null,
+          "threeYearConsumableCost": null,
+          "provenance": null
+        }
+      ],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "petlibro-stainless-steel-fountain",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "PLWF006 Edelstahlbrunnen-Filter",
+        "status": "insufficientData",
+        "reasons": [
+          "packSize",
+          "selectedOffer"
+        ],
+        "unitCost": null,
+        "annualCostLow": null,
+        "annualCostHigh": null,
+        "threeYearConsumableCost": null,
+        "provenance": null
+      },
+      "otherConsumables": [],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "xiaomi-smart-pet-fountain-2",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "Xiaomi Smart Pet Fountain 2 Filter",
+        "status": "insufficientData",
+        "reasons": [
+          "selectedOffer"
+        ],
+        "unitCost": null,
+        "annualCostLow": null,
+        "annualCostHigh": null,
+        "threeYearConsumableCost": null,
+        "provenance": null
+      },
+      "otherConsumables": [],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "cat-mate-335-pet-fountain",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "Cat Mate 389 Polymer-Aktivkohlefilter",
+        "status": "calculated",
+        "reasons": [],
+        "currency": "EUR",
+        "unitCost": 2.998333333333333,
+        "annualCostLow": 36.479722222222215,
+        "annualCostHigh": 36.479722222222215,
+        "threeYearConsumableCost": {
+          "low": 109.43916666666664,
+          "high": 109.43916666666664
+        },
+        "mandatory": null,
+        "provenance": {
+          "sourceType": "calculated",
+          "formulaVersion": "consumable-cost-v1",
+          "formula": "unit = packPrice / packSize; annualLow = unit * 365 / maxDays; annualHigh = unit * 365 / minDays; threeYear = annual * 3",
+          "calculatedAt": "2026-09-08T11:05:58.643Z",
+          "productSlug": "cat-mate-335-pet-fountain",
+          "consumableId": "primary-filter-0",
+          "offerId": "primary-filter-0-eu-standard",
+          "priceField": "consumables.0.offers.0.price",
+          "priceTimestamp": "2026-09-08T09:58:30.849Z",
+          "inputs": {
+            "packPrice": 17.99,
+            "currency": "EUR",
+            "packSize": 6,
+            "minDays": 30,
+            "maxDays": 30
+          },
+          "source": {
+            "id": "closerpets.de",
+            "label": "closerpets.de · Einzelkauf",
+            "type": "merchant",
+            "url": "https://closerpets.de/products/replacement-filter-cartridges-pet-fountain-6-pack"
+          },
+          "fieldPaths": [
+            "consumables.0.packSize",
+            "consumables.0.replacementInterval",
+            "consumables.0.compatibility",
+            "consumables.0.required",
+            "consumables.0.dependency"
+          ],
+          "evidence": [
+            {
+              "source": "closerpets.de",
+              "url": "https://closerpets.de/products/cat-mate-trinkbrunnen-mit-drei-ebenen-weiss-335",
+              "accessedAt": "2026-09-08T09:58:30.478601+00:00",
+              "sourceType": "manufacturer",
+              "fields": [
+                "slug",
+                "consumablePolicy.filterPresent",
+                "consumables.0.compatibility",
+                "consumables.0.filterType",
+                "consumables.0.replacementInterval",
+                "comparisonData.fountain.capacityLiters"
+              ],
+              "assertion": "Identität des konkreten Modells geprüft: 335E. Textlicher Lieferumfang/Filterwartung bzw. explizite Filterfunktion des exakten Modells. Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. Hersteller benennt Aufbau/Funktion des Verbrauchsteils. Offizielles modellspezifisches Austauschintervall; Wochen × 7, Monate × 30."
+            },
+            {
+              "source": "closerpets.de",
+              "url": "https://closerpets.de/products/replacement-filter-cartridges-pet-fountain-6-pack",
+              "accessedAt": "2026-09-08T09:58:30.849215+00:00",
+              "sourceType": "officialStore",
+              "fields": [
+                "consumables.0.packSize"
+              ],
+              "assertion": "Gewählte Einzelkauf-Variante: 6 Stück; 17.99 EUR; Variante eindeutige Packung."
+            }
+          ],
+          "assumptions": [
+            "365 days/year",
+            "constant selected price and interval for projection",
+            "amortized use; no pack rounding, shipping, electricity or failure-dependent replacements"
+          ]
+        }
+      },
+      "otherConsumables": [],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "feelneedy-fn-w18-8l-katzenbrunnen",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "FN-W18 Filter",
+        "status": "insufficientData",
+        "reasons": [
+          "packSize",
+          "replacementInterval",
+          "selectedOffer"
+        ],
+        "unitCost": null,
+        "annualCostLow": null,
+        "annualCostHigh": null,
+        "threeYearConsumableCost": null,
+        "provenance": null
+      },
+      "otherConsumables": [],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "oneisall-3-2l-cordless-fountain",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "Oneisall modellspezifischer Filter",
+        "status": "insufficientData",
+        "reasons": [
+          "packSize",
+          "replacementInterval",
+          "selectedOffer"
+        ],
+        "unitCost": null,
+        "annualCostLow": null,
+        "annualCostHigh": null,
+        "threeYearConsumableCost": null,
+        "provenance": null
+      },
+      "otherConsumables": [],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "petkit-eversweet-3-pro-uvc",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "PETKIT Filtereinheit",
+        "status": "calculated",
+        "reasons": [],
+        "currency": "EUR",
+        "unitCost": 3.9979999999999998,
+        "annualCostLow": 52.11678571428571,
+        "annualCostHigh": 52.11678571428571,
+        "threeYearConsumableCost": {
+          "low": 156.35035714285715,
+          "high": 156.35035714285715
+        },
+        "mandatory": true,
+        "provenance": {
+          "sourceType": "calculated",
+          "formulaVersion": "consumable-cost-v1",
+          "formula": "unit = packPrice / packSize; annualLow = unit * 365 / maxDays; annualHigh = unit * 365 / minDays; threeYear = annual * 3",
+          "calculatedAt": "2026-09-08T11:05:58.643Z",
+          "productSlug": "petkit-eversweet-3-pro-uvc",
+          "consumableId": "primary-filter-0",
+          "offerId": "primary-filter-0-eu-standard",
+          "priceField": "consumables.0.offers.0.price",
+          "priceTimestamp": "2026-09-08T09:58:56.261Z",
+          "inputs": {
+            "packPrice": 19.99,
+            "currency": "EUR",
+            "packSize": 5,
+            "minDays": 28,
+            "maxDays": 28
+          },
+          "source": {
+            "id": "www.petkit-eu.com",
+            "label": "www.petkit-eu.com · Einzelkauf",
+            "type": "merchant",
+            "url": "https://www.petkit-eu.com/de/products/petkit-filter-unit-3-0-5-pcs?variant=46302719017195"
+          },
+          "fieldPaths": [
+            "consumables.0.packSize",
+            "consumables.0.replacementInterval",
+            "consumables.0.compatibility",
+            "consumables.0.required",
+            "consumables.0.dependency"
+          ],
+          "evidence": [
+            {
+              "source": "www.petkit.com",
+              "url": "https://www.petkit.com/products/eversweet-3-pro-wireless-pump-uvc",
+              "accessedAt": "2026-09-08T09:55:51.804453+00:00",
+              "sourceType": "manufacturer",
+              "fields": [
+                "slug",
+                "consumablePolicy.filterPresent",
+                "consumables.0.compatibility",
+                "consumables.0.filterType",
+                "consumables.0.replacementInterval",
+                "consumables.0.required",
+                "consumablePolicy.filterlessOperationPossible",
+                "comparisonData.fountain.lowWaterShutdown",
+                "comparisonData.fountain.powerType",
+                "comparisonData.fountain.filterRequired",
+                "comparisonData.fountain.capacityLiters"
+              ],
+              "assertion": "Identität des konkreten Modells geprüft: P4108. Textlicher Lieferumfang/Filterwartung bzw. explizite Filterfunktion des exakten Modells. Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. Hersteller benennt Aufbau/Funktion des Verbrauchsteils. Offizielles modellspezifisches Austauschintervall; Wochen × 7, Monate × 30. Hersteller bestätigt Erforderlichkeit des eingesetzten Verbrauchsteils. Modell-FAQ beantwortet die Notwendigkeit des Filters auch bei reinem Wasser ausdrücklich mit Ja. Modell-FAQ: automatische Abschaltung bei zu wenig Wasser. Modell-FAQ unterscheidet Akkubetrieb von dauerhaft notwendiger Stromversorgung."
+            },
+            {
+              "source": "www.petkit-eu.com",
+              "url": "https://www.petkit-eu.com/de/products/petkit-filter-unit-3-0-5-pcs",
+              "accessedAt": "2026-09-08T09:58:56.261622+00:00",
+              "sourceType": "officialStore",
+              "fields": [
+                "consumables.0.packSize",
+                "consumables.0.compatibility"
+              ],
+              "assertion": "Gewählte Einzelkauf-Variante: 5 Stück; 19.99 EUR; Variante 46302719017195. Filter 3.0 listet dieses Modell ausdrücklich im Anwendungsbereich."
+            }
+          ],
+          "assumptions": [
+            "365 days/year",
+            "constant selected price and interval for projection",
+            "amortized use; no pack rounding, shipping, electricity or failure-dependent replacements"
+          ]
+        }
+      },
+      "otherConsumables": [],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "petlibro-dockstream-2-smart",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "Dockstream 2 Filter PL-FF005",
+        "status": "calculated",
+        "reasons": [],
+        "currency": "EUR",
+        "unitCost": 4.9975,
+        "annualCostLow": 130.29196428571427,
+        "annualCostHigh": 130.29196428571427,
+        "threeYearConsumableCost": {
+          "low": 390.87589285714284,
+          "high": 390.87589285714284
+        },
+        "mandatory": null,
+        "provenance": {
+          "sourceType": "calculated",
+          "formulaVersion": "consumable-cost-v1",
+          "formula": "unit = packPrice / packSize; annualLow = unit * 365 / maxDays; annualHigh = unit * 365 / minDays; threeYear = annual * 3",
+          "calculatedAt": "2026-09-08T11:05:58.643Z",
+          "productSlug": "petlibro-dockstream-2-smart",
+          "consumableId": "primary-filter-0",
+          "offerId": "primary-filter-0-eu-standard",
+          "priceField": "consumables.0.offers.0.price",
+          "priceTimestamp": "2026-09-08T09:58:30.288Z",
+          "inputs": {
+            "packPrice": 19.99,
+            "currency": "EUR",
+            "packSize": 4,
+            "minDays": 14,
+            "maxDays": 14
+          },
+          "source": {
+            "id": "de.petlibro.com",
+            "label": "de.petlibro.com · Einzelkauf",
+            "type": "merchant",
+            "url": "https://de.petlibro.com/products/dockstream-2-smart-fountain-replacement-filter?variant=52389590892910"
+          },
+          "fieldPaths": [
+            "consumables.0.packSize",
+            "consumables.0.replacementInterval",
+            "consumables.0.compatibility",
+            "consumables.0.required",
+            "consumables.0.dependency"
+          ],
+          "evidence": [
+            {
+              "source": "de.petlibro.com",
+              "url": "https://de.petlibro.com/products/dockstream-2-smart-fountain",
+              "accessedAt": "2026-09-08T09:55:52.391162+00:00",
+              "sourceType": "manufacturer",
+              "fields": [
+                "slug",
+                "consumablePolicy.filterPresent",
+                "consumables.0.compatibility",
+                "consumables.0.filterType",
+                "consumables.0.replacementInterval",
+                "comparisonData.fountain.capacityLiters"
+              ],
+              "assertion": "Identität des konkreten Modells geprüft: PLWF106. Textlicher Lieferumfang/Filterwartung bzw. explizite Filterfunktion des exakten Modells. Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. Hersteller benennt Aufbau/Funktion des Verbrauchsteils. Offizielles modellspezifisches Austauschintervall; Wochen × 7, Monate × 30."
+            },
+            {
+              "source": "de.petlibro.com",
+              "url": "https://de.petlibro.com/products/dockstream-2-smart-fountain-replacement-filter",
+              "accessedAt": "2026-09-08T09:58:30.288786+00:00",
+              "sourceType": "officialStore",
+              "fields": [
+                "consumables.0.packSize",
+                "consumables.0.compatibility"
+              ],
+              "assertion": "Gewählte Einzelkauf-Variante: 4 Stück; 19.99 EUR; Variante 52389590892910. Aktueller Dockstream-2-Zubehörartikel und gerätespezifisches Filterbundle bestätigen Zuordnung."
+            }
+          ],
+          "assumptions": [
+            "365 days/year",
+            "constant selected price and interval for projection",
+            "amortized use; no pack rounding, shipping, electricity or failure-dependent replacements"
+          ]
+        }
+      },
+      "otherConsumables": [
+        {
+          "id": "sponge-1",
+          "type": "sponge",
+          "name": "Dockstream 2 Vorfilterschwamm",
+          "status": "insufficientData",
+          "reasons": [
+            "packSize",
+            "replacementInterval",
+            "selectedOffer"
+          ],
+          "unitCost": null,
+          "annualCostLow": null,
+          "annualCostHigh": null,
+          "threeYearConsumableCost": null,
+          "provenance": null
+        }
+      ],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "petlibro-dockstream-2-smart-cordless",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "Dockstream 2 Filter PL-FF005",
+        "status": "calculated",
+        "reasons": [],
+        "currency": "EUR",
+        "unitCost": 4.9975,
+        "annualCostLow": 130.29196428571427,
+        "annualCostHigh": 130.29196428571427,
+        "threeYearConsumableCost": {
+          "low": 390.87589285714284,
+          "high": 390.87589285714284
+        },
+        "mandatory": null,
+        "provenance": {
+          "sourceType": "calculated",
+          "formulaVersion": "consumable-cost-v1",
+          "formula": "unit = packPrice / packSize; annualLow = unit * 365 / maxDays; annualHigh = unit * 365 / minDays; threeYear = annual * 3",
+          "calculatedAt": "2026-09-08T11:05:58.643Z",
+          "productSlug": "petlibro-dockstream-2-smart-cordless",
+          "consumableId": "primary-filter-0",
+          "offerId": "primary-filter-0-eu-standard",
+          "priceField": "consumables.0.offers.0.price",
+          "priceTimestamp": "2026-09-08T09:58:30.288Z",
+          "inputs": {
+            "packPrice": 19.99,
+            "currency": "EUR",
+            "packSize": 4,
+            "minDays": 14,
+            "maxDays": 14
+          },
+          "source": {
+            "id": "de.petlibro.com",
+            "label": "de.petlibro.com · Einzelkauf",
+            "type": "merchant",
+            "url": "https://de.petlibro.com/products/dockstream-2-smart-fountain-replacement-filter?variant=52389590892910"
+          },
+          "fieldPaths": [
+            "consumables.0.packSize",
+            "consumables.0.replacementInterval",
+            "consumables.0.compatibility",
+            "consumables.0.required",
+            "consumables.0.dependency"
+          ],
+          "evidence": [
+            {
+              "source": "de.petlibro.com",
+              "url": "https://de.petlibro.com/products/dockstream-2-smart-fountain",
+              "accessedAt": "2026-09-08T09:55:52.391162+00:00",
+              "sourceType": "manufacturer",
+              "fields": [
+                "slug",
+                "consumablePolicy.filterPresent",
+                "consumables.0.compatibility",
+                "consumables.0.filterType",
+                "consumables.0.replacementInterval",
+                "comparisonData.fountain.capacityLiters"
+              ],
+              "assertion": "Identität des konkreten Modells geprüft: PLWF116. Textlicher Lieferumfang/Filterwartung bzw. explizite Filterfunktion des exakten Modells. Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. Hersteller benennt Aufbau/Funktion des Verbrauchsteils. Offizielles modellspezifisches Austauschintervall; Wochen × 7, Monate × 30."
+            },
+            {
+              "source": "de.petlibro.com",
+              "url": "https://de.petlibro.com/products/dockstream-2-smart-fountain-replacement-filter",
+              "accessedAt": "2026-09-08T09:58:30.288786+00:00",
+              "sourceType": "officialStore",
+              "fields": [
+                "consumables.0.packSize",
+                "consumables.0.compatibility"
+              ],
+              "assertion": "Gewählte Einzelkauf-Variante: 4 Stück; 19.99 EUR; Variante 52389590892910. Aktueller Dockstream-2-Zubehörartikel und gerätespezifisches Filterbundle bestätigen Zuordnung."
+            }
+          ],
+          "assumptions": [
+            "365 days/year",
+            "constant selected price and interval for projection",
+            "amortized use; no pack rounding, shipping, electricity or failure-dependent replacements"
+          ]
+        }
+      },
+      "otherConsumables": [
+        {
+          "id": "sponge-1",
+          "type": "sponge",
+          "name": "Dockstream 2 Vorfilterschwamm",
+          "status": "insufficientData",
+          "reasons": [
+            "packSize",
+            "replacementInterval",
+            "selectedOffer"
+          ],
+          "unitCost": null,
+          "annualCostLow": null,
+          "annualCostHigh": null,
+          "threeYearConsumableCost": null,
+          "provenance": null
+        }
+      ],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "catit-pixi-smart-trinkbrunnen",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "Catit PIXI Filter 43722",
+        "status": "calculated",
+        "reasons": [],
+        "currency": "EUR",
+        "unitCost": 1.6316666666666666,
+        "annualCostLow": 19.85194444444444,
+        "annualCostHigh": 19.85194444444444,
+        "threeYearConsumableCost": {
+          "low": 59.555833333333325,
+          "high": 59.555833333333325
+        },
+        "mandatory": null,
+        "provenance": {
+          "sourceType": "calculated",
+          "formulaVersion": "consumable-cost-v1",
+          "formula": "unit = packPrice / packSize; annualLow = unit * 365 / maxDays; annualHigh = unit * 365 / minDays; threeYear = annual * 3",
+          "calculatedAt": "2026-09-08T11:05:58.643Z",
+          "productSlug": "catit-pixi-smart-trinkbrunnen",
+          "consumableId": "primary-filter-0",
+          "offerId": "primary-filter-0-eu-standard",
+          "priceField": "consumables.0.offers.0.price",
+          "priceTimestamp": "2026-09-08T11:05:58.643Z",
+          "inputs": {
+            "packPrice": 9.79,
+            "currency": "EUR",
+            "packSize": 6,
+            "minDays": 30,
+            "maxDays": 30
+          },
+          "source": {
+            "id": "www.zooplus.de",
+            "label": "www.zooplus.de · Einzelkauf",
+            "type": "merchant",
+            "url": "https://www.zooplus.de/shop/katzen/fressnapf/katzentraenke/brunnen/2235929?activeVariant=2235929.1"
+          },
+          "fieldPaths": [
+            "consumables.0.packSize",
+            "consumables.0.replacementInterval",
+            "consumables.0.compatibility",
+            "consumables.0.required",
+            "consumables.0.dependency"
+          ],
+          "evidence": [
+            {
+              "source": "www.catit.com",
+              "url": "https://www.catit.com/de/produkte/trinkbrunnen/pixi-trinkbrunnenfilter/",
+              "accessedAt": "2026-09-08T09:58:56.262277+00:00",
+              "sourceType": "manufacturer",
+              "fields": [
+                "consumables.0.compatibility",
+                "consumables.0.filterType",
+                "consumables.0.replacementInterval",
+                "consumables.0.partNumber"
+              ],
+              "assertion": "Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. Hersteller benennt Aufbau/Funktion des Verbrauchsteils. Offizielles modellspezifisches Austauschintervall; Wochen × 7, Monate × 30. Explizite Hersteller-Teilebezeichnung."
+            },
+            {
+              "source": "www.zooplus.de",
+              "url": "https://www.zooplus.de/shop/katzen/fressnapf/katzentraenke/brunnen/2235929?activeVariant=2235929.1",
+              "accessedAt": "2026-09-08T11:05:58.643712+00:00",
+              "sourceType": "retailer",
+              "fields": [
+                "consumables.0.packSize"
+              ],
+              "assertion": "Gewählte Einzelkauf-Variante: 6 Stück; 9.79 EUR; Variante eindeutige Packung."
+            }
+          ],
+          "assumptions": [
+            "365 days/year",
+            "constant selected price and interval for projection",
+            "amortized use; no pack rounding, shipping, electricity or failure-dependent replacements"
+          ]
+        }
+      },
+      "otherConsumables": [],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "oneisall-2-2l-cordless-fountain",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "Oneisall modellspezifischer Filter",
+        "status": "insufficientData",
+        "reasons": [
+          "packSize",
+          "replacementInterval",
+          "selectedOffer"
+        ],
+        "unitCost": null,
+        "annualCostLow": null,
+        "annualCostHigh": null,
+        "threeYearConsumableCost": null,
+        "provenance": null
+      },
+      "otherConsumables": [],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "oneisall-3-5l-cordless-fountain",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "Oneisall modellspezifischer Filter",
+        "status": "insufficientData",
+        "reasons": [
+          "packSize",
+          "replacementInterval",
+          "selectedOffer"
+        ],
+        "unitCost": null,
+        "annualCostLow": null,
+        "annualCostHigh": null,
+        "threeYearConsumableCost": null,
+        "provenance": null
+      },
+      "otherConsumables": [],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "petkit-eversweet-5-mini",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "P4106 Filter",
+        "status": "insufficientData",
+        "reasons": [
+          "packSize",
+          "replacementInterval",
+          "selectedOffer"
+        ],
+        "unitCost": null,
+        "annualCostLow": null,
+        "annualCostHigh": null,
+        "threeYearConsumableCost": null,
+        "provenance": null
+      },
+      "otherConsumables": [],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "petkit-eversweet-max-2-uvc",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "PETKIT Filtereinheit",
+        "status": "insufficientData",
+        "reasons": [
+          "packSize",
+          "selectedOffer"
+        ],
+        "unitCost": null,
+        "annualCostLow": null,
+        "annualCostHigh": null,
+        "threeYearConsumableCost": null,
+        "provenance": null
+      },
+      "otherConsumables": [],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "petkit-eversweet-solo-2-fountain",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "PETKIT Filtereinheit",
+        "status": "calculated",
+        "reasons": [],
+        "currency": "EUR",
+        "unitCost": 3.9979999999999998,
+        "annualCostLow": 52.11678571428571,
+        "annualCostHigh": 52.11678571428571,
+        "threeYearConsumableCost": {
+          "low": 156.35035714285715,
+          "high": 156.35035714285715
+        },
+        "mandatory": true,
+        "provenance": {
+          "sourceType": "calculated",
+          "formulaVersion": "consumable-cost-v1",
+          "formula": "unit = packPrice / packSize; annualLow = unit * 365 / maxDays; annualHigh = unit * 365 / minDays; threeYear = annual * 3",
+          "calculatedAt": "2026-09-08T11:05:58.643Z",
+          "productSlug": "petkit-eversweet-solo-2-fountain",
+          "consumableId": "primary-filter-0",
+          "offerId": "primary-filter-0-eu-standard",
+          "priceField": "consumables.0.offers.0.price",
+          "priceTimestamp": "2026-09-08T09:58:56.261Z",
+          "inputs": {
+            "packPrice": 19.99,
+            "currency": "EUR",
+            "packSize": 5,
+            "minDays": 28,
+            "maxDays": 28
+          },
+          "source": {
+            "id": "www.petkit-eu.com",
+            "label": "www.petkit-eu.com · Einzelkauf",
+            "type": "merchant",
+            "url": "https://www.petkit-eu.com/de/products/petkit-filter-unit-3-0-5-pcs?variant=46302719017195"
+          },
+          "fieldPaths": [
+            "consumables.0.packSize",
+            "consumables.0.replacementInterval",
+            "consumables.0.compatibility",
+            "consumables.0.required",
+            "consumables.0.dependency"
+          ],
+          "evidence": [
+            {
+              "source": "www.petkit.com",
+              "url": "https://www.petkit.com/products/eversweet-solo-2",
+              "accessedAt": "2026-09-08T09:55:54.802392+00:00",
+              "sourceType": "manufacturer",
+              "fields": [
+                "slug",
+                "consumablePolicy.filterPresent",
+                "consumables.0.compatibility",
+                "consumables.0.filterType",
+                "consumables.0.replacementInterval",
+                "consumables.0.required",
+                "consumablePolicy.filterlessOperationPossible",
+                "comparisonData.fountain.lowWaterShutdown",
+                "comparisonData.fountain.powerType",
+                "comparisonData.fountain.filterRequired",
+                "comparisonData.fountain.capacityLiters"
+              ],
+              "assertion": "Identität des konkreten Modells geprüft: P4114. Textlicher Lieferumfang/Filterwartung bzw. explizite Filterfunktion des exakten Modells. Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. Hersteller benennt Aufbau/Funktion des Verbrauchsteils. Offizielles modellspezifisches Austauschintervall; Wochen × 7, Monate × 30. Hersteller bestätigt Erforderlichkeit des eingesetzten Verbrauchsteils. Modell-FAQ beantwortet die Notwendigkeit des Filters auch bei reinem Wasser ausdrücklich mit Ja. Modell-FAQ: automatische Abschaltung bei zu wenig Wasser. Modell-FAQ unterscheidet Akkubetrieb von dauerhaft notwendiger Stromversorgung."
+            },
+            {
+              "source": "www.petkit-eu.com",
+              "url": "https://www.petkit-eu.com/de/products/petkit-filter-unit-3-0-5-pcs",
+              "accessedAt": "2026-09-08T09:58:56.261622+00:00",
+              "sourceType": "officialStore",
+              "fields": [
+                "consumables.0.packSize",
+                "consumables.0.compatibility"
+              ],
+              "assertion": "Gewählte Einzelkauf-Variante: 5 Stück; 19.99 EUR; Variante 46302719017195. Filter 3.0 listet dieses Modell ausdrücklich im Anwendungsbereich."
+            }
+          ],
+          "assumptions": [
+            "365 days/year",
+            "constant selected price and interval for projection",
+            "amortized use; no pack rounding, shipping, electricity or failure-dependent replacements"
+          ]
+        }
+      },
+      "otherConsumables": [],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "petkit-eversweet-solo-se",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "PETKIT Filtereinheit",
+        "status": "calculated",
+        "reasons": [],
+        "currency": "EUR",
+        "unitCost": 3.9979999999999998,
+        "annualCostLow": 52.11678571428571,
+        "annualCostHigh": 52.11678571428571,
+        "threeYearConsumableCost": {
+          "low": 156.35035714285715,
+          "high": 156.35035714285715
+        },
+        "mandatory": true,
+        "provenance": {
+          "sourceType": "calculated",
+          "formulaVersion": "consumable-cost-v1",
+          "formula": "unit = packPrice / packSize; annualLow = unit * 365 / maxDays; annualHigh = unit * 365 / minDays; threeYear = annual * 3",
+          "calculatedAt": "2026-09-08T11:05:58.643Z",
+          "productSlug": "petkit-eversweet-solo-se",
+          "consumableId": "primary-filter-0",
+          "offerId": "primary-filter-0-eu-standard",
+          "priceField": "consumables.0.offers.0.price",
+          "priceTimestamp": "2026-09-08T09:58:56.261Z",
+          "inputs": {
+            "packPrice": 19.99,
+            "currency": "EUR",
+            "packSize": 5,
+            "minDays": 28,
+            "maxDays": 28
+          },
+          "source": {
+            "id": "www.petkit-eu.com",
+            "label": "www.petkit-eu.com · Einzelkauf",
+            "type": "merchant",
+            "url": "https://www.petkit-eu.com/de/products/petkit-filter-unit-3-0-5-pcs?variant=46302719017195"
+          },
+          "fieldPaths": [
+            "consumables.0.packSize",
+            "consumables.0.replacementInterval",
+            "consumables.0.compatibility",
+            "consumables.0.required",
+            "consumables.0.dependency"
+          ],
+          "evidence": [
+            {
+              "source": "www.petkit.com",
+              "url": "https://www.petkit.com/products/eversweet-solo-se",
+              "accessedAt": "2026-09-08T09:55:54.992691+00:00",
+              "sourceType": "manufacturer",
+              "fields": [
+                "slug",
+                "consumablePolicy.filterPresent",
+                "consumables.0.compatibility",
+                "consumables.0.filterType",
+                "consumables.0.replacementInterval",
+                "consumables.0.required",
+                "consumablePolicy.filterlessOperationPossible",
+                "comparisonData.fountain.lowWaterShutdown",
+                "comparisonData.fountain.powerType",
+                "comparisonData.fountain.filterRequired",
+                "comparisonData.fountain.capacityLiters"
+              ],
+              "assertion": "Identität des konkreten Modells geprüft: P4103S. Textlicher Lieferumfang/Filterwartung bzw. explizite Filterfunktion des exakten Modells. Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. Hersteller benennt Aufbau/Funktion des Verbrauchsteils. Offizielles modellspezifisches Austauschintervall; Wochen × 7, Monate × 30. Hersteller bestätigt Erforderlichkeit des eingesetzten Verbrauchsteils. Modell-FAQ beantwortet die Notwendigkeit des Filters auch bei reinem Wasser ausdrücklich mit Ja. Modell-FAQ: automatische Abschaltung bei zu wenig Wasser. Modell-FAQ unterscheidet Akkubetrieb von dauerhaft notwendiger Stromversorgung."
+            },
+            {
+              "source": "www.petkit-eu.com",
+              "url": "https://www.petkit-eu.com/de/products/petkit-filter-unit-3-0-5-pcs",
+              "accessedAt": "2026-09-08T09:58:56.261622+00:00",
+              "sourceType": "officialStore",
+              "fields": [
+                "consumables.0.packSize",
+                "consumables.0.compatibility"
+              ],
+              "assertion": "Gewählte Einzelkauf-Variante: 5 Stück; 19.99 EUR; Variante 46302719017195. Filter 3.0 listet dieses Modell ausdrücklich im Anwendungsbereich."
+            }
+          ],
+          "assumptions": [
+            "365 days/year",
+            "constant selected price and interval for projection",
+            "amortized use; no pack rounding, shipping, electricity or failure-dependent replacements"
+          ]
+        }
+      },
+      "otherConsumables": [],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "petlibro-capsule-dog-fountain",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "Capsule Dog PLWF008 Ersatzfilter",
+        "status": "insufficientData",
+        "reasons": [
+          "currentAvailablePrice"
+        ],
+        "unitCost": null,
+        "annualCostLow": null,
+        "annualCostHigh": null,
+        "threeYearConsumableCost": null,
+        "provenance": null
+      },
+      "otherConsumables": [
+        {
+          "id": "sponge-1",
+          "type": "sponge",
+          "name": "Capsule Dog Pumpenschwamm",
+          "status": "insufficientData",
+          "reasons": [
+            "packSize",
+            "selectedOffer"
+          ],
+          "unitCost": null,
+          "annualCostLow": null,
+          "annualCostHigh": null,
+          "threeYearConsumableCost": null,
+          "provenance": null
+        }
+      ],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "petlibro-dockstream-cordless",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "Dockstream PLWF115 Ersatzfilter",
+        "status": "calculated",
+        "reasons": [],
+        "currency": "EUR",
+        "unitCost": 4.9975,
+        "annualCostLow": 130.29196428571427,
+        "annualCostHigh": 130.29196428571427,
+        "threeYearConsumableCost": {
+          "low": 390.87589285714284,
+          "high": 390.87589285714284
+        },
+        "mandatory": null,
+        "provenance": {
+          "sourceType": "calculated",
+          "formulaVersion": "consumable-cost-v1",
+          "formula": "unit = packPrice / packSize; annualLow = unit * 365 / maxDays; annualHigh = unit * 365 / minDays; threeYear = annual * 3",
+          "calculatedAt": "2026-09-08T11:05:58.643Z",
+          "productSlug": "petlibro-dockstream-cordless",
+          "consumableId": "primary-filter-0",
+          "offerId": "primary-filter-0-eu-standard",
+          "priceField": "consumables.0.offers.0.price",
+          "priceTimestamp": "2026-09-08T09:57:08.507Z",
+          "inputs": {
+            "packPrice": 19.99,
+            "currency": "EUR",
+            "packSize": 4,
+            "minDays": 14,
+            "maxDays": 14
+          },
+          "source": {
+            "id": "de.petlibro.com",
+            "label": "de.petlibro.com · Einzelkauf",
+            "type": "merchant",
+            "url": "https://de.petlibro.com/products/dockstream-replacement-filter?variant=44409650970866"
+          },
+          "fieldPaths": [
+            "consumables.0.packSize",
+            "consumables.0.replacementInterval",
+            "consumables.0.compatibility",
+            "consumables.0.required",
+            "consumables.0.dependency"
+          ],
+          "evidence": [
+            {
+              "source": "petlibro.com",
+              "url": "https://petlibro.com/pages/pre-sale-inquiries-about-dockstream-cordless-fountain-wf115-plwf115",
+              "accessedAt": "2026-09-08T09:55:55.543554+00:00",
+              "sourceType": "manufacturer",
+              "fields": [
+                "slug",
+                "consumablePolicy.filterPresent",
+                "consumables.0.compatibility",
+                "consumables.0.filterType",
+                "consumables.0.replacementInterval",
+                "comparisonData.fountain.capacityLiters"
+              ],
+              "assertion": "Identität des konkreten Modells geprüft: PLWF115. Textlicher Lieferumfang/Filterwartung bzw. explizite Filterfunktion des exakten Modells. Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. Hersteller benennt Aufbau/Funktion des Verbrauchsteils. Offizielles modellspezifisches Austauschintervall; Wochen × 7, Monate × 30. Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. Hersteller benennt Aufbau/Funktion des Verbrauchsteils."
+            },
+            {
+              "source": "de.petlibro.com",
+              "url": "https://de.petlibro.com/products/dockstream-replacement-filter",
+              "accessedAt": "2026-09-08T09:57:08.507949+00:00",
+              "sourceType": "officialStore",
+              "fields": [
+                "consumables.0.packSize",
+                "consumables.0.compatibility"
+              ],
+              "assertion": "Gewählte Einzelkauf-Variante: 4 Stück; 19.99 EUR; Variante 44409650970866. DE-Zubehör nennt PLWF115 ausdrücklich."
+            }
+          ],
+          "assumptions": [
+            "365 days/year",
+            "constant selected price and interval for projection",
+            "amortized use; no pack rounding, shipping, electricity or failure-dependent replacements"
+          ]
+        }
+      },
+      "otherConsumables": [],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    },
+    {
+      "slug": "petsafe-streamside-trinkbrunnen",
+      "annualFilterCost": {
+        "id": "primary-filter-0",
+        "type": "filter",
+        "name": "PetSafe Aktivkohle PAC19-14088",
+        "status": "insufficientData",
+        "reasons": [
+          "selectedOffer"
+        ],
+        "unitCost": null,
+        "annualCostLow": null,
+        "annualCostHigh": null,
+        "threeYearConsumableCost": null,
+        "provenance": null
+      },
+      "otherConsumables": [
+        {
+          "id": "prefilter-1",
+          "type": "prefilter",
+          "name": "PetSafe Schaum-Vorfilter PAC19-14089",
+          "status": "calculated",
+          "reasons": [],
+          "currency": "EUR",
+          "unitCost": 3.495,
+          "annualCostLow": 30.373214285714283,
+          "annualCostHigh": 45.55982142857143,
+          "threeYearConsumableCost": {
+            "low": 91.11964285714285,
+            "high": 136.6794642857143
+          },
+          "mandatory": null,
+          "provenance": {
+            "sourceType": "calculated",
+            "formulaVersion": "consumable-cost-v1",
+            "formula": "unit = packPrice / packSize; annualLow = unit * 365 / maxDays; annualHigh = unit * 365 / minDays; threeYear = annual * 3",
+            "calculatedAt": "2026-09-08T11:05:58.643Z",
+            "productSlug": "petsafe-streamside-trinkbrunnen",
+            "consumableId": "prefilter-1",
+            "offerId": "prefilter-1-eu-standard",
+            "priceField": "consumables.1.offers.0.price",
+            "priceTimestamp": "2026-09-08T10:56:20.577Z",
+            "inputs": {
+              "packPrice": 6.99,
+              "currency": "EUR",
+              "packSize": 2,
+              "minDays": 28,
+              "maxDays": 42
+            },
+            "source": {
+              "id": "www.petsafe.com",
+              "label": "www.petsafe.com · Einzelkauf",
+              "type": "merchant",
+              "url": "https://www.petsafe.com/de/p/ersatzschaumfilter-fur-drinkwell-keramik-edelstahl-brunnen-360-2-pack/PAC19-14089/"
+            },
+            "fieldPaths": [
+              "consumables.1.packSize",
+              "consumables.1.replacementInterval",
+              "consumables.1.compatibility",
+              "consumables.1.required",
+              "consumables.1.dependency"
+            ],
+            "evidence": [
+              {
+                "source": "www.petsafe.com",
+                "url": "https://www.petsafe.com/de/p/ersatzschaumfilter-fur-drinkwell-keramik-edelstahl-brunnen-360-2-pack/PAC19-14089/",
+                "accessedAt": "2026-09-08T10:56:20.577196+00:00",
+                "sourceType": "manufacturer",
+                "fields": [
+                  "consumables.1.compatibility",
+                  "consumables.1.filterType",
+                  "consumables.1.replacementInterval",
+                  "consumables.1.partNumber"
+                ],
+                "assertion": "Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. Hersteller benennt Aufbau/Funktion des Verbrauchsteils. Offizielles modellspezifisches Austauschintervall; Wochen × 7, Monate × 30. Explizite Hersteller-Teilebezeichnung."
+              },
+              {
+                "source": "www.petsafe.com",
+                "url": "https://www.petsafe.com/de/p/ersatzschaumfilter-fur-drinkwell-keramik-edelstahl-brunnen-360-2-pack/PAC19-14089/",
+                "accessedAt": "2026-09-08T10:56:20.577196+00:00",
+                "sourceType": "officialStore",
+                "fields": [
+                  "consumables.1.packSize"
+                ],
+                "assertion": "Gewählte Einzelkauf-Variante: 2 Stück; 6.99 EUR; Variante eindeutige Packung."
+              }
+            ],
+            "assumptions": [
+              "365 days/year",
+              "constant selected price and interval for projection",
+              "amortized use; no pack rounding, shipping, electricity or failure-dependent replacements"
+            ]
+          }
+        }
+      ],
+      "completeRecurringCost": {
+        "status": "insufficientData",
+        "value": null,
+        "reasons": [
+          "complete inventory and/or required flags/other consumable costs unresolved; primary filter is not total ownership cost"
+        ]
+      }
+    }
+  ]
+}

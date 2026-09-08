@@ -1,0 +1,21 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import yaml from 'js-yaml';
+import {readDataset,inspectDataset} from '../scripts/product-evidence/fountain-dataset.mjs';
+import {calculateConsumableCost,calculateThreeYearCost} from '../src/domain/consumableCosts.mjs';
+const data=readDataset();
+test('exact 24 research records pass evidence, commerce, variant and calculation gate',()=>{const r=inspectDataset(data);assert.deepEqual(r.errors,[]);assert.equal(r.rows.length,24);for(const f of Object.values(r.fields))assert.equal(f.known+f.unknown+f.notApplicable,24);});
+test('mismatched pack and selected variant price cannot pass import',()=>{const d=structuredClone(data);d.products.find(r=>r.research.offerSelection.length).research.offerSelection[0].packSize=999;assert.equal(inspectDataset(d).status,'FAIL');});
+test('missing scope product and duplicate are rejected',()=>{const d=structuredClone(data);d.products[0]=d.products[1];assert.equal(inspectDataset(d).status,'FAIL');});
+test('unresolved regional identity cannot receive guessed commerce',()=>{const d=structuredClone(data);const r=d.products.find(r=>r.research.identity.status==='unresolvedEU');r.data.consumables[0].offers=data.products.find(r=>r.data.consumables[0]?.offers.length).data.consumables[0].offers;assert.ok(inspectDataset(d).errors.some(x=>x.includes('unresolved EU')));});
+test('filterless Ultra retains mandatory Cube C and never becomes zero total cost',()=>{const r=data.products.find(r=>r.slug==='petkit-eversweet-ultra');assert.equal(r.data.consumablePolicy.filterPresent.value,false);assert.equal(r.data.consumables[0].type,'waterTreatment');assert.equal(r.data.consumables[0].required.value,true);const c=calculateConsumableCost({product:r.data,consumableId:r.data.consumables[0].id,offerId:r.representativeOfferIds[r.data.consumables[0].id],now:data.asOf});assert.equal(c.status,'insufficientData');assert.equal(c.annualCostLow,null);assert.equal(calculateThreeYearCost({product:r.data,now:data.asOf}).threeYearCost,null);});
+test('conflicting interval and zero JS placeholder do not produce annual costs',()=>{const rows=inspectDataset(data).rows;for(const slug of ['oneisall-7l-dog-water-fountain','xiaomi-smart-pet-fountain-2']){const c=rows.find(r=>r.slug===slug).annualFilterCost;assert.equal(c.status,'insufficientData');assert.equal(c.annualCostLow,null);}});
+test('frozen observations distinguish historical snapshot from expired current prices',()=>{const r=inspectDataset(data,'2027-01-01');assert.equal(r.statistics.calculablePrimaryFilterCosts,0);assert.equal(r.fields.currentFilterOffer.known,0);});
+test('all 24 internal imports validate against actual full product schema',async()=>{
+ const {build}=await import('esbuild');
+ const result=await build({entryPoints:[new URL('../src/content/schema/product.ts',import.meta.url).pathname],bundle:true,write:false,platform:'node',format:'esm',plugins:[{name:'collection-declarations',setup(b){b.onResolve({filter:/^astro(?::content|:loaders|\/loaders)$/},a=>({path:a.path,namespace:'stub'}));b.onLoad({filter:/.*/,namespace:'stub'},()=>({contents:'export const defineCollection=x=>x; export const glob=x=>x;',loader:'js'}));}}]});
+ const {createProductContentSchema}=await import('data:text/javascript;base64,'+Buffer.from(result.outputFiles[0].text).toString('base64'));
+ const {z}=await import('astro/zod');const schema=createProductContentSchema(()=>z.any());
+ for(const r of data.products){const raw=fs.readFileSync(new URL('../src/content/products/'+r.slug+'.md',import.meta.url),'utf8');const original=yaml.load(raw.match(/^---\s*\n([\s\S]*?)\n---/)[1],{schema:yaml.JSON_SCHEMA});const merged={...original,...r.data,evidenceSources:[...(original.evidenceSources??[]),...r.data.evidenceSources],comparisonData:{...original.comparisonData,...r.data.comparisonData}};const parsed=schema.safeParse(merged);assert.equal(parsed.success,true,r.slug+': '+JSON.stringify(parsed.error?.issues));assert.equal(parsed.data.consumables.length,r.data.consumables.length);}
+});

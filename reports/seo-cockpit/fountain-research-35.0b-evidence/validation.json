@@ -1,0 +1,144 @@
+{
+  "status": "PASS",
+  "tests": {
+    "total": 788,
+    "passed": 788,
+    "failed": 0
+  },
+  "release": {
+    "phases": 24,
+    "passed": 24,
+    "failed": 0,
+    "criticalFailed": 0,
+    "warnings": 0,
+    "skipped": 0
+  },
+  "releaseFinishedAt": "2026-09-08T11:17:06.426Z",
+  "pages": 372,
+  "sitemapUrls": 258,
+  "sitemapUnchanged": true,
+  "sitemapFiles": {
+    "sitemap-0.xml": true,
+    "sitemap-index.xml": true
+  },
+  "newHtmlPaths": [],
+  "removedHtmlPaths": [],
+  "publicHtmlChanged": [],
+  "cohort": [
+    {
+      "url": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+      "publicContentMetadataCanonicalSchemaLinksUnchanged": true
+    },
+    {
+      "url": "/produkt/petkit-yumshare-solo-2/",
+      "publicContentMetadataCanonicalSchemaLinksUnchanged": true
+    },
+    {
+      "url": "/produkt/petkit-eversweet-ultra/",
+      "publicContentMetadataCanonicalSchemaLinksUnchanged": true
+    },
+    {
+      "url": "/produkt/petlibro-polar-wet-food-feeder/",
+      "publicContentMetadataCanonicalSchemaLinksUnchanged": true
+    },
+    {
+      "url": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "publicContentMetadataCanonicalSchemaLinksUnchanged": true
+    },
+    {
+      "url": "/katzentrinkbrunnen-laut-pumpe/",
+      "publicContentMetadataCanonicalSchemaLinksUnchanged": true
+    },
+    {
+      "url": "/katzentrinkbrunnen-ohne-filter/",
+      "publicContentMetadataCanonicalSchemaLinksUnchanged": true
+    },
+    {
+      "url": "/wie-viele-wasserstellen-katze/",
+      "publicContentMetadataCanonicalSchemaLinksUnchanged": true
+    },
+    {
+      "url": "/kalk-katzentrinkbrunnen-entfernen/",
+      "publicContentMetadataCanonicalSchemaLinksUnchanged": true
+    },
+    {
+      "url": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "publicContentMetadataCanonicalSchemaLinksUnchanged": true
+    },
+    {
+      "url": "/katzenwasser-taeglich-wechseln/",
+      "publicContentMetadataCanonicalSchemaLinksUnchanged": true
+    },
+    {
+      "url": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "publicContentMetadataCanonicalSchemaLinksUnchanged": true
+    },
+    {
+      "url": "/produkt/petlibro-stainless-steel-fountain/",
+      "publicContentMetadataCanonicalSchemaLinksUnchanged": true
+    },
+    {
+      "url": "/futterautomat-richtig-reinigen/",
+      "publicContentMetadataCanonicalSchemaLinksUnchanged": true
+    },
+    {
+      "url": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "publicContentMetadataCanonicalSchemaLinksUnchanged": true
+    }
+  ],
+  "protected34_6": [
+    {
+      "file": "apps/pfotentechnik/src/content/pages/trinkbrunnen-fuer-mehrere-katzen.md",
+      "sha256": "a29f5119442158f262d0c4fa5f71ac5db531a14231ca672bd906b46acea0aaf5",
+      "unchanged": true
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-laut-pumpe.md",
+      "sha256": "9044827e3e5ad7774a1d03a493e7273070c103fd36fb9c73008a7c7028e8e0d5",
+      "unchanged": true
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff.md",
+      "sha256": "a8ecd17a75acf213c7073317ce328878c030e839a5dcc2eb26c1b4eb3eb7a43c",
+      "unchanged": true
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/katzenwasser-taeglich-wechseln.md",
+      "sha256": "b84bf8b6129e85f5fdeace7d4e60f60a8491f31ff378d88fa100403d09a321d9",
+      "unchanged": true
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/filter-im-katzentrinkbrunnen-wechseln.md",
+      "sha256": "8a2aaf0fa90a17ecb2277919bb318f5e622a2ba4c51eb7df96552f1807947ab7",
+      "unchanged": true
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-stainless-steel-fountain.md",
+      "sha256": "92863adf664f22837e3dc3fbe65278937419297f03e0ed751b7f3bdafddd4e72",
+      "unchanged": true
+    }
+  ],
+  "contentFilesChanged": [],
+  "adminOnlyDifferences": [
+    "admin/seo/advisor/index.html",
+    "admin/seo/index.html",
+    "admin/seo/prices/index.html",
+    "admin/seo/prompts/index.html",
+    "admin/seo/tasks/index.html",
+    "admin/seo/topical-authority/index.html"
+  ],
+  "adminNote": "Only build/audit timestamps and package updatedAt values changed; full diff preserved. Public comparisons ignore no text or dates; only actual asset-byte hashes normalize aliases.",
+  "datasetGate": "PASS",
+  "productSchema": "24/24 full schema merge passed",
+  "evidenceAndCommerce": "PASS; exact field paths, selected variants and existing price schema",
+  "baseline": "2026-09-07T13:27:50.265Z",
+  "measurementEnd": "2026-09-21T13:27:50.265Z",
+  "deployed": false,
+  "validatedInputs": {
+    "apps/pfotentechnik/research/fountain-cost-35.0b.json": "15ef86904d8752bccff4513f4ea72a19831e016b43dc5a37dfba9eafc43cc3a6",
+    "apps/pfotentechnik/src/content/schema/consumables.mjs": "4abaa5e40da4fa00e310d486247f25f1efa5e935494548d6775fa1d00b874c86",
+    "apps/pfotentechnik/src/domain/consumableCosts.mjs": "9c845faa681a43e659f4385ddd47ce2aa829231cf770950b27bab5c2e87ce260",
+    "apps/pfotentechnik/scripts/product-evidence/fountain-dataset.mjs": "e3ea9b44c42fe904a30efe4334e745aea4bcd456223cf5d958db847ec191a556",
+    "apps/pfotentechnik/test/fountain-research-35.0b.test.mjs": "2799629e3fcb0736ef928c2b5c366a5ff584d675819c7c4b550c16b9062df01c"
+  }
+}

@@ -1,3 +1,4 @@
+import { evidenceSourceSchema } from "./evidence.mjs";
 import { z } from "astro/zod";
 
 import {
@@ -29,14 +30,6 @@ const decisionJourneySchema = z.object({
   primaryQuestion: z.string(),
   next: z.array(z.string()).default([]),
   fallback: z.array(z.string()).default([])
-});
-
-const evidenceSourceSchema = z.object({
-  source: z.string(),
-  url: z.string().url(),
-  accessedAt: z.coerce.date(),
-  assertion: z.string(),
-  fields: z.array(z.string()).min(1)
 });
 
 export const baseContentSchema = z.object({

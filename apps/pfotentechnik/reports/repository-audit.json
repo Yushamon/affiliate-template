@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-09-07T13:07:14.142Z",
+    "generatedAt": "2026-09-08T11:15:19.649Z",
     "countsByCollection": {
       "pages": 83,
       "products": 102,
@@ -33,7 +33,7 @@
     "routes": 270,
     "findings": {
       "error": 0,
-      "warning": 12,
+      "warning": 11,
       "info": 45
     }
   },
@@ -97,12 +97,6 @@
       "area": "maintainability",
       "message": "Sehr große Datei mit 1198 Zeilen",
       "file": "src/content/pages/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt.md"
-    },
-    {
-      "severity": "warning",
-      "area": "maintainability",
-      "message": "Sehr große Datei mit 1019 Zeilen",
-      "file": "src/content/schema/product.ts"
     },
     {
       "severity": "warning",

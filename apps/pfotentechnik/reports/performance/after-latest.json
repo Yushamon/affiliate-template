@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-07T13:08:46.247Z",
+  "generatedAt": "2026-09-08T11:16:55.339Z",
   "mode": "strict",
   "status": "ok",
   "environment": {
@@ -104,8 +104,8 @@
       "category": "home",
       "label": "Startseite",
       "metrics": {
-        "htmlBytes": 42008,
-        "htmlBrotliBytes": 8242,
+        "htmlBytes": 42012,
+        "htmlBrotliBytes": 8225,
         "domNodes": 458,
         "domDepth": 11,
         "stylesheets": 2,
@@ -160,8 +160,8 @@
       "category": "comparison",
       "label": "Vergleich Futterautomaten",
       "metrics": {
-        "htmlBytes": 239147,
-        "htmlBrotliBytes": 25713,
+        "htmlBytes": 239036,
+        "htmlBrotliBytes": 25729,
         "domNodes": 2216,
         "domDepth": 18,
         "stylesheets": 3,
@@ -186,8 +186,8 @@
           "code": "PERF_HTML_TOO_LARGE",
           "severity": "warning",
           "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-          "message": "HTML-Budget überschritten: 239147 > 230000.",
-          "actual": 239147,
+          "message": "HTML-Budget überschritten: 239036 > 230000.",
+          "actual": 239036,
           "limit": 230000
         },
         {
@@ -205,8 +205,8 @@
       "category": "comparison",
       "label": "Vergleich GPS-Tracker",
       "metrics": {
-        "htmlBytes": 54694,
-        "htmlBrotliBytes": 11447,
+        "htmlBytes": 54697,
+        "htmlBrotliBytes": 11472,
         "domNodes": 428,
         "domDepth": 14,
         "stylesheets": 3,
@@ -233,8 +233,8 @@
       "category": "product",
       "label": "Produktdetail",
       "metrics": {
-        "htmlBytes": 92676,
-        "htmlBrotliBytes": 16766,
+        "htmlBytes": 92641,
+        "htmlBrotliBytes": 16735,
         "domNodes": 833,
         "domDepth": 15,
         "stylesheets": 3,
@@ -267,8 +267,8 @@
           "code": "PERF_HTML_TOO_LARGE",
           "severity": "warning",
           "route": "/produkt/petlibro-granary-2-vision/",
-          "message": "HTML-Budget überschritten: 92676 > 90000.",
-          "actual": 92676,
+          "message": "HTML-Budget überschritten: 92641 > 90000.",
+          "actual": 92641,
           "limit": 90000
         }
       ]
@@ -278,8 +278,8 @@
       "category": "listing",
       "label": "Herstellerdetail",
       "metrics": {
-        "htmlBytes": 85424,
-        "htmlBrotliBytes": 14310,
+        "htmlBytes": 85442,
+        "htmlBrotliBytes": 14329,
         "domNodes": 776,
         "domDepth": 13,
         "stylesheets": 2,
@@ -304,8 +304,8 @@
           "code": "PERF_HTML_TOO_LARGE",
           "severity": "warning",
           "route": "/hersteller/petlibro/",
-          "message": "HTML-Budget überschritten: 85424 > 85000.",
-          "actual": 85424,
+          "message": "HTML-Budget überschritten: 85442 > 85000.",
+          "actual": 85442,
           "limit": 85000
         },
         {
@@ -351,8 +351,8 @@
       "category": "article",
       "label": "Cornerstone",
       "metrics": {
-        "htmlBytes": 64751,
-        "htmlBrotliBytes": 12217,
+        "htmlBytes": 64736,
+        "htmlBrotliBytes": 12256,
         "domNodes": 512,
         "domDepth": 13,
         "stylesheets": 2,
@@ -436,8 +436,8 @@
       "code": "PERF_HTML_TOO_LARGE",
       "severity": "warning",
       "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-      "message": "HTML-Budget überschritten: 239147 > 230000.",
-      "actual": 239147,
+      "message": "HTML-Budget überschritten: 239036 > 230000.",
+      "actual": 239036,
       "limit": 230000
     },
     {
@@ -460,16 +460,16 @@
       "code": "PERF_HTML_TOO_LARGE",
       "severity": "warning",
       "route": "/produkt/petlibro-granary-2-vision/",
-      "message": "HTML-Budget überschritten: 92676 > 90000.",
-      "actual": 92676,
+      "message": "HTML-Budget überschritten: 92641 > 90000.",
+      "actual": 92641,
       "limit": 90000
     },
     {
       "code": "PERF_HTML_TOO_LARGE",
       "severity": "warning",
       "route": "/hersteller/petlibro/",
-      "message": "HTML-Budget überschritten: 85424 > 85000.",
-      "actual": 85424,
+      "message": "HTML-Budget überschritten: 85442 > 85000.",
+      "actual": 85442,
       "limit": 85000
     },
     {

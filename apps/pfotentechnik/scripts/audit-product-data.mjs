@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 
 import fs from "node:fs/promises";
+import yaml from "js-yaml";
+import { costFoundationSchema } from "../src/content/schema/consumables.mjs";
+import { readDataset, inspectDataset } from "./product-evidence/fountain-dataset.mjs";
 import path from "node:path";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
@@ -93,7 +96,10 @@ const products = [];
 for (const file of files) {
   const source = await fs.readFile(file, "utf8");
   const frontmatter = extractFrontmatter(source, file);
-  products.push(parseProduct(frontmatter, source, file));
+  const product = parseProduct(frontmatter, source, file);
+  const foundation = costFoundationSchema.safeParse(yaml.load(frontmatter, {schema:yaml.JSON_SCHEMA}));
+  product.foundationErrors = foundation.success ? [] : foundation.error.issues.map(x=>"Cost foundation: "+x.path.join(".")+": "+x.message);
+  products.push(product);
 }
 
 const slugMap = new Map();
@@ -108,11 +114,12 @@ const duplicateSlugs = [...slugMap.entries()]
   .map(([slug, files]) => ({ slug, files }));
 
 const results = products.map(auditProduct);
+const fountainResearch = inspectDataset(readDataset());
 const summary = {
   generatedAt: new Date().toISOString(),
   totalProducts: results.length,
   byCategory: countBy(results, (item) => item.category),
-  errors: results.reduce((sum, item) => sum + item.errors.length, 0),
+  errors: results.reduce((sum, item) => sum + item.errors.length, 0) + fountainResearch.errors.length,
   warnings: results.reduce((sum, item) => sum + item.warnings.length, 0),
   notes: results.reduce((sum, item) => sum + item.notes.length, 0),
   duplicateSlugs: duplicateSlugs.length
@@ -121,7 +128,7 @@ const summary = {
 await fs.mkdir(reportsDir, { recursive: true });
 await fs.writeFile(
   path.join(reportsDir, "product-data-audit.json"),
-  JSON.stringify({ summary, duplicateSlugs, products: results }, null, 2),
+  JSON.stringify({ summary, duplicateSlugs, fountainResearch: {batch:'35.0B', status:fountainResearch.status, errors:fountainResearch.errors, products:fountainResearch.rows.length}, products: results }, null, 2),
   "utf8"
 );
 await fs.writeFile(
@@ -131,13 +138,14 @@ await fs.writeFile(
 );
 
 printSummary(summary, duplicateSlugs, results);
+console.log(`Fountain research 35.0B: ${fountainResearch.status} (${fountainResearch.rows.length}/24); ${fountainResearch.errors.join('; ')}`);
 
 if (strict && (summary.errors > 0 || duplicateSlugs.length > 0)) {
   process.exitCode = 1;
 }
 
 function auditProduct(product) {
-  const errors = [];
+  const errors = [...(product.foundationErrors ?? [])];
   const warnings = [];
   const notes = [];
 
