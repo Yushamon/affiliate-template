@@ -1,0 +1,37 @@
+# PFOTENTECHNIK 35.0B.1 — Gap Analysis
+
+Baseline: 24 Produkte, 11 berechenbar, 13 gezielt geprüft. Kategorien zählen Produkte, nicht disjunkte Gruppen: {"A":11,"B":7,"C":6,"D":7,"E":3,"F":1,"G":0,"H":0}.
+
+A Commerce · B Packung · C Intervall · D Kompatibilität · E Identität · F nicht anwendbar · G unzureichende Herstellerdaten · H sonstige. Priorisierung: ein Commerce-Wert vor Intervall vor Mehrfachlücken; F nur semantisch geprüft.
+
+| Produkt | Pflichtstatus | Filteridentität | exakte Zubehörkompatibilität | Intervall | Packung | kaufbares Angebot | Preisbetrag | Blocker | recherchierbar / strukturell |
+|---|---|---|---|---|---|---|---|---|---|
+| cat-mate-shell-fountain | unknown | true | exact replacement family | true | true | false | true | A: Ausverkauft | true / false |
+| petlibro-capsule-dog-fountain | unknown | true | exact replacement family | true | true | false | true | A: Ausverkauft | true / false |
+| petsafe-streamside-trinkbrunnen | unknown | true | exact replacement family | true | true | false | false | A: Kein aktuelles, exakt zugeordnetes Angebot | true / false |
+| xiaomi-smart-pet-fountain-2 | unknown | true | exact replacement family | true | true | false | false | A: Kein aktuelles, exakt zugeordnetes Angebot | true / false |
+| oneisall-7l-dog-water-fountain | unknown | true | Exact EU SKU PJ17023 already verified in 35.0B | false | true | true | true | C: Widerspruch oder fehlende modellspezifische Vorgabe | true / false |
+| feelneedy-fn-w18-8l-katzenbrunnen | unknown | false | installed filter only until exact replacement SKU is confirmed | false | false | false | false | A: Kein aktuelles, exakt zugeordnetes Angebot; B: Ersatzpackung unbekannt; Lieferumfang ist keine bepreiste Ersatzpackung; C: Widerspruch oder fehlende modellspezifische Vorgabe; D: Vorhandene Kompatibilität beschreibt eingebauten Filter; exakte EU-Ersatz-SKU/-Familie muss bestätigt werden | true / false |
+| petkit-eversweet-5-mini | unknown | false | installed filter only until exact replacement SKU is confirmed | false | false | false | false | A: Kein aktuelles, exakt zugeordnetes Angebot; B: Ersatzpackung unbekannt; Lieferumfang ist keine bepreiste Ersatzpackung; C: Widerspruch oder fehlende modellspezifische Vorgabe; D: Vorhandene Kompatibilität beschreibt eingebauten Filter; exakte EU-Ersatz-SKU/-Familie muss bestätigt werden | true / false |
+| petkit-eversweet-max-2-uvc | known | false | installed filter only until exact replacement SKU is confirmed | true | false | false | false | A: Kein aktuelles, exakt zugeordnetes Angebot; B: Ersatzpackung unbekannt; Lieferumfang ist keine bepreiste Ersatzpackung; D: Vorhandene Kompatibilität beschreibt eingebauten Filter; exakte EU-Ersatz-SKU/-Familie muss bestätigt werden | true / false |
+| petlibro-stainless-steel-fountain | unknown | false | installed filter only until exact replacement SKU is confirmed | true | false | false | false | A: Kein aktuelles, exakt zugeordnetes Angebot; B: Ersatzpackung unbekannt; Lieferumfang ist keine bepreiste Ersatzpackung; D: Vorhandene Kompatibilität beschreibt eingebauten Filter; exakte EU-Ersatz-SKU/-Familie muss bestätigt werden | true / false |
+| oneisall-2-2l-cordless-fountain | unknown | false | installed filter only until exact replacement SKU is confirmed | false | false | false | false | A: Kein aktuelles, exakt zugeordnetes Angebot; B: Ersatzpackung unbekannt; Lieferumfang ist keine bepreiste Ersatzpackung; C: Widerspruch oder fehlende modellspezifische Vorgabe; D: Vorhandene Kompatibilität beschreibt eingebauten Filter; exakte EU-Ersatz-SKU/-Familie muss bestätigt werden; E: Regionale Modell-/Zubehörzuordnung offen | true / false |
+| oneisall-3-2l-cordless-fountain | unknown | false | installed filter only until exact replacement SKU is confirmed | false | false | false | false | A: Kein aktuelles, exakt zugeordnetes Angebot; B: Ersatzpackung unbekannt; Lieferumfang ist keine bepreiste Ersatzpackung; C: Widerspruch oder fehlende modellspezifische Vorgabe; D: Vorhandene Kompatibilität beschreibt eingebauten Filter; exakte EU-Ersatz-SKU/-Familie muss bestätigt werden; E: Regionale Modell-/Zubehörzuordnung offen | true / false |
+| oneisall-3-5l-cordless-fountain | unknown | false | installed filter only until exact replacement SKU is confirmed | false | false | false | false | A: Kein aktuelles, exakt zugeordnetes Angebot; B: Ersatzpackung unbekannt; Lieferumfang ist keine bepreiste Ersatzpackung; C: Widerspruch oder fehlende modellspezifische Vorgabe; D: Vorhandene Kompatibilität beschreibt eingebauten Filter; exakte EU-Ersatz-SKU/-Familie muss bestätigt werden; E: Regionale Modell-/Zubehörzuordnung offen | true / false |
+| petkit-eversweet-ultra | notApplicable | false | exact replacement family | null | null | false | false | F: Kein klassischer Filter. Cube C separat; keine 0-EUR-Kosten. | false / true |
+
+Vollständige Feldzustände, Hersteller/Modell und Engine-Blocker stehen in der JSON-Matrix. Bekannter Listenpreis bedeutet keine Kaufbarkeit. Unbekannte Filterpflicht verhindert die bedingte Hauptfilterrechnung nicht, wohl aber eine Pflicht-/Gesamtkostenaussage. G wird erst nach gezielter Recherche vergeben; erfolglose Suche beweist keine dauerhafte Unkenntlichkeit.
+
+- **cat-mate-shell-fountain: RESOLVED.** Geschlossen A, verbleibend keine arithmetischen Blocker. Pflichtstatus und Gesamtkosten bleiben gesondert zu prüfen.
+- **petlibro-capsule-dog-fountain: UNKNOWN.** Geschlossen keine, verbleibend A. Temporäre Commerce-Lücke; nicht dauerhaft strukturell unkenntlich.
+- **petsafe-streamside-trinkbrunnen: RESOLVED.** Geschlossen A, verbleibend keine arithmetischen Blocker. Pflichtstatus und Gesamtkosten bleiben gesondert zu prüfen.
+- **xiaomi-smart-pet-fountain-2: RESOLVED.** Geschlossen A, verbleibend keine arithmetischen Blocker. Pflichtstatus und Gesamtkosten bleiben gesondert zu prüfen.
+- **oneisall-7l-dog-water-fountain: UNKNOWN.** Geschlossen keine, verbleibend C. Widerspruch/Variantenabgrenzung erfordert eindeutige Herstellerklärung.
+- **feelneedy-fn-w18-8l-katzenbrunnen: PARTIAL.** Geschlossen C, verbleibend A, B, D, G. Öffentliche Bestellinformationen unzureichend; kontaktgebundene Beschaffung, nicht dauerhaft unkenntliches Intervall.
+- **petkit-eversweet-5-mini: UNKNOWN.** Geschlossen keine, verbleibend A, B, C, D, G. Herstellerdaten reichen für exakte Ersatzfilter- und Intervallzuordnung nicht aus.
+- **petkit-eversweet-max-2-uvc: RESOLVED.** Geschlossen A, B, D, verbleibend keine arithmetischen Blocker. Pflichtstatus und Gesamtkosten bleiben gesondert zu prüfen.
+- **petlibro-stainless-steel-fountain: UNKNOWN.** Geschlossen keine, verbleibend A, B, D, G. US-Zubehörname ohne hinreichende genaue EU-Offer-Zuordnung reicht nicht.
+- **oneisall-2-2l-cordless-fountain: PARTIAL.** Geschlossen C, verbleibend A, B, D, E. EU-Modell-/Zubehöridentität offen; kein USD-Angebot als EUR importiert.
+- **oneisall-3-2l-cordless-fountain: UNKNOWN.** Geschlossen keine, verbleibend A, B, C, D, E. Widerspruch im selben Manual; kein Mittelwert und keine Intervallverschmelzung.
+- **oneisall-3-5l-cordless-fountain: PARTIAL.** Geschlossen C, verbleibend A, B, D, E. Keine stillschweigende Umstellung des untersuchten Produkts auf die EU-Silbervariante.
+- **petkit-eversweet-ultra: NOT_APPLICABLE.** Geschlossen keine, verbleibend F. Strukturell außerhalb des Hauptfilter-Nenners; kein UNKNOWN-Preis und kein Nullwert.

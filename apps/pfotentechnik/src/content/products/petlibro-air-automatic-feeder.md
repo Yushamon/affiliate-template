@@ -69,7 +69,7 @@ price:
   current: 62.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-28T09:04:45.926Z"
+  checkedAt: "2026-09-09T06:22:27.914Z"
   source:
     id: "mediamarkt.de"
     label: "mediamarkt.de"
@@ -84,12 +84,12 @@ rating: 3.6
 score: 72
 
 priceState: "available"
-priceUpdated: "2026-08-28T09:04:45.926Z"
+priceUpdated: "2026-09-09T06:22:27.914Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-28T09:04:45.926Z"
+availabilityUpdated: "2026-09-09T06:22:27.914Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

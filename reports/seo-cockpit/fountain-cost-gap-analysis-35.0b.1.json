@@ -1,0 +1,754 @@
+{
+  "batch": "35.0B.1",
+  "baselineCalculable": 11,
+  "total": 24,
+  "gaps": [
+    {
+      "slug": "cat-mate-shell-fountain",
+      "manufacturer": "Cat Mate",
+      "model": "Cat Mate Shell Pet Fountain",
+      "filterRequiredStatus": {
+        "status": "unknown"
+      },
+      "filterIdentityKnown": true,
+      "compatibilityKnown": {
+        "status": "known",
+        "value": [
+          "cat-mate-shell-fountain"
+        ]
+      },
+      "compatibilityScope": "exact replacement family",
+      "replacementIntervalKnown": true,
+      "packSizeKnown": true,
+      "currentCompatibleOfferKnown": false,
+      "currentPriceKnown": true,
+      "priceCaveat": "Listenpreis kann bekannt, aber nicht kaufbar sein; price.status unknown ist Preisniveau, nicht fehlender Betrag.",
+      "engineBlockers": [
+        "currentAvailablePrice"
+      ],
+      "blockers": [
+        {
+          "code": "A",
+          "field": "currentAvailableOffer",
+          "detail": "Ausverkauft"
+        }
+      ],
+      "potentiallyResearchable": true,
+      "likelyStructurallyUnknowable": false,
+      "structuralAssessment": "Noch nicht feststellbar; negative Suchergebnisse beweisen keine dauerhafte Unkenntlichkeit.",
+      "priority": 1
+    },
+    {
+      "slug": "petlibro-capsule-dog-fountain",
+      "manufacturer": "PETLIBRO",
+      "model": "PETLIBRO Capsule Dog Fountain",
+      "filterRequiredStatus": {
+        "status": "unknown"
+      },
+      "filterIdentityKnown": true,
+      "compatibilityKnown": {
+        "status": "known",
+        "value": [
+          "petlibro-capsule-dog-fountain"
+        ]
+      },
+      "compatibilityScope": "exact replacement family",
+      "replacementIntervalKnown": true,
+      "packSizeKnown": true,
+      "currentCompatibleOfferKnown": false,
+      "currentPriceKnown": true,
+      "priceCaveat": "Listenpreis kann bekannt, aber nicht kaufbar sein; price.status unknown ist Preisniveau, nicht fehlender Betrag.",
+      "engineBlockers": [
+        "currentAvailablePrice"
+      ],
+      "blockers": [
+        {
+          "code": "A",
+          "field": "currentAvailableOffer",
+          "detail": "Ausverkauft"
+        }
+      ],
+      "potentiallyResearchable": true,
+      "likelyStructurallyUnknowable": false,
+      "structuralAssessment": "Noch nicht feststellbar; negative Suchergebnisse beweisen keine dauerhafte Unkenntlichkeit.",
+      "priority": 1
+    },
+    {
+      "slug": "petsafe-streamside-trinkbrunnen",
+      "manufacturer": "PetSafe",
+      "model": "PetSafe Keramik-Trinkbrunnen Streamside",
+      "filterRequiredStatus": {
+        "status": "unknown"
+      },
+      "filterIdentityKnown": true,
+      "compatibilityKnown": {
+        "status": "known",
+        "value": [
+          "petsafe-streamside-trinkbrunnen"
+        ]
+      },
+      "compatibilityScope": "exact replacement family",
+      "replacementIntervalKnown": true,
+      "packSizeKnown": true,
+      "currentCompatibleOfferKnown": false,
+      "currentPriceKnown": false,
+      "priceCaveat": "Listenpreis kann bekannt, aber nicht kaufbar sein; price.status unknown ist Preisniveau, nicht fehlender Betrag.",
+      "engineBlockers": [
+        "selectedOffer"
+      ],
+      "blockers": [
+        {
+          "code": "A",
+          "field": "currentAvailableOffer",
+          "detail": "Kein aktuelles, exakt zugeordnetes Angebot"
+        }
+      ],
+      "potentiallyResearchable": true,
+      "likelyStructurallyUnknowable": false,
+      "structuralAssessment": "Noch nicht feststellbar; negative Suchergebnisse beweisen keine dauerhafte Unkenntlichkeit.",
+      "priority": 1
+    },
+    {
+      "slug": "xiaomi-smart-pet-fountain-2",
+      "manufacturer": "Xiaomi",
+      "model": "Xiaomi Smart Pet Fountain 2",
+      "filterRequiredStatus": {
+        "status": "unknown"
+      },
+      "filterIdentityKnown": true,
+      "compatibilityKnown": {
+        "status": "known",
+        "value": [
+          "xiaomi-smart-pet-fountain-2"
+        ]
+      },
+      "compatibilityScope": "exact replacement family",
+      "replacementIntervalKnown": true,
+      "packSizeKnown": true,
+      "currentCompatibleOfferKnown": false,
+      "currentPriceKnown": false,
+      "priceCaveat": "Listenpreis kann bekannt, aber nicht kaufbar sein; price.status unknown ist Preisniveau, nicht fehlender Betrag.",
+      "engineBlockers": [
+        "selectedOffer"
+      ],
+      "blockers": [
+        {
+          "code": "A",
+          "field": "currentAvailableOffer",
+          "detail": "Kein aktuelles, exakt zugeordnetes Angebot"
+        }
+      ],
+      "potentiallyResearchable": true,
+      "likelyStructurallyUnknowable": false,
+      "structuralAssessment": "Noch nicht feststellbar; negative Suchergebnisse beweisen keine dauerhafte Unkenntlichkeit.",
+      "priority": 1
+    },
+    {
+      "slug": "oneisall-7l-dog-water-fountain",
+      "manufacturer": "oneisall",
+      "model": "oneisall 7L Dog Water Fountain",
+      "filterRequiredStatus": {
+        "status": "unknown"
+      },
+      "filterIdentityKnown": true,
+      "compatibilityKnown": {
+        "status": "known",
+        "value": [
+          "oneisall-7l-dog-water-fountain"
+        ]
+      },
+      "compatibilityScope": "Exact EU SKU PJ17023 already verified in 35.0B",
+      "replacementIntervalKnown": false,
+      "packSizeKnown": true,
+      "currentCompatibleOfferKnown": true,
+      "currentPriceKnown": true,
+      "priceCaveat": "Listenpreis kann bekannt, aber nicht kaufbar sein; price.status unknown ist Preisniveau, nicht fehlender Betrag.",
+      "engineBlockers": [
+        "replacementInterval"
+      ],
+      "blockers": [
+        {
+          "code": "C",
+          "field": "replacementInterval",
+          "detail": "Widerspruch oder fehlende modellspezifische Vorgabe"
+        }
+      ],
+      "potentiallyResearchable": true,
+      "likelyStructurallyUnknowable": false,
+      "structuralAssessment": "Noch nicht feststellbar; negative Suchergebnisse beweisen keine dauerhafte Unkenntlichkeit.",
+      "priority": 3
+    },
+    {
+      "slug": "feelneedy-fn-w18-8l-katzenbrunnen",
+      "manufacturer": "FEELNEEDY",
+      "model": "FEELNEEDY FN-W18 8L Katzenbrunnen",
+      "filterRequiredStatus": {
+        "status": "unknown"
+      },
+      "filterIdentityKnown": false,
+      "compatibilityKnown": {
+        "status": "known",
+        "value": [
+          "feelneedy-fn-w18-8l-katzenbrunnen"
+        ]
+      },
+      "compatibilityScope": "installed filter only until exact replacement SKU is confirmed",
+      "replacementIntervalKnown": false,
+      "packSizeKnown": false,
+      "currentCompatibleOfferKnown": false,
+      "currentPriceKnown": false,
+      "priceCaveat": "Listenpreis kann bekannt, aber nicht kaufbar sein; price.status unknown ist Preisniveau, nicht fehlender Betrag.",
+      "engineBlockers": [
+        "packSize",
+        "replacementInterval",
+        "selectedOffer"
+      ],
+      "blockers": [
+        {
+          "code": "A",
+          "field": "currentAvailableOffer",
+          "detail": "Kein aktuelles, exakt zugeordnetes Angebot"
+        },
+        {
+          "code": "B",
+          "field": "packSize",
+          "detail": "Ersatzpackung unbekannt; Lieferumfang ist keine bepreiste Ersatzpackung"
+        },
+        {
+          "code": "C",
+          "field": "replacementInterval",
+          "detail": "Widerspruch oder fehlende modellspezifische Vorgabe"
+        },
+        {
+          "code": "D",
+          "field": "replacementFilterIdentity",
+          "detail": "Vorhandene Kompatibilität beschreibt eingebauten Filter; exakte EU-Ersatz-SKU/-Familie muss bestätigt werden"
+        }
+      ],
+      "potentiallyResearchable": true,
+      "likelyStructurallyUnknowable": false,
+      "structuralAssessment": "Noch nicht feststellbar; negative Suchergebnisse beweisen keine dauerhafte Unkenntlichkeit.",
+      "priority": 5
+    },
+    {
+      "slug": "petkit-eversweet-5-mini",
+      "manufacturer": "PETKIT",
+      "model": "PETKIT Eversweet 5 Mini",
+      "filterRequiredStatus": {
+        "status": "unknown"
+      },
+      "filterIdentityKnown": false,
+      "compatibilityKnown": {
+        "status": "known",
+        "value": [
+          "petkit-eversweet-5-mini"
+        ]
+      },
+      "compatibilityScope": "installed filter only until exact replacement SKU is confirmed",
+      "replacementIntervalKnown": false,
+      "packSizeKnown": false,
+      "currentCompatibleOfferKnown": false,
+      "currentPriceKnown": false,
+      "priceCaveat": "Listenpreis kann bekannt, aber nicht kaufbar sein; price.status unknown ist Preisniveau, nicht fehlender Betrag.",
+      "engineBlockers": [
+        "packSize",
+        "replacementInterval",
+        "selectedOffer"
+      ],
+      "blockers": [
+        {
+          "code": "A",
+          "field": "currentAvailableOffer",
+          "detail": "Kein aktuelles, exakt zugeordnetes Angebot"
+        },
+        {
+          "code": "B",
+          "field": "packSize",
+          "detail": "Ersatzpackung unbekannt; Lieferumfang ist keine bepreiste Ersatzpackung"
+        },
+        {
+          "code": "C",
+          "field": "replacementInterval",
+          "detail": "Widerspruch oder fehlende modellspezifische Vorgabe"
+        },
+        {
+          "code": "D",
+          "field": "replacementFilterIdentity",
+          "detail": "Vorhandene Kompatibilität beschreibt eingebauten Filter; exakte EU-Ersatz-SKU/-Familie muss bestätigt werden"
+        }
+      ],
+      "potentiallyResearchable": true,
+      "likelyStructurallyUnknowable": false,
+      "structuralAssessment": "Noch nicht feststellbar; negative Suchergebnisse beweisen keine dauerhafte Unkenntlichkeit.",
+      "priority": 5
+    },
+    {
+      "slug": "petkit-eversweet-max-2-uvc",
+      "manufacturer": "PETKIT",
+      "model": "PETKIT Eversweet Max 2 UVC",
+      "filterRequiredStatus": {
+        "status": "known",
+        "value": true
+      },
+      "filterIdentityKnown": false,
+      "compatibilityKnown": {
+        "status": "known",
+        "value": [
+          "petkit-eversweet-max-2-uvc"
+        ]
+      },
+      "compatibilityScope": "installed filter only until exact replacement SKU is confirmed",
+      "replacementIntervalKnown": true,
+      "packSizeKnown": false,
+      "currentCompatibleOfferKnown": false,
+      "currentPriceKnown": false,
+      "priceCaveat": "Listenpreis kann bekannt, aber nicht kaufbar sein; price.status unknown ist Preisniveau, nicht fehlender Betrag.",
+      "engineBlockers": [
+        "packSize",
+        "selectedOffer"
+      ],
+      "blockers": [
+        {
+          "code": "A",
+          "field": "currentAvailableOffer",
+          "detail": "Kein aktuelles, exakt zugeordnetes Angebot"
+        },
+        {
+          "code": "B",
+          "field": "packSize",
+          "detail": "Ersatzpackung unbekannt; Lieferumfang ist keine bepreiste Ersatzpackung"
+        },
+        {
+          "code": "D",
+          "field": "replacementFilterIdentity",
+          "detail": "Vorhandene Kompatibilität beschreibt eingebauten Filter; exakte EU-Ersatz-SKU/-Familie muss bestätigt werden"
+        }
+      ],
+      "potentiallyResearchable": true,
+      "likelyStructurallyUnknowable": false,
+      "structuralAssessment": "Noch nicht feststellbar; negative Suchergebnisse beweisen keine dauerhafte Unkenntlichkeit.",
+      "priority": 5
+    },
+    {
+      "slug": "petlibro-stainless-steel-fountain",
+      "manufacturer": "PETLIBRO",
+      "model": "PETLIBRO Stainless Steel Fountain 3L",
+      "filterRequiredStatus": {
+        "status": "unknown"
+      },
+      "filterIdentityKnown": false,
+      "compatibilityKnown": {
+        "status": "known",
+        "value": [
+          "petlibro-stainless-steel-fountain"
+        ]
+      },
+      "compatibilityScope": "installed filter only until exact replacement SKU is confirmed",
+      "replacementIntervalKnown": true,
+      "packSizeKnown": false,
+      "currentCompatibleOfferKnown": false,
+      "currentPriceKnown": false,
+      "priceCaveat": "Listenpreis kann bekannt, aber nicht kaufbar sein; price.status unknown ist Preisniveau, nicht fehlender Betrag.",
+      "engineBlockers": [
+        "packSize",
+        "selectedOffer"
+      ],
+      "blockers": [
+        {
+          "code": "A",
+          "field": "currentAvailableOffer",
+          "detail": "Kein aktuelles, exakt zugeordnetes Angebot"
+        },
+        {
+          "code": "B",
+          "field": "packSize",
+          "detail": "Ersatzpackung unbekannt; Lieferumfang ist keine bepreiste Ersatzpackung"
+        },
+        {
+          "code": "D",
+          "field": "replacementFilterIdentity",
+          "detail": "Vorhandene Kompatibilität beschreibt eingebauten Filter; exakte EU-Ersatz-SKU/-Familie muss bestätigt werden"
+        }
+      ],
+      "potentiallyResearchable": true,
+      "likelyStructurallyUnknowable": false,
+      "structuralAssessment": "Noch nicht feststellbar; negative Suchergebnisse beweisen keine dauerhafte Unkenntlichkeit.",
+      "priority": 5
+    },
+    {
+      "slug": "oneisall-2-2l-cordless-fountain",
+      "manufacturer": "oneisall",
+      "model": "oneisall 2,2L Cordless Cat Fountain",
+      "filterRequiredStatus": {
+        "status": "unknown"
+      },
+      "filterIdentityKnown": false,
+      "compatibilityKnown": {
+        "status": "known",
+        "value": [
+          "oneisall-2-2l-cordless-fountain"
+        ]
+      },
+      "compatibilityScope": "installed filter only until exact replacement SKU is confirmed",
+      "replacementIntervalKnown": false,
+      "packSizeKnown": false,
+      "currentCompatibleOfferKnown": false,
+      "currentPriceKnown": false,
+      "priceCaveat": "Listenpreis kann bekannt, aber nicht kaufbar sein; price.status unknown ist Preisniveau, nicht fehlender Betrag.",
+      "engineBlockers": [
+        "packSize",
+        "replacementInterval",
+        "selectedOffer"
+      ],
+      "blockers": [
+        {
+          "code": "A",
+          "field": "currentAvailableOffer",
+          "detail": "Kein aktuelles, exakt zugeordnetes Angebot"
+        },
+        {
+          "code": "B",
+          "field": "packSize",
+          "detail": "Ersatzpackung unbekannt; Lieferumfang ist keine bepreiste Ersatzpackung"
+        },
+        {
+          "code": "C",
+          "field": "replacementInterval",
+          "detail": "Widerspruch oder fehlende modellspezifische Vorgabe"
+        },
+        {
+          "code": "D",
+          "field": "replacementFilterIdentity",
+          "detail": "Vorhandene Kompatibilität beschreibt eingebauten Filter; exakte EU-Ersatz-SKU/-Familie muss bestätigt werden"
+        },
+        {
+          "code": "E",
+          "field": "EUIdentity",
+          "detail": "Regionale Modell-/Zubehörzuordnung offen"
+        }
+      ],
+      "potentiallyResearchable": true,
+      "likelyStructurallyUnknowable": false,
+      "structuralAssessment": "Noch nicht feststellbar; negative Suchergebnisse beweisen keine dauerhafte Unkenntlichkeit.",
+      "priority": 6
+    },
+    {
+      "slug": "oneisall-3-2l-cordless-fountain",
+      "manufacturer": "oneisall",
+      "model": "oneisall 3,2L Cordless Cat Fountain",
+      "filterRequiredStatus": {
+        "status": "unknown"
+      },
+      "filterIdentityKnown": false,
+      "compatibilityKnown": {
+        "status": "known",
+        "value": [
+          "oneisall-3-2l-cordless-fountain"
+        ]
+      },
+      "compatibilityScope": "installed filter only until exact replacement SKU is confirmed",
+      "replacementIntervalKnown": false,
+      "packSizeKnown": false,
+      "currentCompatibleOfferKnown": false,
+      "currentPriceKnown": false,
+      "priceCaveat": "Listenpreis kann bekannt, aber nicht kaufbar sein; price.status unknown ist Preisniveau, nicht fehlender Betrag.",
+      "engineBlockers": [
+        "packSize",
+        "replacementInterval",
+        "selectedOffer"
+      ],
+      "blockers": [
+        {
+          "code": "A",
+          "field": "currentAvailableOffer",
+          "detail": "Kein aktuelles, exakt zugeordnetes Angebot"
+        },
+        {
+          "code": "B",
+          "field": "packSize",
+          "detail": "Ersatzpackung unbekannt; Lieferumfang ist keine bepreiste Ersatzpackung"
+        },
+        {
+          "code": "C",
+          "field": "replacementInterval",
+          "detail": "Widerspruch oder fehlende modellspezifische Vorgabe"
+        },
+        {
+          "code": "D",
+          "field": "replacementFilterIdentity",
+          "detail": "Vorhandene Kompatibilität beschreibt eingebauten Filter; exakte EU-Ersatz-SKU/-Familie muss bestätigt werden"
+        },
+        {
+          "code": "E",
+          "field": "EUIdentity",
+          "detail": "Regionale Modell-/Zubehörzuordnung offen"
+        }
+      ],
+      "potentiallyResearchable": true,
+      "likelyStructurallyUnknowable": false,
+      "structuralAssessment": "Noch nicht feststellbar; negative Suchergebnisse beweisen keine dauerhafte Unkenntlichkeit.",
+      "priority": 6
+    },
+    {
+      "slug": "oneisall-3-5l-cordless-fountain",
+      "manufacturer": "oneisall",
+      "model": "oneisall 3,5L Cordless Fountain",
+      "filterRequiredStatus": {
+        "status": "unknown"
+      },
+      "filterIdentityKnown": false,
+      "compatibilityKnown": {
+        "status": "known",
+        "value": [
+          "oneisall-3-5l-cordless-fountain"
+        ]
+      },
+      "compatibilityScope": "installed filter only until exact replacement SKU is confirmed",
+      "replacementIntervalKnown": false,
+      "packSizeKnown": false,
+      "currentCompatibleOfferKnown": false,
+      "currentPriceKnown": false,
+      "priceCaveat": "Listenpreis kann bekannt, aber nicht kaufbar sein; price.status unknown ist Preisniveau, nicht fehlender Betrag.",
+      "engineBlockers": [
+        "packSize",
+        "replacementInterval",
+        "selectedOffer"
+      ],
+      "blockers": [
+        {
+          "code": "A",
+          "field": "currentAvailableOffer",
+          "detail": "Kein aktuelles, exakt zugeordnetes Angebot"
+        },
+        {
+          "code": "B",
+          "field": "packSize",
+          "detail": "Ersatzpackung unbekannt; Lieferumfang ist keine bepreiste Ersatzpackung"
+        },
+        {
+          "code": "C",
+          "field": "replacementInterval",
+          "detail": "Widerspruch oder fehlende modellspezifische Vorgabe"
+        },
+        {
+          "code": "D",
+          "field": "replacementFilterIdentity",
+          "detail": "Vorhandene Kompatibilität beschreibt eingebauten Filter; exakte EU-Ersatz-SKU/-Familie muss bestätigt werden"
+        },
+        {
+          "code": "E",
+          "field": "EUIdentity",
+          "detail": "Regionale Modell-/Zubehörzuordnung offen"
+        }
+      ],
+      "potentiallyResearchable": true,
+      "likelyStructurallyUnknowable": false,
+      "structuralAssessment": "Noch nicht feststellbar; negative Suchergebnisse beweisen keine dauerhafte Unkenntlichkeit.",
+      "priority": 6
+    },
+    {
+      "slug": "petkit-eversweet-ultra",
+      "manufacturer": "PETKIT",
+      "model": "PETKIT Eversweet Ultra",
+      "filterRequiredStatus": {
+        "status": "notApplicable"
+      },
+      "filterIdentityKnown": false,
+      "compatibilityKnown": {
+        "status": "notApplicable"
+      },
+      "compatibilityScope": "exact replacement family",
+      "replacementIntervalKnown": null,
+      "packSizeKnown": null,
+      "currentCompatibleOfferKnown": false,
+      "currentPriceKnown": false,
+      "priceCaveat": "Listenpreis kann bekannt, aber nicht kaufbar sein; price.status unknown ist Preisniveau, nicht fehlender Betrag.",
+      "engineBlockers": [
+        "noConventionalFilter; otherConsumablesNotZero"
+      ],
+      "blockers": [
+        {
+          "code": "F",
+          "field": "mainFilter",
+          "detail": "Kein klassischer Filter. Cube C separat; keine 0-EUR-Kosten."
+        }
+      ],
+      "potentiallyResearchable": false,
+      "likelyStructurallyUnknowable": true,
+      "structuralAssessment": "notApplicable, kein Research-Defizit",
+      "priority": 6
+    }
+  ],
+  "legend": {
+    "A": "COMMERCE GAP",
+    "B": "PACK-SIZE GAP",
+    "C": "INTERVAL GAP",
+    "D": "COMPATIBILITY GAP",
+    "E": "PRODUCT-IDENTITY GAP",
+    "F": "FILTER-NOT-REQUIRED / NOT APPLICABLE",
+    "G": "MANUFACTURER DOES NOT PROVIDE SUFFICIENT DATA",
+    "H": "OTHER"
+  },
+  "notes": [
+    "Filterpflicht fehlt bei vielen Produkten, blockiert aber nicht die bedingte Hauptfilterprojektion; blockiert Pflichtkostenbehauptung.",
+    "KNOWN compatibility im Baseline-Modell ist nicht immer verifizierte Ersatzteilidentität.",
+    "G wird erst nach gezielter Recherche bewertet; fehlende Treffer nicht als dauerhaft unbekannt etikettiert."
+  ],
+  "classificationCounts": {
+    "A": 11,
+    "B": 7,
+    "C": 6,
+    "D": 7,
+    "E": 3,
+    "F": 1,
+    "G": 0,
+    "H": 0
+  },
+  "afterResearch": [
+    {
+      "slug": "cat-mate-shell-fountain",
+      "resolved": [
+        "A"
+      ],
+      "remaining": [],
+      "outcome": "RESOLVED",
+      "stop": null
+    },
+    {
+      "slug": "petlibro-capsule-dog-fountain",
+      "resolved": [],
+      "remaining": [
+        "A"
+      ],
+      "outcome": "UNKNOWN",
+      "stop": "Temporäre Commerce-Lücke; nicht dauerhaft strukturell unkenntlich."
+    },
+    {
+      "slug": "petsafe-streamside-trinkbrunnen",
+      "resolved": [
+        "A"
+      ],
+      "remaining": [],
+      "outcome": "RESOLVED",
+      "stop": null
+    },
+    {
+      "slug": "xiaomi-smart-pet-fountain-2",
+      "resolved": [
+        "A"
+      ],
+      "remaining": [],
+      "outcome": "RESOLVED",
+      "stop": null
+    },
+    {
+      "slug": "oneisall-7l-dog-water-fountain",
+      "resolved": [],
+      "remaining": [
+        "C"
+      ],
+      "outcome": "UNKNOWN",
+      "stop": "Widerspruch/Variantenabgrenzung erfordert eindeutige Herstellerklärung."
+    },
+    {
+      "slug": "feelneedy-fn-w18-8l-katzenbrunnen",
+      "resolved": [
+        "C"
+      ],
+      "remaining": [
+        "A",
+        "B",
+        "D",
+        "G"
+      ],
+      "outcome": "PARTIAL",
+      "stop": "Öffentliche Bestellinformationen unzureichend; kontaktgebundene Beschaffung, nicht dauerhaft unkenntliches Intervall."
+    },
+    {
+      "slug": "petkit-eversweet-5-mini",
+      "resolved": [],
+      "remaining": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "G"
+      ],
+      "outcome": "UNKNOWN",
+      "stop": "Herstellerdaten reichen für exakte Ersatzfilter- und Intervallzuordnung nicht aus."
+    },
+    {
+      "slug": "petkit-eversweet-max-2-uvc",
+      "resolved": [
+        "A",
+        "B",
+        "D"
+      ],
+      "remaining": [],
+      "outcome": "RESOLVED",
+      "stop": null
+    },
+    {
+      "slug": "petlibro-stainless-steel-fountain",
+      "resolved": [],
+      "remaining": [
+        "A",
+        "B",
+        "D",
+        "G"
+      ],
+      "outcome": "UNKNOWN",
+      "stop": "US-Zubehörname ohne hinreichende genaue EU-Offer-Zuordnung reicht nicht."
+    },
+    {
+      "slug": "oneisall-2-2l-cordless-fountain",
+      "resolved": [
+        "C"
+      ],
+      "remaining": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "outcome": "PARTIAL",
+      "stop": "EU-Modell-/Zubehöridentität offen; kein USD-Angebot als EUR importiert."
+    },
+    {
+      "slug": "oneisall-3-2l-cordless-fountain",
+      "resolved": [],
+      "remaining": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "outcome": "UNKNOWN",
+      "stop": "Widerspruch im selben Manual; kein Mittelwert und keine Intervallverschmelzung."
+    },
+    {
+      "slug": "oneisall-3-5l-cordless-fountain",
+      "resolved": [
+        "C"
+      ],
+      "remaining": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "outcome": "PARTIAL",
+      "stop": "Keine stillschweigende Umstellung des untersuchten Produkts auf die EU-Silbervariante."
+    },
+    {
+      "slug": "petkit-eversweet-ultra",
+      "resolved": [],
+      "remaining": [
+        "F"
+      ],
+      "outcome": "NOT_APPLICABLE",
+      "stop": "Strukturell außerhalb des Hauptfilter-Nenners; kein UNKNOWN-Preis und kein Nullwert."
+    }
+  ]
+}

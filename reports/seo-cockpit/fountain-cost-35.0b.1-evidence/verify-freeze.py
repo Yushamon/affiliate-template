@@ -1,0 +1,17 @@
+import pathlib,json,hashlib,re,shutil
+R=pathlib.Path.cwd();E=R/'reports/seo-cockpit/fountain-cost-35.0b.1-evidence';B=R/'apps/pfotentechnik/dist';A=pathlib.Path('/tmp/pf350b1-before-dist');before=json.loads((E/'before.json').read_text());html=json.loads((E/'html-comparison.json').read_text());sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+protected=json.loads((R/'reports/seo-cockpit/visibility-34.7-evidence/protected-34.6.json').read_text());cohort=json.loads((R/'reports/seo-cockpit/visibility-34.7-evidence/monitoring-plan.json').read_text())['urls'];row={x['file']:x for x in html['pages']}
+obs=[{'url':u,'publicContentMetadataCanonicalSchemaLinksUnchanged':row[u.strip('/')+'/index.html']['assetContentNormalizedIdentical']} for u in cohort]
+pr=[{'file':p['file'],'sha256':sha(R/p['file']),'unchanged':sha(R/p['file'])==p['sha256']} for p in protected]
+content=[p for p,h in before['content'].items() if not (R/p).exists() or sha(R/p)!=h]
+sitemaps={p:sha(B/p)==h for p,h in before['sitemaps'].items()}
+new=sorted(set(row)-set(before['html']));removed=sorted(set(before['html'])-set(row));publicChanged=[p for p in html['changedAfterAssetContentNormalization'] if not p.startswith('admin/')]
+release=json.loads((R/'apps/pfotentechnik/.seo-release/preflight-latest.json').read_text());testlog=pathlib.Path('/tmp/pf350b1-tests.log').read_text();tests={k:int(re.search('ℹ '+n+r' (\d+)',testlog)[1]) for k,n in [('total','tests'),('passed','pass'),('failed','fail')]}
+assert len(obs)==15 and all(x['publicContentMetadataCanonicalSchemaLinksUnchanged'] for x in obs)
+assert len(pr)==6 and all(x['unchanged'] for x in pr)
+assert not content and all(sitemaps.values()) and not new and not removed and not publicChanged
+assert tests['failed']==0 and release['summary']['failed']==0
+v={'status':'PASS','tests':tests,'release':release['summary'],'releaseFinishedAt':release['finishedAt'],'pages':release['sitemap']['pages'],'sitemapUrls':release['sitemap']['sitemapUrls'],'sitemapUnchanged':all(sitemaps.values()),'sitemapFiles':sitemaps,'newHtmlPaths':new,'removedHtmlPaths':removed,'publicHtmlChanged':publicChanged,'cohort':obs,'protected34_6':pr,'contentFilesChanged':content,'adminOnlyDifferences':html['changedAfterAssetContentNormalization'],'adminNote':'Admin differences retained in full diff. Public comparison uses asset hashes plus a globally bijective Astro scope rename in HTML and CSS; no public text, dates, declarations or metadata ignored.','datasetGate':'PASS','productSchema':'24/24 full schema merge passed','evidenceAndCommerce':'PASS; exact field paths, selected variants and existing price schema','baseline':'2026-09-07T13:27:50.265Z','measurementEnd':'2026-09-21T13:27:50.265Z','deployed':False,'validationScope':'isolated HEAD plus 35.0B.1 only; concurrent shared-workspace price edits preserved separately'}
+(E/'validation.json').write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n')
+shutil.copy('/tmp/pf350b1-tests.log',E/'tests.log');shutil.copy('/tmp/pf350b1-isolated-release.log',E/'release.log');shutil.copy(R/'apps/pfotentechnik/.seo-release/preflight-latest.json',E/'release-preflight.json');shutil.copy(R/'apps/pfotentechnik/reports/seo-release/production-http-latest.json',E/'production-http.json')
+print(json.dumps({'status':v['status'],'tests':tests,'release':release['summary'],'cohort':len(obs),'protected':len(pr),'sitemaps':sitemaps,'contentChanged':content}))

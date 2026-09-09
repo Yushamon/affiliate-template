@@ -1,7 +1,7 @@
 {
   "batch": "35.0B",
   "publication": "internal-only",
-  "asOf": "2026-09-08T11:05:58.643712+00:00",
+  "asOf": "2026-09-09T06:19:10Z",
   "scopeSource": "reports/seo-cockpit/fountain-research-readiness-35.0a.json",
   "products": [
     {
@@ -73,6 +73,23 @@
                 },
                 "priceState": "available",
                 "availability": "out-of-stock"
+              },
+              {
+                "id": "primary-filter-35b1-zooplus",
+                "price": {
+                  "current": 15.99,
+                  "currency": "EUR",
+                  "status": "unknown",
+                  "checkedAt": "2026-09-09T06:08:44.978442+00:00",
+                  "source": {
+                    "id": "www.zooplus.de",
+                    "label": "Cat Mate 386 Dreistufenfilter · Einzelkauf",
+                    "type": "merchant",
+                    "url": "https://www.zooplus.de/shop/hunde/fressnapf/hundetraenke/1405119?variantId=1405119.2"
+                  }
+                },
+                "priceState": "available",
+                "availability": "available"
               }
             ]
           }
@@ -123,6 +140,17 @@
               "repairability.parts.0.status"
             ],
             "assertion": "Offizielle kompatible EU-Ersatzpumpe gelistet. Offizielle kompatible EU-Ersatzpumpe gelistet."
+          },
+          {
+            "source": "www.zooplus.de",
+            "url": "https://www.zooplus.de/shop/hunde/fressnapf/hundetraenke/1405119?variantId=1405119.2",
+            "accessedAt": "2026-09-09T06:08:44.978442+00:00",
+            "sourceType": "retailer",
+            "fields": [
+              "consumables.0.packSize",
+              "consumables.0.offers"
+            ],
+            "assertion": "Zooplus Variante 1405119.2: 4 Stück, 15,99 EUR inkl. MwSt., verfügbar. GTIN 035368003868 entspricht Hersteller-386 mit führender Null; offizielle 386-Zuordnung zu Shell 410/410E bleibt maßgeblich. 13,59 EUR ist der ausgeschlossene Abopreis."
           }
         ],
         "comparisonData": {
@@ -190,7 +218,7 @@
         }
       },
       "representativeOfferIds": {
-        "primary-filter-0": "primary-filter-0-eu-standard"
+        "primary-filter-0": "primary-filter-35b1-zooplus"
       },
       "research": {
         "identity": {
@@ -238,6 +266,28 @@
             "sourceUrl": "https://closerpets.de/products/3-stage-filter-cartridges-pet-fountain-4-pack",
             "availability": "out-of-stock",
             "reason": "Normale kleine Ersatzpackung als repräsentativer Einzelkauf; kein Abo, Gutschein oder günstigster Stückpreis. Andere Packgrößen nicht an dasselbe item.packSize gebunden."
+          },
+          {
+            "consumableId": "primary-filter-0",
+            "offerId": "primary-filter-35b1-zooplus",
+            "packSize": 4,
+            "price": 15.99,
+            "variantId": "1405119.2",
+            "sku": "035368003868",
+            "sourceUrl": "https://www.zooplus.de/shop/hunde/fressnapf/hundetraenke/1405119?variantId=1405119.2",
+            "availability": "available",
+            "reason": "Exakte Ersatzpackung, regulärer Einzelkauf ohne Abo/Gutschein. Zooplus Variante 1405119.2: 4 Stück, 15,99 EUR inkl. MwSt., verfügbar. GTIN 035368003868 entspricht Hersteller-386 mit führender Null; offizielle 386-Zuordnung zu Shell 410/410E bleibt maßgeblich. 13,59 EUR ist der ausgeschlossene Abopreis.",
+            "variantEvidence": {
+              "sourceUrl": "https://www.zooplus.de/shop/hunde/fressnapf/hundetraenke/1405119?variantId=1405119.2",
+              "retrievedAt": "2026-09-09T06:08:44.978442+00:00",
+              "responseSha256": "9469514978eb06410532ae870c346d96f7984f0a72a0eafc64d014d0e9ced461",
+              "variantId": "1405119.2",
+              "title": "Zubehör: Ersatzfilter (4 Stück)",
+              "sku": "035368003868",
+              "packSize": 4,
+              "priceEUR": 15.99,
+              "available": true
+            }
           }
         ],
         "conflicts": [],
@@ -247,16 +297,32 @@
           "consumables.0.required": "Keine ausdrückliche modellspezifische offizielle Freigabe/Pflichtaussage.",
           "consumables.0.dependency": "Keine ausdrückliche modellspezifische offizielle Freigabe/Pflichtaussage.",
           "consumables.0.partNumber": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
-          "consumables.0.offers.0.price": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "comparisonData.fountain.powerType": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "comparisonData.fountain.batteryRuntime": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "comparisonData.fountain.lowWaterShutdown": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "comparisonData.fountain.waterLevelVisible": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "comparisonData.fountain.pumpRemovable": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
-          "comparisonData.fountain.dishwasherSafeParts": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
-          "repairability.parts.0.offers.0.price": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot."
+          "comparisonData.fountain.dishwasherSafeParts": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot."
         },
-        "followUps": []
+        "followUps": [],
+        "completionBatch": "35.0B.1",
+        "completion35B1": {
+          "outcome": "RESOLVED",
+          "resolved": [
+            "A"
+          ],
+          "remaining": [],
+          "note": "Zooplus 1405119.2, regulär 15,99 EUR/4, verfügbar und brutto. GTIN 035368003868 = Hersteller-386 mit führender Null; Hersteller nennt Shell 410/410E. Abo 13,59 EUR ausgeschlossen. Ein Filterplatz und monatlicher Wechsel bei einem Tier; optionale zweite Patrone bei Mehrtierhaltung nicht als Pflicht hochgerechnet.",
+          "stop": null,
+          "sourceUrls": [
+            "https://www.zooplus.de/shop/hunde/fressnapf/hundetraenke/1405119?variantId=1405119.2",
+            "https://www.zooplus.de/shop/hunde/fressnapf/hundetraenke/1405119?variantId=1405119.2",
+            "https://www.fressnapf.de/p/cat-mate-ersatzfilter-3-stufen-filter-fuer-cat-mate-und-dog-mate-trinkbrunnen-4er-pack-386-1734335/",
+            "https://www.zooplus.hu/pictures/product/CatMate410ShellPetFountain0621DIGinstructions.pdf",
+            "https://closerpets.de/products/3-stage-filter-cartridges-pet-fountain-4-pack.js",
+            "https://closerpets.de/products/3-stage-filter-cartridges-pet-fountain-4-pack"
+          ]
+        }
       }
     },
     {
@@ -522,7 +588,7 @@
           "consumablePolicy.inventoryComplete": "Keine umfassende Freigabe, dass alle regelmäßigen Verbrauchsteile vollständig erfasst sind. Keine Nullkosten-/Gesamt-TCO-Aussage.",
           "consumables.0.required": "Keine ausdrückliche modellspezifische offizielle Freigabe/Pflichtaussage.",
           "consumables.0.dependency": "Keine ausdrückliche modellspezifische offizielle Freigabe/Pflichtaussage.",
-          "consumables.0.replacementInterval": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
+          "consumables.0.replacementInterval": "Support verknüpft 7L PRO / PWF-002-B mit dem Visual-Water-Level-Produkt und einem PDF mit 2–4 Wochen. Baseline-EU-Shop nennt sowohl 2–3 als auch 2–4 Wochen. Sichere Gleichsetzung des regulatorischen PRO-Modells mit der bisherigen EU-Variante ist nicht dokumentiert; keine Auswahl des günstigeren Intervalls.",
           "consumables.0.partNumber": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "consumables.0.offers.0.price": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "comparisonData.fountain.powerType": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
@@ -539,7 +605,22 @@
           "consumables.1.partNumber": "Lieferumfang belegt Schwamm, aber keine separate belegte Ersatzpackung, Pflicht-/Intervall- oder Preisangabe.",
           "consumables.1.offers": "Lieferumfang belegt Schwamm, aber keine separate belegte Ersatzpackung, Pflicht-/Intervall- oder Preisangabe."
         },
-        "followUps": []
+        "followUps": [],
+        "completion35B1": {
+          "outcome": "UNKNOWN",
+          "resolved": [],
+          "remaining": [
+            "C"
+          ],
+          "note": "Support verknüpft 7L PRO / PWF-002-B mit dem Visual-Water-Level-Produkt und einem PDF mit 2–4 Wochen. Baseline-EU-Shop nennt sowohl 2–3 als auch 2–4 Wochen. Sichere Gleichsetzung des regulatorischen PRO-Modells mit der bisherigen EU-Variante ist nicht dokumentiert; keine Auswahl des günstigeren Intervalls.",
+          "stop": "Widerspruch/Variantenabgrenzung erfordert eindeutige Herstellerklärung.",
+          "sourceUrls": [
+            "https://oneisall.com/products/oneisall-7l-dog-water-fountain-with-visual-water-level-for-large-dogs",
+            "https://eu.oneisall.com/pages/support-water",
+            "https://oneisall.com/pages/support-water",
+            "https://oneisall.com/cdn/shop/files/7L_cf861dc4-2470-478a-96c0-372ca0a4033d.pdf?v=16619465402381977845"
+          ]
+        }
       }
     },
     {
@@ -1039,7 +1120,17 @@
           "comparisonData.fountain.dishwasherSafeParts": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "repairability.parts.0": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot."
         },
-        "followUps": []
+        "followUps": [],
+        "completion35B1": {
+          "outcome": "NOT_APPLICABLE",
+          "resolved": [],
+          "remaining": [
+            "F"
+          ],
+          "note": "Keine konventionelle Hauptfilterpatrone. Verpflichtendes Cube C bleibt waterTreatment, kein kostenloser Gesamtbetrieb. Nur semantische Prüfung der Baseline, keine erneute Commerce-Recherche.",
+          "stop": "Strukturell außerhalb des Hauptfilter-Nenners; kein UNKNOWN-Preis und kein Nullwert.",
+          "sourceUrls": []
+        }
       }
     },
     {
@@ -1753,7 +1844,29 @@
           "consumables.0.offers": "Kein belastbar zuordenbares aktuelles DE/EU-Ersatzangebot mit identischer Packung und Preis bestätigt.",
           "consumables.0.filterType": "Filter vorhanden, Material-/Schichtaufbau nicht hinreichend genau belegt."
         },
-        "followUps": []
+        "followUps": [],
+        "completion35B1": {
+          "outcome": "UNKNOWN",
+          "resolved": [],
+          "remaining": [
+            "A",
+            "B",
+            "D",
+            "G"
+          ],
+          "note": "Offizielle US-Stainless-Ersatzfilterseite gefunden, entsprechende DE-Seite 404. Keine ausreichend explizite PLWF006-Zuordnung mit aktueller EU-Packung und Preis. Dockstream-ASIN nicht übertragen.",
+          "stop": "US-Zubehörname ohne hinreichende genaue EU-Offer-Zuordnung reicht nicht.",
+          "sourceUrls": [
+            "https://de.petlibro.com/products/petlibro-stainless-steel-automatic-pet-water-fountain-replacement-filters-4-packs",
+            "https://petlibro.com/products/stainless-steel-replacement-filter",
+            "https://de.petlibro.com/products/stainless-steel-replacement-filter.js",
+            "https://petlibro.com/products/petlibro-stainless-steel-automatic-pet-water-fountain-replacement-filters-4-packs",
+            "https://de.petlibro.com/products/petlibro-stainless-steel-automatic-pet-water-fountain-replacement-filters-4-packs.js",
+            "https://petlibro.com/products/petlibro-automatic-pet-water-fountain-3l-stainless-steel",
+            "https://de.petlibro.com/products/stainless-steel-replacement-filter",
+            "https://de.petlibro.com/products/stainless-steel-water-fountain-replacement-filter"
+          ]
+        }
       }
     },
     {
@@ -1809,7 +1922,25 @@
               "status": "known",
               "value": "MJLXTZ03"
             },
-            "offers": []
+            "offers": [
+              {
+                "id": "primary-filter-35b1-techpunt",
+                "price": {
+                  "current": 14.95,
+                  "currency": "EUR",
+                  "status": "unknown",
+                  "checkedAt": "2026-09-09T06:03:04.734194+00:00",
+                  "source": {
+                    "id": "www.techpunt.nl",
+                    "label": "Xiaomi Smart Pet Fountain 2 Filter · Einzelkauf",
+                    "type": "merchant",
+                    "url": "https://www.techpunt.nl/de/xiaomi-smart-pet-fountain-2-filter.html"
+                  }
+                },
+                "priceState": "available",
+                "availability": "available"
+              }
+            ]
           }
         ],
         "evidenceSources": [
@@ -1847,6 +1978,17 @@
               "consumables.0.partNumber"
             ],
             "assertion": "Filterzubehör-Spezifikation: drei Filter. Explizite Filter-Modellnummer."
+          },
+          {
+            "source": "www.techpunt.nl",
+            "url": "https://www.techpunt.nl/de/xiaomi-smart-pet-fountain-2-filter.html",
+            "accessedAt": "2026-09-09T06:03:04.734194+00:00",
+            "sourceType": "retailer",
+            "fields": [
+              "consumables.0.packSize",
+              "consumables.0.offers"
+            ],
+            "assertion": "Techpunt nennt originale Xiaomi Smart Pet Fountain 2 Filter, drei Stück, 156 × 51 × 11 mm, 14,95 EUR inklusive MwSt., auf Lager. Variante Default Title. Händler-EAN 6932554438241 wird nicht als identisch mit älteren BHR/EAN-Codes behauptet. Exakte Generation und Abmessungen stimmen mit Herstellerzubehör überein."
           }
         ],
         "comparisonData": {
@@ -1887,7 +2029,9 @@
           ]
         }
       },
-      "representativeOfferIds": {},
+      "representativeOfferIds": {
+        "primary-filter-0": "primary-filter-35b1-techpunt"
+      },
       "research": {
         "identity": {
           "manufacturer": "Xiaomi",
@@ -1923,10 +2067,32 @@
             "conditions": "Ein Tier, normale Nutzung, sofern Quelle angegeben; häufigerer Wechsel bei Verschmutzung/Mehrtierhaltung ohne quantifizierte Rate nicht hochgerechnet."
           }
         ],
-        "offerSelection": [],
+        "offerSelection": [
+          {
+            "consumableId": "primary-filter-0",
+            "offerId": "primary-filter-35b1-techpunt",
+            "packSize": 3,
+            "price": 14.95,
+            "variantId": 57327231992183,
+            "sku": "6932554438241",
+            "sourceUrl": "https://www.techpunt.nl/de/xiaomi-smart-pet-fountain-2-filter.html",
+            "availability": "available",
+            "reason": "Exakte Ersatzpackung, regulärer Einzelkauf ohne Abo/Gutschein. Techpunt nennt originale Xiaomi Smart Pet Fountain 2 Filter, drei Stück, 156 × 51 × 11 mm, 14,95 EUR inklusive MwSt., auf Lager. Variante Default Title. Händler-EAN 6932554438241 wird nicht als identisch mit älteren BHR/EAN-Codes behauptet. Exakte Generation und Abmessungen stimmen mit Herstellerzubehör überein.",
+            "variantEvidence": {
+              "sourceUrl": "https://www.techpunt.nl/products/xiaomi-smart-pet-fountain-2-filter.js",
+              "retrievedAt": "2026-09-09T06:05:06.785105+00:00",
+              "responseSha256": "cc866e10e31d498aae6f20c7aac958795d28760897c32c2a0fb3278d988524bc",
+              "variantId": 57327231992183,
+              "title": "Default Title",
+              "sku": "6932554438241",
+              "packSize": 3,
+              "priceEUR": 14.95,
+              "available": true
+            }
+          }
+        ],
         "conflicts": [],
         "unknownReasons": {
-          "consumables.0.offers": "DE-Kaufseite liefert 0,00-JavaScript-Platzhalter; kein belastbarer aktueller Preis, nicht als Nullpreis importiert.",
           "consumablePolicy.filterlessOperationPossible": "Keine ausdrückliche modellspezifische offizielle Freigabe/Pflichtaussage.",
           "consumablePolicy.inventoryComplete": "Keine umfassende Freigabe, dass alle regelmäßigen Verbrauchsteile vollständig erfasst sind. Keine Nullkosten-/Gesamt-TCO-Aussage.",
           "consumables.0.required": "Keine ausdrückliche modellspezifische offizielle Freigabe/Pflichtaussage.",
@@ -1939,7 +2105,22 @@
           "comparisonData.fountain.dishwasherSafeParts": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "repairability.parts.0": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot."
         },
-        "followUps": []
+        "followUps": [],
+        "completionBatch": "35.0B.1",
+        "completion35B1": {
+          "outcome": "RESOLVED",
+          "resolved": [
+            "A"
+          ],
+          "remaining": [],
+          "note": "Techpunt: originale Generation-2-Filter, drei Stück, 14,95 EUR inkl. MwSt., verfügbar, DE-Lieferung. Variante 57327231992183/SKU 6932554438241. Händler-EAN nicht mit älterem BHR9487GL/EAN gleichgesetzt; exakte Generation, OEM-Bezeichnung und 156 × 51 × 11 mm verknüpfen das Angebot. Der alte 0,00-JS-Platzhalter bleibt unbrauchbar.",
+          "stop": null,
+          "sourceUrls": [
+            "https://www.techpunt.nl/de/xiaomi-smart-pet-fountain-2-filter.html",
+            "https://www.techpunt.nl/products/xiaomi-smart-pet-fountain-2-filter.js",
+            "https://www.techpunt.nl/de/pages/versand"
+          ]
+        }
       }
     },
     {
@@ -2222,7 +2403,11 @@
               "status": "unknown"
             },
             "replacementInterval": {
-              "status": "unknown"
+              "status": "known",
+              "value": {
+                "minDays": 14,
+                "maxDays": 28
+              }
             },
             "compatibility": {
               "status": "known",
@@ -2250,6 +2435,16 @@
               "comparisonData.fountain.capacityLiters"
             ],
             "assertion": "Identität des konkreten Modells geprüft: FN-W18. Textlicher Lieferumfang/Filterwartung bzw. explizite Filterfunktion des exakten Modells. Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. DE-Seite beschreibt Akku-Sensormodus und kontinuierlichen Betrieb am Netz."
+          },
+          {
+            "source": "manuals.plus",
+            "url": "https://manuals.plus/m/8405e994b66a22fcfe40c728cf5e56413230ec91f1b7d2953a42df73b22542ca.pdf",
+            "accessedAt": "2026-09-09T06:19:10Z",
+            "sourceType": "manual",
+            "fields": [
+              "consumables.0.replacementInterval"
+            ],
+            "assertion": "Originales FN-W18-Herstellerhandbuch, PDF-Seite 17 / deutscher FAQ-Abschnitt; englischer Abschnitt bestätigt 2–4 Wochen. Hersteller nennt Bestellung über Servicekontakt, keine öffentliche Ersatzpackung mit Preis. Nutzungsabhängige Empfehlung, keine garantierte Lebensdauer."
           }
         ],
         "comparisonData": {
@@ -2315,7 +2510,18 @@
             "https://feelneedy.com/products/feelneedy-de-fn-w18-8l-katzenbrunnen-kabellos-5000mah-trinkbrunnen-fur-hunde-mit-3-filters-katzenbrunnen-edelstahl-spulmaschinenfest-verbesserter-radarsensor"
           ]
         },
-        "intervalEvidence": [],
+        "intervalEvidence": [
+          {
+            "consumableId": "primary-filter-0",
+            "sourceUrl": "https://manuals.plus/m/8405e994b66a22fcfe40c728cf5e56413230ec91f1b7d2953a42df73b22542ca.pdf",
+            "originalWording": "Alle 2–4 Wochen.",
+            "normalization": {
+              "minDays": 14,
+              "maxDays": 28
+            },
+            "conditions": "Originales FN-W18-Herstellerhandbuch, PDF-Seite 17 / deutscher FAQ-Abschnitt; englischer Abschnitt bestätigt 2–4 Wochen. Hersteller nennt Bestellung über Servicekontakt, keine öffentliche Ersatzpackung mit Preis. Nutzungsabhängige Empfehlung, keine garantierte Lebensdauer."
+          }
+        ],
         "offerSelection": [],
         "conflicts": [],
         "unknownReasons": {
@@ -2325,7 +2531,6 @@
           "consumables.0.required": "Keine ausdrückliche modellspezifische offizielle Freigabe/Pflichtaussage.",
           "consumables.0.dependency": "Keine ausdrückliche modellspezifische offizielle Freigabe/Pflichtaussage.",
           "consumables.0.filterType": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
-          "consumables.0.replacementInterval": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "consumables.0.partNumber": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "comparisonData.fountain.batteryRuntime": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "comparisonData.fountain.lowWaterShutdown": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
@@ -2335,7 +2540,27 @@
           "repairability.parts.0": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "consumables.0.offers": "Kein belastbar zuordenbares aktuelles DE/EU-Ersatzangebot mit identischer Packung und Preis bestätigt."
         },
-        "followUps": []
+        "followUps": [],
+        "completionBatch": "35.0B.1",
+        "completion35B1": {
+          "outcome": "PARTIAL",
+          "resolved": [
+            "C"
+          ],
+          "remaining": [
+            "A",
+            "B",
+            "D",
+            "G"
+          ],
+          "note": "Originales 41-seitiges FN-W18-Handbuch, DE-FAQ PDF-Seite 17 und EN-Seite 11: 2–4 Wochen. Öffentlich nur Bestellung über Servicekontakt; keine bestellbare Ersatzpackung mit Preis/SKU. Mitgelieferte drei Filter sind keine Ersatzpackung. Das Handbuch nennt außerdem einen Schwamm; dessen Pflichtstatus und regelmäßige Kosten bleiben ungeklärt. Keine Nachricht an Hersteller gesendet.",
+          "stop": "Öffentliche Bestellinformationen unzureichend; kontaktgebundene Beschaffung, nicht dauerhaft unkenntliches Intervall.",
+          "sourceUrls": [
+            "https://manuals.plus/m/8405e994b66a22fcfe40c728cf5e56413230ec91f1b7d2953a42df73b22542ca.pdf",
+            "https://feelneedy.com/pages/user-manual",
+            "https://feelneedy.com/pages/instructions"
+          ]
+        }
       }
     },
     {
@@ -2447,7 +2672,7 @@
           "model": "oneisall 3,2L Cordless Cat Fountain",
           "modelNumber": {
             "status": "known",
-            "value": "PW14SAU3.2L"
+            "value": "PW14SAU"
           },
           "generation": "oneisall 3,2L Cordless Cat Fountain",
           "capacityLiters": {
@@ -2460,7 +2685,8 @@
           },
           "status": "unresolvedEU",
           "sourceUrls": [
-            "https://oneisall.com/products/oneisall-3-2l-cordless-cat-water-fountain"
+            "https://oneisall.com/products/oneisall-3-2l-cordless-cat-water-fountain",
+            "https://oneisall.com/products.json?limit=250"
           ]
         },
         "intervalEvidence": [],
@@ -2469,7 +2695,7 @@
           "Globale Oneisall-Variante bestätigt, exakte EU-Version und EU-Zubehör nicht abgesichert; keine Übertragung von anderer Größe/Farbe/SKU."
         ],
         "unknownReasons": {
-          "consumables.0.replacementInterval": "Keine konfliktfreie, für die exakte EU-Identität bestätigte Wechselvorgabe. Zubehör von 7 l / 3,5 l EU nicht auf andere globale Varianten übertragen.",
+          "consumables.0.replacementInterval": "Offizielles PW14-Handbuch visuell geprüft: Abschnitt Filter Replacement nennt 15 Tage, Troubleshooting nennt 2–4 Wochen. Widerspruch bleibt UNKNOWN. Globaler SKU PW14SAU korrigiert; EU-Identität weiter ungeklärt.",
           "consumablePolicy.filterlessOperationPossible": "Keine ausdrückliche modellspezifische offizielle Freigabe/Pflichtaussage.",
           "consumablePolicy.inventoryComplete": "Keine umfassende Freigabe, dass alle regelmäßigen Verbrauchsteile vollständig erfasst sind. Keine Nullkosten-/Gesamt-TCO-Aussage.",
           "consumables.0.required": "Keine ausdrückliche modellspezifische offizielle Freigabe/Pflichtaussage.",
@@ -2486,7 +2712,29 @@
           "repairability.parts.0": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "consumables.0.offers": "Kein belastbar zuordenbares aktuelles DE/EU-Ersatzangebot mit identischer Packung und Preis bestätigt."
         },
-        "followUps": []
+        "followUps": [],
+        "completionBatch": "35.0B.1",
+        "completion35B1": {
+          "outcome": "UNKNOWN",
+          "resolved": [],
+          "remaining": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "note": "Offizielles PW14-Handbuch visuell geprüft: Abschnitt Filter Replacement nennt 15 Tage, Troubleshooting nennt 2–4 Wochen. Widerspruch bleibt UNKNOWN. Globaler SKU PW14SAU korrigiert; EU-Identität weiter ungeklärt.",
+          "stop": "Widerspruch im selben Manual; kein Mittelwert und keine Intervallverschmelzung.",
+          "sourceUrls": [
+            "https://www.petkit-eu.com/de/products.json?limit=250",
+            "https://oneisall.com/products.json?limit=250",
+            "https://eu.oneisall.com/pages/support-water",
+            "https://oneisall.com/pages/support-water",
+            "https://eu.oneisall.com/products.json?limit=250",
+            "https://oneisall.com/cdn/shop/files/3.2L___V1_25.7.14_8ec6379e-6b21-487b-bfa5-bc5b880123a5.pdf?v=6573205370678495315"
+          ]
+        }
       }
     },
     {
@@ -3550,7 +3798,11 @@
               "status": "unknown"
             },
             "replacementInterval": {
-              "status": "unknown"
+              "status": "known",
+              "value": {
+                "minDays": 14,
+                "maxDays": 28
+              }
             },
             "compatibility": {
               "status": "known",
@@ -3577,6 +3829,16 @@
               "comparisonData.fountain.capacityLiters"
             ],
             "assertion": "Identität des konkreten Modells geprüft: PW13BBU2.2L. Textlicher Lieferumfang/Filterwartung bzw. explizite Filterfunktion des exakten Modells. Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. Hersteller benennt Aufbau/Funktion des Verbrauchsteils."
+          },
+          {
+            "source": "oneisall.com",
+            "url": "https://oneisall.com/cdn/shop/files/2.2L___V0_6.24_a84d4e9e-3eb7-446d-bdcb-b72afe607ce6.pdf?v=4190455477108004234",
+            "accessedAt": "2026-09-09T06:05:05.958966+00:00",
+            "sourceType": "manual",
+            "fields": [
+              "consumables.0.replacementInterval"
+            ],
+            "assertion": "Offiziell auf Support-Water verlinktes 2,2-l/PW13-Handbuch. Nur technisch dem globalen Modell zugeordnet; EU-Identität und aktuelles EU-Ersatzangebot bleiben ungeklärt."
           }
         ],
         "comparisonData": {
@@ -3624,7 +3886,7 @@
           "model": "oneisall 2,2L Cordless Cat Fountain",
           "modelNumber": {
             "status": "known",
-            "value": "PW13BBU2.2L"
+            "value": "PW13BBU"
           },
           "generation": "oneisall 2,2L Cordless Cat Fountain",
           "capacityLiters": {
@@ -3637,16 +3899,27 @@
           },
           "status": "unresolvedEU",
           "sourceUrls": [
-            "https://oneisall.com/products/oneisall-2-2l-cordless-cat-water-fountain"
+            "https://oneisall.com/products/oneisall-2-2l-cordless-cat-water-fountain",
+            "https://oneisall.com/products.json?limit=250"
           ]
         },
-        "intervalEvidence": [],
+        "intervalEvidence": [
+          {
+            "consumableId": "primary-filter-0",
+            "sourceUrl": "https://oneisall.com/cdn/shop/files/2.2L___V0_6.24_a84d4e9e-3eb7-446d-bdcb-b72afe607ce6.pdf?v=4190455477108004234",
+            "originalWording": "replace the filter every 2-4 weeks",
+            "normalization": {
+              "minDays": 14,
+              "maxDays": 28
+            },
+            "conditions": "Offiziell auf Support-Water verlinktes 2,2-l/PW13-Handbuch. Nur technisch dem globalen Modell zugeordnet; EU-Identität und aktuelles EU-Ersatzangebot bleiben ungeklärt."
+          }
+        ],
         "offerSelection": [],
         "conflicts": [
           "Globale Oneisall-Variante bestätigt, exakte EU-Version und EU-Zubehör nicht abgesichert; keine Übertragung von anderer Größe/Farbe/SKU."
         ],
         "unknownReasons": {
-          "consumables.0.replacementInterval": "Keine konfliktfreie, für die exakte EU-Identität bestätigte Wechselvorgabe. Zubehör von 7 l / 3,5 l EU nicht auf andere globale Varianten übertragen.",
           "consumablePolicy.filterlessOperationPossible": "Keine ausdrückliche modellspezifische offizielle Freigabe/Pflichtaussage.",
           "consumablePolicy.inventoryComplete": "Keine umfassende Freigabe, dass alle regelmäßigen Verbrauchsteile vollständig erfasst sind. Keine Nullkosten-/Gesamt-TCO-Aussage.",
           "consumables.0.required": "Keine ausdrückliche modellspezifische offizielle Freigabe/Pflichtaussage.",
@@ -3663,7 +3936,31 @@
           "repairability.parts.0": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "consumables.0.offers": "Kein belastbar zuordenbares aktuelles DE/EU-Ersatzangebot mit identischer Packung und Preis bestätigt."
         },
-        "followUps": []
+        "followUps": [],
+        "completionBatch": "35.0B.1",
+        "completion35B1": {
+          "outcome": "PARTIAL",
+          "resolved": [
+            "C"
+          ],
+          "remaining": [
+            "A",
+            "B",
+            "D",
+            "E"
+          ],
+          "note": "Offizieller Support verlinkt 2,2-l-Handbuch: 2–4 Wochen. Globaler SKU PW13BBU korrigiert (Kapazität war an SKU angehängt). Globale PW13/PW14-Filter 9L24WAZ sind kein bestätigtes aktuelles EU-Angebot.",
+          "stop": "EU-Modell-/Zubehöridentität offen; kein USD-Angebot als EUR importiert.",
+          "sourceUrls": [
+            "https://oneisall.com/cdn/shop/files/2.2L___V0_6.24_a84d4e9e-3eb7-446d-bdcb-b72afe607ce6.pdf?v=4190455477108004234",
+            "https://oneisall.com/products/oneisall-2-2l-cat-water-fountain-8pcs-carbon-filters-replacement",
+            "https://www.petkit-eu.com/de/products.json?limit=250",
+            "https://oneisall.com/products.json?limit=250",
+            "https://eu.oneisall.com/pages/support-water",
+            "https://oneisall.com/pages/support-water",
+            "https://eu.oneisall.com/products.json?limit=250"
+          ]
+        }
       }
     },
     {
@@ -3701,7 +3998,11 @@
               "status": "unknown"
             },
             "replacementInterval": {
-              "status": "unknown"
+              "status": "known",
+              "value": {
+                "minDays": 15,
+                "maxDays": 15
+              }
             },
             "compatibility": {
               "status": "known",
@@ -3728,6 +4029,16 @@
               "comparisonData.fountain.capacityLiters"
             ],
             "assertion": "Identität des konkreten Modells geprüft: PW04BAU3.5L. Textlicher Lieferumfang/Filterwartung bzw. explizite Filterfunktion des exakten Modells. Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. Hersteller benennt Aufbau/Funktion des Verbrauchsteils."
+          },
+          {
+            "source": "oneisall.com",
+            "url": "https://oneisall.com/cdn/shop/files/PW04_____V1_2024.12.27_362c1212-d6f4-4093-8c31-59e416916951.pdf?v=13948975687988883718",
+            "accessedAt": "2026-09-09T06:07:25.643426+00:00",
+            "sourceType": "manual",
+            "fields": [
+              "consumables.0.replacementInterval"
+            ],
+            "assertion": "Offizielles PW04-Handbuch, visuell gelesener Abschnitt Filter Replacement: 15 Tage. Globaler schwarzer PW04BAU und EU-silberner PW04SAE bleiben regional getrennt; keine Commerce-Freigabe allein wegen gemeinsamer Kapazität."
           }
         ],
         "comparisonData": {
@@ -3775,7 +4086,7 @@
           "model": "oneisall 3,5L Cordless Fountain",
           "modelNumber": {
             "status": "known",
-            "value": "PW04BAU3.5L"
+            "value": "PW04BAU"
           },
           "generation": "oneisall 3,5L Cordless Fountain",
           "capacityLiters": {
@@ -3788,16 +4099,27 @@
           },
           "status": "unresolvedEU",
           "sourceUrls": [
-            "https://oneisall.com/products/oneisall-3-5l-cordless-black-stainless-steel-pet-water-fountain-with-3pcs-filters"
+            "https://oneisall.com/products/oneisall-3-5l-cordless-black-stainless-steel-pet-water-fountain-with-3pcs-filters",
+            "https://oneisall.com/products.json?limit=250"
           ]
         },
-        "intervalEvidence": [],
+        "intervalEvidence": [
+          {
+            "consumableId": "primary-filter-0",
+            "sourceUrl": "https://oneisall.com/cdn/shop/files/PW04_____V1_2024.12.27_362c1212-d6f4-4093-8c31-59e416916951.pdf?v=13948975687988883718",
+            "originalWording": "change the filter every 15 days",
+            "normalization": {
+              "minDays": 15,
+              "maxDays": 15
+            },
+            "conditions": "Offizielles PW04-Handbuch, visuell gelesener Abschnitt Filter Replacement: 15 Tage. Globaler schwarzer PW04BAU und EU-silberner PW04SAE bleiben regional getrennt; keine Commerce-Freigabe allein wegen gemeinsamer Kapazität."
+          }
+        ],
         "offerSelection": [],
         "conflicts": [
           "Globale Oneisall-Variante bestätigt, exakte EU-Version und EU-Zubehör nicht abgesichert; keine Übertragung von anderer Größe/Farbe/SKU."
         ],
         "unknownReasons": {
-          "consumables.0.replacementInterval": "Keine konfliktfreie, für die exakte EU-Identität bestätigte Wechselvorgabe. Zubehör von 7 l / 3,5 l EU nicht auf andere globale Varianten übertragen.",
           "consumablePolicy.filterlessOperationPossible": "Keine ausdrückliche modellspezifische offizielle Freigabe/Pflichtaussage.",
           "consumablePolicy.inventoryComplete": "Keine umfassende Freigabe, dass alle regelmäßigen Verbrauchsteile vollständig erfasst sind. Keine Nullkosten-/Gesamt-TCO-Aussage.",
           "consumables.0.required": "Keine ausdrückliche modellspezifische offizielle Freigabe/Pflichtaussage.",
@@ -3814,7 +4136,31 @@
           "repairability.parts.0": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "consumables.0.offers": "Kein belastbar zuordenbares aktuelles DE/EU-Ersatzangebot mit identischer Packung und Preis bestätigt."
         },
-        "followUps": []
+        "followUps": [],
+        "completionBatch": "35.0B.1",
+        "completion35B1": {
+          "outcome": "PARTIAL",
+          "resolved": [
+            "C"
+          ],
+          "remaining": [
+            "A",
+            "B",
+            "D",
+            "E"
+          ],
+          "note": "Offizielles PW04-Handbuch nennt 15 Tage. Globaler schwarzer PW04BAU und EU-silberner PW04SAE sind unterschiedliche Varianten. Gemeinsamer Filter-Bundle-SKU 9L14WAZ ist ein starker Zubehörhinweis, löst die regionale Identität des untersuchten Geräts aber nicht; Import-Gate bleibt geschlossen.",
+          "stop": "Keine stillschweigende Umstellung des untersuchten Produkts auf die EU-Silbervariante.",
+          "sourceUrls": [
+            "https://oneisall.com/cdn/shop/files/PW04_____V1_2024.12.27_362c1212-d6f4-4093-8c31-59e416916951.pdf?v=13948975687988883718",
+            "https://www.petkit-eu.com/de/products.json?limit=250",
+            "https://oneisall.com/products.json?limit=250",
+            "https://eu.oneisall.com/pages/support-water",
+            "https://oneisall.com/pages/support-water",
+            "https://eu.oneisall.com/products.json?limit=250",
+            "https://eu.oneisall.com/products/oneisall-3-5l-cordless-water-fountain-6pcs-carbon-filters-replacement"
+          ]
+        }
       }
     },
     {
@@ -3973,7 +4319,23 @@
           "repairability.parts.0": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "consumables.0.offers": "Kein belastbar zuordenbares aktuelles DE/EU-Ersatzangebot mit identischer Packung und Preis bestätigt."
         },
-        "followUps": []
+        "followUps": [],
+        "completion35B1": {
+          "outcome": "UNKNOWN",
+          "resolved": [],
+          "remaining": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "G"
+          ],
+          "note": "Originales neunseitiges Herstellerhandbuch geprüft: Filterindikator, aber keine belastbare feste Austauschrate. EU-3.0-Zubehörliste nennt andere Modelle; keine Übertragung auf P4106.",
+          "stop": "Herstellerdaten reichen für exakte Ersatzfilter- und Intervallzuordnung nicht aus.",
+          "sourceUrls": [
+            "https://instructions.petkit.com/W5-CC_V1.0_20220729%20%2Bmanual.pdf"
+          ]
+        }
       }
     },
     {
@@ -3998,7 +4360,7 @@
           {
             "id": "primary-filter-0",
             "type": "filter",
-            "name": "PETKIT Filtereinheit",
+            "name": "PETKIT Filter Unit RECT 5.0",
             "required": {
               "status": "known",
               "value": true
@@ -4011,7 +4373,8 @@
               "value": "Mehrschichtiger Wasserfilter"
             },
             "packSize": {
-              "status": "unknown"
+              "status": "known",
+              "value": 5
             },
             "replacementInterval": {
               "status": "known",
@@ -4027,9 +4390,28 @@
               ]
             },
             "partNumber": {
-              "status": "unknown"
+              "status": "known",
+              "value": "P4171"
             },
-            "offers": []
+            "offers": [
+              {
+                "id": "primary-filter-35b1-petkit-eu",
+                "price": {
+                  "current": 19.99,
+                  "currency": "EUR",
+                  "status": "unknown",
+                  "checkedAt": "2026-09-09T06:02:29.920646+00:00",
+                  "source": {
+                    "id": "www.petkit-eu.com",
+                    "label": "PETKIT Filter Unit RECT 5.0 · Einzelkauf",
+                    "type": "merchant",
+                    "url": "https://www.petkit-eu.com/de/products/petkit-filter-unit-rect"
+                  }
+                },
+                "priceState": "available",
+                "availability": "available"
+              }
+            ]
           }
         ],
         "evidenceSources": [
@@ -4063,6 +4445,37 @@
               "repairability.parts.0.status"
             ],
             "assertion": "EU-Shop listet das exakte Modell als pumpenkompatibel. Preis ist Gesamtbundle Pumpe + 5 RECT-Filter, kein Pumpen-Einzelpreis. Beigepackte Filter nicht automatisch für jedes pumpenkompatible Modell geeignet. EU-Shop listet das exakte Modell als pumpenkompatibel. Preis ist Gesamtbundle Pumpe + 5 RECT-Filter, kein Pumpen-Einzelpreis. Beigepackte Filter nicht automatisch für jedes pumpenkompatible Modell geeignet."
+          },
+          {
+            "source": "www.petkit.com",
+            "url": "https://www.petkit.com/cdn/shop/files/package-list.jpg?v=1766739449&width=1500",
+            "accessedAt": "2026-09-09T06:06:59.078584+00:00",
+            "sourceType": "manufacturer",
+            "fields": [
+              "consumables.0.compatibility"
+            ],
+            "assertion": "Visuell geprüfte Hersteller-Lieferumfangsgrafik des MAX 2 UVC beschriftet den Filter ausdrücklich als Filter RECT und die Pumpe als Wireless UVC Pump. Kein Rückschluss aus Pumpenbundle."
+          },
+          {
+            "source": "www.petkit-eu.com",
+            "url": "https://www.petkit-eu.com/de/products/petkit-filter-unit-rect.js",
+            "accessedAt": "2026-09-09T06:02:29.920646+00:00",
+            "sourceType": "retailer",
+            "fields": [
+              "consumables.0.packSize",
+              "consumables.0.offers"
+            ],
+            "assertion": "EU RECT-Ersatzfilter, gewählte Variante 1 Packung (5 Stück), SKU 6975069302959, 19,99 EUR, verfügbar. Der Varianten-Endpunkt gehört zur gleichnamigen offiziellen Produktseite. MwSt.-Auszeichnung im gesicherten Beleg nicht ausdrücklich bestätigt."
+          },
+          {
+            "source": "www.petkit-eu.com",
+            "url": "https://www.petkit-eu.com/de/products/petkit-filter-unit-rect",
+            "accessedAt": "2026-09-09T06:02:29.920646+00:00",
+            "sourceType": "officialStore",
+            "fields": [
+              "consumables.0.partNumber"
+            ],
+            "assertion": "Offizielle RECT-Produktseite bezeichnet Zubehörmodell P4171."
           }
         ],
         "comparisonData": {
@@ -4132,7 +4545,9 @@
           ]
         }
       },
-      "representativeOfferIds": {},
+      "representativeOfferIds": {
+        "primary-filter-0": "primary-filter-35b1-petkit-eu"
+      },
       "research": {
         "identity": {
           "manufacturer": "PETKIT",
@@ -4168,21 +4583,65 @@
             "conditions": "Ein Tier, normale Nutzung, sofern Quelle angegeben; häufigerer Wechsel bei Verschmutzung/Mehrtierhaltung ohne quantifizierte Rate nicht hochgerechnet."
           }
         ],
-        "offerSelection": [],
+        "offerSelection": [
+          {
+            "consumableId": "primary-filter-0",
+            "offerId": "primary-filter-35b1-petkit-eu",
+            "packSize": 5,
+            "price": 19.99,
+            "variantId": 46302723244267,
+            "sku": "6975069302959",
+            "sourceUrl": "https://www.petkit-eu.com/de/products/petkit-filter-unit-rect.js",
+            "availability": "available",
+            "reason": "Exakte Ersatzpackung, regulärer Einzelkauf ohne Abo/Gutschein. EU RECT-Ersatzfilter, gewählte Variante 1 Packung (5 Stück), SKU 6975069302959, 19,99 EUR, verfügbar. Der Varianten-Endpunkt gehört zur gleichnamigen offiziellen Produktseite. MwSt.-Auszeichnung im gesicherten Beleg nicht ausdrücklich bestätigt.",
+            "variantEvidence": {
+              "sourceUrl": "https://www.petkit-eu.com/de/products/petkit-filter-unit-rect.js",
+              "retrievedAt": "2026-09-09T06:02:29.920646+00:00",
+              "responseSha256": "dbf8db1405b94d20d58d081ee80b9a43b92edb3550c0e3402781f08d9ba6bdab",
+              "variantId": 46302723244267,
+              "title": "1 Packung (5 Stück)",
+              "sku": "6975069302959",
+              "packSize": 5,
+              "priceEUR": 19.99,
+              "available": true
+            }
+          }
+        ],
         "conflicts": [],
         "unknownReasons": {
-          "consumables.0.packSize": "EU-RECT-Filterseite nennt nur MAX CORDLESS, keine eindeutige MAX-2-UVC-Einzelfilterzuordnung; Pumpenbundle beweist keine Filterkompatibilität.",
           "consumablePolicy.inventoryComplete": "Keine umfassende Freigabe, dass alle regelmäßigen Verbrauchsteile vollständig erfasst sind. Keine Nullkosten-/Gesamt-TCO-Aussage.",
           "consumables.0.dependency": "Keine ausdrückliche modellspezifische offizielle Freigabe/Pflichtaussage.",
-          "consumables.0.partNumber": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "comparisonData.fountain.batteryRuntime": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "comparisonData.fountain.waterLevelVisible": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "comparisonData.fountain.pumpRemovable": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
-          "comparisonData.fountain.dishwasherSafeParts": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
-          "repairability.parts.0.offers.0.price": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
-          "consumables.0.offers": "Kein belastbar zuordenbares aktuelles DE/EU-Ersatzangebot mit identischer Packung und Preis bestätigt."
+          "comparisonData.fountain.dishwasherSafeParts": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot."
         },
-        "followUps": []
+        "followUps": [],
+        "completionBatch": "35.0B.1",
+        "completion35B1": {
+          "outcome": "RESOLVED",
+          "resolved": [
+            "A",
+            "B",
+            "D"
+          ],
+          "remaining": [],
+          "note": "Offizielle MAX-2-UVC-Lieferumfangsgrafik zeigt ausdrücklich Filter RECT und Wireless UVC Pump. Damit ist die Einzelfilterzuordnung unabhängig vom Pumpenbundle belegt. EU-RECT P4171, SKU 6975069302959, Variante 46302723244267: 5 Stück/19,99 EUR verfügbar. Expliziter Bruttonachweis bleibt offen.",
+          "stop": null,
+          "sourceUrls": [
+            "https://www.petkit.com/cdn/shop/files/package-list.jpg?v=1766739449&width=1500",
+            "https://www.petkit-eu.com/de/products/petkit-filter-unit-rect.js",
+            "https://www.petkit-eu.com/de/products/petkit-filter-unit-rect.js",
+            "https://www.petkit-eu.com/de/products/eversweet-max-2-pet-water-fountain",
+            "https://www.petkit-eu.com/de/products/disque-pour-spray-puramax-puramax-2",
+            "https://www.petkit-eu.com/de/products/petkit-filter-unit-rect",
+            "https://www.petkit-eu.com/de/products/eversweet-max-2-ultimate-bundle",
+            "https://petkit.co.uk/products/petkit-filter-unit-rect",
+            "https://www.petkit.com/products/eversweet-max-2-uvc-pet-water-fountain",
+            "https://www.petkit-eu.com/de/products/eversweet-max-2-uvc-ultimate-bundle",
+            "https://www.petkit-eu.com/de/products/eversweet-max-2-uvc-pet-water-fountain-1"
+          ]
+        }
       }
     },
     {
@@ -4989,7 +5448,22 @@
         },
         "followUps": [
           "Bei stark verschmutzendem Hund nennt FAQ drei Tage. 14 Tage gilt als Ein-Tier-Basis, nicht als universelle Lebensdauer."
-        ]
+        ],
+        "completion35B1": {
+          "outcome": "UNKNOWN",
+          "resolved": [],
+          "remaining": [
+            "A"
+          ],
+          "note": "Exakte PLWF008-DE-Varianten 4/8/24 weiterhin ausverkauft. Medpets/Fressnapf nennen generisch Capsule ohne sichere DOG-008-Zuordnung; keine Gleichsetzung mit PLWF002. US-Dollar-Angebot ausgeschlossen.",
+          "stop": "Temporäre Commerce-Lücke; nicht dauerhaft strukturell unkenntlich.",
+          "sourceUrls": [
+            "https://de.petlibro.com/products/capsule-dog-fountain-replacement-filter",
+            "https://www.medpets.de/petlibro-capsule-ersatzfilter",
+            "https://de.petlibro.com/products/capsule-dog-fountain-replacement-filter.js",
+            "https://www.fressnapf.de/p/petlibro-capsule-ersatzfilter-8er-pack-2138453/"
+          ]
+        }
       }
     },
     {
@@ -5304,7 +5778,25 @@
               "status": "known",
               "value": "PAC19-14088"
             },
-            "offers": []
+            "offers": [
+              {
+                "id": "primary-filter-35b1-hommel-gbr",
+                "price": {
+                  "current": 10.62,
+                  "currency": "EUR",
+                  "status": "unknown",
+                  "checkedAt": "2026-09-09T06:02:28.049162+00:00",
+                  "source": {
+                    "id": "www.hommel-gbr.de",
+                    "label": "PetSafe Aktivkohle PAC19-14088 · Einzelkauf",
+                    "type": "merchant",
+                    "url": "https://www.hommel-gbr.de/petsafe-aktiv-filter.html"
+                  }
+                },
+                "priceState": "available",
+                "availability": "available"
+              }
+            ]
           },
           {
             "id": "prefilter-1",
@@ -5431,6 +5923,17 @@
               "repairability.parts.0.status"
             ],
             "assertion": "Offizielle Schweizer Seite nennt Streamside-Kompatibilität; aktuelle DE/EU-Verfügbarkeit und EUR-Preis nicht bestätigt. Offizielle Schweizer Seite nennt Streamside-Kompatibilität; aktuelle DE/EU-Verfügbarkeit und EUR-Preis nicht bestätigt."
+          },
+          {
+            "source": "www.hommel-gbr.de",
+            "url": "https://www.hommel-gbr.de/petsafe-aktiv-filter.html",
+            "accessedAt": "2026-09-09T06:02:28.049162+00:00",
+            "sourceType": "retailer",
+            "fields": [
+              "consumables.0.packSize",
+              "consumables.0.offers"
+            ],
+            "assertion": "Hommel: PAC19-14088, 4er-Pack, 10,62 EUR inkl. MwSt., 39 Stück lagernd. Händler nennt andere Keramikmodelle; exakte Artikelnummer ist durch offizielle PetSafe-Kompatibilitätsliste ausdrücklich Streamside zugeordnet. Kein Transfer zwischen PAC19 und US-PAC00."
           }
         ],
         "comparisonData": {
@@ -5480,7 +5983,8 @@
         }
       },
       "representativeOfferIds": {
-        "prefilter-1": "prefilter-1-eu-standard"
+        "prefilter-1": "prefilter-1-eu-standard",
+        "primary-filter-0": "primary-filter-35b1-hommel-gbr"
       },
       "research": {
         "identity": {
@@ -5538,20 +6042,29 @@
             "sourceUrl": "https://www.petsafe.com/de/p/ersatzschaumfilter-fur-drinkwell-keramik-edelstahl-brunnen-360-2-pack/PAC19-14089/",
             "availability": "available",
             "reason": "Normale kleine Ersatzpackung als repräsentativer Einzelkauf; kein Abo, Gutschein oder günstigster Stückpreis. Andere Packgrößen nicht an dasselbe item.packSize gebunden."
+          },
+          {
+            "consumableId": "primary-filter-0",
+            "offerId": "primary-filter-35b1-hommel-gbr",
+            "packSize": 4,
+            "price": 10.62,
+            "variantId": null,
+            "sku": "PAC19-14088",
+            "sourceUrl": "https://www.hommel-gbr.de/petsafe-aktiv-filter.html",
+            "availability": "available",
+            "reason": "Exakte Ersatzpackung, regulärer Einzelkauf ohne Abo/Gutschein. Hommel: PAC19-14088, 4er-Pack, 10,62 EUR inkl. MwSt., 39 Stück lagernd. Händler nennt andere Keramikmodelle; exakte Artikelnummer ist durch offizielle PetSafe-Kompatibilitätsliste ausdrücklich Streamside zugeordnet. Kein Transfer zwischen PAC19 und US-PAC00."
           }
         ],
         "conflicts": [
           "DE-Geräteseite nennt PAC00-US-Teilenummern; EU-Zubehörseiten PAC19-14088/14089 bestätigen Streamside direkt. Keine US-Angebotspreise übertragen."
         ],
         "unknownReasons": {
-          "consumables.0.offers": "Spanischer EU-Listenpreis 13,99 EUR gelesen; deutscher Bezug und Lieferstatus nicht bestätigt. Kein DE-Offer daraus angelegt.",
           "consumablePolicy.filterlessOperationPossible": "Keine ausdrückliche modellspezifische offizielle Freigabe/Pflichtaussage.",
           "consumablePolicy.inventoryComplete": "Keine umfassende Freigabe, dass alle regelmäßigen Verbrauchsteile vollständig erfasst sind. Keine Nullkosten-/Gesamt-TCO-Aussage.",
           "consumables.0.required": "Keine ausdrückliche modellspezifische offizielle Freigabe/Pflichtaussage.",
           "consumables.0.dependency": "Keine ausdrückliche modellspezifische offizielle Freigabe/Pflichtaussage.",
           "consumables.1.required": "Keine ausdrückliche modellspezifische offizielle Freigabe/Pflichtaussage.",
           "consumables.1.dependency": "Keine ausdrückliche modellspezifische offizielle Freigabe/Pflichtaussage.",
-          "consumables.1.offers.0.price": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "comparisonData.fountain.powerType": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "comparisonData.fountain.batteryRuntime": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "comparisonData.fountain.lowWaterShutdown": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
@@ -5560,8 +6073,23 @@
           "comparisonData.fountain.dishwasherSafeParts": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot.",
           "repairability.parts.0": "Im geprüften Quellenkorpus keine hinreichend genaue, konfliktfreie Angabe für dieses Modell/EU-Angebot."
         },
-        "followUps": []
+        "followUps": [],
+        "completionBatch": "35.0B.1",
+        "completion35B1": {
+          "outcome": "RESOLVED",
+          "resolved": [
+            "A"
+          ],
+          "remaining": [],
+          "note": "Hommel 10,62 EUR/4 inkl. MwSt., lagernd; PAC19-14088 exakt. Offizielle EU-Kompatibilitätsliste nennt Streamside und 2–4 Wochen. PAC00-US-Filter nicht übertragen. Zusätzliche Schaumelemente bleiben separat und verhindern eine Gesamtkostenaussage.",
+          "stop": null,
+          "sourceUrls": [
+            "https://www.hommel-gbr.de/petsafe-aktiv-filter.html",
+            "https://www.petster.de/katze/marken/petsafe/petsafe-drinkwell-aktivkohlefilter-4-pack"
+          ]
+        }
       }
     }
-  ]
+  ],
+  "completionBatch": "35.0B.1"
 }

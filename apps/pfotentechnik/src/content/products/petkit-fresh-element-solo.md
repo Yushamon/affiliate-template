@@ -64,10 +64,10 @@ images:
     - src: ../../assets/images/products/petkit-fresh-element-solo/gallery-4.webp
       alt: PETKIT Fresh Element Solo an einem Futterplatz für eine Katze
 price:
-  current: 67.99
+  current: 75.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-02T06:00:43.380Z"
+  checkedAt: "2026-09-09T06:22:19.602Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -82,12 +82,12 @@ rating: 4
 score: 81
 
 priceState: "available"
-priceUpdated: "2026-09-02T06:00:43.380Z"
+priceUpdated: "2026-09-09T06:22:19.602Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-02T06:00:43.380Z"
+availabilityUpdated: "2026-09-09T06:22:19.602Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

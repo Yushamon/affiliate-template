@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "fields": {
+    "filterRequired": {
+      "known": 7,
+      "unknown": 17,
+      "notApplicable": 0,
+      "total": 24,
+      "coveragePercent": 29.166666666666668,
+      "resolvedPercent": 29.166666666666668
+    },
+    "filterlessOperationPossible": {
+      "known": 7,
+      "unknown": 17,
+      "notApplicable": 0,
+      "total": 24,
+      "coveragePercent": 29.166666666666668,
+      "resolvedPercent": 29.166666666666668
+    },
+    "filterType": {
+      "known": 15,
+      "unknown": 8,
+      "notApplicable": 1,
+      "total": 24,
+      "coveragePercent": 62.5,
+      "resolvedPercent": 66.66666666666666
+    },
+    "replacementInterval": {
+      "known": 20,
+      "unknown": 3,
+      "notApplicable": 1,
+      "total": 24,
+      "coveragePercent": 83.33333333333334,
+      "resolvedPercent": 87.5
+    },
+    "packSize": {
+      "known": 17,
+      "unknown": 6,
+      "notApplicable": 1,
+      "total": 24,
+      "coveragePercent": 70.83333333333334,
+      "resolvedPercent": 75
+    },
+    "currentFilterOffer": {
+      "known": 16,
+      "unknown": 7,
+      "notApplicable": 1,
+      "total": 24,
+      "coveragePercent": 66.66666666666666,
+      "resolvedPercent": 70.83333333333334
+    },
+    "annualFilterCost": {
+      "known": 15,
+      "unknown": 8,
+      "notApplicable": 1,
+      "total": 24,
+      "coveragePercent": 62.5,
+      "resolvedPercent": 66.66666666666666
+    },
+    "proprietaryDependency": {
+      "known": 1,
+      "unknown": 23,
+      "notApplicable": 0,
+      "total": 24,
+      "coveragePercent": 4.166666666666666,
+      "resolvedPercent": 4.166666666666666
+    },
+    "replacementPumpAvailability": {
+      "known": 8,
+      "unknown": 16,
+      "notApplicable": 0,
+      "total": 24,
+      "coveragePercent": 33.33333333333333,
+      "resolvedPercent": 33.33333333333333
+    }
+  },
+  "statistics": {
+    "products": 24,
+    "filterPresent": 23,
+    "filterRequired": 6,
+    "filterlessConfirmed": 1,
+    "proprietaryRequired": 1,
+    "genericConfirmed": 0,
+    "calculablePrimaryFilterCosts": 15,
+    "insufficientData": 8,
+    "notApplicable": 1,
+    "pumpsAvailable": 8,
+    "pumpsUnavailableConfirmed": 0,
+    "pumpsUnknown": 16,
+    "inventoryWideCostStatistics": null,
+    "subset": {
+      "n": 15,
+      "min": 19.85194444444444,
+      "max": 158.10583333333332,
+      "medianBounds": {
+        "low": 52.11678571428571,
+        "high": 52.11678571428571
+      },
+      "fixedInterval": 14,
+      "intervalBased": 1
+    },
+    "method": "Only calculated primary-filter observations, not whole stock or complete mandatory recurring cost. Independent medians of low/high endpoints; no midpoint substitution. Shared accessory families are correlated. No quartiles or representative inventory claims at current incomplete coverage."
+  }
+}

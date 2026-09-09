@@ -60,10 +60,10 @@ images:
     - src: ../../assets/images/products/petkit-eversweet-3-pro-uvc/gallery-3.webp
       alt: PETKIT Eversweet 3 Pro UVC an einem Trinkplatz für eine Katze
 price:
-  current: 89.98
+  current: 67.89
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-02T06:00:35.908Z"
+  checkedAt: "2026-09-09T06:22:11.824Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -78,12 +78,12 @@ rating: 4.2
 score: 84
 
 priceState: "available"
-priceUpdated: "2026-09-02T06:00:35.908Z"
+priceUpdated: "2026-09-09T06:22:11.824Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-02T06:00:35.908Z"
+availabilityUpdated: "2026-09-09T06:22:11.824Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

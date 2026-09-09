@@ -1,0 +1,230 @@
+{
+  "method": "Values read from current product HTML and exact selected variant payload, never snippets. Full response SHA-256 in manifest; only extracted facts retained.",
+  "offers": [
+    {
+      "slug": "cat-mate-shell-fountain",
+      "selection": {
+        "consumableId": "primary-filter-0",
+        "offerId": "primary-filter-35b1-zooplus",
+        "packSize": 4,
+        "price": 15.99,
+        "variantId": "1405119.2",
+        "sku": "035368003868",
+        "sourceUrl": "https://www.zooplus.de/shop/hunde/fressnapf/hundetraenke/1405119?variantId=1405119.2",
+        "availability": "available",
+        "reason": "Exakte Ersatzpackung, regulärer Einzelkauf ohne Abo/Gutschein. Zooplus Variante 1405119.2: 4 Stück, 15,99 EUR inkl. MwSt., verfügbar. GTIN 035368003868 entspricht Hersteller-386 mit führender Null; offizielle 386-Zuordnung zu Shell 410/410E bleibt maßgeblich. 13,59 EUR ist der ausgeschlossene Abopreis.",
+        "variantEvidence": {
+          "sourceUrl": "https://www.zooplus.de/shop/hunde/fressnapf/hundetraenke/1405119?variantId=1405119.2",
+          "retrievedAt": "2026-09-09T06:08:44.978442+00:00",
+          "responseSha256": "9469514978eb06410532ae870c346d96f7984f0a72a0eafc64d014d0e9ced461",
+          "variantId": "1405119.2",
+          "title": "Zubehör: Ersatzfilter (4 Stück)",
+          "sku": "035368003868",
+          "packSize": 4,
+          "priceEUR": 15.99,
+          "available": true
+        }
+      },
+      "priceEvidence": {
+        "current": 15.99,
+        "currency": "EUR",
+        "status": "unknown",
+        "checkedAt": "2026-09-09T06:08:44.978442+00:00",
+        "source": {
+          "id": "www.zooplus.de",
+          "label": "Cat Mate 386 Dreistufenfilter · Einzelkauf",
+          "type": "merchant",
+          "url": "https://www.zooplus.de/shop/hunde/fressnapf/hundetraenke/1405119?variantId=1405119.2"
+        }
+      },
+      "compatibilityEvidence": [
+        {
+          "source": "closerpets.com",
+          "url": "https://closerpets.com/pages/faq-cat-mate-two-level-three-litre-shell-pet-fountain-white-410-410e",
+          "accessedAt": "2026-09-08T09:55:47.001795+00:00",
+          "sourceType": "manufacturer",
+          "fields": [
+            "slug",
+            "consumablePolicy.filterPresent",
+            "consumables.0.compatibility",
+            "consumables.0.replacementInterval",
+            "comparisonData.fountain.capacityLiters"
+          ],
+          "assertion": "Identität des konkreten Modells geprüft: 410/410E. Textlicher Lieferumfang/Filterwartung bzw. explizite Filterfunktion des exakten Modells. Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. Hersteller benennt Aufbau/Funktion des Verbrauchsteils. Offizielles modellspezifisches Austauschintervall; Wochen × 7, Monate × 30."
+        },
+        {
+          "source": "closerpets.com",
+          "url": "https://closerpets.com/products/3-stage-filter-cartridges-pet-fountain-4-pack",
+          "accessedAt": "2026-09-08T09:55:47.002188+00:00",
+          "sourceType": "manufacturer",
+          "fields": [
+            "consumables.0.compatibility",
+            "consumables.0.filterType"
+          ],
+          "assertion": "Hersteller nennt Shell 410/410E für dasselbe Zubehörteil 386."
+        }
+      ]
+    },
+    {
+      "slug": "xiaomi-smart-pet-fountain-2",
+      "selection": {
+        "consumableId": "primary-filter-0",
+        "offerId": "primary-filter-35b1-techpunt",
+        "packSize": 3,
+        "price": 14.95,
+        "variantId": 57327231992183,
+        "sku": "6932554438241",
+        "sourceUrl": "https://www.techpunt.nl/de/xiaomi-smart-pet-fountain-2-filter.html",
+        "availability": "available",
+        "reason": "Exakte Ersatzpackung, regulärer Einzelkauf ohne Abo/Gutschein. Techpunt nennt originale Xiaomi Smart Pet Fountain 2 Filter, drei Stück, 156 × 51 × 11 mm, 14,95 EUR inklusive MwSt., auf Lager. Variante Default Title. Händler-EAN 6932554438241 wird nicht als identisch mit älteren BHR/EAN-Codes behauptet. Exakte Generation und Abmessungen stimmen mit Herstellerzubehör überein.",
+        "variantEvidence": {
+          "sourceUrl": "https://www.techpunt.nl/products/xiaomi-smart-pet-fountain-2-filter.js",
+          "retrievedAt": "2026-09-09T06:05:06.785105+00:00",
+          "responseSha256": "cc866e10e31d498aae6f20c7aac958795d28760897c32c2a0fb3278d988524bc",
+          "variantId": 57327231992183,
+          "title": "Default Title",
+          "sku": "6932554438241",
+          "packSize": 3,
+          "priceEUR": 14.95,
+          "available": true
+        }
+      },
+      "priceEvidence": {
+        "current": 14.95,
+        "currency": "EUR",
+        "status": "unknown",
+        "checkedAt": "2026-09-09T06:03:04.734194+00:00",
+        "source": {
+          "id": "www.techpunt.nl",
+          "label": "Xiaomi Smart Pet Fountain 2 Filter · Einzelkauf",
+          "type": "merchant",
+          "url": "https://www.techpunt.nl/de/xiaomi-smart-pet-fountain-2-filter.html"
+        }
+      },
+      "compatibilityEvidence": [
+        {
+          "source": "www.mi.com",
+          "url": "https://www.mi.com/de/product/xiaomi-smart-pet-fountain2-filter/",
+          "accessedAt": "2026-09-08T09:57:10.684194+00:00",
+          "sourceType": "manufacturer",
+          "fields": [
+            "consumables.0.compatibility",
+            "consumables.0.filterType",
+            "consumables.0.replacementInterval"
+          ],
+          "assertion": "Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. Hersteller benennt Aufbau/Funktion des Verbrauchsteils. Offizielles modellspezifisches Austauschintervall; Wochen × 7, Monate × 30."
+        }
+      ]
+    },
+    {
+      "slug": "petkit-eversweet-max-2-uvc",
+      "selection": {
+        "consumableId": "primary-filter-0",
+        "offerId": "primary-filter-35b1-petkit-eu",
+        "packSize": 5,
+        "price": 19.99,
+        "variantId": 46302723244267,
+        "sku": "6975069302959",
+        "sourceUrl": "https://www.petkit-eu.com/de/products/petkit-filter-unit-rect.js",
+        "availability": "available",
+        "reason": "Exakte Ersatzpackung, regulärer Einzelkauf ohne Abo/Gutschein. EU RECT-Ersatzfilter, gewählte Variante 1 Packung (5 Stück), SKU 6975069302959, 19,99 EUR, verfügbar. Der Varianten-Endpunkt gehört zur gleichnamigen offiziellen Produktseite. MwSt.-Auszeichnung im gesicherten Beleg nicht ausdrücklich bestätigt.",
+        "variantEvidence": {
+          "sourceUrl": "https://www.petkit-eu.com/de/products/petkit-filter-unit-rect.js",
+          "retrievedAt": "2026-09-09T06:02:29.920646+00:00",
+          "responseSha256": "dbf8db1405b94d20d58d081ee80b9a43b92edb3550c0e3402781f08d9ba6bdab",
+          "variantId": 46302723244267,
+          "title": "1 Packung (5 Stück)",
+          "sku": "6975069302959",
+          "packSize": 5,
+          "priceEUR": 19.99,
+          "available": true
+        }
+      },
+      "priceEvidence": {
+        "current": 19.99,
+        "currency": "EUR",
+        "status": "unknown",
+        "checkedAt": "2026-09-09T06:02:29.920646+00:00",
+        "source": {
+          "id": "www.petkit-eu.com",
+          "label": "PETKIT Filter Unit RECT 5.0 · Einzelkauf",
+          "type": "merchant",
+          "url": "https://www.petkit-eu.com/de/products/petkit-filter-unit-rect"
+        }
+      },
+      "compatibilityEvidence": [
+        {
+          "source": "www.petkit.com",
+          "url": "https://www.petkit.com/products/eversweet-max-2-uvc-pet-water-fountain",
+          "accessedAt": "2026-09-08T09:55:54.624427+00:00",
+          "sourceType": "manufacturer",
+          "fields": [
+            "slug",
+            "consumablePolicy.filterPresent",
+            "consumables.0.compatibility",
+            "consumables.0.filterType",
+            "consumables.0.replacementInterval",
+            "consumables.0.required",
+            "consumablePolicy.filterlessOperationPossible",
+            "comparisonData.fountain.lowWaterShutdown",
+            "comparisonData.fountain.powerType",
+            "comparisonData.fountain.filterRequired",
+            "comparisonData.fountain.capacityLiters"
+          ],
+          "assertion": "Identität des konkreten Modells geprüft: P4116. Textlicher Lieferumfang/Filterwartung bzw. explizite Filterfunktion des exakten Modells. Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. Hersteller benennt Aufbau/Funktion des Verbrauchsteils. Offizielles modellspezifisches Austauschintervall; Wochen × 7, Monate × 30. Hersteller bestätigt Erforderlichkeit des eingesetzten Verbrauchsteils. Modell-FAQ beantwortet die Notwendigkeit des Filters auch bei reinem Wasser ausdrücklich mit Ja. Modell-FAQ: automatische Abschaltung bei zu wenig Wasser. Modell-FAQ unterscheidet Akkubetrieb von dauerhaft notwendiger Stromversorgung."
+        },
+        {
+          "source": "www.petkit.com",
+          "url": "https://www.petkit.com/cdn/shop/files/package-list.jpg?v=1766739449&width=1500",
+          "accessedAt": "2026-09-09T06:06:59.078584+00:00",
+          "sourceType": "manufacturer",
+          "fields": [
+            "consumables.0.compatibility"
+          ],
+          "assertion": "Visuell geprüfte Hersteller-Lieferumfangsgrafik des MAX 2 UVC beschriftet den Filter ausdrücklich als Filter RECT und die Pumpe als Wireless UVC Pump. Kein Rückschluss aus Pumpenbundle."
+        }
+      ]
+    },
+    {
+      "slug": "petsafe-streamside-trinkbrunnen",
+      "selection": {
+        "consumableId": "primary-filter-0",
+        "offerId": "primary-filter-35b1-hommel-gbr",
+        "packSize": 4,
+        "price": 10.62,
+        "variantId": null,
+        "sku": "PAC19-14088",
+        "sourceUrl": "https://www.hommel-gbr.de/petsafe-aktiv-filter.html",
+        "availability": "available",
+        "reason": "Exakte Ersatzpackung, regulärer Einzelkauf ohne Abo/Gutschein. Hommel: PAC19-14088, 4er-Pack, 10,62 EUR inkl. MwSt., 39 Stück lagernd. Händler nennt andere Keramikmodelle; exakte Artikelnummer ist durch offizielle PetSafe-Kompatibilitätsliste ausdrücklich Streamside zugeordnet. Kein Transfer zwischen PAC19 und US-PAC00."
+      },
+      "priceEvidence": {
+        "current": 10.62,
+        "currency": "EUR",
+        "status": "unknown",
+        "checkedAt": "2026-09-09T06:02:28.049162+00:00",
+        "source": {
+          "id": "www.hommel-gbr.de",
+          "label": "PetSafe Aktivkohle PAC19-14088 · Einzelkauf",
+          "type": "merchant",
+          "url": "https://www.hommel-gbr.de/petsafe-aktiv-filter.html"
+        }
+      },
+      "compatibilityEvidence": [
+        {
+          "source": "www.petsafe.com",
+          "url": "https://www.petsafe.com/es/p/filtros-de-carbon-de-repuesto-fuentes-para-mascotas-de-ceramica-drinkwell-4-unidades/PAC19-14088/",
+          "accessedAt": "2026-09-08T10:56:19.965554+00:00",
+          "sourceType": "manufacturer",
+          "fields": [
+            "consumables.0.compatibility",
+            "consumables.0.filterType",
+            "consumables.0.replacementInterval",
+            "consumables.0.partNumber"
+          ],
+          "assertion": "Identität/Verbrauchsteil ist für dieses Modell ausdrücklich beschrieben. Hersteller benennt Aufbau/Funktion des Verbrauchsteils. Offizielles modellspezifisches Austauschintervall; Wochen × 7, Monate × 30. Explizite Hersteller-Teilebezeichnung."
+        }
+      ]
+    }
+  ]
+}

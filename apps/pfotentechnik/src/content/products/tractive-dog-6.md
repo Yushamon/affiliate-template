@@ -76,10 +76,10 @@ subscription:
     - { name: "Basic 2 Jahre", billingPeriod: term, commitmentMonths: 24, billingMode: upfront, price: 120, currency: EUR, effectiveMonthlyPrice: 5, autoRenew: true }
     - { name: "Premium jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 96, currency: EUR, effectiveMonthlyPrice: 8, autoRenew: true }
 price:
-  current: 48.3
+  current: 68.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-02T06:04:37.155Z"
+  checkedAt: "2026-09-09T06:23:14.167Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -94,12 +94,12 @@ rating: 4.6
 score: 92
 
 priceState: "available"
-priceUpdated: "2026-09-02T06:04:37.155Z"
+priceUpdated: "2026-09-09T06:23:14.167Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-02T06:04:37.155Z"
+availabilityUpdated: "2026-09-09T06:23:14.167Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

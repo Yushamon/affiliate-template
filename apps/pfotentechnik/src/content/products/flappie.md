@@ -71,13 +71,12 @@ price:
   current: 479
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-07"
   comparisonText: "Deutscher Gerätepreis inkl. MwSt.; Versandkosten werden erst im Checkout ausgewiesen."
+  checkedAt: "2026-09-09T06:21:41.666Z"
   source:
-    id: "flappiedoors.com-de"
-    label: "Flappie Shop · Markt Deutschland"
+    id: "flappiedoors.com"
+    label: "flappiedoors.com"
     type: "merchant"
-    url: "https://flappiedoors.com/en/products/flappie?country=DE"
 affiliate:
   provider: "official"
   label: "Preis und Verfügbarkeit bei Flappie prüfen"
@@ -90,15 +89,16 @@ conversion:
   secondaryCtaLabel: "Katzenklappen vergleichen"
   showSecondaryCta: true
 priceState: "available"
-priceUpdated: "2026-09-07"
+priceUpdated: "2026-09-09T06:21:41.666Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
-availabilityReason: "Am 07.09.2026 im offiziellen Shop als lagernd und für Deutschland mit 2–3 Werktagen Lieferzeit ausgewiesen."
-availabilityUpdated: "2026-09-07"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-09-09T06:21:41.666Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
+recommendationStatus: "recommended"
 maintenanceStatus: "complete"
+
 editorial:
   assessmentType: "data-review"
   evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis", "user-feedback"]

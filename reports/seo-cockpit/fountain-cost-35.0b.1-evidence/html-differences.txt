@@ -1,0 +1,267 @@
+admin/seo/advisor/index.html
+--- 
+
++++ 
+
+@@ -52 +52 @@
+
+-<span class="seo-muted">Geprüft 8.9.2026, 11:54:26</span>
++<span class="seo-muted">Noch nicht synchronisiert</span>
+@@ -61 +61 @@
+
+-<strong>152</strong>
++<strong>0</strong>
+@@ -73 +73 @@
+
+-<strong>152</strong>
++<strong>0</strong>
+@@ -81 +81 @@
+
+-<strong>18/20</strong>
++<strong>0/0</strong>
+@@ -84,6 +84 @@
+
+-<div class="seo-source-state">
+-<span class="seo-badge" data-level="ok">18 Quellen verfügbar</span>
+-<span class="seo-badge" data-level="warning">2 Quellen fehlen</span>
+-<span class="seo-badge">68 Arbeitsgruppen</span>
+-<span class="seo-badge">152 Codex-geeignet</span>
+-</div>
++<div class="seo-empty">Noch kein zentraler Snapshot. Einmal <code>npm --workspace apps/pfotentechnik run quality-ops:sync</code> ausführen.</div>
+@@ -107,2 +101,0 @@
+
+-<option value="comparison-governance">comparison-governance</option>
+-<option value="dark-mode">dark-mode</option>
+@@ -123 +116 @@
+
+-<script type="application/json" data-finding-json>{"findings":[{"id":"quality-033483c2d4e35cfe3c50","type":"errors","category":"governance","area":"comparison-governance","severity":"error","confidence":90,"priority":{"score":52,"level":"medium","factors":{"rankingImpact":45,"userImpact":45,"releaseBlocker":false,"technicalRisk":85,"trustImpact":35,"recurrenceProbability":40,"effort":50}},"status":"open","source":"Comparison Release","sourceFile":"reports/comparison-platform/comparison-release-closure.json","file":"","route":"/vergleiche/beste-futterautomaten-fuer-hunde/","component":"","files":[],"urls":["/vergleiche/beste-futterautomaten-fuer-hunde/"],"description":"Öffentliche Ausgabe enthält \"Keine Angabe\".","impact":"Kann Qualität, Auffindbarkeit, Vertrauen oder Nutzung beeinträchtigen.","recommendedSolution":"Befund in der genannten Quelle prüfen und gezielt beheben.","recommendedAction":"Befund in der genannten Quelle prüfen und gezielt beheben.","autoFixPossible":false,"autoFixAvailable":false,"autoFixId":"","manualFixRequired":true,"aiActionAvailable":true,"aiActionIds":["comparison-improve","codex-send"],"codexSuitable":true,"releaseBlocker":false,"createdAt":"2026-09-02T06:06:54.198Z","lastCheckedAt":"2026-09-08T09:41:10.708Z","lastChangedAt":"2026-09-02T06:06:54.198Z","snoozedUntil":null,"note":"","fingerprint":"reports/comparison-platform/comparison-release-closure.json::errors::::/vergleiche/beste-futterautomaten-fuer-hunde/::::öffentliche ausgabe enthält \"keine angabe\".","aiActions":[{"id":"comparison-improve","label":"Vergleich verbessern","description"
++<script type="application/json" data-finding-json>{"findings":[],"compact":false,"emptyText":"Keine aktiven Findings.","serviceUrl":"http://127.0.0.1:4178"}</script>
+@@ -187 +180 @@
+
+-<script type="application/json" data-package-json>{"mode":"advisor","defaultRange":"7d","generatedAt":"2026-09-03T06:49:48.873Z","ranges":{"7d":{"label":"Letzte 7 Tage","packages":[{"id":"seo-package-070yuph","title":"Technik und interne Struktur konsolidieren","rangeKey":"7d","family":"technical-structure","priority":"high","impact":91,"confidence":0.96,"effortValue":3.2,"effort":"mittel","verificationMode":"immediate","verifyAfter":null,"taskIds":["topical-authority|futterautomaten-content-consolidation"],"affectedFiles":[],"tasks":[{"id":"topical-authority|futterautomaten-content-consolidation","title":"Futterautomaten-Cluster konsolidieren statt weiter verbreitern","priority":"high","score":91,"explicitImpact":90,"confidence":0.96,"effortValue":3.2,"effort":"mittel","family":"technical-structure","verificationMode":"immediate","problem":"Der Futterautomaten-Cluster ist bereits sehr breit. Der nächste Hebel liegt in Qualitätssteigerung, Intent-Abgrenzung und Journey-Verlinkung statt in weiteren ähnlichen Seiten.","dataBasis":"0 Impressionen; 0 Klicks; CTR 0.00 %; Position 0.0; topical-authority-repository-audit; Repository-basierter Topical-Authority-Plan. Vor Umsetzung mit aktuellen GSC-Daten validieren.","nextAction":"Erstelle eine Intent-Matrix aller Futterautomaten-Ratgeber und -Vergleiche. Führe doppelte oder schwach differenzierte Inhalte zusammen, schärfe eindeutige Entscheidungskriterien und baue die Journey Ratgeber → Vergleich → Produkt → Hersteller konsequent aus.","steps":["Alle Futterautomaten-Seiten nach Suchintention gruppieren.","Überschneidungen und dün
+admin/seo/history/index.html
+--- 
+
++++ 
+
+@@ -51,378 +51 @@
+
+-<article class="seo-card seo-stack">
+-<span class="seo-badge">8.9.2026, 11:41:10</span>
+-<div class="seo-metrics">
+-<div class="seo-metric">
+-<span>Aktiv</span>
+-<strong>152</strong>
+-</div>
+-<div class="seo-metric">
+-<span>Blocker</span>
+-<strong>0</strong>
+-</div>
+-<div class="seo-metric">
+-<span>Regressionen</span>
+-<strong>0</strong>
+-</div>
+-<div class="seo-metric">
+-<span>Quellen</span>
+-<strong>18</strong>
+-</div>
+-</div>
+-</article>
+-<article class="seo-card seo-stack">
+-<span class="seo-badge">7.9.2026, 15:08:47</span>
+-<div class="seo-metrics">
+-<div class="seo-metric">
+-<span>Aktiv</span>
+-<strong>152</strong>
+admin/seo/index.html
+--- 
+
++++ 
+
+@@ -72 +72 @@
+
+-<dd data-google-test data-astro-cid-szu4xjgi>31.8.2026, 10:12:13</dd>
++<dd data-google-test data-astro-cid-szu4xjgi>noch nie</dd>
+@@ -76 +76 @@
+
+-<dd data-google-attempt data-astro-cid-szu4xjgi>31.8.2026, 10:12:13</dd>
++<dd data-google-attempt data-astro-cid-szu4xjgi>noch nie</dd>
+@@ -84 +84 @@
+
+-<dd data-google-duration data-astro-cid-szu4xjgi>4 ms</dd>
++<dd data-google-duration data-astro-cid-szu4xjgi>–</dd>
+@@ -199 +199 @@
+
+-<script type="application/json" data-search-config>{"initial":{"schemaVersion":1,"updatedAt":"2026-09-02T06:07:03.974Z","google":{"provider":"google","label":"Google Search Console","health":"degraded","connected":false,"configured":false,"property":null,"lastAttemptAt":"2026-08-31T08:12:13.339Z","lastSuccessfulSyncAt":null,"lastTestAt":"2026-08-31T08:12:13.339Z","lastReportAt":"2026-09-02T06:07:03.954Z","lastDurationMs":4,"lastError":null,"pagesCount":0,"queriesCount":0},"bing":{"provider":"bing","label":"Bing Webmaster Tools","health":"not-configured","connected":false,"configured":false,"property":null,"lastAttemptAt":null,"lastSuccessfulSyncAt":null,"lastTestAt":null,"lastReportAt":"2026-09-02T06:07:03.971Z","lastDurationMs":3,"lastError":null,"pagesCount":0,"queriesCount":0},"combined":{"status":"skipped","lastAttemptAt":"2026-08-06T08:42:23.185Z","lastSuccessfulSyncAt":null,"lastReportAt":null,"lastDurationMs":1,"lastError":null,"providerResults":{"google":"skipped","bing":"skipped"},"pagesCount":0,"queriesCount":0,"metrics":null}},"config":{"google":{"clientConfigured":false,"tokenPresent":false,"property":"sc-domain:pfotentechnik.de","redirectUri":"http://127.0.0.1:53682/oauth2callback"},"bing":{"configured":false,"siteUrl":"https://pfotentechnik.de","status":"not-configured"}},"serviceUrl":"http://127.0.0.1:4178"}</script>
++<script type="application/json" data-search-config>{"initial":{"schemaVersion":1,"updatedAt":null,"google":{"provider":"google","label":"Google Search Console","health":"not-configured","connected":false,"configured":false,"property":null,"lastAttemptAt":null,"lastSuccessfulSyncAt":null,"lastTestAt":null,"lastReportAt":null,"lastDurationMs":null,"lastError":null,"pagesCount":0,"queriesCount":0},"bing":{"provider":"bing","label":"Bing Webmaster Tools","health":"not-configured","connected":false,"configured":false,"property":null,"lastAttemptAt":null,"lastSuccessfulSyncAt":null,"lastTestAt":null,"lastReportAt":null,"lastDurationMs":null,"lastError":null,"pagesCount":0,"queriesCount":0},"combined":{"status":"skipped","lastAttemptAt":null,"lastSuccessfulSyncAt":null,"lastReportAt":null,"lastDurationMs":null,"lastError":null,"providerResults":{"google":"skipped","bing":"skipped"},"pagesCount":0,"queriesCount":0,"metrics":null}},"config":{"google":{"clientConfigured":false,"tokenPresent":false,"property":"sc-domain:pfotentechnik.de","redirectUri":"http://127.0.0.1:53682/oauth2callback"},"bing":{"configured":false,"siteUrl":"https://pfotentechnik.de","status":"not-configured"}},"serviceUrl":"http://127.0.0.1:4178"}</script>
+@@ -246 +246 @@
+
+-<span class="seo-muted">Geprüft 8.9.2026, 13:15:29</span>
++<span class="seo-muted">Geprüft 9.9.2026, 08:25:23</span>
+@@ -255 +255 @@
+
+-<strong>152</strong>
++<strong>0</strong>
+@@ -267 +267 @@
+
+-<strong>152</strong>
++<strong>0</strong>
+@@ -275,9 +275,4 @@
+
+-<strong>18/20</strong>
+-</article>
+-</div>
+-<div class="seo-source-state">
+-<span class="seo-badge" data-level="ok">18 Quellen verfügbar</span>
+-<span class="seo-badge" data-level="warning">2 Quellen fehlen</span>
+admin/seo/prices/index.html
+--- 
+
++++ 
+
+@@ -131 +131 @@
+
+-<script type="application/json" data-ops-records>[{"slug":"litter-robot-5-pro","title":"Litter-Robot 5 Pro","category":"Automatische Katzentoiletten","manufacturerName":"Whisker","manufacturerSlug":"whisker","manufacturerKey":"whisker","score":76,"sourceLabel":"Nicht angegeben","comparisonText":"","currency":"EUR","current":null,"formattedCurrent":null,"targetUrl":null,"formattedPrice":null,"priceAgeDays":null,"priceAvailable":false,"priceState":"unknown","editorialPriceControl":false,"affiliateAvailable":false,"affiliateUrl":null,"availability":"unknown","availabilityLabel":"Unbekannt","editorialStatus":"complete","recommendationStatus":"limited","maintenanceStatus":"required","maintenanceLabel":"Pflege erforderlich","recommendationLabel":"Eingeschränkt empfehlbar","warnings":["Preis fehlt","Affiliate fehlt","Verfügbarkeit unbekannt"],"missingRequiredFields":[],"consciouslyUnavailable":false,"archived":false,"isArchive":false,"isTask":true,"priorityRank":0,"purchasable":false,"autoRecommendationEligible":false},{"slug":"cat-mate-shell-fountain","title":"Cat Mate Shell Pet Fountain","category":"Trinkbrunnen","manufacturerName":"Cat Mate","manufacturerSlug":"cat-mate","manufacturerKey":"cat-mate","score":75,"sourceLabel":"amazon.de","comparisonText":"","currency":"EUR","current":null,"formattedCurrent":null,"targetUrl":"https://www.amazon.de/s?k=Cat+Mate+Shell+Pet+Fountain","formattedPrice":null,"priceUpdated":"2026-07-27T20:27:50.080Z","priceAgeDays":42,"priceAvailable":false,"priceState":"unknown","editorialPriceControl":false,"affiliateAvailable":true,"affiliateUrl":"htt
++<script type="application/json" data-ops-records>[{"slug":"litter-robot-5-pro","title":"Litter-Robot 5 Pro","category":"Automatische Katzentoiletten","manufacturerName":"Whisker","manufacturerSlug":"whisker","manufacturerKey":"whisker","score":76,"sourceLabel":"Nicht angegeben","comparisonText":"","currency":"EUR","current":null,"formattedCurrent":null,"targetUrl":null,"formattedPrice":null,"priceAgeDays":null,"priceAvailable":false,"priceState":"unknown","editorialPriceControl":false,"affiliateAvailable":false,"affiliateUrl":null,"availability":"unknown","availabilityLabel":"Unbekannt","editorialStatus":"complete","recommendationStatus":"limited","maintenanceStatus":"required","maintenanceLabel":"Pflege erforderlich","recommendationLabel":"Eingeschränkt empfehlbar","warnings":["Preis fehlt","Affiliate fehlt","Verfügbarkeit unbekannt"],"missingRequiredFields":[],"consciouslyUnavailable":false,"archived":false,"isArchive":false,"isTask":true,"priorityRank":0,"purchasable":false,"autoRecommendationEligible":false},{"slug":"cat-mate-shell-fountain","title":"Cat Mate Shell Pet Fountain","category":"Trinkbrunnen","manufacturerName":"Cat Mate","manufacturerSlug":"cat-mate","manufacturerKey":"cat-mate","score":75,"sourceLabel":"amazon.de","comparisonText":"","currency":"EUR","current":null,"formattedCurrent":null,"targetUrl":"https://www.amazon.de/s?k=Cat+Mate+Shell+Pet+Fountain","formattedPrice":null,"priceUpdated":"2026-07-27T20:27:50.080Z","priceAgeDays":43,"priceAvailable":false,"priceState":"unknown","editorialPriceControl":false,"affiliateAvailable":true,"affiliateUrl":"htt
+@@ -261 +261 @@
+
+-<small data-field="priceAgeDays" data-astro-cid-ri6o4m3i>42 Tage alt</small>
++<small data-field="priceAgeDays" data-astro-cid-ri6o4m3i>43 Tage alt</small>
+@@ -364 +364 @@
+
+-<small data-field="priceAgeDays" data-astro-cid-ri6o4m3i>42 Tage alt</small>
++<small data-field="priceAgeDays" data-astro-cid-ri6o4m3i>43 Tage alt</small>
+@@ -467 +467 @@
+
+-<small data-field="priceAgeDays" data-astro-cid-ri6o4m3i>42 Tage alt</small>
++<small data-field="priceAgeDays" data-astro-cid-ri6o4m3i>43 Tage alt</small>
+@@ -570 +570 @@
+
+-<small data-field="priceAgeDays" data-astro-cid-ri6o4m3i>42 Tage alt</small>
++<small data-field="priceAgeDays" data-astro-cid-ri6o4m3i>43 Tage alt</small>
+@@ -673 +673 @@
+
+-<small data-field="priceAgeDays" data-astro-cid-ri6o4m3i>42 Tage alt</small>
++<small data-field="priceAgeDays" data-astro-cid-ri6o4m3i>43 Tage alt</small>
+@@ -776 +776 @@
+
+-<small data-field="priceAgeDays" data-astro-cid-ri6o4m3i>42 Tage alt</small>
++<small data-field="priceAgeDays" data-astro-cid-ri6o4m3i>43 Tage alt</small>
+@@ -879 +879 @@
+
+-<small data-field="priceAgeDays" data-astro-cid-ri6o4m3i>42 Tage alt</small>
++<small data-field="priceAgeDays" data-astro-cid-ri6o4m3i>43 Tage alt</small>
+@@ -982 +982 @@
+
+-<small data-field="priceAgeDays" data-astro-cid-ri6o4m3i>42 Tage alt</small>
++<small data-field="priceAgeDays" data-astro-cid-ri6o4m3i>43 Tage alt</small>
+@@ -1072,0 +1073,102 @@
+
+admin/seo/products/enabot-ebo-air-2/index.html
+--- 
+
++++ 
+
+@@ -48 +48 @@
+
+-<span class="seo-badge">1 aktive Findings</span>
++<span class="seo-badge">0 aktive Findings</span>
+@@ -148 +147,0 @@
+
+-<option value="comparison-governance">comparison-governance</option>
+@@ -163 +162 @@
+
+-<script type="application/json" data-finding-json>{"findings":[{"id":"quality-a59bcb4ec139ef8cd923","type":"PRODUCT_NOT_COVERED","category":"governance","area":"comparison-governance","severity":"warning","confidence":90,"priority":{"score":42,"level":"low","factors":{"rankingImpact":45,"userImpact":45,"releaseBlocker":false,"technicalRisk":45,"trustImpact":35,"recurrenceProbability":40,"effort":50}},"status":"open","source":"Comparison Governance","sourceFile":"reports/comparison-platform/comparison-audit.json","file":"src/content/products/enabot-ebo-air-2.md","route":"","component":"enabot-ebo-air-2","files":["src/content/products/enabot-ebo-air-2.md"],"urls":[],"description":"Aktives Produkt kommt in keiner Vergleichsseite vor.","impact":"Kann Qualität, Auffindbarkeit, Vertrauen oder Nutzung beeinträchtigen.","recommendedSolution":"Befund in der genannten Quelle prüfen und gezielt beheben.","recommendedAction":"Befund in der genannten Quelle prüfen und gezielt beheben.","autoFixPossible":false,"autoFixAvailable":false,"autoFixId":"","manualFixRequired":true,"aiActionAvailable":true,"aiActionIds":["comparison-improve","codex-send"],"codexSuitable":true,"releaseBlocker":false,"createdAt":"2026-09-01T04:06:46.459Z","lastCheckedAt":"2026-09-08T09:41:10.708Z","lastChangedAt":"2026-09-01T04:06:46.459Z","snoozedUntil":null,"note":"","fingerprint":"reports/comparison-platform/comparison-audit.json::PRODUCT_NOT_COVERED::src/content/products/enabot-ebo-air-2.md::::enabot-ebo-air-2::aktives produkt kommt in keiner vergleichsseite vor.","aiActions":[{"id":"comparison-improve","labe
++<script type="application/json" data-finding-json>{"findings":[],"compact":false,"emptyText":"Für diese Produktseite gibt es keine aktiven Findings.","serviceUrl":"http://127.0.0.1:4178"}</script>
+admin/seo/products/feelneedy-fn-w18-8l-katzenbrunnen/index.html
+--- 
+
++++ 
+
+@@ -48 +48 @@
+
+-<span class="seo-badge">1 aktive Findings</span>
++<span class="seo-badge">0 aktive Findings</span>
+@@ -148 +147,0 @@
+
+-<option value="comparison-governance">comparison-governance</option>
+@@ -163 +162 @@
+
+-<script type="application/json" data-finding-json>{"findings":[{"id":"quality-ff0d9606b51bf1fdd980","type":"PRODUCT_NOT_COVERED","category":"governance","area":"comparison-governance","severity":"warning","confidence":90,"priority":{"score":42,"level":"low","factors":{"rankingImpact":45,"userImpact":45,"releaseBlocker":false,"technicalRisk":45,"trustImpact":35,"recurrenceProbability":40,"effort":50}},"status":"open","source":"Comparison Governance","sourceFile":"reports/comparison-platform/comparison-audit.json","file":"src/content/products/feelneedy-fn-w18-8l-katzenbrunnen.md","route":"","component":"feelneedy-fn-w18-8l-katzenbrunnen","files":["src/content/products/feelneedy-fn-w18-8l-katzenbrunnen.md"],"urls":[],"description":"Aktives Produkt kommt in keiner Vergleichsseite vor.","impact":"Kann Qualität, Auffindbarkeit, Vertrauen oder Nutzung beeinträchtigen.","recommendedSolution":"Befund in der genannten Quelle prüfen und gezielt beheben.","recommendedAction":"Befund in der genannten Quelle prüfen und gezielt beheben.","autoFixPossible":false,"autoFixAvailable":false,"autoFixId":"","manualFixRequired":true,"aiActionAvailable":true,"aiActionIds":["comparison-improve","codex-send"],"codexSuitable":true,"releaseBlocker":false,"createdAt":"2026-09-01T04:06:46.459Z","lastCheckedAt":"2026-09-08T09:41:10.708Z","lastChangedAt":"2026-09-01T04:06:46.459Z","snoozedUntil":null,"note":"","fingerprint":"reports/comparison-platform/comparison-audit.json::PRODUCT_NOT_COVERED::src/content/products/feelneedy-fn-w18-8l-katzenbrunnen.md::::feelneedy-fn-w18-8l-katzenbrunnen::aktives produk
++<script type="application/json" data-finding-json>{"findings":[],"compact":false,"emptyText":"Für diese Produktseite gibt es keine aktiven Findings.","serviceUrl":"http://127.0.0.1:4178"}</script>
+admin/seo/products/furbo-360-hundekamera/index.html
+--- 
+
++++ 
+
+@@ -48 +48 @@
+
+-<span class="seo-badge">1 aktive Findings</span>
++<span class="seo-badge">0 aktive Findings</span>
+@@ -148 +147,0 @@
+
+-<option value="comparison-governance">comparison-governance</option>
+@@ -163 +162 @@
+
+-<script type="application/json" data-finding-json>{"findings":[{"id":"quality-96f71c843a517d2ff43b","type":"PRODUCT_NOT_COVERED","category":"governance","area":"comparison-governance","severity":"warning","confidence":90,"priority":{"score":42,"level":"low","factors":{"rankingImpact":45,"userImpact":45,"releaseBlocker":false,"technicalRisk":45,"trustImpact":35,"recurrenceProbability":40,"effort":50}},"status":"open","source":"Comparison Governance","sourceFile":"reports/comparison-platform/comparison-audit.json","file":"src/content/products/furbo-360-hundekamera.md","route":"","component":"furbo-360-hundekamera","files":["src/content/products/furbo-360-hundekamera.md"],"urls":[],"description":"Aktives Produkt kommt in keiner Vergleichsseite vor.","impact":"Kann Qualität, Auffindbarkeit, Vertrauen oder Nutzung beeinträchtigen.","recommendedSolution":"Befund in der genannten Quelle prüfen und gezielt beheben.","recommendedAction":"Befund in der genannten Quelle prüfen und gezielt beheben.","autoFixPossible":false,"autoFixAvailable":false,"autoFixId":"","manualFixRequired":true,"aiActionAvailable":true,"aiActionIds":["comparison-improve","codex-send"],"codexSuitable":true,"releaseBlocker":false,"createdAt":"2026-09-01T04:06:46.459Z","lastCheckedAt":"2026-09-08T09:41:10.708Z","lastChangedAt":"2026-09-01T04:06:46.459Z","snoozedUntil":null,"note":"","fingerprint":"reports/comparison-platform/comparison-audit.json::PRODUCT_NOT_COVERED::src/content/products/furbo-360-hundekamera.md::::furbo-360-hundekamera::aktives produkt kommt in keiner vergleichsseite vor.","aiActions":[{"id":"
++<script type="application/json" data-finding-json>{"findings":[],"compact":false,"emptyText":"Für diese Produktseite gibt es keine aktiven Findings.","serviceUrl":"http://127.0.0.1:4178"}</script>
+admin/seo/products/index.html
+--- 
+
++++ 
+
+@@ -62 +62 @@
+
+-<strong>4</strong>
++<strong>0</strong>
+@@ -89 +89 @@
+
+-<script type="application/json" data-product-workspace-json>[{"slug":"enabot-ebo-air-2","title":"Enabot EBO Air 2","category":"Haustierkameras","findings":1,"blockers":0,"highPriority":0,"media":1},{"slug":"feelneedy-fn-w18-8l-katzenbrunnen","title":"FEELNEEDY FN-W18 8L Katzenbrunnen","category":"Trinkbrunnen","findings":1,"blockers":0,"highPriority":0,"media":6},{"slug":"furbo-360-hundekamera","title":"Furbo 360° Hundekamera","category":"Haustierkameras","findings":1,"blockers":0,"highPriority":0,"media":6},{"slug":"neakasa-m1-plus","title":"Neakasa M1 Plus","category":"Automatische Katzentoiletten","findings":1,"blockers":0,"highPriority":0,"media":1},{"slug":"aqara-smart-pet-feeder-c1","title":"Aqara Smart Pet Feeder C1","category":"Futterautomaten","findings":0,"blockers":0,"highPriority":0,"media":6},{"slug":"cat-mate-c200","title":"Cat Mate C200","category":"Futterautomaten","findings":0,"blockers":0,"highPriority":0,"media":6},{"slug":"cat-mate-c300","title":"Cat Mate C300","category":"Futterautomaten","findings":0,"blockers":0,"highPriority":0,"media":7},{"slug":"cat-mate-c500","title":"Cat Mate C500","category":"Futterautomaten","findings":0,"blockers":0,"highPriority":0,"media":6},{"slug":"cat-mate-elite-355w","title":"Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer","category":"Katzenklappen","findings":0,"blockers":0,"highPriority":0,"media":7},{"slug":"cat-mate-335-pet-fountain","title":"Cat Mate Pet Fountain 335","category":"Trinkbrunnen","findings":0,"blockers":0,"highPriority":0,"media":6},{"slug":"cat-mate-shell-fountain","title":"Cat Mate Shell Pet F
++<script type="application/json" data-product-workspace-json>[{"slug":"aqara-smart-pet-feeder-c1","title":"Aqara Smart Pet Feeder C1","category":"Futterautomaten","findings":0,"blockers":0,"highPriority":0,"media":6},{"slug":"cat-mate-c200","title":"Cat Mate C200","category":"Futterautomaten","findings":0,"blockers":0,"highPriority":0,"media":6},{"slug":"cat-mate-c300","title":"Cat Mate C300","category":"Futterautomaten","findings":0,"blockers":0,"highPriority":0,"media":7},{"slug":"cat-mate-c500","title":"Cat Mate C500","category":"Futterautomaten","findings":0,"blockers":0,"highPriority":0,"media":6},{"slug":"cat-mate-elite-355w","title":"Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer","category":"Katzenklappen","findings":0,"blockers":0,"highPriority":0,"media":7},{"slug":"cat-mate-335-pet-fountain","title":"Cat Mate Pet Fountain 335","category":"Trinkbrunnen","findings":0,"blockers":0,"highPriority":0,"media":6},{"slug":"cat-mate-shell-fountain","title":"Cat Mate Shell Pet Fountain","category":"Trinkbrunnen","findings":0,"blockers":0,"highPriority":0,"media":6},{"slug":"catit-pixi-smart-6-meal-feeder","title":"Catit PIXI Smart 6-Meal Feeder","category":"Futterautomaten","findings":0,"blockers":0,"highPriority":0,"media":6},{"slug":"catit-pixi-smart-trinkbrunnen","title":"Catit PIXI Smart-Trinkbrunnen","category":"Trinkbrunnen","findings":0,"blockers":0,"highPriority":0,"media":7},{"slug":"catit-pixi-vision-smart-feeder","title":"Catit PIXI Vision Smart Feeder","category":"Futterautomaten","findings":0,"blockers":0,"highPriority":0,"media":6},{"slug":"devoko-90l-au
+admin/seo/products/neakasa-m1-plus/index.html
+--- 
+
++++ 
+
+@@ -48 +48 @@
+
+-<span class="seo-badge">1 aktive Findings</span>
++<span class="seo-badge">0 aktive Findings</span>
+@@ -148 +147,0 @@
+
+-<option value="comparison-governance">comparison-governance</option>
+@@ -163 +162 @@
+
+-<script type="application/json" data-finding-json>{"findings":[{"id":"quality-6dc60ed6029261649cbe","type":"PRODUCT_NOT_COVERED","category":"governance","area":"comparison-governance","severity":"warning","confidence":90,"priority":{"score":42,"level":"low","factors":{"rankingImpact":45,"userImpact":45,"releaseBlocker":false,"technicalRisk":45,"trustImpact":35,"recurrenceProbability":40,"effort":50}},"status":"open","source":"Comparison Governance","sourceFile":"reports/comparison-platform/comparison-audit.json","file":"src/content/products/neakasa-m1-plus.md","route":"","component":"neakasa-m1-plus","files":["src/content/products/neakasa-m1-plus.md"],"urls":[],"description":"Aktives Produkt kommt in keiner Vergleichsseite vor.","impact":"Kann Qualität, Auffindbarkeit, Vertrauen oder Nutzung beeinträchtigen.","recommendedSolution":"Befund in der genannten Quelle prüfen und gezielt beheben.","recommendedAction":"Befund in der genannten Quelle prüfen und gezielt beheben.","autoFixPossible":false,"autoFixAvailable":false,"autoFixId":"","manualFixRequired":true,"aiActionAvailable":true,"aiActionIds":["comparison-improve","codex-send"],"codexSuitable":true,"releaseBlocker":false,"createdAt":"2026-09-01T04:06:46.459Z","lastCheckedAt":"2026-09-08T09:41:10.708Z","lastChangedAt":"2026-09-01T04:06:46.459Z","snoozedUntil":null,"note":"","fingerprint":"reports/comparison-platform/comparison-audit.json::PRODUCT_NOT_COVERED::src/content/products/neakasa-m1-plus.md::::neakasa-m1-plus::aktives produkt kommt in keiner vergleichsseite vor.","aiActions":[{"id":"comparison-improve","label":"V
++<script type="application/json" data-finding-json>{"findings":[],"compact":false,"emptyText":"Für diese Produktseite gibt es keine aktiven Findings.","serviceUrl":"http://127.0.0.1:4178"}</script>
+admin/seo/prompts/index.html
+--- 
+
++++ 
+
+@@ -699 +699 @@
+
+-<script type="application/json" data-package-json>{"mode":"prompts","defaultRange":"7d","generatedAt":"2026-09-03T06:49:48.873Z","ranges":{"7d":{"label":"Letzte 7 Tage","packages":[{"id":"seo-package-070yuph","title":"Technik und interne Struktur konsolidieren","rangeKey":"7d","family":"technical-structure","priority":"high","impact":91,"confidence":0.96,"effortValue":3.2,"effort":"mittel","verificationMode":"immediate","verifyAfter":null,"taskIds":["topical-authority|futterautomaten-content-consolidation"],"affectedFiles":[],"tasks":[{"id":"topical-authority|futterautomaten-content-consolidation","title":"Futterautomaten-Cluster konsolidieren statt weiter verbreitern","priority":"high","score":91,"explicitImpact":90,"confidence":0.96,"effortValue":3.2,"effort":"mittel","family":"technical-structure","verificationMode":"immediate","problem":"Der Futterautomaten-Cluster ist bereits sehr breit. Der nächste Hebel liegt in Qualitätssteigerung, Intent-Abgrenzung und Journey-Verlinkung statt in weiteren ähnlichen Seiten.","dataBasis":"0 Impressionen; 0 Klicks; CTR 0.00 %; Position 0.0; topical-authority-repository-audit; Repository-basierter Topical-Authority-Plan. Vor Umsetzung mit aktuellen GSC-Daten validieren.","nextAction":"Erstelle eine Intent-Matrix aller Futterautomaten-Ratgeber und -Vergleiche. Führe doppelte oder schwach differenzierte Inhalte zusammen, schärfe eindeutige Entscheidungskriterien und baue die Journey Ratgeber → Vergleich → Produkt → Hersteller konsequent aus.","steps":["Alle Futterautomaten-Seiten nach Suchintention gruppieren.","Überschneidungen und dün
++<script type="application/json" data-package-json>{"mode":"prompts","defaultRange":"7d","generatedAt":"2026-09-03T06:49:48.873Z","ranges":{"7d":{"label":"Letzte 7 Tage","packages":[{"id":"seo-package-070yuph","title":"Technik und interne Struktur konsolidieren","rangeKey":"7d","family":"technical-structure","priority":"high","impact":91,"confidence":0.96,"effortValue":3.2,"effort":"mittel","verificationMode":"immediate","verifyAfter":null,"taskIds":["topical-authority|futterautomaten-content-consolidation"],"affectedFiles":[],"tasks":[{"id":"topical-authority|futterautomaten-content-consolidation","title":"Futterautomaten-Cluster konsolidieren statt weiter verbreitern","priority":"high","score":91,"explicitImpact":90,"confidence":0.96,"effortValue":3.2,"effort":"mittel","family":"technical-structure","verificationMode":"immediate","problem":"Der Futterautomaten-Cluster ist bereits sehr breit. Der nächste Hebel liegt in Qualitätssteigerung, Intent-Abgrenzung und Journey-Verlinkung statt in weiteren ähnlichen Seiten.","dataBasis":"0 Impressionen; 0 Klicks; CTR 0.00 %; Position 0.0; topical-authority-repository-audit; Repository-basierter Topical-Authority-Plan. Vor Umsetzung mit aktuellen GSC-Daten validieren.","nextAction":"Erstelle eine Intent-Matrix aller Futterautomaten-Ratgeber und -Vergleiche. Führe doppelte oder schwach differenzierte Inhalte zusammen, schärfe eindeutige Entscheidungskriterien und baue die Journey Ratgeber → Vergleich → Produkt → Hersteller konsequent aus.","steps":["Alle Futterautomaten-Seiten nach Suchintention gruppieren.","Überschneidungen und dün
+admin/seo/tasks/index.html
+--- 
+
++++ 
+
+@@ -105 +105 @@
+
+-<script type="application/json" data-package-json>{"mode":"tasks","defaultRange":"7d","generatedAt":"2026-09-03T06:49:48.873Z","ranges":{"7d":{"label":"Letzte 7 Tage","packages":[{"id":"seo-package-070yuph","title":"Technik und interne Struktur konsolidieren","rangeKey":"7d","family":"technical-structure","priority":"high","impact":91,"confidence":0.96,"effortValue":3.2,"effort":"mittel","verificationMode":"immediate","verifyAfter":null,"taskIds":["topical-authority|futterautomaten-content-consolidation"],"affectedFiles":[],"tasks":[{"id":"topical-authority|futterautomaten-content-consolidation","title":"Futterautomaten-Cluster konsolidieren statt weiter verbreitern","priority":"high","score":91,"explicitImpact":90,"confidence":0.96,"effortValue":3.2,"effort":"mittel","family":"technical-structure","verificationMode":"immediate","problem":"Der Futterautomaten-Cluster ist bereits sehr breit. Der nächste Hebel liegt in Qualitätssteigerung, Intent-Abgrenzung und Journey-Verlinkung statt in weiteren ähnlichen Seiten.","dataBasis":"0 Impressionen; 0 Klicks; CTR 0.00 %; Position 0.0; topical-authority-repository-audit; Repository-basierter Topical-Authority-Plan. Vor Umsetzung mit aktuellen GSC-Daten validieren.","nextAction":"Erstelle eine Intent-Matrix aller Futterautomaten-Ratgeber und -Vergleiche. Führe doppelte oder schwach differenzierte Inhalte zusammen, schärfe eindeutige Entscheidungskriterien und baue die Journey Ratgeber → Vergleich → Produkt → Hersteller konsequent aus.","steps":["Alle Futterautomaten-Seiten nach Suchintention gruppieren.","Überschneidungen und dünne
++<script type="application/json" data-package-json>{"mode":"tasks","defaultRange":"7d","generatedAt":"2026-09-03T06:49:48.873Z","ranges":{"7d":{"label":"Letzte 7 Tage","packages":[{"id":"seo-package-070yuph","title":"Technik und interne Struktur konsolidieren","rangeKey":"7d","family":"technical-structure","priority":"high","impact":91,"confidence":0.96,"effortValue":3.2,"effort":"mittel","verificationMode":"immediate","verifyAfter":null,"taskIds":["topical-authority|futterautomaten-content-consolidation"],"affectedFiles":[],"tasks":[{"id":"topical-authority|futterautomaten-content-consolidation","title":"Futterautomaten-Cluster konsolidieren statt weiter verbreitern","priority":"high","score":91,"explicitImpact":90,"confidence":0.96,"effortValue":3.2,"effort":"mittel","family":"technical-structure","verificationMode":"immediate","problem":"Der Futterautomaten-Cluster ist bereits sehr breit. Der nächste Hebel liegt in Qualitätssteigerung, Intent-Abgrenzung und Journey-Verlinkung statt in weiteren ähnlichen Seiten.","dataBasis":"0 Impressionen; 0 Klicks; CTR 0.00 %; Position 0.0; topical-authority-repository-audit; Repository-basierter Topical-Authority-Plan. Vor Umsetzung mit aktuellen GSC-Daten validieren.","nextAction":"Erstelle eine Intent-Matrix aller Futterautomaten-Ratgeber und -Vergleiche. Führe doppelte oder schwach differenzierte Inhalte zusammen, schärfe eindeutige Entscheidungskriterien und baue die Journey Ratgeber → Vergleich → Produkt → Hersteller konsequent aus.","steps":["Alle Futterautomaten-Seiten nach Suchintention gruppieren.","Überschneidungen und dünne
+admin/seo/topical-authority/index.html
+--- 
+
++++ 
+
+@@ -86 +86 @@
+
+-<small data-astro-cid-vj2m2qo4>Stand: 8.9.2026, 13:15:29</small>
++<small data-astro-cid-vj2m2qo4>Stand: 9.9.2026, 08:25:23</small>
+@@ -576 +576 @@
+
+-Repository-Stand: 2026-09-08T11:15:29.298Z
++Repository-Stand: 2026-09-09T06:25:23.200Z

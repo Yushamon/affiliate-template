@@ -53,7 +53,7 @@ price:
   current: 559.98
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-02T06:04:09.404Z"
+  checkedAt: "2026-09-09T06:22:46.696Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -145,12 +145,12 @@ externalEvidence:
     editorialAssessment: "Für die Luma liegt erstmals eine belastbare unabhängige mehrwöchige Hands-on-Review vor. Die aktuelle Nutzerbasis bestätigt sowohl schnelle Akzeptanz als auch einzelne Schwächen der Reinigungs- und Trennlogik. Die Trustpilot-Gesamtwertung ist jedoch markenweit und darf nicht als Luma-Produktbewertung dargestellt werden."
   note: "Cats.com bezieht sich eindeutig auf die aktuelle PETLIBRO Luma. Trustpilot wird ausschließlich als markenweite Nutzerplattform geführt; nur ausdrücklich auf Luma bezogene Erfahrungsinhalte fließen vorsichtig in die Einordnung ein."
 priceState: "available"
-priceUpdated: "2026-09-02T06:04:09.404Z"
+priceUpdated: "2026-09-09T06:22:46.696Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-02T06:04:09.404Z"
+availabilityUpdated: "2026-09-09T06:22:46.696Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
