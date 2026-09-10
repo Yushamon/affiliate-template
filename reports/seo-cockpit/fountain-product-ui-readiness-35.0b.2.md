@@ -31,6 +31,10 @@ Stand: 2026-09-10 · Planungsmatrix für 35.0C · noch nicht rendern
 | `petlibro-dockstream-cordless` | fixed · 130,29 € | ja | ja | nein | nein / nein (Offer ausverkauft) | B | C | `COST_ONLY` |
 | `petsafe-streamside-trinkbrunnen` | range · 34,61–69,22 € | ja | ja | nein | nein / nein | B | D | `COST_ONLY` |
 
+## 35.0C-Empfehlung
+
+`PARTIAL`: Mit den fünf `FULL`- und zehn `COST_ONLY`-Fällen kann die öffentliche Umsetzung nach Ende des Freeze sinnvoll starten. Die elf nicht integrierten Merchant-Fälle sollten nicht durch unbestätigte Ersatzlinks aufgehalten oder künstlich monetarisiert werden. Eine weitere Commerce-Runde lohnt erst mit einer tatsächlichen Affiliate-Integration für Hersteller-Shops, Zooplus, PETLIBRO oder weitere belegte Händler.
+
 ## Summen
 
 - `FULL`: 5
@@ -42,4 +46,3 @@ Stand: 2026-09-10 · Planungsmatrix für 35.0C · noch nicht rendern
 - Pumpenklasse A/B/C/D: 0 / 8 / 1 / 15
 
 Nach Ende des Freeze können für 15 Produkte sinnvolle „Filter & laufende Kosten“-Blöcke vorbereitet werden. Fünf davon dürfen nach separater Publikationsfreigabe einen verifizierten Affiliate-CTA erhalten. Das eine `OFFER_ONLY`-Produkt und die acht `INFO_ONLY`-Produkte dürfen keine Jahreskostenaussage vortäuschen.
-

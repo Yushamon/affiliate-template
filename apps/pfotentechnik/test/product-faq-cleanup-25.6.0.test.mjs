@@ -13,7 +13,7 @@ const TARGETS = [
 ];
 
 function faqCount(source) {
-  const lines = source.split("\n");
+  const lines = source.split(/\r?\n/);
   const start = lines.findIndex((line) => line === "faq:");
   if (start < 0) return 0;
 

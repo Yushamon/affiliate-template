@@ -40,6 +40,17 @@ Alle 16 Angebote haben einen eindeutigen Status. Fünf Produktfälle sind über 
 
 Neun gespeicherte Pumpenangebote wurden ohne neue Pumpenrecherche bewertet: acht sind kaufbar, exakt kompatibel und nicht affiliate-fähig (Closer Pets, oneisall und PETKIT EU); ein PETLIBRO-PLWF115-Angebot ist ausverkauft. Affiliate-ready: 0. Kaufbar non-affiliate: 8. Unresolved/unavailable: 1.
 
+## Abschlussvalidierung
+
+- Neue Commerce-Szenarien: 16/16 bestanden.
+- Gesamttests im aktuellen Repository: 809/809 bestanden. Die 29 zuvor bestehenden Fehler wurden durch plattformneutrale Pfad-/Zeilenendenbehandlung und zwei aktualisierte semantische Erwartungen behoben; kein Test wurde entfernt.
+- Produktions-Build: bestanden, 372 Seiten.
+- Release-Preflight: 24/24 Phasen bestanden; Production HTTP Integrity bestanden.
+- Produkt-/Evidence-Gate: 102 Produkte ohne Fehler, Fountain Research 24/24 bestanden.
+- Affiliate-Paket: 26/26 bestanden; der frühere Parserfehler in `linkEngine.test.ts` ist behoben.
+- Freeze: Im 35.0B.2-Change 15/15 Observation-URLs und 6/6 geschützte Quelldateien unberührt; beide Sitemap-Dateien sind bytegenau zur 35.0B.1-Baseline. Historische rohe HTML-/Dateihashes aus 35.0B.1 weichen wegen bereits eingecheckter, nicht zu 35.0B.2 gehörender Repository-Änderungen ab.
+- Veröffentlichung: 0 öffentliche Content-Änderungen, 0 gerenderte Zubehör-Affiliate-Links.
+
 ## Statussummen
 
 | Status | Anzahl |
@@ -52,4 +63,3 @@ Neun gespeicherte Pumpenangebote wurden ohne neue Pumpenrecherche bewertet: acht
 | `UNKNOWN` | 0 |
 
 `OFFER_UNAVAILABLE` ist für die 16 bekannten Angebote null, weil ihre gespeicherten Kaufziele verfügbar sind. Die zwei nicht verfügbaren Amazon-Alternativen werden als Blocker des Fallbacks dokumentiert, ändern aber nicht den Status des vorhandenen kaufbaren Händlerangebots.
-

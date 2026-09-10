@@ -29,5 +29,11 @@
     {"slug":"petlibro-capsule-dog-fountain","annualFilterCost":{"available":false,"type":"insufficient"},"replacementIntervalAvailable":true,"filterOfferAvailable":false,"filterAffiliateReady":false,"pumpOfferAvailable":false,"pumpAffiliateReady":false,"renderableLater":true,"filterClass":"C","pumpClass":"D","futureUiState":"INFO_ONLY"},
     {"slug":"petlibro-dockstream-cordless","annualFilterCost":{"available":true,"type":"fixed","low":130.29,"high":130.29},"replacementIntervalAvailable":true,"filterOfferAvailable":true,"filterAffiliateReady":false,"pumpOfferAvailable":false,"pumpAffiliateReady":false,"renderableLater":true,"filterClass":"B","pumpClass":"C","futureUiState":"COST_ONLY"},
     {"slug":"petsafe-streamside-trinkbrunnen","annualFilterCost":{"available":true,"type":"range","low":34.61,"high":69.22},"replacementIntervalAvailable":true,"filterOfferAvailable":true,"filterAffiliateReady":false,"pumpOfferAvailable":false,"pumpAffiliateReady":false,"renderableLater":true,"filterClass":"B","pumpClass":"D","futureUiState":"COST_ONLY"}
-  ]
+  ],
+  "readiness35_0C": {
+    "status": "PARTIAL",
+    "meaningfulCostBlocksAfterFreeze": 15,
+    "verifiedAffiliateCtasAfterSeparatePublicationApproval": 5,
+    "recommendation": "Start with partial verified coverage; defer another commerce round until an additional merchant affiliate integration exists."
+  }
 }

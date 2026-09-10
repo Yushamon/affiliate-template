@@ -3,10 +3,11 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { createRequire } from "node:module";
+import { fileURLToPath } from "node:url";
 import { selectComparisonFinalists } from "../src/domain/comparison/finalistSelection.mjs";
 
 const yaml = createRequire(import.meta.url)("js-yaml");
-const app = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
+const app = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 const readData = (kind, slug) => {
   const file = path.join(app, "src", "content", kind, `${slug}.md`);

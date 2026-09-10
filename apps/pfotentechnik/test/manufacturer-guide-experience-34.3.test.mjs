@@ -2,8 +2,9 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import assert from "node:assert/strict";
+import { fileURLToPath } from "node:url";
 
-const app = process.cwd().endsWith("apps/pfotentechnik") ? process.cwd() : path.join(process.cwd(), "apps/pfotentechnik");
+const app = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const read = (relative) => fs.readFileSync(path.join(app, relative), "utf8");
 const manufacturerRoute = read("src/pages/hersteller/[manufacturer].astro");
 const manufacturerComponent = read("src/components/manufacturer/ManufacturerExperience.astro");

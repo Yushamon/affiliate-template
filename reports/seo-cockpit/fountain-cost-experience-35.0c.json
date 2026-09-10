@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "35.0c",
+  "status": "IMPLEMENTED_PRODUCTION_DISABLED",
+  "feature": {
+    "implemented": true,
+    "productionEnabled": false,
+    "productionRenderedFeatureChanges": 0,
+    "gate": "apps/pfotentechnik/src/config/featureGates.ts#fountainRunningCosts.productionEnabled",
+    "preview": "DEV plus PFOTENTECHNIK_FOUNTAIN_COSTS_PREVIEW=true",
+    "automaticDateSwitch": false
+  },
+  "architecture": {
+    "placement": "After the decision zone and before the everyday timeline and other secondary sections.",
+    "component": "ProductRunningCosts.astro",
+    "systemsReused": ["ProductExperience2", "fountain-cost-35.0b data", "calculateConsumableCost", "classifyAccessoryOffer", "project Amazon tracking ID", "existing product evidence provenance"],
+    "parallelSystems": 0,
+    "schemaExtensions": 0,
+    "contentMigrations": 0
+  },
+  "states": {"FULL":5,"COST_ONLY":10,"OFFER_ONLY":1,"INFO_ONLY":8,"HIDE":0},
+  "costDisplay": {
+    "fixedIntervalSupported": true,
+    "intervalRangesSupported": true,
+    "missingPrice": "No annual cost is rendered.",
+    "missingInterval": "No annual cost is rendered.",
+    "unknownRequirement": "No mandatory/optional assertion; a conditional usage sentence is shown when costs exist.",
+    "tcoImplemented": false,
+    "pumpCostsIncluded": false,
+    "datasetRankingImplemented": false
+  },
+  "affiliate": {
+    "verifiedCtaCapableProducts": 5,
+    "renderedInProduction": 0,
+    "manualTrackingParameters": 0,
+    "amazonSearchLinks": 0,
+    "resolver": "existing affiliate/commerce core"
+  },
+  "previewValidation": {
+    "FULL": {"slug":"cat-mate-335-pet-fountain","http":200,"stateRendered":true,"ctaRendered":true},
+    "COST_ONLY": {"slug":"petlibro-dockstream-2-smart","http":200,"stateRendered":true,"ctaRendered":false},
+    "OFFER_ONLY": {"slug":"oneisall-7l-dog-water-fountain","http":200,"stateRendered":true,"ctaRendered":false},
+    "INFO_ONLY": {"slug":"petkit-eversweet-ultra","http":200,"stateRendered":true,"ctaRendered":false}
+  },
+  "productionValidation": {
+    "pagesBuilt": 372,
+    "newHeadingOccurrences": 0,
+    "newStateAttributeOccurrences": 0,
+    "newAffiliateAsinOccurrences": 0,
+    "newStructuredData": 0,
+    "newInternalLinks": 0,
+    "observationUrlsByteIdentical": 10,
+    "observationUrlsTotal": 15,
+    "observationFeatureSurfaceUnchanged": 15,
+    "observationDrift": "Five pages differ only through pre-existing media-role resolution (thumbnail/comparison to hero), not through 35.0C content, links, metadata text or schema claims.",
+    "protectedSourcesChangedBy35_0C": 0,
+    "protectedSourcesTotal": 6,
+    "historicalProtectedHashNote": "The 35.0B.1 stored hashes had already drifted before 35.0C; none of the six files is in the 35.0C diff.",
+    "sitemapByteIdenticalToImmediatePre35_0CBuild": true
+  },
+  "validation": {
+    "new35_0CTests": {"passed":23,"total":23,"requiredScenarios":20},
+    "suiteBefore": {"passed":809,"failed":0,"total":809},
+    "suiteAfter": {"passed":832,"failed":0,"total":832},
+    "newFailuresCausedBy35_0C": 0,
+    "build": {"status":"PASS","pages":372},
+    "releaseDiagnostic": {"status":"PASS","passed":22,"total":22,"note":"Diagnostic/no-build mode; full 24-phase production verification remains the 35.0B.2 baseline during the freeze."},
+    "affiliateCore": {"passed":26,"total":26},
+    "evidenceAudit": {"covered":101,"products":102,"complete":72,"partial":29,"missing":1}
+  },
+  "activation": {
+    "ready": false,
+    "meaningfulFutureBlock": 24,
+    "futureAffiliateCta": 5,
+    "blockers": [
+      "The 34.8 observation freeze runs until 2026-09-21T13:27:50.265Z.",
+      "The four required browser screenshots and real geometry/layout-shift measurements could not be produced because no browser backend is available in this environment.",
+      "Five observation pages have unrelated pre-existing media-role build drift and are not byte-identical to the immediate pre-35.0C dist snapshot."
+    ]
+  }
+}

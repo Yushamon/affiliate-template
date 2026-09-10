@@ -13,7 +13,7 @@ const read = (relativePath) => fs.readFileSync(path.join(app, relativePath), "ut
 
 function frontmatter(relativePath) {
   const source = read(relativePath);
-  const match = source.match(/^---\n([\s\S]*?)\n---/);
+  const match = source.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   assert.ok(match, `${relativePath} needs YAML frontmatter`);
   return { data: yaml.load(match[1]), source };
 }

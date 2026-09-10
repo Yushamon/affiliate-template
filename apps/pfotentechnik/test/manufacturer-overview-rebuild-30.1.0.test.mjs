@@ -2,8 +2,9 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import assert from "node:assert/strict";
+import { fileURLToPath } from "node:url";
 
-const root = process.cwd().endsWith("apps/pfotentechnik") ? process.cwd() : path.join(process.cwd(), "apps/pfotentechnik");
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const page = path.join(root, "src/pages/hersteller/[manufacturer].astro");
 const component = path.join(root, "src/components/manufacturer/ManufacturerExperience.astro");
 const model = path.join(root, "src/domain/manufacturerExperience/model.ts");

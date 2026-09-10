@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "35.0c",
+  "generatedAt": "2026-09-10T20:00:00.000Z",
+  "source": [
+    "reports/seo-cockpit/fountain-product-ui-readiness-35.0b.2.json",
+    "reports/seo-cockpit/fountain-accessory-commerce-resolution-35.0b.2.json",
+    "apps/pfotentechnik/research/fountain-cost-35.0b.json"
+  ],
+  "productionEnabled": false,
+  "totals": {
+    "products": 24,
+    "FULL": 5,
+    "COST_ONLY": 10,
+    "OFFER_ONLY": 1,
+    "INFO_ONLY": 8,
+    "HIDE": 0,
+    "costRenderable": 15,
+    "offerRenderable": 16,
+    "affiliateCtaRenderable": 5
+  },
+  "validation": {
+    "status": "PASS",
+    "method": "Every explicit activation entry was checked against the 35.0B product data, selected cost offer, calculation result and 35.0B.2 commerce resolution; no runtime readiness inference is used.",
+    "petlibroCostInputOfferMismatch": 3,
+    "petlibroMismatchState": "COST_ONLY"
+  },
+  "products": [
+    {"slug":"cat-mate-shell-fountain","state":"COST_ONLY","costRenderable":true,"offerRenderable":true,"affiliateCtaRenderable":false,"reason":"Berechenbare Filterkosten; kein exakt konsistentes affiliate-fähiges Angebot.","evidenceReadiness":"verified"},
+    {"slug":"oneisall-7l-dog-water-fountain","state":"OFFER_ONLY","costRenderable":false,"offerRenderable":true,"affiliateCtaRenderable":false,"reason":"Kompatibles Kaufangebot vorhanden; Wechselintervall und Jahreskosten nicht belastbar.","evidenceReadiness":"verified"},
+    {"slug":"petkit-eversweet-max-cordless","state":"COST_ONLY","costRenderable":true,"offerRenderable":true,"affiliateCtaRenderable":false,"reason":"Berechenbare Filterkosten; kein exakt konsistentes affiliate-fähiges Angebot.","evidenceReadiness":"verified"},
+    {"slug":"petkit-eversweet-ultra","state":"INFO_ONLY","costRenderable":false,"offerRenderable":false,"affiliateCtaRenderable":false,"reason":"Wartungsinformation vorhanden, aber keine belastbare Jahreskostenangabe.","evidenceReadiness":"partial"},
+    {"slug":"petlibro-dockstream-rfid-smart","state":"COST_ONLY","costRenderable":true,"offerRenderable":true,"affiliateCtaRenderable":false,"reason":"Berechenbare Filterkosten; kein exakt konsistentes affiliate-fähiges Angebot.","evidenceReadiness":"verified"},
+    {"slug":"petlibro-glacier-ultrafiltration","state":"COST_ONLY","costRenderable":true,"offerRenderable":true,"affiliateCtaRenderable":false,"reason":"Berechenbare Filterkosten; kein exakt konsistentes affiliate-fähiges Angebot.","evidenceReadiness":"verified"},
+    {"slug":"petlibro-stainless-steel-fountain","state":"INFO_ONLY","costRenderable":false,"offerRenderable":false,"affiliateCtaRenderable":false,"reason":"Filterinformation vorhanden, aber keine belastbare Jahreskostenangabe.","evidenceReadiness":"partial"},
+    {"slug":"xiaomi-smart-pet-fountain-2","state":"COST_ONLY","costRenderable":true,"offerRenderable":true,"affiliateCtaRenderable":false,"reason":"Berechenbare Filterkosten; kein exakt konsistentes affiliate-fähiges Angebot.","evidenceReadiness":"verified"},
+    {"slug":"cat-mate-335-pet-fountain","state":"FULL","costRenderable":true,"offerRenderable":true,"affiliateCtaRenderable":true,"reason":"Berechenbare Filterkosten und exakt verifiziertes Amazon-Direktangebot.","evidenceReadiness":"verified"},
+    {"slug":"feelneedy-fn-w18-8l-katzenbrunnen","state":"INFO_ONLY","costRenderable":false,"offerRenderable":false,"affiliateCtaRenderable":false,"reason":"Filterinformation vorhanden, aber keine belastbare Jahreskostenangabe.","evidenceReadiness":"partial"},
+    {"slug":"oneisall-3-2l-cordless-fountain","state":"INFO_ONLY","costRenderable":false,"offerRenderable":false,"affiliateCtaRenderable":false,"reason":"Filterinformation vorhanden, aber keine belastbare Jahreskostenangabe.","evidenceReadiness":"partial"},
+    {"slug":"petkit-eversweet-3-pro-uvc","state":"FULL","costRenderable":true,"offerRenderable":true,"affiliateCtaRenderable":true,"reason":"Berechenbare Filterkosten und exakt verifiziertes Amazon-Direktangebot.","evidenceReadiness":"verified"},
+    {"slug":"petlibro-dockstream-2-smart","state":"COST_ONLY","costRenderable":true,"offerRenderable":true,"affiliateCtaRenderable":false,"reason":"COST_INPUT_OFFER_MISMATCH: 4er-Kosteninput bleibt vom 8er-Amazon-Angebot getrennt.","evidenceReadiness":"verified"},
+    {"slug":"petlibro-dockstream-2-smart-cordless","state":"COST_ONLY","costRenderable":true,"offerRenderable":true,"affiliateCtaRenderable":false,"reason":"COST_INPUT_OFFER_MISMATCH: 4er-Kosteninput bleibt vom 8er-Amazon-Angebot getrennt.","evidenceReadiness":"verified"},
+    {"slug":"catit-pixi-smart-trinkbrunnen","state":"FULL","costRenderable":true,"offerRenderable":true,"affiliateCtaRenderable":true,"reason":"Berechenbare Filterkosten und exakt verifiziertes Amazon-Direktangebot.","evidenceReadiness":"verified"},
+    {"slug":"oneisall-2-2l-cordless-fountain","state":"INFO_ONLY","costRenderable":false,"offerRenderable":false,"affiliateCtaRenderable":false,"reason":"Filterinformation vorhanden, aber keine belastbare Jahreskostenangabe.","evidenceReadiness":"partial"},
+    {"slug":"oneisall-3-5l-cordless-fountain","state":"INFO_ONLY","costRenderable":false,"offerRenderable":false,"affiliateCtaRenderable":false,"reason":"Filterinformation vorhanden, aber keine belastbare Jahreskostenangabe.","evidenceReadiness":"partial"},
+    {"slug":"petkit-eversweet-5-mini","state":"INFO_ONLY","costRenderable":false,"offerRenderable":false,"affiliateCtaRenderable":false,"reason":"Filterinformation vorhanden, aber keine belastbare Jahreskostenangabe.","evidenceReadiness":"partial"},
+    {"slug":"petkit-eversweet-max-2-uvc","state":"COST_ONLY","costRenderable":true,"offerRenderable":true,"affiliateCtaRenderable":false,"reason":"Berechenbare Filterkosten; kein exakt konsistentes affiliate-fähiges Angebot.","evidenceReadiness":"verified"},
+    {"slug":"petkit-eversweet-solo-2-fountain","state":"FULL","costRenderable":true,"offerRenderable":true,"affiliateCtaRenderable":true,"reason":"Berechenbare Filterkosten und exakt verifiziertes Amazon-Direktangebot.","evidenceReadiness":"verified"},
+    {"slug":"petkit-eversweet-solo-se","state":"FULL","costRenderable":true,"offerRenderable":true,"affiliateCtaRenderable":true,"reason":"Berechenbare Filterkosten und exakt verifiziertes Amazon-Direktangebot.","evidenceReadiness":"verified"},
+    {"slug":"petlibro-capsule-dog-fountain","state":"INFO_ONLY","costRenderable":false,"offerRenderable":false,"affiliateCtaRenderable":false,"reason":"Filterinformation vorhanden, aber keine belastbare Jahreskostenangabe.","evidenceReadiness":"partial"},
+    {"slug":"petlibro-dockstream-cordless","state":"COST_ONLY","costRenderable":true,"offerRenderable":true,"affiliateCtaRenderable":false,"reason":"COST_INPUT_OFFER_MISMATCH: 4er-Kosteninput bleibt vom 8er-Amazon-Angebot getrennt.","evidenceReadiness":"verified"},
+    {"slug":"petsafe-streamside-trinkbrunnen","state":"COST_ONLY","costRenderable":true,"offerRenderable":true,"affiliateCtaRenderable":false,"reason":"Berechenbare Filterkosten; kein exakt konsistentes affiliate-fähiges Angebot.","evidenceReadiness":"verified"}
+  ]
+}

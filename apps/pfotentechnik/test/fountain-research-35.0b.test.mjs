@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import {fileURLToPath} from 'node:url';
 import yaml from 'js-yaml';
 import {readDataset,inspectDataset} from '../scripts/product-evidence/fountain-dataset.mjs';
 import {calculateConsumableCost,calculateThreeYearCost} from '../src/domain/consumableCosts.mjs';
@@ -14,7 +15,7 @@ test('conflicting interval and zero JS placeholder do not produce annual costs',
 test('frozen observations distinguish historical snapshot from expired current prices',()=>{const r=inspectDataset(data,'2027-01-01');assert.equal(r.statistics.calculablePrimaryFilterCosts,0);assert.equal(r.fields.currentFilterOffer.known,0);});
 test('all 24 internal imports validate against actual full product schema',async()=>{
  const {build}=await import('esbuild');
- const result=await build({entryPoints:[new URL('../src/content/schema/product.ts',import.meta.url).pathname],bundle:true,write:false,platform:'node',format:'esm',plugins:[{name:'collection-declarations',setup(b){b.onResolve({filter:/^astro(?::content|:loaders|\/loaders)$/},a=>({path:a.path,namespace:'stub'}));b.onLoad({filter:/.*/,namespace:'stub'},()=>({contents:'export const defineCollection=x=>x; export const glob=x=>x;',loader:'js'}));}}]});
+ const result=await build({entryPoints:[fileURLToPath(new URL('../src/content/schema/product.ts',import.meta.url))],bundle:true,write:false,platform:'node',format:'esm',plugins:[{name:'collection-declarations',setup(b){b.onResolve({filter:/^astro(?::content|:loaders|\/loaders)$/},a=>({path:a.path,namespace:'stub'}));b.onLoad({filter:/.*/,namespace:'stub'},()=>({contents:'export const defineCollection=x=>x; export const glob=x=>x;',loader:'js'}));}}]});
  const {createProductContentSchema}=await import('data:text/javascript;base64,'+Buffer.from(result.outputFiles[0].text).toString('base64'));
  const {z}=await import('astro/zod');const schema=createProductContentSchema(()=>z.any());
  for(const r of data.products){const raw=fs.readFileSync(new URL('../src/content/products/'+r.slug+'.md',import.meta.url),'utf8');const original=yaml.load(raw.match(/^---\s*\n([\s\S]*?)\n---/)[1],{schema:yaml.JSON_SCHEMA});const merged={...original,...r.data,evidenceSources:[...(original.evidenceSources??[]),...r.data.evidenceSources],comparisonData:{...original.comparisonData,...r.data.comparisonData}};const parsed=schema.safeParse(merged);assert.equal(parsed.success,true,r.slug+': '+JSON.stringify(parsed.error?.issues));assert.equal(parsed.data.consumables.length,r.data.consumables.length);}

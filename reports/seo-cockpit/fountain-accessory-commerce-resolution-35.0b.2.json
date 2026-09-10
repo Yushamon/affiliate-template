@@ -41,5 +41,15 @@
     "availableProductSlugs": ["cat-mate-shell-fountain","oneisall-7l-dog-water-fountain","petkit-eversweet-max-cordless","cat-mate-335-pet-fountain","petkit-eversweet-3-pro-uvc","petkit-eversweet-max-2-uvc","petkit-eversweet-solo-2-fountain","petkit-eversweet-solo-se"],
     "unavailableProductSlugs": ["petlibro-dockstream-cordless"]
   },
-  "rules": {"searchLinksAccepted":0,"manualAffiliateIds":0,"guessedCompatibility":0,"productDataMutations":0}
+  "rules": {"searchLinksAccepted":0,"manualAffiliateIds":0,"guessedCompatibility":0,"productDataMutations":0},
+  "validation": {
+    "newScenarioTests": {"passed":16,"total":16},
+    "repositoryTests": {"passed":809,"total":809,"failed":0,"legacyFailuresResolved":29,"testsRemoved":0},
+    "build": {"status":"PASS","pages":372},
+    "release": {"status":"PASS","phasesPassed":24,"phasesTotal":24,"productionVerified":true},
+    "productAudit": {"status":"PASS","products":102,"errors":0,"fountainResearch":"24/24"},
+    "affiliatePackage": {"status":"PASS","passed":26,"total":26,"legacyParserFailureResolved":true},
+    "observation": {"scope":"35.0B.2 change isolation","unchanged":15,"total":15,"protectedSourcesUnchanged":6,"protectedSourcesTotal":6,"sitemapByteIdenticalTo35_0B_1":true,"renderedAffiliateLinksAdded":0},
+    "historicalBaselineNote":"Raw 35.0B.1 HTML and protected-file hashes have drifted through already committed repository work outside 35.0B.2; no affected public source is part of this change."
+  }
 }

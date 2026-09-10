@@ -3,14 +3,15 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import { createRequire } from "node:module";
+import { fileURLToPath } from "node:url";
 import { resolveComparisonProductImage, resolveMediaSource } from "../src/domain/mediaResolver.mjs";
 
 const yaml = createRequire(import.meta.url)("js-yaml");
-const app = path.resolve(new URL("..", import.meta.url).pathname);
+const app = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const readProduct = (slug) => {
   const file = path.join(app, "src/content/products", `${slug}.md`);
   const source = fs.readFileSync(file, "utf8");
-  return yaml.load(source.match(/^---\n([\s\S]*?)\n---/)[1], { schema: yaml.JSON_SCHEMA });
+  return yaml.load(source.match(/^---\r?\n([\s\S]*?)\r?\n---/)[1], { schema: yaml.JSON_SCHEMA });
 };
 
 test("comparison media resolver uses generic priority and nested Astro metadata", () => {

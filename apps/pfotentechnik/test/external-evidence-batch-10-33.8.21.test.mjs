@@ -2,7 +2,8 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
-const app = path.resolve(path.dirname(new URL(import.meta.url).pathname),"..");
+import { fileURLToPath } from "node:url";
+const app = path.resolve(path.dirname(fileURLToPath(import.meta.url)),"..");
 const p = (slug) => fs.readFileSync(path.join(app,"src/content/products",slug+".md"),"utf8");
 
 test("vollständige Batch-10-Produkte besitzen alle Evidence-Bausteine",()=> {

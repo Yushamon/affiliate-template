@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import {fileURLToPath} from 'node:url';
 import yaml from 'js-yaml';
 import {costFoundationSchema, accessoryOfferSchema} from '../src/content/schema/consumables.mjs';
 import {calculateConsumableCost as calc, calculateThreeYearCost as tco} from '../src/domain/consumableCosts.mjs';
@@ -46,7 +47,7 @@ test('all existing product frontmatter remains valid without new placeholders',(
 
 test('actual product collection schema validates old and new commerce/evidence fields',async()=>{
  const {build}=await import('esbuild');
- const result=await build({entryPoints:[new URL('../src/content/schema/product.ts',import.meta.url).pathname],bundle:true,write:false,platform:'node',format:'esm',plugins:[{name:'astro-collection-declarations',setup(b){b.onResolve({filter:/^astro:(content|loaders)$/},a=>({path:a.path,namespace:'collection-stub'}));b.onResolve({filter:/^astro\/loaders$/},a=>({path:a.path,namespace:'collection-stub'}));b.onLoad({filter:/.*/,namespace:'collection-stub'},()=>({contents:'export const defineCollection = x => x; export const glob = x => x;',loader:'js'}));}}]});
+ const result=await build({entryPoints:[fileURLToPath(new URL('../src/content/schema/product.ts',import.meta.url))],bundle:true,write:false,platform:'node',format:'esm',plugins:[{name:'astro-collection-declarations',setup(b){b.onResolve({filter:/^astro:(content|loaders)$/},a=>({path:a.path,namespace:'collection-stub'}));b.onResolve({filter:/^astro\/loaders$/},a=>({path:a.path,namespace:'collection-stub'}));b.onLoad({filter:/.*/,namespace:'collection-stub'},()=>({contents:'export const defineCollection = x => x; export const glob = x => x;',loader:'js'}));}}]});
  const {createProductContentSchema}=await import('data:text/javascript;base64,'+Buffer.from(result.outputFiles[0].text).toString('base64'));
  const {z}=await import('astro/zod');const schema=createProductContentSchema(()=>z.any());
  const dir=new URL('../src/content/products/',import.meta.url);

@@ -10,8 +10,10 @@ import ProductEverydayTimeline from "./ProductEverydayTimeline.astro";
 import ProductCategoryFitAssistant from "./ProductCategoryFitAssistant.astro";
 import ProductDetails2 from "./ProductDetails2.astro";
 import ProductAlternatives2 from "./ProductAlternatives2.astro";
+import ProductRunningCosts from "./ProductRunningCosts.astro";
+import type { FountainCostExperienceModel } from "../../domain/fountainCostExperience.types";
 
-interface Props { model: ProductExperienceModel; }
+interface Props { model: ProductExperienceModel & { runningCosts?: FountainCostExperienceModel | null }; }
 const { model } = Astro.props;
 /* 33.3 production migration: the validated decision-first foundation is the
  * default for every product route. Product-specific facts stay in the model;
@@ -37,6 +39,8 @@ const reference33 = true;
     <ProductPurchaseMistakes2 items={model.purchaseMistakes} />
     {!reference33 && <ProductCategoryFitAssistant profile={model.categoryFitProfile} alternatives={model.alternatives} />}
   </div>
+
+  {model.runningCosts && <ProductRunningCosts model={model.runningCosts} />}
 
   <ProductEverydayTimeline items={model.timeline} heading={model.usageHeading} eyebrow={model.usageEyebrow} />
   <ProductCommunityInsights2 insights={model.communityInsights} />

@@ -1,0 +1,47 @@
+---
+import type { FountainCostExperienceModel } from "../../domain/fountainCostExperience.types";
+
+interface Props { model: FountainCostExperienceModel; }
+const { model } = Astro.props;
+---
+
+<section class="running-costs" aria-labelledby="running-costs-title" data-fountain-cost-state={model.state}>
+  <header>
+    <span>Wartung und Folgekosten</span>
+    <h2 id="running-costs-title">{model.heading}</h2>
+  </header>
+
+  <div class="running-costs__facts">
+    {model.interval && <div><span>Filterwechsel laut Hersteller</span><strong>{model.interval}</strong></div>}
+    {model.annualCost && <div><span>Rechnerische Filterkosten</span><strong aria-label={model.annualCost.accessible}>{model.annualCost.visible}</strong></div>}
+  </div>
+
+  {model.conditionalCostNote && <p class="running-costs__condition">{model.conditionalCostNote}</p>}
+  {!model.annualCost && <p class="running-costs__unavailable">Eine belastbare Jahreskostenangabe ist derzeit nicht möglich.</p>}
+
+  <div class="running-costs__filter">
+    <div>
+      <span>Ersatzfilter</span>
+      <strong>{model.filterName}</strong>
+      {model.offer?.packLabel && <small>{model.offer.packLabel}</small>}
+      {model.offer?.priceLabel && <small>{model.offer.priceLabel}{model.offer.merchantLabel ? ` · ${model.offer.merchantLabel}` : ""}</small>}
+    </div>
+    {model.affiliate && <a href={model.affiliate.url} rel={model.affiliate.rel} target={model.affiliate.target}>{model.affiliate.label}</a>}
+  </div>
+
+  {model.methodology && <p class="running-costs__method">{model.methodology}</p>}
+  <p class="running-costs__sources">
+    {[model.evidence.interval, model.evidence.cost, model.evidence.price].filter(Boolean).join(" · ")}
+  </p>
+</section>
+
+<style is:inline>
+  .running-costs{display:grid;gap:1rem;min-width:0;padding:1.25rem;border:1px solid var(--px2-border);border-radius:var(--pt33-radius-md,16px);background:var(--px2-surface-soft);color:var(--px2-text)}
+  .running-costs header{display:grid;gap:.2rem}.running-costs header>span,.running-costs__filter span{color:var(--px2-accent-text);font-size:.72rem;font-weight:800;letter-spacing:.055em;text-transform:uppercase}
+  .running-costs h2{margin:0;font-size:clamp(1.3rem,5vw,1.7rem)}.running-costs__facts{display:grid;gap:.75rem;margin:0}.running-costs__facts>div{display:grid;gap:.2rem;padding:.85rem 0;border-top:1px solid var(--px2-border)}
+  .running-costs__facts span{color:var(--px2-muted);font-size:.88rem}.running-costs__facts strong{font-size:1.08rem;overflow-wrap:anywhere}.running-costs__filter{display:grid;gap:.9rem;align-items:center;padding-top:1rem;border-top:1px solid var(--px2-border)}
+  .running-costs__filter>div{display:grid;gap:.25rem;min-width:0}.running-costs__filter strong,.running-costs__filter small{overflow-wrap:anywhere}.running-costs__filter small{color:var(--px2-muted)}
+  .running-costs__filter a{justify-self:start;padding:.72rem 1rem;border-radius:var(--pt33-radius-sm,10px);background:var(--px2-action-bg);color:var(--px2-action-text);font-weight:750;text-decoration:none}.running-costs__filter a:hover{background:var(--px2-action-bg-hover)}.running-costs__filter a:focus-visible{outline:2px solid var(--px2-accent-text);outline-offset:3px}
+  .running-costs__condition,.running-costs__unavailable,.running-costs__method,.running-costs__sources{margin:0;line-height:1.5}.running-costs__condition,.running-costs__unavailable{color:var(--px2-text)}.running-costs__method,.running-costs__sources{color:var(--px2-muted);font-size:.82rem}
+  @media (min-width:720px){.running-costs{padding:1.5rem}.running-costs__facts{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}.running-costs__filter{grid-template-columns:minmax(0,1fr) auto}}
+</style>

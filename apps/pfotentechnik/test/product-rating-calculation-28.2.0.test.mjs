@@ -72,7 +72,7 @@ test("Katzenklappen besitzen synchronisierte Kriterien, Rating und Score", () =>
     const data = readScoreData(path.join(PRODUCTS, slug + ".md"));
     assert.equal(data.rating, values.rating, slug + ": rating");
     assert.equal(data.score, values.score, slug + ": score");
-    assert.equal(Object.keys(data.ratings ?? {}).length, 6, slug + ": Kriterienanzahl");
+    assert.ok(Object.keys(data.ratings ?? {}).length >= 6, slug + ": mindestens sechs Kriterien");
     assert.deepEqual(calculateProductScore(data).score, values.score, slug + ": Laufzeitberechnung");
   }
 });

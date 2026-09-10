@@ -1,6 +1,11 @@
 ---
 import ProductExperience2 from "../product-experience-2/ProductExperience2.astro";
 import { buildProductExperienceModel } from "../../domain/productExperience/model";
+import { buildFountainCostExperience } from "../../domain/fountainCostExperience.mjs";
+import { fountainCostUiManifestBySlug } from "../../domain/fountainCostUiManifest.mjs";
+import { resolveFountainRunningCostsGate } from "../../config/featureGates";
+import { projectConfig } from "../../project.config";
+import fountainCostDataset from "../../../research/fountain-cost-35.0b.json";
 
 interface Props {
   product: any;
@@ -19,12 +24,25 @@ const {
   alternativeRecommendations = []
 } = Astro.props;
 
-const model = buildProductExperienceModel({
+const baseModel = buildProductExperienceModel({
   currentEntry,
   allProducts,
   reviewProduct,
   alternativeRecommendations
 });
+const slug = currentEntry?.data?.slug ?? currentEntry?.slug ?? product?.data?.slug ?? product?.slug;
+const runningCostsEnabled = resolveFountainRunningCostsGate({
+  isDev: import.meta.env.DEV,
+  previewRequested: import.meta.env.PFOTENTECHNIK_FOUNTAIN_COSTS_PREVIEW === "true"
+});
+const runningCosts = buildFountainCostExperience({
+  enabled: runningCostsEnabled,
+  manifestEntry: fountainCostUiManifestBySlug.get(slug),
+  datasetRecord: fountainCostDataset.products.find((entry) => entry.slug === slug),
+  trackingId: projectConfig.affiliate.amazon.trackingId,
+  now: new Date()
+});
+const model = { ...baseModel, runningCosts };
 ---
 
 <ProductExperience2 model={model} />

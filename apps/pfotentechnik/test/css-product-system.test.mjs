@@ -24,7 +24,7 @@ test("Product-Box-Layer wird vor product.css geladen", () => {
 });
 
 test("Exakt migrierter Product-Box-Block ist unverändert", () => {
-  const box = fs.readFileSync(boxFile, "utf8");
+  const box = fs.readFileSync(boxFile, "utf8").replace(/\r\n/g, "\n");
   assert.ok(box.startsWith(header));
   const payload = box.slice(header.length).trim();
   const actualHash = crypto.createHash("sha256").update(payload).digest("hex");

@@ -38,7 +38,13 @@ Die bestehende Commerce-Struktur ist für Zubehördaten grundsätzlich wiederver
 - `OFFER_UNAVAILABLE`: das bewertete Angebot ist nicht kaufbar.
 - `UNKNOWN`: für die Klassifikation fehlen Daten; nicht gleichbedeutend mit einem bekannten, aber nicht unterstützten Merchant.
 
+## Validierung
+
+- Architektur-/Statusvertrag: 16/16 neue Szenarien bestanden.
+- Produkt- und Commerce-Audit: 102 Produkte, 0 Fehler; Fountain-Research-Gate 24/24 bestanden.
+- Affiliate-Paket: 26/26 Affiliate- und Linking-Tests bestanden.
+- Öffentliche Wirkung: keine Renderer-, Content-, CTA- oder Schema.org-Änderung; keine der drei freigegebenen ASINs erscheint im Build-Output.
+
 ## Technische Entscheidung
 
 Eine kleine interne, rendererfreie Statusfunktion wurde in `src/domain/accessoryCommerce.mjs` ergänzt. Sie importiert die bestehende Amazon-ASIN- und Link-Generierung, baut keine parallele Commerce-Schicht, verändert keine Produktdaten und erzeugt keine öffentliche Ausgabe. Schema-, Price-, Affiliate- und Redirect-Systeme wurden nicht erweitert.
-
