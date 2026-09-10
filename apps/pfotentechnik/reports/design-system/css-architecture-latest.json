@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-09T06:23:10.467Z",
+  "generatedAt": "2026-09-10T06:56:21.199Z",
   "status": "ok",
   "safety": {
     "ruleLevelDeletionEnabled": false,
@@ -10,7 +10,7 @@
     "records": 89,
     "cssFiles": 42,
     "astroStyleFiles": 47,
-    "bytes": 687107,
+    "bytes": 706694,
     "rules": 7294,
     "important": 1168,
     "actualImportantDeclarations": 1168,
@@ -28,9 +28,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 116080,
+      "bytes": 116968,
       "meaningfulBytes": 115105,
-      "contentHash": "ce2736f43c80a8602510d83db17c09442b1f7416ec4d6f6aa928267ef2764fae",
+      "contentHash": "4cb3b1246c44d868c0dc2b60accd7e749968a28699dae98e456a67279c126a55",
       "normalizedHash": "744f6574a0891b9be908acebef23d91358fa849decd61307a6c217e94f60112d",
       "importedBy": [
         "apps/pfotentechnik/src/layouts/ProjectLayout.astro"
@@ -56,7 +56,7 @@
       "kind": "astro-style",
       "category": "component-inline",
       "owner": "editorial-content",
-      "bytes": 28810,
+      "bytes": 29738,
       "meaningfulBytes": 25239,
       "importedBy": [],
       "imports": [],
@@ -69,9 +69,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 18985,
+      "bytes": 19156,
       "meaningfulBytes": 18663,
-      "contentHash": "82f7ae19f6c2c54cb540bb1e14570287dcaa7cf8c1bcddf1278bf505b66265e0",
+      "contentHash": "e8168887e63ab96ce1c21eb7e8651ec96fc28eefe183f8121876371fd4a82906",
       "normalizedHash": "28e102f6ea0f41c9a60557d0a73eaf42f89b20e1de76914ac6eca30d6a6a6976",
       "importedBy": [
         "apps/pfotentechnik/src/layouts/ProjectLayout.astro"
@@ -86,9 +86,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 11010,
+      "bytes": 11456,
       "meaningfulBytes": 10070,
-      "contentHash": "4709b4592f595a99e5336f314aca0365db51fe1ceba62b225753559089e92327",
+      "contentHash": "9a4e23446712186c0b659a07a841467d504d8408310b853f54a9b7f0d994139a",
       "normalizedHash": "3e2f01755c0cf9a11127e5a62d8ecb9de3d99218088344cc0e70433e56ba97cc",
       "importedBy": [
         "apps/pfotentechnik/src/layouts/ProjectLayout.astro"
@@ -103,7 +103,7 @@
       "kind": "astro-style",
       "category": "manufacturer",
       "owner": "manufacturer-pages",
-      "bytes": 6155,
+      "bytes": 6446,
       "meaningfulBytes": 5338,
       "importedBy": [],
       "imports": [],
@@ -116,9 +116,9 @@
       "kind": "css",
       "category": "comparison",
       "owner": "comparison-platform",
-      "bytes": 43052,
+      "bytes": 45051,
       "meaningfulBytes": 39444,
-      "contentHash": "ef381ab54196eee71169de1a5fba1589adccadae29fde01fc0e88dfd7d1e237a",
+      "contentHash": "d1febda832ae8b878eed76bbb7d5b5f5fb0863ad63dd8dd4ca3aa1b5cf97beaf",
       "normalizedHash": "d8c9af56ce637b7d684d47f3824e634456a686a6f6e10d0634cd7b359f89ed80",
       "importedBy": [
         "packages/affiliate-core/src/components/comparison/ComparisonExplorer.astro",
@@ -134,7 +134,7 @@
       "kind": "astro-style",
       "category": "product",
       "owner": "product-experience",
-      "bytes": 14242,
+      "bytes": 14949,
       "meaningfulBytes": 11832,
       "importedBy": [],
       "imports": [],
@@ -147,7 +147,7 @@
       "kind": "astro-style",
       "category": "component-inline",
       "owner": "component-owner-unresolved",
-      "bytes": 10878,
+      "bytes": 11181,
       "meaningfulBytes": 9691,
       "importedBy": [],
       "imports": [],
@@ -160,7 +160,7 @@
       "kind": "astro-style",
       "category": "product",
       "owner": "product-experience",
-      "bytes": 5977,
+      "bytes": 6239,
       "meaningfulBytes": 5107,
       "importedBy": [],
       "imports": [],
@@ -173,9 +173,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 13890,
+      "bytes": 14028,
       "meaningfulBytes": 13452,
-      "contentHash": "633364a5604b273fdfa4e89f774a78744265fbb5030c42a1d887fa8c6b5e5248",
+      "contentHash": "4d47d86d36a3b79b043abd28f42cf98fa85256acd9529fb355759e576d9d8bf6",
       "normalizedHash": "0718bbe312e1edbf098276f382526a0632335ccdab4c07210eef4eba5aa188ca",
       "importedBy": [
         "apps/pfotentechnik/src/pages/produkt/[product].astro"
@@ -190,9 +190,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 15114,
+      "bytes": 15268,
       "meaningfulBytes": 14956,
-      "contentHash": "7b25dfa744bf386cca36615dfb0cf225efe75a4f696bf8c4081523e429ffc9c2",
+      "contentHash": "bb315f6fc3549d2bdb6f39ec6cba9b73b11c6061eca213748cec9f3517373643",
       "normalizedHash": "cbedd0d202812e90264812cd44a5924cc0cc6896db54ba5991a9b44a29379737",
       "importedBy": [
         "apps/pfotentechnik/src/layouts/ProjectLayout.astro"
@@ -207,7 +207,7 @@
       "kind": "astro-style",
       "category": "component-inline",
       "owner": "component-owner-unresolved",
-      "bytes": 9016,
+      "bytes": 9480,
       "meaningfulBytes": 7592,
       "importedBy": [],
       "imports": [],
@@ -220,7 +220,7 @@
       "kind": "astro-style",
       "category": "admin",
       "owner": "admin-seo-copilot",
-      "bytes": 7541,
+      "bytes": 7755,
       "meaningfulBytes": 6774,
       "importedBy": [],
       "imports": [],
@@ -233,7 +233,7 @@
       "kind": "astro-style",
       "category": "admin",
       "owner": "admin-seo-copilot",
-      "bytes": 3222,
+      "bytes": 3234,
       "meaningfulBytes": 3198,
       "importedBy": [],
       "imports": [],
@@ -259,9 +259,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 34192,
+      "bytes": 35676,
       "meaningfulBytes": 32126,
-      "contentHash": "074d05f81e9c55ce95d1fdbabad2203a6ca53b45e5f1bdc7ef789707ae942e00",
+      "contentHash": "35cf803a9e12f4c811055c5bcdeceb4cb8a2751fd684e1dee4614521859a866f",
       "normalizedHash": "30a9da841e17908a5ad025680ba761880aece4c580e103e89f77b3cd1405341d",
       "importedBy": [
         "packages/affiliate-core/src/styles/global.css",
@@ -277,9 +277,9 @@
       "kind": "css",
       "category": "product",
       "owner": "product-experience",
-      "bytes": 32993,
+      "bytes": 34794,
       "meaningfulBytes": 30339,
-      "contentHash": "5f8e398dd802c217a539396e2f66ba4aaa5e300edbe9701996d53da0e517773f",
+      "contentHash": "5b519bfd12779b5d86521a32bb9314a2f4408ca9daba1132828f2ea4b142cbef",
       "normalizedHash": "beaac84916fcb7e6d0f16214e9e743bac980e560b7bb2bdb2c979436c50f6301",
       "importedBy": [
         "packages/affiliate-core/src/styles/global.css",
@@ -306,7 +306,7 @@
       "kind": "astro-style",
       "category": "component-inline",
       "owner": "component-owner-unresolved",
-      "bytes": 19687,
+      "bytes": 19851,
       "meaningfulBytes": 19253,
       "importedBy": [],
       "imports": [],
@@ -319,9 +319,9 @@
       "kind": "css",
       "category": "component",
       "owner": "component-owner-unresolved",
-      "bytes": 19287,
+      "bytes": 19586,
       "meaningfulBytes": 18830,
-      "contentHash": "844c2c65826ab1e88a22d32aaa9023061f2931e1c26c9779240a99f49caaab79",
+      "contentHash": "4b54fbce151754a331a3a675b4c1b965dff5587ed4baf6f50b2edc5f51dc7a9e",
       "normalizedHash": "d6ba7c907f1c34592a3facd2855fd3678787297d557b2372fc3d231f1a0766bc",
       "importedBy": [
         "packages/affiliate-core/src/components/home/HomePage.astro"
@@ -332,30 +332,13 @@
       "maxSelectorDepth": 7
     },
     {
-      "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-tokens.css",
-      "kind": "css",
-      "category": "global",
-      "owner": "design-system",
-      "bytes": 14435,
-      "meaningfulBytes": 13065,
-      "contentHash": "38448d25bcd2bc8aa25bebf8427c0a4a12141a0b83751a300fc9bb1247cfe506",
-      "normalizedHash": "cfde2fe2d7e87b6e93816e2fabd282d365c3fbe3e4196257164d1900fcaafec3",
-      "importedBy": [
-        "apps/pfotentechnik/src/layouts/ProjectLayout.astro"
-      ],
-      "imports": [],
-      "rules": 14,
-      "important": 0,
-      "maxSelectorDepth": 1
-    },
-    {
       "file": "packages/affiliate-core/src/styles/article.css",
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 14434,
+      "bytes": 15507,
       "meaningfulBytes": 12836,
-      "contentHash": "b3368f96f48ec3be6a6105c71bba7e881e99a8967fecf8b1f85d80be28f85c48",
+      "contentHash": "fdf1609267ac813ccaf7541447a7784afff7f243d3fa1c756a78a7e56b38f8ca",
       "normalizedHash": "d117b19be7f86c796746cef63ac1a1096f8da3d115b9ab28ddd0dcd1ffdbe1d0",
       "importedBy": [
         "packages/affiliate-core/src/styles/global.css",
@@ -367,11 +350,28 @@
       "maxSelectorDepth": 10
     },
     {
+      "file": "apps/pfotentechnik/src/styles/pfotentechnik-design-tokens.css",
+      "kind": "css",
+      "category": "global",
+      "owner": "design-system",
+      "bytes": 14740,
+      "meaningfulBytes": 13065,
+      "contentHash": "4c0d1a59465d2c4674c90399ddf0c72cc26123cfa143627cc896d8b35acffbe4",
+      "normalizedHash": "cfde2fe2d7e87b6e93816e2fabd282d365c3fbe3e4196257164d1900fcaafec3",
+      "importedBy": [
+        "apps/pfotentechnik/src/layouts/ProjectLayout.astro"
+      ],
+      "imports": [],
+      "rules": 14,
+      "important": 0,
+      "maxSelectorDepth": 1
+    },
+    {
       "file": "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro",
       "kind": "astro-style",
       "category": "comparison",
       "owner": "comparison-platform",
-      "bytes": 12357,
+      "bytes": 12416,
       "meaningfulBytes": 12186,
       "importedBy": [],
       "imports": [],
@@ -380,13 +380,44 @@
       "maxSelectorDepth": 8
     },
     {
+      "file": "packages/affiliate-core/src/styles/misc.css",
+      "kind": "css",
+      "category": "global",
+      "owner": "design-system",
+      "bytes": 10655,
+      "meaningfulBytes": 9170,
+      "contentHash": "6a429e3f3bb6513309408541805b942dfeabe3cb29f95bb763e1f90f1e1ba1d9",
+      "normalizedHash": "b1759d6f769c7cad1548756bcbdf77df58e828184786007995b4b328964a0698",
+      "importedBy": [
+        "packages/affiliate-core/src/styles/global.css",
+        "packages/affiliate-core/src/styles/global.css"
+      ],
+      "imports": [],
+      "rules": 112,
+      "important": 0,
+      "maxSelectorDepth": 3
+    },
+    {
+      "file": "packages/affiliate-core/src/components/Header.astro",
+      "kind": "astro-style",
+      "category": "component-inline",
+      "owner": "navigation",
+      "bytes": 10519,
+      "meaningfulBytes": 8624,
+      "importedBy": [],
+      "imports": [],
+      "rules": 61,
+      "important": 0,
+      "maxSelectorDepth": 6
+    },
+    {
       "file": "apps/pfotentechnik/src/styles/pfotentechnik-visual-density.css",
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 10289,
+      "bytes": 10394,
       "meaningfulBytes": 10048,
-      "contentHash": "1093923f8f0841964c209e58b48f79170ade086a7c8aab46f90cbf97b9e27a05",
+      "contentHash": "664ee5a2a9adeb59f680ca12fbaf64ecf94fef474818c1d22f04eb2bbd6f94f5",
       "normalizedHash": "d4280d73902fa7b35e0f3ce21cf81c58e6fbc3395bcd4e2fe09e007b2ffe1e56",
       "importedBy": [
         "apps/pfotentechnik/src/layouts/ProjectLayout.astro"
@@ -401,7 +432,7 @@
       "kind": "astro-style",
       "category": "product",
       "owner": "product-experience",
-      "bytes": 10191,
+      "bytes": 10390,
       "meaningfulBytes": 9237,
       "importedBy": [],
       "imports": [],
@@ -410,44 +441,13 @@
       "maxSelectorDepth": 9
     },
     {
-      "file": "packages/affiliate-core/src/components/Header.astro",
-      "kind": "astro-style",
-      "category": "component-inline",
-      "owner": "navigation",
-      "bytes": 10141,
-      "meaningfulBytes": 8624,
-      "importedBy": [],
-      "imports": [],
-      "rules": 61,
-      "important": 0,
-      "maxSelectorDepth": 6
-    },
-    {
-      "file": "packages/affiliate-core/src/styles/misc.css",
-      "kind": "css",
-      "category": "global",
-      "owner": "design-system",
-      "bytes": 10054,
-      "meaningfulBytes": 9170,
-      "contentHash": "7f62280cd3da881cfc7d496b901cadd0e5f4410af5b2983423dd8b9bfb2f36f2",
-      "normalizedHash": "b1759d6f769c7cad1548756bcbdf77df58e828184786007995b4b328964a0698",
-      "importedBy": [
-        "packages/affiliate-core/src/styles/global.css",
-        "packages/affiliate-core/src/styles/global.css"
-      ],
-      "imports": [],
-      "rules": 112,
-      "important": 0,
-      "maxSelectorDepth": 3
-    },
-    {
       "file": "apps/pfotentechnik/src/components/product-experience-2/product-gallery-29.css",
       "kind": "css",
       "category": "product",
       "owner": "product-experience",
-      "bytes": 9830,
+      "bytes": 10369,
       "meaningfulBytes": 8781,
-      "contentHash": "fb91e361bf39d45164f59980a449f0e35297fd0dcc44f4409330ae9ff4d4fad2",
+      "contentHash": "42489f160641d76bf75da55801a8505c46e7c28a3a2c3dd46b4c87ea7b2e6ee3",
       "normalizedHash": "9e4acc498463ebe7a576e0858b9cd3e09e8516f01ea9a118040abaabc2f628fa",
       "importedBy": [
         "apps/pfotentechnik/src/components/product-experience-2/ProductGallery29.astro"
@@ -462,7 +462,7 @@
       "kind": "astro-style",
       "category": "manufacturer",
       "owner": "manufacturer-pages",
-      "bytes": 7600,
+      "bytes": 7675,
       "meaningfulBytes": 7424,
       "importedBy": [],
       "imports": [],
@@ -475,7 +475,7 @@
       "kind": "astro-style",
       "category": "product",
       "owner": "product-experience",
-      "bytes": 7236,
+      "bytes": 7526,
       "meaningfulBytes": 6321,
       "importedBy": [],
       "imports": [],
@@ -488,9 +488,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 6844,
+      "bytes": 7216,
       "meaningfulBytes": 6275,
-      "contentHash": "9ec2a2eda3fb17f203b961bd7f96ea30a2a76c4021c7c5477bdf30ae3247e8f8",
+      "contentHash": "3b723e6e6ce01f1f1418d71bb6373738e1ff53788c367a7b4a6524e834f4d997",
       "normalizedHash": "d05c1e2b43ddaf28b3422dce5a94ee63df6559329dd8b69d38c38b4994b1c959",
       "importedBy": [
         "packages/affiliate-core/src/styles/global.css",
@@ -506,7 +506,7 @@
       "kind": "astro-style",
       "category": "component-inline",
       "owner": "component-owner-unresolved",
-      "bytes": 6838,
+      "bytes": 7072,
       "meaningfulBytes": 6128,
       "importedBy": [],
       "imports": [],
@@ -519,7 +519,7 @@
       "kind": "astro-style",
       "category": "product",
       "owner": "product-experience",
-      "bytes": 6175,
+      "bytes": 6331,
       "meaningfulBytes": 5731,
       "importedBy": [],
       "imports": [],
@@ -532,7 +532,7 @@
       "kind": "astro-style",
       "category": "admin",
       "owner": "admin-seo-copilot",
-      "bytes": 6085,
+      "bytes": 6172,
       "meaningfulBytes": 5803,
       "importedBy": [],
       "imports": [],
@@ -558,7 +558,7 @@
       "kind": "astro-style",
       "category": "component-inline",
       "owner": "component-owner-unresolved",
-      "bytes": 5568,
+      "bytes": 5626,
       "meaningfulBytes": 5432,
       "importedBy": [],
       "imports": [],
@@ -571,9 +571,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 5536,
+      "bytes": 5589,
       "meaningfulBytes": 5456,
-      "contentHash": "bd34b2aa2a5e6d357fbc84e6c800e3ad7b31cecd50f9cc023624345734d32afb",
+      "contentHash": "deaa7be13a4445c0ffe0fb90c5a4edd42c5dac7322b92eca185dcd1a173bd0a1",
       "normalizedHash": "ee94ec2b58826e52947924d3e9c5c4c568691bc993b3b77a3eb2ee1262d2713e",
       "importedBy": [
         "apps/pfotentechnik/src/styles/foundation/index.css",
@@ -589,7 +589,7 @@
       "kind": "astro-style",
       "category": "component-inline",
       "owner": "component-owner-unresolved",
-      "bytes": 5096,
+      "bytes": 5302,
       "meaningfulBytes": 4421,
       "importedBy": [],
       "imports": [],
@@ -602,7 +602,7 @@
       "kind": "astro-style",
       "category": "product",
       "owner": "product-experience",
-      "bytes": 5021,
+      "bytes": 5152,
       "meaningfulBytes": 4657,
       "importedBy": [],
       "imports": [],
@@ -615,7 +615,7 @@
       "kind": "astro-style",
       "category": "component-inline",
       "owner": "component-owner-unresolved",
-      "bytes": 4841,
+      "bytes": 5086,
       "meaningfulBytes": 4025,
       "importedBy": [],
       "imports": [],
@@ -628,7 +628,7 @@
       "kind": "astro-style",
       "category": "component-inline",
       "owner": "component-owner-unresolved",
-      "bytes": 4654,
+      "bytes": 4877,
       "meaningfulBytes": 3882,
       "importedBy": [],
       "imports": [],
@@ -637,26 +637,13 @@
       "maxSelectorDepth": 4
     },
     {
-      "file": "apps/pfotentechnik/src/components/EditorialTransparency.astro",
-      "kind": "astro-style",
-      "category": "component-inline",
-      "owner": "component-owner-unresolved",
-      "bytes": 4566,
-      "meaningfulBytes": 4034,
-      "importedBy": [],
-      "imports": [],
-      "rules": 37,
-      "important": 0,
-      "maxSelectorDepth": 5
-    },
-    {
       "file": "packages/affiliate-core/src/styles/ui.css",
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 4485,
+      "bytes": 4746,
       "meaningfulBytes": 4074,
-      "contentHash": "12295bf013928f00b9e174700678cd2098e5a1c5975da39445f44ff8e8ee0168",
+      "contentHash": "3ec5fa5b9e5d2abea3bc99ff08e955c9ffb6b02c4041f8c52a4b07dfc8173f60",
       "normalizedHash": "1d82d4b8aafc7e4fc7faa4273e033793035cf085c10a5a9a25097e42e71ae3b7",
       "importedBy": [
         "packages/affiliate-core/src/styles/global.css",
@@ -668,11 +655,24 @@
       "maxSelectorDepth": 4
     },
     {
+      "file": "apps/pfotentechnik/src/components/EditorialTransparency.astro",
+      "kind": "astro-style",
+      "category": "component-inline",
+      "owner": "component-owner-unresolved",
+      "bytes": 4724,
+      "meaningfulBytes": 4034,
+      "importedBy": [],
+      "imports": [],
+      "rules": 37,
+      "important": 0,
+      "maxSelectorDepth": 5
+    },
+    {
       "file": "apps/pfotentechnik/src/components/product-experience-2/ProductCategoryFitAssistant.astro",
       "kind": "astro-style",
       "category": "product",
       "owner": "product-experience",
-      "bytes": 4367,
+      "bytes": 4546,
       "meaningfulBytes": 3839,
       "importedBy": [],
       "imports": [],
@@ -685,9 +685,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 4363,
+      "bytes": 4411,
       "meaningfulBytes": 4264,
-      "contentHash": "893139ebce43caaa8c23a2c07b28a544d8181bf939afd817ad4bd228cf160e07",
+      "contentHash": "d7b4389e8960e8562adc8cb25a491c72f8b5246966eb8d39a95709858239e33f",
       "normalizedHash": "c09d6b8711999ef8bee322f9e1a8985450bcb6c1f9635f6f4bb92cd973d3f4c2",
       "importedBy": [
         "apps/pfotentechnik/src/layouts/ProjectLayout.astro"
@@ -702,9 +702,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 4195,
+      "bytes": 4387,
       "meaningfulBytes": 3792,
-      "contentHash": "41bc2fd6f8dd6cab6b885d0d123feba625b24b5d5fd4c44aaa8129f2db7718b8",
+      "contentHash": "e52a2a82591187ea80a039994c1ec3c673b703f5785004cf166ae5b635c4e5c9",
       "normalizedHash": "6ff3d15636a26ca1222f2f56b2d4fbc5b725bd51265095a431bb73e6bec2332b",
       "importedBy": [
         "apps/pfotentechnik/src/styles/seo-admin.css",
@@ -712,6 +712,24 @@
       ],
       "imports": [],
       "rules": 47,
+      "important": 0,
+      "maxSelectorDepth": 2
+    },
+    {
+      "file": "packages/affiliate-core/src/styles/calculator.css",
+      "kind": "css",
+      "category": "global",
+      "owner": "design-system",
+      "bytes": 4234,
+      "meaningfulBytes": 3682,
+      "contentHash": "8902f6824d1d051c6ee7ce00348824936bff529063bf91f1e03bb1566d79ac53",
+      "normalizedHash": "7e5723810ba8795c4a03191a376bea6c0af9c3cd20700533931a0c0474cf62dc",
+      "importedBy": [
+        "packages/affiliate-core/src/styles/global.css",
+        "packages/affiliate-core/src/styles/global.css"
+      ],
+      "imports": [],
+      "rules": 43,
       "important": 0,
       "maxSelectorDepth": 2
     },
@@ -729,29 +747,11 @@
       "maxSelectorDepth": 2
     },
     {
-      "file": "packages/affiliate-core/src/styles/calculator.css",
-      "kind": "css",
-      "category": "global",
-      "owner": "design-system",
-      "bytes": 4007,
-      "meaningfulBytes": 3682,
-      "contentHash": "27269619888d5cafb6e276cdae5a3e113f600283f210e9731848e984b2ebb76b",
-      "normalizedHash": "7e5723810ba8795c4a03191a376bea6c0af9c3cd20700533931a0c0474cf62dc",
-      "importedBy": [
-        "packages/affiliate-core/src/styles/global.css",
-        "packages/affiliate-core/src/styles/global.css"
-      ],
-      "imports": [],
-      "rules": 43,
-      "important": 0,
-      "maxSelectorDepth": 2
-    },
-    {
       "file": "apps/pfotentechnik/src/components/product-experience-2/ProductEvidence2.astro",
       "kind": "astro-style",
       "category": "product",
       "owner": "product-experience",
-      "bytes": 3768,
+      "bytes": 3808,
       "meaningfulBytes": 3680,
       "importedBy": [],
       "imports": [],
@@ -760,29 +760,11 @@
       "maxSelectorDepth": 5
     },
     {
-      "file": "apps/pfotentechnik/src/styles/foundation/tokens.css",
-      "kind": "css",
-      "category": "global",
-      "owner": "design-system",
-      "bytes": 3555,
-      "meaningfulBytes": 3297,
-      "contentHash": "03d60ed343c1fe09f80e36e30f0e15d06ec7aa4eac29c1c0de356ac1909c4947",
-      "normalizedHash": "ec8bb357df217ebc15b3198c18b429c242016c7def03d337373f11e8e169b80f",
-      "importedBy": [
-        "apps/pfotentechnik/src/styles/foundation/index.css",
-        "apps/pfotentechnik/src/styles/foundation/index.css"
-      ],
-      "imports": [],
-      "rules": 1,
-      "important": 0,
-      "maxSelectorDepth": 1
-    },
-    {
       "file": "packages/affiliate-core/src/components/TableOfContents.astro",
       "kind": "astro-style",
       "category": "component-inline",
       "owner": "component-owner-unresolved",
-      "bytes": 3550,
+      "bytes": 3712,
       "meaningfulBytes": 3010,
       "importedBy": [],
       "imports": [],
@@ -791,26 +773,13 @@
       "maxSelectorDepth": 2
     },
     {
-      "file": "packages/affiliate-core/src/components/Footer.astro",
-      "kind": "astro-style",
-      "category": "component-inline",
-      "owner": "component-owner-unresolved",
-      "bytes": 3491,
-      "meaningfulBytes": 2938,
-      "importedBy": [],
-      "imports": [],
-      "rules": 24,
-      "important": 0,
-      "maxSelectorDepth": 2
-    },
-    {
       "file": "packages/affiliate-core/src/styles/manufacturer.css",
       "kind": "css",
       "category": "manufacturer",
       "owner": "manufacturer-pages",
-      "bytes": 3467,
+      "bytes": 3651,
       "meaningfulBytes": 3205,
-      "contentHash": "5904798a8648f5dfa847f385b91b0131718a50ddf8b9349590441f194ca8e0cc",
+      "contentHash": "507c54608e04c8411d79f38c9f36561aa51ef3a1689fc8d6ac7bc112f812f938",
       "normalizedHash": "c15ccab6e19155b8d39a72cfd9c1cc83dfa4ed9620ef0b7d74ba51091c71e51d",
       "importedBy": [
         "packages/affiliate-core/src/styles/global.css",
@@ -822,11 +791,42 @@
       "maxSelectorDepth": 2
     },
     {
+      "file": "packages/affiliate-core/src/components/Footer.astro",
+      "kind": "astro-style",
+      "category": "component-inline",
+      "owner": "component-owner-unresolved",
+      "bytes": 3645,
+      "meaningfulBytes": 2938,
+      "importedBy": [],
+      "imports": [],
+      "rules": 24,
+      "important": 0,
+      "maxSelectorDepth": 2
+    },
+    {
+      "file": "apps/pfotentechnik/src/styles/foundation/tokens.css",
+      "kind": "css",
+      "category": "global",
+      "owner": "design-system",
+      "bytes": 3642,
+      "meaningfulBytes": 3297,
+      "contentHash": "ffc305c436c8b4e73d8a51e4eca75c7f6c8e984f6f68cdff94ea576208d1044f",
+      "normalizedHash": "ec8bb357df217ebc15b3198c18b429c242016c7def03d337373f11e8e169b80f",
+      "importedBy": [
+        "apps/pfotentechnik/src/styles/foundation/index.css",
+        "apps/pfotentechnik/src/styles/foundation/index.css"
+      ],
+      "imports": [],
+      "rules": 1,
+      "important": 0,
+      "maxSelectorDepth": 1
+    },
+    {
       "file": "apps/pfotentechnik/src/pages/wissen.astro",
       "kind": "astro-style",
       "category": "component-inline",
       "owner": "component-owner-unresolved",
-      "bytes": 3462,
+      "bytes": 3605,
       "meaningfulBytes": 2954,
       "importedBy": [],
       "imports": [],
@@ -839,9 +839,9 @@
       "kind": "css",
       "category": "legacy-or-override",
       "owner": "design-system",
-      "bytes": 3205,
+      "bytes": 3247,
       "meaningfulBytes": 3089,
-      "contentHash": "8eda8eee6d5e9aad43833b288465f094f02c7cbefd50788bdaf9f300004fc213",
+      "contentHash": "451fb19f674049e5cd6cd0ae5b53e69d91469676301bf2492efda741587f95e6",
       "normalizedHash": "43d253eb0d81312e72217eee794337d2d477bd91be5f48953298f9d3e79f3d50",
       "importedBy": [
         "apps/pfotentechnik/src/layouts/ProjectLayout.astro"
@@ -856,7 +856,7 @@
       "kind": "astro-style",
       "category": "component-inline",
       "owner": "component-owner-unresolved",
-      "bytes": 2945,
+      "bytes": 3014,
       "meaningfulBytes": 2733,
       "importedBy": [],
       "imports": [],
@@ -865,24 +865,11 @@
       "maxSelectorDepth": 4
     },
     {
-      "file": "apps/pfotentechnik/src/pages/produkt/[product].astro",
-      "kind": "astro-style",
-      "category": "component-inline",
-      "owner": "component-owner-unresolved",
-      "bytes": 2576,
-      "meaningfulBytes": 2348,
-      "importedBy": [],
-      "imports": [],
-      "rules": 15,
-      "important": 0,
-      "maxSelectorDepth": 6
-    },
-    {
       "file": "apps/pfotentechnik/src/components/product-experience-2/ProductDetails2.astro",
       "kind": "astro-style",
       "category": "product",
       "owner": "product-experience",
-      "bytes": 2568,
+      "bytes": 2718,
       "meaningfulBytes": 2123,
       "importedBy": [],
       "imports": [],
@@ -891,13 +878,26 @@
       "maxSelectorDepth": 5
     },
     {
+      "file": "apps/pfotentechnik/src/pages/produkt/[product].astro",
+      "kind": "astro-style",
+      "category": "component-inline",
+      "owner": "component-owner-unresolved",
+      "bytes": 2644,
+      "meaningfulBytes": 2348,
+      "importedBy": [],
+      "imports": [],
+      "rules": 15,
+      "important": 0,
+      "maxSelectorDepth": 6
+    },
+    {
       "file": "packages/affiliate-core/src/styles/product-box.css",
       "kind": "css",
       "category": "product",
       "owner": "product-experience",
-      "bytes": 2218,
+      "bytes": 2336,
       "meaningfulBytes": 1933,
-      "contentHash": "3bd4c266271c2e99c548ab41a24b5d2a1bb7408eeb190de960778c448c2d2a4a",
+      "contentHash": "f43c6015293616deeed7590e070aeb7930918c1f7a46dbddbc0b77e4f6a4d6dd",
       "normalizedHash": "3cf681993ab03b201258c56e47b9f706424284f796ddef2a604458c0e53a6260",
       "importedBy": [
         "packages/affiliate-core/src/styles/product.css",
@@ -909,24 +909,11 @@
       "maxSelectorDepth": 2
     },
     {
-      "file": "apps/pfotentechnik/src/components/HealthBridge.astro",
-      "kind": "astro-style",
-      "category": "component-inline",
-      "owner": "component-owner-unresolved",
-      "bytes": 2137,
-      "meaningfulBytes": 1806,
-      "importedBy": [],
-      "imports": [],
-      "rules": 8,
-      "important": 0,
-      "maxSelectorDepth": 4
-    },
-    {
       "file": "apps/pfotentechnik/src/layouts/LegalPageLayout.astro",
       "kind": "astro-style",
       "category": "component-inline",
       "owner": "component-owner-unresolved",
-      "bytes": 2137,
+      "bytes": 2235,
       "meaningfulBytes": 1862,
       "importedBy": [],
       "imports": [],
@@ -935,24 +922,24 @@
       "maxSelectorDepth": 5
     },
     {
-      "file": "apps/pfotentechnik/src/components/product-experience-2/ProductAlternatives2.astro",
+      "file": "apps/pfotentechnik/src/components/HealthBridge.astro",
       "kind": "astro-style",
-      "category": "product",
-      "owner": "product-experience",
-      "bytes": 2108,
-      "meaningfulBytes": 2066,
+      "category": "component-inline",
+      "owner": "component-owner-unresolved",
+      "bytes": 2227,
+      "meaningfulBytes": 1806,
       "importedBy": [],
       "imports": [],
-      "rules": 20,
+      "rules": 8,
       "important": 0,
-      "maxSelectorDepth": 3
+      "maxSelectorDepth": 4
     },
     {
       "file": "apps/pfotentechnik/src/components/product-experience-2/ProductCommunityInsights2.astro",
       "kind": "astro-style",
       "category": "product",
       "owner": "product-experience",
-      "bytes": 2108,
+      "bytes": 2130,
       "meaningfulBytes": 2064,
       "importedBy": [],
       "imports": [],
@@ -961,13 +948,26 @@
       "maxSelectorDepth": 5
     },
     {
+      "file": "apps/pfotentechnik/src/components/product-experience-2/ProductAlternatives2.astro",
+      "kind": "astro-style",
+      "category": "product",
+      "owner": "product-experience",
+      "bytes": 2129,
+      "meaningfulBytes": 2066,
+      "importedBy": [],
+      "imports": [],
+      "rules": 20,
+      "important": 0,
+      "maxSelectorDepth": 3
+    },
+    {
       "file": "apps/pfotentechnik/src/styles/seo-admin-controls.css",
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 1714,
+      "bytes": 1791,
       "meaningfulBytes": 1478,
-      "contentHash": "d0a7407b2e0fc82cd7ff29f56e1668a08963009e78fe224543c118c67700d042",
+      "contentHash": "06a64d373d9bffe68089c6404e30cecff167d4e654ee2171943d6524bd20cc80",
       "normalizedHash": "29db7551ceb8ef88462595cae1de4c7f1d82e9d8da65fe391560bdb95dfb0bb4",
       "importedBy": [
         "apps/pfotentechnik/src/styles/seo-admin.css",
@@ -983,7 +983,7 @@
       "kind": "astro-style",
       "category": "component-inline",
       "owner": "component-owner-unresolved",
-      "bytes": 1713,
+      "bytes": 1771,
       "meaningfulBytes": 1533,
       "importedBy": [],
       "imports": [],
@@ -996,7 +996,7 @@
       "kind": "astro-style",
       "category": "product",
       "owner": "product-experience",
-      "bytes": 1662,
+      "bytes": 1681,
       "meaningfulBytes": 1614,
       "importedBy": [],
       "imports": [],
@@ -1009,7 +1009,7 @@
       "kind": "astro-style",
       "category": "comparison",
       "owner": "comparison-platform",
-      "bytes": 1486,
+      "bytes": 1551,
       "meaningfulBytes": 1273,
       "importedBy": [],
       "imports": [],
@@ -1022,9 +1022,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 1479,
+      "bytes": 1539,
       "meaningfulBytes": 1258,
-      "contentHash": "3c19a54a7f2c64885c49420981e8dc12b7b26f5f3aeaf8ff92bc2b6451f13b1f",
+      "contentHash": "58dcae84e73faafa545394669c55fb14765745f64b7c3e174d7cea7f31765346",
       "normalizedHash": "4d56955300fc742bb9037c5fa950e96f2d519941b583ba69ca29bed87754efb8",
       "importedBy": [
         "apps/pfotentechnik/src/styles/seo-admin.css",
@@ -1040,9 +1040,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 1408,
+      "bytes": 1454,
       "meaningfulBytes": 1142,
-      "contentHash": "e814bee9b1fec11c7671005f69531fada4df5156d97b78ee08e354bf5e5de489",
+      "contentHash": "22f5e0b8364dec90e8d89a9787c05b73cbae8402e21a10e6a15674a34178d6c5",
       "normalizedHash": "2cd213c58edd19a660e1d438782dfb2a89514928701bee05cb3151c8d915fd0f",
       "importedBy": [
         "apps/pfotentechnik/src/styles/seo-admin.css",
@@ -1058,9 +1058,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 1400,
+      "bytes": 1448,
       "meaningfulBytes": 1204,
-      "contentHash": "38eb6ad6a7ecda00d62e5e63e6f37d07bff2d74d93c46b7d077ecfe1e08dae3d",
+      "contentHash": "d1be64692f72c5d5f729ef07d2d467d598ed91f90e763539b490cedb6e9479f4",
       "normalizedHash": "b9bcf7bff4c6d482de8a38ce44c09f848bdd4a13cc7e4fa414d556065365e7a0",
       "importedBy": [
         "apps/pfotentechnik/src/styles/seo-admin.css",
@@ -1076,7 +1076,7 @@
       "kind": "astro-style",
       "category": "product",
       "owner": "product-experience",
-      "bytes": 1370,
+      "bytes": 1447,
       "meaningfulBytes": 1126,
       "importedBy": [],
       "imports": [],
@@ -1089,9 +1089,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 1346,
+      "bytes": 1419,
       "meaningfulBytes": 1239,
-      "contentHash": "b239624798465d59efa9e32f9c78bc2785ca77a7716ee44ff59682cb348e9042",
+      "contentHash": "8bf9010c08e7a91e2c52691706110b094b7393164e412585f135eaf36f02ce8a",
       "normalizedHash": "db63ad314923278dbf87e599d0ad00024b1ceca9ea91ff6718d759c56c12ab7a",
       "importedBy": [
         "packages/affiliate-core/src/styles/global.css",
@@ -1107,9 +1107,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 1340,
+      "bytes": 1396,
       "meaningfulBytes": 1169,
-      "contentHash": "03d9671caf6a54e5b0ebee10428f3daa9d41337466125adc3c1070dd2927ca2d",
+      "contentHash": "cd6e4f5cd10ddcdc6b87d86051138626a5486edf180e7dd99d15f7ec058201f9",
       "normalizedHash": "dbfb83544a2b30e4140796e6c77c892574df289694845d39032279e1b970e0a3",
       "importedBy": [
         "packages/affiliate-core/src/styles/global.css",
@@ -1125,9 +1125,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 1329,
+      "bytes": 1370,
       "meaningfulBytes": 1155,
-      "contentHash": "81f45bf1aff38cde26164e8c97cf527134c3ec51b041e04447677a96e7d5f35b",
+      "contentHash": "43dc5b082227a5e08b6f5650b0d8d6395056064a9189b7433c63e718a180fe12",
       "normalizedHash": "17d4d75da890dd740b70df5978cee0259daed052802a0a0b743fb0275aef4614",
       "importedBy": [
         "apps/pfotentechnik/src/styles/seo-admin.css",
@@ -1143,7 +1143,7 @@
       "kind": "astro-style",
       "category": "component-inline",
       "owner": "component-owner-unresolved",
-      "bytes": 1313,
+      "bytes": 1370,
       "meaningfulBytes": 1129,
       "importedBy": [],
       "imports": [],
@@ -1156,7 +1156,7 @@
       "kind": "astro-style",
       "category": "product",
       "owner": "product-experience",
-      "bytes": 1272,
+      "bytes": 1339,
       "meaningfulBytes": 1065,
       "importedBy": [],
       "imports": [],
@@ -1169,9 +1169,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 1226,
+      "bytes": 1257,
       "meaningfulBytes": 1101,
-      "contentHash": "028352a630604da84e0fb3211131fe10082ddb7acd33b9a4b1ca32af51dd5ab1",
+      "contentHash": "56bf0d2f140a42b2d584407d5486cace2ba1428e3e51cc1f021621dac72be17f",
       "normalizedHash": "01fcb107f391d976e2f8eb0472596715ad92b5673aa77343580a48aeb070bb31",
       "importedBy": [
         "apps/pfotentechnik/src/styles/components/index.css",
@@ -1181,6 +1181,19 @@
       "rules": 32,
       "important": 0,
       "maxSelectorDepth": 2
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/foundation.astro",
+      "kind": "astro-style",
+      "category": "component-inline",
+      "owner": "component-owner-unresolved",
+      "bytes": 1164,
+      "meaningfulBytes": 1125,
+      "importedBy": [],
+      "imports": [],
+      "rules": 15,
+      "important": 0,
+      "maxSelectorDepth": 4
     },
     {
       "file": "apps/pfotentechnik/src/components/DecisionJourney.astro",
@@ -1196,26 +1209,13 @@
       "maxSelectorDepth": 4
     },
     {
-      "file": "apps/pfotentechnik/src/pages/foundation.astro",
-      "kind": "astro-style",
-      "category": "component-inline",
-      "owner": "component-owner-unresolved",
-      "bytes": 1151,
-      "meaningfulBytes": 1125,
-      "importedBy": [],
-      "imports": [],
-      "rules": 15,
-      "important": 0,
-      "maxSelectorDepth": 4
-    },
-    {
       "file": "packages/affiliate-core/src/styles/theme.css",
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 862,
+      "bytes": 888,
       "meaningfulBytes": 753,
-      "contentHash": "1eee722c298a177b7a4752e0c43d476904527902e7e4ddc447a5334360befb17",
+      "contentHash": "5233ba9d4ceef18461baa2a939ffa9ce0cdb64ea52d6229a7b754db314f24ca2",
       "normalizedHash": "70d659f492f51234a2ccfa50125667cb6a500b5985b4a304f1c457954a6e1102",
       "importedBy": [
         "packages/affiliate-core/src/styles/global.css",
@@ -1231,9 +1231,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 824,
+      "bytes": 846,
       "meaningfulBytes": 689,
-      "contentHash": "e3824d76b51fc10924695a6f1eff8787a7bb04974ac5807a11389e912cc5d694",
+      "contentHash": "b09af8ea14da5c806027805c83ce7657e35ea647f29b14d7da1679dd2290e483",
       "normalizedHash": "afb2a9d7159820c6c579f47641cc8fd720851b3d126c49f5f1fbc89c1b72218e",
       "importedBy": [
         "apps/pfotentechnik/src/styles/components/index.css",
@@ -1249,9 +1249,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 729,
+      "bytes": 784,
       "meaningfulBytes": 647,
-      "contentHash": "adbfc358b122a8cf9c6d9b0800ff865ead694611c9b4f0563ab1a5d7b0e10ced",
+      "contentHash": "1081611340a01ece934a35b0a6a948806eaef45e582a8b17c34ded1cdf37c41a",
       "normalizedHash": "256713a5f05d24b9c2fa736739647dedb596a714818afce5d51bf9a5ac51631a",
       "importedBy": [
         "packages/affiliate-core/src/styles/global.css",
@@ -1267,9 +1267,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 506,
+      "bytes": 532,
       "meaningfulBytes": 350,
-      "contentHash": "33bdd09231d8aa9949f9fdcb0b73a7b9fd759e28ea0e9065e344cd8c1875c87f",
+      "contentHash": "49898f4634a992aa21e2e6dc893d2e8a14385b7f9ec804e3e5e217d971d7cd89",
       "normalizedHash": "ad74720a70af076ffcb7843a30be38821a8390d0d0ff61078dffa7c6c2267441",
       "importedBy": [
         "apps/pfotentechnik/src/styles/foundation/index.css",
@@ -1298,9 +1298,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 370,
+      "bytes": 385,
       "meaningfulBytes": 246,
-      "contentHash": "1b30a02687c5bc61226f3058561082ffd42315d6e95d8ba1d4f90643fa2afcdb",
+      "contentHash": "c64c04764dbcc5eb94352f87975a29edbc3938021557fac87810235b01d0d982",
       "normalizedHash": "db7212696645631b834e06b06a96313b91dece1d6dd43e4e2971771d4c7a654a",
       "importedBy": [
         "apps/pfotentechnik/src/styles/layout/index.css",
@@ -1316,9 +1316,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 306,
+      "bytes": 317,
       "meaningfulBytes": 306,
-      "contentHash": "f06735e33674741dd45976ac808d72be8618e6e1c75e55984f5c29e8900faaa7",
+      "contentHash": "5c91428792ec196c0e0a485352940d0470b7da114244244f1ed4ce56a58c1cef",
       "normalizedHash": "1c9f926b5c9f0c4619018b5a70aa07196615c1f1ff8a54d1b739edba2ec2244e",
       "importedBy": [
         "packages/affiliate-core/src/layouts/AffiliateLayout.astro"
@@ -1454,9 +1454,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 219,
+      "bytes": 225,
       "meaningfulBytes": 218,
-      "contentHash": "56a2e192f21d635aeabdc504700e840f846e6374a464de67f8b5370270206623",
+      "contentHash": "5390f5c5da2bb869e3afeda3837827614852dbc2d4b519ee6ebd041d9024faa6",
       "normalizedHash": "86965d89b10cc35f32effac86f118cac87ce93243f7f1d58f95e23118b25612a",
       "importedBy": [
         "apps/pfotentechnik/src/layouts/SeoAdminLayout.astro"
@@ -1532,9 +1532,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 205,
+      "bytes": 211,
       "meaningfulBytes": 142,
-      "contentHash": "ed298ff5e5cc0c38323994dc9fc071b23544455aa5f49c2685e3e1ecf6c5f94d",
+      "contentHash": "a2ee1328ee74205f563ab6d1673f0ab0b844fc80124ebe10b25991eadbeee728",
       "normalizedHash": "3723650010205f8514d8394fdf4f2cfffeb8986281e145b9c4dc28b0c6bdaa57",
       "importedBy": [
         "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
@@ -1601,9 +1601,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 96,
+      "bytes": 99,
       "meaningfulBytes": 46,
-      "contentHash": "e12e7c081764dcfc7cfc68fbe131dd862f72e31dd7abcf17870c85bf6217c9ac",
+      "contentHash": "af60c2611ba3aa3510bef5eea02d0acc7d47d907f623a1909a285338912484cb",
       "normalizedHash": "00f2750ba8df82fac4d0d424c1e2645fd18ba082ed9f54d5c6053884a5cf3440",
       "importedBy": [
         "apps/pfotentechnik/src/styles/foundation/index.css",
@@ -1640,9 +1640,9 @@
       "kind": "css",
       "category": "global",
       "owner": "design-system",
-      "bytes": 67,
+      "bytes": 69,
       "meaningfulBytes": 27,
-      "contentHash": "a5ff3fc712e9d45be7f598f07913af17d2254d678ee91c22169e2dd74b56196f",
+      "contentHash": "384e84f2e0edb970f872c035a1c9066650ae268494d0fd6cab4ee60b280f4fde",
       "normalizedHash": "d0e05a4b9d86a41e05cdda932bae7b88775a65ac4ec82dc270a6b190d3b3d52a",
       "importedBy": [
         "apps/pfotentechnik/src/styles/foundation/index.css",
@@ -7675,61 +7675,6 @@
       "important": 0
     },
     {
-      "selector": ".pt-next-steps__card--product",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/DecisionNextSteps.astro"
-      ],
-      "owners": [
-        "component-owner-unresolved"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".pt-next-steps__score strong",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/DecisionNextSteps.astro"
-      ],
-      "owners": [
-        "component-owner-unresolved"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".pt-next-steps[data-feature=\"recommendation-cards-2.0\"]",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/DecisionNextSteps.astro"
-      ],
-      "owners": [
-        "component-owner-unresolved"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".pt-next-steps[data-feature=\"recommendation-cards-2.0\"] .pt-next-steps__card--product",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/DecisionNextSteps.astro"
-      ],
-      "owners": [
-        "component-owner-unresolved"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".editorial-evidence nav",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/EditorialEvidence.astro"
-      ],
-      "owners": [
-        "component-owner-unresolved"
-      ],
-      "important": 0
-    },
-    {
       "selector": ".work-package-metrics",
       "occurrences": 3,
       "files": [
@@ -7939,6 +7884,61 @@
       "important": 0
     },
     {
+      "selector": ".pt-next-steps__card--product",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/components/DecisionNextSteps.astro"
+      ],
+      "owners": [
+        "component-owner-unresolved"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".pt-next-steps__score strong",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/components/DecisionNextSteps.astro"
+      ],
+      "owners": [
+        "component-owner-unresolved"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".pt-next-steps[data-feature=\"recommendation-cards-2.0\"]",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/components/DecisionNextSteps.astro"
+      ],
+      "owners": [
+        "component-owner-unresolved"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".pt-next-steps[data-feature=\"recommendation-cards-2.0\"] .pt-next-steps__card--product",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/components/DecisionNextSteps.astro"
+      ],
+      "owners": [
+        "component-owner-unresolved"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".editorial-evidence nav",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/components/EditorialEvidence.astro"
+      ],
+      "owners": [
+        "component-owner-unresolved"
+      ],
+      "important": 0
+    },
+    {
       "selector": ".alternatives__grid",
       "occurrences": 3,
       "files": [
@@ -8076,8 +8076,6 @@
         ".ui-grid-3",
         ".ui-grid-4",
         ".ui-callout",
-        ".pt-next-steps__grid",
-        ".editorial-transparency__facts",
         ".pt-advisor__form",
         ".choice-grid--three",
         ".result-grid",
@@ -8087,6 +8085,8 @@
         ".pt-category-hub__closing",
         ".pt-category-hub__path-list",
         ".pt-category-hub__guide-list",
+        ".pt-next-steps__grid",
+        ".editorial-transparency__facts",
         ".pt-guide__hero",
         ".pt-guide__summary",
         ".pt-manufacturer__hero",
@@ -8127,11 +8127,11 @@
         "packages/affiliate-core/src/styles/product-box.css",
         "packages/affiliate-core/src/styles/product.css",
         "packages/affiliate-core/src/styles/ui.css",
-        "apps/pfotentechnik/src/components/DecisionNextSteps.astro",
-        "apps/pfotentechnik/src/components/EditorialTransparency.astro",
         "apps/pfotentechnik/src/components/advisor/FeederAdvisor.astro",
         "apps/pfotentechnik/src/components/advisor/PetAdvisor.astro",
         "apps/pfotentechnik/src/components/category/CategoryExperience.astro",
+        "apps/pfotentechnik/src/components/DecisionNextSteps.astro",
+        "apps/pfotentechnik/src/components/EditorialTransparency.astro",
         "apps/pfotentechnik/src/components/guide/GuideExperience.astro",
         "apps/pfotentechnik/src/components/manufacturer/ManufacturerExperience.astro",
         "apps/pfotentechnik/src/components/product-experience-2/PriceBox2.astro",
@@ -8182,11 +8182,11 @@
         ".breadcrumbs",
         ".breadcrumbs--desktop",
         ".ranking-more-products summary::-webkit-details-marker",
+        ".pt-category-hub__depth summary::-webkit-details-marker",
+        ".pt-category-hub__product-decision :global(.pt-score__copy)",
         ".pt-next-steps__highlights li:nth-child(3)",
         ".editorial-transparency__compact-details summary::-webkit-details-marker",
         ".editorial-transparency__compact-details summary small",
-        ".pt-category-hub__depth summary::-webkit-details-marker",
-        ".pt-category-hub__product-decision :global(.pt-score__copy)",
         ".pt-manufacturer__families summary::-webkit-details-marker",
         ".px2-price__details summary::-webkit-details-marker",
         ".category-fit--reference33 fieldset:not(:first-child)",
@@ -8206,13 +8206,13 @@
         ".site-header-v2 .nav-toggle-button",
         ".site-header-v2 .main-nav-v2__desktop",
         ".image-lightbox-v2__help",
-        ".pt-toc__summary::-webkit-details-marker",
-        ".pt-toc__meta",
         ".product-hero-v4__mobile-carousel",
         ".product-hero-v4__dots",
         ".product-summary-card-v4",
         ".product-hero-v4__desktop-gallery",
         ".product-hero-v4__mobile-carousel::-webkit-scrollbar",
+        ".pt-toc__summary::-webkit-details-marker",
+        ".pt-toc__meta",
         ".premium-v3--pfotentechnik .premium-v3-grid-products::-webkit-scrollbar"
       ],
       "files": [
@@ -8224,9 +8224,9 @@
         "packages/affiliate-core/src/components/home/home.css",
         "packages/affiliate-core/src/styles/misc.css",
         "packages/affiliate-core/src/styles/product.css",
+        "apps/pfotentechnik/src/components/category/CategoryExperience.astro",
         "apps/pfotentechnik/src/components/DecisionNextSteps.astro",
         "apps/pfotentechnik/src/components/EditorialTransparency.astro",
-        "apps/pfotentechnik/src/components/category/CategoryExperience.astro",
         "apps/pfotentechnik/src/components/manufacturer/ManufacturerExperience.astro",
         "apps/pfotentechnik/src/components/product-experience-2/PriceBox2.astro",
         "apps/pfotentechnik/src/components/product-experience-2/ProductCategoryFitAssistant.astro",
@@ -8236,8 +8236,8 @@
         "packages/affiliate-core/src/components/EditorialScore.astro",
         "packages/affiliate-core/src/components/Header.astro",
         "packages/affiliate-core/src/components/ImageLightbox.astro",
-        "packages/affiliate-core/src/components/TableOfContents.astro",
         "packages/affiliate-core/src/components/product/ProductReview.astro",
+        "packages/affiliate-core/src/components/TableOfContents.astro",
         "packages/affiliate-core/src/renderer/PremiumRenderer.astro"
       ]
     },
@@ -8646,12 +8646,12 @@
         ".pt-home__guide-list picture",
         ".pt-home__guide-list img",
         ".article-hero picture",
-        ".pt-next-steps__media :global(picture)",
-        ".pt-next-steps__media :global(img)",
         ".pt-category-hub__hero-media :global(picture)",
         ".pt-category-hub__hero-media :global(img)",
         ".pt-category-hub__product-media :global(picture)",
         ".pt-category-hub__product-media :global(img)",
+        ".pt-next-steps__media :global(picture)",
+        ".pt-next-steps__media :global(img)",
         ".pt-guide__hero-media :global(picture)",
         ".pt-guide__hero-media :global(img)",
         ".alternative-recommendation-image :global(picture)",
@@ -8663,8 +8663,8 @@
         "packages/affiliate-core/src/components/comparison/comparison-experience.css",
         "packages/affiliate-core/src/components/home/home.css",
         "packages/affiliate-core/src/styles/article.css",
-        "apps/pfotentechnik/src/components/DecisionNextSteps.astro",
         "apps/pfotentechnik/src/components/category/CategoryExperience.astro",
+        "apps/pfotentechnik/src/components/DecisionNextSteps.astro",
         "apps/pfotentechnik/src/components/guide/GuideExperience.astro",
         "packages/affiliate-core/src/components/product/AlternativeRecommendationCard.astro",
         "packages/affiliate-core/src/renderer/PremiumRenderer.astro"
@@ -9155,8 +9155,8 @@
         "ul)",
         ".pt-home__method h3",
         ".pt-home__method p",
-        ".decision-journey-copy h2",
         ".provider-title h3",
+        ".decision-journey-copy h2",
         ".pt-manufacturer__differences h3",
         ".px2--reference33 :global(.purchase-mistakes h3)",
         ".px2--reference33 :global(.details__faq > h2)",
@@ -9170,8 +9170,8 @@
         "apps/pfotentechnik/src/styles/foundation/foundation-33.css",
         "packages/affiliate-core/src/components/comparison/comparison-experience.css",
         "packages/affiliate-core/src/components/home/home.css",
-        "apps/pfotentechnik/src/components/DecisionJourney.astro",
         "apps/pfotentechnik/src/components/admin/SearchIntegrations.astro",
+        "apps/pfotentechnik/src/components/DecisionJourney.astro",
         "apps/pfotentechnik/src/components/manufacturer/ManufacturerExperience.astro",
         "apps/pfotentechnik/src/components/product-experience-2/ProductExperience2.astro",
         "apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro",
@@ -9433,7 +9433,7 @@
       ]
     },
     {
-      "fingerprint": "align-items: center;border-radius: var(--pt-radius-lg) !important;border: 1px solid transparent;display: inline-flex !important;font-weight: var(--pt-font-weight-black) !important;font: inherit;gap: var(--pt-space-2);justify-content: center;line-height: 1.2;min-height: var(--pt-touch-target) !important;min-width: 0;padding: 0.8rem 1.15rem !important;text-align: center;text-decoration: none !important;text-wrap: balance;touch-action: manipulation;transition:\n    background-color var(--pt-transition-fast),\n    border-color var(--pt-transition-fast),\n    color var(--pt-transition-fast),\n    box-shadow var(--pt-transition-fast),\n    transform var(--pt-transition-fast)",
+      "fingerprint": "align-items: center;border-radius: var(--pt-radius-lg) !important;border: 1px solid transparent;display: inline-flex !important;font-weight: var(--pt-font-weight-black) !important;font: inherit;gap: var(--pt-space-2);justify-content: center;line-height: 1.2;min-height: var(--pt-touch-target) !important;min-width: 0;padding: 0.8rem 1.15rem !important;text-align: center;text-decoration: none !important;text-wrap: balance;touch-action: manipulation;transition:\r\n    background-color var(--pt-transition-fast),\r\n    border-color var(--pt-transition-fast),\r\n    color var(--pt-transition-fast),\r\n    box-shadow var(--pt-transition-fast),\r\n    transform var(--pt-transition-fast)",
       "occurrences": 17,
       "selectors": [
         ":where( .pt-button",
@@ -10609,7 +10609,7 @@
       ]
     },
     {
-      "fingerprint": "-webkit-text-fill-color: var(--pt-editorial-dark-accent) !important;color: var(--pt-editorial-dark-accent) !important;text-decoration-color: color-mix(\n    in srgb,\n    var(--pt-editorial-dark-accent) 55%,\n    transparent\n  );text-underline-offset: 0.18em",
+      "fingerprint": "-webkit-text-fill-color: var(--pt-editorial-dark-accent) !important;color: var(--pt-editorial-dark-accent) !important;text-decoration-color: color-mix(\r\n    in srgb,\r\n    var(--pt-editorial-dark-accent) 55%,\r\n    transparent\r\n  );text-underline-offset: 0.18em",
       "occurrences": 10,
       "selectors": [
         ":is( .home3-method",
@@ -11896,7 +11896,7 @@
       ]
     },
     {
-      "fingerprint": "transition: border-color 160ms ease,\n    box-shadow 160ms ease,\n    transform 160ms ease",
+      "fingerprint": "transition: border-color 160ms ease,\r\n    box-shadow 160ms ease,\r\n    transform 160ms ease",
       "occurrences": 6,
       "selectors": [
         ":where(.pt-category-card",
@@ -12727,7 +12727,7 @@
       ]
     },
     {
-      "fingerprint": "background: color-mix(\n    in srgb,\n    var(--pt-color-surface-subtle, var(--pt-color-surface)) 58%,\n    transparent\n  );border-color: color-mix(in srgb, var(--pt-color-border) 54%, transparent);box-shadow: none;padding: var(--pt-card-padding-compact)",
+      "fingerprint": "background: color-mix(\r\n    in srgb,\r\n    var(--pt-color-surface-subtle, var(--pt-color-surface)) 58%,\r\n    transparent\r\n  );border-color: color-mix(in srgb, var(--pt-color-border) 54%, transparent);box-shadow: none;padding: var(--pt-card-padding-compact)",
       "occurrences": 5,
       "selectors": [
         ":where(.pt-surface) > :where(.pt-surface):not( .pt-surface-elevated",
@@ -12936,20 +12936,6 @@
       ]
     },
     {
-      "fingerprint": "color: var(--next-muted) !important",
-      "occurrences": 5,
-      "selectors": [
-        ".pt-next-steps[data-feature=\"recommendation-cards-2.0\"] :is( .pt-next-steps__header > p:last-child",
-        ".pt-next-steps__card p",
-        ".pt-next-steps__highlights li",
-        ".pt-next-steps__score small",
-        ".pt-next-steps__stat small )"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/DecisionNextSteps.astro"
-      ]
-    },
-    {
       "fingerprint": "text-wrap:pretty",
       "occurrences": 5,
       "selectors": [
@@ -12975,6 +12961,20 @@
       ],
       "files": [
         "apps/pfotentechnik/src/components/category/CategoryExperience.astro"
+      ]
+    },
+    {
+      "fingerprint": "color: var(--next-muted) !important",
+      "occurrences": 5,
+      "selectors": [
+        ".pt-next-steps[data-feature=\"recommendation-cards-2.0\"] :is( .pt-next-steps__header > p:last-child",
+        ".pt-next-steps__card p",
+        ".pt-next-steps__highlights li",
+        ".pt-next-steps__score small",
+        ".pt-next-steps__stat small )"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/components/DecisionNextSteps.astro"
       ]
     },
     {
@@ -13165,7 +13165,7 @@
       ]
     },
     {
-      "fingerprint": "color: var(--pt-ink-950);font-family: \"Söhne\",\n    Inter,\n    ui-sans-serif,\n    -apple-system,\n    BlinkMacSystemFont,\n    \"Segoe UI\",\n    sans-serif;text-wrap: balance",
+      "fingerprint": "color: var(--pt-ink-950);font-family: \"Söhne\",\r\n    Inter,\r\n    ui-sans-serif,\r\n    -apple-system,\r\n    BlinkMacSystemFont,\r\n    \"Segoe UI\",\r\n    sans-serif;text-wrap: balance",
       "occurrences": 4,
       "selectors": [
         ":where(h1",
@@ -13178,7 +13178,7 @@
       ]
     },
     {
-      "fingerprint": "background: var(--pt-theme-accent-soft, var(--primary-soft)) !important;border-color: color-mix(\n    in srgb,\n    var(--pt-theme-accent, var(--primary)) 22%,\n    transparent\n  ) !important;color: var(--pt-theme-accent-text, var(--primary-dark)) !important",
+      "fingerprint": "background: var(--pt-theme-accent-soft, var(--primary-soft)) !important;border-color: color-mix(\r\n    in srgb,\r\n    var(--pt-theme-accent, var(--primary)) 22%,\r\n    transparent\r\n  ) !important;color: var(--pt-theme-accent-text, var(--primary-dark)) !important",
       "occurrences": 4,
       "selectors": [
         ".article :where( [class*=\"icon-wrap\"]",
@@ -13464,7 +13464,7 @@
       ]
     },
     {
-      "fingerprint": "-webkit-text-fill-color: #071811 !important;background: #5cdf91 !important;border-radius: var(--pt-radius-pill) !important;border: 1px solid rgba(32, 139, 80, 0.35) !important;box-shadow: 0 8px 20px rgba(28, 151, 80, 0.15);color: #071811 !important;font-weight: 850 !important;padding: 0.68rem 0.95rem !important;text-decoration: none !important;transition: transform 150ms ease,\n      background 150ms ease,\n      box-shadow 150ms ease",
+      "fingerprint": "-webkit-text-fill-color: #071811 !important;background: #5cdf91 !important;border-radius: var(--pt-radius-pill) !important;border: 1px solid rgba(32, 139, 80, 0.35) !important;box-shadow: 0 8px 20px rgba(28, 151, 80, 0.15);color: #071811 !important;font-weight: 850 !important;padding: 0.68rem 0.95rem !important;text-decoration: none !important;transition: transform 150ms ease,\r\n      background 150ms ease,\r\n      box-shadow 150ms ease",
       "occurrences": 4,
       "selectors": [
         "header a[href=\"/#kaufberatung\"]",
@@ -14132,45 +14132,6 @@
       ]
     },
     {
-      "fingerprint": "color: var(--next-text)",
-      "occurrences": 4,
-      "selectors": [
-        ".pt-next-steps[data-feature=\"recommendation-cards-2.0\"] :is( .pt-next-steps__header h2",
-        ".pt-next-steps__card h3",
-        ".pt-next-steps__score strong",
-        ".pt-next-steps__stat strong )"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/DecisionNextSteps.astro"
-      ]
-    },
-    {
-      "fingerprint": "--next-accent: #63e6a3;--next-bg:\n      radial-gradient(circle at top right, rgba(99, 230, 163, .11), transparent 36%),\n      linear-gradient(145deg, #102239 0%, #0d1d31 100%);--next-border: rgba(148, 180, 202, .22);--next-card:\n      linear-gradient(145deg, rgba(22, 43, 66, .98), rgba(18, 36, 57, .98));--next-muted: #c8d3de;--next-text: #f8fafc;box-shadow: 0 18px 48px rgba(0, 0, 0, .22)",
-      "occurrences": 4,
-      "selectors": [
-        "html[data-theme=\"dark\"] .pt-next-steps[data-feature=\"recommendation-cards-2.0\"]",
-        "html.dark .pt-next-steps[data-feature=\"recommendation-cards-2.0\"]",
-        "body.dark .pt-next-steps[data-feature=\"recommendation-cards-2.0\"]",
-        "[data-theme=\"dark\"] .pt-next-steps[data-feature=\"recommendation-cards-2.0\"]"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/DecisionNextSteps.astro"
-      ]
-    },
-    {
-      "fingerprint": "background: #132238;border-color: rgba(148, 163, 184, .24)",
-      "occurrences": 4,
-      "selectors": [
-        ":global(html[data-theme=\"dark\"]) .editorial-evidence__note",
-        ":global(html[data-theme=\"dark\"]) .editorial-evidence nav",
-        ":global(html.dark) .editorial-evidence__note",
-        ":global(html.dark) .editorial-evidence nav"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/EditorialEvidence.astro"
-      ]
-    },
-    {
       "fingerprint": "color:var(--growth-text)",
       "occurrences": 4,
       "selectors": [
@@ -14252,6 +14213,45 @@
       ],
       "files": [
         "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro"
+      ]
+    },
+    {
+      "fingerprint": "color: var(--next-text)",
+      "occurrences": 4,
+      "selectors": [
+        ".pt-next-steps[data-feature=\"recommendation-cards-2.0\"] :is( .pt-next-steps__header h2",
+        ".pt-next-steps__card h3",
+        ".pt-next-steps__score strong",
+        ".pt-next-steps__stat strong )"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/components/DecisionNextSteps.astro"
+      ]
+    },
+    {
+      "fingerprint": "--next-accent: #63e6a3;--next-bg:\r\n      radial-gradient(circle at top right, rgba(99, 230, 163, .11), transparent 36%),\r\n      linear-gradient(145deg, #102239 0%, #0d1d31 100%);--next-border: rgba(148, 180, 202, .22);--next-card:\r\n      linear-gradient(145deg, rgba(22, 43, 66, .98), rgba(18, 36, 57, .98));--next-muted: #c8d3de;--next-text: #f8fafc;box-shadow: 0 18px 48px rgba(0, 0, 0, .22)",
+      "occurrences": 4,
+      "selectors": [
+        "html[data-theme=\"dark\"] .pt-next-steps[data-feature=\"recommendation-cards-2.0\"]",
+        "html.dark .pt-next-steps[data-feature=\"recommendation-cards-2.0\"]",
+        "body.dark .pt-next-steps[data-feature=\"recommendation-cards-2.0\"]",
+        "[data-theme=\"dark\"] .pt-next-steps[data-feature=\"recommendation-cards-2.0\"]"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/components/DecisionNextSteps.astro"
+      ]
+    },
+    {
+      "fingerprint": "background: #132238;border-color: rgba(148, 163, 184, .24)",
+      "occurrences": 4,
+      "selectors": [
+        ":global(html[data-theme=\"dark\"]) .editorial-evidence__note",
+        ":global(html[data-theme=\"dark\"]) .editorial-evidence nav",
+        ":global(html.dark) .editorial-evidence__note",
+        ":global(html.dark) .editorial-evidence nav"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/components/EditorialEvidence.astro"
       ]
     },
     {
@@ -15532,7 +15532,7 @@
       ]
     },
     {
-      "fingerprint": "background: white;border: 1px solid var(--border);box-shadow: 0 18px 55px rgba(20, 32, 26, 0.07);color: inherit;text-decoration: none;transition:\n    transform 0.2s ease,\n    box-shadow 0.2s ease",
+      "fingerprint": "background: white;border: 1px solid var(--border);box-shadow: 0 18px 55px rgba(20, 32, 26, 0.07);color: inherit;text-decoration: none;transition:\r\n    transform 0.2s ease,\r\n    box-shadow 0.2s ease",
       "occurrences": 3,
       "selectors": [
         ".home-feature-card-v2",
@@ -15810,57 +15810,6 @@
       ]
     },
     {
-      "fingerprint": "align-items: flex-start;flex-direction: column",
-      "occurrences": 3,
-      "selectors": [
-        ".pt-advisor-cta",
-        ".result-meta",
-        ".alternative-recommendation-footer"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/AdvisorCta.astro",
-        "apps/pfotentechnik/src/components/advisor/PetAdvisor.astro",
-        "packages/affiliate-core/src/components/product/AlternativeRecommendationCard.astro"
-      ]
-    },
-    {
-      "fingerprint": "font-size: 1.12rem",
-      "occurrences": 3,
-      "selectors": [
-        ".pt-next-steps__score strong",
-        ".pt-next-steps__stat strong",
-        ".pt-guide__next nav strong"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/DecisionNextSteps.astro",
-        "apps/pfotentechnik/src/components/guide/GuideExperience.astro"
-      ]
-    },
-    {
-      "fingerprint": "color: var(--next-accent)",
-      "occurrences": 3,
-      "selectors": [
-        ".pt-next-steps[data-feature=\"recommendation-cards-2.0\"] :is( .pt-next-steps__eyebrow",
-        ".pt-next-steps__label",
-        ".pt-next-steps__cta )"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/DecisionNextSteps.astro"
-      ]
-    },
-    {
-      "fingerprint": "--color-border: #304137;--color-primary: #72d889;--color-surface-subtle: #142119;--color-surface: #101b16;--color-text-muted: #b5c4ba;--color-text: #eef7f0",
-      "occurrences": 3,
-      "selectors": [
-        ":global(html[data-theme=\"dark\"]) .editorial-transparency",
-        ":global(html.dark) .editorial-transparency",
-        ":global(body[data-theme=\"dark\"]) .editorial-transparency"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/EditorialTransparency.astro"
-      ]
-    },
-    {
       "fingerprint": "color:var(--growth-text-muted)",
       "occurrences": 3,
       "selectors": [
@@ -16016,6 +15965,20 @@
       ]
     },
     {
+      "fingerprint": "align-items: flex-start;flex-direction: column",
+      "occurrences": 3,
+      "selectors": [
+        ".result-meta",
+        ".pt-advisor-cta",
+        ".alternative-recommendation-footer"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/components/advisor/PetAdvisor.astro",
+        "apps/pfotentechnik/src/components/AdvisorCta.astro",
+        "packages/affiliate-core/src/components/product/AlternativeRecommendationCard.astro"
+      ]
+    },
+    {
       "fingerprint": "scroll-behavior: auto !important;transition: none !important",
       "occurrences": 3,
       "selectors": [
@@ -16072,6 +16035,43 @@
       ],
       "files": [
         "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro"
+      ]
+    },
+    {
+      "fingerprint": "font-size: 1.12rem",
+      "occurrences": 3,
+      "selectors": [
+        ".pt-next-steps__score strong",
+        ".pt-next-steps__stat strong",
+        ".pt-guide__next nav strong"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/components/DecisionNextSteps.astro",
+        "apps/pfotentechnik/src/components/guide/GuideExperience.astro"
+      ]
+    },
+    {
+      "fingerprint": "color: var(--next-accent)",
+      "occurrences": 3,
+      "selectors": [
+        ".pt-next-steps[data-feature=\"recommendation-cards-2.0\"] :is( .pt-next-steps__eyebrow",
+        ".pt-next-steps__label",
+        ".pt-next-steps__cta )"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/components/DecisionNextSteps.astro"
+      ]
+    },
+    {
+      "fingerprint": "--color-border: #304137;--color-primary: #72d889;--color-surface-subtle: #142119;--color-surface: #101b16;--color-text-muted: #b5c4ba;--color-text: #eef7f0",
+      "occurrences": 3,
+      "selectors": [
+        ":global(html[data-theme=\"dark\"]) .editorial-transparency",
+        ":global(html.dark) .editorial-transparency",
+        ":global(body[data-theme=\"dark\"]) .editorial-transparency"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/components/EditorialTransparency.astro"
       ]
     },
     {

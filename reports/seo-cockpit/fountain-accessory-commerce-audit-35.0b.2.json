@@ -1,0 +1,52 @@
+{
+  "batch": "35.0B.2",
+  "asOf": "2026-09-10",
+  "publication": "internal-only",
+  "scope": "fountain-accessory-commerce-audit",
+  "existingSystemsReused": [
+    "accessoryOfferSchema",
+    "productPriceSchema",
+    "productAvailabilitySchema",
+    "productAffiliateSchema",
+    "consumables[].offers[]",
+    "repairability.parts[].offers[]",
+    "extractAmazonAsin",
+    "buildAmazonAffiliateUrl",
+    "configured Amazon tracking ID"
+  ],
+  "merchantSupport": {
+    "affiliateMerchants": ["amazon"],
+    "fallback": "internal",
+    "otherAffiliateNetworks": []
+  },
+  "answers": {
+    "reusableForAccessories": "Existing offer, price, availability, optional affiliate, compatibility and Amazon link primitives.",
+    "missingFields": "A persisted accessory ASIN/merchantLinks representation and verified commerce status would be needed only for later automation; neither is required for this internal report.",
+    "verificationSource": "Runtime resolver input plus configured Amazon tracking ID; no stored accessory verification flag exists.",
+    "amazonDerivable": true,
+    "amazonDerivationLimits": "Requires exact ASIN/direct product URL, exact compatible item and pack, current purchase availability and configured mechanism; search URLs are rejected.",
+    "nonPrimaryOfferSupport": "Storage and validation exist for consumables and replacement parts; rendering, automated affiliate resolution and price refresh do not."
+  },
+  "statusModel": [
+    "AFFILIATE_READY",
+    "PURCHASABLE_NON_AFFILIATE",
+    "COMPATIBILITY_UNRESOLVED",
+    "MERCHANT_UNSUPPORTED",
+    "OFFER_UNAVAILABLE",
+    "UNKNOWN"
+  ],
+  "extensions": {
+    "parallelCommerceSystems": 0,
+    "schema": 0,
+    "priceSystem": 0,
+    "affiliateSystem": 0,
+    "redirectSystem": 0,
+    "internalDecisionModule": "apps/pfotentechnik/src/domain/accessoryCommerce.mjs"
+  },
+  "publicEffects": {
+    "renderersChanged": 0,
+    "linksAdded": 0,
+    "ctasAdded": 0,
+    "schemaOrgOffersAdded": 0
+  }
+}

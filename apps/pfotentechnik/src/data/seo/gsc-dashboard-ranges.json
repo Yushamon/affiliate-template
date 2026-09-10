@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-03T06:49:48.837Z",
+  "generatedAt": "2026-09-10T09:55:07.380Z",
   "property": "sc-domain:pfotentechnik.de",
   "provider": "google",
   "defaultRange": "7d",
@@ -8,161 +8,149 @@
     "7d": {
       "key": "7d",
       "label": "Letzte 7 Tage",
-      "startDate": "2026-08-27",
-      "endDate": "2026-09-02",
-      "comparisonStartDate": "2026-08-20",
-      "comparisonEndDate": "2026-08-26",
+      "startDate": "2026-09-03",
+      "endDate": "2026-09-09",
+      "comparisonStartDate": "2026-08-27",
+      "comparisonEndDate": "2026-09-02",
       "dataState": "all",
       "partial": false,
       "lowData": true,
       "metrics": {
         "current": {
           "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 16.7
+        },
+        "previous": {
+          "clicks": 0,
           "impressions": 13,
           "ctr": 0,
           "position": 49.2
         },
-        "previous": {
-          "clicks": 0,
-          "impressions": 12,
-          "ctr": 0,
-          "position": 19.5
-        },
         "change": {
           "clicks": 0,
-          "impressions": 8.3,
+          "impressions": -46.2,
           "ctr": 0,
-          "position": -29.7
+          "position": 32.5
         }
       },
       "pages": [
         {
-          "page": "/",
+          "page": "/trinkbrunnen/",
           "clicks": 0,
-          "impressions": 11,
+          "impressions": 2,
           "ctr": 0,
-          "position": 56.1
+          "position": 47.5
         },
         {
-          "page": "/produkt/petlibro-air-wifi-feeder/",
+          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 4
+        },
+        {
+          "page": "/produkt/petlibro-glacier-ultrafiltration/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 21
+          "position": 6
+        },
+        {
+          "page": "/produkt/petlibro-granary-2-vision/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 7
+        },
+        {
+          "page": "/produkt/weenect-xs/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
+        },
+        {
+          "page": "/produkt/weenect-xt/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "page": "/produkt/xiaomi-smart-pet-fountain-2/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
         },
         {
           "page": "/smarte-futterautomaten/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 3
+          "position": 7
         },
         {
-          "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+          "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 2
+          "position": 5
         }
       ],
-      "queries": [
-        {
-          "query": "petsafe bewertung",
-          "clicks": 0,
-          "impressions": 7,
-          "ctr": 0,
-          "position": 48
-        },
-        {
-          "query": "beuteerkennung",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 70.3
-        },
-        {
-          "query": "pet feeder",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 70
-        }
-      ],
-      "pageQueries": [
-        {
-          "page": "/",
-          "query": "petsafe bewertung",
-          "clicks": 0,
-          "impressions": 7,
-          "ctr": 0,
-          "position": 48
-        },
-        {
-          "page": "/",
-          "query": "beuteerkennung",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 70.3
-        },
-        {
-          "page": "/",
-          "query": "pet feeder",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 70
-        }
-      ],
+      "queries": [],
+      "pageQueries": [],
       "trend": [
         {
-          "date": "2026-08-27",
+          "date": "2026-09-03",
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 2,
           "ctr": 0,
-          "position": 55.7
+          "position": 4.5
         },
         {
-          "date": "2026-08-28",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 58.8
-        },
-        {
-          "date": "2026-08-29",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 55
-        },
-        {
-          "date": "2026-08-30",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 50
-        },
-        {
-          "date": "2026-08-31",
+          "date": "2026-09-04",
           "clicks": 0,
           "impressions": 0,
           "ctr": 0,
           "position": 0
         },
         {
-          "date": "2026-09-01",
+          "date": "2026-09-05",
           "clicks": 0,
-          "impressions": 1,
+          "impressions": 2,
           "ctr": 0,
-          "position": 21
+          "position": 4
         },
         {
-          "date": "2026-09-02",
+          "date": "2026-09-06",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        {
+          "date": "2026-09-07",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 2
+          "position": 1
+        },
+        {
+          "date": "2026-09-08",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 49.5
+        },
+        {
+          "date": "2026-09-09",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
         }
       ],
       "recommendations": []
@@ -170,31 +158,31 @@
     "28d": {
       "key": "28d",
       "label": "Letzte 28 Tage",
-      "startDate": "2026-08-06",
-      "endDate": "2026-09-02",
-      "comparisonStartDate": "2026-07-09",
-      "comparisonEndDate": "2026-08-05",
+      "startDate": "2026-08-13",
+      "endDate": "2026-09-09",
+      "comparisonStartDate": "2026-07-16",
+      "comparisonEndDate": "2026-08-12",
       "dataState": "all",
       "partial": false,
       "lowData": true,
       "metrics": {
         "current": {
           "clicks": 0,
-          "impressions": 48,
+          "impressions": 42,
           "ctr": 0,
-          "position": 33
+          "position": 31.1
         },
         "previous": {
-          "clicks": 20,
-          "impressions": 684,
-          "ctr": 2.92,
-          "position": 23.1
+          "clicks": 15,
+          "impressions": 493,
+          "ctr": 3.04,
+          "position": 22.4
         },
         "change": {
           "clicks": -100,
-          "impressions": -93,
-          "ctr": -2.92,
-          "position": -9.9
+          "impressions": -91.5,
+          "ctr": -3.04,
+          "position": -8.7
         }
       },
       "pages": [
@@ -208,23 +196,16 @@
         {
           "page": "/futterautomat-katze/",
           "clicks": 0,
-          "impressions": 8,
-          "ctr": 0,
-          "position": 36
-        },
-        {
-          "page": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
-          "clicks": 0,
           "impressions": 5,
           "ctr": 0,
-          "position": 34.4
+          "position": 22.6
         },
         {
           "page": "/smarte-futterautomaten/",
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 4,
           "ctr": 0,
-          "position": 6
+          "position": 6.3
         },
         {
           "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
@@ -234,25 +215,32 @@
           "position": 2
         },
         {
-          "page": "/produkt/oneisall-2-in-1-feeder-water/",
+          "page": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 3,
           "ctr": 0,
-          "position": 3.5
+          "position": 20.3
         },
         {
-          "page": "/produkt/petkit-eversweet-ultra/",
+          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 3,
           "ctr": 0,
-          "position": 8
+          "position": 28
         },
         {
           "page": "/produkt/weenect-xt/",
           "clicks": 0,
           "impressions": 2,
           "ctr": 0,
-          "position": 21.5
+          "position": 3.5
+        },
+        {
+          "page": "/trinkbrunnen/",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 47.5
         },
         {
           "page": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
@@ -260,20 +248,6 @@
           "impressions": 2,
           "ctr": 0,
           "position": 6
-        },
-        {
-          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 41
-        },
-        {
-          "page": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 10
         },
         {
           "page": "/hund-ist-muede/",
@@ -311,6 +285,13 @@
           "position": 4
         },
         {
+          "page": "/produkt/petkit-eversweet-ultra/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 4
+        },
+        {
           "page": "/produkt/petkit-fresh-element-solo/",
           "clicks": 0,
           "impressions": 1,
@@ -325,11 +306,32 @@
           "position": 21
         },
         {
-          "page": "/trockenfutter-oder-nassfutter-katze/",
+          "page": "/produkt/petlibro-glacier-ultrafiltration/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 1
+          "position": 6
+        },
+        {
+          "page": "/produkt/petlibro-granary-2-vision/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 7
+        },
+        {
+          "page": "/produkt/weenect-xs/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
+        },
+        {
+          "page": "/produkt/xiaomi-smart-pet-fountain-2/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
         },
         {
           "page": "/vergleiche/",
@@ -350,7 +352,7 @@
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 34
+          "position": 5
         },
         {
           "page": "/vergleiche/futterautomat-mit-app/",
@@ -358,6 +360,13 @@
           "impressions": 1,
           "ctr": 0,
           "position": 2
+        },
+        {
+          "page": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 9
         },
         {
           "page": "/welpen-richtig-fuettern/",
@@ -418,32 +427,11 @@
           "position": 70.3
         },
         {
-          "query": "\"garmin alpha\" \"dog\" -\"watch\" -site:reddit.com -site:twitter.com -site:x.com -site:wykop.pl -site:tripadvisor.com -site:youtube.com -site:yelp.com -site:booking.com -site:facebook.com -site:instagram.com -site:tiktok.com",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6
-        },
-        {
-          "query": "futterautomat für 2 katzen",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 56
-        },
-        {
           "query": "futterautomat für 2 katzen mit chip",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
           "position": 56
-        },
-        {
-          "query": "futterautomat katze nassfutter",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 54
         },
         {
           "query": "futterautomat nassfutter katze",
@@ -458,20 +446,6 @@
           "impressions": 1,
           "ctr": 0,
           "position": 50
-        },
-        {
-          "query": "nassfutterautomat für katzen",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 61
-        },
-        {
-          "query": "nassfutterautomat katze",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 60
         },
         {
           "query": "pet feeder",
@@ -515,14 +489,6 @@
         },
         {
           "page": "/futterautomat-katze/",
-          "query": "futterautomat katze nassfutter",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 54
-        },
-        {
-          "page": "/futterautomat-katze/",
           "query": "futterautomat nassfutter katze",
           "clicks": 0,
           "impressions": 1,
@@ -538,22 +504,6 @@
           "position": 50
         },
         {
-          "page": "/futterautomat-katze/",
-          "query": "nassfutterautomat für katzen",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 61
-        },
-        {
-          "page": "/futterautomat-katze/",
-          "query": "nassfutterautomat katze",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 60
-        },
-        {
           "page": "/hersteller/tractive/",
           "query": "tractive care",
           "clicks": 0,
@@ -563,79 +513,14 @@
         },
         {
           "page": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
-          "query": "futterautomat für 2 katzen",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 56
-        },
-        {
-          "page": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
           "query": "futterautomat für 2 katzen mit chip",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
           "position": 56
-        },
-        {
-          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-          "query": "\"garmin alpha\" \"dog\" -\"watch\" -site:reddit.com -site:twitter.com -site:x.com -site:wykop.pl -site:tripadvisor.com -site:youtube.com -site:yelp.com -site:booking.com -site:facebook.com -site:instagram.com -site:tiktok.com",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6
         }
       ],
       "trend": [
-        {
-          "date": "2026-08-06",
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 32.7
-        },
-        {
-          "date": "2026-08-07",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 54
-        },
-        {
-          "date": "2026-08-08",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 20.5
-        },
-        {
-          "date": "2026-08-09",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 46.5
-        },
-        {
-          "date": "2026-08-10",
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 1
-        },
-        {
-          "date": "2026-08-11",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 33
-        },
-        {
-          "date": "2026-08-12",
-          "clicks": 0,
-          "impressions": 0,
-          "ctr": 0,
-          "position": 0
-        },
         {
           "date": "2026-08-13",
           "clicks": 0,
@@ -782,6 +667,55 @@
           "impressions": 1,
           "ctr": 0,
           "position": 2
+        },
+        {
+          "date": "2026-09-03",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 4.5
+        },
+        {
+          "date": "2026-09-04",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        {
+          "date": "2026-09-05",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 4
+        },
+        {
+          "date": "2026-09-06",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        {
+          "date": "2026-09-07",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "date": "2026-09-08",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 49.5
+        },
+        {
+          "date": "2026-09-09",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
         }
       ],
       "recommendations": []
@@ -789,19 +723,19 @@
     "3m": {
       "key": "3m",
       "label": "Letzte 3 Monate",
-      "startDate": "2026-06-05",
-      "endDate": "2026-09-02",
-      "comparisonStartDate": "2026-03-07",
-      "comparisonEndDate": "2026-06-04",
+      "startDate": "2026-06-12",
+      "endDate": "2026-09-09",
+      "comparisonStartDate": "2026-03-14",
+      "comparisonEndDate": "2026-06-11",
       "dataState": "all",
       "partial": false,
       "lowData": false,
       "metrics": {
         "current": {
           "clicks": 20,
-          "impressions": 732,
-          "ctr": 2.73,
-          "position": 23.7
+          "impressions": 739,
+          "ctr": 2.71,
+          "position": 23.6
         },
         "previous": {
           "clicks": 0,
@@ -812,17 +746,17 @@
         "change": {
           "clicks": 100,
           "impressions": 100,
-          "ctr": 2.73,
-          "position": -23.7
+          "ctr": 2.71,
+          "position": -23.6
         }
       },
       "pages": [
         {
           "page": "/smarte-futterautomaten/",
           "clicks": 0,
-          "impressions": 88,
+          "impressions": 89,
           "ctr": 0,
-          "position": 41.1
+          "position": 40.7
         },
         {
           "page": "/hersteller/petlibro/",
@@ -867,18 +801,18 @@
           "position": 12.4
         },
         {
-          "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-          "clicks": 0,
-          "impressions": 23,
-          "ctr": 0,
-          "position": 56.4
-        },
-        {
           "page": "/trinkbrunnen/",
           "clicks": 0,
-          "impressions": 22,
+          "impressions": 24,
           "ctr": 0,
-          "position": 42.5
+          "position": 43
+        },
+        {
+          "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "clicks": 0,
+          "impressions": 24,
+          "ctr": 0,
+          "position": 54.3
         },
         {
           "page": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
@@ -1056,6 +990,13 @@
           "position": 9.4
         },
         {
+          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 39.9
+        },
+        {
           "page": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
           "clicks": 0,
           "impressions": 7,
@@ -1133,13 +1074,6 @@
           "position": 48.6
         },
         {
-          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-          "clicks": 0,
-          "impressions": 5,
-          "ctr": 0,
-          "position": 54.2
-        },
-        {
           "page": "/produkt/petkit-yumshare-dual-hopper/",
           "clicks": 2,
           "impressions": 4,
@@ -1194,6 +1128,13 @@
           "impressions": 4,
           "ctr": 0,
           "position": 80.3
+        },
+        {
+          "page": "/produkt/weenect-xs/",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 13.5
         },
         {
           "page": "/pumpe-katzentrinkbrunnen-reinigen/",
@@ -1294,11 +1235,11 @@
           "position": 20.3
         },
         {
-          "page": "/produkt/weenect-xs/",
+          "page": "/produkt/weenect-xt/",
           "clicks": 0,
           "impressions": 3,
           "ctr": 0,
-          "position": 17.3
+          "position": 14.7
         },
         {
           "page": "/trinkbrunnen-fuer-kitten-sicher/",
@@ -1413,18 +1354,18 @@
           "position": 9
         },
         {
+          "page": "/produkt/petlibro-glacier-ultrafiltration/",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 14
+        },
+        {
           "page": "/produkt/petlibro-one-rfid-smart-feeder/",
           "clicks": 0,
           "impressions": 2,
           "ctr": 0,
           "position": 22.5
-        },
-        {
-          "page": "/produkt/weenect-xt/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 21.5
         },
         {
           "page": "/reichweite-von-gps-trackern/",
@@ -1602,11 +1543,11 @@
           "position": 21
         },
         {
-          "page": "/produkt/petlibro-glacier-ultrafiltration/",
+          "page": "/produkt/petlibro-granary-2-vision/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 22
+          "position": 7
         },
         {
           "page": "/produkt/petlibro-granary-camera-feeder/",
@@ -1621,6 +1562,13 @@
           "impressions": 1,
           "ctr": 0,
           "position": 32
+        },
+        {
+          "page": "/produkt/xiaomi-smart-pet-fountain-2/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
         },
         {
           "page": "/trinkbrunnen-hund/",
@@ -4083,6 +4031,55 @@
           "impressions": 1,
           "ctr": 0,
           "position": 2
+        },
+        {
+          "date": "2026-09-03",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 4.5
+        },
+        {
+          "date": "2026-09-04",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        {
+          "date": "2026-09-05",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 4
+        },
+        {
+          "date": "2026-09-06",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        {
+          "date": "2026-09-07",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "date": "2026-09-08",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 49.5
+        },
+        {
+          "date": "2026-09-09",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
         }
       ],
       "recommendations": []
@@ -4090,19 +4087,19 @@
     "6m": {
       "key": "6m",
       "label": "Letzte 6 Monate",
-      "startDate": "2026-03-07",
-      "endDate": "2026-09-02",
-      "comparisonStartDate": "2025-09-08",
-      "comparisonEndDate": "2026-03-06",
+      "startDate": "2026-03-14",
+      "endDate": "2026-09-09",
+      "comparisonStartDate": "2025-09-15",
+      "comparisonEndDate": "2026-03-13",
       "dataState": "all",
       "partial": false,
       "lowData": false,
       "metrics": {
         "current": {
           "clicks": 20,
-          "impressions": 732,
-          "ctr": 2.73,
-          "position": 23.7
+          "impressions": 739,
+          "ctr": 2.71,
+          "position": 23.6
         },
         "previous": {
           "clicks": 0,
@@ -4113,17 +4110,17 @@
         "change": {
           "clicks": 100,
           "impressions": 100,
-          "ctr": 2.73,
-          "position": -23.7
+          "ctr": 2.71,
+          "position": -23.6
         }
       },
       "pages": [
         {
           "page": "/smarte-futterautomaten/",
           "clicks": 0,
-          "impressions": 88,
+          "impressions": 89,
           "ctr": 0,
-          "position": 41.1
+          "position": 40.7
         },
         {
           "page": "/hersteller/petlibro/",
@@ -4168,18 +4165,18 @@
           "position": 12.4
         },
         {
-          "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-          "clicks": 0,
-          "impressions": 23,
-          "ctr": 0,
-          "position": 56.4
-        },
-        {
           "page": "/trinkbrunnen/",
           "clicks": 0,
-          "impressions": 22,
+          "impressions": 24,
           "ctr": 0,
-          "position": 42.5
+          "position": 43
+        },
+        {
+          "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "clicks": 0,
+          "impressions": 24,
+          "ctr": 0,
+          "position": 54.3
         },
         {
           "page": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
@@ -4357,6 +4354,13 @@
           "position": 9.4
         },
         {
+          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 39.9
+        },
+        {
           "page": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
           "clicks": 0,
           "impressions": 7,
@@ -4434,13 +4438,6 @@
           "position": 48.6
         },
         {
-          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-          "clicks": 0,
-          "impressions": 5,
-          "ctr": 0,
-          "position": 54.2
-        },
-        {
           "page": "/produkt/petkit-yumshare-dual-hopper/",
           "clicks": 2,
           "impressions": 4,
@@ -4495,6 +4492,13 @@
           "impressions": 4,
           "ctr": 0,
           "position": 80.3
+        },
+        {
+          "page": "/produkt/weenect-xs/",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 13.5
         },
         {
           "page": "/pumpe-katzentrinkbrunnen-reinigen/",
@@ -4595,11 +4599,11 @@
           "position": 20.3
         },
         {
-          "page": "/produkt/weenect-xs/",
+          "page": "/produkt/weenect-xt/",
           "clicks": 0,
           "impressions": 3,
           "ctr": 0,
-          "position": 17.3
+          "position": 14.7
         },
         {
           "page": "/trinkbrunnen-fuer-kitten-sicher/",
@@ -4714,18 +4718,18 @@
           "position": 9
         },
         {
+          "page": "/produkt/petlibro-glacier-ultrafiltration/",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 14
+        },
+        {
           "page": "/produkt/petlibro-one-rfid-smart-feeder/",
           "clicks": 0,
           "impressions": 2,
           "ctr": 0,
           "position": 22.5
-        },
-        {
-          "page": "/produkt/weenect-xt/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 21.5
         },
         {
           "page": "/reichweite-von-gps-trackern/",
@@ -4903,11 +4907,11 @@
           "position": 21
         },
         {
-          "page": "/produkt/petlibro-glacier-ultrafiltration/",
+          "page": "/produkt/petlibro-granary-2-vision/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 22
+          "position": 7
         },
         {
           "page": "/produkt/petlibro-granary-camera-feeder/",
@@ -4922,6 +4926,13 @@
           "impressions": 1,
           "ctr": 0,
           "position": 32
+        },
+        {
+          "page": "/produkt/xiaomi-smart-pet-fountain-2/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
         },
         {
           "page": "/trinkbrunnen-hund/",
@@ -7384,6 +7395,55 @@
           "impressions": 1,
           "ctr": 0,
           "position": 2
+        },
+        {
+          "date": "2026-09-03",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 4.5
+        },
+        {
+          "date": "2026-09-04",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        {
+          "date": "2026-09-05",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 4
+        },
+        {
+          "date": "2026-09-06",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        {
+          "date": "2026-09-07",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "date": "2026-09-08",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 49.5
+        },
+        {
+          "date": "2026-09-09",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
         }
       ],
       "recommendations": []
@@ -7391,19 +7451,19 @@
     "12m": {
       "key": "12m",
       "label": "Letzte 12 Monate",
-      "startDate": "2025-09-03",
-      "endDate": "2026-09-02",
-      "comparisonStartDate": "2024-09-03",
-      "comparisonEndDate": "2025-09-02",
+      "startDate": "2025-09-10",
+      "endDate": "2026-09-09",
+      "comparisonStartDate": "2024-09-10",
+      "comparisonEndDate": "2025-09-09",
       "dataState": "all",
       "partial": false,
       "lowData": false,
       "metrics": {
         "current": {
           "clicks": 20,
-          "impressions": 732,
-          "ctr": 2.73,
-          "position": 23.7
+          "impressions": 739,
+          "ctr": 2.71,
+          "position": 23.6
         },
         "previous": {
           "clicks": 0,
@@ -7414,17 +7474,17 @@
         "change": {
           "clicks": 100,
           "impressions": 100,
-          "ctr": 2.73,
-          "position": -23.7
+          "ctr": 2.71,
+          "position": -23.6
         }
       },
       "pages": [
         {
           "page": "/smarte-futterautomaten/",
           "clicks": 0,
-          "impressions": 88,
+          "impressions": 89,
           "ctr": 0,
-          "position": 41.1
+          "position": 40.7
         },
         {
           "page": "/hersteller/petlibro/",
@@ -7469,18 +7529,18 @@
           "position": 12.4
         },
         {
-          "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-          "clicks": 0,
-          "impressions": 23,
-          "ctr": 0,
-          "position": 56.4
-        },
-        {
           "page": "/trinkbrunnen/",
           "clicks": 0,
-          "impressions": 22,
+          "impressions": 24,
           "ctr": 0,
-          "position": 42.5
+          "position": 43
+        },
+        {
+          "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+          "clicks": 0,
+          "impressions": 24,
+          "ctr": 0,
+          "position": 54.3
         },
         {
           "page": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
@@ -7658,6 +7718,13 @@
           "position": 9.4
         },
         {
+          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 39.9
+        },
+        {
           "page": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
           "clicks": 0,
           "impressions": 7,
@@ -7735,13 +7802,6 @@
           "position": 48.6
         },
         {
-          "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
-          "clicks": 0,
-          "impressions": 5,
-          "ctr": 0,
-          "position": 54.2
-        },
-        {
           "page": "/produkt/petkit-yumshare-dual-hopper/",
           "clicks": 2,
           "impressions": 4,
@@ -7796,6 +7856,13 @@
           "impressions": 4,
           "ctr": 0,
           "position": 80.3
+        },
+        {
+          "page": "/produkt/weenect-xs/",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 13.5
         },
         {
           "page": "/pumpe-katzentrinkbrunnen-reinigen/",
@@ -7896,11 +7963,11 @@
           "position": 20.3
         },
         {
-          "page": "/produkt/weenect-xs/",
+          "page": "/produkt/weenect-xt/",
           "clicks": 0,
           "impressions": 3,
           "ctr": 0,
-          "position": 17.3
+          "position": 14.7
         },
         {
           "page": "/trinkbrunnen-fuer-kitten-sicher/",
@@ -8015,18 +8082,18 @@
           "position": 9
         },
         {
+          "page": "/produkt/petlibro-glacier-ultrafiltration/",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 14
+        },
+        {
           "page": "/produkt/petlibro-one-rfid-smart-feeder/",
           "clicks": 0,
           "impressions": 2,
           "ctr": 0,
           "position": 22.5
-        },
-        {
-          "page": "/produkt/weenect-xt/",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 21.5
         },
         {
           "page": "/reichweite-von-gps-trackern/",
@@ -8204,11 +8271,11 @@
           "position": 21
         },
         {
-          "page": "/produkt/petlibro-glacier-ultrafiltration/",
+          "page": "/produkt/petlibro-granary-2-vision/",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 22
+          "position": 7
         },
         {
           "page": "/produkt/petlibro-granary-camera-feeder/",
@@ -8223,6 +8290,13 @@
           "impressions": 1,
           "ctr": 0,
           "position": 32
+        },
+        {
+          "page": "/produkt/xiaomi-smart-pet-fountain-2/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
         },
         {
           "page": "/trinkbrunnen-hund/",
@@ -10685,6 +10759,55 @@
           "impressions": 1,
           "ctr": 0,
           "position": 2
+        },
+        {
+          "date": "2026-09-03",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 4.5
+        },
+        {
+          "date": "2026-09-04",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        {
+          "date": "2026-09-05",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 4
+        },
+        {
+          "date": "2026-09-06",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
+        },
+        {
+          "date": "2026-09-07",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "date": "2026-09-08",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 49.5
+        },
+        {
+          "date": "2026-09-09",
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": 0
         }
       ],
       "recommendations": []

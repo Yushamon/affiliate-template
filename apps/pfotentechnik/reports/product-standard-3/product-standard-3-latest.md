@@ -2,37 +2,37 @@
 
 - Produkte: 102
 - Blockiert: 0
-- Verbesserungsbedarf: 18
-- Gut: 3
+- Verbesserungsbedarf: 21
+- Gut: 0
 - Stark: 81
 - Fehler: 0
-- Warnungen: 72
+- Warnungen: 80
 
 ## Übersicht
 
 | Produkt | Score | Status | relevante Findings |
 |---|---:|---|---:|
+| cat-mate-elite-355w | 60 | needs-work | 4 |
 | enabot-ebo-air-2 | 60 | needs-work | 4 |
 | furbo-360-hundekamera | 60 | needs-work | 4 |
 | furbo-360-katzenkamera | 60 | needs-work | 4 |
+| litter-robot-4 | 60 | needs-work | 4 |
 | litter-robot-5-pro | 60 | needs-work | 4 |
 | neakasa-m1-plus | 60 | needs-work | 4 |
 | onlycat-mikrochip-katzenklappe | 60 | needs-work | 4 |
+| pawfit-3 | 60 | needs-work | 4 |
 | petkit-purobot-crystal-duo | 60 | needs-work | 4 |
 | petsafe-mikrochip-katzenklappe | 60 | needs-work | 4 |
 | petwalk-medium-tiertuer | 60 | needs-work | 4 |
-| cat-mate-elite-355w | 70 | needs-work | 3 |
+| prothelis-area-pets | 60 | needs-work | 4 |
+| reolink-e1-zoom | 60 | needs-work | 4 |
+| catit-pixi-smart-trinkbrunnen | 70 | needs-work | 3 |
 | enabot-rola-mini | 70 | needs-work | 3 |
 | furbo-mini-360 | 70 | needs-work | 3 |
-| litter-robot-4 | 70 | needs-work | 3 |
-| pawfit-3 | 70 | needs-work | 3 |
+| invoxia-biotracker-2026 | 70 | needs-work | 3 |
 | petkit-puramax-2 | 70 | needs-work | 3 |
 | petlibro-luma-smart-litter-box | 70 | needs-work | 3 |
-| prothelis-area-pets | 70 | needs-work | 3 |
-| reolink-e1-zoom | 70 | needs-work | 3 |
-| catit-pixi-smart-trinkbrunnen | 80 | good | 2 |
-| invoxia-biotracker-2026 | 80 | good | 2 |
-| petsafe-streamside-trinkbrunnen | 80 | good | 2 |
+| petsafe-streamside-trinkbrunnen | 70 | needs-work | 3 |
 | devoko-90l-automatisches-katzenklo | 90 | strong | 1 |
 | flappie | 90 | strong | 1 |
 | neakasa-m1-lite | 90 | strong | 1 |
@@ -117,6 +117,13 @@
 
 ## Höchste Priorität
 
+### cat-mate-elite-355w · 60/100
+
+- **WARNING · SPECS_THIN:** Nur 0 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
+- **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
+- **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
+- **WARNING · EVIDENCE_THIN:** Nur 1 Evidenzarten hinterlegt. Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen.
+
 ### enabot-ebo-air-2 · 60/100
 
 - **WARNING · SPECS_THIN:** Nur 0 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
@@ -132,6 +139,13 @@
 - **WARNING · EVIDENCE_THIN:** Nur 1 Evidenzarten hinterlegt. Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen.
 
 ### furbo-360-katzenkamera · 60/100
+
+- **WARNING · SPECS_THIN:** Nur 0 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
+- **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
+- **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
+- **WARNING · EVIDENCE_THIN:** Nur 1 Evidenzarten hinterlegt. Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen.
+
+### litter-robot-4 · 60/100
 
 - **WARNING · SPECS_THIN:** Nur 0 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
 - **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
@@ -159,6 +173,13 @@
 - **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
 - **WARNING · EVIDENCE_THIN:** Nur 1 Evidenzarten hinterlegt. Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen.
 
+### pawfit-3 · 60/100
+
+- **WARNING · SPECS_THIN:** Nur 3 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
+- **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
+- **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
+- **WARNING · EVIDENCE_THIN:** Nur 1 Evidenzarten hinterlegt. Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen.
+
 ### petkit-purobot-crystal-duo · 60/100
 
 - **WARNING · SPECS_THIN:** Nur 0 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
@@ -180,11 +201,25 @@
 - **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
 - **WARNING · EVIDENCE_THIN:** Nur 1 Evidenzarten hinterlegt. Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen.
 
-### cat-mate-elite-355w · 70/100
+### prothelis-area-pets · 60/100
+
+- **WARNING · SPECS_THIN:** Nur 1 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
+- **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
+- **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
+- **WARNING · EVIDENCE_THIN:** Nur 1 Evidenzarten hinterlegt. Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen.
+
+### reolink-e1-zoom · 60/100
 
 - **WARNING · SPECS_THIN:** Nur 0 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
 - **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
 - **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
+- **WARNING · EVIDENCE_THIN:** Nur 1 Evidenzarten hinterlegt. Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen.
+
+### catit-pixi-smart-trinkbrunnen · 70/100
+
+- **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
+- **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
+- **WARNING · EVIDENCE_THIN:** Nur 1 Evidenzarten hinterlegt. Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen.
 
 ### enabot-rola-mini · 70/100
 
@@ -198,17 +233,11 @@
 - **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
 - **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
 
-### litter-robot-4 · 70/100
+### invoxia-biotracker-2026 · 70/100
 
-- **WARNING · SPECS_THIN:** Nur 0 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
 - **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
 - **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
-
-### pawfit-3 · 70/100
-
-- **WARNING · SPECS_THIN:** Nur 3 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
-- **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
-- **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
+- **WARNING · EVIDENCE_THIN:** Nur 1 Evidenzarten hinterlegt. Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen.
 
 ### petkit-puramax-2 · 70/100
 
@@ -222,15 +251,9 @@
 - **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
 - **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
 
-### prothelis-area-pets · 70/100
+### petsafe-streamside-trinkbrunnen · 70/100
 
-- **WARNING · SPECS_THIN:** Nur 1 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
 - **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
 - **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
-
-### reolink-e1-zoom · 70/100
-
-- **WARNING · SPECS_THIN:** Nur 0 technische Daten hinterlegt. Mindestens vier kaufrelevante Spezifikationen pflegen.
-- **WARNING · STRENGTHS_THIN:** Nur 0 Stärken hinterlegt. Mindestens zwei belastbare Stärken ergänzen.
-- **WARNING · WEAKNESSES_MISSING:** Keine klare Schwäche hinterlegt. Mindestens eine reale Einschränkung ergänzen.
+- **WARNING · EVIDENCE_THIN:** Nur 1 Evidenzarten hinterlegt. Herstellerunterlagen, technische Dokumentation oder Vergleichsanalyse ergänzen.
 
