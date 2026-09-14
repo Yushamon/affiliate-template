@@ -1,0 +1,146 @@
+{
+  "researchDate": "2026-09-14",
+  "event": {
+    "name": "IFA Berlin 2026",
+    "dates": "2026-09-04 to 2026-09-08",
+    "pettechContext": "IFA Next 2026 explicitly included PetTech among focus areas; around 300 exhibitors were expected in IFA Next."
+  },
+  "products": [
+    {
+      "name": "Neakasa Riko",
+      "priority": "P1",
+      "ownPage": true,
+      "ifaStatus": "Innovation Award Honoree, Best in Smart Home",
+      "editorialAngle": "Kein klassischer Nassfutterautomat: on-demand Rehydrierung statt Lagerung fertigen Nassfutters."
+    },
+    {
+      "name": "Neakasa M9",
+      "priority": "P1",
+      "ownPage": true,
+      "ifaStatus": "IFA 2026 preview; launch announced 2026-10-09",
+      "editorialAngle": "Mechanische Sicherheitslogik / offener Reinigungsraum statt ausschließlich Sensorargumentation."
+    },
+    {
+      "name": "Litter-Robot 5",
+      "priority": "P1/P2",
+      "ownPage": "separate decision later",
+      "ifaStatus": "not treated as a new IFA-exclusive launch",
+      "editorialAngle": "Separate SKU from Litter-Robot 5 Pro; avoid duplicate entity confusion."
+    },
+    {
+      "name": "PurrSong LavvieTAG 2",
+      "priority": "P2",
+      "ownPage": false,
+      "ifaStatus": "featured by PurrSong at IFA 2026",
+      "known": {
+        "positioning": "fitness & location tracker",
+        "plannedLaunchPriceUSD": 89,
+        "release": "2026 / crowdfunding",
+        "weightG": 5,
+        "sizeMm": "22.5 x 22.5",
+        "activityPatterns": [
+          "sleeping",
+          "walking",
+          "running",
+          "zoomies",
+          "grooming"
+        ],
+        "location": "Samsung SmartThings Find"
+      },
+      "caution": "Do not describe SmartThings Find as classic GPS tracking. Exact battery runtime and Germany launch remain insufficiently documented."
+    },
+    {
+      "name": "PawSwing Neo",
+      "priority": "P2",
+      "ownPage": false,
+      "ifaStatus": "IFA marks product NEW",
+      "known": {
+        "batteryFree": true,
+        "catCapacity": "1-2 average-size cats",
+        "dimensionsIn": "20.4 x 17.7 x 18.5",
+        "weightLb": 11.02,
+        "materials": {
+          "panel": "ABS",
+          "cabinet": "PET",
+          "backPanel": "ABS"
+        },
+        "loadCapacityLb": 35,
+        "foodBowlMl": 450
+      },
+      "claimsToLabel": [
+        "up to 90% reduction/capture of loose fur",
+        "hairball reduction",
+        "100% safe",
+        "last a decade"
+      ]
+    },
+    {
+      "name": "WePaws Pet Smart Harness",
+      "priority": "P2",
+      "ownPage": false,
+      "ifaStatus": "IFA marks product NEW",
+      "known": "Company claims pet-specific LLM and applications around emotion recognition, health management, companionship, unattended care and training.",
+      "caution": "No concrete sensor list or independent validation surfaced. Use as example of high-claim/low-evidence AI pet tech."
+    },
+    {
+      "name": "PetSuper ecosystem",
+      "priority": "P2",
+      "ownPage": false,
+      "ifaStatus": "IFA 2026 debut",
+      "products": [
+        "LitterGo Smart Litter Box",
+        "DryGo Smart Drying Box",
+        "FeedView Smart Feeder",
+        "HydriGo Smart Water Fountain",
+        "ViGo AI Pet Camera"
+      ],
+      "angle": "Cross-device routine data across feeding, hydration, litter use, grooming and behavior.",
+      "caution": "PetSuperAi health-management framing is strategic/vendor positioning, not independent medical validation."
+    },
+    {
+      "name": "PETGUGU",
+      "priority": "P3",
+      "ownPage": false,
+      "ifaStatus": "IFA 2026 exhibitor",
+      "products": [
+        "Pet Identifier",
+        "Companion Robot",
+        "Smart Pet Food Dispenser",
+        "Waterfall Water Dispenser",
+        "Self-flushing Smart Cat Toilet"
+      ],
+      "angle": "Mention only if needed; do not frame self-flushing toilet as clearly new without provenance."
+    },
+    {
+      "name": "PETWANT",
+      "priority": "P3",
+      "ownPage": false,
+      "ifaStatus": "IFA 2026 exhibitor",
+      "featured": "Automatic Pet Feeder & Water Fountain",
+      "angle": "No strong verified novelty hook found; low editorial priority."
+    },
+    {
+      "name": "TIKPAWS",
+      "priority": "P3",
+      "ownPage": false,
+      "ifaStatus": "IFA Next 2026 exhibitor",
+      "portfolio": "smart litter boxes, feeders, fountains and toys",
+      "angle": "No concrete new product detail surfaced; low editorial priority."
+    }
+  ],
+  "sources": [
+    "https://www.ifa-berlin.com/press-releases/ifa-next-2026",
+    "https://www.ifa-berlin.com/de/innovation-awards",
+    "https://www.ifa-berlin.com/de/aussteller/purrsong",
+    "https://www.ifa-berlin.com/exhibitors/pawswing",
+    "https://www.ifa-berlin.com/exhibitors/wepaw-hangzhou-technology",
+    "https://www.ifa-berlin.com/de/aussteller/petsuper-smart-technology",
+    "https://www.ifa-berlin.com/exhibitors/petgugu-technology",
+    "https://www.ifa-berlin.com/exhibitors/petwant",
+    "https://www.ifa-berlin.com/exhibitors/tikpaws",
+    "https://purrsong-global.com/pages/lavvietag2",
+    "https://purrsong-global.com/blogs/meows-letter/what-s-different-about-the-all-new-lavvietag-2",
+    "https://pawswing.com/products/pawswing-neo-cat-self-grooming-house",
+    "https://www.globenewswire.com/news-release/2026/09/02/3354866/0/en/petsuper-to-showcase-its-evolution-toward-ai-powered-pet-health-management-at-ifa-2026.html"
+  ]
+}

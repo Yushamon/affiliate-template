@@ -1,0 +1,557 @@
+{
+  "batch": "PFOTENTECHNIK 35.1.1",
+  "title": "PRODUCT MEDIA RESOLUTION",
+  "researchedAt": "2026-09-11",
+  "scope": [
+    "Riko re-gate",
+    "Riko official affiliate media rights",
+    "LocoGPS public media permission"
+  ],
+  "previousReports": [
+    "reports/product-batches/35.1-riko-locogps.md",
+    "reports/product-batches/35.1-riko-locogps.json"
+  ],
+  "sources": [
+    {
+      "id": "riko-launch",
+      "url": "https://neakasa.com/blogs/news-and-events/neakasa-riko-ifa-2026-innovation-award",
+      "checkedAt": "2026-09-11",
+      "method": "web-read",
+      "finding": "Offizielle Ankündigung des Plattformstarts am 08.09.2026; kein DE-Lagernachweis."
+    },
+    {
+      "id": "riko-eu",
+      "url": "https://eu.neakasa.com/products/neakasa-riko-automatic-pet-feeder-for-wet-food",
+      "checkedAt": "2026-09-11",
+      "method": "direct-read",
+      "finding": "199,99 EUR; Vorbestellung, ungefährer Versandstart 21.09.; Deutschland auswählbar; Spezifikationskonflikte unverändert."
+    },
+    {
+      "id": "riko-global",
+      "url": "https://neakasa.com/products/neakasa-riko-smart-wet-food-feeder",
+      "checkedAt": "2026-09-11",
+      "method": "direct-read",
+      "finding": "EU ausdrücklich Pre-Order; Wareneingang Ende September erwartet, Versand erst danach."
+    },
+    {
+      "id": "riko-support",
+      "url": "https://neakasa.com/pages/support-center",
+      "checkedAt": "2026-09-11",
+      "method": "web-read",
+      "finding": "Offizielles Riko-Handbuch weiterhin verlinkt; URL identisch mit 35.1."
+    },
+    {
+      "id": "riko-manual",
+      "url": "https://cdn.shopify.com/s/files/1/0600/4736/0185/files/Neakasa_Riko_User_Manual.pdf?v=1787639299",
+      "checkedAt": "2026-09-11",
+      "method": "reused-35.1",
+      "finding": "In 35.1 heruntergeladen und relevante Tabellen visuell geprüft; in 35.1.1 kein erneuter Inhalts-/Versionsnachweis per Download."
+    },
+    {
+      "id": "neakasa-resource",
+      "url": "https://neakasa.com/pages/partner-deals-hub",
+      "checkedAt": "2026-09-11",
+      "method": "direct-read",
+      "finding": "Ausdrücklicher Promotionszweck für Affiliate-Partner; Ressourcenarten aufgeführt; konkreter Bilderordner verlinkt."
+    },
+    {
+      "id": "neakasa-affiliate",
+      "url": "https://neakasa.com/pages/affiliate-program",
+      "checkedAt": "2026-09-11",
+      "method": "direct-read",
+      "finding": "Programm verlangt Bewerbung/Freigabe durch Neakasa über Impact oder Awin; Websitebetreiber sind angesprochene Zielgruppe."
+    },
+    {
+      "id": "neakasa-terms",
+      "url": "https://neakasa.com/pages/terms-of-service",
+      "checkedAt": "2026-09-11",
+      "method": "web-read",
+      "finding": "Allgemeine Bedingungen enthalten keine pauschale Weiterveröffentlichungslizenz; gesonderte Partnerfreigabe bleibt relevant."
+    },
+    {
+      "id": "neakasa-folder",
+      "url": "https://drive.google.com/drive/folders/1Res10XM2U-LhwKfnq_WUmqNiXngPWOD7?usp=sharing",
+      "checkedAt": "2026-09-11",
+      "method": "web-read-metadata-unavailable",
+      "finding": "Vom Resource Center verlinkt; Webreader ohne inventarisierbare Liste, keine Bilddateien heruntergeladen."
+    },
+    {
+      "id": "loco-home",
+      "url": "https://locogps.de/",
+      "checkedAt": "2026-09-11",
+      "method": "reused-35.1",
+      "finding": "Website/Navigation in 35.1 geprüft; kein Nutzungsrecht belegt. Erneuter direkter Abruf in 35.1.1 vor Ausführung abgewiesen."
+    },
+    {
+      "id": "loco-product",
+      "url": "https://locogps.de/produkt/gps-tracker-fuer-hunde-l2/",
+      "checkedAt": "2026-09-11",
+      "method": "reused-35.1",
+      "finding": "Product Gate PASS übernommen; normale Shopabbildungen sind keine Medienfreigabe."
+    },
+    {
+      "id": "loco-provider",
+      "url": "https://locogps.de/impressum/",
+      "checkedAt": "2026-09-11",
+      "method": "reused-35.1",
+      "finding": "Anbieter/Kontakt Christian Niehoff – LocoGPS; info@locogps.de."
+    },
+    {
+      "id": "loco-terms",
+      "url": "https://locogps.de/agb/",
+      "checkedAt": "2026-09-11",
+      "method": "reused-35.1",
+      "finding": "Vertragstext in 35.1 geprüft; keine Medienlizenz für PfotenTechnik dokumentiert."
+    }
+  ],
+  "riko": {
+    "officiallyLaunched": true,
+    "launchDate": "2026-09-08",
+    "launchEvidence": "riko-launch",
+    "euOrderable": true,
+    "orderabilityQualifier": "Vorbestellung möglich; kein Nachweis sofortiger regulärer DE-Auslieferung.",
+    "germanySelectable": true,
+    "productGate": "WATCH",
+    "price": {
+      "current": 199.99,
+      "regular": 299.99,
+      "currency": "EUR",
+      "vatIncluded": null,
+      "vatNote": "Explizite DE-MwSt.-Angabe weiterhin nicht bestätigt. Shopify taxable=false ist kein Nachweis eines steuerfreien Endpreises.",
+      "shippingCostGermany": 0,
+      "shippingNote": "Kostenloser Deutschlandversand laut EU-Shop; kein Checkout abgeschlossen."
+    },
+    "delivery": {
+      "euShop": "Versandbeginn ungefähr 21.09.2026",
+      "globalShop": "EU-Wareneingang Ende September erwartet; Versand nach Wareneingang",
+      "concreteGuaranteedDeliveryDate": null,
+      "preorderNoticePresent": true,
+      "physicalStockConfirmed": false,
+      "stockNote": "EU-Produkt-JSON nennt available=true/InStock, sichtbarer Text ausdrücklich Preorder. Bestellbarkeit ist nicht Lagerbestand.",
+      "generalTransit": "3–5 Werktage laut allgemeinem EU-Versandhinweis; keine sofortige Riko-Lieferfrist."
+    },
+    "manual": {
+      "available": true,
+      "sourceId": "riko-manual",
+      "currentSupportLinkVerified": true,
+      "redownloaded": false,
+      "reused35_1": true
+    },
+    "specsConsistent": false,
+    "remainingConflicts": [
+      {
+        "field": "waterTank",
+        "eu": "2,2 L in Spezifikation; 2,4 L im Fließtext",
+        "global": "2,4 L"
+      },
+      {
+        "field": "battery",
+        "eu": "11,1 V / 2600 mAh",
+        "global": "10,8 V / 2500 mAh"
+      },
+      {
+        "field": "portionRange",
+        "eu": "1–20 g",
+        "global": "1–15 g"
+      },
+      {
+        "field": "precision",
+        "eu": "±0,1 g in Tabelle",
+        "global": "±1 g"
+      }
+    ],
+    "positioning": "Trocken gelagertes kompatibles Freeze-Dried-Futter mahlen und mit Wasser zum Fütterungszeitpunkt rekonstituieren; keine gekühlte Bevorratung fertigen Nassfutters wie beim PETLIBRO Polar.",
+    "affiliateResourceCenterFound": true,
+    "rights": {
+      "status": "MEDIA_RIGHTS_UNCLEAR",
+      "usageStatement": "Download ready-to-use marketing assets for your promotions.",
+      "usageSourceId": "neakasa-resource",
+      "intendedAudience": "Affiliate-Partner",
+      "intendedUse": "Affiliate-/Marketing-Promotions",
+      "websiteFitsAudienceType": true,
+      "approvedNeakasaPartnershipConfirmed": null,
+      "eligibilityEvidence": "Repository enthält Amazon-Verlinkung, keinen nachgewiesenen Impact-/Awin-Neakasa-Partnerstatus. Nutzerrückfrage bislang ohne konkrete Bestätigung.",
+      "publicUniversalLicenseFound": false,
+      "termsSourceId": "neakasa-terms",
+      "limitations": "Hub-Kampagne nennt US/CA; Geltung für konkrete Riko-Dateien und PfotenTechnik/DE nicht bestätigt. Kampagnenmarkt wird nicht als pauschales weltweites Nutzungsverbot interpretiert.",
+      "decision": "Promotionszweck belegt, Berechtigung für PfotenTechnik nicht hinreichend belegt; keine Originalbilder vor Rights PASS herunterladen."
+    },
+    "mediaGate": "BLOCKED",
+    "assetsReady": 0,
+    "assetsRequired": 6,
+    "assetInventory": [],
+    "assetInventoryStatus": "NOT_STARTED_RIGHTS_GATE",
+    "productIntegrated": false,
+    "gapResolved": false,
+    "productInventoryGap": "still-open"
+  },
+  "locogps": {
+    "productGate": "PASS",
+    "productGateBasis": "35.1 wiederverwendet; keine neue widersprechende Produktinformation gefunden, keine erneute Vollrecherche.",
+    "productReady": true,
+    "publicMediaPermissionFound": false,
+    "rights": {
+      "status": "MEDIA_RIGHTS_UNCLEAR",
+      "evidence": "Kein positives Nutzungsstatement in geprüften 35.1-Quellen; gezielte öffentliche 35.1.1-Suchen ohne Treffer für Presse/Medien/Bildrechte, Affiliate/Partnerprogramm/Händler und Nutzungsrechte/Bildnutzung/Downloads.",
+      "scopeLimit": "Ergänzender direkter Abruf von Homepage, Sitemap, AGB und Impressum in 35.1.1 wurde vor Ausführung abgewiesen. Negative Suche beweist nicht, dass weltweit keine Erlaubnis existiert."
+    },
+    "mediaGate": "BLOCKED",
+    "assetsReady": 0,
+    "assetsRequired": 6,
+    "productIntegrated": false,
+    "gapResolved": false,
+    "productInventoryGap": "still-open",
+    "permissionRequestRequired": true,
+    "statusLabels": [
+      "LOCOGPS PRODUCT READY",
+      "MEDIA RIGHTS BLOCKED",
+      "EXTERNAL PERMISSION REQUIRED"
+    ]
+  },
+  "permissionRequest": {
+    "recipient": "info@locogps.de",
+    "sent": false,
+    "text": "Betreff: Freigabe offizieller LocoGPS-L2-Produktbilder für pfotentechnik.de\n\nGuten Tag,\n\nwir möchten den LocoGPS L2 auf pfotentechnik.de redaktionell vorstellen und in passenden Produktvergleichen darstellen. Die Website enthält Affiliate-Verlinkungen.\n\nBitte bestätigen Sie uns schriftlich, ob wir Ihre offiziellen Bilder des aktuellen LocoGPS L2 hierfür veröffentlichen dürfen, einschließlich Nutzung als Hero, Thumbnail, Vergleichsbild und Produktgalerie sowie Zuschnitt, Größenanpassung, Canvas/Padding und WebP-Konvertierung. Das Produkt selbst bleibt unverändert.\n\nBitte stellen Sie uns dafür freigegebene Originaldateien oder einen offiziellen Download-Link bereit, möglichst Packshot, alternative Ansicht, Produktdetail und Anwendungsmotiv. Teilen Sie uns bitte auch erforderliche Bildnachweise sowie zeitliche, räumliche oder sonstige Nutzungsbeschränkungen mit und bestätigen Sie, dass die Freigabe die hierfür erforderlichen Rechte umfasst.\n\nVielen Dank\nPfotenTechnik Redaktion"
+  },
+  "media": {
+    "integratedFiles": [],
+    "roles": [
+      {
+        "product": "neakasa-riko",
+        "target": "hero.webp",
+        "status": "MISSING",
+        "source": "neakasa-resource",
+        "sourceMeaning": "Discovery page only; no selected or licensed original file.",
+        "exactSource": null,
+        "originalFilename": null,
+        "sourceType": null,
+        "rights": "MEDIA_RIGHTS_UNCLEAR",
+        "rightsBasis": null,
+        "downloadedAt": null,
+        "transformation": null,
+        "originalDimensions": null,
+        "finalDimensions": null,
+        "exactProductIdentityVerified": false,
+        "validation": "NOT_APPLICABLE_NO_FILE"
+      },
+      {
+        "product": "neakasa-riko",
+        "target": "thumbnail.webp",
+        "status": "MISSING",
+        "source": "neakasa-resource",
+        "sourceMeaning": "Discovery page only; no selected or licensed original file.",
+        "exactSource": null,
+        "originalFilename": null,
+        "sourceType": null,
+        "rights": "MEDIA_RIGHTS_UNCLEAR",
+        "rightsBasis": null,
+        "downloadedAt": null,
+        "transformation": null,
+        "originalDimensions": null,
+        "finalDimensions": null,
+        "exactProductIdentityVerified": false,
+        "validation": "NOT_APPLICABLE_NO_FILE"
+      },
+      {
+        "product": "neakasa-riko",
+        "target": "comparison.webp",
+        "status": "MISSING",
+        "source": "neakasa-resource",
+        "sourceMeaning": "Discovery page only; no selected or licensed original file.",
+        "exactSource": null,
+        "originalFilename": null,
+        "sourceType": null,
+        "rights": "MEDIA_RIGHTS_UNCLEAR",
+        "rightsBasis": null,
+        "downloadedAt": null,
+        "transformation": null,
+        "originalDimensions": null,
+        "finalDimensions": null,
+        "exactProductIdentityVerified": false,
+        "validation": "NOT_APPLICABLE_NO_FILE"
+      },
+      {
+        "product": "neakasa-riko",
+        "target": "gallery-1.webp",
+        "status": "MISSING",
+        "source": "neakasa-resource",
+        "sourceMeaning": "Discovery page only; no selected or licensed original file.",
+        "exactSource": null,
+        "originalFilename": null,
+        "sourceType": null,
+        "rights": "MEDIA_RIGHTS_UNCLEAR",
+        "rightsBasis": null,
+        "downloadedAt": null,
+        "transformation": null,
+        "originalDimensions": null,
+        "finalDimensions": null,
+        "exactProductIdentityVerified": false,
+        "validation": "NOT_APPLICABLE_NO_FILE"
+      },
+      {
+        "product": "neakasa-riko",
+        "target": "gallery-2.webp",
+        "status": "MISSING",
+        "source": "neakasa-resource",
+        "sourceMeaning": "Discovery page only; no selected or licensed original file.",
+        "exactSource": null,
+        "originalFilename": null,
+        "sourceType": null,
+        "rights": "MEDIA_RIGHTS_UNCLEAR",
+        "rightsBasis": null,
+        "downloadedAt": null,
+        "transformation": null,
+        "originalDimensions": null,
+        "finalDimensions": null,
+        "exactProductIdentityVerified": false,
+        "validation": "NOT_APPLICABLE_NO_FILE"
+      },
+      {
+        "product": "neakasa-riko",
+        "target": "gallery-3.webp",
+        "status": "MISSING",
+        "source": "neakasa-resource",
+        "sourceMeaning": "Discovery page only; no selected or licensed original file.",
+        "exactSource": null,
+        "originalFilename": null,
+        "sourceType": null,
+        "rights": "MEDIA_RIGHTS_UNCLEAR",
+        "rightsBasis": null,
+        "downloadedAt": null,
+        "transformation": null,
+        "originalDimensions": null,
+        "finalDimensions": null,
+        "exactProductIdentityVerified": false,
+        "validation": "NOT_APPLICABLE_NO_FILE"
+      },
+      {
+        "product": "locogps-l2",
+        "target": "hero.webp",
+        "status": "MISSING",
+        "source": "loco-product",
+        "sourceMeaning": "Discovery page only; no selected or licensed original file.",
+        "exactSource": null,
+        "originalFilename": null,
+        "sourceType": null,
+        "rights": "MEDIA_RIGHTS_UNCLEAR",
+        "rightsBasis": null,
+        "downloadedAt": null,
+        "transformation": null,
+        "originalDimensions": null,
+        "finalDimensions": null,
+        "exactProductIdentityVerified": false,
+        "validation": "NOT_APPLICABLE_NO_FILE"
+      },
+      {
+        "product": "locogps-l2",
+        "target": "thumbnail.webp",
+        "status": "MISSING",
+        "source": "loco-product",
+        "sourceMeaning": "Discovery page only; no selected or licensed original file.",
+        "exactSource": null,
+        "originalFilename": null,
+        "sourceType": null,
+        "rights": "MEDIA_RIGHTS_UNCLEAR",
+        "rightsBasis": null,
+        "downloadedAt": null,
+        "transformation": null,
+        "originalDimensions": null,
+        "finalDimensions": null,
+        "exactProductIdentityVerified": false,
+        "validation": "NOT_APPLICABLE_NO_FILE"
+      },
+      {
+        "product": "locogps-l2",
+        "target": "comparison.webp",
+        "status": "MISSING",
+        "source": "loco-product",
+        "sourceMeaning": "Discovery page only; no selected or licensed original file.",
+        "exactSource": null,
+        "originalFilename": null,
+        "sourceType": null,
+        "rights": "MEDIA_RIGHTS_UNCLEAR",
+        "rightsBasis": null,
+        "downloadedAt": null,
+        "transformation": null,
+        "originalDimensions": null,
+        "finalDimensions": null,
+        "exactProductIdentityVerified": false,
+        "validation": "NOT_APPLICABLE_NO_FILE"
+      },
+      {
+        "product": "locogps-l2",
+        "target": "gallery-1.webp",
+        "status": "MISSING",
+        "source": "loco-product",
+        "sourceMeaning": "Discovery page only; no selected or licensed original file.",
+        "exactSource": null,
+        "originalFilename": null,
+        "sourceType": null,
+        "rights": "MEDIA_RIGHTS_UNCLEAR",
+        "rightsBasis": null,
+        "downloadedAt": null,
+        "transformation": null,
+        "originalDimensions": null,
+        "finalDimensions": null,
+        "exactProductIdentityVerified": false,
+        "validation": "NOT_APPLICABLE_NO_FILE"
+      },
+      {
+        "product": "locogps-l2",
+        "target": "gallery-2.webp",
+        "status": "MISSING",
+        "source": "loco-product",
+        "sourceMeaning": "Discovery page only; no selected or licensed original file.",
+        "exactSource": null,
+        "originalFilename": null,
+        "sourceType": null,
+        "rights": "MEDIA_RIGHTS_UNCLEAR",
+        "rightsBasis": null,
+        "downloadedAt": null,
+        "transformation": null,
+        "originalDimensions": null,
+        "finalDimensions": null,
+        "exactProductIdentityVerified": false,
+        "validation": "NOT_APPLICABLE_NO_FILE"
+      },
+      {
+        "product": "locogps-l2",
+        "target": "gallery-3.webp",
+        "status": "MISSING",
+        "source": "loco-product",
+        "sourceMeaning": "Discovery page only; no selected or licensed original file.",
+        "exactSource": null,
+        "originalFilename": null,
+        "sourceType": null,
+        "rights": "MEDIA_RIGHTS_UNCLEAR",
+        "rightsBasis": null,
+        "downloadedAt": null,
+        "transformation": null,
+        "originalDimensions": null,
+        "finalDimensions": null,
+        "exactProductIdentityVerified": false,
+        "validation": "NOT_APPLICABLE_NO_FILE"
+      }
+    ],
+    "originalImagesDownloaded": 0,
+    "generativeImagesCreated": 0,
+    "derivativesCreated": 0,
+    "inventoryDimensionsFormatsTransparencyViewsDuplicates": "NOT_APPLICABLE_NO_AUTHORIZED_ORIGINALS"
+  },
+  "hygiene": {
+    "patchBackupsCommitted": false,
+    "patchBackupsTrackedFiles": 0,
+    "reason": "Die Hilfsdateien dieses und des vorigen Batches sind ignoriert und nicht getrackt. Historische getrackte Backups anderer Batches bleiben unver?ndert.",
+    "inspectedFiles": [
+      ".patch-backups/35.1/check-report.mjs",
+      ".patch-backups/35.1/final-data.json",
+      ".patch-backups/35.1/finalize.mjs"
+    ],
+    "previousReportsPreserved": true,
+    "previousReportSha256": {
+      "reports/product-batches/35.1-riko-locogps.md": "2e053532a389d1fbd5ef8b09c5f61b046ce18042512b169a9ccac842e2aa2a67",
+      "reports/product-batches/35.1-riko-locogps.json": "645f912071e3c6046da1a269aaa83808f47b2ef000d2660e0009e1f8b13b8b56"
+    },
+    "initialStatus": "Nur die beiden untracked 35.1-Reports aus dem vorigen Auftrag; keine getrackten Änderungen.",
+    "unrelatedChanges": false,
+    "feelneedyExistingIssueUnchanged": true,
+    "commitCreated": false,
+    "patchBackupsTrackedFilesScope": [
+      ".patch-backups/35.1/",
+      ".patch-backups/35.1.1/"
+    ],
+    "legacyTrackedBackupsUnchanged": true
+  },
+  "accessLimitation": {
+    "action": "Weitere direkte Webabrufe: LocoGPS Homepage/robots/sitemap/AGB/Impressum und Neakasa EU IP-Policy",
+    "executed": false,
+    "reason": "Automatic approval review rejected the action because of an exhausted usage limit.",
+    "safetyAssessment": "Keine Ablehnung wegen fraglicher Bildinhalte oder unzulässiger Herstellerdomain; zusätzliche Quellenprüfung konnte nicht ausgeführt werden.",
+    "bypassAttempted": false
+  },
+  "cluster": {
+    "productionChanges": false,
+    "newUrls": [],
+    "newEditorialIntent": false,
+    "newHub": false,
+    "newGuide": false,
+    "newComparison": false
+  },
+  "validation": {
+    "production": [
+      {
+        "name": "Product Audit",
+        "status": "NOT_RUN_NO_PRODUCTION_CHANGE",
+        "note": "35.1-Ergebnisse bleiben historischer Referenzstand; kein neuer PASS für 35.1.1 behauptet."
+      },
+      {
+        "name": "Evidence Audit",
+        "status": "NOT_RUN_NO_PRODUCTION_CHANGE",
+        "note": "35.1-Ergebnisse bleiben historischer Referenzstand; kein neuer PASS für 35.1.1 behauptet."
+      },
+      {
+        "name": "Decision Audit",
+        "status": "NOT_RUN_NO_PRODUCTION_CHANGE",
+        "note": "35.1-Ergebnisse bleiben historischer Referenzstand; kein neuer PASS für 35.1.1 behauptet."
+      },
+      {
+        "name": "Subscription",
+        "status": "NOT_RUN_NO_PRODUCTION_CHANGE",
+        "note": "35.1-Ergebnisse bleiben historischer Referenzstand; kein neuer PASS für 35.1.1 behauptet."
+      },
+      {
+        "name": "Comparison Data",
+        "status": "NOT_RUN_NO_PRODUCTION_CHANGE",
+        "note": "35.1-Ergebnisse bleiben historischer Referenzstand; kein neuer PASS für 35.1.1 behauptet."
+      },
+      {
+        "name": "Manufacturer",
+        "status": "NOT_RUN_NO_PRODUCTION_CHANGE",
+        "note": "35.1-Ergebnisse bleiben historischer Referenzstand; kein neuer PASS für 35.1.1 behauptet."
+      },
+      {
+        "name": "Internal Links strict",
+        "status": "NOT_RUN_NO_PRODUCTION_CHANGE",
+        "note": "35.1-Ergebnisse bleiben historischer Referenzstand; kein neuer PASS für 35.1.1 behauptet."
+      },
+      {
+        "name": "Schema",
+        "status": "NOT_RUN_NO_PRODUCTION_CHANGE",
+        "note": "35.1-Ergebnisse bleiben historischer Referenzstand; kein neuer PASS für 35.1.1 behauptet."
+      },
+      {
+        "name": "Search/SEO production audit",
+        "status": "NOT_RUN_NO_PRODUCTION_CHANGE",
+        "note": "35.1-Ergebnisse bleiben historischer Referenzstand; kein neuer PASS für 35.1.1 behauptet."
+      },
+      {
+        "name": "Media references production audit",
+        "status": "NOT_RUN_NO_PRODUCTION_CHANGE",
+        "note": "35.1-Ergebnisse bleiben historischer Referenzstand; kein neuer PASS für 35.1.1 behauptet."
+      },
+      {
+        "name": "Alt text production audit",
+        "status": "NOT_RUN_NO_PRODUCTION_CHANGE",
+        "note": "35.1-Ergebnisse bleiben historischer Referenzstand; kein neuer PASS für 35.1.1 behauptet."
+      },
+      {
+        "name": "Build",
+        "status": "NOT_RUN_NO_PRODUCTION_CHANGE",
+        "note": "35.1-Ergebnisse bleiben historischer Referenzstand; kein neuer PASS für 35.1.1 behauptet."
+      }
+    ],
+    "mediaFiles": {
+      "status": "NOT_APPLICABLE",
+      "reason": "Keine freigegebenen Originale; kein 6/6-, WebP-, Auflösungs-, Duplikat-, Varianten- oder Alt-Text-PASS behauptet."
+    },
+    "visualQA": {
+      "status": "NOT_APPLICABLE",
+      "screenshots": 0,
+      "reason": "Keine neue öffentliche Produktseite."
+    },
+    "reportIntegrity": "PASS",
+    "gitDiffCheck": "PASS"
+  },
+  "next": "EXTERNAL MEDIA PERMISSION",
+  "nextReason": "Bildfreigabe konkret für PfotenTechnik und Originaldateien belegen; die LocoGPS-Anfrage liegt versandfertig vor. Rikos WATCH-Status bleibt unabhängig davon bestehen."
+}

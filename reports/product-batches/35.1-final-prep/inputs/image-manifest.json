@@ -1,0 +1,47 @@
+{
+  "researchDate": "2026-09-14",
+  "rules": [
+    "No image is production-referenced until file exists.",
+    "No Amazon or Google image copying.",
+    "Use generated, owned, or explicitly permitted official press/manufacturer assets.",
+    "Product identity must be visually checked against current official manufacturer imagery before generation."
+  ],
+  "products": {
+    "neakasa-riko": {
+      "folder": "apps/pfotentechnik/src/assets/images/products/neakasa-riko/",
+      "required": {
+        "hero.webp": "clean exact current product view",
+        "thumbnail.webp": "simple product view",
+        "comparison.webp": "neutral comparison-friendly product angle",
+        "gallery-1.webp": "cat realistically using Riko",
+        "gallery-2.webp": "food + water / preparation mechanism",
+        "gallery-3.webp": "Riko in realistic home setting"
+      }
+    },
+    "neakasa-m9": {
+      "folder": "apps/pfotentechnik/src/assets/images/products/neakasa-m9/",
+      "required": {
+        "hero.webp": "exact current M9 full product view",
+        "thumbnail.webp": "simple product view",
+        "comparison.webp": "neutral side/size view",
+        "gallery-1.webp": "cat inside/open-top use",
+        "gallery-2.webp": "TILT-SAFE cleaning/rotation concept",
+        "gallery-3.webp": "M9 in realistic home setting"
+      }
+    }
+  },
+  "guide": {
+    "folder": "apps/pfotentechnik/src/assets/images/guides/ifa-2026-haustiertechnik/",
+    "recommendedNotMandatoryAll": {
+      "hero.webp": "editorial IFA PetTech hero",
+      "neakasa-riko.webp": "Riko at/around IFA editorial context",
+      "neakasa-m9.webp": "M9 at/around IFA editorial context",
+      "litter-robot-5.webp": "LR5 if rights/asset available",
+      "lavvietag-2.webp": "LavvieTAG2 if rights/asset available",
+      "petsuper.webp": "ecosystem / booth asset if rights available",
+      "pawswing-neo.webp": "PawSwing Neo if rights/asset available",
+      "wepaws-smart-harness.webp": "Smart Harness if rights/asset available"
+    },
+    "note": "For the guide, do not require all eight assets before publication. A strong hero plus 3-5 legally usable product visuals is likely sufficient."
+  }
+}

@@ -1,0 +1,1061 @@
+{
+  "batch": "PFOTENTECHNIK 35.1",
+  "title": "RIKO + LOCOGPS PRODUCT BATCH",
+  "researchedAt": "2026-09-11",
+  "repository": "Yushamon/affiliate-template",
+  "app": "apps/pfotentechnik",
+  "outcome": "TARGETED FOLLOW-UP",
+  "productionIntegrationComplete": false,
+  "preflight": {
+    "initialGitStatus": "clean",
+    "productCount": 102,
+    "candidateProductsPresent": false,
+    "neakasaManufacturerPresent": true,
+    "locogpsManufacturerPresent": false,
+    "previousReports": [
+      "reports/product-data-gap/34.9-product-data-gap.md",
+      "reports/product-batches/34.10-flappie.md",
+      "apps/pfotentechnik/reports/subscription-costs/34.7-final-review.md"
+    ],
+    "weeklyResearchSnapshot": "Kein Riko-/LocoGPS-Wochen-Snapshot in den durchsuchten Reports gefunden; Kandidaten aus Nutzerauftrag, aktuelle Primärrecherche separat dokumentiert.",
+    "architectureChange": false,
+    "subscriptionFreezeRespected": true
+  },
+  "sources": [
+    {
+      "id": "riko-eu",
+      "title": "Neakasa EU: Riko Standard Grey",
+      "url": "https://eu.neakasa.com/products/neakasa-riko-automatic-pet-feeder-for-wet-food",
+      "sourceType": "officialStore",
+      "accessedAt": "2026-09-11",
+      "scope": "Preorder, Preis, Versand; widersprüchliche Spezifikationen. Direktabruf bestätigt 199,99 EUR; älterer Webcache zeigte 179,99 EUR."
+    },
+    {
+      "id": "riko-us",
+      "title": "Neakasa: Riko Produkt/FAQ",
+      "url": "https://neakasa.com/products/neakasa-riko-smart-wet-food-feeder",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "Funktionsprinzip, Paketinhalt, Akkuoption, US-Spezifikationen; nicht auf EU-Variante übertragen."
+    },
+    {
+      "id": "riko-manual",
+      "title": "Neakasa Riko User Manual, Modell PS0300",
+      "url": "https://cdn.shopify.com/s/files/1/0600/4736/0185/files/Neakasa_Riko_User_Manual.pdf?v=1787639299",
+      "sourceType": "manual",
+      "accessedAt": "2026-09-11",
+      "scope": "Offiziell verlinkt über Support Center; 19 PDF-Seiten. Bedienung, Fehler, Wartung; Tabellen PDF-Seiten 7/14/15/16 visuell geprüft."
+    },
+    {
+      "id": "riko-support",
+      "title": "Neakasa Support Center",
+      "url": "https://neakasa.com/pages/support-center",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "Offizielle Herkunft des Handbuchs."
+    },
+    {
+      "id": "riko-explainer",
+      "title": "Neakasa EU: Riko Funktionsbeschreibung",
+      "url": "https://eu.neakasa.com/blogs/all/neakasa-riko-review",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "Herstellereigener Artikel, kein unabhängiger Review; Rekonstitution mit Wasser ohne Heizfunktion."
+    },
+    {
+      "id": "neakasa-news",
+      "title": "Neakasa IFA-Mitteilung",
+      "url": "https://neakasa.com/blogs/news-and-events/neakasa-riko-ifa-2026-innovation-award",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "Riko-Plattformlaunch 08.09.; M9 angekündigt für 09.10.2026. Launch ist kein Nachweis regulärer DE-Auslieferung."
+    },
+    {
+      "id": "neakasa-media",
+      "title": "Neakasa Affiliate Resource Center",
+      "url": "https://neakasa.com/pages/partner-deals-hub",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "Offiziell bereitgestellte Marketingressourcen; Kampagne US/CA. Kein Nachweis einer PfotenTechnik-Partnerschaft."
+    },
+    {
+      "id": "neakasa-image-folder",
+      "title": "Vom Hersteller verlinkter Bilderordner",
+      "url": "https://drive.google.com/drive/folders/1Res10XM2U-LhwKfnq_WUmqNiXngPWOD7?usp=sharing",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "Webreader liefert keine inventarisierbare Dateiliste; keine produktspezifischen Originale übernommen."
+    },
+    {
+      "id": "loco-product",
+      "title": "LocoGPS L2 Produktseite",
+      "url": "https://locogps.de/produkt/gps-tracker-fuer-hunde-l2/",
+      "sourceType": "officialStore",
+      "accessedAt": "2026-09-11",
+      "scope": "Identität, Preis, Lieferzeit, Hardware; aktuell Kauf-CTA zu Amazon, kein Affiliate-Link übernommen."
+    },
+    {
+      "id": "loco-home",
+      "title": "LocoGPS Tarifübersicht und FAQ",
+      "url": "https://locogps.de/",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "Drei Laufzeiten mit gleichem Funktionsumfang; Preise und Bedingung des Akku-Maximums."
+    },
+    {
+      "id": "loco-provider",
+      "title": "LocoGPS Impressum",
+      "url": "https://locogps.de/impressum/",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "Anbieter Christian Niehoff – LocoGPS, Vreden. Physischer OEM nicht ausgewiesen."
+    },
+    {
+      "id": "loco-terms",
+      "title": "LocoGPS AGB, Stand August 2026",
+      "url": "https://locogps.de/agb/",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "§§4/6/7: Probezeit, Vorauszahlung, Verlängerung; §§8/11: Ausfälle und Leistungsgrenzen. Direktabruf erfolgreich."
+    },
+    {
+      "id": "loco-shipping",
+      "title": "LocoGPS Versandarten",
+      "url": "https://locogps.de/versandarten/",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "Deutschland: DHL, 1–3 Werktage nach Versand; keine belastbare Versandkostenangabe."
+    },
+    {
+      "id": "loco-help",
+      "title": "LocoGPS Hilfecenter",
+      "url": "https://locogps.de/helpcenter/",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "Aktive Supportdokumentation; kein öffentliches L2-PDF-Handbuch gefunden."
+    },
+    {
+      "id": "loco-renewal",
+      "title": "LocoGPS Abo-Laufzeit verlängern",
+      "url": "https://locogps.de/helpcenter/abonnements/abo-laufzeit-verlaengern/",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "Erstlaufzeit verlängert sich nicht automatisch als Jahrestarif; Fortsetzung monatlich."
+    },
+    {
+      "id": "loco-cancel",
+      "title": "LocoGPS Abonnement verwalten und kündigen",
+      "url": "https://locogps.de/helpcenter/abonnements/abonnement-verwalten-kuendigen/",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "Kündigung, Tarifwechsel, Zahlungsfehler, Deaktivierung nach Ablauf."
+    },
+    {
+      "id": "loco-live",
+      "title": "LocoGPS Live-Modus aktivieren",
+      "url": "https://locogps.de/helpcenter/hauptfunktionen-ortungsportal/live-modus-aktivieren/",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "5-Sekunden-Intervall statt 3 Sekunden im Shop; drei Minuten Laufzeit."
+    },
+    {
+      "id": "loco-faq",
+      "title": "LocoGPS technische FAQ",
+      "url": "https://locogps.de/helpcenter/faq/haeufig-gestellte-fragen/",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "GPS/Galileo/GLONASS; Mobilfunk/SIM; USB 5 V, App und Browser; Bluetooth-Suche nur App."
+    },
+    {
+      "id": "loco-connectivity",
+      "title": "LocoGPS Verbindungsprobleme",
+      "url": "https://locogps.de/helpcenter/fehlerbehebung/verbindungsprobleme-beheben/",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "Onlinepflicht für Live-/Licht-/Tonbefehle; viele Befehle beim nächsten Kontakt. LV2-Sonderfunktionen nicht auf L2 übertragen."
+    },
+    {
+      "id": "loco-position",
+      "title": "LocoGPS fehlende Kartenposition",
+      "url": "https://locogps.de/helpcenter/fehlerbehebung/geraet-erscheint-nicht-auf-der-karte/",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "Akku, Mobilfunk, Satellitensignal, aktives Abo als Voraussetzungen."
+    },
+    {
+      "id": "loco-history",
+      "title": "LocoGPS Routenhistorie",
+      "url": "https://locogps.de/helpcenter/erweiterte-funktionen/routenhistorie-wiedergabe/",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "Routenwiedergabe und KML-Export."
+    },
+    {
+      "id": "loco-sleep",
+      "title": "LocoGPS Tiefschlaf",
+      "url": "https://locogps.de/helpcenter/hauptfunktionen-ortungsportal/tiefschlaf-modus/",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "Explizit LV2; L2/LV2-Zuordnung ungeklärt. Kein L2-Tiefschlafclaim."
+    },
+    {
+      "id": "loco-android",
+      "title": "LocoGPS Android-App",
+      "url": "https://play.google.com/store/apps/details?id=de.locogps.manager",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "Öffentliches Entwicklerlisting vorhanden; älterer 15-Tage-Akkuclaim widerspricht aktuellem Shopmaximum."
+    },
+    {
+      "id": "loco-ios",
+      "title": "LocoGPS iOS-App",
+      "url": "https://apps.apple.com/de/app/locogps/id6739151619",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "Vom Hersteller verlinkt; unabhängiger Live-Abruf des Listings nicht erfolgreich. Keine Installation getestet."
+    },
+    {
+      "id": "pawsentry",
+      "title": "PawSentry 5 Pro",
+      "url": "https://pawsentry.com/",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "Vorbestellung; Erstversand Dezember 2026 angekündigt, keine reale Auslieferung belegt."
+    },
+    {
+      "id": "petsuper",
+      "title": "PetSuper Herstellerangebot",
+      "url": "https://www.petsupersmart.com/",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "B2B-Produkte und EU-Logistikangebot; Preise auf Anfrage, kein belegtes reguläres DE-Endkundenangebot."
+    },
+    {
+      "id": "petsuper-products",
+      "title": "PetSuper Produktverweise",
+      "url": "https://www.petsupersmart.com/automatic-pet-feeder-app-product/",
+      "sourceType": "manufacturer",
+      "accessedAt": "2026-09-11",
+      "scope": "3-/5-L-App-Feeder und Kameramodelle; kein belastbarer DE-Preis oder modellgenaues Manual gefunden."
+    }
+  ],
+  "products": [
+    {
+      "slug": "neakasa-riko",
+      "name": "Neakasa Riko",
+      "model": "PS0300; EU-Shopvariante Riko Standard - Grey",
+      "manufacturer": "Neakasa (Genhigh)",
+      "productGate": "WATCH_PREORDER_CANDIDATE",
+      "marketStatus": "EU preorder",
+      "germanyAvailable": "Vorbestellbar; reguläre Auslieferung nicht belegt",
+      "price": {
+        "current": 199.99,
+        "regular": 299.99,
+        "currency": "EUR",
+        "vatIncluded": null,
+        "shipping": 0,
+        "sourceId": "riko-eu",
+        "note": "Direktabruf; explizite MwSt.-Bestätigung für DE fehlt. Kein verifizierter Checkout-Endpreis."
+      },
+      "delivery": {
+        "expectedStart": "2026-09-21",
+        "binding": false,
+        "transit": "Allgemein 3–5 Werktage; gilt nicht als sofortige Lieferzeit der Vorbestellung"
+      },
+      "role": "Trocken gelagertes kompatibles Futter mahlen und unmittelbar vor der Mahlzeit rehydrieren; keine gekühlte Vorratshaltung fertigen Nassfutters.",
+      "system": {
+        "food": "Kompatibles Trockenfutter, vorzugsweise gefriergetrocknet; kein fertiges Nassfutter und keine pauschale Freigabe jeder Krokette.",
+        "water": "Separater Tank, Rekonstitution ohne Heizfunktion.",
+        "ratio": "EU: Wasser:Futter 1:1 bis 5:1; andere Herstellertexte drehen Verhältnis um: genaue Skalenrichtung ungeklärt.",
+        "foodBinLiters": 3,
+        "foodBinApproxGrams": 500,
+        "waterTankLiters": null,
+        "waterTankNote": "Manual und Fließtext 2,4 L; EU-Spezifikation 2,2 L.",
+        "portionsGrams": null,
+        "portionNote": "EU 1–20 g; US-Spezifikation/IFA 1–15 g.",
+        "mealsPerDay": null,
+        "mealsNote": "Hersteller nennt sowohl bis zu 20 als auch 20+; kein eindeutiges Maximum.",
+        "precisionGrams": null,
+        "precisionNote": "EU-Spezifikation ±0,1 g; EU-Feature/US ±1 g.",
+        "foodContactMaterial": "Edelstahlnäpfe; Kunststoffangaben ABS/PP versus ABS/PC widersprüchlich.",
+        "app": "Neakasa; Zeitplan, Verbrauchsprotokoll, Warnungen, Zusatzfütterung.",
+        "wifi": "2,4 GHz; BLE für Einrichtung; kein 5 GHz.",
+        "power": "12 V / 18 W laut Manual; optionaler Akku. Akkuwerte 10,8 V/2500 mAh versus 11,1 V/2600 mAh ungeklärt.",
+        "manualFeed": "Doppelklick: starten/fortsetzen; Einfachklick: pausieren."
+      },
+      "failureChecks": [
+        {
+          "scenario": "power-outage",
+          "status": "documented-conditional",
+          "behavior": "Mit optionalem geladenem Akku automatische Umschaltung; ohne Akku keine Überbrückung belegt.",
+          "sourceId": "riko-manual"
+        },
+        {
+          "scenario": "wifi-outage",
+          "status": "partial",
+          "behavior": "Fernbefehle/Synchronisation können ausfallen; lokaler Zeitplan unknown.",
+          "sourceId": "riko-manual"
+        },
+        {
+          "scenario": "water-empty",
+          "status": "documented",
+          "behavior": "Fütterung nicht verfügbar.",
+          "sourceId": "riko-manual"
+        },
+        {
+          "scenario": "water-blocked",
+          "status": "partial",
+          "behavior": "Düsenblockade angezeigt; Düse prüfen; Fehlermahlzeit unknown.",
+          "sourceId": "riko-manual"
+        },
+        {
+          "scenario": "grinder-blocked",
+          "status": "partial",
+          "behavior": "Mahlwerkblockade E011; Rückstände ausbürsten; automatischer Wiederanlauf unknown.",
+          "sourceId": "riko-manual"
+        },
+        {
+          "scenario": "food-empty",
+          "status": "documented",
+          "behavior": "Fütterung nicht verfügbar.",
+          "sourceId": "riko-manual"
+        },
+        {
+          "scenario": "food-clumped",
+          "status": "unknown",
+          "behavior": "Kein eigener belastbarer Ablauf für Verklumpung; nicht mit E011 gleichsetzen.",
+          "sourceId": null
+        },
+        {
+          "scenario": "dosing-error",
+          "status": "partial",
+          "behavior": "Wiegefehler: Napfrand reinigen, Weighing Reset; Dosisnachholung unknown.",
+          "sourceId": "riko-manual"
+        },
+        {
+          "scenario": "cleaning-missed",
+          "status": "partial",
+          "behavior": "Bei aktivierter Restefutter-Grenze pausiert nächste Fütterung; keine pauschale Reinigungssperre.",
+          "sourceId": "riko-manual"
+        },
+        {
+          "scenario": "scheduled-meal-on-error",
+          "status": "partial",
+          "behavior": "Leere Vorräte verhindern Fütterung; weitere Fehlerfälle unknown.",
+          "sourceId": "riko-manual"
+        },
+        {
+          "scenario": "recovery",
+          "status": "unknown",
+          "behavior": "Nachholen verpasster Mahlzeiten und persistente Zeitpläne nach Totalausfall nicht belegt.",
+          "sourceId": null
+        }
+      ],
+      "consumables": {
+        "desiccant": "Einmalartikel; 30–60 Tage bzw. Farbwechsel.",
+        "filter": "Monatlich reinigen; Ersatzintervall/-preis unknown.",
+        "cleaner": "Wassersystem alle 4–6 Monate laut Manual.",
+        "replacementParts": "Kein belastbarer DE-Preis recherchiert.",
+        "foodLockIn": "Kein exklusiver Futteranbieter belegt; technische Kompatibilität erforderlich.",
+        "digitalSubscription": "unknown; kein belastbares Pflichtabo oder Preis belegt; keine erfundene Nullkostenangabe."
+      },
+      "evidenceStatus": "partial; Primärdaten plus dokumentierte Konflikte; kein eigener Praxistest",
+      "productPageCreated": false,
+      "productInventoryGap": "still-open",
+      "productGapResolved": false,
+      "newEditorialIntent": false,
+      "mediaGate": "BLOCKED",
+      "sourceIds": [
+        "riko-eu",
+        "riko-us",
+        "riko-manual",
+        "riko-explainer",
+        "neakasa-news"
+      ]
+    },
+    {
+      "slug": "locogps-l2",
+      "name": "LocoGPS L2",
+      "model": "LocoGPS-L2",
+      "manufacturer": "LocoGPS; Anbieter Christian Niehoff, Vreden; Hardware-OEM unknown",
+      "productGate": "PASS",
+      "publicationGate": "BLOCKED_MEDIA",
+      "marketStatus": "Aktuelles Serienangebot",
+      "germanyAvailable": true,
+      "price": {
+        "current": 49,
+        "currency": "EUR",
+        "vatIncluded": true,
+        "vatRate": 19,
+        "shipping": null,
+        "sourceId": "loco-product",
+        "note": "Offizielle Produktseite mit externem Amazon-Kauf-CTA; kein Kauf und keine Affiliate-Anbindung."
+      },
+      "delivery": {
+        "advertised": "1–3 Tage",
+        "shippingPolicy": "DHL, 1–3 Werktage nach Versand",
+        "sourceIds": [
+          "loco-product",
+          "loco-shipping"
+        ]
+      },
+      "role": "Mobilfunk-Hundetracker mit einheitlichem Funktionsumfang über alle Abolaufzeiten.",
+      "specs": {
+        "weightGrams": 32,
+        "dimensionsMm": [
+          65,
+          37.6,
+          19
+        ],
+        "batteryMah": 700,
+        "batteryMaxDays": 10,
+        "batteryCondition": "Herstellermaximum mit WiFi-Energiesparzonen; abhängig von Ortungsintervall und Nutzungsanteil unterwegs.",
+        "batteryConflict": "Älteres App-Listing nennt 15 Tage; nicht als L2-Maximum übernehmen.",
+        "cellular": "4G/LTE mit integrierter SIM",
+        "gnss": [
+          "GPS",
+          "Galileo",
+          "GLONASS"
+        ],
+        "wifi": true,
+        "bluetooth": "BLE",
+        "ipRating": "IP67",
+        "liveTracking": true,
+        "liveIntervalSeconds": null,
+        "liveIntervalConflict": "Produktseite 3 s; aktueller Support 5 s.",
+        "liveSessionSeconds": 180,
+        "standardIntervalSeconds": null,
+        "standardIntervalConflict": "Shop 30–90 s bei Bewegung; Hilfecenter konfigurierbare Minutenintervalle.",
+        "geofences": "Unbegrenzt laut Hersteller",
+        "historyDays": 365,
+        "activityTracking": true,
+        "familySharing": true,
+        "exportFormat": "KML",
+        "international": "Nur unterstützte Mobilfunk-Partnernetze; keine verifizierte Länderliste.",
+        "sound": true,
+        "light": true,
+        "attachment": "Zwei Silikonhalterungen; kompatible Halsbandbreite unknown.",
+        "minimumAnimalWeightKg": null,
+        "targetAnimal": "Hund; keine aus Gewicht erfundene Katzen-/Mindestgewichtsfreigabe.",
+        "charging": "Magnetkabel, USB 5 V",
+        "generationNote": "Aktuelles Angebot L2. Supportfunktion Tiefschlaf/Remote-Neustart explizit LV2; Gleichsetzung nicht belegt."
+      },
+      "app": {
+        "android": "https://play.google.com/store/apps/details?id=de.locogps.manager",
+        "ios": "https://apps.apple.com/de/app/locogps/id6739151619",
+        "web": "https://live.locogps.de",
+        "status": "Android-Listing und aktive Herstellerdokumentation; iOS-Link vorhanden, Store-Abruf nicht verifiziert; kein Funktionstest.",
+        "support": "Aktives Hilfecenter, E-Mail-Support; keine langfristige Updategarantie gefunden."
+      },
+      "subscription": {
+        "status": "required-subscription",
+        "requiredForCoreFunction": true,
+        "serviceType": "cellular",
+        "serviceModel": "subscription",
+        "provider": "LocoGPS",
+        "includedServiceMonths": 0,
+        "researchedAt": "2026-09-11",
+        "source": "https://locogps.de/",
+        "freeFunctions": [
+          "App-Demo ohne eigenes Gerät; kein dauerhaft kostenloser Ortungsbetrieb"
+        ],
+        "paidFunctions": [
+          "Live-Ortung",
+          "Geozonen",
+          "Aktivitätserkennung",
+          "365 Tage Verlauf",
+          "Standortfreigabe",
+          "GPS-Datenexport",
+          "Mobilfunkdaten und Partnernetz-Nutzung"
+        ],
+        "additionalCostNote": "Alle Laufzeiten haben denselben Funktionsumfang. 30 Tage Probezeit pro Gerät einmalig; danach gewählter Tarif ohne Kündigung kostenpflichtig. 30 Tage werden nicht als garantierter Kalendermonat modelliert. Jahres-/Zweijahrestarif setzt sich ohne aktive Verlängerung oder Kündigung als monatlich kündbares Abo zum vereinbarten regulären Monatspreis fort. Versandkosten nicht enthalten.",
+        "plans": [
+          {
+            "name": "Monatlich",
+            "billingPeriod": "monthly",
+            "commitmentMonths": 1,
+            "billingMode": "recurring",
+            "price": 6.95,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 6.95,
+            "autoRenew": true,
+            "featured": false,
+            "notes": "Monatliche Vorauszahlung. Gleiche Funktionen wie längere Laufzeiten."
+          },
+          {
+            "name": "1 Jahr",
+            "billingPeriod": "annual",
+            "commitmentMonths": 12,
+            "billingMode": "upfront",
+            "price": 69.95,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 5.83,
+            "autoRenew": true,
+            "featured": false,
+            "notes": "69,95 EUR für die Erstlaufzeit. Automatische Fortsetzung monatlich, keine automatische weitere Jahresbindung. Volle Jahresverlängerung nur aktiv."
+          },
+          {
+            "name": "2 Jahre",
+            "billingPeriod": "term",
+            "commitmentMonths": 24,
+            "billingMode": "upfront",
+            "price": 119.95,
+            "currency": "EUR",
+            "effectiveMonthlyPrice": 5,
+            "autoRenew": true,
+            "featured": true,
+            "notes": "119,95 EUR für die Erstlaufzeit. Automatische Fortsetzung monatlich, keine automatische weitere Zweijahresbindung. Volle Laufzeitverlängerung nur aktiv."
+          }
+        ]
+      },
+      "planFeatureEqualityConfirmed": true,
+      "subscriptionMapping": {
+        "architecture": "existing subscription schema only",
+        "equalityFields": [
+          "paidFunctions",
+          "additionalCostNote",
+          "plans[].notes"
+        ],
+        "trialDays": 30,
+        "trialIsCalendarMonth": false,
+        "automaticContinuation": "monthly after initial annual/24-month term unless cancelled or actively renewed",
+        "tcoPublished": false,
+        "limitation": "Engine wiederholt ausgewählten Laufzeitpreis. Jahresplan-TCO über Erstlaufzeit hinaus wäre ohne aktive Verlängerung falsch. Kein Engine-Refactoring; 2-Jahresplan als featured für eventuellen 12/24-Monats-Erstlaufzeitvergleich, Probezeit separat erläutern; hier keine TCO publiziert."
+      },
+      "failureModes": {
+        "powerOutage": {
+          "status": "unknown",
+          "behavior": "Netzstromausfall am Ladeort nicht als unmittelbarer Tracker-Ausfall modelliert. Verhalten bei vollständig entladenem Akku nicht detailliert dokumentiert."
+        },
+        "wifiOutage": {
+          "status": "unknown",
+          "behavior": "Kein exakter Ausfall-/Wiederanlaufnachweis für L2; Funktechniken nicht mit garantierter Fallback-Reihenfolge gleichsetzen."
+        },
+        "internetOutage": {
+          "status": "partial",
+          "behavior": "Live-, Licht- und Tonbefehle brauchen Online-Verbindung; viele Befehle werden bei erneutem Kontakt übernommen. Welche Befehle und maximale Verzögerung sind nicht vollständig belegt.",
+          "sourceUrl": "https://locogps.de/helpcenter/fehlerbehebung/verbindungsprobleme-beheben/",
+          "sourceType": "support",
+          "verifiedAt": "2026-09-11"
+        },
+        "cloudOutage": {
+          "status": "unknown",
+          "behavior": "Keine lokale Ersatzortung bei Serverausfall belegt."
+        },
+        "mechanicalBlock": {
+          "status": "notApplicable",
+          "behavior": "Kein automatischer Futter-/Klappenmechanismus."
+        }
+      },
+      "evidenceStatus": "partial; Shop, FAQ, Vertrags- und Supportquellen; Konflikte markiert, kein unabhängiger Leistungstest",
+      "productPageCreated": false,
+      "productInventoryGap": "still-open",
+      "productGapResolved": false,
+      "newEditorialIntent": false,
+      "mediaGate": "BLOCKED",
+      "sourceIds": [
+        "loco-product",
+        "loco-home",
+        "loco-provider",
+        "loco-terms",
+        "loco-faq",
+        "loco-live",
+        "loco-connectivity",
+        "loco-history"
+      ],
+      "editorialPreparation": {
+        "description": "32-g-Mobilfunktracker für Hunde mit GPS, WLAN, Bluetooth und laufzeitabhängigem Pflichtabo bei gleichem Funktionsumfang.",
+        "recommendation": "Eine Alternative für Hundehalter, die Standortfreigabe, Export und längeren Verlauf unabhängig von einer Premium-Stufe nutzen möchten. Den Pflichtdienst, netzabhängige Ortung und das bedingte Akku-Maximum einplanen.",
+        "pros": [
+          "Gleicher Funktionsumfang für alle Laufzeiten",
+          "Monatstarif ohne Jahresbindung verfügbar",
+          "KML-Export und 365-Tage-Verlauf dokumentiert"
+        ],
+        "cons": [
+          "Pflichtabo pro Gerät",
+          "Live-Intervall in offiziellen Quellen widersprüchlich",
+          "Laufzeitmaximum setzt Energiesparzonen voraus",
+          "Kein belegtes Mindesttiergewicht oder freigegebenes Produktionsbild"
+        ],
+        "experienceMethodology": "Recherche anhand offizieller Shop-, Support-, Vertrags- und Entwicklerquellen am 11.09.2026. Kein eigener Praxistest; Herstellerwerte sind keine gemessene Leistung.",
+        "alternatives": [
+          "tractive-dog-6",
+          "weenect-xs",
+          "paj-pet-finder-4g-mini",
+          "prothelis-area-pets",
+          "pawfit-3"
+        ],
+        "decision": "Funktionsbedarf, Bindungsdauer und Tier-Fit gemeinsam prüfen; keine pauschale Gewinnerwertung.",
+        "journey": [
+          "Halsbandpassung und Netzabdeckung prüfen",
+          "Gerät mit App verbinden und Probezeitbedingungen lesen",
+          "Geozonen/Sharing einrichten und erste Tour begleitet prüfen",
+          "Akku und letzte Positionszeit regelmäßig kontrollieren",
+          "Vor Ablauf der Erstlaufzeit bewusst verlängern oder kündigen"
+        ],
+        "comparisonDataPreparation": "Nur bestätigte Felder: 32 g, Pflichtabo, 10 Tage bedingtes Herstellermaximum, IP67, Verlauf/Export. Kein eindeutiger Live-Sekundenwert und keine aus Modellnamen abgeleitete LV2-Funktion.",
+        "internalLinkTargets": [
+          "/gps-tracker/",
+          "/vergleiche/beste-gps-tracker-fuer-hunde/",
+          "/gps-tracker-richtig-befestigen/"
+        ],
+        "manufacturerIntegration": "Neue LocoGPS-Entity erst mit aktivem Produkt und zulässigem Hero; bestehende Hersteller-Collection verwenden.",
+        "affiliate": null,
+        "publicationNote": "Vorbereitung ausschließlich in diesem Research-Report; kein schema-valider Produktionsdatensatz ohne Hero und keine aktive Route."
+      }
+    }
+  ],
+  "cluster": {
+    "rikoOwner": "/smarte-futterautomaten/",
+    "locoOwner": "/gps-tracker/",
+    "hubIntegrated": false,
+    "comparisonIntegrated": false,
+    "newPublicUrls": [],
+    "newEditorialIntent": false,
+    "newGuideRequired": false,
+    "newComparisonRequired": false,
+    "plannedLocoComparison": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+    "rikoComparisonDecision": "Keine Aufnahme als gekühlter Nassfutterautomat. Polar und FreshFeed bevorraten fertiges Nassfutter; Cat Mate nutzt Kühlakkus; klassische Trockenautomaten rekonstituieren nicht.",
+    "locoComparisonDecision": "Hundevergleich grundsätzlich passend; kein abo-frei- oder Katzenvergleich ohne bestätigten Tier-Fit. Keine Links auf nicht existierende Kandidaten-URLs."
+  },
+  "watchlist": [
+    {
+      "name": "Neakasa M9",
+      "status": "LAUNCH_WATCH",
+      "announcedLaunch": "2026-10-09",
+      "sourceId": "neakasa-news",
+      "note": "Aktuelle konkrete IFA-Mitteilung priorisiert vor pauschalem September-Teaser im Partnerhub.",
+      "productPageCreated": false
+    },
+    {
+      "name": "PawSentry 5 Pro",
+      "status": "DELIVERY_WATCH",
+      "announcedShipment": "2026-12",
+      "actualDeliveryConfirmed": false,
+      "sourceId": "pawsentry",
+      "productPageCreated": false
+    },
+    {
+      "name": "PetSuper",
+      "status": "MARKET_EVIDENCE_WATCH",
+      "germanyRetailAvailable": null,
+      "manual": null,
+      "germanyPrice": null,
+      "sourceIds": [
+        "petsuper",
+        "petsuper-products"
+      ],
+      "note": "Offizielle Produktverweise und B2B-EU-Logistik vorhanden; kein Nachweis regulären DE/EU-Einzelverkaufs.",
+      "productPageCreated": false
+    }
+  ],
+  "media": {
+    "productionAssets": 0,
+    "downloadsBlocked": false,
+    "notes": "Anfängliche Sandbox-Netzwerkbeschränkung für Produktseiten durch gezielten offiziellen Direktabruf überwunden; Manual heruntergeladen. Keine Bilddownloads mangels ausgewählter und freigegebener Originale; kein MEDIA_DOWNLOAD_BLOCKED behauptet.",
+    "rightsSearch": [
+      "Offizieller Neakasa Partnerhub und verlinkter Bilderordner",
+      "LocoGPS Produktseite, Footer, Impressum, Hilfecenter; öffentliche Press-/Media-Kit-Suche ohne belegte Nutzungserlaubnis",
+      "Repository-Bestand: keine Originalassets für diese exakten Modelle"
+    ],
+    "assets": [
+      {
+        "product": "neakasa-riko",
+        "targetFile": "hero.webp",
+        "status": "NO",
+        "originalSource": null,
+        "discoverySource": "https://neakasa.com/pages/partner-deals-hub",
+        "manufacturer": "Neakasa",
+        "assetType": "product-photo",
+        "accessedAt": "2026-09-11",
+        "provenance": null,
+        "transformation": "none",
+        "rightsStatus": "MEDIA_RIGHTS_UNCLEAR",
+        "result": "NOT_IMPORTED"
+      },
+      {
+        "product": "neakasa-riko",
+        "targetFile": "thumbnail.webp",
+        "status": "NO",
+        "originalSource": null,
+        "discoverySource": "https://neakasa.com/pages/partner-deals-hub",
+        "manufacturer": "Neakasa",
+        "assetType": "product-photo",
+        "accessedAt": "2026-09-11",
+        "provenance": null,
+        "transformation": "none",
+        "rightsStatus": "MEDIA_RIGHTS_UNCLEAR",
+        "result": "NOT_IMPORTED"
+      },
+      {
+        "product": "neakasa-riko",
+        "targetFile": "comparison.webp",
+        "status": "NO",
+        "originalSource": null,
+        "discoverySource": "https://neakasa.com/pages/partner-deals-hub",
+        "manufacturer": "Neakasa",
+        "assetType": "product-photo",
+        "accessedAt": "2026-09-11",
+        "provenance": null,
+        "transformation": "none",
+        "rightsStatus": "MEDIA_RIGHTS_UNCLEAR",
+        "result": "NOT_IMPORTED"
+      },
+      {
+        "product": "neakasa-riko",
+        "targetFile": "gallery-1.webp",
+        "status": "NO",
+        "originalSource": null,
+        "discoverySource": "https://neakasa.com/pages/partner-deals-hub",
+        "manufacturer": "Neakasa",
+        "assetType": "product-photo",
+        "accessedAt": "2026-09-11",
+        "provenance": null,
+        "transformation": "none",
+        "rightsStatus": "MEDIA_RIGHTS_UNCLEAR",
+        "result": "NOT_IMPORTED"
+      },
+      {
+        "product": "neakasa-riko",
+        "targetFile": "gallery-2.webp",
+        "status": "NO",
+        "originalSource": null,
+        "discoverySource": "https://neakasa.com/pages/partner-deals-hub",
+        "manufacturer": "Neakasa",
+        "assetType": "product-photo",
+        "accessedAt": "2026-09-11",
+        "provenance": null,
+        "transformation": "none",
+        "rightsStatus": "MEDIA_RIGHTS_UNCLEAR",
+        "result": "NOT_IMPORTED"
+      },
+      {
+        "product": "neakasa-riko",
+        "targetFile": "gallery-3.webp",
+        "status": "NO",
+        "originalSource": null,
+        "discoverySource": "https://neakasa.com/pages/partner-deals-hub",
+        "manufacturer": "Neakasa",
+        "assetType": "product-photo",
+        "accessedAt": "2026-09-11",
+        "provenance": null,
+        "transformation": "none",
+        "rightsStatus": "MEDIA_RIGHTS_UNCLEAR",
+        "result": "NOT_IMPORTED"
+      },
+      {
+        "product": "locogps-l2",
+        "targetFile": "hero.webp",
+        "status": "NO",
+        "originalSource": null,
+        "discoverySource": "https://locogps.de/produkt/gps-tracker-fuer-hunde-l2/",
+        "manufacturer": "LocoGPS",
+        "assetType": "product-photo",
+        "accessedAt": "2026-09-11",
+        "provenance": null,
+        "transformation": "none",
+        "rightsStatus": "MEDIA_RIGHTS_UNCLEAR",
+        "result": "NOT_IMPORTED"
+      },
+      {
+        "product": "locogps-l2",
+        "targetFile": "thumbnail.webp",
+        "status": "NO",
+        "originalSource": null,
+        "discoverySource": "https://locogps.de/produkt/gps-tracker-fuer-hunde-l2/",
+        "manufacturer": "LocoGPS",
+        "assetType": "product-photo",
+        "accessedAt": "2026-09-11",
+        "provenance": null,
+        "transformation": "none",
+        "rightsStatus": "MEDIA_RIGHTS_UNCLEAR",
+        "result": "NOT_IMPORTED"
+      },
+      {
+        "product": "locogps-l2",
+        "targetFile": "comparison.webp",
+        "status": "NO",
+        "originalSource": null,
+        "discoverySource": "https://locogps.de/produkt/gps-tracker-fuer-hunde-l2/",
+        "manufacturer": "LocoGPS",
+        "assetType": "product-photo",
+        "accessedAt": "2026-09-11",
+        "provenance": null,
+        "transformation": "none",
+        "rightsStatus": "MEDIA_RIGHTS_UNCLEAR",
+        "result": "NOT_IMPORTED"
+      },
+      {
+        "product": "locogps-l2",
+        "targetFile": "gallery-1.webp",
+        "status": "NO",
+        "originalSource": null,
+        "discoverySource": "https://locogps.de/produkt/gps-tracker-fuer-hunde-l2/",
+        "manufacturer": "LocoGPS",
+        "assetType": "product-photo",
+        "accessedAt": "2026-09-11",
+        "provenance": null,
+        "transformation": "none",
+        "rightsStatus": "MEDIA_RIGHTS_UNCLEAR",
+        "result": "NOT_IMPORTED"
+      },
+      {
+        "product": "locogps-l2",
+        "targetFile": "gallery-2.webp",
+        "status": "NO",
+        "originalSource": null,
+        "discoverySource": "https://locogps.de/produkt/gps-tracker-fuer-hunde-l2/",
+        "manufacturer": "LocoGPS",
+        "assetType": "product-photo",
+        "accessedAt": "2026-09-11",
+        "provenance": null,
+        "transformation": "none",
+        "rightsStatus": "MEDIA_RIGHTS_UNCLEAR",
+        "result": "NOT_IMPORTED"
+      },
+      {
+        "product": "locogps-l2",
+        "targetFile": "gallery-3.webp",
+        "status": "NO",
+        "originalSource": null,
+        "discoverySource": "https://locogps.de/produkt/gps-tracker-fuer-hunde-l2/",
+        "manufacturer": "LocoGPS",
+        "assetType": "product-photo",
+        "accessedAt": "2026-09-11",
+        "provenance": null,
+        "transformation": "none",
+        "rightsStatus": "MEDIA_RIGHTS_UNCLEAR",
+        "result": "NOT_IMPORTED"
+      }
+    ],
+    "validation": {
+      "referencesAdded": 0,
+      "webpChecks": "NOT_APPLICABLE_NO_ASSETS",
+      "visualIdentity": "NOT_APPLICABLE_NO_ASSETS",
+      "altText": "Keine produktiven Alt-Texte erfunden.",
+      "gate": "BLOCKED"
+    }
+  },
+  "validation": {
+    "status": "PASS_WITH_EXISTING_FINDINGS_AND_PUBLICATION_BLOCKERS",
+    "tests": {
+      "passed": 832,
+      "failed": 0,
+      "scope": "Existing current suite including Failure Modes, Subscription Costs, ProductExperience2, Evidence, Manufacturer and Search"
+    },
+    "productAudit": {
+      "products": 102,
+      "errors": 0,
+      "warnings": 93
+    },
+    "evidenceAudit": {
+      "covered": 101,
+      "total": 102,
+      "complete": 72,
+      "partial": 29,
+      "missing": 1,
+      "note": "Existing inventory only; does not classify the two unpublished candidates as covered."
+    },
+    "decisionAudit": {
+      "products": 102,
+      "status": "PASS"
+    },
+    "comparison": {
+      "count": 28,
+      "sourceCoveragePercent": 92.7,
+      "renderedCoveragePercent": 100,
+      "status": "PASS"
+    },
+    "internalLinks": {
+      "documents": 246,
+      "errors": 0,
+      "warnings": 7,
+      "strictCritical": 0
+    },
+    "internalLinkTargets": {
+      "pages": 372,
+      "errors": 0,
+      "warnings": 0
+    },
+    "schema": {
+      "status": "PASS",
+      "source": "Astro content schema validation in successful build; 28 built comparison ItemLists"
+    },
+    "mediaCenter": {
+      "exitCode": 0,
+      "jobs": 10,
+      "approved": 0,
+      "rejectedImages": 387,
+      "note": "Existing Media Center queue, not new-product media approval."
+    },
+    "imageAlt": {
+      "pages": 372,
+      "blockingErrors": 0,
+      "informationalFindings": 2
+    },
+    "build": {
+      "status": "PASS",
+      "pages": 372,
+      "seconds": 186,
+      "command": "ASTRO_TELEMETRY_DISABLED=1 npm --workspace apps/pfotentechnik run build",
+      "initialAttempt": "EPERM creating global Astro telemetry Config; resolved using process-local opt-out."
+    },
+    "buildOutput": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "searchSeo": "PASS source technical SEO, existing search tests and fresh build-output audit",
+    "visualQA": {
+      "status": "NOT_APPLICABLE",
+      "fullpageScreenshots": 0,
+      "reason": "No new visible product page or page type. Four rendered manual pages inspected; not website QA screenshots."
+    },
+    "newProductMedia": "BLOCKED; zero imported originals, zero new references",
+    "reportIntegrity": "PASS",
+    "gitDiffCheck": "PASS",
+    "manufacturerRelationships": {
+      "checked": 102,
+      "resolved": 101,
+      "missing": [
+        "feelneedy"
+      ],
+      "newErrors": 0,
+      "status": "EXISTING_FINDING",
+      "baselineEvidence": "Manufacturer absent in HEAD; associated product unchanged; no production content changes in 35.1."
+    },
+    "mediaReferences": {
+      "checked": 586,
+      "missing": 0,
+      "newReferences": 0
+    },
+    "commands": [
+      {
+        "name": "tests",
+        "command": "npm --workspace apps/pfotentechnik test",
+        "exitCode": 0,
+        "seconds": 12,
+        "error": null
+      },
+      {
+        "name": "products",
+        "command": "npm --workspace apps/pfotentechnik run audit:products:strict",
+        "exitCode": 0,
+        "seconds": 1,
+        "error": null
+      },
+      {
+        "name": "evidence",
+        "command": "npm --workspace apps/pfotentechnik run audit:product-evidence",
+        "exitCode": 0,
+        "seconds": 1,
+        "error": null
+      },
+      {
+        "name": "decision",
+        "command": "npm --workspace apps/pfotentechnik run audit:decision-data",
+        "exitCode": 0,
+        "seconds": 1,
+        "error": null
+      },
+      {
+        "name": "comparison",
+        "command": "npm --workspace apps/pfotentechnik run comparison:data:audit:strict",
+        "exitCode": 0,
+        "seconds": 1,
+        "error": null
+      },
+      {
+        "name": "links",
+        "command": "npm --workspace apps/pfotentechnik run audit:internal-links:strict",
+        "exitCode": 0,
+        "seconds": 3,
+        "error": null
+      },
+      {
+        "name": "media",
+        "command": "npm --workspace apps/pfotentechnik run media:audit",
+        "exitCode": 0,
+        "seconds": 1,
+        "error": null
+      },
+      {
+        "name": "seo-source",
+        "command": "npm --workspace apps/pfotentechnik run audit:technical-seo:source",
+        "exitCode": 0,
+        "seconds": 1,
+        "error": null
+      },
+      {
+        "name": "build",
+        "command": "npm --workspace apps/pfotentechnik run build",
+        "exitCode": 1,
+        "seconds": 1,
+        "error": null
+      },
+      {
+        "name": "schema",
+        "command": "npm --workspace apps/pfotentechnik run audit:comparison-schema",
+        "exitCode": 0,
+        "seconds": 1,
+        "error": null
+      },
+      {
+        "name": "image-alt",
+        "command": "npm --workspace apps/pfotentechnik run audit:image-alt:strict",
+        "exitCode": 0,
+        "seconds": 1,
+        "error": null
+      },
+      {
+        "name": "build-output",
+        "command": "npm --workspace apps/pfotentechnik run audit:release-build-output:strict",
+        "exitCode": 0,
+        "seconds": 1,
+        "error": null
+      },
+      {
+        "name": "build-retry",
+        "command": "ASTRO_TELEMETRY_DISABLED=1 npm --workspace apps/pfotentechnik run build",
+        "exitCode": 0,
+        "pages": 372
+      },
+      {
+        "name": "audit:comparison-schema-fresh-build",
+        "command": "npm --workspace apps/pfotentechnik run audit:comparison-schema",
+        "exitCode": 0
+      },
+      {
+        "name": "audit:image-alt:strict-fresh-build",
+        "command": "npm --workspace apps/pfotentechnik run audit:image-alt:strict",
+        "exitCode": 0
+      },
+      {
+        "name": "audit:release-build-output:strict-fresh-build",
+        "command": "npm --workspace apps/pfotentechnik run audit:release-build-output:strict",
+        "exitCode": 0
+      },
+      {
+        "name": "audit:internal-link-targets:strict-fresh-build",
+        "command": "npm --workspace apps/pfotentechnik run audit:internal-link-targets:strict",
+        "exitCode": 0
+      },
+      {
+        "name": "report-and-reference-check",
+        "command": "node .patch-backups/35.1/check-report.mjs",
+        "exitCode": 0
+      }
+    ]
+  },
+  "noChange": [
+    "Produkt-Markdown, Hersteller, Hubs und Vergleiche",
+    "ProductExperience2, Schema und Media Resolver",
+    "Subscription Cost Engine / 34.7 Freeze",
+    "Bestehende Preise, Scores und Affiliates",
+    "Produktions-URLs, Canonicals, Redirects und Indexierbarkeit",
+    "M9/PawSentry/PetSuper-Produktbestand",
+    "34.9-/34.10-Snapshots"
+  ],
+  "next": "TARGETED FOLLOW-UP",
+  "nextRecommendation": "Gezielter Release-Abschluss für dieses Paar: zulässige LocoGPS-L2-Originalmedien beschaffen; Riko nach angekündigtem EU-Versandstart mit bereinigten EU-Spezifikationen erneut durch das Produkt-Gate führen.",
+  "validationScope": "Existing production inventory and report submodels checked. No new product page, no release of either candidate, no visual website QA implied."
+}

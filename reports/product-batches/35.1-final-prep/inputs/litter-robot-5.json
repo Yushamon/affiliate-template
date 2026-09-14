@@ -1,0 +1,38 @@
+{
+  "product": "Litter-Robot 5",
+  "researchDate": "2026-09-14",
+  "entityConclusion": "Distinct SKU from Litter-Robot 5 Pro.",
+  "officialLineup": {
+    "Litter-Robot 5": {
+      "startingUSD": 799,
+      "maxCats": 5,
+      "catWeightLb": "3-30",
+      "features": [
+        "WasteID",
+        "enhanced cat insights",
+        "upgraded LCD display"
+      ]
+    },
+    "Litter-Robot 5 Pro": {
+      "startingUSD": 899,
+      "maxCats": 5,
+      "adds": [
+        "dual built-in cameras",
+        "AI-powered cat ID",
+        "individualized cat insights",
+        "advanced routine monitoring"
+      ]
+    }
+  },
+  "europe": {
+    "germanyMarketExistsOnWhiskerEU": true,
+    "euShipping": "from Amsterdam; EU site states free shipping on orders EUR49+",
+    "decision": "Do not create a new LR5 DE product page in 35.1 until Germany/EU product availability and price for LR5 (not Pro) are explicitly verified."
+  },
+  "sources": [
+    "https://www.whisker.com/litter-robot-5",
+    "https://www.whisker.com/explore-litter-robot",
+    "https://www.whisker.com/blog/whisker-launches-next-generation-litter-robot-line",
+    "https://www.litter-robot.com/eu/de/"
+  ]
+}
