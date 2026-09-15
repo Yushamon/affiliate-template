@@ -57,10 +57,10 @@ images:
     - src: "../../assets/images/products/petlibro-dockstream-2-smart-cordless/gallery-3.webp"
       alt: "PETLIBRO-App mit Trinkprotokoll des Dockstream 2 Smart Cordless"
 price:
-  current: 99.99
+  current: 105.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-09T06:22:32.669Z"
+  checkedAt: "2026-09-15T03:47:16.392Z"
   source:
     id: "de.petlibro.com"
     label: "de.petlibro.com"
@@ -78,12 +78,12 @@ conversion:
   showSecondaryCta: true
 
 priceState: "available"
-priceUpdated: "2026-09-09T06:22:32.669Z"
+priceUpdated: "2026-09-15T03:47:16.392Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-09T06:22:32.669Z"
+availabilityUpdated: "2026-09-15T03:47:16.392Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

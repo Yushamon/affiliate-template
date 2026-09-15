@@ -31,10 +31,10 @@ images:
     - { src: "../../assets/images/products/petsafe-mikrochip-katzenklappe/gallery-2.webp", alt: "Katze nutzt die PetSafe Mikrochip Katzenklappe" }
     - { src: "../../assets/images/products/petsafe-mikrochip-katzenklappe/gallery-3.webp", alt: "Größenvergleich der PetSafe Mikrochip Katzenklappe mit einer Hauskatze" }
 price:
-  current: 69.98
+  current: 69.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-09T06:22:59.717Z"
+  checkedAt: "2026-09-15T03:47:48.985Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -49,12 +49,12 @@ editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentati
 rating: 3.8
 
 priceState: "available"
-priceUpdated: "2026-09-09T06:22:59.717Z"
+priceUpdated: "2026-09-15T03:47:48.985Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-09T06:22:59.717Z"
+availabilityUpdated: "2026-09-15T03:47:48.985Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

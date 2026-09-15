@@ -79,10 +79,10 @@ subscription:
   additionalCostNote: "Der Deutschlandpreis von Care+ ist öffentlich nicht belastbar ausgewiesen; der Fütterungsbetrieb bleibt ohne Abo möglich."
   plans: []
 price:
-  current: 109.99
+  current: 162.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-02T06:03:48.194Z"
+  checkedAt: "2026-09-15T03:47:09.374Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -97,12 +97,12 @@ rating: 4.8
 score: 95
 
 priceState: "available"
-priceUpdated: "2026-09-02T06:03:48.194Z"
+priceUpdated: "2026-09-15T03:47:09.374Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-02T06:03:48.194Z"
+availabilityUpdated: "2026-09-15T03:47:09.374Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

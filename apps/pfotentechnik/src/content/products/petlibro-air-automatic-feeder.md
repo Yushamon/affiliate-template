@@ -66,10 +66,10 @@ images:
     - src: ../../assets/images/products/petlibro-air-automatic-feeder/gallery-4.webp
       alt: PETLIBRO Air Automatic Feeder, weitere redaktionelle Ansicht 4
 price:
-  current: 62.99
+  current: 64.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-09T06:22:27.914Z"
+  checkedAt: "2026-09-15T03:47:12.898Z"
   source:
     id: "mediamarkt.de"
     label: "mediamarkt.de"
@@ -84,12 +84,12 @@ rating: 3.6
 score: 72
 
 priceState: "available"
-priceUpdated: "2026-09-09T06:22:27.914Z"
+priceUpdated: "2026-09-15T03:47:12.898Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-09T06:22:27.914Z"
+availabilityUpdated: "2026-09-15T03:47:12.898Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

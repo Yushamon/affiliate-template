@@ -1,36 +1,36 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-14T15:37:22.698Z",
+  "generatedAt": "2026-09-15T03:35:08.232Z",
   "property": "sc-domain:pfotentechnik.de",
   "provider": "google",
   "range": "7d",
   "key": "7d",
   "label": "Letzte 7 Tage",
-  "startDate": "2026-09-07",
-  "endDate": "2026-09-13",
-  "comparisonStartDate": "2026-08-31",
-  "comparisonEndDate": "2026-09-06",
+  "startDate": "2026-09-08",
+  "endDate": "2026-09-14",
+  "comparisonStartDate": "2026-09-01",
+  "comparisonEndDate": "2026-09-07",
   "dataState": "all",
   "partial": false,
   "lowData": true,
   "metrics": {
     "current": {
       "clicks": 0,
-      "impressions": 11,
+      "impressions": 12,
       "ctr": 0,
-      "position": 11.5
+      "position": 11.3
     },
     "previous": {
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 7,
       "ctr": 0,
-      "position": 6.7
+      "position": 5.9
     },
     "change": {
       "clicks": 0,
-      "impressions": 83.3,
+      "impressions": 71.4,
       "ctr": 0,
-      "position": -4.8
+      "position": -5.4
     }
   },
   "pages": [
@@ -40,6 +40,13 @@
       "impressions": 4,
       "ctr": 0,
       "position": 2.3
+    },
+    {
+      "page": "/datenschutz-bei-gps-trackern/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5
     },
     {
       "page": "/smarte-futterautomaten/",
@@ -68,20 +75,6 @@
       "impressions": 1,
       "ctr": 0,
       "position": 7
-    },
-    {
-      "page": "/produkt/weenect-xs/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 2
-    },
-    {
-      "page": "/produkt/weenect-xt/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 1
     },
     {
       "page": "/smarte-haustiertechnik/",
@@ -118,13 +111,6 @@
     }
   ],
   "trend": [
-    {
-      "date": "2026-09-07",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 1
-    },
     {
       "date": "2026-09-08",
       "clicks": 0,
@@ -166,6 +152,13 @@
       "impressions": 3,
       "ctr": 0,
       "position": 2
+    },
+    {
+      "date": "2026-09-14",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5
     }
   ],
   "recommendations": []

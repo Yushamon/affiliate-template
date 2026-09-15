@@ -58,10 +58,10 @@ subscription:
     - { name: "Premium jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 189.99, currency: EUR, effectiveMonthlyPrice: 15.83, autoRenew: true, notes: "30 Tage Videospeicher" }
     - { name: "Family jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 219.99, currency: EUR, effectiveMonthlyPrice: 18.33, autoRenew: true, notes: "für bis zu drei Geräte" }
 price:
-  current: 74.99
+  current: 79.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-09T06:22:52.536Z"
+  checkedAt: "2026-09-15T03:47:41.032Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -69,12 +69,12 @@ price:
 rating: 3.7
 
 priceState: "available"
-priceUpdated: "2026-09-09T06:22:52.536Z"
+priceUpdated: "2026-09-15T03:47:41.032Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-09T06:22:52.536Z"
+availabilityUpdated: "2026-09-15T03:47:41.032Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
