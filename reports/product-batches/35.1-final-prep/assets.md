@@ -2,9 +2,9 @@
 
 Repository: `C:/hp/Projekt/affiliate-template`
 
-Die folgenden drei Ordner sind angelegt. `.gitkeep` erhält sie in Git und ist kein Bild. Es wurden keine Bilder beschafft, erzeugt oder als Platzhalter angelegt. Stand: 14.09.2026, alle unten aufgeführten neuen Bilder fehlen.
+Die folgenden drei Ordner sind angelegt. `.gitkeep` erhält sie in Git und ist kein Bild. Stand: 15.09.2026. Riko ist mit allen sechs vom Nutzer hinterlegten Originaldateien eingebunden; M9 und die optionalen IFA-Bilder fehlen weiterhin. Es wurden keine Bilder beschafft oder erzeugt.
 
-## Riko – alle sechs erforderlich
+## Riko – alle sechs vorhanden und referenziert
 
 ```text
 apps/pfotentechnik/src/assets/images/products/neakasa-riko/hero.webp
@@ -15,7 +15,7 @@ apps/pfotentechnik/src/assets/images/products/neakasa-riko/gallery-2.webp
 apps/pfotentechnik/src/assets/images/products/neakasa-riko/gallery-3.webp
 ```
 
-Motive: exakte Produktansicht, ruhige Thumbnail-Ansicht, neutrale Vergleichsansicht, Katze am Riko, Futter-/Wasser-Zubereitungsprinzip, Wohnumfeld.
+Tatsächliche Motive: Hero/Thumbnail/Comparison verwenden dieselbe gelieferte Produkt-/Zubehöransicht. Gallery-1 zeigt das Zubereitungsprinzip, Gallery-2 die App, Gallery-3 Mahlwerk und Vorratsabdichtung. Alle Bilder sind 800 × 800 Pixel und wurden erfolgreich als WebP decodiert. Alt-Texte beschreiben die realen Motive; es werden keine Katze-am-Gerät- oder Wohnumfeldfotos behauptet. Details: `riko-media.json`.
 
 ## M9 – alle sechs erforderlich
 
@@ -52,4 +52,4 @@ Der Guide ist ohne diese optionalen Bilder implementiert. Die bestehende Archite
 
 ## Abschluss nach dem Kopieren
 
-Den archivierten Auftrag `inputs/codex-final-after-assets.md` mit den Originaldateien in `inputs/` fortsetzen: vollständige Bildsets prüfen, Riko und M9 als manufacturer-data im bestehenden Product-v2-Schema anlegen, DE-Quellenkonflikte und M9-Unknowns erhalten, vorhandene Evidence-/Commerce-Struktur nutzen und erst dann Produktlinks/Hubs ergänzen. Riko-Preis/Vorbestellung vor Veröffentlichung von Commerce-Feldern gezielt aktuell prüfen. Keine LR5-Seite oder neue Architektur anlegen. Relevante Tests und Build für den dann geänderten Bestand erneut ausführen.
+Nach Bereitstellung der sechs M9-Bilder den archivierten Auftrag `inputs/codex-final-after-assets.md` fortsetzen: Bildset prüfen, M9 vollständig als manufacturer-data im bestehenden Product-v2-Schema anlegen, Unknowns erhalten und erst dann M9-Links/Hubs ergänzen. Riko ist umgesetzt; Preis/Vorbestellung wurden am 15.09.2026 gezielt geprüft. Keine LR5-Seite oder neue Architektur anlegen. Relevante Tests und Build für den dann geänderten Bestand erneut ausführen.

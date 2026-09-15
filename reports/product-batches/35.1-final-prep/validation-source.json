@@ -1,0 +1,114 @@
+{
+  "products": {
+    "command": [
+      "node",
+      "apps/pfotentechnik/scripts/audit-product-data.mjs",
+      "--strict"
+    ],
+    "exitCode": 0,
+    "summary": {
+      "generatedAt": "2026-09-15T03:30:41.338Z",
+      "totalProducts": 103,
+      "byCategory": {
+        "futterautomaten": 38,
+        "trinkbrunnen": 24,
+        "katzenklappen": 10,
+        "automatische-katzentoiletten": 11,
+        "haustierkameras": 8,
+        "gps-tracker": 12
+      },
+      "errors": 0,
+      "warnings": 97,
+      "notes": 143,
+      "duplicateSlugs": 0
+    },
+    "riko": {
+      "file": "src\\content\\products\\neakasa-riko.md",
+      "slug": "neakasa-riko",
+      "title": "Neakasa Riko",
+      "category": "futterautomaten",
+      "errors": [],
+      "warnings": [
+        "Affiliate-Link fehlt",
+        "Empfohlenes Feld fehlt: kamera",
+        "Empfohlenes Feld fehlt: ma\u00dfe",
+        "Empfohlenes Feld fehlt: gewicht"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Geeignet f\u00fcr",
+          "value": "Katzen mit best\u00e4tigter Kompatibilit\u00e4t des verwendeten gefriergetrockneten Futters"
+        },
+        {
+          "label": "Napfmaterial",
+          "value": "Edelstahl laut Hersteller; zwei N\u00e4pfe im Lieferumfang"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Kontaktteile abnehmbar; Hauptger\u00e4t nicht eintauchen; angefeuchtete Futterreste zeitnah entfernen"
+        },
+        {
+          "label": "Kapazit\u00e4t Futterbeh\u00e4lter",
+          "value": "3 Liter"
+        },
+        {
+          "label": "Wassertank",
+          "value": "2,4 Liter"
+        },
+        {
+          "label": "Portionsgr\u00f6\u00dfe",
+          "value": "1\u201315 g je Ausgabe"
+        },
+        {
+          "label": "Dosiergenauigkeit",
+          "value": "\u00b11 g laut Hersteller"
+        },
+        {
+          "label": "Mahlzeiten",
+          "value": "Bis zu 20 pro Tag laut aktueller deutscher Produktseite"
+        },
+        {
+          "label": "Wasser-Futter-Verh\u00e4ltnis",
+          "value": "1:1 bis 5:1"
+        },
+        {
+          "label": "Futterart",
+          "value": "Prim\u00e4r gefriergetrocknet; max. St\u00fcckgr\u00f6\u00dfe 15 \u00d7 15 \u00d7 25 mm; weitere Sorten nur bei best\u00e4tigter Kompatibilit\u00e4t"
+        },
+        {
+          "label": "App-Steuerung / WLAN",
+          "value": "Bluetooth + 2,4-GHz-WLAN laut deutscher Produktseite"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "Netzbetrieb; optionaler Akku 10,8 V / 2.500 mAh"
+        },
+        {
+          "label": "Backup-Akku",
+          "value": "Bis zu 7 Tage laut Hersteller, abh\u00e4ngig von Nutzung und Einstellungen"
+        },
+        {
+          "label": "Materialien",
+          "value": "ABS, PP, Edelstahl"
+        },
+        {
+          "label": "Lieferumfang",
+          "value": "Futterautomat, 2 Edelstahln\u00e4pfe, Reinigungsset, Netzadapter, Anleitung"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 77,
+      "confirmedCompleteness": 77,
+      "completeness": 88
+    }
+  },
+  "internal-links": {
+    "command": [
+      "node",
+      "scripts/audit-internal-links.mjs",
+      "--strict"
+    ],
+    "exitCode": 0
+  }
+}

@@ -135,6 +135,8 @@ Genau darin liegt aber auch der interessante Ansatz. Wer ohnehin gefriergetrockn
 
 Offen bleibt, wie zuverlässig Mahlwerk, Portionierung und Reinigung langfristig funktionieren. Ein eigener PfotenTechnik-Praxistest liegt nicht vor.
 
+Details zu Futterkompatibilität, Portionierung und Reinigung stehen im [Neakasa Riko Datencheck](/produkt/neakasa-riko/).
+
 Zur Einordnung der Bauarten: [Smarte Futterautomaten](/smarte-futterautomaten/). Riko ist eine Speziallösung für eine passende Fütterungsweise, keine pauschale Top-Empfehlung. Gemeinsame Nutzung bedeutet keine individuelle Zugangserkennung, sichere Portion-Zuordnung oder Fütterungssteuerung pro Katze.
 
 **Quellenkonflikt:** Die deutsche und die EU-Produktseite nennen unterschiedliche Tank-, Portions-, Akku- und Verbindungsdaten. Hier gelten die Angaben der deutschen Produktseite vom 14. September 2026; EU-Werte werden nicht beigemischt. Auch „bis zu 20 Mahlzeiten“ folgt der Produktseite und nicht der abweichenden Formulierung „mehr als 20“ im Herstellerartikel.
