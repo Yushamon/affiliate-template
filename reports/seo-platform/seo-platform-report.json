@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-10T09:55:13.655Z",
-  "errors": 9,
-  "warnings": 93,
+  "generatedAt": "2026-09-15T03:35:25.003Z",
+  "errors": 10,
+  "warnings": 92,
   "portfolio": [],
   "documents": [
     {
@@ -4075,13 +4075,13 @@
         "slug": "neakasa",
         "type": "manufacturer",
         "layout": "manufacturer",
-        "description": "Neakasa im Überblick: offene automatische Katzentoiletten mit App und Sensorik.",
+        "description": "Neakasa im Überblick: offene automatische Katzentoiletten und Riko zur Zubereitung geeigneten gefriergetrockneten Katzenfutters.",
         "key": "neakasa",
         "name": "Neakasa",
         "recommendation": "Neakasa ist im Cluster die offene Alternative für große oder bei geschlossenen Trommeln skeptische Katzen.",
-        "summary": "M1 Plus verbindet eine offene Siebtrommel mit App, Sensoren und Kitten-Modus.",
+        "summary": "M1 Plus verbindet eine offene Siebtrommel mit App, Sensoren und Kitten-Modus. Riko ergänzt eine eigene Fütterungslogik: trocken lagern und erst zur Mahlzeit Wasser hinzufügen.",
         "publishedAt": "2026-08-06",
-        "updatedAt": "2026-08-07",
+        "updatedAt": "2026-09-15",
         "tags": [
           "hersteller",
           "neakasa",
@@ -4092,12 +4092,14 @@
           "gallery": []
         },
         "productCategories": [
-          "Automatische Katzentoiletten"
+          "Automatische Katzentoiletten",
+          "Futterautomaten"
         ],
         "productAreas": [
           "offene Selbstreinigung",
           "App",
-          "Infrarot-Sensorik"
+          "Infrarot-Sensorik",
+          "Zubereitung gefriergetrockneten Futters"
         ],
         "focus": [
           "offene Bauform",
@@ -4121,7 +4123,7 @@
           "hoher Einstieg"
         ],
         "profile": {
-          "company": "Das Profil bildet die im Repository gepflegte M1-Plus-Produktrolle ab.",
+          "company": "Das Profil umfasst die gepflegten M1-Modelle und den Riko-Futterautomaten. Die Produktrollen und ihre Grenzen werden getrennt eingeordnet.",
           "appEcosystem": "App-Protokolle ergänzen Reinigung und Füllstand, sind aber keine Diagnose.",
           "replacementParts": "Passende Müllbeutel können laut Hersteller frei gewählt werden; Streu bleibt kompatibilitätsabhängig.",
           "filterSupply": "Nicht relevant; Streukörnung und Klumpverhalten sind entscheidend.",
@@ -4130,7 +4132,8 @@
         },
         "productSlugs": [
           "neakasa-m1-plus",
-          "neakasa-m1-lite"
+          "neakasa-m1-lite",
+          "neakasa-riko"
         ],
         "featuredProductSlugs": [
           "neakasa-m1-plus",
@@ -4142,17 +4145,12 @@
           "petkit"
         ],
         "sources": [
-          "{ label: \"Neakasa M1 Plus\", url: \"https://neakasa.com/products/neakasa-m1-cat-litter-box\" }"
+          "{ label: \"Neakasa M1 Plus\", url: \"https://neakasa.com/products/neakasa-m1-cat-litter-box\" }",
+          "{ label: \"Neakasa Riko Deutschland\", url: \"https://neakasa.de/products/neakasa-riko-smart-wet-food-feeder\" }"
         ],
         "faq": []
       },
-      "issues": [
-        {
-          "severity": "warning",
-          "code": "META_DESCRIPTION_LENGTH",
-          "message": "Description sollte ungefähr 90–180 Zeichen lang sein."
-        }
-      ]
+      "issues": []
     },
     {
       "file": "apps/pfotentechnik/src/content/manufacturers/oneisall.md",
@@ -9296,6 +9294,83 @@
           "message": "Mögliche Dosierungsangabe gefunden."
         }
       ]
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/ifa-2026-haustiertechnik.md",
+      "slug": "ifa 2026 haustiertechnik",
+      "title": "Haustiertechnik auf der IFA 2026: Diese Neuheiten sind interessant",
+      "type": "page",
+      "data": {
+        "title": "Haustiertechnik auf der IFA 2026: Diese Neuheiten sind interessant",
+        "seoTitle": "IFA 2026: PetTech-Neuheiten von Riko bis M9 eingeordnet",
+        "slug": "ifa-2026-haustiertechnik",
+        "type": "knowledge",
+        "layout": "knowledge",
+        "description": "Riko, M9, Litter-Robot 5 und weitere PetTech-Konzepte der IFA 2026: Was neu ist, was Hersteller versprechen und welche Fragen offenbleiben.",
+        "category": "haustiertechnik",
+        "categoryLabel": "Smarte Haustiertechnik",
+        "categoryPath": "/smarte-haustiertechnik/",
+        "author": "{ name: \"PfotenTechnik Redaktion\", role: \"Redaktion für smarte Haustiertechnik\" }",
+        "publishedAt": "2026-09-14",
+        "updatedAt": "2026-09-14",
+        "tags": [
+          "IFA 2026",
+          "PetTech",
+          "Smarte Haustiertechnik",
+          "Neakasa"
+        ],
+        "project": "pfotentechnik",
+        "seo": {
+          "noindex": false,
+          "sitemap": true
+        },
+        "hub": {
+          "sections": [
+            "wissen"
+          ],
+          "title": "PetTech auf der IFA 2026",
+          "description": "Neue Fütterungslogik, offene Katzentoiletten und Alltagsdaten kritisch eingeordnet.",
+          "order": 355
+        },
+        "contentPlatform": {
+          "version": 2,
+          "cluster": "smarte-haustiertechnik",
+          "intent": "informational",
+          "animal": "both",
+          "products": [],
+          "decision": "off",
+          "blocks": [
+            "summary",
+            "checklist"
+          ],
+          "summary": [
+            "Riko bereitet geeignete trockene Nahrung mit Wasser zu und lagert kein fertiges Nassfutter.",
+            "M9 setzt auf einen veränderten mechanischen Sicherheitsansatz; unabhängige Serienprodukttests fehlen.",
+            "KI- und Gesundheitsversprechen bleiben Herstellerclaims, bis ihre Aussagekraft belegt ist."
+          ],
+          "checklist": [
+            "Exaktes Modell, Futter- oder Tierkompatibilität und Marktregion prüfen.",
+            "Ankündigungen von bestätigten Funktionen und unabhängiger Praxis trennen.",
+            "Datenqualität, Datenschutz, Reinigung und laufende Kosten vor dem Kauf klären."
+          ],
+          "faqMode": "none",
+          "cta": "{ mode: off }",
+          "theme": "blue"
+        },
+        "evidenceSources": [
+          "source: \"Neakasa Deutschland: Riko",
+          "source: \"Neakasa EU: abweichende Riko-Daten",
+          "source: \"Neakasa Deutschland: IFA 2026",
+          "source: \"Neakasa: IFA Innovation Award",
+          "source: \"Whisker: Modellübersicht",
+          "source: \"PurrSong: LavvieTAG 2",
+          "source: \"PetSuper: IFA-Unternehmensmitteilung",
+          "source: \"IFA: WePaws-Ausstellerprofil",
+          "source: \"PawSwing: Neo",
+          "source: \"IFA: PETGUGU-Ausstellerprofil"
+        ]
+      },
+      "issues": []
     },
     {
       "file": "apps/pfotentechnik/src/content/pages/kalk-katzentrinkbrunnen-entfernen.md",
@@ -21422,6 +21497,228 @@
         "maintenanceStatus": "complete"
       },
       "issues": []
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/neakasa-riko.md",
+      "slug": "neakasa riko",
+      "title": "Neakasa Riko",
+      "type": "product",
+      "data": {
+        "title": "Neakasa Riko",
+        "slug": "neakasa-riko",
+        "type": "product",
+        "layout": "product",
+        "testStatus": "manufacturer-data",
+        "productStatus": "active",
+        "description": "Futterautomat für Katzen, der geeignetes trockenes beziehungsweise gefriergetrocknetes Futter und Wasser getrennt lagert und erst zur Mahlzeit frisch vermischt.",
+        "recommendation": "Interessant für Katzenhalter, die geeignetes gefriergetrocknetes Alleinfutter regelmäßig mit Wasser zubereiten und diesen Ablauf automatisieren möchten; kein Ersatz für einen klassischen Nassfutterautomaten mit Dosen- oder Beutelfutter.",
+        "manufacturer": {
+          "key": "neakasa",
+          "name": "Neakasa",
+          "slug": "neakasa"
+        },
+        "category": {
+          "key": "futterautomaten",
+          "label": "Futterautomaten",
+          "path": "/smarte-futterautomaten/"
+        },
+        "productUrl": "/produkt/neakasa-riko/",
+        "seo": {
+          "title": "Neakasa Riko: Futterautomat mit Wasser im Check",
+          "description": "Neakasa Riko lagert Futter und Wasser getrennt und mischt beides erst zur Mahlzeit. Futterarten, Portionen, App, Akku und Grenzen eingeordnet.",
+          "canonical": "/produkt/neakasa-riko/",
+          "sitemap": true,
+          "priority": 0.8
+        },
+        "hub": {
+          "sections": [
+            "produkte",
+            "futterautomaten"
+          ]
+        },
+        "tags": [
+          "katze",
+          "futterautomat",
+          "gefriergetrocknetes-futter",
+          "app",
+          "feuchtfuetterung"
+        ],
+        "price": {
+          "current": 199.99,
+          "currency": "EUR",
+          "status": "unknown",
+          "checkedAt": "2026-09-15",
+          "source": {
+            "id": "neakasa-de",
+            "label": "Neakasa Deutschland",
+            "type": "merchant",
+            "url": "https://neakasa.de/products/neakasa-riko-smart-wet-food-feeder"
+          }
+        },
+        "priceAutomation": "editorial",
+        "priceState": "available",
+        "priceUpdated": "2026-09-15",
+        "priceAvailable": true,
+        "affiliateAvailable": false,
+        "availability": "unknown",
+        "availabilityReason": "Vorbestellung: am 15.09.2026 für 199,99 € gelistet, Early-Bird bis 20.09.2026. Voraussichtlicher Versand ab 21.09.2026 laut Hersteller; keine bestätigte sofortige Lieferbarkeit.",
+        "availabilityUpdated": "2026-09-15",
+        "editorialStatus": "complete",
+        "recommendationStatus": "limited",
+        "maintenanceStatus": "required",
+        "rating": 3.8,
+        "ratings": "{}",
+        "decision": {
+          "bestFor": [
+            "Katzenhalter, die geeignetes gefriergetrocknetes Alleinfutter regelmäßig rehydrieren",
+            "Viele kleine zeitgesteuerte Mahlzeiten",
+            "Haushalte, die den Wasseranteil der Mahlzeit automatisch einstellen möchten"
+          ],
+          "attention": [
+            "Kein Dosen-, Beutel-, Roh- oder bereits feuchtes Futter einfüllen",
+            "Primär für gefriergetrocknetes Futter optimiert",
+            "Ohne individuelle Zugangserkennung keine sichere Zuordnung der Portion zu einer Katze",
+            "Reste angefeuchteter Mahlzeiten müssen zeitnah entfernt werden"
+          ]
+        },
+        "review": {
+          "summary": "Riko verbindet automatische Portionierung mit einer erst zur Fütterung erfolgenden Wasserzugabe. Das Konzept unterscheidet sich deutlich von gekühlten Nassfutterautomaten.",
+          "verdict": "Spannende Speziallösung für kompatibles trockenes beziehungsweise gefriergetrocknetes Futter; die Langzeitzuverlässigkeit von Mahlwerk, Portionierung und Reinigung ist noch nicht unabhängig belegt."
+        },
+        "strengths": [
+          "Futter und Wasser bleiben bis zur Mahlzeit getrennt",
+          "Wasser-Futter-Verhältnis 1:1 bis 5:1 einstellbar",
+          "Bis zu 20 geplante Mahlzeiten pro Tag",
+          "Optionaler Akku laut Hersteller; Laufzeit abhängig von Nutzung"
+        ],
+        "weaknesses": [
+          "Kein klassisches Nassfutter kompatibel",
+          "Kompatibilität mit normalen Kroketten nicht pauschal gegeben",
+          "Keine individuelle Katzenidentifikation",
+          "Aktuell noch geringe unabhängige Langzeitevidenz"
+        ],
+        "specs": [
+          "label: \"Geeignet für",
+          "label: \"Napfmaterial",
+          "label: \"Reinigung",
+          "label: \"Kapazität Futterbehälter",
+          "label: \"Wassertank",
+          "label: \"Portionsgröße",
+          "label: \"Dosiergenauigkeit",
+          "label: \"Mahlzeiten",
+          "label: \"Wasser-Futter-Verhältnis",
+          "label: \"Futterart",
+          "label: \"App-Steuerung / WLAN",
+          "label: \"Stromversorgung",
+          "label: \"Backup-Akku",
+          "label: \"Materialien",
+          "label: \"Lieferumfang"
+        ],
+        "features": [
+          "Automatische Zubereitung mit Wasser",
+          "Neakasa-App",
+          "Fütterungspläne",
+          "Wasser-only-Modus",
+          "Sprachaufnahme",
+          "Futter-/Wasserstandsmeldungen",
+          "Optionaler Akku"
+        ],
+        "comparisonFilters": {
+          "animal": [
+            "cat"
+          ],
+          "petSize": [],
+          "foodType": [
+            "dry"
+          ],
+          "app": true,
+          "access": "open",
+          "reservoirLiters": 3
+        },
+        "multiPet": {
+          "sharedUse": "supported",
+          "identificationMethods": [
+            "none"
+          ],
+          "individualProfiles": "unavailable",
+          "individualAccess": "unavailable",
+          "individualFeeding": "unavailable",
+          "individualUsageData": "unavailable",
+          "similarPetLimitation": {
+            "status": "noneDocumented",
+            "description": "Keine individuelle Tiererkennung vorhanden; gemeinsame Nutzung ist möglich, aber Portionen können keiner einzelnen Katze zuverlässig zugeordnet werden."
+          },
+          "evidenceSourceUrls": [
+            "https://neakasa.de/products/neakasa-riko-smart-wet-food-feeder"
+          ]
+        },
+        "editorial": {
+          "assessmentType": "data-review",
+          "evidence": [
+            "manufacturer-documentation",
+            "technical-specifications",
+            "comparative-analysis"
+          ],
+          "testedHandsOn": false,
+          "lastVerifiedAt": "2026-09-14",
+          "note": "Technischer Datencheck auf Basis der abgeschlossenen DE-Recherche vom 14.09.2026; Preis und Vorbestellstatus am 15.09.2026 gezielt geprüft. Kein eigener Praxistest. Die vorläufige redaktionelle Bewertung 3,8/5 stammt aus dem gelieferten Redaktionsdraft, nicht aus Messungen oder Kundenbewertungen. EU-Spezifikationen weichen ab."
+        },
+        "evidenceSources": [
+          "source: \"Neakasa Deutschland – Riko Produktseite",
+          "source: \"Neakasa Deutschland – IFA 2026",
+          "source: \"Neakasa Deutschland – aktuelle Vorbestellung",
+          "source: \"Neakasa EU – regionaler Quellenkonflikt"
+        ],
+        "publishedAt": "2026-09-15",
+        "updatedAt": "2026-09-15",
+        "author": {
+          "name": "PfotenTechnik Redaktion",
+          "role": "Redaktion"
+        },
+        "images": {
+          "hero": {
+            "src": "../../assets/images/products/neakasa-riko/hero.webp",
+            "alt": "Neakasa Riko in Grau mit App-Darstellung, Edelstahlnäpfen und Reinigungszubehör"
+          },
+          "thumbnail": {
+            "src": "../../assets/images/products/neakasa-riko/thumbnail.webp",
+            "alt": "Grauer Neakasa Riko mit Napf, Vorratsbehältern und Zubehör"
+          },
+          "comparison": {
+            "src": "../../assets/images/products/neakasa-riko/comparison.webp",
+            "alt": "Neakasa Riko mit getrennten Futter- und Wasserbehältern in der Produktansicht"
+          },
+          "gallery": [
+            "src: \"../../assets/images/products/neakasa-riko/gallery-1.webp",
+            "src: \"../../assets/images/products/neakasa-riko/gallery-2.webp",
+            "src: \"../../assets/images/products/neakasa-riko/gallery-3.webp"
+          ]
+        },
+        "decisionJourney": {
+          "cluster": "futterautomaten",
+          "stage": "decision",
+          "intent": "neakasa-riko-pruefen",
+          "primaryQuestion": "Passt die automatische Rehydrierung zum verwendeten Katzenfutter und zur täglichen Reinigung?",
+          "next": [
+            "/smarte-futterautomaten/"
+          ],
+          "fallback": [
+            "/ifa-2026-haustiertechnik/"
+          ]
+        },
+        "faq": [
+          "question: \"Kann Riko Dosen- oder Beutelfutter ausgeben?",
+          "question: \"Erkennt Riko, welche Katze gefressen hat?",
+          "question: \"Ist Riko bereits sofort lieferbar?"
+        ]
+      },
+      "issues": [
+        {
+          "severity": "error",
+          "code": "TEST_CLAIM_CONFLICT",
+          "message": "Testbehauptung widerspricht dem Teststatus."
+        }
+      ]
     },
     {
       "file": "apps/pfotentechnik/src/content/products/oneisall-2-2l-cordless-fountain.md",

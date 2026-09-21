@@ -77,7 +77,7 @@ subscription:
   additionalCostNote: "Der Deutschlandpreis von Care+ ist öffentlich nicht belastbar ausgewiesen; der Fütterungsbetrieb bleibt ohne Abo möglich."
   plans: []
 price:
-  current: 119
+  current: 166.6
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 16 aktuell hinterlegten Vergleichspreisen derselben Kategorie."

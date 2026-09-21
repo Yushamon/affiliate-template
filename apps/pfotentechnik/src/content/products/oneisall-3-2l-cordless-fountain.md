@@ -60,10 +60,10 @@ images:
     - src: ../../assets/images/products/oneisall-3-2l-cordless-fountain/gallery-3.webp
       alt: oneisall PW14 an einem frei gewählten Trinkplatz
 price:
-  current: 63.11
+  current: 63.21
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-09T06:21:59.930Z"
+  checkedAt: "2026-09-15T03:46:40.965Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -78,12 +78,12 @@ rating: 4.4
 score: 87
 
 priceState: "available"
-priceUpdated: "2026-09-09T06:21:59.930Z"
+priceUpdated: "2026-09-15T03:46:40.965Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-09T06:21:59.930Z"
+availabilityUpdated: "2026-09-15T03:46:40.965Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

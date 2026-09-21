@@ -1,0 +1,71 @@
+{
+  "product": "Neakasa M9",
+  "slug": "neakasa-m9",
+  "researchDate": "2026-09-14",
+  "status": {
+    "productPhase": "announced / preview",
+    "officialLaunchDate": "2026-10-09",
+    "germanyAvailability": "not yet announced",
+    "germanyPriceEUR": null
+  },
+  "known": {
+    "type": "open-top self-cleaning cat litter box",
+    "generation": "next-generation open-top design following M1 concept",
+    "openViewCabinL": 96,
+    "entryHeightCm": 26,
+    "entryHeightIn": 10.2,
+    "tiltSafeRotation": true,
+    "cleaningChamberRemainsOpenDuringCycle": true,
+    "pureTowerOdorControl": [
+      "activated carbon",
+      "desiccant layer"
+    ],
+    "detachableComponents": true,
+    "litterShieldRing": true,
+    "app": [
+      "remote control",
+      "cat activity / litter-use tracking",
+      "device status notifications"
+    ]
+  },
+  "editorialPositioning": {
+    "safeWording": "Neakasa verlagert beim M9 einen Teil der Sicherheitslogik in die mechanische Konstruktion: Der Toilettenraum bleibt während der Rotation offen.",
+    "doNotClaim": "M9 ist objektiv sicherer als andere automatische Katzentoiletten.",
+    "why": "Der Sicherheitsvorteil ist derzeit eine Herstellerkonstruktion/-argumentation und noch nicht unabhängig validiert."
+  },
+  "unknownUntilLaunchOrManual": [
+    "Außenmaße",
+    "Leergewicht",
+    "Abfallbehältervolumen",
+    "zulässiges Katzengewicht",
+    "Mindestgewicht für Automatik",
+    "Sensoranzahl und Sensortypen",
+    "konkrete Streukompatibilität",
+    "Lautstärke",
+    "Deutschlandpreis",
+    "Deutschland-Liefertermin",
+    "Verbrauchsmaterialkosten",
+    "Offline-Funktionen",
+    "M9-spezifische Garantiebedingungen"
+  ],
+  "m1PlusComparisonHypotheses": [
+    "niedrigerer Einstieg als M1 Plus (ca. 26 cm vs. ca. 35.2 cm im bestehenden PfotenTechnik-Datensatz)",
+    "neuer mechanischer Sicherheitsansatz mit TILT-SAFE",
+    "96-L-Open-View-Cabin als neue Raum-/Komfortangabe",
+    "PureTower-Geruchskontrolle mit Aktivkohle + Trockenmittel"
+  ],
+  "sources": [
+    {
+      "type": "manufacturer_de_ifa",
+      "url": "https://neakasa.de/blogs/news/ifa-2026-neakasa"
+    },
+    {
+      "type": "manufacturer_global_ifa",
+      "url": "https://neakasa.com/blogs/news-and-events/ifa-2026-berlin-neakasa-showcase"
+    },
+    {
+      "type": "manufacturer_eu_ifa",
+      "url": "https://eu.neakasa.com/blogs/news-and-events/neakasa-riko-honored-with-ifa-2026-innovation-award"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "product": "Neakasa Riko",
+  "slug": "neakasa-riko",
+  "researchDate": "2026-09-14",
+  "market": "DE",
+  "status": {
+    "manufacturerLaunchDate": "2026-09-08",
+    "germanyOrderStatus": "preorder",
+    "germanyExpectedShippingFrom": "2026-09-21",
+    "earlyBirdUntil": "2026-09-20",
+    "earlyBirdPriceEUR": 199.99,
+    "regularPriceEUR": 299.99
+  },
+  "editorialPositioning": {
+    "notAClassicWetFoodFeeder": true,
+    "coreExplanation": "Riko lagert geeignetes trockenes bzw. gefriergetrocknetes Futter und Wasser getrennt. Erst unmittelbar vor der geplanten Mahlzeit wird Futter portioniert, zerkleinert und mit Wasser vermischt.",
+    "doNotClaim": [
+      "dass vorbereitetes Nassfutter im Gerät gelagert oder gekühlt wird",
+      "dass jedes beliebige Trockenfutter kompatibel ist",
+      "dass Fütterungsdaten einer einzelnen Katze zugeordnet werden können"
+    ]
+  },
+  "deSpecs": {
+    "foodBinL": 3.0,
+    "waterTankL": 2.4,
+    "singleServingG": "1-15",
+    "feedingPrecisionG": "±1",
+    "mealsPerDay": "bis zu 20",
+    "waterFoodRatio": "1:1 bis 5:1",
+    "app": "Neakasa App",
+    "connectivity": [
+      "Bluetooth",
+      "2.4-GHz-WLAN"
+    ],
+    "power": [
+      "Netzkabel",
+      "optionaler Akku"
+    ],
+    "batteryOptional": "10.8 V / 2500 mAh",
+    "batteryRuntimeClaim": "bis zu 7 Tage, abhängig von Nutzung und Einstellungen",
+    "materials": [
+      "ABS",
+      "PP",
+      "Edelstahl"
+    ],
+    "voiceRecording": true,
+    "waterOnlyMode": true,
+    "bowlsIncluded": 2
+  },
+  "foodCompatibility": {
+    "primary": "gefriergetrocknetes Katzenfutter",
+    "maxPieceMm": "15 x 15 x 25",
+    "manufacturerAlsoLists": [
+      "gefriergetrocknetes Alleinfutter",
+      "gefriergetrocknete Snacks",
+      "luftgetrocknetes Katzenfutter",
+      "gebackenes Katzenfutter",
+      "extrudiertes Trockenfutter"
+    ],
+    "excluded": [
+      "Dosenfutter",
+      "Futter aus Portionsbeuteln",
+      "bereits feuchtes Futter",
+      "gekühltes Futter",
+      "Rohfutter",
+      "selbst gekochtes Futter"
+    ],
+    "editorialCaution": "Die DE-Verkaufsseite formuliert die Trockenfutter-Eignung breit, das FAQ nennt gefriergetrocknetes Futter als primäre Auslegung. PfotenTechnik sollte konservativ formulieren und konkrete Futterkompatibilität nicht pauschalisieren."
+  },
+  "multiPet": {
+    "sharedUse": "grundsätzlich möglich",
+    "individualAccessRecognition": false,
+    "individualIntakeAttribution": false,
+    "note": "Bei unterschiedlichen Diäten oder genauer Futterkontrolle getrennte Fütterung sinnvoll."
+  },
+  "maintenance": {
+    "foodWaterContactPartsRemovable": true,
+    "mainUnitImmersible": false,
+    "wetMealResidue": "zeitnah entfernen; nicht längere Zeit stehen lassen"
+  },
+  "regionalSourceConflict": {
+    "exists": true,
+    "dePreferredForGermanMarket": true,
+    "euPageValues": {
+      "waterTankL": 2.2,
+      "batteryOptional": "11.1 V / 2600 mAh",
+      "singleServingG": "1-20",
+      "feedingPrecisionG": "±0.1",
+      "noiseDb": "<=55",
+      "connectivity": [
+        "Bluetooth (BLE)"
+      ],
+      "dimensionsMm": "408 x 171.5 x 316.5"
+    },
+    "rule": "DE-Werte für Deutschland verwenden. EU-Abweichungen als Source Conflict dokumentieren, nicht zusammenführen. Dimensionen und Geräusch nur übernehmen, wenn Codex/Redaktion bewusst EU-Variantendaten mit entsprechendem Hinweis verwenden will."
+  },
+  "sources": [
+    {
+      "type": "manufacturer_de_product",
+      "url": "https://neakasa.de/products/neakasa-riko-smart-wet-food-feeder"
+    },
+    {
+      "type": "manufacturer_de_ifa",
+      "url": "https://neakasa.de/blogs/news/ifa-2026-neakasa"
+    },
+    {
+      "type": "manufacturer_de_award",
+      "url": "https://neakasa.de/blogs/news/neakasa-riko-ifa-innovation-awards-2026"
+    },
+    {
+      "type": "manufacturer_eu_product_conflict",
+      "url": "https://eu.neakasa.com/products/neakasa-riko-automatic-pet-feeder-for-wet-food"
+    },
+    {
+      "type": "ifa_award",
+      "url": "https://www.ifa-berlin.com/de/innovation-awards"
+    }
+  ]
+}

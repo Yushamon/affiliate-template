@@ -1,249 +1,88 @@
 {
   "schemaVersion": 2,
   "provider": "combined",
-  "generatedAt": "2026-09-10T09:55:07.412Z",
+  "generatedAt": "2026-09-21T06:28:44.069Z",
   "property": "sc-domain:pfotentechnik.de",
   "dataUpdatedAt": {
-    "google": "2026-09-10T09:55:07.380Z",
-    "bing": "2026-09-09T00:00:00.000Z"
+    "google": "2026-09-18T00:00:00.000Z",
+    "bing": "2026-09-19T00:00:00.000Z"
   },
   "providerStatus": {
     "google": "current",
     "bing": "current"
   },
-  "range": "7d",
-  "key": "7d",
-  "label": "Letzte 7 Tage",
-  "startDate": "2026-09-03",
-  "endDate": "2026-09-09",
-  "comparisonStartDate": "2026-08-27",
-  "comparisonEndDate": "2026-09-02",
+  "range": "28d",
+  "key": "28d",
+  "label": "Letzte 28 Tage",
+  "startDate": "2026-08-22",
+  "endDate": "2026-09-18",
+  "comparisonStartDate": "2026-07-25",
+  "comparisonEndDate": "2026-08-21",
   "dataState": "combined",
-  "partial": false,
-  "lowData": true,
+  "partial": true,
+  "lowData": false,
   "metrics": {
     "current": {
-      "clicks": 2,
-      "impressions": 56,
-      "ctr": 3.57,
-      "position": 7
+      "clicks": 19,
+      "impressions": 514,
+      "ctr": 3.7,
+      "position": 24.2
     },
-    "previous": {
-      "clicks": 2,
-      "impressions": 43,
-      "ctr": 4.65,
-      "position": 18.9
-    },
-    "change": {
-      "clicks": 0,
-      "impressions": 30.2,
-      "ctr": -1.08,
-      "position": 11.9
-    }
+    "previous": null,
+    "change": null
   },
   "pages": [
     {
-      "page": "/futtermenge-katze/",
+      "page": "/",
       "clicks": 0,
-      "impressions": 14,
+      "impressions": 16,
       "ctr": 0,
-      "position": 6,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 14,
-          "ctr": 0,
-          "position": 6
-        }
-      }
-    },
-    {
-      "page": "/hund-ist-muede/",
-      "clicks": 0,
-      "impressions": 7,
-      "ctr": 0,
-      "position": 7,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 7,
-          "ctr": 0,
-          "position": 7
-        }
-      }
-    },
-    {
-      "page": "/katzentrinkbrunnen-richtig-reinigen/",
-      "clicks": 0,
-      "impressions": 4,
-      "ctr": 0,
-      "position": 5,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 5
-        }
-      }
-    },
-    {
-      "page": "/produkt/petkit-eversweet-ultra/",
-      "clicks": 0,
-      "impressions": 4,
-      "ctr": 0,
-      "position": 5,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 5
-        }
-      }
-    },
-    {
-      "page": "/produkt/petlibro-scout-smart-camera/",
-      "clicks": 0,
-      "impressions": 4,
-      "ctr": 0,
-      "position": 8,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 8
-        }
-      }
-    },
-    {
-      "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 5.7,
-      "sources": [
-        "google",
-        "bing"
-      ],
-      "providers": {
-        "google": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5
-        },
-        "bing": {
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 6
-        }
-      }
-    },
-    {
-      "page": "/hersteller/weenect/",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 7,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 7
-        }
-      }
-    },
-    {
-      "page": "/produkt/zeromouse-2-0/",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 4,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 4
-        }
-      }
-    },
-    {
-      "page": "/wie-viel-wasser-braucht-ein-hund/",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 6,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 6
-        }
-      }
-    },
-    {
-      "page": "/welpen-richtig-fuettern/",
-      "clicks": 1,
-      "impressions": 2,
-      "ctr": 50,
-      "position": 4,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 1,
-          "impressions": 2,
-          "ctr": 50,
-          "position": 4
-        }
-      }
-    },
-    {
-      "page": "/trinkbrunnen/",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 47.5,
+      "position": 50.4,
       "sources": [
         "google"
       ],
       "providers": {
         "google": {
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 16,
           "ctr": 0,
-          "position": 47.5
+          "position": 50.38
+        }
+      }
+    },
+    {
+      "page": "/smarte-futterautomaten/",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 6,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 6
+        }
+      }
+    },
+    {
+      "page": "/produkt/tractive-cat-6-mini/",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 2.3,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 2.25
         }
       }
     },
@@ -266,61 +105,241 @@
       }
     },
     {
-      "page": "/wie-lange-bleibt-trockenfutter-frisch/",
+      "page": "/datenschutz-bei-gps-trackern/",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 2,
+      "position": 5,
       "sources": [
-        "bing"
+        "google"
       ],
       "providers": {
-        "bing": {
+        "google": {
           "clicks": 0,
           "impressions": 2,
           "ctr": 0,
-          "position": 2
+          "position": 5
         }
       }
     },
     {
-      "page": "/warum-katzen-fliessendes-wasser-trinken/",
+      "page": "/hund-ist-muede/",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 2,
+      "position": 8.5,
       "sources": [
-        "bing"
+        "google"
       ],
       "providers": {
-        "bing": {
+        "google": {
           "clicks": 0,
           "impressions": 2,
           "ctr": 0,
-          "position": 2
+          "position": 8.5
         }
       }
     },
     {
-      "page": "/produkt/petlibro-dockstream-2-smart/",
-      "clicks": 1,
+      "page": "/trinkbrunnen/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 47.5,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 47.5
+        }
+      }
+    },
+    {
+      "page": "/produkt/weenect-xt/",
+      "clicks": 0,
       "impressions": 1,
-      "ctr": 100,
+      "ctr": 0,
+      "position": 1,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        }
+      }
+    },
+    {
+      "page": "/produkt/honeyguardian-smart-pet-feeder-s305d/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
+        }
+      }
+    },
+    {
+      "page": "/produkt/weenect-xs/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
+        }
+      }
+    },
+    {
+      "page": "/produkt/xiaomi-smart-pet-fountain-2/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
+        }
+      }
+    },
+    {
+      "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
+        }
+      }
+    },
+    {
+      "page": "/redaktion/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
+        }
+      }
+    },
+    {
+      "page": "/produkt/honeyguardian-a305d/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
       "position": 3,
       "sources": [
-        "bing"
+        "google"
       ],
       "providers": {
-        "bing": {
-          "clicks": 1,
+        "google": {
+          "clicks": 0,
           "impressions": 1,
-          "ctr": 100,
+          "ctr": 0,
           "position": 3
         }
       }
     },
     {
+      "page": "/produkt/petkit-eversweet-ultra/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 4
+        }
+      }
+    },
+    {
+      "page": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 5
+        }
+      }
+    },
+    {
       "page": "/produkt/petlibro-glacier-ultrafiltration/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6
+        }
+      }
+    },
+    {
+      "page": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
@@ -356,124 +375,16 @@
       }
     },
     {
-      "page": "/produkt/weenect-xs/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 2,
-      "sources": [
-        "google"
-      ],
-      "providers": {
-        "google": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 2
-        }
-      }
-    },
-    {
-      "page": "/produkt/weenect-xt/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 1,
-      "sources": [
-        "google"
-      ],
-      "providers": {
-        "google": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 1
-        }
-      }
-    },
-    {
-      "page": "/produkt/xiaomi-smart-pet-fountain-2/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 2,
-      "sources": [
-        "google"
-      ],
-      "providers": {
-        "google": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 2
-        }
-      }
-    },
-    {
-      "page": "/smarte-futterautomaten/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 7,
-      "sources": [
-        "google"
-      ],
-      "providers": {
-        "google": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 7
-        }
-      }
-    },
-    {
-      "page": "/produkt/tractive-cat-6-mini/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 5,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5
-        }
-      }
-    },
-    {
-      "page": "/wie-funktionieren-gps-tracker/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 3,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 3
-        }
-      }
-    },
-    {
-      "page": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+      "page": "/smarte-haustiertechnik/",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 8,
       "sources": [
-        "bing"
+        "google"
       ],
       "providers": {
-        "bing": {
+        "google": {
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -482,760 +393,112 @@
       }
     },
     {
-      "page": "/wie-viele-mahlzeiten-hund/",
+      "page": "/welpen-richtig-fuettern/",
       "clicks": 0,
       "impressions": 1,
-      "ctr": 0,
-      "position": 8,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 8
-        }
-      }
-    },
-    {
-      "page": "/fuetterungszeiten-nach-alter/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 6,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6
-        }
-      }
-    },
-    {
-      "page": "/hund-frisst-zu-schnell/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 1,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 1
-        }
-      }
-    },
-    {
-      "page": "/wie-viel-wasser-braucht-eine-katze/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 5,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5
-        }
-      }
-    },
-    {
-      "page": "/produkt/cat-mate-c200/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 5,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5
-        }
-      }
-    },
-    {
-      "page": "/trinkbrunnen-fuer-katzen-sinnvoll/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 7,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 7
-        }
-      }
-    }
-  ],
-  "queries": [
-    {
-      "query": "futtermenge katze tabelle",
-      "clicks": 0,
-      "impressions": 6,
-      "ctr": 0,
-      "position": 6,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 6,
-          "ctr": 0,
-          "position": 6
-        }
-      }
-    },
-    {
-      "query": "petkit eversweet ultra",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 5,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 5
-        }
-      }
-    },
-    {
-      "query": "mischfütterung katze tabelle",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 5,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 3,
-          "ctr": 0,
-          "position": 5
-        }
-      }
-    },
-    {
-      "query": "petlibro katzenbrunnen modelle unterschiede",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 5,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 5
-        }
-      }
-    },
-    {
-      "query": "petlibro scout smart camera was ist die beste einstellung bei der haustiererkennung",
-      "clicks": 0,
-      "impressions": 2,
       "ctr": 0,
       "position": 10,
       "sources": [
-        "bing"
+        "google"
       ],
       "providers": {
-        "bing": {
+        "google": {
           "clicks": 0,
-          "impressions": 2,
+          "impressions": 1,
           "ctr": 0,
           "position": 10
         }
       }
     },
     {
-      "query": "weenect xs silikonhülle, ersatz",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 8,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 8
-        }
-      }
-    },
-    {
-      "query": "den wasserfluss bei einen katzentrinkbrunnen drosseln wenn keine regulierebare pumpe dabei ist welche möglichkeiten gibt es",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 4,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 4
-        }
-      }
-    },
-    {
-      "query": "richtige welpenfütterung menge etc fütterungsskurve",
-      "clicks": 1,
-      "impressions": 1,
-      "ctr": 100,
-      "position": 2,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 1,
-          "impressions": 1,
-          "ctr": 100,
-          "position": 2
-        }
-      }
-    },
-    {
-      "query": "petlibro dockstream 2 artikelnummer",
-      "clicks": 1,
-      "impressions": 1,
-      "ctr": 100,
-      "position": 3,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 1,
-          "impressions": 1,
-          "ctr": 100,
-          "position": 3
-        }
-      }
-    },
-    {
-      "query": "welche material wird bei gps tracking chip für haustiere benutzt",
+      "page": "/produkt/petlibro-air-wifi-feeder/",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 3,
+      "position": 21,
       "sources": [
-        "bing"
+        "google"
       ],
       "providers": {
-        "bing": {
+        "google": {
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 3
+          "position": 21
+        }
+      }
+    }
+  ],
+  "queries": [
+    {
+      "query": "petsafe bewertung",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 47.2,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 47.18
         }
       }
     },
     {
-      "query": "trockenfutter hunde geöffnete verpackung haltbarkeit bakterien",
+      "query": "beuteerkennung",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 3,
       "ctr": 0,
-      "position": 3,
+      "position": 70.3,
       "sources": [
-        "bing"
+        "google"
       ],
       "providers": {
-        "bing": {
+        "google": {
           "clicks": 0,
-          "impressions": 1,
+          "impressions": 3,
           "ctr": 0,
-          "position": 3
+          "position": 70.33
         }
       }
     },
     {
-      "query": "trinkbrunnen katze wichtig?",
+      "query": "pet feeder",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 7,
+      "position": 70,
       "sources": [
-        "bing"
+        "google"
       ],
       "providers": {
-        "bing": {
+        "google": {
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 7
+          "position": 70
         }
       }
     },
     {
-      "query": "brauchen katzen starre fütterungszeiten",
+      "query": "katzenbrunnen wo aufstellen",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 6,
+      "position": 92,
       "sources": [
-        "bing"
+        "google"
       ],
       "providers": {
-        "bing": {
+        "google": {
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 6
-        }
-      }
-    },
-    {
-      "query": "katzenbrunnen edelstahl reinigen",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 5,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5
-        }
-      }
-    },
-    {
-      "query": "müdigkeit hund",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 8,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 8
-        }
-      }
-    },
-    {
-      "query": "welpen füttern menge",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 6,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6
-        }
-      }
-    },
-    {
-      "query": "ist es gesund wenn der hund nach spaziergang müde ist",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 7,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 7
-        }
-      }
-    },
-    {
-      "query": "wieviel ml wasser braucht eine katze tãglich trinken",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 5,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5
-        }
-      }
-    },
-    {
-      "query": "wieviel mahlzeiten hund",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 8,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 8
-        }
-      }
-    },
-    {
-      "query": "fediaf katze energiebedarf erwachsene katze kcal kg tag",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 6,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6
-        }
-      }
-    },
-    {
-      "query": "zeromouse was passiert bei wlan",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 2,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 2
-        }
-      }
-    },
-    {
-      "query": "dosenfutter katze tabelle",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 7,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 7
-        }
-      }
-    },
-    {
-      "query": "katzen mischfütterung tabelle",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 7,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 7
-        }
-      }
-    },
-    {
-      "query": "wenn eine katze sehr viel trinkt ursache",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 7,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 7
-        }
-      }
-    },
-    {
-      "query": "cat mate katzenbrunnen pumpe reinigen anleitung",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 2,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 2
-        }
-      }
-    },
-    {
-      "query": "zeromouse ki fest installiert",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 7,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 7
-        }
-      }
-    },
-    {
-      "query": "ursache hund müde kotzt",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 1,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 1
-        }
-      }
-    },
-    {
-      "query": "bester hunde futterautomat groß",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 8,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 8
-        }
-      }
-    },
-    {
-      "query": "alte katze trinkt viel",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 7,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 7
-        }
-      }
-    },
-    {
-      "query": "trinkmenge hund skala",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 3,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 3
-        }
-      }
-    },
-    {
-      "query": "warum trinken katzen lieber aus anderen wassernä¡¡pfen als ihrem napf",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 3,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 3
-        }
-      }
-    },
-    {
-      "query": "hund müde und schlapp",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 7,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 7
-        }
-      }
-    },
-    {
-      "query": "hund ist müde und lustlos",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 9,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 9
-        }
-      }
-    },
-    {
-      "query": "petlibro trinkbrunnen katze preisunterschiede vergleich",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 6,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 6
-        }
-      }
-    },
-    {
-      "query": "cate mate c200 aluschalen",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 5,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5
-        }
-      }
-    },
-    {
-      "query": "tractive cat 6 mini halsband",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 5,
-      "sources": [
-        "bing"
-      ],
-      "providers": {
-        "bing": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 5
+          "position": 92
         }
       }
     }
@@ -1243,29 +506,236 @@
   "pageQueries": [],
   "trend": [
     {
-      "date": "2026-09-03",
+      "date": "2026-08-22",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 6,
       "ctr": 0,
-      "position": 4.5,
+      "position": 6,
       "sources": [
-        "google"
+        "google",
+        "bing"
       ],
       "providers": {
         "google": {
           "clicks": 0,
           "impressions": 2,
           "ctr": 0,
-          "position": 4.5
+          "position": 6
+        },
+        "bing": {
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": null
         }
       }
     },
     {
-      "date": "2026-09-04",
-      "clicks": 2,
-      "impressions": 49,
-      "ctr": 4.08,
-      "position": 5.6,
+      "date": "2026-08-23",
+      "clicks": 1,
+      "impressions": 6,
+      "ctr": 16.67,
+      "position": 8.5,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 8.5
+        },
+        "bing": {
+          "clicks": 1,
+          "impressions": 4,
+          "ctr": 25,
+          "position": null
+        }
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 25,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 25
+        },
+        "bing": {
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": null
+        }
+      }
+    },
+    {
+      "date": "2026-08-25",
+      "clicks": 1,
+      "impressions": 8,
+      "ctr": 12.5,
+      "position": 26,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 26
+        },
+        "bing": {
+          "clicks": 1,
+          "impressions": 6,
+          "ctr": 16.67,
+          "position": null
+        }
+      }
+    },
+    {
+      "date": "2026-08-26",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 47,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 47
+        },
+        "bing": {
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": null
+        }
+      }
+    },
+    {
+      "date": "2026-08-27",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 55.7,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 55.7
+        },
+        "bing": {
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": null
+        }
+      }
+    },
+    {
+      "date": "2026-08-28",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 58.8,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 58.8
+        },
+        "bing": {
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": null
+        }
+      }
+    },
+    {
+      "date": "2026-08-29",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 55,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 55
+        },
+        "bing": {
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": null
+        }
+      }
+    },
+    {
+      "date": "2026-08-30",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 50,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 50
+        },
+        "bing": {
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": null
+        }
+      }
+    },
+    {
+      "date": "2026-08-31",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": null,
       "sources": [
         "google",
         "bing"
@@ -1275,24 +745,125 @@
           "clicks": 0,
           "impressions": 0,
           "ctr": 0,
-          "position": 0
+          "position": null
         },
         "bing": {
-          "clicks": 2,
-          "impressions": 49,
-          "ctr": 4.08,
-          "position": 5.6
+          "clicks": 0,
+          "impressions": 13,
+          "ctr": 0,
+          "position": null
+        }
+      }
+    },
+    {
+      "date": "2026-09-01",
+      "clicks": 1,
+      "impressions": 11,
+      "ctr": 9.09,
+      "position": 21,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 21
+        },
+        "bing": {
+          "clicks": 1,
+          "impressions": 10,
+          "ctr": 10,
+          "position": null
+        }
+      }
+    },
+    {
+      "date": "2026-09-02",
+      "clicks": 1,
+      "impressions": 19,
+      "ctr": 5.26,
+      "position": 2,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
+        },
+        "bing": {
+          "clicks": 1,
+          "impressions": 18,
+          "ctr": 5.56,
+          "position": null
+        }
+      }
+    },
+    {
+      "date": "2026-09-03",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 4.5,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 4.5
+        },
+        "bing": {
+          "clicks": 0,
+          "impressions": 13,
+          "ctr": 0,
+          "position": null
+        }
+      }
+    },
+    {
+      "date": "2026-09-04",
+      "clicks": 1,
+      "impressions": 14,
+      "ctr": 7.14,
+      "position": null,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": null
+        },
+        "bing": {
+          "clicks": 1,
+          "impressions": 14,
+          "ctr": 7.14,
+          "position": null
         }
       }
     },
     {
       "date": "2026-09-05",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 12,
       "ctr": 0,
       "position": 4,
       "sources": [
-        "google"
+        "google",
+        "bing"
       ],
       "providers": {
         "google": {
@@ -1300,35 +871,49 @@
           "impressions": 2,
           "ctr": 0,
           "position": 4
+        },
+        "bing": {
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": null
         }
       }
     },
     {
       "date": "2026-09-06",
-      "clicks": 0,
-      "impressions": 0,
-      "ctr": 0,
+      "clicks": 1,
+      "impressions": 15,
+      "ctr": 6.67,
       "position": null,
       "sources": [
-        "google"
+        "google",
+        "bing"
       ],
       "providers": {
         "google": {
           "clicks": 0,
           "impressions": 0,
           "ctr": 0,
-          "position": 0
+          "position": null
+        },
+        "bing": {
+          "clicks": 1,
+          "impressions": 15,
+          "ctr": 6.67,
+          "position": null
         }
       }
     },
     {
       "date": "2026-09-07",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
+      "clicks": 2,
+      "impressions": 24,
+      "ctr": 8.33,
       "position": 1,
       "sources": [
-        "google"
+        "google",
+        "bing"
       ],
       "providers": {
         "google": {
@@ -1336,17 +921,24 @@
           "impressions": 1,
           "ctr": 0,
           "position": 1
+        },
+        "bing": {
+          "clicks": 2,
+          "impressions": 23,
+          "ctr": 8.7,
+          "position": null
         }
       }
     },
     {
       "date": "2026-09-08",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
+      "clicks": 3,
+      "impressions": 29,
+      "ctr": 10.34,
       "position": 49.5,
       "sources": [
-        "google"
+        "google",
+        "bing"
       ],
       "providers": {
         "google": {
@@ -1354,157 +946,293 @@
           "impressions": 2,
           "ctr": 0,
           "position": 49.5
+        },
+        "bing": {
+          "clicks": 3,
+          "impressions": 27,
+          "ctr": 11.11,
+          "position": null
         }
       }
     },
     {
       "date": "2026-09-09",
       "clicks": 0,
-      "impressions": 0,
+      "impressions": 18,
       "ctr": 0,
       "position": null,
       "sources": [
-        "google"
+        "google",
+        "bing"
       ],
       "providers": {
         "google": {
           "clicks": 0,
           "impressions": 0,
           "ctr": 0,
-          "position": 0
+          "position": null
+        },
+        "bing": {
+          "clicks": 0,
+          "impressions": 18,
+          "ctr": 0,
+          "position": null
+        }
+      }
+    },
+    {
+      "date": "2026-09-10",
+      "clicks": 1,
+      "impressions": 27,
+      "ctr": 3.7,
+      "position": 4.5,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 4.5
+        },
+        "bing": {
+          "clicks": 1,
+          "impressions": 23,
+          "ctr": 4.35,
+          "position": null
+        }
+      }
+    },
+    {
+      "date": "2026-09-11",
+      "clicks": 0,
+      "impressions": 31,
+      "ctr": 0,
+      "position": null,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": null
+        },
+        "bing": {
+          "clicks": 0,
+          "impressions": 31,
+          "ctr": 0,
+          "position": null
+        }
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 2,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
+        },
+        "bing": {
+          "clicks": 0,
+          "impressions": 24,
+          "ctr": 0,
+          "position": null
+        }
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "clicks": 2,
+      "impressions": 23,
+      "ctr": 8.7,
+      "position": 2,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 2
+        },
+        "bing": {
+          "clicks": 2,
+          "impressions": 20,
+          "ctr": 10,
+          "position": null
+        }
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "clicks": 1,
+      "impressions": 38,
+      "ctr": 2.63,
+      "position": 5,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 5
+        },
+        "bing": {
+          "clicks": 1,
+          "impressions": 36,
+          "ctr": 2.78,
+          "position": null
+        }
+      }
+    },
+    {
+      "date": "2026-09-15",
+      "clicks": 1,
+      "impressions": 34,
+      "ctr": 2.94,
+      "position": 9.5,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 9.5
+        },
+        "bing": {
+          "clicks": 1,
+          "impressions": 32,
+          "ctr": 3.13,
+          "position": null
+        }
+      }
+    },
+    {
+      "date": "2026-09-16",
+      "clicks": 2,
+      "impressions": 32,
+      "ctr": 6.25,
+      "position": null,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": null
+        },
+        "bing": {
+          "clicks": 2,
+          "impressions": 32,
+          "ctr": 6.25,
+          "position": null
+        }
+      }
+    },
+    {
+      "date": "2026-09-17",
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": null,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": null
+        },
+        "bing": {
+          "clicks": 0,
+          "impressions": 24,
+          "ctr": 0,
+          "position": null
+        }
+      }
+    },
+    {
+      "date": "2026-09-18",
+      "clicks": 1,
+      "impressions": 38,
+      "ctr": 2.63,
+      "position": null,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0,
+          "position": null
+        },
+        "bing": {
+          "clicks": 1,
+          "impressions": 38,
+          "ctr": 2.63,
+          "position": null
         }
       }
     }
   ],
-  "crawl": [
-    {
-      "date": "2026-09-03T00:00:00.000Z",
-      "allOtherCodes": 50,
-      "blockedByRobotsTxt": 0,
-      "code2xx": 176,
-      "code301": 18,
-      "code302": 0,
-      "code4xx": 0,
-      "code5xx": 0,
-      "connectionTimeout": 0,
-      "containsMalware": 0,
-      "crawlErrors": 0,
-      "crawledPages": 73,
-      "dnsFailures": 0,
-      "inIndex": 170,
-      "inLinks": 0
-    },
-    {
-      "date": "2026-09-04T00:00:00.000Z",
-      "allOtherCodes": 49,
-      "blockedByRobotsTxt": 0,
-      "code2xx": 180,
-      "code301": 18,
-      "code302": 0,
-      "code4xx": 0,
-      "code5xx": 0,
-      "connectionTimeout": 0,
-      "containsMalware": 0,
-      "crawlErrors": 0,
-      "crawledPages": 70,
-      "dnsFailures": 0,
-      "inIndex": 174,
-      "inLinks": 0
-    },
-    {
-      "date": "2026-09-05T00:00:00.000Z",
-      "allOtherCodes": 39,
-      "blockedByRobotsTxt": 0,
-      "code2xx": 198,
-      "code301": 20,
-      "code302": 0,
-      "code4xx": 0,
-      "code5xx": 0,
-      "connectionTimeout": 0,
-      "containsMalware": 0,
-      "crawlErrors": 0,
-      "crawledPages": 59,
-      "dnsFailures": 0,
-      "inIndex": 192,
-      "inLinks": 0
-    },
-    {
-      "date": "2026-09-06T00:00:00.000Z",
-      "allOtherCodes": 39,
-      "blockedByRobotsTxt": 0,
-      "code2xx": 198,
-      "code301": 20,
-      "code302": 0,
-      "code4xx": 0,
-      "code5xx": 0,
-      "connectionTimeout": 0,
-      "containsMalware": 0,
-      "crawlErrors": 0,
-      "crawledPages": 65,
-      "dnsFailures": 0,
-      "inIndex": 192,
-      "inLinks": 0
-    },
-    {
-      "date": "2026-09-07T00:00:00.000Z",
-      "allOtherCodes": 34,
-      "blockedByRobotsTxt": 0,
-      "code2xx": 204,
-      "code301": 22,
-      "code302": 0,
-      "code4xx": 0,
-      "code5xx": 0,
-      "connectionTimeout": 0,
-      "containsMalware": 0,
-      "crawlErrors": 0,
-      "crawledPages": 19,
-      "dnsFailures": 0,
-      "inIndex": 198,
-      "inLinks": 0
-    },
-    {
-      "date": "2026-09-08T00:00:00.000Z",
-      "allOtherCodes": 32,
-      "blockedByRobotsTxt": 0,
-      "code2xx": 208,
-      "code301": 22,
-      "code302": 0,
-      "code4xx": 0,
-      "code5xx": 0,
-      "connectionTimeout": 0,
-      "containsMalware": 0,
-      "crawlErrors": 0,
-      "crawledPages": 5,
-      "dnsFailures": 0,
-      "inIndex": 202,
-      "inLinks": 0
-    },
-    {
-      "date": "2026-09-09T00:00:00.000Z",
-      "allOtherCodes": 30,
-      "blockedByRobotsTxt": 0,
-      "code2xx": 210,
-      "code301": 22,
-      "code302": 0,
-      "code4xx": 0,
-      "code5xx": 0,
-      "connectionTimeout": 0,
-      "containsMalware": 0,
-      "crawlErrors": 0,
-      "crawledPages": 4,
-      "dnsFailures": 0,
-      "inIndex": 204,
-      "inLinks": 0
-    }
-  ],
+  "crawl": [],
   "recommendations": [
     {
       "priority": "low",
-      "type": "provider-comparison-unavailable",
-      "title": "Provider-Vergleich nicht belastbar",
+      "type": "export-data-limit",
+      "title": "Datenumfang des Exports",
       "page": "",
-      "reason": "Google liefert 7, Bing 49 Impressionen im Zeitraum. Einzelne Sichtbarkeitslücken werden deshalb nicht als Findings ausgegeben.",
-      "action": "Erst nach ausreichender Trafficabdeckung beider Provider Unterschiede auf Seitenebene bewerten."
+      "reason": "Seiten und Suchanfragen gelten für den vollständigen 28-Tage-Export. Kein vollständiger vorheriger 28-Tage-Zeitraum und keine Seiten-Suchanfrage-Kombinationen enthalten.",
+      "action": "Für zusätzliche Dimensionen oder Zeiträume einen passenden Export oder API-Sync verwenden.",
+      "source": "google"
+    },
+    {
+      "priority": "low",
+      "type": "export-data-limit",
+      "title": "Datenumfang des Exports",
+      "page": "",
+      "reason": "Bing-Export enthält nur Tageswerte: Positionen, Seiten, Suchanfragen und Crawl-Daten fehlen.",
+      "action": "Für zusätzliche Dimensionen oder Zeiträume einen passenden Export oder API-Sync verwenden.",
+      "source": "bing"
+    },
+    {
+      "priority": "low",
+      "type": "export-data-limit",
+      "title": "Datenumfang des Exports",
+      "page": "",
+      "reason": "Combined verwendet für beide Provider identische Zeiträume bis 18.09.2026. Bing vom 19.09. ist nur im Bing-Dashboard enthalten. Seiten- und Suchanfragewerte stammen ausschließlich von Google; kein Provider-Vergleich möglich.",
+      "action": "Für zusätzliche Dimensionen oder Zeiträume einen passenden Export oder API-Sync verwenden."
     }
   ],
   "providerAvailability": {
@@ -1512,5 +1240,6 @@
     "bing": true,
     "trafficComparable": false,
     "stale": []
-  }
+  },
+  "comparisonAvailable": false
 }

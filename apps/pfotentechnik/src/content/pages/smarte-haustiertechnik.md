@@ -423,6 +423,10 @@ Verwendete Primär- und Behördenquellen für Datenschutz und IoT-Sicherheit:
 - [European Data Protection Board – Privacy by Design and by Default](https://www.edpb.europa.eu/topics/ai-and-technology/privacy-by-design-and-by-default_en)
 - [BSI – Smart Home sicher einrichten und Updates prüfen](https://www.bsi.bund.de/EN/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Internet-der-Dinge-Smart-leben/Smart-Home/smart-home_node.html)
 
+## PetTech-Neuheiten der IFA 2026
+
+Im [IFA-2026-Überblick zur Haustiertechnik](/ifa-2026-haustiertechnik/) ordnen wir Riko, M9 und weitere Messekonzepte ein: neue Funktionsprinzipien, Herstellerclaims und noch offene Praxisfragen.
+
 <!-- pt:content-discovery:manufacturer-directory:start -->
 ## Herstellerseiten im Überblick
 

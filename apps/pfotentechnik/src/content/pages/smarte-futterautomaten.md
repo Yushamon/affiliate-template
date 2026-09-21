@@ -977,6 +977,7 @@ Diese Modelle gehören ebenfalls zu diesem Themenbereich. In den redaktionellen 
 - [HoneyGuardian A68 Smart Pet Feeder](/produkt/honeyguardian-a68/)
 - [HoneyGuardian Smart Pet Feeder S305D](/produkt/honeyguardian-smart-pet-feeder-s305d/)
 - [IMIPAW 3L Automatic Cat Feeder](/produkt/imipaw-3l-automatic-cat-feeder/)
+- [Neakasa Riko](/produkt/neakasa-riko/) – Speziallösung zur Rehydrierung geeigneten gefriergetrockneten Futters, kein klassischer Nassfutterautomat.
 - [Oneisall 2-in-1 Automatic Cat Feeder and Water Dispenser](/produkt/oneisall-2-in-1-feeder-water/)
 - [oneisall 5L Automatic Cat Feeder](/produkt/oneisall-5l-automatic-cat-feeder/)
 - [PAWBBY Smart Pet Feeder](/produkt/pawbby-smart-pet-feeder/)

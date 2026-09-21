@@ -1,0 +1,28 @@
+{
+  "researchDate": "2026-09-14",
+  "conflicts": [
+    {
+      "entity": "Neakasa Riko",
+      "severity": "high",
+      "fields": [
+        "water tank",
+        "battery",
+        "serving size",
+        "feeding precision",
+        "connectivity"
+      ],
+      "deSource": "https://neakasa.de/products/neakasa-riko-smart-wet-food-feeder",
+      "euSource": "https://eu.neakasa.com/products/neakasa-riko-automatic-pet-feeder-for-wet-food",
+      "resolution": "Prefer DE official product-page values for PfotenTechnik's German-market page. Keep EU-only dimensions/noise as unresolved regional/spec-version data unless separately verified."
+    },
+    {
+      "entity": "Neakasa Riko",
+      "severity": "medium",
+      "fields": [
+        "meals per day"
+      ],
+      "notes": "Official DE editorial article says 'mehr als 20', current DE product page says 'bis zu 20'.",
+      "resolution": "Use 'bis zu 20' from current DE product page."
+    }
+  ]
+}

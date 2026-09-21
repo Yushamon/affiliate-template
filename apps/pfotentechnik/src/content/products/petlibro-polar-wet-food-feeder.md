@@ -63,7 +63,7 @@ images:
     - src: ../../assets/images/products/petlibro-polar-wet-food-feeder/gallery-3.webp
       alt: PETLIBRO Polar an einem Katzenfutterplatz
 price:
-  current: 123.47
+  current: 138.99
   currency: "EUR"
   status: "unknown"
   checkedAt: "2026-09-21T06:16:44.744Z"

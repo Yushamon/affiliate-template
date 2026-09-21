@@ -1,99 +1,56 @@
 # PfotenTechnik Search Report
 
-Generiert: 2026-09-02T06:07:03.972Z
+Generiert: 2026-09-21T06:29:30.192Z
 
-Google-Datenstand: 2026-08-28T09:03:13.658Z
+Google-Datenstand: 2026-09-18T00:00:00.000Z
 
-Bing-Datenstand: 2026-08-27T07:00:00.000Z
+Bing-Datenstand: 2026-09-19T00:00:00.000Z
 
-Gesamtstatus: skipped
+Gesamtstatus: partial (manueller Export)
 
 ## Combined
 
-- Klicks: 2
-- Impressionen: 91
-- CTR: 2.20 %
-- Position: 18.2
+- Klicks: 19
+- Impressionen: 514
+- CTR: 3.70 %
+- Position: 24.2
 
 ## Top-Seiten
 
 | Ziel | Klicks | Impressionen | CTR | Position | Quellen |
 |---|---:|---:|---:|---:|---|
-| /katzentrinkbrunnen-richtig-reinigen/ | 1 | 11 | 9.09 % | 2 | bing |
-| /futterautomat-katze/ | 0 | 10 | 0.00 % | 40.6 | google |
-| /produkt/tractive-cat-6-mini/ | 0 | 10 | 0.00 % | 6 | bing |
-| / | 0 | 9 | 0.00 % | 40.2 | google |
-| /vergleiche/beste-futterautomaten-fuer-zwei-katzen/ | 0 | 7 | 0.00 % | 33.2 | google, bing |
-| /hund-ist-muede/ | 0 | 7 | 0.00 % | 5.7 | google, bing |
-| /produkt/petkit-eversweet-ultra/ | 0 | 6 | 0.00 % | 6.2 | google, bing |
-| /hund-trinkt-ploetzlich-viel/ | 0 | 5 | 0.00 % | 7 | bing |
-| /smarte-futterautomaten/ | 0 | 3 | 0.00 % | 5.3 | google |
-| /vergleiche/beste-futterautomaten-fuer-katzen/ | 0 | 3 | 0.00 % | 2.3 | google |
-| /vergleiche/beste-futterautomaten-fuer-nassfutter/ | 0 | 3 | 0.00 % | 17 | google |
-| /produkt/petlibro-granary-2-vision/ | 0 | 3 | 0.00 % | 3 | bing |
-| /hersteller/honeyguardian/ | 0 | 3 | 0.00 % | 5 | bing |
-| /produkt/oneisall-2-in-1-feeder-water/ | 0 | 2 | 0.00 % | 3.5 | google |
-| /produkt/weenect-xt/ | 0 | 2 | 0.00 % | 21.5 | google |
+| / | 0 | 16 | 0.00 % | 50.4 | google |
+| /smarte-futterautomaten/ | 0 | 6 | 0.00 % | 6 | google |
+| /produkt/tractive-cat-6-mini/ | 0 | 4 | 0.00 % | 2.3 | google |
+| /vergleiche/beste-gps-tracker-fuer-hunde/ | 0 | 2 | 0.00 % | 4 | google |
+| /datenschutz-bei-gps-trackern/ | 0 | 2 | 0.00 % | 5 | google |
+| /hund-ist-muede/ | 0 | 2 | 0.00 % | 8.5 | google |
+| /trinkbrunnen/ | 0 | 2 | 0.00 % | 47.5 | google |
+| /produkt/weenect-xt/ | 0 | 1 | 0.00 % | 1 | google |
+| /produkt/honeyguardian-smart-pet-feeder-s305d/ | 0 | 1 | 0.00 % | 2 | google |
+| /produkt/weenect-xs/ | 0 | 1 | 0.00 % | 2 | google |
+| /produkt/xiaomi-smart-pet-fountain-2/ | 0 | 1 | 0.00 % | 2 | google |
+| /vergleiche/beste-futterautomaten-fuer-katzen/ | 0 | 1 | 0.00 % | 2 | google |
+| /redaktion/ | 0 | 1 | 0.00 % | 2 | google |
+| /produkt/honeyguardian-a305d/ | 0 | 1 | 0.00 % | 3 | google |
+| /produkt/petkit-eversweet-ultra/ | 0 | 1 | 0.00 % | 4 | google |
 
 ## Top-Queries
 
 | Ziel | Klicks | Impressionen | CTR | Position | Quellen |
 |---|---:|---:|---:|---:|---|
-| petsafe bewertung | 0 | 6 | 0.00 % | 46.3 | google |
-| tractive cat 6 mini | 0 | 4 | 0.00 % | 6 | bing |
-| katzenbrunnen pumpe reinigen | 0 | 3 | 0.00 % | 2 | bing |
-| futterautomat nassfutter katze | 0 | 2 | 0.00 % | 55 | google |
-| nassfutterautomat für katzen | 0 | 2 | 0.00 % | 62 | google |
-| cat 6 mini tractive | 0 | 2 | 0.00 % | 8 | bing |
-| petkit eversweet ultra | 0 | 2 | 0.00 % | 5.5 | bing |
-| you tube katzentrinkbrunnen filter einsetzen | 0 | 2 | 0.00 % | 2 | bing |
-| wie wird die pumpe eines katzenbrunnens gereinigt? gibt es eine anleitung wie diese auseinander gebaut werden soll? | 1 | 1 | 100.00 % | 1 | bing |
-| warum piepsen gps tracker für haustiere in regelmäßigen abständen | 1 | 1 | 100.00 % | 3 | bing |
-| "garmin alpha" "dog" -"watch" -site:reddit.com -site:twitter.com -site:x.com -site:wykop.pl -site:tripadvisor.com -site:youtube.com -site:yelp.com -site:booking.com -site:facebook.com -site:instagram.com -site:tiktok.com | 0 | 1 | 0.00 % | 6 | google |
-| beuteerkennung | 0 | 1 | 0.00 % | 72 | google |
-| futterautomat für 2 katzen | 0 | 1 | 0.00 % | 56 | google |
-| futterautomat für 2 katzen mit chip | 0 | 1 | 0.00 % | 56 | google |
-| futterautomat katze nassfutter | 0 | 1 | 0.00 % | 54 | google |
+| petsafe bewertung | 0 | 11 | 0.00 % | 47.2 | google |
+| beuteerkennung | 0 | 3 | 0.00 % | 70.3 | google |
+| pet feeder | 0 | 1 | 0.00 % | 70 | google |
+| katzenbrunnen wo aufstellen | 0 | 1 | 0.00 % | 92 | google |
 
 ## Provider-Unterschiede
 
 Keine belastbaren großen Unterschiede.
 
-## Google-only
+## Provider-Sichtbarkeit
 
-- /futterautomat-katze/: 10 Impressionen
-- /: 9 Impressionen
-- /smarte-futterautomaten/: 3 Impressionen
-- /vergleiche/beste-futterautomaten-fuer-katzen/: 3 Impressionen
-- /vergleiche/beste-futterautomaten-fuer-nassfutter/: 3 Impressionen
-- /produkt/oneisall-2-in-1-feeder-water/: 2 Impressionen
-- /produkt/weenect-xt/: 2 Impressionen
-- /vergleiche/beste-gps-tracker-fuer-hunde/: 2 Impressionen
-- /vergleiche/kleine-gps-tracker-fuer-katzen/: 2 Impressionen
-- /beste-futterautomaten-fuer-seniorenkatzen/: 1 Impressionen
-- /hersteller/tractive/: 1 Impressionen
-- /hersteller/weenect/: 1 Impressionen
-- /hund-frisst-nicht/: 1 Impressionen
-- /produkt/oneisall-5l-automatic-cat-feeder/: 1 Impressionen
-- /produkt/petkit-fresh-element-solo/: 1 Impressionen
-
-## Bing-only
-
-- /katzentrinkbrunnen-richtig-reinigen/: 11 Impressionen
-- /produkt/tractive-cat-6-mini/: 10 Impressionen
-- /hund-trinkt-ploetzlich-viel/: 5 Impressionen
-- /produkt/petlibro-granary-2-vision/: 3 Impressionen
-- /hersteller/honeyguardian/: 3 Impressionen
-- /wie-funktionieren-gps-tracker/: 1 Impressionen
-- /vergleiche/futterautomat-gegen-schlingen/: 1 Impressionen
-- /hund-trinkt-zu-wenig/: 1 Impressionen
-- tractive cat 6 mini: 4 Impressionen
-- katzenbrunnen pumpe reinigen: 3 Impressionen
-- cat 6 mini tractive: 2 Impressionen
-- petkit eversweet ultra: 2 Impressionen
-- you tube katzentrinkbrunnen filter einsetzen: 2 Impressionen
-- wie wird die pumpe eines katzenbrunnens gereinigt? gibt es eine anleitung wie diese auseinander gebaut werden soll?: 1 Impressionen
-- warum piepsen gps tracker für haustiere in regelmäßigen abständen: 1 Impressionen
+Mangels Bing-Seiten- und Suchanfragedaten nicht vergleichbar.
 
 ## Crawl-Hinweise
 
@@ -102,3 +59,7 @@ Keine.
 ## Datenhinweise
 
 - Bing-Trafficdaten können wöchentlich, Google-Daten zeitverzögert aktualisiert werden.
+
+## Exportabdeckung
+
+Manuelle Exporte vom 21.09.2026. Einheitlicher Zeitraum 22.08.–18.09.2026 für Google und Bing. Bing-Daten vom 19.09. stehen im Bing-Dashboard. Seiten, Suchanfragen und Positionen stammen ausschließlich von Google; Aussagen über Google-only-/Bing-only-Sichtbarkeit sind nicht möglich. Kein vollständiger gemeinsamer 28-Tage-Vergleichszeitraum verfügbar.
