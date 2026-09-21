@@ -26,7 +26,7 @@ updatedAt: "2026-08-10"
 author:
   name: PfotenTechnik Redaktion
 seo:
-  title: "PETKIT Eversweet Ultra: filterloses OneWay-System im Check"
+  title: "PETKIT Eversweet Ultra: Kamera, Reinigung & Folgekosten"
   description: >-
     PETKIT Eversweet Ultra mit 5 l Frischwasser, 1,8 l Abwasser, OneWay-System ohne klassischen Hauptfilter,
     AI-Kamera und Cube C: Nutzen, Reinigung und Folgekosten.

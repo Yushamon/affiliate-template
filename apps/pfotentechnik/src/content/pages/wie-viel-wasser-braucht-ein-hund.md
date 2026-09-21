@@ -70,9 +70,13 @@ Die folgende Tabelle rechnet den Orientierungsbereich auf häufige Körpergewich
 
 | Körpergewicht | Gesamtwasser pro Tag |
 |---|---:|
+| 2 kg | etwa 80–120 ml |
 | 5 kg | etwa 200–300 ml |
+| 7 kg | etwa 280–420 ml |
 | 10 kg | etwa 400–600 ml |
+| 15 kg | etwa 600–900 ml |
 | 20 kg | etwa 800–1.200 ml |
+| 25 kg | etwa 1.000–1.500 ml |
 | 30 kg | etwa 1.200–1.800 ml |
 | 40 kg | etwa 1.600–2.400 ml |
 

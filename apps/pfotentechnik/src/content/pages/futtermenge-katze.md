@@ -17,7 +17,7 @@ hub:
   description: "Kalorienbedarf in Gramm umrechnen und die Tagesration sicher anpassen."
   order: 53
 seo:
-  title: "Futtermenge Katze berechnen: Tabelle & Formel"
+  title: "Futtermenge Katze: Tabelle für Nass-, Trocken- & Mischfutter"
   description: "Wie viel Futter braucht eine Katze? Mit Gewichtstabelle, Kalorienformel, Beispielen für Nass- und Trockenfutter sowie Mischfütterung."
   canonical: "/futtermenge-katze/"
   sitemap: true
