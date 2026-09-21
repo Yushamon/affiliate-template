@@ -23,9 +23,11 @@ seo:
 
 Trinkt Ihr Hund plötzlich deutlich mehr Wasser als sonst, ist das zunächst ein Symptom und keine eigenständige Krankheit. Hinter dem erhöhten Durst können harmlose Auslöser wie Hitze oder Bewegung stecken. Hält das Verhalten jedoch an oder treten weitere Beschwerden auf, sollte die Ursache tierärztlich abgeklärt werden.
 
+Den normalen Gesamtwasserbedarf erklärt [Wie viel Wasser braucht ein Hund?](/wie-viel-wasser-braucht-ein-hund/). Auf dieser Seite geht es um eine auffällige Veränderung gegenüber dem gewohnten Trinkverhalten. Zum Gesamtwasser zählt auch Wasser aus dem Futter, insbesondere aus Nassfutter; die am Napf getrunkene Menge ist nur ein Teil davon.
+
 ## Das Wichtigste auf einen Blick
 
-- Gesunde Hunde benötigen meist etwa **40 bis 70 ml Wasser pro Kilogramm Körpergewicht und Tag**.
+- Als Orientierung für gesunde Hunde gelten etwa **40 bis 60 ml Gesamtwasser pro Kilogramm Körpergewicht und Tag**.
 - Kurzzeitig steigt der Wasserbedarf bei Hitze, Sport oder Trockenfutter.
 - Dauerhaft vermehrtes Trinken (Polydipsie) kann auf Erkrankungen hinweisen.
 - Wasser sollte niemals entzogen werden.
@@ -100,14 +102,14 @@ Von Polydipsie spricht man, wenn ein Hund dauerhaft deutlich mehr Wasser aufnimm
 
 ## Wie viel Wasser ist normal?
 
-| Körpergewicht | Trinkmenge pro Tag |
+| Körpergewicht | Gesamtwasser pro Tag |
 |---:|---:|
-| 5 kg | 200–350 ml |
-| 10 kg | 400–700 ml |
-| 20 kg | 0,8–1,4 Liter |
-| 30 kg | 1,2–2,1 Liter |
+| 5 kg | etwa 200–300 ml |
+| 10 kg | etwa 400–600 ml |
+| 20 kg | etwa 800–1.200 ml |
+| 30 kg | etwa 1.200–1.800 ml |
 
-Die Werte sind Richtwerte und können je nach Aktivität, Temperatur und Fütterung abweichen.
+Die Werte beziehen sich auf Gesamtwasser einschließlich Wasser aus dem Futter. Sie sind Orientierungswerte, keine Diagnosegrenzen, und können je nach Aktivität, Temperatur und Fütterung abweichen.
 
 ## Was Sie jetzt tun sollten
 

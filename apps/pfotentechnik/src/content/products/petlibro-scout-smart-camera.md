@@ -134,6 +134,22 @@ decision:
 review:
   summary: "Scout bietet laut PETLIBRO 1080p, Farb-Nachtsicht, Zwei-Wege-Audio sowie Schwenk-, Neige- und Trackingfunktionen."
   verdict: "Eine spezialisierte feste Haustierkamera; lokale Speicherung und ein abofreier Vollbetrieb gehören nicht zu ihren Stärken."
+experience:
+  summary: "Scout bietet laut PETLIBRO 1080p, Farb-Nachtsicht, Zwei-Wege-Audio sowie Schwenk-, Neige- und Trackingfunktionen."
+  support: >-
+    Haustiererkennung richtig einstellen: Zuerst das Haustierprofil (Pet Profile)
+    korrekt einrichten. PETLIBRO bietet für Pet Detection Sensitivity fünf Stufen:
+    1 bedeutet niedrigere, 5 höhere Empfindlichkeit. Die aktuelle Einstellung zunächst
+    beobachten. Werden Vorhänge, Insekten oder andere Bewegungen fälschlich als Tier
+    erkannt, die Empfindlichkeit reduzieren. Läuft Hund oder Katze unerkannt durchs
+    Bild, die Empfindlichkeit erhöhen. Laut PETLIBRO jeweils nur eine Stufe verändern
+    und erneut beobachten. Höhere Empfindlichkeit kann mehr Fehlalarme erzeugen,
+    niedrigere Empfindlichkeit kann Tieraktivitäten verpassen.
+  reliability: >-
+    Die Einstellmöglichkeiten garantieren keine zuverlässige Erkennung. WIRED berichtet
+    über Ausfälle bei Tracking, Aktivitätsprotokoll und gespeicherten Clips;
+    Chewy-Nutzerberichte kritisieren Ereigniserkennung und Video-Historie.
+    Diese externen Praxiserfahrungen bleiben trotz der Hersteller-Einstellungen relevant.
 strengths:
   - "Mehrtiere-Erkennung bis fünf Tiere laut Hersteller"
   - "manuelle Datenschutzabdeckung"
@@ -197,6 +213,16 @@ decisionJourney:
   fallback:
     - "/haustierkameras/"
 evidenceSources:
+  - source: "PETLIBRO: What is Pet Detection?"
+    url: "https://de.petlibro.com/en/pages/what-is-pet-detection"
+    accessedAt: "2026-09-21"
+    assertion: "Fünf Empfindlichkeitsstufen, Zielkonflikt zwischen Fehlalarmen und verpasster Tieraktivität sowie Anpassung in einzelnen Stufen laut Hersteller."
+    fields: ["experience.support"]
+  - source: "PETLIBRO Scout-FAQ"
+    url: "https://de.petlibro.com/en/pages/faq-product/pc-001"
+    accessedAt: "2026-09-21"
+    assertion: "Haustierprofil und Einstellmöglichkeiten der Haustiererkennung laut Hersteller."
+    fields: ["experience.support"]
   - source: "PETLIBRO Deutschland"
     url: "https://de.petlibro.com/en/products/scout-smart-camera"
     accessedAt: "2026-08-06"

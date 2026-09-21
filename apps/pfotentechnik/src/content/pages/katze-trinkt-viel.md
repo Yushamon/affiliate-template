@@ -110,6 +110,8 @@ Eine einmalige Beobachtung beweist nichts.
 
 Ein klarer Trend über mehrere Tage oder zusätzliche Symptome gehört tierärztlich abgeklärt.
 
+Normaler Wasserbedarf und auffällig viel Trinken sind unterschiedliche Fragen. Den normalen Gesamtwasserbedarf erklärt [Wie viel Wasser braucht eine Katze?](/wie-viel-wasser-braucht-eine-katze/). Hier zählt besonders eine deutliche Veränderung gegenüber dem individuellen Normalzustand, nicht allein ein pauschaler Milliliterwert. Berücksichtige die Futterart und das Wasser aus dem Futter und beobachte Trinkmenge und Urinmenge gemeinsam.
+
 ## Direkt zum passenden Problem
 
 - [Die Katze trinkt plötzlich viel](#katze-trinkt-ploetzlich-viel)

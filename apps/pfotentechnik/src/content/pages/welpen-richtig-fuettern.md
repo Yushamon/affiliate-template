@@ -36,7 +36,7 @@ hub:
   description: "Futterwahl, Tagesration, Mahlzeiten und gesundes Wachstum verständlich erklärt."
   order: 54
 seo:
-  title: "Welpen richtig füttern: Menge, Zeiten und Welpenfutter"
+  title: "Welpenfütterung: Futtermenge, Mahlzeiten & Wachstum"
   description: "Wie oft und wie viel sollte ein Welpe fressen? Welpenfutter auswählen, Tagesration berechnen, Wachstum kontrollieren und Fehler vermeiden."
   canonical: "/welpen-richtig-fuettern/"
   sitemap: true

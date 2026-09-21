@@ -236,7 +236,38 @@ experience:
   maintenance: >-
     Silikonhalter, Halsband beziehungsweise Geschirr, Gehäuse und magnetische
     Ladekontakte regelmäßig auf Verschleiß, Verschmutzung und sicheren Sitz
-    kontrollieren.
+    kontrollieren. Hülle, Befestigung und Ersatzteile: Die Silikonhülle beziehungsweise
+    Silikonbefestigung ist austauschbar. Weenect verkauft passende XS-Silikonhüllen
+    und XS-Ladekabel separat; für XS Cat ist auch das elastische Halsband als Zubehör
+    erhältlich. Bei Verlust oder Verschleiß von Hülle oder Ladekabel muss daher nicht
+    allein deswegen ein neuer Tracker gekauft werden. Auf XS-Kompatibilität achten.
+
+repairability:
+  parts:
+    - type: other
+      name: "XS-Silikonhülle und Befestigung"
+      status: supported
+      officialPart: true
+      detail: "Die Silikonhülle beziehungsweise Silikonbefestigung ist austauschbar. Weenect bietet passende XS-Silikonhüllen separat an; bei Verlust oder Verschleiß der Hülle ist daher kein neuer Tracker nötig."
+      sourceUrl: "https://www.weenect.com/at/de/zubehor/"
+      sourceType: manufacturer
+      verifiedAt: "2026-09-21"
+    - type: other
+      name: "XS-Ladekabel"
+      status: supported
+      officialPart: true
+      detail: "Ein passendes XS-Ladekabel ist separat als Ersatzteil erhältlich. Geht nur das Kabel verloren oder verschleißt es, muss deshalb kein neuer Tracker gekauft werden. Auf die ausdrückliche XS-Kompatibilität achten."
+      sourceUrl: "https://help.weenect.com/hc/de/articles/16212583166098-Wo-kann-ich-Ersatz-Zubeh%C3%B6r-erhalten"
+      sourceType: support
+      verifiedAt: "2026-09-21"
+    - type: other
+      name: "Elastisches Halsband für XS Cat"
+      status: supported
+      officialPart: true
+      detail: "Für die Katzenversion XS Cat bietet Weenect auch passende elastische Halsbänder separat als Zubehör an."
+      sourceUrl: "https://www.weenect.com/at/de/zubehor/"
+      sourceType: manufacturer
+      verifiedAt: "2026-09-21"
 
 alternatives:
   - "tractive-cat-6-mini"

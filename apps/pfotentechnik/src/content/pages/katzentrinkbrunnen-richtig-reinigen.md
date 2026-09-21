@@ -53,6 +53,13 @@ Fließendes Wasser und ein Filter halten einen Brunnen nicht automatisch hygieni
 
 Möchtest du speziell die Pumpe auseinanderbauen, führt die kompakte Anleitung [Pumpe im Katzentrinkbrunnen reinigen](/pumpe-katzentrinkbrunnen-reinigen/) direkt durch Abdeckung, Rotorraum und Zusammenbau. Orientiere dich zusätzlich immer an der Anleitung deines Modells.
 
+## Welches Reinigungsproblem möchtest du lösen?
+
+- Pumpe oder Rotor verschmutzt: [Pumpe im Katzentrinkbrunnen reinigen](/pumpe-katzentrinkbrunnen-reinigen/).
+- Filter wechseln oder pflegen: [Filter im Katzentrinkbrunnen wechseln](/filter-im-katzentrinkbrunnen-wechseln/).
+- Weiße oder harte Ablagerungen: [Kalk im Katzentrinkbrunnen entfernen](/kalk-katzentrinkbrunnen-entfernen/).
+- Glitschiger oder schmieriger Belag: [Biofilm im Katzentrinkbrunnen entfernen](/biofilm-im-katzentrinkbrunnen/).
+
 ## Einordnung: Reinigung ist nur ein Teil des Trinkbrunnen-Themas
 
 Diese Anleitung konzentriert sich auf die hygienische Pflege eines vorhandenen Geräts. Der übergeordnete Ratgeber [Trinkbrunnen für Haustiere](/trinkbrunnen/) erklärt zusätzlich Funktionsweise, Materialien, Pumpen- und Filtersysteme, sinnvolle Auswahlkriterien sowie die Vor- und Nachteile gegenüber klassischen Wassernäpfen.
