@@ -264,6 +264,42 @@ decisionFacts:
   - label: "Stromversorgung"
     value: "Netzadapter und drei D-Batterien"
     consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+offers:
+  - id: "petlibro-de"
+    merchant: "petlibro"
+    network: "awin"
+    program: "petlibro-de"
+    mappingStatus: "verified"
+    commerceDataProvider: "shopify-product"
+    price:
+      current: 119.99
+      currency: "EUR"
+      status: "unknown"
+      checkedAt: "2026-09-21T16:52:54.786Z"
+      source:
+        id: "petlibro-official"
+        label: "PETLIBRO"
+        type: "merchant"
+        url: "https://de.petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder?variant=44414075764978"
+    priceState: "available"
+    availability: "available"
+    identityNote: "DE-Katalog, Produktseite (Granary WiFi Futterautomat) und SKU PL-AF103-36W gegen vorhandenes Modell geprüft; Einzelgerät, keine Mehrfachpackung."
+    evidenceSources:
+      - source: "PETLIBRO DE – offizieller Katalog und strukturierte Produktdaten"
+        url: "https://de.petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder?variant=44414075764978"
+        accessedAt: "2026-09-21T12:59:33.061Z"
+        assertion: "Modell/Generation und Variante: Granary WiFi Futterautomat, Weiß / Duale Schale, SKU PL-AF103-36W. HTTP 200."
+        fields:
+          - "officialProductUrl"
+          - "variantId"
+          - "expectedSku"
+        sourceType: "officialStore"
+    officialProductUrl: "https://de.petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder?variant=44414075764978"
+    verifiedAt: "2026-09-21T12:59:33.061Z"
+    variantId: "44414075764978"
+    expectedSku: "PL-AF103-36W"
+    variantLabel: "Weiß / Duale Schale"
+    lastAttemptAt: "2026-09-21T16:52:54.786Z"
 ---
 Der PETLIBRO Granary Dual ist technisch der bekannte PLAF103 mit Doppelschale und Futterteiler. Er ist für gemeinsame, nicht für individuell kontrollierte Fütterung gedacht.
 

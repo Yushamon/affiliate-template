@@ -154,6 +154,42 @@ availabilityUpdated: "2026-09-21T06:16:40.549Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
+offers:
+  - id: "petlibro-de"
+    merchant: "petlibro"
+    network: "awin"
+    program: "petlibro-de"
+    mappingStatus: "verified"
+    commerceDataProvider: "shopify-product"
+    price:
+      current: 799.99
+      currency: "EUR"
+      status: "unknown"
+      checkedAt: "2026-09-21T16:52:55.153Z"
+      source:
+        id: "petlibro-official"
+        label: "PETLIBRO"
+        type: "merchant"
+        url: "https://de.petlibro.com/products/luma-intelligente-selbstreinigende-katzentoilette?variant=53374260642158"
+    priceState: "available"
+    availability: "available"
+    identityNote: "DE-Katalog, Produktseite (Luma Intelligente Selbstreinigende Katzentoilette) und SKU PL-LB001-31W gegen vorhandenes Modell geprüft; Einzelgerät, keine Mehrfachpackung."
+    evidenceSources:
+      - source: "PETLIBRO DE – offizieller Katalog und strukturierte Produktdaten"
+        url: "https://de.petlibro.com/products/luma-intelligente-selbstreinigende-katzentoilette?variant=53374260642158"
+        accessedAt: "2026-09-21T12:59:28.284Z"
+        assertion: "Modell/Generation und Variante: Luma Intelligente Selbstreinigende Katzentoilette, 1 paket, SKU PL-LB001-31W. HTTP 200."
+        fields:
+          - "officialProductUrl"
+          - "variantId"
+          - "expectedSku"
+        sourceType: "officialStore"
+    officialProductUrl: "https://de.petlibro.com/products/luma-intelligente-selbstreinigende-katzentoilette?variant=53374260642158"
+    verifiedAt: "2026-09-21T12:59:28.284Z"
+    variantId: "53374260642158"
+    expectedSku: "PL-LB001-31W"
+    variantLabel: "1 paket"
+    lastAttemptAt: "2026-09-21T16:52:55.153Z"
 ---
 
 ## Herstellerfunktion, praktische Bedeutung und offene Erfahrung

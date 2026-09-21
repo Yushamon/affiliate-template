@@ -88,6 +88,42 @@ editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
 
+offers:
+  - id: "petlibro-de"
+    merchant: "petlibro"
+    network: "awin"
+    program: "petlibro-de"
+    mappingStatus: "verified"
+    commerceDataProvider: "shopify-product"
+    price:
+      current: 115.99
+      currency: "EUR"
+      status: "unknown"
+      checkedAt: "2026-09-21T16:52:54.207Z"
+      source:
+        id: "petlibro-official"
+        label: "PETLIBRO"
+        type: "merchant"
+        url: "https://de.petlibro.com/products/dockstream-2-smart-fountain?variant=52389571494254"
+    priceState: "available"
+    availability: "available"
+    identityNote: "DE-Katalog, Produktseite (Dockstream 2 Smarter Trinkbrunnen) und SKU PL-WF116-31W gegen vorhandenes Modell geprüft; Einzelgerät, keine Mehrfachpackung."
+    evidenceSources:
+      - source: "PETLIBRO DE – offizieller Katalog und strukturierte Produktdaten"
+        url: "https://de.petlibro.com/products/dockstream-2-smart-fountain?variant=52389571494254"
+        accessedAt: "2026-09-21T12:59:27.192Z"
+        assertion: "Modell/Generation und Variante: Dockstream 2 Smarter Trinkbrunnen, Weiß / Schnurlos, SKU PL-WF116-31W. HTTP 200."
+        fields:
+          - "officialProductUrl"
+          - "variantId"
+          - "expectedSku"
+        sourceType: "officialStore"
+    officialProductUrl: "https://de.petlibro.com/products/dockstream-2-smart-fountain?variant=52389571494254"
+    verifiedAt: "2026-09-21T12:59:27.192Z"
+    variantId: "52389571494254"
+    expectedSku: "PL-WF116-31W"
+    variantLabel: "Weiß / Schnurlos"
+    lastAttemptAt: "2026-09-21T16:52:54.207Z"
 editorial:
   assessmentType: "data-review"
   evidence:

@@ -9,6 +9,7 @@ import { deriveProductOperations, isAutoRecommendationEligible } from "../../lib
 import { resolveProductHeroMedia, resolveProductMedia } from "../mediaResolver.mjs";
 import { buildSubscriptionCostModel } from "../subscriptionCosts.ts";
 import { buildLitterCompatibilityModel } from "../litterCompatibility.ts";
+import { resolveCommerceOffers, compareCommerceOffers } from '../commerceOffers.mjs';
 
 const list = <T>(value: T[] | undefined | null): T[] => Array.isArray(value) ? value : [];
 const text = (value: unknown, fallback = ""): string => {
@@ -698,6 +699,8 @@ export const buildProductExperienceModel = ({
     benefits,
     mainLimitation: limitations[0] ?? notFor[0] ?? "Keine zentrale Einschränkung redaktionell hinterlegt.",
     operations,
+    commerce: compareCommerceOffers(resolveCommerceOffers(data)),
+    editorialMerchant: resolveCommerceOffers(data, {placement:'editorial-manufacturer',pageType:'product'}).find(offer => !offer.legacy && offer.canLink),
     price,
     subscriptionCosts,
     litterCompatibility,

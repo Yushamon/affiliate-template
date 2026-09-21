@@ -284,6 +284,21 @@ decisionFacts:
   - label: "Batterie"
     value: "Nicht vom Hersteller ausgewiesen"
     consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+offers:
+  - id: "petlibro-de"
+    merchant: "petlibro"
+    network: "awin"
+    program: "petlibro-de"
+    mappingStatus: "unresolved"
+    commerceDataProvider: "shopify-product"
+    price:
+      current: null
+      currency: "EUR"
+      status: "unknown"
+    priceState: "unknown"
+    availability: "unknown"
+    identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
+    evidenceSources: []
 ---
 Der PETLIBRO Air Automatic Feeder ist ein kompakter Trockenfutterautomat mit lokaler Zeitsteuerung. Er eignet sich für Katzen und kleine Hunde, wenn bewusst keine App oder WLAN-Verbindung benötigt wird.
 

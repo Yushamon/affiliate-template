@@ -359,6 +359,42 @@ decisionFacts:
   - label: "Gewicht"
     value: "Nicht vom Hersteller ausgewiesen"
     consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
+offers:
+  - id: "petlibro-de"
+    merchant: "petlibro"
+    network: "awin"
+    program: "petlibro-de"
+    mappingStatus: "verified"
+    commerceDataProvider: "shopify-product"
+    price:
+      current: 169.99
+      currency: "EUR"
+      status: "unknown"
+      checkedAt: "2026-09-21T16:52:54.600Z"
+      source:
+        id: "petlibro-official"
+        label: "PETLIBRO"
+        type: "merchant"
+        url: "https://de.petlibro.com/products/petlibro-granary-automatic-pet-feeder-with-camera?variant=44070751502578"
+    priceState: "available"
+    availability: "available"
+    identityNote: "DE-Katalog, Produktseite (Granary Smarter Futterautomat mit Kamera) und SKU PL-AF203-34W gegen vorhandenes Modell geprüft; Einzelgerät, keine Mehrfachpackung."
+    evidenceSources:
+      - source: "PETLIBRO DE – offizieller Katalog und strukturierte Produktdaten"
+        url: "https://de.petlibro.com/products/petlibro-granary-automatic-pet-feeder-with-camera?variant=44070751502578"
+        accessedAt: "2026-09-21T12:59:32.154Z"
+        assertion: "Modell/Generation und Variante: Granary Smarter Futterautomat mit Kamera, Weiß / Einzelne Schale, SKU PL-AF203-34W. HTTP 200."
+        fields:
+          - "officialProductUrl"
+          - "variantId"
+          - "expectedSku"
+        sourceType: "officialStore"
+    officialProductUrl: "https://de.petlibro.com/products/petlibro-granary-automatic-pet-feeder-with-camera?variant=44070751502578"
+    verifiedAt: "2026-09-21T12:59:32.154Z"
+    variantId: "44070751502578"
+    expectedSku: "PL-AF203-34W"
+    variantLabel: "Weiß / Einzelne Schale"
+    lastAttemptAt: "2026-09-21T16:52:54.600Z"
 ---
 Der PETLIBRO Granary Camera Feeder verbindet automatische Trockenfütterung mit einer integrierten Kamera. Das ist praktisch für Livekontrolle, aber kein Ersatz für direkte Beobachtung.
 

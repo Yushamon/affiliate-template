@@ -88,6 +88,21 @@ editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
 
+offers:
+  - id: "petlibro-de"
+    merchant: "petlibro"
+    network: "awin"
+    program: "petlibro-de"
+    mappingStatus: "unresolved"
+    commerceDataProvider: "shopify-product"
+    price:
+      current: null
+      currency: "EUR"
+      status: "unknown"
+    priceState: "unknown"
+    availability: "unknown"
+    identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
+    evidenceSources: []
 editorial:
   assessmentType: "data-review"
   evidence:

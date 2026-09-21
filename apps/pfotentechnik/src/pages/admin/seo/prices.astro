@@ -1,6 +1,8 @@
 ---
 import { getCollection } from "astro:content";
 import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
+import { resolveCommerceOffers } from '../../../domain/commerceOffers.mjs';
+import { commerceCockpitMarkup } from '../../../lib/price-intelligence/commerce-view.mjs';
 import {
   AVAILABILITY_LABELS,
   buildOperationsDashboard,
@@ -11,7 +13,7 @@ import {
 const products = await getCollection("products");
 const rows = products
   .map((entry) => {
-    const record = toOperationsRecord(entry.data);
+    const record = {...toOperationsRecord(entry.data),commerceOffers:resolveCommerceOffers(entry.data)};
     return { ...record, operations: record };
   })
   .sort(compareMaintenanceRows)
@@ -53,7 +55,7 @@ const metrics = [
         nicht als offene Aufgabe gewertet.
       </p>
     </div>
-    <button type="button" data-check-all>Aktive Preise prüfen</button>
+    <button type="button" data-check-all>Commerce-Daten aktualisieren</button>
   </section>
 
   <section class="ops-metrics" aria-label="Produktpflege-Kennzahlen">
@@ -156,12 +158,13 @@ const metrics = [
             <span class="pt-chip ops-chip" data-field="maintenanceStatus" data-state={row.maintenanceStatus}>{row.maintenanceLabel}</span>
           </div>
           <div class="ops-cell ops-actions">
-            <button type="button" data-check-price={row.slug} disabled={!row.targetUrl || row.consciouslyUnavailable}>
-              {row.targetUrl ? "Preis prüfen" : "URL fehlt"}
+            <button type="button" data-check-price={row.slug} disabled={!row.targetUrl && !row.commerceOffers.length}>
+              Commerce aktualisieren
             </button>
             <button type="button" class="pt-button pt-button-secondary secondary" data-toggle-editor={row.slug}>Pflegen</button>
           </div>
 
+          <div class="ops-commerce" data-commerce-panel set:html={commerceCockpitMarkup(row.commerceOffers,row.slug)}></div>
           <form class="ops-editor" data-editor={row.slug} hidden>
             <label>
               <span>Preis</span>
@@ -239,6 +242,7 @@ const metrics = [
 </SeoAdminLayout>
 
 <script>
+  import { commerceCockpitMarkup } from '../../../lib/price-intelligence/commerce-view.mjs';
   // PT_SEO_PRICE_EDITOR_STABILITY_1_0_0: schützt aktive und ungespeicherte Preisentwürfe.
   type OperationsRecord = Record<string, any> & { slug: string; title: string };
   type Draft = {
@@ -398,6 +402,12 @@ const metrics = [
     records.set(record.slug, record);
     const row = document.querySelector<HTMLElement>(`[data-product-row="${CSS.escape(record.slug)}"]`);
     if (!row) return;
+    const panel = row.querySelector<HTMLElement>('[data-commerce-panel]');
+    if (panel && !panel.contains(document.activeElement) && !panel.querySelector('[data-dirty="true"]')) {
+      const open = panel.querySelector('details')?.open;
+      panel.innerHTML = commerceCockpitMarkup(record.commerceOffers,record.slug);
+      const details = panel.querySelector('details'); if (details && open) details.open = true;
+    }
     row.querySelectorAll<HTMLElement>("[data-field]").forEach((node) => {
       const field = node.dataset.field || "";
       node.textContent = textFor(record, field);
@@ -407,8 +417,8 @@ const metrics = [
     });
     const check = row.querySelector<HTMLButtonElement>("[data-check-price]");
     if (check) {
-      check.disabled = !record.targetUrl || record.consciouslyUnavailable;
-      check.textContent = record.targetUrl ? "Preis prüfen" : "URL fehlt";
+      check.disabled = !record.targetUrl && !record.commerceOffers?.length;
+      check.textContent = "Commerce aktualisieren";
     }
     syncEditor(record);
   };
@@ -484,13 +494,13 @@ const metrics = [
   const setRowBusy = (slug: string, busy: boolean) => {
     const row = document.querySelector<HTMLElement>(`[data-product-row="${CSS.escape(slug)}"]`);
     row?.querySelectorAll<HTMLButtonElement>("button").forEach((button) => {
-      button.disabled = busy || (button.hasAttribute("data-check-price") && (!records.get(slug)?.targetUrl || records.get(slug)?.consciouslyUnavailable));
+      button.disabled = busy || (button.hasAttribute("data-check-price") && !records.get(slug)?.targetUrl && !records.get(slug)?.commerceOffers?.length);
     });
     if (row) row.dataset.busy = busy ? "true" : "false";
   };
 
   const hasProtectedEditorInteraction = () =>
-    dirtyEditors.size > 0 || Boolean(document.activeElement?.closest("[data-editor]"));
+    dirtyEditors.size > 0 || Boolean(document.querySelector('[data-offer-editor][data-dirty="true"]')) || Boolean(document.activeElement?.closest("[data-editor], [data-offer-editor]"));
 
   const applyServerResult = (result: any) => {
     const record = result?.record ?? result;
@@ -610,7 +620,7 @@ const metrics = [
             body: JSON.stringify({ slug })
           });
           const record = applyServerResult(result);
-          setStatus(`${record.title}: Preis, Preisdatum, Affiliate, Verfügbarkeit und Priorisierung wurden aktualisiert.`);
+          setStatus(`${record.title}: Commerce-Prüfung abgeschlossen.${result.error ? ` Hinweise: ${result.error}` : ''}`, result.ok === false ? 'error' : undefined);
         } catch (error) {
           setStatus(error instanceof Error ? error.message : String(error), "error");
         } finally {
@@ -653,9 +663,10 @@ const metrics = [
           body: JSON.stringify({ includeInactive: false })
         });
         for (const item of result.results || []) {
-          if (item.ok && item.record) applyServerResult(item);
+          if (item.record) applyServerResult(item);
         }
-        setStatus(`${result.succeeded} Preise aktualisiert, ${result.failed} ohne Ergebnis, ${result.skipped} bewusst inaktive Produkte übersprungen.`);
+        const providerErrors = (result.results || []).flatMap((item: any) => (item.providerResults || []).filter((provider: any) => !provider.ok));
+        setStatus(`${result.succeeded} Produkte aktualisiert, ${result.failed} ohne Ergebnis, ${providerErrors.length} Quellen mit Hinweisen, ${result.skipped} übersprungen. Details bei den Händlerangeboten.`);
       } catch (error) {
         setStatus(error instanceof Error ? error.message : String(error), "error");
       } finally {
@@ -682,6 +693,30 @@ const metrics = [
     }
   };
 
+  document.querySelector('[data-ops-list]')?.addEventListener('input', event => {
+    const form = (event.target as Element).closest<HTMLFormElement>('[data-offer-editor]');
+    if (form) form.dataset.dirty = 'true';
+  });
+  document.querySelector('[data-ops-list]')?.addEventListener('submit', async event => {
+    const form = (event.target as Element).closest<HTMLFormElement>('[data-offer-editor]');
+    if (!form) return;
+    event.preventDefault();
+    const button = form.querySelector<HTMLButtonElement>('button');
+    const feedback = form.querySelector<HTMLElement>('[data-offer-save-status]');
+    if (button) button.disabled = true;
+    try {
+      const fields = new FormData(form);
+      const result = await fetchJson('/api/admin/prices/offer',{method:'POST',body:JSON.stringify({
+        slug:form.dataset.slug,id:form.dataset.id,program:form.dataset.program,
+        officialProductUrl:fields.get('officialProductUrl'),variantId:fields.get('variantId'),expectedSku:fields.get('expectedSku'),confirmIdentity:fields.get('confirmIdentity')==='on'
+      })});
+      form.dataset.dirty = 'false';
+      if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
+      applyServerResult(result);
+      setStatus('Händlerzuordnung gespeichert. Neue unbestätigte Ziele bleiben unresolved.');
+    } catch(error) { if(feedback) feedback.textContent = error instanceof Error ? error.message : String(error); }
+    finally { if(button) button.disabled = false; }
+  });
   refreshMetrics();
   applyView();
   void refreshFromServer();
@@ -741,6 +776,13 @@ const metrics = [
 </script>
 
 <style>
+  .ops-commerce { grid-column:1 / -1; min-width:0; padding:12px; border-top:1px solid var(--pt-color-border); }
+  .ops-commerce :global(summary) { cursor:pointer; min-height:44px; display:flex; align-items:center; font-weight:700; }
+  .ops-commerce :global(.ops-offers) { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr)); gap:12px; }
+  .ops-commerce :global(.ops-offer) { display:grid; align-content:start; gap:8px; min-width:0; padding:12px; border:1px solid var(--pt-color-border); border-radius:12px; overflow-wrap:anywhere; }
+  .ops-commerce :global(form) { display:grid; gap:8px; }
+  .ops-commerce :global(label) { display:grid; gap:4px; font-size:.85rem; }
+  .ops-commerce :global(input:not([type="checkbox"])) { width:100%; min-width:0; min-height:40px; background:var(--pt-color-surface); color:var(--pt-color-text); border:1px solid var(--pt-color-border); border-radius:6px; padding:6px; }
   .ops-summary {
     display: grid;
     grid-template-columns: 1fr auto;

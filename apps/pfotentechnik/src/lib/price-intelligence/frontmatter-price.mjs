@@ -2,6 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import yaml from "js-yaml";
 import { atomicWriteFile } from "../admin/atomic-file.mjs";
+import { productOffersSchema } from '../../content/schema/commerce.mjs';
 import {
   AVAILABILITY_VALUES,
   PRICE_STATE_VALUES,
@@ -46,7 +47,7 @@ function replaceTopLevelBlock(frontmatter, key, block) {
     affiliate: ["conversion:", "editorial:", "rating:", "score:", "ratings:"]
   };
   const anchors = anchorsByKey[key] ?? ["editorial:", "rating:", "score:"];
-  let insertAt = lines.findIndex((line) => anchors.includes(line.trim()));
+  let insertAt = lines.findIndex((line) => anchors.includes(line));
   if (insertAt < 0) insertAt = lines.length;
   lines.splice(insertAt, 0, ...block.split("\n"), "");
   return lines.join("\n");
@@ -432,6 +433,24 @@ export async function readProductFiles(productsDir) {
 
 export async function readProductDocument(file) {
   return persistedDocument(file);
+}
+
+export async function updateProductOffer(file, id, update) {
+  return runSerially(file, async () => {
+    const source = await fs.readFile(file, 'utf8');
+    const parts = splitFrontmatter(source, file);
+    const data = yaml.load(parts.yaml, {schema: yaml.JSON_SCHEMA});
+    const offers = [...(data.offers ?? [])];
+    const index = offers.findIndex(offer => offer.id === id);
+    const next = typeof update === 'function' ? await update(index < 0 ? null : offers[index]) : update;
+    if (index < 0) offers.push(next); else offers[index] = next;
+    productOffersSchema.parse(offers);
+    const block = yaml.dump({offers}, {lineWidth: -1, noRefs: true, quotingType: '"', forceQuotes: true}).trimEnd();
+    const frontmatter = replaceTopLevelBlock(parts.yaml, 'offers', block);
+    yaml.load(frontmatter, {schema: yaml.JSON_SCHEMA});
+    await atomicWriteFile(file, `---\n${frontmatter}\n---\n${parts.body}`);
+    return persistedDocument(file);
+  });
 }
 
 export function operationsForDocument(document, options = {}) {

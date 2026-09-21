@@ -375,6 +375,21 @@ decisionFacts:
   - label: "Portionsgewicht"
     value: "herstellerseitig ungefähr 10 g, abhängig von Form und Dichte des Futters"
     consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
+offers:
+  - id: "petlibro-de"
+    merchant: "petlibro"
+    network: "awin"
+    program: "petlibro-de"
+    mappingStatus: "unresolved"
+    commerceDataProvider: "shopify-product"
+    price:
+      current: null
+      currency: "EUR"
+      status: "unknown"
+    priceState: "unknown"
+    availability: "unknown"
+    identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
+    evidenceSources: []
 ---
 ## PETLIBRO Space Smart Feeder: redaktionelle Einordnung
 

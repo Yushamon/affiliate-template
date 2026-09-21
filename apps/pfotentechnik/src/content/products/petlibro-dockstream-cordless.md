@@ -289,6 +289,21 @@ decisionFacts:
   - label: "Lautstärke"
     value: "Herstellerangabe 23 dB"
     consequence: "Geräusche können bei schreckhaften Tieren und in Schlafräumen kaufentscheidend sein."
+offers:
+  - id: "petlibro-de"
+    merchant: "petlibro"
+    network: "awin"
+    program: "petlibro-de"
+    mappingStatus: "unresolved"
+    commerceDataProvider: "shopify-product"
+    price:
+      current: null
+      currency: "EUR"
+      status: "unknown"
+    priceState: "unknown"
+    availability: "unknown"
+    identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
+    evidenceSources: []
 ---
 Der Dockstream Cordless ist das ältere, nicht smarte Akkumodell. Er darf nicht mit dem Dockstream 2 Smart Cordless verwechselt werden.
 

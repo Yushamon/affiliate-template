@@ -1,5 +1,5 @@
 import { z } from 'astro/zod';
-import { productAffiliateSchema, productPriceSchema, productPriceStateSchema, productAvailabilitySchema } from './commerce.mjs';
+import { commerceOfferCoreSchema } from './commerce.mjs';
 import { evidenceSourceSchema } from './evidence.mjs';
 
 export const fact = value => z.discriminatedUnion('status', [
@@ -11,10 +11,7 @@ const positive = z.number().finite().positive();
 const interval = z.object({minDays:positive, maxDays:positive}).strict()
   .refine(v => v.minDays <= v.maxDays, 'minDays must not exceed maxDays');
 export const compatibilitySchema = fact(z.array(z.string().min(1)).min(1));
-export const accessoryOfferSchema = z.object({
-  id:z.string().min(1), price:productPriceSchema, affiliate:productAffiliateSchema.optional(),
-  priceState:productPriceStateSchema, availability:productAvailabilitySchema
-}).strict().superRefine((v,c) => {
+export const accessoryOfferSchema = commerceOfferCoreSchema.strict().superRefine((v,c) => {
   if (v.price.current != null && (!v.price.checkedAt || !v.price.source?.url || !['merchant','affiliate'].includes(v.price.source?.type))) {
     c.addIssue({code:'custom',message:'Accessory price needs merchant source URL and price timestamp.'});
   }

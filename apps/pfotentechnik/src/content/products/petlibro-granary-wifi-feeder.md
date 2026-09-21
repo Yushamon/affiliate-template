@@ -329,6 +329,42 @@ decisionFacts:
   - label: "Kamera"
     value: "Nein"
     consequence: "Die Kontrolle beschränkt sich auf Statusmeldungen, Protokolle oder die direkte Sichtprüfung."
+offers:
+  - id: "petlibro-de"
+    merchant: "petlibro"
+    network: "awin"
+    program: "petlibro-de"
+    mappingStatus: "verified"
+    commerceDataProvider: "shopify-product"
+    price:
+      current: 109.99
+      currency: "EUR"
+      status: "unknown"
+      checkedAt: "2026-09-21T16:52:54.971Z"
+      source:
+        id: "petlibro-official"
+        label: "PETLIBRO"
+        type: "merchant"
+        url: "https://de.petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder?variant=44414075732210"
+    priceState: "available"
+    availability: "available"
+    identityNote: "DE-Katalog, Produktseite (Granary WiFi Futterautomat) und SKU PL-AF103-34W gegen vorhandenes Modell geprüft; Einzelgerät, keine Mehrfachpackung."
+    evidenceSources:
+      - source: "PETLIBRO DE – offizieller Katalog und strukturierte Produktdaten"
+        url: "https://de.petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder?variant=44414075732210"
+        accessedAt: "2026-09-21T12:59:33.061Z"
+        assertion: "Modell/Generation und Variante: Granary WiFi Futterautomat, Weiß / Einzelne Schale, SKU PL-AF103-34W. HTTP 200."
+        fields:
+          - "officialProductUrl"
+          - "variantId"
+          - "expectedSku"
+        sourceType: "officialStore"
+    officialProductUrl: "https://de.petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder?variant=44414075732210"
+    verifiedAt: "2026-09-21T12:59:33.061Z"
+    variantId: "44414075732210"
+    expectedSku: "PL-AF103-34W"
+    variantLabel: "Weiß / Einzelne Schale"
+    lastAttemptAt: "2026-09-21T16:52:54.971Z"
 ---
 Der PETLIBRO Granary WiFi ist ein klassischer Vorratsautomat mit moderner App-Anbindung. Seine Stärke liegt in der Kombination aus großem Behälter, flexibler Planung und vergleichsweise breiter Futterkompatibilität.
 

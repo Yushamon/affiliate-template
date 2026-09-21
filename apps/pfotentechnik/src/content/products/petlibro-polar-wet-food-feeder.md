@@ -394,6 +394,42 @@ decisionFacts:
   - label: "Batterie-Backup"
     value: "drei AA-Batterien; laut Hersteller bis zu 12 Stunden Schutz des Fütterungsplans"
     consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+offers:
+  - id: "petlibro-de"
+    merchant: "petlibro"
+    network: "awin"
+    program: "petlibro-de"
+    mappingStatus: "verified"
+    commerceDataProvider: "shopify-product"
+    price:
+      current: 199.99
+      currency: "EUR"
+      status: "unknown"
+      checkedAt: "2026-09-21T16:52:55.528Z"
+      source:
+        id: "petlibro-official"
+        label: "PETLIBRO"
+        type: "merchant"
+        url: "https://de.petlibro.com/products/polar-wet-food-pet-feeder?variant=52122051084654"
+    priceState: "available"
+    availability: "available"
+    identityNote: "DE-Katalog, Produktseite (Polar Nassfutterautomat) und SKU PL-AF109-33B gegen vorhandenes Modell geprüft; Einzelgerät, keine Mehrfachpackung."
+    evidenceSources:
+      - source: "PETLIBRO DE – offizieller Katalog und strukturierte Produktdaten"
+        url: "https://de.petlibro.com/products/polar-wet-food-pet-feeder?variant=52122051084654"
+        accessedAt: "2026-09-21T12:59:29.132Z"
+        assertion: "Modell/Generation und Variante: Polar Nassfutterautomat, Schwarz / Edelstahlnapf, SKU PL-AF109-33B. HTTP 200."
+        fields:
+          - "officialProductUrl"
+          - "variantId"
+          - "expectedSku"
+        sourceType: "officialStore"
+    officialProductUrl: "https://de.petlibro.com/products/polar-wet-food-pet-feeder?variant=52122051084654"
+    verifiedAt: "2026-09-21T12:59:29.132Z"
+    variantId: "52122051084654"
+    expectedSku: "PL-AF109-33B"
+    variantLabel: "Schwarz / Edelstahlnapf"
+    lastAttemptAt: "2026-09-21T16:52:55.528Z"
 ---
 Der **PETLIBRO Polar Wet Food Feeder PLAF109** gehört zu den wenigen Nassfutterautomaten mit aktiver Kühlung. Drei vorbereitete Portionen werden nicht nur mit Kühlakkus temperiert, sondern über ein thermoelektrisches System gekühlt. Im [Vergleich der besten Nassfutterautomaten](/vergleiche/beste-futterautomaten-fuer-nassfutter/) ordnen wir ihn direkt gegen aktive Kühlung, Kühlakku-Modelle und Offline-Lösungen ein.
 

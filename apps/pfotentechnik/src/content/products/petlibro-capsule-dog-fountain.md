@@ -295,6 +295,21 @@ decisionFacts:
   - label: "Trockenlaufschutz"
     value: "automatische Abschaltung bei zu niedrigem Wasserstand"
     consequence: "Die Schutzklasse ist bei Regen, Reinigung und dauerhaftem Außeneinsatz relevant."
+offers:
+  - id: "petlibro-de"
+    merchant: "petlibro"
+    network: "awin"
+    program: "petlibro-de"
+    mappingStatus: "unresolved"
+    commerceDataProvider: "shopify-product"
+    price:
+      current: null
+      currency: "EUR"
+      status: "unknown"
+    priceState: "unknown"
+    availability: "unknown"
+    identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
+    evidenceSources: []
 ---
 Viele Katzenbrunnen sind für Hunde zu niedrig und zu klein. Die Capsule Dog Fountain setzt deshalb auf eine breite Trinkzone, hohe Reserve und Spritzschutz.
 

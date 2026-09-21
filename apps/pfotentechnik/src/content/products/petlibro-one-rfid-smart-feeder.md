@@ -254,6 +254,42 @@ decisionFacts:
   - label: "Batterie"
     value: "Nicht vom Hersteller ausgewiesen"
     consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+offers:
+  - id: "petlibro-de"
+    merchant: "petlibro"
+    network: "awin"
+    program: "petlibro-de"
+    mappingStatus: "verified"
+    commerceDataProvider: "shopify-product"
+    price:
+      current: 199.99
+      currency: "EUR"
+      status: "unknown"
+      checkedAt: "2026-09-21T16:52:55.348Z"
+      source:
+        id: "petlibro-official"
+        label: "PETLIBRO"
+        type: "merchant"
+        url: "https://de.petlibro.com/products/one-rfid-pet-feeder?variant=53222683672942"
+    priceState: "available"
+    availability: "available"
+    identityNote: "DE-Katalog, Produktseite (One RFID Futterautomat mit Halsband) und SKU PL-AF301-38B gegen vorhandenes Modell geprüft; Einzelgerät, keine Mehrfachpackung."
+    evidenceSources:
+      - source: "PETLIBRO DE – offizieller Katalog und strukturierte Produktdaten"
+        url: "https://de.petlibro.com/products/one-rfid-pet-feeder?variant=53222683672942"
+        accessedAt: "2026-09-21T12:59:30.143Z"
+        assertion: "Modell/Generation und Variante: One RFID Futterautomat mit Halsband, 1 Paket / Schwarz, SKU PL-AF301-38B. HTTP 200."
+        fields:
+          - "officialProductUrl"
+          - "variantId"
+          - "expectedSku"
+        sourceType: "officialStore"
+    officialProductUrl: "https://de.petlibro.com/products/one-rfid-pet-feeder?variant=53222683672942"
+    verifiedAt: "2026-09-21T12:59:30.143Z"
+    variantId: "53222683672942"
+    expectedSku: "PL-AF301-38B"
+    variantLabel: "1 Paket / Schwarz"
+    lastAttemptAt: "2026-09-21T16:52:55.348Z"
 ---
 Der PETLIBRO One RFID Smart Feeder kombiniert automatische Fütterung mit einem geschützten Napfzugang und eignet sich ideal für Mehrkatzenhaushalte.
 

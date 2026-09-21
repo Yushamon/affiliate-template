@@ -11,6 +11,7 @@ interface Operations {
 }
 
 interface Props {
+  commerce?: { offers: any[]; cheapestId: string | null; saving: number | null };
   price?: ProductPriceInsight;
   operations: Operations;
   subscriptionCost?: SubscriptionCostModel;
@@ -22,7 +23,8 @@ interface Props {
   };
 }
 
-const { price, affiliate, operations, subscriptionCost } = Astro.props;
+const { price, affiliate, operations, subscriptionCost, commerce } = Astro.props;
+const multiMerchant = Boolean(commerce?.offers.some(offer => !offer.legacy));
 const currentPriceLabel = price?.formattedCurrent
   ? price.formattedCurrent
   : operations.purchasable
@@ -46,7 +48,7 @@ const showTotals = Boolean(
 ---
 
 <section class="px2-price" aria-labelledby="px2-price-title" data-availability={operations.availability} data-subscription-status={subscriptionCost?.status}>
-  {unavailableCopy && (
+  {!multiMerchant && unavailableCopy && (
     <aside class:list={["px2-availability", `is-${operations.availability}`]} role="status">
       <strong>{operations.availabilityLabel}</strong>
       <p>{operations.availabilityReason || unavailableCopy}</p>
@@ -55,14 +57,14 @@ const showTotals = Boolean(
 
   <header class="px2-price__header">
     <span>Preisübersicht</span>
-    <h2 id="px2-price-title">{subscriptionCost ? "Preis & laufende Kosten" : "Aktueller Preis"}</h2>
+    <h2 id="px2-price-title">{multiMerchant ? "Angebote zum Produkt" : subscriptionCost ? "Preis & laufende Kosten" : "Aktueller Preis"}</h2>
   </header>
 
   <dl class:list={["px2-price__summary", subscriptionCost && "has-service"]}>
-    <div class="px2-price__purchase">
+    {!multiMerchant && <div class="px2-price__purchase">
       <dt>Anschaffung</dt>
       <dd>{currentPriceLabel}</dd>
-    </div>
+    </div>}
     {subscriptionCost && (
       <div class:list={["px2-price__service", `is-${subscriptionCost.tone}`]}>
         <dt><span aria-hidden="true">{subscriptionCost.symbol}</span> Laufende Kosten</dt>
@@ -96,7 +98,17 @@ const showTotals = Boolean(
     </details>
   )}
 
-  {operations.purchasable && affiliate.url ? (
+  {multiMerchant ? <div class="px2-offers" data-commerce-offers>
+    {commerce!.offers.map(offer => <div class="px2-offer" data-merchant={offer.merchant}>
+      <div class="px2-offer__heading"><strong>{offer.label}</strong><strong>{offer.formattedPrice || "Preis beim Händler prüfen"}</strong></div>
+      {offer.variantLabel && <small>{offer.variantLabel}</small>}
+      {offer.formattedPrice && <small>Stand: {new Date(offer.price.checkedAt).toLocaleDateString('de-DE')} · {offer.shipping == null ? 'Versandkosten beim Händler prüfen' : `Versand: ${offer.shipping.toLocaleString('de-DE', {style:'currency',currency:offer.currency})}`}</small>}
+      {commerce!.cheapestId === offer.id && <small>Günstigstes der aktuell vergleichbaren Angebote, inklusive Versand</small>}
+      <a class="px2-price__cta" href={offer.affiliateUrl} rel={offer.rel} target={offer.target}
+        data-affiliate-link data-merchant={offer.merchant} data-product={offer.tracking.product} data-placement={offer.tracking.placement} data-page-type={offer.tracking.pageType}>
+        Bei {offer.label} ansehen</a>
+    </div>)}
+  </div> : operations.purchasable && affiliate.url ? (
     <a
       class="px2-price__cta"
       href={affiliate.url}
@@ -116,10 +128,15 @@ const showTotals = Boolean(
 
   <p class="px2-price__note">
     Preis und Verfügbarkeit können sich kurzfristig ändern.
+    {multiMerchant && <> <a href="/affiliate-hinweis/">Affiliate-Links</a></>}
   </p>
 </section>
 
 <style>
+  .px2-offers { display:grid; gap:12px; min-width:0; }
+  .px2-offer { display:grid; gap:8px; min-width:0; padding:12px; border:1px solid var(--px2-border); border-radius:12px; }
+  .px2-offer__heading { display:flex; flex-wrap:wrap; justify-content:space-between; gap:6px 12px; overflow-wrap:anywhere; }
+  .px2-offer small { color:var(--px2-muted); line-height:1.5; overflow-wrap:anywhere; }
   .px2-price {
     display: grid;
     gap: 16px;

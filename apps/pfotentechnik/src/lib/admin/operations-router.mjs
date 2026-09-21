@@ -3,6 +3,7 @@ import {
   checkProductPrice,
   priceAudit,
   setManualProductPrice,
+  setProductCommerceOffer,
   updateProductOperationsState
 } from "../price-intelligence/service.mjs";
 import {
@@ -35,6 +36,11 @@ const errorStatus = (error) =>
 export async function handleOperationsRoute({ request, response, requestUrl, origin, json, assertJsonRequest, readJsonBody }) {
   const pathname = requestUrl.pathname;
   try {
+    if (request.method === 'POST' && pathname === '/api/admin/prices/offer') {
+      assertJsonRequest(request);
+      json(response,200,await setProductCommerceOffer(await readJsonBody(request,32768)),origin);
+      return true;
+    }
     if (request.method === "GET" && pathname === "/api/admin/prices") {
       json(response, 200, await priceAudit(), origin);
       return true;

@@ -1,0 +1,578 @@
+[
+  {
+    "slug": "petlibro-air-automatic-feeder",
+    "title": "PETLIBRO Air Automatic Feeder",
+    "id": "petlibro-de",
+    "merchant": "petlibro",
+    "network": "awin",
+    "program": "petlibro-de",
+    "mappingStatus": "unresolved",
+    "commerceDataProvider": "shopify-product",
+    "price": {
+      "current": null,
+      "currency": "EUR",
+      "status": "unknown"
+    },
+    "priceState": "unknown",
+    "availability": "unknown",
+    "identityNote": "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert.",
+    "evidenceSources": []
+  },
+  {
+    "slug": "petlibro-air-wifi-feeder",
+    "title": "PETLIBRO Air WiFi Feeder",
+    "id": "petlibro-de",
+    "merchant": "petlibro",
+    "network": "awin",
+    "program": "petlibro-de",
+    "mappingStatus": "unresolved",
+    "commerceDataProvider": "shopify-product",
+    "price": {
+      "current": null,
+      "currency": "EUR",
+      "status": "unknown"
+    },
+    "priceState": "unknown",
+    "availability": "unknown",
+    "identityNote": "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert.",
+    "evidenceSources": []
+  },
+  {
+    "slug": "petlibro-capsule-dog-fountain",
+    "title": "PETLIBRO Capsule Dog Fountain",
+    "id": "petlibro-de",
+    "merchant": "petlibro",
+    "network": "awin",
+    "program": "petlibro-de",
+    "mappingStatus": "unresolved",
+    "commerceDataProvider": "shopify-product",
+    "price": {
+      "current": null,
+      "currency": "EUR",
+      "status": "unknown"
+    },
+    "priceState": "unknown",
+    "availability": "unknown",
+    "identityNote": "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert.",
+    "evidenceSources": []
+  },
+  {
+    "slug": "petlibro-dockstream-2-smart-cordless",
+    "title": "PETLIBRO Dockstream 2 Smart Cordless",
+    "id": "petlibro-de",
+    "merchant": "petlibro",
+    "network": "awin",
+    "program": "petlibro-de",
+    "mappingStatus": "verified",
+    "commerceDataProvider": "shopify-product",
+    "price": {
+      "current": 115.99,
+      "currency": "EUR",
+      "status": "unknown",
+      "checkedAt": "2026-09-21T16:52:54.207Z",
+      "source": {
+        "id": "petlibro-official",
+        "label": "PETLIBRO",
+        "type": "merchant",
+        "url": "https://de.petlibro.com/products/dockstream-2-smart-fountain?variant=52389571494254"
+      }
+    },
+    "priceState": "available",
+    "availability": "available",
+    "identityNote": "DE-Katalog, Produktseite (Dockstream 2 Smarter Trinkbrunnen) und SKU PL-WF116-31W gegen vorhandenes Modell geprüft; Einzelgerät, keine Mehrfachpackung.",
+    "evidenceSources": [
+      {
+        "source": "PETLIBRO DE – offizieller Katalog und strukturierte Produktdaten",
+        "url": "https://de.petlibro.com/products/dockstream-2-smart-fountain?variant=52389571494254",
+        "accessedAt": "2026-09-21T12:59:27.192Z",
+        "assertion": "Modell/Generation und Variante: Dockstream 2 Smarter Trinkbrunnen, Weiß / Schnurlos, SKU PL-WF116-31W. HTTP 200.",
+        "fields": [
+          "officialProductUrl",
+          "variantId",
+          "expectedSku"
+        ],
+        "sourceType": "officialStore"
+      }
+    ],
+    "officialProductUrl": "https://de.petlibro.com/products/dockstream-2-smart-fountain?variant=52389571494254",
+    "verifiedAt": "2026-09-21T12:59:27.192Z",
+    "variantId": "52389571494254",
+    "expectedSku": "PL-WF116-31W",
+    "variantLabel": "Weiß / Schnurlos",
+    "lastAttemptAt": "2026-09-21T16:52:54.207Z"
+  },
+  {
+    "slug": "petlibro-dockstream-2-smart",
+    "title": "PETLIBRO Dockstream 2 Smart",
+    "id": "petlibro-de",
+    "merchant": "petlibro",
+    "network": "awin",
+    "program": "petlibro-de",
+    "mappingStatus": "verified",
+    "commerceDataProvider": "shopify-product",
+    "price": {
+      "current": 105.99,
+      "currency": "EUR",
+      "status": "unknown",
+      "checkedAt": "2026-09-21T16:52:54.384Z",
+      "source": {
+        "id": "petlibro-official",
+        "label": "PETLIBRO",
+        "type": "merchant",
+        "url": "https://de.petlibro.com/products/dockstream-2-smart-fountain?variant=52389571527022"
+      }
+    },
+    "priceState": "available",
+    "availability": "available",
+    "identityNote": "DE-Katalog, Produktseite (Dockstream 2 Smarter Trinkbrunnen) und SKU PL-WF106-31W gegen vorhandenes Modell geprüft; Einzelgerät, keine Mehrfachpackung.",
+    "evidenceSources": [
+      {
+        "source": "PETLIBRO DE – offizieller Katalog und strukturierte Produktdaten",
+        "url": "https://de.petlibro.com/products/dockstream-2-smart-fountain?variant=52389571527022",
+        "accessedAt": "2026-09-21T12:59:27.192Z",
+        "assertion": "Modell/Generation und Variante: Dockstream 2 Smarter Trinkbrunnen, Weiß / Plug-In, SKU PL-WF106-31W. HTTP 200.",
+        "fields": [
+          "officialProductUrl",
+          "variantId",
+          "expectedSku"
+        ],
+        "sourceType": "officialStore"
+      }
+    ],
+    "officialProductUrl": "https://de.petlibro.com/products/dockstream-2-smart-fountain?variant=52389571527022",
+    "verifiedAt": "2026-09-21T12:59:27.192Z",
+    "variantId": "52389571527022",
+    "expectedSku": "PL-WF106-31W",
+    "variantLabel": "Weiß / Plug-In",
+    "lastAttemptAt": "2026-09-21T16:52:54.384Z"
+  },
+  {
+    "slug": "petlibro-dockstream-cordless",
+    "title": "PETLIBRO Dockstream Cordless",
+    "id": "petlibro-de",
+    "merchant": "petlibro",
+    "network": "awin",
+    "program": "petlibro-de",
+    "mappingStatus": "unresolved",
+    "commerceDataProvider": "shopify-product",
+    "price": {
+      "current": null,
+      "currency": "EUR",
+      "status": "unknown"
+    },
+    "priceState": "unknown",
+    "availability": "unknown",
+    "identityNote": "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert.",
+    "evidenceSources": []
+  },
+  {
+    "slug": "petlibro-dockstream-rfid-smart",
+    "title": "PETLIBRO Dockstream RFID Smart",
+    "id": "petlibro-de",
+    "merchant": "petlibro",
+    "network": "awin",
+    "program": "petlibro-de",
+    "mappingStatus": "unresolved",
+    "commerceDataProvider": "shopify-product",
+    "price": {
+      "current": null,
+      "currency": "EUR",
+      "status": "unknown"
+    },
+    "priceState": "unknown",
+    "availability": "unknown",
+    "identityNote": "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert.",
+    "evidenceSources": []
+  },
+  {
+    "slug": "petlibro-glacier-ultrafiltration",
+    "title": "PETLIBRO Glacier Ultrafiltration Fountain",
+    "id": "petlibro-de",
+    "merchant": "petlibro",
+    "network": "awin",
+    "program": "petlibro-de",
+    "mappingStatus": "unresolved",
+    "commerceDataProvider": "shopify-product",
+    "price": {
+      "current": null,
+      "currency": "EUR",
+      "status": "unknown"
+    },
+    "priceState": "unknown",
+    "availability": "unknown",
+    "identityNote": "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert.",
+    "evidenceSources": []
+  },
+  {
+    "slug": "petlibro-granary-2-vision",
+    "title": "PETLIBRO Granary 2 Vision",
+    "id": "petlibro-de",
+    "merchant": "petlibro",
+    "network": "awin",
+    "program": "petlibro-de",
+    "mappingStatus": "unresolved",
+    "commerceDataProvider": "shopify-product",
+    "price": {
+      "current": null,
+      "currency": "EUR",
+      "status": "unknown"
+    },
+    "priceState": "unknown",
+    "availability": "unknown",
+    "identityNote": "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert.",
+    "evidenceSources": []
+  },
+  {
+    "slug": "petlibro-granary-camera-feeder",
+    "title": "PETLIBRO Granary Camera Feeder",
+    "id": "petlibro-de",
+    "merchant": "petlibro",
+    "network": "awin",
+    "program": "petlibro-de",
+    "mappingStatus": "verified",
+    "commerceDataProvider": "shopify-product",
+    "price": {
+      "current": 169.99,
+      "currency": "EUR",
+      "status": "unknown",
+      "checkedAt": "2026-09-21T16:52:54.600Z",
+      "source": {
+        "id": "petlibro-official",
+        "label": "PETLIBRO",
+        "type": "merchant",
+        "url": "https://de.petlibro.com/products/petlibro-granary-automatic-pet-feeder-with-camera?variant=44070751502578"
+      }
+    },
+    "priceState": "available",
+    "availability": "available",
+    "identityNote": "DE-Katalog, Produktseite (Granary Smarter Futterautomat mit Kamera) und SKU PL-AF203-34W gegen vorhandenes Modell geprüft; Einzelgerät, keine Mehrfachpackung.",
+    "evidenceSources": [
+      {
+        "source": "PETLIBRO DE – offizieller Katalog und strukturierte Produktdaten",
+        "url": "https://de.petlibro.com/products/petlibro-granary-automatic-pet-feeder-with-camera?variant=44070751502578",
+        "accessedAt": "2026-09-21T12:59:32.154Z",
+        "assertion": "Modell/Generation und Variante: Granary Smarter Futterautomat mit Kamera, Weiß / Einzelne Schale, SKU PL-AF203-34W. HTTP 200.",
+        "fields": [
+          "officialProductUrl",
+          "variantId",
+          "expectedSku"
+        ],
+        "sourceType": "officialStore"
+      }
+    ],
+    "officialProductUrl": "https://de.petlibro.com/products/petlibro-granary-automatic-pet-feeder-with-camera?variant=44070751502578",
+    "verifiedAt": "2026-09-21T12:59:32.154Z",
+    "variantId": "44070751502578",
+    "expectedSku": "PL-AF203-34W",
+    "variantLabel": "Weiß / Einzelne Schale",
+    "lastAttemptAt": "2026-09-21T16:52:54.600Z"
+  },
+  {
+    "slug": "petlibro-granary-dual-feeder",
+    "title": "PETLIBRO Granary WiFi Dual Food Tray Feeder",
+    "id": "petlibro-de",
+    "merchant": "petlibro",
+    "network": "awin",
+    "program": "petlibro-de",
+    "mappingStatus": "verified",
+    "commerceDataProvider": "shopify-product",
+    "price": {
+      "current": 119.99,
+      "currency": "EUR",
+      "status": "unknown",
+      "checkedAt": "2026-09-21T16:52:54.786Z",
+      "source": {
+        "id": "petlibro-official",
+        "label": "PETLIBRO",
+        "type": "merchant",
+        "url": "https://de.petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder?variant=44414075764978"
+      }
+    },
+    "priceState": "available",
+    "availability": "available",
+    "identityNote": "DE-Katalog, Produktseite (Granary WiFi Futterautomat) und SKU PL-AF103-36W gegen vorhandenes Modell geprüft; Einzelgerät, keine Mehrfachpackung.",
+    "evidenceSources": [
+      {
+        "source": "PETLIBRO DE – offizieller Katalog und strukturierte Produktdaten",
+        "url": "https://de.petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder?variant=44414075764978",
+        "accessedAt": "2026-09-21T12:59:33.061Z",
+        "assertion": "Modell/Generation und Variante: Granary WiFi Futterautomat, Weiß / Duale Schale, SKU PL-AF103-36W. HTTP 200.",
+        "fields": [
+          "officialProductUrl",
+          "variantId",
+          "expectedSku"
+        ],
+        "sourceType": "officialStore"
+      }
+    ],
+    "officialProductUrl": "https://de.petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder?variant=44414075764978",
+    "verifiedAt": "2026-09-21T12:59:33.061Z",
+    "variantId": "44414075764978",
+    "expectedSku": "PL-AF103-36W",
+    "variantLabel": "Weiß / Duale Schale",
+    "lastAttemptAt": "2026-09-21T16:52:54.786Z"
+  },
+  {
+    "slug": "petlibro-granary-wifi-feeder",
+    "title": "PETLIBRO Granary WiFi Feeder",
+    "id": "petlibro-de",
+    "merchant": "petlibro",
+    "network": "awin",
+    "program": "petlibro-de",
+    "mappingStatus": "verified",
+    "commerceDataProvider": "shopify-product",
+    "price": {
+      "current": 109.99,
+      "currency": "EUR",
+      "status": "unknown",
+      "checkedAt": "2026-09-21T16:52:54.971Z",
+      "source": {
+        "id": "petlibro-official",
+        "label": "PETLIBRO",
+        "type": "merchant",
+        "url": "https://de.petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder?variant=44414075732210"
+      }
+    },
+    "priceState": "available",
+    "availability": "available",
+    "identityNote": "DE-Katalog, Produktseite (Granary WiFi Futterautomat) und SKU PL-AF103-34W gegen vorhandenes Modell geprüft; Einzelgerät, keine Mehrfachpackung.",
+    "evidenceSources": [
+      {
+        "source": "PETLIBRO DE – offizieller Katalog und strukturierte Produktdaten",
+        "url": "https://de.petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder?variant=44414075732210",
+        "accessedAt": "2026-09-21T12:59:33.061Z",
+        "assertion": "Modell/Generation und Variante: Granary WiFi Futterautomat, Weiß / Einzelne Schale, SKU PL-AF103-34W. HTTP 200.",
+        "fields": [
+          "officialProductUrl",
+          "variantId",
+          "expectedSku"
+        ],
+        "sourceType": "officialStore"
+      }
+    ],
+    "officialProductUrl": "https://de.petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder?variant=44414075732210",
+    "verifiedAt": "2026-09-21T12:59:33.061Z",
+    "variantId": "44414075732210",
+    "expectedSku": "PL-AF103-34W",
+    "variantLabel": "Weiß / Einzelne Schale",
+    "lastAttemptAt": "2026-09-21T16:52:54.971Z"
+  },
+  {
+    "slug": "petlibro-luma-smart-litter-box",
+    "title": "PETLIBRO Luma Smart Self-Cleaning Litter Box",
+    "id": "petlibro-de",
+    "merchant": "petlibro",
+    "network": "awin",
+    "program": "petlibro-de",
+    "mappingStatus": "verified",
+    "commerceDataProvider": "shopify-product",
+    "price": {
+      "current": 799.99,
+      "currency": "EUR",
+      "status": "unknown",
+      "checkedAt": "2026-09-21T16:52:55.153Z",
+      "source": {
+        "id": "petlibro-official",
+        "label": "PETLIBRO",
+        "type": "merchant",
+        "url": "https://de.petlibro.com/products/luma-intelligente-selbstreinigende-katzentoilette?variant=53374260642158"
+      }
+    },
+    "priceState": "available",
+    "availability": "available",
+    "identityNote": "DE-Katalog, Produktseite (Luma Intelligente Selbstreinigende Katzentoilette) und SKU PL-LB001-31W gegen vorhandenes Modell geprüft; Einzelgerät, keine Mehrfachpackung.",
+    "evidenceSources": [
+      {
+        "source": "PETLIBRO DE – offizieller Katalog und strukturierte Produktdaten",
+        "url": "https://de.petlibro.com/products/luma-intelligente-selbstreinigende-katzentoilette?variant=53374260642158",
+        "accessedAt": "2026-09-21T12:59:28.284Z",
+        "assertion": "Modell/Generation und Variante: Luma Intelligente Selbstreinigende Katzentoilette, 1 paket, SKU PL-LB001-31W. HTTP 200.",
+        "fields": [
+          "officialProductUrl",
+          "variantId",
+          "expectedSku"
+        ],
+        "sourceType": "officialStore"
+      }
+    ],
+    "officialProductUrl": "https://de.petlibro.com/products/luma-intelligente-selbstreinigende-katzentoilette?variant=53374260642158",
+    "verifiedAt": "2026-09-21T12:59:28.284Z",
+    "variantId": "53374260642158",
+    "expectedSku": "PL-LB001-31W",
+    "variantLabel": "1 paket",
+    "lastAttemptAt": "2026-09-21T16:52:55.153Z"
+  },
+  {
+    "slug": "petlibro-one-rfid-smart-feeder",
+    "title": "PETLIBRO One RFID Smart Feeder",
+    "id": "petlibro-de",
+    "merchant": "petlibro",
+    "network": "awin",
+    "program": "petlibro-de",
+    "mappingStatus": "verified",
+    "commerceDataProvider": "shopify-product",
+    "price": {
+      "current": 199.99,
+      "currency": "EUR",
+      "status": "unknown",
+      "checkedAt": "2026-09-21T16:52:55.348Z",
+      "source": {
+        "id": "petlibro-official",
+        "label": "PETLIBRO",
+        "type": "merchant",
+        "url": "https://de.petlibro.com/products/one-rfid-pet-feeder?variant=53222683672942"
+      }
+    },
+    "priceState": "available",
+    "availability": "available",
+    "identityNote": "DE-Katalog, Produktseite (One RFID Futterautomat mit Halsband) und SKU PL-AF301-38B gegen vorhandenes Modell geprüft; Einzelgerät, keine Mehrfachpackung.",
+    "evidenceSources": [
+      {
+        "source": "PETLIBRO DE – offizieller Katalog und strukturierte Produktdaten",
+        "url": "https://de.petlibro.com/products/one-rfid-pet-feeder?variant=53222683672942",
+        "accessedAt": "2026-09-21T12:59:30.143Z",
+        "assertion": "Modell/Generation und Variante: One RFID Futterautomat mit Halsband, 1 Paket / Schwarz, SKU PL-AF301-38B. HTTP 200.",
+        "fields": [
+          "officialProductUrl",
+          "variantId",
+          "expectedSku"
+        ],
+        "sourceType": "officialStore"
+      }
+    ],
+    "officialProductUrl": "https://de.petlibro.com/products/one-rfid-pet-feeder?variant=53222683672942",
+    "verifiedAt": "2026-09-21T12:59:30.143Z",
+    "variantId": "53222683672942",
+    "expectedSku": "PL-AF301-38B",
+    "variantLabel": "1 Paket / Schwarz",
+    "lastAttemptAt": "2026-09-21T16:52:55.348Z"
+  },
+  {
+    "slug": "petlibro-polar-wet-food-feeder",
+    "title": "PETLIBRO Polar Wet Food Feeder",
+    "id": "petlibro-de",
+    "merchant": "petlibro",
+    "network": "awin",
+    "program": "petlibro-de",
+    "mappingStatus": "verified",
+    "commerceDataProvider": "shopify-product",
+    "price": {
+      "current": 199.99,
+      "currency": "EUR",
+      "status": "unknown",
+      "checkedAt": "2026-09-21T16:52:55.528Z",
+      "source": {
+        "id": "petlibro-official",
+        "label": "PETLIBRO",
+        "type": "merchant",
+        "url": "https://de.petlibro.com/products/polar-wet-food-pet-feeder?variant=52122051084654"
+      }
+    },
+    "priceState": "available",
+    "availability": "available",
+    "identityNote": "DE-Katalog, Produktseite (Polar Nassfutterautomat) und SKU PL-AF109-33B gegen vorhandenes Modell geprüft; Einzelgerät, keine Mehrfachpackung.",
+    "evidenceSources": [
+      {
+        "source": "PETLIBRO DE – offizieller Katalog und strukturierte Produktdaten",
+        "url": "https://de.petlibro.com/products/polar-wet-food-pet-feeder?variant=52122051084654",
+        "accessedAt": "2026-09-21T12:59:29.132Z",
+        "assertion": "Modell/Generation und Variante: Polar Nassfutterautomat, Schwarz / Edelstahlnapf, SKU PL-AF109-33B. HTTP 200.",
+        "fields": [
+          "officialProductUrl",
+          "variantId",
+          "expectedSku"
+        ],
+        "sourceType": "officialStore"
+      }
+    ],
+    "officialProductUrl": "https://de.petlibro.com/products/polar-wet-food-pet-feeder?variant=52122051084654",
+    "verifiedAt": "2026-09-21T12:59:29.132Z",
+    "variantId": "52122051084654",
+    "expectedSku": "PL-AF109-33B",
+    "variantLabel": "Schwarz / Edelstahlnapf",
+    "lastAttemptAt": "2026-09-21T16:52:55.528Z"
+  },
+  {
+    "slug": "petlibro-scout-smart-camera",
+    "title": "PETLIBRO Scout Smart Camera",
+    "id": "petlibro-de",
+    "merchant": "petlibro",
+    "network": "awin",
+    "program": "petlibro-de",
+    "mappingStatus": "verified",
+    "commerceDataProvider": "shopify-product",
+    "price": {
+      "current": 109.99,
+      "currency": "EUR",
+      "status": "unknown",
+      "checkedAt": "2026-09-21T16:52:55.694Z",
+      "source": {
+        "id": "petlibro-official",
+        "label": "PETLIBRO",
+        "type": "merchant",
+        "url": "https://de.petlibro.com/products/scout-smart-camera?variant=52157103145326"
+      }
+    },
+    "priceState": "available",
+    "availability": "available",
+    "identityNote": "DE-Katalog, Produktseite (Scout Smarte Kamera) und SKU PL-PC001-31W gegen vorhandenes Modell geprüft; Einzelgerät, keine Mehrfachpackung.",
+    "evidenceSources": [
+      {
+        "source": "PETLIBRO DE – offizieller Katalog und strukturierte Produktdaten",
+        "url": "https://de.petlibro.com/products/scout-smart-camera?variant=52157103145326",
+        "accessedAt": "2026-09-21T12:59:31.066Z",
+        "assertion": "Modell/Generation und Variante: Scout Smarte Kamera, 1 Paket / Weiß, SKU PL-PC001-31W. HTTP 200.",
+        "fields": [
+          "officialProductUrl",
+          "variantId",
+          "expectedSku"
+        ],
+        "sourceType": "officialStore"
+      }
+    ],
+    "officialProductUrl": "https://de.petlibro.com/products/scout-smart-camera?variant=52157103145326",
+    "verifiedAt": "2026-09-21T12:59:31.066Z",
+    "variantId": "52157103145326",
+    "expectedSku": "PL-PC001-31W",
+    "variantLabel": "1 Paket / Weiß",
+    "lastAttemptAt": "2026-09-21T16:52:55.694Z"
+  },
+  {
+    "slug": "petlibro-space-smart-feeder",
+    "title": "PETLIBRO Space Smart Feeder",
+    "id": "petlibro-de",
+    "merchant": "petlibro",
+    "network": "awin",
+    "program": "petlibro-de",
+    "mappingStatus": "unresolved",
+    "commerceDataProvider": "shopify-product",
+    "price": {
+      "current": null,
+      "currency": "EUR",
+      "status": "unknown"
+    },
+    "priceState": "unknown",
+    "availability": "unknown",
+    "identityNote": "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert.",
+    "evidenceSources": []
+  },
+  {
+    "slug": "petlibro-stainless-steel-fountain",
+    "title": "PETLIBRO Stainless Steel Fountain 3L",
+    "id": "petlibro-de",
+    "merchant": "petlibro",
+    "network": "awin",
+    "program": "petlibro-de",
+    "mappingStatus": "unresolved",
+    "commerceDataProvider": "shopify-product",
+    "price": {
+      "current": null,
+      "currency": "EUR",
+      "status": "unknown"
+    },
+    "priceState": "unknown",
+    "availability": "unknown",
+    "identityNote": "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert.",
+    "evidenceSources": []
+  }
+]

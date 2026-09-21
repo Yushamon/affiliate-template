@@ -1,5 +1,5 @@
 import { consumablesSchema, consumablePolicySchema, replacementCommerceShape, fountainOperatingShape, validateFoundationEvidence } from "./consumables.mjs";
-import { productAffiliateSchema, productPriceSchema, productPriceStateSchema, productAvailabilitySchema } from "./commerce.mjs";
+import { productAffiliateSchema, productPriceSchema, productPriceStateSchema, productAvailabilitySchema, productOffersSchema } from "./commerce.mjs";
 import {
   defineCollection,
   type ImageFunction
@@ -773,6 +773,8 @@ export const createProductContentSchema = (image: ImageFunction) =>
     affiliate:
       productAffiliateSchema
         .optional(),
+
+    offers: productOffersSchema,
 
     conversion:
       productConversionSchema,

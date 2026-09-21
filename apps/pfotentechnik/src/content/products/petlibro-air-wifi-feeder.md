@@ -465,6 +465,21 @@ decisionFacts:
   - label: "App"
     value: "PETLIBRO-App, nicht PETLIBRO Lite"
     consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
+offers:
+  - id: "petlibro-de"
+    merchant: "petlibro"
+    network: "awin"
+    program: "petlibro-de"
+    mappingStatus: "unresolved"
+    commerceDataProvider: "shopify-product"
+    price:
+      current: null
+      currency: "EUR"
+      status: "unknown"
+    priceState: "unknown"
+    availability: "unknown"
+    identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
+    evidenceSources: []
 ---
 Der PETLIBRO Air WiFi Feeder ist ein kompakter App-Futterautomat mit zwei Litern Vorrat und einem fest eingebauten 5.200-mAh-Akku.
 

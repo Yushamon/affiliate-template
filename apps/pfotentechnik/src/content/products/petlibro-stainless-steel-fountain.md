@@ -273,6 +273,21 @@ decisionFacts:
   - label: "Filter"
     value: "dreistufig"
     consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
+offers:
+  - id: "petlibro-de"
+    merchant: "petlibro"
+    network: "awin"
+    program: "petlibro-de"
+    mappingStatus: "unresolved"
+    commerceDataProvider: "shopify-product"
+    price:
+      current: null
+      currency: "EUR"
+      status: "unknown"
+    priceState: "unknown"
+    availability: "unknown"
+    identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
+    evidenceSources: []
 ---
 Der PETLIBRO Stainless Steel Fountain verzichtet bewusst auf App, Akku und Sensorik. Seine Stärken sind Edelstahl, einfache Bedienung und ein mechanisch regelbarer Dauerfluss.
 

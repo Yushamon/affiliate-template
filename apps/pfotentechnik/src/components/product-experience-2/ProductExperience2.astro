@@ -45,6 +45,10 @@ const reference33 = true;
   <ProductEverydayTimeline items={model.timeline} heading={model.usageHeading} eyebrow={model.usageEyebrow} />
   <ProductCommunityInsights2 insights={model.communityInsights} />
   <ProductDetails2 model={model} />
+  {model.editorialMerchant && <p class="px2-editorial-merchant"><a
+    href={model.editorialMerchant.affiliateUrl} rel={model.editorialMerchant.rel} target="_blank"
+    data-affiliate-link data-merchant={model.editorialMerchant.merchant} data-product={model.editorialMerchant.tracking.product}
+    data-placement="editorial-manufacturer" data-page-type="product">Produkt bei {model.editorialMerchant.label} ansehen</a> · <a href="/affiliate-hinweis/">Affiliate-Hinweis</a></p>}
   <ProductEvidence2 evidence={model.evidenceSummary} updatedAt={model.updatedAt} />
   <ProductAlternatives2 alternatives={model.alternatives.slice(0, 3)} reference={reference33} />
 </article>

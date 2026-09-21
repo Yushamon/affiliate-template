@@ -237,6 +237,42 @@ affiliate:
   url: "https://amzn.to/4wOAlh0"
   rel: "sponsored nofollow noopener"
   target: "_blank"
+offers:
+  - id: "petlibro-de"
+    merchant: "petlibro"
+    network: "awin"
+    program: "petlibro-de"
+    mappingStatus: "verified"
+    commerceDataProvider: "shopify-product"
+    price:
+      current: 109.99
+      currency: "EUR"
+      status: "unknown"
+      checkedAt: "2026-09-21T16:52:55.694Z"
+      source:
+        id: "petlibro-official"
+        label: "PETLIBRO"
+        type: "merchant"
+        url: "https://de.petlibro.com/products/scout-smart-camera?variant=52157103145326"
+    priceState: "available"
+    availability: "available"
+    identityNote: "DE-Katalog, Produktseite (Scout Smarte Kamera) und SKU PL-PC001-31W gegen vorhandenes Modell geprüft; Einzelgerät, keine Mehrfachpackung."
+    evidenceSources:
+      - source: "PETLIBRO DE – offizieller Katalog und strukturierte Produktdaten"
+        url: "https://de.petlibro.com/products/scout-smart-camera?variant=52157103145326"
+        accessedAt: "2026-09-21T12:59:31.066Z"
+        assertion: "Modell/Generation und Variante: Scout Smarte Kamera, 1 Paket / Weiß, SKU PL-PC001-31W. HTTP 200."
+        fields:
+          - "officialProductUrl"
+          - "variantId"
+          - "expectedSku"
+        sourceType: "officialStore"
+    officialProductUrl: "https://de.petlibro.com/products/scout-smart-camera?variant=52157103145326"
+    verifiedAt: "2026-09-21T12:59:31.066Z"
+    variantId: "52157103145326"
+    expectedSku: "PL-PC001-31W"
+    variantLabel: "1 Paket / Weiß"
+    lastAttemptAt: "2026-09-21T16:52:55.694Z"
 ---
 
 ## Einordnung ohne eigenen Produkttest

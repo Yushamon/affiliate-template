@@ -4,6 +4,7 @@ import { extractOfferFromHtml } from "./extract-offer.mjs";
 import {
   readProductDocument,
   readProductFiles,
+  updateProductOffer,
   updateProductOperations,
   updateProductPrice
 } from "./frontmatter-price.mjs";
@@ -19,6 +20,11 @@ import {
   parseLocalizedPrice,
   toOperationsRecord
 } from "../product-operations/policy.mjs";
+import { resolveCommerceOffers } from '../../domain/commerceOffers.mjs';
+import { refreshOfficialOffer, refreshCommerceTasks } from './commerce-refresh.mjs';
+import { productOfferSchema } from '../../content/schema/commerce.mjs';
+import { affiliatePrograms } from '../../config/affiliate-programs.mjs';
+import { httpsDestination } from '../../../../../packages/affiliate-core/src/affiliate/networks.mjs';
 
 const appRoot = path.resolve(fileURLToPath(new URL("../../..", import.meta.url)));
 const productsDir = path.join(appRoot, "src", "content", "products");
@@ -70,7 +76,7 @@ const validateManufacturer = (input) => {
 };
 
 const resultFromDocument = (document, extra = {}) => {
-  const record = toOperationsRecord(document.data);
+  const record = {...toOperationsRecord(document.data), commerceOffers: resolveCommerceOffers(document.data)};
   return {
     ...record,
     ...extra,
@@ -144,25 +150,47 @@ async function checkDocumentPrice(document) {
   });
 }
 
-export async function checkProductPrice(slugInput) {
+export async function checkProductPrice(slugInput, {find = findDocument, checkLegacy = checkDocumentPrice, refresh = refreshOfficialOffer, persist = updateProductOffer} = {}) {
   const slug = validateSlug(slugInput);
-  return dedupePriceCheck(slug, async () => checkDocumentPrice(await findDocument(slug)));
+  return dedupePriceCheck(slug, async () => {
+    const document = await find(slug);
+    const tasks = [];
+    if (allowsAutomaticPriceCheck(document.data) && (document.data.affiliate?.url || document.data.price?.affiliateUrl)) {
+      tasks.push({id:'legacy',provider:'structured-html',run:()=>checkLegacy(document)});
+    }
+    for (const offer of document.data.offers ?? []) {
+      tasks.push({id:offer.id,provider:offer.commerceDataProvider,run:async()=>{
+        try {
+          const next = await refresh(offer);
+          await persist(document.file, offer.id, current => ({...current,price:next.price,priceState:next.priceState,availability:next.availability,lastAttemptAt:next.lastAttemptAt,error:undefined}));
+          return {checkedAt:next.price.checkedAt};
+        } catch(error) {
+          await persist(document.file, offer.id, current => ({...current,lastAttemptAt:new Date().toISOString(),error:String(error.message).slice(0,400)}));
+          throw error;
+        }
+      }});
+    }
+    const providerResults = await refreshCommerceTasks(tasks);
+    return resultFromDocument(await find(slug), {providerResults,
+      ok:providerResults.some(r=>r.ok), error:providerResults.length ? providerResults.filter(r=>!r.ok).map(r=>`${r.id}: ${r.error}`).join(' · ') : 'Keine automatische Quelle konfiguriert.'});
+  });
 }
 
-export async function checkAllProductPrices({ limit = 100, includeInactive = false } = {}) {
-  const documents = await listPriceDocuments();
+export async function checkAllProductPrices({ limit = Number.MAX_SAFE_INTEGER, includeInactive = false } = {}, {listDocuments = listPriceDocuments, check = checkProductPrice} = {}) {
+  const documents = await listDocuments();
   const candidates = documents.filter((document) => {
+    if (document.data.offers?.length) return true;
     if (!allowsAutomaticPriceCheck(document.data)) return false;
     if (includeInactive) return true;
     const operations = deriveProductOperations(document.data);
     return !operations.consciouslyUnavailable && !operations.archived;
   });
-  const safeLimit = Math.min(candidates.length, Math.max(1, Number(limit) || 100));
+  const safeLimit = Math.min(candidates.length, Math.max(1, Number(limit) || candidates.length));
   const results = [];
 
   for (const document of candidates.slice(0, safeLimit)) {
     try {
-      results.push({ ok: true, ...(await checkProductPrice(document.slug)) });
+      results.push({ ok: true, ...(await check(document.slug)) });
     } catch (error) {
       results.push({
         ok: false,
@@ -308,7 +336,7 @@ export async function updateProductOperationsState(input = {}) {
 export async function priceAudit() {
   const documents = await listPriceDocuments();
   const products = documents
-    .map(({ data }) => toOperationsRecord(data))
+    .map(({ data }) => ({...toOperationsRecord(data), commerceOffers: resolveCommerceOffers(data)}))
     .map((record) => ({ ...record, operations: record }))
     .sort(compareMaintenanceRows)
     .map(({ operations: _operations, ...record }) => record);
@@ -321,4 +349,35 @@ export async function priceAudit() {
     summary: dashboard,
     products
   };
+}
+
+// Existing Cockpit handles offer-specific maintenance; official URLs never replace evidence URLs.
+export async function setProductCommerceOffer(input = {}) {
+  const document = await findDocument(validateSlug(input.slug));
+  const id = String(input.id ?? '').trim();
+  if (!/^[a-z0-9][a-z0-9-]*$/.test(id)) throw new Error('Ungültige Offer-ID.');
+  const program = affiliatePrograms[input.program];
+  if (!program) throw new Error('Unbekanntes Affiliate-Programm.');
+  const destination = input.officialProductUrl ? httpsDestination(input.officialProductUrl,program.hosts) : undefined;
+  if (input.officialProductUrl && !destination) throw new Error('Ungültige offizielle HTTPS-Produkt-URL.');
+  let verifiedSnapshot;
+  if (input.confirmIdentity === true) {
+    verifiedSnapshot = await refreshOfficialOffer({program:input.program,officialProductUrl:destination,mappingStatus:'verified',commerceDataProvider:'shopify-product',variantId:String(input.variantId ?? ''),expectedSku:String(input.expectedSku ?? '')});
+  }
+  const persisted = await updateProductOffer(document.file,id,current=>{
+    const sameIdentity = current?.officialProductUrl === destination && current?.variantId === String(input.variantId ?? '') && current?.expectedSku === String(input.expectedSku ?? '');
+    const next = {...current,id,merchant:program.merchant,network:program.network,program:input.program,
+      officialProductUrl:destination,variantId:String(input.variantId ?? '') || undefined,expectedSku:String(input.expectedSku ?? '') || undefined,
+      mappingStatus:sameIdentity ? current.mappingStatus : 'unresolved',
+      identityNote:sameIdentity ? current.identityNote : 'Neue Zuordnung benötigt Modell-/Generationsprüfung.',
+      commerceDataProvider:current?.commerceDataProvider ?? (program.merchant==='petlibro'?'shopify-product':'manual'),
+      price:sameIdentity ? current.price : {current:null,currency:'EUR',status:'unknown'},
+      priceState:sameIdentity ? current.priceState:'unknown',availability:sameIdentity ? current.availability:'unknown',
+      verifiedAt:sameIdentity?current.verifiedAt:undefined,evidenceSources:sameIdentity?current.evidenceSources:[],error:undefined};
+    if (verifiedSnapshot) Object.assign(next, {mappingStatus:'verified',verifiedAt:verifiedSnapshot.lastAttemptAt,lastAttemptAt:verifiedSnapshot.lastAttemptAt,price:verifiedSnapshot.price,priceState:verifiedSnapshot.priceState,availability:verifiedSnapshot.availability,
+      identityNote:'Modell und Variante im Cockpit redaktionell bestätigt; SKU und Preisquelle serverseitig geprüft.',
+      evidenceSources:[{source:program.label,url:destination,accessedAt:verifiedSnapshot.lastAttemptAt,assertion:'Modell-/Generationszuordnung redaktionell bestätigt; exakte SKU in offizieller Variante geprüft.',fields:['officialProductUrl','variantId','expectedSku'],sourceType:'officialStore'}]});
+    return productOfferSchema.parse(next);
+  });
+  return resultFromDocument(persisted);
 }
