@@ -288,6 +288,9 @@ const graphNodes = indexablePages.map((page) => {
     route: page.route,
     pageType: page.role,
     title: page.title,
+    h1: page.h1s[0] ?? "",
+    description: page.description,
+    descriptionLength: [...page.description].length,
     primaryIntent: page.primaryIntent,
     incomingAny: any,
     incomingMeaningful: meaningful,
@@ -388,6 +391,15 @@ const graphReport = {
     duplicateCanonicalTargets,
   },
   metadata: {
+    // Diagnostic buckets only: length alone is not a quality finding.
+    descriptionQuality: indexablePages.reduce((counts, page) => {
+      const length = [...page.description.trim()].length;
+      const bucket = !length ? "missing" : length < 70 ? "<70" : length < 100 ? "70–99"
+        : length < 120 ? "100–119" : length <= 170 ? "120–170" : ">170";
+      counts[bucket] += 1;
+      return counts;
+    }, { missing: 0, "<70": 0, "70–99": 0, "100–119": 0, "120–170": 0, ">170": 0,
+      exactDuplicates: duplicateGroups("description").length }),
     findings: metadataFindings,
     duplicateTitles: duplicateGroups("title"),
     duplicateDescriptions: duplicateGroups("description"),

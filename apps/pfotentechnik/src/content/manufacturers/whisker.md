@@ -36,6 +36,8 @@ sources:
   - { label: "Litter-Robot 4 EU", url: "https://www.litter-robot.com/eu/de/litter-robot-4.html" }
   - { label: "Litter-Robot 5 Pro", url: "https://www.whisker.com/litter-robot-5-pro" }
 faq: []
+seo:
+  description: "Whisker mit Litter-Robot 4 und 5 Pro: geschlossene automatische Katzentoiletten nach Mindestgewicht, Innenraum, App und optionalem Whisker+ einordnen."
 ---
 
 ## Whisker bei PfotenTechnik

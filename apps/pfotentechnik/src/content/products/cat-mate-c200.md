@@ -59,11 +59,11 @@ images:
     - src: ../../assets/images/products/cat-mate-c200/gallery-3.webp
       alt: Kühlakku des Cat Mate C200
 price:
-  current: 31.99
+  current: 32.49
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 10 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-09-02T05:59:51.972Z"
+  checkedAt: "2026-09-21T06:15:20.657Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -78,12 +78,12 @@ rating: 3.5
 score: 71
 
 priceState: "available"
-priceUpdated: "2026-09-02T05:59:51.972Z"
+priceUpdated: "2026-09-21T06:15:20.657Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-02T05:59:51.972Z"
+availabilityUpdated: "2026-09-21T06:15:20.657Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

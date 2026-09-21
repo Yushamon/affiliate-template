@@ -27,7 +27,7 @@ hub:
   featured: false
 seo:
   title: "PetTec: Haustierkameras und Speicherung"
-  description: "PetTec im PfotenTechnik-Bestand mit Cam 360, microSD und optionalen Cloud-Diensten."
+  description: "PetTec Haustierkameras am Beispiel der Cam 360: lokale microSD-Aufzeichnung, Basisfunktionen ohne Pflichtabo und optionale Cloud-Dienste einordnen."
   canonical: "/hersteller/pettec/"
   sitemap: true
   noindex: false

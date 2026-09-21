@@ -16,7 +16,7 @@ productUrl: "/produkt/petlibro-luma-smart-litter-box/"
 publishedAt: "2026-08-15"
 updatedAt: "2026-08-15"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
-seo: { title: "PETLIBRO Luma im Datencheck", description: "PETLIBRO Luma nach Einstieg, Katzengewicht, Sicherheit, Streu, Abfallfach, Kamera, Cloud und Folgekosten eingeordnet.", canonical: "/produkt/petlibro-luma-smart-litter-box/", sitemap: true, priority: 0.8 }
+seo: { title: "PETLIBRO Luma im Datencheck", description: "PETLIBRO Luma: teiloffene automatische Katzentoilette mit 34-cm-Einstieg und Mehrkatzenprofilen. Kamera-Cloud, Streuwahl und Verbrauchskosten eingeordnet.", canonical: "/produkt/petlibro-luma-smart-litter-box/", sitemap: true, priority: 0.8 }
 hub: { sections: ["produkte", "automatische-katzentoiletten"] }
 tags: ["automatische-katzentoilette", "katze", "mehrkatzenhaushalt", "kamera", "app"]
 images:
@@ -50,10 +50,10 @@ subscription:
     - { name: "Standard jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 129.99, currency: EUR, effectiveMonthlyPrice: 10.83, autoRenew: true, featured: true, notes: "7 Tage Videospeicher" }
     - { name: "Premium jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 189.99, currency: EUR, effectiveMonthlyPrice: 15.83, autoRenew: true, notes: "30 Tage Videospeicher" }
 price:
-  current: 559.98
+  current: 699.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-09T06:22:46.696Z"
+  checkedAt: "2026-09-21T06:16:40.549Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -145,12 +145,12 @@ externalEvidence:
     editorialAssessment: "Für die Luma liegt erstmals eine belastbare unabhängige mehrwöchige Hands-on-Review vor. Die aktuelle Nutzerbasis bestätigt sowohl schnelle Akzeptanz als auch einzelne Schwächen der Reinigungs- und Trennlogik. Die Trustpilot-Gesamtwertung ist jedoch markenweit und darf nicht als Luma-Produktbewertung dargestellt werden."
   note: "Cats.com bezieht sich eindeutig auf die aktuelle PETLIBRO Luma. Trustpilot wird ausschließlich als markenweite Nutzerplattform geführt; nur ausdrücklich auf Luma bezogene Erfahrungsinhalte fließen vorsichtig in die Einordnung ein."
 priceState: "available"
-priceUpdated: "2026-09-09T06:22:46.696Z"
+priceUpdated: "2026-09-21T06:16:40.549Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-09T06:22:46.696Z"
+availabilityUpdated: "2026-09-21T06:16:40.549Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

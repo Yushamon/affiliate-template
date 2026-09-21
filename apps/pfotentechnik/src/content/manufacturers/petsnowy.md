@@ -27,7 +27,7 @@ hub:
   featured: false
 seo:
   title: "PetSnowy: Produkte und Einordnung"
-  description: "PetSnowy im PfotenTechnik-Datenbestand mit SNOW+ und den relevanten Systemgrenzen."
+  description: "PetSnowy SNOW+: geschlossene automatische Katzentoilette mit einem Ausstiegsweg gegen Streuverschleppung. Verbrauchsmaterialien und EU-Verfügbarkeit einordnen."
   canonical: "/hersteller/petsnowy/"
   sitemap: true
   noindex: false

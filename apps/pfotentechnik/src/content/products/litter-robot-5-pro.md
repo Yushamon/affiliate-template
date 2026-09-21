@@ -16,7 +16,7 @@ productUrl: "/produkt/litter-robot-5-pro/"
 publishedAt: "2026-08-06"
 updatedAt: "2026-08-06"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
-seo: { title: "Litter-Robot 5 Pro im Check", description: "Litter-Robot 5 Pro: geschlossenes Siebsystem, Mindestgewicht, Dualkamera, WasteID, App und Folgekosten eingeordnet.", canonical: "/produkt/litter-robot-5-pro/", sitemap: true, priority: 0.8 }
+seo: { title: "Litter-Robot 5 Pro im Check", description: "Litter-Robot 5 Pro: automatische Katzentoilette mit zwei 1080p-Kameras. Mindestgewicht, geschlossene Trommel und Whisker+-abhängige Tiererkennung eingeordnet.", canonical: "/produkt/litter-robot-5-pro/", sitemap: true, priority: 0.8 }
 hub: { sections: ["produkte", "automatische-katzentoiletten"] }
 tags: ["automatische-katzentoilette", "katze", "mehrkatzenhaushalt", "kamera", "app"]
 images:

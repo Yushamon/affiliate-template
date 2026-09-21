@@ -30,9 +30,7 @@ hub:
   order: 130
 seo:
   title: Beste Futterautomaten für kleine Hunde im Vergleich
-  description: >-
-    Die besten Futterautomaten für kleine Hunde im Vergleich. Erfahre, welche Modelle sich für kleine Portionen und
-    feste Fütterungszeiten besonders eignen.
+  description: "Futterautomaten für kleine Hunde nach Mindestportion, Krokettengröße und Napfzugang vergleichen. Mit Hinweisen zu flachen Schnauzen und Futterkalibrierung."
   canonical: /vergleiche/beste-futterautomaten-fuer-kleine-hunde/
   sitemap: true
   noindex: false

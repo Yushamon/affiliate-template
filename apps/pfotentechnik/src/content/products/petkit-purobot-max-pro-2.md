@@ -23,7 +23,7 @@ author:
   role: "Redaktion"
 seo:
   title: "PETKIT PUROBOT MAX PRO 2 im Check"
-  description: "PUROBOT MAX PRO 2: Kamera, Mehrkatzenprofile, Sensorstopp, Streu, App-Daten und Pflege eingeordnet."
+  description: "PETKIT PUROBOT MAX PRO 2: automatische Katzentoilette mit 76-l-Trommel und Kamera. Eignung für mehrere Katzen, 25,5-cm-Einstieg und Cloudkosten eingeordnet."
   canonical: "/produkt/petkit-purobot-max-pro-2/"
   sitemap: true
   priority: 0.8

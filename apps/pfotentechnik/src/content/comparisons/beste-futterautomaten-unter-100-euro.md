@@ -26,7 +26,7 @@ hub:
   order: 230
 seo:
   title: Beste Futterautomaten unter 100 Euro im Vergleich
-  description: Die besten Futterautomaten unter 100 Euro im Vergleich. Erfahre, welche Modelle trotz kleinerem Budget überzeugen.
+  description: "Futterautomaten unter 100 Euro: lokale Timer, App-Modelle und Nassfutterfächer vergleichen. Portionierung, Stromreserve und Folgekosten für die Budgetwahl."
   canonical: /vergleiche/beste-futterautomaten-unter-100-euro/
   sitemap: true
   noindex: false

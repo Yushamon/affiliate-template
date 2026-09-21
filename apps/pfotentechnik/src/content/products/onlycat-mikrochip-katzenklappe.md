@@ -20,7 +20,7 @@ publishedAt: "2026-08-04"
 updatedAt: "2026-08-05"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: ["Katzenklappe", "Mikrochip", "App", "Beuteerkennung", "Kamera"]
-seo: { title: "OnlyCat Mikrochip Katzenklappe im Datencheck", description: "OnlyCat: Beuteerkennung, App, Kamera, Strom- und WLAN-Abhängigkeit sowie Preismodelle.", canonical: "/produkt/onlycat-mikrochip-katzenklappe/", sitemap: true, noindex: false }
+seo: { title: "OnlyCat Mikrochip Katzenklappe im Datencheck", description: "OnlyCat Mikrochip-Katzenklappe mit Kamera und Beuteerkennung: Wie Netzstrom, WLAN und das gewählte Preismodell den Betrieb im Haushalt bestimmen.", canonical: "/produkt/onlycat-mikrochip-katzenklappe/", sitemap: true, noindex: false }
 hub: { sections: ["produkte", "katzenklappen"], title: "OnlyCat", description: "Komplettsystem mit App und Beuteerkennung.", featured: true, order: 23 }
 images:
   hero:
@@ -55,10 +55,10 @@ subscription:
   plans:
     - { name: "Abo-Version", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 9.99, currency: EUR, effectiveMonthlyPrice: 9.99, autoRenew: true, featured: true }
 price:
-  current: 326.99
-  currency: "EUR"
+  current: 275
+  currency: "GBP"
   status: "unknown"
-  checkedAt: "2026-09-09T06:22:05.958Z"
+  checkedAt: "2026-09-21T06:16:01.291Z"
   source:
     id: "onlycat.com"
     label: "onlycat.com"
@@ -73,12 +73,12 @@ editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentati
 rating: 3.6
 
 priceState: "available"
-priceUpdated: "2026-09-09T06:22:05.958Z"
+priceUpdated: "2026-09-21T06:16:01.291Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-09T06:22:05.958Z"
+availabilityUpdated: "2026-09-21T06:16:01.291Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

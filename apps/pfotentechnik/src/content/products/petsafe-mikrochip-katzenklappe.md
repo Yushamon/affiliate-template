@@ -20,7 +20,7 @@ publishedAt: "2026-08-04"
 updatedAt: "2026-08-26"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: ["Katzenklappe", "Mikrochip", "PetSafe", "ohne App"]
-seo: { title: "PetSafe Mikrochip Katzenklappe im Datencheck", description: "PetSafe Mikrochip Katzenklappe: Chip-Kompatibilität, Speicher, Einbau, Dichtung und Grenzen.", canonical: "/produkt/petsafe-mikrochip-katzenklappe/", sitemap: true, noindex: false }
+seo: { title: "PetSafe Mikrochip Katzenklappe im Datencheck", description: "PetSafe Mikrochip-Katzenklappe für selektiven Eingang mit bis zu 40 gespeicherten Katzen. FDX-B-Kompatibilität, Batteriebetrieb und Einbau eingeordnet.", canonical: "/produkt/petsafe-mikrochip-katzenklappe/", sitemap: true, noindex: false }
 hub: { sections: ["produkte", "katzenklappen"], title: "PetSafe Mikrochip Katzenklappe", description: "Selektiver Eingang mit FDX-B-Prüfung.", featured: true, order: 22 }
 images:
   hero: { src: "../../assets/images/products/petsafe-mikrochip-katzenklappe/hero.webp", alt: "PetSafe Mikrochip Katzenklappe in heller Studioaufnahme" }
@@ -31,10 +31,10 @@ images:
     - { src: "../../assets/images/products/petsafe-mikrochip-katzenklappe/gallery-2.webp", alt: "Katze nutzt die PetSafe Mikrochip Katzenklappe" }
     - { src: "../../assets/images/products/petsafe-mikrochip-katzenklappe/gallery-3.webp", alt: "Größenvergleich der PetSafe Mikrochip Katzenklappe mit einer Hauskatze" }
 price:
-  current: 69.98
+  current: 69.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-09T06:22:59.717Z"
+  checkedAt: "2026-09-21T06:16:54.744Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -49,12 +49,12 @@ editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentati
 rating: 3.8
 
 priceState: "available"
-priceUpdated: "2026-09-09T06:22:59.717Z"
+priceUpdated: "2026-09-21T06:16:54.744Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-09T06:22:59.717Z"
+availabilityUpdated: "2026-09-21T06:16:54.744Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

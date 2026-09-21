@@ -60,7 +60,7 @@ price:
   current: 129.99
   currency: "USD"
   status: "unknown"
-  checkedAt: "2026-09-09T06:22:38.962Z"
+  checkedAt: "2026-09-21T06:16:32.611Z"
   source:
     id: "petlibro.com"
     label: "petlibro.com"
@@ -78,12 +78,12 @@ conversion:
   showSecondaryCta: true
 
 priceState: "available"
-priceUpdated: "2026-09-09T06:22:38.962Z"
+priceUpdated: "2026-09-21T06:16:32.611Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-09T06:22:38.962Z"
+availabilityUpdated: "2026-09-21T06:16:32.611Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

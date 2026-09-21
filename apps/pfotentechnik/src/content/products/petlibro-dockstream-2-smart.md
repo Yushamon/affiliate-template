@@ -69,10 +69,10 @@ subscription:
   additionalCostNote: "Die deutsche Produktseite belegt die optionale Care-Auswahl, weist den Tarifpreis aber nicht belastbar im auslesbaren Angebot aus."
   plans: []
 price:
-  current: 99.99
+  current: 105.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-09T06:22:33.095Z"
+  checkedAt: "2026-09-21T06:16:26.846Z"
   source:
     id: "de.petlibro.com"
     label: "de.petlibro.com"
@@ -90,12 +90,12 @@ conversion:
   showSecondaryCta: true
 
 priceState: "available"
-priceUpdated: "2026-09-09T06:22:33.095Z"
+priceUpdated: "2026-09-21T06:16:26.846Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-09T06:22:33.095Z"
+availabilityUpdated: "2026-09-21T06:16:26.846Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

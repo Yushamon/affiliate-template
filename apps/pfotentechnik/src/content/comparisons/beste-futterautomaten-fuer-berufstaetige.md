@@ -31,9 +31,7 @@ hub:
   order: 100
 seo:
   title: Beste Futterautomaten für Berufstätige im Vergleich
-  description: >-
-    Die besten Futterautomaten für Berufstätige im Vergleich. Finde Modelle mit App, Zeitplänen und zuverlässiger
-    Portionierung.
+  description: "Futterautomaten für den Arbeitstag vergleichen: Zeitpläne, Fresskontrolle und Offline-Betrieb. Welches Modell zu Abwesenheit und Betreuung passt."
   canonical: /vergleiche/beste-futterautomaten-fuer-berufstaetige/
   sitemap: true
   noindex: false

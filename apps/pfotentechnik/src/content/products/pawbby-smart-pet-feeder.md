@@ -22,7 +22,7 @@ author:
   name: PfotenTechnik Redaktion
 seo:
   title: PAWBBY Smart Pet Feeder Test
-  description: Vernetzter Trockenfutterautomat aus dem PAWBBY-Umfeld mit Xiaomi-Home-Anbindung je nach Modellversion.
+  description: "PAWBBY Smart Pet Feeder für Trockenfutter: App-Portionierung, modellabhängige Xiaomi-Home-Anbindung und Variantenunterschiede vor dem Kauf einordnen."
   canonical: /produkt/pawbby-smart-pet-feeder/
   sitemap: true
   priority: 0.9

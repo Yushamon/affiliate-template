@@ -22,7 +22,7 @@ author:
   name: PfotenTechnik Redaktion
 seo:
   title: oneisall 3,5L Cordless Trinkbrunnen im Check
-  description: "Kabelloser Edelstahl-Trinkbrunnen mit Sensor: Laufzeit, Reinigung und Alternativen."
+  description: "oneisall 3,5L Cordless Fountain mit 5.000-mAh-Akku, Bewegungssensor und Edelstahl-Trinkschale: Laufzeit, Betriebsarten und Reinigung eingeordnet."
   canonical: /produkt/oneisall-3-5l-cordless-fountain/
   sitemap: true
   priority: 0.8

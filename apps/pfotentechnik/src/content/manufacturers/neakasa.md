@@ -35,6 +35,8 @@ alternativeManufacturerSlugs: ["whisker", "petkit"]
 sources:
   - { label: "Neakasa M1 Plus", url: "https://neakasa.com/products/neakasa-m1-cat-litter-box" }
 faq: []
+seo:
+  description: "Neakasa M1 Plus und Plus Lite: offene automatische Katzentoiletten nach Einstiegshöhe, Kitten-Modus, Streukompatibilität und Platzbedarf einordnen."
 ---
 
 ## Neakasa bei PfotenTechnik

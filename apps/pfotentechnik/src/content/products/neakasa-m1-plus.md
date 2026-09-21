@@ -16,7 +16,7 @@ productUrl: "/produkt/neakasa-m1-plus/"
 publishedAt: "2026-08-06"
 updatedAt: "2026-08-06"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
-seo: { title: "Neakasa M1 Plus im Check", description: "Neakasa M1 Plus: offene Bauform, Mindestgewicht, Einstieg, Sensoren, Streu, App und Folgekosten eingeordnet.", canonical: "/produkt/neakasa-m1-plus/", sitemap: true, priority: 0.8 }
+seo: { title: "Neakasa M1 Plus im Check", description: "Neakasa M1 Plus: offene automatische Katzentoilette mit rund 35,2 cm Einstieg. Für wen Bauform, Kitten-Modus und klumpende Streu passen.", canonical: "/produkt/neakasa-m1-plus/", sitemap: true, priority: 0.8 }
 hub: { sections: ["produkte", "automatische-katzentoiletten"] }
 tags: ["automatische-katzentoilette", "katze", "offenes-katzenklo", "app", "grosse-katze"]
 images:
@@ -25,10 +25,10 @@ images:
     alt: "Neakasa M1 Plus in hochwertiger Produktansicht"
   gallery: []
 price:
-  current: 399.99
+  current: 379.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-09T06:21:53.996Z"
+  checkedAt: "2026-09-21T06:15:48.200Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -112,12 +112,12 @@ affiliate:
   rel: "sponsored nofollow noopener"
   target: "_blank"
 priceState: "available"
-priceUpdated: "2026-09-09T06:21:53.996Z"
+priceUpdated: "2026-09-21T06:15:48.200Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-09T06:21:53.996Z"
+availabilityUpdated: "2026-09-21T06:15:48.200Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

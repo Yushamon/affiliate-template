@@ -27,6 +27,8 @@ hub:
   description: "Welche vernetzten Helfer im Haustieralltag sinnvoll sein können und worauf Halter vor dem Kauf achten sollten."
   icon: "📖"
   order: 370
+seo:
+  description: "Futterspender, GPS-Tracker, Trinkbrunnen und Kameras im Haustieralltag: konkreten Nutzen, Reinigung, Offline-Betrieb und App-Datenschutz vor dem Kauf prüfen."
 ---
 
 ## Technik sollte ein konkretes Problem lösen

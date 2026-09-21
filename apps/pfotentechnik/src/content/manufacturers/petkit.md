@@ -27,7 +27,7 @@ hub:
   featured: false
 seo:
   title: "PETKIT Erfahrungen: Produkte, Bewertung und Empfehlungen"
-  description: "PETKIT im Überblick: smarte Futterautomaten und Trinkbrunnen, App-Ökosystem, Zielgruppen, Filter, Ersatzteile, Garantie und Alternativen."
+  description: "PETKIT Futterautomaten, Trinkbrunnen und automatische Katzentoiletten im Überblick: gemeinsames App-System, modellabhängiger Fernzugriff und Verbrauchsmaterialien."
   canonical: "/hersteller/petkit/"
   noindex: false
   sitemap: true

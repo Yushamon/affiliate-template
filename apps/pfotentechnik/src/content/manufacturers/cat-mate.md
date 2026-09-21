@@ -28,7 +28,7 @@ hub:
   featured: false
 seo:
   title: "Cat Mate Erfahrungen: Produkte, Bewertung und Empfehlungen"
-  description: "Cat Mate im Überblick: einfache Futterautomaten für Nass- und Trockenfutter, Zielgruppen, Ersatzteile, Garantie und Alternativen."
+  description: "Cat Mate C200, C300 und C500: Nassfutter zeitgesteuert ohne App bereitstellen. Herstellerprofil zu Offline-Bedienung, Batteriebetrieb und Ersatzteilen."
   canonical: "/hersteller/cat-mate/"
   noindex: false
   sitemap: true

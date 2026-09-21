@@ -26,9 +26,7 @@ hub:
   order: 44
 seo:
   title: Kleine GPS-Tracker für Katzen im Vergleich
-  description: >-
-    Kleine Katzen-GPS vergleichen: 27 g, 31 g inklusive Halsband, 33 g, Abmessungen, Sicherheitsverschluss, Akku und
-    Abo.
+  description: "Kleine Katzen-GPS von Weenect, Tractive und PAJ vergleichen: Gerätegewicht und Gewicht mit Halsband unterscheiden, Passform, Akku und Abo prüfen."
   canonical: /vergleiche/kleine-gps-tracker-fuer-katzen/
   sitemap: true
   priority: 0.9

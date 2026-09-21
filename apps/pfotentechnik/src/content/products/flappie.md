@@ -72,7 +72,7 @@ price:
   currency: "EUR"
   status: "unknown"
   comparisonText: "Deutscher Gerätepreis inkl. MwSt.; Versandkosten werden erst im Checkout ausgewiesen."
-  checkedAt: "2026-09-09T06:21:41.666Z"
+  checkedAt: "2026-09-21T06:15:35.584Z"
   source:
     id: "flappiedoors.com"
     label: "flappiedoors.com"
@@ -88,13 +88,14 @@ conversion:
   primaryCtaLabel: "Preis und Einbaumaße prüfen"
   secondaryCtaLabel: "Katzenklappen vergleichen"
   showSecondaryCta: true
+
 priceState: "available"
-priceUpdated: "2026-09-09T06:21:41.666Z"
+priceUpdated: "2026-09-21T06:15:35.584Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-09T06:21:41.666Z"
+availabilityUpdated: "2026-09-21T06:15:35.584Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

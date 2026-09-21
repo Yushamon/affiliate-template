@@ -28,7 +28,7 @@ hub:
   featured: false
 seo:
   title: "SureFeed Erfahrungen: Produkte, Bewertung und Empfehlungen"
-  description: "SureFeed im Überblick: Mikrochip-Futterautomaten für getrennte Rationen, Zielgruppen, Ersatzteile, Garantie und Alternativen."
+  description: "SureFeed für getrennte Rationen: Mikrochip-Näpfe mit und ohne Connect-App einordnen. Unterschiede zwischen selektivem Zugang und zeitgesteuerter Portionierung."
   canonical: "/hersteller/surefeed/"
   noindex: false
   sitemap: true

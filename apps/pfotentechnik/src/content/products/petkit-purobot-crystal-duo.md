@@ -16,7 +16,7 @@ productUrl: "/produkt/petkit-purobot-crystal-duo/"
 publishedAt: "2026-08-21"
 updatedAt: "2026-08-25"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
-seo: { title: "PETKIT PUROBOT CRYSTAL DUO im Datencheck", description: "Offene PETKIT Katzentoilette P9905: Einstieg, Crystal-Litter-System, Kamera, Care+, Grenzen und laufende Kosten.", canonical: "/produkt/petkit-purobot-crystal-duo/", sitemap: true, priority: 0.8 }
+seo: { title: "PETKIT PUROBOT CRYSTAL DUO im Datencheck", description: "PETKIT PUROBOT CRYSTAL DUO: offene automatische Katzentoilette mit 18-cm-Einstieg und Kamera. Kristallstreu, Einwegschalen und laufende Kosten eingeordnet.", canonical: "/produkt/petkit-purobot-crystal-duo/", sitemap: true, priority: 0.8 }
 hub: { sections: ["produkte", "automatische-katzentoiletten"] }
 tags: ["automatische-katzentoilette", "petkit", "open-top", "kamera", "kristallstreu"]
 images:

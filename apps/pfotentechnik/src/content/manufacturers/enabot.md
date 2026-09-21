@@ -60,6 +60,8 @@ sources:
   - label: "Enabot ROLA Mini"
     url: "https://www.enabot.com/pet-robot/rola-mini"
 faq: []
+seo:
+  description: "Enabot mit EBO Air 2, ROLA Mini und PetTracker: mobile Kameraroboter und GPS mit Kamera nach Fahrwegen, App-Abhängigkeit und Gewicht einordnen."
 ---
 
 ## Enabot bei PfotenTechnik
