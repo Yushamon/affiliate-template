@@ -288,6 +288,8 @@ offers:
     availability: "unknown"
     identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
     evidenceSources: []
+    lastAttemptAt: "2026-09-22T03:42:31.967Z"
+    error: "Offizielle Produkt-URL unresolved."
 ---
 Der PETLIBRO Glacier unterscheidet sich von klassischen Pumpenbrunnen vor allem durch den Edelstahlaufbau und das Ultrafiltrationsmodul.
 

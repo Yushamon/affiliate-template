@@ -24,6 +24,7 @@ import {
 } from "../../domain/content/internalLinks";
 import { buildProductNextSteps } from "../../domain/recommendationLinks";
 import { deriveProductOperations } from "../../lib/product-operations/policy.mjs";
+import { resolveCommerceOffers } from "../../domain/commerceOffers.mjs";
 import { calculateProductScore } from "../../domain/productScore";
 import { getCachedImage } from "../../lib/imageOptimization";
 import {
@@ -302,17 +303,13 @@ const structuredReviewBody =
   contentProduct.review?.summary ??
   contentProduct.recommendation;
 
-const schemaPriceCurrent = contentProduct.price?.current;
-const schemaPriceCheckedAt = contentProduct.price?.checkedAt
-  ? new Date(contentProduct.price.checkedAt).getTime()
-  : Number.NaN;
-const schemaPriceIsFresh =
-  typeof schemaPriceCurrent === "number" &&
-  Number.isFinite(schemaPriceCurrent) &&
-  schemaPriceCurrent > 0 &&
-  Number.isFinite(schemaPriceCheckedAt) &&
-  Date.now() - schemaPriceCheckedAt <= 14 * 86_400_000 &&
-  productOperations.purchasable;
+const schemaOffers = resolveCommerceOffers(contentProduct)
+  .filter(offer => offer.canLink && offer.fresh && offer.current != null && offer.availability === "available")
+  .map(offer => ({
+    "@type": "Offer", price: offer.current, priceCurrency: offer.currency,
+    availability: "https://schema.org/InStock", url: offer.destination,
+    seller: { "@type": "Organization", name: offer.label }
+  }));
 
 const productSchema = {
   "@context": "https://schema.org",
@@ -329,17 +326,7 @@ const productSchema = {
     "@type": "Brand",
     name: contentProduct.manufacturer.name
   },
-  ...(schemaPriceIsFresh
-    ? {
-        offers: {
-          "@type": "Offer",
-          price: schemaPriceCurrent,
-          priceCurrency: contentProduct.price.currency,
-          availability: "https://schema.org/InStock",
-          url: contentProduct.affiliate?.url ?? new URL(canonical, site.domain).toString()
-        }
-      }
-    : {}),
+  ...(schemaOffers.length ? { offers: schemaOffers.length === 1 ? schemaOffers[0] : schemaOffers } : {}),
   ...(productScore100 !== null && productScore100 > 0 ? { review: {
     "@type": "Review",
     name: `${contentProduct.title} – redaktionelle Einordnung`,

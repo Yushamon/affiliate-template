@@ -72,7 +72,7 @@ price:
   currency: "EUR"
   status: "unknown"
   comparisonText: "Deutscher Gerätepreis inkl. MwSt.; Versandkosten werden erst im Checkout ausgewiesen."
-  checkedAt: "2026-09-21T06:15:35.584Z"
+  checkedAt: "2026-09-22T03:41:23.110Z"
   source:
     id: "flappiedoors.com"
     label: "flappiedoors.com"
@@ -90,12 +90,12 @@ conversion:
   showSecondaryCta: true
 
 priceState: "available"
-priceUpdated: "2026-09-21T06:15:35.584Z"
+priceUpdated: "2026-09-22T03:41:23.110Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-21T06:15:35.584Z"
+availabilityUpdated: "2026-09-22T03:41:23.110Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

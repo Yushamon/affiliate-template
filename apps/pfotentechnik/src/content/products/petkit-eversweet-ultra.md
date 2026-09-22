@@ -76,10 +76,10 @@ subscription:
   additionalCostNote: "PETKIT belegt den optionalen Care+-Dienst, veröffentlicht aber keinen belastbaren Deutschlandtarif auf der geprüften Produktseite."
   plans: []
 price:
-  current: 229.49
+  current: 279.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-21T06:16:13.191Z"
+  checkedAt: "2026-09-22T03:42:05.693Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -94,12 +94,12 @@ rating: 4.1
 score: 83
 
 priceState: "available"
-priceUpdated: "2026-09-21T06:16:13.191Z"
+priceUpdated: "2026-09-22T03:42:05.693Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-21T06:16:13.191Z"
+availabilityUpdated: "2026-09-22T03:42:05.693Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

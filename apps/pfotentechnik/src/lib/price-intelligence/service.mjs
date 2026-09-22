@@ -162,7 +162,10 @@ export async function checkProductPrice(slugInput, {find = findDocument, checkLe
       tasks.push({id:offer.id,provider:offer.commerceDataProvider,run:async()=>{
         try {
           const next = await refresh(offer);
-          await persist(document.file, offer.id, current => ({...current,price:next.price,priceState:next.priceState,availability:next.availability,lastAttemptAt:next.lastAttemptAt,error:undefined}));
+          await persist(document.file, offer.id, current => {
+            if (['officialProductUrl','variantId','expectedSku','program','mappingStatus'].some(key => current[key] !== offer[key])) throw new Error('Händlerzuordnung wurde während der Prüfung geändert; erneut prüfen.');
+            return {...current,price:next.price,priceState:next.priceState,availability:next.availability,lastAttemptAt:next.lastAttemptAt,error:undefined};
+          });
           return {checkedAt:next.price.checkedAt};
         } catch(error) {
           await persist(document.file, offer.id, current => ({...current,lastAttemptAt:new Date().toISOString(),error:String(error.message).slice(0,400)}));

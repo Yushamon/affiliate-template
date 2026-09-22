@@ -72,7 +72,7 @@ price:
   current: 105.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-21T06:16:26.846Z"
+  checkedAt: "2026-09-22T03:42:25.070Z"
   source:
     id: "de.petlibro.com"
     label: "de.petlibro.com"
@@ -89,17 +89,6 @@ conversion:
   secondaryCtaLabel: "Mit der Akkuvariante vergleichen"
   showSecondaryCta: true
 
-priceState: "available"
-priceUpdated: "2026-09-21T06:16:26.846Z"
-priceAvailable: true
-affiliateAvailable: true
-availability: "available"
-availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-21T06:16:26.846Z"
-editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
-
 offers:
   - id: "petlibro-de"
     merchant: "petlibro"
@@ -111,7 +100,7 @@ offers:
       current: 105.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-09-21T16:52:54.384Z"
+      checkedAt: "2026-09-22T03:42:25.247Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -135,7 +124,18 @@ offers:
     variantId: "52389571527022"
     expectedSku: "PL-WF106-31W"
     variantLabel: "Weiß / Plug-In"
-    lastAttemptAt: "2026-09-21T16:52:54.384Z"
+    lastAttemptAt: "2026-09-22T03:42:25.247Z"
+priceState: "available"
+priceUpdated: "2026-09-22T03:42:25.070Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-09-22T03:42:25.070Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
+
 editorial:
   assessmentType: "data-review"
   evidence:

@@ -68,6 +68,9 @@ export const productPriceSchema =
       .default("unknown"),
     range: productPriceRangeSchema.optional(),
     comparisonText: z.string().optional(),
+    comparisonKey: z.string().optional(),
+    shipping: z.number().nonnegative().nullable().optional(),
+    variantLabel: z.string().optional(),
     checkedAt: z.coerce.date().optional(),
     affiliateUrl: z.string().url().optional(),
     source: productPriceSourceSchema.optional()
@@ -110,6 +113,11 @@ export const productOfferSchema = commerceOfferCoreSchema.extend({
   evidenceSources: z.array(evidenceSourceSchema).default([])
 }).strict().superRefine((value, ctx) => {
   if (value.mappingStatus === 'verified' && (!value.officialProductUrl?.startsWith('https://') || !value.verifiedAt || !value.evidenceSources.length)) ctx.addIssue({code:'custom',message:'Verified offer needs HTTPS destination, verification date and provenance.'});
+  if (value.mappingStatus === 'verified' && value.commerceDataProvider === 'shopify-product') {
+    try {
+      if (!value.expectedSku || !value.variantId || new URL(value.officialProductUrl).searchParams.get('variant') !== value.variantId) throw new Error();
+    } catch { ctx.addIssue({code:'custom',message:'Verified Shopify offer needs matching destination variant, variant ID and SKU.'}); }
+  }
 });
 export const productOffersSchema = z.array(productOfferSchema).default([]).superRefine((offers, ctx) => {
   if (new Set(offers.map(o => o.id)).size !== offers.length) ctx.addIssue({code:'custom',message:'Offer IDs must be unique.'});

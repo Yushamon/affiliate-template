@@ -11,7 +11,7 @@ interface Operations {
 }
 
 interface Props {
-  commerce?: { offers: any[]; cheapestId: string | null; saving: number | null };
+  commerce?: { offers: any[]; cheapestId: string | null; saving: number | null; hasConfiguredOffers: boolean };
   price?: ProductPriceInsight;
   operations: Operations;
   subscriptionCost?: SubscriptionCostModel;
@@ -24,7 +24,7 @@ interface Props {
 }
 
 const { price, affiliate, operations, subscriptionCost, commerce } = Astro.props;
-const multiMerchant = Boolean(commerce?.offers.some(offer => !offer.legacy));
+const multiMerchant = Boolean(commerce?.hasConfiguredOffers);
 const currentPriceLabel = price?.formattedCurrent
   ? price.formattedCurrent
   : operations.purchasable
@@ -99,6 +99,7 @@ const showTotals = Boolean(
   )}
 
   {multiMerchant ? <div class="px2-offers" data-commerce-offers>
+    {!commerce!.offers.length && <p>Aktuell ist keine verifizierte Kaufquelle verfügbar.</p>}
     {commerce!.offers.map(offer => <div class="px2-offer" data-merchant={offer.merchant}>
       <div class="px2-offer__heading"><strong>{offer.label}</strong><strong>{offer.formattedPrice || "Preis beim Händler prüfen"}</strong></div>
       {offer.variantLabel && <small>{offer.variantLabel}</small>}

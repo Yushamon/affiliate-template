@@ -310,6 +310,8 @@ offers:
     availability: "unknown"
     identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
     evidenceSources: []
+    lastAttemptAt: "2026-09-22T03:42:21.697Z"
+    error: "Offizielle Produkt-URL unresolved."
 ---
 Viele Katzenbrunnen sind für Hunde zu niedrig und zu klein. Die Capsule Dog Fountain setzt deshalb auf eine breite Trinkzone, hohe Reserve und Spritzschutz.
 

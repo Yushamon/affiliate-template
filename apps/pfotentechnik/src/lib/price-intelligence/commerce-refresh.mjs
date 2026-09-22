@@ -17,6 +17,7 @@ export async function refreshOfficialOffer(offer, {fetchResource = fetchPublicRe
   if (offer.mappingStatus !== 'verified' || !destination) throw new Error('Offizielle Produkt-URL unresolved.');
   if (offer.commerceDataProvider !== 'shopify-product') throw new Error('Automatische Preisquelle nicht konfiguriert; redaktionelle Pflege möglich.');
   const url = new URL(destination);
+  if (url.searchParams.get('variant') !== offer.variantId) throw new Error('Ziel-URL und Preisquelle müssen dieselbe Varianten-ID verwenden.');
   if (url.hostname !== 'de.petlibro.com' || !/^\/products\/[^/]+$/.test(url.pathname)) throw new Error('Nicht unterstützte offizielle Produktdatenquelle.');
   const fetchJson = async href => {
     const result = await fetchResource(href, {label:'Commerce-Quelle', accept:'application/json,text/javascript', maxBytes:1_000_000, timeoutMs:15000, maxRedirects:2});

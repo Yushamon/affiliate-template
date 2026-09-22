@@ -50,10 +50,10 @@ subscription:
     - { name: "Standard jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 129.99, currency: EUR, effectiveMonthlyPrice: 10.83, autoRenew: true, featured: true, notes: "7 Tage Videospeicher" }
     - { name: "Premium jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 189.99, currency: EUR, effectiveMonthlyPrice: 15.83, autoRenew: true, notes: "30 Tage Videospeicher" }
 price:
-  current: 699.99
+  current: 589.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-21T06:16:40.549Z"
+  checkedAt: "2026-09-22T03:42:43.573Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -144,16 +144,6 @@ externalEvidence:
         confidence: "medium"
     editorialAssessment: "Für die Luma liegt erstmals eine belastbare unabhängige mehrwöchige Hands-on-Review vor. Die aktuelle Nutzerbasis bestätigt sowohl schnelle Akzeptanz als auch einzelne Schwächen der Reinigungs- und Trennlogik. Die Trustpilot-Gesamtwertung ist jedoch markenweit und darf nicht als Luma-Produktbewertung dargestellt werden."
   note: "Cats.com bezieht sich eindeutig auf die aktuelle PETLIBRO Luma. Trustpilot wird ausschließlich als markenweite Nutzerplattform geführt; nur ausdrücklich auf Luma bezogene Erfahrungsinhalte fließen vorsichtig in die Einordnung ein."
-priceState: "available"
-priceUpdated: "2026-09-21T06:16:40.549Z"
-priceAvailable: true
-affiliateAvailable: true
-availability: "available"
-availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-21T06:16:40.549Z"
-editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
 offers:
   - id: "petlibro-de"
     merchant: "petlibro"
@@ -165,7 +155,7 @@ offers:
       current: 799.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-09-21T16:52:55.153Z"
+      checkedAt: "2026-09-22T03:42:43.791Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -189,7 +179,17 @@ offers:
     variantId: "53374260642158"
     expectedSku: "PL-LB001-31W"
     variantLabel: "1 paket"
-    lastAttemptAt: "2026-09-21T16:52:55.153Z"
+    lastAttemptAt: "2026-09-22T03:42:43.791Z"
+priceState: "available"
+priceUpdated: "2026-09-22T03:42:43.573Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-09-22T03:42:43.573Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 ---
 
 ## Herstellerfunktion, praktische Bedeutung und offene Erfahrung

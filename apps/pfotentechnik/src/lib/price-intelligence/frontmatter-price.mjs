@@ -140,6 +140,9 @@ export function renderPriceBlock(price) {
     lines.push(`    source: ${quote(price.range.source || "category-engine")}`);
   }
   if (price.comparisonText) lines.push(`  comparisonText: ${quote(price.comparisonText)}`);
+  if (price.comparisonKey) lines.push(`  comparisonKey: ${quote(price.comparisonKey)}`);
+  if (price.variantLabel) lines.push(`  variantLabel: ${quote(price.variantLabel)}`);
+  if (Number.isFinite(price.shipping)) lines.push(`  shipping: ${price.shipping}`);
   if (price.checkedAt) lines.push(`  checkedAt: ${quote(price.checkedAt)}`);
   if (source.id || source.label) {
     lines.push("  source:");

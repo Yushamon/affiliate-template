@@ -337,6 +337,8 @@ offers:
     availability: "unknown"
     identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
     evidenceSources: []
+    lastAttemptAt: "2026-09-22T03:42:29.712Z"
+    error: "Offizielle Produkt-URL unresolved."
 ---
 Der Dockstream RFID Smart löst ein reales Problem in Mehrkatzenhaushalten: Der Gesamtverbrauch eines Brunnens sagt nicht, welches Tier tatsächlich getrunken hat.
 

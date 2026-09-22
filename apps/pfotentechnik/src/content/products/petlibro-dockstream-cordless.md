@@ -62,7 +62,7 @@ price:
   current: 59.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-21T06:16:29.248Z"
+  checkedAt: "2026-09-22T03:42:27.606Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -77,12 +77,12 @@ rating: 4
 score: 79
 
 priceState: "available"
-priceUpdated: "2026-09-21T06:16:29.248Z"
+priceUpdated: "2026-09-22T03:42:27.606Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-21T06:16:29.248Z"
+availabilityUpdated: "2026-09-22T03:42:27.606Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
@@ -304,6 +304,8 @@ offers:
     availability: "unknown"
     identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
     evidenceSources: []
+    lastAttemptAt: "2026-09-22T03:42:27.624Z"
+    error: "Offizielle Produkt-URL unresolved."
 ---
 Der Dockstream Cordless ist das ältere, nicht smarte Akkumodell. Er darf nicht mit dem Dockstream 2 Smart Cordless verwechselt werden.
 

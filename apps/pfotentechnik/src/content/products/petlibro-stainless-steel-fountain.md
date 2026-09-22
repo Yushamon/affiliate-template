@@ -60,7 +60,7 @@ price:
   current: 59.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-21T06:16:50.808Z"
+  checkedAt: "2026-09-22T03:42:56.064Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -75,12 +75,12 @@ rating: 3.8
 score: 75
 
 priceState: "available"
-priceUpdated: "2026-09-21T06:16:50.808Z"
+priceUpdated: "2026-09-22T03:42:56.064Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-21T06:16:50.808Z"
+availabilityUpdated: "2026-09-22T03:42:56.064Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
@@ -288,6 +288,8 @@ offers:
     availability: "unknown"
     identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
     evidenceSources: []
+    lastAttemptAt: "2026-09-22T03:42:56.083Z"
+    error: "Offizielle Produkt-URL unresolved."
 ---
 Der PETLIBRO Stainless Steel Fountain verzichtet bewusst auf App, Akku und Sensorik. Seine Stärken sind Edelstahl, einfache Bedienung und ein mechanisch regelbarer Dauerfluss.
 

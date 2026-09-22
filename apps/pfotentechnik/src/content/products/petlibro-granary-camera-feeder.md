@@ -61,7 +61,7 @@ price:
   current: 127.48
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-21T06:16:34.778Z"
+  checkedAt: "2026-09-22T03:42:36.385Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -76,12 +76,12 @@ rating: 4.6
 score: 92
 
 priceState: "available"
-priceUpdated: "2026-09-21T06:16:34.778Z"
+priceUpdated: "2026-09-22T03:42:36.385Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-21T06:16:34.778Z"
+availabilityUpdated: "2026-09-22T03:42:36.385Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
@@ -370,7 +370,7 @@ offers:
       current: 169.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-09-21T16:52:54.600Z"
+      checkedAt: "2026-09-22T03:42:36.574Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -394,7 +394,7 @@ offers:
     variantId: "44070751502578"
     expectedSku: "PL-AF203-34W"
     variantLabel: "Weiß / Einzelne Schale"
-    lastAttemptAt: "2026-09-21T16:52:54.600Z"
+    lastAttemptAt: "2026-09-22T03:42:36.574Z"
 ---
 Der PETLIBRO Granary Camera Feeder verbindet automatische Trockenfütterung mit einer integrierten Kamera. Das ist praktisch für Livekontrolle, aber kein Ersatz für direkte Beobachtung.
 

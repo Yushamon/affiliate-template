@@ -56,10 +56,10 @@ images:
     - src: ../../assets/images/products/petkit-eversweet-solo-se/gallery-3.webp
       alt: PETKIT Eversweet Solo SE im Katzenhaushalt
 price:
-  current: 79
+  current: 61.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-21T06:16:11.263Z"
+  checkedAt: "2026-09-22T03:42:03.363Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -74,12 +74,12 @@ rating: 3.8
 score: 76
 
 priceState: "available"
-priceUpdated: "2026-09-21T06:16:11.263Z"
+priceUpdated: "2026-09-22T03:42:03.363Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-21T06:16:11.263Z"
+availabilityUpdated: "2026-09-22T03:42:03.363Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

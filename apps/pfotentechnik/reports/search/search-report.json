@@ -1,46 +1,300 @@
 {
   "schemaVersion": 1,
   "provider": "combined",
-  "generatedAt": "2026-09-21T06:29:30.192Z",
+  "generatedAt": "2026-09-22T03:40:29.102Z",
   "range": "28d",
   "dataUpdatedAt": {
-    "google": "2026-09-18T00:00:00.000Z",
-    "bing": "2026-09-19T00:00:00.000Z"
+    "google": "2026-09-22T03:40:04.892Z",
+    "bing": "2026-09-21T00:00:00.000Z"
   },
   "providerStatus": {
     "google": "current",
     "bing": "current"
   },
   "status": {
-    "status": "partial",
-    "source": "manual-export"
+    "status": "succeeded",
+    "lastAttemptAt": "2026-09-22T03:40:01.329Z",
+    "lastSuccessfulSyncAt": "2026-09-22T03:40:04.930Z",
+    "lastReportAt": "2026-07-22T21:13:17.238Z",
+    "lastDurationMs": 3750,
+    "lastError": null,
+    "providerResults": {
+      "google": "succeeded",
+      "bing": "succeeded"
+    },
+    "pagesCount": 29,
+    "queriesCount": 67,
+    "metrics": {
+      "clicks": 6,
+      "impressions": 97,
+      "ctr": 6.19,
+      "position": 4.6
+    },
+    "providerErrors": {},
+    "dataUpdatedAt": {
+      "google": "2026-09-22T03:40:04.892Z",
+      "bing": "2026-09-21T00:00:00.000Z"
+    }
   },
   "metrics": {
     "current": {
-      "clicks": 19,
-      "impressions": 514,
-      "ctr": 3.7,
-      "position": 24.2
+      "clicks": 18,
+      "impressions": 284,
+      "ctr": 6.34,
+      "position": 7.5
     },
-    "previous": null,
-    "change": null
+    "previous": {
+      "clicks": 2,
+      "impressions": 95,
+      "ctr": 2.11,
+      "position": 21
+    },
+    "change": {
+      "clicks": 800,
+      "impressions": 198.9,
+      "ctr": 4.23,
+      "position": 13.5
+    }
   },
   "topPages": [
     {
-      "page": "/",
+      "page": "/futtermenge-katze/",
+      "clicks": 0,
+      "impressions": 38,
+      "ctr": 0,
+      "position": 5.6,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 38,
+          "ctr": 0,
+          "position": 5.6
+        }
+      }
+    },
+    {
+      "page": "/hund-ist-muede/",
+      "clicks": 3,
+      "impressions": 37,
+      "ctr": 8.11,
+      "position": 4.3,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 3,
+          "impressions": 37,
+          "ctr": 8.11,
+          "position": 4.3
+        }
+      }
+    },
+    {
+      "page": "/welpen-richtig-fuettern/",
+      "clicks": 2,
+      "impressions": 32,
+      "ctr": 6.25,
+      "position": 5.1,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 2,
+          "impressions": 32,
+          "ctr": 6.25,
+          "position": 5.1
+        }
+      }
+    },
+    {
+      "page": "/wie-viel-wasser-braucht-ein-hund/",
       "clicks": 0,
       "impressions": 16,
       "ctr": 0,
-      "position": 50.4,
+      "position": 5.3,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 16,
+          "ctr": 0,
+          "position": 5.3
+        }
+      }
+    },
+    {
+      "page": "/hund-hat-durchfall/",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 4.4,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 16,
+          "ctr": 0,
+          "position": 4.4
+        }
+      }
+    },
+    {
+      "page": "/wie-lange-bleibt-trockenfutter-frisch/",
+      "clicks": 2,
+      "impressions": 15,
+      "ctr": 13.33,
+      "position": 2.4,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 2,
+          "impressions": 15,
+          "ctr": 13.33,
+          "position": 2.4
+        }
+      }
+    },
+    {
+      "page": "/",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 51.1,
       "sources": [
         "google"
       ],
       "providers": {
         "google": {
           "clicks": 0,
-          "impressions": 16,
+          "impressions": 14,
           "ctr": 0,
-          "position": 50.38
+          "position": 51.1
+        }
+      }
+    },
+    {
+      "page": "/katzentrinkbrunnen-richtig-reinigen/",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 4.3,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 4.3
+        }
+      }
+    },
+    {
+      "page": "/wie-viel-wasser-braucht-eine-katze/",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 5.9,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 5.9
+        }
+      }
+    },
+    {
+      "page": "/warum-katzen-fliessendes-wasser-trinken/",
+      "clicks": 2,
+      "impressions": 7,
+      "ctr": 28.57,
+      "position": 3,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 2,
+          "impressions": 7,
+          "ctr": 28.57,
+          "position": 3
+        }
+      }
+    },
+    {
+      "page": "/produkt/tractive-cat-6-mini/",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 4.2,
+      "sources": [
+        "google",
+        "bing"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 2.3
+        },
+        "bing": {
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 6.7
+        }
+      }
+    },
+    {
+      "page": "/produkt/petkit-eversweet-ultra/",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 3.7,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 3.7
+        }
+      }
+    },
+    {
+      "page": "/katze-trinkt-viel/",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 5.9,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 5.9
         }
       }
     },
@@ -63,38 +317,355 @@
       }
     },
     {
-      "page": "/produkt/tractive-cat-6-mini/",
+      "page": "/produkt/weenect-xs/",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 6,
       "ctr": 0,
-      "position": 2.3,
+      "position": 4.8,
       "sources": [
-        "google"
+        "google",
+        "bing"
       ],
       "providers": {
         "google": {
           "clicks": 0,
-          "impressions": 4,
+          "impressions": 1,
           "ctr": 0,
-          "position": 2.25
+          "position": 2
+        },
+        "bing": {
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 5.4
+        }
+      }
+    }
+  ],
+  "topQueries": [
+    {
+      "query": "welpenfütterung",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 4.4,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 19,
+          "ctr": 0,
+          "position": 4.4
         }
       }
     },
     {
-      "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "query": "futtermenge katze tabelle",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 11,
       "ctr": 0,
-      "position": 4,
+      "position": 6.5,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 6.5
+        }
+      }
+    },
+    {
+      "query": "petsafe bewertung",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 47.7,
       "sources": [
         "google"
       ],
       "providers": {
         "google": {
           "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 47.7
+        }
+      }
+    },
+    {
+      "query": "mischfütterung katze tabelle",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 5,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 5
+        }
+      }
+    },
+    {
+      "query": "wieviel wasser braucht ein 7 kg hund im tag",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 3.5,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 3.5
+        }
+      }
+    },
+    {
+      "query": "müdigkeit bei hunden symptome",
+      "clicks": 1,
+      "impressions": 3,
+      "ctr": 33.33,
+      "position": 4,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 1,
+          "impressions": 3,
+          "ctr": 33.33,
+          "position": 4
+        }
+      }
+    },
+    {
+      "query": "google wenn mein hund meude und erschöpft ist",
+      "clicks": 1,
+      "impressions": 3,
+      "ctr": 33.33,
+      "position": 2,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 1,
+          "impressions": 3,
+          "ctr": 33.33,
+          "position": 2
+        }
+      }
+    },
+    {
+      "query": "beuteerkennung",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 70.3,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 70.3
+        }
+      }
+    },
+    {
+      "query": "petkit eversweet ultra",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 5,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 5
+        }
+      }
+    },
+    {
+      "query": "katzenbrunnen pumpe wo filter einbauen",
+      "clicks": 1,
+      "impressions": 2,
+      "ctr": 50,
+      "position": 2,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 50,
+          "position": 2
+        }
+      }
+    },
+    {
+      "query": "onlycat katzenklappe",
+      "clicks": 1,
+      "impressions": 2,
+      "ctr": 50,
+      "position": 5,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 50,
+          "position": 5
+        }
+      }
+    },
+    {
+      "query": "wie lange hält sich hunde trockenfutter",
+      "clicks": 1,
+      "impressions": 2,
+      "ctr": 50,
+      "position": 4,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 50,
+          "position": 4
+        }
+      }
+    },
+    {
+      "query": "trinkbrunnen katze auseinander bauen.. reinigen und entkalken",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 3,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
           "impressions": 2,
           "ctr": 0,
-          "position": 4
+          "position": 3
+        }
+      }
+    },
+    {
+      "query": "futtermenge katze berechnen",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7.5,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 7.5
+        }
+      }
+    },
+    {
+      "query": "weenect xs silikonhülle, ersatz",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 8
+        }
+      }
+    }
+  ],
+  "googleOnly": [
+    {
+      "page": "/",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 51.1,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 14,
+          "ctr": 0,
+          "position": 51.1
+        }
+      }
+    },
+    {
+      "page": "/smarte-futterautomaten/",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 6,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "position": 6
+        }
+      }
+    },
+    {
+      "page": "/trinkbrunnen/",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 34.7,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 34.7
         }
       }
     },
@@ -117,11 +688,11 @@
       }
     },
     {
-      "page": "/hund-ist-muede/",
+      "page": "/vergleiche/beste-gps-tracker-fuer-hunde/",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 8.5,
+      "position": 4,
       "sources": [
         "google"
       ],
@@ -130,133 +701,7 @@
           "clicks": 0,
           "impressions": 2,
           "ctr": 0,
-          "position": 8.5
-        }
-      }
-    },
-    {
-      "page": "/trinkbrunnen/",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 47.5,
-      "sources": [
-        "google"
-      ],
-      "providers": {
-        "google": {
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 47.5
-        }
-      }
-    },
-    {
-      "page": "/produkt/weenect-xt/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 1,
-      "sources": [
-        "google"
-      ],
-      "providers": {
-        "google": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 1
-        }
-      }
-    },
-    {
-      "page": "/produkt/honeyguardian-smart-pet-feeder-s305d/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 2,
-      "sources": [
-        "google"
-      ],
-      "providers": {
-        "google": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 2
-        }
-      }
-    },
-    {
-      "page": "/produkt/weenect-xs/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 2,
-      "sources": [
-        "google"
-      ],
-      "providers": {
-        "google": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 2
-        }
-      }
-    },
-    {
-      "page": "/produkt/xiaomi-smart-pet-fountain-2/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 2,
-      "sources": [
-        "google"
-      ],
-      "providers": {
-        "google": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 2
-        }
-      }
-    },
-    {
-      "page": "/vergleiche/beste-futterautomaten-fuer-katzen/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 2,
-      "sources": [
-        "google"
-      ],
-      "providers": {
-        "google": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 2
-        }
-      }
-    },
-    {
-      "page": "/redaktion/",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 2,
-      "sources": [
-        "google"
-      ],
-      "providers": {
-        "google": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 2
+          "position": 4
         }
       }
     },
@@ -279,11 +724,11 @@
       }
     },
     {
-      "page": "/produkt/petkit-eversweet-ultra/",
+      "page": "/produkt/honeyguardian-smart-pet-feeder-s305d/",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 4,
+      "position": 2,
       "sources": [
         "google"
       ],
@@ -292,27 +737,115 @@
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 4
+          "position": 2
         }
       }
-    }
-  ],
-  "topQueries": [
+    },
     {
-      "query": "petsafe bewertung",
+      "page": "/produkt/petlibro-air-wifi-feeder/",
       "clicks": 0,
-      "impressions": 11,
+      "impressions": 1,
       "ctr": 0,
-      "position": 47.2,
+      "position": 21,
       "sources": [
         "google"
       ],
       "providers": {
         "google": {
           "clicks": 0,
-          "impressions": 11,
+          "impressions": 1,
           "ctr": 0,
-          "position": 47.18
+          "position": 21
+        }
+      }
+    },
+    {
+      "page": "/produkt/petlibro-glacier-ultrafiltration/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6
+        }
+      }
+    },
+    {
+      "page": "/produkt/petlibro-granary-2-vision/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 7
+        }
+      }
+    },
+    {
+      "page": "/produkt/xiaomi-smart-pet-fountain-2/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
+        }
+      }
+    },
+    {
+      "page": "/smarte-haustiertechnik/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 8
+        }
+      }
+    },
+    {
+      "query": "petsafe bewertung",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 47.7,
+      "sources": [
+        "google"
+      ],
+      "providers": {
+        "google": {
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 47.7
         }
       }
     },
@@ -330,25 +863,7 @@
           "clicks": 0,
           "impressions": 3,
           "ctr": 0,
-          "position": 70.33
-        }
-      }
-    },
-    {
-      "query": "pet feeder",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 70,
-      "sources": [
-        "google"
-      ],
-      "providers": {
-        "google": {
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 70
+          "position": 70.3
         }
       }
     },
@@ -371,17 +886,310 @@
       }
     }
   ],
-  "googleOnly": [],
-  "bingOnly": [],
-  "differences": [],
-  "crawlHints": [],
-  "quickWins": [],
-  "dataNotices": [
-    "Manuelle Exporte vom 21.09.2026. Einheitlicher Zeitraum 22.08.–18.09.2026 für Google und Bing. Bing-Daten vom 19.09. stehen im Bing-Dashboard. Seiten, Suchanfragen und Positionen stammen ausschließlich von Google; Aussagen über Google-only-/Bing-only-Sichtbarkeit sind nicht möglich. Kein vollständiger gemeinsamer 28-Tage-Vergleichszeitraum verfügbar."
+  "bingOnly": [
+    {
+      "page": "/futtermenge-katze/",
+      "clicks": 0,
+      "impressions": 38,
+      "ctr": 0,
+      "position": 5.6,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 38,
+          "ctr": 0,
+          "position": 5.6
+        }
+      }
+    },
+    {
+      "page": "/hund-ist-muede/",
+      "clicks": 3,
+      "impressions": 37,
+      "ctr": 8.11,
+      "position": 4.3,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 3,
+          "impressions": 37,
+          "ctr": 8.11,
+          "position": 4.3
+        }
+      }
+    },
+    {
+      "page": "/welpen-richtig-fuettern/",
+      "clicks": 2,
+      "impressions": 32,
+      "ctr": 6.25,
+      "position": 5.1,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 2,
+          "impressions": 32,
+          "ctr": 6.25,
+          "position": 5.1
+        }
+      }
+    },
+    {
+      "page": "/wie-viel-wasser-braucht-ein-hund/",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 5.3,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 16,
+          "ctr": 0,
+          "position": 5.3
+        }
+      }
+    },
+    {
+      "page": "/hund-hat-durchfall/",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 4.4,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 16,
+          "ctr": 0,
+          "position": 4.4
+        }
+      }
+    },
+    {
+      "page": "/wie-lange-bleibt-trockenfutter-frisch/",
+      "clicks": 2,
+      "impressions": 15,
+      "ctr": 13.33,
+      "position": 2.4,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 2,
+          "impressions": 15,
+          "ctr": 13.33,
+          "position": 2.4
+        }
+      }
+    },
+    {
+      "page": "/katzentrinkbrunnen-richtig-reinigen/",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 4.3,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 4.3
+        }
+      }
+    },
+    {
+      "page": "/wie-viel-wasser-braucht-eine-katze/",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 5.9,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 5.9
+        }
+      }
+    },
+    {
+      "page": "/warum-katzen-fliessendes-wasser-trinken/",
+      "clicks": 2,
+      "impressions": 7,
+      "ctr": 28.57,
+      "position": 3,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 2,
+          "impressions": 7,
+          "ctr": 28.57,
+          "position": 3
+        }
+      }
+    },
+    {
+      "page": "/produkt/petkit-eversweet-ultra/",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 3.7,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 3.7
+        }
+      }
+    },
+    {
+      "page": "/katze-trinkt-viel/",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 5.9,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 5.9
+        }
+      }
+    },
+    {
+      "page": "/wie-funktionieren-gps-tracker/",
+      "clicks": 1,
+      "impressions": 5,
+      "ctr": 20,
+      "position": 5.4,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 1,
+          "impressions": 5,
+          "ctr": 20,
+          "position": 5.4
+        }
+      }
+    },
+    {
+      "page": "/hersteller/onlycat/",
+      "clicks": 1,
+      "impressions": 5,
+      "ctr": 20,
+      "position": 6,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 1,
+          "impressions": 5,
+          "ctr": 20,
+          "position": 6
+        }
+      }
+    },
+    {
+      "page": "/produkt/zeromouse-2-0/",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 5.2,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 5.2
+        }
+      }
+    },
+    {
+      "page": "/katzenklappe-einbauen/",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 4,
+      "sources": [
+        "bing"
+      ],
+      "providers": {
+        "bing": {
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 4
+        }
+      }
+    }
   ],
-  "partial": true,
-  "period": {
-    "startDate": "2026-08-22",
-    "endDate": "2026-09-18"
-  }
+  "differences": [],
+  "crawlHints": [
+    {
+      "priority": "high",
+      "type": "bing-crawl",
+      "title": "Bing-Crawl-Hinweise prüfen",
+      "page": "",
+      "reason": "4 gelieferte Crawl-/5xx-Hinweise im Zeitraum.",
+      "action": "Bing-Crawl-Daten und betroffene URLs im Webmaster-Portal prüfen."
+    }
+  ],
+  "quickWins": [
+    {
+      "priority": "medium",
+      "type": "bing-ranking",
+      "title": "Bing-Rankingchance",
+      "page": "/hund-ist-muede/",
+      "reason": "37 Impressionen bei Position 4.3",
+      "action": "Inhalt und interne Verlinkung für die sichtbare Bing-Query prüfen.",
+      "source": "bing"
+    },
+    {
+      "priority": "medium",
+      "type": "bing-ranking",
+      "title": "Bing-Rankingchance",
+      "page": "/welpen-richtig-fuettern/",
+      "reason": "32 Impressionen bei Position 5.1",
+      "action": "Inhalt und interne Verlinkung für die sichtbare Bing-Query prüfen.",
+      "source": "bing"
+    }
+  ],
+  "dataNotices": [
+    "Bing-Trafficdaten können wöchentlich, Google-Daten zeitverzögert aktualisiert werden."
+  ]
 }

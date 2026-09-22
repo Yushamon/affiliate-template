@@ -1,10 +1,10 @@
 # Product Standard 3 Audit
 
-- Produkte: 102
+- Produkte: 103
 - Blockiert: 0
 - Verbesserungsbedarf: 21
 - Gut: 0
-- Stark: 81
+- Stark: 82
 - Fehler: 0
 - Warnungen: 80
 
@@ -52,6 +52,7 @@
 | honeyguardian-a68 | 100 | strong | 0 |
 | honeyguardian-smart-pet-feeder-s305d | 100 | strong | 0 |
 | imipaw-3l-automatic-cat-feeder | 100 | strong | 0 |
+| neakasa-riko | 100 | strong | 0 |
 | oneisall-2-2l-cordless-fountain | 100 | strong | 0 |
 | oneisall-2-in-1-feeder-water | 100 | strong | 0 |
 | oneisall-3-2l-cordless-fountain | 100 | strong | 0 |

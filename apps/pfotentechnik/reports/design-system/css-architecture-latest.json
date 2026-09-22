@@ -1,21 +1,21 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-10T06:56:21.199Z",
+  "generatedAt": "2026-09-22T03:31:32.795Z",
   "status": "ok",
   "safety": {
     "ruleLevelDeletionEnabled": false,
     "note": "Automatisch gelöscht werden ausschließlich leere bzw. reine Kommentar-CSS-Dateien."
   },
   "totals": {
-    "records": 89,
+    "records": 90,
     "cssFiles": 42,
-    "astroStyleFiles": 47,
-    "bytes": 706694,
-    "rules": 7294,
+    "astroStyleFiles": 48,
+    "bytes": 709983,
+    "rules": 7333,
     "important": 1168,
     "actualImportantDeclarations": 1168,
-    "duplicateSelectors": 1422,
-    "duplicateDeclarationBlocks": 915,
+    "duplicateSelectors": 1430,
+    "duplicateDeclarationBlocks": 919,
     "importEdges": 71,
     "brokenImports": 0,
     "unimportedCssFiles": 0,
@@ -220,11 +220,11 @@
       "kind": "astro-style",
       "category": "admin",
       "owner": "admin-seo-copilot",
-      "bytes": 7755,
-      "meaningfulBytes": 6774,
+      "bytes": 8686,
+      "meaningfulBytes": 7692,
       "importedBy": [],
       "imports": [],
-      "rules": 91,
+      "rules": 98,
       "important": 2,
       "maxSelectorDepth": 5
     },
@@ -519,11 +519,11 @@
       "kind": "astro-style",
       "category": "product",
       "owner": "product-experience",
-      "bytes": 6331,
-      "meaningfulBytes": 5731,
+      "bytes": 6721,
+      "meaningfulBytes": 6114,
       "importedBy": [],
       "imports": [],
-      "rules": 52,
+      "rules": 56,
       "important": 0,
       "maxSelectorDepth": 7
     },
@@ -957,6 +957,19 @@
       "importedBy": [],
       "imports": [],
       "rules": 20,
+      "important": 0,
+      "maxSelectorDepth": 3
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-experience-2/ProductRunningCosts.astro",
+      "kind": "astro-style",
+      "category": "product",
+      "owner": "product-experience",
+      "bytes": 1968,
+      "meaningfulBytes": 1950,
+      "importedBy": [],
+      "imports": [],
+      "rules": 28,
       "important": 0,
       "maxSelectorDepth": 3
     },
@@ -12936,6 +12949,22 @@
       ]
     },
     {
+      "fingerprint": "overflow-wrap:anywhere",
+      "occurrences": 5,
+      "selectors": [
+        ".growth-brief__content code",
+        ".growth-visual__content code",
+        ".work-package-task code",
+        ".running-costs__filter strong",
+        ".running-costs__filter small"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/components/admin/ResearchWorkbench.astro",
+        "apps/pfotentechnik/src/components/admin/SeoWorkPackages.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductRunningCosts.astro"
+      ]
+    },
+    {
       "fingerprint": "text-wrap:pretty",
       "occurrences": 5,
       "selectors": [
@@ -14297,6 +14326,21 @@
       ]
     },
     {
+      "fingerprint": "color:var(--px2-text)",
+      "occurrences": 4,
+      "selectors": [
+        ".alternatives__meta b",
+        ".community__footer p strong",
+        ".running-costs__condition",
+        ".running-costs__unavailable"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/components/product-experience-2/ProductAlternatives2.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductCommunityInsights2.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductRunningCosts.astro"
+      ]
+    },
+    {
       "fingerprint": "color:var(--px2-muted);font-size:.75rem;line-height:1.4",
       "occurrences": 4,
       "selectors": [
@@ -14320,6 +14364,19 @@
       ],
       "files": [
         "apps/pfotentechnik/src/components/product-experience-2/ProductExperience2.astro"
+      ]
+    },
+    {
+      "fingerprint": "line-height:1.5;margin:0",
+      "occurrences": 4,
+      "selectors": [
+        ".running-costs__condition",
+        ".running-costs__unavailable",
+        ".running-costs__method",
+        ".running-costs__sources"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/components/product-experience-2/ProductRunningCosts.astro"
       ]
     },
     {
@@ -15848,19 +15905,6 @@
       ]
     },
     {
-      "fingerprint": "overflow-wrap:anywhere",
-      "occurrences": 3,
-      "selectors": [
-        ".growth-brief__content code",
-        ".growth-visual__content code",
-        ".work-package-task code"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/admin/ResearchWorkbench.astro",
-        "apps/pfotentechnik/src/components/admin/SeoWorkPackages.astro"
-      ]
-    },
-    {
       "fingerprint": "width:100%",
       "occurrences": 3,
       "selectors": [
@@ -16360,30 +16404,6 @@
         ".ta-status",
         ".ta-priority",
         ".ta-chip"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/pages/admin/seo/topical-authority.astro"
-      ]
-    },
-    {
-      "fingerprint": "grid-template-columns:repeat(2,minmax(0,1fr))",
-      "occurrences": 3,
-      "selectors": [
-        ".ta-opportunities",
-        ".ta-metrics",
-        ".ta-kpis"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/pages/admin/seo/topical-authority.astro"
-      ]
-    },
-    {
-      "fingerprint": "padding:1rem",
-      "occurrences": 3,
-      "selectors": [
-        ".ta-opportunities article",
-        ".ta-section",
-        ".ta-hero"
       ],
       "files": [
         "apps/pfotentechnik/src/pages/admin/seo/topical-authority.astro"

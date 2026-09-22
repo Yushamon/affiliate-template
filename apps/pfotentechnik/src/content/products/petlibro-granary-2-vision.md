@@ -60,7 +60,7 @@ price:
   current: 129.99
   currency: "USD"
   status: "unknown"
-  checkedAt: "2026-09-21T06:16:32.611Z"
+  checkedAt: "2026-09-22T03:42:34.031Z"
   source:
     id: "petlibro.com"
     label: "petlibro.com"
@@ -77,17 +77,6 @@ conversion:
   secondaryCtaLabel: "Kamera-Futterautomaten vergleichen"
   showSecondaryCta: true
 
-priceState: "available"
-priceUpdated: "2026-09-21T06:16:32.611Z"
-priceAvailable: true
-affiliateAvailable: true
-availability: "available"
-availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-21T06:16:32.611Z"
-editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
-
 offers:
   - id: "petlibro-de"
     merchant: "petlibro"
@@ -103,6 +92,19 @@ offers:
     availability: "unknown"
     identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
     evidenceSources: []
+    lastAttemptAt: "2026-09-22T03:42:34.056Z"
+    error: "Offizielle Produkt-URL unresolved."
+priceState: "available"
+priceUpdated: "2026-09-22T03:42:34.031Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-09-22T03:42:34.031Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
+
 editorial:
   assessmentType: "data-review"
   evidence:
