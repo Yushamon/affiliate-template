@@ -214,10 +214,10 @@ export async function checkAllProductPrices({ limit = Number.MAX_SAFE_INTEGER, i
   };
 }
 
-export async function setManualProductPrice(input = {}) {
+export async function setManualProductPrice(input = {}, {find = findDocument, persistOffer = updateProductOffer} = {}) {
   // PT_MANUAL_PRICE_STATE_NORMALIZATION_2_0_1
   const slug = validateSlug(input.slug);
-  const document = await findDocument(slug);
+  const document = await find(slug);
   const data = document.data ?? {};
   const now = new Date().toISOString();
   const availability = AVAILABILITY_VALUES.includes(input.availability) ? input.availability : undefined;
@@ -227,6 +227,19 @@ export async function setManualProductPrice(input = {}) {
   const current = rawCurrent ? parseLocalizedPrice(rawCurrent) : null;
   if (rawCurrent && current == null) {
     throw new Error("Der manuelle Preis ist ungültig. Erlaubt sind zum Beispiel 29,99 oder 29.99.");
+  }
+  if (input.offerId && input.offerId !== 'legacy') {
+    const offerId = String(input.offerId);
+    if (!data.offers?.some(offer => offer.id === offerId)) throw new Error('Händlerangebot nicht gefunden.');
+    if (!availability) throw new Error('Gültige Verfügbarkeit für das Händlerangebot fehlt.');
+    const currency = validateCurrency(input.currency);
+    const persisted = await persistOffer(document.file, offerId, offer => ({
+      ...offer,
+      price: {...offer.price, current, currency, checkedAt:now,
+        source:{id:'cockpit-manual',label:affiliatePrograms[offer.program]?.label || offer.merchant,type:'manual'}},
+      priceState:current == null ? 'unknown' : 'available', availability, error:undefined
+    }));
+    return resultFromDocument(persisted,{method:'manual-offer',offerId});
   }
   const hasCurrent = current != null;
   const requestedPriceState = PRICE_STATE_VALUES.includes(input.priceState) ? input.priceState : undefined;

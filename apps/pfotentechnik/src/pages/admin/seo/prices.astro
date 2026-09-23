@@ -55,7 +55,7 @@ const metrics = [
         nicht als offene Aufgabe gewertet.
       </p>
       <p>Händlerangebote je Produkt aufklappen: PETLIBRO über Awin, Preise aus offiziellen Produktdaten. ADCELL/Tractive ist vorbereitet; die bestätigten Programmdaten fehlen noch.</p>
-      <p>Die Tabellenfelder und Pflegekennzahlen beziehen sich auf den bisherigen Hauptdatensatz. Weitere Händler mit eigenem Preis- und Prüfstatus stehen unter „Händlerangebote“.</p>
+      <p>Unter „Händlerangebote“ kannst du jeden Händlerpreis getrennt bearbeiten. Beide Preise bleiben gespeichert; die Veröffentlichung berücksichtigt Aktualität und Verfügbarkeit. Die bisherigen Tabellenkennzahlen beziehen sich auf den Hauptdatensatz.</p>
     </div>
     <button type="button" data-check-all>Commerce-Daten aktualisieren</button>
   </section>
@@ -502,7 +502,7 @@ const metrics = [
   };
 
   const hasProtectedEditorInteraction = () =>
-    dirtyEditors.size > 0 || Boolean(document.querySelector('[data-offer-editor][data-dirty="true"]')) || Boolean(document.activeElement?.closest("[data-editor], [data-offer-editor]"));
+    dirtyEditors.size > 0 || Boolean(document.querySelector('[data-commerce-panel] [data-dirty="true"]')) || Boolean(document.activeElement?.closest("[data-editor], [data-offer-editor], [data-commerce-price-editor]"));
 
   const applyServerResult = (result: any) => {
     const record = result?.record ?? result;
@@ -696,10 +696,32 @@ const metrics = [
   };
 
   document.querySelector('[data-ops-list]')?.addEventListener('input', event => {
-    const form = (event.target as Element).closest<HTMLFormElement>('[data-offer-editor]');
+    const form = (event.target as Element).closest<HTMLFormElement>('[data-offer-editor], [data-commerce-price-editor]');
     if (form) form.dataset.dirty = 'true';
   });
   document.querySelector('[data-ops-list]')?.addEventListener('submit', async event => {
+    const priceForm = (event.target as Element).closest<HTMLFormElement>('[data-commerce-price-editor]');
+    if (priceForm) {
+      event.preventDefault();
+      const button = priceForm.querySelector<HTMLButtonElement>('button');
+      const feedback = priceForm.querySelector<HTMLElement>('[data-price-save-status]');
+      if (button) button.disabled = true;
+      try {
+        const fields = new FormData(priceForm);
+        const result = await fetchJson('/api/admin/prices/manual', {method:'POST',body:JSON.stringify({
+          slug:priceForm.dataset.slug,offerId:priceForm.dataset.id,
+          current:fields.get('current'),currency:fields.get('currency'),availability:fields.get('availability'),
+          priceState:String(fields.get('current') || '').trim() ? 'available' : 'unknown'
+        })});
+        priceForm.dataset.dirty = 'false';
+        if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
+        applyServerResult(result);
+        if (feedback) feedback.textContent = 'Gespeichert.';
+        setStatus('Händlerpreis gespeichert. Die übrigen Angebote bleiben unverändert.');
+      } catch(error) { if (feedback) feedback.textContent = error instanceof Error ? error.message : String(error); }
+      finally { if(button) button.disabled = false; }
+      return;
+    }
     const form = (event.target as Element).closest<HTMLFormElement>('[data-offer-editor]');
     if (!form) return;
     event.preventDefault();
@@ -785,6 +807,7 @@ const metrics = [
   .ops-commerce :global(form) { display:grid; gap:8px; }
   .ops-commerce :global(label) { display:grid; gap:4px; font-size:.85rem; }
   .ops-commerce :global(input:not([type="checkbox"])) { width:100%; min-width:0; min-height:40px; background:var(--pt-color-surface); color:var(--pt-color-text); border:1px solid var(--pt-color-border); border-radius:6px; padding:6px; }
+  .ops-commerce :global(select) { width:100%; min-width:0; min-height:40px; background:var(--pt-color-surface); color:var(--pt-color-text); border:1px solid var(--pt-color-border); border-radius:6px; padding:6px; }
   .ops-summary {
     display: grid;
     grid-template-columns: 1fr auto;
