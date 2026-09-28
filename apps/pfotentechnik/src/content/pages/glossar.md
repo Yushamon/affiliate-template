@@ -84,7 +84,7 @@ evidenceSources:
       - "content"
 ---
 
-Dieses Glossar ist kein Lexikon für jedes Fachwort. Es bündelt nur Begriffe, die in mehreren bestehenden PfotenTechnik-Clustern konkrete Kauf- oder Betriebsentscheidungen unterstützen. Gezählt wurden die Vorkommen im redaktionellen Repository vor Veröffentlichung: Jede der acht Begriffsfamilien erscheint in mindestens acht Inhaltsdateien.
+Dieses Glossar ist kein Lexikon für jedes Fachwort. Es bündelt Begriffe, die bei verschiedenen Gerätekategorien konkrete Kauf- oder Betriebsentscheidungen unterstützen.
 
 ## Geofencing
 
@@ -152,7 +152,7 @@ Dieses Glossar ist kein Lexikon für jedes Fachwort. Es bündelt nur Begriffe, d
 
 ## Quellen und redaktionelle Grenze
 
-Die technischen Grundbegriffe wurden mit den oben im Frontmatter dokumentierten Primärquellen abgeglichen. Produktabhängige Werte, Kompatibilitäten und Wirkungsversprechen stehen bewusst nicht im Glossar; dafür bleiben die jeweilige Produktseite, Bedienungsanleitung und Herstellerquelle maßgeblich.
+Die technischen Grundbegriffe wurden mit den angegebenen Primärquellen abgeglichen. Produktabhängige Werte, Kompatibilitäten und Wirkungsversprechen stehen bewusst nicht im Glossar; dafür bleiben die jeweilige Produktseite, Bedienungsanleitung und Herstellerquelle maßgeblich.
 
 - [GPS.gov – GPS Overview](https://www.gps.gov/systems/gps/)
 - [ISO 11784:2024 – Radio frequency identification of animals](https://www.iso.org/standard/83944.html)

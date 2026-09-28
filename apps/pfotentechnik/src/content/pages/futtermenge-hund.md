@@ -90,7 +90,9 @@ Arbeite vom medizinischen Sonderfall zur alltäglichen Feinjustierung:
 4. **Gewicht und Kondition stabil passend?** Menge beibehalten und weiter kontrollieren.
 5. **Trend nach oben oder unten?** Ursache prüfen und in kleinen, dokumentierten Schritten anpassen.
 
-## Information Gain: Automatenportionen kalibrieren
+<span id="information-gain-automatenportionen-kalibrieren" aria-hidden="true"></span>
+
+## Automatenportionen kalibrieren
 
 „Eine Portion“ ist bei Futterautomaten keine universelle Einheit. Gib zehn bis zwanzig Portionen aus, wiege jede einzeln und berechne den Durchschnitt. Große Streuung oder Blockaden werden so sichtbar. Nach einem Futterwechsel erneut messen, denn Krokettendurchmesser und -form verändern die Ausgabe.
 

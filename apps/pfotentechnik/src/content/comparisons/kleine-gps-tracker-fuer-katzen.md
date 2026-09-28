@@ -150,7 +150,9 @@ canonical: /vergleiche/kleine-gps-tracker-fuer-katzen/
 
 27 g sind weniger als 33 g beim PAJ. Der CAT 6 Mini nennt rund 31 g inklusive Halsband und ist deshalb nicht direkt vergleichbar; als integrierte Katzenlösung bleibt er die stärkste Alternative.
 
-## Information Gain: Gerätegewicht und Systemgewicht trennen
+<span id="information-gain-gerätegewicht-und-systemgewicht-trennen" aria-hidden="true"></span>
+
+## Gerätegewicht und Systemgewicht trennen
 
 Hersteller messen nicht immer dasselbe. Weenect und PAJ nennen das Gerät, Tractive beim CAT 6 Mini das integrierte System inklusive Halsband. Die Rangfolge lautet deshalb nicht einfach 27, 31, 33 g, sondern muss Bauform und Sicherheitslösung mitbewerten.
 

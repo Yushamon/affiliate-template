@@ -72,7 +72,7 @@ const extractQuickItems = (page: PageEntry, assembled: AssembledContentPage) => 
   if (fromItems.length) return fromItems.slice(0, 5);
   const firstTable = (page.body ?? "").match(/(?:^\|.+\|\n){3,}/m)?.[0];
   if (firstTable) {
-    return firstTable.split("\n").slice(2).map((row) => row.split("|").map(text).filter(Boolean).slice(0, 2).join(": ")).filter(Boolean).slice(0, 5);
+    return firstTable.split("\n").slice(2).map((row) => row.split("|").map(stripMarkdown).filter(Boolean).slice(0, 2).join(": ")).filter(Boolean).slice(0, 5);
   }
   const bullets = [...(page.body ?? "").matchAll(/^[-*]\s+(.+)$/gm)].map((match) => stripMarkdown(match[1]));
   return bullets.slice(0, 5);

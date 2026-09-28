@@ -113,7 +113,7 @@ externalEvidence:
   note: >-
     Die große produktspezifische Nutzerbasis ist belastbar genug für wiederkehrende Nutzungsmuster.
     Eine unabhängige professionelle Reviewquelle für genau die Shell Pet Fountain wurde nicht ausreichend belegt;
-    deshalb bleibt die Evidence bewusst teilweise.
+    deshalb bleibt die Beleglage unvollständig.
 decision:
   bestFor:
     - eine bis zwei Katzen

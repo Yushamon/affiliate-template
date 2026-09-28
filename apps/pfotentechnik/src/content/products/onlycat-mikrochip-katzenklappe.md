@@ -131,7 +131,7 @@ externalEvidence:
       Die Nutzerbasis ist für ein junges Nischenprodukt ungewöhnlich groß. Die professionelle Quelle ist jedoch kommerziell
       geprägt; deshalb bleibt die Gesamt-Confidence trotz konsistenter Nutzerberichte bei medium.
 decision: { bestFor: ["Wiederkehrender Beuteeintrag", "App-Steuerung und Videoereignisse", "Individuelle Richtungsregeln"], attention: ["USB-C-Netzstrom am Einbauort", "WLAN für Einrichtung und App", "Abo-Version benötigt laufendes Abo"] }
-review: { summary: "OnlyCat kombiniert die Klappe und Beuteerkennung in einem System.", verdict: "Der klarste Komplettsystem-Intent für Beuteerkennung; die höhere Strom-, WLAN- und Kostenabhängigkeit muss bewusst passen." }
+review: { summary: "OnlyCat kombiniert die Klappe und Beuteerkennung in einem System.", verdict: "Das klarste Komplettsystem für Beuteerkennung; die höhere Strom-, WLAN- und Kostenabhängigkeit muss bewusst passen." }
 strengths: ["Integrierte Kamera und Beuteerkennung", "Individuelle Ein-/Ausgangsregeln", "Grundbetrieb bei WLAN-Ausfall laut Hersteller"]
 weaknesses: ["Netzstrom erforderlich", "Ersteinrichtung und App brauchen WLAN", "Abo-Variante mit laufenden Kosten"]
 experience: { summary: "Datenreview der Systemabhängigkeiten und Produktrolle.", methodology: "Deutscher OnlyCat-Shop und Spezifikationsseite, geprüft am 04.08.2026.", reliability: "Beuteerkennung ist eine Herstellerangabe und kein eigener Trefferquotentest." }

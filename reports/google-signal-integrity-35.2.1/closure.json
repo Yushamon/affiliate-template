@@ -1,0 +1,323 @@
+{
+  "version": "35.2.1",
+  "status": "CLOSED_WITH_GSC_DATA_LIMITATION",
+  "changes": {
+    "advisor": {
+      "source": "/smarte-futterautomaten/",
+      "location": "CategoryExperience.astro / Anforderungen zuerst",
+      "href": "/futterautomat-berater/",
+      "realAnchor": true,
+      "requiresJs": false,
+      "incomingSources": 1,
+      "clickDepth": 2
+    },
+    "lifecycle": {
+      "rootCause": "A — one bad source statement duplicated in decision.attention and weaknesses; the renderer/schema selected public fields correctly",
+      "product": "neakasa-m1-lite",
+      "sourceOccurrencesRemoved": 2,
+      "privateStorage": "YAML comment outside parsed public data",
+      "sameRootCauseBodyCleanup": true,
+      "runtimeFilterAdded": false,
+      "regressionTestsAdded": 3
+    },
+    "otherProductionChangesByThisTask": 0,
+    "newUrls": 0,
+    "deletedUrls": 0,
+    "redirectChanges": 0,
+    "lastmodChanges": 0,
+    "affiliateChangesByThisTask": 0
+  },
+  "gsc": {
+    "status": "GSC_URL_EXPORT_MISSING",
+    "cohortUrlsAnalyzed": 0,
+    "pattern": "INSUFFICIENT_DATA",
+    "searched": [
+      "repository including hidden/import paths, excluding .git/node_modules/dist",
+      "ExtensionQA workspace",
+      "Codex attachments",
+      "Downloads and Desktop export filenames"
+    ],
+    "searchTerms": [
+      "GSC",
+      "coverage",
+      "page indexing",
+      "Gecrawlt",
+      "drilldown",
+      "Tabelle.csv",
+      "Diagramm.csv",
+      "Metadaten.csv",
+      "pfotentechnik"
+    ],
+    "available": "GSC performance snapshots only; these do not contain exclusion reasons or a last-crawled URL cohort.",
+    "action": "Phases 5–7 stopped only. No approximately-18-URL cohort reconstructed, and no exclusion inferred from zero impressions."
+  },
+  "graph": {
+    "trueOrphans": 0,
+    "nearOrphans": 5,
+    "previousNearOrphansUnchanged": 4,
+    "newIntentionalSingleSourceAdvisor": 1,
+    "depthOver3": 0,
+    "unreachable": 0,
+    "advisor": {
+      "url": "https://pfotentechnik.de/futterautomat-berater/",
+      "pageType": "editorial-page",
+      "cluster": "futterautomaten",
+      "classification": "NEAR_ORPHAN",
+      "incomingLinks": 1,
+      "uniqueSourcePages": 1,
+      "contextualSourcePages": 1,
+      "navigationalLinks": 0,
+      "outgoingLinks": 39,
+      "uniqueOutgoingPages": 18,
+      "clickDepth": 2,
+      "logicalHubs": [
+        "/smarte-futterautomaten/"
+      ],
+      "linksFromLogicalHub": [
+        "/smarte-futterautomaten/"
+      ],
+      "missingLogicalHub": false,
+      "fromComparisons": 0,
+      "fromGuides": 0,
+      "fromProducts": 0,
+      "anchorDistribution": {
+        "Futterautomat-Berater": 1
+      },
+      "incomingSources": [
+        "https://pfotentechnik.de/smarte-futterautomaten/"
+      ]
+    },
+    "review": [
+      {
+        "url": "/produkt/petkit-fresh-element-infinity/",
+        "outcome": "PAGE_ROLE_JUSTIFIES_LOW_LINKING",
+        "reason": "Archived/discontinued; manufacturer-only archive discovery is sufficient, depth 3."
+      },
+      {
+        "url": "/produkt/petlibro-one-rfid-smart-feeder/",
+        "outcome": "NO_CHANGE",
+        "reason": "Available product, manufacturer source, depth 3. No demonstrated user-journey gap justifies changing curated comparisons/selection in this batch."
+      },
+      {
+        "url": "/produkt/wopet-pioneer-f01-plus/",
+        "outcome": "PAGE_ROLE_JUSTIFIES_LOW_LINKING",
+        "reason": "Archived/out-of-stock; manufacturer archive path at depth 3 is appropriate."
+      },
+      {
+        "url": "/seniorenhunde-richtig-versorgen/",
+        "outcome": "PAGE_ROLE_JUSTIFIES_LOW_LINKING",
+        "reason": "Supporting guide, linked from /wissen/ and reachable at depth 2; no missing essential journey established."
+      },
+      {
+        "url": "/futterautomat-berater/",
+        "outcome": "PAGE_ROLE_JUSTIFIES_LOW_LINKING",
+        "reason": "Newly reachable tool: one meaningful main-cluster-hub entry at depth 2 is the intentionally minimal fix."
+      }
+    ]
+  },
+  "schema": {
+    "productsChecked": 103,
+    "sameRootCauseProductsBefore": 1,
+    "additionalConfirmedLeaks": 0,
+    "remainingLifecycleLeaks": 0,
+    "potentialLeaksInCheckedInputs": 0,
+    "syntaxValid": 103,
+    "semanticInvalid": 0,
+    "warningProducts": 103,
+    "warningsNote": "102 previous WARNING products remain; repaired Neakasa joins this warning group because ordinary review text-selection differences remain. These are not 103 confirmed errors.",
+    "ratingsUnchanged": 103,
+    "aggregateRatings": 0,
+    "offers": 68,
+    "publisherFalselySeller": 0
+  },
+  "signals": {
+    "generated": 375,
+    "indexableCanonical": 260,
+    "sitemapUrls": 260,
+    "http200": {
+      "passed": 260,
+      "total": 260,
+      "evidence": "Reused 35.2 production HTTP measurements, not re-fetched in this targeted closure."
+    },
+    "localSelfCanonical": 260,
+    "localSitemapConsistency": 260,
+    "localRobots": 260,
+    "localInitialHtml": 260,
+    "schemaUrlConsistency": 260,
+    "directCanonicalLinks": 16901,
+    "internalVariantLinks": 0,
+    "lastmod": "LASTMOD_PARTIALLY_TRUSTWORTHY; entire sitemap byte-identical to 35.2"
+  },
+  "deferred": {
+    "redirectChains": 1037,
+    "redirectSeverity": "P2 URL HYGIENE",
+    "lastmod": "NO_CHANGE",
+    "affiliateTargets": [
+      "litter-robot-5-pro",
+      "neakasa-riko"
+    ]
+  },
+  "validation": {
+    "tests": {
+      "passed": 861,
+      "failed": 0,
+      "baseline": 856,
+      "closureTestsAdded": 3,
+      "concurrentlyMergedTestsAdded": 2
+    },
+    "productionBuild": "PASS — 375 pages",
+    "existingAuditCommands": [
+      {
+        "command": "audit:technical-seo",
+        "exitCode": 0,
+        "durationMs": 635,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2.1/validation/audit-technical-seo.log"
+      },
+      {
+        "command": "audit:url-consistency:strict",
+        "exitCode": 0,
+        "durationMs": 835,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2.1/validation/audit-url-consistency-strict.log"
+      },
+      {
+        "command": "audit:release-build-output:strict",
+        "exitCode": 0,
+        "durationMs": 572,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2.1/validation/audit-release-build-output-strict.log"
+      },
+      {
+        "command": "audit:internal-links:strict",
+        "exitCode": 0,
+        "durationMs": 2070,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2.1/validation/audit-internal-links-strict.log"
+      },
+      {
+        "command": "audit:internal-link-targets:strict",
+        "exitCode": 0,
+        "durationMs": 411,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2.1/validation/audit-internal-link-targets-strict.log"
+      },
+      {
+        "command": "audit:internal-link-health:strict",
+        "exitCode": 0,
+        "durationMs": 2469,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2.1/validation/audit-internal-link-health-strict.log"
+      },
+      {
+        "command": "audit:comparison-schema",
+        "exitCode": 0,
+        "durationMs": 278,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2.1/validation/audit-comparison-schema.log"
+      },
+      {
+        "command": "audit:products:strict",
+        "exitCode": 0,
+        "durationMs": 464,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2.1/validation/audit-products-strict.log"
+      },
+      {
+        "command": "audit:product-standard-3:strict",
+        "exitCode": 0,
+        "durationMs": 338,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2.1/validation/audit-product-standard-3-strict.log"
+      },
+      {
+        "command": "audit:product-evidence",
+        "exitCode": 0,
+        "durationMs": 296,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2.1/validation/audit-product-evidence.log"
+      },
+      {
+        "command": "price:audit:strict",
+        "exitCode": 1,
+        "durationMs": 420,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2.1/validation/price-audit-strict.log"
+      },
+      {
+        "command": "audit:image-alt:strict",
+        "exitCode": 0,
+        "durationMs": 413,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2.1/validation/audit-image-alt-strict.log"
+      },
+      {
+        "command": "design-system:contrast:audit",
+        "exitCode": 0,
+        "durationMs": 271,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2.1/validation/design-system-contrast-audit.log"
+      },
+      {
+        "command": "design-system:responsive:audit",
+        "exitCode": 0,
+        "durationMs": 266,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2.1/validation/design-system-responsive-audit.log"
+      },
+      {
+        "command": "audit:performance:strict",
+        "exitCode": 0,
+        "durationMs": 1815,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2.1/validation/audit-performance-strict.log"
+      },
+      {
+        "command": "audit:frontmatter-dates:strict",
+        "exitCode": 0,
+        "durationMs": 275,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2.1/validation/audit-frontmatter-dates-strict.log"
+      }
+    ],
+    "auditPassed": 15,
+    "auditFailed": 1,
+    "browserGeometry": {
+      "checks": 30,
+      "passed": 30,
+      "failed": 0
+    },
+    "closureGeometry": {
+      "passed": 8,
+      "total": 8
+    },
+    "finalFullpageScreenshots": [
+      "screenshots/hub-375-light.png",
+      "screenshots/hub-1600-light.png",
+      "screenshots/hub-375-dark.png",
+      "screenshots/hub-1600-dark.png"
+    ],
+    "screenshotsVisuallyInspected": true,
+    "distDependentTests": "Final suite ran after final build; an earlier overlapping run had 7 ENOENT failures and is retained as tests-during-build.log."
+  },
+  "severity": {
+    "P0": 0,
+    "P1": 0,
+    "P2": 4,
+    "P3": 3,
+    "counting": "Finding groups, not URL totals. Confirmed schema leak closed; unconfirmed text-selection warnings are P3, not semantic errors."
+  },
+  "decision": {
+    "advisorStillOrphan": "NO",
+    "identifiedMetadataPathCanStillLeak": "NO — repaired source inputs and regression gate; not a claim that arbitrary future prose can be semantically proved by regex",
+    "gscCommonMaterialDefect": "INSUFFICIENT_DATA",
+    "evidenceOfSitewideTechnicalExplanation": "NO",
+    "P0": 0,
+    "P1": 0,
+    "anotherGeneralTechnicalBatchJustified": "NO",
+    "technicalSeoFreeze": "RECOMMENDED on available evidence; URL-level GSC cohort remains explicitly unassessed",
+    "nextStrategicArea": "First-party product testing"
+  },
+  "concurrentWorkspaceActivity": {
+    "initialHead": "a8c5b0f4f234fa301a79375c13332c806a5e4b40",
+    "currentHead": "9a5722c54599cc94f53477baed112f0ffb7bc0b1",
+    "events": [
+      "Concurrent price refresh changed commerce data; not initiated or reverted by this task.",
+      "External commit 0f0d980e captured the in-progress closure files; merge 6afbc57c added commerce changes and two tests.",
+      "Validation was repeated on current HEAD plus final category-link correction."
+    ],
+    "noCommitMergeOrDeploymentPerformedByThisTask": true,
+    "cachedLiveDifferences": "110 current local primary-text differences and 6 link-target-list differences vs prior deployed snapshot include concurrent commerce changes; they are not treated as fresh production regressions."
+  },
+  "sourceSha256": {
+    "apps/pfotentechnik/src/components/category/CategoryExperience.astro": "0f789d522b464e879e1992d8b94be63e392a422d0d98c3ac1526fc3d85d6ef7c",
+    "apps/pfotentechnik/src/content/products/neakasa-m1-lite.md": "478e9351a73de3347799a59a1563642dc9f6dd82b7a3a5ffb48b0e3551924370",
+    "apps/pfotentechnik/test/google-signal-closure-35.2.1.test.mjs": "e1d1d3971feb5a40f6821dcf526caed08d6a4fc232223224054e1662f1617a86",
+    "apps/pfotentechnik/scripts/seo/audit-google-signal-integrity.mjs": "1b02e7911319ad16bfd2b63ee6b0aecdae2556da75a47a7eb2959a5c63b48b3b",
+    "apps/pfotentechnik/scripts/seo/google-signal-browser-check.mjs": "414d25adc73d71790478981d9061ba484b269793cf60cce58bcfa6dd702e53f9"
+  }
+}

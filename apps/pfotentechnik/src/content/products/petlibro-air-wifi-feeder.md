@@ -126,7 +126,7 @@ externalEvidence:
         - "Die produktspezifische Nutzerbasis ist mit nur einer sichtbaren Bewertung zu klein für wiederkehrende Muster."
   note: >-
     Der unabhängige Praxistest ist belastbar, die öffentlich auffindbare produktspezifische Nutzerbasis jedoch zu klein,
-    um einen Consensus aus professioneller und Nutzer-Evidenz zu bilden. Deshalb bleibt die Evidenz constrained.
+    um einen Consensus aus professioneller und Nutzer-Evidenz zu bilden. Deshalb bleibt die Beleglage eingeschränkt.
 decision:
   bestFor:
     - eine Katze

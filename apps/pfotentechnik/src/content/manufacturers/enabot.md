@@ -43,7 +43,7 @@ profile:
   replacementParts: "Akkus und fahrwerksbezogene Ersatzteile vor Kauf regional prüfen."
   filterSupply: "Nicht relevant."
   warranty: "Regionale Garantie- und Servicebedingungen vor Kauf prüfen."
-  competitorComparison: "Enabot steht im Cluster für mobile Navigation statt festen Blickpunkt oder Leckerliausgabe."
+  competitorComparison: "Enabot steht für mobile Navigation statt festen Blickpunkt oder Leckerliausgabe."
 productSlugs:
   - "enabot-ebo-air-2"
   - "enabot-rola-mini"

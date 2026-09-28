@@ -144,7 +144,7 @@ externalEvidence:
     editorialAssessment: >-
       Es wurde kein belastbarer unabhängiger Fach- oder Labortest des Serienprodukts gefunden. Trustpilot ist ein
       Community-Signal mit kleiner, möglicherweise nicht repräsentativer Stichprobe und ersetzt keine Trefferquotenprüfung.
-  note: "Research-constrained: Herstellerdaten plus Community-Signal; kein eigener oder unabhängiger Praxistest."
+  note: "Herstellerdaten plus Community-Signal; kein eigener oder unabhängiger Praxistest."
 decision:
   bestFor:
     - "Freigängerkatzen, die regelmäßig Mäuse, Vögel oder andere Beute mitbringen"

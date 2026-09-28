@@ -141,7 +141,7 @@ externalEvidence:
       confidence: medium
     editorialAssessment: Mangels unabhängigem Fachtest bleibt die PfotenTechnik-Wertung bewusst konservativ und stützt sich
       auf technische Dokumentation plus breites Nutzersignal.
-  note: 'Research-constrained: kein unabhängiger Fachtest gefunden. Kein eigener PfotenTechnik-Praxistest.'
+  note: 'kein unabhängiger Fachtest gefunden. Kein eigener PfotenTechnik-Praxistest.'
 decision:
   bestFor:
     - Freigängerkatzen, die wiederholt Mäuse, Vögel oder andere Beute ins Haus bringen

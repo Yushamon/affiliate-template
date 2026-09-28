@@ -97,7 +97,7 @@ Prüfe vorab, welche Teile spülmaschinengeeignet sind. Edelstahl oder einzelne 
 
 ### Spülmaschinenfreigabe ist eine Teilefrage
 
-| Modell | Spülmaschine laut vorhandener Hersteller-Evidence | Handreinigung / Grenze |
+| Modell | Spülmaschine laut vorliegenden Herstellerangaben | Handreinigung / Grenze |
 |---|---|---|
 | PetSafe Streamside | Keramikschale und -turm im oberen Korb | Pumpe und elektrische Teile von Hand |
 | PETKIT Eversweet Ultra | Edelstahl-Trinkschale, Auslauf und magnetisches Sieb | übrige Komponenten nach Anleitung von Hand |

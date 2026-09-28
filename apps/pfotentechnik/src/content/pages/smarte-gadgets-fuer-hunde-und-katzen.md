@@ -35,7 +35,7 @@ seo:
 
 Automatische Futterspender, GPS-Tracker, Trinkbrunnen und vernetzte Kameras können Abläufe erleichtern. Entscheidend ist nicht die Zahl der Funktionen, sondern ob ein Gerät zuverlässig zum Tier, zum Haushalt und zur Betreuungssituation passt.
 
-Die zentrale Einordnung aller Gerätekategorien, Verbindungsarten, Datenschutzfragen und Folgekosten findest du im Cornerstone-Ratgeber [Smarte Haustiertechnik](/smarte-haustiertechnik/).
+Die zentrale Einordnung aller Gerätekategorien, Verbindungsarten, Datenschutzfragen und Folgekosten findest du im Ratgeber [Smarte Haustiertechnik](/smarte-haustiertechnik/).
 
 ## Darauf kommt es vor dem Kauf an
 

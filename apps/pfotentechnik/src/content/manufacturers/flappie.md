@@ -8,7 +8,7 @@ key: "flappie"
 name: "Flappie Technologies"
 website: "https://flappiedoors.com/"
 recommendation: "Flappie ist als spezialisierter Anbieter einer vollständigen Katzenklappe mit lokal arbeitender Beuteerkennung relevant."
-summary: "Flappie Technologies AG steht im Katzenklappen-Cluster für das Modell FLP1; aktuelle Identitäts- und Premium-Grenzen gehören zur Produktentscheidung."
+summary: "Flappie Technologies AG steht bei Katzenklappen für das Modell FLP1; aktuelle Identitäts- und Premium-Grenzen gehören zur Produktentscheidung."
 publishedAt: "2026-09-07"
 updatedAt: "2026-09-07"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }

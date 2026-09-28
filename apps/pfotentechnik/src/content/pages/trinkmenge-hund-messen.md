@@ -100,7 +100,9 @@ Die Dringlichkeit entscheidet darüber, ob Messen oder Untersuchen Vorrang hat:
 3. **Mehrere Tiere oder ein Brunnen?** Messgrenze dokumentieren, nicht mit falscher Präzision ausgleichen.
 4. **Deutlicher, anhaltender Trend?** Protokoll und Futteretikett zur Tierarztpraxis mitnehmen.
 
-## Information Gain: Messunsicherheit sichtbar machen
+<span id="information-gain-messunsicherheit-sichtbar-machen" aria-hidden="true"></span>
+
+## Messunsicherheit sichtbar machen
 
 Notiere nicht nur einen Endwert, sondern auch eine grobe Spanne. Wenn beispielsweise 50 Milliliter verschüttet sein könnten, ist „650 bis 700 Milliliter“ ehrlicher als „683 Milliliter“. Diese Unsicherheit hilft bei der Einordnung und verhindert, dass Technikdaten eines Brunnens als medizinisch exakte Messung missverstanden werden.
 

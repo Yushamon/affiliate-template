@@ -17,7 +17,7 @@ evidenceSources:
   - { source: "petWALK Österreich", url: "https://petwalk.at/products/tierture-konfigurieren", accessedAt: "2026-08-04", assertion: "Motorisierte gedämmte Tiertüren bilden eine eigene Bauproduktklasse; U-Wert ist Herstellerangabe.", fields: ["body"] }
 ---
 
-Zugluft ist ein eigenständiger Problem-Intent, weil sie nicht allein durch „eine besser gedichtete Klappe“ erklärt wird. Drei Ebenen sind zu trennen.
+Zugluft lässt sich nicht allein durch „eine besser gedichtete Klappe“ erklären. Drei Ebenen sind zu trennen.
 
 ## Klappe
 
@@ -31,4 +31,4 @@ Zwischen Rahmen, Tunnel und Bauteil darf kein unkontrollierter Spalt bleiben. Ab
 
 Eine leichte Schwingklappe und eine motorisierte gedämmte Tiertür sind konstruktiv verschieden. Hersteller-U-Werte dürfen nur für das bezeichnete System und nicht pauschal für den fertigen Einbau übernommen werden.
 
-Bei einem Neubau, Passivhaus oder hochwertigen Außenelement sollte ein Fachbetrieb den Anschluss planen. Der [Einbauratgeber](/katzenklappe-einbauen/) führt die Bauteile durch; die [petWALK Medium](/produkt/petwalk-medium-tiertuer/) ist ein konkreter Owner der motorisierten Premiumklasse.
+Bei einem Neubau, Passivhaus oder hochwertigen Außenelement sollte ein Fachbetrieb den Anschluss planen. Der [Einbauratgeber](/katzenklappe-einbauen/) führt die Bauteile durch; die [petWALK Medium](/produkt/petwalk-medium-tiertuer/) ist ein konkretes Modell der motorisierten Premiumklasse.

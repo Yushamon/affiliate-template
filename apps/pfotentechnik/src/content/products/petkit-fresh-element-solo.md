@@ -118,7 +118,7 @@ externalEvidence:
   note: >-
     Für das exakt als Fresh Element Solo identifizierte Modell wurde keine hinreichend belastbare unabhängige
     professionelle Hands-on-Review gefunden. Die große Händler-Stichprobe erlaubt ein Nutzersignal, aber keinen
-    belastbaren Quellenkonsens. Deshalb bleibt die Evidenz constrained.
+    belastbaren Quellenkonsens. Deshalb bleibt die Beleglage eingeschränkt.
 decision:
   bestFor:
     - eine Katze

@@ -40,7 +40,9 @@ Das Abo finanziert die **Übertragung und den betriebenen Dienst**, nicht die Sa
 | laufender Funk | Abo | kein Mobilfunkabo |
 | Infrastruktur | Cloud und App | lokale Funkkette |
 
-## Tarifmodelle im Cluster
+<span id="tarifmodelle-im-cluster" aria-hidden="true"></span>
+
+## Tarifmodelle im Vergleich
 
 Die Modelle unterscheiden sich darin, wann Dienstkosten entstehen und welche Hardware zusätzlich erforderlich ist.
 

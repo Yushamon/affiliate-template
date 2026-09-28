@@ -136,9 +136,9 @@ externalEvidence:
       Die Nutzerbasis ist deutlich größer als bei mehreren neuen Smart-Feedern, stammt aber aus nur einer
       Bewertungsplattform. Deshalb wird daraus kein quellenübergreifender Hoch-Konfidenz-Konsens abgeleitet.
   note: >-
-    Yandex weist zum Abrufdatum 251 Bewertungen und 148 schriftliche Rezensionen aus. Im Feld reviewCount wird
-    die Zahl der schriftlichen Rezensionen dokumentiert; ein unabhängiger professioneller Hands-on-Test wurde
-    für diesen Batch nicht als belastbar genug gefunden.
+    Yandex weist zum Abrufdatum 251 Bewertungen und 148 schriftliche Rezensionen aus. Die angegebene Rezensionszahl bezieht sich
+    auf die schriftlichen Rezensionen; ein ausreichend belastbarer unabhängiger professioneller Hands-on-Test
+    wurde nicht gefunden.
 decision:
   bestFor:
     - Katzen

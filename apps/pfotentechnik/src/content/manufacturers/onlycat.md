@@ -8,7 +8,7 @@ key: "onlycat"
 name: "OnlyCat"
 website: "https://www.onlycat.com/de/"
 recommendation: "OnlyCat ist als spezialisierter Anbieter eines vernetzten Komplettsystems mit integrierter Beuteerkennung relevant."
-summary: "Die Marke steht im Cluster für ein konkretes Kamera-Komplettsystem, nicht für allgemeine Mikrochip-Klappen."
+summary: "Die Marke steht für ein konkretes Kamera-Komplettsystem, nicht für allgemeine Mikrochip-Klappen."
 publishedAt: "2026-08-04"
 updatedAt: "2026-08-04"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }

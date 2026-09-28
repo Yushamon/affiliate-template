@@ -47,7 +47,7 @@ hub:
   sections:
     - "wissen"
   title: "Smarte Haustiertechnik"
-  description: "Cornerstone-Ratgeber zu Gerätekategorien, Datenschutz, Verbindungen, Folgekosten und Kaufentscheidungen."
+  description: "Ratgeber zu Gerätekategorien, Datenschutz, Verbindungen, Folgekosten und Kaufentscheidungen."
   icon: "🐾"
   order: 350
   featured: true
@@ -229,7 +229,7 @@ recommendationJourney:
 
 Smarte Haustiertechnik kann füttern, Wasser bewegen, Zugänge regeln, Aufenthaltsorte melden oder Nutzungsmuster dokumentieren. Sie ist dann hilfreich, wenn sie eine klar definierte Aufgabe **zuverlässiger, sicherer oder nachvollziehbarer** macht. Eine App, Kamera oder Cloud-Anbindung ist dagegen kein Selbstzweck.
 
-Dieser Ratgeber ist die zentrale Landkarte von PfotenTechnik. Er erklärt die grundlegenden Entscheidungen und führt anschließend in die spezialisierten Cluster, Vergleiche und Herstellerprofile. Detailfragen bleiben bewusst auf den jeweiligen Fachseiten.
+Dieser Ratgeber ist die zentrale Landkarte von PfotenTechnik. Er erklärt die grundlegenden Entscheidungen und führt anschließend in die spezialisierten Ratgeber, Vergleiche und Herstellerprofile. Detailfragen bleiben bewusst auf den jeweiligen Fachseiten.
 
 ## Was ist smarte Haustiertechnik?
 
@@ -241,7 +241,9 @@ Der Begriff umfasst drei technische Ebenen:
 
 Ein Produkt kann eine, zwei oder alle drei Ebenen kombinieren. Deshalb ist ein offline programmierter Futterautomat nicht automatisch „unsmart“, während eine WLAN-Kamera trotz App wenig Mehrwert bietet, wenn Aufnahmen unzuverlässig sind oder wichtige Funktionen nur per Abo verfügbar bleiben.
 
-### Information Gain: die Technikleiter
+<span id="information-gain-die-technikleiter" aria-hidden="true"></span>
+
+### die Technikleiter
 
 Die sinnvollste Auswahl beginnt auf der niedrigsten Stufe, die das Problem löst:
 
@@ -251,7 +253,7 @@ Die sinnvollste Auswahl beginnt auf der niedrigsten Stufe, die das Problem löst
 - Stufe 3: App-Verbindung im Haushalt
 - Stufe 4: Fernzugriff, Cloud und geräteübergreifendes Ökosystem
 
-Jede zusätzliche Stufe schafft Möglichkeiten, aber auch Abhängigkeiten, Datenflüsse und Wartungsaufwand. Information Gain entsteht daher nicht durch „mehr smart“, sondern durch die **kleinste ausreichende Technikstufe**.
+Jede zusätzliche Stufe schafft Möglichkeiten, aber auch Abhängigkeiten, Datenflüsse und Wartungsaufwand. Entscheidend ist daher nicht „mehr smart“, sondern die **kleinste ausreichende Technikstufe**.
 
 ![Kategorieübersicht der smarten Haustiertechnik mit sieben Gerätetypen rund um einen Hunde- und Katzenhaushalt.](../../assets/images/guides/smarte-haustiertechnik/category-overview.webp)
 
@@ -285,7 +287,7 @@ Die Kategorien unterscheiden sich nicht nur durch Funktionen. Entscheidend ist, 
 
 ### Futterautomaten
 
-Futterautomaten sind sinnvoll, wenn Zeitpunkte, Teilportionen oder individueller Zugang reproduzierbar werden sollen. Die Bauart muss zuerst zur Futterart passen: Ein Vorratsautomat für Trockenfutter löst eine andere Aufgabe als ein gekühltes Fachsystem für Nassfutter. Die App kommt erst danach. Der Cluster [Smarte Futterautomaten](/smarte-futterautomaten/) führt durch Bauarten, Portionierung, Ausfallsicherheit und Tiergrößen.
+Futterautomaten sind sinnvoll, wenn Zeitpunkte, Teilportionen oder individueller Zugang reproduzierbar werden sollen. Die Bauart muss zuerst zur Futterart passen: Ein Vorratsautomat für Trockenfutter löst eine andere Aufgabe als ein gekühltes Fachsystem für Nassfutter. Die App kommt erst danach. Der Ratgeber [Smarte Futterautomaten](/smarte-futterautomaten/) führt durch Bauarten, Portionierung, Ausfallsicherheit und Tiergrößen.
 
 ### Trinkbrunnen
 
@@ -295,13 +297,13 @@ Trinkbrunnen schaffen eine zusätzliche Wasserstelle mit bewegtem Wasser. Releva
 
 GPS-Tracker verbinden Satellitenortung meist mit Mobilfunk oder einem anderen Übertragungsweg. Deshalb zählen nicht nur Größe und Akku, sondern Netzabdeckung, Aktualisierungsintervall, Abo, Befestigung und die Frage, wie der Tracker sich bei leerem Akku verhält. Ein virtueller Zaun ist eine Benachrichtigung – keine physische Begrenzung.
 
-Der Cornerstone [GPS-Tracker für Hunde und Katzen](/gps-tracker/) trennt Positionsbestimmung, Übertragung und App-Anzeige, führt zu den Tiervergleichen und ordnet Abo-, Akku-, Befestigungs- und Datenschutzfragen ein.
+Der Ratgeber [GPS-Tracker für Hunde und Katzen](/gps-tracker/) trennt Positionsbestimmung, Übertragung und App-Anzeige, führt zu den Tiervergleichen und ordnet Abo-, Akku-, Befestigungs- und Datenschutzfragen ein.
 
 ### Smarte Katzenklappen
 
 Smarte Klappen erkennen Tiere etwa über einen vorhandenen Mikrochip oder einen Halsbandanhänger und können Ein- und Ausgangsregeln anwenden. Wichtig sind kompatible Chipstandards, Durchgangsmaß, Verriegelungslogik, Geräusch, Batteriewarnung und manuelle Entriegelung. In Mehrtierhaushalten muss die Regel je Tier und Richtung verständlich konfigurierbar sein.
 
-Der Cornerstone [Katzenklappen](/katzenklappen/) trennt lokale Mikrochip-Erkennung, App-Funktionen und spezialisierte Nachrüstung und führt zu Vergleichen, Praxisratgebern und konkreten Produktprüfungen.
+Der Ratgeber [Katzenklappen](/katzenklappen/) trennt lokale Mikrochip-Erkennung, App-Funktionen und spezialisierte Nachrüstung und führt zu Vergleichen, Praxisratgebern und konkreten Produktprüfungen.
 
 ### Haustierkameras
 
@@ -357,7 +359,9 @@ Der Kaufpreis ist nur die erste Position. Vergleiche die Gesamtkosten über den 
 
 Ein Filterintervall allein reicht nicht. Rechne mit Packungsgröße und Preis, prüfe verpflichtende Versandkosten und kläre, ob ein kompatibles Teil nach Modellwechsel weiter erhältlich bleibt. Bei Trackern gehören Mobilfunkgebühren, bei Kameras Cloud-Speicher und bei Toiletten Beutel oder proprietäre Einsätze in dieselbe Rechnung.
 
-### Information Gain: Lock-in-Risiko getrennt bewerten
+<span id="information-gain-lock-in-risiko-getrennt-bewerten" aria-hidden="true"></span>
+
+### Lock-in-Risiko getrennt bewerten
 
 Zwei Geräte mit ähnlichen Jahreskosten können unterschiedlich riskant sein. Standardbatterien oder frei erhältliche Filter lassen sich ersetzen; ein ausschließlich cloudgebundenes Abo oder proprietärer Einwegbehälter bindet stärker an den Hersteller. Notiere neben Eurokosten daher eine zweite Kennzahl: **Wie viele Kernfunktionen fallen aus, wenn ein Verbrauchsteil oder Dienst verschwindet?**
 

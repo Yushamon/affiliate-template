@@ -654,7 +654,9 @@ Trennung darf nicht so stressig sein, dass sie das Verhalten verfälscht.
 
 Bei deutlichen Symptomen wird nicht erst tagelang gemessen.
 
-## Information Gain: Persönliche Basislinie
+<span id="information-gain-persönliche-basislinie" aria-hidden="true"></span>
+
+## Persönliche Basislinie
 
 Eine persönliche Basislinie verbessert die Einschätzung.
 
@@ -676,7 +678,9 @@ Später lässt sich ein neuer Trend besser erkennen.
 
 Eine Basislinie ersetzt keine Untersuchung bei akuten Warnzeichen.
 
-## Information Gain: Durchschnitt aus mehreren Tagen
+<span id="information-gain-durchschnitt-aus-mehreren-tagen" aria-hidden="true"></span>
+
+## Durchschnitt aus mehreren Tagen
 
 Ein einzelner Messwert ist anfällig für Fehler.
 
@@ -698,7 +702,9 @@ Die letzten beiden Tage zeigen einen deutlichen Anstieg.
 
 Das Muster ist relevanter als ein isolierter Wert von 160 Millilitern.
 
-## Information Gain: Urinklumpen fotografisch vergleichen
+<span id="information-gain-urinklumpen-fotografisch-vergleichen" aria-hidden="true"></span>
+
+## Urinklumpen fotografisch vergleichen
 
 Fotos helfen, Größenveränderungen objektiver zu verfolgen.
 
@@ -714,7 +720,9 @@ Streumenge, Klumpenbildung und mehrere Toilettengänge beeinflussen das Ergebnis
 
 Fotos ersetzen keine Urinmessung.
 
-## Information Gain: Gewicht als Frühwarnsignal
+<span id="information-gain-gewicht-als-frühwarnsignal" aria-hidden="true"></span>
+
+## Gewicht als Frühwarnsignal
 
 Wiege die Katze wöchentlich, wenn vermehrter Durst auffällt.
 
@@ -732,7 +740,9 @@ Gewichtsverlust mit schlechtem Appetit passt auch zu Nieren- oder anderen Erkran
 
 Der Trend ist wichtiger als eine einzelne kleine Schwankung.
 
-## Information Gain: Kamera sinnvoll nutzen
+<span id="information-gain-kamera-sinnvoll-nutzen" aria-hidden="true"></span>
+
+## Kamera sinnvoll nutzen
 
 Eine Kamera kann zeigen:
 

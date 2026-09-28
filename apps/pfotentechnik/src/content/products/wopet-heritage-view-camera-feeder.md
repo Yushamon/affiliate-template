@@ -112,8 +112,8 @@ externalEvidence:
         - "Die Stichprobe ist klein und liegt direkt auf der Herstellerseite."
   note: >-
     Ein unabhängiger K9-Magazine-Hands-on-Test existiert für die Heritage-View-Dual-Bowl-Variante.
-    Da die vorhandene PfotenTechnik-Datei keine eindeutige Modellnummer beziehungsweise Dual-Bowl-Identität festlegt,
-    wird dieser Test nicht auf das hier geführte Produkt übertragen. Deshalb bleibt Professional Reviews leer und die Evidence constrained.
+    Da für das hier beschriebene Produkt keine eindeutige Modellnummer beziehungsweise Dual-Bowl-Identität belegt ist,
+    wird dieser Test nicht auf das hier geführte Produkt übertragen. Deshalb fehlt ein eindeutig zuordenbarer unabhängiger Praxistest und die Beleglage bleibt eingeschränkt.
 decision:
   bestFor:
     - katze

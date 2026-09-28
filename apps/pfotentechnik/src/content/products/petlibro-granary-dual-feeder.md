@@ -111,7 +111,7 @@ externalEvidence:
   note: >-
     The Spruce Pets hat einen PETLIBRO Granary Feeder für zwei Katzen praktisch getestet, die dort beschriebene
     Variante ist jedoch nicht eindeutig als WiFi Dual Food Tray Feeder identifiziert. Diese Review wird deshalb nicht
-    als professioneller Beleg für das konkrete Modell übernommen. Die Nutzerbasis ist ebenfalls zu klein. Constrained.
+    als professioneller Beleg für das konkrete Modell übernommen. Die Nutzerbasis ist ebenfalls zu klein. Die Beleglage bleibt eingeschränkt.
 decision:
   bestFor:
     - Zwei Katzen mit ähnlichem Futterbedarf

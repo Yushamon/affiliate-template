@@ -22,7 +22,7 @@ attention: ["Mindestgewicht, Innenraum, Whisker+ und regionale Verfügbarkeit pr
 strengths: ["umfangreiche dokumentierte Produktdaten"]
 weaknesses: ["hoher Preis", "geschlossene Bauform", "optionale Aboebene"]
 profile:
-  company: "Das Profil beschränkt sich auf das im Repository gepflegte Litter-Robot-System."
+  company: "Das Profil beschränkt sich auf das Litter-Robot-System."
   appEcosystem: "Besuchs-, Gewichts- und Kameradaten laufen über die Whisker-App; bestimmte Identifikationsfunktionen benötigen laut Hersteller Whisker+."
   replacementParts: "Beutel, Geruchszubehör und Trommelzubehör sind Folgekosten."
   filterSupply: "Geruchszubehör ist modellbezogen, klassische Filterversorgung nicht der Hauptvergleich."

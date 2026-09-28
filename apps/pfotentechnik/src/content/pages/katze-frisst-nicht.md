@@ -1012,7 +1012,9 @@ Kameraaufnahmen ergänzen die Messung.
 
 Sie ersetzen keine Untersuchung.
 
-## Information Gain: Futteraufnahme als Prozent der normalen Menge
+<span id="information-gain-futteraufnahme-als-prozent-der-normalen-menge" aria-hidden="true"></span>
+
+## Futteraufnahme als Prozent der normalen Menge
 
 Eine Prozentangabe ist oft hilfreicher als „weniger“.
 
@@ -1037,7 +1039,9 @@ Es macht den Verlauf aber klarer.
 
 Eine Katze, die mehrere Tage nur 20 bis 30 Prozent ihrer normalen Menge frisst, nimmt nicht „fast normal“ auf.
 
-## Information Gain: Vier Beobachtungen statt nur „frisst nicht“
+<span id="information-gain-vier-beobachtungen-statt-nur-frisst-nicht" aria-hidden="true"></span>
+
+## Vier Beobachtungen statt nur „frisst nicht“
 
 Notiere vier getrennte Schritte:
 

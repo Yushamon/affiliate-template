@@ -49,7 +49,7 @@ hub:
   sections:
     - "wissen"
   title: "Smarte Futterautomaten"
-  description: "Zentraler Cluster-Hub mit vollständiger Kaufberatung, Auswahlkriterien und fachlich passenden nächsten Schritten."
+  description: "Kaufberatung mit Auswahlkriterien und passenden nächsten Schritten."
   icon: "📖"
   order: 360
 hubPriority: 100

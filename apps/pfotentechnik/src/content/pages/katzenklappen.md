@@ -3,7 +3,7 @@ title: "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen"
 slug: "katzenklappen"
 type: "page"
 layout: "page"
-description: "Cornerstone für Katzenklappen: Nutzeraufgabe, Mikrochip-Zugang, Mehrkatzen-Rechte, App, Beuteerkennung, Passform und Einbau in der richtigen Reihenfolge klären."
+description: "Kaufberatung für Katzenklappen: Nutzeraufgabe, Mikrochip-Zugang, Mehrkatzen-Rechte, App, Beuteerkennung, Passform und Einbau in der richtigen Reihenfolge klären."
 publishedAt: "2026-08-04"
 updatedAt: "2026-08-25"
 author:

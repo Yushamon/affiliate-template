@@ -85,7 +85,9 @@ Entscheidend sind Begleitsymptome und Verlauf:
 3. **Plausibler Auslöser wie Hitze oder Futterwechsel, Hund sonst fit?** Wasser frei anbieten und über zwei bis drei Tage messen.
 4. **Wert normalisiert sich nicht?** Protokoll, Medikamentenliste und Futteretikett zur Untersuchung mitnehmen.
 
-## Information Gain: Durst und Urin gemeinsam betrachten
+<span id="information-gain-durst-und-urin-gemeinsam-betrachten" aria-hidden="true"></span>
+
+## Durst und Urin gemeinsam betrachten
 
 Durst ist diagnostisch aussagekräftiger, wenn gleichzeitig der Urinabsatz beschrieben wird. Häufigere Spaziergänge, nächtliches Melden, größere Pfützen oder neue Unsauberkeit sind deshalb keine Nebensache. Sie helfen zu unterscheiden, ob lediglich eine Wasserstelle attraktiver wurde oder sich der Flüssigkeitshaushalt tatsächlich verändert hat.
 

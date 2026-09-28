@@ -45,7 +45,7 @@ hub:
     - "wissen"
     - "gps-tracker"
   title: "GPS-Tracker für Hunde und Katzen"
-  description: "Cornerstone zu Technik, Tier-Fit, Kosten und aktuellen Modellen."
+  description: "Ratgeber zu Technik, Tier-Fit, Kosten und aktuellen Modellen."
   icon: "📍"
   order: 360
   featured: true

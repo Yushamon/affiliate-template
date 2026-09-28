@@ -27,7 +27,7 @@ attention:
 strengths: ["großer dokumentierter Innenraum", "niedriger Einstieg im Vergleich zu mehreren Open-Top-Systemen"]
 weaknesses: ["weniger konsistente öffentliche Dokumentation als bei etablierten Premium-Anbietern", "Modell- und Handelsvarianten müssen sorgfältig abgeglichen werden"]
 profile:
-  company: "Das Profil bildet die im Repository gepflegte Devoko-Produktrolle ab. In deutschen Handelsangaben wird für das aktuelle 90L-Modell Mainwin Furniture GmbH als Hersteller genannt; die konkrete Angebotsvariante bleibt vor Kauf zu prüfen."
+  company: "Das Profil stellt die automatische Katzentoilette von Devoko vor. In deutschen Handelsangaben wird für das aktuelle 90L-Modell Mainwin Furniture GmbH als Hersteller genannt; die konkrete Angebotsvariante bleibt vor Kauf zu prüfen."
   appEcosystem: "Die dokumentierte App unterstützt Einstellungen, Nutzungsdaten und Fernreinigung über 2,4-GHz-WLAN."
   replacementParts: "Beutel, Geruchsneutralisator und weitere Verbrauchsteile sind abhängig vom konkreten Angebot."
   filterSupply: "Nicht relevant; entscheidend sind kompatible klumpende Streu und die dokumentierte Geruchskontrolle."

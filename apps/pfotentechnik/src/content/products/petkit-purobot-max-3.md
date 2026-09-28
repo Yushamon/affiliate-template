@@ -117,7 +117,7 @@ externalEvidence:
       confidence: high
     editorialAssessment: Kriterienbewertung basiert vorläufig auf dokumentierten technischen Eigenschaften; wegen fehlender
       unabhängiger MAX-3-Tests konservativ.
-  note: 'Research-constrained: keine unabhängige MAX-3-Testquelle gefunden; die Händlerbewertungen sind nicht produktspezifisch.'
+  note: 'keine unabhängige MAX-3-Testquelle gefunden; die Händlerbewertungen sind nicht produktspezifisch.'
 decision:
   bestFor:
     - "Für Katzen von 1,5 bis 10 kg, wenn niedriger Einstieg und eine Kombination aus elektronischer und mechanischer Sicherheitsarchitektur wichtiger sind als eine Kamera."

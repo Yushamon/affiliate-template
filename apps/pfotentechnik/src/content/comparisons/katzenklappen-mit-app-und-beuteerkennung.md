@@ -214,7 +214,7 @@ evidenceSources:
       - "faq"
 ---
 
-Diese Route besitzt den eigenständigen Evaluations-Intent für vernetzte Systeme. Sie trennt App-Fernfunktionen,
+Dieser Vergleich vernetzter Systeme trennt App-Fernfunktionen,
 Beuteerkennung und Identitätszugang. [Flappie](/produkt/flappie/) arbeitet bei der Beuteentscheidung lokal, bietet aber
 derzeit keinen Mikrochip-Zugang und keine allgemein aktive individuelle Cat ID. ZeroMOUSE bleibt ausdrücklich eine
 Nachrüstung.

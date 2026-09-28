@@ -1,0 +1,106 @@
+{
+  "signals": {
+    "generated": 375,
+    "indexableCanonical": 260,
+    "sitemapUrls": 260,
+    "http200": {
+      "passed": 260,
+      "total": 260,
+      "evidence": "Reused 35.2 production HTTP measurements, not re-fetched in this targeted closure."
+    },
+    "localSelfCanonical": 260,
+    "localSitemapConsistency": 260,
+    "localRobots": 260,
+    "localInitialHtml": 260,
+    "schemaUrlConsistency": 260,
+    "directCanonicalLinks": 16901,
+    "internalVariantLinks": 0,
+    "lastmod": "LASTMOD_PARTIALLY_TRUSTWORTHY; entire sitemap byte-identical to 35.2"
+  },
+  "graph": {
+    "trueOrphans": 0,
+    "nearOrphans": 5,
+    "previousNearOrphansUnchanged": 4,
+    "newIntentionalSingleSourceAdvisor": 1,
+    "depthOver3": 0,
+    "unreachable": 0,
+    "advisor": {
+      "url": "https://pfotentechnik.de/futterautomat-berater/",
+      "pageType": "editorial-page",
+      "cluster": "futterautomaten",
+      "classification": "NEAR_ORPHAN",
+      "incomingLinks": 1,
+      "uniqueSourcePages": 1,
+      "contextualSourcePages": 1,
+      "navigationalLinks": 0,
+      "outgoingLinks": 39,
+      "uniqueOutgoingPages": 18,
+      "clickDepth": 2,
+      "logicalHubs": [
+        "/smarte-futterautomaten/"
+      ],
+      "linksFromLogicalHub": [
+        "/smarte-futterautomaten/"
+      ],
+      "missingLogicalHub": false,
+      "fromComparisons": 0,
+      "fromGuides": 0,
+      "fromProducts": 0,
+      "anchorDistribution": {
+        "Futterautomat-Berater": 1
+      },
+      "incomingSources": [
+        "https://pfotentechnik.de/smarte-futterautomaten/"
+      ]
+    },
+    "review": [
+      {
+        "url": "/produkt/petkit-fresh-element-infinity/",
+        "outcome": "PAGE_ROLE_JUSTIFIES_LOW_LINKING",
+        "reason": "Archived/discontinued; manufacturer-only archive discovery is sufficient, depth 3."
+      },
+      {
+        "url": "/produkt/petlibro-one-rfid-smart-feeder/",
+        "outcome": "NO_CHANGE",
+        "reason": "Available product, manufacturer source, depth 3. No demonstrated user-journey gap justifies changing curated comparisons/selection in this batch."
+      },
+      {
+        "url": "/produkt/wopet-pioneer-f01-plus/",
+        "outcome": "PAGE_ROLE_JUSTIFIES_LOW_LINKING",
+        "reason": "Archived/out-of-stock; manufacturer archive path at depth 3 is appropriate."
+      },
+      {
+        "url": "/seniorenhunde-richtig-versorgen/",
+        "outcome": "PAGE_ROLE_JUSTIFIES_LOW_LINKING",
+        "reason": "Supporting guide, linked from /wissen/ and reachable at depth 2; no missing essential journey established."
+      },
+      {
+        "url": "/futterautomat-berater/",
+        "outcome": "PAGE_ROLE_JUSTIFIES_LOW_LINKING",
+        "reason": "Newly reachable tool: one meaningful main-cluster-hub entry at depth 2 is the intentionally minimal fix."
+      }
+    ]
+  },
+  "schema": {
+    "productsChecked": 103,
+    "sameRootCauseProductsBefore": 1,
+    "additionalConfirmedLeaks": 0,
+    "remainingLifecycleLeaks": 0,
+    "potentialLeaksInCheckedInputs": 0,
+    "syntaxValid": 103,
+    "semanticInvalid": 0,
+    "warningProducts": 103,
+    "warningsNote": "102 previous WARNING products remain; repaired Neakasa joins this warning group because ordinary review text-selection differences remain. These are not 103 confirmed errors.",
+    "ratingsUnchanged": 103,
+    "aggregateRatings": 0,
+    "offers": 68,
+    "publisherFalselySeller": 0
+  },
+  "severity": {
+    "P0": 0,
+    "P1": 0,
+    "P2": 4,
+    "P3": 3,
+    "counting": "Finding groups, not URL totals. Confirmed schema leak closed; unconfirmed text-selection warnings are P3, not semantic errors."
+  }
+}

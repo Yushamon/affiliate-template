@@ -116,7 +116,7 @@ externalEvidence:
         - "Die Quelle warnt indirekt vor Variantengleichsetzung, da einzelne Funktionen nur in bestimmten Ausführungen vorhanden sind."
   note: >-
     Es existieren unabhängige redaktionelle Einordnungen, aber keine ausreichend belastbare produktspezifische
-    Nutzerbasis für die konkrete im Repository geführte Infinity-Variante. Deshalb kein Consensus.
+    Nutzerbasis für die hier beschriebene Infinity-Variante. Deshalb kein Consensus.
 decision:
   bestFor:
     - katze

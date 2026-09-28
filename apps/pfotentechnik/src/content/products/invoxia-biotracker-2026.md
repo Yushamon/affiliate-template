@@ -200,8 +200,8 @@ experience:
     Herstellerangaben werden getrennt von professionellen Tests und Nutzerbewertungen ausgewertet.
     Externe Sterne werden nicht direkt in den PfotenTechnik-Score übernommen.
   reliability: >-
-    Langzeit- und Zuverlässigkeitsaussagen werden nur so stark gewichtet, wie sie durch die unter
-    externalEvidence und evidenceSources dokumentierten Quellen gedeckt sind.
+    Langzeit- und Zuverlässigkeitsaussagen werden nur so stark gewichtet, wie sie durch die
+    angegebenen Quellen gedeckt sind.
 ---
 
 ## Gesundheitsdaten mit klarer Grenze

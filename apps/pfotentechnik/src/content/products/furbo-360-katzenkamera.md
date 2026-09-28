@@ -20,13 +20,13 @@ seo: { title: "Furbo 360° Katzenkamera: Abo & Funktionen", description: "Furbo 
 hub: { sections: ["produkte", "haustierkameras"] }
 tags: ["haustierkamera", "katze", "furbo", "leckerlies", "auto-tracking"]
 images:
-  hero: { src: "../../assets/images/products/furbo-360-katzenkamera/hero.webp", alt: "Temporärer Editorial-Platzhalter für die Furbo 360° Katzenkamera; noch kein Produktbild" }
+  hero: { src: "../../assets/images/products/furbo-360-katzenkamera/hero.webp", alt: "Furbo 360° Katzenkamera mit Feder-Spielzeug, Leckerliausgabe und App-Ansicht" }
   thumbnail: { src: "../../assets/images/products/furbo-360-katzenkamera/thumbnail.webp", alt: "Temporärer Platzhalter für die kompakte Ansicht der Furbo 360° Katzenkamera" }
-  comparison: { src: "../../assets/images/products/furbo-360-katzenkamera/comparison.webp", alt: "Temporärer Platzhalter für die Furbo 360° Katzenkamera im Vergleich" }
+  comparison: { src: "../../assets/images/products/furbo-360-katzenkamera/comparison.webp", alt: "Furbo 360° Katzenkamera mit Feder-Spielzeug und App-Ansicht" }
   gallery:
-    - { src: "../../assets/images/products/furbo-360-katzenkamera/gallery-1.webp", alt: "Geplanter Bildslot: Furbo 360° Katzenkamera mit klar erkennbarem Kamerakopf; aktuell Platzhalter" }
-    - { src: "../../assets/images/products/furbo-360-katzenkamera/gallery-2.webp", alt: "Geplanter Bildslot: Feder-Spielzeug und Katzeninteraktion der Furbo 360° Katzenkamera; aktuell Platzhalter" }
-    - { src: "../../assets/images/products/furbo-360-katzenkamera/gallery-3.webp", alt: "Geplanter Bildslot: Furbo 360° Katzenkamera in einer Nutzungssituation mit Katze; aktuell Platzhalter" }
+    - { src: "../../assets/images/products/furbo-360-katzenkamera/gallery-1.webp", alt: "Herstellerdarstellung der Furbo-App mit 360°-Ansicht, Farbnachtsicht und Digitalzoom" }
+    - { src: "../../assets/images/products/furbo-360-katzenkamera/gallery-2.webp", alt: "Herstellerdarstellung der Furbo-Katzenkamera mit automatischer Verfolgung einer Katze" }
+    - { src: "../../assets/images/products/furbo-360-katzenkamera/gallery-3.webp", alt: "Herstellerdarstellung von Miau-Alarm und Ferninteraktion mit einer Katze" }
 subscription:
   status: optional-subscription
   requiredForCoreFunction: false

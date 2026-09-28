@@ -90,7 +90,9 @@ Sortiere ungeeignete Modelle schrittweise aus:
 4. **Sind Filter und Ersatzpumpe mit Artikelnummer erhältlich?** Wenn unklar, Folgekosten und Ausfallrisiko berücksichtigen.
 5. **Braucht der Standort Akku?** Sensor- und Intervallbetrieb auf das Trinkverhalten abstimmen.
 
-## Information Gain: Trinkgeometrie statt Tieretikett
+<span id="information-gain-trinkgeometrie-statt-tieretikett" aria-hidden="true"></span>
+
+## Trinkgeometrie statt Tieretikett
 
 „Für Hunde“ ist keine standardisierte Größenangabe. Miss deshalb die breiteste Stelle der Schnauze und vergleiche sie mit der nutzbaren, nicht nur äußeren Schalenbreite. Beobachte außerdem, ob der Hund seitlich, tief oder direkt aus dem Strahl trinkt. Diese zwei Angaben sagen im Alltag mehr aus als ein pauschales Hunde-Symbol auf der Verpackung.
 

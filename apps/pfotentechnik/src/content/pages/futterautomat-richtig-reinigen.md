@@ -764,7 +764,9 @@ Zwischen Segmenten und am Krümelfänger reinigen.
 
 Beim Zusammenbau auf Ausrichtungsmarkierungen achten.
 
-## Information Gain: Mit einer weißen Kontrollkarte Fettfilm erkennen
+<span id="information-gain-mit-einer-weißen-kontrollkarte-fettfilm-erkennen" aria-hidden="true"></span>
+
+## Mit einer weißen Kontrollkarte Fettfilm erkennen
 
 Ein sehr dünner Fettfilm ist in einem transparenten Behälter schwer zu sehen.
 
@@ -782,7 +784,9 @@ Sie macht aber sichtbar, ob eine vermeintlich saubere Fläche noch Belag trägt.
 
 Verwende das Tuch anschließend nicht weiter im Gerät.
 
-## Information Gain: Der Geruchstest braucht eine Pause
+<span id="information-gain-der-geruchstest-braucht-eine-pause" aria-hidden="true"></span>
+
+## Der Geruchstest braucht eine Pause
 
 Direkt nach dem Spülen riecht ein Teil oft nach Wasser oder Spülmittel.
 
@@ -796,7 +800,9 @@ Ein neutraler Geruch ist ein besseres Freigabekriterium als ein starker Reinigun
 
 Bleibt ein ranziger oder modriger Geruch bestehen, suche nach versteckten Rillen, porösen Teilen oder beschädigten Dichtungen.
 
-## Information Gain: Die Testportion ist eine Diagnose
+<span id="information-gain-die-testportion-ist-eine-diagnose" aria-hidden="true"></span>
+
+## Die Testportion ist eine Diagnose
 
 Die Testportion prüft mehr als die Programmierung.
 
@@ -1190,7 +1196,9 @@ Eine einzelne Portion ist kein verlässlicher Test.
 
 Mehrere Messungen zeigen, ob die Ausgabe stabil ist.
 
-## Information Gain: Reinigungsprotokoll für problematische Geräte
+<span id="information-gain-reinigungsprotokoll-für-problematische-geräte" aria-hidden="true"></span>
+
+## Reinigungsprotokoll für problematische Geräte
 
 Bei wiederkehrenden Störungen hilft ein kurzes Protokoll.
 

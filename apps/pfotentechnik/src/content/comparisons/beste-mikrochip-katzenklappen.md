@@ -164,7 +164,7 @@ evidenceSources:
   - { source: "Herstellerquellen der sechs Produktseiten", url: "https://www.surepetcare.com/de-de/haustierklappen", accessedAt: "2026-08-04", assertion: "Vergleich basiert ausschließlich auf den feldbezogenen Quellen der eingebundenen Produktseiten.", fields: ["items", "criteria", "recommendation"] }
 ---
 
-Dieser Vergleich besitzt den modellübergreifenden Evaluations-Intent. Er ersetzt keine Produktprüfung und macht aus unterschiedlichen Produktrollen keine scheinbar identische Rangliste.
+Dieser Vergleich stellt unterschiedliche Modelle gegenüber. Er ersetzt keine Produktprüfung und macht aus unterschiedlichen Produktrollen keine scheinbar identische Rangliste.
 
 ## So liest du die Auswahl
 
@@ -176,7 +176,7 @@ Klare lokale Zugangsregeln sind meist robuster als unnötige Vernetzung. Bei meh
 |---|---|---|
 | SureFlap Microchip, DualScan und Connect | gängige Identifikationschips; Kompatibilität vor Kauf prüfen | kompatibler SureFlap-RFID-Halsbandanhänger |
 | PetSafe Mikrochip-Katzenklappe | 15-stelliger FDX-B-Chip; Hersteller-Kompatibilitätsprüfung empfohlen | PetSafe-Schlüssel/Anhänger laut Produktdaten |
-| PetSafe Petporte smart flap | mehrere Nummernformate ausdrücklich ausgeschlossen | kein Fallback in der vorhandenen Evidence belegt |
+| PetSafe Petporte smart flap | mehrere Nummernformate ausdrücklich ausgeschlossen | kein Fallback in den vorliegenden Quellen belegt |
 | Cat Mate Elite 355W | 15-stelliger ISO-Mikrochip | Cat-Mate-ID-Anhänger |
 | OnlyCat / petWALK | Mikrochip-Zugang belegt | Fallback bei inkompatiblem Implantat nicht belastbar dokumentiert |
 
@@ -195,9 +195,9 @@ Mehrere gespeicherte Chips bedeuten zunächst Shared Use plus Identifikation. Er
 | Modell | Gespeicherte Tiere | Was individuell ist | Batteriewechsel / Ersatzteil |
 |---|---:|---|---|
 | SureFlap Microchip | bis 32 | selektiver Eintritt; keine individuellen Ausgangszeiten | gelernte Chip-/Tag-Nummern bleiben gespeichert; Motor, Klappe, Frontframe, Drehverschluss und Catch Pad besitzen offizielle Austauschhilfen |
-| SureFlap DualScan | bis 32 | Ein- und Ausgangsrecht pro Tier; Sicherheitsmodus für eine unbeabsichtigt entlaufene Wohnungskatze | Chip-/Tag-Speicher bleibt laut Familien-Support erhalten; Erhalt jeder Detailregel nach langem stromlosen Zustand bleibt `unknown` |
+| SureFlap DualScan | bis 32 | Ein- und Ausgangsrecht pro Tier; Sicherheitsmodus für eine unbeabsichtigt entlaufene Wohnungskatze | Chip-/Tag-Speicher bleibt laut Familien-Support erhalten; Erhalt jeder Detailregel nach langem stromlosen Zustand bleibt ungeklärt |
 | Cat Mate Elite 355W | 9, nur 3 im Display | selektiver Eintritt; Timer gilt gemeinsam | Tier-IDs bleiben beim Batteriewechsel erhalten; Ersatzklappe Part 931 offiziell verfügbar |
 
-Eine Kapazität von 32 IDs ist damit keine Zusage für 32 Zeitpläne. Ebenso beantwortet ein Low-Battery-Licht nicht automatisch den Zustand bei vollständig leerer Batterie; ohne modellbezogene Dokumentation bleibt die finale Verriegelungsstellung `unknown`.
+Eine Kapazität von 32 IDs ist damit keine Zusage für 32 Zeitpläne. Ebenso beantwortet ein Low-Battery-Licht nicht automatisch den Zustand bei vollständig leerer Batterie; ohne modellbezogene Dokumentation bleibt die finale Verriegelungsstellung ungeklärt.
 
 Die breitere Orientierung bleibt beim [Katzenklappen-Hub](/katzenklappen/). Einbaufragen gehören in den [Einbauratgeber](/katzenklappe-einbauen/).

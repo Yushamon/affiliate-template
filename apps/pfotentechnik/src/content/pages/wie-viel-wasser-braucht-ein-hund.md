@@ -106,7 +106,9 @@ Gehe bei einer auffälligen Abweichung in dieser Reihenfolge vor:
 3. **Gab es Hitze, mehr Bewegung oder einen Futterwechsel?** Diese Faktoren in der Bilanz berücksichtigen.
 4. **Liegt der Wert dauerhaft deutlich außerhalb des persönlichen Musters?** Protokoll zur Tierarztpraxis mitnehmen.
 
-## Information Gain: Napfmenge ist nicht Wasseraufnahme
+<span id="information-gain-napfmenge-ist-nicht-wasseraufnahme" aria-hidden="true"></span>
+
+## Napfmenge ist nicht Wasseraufnahme
 
 Aus einem offenen Napf verschwundenes Wasser wurde nicht vollständig getrunken. Verdunstung, Verschütten und andere Tiere verfälschen das Ergebnis. Umgekehrt bleibt Wasser aus Nassfutter unsichtbar. Der belastbarere Wert ist deshalb eine **mehrtägige Gesamtbilanz** aus bereitgestelltem Wasser, Restmenge, Futterfeuchte und Verlusten.
 

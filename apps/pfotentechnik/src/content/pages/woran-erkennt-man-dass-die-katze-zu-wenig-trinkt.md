@@ -643,7 +643,9 @@ Ziehe ihn vom Verlust des Trinknapfs ab.
 
 Das ist keine klinische Messung, verbessert aber die Alltagsschätzung.
 
-## Information Gain: Gesamtwasser aus Futter und Napf grob berechnen
+<span id="information-gain-gesamtwasser-aus-futter-und-napf-grob-berechnen" aria-hidden="true"></span>
+
+## Gesamtwasser aus Futter und Napf grob berechnen
 
 Die Gesamtaufnahme lässt sich näherungsweise aus Futterfeuchte und Trinkwasser schätzen.
 
@@ -669,7 +671,9 @@ Die Rechnung soll Veränderungen sichtbar machen.
 
 Sie ersetzt keine Diagnose.
 
-## Information Gain: Eine persönliche Basislinie aufbauen
+<span id="information-gain-eine-persönliche-basislinie-aufbauen" aria-hidden="true"></span>
+
+## Eine persönliche Basislinie aufbauen
 
 Für gesunde Katzen ist eine persönliche Basislinie oft hilfreicher als ein allgemeiner Richtwert.
 
@@ -688,7 +692,9 @@ Spätere Abweichungen lassen sich dann besser einordnen.
 
 Eine Basislinie darf aber nicht dazu führen, deutliche Krankheitssymptome abzuwarten.
 
-## Information Gain: Trinkverhalten per Kamera prüfen
+<span id="information-gain-trinkverhalten-per-kamera-prüfen" aria-hidden="true"></span>
+
+## Trinkverhalten per Kamera prüfen
 
 Eine Kamera kann zeigen, welche Katze welche Wasserstelle nutzt.
 
@@ -1074,7 +1080,9 @@ Auch psychogene Ursachen sind möglich, aber deutlich seltener und erst nach Aus
 | kleine Urinklumpen ignorieren | kann ernstes Problem sein | Pressen und Urinabsatz prüfen |
 | Futterverweigerung abwarten | Katzen können rasch abbauen | frühzeitig abklären |
 
-## Information Gain: Beobachtungsprotokoll
+<span id="information-gain-beobachtungsprotokoll" aria-hidden="true"></span>
+
+## Beobachtungsprotokoll
 
 | Datum | Futter | Trinkwasser | Urinklumpen | Gewicht | Auffälligkeiten |
 |---|---|---:|---:|---:|---|
@@ -1090,7 +1098,9 @@ Ein reales Protokoll sollte nicht dazu dienen, eine kranke Katze tagelang zu beo
 
 Bei Warnzeichen wird früher gehandelt.
 
-## Information Gain: Was Fotos und Videos dokumentieren können
+<span id="information-gain-was-fotos-und-videos-dokumentieren-können" aria-hidden="true"></span>
+
+## Was Fotos und Videos dokumentieren können
 
 Fotos und kurze Videos helfen der Tierarztpraxis.
 

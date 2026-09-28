@@ -168,7 +168,7 @@ externalEvidence:
       - finding: "Cloud- beziehungsweise Aboabhängigkeiten und die Empfindlichkeit gegenüber ungeeigneten Kroketten bleiben praktische Grenzen."
         sourceCount: 1
         confidence: "medium"
-    editorialAssessment: "Die Evidenzlage hat sich seit dem letzten Audit klar verbessert: Zwei aktuelle externe Beiträge beziehen sich ausdrücklich auf die Granary-2-Vision-Generation beziehungsweise Modell AF205. Die Nutzerbasis ist noch sehr jung; die Herstellerseite zeigt Beta-Tester-Feedback und ist deshalb deutlich schwächer zu gewichten als eine unabhängige Händlerplattform."
+    editorialAssessment: "Zwei aktuelle externe Beiträge beziehen sich ausdrücklich auf die Granary-2-Vision-Generation beziehungsweise Modell AF205. Die Nutzerbasis ist noch sehr jung; die Herstellerseite zeigt Beta-Tester-Feedback und ist deshalb deutlich schwächer zu gewichten als eine unabhängige Händlerplattform."
   note: "Ältere Granary Smart Camera Feeder wurden nicht übertragen. Die professionelle Evidenz bezieht sich auf die aktuelle Granary 2 Vision / AF205. Das Nutzerfeedback auf der Herstellerseite ist früh und herstellergehostet, daher nur als schwaches ergänzendes Signal aufgenommen."
 decision:
   bestFor:

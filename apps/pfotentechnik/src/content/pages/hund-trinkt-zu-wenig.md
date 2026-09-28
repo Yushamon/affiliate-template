@@ -179,7 +179,9 @@ Bei Trockenfutter sieht die Bilanz anders aus. 300 Gramm Trockenfutter mit 10 Pr
 
 Mehr zur Einordnung findest du im Ratgeber [Trockenfutter oder Nassfutter für Hunde?](/trockenfutter-oder-nassfutter-hund/).
 
-## Information Gain: Wasser aus dem Futter berechnen
+<span id="information-gain-wasser-aus-dem-futter-berechnen" aria-hidden="true"></span>
+
+## Wasser aus dem Futter berechnen
 
 ![Rechenbeispiel für die Wassermenge in Nass- und Trockenfutter](../../assets/images/guides/hund-trinkt-zu-wenig/food-water-calculation.webp)
 
@@ -277,7 +279,9 @@ Der Test ist unzuverlässiger bei alten, sehr dünnen oder übergewichtigen Hund
 
 Dabei wird kurz auf das Zahnfleisch gedrückt, bis es heller wird. Die Farbe sollte rasch zurückkehren. Der Test beurteilt eher die Durchblutung als die reine Gewebedehydration. Bei auffällig langsamer Rückfüllung, blassem Zahnfleisch oder Schwäche ist tierärztliche Hilfe nötig.
 
-## Information Gain: Dehydration und Hypovolämie unterscheiden
+<span id="information-gain-dehydration-und-hypovolämie-unterscheiden" aria-hidden="true"></span>
+
+## Dehydration und Hypovolämie unterscheiden
 
 **Dehydration** betrifft vor allem einen Flüssigkeitsmangel im Gewebe.
 
@@ -297,7 +301,9 @@ Warnzeichen für eine mögliche Kreislaufstörung sind:
 
 Diese Zeichen gehören nicht zu einer häuslichen Trinkstrategie, sondern in den tierärztlichen Notdienst.
 
-## Information Gain: Wasserbilanz statt Napfgefühl
+<span id="information-gain-wasserbilanz-statt-napfgefühl" aria-hidden="true"></span>
+
+## Wasserbilanz statt Napfgefühl
 
 ![Wasserbilanz aus Aufnahme und Verlusten](../../assets/images/guides/hund-trinkt-zu-wenig/hydration-balance.webp)
 
@@ -505,7 +511,9 @@ Entwässernde Medikamente erhöhen häufig den Urinabsatz. Andere Medikamente k�
 
 Eine geringe Wasseraufnahme ist bei einem gesunden erwachsenen Hund ohne weitere Auffälligkeiten anders einzuordnen als bei einem Welpen mit Durchfall oder einem Senior mit Nierenerkrankung.
 
-## Information Gain: Typische Fehleinschätzungen
+<span id="information-gain-typische-fehleinschätzungen" aria-hidden="true"></span>
+
+## Typische Fehleinschätzungen
 
 ### „Mein Hund war heute nicht am Napf, also ist er dehydriert“
 

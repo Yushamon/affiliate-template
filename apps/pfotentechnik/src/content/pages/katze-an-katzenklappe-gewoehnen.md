@@ -16,7 +16,7 @@ evidenceSources:
   - { source: "PfotenTechnik redaktionelle Trainingslogik", url: "https://www.surepetcare.com/de-de/haustierklappen", accessedAt: "2026-08-04", assertion: "Das Training trennt Passage, bewegliche Klappe und elektronische Verriegelung; keine Zeitgarantie.", fields: ["body"] }
 ---
 
-Gewöhnung ist ein eigener Support-Intent. Das Ziel ist nicht, die Katze durch die Klappe zu drücken, sondern jede neue Reizstufe kontrollierbar und freiwillig zu machen.
+Das Ziel ist nicht, die Katze durch die Klappe zu drücken, sondern jede neue Reizstufe kontrollierbar und freiwillig zu machen.
 
 ## Vier Trainingsstufen
 

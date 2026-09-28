@@ -258,7 +258,9 @@ Beruhigungsmittel, Schmerzmittel, Antihistaminika und andere Präparate können 
 
 Verordnete Medikamente nicht eigenmächtig absetzen. Bei extremer Sedierung, Atemproblemen, Erbrechen, Kollaps oder ungewöhnlicher Reaktion sollte die Praxis sofort kontaktiert werden.
 
-## Information Gain: Reaktionstest statt „Er schläft viel“
+<span id="information-gain-reaktionstest-statt-er-schläft-viel" aria-hidden="true"></span>
+
+## Reaktionstest statt „Er schläft viel“
 
 Ein kurzer Reaktionstest ersetzt keine Untersuchung, verbessert aber die Beschreibung.
 
