@@ -574,5 +574,23 @@
     "before": "row.split(\"|\").map(text).filter(Boolean)",
     "after": "row.split(\"|\").map(stripMarkdown).filter(Boolean)",
     "count": 1
+  },
+  {
+    "source": "apps/pfotentechnik/src/content/products/petkit-purobot-max-3.md",
+    "before": "note: 'keine unabhängige MAX-3",
+    "after": "note: 'Keine unabhängige MAX-3",
+    "count": 1
+  },
+  {
+    "source": "apps/pfotentechnik/src/content/products/zeromouse-2-0.md",
+    "before": "note: 'kein unabhängiger Fachtest",
+    "after": "note: 'Kein unabhängiger Fachtest",
+    "count": 1
+  },
+  {
+    "source": "apps/pfotentechnik/src/content/comparisons/beste-haustierkameras.md",
+    "before": "nicht vollständig belegt und bleiben deshalb nicht belegt.",
+    "after": "nicht vollständig belegt.",
+    "count": 1
   }
 ]

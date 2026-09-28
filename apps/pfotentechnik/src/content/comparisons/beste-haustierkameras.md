@@ -379,7 +379,7 @@ Für Reolink nennt der Hersteller mit 512 GB bei der dokumentierten Standardbitr
 
 ## Mehrere Kameras und Räume: vier Angaben getrennt prüfen
 
-Eine zweite Kamera ist nur dann als gemeinsames System belegt, wenn der Hersteller **Gerätezahl**, **gemeinsame App-Verwaltung**, **Multi-Camera-Ansicht** und **Tariflogik pro Kamera oder Konto** ausdrücklich dokumentiert. Diese vier Punkte sind in der aktuell vorhandenen Quellenlage für Furbo, PETLIBRO Scout, PetTec, Reolink und Enabot nicht vollständig belegt und bleiben deshalb nicht belegt.
+Eine zweite Kamera ist nur dann als gemeinsames System belegt, wenn der Hersteller **Gerätezahl**, **gemeinsame App-Verwaltung**, **Multi-Camera-Ansicht** und **Tariflogik pro Kamera oder Konto** ausdrücklich dokumentiert. Diese vier Punkte sind in der aktuell vorhandenen Quellenlage für Furbo, PETLIBRO Scout, PetTec, Reolink und Enabot nicht vollständig belegt.
 
 | Frage | Was vor dem Kauf belegt sein muss |
 |---|---|
