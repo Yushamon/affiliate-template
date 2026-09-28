@@ -28,3 +28,4 @@ Die Migration ändert keine Fließtexte pauschal. Die neue Engine bereinigt nur 
 
 ## Verbleibende manuelle Entscheidungen
 
+- /ifa-2026-haustiertechnik/ besitzt keine Linking-Metadaten.

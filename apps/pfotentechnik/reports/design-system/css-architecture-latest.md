@@ -1,16 +1,16 @@
 # CSS Architecture Audit
 
-Erzeugt: 2026-09-28T11:31:39.186Z
+Erzeugt: 2026-09-28T11:58:21.592Z
 
 ## Zusammenfassung
 
 - CSS-Dateien: 42
 - Astro-Dateien mit Style-Block: 48
-- Quell-CSS: 690398 Bytes
-- Regeln: 7333
+- Quell-CSS: 690613 Bytes
+- Regeln: 7334
 - !important-Deklarationen: 1168
 - mehrfach definierte Selektoren: 1430
-- identische Deklarationsblöcke: 919
+- identische Deklarationsblöcke: 920
 - Importkanten: 71
 - kaputte CSS-Imports: 0
 - nicht statisch importierte CSS-Dateien: 0
@@ -26,7 +26,7 @@ Erzeugt: 2026-09-28T11:31:39.186Z
 | product-experience | 18 | 115465 | 989 | 14 |
 | component-owner-unresolved | 22 | 116544 | 989 | 10 |
 | comparison-platform | 3 | 56895 | 527 | 9 |
-| admin-seo-copilot | 6 | 35222 | 446 | 5 |
+| admin-seo-copilot | 6 | 35437 | 447 | 5 |
 | navigation | 1 | 10141 | 61 | 0 |
 
 ## Größte Problemdateien
@@ -45,7 +45,7 @@ Erzeugt: 2026-09-28T11:31:39.186Z
 | `apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css` | global | design-system | 13890 | 136 | 5 | 1 |
 | `apps/pfotentechnik/src/styles/pfotentechnik.css` | global | design-system | 15114 | 162 | 2 | 1 |
 | `apps/pfotentechnik/src/components/advisor/PetAdvisor.astro` | component-inline | component-owner-unresolved | 9016 | 84 | 2 | 0 |
-| `apps/pfotentechnik/src/pages/admin/seo/prices.astro` | admin | admin-seo-copilot | 8473 | 98 | 2 | 0 |
+| `apps/pfotentechnik/src/pages/admin/seo/prices.astro` | admin | admin-seo-copilot | 8688 | 99 | 2 | 0 |
 | `apps/pfotentechnik/src/components/admin/SearchIntegrations.astro` | admin | admin-seo-copilot | 3222 | 39 | 2 | 0 |
 | `apps/pfotentechnik/src/pages/admin/seo/media.astro` | admin | admin-seo-copilot | 7477 | 86 | 1 | 0 |
 | `packages/affiliate-core/src/styles/premium-page.css` | global | design-system | 34192 | 305 | 0 | 2 |

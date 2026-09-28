@@ -1,18 +1,19 @@
 # Audit interne Verlinkung 3.0
 
-Erstellt: 2026-09-09T06:23:31.003Z
+Erstellt: 2026-09-28T11:59:14.365Z
 
 ## Ergebnis
 
-- Dokumente: 246
-- Linkdefinitionen: 518
-- Simulierte automatische Links: 572
+- Dokumente: 248
+- Linkdefinitionen: 519
+- Simulierte automatische Links: 577
 - Fehler: 0
-- Warnungen: 7
+- Warnungen: 8
 - Strict-kritisch: 0
 
 ## Befunde
 
+- **WARNING LINKING_METADATA_MISSING:** /ifa-2026-haustiertechnik/ besitzt keine Linking-Metadaten.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /hund-trinkt-ploetzlich-viel/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
 - **WARNING NO_INCOMING_INTERNAL_LINK:** /katze-an-trinkbrunnen-gewoehnen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.
@@ -113,29 +114,32 @@ Erstellt: 2026-09-09T06:23:31.003Z
 - /hund-trinkt-zu-wenig/ → /katzenwasser-taeglich-wechseln/: „Wasserwechsel“
 - /hund-trinkt-zu-wenig/ → /biofilm-im-katzentrinkbrunnen/: „Biofilm“
 - /hund-trinkt-zu-wenig/ → /woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/: „Flüssigkeitsmangel“
+- /ifa-2026-haustiertechnik/ → /trinkbrunnen/: „Trinkbrunnen“
+- /ifa-2026-haustiertechnik/ → /hersteller/neakasa/: „Neakasa“
+- /ifa-2026-haustiertechnik/ → /hersteller/whisker/: „Whisker“
 - /kalk-katzentrinkbrunnen-entfernen/ → /hersteller/petlibro/: „PETLIBRO“
 - /katze-an-trinkbrunnen-gewoehnen/ → /wie-viele-wasserstellen-katze/: „Wasserstellen“
 - /katze-frisst-nicht/ → /smarte-futterautomaten/: „Futterautomaten“
 - /katze-frisst-nicht/ → /nierenkranke-katze-trinken/: „chronische Nierenerkrankung“
 - /katze-frisst-nicht/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrkatzenhaushalt“
 - /katze-trinkt-viel/ → /trinkbrunnen/: „Trinkbrunnen“
-- /katze-trinkt-viel/ → /wie-viel-wasser-braucht-eine-katze/: „Katze trinkt viel“
 - /katze-trinkt-viel/ → /nierenkranke-katze-trinken/: „chronische Nierenerkrankung“
 - /katze-trinkt-viel/ → /trinkmenge-katze-messen/: „Trinkmenge messen“
 - /katze-trinkt-viel/ → /pumpe-katzentrinkbrunnen-reinigen/: „Pumpe reinigen“
 - /katze-trinkt-viel/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrkatzenhaushalt“
 - /katze-trinkt-viel/ → /filter-im-katzentrinkbrunnen-wechseln/: „Filterwechsel“
+- /katze-trinkt-viel/ → /wie-viele-wasserstellen-katze/: „Wasserstellen“
 - /katzenklappe-einbauen/ → /produkt/petsafe-petporte-smart-flap/: „PetSafe Petporte smart flap“
 - /katzenklappe-einbauen/ → /hersteller/onlycat/: „OnlyCat“
 - /katzenklappe-fuer-mehrere-katzen/ → /katzenklappen/: „Katzenklappen“
 - /katzenklappe-zugluft-und-waermedaemmung/ → /hersteller/petwalk/: „petWALK“
 - /katzenklappen/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
 - /katzenklappen/ → /hersteller/cat-mate/: „Cat Mate“
-- /katzenklappen/ → /hersteller/onlycat/: „OnlyCat“
 - /katzenklappen/ → /hersteller/petsafe/: „PetSafe“
+- /katzenklappen/ → /hersteller/onlycat/: „OnlyCat“
 - /katzenklappen/ → /hersteller/petwalk/: „petWALK“
-- /katzenklappen/ → /hersteller/zeromouse/: „ZeroMOUSE“
 - /katzenklappen/ → /wie-laut-sind-automatische-futterautomaten/: „Geräuschentwicklung“
+- /katzenklappen/ → /hersteller/zeromouse/: „ZeroMOUSE“
 - /katzentrinkbrunnen-dauerbetrieb-urlaub/ → /trinkbrunnen/: „Trinkbrunnen“
 - /katzentrinkbrunnen-dauerbetrieb-urlaub/ → /pumpe-katzentrinkbrunnen-reinigen/: „Pumpe reinigen“
 - /katzentrinkbrunnen-dauerbetrieb-urlaub/ → /hersteller/petkit/: „PETKIT“
@@ -164,8 +168,8 @@ Erstellt: 2026-09-09T06:23:31.003Z
 - /smarte-futterautomaten/ → /wie-viele-mahlzeiten-katze/: „kleine Mahlzeiten“
 - /smarte-futterautomaten/ → /hersteller/catit/: „Catit“
 - /smarte-futterautomaten/ → /hersteller/petsafe/: „PetSafe“
+- /smarte-futterautomaten/ → /hersteller/neakasa/: „Neakasa“
 - /smarte-futterautomaten/ → /hersteller/pawsync/: „PawSync“
-- /smarte-futterautomaten/ → /hersteller/aqara/: „Aqara“
 - /smarte-gadgets-fuer-hunde-und-katzen/ → /trinkbrunnen/: „Trinkbrunnen“
 - /smarte-gadgets-fuer-hunde-und-katzen/ → /smarte-futterautomaten/: „Automatische Futterspender“
 - /smarte-haustiertechnik/ → /trinkbrunnen-fuer-katzen-sinnvoll/: „Trinkbrunnen für Katzen“
@@ -324,6 +328,8 @@ Erstellt: 2026-09-09T06:23:31.003Z
 - /produkt/neakasa-m1-lite/ → /trinkbrunnen-fuer-mehrere-katzen/: „mehrere Katzen“
 - /produkt/neakasa-m1-lite/ → /hersteller/neakasa/: „Neakasa“
 - /produkt/neakasa-m1-lite/ → /wie-laut-sind-automatische-futterautomaten/: „Betriebsgeräusch“
+- /produkt/neakasa-riko/ → /wie-viele-mahlzeiten-hund/: „Mahlzeiten pro Tag“
+- /produkt/neakasa-riko/ → /trinkbrunnen-fuer-mehrere-katzen/: „Mehrere Katzen“
 - /produkt/oneisall-2-2l-cordless-fountain/ → /katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/: „Edelstahlbrunnen“
 - /produkt/oneisall-2-2l-cordless-fountain/ → /hersteller/oneisall/: „oneisall“
 - /produkt/oneisall-2-in-1-feeder-water/ → /smarte-futterautomaten/: „Futterautomat“

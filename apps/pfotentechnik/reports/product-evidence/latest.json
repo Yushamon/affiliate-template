@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-03T08:16:32.851Z",
+  "generatedAt": "2026-09-28T11:59:16.037Z",
   "summary": {
-    "products": 101,
-    "covered": 100,
+    "products": 103,
+    "covered": 101,
     "complete": 72,
-    "partial": 28,
-    "missing": 1
+    "partial": 29,
+    "missing": 2
   },
   "rows": [
     {
@@ -169,6 +169,18 @@
       ]
     },
     {
+      "slug": "flappie",
+      "file": "src/content/products/flappie.md",
+      "status": "partial",
+      "hasExternal": true,
+      "professional": 0,
+      "userSources": 1,
+      "consensus": 2,
+      "missingParts": [
+        "professionalReviews"
+      ]
+    },
+    {
       "slug": "furbo-360-hundekamera",
       "file": "src/content/products/furbo-360-hundekamera.md",
       "status": "complete",
@@ -327,6 +339,20 @@
       "userSources": 2,
       "consensus": 2,
       "missingParts": []
+    },
+    {
+      "slug": "neakasa-riko",
+      "file": "src/content/products/neakasa-riko.md",
+      "status": "missing",
+      "hasExternal": false,
+      "professional": 0,
+      "userSources": 0,
+      "consensus": 0,
+      "missingParts": [
+        "professionalReviews",
+        "userReviews",
+        "consensus"
+      ]
     },
     {
       "slug": "oneisall-2-2l-cordless-fountain",

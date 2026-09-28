@@ -1,14 +1,14 @@
 # Internal-Link Health Audit 4.0.1
 
-Erstellt: 2026-09-03T08:12:24.156Z
+Erstellt: 2026-09-28T11:59:14.658Z
 
 ## Zusammenfassung
 
-- Dokumente: 244
+- Dokumente: 248
 - Legacy-Fehler: 0
 - Build-verifizierte Laufzeitfehler: 0
 - Effektive Strict-Fehler: 0
-- Effektive Warnungen: 7
+- Effektive Warnungen: 8
 - Erkannte False Positives: 0
 
 ## Bewertungslogik
@@ -36,6 +36,7 @@ Keine Befunde.
 
 ## Weitere Prüfhinweise
 
+- **WARNING · LINKING_METADATA_MISSING · advisory:** /ifa-2026-haustiertechnik/ besitzt keine Linking-Metadaten. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /hund-trinkt-ploetzlich-viel/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.
 - **WARNING · NO_INCOMING_INTERNAL_LINK · advisory:** /katze-an-trinkbrunnen-gewoehnen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link. — Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML.

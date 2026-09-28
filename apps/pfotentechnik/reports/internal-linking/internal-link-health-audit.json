@@ -1,29 +1,40 @@
 {
   "version": "4.0.1",
-  "generatedAt": "2026-09-03T08:12:24.156Z",
+  "generatedAt": "2026-09-28T11:59:14.658Z",
   "strict": true,
   "inputs": {
     "legacyVersion": "3.0.3",
     "targetAuditVersion": "2.0.2",
-    "builtRoutes": 368
+    "builtRoutes": 375
   },
   "summary": {
-    "documents": 244,
+    "documents": 248,
     "legacyErrors": 0,
-    "legacyWarnings": 7,
+    "legacyWarnings": 8,
     "runtimeErrors": 0,
     "effectiveErrors": 0,
-    "effectiveWarnings": 7,
+    "effectiveWarnings": 8,
     "falsePositives": 0
   },
   "classifications": {
-    "advisory": 18
+    "advisory": 19
   },
   "effectiveSeverities": {
     "info": 11,
-    "warning": 7
+    "warning": 8
   },
   "findings": [
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/ifa-2026-haustiertechnik/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/ifa-2026-haustiertechnik/",
+      "file": "apps/pfotentechnik/src/content/pages/ifa-2026-haustiertechnik.md",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
     {
       "severity": "warning",
       "code": "NO_INCOMING_INTERNAL_LINK",

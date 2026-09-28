@@ -1,16 +1,16 @@
 {
   "version": "3.0.3",
-  "generatedAt": "2026-09-09T06:23:31.003Z",
-  "strict": true,
+  "generatedAt": "2026-09-28T11:59:14.365Z",
+  "strict": false,
   "summary": {
-    "documents": 246,
-    "contentRoutes": 246,
-    "buildRoutes": 372,
-    "validRoutes": 372,
-    "definitions": 518,
-    "renderedAutomaticLinks": 572,
+    "documents": 248,
+    "contentRoutes": 248,
+    "buildRoutes": 375,
+    "validRoutes": 375,
+    "definitions": 519,
+    "renderedAutomaticLinks": 577,
     "errors": 0,
-    "warnings": 7,
+    "warnings": 8,
     "critical": 0
   },
   "blockedAnchors": [
@@ -37,6 +37,13 @@
     "wasser"
   ],
   "findings": [
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/ifa-2026-haustiertechnik/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/ifa-2026-haustiertechnik/",
+      "file": "apps/pfotentechnik/src/content/pages/ifa-2026-haustiertechnik.md"
+    },
     {
       "severity": "warning",
       "code": "NO_INCOMING_INTERNAL_LINK",
@@ -688,6 +695,24 @@
       "score": 1618
     },
     {
+      "sourceRoute": "/ifa-2026-haustiertechnik/",
+      "targetRoute": "/trinkbrunnen/",
+      "anchor": "Trinkbrunnen",
+      "score": 6312
+    },
+    {
+      "sourceRoute": "/ifa-2026-haustiertechnik/",
+      "targetRoute": "/hersteller/neakasa/",
+      "anchor": "Neakasa",
+      "score": 1307
+    },
+    {
+      "sourceRoute": "/ifa-2026-haustiertechnik/",
+      "targetRoute": "/hersteller/whisker/",
+      "anchor": "Whisker",
+      "score": 1307
+    },
+    {
       "sourceRoute": "/kalk-katzentrinkbrunnen-entfernen/",
       "targetRoute": "/hersteller/petlibro/",
       "anchor": "PETLIBRO",
@@ -725,12 +750,6 @@
     },
     {
       "sourceRoute": "/katze-trinkt-viel/",
-      "targetRoute": "/wie-viel-wasser-braucht-eine-katze/",
-      "anchor": "Katze trinkt viel",
-      "score": 3517
-    },
-    {
-      "sourceRoute": "/katze-trinkt-viel/",
       "targetRoute": "/nierenkranke-katze-trinken/",
       "anchor": "chronische Nierenerkrankung",
       "score": 2627
@@ -757,6 +776,12 @@
       "sourceRoute": "/katze-trinkt-viel/",
       "targetRoute": "/filter-im-katzentrinkbrunnen-wechseln/",
       "anchor": "Filterwechsel",
+      "score": 1513
+    },
+    {
+      "sourceRoute": "/katze-trinkt-viel/",
+      "targetRoute": "/wie-viele-wasserstellen-katze/",
+      "anchor": "Wasserstellen",
       "score": 1513
     },
     {
@@ -787,24 +812,24 @@
       "sourceRoute": "/katzenklappen/",
       "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
       "anchor": "mehrere Katzen",
-      "score": 2714
+      "score": 2914
     },
     {
       "sourceRoute": "/katzenklappen/",
       "targetRoute": "/hersteller/cat-mate/",
       "anchor": "Cat Mate",
-      "score": 2708
-    },
-    {
-      "sourceRoute": "/katzenklappen/",
-      "targetRoute": "/hersteller/onlycat/",
-      "anchor": "OnlyCat",
-      "score": 1707
+      "score": 2808
     },
     {
       "sourceRoute": "/katzenklappen/",
       "targetRoute": "/hersteller/petsafe/",
       "anchor": "PetSafe",
+      "score": 1807
+    },
+    {
+      "sourceRoute": "/katzenklappen/",
+      "targetRoute": "/hersteller/onlycat/",
+      "anchor": "OnlyCat",
       "score": 1707
     },
     {
@@ -815,15 +840,15 @@
     },
     {
       "sourceRoute": "/katzenklappen/",
-      "targetRoute": "/hersteller/zeromouse/",
-      "anchor": "ZeroMOUSE",
-      "score": 1509
+      "targetRoute": "/wie-laut-sind-automatische-futterautomaten/",
+      "anchor": "Geräuschentwicklung",
+      "score": 1519
     },
     {
       "sourceRoute": "/katzenklappen/",
-      "targetRoute": "/wie-laut-sind-automatische-futterautomaten/",
-      "anchor": "Geräuschentwicklung",
-      "score": 1419
+      "targetRoute": "/hersteller/zeromouse/",
+      "anchor": "ZeroMOUSE",
+      "score": 1509
     },
     {
       "sourceRoute": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
@@ -995,15 +1020,15 @@
     },
     {
       "sourceRoute": "/smarte-futterautomaten/",
-      "targetRoute": "/hersteller/pawsync/",
-      "anchor": "PawSync",
+      "targetRoute": "/hersteller/neakasa/",
+      "anchor": "Neakasa",
       "score": 1807
     },
     {
       "sourceRoute": "/smarte-futterautomaten/",
-      "targetRoute": "/hersteller/aqara/",
-      "anchor": "Aqara",
-      "score": 1805
+      "targetRoute": "/hersteller/pawsync/",
+      "anchor": "PawSync",
+      "score": 1807
     },
     {
       "sourceRoute": "/smarte-gadgets-fuer-hunde-und-katzen/",
@@ -1952,6 +1977,18 @@
       "targetRoute": "/wie-laut-sind-automatische-futterautomaten/",
       "anchor": "Betriebsgeräusch",
       "score": 1516
+    },
+    {
+      "sourceRoute": "/produkt/neakasa-riko/",
+      "targetRoute": "/wie-viele-mahlzeiten-hund/",
+      "anchor": "Mahlzeiten pro Tag",
+      "score": 3518
+    },
+    {
+      "sourceRoute": "/produkt/neakasa-riko/",
+      "targetRoute": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "anchor": "Mehrere Katzen",
+      "score": 2814
     },
     {
       "sourceRoute": "/produkt/oneisall-2-2l-cordless-fountain/",
@@ -3487,7 +3524,7 @@
       "sourceRoute": "/hersteller/cat-mate/",
       "targetRoute": "/katzenklappen/",
       "anchor": "Mikrochip-Katzenklappe",
-      "score": 2722
+      "score": 2822
     },
     {
       "sourceRoute": "/hersteller/catit/",
@@ -3619,7 +3656,7 @@
       "sourceRoute": "/hersteller/petsafe/",
       "targetRoute": "/katzenklappen/",
       "anchor": "Katzenklappen",
-      "score": 6713
+      "score": 6813
     },
     {
       "sourceRoute": "/hersteller/reolink/",
@@ -3647,7 +3684,7 @@
     }
   ],
   "incomingLinks": {
-    "/automatische-katzentoiletten/": 10,
+    "/automatische-katzentoiletten/": 11,
     "/biofilm-im-katzentrinkbrunnen/": 16,
     "/datenschutz-bei-gps-trackern/": 1,
     "/filter-im-katzentrinkbrunnen-wechseln/": 15,
@@ -3664,9 +3701,9 @@
     "/glossar/": 4,
     "/gps-oder-bluetooth/": 3,
     "/gps-tracker-richtig-befestigen/": 3,
-    "/gps-tracker/": 9,
+    "/gps-tracker/": 10,
     "/haustierkameras/": 10,
-    "/hersteller/aqara/": 4,
+    "/hersteller/aqara/": 3,
     "/hersteller/cat-mate/": 17,
     "/hersteller/catit/": 6,
     "/hersteller/devoko/": 4,
@@ -3677,7 +3714,7 @@
     "/hersteller/honeyguardian/": 8,
     "/hersteller/imipaw/": 5,
     "/hersteller/invoxia/": 2,
-    "/hersteller/neakasa/": 5,
+    "/hersteller/neakasa/": 8,
     "/hersteller/oneisall/": 13,
     "/hersteller/onlycat/": 8,
     "/hersteller/paj-gps/": 4,
@@ -3695,7 +3732,7 @@
     "/hersteller/surefeed/": 13,
     "/hersteller/tractive/": 12,
     "/hersteller/weenect/": 16,
-    "/hersteller/whisker/": 6,
+    "/hersteller/whisker/": 7,
     "/hersteller/wopet/": 7,
     "/hersteller/xiaomi/": 17,
     "/hersteller/zeromouse/": 7,
@@ -3707,6 +3744,7 @@
     "/hund-trinkt-ploetzlich-viel/": 0,
     "/hund-trinkt-viel/": 2,
     "/hund-trinkt-zu-wenig/": 5,
+    "/ifa-2026-haustiertechnik/": 3,
     "/kalk-katzentrinkbrunnen-entfernen/": 7,
     "/katze-an-katzenklappe-gewoehnen/": 3,
     "/katze-an-trinkbrunnen-gewoehnen/": 0,
@@ -3751,9 +3789,10 @@
     "/produkt/imipaw-3l-automatic-cat-feeder/": 2,
     "/produkt/invoxia-biotracker-2026/": 2,
     "/produkt/litter-robot-4/": 3,
-    "/produkt/litter-robot-5-pro/": 3,
+    "/produkt/litter-robot-5-pro/": 4,
     "/produkt/neakasa-m1-lite/": 3,
-    "/produkt/neakasa-m1-plus/": 4,
+    "/produkt/neakasa-m1-plus/": 5,
+    "/produkt/neakasa-riko/": 3,
     "/produkt/oneisall-2-2l-cordless-fountain/": 2,
     "/produkt/oneisall-2-in-1-feeder-water/": 2,
     "/produkt/oneisall-3-2l-cordless-fountain/": 2,
@@ -3829,16 +3868,16 @@
     "/pumpe-katzentrinkbrunnen-reinigen/": 6,
     "/reichweite-von-gps-trackern/": 5,
     "/seniorenhunde-richtig-versorgen/": 0,
-    "/smarte-futterautomaten/": 78,
+    "/smarte-futterautomaten/": 80,
     "/smarte-gadgets-fuer-hunde-und-katzen/": 1,
-    "/smarte-haustiertechnik/": 14,
+    "/smarte-haustiertechnik/": 15,
     "/so-bewerten-wir/": 15,
     "/trinkbrunnen-fuer-katzen-sinnvoll/": 7,
     "/trinkbrunnen-fuer-kitten-sicher/": 0,
-    "/trinkbrunnen-fuer-mehrere-katzen/": 26,
+    "/trinkbrunnen-fuer-mehrere-katzen/": 27,
     "/trinkbrunnen-hund/": 5,
     "/trinkbrunnen-seniorenkatzen/": 2,
-    "/trinkbrunnen/": 49,
+    "/trinkbrunnen/": 50,
     "/trinkmenge-hund-messen/": 2,
     "/trinkmenge-katze-messen/": 1,
     "/trockenfutter-oder-nassfutter-hund/": 5,
@@ -3850,7 +3889,7 @@
     "/vergleiche/beste-futterautomaten-fuer-katzen/": 12,
     "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/": 3,
     "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/": 6,
-    "/vergleiche/beste-futterautomaten-fuer-nassfutter/": 14,
+    "/vergleiche/beste-futterautomaten-fuer-nassfutter/": 15,
     "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/": 1,
     "/vergleiche/beste-futterautomaten-fuer-welpen/": 2,
     "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/": 13,
@@ -3887,11 +3926,11 @@
     "/wie-kann-technik-gegen-langeweile-helfen/": 0,
     "/wie-lange-bleibt-trockenfutter-frisch/": 5,
     "/wie-laut-sind-automatische-futterautomaten/": 4,
-    "/wie-viel-wasser-braucht-ein-hund/": 4,
+    "/wie-viel-wasser-braucht-ein-hund/": 5,
     "/wie-viel-wasser-braucht-eine-katze/": 2,
-    "/wie-viele-mahlzeiten-hund/": 11,
+    "/wie-viele-mahlzeiten-hund/": 12,
     "/wie-viele-mahlzeiten-katze/": 21,
-    "/wie-viele-wasserstellen-katze/": 16,
+    "/wie-viele-wasserstellen-katze/": 17,
     "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/": 11
   }
 }

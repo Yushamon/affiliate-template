@@ -1,10 +1,10 @@
 # Product External Evidence Audit
 
-- Produkte: 101
-- Mit externalEvidence: 100
+- Produkte: 103
+- Mit externalEvidence: 101
 - Vollständig: 72
-- Teilweise: 28
-- Ohne Evidenz: 1
+- Teilweise: 29
+- Ohne Evidenz: 2
 
 ## Vollständig
 
@@ -86,6 +86,7 @@
 - cat-mate-shell-fountain · fehlt: professionalReviews, consensus
 - devoko-90l-automatisches-katzenklo · fehlt: professionalReviews, consensus
 - feelneedy-fn-w18-8l-katzenbrunnen · fehlt: professionalReviews, userReviews, consensus
+- flappie · fehlt: professionalReviews
 - garmin-alpha-tt-25 · fehlt: consensus
 - honeyguardian-a305d · fehlt: professionalReviews, userReviews, consensus
 - honeyguardian-a68 · fehlt: professionalReviews, userReviews, consensus
@@ -115,3 +116,4 @@
 ## Ohne Evidenz
 
 - furbo-360-katzenkamera
+- neakasa-riko
