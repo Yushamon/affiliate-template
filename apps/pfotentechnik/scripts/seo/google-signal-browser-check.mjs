@@ -8,6 +8,11 @@ const src=fs.readFileSync(path.join(app,'scripts/performance/viewport-smoke.cjs'
 const {inspectPage,findingsFor}=vm.runInNewContext(src.slice(src.indexOf('const inspectPage ='),src.indexOf('app.whenReady()'))+';({inspectPage,findingsFor})');
 const routes=vm.runInNewContext(src.slice(src.indexOf('const routes ='),src.indexOf('const viewports ='))+';routes');
 const viewports=vm.runInNewContext(src.slice(src.indexOf('const viewports ='),src.indexOf('const mime ='))+';viewports');
+// Text-only editorial closure: exercise changed surfaces without screenshot sets.
+if(process.argv.includes('--editorial-geometry')){
+ routes.push('/so-bewerten-wir/','/futterautomat-richtig-reinigen/','/smarte-haustiertechnik/','/glossar/','/katze-trinkt-viel/','/produkt/furbo-360-katzenkamera/','/produkt/petkit-purobot-max-3/','/vergleiche/beste-automatische-katzentoiletten/','/vergleiche/beste-haustierkameras/','/hersteller/flappie/');
+ viewports.splice(0,viewports.length,...['light','dark'].flatMap(theme=>[375,768,1024,1600].map(width=>({name:`${width}-${theme}`,width,height:900,theme}))));
+}
 const mime={'.html':'text/html','.css':'text/css','.js':'text/javascript','.webp':'image/webp','.svg':'image/svg+xml','.png':'image/png','.woff2':'font/woff2'};
 const server=http.createServer((req,res)=>{let route=decodeURIComponent(new URL(req.url,'http://localhost').pathname);const f=path.resolve(dist,'.'+route+(route.endsWith('/')?'index.html':''));if(!f.startsWith(dist+path.sep)||!fs.existsSync(f)||!fs.statSync(f).isFile()){res.writeHead(404).end();return;}res.writeHead(200,{'Content-Type':mime[path.extname(f)]??'application/octet-stream'});fs.createReadStream(f).pipe(res);});
 await new Promise(r=>server.listen(0,'127.0.0.1',r));
@@ -20,7 +25,7 @@ ws=new WebSocket(endpoint);await new Promise((r,j)=>{ws.onopen=r;ws.onerror=j;})
 const call=(method,params={},sessionId)=>new Promise((resolve,reject)=>{const n=++id;pending.set(n,{resolve,reject});ws.send(JSON.stringify({id:n,method,params,...(sessionId?{sessionId}:{})}));});
 const {targetId}=await call('Target.createTarget',{url:'about:blank'});const {sessionId}=await call('Target.attachToTarget',{targetId,flatten:true});const c=(m,p)=>call(m,p,sessionId);await c('Page.enable');await c('Runtime.enable');
 const results=[];
-for(const viewport of viewports){await c('Emulation.setDeviceMetricsOverride',{width:viewport.width,height:viewport.height,deviceScaleFactor:1,mobile:false});for(const route of routes){await c('Page.navigate',{url:`http://127.0.0.1:${server.address().port}${route}`});await new Promise(r=>setTimeout(r,150));await c('Runtime.evaluate',{expression:'Promise.all([document.fonts.ready,...[...document.images].filter(i=>i.loading!=="lazy").map(i=>i.decode().catch(()=>{}))])',awaitPromise:true});const r=await c('Runtime.evaluate',{expression:`(${inspectPage.toString()})()`,returnByValue:true});const metrics=r.result.value;const findings=findingsFor(route,viewport,metrics);results.push({route,viewport,metrics,findings});console.log(viewport.name,route,findings.length);}}
+for(const viewport of viewports){await c('Emulation.setDeviceMetricsOverride',{width:viewport.width,height:viewport.height,deviceScaleFactor:1,mobile:false});if(viewport.theme)await c('Emulation.setEmulatedMedia',{features:[{name:'prefers-color-scheme',value:viewport.theme}]});for(const route of routes){await c('Page.navigate',{url:`http://127.0.0.1:${server.address().port}${route}`});await new Promise(r=>setTimeout(r,150));await c('Runtime.evaluate',{expression:'Promise.all([document.fonts.ready,...[...document.images].filter(i=>i.loading!=="lazy").map(i=>i.decode().catch(()=>{}))])',awaitPromise:true});const r=await c('Runtime.evaluate',{expression:`(${inspectPage.toString()})()`,returnByValue:true});const metrics=r.result.value;const findings=findingsFor(route,viewport,metrics);results.push({route,viewport,metrics,findings});console.log(viewport.name,route,findings.length);}}
 const closureVisual=[];
 if(process.argv.includes('--closure-visual')){
  const route='/smarte-futterautomaten/';const dir=path.join(out,'screenshots');fs.mkdirSync(dir,{recursive:true});
