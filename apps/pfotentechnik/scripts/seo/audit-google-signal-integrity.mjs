@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /** Audit-only extension of the existing SEO and content-quality architecture.
- * Usage: node .../audit-google-signal-integrity.mjs [--live]
+ * Usage: node .../audit-google-signal-integrity.mjs [--live] [--out report-dir]
+ *   [--live-evidence prior-live.json] [--expect-no-orphans]
  * Writes only reports/google-signal-integrity-35.2. Live mode performs public GETs,
  * four at a time, follows at most five redirects, and caches raw measured signals.
  */
@@ -152,3 +153,4 @@ write('product-visible-evidence.json',indexed.filter(p=>p.pageType==='product').
 write('render-evidence.json',indexed.map(p=>({url:p.url,type:p.pageType,title:p.title,description:p.description,h1:p.h1,words:p.mainWords,schemas:p.schemas.map(s=>s['@type']),scripts:p.scripts,islands:p.islands,images:p.images.slice(0,3),productExperienceInHtml:/erfahrung|praxis|alltag|einordnung/i.test(p.mainText)})));
 const reviewedFile=path.join(out,'reviewed-findings.json');if(fs.existsSync(reviewedFile)){const audit=json(path.join(out,'audit.json'));Object.assign(audit,json(reviewedFile));write('audit.json',audit);}
 console.log(JSON.stringify(summary,null,2));
+if(process.argv.includes('--expect-no-orphans')&&summary.trueOrphans>0){console.error('Closure failed: canonical orphan remains.');process.exitCode=1;}

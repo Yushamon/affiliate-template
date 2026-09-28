@@ -1,0 +1,40 @@
+# PfotenTechnik Performance Audit
+
+- Status: OK
+- Modus: strict
+- Routen: 10/10
+- Fehler: 0
+- Warnungen: 6
+
+## Routen
+
+| Route | HTML | CSS | JS | DOM | Bilder | Befunde |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| / | 42008 B | 303681 B | 0 B | 458 | 380262 B | 0 |
+| /vergleiche/ | 37777 B | 294480 B | 0 B | 351 | 0 B | 0 |
+| /vergleiche/beste-futterautomaten-fuer-katzen/ | 239143 B | 358647 B | 0 B | 2216 | 202604 B | 2 |
+| /vergleiche/gps-tracker-ohne-abo/ | 54694 B | 358647 B | 0 B | 428 | 44402 B | 0 |
+| /produkt/petlibro-granary-2-vision/ | 92955 B | 382180 B | 5948 B | 835 | 351476 B | 2 |
+| /hersteller/petlibro/ | 85439 B | 297689 B | 0 B | 776 | 178238 B | 2 |
+| /wissen/ | 62988 B | 286894 B | 0 B | 675 | 0 B | 0 |
+| /smarte-futterautomaten/ | 65060 B | 325055 B | 0 B | 514 | 60836 B | 0 |
+| /hund-trinkt-ploetzlich-viel/ | 48589 B | 325055 B | 0 B | 499 | 0 B | 0 |
+| /kontakt/ | 27530 B | 286894 B | 0 B | 207 | 0 B | 0 |
+
+## Source
+
+- CSS-Dateien: 42
+- CSS-Bytes: 420946
+- !important-Deklarationen: 857
+- Hydration-Direktiven: 0
+- Globale DOM-Korrektur: entfernt
+- Obsolete Comparison-CSS-Dateien: 0
+
+## Befunde
+
+- WARNING PERF_HTML_TOO_LARGE (/vergleiche/beste-futterautomaten-fuer-katzen/): HTML-Budget überschritten: 239143 > 230000.
+- WARNING PERF_DOM_TOO_COMPLEX (/vergleiche/beste-futterautomaten-fuer-katzen/): DOM-Budget überschritten: 2216 > 2100.
+- WARNING PERF_BUDGET_CSS_EXCEEDED (/produkt/petlibro-granary-2-vision/): CSS-Budget überschritten: 382180 > 370000.
+- WARNING PERF_HTML_TOO_LARGE (/produkt/petlibro-granary-2-vision/): HTML-Budget überschritten: 92955 > 90000.
+- WARNING PERF_HTML_TOO_LARGE (/hersteller/petlibro/): HTML-Budget überschritten: 85439 > 85000.
+- WARNING PERF_DOM_TOO_COMPLEX (/hersteller/petlibro/): DOM-Budget überschritten: 776 > 750.

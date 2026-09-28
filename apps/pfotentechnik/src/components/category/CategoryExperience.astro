@@ -59,6 +59,9 @@ const updatedLabel = new Intl.DateTimeFormat("de-DE", {
       <p class="pt-category-hub__eyebrow">Anforderungen zuerst</p>
       <h2 id="category-requirements-title">Was muss zu deinem Alltag passen?</h2>
       <p>Diese Punkte verändern die passende Bauart oder den sinnvollen nächsten Vergleich. Zusatzfunktionen kommen danach.</p>
+      {model.slug === "smarte-futterautomaten" && (
+        <p>Du möchtest deine Anforderungen Schritt für Schritt eingrenzen? Der <a href="/futterautomat-berater/">Futterautomat-Berater</a> führt dich mit sechs Fragen zu Tier, Futterart, Alltag, Funktionen und Budget zu passenden Modellen und ihren Grenzen.</p>
+      )}
     </div>
     <ol class="pt-category-hub__requirement-list">
       {model.requirements.map((requirement, index) => (

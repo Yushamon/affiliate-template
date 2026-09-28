@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-28T11:38:45.050Z",
+  "summary": {
+    "liveLinkDifferences": 6,
+    "deployedMediaChecked": 339,
+    "deployedMediaFailed": 0,
+    "generatedPages": 375,
+    "indexableCanonical": 260,
+    "sitemapUrls": 260,
+    "classifications": {
+      "E_INTENTIONAL_404": 1,
+      "C_NOINDEX": 114,
+      "A_INDEXABLE_CANONICAL": 260
+    },
+    "liveMeasured": 2627,
+    "liveExpected": 2625,
+    "liveErrors": 0,
+    "http200": 260,
+    "selfCanonical": 260,
+    "liveSelfCanonical": 260,
+    "sitemapConsistency": 260,
+    "schemaUrlConsistency": 260,
+    "robotsConsistency": 260,
+    "internalCanonicalLinkExceptions": 0,
+    "internalCanonicalLinkSources": 0,
+    "internalDocumentLinkOccurrences": 16901,
+    "redirectChains": 1037,
+    "redirectLoops": 0,
+    "conflictingCanonical": 0,
+    "parameterLinkOccurrences": 0,
+    "parameterHrefOccurrences": 0,
+    "trueOrphans": 0,
+    "nearOrphans": 5,
+    "depthOver3": 0,
+    "unreachable": 0,
+    "missingHubLinks": 134,
+    "authorityClasses": {
+      "NORMAL": 182,
+      "WEAK": 8,
+      "STRONG": 65,
+      "NEAR_ORPHAN": 5
+    },
+    "schemaSemantics": {
+      "WARNING": 103
+    },
+    "initialHtmlPresent": 260,
+    "images": 2441,
+    "mediaExceptions": 0,
+    "lastmodPresent": 248,
+    "lastmodFuture": 0,
+    "localLiveMainMismatch": 110
+  },
+  "scope": {
+    "local": "fresh full production build",
+    "live": "public ordinary user-agent GET; not verified Googlebot IP",
+    "gscGeneratedAt": "2026-09-22T03:40:04.892Z",
+    "bingGeneratedAt": "2026-09-22T03:40:02.605Z",
+    "gscRange": {
+      "start": "2026-08-25",
+      "end": "2026-09-21"
+    },
+    "bingRange": {
+      "start": "2026-08-25",
+      "end": "2026-09-21"
+    }
+  },
+  "exceptions": {
+    "noncanonicalLinks": [],
+    "schemaExceptions": [
+      {
+        "url": "https://pfotentechnik.de/404/",
+        "refs": [
+          "https://pfotentechnik.de/404/"
+        ]
+      },
+      {
+        "url": "https://pfotentechnik.de/foundation/",
+        "refs": [
+          "https://pfotentechnik.de/foundation/"
+        ]
+      }
+    ],
+    "mediaExceptions": [],
+    "allHrefParameters": [],
+    "sitemapMissing": [],
+    "sitemapDuplicates": [],
+    "initialHtmlMissing": [],
+    "liveErrors": [],
+    "soft404Candidates": [],
+    "quality": []
+  },
+  "graphRules": "Exclude self links. ORPHAN=zero unique incoming canonical sources; NEAR_ORPHAN=one; WEAK=<=1 contextual source or depth null/>3; STRONG=homepage or >=2 contextual sources plus logical hub link and depth<=2; otherwise NORMAL. Structural triage, not ranking scores. Contextual means <main> outside nav/header/footer, not proof of prose placement."
+}

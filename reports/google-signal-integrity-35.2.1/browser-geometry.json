@@ -1,0 +1,642 @@
+{
+  "generatedAt": "2026-09-28T11:39:01.429Z",
+  "engine": "Chrome/153.0.8010.53",
+  "reuses": "scripts/performance/viewport-smoke.cjs: inspectPage, findingsFor, routes, viewports",
+  "results": [
+    {
+      "route": "/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "metrics": {
+        "title": "Smarte Haustier-Technik im Vergleich | PfotenTechnik",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 2
+      },
+      "findings": []
+    },
+    {
+      "route": "/vergleiche/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "metrics": {
+        "title": "Futterautomaten und Pet-Tech-Produkte im Vergleich",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 2
+      },
+      "findings": []
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "metrics": {
+        "title": "Beste Futterautomaten für Katzen im Vergleich 2026",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 4
+      },
+      "findings": []
+    },
+    {
+      "route": "/vergleiche/gps-tracker-ohne-abo/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "metrics": {
+        "title": "GPS-Tracker ohne Abo: echte Systeme verglichen",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 4
+      },
+      "findings": []
+    },
+    {
+      "route": "/produkt/petlibro-granary-2-vision/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "metrics": {
+        "title": "PETLIBRO Granary 2 Vision im Datencheck",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 4
+      },
+      "findings": []
+    },
+    {
+      "route": "/hersteller/petlibro/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "metrics": {
+        "title": "PETLIBRO 2026: Modelle, Unterschiede & beste Optionen",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 3
+      },
+      "findings": []
+    },
+    {
+      "route": "/wissen/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "metrics": {
+        "title": "Wissen",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 2
+      },
+      "findings": []
+    },
+    {
+      "route": "/smarte-futterautomaten/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "metrics": {
+        "title": "Smarte Futterautomaten 2026: Kaufberatung & Auswahlhilfe",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 3
+      },
+      "findings": []
+    },
+    {
+      "route": "/hund-trinkt-ploetzlich-viel/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "metrics": {
+        "title": "Hund trinkt plötzlich viel: Ursachen und Hilfe",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 3
+      },
+      "findings": []
+    },
+    {
+      "route": "/kontakt/",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "metrics": {
+        "title": "Kontakt | PfotenTechnik",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 2
+      },
+      "findings": []
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "name": "tablet",
+        "width": 768,
+        "height": 1024
+      },
+      "metrics": {
+        "title": "Smarte Haustier-Technik im Vergleich | PfotenTechnik",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 2
+      },
+      "findings": []
+    },
+    {
+      "route": "/vergleiche/",
+      "viewport": {
+        "name": "tablet",
+        "width": 768,
+        "height": 1024
+      },
+      "metrics": {
+        "title": "Futterautomaten und Pet-Tech-Produkte im Vergleich",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 2
+      },
+      "findings": []
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "viewport": {
+        "name": "tablet",
+        "width": 768,
+        "height": 1024
+      },
+      "metrics": {
+        "title": "Beste Futterautomaten für Katzen im Vergleich 2026",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 4
+      },
+      "findings": []
+    },
+    {
+      "route": "/vergleiche/gps-tracker-ohne-abo/",
+      "viewport": {
+        "name": "tablet",
+        "width": 768,
+        "height": 1024
+      },
+      "metrics": {
+        "title": "GPS-Tracker ohne Abo: echte Systeme verglichen",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 4
+      },
+      "findings": []
+    },
+    {
+      "route": "/produkt/petlibro-granary-2-vision/",
+      "viewport": {
+        "name": "tablet",
+        "width": 768,
+        "height": 1024
+      },
+      "metrics": {
+        "title": "PETLIBRO Granary 2 Vision im Datencheck",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 4
+      },
+      "findings": []
+    },
+    {
+      "route": "/hersteller/petlibro/",
+      "viewport": {
+        "name": "tablet",
+        "width": 768,
+        "height": 1024
+      },
+      "metrics": {
+        "title": "PETLIBRO 2026: Modelle, Unterschiede & beste Optionen",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 3
+      },
+      "findings": []
+    },
+    {
+      "route": "/wissen/",
+      "viewport": {
+        "name": "tablet",
+        "width": 768,
+        "height": 1024
+      },
+      "metrics": {
+        "title": "Wissen",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 2
+      },
+      "findings": []
+    },
+    {
+      "route": "/smarte-futterautomaten/",
+      "viewport": {
+        "name": "tablet",
+        "width": 768,
+        "height": 1024
+      },
+      "metrics": {
+        "title": "Smarte Futterautomaten 2026: Kaufberatung & Auswahlhilfe",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 3
+      },
+      "findings": []
+    },
+    {
+      "route": "/hund-trinkt-ploetzlich-viel/",
+      "viewport": {
+        "name": "tablet",
+        "width": 768,
+        "height": 1024
+      },
+      "metrics": {
+        "title": "Hund trinkt plötzlich viel: Ursachen und Hilfe",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 3
+      },
+      "findings": []
+    },
+    {
+      "route": "/kontakt/",
+      "viewport": {
+        "name": "tablet",
+        "width": 768,
+        "height": 1024
+      },
+      "metrics": {
+        "title": "Kontakt | PfotenTechnik",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 2
+      },
+      "findings": []
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1366,
+        "height": 900
+      },
+      "metrics": {
+        "title": "Smarte Haustier-Technik im Vergleich | PfotenTechnik",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 1366,
+        "scrollWidth": 1366,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 2
+      },
+      "findings": []
+    },
+    {
+      "route": "/vergleiche/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1366,
+        "height": 900
+      },
+      "metrics": {
+        "title": "Futterautomaten und Pet-Tech-Produkte im Vergleich",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 1366,
+        "scrollWidth": 1366,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 2
+      },
+      "findings": []
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1366,
+        "height": 900
+      },
+      "metrics": {
+        "title": "Beste Futterautomaten für Katzen im Vergleich 2026",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 1366,
+        "scrollWidth": 1366,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 4
+      },
+      "findings": []
+    },
+    {
+      "route": "/vergleiche/gps-tracker-ohne-abo/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1366,
+        "height": 900
+      },
+      "metrics": {
+        "title": "GPS-Tracker ohne Abo: echte Systeme verglichen",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 1366,
+        "scrollWidth": 1366,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 4
+      },
+      "findings": []
+    },
+    {
+      "route": "/produkt/petlibro-granary-2-vision/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1366,
+        "height": 900
+      },
+      "metrics": {
+        "title": "PETLIBRO Granary 2 Vision im Datencheck",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 1366,
+        "scrollWidth": 1366,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 4
+      },
+      "findings": []
+    },
+    {
+      "route": "/hersteller/petlibro/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1366,
+        "height": 900
+      },
+      "metrics": {
+        "title": "PETLIBRO 2026: Modelle, Unterschiede & beste Optionen",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 1366,
+        "scrollWidth": 1366,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 3
+      },
+      "findings": []
+    },
+    {
+      "route": "/wissen/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1366,
+        "height": 900
+      },
+      "metrics": {
+        "title": "Wissen",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 1366,
+        "scrollWidth": 1366,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 2
+      },
+      "findings": []
+    },
+    {
+      "route": "/smarte-futterautomaten/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1366,
+        "height": 900
+      },
+      "metrics": {
+        "title": "Smarte Futterautomaten 2026: Kaufberatung & Auswahlhilfe",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 1366,
+        "scrollWidth": 1366,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 3
+      },
+      "findings": []
+    },
+    {
+      "route": "/hund-trinkt-ploetzlich-viel/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1366,
+        "height": 900
+      },
+      "metrics": {
+        "title": "Hund trinkt plötzlich viel: Ursachen und Hilfe",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 1366,
+        "scrollWidth": 1366,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 3
+      },
+      "findings": []
+    },
+    {
+      "route": "/kontakt/",
+      "viewport": {
+        "name": "desktop",
+        "width": 1366,
+        "height": 900
+      },
+      "metrics": {
+        "title": "Kontakt | PfotenTechnik",
+        "h1Count": 1,
+        "viewportMeta": "width=device-width, initial-scale=1",
+        "clientWidth": 1366,
+        "scrollWidth": 1366,
+        "horizontalOverflow": 0,
+        "missingDimensions": 0,
+        "brokenImages": 0,
+        "firstContentImageLazy": false,
+        "stylesheets": 2
+      },
+      "findings": []
+    }
+  ],
+  "summary": {
+    "checks": 30,
+    "passed": 30,
+    "failed": 0
+  }
+}
