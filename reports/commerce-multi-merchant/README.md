@@ -41,6 +41,10 @@ Für die neun unresolved PETLIBRO-Modelle sind sichere, in Deutschland geeignete
 
 ## Prüfung
 
+Abschluss am 23.09.2026: **858 PfotenTechnik-Tests**, **26 Affiliate-Core-Tests**, darin **26 neue Commerce-Tests**, erfolgreich. Production Build: **375 Seiten**. **17 Browserprüfungen** ohne Overflow, abgeschnittene CTAs, Preiszeilenfehler oder defekte Bilder; vier Fullpage-Screenshots visuell geprüft. Browsertest bestätigt getrenntes Speichern beider Händlerpreise und den Erhalt des jeweils anderen ungespeicherten Preisentwurfs. Serverseitige Integrationstests bestätigen getrennte Persistenz in den echten Markdown-Schreibfunktionen und Nutzung beider Preise im öffentlichen Resolver.
+
+Der lokale Admin-Dienst wurde mit dem aktuellen Backend neu gestartet; Astro läuft gemäß AGENTS.md im Hintergrund auf Port 4321. Live-Cockpit geprüft: HTTP 200, separate Händlerpreisformulare vorhanden.
+
 Die endgültigen Ergebnisse stehen in `validation.json` und `visual-qa.json`. Vier Fullpage-Screenshots: `product-375-light.png`, `product-375-dark.png`, `product-1600-light.png`, `product-1600-dark.png`. Weitere Breiten werden ohne zusätzliche Screenshots geometrisch geprüft.
 
 Der eingebaute Browser war nicht verfügbar; die visuelle Prüfung nutzt den bereits im Repository installierten Electron/Chromium. Cockpit-Klicks auf Single/Global Refresh und Speichern laufen gegen eine isolierte In-Memory-API, damit die UI-Prüfung keine Produktdaten verändert. Reale Provider-/Persistenzlogik wird separat durch Integrationstests geprüft; die initiale Händlerabfrage erfolgte gegen PETLIBRO.

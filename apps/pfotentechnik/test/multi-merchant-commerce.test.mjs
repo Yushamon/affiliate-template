@@ -7,7 +7,8 @@ import {resolveCommerceOffers,compareCommerceOffers} from '../src/domain/commerc
 import {buildNetworkLink} from '../../../packages/affiliate-core/src/affiliate/networks.mjs';
 import {affiliatePrograms} from '../src/config/affiliate-programs.mjs';
 import {extractShopifyVariant,refreshOfficialOffer,refreshCommerceTasks} from '../src/lib/price-intelligence/commerce-refresh.mjs';
-import {checkProductPrice,checkAllProductPrices} from '../src/lib/price-intelligence/service.mjs';
+import {checkProductPrice,checkAllProductPrices,setManualProductPrice} from '../src/lib/price-intelligence/service.mjs';
+import yaml from 'js-yaml';
 import {updateProductOffer,readProductDocument} from '../src/lib/price-intelligence/frontmatter-price.mjs';
 import {commerceCockpitMarkup} from '../src/lib/price-intelligence/commerce-view.mjs';
 const now=Date.parse('2026-09-21T12:00:00Z');
@@ -55,4 +56,31 @@ test('verified exact variant supersedes generic same-shop price while retaining 
   assert.equal(compareCommerceOffers(r).offers.length,1);assert.equal(p.price.current,149.99);
   p.offers[0].availability='out-of-stock';
   const empty=compareCommerceOffers(resolve(p));assert.equal(empty.offers.length,0);assert.equal(empty.hasConfiguredOffers,true);
+});
+
+test('Cockpit persists two independent prices and uses both in public offers',async()=>{
+  const dir=await fs.mkdtemp(path.join(os.tmpdir(),'pt-two-prices-'));
+  try {
+    const file=path.join(dir,'p.md');
+    await fs.writeFile(file,'---\n'+yaml.dump(product([official()]))+'---\nBody\n');
+    const deps={find:()=>readProductDocument(file)};
+    await setManualProductPrice({slug:'petlibro-example',offerId:'petlibro-de',current:'109,95',currency:'EUR',availability:'available'},deps);
+    let doc=await readProductDocument(file);
+    assert.equal(doc.data.price.current,149.99);assert.equal(doc.data.offers[0].price.current,109.95);
+    await setManualProductPrice({slug:'petlibro-example',offerId:'legacy',current:'139,95',currency:'EUR',availability:'available'},deps);
+    doc=await readProductDocument(file);
+    assert.equal(doc.data.price.current,139.95);assert.equal(doc.data.offers[0].price.current,109.95);
+    assert.deepEqual(resolveCommerceOffers(doc.data).map(o=>o.current),[139.95,109.95]);
+    await setManualProductPrice({slug:'petlibro-example',offerId:'petlibro-de',current:'',currency:'EUR',availability:'available'},deps);
+    doc=await readProductDocument(file);
+    assert.equal(doc.data.price.current,139.95);assert.equal(doc.data.offers[0].price.current,null);
+  } finally {await fs.rm(dir,{recursive:true,force:true});}
+});
+
+test('Cockpit immediately shows stored prices and separate editors even when stale',()=>{
+  const html=commerceCockpitMarkup(resolve(product([official({error:'Provider timeout'})])),'p');
+  assert.match(html,/<details open>/);
+  assert.equal((html.match(/data-commerce-price-editor/g)||[]).length,2);
+  assert.match(html,/149,99/);assert.match(html,/119,99/);
+  assert.match(html,/Kein öffentlich verwendbarer aktueller Preis/);
 });
