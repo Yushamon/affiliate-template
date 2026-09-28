@@ -66,10 +66,10 @@ images:
     - src: ../../assets/images/products/petlibro-air-automatic-feeder/gallery-4.webp
       alt: PETLIBRO Air Automatic Feeder, weitere redaktionelle Ansicht 4
 price:
-  current: 59.99
+  current: 54.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-22T03:42:17.888Z"
+  checkedAt: "2026-09-28T11:32:32.907Z"
   source:
     id: "mediamarkt.de"
     label: "mediamarkt.de"
@@ -84,12 +84,12 @@ rating: 3.6
 score: 72
 
 priceState: "available"
-priceUpdated: "2026-09-22T03:42:17.888Z"
+priceUpdated: "2026-09-28T11:32:32.907Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-22T03:42:17.888Z"
+availabilityUpdated: "2026-09-28T11:32:32.907Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
@@ -299,7 +299,7 @@ offers:
     availability: "unknown"
     identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
     evidenceSources: []
-    lastAttemptAt: "2026-09-22T03:42:17.907Z"
+    lastAttemptAt: "2026-09-28T11:32:32.910Z"
     error: "Offizielle Produkt-URL unresolved."
 ---
 Der PETLIBRO Air Automatic Feeder ist ein kompakter Trockenfutterautomat mit lokaler Zeitsteuerung. Er eignet sich für Katzen und kleine Hunde, wenn bewusst keine App oder WLAN-Verbindung benötigt wird.

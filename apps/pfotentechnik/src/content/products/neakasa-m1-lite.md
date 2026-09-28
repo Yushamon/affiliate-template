@@ -121,7 +121,6 @@ decision:
     - "Unter 1 kg nur Kitten-Modus ohne Automatik"
     - "35,2 cm Einstiegshöhe"
     - "Keine Holzpellets oder nicht klumpende Streu"
-    - "Die offiziellen Neakasa-Seiten verwenden M1 Plus Lite und M1 Lite Plus; diese Route ist der gemeinsame Lifecycle-Owner"
     - "Sensorzahl ist in offiziellen Darstellungen nicht vollständig konsistent"
 review:
   summary: "Das Neakasa M1 Lite kombiniert offene Bauform, automatische Siebung, App-Steuerung und großen Abfallbehälter. Technisch liegt es sehr nah am M1 Plus, spart aber beim Zubehör."
@@ -135,7 +134,6 @@ weaknesses:
   - "Unter 1 kg nur Kitten-Modus ohne Automatik"
   - "35,2 cm Einstiegshöhe"
   - "Keine Holzpellets oder nicht klumpende Streu"
-  - "Die offiziellen Neakasa-Seiten verwenden M1 Plus Lite und M1 Lite Plus; diese Route ist der gemeinsame Lifecycle-Owner"
   - "Sensorzahl ist in offiziellen Darstellungen nicht vollständig konsistent"
 features:
   - "Offene Bauform"
@@ -291,6 +289,8 @@ evidenceSources:
       - "specs"
       - "weaknesses"
 metadata:
+  # Intern: Diese Route bleibt Lifecycle-Owner für M1 Plus Lite / M1 Lite Plus.
+  # Routing-/Workflow-Entscheidungen gehören nicht in öffentliche Produktmerkmale.
   version: "1.0.0"
   normalizedAt: "2026-08-07"
   policy: "Herstellerdaten und vergleichende Einordnung; keine eigene Praxistest- oder Langzeitbehauptung"
@@ -481,9 +481,9 @@ Besonders beim Sensorumfang sind die aktuellen Herstellerseiten nicht vollständ
 Preis und Verfügbarkeit können sich kurzfristig ändern.
 
 <!-- pt:neakasa-plus-lifecycle:start -->
-## Aktuelle Plus-Generation statt neuer Route
+## Aktuelle Plus-Generation
 
-Diese Seite bleibt unter der bestehenden URL der Intent-Owner. Neakasa verwendet aktuell sowohl **M1 Plus Lite** als auch **M1 Lite Plus**. Die Bezeichnungen werden deshalb nicht in zwei vermeintlich getrennte Produkte aufgespalten.
+Neakasa verwendet aktuell sowohl **M1 Plus Lite** als auch **M1 Lite Plus**. Beide Bezeichnungen stehen für dasselbe Modell.
 
 Die Plus-Generation ergänzt laut Hersteller Bristle Seal, Composite-Sealing-Ring und einen stärkeren Silikonliner. Prozentuale Leckschutz-Aussagen sind Marketingclaims, kein eigener Dichtigkeitstest. Bei der Infrarotsensorik widersprechen sich offizielle Darstellungen; dokumentiert wird daher der Quellenkonflikt statt einer erfundenen Eindeutigkeit.
 

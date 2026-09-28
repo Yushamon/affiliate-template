@@ -35,10 +35,10 @@ subscription:
   additionalCostNote: "Für dieses exakte Modell ist kein belastbarer Deutschlandtarif dokumentiert; Cloud-/Serviceumfang vor dem Kauf prüfen."
   plans: []
 price:
-  current: 159.99
+  current: 159
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-28T09:03:51.768Z"
+  checkedAt: "2026-09-28T11:31:40.211Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -113,12 +113,12 @@ affiliate:
   rel: "sponsored nofollow noopener"
   target: "_blank"
 priceState: "available"
-priceUpdated: "2026-08-28T09:03:51.768Z"
+priceUpdated: "2026-09-28T11:31:40.211Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-08-28T09:03:51.768Z"
+availabilityUpdated: "2026-09-28T11:31:40.211Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

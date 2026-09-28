@@ -61,11 +61,11 @@ images:
     - src: ../../assets/images/products/petlibro-granary-dual-feeder/gallery-3.webp
       alt: PETLIBRO Granary Dual Feeder mit zwei Katzen
 price:
-  current: 104.99
+  current: 104.97
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 17 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-09-22T03:42:38.942Z"
+  checkedAt: "2026-09-28T11:32:50.514Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -80,12 +80,12 @@ rating: 4.5
 score: 90
 
 priceState: "available"
-priceUpdated: "2026-09-22T03:42:38.942Z"
+priceUpdated: "2026-09-28T11:32:50.514Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-22T03:42:38.942Z"
+availabilityUpdated: "2026-09-28T11:32:50.514Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
@@ -275,7 +275,7 @@ offers:
       current: 119.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-09-22T03:42:39.160Z"
+      checkedAt: "2026-09-28T11:32:50.652Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -299,7 +299,7 @@ offers:
     variantId: "44414075764978"
     expectedSku: "PL-AF103-36W"
     variantLabel: "Weiß / Duale Schale"
-    lastAttemptAt: "2026-09-22T03:42:39.160Z"
+    lastAttemptAt: "2026-09-28T11:32:50.652Z"
 ---
 Der PETLIBRO Granary Dual ist technisch der bekannte PLAF103 mit Doppelschale und Futterteiler. Er ist für gemeinsame, nicht für individuell kontrollierte Fütterung gedacht.
 

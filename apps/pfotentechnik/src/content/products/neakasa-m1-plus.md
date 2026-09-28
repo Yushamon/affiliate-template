@@ -25,10 +25,10 @@ images:
     alt: "Neakasa M1 Plus in hochwertiger Produktansicht"
   gallery: []
 price:
-  current: 379.99
+  current: 399.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-22T03:41:36.308Z"
+  checkedAt: "2026-09-28T11:31:57.116Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -112,12 +112,12 @@ affiliate:
   rel: "sponsored nofollow noopener"
   target: "_blank"
 priceState: "available"
-priceUpdated: "2026-09-22T03:41:36.308Z"
+priceUpdated: "2026-09-28T11:31:57.116Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-22T03:41:36.308Z"
+availabilityUpdated: "2026-09-28T11:31:57.116Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

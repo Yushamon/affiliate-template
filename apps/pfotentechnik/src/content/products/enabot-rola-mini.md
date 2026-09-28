@@ -52,7 +52,7 @@ price:
   current: 133
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-22T03:41:20.425Z"
+  checkedAt: "2026-09-28T11:31:42.325Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -133,12 +133,12 @@ externalEvidence:
     editorialAssessment: "Professional Review und produktspezifische Chewy-Bewertungen zeichnen ein konsistentes Bild: Der ROLA Mini ist als mobile Kamera deutlich flexibler als eine stationäre Lösung, verlangt aber einen weitgehend robotertauglichen Boden und bleibt bei Navigation und Konnektivität fehleranfälliger als ein autonomer Haushaltsroboter."
   note: "Die professionelle Quelle behandelt eindeutig den aktuellen ROLA Mini und dokumentiert drei Wochen Nutzung. Chewy liefert nur acht Ratings und sieben ausgeschriebene Bewertungen; die Nutzerbasis ist daher noch klein."
 priceState: "available"
-priceUpdated: "2026-09-22T03:41:20.425Z"
+priceUpdated: "2026-09-28T11:31:42.325Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-22T03:41:20.425Z"
+availabilityUpdated: "2026-09-28T11:31:42.325Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

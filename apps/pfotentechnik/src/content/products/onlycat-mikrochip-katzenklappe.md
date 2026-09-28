@@ -58,7 +58,7 @@ price:
   current: 275
   currency: "GBP"
   status: "unknown"
-  checkedAt: "2026-09-22T03:41:51.426Z"
+  checkedAt: "2026-09-28T11:32:11.354Z"
   source:
     id: "onlycat.com"
     label: "onlycat.com"
@@ -73,12 +73,12 @@ editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentati
 rating: 3.6
 
 priceState: "available"
-priceUpdated: "2026-09-22T03:41:51.426Z"
+priceUpdated: "2026-09-28T11:32:11.354Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-22T03:41:51.426Z"
+availabilityUpdated: "2026-09-28T11:32:11.354Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

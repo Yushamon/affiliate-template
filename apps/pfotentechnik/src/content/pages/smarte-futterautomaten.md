@@ -245,6 +245,8 @@ Für mehrere Hunde, mehrere Katzen oder gemischte Haushalte behandelt [Futteraut
 
 ## Auswahlhilfe: Welcher Futterautomat passt zu dir?
 
+Du möchtest deine Anforderungen Schritt für Schritt eingrenzen? Der [Futterautomat-Berater](/futterautomat-berater/) führt dich mit sechs Fragen zu Tier, Futterart, Alltag, Funktionen und Budget zu passenden Modellen und ihren Grenzen.
+
 ### Du fütterst überwiegend Trockenfutter
 
 Ein Vorratsautomat dosiert Kroketten aus einem Behälter über ein Dosierrad, einen Rotor oder eine Förderschnecke. Er ist geeignet, wenn du mehrere Mahlzeiten planen und die Tagesration aufteilen möchtest.

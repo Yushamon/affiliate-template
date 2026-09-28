@@ -1,0 +1,323 @@
+{
+  "findings": [
+    {
+      "id": "GS35-01",
+      "severity": "P1",
+      "title": "One canonical sitemap URL has no incoming rendered link",
+      "affectedUrlCount": 1,
+      "examples": [
+        "https://pfotentechnik.de/futterautomat-berater/"
+      ],
+      "evidence": "0 incoming links from all 260 indexable canonical pages; null homepage depth; local and deployed link targets match. HTTP 200, self-canonical and sitemap-listed.",
+      "files": [
+        "apps/pfotentechnik/src/pages/futterautomat-berater.astro",
+        "apps/pfotentechnik/src/components/advisor/PetAdvisor.astro"
+      ],
+      "why": "This one intended public tool has no crawlable discovery path within the canonical graph. It does not explain sitewide Google weakness.",
+      "googleSupport": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+      "recommendedAction": "In a separately authorized patch, add one appropriate contextual entry point to the existing advisor if it is intentionally public. Do not add links to all pages.",
+      "changeRisk": "Low: one editorial link; validate usefulness and tool purpose first."
+    },
+    {
+      "id": "GS35-02",
+      "severity": "P2",
+      "title": "Combined host/protocol/slash variants take multiple redirects",
+      "affectedUrlCount": 1037,
+      "examples": [
+        "http://www.pfotentechnik.de/",
+        "http://pfotentechnik.de/produkt/furbo-mini-360",
+        "https://www.pfotentechnik.de/produkt/furbo-mini-360"
+      ],
+      "evidence": "Complete canonical HTTP/HTTPS × www/non-www × slash/no-slash matrix recorded in redirect-integrity.csv. No internal links or sitemap entries use these variants. All end at 200 self-canonicals; no loops.",
+      "files": [
+        "Production Cloudflare host/protocol normalization (not fully represented in repository)",
+        "apps/pfotentechnik/public/_redirects"
+      ],
+      "why": "Avoidable crawl hops, limited to alternate external entry points. The 68 configured historical aliases already take one 301.",
+      "googleSupport": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "recommendedAction": "Optional future edge-rule consolidation after exporting the actual deployed rules; do not add per-URL redirect lists or arbitrary garbage redirects.",
+      "changeRisk": "Medium: edge routing affects every URL; not a reason for an urgent sitewide patch."
+    },
+    {
+      "id": "GS35-03",
+      "severity": "P2",
+      "title": "Product schema and visible product experience use different text selections",
+      "affectedUrlCount": 103,
+      "examples": [
+        "https://pfotentechnik.de/produkt/furbo-mini-360/",
+        "https://pfotentechnik.de/produkt/neakasa-m1-lite/",
+        "https://pfotentechnik.de/produkt/honeyguardian-a305d/"
+      ],
+      "evidence": "103 reviewBody strings absent as exact visible text; 22 negativeNotes strings on 19 products need semantic comparison. Some are visibly paraphrased. One confirmed inappropriate note on neakasa-m1-lite exposes internal Lifecycle-Owner route metadata as a product disadvantage. All JSON parses; 103 visible editorial ratings, no AggregateRating; 67 offers on 60 products identify external sellers.",
+      "files": [
+        "apps/pfotentechnik/src/pages/produkt/[product].astro:301",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductVerdict2.astro:15",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductDetails2.astro:13",
+        "apps/pfotentechnik/src/content/products/neakasa-m1-lite.md"
+      ],
+      "why": "A rich-result fidelity concern. Exact wording differences are warnings, not proof of fabricated reviews or a ranking penalty. One internal implementation note is definitely not a reader-visible product disadvantage.",
+      "googleSupport": "https://developers.google.com/search/docs/appearance/structured-data/sd-policies",
+      "recommendedAction": "In a later scoped patch, align schema selections with visible review content and omit the internal lifecycle note. Preserve actual editorial scores and unknown identifiers. Resolve warnings semantically before changing them.",
+      "changeRisk": "Low-medium: incorrect deduplication could remove valid pros/cons; preserve visible content and source evidence."
+    },
+    {
+      "id": "GS35-04",
+      "severity": "P2",
+      "title": "Four near-orphans and four lightly supported editorial destinations",
+      "affectedUrlCount": 8,
+      "examples": [
+        "https://pfotentechnik.de/katzenklappe-fuer-mehrere-katzen/",
+        "https://pfotentechnik.de/produkt/petkit-fresh-element-infinity/",
+        "https://pfotentechnik.de/produkt/petlibro-one-rfid-smart-feeder/",
+        "https://pfotentechnik.de/produkt/wopet-pioneer-f01-plus/",
+        "https://pfotentechnik.de/seniorenhunde-richtig-versorgen/",
+        "https://pfotentechnik.de/smarte-gadgets-fuer-hunde-und-katzen/",
+        "https://pfotentechnik.de/vergleiche/beste-futterautomaten-mit-edelstahl-napf/",
+        "https://pfotentechnik.de/vergleiche/kleine-gps-tracker-fuer-katzen/"
+      ],
+      "evidence": "Four pages each have one unique incoming source. Three are products linked only by their manufacturer; seniorenhunde-richtig-versorgen is linked only from /wissen/. Four other editorial pages have <=1 contextual incoming source. All reachable in <=3 clicks.",
+      "files": [
+        "apps/pfotentechnik/src/pages/hersteller/[manufacturer].astro",
+        "apps/pfotentechnik/src/content/pages/",
+        "apps/pfotentechnik/src/content/comparisons/"
+      ],
+      "why": "Localized topical support gaps. Direct hub links are absent for 135 pages under the inherited cluster mapping; absence alone is not a defect. Legal/navigation destinations are not content-link problems.",
+      "googleSupport": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+      "recommendedAction": "Review relevance only when these pages are editorially updated; use a natural same-topic guide/comparison connection if it helps readers. No mass linking.",
+      "changeRisk": "Low if selective; medium if applied mechanically."
+    },
+    {
+      "id": "GS35-05",
+      "severity": "P2",
+      "title": "Lastmod is editorial-source-based but does not cover all meaningful derived changes",
+      "affectedUrlCount": 248,
+      "confirmedExampleCount": 1,
+      "examples": [
+        "https://pfotentechnik.de/produkt/furbo-mini-360/"
+      ],
+      "evidence": "248 dates originate from updatedAt ?? publishedAt; 12 static routes omit lastmod. No build-clock default. Furbo has lastmod 2026-08-15, while commit 8db22020 on 2026-09-09 changed displayed price 81 → 98. Automatic check timestamps alone are not meaningful edits.",
+      "files": [
+        "apps/pfotentechnik/astro.config.mjs:79",
+        "apps/pfotentechnik/astro.config.mjs:132",
+        "apps/pfotentechnik/src/content/products/furbo-mini-360.md:17"
+      ],
+      "why": "LASTMOD_PARTIALLY_TRUSTWORTHY: no invented freshness, but source dates do not fully track derived visible/structured changes. 248 is the date-bearing population, not 248 proven inaccurate dates.",
+      "googleSupport": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
+      "recommendedAction": "Retain real source dates; document meaningful-update ownership. If an accurate date cannot be established for a route, omit it. Do not substitute deploy time or routine price-check time.",
+      "changeRisk": "Low; false freshness would be riskier than omission."
+    },
+    {
+      "id": "GS35-06",
+      "severity": "P2",
+      "title": "Existing strict price audit fails for two missing affiliate destinations",
+      "affectedUrlCount": 2,
+      "examples": [
+        "https://pfotentechnik.de/produkt/litter-robot-5-pro/",
+        "https://pfotentechnik.de/produkt/neakasa-riko/"
+      ],
+      "evidence": "price:audit:strict exit 1 because missingAffiliate=2; missingPrice=1, stale30=41. Neither affected product emits an Offer. Unknown availability is retained; no fabricated merchant offer observed.",
+      "files": [
+        "apps/pfotentechnik/scripts/price-intelligence/audit.mjs:11",
+        "apps/pfotentechnik/src/content/products/litter-robot-5-pro.md",
+        "apps/pfotentechnik/src/content/products/neakasa-riko.md"
+      ],
+      "why": "A maintenance/gate exception, not an indexing blocker. Missing commercial destinations may be deliberate for uncertain products.",
+      "googleSupport": "No Google requirement to invent an affiliate link or an unknown price.",
+      "recommendedAction": "Use the existing product-maintenance workflow to determine whether the omissions are intentional; do not invent values to turn the gate green.",
+      "changeRisk": "Low if reviewed; high factual risk if guessed."
+    },
+    {
+      "id": "GS35-07",
+      "severity": "P3",
+      "title": "Publisher slugs are emitted as SKU identifiers",
+      "affectedUrlCount": 103,
+      "examples": [
+        "https://pfotentechnik.de/produkt/furbo-mini-360/"
+      ],
+      "evidence": "Product.sku = contentProduct.slug. No MPN/GTIN is fabricated; manufacturer and brand roles are not confused with seller.",
+      "files": [
+        "apps/pfotentechnik/src/pages/produkt/[product].astro:323"
+      ],
+      "why": "No demonstrated ranking/indexing effect. A publisher-local identifier must not be presented as a verified manufacturer SKU.",
+      "googleSupport": "https://developers.google.com/search/docs/appearance/structured-data/product-snippet",
+      "recommendedAction": "Document as publisher-local or omit during a future schema cleanup; do not replace with guessed identifiers.",
+      "changeRisk": "Low; optional field."
+    },
+    {
+      "id": "GS35-08",
+      "severity": "P3",
+      "title": "Older URL audit miscounts noindex pages",
+      "affectedUrlCount": 2,
+      "examples": [
+        "https://pfotentechnik.de/404/",
+        "https://pfotentechnik.de/foundation/"
+      ],
+      "evidence": "audit-url-consistency reports 262 indexable pages because its regex uses a double-escaped word boundary; independent parse5 extraction and existing baseline both report 260. Existing audit exits 0.",
+      "files": [
+        "apps/pfotentechnik/scripts/seo/audit-url-consistency.mjs:81"
+      ],
+      "why": "Audit-confidence issue only. Production noindex signals are correct. This package uses actual HTML parsing rather than accepting that counter.",
+      "googleSupport": "No production directive problem.",
+      "recommendedAction": "Consolidate the legacy parser in a future tooling cleanup; use the attached URL matrix as the current measured denominator.",
+      "changeRisk": "Low: audit-only."
+    }
+  ],
+  "severity": {
+    "P0": 0,
+    "P1": 1,
+    "P2": 5,
+    "P3": 2
+  },
+  "decision": {
+    "materialTechnicalGoogleProblem": "NO",
+    "qualification": "No observed sitewide technical mechanism explains extremely low visibility. Public GETs cannot prove Google-selected canonicals, actual Googlebot delivery, or index-coverage reasons.",
+    "productionPatchJustified": "YES",
+    "patchScope": "Separate, minimal work package for the one P1 orphan; schema fidelity cleanup can be included only if explicitly authorized. No patch applied.",
+    "technicalSeoFreeze": "NO — limited P1 remains; freeze broad canonical, sitemap, rendering and performance redesign."
+  },
+  "lastmodClassification": "LASTMOD_PARTIALLY_TRUSTWORTHY",
+  "gscCorrelation": {
+    "crawledCurrentlyNotIndexedAnalyzed": 0,
+    "commonTechnicalPattern": "NOT_ASSESSABLE_WITHOUT_URL_LEVEL_EXCLUSIONS",
+    "evidenceStrength": "Unavailable for exclusion causality; complete current technical census",
+    "dataThrough": "2026-09-21",
+    "google28d": {
+      "clicks": 0,
+      "impressions": 36
+    },
+    "bing28d": {
+      "clicks": 18,
+      "impressions": 248
+    }
+  },
+  "validation": {
+    "tests": {
+      "total": 856,
+      "passed": 856,
+      "failed": 0
+    },
+    "build": {
+      "status": "PASS",
+      "pages": 375
+    },
+    "existingAudits": [
+      {
+        "command": "audit:technical-seo",
+        "exitCode": 0,
+        "durationMs": 627,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2/validation/audit-technical-seo.log"
+      },
+      {
+        "command": "audit:url-consistency:strict",
+        "exitCode": 0,
+        "durationMs": 482,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2/validation/audit-url-consistency-strict.log"
+      },
+      {
+        "command": "audit:release-build-output:strict",
+        "exitCode": 0,
+        "durationMs": 465,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2/validation/audit-release-build-output-strict.log"
+      },
+      {
+        "command": "audit:internal-links:strict",
+        "exitCode": 0,
+        "durationMs": 2216,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2/validation/audit-internal-links-strict.log"
+      },
+      {
+        "command": "audit:internal-link-targets:strict",
+        "exitCode": 0,
+        "durationMs": 450,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2/validation/audit-internal-link-targets-strict.log"
+      },
+      {
+        "command": "audit:internal-link-health:strict",
+        "exitCode": 0,
+        "durationMs": 2536,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2/validation/audit-internal-link-health-strict.log"
+      },
+      {
+        "command": "audit:comparison-schema",
+        "exitCode": 0,
+        "durationMs": 285,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2/validation/audit-comparison-schema.log"
+      },
+      {
+        "command": "audit:products:strict",
+        "exitCode": 0,
+        "durationMs": 482,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2/validation/audit-products-strict.log"
+      },
+      {
+        "command": "audit:product-standard-3:strict",
+        "exitCode": 0,
+        "durationMs": 381,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2/validation/audit-product-standard-3-strict.log"
+      },
+      {
+        "command": "audit:product-evidence",
+        "exitCode": 0,
+        "durationMs": 277,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2/validation/audit-product-evidence.log"
+      },
+      {
+        "command": "price:audit:strict",
+        "exitCode": 1,
+        "durationMs": 482,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2/validation/price-audit-strict.log"
+      },
+      {
+        "command": "audit:image-alt:strict",
+        "exitCode": 0,
+        "durationMs": 495,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2/validation/audit-image-alt-strict.log"
+      },
+      {
+        "command": "design-system:contrast:audit",
+        "exitCode": 0,
+        "durationMs": 300,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2/validation/design-system-contrast-audit.log"
+      },
+      {
+        "command": "design-system:responsive:audit",
+        "exitCode": 0,
+        "durationMs": 256,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2/validation/design-system-responsive-audit.log"
+      },
+      {
+        "command": "audit:performance:strict",
+        "exitCode": 0,
+        "durationMs": 1862,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2/validation/audit-performance-strict.log"
+      },
+      {
+        "command": "audit:frontmatter-dates:strict",
+        "exitCode": 0,
+        "durationMs": 282,
+        "log": "/Users/boris.buckowitz/ExtensionQA/affiliate-template/reports/google-signal-integrity-35.2/validation/audit-frontmatter-dates-strict.log"
+      }
+    ],
+    "browser": {
+      "checks": 30,
+      "passed": 30,
+      "failed": 0
+    },
+    "electron": "Unavailable; installed Chrome reused identical existing metrics, thresholds, routes and viewports.",
+    "contentQuality": "Existing collectContentQuality run without generated/source writes; zero findings."
+  },
+  "scopeGuard": {
+    "productionContentChanges": 0,
+    "productionUiChanges": 0,
+    "productDataChanges": 0,
+    "newPublicUrls": 0,
+    "deletedPublicUrls": 0,
+    "redirectChanges": 0
+  },
+  "limitations": [
+    "No URL-level GSC exclusion or URL Inspection export available.",
+    "No verified Googlebot-IP fetch or field CWV/CrUX evidence.",
+    "Semantic exact-text warnings require human interpretation; only one product is classified INVALID/MISLEADING for a confirmed internal-metadata note.",
+    "Media HTTP checks cover deployed hero/schema assets; not every srcset variant or every external merchant destination."
+  ]
+}

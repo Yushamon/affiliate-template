@@ -62,7 +62,7 @@ price:
   current: 69.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-22T03:42:53.969Z"
+  checkedAt: "2026-09-28T11:33:02.625Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -77,12 +77,12 @@ rating: 4.2
 score: 84
 
 priceState: "available"
-priceUpdated: "2026-09-22T03:42:53.969Z"
+priceUpdated: "2026-09-28T11:33:02.625Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-22T03:42:53.969Z"
+availabilityUpdated: "2026-09-28T11:33:02.625Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
@@ -390,7 +390,7 @@ offers:
     availability: "unknown"
     identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
     evidenceSources: []
-    lastAttemptAt: "2026-09-22T03:42:53.991Z"
+    lastAttemptAt: "2026-09-28T11:33:02.628Z"
     error: "Offizielle Produkt-URL unresolved."
 ---
 ## PETLIBRO Space Smart Feeder: redaktionelle Einordnung

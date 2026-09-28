@@ -61,7 +61,7 @@ price:
   current: 79.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-22T03:42:51.056Z"
+  checkedAt: "2026-09-28T11:33:00.457Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -69,12 +69,12 @@ price:
 rating: 3.7
 
 priceState: "available"
-priceUpdated: "2026-09-22T03:42:51.056Z"
+priceUpdated: "2026-09-28T11:33:00.457Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-22T03:42:51.056Z"
+availabilityUpdated: "2026-09-28T11:33:00.457Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
@@ -248,7 +248,7 @@ offers:
       current: 109.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-09-22T03:42:51.278Z"
+      checkedAt: "2026-09-28T11:33:00.627Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -272,7 +272,7 @@ offers:
     variantId: "52157103145326"
     expectedSku: "PL-PC001-31W"
     variantLabel: "1 Paket / Weiß"
-    lastAttemptAt: "2026-09-22T03:42:51.278Z"
+    lastAttemptAt: "2026-09-28T11:33:00.627Z"
 ---
 
 ## Einordnung ohne eigenen Produkttest

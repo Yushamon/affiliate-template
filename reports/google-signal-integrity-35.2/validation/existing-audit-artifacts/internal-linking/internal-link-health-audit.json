@@ -1,0 +1,285 @@
+{
+  "version": "4.0.1",
+  "generatedAt": "2026-09-28T10:55:18.147Z",
+  "strict": true,
+  "inputs": {
+    "legacyVersion": "3.0.3",
+    "targetAuditVersion": "2.0.2",
+    "builtRoutes": 375
+  },
+  "summary": {
+    "documents": 248,
+    "legacyErrors": 0,
+    "legacyWarnings": 8,
+    "runtimeErrors": 0,
+    "effectiveErrors": 0,
+    "effectiveWarnings": 8,
+    "falsePositives": 0
+  },
+  "classifications": {
+    "advisory": 19
+  },
+  "effectiveSeverities": {
+    "info": 11,
+    "warning": 8
+  },
+  "findings": [
+    {
+      "severity": "warning",
+      "code": "LINKING_METADATA_MISSING",
+      "message": "/ifa-2026-haustiertechnik/ besitzt keine Linking-Metadaten.",
+      "sourceRoute": "/ifa-2026-haustiertechnik/",
+      "file": "apps/pfotentechnik/src/content/pages/ifa-2026-haustiertechnik.md",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/hund-hat-durchfall/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/hund-hat-durchfall/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/hund-trinkt-ploetzlich-viel/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/hund-trinkt-ploetzlich-viel/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/katze-an-trinkbrunnen-gewoehnen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/katze-an-trinkbrunnen-gewoehnen/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/katzentrinkbrunnen-dauerbetrieb-urlaub/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/seniorenhunde-richtig-versorgen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/seniorenhunde-richtig-versorgen/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/trinkbrunnen-fuer-kitten-sicher/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/trinkbrunnen-fuer-kitten-sicher/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_INCOMING_INTERNAL_LINK",
+      "message": "/wie-kann-technik-gegen-langeweile-helfen/ besitzt im simulierten und expliziten Linkgraph keinen eingehenden Link.",
+      "targetRoute": "/wie-kann-technik-gegen-langeweile-helfen/",
+      "originalSeverity": "warning",
+      "effectiveSeverity": "warning",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„automatischer futterspender“ besitzt den eindeutigen Eigentümer /smarte-futterautomaten/ (taxonomy-owner).",
+      "anchor": "automatischer futterspender",
+      "owner": "/smarte-futterautomaten/",
+      "resolution": "taxonomy-owner",
+      "targets": [
+        "/smarte-futterautomaten/",
+        "/welcher-futterautomat-ist-der-richtige/"
+      ],
+      "originalSeverity": "info",
+      "effectiveSeverity": "info",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„futterautomat fur grosse hunde“ besitzt den eindeutigen Eigentümer /vergleiche/futterautomat-fuer-grosse-hunde/ (exact-title-owner).",
+      "anchor": "futterautomat fur grosse hunde",
+      "owner": "/vergleiche/futterautomat-fuer-grosse-hunde/",
+      "resolution": "exact-title-owner",
+      "targets": [
+        "/wie-gross-sollte-ein-futterautomat-sein/",
+        "/vergleiche/futterautomat-fuer-grosse-hunde/"
+      ],
+      "originalSeverity": "info",
+      "effectiveSeverity": "info",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„futtermenge katze“ besitzt den eindeutigen Eigentümer /futtermenge-katze/ (configured-owner).",
+      "anchor": "futtermenge katze",
+      "owner": "/futtermenge-katze/",
+      "resolution": "configured-owner",
+      "targets": [
+        "/futtermenge-katze/",
+        "/uebergewicht-bei-katzen-vermeiden/"
+      ],
+      "originalSeverity": "info",
+      "effectiveSeverity": "info",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„hundetrinkbrunnen“ besitzt den eindeutigen Eigentümer /trinkbrunnen-hund/ (configured-owner).",
+      "anchor": "hundetrinkbrunnen",
+      "owner": "/trinkbrunnen-hund/",
+      "resolution": "configured-owner",
+      "targets": [
+        "/trinkbrunnen-hund/",
+        "/trinkbrunnen/"
+      ],
+      "originalSeverity": "info",
+      "effectiveSeverity": "info",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„katze trinkt viel“ besitzt den eindeutigen Eigentümer /katze-trinkt-viel/ (configured-owner).",
+      "anchor": "katze trinkt viel",
+      "owner": "/katze-trinkt-viel/",
+      "resolution": "configured-owner",
+      "targets": [
+        "/katze-trinkt-viel/",
+        "/wie-viel-wasser-braucht-eine-katze/"
+      ],
+      "originalSeverity": "info",
+      "effectiveSeverity": "info",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„katze trinkt zu wenig“ besitzt den eindeutigen Eigentümer /wie-viel-wasser-braucht-eine-katze/ (configured-owner).",
+      "anchor": "katze trinkt zu wenig",
+      "owner": "/wie-viel-wasser-braucht-eine-katze/",
+      "resolution": "configured-owner",
+      "targets": [
+        "/trinkbrunnen-fuer-katzen-sinnvoll/",
+        "/wie-viel-wasser-braucht-eine-katze/"
+      ],
+      "originalSeverity": "info",
+      "effectiveSeverity": "info",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„trinkbrunnen fur hunde“ besitzt den eindeutigen Eigentümer /trinkbrunnen-hund/ (taxonomy-owner).",
+      "anchor": "trinkbrunnen fur hunde",
+      "owner": "/trinkbrunnen-hund/",
+      "resolution": "taxonomy-owner",
+      "targets": [
+        "/trinkbrunnen-hund/",
+        "/trinkbrunnen/"
+      ],
+      "originalSeverity": "info",
+      "effectiveSeverity": "info",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„trinkbrunnen fur katzen“ besitzt den eindeutigen Eigentümer /trinkbrunnen-fuer-katzen-sinnvoll/ (taxonomy-owner).",
+      "anchor": "trinkbrunnen fur katzen",
+      "owner": "/trinkbrunnen-fuer-katzen-sinnvoll/",
+      "resolution": "taxonomy-owner",
+      "targets": [
+        "/trinkbrunnen-fuer-katzen-sinnvoll/",
+        "/trinkbrunnen/"
+      ],
+      "originalSeverity": "info",
+      "effectiveSeverity": "info",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„trinkbrunnen reinigen“ besitzt den eindeutigen Eigentümer /katzentrinkbrunnen-richtig-reinigen/ (configured-owner).",
+      "anchor": "trinkbrunnen reinigen",
+      "owner": "/katzentrinkbrunnen-richtig-reinigen/",
+      "resolution": "configured-owner",
+      "targets": [
+        "/katzentrinkbrunnen-richtig-reinigen/",
+        "/trinkbrunnen-fuer-katzen-sinnvoll/"
+      ],
+      "originalSeverity": "info",
+      "effectiveSeverity": "info",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„wasserbedarf hund“ besitzt den eindeutigen Eigentümer /wie-viel-wasser-braucht-ein-hund/ (configured-owner).",
+      "anchor": "wasserbedarf hund",
+      "owner": "/wie-viel-wasser-braucht-ein-hund/",
+      "resolution": "configured-owner",
+      "targets": [
+        "/hund-trinkt-zu-wenig/",
+        "/wie-viel-wasser-braucht-ein-hund/"
+      ],
+      "originalSeverity": "info",
+      "effectiveSeverity": "info",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    },
+    {
+      "severity": "info",
+      "code": "ANCHOR_CONFLICT_RESOLVED_BY_OWNER",
+      "message": "„wie oft hund futtern“ besitzt den eindeutigen Eigentümer /fuetterungszeiten-nach-alter/ (configured-owner).",
+      "anchor": "wie oft hund futtern",
+      "owner": "/fuetterungszeiten-nach-alter/",
+      "resolution": "configured-owner",
+      "targets": [
+        "/fuetterungszeiten-nach-alter/",
+        "/warum-hunde-feste-fuetterungszeiten-brauchen/"
+      ],
+      "originalSeverity": "info",
+      "effectiveSeverity": "info",
+      "classification": "advisory",
+      "rationale": "Redaktioneller oder Governance-Befund ohne nachgewiesenen Fehler im gebauten HTML."
+    }
+  ]
+}

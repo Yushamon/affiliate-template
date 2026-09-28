@@ -1,0 +1,3586 @@
+{
+  "findings": [],
+  "conflicts": [
+    {
+      "id": "gps-bluetooth-duplicate",
+      "type": "exact-intent-conflict",
+      "severity": "info",
+      "routes": [
+        "/gps-tracker-oder-bluetooth-tag/",
+        "/gps-oder-bluetooth/"
+      ],
+      "pageTypes": [
+        "consolidated",
+        "decision-guide"
+      ],
+      "intents": [
+        "commercial-investigation",
+        "commercial-investigation"
+      ],
+      "mainEntities": [
+        "GPS vs Bluetooth",
+        "GPS oder Bluetooth?"
+      ],
+      "titles": [
+        "",
+        "GPS oder Bluetooth für Hund und Katze?"
+      ],
+      "h1": [
+        "",
+        "GPS oder Bluetooth?"
+      ],
+      "metrics": null,
+      "topicOwners": [
+        "/gps-oder-bluetooth/"
+      ],
+      "reason": "Beide Ratgeber beantworten dieselbe Systementscheidung. Die Zielseite ist technisch präziser, besser intern eingebunden und besitzt das belastbarere Quellenfundament.",
+      "action": "CONSOLIDATE",
+      "automatic": true,
+      "before": "confirmed-duplicate",
+      "after": "resolved",
+      "redirect": {
+        "expected": "/gps-oder-bluetooth/",
+        "actual": "/gps-oder-bluetooth/"
+      },
+      "remainingInternalLinks": []
+    },
+    {
+      "id": "petkit-yumshare-dual-duplicate",
+      "type": "exact-intent-conflict",
+      "severity": "info",
+      "routes": [
+        "/produkt/petkit-yumshare-dual/",
+        "/produkt/petkit-yumshare-dual-hopper/"
+      ],
+      "pageTypes": [
+        "consolidated",
+        "product"
+      ],
+      "intents": [
+        "commercial-investigation",
+        "product-research"
+      ],
+      "mainEntities": [
+        "GPS vs Bluetooth",
+        "PETKIT YumShare Dual-Hopper 2"
+      ],
+      "titles": [
+        "",
+        "PETKIT YumShare Dual-Hopper 2 im Check"
+      ],
+      "h1": [
+        "",
+        "PETKIT YumShare Dual-Hopper 2"
+      ],
+      "metrics": null,
+      "topicOwners": [
+        "/produkt/petkit-yumshare-dual-hopper/"
+      ],
+      "reason": "Beide Seiten beschreiben den PETKIT YumShare Dual-Hopper 2. Die P592-Zielseite enthält die vollständigere Modellabgrenzung, aktuelle Verfügbarkeit und die gepflegten Vergleichsbezüge.",
+      "action": "CONSOLIDATE",
+      "automatic": true,
+      "before": "confirmed-duplicate",
+      "after": "resolved",
+      "redirect": {
+        "expected": "/produkt/petkit-yumshare-dual-hopper/",
+        "actual": "/produkt/petkit-yumshare-dual-hopper/"
+      },
+      "remainingInternalLinks": []
+    },
+    {
+      "id": "separated|/produkt/petkit-eversweet-solo-2-fountain/|/produkt/petkit-eversweet-solo-se/",
+      "type": "intent-separation",
+      "severity": "info",
+      "routes": [
+        "/produkt/petkit-eversweet-solo-2-fountain/",
+        "/produkt/petkit-eversweet-solo-se/"
+      ],
+      "pageTypes": [
+        "product",
+        "product"
+      ],
+      "intents": [
+        "product-research",
+        "product-research"
+      ],
+      "mainEntities": [
+        "PETKIT Eversweet Solo 2",
+        "PETKIT Eversweet Solo SE"
+      ],
+      "titles": [
+        "PETKIT Eversweet Solo 2 im Check",
+        "PETKIT Eversweet Solo SE im Check"
+      ],
+      "h1": [
+        "PETKIT Eversweet Solo 2",
+        "PETKIT Eversweet Solo SE"
+      ],
+      "metrics": {
+        "title": 1,
+        "headings": 0.7436,
+        "body": 0.452,
+        "entities": 1,
+        "combined": 0.7208
+      },
+      "topicOwners": [
+        "/produkt/petkit-eversweet-solo-2-fountain/",
+        "/produkt/petkit-eversweet-solo-se/"
+      ],
+      "reason": "Zwei eigenständige PETKIT-Modellvarianten mit unterschiedlicher Produktidentität.",
+      "action": "DIFFERENTIATE",
+      "automatic": false,
+      "before": "similar-topics",
+      "after": "intentionally-separated"
+    },
+    {
+      "id": "separated|/produkt/tractive-dog-6-xl/|/produkt/tractive-dog-6/",
+      "type": "intent-separation",
+      "severity": "info",
+      "routes": [
+        "/produkt/tractive-dog-6-xl/",
+        "/produkt/tractive-dog-6/"
+      ],
+      "pageTypes": [
+        "product",
+        "product"
+      ],
+      "intents": [
+        "product-research",
+        "product-research"
+      ],
+      "mainEntities": [
+        "Tractive DOG 6",
+        "Tractive DOG 6 XL"
+      ],
+      "titles": [
+        "Tractive DOG 6: Akku, Abo und GPS-Tracker im Check",
+        "Tractive DOG 6 XL: Akku, Abo und GPS-Tracker im Check"
+      ],
+      "h1": [
+        "Tractive DOG 6",
+        "Tractive DOG 6 XL"
+      ],
+      "metrics": {
+        "title": 1,
+        "headings": 0.8462,
+        "body": 0.4566,
+        "entities": 1,
+        "combined": 0.7402
+      },
+      "topicOwners": [
+        "/produkt/tractive-dog-6/",
+        "/produkt/tractive-dog-6-xl/"
+      ],
+      "reason": "Standard- und XL-Variante besitzen unterschiedliche Größen- und Einsatzprofile.",
+      "action": "DIFFERENTIATE",
+      "automatic": false,
+      "before": "similar-topics",
+      "after": "intentionally-separated"
+    }
+  ],
+  "decisions": [
+    {
+      "route": "/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/smarte-haustiertechnik/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/404/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/404/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/advisor/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/advisor/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/cockpit/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/cockpit/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/history/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/history/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/media/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/media/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/prices/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/prices/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/aqara-smart-pet-feeder-c1/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/aqara-smart-pet-feeder-c1/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/cat-mate-335-pet-fountain/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/cat-mate-335-pet-fountain/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/cat-mate-c200/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/cat-mate-c200/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/cat-mate-c300/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/cat-mate-c300/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/cat-mate-c500/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/cat-mate-c500/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/cat-mate-elite-355w/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/cat-mate-elite-355w/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/cat-mate-shell-fountain/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/cat-mate-shell-fountain/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/catit-pixi-smart-6-meal-feeder/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/catit-pixi-smart-6-meal-feeder/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/catit-pixi-smart-trinkbrunnen/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/catit-pixi-smart-trinkbrunnen/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/catit-pixi-vision-smart-feeder/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/catit-pixi-vision-smart-feeder/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/devoko-90l-automatisches-katzenklo/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/devoko-90l-automatisches-katzenklo/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/enabot-ebo-air-2/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/enabot-ebo-air-2/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/enabot-rola-mini/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/enabot-rola-mini/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/enabot-rola-pettracker/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/enabot-rola-pettracker/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/feelneedy-fn-w18-8l-katzenbrunnen/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/feelneedy-fn-w18-8l-katzenbrunnen/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/flappie/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/flappie/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/furbo-360-hundekamera/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/furbo-360-hundekamera/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/furbo-360-katzenkamera/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/furbo-360-katzenkamera/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/furbo-mini-360/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/furbo-mini-360/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/garmin-alpha-t-20/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/garmin-alpha-t-20/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/garmin-alpha-tt-25/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/garmin-alpha-tt-25/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/honeyguardian-a305d/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/honeyguardian-a305d/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/honeyguardian-a68/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/honeyguardian-a68/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/honeyguardian-smart-pet-feeder-s305d/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/honeyguardian-smart-pet-feeder-s305d/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/imipaw-3l-automatic-cat-feeder/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/imipaw-3l-automatic-cat-feeder/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/invoxia-biotracker-2026/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/invoxia-biotracker-2026/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/litter-robot-4/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/litter-robot-4/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/litter-robot-5-pro/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/litter-robot-5-pro/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/neakasa-m1-lite/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/neakasa-m1-lite/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/neakasa-m1-plus/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/neakasa-m1-plus/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/neakasa-riko/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/neakasa-riko/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/oneisall-2-2l-cordless-fountain/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/oneisall-2-2l-cordless-fountain/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/oneisall-2-in-1-feeder-water/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/oneisall-2-in-1-feeder-water/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/oneisall-3-2l-cordless-fountain/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/oneisall-3-2l-cordless-fountain/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/oneisall-3-5l-cordless-fountain/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/oneisall-3-5l-cordless-fountain/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/oneisall-5l-automatic-cat-feeder/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/oneisall-5l-automatic-cat-feeder/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/oneisall-7l-dog-water-fountain/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/oneisall-7l-dog-water-fountain/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/onlycat-mikrochip-katzenklappe/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/onlycat-mikrochip-katzenklappe/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/paj-pet-finder-4g-mini/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/paj-pet-finder-4g-mini/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/pawbby-smart-pet-feeder/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/pawbby-smart-pet-feeder/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/pawfit-3/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/pawfit-3/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/pawsync-smart-pet-feeder/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/pawsync-smart-pet-feeder/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petkit-eversweet-3-pro-uvc/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petkit-eversweet-3-pro-uvc/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petkit-eversweet-5-mini/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petkit-eversweet-5-mini/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petkit-eversweet-max-2-uvc/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petkit-eversweet-max-2-uvc/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petkit-eversweet-max-cordless/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petkit-eversweet-max-cordless/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petkit-eversweet-solo-2-fountain/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petkit-eversweet-solo-2-fountain/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petkit-eversweet-solo-se/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petkit-eversweet-solo-se/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petkit-eversweet-ultra/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petkit-eversweet-ultra/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petkit-fresh-element-infinity/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petkit-fresh-element-infinity/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petkit-fresh-element-solo/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petkit-fresh-element-solo/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petkit-puramax-2/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petkit-puramax-2/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petkit-purobot-crystal-duo/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petkit-purobot-crystal-duo/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petkit-purobot-max-3/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petkit-purobot-max-3/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petkit-purobot-max-pro-2/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petkit-purobot-max-pro-2/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petkit-yumshare-dual-hopper/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petkit-yumshare-dual-hopper/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petkit-yumshare-solo-2/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petkit-yumshare-solo-2/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petlibro-air-automatic-feeder/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petlibro-air-automatic-feeder/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petlibro-air-wifi-feeder/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petlibro-air-wifi-feeder/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petlibro-capsule-dog-fountain/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petlibro-capsule-dog-fountain/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petlibro-dockstream-2-smart-cordless/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petlibro-dockstream-2-smart-cordless/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petlibro-dockstream-2-smart/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petlibro-dockstream-2-smart/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petlibro-dockstream-cordless/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petlibro-dockstream-cordless/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petlibro-dockstream-rfid-smart/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petlibro-dockstream-rfid-smart/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petlibro-glacier-ultrafiltration/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petlibro-glacier-ultrafiltration/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petlibro-granary-2-vision/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petlibro-granary-2-vision/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petlibro-granary-camera-feeder/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petlibro-granary-camera-feeder/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petlibro-granary-dual-feeder/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petlibro-granary-dual-feeder/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petlibro-granary-wifi-feeder/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petlibro-granary-wifi-feeder/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petlibro-luma-smart-litter-box/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petlibro-luma-smart-litter-box/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petlibro-one-rfid-smart-feeder/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petlibro-one-rfid-smart-feeder/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petlibro-polar-wet-food-feeder/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petlibro-polar-wet-food-feeder/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petlibro-scout-smart-camera/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petlibro-scout-smart-camera/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petlibro-space-smart-feeder/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petlibro-space-smart-feeder/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petlibro-stainless-steel-fountain/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petlibro-stainless-steel-fountain/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petsafe-freshfeed-refrigerated-feeder/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petsafe-freshfeed-refrigerated-feeder/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petsafe-healthy-pet-simply-feed/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petsafe-healthy-pet-simply-feed/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petsafe-mikrochip-katzenklappe/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petsafe-mikrochip-katzenklappe/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petsafe-petporte-smart-flap/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petsafe-petporte-smart-flap/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petsafe-smart-feed-2/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petsafe-smart-feed-2/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petsafe-streamside-trinkbrunnen/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petsafe-streamside-trinkbrunnen/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petsnowy-snow-plus/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petsnowy-snow-plus/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/pettec-cam-360/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/pettec-cam-360/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/petwalk-medium-tiertuer/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/petwalk-medium-tiertuer/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/prothelis-area-pets/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/prothelis-area-pets/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/reolink-e1-zoom/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/reolink-e1-zoom/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/surefeed-microchip-pet-feeder-connect/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/surefeed-microchip-pet-feeder-connect/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/surefeed-microchip-pet-feeder/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/surefeed-microchip-pet-feeder/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/sureflap-dualscan-mikrochip-katzenklappe/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/sureflap-dualscan-mikrochip-katzenklappe/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/sureflap-mikrochip-katzenklappe-connect/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/sureflap-mikrochip-katzenklappe-connect/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/sureflap-mikrochip-katzenklappe/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/sureflap-mikrochip-katzenklappe/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/tractive-cat-6-mini/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/tractive-cat-6-mini/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/tractive-dog-6-xl/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/tractive-dog-6-xl/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/tractive-dog-6/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/tractive-dog-6/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/weenect-xs/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/weenect-xs/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/weenect-xt/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/weenect-xt/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/wopet-cube-air-ca10/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/wopet-cube-air-ca10/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/wopet-heritage-view-camera-feeder/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/wopet-heritage-view-camera-feeder/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/wopet-patrol-f07-pro/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/wopet-patrol-f07-pro/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/wopet-pioneer-f01-plus/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/wopet-pioneer-f01-plus/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/xiaomi-smart-pet-food-feeder-2/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/xiaomi-smart-pet-food-feeder-2/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/xiaomi-smart-pet-fountain-2/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/xiaomi-smart-pet-fountain-2/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/products/zeromouse-2-0/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/products/zeromouse-2-0/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/prompts/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/prompts/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/tasks/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/tasks/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/admin/seo/topical-authority/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/admin/seo/topical-authority/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/affiliate-hinweis/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/affiliate-hinweis/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/automatische-katzentoiletten/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/automatische-katzentoiletten/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/berater/futterautomat/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/berater/futterautomat/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/biofilm-im-katzentrinkbrunnen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/biofilm-im-katzentrinkbrunnen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/datenschutz-bei-gps-trackern/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/datenschutz-bei-gps-trackern/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/datenschutz/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/datenschutz/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/filter-im-katzentrinkbrunnen-wechseln/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/foundation/",
+      "decision": "NOINDEX",
+      "reason": "Technische oder bewusst nicht indexierbare Seite.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/foundation/",
+      "action": "NOINDEX"
+    },
+    {
+      "route": "/fuetterungszeiten-nach-alter/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/fuetterungszeiten-nach-alter/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/futterautomat-bei-stromausfall/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/futterautomat-bei-stromausfall/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/futterautomat-bei-uebergewicht/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/futterautomat-bei-uebergewicht/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/futterautomat-berater/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/futterautomat-berater/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/futterautomat-hund/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/futterautomat-hund/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/futterautomat-im-urlaub/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/futterautomat-im-urlaub/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/futterautomat-katze/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/futterautomat-katze/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/futterautomat-richtig-reinigen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/futterautomat-richtig-reinigen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/futterautomat-und-ernaehrung/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/futterautomat-und-ernaehrung/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/futtermenge-hund/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/futtermenge-hund/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/futtermenge-katze/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/futtermenge-katze/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/glossar/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/glossar/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/gps-oder-bluetooth/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/gps-oder-bluetooth/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/gps-tracker-oder-bluetooth-tag/",
+      "decision": "CONSOLIDATE",
+      "reason": "Beide Ratgeber beantworten dieselbe Systementscheidung. Die Zielseite ist technisch präziser, besser intern eingebunden und besitzt das belastbarere Quellenfundament.",
+      "confidence": "high",
+      "conflictRoutes": [
+        "/gps-oder-bluetooth/"
+      ],
+      "topicOwner": "/gps-oder-bluetooth/",
+      "action": "Redirect und interne Links auf Zielinhaber"
+    },
+    {
+      "route": "/gps-tracker-richtig-befestigen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/gps-tracker-richtig-befestigen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/gps-tracker/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/gps-tracker/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/haustierkameras/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/haustierkameras/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/aqara/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/aqara/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/cat-mate/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/cat-mate/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/catit/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/catit/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/devoko/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/devoko/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/enabot/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/enabot/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/flappie/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/flappie/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/furbo/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/furbo/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/garmin/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/garmin/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/honeyguardian/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/honeyguardian/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/imipaw/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/imipaw/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/invoxia/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/invoxia/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/neakasa/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/neakasa/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/oneisall/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/oneisall/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/onlycat/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/onlycat/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/paj-gps/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/paj-gps/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/pawbby/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/pawbby/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/pawfit/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/pawfit/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/pawsync/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/pawsync/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/petkit/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/petkit/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/petlibro/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/petlibro/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/petsafe/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/petsafe/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/petsnowy/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/petsnowy/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/pettec/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/pettec/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/petwalk/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/petwalk/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/prothelis/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/prothelis/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/reolink/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/reolink/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/surefeed/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/surefeed/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/tractive/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/tractive/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/weenect/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/weenect/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/whisker/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/whisker/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/wopet/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/wopet/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/xiaomi/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/xiaomi/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hersteller/zeromouse/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hersteller/zeromouse/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hund-entlaufen-gps-sinnvoll/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hund-entlaufen-gps-sinnvoll/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hund-frisst-nicht/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hund-frisst-nicht/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hund-frisst-zu-schnell/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hund-frisst-zu-schnell/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hund-hat-durchfall/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hund-hat-durchfall/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hund-ist-muede/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hund-ist-muede/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hund-trinkt-ploetzlich-viel/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hund-trinkt-ploetzlich-viel/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hund-trinkt-viel/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hund-trinkt-viel/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/hund-trinkt-zu-wenig/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/hund-trinkt-zu-wenig/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/ifa-2026-haustiertechnik/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/ifa-2026-haustiertechnik/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/impressum/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/impressum/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/kalk-katzentrinkbrunnen-entfernen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/kalk-katzentrinkbrunnen-entfernen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/katze-an-katzenklappe-gewoehnen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/katze-an-katzenklappe-gewoehnen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/katze-an-trinkbrunnen-gewoehnen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/katze-an-trinkbrunnen-gewoehnen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/katze-entlaufen-gps-sinnvoll/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/katze-entlaufen-gps-sinnvoll/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/katze-frisst-nicht/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/katze-frisst-nicht/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/katze-trinkt-viel/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/katze-trinkt-viel/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/katzenklappe-einbauen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/katzenklappe-einbauen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/katzenklappe-fuer-mehrere-katzen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/katzenklappe-fuer-mehrere-katzen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/katzenklappe-zugluft-und-waermedaemmung/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/katzenklappe-zugluft-und-waermedaemmung/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/katzenklappen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/katzenklappen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/katzentrinkbrunnen-laut-pumpe/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/katzentrinkbrunnen-laut-pumpe/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/katzentrinkbrunnen-ohne-filter/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/katzentrinkbrunnen-ohne-filter/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/katzentrinkbrunnen-richtig-reinigen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/katzentrinkbrunnen-richtig-reinigen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/katzenwasser-taeglich-wechseln/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/katzenwasser-taeglich-wechseln/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/kaufberatung/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/kaufberatung/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/kontakt/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/kontakt/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/nierenkranke-katze-trinken/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/nierenkranke-katze-trinken/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/aqara-smart-pet-feeder-c1/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/aqara-smart-pet-feeder-c1/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/cat-mate-335-pet-fountain/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/cat-mate-335-pet-fountain/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/cat-mate-c200/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/cat-mate-c200/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/cat-mate-c300/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/cat-mate-c300/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/cat-mate-c500/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/cat-mate-c500/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/cat-mate-elite-355w/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/cat-mate-elite-355w/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/cat-mate-shell-fountain/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/cat-mate-shell-fountain/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/catit-pixi-smart-6-meal-feeder/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/catit-pixi-smart-6-meal-feeder/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/catit-pixi-smart-trinkbrunnen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/catit-pixi-smart-trinkbrunnen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/catit-pixi-vision-smart-feeder/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/catit-pixi-vision-smart-feeder/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/devoko-90l-automatisches-katzenklo/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/devoko-90l-automatisches-katzenklo/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/enabot-ebo-air-2/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/enabot-ebo-air-2/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/enabot-rola-mini/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/enabot-rola-mini/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/enabot-rola-pettracker/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/enabot-rola-pettracker/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/feelneedy-fn-w18-8l-katzenbrunnen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/feelneedy-fn-w18-8l-katzenbrunnen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/flappie/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/flappie/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/furbo-360-hundekamera/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/furbo-360-hundekamera/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/furbo-360-katzenkamera/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/furbo-360-katzenkamera/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/furbo-mini-360/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/furbo-mini-360/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/garmin-alpha-t-20/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/garmin-alpha-t-20/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/garmin-alpha-tt-25/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/garmin-alpha-tt-25/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/honeyguardian-a305d/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/honeyguardian-a305d/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/honeyguardian-a68/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/honeyguardian-a68/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/honeyguardian-smart-pet-feeder-s305d/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/honeyguardian-smart-pet-feeder-s305d/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/imipaw-3l-automatic-cat-feeder/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/imipaw-3l-automatic-cat-feeder/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/invoxia-biotracker-2026/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/invoxia-biotracker-2026/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/litter-robot-4/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/litter-robot-4/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/litter-robot-5-pro/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/litter-robot-5-pro/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/neakasa-m1-lite/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/neakasa-m1-lite/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/neakasa-m1-plus/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/neakasa-m1-plus/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/neakasa-riko/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/neakasa-riko/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/oneisall-2-2l-cordless-fountain/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/oneisall-2-2l-cordless-fountain/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/oneisall-2-in-1-feeder-water/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/oneisall-2-in-1-feeder-water/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/oneisall-3-2l-cordless-fountain/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/oneisall-3-2l-cordless-fountain/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/oneisall-3-5l-cordless-fountain/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/oneisall-3-5l-cordless-fountain/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/oneisall-5l-automatic-cat-feeder/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/oneisall-5l-automatic-cat-feeder/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/oneisall-7l-dog-water-fountain/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/oneisall-7l-dog-water-fountain/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/onlycat-mikrochip-katzenklappe/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/onlycat-mikrochip-katzenklappe/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/paj-pet-finder-4g-mini/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/paj-pet-finder-4g-mini/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/pawbby-smart-pet-feeder/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/pawbby-smart-pet-feeder/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/pawfit-3/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/pawfit-3/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/pawsync-smart-pet-feeder/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/pawsync-smart-pet-feeder/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petkit-eversweet-3-pro-uvc/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petkit-eversweet-3-pro-uvc/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petkit-eversweet-5-mini/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petkit-eversweet-5-mini/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petkit-eversweet-max-2-uvc/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petkit-eversweet-max-2-uvc/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petkit-eversweet-max-cordless/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petkit-eversweet-max-cordless/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petkit-eversweet-solo-2-fountain/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petkit-eversweet-solo-2-fountain/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petkit-eversweet-solo-se/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petkit-eversweet-solo-se/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petkit-eversweet-ultra/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petkit-eversweet-ultra/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petkit-fresh-element-infinity/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petkit-fresh-element-infinity/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petkit-fresh-element-solo/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petkit-fresh-element-solo/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petkit-puramax-2/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petkit-puramax-2/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petkit-purobot-crystal-duo/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petkit-purobot-crystal-duo/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petkit-purobot-max-3/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petkit-purobot-max-3/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petkit-purobot-max-pro-2/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petkit-purobot-max-pro-2/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petkit-yumshare-dual-hopper/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petkit-yumshare-dual-hopper/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petkit-yumshare-dual/",
+      "decision": "CONSOLIDATE",
+      "reason": "Beide Seiten beschreiben den PETKIT YumShare Dual-Hopper 2. Die P592-Zielseite enthält die vollständigere Modellabgrenzung, aktuelle Verfügbarkeit und die gepflegten Vergleichsbezüge.",
+      "confidence": "high",
+      "conflictRoutes": [
+        "/produkt/petkit-yumshare-dual-hopper/"
+      ],
+      "topicOwner": "/produkt/petkit-yumshare-dual-hopper/",
+      "action": "Redirect und interne Links auf Zielinhaber"
+    },
+    {
+      "route": "/produkt/petkit-yumshare-solo-2/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petkit-yumshare-solo-2/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petlibro-air-automatic-feeder/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petlibro-air-automatic-feeder/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petlibro-air-wifi-feeder/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petlibro-air-wifi-feeder/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petlibro-capsule-dog-fountain/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petlibro-capsule-dog-fountain/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petlibro-dockstream-2-smart-cordless/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petlibro-dockstream-2-smart-cordless/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petlibro-dockstream-2-smart/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petlibro-dockstream-2-smart/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petlibro-dockstream-cordless/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petlibro-dockstream-cordless/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petlibro-dockstream-rfid-smart/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petlibro-dockstream-rfid-smart/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petlibro-glacier-ultrafiltration/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petlibro-glacier-ultrafiltration/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petlibro-granary-2-vision/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petlibro-granary-2-vision/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petlibro-granary-camera-feeder/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petlibro-granary-camera-feeder/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petlibro-granary-dual-feeder/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petlibro-granary-dual-feeder/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petlibro-granary-wifi-feeder/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petlibro-granary-wifi-feeder/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petlibro-luma-smart-litter-box/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petlibro-luma-smart-litter-box/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petlibro-one-rfid-smart-feeder/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petlibro-one-rfid-smart-feeder/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petlibro-polar-wet-food-feeder/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petlibro-polar-wet-food-feeder/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petlibro-scout-smart-camera/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petlibro-scout-smart-camera/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petlibro-space-smart-feeder/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petlibro-space-smart-feeder/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petlibro-stainless-steel-fountain/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petlibro-stainless-steel-fountain/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petsafe-freshfeed-refrigerated-feeder/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petsafe-freshfeed-refrigerated-feeder/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petsafe-healthy-pet-simply-feed/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petsafe-healthy-pet-simply-feed/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petsafe-mikrochip-katzenklappe/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petsafe-mikrochip-katzenklappe/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petsafe-petporte-smart-flap/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petsafe-petporte-smart-flap/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petsafe-smart-feed-2/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petsafe-smart-feed-2/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petsafe-streamside-trinkbrunnen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petsafe-streamside-trinkbrunnen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petsnowy-snow-plus/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petsnowy-snow-plus/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/pettec-cam-360/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/pettec-cam-360/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/petwalk-medium-tiertuer/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/petwalk-medium-tiertuer/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/prothelis-area-pets/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/prothelis-area-pets/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/reolink-e1-zoom/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/reolink-e1-zoom/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/surefeed-microchip-pet-feeder-connect/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/surefeed-microchip-pet-feeder-connect/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/surefeed-microchip-pet-feeder/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/surefeed-microchip-pet-feeder/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/sureflap-dualscan-mikrochip-katzenklappe/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/sureflap-dualscan-mikrochip-katzenklappe/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/sureflap-mikrochip-katzenklappe-connect/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/sureflap-mikrochip-katzenklappe-connect/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/sureflap-mikrochip-katzenklappe/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/sureflap-mikrochip-katzenklappe/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/tractive-cat-6-mini/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/tractive-cat-6-mini/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/tractive-dog-6-xl/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/tractive-dog-6-xl/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/tractive-dog-6/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/tractive-dog-6/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/weenect-xs/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/weenect-xs/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/weenect-xt/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/weenect-xt/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/wopet-cube-air-ca10/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/wopet-cube-air-ca10/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/wopet-heritage-view-camera-feeder/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/wopet-heritage-view-camera-feeder/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/wopet-patrol-f07-pro/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/wopet-patrol-f07-pro/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/wopet-pioneer-f01-plus/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/wopet-pioneer-f01-plus/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/xiaomi-smart-pet-food-feeder-2/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/xiaomi-smart-pet-food-feeder-2/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/xiaomi-smart-pet-fountain-2/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/xiaomi-smart-pet-fountain-2/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/produkt/zeromouse-2-0/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/produkt/zeromouse-2-0/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/pumpe-katzentrinkbrunnen-reinigen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/pumpe-katzentrinkbrunnen-reinigen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/redaktion/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/redaktion/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/reichweite-von-gps-trackern/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/reichweite-von-gps-trackern/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/seniorenhunde-richtig-versorgen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/seniorenhunde-richtig-versorgen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/smarte-futterautomaten/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/smarte-futterautomaten/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/smarte-gadgets-fuer-hunde-und-katzen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/smarte-gadgets-fuer-hunde-und-katzen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/smarte-haustiertechnik/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/smarte-haustiertechnik/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/so-bewerten-wir/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/so-bewerten-wir/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/trinkbrunnen-fuer-katzen-sinnvoll/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/trinkbrunnen-fuer-katzen-sinnvoll/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/trinkbrunnen-fuer-kitten-sicher/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/trinkbrunnen-fuer-kitten-sicher/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/trinkbrunnen-fuer-mehrere-katzen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/trinkbrunnen-hund/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/trinkbrunnen-hund/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/trinkbrunnen-seniorenkatzen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/trinkbrunnen-seniorenkatzen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/trinkbrunnen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/trinkbrunnen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/trinkmenge-hund-messen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/trinkmenge-hund-messen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/trinkmenge-katze-messen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/trinkmenge-katze-messen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/trockenfutter-oder-nassfutter-hund/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/trockenfutter-oder-nassfutter-hund/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/trockenfutter-oder-nassfutter-katze/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/trockenfutter-oder-nassfutter-katze/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/uebergewicht-bei-katzen-vermeiden/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/uebergewicht-bei-katzen-vermeiden/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/smarte-futterautomaten/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/beste-automatische-katzentoiletten/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-automatische-katzentoiletten/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-futterautomaten-fuer-hunde/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-futterautomaten-fuer-kleine-hunde/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-welpen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-futterautomaten-fuer-welpen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-mit-akku/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-futterautomaten-mit-akku/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-mit-edelstahl-napf/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-futterautomaten-mit-edelstahl-napf/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-mit-kamera/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-futterautomaten-mit-kamera/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-futterautomaten-ohne-wlan/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/beste-futterautomaten-unter-100-euro/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-futterautomaten-unter-100-euro/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/beste-haustierkameras/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-haustierkameras/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/beste-mikrochip-katzenklappen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-mikrochip-katzenklappen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/futterautomat-fuer-grosse-hunde/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/futterautomat-fuer-grosse-hunde/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/futterautomat-gegen-schlingen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/futterautomat-gegen-schlingen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/futterautomat-mit-app/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/futterautomat-mit-app/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/gps-tracker-ohne-abo/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/gps-tracker-ohne-abo/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/vergleiche/kleine-gps-tracker-fuer-katzen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/vergleiche/beste-gps-tracker-fuer-katzen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/warum-brauchen-gps-tracker-ein-abo/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/warum-brauchen-gps-tracker-ein-abo/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/warum-hunde-feste-fuetterungszeiten-brauchen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/warum-hunde-feste-fuetterungszeiten-brauchen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/warum-katzen-fliessendes-wasser-trinken/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/warum-katzen-fliessendes-wasser-trinken/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/warum-schlingt-mein-hund/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/warum-schlingt-mein-hund/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/wasserstelle-katze-richtiger-standort/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/wasserstelle-katze-richtiger-standort/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/welche-portionsgroesse-ist-richtig/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/welche-portionsgroesse-ist-richtig/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/welcher-futterautomat-ist-der-richtige/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/welcher-futterautomat-ist-der-richtige/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/welpen-richtig-fuettern/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/welpen-richtig-fuettern/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/wie-funktionieren-gps-tracker/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/wie-funktionieren-gps-tracker/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/wie-funktioniert-ein-futterautomat/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/wie-funktioniert-ein-futterautomat/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/wie-genau-sind-gps-tracker/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/wie-genau-sind-gps-tracker/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/wie-gross-sollte-ein-futterautomat-sein/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/wie-kann-technik-gegen-langeweile-helfen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/wie-kann-technik-gegen-langeweile-helfen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/wie-lange-bleibt-trockenfutter-frisch/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/wie-lange-bleibt-trockenfutter-frisch/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/wie-laut-sind-automatische-futterautomaten/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/wie-laut-sind-automatische-futterautomaten/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/wie-viel-wasser-braucht-ein-hund/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/wie-viel-wasser-braucht-ein-hund/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/wie-viel-wasser-braucht-eine-katze/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/wie-viel-wasser-braucht-eine-katze/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/wie-viele-mahlzeiten-hund/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/wie-viele-mahlzeiten-hund/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/wie-viele-mahlzeiten-katze/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/wie-viele-mahlzeiten-katze/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/wie-viele-wasserstellen-katze/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/wie-viele-wasserstellen-katze/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/wissen/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/wissen/",
+      "action": "KEEP"
+    },
+    {
+      "route": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
+      "decision": "KEEP",
+      "reason": "Eigenständige, indexierbare Seitenrolle ohne bestätigten Konflikt.",
+      "confidence": "high",
+      "conflictRoutes": [],
+      "topicOwner": "/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
+      "action": "KEEP"
+    }
+  ],
+  "searchData": {
+    "available": true,
+    "generatedAt": "2026-09-22T03:40:04.930Z",
+    "range": "7d",
+    "matchedPages": 29
+  }
+}
