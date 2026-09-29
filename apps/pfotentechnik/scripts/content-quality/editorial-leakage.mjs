@@ -61,7 +61,9 @@ export const leakageRules = [
 export const allowlist = [];
 export function inspectPublicText(html, route = '/') {
   if (/^\/(?:admin|foundation)(?:\/|$)/.test(route)) return [];
-  return publicText(html).surfaces.flatMap(item => leakageRules.flatMap(rule => {
+  return publicText(html).surfaces.flatMap(item => [...leakageRules, ...(item.location.endsWith(':td') ? [
+    {id: 'internal-table-state', pattern: /^(?:unknown|constrained|not_ready|research_required|partial|blocked)$/gi}
+  ] : [])].flatMap(rule => {
     if (allowlist.some(a => a.route === route && a.rule === rule.id && a.text === item.text && a.reason)) return [];
     return [...item.text.matchAll(new RegExp(rule.pattern))].map(match => ({...item, rule: rule.id, match: match[0], route}));
   }));

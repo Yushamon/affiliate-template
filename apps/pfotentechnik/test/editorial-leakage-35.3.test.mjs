@@ -34,6 +34,16 @@ test('publication artifacts include escaped template instructions and unrendered
   assert.ok(findings.every(f => f.rule === 'publication-artifact'));
 });
 
+test('internal table states are rejected while product uncertainty remains readable', () => {
+  assert.equal(inspectPublicText('<table><tr><td>unknown</td><td>nicht belegt</td></tr></table>').length, 1);
+  assert.deepEqual(inspectPublicText('<p>Outlet-blocked-Sensor</p>'), []);
+});
+
+test('release preflight runs the reader-language gate after the production build', () => {
+  const source = fs.readFileSync(path.join(app, 'scripts/seo/release-preflight.mjs'), 'utf8');
+  assert.ok(source.indexOf('"audit:editorial-leakage"') > source.indexOf('"Produktionsnaher Astro-Build"'));
+});
+
 test('production public HTML has no known editorial leakage or publication artifacts', () => {
   const dist = path.join(app, 'dist');
   const files = walkFiles(dist).filter(file => file.endsWith('.html'));

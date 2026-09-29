@@ -100,6 +100,7 @@ try {
   npmScript("Kanonische URL-Konsistenz", "audit:url-consistency:strict");
   npmScript("Gerenderte interne Linkziele", "audit:internal-link-targets:strict");
   npmScript("Gerenderter SEO-Build-Output", "audit:release-build-output:strict");
+  npmScript("Öffentliche redaktionelle Sprache", "audit:editorial-leakage");
   npmScript("Technischer SEO-Build-Audit", "audit:technical-seo");
   npmScript("Content-Quality und Kannibalisierung", "audit:content-quality:strict");
   const contentQualityPath = path.join(APP_ROOT, "reports/content-quality/cannibalization-report.json");
