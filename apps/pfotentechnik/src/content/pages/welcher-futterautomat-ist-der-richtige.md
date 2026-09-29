@@ -24,7 +24,7 @@ categoryPath: "/smarte-futterautomaten/"
 tags: ["Futterautomat", "Kaufberatung", "Katze", "Hund", "Trockenfutter", "Nassfutter"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-09"
-updatedAt: "2026-07-25"
+updatedAt: "2026-09-29"
 hub:
   sections: ["wissen"]
   title: "Welcher Futterautomat passt zu mir?"
@@ -86,7 +86,7 @@ premiumBlocks:
     cards:
       - label: "Schritt 1"
         title: "Futterart festlegen"
-        text: "Trockenfutter aus einem Vorrat oder vorbereitete Mahlzeiten in einzelnen Fächern."
+        text: "Trockenfutter-Vorrat, vorbereitete Fächer, aktiv gekühltes Nassfutter oder kompatibles Futter zur Rehydration."
       - label: "Schritt 2"
         title: "Tier und Portion prüfen"
         text: "Krokettengröße, Tagesration, Napf, Körpergröße und Fressverhalten abgleichen."
@@ -188,7 +188,7 @@ Der beste Futterautomat ist nicht das Modell mit den meisten Funktionen. Er ist 
 
 Die Auswahl beginnt deshalb mit vier Fragen:
 
-1. Wird Trockenfutter oder Nassfutter gefüttert?
+1. Soll trockenes Futter dosiert, vorbereitetes Futter bereitgehalten oder geeignetes Futter frisch rehydriert werden?
 2. Wie groß sind Tier, Kroketten und Portionen?
 3. Leben mehrere Tiere im Haushalt?
 4. Muss der Plan unterwegs geändert werden?
@@ -225,6 +225,10 @@ Erst danach lohnt sich die Entscheidung über WLAN, Kamera, Audio oder zusätzli
 Der Vergleich folgt erst nach der Entscheidung über Futterart, Tiergröße und Zugang. Dadurch konkurriert keine Funktionsliste mit einer ungeeigneten Bauart.
 
 ## Schritt 1: Welche Futterart soll ausgegeben werden?
+
+Vier Bauarten sind zu unterscheiden: Vorratsautomaten dosieren rieselfähiges Trockenfutter; Fachautomaten öffnen vorbereitete Mahlzeiten in Schalen; aktiv gekühlte Systeme lagern vorbereitetes Nassfutter mit elektrischer Kühlung. Rehydrationssysteme halten geeignetes Trocken- oder gefriergetrocknetes Futter und Wasser bis nahe an die Mahlzeit getrennt.
+
+Der Neakasa Riko gehört zur Rehydrationsbauart: Er kombiniert kompatibles Trocken- oder gefriergetrocknetes Futter mit Wasser. Er lagert kein gewöhnliches Nassfutter aus Dose oder Beutel. Prüfe deshalb die Futterfreigabe; die Bezeichnung „Nassfutterautomat“ allein beschreibt die Bauart nicht eindeutig.
 
 ### Trockenfutter
 

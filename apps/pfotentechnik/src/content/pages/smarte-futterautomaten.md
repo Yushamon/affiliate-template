@@ -39,7 +39,7 @@ author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
 publishedAt: "2026-07-08"
-updatedAt: "2026-08-06"
+updatedAt: "2026-09-29"
 navigation:
   show: true
   label: "Futterautomaten"
@@ -287,6 +287,10 @@ Viele smarte Futterautomaten werden gleichzeitig für Katzen und Hunde angeboten
 Für große Tiere ist ein größerer Behälter allein nicht ausreichend. Prüfe, ob Napf, Auslass und maximale Portion zur Futtermenge passen. Zur Vertiefung: [Futterautomat für Hunde](/futterautomat-hund/) und [Futterautomat für große Hunde](/vergleiche/futterautomat-fuer-grosse-hunde/).
 
 ## Entscheidungsmatrix: Welche Bauart passt zu welchem Einsatz?
+
+Vier Bauarten sind zu unterscheiden: Vorratsautomaten dosieren rieselfähiges Trockenfutter; Fachautomaten öffnen vorbereitete Mahlzeiten in Schalen; aktiv gekühlte Systeme lagern vorbereitetes Nassfutter mit elektrischer Kühlung. Rehydrationssysteme halten geeignetes Trocken- oder gefriergetrocknetes Futter und Wasser bis nahe an die Mahlzeit getrennt.
+
+Der Neakasa Riko gehört zur Rehydrationsbauart: Er kombiniert kompatibles Trocken- oder gefriergetrocknetes Futter mit Wasser. Er lagert kein gewöhnliches Nassfutter aus Dose oder Beutel. Prüfe deshalb die Futterfreigabe; die Bezeichnung „Nassfutterautomat“ allein beschreibt die Bauart nicht eindeutig.
 
 | Ausgangssituation | Sinnvolle Bauart | Besonders wichtig | Häufiger Fehlkauf |
 |---|---|---|---|

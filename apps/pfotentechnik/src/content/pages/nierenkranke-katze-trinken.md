@@ -41,7 +41,7 @@ Eine chronische Nierenerkrankung gehört tierärztlich diagnostiziert und beglei
 
 ## Warum Wasser so wichtig ist
 
-Gesunde Nieren halten Wasser im Körper zurück und konzentrieren den Urin. Bei chronischer Nierenerkrankung kann diese Fähigkeit nachlassen. Betroffene Katzen gleichen Flüssigkeitsverluste oft durch mehr Trinken aus. Frisches, sauberes Wasser muss deshalb jederzeit erreichbar sein.
+Gesunde Nieren halten Wasser im Körper zurück und konzentrieren den Urin. Bei chronischer Nierenerkrankung kann diese Fähigkeit nachlassen. Betroffene Katzen gleichen Flüssigkeitsverluste oft durch mehr Trinken aus. Frisches, sauberes Wasser muss deshalb jederzeit erreichbar sein, wie auch die [IRIS-Empfehlungen für Katzen mit CKD (2026)](https://www.iris-kidney.com/s/IRIS_CAT_Treatment_Recommendations_-2026.pdf) bestätigen.
 
 Apathie, Erbrechen, Futterverweigerung, deutlicher Gewichtsverlust oder plötzlich verändertes Trinken sind Gründe für zeitnahe tierärztliche Rücksprache. Bei akuten Beschwerden nicht erst verschiedene Brunnen testen.
 

@@ -31,7 +31,7 @@ author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
 publishedAt: "2026-08-06"
-updatedAt: "2026-08-16"
+updatedAt: "2026-09-29"
 hub:
   sections:
     - "wissen"
@@ -138,6 +138,8 @@ Nach Strom- oder Netzausfall muss die konkrete Anleitung gelten. Eine App-Verbin
 Profile und Gewichtserkennung lösen nicht jedes Mehrkatzenproblem. Ähnlich schwere Katzen können je nach System schwerer unterscheidbar sein. Abfallfach und Reinigungsintervall verkürzen sich mit jeder zusätzlichen Katze. Außerdem sollte während der Gewöhnung mindestens eine vertraute Alternative verfügbar bleiben.
 
 ## Streu, Wartung und Geruch
+
+**Unsere Auswertung (29.09.2026):** Von 11 erfassten Modellen sind 10 zur Streu einordbar: Alle 9 auswertbaren klassischen Systeme verlangen Klumpstreu. Separat steht ein proprietäres Kristallstreu-System; bei einem weiteren Modell bleibt die Kompatibilität ungeklärt. „Klumpend“ allein genügt nicht: Streuart, Körnung und Herstellerfreigabe müssen passen. Die Zahlen beschreiben unsere Modellauswahl, nicht den Gesamtmarkt.
 
 Prüfe Freigaben für Bentonit, Tofu, Mischstreu, Pellets, Kristallstreu sowie maximale Körnung. Nicht passende Streu kann Sieb, Sensoren und Abfallweg stören. Geruchskontrolle entsteht aus schneller Entfernung, dichtem Fach, Lüftung oder Filter – und erfordert trotzdem Reinigung sowie gegebenenfalls neue Filter oder Deodorizer.
 

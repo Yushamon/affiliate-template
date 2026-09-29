@@ -12,7 +12,7 @@ linking:
 categoryLabel: "Trinkbrunnen-Wissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-25"
+updatedAt: "2026-09-29"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkbrunnen, filter, hygiene, folgekosten]
 hub: { sections: [wissen], title: "Filter im Katzenbrunnen wechseln", description: "Intervalle, Filterarten und Folgekosten richtig einordnen.", order: 51 }
@@ -52,6 +52,10 @@ Schwächerer Durchfluss, sichtbare Ablagerungen, Geruch, Verfärbung oder ein Fi
 ## Folgekosten vor dem Kauf prüfen
 
 Berechne nicht nur den Gerätepreis. Prüfe Preis, Lieferbarkeit und Verpackungsgröße der Original- oder ausdrücklich kompatiblen Filter. Ein günstiger Brunnen mit selten verfügbaren Kassetten kann langfristig die schlechtere Wahl sein. Ohne passenden Filter sollte ein Modell nur betrieben werden, wenn der Hersteller das erlaubt.
+
+## Was unsere Filterdaten zeigen
+
+**Unsere Auswertung (29.09.2026):** Von 24 erfassten Brunnen haben 6 eine belegte Filterpflicht. Ein System arbeitet ohne klassischen Hauptfilter; bei 17 ist die Pflicht nicht ausreichend geklärt. Ungeklärt bedeutet nicht optional. Die laufenden Hauptfilterkosten lassen sich bei 15 Modellen aus Preis, Packungsinhalt und Wechselintervall berechnen. Bei 8 fehlen ausreichende Angaben; beim System ohne Hauptfilter entfällt diese Rechnung. Das sind keine vollständigen Betriebskosten: Andere Verbrauchsteile und Reinigungsmittel können zusätzlich anfallen.
 
 ## Eine praktikable Routine
 

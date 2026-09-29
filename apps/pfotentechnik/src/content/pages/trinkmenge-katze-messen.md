@@ -11,7 +11,7 @@ linking:
 categoryLabel: "Gesundheit & Wasser"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-13"
+updatedAt: "2026-09-29"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkmenge, wasser, messen, gesundheit, smart-trinkbrunnen]
 hub: { sections: [wissen], title: "Trinkmenge bei Katzen messen", description: "Messbecher, Protokoll und Smart-Daten richtig interpretieren.", order: 66 }
@@ -54,6 +54,8 @@ Smart-Modelle erfassen je nach Technik Füllstandsänderungen, Laufzeit oder Bes
 Auch der [PETKIT Eversweet Ultra](/produkt/petkit-eversweet-ultra/) ordnet laut Hersteller Kameraereignisse einzelnen Tierprofilen zu und schätzt Trinkmengen. Das verbessert die Verlaufssicht, validiert aber weder die geschluckte Menge noch eine Diagnose. Prüfe Video-/Cloudumfang, Fehlzuordnungen und parallele Wasserstellen im manuellen Protokoll.
 
 ## Wasser im Futter gehört dazu
+
+Eine [Studie von 2026](https://doi.org/10.1093/jas/skag201) mit gesunden Katzen zeigte: Bei feuchterem Futter sank das freie Trinken, während die gesamte Wasseraufnahme stieg. Napf- oder Brunnenmenge bildet deshalb nicht die Gesamtaufnahme ab. Die feste Futterreihenfolge begrenzt die Aussagekraft; daraus folgen keine individuellen Bedarfswerte oder Aussagen für nierenkranke Katzen.
 
 Die sichtbare Trinkmenge ist nicht der gesamte Wasserbedarf. Nassfutter bringt viel Feuchtigkeit mit. Eine Katze mit hohem Nassfutteranteil kann am Napf weniger trinken als eine Katze mit Trockenfutter. Auch Wasser, das dem Futter zugesetzt wird, muss im Protokoll stehen.
 

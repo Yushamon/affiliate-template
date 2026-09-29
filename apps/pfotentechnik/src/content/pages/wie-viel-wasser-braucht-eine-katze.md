@@ -8,7 +8,7 @@ category: "katzengesundheit"
 categoryLabel: "Katzenwissen"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-14"
+updatedAt: "2026-09-29"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, wasser, trinken, hydration, gesundheit, nassfutter, trockenfutter]
 hub: { sections: [wissen], title: "Wie viel Wasser braucht eine Katze?", description: "Wasserbedarf berechnen, Futterfeuchte berücksichtigen und Veränderungen richtig einordnen.", order: 46 }
@@ -85,6 +85,8 @@ Die Zahlen zeigen nicht, wie viel im Wassernapf fehlen muss. Eine Katze kann ein
 Das Cornell Feline Health Center nennt eine vergleichbare Orientierung von rund vier Flüssigunzen Wasser pro fünf Pfund magerem Körpergewicht. Umgerechnet entspricht das ungefähr 50 Millilitern pro Kilogramm.
 
 ## Warum Trinkmenge und Wasseraufnahme nicht dasselbe sind
+
+Eine [Studie von 2026](https://doi.org/10.1093/jas/skag201) mit gesunden Katzen zeigte: Bei feuchterem Futter sank das freie Trinken, während die gesamte Wasseraufnahme stieg. Napf- oder Brunnenmenge bildet deshalb nicht die Gesamtaufnahme ab. Die feste Futterreihenfolge begrenzt die Aussagekraft; daraus folgen keine individuellen Bedarfswerte oder Aussagen für nierenkranke Katzen.
 
 Wer nur den Wassernapf beobachtet, unterschätzt bei vielen Katzen die tatsächliche Wasseraufnahme. Entscheidend ist die Summe aus:
 

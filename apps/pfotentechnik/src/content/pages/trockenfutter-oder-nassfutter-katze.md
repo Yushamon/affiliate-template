@@ -15,7 +15,7 @@ heroImage:
   src: "../../assets/images/guides/trockenfutter-oder-nassfutter-katze/hero.webp"
   alt: "Katze zwischen einer Portion Nassfutter und einer abgewogenen Portion Trockenfutter."
 publishedAt: "2026-07-15"
-updatedAt: "2026-07-19"
+updatedAt: "2026-09-29"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: ["katze", "trockenfutter", "nassfutter", "mischfütterung", "katzenernährung"]
 hub:
@@ -176,6 +176,8 @@ Aus ihr lässt sich nicht zuverlässig ablesen:
 „Viel Fleisch“ ist kein vollständiges Qualitätsurteil. Katzen benötigen nicht einfach nur Muskelfleisch, sondern eine ausgewogene Versorgung mit Aminosäuren, Fettsäuren, Vitaminen und Mineralstoffen.
 
 ## Wasseraufnahme: der größte Unterschied
+
+Eine [Studie von 2026](https://doi.org/10.1093/jas/skag201) mit gesunden Katzen zeigte: Bei feuchterem Futter sank das freie Trinken, während die gesamte Wasseraufnahme stieg. Napf- oder Brunnenmenge bildet deshalb nicht die Gesamtaufnahme ab. Die feste Futterreihenfolge begrenzt die Aussagekraft; daraus folgen keine individuellen Bedarfswerte oder Aussagen für nierenkranke Katzen.
 
 ![Vergleich der über das Futter aufgenommenen Wassermenge](../../assets/images/guides/trockenfutter-oder-nassfutter-katze/hydration.webp)
 
