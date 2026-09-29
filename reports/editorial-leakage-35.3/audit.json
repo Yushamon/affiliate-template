@@ -1,0 +1,282 @@
+{
+  "audit": "PFOTENTECHNIK 35.3 — EDITORIAL LEAKAGE & READER LANGUAGE",
+  "baselineCommit": "9a5722c54599cc94f53477baed112f0ffb7bc0b1",
+  "reportHead": "e0a9e707517d4450baaf86e520497673e6905701",
+  "scope": {
+    "surface": "Local production HTML, including alt/aria/title labels and editorial JSON-LD values; no deployed-site verification or publication performed.",
+    "source": "248 collection files plus public components, routes and models; 429 files searched. Operational data/admin code excluded. Internal headings, object keys, comments and enum values are not public findings.",
+    "counts": {
+      "publicPagesScanned": 260,
+      "publicErrorPagesScanned": 1,
+      "renderedPagesScanned": 261,
+      "generatedPagesInventoried": 375,
+      "internalPagesExcluded": 114,
+      "sourceFilesInspected": 429,
+      "candidates": 3066,
+      "confirmedLeaks": 240,
+      "confirmedPages": 111,
+      "uniqueConfirmedContexts": 112,
+      "reviewRequired": 12,
+      "legitimateUses": 2772,
+      "falsePositives": 1,
+      "publicationArtifacts": 41,
+      "artifactPages": 7,
+      "internalSourceOccurrences": 16047,
+      "sourceSyntaxFalsePositives": 4237,
+      "sourceOccurrences": 21856,
+      "productionFilesChanged": 57,
+      "confirmedRemaining": 0,
+      "artifactsRemaining": 0,
+      "systemicRemaining": 0
+    },
+    "candidateUnits": "One dictionary occurrence per extracted rendered surface; repeated cards, TOC labels and accessible labels count separately. Raw source discovery hits and syntax false positives are separate and are not added to public counts.",
+    "excludedRoutes": "113 /admin/ documents and /foundation/; /404.html included as a public error page."
+  },
+  "byType": [
+    {
+      "type": "guides",
+      "pagesScanned": 76,
+      "pagesWithCandidates": 76,
+      "confirmedLeaks": 100,
+      "reviewRequired": 0,
+      "legitimateUses": 440,
+      "falsePositives": 1,
+      "publicationArtifacts": 5
+    },
+    {
+      "type": "hubs",
+      "pagesScanned": 9,
+      "pagesWithCandidates": 9,
+      "confirmedLeaks": 17,
+      "reviewRequired": 0,
+      "legitimateUses": 76,
+      "falsePositives": 0,
+      "publicationArtifacts": 0
+    },
+    {
+      "type": "comparisons",
+      "pagesScanned": 28,
+      "pagesWithCandidates": 28,
+      "confirmedLeaks": 44,
+      "reviewRequired": 0,
+      "legitimateUses": 721,
+      "falsePositives": 0,
+      "publicationArtifacts": 2
+    },
+    {
+      "type": "products",
+      "pagesScanned": 103,
+      "pagesWithCandidates": 103,
+      "confirmedLeaks": 73,
+      "reviewRequired": 12,
+      "legitimateUses": 984,
+      "falsePositives": 0,
+      "publicationArtifacts": 33
+    },
+    {
+      "type": "manufacturers",
+      "pagesScanned": 33,
+      "pagesWithCandidates": 33,
+      "confirmedLeaks": 6,
+      "reviewRequired": 0,
+      "legitimateUses": 510,
+      "falsePositives": 0,
+      "publicationArtifacts": 1
+    },
+    {
+      "type": "other",
+      "pagesScanned": 12,
+      "pagesWithCandidates": 12,
+      "confirmedLeaks": 0,
+      "reviewRequired": 0,
+      "legitimateUses": 41,
+      "falsePositives": 0,
+      "publicationArtifacts": 0
+    },
+    {
+      "type": "shared UI/components (overlaps page rows)",
+      "pagesScanned": 261,
+      "pagesWithCandidates": 89,
+      "confirmedLeaks": 96,
+      "reviewRequired": 0,
+      "legitimateUses": 0,
+      "publicationArtifacts": 5
+    }
+  ],
+  "leakTypes": {
+    "SEO/content architecture": 176,
+    "Evidence/implementation": 60,
+    "Workflow": 4
+  },
+  "severity": {
+    "renderedOccurrences": {
+      "P1": 96,
+      "P2": 185
+    },
+    "deduplicatedSourceContexts": {
+      "P2": 98,
+      "P1": 6
+    },
+    "P3": 0,
+    "note": "Deduplicate same source and context, remove TOC numbering and image enlargement suffix. Six P1 hub descriptions; P2 includes isolated content and five summary-formatting artifacts."
+  },
+  "decisions": {
+    "internalSeoExposed": "YES",
+    "aiPromptWorkflowExposed": "YES — workflow wording (Audit/Batch); no AI/prompt authorship claim",
+    "evidenceLifecycleDataModelExposed": "YES — field names and research states; prior Lifecycle Owner fix stays intact",
+    "publicationArtifactsFound": "YES",
+    "systemicRenderingMappingLeaksFound": "YES — reused public hub descriptions and table-to-summary Markdown handling",
+    "confirmedLeaksRemaining": 0,
+    "publicationArtifactsRemaining": 0,
+    "systemicLeakageRemaining": 0,
+    "unintentionalFactualMeaningChange": "NO",
+    "broadRewriteJustified": "NO",
+    "editorialLeakageGate": "PASS"
+  },
+  "validation": {
+    "build": "PASS",
+    "generatedPages": 375,
+    "indexableCanonical": 260,
+    "sitemapUrls": 260,
+    "sitemapUrlsAndLastmodUnchanged": true,
+    "tests": {
+      "passed": 868,
+      "total": 868
+    },
+    "geometry": {
+      "checks": 160,
+      "passed": 160,
+      "failed": 0
+    },
+    "auditsPassed": 17,
+    "auditsTotal": 18,
+    "knownBaselineException": "price:audit:strict retains 2 missing affiliate targets (litter-robot-5-pro, neakasa-riko); not introduced by editorial changes.",
+    "publicSeoMetadataChanges": [],
+    "protectedFrontmatterExceptions": [],
+    "schemaRatingChanges": [],
+    "canonicalRobotsAndLegacyFragmentsUnchanged": true,
+    "redirectsUnchanged": true,
+    "contextualLinkChanges": [
+      {
+        "url": "https://pfotentechnik.de/katzenklappe-einbauen/",
+        "changes": [
+          {
+            "url": "/katzenklappen/",
+            "before": 6,
+            "after": 7
+          },
+          {
+            "url": "/haustierkameras/",
+            "before": 4,
+            "after": 3
+          }
+        ],
+        "reason": "Required public description cleanup changes existing text-derived contextual link selection; no destination or ranking configuration edited."
+      },
+      {
+        "url": "https://pfotentechnik.de/katzenklappe-fuer-mehrere-katzen/",
+        "changes": [
+          {
+            "url": "/katzenklappen/",
+            "before": 5,
+            "after": 6
+          },
+          {
+            "url": "/futterautomat-katze/",
+            "before": 1,
+            "after": 0
+          }
+        ],
+        "reason": "Required public description cleanup changes existing text-derived contextual link selection; no destination or ranking configuration edited."
+      },
+      {
+        "url": "https://pfotentechnik.de/produkt/honeyguardian-smart-pet-feeder-s305d/",
+        "changes": [
+          {
+            "url": "/smarte-futterautomaten/",
+            "before": 4,
+            "after": 5
+          },
+          {
+            "url": "/hersteller/flappie/",
+            "before": 1,
+            "after": 0
+          }
+        ],
+        "reason": "Required public description cleanup changes existing text-derived contextual link selection; no destination or ranking configuration edited."
+      },
+      {
+        "url": "https://pfotentechnik.de/produkt/petlibro-granary-dual-feeder/",
+        "changes": [
+          {
+            "url": "/smarte-futterautomaten/",
+            "before": 4,
+            "after": 5
+          },
+          {
+            "url": "/hersteller/flappie/",
+            "before": 1,
+            "after": 0
+          }
+        ],
+        "reason": "Required public description cleanup changes existing text-derived contextual link selection; no destination or ranking configuration edited."
+      },
+      {
+        "url": "https://pfotentechnik.de/produkt/surefeed-microchip-pet-feeder/",
+        "changes": [
+          {
+            "url": "/smarte-futterautomaten/",
+            "before": 4,
+            "after": 5
+          },
+          {
+            "url": "/hersteller/flappie/",
+            "before": 1,
+            "after": 0
+          }
+        ],
+        "reason": "Required public description cleanup changes existing text-derived contextual link selection; no destination or ranking configuration edited."
+      },
+      {
+        "url": "https://pfotentechnik.de/produkt/xiaomi-smart-pet-food-feeder-2/",
+        "changes": [
+          {
+            "url": "/smarte-futterautomaten/",
+            "before": 5,
+            "after": 6
+          },
+          {
+            "url": "/hersteller/flappie/",
+            "before": 1,
+            "after": 0
+          }
+        ],
+        "reason": "Required public description cleanup changes existing text-derived contextual link selection; no destination or ranking configuration edited."
+      },
+      {
+        "url": "https://pfotentechnik.de/trinkbrunnen-fuer-kitten-sicher/",
+        "changes": [],
+        "reason": "Same destinations and counts; automatically selected link order changed."
+      }
+    ],
+    "linkIntegrity": "All existing link gates pass; 0 new orphans, 0 unreachable, 0 variant links; 16,901 internal document links unchanged in total.",
+    "screenshotsCreated": 0,
+    "geometryFirstAttempt": "Interrupted on unbounded browser wait after passing checks; rerun with timeouts completed 160/160.",
+    "scopeOfPass": "Editorial closure and no newly introduced validation failures; does not certify the unrelated pre-existing commerce gate or live deployment."
+  },
+  "manualReview": {
+    "publicOccurrences": 12,
+    "term": "Consensus",
+    "reason": "Could mean ordinary cross-source agreement or an internal evidence concept. Context is not conclusive enough for a confirmed leak, so preserve existing caveats and do not rewrite.",
+    "file": "review-required.csv"
+  },
+  "next": "Keep the new rendered reader-language check mandatory in release preflight; no broad editorial rewrite.",
+  "changes": {
+    "productionFiles": 57,
+    "qaFiles": 5,
+    "implementationFilesTotal": 62,
+    "publicPagesWithTextOrMetadataChanges": 121,
+    "details": "changes.md",
+    "publicPageList": "validation/changed-public-pages.json"
+  }
+}
