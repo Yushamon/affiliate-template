@@ -254,6 +254,8 @@ comparisonFilters:
     - medium
   foodType: []
 specs:
+  - label: Akkutechnik und Austausch
+    value: Integrierter, wiederaufladbarer Akku; Zellchemie und Austausch durch Nutzer in den geprüften modellspezifischen Herstellerangaben nicht eindeutig dokumentiert
   - label: Ortung
     value: GPS, GLONASS und Galileo
   - label: Übertragung
@@ -273,7 +275,7 @@ specs:
   - label: Bluetooth
     value: Bluetooth 5.0
   - label: Akkulaufzeit
-    value: Bis zu 14 Tage mit Energiesparzonen
+    value: Laut Tractive bis zu 14 Tage mit Energiesparzonen; bis zu 6 Tage ohne
   - label: Stromversorgung
     value: Integrierter Akku; Laden über das mitgelieferte USB-C-Ladekabel
   - label: Akku
@@ -375,7 +377,7 @@ faq:
       Standardmodus sind die Intervalle länger und abhängig von Bewegung und Nutzung.
   - question: Hält der Akku immer zwei Wochen?
     answer: >-
-      Nein. Zwei Wochen sind eine Maximalangabe mit Energiesparzonen. Häufiges Live-Tracking, Bewegung, schwacher
+      Nein. Tractive nennt maximal 14 Tage mit Energiesparzonen und maximal 6 Tage ohne. Häufiges Live-Tracking, Bewegung, schwacher
       Empfang, Temperatur und fehlende WLAN-Zonen können die Laufzeit deutlich verkürzen.
   - question: Funktioniert der Tractive DOG 6 ohne Mobilfunknetz?
     answer: >-
@@ -455,6 +457,11 @@ comparisonData:
       Befestigung, Gehäuse und Ladekontakte regelmäßig auf Schmutz und Schäden prüfen. Vor längeren Ausflügen
       vollständig laden und die Ortung im Freien testen.
 evidenceSources:
+  - source: "Tractive Kundenservice – Akkukapazität und Laufzeit"
+    url: "https://help.tractive.com/hc/de/articles/205664001-Wie-lange-h%C3%A4lt-der-Akku-meines-Trackers"
+    accessedAt: "2026-10-03"
+    assertion: "Modellspezifische Kapazität von 930 mAh sowie maximale Laufzeit mit und ohne Energiesparzone; keine eindeutige Angabe zu Zellchemie oder Nutzeraustausch in dieser Quelle."
+    fields: ["specs", "faq"]
   - source: "Tractive Kundenservice – Tracker-Auswahl und Abo"
     url: "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier"
     accessedAt: "2026-08-25"
@@ -473,13 +480,13 @@ decisionFacts:
     consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
   - label: "Akkulaufzeit"
     value: "Bis zu 14 Tage mit Energiesparzonen"
-    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+    consequence: "Häufige Live-Ortung verkürzt die Laufzeit; vor längeren Ausflügen den Ladestand prüfen."
   - label: "Stromversorgung"
     value: "Integrierter Akku; Laden über das mitgelieferte USB-C-Ladekabel"
-    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+    consequence: "Häufige Live-Ortung verkürzt die Laufzeit; vor längeren Ausflügen den Ladestand prüfen."
   - label: "Akku"
     value: "Integrierter Akku, laut Support 930 mAh"
-    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+    consequence: "Häufige Live-Ortung verkürzt die Laufzeit; vor längeren Ausflügen den Ladestand prüfen."
   - label: "Wasserschutz"
     value: "IP68"
     consequence: "Die Schutzklasse ist bei Regen, Reinigung und dauerhaftem Außeneinsatz relevant."

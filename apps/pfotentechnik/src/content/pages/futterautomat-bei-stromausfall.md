@@ -172,17 +172,29 @@ Die geplante Futterausgabe kann trotzdem weiterlaufen. Ob das beim konkreten Mod
 
 ## Stromausfall, WLAN-Ausfall und Cloud-Ausfall sind nicht dasselbe
 
-In Produktbeschreibungen werden „offline“, „ohne Internet“ und „bei Stromausfall“ häufig zusammengefasst. Für die Beurteilung sind jedoch mindestens fünf Ebenen zu trennen.
+In Produktbeschreibungen werden „offline“, „ohne Internet“ und „bei Stromausfall“ häufig zusammengefasst. Für die Beurteilung sind jedoch sechs Ebenen zu trennen.
 
 | Ausfall | Was fehlt? | Was kann weiterlaufen? | Was fällt häufig aus? |
 |---|---|---|---|
 | Steckdose oder Netzteil | reguläre Stromversorgung | Motor und lokaler Plan mit funktionierendem Backup | Funk, Kamera oder Display je nach Notbetrieb |
 | Router oder WLAN | Verbindung zum Heimnetz | lokal gespeicherter Plan und Gerätetaste | App-Zugriff, Push-Meldungen, Planänderungen |
 | Internetzugang | Verbindung vom Router ins Internet | lokaler Plan, teilweise lokale Gerätefunktionen | Cloud, Fernzugriff und externe Benachrichtigungen |
-| Hersteller-Cloud oder App | externer Dienst | lokaler Plan, wenn unabhängig gespeichert | App-Steuerung, Synchronisierung und Kontodienste |
+| Hersteller-Cloud | externer Dienst oder Server | lokaler Plan, wenn unabhängig gespeichert | dienstabhängige Fernsteuerung, Synchronisierung und Kontodienste |
+| App nicht erreichbar | Bedienoberfläche auf dem Smartphone | Gerät und Cloud können weiterhin arbeiten; ein lokal gespeicherter Plan benötigt die geöffnete App nicht | Bedienung über die betroffene App; ein App-Problem belegt keinen Cloud-Ausfall |
 | Mechanik oder Futterweg | physische Ausgabe | Steuerung kann Befehl auslösen | vollständige Portion trotz Strom und Zeitplan |
 
 Diese Unterscheidung ist wichtig: Ein Gerät kann in der App als „offline“ erscheinen und trotzdem pünktlich füttern. Umgekehrt kann die App einen erfolgreichen Befehl anzeigen, obwohl Futter im Rotor oder Auslass hängen geblieben ist.
+
+### Was ist für PETLIBRO und PETKIT konkret belegt?
+
+Die vorhandenen Herstellerbelege beziehen sich auf einzelne Modelle und Ausfallarten. Sie sind keine Zusage für alle Futterautomaten einer Marke.
+
+| Modell und dokumentierter Ausfall | Bereits programmierte Mahlzeiten | Grenzen der Aussage |
+|---|---|---|
+| [PETLIBRO AIR WiFi](/produkt/petlibro-air-wifi-feeder/): Internetausfall | Zuvor gespeicherte Zeitpläne laufen laut Hersteller mit Netzstrom oder Akku weiter. | App-Zugriff und Live-Protokolle fehlen während der Unterbrechung. Ein separater Cloud-Ausfall ist damit nicht belegt. |
+| [PETKIT YumShare Solo 2](/produkt/petkit-yumshare-solo-2/): WLAN-Ausfall | Bereits gespeicherte Mahlzeiten laufen laut Hersteller weiter. | Diese Zusage umfasst weder Livebild noch Fernfunktionen. Der getrennte Fall „Internet weg, WLAN vorhanden“ und ein Cloud-Ausfall sind nicht vollständig dokumentiert. |
+
+Grundlage sind die bereits erfassten Angaben aus dem [PETLIBRO-Support zum AIR WiFi AF108/PLAF108](https://petlibro.com/pages/pre-sale-inquiries-about-air-smart-feeder-af108-plaf108) und der [PETKIT-Produktbeschreibung zum YumShare Solo 2](https://www.petkit.com/products/yumshare-solo-2-automatic-feeder-with-camera), geprüft am 28.08.2026. Für ein anderes Modell müssen dessen Anleitung und Ausfallangaben separat passen.
 
 ## Was bedeutet „lokal gespeicherter Fütterungsplan“?
 
