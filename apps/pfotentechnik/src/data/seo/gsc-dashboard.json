@@ -1,101 +1,115 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-22T03:40:04.892Z",
+  "generatedAt": "2026-10-03T06:49:29.844Z",
   "property": "sc-domain:pfotentechnik.de",
   "provider": "google",
   "range": "7d",
   "key": "7d",
   "label": "Letzte 7 Tage",
-  "startDate": "2026-09-15",
-  "endDate": "2026-09-21",
-  "comparisonStartDate": "2026-09-08",
-  "comparisonEndDate": "2026-09-14",
+  "startDate": "2026-09-26",
+  "endDate": "2026-10-02",
+  "comparisonStartDate": "2026-09-19",
+  "comparisonEndDate": "2026-09-25",
   "dataState": "all",
   "partial": false,
   "lowData": true,
   "metrics": {
     "current": {
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 6,
       "ctr": 0,
-      "position": 9.3
+      "position": 4.8
     },
     "previous": {
       "clicks": 0,
-      "impressions": 12,
+      "impressions": 2,
       "ctr": 0,
-      "position": 11.3
+      "position": 8.5
     },
     "change": {
       "clicks": 0,
-      "impressions": -75,
+      "impressions": 200,
       "ctr": 0,
-      "position": 2
+      "position": 3.7
     }
   },
   "pages": [
     {
-      "page": "/smarte-futterautomaten/",
+      "page": "/hund-trinkt-viel/",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 9.5
+      "position": 5
     },
     {
-      "page": "/trinkbrunnen/",
+      "page": "/produkt/petkit-eversweet-ultra/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "/produkt/tractive-cat-6-mini/",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 9
+      "position": 7
+    },
+    {
+      "page": "/produkt/weenect-xs/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
     }
   ],
   "queries": [],
   "pageQueries": [],
   "trend": [
     {
-      "date": "2026-09-15",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 9.5
-    },
-    {
-      "date": "2026-09-16",
-      "clicks": 0,
-      "impressions": 0,
-      "ctr": 0,
-      "position": 0
-    },
-    {
-      "date": "2026-09-17",
-      "clicks": 0,
-      "impressions": 0,
-      "ctr": 0,
-      "position": 0
-    },
-    {
-      "date": "2026-09-18",
-      "clicks": 0,
-      "impressions": 0,
-      "ctr": 0,
-      "position": 0
-    },
-    {
-      "date": "2026-09-19",
-      "clicks": 0,
-      "impressions": 0,
-      "ctr": 0,
-      "position": 0
-    },
-    {
-      "date": "2026-09-20",
+      "date": "2026-09-26",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 9
+      "position": 7
     },
     {
-      "date": "2026-09-21",
+      "date": "2026-09-27",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "date": "2026-09-28",
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0,
+      "position": 0
+    },
+    {
+      "date": "2026-09-29",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 3.8
+    },
+    {
+      "date": "2026-09-30",
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0,
+      "position": 0
+    },
+    {
+      "date": "2026-10-01",
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0,
+      "position": 0
+    },
+    {
+      "date": "2026-10-02",
       "clicks": 0,
       "impressions": 0,
       "ctr": 0,
