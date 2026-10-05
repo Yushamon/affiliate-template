@@ -343,6 +343,17 @@ comparisonData:
     pumpengarantie: 12 Monate laut Closer Pets
     masse: ca. 26,7 × 17,1 × 22,2 cm
     geeignet_fur: Katzen und kleine Hunde
+  fountain:
+    capacityLiters: 2
+    material:
+      - BPA- und BHT-freier Kunststoff; Schale und Basis aus Polypropylen
+    powerType:
+      status: known
+      value: mains
+    dishwasherSafeParts:
+      status: known
+      value:
+        - Schalen; Pumpe separat von Hand
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -366,6 +377,22 @@ decisionFacts:
   - label: "Filter im Lieferumfang"
     value: "Polymer-Aktivkohlefilter"
     consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
+evidenceSources:
+  - source: Herstellerdokumentation · Cat Mate Pet Fountain 335
+    url: https://closerpets.com/products/pet-fountain
+    accessedAt: "2026-07-23"
+    sourceType: manufacturer
+    assertion: >-
+      Bereits dokumentierte technische Daten: Kapazität: 70 fl. oz., rund 2 Liter; Material: BPA- und BHT-freier
+      Kunststoff; Schale und Basis aus Polypropylen; Pumpe: isoliertes Niedervolt-Pumpensystem; Ersatzpumpe Teil 354
+      verfügbar; Stromversorgung: Netzbetrieb mit Niedervolt-Netzteil und 3 m Kabel; Reinigung: Schalen laut Hersteller
+      spülmaschinengeeignet; Pumpe separat von Hand reinigen; Lautstärke: Superleiser Betrieb durch isoliertes
+      Pumpensystem (P.S.). Normalisierung des vorhandenen Quellenstands, keine erneute externe Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.material
+      - comparisonData.fountain.powerType
+      - comparisonData.fountain.dishwasherSafeParts
 ---
 Der Cat Mate Pet Fountain 335 ist ein klassischer Trinkbrunnen ohne App, Akku oder Sensorik. Wasser wird über drei Ebenen geführt, sodass Tiere zwischen einer oberen Trinkmulde, fließenden Bereichen und der unteren Schale wählen können.
 

@@ -114,10 +114,55 @@ faq:
   - { question: "Ist die App bei der Medium-Version dabei?", answer: "Im aktuell geprüften Herstellerangebot wird petWALK.control als enthaltenes App-Modul ausgewiesen." }
 features: ["Motorisierte Tiertür", "Mikrochip", "App", "Notstrom", "Wärmedämmung"]
 useCase: "Gedämmte automatische Tiertür für Bauprojekte"
-comparisonData: { version: 1, custom: { zugang: "RFID-Chip und Bewegungserkennung", richtungsrechte: "Betriebsmodi und App-Steuerung", app: "Ja, petWALK.control", beuteerkennung: "Nein dokumentiert", strom: "24-V-Netzgerät; Notstrom-Akku", ausfall: "Notstromkonzept vorhanden; Detailverhalten im Handbuch prüfen", einbau: "Tür, Glas oder Wand; ggf. Spacer oder Tunnel", durchgang: "20 × 30 cm", oeffnung: "Motorisiert, nach innen", produktrolle: "Gedämmte motorisierte Premium-Tiertür" } }
+comparisonData:
+  version: 1
+  custom:
+    zugang: RFID-Chip und Bewegungserkennung
+    richtungsrechte: Betriebsmodi und App-Steuerung
+    app: Ja, petWALK.control
+    beuteerkennung: Nein dokumentiert
+    strom: 24-V-Netzgerät; Notstrom-Akku
+    ausfall: Notstromkonzept vorhanden; Detailverhalten im Handbuch prüfen
+    einbau: Tür, Glas oder Wand; ggf. Spacer oder Tunnel
+    durchgang: 20 × 30 cm
+    oeffnung: Motorisiert, nach innen
+    produktrolle: Gedämmte motorisierte Premium-Tiertür
+  catFlap:
+    installation:
+      status: partial
+      doorSupported:
+        status: known
+        value: true
+      wallSupported:
+        status: known
+        value: true
+      glassSupported:
+        status: known
+        value: true
+      passageWidthMm:
+        status: known
+        value: 200
+      passageHeightMm:
+        status: known
+        value: 300
+      notes:
+        - >-
+          Durchgang 20 × 30 cm explizit B × H; Umrechnung in mm. Standard-Spacer für etwa 2–10 cm Bauteilstärke; keine
+          feste Tunneltiefe.
 decisionJourney: { cluster: "katzenklappen", stage: "decision", intent: "produkt-petwalk-medium", primaryQuestion: "Ist eine gedämmte motorisierte Tiertür für das konkrete Bauteil gerechtfertigt?", next: ["/katzenklappe-zugluft-und-waermedaemmung/", "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/"], fallback: ["/katzenklappen/"] }
 evidenceSources:
   - { source: "petWALK Österreich", url: "https://petwalk.at/products/tierture-konfigurieren", accessedAt: "2026-08-17", assertion: "EU-Angebot, Produktart, Chip- und Bewegungserkennung, Einbau, App-Modul, Netzgerät, Dämm- und Sicherheitsangaben.", fields: ["availability", "specs", "features", "decision"] }
+  - source: petWALK Österreich
+    url: https://petwalk.at/products/tierture-konfigurieren
+    accessedAt: "2026-08-17"
+    assertion: EU-Angebot, Produktart, Chip- und Bewegungserkennung, Einbau, App-Modul, Netzgerät, Dämm- und Sicherheitsangaben.
+    fields:
+      - comparisonData.catFlap.installation.doorSupported
+      - comparisonData.catFlap.installation.wallSupported
+      - comparisonData.catFlap.installation.glassSupported
+      - comparisonData.catFlap.installation.passageWidthMm
+      - comparisonData.catFlap.installation.passageHeightMm
+    sourceType: manufacturer
 score: 75
 ---
 Die **petWALK Medium** spielt technisch in einer anderen Klasse als die meisten Mikrochip-Katzenklappen. Statt einer frei schwingenden Klappe arbeitet sie mit einem motorisierten Türblatt, das nach innen öffnet und automatisch verriegelt. Die Medium-Ausführung besitzt laut Hersteller eine **Durchgangslichte von 20 × 30 cm** und ist damit für Katzen sowie kleinere Hunde vorgesehen.

@@ -272,6 +272,13 @@ comparisonData:
       reinigen.
     akku: Nein
     app: Nein
+  fountain:
+    capacityLiters: 7.95
+    powerType:
+      status: unknown
+    lowWaterShutdown:
+      status: known
+      value: true
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -312,6 +319,19 @@ offers:
     evidenceSources: []
     lastAttemptAt: "2026-10-03T06:51:03.875Z"
     error: "Offizielle Produkt-URL unresolved."
+evidenceSources:
+  - source: Herstellerdokumentation · PETLIBRO Capsule Dog Fountain
+    url: https://petlibro.com/pages/capsule-dog-fountain
+    accessedAt: "2026-07-16"
+    sourceType: manufacturer
+    assertion: >-
+      Bereits dokumentierte technische Daten: Kapazität: 2,1 Gallonen, etwa 7,95 Liter; Stromversorgung: USB 5 V/1 A,
+      Kabel etwa 2 m; Lautstärke: Herstellerangabe 28 dB; Trockenlaufschutz: automatische Abschaltung bei zu niedrigem
+      Wasserstand; Reinigung: Wasser regelmäßig vollständig austauschen. Tank, Trinkschale, Filterbereich und Pumpe
+      mindestens wöchentlich reinigen.. Normalisierung des vorhandenen Quellenstands, keine erneute externe Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.lowWaterShutdown
 ---
 Viele Katzenbrunnen sind für Hunde zu niedrig und zu klein. Die Capsule Dog Fountain setzt deshalb auf eine breite Trinkzone, hohe Reserve und Spritzschutz.
 

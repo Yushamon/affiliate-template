@@ -260,6 +260,18 @@ comparisonData:
     abmessungen: 265 × 171 × 191 mm
     gewicht: 1,2 kg
     geeignet_fur: Katzen und kleine Hunde
+  fountain:
+    capacityLiters: 3
+    material:
+      - BPA-freies ABS und Edelstahl 304
+    powerType:
+      status: known
+      value: mainsAndBattery
+    batteryRuntime:
+      status: known
+      value:
+        maxDays: 83
+        conditions: Herstellerangabe bis 83 Tage
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -283,6 +295,21 @@ decisionFacts:
   - label: "Lautstärke"
     value: "Herstellerangabe bis 26 dB"
     consequence: "Geräusche können bei schreckhaften Tieren und in Schlafräumen kaufentscheidend sein."
+evidenceSources:
+  - source: Herstellerdokumentation · PETKIT Eversweet Max 2 UVC
+    url: https://www.petkit.com/products/eversweet-max-2-uvc-pet-water-fountain
+    accessedAt: "2026-07-16"
+    sourceType: manufacturer
+    assertion: >-
+      Bereits dokumentierte technische Daten: Kapazität: 3 Liter; Material: BPA-freies ABS und Edelstahl 304;
+      Stromversorgung: USB 5 V/1 A und integrierter Akku; Akkulaufzeit: Herstellerangabe bis 83 Tage; Lautstärke:
+      Herstellerangabe bis 26 dB; Reinigung: laut Hersteller vollständig spülmaschinengeeignet. Normalisierung des
+      vorhandenen Quellenstands, keine erneute externe Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.material
+      - comparisonData.fountain.powerType
+      - comparisonData.fountain.batteryRuntime
 ---
 Der PETKIT Eversweet Max 2 UVC gehört zu den technisch umfangreicheren kabellosen Trinkbrunnen. Seine Stärke liegt weniger in einem einzelnen Merkmal als in der Kombination aus Akku, Edelstahl-Trinkfläche, UVC-Pumpe und gut zerlegbarer Bauform.
 

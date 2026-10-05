@@ -159,7 +159,27 @@ repairability:
       sourceUrl: "https://www.petsafe.com/de/p/keramik-trinkbrunnen-streamside/PWW19-17098/"
       sourceType: manufacturer
       verifiedAt: "2026-08-31"
-comparisonData: { version: 1, custom: { kapazitaet: "1,8 Liter", material: "Keramik; offene Trinkschale", lautstaerke: "Sanftes Blubbern; keine belastbare dB-Angabe", filter: "Aktivkohle plus Schaum", reinigung: "Keramikteile oberer Spülmaschinenkorb; Pumpe von Hand", stromversorgung: "Netzbetrieb", eignung: "Katzen und kleine Hunde; Keramik-Fokus" } }
+comparisonData:
+  version: 1
+  custom:
+    kapazitaet: 1,8 Liter
+    material: Keramik; offene Trinkschale
+    lautstaerke: Sanftes Blubbern; keine belastbare dB-Angabe
+    filter: Aktivkohle plus Schaum
+    reinigung: Keramikteile oberer Spülmaschinenkorb; Pumpe von Hand
+    stromversorgung: Netzbetrieb
+    eignung: Katzen und kleine Hunde; Keramik-Fokus
+  fountain:
+    capacityLiters: 1.8
+    material:
+      - Keramik; laut Hersteller BPA-frei und kratzbeständig
+    powerType:
+      status: known
+      value: mains
+    dishwasherSafeParts:
+      status: known
+      value:
+        - Schale und Turm im oberen Spülmaschinenkorb; Pumpe von Hand
 comparisonFilters: { animal: ["cat", "dog"], petSize: ["small"], foodType: [], app: false, reservoirLiters: 1.8 }
 alternatives: ["catit-pixi-smart-trinkbrunnen", "petlibro-stainless-steel-fountain", "cat-mate-335-pet-fountain"]
 comparisons: ["beste-trinkbrunnen-fuer-katzen"]
@@ -191,6 +211,21 @@ evidenceSources:
     fields:
       - "ratings"
       - "externalEvidence"
+  - source: PetSafe Keramik-Trinkbrunnen Streamside
+    url: https://www.petsafe.com/de/p/keramik-trinkbrunnen-streamside/PWW19-17098/
+    accessedAt: "2026-08-16"
+    assertion: >-
+      Bereits dokumentierte technische Daten: Kapazität: 1,8 Liter; Material: Keramik; laut Hersteller BPA-frei und
+      kratzbeständig; Stromversorgung: Netzbetrieb mit Unterwasserpumpe; Reinigung: Schale und Turm im oberen
+      Spülmaschinenkorb; Pumpe von Hand; Lautstärke: Leiser Betrieb mit tauchfähiger Pumpe und sanft blubberndem
+      Wasserfluss; kein dB-Wert veröffentlicht. Normalisierung des vorhandenen Quellenstands, keine erneute externe
+      Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.material
+      - comparisonData.fountain.powerType
+      - comparisonData.fountain.dishwasherSafeParts
+    sourceType: manufacturer
 experience:
   summary: >-
     Redaktionelle Einordnung aus Herstellerdokumentation, unabhängigen Tests und dokumentierten Nutzersignalen.

@@ -8,7 +8,7 @@ import {readDataset, inspectDataset} from '../product-evidence/fountain-dataset.
 const app = fileURLToPath(new URL('../../', import.meta.url));
 const at = (data, key) => key.split('.').reduce((v, k) => v?.[k], data);
 const unknown = 'unknown';
-const states = ['known', 'partial', 'unknown', 'notApplicable'];
+const states = ['known', 'unknown', 'notApplicable', 'missingSchemaData'];
 export function structuredState(value, kind = 'boolean') {
   if (value?.status === 'unknown' || value == null) return unknown;
   if (value?.status === 'notApplicable') return 'notApplicable';
@@ -18,16 +18,38 @@ export function structuredState(value, kind = 'boolean') {
   if (kind === 'array') return Array.isArray(value) && value.length && value.every(v => typeof v === 'string' && v !== 'unknown') ? 'known' : unknown;
   return typeof value === 'boolean' ? 'known' : unknown;
 }
-const field = (source, kind = 'boolean') => ({source, read: p => structuredState(at(p.data, source), kind)});
-const common = (key, kind = 'capability') => ({source: `Advisor common.${key} (explicit product fields only)`, read: p => structuredState(at(p.mapped.common, key), kind)});
+export function dataState(value, kind = 'boolean') {
+  if (value == null) return 'missingSchemaData';
+  if (value?.status === 'unknown' || value === 'unknown') return 'unknown';
+  if (value?.status === 'notApplicable' || value === 'notApplicable') return 'notApplicable';
+  if (value?.status === 'known') {
+    if (kind === 'parts' && Array.isArray(value.value)) return 'known';
+    return dataState(value.value, kind);
+  }
+  if (Array.isArray(kind)) return kind.includes(value) ? 'known' : 'unknown';
+  if (kind === 'runtime') return typeof value.maxDays === 'number' && value.maxDays > 0 ? 'known' : 'unknown';
+  return structuredState(value, kind) === 'known' ? 'known' : 'unknown';
+}
+const field = (source, kind = 'boolean') => ({source, read: p => dataState(at(p.data, source), kind)});
+const commonPaths = {
+ animals:['gps.animal','comparisonFilters.animal'], petSizes:['comparisonFilters.petSize'],
+ foodTypes:['comparisonFilters.foodType'], app:['comparisonFilters.app','comparisonData.fountain.app'],
+ camera:['comparisonFilters.camera','comparisonData.feeder.camera'], backupPower:['comparisonFilters.backupPower'],
+ offlineSchedule:['failureModes.internetOutage.functions.localSchedule'], 'multiPet.sharedUse':['multiPet.sharedUse']
+};
+const common = (key, kind = 'capability') => ({source:commonPaths[key].join(' OR '),read:p=>{
+ const values=commonPaths[key].map(path=>at(p.data,path));
+ if(values.every(v=>v==null)) return 'missingSchemaData';
+ return dataState(at(p.mapped.common,key),kind);
+}});
 const modes = ['powerOutage','wifiOutage','internetOutage','cloudOutage','mechanicalBlock'];
 const failure = Object.fromEntries(modes.map(key => [`failureModes.${key}`, field(`failureModes.${key}.status`, 'capability')]));
 const animal = common('animals','array');
-const identification = {source:'multiPet.identificationMethods',read:p=>structuredState(p.data.multiPet?.identificationMethods,'array')};
+const identification = {source:'multiPet.identificationMethods',read:p=>dataState(p.data.multiPet?.identificationMethods,'array')};
 const microchip = {source:'multiPet.identificationMethods OR comparisonFilters.access',read:p=>p.data.comparisonFilters?.access ? 'known' : identification.read(p)};
-const foundation = (key, kind) => ({source:`research/fountain-cost-35.0b.json: data.${key}`,read:p=>structuredState(at(p.foundation,key),kind)});
+const foundation = (key, kind) => ({source:`research/fountain-cost-35.0b.json: data.${key}`,read:p=>dataState(at(p.data,key) ?? at(p.foundation,key),kind)});
 export const definitions = {
-  feeder: {keys:['futterautomaten','futterautomat'], critical:['animal','foodType','access'], fields:{animal,petSize:common('petSizes','array'),foodType:common('foodTypes','array'),access:{source:'comparisonFilters.access',read:p=>['open','microchip'].includes(p.data.comparisonFilters?.access)?'known':unknown},app:common('app'),camera:common('camera'),backupPower:common('backupPower'),offlineSchedule:common('offlineSchedule'),multiPet:common('multiPet.sharedUse'),...failure}},
+  feeder: {keys:['futterautomaten','futterautomat'], critical:['animal','foodType','access'], fields:{animal,petSize:common('petSizes','array'),foodType:common('foodTypes','array'),access:{source:'comparisonFilters.access',read:p=>['open','microchip'].includes(p.data.comparisonFilters?.access)?'known':p.data.comparisonFilters?.access==null?'missingSchemaData':unknown},app:common('app'),camera:common('camera'),backupPower:common('backupPower'),offlineSchedule:common('offlineSchedule'),multiPet:common('multiPet.sharedUse'),...failure}},
   fountain: {keys:['trinkbrunnen'], critical:['animal','capacity','material','filter','power'], fields:{animal,capacity:field('comparisonData.fountain.capacityLiters','number'),material:field('comparisonData.fountain.material','array'),filter:foundation('consumablePolicy.filterPresent','boolean'),filterRequired:{source:'35.0B: primary filter required (no main filter = notApplicable)',read:p=>p.cost?.filterPresent===false?'notApplicable':p.cost?.fields.filterRequired??unknown},filterCost:{source:'35.0B: existing primary-filter cost calculation; 30-day price validity',read:p=>p.cost?.fields.annualFilterCost??unknown},power:foundation('comparisonData.fountain.powerType','power'),battery:field('comparisonData.fountain.battery'),batteryRuntime:foundation('comparisonData.fountain.batteryRuntime','runtime'),offline:field('failureModes.powerOutage.status','capability'),dishwasher:foundation('comparisonData.fountain.dishwasherSafeParts','array'),...failure}},
   gps: {keys:['gps-tracker'],critical:['animal','minimumPetWeight','deviceWeight','subscription','battery','liveTracking','virtualFence'],fields:{animal,minimumPetWeight:field('gps.minimumPetWeightKg','number'),deviceWeight:field('gps.deviceWeightGrams','number'),subscription:field('gps.subscriptionRequired'),battery:field('gps.batteryMaxDays','number'),liveTracking:field('gps.liveTracking'),virtualFence:field('gps.virtualFence'),...failure}},
   catFlap: {keys:['katzenklappen'],critical:['animal','microchip','individualAccess','installation'],fields:{animal,microchip,individualAccess:field('multiPet.individualAccess','capability'),multiPet:field('multiPet.sharedUse','capability'),preyDetection:field('comparisonData.custom.preyDetection'),installation:field('comparisonData.catFlap.installation','array'),...failure}},
@@ -35,28 +57,39 @@ export const definitions = {
   camera: {keys:['haustierkameras'],critical:['animal','localStorage','cloud','subscription','detection','nightVision'],fields:{animal,localStorage:field('comparisonData.camera.localStorage'),cloud:field('comparisonData.camera.cloud'),subscription:{source:'subscription.requiredForCoreFunction (status must be documented)',read:p=>p.data.subscription?.status==='unknown'?unknown:structuredState(p.data.subscription?.requiredForCoreFunction)},detection:field('comparisonData.camera.detection'),nightVision:field('comparisonData.camera.nightVision'),...failure}},
   other: {keys:[],critical:['animal'],fields:{animal,...failure}}
 };
-// Additional accepted structured values; never interpret a descriptive string.
-// These requested criteria currently have no typed repository representation.
-// Keep the audit slots, but label their absence instead of implying an existing source.
-for (const key of ['localStorage','cloud','detection','nightVision']) {
-  definitions.camera.fields[key].source = 'No typed camera '+key+' field; descriptive custom/spec strings excluded';
+// Product records take precedence, including explicit unknown; research only fills absent fields.
+const operating = (key, kind) => ({source:`comparisonData.fountain.${key} (product first; existing 35.0B research fallback)`,read:p=>dataState(p.data.comparisonData?.fountain?.[key] ?? p.foundation?.comparisonData?.fountain?.[key],kind)});
+Object.assign(definitions.fountain.fields, {
+ power:operating('powerType',['mains','battery','mainsAndBattery']),
+ batteryRuntime:operating('batteryRuntime','runtime'), dishwasher:operating('dishwasherSafeParts','parts'),
+ lowWaterShutdown:operating('lowWaterShutdown','boolean'), waterLevelVisible:operating('waterLevelVisible','boolean'), pumpRemovable:operating('pumpRemovable','boolean')
+});
+const dishwasherParts = definitions.fountain.fields.dishwasher.read;
+definitions.fountain.fields.dishwasher.read=p=>dishwasherParts(p)==='missingSchemaData'?dataState(p.data.comparisonData?.fountain?.dishwasherSafe):dishwasherParts(p);
+definitions.catFlap.fields.installation={source:'comparisonData.catFlap.installation: at least one documented subfield; partial record does not prove all installation types',read:p=>{
+ const v=p.data.comparisonData?.catFlap?.installation;
+ if(v==null)return 'missingSchemaData';
+ if(['unknown','notApplicable'].includes(v.status))return v.status;
+ return Object.values(v).some(f=>f?.status==='known')?'known':'unknown';
+}};
+for(const key of ['doorSupported','wallSupported','glassSupported','metalDoorSupported','cutoutWidthMm','cutoutHeightMm','roundCutoutDiameterMm','passageWidthMm','passageHeightMm','tunnelDepthMm','adapterRequired']) {
+ const source='comparisonData.catFlap.installation.'+key;
+ definitions.catFlap.fields['installation.'+key]={source,read:p=>p.data.comparisonData?.catFlap?.installation?.status==='notApplicable'?'notApplicable':dataState(at(p.data,source),key.endsWith('Mm')?'number':'boolean')};
 }
-definitions.catFlap.fields.installation.source = 'No typed installation compatibility field; descriptive custom/spec strings excluded';
-const originalDishwasher = definitions.fountain.fields.dishwasher.read;
-definitions.fountain.fields.dishwasher.source += ' OR comparisonData.fountain.dishwasherSafe (boolean)';
-definitions.fountain.fields.dishwasher.read = p => {
-  const foundationState = originalDishwasher(p);
-  return foundationState === 'unknown' ? structuredState(p.data.comparisonData?.fountain?.dishwasherSafe) : foundationState;
-};
-const originalPower = definitions.fountain.fields.power.read;
-definitions.fountain.fields.power.read = p => {
-  const v=p.foundation?.comparisonData?.fountain?.powerType;
-  return v?.status==='known' && ['mains','battery','mainsAndBattery'].includes(v.value)?'known':originalPower(p);
-};
-definitions.fountain.fields.batteryRuntime.read = p => {
-  const v=p.foundation?.comparisonData?.fountain?.batteryRuntime;
-  return v?.status==='known' && typeof v.value?.minDays==='number' && typeof v.value?.maxDays==='number'?'known':v?.status==='notApplicable'?'notApplicable':unknown;
-};
+Object.assign(definitions.litterBox.fields, {
+ minimumOperationalWeight:field('sensorLimits.minimumOperationalWeightKg','number'),
+ belowMinimumBehavior:field('sensorLimits.belowMinimumBehavior',['manualOnly','automationDisabled'])
+});
+for(const[key,values]of Object.entries({localStorage:['supported','unavailable'],cloud:['required','optional','unavailable'],detection:['local','cloud','mixed','unavailable'],nightVision:['infrared','color','both','unavailable']}))definitions.camera.fields[key]=field('comparisonData.camera.'+key,values);
+Object.assign(definitions.camera.fields,{localStorageTypes:field('comparisonData.camera.localStorageTypes','array'),maxLocalStorageGb:field('comparisonData.camera.maxLocalStorageGb','number'),detectionTypes:field('comparisonData.camera.detectionTypes','array')});
+for(const key of ['localStorageTypes','maxLocalStorageGb']) {
+ const original=definitions.camera.fields[key].read;
+ definitions.camera.fields[key].read=p=>p.data.comparisonData?.camera?.localStorage==='unavailable'?'notApplicable':original(p);
+}
+definitions.camera.fields.subscription.read=p=>p.data.subscription==null?'missingSchemaData':p.data.subscription.status==='unknown'?'unknown':dataState(p.data.subscription.requiredForCoreFunction);
+definitions.litterBox.fields.litterCompatibility.read=p=>p.data.litterCompatibility==null?'missingSchemaData':p.data.litterCompatibility.status==='complete'?'known':'unknown';
+const gpsMinimum=definitions.gps.fields.minimumPetWeight.read;
+definitions.gps.fields.minimumPetWeight.read=p=>gpsMinimum(p)==='missingSchemaData' && ['Nicht separat ausgewiesen','Nicht ausgewiesen'].includes(p.data.comparisonData?.custom?.mindestgewicht)?'unknown':gpsMinimum(p);
 const resolved = s => ['known','notApplicable'].includes(s);
 export function readiness(rows, critical) {
   if (!rows.length) return 'NOT_READY';
@@ -80,28 +113,23 @@ export function buildCoverage(products, {asOf='2026-10-05', fountainDataset=read
       const count=Object.fromEntries(states.map(s=>[s,rows.filter(r=>r.fields[key]===s).length]));
       return [key,{source:f.source,...count,coveragePercent:rows.length?Math.round(100*count.known/rows.length):0}];
     }));
-    categories[world]={products:rows.length,criticalFields:def.critical,readiness:readiness(rows.map(r=>r.fields),def.critical),fields,rows};
+    const totals=Object.fromEntries(states.map(s=>[s,rows.reduce((sum,r)=>sum+Object.values(r.fields).filter(v=>v===s).length,0)]));
+    const criticalStates=rows.flatMap(r=>def.critical.map(k=>r.fields[k]));
+    const applicable=criticalStates.filter(s=>s!=='notApplicable').length;
+    categories[world]={products:rows.length,...totals,readinessPercent:applicable?Math.round(100*criticalStates.filter(s=>s==='known').length/applicable):0,criticalFields:def.critical,readiness:readiness(rows.map(r=>r.fields),def.critical),fields,rows};
   }
-  return {asOf,totalProducts:products.length,criteria:{scope:'All product Markdown records, including inactive; no prose extraction, schema defaults, or marketing heuristics. Supplemental structured fountain research joined by exact slug; not yet a category recommendation module.',coverage:'known / all products; explicit false counts as known. partial, unknown and notApplicable are separate. No inference from comparisonData.custom strings, specs, decision or decisionJourney prose.',readiness:'READY = all products have resolved critical fields. PARTIAL = at least one product has all critical fields known/notApplicable/partial. NOT_READY = none does. Critical fields are declared per category before calculation; operational safety and individual fit still require Phase-B validation.',statusVocabulary:'supported=SUPPORTED, unavailable=UNSUPPORTED, partial=PARTIAL, unknown=UNKNOWN, notApplicable=NOT_APPLICABLE; reuse product capability type, no second enum.'},categories};
+  return {asOf,totalProducts:products.length,stateLabels:{known:'KNOWN',unknown:'UNKNOWN',notApplicable:'NOT_APPLICABLE',missingSchemaData:'MISSING_SCHEMA_DATA'},criteria:{scope:'All product Markdown records, including inactive. Product fields take precedence over existing structured fountain research. No automatic prose interpretation or schema defaults.',coverage:'Known / all products for each field. Category totals count product-field observations, not unique products. Explicit false and documented empty dishwasher-safe parts count as known. Partial or conditional capabilities count as unknown, never known.',readiness:'Percentage = known critical product-field observations / applicable critical observations. NOT_APPLICABLE is excluded from that denominator; UNKNOWN and MISSING_SCHEMA_DATA remain in it. Critical criteria stay unchanged from Phase A. READY requires all products resolved; PARTIAL requires at least one fully resolved product.',gaps:'UNKNOWN is an explicit unresolved or conditional fact, not a quality error. MISSING_SCHEMA_DATA is absent typed data, not proof that manufacturer research is missing. Installation coverage means some documented installation facts; its subfields show the remaining limits. Litter minimumPetWeight is the automatic-mode boundary; a generic operational minimum never substitutes for it.'},categories};
 }
-const nextSteps = {
-  feeder: 'Animal data covers all models; food type and access are documented only for a subset, and function-specific offline schedules are missing. Phase B: constrain a pilot to documented food/access combinations and surface other gaps.',
-  fountain: 'Structured filter presence covers all models and primary-filter costs cover a subset; capacity, material and power do not yet overlap sufficiently. Phase B: connect the existing fountain research and fill those structural gaps first.',
-  gps: 'Animal, weight, subscription, battery, live tracking and virtual fence are broadly structured; minimum animal weight is incomplete. Phase B: a restricted pilot can use documented weight limits and distinguish unverified fit.',
-  catFlap: 'Identification and some multi-pet capabilities are structured; installation compatibility is missing as a typed decision field. Phase B: establish installation and individual-access facts before hard recommendations.',
-  litterBox: 'Litter compatibility and shared use are mostly documented; automatic-mode minimum weight is structured for only one model. Phase B: limit any pilot to verified safety/weight and litter combinations.',
-  camera: 'Subscription data covers most models; storage, cloud dependency, detection and night vision remain mostly descriptive. Phase B: normalize these documented claims before implementing selection.',
-  other: 'No products outside the six worlds currently exist.'
-};
 export function renderCoverage(report){
-  const lines=['# Advisor data coverage — Phase A', '',`As of: ${report.asOf}. Products: ${report.totalProducts}.`,'',...Object.values(report.criteria).flatMap(v=>[v,''])];
-  for(const[world,c]of Object.entries(report.categories)){
-    lines.push(`## ${world}: ${c.readiness}`, '',`Products: ${c.products}. Critical fields: ${c.criticalFields.join(', ')}.`,'','| Field | Known | Coverage | Partial | Unknown | N/A | Structured source |','|---|---:|---:|---:|---:|---:|---|');
-    for(const[k,f]of Object.entries(c.fields))lines.push(`| ${k} | ${f.known} | ${f.coveragePercent}% | ${f.partial} | ${f.unknown} | ${f.notApplicable} | ${f.source} |`);
-    lines.push('', nextSteps[world], '');
-  }
-  lines.push('## Phase-B gate','','No additional category recommendation engine is implemented. READY means data coverage only, not medical, safety or product suitability certification. Unknown and partial rows need explicit cautions or a limited pilot. Camera storage/detection prose and cat-flap installation prose must be structured before those modules can make hard decisions. Fountain research already exists separately; wire it into its future module without duplicating the source.','','## Ownership and legacy consolidation','','PetAdvisor and src/domain/advisor are the sole engine. The old FeederAdvisor was mounted only at /berater/futterautomat/. Its wet-food, camera, access, multiple-pet and app/local preferences are covered by PetAdvisor; its portion/large-dog branch did not use product evidence. Portion size, bowl fit, stability, cooling and local programming remain explicit checks rather than unsupported eligibility claims. /futterautomat-berater/ had its own canonical and an internal category link; both slash variants now use the existing public/_redirects HTTP 301 mechanism. The category link points directly to the new owner.','','Existing recommendation tests retain their assertions; fixtures now declare structured animal/access facts instead of relying on prose. The existing redirect-count assertion changes from 68 to 70 because both legacy advisor URL variants are covered. The feeder UI currently selects 31 eligible records; seven archived recommendations remain included in this all-product coverage audit, but are not offered as recommendations.');
-  return lines.join('\n')+'\n';
+ const lines=['# Advisor data coverage — Data normalization 01','',`As of: ${report.asOf}. Products: ${report.totalProducts}.`,'',...Object.values(report.criteria).flatMap(v=>[v,'']), '| Category | Products | Known | Unknown | N/A | Missing schema data | Readiness |','|---|---:|---:|---:|---:|---:|---:|'];
+ for(const[world,c]of Object.entries(report.categories))if(c.products)lines.push(`| ${world} | ${c.products} | ${c.known} | ${c.unknown} | ${c.notApplicable} | ${c.missingSchemaData} | ${c.readinessPercent}% |`);
+ for(const[world,c]of Object.entries(report.categories)){
+  if(!c.products)continue;
+  lines.push('',`## ${world}: ${c.readiness}`,'',`Products: ${c.products}. Critical fields: ${c.criticalFields.join(', ')}.`,'','| Field | KNOWN | Coverage | UNKNOWN | NOT_APPLICABLE | MISSING_SCHEMA_DATA | Source |','|---|---:|---:|---:|---:|---:|---|');
+  for(const[k,f]of Object.entries(c.fields))lines.push(`| ${k} | ${f.known} | ${f.coveragePercent}% | ${f.unknown} | ${f.notApplicable} | ${f.missingSchemaData} | ${f.source} |`);
+ }
+ lines.push('','## Remaining limits','','No Phase-B recommendation module is implemented. Unknown GPS minimum weights remain eligible for later advice with an explicit fit limitation. Conditional installation requirements, generic night-vision claims and unspecified processing locations are not hard compatibility facts. Product sources retain their existing dates; normalization is not renewed manufacturer verification. Feeder records are unchanged; existing typed camera booleans are included.','');
+ return lines.join('\n');
 }
 if(process.argv[1] && path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  const dir=path.join(app,'src/content/products');

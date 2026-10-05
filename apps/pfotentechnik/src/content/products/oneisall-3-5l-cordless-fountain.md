@@ -261,6 +261,17 @@ comparisonData:
     laufzeit: Herstellerangabe bis 60 Tage
     reinigung: Filter etwa zweiwöchentlich prüfen und Tank sowie Pumpe wöchentlich reinigen.
     app: Nein
+  fountain:
+    capacityLiters: 3.5
+    material:
+      - Edelstahl
+    powerType:
+      status: unknown
+    batteryRuntime:
+      status: known
+      value:
+        maxDays: 60
+        conditions: Herstellerangabe bis zu 60 Tage
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -286,6 +297,19 @@ decisionFacts:
     consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
 comparisons:
   - "beste-trinkbrunnen-fuer-hunde"
+evidenceSources:
+  - source: Herstellerdokumentation · oneisall 3,5L Cordless Fountain
+    url: https://oneisall.com/products/oneisall-3-5l-cordless-black-stainless-steel-pet-water-fountain-with-3pcs-filters
+    accessedAt: "2026-08-10"
+    sourceType: manufacturer
+    assertion: >-
+      Bereits dokumentierte technische Daten: Kapazität: 3,5 Liter; Material: Edelstahl; Betrieb: Akku; Lautstärke:
+      Herstellerangabe unter 30 dB; Reinigung: Filter etwa zweiwöchentlich prüfen und Tank sowie Pumpe wöchentlich
+      reinigen.. Normalisierung des vorhandenen Quellenstands, keine erneute externe Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.material
+      - comparisonData.fountain.batteryRuntime
 ---
 Der oneisall 3,5L ist besonders wegen seines Verhältnisses aus Tankgröße und kabelloser Nutzung interessant. Vor dem Kauf sollte geklärt werden, ob die Katze Sensorfluss akzeptiert.
 

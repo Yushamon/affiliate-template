@@ -214,14 +214,44 @@ decisionFacts:
 comparisonData:
   version: 1
   custom:
-    zugang: "Selektiver Mikrochip-Eingang"
-    richtungsrechte: "Gesamtregel und optionaler Nachtmodus; keine individuellen Ausgangsrechte"
-    app: "Nein"
-    strom: "EU-Netzanschluss"
-    einbau: "Tür oder Wand; Holz, Glas, PVC, uPVC und Metall nach Funktionstest"
-    durchgang: "160 × 160 mm"
-    produktrolle: "Netzbetriebene lokale Mikrochip-Klappe mit größerem Durchgang"
-
+    zugang: Selektiver Mikrochip-Eingang
+    richtungsrechte: Gesamtregel und optionaler Nachtmodus; keine individuellen Ausgangsrechte
+    app: Nein
+    strom: EU-Netzanschluss
+    einbau: Tür oder Wand; Holz, Glas, PVC, uPVC und Metall nach Funktionstest
+    durchgang: 160 × 160 mm
+    produktrolle: Netzbetriebene lokale Mikrochip-Klappe mit größerem Durchgang
+  catFlap:
+    installation:
+      status: partial
+      doorSupported:
+        status: known
+        value: true
+      wallSupported:
+        status: known
+        value: true
+      glassSupported:
+        status: known
+        value: true
+      cutoutWidthMm:
+        status: known
+        value: 180
+      cutoutHeightMm:
+        status: known
+        value: 171
+      roundCutoutDiameterMm:
+        status: known
+        value: 212
+      passageWidthMm:
+        status: known
+        value: 160
+      passageHeightMm:
+        status: known
+        value: 160
+      notes:
+        - >-
+          Metall nur nach vorherigem Funktionstest; deshalb keine uneingeschränkte Metallfreigabe. 40 mm betrifft den
+          separaten Verlängerungstunnel.
 comparisonFilters:
   animal:
     - "cat"
@@ -292,6 +322,22 @@ evidenceSources:
       - "specs"
       - "faq"
 
+  - source: PetSafe Deutschland – Mikrochip-Katzenklappe Petporte smart flap
+    url: https://www.petsafe.com/de/p/mikrochip-katzenklappe-petporte-smart-flap/100ML/
+    accessedAt: "2026-08-07"
+    assertion: >-
+      Aktueller Herstellerpreis, Verfügbarkeit, 15-stellige EU-/UK-Mikrochips, EU-Netzteil, Speicher für bis zu 25 Katzen,
+      Tonsignal, Nachtmodus, Einbaumaterialien, Chip-Ausschlüsse, Metalltür-Hinweis und Größenangaben.
+    fields:
+      - comparisonData.catFlap.installation.doorSupported
+      - comparisonData.catFlap.installation.wallSupported
+      - comparisonData.catFlap.installation.glassSupported
+      - comparisonData.catFlap.installation.cutoutWidthMm
+      - comparisonData.catFlap.installation.cutoutHeightMm
+      - comparisonData.catFlap.installation.roundCutoutDiameterMm
+      - comparisonData.catFlap.installation.passageWidthMm
+      - comparisonData.catFlap.installation.passageHeightMm
+    sourceType: manufacturer
 metadata:
   version: "1.1.0"
   normalizedAt: "2026-08-07"

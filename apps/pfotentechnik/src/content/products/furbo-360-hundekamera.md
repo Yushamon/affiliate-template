@@ -130,10 +130,28 @@ specs:
   - { label: "Abo", value: "Furbo Nanny für erweiterte intelligente Hinweise" }
 features: ["360-Grad-Sicht", "Auto-Tracking", "Zwei-Wege-Audio", "Leckerliausgabe"]
 comparisonData:
-  custom: { klasse: "Interaktionskamera", video: "360-Grad-Sicht", interaktion: "Audio und Leckerliausgabe", speicher: "App-/Tarifabhängig", abo: "Furbo Nanny optional", datenschutz: "Cloud- und Kontoeinstellungen prüfen" }
+  custom:
+    klasse: Interaktionskamera
+    video: 360-Grad-Sicht
+    interaktion: Audio und Leckerliausgabe
+    speicher: App-/Tarifabhängig
+    abo: Furbo Nanny optional
+    datenschutz: Cloud- und Kontoeinstellungen prüfen
+  camera:
+    localStorage: unknown
+    cloud: optional
+    detection: unknown
+    nightVision: unknown
 decisionJourney: { cluster: "haustierkameras", stage: "decision", intent: "furbo-360-pruefen", primaryQuestion: "Brauche ich Leckerliausgabe und Interaktion oder genügt eine einfache Innenkamera?", next: ["/vergleiche/beste-haustierkameras/"], fallback: ["/haustierkameras/"] }
 evidenceSources:
   - { source: "Furbo Deutschland", url: "https://furbo.com/eu-de/products/furbo-dog-cam-360", accessedAt: "2026-08-06", assertion: "360-Grad-Kamera, App, Nanny-Funktionen und Produktrolle sind Herstellerangaben.", fields: ["specs", "features", "decision"] }
+  - source: Herstellerdokumentation · Furbo 360° Hundekamera
+    url: https://help.furbo.com/hc/de/articles/17462739016089-Furbo-Nanny-Abonnements-und-Preise
+    accessedAt: "2026-09-02"
+    sourceType: manufacturer
+    assertion: Bereits dokumentierter Dienstumfang aus subscription; unveränderte Tarif- und Preisangaben.
+    fields:
+      - comparisonData.camera.cloud
 affiliate:
   provider: "amzn-to"
   label: "Preis und Verfügbarkeit prüfen"

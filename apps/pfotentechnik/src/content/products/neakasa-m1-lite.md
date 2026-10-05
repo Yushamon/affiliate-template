@@ -295,6 +295,12 @@ metadata:
   normalizedAt: "2026-08-07"
   policy: "Herstellerdaten und vergleichende Einordnung; keine eigene Praxistest- oder Langzeitbehauptung"
 priceAutomation: "editorial"
+sensorLimits:
+  automaticModeMinimumWeightKg: 1
+  belowMinimumBehavior: manualOnly
+  sourceUrl: https://eu.neakasa.com/products/m1-lite-self-cleaning-cat-litter-box
+  sourceType: manufacturer
+  verifiedAt: "2026-08-15"
 ---
 
 ## Kurz eingeordnet

@@ -253,6 +253,19 @@ comparisonData:
     gewicht: 0,75 kg
     geeignet_fur: Katzen und kleine Hunde
     akku: Nein
+  fountain:
+    capacityLiters: 1.8
+    material:
+      - BPA-freies ABS und Silikon
+    powerType:
+      status: known
+      value: mains
+    lowWaterShutdown:
+      status: known
+      value: true
+    dishwasherSafeParts:
+      status: known
+      value: []
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -276,6 +289,22 @@ decisionFacts:
   - label: "Filterwechsel"
     value: "Herstellerempfehlung etwa alle vier Wochen"
     consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
+evidenceSources:
+  - source: Herstellerdokumentation · PETKIT Eversweet Solo SE
+    url: https://www.petkit.com/products/eversweet-solo-se
+    accessedAt: "2026-07-16"
+    sourceType: manufacturer
+    assertion: >-
+      Bereits dokumentierte technische Daten: Kapazität: 1,8 Liter; Material: BPA-freies ABS und Silikon; Stromversorgung:
+      USB-Kabel, 5 V/1 A; Netzteil nicht enthalten; Lautstärke: Herstellerangabe bis 25 dB; Trockenlaufschutz:
+      automatische Abschaltung bei Wassermangel; Reinigung: vollständig zerlegbar, nicht spülmaschinengeeignet.
+      Normalisierung des vorhandenen Quellenstands, keine erneute externe Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.material
+      - comparisonData.fountain.powerType
+      - comparisonData.fountain.lowWaterShutdown
+      - comparisonData.fountain.dishwasherSafeParts
 ---
 Der Eversweet Solo SE ist die einfachste aktuelle PETKIT-Variante. Er verzichtet auf App, Akku und variable Modi und konzentriert sich auf kontinuierlichen Wasserfluss.
 

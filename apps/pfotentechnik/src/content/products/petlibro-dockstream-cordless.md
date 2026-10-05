@@ -266,6 +266,21 @@ comparisonData:
     abmessungen: 226 × 187 × 161 mm
     gewicht: 990 g
     geeignet_fur: Katzen und kleine Hunde
+  fountain:
+    capacityLiters: 2.5
+    material:
+      - BPA-freies ABS
+    powerType:
+      status: known
+      value: mainsAndBattery
+    batteryRuntime:
+      status: known
+      value:
+        maxDays: 30
+        conditions: Herstellerangabe bis 30 Tage
+    dishwasherSafeParts:
+      status: known
+      value: []
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -306,6 +321,21 @@ offers:
     evidenceSources: []
     lastAttemptAt: "2026-10-03T06:51:09.014Z"
     error: "Offizielle Produkt-URL unresolved."
+evidenceSources:
+  - source: Herstellerdokumentation · PETLIBRO Dockstream Cordless
+    url: https://au.petlibro.com/products/dockstream-battery-operated-water-fountain
+    accessedAt: "2026-07-16"
+    sourceType: manufacturer
+    assertion: >-
+      Bereits dokumentierte technische Daten: Kapazität: 2,5 Liter; Material: BPA-freies ABS; Stromversorgung: Netz- und
+      Akkubetrieb; Akkulaufzeit: Herstellerangabe bis 30 Tage; Lautstärke: Herstellerangabe 23 dB; Reinigung: nicht
+      spülmaschinengeeignet. Normalisierung des vorhandenen Quellenstands, keine erneute externe Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.material
+      - comparisonData.fountain.powerType
+      - comparisonData.fountain.batteryRuntime
+      - comparisonData.fountain.dishwasherSafeParts
 ---
 Der Dockstream Cordless ist das ältere, nicht smarte Akkumodell. Er darf nicht mit dem Dockstream 2 Smart Cordless verwechselt werden.
 

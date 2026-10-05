@@ -250,6 +250,17 @@ comparisonData:
     gewicht: 1,75 kg
     geeignet_fur: Katzen und kleine Hunde
     akku: Nein
+  fountain:
+    capacityLiters: 2.5
+    material:
+      - SUS 304 Edelstahl
+    powerType:
+      status: known
+      value: mains
+    dishwasherSafeParts:
+      status: known
+      value:
+        - Tank
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -290,6 +301,20 @@ offers:
     evidenceSources: []
     lastAttemptAt: "2026-10-03T06:51:12.950Z"
     error: "Offizielle Produkt-URL unresolved."
+evidenceSources:
+  - source: Herstellerdokumentation · PETLIBRO Glacier Ultrafiltration Fountain
+    url: https://petlibro.com/pages/glacier-ultrafiltration-stainless-steel-pet-water-fountain
+    accessedAt: "2026-07-16"
+    sourceType: manufacturer
+    assertion: >-
+      Bereits dokumentierte technische Daten: Kapazität: 2,5 Liter; Material: SUS 304 Edelstahl; Stromversorgung:
+      Netzbetrieb; Reinigung: Tank laut Hersteller spülmaschinengeeignet; Lautstärke: Nicht vom Hersteller ausgewiesen.
+      Normalisierung des vorhandenen Quellenstands, keine erneute externe Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.material
+      - comparisonData.fountain.powerType
+      - comparisonData.fountain.dishwasherSafeParts
 ---
 Der PETLIBRO Glacier unterscheidet sich von klassischen Pumpenbrunnen vor allem durch den Edelstahlaufbau und das Ultrafiltrationsmodul.
 

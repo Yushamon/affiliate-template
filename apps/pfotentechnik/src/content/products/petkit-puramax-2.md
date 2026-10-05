@@ -226,6 +226,12 @@ experience:
   reliability: >-
     Langzeit- und Zuverlässigkeitsaussagen werden nur so stark gewichtet, wie sie durch die
     angegebenen Quellen gedeckt sind.
+sensorLimits:
+  minimumOperationalWeightKg: 1.5
+  belowMinimumBehavior: unknown
+  sourceUrl: https://www.petkit.com/products/petkit-puramax-2
+  sourceType: manufacturer
+  verifiedAt: "2026-08-16"
 ---
 
 ## PuraMax statt PUROBOT

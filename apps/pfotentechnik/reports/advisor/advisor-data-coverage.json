@@ -1,15 +1,26 @@
 {
   "asOf": "2026-10-05",
   "totalProducts": 103,
+  "stateLabels": {
+    "known": "KNOWN",
+    "unknown": "UNKNOWN",
+    "notApplicable": "NOT_APPLICABLE",
+    "missingSchemaData": "MISSING_SCHEMA_DATA"
+  },
   "criteria": {
-    "scope": "All product Markdown records, including inactive; no prose extraction, schema defaults, or marketing heuristics. Supplemental structured fountain research joined by exact slug; not yet a category recommendation module.",
-    "coverage": "known / all products; explicit false counts as known. partial, unknown and notApplicable are separate. No inference from comparisonData.custom strings, specs, decision or decisionJourney prose.",
-    "readiness": "READY = all products have resolved critical fields. PARTIAL = at least one product has all critical fields known/notApplicable/partial. NOT_READY = none does. Critical fields are declared per category before calculation; operational safety and individual fit still require Phase-B validation.",
-    "statusVocabulary": "supported=SUPPORTED, unavailable=UNSUPPORTED, partial=PARTIAL, unknown=UNKNOWN, notApplicable=NOT_APPLICABLE; reuse product capability type, no second enum."
+    "scope": "All product Markdown records, including inactive. Product fields take precedence over existing structured fountain research. No automatic prose interpretation or schema defaults.",
+    "coverage": "Known / all products for each field. Category totals count product-field observations, not unique products. Explicit false and documented empty dishwasher-safe parts count as known. Partial or conditional capabilities count as unknown, never known.",
+    "readiness": "Percentage = known critical product-field observations / applicable critical observations. NOT_APPLICABLE is excluded from that denominator; UNKNOWN and MISSING_SCHEMA_DATA remain in it. Critical criteria stay unchanged from Phase A. READY requires all products resolved; PARTIAL requires at least one fully resolved product.",
+    "gaps": "UNKNOWN is an explicit unresolved or conditional fact, not a quality error. MISSING_SCHEMA_DATA is absent typed data, not proof that manufacturer research is missing. Installation coverage means some documented installation facts; its subfields show the remaining limits. Litter minimumPetWeight is the automatic-mode boundary; a generic operational minimum never substitutes for it."
   },
   "categories": {
     "feeder": {
       "products": 38,
+      "known": 103,
+      "unknown": 34,
+      "notApplicable": 0,
+      "missingSchemaData": 395,
+      "readinessPercent": 46,
       "criticalFields": [
         "animal",
         "foodType",
@@ -18,115 +29,115 @@
       "readiness": "PARTIAL",
       "fields": {
         "animal": {
-          "source": "Advisor common.animals (explicit product fields only)",
+          "source": "gps.animal OR comparisonFilters.animal",
           "known": 38,
-          "partial": 0,
           "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 100
         },
         "petSize": {
-          "source": "Advisor common.petSizes (explicit product fields only)",
+          "source": "comparisonFilters.petSize",
           "known": 34,
-          "partial": 0,
           "unknown": 4,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 89
         },
         "foodType": {
-          "source": "Advisor common.foodTypes (explicit product fields only)",
+          "source": "comparisonFilters.foodType",
           "known": 11,
-          "partial": 0,
-          "unknown": 27,
+          "unknown": 20,
           "notApplicable": 0,
+          "missingSchemaData": 7,
           "coveragePercent": 29
         },
         "access": {
           "source": "comparisonFilters.access",
           "known": 4,
-          "partial": 0,
-          "unknown": 34,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 34,
           "coveragePercent": 11
         },
         "app": {
-          "source": "Advisor common.app (explicit product fields only)",
+          "source": "comparisonFilters.app OR comparisonData.fountain.app",
           "known": 4,
-          "partial": 0,
-          "unknown": 34,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 34,
           "coveragePercent": 11
         },
         "camera": {
-          "source": "Advisor common.camera (explicit product fields only)",
+          "source": "comparisonFilters.camera OR comparisonData.feeder.camera",
           "known": 3,
-          "partial": 0,
-          "unknown": 35,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 35,
           "coveragePercent": 8
         },
         "backupPower": {
-          "source": "Advisor common.backupPower (explicit product fields only)",
+          "source": "comparisonFilters.backupPower",
           "known": 3,
-          "partial": 0,
-          "unknown": 35,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 35,
           "coveragePercent": 8
         },
         "offlineSchedule": {
-          "source": "Advisor common.offlineSchedule (explicit product fields only)",
+          "source": "failureModes.internetOutage.functions.localSchedule",
           "known": 0,
-          "partial": 0,
-          "unknown": 38,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 38,
           "coveragePercent": 0
         },
         "multiPet": {
-          "source": "Advisor common.multiPet.sharedUse (explicit product fields only)",
+          "source": "multiPet.sharedUse",
           "known": 3,
-          "partial": 1,
-          "unknown": 34,
+          "unknown": 1,
           "notApplicable": 0,
+          "missingSchemaData": 34,
           "coveragePercent": 8
         },
         "failureModes.powerOutage": {
           "source": "failureModes.powerOutage.status",
           "known": 1,
-          "partial": 2,
-          "unknown": 35,
+          "unknown": 2,
           "notApplicable": 0,
+          "missingSchemaData": 35,
           "coveragePercent": 3
         },
         "failureModes.wifiOutage": {
           "source": "failureModes.wifiOutage.status",
           "known": 1,
-          "partial": 0,
-          "unknown": 37,
+          "unknown": 2,
           "notApplicable": 0,
+          "missingSchemaData": 35,
           "coveragePercent": 3
         },
         "failureModes.internetOutage": {
           "source": "failureModes.internetOutage.status",
           "known": 1,
-          "partial": 0,
-          "unknown": 37,
+          "unknown": 2,
           "notApplicable": 0,
+          "missingSchemaData": 35,
           "coveragePercent": 3
         },
         "failureModes.cloudOutage": {
           "source": "failureModes.cloudOutage.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 38,
+          "unknown": 3,
           "notApplicable": 0,
+          "missingSchemaData": 35,
           "coveragePercent": 0
         },
         "failureModes.mechanicalBlock": {
           "source": "failureModes.mechanicalBlock.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 38,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 38,
           "coveragePercent": 0
         }
       },
@@ -137,18 +148,18 @@
           "fields": {
             "animal": "known",
             "petSize": "known",
-            "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "foodType": "missingSchemaData",
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -158,17 +169,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -178,17 +189,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -198,17 +209,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -218,17 +229,17 @@
             "animal": "known",
             "petSize": "unknown",
             "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -238,17 +249,17 @@
             "animal": "known",
             "petSize": "unknown",
             "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -258,17 +269,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -278,17 +289,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "known",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -297,18 +308,18 @@
           "fields": {
             "animal": "known",
             "petSize": "known",
-            "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "foodType": "missingSchemaData",
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -318,17 +329,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "known",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -340,15 +351,15 @@
             "foodType": "known",
             "access": "known",
             "app": "known",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
             "multiPet": "known",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -358,17 +369,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "known",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -377,18 +388,18 @@
           "fields": {
             "animal": "known",
             "petSize": "known",
-            "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "foodType": "missingSchemaData",
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -398,17 +409,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -418,17 +429,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -438,17 +449,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -458,17 +469,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "known",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -478,17 +489,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "known",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -502,13 +513,13 @@
             "app": "known",
             "camera": "known",
             "backupPower": "known",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "partial",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "unknown",
             "failureModes.wifiOutage": "known",
             "failureModes.internetOutage": "unknown",
             "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -518,17 +529,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -538,17 +549,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "known",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
             "failureModes.powerOutage": "known",
             "failureModes.wifiOutage": "unknown",
             "failureModes.internetOutage": "known",
             "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -562,13 +573,13 @@
             "app": "known",
             "camera": "known",
             "backupPower": "known",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -577,18 +588,18 @@
           "fields": {
             "animal": "known",
             "petSize": "known",
-            "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "foodType": "missingSchemaData",
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -598,17 +609,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -617,18 +628,18 @@
           "fields": {
             "animal": "known",
             "petSize": "known",
-            "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "foodType": "missingSchemaData",
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -638,17 +649,17 @@
             "animal": "known",
             "petSize": "unknown",
             "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "partial",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -662,13 +673,13 @@
             "app": "known",
             "camera": "known",
             "backupPower": "known",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "partial",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "unknown",
             "failureModes.wifiOutage": "unknown",
             "failureModes.internetOutage": "unknown",
             "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -678,17 +689,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "known",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -698,17 +709,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -718,17 +729,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -738,17 +749,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -758,17 +769,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
             "multiPet": "known",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -778,17 +789,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
             "multiPet": "known",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -798,17 +809,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -818,17 +829,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -838,17 +849,17 @@
             "animal": "known",
             "petSize": "known",
             "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -857,18 +868,18 @@
           "fields": {
             "animal": "known",
             "petSize": "known",
-            "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "foodType": "missingSchemaData",
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -877,24 +888,29 @@
           "fields": {
             "animal": "known",
             "petSize": "known",
-            "foodType": "unknown",
-            "access": "unknown",
-            "app": "unknown",
-            "camera": "unknown",
-            "backupPower": "unknown",
-            "offlineSchedule": "unknown",
-            "multiPet": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "foodType": "missingSchemaData",
+            "access": "missingSchemaData",
+            "app": "missingSchemaData",
+            "camera": "missingSchemaData",
+            "backupPower": "missingSchemaData",
+            "offlineSchedule": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         }
       ]
     },
     "fountain": {
       "products": 24,
+      "known": 171,
+      "unknown": 113,
+      "notApplicable": 2,
+      "missingSchemaData": 170,
+      "readinessPercent": 95,
       "criticalFields": [
         "animal",
         "capacity",
@@ -902,135 +918,159 @@
         "filter",
         "power"
       ],
-      "readiness": "NOT_READY",
+      "readiness": "PARTIAL",
       "fields": {
         "animal": {
-          "source": "Advisor common.animals (explicit product fields only)",
+          "source": "gps.animal OR comparisonFilters.animal",
           "known": 24,
-          "partial": 0,
           "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 100
         },
         "capacity": {
           "source": "comparisonData.fountain.capacityLiters",
-          "known": 2,
-          "partial": 0,
-          "unknown": 22,
+          "known": 23,
+          "unknown": 0,
           "notApplicable": 0,
-          "coveragePercent": 8
+          "missingSchemaData": 1,
+          "coveragePercent": 96
         },
         "material": {
           "source": "comparisonData.fountain.material",
-          "known": 2,
-          "partial": 0,
-          "unknown": 22,
+          "known": 22,
+          "unknown": 0,
           "notApplicable": 0,
-          "coveragePercent": 8
+          "missingSchemaData": 2,
+          "coveragePercent": 92
         },
         "filter": {
           "source": "research/fountain-cost-35.0b.json: data.consumablePolicy.filterPresent",
           "known": 24,
-          "partial": 0,
           "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 100
         },
         "filterRequired": {
           "source": "35.0B: primary filter required (no main filter = notApplicable)",
           "known": 6,
-          "partial": 0,
           "unknown": 17,
           "notApplicable": 1,
+          "missingSchemaData": 0,
           "coveragePercent": 25
         },
         "filterCost": {
           "source": "35.0B: existing primary-filter cost calculation; 30-day price validity",
           "known": 15,
-          "partial": 0,
           "unknown": 8,
           "notApplicable": 1,
+          "missingSchemaData": 0,
           "coveragePercent": 63
         },
         "power": {
-          "source": "research/fountain-cost-35.0b.json: data.comparisonData.fountain.powerType",
-          "known": 6,
-          "partial": 0,
-          "unknown": 18,
+          "source": "comparisonData.fountain.powerType (product first; existing 35.0B research fallback)",
+          "known": 21,
+          "unknown": 3,
           "notApplicable": 0,
-          "coveragePercent": 25
+          "missingSchemaData": 0,
+          "coveragePercent": 88
         },
         "battery": {
           "source": "comparisonData.fountain.battery",
           "known": 1,
-          "partial": 0,
-          "unknown": 23,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 23,
           "coveragePercent": 4
         },
         "batteryRuntime": {
-          "source": "research/fountain-cost-35.0b.json: data.comparisonData.fountain.batteryRuntime",
-          "known": 0,
-          "partial": 0,
-          "unknown": 24,
+          "source": "comparisonData.fountain.batteryRuntime (product first; existing 35.0B research fallback)",
+          "known": 9,
+          "unknown": 15,
           "notApplicable": 0,
-          "coveragePercent": 0
+          "missingSchemaData": 0,
+          "coveragePercent": 38
         },
         "offline": {
           "source": "failureModes.powerOutage.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 24,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 24,
           "coveragePercent": 0
         },
         "dishwasher": {
-          "source": "research/fountain-cost-35.0b.json: data.comparisonData.fountain.dishwasherSafeParts OR comparisonData.fountain.dishwasherSafe (boolean)",
-          "known": 1,
-          "partial": 0,
-          "unknown": 23,
+          "source": "comparisonData.fountain.dishwasherSafeParts (product first; existing 35.0B research fallback)",
+          "known": 13,
+          "unknown": 11,
           "notApplicable": 0,
-          "coveragePercent": 4
+          "missingSchemaData": 0,
+          "coveragePercent": 54
         },
         "failureModes.powerOutage": {
           "source": "failureModes.powerOutage.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 24,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 24,
           "coveragePercent": 0
         },
         "failureModes.wifiOutage": {
           "source": "failureModes.wifiOutage.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 24,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 24,
           "coveragePercent": 0
         },
         "failureModes.internetOutage": {
           "source": "failureModes.internetOutage.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 24,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 24,
           "coveragePercent": 0
         },
         "failureModes.cloudOutage": {
           "source": "failureModes.cloudOutage.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 24,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 24,
           "coveragePercent": 0
         },
         "failureModes.mechanicalBlock": {
           "source": "failureModes.mechanicalBlock.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 24,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 24,
           "coveragePercent": 0
+        },
+        "lowWaterShutdown": {
+          "source": "comparisonData.fountain.lowWaterShutdown (product first; existing 35.0B research fallback)",
+          "known": 8,
+          "unknown": 16,
+          "notApplicable": 0,
+          "missingSchemaData": 0,
+          "coveragePercent": 33
+        },
+        "waterLevelVisible": {
+          "source": "comparisonData.fountain.waterLevelVisible (product first; existing 35.0B research fallback)",
+          "known": 2,
+          "unknown": 22,
+          "notApplicable": 0,
+          "missingSchemaData": 0,
+          "coveragePercent": 8
+        },
+        "pumpRemovable": {
+          "source": "comparisonData.fountain.pumpRemovable (product first; existing 35.0B research fallback)",
+          "known": 3,
+          "unknown": 21,
+          "notApplicable": 0,
+          "missingSchemaData": 0,
+          "coveragePercent": 13
         }
       },
       "rows": [
@@ -1039,21 +1079,24 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "known",
+            "material": "known",
             "filter": "known",
             "filterRequired": "unknown",
             "filterCost": "known",
-            "power": "unknown",
-            "battery": "unknown",
+            "power": "known",
+            "battery": "missingSchemaData",
             "batteryRuntime": "unknown",
-            "offline": "unknown",
-            "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "offline": "missingSchemaData",
+            "dishwasher": "known",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "unknown",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "unknown"
           }
         },
         {
@@ -1061,21 +1104,24 @@
           "productStatus": "unknown",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "known",
+            "material": "known",
             "filter": "known",
             "filterRequired": "unknown",
             "filterCost": "known",
-            "power": "unknown",
-            "battery": "unknown",
+            "power": "known",
+            "battery": "missingSchemaData",
             "batteryRuntime": "unknown",
-            "offline": "unknown",
+            "offline": "missingSchemaData",
             "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "unknown",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "unknown"
           }
         },
         {
@@ -1083,21 +1129,24 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "known",
+            "material": "known",
             "filter": "known",
             "filterRequired": "unknown",
             "filterCost": "known",
-            "power": "unknown",
-            "battery": "unknown",
+            "power": "known",
+            "battery": "missingSchemaData",
             "batteryRuntime": "unknown",
-            "offline": "unknown",
-            "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "offline": "missingSchemaData",
+            "dishwasher": "known",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "known",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "known"
           }
         },
         {
@@ -1105,21 +1154,24 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "known",
+            "material": "known",
             "filter": "known",
             "filterRequired": "unknown",
             "filterCost": "unknown",
             "power": "known",
-            "battery": "unknown",
-            "batteryRuntime": "unknown",
-            "offline": "unknown",
-            "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "battery": "missingSchemaData",
+            "batteryRuntime": "known",
+            "offline": "missingSchemaData",
+            "dishwasher": "known",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "unknown",
+            "waterLevelVisible": "known",
+            "pumpRemovable": "unknown"
           }
         },
         {
@@ -1127,21 +1179,24 @@
           "productStatus": "unknown",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "known",
+            "material": "known",
             "filter": "known",
             "filterRequired": "unknown",
             "filterCost": "unknown",
-            "power": "unknown",
-            "battery": "unknown",
-            "batteryRuntime": "unknown",
-            "offline": "unknown",
+            "power": "known",
+            "battery": "missingSchemaData",
+            "batteryRuntime": "known",
+            "offline": "missingSchemaData",
             "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "unknown",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "unknown"
           }
         },
         {
@@ -1149,21 +1204,24 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "known",
+            "material": "known",
             "filter": "known",
             "filterRequired": "unknown",
             "filterCost": "unknown",
-            "power": "unknown",
-            "battery": "unknown",
-            "batteryRuntime": "unknown",
-            "offline": "unknown",
+            "power": "known",
+            "battery": "missingSchemaData",
+            "batteryRuntime": "known",
+            "offline": "missingSchemaData",
             "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "unknown",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "known"
           }
         },
         {
@@ -1171,21 +1229,24 @@
           "productStatus": "unknown",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "known",
+            "material": "known",
             "filter": "known",
             "filterRequired": "unknown",
             "filterCost": "unknown",
             "power": "unknown",
-            "battery": "unknown",
-            "batteryRuntime": "unknown",
-            "offline": "unknown",
+            "battery": "missingSchemaData",
+            "batteryRuntime": "known",
+            "offline": "missingSchemaData",
             "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "unknown",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "unknown"
           }
         },
         {
@@ -1193,21 +1254,24 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "known",
+            "material": "known",
             "filter": "known",
             "filterRequired": "unknown",
             "filterCost": "unknown",
-            "power": "unknown",
-            "battery": "unknown",
+            "power": "known",
+            "battery": "missingSchemaData",
             "batteryRuntime": "unknown",
-            "offline": "unknown",
+            "offline": "missingSchemaData",
             "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "known",
+            "waterLevelVisible": "known",
+            "pumpRemovable": "unknown"
           }
         },
         {
@@ -1215,21 +1279,24 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "known",
+            "material": "known",
             "filter": "known",
             "filterRequired": "known",
             "filterCost": "known",
             "power": "known",
-            "battery": "unknown",
+            "battery": "missingSchemaData",
             "batteryRuntime": "unknown",
-            "offline": "unknown",
-            "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "offline": "missingSchemaData",
+            "dishwasher": "known",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "known",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "known"
           }
         },
         {
@@ -1237,21 +1304,24 @@
           "productStatus": "unknown",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "missingSchemaData",
+            "material": "missingSchemaData",
             "filter": "known",
             "filterRequired": "unknown",
             "filterCost": "unknown",
             "power": "unknown",
-            "battery": "unknown",
+            "battery": "missingSchemaData",
             "batteryRuntime": "unknown",
-            "offline": "unknown",
+            "offline": "missingSchemaData",
             "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "unknown",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "unknown"
           }
         },
         {
@@ -1259,21 +1329,24 @@
           "productStatus": "unknown",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "known",
+            "material": "known",
             "filter": "known",
             "filterRequired": "known",
             "filterCost": "known",
             "power": "known",
-            "battery": "unknown",
-            "batteryRuntime": "unknown",
-            "offline": "unknown",
+            "battery": "missingSchemaData",
+            "batteryRuntime": "known",
+            "offline": "missingSchemaData",
             "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "known",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "unknown"
           }
         },
         {
@@ -1281,21 +1354,24 @@
           "productStatus": "unknown",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "known",
+            "material": "known",
             "filter": "known",
             "filterRequired": "known",
             "filterCost": "known",
             "power": "known",
-            "battery": "unknown",
-            "batteryRuntime": "unknown",
-            "offline": "unknown",
+            "battery": "missingSchemaData",
+            "batteryRuntime": "known",
+            "offline": "missingSchemaData",
             "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "known",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "unknown"
           }
         },
         {
@@ -1303,21 +1379,24 @@
           "productStatus": "unknown",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "known",
+            "material": "known",
             "filter": "known",
             "filterRequired": "known",
             "filterCost": "known",
             "power": "known",
-            "battery": "unknown",
+            "battery": "missingSchemaData",
             "batteryRuntime": "unknown",
-            "offline": "unknown",
-            "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "offline": "missingSchemaData",
+            "dishwasher": "known",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "known",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "unknown"
           }
         },
         {
@@ -1325,21 +1404,24 @@
           "productStatus": "unknown",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "known",
+            "material": "known",
             "filter": "known",
             "filterRequired": "known",
             "filterCost": "known",
             "power": "known",
-            "battery": "unknown",
+            "battery": "missingSchemaData",
             "batteryRuntime": "unknown",
-            "offline": "unknown",
-            "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "offline": "missingSchemaData",
+            "dishwasher": "known",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "known",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "unknown"
           }
         },
         {
@@ -1347,21 +1429,24 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "known",
+            "material": "known",
             "filter": "known",
             "filterRequired": "notApplicable",
             "filterCost": "notApplicable",
-            "power": "unknown",
-            "battery": "unknown",
+            "power": "known",
+            "battery": "missingSchemaData",
             "batteryRuntime": "unknown",
-            "offline": "unknown",
-            "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "offline": "missingSchemaData",
+            "dishwasher": "known",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "unknown",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "unknown"
           }
         },
         {
@@ -1369,21 +1454,24 @@
           "productStatus": "unknown",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "known",
+            "material": "missingSchemaData",
             "filter": "known",
             "filterRequired": "unknown",
             "filterCost": "unknown",
             "power": "unknown",
-            "battery": "unknown",
+            "battery": "missingSchemaData",
             "batteryRuntime": "unknown",
-            "offline": "unknown",
+            "offline": "missingSchemaData",
             "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "known",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "unknown"
           }
         },
         {
@@ -1396,16 +1484,19 @@
             "filter": "known",
             "filterRequired": "unknown",
             "filterCost": "known",
-            "power": "unknown",
-            "battery": "unknown",
-            "batteryRuntime": "unknown",
-            "offline": "unknown",
+            "power": "known",
+            "battery": "missingSchemaData",
+            "batteryRuntime": "known",
+            "offline": "missingSchemaData",
             "dishwasher": "known",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "unknown",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "unknown"
           }
         },
         {
@@ -1418,16 +1509,19 @@
             "filter": "known",
             "filterRequired": "unknown",
             "filterCost": "known",
-            "power": "unknown",
+            "power": "known",
             "battery": "known",
             "batteryRuntime": "unknown",
-            "offline": "unknown",
-            "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "offline": "missingSchemaData",
+            "dishwasher": "known",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "unknown",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "unknown"
           }
         },
         {
@@ -1435,21 +1529,24 @@
           "productStatus": "unknown",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "known",
+            "material": "known",
             "filter": "known",
             "filterRequired": "unknown",
             "filterCost": "known",
-            "power": "unknown",
-            "battery": "unknown",
-            "batteryRuntime": "unknown",
-            "offline": "unknown",
-            "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "power": "known",
+            "battery": "missingSchemaData",
+            "batteryRuntime": "known",
+            "offline": "missingSchemaData",
+            "dishwasher": "known",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "unknown",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "unknown"
           }
         },
         {
@@ -1457,21 +1554,24 @@
           "productStatus": "unknown",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "known",
+            "material": "known",
             "filter": "known",
             "filterRequired": "unknown",
             "filterCost": "known",
-            "power": "unknown",
-            "battery": "unknown",
+            "power": "known",
+            "battery": "missingSchemaData",
             "batteryRuntime": "unknown",
-            "offline": "unknown",
+            "offline": "missingSchemaData",
             "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "unknown",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "unknown"
           }
         },
         {
@@ -1479,21 +1579,24 @@
           "productStatus": "unknown",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "known",
+            "material": "known",
             "filter": "known",
             "filterRequired": "known",
             "filterCost": "known",
-            "power": "unknown",
-            "battery": "unknown",
+            "power": "known",
+            "battery": "missingSchemaData",
             "batteryRuntime": "unknown",
-            "offline": "unknown",
-            "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "offline": "missingSchemaData",
+            "dishwasher": "known",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "unknown",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "unknown"
           }
         },
         {
@@ -1501,21 +1604,24 @@
           "productStatus": "unknown",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "known",
+            "material": "known",
             "filter": "known",
             "filterRequired": "unknown",
             "filterCost": "unknown",
-            "power": "unknown",
-            "battery": "unknown",
+            "power": "known",
+            "battery": "missingSchemaData",
             "batteryRuntime": "unknown",
-            "offline": "unknown",
-            "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "offline": "missingSchemaData",
+            "dishwasher": "known",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "unknown",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "unknown"
           }
         },
         {
@@ -1523,21 +1629,24 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "known",
+            "material": "known",
             "filter": "known",
             "filterRequired": "unknown",
             "filterCost": "known",
-            "power": "unknown",
-            "battery": "unknown",
+            "power": "known",
+            "battery": "missingSchemaData",
             "batteryRuntime": "unknown",
-            "offline": "unknown",
-            "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "offline": "missingSchemaData",
+            "dishwasher": "known",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "unknown",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "unknown"
           }
         },
         {
@@ -1545,27 +1654,35 @@
           "productStatus": "unknown",
           "fields": {
             "animal": "known",
-            "capacity": "unknown",
-            "material": "unknown",
+            "capacity": "known",
+            "material": "known",
             "filter": "known",
             "filterRequired": "unknown",
             "filterCost": "known",
-            "power": "unknown",
-            "battery": "unknown",
-            "batteryRuntime": "unknown",
-            "offline": "unknown",
+            "power": "known",
+            "battery": "missingSchemaData",
+            "batteryRuntime": "known",
+            "offline": "missingSchemaData",
             "dishwasher": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "lowWaterShutdown": "unknown",
+            "waterLevelVisible": "unknown",
+            "pumpRemovable": "unknown"
           }
         }
       ]
     },
     "gps": {
       "products": 12,
+      "known": 82,
+      "unknown": 8,
+      "notApplicable": 3,
+      "missingSchemaData": 51,
+      "readinessPercent": 94,
       "criticalFields": [
         "animal",
         "minimumPetWeight",
@@ -1578,99 +1695,99 @@
       "readiness": "PARTIAL",
       "fields": {
         "animal": {
-          "source": "Advisor common.animals (explicit product fields only)",
+          "source": "gps.animal OR comparisonFilters.animal",
           "known": 12,
-          "partial": 0,
           "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 100
         },
         "minimumPetWeight": {
           "source": "gps.minimumPetWeightKg",
           "known": 7,
-          "partial": 0,
-          "unknown": 5,
+          "unknown": 2,
           "notApplicable": 0,
+          "missingSchemaData": 3,
           "coveragePercent": 58
         },
         "deviceWeight": {
           "source": "gps.deviceWeightGrams",
           "known": 12,
-          "partial": 0,
           "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 100
         },
         "subscription": {
           "source": "gps.subscriptionRequired",
           "known": 12,
-          "partial": 0,
           "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 100
         },
         "battery": {
           "source": "gps.batteryMaxDays",
           "known": 12,
-          "partial": 0,
           "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 100
         },
         "liveTracking": {
           "source": "gps.liveTracking",
           "known": 12,
-          "partial": 0,
           "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 100
         },
         "virtualFence": {
           "source": "gps.virtualFence",
           "known": 12,
-          "partial": 0,
           "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 100
         },
         "failureModes.powerOutage": {
           "source": "failureModes.powerOutage.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 9,
+          "unknown": 0,
           "notApplicable": 3,
+          "missingSchemaData": 9,
           "coveragePercent": 0
         },
         "failureModes.wifiOutage": {
           "source": "failureModes.wifiOutage.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 12,
+          "unknown": 3,
           "notApplicable": 0,
+          "missingSchemaData": 9,
           "coveragePercent": 0
         },
         "failureModes.internetOutage": {
           "source": "failureModes.internetOutage.status",
           "known": 3,
-          "partial": 0,
-          "unknown": 9,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 9,
           "coveragePercent": 25
         },
         "failureModes.cloudOutage": {
           "source": "failureModes.cloudOutage.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 12,
+          "unknown": 3,
           "notApplicable": 0,
+          "missingSchemaData": 9,
           "coveragePercent": 0
         },
         "failureModes.mechanicalBlock": {
           "source": "failureModes.mechanicalBlock.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 12,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 12,
           "coveragePercent": 0
         }
       },
@@ -1686,11 +1803,11 @@
             "battery": "known",
             "liveTracking": "known",
             "virtualFence": "known",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -1698,17 +1815,17 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "minimumPetWeight": "unknown",
+            "minimumPetWeight": "missingSchemaData",
             "deviceWeight": "known",
             "subscription": "known",
             "battery": "known",
             "liveTracking": "known",
             "virtualFence": "known",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -1716,17 +1833,17 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "minimumPetWeight": "unknown",
+            "minimumPetWeight": "missingSchemaData",
             "deviceWeight": "known",
             "subscription": "known",
             "battery": "known",
             "liveTracking": "known",
             "virtualFence": "known",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -1740,11 +1857,11 @@
             "battery": "known",
             "liveTracking": "known",
             "virtualFence": "known",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -1758,11 +1875,11 @@
             "battery": "known",
             "liveTracking": "known",
             "virtualFence": "known",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -1780,7 +1897,7 @@
             "failureModes.wifiOutage": "unknown",
             "failureModes.internetOutage": "known",
             "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -1794,11 +1911,11 @@
             "battery": "known",
             "liveTracking": "known",
             "virtualFence": "known",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -1812,11 +1929,11 @@
             "battery": "known",
             "liveTracking": "known",
             "virtualFence": "known",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -1830,11 +1947,11 @@
             "battery": "known",
             "liveTracking": "known",
             "virtualFence": "known",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -1852,7 +1969,7 @@
             "failureModes.wifiOutage": "unknown",
             "failureModes.internetOutage": "known",
             "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -1870,7 +1987,7 @@
             "failureModes.wifiOutage": "unknown",
             "failureModes.internetOutage": "known",
             "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         },
         {
@@ -1878,117 +1995,210 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "minimumPetWeight": "unknown",
+            "minimumPetWeight": "missingSchemaData",
             "deviceWeight": "known",
             "subscription": "known",
             "battery": "known",
             "liveTracking": "known",
             "virtualFence": "known",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData"
           }
         }
       ]
     },
     "catFlap": {
       "products": 10,
+      "known": 91,
+      "unknown": 6,
+      "notApplicable": 0,
+      "missingSchemaData": 123,
+      "readinessPercent": 75,
       "criticalFields": [
         "animal",
         "microchip",
         "individualAccess",
         "installation"
       ],
-      "readiness": "NOT_READY",
+      "readiness": "PARTIAL",
       "fields": {
         "animal": {
-          "source": "Advisor common.animals (explicit product fields only)",
+          "source": "gps.animal OR comparisonFilters.animal",
           "known": 10,
-          "partial": 0,
           "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 100
         },
         "microchip": {
           "source": "multiPet.identificationMethods OR comparisonFilters.access",
           "known": 9,
-          "partial": 0,
-          "unknown": 1,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 1,
           "coveragePercent": 90
         },
         "individualAccess": {
           "source": "multiPet.individualAccess",
           "known": 3,
-          "partial": 3,
-          "unknown": 4,
+          "unknown": 3,
           "notApplicable": 0,
+          "missingSchemaData": 4,
           "coveragePercent": 30
         },
         "multiPet": {
           "source": "multiPet.sharedUse",
           "known": 6,
-          "partial": 0,
-          "unknown": 4,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 4,
           "coveragePercent": 60
         },
         "preyDetection": {
           "source": "comparisonData.custom.preyDetection",
           "known": 1,
-          "partial": 0,
-          "unknown": 9,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 9,
           "coveragePercent": 10
         },
         "installation": {
-          "source": "No typed installation compatibility field; descriptive custom/spec strings excluded",
-          "known": 0,
-          "partial": 0,
-          "unknown": 10,
+          "source": "comparisonData.catFlap.installation: at least one documented subfield; partial record does not prove all installation types",
+          "known": 8,
+          "unknown": 0,
           "notApplicable": 0,
-          "coveragePercent": 0
+          "missingSchemaData": 2,
+          "coveragePercent": 80
         },
         "failureModes.powerOutage": {
           "source": "failureModes.powerOutage.status",
           "known": 0,
-          "partial": 1,
-          "unknown": 9,
+          "unknown": 1,
           "notApplicable": 0,
+          "missingSchemaData": 9,
           "coveragePercent": 0
         },
         "failureModes.wifiOutage": {
           "source": "failureModes.wifiOutage.status",
           "known": 1,
-          "partial": 0,
-          "unknown": 9,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 9,
           "coveragePercent": 10
         },
         "failureModes.internetOutage": {
           "source": "failureModes.internetOutage.status",
           "known": 1,
-          "partial": 0,
-          "unknown": 9,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 9,
           "coveragePercent": 10
         },
         "failureModes.cloudOutage": {
           "source": "failureModes.cloudOutage.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 10,
+          "unknown": 1,
           "notApplicable": 0,
+          "missingSchemaData": 9,
           "coveragePercent": 0
         },
         "failureModes.mechanicalBlock": {
           "source": "failureModes.mechanicalBlock.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 10,
+          "unknown": 1,
           "notApplicable": 0,
+          "missingSchemaData": 9,
+          "coveragePercent": 0
+        },
+        "installation.doorSupported": {
+          "source": "comparisonData.catFlap.installation.doorSupported",
+          "known": 7,
+          "unknown": 0,
+          "notApplicable": 0,
+          "missingSchemaData": 3,
+          "coveragePercent": 70
+        },
+        "installation.wallSupported": {
+          "source": "comparisonData.catFlap.installation.wallSupported",
+          "known": 6,
+          "unknown": 0,
+          "notApplicable": 0,
+          "missingSchemaData": 4,
+          "coveragePercent": 60
+        },
+        "installation.glassSupported": {
+          "source": "comparisonData.catFlap.installation.glassSupported",
+          "known": 6,
+          "unknown": 0,
+          "notApplicable": 0,
+          "missingSchemaData": 4,
+          "coveragePercent": 60
+        },
+        "installation.metalDoorSupported": {
+          "source": "comparisonData.catFlap.installation.metalDoorSupported",
+          "known": 0,
+          "unknown": 0,
+          "notApplicable": 0,
+          "missingSchemaData": 10,
+          "coveragePercent": 0
+        },
+        "installation.cutoutWidthMm": {
+          "source": "comparisonData.catFlap.installation.cutoutWidthMm",
+          "known": 6,
+          "unknown": 0,
+          "notApplicable": 0,
+          "missingSchemaData": 4,
+          "coveragePercent": 60
+        },
+        "installation.cutoutHeightMm": {
+          "source": "comparisonData.catFlap.installation.cutoutHeightMm",
+          "known": 6,
+          "unknown": 0,
+          "notApplicable": 0,
+          "missingSchemaData": 4,
+          "coveragePercent": 60
+        },
+        "installation.roundCutoutDiameterMm": {
+          "source": "comparisonData.catFlap.installation.roundCutoutDiameterMm",
+          "known": 5,
+          "unknown": 0,
+          "notApplicable": 0,
+          "missingSchemaData": 5,
+          "coveragePercent": 50
+        },
+        "installation.passageWidthMm": {
+          "source": "comparisonData.catFlap.installation.passageWidthMm",
+          "known": 7,
+          "unknown": 0,
+          "notApplicable": 0,
+          "missingSchemaData": 3,
+          "coveragePercent": 70
+        },
+        "installation.passageHeightMm": {
+          "source": "comparisonData.catFlap.installation.passageHeightMm",
+          "known": 7,
+          "unknown": 0,
+          "notApplicable": 0,
+          "missingSchemaData": 3,
+          "coveragePercent": 70
+        },
+        "installation.tunnelDepthMm": {
+          "source": "comparisonData.catFlap.installation.tunnelDepthMm",
+          "known": 2,
+          "unknown": 0,
+          "notApplicable": 0,
+          "missingSchemaData": 8,
+          "coveragePercent": 20
+        },
+        "installation.adapterRequired": {
+          "source": "comparisonData.catFlap.installation.adapterRequired",
+          "known": 0,
+          "unknown": 0,
+          "notApplicable": 0,
+          "missingSchemaData": 10,
           "coveragePercent": 0
         }
       },
@@ -1999,15 +2209,26 @@
           "fields": {
             "animal": "known",
             "microchip": "known",
-            "individualAccess": "partial",
+            "individualAccess": "unknown",
             "multiPet": "known",
-            "preyDetection": "unknown",
-            "installation": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "preyDetection": "missingSchemaData",
+            "installation": "known",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "installation.doorSupported": "missingSchemaData",
+            "installation.wallSupported": "missingSchemaData",
+            "installation.glassSupported": "missingSchemaData",
+            "installation.metalDoorSupported": "missingSchemaData",
+            "installation.cutoutWidthMm": "known",
+            "installation.cutoutHeightMm": "known",
+            "installation.roundCutoutDiameterMm": "known",
+            "installation.passageWidthMm": "known",
+            "installation.passageHeightMm": "known",
+            "installation.tunnelDepthMm": "missingSchemaData",
+            "installation.adapterRequired": "missingSchemaData"
           }
         },
         {
@@ -2018,13 +2239,24 @@
             "microchip": "known",
             "individualAccess": "known",
             "multiPet": "known",
-            "preyDetection": "unknown",
-            "installation": "unknown",
-            "failureModes.powerOutage": "partial",
+            "preyDetection": "missingSchemaData",
+            "installation": "known",
+            "failureModes.powerOutage": "unknown",
             "failureModes.wifiOutage": "known",
             "failureModes.internetOutage": "known",
             "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.mechanicalBlock": "unknown",
+            "installation.doorSupported": "known",
+            "installation.wallSupported": "known",
+            "installation.glassSupported": "known",
+            "installation.metalDoorSupported": "missingSchemaData",
+            "installation.cutoutWidthMm": "known",
+            "installation.cutoutHeightMm": "known",
+            "installation.roundCutoutDiameterMm": "missingSchemaData",
+            "installation.passageWidthMm": "known",
+            "installation.passageHeightMm": "known",
+            "installation.tunnelDepthMm": "missingSchemaData",
+            "installation.adapterRequired": "missingSchemaData"
           }
         },
         {
@@ -2033,15 +2265,26 @@
           "fields": {
             "animal": "known",
             "microchip": "known",
-            "individualAccess": "unknown",
-            "multiPet": "unknown",
-            "preyDetection": "unknown",
-            "installation": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "individualAccess": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "preyDetection": "missingSchemaData",
+            "installation": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "installation.doorSupported": "missingSchemaData",
+            "installation.wallSupported": "missingSchemaData",
+            "installation.glassSupported": "missingSchemaData",
+            "installation.metalDoorSupported": "missingSchemaData",
+            "installation.cutoutWidthMm": "missingSchemaData",
+            "installation.cutoutHeightMm": "missingSchemaData",
+            "installation.roundCutoutDiameterMm": "missingSchemaData",
+            "installation.passageWidthMm": "missingSchemaData",
+            "installation.passageHeightMm": "missingSchemaData",
+            "installation.tunnelDepthMm": "missingSchemaData",
+            "installation.adapterRequired": "missingSchemaData"
           }
         },
         {
@@ -2050,15 +2293,26 @@
           "fields": {
             "animal": "known",
             "microchip": "known",
-            "individualAccess": "partial",
+            "individualAccess": "unknown",
             "multiPet": "known",
-            "preyDetection": "unknown",
-            "installation": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "preyDetection": "missingSchemaData",
+            "installation": "known",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "installation.doorSupported": "known",
+            "installation.wallSupported": "missingSchemaData",
+            "installation.glassSupported": "missingSchemaData",
+            "installation.metalDoorSupported": "missingSchemaData",
+            "installation.cutoutWidthMm": "missingSchemaData",
+            "installation.cutoutHeightMm": "missingSchemaData",
+            "installation.roundCutoutDiameterMm": "missingSchemaData",
+            "installation.passageWidthMm": "missingSchemaData",
+            "installation.passageHeightMm": "missingSchemaData",
+            "installation.tunnelDepthMm": "missingSchemaData",
+            "installation.adapterRequired": "missingSchemaData"
           }
         },
         {
@@ -2067,15 +2321,26 @@
           "fields": {
             "animal": "known",
             "microchip": "known",
-            "individualAccess": "unknown",
-            "multiPet": "unknown",
-            "preyDetection": "unknown",
-            "installation": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "individualAccess": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "preyDetection": "missingSchemaData",
+            "installation": "known",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "installation.doorSupported": "known",
+            "installation.wallSupported": "known",
+            "installation.glassSupported": "known",
+            "installation.metalDoorSupported": "missingSchemaData",
+            "installation.cutoutWidthMm": "known",
+            "installation.cutoutHeightMm": "known",
+            "installation.roundCutoutDiameterMm": "known",
+            "installation.passageWidthMm": "known",
+            "installation.passageHeightMm": "known",
+            "installation.tunnelDepthMm": "missingSchemaData",
+            "installation.adapterRequired": "missingSchemaData"
           }
         },
         {
@@ -2084,15 +2349,26 @@
           "fields": {
             "animal": "known",
             "microchip": "known",
-            "individualAccess": "unknown",
-            "multiPet": "unknown",
-            "preyDetection": "unknown",
-            "installation": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "individualAccess": "missingSchemaData",
+            "multiPet": "missingSchemaData",
+            "preyDetection": "missingSchemaData",
+            "installation": "known",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "installation.doorSupported": "known",
+            "installation.wallSupported": "known",
+            "installation.glassSupported": "known",
+            "installation.metalDoorSupported": "missingSchemaData",
+            "installation.cutoutWidthMm": "missingSchemaData",
+            "installation.cutoutHeightMm": "missingSchemaData",
+            "installation.roundCutoutDiameterMm": "missingSchemaData",
+            "installation.passageWidthMm": "known",
+            "installation.passageHeightMm": "known",
+            "installation.tunnelDepthMm": "missingSchemaData",
+            "installation.adapterRequired": "missingSchemaData"
           }
         },
         {
@@ -2103,13 +2379,24 @@
             "microchip": "known",
             "individualAccess": "known",
             "multiPet": "known",
-            "preyDetection": "unknown",
-            "installation": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "preyDetection": "missingSchemaData",
+            "installation": "known",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "installation.doorSupported": "known",
+            "installation.wallSupported": "known",
+            "installation.glassSupported": "known",
+            "installation.metalDoorSupported": "missingSchemaData",
+            "installation.cutoutWidthMm": "known",
+            "installation.cutoutHeightMm": "known",
+            "installation.roundCutoutDiameterMm": "known",
+            "installation.passageWidthMm": "known",
+            "installation.passageHeightMm": "known",
+            "installation.tunnelDepthMm": "known",
+            "installation.adapterRequired": "missingSchemaData"
           }
         },
         {
@@ -2120,13 +2407,24 @@
             "microchip": "known",
             "individualAccess": "known",
             "multiPet": "known",
-            "preyDetection": "unknown",
-            "installation": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "preyDetection": "missingSchemaData",
+            "installation": "known",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "installation.doorSupported": "known",
+            "installation.wallSupported": "known",
+            "installation.glassSupported": "known",
+            "installation.metalDoorSupported": "missingSchemaData",
+            "installation.cutoutWidthMm": "known",
+            "installation.cutoutHeightMm": "known",
+            "installation.roundCutoutDiameterMm": "known",
+            "installation.passageWidthMm": "known",
+            "installation.passageHeightMm": "known",
+            "installation.tunnelDepthMm": "missingSchemaData",
+            "installation.adapterRequired": "missingSchemaData"
           }
         },
         {
@@ -2135,15 +2433,26 @@
           "fields": {
             "animal": "known",
             "microchip": "known",
-            "individualAccess": "partial",
+            "individualAccess": "unknown",
             "multiPet": "known",
-            "preyDetection": "unknown",
-            "installation": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "preyDetection": "missingSchemaData",
+            "installation": "known",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "installation.doorSupported": "known",
+            "installation.wallSupported": "known",
+            "installation.glassSupported": "known",
+            "installation.metalDoorSupported": "missingSchemaData",
+            "installation.cutoutWidthMm": "known",
+            "installation.cutoutHeightMm": "known",
+            "installation.roundCutoutDiameterMm": "known",
+            "installation.passageWidthMm": "known",
+            "installation.passageHeightMm": "known",
+            "installation.tunnelDepthMm": "known",
+            "installation.adapterRequired": "missingSchemaData"
           }
         },
         {
@@ -2151,117 +2460,149 @@
           "productStatus": "unknown",
           "fields": {
             "animal": "known",
-            "microchip": "unknown",
-            "individualAccess": "unknown",
-            "multiPet": "unknown",
+            "microchip": "missingSchemaData",
+            "individualAccess": "missingSchemaData",
+            "multiPet": "missingSchemaData",
             "preyDetection": "known",
-            "installation": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "installation": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "installation.doorSupported": "missingSchemaData",
+            "installation.wallSupported": "missingSchemaData",
+            "installation.glassSupported": "missingSchemaData",
+            "installation.metalDoorSupported": "missingSchemaData",
+            "installation.cutoutWidthMm": "missingSchemaData",
+            "installation.cutoutHeightMm": "missingSchemaData",
+            "installation.roundCutoutDiameterMm": "missingSchemaData",
+            "installation.passageWidthMm": "missingSchemaData",
+            "installation.passageHeightMm": "missingSchemaData",
+            "installation.tunnelDepthMm": "missingSchemaData",
+            "installation.adapterRequired": "missingSchemaData"
           }
         }
       ]
     },
     "litterBox": {
       "products": 11,
+      "known": 47,
+      "unknown": 18,
+      "notApplicable": 0,
+      "missingSchemaData": 78,
+      "readinessPercent": 59,
       "criticalFields": [
         "animal",
         "minimumPetWeight",
         "litterCompatibility",
         "multiPet"
       ],
-      "readiness": "PARTIAL",
+      "readiness": "NOT_READY",
       "fields": {
         "animal": {
-          "source": "Advisor common.animals (explicit product fields only)",
+          "source": "gps.animal OR comparisonFilters.animal",
           "known": 11,
-          "partial": 0,
           "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 100
         },
         "minimumPetWeight": {
           "source": "sensorLimits.automaticModeMinimumWeightKg",
-          "known": 1,
-          "partial": 0,
-          "unknown": 10,
+          "known": 5,
+          "unknown": 0,
           "notApplicable": 0,
-          "coveragePercent": 9
+          "missingSchemaData": 6,
+          "coveragePercent": 45
         },
         "litterCompatibility": {
           "source": "litterCompatibility.status (complete / partial / unknown)",
           "known": 1,
-          "partial": 9,
-          "unknown": 1,
+          "unknown": 10,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 9
         },
         "multiPet": {
           "source": "multiPet.sharedUse",
           "known": 9,
-          "partial": 0,
           "unknown": 2,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 82
         },
         "identification": {
           "source": "multiPet.identificationMethods",
           "known": 9,
-          "partial": 0,
           "unknown": 2,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 82
         },
         "app": {
-          "source": "Advisor common.app (explicit product fields only)",
+          "source": "comparisonFilters.app OR comparisonData.fountain.app",
           "known": 3,
-          "partial": 0,
-          "unknown": 8,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 8,
           "coveragePercent": 27
         },
         "failureModes.powerOutage": {
           "source": "failureModes.powerOutage.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 11,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 11,
           "coveragePercent": 0
         },
         "failureModes.wifiOutage": {
           "source": "failureModes.wifiOutage.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 11,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 11,
           "coveragePercent": 0
         },
         "failureModes.internetOutage": {
           "source": "failureModes.internetOutage.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 11,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 11,
           "coveragePercent": 0
         },
         "failureModes.cloudOutage": {
           "source": "failureModes.cloudOutage.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 11,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 11,
           "coveragePercent": 0
         },
         "failureModes.mechanicalBlock": {
           "source": "failureModes.mechanicalBlock.status",
           "known": 0,
-          "partial": 1,
-          "unknown": 10,
+          "unknown": 1,
           "notApplicable": 0,
+          "missingSchemaData": 10,
           "coveragePercent": 0
+        },
+        "minimumOperationalWeight": {
+          "source": "sensorLimits.minimumOperationalWeightKg",
+          "known": 4,
+          "unknown": 0,
+          "notApplicable": 0,
+          "missingSchemaData": 7,
+          "coveragePercent": 36
+        },
+        "belowMinimumBehavior": {
+          "source": "sensorLimits.belowMinimumBehavior",
+          "known": 5,
+          "unknown": 3,
+          "notApplicable": 0,
+          "missingSchemaData": 3,
+          "coveragePercent": 45
         }
       },
       "rows": [
@@ -2270,16 +2611,18 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "minimumPetWeight": "unknown",
+            "minimumPetWeight": "missingSchemaData",
             "litterCompatibility": "unknown",
             "multiPet": "unknown",
             "identification": "unknown",
-            "app": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "app": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "minimumOperationalWeight": "missingSchemaData",
+            "belowMinimumBehavior": "missingSchemaData"
           }
         },
         {
@@ -2288,15 +2631,17 @@
           "fields": {
             "animal": "known",
             "minimumPetWeight": "known",
-            "litterCompatibility": "partial",
+            "litterCompatibility": "unknown",
             "multiPet": "known",
             "identification": "known",
             "app": "known",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "partial"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "unknown",
+            "minimumOperationalWeight": "known",
+            "belowMinimumBehavior": "known"
           }
         },
         {
@@ -2304,16 +2649,18 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "minimumPetWeight": "unknown",
-            "litterCompatibility": "partial",
+            "minimumPetWeight": "missingSchemaData",
+            "litterCompatibility": "unknown",
             "multiPet": "known",
             "identification": "known",
-            "app": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "app": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "minimumOperationalWeight": "known",
+            "belowMinimumBehavior": "unknown"
           }
         },
         {
@@ -2321,16 +2668,18 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "minimumPetWeight": "unknown",
-            "litterCompatibility": "partial",
+            "minimumPetWeight": "known",
+            "litterCompatibility": "unknown",
             "multiPet": "known",
             "identification": "known",
-            "app": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "app": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "minimumOperationalWeight": "missingSchemaData",
+            "belowMinimumBehavior": "known"
           }
         },
         {
@@ -2338,16 +2687,18 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "minimumPetWeight": "unknown",
-            "litterCompatibility": "partial",
+            "minimumPetWeight": "known",
+            "litterCompatibility": "unknown",
             "multiPet": "known",
             "identification": "known",
-            "app": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "app": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "minimumOperationalWeight": "missingSchemaData",
+            "belowMinimumBehavior": "known"
           }
         },
         {
@@ -2355,16 +2706,18 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "minimumPetWeight": "unknown",
-            "litterCompatibility": "partial",
+            "minimumPetWeight": "missingSchemaData",
+            "litterCompatibility": "unknown",
             "multiPet": "known",
             "identification": "known",
             "app": "known",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "minimumOperationalWeight": "known",
+            "belowMinimumBehavior": "unknown"
           }
         },
         {
@@ -2372,16 +2725,18 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "minimumPetWeight": "unknown",
+            "minimumPetWeight": "missingSchemaData",
             "litterCompatibility": "known",
             "multiPet": "known",
             "identification": "known",
-            "app": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "app": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "minimumOperationalWeight": "missingSchemaData",
+            "belowMinimumBehavior": "missingSchemaData"
           }
         },
         {
@@ -2389,16 +2744,18 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "minimumPetWeight": "unknown",
-            "litterCompatibility": "partial",
+            "minimumPetWeight": "missingSchemaData",
+            "litterCompatibility": "unknown",
             "multiPet": "known",
             "identification": "known",
-            "app": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "app": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "minimumOperationalWeight": "known",
+            "belowMinimumBehavior": "unknown"
           }
         },
         {
@@ -2406,16 +2763,18 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "minimumPetWeight": "unknown",
-            "litterCompatibility": "partial",
+            "minimumPetWeight": "known",
+            "litterCompatibility": "unknown",
             "multiPet": "known",
             "identification": "known",
-            "app": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "app": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "minimumOperationalWeight": "missingSchemaData",
+            "belowMinimumBehavior": "known"
           }
         },
         {
@@ -2423,16 +2782,18 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "minimumPetWeight": "unknown",
-            "litterCompatibility": "partial",
+            "minimumPetWeight": "known",
+            "litterCompatibility": "unknown",
             "multiPet": "known",
             "identification": "known",
             "app": "known",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "minimumOperationalWeight": "missingSchemaData",
+            "belowMinimumBehavior": "known"
           }
         },
         {
@@ -2440,22 +2801,29 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "minimumPetWeight": "unknown",
-            "litterCompatibility": "partial",
+            "minimumPetWeight": "missingSchemaData",
+            "litterCompatibility": "unknown",
             "multiPet": "unknown",
             "identification": "unknown",
-            "app": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "app": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "minimumOperationalWeight": "missingSchemaData",
+            "belowMinimumBehavior": "missingSchemaData"
           }
         }
       ]
     },
     "camera": {
       "products": 8,
+      "known": 40,
+      "unknown": 25,
+      "notApplicable": 2,
+      "missingSchemaData": 45,
+      "readinessPercent": 65,
       "criticalFields": [
         "animal",
         "localStorage",
@@ -2464,95 +2832,119 @@
         "detection",
         "nightVision"
       ],
-      "readiness": "NOT_READY",
+      "readiness": "PARTIAL",
       "fields": {
         "animal": {
-          "source": "Advisor common.animals (explicit product fields only)",
+          "source": "gps.animal OR comparisonFilters.animal",
           "known": 8,
-          "partial": 0,
           "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 100
         },
         "localStorage": {
-          "source": "No typed camera localStorage field; descriptive custom/spec strings excluded",
-          "known": 0,
-          "partial": 0,
-          "unknown": 8,
+          "source": "comparisonData.camera.localStorage",
+          "known": 4,
+          "unknown": 3,
           "notApplicable": 0,
-          "coveragePercent": 0
+          "missingSchemaData": 1,
+          "coveragePercent": 50
         },
         "cloud": {
-          "source": "No typed camera cloud field; descriptive custom/spec strings excluded",
-          "known": 0,
-          "partial": 0,
-          "unknown": 8,
+          "source": "comparisonData.camera.cloud",
+          "known": 7,
+          "unknown": 0,
           "notApplicable": 0,
-          "coveragePercent": 0
+          "missingSchemaData": 1,
+          "coveragePercent": 88
         },
         "subscription": {
           "source": "subscription.requiredForCoreFunction (status must be documented)",
           "known": 7,
-          "partial": 0,
           "unknown": 1,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 88
         },
         "detection": {
-          "source": "No typed camera detection field; descriptive custom/spec strings excluded",
-          "known": 0,
-          "partial": 0,
-          "unknown": 8,
+          "source": "comparisonData.camera.detection",
+          "known": 2,
+          "unknown": 5,
           "notApplicable": 0,
-          "coveragePercent": 0
+          "missingSchemaData": 1,
+          "coveragePercent": 25
         },
         "nightVision": {
-          "source": "No typed camera nightVision field; descriptive custom/spec strings excluded",
-          "known": 0,
-          "partial": 0,
-          "unknown": 8,
+          "source": "comparisonData.camera.nightVision",
+          "known": 3,
+          "unknown": 4,
           "notApplicable": 0,
-          "coveragePercent": 0
+          "missingSchemaData": 1,
+          "coveragePercent": 38
         },
         "failureModes.powerOutage": {
           "source": "failureModes.powerOutage.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 8,
+          "unknown": 3,
           "notApplicable": 0,
+          "missingSchemaData": 5,
           "coveragePercent": 0
         },
         "failureModes.wifiOutage": {
           "source": "failureModes.wifiOutage.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 8,
+          "unknown": 3,
           "notApplicable": 0,
+          "missingSchemaData": 5,
           "coveragePercent": 0
         },
         "failureModes.internetOutage": {
           "source": "failureModes.internetOutage.status",
           "known": 0,
-          "partial": 1,
-          "unknown": 7,
+          "unknown": 3,
           "notApplicable": 0,
+          "missingSchemaData": 5,
           "coveragePercent": 0
         },
         "failureModes.cloudOutage": {
           "source": "failureModes.cloudOutage.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 8,
+          "unknown": 3,
           "notApplicable": 0,
+          "missingSchemaData": 5,
           "coveragePercent": 0
         },
         "failureModes.mechanicalBlock": {
           "source": "failureModes.mechanicalBlock.status",
           "known": 0,
-          "partial": 0,
-          "unknown": 8,
+          "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 8,
           "coveragePercent": 0
+        },
+        "localStorageTypes": {
+          "source": "comparisonData.camera.localStorageTypes",
+          "known": 3,
+          "unknown": 0,
+          "notApplicable": 1,
+          "missingSchemaData": 4,
+          "coveragePercent": 38
+        },
+        "maxLocalStorageGb": {
+          "source": "comparisonData.camera.maxLocalStorageGb",
+          "known": 1,
+          "unknown": 0,
+          "notApplicable": 1,
+          "missingSchemaData": 6,
+          "coveragePercent": 13
+        },
+        "detectionTypes": {
+          "source": "comparisonData.camera.detectionTypes",
+          "known": 5,
+          "unknown": 0,
+          "notApplicable": 0,
+          "missingSchemaData": 3,
+          "coveragePercent": 63
         }
       },
       "rows": [
@@ -2561,16 +2953,19 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "localStorage": "unknown",
-            "cloud": "unknown",
+            "localStorage": "missingSchemaData",
+            "cloud": "missingSchemaData",
             "subscription": "unknown",
-            "detection": "unknown",
-            "nightVision": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "detection": "missingSchemaData",
+            "nightVision": "missingSchemaData",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "localStorageTypes": "missingSchemaData",
+            "maxLocalStorageGb": "missingSchemaData",
+            "detectionTypes": "missingSchemaData"
           }
         },
         {
@@ -2578,16 +2973,19 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "localStorage": "unknown",
-            "cloud": "unknown",
+            "localStorage": "known",
+            "cloud": "known",
             "subscription": "known",
             "detection": "unknown",
             "nightVision": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "localStorageTypes": "known",
+            "maxLocalStorageGb": "missingSchemaData",
+            "detectionTypes": "known"
           }
         },
         {
@@ -2596,15 +2994,18 @@
           "fields": {
             "animal": "known",
             "localStorage": "unknown",
-            "cloud": "unknown",
+            "cloud": "known",
             "subscription": "known",
             "detection": "unknown",
             "nightVision": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "localStorageTypes": "missingSchemaData",
+            "maxLocalStorageGb": "missingSchemaData",
+            "detectionTypes": "missingSchemaData"
           }
         },
         {
@@ -2613,15 +3014,18 @@
           "fields": {
             "animal": "known",
             "localStorage": "unknown",
-            "cloud": "unknown",
+            "cloud": "known",
             "subscription": "known",
             "detection": "unknown",
-            "nightVision": "unknown",
+            "nightVision": "known",
             "failureModes.powerOutage": "unknown",
             "failureModes.wifiOutage": "unknown",
             "failureModes.internetOutage": "unknown",
             "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "localStorageTypes": "missingSchemaData",
+            "maxLocalStorageGb": "missingSchemaData",
+            "detectionTypes": "known"
           }
         },
         {
@@ -2630,15 +3034,18 @@
           "fields": {
             "animal": "known",
             "localStorage": "unknown",
-            "cloud": "unknown",
+            "cloud": "known",
             "subscription": "known",
             "detection": "unknown",
             "nightVision": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "localStorageTypes": "missingSchemaData",
+            "maxLocalStorageGb": "missingSchemaData",
+            "detectionTypes": "missingSchemaData"
           }
         },
         {
@@ -2646,16 +3053,19 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "localStorage": "unknown",
-            "cloud": "unknown",
+            "localStorage": "known",
+            "cloud": "known",
             "subscription": "known",
-            "detection": "unknown",
-            "nightVision": "unknown",
-            "failureModes.powerOutage": "unknown",
-            "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "unknown",
-            "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "detection": "known",
+            "nightVision": "known",
+            "failureModes.powerOutage": "missingSchemaData",
+            "failureModes.wifiOutage": "missingSchemaData",
+            "failureModes.internetOutage": "missingSchemaData",
+            "failureModes.cloudOutage": "missingSchemaData",
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "localStorageTypes": "notApplicable",
+            "maxLocalStorageGb": "notApplicable",
+            "detectionTypes": "known"
           }
         },
         {
@@ -2663,8 +3073,8 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "localStorage": "unknown",
-            "cloud": "unknown",
+            "localStorage": "known",
+            "cloud": "known",
             "subscription": "known",
             "detection": "unknown",
             "nightVision": "unknown",
@@ -2672,7 +3082,10 @@
             "failureModes.wifiOutage": "unknown",
             "failureModes.internetOutage": "unknown",
             "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "localStorageTypes": "known",
+            "maxLocalStorageGb": "missingSchemaData",
+            "detectionTypes": "known"
           }
         },
         {
@@ -2680,73 +3093,81 @@
           "productStatus": "active",
           "fields": {
             "animal": "known",
-            "localStorage": "unknown",
-            "cloud": "unknown",
+            "localStorage": "known",
+            "cloud": "known",
             "subscription": "known",
-            "detection": "unknown",
-            "nightVision": "unknown",
+            "detection": "known",
+            "nightVision": "known",
             "failureModes.powerOutage": "unknown",
             "failureModes.wifiOutage": "unknown",
-            "failureModes.internetOutage": "partial",
+            "failureModes.internetOutage": "unknown",
             "failureModes.cloudOutage": "unknown",
-            "failureModes.mechanicalBlock": "unknown"
+            "failureModes.mechanicalBlock": "missingSchemaData",
+            "localStorageTypes": "known",
+            "maxLocalStorageGb": "known",
+            "detectionTypes": "known"
           }
         }
       ]
     },
     "other": {
       "products": 0,
+      "known": 0,
+      "unknown": 0,
+      "notApplicable": 0,
+      "missingSchemaData": 0,
+      "readinessPercent": 0,
       "criticalFields": [
         "animal"
       ],
       "readiness": "NOT_READY",
       "fields": {
         "animal": {
-          "source": "Advisor common.animals (explicit product fields only)",
+          "source": "gps.animal OR comparisonFilters.animal",
           "known": 0,
-          "partial": 0,
           "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 0
         },
         "failureModes.powerOutage": {
           "source": "failureModes.powerOutage.status",
           "known": 0,
-          "partial": 0,
           "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 0
         },
         "failureModes.wifiOutage": {
           "source": "failureModes.wifiOutage.status",
           "known": 0,
-          "partial": 0,
           "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 0
         },
         "failureModes.internetOutage": {
           "source": "failureModes.internetOutage.status",
           "known": 0,
-          "partial": 0,
           "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 0
         },
         "failureModes.cloudOutage": {
           "source": "failureModes.cloudOutage.status",
           "known": 0,
-          "partial": 0,
           "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 0
         },
         "failureModes.mechanicalBlock": {
           "source": "failureModes.mechanicalBlock.status",
           "known": 0,
-          "partial": 0,
           "unknown": 0,
           "notApplicable": 0,
+          "missingSchemaData": 0,
           "coveragePercent": 0
         }
       },

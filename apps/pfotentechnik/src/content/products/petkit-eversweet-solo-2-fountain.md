@@ -237,6 +237,16 @@ comparisonData:
     uvc: Nein; UVC-Ersatzpumpe optional erhältlich
     masse: 18,5 × 18,5 × 16,4 cm
     gewicht: 0,8 kg
+  fountain:
+    capacityLiters: 2
+    material:
+      - BPA-freies ABS und Silikon
+    powerType:
+      status: known
+      value: mains
+    dishwasherSafeParts:
+      status: known
+      value: []
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -262,6 +272,20 @@ decisionFacts:
     consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
 comparisons:
   - "beste-trinkbrunnen-fuer-katzen"
+evidenceSources:
+  - source: Herstellerdokumentation · PETKIT Eversweet Solo 2
+    url: https://www.petkit.com/products/eversweet-solo-2
+    accessedAt: "2026-07-13"
+    sourceType: manufacturer
+    assertion: >-
+      Bereits dokumentierte technische Daten: Kapazität: 2 Liter; Material: BPA-freies ABS und Silikon; Lautstärke:
+      Herstellerangabe bis 25 dB; Betrieb: Netzteil; Reinigung: vollständig zerlegbar; nicht spülmaschinengeeignet.
+      Normalisierung des vorhandenen Quellenstands, keine erneute externe Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.material
+      - comparisonData.fountain.powerType
+      - comparisonData.fountain.dishwasherSafeParts
 ---
 Der Eversweet Solo 2 ist technisch weniger ambitioniert als die UVC-Modelle, dafür übersichtlich. Wichtig ist die Unterscheidung zwischen kabelloser Pumpe und kabellosem Gesamtbetrieb.
 

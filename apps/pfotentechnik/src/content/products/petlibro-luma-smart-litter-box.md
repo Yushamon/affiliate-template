@@ -190,6 +190,12 @@ availabilityUpdated: "2026-10-03T06:51:23.666Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
+sensorLimits:
+  automaticModeMinimumWeightKg: 1
+  belowMinimumBehavior: manualOnly
+  sourceUrl: https://de.petlibro.com/products/luma-intelligente-selbstreinigende-katzentoilette-exclusive
+  sourceType: manufacturer
+  verifiedAt: "2026-08-15"
 ---
 
 ## Herstellerfunktion, praktische Bedeutung und offene Erfahrung

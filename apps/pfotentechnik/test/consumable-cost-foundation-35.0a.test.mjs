@@ -52,7 +52,72 @@ test('actual product collection schema validates old and new commerce/evidence f
  const {z}=await import('astro/zod');const schema=createProductContentSchema(()=>z.any());
  const dir=new URL('../src/content/products/',import.meta.url);
  for(const file of fs.readdirSync(dir).filter(n=>/\.mdx?$/.test(n))){const raw=fs.readFileSync(new URL(file,dir),'utf8');const d=yaml.load(raw.match(/^---\s*\n([\s\S]*?)\n---/)[1],{schema:yaml.JSON_SCHEMA});const v=schema.safeParse(d);assert.equal(v.success,true,file+': '+JSON.stringify(v.error?.issues));}
- const raw=fs.readFileSync(new URL('petlibro-stainless-steel-fountain.md',dir),'utf8');const d=yaml.load(raw.match(/^---\s*\n([\s\S]*?)\n---/)[1],{schema:yaml.JSON_SCHEMA});const f=fixture();Object.assign(d,{consumables:f.consumables,consumablePolicy:f.consumablePolicy,evidenceSources:f.evidenceSources});
+ const raw=fs.readFileSync(new URL('petlibro-stainless-steel-fountain.md',dir),'utf8');const d=yaml.load(raw.match(/^---\s*\n([\s\S]*?)\n---/)[1],{schema:yaml.JSON_SCHEMA});const f=fixture();Object.assign(d,{consumables:f.consumables,consumablePolicy:f.consumablePolicy,evidenceSources:[...(d.evidenceSources??[]),...f.evidenceSources]});
  const good=schema.safeParse(d);assert.equal(good.success,true,JSON.stringify(good.error?.issues));assert.equal(good.data.consumables[0].offers.length,2);
  d.consumables[0].packSize=known(0);assert.equal(schema.safeParse(d).success,false);
+});
+
+import {build} from 'esbuild';
+import {z} from 'astro/zod';
+import {fountainOperatingShape} from '../src/content/schema/consumables.mjs';
+import {dataState,buildCoverage} from '../scripts/advisor/data-coverage.mjs';
+
+// Bundle the actual collection schema with only Astro's collection declarations stubbed.
+const bundled=await build({entryPoints:[fileURLToPath(new URL('../src/content/schema/product.ts',import.meta.url))],bundle:true,write:false,platform:'node',format:'esm',plugins:[{name:'collection-declarations',setup(b){
+ b.onResolve({filter:/^astro:(content|loaders)$|^astro\/loaders$/},a=>({path:a.path,namespace:'stub'}));
+ b.onLoad({filter:/.*/,namespace:'stub'},()=>({contents:'export const defineCollection=x=>x; export const glob=x=>x;',loader:'js'}));
+}}]});
+const {catFlapInstallationSchema,cameraComparisonSchema,validateAdvisorNormalizationEvidence}=await import('data:text/javascript;base64,'+Buffer.from(bundled.outputFiles[0].text).toString('base64'));
+
+const advisorFixture=(category,extra={})=>({slug:'fixture',category:{key:category},decision:{bestFor:[],attention:[]},...extra});
+const audit=p=>buildCoverage([p],{asOf:'2026-10-05'});
+
+test('optional projections preserve unknown and reject invalid dimensions and storage contradictions',()=>{
+ assert.equal(cameraComparisonSchema.safeParse({}).success,true);
+ assert.equal(catFlapInstallationSchema.safeParse({status:'unknown'}).success,true);
+ assert.equal(catFlapInstallationSchema.safeParse({status:'partial',doorSupported:known(true)}).success,true);
+ assert.equal(catFlapInstallationSchema.safeParse({status:'partial',cutoutWidthMm:known(-1)}).success,false);
+ assert.equal(cameraComparisonSchema.safeParse({localStorage:'unavailable',maxLocalStorageGb:512}).success,false);
+ assert.equal(cameraComparisonSchema.safeParse({nightVision:'yes'}).success,false);
+});
+test('an upper battery duration never invents a lower duration; materials retain component roles',()=>{
+ const schema=z.object(fountainOperatingShape);
+ const result=schema.parse({batteryRuntime:known({maxDays:30,conditions:'up to 30 days'}),material:['ABS-Tank mit Edelstahl-Trinkfläche']});
+ assert.equal(result.batteryRuntime.value.minDays,undefined);
+ assert.deepEqual(result.material,['ABS-Tank mit Edelstahl-Trinkfläche']);
+ assert.equal(schema.safeParse({batteryRuntime:known({minDays:31,maxDays:30,conditions:'fixture'})}).success,false);
+});
+test('known camera and installation facts need exact official evidence paths',()=>{
+ const p={comparisonData:{camera:{localStorage:'supported'},catFlap:{installation:{status:'partial',doorSupported:known(true)}}}};
+ const issues=[];validateAdvisorNormalizationEvidence(p,{addIssue:i=>issues.push(i)});assert.equal(issues.length,2);
+ p.evidenceSources=[{sourceType:'manufacturer',fields:['comparisonData.camera.localStorage','comparisonData.catFlap.installation.doorSupported']}];
+ const valid=[];validateAdvisorNormalizationEvidence(p,{addIssue:i=>valid.push(i)});assert.equal(valid.length,0);
+ p.evidenceSources[0].sourceType='merchant';const rejected=[];validateAdvisorNormalizationEvidence(p,{addIssue:i=>rejected.push(i)});assert.equal(rejected.length,2);
+});
+test('coverage distinguishes absence, unknown, inapplicable and known false or empty parts',()=>{
+ assert.equal(dataState(undefined),'missingSchemaData');assert.equal(dataState({status:'unknown'}),'unknown');
+ assert.equal(dataState({status:'notApplicable'}),'notApplicable');assert.equal(dataState(false),'known');
+ assert.equal(dataState(known([]),'parts'),'known');assert.equal(dataState('conditional','capability'),'unknown');
+});
+test('documented installation dimensions do not imply materials or adapter compatibility',()=>{
+ const c=audit(advisorFixture('katzenklappen',{comparisonData:{catFlap:{installation:{status:'partial',cutoutWidthMm:known(170)}}}})).categories.catFlap;
+ assert.equal(c.fields.installation.known,1);assert.equal(c.fields['installation.metalDoorSupported'].missingSchemaData,1);
+ assert.equal(c.fields['installation.adapterRequired'].missingSchemaData,1);
+});
+test('camera absence differs from explicit unknown and unavailable storage makes media inapplicable',()=>{
+ const c=audit(advisorFixture('haustierkameras',{comparisonData:{camera:{localStorage:'unavailable',nightVision:'unknown'}}})).categories.camera;
+ assert.equal(c.fields.localStorage.known,1);assert.equal(c.fields.localStorageTypes.notApplicable,1);
+ assert.equal(c.fields.nightVision.unknown,1);assert.equal(c.fields.detection.missingSchemaData,1);
+ assert.equal(c.readinessPercent,17);
+ assert.equal(c.known+c.unknown+c.notApplicable+c.missingSchemaData,Object.keys(c.fields).length);
+});
+test('product unknown overrides supplemental research; generic weight never proves automatic safety',()=>{
+ const f=audit(advisorFixture('trinkbrunnen',{slug:'petlibro-dockstream-2-smart',comparisonData:{fountain:{powerType:{status:'unknown'}}}})).categories.fountain;
+ assert.equal(f.fields.power.unknown,1);
+ const l=audit(advisorFixture('automatische-katzentoiletten',{sensorLimits:{minimumOperationalWeightKg:1.5,belowMinimumBehavior:'unknown'}})).categories.litterBox;
+ assert.equal(l.fields.minimumOperationalWeight.known,1);assert.equal(l.fields.minimumPetWeight.missingSchemaData,1);
+});
+test('explicit GPS unpublished-weight marker is unknown without synthesizing a number',()=>{
+ const p=advisorFixture('gps-tracker',{comparisonData:{custom:{mindestgewicht:'Nicht separat ausgewiesen'}}});
+ assert.equal(audit(p).categories.gps.fields.minimumPetWeight.unknown,1);assert.equal(p.gps,undefined);
 });

@@ -161,7 +161,49 @@ specs:
   - { label: "Stromversorgung", value: "5 V / 2 A Netzbetrieb" }
 features: ["4K", "3-fach optischer Zoom", "Tiererkennung", "microSD", "Pan/Tilt-Tracking", "Zwei-Wege-Audio"]
 useCase: "Klassische Indoor-Kamera mit lokaler Tiererkennung und Speicherung"
-comparisonData: { version: 1, custom: { klasse: "Klassische Indoor-Pan/Tilt-Kamera", speicher: "microSD, NVR, Home Hub oder FTP/NAS; Cloud optional", abo: "Kein Pflichtabo für lokale Speicherung", interaktion: "Zwei-Wege-Audio", abdeckung: "355° Pan / 50° Tilt; 3× optischer Zoom", bild: "4K 8 MP; IR-Nachtsicht", lokale_speicherung: "Ja", cloud_erforderlich: "Nein für lokale Speicherung", cloud_optional: "Ja, regional", pflichtabo: "Nein", bezahlfunktionen: "Optionale Cloud regional prüfen", kostenlose_grundfunktionen: "Livebild, lokale Erkennung und lokale Speicherung", microsd: "Bis 512 GB", aufloesung: "4K 8 MP", schwenk_neige: "355° / 50°", tracking: "Automatische Schwenkverfolgung", nachtsicht: "IR bis 12 m", audio: "Zwei-Wege-Audio", tiererkennung: "Lokal laut Hersteller", herstellerdienst: "Lokaler Betrieb möglich; App/Fernzugriff konfigurationsabhängig" } }
+comparisonData:
+  version: 1
+  custom:
+    klasse: Klassische Indoor-Pan/Tilt-Kamera
+    speicher: microSD, NVR, Home Hub oder FTP/NAS; Cloud optional
+    abo: Kein Pflichtabo für lokale Speicherung
+    interaktion: Zwei-Wege-Audio
+    abdeckung: 355° Pan / 50° Tilt; 3× optischer Zoom
+    bild: 4K 8 MP; IR-Nachtsicht
+    lokale_speicherung: Ja
+    cloud_erforderlich: Nein für lokale Speicherung
+    cloud_optional: Ja, regional
+    pflichtabo: Nein
+    bezahlfunktionen: Optionale Cloud regional prüfen
+    kostenlose_grundfunktionen: Livebild, lokale Erkennung und lokale Speicherung
+    microsd: Bis 512 GB
+    aufloesung: 4K 8 MP
+    schwenk_neige: 355° / 50°
+    tracking: Automatische Schwenkverfolgung
+    nachtsicht: IR bis 12 m
+    audio: Zwei-Wege-Audio
+    tiererkennung: Lokal laut Hersteller
+    herstellerdienst: Lokaler Betrieb möglich; App/Fernzugriff konfigurationsabhängig
+  camera:
+    localStorage: supported
+    localStorageTypes:
+      - microSD
+      - NVR
+      - homeHub
+      - FTP
+      - NAS
+    cloud: optional
+    detection: local
+    detectionTypes:
+      - person
+      - pet
+      - other
+    nightVision: infrared
+    maxLocalStorageGb: 512
+    notes:
+      - >-
+        512 GB gilt für microSD, nicht für NVR/NAS. Weitere Erkennung: Babygeschrei. Cloud ist regional abhängig und für
+        lokale Speicherung nicht erforderlich.
 comparisonFilters: { animal: ["dog", "cat"], petSize: ["small", "medium", "large"], foodType: [], app: true, camera: true }
 alternatives: ["pettec-cam-360", "petlibro-scout-smart-camera", "furbo-mini-360"]
 comparisons: ["beste-haustierkameras"]
@@ -237,6 +279,25 @@ evidenceSources:
     fields:
       - "ratings"
       - "externalEvidence"
+  - source: Reolink E1 Zoom Deutschland
+    url: https://reolink.com/de/product/e1-zoom/
+    accessedAt: "2026-08-16"
+    assertion: Bereits dokumentierter Dienstumfang aus subscription; unveränderte Tarif- und Preisangaben.
+    fields:
+      - comparisonData.camera.cloud
+    sourceType: manufacturer
+  - source: Reolink E1 Zoom Deutschland
+    url: https://reolink.com/de/product/e1-zoom/
+    accessedAt: "2026-08-16"
+    assertion: 4K-Auflösung, Zoom, Pan/Tilt, Erkennung, Speicherwege, WLAN, Maße und Strom sind Herstellerangaben.
+    fields:
+      - comparisonData.camera.localStorage
+      - comparisonData.camera.localStorageTypes
+      - comparisonData.camera.detection
+      - comparisonData.camera.detectionTypes
+      - comparisonData.camera.nightVision
+      - comparisonData.camera.maxLocalStorageGb
+    sourceType: manufacturer
 experience:
   summary: >-
     Redaktionelle Einordnung aus Herstellerdokumentation, unabhängigen Tests und dokumentierten Nutzersignalen.

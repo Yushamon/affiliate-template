@@ -80,11 +80,48 @@ specs:
   - { label: "Akku", value: "5000 mAh" }
 features: ["2K-Video", "137-Grad-Sichtfeld", "Zwei-Wege-Audio", "Bewegungsaufzeichnung", "App-Steuerung", "5000-mAh-Akku"]
 comparisonData:
-  custom: { klasse: "Mobile Roboterkamera", speicher: "Vor Kauf prüfen", abo: "Kein Pflichtabo belastbar belegt", interaktion: "App-Fahrt und Zwei-Wege-Audio", abdeckung: "Mobiler Standort; 137 Grad", bild: "2K (2304 x 1296)" }
+  custom:
+    klasse: Mobile Roboterkamera
+    speicher: Vor Kauf prüfen
+    abo: Kein Pflichtabo belastbar belegt
+    interaktion: App-Fahrt und Zwei-Wege-Audio
+    abdeckung: Mobiler Standort; 137 Grad
+    bild: 2K (2304 x 1296)
+  camera:
+    localStorage: supported
+    localStorageTypes:
+      - microSD
+    cloud: optional
+    detection: unknown
+    detectionTypes:
+      - motion
+    nightVision: unknown
+    notes:
+      - >-
+        Die spätere Subscription-Dokumentation vom 02.09.2026 nennt lokale microSD-Speicherung; ältere Speicherhinweise
+        bleiben unverändert. Ausführungsort der Bewegungserkennung nicht belegt.
 decisionJourney: { cluster: "haustierkameras", stage: "decision", intent: "enabot-rola-mini-pruefen", primaryQuestion: "Brauche ich einen aktiv beweglichen Blickpunkt und ist der Wohnbereich dafür geeignet?", next: ["/vergleiche/beste-haustierkameras/"], fallback: ["/haustierkameras/"] }
 evidenceSources:
   - { source: "Enabot Store", url: "https://store.enabot.com/products/rola-mini-familybot", accessedAt: "2026-08-15", assertion: "2K, 137-Grad-Sichtfeld, Zwei-Wege-Audio, Bewegungsaufzeichnung, App-Steuerung und 5000-mAh-Akku sind Herstellerangaben.", fields: ["specs", "features"] }
   - { source: "Enabot", url: "https://www.enabot.com/pet-robot/rola-mini", accessedAt: "2026-08-15", assertion: "Offizielle Produktseite bestätigt die mobile Pet-/Family-Kamera-Klasse.", fields: ["review", "decision"] }
+  - source: Herstellerdokumentation · Enabot ROLA Mini
+    url: https://de.store.enabot.com/pages/rola-mini-long-battery-life-movable-pet-camera
+    accessedAt: "2026-09-02"
+    sourceType: manufacturer
+    assertion: Bereits dokumentierter Dienstumfang aus subscription; unveränderte Tarif- und Preisangaben.
+    fields:
+      - comparisonData.camera.cloud
+      - comparisonData.camera.localStorage
+      - comparisonData.camera.localStorageTypes
+  - source: Enabot Store
+    url: https://store.enabot.com/products/rola-mini-familybot
+    accessedAt: "2026-08-15"
+    assertion: >-
+      2K, 137-Grad-Sichtfeld, Zwei-Wege-Audio, Bewegungsaufzeichnung, App-Steuerung und 5000-mAh-Akku sind
+      Herstellerangaben.
+    fields:
+      - comparisonData.camera.detectionTypes
+    sourceType: manufacturer
 affiliate:
   provider: "amzn-to"
   label: "Preis und Verfügbarkeit prüfen"

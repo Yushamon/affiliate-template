@@ -332,27 +332,42 @@ comparisonFilters:
 comparisonData:
   version: 1
   general:
-    animal: ["dog", "cat"]
-    petSize: ["small"]
-    priceTier: "premium"
+    animal:
+      - dog
+      - cat
+    petSize:
+      - small
+    priceTier: premium
   fountain:
-    model: "PLWF106"
+    model: PLWF106
     capacityLiters: 3
     cordless: false
     battery: false
     motionSensor: false
-    flowModes: ["kontinuierlich", "zeitgesteuert"]
+    flowModes:
+      - kontinuierlich
+      - zeitgesteuert
     app: true
-    wifiBands: ["2.4 GHz", "5 GHz"]
+    wifiBands:
+      - 2.4 GHz
+      - 5 GHz
     intakeTracking: true
     perPetTracking: false
     rfid: false
-    material: ["ABS", "Edelstahl"]
+    material:
+      - ABS-Kunststoff und Edelstahl
+    powerType:
+      status: known
+      value: mains
+    dishwasherSafeParts:
+      status: known
+      value:
+        - Edelstahlschale
   editorial:
     rating: 4.25
     score: 85
-    assessment: "manufacturer-data"
-    productStatus: "active"
+    assessment: manufacturer-data
+    productStatus: active
 decisionFacts:
   - label: "Kapazität"
     value: "3 Liter"
@@ -372,6 +387,21 @@ decisionFacts:
   - label: "Akku"
     value: "Nein"
     consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+evidenceSources:
+  - source: Herstellerdokumentation · PETLIBRO Dockstream 2 Smart
+    url: >-
+      https://de.petlibro.com/pages/what-s-the-difference-between-the-dockstream-2-smart-fountainplug-in-and-the-dockstream-2-smart-cordless-fountain
+    accessedAt: "2026-07-26"
+    sourceType: manufacturer
+    assertion: >-
+      Bereits dokumentierte technische Daten: Kapazität: 3 Liter; Material: ABS-Kunststoff und Edelstahl; Stromversorgung:
+      ausschließlich Netzbetrieb; Lautstärke: 23 dB laut Hersteller; Reinigung: Abnehmbarer Tank und spülmaschinenfeste
+      Edelstahlschale; Rotor ausspülbar. Normalisierung des vorhandenen Quellenstands, keine erneute externe Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.material
+      - comparisonData.fountain.powerType
+      - comparisonData.fountain.dishwasherSafeParts
 ---
 
 Der vorhandene Produkttitel **PETLIBRO Dockstream 2 Smart** bezeichnet künftig eindeutig die kabelgebundene Variante **PLWF106**. Die bisherige Fassung vermischte Netz- und Akkuversion. Das führte dazu, dass Werte wie Akku, Gewicht und Wasserfluss gleichzeitig unterschiedlich beschrieben wurden.

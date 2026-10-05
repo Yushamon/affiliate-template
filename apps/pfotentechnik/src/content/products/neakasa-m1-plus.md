@@ -121,6 +121,12 @@ availabilityUpdated: "2026-10-03T06:50:28.569Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
+sensorLimits:
+  automaticModeMinimumWeightKg: 1
+  belowMinimumBehavior: automationDisabled
+  sourceUrl: https://neakasa.com/products/neakasa-m1-cat-litter-box
+  sourceType: manufacturer
+  verifiedAt: "2026-08-06"
 ---
 
 ## Gewöhnung ohne Zwang

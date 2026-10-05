@@ -430,6 +430,19 @@ comparisonData:
     trinkhohe: ca. 15 cm
     garantie: 2 Jahre laut PETKIT
     geeignet_fur: Katzen und kleine Hunde
+  fountain:
+    capacityLiters: 5
+    material:
+      - ABS, Polypropylen, PPO und Edelstahl 304
+    powerType:
+      status: known
+      value: mains
+    dishwasherSafeParts:
+      status: known
+      value:
+        - Trinkschale
+        - Auslauf
+        - magnetisches Sieb
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -453,6 +466,22 @@ decisionFacts:
   - label: "Akku"
     value: "Nein"
     consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+evidenceSources:
+  - source: Herstellerdokumentation · PETKIT Eversweet Ultra
+    url: https://www.petkit.com/products/eversweet-ultra-with-camera-pet-water-fountain
+    accessedAt: "2026-08-10"
+    sourceType: manufacturer
+    assertion: >-
+      Bereits dokumentierte technische Daten: Kapazität: 5 Liter Frischwasser plus 1,8 Liter Abwasser; Lautstärke:
+      Herstellerangabe höchstens etwa 26 dB im Normalbetrieb; beim Spülen und Nachfüllen höher; Stromversorgung:
+      Netzbetrieb mit 12 V/2 A; Materialien: ABS, Polypropylen, PPO und Edelstahl 304; Spülmaschinengeeignete Teile:
+      Trinkschale, Auslauf und magnetisches Sieb laut PETKIT. Normalisierung des vorhandenen Quellenstands, keine erneute
+      externe Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.material
+      - comparisonData.fountain.powerType
+      - comparisonData.fountain.dishwasherSafeParts
 ---
 Der PETKIT Eversweet Ultra ist kein gewöhnlicher Umlauf-Trinkbrunnen. Frischwasser wird aus einem separaten 5-Liter-Tank in eine Edelstahlschale geleitet. Benutztes Wasser kann anschließend in einen 1,8-Liter-Abwassertank abgelassen werden und gelangt nicht zurück in den Frischwasservorrat.
 

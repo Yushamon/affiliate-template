@@ -250,6 +250,17 @@ comparisonData:
     gewicht: 717 g
     geeignet_fur: Katzen sowie ein kleiner oder mittelgroßer Hund
     akku: Nein
+  fountain:
+    capacityLiters: 3
+    material:
+      - Tank aus Edelstahl 304, Auslauf aus Polypropylen
+    powerType:
+      status: known
+      value: mains
+    dishwasherSafeParts:
+      status: known
+      value:
+        - Edelstahltank
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -290,6 +301,20 @@ offers:
     evidenceSources: []
     lastAttemptAt: "2026-10-03T06:51:35.096Z"
     error: "Offizielle Produkt-URL unresolved."
+evidenceSources:
+  - source: Herstellerdokumentation · PETLIBRO Stainless Steel Fountain 3L
+    url: https://petlibro.com/products/petlibro-automatic-pet-water-fountain-3l-stainless-steel
+    accessedAt: "2026-08-19"
+    sourceType: manufacturer
+    assertion: >-
+      Bereits dokumentierte technische Daten: Kapazität: 3 Liter; Material: Tank aus Edelstahl 304, Auslauf aus
+      Polypropylen; Stromversorgung: Netzbetrieb, Ausgang 5 V/1 A; Lautstärke: Herstellerangabe bis 30 dB; Reinigung:
+      Edelstahltank spülmaschinengeeignet. Normalisierung des vorhandenen Quellenstands, keine erneute externe Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.material
+      - comparisonData.fountain.powerType
+      - comparisonData.fountain.dishwasherSafeParts
 ---
 Der PETLIBRO Stainless Steel Fountain verzichtet bewusst auf App, Akku und Sensorik. Seine Stärken sind Edelstahl, einfache Bedienung und ein mechanisch regelbarer Dauerfluss.
 

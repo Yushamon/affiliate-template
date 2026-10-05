@@ -269,6 +269,13 @@ comparisonData:
     lieferumfang: zwei RFID-Halsbandanhänger
     geeignet_fur: vor allem Katzen, nachrangig kleine Hunde
     akku: Nein
+  fountain:
+    capacityLiters: 3
+    material:
+      - ABS und Edelstahl
+    powerType:
+      status: known
+      value: mains
 multiPet:
   sharedUse: supported
   identificationMethods: [rfidTag]
@@ -339,6 +346,20 @@ offers:
     evidenceSources: []
     lastAttemptAt: "2026-10-03T06:51:10.896Z"
     error: "Offizielle Produkt-URL unresolved."
+evidenceSources:
+  - source: Herstellerdokumentation · PETLIBRO Dockstream RFID Smart
+    url: https://petlibro.com/products/dockstream-rfid-smart-fountain
+    accessedAt: "2026-08-21"
+    sourceType: manufacturer
+    assertion: >-
+      Bereits dokumentierte technische Daten: Kapazität: 3 Liter; Material: ABS und Edelstahl; Stromversorgung:
+      kabelgebunden, 5 V/1 A; Lautstärke: Herstellerangabe 23 dB; Reinigung: Tank, Trinkfläche, Rotor und Filterbereich
+      regelmäßig reinigen. Filter etwa alle zwei Wochen wechseln.. Normalisierung des vorhandenen Quellenstands, keine
+      erneute externe Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.material
+      - comparisonData.fountain.powerType
 ---
 Der Dockstream RFID Smart löst ein reales Problem in Mehrkatzenhaushalten: Der Gesamtverbrauch eines Brunnens sagt nicht, welches Tier tatsächlich getrunken hat.
 

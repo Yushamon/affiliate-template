@@ -197,12 +197,23 @@ features:
   - "Cloudspeicher"
 comparisonData:
   custom:
-    klasse: "Feste Kamera"
-    video: "1080p"
-    interaktion: "Zwei-Wege-Audio"
-    speicher: "Nur Cloud"
-    abo: "Für KI und Aufzeichnungen"
-    datenschutz: "Manuelle Linsenabdeckung"
+    klasse: Feste Kamera
+    video: 1080p
+    interaktion: Zwei-Wege-Audio
+    speicher: Nur Cloud
+    abo: Für KI und Aufzeichnungen
+    datenschutz: Manuelle Linsenabdeckung
+  camera:
+    localStorage: unavailable
+    cloud: optional
+    detection: cloud
+    detectionTypes:
+      - pet
+    nightVision: color
+    notes:
+      - >-
+        Aufzeichnungen nur in der Cloud; Livezugriff ohne Bezahltarif. Farb- und Schwarz-Weiß-Nachtsicht dokumentiert; aus
+        Schwarz-Weiß wird keine zusätzliche Infrarotbehauptung abgeleitet.
 decisionJourney:
   cluster: "haustierkameras"
   stage: "decision"
@@ -231,6 +242,23 @@ evidenceSources:
       - "specs"
       - "strengths"
       - "weaknesses"
+  - source: Herstellerdokumentation · PETLIBRO Scout Smart Camera
+    url: https://de.petlibro.com/pages/video-cloud-ai
+    accessedAt: "2026-09-02"
+    sourceType: manufacturer
+    assertion: Bereits dokumentierter Dienstumfang aus subscription; unveränderte Tarif- und Preisangaben.
+    fields:
+      - comparisonData.camera.cloud
+  - source: PETLIBRO Deutschland
+    url: https://de.petlibro.com/en/products/scout-smart-camera
+    accessedAt: "2026-08-06"
+    assertion: 1080p, Mehrtiere-Erkennung, Cloudspeicher, Abomodell und fehlende SD-Karte sind Herstellerangaben.
+    fields:
+      - comparisonData.camera.localStorage
+      - comparisonData.camera.detection
+      - comparisonData.camera.detectionTypes
+      - comparisonData.camera.nightVision
+    sourceType: manufacturer
 affiliate:
   provider: "amzn-to"
   label: "Preis und Verfügbarkeit prüfen"

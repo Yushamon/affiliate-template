@@ -82,11 +82,31 @@ specs:
   - { label: "Versorgung", value: "USB-C" }
 features: ["2K QHD", "360-Grad-Rotation", "automatische Nachtsicht", "Zwei-Wege-Audio", "Leckerliausgabe"]
 comparisonData:
-  custom: { klasse: "Stationäre Interaktionskamera", speicher: "Aktuellen Dienstumfang prüfen", abo: "Optionale Dienste getrennt prüfen", interaktion: "Audio und Leckerliausgabe", abdeckung: "360 Grad am festen Standort", bild: "2K QHD; automatische Nachtsicht" }
+  custom:
+    klasse: Stationäre Interaktionskamera
+    speicher: Aktuellen Dienstumfang prüfen
+    abo: Optionale Dienste getrennt prüfen
+    interaktion: Audio und Leckerliausgabe
+    abdeckung: 360 Grad am festen Standort
+    bild: 2K QHD; automatische Nachtsicht
+  camera:
+    localStorage: unknown
+    cloud: optional
+    detection: unknown
+    nightVision: unknown
+    notes:
+      - Automatische Nachtsicht ist dokumentiert, der konkrete Modus (IR/Farbe) nicht.
 decisionJourney: { cluster: "haustierkameras", stage: "decision", intent: "furbo-mini-360-pruefen", primaryQuestion: "Ist Leckerliausgabe die gewünschte Interaktion und passt der aktuelle Dienstumfang?", next: ["/vergleiche/beste-haustierkameras/"], fallback: ["/haustierkameras/"] }
 evidenceSources:
   - { source: "Furbo EU Deutschland", url: "https://furbo.com/eu-de/products/furbo-mini-360", accessedAt: "2026-08-15", assertion: "Offizielle deutschsprachige EU-Produktseite für Modellidentität und regionale Produktdarstellung.", fields: ["review", "decision"] }
   - { source: "Furbo Support Deutschland", url: "https://help.furbo.com/hc/de/articles/43637359639321-Furbo-Mini-360-Kurzanleitung", accessedAt: "2026-08-15", assertion: "2K QHD, 360-Grad-Rotation, automatische Nachtsicht, Audio, Leckerliausgabe und USB-C sind Herstellerangaben.", fields: ["specs", "features"] }
+  - source: Herstellerdokumentation · Furbo Mini 360
+    url: https://help.furbo.com/hc/de/articles/17462739016089-Furbo-Nanny-Abonnements-und-Preise
+    accessedAt: "2026-09-02"
+    sourceType: manufacturer
+    assertion: Bereits dokumentierter Dienstumfang aus subscription; unveränderte Tarif- und Preisangaben.
+    fields:
+      - comparisonData.camera.cloud
 affiliate:
   provider: "amzn-to"
   label: "Preis und Verfügbarkeit prüfen"

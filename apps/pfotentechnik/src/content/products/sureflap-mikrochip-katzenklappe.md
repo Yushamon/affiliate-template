@@ -264,14 +264,45 @@ decisionFacts:
 comparisonData:
   version: 1
   custom:
-    zugang: "Mikrochip oder RFID-Halsbandanhänger"
-    richtungsrechte: "Keine individuellen Ausgangsrechte"
-    app: "Nein"
-    strom: "4 AA-Batterien"
-    einbau: "Tür, Glas und Wand mit passendem Zubehör"
-    durchgang: "142 × 120 mm"
-    rolle: "Vollständige lokale Mikrochip-Katzenklappe"
-
+    zugang: Mikrochip oder RFID-Halsbandanhänger
+    richtungsrechte: Keine individuellen Ausgangsrechte
+    app: Nein
+    strom: 4 AA-Batterien
+    einbau: Tür, Glas und Wand mit passendem Zubehör
+    durchgang: 142 × 120 mm
+    rolle: Vollständige lokale Mikrochip-Katzenklappe
+  catFlap:
+    installation:
+      status: partial
+      doorSupported:
+        status: known
+        value: true
+      wallSupported:
+        status: known
+        value: true
+      glassSupported:
+        status: known
+        value: true
+      cutoutWidthMm:
+        status: known
+        value: 165
+      cutoutHeightMm:
+        status: known
+        value: 171
+      roundCutoutDiameterMm:
+        status: known
+        value: 212
+      passageWidthMm:
+        status: known
+        value: 142
+      passageHeightMm:
+        status: known
+        value: 120
+      tunnelDepthMm:
+        status: known
+        value: 70
+      notes:
+        - 212 mm idealer Glasausschnitt; bis 260 mm laut Hersteller. Einbau mit passendem Zubehör.
 faq:
   - question: "Braucht die SureFlap Mikrochip Katzenklappe WLAN?"
     answer: "Nein. Mikrochip-Erkennung und Verriegelung arbeiten lokal. Eine App, ein Konto und ein Hub sind für dieses Modell weder nötig noch vorgesehen."
@@ -348,6 +379,21 @@ evidenceSources:
       - "review"
       - "alternatives"
       - "comparisonData"
+  - source: Sure Petcare Deutschland – Mikrochip Katzenklappe
+    url: https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe
+    accessedAt: "2026-08-04"
+    assertion: Funktionen, Speicher, Batterielaufzeit, Mikrochip- und RFID-Kompatibilität, Montage, Maße, Garantie und Shopstatus.
+    fields:
+      - comparisonData.catFlap.installation.doorSupported
+      - comparisonData.catFlap.installation.wallSupported
+      - comparisonData.catFlap.installation.glassSupported
+      - comparisonData.catFlap.installation.cutoutWidthMm
+      - comparisonData.catFlap.installation.cutoutHeightMm
+      - comparisonData.catFlap.installation.roundCutoutDiameterMm
+      - comparisonData.catFlap.installation.passageWidthMm
+      - comparisonData.catFlap.installation.passageHeightMm
+      - comparisonData.catFlap.installation.tunnelDepthMm
+    sourceType: manufacturer
 score: 82
 ratings:
   zugang_und_sicherheit: 4.3
