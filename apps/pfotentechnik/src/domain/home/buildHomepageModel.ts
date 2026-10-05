@@ -120,6 +120,11 @@ const decisionComparisonDefinitions = [
   }
 ] as const;
 
+// Homepage-only overrides keep teaser media independent of comparison content/SEO.
+// Cat-flap teaser: a high-resolution, logo/text-free usage scene is still missing.
+// Add an imported HomeImage under "beste-mikrochip-katzenklappen" when available.
+const decisionTeaserImages: Partial<Record<(typeof decisionComparisonDefinitions)[number]["slug"], HomeImage>> = {};
+
 const getComparisonItemCount = (
   comparison: ComparisonEntry,
   products: ProductEntry[]
@@ -262,7 +267,7 @@ export function buildHomepageModel({
             entry.data.hub?.description ??
             entry.data.description ??
             definition.fallbackText,
-          image: entry.data.heroImage ?? {
+          image: decisionTeaserImages[definition.slug] ?? entry.data.heroImage ?? {
             src: petTechHeroImage,
             alt: ""
           },

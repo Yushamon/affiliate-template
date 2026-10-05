@@ -134,11 +134,11 @@ const updatedLabel = new Intl.DateTimeFormat("de-DE", {
       </div>
       <div class="pt-category-hub__product-list">
         {model.products.map((product) => (
-          <article class="pt-category-hub__product">
+          <a class="pt-category-hub__product" href={product.href} aria-label={`${product.title} – Produktcheck`}>
             {product.image ? (
-              <a class="pt-category-hub__product-media" href={product.href} aria-label={`${product.title} ansehen`}>
+              <span class="pt-category-hub__product-media">
                 <OptimizedImage src={product.image.src} alt={product.image.alt ?? `${product.title} in kompakter Produktansicht`} width={360} height={270} layout="constrained" fit="contain" />
-              </a>
+              </span>
             ) : (
               <span class="pt-category-hub__product-fallback" role="img" aria-label="Produktbild nicht verfügbar">Bild nicht verfügbar</span>
             )}
@@ -149,11 +149,11 @@ const updatedLabel = new Intl.DateTimeFormat("de-DE", {
               <p>{product.reason}</p>
             </div>
             <div class="pt-category-hub__product-decision">
-              <ProductScore value={product.score} scale={100} variant="ring-compact" description="Redaktioneller ProductScore" />
+              <ProductScore value={product.score} scale={100} variant="ring-compact" description="Redaktioneller ProductScore" showMethodology={false} />
               <p>{product.price ? <><span>Preis erfasst</span><strong>{product.price}</strong></> : <span>Preis aktuell prüfen</span>}</p>
-              <a href={product.href}>Produktcheck <span aria-hidden="true">→</span></a>
+              <span class="pt-category-hub__product-cta">Zum Produktcheck <span aria-hidden="true">→</span></span>
             </div>
-          </article>
+          </a>
         ))}
       </div>
     </section>
@@ -279,7 +279,10 @@ const updatedLabel = new Intl.DateTimeFormat("de-DE", {
   .pt-category-hub__comparison-list > a:hover h3, .pt-category-hub__comparison-list > a:hover b { text-decoration: underline; text-underline-offset: .2em; }
   .pt-category-hub__products { width: 100vw; margin-left: calc(50% - 50vw); padding-inline: max(var(--pt-page-gutter), calc((100vw - var(--pt-content-wide)) / 2 + var(--pt-page-gutter))); background: var(--category-soft); }
   .pt-category-hub__product-list { border-top: 1px solid var(--category-border-strong); }
-  .pt-category-hub__product { display: grid; grid-template-columns: 160px minmax(0, 1fr) minmax(210px, .42fr); gap: clamp(1rem, 3vw, 2.5rem); align-items: center; padding-block: clamp(1.2rem, 3vw, 2rem); border-bottom: 1px solid var(--category-border); }
+  .pt-category-hub__product { display: grid; grid-template-columns: 160px minmax(0, 1fr) minmax(210px, .42fr); gap: clamp(1rem, 3vw, 2.5rem); align-items: center; padding-block: clamp(1.2rem, 3vw, 2rem); border-bottom: 1px solid var(--category-border); color: var(--category-text); text-decoration: none; cursor: pointer; }
+  .pt-category-hub__product:hover { background: color-mix(in srgb, var(--category-raised) 60%, transparent); }
+  .pt-category-hub__product:is(:hover, :focus-visible) .pt-category-hub__product-cta { text-decoration: underline; text-underline-offset: .2em; }
+  .pt-category-hub__product:focus-visible { outline: 3px solid var(--category-action); outline-offset: 4px; }
   .pt-category-hub__product-media, .pt-category-hub__product-fallback { display: grid; width: 160px; height: 120px; overflow: hidden; place-items: center; border: 1px solid var(--category-border); border-radius: var(--pt33-radius-md); background: var(--category-raised); }
   .pt-category-hub__product-media :global(picture), .pt-category-hub__product-media :global(img) { display: block; width: 100%; height: 100%; }
   .pt-category-hub__product-media :global(img) { object-fit: contain; }
@@ -297,7 +300,7 @@ const updatedLabel = new Intl.DateTimeFormat("de-DE", {
   .pt-category-hub__product-decision > p { display: grid; margin: 0; text-align: right; white-space: nowrap; }
   .pt-category-hub__product-decision > p span { color: var(--category-tertiary); font-size: .68rem; }
   .pt-category-hub__product-decision > p strong { font-size: 1rem; }
-  .pt-category-hub__product-decision > a { display: inline-flex; min-height: 44px; align-items: center; justify-self: end; color: var(--category-action); font-size: .78rem; font-weight: 850; text-decoration: none; }
+  .pt-category-hub__product-decision > .pt-category-hub__product-cta { display: inline-flex; min-height: 44px; align-items: center; justify-self: end; color: var(--category-action); font-size: .78rem; font-weight: 850; text-decoration: none; }
   .pt-category-hub__guide-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--category-border-strong); }
   .pt-category-hub__guide-list > a { display: grid; grid-template-columns: 34px minmax(0, 1fr) 24px; gap: 1rem; padding: clamp(1.25rem, 3vw, 2rem); border-right: 1px solid var(--category-border); border-bottom: 1px solid var(--category-border); text-decoration: none; }
   .pt-category-hub__guide-list > a:nth-child(2n) { border-right: 0; }
@@ -366,7 +369,7 @@ const updatedLabel = new Intl.DateTimeFormat("de-DE", {
     .pt-category-hub__product-decision :global(.pt-score) { min-width: 0; }
     .pt-category-hub__product-decision :global(.pt-score__copy) { display: none; }
     .pt-category-hub__product-decision > p { justify-self: end; }
-    .pt-category-hub__product-decision > a { grid-column: 1 / -1; width: 100%; min-height: 44px; align-content: center; justify-self: stretch; border-top: 1px solid var(--category-border); text-align: right; }
+    .pt-category-hub__product-decision > .pt-category-hub__product-cta { grid-column: 1 / -1; width: 100%; min-height: 44px; align-content: center; justify-self: stretch; border-top: 1px solid var(--category-border); text-align: right; }
     .pt-category-hub__depth summary { min-height: 58px; padding: .9rem 1rem; font-size: .9rem; }
     .pt-category-hub__closing { padding: 1.4rem; box-shadow: none; }
     .pt-category-hub__closing > a { width: 100%; justify-content: center; white-space: normal; text-align: center; }
