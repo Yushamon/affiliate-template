@@ -1,13 +1,10 @@
 import type { APIRoute } from "astro";
 import { getCollection } from "astro:content";
-import { mapProductToAdvisor } from "../../domain/advisor";
+import { mapProductToAdvisor, isFeederAdvisorProduct } from "../../domain/advisor";
 
 export const GET: APIRoute = async () => {
   const products = (await getCollection("products"))
-    .filter(
-      (entry) =>
-        entry.data.category.key === "futterautomat"
-    )
+    .filter(isFeederAdvisorProduct)
     .map(mapProductToAdvisor);
 
   return new Response(

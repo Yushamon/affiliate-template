@@ -37,6 +37,8 @@ const guideData = advisorGuides.map(
     </div>
   </header>
 
+  <noscript><p>Für die interaktive Auswahl benötigst du JavaScript. Die <a href="/smarte-futterautomaten/">Futterautomaten-Kaufhilfe</a> erklärt Bauarten und Auswahlkriterien auch ohne JavaScript.</p></noscript>
+
   <div class="pt-surface advisor-panel">
     <div class="advisor-status" data-status>
       <div class="status-copy">
@@ -78,7 +80,7 @@ const guideData = advisorGuides.map(
               <strong>Katze</strong>
               <small>Eine oder mehrere Katzen</small>
               <em>
-                Kleine Portionen und Zugang besonders beachten
+                Portionsgröße und Zugang am Modell prüfen
               </em>
             </span>
           </label>
@@ -94,7 +96,7 @@ const guideData = advisorGuides.map(
               <strong>Hund</strong>
               <small>Kleine bis große Hunde</small>
               <em>
-                Kapazität und Napfhöhe stärker gewichten
+                Größe, Standfestigkeit und Napfhöhe am Modell prüfen
               </em>
             </span>
           </label>
@@ -329,14 +331,14 @@ const guideData = advisorGuides.map(
     >
       <div class="results-heading">
         <p class="eyebrow">Deine Auswahl</p>
-        <h2>Diese Modelle passen am besten</h2>
+        <h2>Diese Modelle kommen infrage</h2>
         <p data-result-summary></p>
       </div>
 
       <p class="advisor-disclosure">
         Die Auswahl basiert auf dokumentierten
         Produktmerkmalen und redaktioneller Einordnung.
-        Preise und Verfügbarkeit können sich ändern.
+        Unbekannte Eigenschaften bleiben offen. Prüfe Portionsbereich, Krokettengröße, Napfhöhe, lokale Programmierung und Standfestigkeit am einzelnen Modell. Zugangskontrolle ersetzt keine zeitgesteuerte Ausgabe; Nassfutter verlangt ein passendes Kühl- und Hygienekonzept. Preise und Verfügbarkeit können sich ändern.
       </p>
 
       <div class="result-grid" data-result-list></div>
@@ -398,6 +400,8 @@ const guideData = advisorGuides.map(
 
 <script>
   import {
+    matchesFact,
+    priorityMatch,
     parseAdvisorAnswers,
     recommendAdvisorProducts,
     serializeAdvisorAnswers
@@ -517,27 +521,10 @@ const guideData = advisorGuides.map(
       const selectedPriorities = data.getAll("priorities");
 
       return products.filter((product) => {
-        if (
-          selectedFood === "dry" &&
-          !product.foodType.includes("dry")
-        ) {
-          return false;
-        }
-
-        if (
-          selectedFood === "wet" &&
-          !product.foodType.includes("wet")
-        ) {
-          return false;
-        }
-
-        if (
-          selectedPriorities.includes("microchip") &&
-          product.access !== "microchip"
-        ) {
-          return false;
-        }
-
+        const pet = data.get("pet");
+        if (pet && matchesFact(product.common.animals, pet) === "unavailable") return false;
+        if (["dry", "wet"].includes(selectedFood) && matchesFact(product.common.foodTypes, selectedFood) === "unavailable") return false;
+        if (selectedPriorities.includes("microchip") && priorityMatch(product, "microchip") === "unavailable") return false;
         return true;
       }).length;
     };
@@ -652,44 +639,16 @@ const guideData = advisorGuides.map(
     };
 
     const compareRows = (matches) => {
+      const stateLabel = (state) => ({ supported: "Ja", unavailable: "Nein", partial: "Teilweise", unknown: "Nicht dokumentiert", notApplicable: "Nicht anwendbar" })[state];
       const rows = [
-        [
-          "Futterart",
-          (match) =>
-            match.product.foodType
-              .map((type) =>
-                type === "dry"
-                  ? "Trockenfutter"
-                  : "Nassfutter"
-              )
-              .join(" & ") || "Nicht dokumentiert"
-        ],
-        [
-          "App",
-          (match) =>
-            match.product.app === true
-              ? "Ja"
-              : "Nicht ausgewiesen"
-        ],
-        [
-          "Kamera",
-          (match) =>
-            match.product.camera === true ? "Ja" : "Nein"
-        ],
-        [
-          "Zugang",
-          (match) =>
-            match.product.access === "microchip"
-              ? "Mikrochip"
-              : "Offen"
-        ],
-        [
-          "Notstrom",
-          (match) =>
-            match.product.backupPower === true
-              ? "Ja"
-              : "Nicht ausgewiesen"
-        ],
+        ["Futterart", (match) => match.product.common.foodTypes.status === "known"
+          ? match.product.common.foodTypes.value.map(type => type === "dry" ? "Trockenfutter" : "Nassfutter").join(" & ") : "Nicht dokumentiert"],
+        ["App", (match) => stateLabel(match.product.common.app)],
+        ["Kamera", (match) => stateLabel(match.product.common.camera)],
+        ["Zugang", (match) => match.product.common.accessControl.status === "known"
+          ? match.product.common.accessControl.value === "microchip" ? "Mikrochip" : "Offen" : "Nicht dokumentiert"],
+        ["Notstrom", (match) => stateLabel(match.product.common.backupPower)],
+        ["Zeitplan ohne Internet", (match) => stateLabel(match.product.common.offlineSchedule)],
         [
           "Preisklasse",
           (match) =>
@@ -714,6 +673,7 @@ const guideData = advisorGuides.map(
         !(compareTable instanceof HTMLElement) ||
         matches.length < 2
       ) {
+        if (compare instanceof HTMLElement) compare.hidden = true;
         return;
       }
 
@@ -842,7 +802,7 @@ const guideData = advisorGuides.map(
       if (summary) {
         summary.textContent =
           matches.length > 0
-            ? `${matches.length} Modelle erfüllen deine wichtigsten Anforderungen am besten.`
+            ? `${matches.length} Modelle kommen infrage. Beachte die dokumentierten Grenzen und offenen Angaben.`
             : "Aktuell erfüllt kein Modell alle entscheidenden Anforderungen ohne deutliche Einschränkung.";
       }
 
@@ -854,7 +814,7 @@ const guideData = advisorGuides.map(
             <span>
               ${
                 index === 0
-                  ? "Beste Gesamtpassung"
+                  ? "Erster Vorschlag"
                   : `Alternative ${index}`
               }
             </span>
@@ -904,7 +864,7 @@ const guideData = advisorGuides.map(
             class="pt-button-primary pt-button button-primary result-link"
             href="${match.product.route}"
           >
-            Testbericht ansehen
+            Produkteinordnung ansehen
           </a>
         `;
 

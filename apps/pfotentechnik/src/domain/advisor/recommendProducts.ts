@@ -1,251 +1,75 @@
-import type {
-  AdvisorAnswers,
-  AdvisorMatch,
-  AdvisorPriority,
-  AdvisorProduct
-} from "./types";
+import type { AdvisorAnswers, AdvisorCapability, AdvisorFact, AdvisorMatch, AdvisorPriority, AdvisorProduct } from "./types";
 
-const searchableText = (product: AdvisorProduct) =>
-  [
-    product.title,
-    product.description,
-    product.recommendation,
-    product.useCase,
-    ...product.bestFor,
-    ...product.attention,
-    ...product.strengths,
-    ...product.weaknesses,
-    ...product.features
-  ]
-    .filter(Boolean)
-    .join(" ")
-    .toLocaleLowerCase("de-DE");
+export const matchesFact = <T>(fact: AdvisorFact<T[]>, value: T): AdvisorCapability =>
+  fact.status === "known" ? (fact.value.includes(value) ? "supported" : "unavailable") : fact.status;
 
-const hasAny = (product: AdvisorProduct, terms: string[]) => {
-  const haystack = searchableText(product);
-  return terms.some((term) =>
-    haystack.includes(term.toLocaleLowerCase("de-DE"))
-  );
-};
-
-const priorityLabels: Record<AdvisorPriority, string> = {
-  camera: "Kamera",
-  app: "App-Steuerung",
-  offline: "Offline-Betrieb",
-  backup: "Notstrom",
-  microchip: "Mikrochip-Zugang",
-  simple: "einfache Bedienung"
-};
-
-const priorityMatch = (
-  product: AdvisorProduct,
-  priority: AdvisorPriority
-) => {
+export const priorityMatch = (product: AdvisorProduct, priority: AdvisorPriority): AdvisorCapability => {
+  const facts = product.common;
   switch (priority) {
-    case "camera":
-      return product.camera === true || hasAny(product, ["kamera"]);
-    case "app":
-      return product.app === true || hasAny(product, ["app"]);
-    case "offline":
-      return hasAny(product, [
-        "offline",
-        "ohne wlan",
-        "ohne internet",
-        "lokaler zeitplan",
-        "zeitplan ohne internet"
-      ]);
-    case "backup":
-      return (
-        product.backupPower === true ||
-        hasAny(product, ["notstrom", "batterie", "backup"])
-      );
-    case "microchip":
-      return (
-        product.access === "microchip" ||
-        hasAny(product, ["mikrochip"])
-      );
-    case "simple":
-      return (
-        product.app !== true &&
-        product.camera !== true &&
-        hasAny(product, [
-          "einfach",
-          "ohne app",
-          "manuell",
-          "übersichtlich"
-        ])
-      );
+    case "camera": return facts.camera;
+    case "app": return facts.app;
+    case "offline": return facts.offlineSchedule;
+    case "backup": return facts.backupPower;
+    case "microchip": return facts.accessControl.status === "known"
+      ? facts.accessControl.value === "microchip" ? "supported" : "unavailable"
+      : facts.accessControl.status;
+    case "simple": return facts.app === "unavailable" && facts.camera === "unavailable" ? "supported"
+      : facts.app === "supported" || facts.camera === "supported" ? "unavailable" : "unknown";
   }
 };
 
-const animalMatch = (
-  product: AdvisorProduct,
-  pet: AdvisorAnswers["pet"]
-) =>
-  pet === "cat"
-    ? hasAny(product, ["katze", "katzen", "mehrkatzen"])
-    : hasAny(product, ["hund", "hunde"]);
-
-export const recommendAdvisorProducts = (
-  products: AdvisorProduct[],
-  answers: AdvisorAnswers
-): AdvisorMatch[] => {
-  return products
-    .map((product) => {
-      let score = 28;
-      const reasons: string[] = [];
-      const cautions: string[] = [];
-      const exclusions: string[] = [];
-      const matchedPriorities: AdvisorPriority[] = [];
-
-      const supportsDry = product.foodType.includes("dry");
-      const supportsWet = product.foodType.includes("wet");
-
-      if (answers.food === "dry") {
-        if (supportsDry) {
-          score += 25;
-          reasons.push("für Trockenfutter geeignet");
-        } else {
-          exclusions.push("nicht für Trockenfutter ausgewiesen");
-        }
-      }
-
-      if (answers.food === "wet") {
-        if (supportsWet) {
-          score += 25;
-          reasons.push("für Nassfutter geeignet");
-        } else {
-          exclusions.push("nicht für Nassfutter ausgewiesen");
-        }
-      }
-
-      if (answers.food === "mixed") {
-        if (supportsDry && supportsWet) {
-          score += 25;
-          reasons.push("für Nass- und Trockenfutter geeignet");
-        } else if (supportsDry || supportsWet) {
-          score -= 8;
-          cautions.push(
-            "deckt nur eine der gewünschten Futterarten ab"
-          );
-        } else {
-          exclusions.push(
-            "keine passende Futterart dokumentiert"
-          );
-        }
-      }
-
-      if (animalMatch(product, answers.pet)) {
-        score += 10;
-        reasons.push(
-          answers.pet === "cat"
-            ? "für Katzen eingeordnet"
-            : "für Hunde eingeordnet"
-        );
-      }
-
-      if (answers.petCount === "multiple") {
-        const multiPetSuitable =
-          product.access === "microchip" ||
-          hasAny(product, [
-            "mehrtier",
-            "mehrkatzen",
-            "mehrere tiere",
-            "futterneid",
-            "mikrochip"
-          ]);
-
-        if (multiPetSuitable) {
-          score += 18;
-          reasons.push(
-            "für mehrere Tiere besonders relevant"
-          );
-        } else {
-          score -= 8;
-          cautions.push(
-            "keine eindeutige Zugangskontrolle für mehrere Tiere"
-          );
-        }
-      }
-
-      for (const priority of answers.priorities) {
-        if (priorityMatch(product, priority)) {
-          matchedPriorities.push(priority);
-          score += priority === "microchip" ? 17 : 11;
-          reasons.push(`${priorityLabels[priority]} vorhanden`);
-        } else if (priority === "microchip") {
-          exclusions.push(
-            "keine Mikrochip-Zugangskontrolle"
-          );
-        } else {
-          score -= 5;
-          cautions.push(
-            `${priorityLabels[priority]} nicht eindeutig dokumentiert`
-          );
-        }
-      }
-
-      if (
-        answers.budget !== "open" &&
-        product.priceCategory === answers.budget
-      ) {
-        score += 10;
-        reasons.push("passt zur gewählten Preisklasse");
-      } else if (
-        answers.budget !== "open" &&
-        product.priceCategory
-      ) {
-        score -= 3;
-        cautions.push(
-          "liegt außerhalb der bevorzugten Preisklasse"
-        );
-      }
-
-      score += Math.round(product.rating * 2);
-      score += Math.round(
-        (product.score ?? product.rating * 20) / 25
-      );
-
-      score = Math.max(0, Math.min(100, score));
-
-      const fit =
-        exclusions.length > 0
-          ? "none"
-          : score >= 78
-            ? "excellent"
-            : score >= 60
-              ? "good"
-              : score >= 38
-                ? "limited"
-                : "none";
-
-      return {
-        product,
-        score,
-        fit,
-        reasons: [...new Set(reasons)].slice(0, 5),
-        cautions: [...new Set(cautions)].slice(0, 4),
-        exclusions: [...new Set(exclusions)],
-        matchedPriorities
-      };
-    })
-    .sort((left, right) => {
-      if (
-        left.exclusions.length !== right.exclusions.length
-      ) {
-        return (
-          left.exclusions.length -
-          right.exclusions.length
-        );
-      }
-
-      if (
-        answers.decisionStyle === "safe-choice" &&
-        left.cautions.length !== right.cautions.length
-      ) {
-        return left.cautions.length - right.cautions.length;
-      }
-
-      return right.score - left.score;
-    });
+const labels: Record<AdvisorPriority, string> = {
+  camera: "Kamera", app: "App-Steuerung", offline: "Zeitplan ohne Internet",
+  backup: "Notstrom", microchip: "Mikrochip-Zugang", simple: "Betrieb ohne App und Kamera"
 };
+
+// Only the feeder module scores products in Phase A. No cross-category ranking.
+export const recommendAdvisorProducts = (products: AdvisorProduct[], answers: AdvisorAnswers): AdvisorMatch[] =>
+  products.map((product): AdvisorMatch => {
+    let score = 28;
+    let uncertain = false;
+    const reasons: string[] = [], cautions: string[] = [], exclusions: string[] = [];
+    const matchedPriorities: AdvisorPriority[] = [];
+    const assess = (state: AdvisorCapability, label: string, weight: number, hard = false) => {
+      if (state === "supported") { score += weight; reasons.push(`${label}: dokumentiert`); }
+      else if (state === "unavailable") {
+        if (hard) exclusions.push(`${label}: nicht unterstützt`);
+        else { score -= 5; cautions.push(`${label}: nicht unterstützt`); }
+      } else {
+        uncertain = true;
+        cautions.push(`${label}: ${state === "partial" ? "nur teilweise unterstützt" : state === "notApplicable" ? "nicht anwendbar" : "nicht ausreichend dokumentiert"}`);
+      }
+    };
+    if (!["futterautomat", "futterautomaten"].includes(product.category)) exclusions.push("Kein Futterautomat");
+    assess(matchesFact(product.common.animals, answers.pet), answers.pet === "cat" ? "Eignung für Katzen" : "Eignung für Hunde", 10, true);
+    const food = product.common.foodTypes;
+    if (answers.food === "mixed") {
+      const state = food.status === "known"
+        ? food.value.includes("dry") && food.value.includes("wet") ? "supported" : "partial"
+        : food.status;
+      assess(state, "Nass- und Trockenfutter", 25);
+    } else assess(matchesFact(food, answers.food), answers.food === "dry" ? "Trockenfutter" : "Nassfutter", 25, true);
+    if (answers.petCount === "multiple") {
+      assess(product.common.multiPet.individualAccess, "Individueller Zugang für mehrere Tiere", 18);
+    }
+    for (const priority of answers.priorities) {
+      const state = priorityMatch(product, priority);
+      if (state === "supported") matchedPriorities.push(priority);
+      assess(state, labels[priority], priority === "microchip" ? 17 : 11, priority === "microchip");
+    }
+    if (answers.budget !== "open" && product.priceCategory === answers.budget) {
+      score += 10; reasons.push("passt zur gewählten Preisklasse");
+    } else if (answers.budget !== "open" && product.priceCategory) {
+      score -= 3; cautions.push("liegt außerhalb der bevorzugten Preisklasse");
+    } else if (answers.budget !== "open") cautions.push("Preisklasse nicht eingeordnet");
+    // Match score is separate from the unchanged editorial product score.
+    score += Math.round(product.rating * 2) + Math.round((product.score ?? product.rating * 20) / 25);
+    score = Math.max(0, Math.min(100, score));
+    return { product, score,
+      fit: exclusions.length ? "none" : uncertain ? "limited" : score >= 78 ? "excellent" : score >= 60 ? "good" : "limited",
+      reasons: [...new Set(reasons)], cautions: [...new Set(cautions)], exclusions, matchedPriorities };
+  }).sort((left, right) => {
+    if (left.exclusions.length !== right.exclusions.length) return left.exclusions.length - right.exclusions.length;
+    if (answers.decisionStyle === "safe-choice" && left.cautions.length !== right.cautions.length) return left.cautions.length - right.cautions.length;
+    return right.score - left.score;
+  });

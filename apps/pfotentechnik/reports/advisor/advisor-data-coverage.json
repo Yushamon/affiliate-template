@@ -1,0 +1,2756 @@
+{
+  "asOf": "2026-10-05",
+  "totalProducts": 103,
+  "criteria": {
+    "scope": "All product Markdown records, including inactive; no prose extraction, schema defaults, or marketing heuristics. Supplemental structured fountain research joined by exact slug; not yet a category recommendation module.",
+    "coverage": "known / all products; explicit false counts as known. partial, unknown and notApplicable are separate. No inference from comparisonData.custom strings, specs, decision or decisionJourney prose.",
+    "readiness": "READY = all products have resolved critical fields. PARTIAL = at least one product has all critical fields known/notApplicable/partial. NOT_READY = none does. Critical fields are declared per category before calculation; operational safety and individual fit still require Phase-B validation.",
+    "statusVocabulary": "supported=SUPPORTED, unavailable=UNSUPPORTED, partial=PARTIAL, unknown=UNKNOWN, notApplicable=NOT_APPLICABLE; reuse product capability type, no second enum."
+  },
+  "categories": {
+    "feeder": {
+      "products": 38,
+      "criticalFields": [
+        "animal",
+        "foodType",
+        "access"
+      ],
+      "readiness": "PARTIAL",
+      "fields": {
+        "animal": {
+          "source": "Advisor common.animals (explicit product fields only)",
+          "known": 38,
+          "partial": 0,
+          "unknown": 0,
+          "notApplicable": 0,
+          "coveragePercent": 100
+        },
+        "petSize": {
+          "source": "Advisor common.petSizes (explicit product fields only)",
+          "known": 34,
+          "partial": 0,
+          "unknown": 4,
+          "notApplicable": 0,
+          "coveragePercent": 89
+        },
+        "foodType": {
+          "source": "Advisor common.foodTypes (explicit product fields only)",
+          "known": 11,
+          "partial": 0,
+          "unknown": 27,
+          "notApplicable": 0,
+          "coveragePercent": 29
+        },
+        "access": {
+          "source": "comparisonFilters.access",
+          "known": 4,
+          "partial": 0,
+          "unknown": 34,
+          "notApplicable": 0,
+          "coveragePercent": 11
+        },
+        "app": {
+          "source": "Advisor common.app (explicit product fields only)",
+          "known": 4,
+          "partial": 0,
+          "unknown": 34,
+          "notApplicable": 0,
+          "coveragePercent": 11
+        },
+        "camera": {
+          "source": "Advisor common.camera (explicit product fields only)",
+          "known": 3,
+          "partial": 0,
+          "unknown": 35,
+          "notApplicable": 0,
+          "coveragePercent": 8
+        },
+        "backupPower": {
+          "source": "Advisor common.backupPower (explicit product fields only)",
+          "known": 3,
+          "partial": 0,
+          "unknown": 35,
+          "notApplicable": 0,
+          "coveragePercent": 8
+        },
+        "offlineSchedule": {
+          "source": "Advisor common.offlineSchedule (explicit product fields only)",
+          "known": 0,
+          "partial": 0,
+          "unknown": 38,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "multiPet": {
+          "source": "Advisor common.multiPet.sharedUse (explicit product fields only)",
+          "known": 3,
+          "partial": 1,
+          "unknown": 34,
+          "notApplicable": 0,
+          "coveragePercent": 8
+        },
+        "failureModes.powerOutage": {
+          "source": "failureModes.powerOutage.status",
+          "known": 1,
+          "partial": 2,
+          "unknown": 35,
+          "notApplicable": 0,
+          "coveragePercent": 3
+        },
+        "failureModes.wifiOutage": {
+          "source": "failureModes.wifiOutage.status",
+          "known": 1,
+          "partial": 0,
+          "unknown": 37,
+          "notApplicable": 0,
+          "coveragePercent": 3
+        },
+        "failureModes.internetOutage": {
+          "source": "failureModes.internetOutage.status",
+          "known": 1,
+          "partial": 0,
+          "unknown": 37,
+          "notApplicable": 0,
+          "coveragePercent": 3
+        },
+        "failureModes.cloudOutage": {
+          "source": "failureModes.cloudOutage.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 38,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.mechanicalBlock": {
+          "source": "failureModes.mechanicalBlock.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 38,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        }
+      },
+      "rows": [
+        {
+          "slug": "aqara-smart-pet-feeder-c1",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "cat-mate-c200",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "cat-mate-c300",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "cat-mate-c500",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "catit-pixi-smart-6-meal-feeder",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "petSize": "unknown",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "catit-pixi-vision-smart-feeder",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "unknown",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "honeyguardian-a305d",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "honeyguardian-a68",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "known",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "honeyguardian-smart-pet-feeder-s305d",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "imipaw-3l-automatic-cat-feeder",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "known",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "neakasa-riko",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "petSize": "unknown",
+            "foodType": "known",
+            "access": "known",
+            "app": "known",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "known",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "oneisall-2-in-1-feeder-water",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "known",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "oneisall-5l-automatic-cat-feeder",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "pawbby-smart-pet-feeder",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "pawsync-smart-pet-feeder",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petkit-fresh-element-infinity",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petkit-fresh-element-solo",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "known",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petkit-yumshare-dual-hopper",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "known",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petkit-yumshare-solo-2",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "known",
+            "access": "known",
+            "app": "known",
+            "camera": "known",
+            "backupPower": "known",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "partial",
+            "failureModes.wifiOutage": "known",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petlibro-air-automatic-feeder",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petlibro-air-wifi-feeder",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "known",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "known",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "known",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petlibro-granary-2-vision",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "known",
+            "access": "known",
+            "app": "known",
+            "camera": "known",
+            "backupPower": "known",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petlibro-granary-camera-feeder",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petlibro-granary-dual-feeder",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petlibro-granary-wifi-feeder",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petlibro-one-rfid-smart-feeder",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "unknown",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "partial",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petlibro-polar-wet-food-feeder",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "known",
+            "access": "known",
+            "app": "known",
+            "camera": "known",
+            "backupPower": "known",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "partial",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petlibro-space-smart-feeder",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "known",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petsafe-freshfeed-refrigerated-feeder",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petsafe-healthy-pet-simply-feed",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petsafe-smart-feed-2",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "surefeed-microchip-pet-feeder-connect",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "known",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "surefeed-microchip-pet-feeder",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "known",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "wopet-cube-air-ca10",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "wopet-heritage-view-camera-feeder",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "wopet-patrol-f07-pro",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "wopet-pioneer-f01-plus",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "xiaomi-smart-pet-food-feeder-2",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "petSize": "known",
+            "foodType": "unknown",
+            "access": "unknown",
+            "app": "unknown",
+            "camera": "unknown",
+            "backupPower": "unknown",
+            "offlineSchedule": "unknown",
+            "multiPet": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        }
+      ]
+    },
+    "fountain": {
+      "products": 24,
+      "criticalFields": [
+        "animal",
+        "capacity",
+        "material",
+        "filter",
+        "power"
+      ],
+      "readiness": "NOT_READY",
+      "fields": {
+        "animal": {
+          "source": "Advisor common.animals (explicit product fields only)",
+          "known": 24,
+          "partial": 0,
+          "unknown": 0,
+          "notApplicable": 0,
+          "coveragePercent": 100
+        },
+        "capacity": {
+          "source": "comparisonData.fountain.capacityLiters",
+          "known": 2,
+          "partial": 0,
+          "unknown": 22,
+          "notApplicable": 0,
+          "coveragePercent": 8
+        },
+        "material": {
+          "source": "comparisonData.fountain.material",
+          "known": 2,
+          "partial": 0,
+          "unknown": 22,
+          "notApplicable": 0,
+          "coveragePercent": 8
+        },
+        "filter": {
+          "source": "research/fountain-cost-35.0b.json: data.consumablePolicy.filterPresent",
+          "known": 24,
+          "partial": 0,
+          "unknown": 0,
+          "notApplicable": 0,
+          "coveragePercent": 100
+        },
+        "filterRequired": {
+          "source": "35.0B: primary filter required (no main filter = notApplicable)",
+          "known": 6,
+          "partial": 0,
+          "unknown": 17,
+          "notApplicable": 1,
+          "coveragePercent": 25
+        },
+        "filterCost": {
+          "source": "35.0B: existing primary-filter cost calculation; 30-day price validity",
+          "known": 15,
+          "partial": 0,
+          "unknown": 8,
+          "notApplicable": 1,
+          "coveragePercent": 63
+        },
+        "power": {
+          "source": "research/fountain-cost-35.0b.json: data.comparisonData.fountain.powerType",
+          "known": 6,
+          "partial": 0,
+          "unknown": 18,
+          "notApplicable": 0,
+          "coveragePercent": 25
+        },
+        "battery": {
+          "source": "comparisonData.fountain.battery",
+          "known": 1,
+          "partial": 0,
+          "unknown": 23,
+          "notApplicable": 0,
+          "coveragePercent": 4
+        },
+        "batteryRuntime": {
+          "source": "research/fountain-cost-35.0b.json: data.comparisonData.fountain.batteryRuntime",
+          "known": 0,
+          "partial": 0,
+          "unknown": 24,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "offline": {
+          "source": "failureModes.powerOutage.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 24,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "dishwasher": {
+          "source": "research/fountain-cost-35.0b.json: data.comparisonData.fountain.dishwasherSafeParts OR comparisonData.fountain.dishwasherSafe (boolean)",
+          "known": 1,
+          "partial": 0,
+          "unknown": 23,
+          "notApplicable": 0,
+          "coveragePercent": 4
+        },
+        "failureModes.powerOutage": {
+          "source": "failureModes.powerOutage.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 24,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.wifiOutage": {
+          "source": "failureModes.wifiOutage.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 24,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.internetOutage": {
+          "source": "failureModes.internetOutage.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 24,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.cloudOutage": {
+          "source": "failureModes.cloudOutage.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 24,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.mechanicalBlock": {
+          "source": "failureModes.mechanicalBlock.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 24,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        }
+      },
+      "rows": [
+        {
+          "slug": "cat-mate-335-pet-fountain",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "unknown",
+            "filterCost": "known",
+            "power": "unknown",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "cat-mate-shell-fountain",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "unknown",
+            "filterCost": "known",
+            "power": "unknown",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "catit-pixi-smart-trinkbrunnen",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "unknown",
+            "filterCost": "known",
+            "power": "unknown",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "feelneedy-fn-w18-8l-katzenbrunnen",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "unknown",
+            "filterCost": "unknown",
+            "power": "known",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "oneisall-2-2l-cordless-fountain",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "unknown",
+            "filterCost": "unknown",
+            "power": "unknown",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "oneisall-3-2l-cordless-fountain",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "unknown",
+            "filterCost": "unknown",
+            "power": "unknown",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "oneisall-3-5l-cordless-fountain",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "unknown",
+            "filterCost": "unknown",
+            "power": "unknown",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "oneisall-7l-dog-water-fountain",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "unknown",
+            "filterCost": "unknown",
+            "power": "unknown",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petkit-eversweet-3-pro-uvc",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "known",
+            "filterCost": "known",
+            "power": "known",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petkit-eversweet-5-mini",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "unknown",
+            "filterCost": "unknown",
+            "power": "unknown",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petkit-eversweet-max-2-uvc",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "known",
+            "filterCost": "known",
+            "power": "known",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petkit-eversweet-max-cordless",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "known",
+            "filterCost": "known",
+            "power": "known",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petkit-eversweet-solo-2-fountain",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "known",
+            "filterCost": "known",
+            "power": "known",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petkit-eversweet-solo-se",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "known",
+            "filterCost": "known",
+            "power": "known",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petkit-eversweet-ultra",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "notApplicable",
+            "filterCost": "notApplicable",
+            "power": "unknown",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petlibro-capsule-dog-fountain",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "unknown",
+            "filterCost": "unknown",
+            "power": "unknown",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petlibro-dockstream-2-smart-cordless",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "capacity": "known",
+            "material": "known",
+            "filter": "known",
+            "filterRequired": "unknown",
+            "filterCost": "known",
+            "power": "unknown",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "known",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petlibro-dockstream-2-smart",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "capacity": "known",
+            "material": "known",
+            "filter": "known",
+            "filterRequired": "unknown",
+            "filterCost": "known",
+            "power": "unknown",
+            "battery": "known",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petlibro-dockstream-cordless",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "unknown",
+            "filterCost": "known",
+            "power": "unknown",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petlibro-dockstream-rfid-smart",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "unknown",
+            "filterCost": "known",
+            "power": "unknown",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petlibro-glacier-ultrafiltration",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "known",
+            "filterCost": "known",
+            "power": "unknown",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petlibro-stainless-steel-fountain",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "unknown",
+            "filterCost": "unknown",
+            "power": "unknown",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petsafe-streamside-trinkbrunnen",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "unknown",
+            "filterCost": "known",
+            "power": "unknown",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "xiaomi-smart-pet-fountain-2",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "capacity": "unknown",
+            "material": "unknown",
+            "filter": "known",
+            "filterRequired": "unknown",
+            "filterCost": "known",
+            "power": "unknown",
+            "battery": "unknown",
+            "batteryRuntime": "unknown",
+            "offline": "unknown",
+            "dishwasher": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        }
+      ]
+    },
+    "gps": {
+      "products": 12,
+      "criticalFields": [
+        "animal",
+        "minimumPetWeight",
+        "deviceWeight",
+        "subscription",
+        "battery",
+        "liveTracking",
+        "virtualFence"
+      ],
+      "readiness": "PARTIAL",
+      "fields": {
+        "animal": {
+          "source": "Advisor common.animals (explicit product fields only)",
+          "known": 12,
+          "partial": 0,
+          "unknown": 0,
+          "notApplicable": 0,
+          "coveragePercent": 100
+        },
+        "minimumPetWeight": {
+          "source": "gps.minimumPetWeightKg",
+          "known": 7,
+          "partial": 0,
+          "unknown": 5,
+          "notApplicable": 0,
+          "coveragePercent": 58
+        },
+        "deviceWeight": {
+          "source": "gps.deviceWeightGrams",
+          "known": 12,
+          "partial": 0,
+          "unknown": 0,
+          "notApplicable": 0,
+          "coveragePercent": 100
+        },
+        "subscription": {
+          "source": "gps.subscriptionRequired",
+          "known": 12,
+          "partial": 0,
+          "unknown": 0,
+          "notApplicable": 0,
+          "coveragePercent": 100
+        },
+        "battery": {
+          "source": "gps.batteryMaxDays",
+          "known": 12,
+          "partial": 0,
+          "unknown": 0,
+          "notApplicable": 0,
+          "coveragePercent": 100
+        },
+        "liveTracking": {
+          "source": "gps.liveTracking",
+          "known": 12,
+          "partial": 0,
+          "unknown": 0,
+          "notApplicable": 0,
+          "coveragePercent": 100
+        },
+        "virtualFence": {
+          "source": "gps.virtualFence",
+          "known": 12,
+          "partial": 0,
+          "unknown": 0,
+          "notApplicable": 0,
+          "coveragePercent": 100
+        },
+        "failureModes.powerOutage": {
+          "source": "failureModes.powerOutage.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 9,
+          "notApplicable": 3,
+          "coveragePercent": 0
+        },
+        "failureModes.wifiOutage": {
+          "source": "failureModes.wifiOutage.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 12,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.internetOutage": {
+          "source": "failureModes.internetOutage.status",
+          "known": 3,
+          "partial": 0,
+          "unknown": 9,
+          "notApplicable": 0,
+          "coveragePercent": 25
+        },
+        "failureModes.cloudOutage": {
+          "source": "failureModes.cloudOutage.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 12,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.mechanicalBlock": {
+          "source": "failureModes.mechanicalBlock.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 12,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        }
+      },
+      "rows": [
+        {
+          "slug": "enabot-rola-pettracker",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "known",
+            "deviceWeight": "known",
+            "subscription": "known",
+            "battery": "known",
+            "liveTracking": "known",
+            "virtualFence": "known",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "garmin-alpha-t-20",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "unknown",
+            "deviceWeight": "known",
+            "subscription": "known",
+            "battery": "known",
+            "liveTracking": "known",
+            "virtualFence": "known",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "garmin-alpha-tt-25",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "unknown",
+            "deviceWeight": "known",
+            "subscription": "known",
+            "battery": "known",
+            "liveTracking": "known",
+            "virtualFence": "known",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "invoxia-biotracker-2026",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "unknown",
+            "deviceWeight": "known",
+            "subscription": "known",
+            "battery": "known",
+            "liveTracking": "known",
+            "virtualFence": "known",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "paj-pet-finder-4g-mini",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "known",
+            "deviceWeight": "known",
+            "subscription": "known",
+            "battery": "known",
+            "liveTracking": "known",
+            "virtualFence": "known",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "pawfit-3",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "known",
+            "deviceWeight": "known",
+            "subscription": "known",
+            "battery": "known",
+            "liveTracking": "known",
+            "virtualFence": "known",
+            "failureModes.powerOutage": "notApplicable",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "known",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "prothelis-area-pets",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "unknown",
+            "deviceWeight": "known",
+            "subscription": "known",
+            "battery": "known",
+            "liveTracking": "known",
+            "virtualFence": "known",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "tractive-cat-6-mini",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "known",
+            "deviceWeight": "known",
+            "subscription": "known",
+            "battery": "known",
+            "liveTracking": "known",
+            "virtualFence": "known",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "tractive-dog-6-xl",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "known",
+            "deviceWeight": "known",
+            "subscription": "known",
+            "battery": "known",
+            "liveTracking": "known",
+            "virtualFence": "known",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "tractive-dog-6",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "known",
+            "deviceWeight": "known",
+            "subscription": "known",
+            "battery": "known",
+            "liveTracking": "known",
+            "virtualFence": "known",
+            "failureModes.powerOutage": "notApplicable",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "known",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "weenect-xs",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "known",
+            "deviceWeight": "known",
+            "subscription": "known",
+            "battery": "known",
+            "liveTracking": "known",
+            "virtualFence": "known",
+            "failureModes.powerOutage": "notApplicable",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "known",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "weenect-xt",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "unknown",
+            "deviceWeight": "known",
+            "subscription": "known",
+            "battery": "known",
+            "liveTracking": "known",
+            "virtualFence": "known",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        }
+      ]
+    },
+    "catFlap": {
+      "products": 10,
+      "criticalFields": [
+        "animal",
+        "microchip",
+        "individualAccess",
+        "installation"
+      ],
+      "readiness": "NOT_READY",
+      "fields": {
+        "animal": {
+          "source": "Advisor common.animals (explicit product fields only)",
+          "known": 10,
+          "partial": 0,
+          "unknown": 0,
+          "notApplicable": 0,
+          "coveragePercent": 100
+        },
+        "microchip": {
+          "source": "multiPet.identificationMethods OR comparisonFilters.access",
+          "known": 9,
+          "partial": 0,
+          "unknown": 1,
+          "notApplicable": 0,
+          "coveragePercent": 90
+        },
+        "individualAccess": {
+          "source": "multiPet.individualAccess",
+          "known": 3,
+          "partial": 3,
+          "unknown": 4,
+          "notApplicable": 0,
+          "coveragePercent": 30
+        },
+        "multiPet": {
+          "source": "multiPet.sharedUse",
+          "known": 6,
+          "partial": 0,
+          "unknown": 4,
+          "notApplicable": 0,
+          "coveragePercent": 60
+        },
+        "preyDetection": {
+          "source": "comparisonData.custom.preyDetection",
+          "known": 1,
+          "partial": 0,
+          "unknown": 9,
+          "notApplicable": 0,
+          "coveragePercent": 10
+        },
+        "installation": {
+          "source": "No typed installation compatibility field; descriptive custom/spec strings excluded",
+          "known": 0,
+          "partial": 0,
+          "unknown": 10,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.powerOutage": {
+          "source": "failureModes.powerOutage.status",
+          "known": 0,
+          "partial": 1,
+          "unknown": 9,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.wifiOutage": {
+          "source": "failureModes.wifiOutage.status",
+          "known": 1,
+          "partial": 0,
+          "unknown": 9,
+          "notApplicable": 0,
+          "coveragePercent": 10
+        },
+        "failureModes.internetOutage": {
+          "source": "failureModes.internetOutage.status",
+          "known": 1,
+          "partial": 0,
+          "unknown": 9,
+          "notApplicable": 0,
+          "coveragePercent": 10
+        },
+        "failureModes.cloudOutage": {
+          "source": "failureModes.cloudOutage.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 10,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.mechanicalBlock": {
+          "source": "failureModes.mechanicalBlock.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 10,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        }
+      },
+      "rows": [
+        {
+          "slug": "cat-mate-elite-355w",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "microchip": "known",
+            "individualAccess": "partial",
+            "multiPet": "known",
+            "preyDetection": "unknown",
+            "installation": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "flappie",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "microchip": "known",
+            "individualAccess": "known",
+            "multiPet": "known",
+            "preyDetection": "unknown",
+            "installation": "unknown",
+            "failureModes.powerOutage": "partial",
+            "failureModes.wifiOutage": "known",
+            "failureModes.internetOutage": "known",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "onlycat-mikrochip-katzenklappe",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "microchip": "known",
+            "individualAccess": "unknown",
+            "multiPet": "unknown",
+            "preyDetection": "unknown",
+            "installation": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petsafe-mikrochip-katzenklappe",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "microchip": "known",
+            "individualAccess": "partial",
+            "multiPet": "known",
+            "preyDetection": "unknown",
+            "installation": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petsafe-petporte-smart-flap",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "microchip": "known",
+            "individualAccess": "unknown",
+            "multiPet": "unknown",
+            "preyDetection": "unknown",
+            "installation": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petwalk-medium-tiertuer",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "microchip": "known",
+            "individualAccess": "unknown",
+            "multiPet": "unknown",
+            "preyDetection": "unknown",
+            "installation": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "sureflap-dualscan-mikrochip-katzenklappe",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "microchip": "known",
+            "individualAccess": "known",
+            "multiPet": "known",
+            "preyDetection": "unknown",
+            "installation": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "sureflap-mikrochip-katzenklappe-connect",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "microchip": "known",
+            "individualAccess": "known",
+            "multiPet": "known",
+            "preyDetection": "unknown",
+            "installation": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "sureflap-mikrochip-katzenklappe",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "microchip": "known",
+            "individualAccess": "partial",
+            "multiPet": "known",
+            "preyDetection": "unknown",
+            "installation": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "zeromouse-2-0",
+          "productStatus": "unknown",
+          "fields": {
+            "animal": "known",
+            "microchip": "unknown",
+            "individualAccess": "unknown",
+            "multiPet": "unknown",
+            "preyDetection": "known",
+            "installation": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        }
+      ]
+    },
+    "litterBox": {
+      "products": 11,
+      "criticalFields": [
+        "animal",
+        "minimumPetWeight",
+        "litterCompatibility",
+        "multiPet"
+      ],
+      "readiness": "PARTIAL",
+      "fields": {
+        "animal": {
+          "source": "Advisor common.animals (explicit product fields only)",
+          "known": 11,
+          "partial": 0,
+          "unknown": 0,
+          "notApplicable": 0,
+          "coveragePercent": 100
+        },
+        "minimumPetWeight": {
+          "source": "sensorLimits.automaticModeMinimumWeightKg",
+          "known": 1,
+          "partial": 0,
+          "unknown": 10,
+          "notApplicable": 0,
+          "coveragePercent": 9
+        },
+        "litterCompatibility": {
+          "source": "litterCompatibility.status (complete / partial / unknown)",
+          "known": 1,
+          "partial": 9,
+          "unknown": 1,
+          "notApplicable": 0,
+          "coveragePercent": 9
+        },
+        "multiPet": {
+          "source": "multiPet.sharedUse",
+          "known": 9,
+          "partial": 0,
+          "unknown": 2,
+          "notApplicable": 0,
+          "coveragePercent": 82
+        },
+        "identification": {
+          "source": "multiPet.identificationMethods",
+          "known": 9,
+          "partial": 0,
+          "unknown": 2,
+          "notApplicable": 0,
+          "coveragePercent": 82
+        },
+        "app": {
+          "source": "Advisor common.app (explicit product fields only)",
+          "known": 3,
+          "partial": 0,
+          "unknown": 8,
+          "notApplicable": 0,
+          "coveragePercent": 27
+        },
+        "failureModes.powerOutage": {
+          "source": "failureModes.powerOutage.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 11,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.wifiOutage": {
+          "source": "failureModes.wifiOutage.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 11,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.internetOutage": {
+          "source": "failureModes.internetOutage.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 11,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.cloudOutage": {
+          "source": "failureModes.cloudOutage.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 11,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.mechanicalBlock": {
+          "source": "failureModes.mechanicalBlock.status",
+          "known": 0,
+          "partial": 1,
+          "unknown": 10,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        }
+      },
+      "rows": [
+        {
+          "slug": "devoko-90l-automatisches-katzenklo",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "unknown",
+            "litterCompatibility": "unknown",
+            "multiPet": "unknown",
+            "identification": "unknown",
+            "app": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "litter-robot-4",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "known",
+            "litterCompatibility": "partial",
+            "multiPet": "known",
+            "identification": "known",
+            "app": "known",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "partial"
+          }
+        },
+        {
+          "slug": "litter-robot-5-pro",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "unknown",
+            "litterCompatibility": "partial",
+            "multiPet": "known",
+            "identification": "known",
+            "app": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "neakasa-m1-lite",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "unknown",
+            "litterCompatibility": "partial",
+            "multiPet": "known",
+            "identification": "known",
+            "app": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "neakasa-m1-plus",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "unknown",
+            "litterCompatibility": "partial",
+            "multiPet": "known",
+            "identification": "known",
+            "app": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petkit-puramax-2",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "unknown",
+            "litterCompatibility": "partial",
+            "multiPet": "known",
+            "identification": "known",
+            "app": "known",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petkit-purobot-crystal-duo",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "unknown",
+            "litterCompatibility": "known",
+            "multiPet": "known",
+            "identification": "known",
+            "app": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petkit-purobot-max-3",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "unknown",
+            "litterCompatibility": "partial",
+            "multiPet": "known",
+            "identification": "known",
+            "app": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petkit-purobot-max-pro-2",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "unknown",
+            "litterCompatibility": "partial",
+            "multiPet": "known",
+            "identification": "known",
+            "app": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petlibro-luma-smart-litter-box",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "unknown",
+            "litterCompatibility": "partial",
+            "multiPet": "known",
+            "identification": "known",
+            "app": "known",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petsnowy-snow-plus",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "minimumPetWeight": "unknown",
+            "litterCompatibility": "partial",
+            "multiPet": "unknown",
+            "identification": "unknown",
+            "app": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        }
+      ]
+    },
+    "camera": {
+      "products": 8,
+      "criticalFields": [
+        "animal",
+        "localStorage",
+        "cloud",
+        "subscription",
+        "detection",
+        "nightVision"
+      ],
+      "readiness": "NOT_READY",
+      "fields": {
+        "animal": {
+          "source": "Advisor common.animals (explicit product fields only)",
+          "known": 8,
+          "partial": 0,
+          "unknown": 0,
+          "notApplicable": 0,
+          "coveragePercent": 100
+        },
+        "localStorage": {
+          "source": "No typed camera localStorage field; descriptive custom/spec strings excluded",
+          "known": 0,
+          "partial": 0,
+          "unknown": 8,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "cloud": {
+          "source": "No typed camera cloud field; descriptive custom/spec strings excluded",
+          "known": 0,
+          "partial": 0,
+          "unknown": 8,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "subscription": {
+          "source": "subscription.requiredForCoreFunction (status must be documented)",
+          "known": 7,
+          "partial": 0,
+          "unknown": 1,
+          "notApplicable": 0,
+          "coveragePercent": 88
+        },
+        "detection": {
+          "source": "No typed camera detection field; descriptive custom/spec strings excluded",
+          "known": 0,
+          "partial": 0,
+          "unknown": 8,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "nightVision": {
+          "source": "No typed camera nightVision field; descriptive custom/spec strings excluded",
+          "known": 0,
+          "partial": 0,
+          "unknown": 8,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.powerOutage": {
+          "source": "failureModes.powerOutage.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 8,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.wifiOutage": {
+          "source": "failureModes.wifiOutage.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 8,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.internetOutage": {
+          "source": "failureModes.internetOutage.status",
+          "known": 0,
+          "partial": 1,
+          "unknown": 7,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.cloudOutage": {
+          "source": "failureModes.cloudOutage.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 8,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.mechanicalBlock": {
+          "source": "failureModes.mechanicalBlock.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 8,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        }
+      },
+      "rows": [
+        {
+          "slug": "enabot-ebo-air-2",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "localStorage": "unknown",
+            "cloud": "unknown",
+            "subscription": "unknown",
+            "detection": "unknown",
+            "nightVision": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "enabot-rola-mini",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "localStorage": "unknown",
+            "cloud": "unknown",
+            "subscription": "known",
+            "detection": "unknown",
+            "nightVision": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "furbo-360-hundekamera",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "localStorage": "unknown",
+            "cloud": "unknown",
+            "subscription": "known",
+            "detection": "unknown",
+            "nightVision": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "furbo-360-katzenkamera",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "localStorage": "unknown",
+            "cloud": "unknown",
+            "subscription": "known",
+            "detection": "unknown",
+            "nightVision": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "furbo-mini-360",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "localStorage": "unknown",
+            "cloud": "unknown",
+            "subscription": "known",
+            "detection": "unknown",
+            "nightVision": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "petlibro-scout-smart-camera",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "localStorage": "unknown",
+            "cloud": "unknown",
+            "subscription": "known",
+            "detection": "unknown",
+            "nightVision": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "pettec-cam-360",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "localStorage": "unknown",
+            "cloud": "unknown",
+            "subscription": "known",
+            "detection": "unknown",
+            "nightVision": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "unknown",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        },
+        {
+          "slug": "reolink-e1-zoom",
+          "productStatus": "active",
+          "fields": {
+            "animal": "known",
+            "localStorage": "unknown",
+            "cloud": "unknown",
+            "subscription": "known",
+            "detection": "unknown",
+            "nightVision": "unknown",
+            "failureModes.powerOutage": "unknown",
+            "failureModes.wifiOutage": "unknown",
+            "failureModes.internetOutage": "partial",
+            "failureModes.cloudOutage": "unknown",
+            "failureModes.mechanicalBlock": "unknown"
+          }
+        }
+      ]
+    },
+    "other": {
+      "products": 0,
+      "criticalFields": [
+        "animal"
+      ],
+      "readiness": "NOT_READY",
+      "fields": {
+        "animal": {
+          "source": "Advisor common.animals (explicit product fields only)",
+          "known": 0,
+          "partial": 0,
+          "unknown": 0,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.powerOutage": {
+          "source": "failureModes.powerOutage.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 0,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.wifiOutage": {
+          "source": "failureModes.wifiOutage.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 0,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.internetOutage": {
+          "source": "failureModes.internetOutage.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 0,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.cloudOutage": {
+          "source": "failureModes.cloudOutage.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 0,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        },
+        "failureModes.mechanicalBlock": {
+          "source": "failureModes.mechanicalBlock.status",
+          "known": 0,
+          "partial": 0,
+          "unknown": 0,
+          "notApplicable": 0,
+          "coveragePercent": 0
+        }
+      },
+      "rows": []
+    }
+  }
+}
