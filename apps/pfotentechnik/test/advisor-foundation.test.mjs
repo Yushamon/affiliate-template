@@ -71,7 +71,7 @@ test('legacy alias uses existing HTTP 301 redirect infrastructure, no duplicate 
 test('six problem entries have existing non-redirect canonical owners',()=>{
  assert.equal(advisorEntries.length,6);assert.equal(new Set(advisorEntries.map(x=>x.world)).size,6);
  for(const e of advisorEntries){
-  const route=e.href.slice(1,-1);
+  const route=e.href.split('?')[0].slice(1,-1);
   assert.ok(['src/pages/'+route+'.astro','src/content/pages/'+route+'.md'].some(p=>fs.existsSync(new URL('../'+p,import.meta.url))),e.href);
   assert.equal(read('public/_redirects').split('\n').some(l=>l.startsWith(e.href+' ')),false);
  }

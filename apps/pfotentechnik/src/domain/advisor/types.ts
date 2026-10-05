@@ -55,9 +55,13 @@ export type AdvisorProduct = {
   useCase?: string;
   priceCategory?: "budget" | "midrange" | "premium";
   category: string;
+  recommendationStatus?: string;
+  image?: { src: string; alt: string };
+  decisionFacts?: Record<string, AdvisorFact<string | number | boolean | string[]>>;
+  decisionCautions?: string[];
   common: AdvisorCommonFacts;
   specific: {
-    gps?: Pick<NonNullable<ProductContentData["gps"]>, "minimumPetWeightKg" | "deviceWeightGrams" | "subscriptionRequired" | "batteryMaxDays" | "liveTracking" | "virtualFence">;
+    gps?: Pick<NonNullable<ProductContentData["gps"]>, "minimumPetWeightKg" | "deviceWeightGrams" | "subscriptionRequired" | "batteryMaxDays" | "liveTracking" | "virtualFence" | "activityTracking">;
     feeder?: ProductContentData["dispensingPrecision"];
     litterBox?: { compatibility: ProductContentData["litterCompatibility"]; limits: ProductContentData["sensorLimits"] };
   };
@@ -81,4 +85,41 @@ export type AdvisorGuide = {
   href: string;
   description: string;
   when: (answers: AdvisorAnswers) => boolean;
+};
+
+export type AdvisorCategory = "gps" | "fountain";
+export type DecisionAnswers = {
+  category: AdvisorCategory;
+  pet: AdvisorPet | "multiple";
+  weight?: number;
+  subscription?: "yes" | "no" | "any";
+  material?: "steel" | "plastic" | "any";
+  cordless?: "yes" | "no" | "any";
+  priorities: string[];
+};
+export type AdvisorRequirement = {
+  field: string;
+  desired: string | number | boolean;
+  importance: "hard" | "preference";
+  operator: "includes" | "equals" | "minimum" | "higher" | "lower";
+  label: string;
+  step: number;
+};
+export type AdvisorSession = {
+  intent: string;
+  category: AdvisorCategory;
+  answers: DecisionAnswers;
+  requirements: AdvisorRequirement[];
+  preferences: AdvisorRequirement[];
+};
+export type AdvisorDecisionMatch = {
+  product: AdvisorProduct;
+  status: "pass" | "possible" | "unsupported";
+  reasons: string[];
+  cautions: string[];
+  exclusions: string[];
+  preferenceMatches: string[];
+  unknowns: string[];
+  unresolvedRequirements: AdvisorRequirement[];
+  failedRequirements: AdvisorRequirement[];
 };

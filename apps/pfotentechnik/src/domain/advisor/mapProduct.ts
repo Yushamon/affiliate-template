@@ -22,7 +22,7 @@ export const mapProductToAdvisor = (entry: CollectionEntry<"products">): Advisor
     bestFor: data.decision.bestFor, attention: data.decision.attention,
     strengths: data.strengths, weaknesses: data.weaknesses, features: data.features,
     useCase: data.useCase, priceCategory: data.priceCategory ?? filters?.priceTier,
-    category,
+    category, recommendationStatus: data.recommendationStatus,
     common: {
       animals: listFact(gps?.animal?.length ? gps.animal : filters?.animal),
       petSizes: listFact(filters?.petSize),
@@ -42,7 +42,7 @@ export const mapProductToAdvisor = (entry: CollectionEntry<"products">): Advisor
       ...(gps ? { gps: {
         minimumPetWeightKg: gps.minimumPetWeightKg, deviceWeightGrams: gps.deviceWeightGrams,
         subscriptionRequired: gps.subscriptionRequired, batteryMaxDays: gps.batteryMaxDays,
-        liveTracking: gps.liveTracking, virtualFence: gps.virtualFence
+        liveTracking: gps.liveTracking, virtualFence: gps.virtualFence, activityTracking: gps.activityTracking
       } } : {}),
       ...(isFeeder && data.dispensingPrecision ? { feeder: data.dispensingPrecision } : {}),
       ...(category === "automatische-katzentoiletten" ? { litterBox: { compatibility: data.litterCompatibility, limits: data.sensorLimits } } : {})

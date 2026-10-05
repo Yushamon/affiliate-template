@@ -1,9 +1,11 @@
 ---
+import DecisionJourney from "./DecisionJourney.astro";
 import type { AdvisorProduct } from "../../domain/advisor";
 import { advisorGuides } from "../../domain/advisor";
 
-const { products } = Astro.props as {
+const { products, decision = false } = Astro.props as {
   products: AdvisorProduct[];
+  decision?: boolean;
 };
 
 const guideData = advisorGuides.map(
@@ -15,7 +17,7 @@ const guideData = advisorGuides.map(
 );
 ---
 
-<section
+{decision ? <DecisionJourney products={products} /> : <section
   class="advisor"
   data-advisor
   data-products={JSON.stringify(products)}
@@ -396,7 +398,7 @@ const guideData = advisorGuides.map(
       <p class="share-status" data-share-status aria-live="polite"></p>
     </section>
   </div>
-</section>
+</section>}
 
 <script>
   import {

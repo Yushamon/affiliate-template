@@ -1,6 +1,22 @@
 ---
 import ProjectLayout from "../layouts/ProjectLayout.astro";
+import { getImage } from "astro:assets";
+import { getCollection } from "astro:content";
+import yaml from "js-yaml";
+import PetAdvisor from "../components/advisor/PetAdvisor.astro";
+import { mapDecisionProduct, isDecisionAdvisorProduct } from "../domain/advisor/decisionProduct";
+import foundation from "../../research/fountain-cost-35.0b.json";
 import { advisorEntries } from "../domain/advisor/entries";
+const sources = import.meta.glob("../content/products/*.md", { query: "?raw", import: "default", eager: true });
+const products = await Promise.all((await getCollection("products")).filter(isDecisionAdvisorProduct).map(async entry => {
+  const slug = entry.id.replace(/\.(md|mdx)$/i, "");
+  const text = sources[`../content/products/${slug}.md`] as string;
+  const raw = yaml.load(text.match(/^---\s*\r?\n([\s\S]*?)\r?\n---/)![1], { schema: yaml.JSON_SCHEMA });
+  const product = mapDecisionProduct(entry, raw, foundation.products.find(p => p.slug === slug));
+  const image = entry.data.images?.thumbnail ?? entry.data.images?.hero;
+  if (image) product.image = { src: (await getImage({ src: image.src, width: 160, format: "webp" })).src, alt: image.alt };
+  return product;
+}));
 ---
 <ProjectLayout
   title="Kaufberatung für smarte Haustiertechnik"
@@ -9,7 +25,7 @@ import { advisorEntries } from "../domain/advisor/entries";
   seoDescription="Starte mit deinem Anliegen: Geführte Futterautomaten-Auswahl und passende Vergleiche für sechs Produktwelten."
   canonical="/kaufberatung/" schemaType="webpage"
 >
-  <div class="pt-advice-hub">
+  <div class="pt-advice-hub" data-advice-hub>
     <header class="pt-advice-hero">
       <p class="eyebrow">Kaufberatung</p>
       <h1>Was passt wirklich zu deinem Tier und Alltag?</h1>
@@ -37,6 +53,7 @@ import { advisorEntries } from "../domain/advisor/entries";
       <a href="/so-bewerten-wir/">Unsere Bewertungsmethodik</a>
     </aside>
   </div>
+  <PetAdvisor products={products} decision />
 </ProjectLayout>
 <style>
   .pt-advice-hub { width: min(100%, 1180px); margin: 24px auto 72px; color: var(--pt-theme-text); }

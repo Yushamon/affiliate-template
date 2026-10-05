@@ -1,4 +1,4 @@
-import type { AdvisorAnswers, AdvisorCapability, AdvisorFact, AdvisorMatch, AdvisorPriority, AdvisorProduct } from "./types";
+import type { AdvisorAnswers, AdvisorCapability, AdvisorFact, AdvisorMatch, AdvisorPriority, AdvisorProduct, AdvisorSession, AdvisorDecisionMatch, AdvisorRequirement } from "./types";
 
 export const matchesFact = <T>(fact: AdvisorFact<T[]>, value: T): AdvisorCapability =>
   fact.status === "known" ? (fact.value.includes(value) ? "supported" : "unavailable") : fact.status;
@@ -23,8 +23,8 @@ const labels: Record<AdvisorPriority, string> = {
   backup: "Notstrom", microchip: "Mikrochip-Zugang", simple: "Betrieb ohne App und Kamera"
 };
 
-// Only the feeder module scores products in Phase A. No cross-category ranking.
-export const recommendAdvisorProducts = (products: AdvisorProduct[], answers: AdvisorAnswers): AdvisorMatch[] =>
+// Legacy feeder behavior remains compatible; B1 sessions use the same entry point.
+const recommendFeederProducts = (products: AdvisorProduct[], answers: AdvisorAnswers): AdvisorMatch[] =>
   products.map((product): AdvisorMatch => {
     let score = 28;
     let uncertain = false;
@@ -73,3 +73,89 @@ export const recommendAdvisorProducts = (products: AdvisorProduct[], answers: Ad
     if (answers.decisionStyle === "safe-choice" && left.cautions.length !== right.cautions.length) return left.cautions.length - right.cautions.length;
     return right.score - left.score;
   });
+
+
+const median = (values: number[]) => {
+  const sorted = [...values].sort((a, b) => a - b);
+  return sorted.length ? (sorted[Math.floor((sorted.length - 1) / 2)] + sorted[Math.floor(sorted.length / 2)]) / 2 : undefined;
+};
+// Numeric preferences compare documented values with the median of eligible models.
+// Missing values never count as matches. These relative thresholds are not safety limits.
+const requirementState = (product: AdvisorProduct, r: AdvisorRequirement, pool: AdvisorProduct[]): 'pass' | 'unknown' | 'unsupported' => {
+  const fact = product.decisionFacts?.[r.field];
+  if (fact?.status !== 'known') return 'unknown';
+  const value = fact.value;
+  let passes = false;
+  if (r.operator === 'includes') passes = Array.isArray(value) && value.includes(String(r.desired));
+  else if (r.operator === 'minimum') passes = typeof value === 'number' && typeof r.desired === 'number' && r.desired >= value;
+  else if (r.operator === 'higher' || r.operator === 'lower') {
+    const values = pool.flatMap(p => {
+      const f = p.decisionFacts?.[r.field];
+      return f?.status === 'known' && typeof f.value === 'number' ? [f.value] : [];
+    });
+    const threshold = median(values);
+    if (threshold == null || typeof value !== 'number') return 'unknown';
+    passes = r.operator === 'higher' ? value >= threshold : value <= threshold;
+  } else passes = value === r.desired;
+  return passes ? 'pass' : 'unsupported';
+};
+const recommendDecisionProducts = (products: AdvisorProduct[], session: AdvisorSession): AdvisorDecisionMatch[] => {
+  const category = session.category === 'gps' ? 'gps-tracker' : 'trinkbrunnen';
+  const selected = products.filter(p => p.category === category);
+  const eligible = selected.filter(p => session.requirements.every(r => requirementState(p, r, selected) !== 'unsupported'));
+  return selected.map((product): AdvisorDecisionMatch => {
+    const match: AdvisorDecisionMatch = { product, status: 'pass', reasons: [], cautions: [...(product.decisionCautions ?? [])], exclusions: [], preferenceMatches: [], unknowns: [], unresolvedRequirements: [], failedRequirements: [] };
+    for (const r of [...session.requirements, ...session.preferences]) {
+      const state = requirementState(product, r, eligible);
+      if (state === 'pass') {
+        match.reasons.push(r.label + (r.operator === 'higher' || r.operator === 'lower' ? ': im Vergleich zur Mitte der dokumentierten passenden Modelle' : ''));
+        if (r.importance === 'preference') match.preferenceMatches.push(r.field);
+      } else if (state === 'unknown') {
+        match.unknowns.push(`${r.label}: nicht eindeutig dokumentiert${r.importance === 'hard' ? ' — vor dem Kauf klären' : ' (Präferenz)'}.`);
+        if (r.importance === 'hard') match.unresolvedRequirements.push(r);
+      } else if (r.importance === 'hard') {
+        match.exclusions.push(`${r.label}: dokumentierte Eigenschaft widerspricht deiner Auswahl.`);
+        match.failedRequirements.push(r);
+      } else match.cautions.push(`${r.label}: erfüllt diese Präferenz nicht.`);
+    }
+    const facts = product.decisionFacts;
+    for (const [key, unit] of [['deviceWeight', 'g Gerätegewicht'], ['capacity', 'Liter Wasserreserve']] as const) {
+      const f = facts?.[key];
+      if (f?.status === 'known') match.reasons.push(`${f.value} ${unit} dokumentiert`);
+    }
+    const material = facts?.material;
+    if (material?.status === 'known' && Array.isArray(material.value)) match.reasons.push(`Dokumentiertes Material: ${material.value.join('; ')}`);
+    const cordless = facts?.cordless;
+    if (cordless?.status === 'known' && cordless.value === true && !match.reasons.includes('Betrieb ohne Steckdose')) match.reasons.push('Akku-/kabelloser Betrieb dokumentiert');
+    const dishwasher = facts?.dishwasher;
+    if (dishwasher?.status === 'known' && dishwasher.value === true && !session.answers.priorities.includes('cleaning')) match.reasons.push('Spülmaschinengeeignete Teile dokumentiert');
+    match.preferenceMatches = [...new Set(match.preferenceMatches)];
+    match.reasons = [...new Set(match.reasons)];
+    match.status = match.failedRequirements.length ? 'unsupported' : match.unresolvedRequirements.length ? 'possible' : 'pass';
+    return match;
+  }).sort((a, b) => {
+    const order = { pass: 0, possible: 1, unsupported: 2 };
+    return order[a.status] - order[b.status]
+      || b.preferenceMatches.length - a.preferenceMatches.length
+      || Number(b.product.recommendationStatus === 'recommended') - Number(a.product.recommendationStatus === 'recommended')
+      || (b.product.score ?? 0) - (a.product.score ?? 0)
+      || a.product.slug.localeCompare(b.product.slug);
+  });
+};
+export function recommendAdvisorProducts(products: AdvisorProduct[], answers: AdvisorAnswers): AdvisorMatch[];
+export function recommendAdvisorProducts(products: AdvisorProduct[], session: AdvisorSession): AdvisorDecisionMatch[];
+export function recommendAdvisorProducts(products: AdvisorProduct[], input: AdvisorAnswers | AdvisorSession): AdvisorMatch[] | AdvisorDecisionMatch[] {
+  return 'requirements' in input ? recommendDecisionProducts(products, input) : recommendFeederProducts(products, input);
+}
+export const decisionResultState = (matches: AdvisorDecisionMatch[]) => {
+  const visible = matches.filter(m => m.status !== 'unsupported');
+  const hasPass = visible.some(m => m.status === 'pass');
+  const blocked = visible.length ? visible.flatMap(m => m.unresolvedRequirements) : matches.flatMap(m => m.failedRequirements);
+  return {
+    visible,
+    message: hasPass ? '' : visible.length
+      ? 'Kein Modell erfüllt alle Anforderungen anhand der dokumentierten Daten eindeutig.'
+      : 'Deine Kombination ist aktuell sehr eng.',
+    constraints: [...new Map(blocked.map(r => [r.field, r])).values()]
+  };
+};
