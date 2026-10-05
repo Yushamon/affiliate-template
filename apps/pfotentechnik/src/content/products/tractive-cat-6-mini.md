@@ -215,6 +215,10 @@ comparisonFilters:
   petSize: []
   foodType: []
 specs:
+  - label: Laden
+    value: Mit magnetischem Ladekabel; ungefähr zwei Stunden bis zur vollständigen Ladung laut Tractive
+  - label: Akkutechnik und Austausch
+    value: Integrierter, wiederaufladbarer Akku; Zellchemie und Austausch durch Nutzer in den geprüften modellspezifischen Herstellerangaben nicht eindeutig dokumentiert
   - label: Ortung
     value: GPS, GLONASS und Galileo
   - label: Übertragung
@@ -309,6 +313,10 @@ dataPortability:
     sourceType: support
     verifiedAt: "2026-08-31"
 faq:
+  - question: Wie spart die Energiesparzone Akku?
+    answer: >-
+      Im Bereich eines hinterlegten WLANs oder einer Tractive-Basisstation spart der Tracker Energie bei der
+      Positionsübertragung. LIVE Tracking ist dort nicht verfügbar und wird nach Verlassen der Zone wieder möglich.
   - question: Wie schwer ist der Tractive CAT 6 Mini?
     answer: >-
       Tractive nennt 32 g inklusive des integrierten Halsbands. Dieser Wert ist deshalb nicht direkt mit dem reinen
@@ -382,6 +390,16 @@ comparisonData:
       Passform und Sicherheitsverschluss regelmäßig kontrollieren, das Halsband nach starker Belastung prüfen und den
       Akku vor längerem Freigang ausreichend laden.
 evidenceSources:
+  - source: "Tractive Kundenservice – Akkukapazität und Laufzeit"
+    url: "https://help.tractive.com/hc/de/articles/205664001-Wie-lange-h%C3%A4lt-der-Akku-meines-Trackers"
+    accessedAt: "2026-10-03"
+    assertion: "Modellspezifische Kapazität von 450 mAh sowie maximale Laufzeit mit und ohne Energiesparzone; keine eindeutige Angabe zu Zellchemie oder Nutzeraustausch in dieser Quelle."
+    fields: ["specs", "faq"]
+  - source: "Tractive – Bedienungsanleitung"
+    url: "https://help.tractive.com/hc/article_attachments/34953855727378"
+    accessedAt: "2026-10-03"
+    assertion: "Ladeverfahren, Energiesparzone und höherer Verbrauch bei LIVE Tracking; keine eindeutige Angabe zu Zellchemie oder Nutzeraustausch."
+    fields: ["specs", "faq"]
   - source: "Tractive Kundenservice – Tracker-Auswahl und Abo"
     url: "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier"
     accessedAt: "2026-08-25"
@@ -400,13 +418,13 @@ decisionFacts:
     consequence: "Fernsteuerung und Statusmeldungen sind möglich; dafür werden Konto, Netz und App-Stabilität wichtiger."
   - label: "Akkukapazität"
     value: "450 mAh"
-    consequence: "Die tatsächliche Reichweite hängt von Verbrauch, Portionsgröße und Anzahl der Tiere ab."
+    consequence: "Die Kapazität allein bestimmt keine Laufzeit; Live-Ortung und Empfang beeinflussen den Verbrauch."
   - label: "Akkulaufzeit"
     value: "Bis zu 7 Tage mit Energiesparzone; bis zu 4 Tage ohne Energiesparzone"
-    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+    consequence: "Häufige Live-Ortung verkürzt die Laufzeit; vor längeren Ausflügen den Ladestand prüfen."
   - label: "Stromversorgung"
     value: "Integrierter Akku"
-    consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+    consequence: "Häufige Live-Ortung verkürzt die Laufzeit; vor längeren Ausflügen den Ladestand prüfen."
   - label: "Wasserschutz"
     value: "IP68"
     consequence: "Die Schutzklasse ist bei Regen, Reinigung und dauerhaftem Außeneinsatz relevant."

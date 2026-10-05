@@ -45,6 +45,8 @@ Bei Metalltüren kann die RFID-Erkennung beeinträchtigt werden. Herstellerhinwe
 
 ### OnlyCat in einer Tür
 
+Die [OnlyCat-Produktseite](/produkt/onlycat-mikrochip-katzenklappe/) bündelt Kamera- und Beuteerkennung, WLAN-Voraussetzungen sowie die hinterlegten Preis- und Kaufoptionen. Hier geht es um Ausschnitt und Montage.
+
 OnlyCat empfiehlt die Tunnelunterkante ungefähr auf Bauchhöhe der Katze. Schneide rund 3 mm außerhalb der markierten Tunnelkontur und wähle die kürzeste passende Schraube. Der Tunnel enthält RFID-Antennen und darf nicht gebohrt oder gekürzt werden. Bei Metall oder Aluminium muss die RFID-Eignung vor dem endgültigen Ausschnitt mit dem Hersteller geklärt werden. Zusätzlich ist ein sicherer Weg für das USB-C-Stromkabel erforderlich.
 
 ---

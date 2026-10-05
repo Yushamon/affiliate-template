@@ -58,7 +58,7 @@ price:
   current: 275
   currency: "GBP"
   status: "unknown"
-  checkedAt: "2026-09-28T11:32:11.354Z"
+  checkedAt: "2026-10-03T06:50:39.445Z"
   source:
     id: "onlycat.com"
     label: "onlycat.com"
@@ -73,12 +73,12 @@ editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentati
 rating: 3.6
 
 priceState: "available"
-priceUpdated: "2026-09-28T11:32:11.354Z"
+priceUpdated: "2026-10-03T06:50:39.445Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-28T11:32:11.354Z"
+availabilityUpdated: "2026-10-03T06:50:39.445Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
@@ -140,7 +140,7 @@ comparisons: ["beste-mikrochip-katzenklappen", "katzenklappen-mit-app-und-beutee
 comparisonFilters: { animal: ["cat"], petSize: ["small"], foodType: [], app: true, camera: true, access: "microchip", priceTier: "premium" }
 specs:
   - { label: "Zugang", value: "Mikrochip-Scan beim Ein- und Ausgang" }
-  - { label: "Beuteerkennung", value: "Integrierte Nachtsicht-HD-Kamera; Herstellerfunktion" }
+  - { label: "Beuteerkennung", value: "KI-Auswertung der Kamerabilder; bei erkannter Beute bleibt der Eingang laut Hersteller gesperrt" }
   - { label: "Strom", value: "USB-C Power Delivery, 9 V/2 A; kurze Backup-Überbrückung" }
   - { label: "WLAN", value: "2,4 GHz; Einrichtung und App-Funktionen benötigen WLAN" }
   - { label: "App", value: "iOS, Android und Web-App laut Hersteller" }
@@ -150,6 +150,7 @@ specs:
   - { label: "Wandöffnung", value: "170 × 170 mm; Tunnel mit leichtem Gefälle nach außen" }
   - { label: "Inbetriebnahme", value: "Erst mechanisch montieren, dann App, Katzenprofile und Door Policies einrichten" }
 faq:
+  - { question: "Was unterscheidet Kamera und Beuteerkennung?", answer: "Die integrierte Kamera liefert die Bilder. Die KI wertet sie beim Eintritt auf mitgebrachte Beute aus und lässt den Eingang bei erkannter Beute gesperrt; ein Videoereignis kann den Versuch zeigen. Das beschreibt die Herstellerfunktion, keine Garantie für jede Maus oder eine von PfotenTechnik gemessene Trefferquote." }
   - { question: "Funktioniert OnlyCat ohne WLAN?", answer: "Laut Hersteller bleibt der lokale Betrieb bestehen. Einrichtung, Benachrichtigungen, Fernsteuerung und die Abo-Prüfung benötigen WLAN." }
   - { question: "Ist ein Abo zwingend?", answer: "Nicht bei der Einmalzahlungs-Version. Die günstigere Abo-Version benötigt dagegen ein laufendes Abonnement." }
 features: ["Beuteerkennung", "App", "Kamera", "Dual-Mikrochip-Scan"]
@@ -157,6 +158,7 @@ useCase: "Komplettsystem gegen Beuteeintrag"
 comparisonData: { version: 1, custom: { zugang: "Mikrochip beidseitig", richtungsrechte: "Individuell je Katze und Zeit", app: "Ja", beuteerkennung: "Integrierte Kamera", strom: "USB-C-Netzstrom", ausfall: "WLAN-lokal weiter; Stromausfall entsperrt laut Hersteller", einbau: "Ausschnitt und Stromführung prüfen", produktrolle: "Vollständige Katzenklappe" } }
 decisionJourney: { cluster: "katzenklappen", stage: "decision", intent: "produkt-onlycat", primaryQuestion: "Rechtfertigt Beuteerkennung ein vernetztes Komplettsystem mit Netzstrom?", next: ["/vergleiche/katzenklappen-mit-app-und-beuteerkennung/", "/katzenklappen/"], fallback: ["/vergleiche/beste-mikrochip-katzenklappen/"] }
 evidenceSources:
+  - { source: "OnlyCat – Funktionsbeschreibung zur Beuteerkennung", url: "https://www.onlycat.com/onlycat-dragons-den-announcement/", accessedAt: "2026-10-03", assertion: "KI-Kamera prüft den Eintritt; erkannte Beute hält die Klappe gesperrt, Videoalarm möglich.", fields: ["specs", "faq"] }
   - { source: "OnlyCat Deutschland – Shop", url: "https://www.onlycat.com/de/store/onlycat-mikrochip-katzenklappe-mit-beutefallerkennung/", accessedAt: "2026-08-04", assertion: "Lieferumfang, Strom, WLAN-Verhalten und Preismodelle.", fields: ["availability", "decision", "specs"] }
   - { source: "OnlyCat Deutschland – Spezifikationen", url: "https://www.onlycat.com/de/specs-de/", accessedAt: "2026-08-04", assertion: "Sensorik, Konnektivität, App und Ausfallverhalten.", fields: ["features", "specs", "comparisonData"] }
 score: 71

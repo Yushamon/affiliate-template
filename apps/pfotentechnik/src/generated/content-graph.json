@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-22T03:40:32.642Z",
+  "generatedAt": "2026-10-03T06:49:34.674Z",
   "taxonomyVersion": 3,
   "nodes": [
     {
@@ -2241,7 +2241,7 @@
       "slug": "automatische-katzentoiletten",
       "route": "/automatische-katzentoiletten/",
       "title": "Automatische Katzentoiletten sicher auswählen",
-      "description": "Cornerstone fuer automatische Katzentoiletten: Funktion, Bauform, Innenraum, Einstieg, Sicherheit, Streu, Wartung, Daten und laufende Kosten vor der Modellwahl klaeren.",
+      "description": "Kaufberatung fuer automatische Katzentoiletten: Funktion, Bauform, Innenraum, Einstieg, Sicherheit, Streu, Wartung, Daten und laufende Kosten vor der Modellwahl klaeren.",
       "type": "page",
       "cluster": "automatische katzentoiletten",
       "topics": [
@@ -3064,7 +3064,7 @@
       "slug": "haustierkameras",
       "route": "/haustierkameras/",
       "title": "Haustierkameras auswählen: Blickbereich, Datenschutz und Kosten",
-      "description": "Cornerstone für Haustierkameras: festen Blickpunkt, Interaktion oder mobilen Kameraroboter nach Wohnsituation, Datenschutz, Speicherung, Abo und Gesamtkosten auswählen.",
+      "description": "Kaufberatung für Haustierkameras: festen Blickpunkt, Interaktion oder mobilen Kameraroboter nach Wohnsituation, Datenschutz, Speicherung, Abo und Gesamtkosten auswählen.",
       "type": "page",
       "cluster": "haustierkameras",
       "topics": [
@@ -3789,7 +3789,7 @@
       "slug": "katzenklappen",
       "route": "/katzenklappen/",
       "title": "Katzenklappen auswählen: Zugang, Einbau und smarte Funktionen",
-      "description": "Cornerstone für Katzenklappen: Nutzeraufgabe, Mikrochip-Zugang, Mehrkatzen-Rechte, App, Beuteerkennung, Passform und Einbau in der richtigen Reihenfolge klären.",
+      "description": "Kaufberatung für Katzenklappen: Nutzeraufgabe, Mikrochip-Zugang, Mehrkatzen-Rechte, App, Beuteerkennung, Passform und Einbau in der richtigen Reihenfolge klären.",
       "type": "page",
       "cluster": "katzenklappen",
       "topics": [
@@ -3799,11 +3799,14 @@
         "einbau",
         "mehrkatzenhaushalt",
         "wissen",
+        "ernaehrung",
         "futterautomaten",
         "haustierkameras",
         "haustiertechnik",
+        "hunde",
         "katzen",
         "katzentoiletten",
+        "nassfutter",
         "trinkbrunnen"
       ],
       "tags": [
@@ -12776,6 +12779,14 @@
     },
     {
       "source": "comparison:beste-futterautomaten-fuer-berufstaetige",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-berufstaetige",
       "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
       "type": "semantic",
       "score": 100,
@@ -13808,14 +13819,6 @@
     },
     {
       "source": "comparison:beste-futterautomaten-fuer-berufstaetige",
-      "target": "page:katzenklappen",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "comparison:beste-futterautomaten-fuer-berufstaetige",
       "target": "page:warum-brauchen-gps-tracker-ein-abo",
       "type": "semantic",
       "score": 88,
@@ -14521,6 +14524,14 @@
     {
       "source": "comparison:beste-futterautomaten-fuer-hunde",
       "target": "page:katze-frisst-nicht",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-hunde",
+      "target": "page:katzenklappen",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -15784,14 +15795,6 @@
     },
     {
       "source": "comparison:beste-futterautomaten-fuer-hunde",
-      "target": "page:katzenklappen",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "comparison:beste-futterautomaten-fuer-hunde",
       "target": "page:warum-brauchen-gps-tracker-ein-abo",
       "type": "semantic",
       "score": 66,
@@ -20296,6 +20299,14 @@
     },
     {
       "source": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
       "target": "page:katzentrinkbrunnen-material-edelstahl-keramik-kunststoff",
       "type": "semantic",
       "score": 100,
@@ -21225,14 +21236,6 @@
     {
       "source": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
       "target": "page:katze-trinkt-viel",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
-      "target": "page:katzenklappen",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -22480,6 +22483,14 @@
     },
     {
       "source": "comparison:beste-futterautomaten-fuer-nassfutter",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "comparison:beste-futterautomaten-fuer-nassfutter",
       "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
       "type": "semantic",
       "score": 100,
@@ -23521,14 +23532,6 @@
     {
       "source": "comparison:beste-futterautomaten-fuer-nassfutter",
       "target": "page:gps-tracker-richtig-befestigen",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "comparison:beste-futterautomaten-fuer-nassfutter",
-      "target": "page:katzenklappen",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -85360,6 +85363,14 @@
     },
     {
       "source": "manufacturer:invoxia",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:invoxia",
       "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
       "type": "semantic",
       "score": 88,
@@ -85808,14 +85819,6 @@
     },
     {
       "source": "manufacturer:invoxia",
-      "target": "page:katzenklappen",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:invoxia",
       "target": "page:warum-brauchen-gps-tracker-ein-abo",
       "type": "semantic",
       "score": 66,
@@ -97273,6 +97276,14 @@
     {
       "source": "manufacturer:pawfit",
       "target": "page:katze-trinkt-viel",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:pawfit",
+      "target": "page:katzenklappen",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -97721,14 +97732,6 @@
     {
       "source": "manufacturer:pawfit",
       "target": "page:gps-tracker-richtig-befestigen",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:pawfit",
-      "target": "page:katzenklappen",
       "type": "semantic",
       "score": 66,
       "explicit": false,
@@ -110904,6 +110907,14 @@
     },
     {
       "source": "manufacturer:prothelis",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "manufacturer:prothelis",
       "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
       "type": "semantic",
       "score": 88,
@@ -111345,14 +111356,6 @@
     {
       "source": "manufacturer:prothelis",
       "target": "page:gps-tracker-richtig-befestigen",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "manufacturer:prothelis",
-      "target": "page:katzenklappen",
       "type": "semantic",
       "score": 66,
       "explicit": false,
@@ -150504,6 +150507,14 @@
     },
     {
       "source": "page:futtermenge-hund",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:futtermenge-hund",
       "target": "page:katzentrinkbrunnen-material-edelstahl-keramik-kunststoff",
       "type": "semantic",
       "score": 100,
@@ -151739,14 +151750,6 @@
       "target": "product:zeromouse-2-0",
       "type": "semantic",
       "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:futtermenge-hund",
-      "target": "page:katzenklappen",
-      "type": "semantic",
-      "score": 78,
       "explicit": false,
       "automatic": true
     },
@@ -164320,6 +164323,14 @@
     },
     {
       "source": "page:hund-entlaufen-gps-sinnvoll",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-entlaufen-gps-sinnvoll",
       "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
       "type": "semantic",
       "score": 100,
@@ -165377,14 +165388,6 @@
     {
       "source": "page:hund-entlaufen-gps-sinnvoll",
       "target": "page:futterautomat-richtig-reinigen",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-entlaufen-gps-sinnvoll",
-      "target": "page:katzenklappen",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -175920,6 +175923,14 @@
     },
     {
       "source": "page:hund-trinkt-viel",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:hund-trinkt-viel",
       "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
       "type": "semantic",
       "score": 100,
@@ -176953,14 +176964,6 @@
     {
       "source": "page:hund-trinkt-viel",
       "target": "page:gps-tracker-richtig-befestigen",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:hund-trinkt-viel",
-      "target": "page:katzenklappen",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -187392,6 +187395,14 @@
     },
     {
       "source": "page:katze-entlaufen-gps-sinnvoll",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katze-entlaufen-gps-sinnvoll",
       "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
       "type": "semantic",
       "score": 100,
@@ -188449,14 +188460,6 @@
     {
       "source": "page:katze-entlaufen-gps-sinnvoll",
       "target": "page:futterautomat-richtig-reinigen",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katze-entlaufen-gps-sinnvoll",
-      "target": "page:katzenklappen",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -192592,6 +192595,14 @@
     },
     {
       "source": "page:katzenklappe-einbauen",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappe-einbauen",
       "target": "page:smarte-futterautomaten",
       "type": "semantic",
       "score": 100,
@@ -193441,14 +193452,6 @@
     {
       "source": "page:katzenklappe-einbauen",
       "target": "page:katzenklappe-zugluft-und-waermedaemmung",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappe-einbauen",
-      "target": "page:katzenklappen",
       "type": "semantic",
       "score": 66,
       "explicit": false,
@@ -197992,6 +197995,22 @@
     },
     {
       "source": "page:katzenklappen",
+      "target": "comparison:beste-futterautomaten-fuer-berufstaetige",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "comparison:beste-futterautomaten-fuer-hunde",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
       "target": "comparison:beste-futterautomaten-fuer-katzen",
       "type": "semantic",
       "score": 100,
@@ -198001,6 +198020,22 @@
     {
       "source": "page:katzenklappen",
       "target": "comparison:beste-futterautomaten-fuer-kleine-hunde",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "comparison:beste-futterautomaten-fuer-nassfutter",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -198440,6 +198475,14 @@
     },
     {
       "source": "page:katzenklappen",
+      "target": "page:futtermenge-hund",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
       "target": "page:futtermenge-katze",
       "type": "semantic",
       "score": 100,
@@ -198480,7 +198523,23 @@
     },
     {
       "source": "page:katzenklappen",
+      "target": "page:hund-entlaufen-gps-sinnvoll",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
       "target": "page:hund-frisst-nicht",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "page:hund-frisst-zu-schnell",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -198497,6 +198556,22 @@
     {
       "source": "page:katzenklappen",
       "target": "page:hund-ist-muede",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "page:hund-trinkt-ploetzlich-viel",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "page:hund-trinkt-viel",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -198529,6 +198604,14 @@
     {
       "source": "page:katzenklappen",
       "target": "page:katze-an-katzenklappe-gewoehnen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "page:katze-entlaufen-gps-sinnvoll",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -198593,6 +198676,22 @@
     {
       "source": "page:katzenklappen",
       "target": "page:katzenwasser-taeglich-wechseln",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "page:nierenkranke-katze-trinken",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "page:pumpe-katzentrinkbrunnen-reinigen",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -198681,6 +198780,22 @@
     {
       "source": "page:katzenklappen",
       "target": "page:trinkbrunnen-seniorenkatzen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "page:trinkmenge-hund-messen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "page:trinkmenge-katze-messen",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -198816,6 +198931,22 @@
     },
     {
       "source": "page:katzenklappen",
+      "target": "page:wie-viel-wasser-braucht-ein-hund",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "page:wie-viel-wasser-braucht-eine-katze",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
       "target": "page:wie-viele-mahlzeiten-hund",
       "type": "semantic",
       "score": 100,
@@ -198848,7 +198979,55 @@
     },
     {
       "source": "page:katzenklappen",
+      "target": "product:aqara-smart-pet-feeder-c1",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "product:cat-mate-335-pet-fountain",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "product:cat-mate-c200",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "product:cat-mate-c300",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "product:cat-mate-c500",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
       "target": "product:cat-mate-elite-355w",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "product:cat-mate-shell-fountain",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -198912,6 +199091,14 @@
     },
     {
       "source": "page:katzenklappen",
+      "target": "product:feelneedy-fn-w18-8l-katzenbrunnen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
       "target": "product:flappie",
       "type": "cluster",
       "score": 100,
@@ -198944,6 +199131,30 @@
     },
     {
       "source": "page:katzenklappen",
+      "target": "product:garmin-alpha-t-20",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "product:garmin-alpha-tt-25",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "product:honeyguardian-a305d",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
       "target": "product:honeyguardian-a68",
       "type": "semantic",
       "score": 100,
@@ -198953,6 +199164,22 @@
     {
       "source": "page:katzenklappen",
       "target": "product:honeyguardian-smart-pet-feeder-s305d",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "product:imipaw-3l-automatic-cat-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "product:invoxia-biotracker-2026",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -199000,7 +199227,23 @@
     },
     {
       "source": "page:katzenklappen",
+      "target": "product:oneisall-2-2l-cordless-fountain",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
       "target": "product:oneisall-2-in-1-feeder-water",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "product:oneisall-3-2l-cordless-fountain",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -199024,7 +199267,23 @@
     },
     {
       "source": "page:katzenklappen",
+      "target": "product:paj-pet-finder-4g-mini",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
       "target": "product:pawbby-smart-pet-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "product:pawfit-3",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -199160,6 +199419,14 @@
     },
     {
       "source": "page:katzenklappen",
+      "target": "product:petlibro-air-automatic-feeder",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
       "target": "product:petlibro-air-wifi-feeder",
       "type": "semantic",
       "score": 100,
@@ -199193,6 +199460,14 @@
     {
       "source": "page:katzenklappen",
       "target": "product:petlibro-dockstream-rfid-smart",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "product:petlibro-glacier-ultrafiltration",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -199272,6 +199547,14 @@
     },
     {
       "source": "page:katzenklappen",
+      "target": "product:petlibro-stainless-steel-fountain",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
       "target": "product:petsafe-freshfeed-refrigerated-feeder",
       "type": "semantic",
       "score": 100,
@@ -199336,6 +199619,14 @@
     },
     {
       "source": "page:katzenklappen",
+      "target": "product:prothelis-area-pets",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
       "target": "product:surefeed-microchip-pet-feeder",
       "type": "semantic",
       "score": 100,
@@ -199384,7 +199675,23 @@
     },
     {
       "source": "page:katzenklappen",
+      "target": "product:tractive-dog-6-xl",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
       "target": "product:weenect-xs",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "product:weenect-xt",
       "type": "semantic",
       "score": 100,
       "explicit": false,
@@ -199416,6 +199723,14 @@
     },
     {
       "source": "page:katzenklappen",
+      "target": "product:wopet-pioneer-f01-plus",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
       "target": "product:xiaomi-smart-pet-food-feeder-2",
       "type": "semantic",
       "score": 100,
@@ -199440,30 +199755,6 @@
     },
     {
       "source": "page:katzenklappen",
-      "target": "comparison:beste-futterautomaten-fuer-berufstaetige",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "comparison:beste-futterautomaten-fuer-mehrtierhaushalte",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "comparison:beste-futterautomaten-fuer-nassfutter",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
       "target": "comparison:beste-futterautomaten-fuer-zwei-katzen",
       "type": "semantic",
       "score": 88,
@@ -199480,39 +199771,31 @@
     },
     {
       "source": "page:katzenklappen",
+      "target": "manufacturer:invoxia",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "manufacturer:pawfit",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
+      "target": "manufacturer:prothelis",
+      "type": "semantic",
+      "score": 88,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "page:katzenklappen",
       "target": "page:gps-tracker-richtig-befestigen",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "page:hund-entlaufen-gps-sinnvoll",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "page:hund-frisst-zu-schnell",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "page:hund-trinkt-ploetzlich-viel",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "page:hund-trinkt-viel",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -199528,7 +199811,7 @@
     },
     {
       "source": "page:katzenklappen",
-      "target": "page:katze-entlaufen-gps-sinnvoll",
+      "target": "page:katzenklappe-einbauen",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -199552,38 +199835,6 @@
     },
     {
       "source": "page:katzenklappen",
-      "target": "page:nierenkranke-katze-trinken",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "page:pumpe-katzentrinkbrunnen-reinigen",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "page:trinkmenge-hund-messen",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "page:trinkmenge-katze-messen",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
       "target": "page:wasserstelle-katze-richtiger-standort",
       "type": "semantic",
       "score": 88,
@@ -199592,7 +199843,7 @@
     },
     {
       "source": "page:katzenklappen",
-      "target": "page:wie-viel-wasser-braucht-ein-hund",
+      "target": "product:oneisall-7l-dog-water-fountain",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -199600,167 +199851,7 @@
     },
     {
       "source": "page:katzenklappen",
-      "target": "page:wie-viel-wasser-braucht-eine-katze",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:aqara-smart-pet-feeder-c1",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:cat-mate-335-pet-fountain",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:cat-mate-c200",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:cat-mate-c300",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:cat-mate-c500",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:cat-mate-shell-fountain",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:feelneedy-fn-w18-8l-katzenbrunnen",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:garmin-alpha-t-20",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:garmin-alpha-tt-25",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:honeyguardian-a305d",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:imipaw-3l-automatic-cat-feeder",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:invoxia-biotracker-2026",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:oneisall-2-2l-cordless-fountain",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:oneisall-3-2l-cordless-fountain",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:paj-pet-finder-4g-mini",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:pawfit-3",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:petlibro-air-automatic-feeder",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:petlibro-glacier-ultrafiltration",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:petlibro-stainless-steel-fountain",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:prothelis-area-pets",
+      "target": "product:petlibro-capsule-dog-fountain",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -199771,38 +199862,6 @@
       "target": "product:tractive-cat-6-mini",
       "type": "semantic",
       "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:tractive-dog-6-xl",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:weenect-xt",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:wopet-pioneer-f01-plus",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "comparison:beste-futterautomaten-fuer-hunde",
-      "type": "semantic",
-      "score": 66,
       "explicit": false,
       "automatic": true
     },
@@ -199816,63 +199875,7 @@
     },
     {
       "source": "page:katzenklappen",
-      "target": "manufacturer:invoxia",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "manufacturer:pawfit",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "manufacturer:prothelis",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "page:futtermenge-hund",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "page:katzenklappe-einbauen",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
       "target": "product:oneisall-3-5l-cordless-fountain",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:oneisall-7l-dog-water-fountain",
-      "type": "semantic",
-      "score": 66,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "page:katzenklappen",
-      "target": "product:petlibro-capsule-dog-fountain",
       "type": "semantic",
       "score": 66,
       "explicit": false,
@@ -326936,6 +326939,14 @@
     },
     {
       "source": "product:garmin-alpha-t-20",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:garmin-alpha-t-20",
       "target": "page:katzentrinkbrunnen-material-edelstahl-keramik-kunststoff",
       "type": "semantic",
       "score": 100,
@@ -328016,14 +328027,6 @@
     },
     {
       "source": "product:garmin-alpha-t-20",
-      "target": "page:katzenklappen",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:garmin-alpha-t-20",
       "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
       "type": "semantic",
       "score": 88,
@@ -328914,6 +328917,14 @@
       "source": "product:garmin-alpha-tt-25",
       "target": "page:katze-entlaufen-gps-sinnvoll",
       "type": "cluster",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:garmin-alpha-tt-25",
+      "target": "page:katzenklappen",
+      "type": "semantic",
       "score": 100,
       "explicit": false,
       "automatic": true
@@ -329993,14 +330004,6 @@
     {
       "source": "product:garmin-alpha-tt-25",
       "target": "page:katze-trinkt-viel",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:garmin-alpha-tt-25",
-      "target": "page:katzenklappen",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -338816,6 +338819,14 @@
     },
     {
       "source": "product:invoxia-biotracker-2026",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:invoxia-biotracker-2026",
       "target": "page:katzentrinkbrunnen-material-edelstahl-keramik-kunststoff",
       "type": "semantic",
       "score": 100,
@@ -339753,14 +339764,6 @@
     {
       "source": "product:invoxia-biotracker-2026",
       "target": "page:katze-trinkt-viel",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:invoxia-biotracker-2026",
-      "target": "page:katzenklappen",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -360488,6 +360491,14 @@
     },
     {
       "source": "product:oneisall-7l-dog-water-fountain",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:oneisall-7l-dog-water-fountain",
       "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
       "type": "cluster",
       "score": 100,
@@ -361771,14 +361782,6 @@
       "target": "product:sureflap-mikrochip-katzenklappe",
       "type": "semantic",
       "score": 84,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:oneisall-7l-dog-water-fountain",
-      "target": "page:katzenklappen",
-      "type": "semantic",
-      "score": 78,
       "explicit": false,
       "automatic": true
     },
@@ -364680,6 +364683,14 @@
     },
     {
       "source": "product:paj-pet-finder-4g-mini",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:paj-pet-finder-4g-mini",
       "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
       "type": "semantic",
       "score": 100,
@@ -365769,14 +365780,6 @@
     {
       "source": "product:paj-pet-finder-4g-mini",
       "target": "page:futterautomat-richtig-reinigen",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:paj-pet-finder-4g-mini",
-      "target": "page:katzenklappen",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -368512,6 +368515,14 @@
     },
     {
       "source": "product:pawfit-3",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:pawfit-3",
       "target": "page:katzentrinkbrunnen-material-edelstahl-keramik-kunststoff",
       "type": "semantic",
       "score": 100,
@@ -369449,14 +369460,6 @@
     {
       "source": "product:pawfit-3",
       "target": "page:katze-trinkt-viel",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:pawfit-3",
-      "target": "page:katzenklappen",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -405856,6 +405859,14 @@
     },
     {
       "source": "product:petlibro-capsule-dog-fountain",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:petlibro-capsule-dog-fountain",
       "target": "page:katzentrinkbrunnen-dauerbetrieb-urlaub",
       "type": "cluster",
       "score": 100,
@@ -407179,14 +407190,6 @@
       "target": "product:catit-pixi-smart-trinkbrunnen",
       "type": "semantic",
       "score": 82,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:petlibro-capsule-dog-fountain",
-      "target": "page:katzenklappen",
-      "type": "semantic",
-      "score": 78,
       "explicit": false,
       "automatic": true
     },
@@ -455360,6 +455363,14 @@
     },
     {
       "source": "product:prothelis-area-pets",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:prothelis-area-pets",
       "target": "page:katzentrinkbrunnen-material-edelstahl-keramik-kunststoff",
       "type": "semantic",
       "score": 100,
@@ -456297,14 +456308,6 @@
     {
       "source": "product:prothelis-area-pets",
       "target": "page:katze-trinkt-viel",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:prothelis-area-pets",
-      "target": "page:katzenklappen",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -472504,6 +472507,14 @@
     },
     {
       "source": "product:tractive-dog-6-xl",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:tractive-dog-6-xl",
       "target": "page:katzentrinkbrunnen-material-edelstahl-keramik-kunststoff",
       "type": "semantic",
       "score": 100,
@@ -473577,14 +473588,6 @@
     {
       "source": "product:tractive-dog-6-xl",
       "target": "page:katze-trinkt-viel",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:tractive-dog-6-xl",
-      "target": "page:katzenklappen",
       "type": "semantic",
       "score": 88,
       "explicit": false,
@@ -476520,6 +476523,14 @@
     },
     {
       "source": "product:weenect-xt",
+      "target": "page:katzenklappen",
+      "type": "semantic",
+      "score": 100,
+      "explicit": false,
+      "automatic": true
+    },
+    {
+      "source": "product:weenect-xt",
       "target": "page:katzentrinkbrunnen-material-edelstahl-keramik-kunststoff",
       "type": "semantic",
       "score": 100,
@@ -477593,14 +477604,6 @@
     {
       "source": "product:weenect-xt",
       "target": "page:katze-trinkt-viel",
-      "type": "semantic",
-      "score": 88,
-      "explicit": false,
-      "automatic": true
-    },
-    {
-      "source": "product:weenect-xt",
-      "target": "page:katzenklappen",
       "type": "semantic",
       "score": 88,
       "explicit": false,

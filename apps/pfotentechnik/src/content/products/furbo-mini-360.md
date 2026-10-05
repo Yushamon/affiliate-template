@@ -51,10 +51,10 @@ subscription:
     - { name: "Standard monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 7.99, currency: EUR, effectiveMonthlyPrice: 7.99, autoRenew: true }
     - { name: "Premium monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 9.99, currency: EUR, effectiveMonthlyPrice: 9.99, autoRenew: true }
 price:
-  current: 98
+  current: 109
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-28T11:31:49.060Z"
+  checkedAt: "2026-10-03T06:50:21.459Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -135,12 +135,12 @@ externalEvidence:
     editorialAssessment: "Der unabhängige Hands-on-Test bewertet die Mini 360 technisch klar positiv, während die markenweite Trustpilot-Basis wesentlich kritischer ausfällt. Die stärkste Übereinstimmung besteht beim Abo-Thema: Viele der interessanten Aufzeichnungs- und KI-Funktionen sind an laufende Kosten gebunden."
   note: "The Independent testete ausdrücklich die Furbo Mini 360. Trustpilot umfasst die gesamte Furbo-Produkt- und Serviceerfahrung und wird deshalb als brand-wide geführt; die Gesamtwertung darf nicht als produktspezifisches Mini-360-Rating verwendet werden."
 priceState: "available"
-priceUpdated: "2026-09-28T11:31:49.060Z"
+priceUpdated: "2026-10-03T06:50:21.459Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-28T11:31:49.060Z"
+availabilityUpdated: "2026-10-03T06:50:21.459Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

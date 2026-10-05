@@ -50,10 +50,10 @@ subscription:
     - { name: "Standard jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 129.99, currency: EUR, effectiveMonthlyPrice: 10.83, autoRenew: true, featured: true, notes: "7 Tage Videospeicher" }
     - { name: "Premium jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 189.99, currency: EUR, effectiveMonthlyPrice: 15.83, autoRenew: true, notes: "30 Tage Videospeicher" }
 price:
-  current: 589.99
+  current: 531.98
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-28T11:32:54.284Z"
+  checkedAt: "2026-10-03T06:51:23.666Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -155,7 +155,7 @@ offers:
       current: 799.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-09-28T11:32:54.432Z"
+      checkedAt: "2026-10-03T06:51:23.830Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -179,14 +179,14 @@ offers:
     variantId: "53374260642158"
     expectedSku: "PL-LB001-31W"
     variantLabel: "1 paket"
-    lastAttemptAt: "2026-09-28T11:32:54.432Z"
+    lastAttemptAt: "2026-10-03T06:51:23.830Z"
 priceState: "available"
-priceUpdated: "2026-09-28T11:32:54.284Z"
+priceUpdated: "2026-10-03T06:51:23.666Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-28T11:32:54.284Z"
+availabilityUpdated: "2026-10-03T06:51:23.666Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
