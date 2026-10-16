@@ -48,7 +48,7 @@ const showTotals = Boolean(
 ---
 
 <section class="px2-price" aria-labelledby="px2-price-title" data-availability={operations.availability} data-subscription-status={subscriptionCost?.status}>
-  {!multiMerchant && unavailableCopy && (
+  {unavailableCopy && (
     <aside class:list={["px2-availability", `is-${operations.availability}`]} role="status">
       <strong>{operations.availabilityLabel}</strong>
       <p>{operations.availabilityReason || unavailableCopy}</p>
@@ -102,6 +102,7 @@ const showTotals = Boolean(
     {!commerce!.offers.length && <p>Aktuell ist keine verifizierte Kaufquelle verfügbar.</p>}
     {commerce!.offers.map(offer => <div class="px2-offer" data-merchant={offer.merchant}>
       <div class="px2-offer__heading"><strong>{offer.label}</strong><strong>{offer.formattedPrice || "Preis beim Händler prüfen"}</strong></div>
+      <small>{offer.purchasable ? "Verfügbarkeit bestätigt" : "Verfügbarkeit unbekannt – beim Händler prüfen"}</small>
       {offer.variantLabel && <small>{offer.variantLabel}</small>}
       {offer.formattedPrice && <small>Stand: {new Date(offer.price.checkedAt).toLocaleDateString('de-DE')} · {offer.shipping == null ? 'Versandkosten beim Händler prüfen' : `Versand: ${offer.shipping.toLocaleString('de-DE', {style:'currency',currency:offer.currency})}`}</small>}
       {commerce!.cheapestId === offer.id && <small>Günstigstes der aktuell vergleichbaren Angebote, inklusive Versand</small>}

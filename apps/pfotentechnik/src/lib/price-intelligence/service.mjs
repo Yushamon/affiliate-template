@@ -98,7 +98,7 @@ async function findDocument(slug) {
 
 export const allowsAutomaticPriceCheck = (data = {}) => data?.priceAutomation !== "editorial";
 
-async function checkDocumentPrice(document) {
+export async function checkDocumentPrice(document, { fetchText = safeFetchText } = {}) {
   if (!allowsAutomaticPriceCheck(document.data)) {
     throw new Error("Die automatische Preisprüfung ist für dieses Produkt redaktionell gesperrt.");
   }
@@ -106,13 +106,15 @@ async function checkDocumentPrice(document) {
   const targetUrl = data.affiliate?.url || data.price?.affiliateUrl || data.productUrl;
   if (!targetUrl) throw new Error("Für dieses Produkt ist keine Händler-URL hinterlegt.");
 
-  const fetched = await safeFetchText(targetUrl);
+  const fetched = await fetchText(targetUrl);
   const offer = extractOfferFromHtml(fetched.html, fetched.resolvedUrl);
   if (!offer) throw new Error("Auf der Händlerseite wurde kein belastbarer strukturierter Preis gefunden.");
 
   const checkedAt = new Date().toISOString();
   const sourceLabel = hostnameLabel(fetched.resolvedUrl);
-  const availability = availabilityFromOffer(offer.availability) ?? "available";
+  const resolvedMerchant = new URL(fetched.resolvedUrl);
+  const germanMarket = resolvedMerchant.hostname.endsWith('.de') || resolvedMerchant.hostname.startsWith('de.') || /^\/de(?:[-/]|$)/.test(resolvedMerchant.pathname);
+  const availability = germanMarket && offer.currency === "EUR" ? availabilityFromOffer(offer.availability) ?? "unknown" : "unknown";
 
   const persisted = await updateProductPrice(
     document.file,
@@ -132,11 +134,11 @@ async function checkDocumentPrice(document) {
       syncAffiliateUrl: true,
       now: checkedAt,
       operations: {
-        availability,
-        availabilityReason: availability === "available"
-          ? "Bei der automatischen Preisprüfung als verfügbar erkannt."
-          : `Bei der automatischen Preisprüfung als ${availability} erkannt.`,
-        availabilityUpdated: checkedAt
+        ...(availability !== "unknown" ? {
+          availability,
+          availabilityReason: `Händler meldet ${offer.availability} bei der automatischen Prüfung.`,
+          availabilityUpdated: checkedAt
+        } : {})
       }
     }
   );
@@ -164,7 +166,7 @@ export async function checkProductPrice(slugInput, {find = findDocument, checkLe
           const next = await refresh(offer);
           await persist(document.file, offer.id, current => {
             if (['officialProductUrl','variantId','expectedSku','program','mappingStatus'].some(key => current[key] !== offer[key])) throw new Error('Händlerzuordnung wurde während der Prüfung geändert; erneut prüfen.');
-            return {...current,price:next.price,priceState:next.priceState,availability:next.availability,lastAttemptAt:next.lastAttemptAt,error:undefined};
+            return {...current,price:next.price,priceState:next.priceState,availability:next.availability,availabilityUpdated:next.availabilityUpdated,lastAttemptAt:next.lastAttemptAt,error:undefined};
           });
           return {checkedAt:next.price.checkedAt};
         } catch(error) {
@@ -237,7 +239,7 @@ export async function setManualProductPrice(input = {}, {find = findDocument, pe
       ...offer,
       price: {...offer.price, current, currency, checkedAt:now,
         source:{id:'cockpit-manual',label:affiliatePrograms[offer.program]?.label || offer.merchant,type:'manual'}},
-      priceState:current == null ? 'unknown' : 'available', availability, error:undefined
+      priceState:current == null ? 'unknown' : 'available', availability, availabilityUpdated: availability !== 'unknown' ? now : undefined, error:undefined
     }));
     return resultFromDocument(persisted,{method:'manual-offer',offerId});
   }
@@ -389,8 +391,9 @@ export async function setProductCommerceOffer(input = {}) {
       commerceDataProvider:current?.commerceDataProvider ?? (program.merchant==='petlibro'?'shopify-product':'manual'),
       price:sameIdentity ? current.price : {current:null,currency:'EUR',status:'unknown'},
       priceState:sameIdentity ? current.priceState:'unknown',availability:sameIdentity ? current.availability:'unknown',
+      availabilityUpdated:sameIdentity ? current.availabilityUpdated:undefined,
       verifiedAt:sameIdentity?current.verifiedAt:undefined,evidenceSources:sameIdentity?current.evidenceSources:[],error:undefined};
-    if (verifiedSnapshot) Object.assign(next, {mappingStatus:'verified',verifiedAt:verifiedSnapshot.lastAttemptAt,lastAttemptAt:verifiedSnapshot.lastAttemptAt,price:verifiedSnapshot.price,priceState:verifiedSnapshot.priceState,availability:verifiedSnapshot.availability,
+    if (verifiedSnapshot) Object.assign(next, {mappingStatus:'verified',verifiedAt:verifiedSnapshot.lastAttemptAt,lastAttemptAt:verifiedSnapshot.lastAttemptAt,price:verifiedSnapshot.price,priceState:verifiedSnapshot.priceState,availability:verifiedSnapshot.availability,availabilityUpdated:verifiedSnapshot.availabilityUpdated,
       identityNote:'Modell und Variante im Cockpit redaktionell bestätigt; SKU und Preisquelle serverseitig geprüft.',
       evidenceSources:[{source:program.label,url:destination,accessedAt:verifiedSnapshot.lastAttemptAt,assertion:'Modell-/Generationszuordnung redaktionell bestätigt; exakte SKU in offizieller Variante geprüft.',fields:['officialProductUrl','variantId','expectedSku'],sourceType:'officialStore'}]});
     return productOfferSchema.parse(next);

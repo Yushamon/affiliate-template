@@ -90,7 +90,7 @@ const assessmentFor = (
   snapshot: ProductPriceSnapshot,
   range: CategoryPriceRange | null
 ): PriceAssessment => {
-  if (snapshot.current != null && range) {
+  if (snapshot.current != null && range && snapshot.currency === range.currency) {
     if (snapshot.current <= range.lowThreshold) return "cheap";
     if (snapshot.current <= range.highThreshold) return "fair";
     return "expensive";

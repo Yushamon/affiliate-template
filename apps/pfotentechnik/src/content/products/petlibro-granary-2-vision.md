@@ -98,12 +98,11 @@ priceState: "available"
 priceUpdated: "2026-10-16T07:59:53.233Z"
 priceAvailable: true
 affiliateAvailable: true
-availability: "available"
-availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-10-16T07:59:53.233Z"
+availability: "unknown"
+availabilityReason: "Deutsche Verfügbarkeit nicht bestätigt; US-Preis und ungeklärte DE-Zuordnung sind kein Liefernachweis."
 editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
 
 editorial:
   assessmentType: "data-review"

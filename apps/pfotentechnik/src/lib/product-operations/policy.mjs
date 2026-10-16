@@ -1,3 +1,5 @@
+import { resolveCommerceOffers } from '../../domain/commerceOffers.mjs';
+
 export const AVAILABILITY_VALUES = Object.freeze([
   "available",
   "temporarily-unavailable",
@@ -132,12 +134,13 @@ export function isArchivedAvailability(availability) {
 
 export function isPurchasable(productOrOperations) {
   const operations = productOrOperations?.operations ?? productOrOperations;
-  return operations?.availability === "available" && operations?.affiliateAvailable === true;
+  if (!operations) return false;
+  return typeof operations.purchasable === "boolean" ? operations.purchasable : deriveProductOperations(operations).purchasable;
 }
 
 export function isAutoRecommendationEligible(productOrOperations) {
   const operations = productOrOperations?.operations ?? productOrOperations;
-  return operations?.availability === "available" &&
+  return !isConsciouslyUnavailable(operations?.availability) &&
     operations?.recommendationStatus !== "archived";
 }
 
@@ -148,7 +151,7 @@ export function availabilityFromOffer(value) {
     .replace(/[^a-z]/g, "");
 
   if (!normalized) return null;
-  if (["instock", "limitedavailability", "onlineonly", "instoreonly"].includes(normalized)) return "available";
+  if (["instock", "limitedavailability"].includes(normalized)) return "available";
   if (["outofstock", "soldout"].includes(normalized)) return "out-of-stock";
   if (["discontinued"].includes(normalized)) return "discontinued";
   if (["backorder", "preorder", "preorderlimitedavailability"].includes(normalized)) return "temporarily-unavailable";
@@ -156,19 +159,15 @@ export function availabilityFromOffer(value) {
 }
 
 export function inferInitialAvailability(data, now = Date.now()) {
-  const explicit = choice(data?.availability, AVAILABILITY_VALUES, null);
-  if (explicit) return explicit;
   if (data?.productStatus === "discontinued") return "discontinued";
-
-  const price = validPrice(data?.price?.current);
-  const affiliate = hasHttpsUrl(data?.affiliate?.url ?? data?.price?.affiliateUrl ?? data?.productUrl);
-  const checkedAge = ageInDays(data?.priceUpdated ?? data?.price?.checkedAt, now);
-
-  if (data?.productStatus === "active" && price != null && affiliate && checkedAge != null && checkedAge <= 30) {
-    return "available";
-  }
-
-  return "unknown";
+  const explicit = choice(data?.availability, AVAILABILITY_VALUES, "unknown");
+  // Historical automatic checks used this same message with and without stock evidence.
+  // Their positive result cannot be recovered from the persisted price alone.
+  if (explicit === "available" && (
+    data?.availabilityReason === "Bei der automatischen Preisprüfung als verfügbar erkannt." ||
+    (data?.price?.currency && data.price.currency !== "EUR")
+  )) return "unknown";
+  return explicit;
 }
 
 export function requiredFieldIssues(data) {
@@ -196,8 +195,16 @@ export function deriveProductOperations(data, options = {}) {
   const priceUpdatedRaw = data?.priceUpdated ?? data?.price?.checkedAt;
   const priceAgeDays = ageInDays(priceUpdatedRaw, now);
   const affiliateUrl = data?.affiliate?.url ?? data?.price?.affiliateUrl ?? data?.productUrl;
-  const affiliateAvailable = hasHttpsUrl(affiliateUrl);
-  const availability = inferInitialAvailability(data, now);
+  const offers = resolveCommerceOffers(data, {}, { now });
+  const affiliateAvailable = hasHttpsUrl(affiliateUrl) || offers.some(offer => offer.affiliateReady);
+  const confirmedOffers = offers.filter(offer => offer.verified && !offer.superseded && offer.domestic);
+  const availableOffer = confirmedOffers.find(offer => offer.availability === "available");
+  const availability = data?.productStatus === "discontinued" ? "discontinued"
+    : availableOffer ? "available"
+    : confirmedOffers.length && confirmedOffers.every(offer => isConsciouslyUnavailable(offer.availability))
+      ? confirmedOffers[0].availability
+      : offers.length && !isConsciouslyUnavailable(inferInitialAvailability(data, now)) ? "unknown" : inferInitialAvailability(data, now);
+  const purchasable = offers.some(offer => offer.purchasable);
   const consciousUnavailable = isConsciouslyUnavailable(availability);
   const archivedAvailability = isArchivedAvailability(availability);
   const missingRequiredFields = requiredFieldIssues(data);
@@ -274,9 +281,7 @@ export function deriveProductOperations(data, options = {}) {
   const priceUpdated = priceUpdatedValue != null
     ? new Date(priceUpdatedValue).toISOString()
     : undefined;
-  const availabilityUpdatedRaw = data?.availabilityUpdated ?? (
-    availability === "available" && priceUpdated ? priceUpdated : undefined
-  );
+  const availabilityUpdatedRaw = availableOffer ? availableOffer.availabilityUpdated : (availability !== "unknown" ? data?.availabilityUpdated : undefined);
   const availabilityUpdated = availabilityUpdatedRaw && dateValue(availabilityUpdatedRaw) != null
     ? new Date(dateValue(availabilityUpdatedRaw)).toISOString()
     : undefined;
@@ -294,8 +299,11 @@ export function deriveProductOperations(data, options = {}) {
     affiliateUrl: affiliateAvailable ? String(affiliateUrl) : null,
     availability,
     availabilityLabel: AVAILABILITY_LABELS[availability],
-    availabilityReason: text(data?.availabilityReason) || undefined,
+    availabilityReason: availability === "unknown" && data?.availabilityReason === "Bei der automatischen Preisprüfung als verfügbar erkannt."
+      ? "Früherer automatischer Status ohne belastbaren Liefernachweis; Verfügbarkeit erneut prüfen."
+      : text(data?.availabilityReason) || undefined,
     availabilityUpdated,
+    editorialReviewedAt: data?.editorial?.lastVerifiedAt ?? data?.review?.updatedAt,
     editorialStatus,
     recommendationStatus,
     maintenanceStatus,
@@ -308,13 +316,13 @@ export function deriveProductOperations(data, options = {}) {
     isArchive,
     isTask,
     priorityRank,
-    purchasable: availability === "available" && affiliateAvailable,
-    autoRecommendationEligible: availability === "available" && recommendationStatus !== "archived"
+    purchasable,
+    autoRecommendationEligible: !consciousUnavailable && recommendationStatus !== "archived"
   };
 }
 
 export function operationFieldsFrom(data, options = {}) {
-  const operations = deriveProductOperations(data, options);
+  const operations = deriveProductOperations({ ...data, offers: [] }, options);
   return {
     priceState: operations.priceState,
     priceUpdated: operations.priceUpdated,

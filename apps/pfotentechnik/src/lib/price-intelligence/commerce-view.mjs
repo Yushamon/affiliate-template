@@ -8,8 +8,9 @@ export function commerceCockpitMarkup(offers = [], slug = '') {
       <strong>${escape(offer.label)} · ${escape(offer.network)}</strong>
       <strong data-stored-price>${escape(formatPrice(offer.price?.current,offer.price?.currency) || 'Kein Preis hinterlegt')}</strong>
       <span>${offer.current != null ? 'Aktueller Preisstand' : 'Kein öffentlich verwendbarer aktueller Preis'} · ${escape(AVAILABILITY_LABELS[offer.availability] || offer.availability)}</span>
-      <small>${escape(offer.status)} · ${offer.canLink ? 'Kaufziel aktiv' : 'Kaufziel öffentlich nicht aktiv'}</small>
+      <small>${escape(offer.status)} · ${offer.purchasable ? 'Kaufbarkeit bestätigt' : offer.canLink ? 'Prüflink aktiv · Kaufbarkeit unbestätigt' : 'Kaufziel öffentlich nicht aktiv'}</small>
       <small>Preisquelle: ${escape(offer.commerceDataProvider)} · letzte Preisprüfung: ${escape(offer.price?.checkedAt || 'nie')} · letzter Versuch: ${escape(offer.lastAttemptAt || 'nie')}</small>
+      <small>Letzte bestätigte Verfügbarkeitsprüfung: ${escape(offer.availabilityUpdated || 'nie')}</small>
       <small>Affiliate: ${offer.affiliateReady ? 'bereit' : 'nicht bereit'} · Zuordnung: ${escape(offer.mappingStatus)}</small>
       ${offer.destination ? `<a href="${escape(offer.destination)}" target="_blank" rel="noopener noreferrer">Offizielle Produkt-URL: ${escape(offer.destination)}</a>` : '<span>Offizielle Produkt-URL: unresolved</span>'}
       ${offer.error ? `<p role="status">${escape(offer.error)}</p>` : ''}

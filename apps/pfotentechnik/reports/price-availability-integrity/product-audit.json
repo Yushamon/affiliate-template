@@ -1,0 +1,2723 @@
+{
+  "summary": {
+    "asOf": "2026-10-16T12:00:00.000Z",
+    "baseline": "HEAD",
+    "products": 103,
+    "affected": 103,
+    "unsupportedPositive": 64,
+    "currencyConflicts": 2,
+    "unresolvedMappings": 9,
+    "stalePrices": 40,
+    "unsafePurchasableOffers": 0
+  },
+  "records": [
+    {
+      "slug": "aqara-smart-pet-feeder-c1",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 87.7,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 87.7,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "cat-mate-335-pet-fountain",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 29,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 29,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "cat-mate-c200",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 32.49,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 32.49,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "cat-mate-c300",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 34.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 34.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "cat-mate-c500",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 39.87,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 39.87,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "cat-mate-elite-355w",
+      "issues": [
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "unknown",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 103.99,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "cat-mate-shell-fountain",
+      "issues": [
+        "Preisprüfung älter als 30 Tage",
+        "Preisprüfdatum fehlt"
+      ],
+      "beforeAvailability": "out-of-stock",
+      "effectiveAvailability": "out-of-stock",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": null,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "out-of-stock",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "catit-pixi-smart-6-meal-feeder",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 116.36,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 116.36,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "catit-pixi-smart-trinkbrunnen",
+      "issues": [
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "unknown",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 83.89,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "catit-pixi-vision-smart-feeder",
+      "issues": [
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "available",
+      "purchasable": true,
+      "priceCurrency": "EUR",
+      "storedPrice": 199,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "available",
+          "purchasable": true,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "devoko-90l-automatisches-katzenklo",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 198.53,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 198.53,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "enabot-ebo-air-2",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 165,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 165,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "enabot-rola-mini",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 139,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 139,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "enabot-rola-pettracker",
+      "issues": [
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "out-of-stock",
+      "effectiveAvailability": "out-of-stock",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": null,
+      "publicPrices": [],
+      "offers": []
+    },
+    {
+      "slug": "feelneedy-fn-w18-8l-katzenbrunnen",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 52.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 52.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "flappie",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 479,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 479,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "furbo-360-hundekamera",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 59,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 59,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "furbo-360-katzenkamera",
+      "issues": [
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "available",
+      "purchasable": true,
+      "priceCurrency": "EUR",
+      "storedPrice": 179,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "available",
+          "purchasable": true,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "furbo-mini-360",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 86,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 86,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "garmin-alpha-t-20",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 320.54,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 320.54,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "garmin-alpha-tt-25",
+      "issues": [
+        "Preisprüfung älter als 30 Tage",
+        "Preisprüfdatum fehlt"
+      ],
+      "beforeAvailability": "temporarily-unavailable",
+      "effectiveAvailability": "temporarily-unavailable",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": null,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "temporarily-unavailable",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "honeyguardian-a305d",
+      "issues": [
+        "Preisprüfung älter als 30 Tage",
+        "Preisprüfdatum fehlt"
+      ],
+      "beforeAvailability": "temporarily-unavailable",
+      "effectiveAvailability": "temporarily-unavailable",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": null,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "temporarily-unavailable",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "honeyguardian-a68",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 99.98,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 99.98,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "honeyguardian-smart-pet-feeder-s305d",
+      "issues": [
+        "Preisprüfung älter als 30 Tage",
+        "Preisprüfdatum fehlt"
+      ],
+      "beforeAvailability": "temporarily-unavailable",
+      "effectiveAvailability": "temporarily-unavailable",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": null,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "temporarily-unavailable",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "imipaw-3l-automatic-cat-feeder",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 32.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 32.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "invoxia-biotracker-2026",
+      "issues": [
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "unknown",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 119,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "litter-robot-4",
+      "issues": [
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "unknown",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 799,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "litter-robot-5-pro",
+      "issues": [
+        "Preisprüfdatum fehlt"
+      ],
+      "beforeAvailability": "unknown",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": null,
+      "publicPrices": [],
+      "offers": []
+    },
+    {
+      "slug": "neakasa-m1-lite",
+      "issues": [
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "unknown",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": null,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "neakasa-m1-plus",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 359.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 359.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "neakasa-riko",
+      "issues": [
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "unknown",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 199.99,
+      "publicPrices": [],
+      "offers": []
+    },
+    {
+      "slug": "oneisall-2-2l-cordless-fountain",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 29.44,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 29.44,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "oneisall-2-in-1-feeder-water",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 56.51,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 56.51,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "oneisall-3-2l-cordless-fountain",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 58,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 58,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "oneisall-3-5l-cordless-fountain",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis",
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 55.68,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "oneisall-5l-automatic-cat-feeder",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 49.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 49.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "oneisall-7l-dog-water-fountain",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 59.49,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 59.49,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "onlycat-mikrochip-katzenklappe",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis",
+        "Ausländischer GBP-Preis; kein bestätigter deutscher Preis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "GBP",
+      "storedPrice": 275,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "paj-pet-finder-4g-mini",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 46.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 46.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "pawbby-smart-pet-feeder",
+      "issues": [
+        "Preisprüfung älter als 30 Tage",
+        "Preisprüfdatum fehlt"
+      ],
+      "beforeAvailability": "out-of-stock",
+      "effectiveAvailability": "out-of-stock",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": null,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "out-of-stock",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "pawfit-3",
+      "issues": [
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "unknown",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 64.99,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "pawsync-smart-pet-feeder",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 59.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 59.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "petkit-eversweet-3-pro-uvc",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 67.89,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 67.89,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "petkit-eversweet-5-mini",
+      "issues": [
+        "Preisprüfung älter als 30 Tage",
+        "Preisprüfdatum fehlt"
+      ],
+      "beforeAvailability": "out-of-stock",
+      "effectiveAvailability": "out-of-stock",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": null,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "out-of-stock",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "petkit-eversweet-max-2-uvc",
+      "issues": [
+        "Preisprüfung älter als 30 Tage",
+        "Preisprüfdatum fehlt"
+      ],
+      "beforeAvailability": "out-of-stock",
+      "effectiveAvailability": "out-of-stock",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": null,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "out-of-stock",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "petkit-eversweet-max-cordless",
+      "issues": [
+        "Preisprüfung älter als 30 Tage",
+        "Preisprüfdatum fehlt"
+      ],
+      "beforeAvailability": "out-of-stock",
+      "effectiveAvailability": "out-of-stock",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": null,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "out-of-stock",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "petkit-eversweet-solo-2-fountain",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 40.84,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 40.84,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "petkit-eversweet-solo-se",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 79,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 79,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "petkit-eversweet-ultra",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 279.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 279.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "petkit-fresh-element-infinity",
+      "issues": [
+        "Preisprüfung älter als 30 Tage",
+        "Preisprüfdatum fehlt"
+      ],
+      "beforeAvailability": "discontinued",
+      "effectiveAvailability": "discontinued",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": null,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "discontinued",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "petkit-fresh-element-solo",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 51.4,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 51.4,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "petkit-puramax-2",
+      "issues": [
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "unknown",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 389,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "petkit-purobot-crystal-duo",
+      "issues": [
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "available",
+      "purchasable": true,
+      "priceCurrency": "EUR",
+      "storedPrice": 169,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "available",
+          "purchasable": true,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "petkit-purobot-max-3",
+      "issues": [
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "available",
+      "purchasable": true,
+      "priceCurrency": "EUR",
+      "storedPrice": 649.99,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "available",
+          "purchasable": true,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "petkit-purobot-max-pro-2",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 499,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 499,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "petkit-yumshare-dual-hopper",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 109.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 109.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "petkit-yumshare-solo-2",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 118.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 118.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-air-automatic-feeder",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis",
+        "petlibro-de: Zuordnung unresolved",
+        "petlibro-de: Offizielle Produkt-URL unresolved."
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 54.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 54.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        },
+        {
+          "id": "petlibro-de",
+          "mappingStatus": "unresolved",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "unresolved"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-air-wifi-feeder",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis",
+        "Preisprüfung älter als 30 Tage",
+        "petlibro-de: Zuordnung unresolved",
+        "petlibro-de: Offizielle Produkt-URL unresolved."
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 109.99,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        },
+        {
+          "id": "petlibro-de",
+          "mappingStatus": "unresolved",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "unresolved"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-capsule-dog-fountain",
+      "issues": [
+        "Preisprüfung älter als 30 Tage",
+        "Preisprüfdatum fehlt",
+        "petlibro-de: Zuordnung unresolved",
+        "petlibro-de: Offizielle Produkt-URL unresolved."
+      ],
+      "beforeAvailability": "out-of-stock",
+      "effectiveAvailability": "out-of-stock",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": null,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "out-of-stock",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        },
+        {
+          "id": "petlibro-de",
+          "mappingStatus": "unresolved",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "unresolved"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-dockstream-2-smart-cordless",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "available",
+      "purchasable": true,
+      "priceCurrency": "EUR",
+      "storedPrice": 105.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 105.99,
+          "currency": "EUR"
+        },
+        {
+          "id": "petlibro-de",
+          "current": 115.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        },
+        {
+          "id": "petlibro-de",
+          "mappingStatus": "verified",
+          "availability": "available",
+          "purchasable": true,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-dockstream-2-smart",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "available",
+      "purchasable": true,
+      "priceCurrency": "EUR",
+      "storedPrice": 105.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 105.99,
+          "currency": "EUR"
+        },
+        {
+          "id": "petlibro-de",
+          "current": 105.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        },
+        {
+          "id": "petlibro-de",
+          "mappingStatus": "verified",
+          "availability": "available",
+          "purchasable": true,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-dockstream-cordless",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis",
+        "petlibro-de: Zuordnung unresolved",
+        "petlibro-de: Offizielle Produkt-URL unresolved."
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 59.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 59.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        },
+        {
+          "id": "petlibro-de",
+          "mappingStatus": "unresolved",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "unresolved"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-dockstream-rfid-smart",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis",
+        "petlibro-de: Zuordnung unresolved",
+        "petlibro-de: Offizielle Produkt-URL unresolved."
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 99.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 99.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        },
+        {
+          "id": "petlibro-de",
+          "mappingStatus": "unresolved",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "unresolved"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-glacier-ultrafiltration",
+      "issues": [
+        "Preisprüfung älter als 30 Tage",
+        "Preisprüfdatum fehlt",
+        "petlibro-de: Zuordnung unresolved",
+        "petlibro-de: Offizielle Produkt-URL unresolved."
+      ],
+      "beforeAvailability": "out-of-stock",
+      "effectiveAvailability": "out-of-stock",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": null,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "out-of-stock",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        },
+        {
+          "id": "petlibro-de",
+          "mappingStatus": "unresolved",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "unresolved"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-granary-2-vision",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis",
+        "Ausländischer USD-Preis; kein bestätigter deutscher Preis",
+        "petlibro-de: Zuordnung unresolved",
+        "petlibro-de: Offizielle Produkt-URL unresolved."
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "USD",
+      "storedPrice": 129.99,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "unresolved",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "unresolved"
+        },
+        {
+          "id": "petlibro-de",
+          "mappingStatus": "unresolved",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "unresolved"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-granary-camera-feeder",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "available",
+      "purchasable": true,
+      "priceCurrency": "EUR",
+      "storedPrice": 121.11,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 121.11,
+          "currency": "EUR"
+        },
+        {
+          "id": "petlibro-de",
+          "current": 169.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        },
+        {
+          "id": "petlibro-de",
+          "mappingStatus": "verified",
+          "availability": "available",
+          "purchasable": true,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-granary-dual-feeder",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "available",
+      "purchasable": true,
+      "priceCurrency": "EUR",
+      "storedPrice": 104.96,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 104.96,
+          "currency": "EUR"
+        },
+        {
+          "id": "petlibro-de",
+          "current": 119.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        },
+        {
+          "id": "petlibro-de",
+          "mappingStatus": "verified",
+          "availability": "available",
+          "purchasable": true,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-granary-wifi-feeder",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "available",
+      "purchasable": true,
+      "priceCurrency": "EUR",
+      "storedPrice": 104.96,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 104.96,
+          "currency": "EUR"
+        },
+        {
+          "id": "petlibro-de",
+          "current": 109.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        },
+        {
+          "id": "petlibro-de",
+          "mappingStatus": "verified",
+          "availability": "available",
+          "purchasable": true,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-luma-smart-litter-box",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "available",
+      "purchasable": true,
+      "priceCurrency": "EUR",
+      "storedPrice": 589.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 589.99,
+          "currency": "EUR"
+        },
+        {
+          "id": "petlibro-de",
+          "current": 799.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        },
+        {
+          "id": "petlibro-de",
+          "mappingStatus": "verified",
+          "availability": "available",
+          "purchasable": true,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-one-rfid-smart-feeder",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "available",
+      "purchasable": true,
+      "priceCurrency": "EUR",
+      "storedPrice": 148.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 148.99,
+          "currency": "EUR"
+        },
+        {
+          "id": "petlibro-de",
+          "current": 199.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        },
+        {
+          "id": "petlibro-de",
+          "mappingStatus": "verified",
+          "availability": "available",
+          "purchasable": true,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-polar-wet-food-feeder",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "available",
+      "purchasable": true,
+      "priceCurrency": "EUR",
+      "storedPrice": 123.47,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 123.47,
+          "currency": "EUR"
+        },
+        {
+          "id": "petlibro-de",
+          "current": 199.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        },
+        {
+          "id": "petlibro-de",
+          "mappingStatus": "verified",
+          "availability": "available",
+          "purchasable": true,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-scout-smart-camera",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "available",
+      "purchasable": true,
+      "priceCurrency": "EUR",
+      "storedPrice": 79.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 79.99,
+          "currency": "EUR"
+        },
+        {
+          "id": "petlibro-de",
+          "current": 109.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        },
+        {
+          "id": "petlibro-de",
+          "mappingStatus": "verified",
+          "availability": "available",
+          "purchasable": true,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-space-smart-feeder",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis",
+        "petlibro-de: Zuordnung unresolved",
+        "petlibro-de: Offizielle Produkt-URL unresolved."
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 69.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 69.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        },
+        {
+          "id": "petlibro-de",
+          "mappingStatus": "unresolved",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "unresolved"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-stainless-steel-fountain",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis",
+        "petlibro-de: Zuordnung unresolved",
+        "petlibro-de: Offizielle Produkt-URL unresolved."
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 49.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 49.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        },
+        {
+          "id": "petlibro-de",
+          "mappingStatus": "unresolved",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "unresolved"
+        }
+      ]
+    },
+    {
+      "slug": "petsafe-freshfeed-refrigerated-feeder",
+      "issues": [
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "out-of-stock",
+      "effectiveAvailability": "out-of-stock",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 219,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "out-of-stock",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "petsafe-healthy-pet-simply-feed",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 219.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 219.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "petsafe-mikrochip-katzenklappe",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 70.95,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 70.95,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "petsafe-petporte-smart-flap",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 139.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 139.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "petsafe-smart-feed-2",
+      "issues": [
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "available",
+      "purchasable": true,
+      "priceCurrency": "EUR",
+      "storedPrice": 211.49,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "available",
+          "purchasable": true,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "petsafe-streamside-trinkbrunnen",
+      "issues": [
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "unknown",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 70.99,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "petsnowy-snow-plus",
+      "issues": [
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "unknown",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 599,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "pettec-cam-360",
+      "issues": [
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "unknown",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 59.46,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "petwalk-medium-tiertuer",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 2016.67,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 2016.67,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "prothelis-area-pets",
+      "issues": [
+        "Preisprüfung älter als 30 Tage",
+        "Preisprüfdatum fehlt"
+      ],
+      "beforeAvailability": "out-of-stock",
+      "effectiveAvailability": "out-of-stock",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": null,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "out-of-stock",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "reolink-e1-zoom",
+      "issues": [
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "unknown",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 99.99,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "surefeed-microchip-pet-feeder-connect",
+      "issues": [
+        "Preisprüfung älter als 30 Tage",
+        "Preisprüfdatum fehlt"
+      ],
+      "beforeAvailability": "unknown",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "surefeed-microchip-pet-feeder",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 135.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 135.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "sureflap-dualscan-mikrochip-katzenklappe",
+      "issues": [
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "temporarily-unavailable",
+      "effectiveAvailability": "temporarily-unavailable",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": null,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "temporarily-unavailable",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "sureflap-mikrochip-katzenklappe-connect",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 259.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 259.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "sureflap-mikrochip-katzenklappe",
+      "issues": [
+        "Preisprüfung älter als 30 Tage"
+      ],
+      "beforeAvailability": "temporarily-unavailable",
+      "effectiveAvailability": "temporarily-unavailable",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": null,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "temporarily-unavailable",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "tractive-cat-6-mini",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 48.3,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 48.3,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "tractive-dog-6-xl",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 47.4,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 47.4,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "tractive-dog-6",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 41.4,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 41.4,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "weenect-xs",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 44.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 44.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "weenect-xt",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 49.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 49.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "wopet-cube-air-ca10",
+      "issues": [
+        "Preisprüfung älter als 30 Tage",
+        "Preisprüfdatum fehlt"
+      ],
+      "beforeAvailability": "out-of-stock",
+      "effectiveAvailability": "out-of-stock",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": null,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "out-of-stock",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "wopet-heritage-view-camera-feeder",
+      "issues": [
+        "Preisprüfung älter als 30 Tage",
+        "Preisprüfdatum fehlt"
+      ],
+      "beforeAvailability": "out-of-stock",
+      "effectiveAvailability": "out-of-stock",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": null,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "out-of-stock",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "wopet-patrol-f07-pro",
+      "issues": [
+        "Preisprüfung älter als 30 Tage",
+        "Preisprüfdatum fehlt"
+      ],
+      "beforeAvailability": "out-of-stock",
+      "effectiveAvailability": "out-of-stock",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": null,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "out-of-stock",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "wopet-pioneer-f01-plus",
+      "issues": [
+        "Preisprüfung älter als 30 Tage",
+        "Preisprüfdatum fehlt"
+      ],
+      "beforeAvailability": "out-of-stock",
+      "effectiveAvailability": "out-of-stock",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": null,
+      "publicPrices": [],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "out-of-stock",
+          "purchasable": false,
+          "status": "price-unknown-or-stale"
+        }
+      ]
+    },
+    {
+      "slug": "xiaomi-smart-pet-food-feeder-2",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 88.58,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 88.58,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "xiaomi-smart-pet-fountain-2",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 45.99,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 45.99,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    },
+    {
+      "slug": "zeromouse-2-0",
+      "issues": [
+        "Historischer automatischer Positivstatus ohne separat gespeicherten Liefernachweis"
+      ],
+      "beforeAvailability": "available",
+      "effectiveAvailability": "unknown",
+      "purchasable": false,
+      "priceCurrency": "EUR",
+      "storedPrice": 179,
+      "publicPrices": [
+        {
+          "id": "legacy",
+          "current": 179,
+          "currency": "EUR"
+        }
+      ],
+      "offers": [
+        {
+          "id": "legacy",
+          "mappingStatus": "verified",
+          "availability": "unknown",
+          "purchasable": false,
+          "status": "fresh"
+        }
+      ]
+    }
+  ]
+}

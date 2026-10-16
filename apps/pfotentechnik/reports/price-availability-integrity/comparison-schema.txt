@@ -1,0 +1,8 @@
+
+> @affiliate-sites/pfotentechnik@1.0.0 audit:comparison-schema
+> node scripts/seo/audit-comparison-product-schema.mjs
+
+OK  Vergleichsseiten enthalten keine unvollständigen Product-Snippets.
+OK  ItemList nutzt direkte ListItem-URLs mit stabilen Positionen.
+OK  Vergleichs-Hub /vergleiche/ wird nicht als Detailseite geprüft.
+INFO  28 gebaute Vergleichsseiten und 28 ItemLists geprüft.

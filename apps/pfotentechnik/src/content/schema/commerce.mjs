@@ -109,6 +109,7 @@ export const productOfferSchema = commerceOfferCoreSchema.extend({
   commerceDataProvider: z.enum(['shopify-product', 'structured-html', 'manual']),
   variantId: z.string().optional(), variantLabel: z.string().optional(), expectedSku: z.string().optional(),
   comparisonKey: z.string().optional(), shipping: z.number().nonnegative().nullable().optional(),
+  availabilityUpdated: z.coerce.date().optional(),
   lastAttemptAt: z.coerce.date().optional(), error: z.string().optional(),
   evidenceSources: z.array(evidenceSourceSchema).default([])
 }).strict().superRefine((value, ctx) => {

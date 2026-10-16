@@ -19,6 +19,7 @@ export type ProductOperations = {
   availabilityLabel: string;
   availabilityReason?: string;
   availabilityUpdated?: string;
+  editorialReviewedAt?: string | Date;
   editorialStatus: EditorialStatus;
   recommendationStatus: RecommendationStatus;
   maintenanceStatus: MaintenanceStatus;

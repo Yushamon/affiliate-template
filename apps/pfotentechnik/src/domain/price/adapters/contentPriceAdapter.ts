@@ -1,3 +1,4 @@
+import { legacyCommerceOffer } from "../../commerceOffers.mjs";
 import type {
   PriceAdapter,
   PriceAssessment,
@@ -109,10 +110,12 @@ export const contentPriceAdapter: PriceAdapter<any> = {
       data.comparisonFilters?.priceTier ?? data.priceCategory ?? raw.tier
     ) as PriceTier;
 
+    const legacy = legacyCommerceOffer(data);
+    const mappingConfirmed = !legacy || legacy.mappingStatus === "verified";
     return {
       slug,
       categoryKey: categoryKey(data) || "unbekannt",
-      current,
+      current: mappingConfirmed && text(raw.currency || "EUR") === "EUR" && data.priceState !== "removed" ? current : null,
       currency: text(raw.currency) || "EUR",
       status: assessmentValues.has(configuredStatus) ? configuredStatus : "unknown",
       comparisonText: text(raw.comparisonText) || undefined,

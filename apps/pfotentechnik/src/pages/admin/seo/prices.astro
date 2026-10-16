@@ -133,6 +133,7 @@ const metrics = [
             <small data-field="sourceLabel">{row.sourceLabel}</small>
           </div>
           <div class="ops-cell">
+            <small>Letzte Preisprüfung</small>
             <span data-field="priceUpdated">{formatDate(row.priceUpdated)}</span>
             <small data-field="priceAgeDays">
               {row.priceAgeDays == null ? "Kein Datenstand" : `${row.priceAgeDays} Tage alt`}
@@ -148,6 +149,8 @@ const metrics = [
           </div>
           <div class="ops-cell">
             <span class="pt-chip ops-chip" data-field="availability" data-state={row.availability}>{row.availabilityLabel}</span>
+            <small>Letzte bestätigte Verfügbarkeitsprüfung: <span data-field="availabilityUpdated">{formatDate(row.availabilityUpdated)}</span></small>
+            <small>Letzte redaktionelle Produktprüfung: <span data-field="editorialReviewedAt">{formatDate(row.editorialReviewedAt)}</span></small>
             <small data-field="availabilityReason">{row.availabilityReason ?? "Keine Bemerkung"}</small>
           </div>
           <div class="ops-cell">
@@ -348,7 +351,7 @@ const metrics = [
 
   const textFor = (record: OperationsRecord, field: string) => {
     if (field === "formattedCurrent") return record.formattedCurrent || "Fehlt";
-    if (field === "priceUpdated") return formatDate(record.priceUpdated);
+    if (["priceUpdated", "availabilityUpdated", "editorialReviewedAt"].includes(field)) return formatDate(record[field]);
     if (field === "priceAgeDays") return record.priceAgeDays == null ? "Kein Datenstand" : `${record.priceAgeDays} Tage alt`;
     if (field === "affiliateAvailable") return record.affiliateAvailable ? "Vorhanden" : "Fehlt";
     if (field === "availability") return record.availabilityLabel;

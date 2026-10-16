@@ -29,7 +29,7 @@ export async function refreshOfficialOffer(offer, {fetchResource = fetchPublicRe
   const checkedAt = new Date().toISOString();
   return {...offer, price: {current:result.current, currency:result.currency, status:'unknown', checkedAt,
     source:{id:'petlibro-official',label:'PETLIBRO',type:'merchant',url:destination}},
-    availability:result.availability, priceState:'available', lastAttemptAt:checkedAt, error:undefined};
+    availability:result.availability, availabilityUpdated:checkedAt, priceState:'available', lastAttemptAt:checkedAt, error:undefined};
 }
 
 // Shared isolation used by both single-product and global refresh, injectable for tests.

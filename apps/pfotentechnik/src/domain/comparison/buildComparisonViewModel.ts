@@ -13,6 +13,7 @@ import type {
 import { buildPriceIndex } from "../price/engine";
 import { calculateProductScore } from "../productScore.ts";
 import type { ProductPriceInsight } from "../price/types";
+import { resolveCommerceOffers } from "../commerceOffers.mjs";
 import { deriveProductOperations } from "../../lib/product-operations/policy.mjs";
 import { selectComparisonFinalists } from "./finalistSelection.mjs";
 import { resolveComparisonProductImage } from "../mediaResolver.mjs";
@@ -847,17 +848,31 @@ export function buildComparisonViewModel({
       const product = productBySlug.get(item.slug);
       if (!product) return null;
 
-      const productOperations = deriveProductOperations(product.data);
-      const affiliate = productOperations.purchasable && product.data.affiliate
-        ? {
-            provider: product.data.affiliate.provider,
-            label: product.data.affiliate.label,
-            url: product.data.affiliate.url,
-            rel: product.data.affiliate.rel,
-            target: product.data.affiliate.target
-          }
-        : undefined;
-      const priceInsight = priceIndex.bySlug.get(item.slug);
+      const commerceOffers = resolveCommerceOffers(product.data);
+      const selectedOffer = commerceOffers.find(offer => offer.purchasable) ?? commerceOffers.find(offer => offer.canLink);
+      const affiliate = selectedOffer ? {
+        provider: selectedOffer.merchant,
+        label: `Preis und Verfügbarkeit bei ${selectedOffer.label} prüfen`,
+        url: selectedOffer.affiliateUrl,
+        rel: selectedOffer.rel,
+        target: selectedOffer.target
+      } : undefined;
+      const indexedPrice = priceIndex.bySlug.get(item.slug);
+      // A merchant link and its price must always refer to the same offer.
+      const priceInsight = indexedPrice && {
+        ...indexedPrice,
+        affiliateUrl: affiliate?.url,
+        ...(selectedOffer && !selectedOffer.legacy ? {
+          current: selectedOffer.current,
+          currency: selectedOffer.currency,
+          checkedAt: selectedOffer.price?.checkedAt,
+          source: { id: selectedOffer.merchant, label: selectedOffer.label, type: "merchant" as const },
+          assessment: "unknown" as const,
+          assessmentLabel: "noch nicht belastbar eingeordnet",
+          formattedRange: null,
+          generatedComparisonText: "Preis und Verfügbarkeit für dieses Händlerangebot prüfen."
+        } : {})
+      };
 
       return {
         slug: item.slug,

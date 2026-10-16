@@ -306,7 +306,7 @@ const structuredReviewBody =
   contentProduct.recommendation;
 
 const schemaOffers = resolveCommerceOffers(contentProduct)
-  .filter(offer => offer.canLink && offer.fresh && offer.current != null && offer.availability === "available")
+  .filter(offer => offer.purchasable && offer.fresh && offer.current != null && offer.availability === "available")
   .map(offer => ({
     "@type": "Offer", price: offer.current, priceCurrency: offer.currency,
     availability: "https://schema.org/InStock", url: offer.destination,
