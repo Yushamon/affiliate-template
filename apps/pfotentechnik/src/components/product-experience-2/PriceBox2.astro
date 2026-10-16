@@ -108,7 +108,7 @@ const showTotals = Boolean(
 
   <p class="px2-price__note">
     Preis und Verfügbarkeit beim Händler prüfen.
-    <a href="/affiliate-hinweis/">Affiliate-Links</a>
+    {" "}<a href="/affiliate-hinweis/">Affiliate-Links</a>
   </p>
 
   {subscriptionCost && (subscriptionCost.plans.length > 0 || subscriptionCost.additionalCostNote || subscriptionCost.stale || subscriptionCost.freeFunctions.length > 0 || subscriptionCost.paidFunctions.length > 0 || showTotals) && (
@@ -176,14 +176,6 @@ const showTotals = Boolean(
     gap: 8px 18px;
   }
 
-  .px2-price__header span {
-    color: var(--px2-accent-text);
-    font-size: .72rem;
-    font-weight: 900;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-  }
-
   .px2-price__header h2 {
     margin: 0;
     color: var(--px2-text);
@@ -228,7 +220,6 @@ const showTotals = Boolean(
   .px2-price__service.is-required dt,.px2-price__service.is-unknown dt { color: var(--px2-accent-text); }
   .px2-price__service.is-none dt,.px2-price__service.is-included dt { color: var(--px2-green-strong); }
   .px2-price__service-note { margin: 0; color: var(--px2-muted); font-size: .82rem; line-height: 1.5; }
-  .px2-price__service-note p + p { margin-top: 7px; }
   .px2-price__details { border: 1px solid var(--px2-border); border-radius: 14px; background: var(--px2-surface-soft); overflow: clip; }
   .px2-price__details summary { display: flex; min-height: 44px; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 12px; color: var(--px2-text); cursor: pointer; font-size: .86rem; font-weight: 850; list-style: none; }
   .px2-price__details summary::-webkit-details-marker { display: none; }
@@ -289,6 +280,5 @@ const showTotals = Boolean(
   @media (max-width: 410px) {
     .px2-price__summary.has-service { grid-template-columns: 1fr; gap: 0; }
     .px2-price__summary.has-service > div:nth-child(even) { padding-left: 0; border-top: 1px solid var(--px2-border); border-left: 0; }
-    .px2-price__summary.has-service > div:nth-child(odd):not(:first-child) { grid-column: auto; }
   }
 </style>
