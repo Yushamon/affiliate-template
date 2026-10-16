@@ -377,6 +377,22 @@ comparisonData:
     abmessungen: 195 × 195 × 148 mm
     gewicht: 1,28 kg
     geeignet_fur: Katzen und kleine Hunde
+  fountain:
+    capacityLiters: 1.6
+    material:
+      - BPA-freies ABS, Silikon, Polypropylen und Edelstahl 304
+    powerType:
+      status: known
+      value: mains
+    pumpRemovable:
+      status: known
+      value: true
+    lowWaterShutdown:
+      status: known
+      value: true
+    dishwasherSafeParts:
+      status: known
+      value: []
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -400,6 +416,26 @@ decisionFacts:
   - label: "Filteraufbau"
     value: "hochdichtes Filtervlies, Kokos-Aktivkohle und Ionenaustauschharz"
     consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
+evidenceSources:
+  - source: Herstellerdokumentation · PETKIT Eversweet 3 Pro UVC
+    url: https://www.petkit.com/products/eversweet-3-pro-wireless-pump-uvc
+    accessedAt: "2026-07-23"
+    sourceType: manufacturer
+    assertion: >-
+      Bereits dokumentierte technische Daten: Nutzbare Kapazität: 1,6 Liter beziehungsweise 54 fl. oz.; Materialien:
+      BPA-freies ABS, Silikon, Polypropylen und Edelstahl 304; Pumpe: kabellose und vollständig entnehmbare UVC-Pumpe;
+      Trockenlaufschutz: Wasserstandssensor stoppt die Pumpe bei Wassermangel; Lautstärke: Herstellerangabe unter
+      beziehungsweise höchstens 25 dB; Stromversorgung: USB-Stromkabel; Netzteil ist laut aktueller Produktseite nicht
+      enthalten; Reinigung: vollständig zerlegbar; alle Komponenten von Hand reinigen; Spülmaschine: Nein, laut aktueller
+      PETKIT-FAQ sind keine Teile spülmaschinengeeignet. Normalisierung des vorhandenen Quellenstands, keine erneute
+      externe Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.material
+      - comparisonData.fountain.powerType
+      - comparisonData.fountain.pumpRemovable
+      - comparisonData.fountain.lowWaterShutdown
+      - comparisonData.fountain.dishwasherSafeParts
 ---
 Der PETKIT Eversweet 3 Pro UVC ist ein kompakter Trinkbrunnen für eine Katze oder einen kleinen Hund. Sein Hauptargument ist die Kombination aus Edelstahl-Wasserbehälter, entnehmbarer UVC-Pumpe und App-gestützter Bedienung.
 

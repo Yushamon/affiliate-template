@@ -47,8 +47,11 @@ export const replacementCommerceShape = {
   compatibility:compatibilitySchema.optional(), offers:accessoryOffersSchema.optional()
 };
 export const fountainOperatingShape = {
+  // Existing comparison keys, now typed. Full component descriptions retain mixed materials.
+  capacityLiters:positive.optional(),
+  material:z.array(z.string().min(1)).min(1).optional(),
   powerType:fact(z.enum(['mains','battery','mainsAndBattery'])).optional(),
-  batteryRuntime:fact(z.object({minDays:positive,maxDays:positive,conditions:z.string().min(1)}).strict().refine(v=>v.minDays<=v.maxDays)).optional(),
+  batteryRuntime:fact(z.object({minDays:positive.optional(),maxDays:positive,conditions:z.string().min(1)}).strict().refine(v=>v.minDays==null || v.minDays<=v.maxDays)).optional(),
   lowWaterShutdown:fact(z.boolean()).optional(), waterLevelVisible:fact(z.boolean()).optional(),
   pumpRemovable:fact(z.boolean()).optional(), dishwasherSafeParts:fact(z.array(z.string().min(1))).optional()
 };

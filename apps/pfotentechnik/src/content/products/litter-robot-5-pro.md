@@ -117,6 +117,12 @@ litterCompatibility: { status: partial, compatibleTypes: [bentonite, mineral-clu
 multiPet: { sharedUse: supported, identificationMethods: [weight, cameraAi], individualProfiles: supported, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: supported, similarPetLimitation: { status: unknown, description: "WasteID belegt; Mindestgewichtsdifferenz nicht." }, evidenceSourceUrls: ["https://www.whisker.com/litter-robot-5-pro"] }
 evidenceSources:
   - { source: "Whisker", url: "https://www.whisker.com/litter-robot-5-pro", accessedAt: "2026-08-06", assertion: "Dualkamera, WasteID, Gewichtsbereich, Mehrkatzenangabe und Whisker+-Abhängigkeit sind Herstellerangaben.", fields: ["specs", "decision", "strengths", "weaknesses"] }
+sensorLimits:
+  minimumOperationalWeightKg: 1.36
+  belowMinimumBehavior: unknown
+  sourceUrl: https://www.whisker.com/litter-robot-5-pro
+  sourceType: manufacturer
+  verifiedAt: "2026-08-06"
 ---
 
 ## Sicherheitsgrenze

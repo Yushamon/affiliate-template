@@ -153,6 +153,7 @@
 
 .pt-home__decision-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; overflow: hidden; border: 1px solid var(--pt-home-line); border-radius: var(--pt33-radius-lg, 1.1rem); background: var(--pt-home-line); }
 .pt-home__decision { display: grid; grid-template-columns: minmax(8rem, .72fr) minmax(0, 1fr); min-height: 16rem; color: inherit; background: var(--pt-home-surface); text-decoration: none; }
+.pt-home__decision { cursor: pointer; }
 .pt-home__decision:hover { background: var(--pt-home-soft); }
 .pt-home__decision--lead { grid-column: span 2; grid-template-columns: minmax(16rem, 1fr) minmax(0, 1fr); }
 .pt-home__decision-media { min-height: 100%; overflow: hidden; background: var(--pt-color-media-stage); }

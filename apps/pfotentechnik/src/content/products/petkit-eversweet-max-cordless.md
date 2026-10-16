@@ -272,6 +272,18 @@ comparisonData:
       Tank, Trinkfläche, Filterhalter und Pumpe regelmäßig vollständig reinigen. Filter je nach Wasserqualität etwa alle
       zwei bis vier Wochen wechseln.
     uv: Nein
+  fountain:
+    capacityLiters: 3
+    material:
+      - BPA-freies ABS und Edelstahl 304
+    powerType:
+      status: known
+      value: mainsAndBattery
+    batteryRuntime:
+      status: known
+      value:
+        maxDays: 83
+        conditions: Herstellerangabe bis 83 Tage
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -295,6 +307,22 @@ decisionFacts:
   - label: "Lautstärke"
     value: "Herstellerangabe etwa 26 dB"
     consequence: "Geräusche können bei schreckhaften Tieren und in Schlafräumen kaufentscheidend sein."
+evidenceSources:
+  - source: Herstellerdokumentation · PETKIT Eversweet Max Cordless
+    url: https://www.petkit.com/products/petkit-eversweet-max-cordless
+    accessedAt: "2026-08-19"
+    sourceType: manufacturer
+    assertion: >-
+      Bereits dokumentierte technische Daten: Kapazität: 3 Liter; Material: BPA-freies ABS und Edelstahl 304;
+      Stromversorgung: USB-Kabel und integrierter Lithium-Akku; Akkulaufzeit: Herstellerangabe bis 83 Tage; Lautstärke:
+      Herstellerangabe etwa 26 dB; Reinigung: Tank, Trinkfläche, Filterhalter und Pumpe regelmäßig vollständig reinigen.
+      Filter je nach Wasserqualität etwa alle zwei bis vier Wochen wechseln.. Normalisierung des vorhandenen
+      Quellenstands, keine erneute externe Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.material
+      - comparisonData.fountain.powerType
+      - comparisonData.fountain.batteryRuntime
 ---
 Der Eversweet Max Cordless ist auf flexible Platzierung ausgelegt. Der Akku trennt den Brunnen vom dauerhaften Steckdosenplatz, während die App Trinkhäufigkeit und -dauer protokolliert. Der wichtigste reale Vorteil ist damit nicht die maximale Herstellerlaufzeit, sondern dass der Brunnen ohne dauerhaftes Stromkabel an einem für die Katze passenden Ort stehen kann.
 

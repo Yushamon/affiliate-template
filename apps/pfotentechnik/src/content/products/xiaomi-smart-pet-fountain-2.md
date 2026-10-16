@@ -283,6 +283,18 @@ comparisonData:
     wasserbestandigkeit: IPX7 bei vollständig verschlossenem Ladeanschluss
     abmessungen: 190 × 230 × 180 mm
     geeignet_fur: Katzen und kleine Hunde
+  fountain:
+    capacityLiters: 3
+    material:
+      - Wassertank, Trinkschale und äußere wasserführende Teile aus ABS
+    powerType:
+      status: known
+      value: battery
+    batteryRuntime:
+      status: known
+      value:
+        maxDays: 100
+        conditions: Herstellerangabe bis 100 Tage
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -306,6 +318,21 @@ decisionFacts:
   - label: "Filterwechsel"
     value: "Herstellerempfehlung monatlich"
     consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
+evidenceSources:
+  - source: Herstellerdokumentation · Xiaomi Smart Pet Fountain 2
+    url: https://www.mi.com/de/product/xiaomi-smart-pet-fountain2/
+    accessedAt: "2026-08-10"
+    sourceType: manufacturer
+    assertion: >-
+      Bereits dokumentierte technische Daten: Kapazität: 3 Liter; Material: Wassertank, Trinkschale und äußere
+      wasserführende Teile aus ABS; Stromversorgung: integrierter Akku, Laden mit 5 V/2 A; Akkulaufzeit: Herstellerangabe
+      bis 100 Tage; Reinigung: zerlegbar; Hersteller empfiehlt wöchentliche Reinigung; Lautstärke: Nicht vom Hersteller
+      ausgewiesen. Normalisierung des vorhandenen Quellenstands, keine erneute externe Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.material
+      - comparisonData.fountain.powerType
+      - comparisonData.fountain.batteryRuntime
 ---
 Der Xiaomi Smart Pet Fountain 2 ist auf kabellose Platzierung und App-Unterstützung ausgelegt. Drei Betriebsarten erlauben unterschiedliche Kompromisse zwischen dauerhaftem Wasserfluss und Akkulaufzeit.
 

@@ -355,6 +355,19 @@ comparisonData:
       Angebotsvariante
     garantie: 2 Jahre laut oneisall
     geeignet_fur: mittelgroße und große Hunde sowie Mehrtierhaushalte
+  fountain:
+    capacityLiters: 7
+    material:
+      - Trinkschale aus SUS/304-Edelstahl; Tank und weitere Bauteile aus Kunststoff beziehungsweise PC
+    powerType:
+      status: known
+      value: mains
+    waterLevelVisible:
+      status: known
+      value: true
+    lowWaterShutdown:
+      status: known
+      value: true
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -378,6 +391,24 @@ decisionFacts:
   - label: "Lautstärke"
     value: "Herstellerangabe unter beziehungsweise ungefähr 35 dB"
     consequence: "Geräusche können bei schreckhaften Tieren und in Schlafräumen kaufentscheidend sein."
+evidenceSources:
+  - source: Herstellerdokumentation · oneisall 7L Dog Water Fountain
+    url: >-
+      https://eu.oneisall.com/collections/pet-water-fountain-for-dogs/products/oneisall-7l-dog-water-fountain-with-visual-water-level-for-large-dogs
+    accessedAt: "2026-07-23"
+    sourceType: manufacturer
+    assertion: >-
+      Bereits dokumentierte technische Daten: Kapazität: 7 Liter beziehungsweise rund 230 fl. oz.; Material: Trinkschale
+      aus SUS/304-Edelstahl; Tank und weitere Bauteile aus Kunststoff beziehungsweise PC; Wasserstand: Sichtfenster mit
+      Minimum- und Maximum-Markierung; Pumpe: Niedervolt-Pumpe mit automatischer Abschaltung bei zu niedrigem Wasserstand;
+      Stromversorgung: DC 5 V/1 A; Lautstärke: Herstellerangabe unter beziehungsweise ungefähr 35 dB. Normalisierung des
+      vorhandenen Quellenstands, keine erneute externe Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.material
+      - comparisonData.fountain.powerType
+      - comparisonData.fountain.waterLevelVisible
+      - comparisonData.fountain.lowWaterShutdown
 ---
 Der oneisall 7L Dog Water Fountain ist auf hohe Wasserreserve und eine breite Trinkfläche ausgelegt. Im Unterschied zu kompakten Katzenbrunnen steht nicht eine kleine Stellfläche, sondern die Nutzung durch große Hunde und mehrere Tiere im Vordergrund.
 

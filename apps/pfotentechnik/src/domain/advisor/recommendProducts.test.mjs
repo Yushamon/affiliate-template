@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { mapProductToAdvisor } from "./mapProduct.ts";
 import { recommendAdvisorProducts } from "./recommendProducts.ts";
 
 const products = [
@@ -37,7 +38,11 @@ const products = [
     priceCategory: "midrange",
     route: "/produkt/camera/"
   }
-];
+].map(product => mapProductToAdvisor({ id: product.id, data: {
+  ...product, category: {key: "futterautomaten"}, decision: {bestFor: product.bestFor, attention: product.attention},
+  comparisonFilters: {animal: ["cat"], foodType: product.foodType, access: product.access ?? "open", app: product.app, camera: product.camera},
+  multiPet: {sharedUse: "supported", individualAccess: product.access === "microchip" ? "supported" : "unavailable"}
+}}));
 
 const multiPet = recommendAdvisorProducts(products, {
   pet: "cat",

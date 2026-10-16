@@ -137,7 +137,36 @@ specs:
   - { label: "Einbau", value: "Selbstauskleidung bis 100 mm; Material und Adapter prüfen" }
 features: ["Mikrochip-Eintritt", "Gemeinsamer Timer", "LCD-Status", "4-Wege-Sperre", "Batteriebetrieb"]
 useCase: "Lokale Mikrochip-Klappe mit gemeinsamem Timer ohne App"
-comparisonData: { version: 1, custom: { zugang: "15-stelliger ISO-Chip; selektiver Eingang", richtungsrechte: "Gemeinsamer Timer und 4-Wege-Sperre", app: "Nein", strom: "4 AA; ca. 9-12 Monate bei einer Katze", einbau: "Ausschnitt 178 × 204 mm oder 232 mm rund", durchgang: "145 × 145 mm", rolle: "Lokale Timer-Klappe" } }
+comparisonData:
+  version: 1
+  custom:
+    zugang: 15-stelliger ISO-Chip; selektiver Eingang
+    richtungsrechte: Gemeinsamer Timer und 4-Wege-Sperre
+    app: Nein
+    strom: 4 AA; ca. 9-12 Monate bei einer Katze
+    einbau: Ausschnitt 178 × 204 mm oder 232 mm rund
+    durchgang: 145 × 145 mm
+    rolle: Lokale Timer-Klappe
+  catFlap:
+    installation:
+      status: partial
+      cutoutWidthMm:
+        status: known
+        value: 178
+      cutoutHeightMm:
+        status: known
+        value: 204
+      roundCutoutDiameterMm:
+        status: known
+        value: 232
+      passageWidthMm:
+        status: known
+        value: 145
+      passageHeightMm:
+        status: known
+        value: 145
+      notes:
+        - Selbstauskleidung bis 100 mm ist keine feste Tunneltiefe; Material und Adapter prüfen.
 comparisonFilters: { animal: ["cat"], petSize: ["small", "medium"], foodType: [], app: false, access: "microchip" }
 alternatives: ["sureflap-dualscan-mikrochip-katzenklappe", "sureflap-mikrochip-katzenklappe-connect", "petsafe-mikrochip-katzenklappe"]
 comparisons: ["beste-mikrochip-katzenklappen"]
@@ -176,6 +205,17 @@ evidenceSources:
     fields:
       - "ratings"
       - "externalEvidence"
+  - source: Closer Pets – Elite Microchip Flap with Timer Control
+    url: https://closerpets.co.uk/products/elite-microchip-flap-timer-control
+    accessedAt: "2026-08-16"
+    assertion: Chip, Timer, LCD, Maße, Batterien und Kapazität sind Herstellerangaben.
+    fields:
+      - comparisonData.catFlap.installation.cutoutWidthMm
+      - comparisonData.catFlap.installation.cutoutHeightMm
+      - comparisonData.catFlap.installation.roundCutoutDiameterMm
+      - comparisonData.catFlap.installation.passageWidthMm
+      - comparisonData.catFlap.installation.passageHeightMm
+    sourceType: manufacturer
 experience:
   summary: >-
     Redaktionelle Einordnung aus Herstellerdokumentation, unabhängigen Tests und dokumentierten Nutzersignalen.

@@ -1,4 +1,4 @@
-import { consumablesSchema, consumablePolicySchema, replacementCommerceShape, fountainOperatingShape, validateFoundationEvidence } from "./consumables.mjs";
+import { fact, consumablesSchema, consumablePolicySchema, replacementCommerceShape, fountainOperatingShape, validateFoundationEvidence } from "./consumables.mjs";
 import { productAffiliateSchema, productPriceSchema, productPriceStateSchema, productAvailabilitySchema, productOffersSchema } from "./commerce.mjs";
 import {
   defineCollection,
@@ -652,6 +652,53 @@ const comparisonRecordSchema =
     comparisonValueSchema
   );
 
+// Optional normalization projections inside the existing comparison model.
+export const catFlapInstallationSchema = z.object({
+  status: z.enum(["partial", "complete", "unknown", "notApplicable"]),
+  doorSupported: fact(z.boolean()).optional(),
+  wallSupported: fact(z.boolean()).optional(),
+  glassSupported: fact(z.boolean()).optional(),
+  metalDoorSupported: fact(z.boolean()).optional(),
+  cutoutWidthMm: fact(z.number().positive()).optional(),
+  cutoutHeightMm: fact(z.number().positive()).optional(),
+  roundCutoutDiameterMm: fact(z.number().positive()).optional(),
+  passageWidthMm: fact(z.number().positive()).optional(),
+  passageHeightMm: fact(z.number().positive()).optional(),
+  tunnelDepthMm: fact(z.number().positive()).optional(),
+  adapterRequired: fact(z.boolean()).optional(),
+  notes: z.array(z.string().min(1)).optional()
+}).strict();
+
+export const cameraComparisonSchema = z.object({
+  localStorage: z.enum(["supported", "unavailable", "unknown"]).optional(),
+  localStorageTypes: z.array(z.enum(["microSD", "NVR", "homeHub", "FTP", "NAS", "internal", "other"])).optional(),
+  cloud: z.enum(["required", "optional", "unavailable", "unknown"]).optional(),
+  detection: z.enum(["local", "cloud", "mixed", "unavailable", "unknown"]).optional(),
+  detectionTypes: z.array(z.enum(["pet", "dog", "cat", "person", "motion", "other"])).optional(),
+  nightVision: z.enum(["infrared", "color", "both", "unavailable", "unknown"]).optional(),
+  maxLocalStorageGb: z.number().int().positive().optional(),
+  notes: z.array(z.string().min(1)).optional()
+}).strict().superRefine((value, context) => {
+  if (value.localStorage === "unavailable" && (value.localStorageTypes?.length || value.maxLocalStorageGb != null)) {
+    context.addIssue({code:z.ZodIssueCode.custom, message:"Unavailable storage cannot carry local media or capacity claims."});
+  }
+});
+
+export function validateAdvisorNormalizationEvidence(product: any, context: any) {
+  const sources = product.evidenceSources ?? [];
+  const requireEvidence = (field: string) => {
+    if (!sources.some((s: any) => s.fields?.includes(field) && ["manufacturer", "manual", "officialStore"].includes(s.sourceType))) {
+      context.addIssue({code:z.ZodIssueCode.custom, path:field.split("."), message:"Normalized advisor fact needs an existing official source with exact field path."});
+    }
+  };
+  for (const [key, value] of Object.entries(product.comparisonData?.catFlap?.installation ?? {})) {
+    if ((value as any)?.status === "known") requireEvidence(`comparisonData.catFlap.installation.${key}`);
+  }
+  for (const [key, value] of Object.entries(product.comparisonData?.camera ?? {})) {
+    if (key !== "notes" && value !== "unknown" && (!Array.isArray(value) || value.length)) requireEvidence(`comparisonData.camera.${key}`);
+  }
+}
+
 const productComparisonDataSchema = z
   .object({
     version: z.literal(1).optional(),
@@ -659,6 +706,8 @@ const productComparisonDataSchema = z
     feeder: comparisonRecordSchema.optional(),
     fountain: z.object(fountainOperatingShape).catchall(comparisonValueSchema).optional(),
     gps: comparisonRecordSchema.optional(),
+    catFlap: z.object({ installation: catFlapInstallationSchema.optional() }).optional(),
+    camera: cameraComparisonSchema.optional(),
     editorial: comparisonRecordSchema.optional(),
     custom: comparisonRecordSchema.optional()
   })
@@ -912,7 +961,7 @@ export const createProductContentSchema = (image: ImageFunction) =>
 
     comparisonFilters:
       productComparisonFiltersSchema
-  }).superRefine(validateFoundationEvidence);
+  }).superRefine(validateFoundationEvidence).superRefine(validateAdvisorNormalizationEvidence);
 
 export const productsCollection =
   defineCollection({

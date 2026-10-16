@@ -230,6 +230,12 @@ affiliate:
   url: "https://amzn.to/3RQ7Lg4"
   rel: "sponsored nofollow noopener"
   target: "_blank"
+sensorLimits:
+  automaticModeMinimumWeightKg: 1.5
+  belowMinimumBehavior: automationDisabled
+  sourceUrl: https://www.petkit.com/products/purobot-max-pro-2-automatic-cat-litter-box-with-ai-camera
+  sourceType: manufacturer
+  verifiedAt: "2026-08-15"
 ---
 
 ## Offene Produktfragen vor dem Kauf

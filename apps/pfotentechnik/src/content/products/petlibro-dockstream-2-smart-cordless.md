@@ -318,26 +318,43 @@ comparisonFilters:
 comparisonData:
   version: 1
   general:
-    animal: ["dog", "cat"]
-    petSize: ["small"]
-    priceTier: "premium"
+    animal:
+      - dog
+      - cat
+    petSize:
+      - small
+    priceTier: premium
   fountain:
     capacityLiters: 3
     cordless: true
     batteryMah: 5200
     batteryClaimDays: 30
     app: true
-    wifiBands: ["2.4 GHz", "5 GHz"]
+    wifiBands:
+      - 2.4 GHz
+      - 5 GHz
     intakeTracking: true
     perPetTracking: false
     rfid: false
-    material: ["ABS", "Edelstahl"]
+    material:
+      - ABS-Kunststoff und Edelstahl
     dishwasherSafe: false
+    powerType:
+      status: known
+      value: battery
+    batteryRuntime:
+      status: known
+      value:
+        maxDays: 30
+        conditions: Laut Hersteller bis zu 30 Tage bei einer Katze, 30 Sitzungen täglich und je 45 Sekunden
+    dishwasherSafeParts:
+      status: known
+      value: []
   editorial:
     rating: 4.35
     score: 87
-    assessment: "manufacturer-data"
-    productStatus: "active"
+    assessment: manufacturer-data
+    productStatus: active
 decisionFacts:
   - label: "Kapazität"
     value: "3 Liter"
@@ -357,6 +374,22 @@ decisionFacts:
   - label: "Akkulaufzeit"
     value: "laut Hersteller bis zu 30 Tage bei einer Katze, 30 Sitzungen täglich und je 45 Sekunden"
     consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+evidenceSources:
+  - source: Herstellerdokumentation · PETLIBRO Dockstream 2 Smart Cordless
+    url: https://de.petlibro.com/products/dockstream-2-smart-fountain
+    accessedAt: "2026-07-26"
+    sourceType: manufacturer
+    assertion: >-
+      Bereits dokumentierte technische Daten: Kapazität: 3 Liter; Material: ABS-Kunststoff und Edelstahl; Akkulaufzeit:
+      laut Hersteller bis zu 30 Tage bei einer Katze, 30 Sitzungen täglich und je 45 Sekunden; Reinigung: Handwäsche;
+      nicht spülmaschinengeeignet; Lautstärke: 23 dB laut Hersteller für Dockstream 2. Normalisierung des vorhandenen
+      Quellenstands, keine erneute externe Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.material
+      - comparisonData.fountain.powerType
+      - comparisonData.fountain.batteryRuntime
+      - comparisonData.fountain.dishwasherSafeParts
 ---
 
 Der **PETLIBRO Dockstream 2 Smart Cordless** ist kein bloßer Nachfolger mit größerem Akku. Er verbindet drei Funktionen, die bei Trinkbrunnen sonst oft getrennt auftreten: kabellose Aufstellung, App-Protokoll und ein abnehmbares Wassersystem ohne klassische Tauchpumpe im Tank.

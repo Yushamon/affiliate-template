@@ -244,6 +244,12 @@ evidenceSources:
     fields:
       - "ratings"
       - "externalEvidence"
+sensorLimits:
+  minimumOperationalWeightKg: 1.5
+  belowMinimumBehavior: unknown
+  sourceUrl: https://www.petkit.com/products/purobot-max-3-automatic-cat-litter-box
+  sourceType: manufacturer
+  verifiedAt: "2026-08-15"
 ---
 
 ## Eigenständige Rolle neben MAX PRO 2

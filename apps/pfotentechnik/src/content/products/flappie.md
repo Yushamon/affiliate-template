@@ -261,26 +261,54 @@ comparisonFilters:
 comparisonData:
   version: 1
   general:
-    animal: ["cat"]
-    priceTier: "premium"
+    animal:
+      - cat
+    priceTier: premium
   custom:
-    rolle: "Vollständige Katzenklappe"
-    app: "iOS und Android"
-    beute: "Lokale Kamera-KI; >98 % laut Hersteller"
-    abhaengigkeit: "Netzstrom; WLAN für App und Updates"
-    strom: "12-V-Netzteil, kein Akku"
-    ausfall: "WLAN-lokal weiter; stromlos frei offen ohne KI und Sperren"
-    hub_erforderlich: "Nein"
-    security_support: "Fünf Jahre Softwareupdates laut Hersteller"
-    zugang: "Keine Mikrochip-Erkennung; Cat ID nicht allgemein aktiv"
-    richtungsrechte: "Aktuell global für alle Katzen"
-    einbau: "166 × 170 mm neu; Glas Ø 212–215 mm direkt"
-    produktrolle: "Vollständige Katzenklappe"
+    rolle: Vollständige Katzenklappe
+    app: iOS und Android
+    beute: Lokale Kamera-KI; >98 % laut Hersteller
+    abhaengigkeit: Netzstrom; WLAN für App und Updates
+    strom: 12-V-Netzteil, kein Akku
+    ausfall: WLAN-lokal weiter; stromlos frei offen ohne KI und Sperren
+    hub_erforderlich: Nein
+    security_support: Fünf Jahre Softwareupdates laut Hersteller
+    zugang: Keine Mikrochip-Erkennung; Cat ID nicht allgemein aktiv
+    richtungsrechte: Aktuell global für alle Katzen
+    einbau: 166 × 170 mm neu; Glas Ø 212–215 mm direkt
+    produktrolle: Vollständige Katzenklappe
   editorial:
     rating: 3.8
     score: 76
-    assessment: "manufacturer-data"
-    productStatus: "active"
+    assessment: manufacturer-data
+    productStatus: active
+  catFlap:
+    installation:
+      status: partial
+      doorSupported:
+        status: known
+        value: true
+      wallSupported:
+        status: known
+        value: true
+      glassSupported:
+        status: known
+        value: true
+      cutoutWidthMm:
+        status: known
+        value: 166
+      cutoutHeightMm:
+        status: known
+        value: 170
+      passageWidthMm:
+        status: known
+        value: 150.5
+      passageHeightMm:
+        status: known
+        value: 126
+      notes:
+        - Glas Ø 212–215 mm direkt; über 215 bis 260 mm mit Adapter. Kein einzelner runder Ausschnittwert normalisiert.
+        - Einbautiefe bis 36 mm ohne Erweiterung, bis 200 mm mit maximal sechs Erweiterungen; keine feste Tunneltiefe.
 failureModes:
   powerOutage:
     status: partial
@@ -436,6 +464,19 @@ evidenceSources:
     accessedAt: "2026-09-07"
     assertion: "Lokale Beuteentscheidung, Cloud-Übertragung bei WLAN, Verschlüsselung, Training-Opt-out und Löschung."
     fields: ["review", "experience", "decision"]
+  - source: Flappie Support · Maße
+    url: https://support.flappiedoors.com/en-US/all-flappie-dimensions-4794786
+    accessedAt: "2026-09-07"
+    assertion: Außenmaß, Durchgang, Öffnungen, Einbautiefe und Erweiterungsgrenzen.
+    fields:
+      - comparisonData.catFlap.installation.doorSupported
+      - comparisonData.catFlap.installation.wallSupported
+      - comparisonData.catFlap.installation.glassSupported
+      - comparisonData.catFlap.installation.cutoutWidthMm
+      - comparisonData.catFlap.installation.cutoutHeightMm
+      - comparisonData.catFlap.installation.passageWidthMm
+      - comparisonData.catFlap.installation.passageHeightMm
+    sourceType: manufacturer
 ---
 
 Flappie beantwortet zuerst die Frage **„Trägt die Katze Beute?“** Die Entscheidung läuft laut Hersteller direkt auf der

@@ -219,6 +219,18 @@ comparisonData:
     filterwechsel: Herstellerempfehlung alle zwei bis vier Wochen
     gewicht: ca. 0,62 kg
     geeignet_fur: Katzen und kleine Hunde
+  fountain:
+    capacityLiters: 2.2
+    material:
+      - Polypropylen (PP)
+    powerType:
+      status: known
+      value: battery
+    batteryRuntime:
+      status: known
+      value:
+        maxDays: 30
+        conditions: Herstellerangabe bis 30 Tage
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -242,6 +254,21 @@ decisionFacts:
   - label: "Filter"
     value: "fünfstufig"
     consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
+evidenceSources:
+  - source: Herstellerdokumentation · oneisall 2,2L Cordless Cat Fountain
+    url: https://oneisall.com/products/oneisall-2-2l-cordless-cat-water-fountain
+    accessedAt: "2026-07-16"
+    sourceType: manufacturer
+    assertion: >-
+      Bereits dokumentierte technische Daten: Kapazität: 2,2 Liter; Material: Polypropylen (PP); Stromversorgung: Akku,
+      Laden über USB-C mit 5 V/1 A; Akkulaufzeit: Herstellerangabe bis 30 Tage; Lautstärke: Herstellerangabe unter 20 dB;
+      Reinigung: Filter vor Gebrauch einweichen. Brunnen alle ein bis zwei Wochen reinigen und Filter etwa alle zwei bis
+      vier Wochen wechseln.. Normalisierung des vorhandenen Quellenstands, keine erneute externe Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.material
+      - comparisonData.fountain.powerType
+      - comparisonData.fountain.batteryRuntime
 ---
 Der oneisall 2,2L ist ein kompakter kabelloser Kunststoffbrunnen. Sein Hauptvorteil ist die flexible Platzierung, nicht Materialqualität oder Smart-Funktionalität.
 

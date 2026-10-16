@@ -145,7 +145,30 @@ specs:
     value: "Catit PIXI Trinkbrunnenfilter 43721/43722/43723; Wechsel laut Hersteller etwa alle 30 Tage"
 features: ["App-Steuerung", "UVC-Zyklen", "Trockenlaufschutz", "Filter- und Pumpenerinnerung", "Gerätefreigabe"]
 useCase: "Kompakter App- und UVC-Trinkbrunnen für Katzen"
-comparisonData: { version: 1, custom: { kapazitaet: "2 Liter", material: "BPA-freier Kunststoff; Edelstahl-Trinkfläche", lautstaerke: "Nicht belastbar ausgewiesen", filter: "Dreifachfilter; Wechsel alle 30 Tage laut Hersteller", reinigung: "Edelstahleinsatz spülmaschinengeeignet; übrige Teile separat", stromversorgung: "Netzbetrieb; 2,4-GHz-WLAN", eignung: "Katzen; App-/UVC-Fokus" } }
+comparisonData:
+  version: 1
+  custom:
+    kapazitaet: 2 Liter
+    material: BPA-freier Kunststoff; Edelstahl-Trinkfläche
+    lautstaerke: Nicht belastbar ausgewiesen
+    filter: Dreifachfilter; Wechsel alle 30 Tage laut Hersteller
+    reinigung: Edelstahleinsatz spülmaschinengeeignet; übrige Teile separat
+    stromversorgung: Netzbetrieb; 2,4-GHz-WLAN
+    eignung: Katzen; App-/UVC-Fokus
+  fountain:
+    capacityLiters: 2
+    material:
+      - BPA-freier Kunststoff mit Edelstahl-Trinkfläche
+    powerType:
+      status: known
+      value: mains
+    pumpRemovable:
+      status: known
+      value: true
+    dishwasherSafeParts:
+      status: known
+      value:
+        - Edelstahleinsatz; übrige Teile nach Anleitung
 comparisonFilters: { animal: ["cat"], petSize: ["small", "medium"], foodType: [], app: true, reservoirLiters: 2 }
 alternatives: ["petkit-eversweet-max-2-uvc", "petkit-eversweet-solo-2-fountain", "petsafe-streamside-trinkbrunnen"]
 comparisons: ["beste-trinkbrunnen-fuer-katzen"]
@@ -177,6 +200,22 @@ evidenceSources:
     fields:
       - "ratings"
       - "externalEvidence"
+  - source: Catit PIXI Smart-Trinkbrunnen
+    url: https://www.catit.com/de/produkte/trinkbrunnen/pixi-smart-trinkbrunnen/
+    accessedAt: "2026-08-16"
+    assertion: >-
+      Bereits dokumentierte technische Daten: Kapazität: 2 Liter; Material: BPA-freier Kunststoff mit
+      Edelstahl-Trinkfläche; Stromversorgung: Netzbetrieb; durchschnittlich unter 1 W laut Hersteller; Reinigung:
+      Edelstahleinsatz spülmaschinengeeignet; Pumpe und übrige Teile nach Anleitung reinigen; Lautstärke: Superleise,
+      vollständig abnehmbare Pumpe; kein konkreter dB-Wert veröffentlicht. Normalisierung des vorhandenen Quellenstands,
+      keine erneute externe Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.material
+      - comparisonData.fountain.powerType
+      - comparisonData.fountain.pumpRemovable
+      - comparisonData.fountain.dishwasherSafeParts
+    sourceType: manufacturer
 experience:
   summary: >-
     Redaktionelle Einordnung aus Herstellerdokumentation, unabhängigen Tests und dokumentierten Nutzersignalen.

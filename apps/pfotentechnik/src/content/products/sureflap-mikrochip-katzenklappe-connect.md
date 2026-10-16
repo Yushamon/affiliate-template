@@ -229,17 +229,48 @@ decisionFacts:
 comparisonData:
   version: 1
   custom:
-    zugang: "Mikrochip oder kompatibler RFID-Anhänger"
-    richtungsrechte: "Individuelle Ein- und Ausgangsrechte"
-    app: "Ja, über Sure Petcare Hub"
-    strom: "4 AA-Batterien"
-    einbau: "Tür, Glas und Wand mit passendem Zubehör"
-    durchgang: "142 × 120 mm"
-    rolle: "Vernetzte Mikrochip-Katzenklappe"
-    hub_erforderlich: "Ja, für die Verbindung mit der Sure Petcare App"
+    zugang: Mikrochip oder kompatibler RFID-Anhänger
+    richtungsrechte: Individuelle Ein- und Ausgangsrechte
+    app: Ja, über Sure Petcare Hub
+    strom: 4 AA-Batterien
+    einbau: Tür, Glas und Wand mit passendem Zubehör
+    durchgang: 142 × 120 mm
+    rolle: Vernetzte Mikrochip-Katzenklappe
+    hub_erforderlich: Ja, für die Verbindung mit der Sure Petcare App
     security_support: "Hub: zwei Jahre ab Kaufdatum des Hubs dokumentiert"
-    verriegelungslogik: "Im Standardbetrieb beidseitig verriegelt; entriegelt nach autorisiertem Chipfund auf der jeweiligen Seite und verriegelt wieder, sobald die Katze vollständig passiert hat"
-    tailgating_schutz: "Nicht dokumentiert; vollständiges Passieren einer autorisierten Katze ist keine mechanische Vereinzelung"
+    verriegelungslogik: >-
+      Im Standardbetrieb beidseitig verriegelt; entriegelt nach autorisiertem Chipfund auf der jeweiligen Seite und
+      verriegelt wieder, sobald die Katze vollständig passiert hat
+    tailgating_schutz: Nicht dokumentiert; vollständiges Passieren einer autorisierten Katze ist keine mechanische Vereinzelung
+  catFlap:
+    installation:
+      status: partial
+      doorSupported:
+        status: known
+        value: true
+      wallSupported:
+        status: known
+        value: true
+      glassSupported:
+        status: known
+        value: true
+      cutoutWidthMm:
+        status: known
+        value: 165
+      cutoutHeightMm:
+        status: known
+        value: 171
+      roundCutoutDiameterMm:
+        status: known
+        value: 212
+      passageWidthMm:
+        status: known
+        value: 142
+      passageHeightMm:
+        status: known
+        value: 120
+      notes:
+        - Tür, Glas und Wand mit passendem Zubehör; keine pauschale Adapterpflicht dokumentiert.
 faq:
   - question: "Funktioniert die Mikrochip-Erkennung ohne Internet?"
     answer: "Die grundlegende Mikrochip-Erkennung arbeitet lokal an der Klappe. Vernetzte Funktionen benötigen Hub und Internet."
@@ -290,6 +321,20 @@ evidenceSources:
       - "decisionFacts"
       - "comparisonData"
       - "faq"
+  - source: Sure Petcare Deutschland – Mikrochip Katzenklappe Connect
+    url: https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe-connect
+    accessedAt: "2026-08-05"
+    assertion: Mikrochipzugang, App- und Hub-Abhängigkeit, individuelle Rechte, Maße, Batteriebetrieb und Einbau.
+    fields:
+      - comparisonData.catFlap.installation.doorSupported
+      - comparisonData.catFlap.installation.wallSupported
+      - comparisonData.catFlap.installation.glassSupported
+      - comparisonData.catFlap.installation.cutoutWidthMm
+      - comparisonData.catFlap.installation.cutoutHeightMm
+      - comparisonData.catFlap.installation.roundCutoutDiameterMm
+      - comparisonData.catFlap.installation.passageWidthMm
+      - comparisonData.catFlap.installation.passageHeightMm
+    sourceType: manufacturer
 score: 79
 ratings:
   zugang_und_sicherheit: 4.4

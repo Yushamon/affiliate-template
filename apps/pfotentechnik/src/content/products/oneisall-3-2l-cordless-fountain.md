@@ -330,6 +330,21 @@ comparisonData:
     lieferumfang: Brunnen, Edelstahl-Trinkfläche, Pumpeneinheit, Filter, Bürste, USB-C-Kabel, 5-V/1-A-Adapter und Anleitung
     garantie: 2 Jahre laut oneisall
     geeignet_fur: Katzen und kleine Hunde
+  fountain:
+    capacityLiters: 3.2
+    material:
+      - ABS-Tank mit Trinkfläche aus Edelstahl 304
+    powerType:
+      status: known
+      value: battery
+    pumpRemovable:
+      status: known
+      value: true
+    batteryRuntime:
+      status: known
+      value:
+        maxDays: 30
+        conditions: Herstellerangabe bis zu 30 Tage; abhängig von Betriebsmodus und Nutzung
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -353,6 +368,25 @@ decisionFacts:
   - label: "Filterung"
     value: "fünfstufig"
     consequence: "Filter funktionieren nur bei regelmäßigem Wechsel und verursachen laufende Folgekosten."
+evidenceSources:
+  - source: Herstellerdokumentation · oneisall 3,2L Cordless Cat Fountain
+    url: https://oneisall.com/products/oneisall-3-2l-cordless-cat-water-fountain
+    accessedAt: "2026-07-23"
+    sourceType: manufacturer
+    assertion: >-
+      Bereits dokumentierte technische Daten: Kapazität: 3,2 Liter beziehungsweise 108 fl. oz.; Material: ABS-Tank mit
+      Trinkfläche aus Edelstahl 304; Akkulaufzeit: Herstellerangabe bis zu 30 Tage; abhängig von Betriebsmodus und
+      Nutzung; Lautstärke: Herstellerangabe ungefähr 20 dB; Pumpe: abnehmbare kabellose SilentFlow-Pumpeneinheit;
+      Reinigung: Filter vor der ersten Verwendung fünf Minuten einweichen. Trinkfläche, Tank und Filterhalter mindestens
+      alle ein bis zwei Wochen reinigen, Wasser deutlich häufiger erneuern und Filter je nach Verschmutzung ungefähr alle
+      zwei bis vier Wochen ersetzen. Steuermodul und Ladebereich nicht eintauchen.. Normalisierung des vorhandenen
+      Quellenstands, keine erneute externe Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.material
+      - comparisonData.fountain.powerType
+      - comparisonData.fountain.pumpRemovable
+      - comparisonData.fountain.batteryRuntime
 ---
 Der oneisall PW14 ist ein kabelloser Trinkbrunnen mit 3,2 Litern Wasserreserve. Gegenüber dem kleineren PW13 bietet er mehr Volumen und eine Trinkfläche aus Edelstahl 304.
 

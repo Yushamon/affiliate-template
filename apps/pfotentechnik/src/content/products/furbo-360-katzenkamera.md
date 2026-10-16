@@ -69,27 +69,38 @@ specs:
 features: ["1080p", "360°-Rotation", "4× Digitalzoom", "Auto-Tracking", "Leckerliwurf", "Feder-Spielzeug", "Meowing Alert"]
 comparisonData:
   custom:
-    klasse: "Katzenspezifische Interaktionskamera"
-    speicher: "Videoverlauf über Furbo Nanny; keine lokale Speicherung belegt"
-    abo: "Basis-Livebild, Audio, Tracking, Leckerliwurf und Meowing Alert; Diary/Verlauf/weitere Alerts tarifabhängig"
-    interaktion: "Audio, Leckerliwurf und Feder-Spielzeug"
-    abdeckung: "360°-Rotation im offenen Raum"
-    bild: "1080p FHD; 4× Digitalzoom; Farbnachtsicht"
-    lokale_speicherung: "Nein belegt"
-    cloud_erforderlich: "Für Videoverlauf und Nanny-Funktionen"
-    cloud_optional: "Ja für Live-Nutzung ohne Verlauf"
-    pflichtabo: "Kein Pflichtabo für belegte Basisfunktionen"
-    bezahlfunktionen: "Kitty Diary, Videoverlauf und zusätzliche Smart Alerts"
-    kostenlose_grundfunktionen: "Livebild, Zwei-Wege-Audio, Tracking, Leckerliwurf, Meowing Alert"
-    microsd: "Nicht ausgewiesen"
-    aufloesung: "1080p FHD"
-    schwenk_neige: "360°-Rotation; keine vertikale Neigung belegt"
-    tracking: "Automatische Rotation und Digitalzoom"
-    nachtsicht: "Farbe"
-    audio: "Zwei-Wege-Audio"
-    tiererkennung: "Katzentracking; keine individuelle Mehrkatzenerkennung belegt"
-    herstellerdienst: "App erforderlich; Nanny für Verlauf, Diary und zusätzliche Alerts"
-    katzeninteraktion: "Feder-Spielzeug, Leckerliwurf, Meowing Alert"
+    klasse: Katzenspezifische Interaktionskamera
+    speicher: Videoverlauf über Furbo Nanny; keine lokale Speicherung belegt
+    abo: Basis-Livebild, Audio, Tracking, Leckerliwurf und Meowing Alert; Diary/Verlauf/weitere Alerts tarifabhängig
+    interaktion: Audio, Leckerliwurf und Feder-Spielzeug
+    abdeckung: 360°-Rotation im offenen Raum
+    bild: 1080p FHD; 4× Digitalzoom; Farbnachtsicht
+    lokale_speicherung: Nein belegt
+    cloud_erforderlich: Für Videoverlauf und Nanny-Funktionen
+    cloud_optional: Ja für Live-Nutzung ohne Verlauf
+    pflichtabo: Kein Pflichtabo für belegte Basisfunktionen
+    bezahlfunktionen: Kitty Diary, Videoverlauf und zusätzliche Smart Alerts
+    kostenlose_grundfunktionen: Livebild, Zwei-Wege-Audio, Tracking, Leckerliwurf, Meowing Alert
+    microsd: Nicht ausgewiesen
+    aufloesung: 1080p FHD
+    schwenk_neige: 360°-Rotation; keine vertikale Neigung belegt
+    tracking: Automatische Rotation und Digitalzoom
+    nachtsicht: Farbe
+    audio: Zwei-Wege-Audio
+    tiererkennung: Katzentracking; keine individuelle Mehrkatzenerkennung belegt
+    herstellerdienst: App erforderlich; Nanny für Verlauf, Diary und zusätzliche Alerts
+    katzeninteraktion: Feder-Spielzeug, Leckerliwurf, Meowing Alert
+  camera:
+    localStorage: unknown
+    cloud: optional
+    detection: unknown
+    detectionTypes:
+      - cat
+    nightVision: color
+    notes:
+      - >-
+        Keine lokale Speicherung belegt bedeutet unbekannt, nicht nachgewiesen ausgeschlossen. Cloud für Videoverlauf und
+        Nanny; Basis-Livebild ohne Nanny.
 comparisons: ["beste-haustierkameras"]
 comparisonFilters: { animal: ["cat"], petSize: ["small", "medium", "large"], foodType: [] }
 failureModes:
@@ -106,6 +117,21 @@ editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentati
 evidenceSources:
   - { source: "Furbo 360° Cat Camera EU", url: "https://www.furbo.com/eu-en/products/furbo-360-cat-camera", accessedAt: "2026-08-21", assertion: "Eigenständiges EU-Modell, Verfügbarkeit, Angebot und Garantiehinweise.", fields: ["availability", "decision"] }
   - { source: "Furbo EU Kameravergleich", url: "https://furbo.com/eu-en/pages/comparison", accessedAt: "2026-08-21", assertion: "Video, Rotation, Zoom, Tracking, Interaktion, Nanny-Abhängigkeiten, Lieferumfang und Garantie.", fields: ["specs", "features", "comparisonData"] }
+  - source: Herstellerdokumentation · Furbo 360° Katzenkamera
+    url: https://help.furbo.com/hc/de/articles/17462739016089-Furbo-Nanny-Abonnements-und-Preise
+    accessedAt: "2026-09-02"
+    sourceType: manufacturer
+    assertion: Bereits dokumentierter Dienstumfang aus subscription; unveränderte Tarif- und Preisangaben.
+    fields:
+      - comparisonData.camera.cloud
+  - source: Furbo EU Kameravergleich
+    url: https://furbo.com/eu-en/pages/comparison
+    accessedAt: "2026-08-21"
+    assertion: Video, Rotation, Zoom, Tracking, Interaktion, Nanny-Abhängigkeiten, Lieferumfang und Garantie.
+    fields:
+      - comparisonData.camera.detectionTypes
+      - comparisonData.camera.nightVision
+    sourceType: manufacturer
 affiliate:
   provider: "furbo-eu"
   label: "Preis und Verfügbarkeit prüfen"

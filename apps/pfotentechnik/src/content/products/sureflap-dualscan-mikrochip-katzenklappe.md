@@ -174,15 +174,49 @@ decisionFacts:
 comparisonData:
   version: 1
   custom:
-    zugang: "Mikrochip beidseitig"
-    richtungsrechte: "Individuelle Ein- und Ausgangsrechte"
-    app: "Nein"
-    strom: "4 AA-Batterien"
-    einbau: "Tür, Glas und Wand mit passendem Zubehör"
-    durchgang: "142 × 120 mm"
-    rolle: "Lokale Mehrkatzenklappe mit Richtungsrechten"
-    verriegelungslogik: "Mikrochipprüfung auf beiden Seiten; unberechtigte Tiere bleiben laut Hersteller ausgesperrt; exakter Wiederverriegelungszeitpunkt nicht dokumentiert"
-    tailgating_schutz: "Nicht dokumentiert"
+    zugang: Mikrochip beidseitig
+    richtungsrechte: Individuelle Ein- und Ausgangsrechte
+    app: Nein
+    strom: 4 AA-Batterien
+    einbau: Tür, Glas und Wand mit passendem Zubehör
+    durchgang: 142 × 120 mm
+    rolle: Lokale Mehrkatzenklappe mit Richtungsrechten
+    verriegelungslogik: >-
+      Mikrochipprüfung auf beiden Seiten; unberechtigte Tiere bleiben laut Hersteller ausgesperrt; exakter
+      Wiederverriegelungszeitpunkt nicht dokumentiert
+    tailgating_schutz: Nicht dokumentiert
+  catFlap:
+    installation:
+      status: partial
+      doorSupported:
+        status: known
+        value: true
+      wallSupported:
+        status: known
+        value: true
+      glassSupported:
+        status: known
+        value: true
+      cutoutWidthMm:
+        status: known
+        value: 165
+      cutoutHeightMm:
+        status: known
+        value: 171
+      roundCutoutDiameterMm:
+        status: known
+        value: 212
+      passageWidthMm:
+        status: known
+        value: 142
+      passageHeightMm:
+        status: known
+        value: 120
+      tunnelDepthMm:
+        status: known
+        value: 70
+      notes:
+        - 212 mm idealer Glasausschnitt; bis 260 mm mit Montageadapter. Einbau mit passendem Zubehör.
 alternatives:
   - "sureflap-mikrochip-katzenklappe"
   - "sureflap-mikrochip-katzenklappe-connect"
@@ -237,6 +271,21 @@ evidenceSources:
     fields:
       - "decisionFacts"
       - "comparisonData"
+  - source: Sure Petcare Deutschland – DualScan Mikrochip Katzenklappe
+    url: https://www.surepetcare.com/de-de/haustierklappen/dualscan-mikrochip-katzenklappe
+    accessedAt: "2026-08-05"
+    assertion: Ausgangsrechte, Speicher, Batteriebetrieb, Maße, Einbau, Sicherheitsmodus und Verfügbarkeit.
+    fields:
+      - comparisonData.catFlap.installation.doorSupported
+      - comparisonData.catFlap.installation.wallSupported
+      - comparisonData.catFlap.installation.glassSupported
+      - comparisonData.catFlap.installation.cutoutWidthMm
+      - comparisonData.catFlap.installation.cutoutHeightMm
+      - comparisonData.catFlap.installation.roundCutoutDiameterMm
+      - comparisonData.catFlap.installation.passageWidthMm
+      - comparisonData.catFlap.installation.passageHeightMm
+      - comparisonData.catFlap.installation.tunnelDepthMm
+    sourceType: manufacturer
 score: 84
 ratings:
   zugang_und_sicherheit: 4.3

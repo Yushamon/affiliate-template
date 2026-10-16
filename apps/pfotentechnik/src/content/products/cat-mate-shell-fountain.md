@@ -240,6 +240,13 @@ comparisonData:
     pumpenreinigung: monatlich, bei hartem Wasser häufiger
     geeignet_fur: Katzen und kleine Hunde
     akku: Nein
+  fountain:
+    capacityLiters: 3
+    material:
+      - BPA-freies Polypropylen
+    powerType:
+      status: known
+      value: mains
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -263,6 +270,19 @@ decisionFacts:
   - label: "Lautstärke"
     value: "Nicht vom Hersteller ausgewiesen"
     consequence: "Geräusche können bei schreckhaften Tieren und in Schlafräumen kaufentscheidend sein."
+evidenceSources:
+  - source: Herstellerdokumentation · Cat Mate Shell Pet Fountain
+    url: https://closerpets.com/pages/faq-cat-mate-two-level-three-litre-shell-pet-fountain-white-410-410e
+    accessedAt: "2026-07-16"
+    sourceType: manufacturer
+    assertion: >-
+      Bereits dokumentierte technische Daten: Kapazität: 3 Liter; Material: BPA-freies Polypropylen; Stromversorgung:
+      Niedervolt-Netzbetrieb mit etwa 3 m Kabel; Lautstärke: Nicht vom Hersteller ausgewiesen. Normalisierung des
+      vorhandenen Quellenstands, keine erneute externe Prüfung.
+    fields:
+      - comparisonData.fountain.capacityLiters
+      - comparisonData.fountain.material
+      - comparisonData.fountain.powerType
 ---
 Der Cat Mate Shell Pet Fountain ist ein vergleichsweise klassischer Brunnen. Er arbeitet ohne App, Akku oder Sensorik und bietet stattdessen zwei Trinkhöhen sowie eine regelbare Pumpe.
 

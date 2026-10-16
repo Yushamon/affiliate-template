@@ -202,24 +202,38 @@ specs:
 comparisonData:
   version: 1
   custom:
-    klasse: "Stationäre Pan/Tilt-Kamera mit lokaler Option"
-    speicher: "microSD lokal möglich; Cloud optional"
-    abo: "Kein Pflichtabo; optionale Bezahldienste"
-    interaktion: "Zwei-Wege-Audio"
-    abdeckung: "Schwenken/Neigen; Hersteller beschreibt 360°"
-    bild: "3 MP; Nachtsicht"
-    lokale_speicherung: "Ja, microSD"
-    cloud_erforderlich: "Nein für lokale Aufzeichnung/Basisfunktionen"
-    cloud_optional: "Ja"
-    pflichtabo: "Nein"
-    bezahlfunktionen: "Cloud Event Video und Cloud AI optional"
-    kostenlose_grundfunktionen: "Livestream, Fotos, Audio laut Hersteller"
-    microsd: "Ja"
-    aufloesung: "3 MP"
-    schwenk_neige: "Ja"
-    tracking: "Bewegungsverfolgung"
-    nachtsicht: "Ja"
-    audio: "Zwei-Wege-Audio"
+    klasse: Stationäre Pan/Tilt-Kamera mit lokaler Option
+    speicher: microSD lokal möglich; Cloud optional
+    abo: Kein Pflichtabo; optionale Bezahldienste
+    interaktion: Zwei-Wege-Audio
+    abdeckung: Schwenken/Neigen; Hersteller beschreibt 360°
+    bild: 3 MP; Nachtsicht
+    lokale_speicherung: Ja, microSD
+    cloud_erforderlich: Nein für lokale Aufzeichnung/Basisfunktionen
+    cloud_optional: Ja
+    pflichtabo: Nein
+    bezahlfunktionen: Cloud Event Video und Cloud AI optional
+    kostenlose_grundfunktionen: Livestream, Fotos, Audio laut Hersteller
+    microsd: Ja
+    aufloesung: 3 MP
+    schwenk_neige: Ja
+    tracking: Bewegungsverfolgung
+    nachtsicht: Ja
+    audio: Zwei-Wege-Audio
+  camera:
+    localStorage: supported
+    localStorageTypes:
+      - microSD
+    cloud: optional
+    detection: unknown
+    detectionTypes:
+      - motion
+      - other
+    nightVision: unknown
+    notes:
+      - >-
+        Geräuscherkennung zusätzlich zu Bewegung. Cloud-AI optional; Ort der grundlegenden Erkennung und Nachtsichttyp
+        nicht eindeutig ausgewiesen.
 comparisonFilters:
   animal:
     - "dog"
@@ -308,6 +322,22 @@ evidenceSources:
     fields:
       - "ratings"
       - "externalEvidence"
+  - source: Herstellerdokumentation · PetTec Cam 360
+    url: https://pettec.de/pages/cloud-plus
+    accessedAt: "2026-09-03"
+    sourceType: manufacturer
+    assertion: Bereits dokumentierter Dienstumfang aus subscription; unveränderte Tarif- und Preisangaben.
+    fields:
+      - comparisonData.camera.cloud
+  - source: PetTec Cam 360
+    url: https://pettec.de/products/pet-cam-360
+    accessedAt: "2026-08-15"
+    assertion: 3 MP, Pan/Tilt, Erkennung, Tracking, Nachtsicht, Audio, Maße und Speicheroptionen sind Herstellerangaben.
+    fields:
+      - comparisonData.camera.localStorage
+      - comparisonData.camera.localStorageTypes
+      - comparisonData.camera.detectionTypes
+    sourceType: manufacturer
 ---
 
 ## Lokal speichern, Cloud optional halten
