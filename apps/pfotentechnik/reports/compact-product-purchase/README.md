@@ -58,3 +58,5 @@ Ergebnisse:
 Die Implementierung und ersten Tests wurden während der Bearbeitung durch externe Git-Schritte bereits in `6a8d410f` auf `main` übernommen; `5d8baa38` enthält den abschließenden UI-Feinschliff und den Browserprüfer. Dieser Review ergänzt einen Regressionstest über sämtliche Produktseiten, die abschließende Dokumentation, aktualisierte Browsernachweise und Vorher-/Nachher-Aufnahmen. Die bereits auf `main` liegende Implementierung ist deshalb nicht nochmals als neue PR-Differenz enthalten.
 
 Durch diesen Auftrag wurde kein Deployment oder Merge ausgelöst. Aus einem erfolgreichen lokalen Build oder einem Push wird kein Produktionsrollout abgeleitet.
+
+Abschluss der Integration: Auf ausdrücklichen Nutzerwunsch sind dieser Review, das nachfolgende Produktseiten-Redesign und die Amazon-Audit-Ergänzung in `main` zusammengeführt. Die aktuelle erweiterte Testabdeckung besteht mit 985 App-Tests; Build und technische Integritätsprüfungen sind erfolgreich. Kein Deployment wurde gestartet.

@@ -86,4 +86,4 @@ Für die Browserprüfung wird Chrome/Chromium benötigt (`CHROME_PATH` bei abwei
 
 ## Status
 
-Implementierung und Nachweise liegen im Review-Branch. Kein automatischer Merge und kein Deployment wurden ausgelöst. Die Produktionsdarstellung wird durch den lokalen Build nicht geändert.
+Implementierung, Amazon-Audit-Ergänzung und Nachweise wurden auf ausdrücklichen Nutzerwunsch in `main` zusammengeführt. Der gemeinsame Stand besteht den Production Build mit 374 Seiten, 985 App-Tests, 26 Affiliate-Core-Tests sowie den technischen SEO- und Preis-/Verfügbarkeits-Audit. Der gerenderte Amazon-Audit bestätigt 0 unterdrückte gültige CTAs. Es wurde kein Deployment gestartet. Die Produktionsdarstellung wird durch den lokalen Build nicht geändert.
