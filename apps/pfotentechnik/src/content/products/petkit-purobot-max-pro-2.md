@@ -43,10 +43,10 @@ images:
     alt: "PETKIT PUROBOT MAX PRO 2 in hochwertiger Produktansicht"
   gallery: []
 price:
-  current: 599.99
+  current: 499
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-09-15T03:47:07.214Z"
+  checkedAt: "2026-10-16T07:59:30.587Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -54,12 +54,12 @@ price:
 rating: 3.3
 
 priceState: "available"
-priceUpdated: "2026-09-15T03:47:07.214Z"
+priceUpdated: "2026-10-16T07:59:30.587Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-09-15T03:47:07.214Z"
+availabilityUpdated: "2026-10-16T07:59:30.587Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

@@ -57,14 +57,14 @@ images:
     - src: ../../assets/images/products/petlibro-dockstream-rfid-smart/gallery-3.webp
       alt: PETLIBRO Dockstream RFID Smart mit mehreren Katzen
 price:
-  current: 119
+  current: 99.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-07-30T08:49:32.961Z"
+  checkedAt: "2026-10-16T07:59:49.096Z"
   source:
-    id: "manual"
-    label: "amzn.to"
-    type: "manual"
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 affiliate:
   provider: "amazon"
   label: "Verfügbarkeit und Preis prüfen"
@@ -75,11 +75,12 @@ rating: 4
 score: 80
 
 priceState: "available"
-priceUpdated: "2026-07-30T08:49:32.961Z"
+priceUpdated: "2026-10-16T07:59:49.096Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
-availabilityUpdated: "2026-07-30T08:49:32.961Z"
+availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
+availabilityUpdated: "2026-10-16T07:59:49.096Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
@@ -337,7 +338,7 @@ offers:
     availability: "unknown"
     identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
     evidenceSources: []
-    lastAttemptAt: "2026-10-03T06:51:10.896Z"
+    lastAttemptAt: "2026-10-16T07:59:49.117Z"
     error: "Offizielle Produkt-URL unresolved."
 ---
 Der Dockstream RFID Smart löst ein reales Problem in Mehrkatzenhaushalten: Der Gesamtverbrauch eines Brunnens sagt nicht, welches Tier tatsächlich getrunken hat.

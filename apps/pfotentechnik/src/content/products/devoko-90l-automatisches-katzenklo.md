@@ -69,10 +69,10 @@ images:
     - src: "../../assets/images/products/devoko-90l-automatisches-katzenklo/gallery-5.webp"
       alt: "Devoko 90L Automatisches Katzenklo, weitere Produktansicht 2"
 price:
-  current: 239.99
+  current: 198.53
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-10-03T06:50:11.939Z"
+  checkedAt: "2026-10-16T07:58:32.801Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -86,12 +86,12 @@ affiliate:
   target: "_blank"
 
 priceState: "available"
-priceUpdated: "2026-10-03T06:50:11.939Z"
+priceUpdated: "2026-10-16T07:58:32.801Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-10-03T06:50:11.939Z"
+availabilityUpdated: "2026-10-16T07:58:32.801Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

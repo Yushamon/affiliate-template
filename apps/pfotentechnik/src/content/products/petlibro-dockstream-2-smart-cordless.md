@@ -60,7 +60,7 @@ price:
   current: 105.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-10-03T06:51:05.145Z"
+  checkedAt: "2026-10-16T07:59:42.118Z"
   source:
     id: "de.petlibro.com"
     label: "de.petlibro.com"
@@ -88,7 +88,7 @@ offers:
       current: 115.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-10-03T06:51:05.304Z"
+      checkedAt: "2026-10-16T07:59:42.315Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -112,14 +112,14 @@ offers:
     variantId: "52389571494254"
     expectedSku: "PL-WF116-31W"
     variantLabel: "Weiß / Schnurlos"
-    lastAttemptAt: "2026-10-03T06:51:05.304Z"
+    lastAttemptAt: "2026-10-16T07:59:42.315Z"
 priceState: "available"
-priceUpdated: "2026-10-03T06:51:05.145Z"
+priceUpdated: "2026-10-16T07:59:42.118Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-10-03T06:51:05.145Z"
+availabilityUpdated: "2026-10-16T07:59:42.118Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

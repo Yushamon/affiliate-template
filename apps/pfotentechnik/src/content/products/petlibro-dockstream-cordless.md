@@ -59,10 +59,10 @@ images:
     - src: ../../assets/images/products/petlibro-dockstream-cordless/gallery-3.webp
       alt: PETLIBRO Dockstream Cordless im Katzenhaushalt
 price:
-  current: 56.98
+  current: 59.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-10-03T06:51:09.008Z"
+  checkedAt: "2026-10-16T07:59:46.631Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -77,12 +77,12 @@ rating: 4
 score: 79
 
 priceState: "available"
-priceUpdated: "2026-10-03T06:51:09.008Z"
+priceUpdated: "2026-10-16T07:59:46.631Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-10-03T06:51:09.008Z"
+availabilityUpdated: "2026-10-16T07:59:46.631Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
@@ -304,7 +304,7 @@ offers:
     availability: "unknown"
     identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
     evidenceSources: []
-    lastAttemptAt: "2026-10-03T06:51:09.014Z"
+    lastAttemptAt: "2026-10-16T07:59:46.654Z"
     error: "Offizielle Produkt-URL unresolved."
 ---
 Der Dockstream Cordless ist das ältere, nicht smarte Akkumodell. Er darf nicht mit dem Dockstream 2 Smart Cordless verwechselt werden.

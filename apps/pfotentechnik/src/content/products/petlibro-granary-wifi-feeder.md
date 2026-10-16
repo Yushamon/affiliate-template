@@ -60,10 +60,10 @@ images:
     - src: ../../assets/images/products/petlibro-granary-wifi-feeder/gallery-3.webp
       alt: PETLIBRO Granary im Katzenhaushalt
 price:
-  current: 104.97
+  current: 104.96
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-10-03T06:51:21.413Z"
+  checkedAt: "2026-10-16T08:00:00.439Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -78,12 +78,12 @@ rating: 4.1
 score: 82
 
 priceState: "available"
-priceUpdated: "2026-10-03T06:51:21.413Z"
+priceUpdated: "2026-10-16T08:00:00.439Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-10-03T06:51:21.413Z"
+availabilityUpdated: "2026-10-16T08:00:00.439Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
@@ -340,7 +340,7 @@ offers:
       current: 109.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-10-03T06:51:21.578Z"
+      checkedAt: "2026-10-16T08:00:00.629Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -364,7 +364,7 @@ offers:
     variantId: "44414075732210"
     expectedSku: "PL-AF103-34W"
     variantLabel: "Weiß / Einzelne Schale"
-    lastAttemptAt: "2026-10-03T06:51:21.578Z"
+    lastAttemptAt: "2026-10-16T08:00:00.629Z"
 ---
 Der PETLIBRO Granary WiFi ist ein klassischer Vorratsautomat mit moderner App-Anbindung. Seine Stärke liegt in der Kombination aus großem Behälter, flexibler Planung und vergleichsweise breiter Futterkompatibilität.
 

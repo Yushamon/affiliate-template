@@ -63,10 +63,10 @@ images:
     - src: ../../assets/images/products/zeromouse-2-0/gallery-3.webp
       alt: Freigängerkatze vor einer mit ZeroMOUSE 2.0 nachgerüsteten Katzenklappe
 price:
-  current: 199
+  current: 179
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-10-03T06:51:57.317Z"
+  checkedAt: "2026-10-16T08:00:45.084Z"
   source:
     id: "zeromouse.com"
     label: "zeromouse.com"
@@ -84,12 +84,12 @@ conversion:
   showSecondaryCta: true
 
 priceState: "available"
-priceUpdated: "2026-10-03T06:51:57.317Z"
+priceUpdated: "2026-10-16T08:00:45.084Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-10-03T06:51:57.317Z"
+availabilityUpdated: "2026-10-16T08:00:45.084Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"

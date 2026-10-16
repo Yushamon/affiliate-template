@@ -64,11 +64,11 @@ images:
     - src: ../../assets/images/products/petlibro-one-rfid-smart-feeder/gallery-3.webp
       alt: Katze mit RFID-Halsbandanhänger vor dem geöffneten Zugang des PETLIBRO One
 price:
-  current: 149.99
+  current: 148.99
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 18 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-10-03T06:51:26.185Z"
+  checkedAt: "2026-10-16T08:00:05.370Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -83,12 +83,12 @@ rating: 3.7
 score: 74
 
 priceState: "available"
-priceUpdated: "2026-10-03T06:51:26.185Z"
+priceUpdated: "2026-10-16T08:00:05.370Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-10-03T06:51:26.185Z"
+availabilityUpdated: "2026-10-16T08:00:05.370Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
@@ -265,7 +265,7 @@ offers:
       current: 199.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-10-03T06:51:26.336Z"
+      checkedAt: "2026-10-16T08:00:05.530Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -289,7 +289,7 @@ offers:
     variantId: "53222683672942"
     expectedSku: "PL-AF301-38B"
     variantLabel: "1 Paket / Schwarz"
-    lastAttemptAt: "2026-10-03T06:51:26.336Z"
+    lastAttemptAt: "2026-10-16T08:00:05.530Z"
 ---
 Der PETLIBRO One RFID Smart Feeder kombiniert automatische Fütterung mit einem geschützten Napfzugang und eignet sich ideal für Mehrkatzenhaushalte.
 
