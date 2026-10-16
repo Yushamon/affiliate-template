@@ -364,7 +364,14 @@ export async function priceAudit() {
 
   return {
     generatedAt: new Date().toISOString(),
-    summary: dashboard,
+    summary: {
+      ...dashboard,
+      amazonLinks: products.filter(p => p.amazonLinkPresent).length,
+      amazonMissingSourceTag: products.filter(p => p.amazonMissingSourceTag).length,
+      amazonInvalidLink: products.filter(p => p.amazonInvalidLink).length,
+      amazonCtaSuppressed: products.filter(p => p.amazonCtaSuppressed).length,
+      noMerchantOption: products.filter(p => p.noMerchantOption).length
+    },
     products
   };
 }

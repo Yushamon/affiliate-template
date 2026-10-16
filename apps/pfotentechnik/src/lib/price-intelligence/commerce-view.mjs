@@ -2,8 +2,8 @@
 import {formatPrice, AVAILABILITY_LABELS} from '../product-operations/policy.mjs';
 const escape = value => String(value ?? '').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function commerceCockpitMarkup(offers = [], slug = '') {
-  if (!offers.length) return '<p>Keine Händlerquelle hinterlegt.</p>';
-  return `<details${offers.some(offer=>!offer.legacy) ? ' open' : ''}><summary>Händlerangebote (${offers.length}) — Preise unabhängig pflegen</summary><div class="ops-offers">${offers.map(offer=>`
+  if (!offers.length) return '<p role="status">Keine Händlerquelle hinterlegt. Keine aktive Kaufmöglichkeit.</p>';
+  return `${offers.some(offer => offer.canLink) ? '' : '<p role="status">Keine aktive Händleroption.</p>'}<details${offers.some(offer=>!offer.legacy) ? ' open' : ''}><summary>Händlerangebote (${offers.length}) — Preise unabhängig pflegen</summary><div class="ops-offers">${offers.map(offer=>`
     <section class="ops-offer" data-offer-id="${escape(offer.id)}">
       <strong>${escape(offer.label)} · ${escape(offer.network)}</strong>
       <strong data-stored-price>${escape(formatPrice(offer.price?.current,offer.price?.currency) || 'Kein Preis hinterlegt')}</strong>

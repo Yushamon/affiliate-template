@@ -6,9 +6,10 @@ import { affiliatePrograms } from '../config/affiliate-programs.mjs';
 import { ageInDays, formatPrice, inferInitialAvailability } from '../lib/product-operations/policy.mjs';
 
 export function legacyCommerceOffer(data) {
-  const url = httpsDestination(data.affiliate?.url ?? data.price?.affiliateUrl);
-  if (!url) return null;
-  const amazon = resolveAmazonProductAffiliate(url, projectConfig.affiliate.amazon.trackingId, amazonShortLinks).isAmazon || data.affiliate?.provider === 'amazon';
+  const rawUrl = data.affiliate?.url ?? data.price?.affiliateUrl;
+  const url = httpsDestination(rawUrl);
+  if (!url) return rawUrl ? {id:'legacy',legacy:true,merchant:data.affiliate?.provider === 'amazon' ? 'amazon' : 'unknown',label:'Ungültiges Händlerziel',network:'none',mappingStatus:'invalid',officialProductUrl:rawUrl,affiliate:{...data.affiliate,url:rawUrl},availability:'unknown',price:data.price} : null;
+  const amazon = resolveAmazonProductAffiliate(url, projectConfig.affiliate.amazon.trackingId, amazonShortLinks).isAmazon;
   const unresolvedMapping = !amazon && (data.offers ?? []).some(offer =>
     offer.mappingStatus !== 'verified' && (offer.merchant === new URL(url).hostname.split('.').slice(-2, -1)[0] ||
       offer.officialProductUrl && new URL(offer.officialProductUrl).hostname === new URL(url).hostname));
@@ -70,4 +71,15 @@ export function compareCommerceOffers(offers) {
   const sorted = [...visible].sort((a,b)=>(a.current+a.shipping)-(b.current+b.shipping));
   const difference = Math.round(((sorted[1].current+sorted[1].shipping)-(sorted[0].current+sorted[0].shipping))*100)/100;
   return {offers: sorted, cheapestId: difference > 0 ? sorted[0].id : null, saving: difference > 0 ? difference : null, hasConfiguredOffers};
+}
+
+export function commerceDiagnostics(offers) {
+  const amazon = offers.filter(offer => offer.amazonLink);
+  return {
+    amazonLinkPresent: amazon.length > 0,
+    amazonMissingSourceTag: amazon.some(offer => offer.amazonLink.missingSourceTag),
+    amazonInvalidLink: amazon.some(offer => !!offer.amazonLink.error),
+    amazonCtaSuppressed: amazon.some(offer => !!offer.amazonLink.url && !offer.canLink),
+    noMerchantOption: !offers.some(offer => offer.canLink)
+  };
 }

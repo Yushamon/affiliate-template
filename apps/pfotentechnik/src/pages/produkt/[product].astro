@@ -8,7 +8,6 @@ import AutoLinkContent from "@affiliate-core/components/AutoLinkContent.astro";
 import RelatedArticles from "@affiliate-core/components/RelatedArticles.astro";
 import DecisionNextSteps from "../../components/DecisionNextSteps.astro";
 import EditorialTransparency from "../../components/EditorialTransparency.astro";
-import { addAmazonTrackingId } from "@affiliate-core/affiliate";
 import { projectConfig, site } from "../../project.config";
 
 import {
@@ -253,10 +252,7 @@ const reviewProduct = {
           contentProduct.affiliate
             ? {
                 ...contentProduct.affiliate,
-                url: addAmazonTrackingId(
-                  contentProduct.affiliate.url,
-                  projectConfig.affiliate.amazon.trackingId
-                )
+                url: resolveCommerceOffers(contentProduct).find(offer => offer.legacy)?.affiliateUrl || ""
               }
             : undefined
       };

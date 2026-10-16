@@ -1,4 +1,4 @@
-import { resolveCommerceOffers } from '../../domain/commerceOffers.mjs';
+import { resolveCommerceOffers, commerceDiagnostics } from '../../domain/commerceOffers.mjs';
 
 export const AVAILABILITY_VALUES = Object.freeze([
   "available",
@@ -287,6 +287,7 @@ export function deriveProductOperations(data, options = {}) {
     : undefined;
 
   return {
+    ...commerceDiagnostics(offers),
     current,
     currency: /^[A-Z]{3}$/.test(String(data?.price?.currency || "EUR")) ? String(data?.price?.currency || "EUR") : "EUR",
     formattedPrice: formatPrice(current, data?.price?.currency || "EUR"),

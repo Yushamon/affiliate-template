@@ -472,6 +472,8 @@ export const buildProductExperienceModel = ({
   const priceIndex = getPriceIndex(allProducts, currentEntry);
   const price = priceIndex.bySlug.get(slug);
   const operations = deriveProductOperations(data);
+  const commerceOffers = resolveCommerceOffers(data);
+  const primaryMerchant = commerceOffers.find(offer => offer.canLink);
   const subscriptionCosts = buildSubscriptionCostModel({
     subscription: data.subscription,
     devicePrice: operations.priceAvailable && price && !price.isStale ? price.current : null,
@@ -702,16 +704,14 @@ export const buildProductExperienceModel = ({
     benefits,
     mainLimitation: limitations[0] ?? notFor[0] ?? "Keine zentrale Einschränkung redaktionell hinterlegt.",
     operations,
-    commerce: compareCommerceOffers(resolveCommerceOffers(data)),
+    commerce: compareCommerceOffers(commerceOffers),
     editorialMerchant: resolveCommerceOffers(data, {placement:'editorial-manufacturer',pageType:'product'}).find(offer => !offer.legacy && offer.canLink),
     price,
     subscriptionCosts,
     litterCompatibility,
     affiliate: {
-      url: text(reviewProduct.affiliate?.url ?? price?.affiliateUrl ?? data.affiliate?.url),
-      label: price?.formattedCurrent
-        ? `Preis bei ${price.source?.label ?? "Händler"} prüfen`
-        : text(data.affiliate?.label, "Preis und Verfügbarkeit prüfen"),
+      url: primaryMerchant?.affiliateUrl || undefined,
+      label: primaryMerchant?.ctaLabel || "Preis und Verfügbarkeit prüfen",
       rel: text(data.affiliate?.rel, "sponsored nofollow noopener"),
       target: data.affiliate?.target === "_self" ? "_self" : "_blank"
     },
