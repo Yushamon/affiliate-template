@@ -1,0 +1,44 @@
+
+> @affiliate-sites/pfotentechnik@1.0.0 audit:technical-seo
+> node scripts/seo/audit-week4-technical-seo.mjs
+
+OK  Sitemap schließt /admin/ aus
+OK  Sitemap schließt /api/ aus
+OK  Sitemap schließt Fehlerseiten aus
+OK  Sitemap nutzt Ausschlussfunktion
+OK  Sitemap-Lastmod wird validiert
+OK  ProjectLayout normalisiert Canonicals
+OK  ProjectLayout entfernt Query/Hash
+OK  AffiliateLayout normalisiert Canonicals
+OK  Redaktion als Organization
+OK  WebPage datePublished
+OK  WebPage dateModified
+OK  Ratgeber haben Article-Schema
+OK  Comparison übergibt publishedAt
+OK  Comparison übergibt updatedAt
+OK  ItemList hat stabile ID
+OK  ItemList enthält direkte Produktverweise
+OK  ItemList-Reihenfolge dokumentiert
+OK  Admin bleibt noindex
+OK  npm-Audit-Befehl vorhanden
+OK  Build-Verzeichnis vorhanden (/Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/dist)
+OK  Sitemap-Dateien vorhanden (2)
+OK  Keine internen Routen in Sitemap
+OK  Alle Sitemap-URLs sind gebaut
+OK  Sitemap-Canonicals konsistent
+OK  Keine noindex-Seite in Sitemap
+OK  Alle Admin-Seiten sind noindex
+OK  Ratgeber-HTML vorhanden (smarte-futterautomaten/index.html)
+OK  Ratgeber-Schema vollständig (gefunden: Organization, Article, ImageObject, BreadcrumbList, ListItem, FAQPage, Question, Answer)
+OK  Ratgeber-JSON-LD parsebar
+OK  Comparison-HTML vorhanden (vergleiche/beste-futterautomaten-ohne-wlan/index.html)
+OK  Comparison-Schema vollständig (gefunden: Organization, WebPage, WebSite, BreadcrumbList, ListItem, FAQPage, Question, Answer, ItemList)
+OK  Comparison-JSON-LD parsebar
+OK  Produkt-HTML vorhanden (produkt/petlibro-polar-wet-food-feeder/index.html)
+OK  Produkt-Schema vollständig (gefunden: Organization, WebPage, WebSite, BreadcrumbList, ListItem, Product, Brand, Offer, Review, Rating, ItemList)
+OK  Produkt-JSON-LD parsebar
+OK  Hersteller-HTML vorhanden (hersteller/petlibro/index.html)
+OK  Hersteller-Schema vollständig (gefunden: Organization, Article, ImageObject, BreadcrumbList, ListItem, FAQPage, Question, Answer)
+OK  Hersteller-JSON-LD parsebar
+
+Woche-4-Source- und Build-Audit erfolgreich.

@@ -72,3 +72,22 @@ test('link audit recognizes real advisor start/reset navigation without exemptin
   assert.ok(isAdvisorStateNavigation({...base,className:'world-back',href:'/kaufberatung/'}));
   for(const patch of [{href:'/kaufberatung/'},{href:'/kaufberatung/?world=invalid'},{href:'/kaufberatung/?world=gps&tracking=1'},{href:'https://elsewhere.example/kaufberatung/?world=gps'},{href:'/kaufberatung/?world=gps',sourceRoute:'/other/'},{href:'/kaufberatung/?world=gps',hasDecisionAdvisor:false}])assert.equal(isAdvisorStateNavigation({...base,...patch}),false);
 });
+test('controlled experiment selects 12 exact current URLs from the crawled cohort, never aliases or discovered URLs',()=>{
+  const archive=readCoverage(new URL('../reports/google-indexing-fix/coverage-input.json',import.meta.url));
+  const selected=JSON.parse(fs.readFileSync(new URL('../scripts/seo/indexing-recovery-experiment.json',import.meta.url)));
+  assert.equal(selected.length,12);assert.equal(new Set(selected.map(row=>row.route)).size,12);
+  assert.equal(selected.filter(row=>row.arm==='request').length,4);
+  for(const item of selected){assert.equal(statusForUrl(domain+item.route,archive.rows).status,'crawled-not-indexed');assert.ok(item.finding&&item.action);}
+});
+test('XLSX import retains workbook date system and unmodified raw crawl values',t=>{
+  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'pt-recovery-xlsx-'));t.after(()=>fs.rmSync(dir,{recursive:true,force:true}));
+  const file=path.join(dir,'coverage.xlsx'),out=path.join(dir,'coverage.json');
+  execFileSync('python3',['-c',`import zipfile,sys
+ns='http://schemas.openxmlformats.org/spreadsheetml/2006/main'
+with zipfile.ZipFile(sys.argv[1],'w') as z:
+ z.writestr('xl/workbook.xml',f'<workbook xmlns="{ns}"><workbookPr date1904="1"/></workbook>')
+ z.writestr('xl/worksheets/sheet1.xml',f'<worksheet xmlns="{ns}"><sheetData><row><c r="A1" t="inlineStr"><is><t>Problem</t></is></c><c r="B1" t="inlineStr"><is><t>Gecrawlt – zurzeit nicht indexiert</t></is></c></row></sheetData></worksheet>')
+ z.writestr('xl/worksheets/sheet2.xml',f'<worksheet xmlns="{ns}"><sheetData><row><c r="A1" t="inlineStr"><is><t>URL</t></is></c></row><row><c r="A2" t="inlineStr"><is><t>https://pfotentechnik.de/a/</t></is></c><c r="B2"><v>46308.0</v></c></row></sheetData></worksheet>')`,file]);
+  execFileSync('python3',[new URL('../scripts/seo/import-gsc-coverage.py',import.meta.url).pathname,'--out',out,file]);
+  const result=readCoverage(out);assert.equal(result.sources[0].dateSystem,'1904');assert.equal(result.rows[0].lastCrawledRaw,'46308.0');assert.equal(result.rows[0].status,'crawled-not-indexed');
+});

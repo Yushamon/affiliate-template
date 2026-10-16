@@ -5,7 +5,7 @@ const { products } = Astro.props as { products: AdvisorProduct[] };
 ---
 <section class="pt-decision" data-decision-advisor data-products={JSON.stringify(products)} hidden aria-label="Geführte Kaufberatung">
   <a href="/kaufberatung/" class="world-back">Alle Anliegen</a>
-  <h2 data-world-title></h2>
+  <h1 data-world-title></h1>
   <p>Vier kurze Fragen. Dokumentierte Passung, offene Angaben und deine Präferenzen werden getrennt geprüft.</p>
   <div class="decision-panel">
     <div data-question-status>

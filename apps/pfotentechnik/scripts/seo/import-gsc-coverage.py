@@ -35,6 +35,9 @@ def extract(file, fallback_status=None):
         return {'file': file.name, 'sha256': hashlib.sha256(file.read_bytes()).hexdigest(), 'googleStatus': fallback_status or 'row-specific', 'count': len(rows), 'rows': rows}
     ns = {'m':  'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
     with zipfile.ZipFile(file) as archive:
+        workbook = ET.fromstring(archive.read('xl/workbook.xml'))
+        properties = workbook.find('m:workbookPr', ns)
+        date_system = '1904' if properties is not None and properties.get('date1904', '').lower() in ('1', 'true') else '1900'
         strings = []
         if 'xl/sharedStrings.xml' in archive.namelist():
             strings = [''.join(node.itertext()) for node in ET.fromstring(archive.read('xl/sharedStrings.xml')).findall('m:si', ns)]
@@ -58,7 +61,7 @@ def extract(file, fallback_status=None):
         urls = [row for rows in tables if rows and rows[0].get('A') == 'URL' for row in rows[1:] if row.get('A')]
         if not urls:
             raise ValueError(f'No URLs in {file}')
-        return {'file': file.name, 'sha256': hashlib.sha256(file.read_bytes()).hexdigest(), 'googleStatus': status,
+        return {'file': file.name, 'sha256': hashlib.sha256(file.read_bytes()).hexdigest(), 'dateSystem': date_system, 'googleStatus': status,
                 'count': len(urls), 'rows': [{'url': row['A'], 'googleStatus': status, 'lastCrawledRaw': row.get('B', ''), 'source': file.name} for row in urls]}
 
 if __name__ == '__main__':

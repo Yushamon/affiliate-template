@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import {writeCrawledCohort} from './indexing-recovery-cohort.mjs';
 import {fileURLToPath} from 'node:url';
 import {collectContentQuality, textSimilarity} from '../content-quality/core.mjs';
 
@@ -43,7 +44,7 @@ export function compareSnapshots(previous,current) {
   });
   const count=rows=>Object.fromEntries(STATUS.map(status=>[status,rows.filter(row=>(row.status??row.googleStatus)===status).length]));
   const groups=[...new Set([...previous.observations,...current.observations].map(row=>row.pageType))];
-  return {available:true,sameCoverageInput:previous.coverage.sha256===current.coverage.sha256,previousGeneratedAt:previous.generatedAt,
+  return {available:true,sameCoverageInput:previous.coverage.sha256===current.coverage.sha256,taxonomyChanged:(previous.taxonomyVersion??1)!==(current.taxonomyVersion??1),previousGeneratedAt:previous.generatedAt,
     notice:'Fehlender Eintrag ist unbekannt, kein Beweis einer Deindexierung oder Indexierung. Gleiches Export-Hash ist keine neue Google-Messung.',
     before:count(previous.observations),after:count(current.observations),
     currentCanonicalBefore:count(previous.inventory??[]),currentCanonicalAfter:count(current.inventory??[]),
@@ -68,7 +69,7 @@ export async function writeRecoveryReport({appRoot,repoRoot,outputRoot,pages,red
   const priorityConfig=JSON.parse(fs.readFileSync(fileURLToPath(new URL('./indexing-recovery-priorities.json',import.meta.url)),'utf8'));
   const priorityByRoute=new Map(priorityConfig.map(row=>[row.route,row]));
   const categories=new Set(['/smarte-futterautomaten/','/automatische-katzentoiletten/','/haustierkameras/','/gps-tracker/','/katzenklappen/','/trinkbrunnen/']);
-  const classify=page=>page.route.startsWith('/produkt/')?'product':page.route.startsWith('/hersteller/')&&page.route!=='/hersteller/'?'manufacturer':page.route.startsWith('/vergleiche/')&&page.route!=='/vergleiche/'?'comparison':categories.has(page.route)?'category':/guide/.test(contentByRoute.get(page.route)?.pageType??'')?'guide':'other';
+  const classify=page=>page.route.startsWith('/produkt/')?'product':page.route.startsWith('/hersteller/')&&page.route!=='/hersteller/'?'manufacturer':page.route.startsWith('/vergleiche/')&&page.route!=='/vergleiche/'?'comparison':categories.has(page.route)?'category':(/guide/.test(contentByRoute.get(page.route)?.pageType??'') || contentByRoute.get(page.route)?.collection==='pages' && contentByRoute.get(page.route)?.pageType==='editorial-page' && page.route!=='/redaktion/')?'guide':'other';
   // Sitemap membership is recorded independently; exclusion alone is not an indexing instruction.
   const indexable=pages.filter(page=>!page.noindex && !['/404/','/500/'].includes(page.route) && !page.route.startsWith('/admin/'));
   const byRoute=new Map(indexable.map(page=>[page.route,page]));
@@ -110,7 +111,7 @@ export async function writeRecoveryReport({appRoot,repoRoot,outputRoot,pages,red
     const url='https://pfotentechnik.de'+page.route;
     const status=statusForUrl(url,coverage.rows);
     return {url,route:page.route,pageType:classify(page),detailedPageType:fresh?.pageType??page.role,cluster:fresh?.cluster??'unknown',
-      title:page.title,h1Count:page.h1s.length,primaryIntent:fresh?.searchIntent?.primary??page.primaryIntent,intentSubject:page.h1s[0]??page.title,
+      title:page.title,schemaTypes:page.schemaTypes,wordCount:fresh?.wordCount??null,h1Count:page.h1s.length,primaryIntent:fresh?.searchIntent?.primary??page.primaryIntent,intentSubject:page.h1s[0]??page.title,
       canonical:page.canonical,robots:page.robots||'(keine Meta-Robots-Anweisung)',noindex:page.noindex,inSitemap:page.inSitemap,
       incomingLinks:incoming.get(page.route).size,incomingSources:[...incoming.get(page.route)].sort(),incomingMeaningful:meaningfulIncoming.get(page.route).size,contextualIncoming:contextualIncoming.get(page.route).size,
       clickDepth:depths.get(page.route)??null,meaningfulClickDepth:mainDepths.get(page.route)??null,
@@ -128,14 +129,15 @@ export async function writeRecoveryReport({appRoot,repoRoot,outputRoot,pages,red
     return {url,...statusForUrl(url,coverage.rows),pageType:page?.pageType??(currentTarget?classify(currentTarget):'outside-build'),prioritized:!!page?.prioritized,inCurrentInventory:!!page,targetUrl:currentTarget?'https://pfotentechnik.de'+resolved.target:null};
   });
   const counts=rows=>Object.fromEntries(STATUS.map(status=>[status,rows.filter(row=>(row.status??row.googleStatus)===status).length]));
-  const snapshot={schemaVersion:1,generatedAt:new Date().toISOString(),coverage:{sha256:coverage.sha256,sources:coverage.sources,observedAt:observedAt??null,notice:'Export-Status ist eine datierte Beobachtung; kein Live-Indexstatus. Ohne exportierte Indexiert-/Inspection-Belege sind alle übrigen URLs unbekannt. Performance-Impressionen sind separate historische Signale.'},
+  const snapshot={schemaVersion:1,taxonomyVersion:2,generatedAt:new Date().toISOString(),coverage:{sha256:coverage.sha256,sources:coverage.sources,observedAt:observedAt??null,notice:'Export-Status ist eine datierte Beobachtung; kein Live-Indexstatus. Ohne exportierte Indexiert-/Inspection-Belege sind alle übrigen URLs unbekannt. Performance-Impressionen sind separate historische Signale.'},
     summary:{generatedHtml:pages.length,currentInventory:inventory.length,byPageType:groupCount(inventory,'pageType'),byCluster:groupCount(inventory,'cluster'),exactExportUrls:new Set(coverage.rows.map(row=>row.url)).size,exportCounts:counts(observations.filter(row=>row.observations.length)),currentCanonicalCounts:counts(inventory),orphanUrls:inventory.filter(row=>row.route!=='/'&&row.incomingLinks===0).map(row=>row.url),unreachable:inventory.filter(row=>row.clickDepth===null).map(row=>row.url),canonicalIssues,sitemapIssues,brokenLinks,redirectLinks,
       duplicateFindings:content.findings.filter(f=>/CONTENT_(EXACT|NEAR)_DUPLICATE/.test(f.code)),statusConflicts:observations.filter(row=>row.conflicting).map(row=>row.url)},
     searchSignals:{google:{generatedAt:gsc.generatedAt,range:gsc.ranges['28d'].startDate+' / '+gsc.ranges['28d'].endDate,metrics:gsc.ranges['28d'].metrics.current},bing:{generatedAt:bing.generatedAt,range:bing.ranges['28d'].startDate+' / '+bing.ranges['28d'].endDate,metrics:bing.ranges['28d'].metrics.current}},observations,inventory};
   const comparison=compareSnapshots(previous?JSON.parse(fs.readFileSync(previous,'utf8')):null,snapshot);
   fs.mkdirSync(outputRoot,{recursive:true});
   const write=(file,data)=>fs.writeFileSync(path.join(outputRoot,file),JSON.stringify(data,null,2)+'\n');
-  write('snapshot.json',snapshot);write('status-changes.json',comparison);write('overlap-candidates.json',candidates);
+  write('snapshot.json',snapshot);write('status-changes.json',comparison);
+  writeCrawledCohort({snapshot,repoRoot,outputRoot,candidates});write('overlap-candidates.json',candidates);
   const priorities=priorityConfig.map((config,index)=>({rank:index+1,...config,...inventory.find(row=>row.route===config.route)}));
   write('prioritized-urls.json',priorities);
   writeCsv(path.join(outputRoot,'url-inventory.csv'),['url','pageType','cluster','primaryIntent','intentSubject','canonical','robots','inSitemap','incomingLinks','incomingMeaningful','contextualIncoming','clickDepth','meaningfulClickDepth','googleStatus','googleStatusConflicting','overlaps'],inventory);
