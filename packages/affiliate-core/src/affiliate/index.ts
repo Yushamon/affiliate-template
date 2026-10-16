@@ -16,7 +16,8 @@ export {
   createAmazonAffiliateUrl,
   extractAmazonAsin,
   normalizeAmazonAsin,
-  resolveAmazonAffiliateUrl
+  resolveAmazonAffiliateUrl,
+  resolveAmazonProductAffiliate
 } from "./amazon.ts";
 
 export {

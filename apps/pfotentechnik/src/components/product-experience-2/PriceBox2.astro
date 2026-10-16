@@ -25,6 +25,7 @@ interface Props {
 
 const { price, affiliate, operations, subscriptionCost, commerce } = Astro.props;
 const multiMerchant = Boolean(commerce?.hasConfiguredOffers);
+const showMerchantOptions = multiMerchant || Boolean(commerce?.offers.length);
 const currentPriceLabel = price?.formattedCurrent
   ? price.formattedCurrent
   : operations.purchasable
@@ -37,7 +38,7 @@ const unavailableCopy = operations.availability === "discontinued"
     : operations.availability === "out-of-stock"
       ? "Dieses Produkt ist aktuell nicht lieferbar. Die redaktionelle Bewertung bleibt bestehen, eine Kaufempfehlung wird derzeit nicht ausgespielt."
       : operations.availability === "unknown"
-        ? "Die aktuelle Verfügbarkeit ist noch nicht belastbar bestätigt. Deshalb zeigen wir keinen Kaufen-CTA."
+        ? "Die aktuelle Verfügbarkeit ist noch nicht belastbar bestätigt. Preis und Lieferbarkeit bitte beim Händler prüfen."
         : null;
 const ctaLabel = affiliate.label || (price?.formattedCurrent ? "Beim Anbieter ansehen" : "Aktuellen Preis prüfen");
 const showTotals = Boolean(
@@ -98,7 +99,7 @@ const showTotals = Boolean(
     </details>
   )}
 
-  {multiMerchant ? <div class="px2-offers" data-commerce-offers>
+  {showMerchantOptions ? <div class="px2-offers" data-commerce-offers>
     {!commerce!.offers.length && <p>Aktuell ist keine verifizierte Kaufquelle verfügbar.</p>}
     {commerce!.offers.map(offer => <div class="px2-offer" data-merchant={offer.merchant}>
       <div class="px2-offer__heading"><strong>{offer.label}</strong><strong>{offer.formattedPrice || "Preis beim Händler prüfen"}</strong></div>
@@ -108,7 +109,7 @@ const showTotals = Boolean(
       {commerce!.cheapestId === offer.id && <small>Günstigstes der aktuell vergleichbaren Angebote, inklusive Versand</small>}
       <a class="px2-price__cta" href={offer.affiliateUrl} rel={offer.rel} target={offer.target}
         data-affiliate-link data-merchant={offer.merchant} data-product={offer.tracking.product} data-placement={offer.tracking.placement} data-page-type={offer.tracking.pageType}>
-        Bei {offer.label} ansehen</a>
+        {offer.ctaLabel || `Bei ${offer.label} ansehen`}</a>
     </div>)}
   </div> : operations.purchasable && affiliate.url ? (
     <a
@@ -130,7 +131,7 @@ const showTotals = Boolean(
 
   <p class="px2-price__note">
     Preis und Verfügbarkeit können sich kurzfristig ändern.
-    {multiMerchant && <> <a href="/affiliate-hinweis/">Affiliate-Links</a></>}
+    {showMerchantOptions && <> <a href="/affiliate-hinweis/">Affiliate-Links</a></>}
   </p>
 </section>
 

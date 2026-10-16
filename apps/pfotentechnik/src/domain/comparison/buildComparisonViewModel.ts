@@ -852,7 +852,7 @@ export function buildComparisonViewModel({
       const selectedOffer = commerceOffers.find(offer => offer.purchasable) ?? commerceOffers.find(offer => offer.canLink);
       const affiliate = selectedOffer ? {
         provider: selectedOffer.merchant,
-        label: `Preis und Verfügbarkeit bei ${selectedOffer.label} prüfen`,
+        label: selectedOffer.ctaLabel || `Preis und Verfügbarkeit bei ${selectedOffer.label} prüfen`,
         url: selectedOffer.affiliateUrl,
         rel: selectedOffer.rel,
         target: selectedOffer.target

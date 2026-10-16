@@ -1,12 +1,14 @@
 import { buildNetworkLink, httpsDestination, AFFILIATE_REL } from '../../../../packages/affiliate-core/src/affiliate/networks.mjs';
-import { addAmazonTrackingId, DEFAULT_AMAZON_TRACKING_ID } from '../../../../packages/affiliate-core/src/affiliate/amazon.ts';
+import { resolveAmazonProductAffiliate } from '../../../../packages/affiliate-core/src/affiliate/amazon.ts';
+import { projectConfig } from '../project.config.ts';
+import amazonShortLinks from '../config/amazon-short-links.json' with { type: 'json' };
 import { affiliatePrograms } from '../config/affiliate-programs.mjs';
 import { ageInDays, formatPrice, inferInitialAvailability } from '../lib/product-operations/policy.mjs';
 
 export function legacyCommerceOffer(data) {
   const url = httpsDestination(data.affiliate?.url ?? data.price?.affiliateUrl);
   if (!url) return null;
-  const amazon = /(^|\.)amazon\.de$/.test(new URL(url).hostname) || ['amzn.to','amzn.eu'].includes(new URL(url).hostname);
+  const amazon = resolveAmazonProductAffiliate(url, projectConfig.affiliate.amazon.trackingId, amazonShortLinks).isAmazon || data.affiliate?.provider === 'amazon';
   const unresolvedMapping = !amazon && (data.offers ?? []).some(offer =>
     offer.mappingStatus !== 'verified' && (offer.merchant === new URL(url).hostname.split('.').slice(-2, -1)[0] ||
       offer.officialProductUrl && new URL(offer.officialProductUrl).hostname === new URL(url).hostname));
@@ -21,7 +23,7 @@ export function legacyCommerceOffer(data) {
   };
 }
 
-export function resolveCommerceOffers(data, context = {}, {now = Date.now(), programs = affiliatePrograms} = {}) {
+export function resolveCommerceOffers(data, context = {}, {now = Date.now(), programs = affiliatePrograms, amazonTrackingId = projectConfig.affiliate.amazon.trackingId, shortLinks = amazonShortLinks} = {}) {
   const legacy = legacyCommerceOffer(data);
   const raw = [...(legacy ? [legacy] : []), ...(data.offers ?? [])];
   return raw.map(offer => {
@@ -30,9 +32,10 @@ export function resolveCommerceOffers(data, context = {}, {now = Date.now(), pro
     const variantMatches = offer.commerceDataProvider !== 'shopify-product' || (destination && !!offer.variantId && new URL(destination).searchParams.get('variant') === offer.variantId);
     const verified = variantMatches && offer.mappingStatus === 'verified' && !!destination && (offer.legacy || (!!offer.verifiedAt && program?.merchant === offer.merchant && program?.network === offer.network));
     const tracking = { product: data.slug, placement: 'product-commerce', pageType: 'product', ...context };
-    const affiliateUrl = !verified ? null : offer.legacy
-      ? addAmazonTrackingId(offer.affiliate.url, DEFAULT_AMAZON_TRACKING_ID)
-      : buildNetworkLink(program, destination, tracking);
+    const amazonLink = resolveAmazonProductAffiliate(offer.legacy ? offer.affiliate.url : offer.officialProductUrl, amazonTrackingId, shortLinks);
+    const amazon = offer.merchant === 'amazon' || amazonLink.isAmazon;
+    const affiliateUrl = amazon ? offer.mappingStatus === 'invalid' ? null : amazonLink.url
+      : !verified ? null : offer.legacy ? offer.affiliate.url : buildNetworkLink(program, destination, tracking);
     const age = ageInDays(offer.price?.checkedAt, now);
     const future = new Date(offer.price?.checkedAt).getTime() > now + 60000;
     const domestic = (offer.price?.currency ?? 'EUR') === 'EUR';
@@ -45,10 +48,12 @@ export function resolveCommerceOffers(data, context = {}, {now = Date.now(), pro
       (offer.availability !== 'available' || other.availability !== 'unknown') &&
       other.officialProductUrl && destination && new URL(other.officialProductUrl).hostname === new URL(destination).hostname);
     // A verified manufacturer destination is useful even when stock/price is unknown.
-    const canLink = !superseded && !!affiliateUrl && !blocked && data.productStatus !== 'discontinued';
-    const purchasable = canLink && domestic && offer.availability === 'available';
+    const canLink = !!affiliateUrl && (amazon || (!superseded && !blocked && data.productStatus !== 'discontinued'));
+    const purchasable = canLink && domestic && offer.availability === 'available' && data.productStatus !== 'discontinued' && offer.mappingStatus !== 'invalid';
     return {...offer, label: offer.label ?? program?.label ?? offer.merchant, destination,
-      affiliateUrl, affiliateReady: !!affiliateUrl, verified, domestic, superseded, canLink, purchasable, fresh, ageDays: age, current,
+      affiliateUrl, affiliateReady: !!affiliateUrl, amazonLink: amazon ? amazonLink : null,
+      ctaLabel: amazon ? (offer.availability === 'available' ? 'Bei Amazon ansehen' : 'Preis und Verfügbarkeit bei Amazon prüfen') : `Bei ${offer.label ?? program?.label ?? offer.merchant} ansehen`,
+      verified, domestic, superseded, canLink, purchasable, fresh, ageDays: age, current,
       currency: offer.price?.currency ?? 'EUR', formattedPrice: current == null ? null : formatPrice(current, offer.price?.currency),
       status: !verified ? offer.mappingStatus : offer.error ? 'error' : !affiliateUrl ? 'not-configured' : fresh ? 'fresh' : 'price-unknown-or-stale',
       rel: AFFILIATE_REL, target: '_blank', tracking};

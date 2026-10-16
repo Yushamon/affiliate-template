@@ -171,3 +171,37 @@ export function resolveAmazonAffiliateUrl(
 
   return source.affiliateUrl?.trim() ?? "";
 }
+
+/** Product CTA validation; a link is independent of stock, price and editorial rank. */
+export function resolveAmazonProductAffiliate(
+  input: string | null | undefined,
+  trackingId: string | null | undefined,
+  shortLinks: Record<string, { destination?: string; error?: string }> = {}
+) {
+  const source = String(input ?? '').trim();
+  let url: URL;
+  try { url = new URL(source); } catch { return { isAmazon: false, url: null, effectiveUrl: null, asin: null, error: 'invalid-url', missingSourceTag: false }; }
+  const short = ['amzn.to', 'amzn.eu'].includes(url.hostname);
+  const isAmazon = short || AMAZON_HOST_PATTERN.test(url.hostname);
+  const failure = (error: string) => ({ isAmazon, url: null, effectiveUrl: null, asin: null, error, missingSourceTag: false });
+  if (!isAmazon) return failure('not-amazon');
+  if (url.protocol !== 'https:' || url.username || url.password || url.port) return failure('invalid-amazon-url');
+  const tag = String(trackingId ?? '').trim();
+  if (!/^[a-z0-9][a-z0-9_-]*-\d+$/i.test(tag)) return failure('missing-tracking-id');
+  if (short) {
+    if (!/^\/(?:d\/)?[a-z0-9_-]+\/?$/i.test(url.pathname)) return failure('invalid-amazon-product-url');
+    const record = shortLinks[source];
+    if (!record?.destination) return failure(record?.error || 'amazon-short-link-needs-verification');
+    const destination = resolveAmazonProductAffiliate(record.destination, tag);
+    if (!destination.url || !destination.asin) return failure('invalid-amazon-short-link-destination');
+    const originalTag = new URL(record.destination).searchParams.get('tag');
+    // Preserve a verified, already affiliated short link. If its embedded tag is
+    // wrong/missing, use its observed exact destination with only the tag repaired.
+    return { ...destination, url: originalTag === tag ? source : destination.url, missingSourceTag: !originalTag };
+  }
+  const asin = ASIN_PATH_PATTERNS.map(pattern => decodeUrlValue(url.pathname).match(pattern)?.[1]).find(Boolean);
+  if (!asin) return failure('invalid-amazon-product-url');
+  const missingSourceTag = !url.searchParams.get('tag');
+  if (url.searchParams.getAll('tag').length !== 1 || url.searchParams.get('tag') !== tag) url.searchParams.set('tag', tag);
+  return { isAmazon: true, url: url.href, effectiveUrl: url.href, asin: asin.toUpperCase(), error: null, missingSourceTag };
+}
