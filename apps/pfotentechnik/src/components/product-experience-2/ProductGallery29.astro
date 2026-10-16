@@ -61,6 +61,8 @@ const data = optimized.map((item) => ({
             <img
               class="pg29__image"
               src={item.mobileSrc}
+              srcset={item.srcset || undefined}
+              sizes="100vw"
               width={item.width}
               height={item.height}
               alt={item.alt || name}

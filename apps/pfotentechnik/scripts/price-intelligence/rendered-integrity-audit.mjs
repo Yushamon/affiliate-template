@@ -23,7 +23,7 @@ for(const file of await readProductFiles(path.join(app,'src/content/products')))
     offers++;
     if(item['@type']!=='Offer'||item.availability!=='https://schema.org/InStock'||!expected.some(o=>o.current===item.price&&o.currency===item.priceCurrency&&o.destination===item.url))errors.push(`${data.slug}: unsafe price/stock/merchant schema`);
   }
-  if(data.slug==='petlibro-granary-2-vision' && (actual.length||html.includes('129,99')||!html.includes('Preis und Verfügbarkeit beim Händler prüfen') || !html.includes('data-availability="unknown"'))) errors.push(`${data.slug}: regression in visible price/availability`);
+  if(data.slug==='petlibro-granary-2-vision' && (actual.length||html.includes('129,99')||!html.includes('Derzeit ist keine geprüfte Händleroption hinterlegt.') || !html.includes('data-availability="unknown"'))) errors.push(`${data.slug}: regression in visible price/availability`);
 }
 const comparisons=await fs.readdir(path.join(app,'dist/vergleiche'),{withFileTypes:true});
 let comparisonPages=0;
