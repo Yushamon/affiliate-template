@@ -51,6 +51,8 @@ test('known wrong mapping and broken/unverified short links are diagnosed rather
   assert.equal(resolveAmazonProductAffiliate(short,tag,{[short]:{destination:'https://evil.example/dp/B012345678'}}).url,null);
   const offers=resolveCommerceOffers({offers:[{id:'wrong',merchant:'amazon',network:'partnernet',officialProductUrl:url,mappingStatus:'invalid',availability:'unknown'}]});
   assert.equal(offers[0].canLink,false);
+  assert.equal(offers[0].amazonLink.error,'invalid-product-mapping');
+  assert.ok(commerceDiagnostics(offers).amazonInvalidLink);
 });
 test('verified affiliate short URLs retain their existing redirects and configured embedded tag',()=>{
   const short='https://amzn.to/example';const destination=url+'&tag='+tag;

@@ -33,8 +33,9 @@ export function resolveCommerceOffers(data, context = {}, {now = Date.now(), pro
     const variantMatches = offer.commerceDataProvider !== 'shopify-product' || (destination && !!offer.variantId && new URL(destination).searchParams.get('variant') === offer.variantId);
     const verified = variantMatches && offer.mappingStatus === 'verified' && !!destination && (offer.legacy || (!!offer.verifiedAt && program?.merchant === offer.merchant && program?.network === offer.network));
     const tracking = { product: data.slug, placement: 'product-commerce', pageType: 'product', ...context };
-    const amazonLink = resolveAmazonProductAffiliate(offer.legacy ? offer.affiliate.url : offer.officialProductUrl, amazonTrackingId, shortLinks);
+    let amazonLink = resolveAmazonProductAffiliate(offer.legacy ? offer.affiliate.url : offer.officialProductUrl, amazonTrackingId, shortLinks);
     const amazon = offer.merchant === 'amazon' || amazonLink.isAmazon;
+    if (amazon && offer.mappingStatus === 'invalid') amazonLink = {...amazonLink, url:null, error:'invalid-product-mapping'};
     const affiliateUrl = amazon ? offer.mappingStatus === 'invalid' ? null : amazonLink.url
       : !verified ? null : offer.legacy ? offer.affiliate.url : buildNetworkLink(program, destination, tracking);
     const age = ageInDays(offer.price?.checkedAt, now);

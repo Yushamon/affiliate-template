@@ -1,0 +1,2678 @@
+{
+  "generatedAt": "2026-10-16T12:43:15.311Z",
+  "summary": {
+    "products": 103,
+    "missingPrice": 1,
+    "missingAffiliate": 2,
+    "unknownAvailability": 69,
+    "discontinued": 1,
+    "unavailable": 19,
+    "stale30": 40,
+    "stale90": 0,
+    "maintenanceRequired": 57,
+    "maintenanceRecommended": 0,
+    "archived": 15,
+    "maintenanceRate": 44.7,
+    "amazonLinks": 88,
+    "amazonMissingSourceTag": 8,
+    "amazonInvalidLink": 12,
+    "amazonCtaSuppressed": 0,
+    "noMerchantOption": 19,
+    "previouslySuppressed": 60
+  },
+  "products": [
+    {
+      "slug": "litter-robot-5-pro",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": false,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": true,
+      "offers": []
+    },
+    {
+      "slug": "neakasa-riko",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": false,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": true,
+      "offers": []
+    },
+    {
+      "slug": "petlibro-air-wifi-feeder",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/3TgbOma",
+          "url": "https://amzn.to/3TgbOma",
+          "effectiveUrl": "https://www.amazon.de/PETLIBRO-Futterautomat-Futterspender-App-Steuerung-Ton-Aufnahmefunktion/dp/B0C2J7JXZ4?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1MHMEMPW35X0B&dib=eyJ2IjoiMSJ9.8sO3SGXtSswARAL1fb12H1BrGtGUfJkdrsxum0TS7TD-B9OjuTa0xce6Mc3N2AsZbjzvKejh2VxVH9qj0n57ZNHO92RcDu9JMOr_D01OORtxH_gt2O-fArlEWUq8ZP6XK8vipCTJuhoSvZ0Wb1AVIFr-pwkvMt_jofqM_MZGkZ8MlAnxqtfSoDdNLEI3YuuVaCnEZg6khOaHoOyRT_rbZPR7OoH6mrcY3L8VMLmWmZ7PXkWykeLCUyq0ONxHkYELUO6a0hJNQSneZY5JokVChRBBWrXvzzRznhnyj5oJeLs.4uVDFjNGY7syw6uF90f0vnA8BucVaqb2SSIR0nOoSzE&dib_tag=se&keywords=petlibro-air-automatic-feeder&qid=1784819694&sprefix=petlibro-air-automatic-feeder,aps,145&sr=8-7&th=1&linkCode=sl2&tag=yusha0f-21&linkId=6521007f7015f1d8cfcb334fa354c88a&ref_=as_li_ss_tl",
+          "asin": "B0C2J7JXZ4",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        },
+        {
+          "id": "petlibro-de",
+          "merchant": "petlibro",
+          "url": null,
+          "availability": "unknown",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Bei PETLIBRO ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "oneisall-3-5l-cordless-fountain",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4yCwsgt",
+          "url": "https://amzn.to/4yCwsgt",
+          "effectiveUrl": "https://www.amazon.de/oneisall-Edelstahl-Katzenbrunnen-Bewegungssensor-batteriebetrieben-Haustier-Trinkbrunnen/dp/B0DMF2LH3Y?pd_rd_w=wK6Cz&content-id=amzn1.sym.bbac26bb-3f7b-44dd-a8a5-c10fcfb1ed60:amzn1.symc.30e3dbb4-8dd8-4bad-b7a1-a45bcdbc49b8&pf_rd_p=bbac26bb-3f7b-44dd-a8a5-c10fcfb1ed60&pf_rd_r=T2GVT1B4J5JTGQ51TQ75&pd_rd_wg=t4X90&pd_rd_r=7f96523d-9ecf-420e-8466-a7e7f99afabb&pd_rd_i=B0DMF2LH3Y&th=1&linkCode=sl2&tag=yusha0f-21&linkId=d9f1eb46c58a1ca3838c87825e332499&ref_=as_li_ss_tl",
+          "asin": "B0DMF2LH3Y",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "enabot-ebo-air-2",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4pZYw9z",
+          "url": "https://amzn.to/4pZYw9z",
+          "effectiveUrl": "https://www.amazon.de/Enabot-EBO-Air-Heimtierkameras-Gesichtsausdr%C3%BCcke/dp/B0DZHHNLFG?th=1&linkCode=sl2&tag=yusha0f-21&linkId=12acee21c7833e3a02162a01a705084f&ref_=as_li_ss_tl",
+          "asin": "B0DZHHNLFG",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "petkit-fresh-element-solo",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4gOwewg",
+          "url": "https://amzn.to/4gOwewg",
+          "effectiveUrl": "https://www.amazon.de/PETKIT-Futterautomat-Futterautomaten-Edelstahlsch%C3%BCssel-Lock-Technologie/dp/B0CD7N5X3K?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2P9M3AORTH658&dib=eyJ2IjoiMSJ9.rVbhTU11aki5aaknhzldql7JcpigwY98dRK787U39IXjvRrewBubYa7Sb0yKiXM-LtG57mjAjwO4moDtkvxfrhTBtgDeFFTuB6H9P-UgVlv37N86bK-tpNu52ENgn1y970ZxMPqVkKRDQ-bNoBzUPTOS8rkydzpqWFiaRoE3MjI.5yBoTyaeSzr-Z18TBDrTk0WDir1Q4OGsNPwNcSAbZRU&dib_tag=se&keywords=petkit-fresh-element-infinity&qid=1784819200&sprefix=petkit-fresh-element-infinity,aps,158&sr=8-1&th=1&linkCode=sl2&tag=yusha0f-21&linkId=b47023b7dd040fc4c9d1832142afcacd&ref_=as_li_ss_tl",
+          "asin": "B0CD7N5X3K",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "aqara-smart-pet-feeder-c1",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/45gK5oh",
+          "url": "https://amzn.to/45gK5oh",
+          "effectiveUrl": "https://www.amazon.de/Aqara-Futterautomat-ERFORDERT-Programmierbarer-Portionskontrolle/dp/B0B9XZ96PH?&linkCode=sl2&tag=yusha0f-21&linkId=959620b937f26230052d5b40df66e07e&ref_=as_li_ss_tl",
+          "asin": "B0B9XZ96PH",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "cat-mate-c200",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4yIM2qT",
+          "url": "https://amzn.to/4yIM2qT",
+          "effectiveUrl": "https://www.amazon.de/Cat-Mate-2-Mahlzeiten-Futterautomat-Timer-Steuerung-401/dp/B08B6G8PKZ?dib=eyJ2IjoiMSJ9.QL4e7y7TW24FVZgLWiAfernj4NUgbrb74TYeqyAp1gRFHor5JW7A46aE3BOOCIGgFfB2eAwqT_0CFoX1_U7zL-sL3y2gCW2iyy-FwK2ipzIhwDWzADBhHvq7NK5uQFfhUhxfYSc6nyTmayfzCIAAltAvc9GUSbDw3_WO3m1Z0au7_C0D8_iVYC4xSqF7uvs57BJ0g_3lPEtD1qh2pGKwvVMYO-RoYvU3Oo5qzkM1RFlHCeb_yDzkZXSv4_3wZm1vjnziUGpuv8OuFmjYH8s4uldUpYJGsORtTqVxbG6DkzQ.QcjHV42awCKx3jpK6jDMB9zF5jujBAgvoovqziQbLsA&dib_tag=se&keywords=Cat%2BMate%2BC200%2BFutterautomat&qid=1785098855&sr=8-6&ufe=app_do:amzn1.fos.00b1ec55-3783-4b8e-9430-16820cd5ad16&th=1&linkCode=sl2&tag=yusha0f-21&linkId=2447cd28b50e6a11c02a7323a2b7b4c4&ref_=as_li_ss_tl",
+          "asin": "B08B6G8PKZ",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "cat-mate-c300",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/45lbMvY",
+          "url": "https://amzn.to/45lbMvY",
+          "effectiveUrl": "https://www.amazon.de/Automatischer-3-Mahlzeiten-Futterautomat-Digitalem-Timer-366/dp/B01MXDFB28?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2AI4NSDIUK7O9&dib=eyJ2IjoiMSJ9.FrQO366C_cFL5-5FAJY89ncyyLz6agpOKmMpmTnfnB3-2YR0d8-Yt83UoQJzbhswPdCK9of_MLFRvsEU1orGmp7nAepaPbwnRDe9kl86EBj-ywWp2HzgQsa4y1s0M1lM2gAPwv8LA1zeOX0VFIf_h08Kqo-aoOySB0SV2Jo-GjvyWpgc6HEoRlk4LRMSbxGGJi21BI1Jmm4Q_RK_entxd_HRTrPXxBwFzJSSXX0596IM5X5rJ5aL09qQ6juyetTyJpZ0fkBIhXL5IzeByowStAfgBJvc-q3usyUlZEuYCPk.jjCsvIvORetPtn3LQ6PWPpL0SdxrZHPDwPxnFxzSLrg&dib_tag=se&keywords=Cat%2BMate%2BC300%2BFutterautomat&qid=1785098963&sprefix=cat%2Bmate%2Bc300%2Bfutterautomat,aps,138&sr=8-1&ufe=app_do:amzn1.fos.00b1ec55-3783-4b8e-9430-16820cd5ad16&th=1&linkCode=sl2&tag=yusha0f-21&linkId=0106788cb91b89eecfc316bba54cc3d3&ref_=as_li_ss_tl",
+          "asin": "B01MXDFB28",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "cat-mate-c500",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/45tAoCE",
+          "url": "https://amzn.to/45tAoCE",
+          "effectiveUrl": "https://www.amazon.de/Cat-Mate-4-Tage-Zeituhr-Futterportionen-Katzenf%C3%BCtterung/dp/B01AUYLVU8?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=17ZG7OGT062IU&dib=eyJ2IjoiMSJ9.DjTqVVGQWNgfji07y9s1XNCKeLEH1sPSsIUBguC0rFeyLCtOm48yMPl9Vn-cHFvT9LGORuiJg_ZoQXXgXBId8-bM-BH26wFau89Za4E0QPrNZT-SKedqkEwhKa0gJy0tOn3TuxviO77O5yak5BAZ3ns1_B8ecBqbfmAaVpp-Ew44Z5e59nxqBrnZNEt2GAVqLa_iyc8CiB44BOQWRpF25QyDBwYlcb90KMB4mZJAIatVEO1YqiaX4J1fGA2emHhppmbbteUxZdNE-_Fqi8lepZUgee8W2yo3_QrdbymS0-M.75WDWAcS6eQdUuWwxlnHmRooEG9lRI_wNcVZCfjHAHE&dib_tag=se&keywords=Cat%2BMate%2BC500%2BFutterautomat&qid=1785099049&sprefix=cat%2Bmate%2Bc500%2Bfutterautomat,aps,114&sr=8-1&ufe=app_do:amzn1.fos.00b1ec55-3783-4b8e-9430-16820cd5ad16&th=1&linkCode=sl2&tag=yusha0f-21&linkId=29b5216c416278d12afcc0707e6dae0b&ref_=as_li_ss_tl",
+          "asin": "B01AUYLVU8",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "cat-mate-335-pet-fountain",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4wQ2q7g",
+          "url": "https://amzn.to/4wQ2q7g",
+          "effectiveUrl": "https://www.amazon.de/Cat-Mate-Mehrstufiger-Haustier-Wasserbrunnen-Fassungsverm%C3%B6gen/dp/B0CMV42FVF?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2FTQPYZ8SIVF7&dib=eyJ2IjoiMSJ9.sYVxflGZS45vaG8Cvkvgq8Ygz8Ig0xepfM_1Ee7I4nwFyAc1iw6gWLB2mz3VOi6q5ux_pT73tqtvWGXMqqZZG-Rz1sp1PvSwiKCnYhDLAGHkdN4Pjotv9gHu086IBiBv68uHhZ17GMhHmy8kD8cyzuhdVMvkmGtNiiAVtAQPIxSDUFaZcLiuZWtuMD6FXrzgkw4K7bYQdbh4VHNoqktI61XbdyrYERWo7kcRI1eumfAYmYIS_z6xaWZpMR9ISb_YMAjBlx19f78Pn9pmr3Twenxiv175JijzkqBLp6r6f3w.4UJM5zq9UtRjr9gABVcMny9m4qzXXYYd_Jio1oZgLXQ&dib_tag=se&keywords=cat-mate-335-pet-fountain&qid=1784813994&sprefix=cat-mate-335-pet-fountain,aps,119&sr=8-6&linkCode=sl2&tag=yusha0f-21&linkId=a9061bb0411d7e1ac312ce9761f4d4ca&ref_=as_li_ss_tl",
+          "asin": "B0CMV42FVF",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "catit-pixi-smart-6-meal-feeder",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/45hTNq9",
+          "url": "https://amzn.to/45hTNq9",
+          "effectiveUrl": "https://www.amazon.de/Catit-Futterautomat-Mahlzeiten-Nassfutter-K%C3%BChlakku/dp/B0B9462LW1?crid=3TEK6HVP2J4A0&dib=eyJ2IjoiMSJ9.7qqo52KI1rSMVSyBGrcFftakfkeGRpJM_a8Qdh12SVdMipeD5l1_tk0ALtqDNL_z1sixDnVaNiSMqZr-lLfvzPll3gXhj13GAPp8D5C6HPbsT4jiDU3G0UaVdoxEBWOujQojvdW6kcZVLnXjX-p_DfRK20wOGXt7J1BuZUzEx7qKcVkRWliZDF1_MIYYv1wkdL6yPsvzOYibUbJMXuDYw0RjaRzRVnYGOsSaWz_YPtUbxYB5p9TEedZMFJvEti-SasM1zXyrIEODg2kkMvtGSpWpcQ5sDZ3J4CQYMsTLLqE.dkXnxwI0IIbtum5BNy5Sjrif_duVrJW3YeHGf9mjZcg&dib_tag=se&keywords=catit%2Bpixi%2Bsmart%2B6-meal%2Bfutterautomat&qid=1784813103&sprefix=catit%2Bpixi%2Bsmart,aps,128&sr=8-7&th=1&linkCode=sl2&tag=yusha0f-21&linkId=16f2674116c5ff86773177ab77d035c6&ref_=as_li_ss_tl",
+          "asin": "B0B9462LW1",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "devoko-90l-automatisches-katzenklo",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/3TKZEBV",
+          "url": "https://amzn.to/3TKZEBV",
+          "effectiveUrl": "https://www.amazon.de/Devoko-selbstreinigend-selbstreinigende-Geruchsentferner-Sicherheitssensor/dp/B0FMRB7Z2S?c=ts&dib=eyJ2IjoiMSJ9.3fmv7suQ2GAIxhRdwnan13ZsQwZ8i6F_yASuXQEhnLUAJ8RKjQfMclTClgeb6ZPigwHvYcvH9C5rd1KnkzYYvusKX00XXoVS3KhVb0bQHJgKhKK9w0i2aSQU9aRop0emWJhGVc1sABwOsYOXgghlbpoqnkNTfVgrTtgPfi1tIHo1VTV0157TJha347N_S4zXogrv40rs5VBafmuyVuu_kOwDQabF-8VrQWQXXHKaZtpcVtYs84t73UEk-4wsJPlT2twZHe46BJIkVFsedySNjQqht-g_zz34cORjtFrmoUw.2973bNgpTTF5LE_ZWYCWf6CX4jgEJsimH4wM9IwdhMg&dib_tag=se&keywords=Katzentoiletten&qid=1786101029&s=pet-supplies&sr=1-4&ts_id=470780031&th=1&linkCode=sl2&tag=yusha0f-21&linkId=8fda3ee4ad90820d3de426dc4d9d83ac&ref_=as_li_ss_tl",
+          "asin": "B0FMRB7Z2S",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "enabot-rola-mini",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4qpFZnp",
+          "url": "https://amzn.to/4qpFZnp",
+          "effectiveUrl": "https://www.amazon.de/Enabot-ROLA-Mini-Funny-Companion/dp/B0DNHX4FDJ?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1EJDN922Y9GQW&dib=eyJ2IjoiMSJ9.Ixq3imTusW4gaMcjYFKIH2dAPxJc2XahnoKn7AU04brFLFEdU9b9ERxnUe93VRPE84aIpgIon5aAlu7XRvFJTZXzBXAlhWg28vveWXIrFlO8Qb56soyJaIlb1_YsoD4pZFR929h26bzVd_jBB-hX8YlD_xD8ytbcnHuNyqk6jho1tWuqqswDWU1N_nsUzO4RJALwd9LyVozXrFNlQbrFMZBgYGivyvAyWXjjB581OSIm100UEY8xz93fPZdCfi256aWD-vdHkUAInz3DqWbXzBchNtI5TWB-mpPpQIyY7TA.OmF5G2tYIVzYnN0mFGxQ-xMBr0TXArmkhjEkYcvuYCk&dib_tag=se&keywords=Enabot+ROLA+Mini&qid=1786977453&sprefix=reolink+e1+zoom+4k,aps,125&sr=8-1&ufe=app_do:amzn1.fos.1d0000e1-44b8-40d1-a25b-0cacf650cfb8&linkCode=sl2&tag=yusha0f-21&linkId=6c9261a785349c3c182ed587ab075176&ref_=as_li_ss_tl",
+          "asin": "B0DNHX4FDJ",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "feelneedy-fn-w18-8l-katzenbrunnen",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/3Rdxsa5",
+          "url": "https://amzn.to/3Rdxsa5",
+          "effectiveUrl": "https://www.amazon.de/FEELNEEDY-Katzenbrunnen-Trinkbrunnen-Sp%C3%BClmaschinenfest-Verbesserter/dp/B0FH33SX4J?crid=2KDSVZNO53K73&dib=eyJ2IjoiMSJ9.SHCsubjMN_I_WSdCpefpfzIXd9y79f7aMeRI5IZtyDTZIZJjN6jylPRQZArK4peP_OHWIfNht8B65_aG4yLtgqteVAwT2I0EXM__pfXtalw7reDbIauKVEr70pTDedH31slgnjFwrdVMyVjsNes0FXSNJNLWlO-hIrSojDFPM7yiDO00482V5DIv5Fq4Wd0FppzKo_SEvDCQ4sfkp3DmfU9KgM49-KX8jnXnu7PEOhfVSD4mqIJU_KAgN_TV4mnxg4s54aeNuo3ebVi28I-ZPVAJWBc_R39WIawN_ph1haw.vuYV2S_CE84Iu70XkOBK9Zz6ItylK9QWsudvwdbIp8o&dib_tag=se&keywords=hunde%2Btrinkbrunnen&qid=1784826555&sprefix=hunde%2Btrinkbrunnen,aps,122&sr=8-7&th=1&linkCode=sl2&tag=yusha0f-21&linkId=98517ea6fb548ace3d0c08dff8cd8679&ref_=as_li_ss_tl",
+          "asin": "B0FH33SX4J",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "flappie",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": false,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "flappiedoors.com",
+          "sourceUrl": "https://flappiedoors.com/en/products/flappie?country=DE",
+          "url": "https://flappiedoors.com/en/products/flappie?country=DE",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Bei flappiedoors.com ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "furbo-360-hundekamera",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/3U0Dewy",
+          "url": "https://amzn.to/3U0Dewy",
+          "effectiveUrl": "https://www.amazon.de/Furbo-360%C2%B0-Hundekamera-Heimsicherheits-Paket-Premium-Wei%C3%9F/dp/B0BWN22T25?th=1&linkCode=sl2&tag=yusha0f-21&linkId=48569d9bc000e831bd071f8ac49d0d60&ref_=as_li_ss_tl",
+          "asin": "B0BWN22T25",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "furbo-mini-360",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4gHcrhI",
+          "url": "https://amzn.to/4gHcrhI",
+          "effectiveUrl": "https://www.amazon.de/Furbo-Mini-360%C2%BA-New-Camera/dp/B0F8LNT9H7?crid=2K5FXH84OLODC&dib=eyJ2IjoiMSJ9.EoupURCeXORRonX9TDAFAX8nt9ycTbioIYcFkOvVLREjFI4Skl9uBDk5ndQUrCMDcXzEozcvyZmqWrMPI192lVZ0PNVSbbL-lSiKjj2lOzANs15ieiF4tEM1NHut6dxhSrF9gezS6tMCy44yXJCzKTX7Vdtx22JoMwteoTYozl90yHJaebPvH-37a2fVkqjqEgDPJ3Xclwsn7FAEJ22lhPfM4x-bZFy7S-lbSZkfbflUo130AiXMz6nqLcG8U4L4QyqLRSsmHp4GpcGBMkYkbSkAQT_LRQmjfSmEzJr48Es.j7cvIWx3vIGd20x7zJCrGMZfwAkTWC4IexoJiVYHPz8&dib_tag=se&keywords=furbo%2Bmini%2B360&qid=1787312091&sprefix=furbo%2Bmini%2B,aps,141&sr=8-7&th=1&linkCode=sl2&tag=yusha0f-21&linkId=d5df5a735303c43cb16898c0dc7021e3&ref_=as_li_ss_tl",
+          "asin": "B0F8LNT9H7",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "garmin-alpha-t-20",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/3Tjaqz5",
+          "url": "https://amzn.to/3Tjaqz5",
+          "effectiveUrl": "https://www.amazon.de/Garmin-Alpha-20-GPS-Hundehalsband/dp/B0BYGVLRHV?crid=3BW1LCH9VA98D&dib=eyJ2IjoiMSJ9.pgiw7uycoA8gcpHbDA96nvmCvsOcCgLrmEv6kr3yje3JOsMobTbo8IcmIy0OhX1-cjelpTOHxpaUn-6K00hL-tnEX32uqwBiDgYIjaaquMdlUQXjOFY_XfXN3EghQYVXQN7tR8qXXEmp4_m-QsEVXhRvnGYeftZWcyl1rcPrtUMvBKOFy9ihSRPl4E1GL3rbVBXLdQTwB4lWEDUJMQj9DFzvCMMCfiy6QCFxHJoMiOI.g4EAj2JpJdii8qkJpQgZjJYiL01hYzvk5vVCCvZE1L8&dib_tag=se&keywords=garmin+alpha+t20&qid=1784816851&sprefix=garmin+alpha+t,aps,153&sr=8-1&linkCode=sl2&tag=yusha0f-21&linkId=838177e07fd36974c95137464e11e0e7&ref_=as_li_ss_tl",
+          "asin": "B0BYGVLRHV",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "honeyguardian-a68",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4bRUR7N",
+          "url": "https://amzn.to/4bRUR7N",
+          "effectiveUrl": "https://www.amazon.de/dp/B0CKSDL2V6/ref=cm_sw_r_as_gl_apa_gl_i_dl_VYBZ3MTCG848B8AT4RVY?linkCode=ml1&tag=yusha0f-21&linkId=06978fb949717588ffbcb1972ea604e6",
+          "asin": "B0CKSDL2V6",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "imipaw-3l-automatic-cat-feeder",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4pGKyti",
+          "url": "https://amzn.to/4pGKyti",
+          "effectiveUrl": "https://www.amazon.de/Futterautomat-Katzenfutter-Programmierbarem-Automatischer-Futterspender/dp/B0CY2942F7?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2QBK38D90M7Y0&dib=eyJ2IjoiMSJ9.xFrKux86KLxwvGgBzzbaBqnIpMtgCkehV-Xa7HkkBQAwu1SPdxmuHCV4c1hz-Mdw1nr5ALGCIVb2ZXdpYrvm95xDE3lo3MGcxHXhj0kFDTEI3JvLcduQu49c5EdiAMY0k5fMOmkINeVZkSRIWX-vrE64lmmPTFC-UniqoiL77or0KHcK5bARUncDWlYu7GZm91YSswKYIfexWCsRbmv2tfc2gEtK6GRMu-veB7_7b_dpWBjGf4kb4wh5mheUXo3ZjxSLp6xwcFJ0EJhN2qr6ZsXCkHwYrRUZuPW4yQupYS4.eK3Y_n-akvorDthT5Kuj1G45u5cNwA7EO-meTVt2vXc&dib_tag=se&keywords=imipaw-3l-automatic-cat-feeder&qid=1784817588&sprefix=imipaw-3l-automatic-cat-feeder,aps,132&sr=8-6&th=1&linkCode=sl2&tag=yusha0f-21&linkId=1ca8a772aaf0f585a45362d26442229b&ref_=as_li_ss_tl",
+          "asin": "B0CY2942F7",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "neakasa-m1-plus",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": true,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://www.amazon.de/Neakasa-selbstreinigend-Katzentoilette-App-Steuerung-Fassungsverm%C3%B6gen/dp/B0CSKBWBF6/ref=sr_1_4?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=135AOIM13EXV5&dib=eyJ2IjoiMSJ9.gyMWcRgnE_sssZIwUnJGPbovcHUlLMOA9ab5Dnp-DGUtJgwP44SCPMfdgDliCxxiMdltDqO1ZB2n5lqVRAgRFCkEffqpSLwRxubT2Gs9B24aVxGZPI5Ekjy1Yt-J4_bBktObrqnqB9BA9YSf17ZSp0TMLTCxFd9B6_U1mPlLKz4TozS51-LnHaT-2CC4179JNxIPTtW_R61JxO4eNmaKNlOuezXE9ZvRNb6aGZGfg31YSasGSTnl4W77u8ERA1-wzf3-e9Z92DyOUZavoKFNf3b1nSmYY6ldw6cpOxJDTNs.ylkUY8NxZ2MheR_ColLtkf_XL_V39sy7KPCv2_Y2BWE&dib_tag=se&keywords=Neakasa%2BM1%2BPlus%2BKatzenklo&qid=1786096727&s=pet-supplies&sprefix=neakasa%2Bm1%2Bplus%2Bkatzenklo%2B%2Cpets%2C127&sr=1-4&th=1",
+          "url": "https://www.amazon.de/Neakasa-selbstreinigend-Katzentoilette-App-Steuerung-Fassungsverm%C3%B6gen/dp/B0CSKBWBF6/ref=sr_1_4?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=135AOIM13EXV5&dib=eyJ2IjoiMSJ9.gyMWcRgnE_sssZIwUnJGPbovcHUlLMOA9ab5Dnp-DGUtJgwP44SCPMfdgDliCxxiMdltDqO1ZB2n5lqVRAgRFCkEffqpSLwRxubT2Gs9B24aVxGZPI5Ekjy1Yt-J4_bBktObrqnqB9BA9YSf17ZSp0TMLTCxFd9B6_U1mPlLKz4TozS51-LnHaT-2CC4179JNxIPTtW_R61JxO4eNmaKNlOuezXE9ZvRNb6aGZGfg31YSasGSTnl4W77u8ERA1-wzf3-e9Z92DyOUZavoKFNf3b1nSmYY6ldw6cpOxJDTNs.ylkUY8NxZ2MheR_ColLtkf_XL_V39sy7KPCv2_Y2BWE&dib_tag=se&keywords=Neakasa%2BM1%2BPlus%2BKatzenklo&qid=1786096727&s=pet-supplies&sprefix=neakasa%2Bm1%2Bplus%2Bkatzenklo%2B%2Cpets%2C127&sr=1-4&th=1&tag=yusha0f-21",
+          "effectiveUrl": "https://www.amazon.de/Neakasa-selbstreinigend-Katzentoilette-App-Steuerung-Fassungsverm%C3%B6gen/dp/B0CSKBWBF6/ref=sr_1_4?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=135AOIM13EXV5&dib=eyJ2IjoiMSJ9.gyMWcRgnE_sssZIwUnJGPbovcHUlLMOA9ab5Dnp-DGUtJgwP44SCPMfdgDliCxxiMdltDqO1ZB2n5lqVRAgRFCkEffqpSLwRxubT2Gs9B24aVxGZPI5Ekjy1Yt-J4_bBktObrqnqB9BA9YSf17ZSp0TMLTCxFd9B6_U1mPlLKz4TozS51-LnHaT-2CC4179JNxIPTtW_R61JxO4eNmaKNlOuezXE9ZvRNb6aGZGfg31YSasGSTnl4W77u8ERA1-wzf3-e9Z92DyOUZavoKFNf3b1nSmYY6ldw6cpOxJDTNs.ylkUY8NxZ2MheR_ColLtkf_XL_V39sy7KPCv2_Y2BWE&dib_tag=se&keywords=Neakasa%2BM1%2BPlus%2BKatzenklo&qid=1786096727&s=pet-supplies&sprefix=neakasa%2Bm1%2Bplus%2Bkatzenklo%2B%2Cpets%2C127&sr=1-4&th=1&tag=yusha0f-21",
+          "asin": "B0CSKBWBF6",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": true
+        }
+      ]
+    },
+    {
+      "slug": "oneisall-2-in-1-feeder-water",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4hnjahC",
+          "url": "https://amzn.to/4hnjahC",
+          "effectiveUrl": "https://www.amazon.de/oneisall-Futterautomat-Futterspender-Katzenbrunnen-Edelstahlschalen/dp/B0G4DX3QR8?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2KS0GSRVZ9MXK&dib=eyJ2IjoiMSJ9.N3mSBNtK2RBtJ8bB-Ss1PCjHdVk5TBYNj6WEx0Z-Zqnj3ga36kPNdmkylehRoIJY8nizO9BaLZbsQxJskIeUGRShqYbRsZpTrCt4qttlRf-qXJOfXjjyJfxNwyw2LvyQRxCEAYPQp5aKBPrW4xwyOsksAMJzhrsdKBUKdn-05z-iAXmBwGXIdeobSItIm0A1vG54p6_VNfVUCCbOgzyovlmGOdpjssg06xQMSR6wwXflc4LTwBSJFAJ2J9oDQE_bo_1OGApDa5eErRxOjuXBqQ.PhyXdn02RjtMfaBzac4yYt3drgOk1x4PvZRQIIObtT4&dib_tag=se&keywords=oneisall-2-in-1-feeder-water&qid=1784818064&sprefix=oneisall-2-in-1-feeder-water,aps,141&sr=8-4&linkCode=sl2&tag=yusha0f-21&linkId=7b2dfd74180cf05a206785c91bb833cb&ref_=as_li_ss_tl",
+          "asin": "B0G4DX3QR8",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "oneisall-2-2l-cordless-fountain",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4yYxRhE",
+          "url": "https://amzn.to/4yYxRhE",
+          "effectiveUrl": "https://www.amazon.de/Oneisall-kabelloser-Katzenbrunnen-ultraleise-Bewegungsmelder/dp/B0FN737L9G?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2YM4D0EP8VI74&dib=eyJ2IjoiMSJ9.wQtGKVrcBt4kzEuJbd3wqY5xO27lv5L8E868C79PLgAsGiMl-fVkB2Jr-fvuJy7SajaLgUwX6WBIJb5xDzIWV5VD6Cdo2TocgwqpyxlGd-7FA0j_i3EhatgSfH7MyBGzmFy5aeNVxAmMhuuvcLP-SsamDLKQ4GPF8Qicpo0AliY30WvPQsZDXYSLXE12-Zvltoe5qIJne3JoPLmNrBWKBOzzUU9jMurDvb6Oyr62orE9SahfBv3vBjwLWMuH41rHzPhjDSc98qhhcvtBncd8dNnCciSrvf63g9B3WMptuBU.aZGUqzFW5HEvWion6fpxeU7tS5WzlSHQdE5V__LUzQQ&dib_tag=se&keywords=oneisall%2B2,2L%2BCordless%2BCat%2BFountain%2BG%C3%BCnstige%2Bkabellose%2BOption%2Bf%C3%BCr%2BKatzen%2Bund%2Bklein&qid=1785184147&sprefix=oneisall%2B2%2B2l%2Bcordless%2Bcat%2Bfountain%2Bg%C3%BCnstige%2Bkabellose%2Boption%2Bf%C3%BCr%2Bkatzen%2Bund%2Bklein,aps,338&sr=8-6&th=1&linkCode=sl2&tag=yusha0f-21&linkId=5811efc6f2f6089e21a4cb7b754bb0c2&ref_=as_li_ss_tl",
+          "asin": "B0FN737L9G",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "oneisall-3-2l-cordless-fountain",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4fCjRBh",
+          "url": "https://amzn.to/4fCjRBh",
+          "effectiveUrl": "https://www.amazon.de/oneisall-Wasserbrunnen-Kabellos-E3-80-91Edelstahl-Haustier-Wasserbrunnen-Batteriebetriebener-dp-B0F/dp/B0FJX69D2R?&linkCode=sl2&tag=yusha0f-21&linkId=974696f7f99b0cba05bb3dd8ea12e481&ref_=as_li_ss_tl",
+          "asin": "B0FJX69D2R",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "oneisall-5l-automatic-cat-feeder",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4pLa14O",
+          "url": "https://amzn.to/4pLa14O",
+          "effectiveUrl": "https://www.amazon.de/oneisall-Futterautomat-Katzenfutter-Futterspender-Edelstahlsch%C3%BCssel/dp/B0C772KDKT?dib=eyJ2IjoiMSJ9.U5I5qW7eP1GYFmzPUX6lFCHYdx5ezLYAoJhxbWhpra48S01uvWVopoBJGjUnMnocLYDf5GpQi3p_Ohq4_ycohy6l2jZBVUcvTDlGu3leiI6jQ2I6N-mC8fXQt_EwQUK5ZzhfdiXqNHi9dhH1Nepp2LTvbPJYRZCNkPPQWioqt9a7fgeOS6cmd4BhDoCXpqggW4VYSu7Ezsn4Fv2u0hi6VfeaBSba02tmLikvgi0GAGDO6i69XxTc1PYLXwi76jqU_TYqid--AdP-caOXKu8tZ3VqcgT8mMJ2qByjSYhV2PE.L6YNzHoejoot-KBEMghnj7DT55JbcjkGtprYeaQ-wuk&dib_tag=se&keywords=oneisall%2B5L%2BFutterautomat%2Bzwei%2BKatzen&qid=1785099472&sr=8-5&th=1&linkCode=sl2&tag=yusha0f-21&linkId=2e09daa79b3859ff261dbaeb80002c6d&ref_=as_li_ss_tl",
+          "asin": "B0C772KDKT",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "oneisall-7l-dog-water-fountain",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4fQBE92",
+          "url": "https://amzn.to/4fQBE92",
+          "effectiveUrl": "https://www.amazon.de/oneisall-Trinkbrunnen-Katzenbrunnen-Hundebrunnen-%C3%9Cberlastschutz/dp/B0D8VHHK8N?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=KR3R8O1U9VW8&dib=eyJ2IjoiMSJ9.BdfzdRXaemcRFv-BJlt_ATRT0ogl9czjViOeEdK9HnvcJ9lg-UbBsGI_C7FANZ9IKT-aAkEd0_abOw47hM_BozAXbPYTT0wND8uDMWBFI4B0W2eRln-9bgt9kVvBugH4vDl4x7mnkoWP_Ha8y00TIozatJ0f5XoPZ5mq1lUA_RjXKHHxDieIQU0A2Fg_CBEK0sQPsE-kSKIxWIGNcZb8olhaaIMdLZjPIqcNZqBVS1Q36hD8Ax81tFai6RXAoELRaNQtG3zzpFt9skK0QvXBrf4qQcvIYmjlhj-6_57D1No.VkUcoJ8It87Fs3ZdawDjGBkLsJz1XrvOweSeHIgsV60&dib_tag=se&keywords=oneisall-7l-dog-water-fountain&qid=1784818392&sprefix=oneisall-7l-dog-water-fountain,aps,153&sr=8-1&th=1&linkCode=sl2&tag=yusha0f-21&linkId=3aed1b304467841daabbd80e270e0499&ref_=as_li_ss_tl",
+          "asin": "B0D8VHHK8N",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "onlycat-mikrochip-katzenklappe",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": false,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "www.onlycat.com",
+          "sourceUrl": "https://www.onlycat.com/de/store/onlycat-mikrochip-katzenklappe-mit-beutefallerkennung/",
+          "url": "https://www.onlycat.com/de/store/onlycat-mikrochip-katzenklappe-mit-beutefallerkennung/",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Bei onlycat.com ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "paj-pet-finder-4g-mini",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4vHdX7J",
+          "url": "https://amzn.to/4vHdX7J",
+          "effectiveUrl": "https://www.amazon.de/PAJ-GPS-Tracker-4G-Mini-Schwarz/dp/B0GQTVYXKX?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1SWVEOV8NRXW0&dib=eyJ2IjoiMSJ9.AnudRhusZudIukL4u3bWDlcmffu81vAjzE41zchqO7LbqJmMLzJYQJfOSKlqfIRstk8eSr_wlqR7d07xdDUwwx0T4q6mwvZyfIa_dcxlgSe020TUkPaNb1vsAJQPLavAawaJWUG_Po7lIF0rkkUTrDxf9qCVXpiJY6trAe_kDlm0xIgAkQLJA4hySx6OirkraqRClJ1NZJCD-g5Bt2pm68zx56ris8ArVyT7ZRI1RVc.uhli6vAJTPuKi5zDNDkR7XPd4a9iVF2lcJ-35fbv3bo&dib_tag=se&keywords=paj-pet-finder-4g-mini&qid=1784818515&sprefix=paj-pet-finder-4g-mini,aps,161&sr=8-3&th=1&linkCode=sl2&tag=yusha0f-21&linkId=d0e2e35232d5bf2e04cf0fc617054584&ref_=as_li_ss_tl",
+          "asin": "B0GQTVYXKX",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "pawsync-smart-pet-feeder",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4wkmJtD",
+          "url": "https://amzn.to/4wkmJtD",
+          "effectiveUrl": "https://www.amazon.de/Pawsync-Futterautomat-Farbwechselnde-Haustierfutter-Trockenmittel-App-Benachrichtigungen/dp/B0GKPQ4MYM?dib=eyJ2IjoiMSJ9.DCCvQ03x2YDUCJjiEuOo8edSgeIzYsPxDeS9_mMSIoq-qn_8yKvuelA7Y-OmYK30MMqotQoRuOJsQYH2Un3CMfOQEIp5QI-PwaevdxRQ2aO3BpX-i_m6MeHu-VCd7v9igro-AxJYSk1Yl-Pb9Xm0D7QANvEAZd6LNv-SZJYA09IxBe_SjnOtfl13R1qocMD3se4y-qFBm4gCRTtNtH3PBQ46KSBqaaxInP8_Tj7Rj3-EBKqgayEmFBItsKAiRJ_ab7tuiNutmND1VCte-pWvnKN9ADxsu-ZLvMOyWiqwOwc.KYTOv1kdOJgP0mSzKNCdei19IU6zasJQ4jXMIcz03Ik&dib_tag=se&keywords=PawSync%2BSmart%2BPet%2BFeeder&qid=1785099623&sr=8-6&ufe=app_do:amzn1.fos.00b1ec55-3783-4b8e-9430-16820cd5ad16&th=1&linkCode=sl2&tag=yusha0f-21&linkId=08d232069e67b1b3c7e4b33617b9deeb&ref_=as_li_ss_tl",
+          "asin": "B0GKPQ4MYM",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "petkit-eversweet-3-pro-uvc",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4x46uRz",
+          "url": "https://amzn.to/4x46uRz",
+          "effectiveUrl": "https://www.amazon.de/PETKIT-Hundewasserspender-Wasserbrunnen-Intelligentes-App-Steuerung/dp/B0CXPG7K79?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3OW6H1HPVJ79E&dib=eyJ2IjoiMSJ9.-6b-YpjXKsFSSeh8klQwKT7lZdv8sHDWB8tu1nte6QNukPJdSOBOo4VgGUw951vgijat2j9vlGv2VHx00w8JEh7eER69ByijaGXw8-XKGihsdQ6AO0FV-ZJtOb5JaIQ4-9eYVlT6EChlCUVV57aattZqYeV48CPjkOnDt4jKvcBwAHzRTcbc2bNFMRIdvdcPOncIsuMEhZywSylb3psKUllPoBNbp2unudhzDcLG_1RiNhOWdLjG--zd5oeNpLWmrxyiegeaDeumELRW6wfk1-YPdKt4raHFyI7jiVYccIg.sZhtHmN_EPUtTfCSdiEWZl4_Jbn_XT65-VcG0BdAp80&dib_tag=se&keywords=petkit-eversweet-3-pro-uvc&qid=1784818776&sprefix=petkit-eversweet-3-pro-uvc,aps,123&sr=8-23&th=1&linkCode=sl2&tag=yusha0f-21&linkId=667786f5b29900711b6dd089a1513c76&ref_=as_li_ss_tl",
+          "asin": "B0CXPG7K79",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "petkit-eversweet-solo-2-fountain",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": true,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://www.amazon.de/PETKIT-Automatische-Intelligenter-Trinkbrunnen-Wasserpumpe/dp/B0B4W8FDBV/ref=sr_1_6?crid=13H18OTGNC1KA&dib=eyJ2IjoiMSJ9.3LSW91xIJf7OhUTWxU3BbKFFTo8zchYGdYA680UaJ2cDbbMcPSPWiy2tmnxelD4Wqzp8cxiShJzstYKWWVihwTeakbfGZkr3psLOI7QTipgoHc7h2eio6LzzaRkGvz64n6pufLMPAvQvuIbf0oF3bW9kfGlUDgqbABRdjEwVNP2J4NC4qKU9dy5W3F6K3sv_IxCufXdwRelrYtpGaU7ki7T9xsN2dQmtybjkXzOiRQhOsqCVyw_rtl5e3cLpy85vlFmNguyz2C6skSLXecQDQv79cC-Li7rwCNO9bKvinJo.t0Y2BSVl0tl4NrdQ5TgtqERYCBa9Ne1UdCirVP-lSGE&dib_tag=se&keywords=petkit+eversweet+solo+2&qid=1785100478&sprefix=petlot+eversweet+solo%2Caps%2C113&sr=8-6",
+          "url": "https://www.amazon.de/PETKIT-Automatische-Intelligenter-Trinkbrunnen-Wasserpumpe/dp/B0B4W8FDBV/ref=sr_1_6?crid=13H18OTGNC1KA&dib=eyJ2IjoiMSJ9.3LSW91xIJf7OhUTWxU3BbKFFTo8zchYGdYA680UaJ2cDbbMcPSPWiy2tmnxelD4Wqzp8cxiShJzstYKWWVihwTeakbfGZkr3psLOI7QTipgoHc7h2eio6LzzaRkGvz64n6pufLMPAvQvuIbf0oF3bW9kfGlUDgqbABRdjEwVNP2J4NC4qKU9dy5W3F6K3sv_IxCufXdwRelrYtpGaU7ki7T9xsN2dQmtybjkXzOiRQhOsqCVyw_rtl5e3cLpy85vlFmNguyz2C6skSLXecQDQv79cC-Li7rwCNO9bKvinJo.t0Y2BSVl0tl4NrdQ5TgtqERYCBa9Ne1UdCirVP-lSGE&dib_tag=se&keywords=petkit+eversweet+solo+2&qid=1785100478&sprefix=petlot+eversweet+solo%2Caps%2C113&sr=8-6&tag=yusha0f-21",
+          "effectiveUrl": "https://www.amazon.de/PETKIT-Automatische-Intelligenter-Trinkbrunnen-Wasserpumpe/dp/B0B4W8FDBV/ref=sr_1_6?crid=13H18OTGNC1KA&dib=eyJ2IjoiMSJ9.3LSW91xIJf7OhUTWxU3BbKFFTo8zchYGdYA680UaJ2cDbbMcPSPWiy2tmnxelD4Wqzp8cxiShJzstYKWWVihwTeakbfGZkr3psLOI7QTipgoHc7h2eio6LzzaRkGvz64n6pufLMPAvQvuIbf0oF3bW9kfGlUDgqbABRdjEwVNP2J4NC4qKU9dy5W3F6K3sv_IxCufXdwRelrYtpGaU7ki7T9xsN2dQmtybjkXzOiRQhOsqCVyw_rtl5e3cLpy85vlFmNguyz2C6skSLXecQDQv79cC-Li7rwCNO9bKvinJo.t0Y2BSVl0tl4NrdQ5TgtqERYCBa9Ne1UdCirVP-lSGE&dib_tag=se&keywords=petkit+eversweet+solo+2&qid=1785100478&sprefix=petlot+eversweet+solo%2Caps%2C113&sr=8-6&tag=yusha0f-21",
+          "asin": "B0B4W8FDBV",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": true
+        }
+      ]
+    },
+    {
+      "slug": "petkit-eversweet-solo-se",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4bUvu5p",
+          "url": "https://amzn.to/4bUvu5p",
+          "effectiveUrl": "https://www.amazon.de/PETKIT-Wasserpumpe-Automatische-intelligenter-Trinkbrunnen/dp/B09SHH7TDS?&linkCode=sl2&tag=yusha0f-21&linkId=8d69d700e81509cad836c6dd39380b59&ref_=as_li_ss_tl",
+          "asin": "B09SHH7TDS",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "petkit-eversweet-ultra",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4vNSo5F",
+          "url": "https://amzn.to/4vNSo5F",
+          "effectiveUrl": "https://www.amazon.de/PETKIT-Abwassertrennung-Automatischer-Wasserspender-App-Steuerung/dp/B0GX9Y5GYM?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=374PJ2431JI7T&dib=eyJ2IjoiMSJ9._ibOkTDw9PreYNMsrY0-aA6-CVWZ6J2kn7tbvfPop7bk7ycuz0jLfc7OVd7ao0pZvAcxIc94GJNGVahvMob6BAaz77bVmip2Ma7jE1hbqJw5H8NZX5bQ51bL5TnNhxTN_z0lEDaDOIiarViz3CS1lwZmdtzZdYBxXBTM95YHBwvBLKDHc_KsopFvMkhhmVJtCiKzm0GvAkguaOI3YeFAFyvN4lVTrz5g573ntswXUmVDkYK5QScmzkxF5TkesUnll6XKAAl2YB9P_lhBOqY8FQ.8R5SOU-xoq20BvGwP1CwejjVX87KfMYNq-OJPNoCVls&dib_tag=se&keywords=petkit-eversweet-5-mini&qid=1784818910&sprefix=petkit-eversweet-5-mini,aps,150&sr=8-7&linkCode=sl2&tag=yusha0f-21&linkId=8eb66fa6348e235f4f7ad191ddb53e70&ref_=as_li_ss_tl",
+          "asin": "B0GX9Y5GYM",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "petkit-purobot-max-pro-2",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/3RQ7Lg4",
+          "url": "https://amzn.to/3RQ7Lg4",
+          "effectiveUrl": "https://www.amazon.de/PETKIT-Selbstreinigende-Selbstreinigend-Mehrkatzen-Erkennung-KI-Gesundheitstracking/dp/B0FJFB6YXB?th=1&linkCode=sl2&tag=yusha0f-21&linkId=e2f9dba65bd20032653078fd8ffbefb2&ref_=as_li_ss_tl",
+          "asin": "B0FJFB6YXB",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "petkit-yumshare-dual-hopper",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/3TQJw1G",
+          "url": "https://amzn.to/3TQJw1G",
+          "effectiveUrl": "https://www.amazon.de/PETKIT-Futterautomat-Futterautomaten-Automatischer-Futterspender/dp/B0DMNN4CSZ?pd_rd_w=im9eN&content-id=amzn1.sym.d95c9896-f01c-4d4b-b9f5-65a13021c181&pf_rd_p=d95c9896-f01c-4d4b-b9f5-65a13021c181&pf_rd_r=BZBE7QTMW2K7SX28EXX9&pd_rd_wg=F7wU2&pd_rd_r=aed93796-611a-482d-b279-dcde3395b6eb&pd_rd_i=B0DMNN4CSZ&th=1&linkCode=sl2&tag=yusha0f-21&linkId=68a6070de6b18c45c4a4526ae0391275&ref_=as_li_ss_tl",
+          "asin": "B0DMNN4CSZ",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "petkit-yumshare-solo-2",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4hyQ5Qk",
+          "url": "https://amzn.to/4hyQ5Qk",
+          "effectiveUrl": "https://www.amazon.de/PETKIT-Futterautomat-Gesichtserkennung-Futterautomaten-Automatischer/dp/B0GSZ7CWWH?crid=61DUPYDG9PUE&dib=eyJ2IjoiMSJ9.HqHIwgAl2r1igLPMciGBPtwmH0W3cMYxFm0QdILC2TBM3OWluJ394wOjNSYTn_cQMkuhbIjCy-gRx_QrvNKScmPeIL94yfI7NA5aQvoxaraAEdy0S21Wy84K3e2x0alg48NJyqn5Pj8GJhZ8ZkZFa_IAoEAEneZgAhjO7RMT7t82W46RZrht21aK5D85zJfsZSSpgUqHq0AODa9GwjNfxna6gRcVd21umLxjeJhanrFsHPLYmYF54ddw2oZ73CBDPqEyK5jL7XvhxjHt5LcRE5xm1wFXjPaMHZFwWEc5Uyw.cuFquW5il7d-T_u2gBLJPZIWUJ9zwF57cNSi9EtIxtQ&dib_tag=se&keywords=petkit+yumshare+solo+2&qid=1785099852&sprefix=PETKIT+yu,aps,128&sr=8-6&linkCode=sl2&tag=yusha0f-21&linkId=4f27db7145d199d616408bde69c0f337&ref_=as_li_ss_tl",
+          "asin": "B0GSZ7CWWH",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-air-automatic-feeder",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": false,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "www.mediamarkt.de",
+          "sourceUrl": "https://www.mediamarkt.de/de/product/_petlibro-pl-af008-91b-air-autompet-feed-black-2l-2989266.html?storeId=130",
+          "url": "https://www.mediamarkt.de/de/product/_petlibro-pl-af008-91b-air-autompet-feed-black-2l-2989266.html?storeId=130",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Bei mediamarkt.de ansehen"
+        },
+        {
+          "id": "petlibro-de",
+          "merchant": "petlibro",
+          "url": null,
+          "availability": "unknown",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Bei PETLIBRO ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-dockstream-cordless",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/3RLepUy",
+          "url": "https://amzn.to/3RLepUy",
+          "effectiveUrl": "https://www.amazon.de/PETLIBRO-Batteriebetriebener-Trinkbrunnen-Wasserpumpe-Wasserbrunnen/dp/B0BYCTMWB4?th=1&linkCode=sl2&tag=yusha0f-21&linkId=d76565f8d1f52350df7233386b19b53a&ref_=as_li_ss_tl",
+          "asin": "B0BYCTMWB4",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        },
+        {
+          "id": "petlibro-de",
+          "merchant": "petlibro",
+          "url": null,
+          "availability": "unknown",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Bei PETLIBRO ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-dockstream-rfid-smart",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4fGer87",
+          "url": "https://amzn.to/4fGer87",
+          "effectiveUrl": "https://www.amazon.de/PETLIBRO-RFID-Haustieridentifikation-App-%C3%9Cberwachung-Katzentrinkbrunnen-Hydrations%C3%BCberwachung/dp/B0DB1THM28?&linkCode=sl2&tag=yusha0f-21&linkId=1fb763834693007faac0e6d474cf7882&ref_=as_li_ss_tl",
+          "asin": "B0DB1THM28",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        },
+        {
+          "id": "petlibro-de",
+          "merchant": "petlibro",
+          "url": null,
+          "availability": "unknown",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Bei PETLIBRO ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-granary-2-vision",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": false,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": true,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "petlibro.com",
+          "sourceUrl": "https://petlibro.com/products/granary-2-series",
+          "url": null,
+          "availability": "unknown",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Bei petlibro.com ansehen"
+        },
+        {
+          "id": "petlibro-de",
+          "merchant": "petlibro",
+          "url": null,
+          "availability": "unknown",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Bei PETLIBRO ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-space-smart-feeder",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/3TntAUF",
+          "url": "https://amzn.to/3TntAUF",
+          "effectiveUrl": "https://www.amazon.de/PETLIBRO-Futterautomat-intelligenter-Wiederaufladbarer-Batterielebensdauer/dp/B0CHRYJLH1?th=1&linkCode=sl2&tag=yusha0f-21&linkId=003bc5b9934f889692ad5af0f18b0326&ref_=as_li_ss_tl",
+          "asin": "B0CHRYJLH1",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        },
+        {
+          "id": "petlibro-de",
+          "merchant": "petlibro",
+          "url": null,
+          "availability": "unknown",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Bei PETLIBRO ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-stainless-steel-fountain",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": true,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://www.amazon.de/-/en/PETLIBRO-Fountain-Drinking-Dockstream-Stainless/dp/B0F8NFVVZD?th=1",
+          "url": "https://www.amazon.de/-/en/PETLIBRO-Fountain-Drinking-Dockstream-Stainless/dp/B0F8NFVVZD?th=1&tag=yusha0f-21",
+          "effectiveUrl": "https://www.amazon.de/-/en/PETLIBRO-Fountain-Drinking-Dockstream-Stainless/dp/B0F8NFVVZD?th=1&tag=yusha0f-21",
+          "asin": "B0F8NFVVZD",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": true
+        },
+        {
+          "id": "petlibro-de",
+          "merchant": "petlibro",
+          "url": null,
+          "availability": "unknown",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Bei PETLIBRO ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "petsafe-healthy-pet-simply-feed",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4w2rVl1",
+          "url": "https://amzn.to/4w2rVl1",
+          "effectiveUrl": "https://www.amazon.de/PetSafe-Healthy-Simply-Trockenfutter-Timer-Portionskontrolle/dp/B00VIXRB6O?th=1&linkCode=sl2&tag=yusha0f-21&linkId=ffe1271507440ab72a2eae64ec6aeb2c&ref_=as_li_ss_tl",
+          "asin": "B00VIXRB6O",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "petsafe-mikrochip-katzenklappe",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": true,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://www.amazon.de/PetSafe-Haustierklappe-Verschlussoptionen-wetterresistent-batteriebetrieben/dp/B0756GW8SJ?th=1",
+          "url": "https://www.amazon.de/PetSafe-Haustierklappe-Verschlussoptionen-wetterresistent-batteriebetrieben/dp/B0756GW8SJ?th=1&tag=yusha0f-21",
+          "effectiveUrl": "https://www.amazon.de/PetSafe-Haustierklappe-Verschlussoptionen-wetterresistent-batteriebetrieben/dp/B0756GW8SJ?th=1&tag=yusha0f-21",
+          "asin": "B0756GW8SJ",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": true
+        }
+      ]
+    },
+    {
+      "slug": "petsafe-petporte-smart-flap",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/3RXN4yy",
+          "url": "https://amzn.to/3RXN4yy",
+          "effectiveUrl": "https://www.amazon.de/PetSafe-Mikrochip-Katzenklappe-Teleskoprahmen-Installation/dp/B00MA3TH2M?th=1&linkCode=sl2&tag=yusha0f-21&linkId=4b237f762afe3c0b4e531d35ccb6e787&ref_=as_li_ss_tl",
+          "asin": "B00MA3TH2M",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "petwalk-medium-tiertuer",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": false,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "petwalk.at",
+          "sourceUrl": "https://petwalk.at/products/tierture-konfigurieren",
+          "url": "https://petwalk.at/products/tierture-konfigurieren",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Bei petwalk.at ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "surefeed-microchip-pet-feeder",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4yzAAOc",
+          "url": "https://amzn.to/4yzAAOc",
+          "effectiveUrl": "https://www.amazon.de/SureFeed-MPF001-Mikrochip-Futterautomat-wei%C3%9F/dp/B00O0UIPTY?pd_rd_w=raJ8g&content-id=amzn1.sym.d92bccae-a723-4919-8d82-c15477d46bb5&pf_rd_p=d92bccae-a723-4919-8d82-c15477d46bb5&pf_rd_r=SYHYS5F7C9N2NY6XM7FT&pd_rd_wg=tHymz&pd_rd_r=0a8ecf29-5829-4af9-ba50-0a40e522499c&pd_rd_i=B00O0UIPTY&th=1&linkCode=sl2&tag=yusha0f-21&linkId=48b94e44bedf0416ebd7b32d29c447ca&ref_=as_li_ss_tl",
+          "asin": "B00O0UIPTY",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "sureflap-mikrochip-katzenklappe-connect",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4fVWpPq",
+          "url": "https://amzn.to/4fVWpPq",
+          "effectiveUrl": "https://www.amazon.de/Sure-Petcare-Mikrochip-Haustierklappe-Smartphone-App-Glasscheiben/dp/B07HFHZ3GJ?dib=eyJ2IjoiMSJ9.mGPHWo3K3A7KvnTqcfBfdyZlipsPX3mbc_1CMnjme347f_0pinq-AGJCXAvHtD3FeROSslYgVOWhovhHhKBqbAWvCNXgnHNsQPgpHvdbqnHc4sBt7EOAmpZZiVcJB-KnhOtnkdhPpSMtpx2WiZy6_oY_ZY-sNFNgDLwR5mnBO2nVFo6HaqZmignivbatUNhdA2XDNik3EY-TnMZqb5kXDqBYd2ehMI4ZQhK4AXRb_X0krgM3wGHk3JPh1Z5jxMoKUtiuw41BxfAH9XCMWUvAGFI8aOlmMZcUNdltgfTKIOE.m0YeYYv5-nkeclyvB6Q3a3Wg4okzoSmmrjkiJ_KiDxo&dib_tag=se&qid=1786000912&refinements=p_89:SureFlap&sr=8-2&srs=16251122031&linkCode=sl2&tag=yusha0f-21&linkId=952a5625a0243b52a6b0a5101d73f606&ref_=as_li_ss_tl",
+          "asin": "B07HFHZ3GJ",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "tractive-cat-6-mini",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/3Ts7OyY",
+          "url": "https://amzn.to/3Ts7OyY",
+          "effectiveUrl": "https://www.amazon.de/Tractive-Marktf%C3%BChrer-Gesundheitswarnungen-Sicherheitsverschluss-Integriertes-Schwarz/dp/B0GKGDZ726?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2Q3RFAFJ6P37I&dib=eyJ2IjoiMSJ9.JIoYP5bULtDNFpGX95WbuVGLG2g6zLOfPy3onoQy0_GrNR8JI0jGGZNtlUmHpftbcbCvErsMy8bIDJ2zkCle5XBpn5rXEx1Z6io-D4DVgTUagRzTdAroBk9s0bHp4pIgSaH22Z4lBrNBQeMbheATCy8eovLCXfLWqr-yJbQg0nl5lrtOlNeOMArVZlkJnz2IsCqpAf8-uxibu0LIP9Ry56KrYzs8ox4eWhir9N2il4iMSSmiqdnu0CNsbhsZP4YR10sxiJi3qE_mLg6OQODtvFmnR8nIL04wCbp6Ns_d9zw.BBafeWHFKoPQYguObHlWKhggmdw5LeEk3JXU8y5FJRc&dib_tag=se&keywords=tractive+6+mini&qid=1785168954&s=pet-supplies&sprefix=tractove+6+mini,pets,140&sr=1-1&linkCode=sl2&tag=yusha0f-21&linkId=275fd3ed0fae6e5fe264aaf2250135ab&ref_=as_li_ss_tl",
+          "asin": "B0GKGDZ726",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "tractive-dog-6",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/44NGoGb",
+          "url": "https://amzn.to/44NGoGb",
+          "effectiveUrl": "https://www.amazon.de/Tractive-Weglaufalarm-Aktivit%C3%A4tstracking-Gesundheitswarnungen-Bellverhalten-Schwarz/dp/B0D6Z4L6BW?crid=3L81JQAN014E0&dib=eyJ2IjoiMSJ9.zuLTfv4D8UqAfH8OFlHAUKbnib2ikOfdjGtyToLPhInmlJZkypHTlA8lwZ_fi5MFo49yerxe-Sc7cCwP8m5ZVW_JI9OrUoZrW4apJlP1cFz32j9KRV8A81bxgwWIdnO3UYvQL1YXw4iZM7ERXNhybErzyv5Xml2lOb9rkN9GlM9Nq_u2V_OSNdYIz7bYskZC9Bu3h2YA_Qk4zUO4UDzyKuavOMwEYM6F1HPT4xHsGkLGFABfvlCDCc_h69KBmjrE6O4816-Mpo61TLBh9fuEBZ0CMXBGPJw8AYiltgSTOu0.reak-QKO5DdLXerbMsBNJINfO3dcoBwE0Ise928L1AY&dib_tag=se&keywords=tractive%2Bdog%2B6&qid=1784898251&sprefix=tractive%2Bdo,aps,154&sr=8-1&th=1&linkCode=sl2&tag=yusha0f-21&linkId=8c9c7a8c41791d26aa14dd5a3d509334&ref_=as_li_ss_tl",
+          "asin": "B0D6Z4L6BW",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "tractive-dog-6-xl",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4pKPmOg",
+          "url": "https://amzn.to/4pKPmOg",
+          "effectiveUrl": "https://www.amazon.de/Tractive-Live-GPS-Ortung-Weglaufalarm-Gesundheitswarnungen-Akkulaufzeit-2026-Schwarz/dp/B0G52NY6HZ?crid=1KMQ9KQS2WHUS&dib=eyJ2IjoiMSJ9.n-84Xar0QYugW3nwl5t-hnov3FrhlOnzmHHj6Op0pyozy2vl50JQqHb8SAojyx50UZuZdpSYPpyT_Wg-jbdCv6wLbtDxK2mTDGFwHHPGEh51x-SzJNPtnxP1nB5h4AXcbiS_cPVfXFGiSslUiVlPtuyonh0SMldYUqQ2RfJ65oX1Ick4olWhtoFCLPbTquvgzdksny8GpDXQYx74v7YwCPV7v8C5sRDt6A2EO5kIdHX2YtfJDUO9dnu5J6BUyJZieWA2OpXnJ-dPVFiToPw1rCiwWn03BqP7fZdr9kaaZVY.0g8Mcop3dZBwgDOYJHmK_JuNOE0i3os9Mz8c0MyUpHg&dib_tag=se&keywords=tractive%2Bdog%2B6%2Bxl&qid=1784898459&sprefix=tractive%2Bdog%2B6,aps,135&sr=8-1&th=1&linkCode=sl2&tag=yusha0f-21&linkId=592c7cd4d95346f321f72de95f0b31cf&ref_=as_li_ss_tl",
+          "asin": "B0G52NY6HZ",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "weenect-xs",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4fCeKkD",
+          "url": "https://amzn.to/4fCeKkD",
+          "effectiveUrl": "https://www.amazon.de/Weenect-f%C3%BCr-Katzen-GPS-Tracking-Distanzlimit-Schwarz/dp/B0CHMZCYZC?th=1&linkCode=sl2&tag=yusha0f-21&linkId=cabaaf789aad1fe6de2e8c6b77945029&ref_=as_li_ss_tl",
+          "asin": "B0CHMZCYZC",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "weenect-xt",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4x1VEey",
+          "url": "https://amzn.to/4x1VEey",
+          "effectiveUrl": "https://www.amazon.de/Weenect-Hund-GPS-Tracker-Wasserdicht-Erforderlich-Ohne-Halsband/dp/B0G7KPLBLB?crid=3I37X3OKJJO8U&dib=eyJ2IjoiMSJ9.IMxrqAz8dEOuzNQAHqfzk1JQLZHZCs4m9eq4EGVJPP-jMrO-B5LQK6lx0jeupDVpxQgxi6vDKk3SXK1KGa1VDXAW15KAqVWGYSezIeTt9FjKSqT9qNvarLBLnF47PlYMvhvTX4gQJvJDYQUyO0x2dbqJNASpjQCU7Ye9lsxqxXJ_i-s1hyXKh-mX0wOrDvs4.En2FPpNTP89zbHy8hj-0Cz8v92QeiZ9Cc7E1GxmOy_A&dib_tag=se&keywords=weenect%2Bcats%2B2&qid=1785042887&sprefix=weenect%2Bca,aps,124&sr=8-8&th=1&linkCode=sl2&tag=yusha0f-21&linkId=1ff10dfb460964c3006900221507e794&ref_=as_li_ss_tl",
+          "asin": "B0G7KPLBLB",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "xiaomi-smart-pet-food-feeder-2",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4wofqBc",
+          "url": "https://amzn.to/4wofqBc",
+          "effectiveUrl": "https://www.amazon.de/Xiaomi-Trockenfutter-Gewichtserfassung-Warnsensoren-AA-Batterien/dp/B0DN9Z6P31?pd_rd_w=r38hl&content-id=amzn1.sym.633823c2-ab75-447c-a9af-015032f59703&pf_rd_p=633823c2-ab75-447c-a9af-015032f59703&pf_rd_r=RV35F4GS0Y5HFW30QCQA&pd_rd_wg=vfttf&pd_rd_r=21bca82e-c041-4517-a504-049f9a2b277a&pd_rd_i=B0DN9Z6P31&psc=1&linkCode=sl2&tag=yusha0f-21&linkId=3fc782260d08a9cc2dcd5b0e68bcbeed&ref_=as_li_ss_tl",
+          "asin": "B0DN9Z6P31",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "xiaomi-smart-pet-fountain-2",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4w6sFpn",
+          "url": "https://amzn.to/4w6sFpn",
+          "effectiveUrl": "https://www.amazon.de/Xiaomi-Smart-Pet-Fountain-2/dp/B0DPX61N3C?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=JW3OMA4D5JDL&dib=eyJ2IjoiMSJ9.Wn38w3jIRX_0a-8epBCx_IWWZH6noL18qJmVyIctuMKnN-117GPrtp-vbKabJZXSRnWY56bq-BTMM2zCopiey-j6J88NFifyqlUugU4C4ijODIxwKqbXJbTNGMjpxrxYFry2UX6jiqRtnZJFJtPeqYsUkmoKSfT8SzUC5CeZ3SP0OZhZPcLFIATCidWbgx1q_5Vdt1mv4lOllJM8qq9HoQUDC80WsVPEOKVtuvt87mDOKeCHb6aa-8cUg7Xc7JmW9pPCKi-bjDj9u5q8LG4_C7KgJiJmc_owBgfKWFQFYj4.yIAXnhYfnamWJh2O0uikUTOZ8nXD_HpZk_FLOUnkzPI&dib_tag=se&keywords=xiaomi+fountain+2&qid=1784890530&s=pet-supplies&sprefix=xiamo+fountain+2,pets,139&sr=1-4&linkCode=sl2&tag=yusha0f-21&linkId=c992f938cab50418a8d39784e913c559&ref_=as_li_ss_tl",
+          "asin": "B0DPX61N3C",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "zeromouse-2-0",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": false,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "zeromouse.com",
+          "sourceUrl": "https://zeromouse.com/de/products/zeromouse-2",
+          "url": "https://zeromouse.com/de/products/zeromouse-2",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Bei zeromouse.com ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "cat-mate-shell-fountain",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": true,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": true,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://www.amazon.de/s?k=Cat+Mate+Shell+Pet+Fountain",
+          "url": null,
+          "effectiveUrl": null,
+          "asin": null,
+          "availability": "out-of-stock",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": "invalid-amazon-product-url",
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "garmin-alpha-tt-25",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": false,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": true,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "www.garmin.com",
+          "sourceUrl": "https://www.garmin.com/de-DE/p/714363",
+          "url": "https://www.garmin.com/de-DE/p/714363",
+          "availability": "temporarily-unavailable",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Bei garmin.com ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "honeyguardian-a305d",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": true,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": true,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://www.amazon.de/s?k=HoneyGuardian%20A305D%205L%20Futterautomat",
+          "url": null,
+          "effectiveUrl": null,
+          "asin": null,
+          "availability": "temporarily-unavailable",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": "invalid-amazon-product-url",
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "honeyguardian-smart-pet-feeder-s305d",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": true,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": true,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://www.amazon.de/s?k=HoneyGuardian+S305D+5L+Smart+Pet+Feeder",
+          "url": null,
+          "effectiveUrl": null,
+          "asin": null,
+          "availability": "temporarily-unavailable",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": "invalid-amazon-product-url",
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "pawbby-smart-pet-feeder",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": true,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": true,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://www.amazon.de/s?k=PAWBBY%20Smart%20Pet%20Feeder",
+          "url": null,
+          "effectiveUrl": null,
+          "asin": null,
+          "availability": "out-of-stock",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": "invalid-amazon-product-url",
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "petkit-eversweet-5-mini",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": true,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": true,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://www.amazon.de/s?k=PETKIT+Eversweet+5+Mini",
+          "url": null,
+          "effectiveUrl": null,
+          "asin": null,
+          "availability": "out-of-stock",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": "invalid-amazon-product-url",
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "petkit-eversweet-max-2-uvc",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": true,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": true,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://www.amazon.de/s?k=PETKIT+Eversweet+Max+2+UVC",
+          "url": null,
+          "effectiveUrl": null,
+          "asin": null,
+          "availability": "out-of-stock",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": "invalid-amazon-product-url",
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "petkit-eversweet-max-cordless",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": true,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": true,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://www.amazon.de/s?k=PETKIT+Eversweet+Max+Cordless",
+          "url": null,
+          "effectiveUrl": null,
+          "asin": null,
+          "availability": "out-of-stock",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": "invalid-amazon-product-url",
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "petkit-fresh-element-infinity",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": true,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": true,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://www.amazon.de/s?k=PETKIT%20Fresh%20Element%20Infinity%205L%20Futterautomat",
+          "url": null,
+          "effectiveUrl": null,
+          "asin": null,
+          "availability": "discontinued",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": "invalid-amazon-product-url",
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-glacier-ultrafiltration",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4x5q0wQ",
+          "url": "https://amzn.to/4x5q0wQ",
+          "effectiveUrl": "https://www.amazon.de/-/en/PETLIBRO-Ultrafiltration-Stainless-Indicator-Dishwasher/dp/B0CX8WZWDM?&linkCode=sl2&tag=yusha0f-21&linkId=ad029cb6d9fc58ef0d7cd12d575f531c&ref_=as_li_ss_tl",
+          "asin": "B0CX8WZWDM",
+          "availability": "out-of-stock",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        },
+        {
+          "id": "petlibro-de",
+          "merchant": "petlibro",
+          "url": null,
+          "availability": "unknown",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Bei PETLIBRO ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "wopet-cube-air-ca10",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/44XxPbX",
+          "url": "https://amzn.to/44XxPbX",
+          "effectiveUrl": "https://www.amazon.de/WOPET-Automatischer-Futterspender-Portionskontrolle-Sprachaufnahme/dp/B0B5LCVT9M?&linkCode=sl2&tag=yusha0f-21&linkId=c37055394cabe5f578cf7fd7beadaa19&ref_=as_li_ss_tl",
+          "asin": "B0B5LCVT9M",
+          "availability": "out-of-stock",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "wopet-heritage-view-camera-feeder",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": true,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": true,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://www.amazon.de/s?k=WOPET%20Heritage%20View%20Camera%20Feeder%206L",
+          "url": null,
+          "effectiveUrl": null,
+          "asin": null,
+          "availability": "out-of-stock",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": "invalid-amazon-product-url",
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "wopet-patrol-f07-pro",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": true,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": true,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://www.amazon.de/s?k=WOPET+Patrol+F07+Pro+6L+Futterautomat",
+          "url": null,
+          "effectiveUrl": null,
+          "asin": null,
+          "availability": "out-of-stock",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": "invalid-amazon-product-url",
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "wopet-pioneer-f01-plus",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": true,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": true,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://www.amazon.de/s?k=WOPET%20Pioneer%20F01%20Plus%207L%20Futterautomat",
+          "url": null,
+          "effectiveUrl": null,
+          "asin": null,
+          "availability": "out-of-stock",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": "invalid-amazon-product-url",
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "catit-pixi-vision-smart-feeder",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": false,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "www.meintierdiscount.de",
+          "sourceUrl": "https://www.meintierdiscount.de/Katzen-Catit-Pixi-Smart-Feeder-Vision,102018,393p.ht",
+          "url": "https://www.meintierdiscount.de/Katzen-Catit-Pixi-Smart-Feeder-Vision,102018,393p.ht",
+          "availability": "available",
+          "canLink": true,
+          "purchasable": true,
+          "ctaLabel": "Bei Meintierdiscount ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "petsafe-freshfeed-refrigerated-feeder",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": true,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://www.amazon.com/PetSafe-FreshFeed-Refrigerated-Automatic-Feeder/dp/B0GLYYKQQD?th=1",
+          "url": "https://www.amazon.com/PetSafe-FreshFeed-Refrigerated-Automatic-Feeder/dp/B0GLYYKQQD?th=1&tag=yusha0f-21",
+          "effectiveUrl": "https://www.amazon.com/PetSafe-FreshFeed-Refrigerated-Automatic-Feeder/dp/B0GLYYKQQD?th=1&tag=yusha0f-21",
+          "asin": "B0GLYYKQQD",
+          "availability": "out-of-stock",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": true
+        }
+      ]
+    },
+    {
+      "slug": "petsafe-smart-feed-2",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4vShKiM",
+          "url": "https://amzn.to/4vShKiM",
+          "effectiveUrl": "https://www.amazon.de/PetSafe%C2%AE-SmartFeed-Automatische-Hunde-Katzenf%C3%BCtterung/dp/B07ZJF8MW5?th=1&linkCode=sl2&tag=yusha0f-21&linkId=1383512f14d19ee089ef246f4e108ed4&ref_=as_li_ss_tl",
+          "asin": "B07ZJF8MW5",
+          "availability": "available",
+          "canLink": true,
+          "purchasable": true,
+          "ctaLabel": "Bei Amazon ansehen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "sureflap-mikrochip-katzenklappe",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": false,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": true,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "www.surepetcare.com",
+          "sourceUrl": "https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe",
+          "url": "https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe",
+          "availability": "temporarily-unavailable",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Bei Sure Petcare Deutschland ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "sureflap-dualscan-mikrochip-katzenklappe",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": false,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": true,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "www.surepetcare.com",
+          "sourceUrl": "https://www.surepetcare.com/de-de/haustierklappen/dualscan-mikrochip-katzenklappe",
+          "url": "https://www.surepetcare.com/de-de/haustierklappen/dualscan-mikrochip-katzenklappe",
+          "availability": "temporarily-unavailable",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Bei Sure Petcare Deutschland ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-capsule-dog-fountain",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": true,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": true,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://www.amazon.de/s?k=PETLIBRO+Capsule+Dog+Fountain",
+          "url": null,
+          "effectiveUrl": null,
+          "asin": null,
+          "availability": "out-of-stock",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": "invalid-amazon-product-url",
+          "missingSourceTag": false
+        },
+        {
+          "id": "petlibro-de",
+          "merchant": "petlibro",
+          "url": null,
+          "availability": "unknown",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Bei PETLIBRO ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "surefeed-microchip-pet-feeder-connect",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4pHM7Hf",
+          "url": "https://amzn.to/4pHM7Hf",
+          "effectiveUrl": "https://www.amazon.de/SureFeed-MPF001-Mikrochip-Futterautomat-wei%C3%9F/dp/B00O0UIPTY?crid=3CZ47FUJXIJ95&dib=eyJ2IjoiMSJ9.k6e-L1yxydD_FRjIdO63LvSEICimsdWy1XTLdQCG0jGO26Fi34mmWmp0IGF02E0cXKIFSE0ltmha94xxYeqSorN1KkReUrGjn7ygP5u_2naP4dwQxJ8YmYzYUmaf2KsMh5sxNeognaBbM7yCUq2LpvpE6vyosMPegsBcYAFPwiFJZCZtArVGzM5Tamz36A4IrAg-Oxx_LCwuAaRnrbGsoNf1yHJYkZADKkzhjRfmNU1DRywOksZnPYMeHuCuenW8EPaBGZ5NOusIP6RQQd-WpVFKT_t5MxvemGOe8XD9v-M.unOuOqAM-B293Xz0kmiBha5DEFKTEezNJHUFm-PbcLU&dib_tag=se&keywords=surefeed%2Bmicrochip%2Bpet%2Bfeeder%2Bconnect&qid=1785184623&sprefix=/surefeed-microchip-pet-feeder-connect/,aps,185&sr=8-1&th=1&linkCode=sl2&tag=yusha0f-21&linkId=201369b76f358c492cc2a8b8533b0c57&ref_=as_li_ss_tl",
+          "asin": "B00O0UIPTY",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "enabot-rola-pettracker",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": false,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": true,
+      "offers": []
+    },
+    {
+      "slug": "neakasa-m1-lite",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4z3W8Ti",
+          "url": "https://amzn.to/4z3W8Ti",
+          "effectiveUrl": "https://www.amazon.de/Neakasa-selbstreinigend-Katzentoilette-App-Steuerung-Fassungsverm%C3%B6gen/dp/B0DG59SQ5P?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=135AOIM13EXV5&dib=eyJ2IjoiMSJ9.gyMWcRgnE_sssZIwUnJGPbovcHUlLMOA9ab5Dnp-DGUtJgwP44SCPMfdgDliCxxiMdltDqO1ZB2n5lqVRAgRFCkEffqpSLwRxubT2Gs9B24aVxGZPI5Ekjy1Yt-J4_bBktObrqnqB9BA9YSf17ZSp0TMLTCxFd9B6_U1mPlLKz4TozS51-LnHaT-2CC4179JNxIPTtW_R61JxO4eNmaKNlOuezXE9ZvRNb6aGZGfg31YSasGSTnl4W77u8ERA1-wzf3-e9Z92DyOUZavoKFNf3b1nSmYY6ldw6cpOxJDTNs.ylkUY8NxZ2MheR_ColLtkf_XL_V39sy7KPCv2_Y2BWE&dib_tag=se&keywords=Neakasa%2BM1%2BPlus%2BKatzenklo&qid=1786096727&s=pet-supplies&sprefix=neakasa%2Bm1%2Bplus%2Bkatzenklo%2B,pets,127&sr=1-5&ufe=app_do:amzn1.fos.1d0000e1-44b8-40d1-a25b-0cacf650cfb8&th=1&linkCode=sl2&tag=yusha0f-21&linkId=bdfe868733d183bfd93f06e4b886c448&ref_=as_li_ss_tl",
+          "asin": "B0DG59SQ5P",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "cat-mate-elite-355w",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4x3ONBM",
+          "url": "https://amzn.to/4x3ONBM",
+          "effectiveUrl": "https://www.amazon.de/Cat-Mate-Mikrochip-Katzenklappe-Digitalem-LCD-Anzeige/dp/B009GODTTK?&linkCode=sl2&tag=yusha0f-21&linkId=36d22871e54ab8deb56e6d6fa80ad63a&ref_=as_li_ss_tl",
+          "asin": "B009GODTTK",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "petkit-purobot-max-3",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/3RY5cZs",
+          "url": "https://amzn.to/3RY5cZs",
+          "effectiveUrl": "https://www.amazon.de/PETKIT-Purobot-Max-Selbstreinigende-Katzentoilette/dp/B0H35RM32J?&linkCode=sl2&tag=yusha0f-21&linkId=21de1b87364d8dccc26c35ee25bbec0b&ref_=as_li_ss_tl",
+          "asin": "B0H35RM32J",
+          "availability": "available",
+          "canLink": true,
+          "purchasable": true,
+          "ctaLabel": "Bei Amazon ansehen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "petsnowy-snow-plus",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4gAEoHZ",
+          "url": "https://amzn.to/4gAEoHZ",
+          "effectiveUrl": "https://www.amazon.de/PetSnowy-Automatische-Katzentoilette-selbstreinigend-Verschmutzung/dp/B0CLD3Z1TT?&linkCode=sl2&tag=yusha0f-21&linkId=db16e8418e19578023bd5049d5bdc092&ref_=as_li_ss_tl",
+          "asin": "B0CLD3Z1TT",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "pettec-cam-360",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4icB4E3",
+          "url": "https://amzn.to/4icB4E3",
+          "effectiveUrl": "https://www.amazon.de/PetTec-Cam-Hundekamera-Sprachfunktion-Nachtsicht/dp/B07BBN2C8J?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1K4HRE97H0FP9&dib=eyJ2IjoiMSJ9.qSC7eAv-y-U-Jzvdnt6Z1Y4iJoVrLFSSxN9g-hFUZRULdEyC-RmeVPSVlR2L0LDSzmXbAyRABDF1GjFN6Bz-os0k7CV09vD15Cj7aV2kMZVxnX8jhj6cjw2FMv_ACslDFDlIH9OvS3-OZoMLCuFQvtuduUb0yQVCFdRAhsbbf4IV4fIoZ20C2MhK6OYVK8VH508SirEkhKbQhYiGUvRJ2w.15GXMk1TlPuFMSwCRCuSPbRk8w81SZFDURk8ROjIlBI&dib_tag=se&keywords=PetTec%2BCam%2B360&qid=1786964858&s=pet-supplies&sprefix=pettec%2Bcam%2B360,pets,149&sr=1-4&th=1&linkCode=sl2&tag=yusha0f-21&linkId=df495d9c17b68093d35f3002680db8a1&ref_=as_li_ss_tl",
+          "asin": "B07BBN2C8J",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "catit-pixi-smart-trinkbrunnen",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4gdmE46",
+          "url": "https://amzn.to/4gdmE46",
+          "effectiveUrl": "https://www.amazon.de/Catit-Trinkbrunnen-Katzen-Steuerung-Wasserreservoir/dp/B093M57335?th=1&linkCode=sl2&tag=yusha0f-21&linkId=f3a4026c4e7719f902b2a9739894e091&ref_=as_li_ss_tl",
+          "asin": "B093M57335",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "invoxia-biotracker-2026",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/3TWnQS5",
+          "url": "https://amzn.to/3TWnQS5",
+          "effectiveUrl": "https://www.amazon.de/Invoxia-Biotracker-2026-Abo-an-Grau/dp/B0H4J2JX4Y?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1NE04SM71ZZDI&dib=eyJ2IjoiMSJ9.vN2r42gvJozl_hcieErBE9MYY8zGSb3qV6qbSYBJEsHGjHj071QN20LucGBJIEps.uI-D6rJ9m2WQaC9WOwB5OH6GPQT6F_2xRml4TmZ6IZY&dib_tag=se&keywords=invoxia-biotracker-2026&qid=1786977037&s=pet-supplies&sprefix=invoxia-biotracker-202,pets,195&sr=1-1&th=1&linkCode=sl2&tag=yusha0f-21&linkId=ce78cec201e4be94d0be1da086558e47&ref_=as_li_ss_tl",
+          "asin": "B0H4J2JX4Y",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "litter-robot-4",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4xMpzId",
+          "url": "https://amzn.to/4xMpzId",
+          "effectiveUrl": "https://www.amazon.de/Litter-Robot-Tritt-Zaun-Whisker-Wei%C3%9F/dp/B0CFTFRZ43?dib=eyJ2IjoiMSJ9.bOs-M0j6JV7OVlm9Qgl1t0oqumo4_6Ce6ASKhOCNog9iWCU2EWWiGJ7LShEuFF_-Pfi6RzwB6QjGXUW3ogsBfMwsypLK4lF4av0W2gD8OJjkZsdZGU48OWv1xvKtqdswytGi3DwuAmBwj_z3PuCb7YESPTARG3zQtwqyyX60NzeH4f_FpYXxuZMCzBynKJBqA107SZ9TqLsfkmTHY0Eh2m5DLNqEwi4fbkJBFIxyYknhrWPss1cSNS-UjMYon3XibCsRcNYAzB-2o3XdBeWg7yGgizY9lOnerhYdQ9BhTgE.6G2rGGV77o2pXLSGSBpG8iyIJG1ikXgVX9KtsO-DGDs&dib_tag=se&keywords=litter%2Brobot%2B4&qid=1786977077&sr=8-1&th=1&linkCode=sl2&tag=yusha0f-21&linkId=7c7f31a2f8fb9a8a9304c92350450f17&ref_=as_li_ss_tl",
+          "asin": "B0CFTFRZ43",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "pawfit-3",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4bSAFTs",
+          "url": "https://amzn.to/4bSAFTs",
+          "effectiveUrl": "https://www.amazon.de/3-GPS-Tracker-Live-Satellitenortung-intelligentes-Fernsprachbefehle-Aktivit%C3%A4tstracking/dp/B082F7J7LW?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2GW7XT6YJITB8&dib=eyJ2IjoiMSJ9.qM3H626XR8SHXmWzsBuD-HzCMYOifofXCjF_hD9UHvBaIPH5QCel82W_XpiudxAHFwQLPHzDGi-B0pamOt8FNV2MytGKWzFqfQwMid7iZ32xPOzjwc_4Ood7epZO4JKa93P6b7Im7pz21Q0RNS5FNe-Iv5AR6H-_8nvf3UfIRuWJu3fNkRkW-5ZGojdflEdQ8G7xJKO_vBTIZHnr4f29HlOGMafR4ik-fzcHCcJWZmd4HPKfKtgHN24tht0DbwTx.yTAyQTfGQ0PgZDJYFOjbaZW-rJF80oE-a_7vbgWqCwQ&dib_tag=se&keywords=pawfit+3&qid=1786977112&s=pet-supplies&sprefix=pawfit+3,pets,105&sr=1-4&linkCode=sl2&tag=yusha0f-21&linkId=f333e15d761e49b57c96eed097d7422e&ref_=as_li_ss_tl",
+          "asin": "B082F7J7LW",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "petkit-puramax-2",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4bUBBH7",
+          "url": "https://amzn.to/4bUBBH7",
+          "effectiveUrl": "https://www.amazon.de/PETKIT-Selbstreinigende-Selbstreinigend-Geruchsbeseitigung-Fassungsverm%C3%B6gen/dp/B0D9QJZ7FG?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3HOLL07594Z55&dib=eyJ2IjoiMSJ9.0fnNCU98J4ldQ168NmSTxhTNOCpEYMMEoMTbBgaG6QtDfODGipCU_4kOl6f9RoTJfrA7UQBXb3rbaqs8KXAkCxnFWR9RN2jBMuXVtPtX0NV5upVtrubOWEmw2BOfah4GfhvH3WxMPCTBg67t8VS52LjQfIXiwEhkVtajOlgJkrM97GsRkr0OqX1DdSTD9UWO6pgPFcQD9fwJiiRVQF0revbJKcm6d8sL_F3rxgjNvISACrlUzaCqJ97L4JYiUGFmQx5GhHFZmmrRgJYxnSJOMCr4UtUuI9iEobth-q6F6Ok.q6aV910K4AlT-gAuFbyeHU9RM453iEm3LpJYIfgq8uY&dib_tag=se&keywords=petkit%2Bpuremax%2B2&qid=1786977213&s=pet-supplies&sprefix=petkit%2Bpuremax%2B,pets,147&sr=1-4&th=1&linkCode=sl2&tag=yusha0f-21&linkId=d17119b96a33c05eef9bdb49478f12ad&ref_=as_li_ss_tl",
+          "asin": "B0D9QJZ7FG",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "petsafe-streamside-trinkbrunnen",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4qmFLNT",
+          "url": "https://amzn.to/4qmFLNT",
+          "effectiveUrl": "https://www.amazon.de/PetSafe-Trinkbrunnen-Bachgefl%C3%BCster-Katzenbrunnen-Wasserkapazit%C3%A4t/dp/B08FTPKD8Y?crid=3OECBCIKWQ91P&dib=eyJ2IjoiMSJ9.V86VMA4PQQ-RTY-GeBKnUJRjf27PgjtPJhTGqgFuc2VWMj42_oad6vv_EWYx5jk0L_jpyYD2F8mR4z83_UNFli6mhuOeVy1c-MJ9SSYha1Xc5RnsjbkWnUicm84vWmRGfWiMSgaWNL6u8phRG9AM-76rgvGeWg9-FcaT1pncUbLqXhPn9ULnv8hRIlx0_Ciqqqke-EVIC-jWlpl-xrKnSw3x8QVbHVDaHN1BBM2GNZgqLzMez5QmuEVk3XuUpFwxyCgmfW7k9Gqz23yA3qtbb-B0CXRz5l6bO295aJ2Vbis.0wj_PE1NuEQ3pj0zDJnOP6o7gyuWSo_d2MzuBYZJk3I&dib_tag=se&keywords=petsafe+keramik+trinkbrunnen&qid=1786977262&sprefix=petsafe+ker,aps,142&sr=8-6&linkCode=sl2&tag=yusha0f-21&linkId=e0a992d72233ce1216563656e234b39d&ref_=as_li_ss_tl",
+          "asin": "B08FTPKD8Y",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "reolink-e1-zoom",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4qpFTMz",
+          "url": "https://amzn.to/4qpFTMz",
+          "effectiveUrl": "https://www.amazon.de/Reolink-%C3%9Cberwachungskamera-Zoom-Auto-Tracking-Schreierkennung/dp/B0F18235L4?crid=3QHMVM74D5DWW&dib=eyJ2IjoiMSJ9.q01jh-yU_KnEKKvk9I4jqm8i3WXyM7EFdB6ZS274XYIuDy0s6tYFpJ5X_F2kKHRurb46qUvk7TchDX4OGJ5jtoKNqXArwtwb7eXYBOj0QZJf4oBE-z6CWVDC6bortpJxDVNn-hX8DshTQAiZQddW4BbGNfPr5ut8wCd-wotq-wQb8RrHxbQdSNKXhoisR3OyCUYndlPl2z7tKL_kcPJDwosaqXNeNl4rqK3s_7jtib4axyVi9IKjjo1cEr2__p8mgyMZ5XnU_OumvJGzvJBSDUD-IdrAmFth8IeeANYIsYk.c9C-H7kIKvRXmUSXSXyEvOp6e3S5AzdlYuqKEM9rLqA&dib_tag=se&keywords=reolink%2Be1%2Bzoom%2B4k&qid=1786977421&sprefix=Reolink%2BE1%2BZoom,aps,110&sr=8-1&ufe=app_do:amzn1.fos.1d0000e1-44b8-40d1-a25b-0cacf650cfb8&th=1&linkCode=sl2&tag=yusha0f-21&linkId=dbedf81b6144698e973fb1dbd57381f3&ref_=as_li_ss_tl",
+          "asin": "B0F18235L4",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "prothelis-area-pets",
+      "previouslySuppressed": true,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4x85xI6",
+          "url": "https://amzn.to/4x85xI6",
+          "effectiveUrl": "https://www.amazon.de/dp/B01N6WPMW3?&linkCode=sl2&tag=yusha0f-21&linkId=6f15ce55d5d00bd8f54908401738b5b8&ref_=as_li_ss_tl",
+          "asin": "B01N6WPMW3",
+          "availability": "out-of-stock",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "furbo-360-katzenkamera",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4ydM5Kr",
+          "url": "https://amzn.to/4ydM5Kr",
+          "effectiveUrl": "https://www.amazon.de/Furbo-360%C2%B0-Katzenkamera-Rotating-Designed/dp/B0C4XXBY44?th=1&linkCode=sl2&tag=yusha0f-21&linkId=8c712e5111bfeb11895f8e38dad97799&ref_=as_li_ss_tl",
+          "asin": "B0C4XXBY44",
+          "availability": "available",
+          "canLink": true,
+          "purchasable": true,
+          "ctaLabel": "Bei Amazon ansehen",
+          "error": null,
+          "missingSourceTag": false
+        }
+      ]
+    },
+    {
+      "slug": "petkit-purobot-crystal-duo",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": true,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://www.amazon.de/PETKIT-Selbstreinigende-Katzentoilette-AI-Gesundheits%C3%BCberwachung-Geruchskontrolle/dp/B0FLXZH359/ref=sr_1_6?dib=eyJ2IjoiMSJ9.BsPyhhun0I4X-UULKIa7vUeH6GUdtRTXNGjg0i8TA8F13vpQr2WX7sWVxVUhxH0OK5xRBVSrbAez_I5lxPM5bwo9ZqyyFJbQSSH4L2H0CTZzCDg1vhE5LKwZnhssyzFPrFRTrhIghAKoArbZugF1jSZHkD1EZhpp_6cNCBQWVT3P8PCa5igCliVfJy472sOJiBND9gYPKXhSAJ6HQ2P_H3QqidPdYKWK33uxZ5l7nURg6qUKuzvFoDJnqu16DxWfcK3eG-ySs3Ao7lqwK69CPWCEVRbqtZl-RE4ZU9abBew.xtVAW1Jz51wo7H6cSIyl02tje5Y5gfZZGDnpt8Bk6x0&dib_tag=se&keywords=PETKIT+Purobot+Crystal+Duo&qid=1787311553&sr=8-6",
+          "url": "https://www.amazon.de/PETKIT-Selbstreinigende-Katzentoilette-AI-Gesundheits%C3%BCberwachung-Geruchskontrolle/dp/B0FLXZH359/ref=sr_1_6?dib=eyJ2IjoiMSJ9.BsPyhhun0I4X-UULKIa7vUeH6GUdtRTXNGjg0i8TA8F13vpQr2WX7sWVxVUhxH0OK5xRBVSrbAez_I5lxPM5bwo9ZqyyFJbQSSH4L2H0CTZzCDg1vhE5LKwZnhssyzFPrFRTrhIghAKoArbZugF1jSZHkD1EZhpp_6cNCBQWVT3P8PCa5igCliVfJy472sOJiBND9gYPKXhSAJ6HQ2P_H3QqidPdYKWK33uxZ5l7nURg6qUKuzvFoDJnqu16DxWfcK3eG-ySs3Ao7lqwK69CPWCEVRbqtZl-RE4ZU9abBew.xtVAW1Jz51wo7H6cSIyl02tje5Y5gfZZGDnpt8Bk6x0&dib_tag=se&keywords=PETKIT+Purobot+Crystal+Duo&qid=1787311553&sr=8-6&tag=yusha0f-21",
+          "effectiveUrl": "https://www.amazon.de/PETKIT-Selbstreinigende-Katzentoilette-AI-Gesundheits%C3%BCberwachung-Geruchskontrolle/dp/B0FLXZH359/ref=sr_1_6?dib=eyJ2IjoiMSJ9.BsPyhhun0I4X-UULKIa7vUeH6GUdtRTXNGjg0i8TA8F13vpQr2WX7sWVxVUhxH0OK5xRBVSrbAez_I5lxPM5bwo9ZqyyFJbQSSH4L2H0CTZzCDg1vhE5LKwZnhssyzFPrFRTrhIghAKoArbZugF1jSZHkD1EZhpp_6cNCBQWVT3P8PCa5igCliVfJy472sOJiBND9gYPKXhSAJ6HQ2P_H3QqidPdYKWK33uxZ5l7nURg6qUKuzvFoDJnqu16DxWfcK3eG-ySs3Ao7lqwK69CPWCEVRbqtZl-RE4ZU9abBew.xtVAW1Jz51wo7H6cSIyl02tje5Y5gfZZGDnpt8Bk6x0&dib_tag=se&keywords=PETKIT+Purobot+Crystal+Duo&qid=1787311553&sr=8-6&tag=yusha0f-21",
+          "asin": "B0FLXZH359",
+          "availability": "available",
+          "canLink": true,
+          "purchasable": true,
+          "ctaLabel": "Bei Amazon ansehen",
+          "error": null,
+          "missingSourceTag": true
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-dockstream-2-smart",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": false,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "de.petlibro.com",
+          "sourceUrl": "https://de.petlibro.com/products/dockstream-2-smart-fountain",
+          "url": "https://de.petlibro.com/products/dockstream-2-smart-fountain",
+          "availability": "unknown",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Bei de.petlibro.com ansehen"
+        },
+        {
+          "id": "petlibro-de",
+          "merchant": "petlibro",
+          "sourceUrl": "https://de.petlibro.com/products/dockstream-2-smart-fountain?variant=52389571527022",
+          "url": "https://www.awin1.com/cread.php?awinmid=77942&awinaffid=2987821&ued=https%3A%2F%2Fde.petlibro.com%2Fproducts%2Fdockstream-2-smart-fountain%3Fvariant%3D52389571527022&clickref=petlibro-dockstream-2-smart_product-commerce_product",
+          "availability": "available",
+          "canLink": true,
+          "purchasable": true,
+          "ctaLabel": "Bei PETLIBRO ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-dockstream-2-smart-cordless",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": false,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "de.petlibro.com",
+          "sourceUrl": "https://de.petlibro.com/products/dockstream-2-smart-fountain",
+          "url": "https://de.petlibro.com/products/dockstream-2-smart-fountain",
+          "availability": "unknown",
+          "canLink": false,
+          "purchasable": false,
+          "ctaLabel": "Bei de.petlibro.com ansehen"
+        },
+        {
+          "id": "petlibro-de",
+          "merchant": "petlibro",
+          "sourceUrl": "https://de.petlibro.com/products/dockstream-2-smart-fountain?variant=52389571494254",
+          "url": "https://www.awin1.com/cread.php?awinmid=77942&awinaffid=2987821&ued=https%3A%2F%2Fde.petlibro.com%2Fproducts%2Fdockstream-2-smart-fountain%3Fvariant%3D52389571494254&clickref=petlibro-dockstream-2-smart-cordless_product-commerce_product",
+          "availability": "available",
+          "canLink": true,
+          "purchasable": true,
+          "ctaLabel": "Bei PETLIBRO ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-granary-camera-feeder",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/3Twv3YG",
+          "url": "https://amzn.to/3Twv3YG",
+          "effectiveUrl": "https://www.amazon.de/-/en/PETLIBRO-Automatic-Feeder-1080P-Video/dp/B0FPGGFLLH?th=1&linkCode=sl2&tag=yusha0f-21&linkId=d8878c036da8d5da4c42655071f27449&ref_=as_li_ss_tl",
+          "asin": "B0FPGGFLLH",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        },
+        {
+          "id": "petlibro-de",
+          "merchant": "petlibro",
+          "sourceUrl": "https://de.petlibro.com/products/petlibro-granary-automatic-pet-feeder-with-camera?variant=44070751502578",
+          "url": "https://www.awin1.com/cread.php?awinmid=77942&awinaffid=2987821&ued=https%3A%2F%2Fde.petlibro.com%2Fproducts%2Fpetlibro-granary-automatic-pet-feeder-with-camera%3Fvariant%3D44070751502578&clickref=petlibro-granary-camera-feeder_product-commerce_product",
+          "availability": "available",
+          "canLink": true,
+          "purchasable": true,
+          "ctaLabel": "Bei PETLIBRO ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-granary-dual-feeder",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4gYFKNA",
+          "url": "https://amzn.to/4gYFKNA",
+          "effectiveUrl": "https://www.amazon.de/PETLIBRO-Futterautomat-WLAN-Haustierfutterspender-Automatische-Katzenfutterspender/dp/B0CWKXG6Z8?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3TM7XR88BXTHO&dib=eyJ2IjoiMSJ9.CQRijU4a8ogaY4AtLENknG9uWLLbJSiS_62AhOfueJMtDqeQ9-Zr5V5_E20RfDb-5xZBSpa3lpATHazPk7dfLlN5s00Lgv0Y_VT-xgR7mx7pA1tIjzk-icw38vV2RlYT0eve0bf_eMRscxrN8HrOkoOlOulooEQ7LlUCcsqCZdOKcVkRWliZDF1_MIYYv1wkyu2qLgyXAD1-BLwiEOL53wBDXdMEzrq4Cze-FceZ5Oo33Y-X8_Y2zVxoTdHISvLBPLZ-vPb9MKx293gvM4ECk6-vMeU6_xnFBiymk6YGrAk.sMRY-Ebn2cN8FU1zoSuOdylKZZYbfF7enYZlOxaThIw&dib_tag=se&keywords=PETLIBRO%2BGranary%2BWiFi%2BDual%2BFood%2BTray%2BFeeder&qid=1785100033&sprefix=petlibro%2Bgranary%2Bwifi%2Bdual%2Bfood%2Btray%2Bfeeder,aps,103&sr=8-8&th=1&linkCode=sl2&tag=yusha0f-21&linkId=cfdbaa910fadfe20f71fd767bd9b2f85&ref_=as_li_ss_tl",
+          "asin": "B0CWKXG6Z8",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        },
+        {
+          "id": "petlibro-de",
+          "merchant": "petlibro",
+          "sourceUrl": "https://de.petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder?variant=44414075764978",
+          "url": "https://www.awin1.com/cread.php?awinmid=77942&awinaffid=2987821&ued=https%3A%2F%2Fde.petlibro.com%2Fproducts%2Fpetlibro-5g-wifi-automatic-pet-feeder%3Fvariant%3D44414075764978&clickref=petlibro-granary-dual-feeder_product-commerce_product",
+          "availability": "available",
+          "canLink": true,
+          "purchasable": true,
+          "ctaLabel": "Bei PETLIBRO ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-granary-wifi-feeder",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4x2aba4",
+          "url": "https://amzn.to/4x2aba4",
+          "effectiveUrl": "https://www.amazon.de/PETLIBRO-Futterautomat-WLAN-Haustierfutterspender-Automatische-Katzenfutterspender/dp/B0CWKXG6Z8?th=1&linkCode=sl2&tag=yusha0f-21&linkId=99a31cd6ff47368e09b10ff98179b90f&ref_=as_li_ss_tl",
+          "asin": "B0CWKXG6Z8",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        },
+        {
+          "id": "petlibro-de",
+          "merchant": "petlibro",
+          "sourceUrl": "https://de.petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder?variant=44414075732210",
+          "url": "https://www.awin1.com/cread.php?awinmid=77942&awinaffid=2987821&ued=https%3A%2F%2Fde.petlibro.com%2Fproducts%2Fpetlibro-5g-wifi-automatic-pet-feeder%3Fvariant%3D44414075732210&clickref=petlibro-granary-wifi-feeder_product-commerce_product",
+          "availability": "available",
+          "canLink": true,
+          "purchasable": true,
+          "ctaLabel": "Bei PETLIBRO ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-luma-smart-litter-box",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": true,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://www.amazon.de/-/en/PETLIBRO-Self-Cleaning-Electric-Analysis-Detection/dp/B0FPXF3CPK?th=1",
+          "url": "https://www.amazon.de/-/en/PETLIBRO-Self-Cleaning-Electric-Analysis-Detection/dp/B0FPXF3CPK?th=1&tag=yusha0f-21",
+          "effectiveUrl": "https://www.amazon.de/-/en/PETLIBRO-Self-Cleaning-Electric-Analysis-Detection/dp/B0FPXF3CPK?th=1&tag=yusha0f-21",
+          "asin": "B0FPXF3CPK",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": true
+        },
+        {
+          "id": "petlibro-de",
+          "merchant": "petlibro",
+          "sourceUrl": "https://de.petlibro.com/products/luma-intelligente-selbstreinigende-katzentoilette?variant=53374260642158",
+          "url": "https://www.awin1.com/cread.php?awinmid=77942&awinaffid=2987821&ued=https%3A%2F%2Fde.petlibro.com%2Fproducts%2Fluma-intelligente-selbstreinigende-katzentoilette%3Fvariant%3D53374260642158&clickref=petlibro-luma-smart-litter-box_product-commerce_product",
+          "availability": "available",
+          "canLink": true,
+          "purchasable": true,
+          "ctaLabel": "Bei PETLIBRO ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-one-rfid-smart-feeder",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/44MCFsD",
+          "url": "https://amzn.to/44MCFsD",
+          "effectiveUrl": "https://www.amazon.de/PETLIBRO-Futterautomat-Futterspender-Collar-Tag-Sensor-Katzenfutterspender/dp/B0FV8WJTFB?dib=eyJ2IjoiMSJ9.4EnlCwgLITNJTQSsUHzqYeJUWs-S7ASr7D1RbNXmgFMq0dXjz8h122ECJ8RTkDEOMq9xWcCYFrOJBe3HB6KD4A3UyiT7wht_Kz42_p35eHwHV2UaFjvhpy_U5tosTy-I77CT4O1AuY5oOIQ09jukpWyUBsIkuzAtq9N7r27ZighmyL1gYo7vt4Vy_rm-Yfq8oYsL36DRi4wO6rLB409AMOIE6mNhN0giSiMriYT9XdyZk7VToFB1ulp_Zc0wGZZvZARQla5uGe6hdMB2omVRMa-vMeU6_xnFBiymk6YGrAk.NvQ2VZA6_6-aioXbvOyMe4_t2UA8T83yaWkrswulVm8&dib_tag=se&keywords=PETLIBRO%2BOne%2BRFID%2BSmart%2BFeeder&qid=1785100208&sr=8-10&th=1&linkCode=sl2&tag=yusha0f-21&linkId=68945c6304edb9a4ffbbb5bdb1cfff7a&ref_=as_li_ss_tl",
+          "asin": "B0FV8WJTFB",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        },
+        {
+          "id": "petlibro-de",
+          "merchant": "petlibro",
+          "sourceUrl": "https://de.petlibro.com/products/one-rfid-pet-feeder?variant=53222683672942",
+          "url": "https://www.awin1.com/cread.php?awinmid=77942&awinaffid=2987821&ued=https%3A%2F%2Fde.petlibro.com%2Fproducts%2Fone-rfid-pet-feeder%3Fvariant%3D53222683672942&clickref=petlibro-one-rfid-smart-feeder_product-commerce_product",
+          "availability": "available",
+          "canLink": true,
+          "purchasable": true,
+          "ctaLabel": "Bei PETLIBRO ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-polar-wet-food-feeder",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": true,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://www.amazon.de/dp/B0DY18Z91T/?th=1",
+          "url": "https://www.amazon.de/dp/B0DY18Z91T/?th=1&tag=yusha0f-21",
+          "effectiveUrl": "https://www.amazon.de/dp/B0DY18Z91T/?th=1&tag=yusha0f-21",
+          "asin": "B0DY18Z91T",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": true
+        },
+        {
+          "id": "petlibro-de",
+          "merchant": "petlibro",
+          "sourceUrl": "https://de.petlibro.com/products/polar-wet-food-pet-feeder?variant=52122051084654",
+          "url": "https://www.awin1.com/cread.php?awinmid=77942&awinaffid=2987821&ued=https%3A%2F%2Fde.petlibro.com%2Fproducts%2Fpolar-wet-food-pet-feeder%3Fvariant%3D52122051084654&clickref=petlibro-polar-wet-food-feeder_product-commerce_product",
+          "availability": "available",
+          "canLink": true,
+          "purchasable": true,
+          "ctaLabel": "Bei PETLIBRO ansehen"
+        }
+      ]
+    },
+    {
+      "slug": "petlibro-scout-smart-camera",
+      "previouslySuppressed": false,
+      "amazonLinkPresent": true,
+      "amazonMissingSourceTag": false,
+      "amazonInvalidLink": false,
+      "amazonCtaSuppressed": false,
+      "noMerchantOption": false,
+      "offers": [
+        {
+          "id": "legacy",
+          "merchant": "amazon",
+          "sourceUrl": "https://amzn.to/4wOAlh0",
+          "url": "https://amzn.to/4wOAlh0",
+          "effectiveUrl": "https://www.amazon.de/PETLIBRO-Haustierkamera-Multi-Tiererkennung-Aktivit%C3%A4ts-Tracking-Farb-Nachtsicht/dp/B0F93VQD7G?th=1&linkCode=sl2&tag=yusha0f-21&linkId=61ade128b11ad7f39b7adbff52f54909&ref_=as_li_ss_tl",
+          "asin": "B0F93VQD7G",
+          "availability": "unknown",
+          "canLink": true,
+          "purchasable": false,
+          "ctaLabel": "Preis und Verfügbarkeit bei Amazon prüfen",
+          "error": null,
+          "missingSourceTag": false
+        },
+        {
+          "id": "petlibro-de",
+          "merchant": "petlibro",
+          "sourceUrl": "https://de.petlibro.com/products/scout-smart-camera?variant=52157103145326",
+          "url": "https://www.awin1.com/cread.php?awinmid=77942&awinaffid=2987821&ued=https%3A%2F%2Fde.petlibro.com%2Fproducts%2Fscout-smart-camera%3Fvariant%3D52157103145326&clickref=petlibro-scout-smart-camera_product-commerce_product",
+          "availability": "available",
+          "canLink": true,
+          "purchasable": true,
+          "ctaLabel": "Bei PETLIBRO ansehen"
+        }
+      ]
+    }
+  ]
+}
