@@ -4,6 +4,7 @@ import { isHigherPriceTier, isLowerPriceTier } from "../price/tier.ts";
 import type { ProductDecisionProfile } from "./decisionEngine.ts";
 import { uniqueTextItems } from "./contentLists.ts";
 import { calculateProductScore } from "../productScore.ts";
+import { assessProductReview } from "../productReview.ts";
 import { buildDecisionFacts } from "./consequences";
 import { deriveProductOperations, isAutoRecommendationEligible } from "../../lib/product-operations/policy.mjs";
 import { resolveProductHeroMedia, resolveProductMedia } from "../mediaResolver.mjs";
@@ -537,6 +538,7 @@ export const buildProductExperienceModel = ({
   );
   const alternatives = intelligentAlternatives(currentEntry, allProducts, priceIndex, alternativeRecommendations);
   const editorial = data.editorial ?? {};
+  const reviewAssessment = assessProductReview(data);
   const evidence = list<string>(editorial.evidence).map((item) => evidenceLabels[item] ?? item);
   const normalizedCategory = categoryKey(currentEntry);
 
@@ -653,7 +655,7 @@ export const buildProductExperienceModel = ({
     professionalReviews,
     userReviewSources,
     externalNote: text(externalEvidence.note),
-    handsOn: editorial.testedHandsOn
+    handsOn: reviewAssessment.handsOn
       ? {
           date: text(editorial.testedAt),
           duration: text(editorial.testDuration),
@@ -661,10 +663,10 @@ export const buildProductExperienceModel = ({
         }
       : null
   };
-  const usageHeading = editorial.testedHandsOn
+  const usageHeading = reviewAssessment.handsOn
     ? "So hat sich das Produkt in der Nutzung gezeigt"
     : "So funktioniert die Nutzung laut Dokumentation und Quellen";
-  const usageEyebrow = editorial.testedHandsOn
+  const usageEyebrow = reviewAssessment.handsOn
     ? "Eigener Praxistest"
     : "Nutzung verständlich eingeordnet";
 
@@ -691,6 +693,7 @@ export const buildProductExperienceModel = ({
     reviewSummary: text(data.review?.summary ?? data.description),
     reviewVerdict: text(data.review?.verdict ?? data.recommendation),
     score,
+    reviewBasis: reviewAssessment.basis,
     scoreLabel: score == null ? "Noch nicht bewertet" : score >= 90 ? "Hervorragend" : score >= 80 ? "Sehr gut" : score >= 70 ? "Gut" : score > 0 ? "Mit Einschränkungen" : "Noch offen",
     gallery,
     idealFor,
@@ -742,9 +745,9 @@ export const buildProductExperienceModel = ({
       },
       {
         title: "Was konnten wir nicht prüfen?",
-        text: editorial.testedHandsOn
+        text: reviewAssessment.handsOn
           ? text(editorial.note, "Nicht jede Langzeitwirkung, App-Änderung oder Nutzungssituation lässt sich vollständig abbilden.")
-          : text(editorial.note, "Kein eigener Langzeittest. Haltbarkeit, App-Stabilität und Verhalten in jedem Haushalt bleiben deshalb teilweise offen.")
+          : text(editorial.note, "Kein eigener Praxistest. Haltbarkeit, App-Stabilität und Verhalten in jedem Haushalt bleiben deshalb teilweise offen.")
       },
       {
         title: "Redaktionelle Einschätzung",

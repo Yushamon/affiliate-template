@@ -26,6 +26,7 @@ import { buildProductNextSteps } from "../../domain/recommendationLinks";
 import { deriveProductOperations } from "../../lib/product-operations/policy.mjs";
 import { resolveCommerceOffers } from "../../domain/commerceOffers.mjs";
 import { calculateProductScore } from "../../domain/productScore";
+import { assessProductReview } from "../../domain/productReview";
 import { getCachedImage } from "../../lib/imageOptimization";
 import {
   getComparisons,
@@ -65,6 +66,7 @@ if (!contentEntry) {
 const contentProduct =
   contentEntry.data;
 const productOperations = deriveProductOperations(contentProduct);
+const reviewAssessment = assessProductReview(contentProduct);
 
 const breadcrumbs =
   getProductBreadcrumbs(contentEntry);
@@ -126,7 +128,7 @@ const pageDescription =
 
 const seoTitle =
   contentProduct.seo?.title ??
-  `${contentProduct.title} im Test und Vergleich`;
+  `${contentProduct.title} – ${reviewAssessment.label}`;
 
 const seoDescription =
   contentProduct.seo?.description ??
@@ -327,7 +329,7 @@ const productSchema = {
     name: contentProduct.manufacturer.name
   },
   ...(schemaOffers.length ? { offers: schemaOffers.length === 1 ? schemaOffers[0] : schemaOffers } : {}),
-  ...(productScore100 !== null && productScore100 > 0 ? { review: {
+  ...(reviewAssessment.eligible && productScore100 !== null && productScore100 > 0 ? { review: {
     "@type": "Review",
     name: `${contentProduct.title} – redaktionelle Einordnung`,
     reviewBody: structuredReviewBody,
@@ -358,7 +360,7 @@ const productSchema = {
 ---
 
 <ProjectLayout
-  title={`${pageTitle} Testbericht`}
+  title={`${pageTitle} – ${reviewAssessment.label}`}
   seoTitle={seoTitle}
   description={pageDescription}
   seoDescription={seoDescription}

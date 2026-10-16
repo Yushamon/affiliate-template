@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { composeTrafficOpportunities } from "../../src/lib/seo/traffic-opportunities.mjs";
+import { writeCoverageReport } from "./coverage-report.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const appRoot = path.resolve(here, "../..");
@@ -299,6 +300,18 @@ const graphNodes = indexablePages.map((page) => {
     linkClass,
   };
 }).sort((left, right) => left.route.localeCompare(right.route, "de"));
+
+// Targeted export audit reuses this audit's build inventory, HTML graph and redirects.
+const coverageArgument = process.argv.indexOf("--coverage");
+if (coverageArgument >= 0) {
+  const cacheArgument = process.argv.indexOf("--coverage-http-cache");
+  await writeCoverageReport({
+    input: path.resolve(process.argv[coverageArgument + 1]), outputRoot, pages, redirects,
+    resolveRedirect, normalizeRoute, live: process.argv.includes("--coverage-live"),
+    httpCacheFile: cacheArgument >= 0 ? path.resolve(process.argv[cacheArgument + 1]) : undefined
+  });
+  process.exit(0);
+}
 
 const duplicateGroups = (key) => {
   const groups = new Map();

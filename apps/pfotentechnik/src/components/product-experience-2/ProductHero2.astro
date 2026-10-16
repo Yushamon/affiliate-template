@@ -40,7 +40,7 @@ const suitabilitySignals = model.idealFor.slice(0, 3);
           value={model.score}
           scale={100}
           variant="ring"
-          description="Redaktionelle Eignungsbewertung auf Basis der dokumentierten Quellen."
+          description={model.reviewBasis}
         />
       ) : (
         <div class="px2-hero__score-pending" role="status">
