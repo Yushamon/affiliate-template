@@ -6,7 +6,8 @@ import {experimental_AstroContainer} from 'astro/container';
 import {parseFragment} from 'parse5';
 import {buildSubscriptionCostModel} from '../src/domain/subscriptionCosts.ts';
 import {resolveCommerceOffers,compareCommerceOffers} from '../src/domain/commerceOffers.mjs';
-import {readProductDocument} from '../src/lib/price-intelligence/frontmatter-price.mjs';
+import {readProductFiles,readProductDocument} from '../src/lib/price-intelligence/frontmatter-price.mjs';
+import {fileURLToPath} from 'node:url';
 
 // Compile the real component and render it with Astro, including synthetic edge cases.
 // CSS is checked in the production browser smoke test. Legacy compiler metadata is
@@ -124,4 +125,21 @@ test('actual PETKIT YumShare keeps its exact affiliate target and renders the co
   const html=fs.readFileSync(new URL('../dist/produkt/petkit-yumshare-dual-hopper/index.html',import.meta.url),'utf8');
   const built=parseFragment(html);const boxes=byClass(built,'px2-price');assert.equal(boxes.length,1);
   assert.equal(byClass(boxes[0],'px2-availability').length,0);assert.match(text(boxes[0]),/Optionales Abo möglich/);
+});
+
+
+test('every built product retains all resolved merchant targets and a single availability note',async()=>{
+  const files=await readProductFiles(fileURLToPath(new URL('../src/content/products/',import.meta.url)));
+  assert.ok(files.length>0);
+  for(const file of files){
+    const {data}=await readProductDocument(file);
+    const html=fs.readFileSync(new URL(`../dist/produkt/${data.slug}/index.html`,import.meta.url),'utf8');
+    const boxes=byClass(parseFragment(html),'px2-price');assert.equal(boxes.length,1,data.slug);
+    const box=boxes[0];const expected=compareCommerceOffers(resolveCommerceOffers(data)).offers;
+    const links=byClass(box,'px2-price__cta').filter(n=>n.tagName==='a');
+    assert.deepEqual(links.map(n=>attr(n,'href')),expected.map(o=>o.affiliateUrl),data.slug);
+    assert.equal(text(box).match(/Preis und Verfügbarkeit beim Händler prüfen/g)?.length,1,data.slug);
+    if(attr(box,'data-availability')==='unknown')assert.equal(byClass(box,'px2-availability').length,0,data.slug);
+    for(const a of links){assert.match(attr(a,'rel'),/sponsored/,data.slug);assert.equal(attr(a,'aria-disabled'),undefined,data.slug);}
+  }
 });
