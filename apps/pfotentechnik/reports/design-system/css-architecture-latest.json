@@ -1,21 +1,21 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-29T05:59:18.920Z",
+  "generatedAt": "2026-10-16T09:42:09.986Z",
   "status": "ok",
   "safety": {
     "ruleLevelDeletionEnabled": false,
     "note": "Automatisch gelöscht werden ausschließlich leere bzw. reine Kommentar-CSS-Dateien."
   },
   "totals": {
-    "records": 90,
+    "records": 89,
     "cssFiles": 42,
-    "astroStyleFiles": 48,
-    "bytes": 690613,
-    "rules": 7334,
-    "important": 1168,
-    "actualImportantDeclarations": 1168,
-    "duplicateSelectors": 1430,
-    "duplicateDeclarationBlocks": 920,
+    "astroStyleFiles": 47,
+    "bytes": 689846,
+    "rules": 7337,
+    "important": 1169,
+    "actualImportantDeclarations": 1169,
+    "duplicateSelectors": 1431,
+    "duplicateDeclarationBlocks": 913,
     "importEdges": 71,
     "brokenImports": 0,
     "unimportedCssFiles": 0,
@@ -255,6 +255,19 @@
       "maxSelectorDepth": 5
     },
     {
+      "file": "apps/pfotentechnik/src/components/advisor/DecisionJourney.astro",
+      "kind": "astro-style",
+      "category": "component-inline",
+      "owner": "component-owner-unresolved",
+      "bytes": 4345,
+      "meaningfulBytes": 4249,
+      "importedBy": [],
+      "imports": [],
+      "rules": 43,
+      "important": 1,
+      "maxSelectorDepth": 5
+    },
+    {
       "file": "packages/affiliate-core/src/styles/premium-page.css",
       "kind": "css",
       "category": "global",
@@ -306,11 +319,11 @@
       "kind": "astro-style",
       "category": "component-inline",
       "owner": "component-owner-unresolved",
-      "bytes": 19687,
-      "meaningfulBytes": 19253,
+      "bytes": 20179,
+      "meaningfulBytes": 19739,
       "importedBy": [],
       "imports": [],
-      "rules": 154,
+      "rules": 158,
       "important": 0,
       "maxSelectorDepth": 7
     },
@@ -319,15 +332,15 @@
       "kind": "css",
       "category": "component",
       "owner": "component-owner-unresolved",
-      "bytes": 19287,
-      "meaningfulBytes": 18830,
-      "contentHash": "844c2c65826ab1e88a22d32aaa9023061f2931e1c26c9779240a99f49caaab79",
-      "normalizedHash": "d6ba7c907f1c34592a3facd2855fd3678787297d557b2372fc3d231f1a0766bc",
+      "bytes": 19327,
+      "meaningfulBytes": 18870,
+      "contentHash": "4131190157432e0f13da5ee60c224d201747fabe87491babbfcd8252d8bdc98c",
+      "normalizedHash": "f1e2851c52b4ce1d7a88df92aa3929b006ccac14b940f2c92cf03ce490fd7846",
       "importedBy": [
         "packages/affiliate-core/src/components/home/HomePage.astro"
       ],
       "imports": [],
-      "rules": 207,
+      "rules": 208,
       "important": 0,
       "maxSelectorDepth": 7
     },
@@ -624,19 +637,6 @@
       "maxSelectorDepth": 1
     },
     {
-      "file": "apps/pfotentechnik/src/pages/kaufberatung.astro",
-      "kind": "astro-style",
-      "category": "component-inline",
-      "owner": "component-owner-unresolved",
-      "bytes": 4654,
-      "meaningfulBytes": 3882,
-      "importedBy": [],
-      "imports": [],
-      "rules": 35,
-      "important": 0,
-      "maxSelectorDepth": 4
-    },
-    {
       "file": "apps/pfotentechnik/src/components/EditorialTransparency.astro",
       "kind": "astro-style",
       "category": "component-inline",
@@ -852,19 +852,6 @@
       "maxSelectorDepth": 5
     },
     {
-      "file": "apps/pfotentechnik/src/components/advisor/FeederAdvisor.astro",
-      "kind": "astro-style",
-      "category": "component-inline",
-      "owner": "component-owner-unresolved",
-      "bytes": 2945,
-      "meaningfulBytes": 2733,
-      "importedBy": [],
-      "imports": [],
-      "rules": 28,
-      "important": 0,
-      "maxSelectorDepth": 4
-    },
-    {
       "file": "apps/pfotentechnik/src/pages/produkt/[product].astro",
       "kind": "astro-style",
       "category": "component-inline",
@@ -889,6 +876,19 @@
       "rules": 31,
       "important": 0,
       "maxSelectorDepth": 5
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/kaufberatung.astro",
+      "kind": "astro-style",
+      "category": "component-inline",
+      "owner": "component-owner-unresolved",
+      "bytes": 2434,
+      "meaningfulBytes": 2388,
+      "importedBy": [],
+      "imports": [],
+      "rules": 23,
+      "important": 0,
+      "maxSelectorDepth": 2
     },
     {
       "file": "packages/affiliate-core/src/styles/product-box.css",
@@ -1292,19 +1292,6 @@
       "rules": 3,
       "important": 0,
       "maxSelectorDepth": 1
-    },
-    {
-      "file": "apps/pfotentechnik/src/pages/berater/futterautomat.astro",
-      "kind": "astro-style",
-      "category": "component-inline",
-      "owner": "component-owner-unresolved",
-      "bytes": 479,
-      "meaningfulBytes": 479,
-      "importedBy": [],
-      "imports": [],
-      "rules": 5,
-      "important": 0,
-      "maxSelectorDepth": 3
     },
     {
       "file": "apps/pfotentechnik/src/styles/layout/containers.css",
@@ -2261,6 +2248,24 @@
       "important": 12
     },
     {
+      "selector": "h2",
+      "occurrences": 15,
+      "files": [
+        "apps/pfotentechnik/src/styles/foundation/foundation-33.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-primitives.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-ui-system.css",
+        "packages/affiliate-core/src/components/comparison/comparison-experience.css",
+        "apps/pfotentechnik/src/pages/kaufberatung.astro"
+      ],
+      "owners": [
+        "design-system",
+        "comparison-platform",
+        "component-owner-unresolved"
+      ],
+      "important": 9
+    },
+    {
       "selector": "li",
       "occurrences": 15,
       "files": [
@@ -2275,22 +2280,6 @@
         "admin-seo-copilot"
       ],
       "important": 7
-    },
-    {
-      "selector": "h2",
-      "occurrences": 14,
-      "files": [
-        "apps/pfotentechnik/src/styles/foundation/foundation-33.css",
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-        "apps/pfotentechnik/src/styles/pfotentechnik-primitives.css",
-        "apps/pfotentechnik/src/styles/pfotentechnik-ui-system.css",
-        "packages/affiliate-core/src/components/comparison/comparison-experience.css"
-      ],
-      "owners": [
-        "design-system",
-        "comparison-platform"
-      ],
-      "important": 9
     },
     {
       "selector": ".comparison-card",
@@ -3272,7 +3261,7 @@
         "apps/pfotentechnik/src/styles/pfotentechnik-visual-density.css",
         "apps/pfotentechnik/src/styles/seo-admin-foundation.css",
         "packages/affiliate-core/src/styles/base.css",
-        "apps/pfotentechnik/src/components/advisor/FeederAdvisor.astro"
+        "apps/pfotentechnik/src/components/advisor/DecisionJourney.astro"
       ],
       "owners": [
         "design-system",
@@ -5316,17 +5305,6 @@
       "important": 0
     },
     {
-      "selector": ".pt-advice-footer > a",
-      "occurrences": 4,
-      "files": [
-        "apps/pfotentechnik/src/pages/kaufberatung.astro"
-      ],
-      "owners": [
-        "component-owner-unresolved"
-      ],
-      "important": 0
-    },
-    {
       "selector": ".site-header-v2 .main-nav-v2",
       "occurrences": 4,
       "files": [
@@ -7310,6 +7288,17 @@
       "important": 0
     },
     {
+      "selector": ".pt-home__decision",
+      "occurrences": 3,
+      "files": [
+        "packages/affiliate-core/src/components/home/home.css"
+      ],
+      "owners": [
+        "component-owner-unresolved"
+      ],
+      "important": 0
+    },
+    {
       "selector": ".pt-home__method",
       "occurrences": 3,
       "files": [
@@ -7999,7 +7988,7 @@
   "duplicateDeclarationBlocks": [
     {
       "fingerprint": "grid-template-columns: 1fr",
-      "occurrences": 125,
+      "occurrences": 123,
       "selectors": [
         ".footer-values",
         "main.container.container--home .home3-hero__actions",
@@ -8091,7 +8080,7 @@
         ".ui-callout",
         ".pt-next-steps__grid",
         ".editorial-transparency__facts",
-        ".pt-advisor__form",
+        ".pt-decision .decision-choices",
         ".choice-grid--three",
         ".result-grid",
         ".choice-grid--two",
@@ -8116,8 +8105,6 @@
         ".ops-toolbar",
         ".ops-actions",
         ".manufacturer-grid",
-        ".pt-advice-grid",
-        ".pt-advice-footer",
         ".comparison-priority-grid",
         ".comparison-specific-list",
         ".comparison-priority-card",
@@ -8142,7 +8129,7 @@
         "packages/affiliate-core/src/styles/ui.css",
         "apps/pfotentechnik/src/components/DecisionNextSteps.astro",
         "apps/pfotentechnik/src/components/EditorialTransparency.astro",
-        "apps/pfotentechnik/src/components/advisor/FeederAdvisor.astro",
+        "apps/pfotentechnik/src/components/advisor/DecisionJourney.astro",
         "apps/pfotentechnik/src/components/advisor/PetAdvisor.astro",
         "apps/pfotentechnik/src/components/category/CategoryExperience.astro",
         "apps/pfotentechnik/src/components/guide/GuideExperience.astro",
@@ -8152,7 +8139,6 @@
         "apps/pfotentechnik/src/pages/admin/seo/media.astro",
         "apps/pfotentechnik/src/pages/admin/seo/prices.astro",
         "apps/pfotentechnik/src/pages/hersteller/index.astro",
-        "apps/pfotentechnik/src/pages/kaufberatung.astro",
         "apps/pfotentechnik/src/pages/vergleiche/index.astro",
         "apps/pfotentechnik/src/pages/wissen.astro",
         "packages/affiliate-core/src/components/product/AlternativeRecommendationCard.astro"
@@ -8559,7 +8545,7 @@
     },
     {
       "fingerprint": "color: var(--pt-theme-text-soft)",
-      "occurrences": 31,
+      "occurrences": 32,
       "selectors": [
         ":where(.premium-block",
         ".quick-answer",
@@ -8590,12 +8576,14 @@
         "dd",
         "small",
         "figcaption)",
+        ".pt-decision .match-cautions",
         ".pt-knowledge-section header > p:last-child"
       ],
       "files": [
         "apps/pfotentechnik/src/styles/components/panels.css",
         "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
         "apps/pfotentechnik/src/styles/pfotentechnik-ui-system.css",
+        "apps/pfotentechnik/src/components/advisor/DecisionJourney.astro",
         "apps/pfotentechnik/src/pages/wissen.astro"
       ]
     },
@@ -8635,6 +8623,56 @@
       ],
       "files": [
         "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
+      ]
+    },
+    {
+      "fingerprint": "grid-template-columns: repeat(2, minmax(0, 1fr))",
+      "occurrences": 29,
+      "selectors": [
+        ".home41-decision__grid",
+        ".pt-category-grid",
+        ".pt-product-grid",
+        ".pt-money-cta-actions",
+        ".seo-grid[data-columns=\"2\"]",
+        ".seo-grid[data-columns=\"3\"]",
+        ".seo-grid[data-columns=\"4\"]",
+        ".comparison-alternatives__list",
+        ".comparison-buying-guidance__criteria",
+        ".home-feature-grid-v2",
+        ".home-article-grid-v2",
+        ".home-trust-grid",
+        ".home-manufacturer-grid-v2",
+        ".article .premium-render-block-checks .premium-render-grid",
+        ".article .premium-v2-checks .premium-v2-grid",
+        ".article .premium-v2-mistakes .premium-v2-grid",
+        ".article .premium-v3-grid-checks",
+        ".article .premium-v3-grid-mistakes",
+        ".ranking-recommendation-grid",
+        ".product-score-grid-v3",
+        ".ui-grid-2",
+        ".pt-advice-options",
+        ".pt-page--reference33 :global(.editorial-transparency__facts)",
+        ".product-decision-v4__grid",
+        ".product-strengths-v4__grid",
+        ".premium-v3--pfotentechnik .premium-v3-grid-quickFacts",
+        ".premium-v3--pfotentechnik .premium-v3-grid-scenarios",
+        ".premium-v3--pfotentechnik .premium-v3-grid-mistakes",
+        ".premium-v3--pfotentechnik .premium-v3-checks .premium-v3-list"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik.css",
+        "apps/pfotentechnik/src/styles/seo-admin-panels.css",
+        "apps/pfotentechnik/src/styles/seo-admin-responsive.css",
+        "packages/affiliate-core/src/components/comparison/comparison-experience.css",
+        "packages/affiliate-core/src/styles/home.css",
+        "packages/affiliate-core/src/styles/premium-page.css",
+        "packages/affiliate-core/src/styles/product.css",
+        "packages/affiliate-core/src/styles/ui.css",
+        "apps/pfotentechnik/src/pages/kaufberatung.astro",
+        "apps/pfotentechnik/src/pages/produkt/[product].astro",
+        "packages/affiliate-core/src/components/product/ProductReview.astro",
+        "packages/affiliate-core/src/renderer/PremiumRenderer.astro"
       ]
     },
     {
@@ -8684,50 +8722,43 @@
       ]
     },
     {
-      "fingerprint": "grid-template-columns: repeat(2, minmax(0, 1fr))",
+      "fingerprint": "display: none !important",
       "occurrences": 28,
       "selectors": [
-        ".home41-decision__grid",
-        ".pt-category-grid",
-        ".pt-product-grid",
-        ".pt-money-cta-actions",
-        ".seo-grid[data-columns=\"2\"]",
-        ".seo-grid[data-columns=\"3\"]",
-        ".seo-grid[data-columns=\"4\"]",
-        ".comparison-alternatives__list",
-        ".comparison-buying-guidance__criteria",
-        ".home-feature-grid-v2",
-        ".home-article-grid-v2",
-        ".home-trust-grid",
-        ".home-manufacturer-grid-v2",
-        ".article .premium-render-block-checks .premium-render-grid",
-        ".article .premium-v2-checks .premium-v2-grid",
-        ".article .premium-v2-mistakes .premium-v2-grid",
-        ".article .premium-v3-grid-checks",
-        ".article .premium-v3-grid-mistakes",
-        ".ranking-recommendation-grid",
-        ".product-score-grid-v3",
-        ".ui-grid-2",
-        ".pt-page--reference33 :global(.editorial-transparency__facts)",
-        ".product-decision-v4__grid",
-        ".product-strengths-v4__grid",
-        ".premium-v3--pfotentechnik .premium-v3-grid-quickFacts",
-        ".premium-v3--pfotentechnik .premium-v3-grid-scenarios",
-        ".premium-v3--pfotentechnik .premium-v3-grid-mistakes",
-        ".premium-v3--pfotentechnik .premium-v3-checks .premium-v3-list"
+        ".premium-v3--pfotentechnik .premium-v3-grid-products::-webkit-scrollbar",
+        "footer ~ :is( [class*=\"floating\"]",
+        "[class*=\"share\"]",
+        "[class*=\"screenshot\"]",
+        "[data-floating-action]",
+        "[data-share]",
+        "[data-screenshot] )",
+        "[data-product-page] :is( [data-test-status=\"editorial-review\"]",
+        "[data-review-status=\"editorial-review\"]",
+        "[data-status=\"editorial-review\"]",
+        ".test-status--editorial-review",
+        ".review-status--editorial-review",
+        ".status--editorial-review",
+        ".editorial-review",
+        "[class*=\"test-status\"]",
+        "[class*=\"review-status\"] )",
+        ".header-advisor-link",
+        ".pt-decision [hidden]",
+        ".ops-table article[hidden]",
+        ":is( .manufacturer-rating",
+        ".brand-rating",
+        ".manufacturer-card__rating",
+        "[class*=\"manufacturer\"][class*=\"rating\"]",
+        "[class*=\"brand\"][class*=\"rating\"] ) :is( .stars",
+        ".star",
+        "[aria-label*=\"Stern\"]",
+        "[aria-label*=\"star\"] )"
       ],
       "files": [
         "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-        "apps/pfotentechnik/src/styles/pfotentechnik.css",
-        "apps/pfotentechnik/src/styles/seo-admin-panels.css",
-        "apps/pfotentechnik/src/styles/seo-admin-responsive.css",
-        "packages/affiliate-core/src/components/comparison/comparison-experience.css",
-        "packages/affiliate-core/src/styles/home.css",
-        "packages/affiliate-core/src/styles/premium-page.css",
-        "packages/affiliate-core/src/styles/product.css",
-        "packages/affiliate-core/src/styles/ui.css",
-        "apps/pfotentechnik/src/pages/produkt/[product].astro",
-        "packages/affiliate-core/src/components/product/ProductReview.astro",
+        "apps/pfotentechnik/src/styles/pfotentechnik-ui-system.css",
+        "apps/pfotentechnik/src/components/advisor/DecisionJourney.astro",
+        "apps/pfotentechnik/src/pages/admin/seo/prices.astro",
+        "apps/pfotentechnik/src/pages/hersteller/index.astro",
         "packages/affiliate-core/src/renderer/PremiumRenderer.astro"
       ]
     },
@@ -8761,45 +8792,6 @@
       ],
       "files": [
         "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
-      ]
-    },
-    {
-      "fingerprint": "display: none !important",
-      "occurrences": 27,
-      "selectors": [
-        ".premium-v3--pfotentechnik .premium-v3-grid-products::-webkit-scrollbar",
-        "footer ~ :is( [class*=\"floating\"]",
-        "[class*=\"share\"]",
-        "[class*=\"screenshot\"]",
-        "[data-floating-action]",
-        "[data-share]",
-        "[data-screenshot] )",
-        "[data-product-page] :is( [data-test-status=\"editorial-review\"]",
-        "[data-review-status=\"editorial-review\"]",
-        "[data-status=\"editorial-review\"]",
-        ".test-status--editorial-review",
-        ".review-status--editorial-review",
-        ".status--editorial-review",
-        ".editorial-review",
-        "[class*=\"test-status\"]",
-        "[class*=\"review-status\"] )",
-        ".header-advisor-link",
-        ".ops-table article[hidden]",
-        ":is( .manufacturer-rating",
-        ".brand-rating",
-        ".manufacturer-card__rating",
-        "[class*=\"manufacturer\"][class*=\"rating\"]",
-        "[class*=\"brand\"][class*=\"rating\"] ) :is( .stars",
-        ".star",
-        "[aria-label*=\"Stern\"]",
-        "[aria-label*=\"star\"] )"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-        "apps/pfotentechnik/src/styles/pfotentechnik-ui-system.css",
-        "apps/pfotentechnik/src/pages/admin/seo/prices.astro",
-        "apps/pfotentechnik/src/pages/hersteller/index.astro",
-        "packages/affiliate-core/src/renderer/PremiumRenderer.astro"
       ]
     },
     {
@@ -8903,39 +8895,6 @@
       ]
     },
     {
-      "fingerprint": "color: var(--pt-theme-text)",
-      "occurrences": 23,
-      "selectors": [
-        ":where(.premium-block",
-        ".quick-answer",
-        ".short-answer",
-        ".key-takeaway",
-        ".summary-box",
-        ".info-box",
-        ".callout",
-        ".highlight-box) :where(h2",
-        "h3",
-        "h4",
-        "strong)",
-        ":where(h1",
-        "h2",
-        "h5",
-        "h6",
-        "strong",
-        "b)",
-        ":where(summary",
-        ".faq-question)",
-        ".status-copy strong",
-        ".pt-advice-note strong"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/styles/components/panels.css",
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-        "apps/pfotentechnik/src/components/advisor/PetAdvisor.astro",
-        "apps/pfotentechnik/src/pages/kaufberatung.astro"
-      ]
-    },
-    {
       "fingerprint": "background: #162338 !important",
       "occurrences": 23,
       "selectors": [
@@ -8996,6 +8955,37 @@
         "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro",
         "apps/pfotentechnik/src/components/product-experience-2/ProductAlternatives2.astro",
         "apps/pfotentechnik/src/pages/admin/seo/topical-authority.astro"
+      ]
+    },
+    {
+      "fingerprint": "color: var(--pt-theme-text)",
+      "occurrences": 22,
+      "selectors": [
+        ":where(.premium-block",
+        ".quick-answer",
+        ".short-answer",
+        ".key-takeaway",
+        ".summary-box",
+        ".info-box",
+        ".callout",
+        ".highlight-box) :where(h2",
+        "h3",
+        "h4",
+        "strong)",
+        ":where(h1",
+        "h2",
+        "h5",
+        "h6",
+        "strong",
+        "b)",
+        ":where(summary",
+        ".faq-question)",
+        ".status-copy strong"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/panels.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+        "apps/pfotentechnik/src/components/advisor/PetAdvisor.astro"
       ]
     },
     {
@@ -9250,42 +9240,6 @@
       ]
     },
     {
-      "fingerprint": "width: 100%",
-      "occurrences": 18,
-      "selectors": [
-        ".premium-v3--pfotentechnik",
-        ".money-page-intent-actions a",
-        "[data-product-experience=\"2.0\"] .px2-price__cta",
-        ".pt-advisor-cta a",
-        ".pt-health-bridge > a",
-        ".ui-callout a",
-        ".comparison-cover-filters__apply",
-        ".product-ranking-cta",
-        ".product-review-v3",
-        ".product-box-premium .product-box-button",
-        ".advisor-actions > *",
-        ".result-actions > *",
-        ".pt-category-hub__primary-comparison-action",
-        ".px2-hero--reference33 .px2-hero__scoreline :global(.pt-score)",
-        ".ops-summary button",
-        ".pt-advice-footer > a",
-        ".pt-score--ring",
-        ".pt-score--ring-compact"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-        "apps/pfotentechnik/src/styles/pfotentechnik-ui-system.css",
-        "packages/affiliate-core/src/components/comparison/comparison-experience.css",
-        "packages/affiliate-core/src/styles/product.css",
-        "apps/pfotentechnik/src/components/advisor/PetAdvisor.astro",
-        "apps/pfotentechnik/src/components/category/CategoryExperience.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro",
-        "apps/pfotentechnik/src/pages/admin/seo/prices.astro",
-        "apps/pfotentechnik/src/pages/kaufberatung.astro",
-        "packages/affiliate-core/src/components/EditorialScore.astro"
-      ]
-    },
-    {
       "fingerprint": "margin-inline: 0;max-width: 100%;width: 100%",
       "occurrences": 18,
       "selectors": [
@@ -9417,6 +9371,40 @@
       ],
       "files": [
         "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
+      ]
+    },
+    {
+      "fingerprint": "width: 100%",
+      "occurrences": 17,
+      "selectors": [
+        ".premium-v3--pfotentechnik",
+        ".money-page-intent-actions a",
+        "[data-product-experience=\"2.0\"] .px2-price__cta",
+        ".pt-advisor-cta a",
+        ".pt-health-bridge > a",
+        ".ui-callout a",
+        ".comparison-cover-filters__apply",
+        ".product-ranking-cta",
+        ".product-review-v3",
+        ".product-box-premium .product-box-button",
+        ".advisor-actions > *",
+        ".result-actions > *",
+        ".pt-category-hub__primary-comparison-action",
+        ".px2-hero--reference33 .px2-hero__scoreline :global(.pt-score)",
+        ".ops-summary button",
+        ".pt-score--ring",
+        ".pt-score--ring-compact"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-ui-system.css",
+        "packages/affiliate-core/src/components/comparison/comparison-experience.css",
+        "packages/affiliate-core/src/styles/product.css",
+        "apps/pfotentechnik/src/components/advisor/PetAdvisor.astro",
+        "apps/pfotentechnik/src/components/category/CategoryExperience.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro",
+        "apps/pfotentechnik/src/pages/admin/seo/prices.astro",
+        "packages/affiliate-core/src/components/EditorialScore.astro"
       ]
     },
     {
@@ -10094,6 +10082,36 @@
       ]
     },
     {
+      "fingerprint": "grid-template-columns: repeat(3, minmax(0, 1fr))",
+      "occurrences": 12,
+      "selectors": [
+        ".pt-value-grid",
+        ".pt-product-grid",
+        ".seo-grid[data-columns=\"3\"]",
+        ".comparison-alternatives__list",
+        ".ui-grid-3",
+        ".decision-journey-grid",
+        ".category-fit fieldset > div",
+        ".category-fit form",
+        ".px2-hero__decision",
+        ".purchase-mistakes__grid",
+        ".verdict__grid",
+        ".pt-advice-options"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/pfotentechnik.css",
+        "apps/pfotentechnik/src/styles/seo-admin-panels.css",
+        "packages/affiliate-core/src/components/comparison/comparison-experience.css",
+        "packages/affiliate-core/src/styles/ui.css",
+        "apps/pfotentechnik/src/components/DecisionJourney.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductCategoryFitAssistant.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductPurchaseMistakes2.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductVerdict2.astro",
+        "apps/pfotentechnik/src/pages/kaufberatung.astro"
+      ]
+    },
+    {
       "fingerprint": "padding: 22px",
       "occurrences": 12,
       "selectors": [
@@ -10392,28 +10410,6 @@
       ]
     },
     {
-      "fingerprint": "box-shadow: var(--pt-focus-ring);outline: none",
-      "occurrences": 11,
-      "selectors": [
-        ":where(button",
-        "[role=\"button\"]",
-        "a[href]",
-        "input",
-        "select",
-        "textarea",
-        "summary):focus-visible",
-        ".pt-advisor :is(button",
-        "a",
-        "input):focus-visible",
-        ".choice-card input:focus-visible + span"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-primitives.css",
-        "apps/pfotentechnik/src/components/advisor/FeederAdvisor.astro",
-        "apps/pfotentechnik/src/components/advisor/PetAdvisor.astro"
-      ]
-    },
-    {
       "fingerprint": "grid-template-columns: minmax(0, 1fr)",
       "occurrences": 11,
       "selectors": [
@@ -10436,34 +10432,6 @@
         "packages/affiliate-core/src/styles/product.css",
         "apps/pfotentechnik/src/components/guide/GuideExperience.astro",
         "apps/pfotentechnik/src/components/manufacturer/ManufacturerExperience.astro"
-      ]
-    },
-    {
-      "fingerprint": "grid-template-columns: repeat(3, minmax(0, 1fr))",
-      "occurrences": 11,
-      "selectors": [
-        ".pt-value-grid",
-        ".pt-product-grid",
-        ".seo-grid[data-columns=\"3\"]",
-        ".comparison-alternatives__list",
-        ".ui-grid-3",
-        ".decision-journey-grid",
-        ".category-fit fieldset > div",
-        ".category-fit form",
-        ".px2-hero__decision",
-        ".purchase-mistakes__grid",
-        ".verdict__grid"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik.css",
-        "apps/pfotentechnik/src/styles/seo-admin-panels.css",
-        "packages/affiliate-core/src/components/comparison/comparison-experience.css",
-        "packages/affiliate-core/src/styles/ui.css",
-        "apps/pfotentechnik/src/components/DecisionJourney.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductCategoryFitAssistant.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductPurchaseMistakes2.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductVerdict2.astro"
       ]
     },
     {
@@ -11358,6 +11326,24 @@
       ]
     },
     {
+      "fingerprint": "box-shadow: var(--pt-focus-ring);outline: none",
+      "occurrences": 8,
+      "selectors": [
+        ":where(button",
+        "[role=\"button\"]",
+        "a[href]",
+        "input",
+        "select",
+        "textarea",
+        "summary):focus-visible",
+        ".choice-card input:focus-visible + span"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/pfotentechnik-primitives.css",
+        "apps/pfotentechnik/src/components/advisor/PetAdvisor.astro"
+      ]
+    },
+    {
       "fingerprint": "font-size: 1.0625rem;line-height: 1.62",
       "occurrences": 8,
       "selectors": [
@@ -11499,6 +11485,23 @@
         "packages/affiliate-core/src/components/product/AlternativeRecommendationCard.astro",
         "packages/affiliate-core/src/components/product/ProductReview.astro",
         "packages/affiliate-core/src/renderer/PremiumRenderer.astro"
+      ]
+    },
+    {
+      "fingerprint": "color: var(--pt-theme-accent-text)",
+      "occurrences": 7,
+      "selectors": [
+        ":where( .table-of-contents",
+        ".toc",
+        ".article-toc",
+        ".content-toc",
+        ".toc-wrapper",
+        ".toc-container ) a:hover",
+        ".pt-decision a"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+        "apps/pfotentechnik/src/components/advisor/DecisionJourney.astro"
       ]
     },
     {
@@ -11880,6 +11883,22 @@
       ]
     },
     {
+      "fingerprint": "text-decoration: underline;text-underline-offset: .2em",
+      "occurrences": 7,
+      "selectors": [
+        ".pt-category-hub__path-list > a:hover strong",
+        ".pt-category-hub__path-list > a:hover b",
+        ".pt-category-hub__comparison-list > a:hover h3",
+        ".pt-category-hub__comparison-list > a:hover b",
+        ".pt-category-hub__product:is(:hover",
+        ":focus-visible) .pt-category-hub__product-cta",
+        ".pt-category-hub__guide-list > a:hover h3"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/components/category/CategoryExperience.astro"
+      ]
+    },
+    {
       "fingerprint": "display:grid;gap:1.5rem;grid-template-columns:repeat(2,minmax(0,1fr))",
       "occurrences": 7,
       "selectors": [
@@ -11936,21 +11955,6 @@
       ],
       "files": [
         "apps/pfotentechnik/src/styles/components/cards.css"
-      ]
-    },
-    {
-      "fingerprint": "color: var(--pt-theme-accent-text)",
-      "occurrences": 6,
-      "selectors": [
-        ":where( .table-of-contents",
-        ".toc",
-        ".article-toc",
-        ".content-toc",
-        ".toc-wrapper",
-        ".toc-container ) a:hover"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
       ]
     },
     {
@@ -12990,20 +12994,6 @@
       ],
       "files": [
         "apps/pfotentechnik/src/components/admin/ResearchWorkbench.astro"
-      ]
-    },
-    {
-      "fingerprint": "text-decoration: underline;text-underline-offset: .2em",
-      "occurrences": 5,
-      "selectors": [
-        ".pt-category-hub__path-list > a:hover strong",
-        ".pt-category-hub__path-list > a:hover b",
-        ".pt-category-hub__comparison-list > a:hover h3",
-        ".pt-category-hub__comparison-list > a:hover b",
-        ".pt-category-hub__guide-list > a:hover h3"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/category/CategoryExperience.astro"
       ]
     },
     {
@@ -14601,6 +14591,20 @@
       ]
     },
     {
+      "fingerprint": "background: var(--pt-theme-warning-soft);color: var(--pt-theme-warning)",
+      "occurrences": 3,
+      "selectors": [
+        ":where(.warning-icon)",
+        ".pt-decision .match-status--possible",
+        ".fit-badge--limited"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+        "apps/pfotentechnik/src/components/advisor/DecisionJourney.astro",
+        "apps/pfotentechnik/src/components/advisor/PetAdvisor.astro"
+      ]
+    },
+    {
       "fingerprint": "background: var(--pt-theme-surface, var(--surface)) !important;border-color: var(--pt-theme-border-strong, var(--border-strong)) !important;color: var(--pt-theme-text, var(--text)) !important",
       "occurrences": 3,
       "selectors": [
@@ -15626,20 +15630,6 @@
       ]
     },
     {
-      "fingerprint": "display: grid;gap: 18px;grid-template-columns: repeat(3, minmax(0, 1fr))",
-      "occurrences": 3,
-      "selectors": [
-        ".manufacturer-alternative-grid",
-        ".pt-advice-grid",
-        ".pt-knowledge-grid"
-      ],
-      "files": [
-        "packages/affiliate-core/src/styles/manufacturer.css",
-        "apps/pfotentechnik/src/pages/kaufberatung.astro",
-        "apps/pfotentechnik/src/pages/wissen.astro"
-      ]
-    },
-    {
       "fingerprint": "font-size: 17px",
       "occurrences": 3,
       "selectors": [
@@ -15814,6 +15804,20 @@
       ],
       "files": [
         "packages/affiliate-core/src/styles/premium-page.css"
+      ]
+    },
+    {
+      "fingerprint": "max-width: 720px",
+      "occurrences": 3,
+      "selectors": [
+        ".article .premium-v3-image-compact",
+        ".pt-advisor-cta div",
+        ".pt-decision .question-help"
+      ],
+      "files": [
+        "packages/affiliate-core/src/styles/premium-page.css",
+        "apps/pfotentechnik/src/components/AdvisorCta.astro",
+        "apps/pfotentechnik/src/components/advisor/DecisionJourney.astro"
       ]
     },
     {
@@ -16047,16 +16051,15 @@
       ]
     },
     {
-      "fingerprint": "background: var(--pt-theme-accent-hover)",
+      "fingerprint": "outline-offset: 3px;outline: 2px solid var(--pt-theme-accent)",
       "occurrences": 3,
       "selectors": [
-        ".pt-advisor button:hover",
-        ".pt-advisor__result > a:hover",
-        ".button-primary:hover"
+        ".pt-decision :is(button",
+        "a",
+        "input):focus-visible"
       ],
       "files": [
-        "apps/pfotentechnik/src/components/advisor/FeederAdvisor.astro",
-        "apps/pfotentechnik/src/components/advisor/PetAdvisor.astro"
+        "apps/pfotentechnik/src/components/advisor/DecisionJourney.astro"
       ]
     },
     {
@@ -16392,18 +16395,6 @@
         ".ta-hero p",
         ".ta-cluster p",
         ".ta-opportunities p"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/pages/admin/seo/topical-authority.astro"
-      ]
-    },
-    {
-      "fingerprint": "align-items:center;background:var(--seo-surface-subtle,#eef1f5);border-radius:999px;display:inline-flex;font-size:.78rem;font-weight:700;padding:.3rem .6rem",
-      "occurrences": 3,
-      "selectors": [
-        ".ta-status",
-        ".ta-priority",
-        ".ta-chip"
       ],
       "files": [
         "apps/pfotentechnik/src/pages/admin/seo/topical-authority.astro"

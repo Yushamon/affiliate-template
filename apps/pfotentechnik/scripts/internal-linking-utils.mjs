@@ -83,3 +83,17 @@ export const stripMarkdown = (value = "") => String(value)
   .replace(/<[^>]+>/g, " ")
   .replace(/^#{1,6}\s+.*$/gm, " ")
   .replace(/\s+/g, " ").trim();
+
+// The advisor's two start links and its reset link are functional navigation,
+// even though every state intentionally shares /kaufberatung/ as canonical.
+export function isAdvisorStateNavigation({ sourceRoute, href, className = '', hasDecisionAdvisor = false }) {
+  if (sourceRoute !== '/kaufberatung/' || !hasDecisionAdvisor) return false;
+  try {
+    const url = new URL(href, 'https://pfotentechnik.de/');
+    if (url.origin !== 'https://pfotentechnik.de' || url.pathname !== '/kaufberatung/' || url.hash) return false;
+    const classes = new Set(className.split(/\s+/));
+    if (classes.has('world-back') && !url.search) return true;
+    return classes.has('pt-advice-option') && [...url.searchParams.keys()].length === 1 &&
+      ['gps', 'fountain'].includes(url.searchParams.get('world'));
+  } catch { return false; }
+}

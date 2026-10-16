@@ -264,7 +264,7 @@ Der Vergleich richtet sich an Haushalte, in denen Futtermenge, Futtersorte oder 
 |---|---|---|---|---|
 | SureFeed Mikrochip | Mikrochip oder RFID-Tag | ja | teilweise: geschützter Napf, keine automatisch berechnete Ration | nein |
 | SureFeed Connect | Mikrochip oder RFID-Tag | ja | teilweise | ja, im dokumentierten Protokollumfang |
-| PETLIBRO ONE RFID | PETLIBRO-RFID-Tag | ja | ja, Zugang und Plan für das zugeordnete Tier | ja |
+| [PETLIBRO ONE RFID](/produkt/petlibro-one-rfid-smart-feeder/) | PETLIBRO-RFID-Tag | ja | ja, Zugang und Plan für das zugeordnete Tier | ja |
 
 Ein offener Automat mit zwei Näpfen bleibt Shared Use. Kamera, zwei Auslässe oder mehrere App-Nutzer belegen für sich keine Tieridentifikation.
 

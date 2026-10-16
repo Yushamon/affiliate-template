@@ -4,6 +4,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { composeTrafficOpportunities } from "../../src/lib/seo/traffic-opportunities.mjs";
 import { writeCoverageReport } from "./coverage-report.mjs";
+import { writeRecoveryReport } from "./indexing-recovery.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const appRoot = path.resolve(here, "../..");
@@ -226,6 +227,7 @@ const pages = htmlFiles.map((file) => {
     schemaTypes: types,
     invalidSchema: types.includes("__INVALID_JSON_LD__"),
     fullLinks: linksIn(html),
+    contentLinks: linksIn(main),
     meaningfulLinks: [...new Set([...linksIn(header), ...linksIn(main)])],
     footerLinks: linksIn(footer),
     images,
@@ -300,6 +302,14 @@ const graphNodes = indexablePages.map((page) => {
     linkClass,
   };
 }).sort((left, right) => left.route.localeCompare(right.route, "de"));
+
+// Recovery reuses the rendered inventory, redirect resolver and source enrichment.
+if (process.argv.includes("--recovery")) {
+  const argument = name => { const index = process.argv.indexOf(name); return index < 0 ? undefined : process.argv[index + 1]; };
+  await writeRecoveryReport({ appRoot, repoRoot, outputRoot, pages, redirects, resolveRedirect, normalizeRoute,
+    input: argument("--coverage"), previous: argument("--previous"), observedAt: argument("--observed-at") });
+  process.exit(0);
+}
 
 // Targeted export audit reuses this audit's build inventory, HTML graph and redirects.
 const coverageArgument = process.argv.indexOf("--coverage");

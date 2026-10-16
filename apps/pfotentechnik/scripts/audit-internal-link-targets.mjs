@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import fs from "node:fs";
+import { isAdvisorStateNavigation } from "./internal-linking-utils.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -322,7 +323,8 @@ for (const file of htmlFiles) {
     const isNavigationState =
       ariaCurrent === "page" ||
       /(?:nav|menu|pagination|tabs?)/i.test(className) ||
-      role === "tab";
+      role === "tab" ||
+      isAdvisorStateNavigation({ sourceRoute, href, className, hasDecisionAdvisor: main.includes('data-decision-advisor') });
 
     if (
       finalTarget === canonical &&
