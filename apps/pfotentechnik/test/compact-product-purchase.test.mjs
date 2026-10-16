@@ -1,12 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import {fileURLToPath} from 'node:url';
 import {transform} from '@astrojs/compiler-rs';
 import {experimental_AstroContainer} from 'astro/container';
 import {parseFragment} from 'parse5';
 import {buildSubscriptionCostModel} from '../src/domain/subscriptionCosts.ts';
 import {resolveCommerceOffers,compareCommerceOffers} from '../src/domain/commerceOffers.mjs';
-import {readProductDocument} from '../src/lib/price-intelligence/frontmatter-price.mjs';
+import {readProductFiles,readProductDocument} from '../src/lib/price-intelligence/frontmatter-price.mjs';
 
 // Compile the real component and render it with Astro, including synthetic edge cases.
 // CSS is checked in the production browser smoke test. Legacy compiler metadata is
@@ -24,7 +25,7 @@ const nodes=node=>[node,...(node.childNodes??[]).flatMap(nodes)];
 const text=node=>node.nodeName==='#text'?node.value:(node.childNodes??[]).map(text).join('');
 const byClass=(root,name)=>nodes(root).filter(n=>(attr(n,'class')??'').split(' ').includes(name));
 const affiliate={url:'https://www.amazon.de/dp/B012345678?tag=yusha0f-21',label:'Amazon',rel:'sponsored nofollow noopener',target:'_blank'};
-const offer={id:'amazon',merchant:'amazon',label:'Amazon',affiliateUrl:affiliate.url,rel:affiliate.rel,target:'_blank',tracking:{product:'fixture',placement:'product-commerce',pageType:'product'},formattedPrice:null,shipping:null};
+const offer={id:'amazon',merchant:'amazon',label:'Amazon',affiliateUrl:affiliate.url,rel:affiliate.rel,target:'_blank',tracking:{product:'fixture',placement:'product-commerce',pageType:'product'},formattedPrice:null,shipping:null,legacy:true,verified:true};
 const render=async(overrides={})=>{
   const html=await container.renderToString(PriceBox,{props:{affiliate,operations:{availability:'unknown',availabilityLabel:'Unbekannt',availabilityReason:'Interne Datenqualität ohne Liefernachweis',priceAvailable:false,purchasable:false},commerce:{offers:[offer],hasConfiguredOffers:false},...overrides}});
   return parseFragment(html);
@@ -36,15 +37,15 @@ test('unknown availability keeps a short, active Amazon CTA and one merchant not
   assert.equal(byClass(root,'px2-availability').length,0);
   assert.doesNotMatch(text(root),/Unbekannt|Liefernachweis|Verfügbarkeit unbekannt/);
   const buttons=byClass(root,'px2-price__cta');assert.equal(buttons.length,1);
-  assert.equal(text(buttons[0]).trim(),'Bei Amazon ansehen');assert.equal(attr(buttons[0],'href'),affiliate.url);
+  assert.equal(text(buttons[0]).trim(),'Bei Amazon ansehen→');assert.equal(attr(buttons[0],'href'),affiliate.url);
   assert.match(attr(buttons[0],'rel'),/sponsored/);assert.equal(attr(buttons[0],'target'),'_blank');
   assert.equal(text(root).match(/Preis und Verfügbarkeit beim Händler prüfen/g).length,1);
   assert.ok(nodes(root).some(n=>attr(n,'href')==='/affiliate-hinweis/'));
 });
 
 test('missing price stays compact without disabling a valid merchant link',async()=>{
-  const root=await render();assert.equal(byClass(root,'px2-price__purchase').length,1);
-  assert.equal(text(root).match(/Preis beim Händler prüfen/g).length,1);
+  const root=await render();assert.equal(byClass(root,'px2-price__purchase').length,0);
+  assert.doesNotMatch(text(root),/Preis aktuell nicht verfügbar|Preis beim Händler prüfen/);
   assert.ok(attr(byClass(root,'px2-price__cta')[0],'href'));
   assert.doesNotMatch(text(root),/Versandkosten beim Händler prüfen|Stand:|€|Preis aktuell nicht verfügbar/);
 });
@@ -57,14 +58,14 @@ test('single merchant purchase price appears once, preferring the validated merc
 test('older and unconfirmed acquisition prices are explicitly qualified',async()=>{
   for(const isStale of [true,false]){
     const root=await render({price:{formattedCurrent:'109,99 €',isStale}});
-    assert.match(text(root),/Zuletzt erfasster Anschaffungspreis/);
+    assert.match(text(root),/Früherer Anschaffungspreis/);
     assert.ok(text(root).includes(isStale?'Veralteter Preisstand':'Nicht aktuell bestätigt'));
   }
 });
 
 test('optional subscription without a price has a short label without price placeholders',async()=>{
   const root=await render({subscriptionCost:subscription()});
-  assert.match(text(byClass(root,'px2-price__summary')[0]),/Optionales Abo möglich/);
+  assert.match(text(byClass(root,'px2-price__service-title')[0]),/Optionales Abo möglich/);
   assert.doesNotMatch(text(root),/Preis des optionalen Dienstes aktuell prüfen|Zusatzkosten erforderlich/);
   assert.match(text(root),/Ohne Abo:|Mit Dienst:/);
   assert.equal(attr(byClass(root,'px2-price__details')[0],'open'),undefined);
@@ -73,13 +74,13 @@ test('optional subscription without a price has a short label without price plac
 const plan={name:'Jahrestarif',billingPeriod:'annual',billingMode:'upfront',commitmentMonths:12,price:84,currency:'EUR',featured:true,autoRenew:true};
 test('known optional costs remain visible; examples move into collapsed details after the CTA',async()=>{
   const root=await render({subscriptionCost:subscription({plans:[plan]})});
-  assert.match(text(byClass(root,'px2-price__summary')[0]),/84,00.*Jahr/);
-  assert.doesNotMatch(text(byClass(root,'px2-price__summary')[0]),/Gesamtkosten/);
+  assert.match(text(byClass(root,'px2-price__service-title')[0]),/84,00.*Jahr/);
+  assert.doesNotMatch(text(byClass(root,'px2-price__service-title')[0]),/Gesamtkosten/);
   assert.match(text(byClass(root,'px2-price__details')[0]),/Gesamtkosten nach 2 Jahren/);
   const all=nodes(root);assert.ok(all.indexOf(byClass(root,'px2-price__cta')[0])<all.indexOf(byClass(root,'px2-price__details')[0]));
 });
 
-test('required subscriptions and prepaid billing remain visible above the purchase options',async()=>{
+test('required subscriptions and prepaid billing remain visible outside collapsed details',async()=>{
   for(const status of ['required-subscription','required-prepaid']){
     const p=status==='required-prepaid'?{...plan,billingPeriod:'term',billingMode:'prepaid',autoRenew:false}:plan;
     const root=await render({subscriptionCost:subscription({status,requiredForCoreFunction:true,plans:[p]})});
@@ -105,7 +106,7 @@ test('multiple merchants keep their distinct tracking URLs and show each known p
   const offers=[{...offer,formattedPrice:'109,99 €'},awin,adcell,manufacturer];
   const root=await render({commerce:{offers,hasConfiguredOffers:true},price:{formattedCurrent:'109,99 €'}});
   assert.deepEqual(byClass(root,'px2-price__cta').map(n=>attr(n,'href')),offers.map(o=>o.affiliateUrl));
-  assert.equal(byClass(root,'px2-price__purchase').length,0);
+  assert.equal(byClass(root,'px2-price__purchase').length,2);
   for(const price of ['109,99 €','99,99 €'])assert.equal(text(root).split(price).length-1,1);
   assert.doesNotMatch(text(root),/Günstigstes|Versandkosten beim Händler prüfen/);
 });
@@ -120,8 +121,63 @@ test('actual PETKIT YumShare keeps its exact affiliate target and renders the co
   const {data}=await readProductDocument(new URL('../src/content/products/petkit-yumshare-dual-hopper.md',import.meta.url));
   const commerce=compareCommerceOffers(resolveCommerceOffers(data));const root=await render({commerce});
   const amazon=byClass(root,'px2-price__cta').find(n=>attr(n,'data-merchant')==='amazon');
-  assert.equal(attr(amazon,'href'),'https://amzn.to/3TQJw1G');assert.equal(text(amazon).trim(),'Bei Amazon ansehen');
+  assert.equal(attr(amazon,'href'),'https://amzn.to/3TQJw1G');assert.equal(text(amazon).trim(),'Bei Amazon ansehen→');
   const html=fs.readFileSync(new URL('../dist/produkt/petkit-yumshare-dual-hopper/index.html',import.meta.url),'utf8');
   const built=parseFragment(html);const boxes=byClass(built,'px2-price');assert.equal(boxes.length,1);
   assert.equal(byClass(boxes[0],'px2-availability').length,0);assert.match(text(boxes[0]),/Optionales Abo möglich/);
+});
+
+
+test('no subscription renders no subscription area; no merchant renders no invented CTA',async()=>{
+  const root=await render({commerce:{offers:[]},subscriptionCost:subscription({status:'no-subscription'})});
+  assert.equal(byClass(root,'px2-price__service').length,0);
+  assert.equal(byClass(root,'px2-price__cta').length,0);
+  assert.match(text(root),/keine geprüfte Händleroption/);
+  assert.doesNotMatch(text(root),/Aktuell keine Kaufempfehlung|Preis aktuell nicht verfügbar/);
+});
+
+test('a different merchant or unresolved variant never inherits the legacy acquisition price',async()=>{
+  for(const patch of [{legacy:false},{verified:false},{domestic:false}]){
+    const root=await render({commerce:{offers:[{...offer,...patch}]},price:{formattedCurrent:'109,99 €',isStale:false}});
+    assert.doesNotMatch(text(root),/109,99/);assert.equal(byClass(root,'px2-price__purchase').length,0);
+    assert.ok(attr(byClass(root,'px2-price__cta')[0],'href'));
+  }
+});
+
+test('all built product pages retain exact merchant URLs, metadata hooks and safe public price states',async()=>{
+  const files=await readProductFiles(fileURLToPath(new URL('../src/content/products/',import.meta.url)));
+  assert.ok(files.length>0);
+  for(const file of files){
+    const {data}=await readProductDocument(file);
+    const html=fs.readFileSync(new URL(`../dist/produkt/${data.slug}/index.html`,import.meta.url),'utf8');
+    const boxes=byClass(parseFragment(html),'px2-price');assert.equal(boxes.length,1,data.slug);
+    const box=boxes[0];const expected=compareCommerceOffers(resolveCommerceOffers(data)).offers;
+    const links=byClass(box,'px2-price__cta').filter(n=>n.tagName==='a');
+    assert.deepEqual(links.map(n=>attr(n,'href')),expected.map(o=>o.affiliateUrl),data.slug);
+    assert.equal(text(box).match(/Preis und Verfügbarkeit beim Händler prüfen/g)?.length??0,expected.length?1:0,data.slug);
+    if(attr(box,'data-availability')==='unknown')assert.equal(byClass(box,'px2-availability').length,0,data.slug);
+    for(const a of links){assert.match(attr(a,'rel'),/sponsored/,data.slug);assert.equal(attr(a,'data-cta-kind'),'regular');assert.equal(attr(a,'data-product'),data.slug);}
+    if(data.subscription?.status==='no-subscription')assert.equal(byClass(box,'px2-price__service').length,0,data.slug);
+  }
+});
+
+
+test('a legacy price in a different currency is not assigned to a domestic merchant',async()=>{
+  const root=await render({commerce:{offers:[{...offer,currency:'EUR'}]},price:{formattedCurrent:'99,00 $',currency:'USD',isStale:false}});
+  assert.doesNotMatch(text(root),/99,00/);assert.equal(byClass(root,'px2-price__purchase').length,0);
+});
+
+test('all built heroes keep complete product names, source-backed chips and the secondary comparison link',async()=>{
+  for(const file of await readProductFiles(fileURLToPath(new URL('../src/content/products/',import.meta.url)))){
+    const {data}=await readProductDocument(file);
+    const root=parseFragment(fs.readFileSync(new URL(`../dist/produkt/${data.slug}/index.html`,import.meta.url),'utf8'));
+    const headings=nodes(root).filter(n=>n.tagName==='h1');assert.equal(headings.length,1,data.slug);assert.equal(text(headings[0]),data.title,data.slug);
+    const hero=byClass(root,'px2-hero')[0];const chips=byClass(hero,'px2-hero__suitability')[0];
+    const items=nodes(chips).filter(n=>n.tagName==='li');assert.ok(items.length<=3,data.slug);
+    for(const item of items){const original=attr(item,'aria-label');assert.ok(original,data.slug);for(const limit of original.match(/\d+(?:[.,]\d+)?/g)??[])assert.ok(text(item).includes(limit),`${data.slug}: lost suitability limit ${limit}`);}
+    const compare=byClass(hero,'px2-hero__compare')[0];assert.ok(attr(compare,'href')?.startsWith('/'),data.slug);
+    const image=byClass(hero,'pg29__image')[0];assert.ok(Number(attr(image,'width'))>0&&Number(attr(image,'height'))>0,data.slug);
+    assert.equal(attr(image,'loading'),'eager',data.slug);assert.equal(attr(image,'fetchpriority'),'high',data.slug);
+    assert.ok(attr(image,'srcset'),data.slug);
+  }
 });

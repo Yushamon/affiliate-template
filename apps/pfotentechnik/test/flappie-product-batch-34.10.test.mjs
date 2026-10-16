@@ -138,6 +138,7 @@ test("all six Flappie media roles resolve to real WebP files", () => {
 test("official-store products use their provider CTA instead of an Amazon-only label", () => {
   const priceBox = read("src/components/product-experience-2/PriceBox2.astro");
 
-  assert.match(priceBox, /const ctaLabel = affiliate\.label \|\|/);
+  assert.match(priceBox, /Bei \$\{offer\.label\} ansehen/);
+  assert.match(priceBox, /href=\{offer\.affiliateUrl\}/);
   assert.doesNotMatch(priceBox, /const ctaLabel = price\?\.formattedCurrent \? "Bei Amazon ansehen"/);
 });
