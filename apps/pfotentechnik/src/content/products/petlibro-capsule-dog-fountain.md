@@ -317,7 +317,7 @@ offers:
     availability: "unknown"
     identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
     evidenceSources: []
-    lastAttemptAt: "2026-10-16T07:59:40.479Z"
+    lastAttemptAt: "2026-10-22T12:51:23.123Z"
     error: "Offizielle Produkt-URL unresolved."
 evidenceSources:
   - source: Herstellerdokumentation · PETLIBRO Capsule Dog Fountain

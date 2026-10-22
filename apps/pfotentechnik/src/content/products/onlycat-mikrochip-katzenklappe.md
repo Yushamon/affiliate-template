@@ -55,10 +55,10 @@ subscription:
   plans:
     - { name: "Abo-Version", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 9.99, currency: EUR, effectiveMonthlyPrice: 9.99, autoRenew: true, featured: true }
 price:
-  current: 275
-  currency: "GBP"
+  current: 334.99
+  currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-10-16T07:59:11.662Z"
+  checkedAt: "2026-10-22T12:50:57.308Z"
   source:
     id: "onlycat.com"
     label: "onlycat.com"
@@ -73,15 +73,14 @@ editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentati
 rating: 3.6
 
 priceState: "available"
-priceUpdated: "2026-10-16T07:59:11.662Z"
+priceUpdated: "2026-10-22T12:50:57.308Z"
 priceAvailable: true
 affiliateAvailable: true
-availability: "available"
-availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-10-16T07:59:11.662Z"
+availability: "unknown"
+availabilityReason: "Früherer automatischer Status ohne belastbaren Liefernachweis; Verfügbarkeit erneut prüfen."
 editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
 
 ratings:
   zugang_und_sicherheit: 4.0

@@ -155,7 +155,7 @@ offers:
       current: 799.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-10-16T08:00:03.027Z"
+      checkedAt: "2026-10-22T12:51:42.377Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -179,7 +179,8 @@ offers:
     variantId: "53374260642158"
     expectedSku: "PL-LB001-31W"
     variantLabel: "1 paket"
-    lastAttemptAt: "2026-10-16T08:00:03.027Z"
+    lastAttemptAt: "2026-10-22T12:51:42.377Z"
+    availabilityUpdated: "2026-10-22T12:51:42.377Z"
 priceState: "available"
 priceUpdated: "2026-10-16T08:00:02.877Z"
 priceAvailable: true

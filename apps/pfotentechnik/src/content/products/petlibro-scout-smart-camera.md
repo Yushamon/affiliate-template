@@ -276,7 +276,7 @@ offers:
       current: 109.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-10-16T08:00:09.948Z"
+      checkedAt: "2026-10-22T12:51:49.045Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -300,7 +300,8 @@ offers:
     variantId: "52157103145326"
     expectedSku: "PL-PC001-31W"
     variantLabel: "1 Paket / Weiß"
-    lastAttemptAt: "2026-10-16T08:00:09.948Z"
+    lastAttemptAt: "2026-10-22T12:51:49.045Z"
+    availabilityUpdated: "2026-10-22T12:51:49.045Z"
 ---
 
 ## Einordnung ohne eigenen Produkttest
