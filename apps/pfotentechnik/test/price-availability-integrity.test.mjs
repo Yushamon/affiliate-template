@@ -6,7 +6,7 @@ import path from 'node:path';
 import yaml from 'js-yaml';
 import {deriveProductOperations, inferInitialAvailability, isAutoRecommendationEligible} from '../src/lib/product-operations/policy.mjs';
 import {resolveCommerceOffers} from '../src/domain/commerceOffers.mjs';
-import {checkDocumentPrice, checkProductPrice, setManualProductPrice} from '../src/lib/price-intelligence/service.mjs';
+import {checkDocumentPrice, checkProductPrice, checkAllProductPrices, setManualProductPrice} from '../src/lib/price-intelligence/service.mjs';
 import {readProductDocument, updateProductOffer} from '../src/lib/price-intelligence/frontmatter-price.mjs';
 import {contentPriceAdapter} from '../src/domain/price/adapters/contentPriceAdapter.ts';
 const now = new Date().toISOString();
@@ -21,6 +21,18 @@ async function document(t, data) {
 }
 const html = (availability, currency='EUR') => `<script type="application/ld+json">${JSON.stringify({'@type':'Product',offers:{'@type':'Offer',price:129.99,priceCurrency:currency,...(availability ? {availability}: {})}})}</script>`;
 const fetchText = (availability,currency) => async()=>({html:html(availability,currency),resolvedUrl:'https://www.amazon.de/dp/B012345678'});
+
+test('global Amazon price refresh ignores stock while retaining editorial automation locks', async () => {
+  const called=[];
+  const documents = ['unknown','out-of-stock','temporarily-unavailable','discontinued'].map(availability=>({
+    slug:availability,data:product({availability,availabilityReason:'Redaktionell bestätigt'})
+  }));
+  documents.push({slug:'locked',data:product({priceAutomation:'editorial'})});
+  const result=await checkAllProductPrices({}, {listDocuments:async()=>documents,check:async slug=>{called.push(slug);return {ok:true};}});
+  assert.deepEqual(called,['unknown','out-of-stock','temporarily-unavailable','discontinued']);
+  assert.equal(result.succeeded,4);
+  assert.equal(result.skipped,1);
+});
 
 test('price and HTTPS link never infer availability; editorial recommendation remains eligible',()=>{
   const ops=deriveProductOperations(product());

@@ -1,3 +1,5 @@
+import { extractAmazonOffer } from './amazon-offer.mjs';
+
 const decode = (value = "") => String(value)
   .replaceAll("&quot;", '"')
   .replaceAll("&#39;", "'")
@@ -43,6 +45,8 @@ const metaValue = (html, keys) => {
 };
 
 export function extractOfferFromHtml(html, pageUrl = "") {
+  const amazonOffer = extractAmazonOffer(String(html), pageUrl);
+  if (amazonOffer) return amazonOffer;
   const offers = [];
   for (const match of String(html).matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {
     try { visit(JSON.parse(decode(match[1]).trim()), offers); } catch { /* malformed retailer data */ }

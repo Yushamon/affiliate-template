@@ -188,6 +188,9 @@ export async function checkAllProductPrices({ limit = Number.MAX_SAFE_INTEGER, i
     if (!allowsAutomaticPriceCheck(document.data)) return false;
     if (includeInactive) return true;
     const operations = deriveProductOperations(document.data);
+    if (resolveCommerceOffers(document.data).some(offer => offer.amazonLink && offer.canLink)) {
+      return document.data.maintenanceStatus !== 'archived' && document.data.recommendationStatus !== 'archived';
+    }
     return !operations.consciouslyUnavailable && !operations.archived;
   });
   const safeLimit = Math.min(candidates.length, Math.max(1, Number(limit) || candidates.length));
