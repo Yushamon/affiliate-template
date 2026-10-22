@@ -22,7 +22,7 @@ category:
   path: /smarte-futterautomaten/
 productUrl: /produkt/petkit-yumshare-dual-hopper/
 publishedAt: "2026-07-12"
-updatedAt: "2026-08-10"
+updatedAt: "2026-10-22"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -118,6 +118,20 @@ ratings:
   preisleistung: 4.6
 externalEvidence:
   professionalReviews:
+    - publisher: "WIRED"
+      title: "The Best Automatic Feeders for Cats Who Think It’s Always Dinnertime"
+      url: "https://www.wired.com/gallery/best-automatic-cat-feeders/"
+      publishedAt: "2026-10-17"
+      checkedAt: "2026-10-22"
+      methodology: "hands-on"
+      positives:
+        - "Kamera und KI-Funktionen bewährten sich im Praxistest."
+        - "KI-Tiererkennung ist ohne zusätzliches KI-Abonnement nutzbar."
+      negatives:
+        - "Die App wird gegenüber PETLIBRO als weniger zuverlässig und benutzerfreundlich beurteilt."
+        - "Bestimmte zusätzliche Cloudfunktionen bleiben kostenpflichtig."
+      findings:
+        - "Unabhängiger Hands-on-Bericht; keine belegte Aussage zur Langzeitzuverlässigkeit."
     - publisher: "Pet Product Compass"
       title: "PETKIT YumShare Dual-hopper 2 Review: Fit, Tradeoffs, and Evidence"
       url: "https://petproductcompass.com/reviews/petkit-yumshare-dual-hopper-2/"
@@ -152,7 +166,7 @@ externalEvidence:
       - finding: "Die derzeitige Nutzerstichprobe ist zu klein für belastbare Aussagen zu Langzeit-Zuverlässigkeit."
         sourceCount: 2
         confidence: "high"
-        assessment: "Chewy weist nur zwei Bewertungen aus; die redaktionelle Quelle hat selbst keinen Hands-on-Test durchgeführt."
+        assessment: "Chewy weist nur zwei Bewertungen aus; Pet Product Compass hat selbst keinen Hands-on-Test durchgeführt. Der ergänzte WIRED-Praxistest belegt keine Langzeitzuverlässigkeit."
     editorialAssessment: >-
       Die externe Evidenz bestätigt vor allem das Produktkonzept, nicht die Langzeitqualität. Die sehr kleine
       Nutzerstichprobe wird deshalb nicht als breiter Nutzerkonsens dargestellt.
@@ -622,6 +636,8 @@ Weniger passend ist er für:
 ## Quellen und Methodik
 
 Die technischen Angaben stammen von der [aktuellen PETKIT-Produktseite des YumShare Dual-Hopper 2](https://www.petkit.com/products/yumshare-dual-hopper-2-automatic-feeder-with-camera), der [europäischen Produktseite](https://www.petkit-eu.com/en-de/products/yumshare-dual-hopper-2-automatic-feeder-with-camera), dem [offiziellen PETKIT-Futterautomatenvergleich](https://www.petkit.com/collections/automatic-pet-feeder), der [Produktvorstellung des P592](https://www.petkit.com/blogs/blog/introducing-yumshare-dual-hopper-2-the-ai-pet-feeder-that-tracks-every-cat-and-sees-every-meal) und der [PETKIT-Garantierichtlinie](https://www.petkit.com/pages/warranty-policy).
+
+Ergänzend ist der unabhängige [WIRED-Praxistest vom 17.10.2026](https://www.wired.com/gallery/best-automatic-cat-feeders/) als Hands-on-Evidenz erfasst (geprüft am 22.10.2026).
 
 Öffentlich sichtbare Bewertungen auf der PETKIT-Seite wurden nur ergänzend genutzt. PETKIT weist selbst darauf hin, dass manche Rezensionen mit verwandten Produkten gruppiert sein können. Es liegt kein eigener Langzeit-, Kamera-, AI-, Portionierungs-, Hygiene- oder Stromausfalltest vor. Die Produktbilder sind redaktionelle Darstellungen und müssen hinsichtlich Modellnummer, Farbe und Lieferumfang mit dem konkret verlinkten Amazon-Angebot abgeglichen werden.
 

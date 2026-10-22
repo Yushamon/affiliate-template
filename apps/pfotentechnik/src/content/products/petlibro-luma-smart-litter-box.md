@@ -50,10 +50,10 @@ subscription:
     - { name: "Standard jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 129.99, currency: EUR, effectiveMonthlyPrice: 10.83, autoRenew: true, featured: true, notes: "7 Tage Videospeicher" }
     - { name: "Premium jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 189.99, currency: EUR, effectiveMonthlyPrice: 15.83, autoRenew: true, notes: "30 Tage Videospeicher" }
 price:
-  current: 589.99
+  current: 559.98
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-10-16T08:00:02.877Z"
+  checkedAt: "2026-10-22T13:05:12.784Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -155,7 +155,7 @@ offers:
       current: 799.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-10-22T12:51:42.377Z"
+      checkedAt: "2026-10-22T13:05:12.946Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -179,24 +179,23 @@ offers:
     variantId: "53374260642158"
     expectedSku: "PL-LB001-31W"
     variantLabel: "1 paket"
-    lastAttemptAt: "2026-10-22T12:51:42.377Z"
-    availabilityUpdated: "2026-10-22T12:51:42.377Z"
-priceState: "available"
-priceUpdated: "2026-10-16T08:00:02.877Z"
-priceAvailable: true
-affiliateAvailable: true
-availability: "available"
-availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-10-16T08:00:02.877Z"
-editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
+    lastAttemptAt: "2026-10-22T13:05:12.946Z"
+    availabilityUpdated: "2026-10-22T13:05:12.946Z"
 sensorLimits:
   automaticModeMinimumWeightKg: 1
   belowMinimumBehavior: manualOnly
   sourceUrl: https://de.petlibro.com/products/luma-intelligente-selbstreinigende-katzentoilette-exclusive
   sourceType: manufacturer
   verifiedAt: "2026-08-15"
+priceState: "available"
+priceUpdated: "2026-10-22T13:05:12.784Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "unknown"
+availabilityReason: "Früherer automatischer Status ohne belastbaren Liefernachweis; Verfügbarkeit erneut prüfen."
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
 ---
 
 ## Herstellerfunktion, praktische Bedeutung und offene Erfahrung

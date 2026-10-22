@@ -30,7 +30,7 @@ heroImage:
   src: "../../assets/images/editorial/feeder-power-outage.webp"
   alt: "Automatischer Futterautomat mit Netzteil, eingelegten Backup-Batterien und ausgefallenem WLAN"
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-28"
+updatedAt: "2026-10-22"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: ["futterautomat", "stromausfall", "batterie", "netzteil", "wlan", "offline", "notstrom", "sicherheit"]
 hub:
@@ -195,6 +195,10 @@ Die vorhandenen Herstellerbelege beziehen sich auf einzelne Modelle und Ausfalla
 | [PETKIT YumShare Solo 2](/produkt/petkit-yumshare-solo-2/): WLAN-Ausfall | Bereits gespeicherte Mahlzeiten laufen laut Hersteller weiter. | Diese Zusage umfasst weder Livebild noch Fernfunktionen. Der getrennte Fall „Internet weg, WLAN vorhanden“ und ein Cloud-Ausfall sind nicht vollständig dokumentiert. |
 
 Grundlage sind die bereits erfassten Angaben aus dem [PETLIBRO-Support zum AIR WiFi AF108/PLAF108](https://petlibro.com/pages/pre-sale-inquiries-about-air-smart-feeder-af108-plaf108) und der [PETKIT-Produktbeschreibung zum YumShare Solo 2](https://www.petkit.com/products/yumshare-solo-2-automatic-feeder-with-camera), geprüft am 28.08.2026. Für ein anderes Modell müssen dessen Anleitung und Ausfallangaben separat passen.
+
+### Praxisbeispiel: PETLIBRO-Cloud-/App-Störung im August 2026
+
+Für den 11.–12.08.2026 dokumentiert PETLIBRO eine Cloud-/App-Störung mit zeitweise eingeschränktem Fernzugriff und App-Funktionen. Laut Hersteller liefen bereits lokal gespeicherte Zeitpläne weiter, sofern das Gerät nicht zurückgesetzt wurde. Einzelne Aktivitätsdaten konnten verloren gehen; während der Störung geänderte Einstellungen wurden möglicherweise nicht gespeichert. PETLIBRO empfiehlt deshalb, diese Einstellungen anschließend zu prüfen. Das beschreibt den dokumentierten Vorfall und ist keine Funktionszusage für sämtliche PETLIBRO-Geräte oder andere Hersteller. Quelle: [PETLIBRO-Servicestatus](https://petlibro.com/pages/petlibro-status), geprüft am 22.10.2026.
 
 ## Was bedeutet „lokal gespeicherter Fütterungsplan“?
 
@@ -694,6 +698,8 @@ Herstellerangaben zu Laufzeit und Notbetrieb werden nur modellbezogen übernomme
 
 ## Quellen
 
+- [PETLIBRO: Servicestatus zur Cloud-/App-Störung vom 11.–12.08.2026](https://petlibro.com/pages/petlibro-status) – geprüft am 22.10.2026.
+  <!-- checkedAt: 2026-10-22; Umfang: Störung vom 11.–12.08.2026. -->
 - [Xiaomi: Smart Pet Food Feeder 2 – Bedienung und Notstrombetrieb](https://www.mi.com/global/support/faq/details/KA-243074/)
 - [Xiaomi: Smart Pet Food Feeder 2 – ausführliche FAQ zu Offline- und Batteriebetrieb](https://www.mi.com/global/support/faq/details/KA-237711/)
 - [Xiaomi Deutschland: Smart Pet Food Feeder 2 – Produktinformationen](https://www.mi.com/de/product/xiaomi-smart-pet-food-feeder-2/)

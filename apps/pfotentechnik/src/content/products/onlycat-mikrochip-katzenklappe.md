@@ -58,7 +58,7 @@ price:
   current: 334.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-10-22T12:50:57.308Z"
+  checkedAt: "2026-10-22T13:04:21.301Z"
   source:
     id: "onlycat.com"
     label: "onlycat.com"
@@ -73,7 +73,7 @@ editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentati
 rating: 3.6
 
 priceState: "available"
-priceUpdated: "2026-10-22T12:50:57.308Z"
+priceUpdated: "2026-10-22T13:04:21.301Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

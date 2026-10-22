@@ -57,10 +57,10 @@ images:
     - src: ../../assets/images/products/petlibro-stainless-steel-fountain/gallery-3.webp
       alt: PETLIBRO Edelstahl-Trinkbrunnen im Alltag
 price:
-  current: 49.99
+  current: 47.49
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-10-16T08:00:14.089Z"
+  checkedAt: "2026-10-22T13:05:26.033Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -75,15 +75,14 @@ rating: 3.8
 score: 75
 
 priceState: "available"
-priceUpdated: "2026-10-16T08:00:14.089Z"
+priceUpdated: "2026-10-22T13:05:26.033Z"
 priceAvailable: true
 affiliateAvailable: true
-availability: "available"
-availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-10-16T08:00:14.089Z"
+availability: "unknown"
+availabilityReason: "Früherer automatischer Status ohne belastbaren Liefernachweis; Verfügbarkeit erneut prüfen."
 editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
 
 ratings:
   verarbeitung: 4.05
@@ -299,7 +298,7 @@ offers:
     availability: "unknown"
     identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
     evidenceSources: []
-    lastAttemptAt: "2026-10-22T12:51:52.761Z"
+    lastAttemptAt: "2026-10-22T13:05:26.041Z"
     error: "Offizielle Produkt-URL unresolved."
 evidenceSources:
   - source: Herstellerdokumentation · PETLIBRO Stainless Steel Fountain 3L

@@ -21,7 +21,7 @@ category:
   path: /smarte-futterautomaten/
 productUrl: /produkt/petlibro-polar-wet-food-feeder/
 publishedAt: "2026-07-12"
-updatedAt: "2026-08-26"
+updatedAt: "2026-10-22"
 author:
   name: PfotenTechnik Redaktion
   role: Redaktion
@@ -100,6 +100,17 @@ ratings:
   preisleistung: 3.7
 externalEvidence:
   professionalReviews:
+    - publisher: "WIRED"
+      title: "The Best Automatic Feeders for Cats Who Think It’s Always Dinnertime"
+      url: "https://www.wired.com/gallery/best-automatic-cat-feeders/"
+      publishedAt: "2026-10-17"
+      checkedAt: "2026-10-22"
+      methodology: "hands-on"
+      positives:
+        - "Die Autorin berichtet über mehr als sechs Monate Nutzung ohne eigene Zuverlässigkeitsprobleme."
+      findings:
+        - "Unabhängiger Hands-on-/Langzeitbericht über das getestete Gerät, keine allgemeine Zuverlässigkeitsgarantie."
+        - "WIRED nennt AAA-Backup-Batterien, PETLIBRO drei AA; die AA-Spezifikation folgt weiterhin dem Hersteller."
     - publisher: "Reviewed"
       title: "Petlibro Polar Wet Food Feeder Review"
       url: "https://www.reviewed.com/pets/content/petlibro-polar-wet-food-feeder-high-tech-mealtime"
@@ -405,7 +416,7 @@ offers:
       current: 199.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-10-22T12:51:46.966Z"
+      checkedAt: "2026-10-22T13:05:19.008Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -429,8 +440,8 @@ offers:
     variantId: "52122051084654"
     expectedSku: "PL-AF109-33B"
     variantLabel: "Schwarz / Edelstahlnapf"
-    lastAttemptAt: "2026-10-22T12:51:46.966Z"
-    availabilityUpdated: "2026-10-22T12:51:46.966Z"
+    lastAttemptAt: "2026-10-22T13:05:19.008Z"
+    availabilityUpdated: "2026-10-22T13:05:19.008Z"
 ---
 Der **PETLIBRO Polar Wet Food Feeder PLAF109** gehört zu den wenigen Nassfutterautomaten mit aktiver Kühlung. Drei vorbereitete Portionen werden nicht nur mit Kühlakkus temperiert, sondern über ein thermoelektrisches System gekühlt. Im [Vergleich der besten Nassfutterautomaten](/vergleiche/beste-futterautomaten-fuer-nassfutter/) ordnen wir ihn direkt gegen aktive Kühlung, Kühlakku-Modelle und Offline-Lösungen ein.
 
@@ -478,6 +489,8 @@ Für die Einordnung heißt das: **Das Batterie-Backup schützt nicht automatisch
 
 Die aktuelle deutsche Produktseite nennt spülmaschinengeeignete Edelstahl-Futterteile. Die elektrische Basis, Kühlfläche und Mechanik werden von Hand gereinigt.
 
+Die ursprüngliche Polar-Ausführung hatte eine Kunststoffschale. Laut [PETLIBRO Deutschland](https://de.petlibro.com/products/polar-wet-food-pet-feeder) besitzt die überarbeitete Ausführung eine Edelstahlschale mit nummerierten Fächern passend zu den Mahlzeiteneinstellungen in der App. Der Hersteller nennt außerdem ein geändertes Netzteil mit dreipoligem Anschluss. Diese Revisionsmerkmale gelten nicht rückwirkend für die ursprüngliche Ausführung (Quelle geprüft am 22.10.2026).
+
 Nach jeder Befüllungsrunde sollten kontrolliert werden:
 
 - Futterschale und Deckelrand,
@@ -504,6 +517,8 @@ Wenn aktive Kühlung nicht nötig ist und Offline-Betrieb wichtiger ist, ist der
 Die Einordnung basiert auf aktuellen PETLIBRO-Unterlagen; ein eigener Langzeit- oder Temperaturtest liegt nicht vor.
 
 - [PETLIBRO Deutschland: Polar Nassfutterautomat](https://de.petlibro.com/products/polar-wet-food-pet-feeder)
+  <!-- checkedAt: 2026-10-22; Umfang: Modellrevision und AA-Backup-Spezifikation. -->
+- [WIRED: Hands-on-/Langzeitbericht zum Polar, aktualisiert am 17.10.2026](https://www.wired.com/gallery/best-automatic-cat-feeders/) – geprüft am 22.10.2026; als externe Evidenz erfasst.
 - [PETLIBRO: Polar Wet Food Feeder PLAF109](https://petlibro.com/products/polar-smart-wet-food-feeder-for-pets)
 - [PETLIBRO Hilfebereich: Polar Smart Wet Food Feeder](https://petlibro.com/pages/faq-product/polar-smart-wet-food-feeder)
 - [PETLIBRO Support: Offline-Meldung nach Trennen vom Strom](https://petlibro.com/pages/what-should-i-do-if-i-dont-want-to-receive-any-offline-notifications-after-i-unplug-the-polar-wet-food-feeder)

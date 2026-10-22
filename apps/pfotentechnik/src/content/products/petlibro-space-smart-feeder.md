@@ -59,10 +59,10 @@ images:
     - src: ../../assets/images/products/petlibro-space-smart-feeder/gallery-2.webp
       alt: PETLIBRO Space Smart Feeder mit Napf und Bedienbereich
 price:
-  current: 69.99
+  current: 65.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-10-16T08:00:12.073Z"
+  checkedAt: "2026-10-22T13:05:23.948Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -77,15 +77,14 @@ rating: 4.2
 score: 84
 
 priceState: "available"
-priceUpdated: "2026-10-16T08:00:12.073Z"
+priceUpdated: "2026-10-22T13:05:23.948Z"
 priceAvailable: true
 affiliateAvailable: true
-availability: "available"
-availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-10-16T08:00:12.073Z"
+availability: "unknown"
+availabilityReason: "Früherer automatischer Status ohne belastbaren Liefernachweis; Verfügbarkeit erneut prüfen."
 editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
 
 ratings:
   app: 4.2
@@ -390,7 +389,7 @@ offers:
     availability: "unknown"
     identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
     evidenceSources: []
-    lastAttemptAt: "2026-10-22T12:51:51.080Z"
+    lastAttemptAt: "2026-10-22T13:05:23.958Z"
     error: "Offizielle Produkt-URL unresolved."
 ---
 ## PETLIBRO Space Smart Feeder: redaktionelle Einordnung

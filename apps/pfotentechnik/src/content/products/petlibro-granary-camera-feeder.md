@@ -58,10 +58,10 @@ images:
     - src: ../../assets/images/products/petlibro-granary-camera/gallery-3.webp
       alt: PETLIBRO Granary Camera Feeder im Katzenhaushalt
 price:
-  current: 121.11
+  current: 120.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-10-16T07:59:55.845Z"
+  checkedAt: "2026-10-22T13:05:04.100Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -76,15 +76,14 @@ rating: 4.6
 score: 92
 
 priceState: "available"
-priceUpdated: "2026-10-16T07:59:55.845Z"
+priceUpdated: "2026-10-22T13:05:04.100Z"
 priceAvailable: true
 affiliateAvailable: true
-availability: "available"
-availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-10-16T07:59:55.845Z"
+availability: "unknown"
+availabilityReason: "Früherer automatischer Status ohne belastbaren Liefernachweis; Verfügbarkeit erneut prüfen."
 editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
 
 ratings:
   app: 4.5
@@ -370,7 +369,7 @@ offers:
       current: 169.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-10-22T12:51:36.122Z"
+      checkedAt: "2026-10-22T13:05:04.281Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -394,8 +393,8 @@ offers:
     variantId: "44070751502578"
     expectedSku: "PL-AF203-34W"
     variantLabel: "Weiß / Einzelne Schale"
-    lastAttemptAt: "2026-10-22T12:51:36.122Z"
-    availabilityUpdated: "2026-10-22T12:51:36.122Z"
+    lastAttemptAt: "2026-10-22T13:05:04.281Z"
+    availabilityUpdated: "2026-10-22T13:05:04.281Z"
 ---
 Der PETLIBRO Granary Camera Feeder verbindet automatische Trockenfütterung mit einer integrierten Kamera. Das ist praktisch für Livekontrolle, aber kein Ersatz für direkte Beobachtung.
 

@@ -55,7 +55,7 @@ price:
   currency: "EUR"
   status: "unknown"
   comparisonText: "https://amzn.to/46asA9o"
-  checkedAt: "2026-10-16T07:58:43.622Z"
+  checkedAt: "2026-10-22T13:03:53.992Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -159,15 +159,14 @@ affiliate:
   rel: "sponsored nofollow noopener"
   target: "_blank"
 priceState: "available"
-priceUpdated: "2026-10-16T07:58:43.622Z"
+priceUpdated: "2026-10-22T13:03:53.992Z"
 priceAvailable: true
 affiliateAvailable: true
-availability: "available"
-availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-10-16T07:58:43.622Z"
+availability: "unknown"
+availabilityReason: "Früherer automatischer Status ohne belastbaren Liefernachweis; Verfügbarkeit erneut prüfen."
 editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
 ---
 
 ## Nicht mit Betreuung verwechseln
