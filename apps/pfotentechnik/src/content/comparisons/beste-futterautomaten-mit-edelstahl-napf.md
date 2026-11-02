@@ -91,123 +91,41 @@ criteria:
 automaticRecommendations:
   enabled: true
 recommendation:
-  title: Unsere Empfehlung für Beste Futterautomaten mit Edelstahlnapf
-  text: Welche Futterautomaten mit Edelstahlnapf sind besonders hygienisch? Unsere Empfehlungen im Vergleich.
-  winnerSlug: petlibro-granary-wifi-feeder
-  alternativeSlug: xiaomi-smart-pet-food-feeder-2
+  title: "Reinigbarer Futterweg statt Edelstahl als Hygienesiegel"
+  text: "Ein herausnehmbarer Edelstahlnapf erleichtert die Pflege, macht aber den übrigen Automaten nicht automatisch hygienisch. Entscheidend sind die Reinigungsfreigabe des konkreten Teils, erreichbare Futterreste im Auslass und die vollständige Trocknung vor dem Befüllen."
+  winnerSlug: "petlibro-granary-wifi-feeder"
+  alternativeSlug: "xiaomi-smart-pet-food-feeder-2"
 tableTitle: "Beste Futterautomaten mit Edelstahlnapf: direkter Vergleich"
 cardsTitle: Modelle und Einsatzgrenzen
 faq:
-  - question: Warum ist Edelstahl hygienischer?
-    answer: >-
-      Edelstahl lässt sich leicht reinigen und nimmt im Vergleich zu manchen Kunststoffen weniger Gerüche oder
-      Verfärbungen an.
-  - question: Ist Edelstahl für Hunde und Katzen geeignet?
-    answer: Ja. Viele Tierhalter bevorzugen Edelstahlnäpfe wegen ihrer Robustheit und einfachen Reinigung.
-  - question: Wie vergleichen wir Futterautomaten?
-    answer: >-
-      Wir trennen Portionierung, Futterkompatibilität, Napf, Reinigung, Stromreserve, Offline-Verhalten und
-      Zusatzfunktionen. Eine lange Funktionsliste ersetzt keine zuverlässige Ausgabe.
-  - question: Ist der größte Futterbehälter automatisch die beste Wahl?
-    answer: >-
-      Nein. Vorratsvolumen sagt nichts über Mindestportion, maximale Mahlzeit, Krokettengröße, Napfergonomie oder
-      Ausfallsicherheit aus.
-  - question: Wie prüfe ich die reale Portionsgröße?
-    answer: >-
-      Gib mehrere Portionseinheiten mit dem tatsächlich verwendeten Futter aus, wiege die Gesamtmenge und berechne den
-      Mittelwert. Nach einem Futterwechsel muss neu kalibriert werden.
-  - question: Beweist ein App-Protokoll, dass das Tier gefressen hat?
-    answer: >-
-      Nein. Ein Protokoll bestätigt meist nur eine geplante oder ausgelöste Ausgabe. Ohne sichere Tier- und
-      Mengenmessung ist es kein Fressnachweis.
-  - question: Braucht ein Futterautomat eine Stromreserve?
-    answer: >-
-      Eine Batterie- oder Akku-Reserve kann geplante Ausgaben bei Stromausfall absichern. Welche Funktionen im
-      Notbetrieb weiterlaufen, muss für das konkrete Modell geprüft werden.
-  - question: Wie oft werden die Vergleiche aktualisiert?
-    answer: >-
-      Produktdaten, Verfügbarkeit und wesentliche Funktionsänderungen werden regelmäßig geprüft. Die Vergleichsseite
-      nennt ihren aktuellen Datenstand.
+  - question: "Warum ist Edelstahl hygienischer?"
+    answer: "Edelstahl lässt sich leicht reinigen und nimmt im Vergleich zu manchen Kunststoffen weniger Gerüche oder Verfärbungen an."
+  - question: "Ist Edelstahl für Hunde und Katzen geeignet?"
+    answer: "Ja. Viele Tierhalter bevorzugen Edelstahlnäpfe wegen ihrer Robustheit und einfachen Reinigung."
+  - question: "Wie vergleichen wir Futterautomaten?"
+    answer: "Wir trennen Portionierung, Futterkompatibilität, Napf, Reinigung, Stromreserve, Offline-Verhalten und Zusatzfunktionen. Eine lange Funktionsliste ersetzt keine zuverlässige Ausgabe."
+  - question: "Ist der größte Futterbehälter automatisch die beste Wahl?"
+    answer: "Nein. Vorratsvolumen sagt nichts über Mindestportion, maximale Mahlzeit, Krokettengröße, Napfergonomie oder Ausfallsicherheit aus."
+  - question: "Wie prüfe ich die reale Portionsgröße?"
+    answer: "Gib mehrere Portionseinheiten mit dem tatsächlich verwendeten Futter aus, wiege die Gesamtmenge und berechne den Mittelwert. Nach einem Futterwechsel muss neu kalibriert werden."
+  - question: "Beweist ein App-Protokoll, dass das Tier gefressen hat?"
+    answer: "Nein. Ein Protokoll bestätigt meist nur eine geplante oder ausgelöste Ausgabe. Ohne sichere Tier- und Mengenmessung ist es kein Fressnachweis."
+  - question: "Braucht ein Futterautomat eine Stromreserve?"
+    answer: "Eine Batterie- oder Akku-Reserve kann geplante Ausgaben bei Stromausfall absichern. Welche Funktionen im Notbetrieb weiterlaufen, muss für das konkrete Modell geprüft werden."
 ---
 
 ## Kurzantwort
 
-Welche Futterautomaten mit Edelstahlnapf sind besonders hygienisch? Unsere Empfehlungen im Vergleich.
+Ein herausnehmbarer Edelstahlnapf erleichtert die Pflege, macht aber den übrigen Automaten nicht automatisch hygienisch. Entscheidend sind die Reinigungsfreigabe des konkreten Teils, erreichbare Futterreste im Auslass und die vollständige Trocknung vor dem Befüllen.
 
-## Welcher Futterautomat mit Edelstahlnapf lohnt sich?
+## Woran du die Modelle unterscheiden solltest
 
-Wer besonderen Wert auf Hygiene legt, sollte einen Futterautomaten mit herausnehmbarem Edelstahlnapf wählen.
+- **Napf herausnehmbar:** Kann er gereinigt werden, ohne die Elektronik zu benetzen?
+- **Halter und Auslass erreichbar:** Bleiben Fett und Futterstaub außerhalb des sichtbaren Napfs zurück?
+- **Reinigungsfreigabe vorhanden:** Edelstahl allein ist keine Spülmaschinenfreigabe für das ganze Gerät.
+- **Ersatznapf passend:** Eine ähnliche Form garantiert nicht, dass Gewichtserfassung oder Halterung weiter funktionieren.
 
-## Darauf solltest du achten
-
-Ein hochwertiger Edelstahlnapf erleichtert die Reinigung und kann Gerüche sowie Ablagerungen reduzieren.
-
-Ein sauberer Futternapf trägt wesentlich zur Hygiene im Alltag bei. Besonders Edelstahlnäpfe lassen sich schnell reinigen und gelten als langlebige Lösung für Hunde und Katzen.
-
-## Unsere Empfehlung auf einen Blick
-
-Wenn dir Hygiene und eine unkomplizierte Reinigung wichtig sind, solltest du gezielt auf einen herausnehmbaren Edelstahlnapf achten.
-
-## Entscheidungshilfe
-
-Ein Edelstahlnapf lohnt sich besonders, wenn:
-
-* der Napf häufig gereinigt wird
-* mehrere Tiere denselben Automaten nutzen
-* Gerüche möglichst vermieden werden sollen
-* langlebige Materialien gewünscht sind
-
-## Worauf kommt es an?
-
-| Kriterium | Warum wichtig |
-| --- | --- |
-| Material | Edelstahl gilt als besonders langlebig. |
-| Reinigung | Herausnehmbare Näpfe erleichtern die Pflege. |
-| Hygiene | Weniger Ablagerungen und Gerüche. |
-| Verarbeitung | Stabilität und Alltagstauglichkeit. |
-
-## So bewerten wir Futterautomaten
-
-Unsere Bewertung berücksichtigt insbesondere:
-
-* Reinigung
-* Hygiene
-* Materialqualität
-* Zuverlässigkeit
-* Alltagstauglichkeit
-
-## Für wen lohnt sich ein Edelstahlnapf?
-
-* Katzenhalter
-* Hundehalter
-* Mehrtierhaushalte
-* Allergiker
-* Haushalte mit hohen Hygieneansprüchen
-
-## Wann reicht ein Edelstahlnapf allein nicht aus?
-
-Auch ein Edelstahlnapf sollte regelmäßig gereinigt werden. Entscheidend bleibt die gesamte Konstruktion des Futterautomaten.
-
-## Weitere passende Ratgeber
-
-* [Smarte Futterautomaten im Vergleich](/smarte-futterautomaten/)
-* [Futterautomat mit App](/vergleiche/futterautomat-mit-app/)
-* [Beste Futterautomaten unter 100 Euro](/vergleiche/beste-futterautomaten-unter-100-euro/)
-* [Beste Futterautomaten für Berufstätige](/vergleiche/beste-futterautomaten-fuer-berufstaetige/)
-
-## Fazit
-
-Ein Edelstahlnapf verbessert vor allem Hygiene und Reinigung. Wer den Futterautomaten regelmäßig nutzt, profitiert häufig von dieser Ausstattung.
-
-## Für wen geeignet
-
-Der Vergleich richtet sich an Halter, die einen entnehmbaren Edelstahlnapf wünschen, aber auch Auslass, Napfhalter und Förderweg in ihre Reinigungsroutine einbeziehen.
-
-## Quellen
-
-- Produktdatenblätter und Bedienungsanleitungen der aufgenommenen Modelle
-- [FEDIAF Nutritional Guidelines](https://europeanpetfood.org/self-regulation/nutritional-guidelines/)
-- [WSAVA Global Nutrition Guidelines](https://wsava.org/global-guidelines/global-nutrition-guidelines/)
+Im Unterschied zum [allgemeinen Futterautomatenvergleich](/vergleiche/beste-futterautomaten-fuer-katzen/) ist hier der Pflegeweg das Auswahlkriterium, nicht die größte Funktionsliste.
 
 ## Der Napf allein macht noch keinen hygienischen Automaten
 
@@ -225,3 +143,7 @@ Der PETLIBRO ist die ausgewogene Wahl, wenn App-Zeitpläne und ein gut entnehmba
 ## Ein sinnvoller Reinigungsrhythmus
 
 Der Napf gehört nicht erst in die Reinigung, wenn er sichtbar verschmutzt ist. Im täglichen Betrieb sollte ein zweiter passender Napf zum Wechseln vorhanden sein. Einmal pro Woche werden zusätzlich Halter, Auslass und erreichbare Teile des Förderwegs kontrolliert. Nach dem Spülen müssen alle Vorratsteile vollständig trocknen, bevor Trockenfutter eingefüllt wird. Restfeuchte im Futterweg ist ein größeres praktisches Problem als die Frage, ob auf dem Napf „Edelstahl“ steht.
+
+## Datengrundlage
+
+Die Auswahl nutzt die dokumentierten Napf- und Reinigungsangaben von Granary WiFi, Xiaomi Feeder 2 und S305D. Für nicht freigegebene Teile wird keine Spülmaschineneignung unterstellt. Die [Reinigungsanleitung](/futterautomat-richtig-reinigen/) trennt Napf, Förderweg und Elektronik.

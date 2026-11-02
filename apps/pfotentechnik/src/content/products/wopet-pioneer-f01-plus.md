@@ -253,7 +253,12 @@ decisionFacts:
   - label: "WLAN"
     value: "Nein"
     consequence: "Die Nutzung bleibt unabhängiger von Konto, Cloud und WLAN."
+experience:
+  summary: "Sieben Liter reduzieren mögliche Nachfülltermine, belegen aber keine Eignung für große Hunde. Bis zu fünf Mahlzeiten und 40 Portionseinheiten sind keine Grammangaben. Die benötigte Einzelmahlzeit und die mechanische Passform müssen getrennt geprüft werden."
+  reliability: "Der Pioneer programmiert lokal und meldet keine Störung per App. Netzteil und drei D-Batterien als Backup sind dokumentiert. Wer App-Kontrolle benötigt, muss eine andere Bauart wie Patrol F07 Pro prüfen, statt Funktionen aus ähnlichen Namen abzuleiten."
+  maintenance: "Bei kleiner Tagesration nur die benötigte Menge einfüllen und Futterreste im Auslass kontrollieren. Nach Futterwechsel neu wiegen: Die dokumentierte Krokettengröße von etwa fünf bis 15 Millimetern bestimmt keine passende Portionsmenge."
 ---
+
 Der WOPET Pioneer F01 Plus bietet einen großen 7-Liter-Vorrat und eine lokale Zeitsteuerung ohne App. Er eignet sich besonders für Haushalte, die einen einfachen Trockenfutterautomaten mit langen Nachfüllintervallen suchen.
 
 Eine solide Wahl für große Trockenfuttervorräte und lokale Zeitpläne, wenn Kamera, WLAN und App bewusst nicht benötigt werden.

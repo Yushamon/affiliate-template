@@ -216,8 +216,12 @@ decisionFacts:
   - label: "Gewicht"
     value: "Nicht vom Hersteller ausgewiesen"
     consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
+experience:
+  summary: "Eine Empfehlung bleibt an die eindeutig dokumentierte Variante gebunden: Modellnummer, App-Region und Händlerunterlagen müssen zusammenpassen. Ähnliche Produktbilder bestätigen weder Kamera noch Backup. Die häufig genannte Kapazität ist keine gesicherte Angabe für jede Handelsversion."
+  reliability: "Nicht bestätigte Funktionen sollten kein Kaufgrund sein. Für einen rein lokalen Trockenfutterplan ist die Offline-Bauart IMIPAW 3L eine andere Option; für Xiaomi Home ist der separat dokumentierte Feeder 2 zu prüfen. Apps und Regionen sind dadurch nicht austauschbar."
+  maintenance: "Vor Bestellung die passende Anleitung und die Entnehmbarkeit von Napf und Futterweg bestätigen lassen. Fehlen diese Unterlagen, bleibt auch die Reinigungsfreigabe offen. Eine unabhängige Langzeiterprobung der konkreten Variante liegt hier nicht vor."
 ---
+
 Vernetzter Trockenfutterautomat aus dem PAWBBY-Umfeld mit Xiaomi-Home-Anbindung je nach Modellversion.
 
 Nur empfehlenswert, wenn Modellnummer, App-Region und Händlerangaben eindeutig zusammenpassen.
-

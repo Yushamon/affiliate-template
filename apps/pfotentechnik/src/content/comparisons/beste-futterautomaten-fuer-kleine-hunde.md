@@ -104,131 +104,40 @@ criteria:
 automaticRecommendations:
   enabled: true
 recommendation:
-  title: Unsere Empfehlung für Beste Futterautomaten für kleine Hunde
-  text: >-
-    Welche Futterautomaten eignen sich besonders für kleine Hunde? Unsere Empfehlungen für präzise Portionierung,
-    zuverlässige Fütterung und einfache Bedienung.
-  winnerSlug: petkit-fresh-element-solo
-  alternativeSlug: xiaomi-smart-pet-food-feeder-2
+  title: "Mindestportion und Napfzugang vor Literzahl prüfen"
+  text: "Für einen kleinen Hund ist ein Automat nur passend, wenn seine kleinste Ausgabe zur vorgesehenen Mahlzeit passt und der Napf ohne verdrehte Haltung erreichbar ist. Eine geringe Portionenzahl im Display belegt noch keine präzise Grammmenge."
+  winnerSlug: "petkit-fresh-element-solo"
+  alternativeSlug: "xiaomi-smart-pet-food-feeder-2"
 tableTitle: "Beste Futterautomaten für kleine Hunde: direkter Vergleich"
 cardsTitle: Modelle und Einsatzgrenzen
 faq:
-  - question: Brauchen kleine Hunde spezielle Futterautomaten?
-    answer: >-
-      Nicht unbedingt. Wichtig ist vor allem, dass kleine Portionen zuverlässig ausgegeben werden können und die
-      Fütterungszeiten flexibel planbar sind.
-  - question: Sind große Futterbehälter für kleine Hunde sinnvoll?
-    answer: >-
-      Nur bedingt. Für kleine Hunde stehen eine exakte Portionierung und eine einfache Reinigung meist deutlich stärker
-      im Vordergrund als ein möglichst großer Vorratsbehälter.
-  - question: Wie vergleichen wir Futterautomaten?
-    answer: >-
-      Wir trennen Portionierung, Futterkompatibilität, Napf, Reinigung, Stromreserve, Offline-Verhalten und
-      Zusatzfunktionen. Eine lange Funktionsliste ersetzt keine zuverlässige Ausgabe.
-  - question: Ist der größte Futterbehälter automatisch die beste Wahl?
-    answer: >-
-      Nein. Vorratsvolumen sagt nichts über Mindestportion, maximale Mahlzeit, Krokettengröße, Napfergonomie oder
-      Ausfallsicherheit aus.
-  - question: Wie prüfe ich die reale Portionsgröße?
-    answer: >-
-      Gib mehrere Portionseinheiten mit dem tatsächlich verwendeten Futter aus, wiege die Gesamtmenge und berechne den
-      Mittelwert. Nach einem Futterwechsel muss neu kalibriert werden.
-  - question: Beweist ein App-Protokoll, dass das Tier gefressen hat?
-    answer: >-
-      Nein. Ein Protokoll bestätigt meist nur eine geplante oder ausgelöste Ausgabe. Ohne sichere Tier- und
-      Mengenmessung ist es kein Fressnachweis.
-  - question: Braucht ein Futterautomat eine Stromreserve?
-    answer: >-
-      Eine Batterie- oder Akku-Reserve kann geplante Ausgaben bei Stromausfall absichern. Welche Funktionen im
-      Notbetrieb weiterlaufen, muss für das konkrete Modell geprüft werden.
-  - question: Wie oft werden die Vergleiche aktualisiert?
-    answer: >-
-      Produktdaten, Verfügbarkeit und wesentliche Funktionsänderungen werden regelmäßig geprüft. Die Vergleichsseite
-      nennt ihren aktuellen Datenstand.
+  - question: "Brauchen kleine Hunde spezielle Futterautomaten?"
+    answer: "Nicht unbedingt. Wichtig ist vor allem, dass kleine Portionen zuverlässig ausgegeben werden können und die Fütterungszeiten flexibel planbar sind."
+  - question: "Sind große Futterbehälter für kleine Hunde sinnvoll?"
+    answer: "Nur bedingt. Für kleine Hunde stehen eine exakte Portionierung und eine einfache Reinigung meist deutlich stärker im Vordergrund als ein möglichst großer Vorratsbehälter."
+  - question: "Wie vergleichen wir Futterautomaten?"
+    answer: "Wir trennen Portionierung, Futterkompatibilität, Napf, Reinigung, Stromreserve, Offline-Verhalten und Zusatzfunktionen. Eine lange Funktionsliste ersetzt keine zuverlässige Ausgabe."
+  - question: "Ist der größte Futterbehälter automatisch die beste Wahl?"
+    answer: "Nein. Vorratsvolumen sagt nichts über Mindestportion, maximale Mahlzeit, Krokettengröße, Napfergonomie oder Ausfallsicherheit aus."
+  - question: "Wie prüfe ich die reale Portionsgröße?"
+    answer: "Gib mehrere Portionseinheiten mit dem tatsächlich verwendeten Futter aus, wiege die Gesamtmenge und berechne den Mittelwert. Nach einem Futterwechsel muss neu kalibriert werden."
+  - question: "Beweist ein App-Protokoll, dass das Tier gefressen hat?"
+    answer: "Nein. Ein Protokoll bestätigt meist nur eine geplante oder ausgelöste Ausgabe. Ohne sichere Tier- und Mengenmessung ist es kein Fressnachweis."
+  - question: "Braucht ein Futterautomat eine Stromreserve?"
+    answer: "Eine Batterie- oder Akku-Reserve kann geplante Ausgaben bei Stromausfall absichern. Welche Funktionen im Notbetrieb weiterlaufen, muss für das konkrete Modell geprüft werden."
 ---
 
 ## Kurzantwort
 
-Welche Futterautomaten eignen sich besonders für kleine Hunde? Unsere Empfehlungen für präzise Portionierung, zuverlässige Fütterung und einfache Bedienung.
+Für einen kleinen Hund ist ein Automat nur passend, wenn seine kleinste Ausgabe zur vorgesehenen Mahlzeit passt und der Napf ohne verdrehte Haltung erreichbar ist. Eine geringe Portionenzahl im Display belegt noch keine präzise Grammmenge.
 
-## Welcher Futterautomat eignet sich für kleine Hunde?
+## Drei Ausschlussfragen vor der Modellwahl
 
-Für kleine Hunde empfehlen sich Futterautomaten, die kleine Portionen zuverlässig ausgeben, leicht zu reinigen sind und im Alltag einfach bedient werden können.
+1. Ist bereits die kleinste Stufe mit dem eigenen Futter zu groß? Dann scheidet das Gerät aus.
+2. Stoßen Fang oder Hals an Rand und Gehäuse? Dann hilft ein genauerer Zeitplan nicht weiter.
+3. Kann der Hund Deckel, Auslass oder Kabel bearbeiten? Dann muss der Standort gesichert werden, bevor unbeaufsichtigt gefüttert wird.
 
-## Darauf solltest du achten
-
-Für kleine Hunderassen sind präzise Portionen, zuverlässige Technik und eine einfache Reinigung meist wichtiger als besonders viele Zusatzfunktionen.
-
-Kleine Hunderassen wie Chihuahua, Yorkshire Terrier, Malteser oder Zwergspitz benötigen häufig deutlich kleinere Portionen als große Hunde. Deshalb unterscheiden sich die Anforderungen an einen Futterautomaten oft deutlich. Eine zuverlässige Portionierung ist hier meist wichtiger als eine besonders große Futterkapazität.
-
-## Unsere Empfehlung auf einen Blick
-
-Für kleine Hunde empfehlen sich Modelle, die kleine Portionen zuverlässig ausgeben, einfach zu reinigen sind und sich flexibel an den Tagesablauf anpassen lassen. Die Produktauswahl oberhalb dieses Ratgebers wird automatisch anhand unserer Bewertungsregeln zusammengestellt.
-
-## Entscheidungshilfe
-
-Ein Futterautomat ist besonders sinnvoll, wenn dein Hund:
-
-* regelmäßig mehrere kleine Mahlzeiten erhält
-* häufig allein zu Hause bleibt
-* feste Fütterungszeiten benötigt
-* zu Übergewicht neigt und Portionen exakt kontrolliert werden sollen
-
-## Worauf kommt es bei kleinen Hunden an?
-
-Gerade kleine Hunderassen reagieren oft empfindlicher auf stark schwankende Futtermengen. Deshalb legen wir besonderen Wert auf:
-
-| Kriterium | Warum wichtig |
-| --- | --- |
-| Präzise Portionierung | Kleine Hunde benötigen häufig sehr kleine Futtermengen. |
-| Zuverlässigkeit | Fütterungszeiten sollten konstant eingehalten werden. |
-| Reinigung | Ein sauberer Futternapf unterstützt die Hygiene. |
-| Bedienung | Einfache Einrichtung erleichtert den Alltag. |
-
-## So bewerten wir Futterautomaten für kleine Hunde
-
-Unsere Bewertung konzentriert sich auf die Eigenschaften, die im Alltag kleiner Hunderassen besonders wichtig sind.
-
-Besonders stark fließen ein:
-
-* Portionierungsgenauigkeit
-* Zuverlässigkeit
-* Reinigung
-* Sicherheit
-* Preis-Leistungs-Verhältnis
-
-## Für wen lohnt sich ein Futterautomat?
-
-Ein Futterautomat eignet sich besonders für:
-
-* kleine Hunderassen
-* Berufstätige
-* Familien
-* Hunde mit festen Fütterungszeiten
-* Haushalte mit klaren Routinen
-
-## Wann ist ein Futterautomat nicht ideal?
-
-Ein Futterautomat ersetzt keine Betreuung. Bei gesundheitlichen Problemen, stark verändertem Fressverhalten oder tierärztlicher Behandlung sollte die Fütterung weiterhin eng begleitet werden.
-
-Auch bei überwiegender Nassfutter- oder BARF-Fütterung können spezielle Lösungen sinnvoller sein.
-
-## Weitere passende Ratgeber
-
-* [Smarte Futterautomaten im Vergleich](/smarte-futterautomaten/)
-* [Futterautomat für Hunde](/futterautomat-hund/)
-* [Futterautomat für Welpen](/vergleiche/beste-futterautomaten-fuer-welpen/)
-* [Futterautomat mit App](/vergleiche/futterautomat-mit-app/)
-
-## Fazit
-
-Für kleine Hunde lohnt sich vor allem ein Futterautomat mit zuverlässiger Portionierung und einfacher Reinigung. Große Vorratsbehälter spielen dagegen meist eine untergeordnete Rolle. Entscheidend ist, dass der Automat den individuellen Fütterungsrhythmus zuverlässig unterstützt.
-
-## Quellen
-
-- Produktdatenblätter und Bedienungsanleitungen der aufgenommenen Modelle
-- [FEDIAF Nutritional Guidelines](https://europeanpetfood.org/self-regulation/nutritional-guidelines/)
-- [WSAVA Global Nutrition Guidelines](https://wsava.org/global-guidelines/global-nutrition-guidelines/)
+Anders als der [Welpenvergleich](/vergleiche/beste-futterautomaten-fuer-welpen/) behandelt diese Auswahl vor allem kleine Körpergröße und mechanische Passform, nicht den wechselnden Bedarf während des Wachstums.
 
 ## PETKIT, Xiaomi oder PETLIBRO Air?
 
@@ -250,3 +159,7 @@ Der **Xiaomi Smart Pet Food Feeder 2** ist trotz seines größeren Gehäuses int
 Viele Käufer wählen nach der kleinsten beworbenen Portion, ohne deren Streuung zu messen. Gib deshalb zehn Einzelportionen in eine Schüssel, wiege die Gesamtmenge und teile durch zehn. Wiederhole den Test nach einem Futterwechsel. Wenn die kleinste Stufe bereits größer als die gewünschte Mahlzeit ist, lässt sich das Problem nicht durch einen besseren App-Zeitplan lösen.
 
 Stelle den Napf außerdem für zwei Tage auf eine rutschfeste Unterlage und beobachte die Hals- und Vorderbeinposition. Ein technisch präziser Automat ist keine gute Wahl, wenn der Hund wegen eines hohen Gehäuses oder engen Napfrands verdreht frisst.
+
+## Datengrundlage
+
+Die Größen- und Portionsgrenzen stammen aus den zugeordneten Produktdaten von Fresh Element Solo, Xiaomi Feeder 2 und Air WiFi. Die Umrechnung von Portionseinheiten erklärt die [Anleitung zur Portionskalibrierung](/welche-portionsgroesse-ist-richtig/); eine präzise Mindestgrammzahl ist ohne eigenes Futter nicht zugesichert.

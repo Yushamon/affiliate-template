@@ -301,8 +301,12 @@ offers:
     evidenceSources: []
     lastAttemptAt: "2026-11-02T08:10:11.684Z"
     error: "Offizielle Produkt-URL unresolved."
+experience:
+  summary: "Dies ist die lokale Air-Version mit Bedienfeld und Display, nicht Air WiFi. Es gibt keine Fernsteuerung oder Fütterungsprotokolle. Zwei Liter und bis zu sechs Mahlzeiten müssen zur tatsächlichen Tagesration passen; der Vorrat ist keine Portionsmessung."
+  reliability: "USB-C-Netzteil oder drei D-Batterien sind dokumentiert, ein integrierter Ladeakku wird für diese Variante nicht behauptet. Ohne App muss eine Person Uhrzeit, Füllstand und Störungen vor Ort kontrollieren. Air WiFi ist die separate App-/Akku-Bauart."
+  maintenance: "Mit dem eigenen Futter mehrere Ausgaben wiegen und den Förderweg auf Klemmen prüfen. Die dokumentierten Kroketten von etwa zwei bis 15 Millimetern ersetzen keinen Probebetrieb; Nassfutter benötigt eine andere Bauart."
 ---
+
 Der PETLIBRO Air Automatic Feeder ist ein kompakter Trockenfutterautomat mit lokaler Zeitsteuerung. Er eignet sich für Katzen und kleine Hunde, wenn bewusst keine App oder WLAN-Verbindung benötigt wird.
 
 Eine gute Offline-Alternative zum Air WiFi Feeder, wenn lokale Zeitpläne, kompakte Abmessungen und flexibler Batteriebetrieb wichtiger sind als App-Funktionen.
-

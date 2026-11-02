@@ -1,0 +1,191 @@
+{
+  "generatedAt": "2026-11-02T16:41:18.786Z",
+  "method": "Unmodified collectContentQuality and thresholds; not an exhaustive external fact check or Google verdict",
+  "summary": {
+    "pages": 374,
+    "publicPages": 259,
+    "errors": 0,
+    "warnings": 0,
+    "exactDuplicates": 0,
+    "nearDuplicates": 0
+  },
+  "findings": [],
+  "conflicts": [
+    {
+      "id": "gps-bluetooth-duplicate",
+      "type": "exact-intent-conflict",
+      "severity": "info",
+      "routes": [
+        "/gps-tracker-oder-bluetooth-tag/",
+        "/gps-oder-bluetooth/"
+      ],
+      "pageTypes": [
+        "consolidated",
+        "decision-guide"
+      ],
+      "intents": [
+        "commercial-investigation",
+        "commercial-investigation"
+      ],
+      "mainEntities": [
+        "GPS vs Bluetooth",
+        "GPS oder Bluetooth?"
+      ],
+      "titles": [
+        "",
+        "GPS oder Bluetooth für Hund und Katze?"
+      ],
+      "h1": [
+        "",
+        "GPS oder Bluetooth?"
+      ],
+      "metrics": null,
+      "topicOwners": [
+        "/gps-oder-bluetooth/"
+      ],
+      "reason": "Beide Ratgeber beantworten dieselbe Systementscheidung. Die Zielseite ist technisch präziser, besser intern eingebunden und besitzt das belastbarere Quellenfundament.",
+      "action": "CONSOLIDATE",
+      "automatic": true,
+      "before": "confirmed-duplicate",
+      "after": "resolved",
+      "redirect": {
+        "expected": "/gps-oder-bluetooth/",
+        "actual": "/gps-oder-bluetooth/"
+      },
+      "remainingInternalLinks": []
+    },
+    {
+      "id": "petkit-yumshare-dual-duplicate",
+      "type": "exact-intent-conflict",
+      "severity": "info",
+      "routes": [
+        "/produkt/petkit-yumshare-dual/",
+        "/produkt/petkit-yumshare-dual-hopper/"
+      ],
+      "pageTypes": [
+        "consolidated",
+        "product"
+      ],
+      "intents": [
+        "commercial-investigation",
+        "product-research"
+      ],
+      "mainEntities": [
+        "GPS vs Bluetooth",
+        "PETKIT YumShare Dual-Hopper 2"
+      ],
+      "titles": [
+        "",
+        "PETKIT YumShare Dual-Hopper 2 im Check"
+      ],
+      "h1": [
+        "",
+        "PETKIT YumShare Dual-Hopper 2"
+      ],
+      "metrics": null,
+      "topicOwners": [
+        "/produkt/petkit-yumshare-dual-hopper/"
+      ],
+      "reason": "Beide Seiten beschreiben den PETKIT YumShare Dual-Hopper 2. Die P592-Zielseite enthält die vollständigere Modellabgrenzung, aktuelle Verfügbarkeit und die gepflegten Vergleichsbezüge.",
+      "action": "CONSOLIDATE",
+      "automatic": true,
+      "before": "confirmed-duplicate",
+      "after": "resolved",
+      "redirect": {
+        "expected": "/produkt/petkit-yumshare-dual-hopper/",
+        "actual": "/produkt/petkit-yumshare-dual-hopper/"
+      },
+      "remainingInternalLinks": []
+    },
+    {
+      "id": "separated|/produkt/petkit-eversweet-solo-2-fountain/|/produkt/petkit-eversweet-solo-se/",
+      "type": "intent-separation",
+      "severity": "info",
+      "routes": [
+        "/produkt/petkit-eversweet-solo-2-fountain/",
+        "/produkt/petkit-eversweet-solo-se/"
+      ],
+      "pageTypes": [
+        "product",
+        "product"
+      ],
+      "intents": [
+        "product-research",
+        "product-research"
+      ],
+      "mainEntities": [
+        "PETKIT Eversweet Solo 2",
+        "PETKIT Eversweet Solo SE"
+      ],
+      "titles": [
+        "PETKIT Eversweet Solo 2 im Check",
+        "PETKIT Eversweet Solo SE im Check"
+      ],
+      "h1": [
+        "PETKIT Eversweet Solo 2",
+        "PETKIT Eversweet Solo SE"
+      ],
+      "metrics": {
+        "title": 1,
+        "headings": 0.7436,
+        "body": 0.4539,
+        "entities": 1,
+        "combined": 0.7216
+      },
+      "topicOwners": [
+        "/produkt/petkit-eversweet-solo-2-fountain/",
+        "/produkt/petkit-eversweet-solo-se/"
+      ],
+      "reason": "Zwei eigenständige PETKIT-Modellvarianten mit unterschiedlicher Produktidentität.",
+      "action": "DIFFERENTIATE",
+      "automatic": false,
+      "before": "similar-topics",
+      "after": "intentionally-separated"
+    },
+    {
+      "id": "separated|/produkt/tractive-dog-6-xl/|/produkt/tractive-dog-6/",
+      "type": "intent-separation",
+      "severity": "info",
+      "routes": [
+        "/produkt/tractive-dog-6-xl/",
+        "/produkt/tractive-dog-6/"
+      ],
+      "pageTypes": [
+        "product",
+        "product"
+      ],
+      "intents": [
+        "product-research",
+        "product-research"
+      ],
+      "mainEntities": [
+        "Tractive DOG 6",
+        "Tractive DOG 6 XL"
+      ],
+      "titles": [
+        "Tractive DOG 6: Akku, Abo und GPS-Tracker im Check",
+        "Tractive DOG 6 XL: Akku, Abo und GPS-Tracker im Check"
+      ],
+      "h1": [
+        "Tractive DOG 6",
+        "Tractive DOG 6 XL"
+      ],
+      "metrics": {
+        "title": 1,
+        "headings": 0.8462,
+        "body": 0.48,
+        "entities": 1,
+        "combined": 0.7502
+      },
+      "topicOwners": [
+        "/produkt/tractive-dog-6/",
+        "/produkt/tractive-dog-6-xl/"
+      ],
+      "reason": "Standard- und XL-Variante besitzen unterschiedliche Größen- und Einsatzprofile.",
+      "action": "DIFFERENTIATE",
+      "automatic": false,
+      "before": "similar-topics",
+      "after": "intentionally-separated"
+    }
+  ]
+}

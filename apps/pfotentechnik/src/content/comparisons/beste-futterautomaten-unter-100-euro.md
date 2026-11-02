@@ -100,128 +100,43 @@ criteria:
 automaticRecommendations:
   enabled: true
 recommendation:
-  title: Unsere Empfehlung für Beste Futterautomaten unter 100 Euro
-  text: Welche Futterautomaten unter 100 Euro bieten das beste Preis-Leistungs-Verhältnis? Unsere Empfehlungen im Vergleich.
-  winnerSlug: imipaw-3l-automatic-cat-feeder
-  alternativeSlug: honeyguardian-smart-pet-feeder-s305d
+  title: "Budgetgrenze am aktuellen Angebot prüfen, Bauart vorher wählen"
+  text: "Die Grenze von 100 Euro ist eine Suchvorgabe, keine dauerhaft bestätigte Preiszusage für jedes angezeigte Modell. Ohne aktuelles verfügbares Angebot bleibt der Preis offen. Lokaler Trockenfutterautomat und Nassfutter-Fächertimer lösen zudem unterschiedliche Aufgaben."
+  winnerSlug: "imipaw-3l-automatic-cat-feeder"
+  alternativeSlug: "honeyguardian-smart-pet-feeder-s305d"
 tableTitle: "Beste Futterautomaten unter 100 Euro: direkter Vergleich"
 cardsTitle: Modelle und Einsatzgrenzen
 faq:
-  - question: Sind günstige Futterautomaten zuverlässig?
-    answer: >-
-      Viele Modelle unter 100 Euro arbeiten zuverlässig. Entscheidend sind die Qualität der Portionierung und eine
-      solide Verarbeitung.
-  - question: Lohnt sich ein teureres Modell?
-    answer: >-
-      Wenn Funktionen wie Kamera, umfangreiche App-Steuerung oder größere Futterbehälter benötigt werden, kann ein
-      höherpreisiges Modell sinnvoll sein.
-  - question: Wie vergleichen wir Futterautomaten?
-    answer: >-
-      Wir trennen Portionierung, Futterkompatibilität, Napf, Reinigung, Stromreserve, Offline-Verhalten und
-      Zusatzfunktionen. Eine lange Funktionsliste ersetzt keine zuverlässige Ausgabe.
-  - question: Ist der größte Futterbehälter automatisch die beste Wahl?
-    answer: >-
-      Nein. Vorratsvolumen sagt nichts über Mindestportion, maximale Mahlzeit, Krokettengröße, Napfergonomie oder
-      Ausfallsicherheit aus.
-  - question: Wie prüfe ich die reale Portionsgröße?
-    answer: >-
-      Gib mehrere Portionseinheiten mit dem tatsächlich verwendeten Futter aus, wiege die Gesamtmenge und berechne den
-      Mittelwert. Nach einem Futterwechsel muss neu kalibriert werden.
-  - question: Beweist ein App-Protokoll, dass das Tier gefressen hat?
-    answer: >-
-      Nein. Ein Protokoll bestätigt meist nur eine geplante oder ausgelöste Ausgabe. Ohne sichere Tier- und
-      Mengenmessung ist es kein Fressnachweis.
-  - question: Braucht ein Futterautomat eine Stromreserve?
-    answer: >-
-      Eine Batterie- oder Akku-Reserve kann geplante Ausgaben bei Stromausfall absichern. Welche Funktionen im
-      Notbetrieb weiterlaufen, muss für das konkrete Modell geprüft werden.
-  - question: Wie oft werden die Vergleiche aktualisiert?
-    answer: >-
-      Produktdaten, Verfügbarkeit und wesentliche Funktionsänderungen werden regelmäßig geprüft. Die Vergleichsseite
-      nennt ihren aktuellen Datenstand.
+  - question: "Sind günstige Futterautomaten zuverlässig?"
+    answer: "Viele Modelle unter 100 Euro arbeiten zuverlässig. Entscheidend sind die Qualität der Portionierung und eine solide Verarbeitung."
+  - question: "Lohnt sich ein teureres Modell?"
+    answer: "Wenn Funktionen wie Kamera, umfangreiche App-Steuerung oder größere Futterbehälter benötigt werden, kann ein höherpreisiges Modell sinnvoll sein."
+  - question: "Wie vergleichen wir Futterautomaten?"
+    answer: "Wir trennen Portionierung, Futterkompatibilität, Napf, Reinigung, Stromreserve, Offline-Verhalten und Zusatzfunktionen. Eine lange Funktionsliste ersetzt keine zuverlässige Ausgabe."
+  - question: "Ist der größte Futterbehälter automatisch die beste Wahl?"
+    answer: "Nein. Vorratsvolumen sagt nichts über Mindestportion, maximale Mahlzeit, Krokettengröße, Napfergonomie oder Ausfallsicherheit aus."
+  - question: "Wie prüfe ich die reale Portionsgröße?"
+    answer: "Gib mehrere Portionseinheiten mit dem tatsächlich verwendeten Futter aus, wiege die Gesamtmenge und berechne den Mittelwert. Nach einem Futterwechsel muss neu kalibriert werden."
+  - question: "Beweist ein App-Protokoll, dass das Tier gefressen hat?"
+    answer: "Nein. Ein Protokoll bestätigt meist nur eine geplante oder ausgelöste Ausgabe. Ohne sichere Tier- und Mengenmessung ist es kein Fressnachweis."
+  - question: "Braucht ein Futterautomat eine Stromreserve?"
+    answer: "Eine Batterie- oder Akku-Reserve kann geplante Ausgaben bei Stromausfall absichern. Welche Funktionen im Notbetrieb weiterlaufen, muss für das konkrete Modell geprüft werden."
 ---
 
 ## Kurzantwort
 
-Welche Futterautomaten unter 100 Euro bieten das beste Preis-Leistungs-Verhältnis? Unsere Empfehlungen im Vergleich.
+Die Grenze von 100 Euro ist eine Suchvorgabe, keine dauerhaft bestätigte Preiszusage für jedes angezeigte Modell. Ohne aktuelles verfügbares Angebot bleibt der Preis offen. Lokaler Trockenfutterautomat und Nassfutter-Fächertimer lösen zudem unterschiedliche Aufgaben.
 
-## Welcher Futterautomat unter 100 Euro lohnt sich?
+## Was zum Budgetvergleich gehört
 
-Auch günstige Modelle können zuverlässig arbeiten. Wichtig sind vor allem eine gute Portionierung, einfache Reinigung und eine solide Verarbeitung.
+| Kostenpunkt | Vor der Bestellung klären |
+|---|---|
+| Anschaffung | aktueller Gesamtpreis und Lieferbarkeit des exakten Modells |
+| Stromreserve | erforderliche Batterien oder separat angebotenes Netzteil |
+| Verbrauchsteile | passende Trockenmittel, Kühlakkus oder Ersatzschalen |
+| Fehlkauf-Risiko | Mindestportion, Futterart und Rückgabe für das konkrete Angebot |
 
-## Darauf solltest du achten
-
-Nicht jede Zusatzfunktion ist entscheidend. Eine zuverlässige Fütterung ist wichtiger als möglichst viele Extras.
-
-Ein guter Futterautomat muss nicht teuer sein. Viele Modelle unter 100 Euro bieten bereits eine zuverlässige Portionierung, einfache Bedienung und eine gute Alltagstauglichkeit. Entscheidend ist, dass die wichtigsten Funktionen zuverlässig arbeiten.
-
-## Unsere Empfehlung auf einen Blick
-
-Bei einem Budget unter 100 Euro solltest du vor allem auf Zuverlässigkeit, Portionierungsgenauigkeit und eine einfache Reinigung achten. Zusatzfunktionen wie Kameras oder besonders große Vorratsbehälter sind dagegen oft weniger wichtig.
-
-## Entscheidungshilfe
-
-Ein Futterautomat unter 100 Euro ist besonders sinnvoll, wenn:
-
-* ein begrenztes Budget zur Verfügung steht
-* zuverlässige Grundfunktionen ausreichen
-* keine Kamera benötigt wird
-* hauptsächlich Trockenfutter verwendet wird
-
-## Worauf kommt es unter 100 Euro an?
-
-| Kriterium | Warum wichtig |
-| --- | --- |
-| Preis-Leistung | Möglichst viele sinnvolle Funktionen ohne Aufpreis. |
-| Zuverlässigkeit | Die Fütterung muss jeden Tag zuverlässig funktionieren. |
-| Portionierung | Kleine Portionen sollten sauber ausgegeben werden. |
-| Reinigung | Einfach zu säubern und hygienisch im Alltag. |
-
-## So bewerten wir günstige Futterautomaten
-
-Unsere Bewertung berücksichtigt insbesondere:
-
-* Preis-Leistungs-Verhältnis
-* Zuverlässigkeit
-* Portionierungsgenauigkeit
-* Reinigung
-* Alltagstauglichkeit
-
-## Für wen lohnt sich ein günstiger Futterautomat?
-
-Ein günstiger Futterautomat eignet sich besonders für:
-
-* Einsteiger
-* Katzenhalter
-* kleine Hunde
-* preisbewusste Käufer
-* Haushalte mit regelmäßigen Fütterungszeiten
-
-## Wann lohnt sich ein teureres Modell?
-
-Ein höherpreisiger Automat kann sinnvoll sein, wenn:
-
-* eine Kamera gewünscht wird
-* mehrere Tiere versorgt werden
-* App-Funktionen besonders wichtig sind
-* ein sehr großer Vorratsbehälter benötigt wird
-
-## Weitere passende Ratgeber
-
-* [Smarte Futterautomaten im Vergleich](/smarte-futterautomaten/)
-* [Futterautomat für Hunde](/futterautomat-hund/)
-* [Futterautomat mit App](/vergleiche/futterautomat-mit-app/)
-* [Beste Futterautomaten für kleine Hunde](/vergleiche/beste-futterautomaten-fuer-kleine-hunde/)
-
-## Fazit
-
-Wer auf die wirklich wichtigen Funktionen achtet, findet auch unter 100 Euro zuverlässige Futterautomaten. Eine saubere Portionierung und eine robuste Verarbeitung sind im Alltag deutlich wichtiger als möglichst viele Zusatzfunktionen.
-
-## Quellen
-
-- Produktdatenblätter und Bedienungsanleitungen der aufgenommenen Modelle
-- [FEDIAF Nutritional Guidelines](https://europeanpetfood.org/self-regulation/nutritional-guidelines/)
-- [WSAVA Global Nutrition Guidelines](https://wsava.org/global-guidelines/global-nutrition-guidelines/)
+Ein fehlender Preis wird nicht als günstig gewertet. Brauchst du geschützten Zugang oder aktive Nassfutterkühlung, prüfe zuerst diese Bauart statt Funktionen innerhalb einer ungeeigneten Preisklasse anzuhäufen.
 
 ## Was unter 100 Euro realistisch ist
 
@@ -243,3 +158,7 @@ Der **Cat Mate C500** ist kein günstiger Trockenfutter-Vorratsautomat, sondern 
 Zahle nicht pauschal für mehr Funktionen. Ein höherer Preis ist dann begründet, wenn eine konkrete Grenze gelöst wird: Zugangsschutz im Mehrtierhaushalt, aktive Nassfutterkühlung, ein echter Wiegenapf, große Hundemahlzeiten oder dokumentiertes Offline-Verhalten. Kamera, Sprachaufnahme oder mehr App-Menüs sind kein Qualitätsgewinn, wenn die Grundaufgabe lediglich aus zwei zuverlässigen Trockenfutterausgaben besteht.
 
 Prüfe günstige Modelle innerhalb des Rückgabefensters mit mindestens 30 Ausgaben. Erst dieser Test zeigt, ob Portionen, Krokettengröße und Förderweg zusammenpassen.
+
+## Datengrundlage
+
+IMIPAW, S305D und C500 stehen für unterschiedliche Bauarten im betrachteten Preisbereich. Die Produktseiten halten technische Merkmale und offene Preisangaben getrennt. Die [Bauartauswahl](/welcher-futterautomat-ist-der-richtige/) hilft, vor dem Angebotsvergleich die passende Klasse festzulegen.

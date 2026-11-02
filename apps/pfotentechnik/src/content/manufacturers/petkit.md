@@ -7,7 +7,7 @@ description: "PETKIT im Überblick: smarte Futterautomaten und Trinkbrunnen, App
 key: "petkit"
 name: "PETKIT"
 recommendation: "PETKIT gehört weltweit zu den bekanntesten Herstellern smarter Haustiertechnik. Das Unternehmen entwickelt vernetzte Futterautomaten, Trinkbrunnen, selbstreinigende Katzentoiletten und weiteres intelligentes Zubehör mit einem klaren Fokus auf Design, Automatisierung und App-Steuerung."
-summary: "PETKIT wird von vielen Käufern für Design, Verarbeitung und Innovationskraft gelobt. Besonders positiv werden die App sowie das Zusammenspiel verschiedener PETKIT-Produkte bewertet. Kritik betrifft hauptsächlich den höheren Preis und gelegentliche Software- oder Cloud-Themen."
+summary: "PETKIT deckt im erfassten Bestand Futterautomaten, Trinkbrunnen und automatische Katzentoiletten ab. Fresh Element, YumShare, Eversweet und PUROBOT unterscheiden sich in Futterweg, Kamera, Stromversorgung und laufenden Verbrauchsteilen. Eine App-Anbindung macht ihre Funktionen nicht untereinander austauschbar."
 publishedAt: "2026-07-12"
 updatedAt: "2026-08-21"
 author:
@@ -66,11 +66,10 @@ attention:
   - "Nutzer ohne App"
   - "Haushalte mit reinem Offline-Betrieb"
 strengths:
-  - "Sehr hohe Innovationsgeschwindigkeit"
-  - "Modernes Premium-Design"
-  - "Großes Smart-Pet-Ökosystem"
-  - "Intuitive App mit vielen Funktionen"
-  - "Hochwertige Verarbeitung"
+  - "Unterschiedliche Geräteklassen im gepflegten Bestand"
+  - "YumShare-Modelle mit Kamera"
+  - "Eversweet-Brunnen mit verschiedenen Strom- und Verbindungskonzepten"
+  - "Dokumentierte Modellvergleiche"
 weaknesses:
   - "Premiumpreise"
   - "Teilweise Cloud-Abhängigkeit"
@@ -130,19 +129,16 @@ series:
       - "Automatische Katzentoiletten"
     productSlugs: []
 experience:
-  summary: "PETKIT wird von vielen Käufern für Design, Verarbeitung und Innovationskraft gelobt. Besonders positiv werden die App sowie das Zusammenspiel verschiedener PETKIT-Produkte bewertet. Kritik betrifft hauptsächlich den höheren Preis und gelegentliche Software- oder Cloud-Themen."
+  summary: "Die Einordnung stützt sich auf die dokumentierten Modellfamilien. Sie ist weder ein eigener markenweiter Praxistest noch eine repräsentative Zusammenfassung von Kundenbewertungen."
   positives:
-    - "Sehr hochwertige Verarbeitung"
-    - "Modernes Design"
-    - "Großes Smart-Pet-Ökosystem"
-    - "Leise Produkte"
-    - "Regelmäßige Weiterentwicklung"
+    - "Fresh Element für Trockenfutter ohne Kamera"
+    - "YumShare für Futterplatz-Kamera und je nach Modell zwei Kammern"
+    - "PUROBOT für automatische Toiletten mit unterschiedlichen Bauformen"
   criticism:
-    - "Premiumpreise"
-    - "Cloud-Abhängigkeit einzelner Funktionen"
-    - "Gelegentliche App-Probleme nach Updates"
-    - "Ersatzteile teilweise teuer"
-  support: "Der Support wird insgesamt überwiegend positiv bewertet. Viele Käufer berichten über kompetente Hilfe und regelmäßige Softwareupdates. Bei Garantie- oder Ersatzteilanfragen werden jedoch vereinzelt längere Bearbeitungszeiten genannt."
+    - "Zwei Futterkammern bedeuten keine Tiertrennung"
+    - "Bluetooth-Brunnen bieten nicht automatisch WLAN-Fernzugriff"
+    - "Kamera-Cloud und proprietäre Verbrauchsteile können Folgekosten erzeugen"
+  support: "PETKIT stellt Produkt-, Garantie- und Zubehörinformationen bereit. Vertrieb und Ansprechpartner müssen für die konkrete Region geprüft werden; Reaktionszeit und Kulanz sind hier nicht unabhängig bewertet."
 alternativeManufacturerSlugs:
   - "petlibro"
   - "surefeed"
@@ -161,37 +157,15 @@ sources:
   - label: "PETKIT Germany"
     url: "https://petkitgermany.com"
 faq:
-  - question: "Ist PETKIT eine gute Marke?"
-    answer: "PETKIT gehört zu den innovativsten Herstellern smarter Haustiertechnik und überzeugt besonders durch hochwertige Verarbeitung, moderne App-Steuerung und ein breites Produktportfolio."
-  - question: "Woher kommt PETKIT?"
-    answer: "PETKIT wurde in China gegründet und vertreibt seine Produkte heute weltweit. Für Europa existieren eigene Vertriebs- und Supportstrukturen."
-  - question: "Wie gut ist die PETKIT App?"
-    answer: "Die PETKIT App zählt zu den umfangreichsten Lösungen im Smart-Pet-Bereich und bietet Zeitpläne, Benachrichtigungen sowie die Verwaltung mehrerer Geräte."
-  - question: "Welche PETKIT Serie eignet sich am besten?"
-    answer: "Fresh Element eignet sich als klassischer Smart-Feeder. YumShare richtet sich an Nutzer mit höheren Ansprüchen und zusätzlichen Kamerafunktionen."
-  - question: "Bietet PETKIT nur Futterautomaten an?"
-    answer: "Nein. PETKIT entwickelt außerdem Trinkbrunnen, selbstreinigende Katzentoiletten sowie weiteres intelligentes Haustierzubehör."
-  - question: "Wie sind die Erfahrungen mit dem Support?"
-    answer: "Die Erfahrungen fallen überwiegend positiv aus. Einzelne Käufer berichten jedoch von längeren Bearbeitungszeiten bei Garantie- oder Ersatzteilanfragen."
+  - question: "YumShare oder Fresh Element?"
+    answer: "Fresh Element ist im erfassten Bestand die Trockenfutterlinie ohne Kamera. YumShare ergänzt Kamerafunktionen; beim Dual-Hopper führen zwei Kammern weiterhin in denselben Napf."
+  - question: "Bietet jeder PETKIT-Brunnen Fernzugriff?"
+    answer: "Nein. Bluetooth-Verbindung und eigenständige WLAN-Anbindung sind zu trennen. Entscheidend ist die Spezifikation des jeweiligen Eversweet-Modells."
+  - question: "Welche Folgekosten sind zu prüfen?"
+    answer: "Je nach Gerät fallen Filter, Trockenmittel, Beutel, Geruchszubehör oder optionale Video-Dienste an. Verbindliche Kosten müssen aus der passenden Modell- und Tarifdokumentation stammen."
 ---
 
 PETKIT gehört weltweit zu den bekanntesten Herstellern smarter Haustiertechnik. Das Unternehmen entwickelt vernetzte Futterautomaten, Trinkbrunnen, selbstreinigende Katzentoiletten und weiteres intelligentes Zubehör mit einem klaren Fokus auf Design, Automatisierung und App-Steuerung.
-
-## Wichtige PETKIT-Modelle im Detail
-
-Der [PETKIT YumShare Solo 2](/produkt/petkit-yumshare-solo-2/) kombiniert Trockenfutter-Zeitpläne mit Kamera und Zwei-Wege-Audio. Der [YumShare Dual-Hopper](/produkt/petkit-yumshare-dual-hopper/) ergänzt zwei getrennte Vorräte, aber keine physische Tiertrennung. Bei Trinksystemen ist der [PETKIT Eversweet Ultra](/produkt/petkit-eversweet-ultra/) die spezialisierte Lösung mit getrenntem Frisch- und Abwasser sowie Kamera-Auswertung.
-
-<!-- pt:max3-product:start -->
-## Automatische Katzentoiletten
-
-Der [PUROBOT MAX 3](/produkt/petkit-purobot-max-3/) ergänzt den Bestand als eigenständiges Modell mit 20,4-cm-Einstieg und mechanischer Anti-Pinch-Struktur. Er wird nicht mit den Kamera-Funktionen des MAX PRO 2 vermischt.
-
-Der [PUROBOT CRYSTAL DUO](/produkt/petkit-purobot-crystal-duo/) ist die offene Rechen-/Tray-Alternative mit 18-cm-Einstieg. Anders als die Trommelmodelle benötigt er zwingend PETKIT Crystal Litter Sets und Einwegschalen; Kamera-, pH- und Yowling-Hinweise sind Monitoring und keine Diagnose.
-<!-- pt:max3-product:end -->
-
-## Angekündigt: YUMSHARE DAILY FEAST
-
-PETKIT beschreibt den YUMSHARE DAILY FEAST als vollautomatischen Nassfutterautomaten mit versiegelten Packs, automatischem Öffnen und Portionieren, Rückführung der Näpfe, Kamera, Mehrkatzenerkennung und UVC-bezogenen Funktionen für bis zu sieben Tage. Am 21.08.2026 fehlt weiterhin eine offizielle EU-/Deutschland-Produktseite mit Preis, kompatiblen Packs, Pack-Verfügbarkeit und belastbaren Cloud-/Abo-Bedingungen. Deshalb wird das Modell hier nur als **Ankündigung** geführt: keine kaufbare Produktseite, kein Affiliate-Link und keine Aufnahme in den Nassfutterautomaten-Vergleich.
 
 <!-- pt:content-discovery:manufacturer-products:start -->
 ## Weitere Produkte von PETKIT

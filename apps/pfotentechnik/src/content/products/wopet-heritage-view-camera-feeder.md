@@ -239,7 +239,12 @@ decisionFacts:
     consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
 comparisons:
   - "beste-futterautomaten-mit-kamera"
+experience:
+  summary: "Die Heritage View kombiniert 6 Liter Vorrat mit Kamera und Zwei-Wege-Audio. Sichtkontrolle am Napf ist kein sicherer Nachweis, welches Tier wie viel gefressen hat. Die Kamera trennt unterschiedliche Rationen nicht physisch."
+  reliability: "Am endgültigen Standort prüfen, ob Napf und Ausgabe auch während des Fressens im Bild liegen. Modellnummer, Lieferregion, App und Backup-Funktionen müssen zusammenpassen. Ein Kamerabild im Netzbetrieb belegt keine Kamerafunktion mit Reservebatterien."
+  maintenance: "Eine bestimmte Auflösung, Speicherkartengröße oder kostenlose Cloud-Aufzeichnung wird ohne passenden Variantenbeleg nicht vorausgesetzt. Für stärker dokumentierte Kameraoptionen sind Granary Camera und die PETKIT-YumShare-Modelle gesondert zu vergleichen."
 ---
+
 6-Liter-Futterautomat mit Kamera, App und Zwei-Wege-Audio für die Sichtkontrolle am Futterplatz.
 
 Eine Kamera-Alternative für große Vorräte, sofern die konkrete Heritage-View-Version in Deutschland verfügbar ist.

@@ -7,8 +7,8 @@ layout: "manufacturer"
 description: "Xiaomi Smart Pet im Überblick: Futterautomaten und Trinkbrunnen, App-Ökosystem, Zielgruppen, Filter, Ersatzteile und Alternativen."
 key: "xiaomi"
 name: "Xiaomi"
-recommendation: "Xiaomi entwickelt ein breites Smart-Home-Ökosystem und bietet mit seinen Smart Pet Produkten auch automatische Futterautomaten und weiteres intelligentes Haustierzubehör an. Im Mittelpunkt stehen die Integration in das Xiaomi-Ökosystem, eine moderne App sowie ein attraktives Preis-Leistungs-Verhältnis."
-summary: "Der Xiaomi Smart Pet Feeder wird häufig für seine Verarbeitung, den leisen Betrieb und die Integration in die Mi Home App gelobt. Kritik betrifft vor allem die geringe Produktauswahl und regionale Unterschiede einzelner App-Funktionen."
+recommendation: "Xiaomi ist vor allem dann interessant, wenn die dokumentierte Haustiertechnik in ein passendes Xiaomi-Home-Setup eingebunden werden soll. Beim Feeder 2 und Fountain 2 unterscheiden sich Aufgabe, Stromversorgung und Wartung deutlich."
+summary: "Der Smart Pet Food Feeder 2 ergänzt Trockenfutterplanung um Napfgewicht; der Smart Pet Fountain 2 erlaubt kabellose Aufstellung mit modellabhängigen Betriebsmodi. App-Region, Futterfreigabe und Filtergeneration müssen zum konkreten Gerät passen."
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-19"
 author:
@@ -64,15 +64,13 @@ attention:
   - "Nassfutter"
   - "Große Produktauswahl"
 strengths:
-  - "Sehr gutes Preis-Leistungs-Verhältnis"
-  - "Nahtlose Integration ins Xiaomi Smart Home"
-  - "Moderne Mi Home App"
-  - "Hochwertiges Design"
-  - "Leiser Betrieb"
+  - "Feeder 2 mit Gewichtserfassung am Napf"
+  - "Fountain 2 mit kabelloser Aufstellung"
+  - "Einbindung kompatibler Geräte in Xiaomi Home"
 weaknesses:
-  - "Kleines Sortiment im Haustierbereich"
-  - "Teilweise regionale Unterschiede bei der App"
-  - "Weniger Speziallösungen als Petlibro oder PETKIT"
+  - "Nicht jede Region oder Generation bietet denselben App-Umfang"
+  - "Gewichtserfassung identifiziert kein einzelnes Tier"
+  - "Filter und Zubehör sind generationsabhängig"
 productSlugs:
   - "xiaomi-smart-pet-food-feeder-2"
   - "xiaomi-smart-pet-fountain-2"
@@ -94,18 +92,14 @@ series:
       - "Smart-Home-Nutzer"
     productSlugs: []
 experience:
-  summary: "Der Xiaomi Smart Pet Feeder wird häufig für seine Verarbeitung, den leisen Betrieb und die Integration in die Mi Home App gelobt. Kritik betrifft vor allem die geringe Produktauswahl und regionale Unterschiede einzelner App-Funktionen."
+  summary: "Die Einordnung beruht auf den vorhandenen Modell- und Herstellerinformationen. Leiser Betrieb, Verarbeitung und Supportqualität werden nicht aus unbelegtem Käuferlob auf die gesamte Marke übertragen."
   positives:
-    - "Sehr leiser Betrieb"
-    - "Hochwertige Verarbeitung"
-    - "Gelungene Mi Home Integration"
-    - "Modernes Design"
-    - "Gutes Preis-Leistungs-Verhältnis"
+    - "Dokumentierte Napfgewichtsfunktion beim Feeder 2"
+    - "Unterschiedliche Betriebsmodi beim Fountain 2"
   criticism:
-    - "Nur wenige Haustierprodukte"
-    - "Regionale Unterschiede in der App"
-    - "Weniger Spezialfunktionen als Petlibro oder PETKIT"
-  support: "Der Support entspricht dem allgemeinen Xiaomi-Support. Viele Nutzer berichten von unkomplizierter Hilfe, allerdings erfolgt der Support nicht ausschließlich über eine Haustierproduktsparte."
+    - "Futtermenge im Napf ist kein sicherer individueller Fressnachweis"
+    - "App-Region und Gerätegeneration vor Kauf abgleichen"
+  support: "Xiaomi veröffentlicht regionale Garantiebedingungen. Ob der Hersteller oder Händler für ein konkretes Anliegen zuständig ist, hängt von Kaufregion und Vertriebsweg ab; eine geprüfte Support-Reaktionszeit liegt nicht vor."
 alternativeManufacturerSlugs:
   - "petlibro"
   - "petkit"
@@ -118,19 +112,13 @@ sources:
   - label: "Xiaomi Deutschland Gewährleistung"
     url: "https://www.mi.com/de/support/warranty/"
 faq:
-  - question: "Ist Xiaomi eine gute Marke für Futterautomaten?"
-    answer: "Ja. Xiaomi bietet hochwertige Smart-Futterautomaten mit sehr guter Integration in die Mi Home App und einem attraktiven Preis-Leistungs-Verhältnis."
-  - question: "Für wen eignet sich Xiaomi besonders?"
-    answer: "Vor allem für Nutzer, die bereits andere Xiaomi Smart-Home-Produkte verwenden."
-  - question: "Welche App nutzt Xiaomi?"
-    answer: "Alle Haustierprodukte werden über die Mi Home App verwaltet."
-  - question: "Wie sind die Erfahrungen mit dem Support?"
-    answer: "Die Erfahrungen entsprechen weitgehend dem allgemeinen Xiaomi-Kundendienst und werden überwiegend positiv bewertet."
-  - question: "Bietet Xiaomi mehrere Futterautomaten an?"
-    answer: "Aktuell konzentriert sich Xiaomi auf wenige Modelle und bietet ein deutlich kleineres Sortiment als spezialisierte Hersteller."
+  - question: "Wann passt Xiaomi Home als Kaufgrund?"
+    answer: "Wenn Modellversion, App-Region und vorhandenes Setup zusammenpassen. Eine ähnliche Produktbezeichnung belegt keine Kompatibilität."
+  - question: "Erkennt der Wiegenapf, welche Katze gefressen hat?"
+    answer: "Die erfasste Gewichtsfunktion zeigt den Napfinhalt. Sie ersetzt keine individuelle Identifikation oder Zugangssperre."
 ---
 
-Xiaomi entwickelt ein breites Smart-Home-Ökosystem und bietet mit seinen Smart Pet Produkten auch automatische Futterautomaten und weiteres intelligentes Haustierzubehör an. Im Mittelpunkt stehen die Integration in das Xiaomi-Ökosystem, eine moderne App sowie ein attraktives Preis-Leistungs-Verhältnis.
+Xiaomi ist vor allem dann interessant, wenn die dokumentierte Haustiertechnik in ein passendes Xiaomi-Home-Setup eingebunden werden soll. Beim Feeder 2 und Fountain 2 unterscheiden sich Aufgabe, Stromversorgung und Wartung deutlich.
 
 <!-- pt:content-discovery:manufacturer-products:start -->
 ## Weitere Produkte von Xiaomi

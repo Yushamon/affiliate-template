@@ -1,0 +1,20 @@
+{
+  "audit": "audit-recommendation-engine-4.mjs",
+  "result": "Existing failure; no new regression",
+  "checks": [
+    {
+      "file": "apps/pfotentechnik/src/pages/[slug].astro",
+      "marker": "buildMoneyPageNextSteps",
+      "presentBefore": false,
+      "presentAfter": false,
+      "fileUnchanged": true
+    },
+    {
+      "file": "apps/pfotentechnik/src/pages/hersteller/[manufacturer].astro",
+      "marker": "buildManufacturerNextSteps",
+      "presentBefore": false,
+      "presentAfter": false,
+      "fileUnchanged": true
+    }
+  ]
+}

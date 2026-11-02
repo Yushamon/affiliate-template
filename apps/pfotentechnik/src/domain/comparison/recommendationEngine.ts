@@ -164,10 +164,10 @@ export function buildAutomaticRecommendations({
     winnerSlug: winner?.product.data.slug,
     alternativeSlug: alternative?.product.data.slug,
     title: winner
-      ? `${winner.product.data.title} ist die stärkste Gesamtoption`
+      ? "Vorauswahl nach dokumentierter Eignung"
       : data.recommendation.title,
     text: winner
-      ? `Die automatische Einordnung berücksichtigt Produktbewertung, dokumentierte Eignung und die für diesen Vergleich relevanten Szenarien. ${winner.reason}`
+      ? "Die Vorauswahl berücksichtigt Produktbewertung, dokumentierte Eignung und Nutzungsszenarien. Sie ist kein eigener vergleichender Praxistest. Prüfe die konkreten Einsatz- und Ausschlusskriterien im Ratgeber, bevor du dich für eines der Modelle entscheidest."
       : data.recommendation.text,
     scenarios
   };

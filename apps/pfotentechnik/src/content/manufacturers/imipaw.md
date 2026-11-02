@@ -7,8 +7,8 @@ layout: "manufacturer"
 description: "IMIPAW im Überblick: einfache Futterautomaten für den Einstieg, Zielgruppen, Funktionen, Ersatzteile, Garantie und passende Alternativen."
 key: "imipaw"
 name: "IMIPAW"
-recommendation: "IMIPAW entwickelt automatische Futterautomaten und weiteres Haustierzubehör mit einem klaren Fokus auf einfache Bedienung und ein attraktives Preis-Leistungs-Verhältnis. Die Marke richtet sich vor allem an Tierhalter, die einen unkomplizierten Einstieg in automatische Fütterung suchen."
-summary: "IMIPAW wird häufig als unkomplizierte und preiswerte Lösung beschrieben. Käufer loben insbesondere die einfache Einrichtung und die zuverlässige Portionierung. Kritik richtet sich hauptsächlich gegen den geringeren Funktionsumfang im Vergleich zu Premium-Herstellern."
+recommendation: "IMIPAW ist im gepflegten Bestand mit einem lokalen 3-Liter-Trockenfutterautomaten vertreten. Er kommt infrage, wenn Zeitsteuerung am Gerät genügt und Fernkontrolle nicht benötigt wird."
+summary: "Der erfasste 3L Automatic Cat Feeder plant bis zu sechs Mahlzeiten am lokalen Bedienfeld. Er bietet weder Kamera noch App oder individuelle Tiererkennung. Die tatsächliche Grammmenge einer Portion muss mit dem verwendeten Futter geprüft werden."
 publishedAt: "2026-07-12"
 updatedAt: "2026-07-19"
 author:
@@ -62,15 +62,12 @@ attention:
   - "Kameraüberwachung"
   - "Smart-Home-Enthusiasten"
 strengths:
-  - "Einfache Einrichtung"
-  - "Attraktive Preise"
-  - "Leichte Bedienung"
-  - "Kompakte Bauweise"
+  - "Lokale Zeitplanung ohne WLAN"
+  - "Kompakter 3-Liter-Vorrat"
 weaknesses:
-  - "Kleines Produktsortiment"
-  - "Weniger Smart-Funktionen"
-  - "Geringe Markenbekanntheit"
-  - "Kaum Speziallösungen"
+  - "Keine Fernmeldung bei Störungen"
+  - "Keine Tiertrennung"
+  - "Keine unabhängig belegte markenweite Zuverlässigkeitsbewertung"
 productSlugs:
   - "imipaw-3l-automatic-cat-feeder"
 profile:
@@ -90,17 +87,14 @@ series:
       - "Preisbewusste Käufer"
     productSlugs: []
 experience:
-  summary: "IMIPAW wird häufig als unkomplizierte und preiswerte Lösung beschrieben. Käufer loben insbesondere die einfache Einrichtung und die zuverlässige Portionierung. Kritik richtet sich hauptsächlich gegen den geringeren Funktionsumfang im Vergleich zu Premium-Herstellern."
+  summary: "Die Aussagekraft beschränkt sich auf die dokumentierte 3-Liter-Version. Käuferlob und Supportqualität sind nicht ausreichend belegt, um sie auf die Marke zu übertragen."
   positives:
-    - "Sehr einfache Bedienung"
-    - "Leichte Einrichtung"
-    - "Gute Preis-Leistung"
-    - "Zuverlässige Portionierung"
+    - "Lokale Programmierung"
+    - "Kein Cloudkonto für den erfassten Offline-Betrieb"
   criticism:
-    - "Wenige Smart-Funktionen"
-    - "Kleines Produktsortiment"
-    - "Kaum Premiumfunktionen"
-  support: "Öffentliche Erfahrungen mit dem Support sind insgesamt positiv, allerdings existieren deutlich weniger Erfahrungsberichte als bei den großen Marken."
+    - "Krokettengröße und Mindestportion vor dem Alltagseinsatz testen"
+    - "Modellnummer und Verkäuferdokumentation abgleichen"
+  support: "Supportweg und Garantiebedingungen sind vor Kauf beim konkreten Anbieter zu klären. Die vorhandenen Links belegen keine unabhängig geprüfte Servicequalität."
 alternativeManufacturerSlugs:
   - "oneisall"
   - "wopet"
@@ -111,17 +105,13 @@ sources:
   - label: "IMIPAW Garantie"
     url: "https://imipaw.org/warranty/"
 faq:
-  - question: "Ist IMIPAW eine gute Marke?"
-    answer: "IMIPAW bietet solide automatische Futterautomaten mit einem guten Preis-Leistungs-Verhältnis und richtet sich vor allem an Einsteiger."
-  - question: "Für wen eignet sich IMIPAW?"
-    answer: "Vor allem für Katzenhalter und kleine Hunde, die einen unkomplizierten Futterautomaten ohne Premiumpreis suchen."
-  - question: "Wie sind die Erfahrungen mit dem Support?"
-    answer: "Die vorhandenen Erfahrungsberichte fallen überwiegend positiv aus, die Datenbasis ist jedoch deutlich kleiner als bei etablierten Premium-Herstellern."
-  - question: "Welche Alternative gibt es zu IMIPAW?"
-    answer: "Preislich ähnliche Alternativen sind oneisall oder WOPET. Wer mehr Smart-Funktionen sucht, sollte Petlibro oder PETKIT vergleichen."
+  - question: "Kann ich den IMIPAW von unterwegs kontrollieren?"
+    answer: "Der hier erfasste 3-Liter-Automat hat keine App. Geplante Mahlzeiten werden lokal eingestellt; Fernkontrolle und Störungsmeldungen sind damit nicht verfügbar."
+  - question: "Wann ist eine andere Bauart nötig?"
+    answer: "Für Nassfutter, geschützte Rationen oder eine Kamera am Napf ist dieses Modell nicht vorgesehen. Die benötigte Bauart sollte vor dem Preisvergleich feststehen."
 ---
 
-IMIPAW entwickelt automatische Futterautomaten und weiteres Haustierzubehör mit einem klaren Fokus auf einfache Bedienung und ein attraktives Preis-Leistungs-Verhältnis. Die Marke richtet sich vor allem an Tierhalter, die einen unkomplizierten Einstieg in automatische Fütterung suchen.
+IMIPAW ist im gepflegten Bestand mit einem lokalen 3-Liter-Trockenfutterautomaten vertreten. Er kommt infrage, wenn Zeitsteuerung am Gerät genügt und Fernkontrolle nicht benötigt wird.
 
 <!-- pt:content-discovery:manufacturer-products:start -->
 ## Weitere Produkte von IMIPAW

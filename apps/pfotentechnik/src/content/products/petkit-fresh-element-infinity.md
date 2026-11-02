@@ -232,7 +232,12 @@ decisionFacts:
   - label: "Batterie"
     value: "Nicht vom Hersteller ausgewiesen"
     consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+experience:
+  summary: "Der Infinity ist im Datensatz die 5-Liter-Bauart mit App und Napfwaage ohne Kamera. Eine Änderung des Napfinhalts ordnet die Aufnahme keinem einzelnen Tier sicher zu. Bei getrennten Diäten wird Zugangskontrolle statt allein einer Waage benötigt."
+  reliability: "Fresh Element Solo ist kompakter und ohne Waage; YumShare Dual-Hopper ergänzt Kamera und zwei Kammern, trennt die Tiere am gemeinsamen Napf aber ebenfalls nicht. Die dokumentierte Infinity-Stromreserve liefert ohne Betriebsmodus-Beleg keine garantierte Akkulaufzeit."
+  maintenance: "Konkrete Generation, App-Kompatibilität und entnehmbare Reinigungsteile vor Kauf abgleichen. Ersatzteile oder Reinigungsfreigaben nicht aus einer ähnlich benannten Fresh-Element-Generation übernehmen."
 ---
+
 Der PETKIT Fresh Element Infinity richtet sich an Haushalte, die einen größeren Trockenfuttervorrat, App-Steuerung und eine integrierte Napfwaage ohne Kamera benötigen.
 
 Eine sinnvolle PETKIT Alternative für größere Trockenfuttervorräte, wenn Kamera und Doppelkammersystem nicht benötigt werden.

@@ -96,127 +96,43 @@ criteria:
 automaticRecommendations:
   enabled: true
 recommendation:
-  title: Unsere Empfehlung für Beste Futterautomaten für Berufstätige
-  text: >-
-    Welche Futterautomaten eignen sich für Berufstätige? Unsere Empfehlungen für zuverlässige Fütterung während der
-    Arbeitszeit.
-  winnerSlug: petlibro-granary-wifi-feeder
-  alternativeSlug: xiaomi-smart-pet-food-feeder-2
+  title: "Zeitplan, Störung und erreichbare Betreuung zusammen planen"
+  text: "Für den Arbeitstag zählt, ob die gespeicherte Mahlzeit ohne laufende App ausgegeben wird und bei einer Störung jemand eingreifen kann. Kamera oder Push-Nachricht helfen bei der Kontrolle, beheben aber weder eine Blockade noch einen umgestoßenen Napf."
+  winnerSlug: "petlibro-granary-wifi-feeder"
+  alternativeSlug: "xiaomi-smart-pet-food-feeder-2"
 tableTitle: "Beste Futterautomaten für Berufstätige: direkter Vergleich"
 cardsTitle: Modelle und Einsatzgrenzen
 faq:
-  - question: Brauche ich zwingend einen Futterautomaten mit App?
-    answer: >-
-      Nein. Viele Nutzer kommen auch mit klassischen Zeitprogrammen sehr gut zurecht. Eine App erleichtert jedoch
-      spontane Änderungen.
-  - question: Kann ein Futterautomat mein Haustier tagsüber komplett versorgen?
-    answer: Ein Futterautomat sorgt für regelmäßige Mahlzeiten, ersetzt aber keine Betreuung oder Beschäftigung.
-  - question: Wie vergleichen wir Futterautomaten?
-    answer: >-
-      Wir trennen Portionierung, Futterkompatibilität, Napf, Reinigung, Stromreserve, Offline-Verhalten und
-      Zusatzfunktionen. Eine lange Funktionsliste ersetzt keine zuverlässige Ausgabe.
-  - question: Ist der größte Futterbehälter automatisch die beste Wahl?
-    answer: >-
-      Nein. Vorratsvolumen sagt nichts über Mindestportion, maximale Mahlzeit, Krokettengröße, Napfergonomie oder
-      Ausfallsicherheit aus.
-  - question: Wie prüfe ich die reale Portionsgröße?
-    answer: >-
-      Gib mehrere Portionseinheiten mit dem tatsächlich verwendeten Futter aus, wiege die Gesamtmenge und berechne den
-      Mittelwert. Nach einem Futterwechsel muss neu kalibriert werden.
-  - question: Beweist ein App-Protokoll, dass das Tier gefressen hat?
-    answer: >-
-      Nein. Ein Protokoll bestätigt meist nur eine geplante oder ausgelöste Ausgabe. Ohne sichere Tier- und
-      Mengenmessung ist es kein Fressnachweis.
-  - question: Braucht ein Futterautomat eine Stromreserve?
-    answer: >-
-      Eine Batterie- oder Akku-Reserve kann geplante Ausgaben bei Stromausfall absichern. Welche Funktionen im
-      Notbetrieb weiterlaufen, muss für das konkrete Modell geprüft werden.
-  - question: Wie oft werden die Vergleiche aktualisiert?
-    answer: >-
-      Produktdaten, Verfügbarkeit und wesentliche Funktionsänderungen werden regelmäßig geprüft. Die Vergleichsseite
-      nennt ihren aktuellen Datenstand.
+  - question: "Brauche ich zwingend einen Futterautomaten mit App?"
+    answer: "Nein. Viele Nutzer kommen auch mit klassischen Zeitprogrammen sehr gut zurecht. Eine App erleichtert jedoch spontane Änderungen."
+  - question: "Kann ein Futterautomat mein Haustier tagsüber komplett versorgen?"
+    answer: "Ein Futterautomat sorgt für regelmäßige Mahlzeiten, ersetzt aber keine Betreuung oder Beschäftigung."
+  - question: "Wie vergleichen wir Futterautomaten?"
+    answer: "Wir trennen Portionierung, Futterkompatibilität, Napf, Reinigung, Stromreserve, Offline-Verhalten und Zusatzfunktionen. Eine lange Funktionsliste ersetzt keine zuverlässige Ausgabe."
+  - question: "Ist der größte Futterbehälter automatisch die beste Wahl?"
+    answer: "Nein. Vorratsvolumen sagt nichts über Mindestportion, maximale Mahlzeit, Krokettengröße, Napfergonomie oder Ausfallsicherheit aus."
+  - question: "Wie prüfe ich die reale Portionsgröße?"
+    answer: "Gib mehrere Portionseinheiten mit dem tatsächlich verwendeten Futter aus, wiege die Gesamtmenge und berechne den Mittelwert. Nach einem Futterwechsel muss neu kalibriert werden."
+  - question: "Beweist ein App-Protokoll, dass das Tier gefressen hat?"
+    answer: "Nein. Ein Protokoll bestätigt meist nur eine geplante oder ausgelöste Ausgabe. Ohne sichere Tier- und Mengenmessung ist es kein Fressnachweis."
+  - question: "Braucht ein Futterautomat eine Stromreserve?"
+    answer: "Eine Batterie- oder Akku-Reserve kann geplante Ausgaben bei Stromausfall absichern. Welche Funktionen im Notbetrieb weiterlaufen, muss für das konkrete Modell geprüft werden."
 ---
 
 ## Kurzantwort
 
-Welche Futterautomaten eignen sich für Berufstätige? Unsere Empfehlungen für zuverlässige Fütterung während der Arbeitszeit.
+Für den Arbeitstag zählt, ob die gespeicherte Mahlzeit ohne laufende App ausgegeben wird und bei einer Störung jemand eingreifen kann. Kamera oder Push-Nachricht helfen bei der Kontrolle, beheben aber weder eine Blockade noch einen umgestoßenen Napf.
 
-## Welcher Futterautomat eignet sich für Berufstätige?
+## Welche Frage entscheidet zuerst?
 
-Für Berufstätige empfehlen sich zuverlässige Futterautomaten mit flexiblen Zeitplänen, einfacher Bedienung und optionaler App-Steuerung.
+| Arbeitssituation | Entscheidendes Kriterium |
+|---|---|
+| Feste Abwesenheit | gespeicherter Zeitplan und reproduzierbare Tagesration |
+| Wechselnde Schichten | verständliche Planänderung ohne doppelte Ausgaben |
+| Schlechte Erreichbarkeit | vor Ort erreichbare Betreuung statt Vertrauen auf Push allein |
+| Mehrere Tiere | getrennte Rationen vor App-Komfort klären |
 
-## Darauf solltest du achten
-
-Eine zuverlässige Fütterung ist im Arbeitsalltag wichtiger als möglichst viele Zusatzfunktionen.
-
-Viele Hunde und Katzen verbringen werktags mehrere Stunden allein zu Hause. Ein automatischer Futterautomat hilft dabei, regelmäßige Mahlzeiten zuverlässig bereitzustellen und den Alltag planbarer zu gestalten.
-
-## Unsere Empfehlung auf einen Blick
-
-Für Berufstätige stehen Zuverlässigkeit, flexible Zeitpläne und eine einfache Bedienung im Vordergrund. Die Produktauswahl oberhalb dieses Ratgebers wird automatisch anhand unserer Bewertungsregeln zusammengestellt.
-
-## Entscheidungshilfe
-
-Ein Futterautomat lohnt sich besonders, wenn:
-
-* dein Haustier regelmäßig mehrere Stunden allein ist
-* feste Fütterungszeiten wichtig sind
-* mehrere Personen den Fütterungsplan nutzen
-* spontane Anpassungen möglich sein sollen
-
-## Worauf kommt es im Arbeitsalltag an?
-
-Während der Arbeitszeit sollte ein Futterautomat vor allem zuverlässig funktionieren. Kleine Komfortfunktionen sind hilfreich, aber nicht entscheidend.
-
-| Kriterium | Warum wichtig |
-| --- | --- |
-| Zuverlässigkeit | Mahlzeiten müssen auch während der Arbeit zuverlässig ausgegeben werden. |
-| App-Steuerung | Änderungen lassen sich auch unterwegs vornehmen. |
-| Portionierung | Gleichmäßige Fütterung unterstützt feste Routinen. |
-| Reinigung | Wenig Aufwand im Alltag. |
-
-## So bewerten wir Futterautomaten für Berufstätige
-
-Bei diesem Vergleich gewichten wir insbesondere:
-
-* Zuverlässigkeit
-* App-Steuerung
-* Portionierung
-* Reinigung
-* Sicherheit
-
-## Für wen lohnt sich ein Futterautomat?
-
-Besonders sinnvoll für:
-
-* Berufstätige
-* Pendler
-* Homeoffice mit wechselnden Arbeitszeiten
-* Familien
-* Alleinlebende Haustierhalter
-
-## Wann ist ein Futterautomat keine gute Lösung?
-
-Ein Futterautomat ersetzt keine Betreuung.
-
-Gerade junge Tiere, kranke Tiere oder Haustiere mit auffälligem Fressverhalten sollten weiterhin regelmäßig beobachtet werden.
-
-## Weitere passende Ratgeber
-
-* [Smarte Futterautomaten im Vergleich](/smarte-futterautomaten/)
-* [Futterautomat mit App](/vergleiche/futterautomat-mit-app/)
-* [Beste Futterautomaten für kleine Hunde](/vergleiche/beste-futterautomaten-fuer-kleine-hunde/)
-* [Beste Futterautomaten unter 100 Euro](/vergleiche/beste-futterautomaten-unter-100-euro/)
-
-## Fazit
-
-Für Berufstätige ist vor allem wichtig, dass der Futterautomat zuverlässig arbeitet und den Alltag planbarer macht. Eine gute App kann zusätzlichen Komfort bieten, entscheidend bleibt jedoch eine sichere und gleichmäßige Fütterung.
-
-## Quellen
-
-- Produktdatenblätter und Bedienungsanleitungen der aufgenommenen Modelle
-- [FEDIAF Nutritional Guidelines](https://europeanpetfood.org/self-regulation/nutritional-guidelines/)
-- [WSAVA Global Nutrition Guidelines](https://wsava.org/global-guidelines/global-nutrition-guidelines/)
+Dieser Vergleich organisiert die Fütterung während eines betreuten Arbeitstags. Der [Akkuvergleich](/vergleiche/beste-futterautomaten-mit-akku/) prüft dagegen die Stromversorgung; die [Urlaubsplanung](/futterautomat-im-urlaub/) umfasst die gesamte Betreuung.
 
 ## Welches Modell passt zu welchem Arbeitstag?
 
@@ -236,3 +152,7 @@ Der **PetSafe Smart Feed 2** ist die passendere Wahl für größere Einzelmahlze
 ## Praxistipp für Schichtarbeit
 
 Lege nicht für jede Schicht einen komplett neuen Wochenplan an. Besser sind zwei getestete Profile mit eindeutigem Namen, zum Beispiel „Frühdienst“ und „Spätdienst“. Wiege bei beiden Profilen die gesamte Tagesausgabe, nicht nur eine Einzelportion. So fällt auf, wenn sich durch Rundung oder doppelt hinterlegte Mahlzeiten unbemerkt die Tagesration verändert.
+
+## Datengrundlage
+
+Für den Arbeitstag werden die gespeicherten Modellangaben von Granary WiFi, Xiaomi Feeder 2 und PetSafe Smart Feed 2 zu Plan, Stromreserve und Futterweg getrennt gelesen. Der [Ausfallratgeber](/futterautomat-bei-stromausfall/) erklärt den nötigen Funktionstest; eine höhere Ausfallsicherheit wurde nicht selbst gemessen.

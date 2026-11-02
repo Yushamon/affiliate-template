@@ -7,7 +7,7 @@ key: "pettec"
 name: "PetTec"
 description: "PetTec als Anbieter von Haustierkameras mit lokaler und optionaler Cloud-Speicherung."
 recommendation: "PetTec ist im Cluster relevant, wenn lokale microSD-Aufzeichnung und Grundfunktionen ohne Pflichtabo gesucht werden."
-summary: "Die Herstellerroute stellt die gültige Produktzuordnung her und bewertet keine DSGVO-Aussage rechtlich."
+summary: "Die Cam 360 kann für einen festen Innenbereich mit lokaler microSD-Aufzeichnung interessant sein. Optionale Cloud-Funktionen, Kontozugang und Aufstellung sollten getrennt geprüft werden; eine eigene rechtliche Prüfung der Hersteller-Datenschutzaussagen liegt nicht vor."
 publishedAt: "2026-08-15"
 updatedAt: "2026-08-15"
 author:

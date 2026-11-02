@@ -7,7 +7,7 @@ description: "Whisker im Überblick: Litter-Robot, App, Kamera- und optionale Wh
 key: "whisker"
 name: "Whisker"
 recommendation: "Whisker ist für geschlossene Premium-Katzentoiletten mit App- und Kameraauswertung relevant."
-summary: "Litter-Robot 5 Pro vertritt im Startcluster die geschlossene Dualkamera-Klasse."
+summary: "Litter-Robot 4 und 5 Pro sind unterschiedliche Whisker-Generationen. Der 4er ist die dokumentierte geschlossene Plattform ohne Dualkamera; der 5 Pro ergänzt Kameraauswertung und optionale Dienste. Einstiegshöhe, Tiergrenzen und Stellfläche sind modellbezogen zu prüfen."
 publishedAt: "2026-08-06"
 updatedAt: "2026-08-16"
 tags: ["hersteller", "whisker", "automatische-katzentoiletten"]

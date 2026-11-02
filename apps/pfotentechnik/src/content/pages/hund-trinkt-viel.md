@@ -43,6 +43,8 @@ Trinkt ein Hund deutlich mehr als sonst, prüfe zuerst Hitze, Bewegung, Futterwe
 
 Ein objektives 24-Stunden-Protokoll ist aussagekräftiger als der Eindruck „der Napf ist ständig leer“.
 
+Wenn der Durst erst seit heute deutlich verändert ist, hilft die [Akut-Einordnung](/hund-trinkt-ploetzlich-viel/) bei der Entscheidung über den nächsten Kontakt. Hier steht die längerfristige Beobachtung mit Trinkmenge, Futter und Urinabsatz im Mittelpunkt.
+
 ## Häufige Einordnungen
 
 Diese Kombinationen helfen bei der ersten Orientierung:

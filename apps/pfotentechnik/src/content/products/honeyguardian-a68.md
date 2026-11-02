@@ -228,8 +228,12 @@ decisionFacts:
   - label: "Gewicht"
     value: "Nicht vom Hersteller ausgewiesen"
     consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
+experience:
+  summary: "Der A68 verbindet 6 Liter Vorrat mit App-Zeitplanung für Trockenfutter. Kamera und individuelle Tiererkennung gehören nicht zum erfassten Funktionsumfang. Ein größerer Behälter belegt weder eine passende Mindestportion noch eine große Einzelmahlzeit für einen Hund."
+  reliability: "Der Datensatz nennt 2,4-GHz-WLAN und Batterie-Backup, bestätigt aber nicht alle App- und Meldefunktionen im Reservemodus. Prüfe die geplante Ausgabe und den Zustand nach Rückkehr des Netzstroms, statt Fernzugriff ohne Netzstrom vorauszusetzen."
+  maintenance: "Wiege die kleinste und größte benötigte Mahlzeit mit dem eigenen Futter. Nach Futterwechsel neu kalibrieren und den zugänglichen Futterkanal prüfen. Reicht eine kleinere dokumentierte App-Lösung, lohnt der Vergleich mit dem Granary WiFi."
 ---
+
 Der HoneyGuardian A68 kombiniert einen großen Vorratsbehälter mit App-Steuerung und eignet sich besonders für Katzen sowie kleine bis mittelgroße Hunde.
 
 Eine sehr gute Wahl für alle, die einen großen WLAN-Futterautomaten ohne Kamera suchen.
-

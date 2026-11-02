@@ -79,8 +79,8 @@ test('network failure and redirect loop fail closed', async () => {
 test('built release retains legacy rules and excludes the new error page from sitemap', () => {
   const root=new URL('../',import.meta.url);
   const rules=readLegacyRules(fs.readFileSync(new URL('public/_redirects',root),'utf8'));
-  // Phase A adds slash and non-slash advisor aliases to the 68 existing rules.
-  assert.equal(rules.length,70);
+  // 35.3B adds 26 historical malformed-canonical variants to the 70 existing rules.
+  assert.equal(rules.length,96);
   assert.ok(rules.some(r=>r.source==='/produkt/petkit-yumshare-solo/'&&r.target===paths[1]&&r.status===301));
   const page=fs.readFileSync(new URL('src/pages/404.astro',root),'utf8');
   assert.match(page,/noindex=\{true\}/);

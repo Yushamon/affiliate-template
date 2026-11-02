@@ -114,12 +114,10 @@ criteria:
 automaticRecommendations:
   enabled: true
 recommendation:
-  title: DOG 6 XL bietet die längste Mobilfunk-Maximalangabe
-  text: >-
-    Bis zu sechs Wochen gelten mit Energiesparzonen und nur für Hunde ab 20 kg. Für kleinere Tiere ist ein kürzer
-    laufender, passender Tracker die bessere Sicherheitsentscheidung.
-  winnerSlug: tractive-dog-6-xl
-  alternativeSlug: weenect-xt
+  title: "Laufzeit nur im passenden Tier- und Betriebsprofil bewerten"
+  text: "Die Vorauswahl ist keine gemessene Akkurangliste. Gleiche Betriebsart, Tiergröße und Netzbedingungen sind Voraussetzung für einen sinnvollen Laufzeitvergleich. Die höchste Hersteller-Maximalangabe allein macht einen Tracker nicht für jedes Tier geeignet."
+  winnerSlug: "tractive-dog-6-xl"
+  alternativeSlug: "weenect-xt"
 tableTitle: Sieben Tracker mit offengelegten Laufzeitbedingungen
 cardsTitle: Laufzeit nach Tier und System
 faq:
@@ -176,7 +174,7 @@ Für Hunde entscheidet der [Hunde-GPS-Vergleich](/vergleiche/beste-gps-tracker-f
 
 ## Unsere Empfehlung
 
-Unsere stärkste Empfehlung in diesem Vergleich ist **Tractive DOG 6 XL**. Bis zu sechs Wochen gelten mit Energiesparzonen und nur für Hunde ab 20 kg. Für kleinere Tiere ist ein kürzer laufender, passender Tracker die bessere Sicherheitsentscheidung.
+Die größte dokumentierte Mobilfunk-Maximalangabe im Feld stammt vom **Tractive DOG 6 XL**: bis zu sechs Wochen mit Energiesparzonen für Hunde ab 20 kg. Das ist kein gemessener Gesamtsieg und keine Aussage über die Laufzeit der oben gezeigten Finalisten. Für kleinere Tiere entscheiden Passform und eine passende Betriebsart vor der höchsten Werbezahl.
 
 ## Für wen geeignet
 

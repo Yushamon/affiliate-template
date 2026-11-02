@@ -94,124 +94,43 @@ criteria:
 automaticRecommendations:
   enabled: true
 recommendation:
-  title: Unsere Empfehlung für Futterautomat gegen Schlingen
-  text: Welche Futterautomaten helfen Hunden und Katzen, langsamer zu fressen? Unsere Empfehlungen und Alternativen.
-  winnerSlug: petsafe-healthy-pet-simply-feed
-  alternativeSlug: petlibro-granary-wifi-feeder
+  title: "Langsame Ausgabe und tatsächliches Fresstempo getrennt prüfen"
+  text: "Ein Automat kann die Tagesration zeitlich aufteilen. Das allein verhindert nicht, dass ein Hund jede Teilportion hastig verschlingt. Der dokumentierte Slow-Feed-Modus des PetSafe verteilt eine Mahlzeit über längere Zeit; bei anderen Modellen sind viele kleine Mahlzeiten nicht automatisch dieselbe Funktion."
+  winnerSlug: "petsafe-healthy-pet-simply-feed"
+  alternativeSlug: "petlibro-granary-wifi-feeder"
 tableTitle: "Futterautomat gegen Schlingen: direkter Vergleich"
 cardsTitle: Modelle und Einsatzgrenzen
 faq:
-  - question: Hilft ein Futterautomat wirklich gegen Schlingen?
-    answer: >-
-      Er kann das Schlingen reduzieren, indem mehrere kleine Mahlzeiten ausgegeben werden. Gegen sehr schnelles Fressen
-      während einer Mahlzeit hilft häufig ein Slow Feeder besser.
-  - question: Ist ein Slow Feeder sinnvoller?
-    answer: >-
-      Bei Hunden oder Katzen, die ihr Futter innerhalb weniger Sekunden aufnehmen, ist ein Slow Feeder häufig die
-      effektivere Lösung.
-  - question: Wie vergleichen wir Futterautomaten?
-    answer: >-
-      Wir trennen Portionierung, Futterkompatibilität, Napf, Reinigung, Stromreserve, Offline-Verhalten und
-      Zusatzfunktionen. Eine lange Funktionsliste ersetzt keine zuverlässige Ausgabe.
-  - question: Ist der größte Futterbehälter automatisch die beste Wahl?
-    answer: >-
-      Nein. Vorratsvolumen sagt nichts über Mindestportion, maximale Mahlzeit, Krokettengröße, Napfergonomie oder
-      Ausfallsicherheit aus.
-  - question: Wie prüfe ich die reale Portionsgröße?
-    answer: >-
-      Gib mehrere Portionseinheiten mit dem tatsächlich verwendeten Futter aus, wiege die Gesamtmenge und berechne den
-      Mittelwert. Nach einem Futterwechsel muss neu kalibriert werden.
-  - question: Beweist ein App-Protokoll, dass das Tier gefressen hat?
-    answer: >-
-      Nein. Ein Protokoll bestätigt meist nur eine geplante oder ausgelöste Ausgabe. Ohne sichere Tier- und
-      Mengenmessung ist es kein Fressnachweis.
-  - question: Braucht ein Futterautomat eine Stromreserve?
-    answer: >-
-      Eine Batterie- oder Akku-Reserve kann geplante Ausgaben bei Stromausfall absichern. Welche Funktionen im
-      Notbetrieb weiterlaufen, muss für das konkrete Modell geprüft werden.
-  - question: Wie oft werden die Vergleiche aktualisiert?
-    answer: >-
-      Produktdaten, Verfügbarkeit und wesentliche Funktionsänderungen werden regelmäßig geprüft. Die Vergleichsseite
-      nennt ihren aktuellen Datenstand.
+  - question: "Hilft ein Futterautomat wirklich gegen Schlingen?"
+    answer: "Er kann das Schlingen reduzieren, indem mehrere kleine Mahlzeiten ausgegeben werden. Gegen sehr schnelles Fressen während einer Mahlzeit hilft häufig ein Slow Feeder besser."
+  - question: "Ist ein Slow Feeder sinnvoller?"
+    answer: "Bei Hunden oder Katzen, die ihr Futter innerhalb weniger Sekunden aufnehmen, ist ein Slow Feeder häufig die effektivere Lösung."
+  - question: "Wie vergleichen wir Futterautomaten?"
+    answer: "Wir trennen Portionierung, Futterkompatibilität, Napf, Reinigung, Stromreserve, Offline-Verhalten und Zusatzfunktionen. Eine lange Funktionsliste ersetzt keine zuverlässige Ausgabe."
+  - question: "Ist der größte Futterbehälter automatisch die beste Wahl?"
+    answer: "Nein. Vorratsvolumen sagt nichts über Mindestportion, maximale Mahlzeit, Krokettengröße, Napfergonomie oder Ausfallsicherheit aus."
+  - question: "Wie prüfe ich die reale Portionsgröße?"
+    answer: "Gib mehrere Portionseinheiten mit dem tatsächlich verwendeten Futter aus, wiege die Gesamtmenge und berechne den Mittelwert. Nach einem Futterwechsel muss neu kalibriert werden."
+  - question: "Beweist ein App-Protokoll, dass das Tier gefressen hat?"
+    answer: "Nein. Ein Protokoll bestätigt meist nur eine geplante oder ausgelöste Ausgabe. Ohne sichere Tier- und Mengenmessung ist es kein Fressnachweis."
+  - question: "Braucht ein Futterautomat eine Stromreserve?"
+    answer: "Eine Batterie- oder Akku-Reserve kann geplante Ausgaben bei Stromausfall absichern. Welche Funktionen im Notbetrieb weiterlaufen, muss für das konkrete Modell geprüft werden."
 ---
 
 ## Kurzantwort
 
-Welche Futterautomaten helfen Hunden und Katzen, langsamer zu fressen? Unsere Empfehlungen und Alternativen.
+Ein Automat kann die Tagesration zeitlich aufteilen. Das allein verhindert nicht, dass ein Hund jede Teilportion hastig verschlingt. Der dokumentierte Slow-Feed-Modus des PetSafe verteilt eine Mahlzeit über längere Zeit; bei anderen Modellen sind viele kleine Mahlzeiten nicht automatisch dieselbe Funktion.
 
-## Hilft ein Futterautomat gegen Schlingen?
+## Welche Aufgabe soll die Technik lösen?
 
-Ein Futterautomat kann helfen, wenn mehrere kleine Mahlzeiten über den Tag verteilt werden. Gegen sehr schnelles Fressen ist ein Slow Feeder jedoch häufig die bessere Lösung.
+| Beobachtung | Sinnvolle Prüfung |
+|---|---|
+| Lange Pausen, danach hastiges Fressen | dieselbe Tagesration auf passende Zeitfenster verteilen |
+| Hastiges Fressen jeder Einzelportion | erreichbaren Napf und geeignete langsamere Ausgabe prüfen |
+| Konkurrenz am Napf | getrennte Futterplätze statt zusätzlicher Portionen |
+| Beschwerden beim Fressen | tierärztliche Abklärung statt Gerätekauf als Behandlung |
 
-## Darauf solltest du achten
-
-Achte auf kleine Portionen, zuverlässige Ausgabe und einen gleichmäßigen Fütterungsrhythmus.
-
-Viele Hunde und Katzen verschlingen ihr Futter innerhalb kürzester Zeit. Ein Futterautomat kann dabei helfen, die tägliche Futtermenge auf mehrere kleinere Mahlzeiten zu verteilen und dadurch längere Fresspausen zu vermeiden.
-
-## Unsere Empfehlung auf einen Blick
-
-Nicht jeder Futterautomat eignet sich gegen Schlingen. Besonders wichtig sind Modelle mit einer zuverlässigen Portionierung und flexiblen Zeitplänen.
-
-## Entscheidungshilfe
-
-Ein Futterautomat kann sinnvoll sein, wenn:
-
-* dein Tier mehrere kleine Mahlzeiten erhalten soll
-* feste Fütterungszeiten wichtig sind
-* Übergewicht vermieden werden soll
-* längere Fresspausen reduziert werden sollen
-
-## Worauf kommt es an?
-
-| Kriterium | Warum wichtig |
-| --- | --- |
-| Portionierungsgenauigkeit | Kleine Mahlzeiten sind entscheidend. |
-| Zuverlässigkeit | Jede Mahlzeit muss zuverlässig ausgegeben werden. |
-| Reinigung | Saubere Futternäpfe unterstützen die Hygiene. |
-| Sicherheit | Gleichmäßige Fütterung ohne Fehlportionen. |
-
-## So bewerten wir Futterautomaten
-
-Unsere Bewertung legt besonderes Gewicht auf:
-
-* Portionierung
-* Zuverlässigkeit
-* Sicherheit
-* Reinigung
-* Alltagstauglichkeit
-
-## Für wen eignet sich ein Futterautomat?
-
-* Hunde mit kontrollierter Fütterung
-* Katzen mit mehreren kleinen Mahlzeiten
-* Tiere mit Gewichtsmanagement
-* Berufstätige Tierhalter
-
-## Wann reicht ein Futterautomat nicht aus?
-
-Ein Futterautomat verändert nicht die Geschwindigkeit, mit der eine einzelne Mahlzeit aufgenommen wird.
-
-Frisst dein Tier extrem schnell, ist ein Slow Feeder oft die bessere Wahl.
-
-Bei gesundheitlichen Problemen solltest du das Fressverhalten tierärztlich abklären lassen.
-
-## Weitere passende Ratgeber
-
-* [Smarte Futterautomaten im Vergleich](/smarte-futterautomaten/)
-* [Beste Futterautomaten für kleine Hunde](/vergleiche/beste-futterautomaten-fuer-kleine-hunde/)
-* [Beste Futterautomaten für Berufstätige](/vergleiche/beste-futterautomaten-fuer-berufstaetige/)
-* [Wie viele Mahlzeiten braucht ein Hund?](/wie-viele-mahlzeiten-hund/)
-
-## Fazit
-
-Ein Futterautomat kann helfen, die tägliche Futtermenge sinnvoll aufzuteilen. Gegen starkes Schlingen ist jedoch häufig ein Slow Feeder oder eine Kombination aus beiden Lösungen die bessere Wahl.
-
-## Quellen
-
-- Produktdatenblätter und Bedienungsanleitungen der aufgenommenen Modelle
-- [FEDIAF Nutritional Guidelines](https://europeanpetfood.org/self-regulation/nutritional-guidelines/)
-- [WSAVA Global Nutrition Guidelines](https://wsava.org/global-guidelines/global-nutrition-guidelines/)
+Die Auswahl ist eine technische Entscheidungshilfe, kein Nachweis einer medizinischen Wirkung und keine Zusage, dass ein bestimmtes Gerät Folgeerkrankungen verhindert.
 
 ## PetSafe oder viele kleine Einzelmahlzeiten?
 
@@ -231,3 +150,7 @@ Der **PETLIBRO Granary WiFi** und der **Xiaomi Smart Pet Food Feeder 2** passen 
 Der häufigste Fehlkauf ist ein beliebiger Zeitautomat mit dem Etikett „Portionskontrolle“. Kleine Portionen sind nicht automatisch langsame Portionen. Ebenso problematisch ist es, die Tagesration einfach zu erhöhen, weil einzelne Förderstufen schwanken. Kalibriere zuerst die Grammmenge und verteile dann dieselbe Tagesration neu.
 
 Für einen Praxistest filmst du eine normale Mahlzeit und misst die Zeit vom ersten Bissen bis zum leeren Napf. Wiederhole das mit Slow-Feed-Modus oder mehreren Teilportionen. Nur wenn sich das Fressmuster tatsächlich verändert, löst der Automat das konkrete Problem.
+
+## Datengrundlage
+
+Der Slow-Feed-Hinweis stammt aus dem gespeicherten PetSafe-Simply-Feed-Datensatz. Er wird nicht auf jeden Automaten mit mehreren Tagesmahlzeiten übertragen. Die [Portionseinstellung](/welche-portionsgroesse-ist-richtig/) hilft bei der technischen Kalibrierung; für die Ursache von Beschwerden ist die Tierarztpraxis zuständig.

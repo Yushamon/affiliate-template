@@ -290,7 +290,19 @@ offers:
     variantLabel: "1 Paket / Schwarz"
     lastAttemptAt: "2026-11-02T08:10:37.588Z"
     availabilityUpdated: "2026-11-02T08:10:37.588Z"
+experience:
+  summary: "Ein Gerät koppelt laut Hersteller nur einen RFID-Anhänger. Ein einzelner One RFID ist deshalb keine zentrale Station für mehrere individuell berechtigte Katzen. Für mehrere getrennt geschützte Rationen muss die benötigte Gerätezahl mitgeplant werden."
+  reliability: "Der One liest den passenden Halsbandanhänger, nicht den implantierten Mikrochip. Halsband- und Deckelakzeptanz sowie seitliches Mitfressen anderer Tiere müssen beobachtet werden. RFID-Zugang garantiert nicht, dass jedes Konkurrenzverhalten ausgeschlossen ist."
+  maintenance: "Portionen mit geeignetem Trockenfutter kalibrieren. Ein SureFeed-Napf kann implantierte Chips und vorbereitete Nassfutterrationen nutzen, gibt aber keine späteren Portionen aus einem Vorrat aus. Granary Dual schafft zwei offene Plätze ohne Zugangsschutz."
+evidenceSources:
+  - source: "PETLIBRO – One RFID"
+    url: "https://petlibro.com/pages/one-rfid-pet-feeder"
+    accessedAt: "2026-11-02"
+    assertion: "Ein Gerät kann nur einen RFID-Halsbandanhänger koppeln; der Leser erkennt den Anhänger und keinen implantierten Mikrochip."
+    fields:
+      - "experience"
 ---
+
 Der PETLIBRO One RFID Smart Feeder kombiniert automatische Fütterung mit einem geschützten Napfzugang und eignet sich ideal für Mehrkatzenhaushalte.
 
 Eine der besten Lösungen für Mehrkatzenhaushalte, wenn jedes Tier zuverlässig nur sein eigenes Futter erhalten soll.

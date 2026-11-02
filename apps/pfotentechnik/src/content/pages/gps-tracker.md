@@ -183,7 +183,7 @@ faq:
   - question: "Brauchen GPS-Tracker ein Abo?"
     answer: "Mobilfunktracker meist ja, weil integrierte SIM, Datenübertragung, Server, Karten und App-Betrieb laufende Kosten verursachen. PAJ enthält zunächst 27 Monate Dienst; Tractive und Weenect verlangen ein Abo pro Tracker. Garmin-VHF-Systeme brauchen kein Mobilfunkabo, dafür aber ein kostspieliges kompatibles Handgerät."
   - question: "Welcher Tracker ist für kleine Katzen geeignet?"
-    answer: "Weenect XS ist für Katzen ab 3 kg ausgewiesen und wiegt als Gerät 27 g. Tractive CAT 6 Mini ist für 3 bis 8 kg vorgesehen und wiegt rund 31 g inklusive Halsband. Diese Werte sind nicht direkt vergleichbar; Sicherheitsöffnung, Halsumfang und individuelles Verhalten entscheiden mit."
+    answer: "Weenect XS ist für Katzen ab 3 kg ausgewiesen und wiegt als Gerät 27 g. Tractive CAT 6 Mini ist für 3 bis 8 kg vorgesehen und wiegt rund 32 g inklusive Halsband. Diese Werte sind nicht direkt vergleichbar; Sicherheitsöffnung, Halsumfang und individuelles Verhalten entscheiden mit."
   - question: "Welcher Tracker ist für kleine Hunde geeignet?"
     answer: "Weenect XS und PAJ PET Finder 4G Mini werden für Hunde ab 3 kg genannt, Tractive DOG 6 für Hunde über 4 kg. Neben Körpergewicht müssen Befestigung, Bandbreite, Gehäuseform und Bewegungsverhalten passen. Herstellergrenzen sind Mindestvoraussetzungen, keine Komfortgarantie."
   - question: "Wie lange hält der Akku?"

@@ -233,7 +233,12 @@ decisionFacts:
   - label: "WLAN"
     value: "Nein"
     consequence: "Die Nutzung bleibt unabhängiger von Konto, Cloud und WLAN."
+experience:
+  summary: "Zwei Näpfe passen zu zwei friedlich fressenden Tieren mit demselben Futter. Der A305D erkennt keine Tieridentität. Für unterschiedliche Diäten braucht es räumliche Trennung oder geschützten Zugang; ein SureFeed-Napf dosiert allerdings nicht selbst aus einem Vorrat."
+  reliability: "Wiege die Ausgabe beider Seiten getrennt und beobachte, ob ein Tier beide Näpfe leert. Ein bis 24 Portionseinheiten ergeben keine feste Grammmenge. Ohne App können Störungen nicht von unterwegs kontrolliert werden."
+  maintenance: "Timer und Batteriestatus vor Abwesenheit prüfen. Reinigung und Entnahme von Bauteilen nur gemäß passender Anleitung; aus Edelstahl-Näpfen folgt keine Spülmaschinenfreigabe für das ganze Gerät."
 ---
+
 Der HoneyGuardian A305D ist ein großer Futterautomat mit zwei Näpfen und lokaler Zeitsteuerung. Er eignet sich besonders für zwei Katzen mit ähnlichem Futterbedarf, wenn keine App benötigt wird.
 
 Eine gute Offline-Lösung für zwei friedlich fressende Tiere, sofern beide dieselbe Futtersorte und ähnliche Mengen erhalten.

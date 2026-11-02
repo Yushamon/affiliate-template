@@ -244,7 +244,12 @@ decisionFacts:
   - label: "Stromversorgung"
     value: "USB C Netzteil mit Batterie Backup"
     consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+experience:
+  summary: "Der Cube Air CA10 ist ein 4-Liter-App-Automat ohne Kamera. Der Name Air bezeichnet keine gemeinsame Plattform mit dem PETLIBRO Air WiFi. Beim WOPET ist Netzversorgung mit Batterie-Backup dokumentiert, kein regulärer Betrieb mit dessen integriertem Ladeakku."
+  reliability: "Ein bis acht Portionseinheiten und etwa zehn Gramm je Einheit sind keine garantierte Grammmenge für jedes Futter. Ist die kleinste Ausgabe zu groß, kann ein anderer Zeitplan das nicht korrigieren. App-Meldungen im Backup müssen separat bestätigt werden."
+  maintenance: "Nach Futterwechsel mehrere Ausgaben wiegen und den Förderweg kontrollieren. Der Langsam-Fütterungsmodus ist kein medizinischer Wirksamkeitsnachweis gegen Schlingen; beobachte das tatsächliche Fressverhalten."
 ---
+
 Der WOPET Cube Air CA10 ist ein kompakter WLAN Futterautomat mit App Steuerung, Langsam Fütterungsmodus und flexiblem Zeitplan für Katzen und kleine Hunde.
 
 Eine attraktive WOPET Alternative für preisbewusste Nutzer, die App Steuerung, kleine Portionen und einen kompakten 4 Liter Vorrat miteinander kombinieren möchten.

@@ -69,11 +69,9 @@ attention:
   - "Kameraüberwachung im aktuellen PfotenTechnik-Bestand nicht abgedeckt"
   - "Filter, Pumpen und Stromversorgung unterscheiden sich je nach Brunnenmodell"
 strengths:
-  - "Attraktives Preis-Leistungs-Verhältnis"
-  - "Mehrere Akku- und Sensor-Trinkbrunnen"
-  - "Große Kapazitäten bis 7 Liter im gepflegten Bestand"
-  - "Einfache Bedienung"
-  - "Modelle für Katzen und Hunde"
+  - "Akku- und Sensor-Trinkbrunnen im erfassten Bestand"
+  - "7-Liter-Hundebrunnen als eigene Größenklasse"
+  - "Futterautomat mit zwei Näpfen"
 weaknesses:
   - "Kein konsistentes App- und Datenökosystem über alle Modelle"
   - "Weniger Premiumfunktionen wie RFID oder integrierte Kamera"
@@ -132,18 +130,16 @@ series:
     productSlugs:
       - "oneisall-7l-dog-water-fountain"
 experience:
-  summary: "Die aktuelle PfotenTechnik-Einordnung stützt sich auf die gepflegten oneisall-Produktdaten und trennt Futterautomaten von Akku- und Sensor-Trinkbrunnen. Besonders relevant sind der 7L Dog Water Fountain, der 3,5L Cordless Fountain, der 5L Automatic Cat Feeder und die 2-in-1-Lösung. Der Markenvergleich sollte deshalb über Kapazität, Stromversorgung und Einsatzzweck laufen, nicht über eine pauschale Qualitätsaussage."
+  summary: "Die Modellwahl trennt Akku-Brunnen, netzbetriebenen 7-Liter-Brunnen und lokale Futterautomaten. Eine einheitliche App oder pauschale Qualitätsbewertung lässt sich daraus nicht ableiten."
   positives:
-    - "Sehr gutes Preis-Leistungs-Verhältnis"
-    - "Leichte Einrichtung"
-    - "Moderne Optik"
-    - "Leiser Betrieb"
-    - "Übersichtliche App"
+    - "Kabellose Aufstellung bei den Cordless-Modellen"
+    - "Größere Trinkfläche beim 7L Dog Water Fountain"
+    - "Lokale Futterplanung beim 5L Automatic Cat Feeder"
   criticism:
-    - "Kleineres Produktsortiment"
-    - "Weniger Smart-Funktionen"
-    - "Kaum Speziallösungen"
-  support: "Die öffentlichen Erfahrungen mit dem Support sind überwiegend positiv. Besonders einfache Garantie- und Einrichtungsfragen werden häufig schnell beantwortet."
+    - "Sensorbetrieb ist kein kontinuierlicher Wasserfluss"
+    - "Edelstahl-Trinkfläche bedeutet nicht Edelstahltank"
+    - "Doppelschalen trennen keine individuellen Rationen"
+  support: "Die europäische Website veröffentlicht Garantieinformationen. Lieferbarkeit einzelner Pumpen, Filter und Ersatzteile muss anhand der Modellnummer geprüft werden; eine geprüfte Support-Reaktionszeit liegt nicht vor."
 alternativeManufacturerSlugs:
   - "wopet"
   - "petlibro"
@@ -154,19 +150,13 @@ sources:
   - label: "oneisall Garantie"
     url: "https://eu.oneisall.com/pages/warranty"
 faq:
-  - question: "Ist oneisall eine gute Marke?"
-    answer: "oneisall überzeugt besonders durch ein attraktives Preis-Leistungs-Verhältnis und unkomplizierte Produkte für Tierhalter."
-  - question: "Für wen eignet sich oneisall?"
-    answer: "Vor allem für preisbewusste Käufer, die einen modernen Futterautomaten mit einfacher Bedienung suchen."
-  - question: "Bietet oneisall auch Tierpflegeprodukte an?"
-    answer: "Ja. Die Marke ist insbesondere für Schermaschinen und Fellpflegeprodukte bekannt."
-  - question: "Wie sind die Erfahrungen mit dem Support?"
-    answer: "Die Erfahrungen fallen überwiegend positiv aus. Besonders bei Einrichtungsfragen berichten viele Käufer von schneller Unterstützung."
-  - question: "Wie schneidet oneisall im Vergleich zu Petlibro oder PETKIT ab?"
-    answer: "oneisall konzentriert sich stärker auf ein gutes Preis-Leistungs-Verhältnis, während Petlibro und PETKIT ein breiteres Premium-Portfolio mit mehr Spezialfunktionen bieten."
+  - question: "Haben alle oneisall-Geräte eine App?"
+    answer: "Nein. Im hier gepflegten Bestand stehen lokale Futterautomaten sowie Akku- und Sensor-Brunnen im Vordergrund. Aus dem Markennamen lässt sich keine App-Anbindung ableiten."
+  - question: "Worauf muss ich beim Filterkauf achten?"
+    answer: "Kapazität und Modellbezeichnung müssen genau passen. 3,2-, 3,5- und 7-Liter-Brunnen sind keine austauschbaren Varianten desselben Filtersystems."
 ---
 
-oneisall ist bei PfotenTechnik vor allem mit automatischen Futterautomaten sowie Akku- und Sensor-Trinkbrunnen vertreten. Für die Auswahl ist weniger die Marke als der Einsatzzweck entscheidend: großer Wasservorrat, kabellose Aufstellung oder planbare Trockenfutterrationen.
+oneisall ist im PfotenTechnik-Bestand vor allem bei preisorientierten Futterautomaten und kabellosen Trinkbrunnen interessant. Der 7L Dog Water Fountain priorisiert große Kapazität, die Cordless-Modelle flexible Aufstellung und der 5L Automatic Cat Feeder planbare Trockenfutterrationen. Für RFID, Kamera oder ein geschlossenes App-Ökosystem sind andere Marken meist stärker.
 
 <!-- pt:content-discovery:manufacturer-products:start -->
 ## Weitere Produkte von oneisall

@@ -7,8 +7,8 @@ layout: "manufacturer"
 description: "Cat Mate im Überblick: einfache Futterautomaten für Nass- und Trockenfutter, Zielgruppen, Ersatzteile, Garantie und Alternativen."
 key: "cat-mate"
 name: "Cat Mate"
-recommendation: "Cat Mate gehört zur Marke Closer Pets und entwickelt seit vielen Jahren zuverlässige Fütterungslösungen für Hunde und Katzen. Der Schwerpunkt liegt auf einfach bedienbaren Futterautomaten ohne komplizierte Technik, die besonders für Nassfutter, Wochenendtrips und preisbewusste Tierhalter interessant sind."
-summary: "Cat Mate wird von vielen Käufern für seine einfache Bedienung und hohe Zuverlässigkeit gelobt. Die Produkte funktionieren meist viele Jahre problemlos. Kritik richtet sich vor allem gegen den fehlenden Smart-Funktionsumfang."
+recommendation: "Cat Mate bietet lokale Timer-Futterautomaten und Trinkbrunnen. Bei der Fütterung entscheidet die Zahl später öffnender Fächer; beim Brunnen sind Trinkhöhe und Pumpenpflege wichtiger als eine pauschale Markenbewertung."
+summary: "C200, C300 und C500 unterscheiden sich in Timer und Zahl der vorbereiteten Mahlzeiten. Kühlakkus halten Futter nicht temperaturgeregelt kalt. Die Brunnen 335 und Shell lösen dagegen die Wasserbereitstellung und brauchen Netzstrom."
 publishedAt: "2026-07-12"
 updatedAt: "2026-08-16"
 author:
@@ -66,16 +66,13 @@ attention:
   - "Fernüberwachung"
   - "Technik-Enthusiasten"
 strengths:
-  - "Sehr einfache Bedienung"
-  - "Zuverlässige Technik"
-  - "Ideal für Nassfutter"
-  - "Lange Batterielaufzeit"
-  - "Gute Ersatzteilversorgung"
+  - "Lokale Bedienung ohne App bei den erfassten Futterautomaten"
+  - "Getrennte Fächer für vorbereitete Nass- und Trockenfutterportionen"
+  - "Offizieller Ersatzteilkatalog"
 weaknesses:
-  - "Keine App"
-  - "Keine Kamera"
-  - "Keine Smart-Home-Funktionen"
-  - "Weniger Innovation als moderne Wettbewerber"
+  - "Kühlakkus ersetzen keine aktive Kühlung"
+  - "Zahl der Fächer ist nicht Zahl späterer Öffnungszeiten"
+  - "Keine Fernkontrolle bei den erfassten Timer-Modellen"
 productSlugs:
   - "cat-mate-c200"
   - "cat-mate-c300"
@@ -114,19 +111,15 @@ series:
       - "Fünf Mahlzeiten"
     productSlugs: []
 experience:
-  summary: "Cat Mate wird von vielen Käufern für seine einfache Bedienung und hohe Zuverlässigkeit gelobt. Die Produkte funktionieren meist viele Jahre problemlos. Kritik richtet sich vor allem gegen den fehlenden Smart-Funktionsumfang."
+  summary: "Die Einordnung beruht auf den dokumentierten Modellen, nicht auf einem eigenen Haltbarkeits- oder Supporttest."
   positives:
-    - "Sehr zuverlässig"
-    - "Einfach einzurichten"
-    - "Ideal für Nassfutter"
-    - "Leicht zu reinigen"
-    - "Sehr gutes Preis-Leistungs-Verhältnis"
+    - "C200 mit zwei analogen Timern"
+    - "C500 mit vier späteren Öffnungszeiten"
+    - "Brunnenmodelle mit unterschiedlichen Trinkhöhen"
   criticism:
-    - "Keine App"
-    - "Keine Kamera"
-    - "Mechanische Bedienung"
-    - "Wenige Komfortfunktionen"
-  support: "Closer Pets bietet eine gute Ersatzteilversorgung und wird im Support überwiegend positiv bewertet. Besonders die lange Verfügbarkeit älterer Modelle wird häufig gelobt."
+    - "Timer und Kühlkonzept vor längerer Abwesenheit praktisch prüfen"
+    - "Wasser- und Futterpflege bleiben manuelle Aufgaben"
+  support: "Closer Pets führt einen Zubehör- und Ersatzteilkatalog. Daraus lässt sich keine garantierte Lieferbarkeit jedes Teils oder Aussage über die Bearbeitungszeit ableiten."
 alternativeManufacturerSlugs:
   - "petlibro"
   - "surefeed"
@@ -139,19 +132,13 @@ sources:
   - label: "Closer Pets Lieferung und Rückgabe"
     url: "https://closerpets.com/pages/delivery-returns"
 faq:
-  - question: "Ist Cat Mate eine gute Marke?"
-    answer: "Ja. Cat Mate gehört seit vielen Jahren zu den etablierten Herstellern einfacher und zuverlässiger Futterautomaten."
-  - question: "Für wen eignet sich Cat Mate?"
-    answer: "Besonders für Nutzer, die einen unkomplizierten Futterautomaten ohne App oder WLAN suchen."
-  - question: "Kann Cat Mate auch Nassfutter?"
-    answer: "Ja. Besonders die Modelle C200, C300 und C500 eignen sich sehr gut für Nassfutter."
-  - question: "Wie sind die Erfahrungen mit dem Support?"
-    answer: "Die Erfahrungen sind überwiegend positiv. Ersatzteile sind häufig auch für ältere Modelle erhältlich."
-  - question: "Bietet Cat Mate Smart-Home-Funktionen?"
-    answer: "Nein. Cat Mate setzt bewusst auf einfache und zuverlässige Offline-Lösungen."
+  - question: "C200 oder C500: Was entscheidet?"
+    answer: "Der C200 hat zwei analoge Timer. Beim C500 ist ein Fach sofort offen, vier weitere Öffnungszeiten sind programmierbar. Entscheidend sind deshalb die tatsächlich später benötigten Mahlzeiten."
+  - question: "Kühlen Cat-Mate-Futterautomaten aktiv?"
+    answer: "Die hier erfassten Fächermodelle nutzen Kühlakkus. Deren Wirkung hängt von Vorbereitung und Raumtemperatur ab; sie sind keine geregelte Kühleinheit."
 ---
 
-Cat Mate gehört zur Marke Closer Pets und entwickelt seit vielen Jahren zuverlässige Fütterungslösungen für Hunde und Katzen. Der Schwerpunkt liegt auf einfach bedienbaren Futterautomaten ohne komplizierte Technik, die besonders für Nassfutter, Wochenendtrips und preisbewusste Tierhalter interessant sind.
+Cat Mate bietet lokale Timer-Futterautomaten und Trinkbrunnen. Bei der Fütterung entscheidet die Zahl später öffnender Fächer; beim Brunnen sind Trinkhöhe und Pumpenpflege wichtiger als eine pauschale Markenbewertung.
 
 <!-- pt:content-discovery:manufacturer-products:start -->
 ## Weitere Produkte von Cat Mate

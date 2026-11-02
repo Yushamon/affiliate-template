@@ -99,127 +99,43 @@ criteria:
 automaticRecommendations:
   enabled: true
 recommendation:
-  title: Unsere Empfehlung für Beste Futterautomaten für Seniorenkatzen
-  text: >-
-    Welche Futterautomaten eignen sich für ältere Katzen? Unsere Empfehlungen für regelmäßige Fütterung, kleine
-    Portionen und einfache Reinigung.
-  winnerSlug: surefeed-microchip-pet-feeder-connect
-  alternativeSlug: cat-mate-c500
+  title: "Zugang und tatsächlich gefressene Ration vor Automatisierung"
+  text: "Bei einer älteren Katze entscheiden Beweglichkeit, akzeptierte Futterart und ungestörter Zugang. Ein Mikrochip-Napf schützt eine vorbereitete Ration, ein Fächertimer öffnet spätere Mahlzeiten und ein Vorratsautomat gibt Trockenfutter aus. Diese Aufgaben sind nicht austauschbar."
+  winnerSlug: "surefeed-microchip-pet-feeder-connect"
+  alternativeSlug: "cat-mate-c500"
 tableTitle: "Beste Futterautomaten für Seniorenkatzen: direkter Vergleich"
 cardsTitle: Modelle und Einsatzgrenzen
 faq:
-  - question: Warum profitieren ältere Katzen von einem Futterautomaten?
-    answer: Regelmäßige Mahlzeiten können den Alltag strukturieren und helfen dabei, feste Fütterungszeiten einzuhalten.
-  - question: Ist ein Futterautomat für Nassfutter geeignet?
-    answer: >-
-      Viele klassische Automaten sind für Trockenfutter ausgelegt. Für Nassfutter können spezielle Modelle sinnvoll
-      sein.
-  - question: Wie vergleichen wir Futterautomaten?
-    answer: >-
-      Wir trennen Portionierung, Futterkompatibilität, Napf, Reinigung, Stromreserve, Offline-Verhalten und
-      Zusatzfunktionen. Eine lange Funktionsliste ersetzt keine zuverlässige Ausgabe.
-  - question: Ist der größte Futterbehälter automatisch die beste Wahl?
-    answer: >-
-      Nein. Vorratsvolumen sagt nichts über Mindestportion, maximale Mahlzeit, Krokettengröße, Napfergonomie oder
-      Ausfallsicherheit aus.
-  - question: Wie prüfe ich die reale Portionsgröße?
-    answer: >-
-      Gib mehrere Portionseinheiten mit dem tatsächlich verwendeten Futter aus, wiege die Gesamtmenge und berechne den
-      Mittelwert. Nach einem Futterwechsel muss neu kalibriert werden.
-  - question: Beweist ein App-Protokoll, dass das Tier gefressen hat?
-    answer: >-
-      Nein. Ein Protokoll bestätigt meist nur eine geplante oder ausgelöste Ausgabe. Ohne sichere Tier- und
-      Mengenmessung ist es kein Fressnachweis.
-  - question: Braucht ein Futterautomat eine Stromreserve?
-    answer: >-
-      Eine Batterie- oder Akku-Reserve kann geplante Ausgaben bei Stromausfall absichern. Welche Funktionen im
-      Notbetrieb weiterlaufen, muss für das konkrete Modell geprüft werden.
-  - question: Wie oft werden die Vergleiche aktualisiert?
-    answer: >-
-      Produktdaten, Verfügbarkeit und wesentliche Funktionsänderungen werden regelmäßig geprüft. Die Vergleichsseite
-      nennt ihren aktuellen Datenstand.
+  - question: "Warum profitieren ältere Katzen von einem Futterautomaten?"
+    answer: "Regelmäßige Mahlzeiten können den Alltag strukturieren und helfen dabei, feste Fütterungszeiten einzuhalten."
+  - question: "Ist ein Futterautomat für Nassfutter geeignet?"
+    answer: "Viele klassische Automaten sind für Trockenfutter ausgelegt. Für Nassfutter können spezielle Modelle sinnvoll sein."
+  - question: "Wie vergleichen wir Futterautomaten?"
+    answer: "Wir trennen Portionierung, Futterkompatibilität, Napf, Reinigung, Stromreserve, Offline-Verhalten und Zusatzfunktionen. Eine lange Funktionsliste ersetzt keine zuverlässige Ausgabe."
+  - question: "Ist der größte Futterbehälter automatisch die beste Wahl?"
+    answer: "Nein. Vorratsvolumen sagt nichts über Mindestportion, maximale Mahlzeit, Krokettengröße, Napfergonomie oder Ausfallsicherheit aus."
+  - question: "Wie prüfe ich die reale Portionsgröße?"
+    answer: "Gib mehrere Portionseinheiten mit dem tatsächlich verwendeten Futter aus, wiege die Gesamtmenge und berechne den Mittelwert. Nach einem Futterwechsel muss neu kalibriert werden."
+  - question: "Beweist ein App-Protokoll, dass das Tier gefressen hat?"
+    answer: "Nein. Ein Protokoll bestätigt meist nur eine geplante oder ausgelöste Ausgabe. Ohne sichere Tier- und Mengenmessung ist es kein Fressnachweis."
+  - question: "Braucht ein Futterautomat eine Stromreserve?"
+    answer: "Eine Batterie- oder Akku-Reserve kann geplante Ausgaben bei Stromausfall absichern. Welche Funktionen im Notbetrieb weiterlaufen, muss für das konkrete Modell geprüft werden."
 ---
+
 ## Kurzantwort
 
-Welche Futterautomaten eignen sich für ältere Katzen? Unsere Empfehlungen für regelmäßige Fütterung, kleine Portionen und einfache Reinigung.
+Bei einer älteren Katze entscheiden Beweglichkeit, akzeptierte Futterart und ungestörter Zugang. Ein Mikrochip-Napf schützt eine vorbereitete Ration, ein Fächertimer öffnet spätere Mahlzeiten und ein Vorratsautomat gibt Trockenfutter aus. Diese Aufgaben sind nicht austauschbar.
 
-## Welcher Futterautomat eignet sich für Seniorenkatzen?
+## Welche Bauart löst das konkrete Problem?
 
-Für ältere Katzen empfehlen sich Futterautomaten mit zuverlässiger Portionierung, einfacher Reinigung und gleichmäßigen Fütterungszeiten.
+| Beobachtung | Passende Prüfaufgabe |
+|---|---|
+| Andere Katze frisst die Ration | geschützten Zugang und Deckelakzeptanz prüfen |
+| Nassfutter soll später bereitstehen | spätere Öffnungszeiten und Kühlgrenzen prüfen |
+| Viele kleine Trockenfuttermahlzeiten | Mindestportion und Futterverträglichkeit kalibrieren |
+| Katze erreicht den Napf schlecht | Ein- und Ausstieg sowie Haltung zuerst beobachten |
 
-## Darauf solltest du achten
-
-Regelmäßige Mahlzeiten und eine zuverlässige Portionierung sind bei älteren Katzen meist wichtiger als viele Zusatzfunktionen.
-
-Mit zunehmendem Alter verändern sich häufig die Ernährungsgewohnheiten von Katzen. Viele Senioren profitieren von kleineren, regelmäßigeren Mahlzeiten. Ein passender Futterautomat kann dabei helfen, feste Routinen zuverlässig einzuhalten.
-
-## Unsere Empfehlung auf einen Blick
-
-Für Seniorenkatzen stehen Zuverlässigkeit, kleine Portionen und eine einfache Reinigung im Vordergrund. Die Produktauswahl oberhalb dieses Ratgebers wird automatisch anhand unserer Bewertungsregeln zusammengestellt.
-
-## Entscheidungshilfe
-
-Ein Futterautomat lohnt sich besonders, wenn:
-
-* deine Katze mehrere kleine Mahlzeiten erhält
-* regelmäßige Fütterungszeiten wichtig sind
-* der Alltag planbarer werden soll
-* mehrere Personen die Fütterung übernehmen
-
-## Worauf kommt es bei Seniorenkatzen an?
-
-Gerade ältere Katzen profitieren häufig von einer gleichmäßigen Fütterung. Deshalb legen wir besonderen Wert auf zuverlässige Portionierung und einfache Bedienung.
-
-| Kriterium | Warum wichtig |
-| --- | --- |
-| Portionierung | Kleine Mahlzeiten lassen sich genauer planen. |
-| Zuverlässigkeit | Feste Routinen werden unterstützt. |
-| Reinigung | Gute Hygiene ist besonders wichtig. |
-| Bedienung | Änderungen sollten einfach möglich sein. |
-
-## So bewerten wir Futterautomaten
-
-Unsere Bewertung konzentriert sich auf:
-
-* Zuverlässigkeit
-* Portionierung
-* Reinigung
-* Sicherheit
-* Alltagstauglichkeit
-
-## Für wen lohnt sich ein Futterautomat?
-
-* ältere Katzen
-* Wohnungskatzen
-* Berufstätige
-* Mehrkatzenhaushalte
-
-## Wann ist ein Futterautomat nicht ideal?
-
-Wenn eine Katze tierärztlich überwacht werden muss oder spezielle Diäten erhält, sollte die Fütterung individuell abgestimmt werden.
-
-## Weitere passende Ratgeber
-
-* [Smarte Futterautomaten im Vergleich](/smarte-futterautomaten/)
-* [Futterautomat für Katzen](/futterautomat-katze/)
-* [Wie viele Mahlzeiten braucht eine Katze?](/wie-viele-mahlzeiten-katze/)
-* [Beste Futterautomaten für Welpen](/vergleiche/beste-futterautomaten-fuer-welpen/)
-
-## SureFeed Connect richtig einordnen
-
-Der **SureFeed Mikrochip Futterautomat Connect** ist ein geschützter Einzelnapf und kein zeitgesteuerter Vorratsautomat. Mikrochipzugang und integrierte Portionswaage arbeiten direkt am Gerät.
-
-Für App-Protokolle zu Fressmenge, Häufigkeit, Dauer und Tageszeiten wird ein **Sure Petcare Hub** benötigt. Ein vorhandener kompatibler Hub kann weiterverwendet werden; andernfalls sind Bundle oder separater Hub nötig. Einzelgerät, Hub und Bundle sind getrennte Kaufvarianten, deshalb werden Preis und Lieferbarkeit aktuell und je Variante geprüft.
-
-## Fazit
-
-Für Seniorenkatzen zählen vor allem zuverlässige Fütterungszeiten, kleine Portionen und eine einfache Reinigung. Ein passender Futterautomat kann dabei helfen, den Alltag strukturierter und planbarer zu gestalten.
-
-## Quellen
-
-- Produktdatenblätter und Bedienungsanleitungen der aufgenommenen Modelle
-- [FEDIAF Nutritional Guidelines](https://europeanpetfood.org/self-regulation/nutritional-guidelines/)
-- [WSAVA Global Nutrition Guidelines](https://wsava.org/global-guidelines/global-nutrition-guidelines/)
+Eine unerklärliche Änderung von Appetit oder Gewicht gehört tierärztlich abgeklärt. Der Automat diagnostiziert keine Ursache und darf fehlende Futteraufnahme nicht durch unbemerkte Nachfüllungen verdecken.
 
 ## Welches Modell löst welches Seniorenproblem?
 
@@ -239,3 +155,13 @@ Der **PETLIBRO Granary WiFi** ist die Lösung für Trockenfutter und viele klein
 ## Sieben-Tage-Eingewöhnung
 
 Stelle das ausgeschaltete Gerät zunächst neben den gewohnten Napf. Füttere danach einige Mahlzeiten aus dem neuen Napf, ohne Mechanik auszulösen. Erst wenn Haltung und Zugang unauffällig sind, kommen Deckelbewegung oder Ausgabe hinzu. Wiege in der ersten Woche Futter vor und Reste nach. So erkennst du, ob die Technik die Routine erleichtert oder den Futterzugang unbemerkt erschwert.
+
+## SureFeed Connect richtig einordnen
+
+Der **SureFeed Mikrochip Futterautomat Connect** ist ein geschützter Einzelnapf und kein zeitgesteuerter Vorratsautomat. Mikrochipzugang und integrierte Portionswaage arbeiten direkt am Gerät.
+
+Für App-Protokolle zu Fressmenge, Häufigkeit, Dauer und Tageszeiten wird ein **Sure Petcare Hub** benötigt. Ein vorhandener kompatibler Hub kann weiterverwendet werden; andernfalls sind Bundle oder separater Hub nötig. Einzelgerät, Hub und Bundle sind getrennte Kaufvarianten, deshalb werden Preis und Lieferbarkeit aktuell und je Variante geprüft.
+
+## Datengrundlage
+
+SureFeed Connect, C500 und Granary WiFi werden nach Zugang, Futterart und geplanter Ausgabe unterschieden. Grundlage sind ihre dokumentierten Funktionen, keine Untersuchung der gesundheitlichen Eignung einer einzelnen Katze. Hinweise zur fehlenden Futteraufnahme stehen im [Ratgeber zur Appetitlosigkeit](/katze-frisst-nicht/).

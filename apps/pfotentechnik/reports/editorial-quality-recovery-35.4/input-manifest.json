@@ -1,0 +1,46 @@
+{
+  "observationDate": "2026-11-02",
+  "indexedStatusProvenance": "User-requested 95-row indexed export, original folder Coverage-Valid; explicit --status Indexiert. The metadata CSV has no Problem field. No HTTP or absent rows used to infer Google status.",
+  "indexedRows": 95,
+  "indexedFiles": [
+    {
+      "file": "inputs/indexed/Diagramm.csv",
+      "sha256": "3ea4ebba31819093fd24c0ce8f87dda3a76a5b2852f3aca8556cab933a461a11"
+    },
+    {
+      "file": "inputs/indexed/Tabelle.csv",
+      "sha256": "89d79844021e32e2bdec0e11ba82f6e846639ac7f0448e6dfeedc00a0631bd4f"
+    },
+    {
+      "file": "inputs/indexed/Metadaten.csv",
+      "sha256": "1ecd3831da5608e62448eada59e21f70af3d1ac800cfce7476c503ae223be5c7"
+    }
+  ],
+  "negativeInputs": "../google-index-recovery-35.3/coverage-input.json and its input-manifest.json",
+  "negativeFiles": [
+    {
+      "file": "inputs/crawled/Diagramm.csv",
+      "sha256": "d1cfc5766053b1caf1c25b6a7db0a10d6aedf7e465b9e9bf8b6f84d622c61a10"
+    },
+    {
+      "file": "inputs/crawled/Tabelle.csv",
+      "sha256": "8d7b44feb49dc3c137dd4c93a383e125e552eb21687519df9e4b5425e5953e0d"
+    },
+    {
+      "file": "inputs/crawled/Metadaten.csv",
+      "sha256": "2967cf0f2bca679f97d812be06db7035e7eee2dc61429426385063cb5c337da8"
+    },
+    {
+      "file": "inputs/discovered/Diagramm.csv",
+      "sha256": "64dbe8c81f9ed2ec5cfcda039c7ed53b0f5a502e7bb38d56c630b6f4f7dde17d"
+    },
+    {
+      "file": "inputs/discovered/Tabelle.csv",
+      "sha256": "677ce18de5f06421da10886a7c31a88d4454853f29bdb55221ad4bbf9051072e"
+    },
+    {
+      "file": "inputs/discovered/Metadaten.csv",
+      "sha256": "e90263f985af309bc6b140215de3d6d73eb5b27f2a6f231a2107b13ddc5de3c2"
+    }
+  ]
+}

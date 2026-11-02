@@ -1,0 +1,134 @@
+{
+  "historicalPaths": 49,
+  "migratedOldPaths": 27,
+  "migratedCanonicalTargets": 23,
+  "all": {
+    "migrated": {
+      "n": 23,
+      "statuses": {
+        "discovered-not-indexed": 2,
+        "crawled-not-indexed": 4,
+        "indexed": 17
+      },
+      "lastCrawlMin": "2026-08-03",
+      "lastCrawlMedian": "2026-10-13",
+      "lastCrawlMax": "2026-10-24",
+      "firstPathRange": [
+        "",
+        "2026-08-04T19:14:42+02:00"
+      ]
+    },
+    "unchanged": {
+      "n": 236,
+      "statuses": {
+        "indexed": 73,
+        "discovered-not-indexed": 76,
+        "crawled-not-indexed": 87
+      },
+      "lastCrawlMin": "2026-07-13",
+      "lastCrawlMedian": "2026-09-15",
+      "lastCrawlMax": "2026-10-24",
+      "firstPathRange": [
+        "",
+        "2026-09-15T05:34:53+02:00"
+      ]
+    },
+    "fisherTwoSided": 0.00010217939008748374
+  },
+  "comparisons": {
+    "migrated": {
+      "n": 17,
+      "statuses": {
+        "indexed": 15,
+        "crawled-not-indexed": 2
+      },
+      "lastCrawlMin": "2026-08-03",
+      "lastCrawlMedian": "2026-10-13",
+      "lastCrawlMax": "2026-10-24",
+      "firstPathRange": [
+        "2026-07-12T14:40:56+02:00",
+        "2026-07-27T08:01:02+02:00"
+      ]
+    },
+    "unchanged": {
+      "n": 11,
+      "statuses": {
+        "discovered-not-indexed": 6,
+        "indexed": 4,
+        "crawled-not-indexed": 1
+      },
+      "lastCrawlMin": "2026-09-05",
+      "lastCrawlMedian": "2026-09-20",
+      "lastCrawlMax": "2026-10-22",
+      "firstPathRange": [
+        "2026-07-16T15:10:04+02:00",
+        "2026-08-06T14:26:02+02:00"
+      ]
+    },
+    "fisherTwoSided": 0.010431597388119128
+  },
+  "beforeJuly28": {
+    "migrated": {
+      "n": 21,
+      "statuses": {
+        "crawled-not-indexed": 4,
+        "indexed": 17
+      },
+      "lastCrawlMin": "2026-08-03",
+      "lastCrawlMedian": "2026-10-13",
+      "lastCrawlMax": "2026-10-24",
+      "firstPathRange": [
+        "2026-07-12T11:02:18+02:00",
+        "2026-07-27T08:01:02+02:00"
+      ]
+    },
+    "unchanged": {
+      "n": 160,
+      "statuses": {
+        "indexed": 63,
+        "crawled-not-indexed": 86,
+        "discovered-not-indexed": 11
+      },
+      "lastCrawlMin": "2026-07-13",
+      "lastCrawlMedian": "2026-09-10",
+      "lastCrawlMax": "2026-10-24",
+      "firstPathRange": [
+        "2026-07-08T18:32:18+02:00",
+        "2026-07-26T09:46:21+02:00"
+      ]
+    },
+    "fisherTwoSided": 0.00035496222920187266
+  },
+  "comparisonBeforeJuly28": {
+    "migrated": {
+      "n": 17,
+      "statuses": {
+        "indexed": 15,
+        "crawled-not-indexed": 2
+      },
+      "lastCrawlMin": "2026-08-03",
+      "lastCrawlMedian": "2026-10-13",
+      "lastCrawlMax": "2026-10-24",
+      "firstPathRange": [
+        "2026-07-12T14:40:56+02:00",
+        "2026-07-27T08:01:02+02:00"
+      ]
+    },
+    "unchanged": {
+      "n": 7,
+      "statuses": {
+        "indexed": 4,
+        "discovered-not-indexed": 2,
+        "crawled-not-indexed": 1
+      },
+      "lastCrawlMin": "2026-09-05",
+      "lastCrawlMedian": "2026-09-20",
+      "lastCrawlMax": "2026-10-22",
+      "firstPathRange": [
+        "2026-07-16T15:10:04+02:00",
+        "2026-07-20T06:47:35+02:00"
+      ]
+    },
+    "fisherTwoSided": 0.12648221343873517
+  }
+}

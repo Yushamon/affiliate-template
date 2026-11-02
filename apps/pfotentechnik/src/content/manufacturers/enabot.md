@@ -7,7 +7,7 @@ description: "Enabot im Überblick: mobile Kamera- und Familienroboter mit App-S
 key: "enabot"
 name: "Enabot"
 recommendation: "Enabot ist relevant, wenn ein mobiler Kamerablickpunkt eine robotertaugliche Wohnung abfahren soll."
-summary: "Im Startcluster vertritt EBO Air 2 die mobile Kameraroboter-Klasse."
+summary: "EBO Air 2 und ROLA Mini bewegen den Kamerablickpunkt in geeigneten Innenräumen. Der ROLA PetTracker ist dagegen ein am Tier getragenes Ortungs- und Kameragerät. Fahrweg, Befestigung und Raumabdeckung sind deshalb getrennte Kaufentscheidungen."
 publishedAt: "2026-08-06"
 updatedAt: "2026-08-15"
 tags:
