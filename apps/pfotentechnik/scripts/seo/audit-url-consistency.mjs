@@ -66,12 +66,12 @@ if (!fs.existsSync(DIST_ROOT)) {
       html.match(/<link\b[^>]*href=["']([^"']+)["'][^>]*rel=["']canonical["'][^>]*>/i);
 
     const robotsContent = [
-      ...html.matchAll(/<meta\\b[^>]*name=["']robots["'][^>]*content=["']([^"']*)["']/gi),
-      ...html.matchAll(/<meta\\b[^>]*content=["']([^"']*)["'][^>]*name=["']robots["']/gi)
+      ...html.matchAll(/<meta\b[^>]*name=["']robots["'][^>]*content=["']([^"']*)["']/gi),
+      ...html.matchAll(/<meta\b[^>]*content=["']([^"']*)["'][^>]*name=["']robots["']/gi)
     ].map((match) => match[1].toLowerCase()).join(",");
 
     const isAdminRoute = route === "/admin/" || route.startsWith("/admin/");
-    const isNoindex = /(?:^|[,\\s])noindex(?:[,\\s]|$)/i.test(robotsContent);
+    const isNoindex = /(?:^|[,\s])noindex(?:[,\s]|$)/i.test(robotsContent);
     const canonicalRequired = !isAdminRoute && !isNoindex;
     if (canonicalRequired) indexableHtml += 1;
     else nonIndexableHtml += 1;

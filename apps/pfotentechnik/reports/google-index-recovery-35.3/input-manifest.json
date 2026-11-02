@@ -1,0 +1,44 @@
+[
+  {
+    "group": "discovered",
+    "originalFolder": "pfotentechnik.de-Coverage-Drilldown-2026-11-02",
+    "status": "Gefunden – zurzeit nicht indexiert",
+    "rows": 78,
+    "exportedOn": "2026-11-02",
+    "files": [
+      {
+        "file": "inputs/discovered/Diagramm.csv",
+        "sha256": "64dbe8c81f9ed2ec5cfcda039c7ed53b0f5a502e7bb38d56c630b6f4f7dde17d"
+      },
+      {
+        "file": "inputs/discovered/Metadaten.csv",
+        "sha256": "e90263f985af309bc6b140215de3d6d73eb5b27f2a6f231a2107b13ddc5de3c2"
+      },
+      {
+        "file": "inputs/discovered/Tabelle.csv",
+        "sha256": "677ce18de5f06421da10886a7c31a88d4454853f29bdb55221ad4bbf9051072e"
+      }
+    ]
+  },
+  {
+    "group": "crawled",
+    "originalFolder": "pfotentechnik.de-Coverage-Drilldown-2026-11-02 (2) 2",
+    "status": "Gecrawlt – zurzeit nicht indexiert",
+    "rows": 105,
+    "exportedOn": "2026-11-02",
+    "files": [
+      {
+        "file": "inputs/crawled/Diagramm.csv",
+        "sha256": "d1cfc5766053b1caf1c25b6a7db0a10d6aedf7e465b9e9bf8b6f84d622c61a10"
+      },
+      {
+        "file": "inputs/crawled/Metadaten.csv",
+        "sha256": "2967cf0f2bca679f97d812be06db7035e7eee2dc61429426385063cb5c337da8"
+      },
+      {
+        "file": "inputs/crawled/Tabelle.csv",
+        "sha256": "8d7b44feb49dc3c137dd4c93a383e125e552eb21687519df9e4b5425e5953e0d"
+      }
+    ]
+  }
+]

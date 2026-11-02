@@ -1,0 +1,70 @@
+
+BUILD-FINAL
+13:41:20   ▶ /_astro/hero.D7NOH_mt_inJMa.webp (reused cache entry) (+3ms) (4734/4739)
+13:41:20   ▶ /_astro/checklist.BwkXXgw8_ZYfYqh.webp (reused cache entry) (+3ms) (4735/4739)
+13:41:20   ▶ /_astro/hero.D7NOH_mt_lSpTi.webp (reused cache entry) (+1ms) (4736/4739)
+13:41:20   ▶ /_astro/vet-triage.BiS0QwAn_2efeIq.webp (reused cache entry) (+2ms) (4737/4739)
+13:41:20   ▶ /_astro/hero.D7NOH_mt_Z1lCzzj.webp (reused cache entry) (+1ms) (4738/4739)
+13:41:20   ▶ /_astro/hero.D7NOH_mt_Z17gTyX.webp (reused cache entry) (+0ms) (4739/4739)
+13:41:20 ✓ Completed in 821ms.
+
+13:41:20 [build] ✓ Completed in 1m 17s.
+13:41:20 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+13:41:20 [build] 374 page(s) built in 1m 18s
+13:41:20 [build] Complete!
+
+TESTS-FINAL
+✔ Workbench benennt den neuen Ablauf eindeutig (0.243791ms)
+ℹ tests 991
+ℹ suites 0
+ℹ pass 991
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4371.587333
+
+CANONICALS
+URL Consistency Audit
+Kanonischer Host: https://pfotentechnik.de
+Indexierbare HTML-Seiten: 259
+Noindex/Admin-HTML-Seiten: 115
+Fehler: 0
+Warnungen: 0
+
+LINKS
+Interne Linkziele: 374 Seiten, 0 Fehler, 0 Warnungen.
+
+TECHNICAL
+OK  Ratgeber-JSON-LD parsebar
+OK  Comparison-HTML vorhanden (vergleiche/beste-futterautomaten-ohne-wlan/index.html)
+OK  Comparison-Schema vollständig (gefunden: Organization, WebPage, WebSite, BreadcrumbList, ListItem, FAQPage, Question, Answer, ItemList)
+OK  Comparison-JSON-LD parsebar
+OK  Produkt-HTML vorhanden (produkt/petlibro-polar-wet-food-feeder/index.html)
+OK  Produkt-Schema vollständig (gefunden: Organization, WebPage, WebSite, BreadcrumbList, ListItem, Product, Brand, Offer, Review, Rating, ItemList)
+OK  Produkt-JSON-LD parsebar
+OK  Hersteller-HTML vorhanden (hersteller/petlibro/index.html)
+OK  Hersteller-Schema vollständig (gefunden: Organization, Article, ImageObject, BreadcrumbList, ListItem, FAQPage, Question, Answer)
+OK  Hersteller-JSON-LD parsebar
+
+Woche-4-Source- und Build-Audit erfolgreich.
+
+SCHEMA
+OK  Vergleichsseiten enthalten keine unvollständigen Product-Snippets.
+OK  ItemList nutzt direkte ListItem-URLs mit stabilen Positionen.
+OK  Vergleichs-Hub /vergleiche/ wird nicht als Detailseite geprüft.
+INFO  28 gebaute Vergleichsseiten und 28 ItemLists geprüft.
+
+VIEWPORTS
+# PfotenTechnik Viewport Contract
+
+- Status: OK
+- Methode: statischer Vertrag gegen Produktions-HTML/CSS, keine Browser-Layoutersatzmessung
+- Checks: 30
+- Bestanden: 30
+- Fehlgeschlagen: 0
+
+## Befunde
+
+Keine.
+

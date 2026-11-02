@@ -99,6 +99,7 @@ export const categoryEditorialConfig = {
     ],
     products: [
       { slug: "tractive-dog-6", role: "Hunde-Allrounder" },
+      { slug: "tractive-dog-6-xl", role: "Hunde ab 20 kg" },
       { slug: "tractive-cat-6-mini", role: "Kompakte Katzenlösung" },
       { slug: "paj-pet-finder-4g-mini", role: "Alternative Mobilfunkplattform" },
       { slug: "garmin-alpha-t-20", role: "VHF-Spezialist" },
