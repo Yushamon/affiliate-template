@@ -389,7 +389,7 @@ offers:
     availability: "unknown"
     identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
     evidenceSources: []
-    lastAttemptAt: "2026-10-22T13:05:23.958Z"
+    lastAttemptAt: "2026-11-02T08:10:44.273Z"
     error: "Offizielle Produkt-URL unresolved."
 ---
 ## PETLIBRO Space Smart Feeder: redaktionelle Einordnung

@@ -92,7 +92,7 @@ offers:
     availability: "unknown"
     identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
     evidenceSources: []
-    lastAttemptAt: "2026-10-22T13:05:01.628Z"
+    lastAttemptAt: "2026-11-02T08:10:25.568Z"
     error: "Offizielle Produkt-URL unresolved."
 priceState: "available"
 priceUpdated: "2026-10-16T07:59:53.233Z"

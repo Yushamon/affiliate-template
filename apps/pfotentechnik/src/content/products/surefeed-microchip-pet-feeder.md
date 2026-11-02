@@ -59,10 +59,10 @@ images:
     - src: ../../assets/images/products/surefeed-microchip-pet-feeder/gallery-3.webp
       alt: SureFeed Microchip Pet Feeder im Mehrkatzenhaushalt
 price:
-  current: 138.99
+  current: 127.29
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-10-22T13:05:38.748Z"
+  checkedAt: "2026-11-02T08:10:57.505Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -77,7 +77,7 @@ rating: 4.5
 score: 90
 
 priceState: "available"
-priceUpdated: "2026-10-22T13:05:38.748Z"
+priceUpdated: "2026-11-02T08:10:57.505Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

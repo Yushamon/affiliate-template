@@ -58,10 +58,10 @@ subscription:
     - { name: "Premium jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 189.99, currency: EUR, effectiveMonthlyPrice: 15.83, autoRenew: true, notes: "30 Tage Videospeicher" }
     - { name: "Family jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 219.99, currency: EUR, effectiveMonthlyPrice: 18.33, autoRenew: true, notes: "für bis zu drei Geräte" }
 price:
-  current: 72.49
+  current: 72.51
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-10-22T13:05:21.292Z"
+  checkedAt: "2026-11-02T08:10:41.860Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -69,7 +69,7 @@ price:
 rating: 3.7
 
 priceState: "available"
-priceUpdated: "2026-10-22T13:05:21.292Z"
+priceUpdated: "2026-11-02T08:10:41.860Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"
@@ -275,7 +275,7 @@ offers:
       current: 109.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-10-22T13:05:21.557Z"
+      checkedAt: "2026-11-02T08:10:41.989Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -299,8 +299,8 @@ offers:
     variantId: "52157103145326"
     expectedSku: "PL-PC001-31W"
     variantLabel: "1 Paket / Weiß"
-    lastAttemptAt: "2026-10-22T13:05:21.557Z"
-    availabilityUpdated: "2026-10-22T13:05:21.557Z"
+    lastAttemptAt: "2026-11-02T08:10:41.989Z"
+    availabilityUpdated: "2026-11-02T08:10:41.989Z"
 ---
 
 ## Einordnung ohne eigenen Produkttest

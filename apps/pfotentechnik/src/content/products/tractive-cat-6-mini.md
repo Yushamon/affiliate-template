@@ -21,7 +21,7 @@ category:
   path: /gps-tracker/
 productUrl: "/produkt/tractive-cat-6-mini/"
 publishedAt: "2026-07-20"
-updatedAt: "2026-08-24"
+updatedAt: "2026-11-02"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -75,7 +75,7 @@ price:
   current: 69
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-10-22T13:05:43.559Z"
+  checkedAt: "2026-11-02T08:11:01.869Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -90,7 +90,7 @@ rating: 4.5
 score: 91
 
 priceState: "available"
-priceUpdated: "2026-10-22T13:05:43.559Z"
+priceUpdated: "2026-11-02T08:11:01.869Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"
@@ -107,6 +107,19 @@ ratings:
   kosten: 4
 externalEvidence:
   professionalReviews:
+    - publisher: "WIRED"
+      title: "Review: Tractive Cat 6 Mini"
+      url: "https://www.wired.com/review/tractive-cat-6-mini/"
+      publishedAt: "2026-10-01"
+      checkedAt: "2026-11-02"
+      methodology: "hands-on"
+      rating: { value: 7, scale: 10 }
+      positives:
+        - "Gesundheitsfunktionen positiv beurteilt."
+      negatives:
+        - "Begrenzte Laufzeit; verzögerte und falsche Standortalarme."
+      findings:
+        - "Begrenzter Einzeltest von Molly Higgins, keine medizinische Validierung."
     - publisher: "GPS-Tracker-Tests.de"
       title: "Tractive CAT 6 Mini im Test 2026: App-Sieger für Katzen"
       url: "https://gpstracker-tests.de/test/tractive-cat-mini/"
@@ -143,9 +156,14 @@ externalEvidence:
         sourceCount: 2
         confidence: "medium"
     editorialAssessment: >-
-      Ein produktspezifischer Hands-on-Test und aktuelle CAT-6-Mini-Erfahrungsberichte stützen die Kernfunktionen.
+      Zwei produktspezifische Hands-on-Tests und aktuelle CAT-6-Mini-Erfahrungsberichte beleuchten die Kernfunktionen.
+      Die abweichenden Ortungsbefunde sollten bei der Kaufentscheidung berücksichtigt werden.
       Der Trustpilot-Gesamtscore ist allerdings markenweit und wird nicht als produktspezifische Durchschnittsnote interpretiert.
   note: >-
+    WIRED (01.10.2026): etwa vier Tage Akku bei einer Wohnungskatze; im Verloren-Modus meist binnen vier Stunden leer.
+    Drei Warnversuche ohne mitgeführtes Handy dauerten etwa eine bis acht Minuten; auch Fehlalarme traten auf.
+    Schlechter Mobilfunkempfang vor Ort kann die Warnzeiten beeinflussen. Ein Monat mit einer Katze und separaten
+    Trageversuchen begrenzt die Übertragbarkeit. Die Gesundheitsfunktionen gefielen, ersetzen aber keine medizinische Prüfung.
     Der Trustpilot-Ratingwert und die Review-Anzahl beziehen sich auf das Tractive-Unternehmensprofil.
     Für die inhaltlichen Muster wurden nur eindeutig als CAT 6 Mini erkennbare aktuelle Berichte herangezogen.
 decision:
@@ -165,13 +183,13 @@ review:
     entwickelten Sicherheitshalsband.
   verdict: >-
     Eine besonders schlüssige Komplettlösung für passende Freigängerkatzen, sofern Abo, Halsumfang und
-    Sicherheitsverschluss zum Einsatzprofil passen.
+    Sicherheitsverschluss zum Einsatzprofil passen. Standortwarnungen sind keine Garantie einer sofortigen Meldung.
 strengths:
   - 32 g inklusive Halsband
   - Tracker direkt in das Halsband integriert
   - Sicherheitsverschluss für Katzen
-  - bis zu sieben Tage Akku mit Energiesparzone
-  - bis zu vier Tage Akku ohne Energiesparzone
+  - laut Hersteller bis zu sieben Tage Akku mit Energiesparzone
+  - laut Hersteller bis zu vier Tage Akku ohne Energiesparzone
   - Live-Ortung, Positionsverlauf und virtuelle Zäune
   - Aktivitäts-, Schlaf-, Herz- und Atemfrequenz-Trends
   - Signalton und LED-Licht
@@ -183,7 +201,7 @@ weaknesses:
   - Akkulaufzeit sinkt bei häufiger Live-Ortung und schwacher Mobilfunkabdeckung
   - Sicherheitsöffnung kann zum Verlust von Halsband und Tracker führen
 experience:
-  summary: Redaktionelle Einordnung anhand aktueller Hersteller- und Supportangaben.
+  summary: Redaktionelle Einordnung anhand von Hersteller- und Supportangaben sowie externen Praxistests.
   methodology: >-
     Kein eigener Praxistest; technische Daten und Funktionsumfang wurden mit den offiziellen Angaben von Tractive
     abgeglichen.
@@ -328,6 +346,7 @@ faq:
     answer: >-
       Tractive nennt bis zu sieben Tage mit eingerichteter Energiesparzone und bis zu vier Tage ohne Energiesparzone.
       Häufiges Live-Tracking, schwaches GPS-Signal und geringe Mobilfunkabdeckung können die Laufzeit verkürzen.
+      Diese Maximalwerte sind Herstellerangaben; die unabhängigen Beobachtungen stehen unter „Quellen und Prüfgrundlage“ bei den externen Belegen.
   - question: Warum hat das Halsband einen Sicherheitsverschluss?
     answer: >-
       Der Verschluss soll sich unter Zug öffnen, damit sich eine festhängende Katze befreien kann. Dabei können Halsband
@@ -339,7 +358,8 @@ faq:
   - question: Funktioniert der Tracker ohne Mobilfunkempfang?
     answer: >-
       Der Tracker kann seine Position per Satellit bestimmen, benötigt für die Übertragung an die App jedoch eine
-      unterstützte Mobilfunkverbindung. Ohne Netz können aktuelle Daten verzögert ankommen.
+      unterstützte Mobilfunkverbindung. Ohne Netz können aktuelle Daten verzögert ankommen. Auch bei Netzempfang sind Standortwarnungen nicht
+      garantiert sofort verfügbar; die externe Evidenz beschreibt Verzögerungen und Fehlalarme.
   - question: Diagnostiziert der Tracker Krankheiten?
     answer: >-
       Nein. Aktivitäts-, Herz- und Atemfrequenzdaten können Veränderungen und Trends sichtbar machen, ersetzen aber

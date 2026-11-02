@@ -59,10 +59,10 @@ images:
     - src: ../../assets/images/products/petsafe-smart-feed-2/gallery-3.webp
       alt: PetSafe Smart Feed 2.0 in Wohnsituationen mit Katzen und Hund
 price:
-  current: 184.15
+  current: 184.47
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-10-22T13:05:35.849Z"
+  checkedAt: "2026-11-02T08:10:54.870Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -77,7 +77,7 @@ rating: 4.4
 score: 88
 
 priceState: "available"
-priceUpdated: "2026-10-22T13:05:35.849Z"
+priceUpdated: "2026-11-02T08:10:54.870Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"

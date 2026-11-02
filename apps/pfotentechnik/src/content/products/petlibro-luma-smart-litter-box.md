@@ -155,7 +155,7 @@ offers:
       current: 799.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-10-22T13:05:12.946Z"
+      checkedAt: "2026-11-02T08:10:34.930Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -179,8 +179,8 @@ offers:
     variantId: "53374260642158"
     expectedSku: "PL-LB001-31W"
     variantLabel: "1 paket"
-    lastAttemptAt: "2026-10-22T13:05:12.946Z"
-    availabilityUpdated: "2026-10-22T13:05:12.946Z"
+    lastAttemptAt: "2026-11-02T08:10:34.930Z"
+    availabilityUpdated: "2026-11-02T08:10:34.930Z"
 sensorLimits:
   automaticModeMinimumWeightKg: 1
   belowMinimumBehavior: manualOnly

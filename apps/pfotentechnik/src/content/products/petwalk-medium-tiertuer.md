@@ -34,7 +34,7 @@ price:
   current: 2016.67
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-10-22T13:05:36.234Z"
+  checkedAt: "2026-11-02T08:10:55.297Z"
   source:
     id: "petwalk.at"
     label: "petwalk.at"
@@ -49,7 +49,7 @@ editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentati
 rating: 3.7
 
 priceState: "available"
-priceUpdated: "2026-10-22T13:05:36.234Z"
+priceUpdated: "2026-11-02T08:10:55.297Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

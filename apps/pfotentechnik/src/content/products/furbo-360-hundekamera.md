@@ -55,7 +55,7 @@ price:
   currency: "EUR"
   status: "unknown"
   comparisonText: "https://amzn.to/46asA9o"
-  checkedAt: "2026-10-22T13:03:53.992Z"
+  checkedAt: "2026-11-02T08:09:22.857Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -159,7 +159,7 @@ affiliate:
   rel: "sponsored nofollow noopener"
   target: "_blank"
 priceState: "available"
-priceUpdated: "2026-10-22T13:03:53.992Z"
+priceUpdated: "2026-11-02T08:09:22.857Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

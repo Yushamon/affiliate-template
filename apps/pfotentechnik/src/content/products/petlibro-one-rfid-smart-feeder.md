@@ -264,7 +264,7 @@ offers:
       current: 199.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-10-22T13:05:16.721Z"
+      checkedAt: "2026-11-02T08:10:37.588Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -288,8 +288,8 @@ offers:
     variantId: "53222683672942"
     expectedSku: "PL-AF301-38B"
     variantLabel: "1 Paket / Schwarz"
-    lastAttemptAt: "2026-10-22T13:05:16.721Z"
-    availabilityUpdated: "2026-10-22T13:05:16.721Z"
+    lastAttemptAt: "2026-11-02T08:10:37.588Z"
+    availabilityUpdated: "2026-11-02T08:10:37.588Z"
 ---
 Der PETLIBRO One RFID Smart Feeder kombiniert automatische Fütterung mit einem geschützten Napfzugang und eignet sich ideal für Mehrkatzenhaushalte.
 

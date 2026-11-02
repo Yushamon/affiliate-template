@@ -30,7 +30,7 @@ heroImage:
   src: "../../assets/images/editorial/feeder-power-outage.webp"
   alt: "Automatischer Futterautomat mit Netzteil, eingelegten Backup-Batterien und ausgefallenem WLAN"
 publishedAt: "2026-07-12"
-updatedAt: "2026-10-22"
+updatedAt: "2026-11-02"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: ["futterautomat", "stromausfall", "batterie", "netzteil", "wlan", "offline", "notstrom", "sicherheit"]
 hub:
@@ -198,7 +198,9 @@ Grundlage sind die bereits erfassten Angaben aus dem [PETLIBRO-Support zum AIR W
 
 ### Praxisbeispiel: PETLIBRO-Cloud-/App-Störung im August 2026
 
-Für den 11.–12.08.2026 dokumentiert PETLIBRO eine Cloud-/App-Störung mit zeitweise eingeschränktem Fernzugriff und App-Funktionen. Laut Hersteller liefen bereits lokal gespeicherte Zeitpläne weiter, sofern das Gerät nicht zurückgesetzt wurde. Einzelne Aktivitätsdaten konnten verloren gehen; während der Störung geänderte Einstellungen wurden möglicherweise nicht gespeichert. PETLIBRO empfiehlt deshalb, diese Einstellungen anschließend zu prüfen. Das beschreibt den dokumentierten Vorfall und ist keine Funktionszusage für sämtliche PETLIBRO-Geräte oder andere Hersteller. Quelle: [PETLIBRO-Servicestatus](https://petlibro.com/pages/petlibro-status), geprüft am 22.10.2026.
+PETLIBRO dokumentiert für den 11.–12.08.2026 eine Cloud-/App-Störung. Die [offizielle Ausfall-FAQ vom 25.08.2026](https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq) präzisiert: Bei einzelnen Geräten verzögerten sich Mahlzeiten oder fielen aus. Lokale Speicherung allein garantierte die Ausführung nicht; je nach Modell und Gerätezustand konnten interne Uhr und fehlende Zeitsynchronisierung eine Rolle spielen, besonders bei Stromunterbrechungen im Offline-Zustand.
+
+Laut PETLIBRO beweist ein fehlender App-Eintrag keinen Fütterungsausfall; umgekehrt bestätigt ein vorhandener Eintrag allein keine tatsächliche Futterausgabe. **Unsere redaktionelle Empfehlung:** Bei längerer Abwesenheit die Ausgabe unabhängig kontrollieren lassen, etwa vor Ort oder per Kamera mit unabhängigem Cloud-Dienst. Der Vorfall gilt nicht pauschal für alle PETLIBRO-Geräte; Offline-Funktionen bleiben modellabhängig.
 
 ## Was bedeutet „lokal gespeicherter Fütterungsplan“?
 
@@ -697,6 +699,8 @@ Wir trennen fünf Prüfebenen:
 Herstellerangaben zu Laufzeit und Notbetrieb werden nur modellbezogen übernommen. Sie gelten nicht automatisch für andere Baureihen oder spätere Revisionen. Entscheidend ist der praktische Test mit der konkreten Hardware, Firmware, Batterie und Futtersorte.
 
 ## Quellen
+
+- [PETLIBRO: App Outage FAQ, 25.08.2026](https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq) – Herstellerinformation zum konkreten Vorfall, Abschnitte 4–6; geprüft am 02.11.2026.
 
 - [PETLIBRO: Servicestatus zur Cloud-/App-Störung vom 11.–12.08.2026](https://petlibro.com/pages/petlibro-status) – geprüft am 22.10.2026.
   <!-- checkedAt: 2026-10-22; Umfang: Störung vom 11.–12.08.2026. -->

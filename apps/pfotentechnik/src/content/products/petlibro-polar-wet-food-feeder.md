@@ -21,7 +21,7 @@ category:
   path: /smarte-futterautomaten/
 productUrl: /produkt/petlibro-polar-wet-food-feeder/
 publishedAt: "2026-07-12"
-updatedAt: "2026-10-22"
+updatedAt: "2026-11-02"
 author:
   name: PfotenTechnik Redaktion
   role: Redaktion
@@ -327,7 +327,9 @@ faq:
   - question: Kann ich den Polar ohne App öffnen?
     answer: >-
       Eine physische Fütterungstaste besitzt das Gerät nicht. Spontane Öffnungen werden laut PETLIBRO über Feed Now oder
-      Open Now in der App ausgelöst.
+      Open Now in der App ausgelöst. Wichtig: Nach einem Zurücksetzen oder erneuten Verknüpfen mit der App (Rebinding)
+      müssen die Fütterungspläne laut PETLIBRO-Ausfall-FAQ vom 25.08.2026 neu eingerichtet werden. Kontrolliere
+      anschließend, ob alle Mahlzeiten korrekt hinterlegt sind.
   - question: Ist Rohfleisch geeignet?
     answer: Nein. PETLIBRO empfiehlt das Gerät wegen der unterschiedlichen Verderblichkeit nicht für Rohfleisch.
   - question: Ist die Schale spülmaschinengeeignet?
@@ -382,6 +384,13 @@ comparisonData:
     abmessungen: 361 × 340 × 196 mm
     gewicht: 3,4 kg ohne Netzteil
     geeignet_fur: Katzen und kleine Hunde
+evidenceSources:
+  - source: "PETLIBRO – App Outage FAQ, 25.08.2026 (Herstellerinformation)"
+    url: "https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq"
+    accessedAt: "2026-11-02"
+    sourceType: manufacturer
+    assertion: "Abschnitte 3 und 6: Polar-Zeitpläne nach Reset oder Rebinding neu einrichten."
+    fields: ["faq"]
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -416,7 +425,7 @@ offers:
       current: 199.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-10-22T13:05:19.008Z"
+      checkedAt: "2026-11-02T08:10:39.764Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -440,8 +449,8 @@ offers:
     variantId: "52122051084654"
     expectedSku: "PL-AF109-33B"
     variantLabel: "Schwarz / Edelstahlnapf"
-    lastAttemptAt: "2026-10-22T13:05:19.008Z"
-    availabilityUpdated: "2026-10-22T13:05:19.008Z"
+    lastAttemptAt: "2026-11-02T08:10:39.764Z"
+    availabilityUpdated: "2026-11-02T08:10:39.764Z"
 ---
 Der **PETLIBRO Polar Wet Food Feeder PLAF109** gehört zu den wenigen Nassfutterautomaten mit aktiver Kühlung. Drei vorbereitete Portionen werden nicht nur mit Kühlakkus temperiert, sondern über ein thermoelektrisches System gekühlt. Im [Vergleich der besten Nassfutterautomaten](/vergleiche/beste-futterautomaten-fuer-nassfutter/) ordnen wir ihn direkt gegen aktive Kühlung, Kühlakku-Modelle und Offline-Lösungen ein.
 
@@ -477,11 +486,13 @@ Der Ausfallschutz ist deshalb kein Ersatz für:
 
 Zeitpläne und spontane Öffnungen werden über die PETLIBRO-App gesteuert. Eine physische Fütterungstaste am Gerät gibt es laut Hilfebereich nicht.
 
-Das ist komfortabel, solange Konto, App und Verbindung funktionieren. Vor längerer Abwesenheit sollten Zeitplan, WLAN-Ausfall, Stromunterbrechung und Batteriewechsel unter Aufsicht getestet werden.
+Das ist komfortabel, solange Konto, App und Verbindung funktionieren.
+
+Vor längerer Abwesenheit sollten Zeitplan, WLAN-Ausfall, Stromunterbrechung und Batteriewechsel unter Aufsicht getestet werden.
 
 ### App und Cloud sind ein echter Abhängigkeitspunkt
 
-Diese Einschränkung ist nicht nur theoretisch. Im August 2026 berichtete [The Verge über einen größeren PETLIBRO-Dienstausfall](https://www.theverge.com/tech/979295/petlibro-outage-smart-pet-feeders), bei dem Nutzer unter anderem auch beim Polar ausgefallene oder nicht ausgeführte Fütterungen meldeten. PETLIBRO erklärte, lokal gespeicherte Zeitpläne sollten grundsätzlich auch ohne Online-Kommunikation funktionieren; zugleich wurden einzelne Fälle untersucht, in denen Geräte trotzdem nicht wie geplant fütterten.
+Diese Einschränkung ist nicht nur theoretisch. Im August 2026 berichtete [The Verge über einen größeren PETLIBRO-Dienstausfall](https://www.theverge.com/tech/979295/petlibro-outage-smart-pet-feeders), bei dem Nutzer unter anderem auch beim Polar ausgefallene oder nicht ausgeführte Fütterungen meldeten. Die spätere offizielle FAQ bestätigt modell- und zustandsabhängige Probleme mit der Ausführung lokal gespeicherter Pläne; ein Batterie-Backup belegt keine Cloud-Unabhängigkeit.
 
 Für die Einordnung heißt das: **Das Batterie-Backup schützt nicht automatisch vor App-, Cloud- oder Geräteproblemen.** Wer den Polar während einer Abwesenheit nutzt, sollte deshalb nicht nur Stromausfall, sondern auch Offline-Verhalten und den konkreten Zeitplan vorher testen.
 
@@ -516,6 +527,7 @@ Wenn aktive Kühlung nicht nötig ist und Offline-Betrieb wichtiger ist, ist der
 
 Die Einordnung basiert auf aktuellen PETLIBRO-Unterlagen; ein eigener Langzeit- oder Temperaturtest liegt nicht vor.
 
+- [PETLIBRO: App Outage FAQ, 25.08.2026](https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq) – Herstellerinformation, Abschnitte 3 und 6; geprüft am 02.11.2026.
 - [PETLIBRO Deutschland: Polar Nassfutterautomat](https://de.petlibro.com/products/polar-wet-food-pet-feeder)
   <!-- checkedAt: 2026-10-22; Umfang: Modellrevision und AA-Backup-Spezifikation. -->
 - [WIRED: Hands-on-/Langzeitbericht zum Polar, aktualisiert am 17.10.2026](https://www.wired.com/gallery/best-automatic-cat-feeders/) – geprüft am 22.10.2026; als externe Evidenz erfasst.
