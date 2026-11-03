@@ -167,9 +167,7 @@ weaknesses:
   - Keine Kamera oder Tiererkennung
   - Portionen schwanken je nach Kroketten
 experience:
-  summary: >-
-    Nutzerberichte loben funktionierendes Batterie-Backup und stabile Routinen. Kritik betrifft Einrichtung,
-    Hub-Abhängigkeit und Schwankungen bei unregelmäßigen Kroketten.
+  summary: "Beim C1 sind Smart-Home-Steuerung und Portionskontrolle zwei verschiedene Aufgaben. Der Hersteller setzt für die Einbindung einen kompatiblen Aqara-Zigbee-Hub voraus. Wer keinen solchen Hub nutzen möchte, sollte ein lokal bedienbares Modell ohne diese Zusatzabhängigkeit prüfen."
   positives:
     - Zeitpläne bleiben lokal aktiv
     - Batterie-Backup wurde in Nutzerberichten bestätigt
@@ -178,7 +176,8 @@ experience:
     - Einzelne Reset- und Einrichtungsprobleme
     - Hub verursacht Zusatzkosten
     - Grammstatistik basiert auf kalibrierter Portion statt echter Waage
-  methodology: Offizielle Aqara-Daten, FAQ, Handbuch und öffentliche Langzeitberichte; kein eigener Langzeittest.
+  methodology: "Offizielle Aqara-Daten, FAQ, Handbuch und öffentliche Langzeitberichte; kein eigener Langzeittest."
+  reliability: "Aqara beschreibt die Grammstatistik als Umrechnung: Eine Ausgabe auf einer Küchenwaage wiegen und den Wert in den Geräteeinstellungen hinterlegen. Das ist keine eingebaute Messung der gefressenen Menge. Unser Kontrollvorschlag: mehrere Ausgaben mit dem eigenen Futter einzeln wiegen, Streuung notieren und nach einem Futterwechsel neu abgleichen. Ein App-Protokoll ersetzt diese Prüfung nicht."
 alternatives:
   - xiaomi-smart-pet-food-feeder-2
   - pawsync-smart-pet-feeder
@@ -309,6 +308,14 @@ decisionFacts:
   - label: "Gewicht"
     value: "Nicht vom Hersteller ausgewiesen"
     consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
+evidenceSources:
+  - source: "Herstellerdokumentation – gezielter Aussagenabgleich 35.5"
+    url: "https://www.aqara.com/en/product/smart-pet-feeder-c1/"
+    accessedAt: "2026-11-02"
+    sourceType: manufacturer
+    assertion: "Produktseite: Aqara-Zigbee-Hub und Grammstatistik nach manueller Wägung; Herstelleranleitung bestätigt Hub-Voraussetzung. Keine Messung der tatsächlichen Futteraufnahme ableiten."
+    fields: ["experience.summary", "experience.reliability"]
+
 ---
 Der Aqara Smart Pet Feeder C1 gehört zur Kategorie der [Smarten Futterautomaten](/smarte-futterautomaten/), richtet sich jedoch vor allem an Nutzer des Aqara-Ökosystems. Statt möglichst vieler Komfortfunktionen stehen lokale Zeitpläne, Zigbee-Automationen und ein Batterie-Backup im Mittelpunkt. Wer bereits Aqara-Komponenten nutzt, erhält dadurch einen besonders zuverlässigen Futterautomaten auch dann, wenn die Internetverbindung ausfällt.
 

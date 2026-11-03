@@ -174,9 +174,10 @@ weaknesses:
   - keine App
   - nur zwei Mahlzeiten
 experience:
-  summary: Closer Pets weist selbst darauf hin, dass die analogen Timer einige Minuten früher oder später öffnen können.
-  methodology: Redaktionelle Einordnung anhand offizieller Closer-Pets-Produkt- und Supportseiten; kein eigener Langzeittest.
+  summary: "Der C200 gibt zwei vorgefüllte Fächer über getrennte 48-Stunden-Timer frei. Wenn ein Fach schon bei Beginn offen bleibt, steht nur das zweite für eine spätere Öffnung bereit. Der Timerhorizont beschreibt die Mechanik und ist keine Zusage, dass jedes Nassfutter 48 Stunden sicher gekühlt bleibt."
+  methodology: "Redaktionelle Einordnung anhand offizieller Closer-Pets-Produkt- und Supportseiten; kein eigener Langzeittest."
   maintenance: Deckel und Schalen regelmäßig reinigen. Kühlakku vollständig einfrieren und Timermechanik trocken halten.
+  reliability: "Plane zuerst die tatsächlich später benötigten Öffnungen. Zwei gleichzeitig per Deckelverbinder geöffnete Fächer sind keine zwei aufeinanderfolgenden Mahlzeiten und verhindern keinen Futtertausch zwischen Tieren. Unser Kontrollvorschlag: beide Timer vor dem Einsatz unter Aufsicht mit leeren Fächern auslösen lassen und Öffnung sowie Uhrzeit prüfen. Eine individuelle Futterzuteilung oder exakte elektronische Grammkontrolle leistet dieses Fachprinzip nicht."
 alternatives:
   - cat-mate-c300
   - cat-mate-c500
@@ -285,6 +286,14 @@ decisionFacts:
   - label: "Gewicht"
     value: "Nicht vom Hersteller ausgewiesen"
     consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
+evidenceSources:
+  - source: "Herstellerdokumentation – gezielter Aussagenabgleich 35.5"
+    url: "https://closerpets.co.uk/collections/cat-feeders/products/two-meal-automatic-pet-feeder-c200-petmate"
+    accessedAt: "2026-11-02"
+    sourceType: manufacturer
+    assertion: "Hersteller nennt zwei vorgefüllte Fächer, 48-Stunden-Timer, Deckelverbinder und einen Kühlakku. Gleichzeitige Freigabe ist keine getrennte zeitliche Mahlzeitenfolge; Timerdauer ist keine validierte Futterhaltbarkeit."
+    fields: ["experience.summary", "experience.reliability"]
+
 ---
 Der Cat Mate C200 ist bewusst einfach. Zwei analoge Timer steuern zwei getrennte Fächer, ohne App, WLAN oder Netzanschluss.
 

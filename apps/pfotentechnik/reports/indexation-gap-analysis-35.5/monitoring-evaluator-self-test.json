@@ -1,0 +1,12 @@
+{
+  "syntheticOnly": true,
+  "passAll": true,
+  "checks": [
+    "pending remains unknown, no false 0/10 success",
+    "both paired endpoint and exact test correct",
+    "test paired endpoint and exact test correct",
+    "control paired endpoint and exact test correct",
+    "one missing endpoint blocks complete primary analysis",
+    "unassigned identity rejected"
+  ]
+}

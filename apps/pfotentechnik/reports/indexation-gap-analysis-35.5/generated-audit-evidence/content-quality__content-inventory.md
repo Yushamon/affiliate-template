@@ -1,0 +1,58 @@
+# Content-Inventar
+
+Das Inventar bevorzugt den gerenderten Build und ergänzt ihn um Metadaten aus den Quelldateien.
+
+- Indexierbare Seiten: 259
+- Gerenderte HTML-Seiten insgesamt: 374
+- Cluster: 17
+- Primäre Intent-Kategorien: 8
+- Harte Fehler: 0
+- Warnungen: 0
+
+## Seitentypen
+
+- category-hub: 5
+- comparison: 28
+- comparison-index: 1
+- decision-guide: 7
+- editorial-page: 17
+- guide: 31
+- homepage: 1
+- knowledge-hub: 1
+- legal: 4
+- manufacturer: 33
+- manufacturer-index: 1
+- medical-guide: 9
+- problem-solving-guide: 18
+- product: 103
+
+## Suchintentionen
+
+- brand-navigation: 33
+- category-discovery: 9
+- commercial-investigation: 36
+- comparison: 28
+- informational: 26
+- medical-information: 10
+- problem-solving: 14
+- product-research: 103
+
+## Cluster
+
+- automatische-katzentoiletten: 13
+- futterautomaten: 81
+- gps-tracker: 32
+- haustierkameras: 10
+- hersteller: 26
+- hundeernaehrung: 3
+- hundegesundheit: 4
+- katzen-und-hundespezifische-hardware: 1
+- katzenernaehrung: 1
+- katzengesundheit: 1
+- katzenhaltung: 1
+- katzenklappen: 15
+- katzenverhalten: 1
+- smarte-haustiertechnik: 15
+- tierbeschaeftigung: 1
+- tierernaehrung: 1
+- trinkbrunnen: 53

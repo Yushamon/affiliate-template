@@ -1,0 +1,6785 @@
+{
+  "all": {
+    "indexed": {
+      "n": 90,
+      "metrics": {
+        "git_age_days": {
+          "n": 90,
+          "median": 112.0,
+          "q25": 106,
+          "q75": 116
+        },
+        "visible_main_words": {
+          "n": 90,
+          "median": 1048.5,
+          "q25": 798,
+          "q75": 1607
+        },
+        "analysis_words": {
+          "n": 90,
+          "median": 588.0,
+          "q25": 377,
+          "q75": 746
+        },
+        "recurrent_12token_fraction": {
+          "n": 90,
+          "median": 0.10645,
+          "q25": 0.0392,
+          "q75": 0.2387
+        },
+        "max_related_tfidf_cosine": {
+          "n": 90,
+          "median": 0.1131,
+          "q25": 0.0789,
+          "q75": 0.1772
+        },
+        "documented_source_links": {
+          "n": 90,
+          "median": 2.0,
+          "q25": 0,
+          "q75": 3
+        },
+        "independent_primary_source_candidates": {
+          "n": 90,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "concrete_statement_candidates": {
+          "n": 90,
+          "median": 2.0,
+          "q25": 0,
+          "q75": 7
+        },
+        "limitation_statement_candidates": {
+          "n": 90,
+          "median": 9.0,
+          "q25": 5,
+          "q75": 12
+        },
+        "decision_statement_candidates": {
+          "n": 90,
+          "median": 3.0,
+          "q25": 1,
+          "q75": 7
+        },
+        "calculation_candidates": {
+          "n": 90,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 90,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 2
+        },
+        "incoming_contextual_sources": {
+          "n": 90,
+          "median": 3.0,
+          "q25": 1,
+          "q75": 8
+        },
+        "incoming_contextual_indexed": {
+          "n": 90,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 3
+        },
+        "home_click_depth": {
+          "n": 90,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 78,
+          "median": 2.0,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 90,
+          "median": 4.0,
+          "q25": 3,
+          "q75": 6
+        }
+      }
+    },
+    "crawled-not-indexed": {
+      "n": 91,
+      "metrics": {
+        "git_age_days": {
+          "n": 91,
+          "median": 112,
+          "q25": 112,
+          "q75": 113
+        },
+        "visible_main_words": {
+          "n": 91,
+          "median": 1271,
+          "q25": 1023,
+          "q75": 2348
+        },
+        "analysis_words": {
+          "n": 91,
+          "median": 610,
+          "q25": 278,
+          "q75": 1987
+        },
+        "recurrent_12token_fraction": {
+          "n": 91,
+          "median": 0.1651,
+          "q25": 0.0251,
+          "q75": 0.337
+        },
+        "max_related_tfidf_cosine": {
+          "n": 91,
+          "median": 0.1034,
+          "q25": 0.0822,
+          "q75": 0.1395
+        },
+        "documented_source_links": {
+          "n": 91,
+          "median": 3,
+          "q25": 2,
+          "q75": 4
+        },
+        "independent_primary_source_candidates": {
+          "n": 91,
+          "median": 1,
+          "q25": 0,
+          "q75": 2
+        },
+        "concrete_statement_candidates": {
+          "n": 91,
+          "median": 2,
+          "q25": 0,
+          "q75": 5
+        },
+        "limitation_statement_candidates": {
+          "n": 91,
+          "median": 10,
+          "q25": 4,
+          "q75": 29
+        },
+        "decision_statement_candidates": {
+          "n": 91,
+          "median": 3,
+          "q25": 1,
+          "q75": 8
+        },
+        "calculation_candidates": {
+          "n": 91,
+          "median": 1,
+          "q25": 0,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 91,
+          "median": 0,
+          "q25": 0,
+          "q75": 2
+        },
+        "incoming_contextual_sources": {
+          "n": 91,
+          "median": 2,
+          "q25": 1,
+          "q75": 6
+        },
+        "incoming_contextual_indexed": {
+          "n": 91,
+          "median": 1,
+          "q25": 0,
+          "q75": 3
+        },
+        "home_click_depth": {
+          "n": 91,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 81,
+          "median": 2,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 91,
+          "median": 4,
+          "q25": 3,
+          "q75": 5
+        }
+      }
+    },
+    "discovered-not-indexed": {
+      "n": 78,
+      "metrics": {
+        "git_age_days": {
+          "n": 78,
+          "median": 88.0,
+          "q25": 78,
+          "q75": 90
+        },
+        "visible_main_words": {
+          "n": 78,
+          "median": 988.5,
+          "q25": 682,
+          "q75": 1168
+        },
+        "analysis_words": {
+          "n": 78,
+          "median": 273.5,
+          "q25": 204,
+          "q75": 589
+        },
+        "recurrent_12token_fraction": {
+          "n": 78,
+          "median": 0.244,
+          "q25": 0.1405,
+          "q75": 0.3333
+        },
+        "max_related_tfidf_cosine": {
+          "n": 78,
+          "median": 0.1357,
+          "q25": 0.0614,
+          "q75": 0.2209
+        },
+        "documented_source_links": {
+          "n": 78,
+          "median": 2.0,
+          "q25": 0,
+          "q75": 3
+        },
+        "independent_primary_source_candidates": {
+          "n": 78,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 78,
+          "median": 3.0,
+          "q25": 0,
+          "q75": 7
+        },
+        "limitation_statement_candidates": {
+          "n": 78,
+          "median": 4.0,
+          "q25": 2,
+          "q75": 7
+        },
+        "decision_statement_candidates": {
+          "n": 78,
+          "median": 2.0,
+          "q25": 1,
+          "q75": 4
+        },
+        "calculation_candidates": {
+          "n": 78,
+          "median": 0.5,
+          "q25": 0,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 78,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "incoming_contextual_sources": {
+          "n": 78,
+          "median": 2.0,
+          "q25": 1,
+          "q75": 3
+        },
+        "incoming_contextual_indexed": {
+          "n": 78,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "home_click_depth": {
+          "n": 78,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 71,
+          "median": 1,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 78,
+          "median": 3.0,
+          "q25": 2,
+          "q75": 5
+        }
+      }
+    }
+  },
+  "type:category": {
+    "indexed": {
+      "n": 3,
+      "metrics": {
+        "git_age_days": {
+          "n": 3,
+          "median": 108,
+          "q25": 105,
+          "q75": 117
+        },
+        "visible_main_words": {
+          "n": 3,
+          "median": 1021,
+          "q25": 1014,
+          "q75": 1096
+        },
+        "analysis_words": {
+          "n": 3,
+          "median": 737,
+          "q25": 702,
+          "q75": 746
+        },
+        "recurrent_12token_fraction": {
+          "n": 3,
+          "median": 0.0486,
+          "q25": 0.0,
+          "q75": 0.1039
+        },
+        "max_related_tfidf_cosine": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "documented_source_links": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "independent_primary_source_candidates": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 3,
+          "median": 6,
+          "q25": 3,
+          "q75": 8
+        },
+        "limitation_statement_candidates": {
+          "n": 3,
+          "median": 10,
+          "q25": 9,
+          "q75": 10
+        },
+        "decision_statement_candidates": {
+          "n": 3,
+          "median": 7,
+          "q25": 6,
+          "q75": 9
+        },
+        "calculation_candidates": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "comparison_statement_candidates": {
+          "n": 3,
+          "median": 4,
+          "q25": 3,
+          "q75": 4
+        },
+        "incoming_contextual_sources": {
+          "n": 3,
+          "median": 48,
+          "q25": 12,
+          "q75": 60
+        },
+        "incoming_contextual_indexed": {
+          "n": 3,
+          "median": 18,
+          "q25": 6,
+          "q75": 23
+        },
+        "home_click_depth": {
+          "n": 3,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "hub_click_depth": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "relevant_git_changes": {
+          "n": 3,
+          "median": 13,
+          "q25": 9,
+          "q75": 24
+        }
+      }
+    },
+    "crawled-not-indexed": {
+      "n": 0,
+      "metrics": {
+        "git_age_days": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "visible_main_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "analysis_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "recurrent_12token_fraction": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "max_related_tfidf_cosine": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "documented_source_links": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "independent_primary_source_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "concrete_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "limitation_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "decision_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "calculation_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "comparison_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_sources": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_indexed": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "home_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "hub_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "relevant_git_changes": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        }
+      }
+    },
+    "discovered-not-indexed": {
+      "n": 3,
+      "metrics": {
+        "git_age_days": {
+          "n": 3,
+          "median": 88,
+          "q25": 88,
+          "q75": 90
+        },
+        "visible_main_words": {
+          "n": 3,
+          "median": 975,
+          "q25": 937,
+          "q75": 976
+        },
+        "analysis_words": {
+          "n": 3,
+          "median": 687,
+          "q25": 674,
+          "q75": 708
+        },
+        "recurrent_12token_fraction": {
+          "n": 3,
+          "median": 0.0,
+          "q25": 0.0,
+          "q75": 0.0
+        },
+        "max_related_tfidf_cosine": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "documented_source_links": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "independent_primary_source_candidates": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 3,
+          "median": 5,
+          "q25": 4,
+          "q75": 7
+        },
+        "limitation_statement_candidates": {
+          "n": 3,
+          "median": 8,
+          "q25": 6,
+          "q75": 10
+        },
+        "decision_statement_candidates": {
+          "n": 3,
+          "median": 6,
+          "q25": 5,
+          "q75": 11
+        },
+        "calculation_candidates": {
+          "n": 3,
+          "median": 1,
+          "q25": 0,
+          "q75": 4
+        },
+        "comparison_statement_candidates": {
+          "n": 3,
+          "median": 4,
+          "q25": 2,
+          "q75": 4
+        },
+        "incoming_contextual_sources": {
+          "n": 3,
+          "median": 7,
+          "q25": 6,
+          "q75": 12
+        },
+        "incoming_contextual_indexed": {
+          "n": 3,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "home_click_depth": {
+          "n": 3,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "hub_click_depth": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "relevant_git_changes": {
+          "n": 3,
+          "median": 11,
+          "q25": 11,
+          "q75": 12
+        }
+      }
+    }
+  },
+  "type:comparison": {
+    "indexed": {
+      "n": 19,
+      "metrics": {
+        "git_age_days": {
+          "n": 19,
+          "median": 116,
+          "q25": 116,
+          "q75": 116
+        },
+        "visible_main_words": {
+          "n": 19,
+          "median": 2295,
+          "q25": 1612,
+          "q75": 3906
+        },
+        "analysis_words": {
+          "n": 19,
+          "median": 1265,
+          "q25": 633,
+          "q75": 1844
+        },
+        "recurrent_12token_fraction": {
+          "n": 19,
+          "median": 0.1622,
+          "q25": 0.0982,
+          "q75": 0.2459
+        },
+        "max_related_tfidf_cosine": {
+          "n": 19,
+          "median": 0.2009,
+          "q25": 0.1362,
+          "q75": 0.2633
+        },
+        "documented_source_links": {
+          "n": 19,
+          "median": 0,
+          "q25": 0,
+          "q75": 2
+        },
+        "independent_primary_source_candidates": {
+          "n": 19,
+          "median": 0,
+          "q25": 0,
+          "q75": 1
+        },
+        "concrete_statement_candidates": {
+          "n": 19,
+          "median": 4,
+          "q25": 3,
+          "q75": 9
+        },
+        "limitation_statement_candidates": {
+          "n": 19,
+          "median": 19,
+          "q25": 11,
+          "q75": 30
+        },
+        "decision_statement_candidates": {
+          "n": 19,
+          "median": 11,
+          "q25": 8,
+          "q75": 18
+        },
+        "calculation_candidates": {
+          "n": 19,
+          "median": 0,
+          "q25": 0,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 19,
+          "median": 3,
+          "q25": 1,
+          "q75": 4
+        },
+        "incoming_contextual_sources": {
+          "n": 19,
+          "median": 3,
+          "q25": 1,
+          "q75": 8
+        },
+        "incoming_contextual_indexed": {
+          "n": 19,
+          "median": 1,
+          "q25": 0,
+          "q75": 4
+        },
+        "home_click_depth": {
+          "n": 19,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 19,
+          "median": 2,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 19,
+          "median": 6,
+          "q25": 5,
+          "q75": 12
+        }
+      }
+    },
+    "crawled-not-indexed": {
+      "n": 3,
+      "metrics": {
+        "git_age_days": {
+          "n": 3,
+          "median": 116,
+          "q25": 109,
+          "q75": 117
+        },
+        "visible_main_words": {
+          "n": 3,
+          "median": 3097,
+          "q25": 1847,
+          "q75": 3926
+        },
+        "analysis_words": {
+          "n": 3,
+          "median": 1667,
+          "q25": 734,
+          "q75": 2335
+        },
+        "recurrent_12token_fraction": {
+          "n": 3,
+          "median": 0.1107,
+          "q25": 0.0707,
+          "q75": 0.2436
+        },
+        "max_related_tfidf_cosine": {
+          "n": 3,
+          "median": 0.1958,
+          "q25": 0.1399,
+          "q75": 0.2785
+        },
+        "documented_source_links": {
+          "n": 3,
+          "median": 2,
+          "q25": 1,
+          "q75": 2
+        },
+        "independent_primary_source_candidates": {
+          "n": 3,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "concrete_statement_candidates": {
+          "n": 3,
+          "median": 1,
+          "q25": 1,
+          "q75": 24
+        },
+        "limitation_statement_candidates": {
+          "n": 3,
+          "median": 21,
+          "q25": 8,
+          "q75": 40
+        },
+        "decision_statement_candidates": {
+          "n": 3,
+          "median": 11,
+          "q25": 7,
+          "q75": 29
+        },
+        "calculation_candidates": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 3,
+          "median": 4,
+          "q25": 2,
+          "q75": 6
+        },
+        "incoming_contextual_sources": {
+          "n": 3,
+          "median": 9,
+          "q25": 1,
+          "q75": 9
+        },
+        "incoming_contextual_indexed": {
+          "n": 3,
+          "median": 3,
+          "q25": 0,
+          "q75": 5
+        },
+        "home_click_depth": {
+          "n": 3,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 3,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "relevant_git_changes": {
+          "n": 3,
+          "median": 15,
+          "q25": 12,
+          "q75": 18
+        }
+      }
+    },
+    "discovered-not-indexed": {
+      "n": 6,
+      "metrics": {
+        "git_age_days": {
+          "n": 6,
+          "median": 90.0,
+          "q25": 88,
+          "q75": 105
+        },
+        "visible_main_words": {
+          "n": 6,
+          "median": 2258.5,
+          "q25": 1822,
+          "q75": 2455
+        },
+        "analysis_words": {
+          "n": 6,
+          "median": 1010.0,
+          "q25": 767,
+          "q75": 1228
+        },
+        "recurrent_12token_fraction": {
+          "n": 6,
+          "median": 0.1006,
+          "q25": 0.0816,
+          "q75": 0.1259
+        },
+        "max_related_tfidf_cosine": {
+          "n": 6,
+          "median": 0.1389,
+          "q25": 0,
+          "q75": 0.3413
+        },
+        "documented_source_links": {
+          "n": 6,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "independent_primary_source_candidates": {
+          "n": 6,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 6,
+          "median": 10.5,
+          "q25": 1,
+          "q75": 20
+        },
+        "limitation_statement_candidates": {
+          "n": 6,
+          "median": 16.0,
+          "q25": 14,
+          "q75": 19
+        },
+        "decision_statement_candidates": {
+          "n": 6,
+          "median": 7.5,
+          "q25": 5,
+          "q75": 9
+        },
+        "calculation_candidates": {
+          "n": 6,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 3
+        },
+        "comparison_statement_candidates": {
+          "n": 6,
+          "median": 3.0,
+          "q25": 2,
+          "q75": 4
+        },
+        "incoming_contextual_sources": {
+          "n": 6,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 3
+        },
+        "incoming_contextual_indexed": {
+          "n": 6,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "home_click_depth": {
+          "n": 6,
+          "median": 2.0,
+          "q25": 1,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 6,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 1
+        },
+        "relevant_git_changes": {
+          "n": 6,
+          "median": 7.5,
+          "q25": 5,
+          "q75": 11
+        }
+      }
+    }
+  },
+  "type:guide": {
+    "indexed": {
+      "n": 28,
+      "metrics": {
+        "git_age_days": {
+          "n": 28,
+          "median": 112.0,
+          "q25": 105,
+          "q75": 112
+        },
+        "visible_main_words": {
+          "n": 28,
+          "median": 779.5,
+          "q25": 686,
+          "q75": 1039
+        },
+        "analysis_words": {
+          "n": 28,
+          "median": 515.0,
+          "q25": 422,
+          "q75": 700
+        },
+        "recurrent_12token_fraction": {
+          "n": 28,
+          "median": 0.046200000000000005,
+          "q25": 0.0338,
+          "q75": 0.0676
+        },
+        "max_related_tfidf_cosine": {
+          "n": 28,
+          "median": 0.0959,
+          "q25": 0.0773,
+          "q75": 0.1147
+        },
+        "documented_source_links": {
+          "n": 28,
+          "median": 3.0,
+          "q25": 2,
+          "q75": 3
+        },
+        "independent_primary_source_candidates": {
+          "n": 28,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 2
+        },
+        "concrete_statement_candidates": {
+          "n": 28,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "limitation_statement_candidates": {
+          "n": 28,
+          "median": 11.0,
+          "q25": 9,
+          "q75": 12
+        },
+        "decision_statement_candidates": {
+          "n": 28,
+          "median": 3.0,
+          "q25": 1,
+          "q75": 4
+        },
+        "calculation_candidates": {
+          "n": 28,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 28,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 2
+        },
+        "incoming_contextual_sources": {
+          "n": 28,
+          "median": 3.0,
+          "q25": 1,
+          "q75": 5
+        },
+        "incoming_contextual_indexed": {
+          "n": 28,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 3
+        },
+        "home_click_depth": {
+          "n": 28,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 24,
+          "median": 2.0,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 28,
+          "median": 3.0,
+          "q25": 2,
+          "q75": 3
+        }
+      }
+    },
+    "crawled-not-indexed": {
+      "n": 41,
+      "metrics": {
+        "git_age_days": {
+          "n": 41,
+          "median": 112,
+          "q25": 110,
+          "q75": 113
+        },
+        "visible_main_words": {
+          "n": 41,
+          "median": 2348,
+          "q25": 1082,
+          "q75": 3790
+        },
+        "analysis_words": {
+          "n": 41,
+          "median": 1989,
+          "q25": 822,
+          "q75": 3290
+        },
+        "recurrent_12token_fraction": {
+          "n": 41,
+          "median": 0.0192,
+          "q25": 0.0069,
+          "q75": 0.0401
+        },
+        "max_related_tfidf_cosine": {
+          "n": 41,
+          "median": 0.1012,
+          "q25": 0.0886,
+          "q75": 0.129
+        },
+        "documented_source_links": {
+          "n": 41,
+          "median": 4,
+          "q25": 3,
+          "q75": 7
+        },
+        "independent_primary_source_candidates": {
+          "n": 41,
+          "median": 3,
+          "q25": 1,
+          "q75": 5
+        },
+        "concrete_statement_candidates": {
+          "n": 41,
+          "median": 1,
+          "q25": 0,
+          "q75": 4
+        },
+        "limitation_statement_candidates": {
+          "n": 41,
+          "median": 29,
+          "q25": 12,
+          "q75": 53
+        },
+        "decision_statement_candidates": {
+          "n": 41,
+          "median": 8,
+          "q25": 5,
+          "q75": 13
+        },
+        "calculation_candidates": {
+          "n": 41,
+          "median": 1,
+          "q25": 0,
+          "q75": 3
+        },
+        "comparison_statement_candidates": {
+          "n": 41,
+          "median": 2,
+          "q25": 1,
+          "q75": 4
+        },
+        "incoming_contextual_sources": {
+          "n": 41,
+          "median": 4,
+          "q25": 1,
+          "q75": 6
+        },
+        "incoming_contextual_indexed": {
+          "n": 41,
+          "median": 1,
+          "q25": 0,
+          "q75": 2
+        },
+        "home_click_depth": {
+          "n": 41,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 31,
+          "median": 2,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 41,
+          "median": 4,
+          "q25": 2,
+          "q75": 5
+        }
+      }
+    },
+    "discovered-not-indexed": {
+      "n": 7,
+      "metrics": {
+        "git_age_days": {
+          "n": 7,
+          "median": 90,
+          "q25": 90,
+          "q75": 90
+        },
+        "visible_main_words": {
+          "n": 7,
+          "median": 999,
+          "q25": 682,
+          "q75": 1079
+        },
+        "analysis_words": {
+          "n": 7,
+          "median": 749,
+          "q25": 396,
+          "q75": 755
+        },
+        "recurrent_12token_fraction": {
+          "n": 7,
+          "median": 0.0312,
+          "q25": 0.0309,
+          "q75": 0.0556
+        },
+        "max_related_tfidf_cosine": {
+          "n": 7,
+          "median": 0.0331,
+          "q25": 0.0231,
+          "q75": 0.0429
+        },
+        "documented_source_links": {
+          "n": 7,
+          "median": 0,
+          "q25": 0,
+          "q75": 3
+        },
+        "independent_primary_source_candidates": {
+          "n": 7,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 7,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "limitation_statement_candidates": {
+          "n": 7,
+          "median": 7,
+          "q25": 6,
+          "q75": 18
+        },
+        "decision_statement_candidates": {
+          "n": 7,
+          "median": 2,
+          "q25": 2,
+          "q75": 4
+        },
+        "calculation_candidates": {
+          "n": 7,
+          "median": 0,
+          "q25": 0,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 7,
+          "median": 1,
+          "q25": 0,
+          "q75": 1
+        },
+        "incoming_contextual_sources": {
+          "n": 7,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "incoming_contextual_indexed": {
+          "n": 7,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "home_click_depth": {
+          "n": 7,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 2,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 1
+        },
+        "relevant_git_changes": {
+          "n": 7,
+          "median": 2,
+          "q25": 2,
+          "q75": 3
+        }
+      }
+    }
+  },
+  "type:manufacturer": {
+    "indexed": {
+      "n": 8,
+      "metrics": {
+        "git_age_days": {
+          "n": 8,
+          "median": 109.0,
+          "q25": 105,
+          "q75": 113
+        },
+        "visible_main_words": {
+          "n": 8,
+          "median": 1051.0,
+          "q25": 952,
+          "q75": 1141
+        },
+        "analysis_words": {
+          "n": 8,
+          "median": 551.5,
+          "q25": 459,
+          "q75": 601
+        },
+        "recurrent_12token_fraction": {
+          "n": 8,
+          "median": 0.14975,
+          "q25": 0.1294,
+          "q75": 0.1672
+        },
+        "max_related_tfidf_cosine": {
+          "n": 8,
+          "median": 0.1605,
+          "q25": 0.0928,
+          "q75": 0.2157
+        },
+        "documented_source_links": {
+          "n": 8,
+          "median": 4.0,
+          "q25": 4,
+          "q75": 6
+        },
+        "independent_primary_source_candidates": {
+          "n": 8,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 8,
+          "median": 2.5,
+          "q25": 1,
+          "q75": 10
+        },
+        "limitation_statement_candidates": {
+          "n": 8,
+          "median": 4.0,
+          "q25": 2,
+          "q75": 6
+        },
+        "decision_statement_candidates": {
+          "n": 8,
+          "median": 3.5,
+          "q25": 3,
+          "q75": 5
+        },
+        "calculation_candidates": {
+          "n": 8,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "comparison_statement_candidates": {
+          "n": 8,
+          "median": 0.5,
+          "q25": 0,
+          "q75": 1
+        },
+        "incoming_contextual_sources": {
+          "n": 8,
+          "median": 9.5,
+          "q25": 3,
+          "q75": 10
+        },
+        "incoming_contextual_indexed": {
+          "n": 8,
+          "median": 5.0,
+          "q25": 2,
+          "q75": 7
+        },
+        "home_click_depth": {
+          "n": 8,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 7,
+          "median": 1,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 8,
+          "median": 3.5,
+          "q25": 2,
+          "q75": 4
+        }
+      }
+    },
+    "crawled-not-indexed": {
+      "n": 8,
+      "metrics": {
+        "git_age_days": {
+          "n": 8,
+          "median": 113.0,
+          "q25": 113,
+          "q75": 113
+        },
+        "visible_main_words": {
+          "n": 8,
+          "median": 1094.5,
+          "q25": 969,
+          "q75": 1225
+        },
+        "analysis_words": {
+          "n": 8,
+          "median": 530.0,
+          "q25": 480,
+          "q75": 597
+        },
+        "recurrent_12token_fraction": {
+          "n": 8,
+          "median": 0.19405,
+          "q25": 0.1877,
+          "q75": 0.2003
+        },
+        "max_related_tfidf_cosine": {
+          "n": 8,
+          "median": 0.0941,
+          "q25": 0.0833,
+          "q75": 0.1184
+        },
+        "documented_source_links": {
+          "n": 8,
+          "median": 3.0,
+          "q25": 2,
+          "q75": 3
+        },
+        "independent_primary_source_candidates": {
+          "n": 8,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 8,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 2
+        },
+        "limitation_statement_candidates": {
+          "n": 8,
+          "median": 6.5,
+          "q25": 4,
+          "q75": 9
+        },
+        "decision_statement_candidates": {
+          "n": 8,
+          "median": 4.0,
+          "q25": 3,
+          "q75": 7
+        },
+        "calculation_candidates": {
+          "n": 8,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "comparison_statement_candidates": {
+          "n": 8,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "incoming_contextual_sources": {
+          "n": 8,
+          "median": 7.0,
+          "q25": 5,
+          "q75": 9
+        },
+        "incoming_contextual_indexed": {
+          "n": 8,
+          "median": 4.5,
+          "q25": 3,
+          "q75": 6
+        },
+        "home_click_depth": {
+          "n": 8,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 8,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 1
+        },
+        "relevant_git_changes": {
+          "n": 8,
+          "median": 4.5,
+          "q25": 4,
+          "q75": 6
+        }
+      }
+    },
+    "discovered-not-indexed": {
+      "n": 17,
+      "metrics": {
+        "git_age_days": {
+          "n": 17,
+          "median": 88,
+          "q25": 78,
+          "q75": 90
+        },
+        "visible_main_words": {
+          "n": 17,
+          "median": 524,
+          "q25": 515,
+          "q75": 650
+        },
+        "analysis_words": {
+          "n": 17,
+          "median": 204,
+          "q25": 189,
+          "q75": 282
+        },
+        "recurrent_12token_fraction": {
+          "n": 17,
+          "median": 0.2489,
+          "q25": 0.2105,
+          "q75": 0.2769
+        },
+        "max_related_tfidf_cosine": {
+          "n": 17,
+          "median": 0.2705,
+          "q25": 0.2157,
+          "q75": 0.3579
+        },
+        "documented_source_links": {
+          "n": 17,
+          "median": 2,
+          "q25": 2,
+          "q75": 3
+        },
+        "independent_primary_source_candidates": {
+          "n": 17,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 17,
+          "median": 1,
+          "q25": 0,
+          "q75": 2
+        },
+        "limitation_statement_candidates": {
+          "n": 17,
+          "median": 2,
+          "q25": 1,
+          "q75": 3
+        },
+        "decision_statement_candidates": {
+          "n": 17,
+          "median": 2,
+          "q25": 2,
+          "q75": 5
+        },
+        "calculation_candidates": {
+          "n": 17,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "comparison_statement_candidates": {
+          "n": 17,
+          "median": 0,
+          "q25": 0,
+          "q75": 1
+        },
+        "incoming_contextual_sources": {
+          "n": 17,
+          "median": 2,
+          "q25": 2,
+          "q75": 4
+        },
+        "incoming_contextual_indexed": {
+          "n": 17,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "home_click_depth": {
+          "n": 17,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 17,
+          "median": 2,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 17,
+          "median": 1,
+          "q25": 1,
+          "q75": 3
+        }
+      }
+    }
+  },
+  "type:other": {
+    "indexed": {
+      "n": 9,
+      "metrics": {
+        "git_age_days": {
+          "n": 9,
+          "median": 116,
+          "q25": 114,
+          "q75": 117
+        },
+        "visible_main_words": {
+          "n": 9,
+          "median": 384,
+          "q25": 319,
+          "q75": 646
+        },
+        "analysis_words": {
+          "n": 9,
+          "median": 338,
+          "q25": 144,
+          "q75": 439
+        },
+        "recurrent_12token_fraction": {
+          "n": 9,
+          "median": 0.0,
+          "q25": 0.0,
+          "q75": 0.0
+        },
+        "max_related_tfidf_cosine": {
+          "n": 9,
+          "median": 0.058,
+          "q25": 0.0472,
+          "q75": 0.1002
+        },
+        "documented_source_links": {
+          "n": 9,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "independent_primary_source_candidates": {
+          "n": 9,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 9,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "limitation_statement_candidates": {
+          "n": 9,
+          "median": 2,
+          "q25": 1,
+          "q75": 6
+        },
+        "decision_statement_candidates": {
+          "n": 9,
+          "median": 3,
+          "q25": 1,
+          "q75": 3
+        },
+        "calculation_candidates": {
+          "n": 9,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "comparison_statement_candidates": {
+          "n": 9,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "incoming_contextual_sources": {
+          "n": 9,
+          "median": 1,
+          "q25": 1,
+          "q75": 11
+        },
+        "incoming_contextual_indexed": {
+          "n": 9,
+          "median": 1,
+          "q25": 0,
+          "q75": 2
+        },
+        "home_click_depth": {
+          "n": 9,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "hub_click_depth": {
+          "n": 2,
+          "median": 0.5,
+          "q25": 0,
+          "q75": 1
+        },
+        "relevant_git_changes": {
+          "n": 9,
+          "median": 9,
+          "q25": 5,
+          "q75": 10
+        }
+      }
+    },
+    "crawled-not-indexed": {
+      "n": 1,
+      "metrics": {
+        "git_age_days": {
+          "n": 1,
+          "median": 116,
+          "q25": 116,
+          "q75": 116
+        },
+        "visible_main_words": {
+          "n": 1,
+          "median": 1686,
+          "q25": 1686,
+          "q75": 1686
+        },
+        "analysis_words": {
+          "n": 1,
+          "median": 1066,
+          "q25": 1066,
+          "q75": 1066
+        },
+        "recurrent_12token_fraction": {
+          "n": 1,
+          "median": 0.0802,
+          "q25": 0.0802,
+          "q75": 0.0802
+        },
+        "max_related_tfidf_cosine": {
+          "n": 1,
+          "median": 0.0135,
+          "q25": 0.0135,
+          "q75": 0.0135
+        },
+        "documented_source_links": {
+          "n": 1,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "independent_primary_source_candidates": {
+          "n": 1,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 1,
+          "median": 3,
+          "q25": 3,
+          "q75": 3
+        },
+        "limitation_statement_candidates": {
+          "n": 1,
+          "median": 20,
+          "q25": 20,
+          "q75": 20
+        },
+        "decision_statement_candidates": {
+          "n": 1,
+          "median": 9,
+          "q25": 9,
+          "q75": 9
+        },
+        "calculation_candidates": {
+          "n": 1,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 1,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "incoming_contextual_sources": {
+          "n": 1,
+          "median": 12,
+          "q25": 12,
+          "q75": 12
+        },
+        "incoming_contextual_indexed": {
+          "n": 1,
+          "median": 5,
+          "q25": 5,
+          "q75": 5
+        },
+        "home_click_depth": {
+          "n": 1,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 1,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 1,
+          "median": 5,
+          "q25": 5,
+          "q75": 5
+        }
+      }
+    },
+    "discovered-not-indexed": {
+      "n": 3,
+      "metrics": {
+        "git_age_days": {
+          "n": 3,
+          "median": 102,
+          "q25": 95,
+          "q75": 106
+        },
+        "visible_main_words": {
+          "n": 3,
+          "median": 192,
+          "q25": 97,
+          "q75": 390
+        },
+        "analysis_words": {
+          "n": 3,
+          "median": 68,
+          "q25": 33,
+          "q75": 362
+        },
+        "recurrent_12token_fraction": {
+          "n": 3,
+          "median": 0.0,
+          "q25": 0.0,
+          "q75": 0.0
+        },
+        "max_related_tfidf_cosine": {
+          "n": 3,
+          "median": 0.0377,
+          "q25": 0.0135,
+          "q75": 0.1002
+        },
+        "documented_source_links": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "independent_primary_source_candidates": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "limitation_statement_candidates": {
+          "n": 3,
+          "median": 1,
+          "q25": 1,
+          "q75": 10
+        },
+        "decision_statement_candidates": {
+          "n": 3,
+          "median": 1,
+          "q25": 1,
+          "q75": 4
+        },
+        "calculation_candidates": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "comparison_statement_candidates": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 1
+        },
+        "incoming_contextual_sources": {
+          "n": 3,
+          "median": 1,
+          "q25": 0,
+          "q75": 2
+        },
+        "incoming_contextual_indexed": {
+          "n": 3,
+          "median": 1,
+          "q25": 0,
+          "q75": 2
+        },
+        "home_click_depth": {
+          "n": 3,
+          "median": 1,
+          "q25": 1,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 1,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "relevant_git_changes": {
+          "n": 3,
+          "median": 4,
+          "q25": 2,
+          "q75": 6
+        }
+      }
+    }
+  },
+  "type:product": {
+    "indexed": {
+      "n": 23,
+      "metrics": {
+        "git_age_days": {
+          "n": 23,
+          "median": 112,
+          "q25": 112,
+          "q75": 113
+        },
+        "visible_main_words": {
+          "n": 23,
+          "median": 1050,
+          "q25": 975,
+          "q75": 1477
+        },
+        "analysis_words": {
+          "n": 23,
+          "median": 265,
+          "q25": 226,
+          "q75": 657
+        },
+        "recurrent_12token_fraction": {
+          "n": 23,
+          "median": 0.3444,
+          "q25": 0.1972,
+          "q75": 0.3797
+        },
+        "max_related_tfidf_cosine": {
+          "n": 23,
+          "median": 0.1151,
+          "q25": 0.089,
+          "q75": 0.1772
+        },
+        "documented_source_links": {
+          "n": 23,
+          "median": 2,
+          "q25": 1,
+          "q75": 2
+        },
+        "independent_primary_source_candidates": {
+          "n": 23,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 23,
+          "median": 4,
+          "q25": 2,
+          "q75": 8
+        },
+        "limitation_statement_candidates": {
+          "n": 23,
+          "median": 5,
+          "q25": 3,
+          "q75": 7
+        },
+        "decision_statement_candidates": {
+          "n": 23,
+          "median": 1,
+          "q25": 0,
+          "q75": 2
+        },
+        "calculation_candidates": {
+          "n": 23,
+          "median": 1,
+          "q25": 0,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 23,
+          "median": 0,
+          "q25": 0,
+          "q75": 1
+        },
+        "incoming_contextual_sources": {
+          "n": 23,
+          "median": 1,
+          "q25": 1,
+          "q75": 3
+        },
+        "incoming_contextual_indexed": {
+          "n": 23,
+          "median": 1,
+          "q25": 0,
+          "q75": 2
+        },
+        "home_click_depth": {
+          "n": 23,
+          "median": 3,
+          "q25": 2,
+          "q75": 3
+        },
+        "hub_click_depth": {
+          "n": 23,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 23,
+          "median": 4,
+          "q25": 4,
+          "q75": 5
+        }
+      }
+    },
+    "crawled-not-indexed": {
+      "n": 38,
+      "metrics": {
+        "git_age_days": {
+          "n": 38,
+          "median": 112.0,
+          "q25": 112,
+          "q75": 113
+        },
+        "visible_main_words": {
+          "n": 38,
+          "median": 1071.5,
+          "q25": 1009,
+          "q75": 1332
+        },
+        "analysis_words": {
+          "n": 38,
+          "median": 262.5,
+          "q25": 229,
+          "q75": 562
+        },
+        "recurrent_12token_fraction": {
+          "n": 38,
+          "median": 0.3558,
+          "q25": 0.2294,
+          "q75": 0.4012
+        },
+        "max_related_tfidf_cosine": {
+          "n": 38,
+          "median": 0.10635,
+          "q25": 0.0819,
+          "q75": 0.1562
+        },
+        "documented_source_links": {
+          "n": 38,
+          "median": 2.0,
+          "q25": 1,
+          "q75": 3
+        },
+        "independent_primary_source_candidates": {
+          "n": 38,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 38,
+          "median": 4.0,
+          "q25": 2,
+          "q75": 6
+        },
+        "limitation_statement_candidates": {
+          "n": 38,
+          "median": 4.0,
+          "q25": 2,
+          "q75": 7
+        },
+        "decision_statement_candidates": {
+          "n": 38,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 2
+        },
+        "calculation_candidates": {
+          "n": 38,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 38,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "incoming_contextual_sources": {
+          "n": 38,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 2
+        },
+        "incoming_contextual_indexed": {
+          "n": 38,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "home_click_depth": {
+          "n": 38,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 3
+        },
+        "hub_click_depth": {
+          "n": 38,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 38,
+          "median": 4.0,
+          "q25": 3,
+          "q75": 5
+        }
+      }
+    },
+    "discovered-not-indexed": {
+      "n": 42,
+      "metrics": {
+        "git_age_days": {
+          "n": 42,
+          "median": 83.0,
+          "q25": 78,
+          "q75": 90
+        },
+        "visible_main_words": {
+          "n": 42,
+          "median": 1028.5,
+          "q25": 939,
+          "q75": 1187
+        },
+        "analysis_words": {
+          "n": 42,
+          "median": 261.5,
+          "q25": 223,
+          "q75": 400
+        },
+        "recurrent_12token_fraction": {
+          "n": 42,
+          "median": 0.3269,
+          "q25": 0.2244,
+          "q75": 0.3772
+        },
+        "max_related_tfidf_cosine": {
+          "n": 42,
+          "median": 0.1143,
+          "q25": 0.0931,
+          "q75": 0.1904
+        },
+        "documented_source_links": {
+          "n": 42,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 3
+        },
+        "independent_primary_source_candidates": {
+          "n": 42,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 42,
+          "median": 4.5,
+          "q25": 2,
+          "q75": 8
+        },
+        "limitation_statement_candidates": {
+          "n": 42,
+          "median": 4.0,
+          "q25": 2,
+          "q75": 5
+        },
+        "decision_statement_candidates": {
+          "n": 42,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 2
+        },
+        "calculation_candidates": {
+          "n": 42,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 2
+        },
+        "comparison_statement_candidates": {
+          "n": 42,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "incoming_contextual_sources": {
+          "n": 42,
+          "median": 2.0,
+          "q25": 1,
+          "q75": 2
+        },
+        "incoming_contextual_indexed": {
+          "n": 42,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "home_click_depth": {
+          "n": 42,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 3
+        },
+        "hub_click_depth": {
+          "n": 42,
+          "median": 1.5,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 42,
+          "median": 3.0,
+          "q25": 2,
+          "q75": 4
+        }
+      }
+    }
+  },
+  "type-cluster:comparison:futterautomaten": {
+    "indexed": {
+      "n": 15,
+      "metrics": {
+        "git_age_days": {
+          "n": 15,
+          "median": 116,
+          "q25": 116,
+          "q75": 116
+        },
+        "visible_main_words": {
+          "n": 15,
+          "median": 2295,
+          "q25": 1620,
+          "q75": 3906
+        },
+        "analysis_words": {
+          "n": 15,
+          "median": 1279,
+          "q25": 633,
+          "q75": 1844
+        },
+        "recurrent_12token_fraction": {
+          "n": 15,
+          "median": 0.199,
+          "q25": 0.1517,
+          "q75": 0.2459
+        },
+        "max_related_tfidf_cosine": {
+          "n": 15,
+          "median": 0.1877,
+          "q25": 0.1362,
+          "q75": 0.2009
+        },
+        "documented_source_links": {
+          "n": 15,
+          "median": 0,
+          "q25": 0,
+          "q75": 2
+        },
+        "independent_primary_source_candidates": {
+          "n": 15,
+          "median": 0,
+          "q25": 0,
+          "q75": 1
+        },
+        "concrete_statement_candidates": {
+          "n": 15,
+          "median": 4,
+          "q25": 3,
+          "q75": 7
+        },
+        "limitation_statement_candidates": {
+          "n": 15,
+          "median": 27,
+          "q25": 11,
+          "q75": 30
+        },
+        "decision_statement_candidates": {
+          "n": 15,
+          "median": 13,
+          "q25": 8,
+          "q75": 18
+        },
+        "calculation_candidates": {
+          "n": 15,
+          "median": 0,
+          "q25": 0,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 15,
+          "median": 3,
+          "q25": 1,
+          "q75": 3
+        },
+        "incoming_contextual_sources": {
+          "n": 15,
+          "median": 3,
+          "q25": 1,
+          "q75": 7
+        },
+        "incoming_contextual_indexed": {
+          "n": 15,
+          "median": 1,
+          "q25": 0,
+          "q75": 2
+        },
+        "home_click_depth": {
+          "n": 15,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 15,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 15,
+          "median": 6,
+          "q25": 5,
+          "q75": 9
+        }
+      }
+    },
+    "crawled-not-indexed": {
+      "n": 2,
+      "metrics": {
+        "git_age_days": {
+          "n": 2,
+          "median": 116.5,
+          "q25": 116,
+          "q75": 117
+        },
+        "visible_main_words": {
+          "n": 2,
+          "median": 2886.5,
+          "q25": 1847,
+          "q75": 3926
+        },
+        "analysis_words": {
+          "n": 2,
+          "median": 1534.5,
+          "q25": 734,
+          "q75": 2335
+        },
+        "recurrent_12token_fraction": {
+          "n": 2,
+          "median": 0.17715,
+          "q25": 0.1107,
+          "q75": 0.2436
+        },
+        "max_related_tfidf_cosine": {
+          "n": 2,
+          "median": 0.16785,
+          "q25": 0.1399,
+          "q75": 0.1958
+        },
+        "documented_source_links": {
+          "n": 2,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "independent_primary_source_candidates": {
+          "n": 2,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 1
+        },
+        "concrete_statement_candidates": {
+          "n": 2,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 1
+        },
+        "limitation_statement_candidates": {
+          "n": 2,
+          "median": 24.0,
+          "q25": 8,
+          "q75": 40
+        },
+        "decision_statement_candidates": {
+          "n": 2,
+          "median": 18.0,
+          "q25": 7,
+          "q75": 29
+        },
+        "calculation_candidates": {
+          "n": 2,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "comparison_statement_candidates": {
+          "n": 2,
+          "median": 3.0,
+          "q25": 2,
+          "q75": 4
+        },
+        "incoming_contextual_sources": {
+          "n": 2,
+          "median": 9.0,
+          "q25": 9,
+          "q75": 9
+        },
+        "incoming_contextual_indexed": {
+          "n": 2,
+          "median": 4.0,
+          "q25": 3,
+          "q75": 5
+        },
+        "home_click_depth": {
+          "n": 2,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 2,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 1
+        },
+        "relevant_git_changes": {
+          "n": 2,
+          "median": 16.5,
+          "q25": 15,
+          "q75": 18
+        }
+      }
+    },
+    "discovered-not-indexed": {
+      "n": 0,
+      "metrics": {
+        "git_age_days": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "visible_main_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "analysis_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "recurrent_12token_fraction": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "max_related_tfidf_cosine": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "documented_source_links": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "independent_primary_source_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "concrete_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "limitation_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "decision_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "calculation_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "comparison_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_sources": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_indexed": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "home_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "hub_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "relevant_git_changes": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        }
+      }
+    }
+  },
+  "type-cluster:guide:futterautomaten": {
+    "indexed": {
+      "n": 6,
+      "metrics": {
+        "git_age_days": {
+          "n": 6,
+          "median": 112.5,
+          "q25": 106,
+          "q75": 113
+        },
+        "visible_main_words": {
+          "n": 6,
+          "median": 1191.5,
+          "q25": 1039,
+          "q75": 1491
+        },
+        "analysis_words": {
+          "n": 6,
+          "median": 832.0,
+          "q25": 721,
+          "q75": 1222
+        },
+        "recurrent_12token_fraction": {
+          "n": 6,
+          "median": 0.0366,
+          "q25": 0.0161,
+          "q75": 0.0476
+        },
+        "max_related_tfidf_cosine": {
+          "n": 6,
+          "median": 0.1189,
+          "q25": 0.0936,
+          "q75": 0.1292
+        },
+        "documented_source_links": {
+          "n": 6,
+          "median": 3.0,
+          "q25": 0,
+          "q75": 3
+        },
+        "independent_primary_source_candidates": {
+          "n": 6,
+          "median": 1.5,
+          "q25": 0,
+          "q75": 3
+        },
+        "concrete_statement_candidates": {
+          "n": 6,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 2
+        },
+        "limitation_statement_candidates": {
+          "n": 6,
+          "median": 13.0,
+          "q25": 9,
+          "q75": 35
+        },
+        "decision_statement_candidates": {
+          "n": 6,
+          "median": 4.5,
+          "q25": 1,
+          "q75": 9
+        },
+        "calculation_candidates": {
+          "n": 6,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 2
+        },
+        "comparison_statement_candidates": {
+          "n": 6,
+          "median": 2.0,
+          "q25": 0,
+          "q75": 3
+        },
+        "incoming_contextual_sources": {
+          "n": 6,
+          "median": 5.0,
+          "q25": 1,
+          "q75": 9
+        },
+        "incoming_contextual_indexed": {
+          "n": 6,
+          "median": 2.0,
+          "q25": 0,
+          "q75": 6
+        },
+        "home_click_depth": {
+          "n": 6,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 6,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 6,
+          "median": 3.0,
+          "q25": 2,
+          "q75": 4
+        }
+      }
+    },
+    "crawled-not-indexed": {
+      "n": 16,
+      "metrics": {
+        "git_age_days": {
+          "n": 16,
+          "median": 113.0,
+          "q25": 113,
+          "q75": 116
+        },
+        "visible_main_words": {
+          "n": 16,
+          "median": 3100.5,
+          "q25": 1991,
+          "q75": 4214
+        },
+        "analysis_words": {
+          "n": 16,
+          "median": 2625.0,
+          "q25": 1565,
+          "q75": 3461
+        },
+        "recurrent_12token_fraction": {
+          "n": 16,
+          "median": 0.01675,
+          "q25": 0.0061,
+          "q75": 0.0401
+        },
+        "max_related_tfidf_cosine": {
+          "n": 16,
+          "median": 0.1109,
+          "q25": 0.0912,
+          "q75": 0.129
+        },
+        "documented_source_links": {
+          "n": 16,
+          "median": 5.0,
+          "q25": 3,
+          "q75": 7
+        },
+        "independent_primary_source_candidates": {
+          "n": 16,
+          "median": 3.0,
+          "q25": 1,
+          "q75": 5
+        },
+        "concrete_statement_candidates": {
+          "n": 16,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 6
+        },
+        "limitation_statement_candidates": {
+          "n": 16,
+          "median": 49.5,
+          "q25": 26,
+          "q75": 64
+        },
+        "decision_statement_candidates": {
+          "n": 16,
+          "median": 11.5,
+          "q25": 9,
+          "q75": 14
+        },
+        "calculation_candidates": {
+          "n": 16,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 3
+        },
+        "comparison_statement_candidates": {
+          "n": 16,
+          "median": 2.0,
+          "q25": 1,
+          "q75": 4
+        },
+        "incoming_contextual_sources": {
+          "n": 16,
+          "median": 5.0,
+          "q25": 4,
+          "q75": 11
+        },
+        "incoming_contextual_indexed": {
+          "n": 16,
+          "median": 1.5,
+          "q25": 1,
+          "q75": 5
+        },
+        "home_click_depth": {
+          "n": 16,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 16,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 16,
+          "median": 5.0,
+          "q25": 4,
+          "q75": 6
+        }
+      }
+    },
+    "discovered-not-indexed": {
+      "n": 0,
+      "metrics": {
+        "git_age_days": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "visible_main_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "analysis_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "recurrent_12token_fraction": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "max_related_tfidf_cosine": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "documented_source_links": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "independent_primary_source_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "concrete_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "limitation_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "decision_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "calculation_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "comparison_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_sources": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_indexed": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "home_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "hub_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "relevant_git_changes": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        }
+      }
+    }
+  },
+  "type-cluster:guide:gps-tracker": {
+    "indexed": {
+      "n": 8,
+      "metrics": {
+        "git_age_days": {
+          "n": 8,
+          "median": 105.0,
+          "q25": 105,
+          "q75": 105
+        },
+        "visible_main_words": {
+          "n": 8,
+          "median": 662.5,
+          "q25": 662,
+          "q75": 685
+        },
+        "analysis_words": {
+          "n": 8,
+          "median": 419.5,
+          "q25": 412,
+          "q75": 452
+        },
+        "recurrent_12token_fraction": {
+          "n": 8,
+          "median": 0.07055,
+          "q25": 0.0476,
+          "q75": 0.0892
+        },
+        "max_related_tfidf_cosine": {
+          "n": 8,
+          "median": 0.07955,
+          "q25": 0.0789,
+          "q75": 0.0802
+        },
+        "documented_source_links": {
+          "n": 8,
+          "median": 3.0,
+          "q25": 3,
+          "q75": 3
+        },
+        "independent_primary_source_candidates": {
+          "n": 8,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 8,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "limitation_statement_candidates": {
+          "n": 8,
+          "median": 8.0,
+          "q25": 7,
+          "q75": 9
+        },
+        "decision_statement_candidates": {
+          "n": 8,
+          "median": 1.5,
+          "q25": 0,
+          "q75": 3
+        },
+        "calculation_candidates": {
+          "n": 8,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "comparison_statement_candidates": {
+          "n": 8,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "incoming_contextual_sources": {
+          "n": 8,
+          "median": 3.0,
+          "q25": 2,
+          "q75": 3
+        },
+        "incoming_contextual_indexed": {
+          "n": 8,
+          "median": 2.0,
+          "q25": 1,
+          "q75": 2
+        },
+        "home_click_depth": {
+          "n": 8,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 8,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 8,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 1
+        }
+      }
+    },
+    "crawled-not-indexed": {
+      "n": 1,
+      "metrics": {
+        "git_age_days": {
+          "n": 1,
+          "median": 105,
+          "q25": 105,
+          "q75": 105
+        },
+        "visible_main_words": {
+          "n": 1,
+          "median": 642,
+          "q25": 642,
+          "q75": 642
+        },
+        "analysis_words": {
+          "n": 1,
+          "median": 429,
+          "q25": 429,
+          "q75": 429
+        },
+        "recurrent_12token_fraction": {
+          "n": 1,
+          "median": 0.0819,
+          "q25": 0.0819,
+          "q75": 0.0819
+        },
+        "max_related_tfidf_cosine": {
+          "n": 1,
+          "median": 0.0343,
+          "q25": 0.0343,
+          "q75": 0.0343
+        },
+        "documented_source_links": {
+          "n": 1,
+          "median": 3,
+          "q25": 3,
+          "q75": 3
+        },
+        "independent_primary_source_candidates": {
+          "n": 1,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "concrete_statement_candidates": {
+          "n": 1,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "limitation_statement_candidates": {
+          "n": 1,
+          "median": 7,
+          "q25": 7,
+          "q75": 7
+        },
+        "decision_statement_candidates": {
+          "n": 1,
+          "median": 7,
+          "q25": 7,
+          "q75": 7
+        },
+        "calculation_candidates": {
+          "n": 1,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "comparison_statement_candidates": {
+          "n": 1,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "incoming_contextual_sources": {
+          "n": 1,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "incoming_contextual_indexed": {
+          "n": 1,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "home_click_depth": {
+          "n": 1,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 1,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "relevant_git_changes": {
+          "n": 1,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        }
+      }
+    },
+    "discovered-not-indexed": {
+      "n": 0,
+      "metrics": {
+        "git_age_days": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "visible_main_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "analysis_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "recurrent_12token_fraction": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "max_related_tfidf_cosine": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "documented_source_links": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "independent_primary_source_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "concrete_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "limitation_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "decision_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "calculation_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "comparison_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_sources": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_indexed": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "home_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "hub_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "relevant_git_changes": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        }
+      }
+    }
+  },
+  "type-cluster:guide:trinkbrunnen": {
+    "indexed": {
+      "n": 10,
+      "metrics": {
+        "git_age_days": {
+          "n": 10,
+          "median": 112.0,
+          "q25": 112,
+          "q75": 112
+        },
+        "visible_main_words": {
+          "n": 10,
+          "median": 875.5,
+          "q25": 750,
+          "q75": 1068
+        },
+        "analysis_words": {
+          "n": 10,
+          "median": 596.5,
+          "q25": 484,
+          "q75": 700
+        },
+        "recurrent_12token_fraction": {
+          "n": 10,
+          "median": 0.036250000000000004,
+          "q25": 0.0303,
+          "q75": 0.05
+        },
+        "max_related_tfidf_cosine": {
+          "n": 10,
+          "median": 0.1073,
+          "q25": 0.0982,
+          "q75": 0.1147
+        },
+        "documented_source_links": {
+          "n": 10,
+          "median": 3.0,
+          "q25": 2,
+          "q75": 4
+        },
+        "independent_primary_source_candidates": {
+          "n": 10,
+          "median": 1.5,
+          "q25": 1,
+          "q75": 2
+        },
+        "concrete_statement_candidates": {
+          "n": 10,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "limitation_statement_candidates": {
+          "n": 10,
+          "median": 11.5,
+          "q25": 11,
+          "q75": 13
+        },
+        "decision_statement_candidates": {
+          "n": 10,
+          "median": 3.0,
+          "q25": 2,
+          "q75": 7
+        },
+        "calculation_candidates": {
+          "n": 10,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 10,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 3
+        },
+        "incoming_contextual_sources": {
+          "n": 10,
+          "median": 4.5,
+          "q25": 4,
+          "q75": 6
+        },
+        "incoming_contextual_indexed": {
+          "n": 10,
+          "median": 1.5,
+          "q25": 0,
+          "q75": 4
+        },
+        "home_click_depth": {
+          "n": 10,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 10,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 10,
+          "median": 3.0,
+          "q25": 3,
+          "q75": 4
+        }
+      }
+    },
+    "crawled-not-indexed": {
+      "n": 14,
+      "metrics": {
+        "git_age_days": {
+          "n": 14,
+          "median": 112.0,
+          "q25": 110,
+          "q75": 112
+        },
+        "visible_main_words": {
+          "n": 14,
+          "median": 1343.5,
+          "q25": 873,
+          "q75": 3091
+        },
+        "analysis_words": {
+          "n": 14,
+          "median": 990.5,
+          "q25": 499,
+          "q75": 2660
+        },
+        "recurrent_12token_fraction": {
+          "n": 14,
+          "median": 0.02685,
+          "q25": 0.01,
+          "q75": 0.0423
+        },
+        "max_related_tfidf_cosine": {
+          "n": 14,
+          "median": 0.09515,
+          "q25": 0.0879,
+          "q75": 0.1388
+        },
+        "documented_source_links": {
+          "n": 14,
+          "median": 3.0,
+          "q25": 3,
+          "q75": 6
+        },
+        "independent_primary_source_candidates": {
+          "n": 14,
+          "median": 2.0,
+          "q25": 1,
+          "q75": 3
+        },
+        "concrete_statement_candidates": {
+          "n": 14,
+          "median": 0.5,
+          "q25": 0,
+          "q75": 4
+        },
+        "limitation_statement_candidates": {
+          "n": 14,
+          "median": 15.5,
+          "q25": 8,
+          "q75": 45
+        },
+        "decision_statement_candidates": {
+          "n": 14,
+          "median": 7.0,
+          "q25": 6,
+          "q75": 9
+        },
+        "calculation_candidates": {
+          "n": 14,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 2
+        },
+        "comparison_statement_candidates": {
+          "n": 14,
+          "median": 3.0,
+          "q25": 1,
+          "q75": 4
+        },
+        "incoming_contextual_sources": {
+          "n": 14,
+          "median": 2.5,
+          "q25": 0,
+          "q75": 5
+        },
+        "incoming_contextual_indexed": {
+          "n": 14,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 2
+        },
+        "home_click_depth": {
+          "n": 14,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 14,
+          "median": 2.0,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 14,
+          "median": 3.0,
+          "q25": 2,
+          "q75": 4
+        }
+      }
+    },
+    "discovered-not-indexed": {
+      "n": 0,
+      "metrics": {
+        "git_age_days": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "visible_main_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "analysis_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "recurrent_12token_fraction": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "max_related_tfidf_cosine": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "documented_source_links": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "independent_primary_source_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "concrete_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "limitation_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "decision_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "calculation_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "comparison_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_sources": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_indexed": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "home_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "hub_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "relevant_git_changes": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        }
+      }
+    }
+  },
+  "type-cluster:manufacturer:hersteller": {
+    "indexed": {
+      "n": 5,
+      "metrics": {
+        "git_age_days": {
+          "n": 5,
+          "median": 113,
+          "q25": 113,
+          "q75": 113
+        },
+        "visible_main_words": {
+          "n": 5,
+          "median": 1017,
+          "q25": 815,
+          "q75": 1351
+        },
+        "analysis_words": {
+          "n": 5,
+          "median": 459,
+          "q25": 428,
+          "q75": 601
+        },
+        "recurrent_12token_fraction": {
+          "n": 5,
+          "median": 0.1672,
+          "q25": 0.1658,
+          "q75": 0.2477
+        },
+        "max_related_tfidf_cosine": {
+          "n": 5,
+          "median": 0.1395,
+          "q25": 0.0928,
+          "q75": 0.1815
+        },
+        "documented_source_links": {
+          "n": 5,
+          "median": 4,
+          "q25": 2,
+          "q75": 4
+        },
+        "independent_primary_source_candidates": {
+          "n": 5,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 5,
+          "median": 1,
+          "q25": 0,
+          "q75": 2
+        },
+        "limitation_statement_candidates": {
+          "n": 5,
+          "median": 6,
+          "q25": 5,
+          "q75": 8
+        },
+        "decision_statement_candidates": {
+          "n": 5,
+          "median": 3,
+          "q25": 3,
+          "q75": 7
+        },
+        "calculation_candidates": {
+          "n": 5,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "comparison_statement_candidates": {
+          "n": 5,
+          "median": 1,
+          "q25": 0,
+          "q75": 1
+        },
+        "incoming_contextual_sources": {
+          "n": 5,
+          "median": 9,
+          "q25": 3,
+          "q75": 10
+        },
+        "incoming_contextual_indexed": {
+          "n": 5,
+          "median": 4,
+          "q25": 2,
+          "q75": 8
+        },
+        "home_click_depth": {
+          "n": 5,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 5,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "relevant_git_changes": {
+          "n": 5,
+          "median": 4,
+          "q25": 4,
+          "q75": 5
+        }
+      }
+    },
+    "crawled-not-indexed": {
+      "n": 6,
+      "metrics": {
+        "git_age_days": {
+          "n": 6,
+          "median": 113.0,
+          "q25": 113,
+          "q75": 113
+        },
+        "visible_main_words": {
+          "n": 6,
+          "median": 1094.5,
+          "q25": 969,
+          "q75": 1225
+        },
+        "analysis_words": {
+          "n": 6,
+          "median": 530.0,
+          "q25": 480,
+          "q75": 597
+        },
+        "recurrent_12token_fraction": {
+          "n": 6,
+          "median": 0.19405,
+          "q25": 0.1877,
+          "q75": 0.2003
+        },
+        "max_related_tfidf_cosine": {
+          "n": 6,
+          "median": 0.10625000000000001,
+          "q25": 0.0941,
+          "q75": 0.1395
+        },
+        "documented_source_links": {
+          "n": 6,
+          "median": 3.0,
+          "q25": 2,
+          "q75": 4
+        },
+        "independent_primary_source_candidates": {
+          "n": 6,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 6,
+          "median": 0.5,
+          "q25": 0,
+          "q75": 2
+        },
+        "limitation_statement_candidates": {
+          "n": 6,
+          "median": 8.0,
+          "q25": 4,
+          "q75": 10
+        },
+        "decision_statement_candidates": {
+          "n": 6,
+          "median": 5.0,
+          "q25": 3,
+          "q75": 7
+        },
+        "calculation_candidates": {
+          "n": 6,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "comparison_statement_candidates": {
+          "n": 6,
+          "median": 0.5,
+          "q25": 0,
+          "q75": 1
+        },
+        "incoming_contextual_sources": {
+          "n": 6,
+          "median": 7.0,
+          "q25": 5,
+          "q75": 13
+        },
+        "incoming_contextual_indexed": {
+          "n": 6,
+          "median": 4.5,
+          "q25": 3,
+          "q75": 6
+        },
+        "home_click_depth": {
+          "n": 6,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 6,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 1
+        },
+        "relevant_git_changes": {
+          "n": 6,
+          "median": 4.5,
+          "q25": 4,
+          "q75": 7
+        }
+      }
+    },
+    "discovered-not-indexed": {
+      "n": 14,
+      "metrics": {
+        "git_age_days": {
+          "n": 14,
+          "median": 88.0,
+          "q25": 78,
+          "q75": 90
+        },
+        "visible_main_words": {
+          "n": 14,
+          "median": 536.0,
+          "q25": 515,
+          "q75": 650
+        },
+        "analysis_words": {
+          "n": 14,
+          "median": 207.5,
+          "q25": 188,
+          "q75": 282
+        },
+        "recurrent_12token_fraction": {
+          "n": 14,
+          "median": 0.25075000000000003,
+          "q25": 0.2105,
+          "q75": 0.2831
+        },
+        "max_related_tfidf_cosine": {
+          "n": 14,
+          "median": 0.2641,
+          "q25": 0.2157,
+          "q75": 0.3579
+        },
+        "documented_source_links": {
+          "n": 14,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 3
+        },
+        "independent_primary_source_candidates": {
+          "n": 14,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 14,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "limitation_statement_candidates": {
+          "n": 14,
+          "median": 2.0,
+          "q25": 1,
+          "q75": 3
+        },
+        "decision_statement_candidates": {
+          "n": 14,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 6
+        },
+        "calculation_candidates": {
+          "n": 14,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "comparison_statement_candidates": {
+          "n": 14,
+          "median": 0.5,
+          "q25": 0,
+          "q75": 1
+        },
+        "incoming_contextual_sources": {
+          "n": 14,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 4
+        },
+        "incoming_contextual_indexed": {
+          "n": 14,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 1
+        },
+        "home_click_depth": {
+          "n": 14,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 14,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 14,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 4
+        }
+      }
+    }
+  },
+  "type-cluster:other:smarte-haustiertechnik": {
+    "indexed": {
+      "n": 7,
+      "metrics": {
+        "git_age_days": {
+          "n": 7,
+          "median": 116,
+          "q25": 116,
+          "q75": 117
+        },
+        "visible_main_words": {
+          "n": 7,
+          "median": 458,
+          "q25": 365,
+          "q75": 646
+        },
+        "analysis_words": {
+          "n": 7,
+          "median": 436,
+          "q25": 338,
+          "q75": 439
+        },
+        "recurrent_12token_fraction": {
+          "n": 7,
+          "median": 0.0,
+          "q25": 0.0,
+          "q75": 0.0
+        },
+        "max_related_tfidf_cosine": {
+          "n": 7,
+          "median": 0.058,
+          "q25": 0.058,
+          "q75": 0.1002
+        },
+        "documented_source_links": {
+          "n": 7,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "independent_primary_source_candidates": {
+          "n": 7,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 7,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "limitation_statement_candidates": {
+          "n": 7,
+          "median": 5,
+          "q25": 2,
+          "q75": 6
+        },
+        "decision_statement_candidates": {
+          "n": 7,
+          "median": 3,
+          "q25": 3,
+          "q75": 3
+        },
+        "calculation_candidates": {
+          "n": 7,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "comparison_statement_candidates": {
+          "n": 7,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "incoming_contextual_sources": {
+          "n": 7,
+          "median": 1,
+          "q25": 1,
+          "q75": 2
+        },
+        "incoming_contextual_indexed": {
+          "n": 7,
+          "median": 1,
+          "q25": 0,
+          "q75": 1
+        },
+        "home_click_depth": {
+          "n": 7,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "hub_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "relevant_git_changes": {
+          "n": 7,
+          "median": 5,
+          "q25": 5,
+          "q75": 10
+        }
+      }
+    },
+    "crawled-not-indexed": {
+      "n": 0,
+      "metrics": {
+        "git_age_days": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "visible_main_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "analysis_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "recurrent_12token_fraction": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "max_related_tfidf_cosine": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "documented_source_links": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "independent_primary_source_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "concrete_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "limitation_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "decision_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "calculation_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "comparison_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_sources": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_indexed": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "home_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "hub_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "relevant_git_changes": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        }
+      }
+    },
+    "discovered-not-indexed": {
+      "n": 2,
+      "metrics": {
+        "git_age_days": {
+          "n": 2,
+          "median": 98.5,
+          "q25": 95,
+          "q75": 102
+        },
+        "visible_main_words": {
+          "n": 2,
+          "median": 291.0,
+          "q25": 192,
+          "q75": 390
+        },
+        "analysis_words": {
+          "n": 2,
+          "median": 215.0,
+          "q25": 68,
+          "q75": 362
+        },
+        "recurrent_12token_fraction": {
+          "n": 2,
+          "median": 0.0,
+          "q25": 0.0,
+          "q75": 0.0
+        },
+        "max_related_tfidf_cosine": {
+          "n": 2,
+          "median": 0.06895,
+          "q25": 0.0377,
+          "q75": 0.1002
+        },
+        "documented_source_links": {
+          "n": 2,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "independent_primary_source_candidates": {
+          "n": 2,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 2,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "limitation_statement_candidates": {
+          "n": 2,
+          "median": 5.5,
+          "q25": 1,
+          "q75": 10
+        },
+        "decision_statement_candidates": {
+          "n": 2,
+          "median": 2.5,
+          "q25": 1,
+          "q75": 4
+        },
+        "calculation_candidates": {
+          "n": 2,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "comparison_statement_candidates": {
+          "n": 2,
+          "median": 0.5,
+          "q25": 0,
+          "q75": 1
+        },
+        "incoming_contextual_sources": {
+          "n": 2,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 2
+        },
+        "incoming_contextual_indexed": {
+          "n": 2,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 2
+        },
+        "home_click_depth": {
+          "n": 2,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 1
+        },
+        "hub_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "relevant_git_changes": {
+          "n": 2,
+          "median": 3.0,
+          "q25": 2,
+          "q75": 4
+        }
+      }
+    }
+  },
+  "type-cluster:product:automatische-katzentoiletten": {
+    "indexed": {
+      "n": 0,
+      "metrics": {
+        "git_age_days": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "visible_main_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "analysis_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "recurrent_12token_fraction": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "max_related_tfidf_cosine": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "documented_source_links": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "independent_primary_source_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "concrete_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "limitation_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "decision_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "calculation_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "comparison_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_sources": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_indexed": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "home_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "hub_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "relevant_git_changes": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        }
+      }
+    },
+    "crawled-not-indexed": {
+      "n": 0,
+      "metrics": {
+        "git_age_days": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "visible_main_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "analysis_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "recurrent_12token_fraction": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "max_related_tfidf_cosine": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "documented_source_links": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "independent_primary_source_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "concrete_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "limitation_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "decision_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "calculation_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "comparison_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_sources": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_indexed": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "home_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "hub_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "relevant_git_changes": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        }
+      }
+    },
+    "discovered-not-indexed": {
+      "n": 11,
+      "metrics": {
+        "git_age_days": {
+          "n": 11,
+          "median": 79,
+          "q25": 78,
+          "q75": 88
+        },
+        "visible_main_words": {
+          "n": 11,
+          "median": 1008,
+          "q25": 888,
+          "q75": 1154
+        },
+        "analysis_words": {
+          "n": 11,
+          "median": 285,
+          "q25": 245,
+          "q75": 352
+        },
+        "recurrent_12token_fraction": {
+          "n": 11,
+          "median": 0.3299,
+          "q25": 0.2802,
+          "q75": 0.3776
+        },
+        "max_related_tfidf_cosine": {
+          "n": 11,
+          "median": 0.1904,
+          "q25": 0.0949,
+          "q75": 0.2209
+        },
+        "documented_source_links": {
+          "n": 11,
+          "median": 2,
+          "q25": 2,
+          "q75": 3
+        },
+        "independent_primary_source_candidates": {
+          "n": 11,
+          "median": 0,
+          "q25": 0,
+          "q75": 1
+        },
+        "concrete_statement_candidates": {
+          "n": 11,
+          "median": 7,
+          "q25": 5,
+          "q75": 11
+        },
+        "limitation_statement_candidates": {
+          "n": 11,
+          "median": 5,
+          "q25": 4,
+          "q75": 7
+        },
+        "decision_statement_candidates": {
+          "n": 11,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "calculation_candidates": {
+          "n": 11,
+          "median": 1,
+          "q25": 0,
+          "q75": 2
+        },
+        "comparison_statement_candidates": {
+          "n": 11,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "incoming_contextual_sources": {
+          "n": 11,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "incoming_contextual_indexed": {
+          "n": 11,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "home_click_depth": {
+          "n": 11,
+          "median": 3,
+          "q25": 2,
+          "q75": 3
+        },
+        "hub_click_depth": {
+          "n": 11,
+          "median": 2,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 11,
+          "median": 2,
+          "q25": 1,
+          "q75": 4
+        }
+      }
+    }
+  },
+  "type-cluster:product:futterautomaten": {
+    "indexed": {
+      "n": 12,
+      "metrics": {
+        "git_age_days": {
+          "n": 12,
+          "median": 113.0,
+          "q25": 113,
+          "q75": 113
+        },
+        "visible_main_words": {
+          "n": 12,
+          "median": 1033.0,
+          "q25": 975,
+          "q75": 1050
+        },
+        "analysis_words": {
+          "n": 12,
+          "median": 263.5,
+          "q25": 226,
+          "q75": 283
+        },
+        "recurrent_12token_fraction": {
+          "n": 12,
+          "median": 0.3469,
+          "q25": 0.2346,
+          "q75": 0.3797
+        },
+        "max_related_tfidf_cosine": {
+          "n": 12,
+          "median": 0.1071,
+          "q25": 0.081,
+          "q75": 0.1474
+        },
+        "documented_source_links": {
+          "n": 12,
+          "median": 2.0,
+          "q25": 1,
+          "q75": 3
+        },
+        "independent_primary_source_candidates": {
+          "n": 12,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 12,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 5
+        },
+        "limitation_statement_candidates": {
+          "n": 12,
+          "median": 5.0,
+          "q25": 3,
+          "q75": 7
+        },
+        "decision_statement_candidates": {
+          "n": 12,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 1
+        },
+        "calculation_candidates": {
+          "n": 12,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 12,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "incoming_contextual_sources": {
+          "n": 12,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 3
+        },
+        "incoming_contextual_indexed": {
+          "n": 12,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 2
+        },
+        "home_click_depth": {
+          "n": 12,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 3
+        },
+        "hub_click_depth": {
+          "n": 12,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 3
+        },
+        "relevant_git_changes": {
+          "n": 12,
+          "median": 4.0,
+          "q25": 3,
+          "q75": 4
+        }
+      }
+    },
+    "crawled-not-indexed": {
+      "n": 23,
+      "metrics": {
+        "git_age_days": {
+          "n": 23,
+          "median": 113,
+          "q25": 112,
+          "q75": 113
+        },
+        "visible_main_words": {
+          "n": 23,
+          "median": 1046,
+          "q25": 1009,
+          "q75": 1182
+        },
+        "analysis_words": {
+          "n": 23,
+          "median": 259,
+          "q25": 229,
+          "q75": 379
+        },
+        "recurrent_12token_fraction": {
+          "n": 23,
+          "median": 0.3506,
+          "q25": 0.3179,
+          "q75": 0.3978
+        },
+        "max_related_tfidf_cosine": {
+          "n": 23,
+          "median": 0.102,
+          "q25": 0.0819,
+          "q75": 0.1356
+        },
+        "documented_source_links": {
+          "n": 23,
+          "median": 2,
+          "q25": 1,
+          "q75": 3
+        },
+        "independent_primary_source_candidates": {
+          "n": 23,
+          "median": 0,
+          "q25": 0,
+          "q75": 1
+        },
+        "concrete_statement_candidates": {
+          "n": 23,
+          "median": 4,
+          "q25": 2,
+          "q75": 5
+        },
+        "limitation_statement_candidates": {
+          "n": 23,
+          "median": 5,
+          "q25": 3,
+          "q75": 7
+        },
+        "decision_statement_candidates": {
+          "n": 23,
+          "median": 1,
+          "q25": 0,
+          "q75": 1
+        },
+        "calculation_candidates": {
+          "n": 23,
+          "median": 1,
+          "q25": 0,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 23,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "incoming_contextual_sources": {
+          "n": 23,
+          "median": 1,
+          "q25": 1,
+          "q75": 2
+        },
+        "incoming_contextual_indexed": {
+          "n": 23,
+          "median": 1,
+          "q25": 0,
+          "q75": 1
+        },
+        "home_click_depth": {
+          "n": 23,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 23,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 23,
+          "median": 3,
+          "q25": 3,
+          "q75": 4
+        }
+      }
+    },
+    "discovered-not-indexed": {
+      "n": 3,
+      "metrics": {
+        "git_age_days": {
+          "n": 3,
+          "median": 113,
+          "q25": 48,
+          "q75": 113
+        },
+        "visible_main_words": {
+          "n": 3,
+          "median": 1047,
+          "q25": 1025,
+          "q75": 1456
+        },
+        "analysis_words": {
+          "n": 3,
+          "median": 301,
+          "q25": 210,
+          "q75": 632
+        },
+        "recurrent_12token_fraction": {
+          "n": 3,
+          "median": 0.2768,
+          "q25": 0.1783,
+          "q75": 0.4667
+        },
+        "max_related_tfidf_cosine": {
+          "n": 3,
+          "median": 0.1081,
+          "q25": 0.0373,
+          "q75": 0.1133
+        },
+        "documented_source_links": {
+          "n": 3,
+          "median": 2,
+          "q25": 0,
+          "q75": 2
+        },
+        "independent_primary_source_candidates": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 3,
+          "median": 4,
+          "q25": 4,
+          "q75": 8
+        },
+        "limitation_statement_candidates": {
+          "n": 3,
+          "median": 7,
+          "q25": 1,
+          "q75": 8
+        },
+        "decision_statement_candidates": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 1
+        },
+        "calculation_candidates": {
+          "n": 3,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "incoming_contextual_sources": {
+          "n": 3,
+          "median": 3,
+          "q25": 1,
+          "q75": 16
+        },
+        "incoming_contextual_indexed": {
+          "n": 3,
+          "median": 1,
+          "q25": 0,
+          "q75": 6
+        },
+        "home_click_depth": {
+          "n": 3,
+          "median": 2,
+          "q25": 2,
+          "q75": 3
+        },
+        "hub_click_depth": {
+          "n": 3,
+          "median": 2,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 3,
+          "median": 3,
+          "q25": 1,
+          "q75": 4
+        }
+      }
+    }
+  },
+  "type-cluster:product:gps-tracker": {
+    "indexed": {
+      "n": 3,
+      "metrics": {
+        "git_age_days": {
+          "n": 3,
+          "median": 105,
+          "q25": 105,
+          "q75": 105
+        },
+        "visible_main_words": {
+          "n": 3,
+          "median": 1664,
+          "q25": 1603,
+          "q75": 1712
+        },
+        "analysis_words": {
+          "n": 3,
+          "median": 673,
+          "q25": 657,
+          "q75": 762
+        },
+        "recurrent_12token_fraction": {
+          "n": 3,
+          "median": 0.165,
+          "q25": 0.1616,
+          "q75": 0.1742
+        },
+        "max_related_tfidf_cosine": {
+          "n": 3,
+          "median": 0.2623,
+          "q25": 0.2008,
+          "q75": 0.4677
+        },
+        "documented_source_links": {
+          "n": 3,
+          "median": 3,
+          "q25": 2,
+          "q75": 4
+        },
+        "independent_primary_source_candidates": {
+          "n": 3,
+          "median": 1,
+          "q25": 0,
+          "q75": 1
+        },
+        "concrete_statement_candidates": {
+          "n": 3,
+          "median": 12,
+          "q25": 11,
+          "q75": 16
+        },
+        "limitation_statement_candidates": {
+          "n": 3,
+          "median": 7,
+          "q25": 6,
+          "q75": 12
+        },
+        "decision_statement_candidates": {
+          "n": 3,
+          "median": 2,
+          "q25": 2,
+          "q75": 3
+        },
+        "calculation_candidates": {
+          "n": 3,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 1
+        },
+        "incoming_contextual_sources": {
+          "n": 3,
+          "median": 2,
+          "q25": 1,
+          "q75": 4
+        },
+        "incoming_contextual_indexed": {
+          "n": 3,
+          "median": 2,
+          "q25": 1,
+          "q75": 2
+        },
+        "home_click_depth": {
+          "n": 3,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 3,
+          "median": 1,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 3,
+          "median": 7,
+          "q25": 7,
+          "q75": 9
+        }
+      }
+    },
+    "crawled-not-indexed": {
+      "n": 1,
+      "metrics": {
+        "git_age_days": {
+          "n": 1,
+          "median": 105,
+          "q25": 105,
+          "q75": 105
+        },
+        "visible_main_words": {
+          "n": 1,
+          "median": 1800,
+          "q25": 1800,
+          "q75": 1800
+        },
+        "analysis_words": {
+          "n": 1,
+          "median": 823,
+          "q25": 823,
+          "q75": 823
+        },
+        "recurrent_12token_fraction": {
+          "n": 1,
+          "median": 0.157,
+          "q25": 0.157,
+          "q75": 0.157
+        },
+        "max_related_tfidf_cosine": {
+          "n": 1,
+          "median": 0.2623,
+          "q25": 0.2623,
+          "q75": 0.2623
+        },
+        "documented_source_links": {
+          "n": 1,
+          "median": 3,
+          "q25": 3,
+          "q75": 3
+        },
+        "independent_primary_source_candidates": {
+          "n": 1,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 1,
+          "median": 9,
+          "q25": 9,
+          "q75": 9
+        },
+        "limitation_statement_candidates": {
+          "n": 1,
+          "median": 8,
+          "q25": 8,
+          "q75": 8
+        },
+        "decision_statement_candidates": {
+          "n": 1,
+          "median": 3,
+          "q25": 3,
+          "q75": 3
+        },
+        "calculation_candidates": {
+          "n": 1,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "comparison_statement_candidates": {
+          "n": 1,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "incoming_contextual_sources": {
+          "n": 1,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "incoming_contextual_indexed": {
+          "n": 1,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "home_click_depth": {
+          "n": 1,
+          "median": 3,
+          "q25": 3,
+          "q75": 3
+        },
+        "hub_click_depth": {
+          "n": 1,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 1,
+          "median": 6,
+          "q25": 6,
+          "q75": 6
+        }
+      }
+    },
+    "discovered-not-indexed": {
+      "n": 8,
+      "metrics": {
+        "git_age_days": {
+          "n": 8,
+          "median": 92.0,
+          "q25": 78,
+          "q75": 105
+        },
+        "visible_main_words": {
+          "n": 8,
+          "median": 1206.0,
+          "q25": 1162,
+          "q75": 1665
+        },
+        "analysis_words": {
+          "n": 8,
+          "median": 313.5,
+          "q25": 233,
+          "q75": 729
+        },
+        "recurrent_12token_fraction": {
+          "n": 8,
+          "median": 0.3275,
+          "q25": 0.2081,
+          "q75": 0.3821
+        },
+        "max_related_tfidf_cosine": {
+          "n": 8,
+          "median": 0.1138,
+          "q25": 0.1032,
+          "q75": 0.1563
+        },
+        "documented_source_links": {
+          "n": 8,
+          "median": 3.0,
+          "q25": 2,
+          "q75": 3
+        },
+        "independent_primary_source_candidates": {
+          "n": 8,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 8,
+          "median": 9.0,
+          "q25": 3,
+          "q75": 11
+        },
+        "limitation_statement_candidates": {
+          "n": 8,
+          "median": 4.5,
+          "q25": 3,
+          "q75": 5
+        },
+        "decision_statement_candidates": {
+          "n": 8,
+          "median": 2.0,
+          "q25": 1,
+          "q75": 3
+        },
+        "calculation_candidates": {
+          "n": 8,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 8,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "incoming_contextual_sources": {
+          "n": 8,
+          "median": 2.0,
+          "q25": 1,
+          "q75": 3
+        },
+        "incoming_contextual_indexed": {
+          "n": 8,
+          "median": 0.5,
+          "q25": 0,
+          "q75": 2
+        },
+        "home_click_depth": {
+          "n": 8,
+          "median": 2.5,
+          "q25": 2,
+          "q75": 3
+        },
+        "hub_click_depth": {
+          "n": 8,
+          "median": 2.0,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 8,
+          "median": 4.0,
+          "q25": 4,
+          "q75": 4
+        }
+      }
+    }
+  },
+  "type-cluster:product:haustierkameras": {
+    "indexed": {
+      "n": 0,
+      "metrics": {
+        "git_age_days": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "visible_main_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "analysis_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "recurrent_12token_fraction": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "max_related_tfidf_cosine": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "documented_source_links": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "independent_primary_source_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "concrete_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "limitation_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "decision_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "calculation_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "comparison_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_sources": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_indexed": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "home_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "hub_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "relevant_git_changes": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        }
+      }
+    },
+    "crawled-not-indexed": {
+      "n": 0,
+      "metrics": {
+        "git_age_days": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "visible_main_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "analysis_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "recurrent_12token_fraction": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "max_related_tfidf_cosine": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "documented_source_links": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "independent_primary_source_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "concrete_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "limitation_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "decision_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "calculation_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "comparison_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_sources": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_indexed": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "home_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "hub_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "relevant_git_changes": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        }
+      }
+    },
+    "discovered-not-indexed": {
+      "n": 8,
+      "metrics": {
+        "git_age_days": {
+          "n": 8,
+          "median": 79.0,
+          "q25": 79,
+          "q75": 88
+        },
+        "visible_main_words": {
+          "n": 8,
+          "median": 883.0,
+          "q25": 847,
+          "q75": 988
+        },
+        "analysis_words": {
+          "n": 8,
+          "median": 204.5,
+          "q25": 196,
+          "q75": 241
+        },
+        "recurrent_12token_fraction": {
+          "n": 8,
+          "median": 0.35760000000000003,
+          "q25": 0.3333,
+          "q75": 0.3772
+        },
+        "max_related_tfidf_cosine": {
+          "n": 8,
+          "median": 0.15465,
+          "q25": 0.1143,
+          "q75": 0.1899
+        },
+        "documented_source_links": {
+          "n": 8,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "independent_primary_source_candidates": {
+          "n": 8,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 8,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "limitation_statement_candidates": {
+          "n": 8,
+          "median": 2.0,
+          "q25": 1,
+          "q75": 4
+        },
+        "decision_statement_candidates": {
+          "n": 8,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "calculation_candidates": {
+          "n": 8,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "comparison_statement_candidates": {
+          "n": 8,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "incoming_contextual_sources": {
+          "n": 8,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 1
+        },
+        "incoming_contextual_indexed": {
+          "n": 8,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "home_click_depth": {
+          "n": 8,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 3
+        },
+        "hub_click_depth": {
+          "n": 8,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 8,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 3
+        }
+      }
+    }
+  },
+  "type-cluster:product:katzenklappen": {
+    "indexed": {
+      "n": 0,
+      "metrics": {
+        "git_age_days": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "visible_main_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "analysis_words": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "recurrent_12token_fraction": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "max_related_tfidf_cosine": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "documented_source_links": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "independent_primary_source_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "concrete_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "limitation_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "decision_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "calculation_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "comparison_statement_candidates": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_sources": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "incoming_contextual_indexed": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "home_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "hub_click_depth": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        },
+        "relevant_git_changes": {
+          "n": 0,
+          "median": null,
+          "q25": null,
+          "q75": null
+        }
+      }
+    },
+    "crawled-not-indexed": {
+      "n": 1,
+      "metrics": {
+        "git_age_days": {
+          "n": 1,
+          "median": 99,
+          "q25": 99,
+          "q75": 99
+        },
+        "visible_main_words": {
+          "n": 1,
+          "median": 1332,
+          "q25": 1332,
+          "q75": 1332
+        },
+        "analysis_words": {
+          "n": 1,
+          "median": 599,
+          "q25": 599,
+          "q75": 599
+        },
+        "recurrent_12token_fraction": {
+          "n": 1,
+          "median": 0.17,
+          "q25": 0.17,
+          "q75": 0.17
+        },
+        "max_related_tfidf_cosine": {
+          "n": 1,
+          "median": 0.0822,
+          "q25": 0.0822,
+          "q75": 0.0822
+        },
+        "documented_source_links": {
+          "n": 1,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "independent_primary_source_candidates": {
+          "n": 1,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 1,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "limitation_statement_candidates": {
+          "n": 1,
+          "median": 12,
+          "q25": 12,
+          "q75": 12
+        },
+        "decision_statement_candidates": {
+          "n": 1,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "calculation_candidates": {
+          "n": 1,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 1,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "incoming_contextual_sources": {
+          "n": 1,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "incoming_contextual_indexed": {
+          "n": 1,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "home_click_depth": {
+          "n": 1,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 1,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "relevant_git_changes": {
+          "n": 1,
+          "median": 5,
+          "q25": 5,
+          "q75": 5
+        }
+      }
+    },
+    "discovered-not-indexed": {
+      "n": 9,
+      "metrics": {
+        "git_age_days": {
+          "n": 9,
+          "median": 90,
+          "q25": 90,
+          "q75": 90
+        },
+        "visible_main_words": {
+          "n": 9,
+          "median": 1017,
+          "q25": 942,
+          "q75": 1209
+        },
+        "analysis_words": {
+          "n": 9,
+          "median": 290,
+          "q25": 249,
+          "q75": 422
+        },
+        "recurrent_12token_fraction": {
+          "n": 9,
+          "median": 0.2417,
+          "q25": 0.2197,
+          "q75": 0.2749
+        },
+        "max_related_tfidf_cosine": {
+          "n": 9,
+          "median": 0.0822,
+          "q25": 0.0614,
+          "q75": 0.1609
+        },
+        "documented_source_links": {
+          "n": 9,
+          "median": 2,
+          "q25": 1,
+          "q75": 2
+        },
+        "independent_primary_source_candidates": {
+          "n": 9,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 9,
+          "median": 5,
+          "q25": 3,
+          "q75": 7
+        },
+        "limitation_statement_candidates": {
+          "n": 9,
+          "median": 3,
+          "q25": 2,
+          "q75": 4
+        },
+        "decision_statement_candidates": {
+          "n": 9,
+          "median": 1,
+          "q25": 1,
+          "q75": 2
+        },
+        "calculation_candidates": {
+          "n": 9,
+          "median": 4,
+          "q25": 3,
+          "q75": 4
+        },
+        "comparison_statement_candidates": {
+          "n": 9,
+          "median": 0,
+          "q25": 0,
+          "q75": 1
+        },
+        "incoming_contextual_sources": {
+          "n": 9,
+          "median": 2,
+          "q25": 1,
+          "q75": 2
+        },
+        "incoming_contextual_indexed": {
+          "n": 9,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "home_click_depth": {
+          "n": 9,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 9,
+          "median": 2,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 9,
+          "median": 3,
+          "q25": 3,
+          "q75": 5
+        }
+      }
+    }
+  },
+  "type-cluster:product:trinkbrunnen": {
+    "indexed": {
+      "n": 8,
+      "metrics": {
+        "git_age_days": {
+          "n": 8,
+          "median": 112.0,
+          "q25": 112,
+          "q75": 112
+        },
+        "visible_main_words": {
+          "n": 8,
+          "median": 1058.5,
+          "q25": 972,
+          "q75": 1335
+        },
+        "analysis_words": {
+          "n": 8,
+          "median": 253.0,
+          "q25": 212,
+          "q75": 492
+        },
+        "recurrent_12token_fraction": {
+          "n": 8,
+          "median": 0.35145000000000004,
+          "q25": 0.2767,
+          "q75": 0.3846
+        },
+        "max_related_tfidf_cosine": {
+          "n": 8,
+          "median": 0.10925,
+          "q25": 0.089,
+          "q75": 0.1562
+        },
+        "documented_source_links": {
+          "n": 8,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 2
+        },
+        "independent_primary_source_candidates": {
+          "n": 8,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 8,
+          "median": 5.0,
+          "q25": 3,
+          "q75": 7
+        },
+        "limitation_statement_candidates": {
+          "n": 8,
+          "median": 3.0,
+          "q25": 2,
+          "q75": 5
+        },
+        "decision_statement_candidates": {
+          "n": 8,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "calculation_candidates": {
+          "n": 8,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 8,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "incoming_contextual_sources": {
+          "n": 8,
+          "median": 1.5,
+          "q25": 1,
+          "q75": 3
+        },
+        "incoming_contextual_indexed": {
+          "n": 8,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "home_click_depth": {
+          "n": 8,
+          "median": 3.0,
+          "q25": 3,
+          "q75": 3
+        },
+        "hub_click_depth": {
+          "n": 8,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 8,
+          "median": 5.0,
+          "q25": 4,
+          "q75": 6
+        }
+      }
+    },
+    "crawled-not-indexed": {
+      "n": 13,
+      "metrics": {
+        "git_age_days": {
+          "n": 13,
+          "median": 112,
+          "q25": 112,
+          "q75": 112
+        },
+        "visible_main_words": {
+          "n": 13,
+          "median": 1079,
+          "q25": 1026,
+          "q75": 1271
+        },
+        "analysis_words": {
+          "n": 13,
+          "median": 256,
+          "q25": 220,
+          "q75": 390
+        },
+        "recurrent_12token_fraction": {
+          "n": 13,
+          "median": 0.3726,
+          "q25": 0.3333,
+          "q75": 0.4033
+        },
+        "max_related_tfidf_cosine": {
+          "n": 13,
+          "median": 0.1162,
+          "q25": 0.0868,
+          "q75": 0.1848
+        },
+        "documented_source_links": {
+          "n": 13,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "independent_primary_source_candidates": {
+          "n": 13,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 13,
+          "median": 4,
+          "q25": 2,
+          "q75": 5
+        },
+        "limitation_statement_candidates": {
+          "n": 13,
+          "median": 2,
+          "q25": 2,
+          "q75": 3
+        },
+        "decision_statement_candidates": {
+          "n": 13,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "calculation_candidates": {
+          "n": 13,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 13,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "incoming_contextual_sources": {
+          "n": 13,
+          "median": 1,
+          "q25": 1,
+          "q75": 2
+        },
+        "incoming_contextual_indexed": {
+          "n": 13,
+          "median": 1,
+          "q25": 0,
+          "q75": 1
+        },
+        "home_click_depth": {
+          "n": 13,
+          "median": 3,
+          "q25": 3,
+          "q75": 3
+        },
+        "hub_click_depth": {
+          "n": 13,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 13,
+          "median": 5,
+          "q25": 4,
+          "q75": 5
+        }
+      }
+    },
+    "discovered-not-indexed": {
+      "n": 3,
+      "metrics": {
+        "git_age_days": {
+          "n": 3,
+          "median": 78,
+          "q25": 77,
+          "q75": 78
+        },
+        "visible_main_words": {
+          "n": 3,
+          "median": 1032,
+          "q25": 974,
+          "q75": 1477
+        },
+        "analysis_words": {
+          "n": 3,
+          "median": 230,
+          "q25": 201,
+          "q75": 707
+        },
+        "recurrent_12token_fraction": {
+          "n": 3,
+          "median": 0.3581,
+          "q25": 0.1909,
+          "q75": 0.3602
+        },
+        "max_related_tfidf_cosine": {
+          "n": 3,
+          "median": 0.0951,
+          "q25": 0.0951,
+          "q75": 0.1562
+        },
+        "documented_source_links": {
+          "n": 3,
+          "median": 3,
+          "q25": 0,
+          "q75": 3
+        },
+        "independent_primary_source_candidates": {
+          "n": 3,
+          "median": 1,
+          "q25": 0,
+          "q75": 1
+        },
+        "concrete_statement_candidates": {
+          "n": 3,
+          "median": 3,
+          "q25": 2,
+          "q75": 11
+        },
+        "limitation_statement_candidates": {
+          "n": 3,
+          "median": 2,
+          "q25": 1,
+          "q75": 10
+        },
+        "decision_statement_candidates": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 3
+        },
+        "calculation_candidates": {
+          "n": 3,
+          "median": 1,
+          "q25": 0,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 1
+        },
+        "incoming_contextual_sources": {
+          "n": 3,
+          "median": 1,
+          "q25": 0,
+          "q75": 1
+        },
+        "incoming_contextual_indexed": {
+          "n": 3,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "home_click_depth": {
+          "n": 3,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 3,
+          "median": 1,
+          "q25": 1,
+          "q75": 1
+        },
+        "relevant_git_changes": {
+          "n": 3,
+          "median": 5,
+          "q25": 3,
+          "q75": 5
+        }
+      }
+    }
+  },
+  "early-paths-through-2026-07-27": {
+    "indexed": {
+      "n": 88,
+      "metrics": {
+        "git_age_days": {
+          "n": 88,
+          "median": 112.0,
+          "q25": 108,
+          "q75": 116
+        },
+        "visible_main_words": {
+          "n": 88,
+          "median": 1048.5,
+          "q25": 798,
+          "q75": 1607
+        },
+        "analysis_words": {
+          "n": 88,
+          "median": 588.0,
+          "q25": 377,
+          "q75": 737
+        },
+        "recurrent_12token_fraction": {
+          "n": 88,
+          "median": 0.1177,
+          "q25": 0.0476,
+          "q75": 0.2387
+        },
+        "max_related_tfidf_cosine": {
+          "n": 88,
+          "median": 0.1131,
+          "q25": 0.0789,
+          "q75": 0.1772
+        },
+        "documented_source_links": {
+          "n": 88,
+          "median": 2.0,
+          "q25": 0,
+          "q75": 3
+        },
+        "independent_primary_source_candidates": {
+          "n": 88,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "concrete_statement_candidates": {
+          "n": 88,
+          "median": 2.0,
+          "q25": 0,
+          "q75": 7
+        },
+        "limitation_statement_candidates": {
+          "n": 88,
+          "median": 9.0,
+          "q25": 5,
+          "q75": 12
+        },
+        "decision_statement_candidates": {
+          "n": 88,
+          "median": 3.0,
+          "q25": 1,
+          "q75": 7
+        },
+        "calculation_candidates": {
+          "n": 88,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 88,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 2
+        },
+        "incoming_contextual_sources": {
+          "n": 88,
+          "median": 3.0,
+          "q25": 1,
+          "q75": 8
+        },
+        "incoming_contextual_indexed": {
+          "n": 88,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 3
+        },
+        "home_click_depth": {
+          "n": 88,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 77,
+          "median": 2,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 88,
+          "median": 4.0,
+          "q25": 3,
+          "q75": 6
+        }
+      }
+    },
+    "crawled-not-indexed": {
+      "n": 90,
+      "metrics": {
+        "git_age_days": {
+          "n": 90,
+          "median": 112.0,
+          "q25": 112,
+          "q75": 113
+        },
+        "visible_main_words": {
+          "n": 90,
+          "median": 1248.0,
+          "q25": 1023,
+          "q75": 2323
+        },
+        "analysis_words": {
+          "n": 90,
+          "median": 604.5,
+          "q25": 278,
+          "q75": 1667
+        },
+        "recurrent_12token_fraction": {
+          "n": 90,
+          "median": 0.16755,
+          "q25": 0.0262,
+          "q75": 0.337
+        },
+        "max_related_tfidf_cosine": {
+          "n": 90,
+          "median": 0.10285,
+          "q25": 0.0822,
+          "q75": 0.1395
+        },
+        "documented_source_links": {
+          "n": 90,
+          "median": 3.0,
+          "q25": 2,
+          "q75": 4
+        },
+        "independent_primary_source_candidates": {
+          "n": 90,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 2
+        },
+        "concrete_statement_candidates": {
+          "n": 90,
+          "median": 2.0,
+          "q25": 0,
+          "q75": 5
+        },
+        "limitation_statement_candidates": {
+          "n": 90,
+          "median": 9.5,
+          "q25": 4,
+          "q75": 27
+        },
+        "decision_statement_candidates": {
+          "n": 90,
+          "median": 3.0,
+          "q25": 1,
+          "q75": 8
+        },
+        "calculation_candidates": {
+          "n": 90,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 90,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 2
+        },
+        "incoming_contextual_sources": {
+          "n": 90,
+          "median": 2.0,
+          "q25": 1,
+          "q75": 6
+        },
+        "incoming_contextual_indexed": {
+          "n": 90,
+          "median": 1.0,
+          "q25": 0,
+          "q75": 3
+        },
+        "home_click_depth": {
+          "n": 90,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 81,
+          "median": 2,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 90,
+          "median": 4.0,
+          "q25": 3,
+          "q75": 5
+        }
+      }
+    },
+    "discovered-not-indexed": {
+      "n": 13,
+      "metrics": {
+        "git_age_days": {
+          "n": 13,
+          "median": 105,
+          "q25": 105,
+          "q75": 106
+        },
+        "visible_main_words": {
+          "n": 13,
+          "median": 1456,
+          "q25": 933,
+          "q75": 1839
+        },
+        "analysis_words": {
+          "n": 13,
+          "median": 632,
+          "q25": 210,
+          "q75": 800
+        },
+        "recurrent_12token_fraction": {
+          "n": 13,
+          "median": 0.1489,
+          "q25": 0.1055,
+          "q75": 0.2081
+        },
+        "max_related_tfidf_cosine": {
+          "n": 13,
+          "median": 0.1563,
+          "q25": 0.1081,
+          "q75": 0.2157
+        },
+        "documented_source_links": {
+          "n": 13,
+          "median": 2,
+          "q25": 0,
+          "q75": 2
+        },
+        "independent_primary_source_candidates": {
+          "n": 13,
+          "median": 0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 13,
+          "median": 4,
+          "q25": 0,
+          "q75": 17
+        },
+        "limitation_statement_candidates": {
+          "n": 13,
+          "median": 7,
+          "q25": 1,
+          "q75": 10
+        },
+        "decision_statement_candidates": {
+          "n": 13,
+          "median": 1,
+          "q25": 1,
+          "q75": 4
+        },
+        "calculation_candidates": {
+          "n": 13,
+          "median": 1,
+          "q25": 0,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 13,
+          "median": 0,
+          "q25": 0,
+          "q75": 1
+        },
+        "incoming_contextual_sources": {
+          "n": 13,
+          "median": 2,
+          "q25": 1,
+          "q75": 4
+        },
+        "incoming_contextual_indexed": {
+          "n": 13,
+          "median": 1,
+          "q25": 1,
+          "q75": 3
+        },
+        "home_click_depth": {
+          "n": 13,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 11,
+          "median": 1,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 13,
+          "median": 4,
+          "q25": 3,
+          "q75": 5
+        }
+      }
+    }
+  },
+  "excluding-prior35.4": {
+    "indexed": {
+      "n": 67,
+      "metrics": {
+        "git_age_days": {
+          "n": 67,
+          "median": 112,
+          "q25": 105,
+          "q75": 114
+        },
+        "visible_main_words": {
+          "n": 67,
+          "median": 1039,
+          "q25": 696,
+          "q75": 1491
+        },
+        "analysis_words": {
+          "n": 67,
+          "median": 546,
+          "q25": 362,
+          "q75": 746
+        },
+        "recurrent_12token_fraction": {
+          "n": 67,
+          "median": 0.0881,
+          "q25": 0.0352,
+          "q75": 0.1762
+        },
+        "max_related_tfidf_cosine": {
+          "n": 67,
+          "median": 0.1037,
+          "q25": 0.0743,
+          "q75": 0.1474
+        },
+        "documented_source_links": {
+          "n": 67,
+          "median": 2,
+          "q25": 0,
+          "q75": 3
+        },
+        "independent_primary_source_candidates": {
+          "n": 67,
+          "median": 0,
+          "q25": 0,
+          "q75": 1
+        },
+        "concrete_statement_candidates": {
+          "n": 67,
+          "median": 1,
+          "q25": 0,
+          "q75": 6
+        },
+        "limitation_statement_candidates": {
+          "n": 67,
+          "median": 9,
+          "q25": 3,
+          "q75": 12
+        },
+        "decision_statement_candidates": {
+          "n": 67,
+          "median": 3,
+          "q25": 1,
+          "q75": 5
+        },
+        "calculation_candidates": {
+          "n": 67,
+          "median": 0,
+          "q25": 0,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 67,
+          "median": 1,
+          "q25": 0,
+          "q75": 2
+        },
+        "incoming_contextual_sources": {
+          "n": 67,
+          "median": 3,
+          "q25": 1,
+          "q75": 7
+        },
+        "incoming_contextual_indexed": {
+          "n": 67,
+          "median": 2,
+          "q25": 1,
+          "q75": 3
+        },
+        "home_click_depth": {
+          "n": 67,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 56,
+          "median": 2.0,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 67,
+          "median": 4,
+          "q25": 3,
+          "q75": 6
+        }
+      }
+    },
+    "crawled-not-indexed": {
+      "n": 79,
+      "metrics": {
+        "git_age_days": {
+          "n": 79,
+          "median": 112,
+          "q25": 112,
+          "q75": 113
+        },
+        "visible_main_words": {
+          "n": 79,
+          "median": 1321,
+          "q25": 1030,
+          "q75": 2398
+        },
+        "analysis_words": {
+          "n": 79,
+          "median": 627,
+          "q25": 325,
+          "q75": 2034
+        },
+        "recurrent_12token_fraction": {
+          "n": 79,
+          "median": 0.1437,
+          "q25": 0.0215,
+          "q75": 0.3215
+        },
+        "max_related_tfidf_cosine": {
+          "n": 79,
+          "median": 0.1046,
+          "q25": 0.0836,
+          "q75": 0.1388
+        },
+        "documented_source_links": {
+          "n": 79,
+          "median": 3,
+          "q25": 2,
+          "q75": 4
+        },
+        "independent_primary_source_candidates": {
+          "n": 79,
+          "median": 1,
+          "q25": 0,
+          "q75": 3
+        },
+        "concrete_statement_candidates": {
+          "n": 79,
+          "median": 3,
+          "q25": 0,
+          "q75": 5
+        },
+        "limitation_statement_candidates": {
+          "n": 79,
+          "median": 11,
+          "q25": 4,
+          "q75": 30
+        },
+        "decision_statement_candidates": {
+          "n": 79,
+          "median": 3,
+          "q25": 1,
+          "q75": 9
+        },
+        "calculation_candidates": {
+          "n": 79,
+          "median": 1,
+          "q25": 0,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 79,
+          "median": 0,
+          "q25": 0,
+          "q75": 3
+        },
+        "incoming_contextual_sources": {
+          "n": 79,
+          "median": 2,
+          "q25": 1,
+          "q75": 5
+        },
+        "incoming_contextual_indexed": {
+          "n": 79,
+          "median": 1,
+          "q25": 0,
+          "q75": 2
+        },
+        "home_click_depth": {
+          "n": 79,
+          "median": 2,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 70,
+          "median": 2.0,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 79,
+          "median": 4,
+          "q25": 3,
+          "q75": 5
+        }
+      }
+    },
+    "discovered-not-indexed": {
+      "n": 72,
+      "metrics": {
+        "git_age_days": {
+          "n": 72,
+          "median": 88.0,
+          "q25": 78,
+          "q75": 90
+        },
+        "visible_main_words": {
+          "n": 72,
+          "median": 991.0,
+          "q25": 804,
+          "q75": 1166
+        },
+        "analysis_words": {
+          "n": 72,
+          "median": 279.0,
+          "q25": 204,
+          "q75": 506
+        },
+        "recurrent_12token_fraction": {
+          "n": 72,
+          "median": 0.2402,
+          "q25": 0.1414,
+          "q75": 0.3471
+        },
+        "max_related_tfidf_cosine": {
+          "n": 72,
+          "median": 0.1143,
+          "q25": 0.0534,
+          "q75": 0.2157
+        },
+        "documented_source_links": {
+          "n": 72,
+          "median": 2.0,
+          "q25": 0,
+          "q75": 3
+        },
+        "independent_primary_source_candidates": {
+          "n": 72,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 0
+        },
+        "concrete_statement_candidates": {
+          "n": 72,
+          "median": 3.0,
+          "q25": 0,
+          "q75": 7
+        },
+        "limitation_statement_candidates": {
+          "n": 72,
+          "median": 4.0,
+          "q25": 2,
+          "q75": 7
+        },
+        "decision_statement_candidates": {
+          "n": 72,
+          "median": 1.0,
+          "q25": 1,
+          "q75": 3
+        },
+        "calculation_candidates": {
+          "n": 72,
+          "median": 0.5,
+          "q25": 0,
+          "q75": 1
+        },
+        "comparison_statement_candidates": {
+          "n": 72,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "incoming_contextual_sources": {
+          "n": 72,
+          "median": 2.0,
+          "q25": 1,
+          "q75": 2
+        },
+        "incoming_contextual_indexed": {
+          "n": 72,
+          "median": 0.0,
+          "q25": 0,
+          "q75": 1
+        },
+        "home_click_depth": {
+          "n": 72,
+          "median": 2.0,
+          "q25": 2,
+          "q75": 2
+        },
+        "hub_click_depth": {
+          "n": 65,
+          "median": 1,
+          "q25": 1,
+          "q75": 2
+        },
+        "relevant_git_changes": {
+          "n": 72,
+          "median": 3.0,
+          "q25": 2,
+          "q75": 4
+        }
+      }
+    }
+  }
+}

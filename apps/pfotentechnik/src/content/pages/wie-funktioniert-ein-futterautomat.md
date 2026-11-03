@@ -82,7 +82,7 @@ Ein Fachautomat verfolgt ein anderes Prinzip. Mehrere Mahlzeiten werden vorab in
 
 ## So entsteht aus einem Zeitplan eine Portion
 
-Bei der Einrichtung werden Uhrzeit, Anzahl der Ausgaben und Portionsstufe festgelegt. Gute Geräte speichern diesen Plan lokal. Der interne Controller prüft die Uhrzeit und aktiviert den Motor, ohne für jeden Vorgang einen Cloud-Befehl zu benötigen. Eine App kann den Plan komfortabler darstellen, sollte aber nicht die einzige Stelle sein, an der er existiert.
+Bei der Einrichtung werden Uhrzeit, Anzahl der Ausgaben und Portionsstufe festgelegt. Ob der Plan im Gerät gespeichert bleibt und welche Funktionen offline verfügbar sind, muss für das konkrete Modell belegt sein. Die Bauart oder das Vorhandensein einer App beantwortet diese Frage noch nicht. Eine App kann den Plan komfortabler darstellen, sollte aber nicht die einzige Stelle sein, an der er existiert.
 
 Der Begriff „Portion“ ist technisch nicht einheitlich. Häufig beschreibt er einen Förderschritt oder ein Volumen. Zehn Gramm kleiner Kroketten können ein anderes Volumen haben als zehn Gramm großer Kroketten. Deshalb ist die Zahl im Menü keine Ernährungsangabe. Für einen belastbaren Plan werden mehrere Ausgaben aufgefangen, einzeln gewogen und als Mittelwert betrachtet. Nach einem Futterwechsel ist diese Prüfung erneut sinnvoll.
 
@@ -93,6 +93,17 @@ Der Begriff „Portion“ ist technisch nicht einheitlich. Häufig beschreibt er
 | Motor und Uhr | Ausgabe auslösen | Stromausfall, falsche Uhrzeit | Testplan und Backup prüfen |
 | Futterkanal | Futter zum Napf führen | Krümel oder Stau | Kanal regelmäßig ansehen |
 | Napf oder Fach | Mahlzeit bereitstellen | Rückstände, fremdes Tier | reinigen und Fressplatz beobachten |
+
+## Zwei dokumentierte Beispiele, zwei verschiedene Portionsbegriffe
+
+| Beispiel | Was wird vorgegeben? | Was musst du selbst prüfen? |
+|---|---|---|
+| Aqara C1 als Vorratsautomat | Eine Ausgabe wird laut Hersteller gewogen; der eingegebene Grammwert dient der App-Statistik. | Stimmen die Ausgaben mit deinem Futter und nach einem Futterwechsel noch mit diesem Wert überein? |
+| <span class="no-auto-link">Cat Mate C200</span> als Fachautomat | Zwei vorbereitete Fächer werden über getrennte 48-Stunden-Timer freigegeben. | Wie viele spätere Öffnungen brauchst du und bleibt das vorbereitete Futter passend gelagert? |
+
+Ein Grammwert in einer App ist somit weder automatisch eine eingebaute Waage noch die gefressene Menge. Ein Timerintervall ist keine Garantie für die Haltbarkeit des Futters. Das sind unterschiedliche Prüfaufgaben; beide Geräteklassen einfach nach „Portionen pro Tag“ zu vergleichen, verdeckt diesen Unterschied.
+
+Belege: [Aqara C1 – Grammkalibrierung](https://www.aqara.com/en/product/smart-pet-feeder-c1/) und [Closer Pets C200 – Fächer und Timer](https://closerpets.co.uk/collections/cat-feeders/products/two-meal-automatic-pet-feeder-c200-petmate), Herstellerangaben, abgerufen am 02.11.2026. Die Gegenüberstellung ist redaktionell abgeleitet, kein eigener Geräteversuch.
 
 ## Welche Rolle spielen WLAN und App?
 

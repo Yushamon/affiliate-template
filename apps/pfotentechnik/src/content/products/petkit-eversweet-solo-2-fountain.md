@@ -155,9 +155,10 @@ weaknesses:
   - Filter etwa monatlich
   - Teile nur von Hand reinigen
 experience:
-  summary: Leise Brunnen werden oft erst bei niedrigem Wasserstand hörbar; tägliche Sichtkontrolle bleibt sinnvoll.
-  methodology: Redaktioneller Check aus offizieller Spezifikation und Nutzerberichten; kein eigener Langzeittest.
+  summary: "Wireless bezeichnet beim Solo 2 die entnehmbare Pumpeneinheit, nicht einen Akkubetrieb. PETKIT verlangt in der FAQ eine dauerhafte Stromversorgung. Der Solo 2 passt deshalb zu einem festen Platz mit Steckdose; für freie Aufstellung ohne Stromanschluss ist ein tatsächliches Akkumodell die andere Geräteklasse."
+  methodology: "Redaktioneller Check aus offizieller Spezifikation und Nutzerberichten; kein eigener Langzeittest."
   maintenance: Filter laut Hersteller ungefähr alle vier Wochen wechseln und Pumpe wöchentlich kontrollieren.
+  reliability: "Die Herstellerseite nennt Bluetooth als App-Verbindung. Daraus folgt keine eigenständige WLAN-Fernüberwachung des Brunnens. Vor einer Abwesenheit Wasserstand und Durchfluss direkt prüfen und eine unabhängige Napfreserve bereitstellen; aus einer App-Statusanzeige lässt sich die tatsächliche Trinkmenge nicht ableiten."
 alternatives:
   - petkit-eversweet-3-pro-uvc
   - petlibro-stainless-steel-fountain
@@ -285,6 +286,13 @@ evidenceSources:
       - comparisonData.fountain.material
       - comparisonData.fountain.powerType
       - comparisonData.fountain.dishwasherSafeParts
+  - source: "Herstellerdokumentation – gezielter Aussagenabgleich 35.5"
+    url: "https://www.petkit.com/products/eversweet-solo-2"
+    accessedAt: "2026-11-02"
+    sourceType: manufacturer
+    assertion: "Specs nennen USB und Bluetooth; FAQ verlangt dauerhaften Stromanschluss. Wireless-Pumpe ist kein Akku; keine eigenständige WLAN-Fernüberwachung aus Bluetooth ableiten."
+    fields: ["experience.summary", "experience.reliability"]
+
 ---
 Der Eversweet Solo 2 ist technisch weniger ambitioniert als die UVC-Modelle, dafür übersichtlich. Wichtig ist die Unterscheidung zwischen kabelloser Pumpe und kabellosem Gesamtbetrieb.
 

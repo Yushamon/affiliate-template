@@ -1,0 +1,105 @@
+[
+  {
+    "file": "apps/pfotentechnik/src/content/products/aqara-smart-pet-feeder-c1.md",
+    "problem": "Modellbezogener Nutzungs-/Ausschlusscheck statt bloßer allgemeiner Alltagseinordnung; Primärquelle und Evidenzgrenze dokumentiert.",
+    "markers": [
+      "Beim C1 sind Smart-Home-Steuerung und Portionskontrolle zwei verschiedene Aufgaben. Der Hersteller setzt für die Einbindung einen kompatiblen Aqara-Zigbee-Hub voraus. Wer keinen solchen Hub nutzen möchte, sollte ein lokal bedienbares Modell ohne diese Zusatzabhängigkeit prüfen.",
+      "Aqara beschreibt die Grammstatistik als Umrechnung: Eine Ausgabe auf einer Küchenwaage wiegen und den Wert in den Geräteeinstellungen hinterlegen. Das ist keine eingebaute Messung der gefressenen Menge. Unser Kontrollvorschlag: mehrere Ausgaben mit dem eigenen Futter einzeln wiegen, Streuung notieren und nach einem Futterwechsel neu abgleichen. Ein App-Protokoll ersetzt diese Prüfung nicht."
+    ],
+    "beforeSha256": "df3323b71069ab32a6970b5351037f7a5cca6cc3b753e20d2456fa857e36244e",
+    "afterSha256": "33fe0e470b252b70f4223a7dcb140ccf91a0f6b4fc5718a7e82035ae1f7afab8"
+  },
+  {
+    "file": "apps/pfotentechnik/src/content/products/oneisall-3-5l-cordless-fountain.md",
+    "problem": "Modellbezogener Nutzungs-/Ausschlusscheck statt bloßer allgemeiner Alltagseinordnung; Primärquelle und Evidenzgrenze dokumentiert.",
+    "markers": [
+      "Der 3,5-Liter-Cordless ist eine Option für einen Platz ohne dauerhaftes Pumpenkabel. Diese Aufstellfreiheit hilft nur, wenn die Katze die vorgesehene Auslösung auch nutzt. Wer einen ständig sichtbaren Wasserstrahl braucht, sollte vor dem Kauf die Betriebsarten der konkreten Variante mit der Anleitung abgleichen, statt aus dem Wort kabellos auf Dauerbetrieb zu schließen.",
+      "Redaktioneller Kontrollvorschlag: den ausgewählten Modus unter Aufsicht mit der Katze beobachten, Füllstand und ausgelösten Wasserfluss direkt ansehen und einen vertrauten Wassernapf parallel stehen lassen. Notiere den tatsächlichen Ladeabstand im eigenen Haushalt. Eine beworbene Maximallaufzeit ist kein persönlicher Ladeplan; eine von uns gemessene Laufzeit liegt nicht vor."
+    ],
+    "beforeSha256": "77ece488e0c924b7982e76d48833955dbe69785b2086dc08ea2213e0aa15a2b5",
+    "afterSha256": "403262ec6c79e0e4aa280bd26f0d6dba47abced62011f0ff16e3070470bf9865"
+  },
+  {
+    "file": "apps/pfotentechnik/src/content/products/petkit-eversweet-solo-2-fountain.md",
+    "problem": "Modellbezogener Nutzungs-/Ausschlusscheck statt bloßer allgemeiner Alltagseinordnung; Primärquelle und Evidenzgrenze dokumentiert.",
+    "markers": [
+      "Wireless bezeichnet beim Solo 2 die entnehmbare Pumpeneinheit, nicht einen Akkubetrieb. PETKIT verlangt in der FAQ eine dauerhafte Stromversorgung. Der Solo 2 passt deshalb zu einem festen Platz mit Steckdose; für freie Aufstellung ohne Stromanschluss ist ein tatsächliches Akkumodell die andere Geräteklasse.",
+      "Die Herstellerseite nennt Bluetooth als App-Verbindung. Daraus folgt keine eigenständige WLAN-Fernüberwachung des Brunnens. Vor einer Abwesenheit Wasserstand und Durchfluss direkt prüfen und eine unabhängige Napfreserve bereitstellen; aus einer App-Statusanzeige lässt sich die tatsächliche Trinkmenge nicht ableiten."
+    ],
+    "beforeSha256": "7f1fb0819b5cbdf20b64da72ac89f3ab6a37db10d4a00e9d73182328b76d2e71",
+    "afterSha256": "54892b99c3ea81241bf76cef097613ee521bda96ddaa0f2208067cee90feae9b"
+  },
+  {
+    "file": "apps/pfotentechnik/src/content/products/cat-mate-c200.md",
+    "problem": "Modellbezogener Nutzungs-/Ausschlusscheck statt bloßer allgemeiner Alltagseinordnung; Primärquelle und Evidenzgrenze dokumentiert.",
+    "markers": [
+      "Der C200 gibt zwei vorgefüllte Fächer über getrennte 48-Stunden-Timer frei. Wenn ein Fach schon bei Beginn offen bleibt, steht nur das zweite für eine spätere Öffnung bereit. Der Timerhorizont beschreibt die Mechanik und ist keine Zusage, dass jedes Nassfutter 48 Stunden sicher gekühlt bleibt.",
+      "Plane zuerst die tatsächlich später benötigten Öffnungen. Zwei gleichzeitig per Deckelverbinder geöffnete Fächer sind keine zwei aufeinanderfolgenden Mahlzeiten und verhindern keinen Futtertausch zwischen Tieren. Unser Kontrollvorschlag: beide Timer vor dem Einsatz unter Aufsicht mit leeren Fächern auslösen lassen und Öffnung sowie Uhrzeit prüfen. Eine individuelle Futterzuteilung oder exakte elektronische Grammkontrolle leistet dieses Fachprinzip nicht."
+    ],
+    "beforeSha256": "b7b0b50c8a786b513e1d0a35e5fb66e64b9318d3d31af4af786bf163f9830e0e",
+    "afterSha256": "b091e02fa55756659ad2cafb129543de1fa3d204fd733c60476956a0f312622a"
+  },
+  {
+    "file": "apps/pfotentechnik/src/content/products/petlibro-polar-wet-food-feeder.md",
+    "problem": "Modellbezogener Nutzungs-/Ausschlusscheck statt bloßer allgemeiner Alltagseinordnung; Primärquelle und Evidenzgrenze dokumentiert.",
+    "markers": [
+      "Beim Polar müssen Planreserve und Kühlung getrennt kontrolliert werden. PETLIBRO beschreibt den Batteriebetrieb als Fortsetzung des Fütterungsplans bis zu zwölf Stunden; daraus folgt keine weiterlaufende aktive Kühlung. Wer eine durchgehende Kühlkette braucht, darf den Batteriehinweis deshalb nicht als Temperaturgarantie behandeln.",
+      "Redaktioneller Ablauf bei Stromunterbrechung: Zeitpunkt notieren, vorhandene Futterportionen und den Plan direkt kontrollieren und unklar gelagertes Nassfutter nicht allein wegen einer App-Anzeige freigeben. Futterreste nach den Lagerhinweisen des Futters entsorgen oder kühlen. Nach Reset oder erneuter App-Verknüpfung die Mahlzeiten neu einrichten und eine Öffnung mit leerem Fach unter Aufsicht prüfen. Gerät, Futter und Betreuung müssen gemeinsam wieder einsatzbereit sein."
+    ],
+    "beforeSha256": "fd8c67ae2bc95e85f07638e9c081f3355a8a889f8b6e09f0b7cfda1cce070a3f",
+    "afterSha256": "9e868f729a874752f54f441aaa35d12ecfe931c6ac5e5cad6df450de69eddc34"
+  },
+  {
+    "file": "apps/pfotentechnik/src/content/pages/futterautomat-hund.md",
+    "problem": "Unklare Trennung Beispiel/Messung und übersehene Rundungsdifferenz im Tagesplan.",
+    "markers": [
+      "230,4 statt 240 Gramm pro Tag",
+      "vier Prozent weniger",
+      "fünf angenommenen Werten"
+    ],
+    "beforeSha256": "ff34d4de4d06e7179f66e8db58e4b31aef7ed1e94a80bb9f6afb574b7d0d0f59",
+    "afterSha256": "da79abe393911f9bbede9c1cff95767994bd46b941cd1b7eb699542533e44977"
+  },
+  {
+    "file": "apps/pfotentechnik/src/content/pages/wie-funktioniert-ein-futterautomat.md",
+    "problem": "Technische Funktionsaussagen wurden ausschließlich mit allgemeinen Ernährungsleitlinien unterlegt.",
+    "markers": [
+      "Zwei dokumentierte Beispiele",
+      "unterschiedliche Prüfaufgaben"
+    ],
+    "beforeSha256": "0f789f0c8ba26e70d1615409d1be21e270a5ac9983469488624bc47a1075e7e1",
+    "afterSha256": "300964401d12179f219b58c01047dec27fdf4a4b34c7388fd90cca80f4b68f17",
+    "linkIsolation": "New C200 model mention uses existing no-auto-link marker; prevents one additional contextual source for a treatment page without changing global linking logic."
+  },
+  {
+    "file": "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-ohne-filter.md",
+    "problem": "Konstruktionsunterschied und Folgekosten waren ohne nachvollziehbares Modell-/Rechenbeispiel dargestellt.",
+    "markers": [
+      "Zwei Gerätebeispiele",
+      "39 Euro pro Jahr",
+      "keine Marktpreisangabe"
+    ],
+    "beforeSha256": "517c4c1a52a06bca90686126c56fae3fe556c653a1c59c84a283fd74b2f3129c",
+    "afterSha256": "4d4cbe9e3112419e0cd2f8d58fd6bdf7e44145d9b614f532c0424f7f046a3047"
+  },
+  {
+    "file": "apps/pfotentechnik/src/content/pages/trinkbrunnen-seniorenkatzen.md",
+    "problem": "Zugänglichkeit blieb eine allgemeine Auswahlforderung; kein konkreter Entscheidungsablauf für vorhandene Ressourcen.",
+    "markers": [
+      "Zugangscheck im vorhandenen Zuhause",
+      "kein Standard für jede ältere Katze"
+    ],
+    "beforeSha256": "7d25235c794b70c3bd096f5519f648b8a77d6af4dfcc10ba1dfd4c2e24ffae4f",
+    "afterSha256": "5c098abb37fbce30943ec8c61ffa2d1e64ada22d96fa6d3c3d23c51c1f9aa568"
+  },
+  {
+    "file": "apps/pfotentechnik/src/content/pages/trinkbrunnen-fuer-kitten-sicher.md",
+    "problem": "Doppelte Bauformlisten und unscharfe Gewöhnungshinweise statt beobachtbarer Schritte.",
+    "markers": [
+      "Einführen: beobachten statt den Napf ersetzen",
+      "Nutzung unterbrechen"
+    ],
+    "beforeSha256": "56cb11c2ef7b0df42180d77090fd67259b1cd75bb46e3628c1bb6d70d9eade98",
+    "afterSha256": "ab2290b6bc6521422d437a881bfd9766408859abb9ddf5ebb9db169e45b6090e"
+  }
+]

@@ -229,15 +229,12 @@ weaknesses:
   - Rohfleisch wird vom Hersteller nicht empfohlen
   - vergleichsweise groß und mit 3,4 kg schwer
 experience:
-  summary: >-
-    Aktive Kühlung ist kontrollierbarer als einfache Kühlakkus. Die reale Futtertemperatur hängt dennoch von
-    Raumtemperatur, Befüllung, sauberem Wärmeübergang und Stromversorgung ab.
-  methodology: >-
-    Redaktionelle Einordnung anhand der aktuellen deutschen und internationalen PETLIBRO-Produktseiten sowie des
-    offiziellen Hilfebereichs; kein eigener Langzeit-, Temperatur- oder Stromausfalltest.
+  summary: "Beim Polar müssen Planreserve und Kühlung getrennt kontrolliert werden. PETLIBRO beschreibt den Batteriebetrieb als Fortsetzung des Fütterungsplans bis zu zwölf Stunden; daraus folgt keine weiterlaufende aktive Kühlung. Wer eine durchgehende Kühlkette braucht, darf den Batteriehinweis deshalb nicht als Temperaturgarantie behandeln."
+  methodology: "Redaktionelle Einordnung anhand der aktuellen deutschen und internationalen PETLIBRO-Produktseiten sowie des offiziellen Hilfebereichs; kein eigener Langzeit-, Temperatur- oder Stromausfalltest."
   maintenance: >-
     Edelstahl-Schale nach jeder Nassfütterung reinigen. Kühlfläche, Dichtungen, Deckel und Drehmechanismus frei von
     Futterresten, Kondenswasser und Eis halten.
+  reliability: "Redaktioneller Ablauf bei Stromunterbrechung: Zeitpunkt notieren, vorhandene Futterportionen und den Plan direkt kontrollieren und unklar gelagertes Nassfutter nicht allein wegen einer App-Anzeige freigeben. Futterreste nach den Lagerhinweisen des Futters entsorgen oder kühlen. Nach Reset oder erneuter App-Verknüpfung die Mahlzeiten neu einrichten und eine Öffnung mit leerem Fach unter Aufsicht prüfen. Gerät, Futter und Betreuung müssen gemeinsam wieder einsatzbereit sein."
 alternatives:
   - cat-mate-c500
   - surefeed-microchip-pet-feeder
@@ -391,6 +388,13 @@ evidenceSources:
     sourceType: manufacturer
     assertion: "Abschnitte 3 und 6: Polar-Zeitpläne nach Reset oder Rebinding neu einrichten."
     fields: ["faq"]
+  - source: "Herstellerdokumentation – gezielter Aussagenabgleich 35.5"
+    url: "https://petlibro.com/products/polar-smart-wet-food-feeder-for-pets"
+    accessedAt: "2026-11-02"
+    sourceType: manufacturer
+    assertion: "Hersteller beschreibt zwölf Stunden Fortsetzung des Fütterungsplans, keine Kühlgarantie daraus ableiten. Ergänzend PETLIBRO App Outage FAQ: Pläne nach Reset/Rebinding neu einrichten; FDA: Reste feuchter Tiernahrung unverzüglich kühlen oder entsorgen."
+    fields: ["experience.summary", "experience.reliability"]
+
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -451,6 +455,7 @@ offers:
     variantLabel: "Schwarz / Edelstahlnapf"
     lastAttemptAt: "2026-11-02T08:10:39.764Z"
     availabilityUpdated: "2026-11-02T08:10:39.764Z"
+
 ---
 Der **PETLIBRO Polar Wet Food Feeder PLAF109** gehört zu den wenigen Nassfutterautomaten mit aktiver Kühlung. Drei vorbereitete Portionen werden nicht nur mit Kühlakkus temperiert, sondern über ein thermoelektrisches System gekühlt. Im [Vergleich der besten Nassfutterautomaten](/vergleiche/beste-futterautomaten-fuer-nassfutter/) ordnen wir ihn direkt gegen aktive Kühlung, Kühlakku-Modelle und Offline-Lösungen ein.
 

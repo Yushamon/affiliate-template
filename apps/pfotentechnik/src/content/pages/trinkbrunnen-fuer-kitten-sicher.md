@@ -33,7 +33,7 @@ faq:
 
 Ein Brunnen ist trotzdem kein Muss. Ein breiter, flacher Wassernapf deckt den Grundbedarf ebenfalls ab und sollte während der Eingewöhnung als unabhängige Reserve stehen bleiben. Grundlagen zu Bauformen und Betrieb bündelt der [Trinkbrunnen-Ratgeber](/trinkbrunnen/).
 
-## Darauf würde ich bei Kitten besonders achten
+## Bauform vor dem Kauf prüfen
 
 - **Flache Trinkfläche:** Das Kitten sollte trinken können, ohne in einen tiefen Tank greifen zu müssen.
 - **Stabiler Stand:** Leichte oder hoch bauende Geräte dürfen beim Spielen nicht leicht verrutschen oder kippen.
@@ -44,17 +44,19 @@ Ein Brunnen ist trotzdem kein Muss. Ein breiter, flacher Wassernapf deckt den Gr
 
 Für die konkrete Modellauswahl hilft der [Vergleich der besten Trinkbrunnen für Katzen](/vergleiche/beste-trinkbrunnen-fuer-katzen/). Die Vergleichsseite übernimmt die Produktauswahl; dieser Ratgeber bleibt bei der Kitten-Sicherheit.
 
-## Die Bauform entscheidet
+## Einführen: beobachten statt den Napf ersetzen
 
-Kitten erkunden mit Pfoten und Zähnen. Ein leichter Brunnen kann verrutschen oder kippen. Offene tiefe Tanks, frei erreichbare Pumpenkabel oder lose Kleinteile sind ungeeignet. Die Trinkfläche sollte flach sein und der Tank geschlossen. Das Gerät gehört auf eine rutschfeste, wasserbeständige Unterlage.
+Die bereits geprüfte Bauform wird zu Hause zuerst **ausgeschaltet** angeboten. Der vertraute Wassernapf bleibt erreichbar. Danach lässt sich der Wasserlauf unter Aufsicht zuschalten:
 
-Prüfe, ob Kabel geschützt verlegt sind. Angekaute oder beschädigte Leitungen dürfen nicht weiter benutzt werden. Bei Akkumodellen müssen Ladebasis und Kontakte trocken bleiben.
+| Beobachtung | Nächster Schritt |
+|---|---|
+| Das Kitten nähert sich freiwillig und erreicht das Wasser. | Freie Wahl zwischen Napf und Brunnen beibehalten. |
+| Es weicht beim Motorstart zurück oder meidet den Ort. | Wasserlauf wieder ausschalten; den bekannten Napf weiter anbieten und später erneut versuchen. |
+| Es zieht am Kabel, schiebt das Gerät oder erreicht lose Teile. | Nutzung unterbrechen und die Aufstellung beziehungsweise Bauform ändern. |
 
-## Langsam einführen
+Ein tiefer offener Vorratsbehälter ist keine zusätzliche Trinkfläche zum Spielen. Elektrische Teile und Kabel müssen geschützt bleiben; beschädigte Leitungen werden nicht weiterverwendet. Eine Katze wird nicht an das Gerät gesetzt oder zum Trinken gezwungen.
 
-Stelle den ausgeschalteten Brunnen zunächst neben eine bekannte Wasserstelle. Lass das Kitten ohne Druck erkunden und starte den Wasserlauf später unter Aufsicht. Erschrickt es vor Geräusch oder Bewegung, wieder einen Schritt zurückgehen. Zwang kann eine dauerhafte Abneigung erzeugen.
-
-Der Napf bleibt parallel stehen. So ist die Wasserversorgung auch dann gesichert, wenn das Kitten den Brunnen noch nicht versteht oder die Pumpe ausfällt.
+Cats Protection empfiehlt unterschiedliche Wasserangebote entsprechend den Vorlieben der Katze; daraus ist dieser schrittweise Beobachtungsablauf abgeleitet. Er ist kein eigener Kittenversuch und kein Sicherheitszertifikat für ein Produkt. [Cats Protection – Wasserangebote und Vorlieben](https://www.cats.org.uk/help-and-advice/caring-for-your-cat/diet/cats-and-drinking), abgerufen am 02.11.2026.
 
 ## Hygiene bei jungen Katzen
 

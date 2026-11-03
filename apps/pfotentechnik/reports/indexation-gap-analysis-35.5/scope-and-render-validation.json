@@ -1,0 +1,2884 @@
+{
+  "checkedAt": "2026-11-03T07:25:04.577Z",
+  "canonicals": 259,
+  "changedMain": 10,
+  "controls": 10,
+  "unchangedControlSources": 10,
+  "unchangedControlHtml": 6,
+  "changedTracked": [
+    "apps/pfotentechnik/reports/content-quality/cannibalization-report.json",
+    "apps/pfotentechnik/reports/content-quality/cannibalization-report.md",
+    "apps/pfotentechnik/reports/content-quality/content-inventory.csv",
+    "apps/pfotentechnik/reports/content-quality/content-inventory.json",
+    "apps/pfotentechnik/reports/content-quality/content-inventory.md",
+    "apps/pfotentechnik/reports/content-quality/indexation-decisions.csv",
+    "apps/pfotentechnik/reports/design-system/css-architecture-latest.json",
+    "apps/pfotentechnik/reports/design-system/css-architecture-latest.md",
+    "apps/pfotentechnik/reports/internal-linking/internal-link-audit.json",
+    "apps/pfotentechnik/reports/internal-linking/internal-link-audit.md",
+    "apps/pfotentechnik/reports/internal-linking/internal-link-target-audit.json",
+    "apps/pfotentechnik/reports/internal-linking/internal-link-target-audit.md",
+    "apps/pfotentechnik/reports/product-standard-3/product-standard-3-latest.json",
+    "apps/pfotentechnik/reports/seo-release/build-output-latest.json",
+    "apps/pfotentechnik/reports/seo-release/build-output-latest.md",
+    "apps/pfotentechnik/reports/seo/image-alt-audit-latest.json",
+    "apps/pfotentechnik/reports/seo/image-alt-audit-latest.md",
+    "apps/pfotentechnik/reports/url-consistency/url-consistency-audit.json",
+    "apps/pfotentechnik/src/content/pages/futterautomat-hund.md",
+    "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-ohne-filter.md",
+    "apps/pfotentechnik/src/content/pages/trinkbrunnen-fuer-kitten-sicher.md",
+    "apps/pfotentechnik/src/content/pages/trinkbrunnen-seniorenkatzen.md",
+    "apps/pfotentechnik/src/content/pages/wie-funktioniert-ein-futterautomat.md",
+    "apps/pfotentechnik/src/content/products/aqara-smart-pet-feeder-c1.md",
+    "apps/pfotentechnik/src/content/products/cat-mate-c200.md",
+    "apps/pfotentechnik/src/content/products/oneisall-3-5l-cordless-fountain.md",
+    "apps/pfotentechnik/src/content/products/petkit-eversweet-solo-2-fountain.md",
+    "apps/pfotentechnik/src/content/products/petlibro-polar-wet-food-feeder.md"
+  ],
+  "rows": [
+    {
+      "url": "https://pfotentechnik.de/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 646,
+      "afterWords": 646,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/affiliate-hinweis/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 365,
+      "afterWords": 365,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/automatische-katzentoiletten/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 975,
+      "afterWords": 975,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/berater/futterautomat/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 97,
+      "afterWords": 97,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/biofilm-im-katzentrinkbrunnen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 749,
+      "afterWords": 749,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/datenschutz-bei-gps-trackern/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 642,
+      "afterWords": 642,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/datenschutz/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 458,
+      "afterWords": 458,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/filter-im-katzentrinkbrunnen-wechseln/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 839,
+      "afterWords": 839,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/fuetterungszeiten-nach-alter/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 2398,
+      "afterWords": 2398,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/futterautomat-bei-stromausfall/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 4064,
+      "afterWords": 4064,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/futterautomat-bei-uebergewicht/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 2956,
+      "afterWords": 2956,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/futterautomat-hund/",
+      "group": "treatment",
+      "mainChanged": true,
+      "beforeWords": 2801,
+      "afterWords": 2944,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/futterautomat-im-urlaub/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 2844,
+      "afterWords": 2844,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/futterautomat-katze/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1039,
+      "afterWords": 1039,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/futterautomat-richtig-reinigen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 6121,
+      "afterWords": 6121,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/futterautomat-und-ernaehrung/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1686,
+      "afterWords": 1686,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/futtermenge-hund/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1233,
+      "afterWords": 1233,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/futtermenge-katze/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 3376,
+      "afterWords": 3376,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/glossar/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 999,
+      "afterWords": 999,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/gps-oder-bluetooth/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 685,
+      "afterWords": 685,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/gps-tracker-richtig-befestigen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 663,
+      "afterWords": 663,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/gps-tracker/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1021,
+      "afterWords": 1021,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/haustierkameras/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 937,
+      "afterWords": 937,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 384,
+      "afterWords": 384,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/aqara/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 505,
+      "afterWords": 505,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/cat-mate/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1351,
+      "afterWords": 1351,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/catit/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 846,
+      "afterWords": 846,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/devoko/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 651,
+      "afterWords": 651,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/enabot/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 623,
+      "afterWords": 623,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/flappie/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 650,
+      "afterWords": 650,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/furbo/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 548,
+      "afterWords": 548,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/garmin/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1009,
+      "afterWords": 1009,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/honeyguardian/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 969,
+      "afterWords": 969,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/imipaw/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 815,
+      "afterWords": 815,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/invoxia/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 520,
+      "afterWords": 520,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/neakasa/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 693,
+      "afterWords": 693,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/oneisall/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1351,
+      "afterWords": 1351,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/onlycat/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 513,
+      "afterWords": 513,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/paj-gps/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 952,
+      "afterWords": 952,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/pawbby/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 704,
+      "afterWords": 704,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/pawfit/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 499,
+      "afterWords": 499,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/pawsync/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 502,
+      "afterWords": 502,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/petkit/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1463,
+      "afterWords": 1463,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/petlibro/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 2325,
+      "afterWords": 2325,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/petsafe/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1098,
+      "afterWords": 1098,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/petsnowy/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 515,
+      "afterWords": 515,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/pettec/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 520,
+      "afterWords": 520,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/petwalk/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 521,
+      "afterWords": 521,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/prothelis/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 502,
+      "afterWords": 502,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/reolink/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 524,
+      "afterWords": 524,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/surefeed/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1225,
+      "afterWords": 1225,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/tractive/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1141,
+      "afterWords": 1141,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/weenect/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1085,
+      "afterWords": 1085,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/whisker/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 611,
+      "afterWords": 611,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/wopet/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1091,
+      "afterWords": 1091,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/xiaomi/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1017,
+      "afterWords": 1017,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hersteller/zeromouse/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 792,
+      "afterWords": 792,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/hund-entlaufen-gps-sinnvoll/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 662,
+      "afterWords": 662,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hund-frisst-nicht/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 5541,
+      "afterWords": 5541,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hund-frisst-zu-schnell/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1150,
+      "afterWords": 1150,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hund-hat-durchfall/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1897,
+      "afterWords": 1897,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hund-ist-muede/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 3032,
+      "afterWords": 3032,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hund-trinkt-ploetzlich-viel/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 863,
+      "afterWords": 863,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hund-trinkt-viel/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1365,
+      "afterWords": 1365,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/hund-trinkt-zu-wenig/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 4700,
+      "afterWords": 4700,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/ifa-2026-haustiertechnik/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1976,
+      "afterWords": 1976,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/impressum/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 130,
+      "afterWords": 130,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/kalk-katzentrinkbrunnen-entfernen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 809,
+      "afterWords": 809,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/katze-an-katzenklappe-gewoehnen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 325,
+      "afterWords": 325,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/katze-an-trinkbrunnen-gewoehnen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 713,
+      "afterWords": 713,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/katze-entlaufen-gps-sinnvoll/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 662,
+      "afterWords": 662,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/katze-frisst-nicht/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 5601,
+      "afterWords": 5601,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/katze-trinkt-viel/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 3790,
+      "afterWords": 3790,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/katzenklappe-einbauen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1079,
+      "afterWords": 1079,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/katzenklappe-fuer-mehrere-katzen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 682,
+      "afterWords": 682,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/katzenklappe-zugluft-und-waermedaemmung/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 340,
+      "afterWords": 340,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/katzenklappen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 976,
+      "afterWords": 976,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/katzentrinkbrunnen-dauerbetrieb-urlaub/",
+      "group": "control",
+      "mainChanged": false,
+      "beforeWords": 821,
+      "afterWords": 821,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/katzentrinkbrunnen-laut-pumpe/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1068,
+      "afterWords": 1068,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "group": "control",
+      "mainChanged": false,
+      "beforeWords": 827,
+      "afterWords": 827,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/katzentrinkbrunnen-ohne-filter/",
+      "group": "treatment",
+      "mainChanged": true,
+      "beforeWords": 744,
+      "afterWords": 933,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/katzentrinkbrunnen-richtig-reinigen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 2323,
+      "afterWords": 2323,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/katzenwasser-taeglich-wechseln/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 912,
+      "afterWords": 912,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/kaufberatung/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 192,
+      "afterWords": 192,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/kontakt/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 170,
+      "afterWords": 170,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/nierenkranke-katze-trinken/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 750,
+      "afterWords": 750,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/aqara-smart-pet-feeder-c1/",
+      "group": "treatment",
+      "mainChanged": true,
+      "beforeWords": 1064,
+      "afterWords": 1122,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/cat-mate-335-pet-fountain/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1469,
+      "afterWords": 1469,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/cat-mate-c200/",
+      "group": "treatment",
+      "mainChanged": true,
+      "beforeWords": 1030,
+      "afterWords": 1099,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/cat-mate-c300/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1040,
+      "afterWords": 1040,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/cat-mate-c500/",
+      "group": "control",
+      "mainChanged": false,
+      "beforeWords": 1182,
+      "afterWords": 1182,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/cat-mate-elite-355w/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 989,
+      "afterWords": 989,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/cat-mate-shell-fountain/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 972,
+      "afterWords": 972,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/catit-pixi-smart-6-meal-feeder/",
+      "group": "control",
+      "mainChanged": false,
+      "beforeWords": 1380,
+      "afterWords": 1380,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/catit-pixi-smart-trinkbrunnen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1032,
+      "afterWords": 1032,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/catit-pixi-vision-smart-feeder/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1047,
+      "afterWords": 1047,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/devoko-90l-automatisches-katzenklo/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1701,
+      "afterWords": 1701,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/enabot-ebo-air-2/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 804,
+      "afterWords": 804,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/enabot-rola-mini/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 887,
+      "afterWords": 887,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/enabot-rola-pettracker/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1244,
+      "afterWords": 1244,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/feelneedy-fn-w18-8l-katzenbrunnen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1477,
+      "afterWords": 1477,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/flappie/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1332,
+      "afterWords": 1332,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/furbo-360-hundekamera/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 847,
+      "afterWords": 847,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/furbo-360-katzenkamera/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 807,
+      "afterWords": 807,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/furbo-mini-360/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 879,
+      "afterWords": 879,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/garmin-alpha-t-20/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1665,
+      "afterWords": 1665,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/garmin-alpha-tt-25/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 933,
+      "afterWords": 933,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/honeyguardian-a305d/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 813,
+      "afterWords": 813,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/honeyguardian-a68/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 789,
+      "afterWords": 789,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/honeyguardian-smart-pet-feeder-s305d/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 891,
+      "afterWords": 891,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/imipaw-3l-automatic-cat-feeder/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1456,
+      "afterWords": 1456,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/invoxia-biotracker-2026/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1119,
+      "afterWords": 1119,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/litter-robot-4/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1130,
+      "afterWords": 1130,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/litter-robot-5-pro/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 888,
+      "afterWords": 888,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/neakasa-m1-lite/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1154,
+      "afterWords": 1154,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/neakasa-m1-plus/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 860,
+      "afterWords": 860,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/neakasa-riko/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1025,
+      "afterWords": 1025,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/oneisall-2-2l-cordless-fountain/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 926,
+      "afterWords": 926,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/oneisall-2-in-1-feeder-water/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1321,
+      "afterWords": 1321,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/oneisall-3-2l-cordless-fountain/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1335,
+      "afterWords": 1335,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/oneisall-3-5l-cordless-fountain/",
+      "group": "treatment",
+      "mainChanged": true,
+      "beforeWords": 1026,
+      "afterWords": 1101,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/oneisall-5l-automatic-cat-feeder/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 975,
+      "afterWords": 975,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/oneisall-7l-dog-water-fountain/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1471,
+      "afterWords": 1471,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/onlycat-mikrochip-katzenklappe/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1017,
+      "afterWords": 1017,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/paj-pet-finder-4g-mini/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1839,
+      "afterWords": 1839,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/pawbby-smart-pet-feeder/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 798,
+      "afterWords": 798,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/pawfit-3/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1168,
+      "afterWords": 1168,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/pawsync-smart-pet-feeder/",
+      "group": "control",
+      "mainChanged": false,
+      "beforeWords": 1010,
+      "afterWords": 1010,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petkit-eversweet-3-pro-uvc/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1499,
+      "afterWords": 1499,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petkit-eversweet-5-mini/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 879,
+      "afterWords": 879,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petkit-eversweet-max-2-uvc/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1053,
+      "afterWords": 1053,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petkit-eversweet-max-cordless/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1119,
+      "afterWords": 1119,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petkit-eversweet-solo-2-fountain/",
+      "group": "treatment",
+      "mainChanged": true,
+      "beforeWords": 933,
+      "afterWords": 986,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petkit-eversweet-solo-se/",
+      "group": "control",
+      "mainChanged": false,
+      "beforeWords": 993,
+      "afterWords": 993,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petkit-eversweet-ultra/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1685,
+      "afterWords": 1685,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petkit-fresh-element-infinity/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 878,
+      "afterWords": 878,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petkit-fresh-element-solo/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1501,
+      "afterWords": 1501,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petkit-puramax-2/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1035,
+      "afterWords": 1035,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petkit-purobot-crystal-duo/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1008,
+      "afterWords": 1008,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petkit-purobot-max-3/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 993,
+      "afterWords": 993,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petkit-purobot-max-pro-2/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 996,
+      "afterWords": 996,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petkit-yumshare-dual-hopper/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1715,
+      "afterWords": 1715,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petkit-yumshare-solo-2/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1429,
+      "afterWords": 1429,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petlibro-air-automatic-feeder/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1026,
+      "afterWords": 1026,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petlibro-air-wifi-feeder/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1477,
+      "afterWords": 1477,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petlibro-capsule-dog-fountain/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1079,
+      "afterWords": 1079,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petlibro-dockstream-2-smart-cordless/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1472,
+      "afterWords": 1472,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petlibro-dockstream-2-smart/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1271,
+      "afterWords": 1271,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petlibro-dockstream-cordless/",
+      "group": "control",
+      "mainChanged": false,
+      "beforeWords": 1029,
+      "afterWords": 1029,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petlibro-dockstream-rfid-smart/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1064,
+      "afterWords": 1064,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petlibro-glacier-ultrafiltration/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 955,
+      "afterWords": 955,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petlibro-granary-2-vision/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1514,
+      "afterWords": 1514,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petlibro-granary-camera-feeder/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1130,
+      "afterWords": 1130,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petlibro-granary-dual-feeder/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1009,
+      "afterWords": 1009,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petlibro-granary-wifi-feeder/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1047,
+      "afterWords": 1047,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petlibro-luma-smart-litter-box/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1187,
+      "afterWords": 1187,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petlibro-one-rfid-smart-feeder/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 991,
+      "afterWords": 991,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petlibro-polar-wet-food-feeder/",
+      "group": "treatment",
+      "mainChanged": true,
+      "beforeWords": 1460,
+      "afterWords": 1527,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petlibro-scout-smart-camera/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1011,
+      "afterWords": 1011,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petlibro-space-smart-feeder/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1707,
+      "afterWords": 1707,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petlibro-stainless-steel-fountain/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1040,
+      "afterWords": 1040,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petsafe-freshfeed-refrigerated-feeder/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1030,
+      "afterWords": 1030,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petsafe-healthy-pet-simply-feed/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1023,
+      "afterWords": 1023,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petsafe-mikrochip-katzenklappe/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 850,
+      "afterWords": 850,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petsafe-petporte-smart-flap/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1209,
+      "afterWords": 1209,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petsafe-smart-feed-2/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1120,
+      "afterWords": 1120,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petsafe-streamside-trinkbrunnen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 974,
+      "afterWords": 974,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petsnowy-snow-plus/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 874,
+      "afterWords": 874,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/pettec-cam-360/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1105,
+      "afterWords": 1105,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petwalk-medium-tiertuer/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 939,
+      "afterWords": 939,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/prothelis-area-pets/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1162,
+      "afterWords": 1162,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/reolink-e1-zoom/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 988,
+      "afterWords": 988,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/surefeed-microchip-pet-feeder-connect/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1050,
+      "afterWords": 1050,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/surefeed-microchip-pet-feeder/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1046,
+      "afterWords": 1046,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/sureflap-dualscan-mikrochip-katzenklappe/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 942,
+      "afterWords": 942,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/sureflap-mikrochip-katzenklappe-connect/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1166,
+      "afterWords": 1166,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/sureflap-mikrochip-katzenklappe/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1253,
+      "afterWords": 1253,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/tractive-cat-6-mini/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1603,
+      "afterWords": 1603,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/tractive-dog-6-xl/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1733,
+      "afterWords": 1733,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/tractive-dog-6/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1664,
+      "afterWords": 1664,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/weenect-xs/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1712,
+      "afterWords": 1712,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/weenect-xt/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1800,
+      "afterWords": 1800,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/wopet-cube-air-ca10/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 941,
+      "afterWords": 941,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/wopet-heritage-view-camera-feeder/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 894,
+      "afterWords": 894,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/wopet-patrol-f07-pro/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1004,
+      "afterWords": 1004,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/wopet-pioneer-f01-plus/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 908,
+      "afterWords": 908,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/xiaomi-smart-pet-food-feeder-2/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1083,
+      "afterWords": 1083,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/xiaomi-smart-pet-fountain-2/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1140,
+      "afterWords": 1140,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/zeromouse-2-0/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1332,
+      "afterWords": 1332,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/pumpe-katzentrinkbrunnen-reinigen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1005,
+      "afterWords": 1005,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/redaktion/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 390,
+      "afterWords": 390,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/reichweite-von-gps-trackern/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 590,
+      "afterWords": 590,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/seniorenhunde-richtig-versorgen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 2864,
+      "afterWords": 2864,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/smarte-futterautomaten/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1096,
+      "afterWords": 1096,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/smarte-gadgets-fuer-hunde-und-katzen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 494,
+      "afterWords": 494,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/smarte-haustiertechnik/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 2963,
+      "afterWords": 2963,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/so-bewerten-wir/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1491,
+      "afterWords": 1491,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/trinkbrunnen-fuer-katzen-sinnvoll/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 2636,
+      "afterWords": 2636,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/trinkbrunnen-fuer-kitten-sicher/",
+      "group": "treatment",
+      "mainChanged": true,
+      "beforeWords": 1034,
+      "afterWords": 1058,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/trinkbrunnen-fuer-mehrere-katzen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 876,
+      "afterWords": 876,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/trinkbrunnen-hund/",
+      "group": "control",
+      "mainChanged": false,
+      "beforeWords": 1388,
+      "afterWords": 1388,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/trinkbrunnen-seniorenkatzen/",
+      "group": "treatment",
+      "mainChanged": true,
+      "beforeWords": 873,
+      "afterWords": 1044,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/trinkbrunnen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1014,
+      "afterWords": 1014,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/trinkmenge-hund-messen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1299,
+      "afterWords": 1299,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/trinkmenge-katze-messen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 709,
+      "afterWords": 709,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/trockenfutter-oder-nassfutter-hund/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 4052,
+      "afterWords": 4052,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/trockenfutter-oder-nassfutter-katze/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 4214,
+      "afterWords": 4214,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/uebergewicht-bei-katzen-vermeiden/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 3245,
+      "afterWords": 3245,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 319,
+      "afterWords": 319,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/beste-automatische-katzentoiletten/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 3429,
+      "afterWords": 3429,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-berufstaetige/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1607,
+      "afterWords": 1607,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-hunde/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 3906,
+      "afterWords": 3906,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-katzen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 4997,
+      "afterWords": 4997,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-kleine-hunde/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1716,
+      "afterWords": 1716,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 2608,
+      "afterWords": 2608,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-nassfutter/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 5365,
+      "afterWords": 5365,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-seniorenkatzen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1674,
+      "afterWords": 1674,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-welpen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 4414,
+      "afterWords": 4414,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 5919,
+      "afterWords": 5919,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-mit-akku/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1612,
+      "afterWords": 1612,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-mit-edelstahl-napf/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1503,
+      "afterWords": 1503,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-mit-kamera/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 3926,
+      "afterWords": 3926,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-ohne-wlan/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1847,
+      "afterWords": 1847,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/beste-futterautomaten-unter-100-euro/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1522,
+      "afterWords": 1522,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/beste-gps-tracker-fuer-hunde/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 2893,
+      "afterWords": 2893,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/beste-gps-tracker-fuer-katzen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 2286,
+      "afterWords": 2286,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/beste-haustierkameras/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 2455,
+      "afterWords": 2455,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/beste-mikrochip-katzenklappen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1822,
+      "afterWords": 1822,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/beste-trinkbrunnen-fuer-hunde/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 3097,
+      "afterWords": 3097,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/beste-trinkbrunnen-fuer-katzen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 3457,
+      "afterWords": 3457,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/futterautomat-fuer-grosse-hunde/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 2295,
+      "afterWords": 2295,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/futterautomat-gegen-schlingen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1620,
+      "afterWords": 1620,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/futterautomat-mit-app/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 3234,
+      "afterWords": 3234,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/gps-tracker-mit-langer-akkulaufzeit/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 2231,
+      "afterWords": 2231,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/gps-tracker-ohne-abo/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1188,
+      "afterWords": 1188,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/katzenklappen-mit-app-und-beuteerkennung/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1558,
+      "afterWords": 1558,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/vergleiche/kleine-gps-tracker-fuer-katzen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1919,
+      "afterWords": 1919,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/warum-brauchen-gps-tracker-ein-abo/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 686,
+      "afterWords": 686,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/warum-hunde-feste-fuetterungszeiten-brauchen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1372,
+      "afterWords": 1372,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/warum-katzen-fliessendes-wasser-trinken/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1061,
+      "afterWords": 1061,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/warum-schlingt-mein-hund/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 723,
+      "afterWords": 723,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/wasserstelle-katze-richtiger-standort/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 696,
+      "afterWords": 696,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/welche-portionsgroesse-ist-richtig/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 3868,
+      "afterWords": 3868,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/welcher-futterautomat-ist-der-richtige/",
+      "group": "control",
+      "mainChanged": false,
+      "beforeWords": 1991,
+      "afterWords": 1991,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/welpen-richtig-fuettern/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 3680,
+      "afterWords": 3680,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/wie-funktionieren-gps-tracker/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 907,
+      "afterWords": 907,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/wie-funktioniert-ein-futterautomat/",
+      "group": "treatment",
+      "mainChanged": true,
+      "beforeWords": 1182,
+      "afterWords": 1337,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": false
+    },
+    {
+      "url": "https://pfotentechnik.de/wie-genau-sind-gps-tracker/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 594,
+      "afterWords": 594,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/wie-gross-sollte-ein-futterautomat-sein/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 4248,
+      "afterWords": 4248,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/wie-kann-technik-gegen-langeweile-helfen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 768,
+      "afterWords": 768,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/wie-lange-bleibt-trockenfutter-frisch/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 4159,
+      "afterWords": 4159,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/wie-laut-sind-automatische-futterautomaten/",
+      "group": "control",
+      "mainChanged": false,
+      "beforeWords": 776,
+      "afterWords": 776,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/wie-viel-wasser-braucht-ein-hund/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1395,
+      "afterWords": 1395,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/wie-viel-wasser-braucht-eine-katze/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 2348,
+      "afterWords": 2348,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/wie-viele-mahlzeiten-hund/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1189,
+      "afterWords": 1189,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/wie-viele-mahlzeiten-katze/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1082,
+      "afterWords": 1082,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/wie-viele-wasserstellen-katze/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 3091,
+      "afterWords": 3091,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/wissen/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 1152,
+      "afterWords": 1152,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    },
+    {
+      "url": "https://pfotentechnik.de/woran-erkennt-man-dass-die-katze-zu-wenig-trinkt/",
+      "group": "outside",
+      "mainChanged": false,
+      "beforeWords": 4376,
+      "afterWords": 4376,
+      "canonicalUnchanged": true,
+      "sponsoredTargetsUnchanged": true,
+      "htmlByteEqual": true
+    }
+  ],
+  "sourceInvariants": [
+    {
+      "url": "https://pfotentechnik.de/futterautomat-hund/",
+      "group": "treatment",
+      "sourceUnchanged": false
+    },
+    {
+      "url": "https://pfotentechnik.de/welcher-futterautomat-ist-der-richtige/",
+      "group": "control",
+      "sourceUnchanged": true
+    },
+    {
+      "url": "https://pfotentechnik.de/wie-funktioniert-ein-futterautomat/",
+      "group": "treatment",
+      "sourceUnchanged": false
+    },
+    {
+      "url": "https://pfotentechnik.de/wie-laut-sind-automatische-futterautomaten/",
+      "group": "control",
+      "sourceUnchanged": true
+    },
+    {
+      "url": "https://pfotentechnik.de/katzentrinkbrunnen-ohne-filter/",
+      "group": "treatment",
+      "sourceUnchanged": false
+    },
+    {
+      "url": "https://pfotentechnik.de/katzentrinkbrunnen-dauerbetrieb-urlaub/",
+      "group": "control",
+      "sourceUnchanged": true
+    },
+    {
+      "url": "https://pfotentechnik.de/trinkbrunnen-seniorenkatzen/",
+      "group": "treatment",
+      "sourceUnchanged": false
+    },
+    {
+      "url": "https://pfotentechnik.de/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "group": "control",
+      "sourceUnchanged": true
+    },
+    {
+      "url": "https://pfotentechnik.de/trinkbrunnen-fuer-kitten-sicher/",
+      "group": "treatment",
+      "sourceUnchanged": false
+    },
+    {
+      "url": "https://pfotentechnik.de/trinkbrunnen-hund/",
+      "group": "control",
+      "sourceUnchanged": true
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/aqara-smart-pet-feeder-c1/",
+      "group": "treatment",
+      "sourceUnchanged": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/pawsync-smart-pet-feeder/",
+      "group": "control",
+      "sourceUnchanged": true
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/oneisall-3-5l-cordless-fountain/",
+      "group": "treatment",
+      "sourceUnchanged": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petlibro-dockstream-cordless/",
+      "group": "control",
+      "sourceUnchanged": true
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petkit-eversweet-solo-2-fountain/",
+      "group": "treatment",
+      "sourceUnchanged": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petkit-eversweet-solo-se/",
+      "group": "control",
+      "sourceUnchanged": true
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/cat-mate-c200/",
+      "group": "treatment",
+      "sourceUnchanged": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/cat-mate-c500/",
+      "group": "control",
+      "sourceUnchanged": true
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petlibro-polar-wet-food-feeder/",
+      "group": "treatment",
+      "sourceUnchanged": false
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/catit-pixi-smart-6-meal-feeder/",
+      "group": "control",
+      "sourceUnchanged": true
+    }
+  ],
+  "renderedEvidence": [
+    {
+      "url": "https://pfotentechnik.de/produkt/aqara-smart-pet-feeder-c1/",
+      "source": "apps/pfotentechnik/src/content/products/aqara-smart-pet-feeder-c1.md",
+      "matches": [
+        {
+          "marker": "Beim C1 sind Smart-Home-Steuerung und Portionskontrolle zwei verschiedene Aufgaben. Der Hersteller setzt für die Einbindung einen kompatiblen Aqara-Zigbee-Hub voraus. Wer keinen solchen Hub nutzen möchte, sollte ein lokal bedienbares Modell ohne diese Zusatzabhängigkeit prüfen.",
+          "visible": true
+        },
+        {
+          "marker": "Aqara beschreibt die Grammstatistik als Umrechnung: Eine Ausgabe auf einer Küchenwaage wiegen und den Wert in den Geräteeinstellungen hinterlegen. Das ist keine eingebaute Messung der gefressenen Menge. Unser Kontrollvorschlag: mehrere Ausgaben mit dem eigenen Futter einzeln wiegen, Streuung notieren und nach einem Futterwechsel neu abgleichen. Ein App-Protokoll ersetzt diese Prüfung nicht.",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/oneisall-3-5l-cordless-fountain/",
+      "source": "apps/pfotentechnik/src/content/products/oneisall-3-5l-cordless-fountain.md",
+      "matches": [
+        {
+          "marker": "Der 3,5-Liter-Cordless ist eine Option für einen Platz ohne dauerhaftes Pumpenkabel. Diese Aufstellfreiheit hilft nur, wenn die Katze die vorgesehene Auslösung auch nutzt. Wer einen ständig sichtbaren Wasserstrahl braucht, sollte vor dem Kauf die Betriebsarten der konkreten Variante mit der Anleitung abgleichen, statt aus dem Wort kabellos auf Dauerbetrieb zu schließen.",
+          "visible": true
+        },
+        {
+          "marker": "Redaktioneller Kontrollvorschlag: den ausgewählten Modus unter Aufsicht mit der Katze beobachten, Füllstand und ausgelösten Wasserfluss direkt ansehen und einen vertrauten Wassernapf parallel stehen lassen. Notiere den tatsächlichen Ladeabstand im eigenen Haushalt. Eine beworbene Maximallaufzeit ist kein persönlicher Ladeplan; eine von uns gemessene Laufzeit liegt nicht vor.",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petkit-eversweet-solo-2-fountain/",
+      "source": "apps/pfotentechnik/src/content/products/petkit-eversweet-solo-2-fountain.md",
+      "matches": [
+        {
+          "marker": "Wireless bezeichnet beim Solo 2 die entnehmbare Pumpeneinheit, nicht einen Akkubetrieb. PETKIT verlangt in der FAQ eine dauerhafte Stromversorgung. Der Solo 2 passt deshalb zu einem festen Platz mit Steckdose; für freie Aufstellung ohne Stromanschluss ist ein tatsächliches Akkumodell die andere Geräteklasse.",
+          "visible": true
+        },
+        {
+          "marker": "Die Herstellerseite nennt Bluetooth als App-Verbindung. Daraus folgt keine eigenständige WLAN-Fernüberwachung des Brunnens. Vor einer Abwesenheit Wasserstand und Durchfluss direkt prüfen und eine unabhängige Napfreserve bereitstellen; aus einer App-Statusanzeige lässt sich die tatsächliche Trinkmenge nicht ableiten.",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/cat-mate-c200/",
+      "source": "apps/pfotentechnik/src/content/products/cat-mate-c200.md",
+      "matches": [
+        {
+          "marker": "Der C200 gibt zwei vorgefüllte Fächer über getrennte 48-Stunden-Timer frei. Wenn ein Fach schon bei Beginn offen bleibt, steht nur das zweite für eine spätere Öffnung bereit. Der Timerhorizont beschreibt die Mechanik und ist keine Zusage, dass jedes Nassfutter 48 Stunden sicher gekühlt bleibt.",
+          "visible": true
+        },
+        {
+          "marker": "Plane zuerst die tatsächlich später benötigten Öffnungen. Zwei gleichzeitig per Deckelverbinder geöffnete Fächer sind keine zwei aufeinanderfolgenden Mahlzeiten und verhindern keinen Futtertausch zwischen Tieren. Unser Kontrollvorschlag: beide Timer vor dem Einsatz unter Aufsicht mit leeren Fächern auslösen lassen und Öffnung sowie Uhrzeit prüfen. Eine individuelle Futterzuteilung oder exakte elektronische Grammkontrolle leistet dieses Fachprinzip nicht.",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "https://pfotentechnik.de/produkt/petlibro-polar-wet-food-feeder/",
+      "source": "apps/pfotentechnik/src/content/products/petlibro-polar-wet-food-feeder.md",
+      "matches": [
+        {
+          "marker": "Beim Polar müssen Planreserve und Kühlung getrennt kontrolliert werden. PETLIBRO beschreibt den Batteriebetrieb als Fortsetzung des Fütterungsplans bis zu zwölf Stunden; daraus folgt keine weiterlaufende aktive Kühlung. Wer eine durchgehende Kühlkette braucht, darf den Batteriehinweis deshalb nicht als Temperaturgarantie behandeln.",
+          "visible": true
+        },
+        {
+          "marker": "Redaktioneller Ablauf bei Stromunterbrechung: Zeitpunkt notieren, vorhandene Futterportionen und den Plan direkt kontrollieren und unklar gelagertes Nassfutter nicht allein wegen einer App-Anzeige freigeben. Futterreste nach den Lagerhinweisen des Futters entsorgen oder kühlen. Nach Reset oder erneuter App-Verknüpfung die Mahlzeiten neu einrichten und eine Öffnung mit leerem Fach unter Aufsicht prüfen. Gerät, Futter und Betreuung müssen gemeinsam wieder einsatzbereit sein.",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "https://pfotentechnik.de/futterautomat-hund/",
+      "source": "apps/pfotentechnik/src/content/pages/futterautomat-hund.md",
+      "matches": [
+        {
+          "marker": "230,4 statt 240 Gramm pro Tag",
+          "visible": true
+        },
+        {
+          "marker": "vier Prozent weniger",
+          "visible": true
+        },
+        {
+          "marker": "fünf angenommenen Werten",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "https://pfotentechnik.de/wie-funktioniert-ein-futterautomat/",
+      "source": "apps/pfotentechnik/src/content/pages/wie-funktioniert-ein-futterautomat.md",
+      "matches": [
+        {
+          "marker": "Zwei dokumentierte Beispiele",
+          "visible": true
+        },
+        {
+          "marker": "unterschiedliche Prüfaufgaben",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "https://pfotentechnik.de/katzentrinkbrunnen-ohne-filter/",
+      "source": "apps/pfotentechnik/src/content/pages/katzentrinkbrunnen-ohne-filter.md",
+      "matches": [
+        {
+          "marker": "Zwei Gerätebeispiele",
+          "visible": true
+        },
+        {
+          "marker": "39 Euro pro Jahr",
+          "visible": true
+        },
+        {
+          "marker": "keine Marktpreisangabe",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "https://pfotentechnik.de/trinkbrunnen-seniorenkatzen/",
+      "source": "apps/pfotentechnik/src/content/pages/trinkbrunnen-seniorenkatzen.md",
+      "matches": [
+        {
+          "marker": "Zugangscheck im vorhandenen Zuhause",
+          "visible": true
+        },
+        {
+          "marker": "kein Standard für jede ältere Katze",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "url": "https://pfotentechnik.de/trinkbrunnen-fuer-kitten-sicher/",
+      "source": "apps/pfotentechnik/src/content/pages/trinkbrunnen-fuer-kitten-sicher.md",
+      "matches": [
+        {
+          "marker": "Einführen: beobachten statt den Napf ersetzen",
+          "visible": true
+        },
+        {
+          "marker": "Nutzung unterbrechen",
+          "visible": true
+        }
+      ]
+    }
+  ],
+  "issues": [],
+  "pass": true
+}

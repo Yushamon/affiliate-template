@@ -1,0 +1,29 @@
+{
+  "version": "24.1.2",
+  "generatedAt": "2026-11-03T07:24:17.538Z",
+  "mode": "source-only",
+  "sourceFilesScanned": 122,
+  "distAvailable": true,
+  "distFilesScanned": 0,
+  "rawDistFindings": 0,
+  "findings": [
+    {
+      "scope": "source",
+      "file": "apps/pfotentechnik/src/components/product-experience-2/ProductGallery29.astro",
+      "line": 140,
+      "tag": "<img class=\"pg29-lightbox__thumb-image\" src={item.thumbSrc} width={item.width} height={item.height} alt=\"\" loading=\"lazy\" decoding=\"async\" />",
+      "severity": "info",
+      "code": "IMAGE_ALT_EMPTY_DECORATIVE",
+      "message": "Leerer Alt-Text. Das Bild wird als dekorativ oder redundant behandelt."
+    }
+  ],
+  "summary": {
+    "total": 1,
+    "errors": 0,
+    "info": 1,
+    "source": 1,
+    "distRaw": 0,
+    "distUnique": 0,
+    "missing": 0
+  }
+}

@@ -65,6 +65,16 @@ Haare gelangen schneller zur Pumpe. Feine Partikel bleiben im Kreislauf. Bei har
 
 Wichtig ist außerdem die Konstruktion: Einen vorgesehenen Filter einfach wegzulassen, kann Durchfluss, Überlaufschutz oder Pumpenschutz verändern. Nur filterlos betreiben, wenn der Hersteller diese Betriebsweise vorsieht.
 
+## Zwei Gerätebeispiele statt einer pauschalen Filterregel
+
+Beim **PETKIT Solo 2** sieht der Hersteller einen Filter vor und empfiehlt den Wechsel alle vier Wochen. Beim **Eversweet Ultra** beschreibt PETKIT dagegen einen getrennten Frisch- und Abwasserweg ohne die übliche Filterkartusche. Das sind unterschiedliche Konstruktionen. Aus dem Ultra-Konzept folgt nicht, dass beim Solo 2 einfach der Filter entfallen darf.
+
+Prüfe vor dem Kauf drei Angaben zusammen: Ist der filterlose Betrieb ausdrücklich vorgesehen? Wie gelangt gebrauchtes Wasser aus der Trinkfläche? Welche Siebe, Pumpenteile oder weiteren Verbrauchsmittel bleiben zu pflegen oder zu ersetzen? Fehlt eine dieser Angaben, ist „ohne Filterkosten“ noch keine belastbare Gesamtkostenrechnung.
+
+**Rechenbeispiel, keine Marktpreisangabe:** Ein angenommener Kartuschenpreis von drei Euro und ein Wechsel alle vier Wochen ergeben 52 ÷ 4 = 13 Wechselintervalle und rechnerisch **39 Euro pro Jahr**. Anfangsbestand, tatsächliche Nutzung und andere Wechselintervalle verändern den Einkauf. Bei einem filterlosen Gerät fällt diese Position weg; Strom, Reinigung und andere Verbrauchsteile müssen trotzdem getrennt betrachtet werden.
+
+Herstellerbelege: [Solo 2 – Filterpflicht und Wechselintervall](https://www.petkit.com/products/eversweet-solo-2), [Eversweet Ultra – getrennter Wasserweg](https://www.petkit.com/products/eversweet-ultra-with-camera-pet-water-fountain), abgerufen am 02.11.2026. Die Rechnung nutzt ausdrücklich angenommene Preise und ist keine PETKIT-Kostenangabe.
+
 ## Worauf du beim Kauf achten solltest
 
 Prüfe, ob Tank, Trinkfläche, Auslauf und Pumpenrotor ohne Spezialwerkzeug erreichbar sind. Ersatzpumpen und Dichtungen sind wichtiger als eine lange Funktionsliste. Eine glatte Edelstahl- oder glasierte Keramikfläche kann gut zu reinigen sein, doch Fugen und Kunststoffkanäle bleiben entscheidend.

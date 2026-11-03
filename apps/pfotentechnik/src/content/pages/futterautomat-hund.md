@@ -325,7 +325,7 @@ Die Behältergröße beantwortet diese Frage nicht. Ein Automat kann fünf Liter
 6. Tagesration darauf umrechnen.
 7. nach Futterwechsel erneut testen.
 
-Beispiel:
+**Rechenbeispiel mit fünf angenommenen Werten, keine eigenen Messdaten:** Die fünf Zeilen zeigen nur den Rechenweg. Für die zuvor beschriebene Geräteprüfung werden zehn echte Ausgaben einzeln gewogen.
 
 | Ausgabe | Gewicht |
 |---|---:|
@@ -335,7 +335,7 @@ Beispiel:
 | 4 | 21 g |
 | 5 | 18 g |
 
-Der Durchschnitt liegt hier bei 19,2 Gramm. Erst dadurch wird die App-Stufe praktisch nutzbar.
+Der Mittelwert der angenommenen Werte ist (18 + 20 + 19 + 21 + 18) ÷ 5 = **19,2 Gramm**. Die Spannweite beträgt 18 bis 21 Gramm. Ein Durchschnitt allein zeigt deshalb nicht, wie stark einzelne Mahlzeiten schwanken.
 
 ### Tagesration in Portionen umrechnen
 
@@ -346,10 +346,14 @@ Angenommen, dein Hund erhält täglich 240 Gramm Trockenfutter und du möchtest 
 | Tagesration | 240 g |
 | Anzahl Mahlzeiten | 4 |
 | Zielmenge pro Mahlzeit | 60 g |
-| gemessene Menge pro Portionsstufe | 19,2 g |
+| angenommene Menge pro Portionsstufe | 19,2 g |
 | benötigte Portionsstufen | etwa 3 |
 
-Da drei Stufen in diesem Beispiel rund 57,6 Gramm ergeben, solltest du die reale Ausgabe erneut messen und die Tagesration inklusive Leckerlis kontrollieren. Kleine Abweichungen können sich über mehrere Mahlzeiten summieren.
+Drei Stufen ergeben im Beispiel 57,6 Gramm je Mahlzeit und **230,4 statt 240 Gramm pro Tag**. Das sind 9,6 Gramm beziehungsweise vier Prozent weniger als die vorgegebene Beispielration. Die rechnerisch benötigten 3,125 Stufen lassen sich bei einem Gerät mit ganzen Stufen nicht unmittelbar einstellen.
+
+Entscheide deshalb vor dem Kauf: Passt die kleinste einstellbare Stufe zur bereits festgelegten Ration? Wenn nicht, braucht es feinere Dosierschritte oder eine getrennt abgewogene Ergänzung innerhalb derselben Tagesration. Nicht die Ration an die Gerätestufe anpassen. Nach einem Futterwechsel wird erneut mit genau diesem Futter geprüft.
+
+Aqara erläutert am C1 konkret die manuelle Grammkalibrierung über eine Küchenwaage. Das ist ein **Herstellerbeispiel für die Umrechnung**, kein Beleg für die Dosiergenauigkeit anderer Automaten. [Aqara: Grammstatistik nach Kalibrierung](https://www.aqara.com/en/product/smart-pet-feeder-c1/), abgerufen am 02.11.2026.
 
 ## Warum Herstellerangaben in der Praxis abweichen können
 

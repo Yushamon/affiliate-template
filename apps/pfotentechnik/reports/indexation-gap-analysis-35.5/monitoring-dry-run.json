@@ -1,0 +1,49 @@
+{
+  "primaryEndpointDay": 56,
+  "ready": false,
+  "groups": {
+    "treatment": {
+      "assigned": 10,
+      "known": 0,
+      "unknown": 10,
+      "observedIndexed": 0,
+      "fractionAmongObserved": null
+    },
+    "control": {
+      "assigned": 10,
+      "known": 0,
+      "unknown": 10,
+      "observedIndexed": 0,
+      "fractionAmongObserved": null
+    }
+  },
+  "primaryRiskDifference": null,
+  "pairedExactP": null,
+  "note": "Historical export is not a current baseline. Missing observations stay unknown. No release/indexation success is inferred.",
+  "firstObservedIndexationDay": {
+    "https://pfotentechnik.de/futterautomat-hund/": null,
+    "https://pfotentechnik.de/welcher-futterautomat-ist-der-richtige/": null,
+    "https://pfotentechnik.de/wie-funktioniert-ein-futterautomat/": null,
+    "https://pfotentechnik.de/wie-laut-sind-automatische-futterautomaten/": null,
+    "https://pfotentechnik.de/katzentrinkbrunnen-ohne-filter/": null,
+    "https://pfotentechnik.de/katzentrinkbrunnen-dauerbetrieb-urlaub/": null,
+    "https://pfotentechnik.de/trinkbrunnen-seniorenkatzen/": null,
+    "https://pfotentechnik.de/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/": null,
+    "https://pfotentechnik.de/trinkbrunnen-fuer-kitten-sicher/": null,
+    "https://pfotentechnik.de/trinkbrunnen-hund/": null,
+    "https://pfotentechnik.de/produkt/aqara-smart-pet-feeder-c1/": null,
+    "https://pfotentechnik.de/produkt/pawsync-smart-pet-feeder/": null,
+    "https://pfotentechnik.de/produkt/oneisall-3-5l-cordless-fountain/": null,
+    "https://pfotentechnik.de/produkt/petlibro-dockstream-cordless/": null,
+    "https://pfotentechnik.de/produkt/petkit-eversweet-solo-2-fountain/": null,
+    "https://pfotentechnik.de/produkt/petkit-eversweet-solo-se/": null,
+    "https://pfotentechnik.de/produkt/cat-mate-c200/": null,
+    "https://pfotentechnik.de/produkt/cat-mate-c500/": null,
+    "https://pfotentechnik.de/produkt/petlibro-polar-wet-food-feeder/": null,
+    "https://pfotentechnik.de/produkt/catit-pixi-smart-6-meal-feeder/": null
+  },
+  "missingOutcomeRiskDifferenceBounds": [
+    -1.0,
+    1.0
+  ]
+}

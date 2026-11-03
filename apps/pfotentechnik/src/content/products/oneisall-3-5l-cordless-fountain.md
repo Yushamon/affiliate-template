@@ -177,9 +177,10 @@ weaknesses:
   - Filterfolgekosten
   - Sensorfluss nicht für jedes Tier ideal
 experience:
-  summary: Bewegungssensoren sparen Energie, manche Tiere bevorzugen jedoch einen kontinuierlichen Wasserlauf.
-  methodology: Redaktioneller Check aus Herstellerangaben und unabhängigen Vergleichserfahrungen; kein eigener Langzeittest.
+  summary: "Der 3,5-Liter-Cordless ist eine Option für einen Platz ohne dauerhaftes Pumpenkabel. Diese Aufstellfreiheit hilft nur, wenn die Katze die vorgesehene Auslösung auch nutzt. Wer einen ständig sichtbaren Wasserstrahl braucht, sollte vor dem Kauf die Betriebsarten der konkreten Variante mit der Anleitung abgleichen, statt aus dem Wort kabellos auf Dauerbetrieb zu schließen."
+  methodology: "Redaktioneller Check aus Herstellerangaben und unabhängigen Vergleichserfahrungen; kein eigener Langzeittest."
   maintenance: Filter etwa zweiwöchentlich prüfen und Tank sowie Pumpe wöchentlich reinigen.
+  reliability: "Redaktioneller Kontrollvorschlag: den ausgewählten Modus unter Aufsicht mit der Katze beobachten, Füllstand und ausgelösten Wasserfluss direkt ansehen und einen vertrauten Wassernapf parallel stehen lassen. Notiere den tatsächlichen Ladeabstand im eigenen Haushalt. Eine beworbene Maximallaufzeit ist kein persönlicher Ladeplan; eine von uns gemessene Laufzeit liegt nicht vor."
 alternatives:
   - petlibro-dockstream-2-smart
   - petlibro-stainless-steel-fountain
@@ -310,6 +311,13 @@ evidenceSources:
       - comparisonData.fountain.capacityLiters
       - comparisonData.fountain.material
       - comparisonData.fountain.batteryRuntime
+  - source: "Herstellerdokumentation – gezielter Aussagenabgleich 35.5"
+    url: "https://oneisall.com/products/oneisall-3-5l-cordless-black-stainless-steel-pet-water-fountain-with-3pcs-filters"
+    accessedAt: "2026-11-02"
+    sourceType: manufacturer
+    assertion: "Herstellerseite identifiziert 3,5L-Cordless-Modell. Keine neue Schaltzeit, garantierte Laufzeit oder Sensorreichweite behauptet; konkreten Modus vor Kauf anhand mitgelieferter Anleitung prüfen."
+    fields: ["experience.summary", "experience.reliability"]
+
 ---
 Der oneisall 3,5L ist besonders wegen seines Verhältnisses aus Tankgröße und kabelloser Nutzung interessant. Vor dem Kauf sollte geklärt werden, ob die Katze Sensorfluss akzeptiert.
 

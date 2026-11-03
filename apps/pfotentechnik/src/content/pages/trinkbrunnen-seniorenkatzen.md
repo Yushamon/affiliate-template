@@ -37,7 +37,7 @@ recommendationJourney:
   comparisonLabel: Passende Modelle vergleichen
 ---
 
-Dieser Ratgeber vertieft die Auswahl innerhalb des Themenbereichs [Trinkbrunnen für Haustiere](/trinkbrunnen/) für ältere Katzen und priorisiert Zugänglichkeit, Standfestigkeit und eine vertraute Alternative.
+Bei einer älteren Katze entscheidet der tatsächlich genutzte Weg zur Wasserstelle mehr als ein Seniorenetikett am Gerät. Die Bauformen ordnet der [Trinkbrunnen-Ratgeber](/trinkbrunnen/) ein; hier steht der Zugang im vorhandenen Zuhause im Mittelpunkt.
 
 ## Die kurze Antwort
 
@@ -48,6 +48,19 @@ Ein Trinkbrunnen kann einer älteren Katze gefallen, wenn sie bewegtes Wasser be
 Arthrose und andere Mobilitätsprobleme können tiefes Absenken des Kopfes unangenehm machen. International Cat Care empfiehlt bei betroffenen Katzen je nach Bedarf erhöhte Wassergefäße und gut erreichbare Stationen. Ein Brunnen sollte keine hohe Kante haben und auf einer rutschfesten Unterlage stehen. Kabel dürfen keine Stolperstelle bilden.
 
 In mehrstöckigen Wohnungen sind Wasserstellen auf der bevorzugten Ebene sinnvoll. Eine Katze sollte nicht springen oder Treppen bewältigen müssen, um trinken zu können.
+
+## Zugangscheck im vorhandenen Zuhause
+
+| Beobachtung | Daraus folgt für die Aufstellung |
+|---|---|
+| Die Katze muss Treppen oder einen Sprung bewältigen. | Eine zusätzliche Station auf der tatsächlich genutzten Ebene anbieten. |
+| Sie bricht das Herunterbeugen ab oder verändert ihre Haltung deutlich. | Einen sicher stehenden Napf in anderer Höhe anbieten und die Veränderung tierärztlich abklären lassen. Nicht allein aus dem Alter auf Arthrose schließen. |
+| Sie nutzt nur den vertrauten Napf. | Diesen stehen lassen; ein Brunnen muss nicht durchgesetzt werden. |
+| Ein anderes Tier blockiert den Zugang. | Räumlich getrennte Wasserstellen anbieten, statt nur den Tank zu vergrößern. |
+
+Der Check ist ein redaktioneller Beobachtungsvorschlag, keine Diagnose und kein Test einer bestimmten Brunnenhöhe. International Cat Care und Cats Protection empfehlen bei eingeschränkter Beweglichkeit gut erreichbare Ressourcen; angepasste Gefäßhöhe ist eine individuelle Option, kein Standard für jede ältere Katze.
+
+Belege: [International Cat Care – Home Modifications](https://icatcare.org/resources/cat-carer-guide-changes-to-the-home-environment.pdf) und [Cats Protection – ältere Katzen](https://www.cats.org.uk/help-and-advice/caring-for-your-cat/elderly-cats), abgerufen am 02.11.2026.
 
 ## Geräusch und Sichtbarkeit
 
@@ -65,4 +78,4 @@ Bevorzuge einen leisen Brunnen, der ohne Kraftaufwand zerlegt werden kann. Trink
 
 Biete unterschiedliche Höhen und Materialien an. Die Katze entscheidet durch zuverlässige Nutzung, welche Quelle passt.
 
-**Quellen:** [International Cat Care – Wasserstellen bei Mobilitätsproblemen](https://icatcare.org/resources/cat-carer-guide-home-modifications.pdf), [International Cat Care – Trinkmöglichkeiten](https://icatcare.org/resources/encouraging-your-cat-to-drink_caregiver_guide.pdf), [VCA – Ernährung und Wasser bei chronischer Nierenerkrankung](https://vcahospitals.com/know-your-pet/nutrition-for-cats-with-chronic-kidney-disease).
+**Quellen:** [International Cat Care – Wasserstellen bei Mobilitätsproblemen](https://icatcare.org/resources/cat-carer-guide-changes-to-the-home-environment.pdf), [International Cat Care – Trinkmöglichkeiten](https://icatcare.org/resources/encouraging-your-cat-to-drink_caregiver_guide.pdf), [VCA – Ernährung und Wasser bei chronischer Nierenerkrankung](https://vcahospitals.com/know-your-pet/nutrition-for-cats-with-chronic-kidney-disease).

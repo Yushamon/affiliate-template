@@ -1,0 +1,980 @@
+{
+  "method": "Astro deduplicates byte-identical hero/comparison/thumbnail source images; asset basename and resize-cache hash can change across builds. Only those aliases are normalized for control-DOM comparison; content text, hrefs, dimensions, canonical, schema and original source SHA stay checked.",
+  "identicalSourcePairs": [
+    {
+      "hero": "apps/pfotentechnik/public/images/products/cat-mate-c200/hero.webp",
+      "comparison": "apps/pfotentechnik/public/images/products/cat-mate-c200/comparison.webp",
+      "originalSha256": "bb5863f53291601fd340d08802140813dd7518a99143bb6c99c0063a928a3e55",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/public/images/products/cat-mate-c300/hero.webp",
+      "comparison": "apps/pfotentechnik/public/images/products/cat-mate-c300/comparison.webp",
+      "originalSha256": "5b8914571022c5d2faba67da0c61d8633f51eef43a17f36ce24ecd2062b38386",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/public/images/products/honeyguardian-a305d/hero.webp",
+      "comparison": "apps/pfotentechnik/public/images/products/honeyguardian-a305d/comparison.webp",
+      "originalSha256": "ed64e3c12e9d8193cb19ffedd4b6348143a75d07c8095937a8e061b8a55a5496",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/public/images/products/honeyguardian-a68/hero.webp",
+      "comparison": "apps/pfotentechnik/public/images/products/honeyguardian-a68/comparison.webp",
+      "originalSha256": "a9a28e9162046b398d0d44e64f3fdb0fcf1b46153418a7e1ddfcfda5c6fa1b81",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/public/images/products/honeyguardian-smart-pet-feeder-s305d/hero.webp",
+      "comparison": "apps/pfotentechnik/public/images/products/honeyguardian-smart-pet-feeder-s305d/comparison.webp",
+      "originalSha256": "d5f853b9d9054e3ef40fddbf813219aa57d1952cd6d611988c5d12258a5abaae",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/public/images/products/imipaw-3l-automatic-cat-feeder/hero.webp",
+      "comparison": "apps/pfotentechnik/public/images/products/imipaw-3l-automatic-cat-feeder/comparison.webp",
+      "originalSha256": "8ca1af06e60db49a3f472eb825f05c8a8c5b73a958a5bb33ae002f38ae693352",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/public/images/products/pawbby-smart-pet-feeder/hero.webp",
+      "comparison": "apps/pfotentechnik/public/images/products/pawbby-smart-pet-feeder/comparison.webp",
+      "originalSha256": "7a2b0b6d291cb37ac764327964e5fb2a003dd070251f8573417a90483ceac1e4",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/public/images/products/petkit-fresh-element-infinity/hero.webp",
+      "comparison": "apps/pfotentechnik/public/images/products/petkit-fresh-element-infinity/comparison.webp",
+      "originalSha256": "adb8db1ba8060b5df16d5c7a5a0cd0c0b0f2e3136da88b37193fdafbe32ed5a2",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/public/images/products/petkit-fresh-element-solo/hero.webp",
+      "comparison": "apps/pfotentechnik/public/images/products/petkit-fresh-element-solo/comparison.webp",
+      "originalSha256": "79c9afce83b1dc1ef5519902a4daf365faa9ef7ffe1176f78e0b2bd4cafb623b",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/public/images/products/petkit-yumshare-dual-hopper/hero.webp",
+      "comparison": "apps/pfotentechnik/public/images/products/petkit-yumshare-dual-hopper/comparison.webp",
+      "originalSha256": "9a598a4893f9653b7eb2175e40ac10932ade4090e38907daa1cc4a0d1bb9ee54",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/public/images/products/petkit-yumshare-solo-2/hero.webp",
+      "comparison": "apps/pfotentechnik/public/images/products/petkit-yumshare-solo-2/comparison.webp",
+      "originalSha256": "08d243f3c15431e0eb510bc5996ab05a581a557dfa1d44f39819bd2e28dc7e97",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/public/images/products/petlibro-air-automatic-feeder/hero.webp",
+      "comparison": "apps/pfotentechnik/public/images/products/petlibro-air-automatic-feeder/comparison.webp",
+      "originalSha256": "4c0a524a0a6e53cd0b0d96244006d8f540757ab8b876c69eac09306e40baa8d0",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/public/images/products/petlibro-air-wifi-feeder/hero.webp",
+      "comparison": "apps/pfotentechnik/public/images/products/petlibro-air-wifi-feeder/comparison.webp",
+      "originalSha256": "d0339d6736e4b9f890de4c9c9f7e8820a535d5dccb57571342199cc744cee6be",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/public/images/products/petlibro-one-rfid-smart-feeder/hero.webp",
+      "comparison": "apps/pfotentechnik/public/images/products/petlibro-one-rfid-smart-feeder/comparison.webp",
+      "originalSha256": "34a040b33082cbc72a4f503d89db90a924825c4baaf28b7864a27da58b1baea3",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/public/images/products/surefeed-microchip-pet-feeder/hero.webp",
+      "comparison": "apps/pfotentechnik/public/images/products/surefeed-microchip-pet-feeder/comparison.webp",
+      "originalSha256": "e0a754ffb5307f384b224ece77a84bbfc77c343ac074fbf8b70cafe9efc17d07",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/public/images/products/wopet-cube-air-ca10/hero.webp",
+      "comparison": "apps/pfotentechnik/public/images/products/wopet-cube-air-ca10/comparison.webp",
+      "originalSha256": "1ee8df6dbcef9ef90fa9c34c4fae88e5251ee34a981fccd1034761daddf21225",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/public/images/products/wopet-heritage-view-camera-feeder/hero.webp",
+      "comparison": "apps/pfotentechnik/public/images/products/wopet-heritage-view-camera-feeder/comparison.webp",
+      "originalSha256": "a9d254b4c1cee577a9364049fc24cd863f60993792162f873baa6dd1ad2bde93",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/public/images/products/wopet-pioneer-f01-plus/hero.webp",
+      "comparison": "apps/pfotentechnik/public/images/products/wopet-pioneer-f01-plus/comparison.webp",
+      "originalSha256": "16684f5e351aa1e6a490a906a7b681404139f529915ab72ffdda68555ce48a76",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/cat-mate-c200/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/cat-mate-c200/comparison.webp",
+      "originalSha256": "bb5863f53291601fd340d08802140813dd7518a99143bb6c99c0063a928a3e55",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/cat-mate-c300/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/cat-mate-c300/comparison.webp",
+      "originalSha256": "5b8914571022c5d2faba67da0c61d8633f51eef43a17f36ce24ecd2062b38386",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/devoko-90l-automatisches-katzenklo/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/devoko-90l-automatisches-katzenklo/comparison.webp",
+      "originalSha256": "a575f66689ef0fe1b4bb8774219bfdf3e31b0b1595078cb4116ae92a6b7b07ae",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/furbo-360-hundekamera/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/furbo-360-hundekamera/comparison.webp",
+      "originalSha256": "5eda686fc578ddcb5ea03c72b7a63ff2427ff5abeefc6aae409a1e364bf0e08a",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/furbo-360-katzenkamera/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/furbo-360-katzenkamera/comparison.webp",
+      "originalSha256": "78d3c3183ad03f53c8f9600ffb1069b553d1ca9cff0abe17a3bdd1254a8832f5",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/furbo-mini-360/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/furbo-mini-360/comparison.webp",
+      "originalSha256": "9a2e0774566e7e781adf0ea146245f6db7302a2ad970fc83a465f264645a35f6",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/honeyguardian-a68/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/honeyguardian-a68/comparison.webp",
+      "originalSha256": "a9a28e9162046b398d0d44e64f3fdb0fcf1b46153418a7e1ddfcfda5c6fa1b81",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/imipaw-3l-automatic-cat-feeder/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/imipaw-3l-automatic-cat-feeder/comparison.webp",
+      "originalSha256": "8ca1af06e60db49a3f472eb825f05c8a8c5b73a958a5bb33ae002f38ae693352",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/neakasa-m1-lite/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/neakasa-m1-lite/comparison.webp",
+      "originalSha256": "a4b3c9894560c1c61b74217caec2be0f3f642c4644ef108edd06cd0ea19de2a7",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/neakasa-riko/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/neakasa-riko/comparison.webp",
+      "originalSha256": "7e4e589d7e300987fcd94663f745d714d92ae5ed70343bbb196ca33ca185edcb",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/pawbby-smart-pet-feeder/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/pawbby-smart-pet-feeder/comparison.webp",
+      "originalSha256": "7a2b0b6d291cb37ac764327964e5fb2a003dd070251f8573417a90483ceac1e4",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/petkit-eversweet-ultra/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/petkit-eversweet-ultra/comparison.webp",
+      "originalSha256": "615fc0e75922b80b0cc869d61c03c543819d1c9d9c20176fcd1ce9fdd6b8f5e4",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/petkit-fresh-element-infinity/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/petkit-fresh-element-infinity/comparison.webp",
+      "originalSha256": "adb8db1ba8060b5df16d5c7a5a0cd0c0b0f2e3136da88b37193fdafbe32ed5a2",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/petkit-fresh-element-solo/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/petkit-fresh-element-solo/comparison.webp",
+      "originalSha256": "79c9afce83b1dc1ef5519902a4daf365faa9ef7ffe1176f78e0b2bd4cafb623b",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/petkit-yumshare-dual-hopper/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/petkit-yumshare-dual-hopper/comparison.webp",
+      "originalSha256": "9a598a4893f9653b7eb2175e40ac10932ade4090e38907daa1cc4a0d1bb9ee54",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/petkit-yumshare-solo-2/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/petkit-yumshare-solo-2/comparison.webp",
+      "originalSha256": "08d243f3c15431e0eb510bc5996ab05a581a557dfa1d44f39819bd2e28dc7e97",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/petlibro-air-automatic-feeder/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/petlibro-air-automatic-feeder/comparison.webp",
+      "originalSha256": "4c0a524a0a6e53cd0b0d96244006d8f540757ab8b876c69eac09306e40baa8d0",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/petlibro-air-wifi-feeder/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/petlibro-air-wifi-feeder/comparison.webp",
+      "originalSha256": "d0339d6736e4b9f890de4c9c9f7e8820a535d5dccb57571342199cc744cee6be",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/petlibro-luma-smart-litter-box/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/petlibro-luma-smart-litter-box/comparison.webp",
+      "originalSha256": "5d1462df3db91b31d2b2b5adcaa9ea611596472d3da374057be14520ff8cea42",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/petlibro-one-rfid-smart-feeder/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/petlibro-one-rfid-smart-feeder/comparison.webp",
+      "originalSha256": "34a040b33082cbc72a4f503d89db90a924825c4baaf28b7864a27da58b1baea3",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/surefeed-microchip-pet-feeder/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/surefeed-microchip-pet-feeder/comparison.webp",
+      "originalSha256": "e0a754ffb5307f384b224ece77a84bbfc77c343ac074fbf8b70cafe9efc17d07",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/wopet-cube-air-ca10/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/wopet-cube-air-ca10/comparison.webp",
+      "originalSha256": "1ee8df6dbcef9ef90fa9c34c4fae88e5251ee34a981fccd1034761daddf21225",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/wopet-heritage-view-camera-feeder/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/wopet-heritage-view-camera-feeder/comparison.webp",
+      "originalSha256": "a9d254b4c1cee577a9364049fc24cd863f60993792162f873baa6dd1ad2bde93",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    },
+    {
+      "hero": "apps/pfotentechnik/src/assets/images/products/wopet-pioneer-f01-plus/hero.webp",
+      "comparison": "apps/pfotentechnik/src/assets/images/products/wopet-pioneer-f01-plus/comparison.webp",
+      "originalSha256": "16684f5e351aa1e6a490a906a7b681404139f529915ab72ffdda68555ce48a76",
+      "currentHeroMatches": true,
+      "currentComparisonMatches": true
+    }
+  ],
+  "identicalSourceGroups": [
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/cat-mate-c200/comparison.webp",
+        "apps/pfotentechnik/public/images/products/cat-mate-c200/hero.webp",
+        "apps/pfotentechnik/public/images/products/cat-mate-c200/thumbnail.webp"
+      ],
+      "originalSha256": "bb5863f53291601fd340d08802140813dd7518a99143bb6c99c0063a928a3e55",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/cat-mate-c300/comparison.webp",
+        "apps/pfotentechnik/public/images/products/cat-mate-c300/hero.webp",
+        "apps/pfotentechnik/public/images/products/cat-mate-c300/thumbnail.webp"
+      ],
+      "originalSha256": "5b8914571022c5d2faba67da0c61d8633f51eef43a17f36ce24ecd2062b38386",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/honeyguardian-a305d/comparison.webp",
+        "apps/pfotentechnik/public/images/products/honeyguardian-a305d/hero.webp",
+        "apps/pfotentechnik/public/images/products/honeyguardian-a305d/thumbnail.webp"
+      ],
+      "originalSha256": "ed64e3c12e9d8193cb19ffedd4b6348143a75d07c8095937a8e061b8a55a5496",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/honeyguardian-a68/comparison.webp",
+        "apps/pfotentechnik/public/images/products/honeyguardian-a68/hero.webp",
+        "apps/pfotentechnik/public/images/products/honeyguardian-a68/thumbnail.webp"
+      ],
+      "originalSha256": "a9a28e9162046b398d0d44e64f3fdb0fcf1b46153418a7e1ddfcfda5c6fa1b81",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/honeyguardian-smart-pet-feeder-s305d/comparison.webp",
+        "apps/pfotentechnik/public/images/products/honeyguardian-smart-pet-feeder-s305d/hero.webp",
+        "apps/pfotentechnik/public/images/products/honeyguardian-smart-pet-feeder-s305d/thumbnail.webp"
+      ],
+      "originalSha256": "d5f853b9d9054e3ef40fddbf813219aa57d1952cd6d611988c5d12258a5abaae",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/imipaw-3l-automatic-cat-feeder/comparison.webp",
+        "apps/pfotentechnik/public/images/products/imipaw-3l-automatic-cat-feeder/hero.webp",
+        "apps/pfotentechnik/public/images/products/imipaw-3l-automatic-cat-feeder/thumbnail.webp"
+      ],
+      "originalSha256": "8ca1af06e60db49a3f472eb825f05c8a8c5b73a958a5bb33ae002f38ae693352",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/pawbby-smart-pet-feeder/comparison.webp",
+        "apps/pfotentechnik/public/images/products/pawbby-smart-pet-feeder/hero.webp",
+        "apps/pfotentechnik/public/images/products/pawbby-smart-pet-feeder/thumbnail.webp"
+      ],
+      "originalSha256": "7a2b0b6d291cb37ac764327964e5fb2a003dd070251f8573417a90483ceac1e4",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/petkit-fresh-element-infinity/comparison.webp",
+        "apps/pfotentechnik/public/images/products/petkit-fresh-element-infinity/hero.webp",
+        "apps/pfotentechnik/public/images/products/petkit-fresh-element-infinity/thumbnail.webp"
+      ],
+      "originalSha256": "adb8db1ba8060b5df16d5c7a5a0cd0c0b0f2e3136da88b37193fdafbe32ed5a2",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/petkit-fresh-element-solo/comparison.webp",
+        "apps/pfotentechnik/public/images/products/petkit-fresh-element-solo/hero.webp",
+        "apps/pfotentechnik/public/images/products/petkit-fresh-element-solo/thumbnail.webp"
+      ],
+      "originalSha256": "79c9afce83b1dc1ef5519902a4daf365faa9ef7ffe1176f78e0b2bd4cafb623b",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/petkit-yumshare-dual-hopper/comparison.webp",
+        "apps/pfotentechnik/public/images/products/petkit-yumshare-dual-hopper/hero.webp",
+        "apps/pfotentechnik/public/images/products/petkit-yumshare-dual-hopper/thumbnail.webp"
+      ],
+      "originalSha256": "9a598a4893f9653b7eb2175e40ac10932ade4090e38907daa1cc4a0d1bb9ee54",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/petkit-yumshare-solo-2/comparison.webp",
+        "apps/pfotentechnik/public/images/products/petkit-yumshare-solo-2/hero.webp",
+        "apps/pfotentechnik/public/images/products/petkit-yumshare-solo-2/thumbnail.webp"
+      ],
+      "originalSha256": "08d243f3c15431e0eb510bc5996ab05a581a557dfa1d44f39819bd2e28dc7e97",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/petlibro-air-automatic-feeder/comparison.webp",
+        "apps/pfotentechnik/public/images/products/petlibro-air-automatic-feeder/hero.webp",
+        "apps/pfotentechnik/public/images/products/petlibro-air-automatic-feeder/thumbnail.webp"
+      ],
+      "originalSha256": "4c0a524a0a6e53cd0b0d96244006d8f540757ab8b876c69eac09306e40baa8d0",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/petlibro-air-wifi-feeder/comparison.webp",
+        "apps/pfotentechnik/public/images/products/petlibro-air-wifi-feeder/hero.webp",
+        "apps/pfotentechnik/public/images/products/petlibro-air-wifi-feeder/thumbnail.webp"
+      ],
+      "originalSha256": "d0339d6736e4b9f890de4c9c9f7e8820a535d5dccb57571342199cc744cee6be",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/petlibro-granary-camera/comparison.webp",
+        "apps/pfotentechnik/public/images/products/petlibro-granary-camera/thumbnail.webp"
+      ],
+      "originalSha256": "9d8e7269cdc0c8211f91ffcf501a95b4908e376bc07ff9683e2b3f47a49c9987",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/petlibro-one-rfid-smart-feeder/comparison.webp",
+        "apps/pfotentechnik/public/images/products/petlibro-one-rfid-smart-feeder/hero.webp"
+      ],
+      "originalSha256": "34a040b33082cbc72a4f503d89db90a924825c4baaf28b7864a27da58b1baea3",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/petlibro-polar-wet-food-feeder/comparison.webp",
+        "apps/pfotentechnik/public/images/products/petlibro-polar-wet-food-feeder/thumbnail.webp"
+      ],
+      "originalSha256": "76066ffabd7793710dcc022d27bdf9c7b73330592ca251c5877ee7e3f45bad60",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/petlibro-space-smart-feeder/hero.webp",
+        "apps/pfotentechnik/public/images/products/petlibro-space-smart-feeder/thumbnail.webp"
+      ],
+      "originalSha256": "aafde879cfcdc2eebe80d99a155992c9d0d7823460d9e07ba1a9950c150055ab",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/surefeed-microchip-pet-feeder-connect/comparison.webp",
+        "apps/pfotentechnik/public/images/products/surefeed-microchip-pet-feeder-connect/thumbnail.webp"
+      ],
+      "originalSha256": "e0a754ffb5307f384b224ece77a84bbfc77c343ac074fbf8b70cafe9efc17d07",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/surefeed-microchip-pet-feeder/comparison.webp",
+        "apps/pfotentechnik/public/images/products/surefeed-microchip-pet-feeder/hero.webp",
+        "apps/pfotentechnik/public/images/products/surefeed-microchip-pet-feeder/thumbnail.webp"
+      ],
+      "originalSha256": "e0a754ffb5307f384b224ece77a84bbfc77c343ac074fbf8b70cafe9efc17d07",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/wopet-cube-air-ca10/comparison.webp",
+        "apps/pfotentechnik/public/images/products/wopet-cube-air-ca10/hero.webp",
+        "apps/pfotentechnik/public/images/products/wopet-cube-air-ca10/thumbnail.webp"
+      ],
+      "originalSha256": "1ee8df6dbcef9ef90fa9c34c4fae88e5251ee34a981fccd1034761daddf21225",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/wopet-heritage-view-camera-feeder/comparison.webp",
+        "apps/pfotentechnik/public/images/products/wopet-heritage-view-camera-feeder/hero.webp",
+        "apps/pfotentechnik/public/images/products/wopet-heritage-view-camera-feeder/thumbnail.webp"
+      ],
+      "originalSha256": "a9d254b4c1cee577a9364049fc24cd863f60993792162f873baa6dd1ad2bde93",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/public/images/products/wopet-pioneer-f01-plus/comparison.webp",
+        "apps/pfotentechnik/public/images/products/wopet-pioneer-f01-plus/hero.webp",
+        "apps/pfotentechnik/public/images/products/wopet-pioneer-f01-plus/thumbnail.webp"
+      ],
+      "originalSha256": "16684f5e351aa1e6a490a906a7b681404139f529915ab72ffdda68555ce48a76",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/cat-mate-c200/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/cat-mate-c200/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/cat-mate-c200/thumbnail.webp"
+      ],
+      "originalSha256": "bb5863f53291601fd340d08802140813dd7518a99143bb6c99c0063a928a3e55",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/cat-mate-c300/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/cat-mate-c300/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/cat-mate-c300/thumbnail.webp"
+      ],
+      "originalSha256": "5b8914571022c5d2faba67da0c61d8633f51eef43a17f36ce24ecd2062b38386",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/cat-mate-elite-355w/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/cat-mate-elite-355w/thumbnail.webp"
+      ],
+      "originalSha256": "60d624801ae16e7a91e9d2f16ea7f247a1c10a2167307dd987f6659c566820c9",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/catit-pixi-smart-trinkbrunnen/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/catit-pixi-smart-trinkbrunnen/thumbnail.webp"
+      ],
+      "originalSha256": "35cdee5bc80b2fb433eb63389c56552a87cc96dde3320f0842e9f2720400d937",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/devoko-90l-automatisches-katzenklo/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/devoko-90l-automatisches-katzenklo/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/devoko-90l-automatisches-katzenklo/thumbnail.webp"
+      ],
+      "originalSha256": "a575f66689ef0fe1b4bb8774219bfdf3e31b0b1595078cb4116ae92a6b7b07ae",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/enabot-rola-mini/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/enabot-rola-mini/thumbnail.webp"
+      ],
+      "originalSha256": "87f7db902ab35c02e837af336d2a4cccd48134a408d70ea2bbf0d267d8544bab",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/enabot-rola-pettracker/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/enabot-rola-pettracker/thumbnail.webp"
+      ],
+      "originalSha256": "e0c4543de46395a355530c5fdf3edb3e02285585c8773c8423c9e04ea04e7ebb",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/feelneedy-fn-w18-8l-katzenbrunnen/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/feelneedy-fn-w18-8l-katzenbrunnen/thumbnail.webp"
+      ],
+      "originalSha256": "2081a4c2a80b66807917950dfcc4ee4a7384077c9567a41f9377b704e524bff8",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/furbo-360-hundekamera/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/furbo-360-hundekamera/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/furbo-360-hundekamera/thumbnail.webp"
+      ],
+      "originalSha256": "5eda686fc578ddcb5ea03c72b7a63ff2427ff5abeefc6aae409a1e364bf0e08a",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/furbo-360-katzenkamera/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/furbo-360-katzenkamera/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/furbo-360-katzenkamera/thumbnail.webp"
+      ],
+      "originalSha256": "78d3c3183ad03f53c8f9600ffb1069b553d1ca9cff0abe17a3bdd1254a8832f5",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/furbo-mini-360/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/furbo-mini-360/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/furbo-mini-360/thumbnail.webp"
+      ],
+      "originalSha256": "9a2e0774566e7e781adf0ea146245f6db7302a2ad970fc83a465f264645a35f6",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/honeyguardian-a68/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/honeyguardian-a68/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/honeyguardian-a68/thumbnail.webp"
+      ],
+      "originalSha256": "a9a28e9162046b398d0d44e64f3fdb0fcf1b46153418a7e1ddfcfda5c6fa1b81",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/imipaw-3l-automatic-cat-feeder/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/imipaw-3l-automatic-cat-feeder/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/imipaw-3l-automatic-cat-feeder/thumbnail.webp"
+      ],
+      "originalSha256": "8ca1af06e60db49a3f472eb825f05c8a8c5b73a958a5bb33ae002f38ae693352",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/invoxia-biotracker-2026/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/invoxia-biotracker-2026/thumbnail.webp"
+      ],
+      "originalSha256": "5f4f7e60cbe23fb1aa586680750abb9a61b9124a51d1c599096805410b41c320",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/litter-robot-4/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/litter-robot-4/thumbnail.webp"
+      ],
+      "originalSha256": "8b99592a8697c798ed522283abf43938ec650a7c0684be323a8e79f0167ce85d",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/neakasa-m1-lite/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/neakasa-m1-lite/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/neakasa-m1-lite/thumbnail.webp"
+      ],
+      "originalSha256": "a4b3c9894560c1c61b74217caec2be0f3f642c4644ef108edd06cd0ea19de2a7",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/neakasa-riko/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/neakasa-riko/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/neakasa-riko/thumbnail.webp"
+      ],
+      "originalSha256": "7e4e589d7e300987fcd94663f745d714d92ae5ed70343bbb196ca33ca185edcb",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/onlycat-mikrochip-katzenklappe/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/onlycat-mikrochip-katzenklappe/thumbnail.webp"
+      ],
+      "originalSha256": "b44e45fc55482494fd5d49c2378d84962d00924f793e7c278e019adac5e15f07",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/paj-pet-finder-4g-mini/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/paj-pet-finder-4g-mini/thumbnail.webp"
+      ],
+      "originalSha256": "13241e7637a66b5029408b2d824ea7ed22b6d8ef4c46aef529053030d89f948a",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/pawbby-smart-pet-feeder/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/pawbby-smart-pet-feeder/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/pawbby-smart-pet-feeder/thumbnail.webp"
+      ],
+      "originalSha256": "7a2b0b6d291cb37ac764327964e5fb2a003dd070251f8573417a90483ceac1e4",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/pawfit-3/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/pawfit-3/thumbnail.webp"
+      ],
+      "originalSha256": "b21d1ea655b8a901e0eec79b034008973ab94c63848aadfe41b4562060e56c16",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petkit-eversweet-ultra/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/petkit-eversweet-ultra/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/petkit-eversweet-ultra/thumbnail.webp"
+      ],
+      "originalSha256": "615fc0e75922b80b0cc869d61c03c543819d1c9d9c20176fcd1ce9fdd6b8f5e4",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petkit-fresh-element-infinity/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/petkit-fresh-element-infinity/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/petkit-fresh-element-infinity/thumbnail.webp"
+      ],
+      "originalSha256": "adb8db1ba8060b5df16d5c7a5a0cd0c0b0f2e3136da88b37193fdafbe32ed5a2",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petkit-fresh-element-solo/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/petkit-fresh-element-solo/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/petkit-fresh-element-solo/thumbnail.webp"
+      ],
+      "originalSha256": "79c9afce83b1dc1ef5519902a4daf365faa9ef7ffe1176f78e0b2bd4cafb623b",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petkit-puramax-2/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/petkit-puramax-2/thumbnail.webp"
+      ],
+      "originalSha256": "40bd01fe4e9f758eade12f329307f43f16a40ea25b9895640bc15768b9d4183b",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petkit-purobot-max-3/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/petkit-purobot-max-3/thumbnail.webp"
+      ],
+      "originalSha256": "2408472c87832a4bc349c7cb66f58f45bc320b3e5f98c9fd1c45e17091b5a8f3",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petkit-yumshare-dual-hopper/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/petkit-yumshare-dual-hopper/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/petkit-yumshare-dual-hopper/thumbnail.webp"
+      ],
+      "originalSha256": "9a598a4893f9653b7eb2175e40ac10932ade4090e38907daa1cc4a0d1bb9ee54",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petkit-yumshare-dual/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/petkit-yumshare-dual/thumbnail.webp"
+      ],
+      "originalSha256": "16f1cadec79ac9ae0b7673da400966212f77da7c315d2b2a30e43dece42722fe",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petkit-yumshare-solo-2/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/petkit-yumshare-solo-2/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/petkit-yumshare-solo-2/thumbnail.webp"
+      ],
+      "originalSha256": "08d243f3c15431e0eb510bc5996ab05a581a557dfa1d44f39819bd2e28dc7e97",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petkit-yumshare-solo/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/petkit-yumshare-solo/thumbnail.webp"
+      ],
+      "originalSha256": "fdab22ce03ad73090a2c95580432503292ba6d445ec33b606205eb9e7af13c80",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petlibro-air-automatic-feeder/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/petlibro-air-automatic-feeder/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/petlibro-air-automatic-feeder/thumbnail.webp"
+      ],
+      "originalSha256": "4c0a524a0a6e53cd0b0d96244006d8f540757ab8b876c69eac09306e40baa8d0",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petlibro-air-wifi-feeder/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/petlibro-air-wifi-feeder/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/petlibro-air-wifi-feeder/thumbnail.webp"
+      ],
+      "originalSha256": "d0339d6736e4b9f890de4c9c9f7e8820a535d5dccb57571342199cc744cee6be",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petlibro-granary-2-vision/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/petlibro-granary-2-vision/thumbnail.webp"
+      ],
+      "originalSha256": "21edea0fd2859957422c4b8ec0537afd7b55efb8818672727bcbe3742d195d4c",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petlibro-granary-dual-feeder/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/petlibro-granary-dual-feeder/thumbnail.webp"
+      ],
+      "originalSha256": "2107861426e21fcb49adb7362f5b661c2e3be083797fa1d74114418dd75bdfca",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petlibro-luma-smart-litter-box/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/petlibro-luma-smart-litter-box/hero.webp"
+      ],
+      "originalSha256": "5d1462df3db91b31d2b2b5adcaa9ea611596472d3da374057be14520ff8cea42",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petlibro-one-rfid-smart-feeder/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/petlibro-one-rfid-smart-feeder/hero.webp"
+      ],
+      "originalSha256": "34a040b33082cbc72a4f503d89db90a924825c4baaf28b7864a27da58b1baea3",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petlibro-polar-wet-food-feeder/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/petlibro-polar-wet-food-feeder/thumbnail.webp"
+      ],
+      "originalSha256": "76066ffabd7793710dcc022d27bdf9c7b73330592ca251c5877ee7e3f45bad60",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petlibro-space-smart-feeder/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/petlibro-space-smart-feeder/thumbnail.webp"
+      ],
+      "originalSha256": "aafde879cfcdc2eebe80d99a155992c9d0d7823460d9e07ba1a9950c150055ab",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petsafe-mikrochip-katzenklappe/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/petsafe-mikrochip-katzenklappe/thumbnail.webp"
+      ],
+      "originalSha256": "f5b37387cfa8ac42a1cfce4ec4cbbd2f30718588755f12c85ffbb77d47f96ebd",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petsafe-petporte-smart-flap/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/petsafe-petporte-smart-flap/thumbnail.webp"
+      ],
+      "originalSha256": "f5b37387cfa8ac42a1cfce4ec4cbbd2f30718588755f12c85ffbb77d47f96ebd",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petsafe-streamside-trinkbrunnen/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/petsafe-streamside-trinkbrunnen/thumbnail.webp"
+      ],
+      "originalSha256": "bc85188d90973839037c5a97761e047171c9f856005fe80ce686a13d8c72ea11",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petsnowy-snow-plus/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/petsnowy-snow-plus/thumbnail.webp"
+      ],
+      "originalSha256": "a8e8b45d7d9bf4ae0007c28f7f0462c1c706e00ab7f456f22a75dcbd0873a3c8",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/pettec-cam-360/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/pettec-cam-360/thumbnail.webp"
+      ],
+      "originalSha256": "bec73972fc655cb9cf360fc9b8975868accafc018abb854fbcf61b526bfdb38e",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/petwalk-medium-tiertuer/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/petwalk-medium-tiertuer/thumbnail.webp"
+      ],
+      "originalSha256": "3f86e74be512e8b3bea5b3c3e17e47267f2241b2725f7eb62488f07d59d4e2af",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/prothelis-area-pets/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/prothelis-area-pets/thumbnail.webp"
+      ],
+      "originalSha256": "1c9c145d69d2631666452592593d29977190922a34c3a008c94b7d8882d086fa",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/reolink-e1-zoom/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/reolink-e1-zoom/thumbnail.webp"
+      ],
+      "originalSha256": "58cf18f4c45b275b9dfa4421dc0bd02278cdd6c551ef70a932710131b52bac77",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/surefeed-microchip-pet-feeder-connect/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/surefeed-microchip-pet-feeder-connect/thumbnail.webp"
+      ],
+      "originalSha256": "e0a754ffb5307f384b224ece77a84bbfc77c343ac074fbf8b70cafe9efc17d07",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/surefeed-microchip-pet-feeder/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/surefeed-microchip-pet-feeder/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/surefeed-microchip-pet-feeder/thumbnail.webp"
+      ],
+      "originalSha256": "e0a754ffb5307f384b224ece77a84bbfc77c343ac074fbf8b70cafe9efc17d07",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/sureflap-dualscan-mikrochip-katzenklappe/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/sureflap-dualscan-mikrochip-katzenklappe/thumbnail.webp"
+      ],
+      "originalSha256": "22ef75f3bcf67905b81d327cbc0f550b2d1fedb2b4457d76f9425d9c1f214c0e",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/sureflap-mikrochip-katzenklappe-connect/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/sureflap-mikrochip-katzenklappe-connect/thumbnail.webp"
+      ],
+      "originalSha256": "606457ecaa92358a6b1c594433de196d8a0117ceaaf51b01baf378d9c389923a",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/sureflap-mikrochip-katzenklappe/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/sureflap-mikrochip-katzenklappe/thumbnail.webp"
+      ],
+      "originalSha256": "22ef75f3bcf67905b81d327cbc0f550b2d1fedb2b4457d76f9425d9c1f214c0e",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/tractive-cat-6-mini/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/tractive-cat-6-mini/thumbnail.webp"
+      ],
+      "originalSha256": "bcafedbb136d43908f77356fb80c863d939c3b5220974971b8231e19ed07cea5",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/tractive-dog-6/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/tractive-dog-6/thumbnail.webp"
+      ],
+      "originalSha256": "301b4ebb2cf0ef912bb284d842a8a9b9272609bb6d4e3fc9fad4a1092de96ac8",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/weenect-xs/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/weenect-xs/thumbnail.webp"
+      ],
+      "originalSha256": "5765d8e7bbd53fb903e0cdb986d4345dd95e2eace50d1cd46bf0aaf89c0f78b8",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/wopet-cube-air-ca10/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/wopet-cube-air-ca10/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/wopet-cube-air-ca10/thumbnail.webp"
+      ],
+      "originalSha256": "1ee8df6dbcef9ef90fa9c34c4fae88e5251ee34a981fccd1034761daddf21225",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/wopet-heritage-view-camera-feeder/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/wopet-heritage-view-camera-feeder/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/wopet-heritage-view-camera-feeder/thumbnail.webp"
+      ],
+      "originalSha256": "a9d254b4c1cee577a9364049fc24cd863f60993792162f873baa6dd1ad2bde93",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/wopet-pioneer-f01-plus/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/wopet-pioneer-f01-plus/hero.webp",
+        "apps/pfotentechnik/src/assets/images/products/wopet-pioneer-f01-plus/thumbnail.webp"
+      ],
+      "originalSha256": "16684f5e351aa1e6a490a906a7b681404139f529915ab72ffdda68555ce48a76",
+      "unchanged": true
+    },
+    {
+      "files": [
+        "apps/pfotentechnik/src/assets/images/products/zeromouse-2-0/comparison.webp",
+        "apps/pfotentechnik/src/assets/images/products/zeromouse-2-0/thumbnail.webp"
+      ],
+      "originalSha256": "7df09e7b5ec90d27ff203d2d698d4156393cd979443e126f3085fbf19861ef6e",
+      "unchanged": true
+    }
+  ]
+}

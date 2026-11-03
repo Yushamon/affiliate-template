@@ -1,0 +1,57 @@
+{
+  "startHead": "fda8909997fe148e553fa656433bfdc96870056a",
+  "sources": [
+    {
+      "file": "apps/pfotentechnik/reports/editorial-quality-recovery-35.4/snapshot.json",
+      "sha256": "2d98b3b92782db3229b1d1b7f376d9db3efe462654924cb8a9e2e45b3521b742"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/editorial-quality-recovery-35.4/coverage-input.json",
+      "sha256": "396e647ac973e19c48e09dca1b49f1ff50755f7a821e7927c6eb134075d6d9c9"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/index-migration-forensics-35.3b/index-status-comparison.csv",
+      "sha256": "ba473819ca675c07f94ad8b6f67aa011922fd466b7e8eb24e46f3052258dbd8c"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/index-migration-forensics-35.3b/historical-gsc-sources.json",
+      "sha256": "3ef5a03c0609a0bbf01d49435f7b68d937c78a093f69a6338975f169986cd1ac"
+    },
+    {
+      "file": "apps/pfotentechnik/src/generated/content-graph.json",
+      "sha256": "d3836c57d5e059ab53af74194c5dcf6493981255cd95d278121c8ea05a59bf84"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/google-index-recovery-35.3/production-http.json",
+      "sha256": "bc11f7ff90e5c0a61694dc1fe7e16052f6bb7baa880bdd1383ac6c61bf43476f"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/indexation-gap-analysis-35.5/indexation-feature-matrix.csv",
+      "sha256": "1fffb1032bdd028c3a2696e500b052b9b1ce1776a9fcded2bd4d11f013b9859f"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/indexation-gap-analysis-35.5/experiment-baseline.csv",
+      "sha256": "deafa32e822b1fc505915f8a50a9497da2743763946d5e88e9773ff3e103a2f6"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/indexation-gap-analysis-35.5/selection-lock.json",
+      "sha256": "8d173d4171b10e81b14fa0ee79728daacf879e8463189de775e7b23e8d2d3755"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/indexation-gap-analysis-35.5/selection-input-feature-matrix.csv",
+      "sha256": "fe7470c785b7149c0c7162cc3703f79b4c1d3efc4b19e42020ba07b25c0eb2f4"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/indexation-gap-analysis-35.5/historical-performance-observations.csv",
+      "sha256": "8182a0373a14011dc52857ba78186a1fc7407680053094aa1069d3695572857c"
+    }
+  ],
+  "historicalGscCounts": {
+    "indexed": 90,
+    "crawled-not-indexed": 91,
+    "discovered-not-indexed": 78
+  },
+  "noPublish": true,
+  "noIndexingRequests": true,
+  "finalChecksAt": "2026-11-03T07:26:55.138043+00:00"
+}

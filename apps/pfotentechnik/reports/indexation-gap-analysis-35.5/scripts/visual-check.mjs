@@ -1,0 +1,27 @@
+import fs from 'node:fs';import path from 'node:path';import http from 'node:http';import {spawn} from 'node:child_process';
+const dist=path.join(process.cwd(),'apps/pfotentechnik/dist'),output=process.argv.some(a=>a.startsWith('--route='))?'apps/pfotentechnik/reports/indexation-gap-analysis-35.5/visual-followup':'apps/pfotentechnik/reports/indexation-gap-analysis-35.5/visual',profile='/tmp/gap-35-5/chrome-'+Date.now();fs.mkdirSync(output,{recursive:true});fs.mkdirSync(profile,{recursive:true});
+const targetRoute=process.argv.find(a=>a.startsWith('--route='))?.slice(8);
+const routes=JSON.parse(fs.readFileSync('apps/pfotentechnik/reports/indexation-gap-analysis-35.5/selection-lock.json')).pairs.map(p=>p.treatment.route).filter(r=>!targetRoute||r===targetRoute);
+const server=http.createServer((req,res)=>{const u=new URL(req.url,'http://localhost');const file=path.resolve(dist,'.'+decodeURIComponent(u.pathname)+(u.pathname.endsWith('/')?'index.html':''));if(!file.startsWith(dist+path.sep)||!fs.existsSync(file)){res.writeHead(404);res.end();return;}const ext=path.extname(file);res.writeHead(200,{'content-type':({'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.webp':'image/webp','.svg':'image/svg+xml'})[ext]||'application/octet-stream'});fs.createReadStream(file).pipe(res);});
+await new Promise(r=>server.listen(0,'127.0.0.1',r));const port=server.address().port;
+const chrome=spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',['--headless=new','--disable-gpu','--no-sandbox','--remote-debugging-port=0','--user-data-dir='+profile,'--no-first-run','--no-default-browser-check','about:blank'],{stdio:['ignore','ignore','pipe']});let error='';chrome.stderr.on('data',x=>error+=x);
+let ws;let id=0;const pending=new Map();
+try{
+ for(let n=0;n<100&&!fs.existsSync(profile+'/DevToolsActivePort');n++)await new Promise(r=>setTimeout(r,100));
+ if(!fs.existsSync(profile+'/DevToolsActivePort'))throw Error(error);
+ const [debugPort,wsPath]=fs.readFileSync(profile+'/DevToolsActivePort','utf8').trim().split('\n');ws=new WebSocket('ws://127.0.0.1:'+debugPort+wsPath);await new Promise((r,j)=>{ws.onopen=r;ws.onerror=j;});
+ ws.onmessage=e=>{const data=JSON.parse(e.data);if(data.id){const p=pending.get(data.id);pending.delete(data.id);data.error?p.reject(Error(JSON.stringify(data.error))):p.resolve(data.result);}};
+ const cdp=(method,params={},sessionId)=>new Promise((resolve,reject)=>{const n=++id;pending.set(n,{resolve,reject});ws.send(JSON.stringify({id:n,method,params,...sessionId?{sessionId}:{}}));});
+ const {targetId}=await cdp('Target.createTarget',{url:'about:blank'});const {sessionId}=await cdp('Target.attachToTarget',{targetId,flatten:true});const send=(method,params)=>cdp(method,params,sessionId);await send('Page.enable');const rows=[];
+ for(const theme of ['light','dark']){await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-color-scheme',value:theme}]});for(const width of [360,390,1366]){await send('Emulation.setDeviceMetricsOverride',{width,height:900,deviceScaleFactor:1,mobile:false});for(const route of routes){await send('Page.navigate',{url:`http://127.0.0.1:${port}${route}`});
+ for(let n=0;n<60;n++){await new Promise(r=>setTimeout(r,100));const ready=await send('Runtime.evaluate',{expression:`document.readyState==='complete' && location.pathname===${JSON.stringify(route)}`,returnByValue:true});if(ready.result.value)break;}
+ await send('Runtime.evaluate',{expression:'document.fonts.ready',awaitPromise:true});
+ await send('Runtime.evaluate',{expression:`(()=>{document.documentElement.style.scrollBehavior='auto';for(const d of document.querySelectorAll('details'))d.open=true;const target=location.pathname.startsWith('/produkt/')?document.querySelector('#timeline-title'):document.querySelector('#zugangscheck-im-vorhandenen-zuhause')||document.querySelector('#zwei-geratebeispiele-statt-einer-pauschalen-filterregel')||document.querySelector('#so-kalibrierst-du-die-ausgabe')||document.querySelector('main h2');if(target)window.scrollTo({top:target.getBoundingClientRect().top+window.scrollY-90,behavior:'instant'});})()`});
+ await new Promise(r=>setTimeout(r,150));
+ const {result}=await send('Runtime.evaluate',{expression:`(()=>{const d=document.documentElement;return {theme:matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light',overflow:Math.max(0,d.scrollWidth-d.clientWidth),width:d.clientWidth,h1:[...document.querySelectorAll('h1')].map(x=>x.textContent.trim()),background:getComputedStyle(document.body).backgroundColor,textColor:getComputedStyle(document.body).color,brokenImages:[...document.images].filter(x=>x.complete&&!x.naturalWidth&&!x.hasAttribute('data-lightbox-image')).length};})()`,returnByValue:true});const metrics=result.value;rows.push({route,width,requestedTheme:theme,...metrics,pass:metrics.overflow<=2&&metrics.brokenImages===0&&metrics.h1.length===1&&metrics.theme===theme});
+ if(width===390){
+ const {data}=await send('Page.captureScreenshot',{format:'png'});fs.writeFileSync(path.join(output,route.replaceAll('/','_')+theme+'.png'),Buffer.from(data,'base64'));
+ }
+ }}}
+ fs.writeFileSync(output+'/results.json',JSON.stringify({method:'Chrome headless CDP, final production HTML, 360/390/1366 px, light/dark via prefers-color-scheme',rows},null,2));console.log(JSON.stringify({checks:rows.length,passed:rows.filter(x=>x.pass).length,failures:rows.filter(x=>!x.pass)},null,2));process.exitCode=rows.every(x=>x.pass)?0:1;
+}finally{ws?.close();chrome.kill('SIGTERM');server.close();}
