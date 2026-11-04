@@ -1,0 +1,88 @@
+{
+  "updatedAt": "2026-11-04",
+  "origin": "Product imagery from the selected-variant Amazon gallery; no generated or reconstructed imagery",
+  "amazonImagesUsed": true,
+  "asin": "B095PZRWB1",
+  "sourcePage": "https://www.amazon.de/dp/B095PZRWB1",
+  "downloadMethod": "Direct HTTPS download from image URLs exposed by the assigned product page; no partner API",
+  "authorization": {
+    "basis": "Explicit operator exception in this conversation",
+    "scope": "Download Amazon images without an API, replace local WebP assets and switch Catit to mint green",
+    "thirdPartyLicence": "No independent third-party licence grant claimed"
+  },
+  "transform": "Resize without cropping or changing product appearance; WebP compression; no SVG retained",
+  "assets": [
+    {
+      "file": "hero.webp",
+      "width": 1200,
+      "height": 1200,
+      "bytes": 27846,
+      "sha256": "1c9ffdad83b1f2d0e69cf40a4f4c5bd5b16209344a73b1bdc958325c074b531b",
+      "kind": "amazon-product-image",
+      "sourceUrl": "https://m.media-amazon.com/images/I/61gAMaIUb9S._AC_SL1500_.jpg",
+      "sourceAsin": "B095PZRWB1",
+      "sourcePage": "https://www.amazon.de/dp/B095PZRWB1",
+      "sourceSha256": "2924dc319f21bdd7d7b244e517584880152f101e8ea8fc65ebaf55392320a390"
+    },
+    {
+      "file": "gallery-1.webp",
+      "width": 1200,
+      "height": 1026,
+      "bytes": 26928,
+      "sha256": "16bd8dc869d74ed07755d0eea5619ad2cc793c5fbcfa34454c5ac52b675f03b3",
+      "kind": "amazon-product-image",
+      "sourceUrl": "https://m.media-amazon.com/images/I/61V8kGHWu+S._AC_SL1500_.jpg",
+      "sourceAsin": "B095PZRWB1",
+      "sourcePage": "https://www.amazon.de/dp/B095PZRWB1",
+      "sourceSha256": "899d4eb909e8973b57a5c06a36878489e4c0c6e17dd1dbd142ab76243d7463b1"
+    },
+    {
+      "file": "gallery-2.webp",
+      "width": 1200,
+      "height": 1200,
+      "bytes": 78108,
+      "sha256": "7c0affb8a317ff9ac9cd6b769d79d6a8daa06b8bea15a36785101d36f84cde17",
+      "kind": "amazon-product-image",
+      "sourceUrl": "https://m.media-amazon.com/images/I/81sjftCxjhS._AC_SL1500_.jpg",
+      "sourceAsin": "B095PZRWB1",
+      "sourcePage": "https://www.amazon.de/dp/B095PZRWB1",
+      "sourceSha256": "00e1dc57ba955e572d1dcbfe17399a15c45e6ccc3da007847d1a7ffd1ad921db"
+    },
+    {
+      "file": "gallery-3.webp",
+      "width": 1177,
+      "height": 1200,
+      "bytes": 32238,
+      "sha256": "5bde6795f5572c9395acae0176d46d134c35397a3144c3495788fa8e44078537",
+      "kind": "amazon-product-image",
+      "sourceUrl": "https://m.media-amazon.com/images/I/61+xk0hRzWS._AC_SL1500_.jpg",
+      "sourceAsin": "B095PZRWB1",
+      "sourcePage": "https://www.amazon.de/dp/B095PZRWB1",
+      "sourceSha256": "d55a1f1aaba8bfca109b9665b81da747591f68af4e98015a99489f949af6949c"
+    },
+    {
+      "file": "thumbnail.webp",
+      "width": 480,
+      "height": 480,
+      "bytes": 8058,
+      "sha256": "42f3730a4fb154d123e73635e47c5ea121e0ad3f2936826c168e3cc9867a325c",
+      "kind": "amazon-product-image",
+      "sourceUrl": "https://m.media-amazon.com/images/I/61gAMaIUb9S._AC_SL1500_.jpg",
+      "sourceAsin": "B095PZRWB1",
+      "sourcePage": "https://www.amazon.de/dp/B095PZRWB1",
+      "sourceSha256": "2924dc319f21bdd7d7b244e517584880152f101e8ea8fc65ebaf55392320a390"
+    },
+    {
+      "file": "comparison.webp",
+      "width": 720,
+      "height": 720,
+      "bytes": 13570,
+      "sha256": "b9e44af0d836de3ecb1e7531db92e3ff3e69ee609887a5817907ad81bed66ed4",
+      "kind": "amazon-product-image",
+      "sourceUrl": "https://m.media-amazon.com/images/I/61gAMaIUb9S._AC_SL1500_.jpg",
+      "sourceAsin": "B095PZRWB1",
+      "sourcePage": "https://www.amazon.de/dp/B095PZRWB1",
+      "sourceSha256": "2924dc319f21bdd7d7b244e517584880152f101e8ea8fc65ebaf55392320a390"
+    }
+  ]
+}

@@ -122,6 +122,16 @@ const updatedLabel = new Intl.DateTimeFormat("de-DE", {
           </a>
         ))}
       </div>
+      {model.additionalProducts?.length > 0 && (
+        <nav class="pt-category-hub__additional-products" aria-label="Weitere Trinkbrunnen im Datencheck">
+          <h3>Weitere Modelle im Datencheck</h3>
+          <ul>
+            {model.additionalProducts.map((product) => (
+              <li><a href={product.href}>{product.title}</a><span> · {product.role}</span></li>
+            ))}
+          </ul>
+        </nav>
+      )}
     </section>
   )}
 
@@ -208,6 +218,10 @@ const updatedLabel = new Intl.DateTimeFormat("de-DE", {
 </div>
 
 <style>
+  .pt-category-hub__additional-products { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--category-border); }
+  .pt-category-hub__additional-products ul { display: grid; gap: .75rem; padding-left: 1.25rem; }
+  .pt-category-hub__additional-products a { color: var(--category-action); text-underline-offset: .2em; }
+  .pt-category-hub__additional-products span { color: var(--category-muted); }
   .pt-category-hub {
     --category-surface: var(--pt33-color-surface, var(--pt-color-surface));
     --category-raised: var(--pt33-color-surface-raised, var(--pt-color-surface-raised));

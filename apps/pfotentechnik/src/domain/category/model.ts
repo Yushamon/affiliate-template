@@ -70,6 +70,7 @@ export type CategoryExperienceModel = {
   primaryComparison: CategoryPrimaryComparison;
   secondaryComparisons: CategoryComparison[];
   products: CategoryProduct[];
+  additionalProducts: { title: string; href: string; role: string }[];
   guides: CategoryGuide[];
   evidenceIntro: string;
   evidenceSections: CategoryEvidenceSection[];

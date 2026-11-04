@@ -4,10 +4,10 @@ slug: beste-trinkbrunnen-fuer-katzen
 type: comparison
 layout: comparison
 description: >-
-  Elf Katzenbrunnen nach Trinkfläche, Material, Reinigung, Filter, Lautstärke, Stromversorgung und Mehrkatzen-Eignung
+  Vierzehn Katzenbrunnen nach Trinkfläche, Material, Reinigung, Filter, Lautstärke, Stromversorgung und Mehrkatzen-Eignung
   vergleichen.
 publishedAt: "2026-07-24"
-updatedAt: "2026-08-16"
+updatedAt: "2026-11-04"
 author:
   name: PfotenTechnik Redaktion
   role: Redaktion
@@ -21,14 +21,14 @@ hub:
   sections:
     - vergleiche
   title: Beste Trinkbrunnen für Katzen
-  description: Elf klar unterscheidbare Katzenbrunnen nach Reinigung, Material, Betrieb und Einsatzgebiet.
+  description: Vierzehn klar unterscheidbare Katzenbrunnen nach Reinigung, Material, Betrieb und Einsatzgebiet.
   icon: 🐈
   featured: true
   order: 20
 seo:
-  title: "Katzenbrunnen Vergleich 2026: 11 Modelle im Check"
+  title: "Katzenbrunnen Vergleich 2026: 14 Modelle im Check"
   description: >-
-    Elf Katzenbrunnen im Vergleich: Netzbetrieb, Akku, Edelstahl, Keramik, UVC, Mehrkatzen-Tracking, Filterkosten und
+    Vierzehn Katzenbrunnen im Vergleich: Netzbetrieb, Akku, Edelstahl, Keramik, UVC, Mehrkatzen-Tracking, Filterkosten und
     Reinigungsaufwand transparent eingeordnet.
   canonical: /vergleiche/beste-trinkbrunnen-fuer-katzen/
   sitemap: true
@@ -194,6 +194,59 @@ items:
       filter: Aktivkohle plus Schaum
       lautstaerke: Sanftes Blubbern; keine belastbare dB-Angabe
       kapazitaet: 1,8 Liter
+  - slug: brook-glass-pet-fountain
+    label: Brook Glass Pet Fountain
+    type: product
+    recommendation: >-
+      Für Katzen und kleine Hunde, wenn Glasflächen und ein zerlegbarer Aufbau Priorität haben und
+      US-Ersatzteilbezug, Glasbruchrisiko und häufige Filterwechsel akzeptiert werden.
+    values:
+      kapazitaet: 2,7 Liter
+      material: Borosilikat- und Kalk-Natron-Glas; Filterkorb Edelstahl 316, Pumpe BPA-freier ABS-Kunststoff
+      lautstaerke: Leise laut Hersteller; kein eigener Geräuschtest
+      filter: Aktivkohlebeutel alle 1–2 Wochen; Grobfilterring alle 2–4 Wochen
+      reinigung: Glasteile wöchentlich reinigen und spülmaschinengeeignet; Pumpe separat alle 2–4 Wochen zerlegen
+      stromversorgung: >-
+        USB-Netzbetrieb mit Adapter, ca. 1,52 m Kabel; kein belegter Akku. Konkrete EU-Adapterausführung
+        nicht bestätigt.
+      eignung: Katzen und kleine Hunde
+    overrides: {}
+  - slug: philips-pet-series-paw3210-02
+    label: Philips Pet Series Trinkbrunnen PAW3210/02
+    type: product
+    recommendation: >-
+      Für Katzen und kleine Hunde, wenn ein kompakter Netzbrunnen mit Bewegungssensor und ohne App gesucht
+      wird und Handreinigung akzeptiert ist.
+    values:
+      kapazitaet: 2,2 Liter
+      material: Kunststoff; keine bestätigte BPA-frei-Zusage für dieses Modell
+      lautstaerke: Unter 38 dB laut Pressemitteilung von 2024; kein eigener Messwert
+      filter: Mehrschichtiger Filter mit Aktivkohle und Ionenaustausch; PAW0010/01, Wechsel alle 30 Tage
+      reinigung: >-
+        Handreinigung laut Philips-Support; keine Spülmaschine. Anschluss trocken halten und Pumpe separat
+        reinigen.
+      stromversorgung: DC 5 V / 1 A über Netzadapter; Eingang AC 100–240 V, 50/60 Hz; 1,5 m Kabel
+      eignung: Katzen und kleine Hunde
+    overrides: {}
+  - slug: catit-pixi-standard-trinkbrunnen
+    label: Catit PIXI Standard Trinkbrunnen (Mintgrün)
+    type: product
+    recommendation: >-
+      Für Katzenhalter, die einen kompakten Brunnen ohne App suchen und Kunststoff sowie regelmäßige
+      Handreinigung bewusst in Kauf nehmen.
+    values:
+      kapazitaet: 2,5 Liter
+      material: >-
+        Kunststoffreservoir und Standard-Trinkfläche aus Kunststoff; Edelstahleinsatz nur als Zubehör bzw.
+        andere Variante
+      lautstaerke: Hersteller beschreibt leise, aufgehängte Pumpe; kein belastbarer dB-Wert
+      filter: Dreifachfilter aus Wattegewebe, Aktivkohle und Ionenaustauschharz; alle 30 Tage
+      reinigung: >-
+        Standardteile von Hand reinigen; Pumpe separat zerlegen. Spülmaschinenfreigabe des
+        Edelstahleinsatzes gilt nicht für diese Kunststoffvariante.
+      stromversorgung: USB-Netzbetrieb, DC 5 V / 1 A; Hersteller nennt weniger als 1 W Verbrauch
+      eignung: Katzenhaushalte ohne App-Bedarf
+    overrides: {}
 criteria:
   - key: reinigung
     label: Reinigung
@@ -246,7 +299,7 @@ recommendation:
     Eversweet Ultra deckt Mehrkatzen-Tracking ab, Catit PIXI App/UVC, PetSafe Streamside Keramik und PETLIBRO Edelstahl.
   winnerSlug: petkit-eversweet-solo-2-fountain
   alternativeSlug: oneisall-3-2l-cordless-fountain
-tableTitle: 11 Katzenbrunnen direkt verglichen
+tableTitle: 14 Katzenbrunnen direkt verglichen
 cardsTitle: Empfehlungen nach Haushalt und Standort
 faq:
   - question: Ist das ein eigener Katzenbrunnen-Test?
@@ -388,7 +441,7 @@ Für laufende Pflege helfen:
 
 ## Methodik
 
-Die elf Modelle wurden bewusst nach klar unterscheidbaren Einsatzgebieten kuratiert. Reinigung und Alltagseignung werden stärker gewichtet als App, Beleuchtung oder reine Tankgröße. Nicht dokumentierte Herstellerangaben werden nicht geschätzt.
+Die vierzehn Modelle wurden bewusst nach klar unterscheidbaren Einsatzgebieten kuratiert. Reinigung und Alltagseignung werden stärker gewichtet als App, Beleuchtung oder reine Tankgröße. Nicht dokumentierte Herstellerangaben werden nicht geschätzt.
 
 ## So werden Material, Reinigung und Filter bewertet
 

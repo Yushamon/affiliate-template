@@ -74,6 +74,7 @@ profile:
   warranty: "Garantiebedingungen unterscheiden sich nach Produkt und Verkaufsregion."
   competitorComparison: "Catit konkurriert bei Futterautomaten unter anderem mit PETLIBRO, PETKIT, Cat Mate und Sure Petcare."
 productSlugs:
+  - "catit-pixi-standard-trinkbrunnen"
   - "catit-pixi-smart-6-meal-feeder"
   - "catit-pixi-vision-smart-feeder"
   - "catit-pixi-smart-trinkbrunnen"
@@ -104,6 +105,7 @@ Catit deckt verschiedene Aufgaben in Katzenhaushalten ab. Entscheidend ist wenig
 Diese Produktseiten ergänzen das Herstellerprofil und führen zu den jeweiligen redaktionellen Einordnungen.
 
 - [Catit PIXI Smart 6-Meal Feeder](/produkt/catit-pixi-smart-6-meal-feeder/)
+- [Catit PIXI Standard Trinkbrunnen (Mintgrün)](/produkt/catit-pixi-standard-trinkbrunnen/)
 - [Catit PIXI Smart-Trinkbrunnen](/produkt/catit-pixi-smart-trinkbrunnen/)
 - [Catit PIXI Vision Smart Feeder](/produkt/catit-pixi-vision-smart-feeder/)
 <!-- pt:content-discovery:manufacturer-products:end -->

@@ -1,6 +1,7 @@
 ---
 
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
+import { render } from "astro:content";
 import "../../styles/pfotentechnik-product-mobile-premium.css";
 
 import ProductRenderer from "../../components/product-standard-2/ProductRenderer.astro";
@@ -64,6 +65,8 @@ if (!contentEntry) {
 
 const contentProduct =
   contentEntry.data;
+const editorialArticle = contentProduct.showEditorialContent ? await render(contentEntry) : null;
+const EditorialContent = editorialArticle?.Content;
 const productOperations = deriveProductOperations(contentProduct);
 const reviewAssessment = assessProductReview(contentProduct);
 
@@ -319,6 +322,9 @@ const productSchema = {
     new URL(optimizedOgImage.src, site.domain).toString()
   ],
   sku: contentProduct.slug,
+  ...(contentProduct.model ? { model: contentProduct.model } : {}),
+  ...(contentProduct.mpn ? { mpn: contentProduct.mpn } : {}),
+  ...(contentProduct.asin ? { identifier: { "@type": "PropertyValue", propertyID: "ASIN", value: contentProduct.asin } } : {}),
   category: contentProduct.category.label,
   brand: {
     "@type": "Brand",
@@ -399,6 +405,12 @@ const productSchema = {
       />
     </AutoLinkContent>
 
+    {EditorialContent && (
+      <section class="product-editorial-content" aria-label="Kaufberatung, Folgekosten und Quellen">
+        <EditorialContent />
+      </section>
+    )}
+
     <EditorialTransparency
       kind="produkt"
       author={author}
@@ -426,6 +438,30 @@ const productSchema = {
 </ProjectLayout>
 
 <style>
+  .product-editorial-content {
+    margin-block: var(--pt-space-8);
+    padding: clamp(20px, 4vw, 40px);
+    border: 1px solid var(--pt-color-border);
+    border-radius: var(--pt-radius-lg);
+    background: var(--pt-color-surface);
+    color: var(--pt-color-text);
+    overflow-wrap: anywhere;
+  }
+  .product-editorial-content :global(p),
+  .product-editorial-content :global(ul) {
+    max-width: 76ch;
+    line-height: var(--pt-line-height-relaxed);
+  }
+  .product-editorial-content :global(h2) {
+    margin-block: var(--pt-space-8) var(--pt-space-4);
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+  }
+  .product-editorial-content :global(h2:first-child) { margin-top: 0; }
+  .product-editorial-content :global(a) {
+    color: var(--pt-color-action-bg);
+    text-decoration: underline;
+    text-underline-offset: .18em;
+  }
   .pt-page--reference33 {
     --pt-theme-surface: var(--pt33-color-surface-raised);
     --pt-theme-text: var(--pt33-color-text-primary);

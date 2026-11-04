@@ -1,19 +1,19 @@
 # Produktdaten-Audit
 
-Erstellt: 2026-09-28T11:59:15.410Z
+Erstellt: 2026-11-04T08:17:12.400Z
 
 ## Zusammenfassung
 
-- Produkte: 103
+- Produkte: 106
 - Fehler: 0
-- Warnungen: 97
+- Warnungen: 100
 - Dokumentierte Hinweise: 143
 - Doppelte Slugs: 0
 
 ## Kategorien
 
 - futterautomaten: 38
-- trinkbrunnen: 24
+- trinkbrunnen: 27
 - katzenklappen: 10
 - automatische-katzentoiletten: 11
 - haustierkameras: 8
@@ -302,6 +302,14 @@ Erstellt: 2026-09-28T11:59:15.410Z
 - Dokumentierte Hinweise:
   - Herstellerangabe dokumentiert, aber nicht bestätigt: gewicht
 
+### Brook Glass Pet Fountain
+
+- Datei: `src/content/products/brook-glass-pet-fountain.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 97%
+- Warnungen:
+  - Empfohlenes Feld fehlt: trinkhöhe
+
 ### Cat Mate C200
 
 - Datei: `src/content/products/cat-mate-c200.md`
@@ -337,6 +345,14 @@ Erstellt: 2026-09-28T11:59:15.410Z
 ### Catit PIXI Smart-Trinkbrunnen
 
 - Datei: `src/content/products/catit-pixi-smart-trinkbrunnen.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 97%
+- Warnungen:
+  - Empfohlenes Feld fehlt: trinkhöhe
+
+### Catit PIXI Standard Trinkbrunnen
+
+- Datei: `src/content/products/catit-pixi-standard-trinkbrunnen.md`
 - Kategorie: trinkbrunnen
 - Vollständigkeit: 97%
 - Warnungen:
@@ -578,6 +594,14 @@ Erstellt: 2026-09-28T11:59:15.410Z
 - Vollständigkeit: 97%
 - Warnungen:
   - Nur 1 Galerie-Bilder hinterlegt
+
+### Philips Pet Series Trinkbrunnen PAW3210/02
+
+- Datei: `src/content/products/philips-pet-series-paw3210-02.md`
+- Kategorie: trinkbrunnen
+- Vollständigkeit: 97%
+- Warnungen:
+  - Empfohlenes Feld fehlt: trinkhöhe
 
 ### WOPET Cube Air WiFi Pet Feeder CA10
 

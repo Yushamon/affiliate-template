@@ -806,6 +806,12 @@ export const createProductContentSchema = (image: ImageFunction) =>
     recommendation:
       z.string(),
 
+    // Optional long-form buying advice is rendered only for opted-in entries.
+    showEditorialContent: z.boolean().default(false),
+    model: z.string().min(1).optional(),
+    mpn: z.string().min(1).optional(),
+    asin: z.string().regex(/^[A-Z0-9]{10}$/).optional(),
+
     manufacturer:
       productManufacturerSchema,
 

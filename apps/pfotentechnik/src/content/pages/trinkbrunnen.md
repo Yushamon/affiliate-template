@@ -37,7 +37,7 @@ author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
 publishedAt: "2026-07-13"
-updatedAt: "2026-08-17"
+updatedAt: "2026-11-04"
 navigation:
   show: true
   label: "Trinkbrunnen"
@@ -306,4 +306,7 @@ Diese Modelle gehören ebenfalls zu diesem Themenbereich. In den redaktionellen 
 - [PETLIBRO Stainless Steel Fountain 3L](/produkt/petlibro-stainless-steel-fountain/)
 - [PetSafe Keramik-Trinkbrunnen Streamside](/produkt/petsafe-streamside-trinkbrunnen/)
 - [Xiaomi Smart Pet Fountain 2](/produkt/xiaomi-smart-pet-fountain-2/)
+- [Catit PIXI Standard Trinkbrunnen (Mintgrün)](/produkt/catit-pixi-standard-trinkbrunnen/)
+- [Philips Pet Series Trinkbrunnen PAW3210/02](/produkt/philips-pet-series-paw3210-02/)
+- [Brook Glass Pet Fountain](/produkt/brook-glass-pet-fountain/)
 <!-- pt:content-discovery:category-products:end -->

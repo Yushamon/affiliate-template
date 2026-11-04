@@ -12,6 +12,7 @@ export type CategoryEditorialConfig = {
   requirements: CategoryRequirement[];
   paths: CategoryDecisionPathConfig[];
   products: ProductChoice[];
+  additionalProducts?: ProductChoice[];
   guides: string[];
   evidenceIntro: string;
   evidenceHeadings: string[];
@@ -73,6 +74,11 @@ export const categoryEditorialConfig = {
       { slug: "petkit-eversweet-solo-2-fountain", role: "Kompakter Allrounder" },
       { slug: "petlibro-dockstream-2-smart-cordless", role: "Flexibler Standort" },
       { slug: "feelneedy-fn-w18-8l-katzenbrunnen", role: "Großes Volumen" }
+    ],
+    additionalProducts: [
+      { slug: "catit-pixi-standard-trinkbrunnen", role: "Standard ohne App" },
+      { slug: "philips-pet-series-paw3210-02", role: "Bewegungssensor ohne WLAN" },
+      { slug: "brook-glass-pet-fountain", role: "Glaslösung mit Importfragen" }
     ],
     guides: ["katze-an-trinkbrunnen-gewoehnen", "katzentrinkbrunnen-richtig-reinigen", "katzentrinkbrunnen-material-edelstahl-keramik-kunststoff", "filter-im-katzentrinkbrunnen-wechseln", "katzentrinkbrunnen-dauerbetrieb-urlaub"],
     evidenceIntro: "Die vertiefende Kaufberatung ordnet Trinkfläche, Wasserweg, Pumpe, Material, Filter, Lautstärke und Betriebsart ohne Funktionsmarketing ein.",

@@ -91,6 +91,13 @@ export const buildCategoryViewModel = ({
     }];
   });
 
+  const additionalProducts = ("additionalProducts" in config ? config.additionalProducts : [])
+    .flatMap(({ slug, role }) => {
+      const product = productBySlug.get(slug);
+      if (!product || product.data.productStatus === "discontinued" || product.data.recommendationStatus === "archived") return [];
+      return [{ title: product.data.title, href: product.data.productUrl ?? `/produkt/${slug}/`, role }];
+    });
+
   const resolveComparison = ({ slug, question, why }: CategoryComparisonRoute) => {
     const comparison = comparisonBySlug.get(slug);
     if (!comparison) return undefined;
@@ -158,6 +165,7 @@ export const buildCategoryViewModel = ({
     primaryComparison,
     secondaryComparisons,
     products: selectedProducts,
+    additionalProducts,
     guides,
     evidenceIntro: config.evidenceIntro,
     evidenceSections: extractEvidenceSections(page.body ?? "", config.evidenceHeadings),

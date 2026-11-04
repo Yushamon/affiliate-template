@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-04",
+  "products": [
+    {
+      "slug": "brook-glass-pet-fountain",
+      "errors": [],
+      "warnings": [
+        "Empfohlenes Feld fehlt: trinkhöhe"
+      ]
+    },
+    {
+      "slug": "catit-pixi-standard-trinkbrunnen",
+      "errors": [],
+      "warnings": [
+        "Empfohlenes Feld fehlt: trinkhöhe"
+      ]
+    },
+    {
+      "slug": "philips-pet-series-paw3210-02",
+      "errors": [],
+      "warnings": [
+        "Empfohlenes Feld fehlt: trinkhöhe"
+      ]
+    }
+  ],
+  "productDataAudit": {
+    "products": 106,
+    "errors": 0,
+    "warnings": 100,
+    "note": "Previous integration audit retained as historical evidence; no broad audit rerun for the Amazon correction."
+  },
+  "media": {
+    "webpAssets": 18,
+    "sourceGalleryImages": 12,
+    "svgAssets": 0,
+    "amazonImagesUsed": true,
+    "generatedImagesUsed": false,
+    "authorization": "explicit-operator-exception-to-interface-restriction",
+    "sourceMetadata": "media-provenance.json per product",
+    "visualQA": "Selected original images and converted WebP samples inspected",
+    "maxAssetBytes": 99948
+  },
+  "visualQA": {
+    "assetSamples": "inspected",
+    "browser": "unavailable"
+  },
+  "deployment": "not-performed",
+  "build": {
+    "status": "passed",
+    "pages": 382
+  },
+  "tests": {
+    "status": "passed",
+    "passed": 73,
+    "failed": 0,
+    "suites": [
+      "product-review-indexing",
+      "price-availability-integrity",
+      "multi-merchant-commerce",
+      "three-fountains-integration"
+    ]
+  },
+  "diffCheck": "passed",
+  "amazonCorrection": {
+    "status": "complete",
+    "trackingId": "yusha0f-21",
+    "checks": [
+      {
+        "slug": "catit-pixi-standard-trinkbrunnen",
+        "asin": "B095PZRWB1",
+        "trackingPreserved": true,
+        "ctaEnabled": true,
+        "mappingStatus": "verified",
+        "identityResult": "Amazon-Produktdetailtabelle nennt Modell-/Artikelnummer 43718; Titel und ausgewählte Galerie zeigen Mintgrün. ASIN B095PZRWB1. Amazon-Titel nennt 2 L, dokumentierter Herstellerwert bleibt 2,5 L. Betreiber hat Umstellung auf diese Variante und direkten Bildbezug ausdrücklich beauftragt.",
+        "priceConfirmed": false,
+        "availabilityConfirmed": false
+      },
+      {
+        "slug": "philips-pet-series-paw3210-02",
+        "asin": "B0CWVKLXR8",
+        "trackingPreserved": true,
+        "ctaEnabled": true,
+        "mappingStatus": "verified",
+        "identityResult": "Amazon-Seitentitel nennt PAW3210/02; ausgewählte Produktgalerie zeigt den Philips Pet Series Brunnen in Dunkelgrau. Kein Modellwiderspruch.",
+        "priceConfirmed": false,
+        "availabilityConfirmed": false
+      },
+      {
+        "slug": "brook-glass-pet-fountain",
+        "asin": "B0D5DP2V53",
+        "trackingPreserved": true,
+        "ctaEnabled": true,
+        "mappingStatus": "verified",
+        "identityResult": "Amazon-Seitentitel und ausgewählte Produktgalerie zeigen den Brook Glas-Trinkbrunnen mit 2,7 Litern zur ASIN B0D5DP2V53. Kein Modellwiderspruch.",
+        "priceConfirmed": false,
+        "availabilityConfirmed": false
+      }
+    ]
+  }
+}

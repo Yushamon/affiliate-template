@@ -1,17 +1,17 @@
 {
   "summary": {
-    "generatedAt": "2026-09-28T11:59:15.410Z",
-    "totalProducts": 103,
+    "generatedAt": "2026-11-04T08:17:12.400Z",
+    "totalProducts": 106,
     "byCategory": {
       "futterautomaten": 38,
-      "trinkbrunnen": 24,
+      "trinkbrunnen": 27,
       "katzenklappen": 10,
       "automatische-katzentoiletten": 11,
       "haustierkameras": 8,
       "gps-tracker": 12
     },
     "errors": 0,
-    "warnings": 97,
+    "warnings": 100,
     "notes": 143,
     "duplicateSlugs": 0
   },
@@ -109,6 +109,91 @@
       "structuralCompleteness": 100,
       "confirmedCompleteness": 62,
       "completeness": 100
+    },
+    {
+      "file": "src/content/products/brook-glass-pet-fountain.md",
+      "slug": "brook-glass-pet-fountain",
+      "title": "Brook Glass Pet Fountain",
+      "category": "trinkbrunnen",
+      "errors": [],
+      "warnings": [
+        "Empfohlenes Feld fehlt: trinkhöhe"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Modell",
+          "value": "Brook All-Glass Pet Water Fountain 90 oz"
+        },
+        {
+          "label": "Kapazität",
+          "value": "2,7 Liter"
+        },
+        {
+          "label": "Material",
+          "value": "Borosilikat- und Kalk-Natron-Glas; Filterkorb Edelstahl 316, Pumpe BPA-freier ABS-Kunststoff"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": ">-"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine Hunde"
+        },
+        {
+          "label": "Filter",
+          "value": "Aktivkohlebeutel alle 1–2 Wochen; Grobfilterring alle 2–4 Wochen"
+        },
+        {
+          "label": "Reinigung",
+          "value": "Glasteile wöchentlich reinigen und spülmaschinengeeignet; Pumpe separat alle 2–4 Wochen zerlegen"
+        },
+        {
+          "label": "Lautstärke",
+          "value": "Leise laut Hersteller; kein eigener Geräuschtest"
+        },
+        {
+          "label": "Akku",
+          "value": "Nein; kein Akkubetrieb dokumentiert"
+        },
+        {
+          "label": "App",
+          "value": "Keine App-Steuerung"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "Kontinuierlicher Wasserlauf mit drei Durchflussstufen; Brunnenkopf verstellbar"
+        },
+        {
+          "label": "Maße",
+          "value": "Hersteller nennt ca. 26,7 cm Durchmesser und 15,2 cm Gesamthöhe"
+        },
+        {
+          "label": "Gewicht",
+          "value": "Hersteller nennt ca. 2,7 kg leer; ca. 5 kg gefüllt"
+        },
+        {
+          "label": "ASIN",
+          "value": "B0D5DP2V53; vom Auftrag vorgegeben, deutsche Angebotsvariante nicht unabhängig bestätigt"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "Sets mit 6/3, 12/6 oder 24/12 Aktivkohlebeuteln/Grobfilterringen"
+        },
+        {
+          "label": "Beleuchtung",
+          "value": "Blaue LED mit mitgelieferter Abdeckung"
+        },
+        {
+          "label": "UV",
+          "value": "Keine dokumentierte UVC-Funktion"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 93,
+      "confirmedCompleteness": 93,
+      "completeness": 97
     },
     {
       "file": "src/content/products/cat-mate-335-pet-fountain.md",
@@ -793,6 +878,87 @@
         {
           "label": "Ersatzfilter",
           "value": "Catit PIXI Trinkbrunnenfilter 43721/43722/43723; Wechsel laut Hersteller etwa alle 30 Tage"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 93,
+      "confirmedCompleteness": 93,
+      "completeness": 97
+    },
+    {
+      "file": "src/content/products/catit-pixi-standard-trinkbrunnen.md",
+      "slug": "catit-pixi-standard-trinkbrunnen",
+      "title": "Catit PIXI Standard Trinkbrunnen",
+      "category": "trinkbrunnen",
+      "errors": [],
+      "warnings": [
+        "Empfohlenes Feld fehlt: trinkhöhe"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Modell",
+          "value": "PIXI Standard 43715"
+        },
+        {
+          "label": "Kapazität",
+          "value": "2,5 Liter"
+        },
+        {
+          "label": "Material",
+          "value": ">-"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "USB-Netzbetrieb, DC 5 V / 1 A; Hersteller nennt weniger als 1 W Verbrauch"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen"
+        },
+        {
+          "label": "Filter",
+          "value": "Dreifachfilter aus Wattegewebe, Aktivkohle und Ionenaustauschharz; alle 30 Tage"
+        },
+        {
+          "label": "Reinigung",
+          "value": ">-"
+        },
+        {
+          "label": "Lautstärke",
+          "value": "Hersteller beschreibt leise, aufgehängte Pumpe; kein belastbarer dB-Wert"
+        },
+        {
+          "label": "Akku",
+          "value": "Nein; kein Akkubetrieb dokumentiert"
+        },
+        {
+          "label": "App",
+          "value": "Keine App-Steuerung"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": "Bogenstrahl mit Düsenkopf, sprudelnd ohne Düsenkopf und flache Trinkschale"
+        },
+        {
+          "label": "Maße",
+          "value": "20,5 × 20,5 × 17 cm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "678 g laut Hersteller"
+        },
+        {
+          "label": "Modellvarianten",
+          "value": "43715 Weiß; 43716 Rosa; 43717 Blau; 43718 Grün. Hier bewertet: Standard Weiß 43715."
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "43721 (3er), 43722 (6er), 43723 (12er); ausschließlich PIXI-Kompatibilität prüfen"
+        },
+        {
+          "label": "UV",
+          "value": "Keine UVC-Funktion beim Standardmodell"
         }
       ],
       "unknownSpecs": [],
@@ -3142,7 +3308,7 @@
         },
         {
           "label": "Beuteerkennung",
-          "value": "Integrierte Nachtsicht-HD-Kamera; Herstellerfunktion"
+          "value": "KI-Auswertung der Kamerabilder; bei erkannter Beute bleibt der Eingang laut Hersteller gesperrt"
         },
         {
           "label": "Strom",
@@ -7535,6 +7701,87 @@
       "completeness": 100
     },
     {
+      "file": "src/content/products/philips-pet-series-paw3210-02.md",
+      "slug": "philips-pet-series-paw3210-02",
+      "title": "Philips Pet Series Trinkbrunnen PAW3210/02",
+      "category": "trinkbrunnen",
+      "errors": [],
+      "warnings": [
+        "Empfohlenes Feld fehlt: trinkhöhe"
+      ],
+      "notes": [],
+      "specs": [
+        {
+          "label": "Modell",
+          "value": "Pet Series 3000 PAW3210/02"
+        },
+        {
+          "label": "Kapazität",
+          "value": "2,2 Liter"
+        },
+        {
+          "label": "Material",
+          "value": "Kunststoff; keine bestätigte BPA-frei-Zusage für dieses Modell"
+        },
+        {
+          "label": "Stromversorgung",
+          "value": "DC 5 V / 1 A über Netzadapter; Eingang AC 100–240 V, 50/60 Hz; 1,5 m Kabel"
+        },
+        {
+          "label": "Geeignet für",
+          "value": "Katzen und kleine Hunde"
+        },
+        {
+          "label": "Filter",
+          "value": "Mehrschichtiger Filter mit Aktivkohle und Ionenaustausch; PAW0010/01, Wechsel alle 30 Tage"
+        },
+        {
+          "label": "Reinigung",
+          "value": ">-"
+        },
+        {
+          "label": "Lautstärke",
+          "value": "Unter 38 dB laut Pressemitteilung von 2024; kein eigener Messwert"
+        },
+        {
+          "label": "Akku",
+          "value": "Nein; kein Akkubetrieb dokumentiert"
+        },
+        {
+          "label": "App",
+          "value": "Keine App-Steuerung"
+        },
+        {
+          "label": "Wasserfluss",
+          "value": ">-"
+        },
+        {
+          "label": "Maße",
+          "value": "19,1 × 21,4 × 18,3 cm"
+        },
+        {
+          "label": "Gewicht",
+          "value": "870 g"
+        },
+        {
+          "label": "Ersatzfilter",
+          "value": "PAW0010/01; drei Filter pro Packung"
+        },
+        {
+          "label": "UV",
+          "value": "Keine belegte UVC-Funktion"
+        },
+        {
+          "label": "BPA-Freiheit",
+          "value": "Nicht bestätigt; keine positive Zusage aus den verfügbaren Spezifikationen"
+        }
+      ],
+      "unknownSpecs": [],
+      "structuralCompleteness": 93,
+      "confirmedCompleteness": 93,
+      "completeness": 97
+    },
+    {
       "file": "src/content/products/prothelis-area-pets.md",
       "slug": "prothelis-area-pets",
       "title": "Prothelis area Pets",
@@ -8018,6 +8265,14 @@
       ],
       "specs": [
         {
+          "label": "Laden",
+          "value": "Mit magnetischem Ladekabel; ungefähr zwei Stunden bis zur vollständigen Ladung laut Tractive"
+        },
+        {
+          "label": "Akkutechnik und Austausch",
+          "value": "Integrierter, wiederaufladbarer Akku; Zellchemie und Austausch durch Nutzer in den geprüften modellspezifischen Herstellerangaben nicht eindeutig dokumentiert"
+        },
+        {
           "label": "Ortung",
           "value": "GPS, GLONASS und Galileo"
         },
@@ -8106,6 +8361,14 @@
       "warnings": [],
       "notes": [],
       "specs": [
+        {
+          "label": "Akkukapazität",
+          "value": "2150 mAh laut Tractive"
+        },
+        {
+          "label": "Akkutechnik und Austausch",
+          "value": "Integrierter, wiederaufladbarer Akku; Zellchemie und Austausch durch Nutzer in den geprüften modellspezifischen Herstellerangaben nicht eindeutig dokumentiert"
+        },
         {
           "label": "Ortung",
           "value": "GPS, GLONASS und Galileo"
@@ -8206,6 +8469,10 @@
       "notes": [],
       "specs": [
         {
+          "label": "Akkutechnik und Austausch",
+          "value": "Integrierter, wiederaufladbarer Akku; Zellchemie und Austausch durch Nutzer in den geprüften modellspezifischen Herstellerangaben nicht eindeutig dokumentiert"
+        },
+        {
           "label": "Ortung",
           "value": "GPS, GLONASS und Galileo"
         },
@@ -8243,7 +8510,7 @@
         },
         {
           "label": "Akkulaufzeit",
-          "value": "Bis zu 14 Tage mit Energiesparzonen"
+          "value": "Laut Tractive bis zu 14 Tage mit Energiesparzonen; bis zu 6 Tage ohne"
         },
         {
           "label": "Stromversorgung",
