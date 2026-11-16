@@ -1,0 +1,46 @@
+{
+  "build": {
+    "pages": 390,
+    "result": "passed",
+    "log": "/tmp/pt361-build-final.log"
+  },
+  "tests": {
+    "passed": 220,
+    "failed": 0,
+    "suites": {
+      "productIntegration": 145,
+      "productFreshness": 9,
+      "productOperations": 11,
+      "decisionConsequences": 12,
+      "indexation": 11,
+      "searchPlatform": 32
+    }
+  },
+  "experiment": {
+    "htmlByteEqual": 8,
+    "htmlEquivalent": 20,
+    "protectedPages": 20,
+    "incomingEdges": 205,
+    "canonicals": 269,
+    "sitemap": 268,
+    "changedGuides": 6,
+    "explicitLinks": 12
+  },
+  "visual": {
+    "fullpageScreenshots": 4,
+    "widths": [
+      375,
+      1600
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "report": "reports/indexation-improvements-36.1-qa/browser.json",
+    "overflow": 0,
+    "filterRows": 269
+  },
+  "diff": "Reviewed six exact guide changes, cockpit integration, audit and protection code; git diff --check passed. Existing prior work retained.",
+  "merge": false,
+  "deployment": false
+}

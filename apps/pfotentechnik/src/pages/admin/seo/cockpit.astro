@@ -1,4 +1,5 @@
 ---
+import IndexationOverview from "../../../components/admin/IndexationOverview.astro";
 import SeoAdminLayout from "../../../layouts/SeoAdminLayout.astro";
 import { loadSeoDashboard } from "../../../lib/seo/loadDashboard";
 import { loadSeoRecovery } from "../../../lib/seo/loadRecovery";
@@ -53,6 +54,7 @@ const recoveryStatusLabel = {
   active="cockpit"
 >
   <div class="seo-stack-lg" data-search-cockpit>
+    <IndexationOverview />
     <section class="seo-panel seo-stack">
       <div class="seo-section-header">
         <div>
@@ -89,7 +91,7 @@ const recoveryStatusLabel = {
       )}
 
       <div class="seo-empty" data-partial hidden>
-        Der Zeitraum enthält aktuelle, noch nicht vollständig verarbeitete Daten.
+        Dieser Zeitraum ist nicht vollständig abgedeckt. Die Datenhinweise der jeweiligen Quelle beachten.
       </div>
 
       <div class="seo-metrics" data-metrics></div>
@@ -393,11 +395,11 @@ const recoveryStatusLabel = {
       const partial = root.querySelector<HTMLElement>("[data-partial]");
       if (partial) partial.hidden = !data.partial;
 
-      const comparison = data.comparisonStartDate && data.comparisonEndDate
+      const comparison = data.comparisonAvailable !== false && data.comparisonStartDate && data.comparisonEndDate
         ? ` · Vergleich ${String(data.comparisonStartDate).slice(0, 10)} bis ${String(data.comparisonEndDate).slice(0, 10)}`
         : "";
       const period = root.querySelector<HTMLElement>("[data-period]");
-      if (period) period.textContent = `${data.label}${comparison}`;
+      if (period) period.textContent = `${data.label} · ${String(data.startDate).slice(0, 10)} bis ${String(data.endDate).slice(0, 10)}${comparison || (data.comparisonAvailable === false ? " · kein Vergleich verfügbar" : "")}`;
 
       const current = data.metrics.current;
       const change = data.metrics.change;

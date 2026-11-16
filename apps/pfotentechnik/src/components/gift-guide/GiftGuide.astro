@@ -1,0 +1,73 @@
+---
+import {Image} from 'astro:assets';
+import FAQ from '@affiliate-core/components/FAQ.astro';
+import GiftIcon from './GiftIcon.astro';
+import GiftProductCard from './GiftProductCard.astro';
+import GiftEditorialTools from './GiftEditorialTools.astro';
+import {giftTransport} from '../../domain/gift-guide/transport.ts';
+import hero from '../../assets/images/gift-guide/hero.webp';
+import {giftGoals,giftBudgets,selectGifts} from '../../domain/gift-guide/selection.ts';
+import '../../styles/components/gift-guide.css';
+const {products,entry}=Astro.props;
+const preview=selectGifts(products,{animal:'both',goal:'open',budget:'open',food:'unknown',weight:null,subscription:'any'}).matches.slice(0,3).map((m:any)=>m.product);
+const modelExample=products.find((p:any)=>p.category==='futterautomaten'&&p.price!==null);
+const payload=JSON.stringify(giftTransport(products)).replaceAll('<','\\u003c').replaceAll('\u2028','\\u2028').replaceAll('\u2029','\\u2029');
+---
+<div class="gift-guide" data-gift-guide data-step="1">
+ <section class="gift-hero" aria-labelledby="gift-title">
+  <figure class="gift-hero__media"><Image src={hero} alt={entry.data.heroImage.alt} widths={[640,960,1536]} sizes="(max-width: 600px) 140vw, 100vw" width={1536} height={1024} loading="eager" fetchpriority="high"/><figcaption>KI-generiertes Symbolbild</figcaption></figure>
+  <div class="gift-hero__copy"><p class="gift-kicker"><GiftIcon size={18}/>Für Tiermenschen, mit Bedacht gewählt</p><h1 id="gift-title">Sinnvolle Technikgeschenke.<br/><em>Für Hund, Katze & euch.</em></h1><p>Für Hunde, Katzen und ihre Menschen: Finde eine Idee, die eine echte Aufgabe leichter macht – mit ehrlichen Grenzen statt großer Versprechen.</p><div class="gift-hero__actions"><a class="gift-button gift-button--mint" href="#geschenkfinder">Zum Geschenkfinder <GiftIcon name="arrow" size={19}/></a><a class="gift-text-link" href="#geschenkberatung">Erst in Ruhe lesen <span aria-hidden="true">↓</span></a></div></div>
+ </section>
+ <div class="gift-principles" aria-label="Unsere Auswahlprinzipien"><span><GiftIcon name="heart" size={20}/>Alltag statt Funktionsfülle</span><span><GiftIcon name="shield" size={20}/>Grenzen offen benannt</span><span><GiftIcon size={20}/>Ohne zusätzlichen Geschenk-Score</span></div>
+
+ <section class="gift-finder" id="geschenkfinder" aria-labelledby="finder-title">
+  <div class="gift-finder__intro"><p class="gift-eyebrow">Dein Geschenk, durchdacht</p><h2 id="finder-title">Eine kleine Auswahl.<br/> <em>Eine gute Entscheidung.</em></h2><p>Drei Fragen grenzen ein, was passen könnte. Offene Preis- und Verfügbarkeitsangaben bleiben sichtbar.</p><span class="gift-finder__time">Tier · Alltag · Budget</span></div>
+  <div class="gift-finder__experience">
+   <p data-finder-fallback>Ohne interaktiven Finder: Entdecke die Modellbeispiele unten oder lies die <a href="#geschenkberatung">Kaufberatung vor dem Schenken</a>.</p>
+   <form data-gift-form hidden novalidate>
+    <ol class="gift-progress" aria-label="Schritte im Geschenkfinder">{['Tier','Wunsch','Budget','Ergebnis'].map((label,i)=><li><button type="button" data-step-link={i+1} aria-current={i===0?'step':undefined} disabled={i>0}><span>{i+1}</span>{label}</button></li>)}</ol>
+    <div class="gift-progress-track" aria-hidden="true"><span data-progress-fill></span></div><p class="gift-progress-caption" data-progress-caption>1 · Tier auswählen</p>
+    <div class="gift-finder__viewport" data-gift-viewport>
+     <fieldset data-gift-panel="1"><legend>Für wen suchst du ein Geschenk?</legend><p class="gift-field-note">Für ein Tier oder einen gemeinsamen Haushalt.</p><div class="gift-animal-options">{[['cat','Katze','Für Katzenmenschen'],['dog','Hund','Für Hundemenschen'],['both','Beide','Ein gemeinsamer Haushalt']].map(([value,label,note])=><label class="gift-choice gift-choice--animal"><input type="radio" name="animal" value={value} required/><span class:list={['gift-animal-photo',`gift-animal-photo--${value}`]}><Image src={hero} width={420} height={280} alt="" loading="lazy"/></span><strong>{label}</strong><small>{note}</small><span class="gift-choice__check"><GiftIcon name="check" size={13}/></span></label>)}</div><p class="gift-animal-caption">KI-Symbolbilder zur Tierauswahl</p></fieldset>
+     <fieldset data-gift-panel="2" hidden><legend>Was könnte im Alltag helfen?</legend><p class="gift-field-note">Eine konkrete Routine ist besser als eine lange Wunschliste.</p><div class="gift-goal-options">{Object.entries(giftGoals).map(([value,goal])=><label class="gift-choice gift-choice--goal"><input type="radio" name="goal" value={value} required/><GiftIcon name={value} size={22}/><span><strong>{goal.label}</strong><small>{goal.note}</small></span><span class="gift-choice__check"><GiftIcon name="check" size={13}/></span></label>)}</div>
+      <div class="gift-context" data-goal-context="feeding" hidden><label>Welches Futter wird verwendet?<select name="food"><option value="unknown">Das muss ich noch klären</option><option value="dry">Trockenfutter</option><option value="wet">Nassfutter</option></select></label><p>Unbekannte Futterart wird nicht als passend gewertet.</p></div>
+      <div class="gift-context" data-goal-context="outdoors" hidden><label>Tiergewicht in kg <input name="weight" type="number" min="0.1" max="150" step="0.1" inputmode="decimal" placeholder="Zum Beispiel 12"/></label><p>Bei „Beide“ das leichtere Tier. Ein Tracker ortet jeweils das Tier, das ihn trägt.</p><label>Wie stehst du zu laufenden Dienstkosten?<select name="subscription"><option value="any">Noch offen</option><option value="yes">Sind nach Absprache in Ordnung</option><option value="no">Kein verpflichtender Dienst</option></select></label></div>
+     </fieldset>
+     <fieldset data-gift-panel="3" hidden><legend>Welcher Preisrahmen ist angenehm?</legend><p class="gift-field-note">Für das Gerät. Dienste, Versand und Verbrauchsteile können hinzukommen.</p><div class="gift-budget-options">{Object.entries(giftBudgets).map(([value,label])=><label class="gift-choice gift-choice--budget"><input type="radio" name="budget" value={value} required/><strong>{label}</strong><span class="gift-choice__check"><GiftIcon name="check" size={13}/></span></label>)}</div><p class="gift-budget-note">Du musst das Budget nicht ausschöpfen. Ein frischer Preisbeleg ist Voraussetzung für einen bestätigten Budgettreffer.</p></fieldset>
+     <div data-gift-panel="4" hidden><span class="gift-result-seal" aria-hidden="true"><GiftIcon name="check" size={26}/></span><h3>Von der Idee zur Auswahl.</h3><p>Deine Antworten sind abgeglichen. Unten stehen passende Modelle und die Angaben, die noch offen sind.</p><a class="gift-button gift-button--primary" href="#geschenkergebnis">Zu den Ergebnissen <GiftIcon name="arrow" size={18}/></a></div>
+    </div>
+    <p class="gift-form-error" data-gift-error role="alert" hidden></p>
+    <div class="gift-finder__controls"><button type="button" class="gift-back" data-gift-back hidden>← Zurück</button><span class="gift-step-label" data-step-label>Schritt 1 von 4</span><button type="submit" class="gift-button gift-button--primary" data-gift-next>Weiter <GiftIcon name="arrow" size={19}/></button></div>
+   </form>
+   <noscript><p>Für den persönlichen Finder und Direktvergleich ist JavaScript nötig. Alle redaktionellen Inhalte und Modellbeispiele bleiben direkt lesbar.</p></noscript>
+  </div>
+ </section>
+
+ <nav class="gift-topics" aria-label="Nach Alltagsthema inspirieren lassen">{Object.entries(giftGoals).filter(([key])=>key!=='open').map(([key,g])=><a href="#geschenkfinder" data-preset-goal={key}><GiftIcon name={key} size={26}/><span><strong>{g.short}</strong><small>{key==='feeding'?'Futter & Routine':key==='drinking'?'Wasser & Pflege':key==='outdoors'?'Passform & Dienst':'Einblick & Privatsphäre'}</small></span><span aria-hidden="true">↗</span></a>)}</nav>
+
+ <section class="gift-results" id="geschenkergebnis" aria-labelledby="gift-results-title" data-gift-results>
+  <div class="gift-section-heading"><div><p class="gift-eyebrow" data-results-eyebrow>Ein erster Blick in die Auswahl</p><h2 id="gift-results-title" tabindex="-1">Ideen zum Kennenlernen.</h2><p data-gift-results-summary>Noch nicht persönlich gefiltert. Mit dem Finder werden daraus Vorschläge für deinen Alltag.</p></div><span class="gift-results__count" data-result-count>{preview.length} Modellbeispiele</span></div>
+  <div class="gift-result-tools" data-result-tools hidden><div class="gift-answer-chips"><button data-edit-step="1" type="button"></button><button data-edit-step="2" type="button"></button><button data-edit-step="3" type="button"></button></div><label>Alternativen sortieren<select data-gift-sort><option value="editorial">Redaktionelle Einordnung</option><option value="price">Niedrigster belegter Gerätepreis</option></select></label><button type="button" class="gift-link-button" data-copy-selection>Auswahl als Link kopieren</button></div>
+  <p class="gift-result-note" data-result-note hidden></p><p class="gift-selection-explainer">Die erste Empfehlung folgt der bestehenden redaktionellen Reihenfolge. Vergleiche die Alternativen nach ihren konkreten Unterschieden.</p>
+  <div class="gift-results__grid" data-gift-matches>{preview.map((p:any,i:number)=><GiftProductCard product={p} preview lead={i===0} peers={preview}/>)}</div>
+  <div class="gift-empty" data-gift-empty hidden><GiftIcon name="gift" size={36}/><h3>Lieber ehrlich offen als knapp daneben.</h3><p>Für diese Antworten gibt es derzeit keinen vollständig bestätigten Treffer. Ändere eine Antwort oder kläre die offenen Angaben der unten gezeigten Modelle vor dem Kauf.</p><button class="gift-button gift-button--primary" type="button" data-edit-step="2">Wunsch noch einmal ansehen <GiftIcon name="arrow" size={18}/></button></div>
+  <button class="gift-link-button gift-more" type="button" data-show-more hidden>Weitere bestätigte Treffer zeigen</button>
+  <details class="gift-possible" data-gift-possible hidden aria-labelledby="gift-possible-title"><summary><span class="gift-eyebrow">Noch keine bestätigte Empfehlung</span><strong id="gift-possible-title">Vor dem Verschenken zu klären.</strong></summary><p>Bei diesen Modellen fehlen passende Belege zu einzelnen Antworten. Sie zählen nicht zu den bestätigten Treffern.</p><div class="gift-results__grid" data-gift-possible-grid></div></details>
+  <div class="gift-compare-actions" data-compare-actions hidden><span data-compare-status role="status">Noch keine Modelle zum Vergleichen gewählt.</span><button class="gift-button gift-button--secondary" type="button" data-open-comparison disabled>Direktvergleich öffnen</button></div>
+  <p class="gift-affiliate">Gerätepreise nach letztem belegten Stand, keine Lieferzusage. Händlerlinks sind Affiliate-Links. Die redaktionelle Bewertung gilt im jeweiligen Produkttyp.</p>
+ </section>
+ <section class="gift-comparison" id="geschenkvergleich" data-gift-comparison hidden aria-labelledby="gift-comparison-title"><div class="gift-section-heading"><div><p class="gift-eyebrow">Deine Auswahl nebeneinander</p><h2 id="gift-comparison-title" tabindex="-1">Die Unterschiede zählen.</h2></div><button class="gift-link-button" type="button" data-close-comparison>Vergleich schließen</button></div><p>Vergleiche höchstens drei Modelle. Bei verschiedenen Produkttypen sind Funktionen und Bewertungen nicht unmittelbar gleichzusetzen. Unbekannt heißt nicht „nein“.</p><div class="gift-table-scroll" tabindex="0" role="region" aria-label="Ausgewählte Produkte im Direktvergleich"><table data-gift-comparison-table></table></div></section>
+
+ <section class="gift-editorial-intro gift-reveal" id="geschenkberatung" aria-labelledby="gift-advice-title"><div><p class="gift-eyebrow">Mehr als ein schönes Paket</p><h2 id="gift-advice-title">Das beste Geschenk?<br/><em>Passt in ein echtes Leben.</em></h2><p>Technik kann eine Routine unterstützen. Sie ersetzt weder Aufmerksamkeit noch Pflege. Diese drei Fragen machen die Idee konkreter.</p></div><ol class="gift-three-questions"><li><span>01</span><div><h3>Was soll leichter werden?</h3><p>Eine Mahlzeit planen, eine Wasserstelle pflegen oder nach dem Tier sehen: erst die Aufgabe, dann die Funktionen.</p></div></li><li><span>02</span><div><h3>Wer übernimmt den Rest?</h3><p>Reinigung, Einrichtung, Konten und Verbrauchsteile bleiben Aufgaben für die Menschen.</p></div></li><li><span>03</span><div><h3>Ist die Idee wirklich gewünscht?</h3><p>Tiergröße, Futter und Privatsphäre sind gute Gründe, vorher kurz miteinander zu sprechen.</p></div></li></ol>{modelExample&&<figure class="gift-editorial-intro__image"><img src={modelExample.image.src} width={modelExample.image.width} height={modelExample.image.height} alt={modelExample.image.alt} loading="lazy" decoding="async"/><figcaption>KI-Symbolbild zur Fütterung. Die Produktdaten im Finder beziehen sich auf die jeweils benannten Modelle.</figcaption></figure>}</section>
+ <GiftEditorialTools products={products}/>
+ <article class="gift-editorial gift-reveal" aria-label="Redaktionelle Geschenkberatung"><slot name="editorial"/></article>
+ <section class="gift-faq gift-reveal"><FAQ items={entry.data.faq}/></section>
+ <footer class="gift-method"><span>PfotenTechnik Redaktion · Stand {entry.data.updatedAt}</span><p>Modellauswahl, Produktdaten und Preise stammen aus der bestehenden Product Operations Platform. Titelmotiv: KI-generiertes Symbolbild. Keine Abbildung eines eigenen Produkttests.</p><a href="#geschenkfinder">Noch einmal zum Geschenkfinder ↑</a></footer>
+ <div class="gift-sr-only" role="status" aria-live="polite" aria-atomic="true" data-gift-announcement></div>
+ <script type="application/json" data-gift-catalog set:html={payload}/>
+ {products[0]&&<template data-gift-template><GiftProductCard product={products[0]}/></template>}
+</div>
+<script>
+ import {initializeGiftGuide} from './client';
+ document.querySelectorAll<HTMLElement>('[data-gift-guide]').forEach(initializeGiftGuide);
+</script>

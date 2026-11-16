@@ -1,0 +1,46 @@
+---
+import {loadIndexation} from '../../lib/seo/loadIndexation.mjs';
+const data=loadIndexation();
+const types:Record<string,string>={product:'Produkte',manufacturer:'Hersteller',comparison:'Vergleiche',guide:'Ratgeber und Hubs',utility:'Weitere Seiten',homepage:'Startseite',advisor:'Berater'};
+const groups=data?[...new Set<string>(data.rows.map((r:any)=>r.type))].map(type=>({type,rows:data.rows.filter((r:any)=>r.type===type)})):[];
+---
+{data && <section class="seo-panel seo-stack" data-indexation-overview id="indexierung">
+ <div class="seo-section-header"><div><span class="seo-eyebrow">Indexierung und Seitenstruktur</span><h2>Belegter Status und sinnvolle Lesepfade</h2></div><span class="seo-muted">Analyse: {data.asOf}</span></div>
+ <p>Letzte belegte Indexierungszustände: <strong>{data.gsc.coverageDate}</strong>. Performance: {data.gsc.performancePeriod.startDate} bis {data.gsc.performancePeriod.endDate} aus CSV-Export vom {data.gsc.performanceExportDate}. <strong>Kein aktueller API-Zugriff.</strong> Impressionen belegen keinen heutigen Indexierungsstatus.</p>
+ <div class="seo-metrics">
+  <article class="seo-metric"><span>Canonicals geprüft</span><strong>{data.summary.canonicals}</strong></article>
+  <article class="seo-metric"><span>Technische Regelbefunde</span><strong>{data.summary.technicalIssues}</strong></article>
+  <article class="seo-metric"><span>Neue Kontextlinks im Build</span><strong>{data.summary.actuallyAddedContextLinks}</strong></article>
+  <article class="seo-metric"><span>Experimentseiten geschützt</span><strong>20</strong></article>
+ </div>
+ <p class="seo-muted">Kontextquellen zählen unterschiedliche Haupttextseiten ohne Navigation und automatische Module. „Historisch indexiert“ bezieht sich ausschließlich auf den Export vom 02.11. Google-selected Canonical und eine Google-Sitemap-Zuordnung sind nicht verfügbar. Angezeigte Canonicals und Sitemap-Signale sind technische Prüfungen. Query-Seiten-Paare fehlen.</p>
+ <details><summary>Zehn priorisierte nächste Schritte</summary><ol>{data.topTen.map((item:any)=><li><strong>{item.title}</strong><p>{item.finding} {item.action}</p></li>)}</ol></details>
+ <details><summary>Durchgeführte Maßnahmen: {data.actions.length} Ratgeber</summary><ul>{data.actions.map((item:any)=><li><a href={item.route}>{item.route}</a>: {item.reason} <span class="seo-muted">({item.status})</span></li>)}</ul></details>
+ <div class="seo-toolbar"><label>URL oder Titel suchen <input type="search" data-indexation-filter placeholder="Zum Beispiel: Tractive oder /produkt/" /></label></div>
+ <p class="seo-muted" data-indexation-count>{data.rows.length} URLs erfasst. Geschützte Seiten werden nicht zur Bearbeitung vorgeschlagen.</p>
+ {groups.map(group=><details data-indexation-group><summary>{types[group.type]??group.type}: {group.rows.length} URLs</summary>
+  <div class="seo-table-wrap"><table class="seo-table"><caption>{types[group.type]??group.type}: letzter GSC-Stand und technische Prüfung</caption><thead><tr><th>URL / Absicht</th><th>GSC-Beleg</th><th>Kontextquellen</th><th>Technik</th><th>Performance</th><th>Maßnahmen</th></tr></thead><tbody>
+  {group.rows.map((row:any)=><tr data-indexation-row data-search={`${row.route} ${row.title}`.toLocaleLowerCase('de-DE')}>
+   <td>{row.protected?<span>{row.route} · 35.5 geschützt</span>:<a href={row.route}>{row.route}</a>}<p>{row.title}</p><details><summary>Technischer Canonical</summary><p>{row.canonical}</p><p>Google-selected: {row.googleSelectedCanonical??'nicht verfügbar'}</p><p>Klicktiefe: {row.depth??'nicht verlinkt'}</p></details></td>
+   <td>{row.statusLabel}<p>{row.statusDate??'kein Statusdatum'}</p><p>Crawl: {row.lastCrawl??'nicht belegt'}</p><details><summary>Datenquelle</summary><p>{row.statusSource??'Keine exakte URL im historischen Coverage-Export'}</p></details></td>
+   <td>{row.context} gesamt / {row.indexedContext} historisch indexiert<details><summary>Verlinkende Haupttexte</summary><ul>{row.contextSources.map((source:string)=><li>{source}{row.indexedContextSources.includes(source)?' · historisch indexiert':''}</li>)}</ul></details></td>
+   <td>HTTP {row.http??'ungeprüft'}<p>Sitemap: {row.sitemap?'enthalten':'nicht enthalten'}</p><p>Robots: {row.robots||'kein Meta-Ausschluss'}</p></td>
+   <td>{row.performance?<span>{row.performance.clicks} Klicks / {row.performance.impressions} Impressionen</span>:<span>Keine URL-Zeile im Performance-Export</span>}<p>Keine URL-Query-Paare verfügbar</p></td>
+   <td>{row.protected?'35.5: eingefroren':row.actions.length?'Kontextmaßnahme umgesetzt':row.suggestions[0]?.reason??'Kein prioritärer Regelbefund'}{row.actions.length>0&&<p>{row.actions.length} dokumentierte Maßnahmen</p>}</td>
+  </tr>)}
+  </tbody></table></div>
+ </details>)}
+ <details><summary>Globale Suchanfragen aus dem Export</summary><p>Gesamter Exportzeitraum; keine Zuordnung zu einzelnen URLs.</p><ul>{data.gsc.queries.map((q:any)=><li>{q.query}: {q.clicks} Klicks / {q.impressions} Impressionen</li>)}</ul></details>
+</section>}
+<script>
+ document.querySelectorAll<HTMLElement>('[data-indexation-overview]').forEach(root=>{
+  const input=root.querySelector<HTMLInputElement>('[data-indexation-filter]');
+  const rows=[...root.querySelectorAll<HTMLElement>('[data-indexation-row]')];
+  input?.addEventListener('input',()=>{
+   const term=input.value.trim().toLocaleLowerCase('de-DE');let count=0;
+   rows.forEach(row=>{row.hidden=!!term&&!row.dataset.search?.includes(term);if(!row.hidden)count++});
+   root.querySelectorAll<HTMLDetailsElement>('[data-indexation-group]').forEach(group=>{group.hidden=![...group.querySelectorAll<HTMLElement>('[data-indexation-row]')].some(r=>!r.hidden);if(term&&!group.hidden)group.open=true;else if(!term)group.open=false});
+   const result=root.querySelector<HTMLElement>('[data-indexation-count]');if(result)result.textContent=`${count} von ${rows.length} URLs sichtbar. GSC-Status bleibt historisch.`;
+  });
+ });
+</script>

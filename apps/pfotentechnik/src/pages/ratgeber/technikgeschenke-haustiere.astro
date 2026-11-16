@@ -1,0 +1,25 @@
+---
+import {getEntry,render} from 'astro:content';
+import {getImage} from 'astro:assets';
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import GiftGuide from '../../components/gift-guide/GiftGuide.astro';
+import {getProducts} from '../../domain/content/registry';
+import {buildGiftCatalog} from '../../domain/gift-guide/catalog.ts';
+import feeding from '../../assets/images/gift-guide/feeding.webp';
+import drinking from '../../assets/images/gift-guide/drinking.webp';
+import outdoors from '../../assets/images/gift-guide/outdoors.webp';
+import connection from '../../assets/images/gift-guide/connection.webp';
+const symbols={'futterautomaten':{src:feeding,alt:'KI-Symbolbild: Eine Katze nähert sich einer Futterschale. Keine Abbildung des konkreten Modells.'},'trinkbrunnen':{src:drinking,alt:'KI-Symbolbild: Ein Hund trinkt aus einer Wasserschale. Keine Abbildung des konkreten Modells.'},'gps-tracker':{src:outdoors,alt:'KI-Symbolbild: Ein Hund und ein Mensch gehen gemeinsam spazieren. Keine Abbildung eines konkreten Trackers.'},'haustierkameras':{src:connection,alt:'KI-Symbolbild: Eine Katze ruht in einem Wohnraum mit einer Kamera. Keine Abbildung des konkreten Modells.'}};
+const entry=await getEntry('pages','ratgeber/technikgeschenke-haustiere');
+if(!entry)throw Error('Geschenkratgeber fehlt in der pages-Collection.');
+const {Content}=await render(entry);
+const catalog=buildGiftCatalog(await getProducts());
+const products=await Promise.all(catalog.products.map(async({media,...p})=>{
+ const symbol=symbols[p.category];
+ const image=await getImage({src:symbol.src,width:680,format:'webp',quality:82});
+ return {...p,image:{src:image.src,width:Number(image.attributes.width),height:Number(image.attributes.height),alt:symbol.alt,symbolic:true}};
+}));
+---
+<ProjectLayout title={entry.data.title} seoTitle={entry.data.seo.title} description={entry.data.description} seoDescription={entry.data.seo.description} canonical={entry.data.seo.canonical} schemaType="article" faq={entry.data.faq} author={entry.data.author} publishedAt={entry.data.publishedAt} updatedAt={entry.data.updatedAt} ogImage={entry.data.heroImage.src.src} mainClass="gift-page">
+ <GiftGuide products={products} entry={entry}><Content slot="editorial"/></GiftGuide>
+</ProjectLayout>

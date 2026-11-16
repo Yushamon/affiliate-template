@@ -1,0 +1,1640 @@
+{
+  "generatedAt": "2026-11-16T19:20:04.187Z",
+  "route": "/ratgeber/technikgeschenke-haustiere/",
+  "buildPages": 391,
+  "publicCanonicalPages": 270,
+  "sitemapPages": 269,
+  "previousPublicPages": 269,
+  "addedRoutes": [
+    "/ratgeber/technikgeschenke-haustiere/"
+  ],
+  "removedRoutes": [],
+  "existingSourceFilesUnchanged": 259,
+  "productSourcesUnchanged": 110,
+  "originalDecisionFacts": {
+    "products": 73,
+    "hints": 437,
+    "changed": 0
+  },
+  "protected": {
+    "pages": 20,
+    "incomingEdges": 205
+  },
+  "changedExistingMainText": [
+    "/wissen/"
+  ],
+  "incomingPages": [
+    "/wissen/"
+  ],
+  "catalog": {
+    "models": 56,
+    "confirmedAvailability": 12,
+    "unknownAvailability": 44,
+    "categories": {
+      "trinkbrunnen": 17,
+      "futterautomaten": 21,
+      "haustierkameras": 8,
+      "gps-tracker": 10
+    },
+    "slugs": [
+      "brook-glass-pet-fountain",
+      "cat-mate-335-pet-fountain",
+      "cat-mate-c300",
+      "catit-pixi-smart-trinkbrunnen",
+      "catit-pixi-standard-trinkbrunnen",
+      "catit-pixi-vision-smart-feeder",
+      "enabot-ebo-air-2",
+      "enabot-rola-mini",
+      "feelneedy-fn-w18-8l-katzenbrunnen",
+      "furbo-360-hundekamera",
+      "furbo-360-katzenkamera",
+      "furbo-mini-360",
+      "garmin-alpha-t-20",
+      "imipaw-3l-automatic-cat-feeder",
+      "invoxia-biotracker-2026",
+      "oneisall-2-2l-cordless-fountain",
+      "oneisall-2-in-1-feeder-water",
+      "oneisall-3-2l-cordless-fountain",
+      "oneisall-5l-automatic-cat-feeder",
+      "oneisall-7l-dog-water-fountain",
+      "paj-pet-finder-4g-mini",
+      "pawfit-3",
+      "petkit-eversweet-3-pro-uvc",
+      "petkit-eversweet-ultra",
+      "petkit-fresh-element-solo",
+      "petkit-yumshare-dual-hopper",
+      "petkit-yumshare-solo-2",
+      "petlibro-air-automatic-feeder",
+      "petlibro-air-wifi-feeder",
+      "petlibro-dockstream-2-smart",
+      "petlibro-dockstream-2-smart-cordless",
+      "petlibro-dockstream-rfid-smart",
+      "petlibro-granary-2-vision",
+      "petlibro-granary-camera-feeder",
+      "petlibro-granary-dual-feeder",
+      "petlibro-granary-wifi-feeder",
+      "petlibro-one-rfid-smart-feeder",
+      "petlibro-scout-smart-camera",
+      "petlibro-space-smart-feeder",
+      "petlibro-stainless-steel-fountain",
+      "petsafe-healthy-pet-simply-feed",
+      "petsafe-smart-feed-2",
+      "petsafe-streamside-trinkbrunnen",
+      "pettec-cam-360",
+      "philips-pet-series-paw3210-02",
+      "reolink-e1-zoom",
+      "satellai-collar-go",
+      "surefeed-microchip-pet-feeder",
+      "surefeed-microchip-pet-feeder-connect",
+      "tractive-cat-6-mini",
+      "tractive-dog-6",
+      "tractive-dog-6-xl",
+      "weenect-xs",
+      "weenect-xt",
+      "xiaomi-smart-pet-food-feeder-2",
+      "xiaomi-smart-pet-fountain-2"
+    ]
+  },
+  "html": {
+    "bytes": 658535,
+    "gzipBytes": 100134,
+    "canonical": [
+      "https://pfotentechnik.de/ratgeber/technikgeschenke-haustiere/"
+    ],
+    "robots": "index,follow,max-image-preview:large",
+    "h1": [
+      "Sinnvolle Technikgeschenke. Für Hund, Katze & euch."
+    ],
+    "brokenInternalLinks": 0,
+    "schemaErrors": []
+  },
+  "scenarios": [
+    {
+      "answers": {
+        "animal": "cat",
+        "goal": "feeding",
+        "budget": "50",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "catit-pixi-vision-smart-feeder",
+        "petlibro-air-wifi-feeder",
+        "petlibro-space-smart-feeder",
+        "petkit-fresh-element-solo",
+        "imipaw-3l-automatic-cat-feeder",
+        "surefeed-microchip-pet-feeder-connect",
+        "cat-mate-c300",
+        "oneisall-5l-automatic-cat-feeder"
+      ],
+      "excluded": 13
+    },
+    {
+      "answers": {
+        "animal": "cat",
+        "goal": "feeding",
+        "budget": "150",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-air-automatic-feeder",
+        "petlibro-granary-dual-feeder",
+        "petlibro-granary-wifi-feeder"
+      ],
+      "possible": [
+        "catit-pixi-vision-smart-feeder",
+        "petlibro-air-wifi-feeder",
+        "petkit-yumshare-dual-hopper",
+        "xiaomi-smart-pet-food-feeder-2",
+        "surefeed-microchip-pet-feeder",
+        "petlibro-space-smart-feeder",
+        "petkit-yumshare-solo-2",
+        "petkit-fresh-element-solo",
+        "imipaw-3l-automatic-cat-feeder",
+        "oneisall-2-in-1-feeder-water",
+        "surefeed-microchip-pet-feeder-connect",
+        "cat-mate-c300",
+        "oneisall-5l-automatic-cat-feeder"
+      ],
+      "excluded": 5
+    },
+    {
+      "answers": {
+        "animal": "cat",
+        "goal": "feeding",
+        "budget": "300",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-air-automatic-feeder",
+        "petlibro-granary-camera-feeder",
+        "petlibro-granary-dual-feeder",
+        "petlibro-granary-2-vision",
+        "petlibro-granary-wifi-feeder",
+        "petlibro-one-rfid-smart-feeder"
+      ],
+      "possible": [
+        "catit-pixi-vision-smart-feeder",
+        "petsafe-smart-feed-2",
+        "petlibro-air-wifi-feeder",
+        "petkit-yumshare-dual-hopper",
+        "xiaomi-smart-pet-food-feeder-2",
+        "surefeed-microchip-pet-feeder",
+        "petsafe-healthy-pet-simply-feed",
+        "petlibro-space-smart-feeder",
+        "petkit-yumshare-solo-2",
+        "petkit-fresh-element-solo",
+        "imipaw-3l-automatic-cat-feeder",
+        "oneisall-2-in-1-feeder-water",
+        "surefeed-microchip-pet-feeder-connect",
+        "cat-mate-c300",
+        "oneisall-5l-automatic-cat-feeder"
+      ],
+      "excluded": 0
+    },
+    {
+      "answers": {
+        "animal": "cat",
+        "goal": "feeding",
+        "budget": "open",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "catit-pixi-vision-smart-feeder",
+        "petlibro-air-automatic-feeder",
+        "petlibro-granary-camera-feeder",
+        "petlibro-granary-dual-feeder",
+        "petlibro-granary-2-vision",
+        "petlibro-granary-wifi-feeder",
+        "petlibro-one-rfid-smart-feeder"
+      ],
+      "possible": [
+        "petsafe-smart-feed-2",
+        "petlibro-air-wifi-feeder",
+        "petkit-yumshare-dual-hopper",
+        "xiaomi-smart-pet-food-feeder-2",
+        "surefeed-microchip-pet-feeder",
+        "petsafe-healthy-pet-simply-feed",
+        "petlibro-space-smart-feeder",
+        "petkit-yumshare-solo-2",
+        "petkit-fresh-element-solo",
+        "imipaw-3l-automatic-cat-feeder",
+        "oneisall-2-in-1-feeder-water",
+        "surefeed-microchip-pet-feeder-connect",
+        "cat-mate-c300",
+        "oneisall-5l-automatic-cat-feeder"
+      ],
+      "excluded": 0
+    },
+    {
+      "answers": {
+        "animal": "cat",
+        "goal": "drinking",
+        "budget": "50",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "xiaomi-smart-pet-fountain-2",
+        "petsafe-streamside-trinkbrunnen",
+        "cat-mate-335-pet-fountain",
+        "catit-pixi-smart-trinkbrunnen",
+        "catit-pixi-standard-trinkbrunnen",
+        "petlibro-stainless-steel-fountain",
+        "philips-pet-series-paw3210-02"
+      ],
+      "excluded": 8
+    },
+    {
+      "answers": {
+        "animal": "cat",
+        "goal": "drinking",
+        "budget": "150",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-dockstream-2-smart-cordless",
+        "petlibro-dockstream-2-smart"
+      ],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "xiaomi-smart-pet-fountain-2",
+        "oneisall-3-2l-cordless-fountain",
+        "petsafe-streamside-trinkbrunnen",
+        "petkit-eversweet-3-pro-uvc",
+        "feelneedy-fn-w18-8l-katzenbrunnen",
+        "cat-mate-335-pet-fountain",
+        "catit-pixi-smart-trinkbrunnen",
+        "catit-pixi-standard-trinkbrunnen",
+        "petlibro-stainless-steel-fountain",
+        "brook-glass-pet-fountain",
+        "philips-pet-series-paw3210-02"
+      ],
+      "excluded": 2
+    },
+    {
+      "answers": {
+        "animal": "cat",
+        "goal": "drinking",
+        "budget": "300",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-dockstream-2-smart-cordless",
+        "petlibro-dockstream-2-smart"
+      ],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "xiaomi-smart-pet-fountain-2",
+        "oneisall-3-2l-cordless-fountain",
+        "petsafe-streamside-trinkbrunnen",
+        "petkit-eversweet-3-pro-uvc",
+        "petkit-eversweet-ultra",
+        "feelneedy-fn-w18-8l-katzenbrunnen",
+        "cat-mate-335-pet-fountain",
+        "catit-pixi-smart-trinkbrunnen",
+        "catit-pixi-standard-trinkbrunnen",
+        "petlibro-stainless-steel-fountain",
+        "brook-glass-pet-fountain",
+        "philips-pet-series-paw3210-02"
+      ],
+      "excluded": 1
+    },
+    {
+      "answers": {
+        "animal": "cat",
+        "goal": "drinking",
+        "budget": "open",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-dockstream-2-smart-cordless",
+        "petlibro-dockstream-2-smart"
+      ],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "xiaomi-smart-pet-fountain-2",
+        "oneisall-3-2l-cordless-fountain",
+        "petsafe-streamside-trinkbrunnen",
+        "petkit-eversweet-3-pro-uvc",
+        "petkit-eversweet-ultra",
+        "feelneedy-fn-w18-8l-katzenbrunnen",
+        "cat-mate-335-pet-fountain",
+        "catit-pixi-smart-trinkbrunnen",
+        "catit-pixi-standard-trinkbrunnen",
+        "petlibro-stainless-steel-fountain",
+        "brook-glass-pet-fountain",
+        "philips-pet-series-paw3210-02"
+      ],
+      "excluded": 1
+    },
+    {
+      "answers": {
+        "animal": "cat",
+        "goal": "outdoors",
+        "budget": "50",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "weenect-xs"
+      ],
+      "excluded": 8
+    },
+    {
+      "answers": {
+        "animal": "cat",
+        "goal": "outdoors",
+        "budget": "150",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "weenect-xs",
+        "paj-pet-finder-4g-mini"
+      ],
+      "excluded": 7
+    },
+    {
+      "answers": {
+        "animal": "cat",
+        "goal": "outdoors",
+        "budget": "300",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "weenect-xs",
+        "paj-pet-finder-4g-mini"
+      ],
+      "excluded": 7
+    },
+    {
+      "answers": {
+        "animal": "cat",
+        "goal": "outdoors",
+        "budget": "open",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "weenect-xs",
+        "paj-pet-finder-4g-mini"
+      ],
+      "excluded": 7
+    },
+    {
+      "answers": {
+        "animal": "cat",
+        "goal": "connection",
+        "budget": "50",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "furbo-360-katzenkamera",
+        "reolink-e1-zoom",
+        "pettec-cam-360"
+      ],
+      "excluded": 5
+    },
+    {
+      "answers": {
+        "animal": "cat",
+        "goal": "connection",
+        "budget": "150",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-scout-smart-camera"
+      ],
+      "possible": [
+        "furbo-360-katzenkamera",
+        "reolink-e1-zoom",
+        "pettec-cam-360",
+        "furbo-mini-360",
+        "enabot-rola-mini",
+        "enabot-ebo-air-2"
+      ],
+      "excluded": 1
+    },
+    {
+      "answers": {
+        "animal": "cat",
+        "goal": "connection",
+        "budget": "300",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-scout-smart-camera"
+      ],
+      "possible": [
+        "furbo-360-katzenkamera",
+        "reolink-e1-zoom",
+        "pettec-cam-360",
+        "furbo-mini-360",
+        "enabot-rola-mini",
+        "enabot-ebo-air-2"
+      ],
+      "excluded": 1
+    },
+    {
+      "answers": {
+        "animal": "cat",
+        "goal": "connection",
+        "budget": "open",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "furbo-360-katzenkamera",
+        "petlibro-scout-smart-camera"
+      ],
+      "possible": [
+        "reolink-e1-zoom",
+        "pettec-cam-360",
+        "furbo-mini-360",
+        "enabot-rola-mini",
+        "enabot-ebo-air-2"
+      ],
+      "excluded": 1
+    },
+    {
+      "answers": {
+        "animal": "cat",
+        "goal": "open",
+        "budget": "50",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "furbo-360-katzenkamera",
+        "xiaomi-smart-pet-fountain-2",
+        "reolink-e1-zoom",
+        "petsafe-streamside-trinkbrunnen",
+        "pettec-cam-360",
+        "cat-mate-335-pet-fountain",
+        "catit-pixi-smart-trinkbrunnen",
+        "catit-pixi-standard-trinkbrunnen",
+        "petlibro-stainless-steel-fountain",
+        "philips-pet-series-paw3210-02"
+      ],
+      "excluded": 13
+    },
+    {
+      "answers": {
+        "animal": "cat",
+        "goal": "open",
+        "budget": "150",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-dockstream-2-smart-cordless",
+        "petlibro-scout-smart-camera",
+        "petlibro-dockstream-2-smart"
+      ],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "furbo-360-katzenkamera",
+        "xiaomi-smart-pet-fountain-2",
+        "reolink-e1-zoom",
+        "oneisall-3-2l-cordless-fountain",
+        "petsafe-streamside-trinkbrunnen",
+        "pettec-cam-360",
+        "petkit-eversweet-3-pro-uvc",
+        "feelneedy-fn-w18-8l-katzenbrunnen",
+        "cat-mate-335-pet-fountain",
+        "catit-pixi-smart-trinkbrunnen",
+        "catit-pixi-standard-trinkbrunnen",
+        "petlibro-stainless-steel-fountain",
+        "brook-glass-pet-fountain",
+        "furbo-mini-360",
+        "enabot-rola-mini",
+        "philips-pet-series-paw3210-02",
+        "enabot-ebo-air-2"
+      ],
+      "excluded": 3
+    },
+    {
+      "answers": {
+        "animal": "cat",
+        "goal": "open",
+        "budget": "300",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-dockstream-2-smart-cordless",
+        "petlibro-scout-smart-camera",
+        "petlibro-dockstream-2-smart"
+      ],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "furbo-360-katzenkamera",
+        "xiaomi-smart-pet-fountain-2",
+        "reolink-e1-zoom",
+        "oneisall-3-2l-cordless-fountain",
+        "petsafe-streamside-trinkbrunnen",
+        "pettec-cam-360",
+        "petkit-eversweet-3-pro-uvc",
+        "petkit-eversweet-ultra",
+        "feelneedy-fn-w18-8l-katzenbrunnen",
+        "cat-mate-335-pet-fountain",
+        "catit-pixi-smart-trinkbrunnen",
+        "catit-pixi-standard-trinkbrunnen",
+        "petlibro-stainless-steel-fountain",
+        "brook-glass-pet-fountain",
+        "furbo-mini-360",
+        "enabot-rola-mini",
+        "philips-pet-series-paw3210-02",
+        "enabot-ebo-air-2"
+      ],
+      "excluded": 2
+    },
+    {
+      "answers": {
+        "animal": "cat",
+        "goal": "open",
+        "budget": "open",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-dockstream-2-smart-cordless",
+        "furbo-360-katzenkamera",
+        "petlibro-dockstream-2-smart",
+        "petlibro-scout-smart-camera"
+      ],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "xiaomi-smart-pet-fountain-2",
+        "reolink-e1-zoom",
+        "oneisall-3-2l-cordless-fountain",
+        "petsafe-streamside-trinkbrunnen",
+        "pettec-cam-360",
+        "petkit-eversweet-3-pro-uvc",
+        "petkit-eversweet-ultra",
+        "feelneedy-fn-w18-8l-katzenbrunnen",
+        "cat-mate-335-pet-fountain",
+        "catit-pixi-smart-trinkbrunnen",
+        "catit-pixi-standard-trinkbrunnen",
+        "petlibro-stainless-steel-fountain",
+        "brook-glass-pet-fountain",
+        "furbo-mini-360",
+        "enabot-rola-mini",
+        "philips-pet-series-paw3210-02",
+        "enabot-ebo-air-2"
+      ],
+      "excluded": 2
+    },
+    {
+      "answers": {
+        "animal": "dog",
+        "goal": "feeding",
+        "budget": "50",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "petlibro-air-wifi-feeder",
+        "petlibro-space-smart-feeder",
+        "petkit-fresh-element-solo",
+        "imipaw-3l-automatic-cat-feeder",
+        "surefeed-microchip-pet-feeder-connect",
+        "cat-mate-c300"
+      ],
+      "excluded": 15
+    },
+    {
+      "answers": {
+        "animal": "dog",
+        "goal": "feeding",
+        "budget": "150",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-air-automatic-feeder",
+        "petlibro-granary-dual-feeder",
+        "petlibro-granary-wifi-feeder"
+      ],
+      "possible": [
+        "petlibro-air-wifi-feeder",
+        "petkit-yumshare-dual-hopper",
+        "xiaomi-smart-pet-food-feeder-2",
+        "surefeed-microchip-pet-feeder",
+        "petlibro-space-smart-feeder",
+        "petkit-yumshare-solo-2",
+        "petkit-fresh-element-solo",
+        "imipaw-3l-automatic-cat-feeder",
+        "surefeed-microchip-pet-feeder-connect",
+        "cat-mate-c300"
+      ],
+      "excluded": 8
+    },
+    {
+      "answers": {
+        "animal": "dog",
+        "goal": "feeding",
+        "budget": "300",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-air-automatic-feeder",
+        "petlibro-granary-camera-feeder",
+        "petlibro-granary-dual-feeder",
+        "petlibro-granary-wifi-feeder"
+      ],
+      "possible": [
+        "petsafe-smart-feed-2",
+        "petlibro-air-wifi-feeder",
+        "petkit-yumshare-dual-hopper",
+        "xiaomi-smart-pet-food-feeder-2",
+        "surefeed-microchip-pet-feeder",
+        "petsafe-healthy-pet-simply-feed",
+        "petlibro-space-smart-feeder",
+        "petkit-yumshare-solo-2",
+        "petkit-fresh-element-solo",
+        "imipaw-3l-automatic-cat-feeder",
+        "surefeed-microchip-pet-feeder-connect",
+        "cat-mate-c300"
+      ],
+      "excluded": 5
+    },
+    {
+      "answers": {
+        "animal": "dog",
+        "goal": "feeding",
+        "budget": "open",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-air-automatic-feeder",
+        "petlibro-granary-camera-feeder",
+        "petlibro-granary-dual-feeder",
+        "petlibro-granary-wifi-feeder"
+      ],
+      "possible": [
+        "petsafe-smart-feed-2",
+        "petlibro-air-wifi-feeder",
+        "petkit-yumshare-dual-hopper",
+        "xiaomi-smart-pet-food-feeder-2",
+        "surefeed-microchip-pet-feeder",
+        "petsafe-healthy-pet-simply-feed",
+        "petlibro-space-smart-feeder",
+        "petkit-yumshare-solo-2",
+        "petkit-fresh-element-solo",
+        "imipaw-3l-automatic-cat-feeder",
+        "surefeed-microchip-pet-feeder-connect",
+        "cat-mate-c300"
+      ],
+      "excluded": 5
+    },
+    {
+      "answers": {
+        "animal": "dog",
+        "goal": "drinking",
+        "budget": "50",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "xiaomi-smart-pet-fountain-2",
+        "petsafe-streamside-trinkbrunnen",
+        "cat-mate-335-pet-fountain",
+        "petlibro-stainless-steel-fountain",
+        "philips-pet-series-paw3210-02"
+      ],
+      "excluded": 10
+    },
+    {
+      "answers": {
+        "animal": "dog",
+        "goal": "drinking",
+        "budget": "150",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-dockstream-2-smart-cordless",
+        "petlibro-dockstream-2-smart"
+      ],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "xiaomi-smart-pet-fountain-2",
+        "oneisall-3-2l-cordless-fountain",
+        "petsafe-streamside-trinkbrunnen",
+        "petkit-eversweet-3-pro-uvc",
+        "oneisall-7l-dog-water-fountain",
+        "feelneedy-fn-w18-8l-katzenbrunnen",
+        "cat-mate-335-pet-fountain",
+        "petlibro-stainless-steel-fountain",
+        "brook-glass-pet-fountain",
+        "philips-pet-series-paw3210-02"
+      ],
+      "excluded": 3
+    },
+    {
+      "answers": {
+        "animal": "dog",
+        "goal": "drinking",
+        "budget": "300",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-dockstream-2-smart-cordless",
+        "petlibro-dockstream-2-smart"
+      ],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "xiaomi-smart-pet-fountain-2",
+        "oneisall-3-2l-cordless-fountain",
+        "petsafe-streamside-trinkbrunnen",
+        "petkit-eversweet-3-pro-uvc",
+        "petkit-eversweet-ultra",
+        "oneisall-7l-dog-water-fountain",
+        "feelneedy-fn-w18-8l-katzenbrunnen",
+        "cat-mate-335-pet-fountain",
+        "petlibro-stainless-steel-fountain",
+        "brook-glass-pet-fountain",
+        "philips-pet-series-paw3210-02"
+      ],
+      "excluded": 2
+    },
+    {
+      "answers": {
+        "animal": "dog",
+        "goal": "drinking",
+        "budget": "open",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-dockstream-2-smart-cordless",
+        "petlibro-dockstream-2-smart"
+      ],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "xiaomi-smart-pet-fountain-2",
+        "oneisall-3-2l-cordless-fountain",
+        "petsafe-streamside-trinkbrunnen",
+        "petkit-eversweet-3-pro-uvc",
+        "petkit-eversweet-ultra",
+        "oneisall-7l-dog-water-fountain",
+        "feelneedy-fn-w18-8l-katzenbrunnen",
+        "cat-mate-335-pet-fountain",
+        "petlibro-stainless-steel-fountain",
+        "brook-glass-pet-fountain",
+        "philips-pet-series-paw3210-02"
+      ],
+      "excluded": 2
+    },
+    {
+      "answers": {
+        "animal": "dog",
+        "goal": "outdoors",
+        "budget": "50",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "weenect-xs",
+        "weenect-xt",
+        "pawfit-3"
+      ],
+      "excluded": 6
+    },
+    {
+      "answers": {
+        "animal": "dog",
+        "goal": "outdoors",
+        "budget": "150",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "tractive-dog-6",
+        "weenect-xs",
+        "weenect-xt",
+        "paj-pet-finder-4g-mini",
+        "satellai-collar-go",
+        "pawfit-3"
+      ],
+      "excluded": 3
+    },
+    {
+      "answers": {
+        "animal": "dog",
+        "goal": "outdoors",
+        "budget": "300",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "tractive-dog-6",
+        "weenect-xs",
+        "weenect-xt",
+        "paj-pet-finder-4g-mini",
+        "garmin-alpha-t-20",
+        "invoxia-biotracker-2026",
+        "satellai-collar-go",
+        "pawfit-3"
+      ],
+      "excluded": 1
+    },
+    {
+      "answers": {
+        "animal": "dog",
+        "goal": "outdoors",
+        "budget": "open",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "tractive-dog-6",
+        "weenect-xs",
+        "weenect-xt",
+        "paj-pet-finder-4g-mini",
+        "garmin-alpha-t-20",
+        "invoxia-biotracker-2026",
+        "satellai-collar-go",
+        "pawfit-3"
+      ],
+      "excluded": 1
+    },
+    {
+      "answers": {
+        "animal": "dog",
+        "goal": "connection",
+        "budget": "50",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "reolink-e1-zoom",
+        "pettec-cam-360"
+      ],
+      "excluded": 6
+    },
+    {
+      "answers": {
+        "animal": "dog",
+        "goal": "connection",
+        "budget": "150",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-scout-smart-camera"
+      ],
+      "possible": [
+        "reolink-e1-zoom",
+        "pettec-cam-360",
+        "furbo-mini-360",
+        "enabot-rola-mini",
+        "enabot-ebo-air-2",
+        "furbo-360-hundekamera"
+      ],
+      "excluded": 1
+    },
+    {
+      "answers": {
+        "animal": "dog",
+        "goal": "connection",
+        "budget": "300",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-scout-smart-camera"
+      ],
+      "possible": [
+        "reolink-e1-zoom",
+        "pettec-cam-360",
+        "furbo-mini-360",
+        "enabot-rola-mini",
+        "enabot-ebo-air-2",
+        "furbo-360-hundekamera"
+      ],
+      "excluded": 1
+    },
+    {
+      "answers": {
+        "animal": "dog",
+        "goal": "connection",
+        "budget": "open",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-scout-smart-camera"
+      ],
+      "possible": [
+        "reolink-e1-zoom",
+        "pettec-cam-360",
+        "furbo-mini-360",
+        "enabot-rola-mini",
+        "enabot-ebo-air-2",
+        "furbo-360-hundekamera"
+      ],
+      "excluded": 1
+    },
+    {
+      "answers": {
+        "animal": "dog",
+        "goal": "open",
+        "budget": "50",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "xiaomi-smart-pet-fountain-2",
+        "reolink-e1-zoom",
+        "petsafe-streamside-trinkbrunnen",
+        "pettec-cam-360",
+        "cat-mate-335-pet-fountain",
+        "petlibro-stainless-steel-fountain",
+        "philips-pet-series-paw3210-02"
+      ],
+      "excluded": 16
+    },
+    {
+      "answers": {
+        "animal": "dog",
+        "goal": "open",
+        "budget": "150",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-dockstream-2-smart-cordless",
+        "petlibro-scout-smart-camera",
+        "petlibro-dockstream-2-smart"
+      ],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "xiaomi-smart-pet-fountain-2",
+        "reolink-e1-zoom",
+        "oneisall-3-2l-cordless-fountain",
+        "petsafe-streamside-trinkbrunnen",
+        "pettec-cam-360",
+        "petkit-eversweet-3-pro-uvc",
+        "oneisall-7l-dog-water-fountain",
+        "feelneedy-fn-w18-8l-katzenbrunnen",
+        "cat-mate-335-pet-fountain",
+        "petlibro-stainless-steel-fountain",
+        "brook-glass-pet-fountain",
+        "furbo-mini-360",
+        "enabot-rola-mini",
+        "philips-pet-series-paw3210-02",
+        "enabot-ebo-air-2",
+        "furbo-360-hundekamera"
+      ],
+      "excluded": 4
+    },
+    {
+      "answers": {
+        "animal": "dog",
+        "goal": "open",
+        "budget": "300",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-dockstream-2-smart-cordless",
+        "petlibro-scout-smart-camera",
+        "petlibro-dockstream-2-smart"
+      ],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "xiaomi-smart-pet-fountain-2",
+        "reolink-e1-zoom",
+        "oneisall-3-2l-cordless-fountain",
+        "petsafe-streamside-trinkbrunnen",
+        "pettec-cam-360",
+        "petkit-eversweet-3-pro-uvc",
+        "petkit-eversweet-ultra",
+        "oneisall-7l-dog-water-fountain",
+        "feelneedy-fn-w18-8l-katzenbrunnen",
+        "cat-mate-335-pet-fountain",
+        "petlibro-stainless-steel-fountain",
+        "brook-glass-pet-fountain",
+        "furbo-mini-360",
+        "enabot-rola-mini",
+        "philips-pet-series-paw3210-02",
+        "enabot-ebo-air-2",
+        "furbo-360-hundekamera"
+      ],
+      "excluded": 3
+    },
+    {
+      "answers": {
+        "animal": "dog",
+        "goal": "open",
+        "budget": "open",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-dockstream-2-smart-cordless",
+        "petlibro-scout-smart-camera",
+        "petlibro-dockstream-2-smart"
+      ],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "xiaomi-smart-pet-fountain-2",
+        "reolink-e1-zoom",
+        "oneisall-3-2l-cordless-fountain",
+        "petsafe-streamside-trinkbrunnen",
+        "pettec-cam-360",
+        "petkit-eversweet-3-pro-uvc",
+        "petkit-eversweet-ultra",
+        "oneisall-7l-dog-water-fountain",
+        "feelneedy-fn-w18-8l-katzenbrunnen",
+        "cat-mate-335-pet-fountain",
+        "petlibro-stainless-steel-fountain",
+        "brook-glass-pet-fountain",
+        "furbo-mini-360",
+        "enabot-rola-mini",
+        "philips-pet-series-paw3210-02",
+        "enabot-ebo-air-2",
+        "furbo-360-hundekamera"
+      ],
+      "excluded": 3
+    },
+    {
+      "answers": {
+        "animal": "both",
+        "goal": "feeding",
+        "budget": "50",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "petlibro-air-wifi-feeder",
+        "petlibro-space-smart-feeder",
+        "petkit-fresh-element-solo",
+        "imipaw-3l-automatic-cat-feeder",
+        "surefeed-microchip-pet-feeder-connect",
+        "cat-mate-c300"
+      ],
+      "excluded": 15
+    },
+    {
+      "answers": {
+        "animal": "both",
+        "goal": "feeding",
+        "budget": "150",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-air-automatic-feeder",
+        "petlibro-granary-dual-feeder",
+        "petlibro-granary-wifi-feeder"
+      ],
+      "possible": [
+        "petlibro-air-wifi-feeder",
+        "petkit-yumshare-dual-hopper",
+        "xiaomi-smart-pet-food-feeder-2",
+        "surefeed-microchip-pet-feeder",
+        "petlibro-space-smart-feeder",
+        "petkit-yumshare-solo-2",
+        "petkit-fresh-element-solo",
+        "imipaw-3l-automatic-cat-feeder",
+        "surefeed-microchip-pet-feeder-connect",
+        "cat-mate-c300"
+      ],
+      "excluded": 8
+    },
+    {
+      "answers": {
+        "animal": "both",
+        "goal": "feeding",
+        "budget": "300",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-air-automatic-feeder",
+        "petlibro-granary-camera-feeder",
+        "petlibro-granary-dual-feeder",
+        "petlibro-granary-wifi-feeder"
+      ],
+      "possible": [
+        "petsafe-smart-feed-2",
+        "petlibro-air-wifi-feeder",
+        "petkit-yumshare-dual-hopper",
+        "xiaomi-smart-pet-food-feeder-2",
+        "surefeed-microchip-pet-feeder",
+        "petsafe-healthy-pet-simply-feed",
+        "petlibro-space-smart-feeder",
+        "petkit-yumshare-solo-2",
+        "petkit-fresh-element-solo",
+        "imipaw-3l-automatic-cat-feeder",
+        "surefeed-microchip-pet-feeder-connect",
+        "cat-mate-c300"
+      ],
+      "excluded": 5
+    },
+    {
+      "answers": {
+        "animal": "both",
+        "goal": "feeding",
+        "budget": "open",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-air-automatic-feeder",
+        "petlibro-granary-camera-feeder",
+        "petlibro-granary-dual-feeder",
+        "petlibro-granary-wifi-feeder"
+      ],
+      "possible": [
+        "petsafe-smart-feed-2",
+        "petlibro-air-wifi-feeder",
+        "petkit-yumshare-dual-hopper",
+        "xiaomi-smart-pet-food-feeder-2",
+        "surefeed-microchip-pet-feeder",
+        "petsafe-healthy-pet-simply-feed",
+        "petlibro-space-smart-feeder",
+        "petkit-yumshare-solo-2",
+        "petkit-fresh-element-solo",
+        "imipaw-3l-automatic-cat-feeder",
+        "surefeed-microchip-pet-feeder-connect",
+        "cat-mate-c300"
+      ],
+      "excluded": 5
+    },
+    {
+      "answers": {
+        "animal": "both",
+        "goal": "drinking",
+        "budget": "50",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "xiaomi-smart-pet-fountain-2",
+        "petsafe-streamside-trinkbrunnen",
+        "cat-mate-335-pet-fountain",
+        "petlibro-stainless-steel-fountain",
+        "philips-pet-series-paw3210-02"
+      ],
+      "excluded": 10
+    },
+    {
+      "answers": {
+        "animal": "both",
+        "goal": "drinking",
+        "budget": "150",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-dockstream-2-smart-cordless",
+        "petlibro-dockstream-2-smart"
+      ],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "xiaomi-smart-pet-fountain-2",
+        "oneisall-3-2l-cordless-fountain",
+        "petsafe-streamside-trinkbrunnen",
+        "petkit-eversweet-3-pro-uvc",
+        "feelneedy-fn-w18-8l-katzenbrunnen",
+        "cat-mate-335-pet-fountain",
+        "petlibro-stainless-steel-fountain",
+        "brook-glass-pet-fountain",
+        "philips-pet-series-paw3210-02"
+      ],
+      "excluded": 4
+    },
+    {
+      "answers": {
+        "animal": "both",
+        "goal": "drinking",
+        "budget": "300",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-dockstream-2-smart-cordless",
+        "petlibro-dockstream-2-smart"
+      ],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "xiaomi-smart-pet-fountain-2",
+        "oneisall-3-2l-cordless-fountain",
+        "petsafe-streamside-trinkbrunnen",
+        "petkit-eversweet-3-pro-uvc",
+        "petkit-eversweet-ultra",
+        "feelneedy-fn-w18-8l-katzenbrunnen",
+        "cat-mate-335-pet-fountain",
+        "petlibro-stainless-steel-fountain",
+        "brook-glass-pet-fountain",
+        "philips-pet-series-paw3210-02"
+      ],
+      "excluded": 3
+    },
+    {
+      "answers": {
+        "animal": "both",
+        "goal": "drinking",
+        "budget": "open",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-dockstream-2-smart-cordless",
+        "petlibro-dockstream-2-smart"
+      ],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "xiaomi-smart-pet-fountain-2",
+        "oneisall-3-2l-cordless-fountain",
+        "petsafe-streamside-trinkbrunnen",
+        "petkit-eversweet-3-pro-uvc",
+        "petkit-eversweet-ultra",
+        "feelneedy-fn-w18-8l-katzenbrunnen",
+        "cat-mate-335-pet-fountain",
+        "petlibro-stainless-steel-fountain",
+        "brook-glass-pet-fountain",
+        "philips-pet-series-paw3210-02"
+      ],
+      "excluded": 3
+    },
+    {
+      "answers": {
+        "animal": "both",
+        "goal": "outdoors",
+        "budget": "50",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "weenect-xs"
+      ],
+      "excluded": 8
+    },
+    {
+      "answers": {
+        "animal": "both",
+        "goal": "outdoors",
+        "budget": "150",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "weenect-xs",
+        "paj-pet-finder-4g-mini"
+      ],
+      "excluded": 7
+    },
+    {
+      "answers": {
+        "animal": "both",
+        "goal": "outdoors",
+        "budget": "300",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "weenect-xs",
+        "paj-pet-finder-4g-mini"
+      ],
+      "excluded": 7
+    },
+    {
+      "answers": {
+        "animal": "both",
+        "goal": "outdoors",
+        "budget": "open",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "weenect-xs",
+        "paj-pet-finder-4g-mini"
+      ],
+      "excluded": 7
+    },
+    {
+      "answers": {
+        "animal": "both",
+        "goal": "connection",
+        "budget": "50",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "reolink-e1-zoom",
+        "pettec-cam-360"
+      ],
+      "excluded": 6
+    },
+    {
+      "answers": {
+        "animal": "both",
+        "goal": "connection",
+        "budget": "150",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-scout-smart-camera"
+      ],
+      "possible": [
+        "reolink-e1-zoom",
+        "pettec-cam-360",
+        "furbo-mini-360",
+        "enabot-rola-mini",
+        "enabot-ebo-air-2"
+      ],
+      "excluded": 2
+    },
+    {
+      "answers": {
+        "animal": "both",
+        "goal": "connection",
+        "budget": "300",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-scout-smart-camera"
+      ],
+      "possible": [
+        "reolink-e1-zoom",
+        "pettec-cam-360",
+        "furbo-mini-360",
+        "enabot-rola-mini",
+        "enabot-ebo-air-2"
+      ],
+      "excluded": 2
+    },
+    {
+      "answers": {
+        "animal": "both",
+        "goal": "connection",
+        "budget": "open",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-scout-smart-camera"
+      ],
+      "possible": [
+        "reolink-e1-zoom",
+        "pettec-cam-360",
+        "furbo-mini-360",
+        "enabot-rola-mini",
+        "enabot-ebo-air-2"
+      ],
+      "excluded": 2
+    },
+    {
+      "answers": {
+        "animal": "both",
+        "goal": "open",
+        "budget": "50",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "xiaomi-smart-pet-fountain-2",
+        "reolink-e1-zoom",
+        "petsafe-streamside-trinkbrunnen",
+        "pettec-cam-360",
+        "cat-mate-335-pet-fountain",
+        "petlibro-stainless-steel-fountain",
+        "philips-pet-series-paw3210-02"
+      ],
+      "excluded": 16
+    },
+    {
+      "answers": {
+        "animal": "both",
+        "goal": "open",
+        "budget": "150",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-dockstream-2-smart-cordless",
+        "petlibro-scout-smart-camera",
+        "petlibro-dockstream-2-smart"
+      ],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "xiaomi-smart-pet-fountain-2",
+        "reolink-e1-zoom",
+        "oneisall-3-2l-cordless-fountain",
+        "petsafe-streamside-trinkbrunnen",
+        "pettec-cam-360",
+        "petkit-eversweet-3-pro-uvc",
+        "feelneedy-fn-w18-8l-katzenbrunnen",
+        "cat-mate-335-pet-fountain",
+        "petlibro-stainless-steel-fountain",
+        "brook-glass-pet-fountain",
+        "furbo-mini-360",
+        "enabot-rola-mini",
+        "philips-pet-series-paw3210-02",
+        "enabot-ebo-air-2"
+      ],
+      "excluded": 6
+    },
+    {
+      "answers": {
+        "animal": "both",
+        "goal": "open",
+        "budget": "300",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-dockstream-2-smart-cordless",
+        "petlibro-scout-smart-camera",
+        "petlibro-dockstream-2-smart"
+      ],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "xiaomi-smart-pet-fountain-2",
+        "reolink-e1-zoom",
+        "oneisall-3-2l-cordless-fountain",
+        "petsafe-streamside-trinkbrunnen",
+        "pettec-cam-360",
+        "petkit-eversweet-3-pro-uvc",
+        "petkit-eversweet-ultra",
+        "feelneedy-fn-w18-8l-katzenbrunnen",
+        "cat-mate-335-pet-fountain",
+        "petlibro-stainless-steel-fountain",
+        "brook-glass-pet-fountain",
+        "furbo-mini-360",
+        "enabot-rola-mini",
+        "philips-pet-series-paw3210-02",
+        "enabot-ebo-air-2"
+      ],
+      "excluded": 5
+    },
+    {
+      "answers": {
+        "animal": "both",
+        "goal": "open",
+        "budget": "open",
+        "food": "dry",
+        "weight": 10,
+        "subscription": "any"
+      },
+      "confirmed": [
+        "petlibro-dockstream-2-smart-cordless",
+        "petlibro-scout-smart-camera",
+        "petlibro-dockstream-2-smart"
+      ],
+      "possible": [
+        "petlibro-dockstream-rfid-smart",
+        "oneisall-2-2l-cordless-fountain",
+        "xiaomi-smart-pet-fountain-2",
+        "reolink-e1-zoom",
+        "oneisall-3-2l-cordless-fountain",
+        "petsafe-streamside-trinkbrunnen",
+        "pettec-cam-360",
+        "petkit-eversweet-3-pro-uvc",
+        "petkit-eversweet-ultra",
+        "feelneedy-fn-w18-8l-katzenbrunnen",
+        "cat-mate-335-pet-fountain",
+        "petlibro-stainless-steel-fountain",
+        "brook-glass-pet-fountain",
+        "furbo-mini-360",
+        "enabot-rola-mini",
+        "philips-pet-series-paw3210-02",
+        "enabot-ebo-air-2"
+      ],
+      "excluded": 5
+    }
+  ]
+}

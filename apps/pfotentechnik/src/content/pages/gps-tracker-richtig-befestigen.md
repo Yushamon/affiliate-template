@@ -41,7 +41,7 @@ Der Tracker soll nicht rotieren oder frei schlagen. Band, Clip und zulässige Br
 
 Freigänger klettern durch Büsche, Zäune und enge Öffnungen. Der Verschluss muss eine gefährliche Last lösen können. Ein verlorener Tracker ist ärgerlich; eine nicht lösbare Schlaufe ist das größere Risiko.
 
-Bei den aktuellen Tractive-Varianten unterscheiden sich Gerät und Tiergrenze deutlich: Der [CAT 6 Mini](/produkt/tractive-cat-6-mini/) wiegt inklusive integriertem Halsband 32 g und ist für Katzen von 3 bis 8 kg angegeben. Der [DOG 6](/produkt/tractive-dog-6/) wiegt rund 39 g und ist für Hunde ab 4 kg vorgesehen, der [DOG 6 XL](/produkt/tractive-dog-6-xl/) rund 70 g für Hunde ab 20 kg. Mehr Akkureserve beim XL ist deshalb kein Grund, die dokumentierte Tiergrenze oder Halsbandpassform zu übergehen.
+Die hier verlinkten Tracker unterscheiden sich bei Gewicht und Tiergrenze deutlich: Der [CAT 6 Mini](/produkt/tractive-cat-6-mini/) wiegt inklusive integriertem Halsband 32 g und ist für Katzen von 3 bis 8 kg angegeben. Der [DOG 6](/produkt/tractive-dog-6/) wiegt rund 39 g und ist für Hunde ab 4 kg vorgesehen, der [DOG 6 XL](/produkt/tractive-dog-6-xl/) rund 70 g für Hunde ab 20 kg. Mehr Akkureserve beim XL ist deshalb kein Grund, die dokumentierte Tiergrenze oder Halsbandpassform zu übergehen.
 
 ## Täglicher 30-Sekunden-Check
 

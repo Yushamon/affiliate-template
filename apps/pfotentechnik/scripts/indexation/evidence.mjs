@@ -24,7 +24,7 @@ export function loadGscEvidence(){
  for(const source of manifest.sources.filter(s=>s.provider==='google'))assert.equal(sha(fs.readFileSync(path.join(app,source.file))),source.sha256,source.file+': Export-Hash');
  const ranges=Object.values(dashboard.ranges),detailed=ranges.filter(r=>r.pages?.length).sort((a,b)=>b.endDate.localeCompare(a.endDate))[0];
  assert.ok(detailed,'Kein belegter Seiten-Performancezeitraum');
- return {access,indexation,coverageSources,performance:{sourceType:dashboard.sourceType,manifest:dashboard.sourceManifest,exportDate:manifest.exportDate,dataUpdatedAt:dashboard.dataUpdatedAt,period:{startDate:detailed.startDate,endDate:detailed.endDate},pages:detailed.pages,queries:detailed.queries,pageQueries:detailed.pageQueries??[],pageQueriesAvailable:!!detailed.coverage?.pageQueries,
+ return {access,indexation,coverageSources,performance:{sourceType:dashboard.sourceType,manifest:dashboard.sourceManifest,exportDate:manifest.exportDate,dataUpdatedAt:dashboard.dataUpdatedAt,period:{startDate:detailed.startDate,endDate:detailed.endDate},totals:manifest.totals.google,pages:detailed.pages,queries:detailed.queries,pageQueries:detailed.pageQueries??[],pageQueriesAvailable:!!detailed.coverage?.pageQueries,
   note:'Performance gilt für das volle Exportfenster, nicht als aktueller Indexierungsnachweis. Keine Query-Seiten-Paare; globale Queries werden keiner URL zugeordnet.'}};
 }
 export const performanceFor=(evidence,route)=>evidence.performance.pages.find(p=>p.page===route)||null;

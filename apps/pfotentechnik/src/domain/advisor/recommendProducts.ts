@@ -99,9 +99,7 @@ const requirementState = (product: AdvisorProduct, r: AdvisorRequirement, pool: 
   } else passes = value === r.desired;
   return passes ? 'pass' : 'unsupported';
 };
-const recommendDecisionProducts = (products: AdvisorProduct[], session: AdvisorSession): AdvisorDecisionMatch[] => {
-  const category = session.category === 'gps' ? 'gps-tracker' : 'trinkbrunnen';
-  const selected = products.filter(p => p.category === category);
+export const recommendAdvisorCandidates = (selected: AdvisorProduct[], session: Pick<AdvisorSession, 'requirements' | 'preferences'> & { answers: { priorities: string[] } }): AdvisorDecisionMatch[] => {
   const eligible = selected.filter(p => session.requirements.every(r => requirementState(p, r, selected) !== 'unsupported'));
   return selected.map((product): AdvisorDecisionMatch => {
     const match: AdvisorDecisionMatch = { product, status: 'pass', reasons: [], cautions: [...(product.decisionCautions ?? [])], exclusions: [], preferenceMatches: [], unknowns: [], unresolvedRequirements: [], failedRequirements: [] };
@@ -142,6 +140,9 @@ const recommendDecisionProducts = (products: AdvisorProduct[], session: AdvisorS
       || a.product.slug.localeCompare(b.product.slug);
   });
 };
+const recommendDecisionProducts = (products: AdvisorProduct[], session: AdvisorSession): AdvisorDecisionMatch[] =>
+  recommendAdvisorCandidates(products.filter(p => p.category === (session.category === 'gps' ? 'gps-tracker' : 'trinkbrunnen')), session);
+
 export function recommendAdvisorProducts(products: AdvisorProduct[], answers: AdvisorAnswers): AdvisorMatch[];
 export function recommendAdvisorProducts(products: AdvisorProduct[], session: AdvisorSession): AdvisorDecisionMatch[];
 export function recommendAdvisorProducts(products: AdvisorProduct[], input: AdvisorAnswers | AdvisorSession): AdvisorMatch[] | AdvisorDecisionMatch[] {

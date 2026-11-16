@@ -1,0 +1,22 @@
+---
+import GiftIcon from './GiftIcon.astro';
+import {distinctiveGiftStrength} from '../../domain/gift-guide/transport.ts';
+const {product:p,preview=false,lead=false,peers=[]}=Astro.props;
+const distinct=distinctiveGiftStrength(p,peers);
+const date=p.checkedAt?new Date(p.checkedAt).toLocaleDateString('de-DE'):null;
+---
+<article class:list={['gift-card',{'gift-card--lead':lead}]} data-gift-card={p.slug}>
+ <div class="gift-card__body">
+  <div class="gift-card__topline"><span class="gift-card__position" data-card-position>{lead?(preview?'Ein erster Einstieg':'Erste Empfehlung'):'Auch einen Blick wert'}</span><span class="gift-card__category" data-card-category>{p.categoryLabel}</span></div>
+  <h3><a href={p.route} data-card-title>{p.title}</a></h3>
+  <p class="gift-card__fit" data-fit-reason>{preview?'Eine Idee zum Kennenlernen. Der Finder prüft deine Anforderungen.':''}</p>
+  <p class="gift-card__verification" data-gift-verification hidden></p>
+  <div class="gift-card__decision"><div><h4><GiftIcon name="check" size={17}/>Darum ansehen</h4><ul data-card-strengths>{(lead?p.strengths:[distinct].filter(Boolean)).map((text:string)=><li>{text}</li>)}</ul></div><div><h4>Vor dem Schenken</h4><ul data-card-weaknesses>{p.weaknesses.slice(0,1).map((text:string)=><li>{text}</li>)}</ul></div></div>
+  <p class="gift-card__service" data-card-service>{p.subscriptionLabel}</p>
+  <div class="gift-card__price"><strong data-card-price>{p.priceLabel}</strong><small data-card-price-date>{p.price!==null&&date?`Preisstand ${date} · Versand ggf. zusätzlich`:'Kein aktueller Preisbeleg'}</small></div>
+  <a class="gift-button gift-button--primary" href={p.route} data-card-product>{lead?'Produkt & Bedingungen':'Zum Modell'} <GiftIcon name="arrow" size={18}/></a>
+  <details class="gift-card__details"><summary>Details & Einordnung <GiftIcon name="chevron" size={18}/></summary><p data-card-recommendation>{p.recommendation}</p><ul data-card-further-strengths>{(!lead?p.strengths.filter((value:string)=>value!==distinct):[]).map((text:string)=><li>{text}</li>)}</ul><ul data-card-further-cautions>{p.weaknesses.slice(1).map((text:string)=><li>{text}</li>)}</ul><p class="gift-card__details-service" data-card-detail-service>{p.subscriptionLabel}</p><dl data-card-technical>{p.technical.map((f:any)=><div><dt>{f.label}: <strong>{f.value}</strong></dt><dd>{f.consequence}</dd></div>)}</dl><p data-card-basis>Bewertungen gelten innerhalb des jeweiligen Produkttyps. {p.reviewBasis}</p></details>
+  <div class="gift-card__rating"><span data-card-review>{p.reviewLabel}</span><strong><span data-card-score>{p.score}</span> <small>/ 100</small></strong></div>
+  <div class="gift-card__secondary"><button type="button" class="gift-compare-toggle" data-compare-toggle={p.slug} aria-pressed="false">＋ Vergleichen</button><a href={p.offerHref} rel={p.offerRel} target="_blank" data-card-merchant>Beim Händler prüfen ↗<span class="gift-sr-only"> (neues Fenster, Affiliate-Link)</span></a></div>
+ </div>
+</article>

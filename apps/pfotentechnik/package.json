@@ -238,7 +238,13 @@
     "check:product-freshness": "node scripts/product-freshness/report.mjs --check",
     "report:decision-consequences": "node scripts/decision-consequences/report.mjs",
     "check:decision-consequences": "node scripts/decision-consequences/report.mjs --check",
-    "test:decision-consequences": "node --test test/decision-consequences-35.9.test.mjs"
+    "test:decision-consequences": "node --test test/decision-consequences-35.9.test.mjs",
+    "report:indexation": "node scripts/indexation/report.mjs",
+    "check:indexation": "node scripts/indexation/verify.mjs",
+    "test:indexation": "node --test test/indexation-improvements-36.1.test.mjs",
+    "test:gift-guide": "node --test test/gift-guide-37.0.test.mjs test/gift-guide-37.1.test.mjs",
+    "check:gift-guide": "node scripts/gift-guide/verify-37.1.mjs",
+    "qa:gift-guide": "node scripts/gift-guide/visual-37.1.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

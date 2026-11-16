@@ -1,0 +1,35 @@
+// Exactly four fullpage screenshots of the existing SEO cockpit. Read-only UI.
+import fs from 'node:fs';import path from 'node:path';import os from 'node:os';import http from 'node:http';import assert from 'node:assert/strict';import {spawn} from 'node:child_process';import {createHash} from 'node:crypto';
+import {app} from './scan.mjs';
+const dist=path.join(app,'dist'),output=path.join(app,'reports/indexation-improvements-36.1-qa');
+const expected=JSON.parse(fs.readFileSync(path.join(app,'src/data/seo/indexation-dashboard.json')));
+const mime={'.html':'text/html','.js':'text/javascript','.css':'text/css','.webp':'image/webp','.svg':'image/svg+xml','.woff2':'font/woff2'};
+const server=http.createServer((req,res)=>{const pathname=new URL(req.url,'http://localhost').pathname;const file=path.resolve(dist,'.'+decodeURIComponent(pathname)+(pathname.endsWith('/')?'index.html':''));if(!file.startsWith(dist+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile()){res.writeHead(404);res.end();return}res.setHeader('Content-Type',mime[path.extname(file)]??'application/octet-stream');fs.createReadStream(file).pipe(res)});
+const profile=fs.mkdtempSync(path.join(os.tmpdir(),'pt361-chrome-')),sleep=ms=>new Promise(r=>setTimeout(r,ms));let chrome,ws;
+try{
+ await new Promise((resolve,reject)=>{server.once('error',reject);server.listen(0,'127.0.0.1',resolve)});fs.mkdirSync(output,{recursive:true});
+ const base=`http://127.0.0.1:${server.address().port}`;
+ chrome=spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',['--headless','--disable-gpu','--no-first-run','--no-default-browser-check','--remote-debugging-port=0',`--user-data-dir=${profile}`],{stdio:'ignore'});
+ const portFile=path.join(profile,'DevToolsActivePort');for(let i=0;i<100&&!fs.existsSync(portFile);i++)await sleep(100);assert.ok(fs.existsSync(portFile));
+ const port=fs.readFileSync(portFile,'utf8').split('\n')[0],target=await(await fetch(`http://127.0.0.1:${port}/json/new?about:blank`,{method:'PUT'})).json();ws=new WebSocket(target.webSocketDebuggerUrl);await new Promise((resolve,reject)=>{ws.addEventListener('open',resolve,{once:true});ws.addEventListener('error',reject,{once:true})});
+ let id=0;const pending=new Map(),exceptions=[];
+ ws.addEventListener('message',event=>{const m=JSON.parse(event.data);if(m.method==='Runtime.exceptionThrown')exceptions.push(m.params.exceptionDetails.text);const p=pending.get(m.id);if(p){pending.delete(m.id);clearTimeout(p.timer);m.error?p.reject(Error(JSON.stringify(m.error))):p.resolve(m.result)}});
+ const send=(method,params={})=>new Promise((resolve,reject)=>{const key=++id,timer=setTimeout(()=>{pending.delete(key);reject(Error(method+': timeout'))},25000);pending.set(key,{resolve,reject,timer});ws.send(JSON.stringify({id:key,method,params}))});
+ const evaluate=async expression=>{const r=await send('Runtime.evaluate',{expression,awaitPromise:true,returnByValue:true});if(r.exceptionDetails)throw Error(JSON.stringify(r.exceptionDetails));return r.result.value};
+ await send('Page.enable');await send('Runtime.enable');const results=[];
+ for(const width of [375,1600])for(const theme of ['light','dark']){
+  await send('Emulation.setDeviceMetricsOverride',{width,height:1000,deviceScaleFactor:1,mobile:width===375});await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-color-scheme',value:theme}]});await send('Page.navigate',{url:base+'/admin/seo/cockpit/'});
+  let ready=false;for(let i=0;i<100;i++){if(await evaluate(`document.readyState==='complete'&&!!document.querySelector('section[data-indexation-overview]')`)){ready=true;break}await sleep(100)}assert.ok(ready,'Indexierungsansicht wurde nicht gerendert');
+  await evaluate(`localStorage.setItem('pfotentechnik-seo-theme','${theme}');document.documentElement.dataset.theme='${theme}'`);
+  const initial=await evaluate(`(()=>{const root=document.querySelector('section[data-indexation-overview]');return {rows:root.querySelectorAll('tr[data-indexation-row]').length,metrics:[...root.querySelectorAll('.seo-metric strong')].map(n=>n.innerText),text:root.innerText,robots:document.querySelector('meta[name=robots]').content}})()`);
+  assert.equal(initial.rows,269);const period=await evaluate(`document.querySelector('[data-period]').textContent`);assert.match(period,/2026-08-15.*2026-11-14/);assert.match(period,/kein Vergleich verfügbar/);assert.equal(Number(initial.metrics[2]),expected.summary.actuallyAddedContextLinks);assert.match(initial.text,/2026-11-02/);assert.match(initial.robots,/noindex/);
+  await evaluate(`(()=>{const i=document.querySelector('[data-indexation-filter]');i.value='satellai';i.dispatchEvent(new Event('input',{bubbles:true}))})()`);
+  const filtered=await evaluate(`({count:document.querySelectorAll('tr[data-indexation-row]:not([hidden])').length,overflow:Math.max(0,document.documentElement.scrollWidth-innerWidth),label:document.querySelector('[data-indexation-count]').innerText})`);assert.ok(filtered.count>0&&filtered.count<269);assert.equal(filtered.overflow,0,'Filteransicht läuft über');
+  await evaluate(`(()=>{const i=document.querySelector('[data-indexation-filter]');i.value='';i.dispatchEvent(new Event('input',{bubbles:true}));document.querySelectorAll('img').forEach(i=>i.loading='eager')})()`);
+  await evaluate(`(async()=>{await document.fonts.ready;for(let y=0;y<document.documentElement.scrollHeight;y+=800){window.scrollTo(0,y);await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)))}await Promise.all([...document.images].map(i=>i.decode().catch(()=>{})));window.scrollTo(0,0)})()`);await sleep(150);
+  const state=await evaluate(`({overflow:Math.max(0,document.documentElement.scrollWidth-innerWidth),brokenImages:[...document.images].filter(i=>i.getAttribute('src')&&(!i.complete||!i.naturalWidth)).map(i=>i.src),theme:document.documentElement.dataset.theme,rows:document.querySelectorAll('tr[data-indexation-row]:not([hidden])').length})`);assert.equal(state.overflow,0);assert.deepEqual(state.brokenImages,[]);assert.equal(state.rows,269);assert.equal(state.theme,theme);
+  const layout=await send('Page.getLayoutMetrics'),height=Math.ceil(layout.cssContentSize.height),shot=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:true,clip:{x:0,y:0,width,height,scale:1}}),buffer=Buffer.from(shot.data,'base64'),file=`indexation-${width}-${theme}.png`;fs.writeFileSync(path.join(output,file),buffer);
+  results.push({width,theme,height,...state,filter:filtered,rows:initial.rows,screenshot:file,sha256:createHash('sha256').update(buffer).digest('hex')});console.log(`${width} ${theme}: passed`);
+ }
+ assert.deepEqual(exceptions,[],'Unerwartete JavaScript-Ausnahme');assert.equal(results.length,4);fs.writeFileSync(path.join(output,'browser.json'),JSON.stringify({route:'/admin/seo/cockpit/',screenshots:4,results,exceptions},null,2)+'\n');
+}finally{ws?.close();if(chrome&&chrome.exitCode===null){chrome.kill('SIGTERM');await Promise.race([new Promise(r=>chrome.once('exit',r)),sleep(2000)])}await new Promise(r=>server.close(r));fs.rmSync(profile,{recursive:true,force:true})}

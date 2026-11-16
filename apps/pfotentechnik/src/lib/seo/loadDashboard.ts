@@ -90,7 +90,7 @@ export type SeoDashboardPayload = {
 
 type JsonObject = Record<string, unknown>;
 
-const resolveDataFile = (name: string): string => {
+export const resolveDataFile = (name: string): string => {
   const candidates = [
     path.resolve(process.cwd(), "src/data/seo", name),
     path.resolve(process.cwd(), "apps/pfotentechnik/src/data/seo", name),

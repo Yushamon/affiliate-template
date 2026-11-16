@@ -29,7 +29,8 @@ type Props = { page: PageEntry; };
 
 export async function getStaticPaths() {
   const pages = await getPages();
-  return pages.map((page) => ({ params: { slug: page.data.slug }, props: { page } satisfies Props }));
+  // Nested collection slugs have their own explicit route component.
+  return pages.filter(page => !page.data.slug.includes("/")).map((page) => ({ params: { slug: page.data.slug }, props: { page } satisfies Props }));
 }
 
 const { page } = Astro.props as Props;
