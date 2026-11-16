@@ -92,6 +92,8 @@
     "test:product-experience-2": "node --experimental-strip-types --test test/product-experience-2.test.mjs",
     "audit:decision-facts": "node scripts/product-experience/audit-decision-facts.mjs",
     "audit:decision-facts:check": "node scripts/product-experience/audit-decision-facts.mjs --check",
+    "integrate:products": "node scripts/product-integration/run.mjs --apply",
+    "check:product-integration": "node scripts/product-integration/run.mjs",
     "test:price-intelligence": "node --test test/price-intelligence.test.mjs",
     "price:audit": "node scripts/price-intelligence/audit.mjs",
     "price:audit:strict": "node scripts/price-intelligence/audit.mjs --strict",
@@ -226,7 +228,11 @@
     "test:production-http": "node --test test/production-http-integrity-34.8.test.mjs",
     "seo:release:prepare": "node scripts/seo/release-preflight.mjs --pre-deploy",
     "seo:release:verify-production": "node scripts/seo/production-http-integrity.mjs",
-    "seo:release:measurement-baseline": "node scripts/seo/record-http-measurement.mjs"
+    "seo:release:measurement-baseline": "node scripts/seo/record-http-measurement.mjs",
+    "integrate:products:media": "node scripts/product-integration/media.mjs",
+    "report:product-integration": "node scripts/product-integration/report.mjs",
+    "check:product-integration:rendered": "node scripts/product-integration/verify.mjs",
+    "test:product-integration": "node --test test/product-integration-35.8.test.mjs test/product-integration-rendered-35.8.test.mjs test/product-consequences-35.6.test.mjs test/product-consequences-rendered-35.6.test.mjs test/decision-facts-35.7.test.mjs test/decision-facts-rendered-35.7.test.mjs test/price-intelligence.test.mjs test/price-availability-integrity.test.mjs test/multi-merchant-commerce.test.mjs test/seo-cockpit-generic-product-operations-30.1.0.test.mjs test/seo-price-editor-stability-1.0.0.test.mjs test/product-experience-2.test.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

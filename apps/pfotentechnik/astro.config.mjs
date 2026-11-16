@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import yaml from "js-yaml";
+import { isPublishedProduct } from "./src/domain/productPublication.mjs";
 
 const appRoot = fileURLToPath(new URL(".", import.meta.url));
 const siteUrl = "https://pfotentechnik.de";
@@ -67,7 +68,7 @@ const addCollection = (collection, getPath) => {
     const data = readFrontmatter(path.join(directory, file.name));
     if (!data?.slug) continue;
     sitemapMetadata.set(normalizePath(getPath(data)), {
-      include: data.seo?.sitemap !== false && data.seo?.noindex !== true,
+      include: (collection !== "products" || isPublishedProduct(data)) && data.seo?.sitemap !== false && data.seo?.noindex !== true,
       lastmod: data.updatedAt ?? data.publishedAt,
       changefreq: data.seo?.changefreq,
       priority: data.seo?.priority

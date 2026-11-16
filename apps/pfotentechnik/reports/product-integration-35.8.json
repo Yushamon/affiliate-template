@@ -1,0 +1,2437 @@
+{
+  "version": "35.8",
+  "asOf": "2026-11-16",
+  "status": "verified-with-unpublished-candidates",
+  "merged": false,
+  "deployed": false,
+  "summary": {
+    "newPublished": 2,
+    "newCandidates": 2,
+    "existingUpdated": 3,
+    "screenshots": 24,
+    "priceRefresh": "7/7 erfolgreich; ursprünglicher DOG-6-Größenfehler durch begrenzte Amazon-Ausnahme behoben"
+  },
+  "reproduction": [
+    "npm run integrate:products:media",
+    "npm run integrate:products",
+    "node scripts/product-integration/run.mjs --refresh",
+    "PFOTENTECHNIK_DRAFT_PREVIEW=1 npm run build -- --outDir /tmp/pt358/preview-dist",
+    "npm run build",
+    "node scripts/product-integration/browser.mjs --draft-dist=/tmp/pt358/preview-dist",
+    "npm run audit:decision-facts",
+    "npm run report:product-integration",
+    "npm run test:product-integration"
+  ],
+  "safeguards": {
+    "experiment35_5": {
+      "renderedDecisionFacts": {
+        "tractive-cat-6-mini": [
+          {
+            "fact": "Akkutechnik und Austausch Integrierter, wiederaufladbarer Akku; Zellchemie und Austausch durch Nutzer in den geprüften modellspezifischen Herstellerangaben nicht eindeutig dokumentiert",
+            "consequence": "Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert."
+          },
+          {
+            "fact": "Abo Erforderlich; ein Abo pro Tracker",
+            "consequence": "Für den realen Preisvergleich zählen die Gesamtkosten über mehrere Jahre, nicht nur der Gerätepreis."
+          },
+          {
+            "fact": "App Tractive GPS App; Android 10 oder neuer, iOS 17 oder neuer",
+            "consequence": "Einstellungen lassen sich aus der Ferne ändern; Einrichtung, Konto und Netzstabilität werden dafür wichtiger."
+          },
+          {
+            "fact": "Akkukapazität 450 mAh",
+            "consequence": "Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert."
+          },
+          {
+            "fact": "Akkulaufzeit Bis zu 7 Tage mit Energiesparzone; bis zu 4 Tage ohne Energiesparzone",
+            "consequence": "Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert."
+          },
+          {
+            "fact": "Stromversorgung Integrierter Akku",
+            "consequence": "Die Angabe zeigt, ob das Gerät am Netz, kabellos oder nur mit einer Backup-Lösung arbeitet und was bei Stromausfall weiterläuft."
+          }
+        ],
+        "tractive-dog-6": [
+          {
+            "fact": "Akkutechnik und Austausch Integrierter, wiederaufladbarer Akku; Zellchemie und Austausch durch Nutzer in den geprüften modellspezifischen Herstellerangaben nicht eindeutig dokumentiert",
+            "consequence": "Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert."
+          },
+          {
+            "fact": "Abo Erforderlich; ein eigenes Abo pro Tracker",
+            "consequence": "Für den realen Preisvergleich zählen die Gesamtkosten über mehrere Jahre, nicht nur der Gerätepreis."
+          },
+          {
+            "fact": "App Tractive GPS App; Android 10 oder neuer, iOS/iPadOS 17 oder neuer",
+            "consequence": "Einstellungen lassen sich aus der Ferne ändern; Einrichtung, Konto und Netzstabilität werden dafür wichtiger."
+          },
+          {
+            "fact": "Akkulaufzeit Laut Tractive bis zu 14 Tage mit Energiesparzonen; bis zu 6 Tage ohne",
+            "consequence": "Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert."
+          },
+          {
+            "fact": "Stromversorgung Integrierter Akku; Laden über das mitgelieferte USB-C-Ladekabel",
+            "consequence": "Die Angabe zeigt, ob das Gerät am Netz, kabellos oder nur mit einer Backup-Lösung arbeitet und was bei Stromausfall weiterläuft."
+          },
+          {
+            "fact": "Akku Integrierter Akku, laut Support 930 mAh",
+            "consequence": "Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert."
+          }
+        ],
+        "tractive-dog-6-xl": [
+          {
+            "fact": "Akkukapazität 2150 mAh laut Tractive",
+            "consequence": "Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert."
+          },
+          {
+            "fact": "Akkutechnik und Austausch Integrierter, wiederaufladbarer Akku; Zellchemie und Austausch durch Nutzer in den geprüften modellspezifischen Herstellerangaben nicht eindeutig dokumentiert",
+            "consequence": "Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert."
+          },
+          {
+            "fact": "Abo Erforderlich; ein eigenes Abo pro Tracker",
+            "consequence": "Für den realen Preisvergleich zählen die Gesamtkosten über mehrere Jahre, nicht nur der Gerätepreis."
+          },
+          {
+            "fact": "App Tractive GPS App; Android 10 oder neuer, iOS/iPadOS 17 oder neuer",
+            "consequence": "Einstellungen lassen sich aus der Ferne ändern; Einrichtung, Konto und Netzstabilität werden dafür wichtiger."
+          },
+          {
+            "fact": "Akkulaufzeit Bis zu 42 Tage mit Energiesparzonen; bis zu 20 Tage ohne",
+            "consequence": "Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert."
+          },
+          {
+            "fact": "Stromversorgung Integrierter Akku; Laden über das mitgelieferte USB-C-Ladekabel",
+            "consequence": "Die Angabe zeigt, ob das Gerät am Netz, kabellos oder nur mit einer Backup-Lösung arbeitet und was bei Stromausfall weiterläuft."
+          }
+        ]
+      },
+      "protectedPages": 20,
+      "protectedIncomingEdges": 205,
+      "unchangedSources": 215,
+      "products": [
+        {
+          "slug": "petlibro-granary-2-vision-duo",
+          "published": false,
+          "blockers": [
+            "Die zugehörigen Kamera-/Mehrtiervergleiche enthalten derzeit weniger als zehn fachlich zugeordnete sichtbare Produkte; keine künstlichen Füllprodukte ergänzt."
+          ],
+          "offers": [
+            {
+              "merchant": "petlibro",
+              "current": 289.99,
+              "currency": "EUR",
+              "availability": "available",
+              "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=77942&awinaffid=2987821&ued=https%3A%2F%2Fde.petlibro.com%2Fproducts%2Fautomatischer-futterautomat-der-granary-2-serie%3Fvariant%3D54477261275502&clickref=petlibro-granary-2-vision-duo_product-commerce_product",
+              "canLink": true
+            }
+          ]
+        },
+        {
+          "slug": "petlibro-granary-2",
+          "published": false,
+          "blockers": [
+            "Die Aufnahme in den bestehenden Katzenvergleich verändert einen eingehenden Link zur Kontrollseite Pawsync im geschützten Experiment 35.5; bis zum Ende des Experiments keine globale Freischaltung."
+          ],
+          "offers": [
+            {
+              "merchant": "petlibro",
+              "current": 169.99,
+              "currency": "EUR",
+              "availability": "available",
+              "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=77942&awinaffid=2987821&ued=https%3A%2F%2Fde.petlibro.com%2Fproducts%2Fautomatischer-futterautomat-der-granary-2-serie%3Fvariant%3D54477261209966&clickref=petlibro-granary-2_product-commerce_product",
+              "canLink": true
+            }
+          ]
+        },
+        {
+          "slug": "mova-suretrack-pro",
+          "published": true,
+          "blockers": [],
+          "offers": [
+            {
+              "merchant": "de.mova.tech",
+              "current": 79,
+              "currency": "EUR",
+              "availability": "available",
+              "affiliateUrl": "https://de.mova.tech/products/suretrack-pro-gps-tiertracker",
+              "canLink": true
+            }
+          ]
+        },
+        {
+          "slug": "satellai-collar-go",
+          "published": true,
+          "blockers": [],
+          "offers": [
+            {
+              "merchant": "global.satellai.com",
+              "current": 67,
+              "currency": "EUR",
+              "availability": "unknown",
+              "affiliateUrl": "https://global.satellai.com/en-eu/products/satellai-collar-go-smart-dog-gps-tracker?variant=53484972802332",
+              "canLink": true
+            }
+          ]
+        },
+        {
+          "slug": "tractive-dog-6",
+          "published": true,
+          "blockers": [],
+          "offers": [
+            {
+              "merchant": "amazon",
+              "current": 67.99,
+              "currency": "EUR",
+              "availability": "unknown",
+              "affiliateUrl": "https://amzn.to/44NGoGb",
+              "canLink": true
+            }
+          ]
+        },
+        {
+          "slug": "invoxia-biotracker-2026",
+          "published": true,
+          "blockers": [],
+          "offers": [
+            {
+              "merchant": "amazon",
+              "current": 219,
+              "currency": "EUR",
+              "availability": "unknown",
+              "affiliateUrl": "https://www.amazon.de/dp/B0H4QZMTSY?tag=yusha0f-21",
+              "canLink": true
+            }
+          ]
+        },
+        {
+          "slug": "petlibro-granary-2-vision",
+          "published": true,
+          "blockers": [],
+          "offers": [
+            {
+              "merchant": "de.petlibro.com",
+              "current": 269.99,
+              "currency": "EUR",
+              "availability": "unknown",
+              "affiliateUrl": "https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie?variant=54477261242734",
+              "canLink": false
+            },
+            {
+              "merchant": "petlibro",
+              "current": 269.99,
+              "currency": "EUR",
+              "availability": "available",
+              "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=77942&awinaffid=2987821&ued=https%3A%2F%2Fde.petlibro.com%2Fproducts%2Fautomatischer-futterautomat-der-granary-2-serie%3Fvariant%3D54477261242734&clickref=petlibro-granary-2-vision_product-commerce_product",
+              "canLink": true
+            }
+          ]
+        }
+      ],
+      "comparisons": {
+        "beste-gps-tracker-fuer-hunde": {
+          "newProducts": [
+            "mova-suretrack-pro",
+            "satellai-collar-go"
+          ],
+          "visibleProducts": [
+            "tractive-dog-6",
+            "weenect-xs",
+            "paj-pet-finder-4g-mini",
+            "tractive-dog-6-xl",
+            "weenect-xt",
+            "garmin-alpha-t-20",
+            "enabot-rola-pettracker",
+            "invoxia-biotracker-2026",
+            "prothelis-area-pets",
+            "pawfit-3",
+            "mova-suretrack-pro",
+            "satellai-collar-go"
+          ]
+        }
+      }
+    },
+    "decisionFacts": "35.6-Fallback erhalten; 73 Produkte/437 Texte im Content-Speicher, keine Freigaben aktiviert.",
+    "ratings": "Keine Preisabhängigkeit; Scores der drei bestehenden Produkte unverändert.",
+    "imageRights": "Betreiberfreigabe für direkten Download dokumentiert. Keine Amazon-API-Berechtigung oder Drittlizenz behauptet. Keine Zugangssperren umgangen."
+  },
+  "researchOnly": [
+    {
+      "title": "PETLIBRO Granary 2 X",
+      "model": "AF305",
+      "status": "research-only",
+      "publicationAllowed": false,
+      "reason": "Expliziter Betreiberauftrag: bis zur gesicherten Marktverfügbarkeit nur Recherchekandidat. Deutsche Produktseite bezeichnet das Modell als bald verfügbar; keine bestätigte verkaufbare X-SKU in den drei aktuellen DE-Varianten.",
+      "source": {
+        "source": "petlibro-de",
+        "url": "https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie",
+        "accessedAt": "2026-11-16T10:02:37.687Z",
+        "assertion": "Serienvergleich nennt Granary 2 X; keine Freigabe zur Neuanlage.",
+        "fields": [
+          "identity",
+          "publication"
+        ],
+        "sourceType": "manufacturer"
+      }
+    }
+  ],
+  "products": [
+    {
+      "slug": "petlibro-granary-2-vision-duo",
+      "title": "PETLIBRO Granary 2 Vision Duo",
+      "publicationStatus": "unpublished-candidate",
+      "url": "https://pfotentechnik.de/produkt/petlibro-granary-2-vision-duo/",
+      "urlExistsInProductionBuild": false,
+      "model": "AF205-D; Handbuch PLAF205 / 6216205",
+      "mpn": "PL-AF205-32B",
+      "amazon": {
+        "asin": null,
+        "productLink": null,
+        "missingReason": "Amazon.de gezielt geprüft; Suchantworten nicht auswertbar/Blockseite. Keine bestätigte exakte ASIN gefunden. Dies beweist nicht, dass keine Amazon-Listung existiert."
+      },
+      "media": {
+        "source": "manufacturer-product-image",
+        "identity": "AF205-D / PL-AF205-32B",
+        "pageUrl": "https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie?variant=54477261275502",
+        "authorization": {
+          "amazonApiConfigured": false,
+          "authorizationBasis": "Explicit operator exception in this conversation permits direct public product-image downloads, including Amazon scraping.",
+          "authorizationScope": "Exact-model Amazon images; direct publicly reachable manufacturer product images as fallback where Amazon search cannot verify a matching ASIN.",
+          "thirdPartyLicenseClaimed": false,
+          "aiImagesGenerated": false
+        },
+        "provenanceFile": "src/assets/images/products/petlibro-granary-2-vision-duo/media-provenance-35.8.json",
+        "assets": [
+          {
+            "file": "hero.webp",
+            "sourceUrl": "https://de.petlibro.com/cdn/shop/files/PDP-AF205D-Carousel-01_5198b791-32ed-4306-89b1-0f39a81cea20.png?v=1790162947",
+            "accessedAt": "2026-11-16T10:30:34.855Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "AF205-D / PL-AF205-32B",
+            "originalSha256": "c28eec796b25ed2d301ab970334e76e3ead6cbd0019225cf45394666943f1686",
+            "sha256": "835eb1cc8f9941024ff243dc26cee3c41019bb0b30ba461ce538608227056f62",
+            "bytes": 41166,
+            "width": 1200,
+            "height": 1280
+          },
+          {
+            "file": "thumbnail.webp",
+            "sourceUrl": "https://de.petlibro.com/cdn/shop/files/PDP-AF205D-Carousel-01_5198b791-32ed-4306-89b1-0f39a81cea20.png?v=1790162947",
+            "accessedAt": "2026-11-16T10:30:34.855Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "AF205-D / PL-AF205-32B",
+            "originalSha256": "c28eec796b25ed2d301ab970334e76e3ead6cbd0019225cf45394666943f1686",
+            "sha256": "18c84946e3af40cc0bfa39b5c4b2161b50eeaaf883476f5faf90d05dec662716",
+            "bytes": 12516,
+            "width": 480,
+            "height": 512
+          },
+          {
+            "file": "comparison.webp",
+            "sourceUrl": "https://de.petlibro.com/cdn/shop/files/PDP-AF205D-Carousel-01_5198b791-32ed-4306-89b1-0f39a81cea20.png?v=1790162947",
+            "accessedAt": "2026-11-16T10:30:34.855Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "AF205-D / PL-AF205-32B",
+            "originalSha256": "c28eec796b25ed2d301ab970334e76e3ead6cbd0019225cf45394666943f1686",
+            "sha256": "9cee3fdcc1f35049a9a81799a026b641c5bd026cf535f0a71230514c3bc45a2d",
+            "bytes": 20856,
+            "width": 720,
+            "height": 768
+          },
+          {
+            "file": "gallery-1.webp",
+            "sourceUrl": "https://de.petlibro.com/cdn/shop/files/PDP-AF205D-Carousel-05.png?v=1789955169",
+            "accessedAt": "2026-11-16T10:30:35.155Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "AF205-D / PL-AF205-32B",
+            "originalSha256": "8ffbf2958e1cf1b70d7dcb78f25a8fb7bb546855d11c7a06559ddd97a1d0d6b5",
+            "sha256": "0cb37fc7d812f18ea4c9c445ae057d5655521a65a7f1e721a94144d8c308ae15",
+            "bytes": 59134,
+            "width": 1200,
+            "height": 1280
+          },
+          {
+            "file": "gallery-2.webp",
+            "sourceUrl": "https://de.petlibro.com/cdn/shop/files/PDP-AF205D-Carousel-03.png?v=1789955170",
+            "accessedAt": "2026-11-16T10:30:35.533Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "AF205-D / PL-AF205-32B",
+            "originalSha256": "4c4fb6ac461b9823674c2ee54a998f3643abe0df98340e0a6d439c5db47b85d6",
+            "sha256": "1aada392f7f33a286e990b507068a1a4b3355a574e204caa697d2c0fd46918a9",
+            "bytes": 120950,
+            "width": 1200,
+            "height": 1280
+          },
+          {
+            "file": "gallery-3.webp",
+            "sourceUrl": "https://de.petlibro.com/cdn/shop/files/PDP-AF205D-Carousel-07.png?v=1789955166",
+            "accessedAt": "2026-11-16T10:30:35.751Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "AF205-D / PL-AF205-32B",
+            "originalSha256": "edbd717f034174341d643c8272063f85fcbb4f72a606b744e247576e26b69197",
+            "sha256": "23df9b2b832f68776444c16c2c29dcea2b1c12418aa741baf381f255ec9eb097",
+            "bytes": 54526,
+            "width": 1200,
+            "height": 1280
+          }
+        ]
+      },
+      "prices": [
+        {
+          "merchant": "petlibro",
+          "price": 289.99,
+          "currency": "EUR",
+          "availability": "available",
+          "destination": "https://www.awin1.com/cread.php?awinmid=77942&awinaffid=2987821&ued=https%3A%2F%2Fde.petlibro.com%2Fproducts%2Fautomatischer-futterautomat-der-granary-2-serie%3Fvariant%3D54477261275502&clickref=petlibro-granary-2-vision-duo_product-commerce_product",
+          "affiliate": true,
+          "checkedAt": "2026-11-16T10:39:59.126Z",
+          "source": {
+            "id": "petlibro-official",
+            "label": "PETLIBRO",
+            "type": "merchant",
+            "url": "https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie?variant=54477261275502"
+          }
+        }
+      ],
+      "cockpit": {
+        "url": "/admin/seo/products/petlibro-granary-2-vision-duo/",
+        "sharedPriceService": true,
+        "manualOverride": true,
+        "automaticRefresh": true,
+        "affiliateAndOffersEditable": true,
+        "criteriaSourcesStatusDateEditable": true,
+        "persistence": "Atomarer bestehender Frontmatter-Writer; Veröffentlichung statischer Ansichten beim nächsten Build.",
+        "evidence": "test/product-integration-35.8.test.mjs; Live-Refresh 7/7 erfolgreich"
+      },
+      "evaluation": {
+        "score": 65,
+        "rating": 3.3,
+        "criteriaCount": 4,
+        "source": "criteria",
+        "ratings": {
+          "bedienung": 3.5,
+          "portionierung": 3.5,
+          "reinigung": 3,
+          "folgekosten": 3
+        },
+        "methodology": "Redaktionelle Eignungsbewertung, kein Praxistest. Bedienung 3,5/5 für App-Fütterung mit Einrichtungsaufwand; Portionierung 3,5/5 für dokumentierte Wiegefunktion ohne eigene Präzisionsmessung; Reinigung 3,0/5 wegen Napf, Auslass und Behälter; Folgekosten 3,0/5 wegen optionaler Cloud-/Care-Funktionen. Vier Kriterien gleich gewichtet; keine Preisvariable und keine fremden Testnoten als eigene Messung.",
+        "testedHandsOn": false,
+        "editorialStatus": "required",
+        "limitations": "Konservative Datenbewertung; keine eigene Messung und keine belastbaren Langzeitdaten. PETLIBRO AF105/AF205-D: kein unabhängiger exakter Praxistest gesichert."
+      },
+      "sources": [
+        {
+          "source": "petlibro-variants",
+          "url": "https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie.js",
+          "accessedAt": "2026-11-16T10:02:36.754Z",
+          "assertion": "DE-Katalog trennt AF105 und AF205-D über unterschiedliche SKU und Varianten-ID.",
+          "fields": [
+            "mpn",
+            "offers"
+          ],
+          "sourceType": "officialStore"
+        },
+        {
+          "source": "manual-af205d",
+          "url": "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/Petlibro_Granary_vision_dual-AF205-D-user_manual.pdf?v=1781336481",
+          "accessedAt": "2026-11-16T10:07:06.948Z",
+          "assertion": "Modellspezifische Anleitung: Modellcode, 5 Liter, WLAN-Bänder, Abmessungen, Masse und Netzteil. Die Tabelle wurde visuell geprüft.",
+          "fields": [
+            "model",
+            "specs",
+            "experience"
+          ],
+          "sourceType": "manual"
+        },
+        {
+          "source": "petlibro-models",
+          "url": "https://petlibro.com/pages/how-is-granary-2af105-different-from-the-other-granary-2-models",
+          "accessedAt": "2026-11-16T10:02:37.609Z",
+          "assertion": "AF105 hat keine Kamera und keine Tiererkennung; AF205-D ist die Dual-Bowl-Kameravariante. Herstellerseite, kein unabhängiger Test.",
+          "fields": [
+            "decision",
+            "review",
+            "comparisonFilters"
+          ],
+          "sourceType": "manufacturer"
+        }
+      ],
+      "newInternalLinks": {
+        "public": false,
+        "manufacturer": "/hersteller/petlibro/",
+        "category": "/smarte-futterautomaten/",
+        "alternatives": [
+          "petlibro-granary-2-vision",
+          "petkit-yumshare-dual-hopper"
+        ],
+        "comparisons": [
+          "beste-futterautomaten-mit-kamera",
+          "beste-futterautomaten-fuer-mehrtierhaushalte",
+          "beste-futterautomaten-fuer-zwei-katzen"
+        ]
+      },
+      "comparisonStatus": [],
+      "screenshots": [
+        {
+          "file": "petlibro-granary-2-vision-duo-375-light.png",
+          "height": 11633,
+          "sha256": "74e153565bbbfdf13394507a9b050307ad2ab4a298819bda35d1e0b44ce2dac0",
+          "path": "product-integration-35.8/petlibro-granary-2-vision-duo-375-light.png",
+          "width": 375,
+          "theme": "light dark",
+          "route": "/admin/seo/products/petlibro-granary-2-vision-duo/preview/"
+        },
+        {
+          "file": "petlibro-granary-2-vision-duo-375-dark.png",
+          "height": 11633,
+          "sha256": "101189ff9f1fb24a8163fa31f1783edcdda14a41854e6ca1e1ce6d3c3c71f5b9",
+          "path": "product-integration-35.8/petlibro-granary-2-vision-duo-375-dark.png",
+          "width": 375,
+          "theme": "light dark",
+          "route": "/admin/seo/products/petlibro-granary-2-vision-duo/preview/"
+        },
+        {
+          "file": "petlibro-granary-2-vision-duo-1600-light.png",
+          "height": 7221,
+          "sha256": "48db90096580978b1036ebadc58a9da42f0cc2e05c26d71eb4af98b984ed7766",
+          "path": "product-integration-35.8/petlibro-granary-2-vision-duo-1600-light.png",
+          "width": 1600,
+          "theme": "light dark",
+          "route": "/admin/seo/products/petlibro-granary-2-vision-duo/preview/"
+        },
+        {
+          "file": "petlibro-granary-2-vision-duo-1600-dark.png",
+          "height": 7221,
+          "sha256": "60eb1f7689ed6220a0ca038bbee3b025e488701fc5c95783b3cd3bba50cec343",
+          "path": "product-integration-35.8/petlibro-granary-2-vision-duo-1600-dark.png",
+          "width": 1600,
+          "theme": "light dark",
+          "route": "/admin/seo/products/petlibro-granary-2-vision-duo/preview/"
+        }
+      ],
+      "functionalQA": {
+        "cases": 4,
+        "overflow": "passed",
+        "images": "passed",
+        "gallery": "open-next-close passed",
+        "priceCTA": "passed",
+        "canonicalRobots": "passed"
+      },
+      "blockers": [
+        "Die zugehörigen Kamera-/Mehrtiervergleiche enthalten derzeit weniger als zehn fachlich zugeordnete sichtbare Produkte; keine künstlichen Füllprodukte ergänzt."
+      ]
+    },
+    {
+      "slug": "petlibro-granary-2",
+      "title": "PETLIBRO Granary 2",
+      "publicationStatus": "unpublished-candidate",
+      "url": "https://pfotentechnik.de/produkt/petlibro-granary-2/",
+      "urlExistsInProductionBuild": false,
+      "model": "AF105; Handbuch PLAF105 / 6216105",
+      "mpn": "PL-AF105-31B",
+      "amazon": {
+        "asin": null,
+        "productLink": null,
+        "missingReason": "Amazon.de gezielt geprüft; Suchantworten nicht auswertbar/Blockseite. Keine bestätigte exakte ASIN gefunden. Dies beweist nicht, dass keine Amazon-Listung existiert."
+      },
+      "media": {
+        "source": "manufacturer-product-image",
+        "identity": "AF105 / PL-AF105-31B",
+        "pageUrl": "https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie?variant=54477261209966",
+        "authorization": {
+          "amazonApiConfigured": false,
+          "authorizationBasis": "Explicit operator exception in this conversation permits direct public product-image downloads, including Amazon scraping.",
+          "authorizationScope": "Exact-model Amazon images; direct publicly reachable manufacturer product images as fallback where Amazon search cannot verify a matching ASIN.",
+          "thirdPartyLicenseClaimed": false,
+          "aiImagesGenerated": false
+        },
+        "provenanceFile": "src/assets/images/products/petlibro-granary-2/media-provenance-35.8.json",
+        "assets": [
+          {
+            "file": "hero.webp",
+            "sourceUrl": "https://cdn.shopify.com/s/files/1/0654/1544/6770/files/PDP-AF105-Carousel-01_5458831a-6305-432c-bd51-c14e25179880.png?v=1789895587",
+            "accessedAt": "2026-11-16T10:30:37.029Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "AF105 / PL-AF105-31B",
+            "originalSha256": "c1f386771009190767762096ab4b39bb2d9972f8829836701a6886fc7c2cef05",
+            "sha256": "8d335d7f68935b20d9e8938189a4b9ff9d54f14f1a63a90fad458e1fc94d4633",
+            "bytes": 36864,
+            "width": 1200,
+            "height": 1280
+          },
+          {
+            "file": "thumbnail.webp",
+            "sourceUrl": "https://cdn.shopify.com/s/files/1/0654/1544/6770/files/PDP-AF105-Carousel-01_5458831a-6305-432c-bd51-c14e25179880.png?v=1789895587",
+            "accessedAt": "2026-11-16T10:30:37.029Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "AF105 / PL-AF105-31B",
+            "originalSha256": "c1f386771009190767762096ab4b39bb2d9972f8829836701a6886fc7c2cef05",
+            "sha256": "cbf008d5198d16aece777bdfdf9677b36a4077546cb395ee5f920457971562c2",
+            "bytes": 10146,
+            "width": 480,
+            "height": 512
+          },
+          {
+            "file": "comparison.webp",
+            "sourceUrl": "https://cdn.shopify.com/s/files/1/0654/1544/6770/files/PDP-AF105-Carousel-01_5458831a-6305-432c-bd51-c14e25179880.png?v=1789895587",
+            "accessedAt": "2026-11-16T10:30:37.029Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "AF105 / PL-AF105-31B",
+            "originalSha256": "c1f386771009190767762096ab4b39bb2d9972f8829836701a6886fc7c2cef05",
+            "sha256": "c715f6a8667ac45cc44db46f7e634136063af625cb742444a1939f089a849d6e",
+            "bytes": 18432,
+            "width": 720,
+            "height": 768
+          },
+          {
+            "file": "gallery-1.webp",
+            "sourceUrl": "https://cdn.shopify.com/s/files/1/0654/1544/6770/files/PDP-AF105-Carousel-01_5458831a-6305-432c-bd51-c14e25179880.png?v=1789895587",
+            "accessedAt": "2026-11-16T10:30:37.029Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "AF105 / PL-AF105-31B",
+            "originalSha256": "c1f386771009190767762096ab4b39bb2d9972f8829836701a6886fc7c2cef05",
+            "sha256": "8d335d7f68935b20d9e8938189a4b9ff9d54f14f1a63a90fad458e1fc94d4633",
+            "bytes": 36864,
+            "width": 1200,
+            "height": 1280
+          },
+          {
+            "file": "gallery-2.webp",
+            "sourceUrl": "https://cdn.shopify.com/s/files/1/0654/1544/6770/files/PDP-AF105-Carousel-03.png?v=1789955275",
+            "accessedAt": "2026-11-16T10:30:37.756Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "AF105 / PL-AF105-31B",
+            "originalSha256": "7c0f1e0ad373ca1273c0bd2b0ab5de8d0eec6a6243093f93e493fac2b4e36557",
+            "sha256": "4ce604b1866f4ae0fb383d325a5a50806d8c714625e9cad53f335aae0bc7bf3c",
+            "bytes": 63572,
+            "width": 1200,
+            "height": 1280
+          },
+          {
+            "file": "gallery-3.webp",
+            "sourceUrl": "https://cdn.shopify.com/s/files/1/0654/1544/6770/files/PDP-AF105-Carousel-05.png?v=1789955273",
+            "accessedAt": "2026-11-16T10:30:38.674Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "AF105 / PL-AF105-31B",
+            "originalSha256": "9600ca39379345155dde9d298471820e4116d628cf36bc55d94d2afdb94462e3",
+            "sha256": "eaa167f07881816e675d5211ce07824c912256fe31703aaef89aa4f862d92f3d",
+            "bytes": 52628,
+            "width": 1200,
+            "height": 1280
+          }
+        ]
+      },
+      "prices": [
+        {
+          "merchant": "petlibro",
+          "price": 169.99,
+          "currency": "EUR",
+          "availability": "available",
+          "destination": "https://www.awin1.com/cread.php?awinmid=77942&awinaffid=2987821&ued=https%3A%2F%2Fde.petlibro.com%2Fproducts%2Fautomatischer-futterautomat-der-granary-2-serie%3Fvariant%3D54477261209966&clickref=petlibro-granary-2_product-commerce_product",
+          "affiliate": true,
+          "checkedAt": "2026-11-16T10:39:59.323Z",
+          "source": {
+            "id": "petlibro-official",
+            "label": "PETLIBRO",
+            "type": "merchant",
+            "url": "https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie?variant=54477261209966"
+          }
+        }
+      ],
+      "cockpit": {
+        "url": "/admin/seo/products/petlibro-granary-2/",
+        "sharedPriceService": true,
+        "manualOverride": true,
+        "automaticRefresh": true,
+        "affiliateAndOffersEditable": true,
+        "criteriaSourcesStatusDateEditable": true,
+        "persistence": "Atomarer bestehender Frontmatter-Writer; Veröffentlichung statischer Ansichten beim nächsten Build.",
+        "evidence": "test/product-integration-35.8.test.mjs; Live-Refresh 7/7 erfolgreich"
+      },
+      "evaluation": {
+        "score": 65,
+        "rating": 3.3,
+        "criteriaCount": 4,
+        "source": "criteria",
+        "ratings": {
+          "bedienung": 3.5,
+          "portionierung": 3.5,
+          "reinigung": 3,
+          "folgekosten": 3
+        },
+        "methodology": "Redaktionelle Eignungsbewertung, kein Praxistest. Bedienung 3,5/5 für App-Fütterung mit Einrichtungsaufwand; Portionierung 3,5/5 für dokumentierte Wiegefunktion ohne eigene Präzisionsmessung; Reinigung 3,0/5 wegen Napf, Auslass und Behälter; Folgekosten 3,0/5 wegen optionaler Cloud-/Care-Funktionen. Vier Kriterien gleich gewichtet; keine Preisvariable und keine fremden Testnoten als eigene Messung.",
+        "testedHandsOn": false,
+        "editorialStatus": "required",
+        "limitations": "Konservative Datenbewertung; keine eigene Messung und keine belastbaren Langzeitdaten. PETLIBRO AF105/AF205-D: kein unabhängiger exakter Praxistest gesichert."
+      },
+      "sources": [
+        {
+          "source": "petlibro-variants",
+          "url": "https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie.js",
+          "accessedAt": "2026-11-16T10:02:36.754Z",
+          "assertion": "DE-Katalog trennt AF105 und AF205-D über unterschiedliche SKU und Varianten-ID.",
+          "fields": [
+            "mpn",
+            "offers"
+          ],
+          "sourceType": "officialStore"
+        },
+        {
+          "source": "manual-af105",
+          "url": "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/Petlibro_Granary_2-AF105-user_manual.pdf?v=1781336477",
+          "accessedAt": "2026-11-16T10:07:06.433Z",
+          "assertion": "Modellspezifische Anleitung: Modellcode, 5 Liter, WLAN-Bänder, Abmessungen, Masse und Netzteil. Die Tabelle wurde visuell geprüft.",
+          "fields": [
+            "model",
+            "specs",
+            "experience"
+          ],
+          "sourceType": "manual"
+        },
+        {
+          "source": "petlibro-models",
+          "url": "https://petlibro.com/pages/how-is-granary-2af105-different-from-the-other-granary-2-models",
+          "accessedAt": "2026-11-16T10:02:37.609Z",
+          "assertion": "AF105 hat keine Kamera und keine Tiererkennung; AF205-D ist die Dual-Bowl-Kameravariante. Herstellerseite, kein unabhängiger Test.",
+          "fields": [
+            "decision",
+            "review",
+            "comparisonFilters"
+          ],
+          "sourceType": "manufacturer"
+        }
+      ],
+      "newInternalLinks": {
+        "public": false,
+        "manufacturer": "/hersteller/petlibro/",
+        "category": "/smarte-futterautomaten/",
+        "alternatives": [
+          "petlibro-granary-2-vision",
+          "petkit-yumshare-dual-hopper"
+        ],
+        "comparisons": [
+          "beste-futterautomaten-fuer-katzen"
+        ]
+      },
+      "comparisonStatus": [],
+      "screenshots": [
+        {
+          "file": "petlibro-granary-2-375-light.png",
+          "height": 11362,
+          "sha256": "b1042c89dfb5980c6921912795a2da03ba3d8bd01c638de64e84a43dc278985b",
+          "path": "product-integration-35.8/petlibro-granary-2-375-light.png",
+          "width": 375,
+          "theme": "light dark",
+          "route": "/admin/seo/products/petlibro-granary-2/preview/"
+        },
+        {
+          "file": "petlibro-granary-2-375-dark.png",
+          "height": 11362,
+          "sha256": "f2813cf9d631cb89d78ce33a0094c45961ad643b6f82967bd70f1682ff7bc77c",
+          "path": "product-integration-35.8/petlibro-granary-2-375-dark.png",
+          "width": 375,
+          "theme": "light dark",
+          "route": "/admin/seo/products/petlibro-granary-2/preview/"
+        },
+        {
+          "file": "petlibro-granary-2-1600-light.png",
+          "height": 7163,
+          "sha256": "84ed0ddb5845549dc4169b2cb82170afed3ba42dd67847753e1eac9af2bcc2bf",
+          "path": "product-integration-35.8/petlibro-granary-2-1600-light.png",
+          "width": 1600,
+          "theme": "light dark",
+          "route": "/admin/seo/products/petlibro-granary-2/preview/"
+        },
+        {
+          "file": "petlibro-granary-2-1600-dark.png",
+          "height": 7163,
+          "sha256": "8a86af6fe05b18da4efc6414b427f6e67181c795f28f0684a2a6dae8e8666487",
+          "path": "product-integration-35.8/petlibro-granary-2-1600-dark.png",
+          "width": 1600,
+          "theme": "light dark",
+          "route": "/admin/seo/products/petlibro-granary-2/preview/"
+        }
+      ],
+      "functionalQA": {
+        "cases": 4,
+        "overflow": "passed",
+        "images": "passed",
+        "gallery": "open-next-close passed",
+        "priceCTA": "passed",
+        "canonicalRobots": "passed"
+      },
+      "blockers": [
+        "Die Aufnahme in den bestehenden Katzenvergleich verändert einen eingehenden Link zur Kontrollseite Pawsync im geschützten Experiment 35.5; bis zum Ende des Experiments keine globale Freischaltung."
+      ]
+    },
+    {
+      "slug": "mova-suretrack-pro",
+      "title": "MOVA SureTrack Pro",
+      "publicationStatus": "published",
+      "url": "https://pfotentechnik.de/produkt/mova-suretrack-pro/",
+      "urlExistsInProductionBuild": true,
+      "model": "SureTrack Pro",
+      "mpn": "011508AA000002",
+      "amazon": {
+        "asin": null,
+        "productLink": null,
+        "missingReason": "Amazon.de gezielt geprüft; Suchantworten nicht auswertbar/Blockseite. Keine bestätigte exakte ASIN gefunden. Dies beweist nicht, dass keine Amazon-Listung existiert."
+      },
+      "media": {
+        "source": "manufacturer-product-image",
+        "identity": "SureTrack Pro / 011508AA000002",
+        "pageUrl": "https://de.mova.tech/products/suretrack-pro-gps-tiertracker",
+        "authorization": {
+          "amazonApiConfigured": false,
+          "authorizationBasis": "Explicit operator exception in this conversation permits direct public product-image downloads, including Amazon scraping.",
+          "authorizationScope": "Exact-model Amazon images; direct publicly reachable manufacturer product images as fallback where Amazon search cannot verify a matching ASIN.",
+          "thirdPartyLicenseClaimed": false,
+          "aiImagesGenerated": false
+        },
+        "provenanceFile": "src/assets/images/products/mova-suretrack-pro/media-provenance-35.8.json",
+        "assets": [
+          {
+            "file": "hero.webp",
+            "sourceUrl": "https://cdn.shopify.com/s/files/1/0630/4032/3782/files/suretrack-pro-product-01.jpg?v=1782375394",
+            "accessedAt": "2026-11-16T10:30:39.648Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "SureTrack Pro / 011508AA000002",
+            "originalSha256": "695f43b2bbed41c59beb2ec5852e96360397049ef2d8c1ff09f30abdfd23f1a8",
+            "sha256": "e349506116d0e3a9992e0b3e1d792c2f111189e18bcf9d64a118fa6da17d7188",
+            "bytes": 43826,
+            "width": 1200,
+            "height": 1200
+          },
+          {
+            "file": "thumbnail.webp",
+            "sourceUrl": "https://cdn.shopify.com/s/files/1/0630/4032/3782/files/suretrack-pro-product-01.jpg?v=1782375394",
+            "accessedAt": "2026-11-16T10:30:39.648Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "SureTrack Pro / 011508AA000002",
+            "originalSha256": "695f43b2bbed41c59beb2ec5852e96360397049ef2d8c1ff09f30abdfd23f1a8",
+            "sha256": "525c3396de4bea05e16edccb2daa252fe88b7e187a2288c0f4b6a8987e1c96e7",
+            "bytes": 11310,
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "comparison.webp",
+            "sourceUrl": "https://cdn.shopify.com/s/files/1/0630/4032/3782/files/suretrack-pro-product-01.jpg?v=1782375394",
+            "accessedAt": "2026-11-16T10:30:39.648Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "SureTrack Pro / 011508AA000002",
+            "originalSha256": "695f43b2bbed41c59beb2ec5852e96360397049ef2d8c1ff09f30abdfd23f1a8",
+            "sha256": "d2aee9a9418c991068111bc6b0dd4e5aebc50a62d47fe96a3703d92d1b1ccfbe",
+            "bytes": 21130,
+            "width": 720,
+            "height": 720
+          },
+          {
+            "file": "gallery-1.webp",
+            "sourceUrl": "https://cdn.shopify.com/s/files/1/0630/4032/3782/files/suretrack-pro-product-02.jpg?v=1782375395",
+            "accessedAt": "2026-11-16T10:30:40.145Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "SureTrack Pro / 011508AA000002",
+            "originalSha256": "486540477a34c6f1bdbc0cca13696f418b7fec7a78c15ec55aebc0a3739eaea3",
+            "sha256": "792b4edef23701edb432ebaac8f521f064be26d10bf18abcc67740849d9c7787",
+            "bytes": 67676,
+            "width": 1200,
+            "height": 1200
+          },
+          {
+            "file": "gallery-2.webp",
+            "sourceUrl": "https://cdn.shopify.com/s/files/1/0630/4032/3782/files/sure-track-product-03.png?v=1781682037",
+            "accessedAt": "2026-11-16T10:30:41.466Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "SureTrack Pro / 011508AA000002",
+            "originalSha256": "d70de18837e155c5fcc563071c73a678432a3e3c65a248e8ed8fac02c4437367",
+            "sha256": "57b68be29fab3663a31dd51c961a8b68d34620654c6228c459cec27fdf27a0d0",
+            "bytes": 41124,
+            "width": 1200,
+            "height": 1200
+          },
+          {
+            "file": "gallery-3.webp",
+            "sourceUrl": "https://cdn.shopify.com/s/files/1/0630/4032/3782/files/sure-track-product-02.png?v=1781682037",
+            "accessedAt": "2026-11-16T10:30:43.034Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "SureTrack Pro / 011508AA000002",
+            "originalSha256": "62b5dc44f2a1cce57e3ca9f664ad97405416d4666d01f2fc107a1f097ece014c",
+            "sha256": "093aa089255dcbb5281887cfee60bc274e07d01db907950bb2207aee15c923ef",
+            "bytes": 49402,
+            "width": 1200,
+            "height": 1200
+          }
+        ]
+      },
+      "prices": [
+        {
+          "merchant": "de.mova.tech",
+          "price": 79,
+          "currency": "EUR",
+          "availability": "available",
+          "destination": "https://de.mova.tech/products/suretrack-pro-gps-tiertracker",
+          "affiliate": false,
+          "checkedAt": "2026-11-16T10:40:00.069Z",
+          "source": {
+            "id": "de.mova.tech",
+            "label": "de.mova.tech",
+            "type": "merchant"
+          },
+          "variant": "SureTrack Pro"
+        }
+      ],
+      "cockpit": {
+        "url": "/admin/seo/products/mova-suretrack-pro/",
+        "sharedPriceService": true,
+        "manualOverride": true,
+        "automaticRefresh": true,
+        "affiliateAndOffersEditable": true,
+        "criteriaSourcesStatusDateEditable": true,
+        "persistence": "Atomarer bestehender Frontmatter-Writer; Veröffentlichung statischer Ansichten beim nächsten Build.",
+        "evidence": "test/product-integration-35.8.test.mjs; Live-Refresh 7/7 erfolgreich"
+      },
+      "evaluation": {
+        "score": 60,
+        "rating": 3,
+        "criteriaCount": 5,
+        "source": "criteria",
+        "ratings": {
+          "ortung": 3.5,
+          "app": 3,
+          "akku": 3,
+          "tragekomfort": 3,
+          "kosten": 2.5
+        },
+        "methodology": "Konservative redaktionelle Eignungsbewertung aus Herstellerangaben und getrennt dokumentierten Fremdtests; kein eigener Praxistest. Ortung 3,5/5 für dokumentierte Mobilfunk-/GPS-Funktionen ohne eigene Latenzmessung; App 3,0/5 wegen Plattformabhängigkeit; Akku 3,0/5 wegen bedingter Maximalwerte; Tragekomfort 3,0/5 wegen zu prüfender Masse und Befestigung; Kosten 2,5/5 wegen Pflicht-Abo. Fünf Kriterien gleich gewichtet. Gerätepreis und Händlerprovision beeinflussen die Kriterien nicht.",
+        "testedHandsOn": false,
+        "editorialStatus": "required",
+        "limitations": "Konservative Datenbewertung; keine eigene Messung und keine belastbaren Langzeitdaten. PETLIBRO AF105/AF205-D: kein unabhängiger exakter Praxistest gesichert."
+      },
+      "sources": [
+        {
+          "source": "mova-de",
+          "url": "https://de.mova.tech/products/suretrack-pro-gps-tiertracker",
+          "accessedAt": "2026-11-16T10:02:39.281Z",
+          "assertion": "Offizielle modellbezogene Angaben zu Masse, Schutzart, App und bedingter Laufzeit. Keine eigene Messung.",
+          "fields": [
+            "specs",
+            "gps",
+            "decision"
+          ],
+          "sourceType": "manufacturer"
+        },
+        {
+          "source": "mova-variant",
+          "url": "https://de.mova.tech/products/suretrack-pro-gps-tiertracker.js",
+          "accessedAt": "2026-11-16T10:02:37.844Z",
+          "assertion": "Ausgewählte EU-/DE-Variante, SKU und aktueller Preis in Euro.",
+          "fields": [
+            "mpn",
+            "price"
+          ],
+          "sourceType": "officialStore"
+        },
+        {
+          "source": "mova-connect",
+          "url": "https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html",
+          "accessedAt": "2026-11-16T10:02:39.609Z",
+          "assertion": "Unabhängiger GPS-Tracker-Vergleich behandelt MOVA SureTrack Pro, SATELLAI Collar Go und Tractive DOG 6 ausdrücklich. Keine Übernahme fremder Testnoten als eigene Bewertung.",
+          "fields": [
+            "experience",
+            "review"
+          ],
+          "sourceType": "independentSource"
+        },
+        {
+          "source": "mova-test",
+          "url": "https://produkte-im-test.de/mova-suretrack-pro-im-praxistest/",
+          "accessedAt": "2026-11-16T10:02:40.692Z",
+          "assertion": "Eigenständiger Praxistest; kostenlos vom Hersteller gestelltes Testgerät wird offengelegt.",
+          "fields": [
+            "externalEvidence"
+          ],
+          "sourceType": "independentSource"
+        }
+      ],
+      "newInternalLinks": {
+        "public": true,
+        "manufacturer": "/hersteller/mova/",
+        "category": "/gps-tracker/",
+        "alternatives": [
+          "tractive-dog-6",
+          "invoxia-biotracker-2026"
+        ],
+        "comparisons": [
+          "beste-gps-tracker-fuer-hunde"
+        ]
+      },
+      "comparisonStatus": [
+        "beste-gps-tracker-fuer-hunde"
+      ],
+      "screenshots": [
+        {
+          "file": "mova-suretrack-pro-375-light.png",
+          "height": 15034,
+          "sha256": "c22be2fc4762a845314f975b45839369267ed04dc37d777f597ebeef092e2d4a",
+          "path": "product-integration-35.8/mova-suretrack-pro-375-light.png",
+          "width": 375,
+          "theme": "light dark",
+          "route": "/produkt/mova-suretrack-pro/"
+        },
+        {
+          "file": "mova-suretrack-pro-375-dark.png",
+          "height": 15034,
+          "sha256": "5a1b403749089cbd3c06b28c4d228d02b40b51f7771288f2e97356efff144de8",
+          "path": "product-integration-35.8/mova-suretrack-pro-375-dark.png",
+          "width": 375,
+          "theme": "light dark",
+          "route": "/produkt/mova-suretrack-pro/"
+        },
+        {
+          "file": "mova-suretrack-pro-1600-light.png",
+          "height": 9834,
+          "sha256": "04dccf369856152271f6a847bbcd5b2ecedc2a1365c256d4d42dcc05ec5fdfeb",
+          "path": "product-integration-35.8/mova-suretrack-pro-1600-light.png",
+          "width": 1600,
+          "theme": "light dark",
+          "route": "/produkt/mova-suretrack-pro/"
+        },
+        {
+          "file": "mova-suretrack-pro-1600-dark.png",
+          "height": 9834,
+          "sha256": "b6c1be765d91a6064523f75162e0181fe73ea7ba255213a3ce19f6fe216318a8",
+          "path": "product-integration-35.8/mova-suretrack-pro-1600-dark.png",
+          "width": 1600,
+          "theme": "light dark",
+          "route": "/produkt/mova-suretrack-pro/"
+        }
+      ],
+      "functionalQA": {
+        "cases": 4,
+        "overflow": "passed",
+        "images": "passed",
+        "gallery": "open-next-close passed",
+        "priceCTA": "passed",
+        "canonicalRobots": "passed"
+      },
+      "blockers": []
+    },
+    {
+      "slug": "satellai-collar-go",
+      "title": "SATELLAI Collar Go",
+      "publicationStatus": "published",
+      "url": "https://pfotentechnik.de/produkt/satellai-collar-go/",
+      "urlExistsInProductionBuild": true,
+      "model": "Collar Go, EU Carbon Black / M",
+      "mpn": "TG1-EU-BK-M",
+      "amazon": {
+        "asin": null,
+        "productLink": null,
+        "missingReason": "Amazon.de gezielt geprüft; Suchantworten nicht auswertbar/Blockseite. Keine bestätigte exakte ASIN gefunden. Dies beweist nicht, dass keine Amazon-Listung existiert."
+      },
+      "media": {
+        "source": "manufacturer-product-image",
+        "identity": "Collar Go / TG1-EU-BK-M",
+        "pageUrl": "https://global.satellai.com/en-eu/products/satellai-collar-go-smart-dog-gps-tracker?variant=53484972802332",
+        "authorization": {
+          "amazonApiConfigured": false,
+          "authorizationBasis": "Explicit operator exception in this conversation permits direct public product-image downloads, including Amazon scraping.",
+          "authorizationScope": "Exact-model Amazon images; direct publicly reachable manufacturer product images as fallback where Amazon search cannot verify a matching ASIN.",
+          "thirdPartyLicenseClaimed": false,
+          "aiImagesGenerated": false
+        },
+        "provenanceFile": "src/assets/images/products/satellai-collar-go/media-provenance-35.8.json",
+        "assets": [
+          {
+            "file": "hero.webp",
+            "sourceUrl": "https://cdn.shopify.com/s/files/1/0934/0413/5708/files/collar_go-black_71c3575b-740f-4bac-9a17-db8015c3541a.jpg?v=1765362398",
+            "accessedAt": "2026-11-16T10:35:03.322Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "Collar Go / TG1-EU-BK-M",
+            "originalSha256": "f2533f226d004f4e2d634bf13a9f675e0ca129e1979957a9dcf931f7528efa7e",
+            "sha256": "4692404820be5f55ca183af5f6242d13b76248a8b9e3c0f3b867e0810ef99e59",
+            "bytes": 103142,
+            "width": 1200,
+            "height": 1200
+          },
+          {
+            "file": "thumbnail.webp",
+            "sourceUrl": "https://cdn.shopify.com/s/files/1/0934/0413/5708/files/collar_go-black_71c3575b-740f-4bac-9a17-db8015c3541a.jpg?v=1765362398",
+            "accessedAt": "2026-11-16T10:35:03.322Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "Collar Go / TG1-EU-BK-M",
+            "originalSha256": "f2533f226d004f4e2d634bf13a9f675e0ca129e1979957a9dcf931f7528efa7e",
+            "sha256": "ee955491de8e9ae442b8e9cd29e49fd25979c76cb96d25931846d05f659f8a30",
+            "bytes": 25180,
+            "width": 480,
+            "height": 480
+          },
+          {
+            "file": "comparison.webp",
+            "sourceUrl": "https://cdn.shopify.com/s/files/1/0934/0413/5708/files/collar_go-black_71c3575b-740f-4bac-9a17-db8015c3541a.jpg?v=1765362398",
+            "accessedAt": "2026-11-16T10:35:03.322Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "Collar Go / TG1-EU-BK-M",
+            "originalSha256": "f2533f226d004f4e2d634bf13a9f675e0ca129e1979957a9dcf931f7528efa7e",
+            "sha256": "aef3874564fe07afd04143d6ce829b52c7d688f745e51970589111cb594e7ae0",
+            "bytes": 49204,
+            "width": 720,
+            "height": 720
+          },
+          {
+            "file": "gallery-1.webp",
+            "sourceUrl": "https://cdn.shopify.com/s/files/1/0934/0413/5708/files/collar_go-black_71c3575b-740f-4bac-9a17-db8015c3541a.jpg?v=1765362398",
+            "accessedAt": "2026-11-16T10:35:03.322Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "Collar Go / TG1-EU-BK-M",
+            "originalSha256": "f2533f226d004f4e2d634bf13a9f675e0ca129e1979957a9dcf931f7528efa7e",
+            "sha256": "4692404820be5f55ca183af5f6242d13b76248a8b9e3c0f3b867e0810ef99e59",
+            "bytes": 103142,
+            "width": 1200,
+            "height": 1200
+          },
+          {
+            "file": "gallery-2.webp",
+            "sourceUrl": "https://cdn.shopify.com/s/files/1/0934/0413/5708/files/GPS_LIve_Tracking_27b3b5b8-2070-4f61-96d9-7c1ca2efdcf4.jpg?v=1765362398",
+            "accessedAt": "2026-11-16T10:35:03.495Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "Collar Go / TG1-EU-BK-M",
+            "originalSha256": "e37acb7f8547c58660c73c92c9d324c45b172bd3e33b4d33501611a1422b1be8",
+            "sha256": "8467f8cb40fa47132758dbe3975713db51474103acc044f4f5f5164f9e7a2dd3",
+            "bytes": 124302,
+            "width": 1200,
+            "height": 1200
+          },
+          {
+            "file": "gallery-3.webp",
+            "sourceUrl": "https://cdn.shopify.com/s/files/1/0934/0413/5708/files/virtual_boundaries_and_eacape_alerts.jpg?v=1765362398",
+            "accessedAt": "2026-11-16T10:35:03.915Z",
+            "sourceKind": "manufacturer-product-image",
+            "identity": "Collar Go / TG1-EU-BK-M",
+            "originalSha256": "665ce86ab08829491ef9be261b51fdaf3fec77f08b3236732428e47b84bb4bc2",
+            "sha256": "772518ed4c0de20093b42016d681605be552fcaf57160c819f49c63c1ec9841a",
+            "bytes": 101946,
+            "width": 1200,
+            "height": 1200
+          }
+        ]
+      },
+      "prices": [
+        {
+          "merchant": "global.satellai.com",
+          "price": 67,
+          "currency": "EUR",
+          "availability": "unknown",
+          "destination": "https://global.satellai.com/en-eu/products/satellai-collar-go-smart-dog-gps-tracker?variant=53484972802332",
+          "affiliate": false,
+          "checkedAt": "2026-11-16T10:40:01.240Z",
+          "source": {
+            "id": "global.satellai.com",
+            "label": "global.satellai.com",
+            "type": "merchant"
+          },
+          "variant": "EU Carbon Black / M"
+        }
+      ],
+      "cockpit": {
+        "url": "/admin/seo/products/satellai-collar-go/",
+        "sharedPriceService": true,
+        "manualOverride": true,
+        "automaticRefresh": true,
+        "affiliateAndOffersEditable": true,
+        "criteriaSourcesStatusDateEditable": true,
+        "persistence": "Atomarer bestehender Frontmatter-Writer; Veröffentlichung statischer Ansichten beim nächsten Build.",
+        "evidence": "test/product-integration-35.8.test.mjs; Live-Refresh 7/7 erfolgreich"
+      },
+      "evaluation": {
+        "score": 60,
+        "rating": 3,
+        "criteriaCount": 5,
+        "source": "criteria",
+        "ratings": {
+          "ortung": 3.5,
+          "app": 3,
+          "akku": 3,
+          "tragekomfort": 3,
+          "kosten": 2.5
+        },
+        "methodology": "Konservative redaktionelle Eignungsbewertung aus Herstellerangaben und getrennt dokumentierten Fremdtests; kein eigener Praxistest. Ortung 3,5/5 für dokumentierte Mobilfunk-/GPS-Funktionen ohne eigene Latenzmessung; App 3,0/5 wegen Plattformabhängigkeit; Akku 3,0/5 wegen bedingter Maximalwerte; Tragekomfort 3,0/5 wegen zu prüfender Masse und Befestigung; Kosten 2,5/5 wegen Pflicht-Abo. Fünf Kriterien gleich gewichtet. Gerätepreis und Händlerprovision beeinflussen die Kriterien nicht.",
+        "testedHandsOn": false,
+        "editorialStatus": "required",
+        "limitations": "Konservative Datenbewertung; keine eigene Messung und keine belastbaren Langzeitdaten. PETLIBRO AF105/AF205-D: kein unabhängiger exakter Praxistest gesichert."
+      },
+      "sources": [
+        {
+          "source": "satellai-html",
+          "url": "https://global.satellai.com/en-eu/products/satellai-collar-go-smart-dog-gps-tracker",
+          "accessedAt": "2026-11-16T10:07:08.183Z",
+          "assertion": "Offizielle modellbezogene Angaben zu Masse, Schutzart, App und bedingter Laufzeit. Keine eigene Messung.",
+          "fields": [
+            "specs",
+            "gps",
+            "decision"
+          ],
+          "sourceType": "manufacturer"
+        },
+        {
+          "source": "satellai-product",
+          "url": "https://global.satellai.com/en-eu/products/satellai-collar-go-smart-dog-gps-tracker.js",
+          "accessedAt": "2026-11-16T10:01:02.832Z",
+          "assertion": "Ausgewählte EU-/DE-Variante, SKU und aktueller Preis in Euro.",
+          "fields": [
+            "mpn",
+            "price"
+          ],
+          "sourceType": "officialStore"
+        },
+        {
+          "source": "mova-connect",
+          "url": "https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html",
+          "accessedAt": "2026-11-16T10:02:39.609Z",
+          "assertion": "Unabhängiger GPS-Tracker-Vergleich behandelt MOVA SureTrack Pro, SATELLAI Collar Go und Tractive DOG 6 ausdrücklich. Keine Übernahme fremder Testnoten als eigene Bewertung.",
+          "fields": [
+            "experience",
+            "review"
+          ],
+          "sourceType": "independentSource"
+        },
+        {
+          "source": "satellai-faq",
+          "url": "https://global.satellai.com/en-eu/pages/collar-go-faq-page-for-eu",
+          "accessedAt": "2026-11-16T10:02:38.899Z",
+          "assertion": "EU-FAQ zu Einrichtung, regionaler Lieferung und Nutzung; keine Ableitung einer universellen Netzgarantie.",
+          "fields": [
+            "faq",
+            "decision"
+          ],
+          "sourceType": "manufacturer"
+        }
+      ],
+      "newInternalLinks": {
+        "public": true,
+        "manufacturer": "/hersteller/satellai/",
+        "category": "/gps-tracker/",
+        "alternatives": [
+          "tractive-dog-6",
+          "invoxia-biotracker-2026"
+        ],
+        "comparisons": [
+          "beste-gps-tracker-fuer-hunde"
+        ]
+      },
+      "comparisonStatus": [
+        "beste-gps-tracker-fuer-hunde"
+      ],
+      "screenshots": [
+        {
+          "file": "satellai-collar-go-375-light.png",
+          "height": 14997,
+          "sha256": "1a3fc32d11b39353be3925153c86eb4666dd5a5715c869c92659ae5b6d09cb95",
+          "path": "product-integration-35.8/satellai-collar-go-375-light.png",
+          "width": 375,
+          "theme": "light dark",
+          "route": "/produkt/satellai-collar-go/"
+        },
+        {
+          "file": "satellai-collar-go-375-dark.png",
+          "height": 14997,
+          "sha256": "eaa5b51720efdbdff36f033b9a4d48b06edf5b481ffc9cfdb32e725b31b584d1",
+          "path": "product-integration-35.8/satellai-collar-go-375-dark.png",
+          "width": 375,
+          "theme": "light dark",
+          "route": "/produkt/satellai-collar-go/"
+        },
+        {
+          "file": "satellai-collar-go-1600-light.png",
+          "height": 9662,
+          "sha256": "6ce6284f58100c4dd58d0c448be650b4129ebd74650ebe5f03436dcd1ce6f54a",
+          "path": "product-integration-35.8/satellai-collar-go-1600-light.png",
+          "width": 1600,
+          "theme": "light dark",
+          "route": "/produkt/satellai-collar-go/"
+        },
+        {
+          "file": "satellai-collar-go-1600-dark.png",
+          "height": 9662,
+          "sha256": "19b7f151bb56062566fa01076f061249397e28b198529348d63c0fcc188daf62",
+          "path": "product-integration-35.8/satellai-collar-go-1600-dark.png",
+          "width": 1600,
+          "theme": "light dark",
+          "route": "/produkt/satellai-collar-go/"
+        }
+      ],
+      "functionalQA": {
+        "cases": 4,
+        "overflow": "passed",
+        "images": "passed",
+        "gallery": "open-next-close passed",
+        "priceCTA": "passed",
+        "canonicalRobots": "passed"
+      },
+      "blockers": []
+    },
+    {
+      "slug": "tractive-dog-6",
+      "title": "Tractive DOG 6",
+      "publicationStatus": "published",
+      "url": "https://pfotentechnik.de/produkt/tractive-dog-6/",
+      "urlExistsInProductionBuild": true,
+      "model": "Tractive DOG 6",
+      "mpn": null,
+      "amazon": {
+        "asin": null,
+        "productLink": null,
+        "missingReason": "Amazon.de gezielt geprüft; Suchantworten nicht auswertbar/Blockseite. Keine bestätigte exakte ASIN gefunden. Dies beweist nicht, dass keine Amazon-Listung existiert."
+      },
+      "media": {
+        "source": "amazon-product-image",
+        "identity": "B0D6Z4L6BW",
+        "pageUrl": "https://www.amazon.de/dp/B0D6Z4L6BW",
+        "authorization": {
+          "amazonApiConfigured": false,
+          "authorizationBasis": "Explicit operator exception in this conversation permits direct public product-image downloads, including Amazon scraping.",
+          "authorizationScope": "Exact-model Amazon images; direct publicly reachable manufacturer product images as fallback where Amazon search cannot verify a matching ASIN.",
+          "thirdPartyLicenseClaimed": false,
+          "aiImagesGenerated": false
+        },
+        "provenanceFile": "src/assets/images/products/tractive-dog-6/media-provenance-35.8.json",
+        "assets": [
+          {
+            "file": "hero.webp",
+            "sourceUrl": "https://m.media-amazon.com/images/I/713K+wAexCL._AC_SL1500_.jpg",
+            "accessedAt": "2026-11-16T10:30:46.988Z",
+            "sourceKind": "amazon-product-image",
+            "identity": "B0D6Z4L6BW",
+            "originalSha256": "93ab450b8d16dc68f8abcf22b151151b05f00b9314fab0185f93e4f8a42e2105",
+            "sha256": "fa5b6e2a30da4fc8ecf29c5348a49a6bc68c1e04fcaec76d518417e5aec27951",
+            "bytes": 84394,
+            "width": 1200,
+            "height": 859
+          },
+          {
+            "file": "thumbnail.webp",
+            "sourceUrl": "https://m.media-amazon.com/images/I/713K+wAexCL._AC_SL1500_.jpg",
+            "accessedAt": "2026-11-16T10:30:46.988Z",
+            "sourceKind": "amazon-product-image",
+            "identity": "B0D6Z4L6BW",
+            "originalSha256": "93ab450b8d16dc68f8abcf22b151151b05f00b9314fab0185f93e4f8a42e2105",
+            "sha256": "d972d94ef2b6bfedbd63b049e2cc65df4c23a12734d6bf18d16eb94c4ff6f1f3",
+            "bytes": 23146,
+            "width": 480,
+            "height": 344
+          },
+          {
+            "file": "comparison.webp",
+            "sourceUrl": "https://m.media-amazon.com/images/I/713K+wAexCL._AC_SL1500_.jpg",
+            "accessedAt": "2026-11-16T10:30:46.988Z",
+            "sourceKind": "amazon-product-image",
+            "identity": "B0D6Z4L6BW",
+            "originalSha256": "93ab450b8d16dc68f8abcf22b151151b05f00b9314fab0185f93e4f8a42e2105",
+            "sha256": "a1d25ef1aaec840e67c77bd8544bf8675c624e680cae5a035d17f7b7ac0283b9",
+            "bytes": 43226,
+            "width": 720,
+            "height": 516
+          },
+          {
+            "file": "gallery-1.webp",
+            "sourceUrl": "https://m.media-amazon.com/images/I/71ER5ooftfL._AC_SL1500_.jpg",
+            "accessedAt": "2026-11-16T10:30:47.120Z",
+            "sourceKind": "amazon-product-image",
+            "identity": "B0D6Z4L6BW",
+            "originalSha256": "f43e7d8d351428be8996e96490667d6e9f90b65d0359d26f38d9333ba5a38478",
+            "sha256": "dfafe49ad5c81261faf69977389a4cf3f7973dee3aa1db2ea1e3ddc17e6b6566",
+            "bytes": 98850,
+            "width": 1200,
+            "height": 1193
+          },
+          {
+            "file": "gallery-2.webp",
+            "sourceUrl": "https://m.media-amazon.com/images/I/71cKzbkiadL._AC_SL1500_.jpg",
+            "accessedAt": "2026-11-16T10:30:47.229Z",
+            "sourceKind": "amazon-product-image",
+            "identity": "B0D6Z4L6BW",
+            "originalSha256": "1cc2e279400bb90f3688e9bdfdd05038ffca3cafc5320e0f83b6bc515f2fe1cb",
+            "sha256": "b93ff59734d490e987bfe2744d96cad3cf78226f64f9d9b1abb282913e3a6e71",
+            "bytes": 92114,
+            "width": 1200,
+            "height": 1198
+          },
+          {
+            "file": "gallery-3.webp",
+            "sourceUrl": "https://m.media-amazon.com/images/I/71jP0A94EOL._AC_SL1500_.jpg",
+            "accessedAt": "2026-11-16T10:30:47.435Z",
+            "sourceKind": "amazon-product-image",
+            "identity": "B0D6Z4L6BW",
+            "originalSha256": "85f1b69800bac75635218ee8bea5e88ddf4ba455e2836eb6344f7988aae1ea56",
+            "sha256": "7c585f0526c2f1eb46d31675aa3f33ce4fc728bd42ed28830ab18d5efe762407",
+            "bytes": 101392,
+            "width": 1200,
+            "height": 1194
+          }
+        ]
+      },
+      "prices": [
+        {
+          "merchant": "amazon",
+          "price": 67.99,
+          "currency": "EUR",
+          "availability": "unknown",
+          "destination": "https://amzn.to/44NGoGb",
+          "affiliate": true,
+          "checkedAt": "2026-11-16T10:40:03.833Z",
+          "source": {
+            "id": "amazon.de",
+            "label": "amazon.de",
+            "type": "merchant"
+          }
+        }
+      ],
+      "cockpit": {
+        "url": "/admin/seo/products/tractive-dog-6/",
+        "sharedPriceService": true,
+        "manualOverride": true,
+        "automaticRefresh": true,
+        "affiliateAndOffersEditable": true,
+        "criteriaSourcesStatusDateEditable": true,
+        "persistence": "Atomarer bestehender Frontmatter-Writer; Veröffentlichung statischer Ansichten beim nächsten Build.",
+        "evidence": "test/product-integration-35.8.test.mjs; Live-Refresh 7/7 erfolgreich"
+      },
+      "evaluation": {
+        "score": 92,
+        "rating": 4.6,
+        "criteriaCount": 5,
+        "source": "score",
+        "ratings": {
+          "ortung": 4.7,
+          "app": 4.8,
+          "akku": 4.5,
+          "tragekomfort": 4.5,
+          "kosten": 4
+        },
+        "methodology": "Bewertet wurden dokumentierte Ortungstechnik, Live-Intervall, Tier-Fit, Befestigung, Akkubedingungen, App-Funktionen, Folgekosten und Systemabhängigkeiten.",
+        "testedHandsOn": false,
+        "editorialStatus": "complete",
+        "limitations": "Bestehende Bewertung unverändert"
+      },
+      "sources": [
+        {
+          "source": "Tractive Kundenservice – Akkukapazität und Laufzeit",
+          "url": "https://help.tractive.com/hc/de/articles/205664001-Wie-lange-h%C3%A4lt-der-Akku-meines-Trackers",
+          "accessedAt": "2026-10-03T00:00:00.000Z",
+          "assertion": "Modellspezifische Kapazität von 930 mAh sowie maximale Laufzeit mit und ohne Energiesparzone; keine eindeutige Angabe zu Zellchemie oder Nutzeraustausch in dieser Quelle.",
+          "fields": [
+            "specs",
+            "faq"
+          ]
+        },
+        {
+          "source": "Tractive Kundenservice – Tracker-Auswahl und Abo",
+          "url": "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier",
+          "accessedAt": "2026-08-25T00:00:00.000Z",
+          "assertion": "Tractive führt den DOG 6 als aktuelles Modell und erklärt ausdrücklich, dass jeder Tractive-Tracker ein aktives Abo benötigt, um zu funktionieren.",
+          "fields": [
+            "gps",
+            "gps.subscriptionRequired"
+          ]
+        },
+        {
+          "source": "Amazon.de exakter DOG 6",
+          "url": "https://www.amazon.de/dp/B0D6Z4L6BW",
+          "accessedAt": "2026-11-16T10:09:53.807Z",
+          "assertion": "ASIN und primärer Kaufpreis 67,99 EUR bestätigt. Keine Verfügbarkeit aus dem Preis abgeleitet.",
+          "fields": [
+            "price"
+          ],
+          "sourceType": "retailer"
+        },
+        {
+          "source": "Tractive Deutschland",
+          "url": "https://tractive.com/de/pd/gps-tracker-dog?shopCountry=DE",
+          "accessedAt": "2026-11-16T10:09:53.807Z",
+          "assertion": "Die aktuelle offizielle Hunde-Produktseite wurde erneut geprüft; keine Änderung der bestehenden Kriterienbewertungen und keine Vermischung mit DOG 6 XL.",
+          "fields": [
+            "evidenceSources"
+          ],
+          "sourceType": "manufacturer"
+        }
+      ],
+      "newInternalLinks": [],
+      "comparisonStatus": [
+        "beste-gps-tracker-fuer-hunde"
+      ],
+      "screenshots": [
+        {
+          "file": "tractive-dog-6-375-light.png",
+          "height": 14278,
+          "sha256": "a7759a37b11a3e1a29531c88b57f012d80d389351947c685982807ee397c7968",
+          "path": "product-integration-35.8/tractive-dog-6-375-light.png",
+          "width": 375,
+          "theme": "light dark",
+          "route": "/produkt/tractive-dog-6/"
+        },
+        {
+          "file": "tractive-dog-6-375-dark.png",
+          "height": 14278,
+          "sha256": "c10223495fc29cfa7c5bd201daf7c154088933cbf7337e584871cb06f23775f4",
+          "path": "product-integration-35.8/tractive-dog-6-375-dark.png",
+          "width": 375,
+          "theme": "light dark",
+          "route": "/produkt/tractive-dog-6/"
+        },
+        {
+          "file": "tractive-dog-6-1600-light.png",
+          "height": 9025,
+          "sha256": "9ecb90145e57f6c5b1d0f3c33762ba293799da3bf11748b732539ce9f58fd0da",
+          "path": "product-integration-35.8/tractive-dog-6-1600-light.png",
+          "width": 1600,
+          "theme": "light dark",
+          "route": "/produkt/tractive-dog-6/"
+        },
+        {
+          "file": "tractive-dog-6-1600-dark.png",
+          "height": 9025,
+          "sha256": "7347d14b30aa5ad84c1dd35c8a282b659aaa467e12cf4d49407c40f6ae8c997f",
+          "path": "product-integration-35.8/tractive-dog-6-1600-dark.png",
+          "width": 1600,
+          "theme": "light dark",
+          "route": "/produkt/tractive-dog-6/"
+        }
+      ],
+      "functionalQA": {
+        "cases": 4,
+        "overflow": "passed",
+        "images": "passed",
+        "gallery": "open-next-close passed",
+        "priceCTA": "passed",
+        "canonicalRobots": "passed"
+      },
+      "blockers": []
+    },
+    {
+      "slug": "invoxia-biotracker-2026",
+      "title": "Invoxia Biotracker Edition 2026",
+      "publicationStatus": "published",
+      "url": "https://pfotentechnik.de/produkt/invoxia-biotracker-2026/",
+      "urlExistsInProductionBuild": true,
+      "model": "Invoxia Biotracker Edition 2026",
+      "mpn": null,
+      "amazon": {
+        "asin": "B0H4QZMTSY",
+        "productLink": "https://www.amazon.de/dp/B0H4QZMTSY?tag=yusha0f-21",
+        "missingReason": null
+      },
+      "media": {
+        "source": "amazon-product-image",
+        "identity": "B0H4QZMTSY",
+        "pageUrl": "https://www.amazon.de/dp/B0H4QZMTSY",
+        "authorization": {
+          "amazonApiConfigured": false,
+          "authorizationBasis": "Explicit operator exception in this conversation permits direct public product-image downloads, including Amazon scraping.",
+          "authorizationScope": "Exact-model Amazon images; direct publicly reachable manufacturer product images as fallback where Amazon search cannot verify a matching ASIN.",
+          "thirdPartyLicenseClaimed": false,
+          "aiImagesGenerated": false
+        },
+        "provenanceFile": "src/assets/images/products/invoxia-biotracker-2026/media-provenance-35.8.json",
+        "assets": [
+          {
+            "file": "hero.webp",
+            "sourceUrl": "https://m.media-amazon.com/images/I/61Fyaa6bxSL._AC_SL1223_.jpg",
+            "accessedAt": "2026-11-16T10:30:48.053Z",
+            "sourceKind": "amazon-product-image",
+            "identity": "B0H4QZMTSY",
+            "originalSha256": "4306b649e6b823e14465476dfd3e02b75a88ece11961c593d7f9ff15ecebd0a9",
+            "sha256": "a5a6c1f8e4a609c5cd37d4f8be1f806c6347c95d73452eb8061268c605c128a8",
+            "bytes": 94232,
+            "width": 1200,
+            "height": 1088
+          },
+          {
+            "file": "thumbnail.webp",
+            "sourceUrl": "https://m.media-amazon.com/images/I/61Fyaa6bxSL._AC_SL1223_.jpg",
+            "accessedAt": "2026-11-16T10:30:48.053Z",
+            "sourceKind": "amazon-product-image",
+            "identity": "B0H4QZMTSY",
+            "originalSha256": "4306b649e6b823e14465476dfd3e02b75a88ece11961c593d7f9ff15ecebd0a9",
+            "sha256": "cad44fdcee93132afc0902e807f70eaddf8985e38b64a2107dde75ae4874d7ce",
+            "bytes": 26678,
+            "width": 480,
+            "height": 435
+          },
+          {
+            "file": "comparison.webp",
+            "sourceUrl": "https://m.media-amazon.com/images/I/61Fyaa6bxSL._AC_SL1223_.jpg",
+            "accessedAt": "2026-11-16T10:30:48.053Z",
+            "sourceKind": "amazon-product-image",
+            "identity": "B0H4QZMTSY",
+            "originalSha256": "4306b649e6b823e14465476dfd3e02b75a88ece11961c593d7f9ff15ecebd0a9",
+            "sha256": "bd44d2af16fc370ee45811f70d4004c58565cb37b855503472e50279186ac2d5",
+            "bytes": 47076,
+            "width": 720,
+            "height": 653
+          },
+          {
+            "file": "gallery-1.webp",
+            "sourceUrl": "https://m.media-amazon.com/images/I/71627TQfkuL._AC_SL1306_.jpg",
+            "accessedAt": "2026-11-16T10:30:48.270Z",
+            "sourceKind": "amazon-product-image",
+            "identity": "B0H4QZMTSY",
+            "originalSha256": "1e45287be59778d1465f54ba932fa2c4ff86b672bcdd30824ef2504f4c73aa7d",
+            "sha256": "a9b67b0854259c85ea32b523528908cc9bf3e0de437387353bdc607d1abb4cef",
+            "bytes": 114410,
+            "width": 1200,
+            "height": 1119
+          },
+          {
+            "file": "gallery-2.webp",
+            "sourceUrl": "https://m.media-amazon.com/images/I/71OPz2RvZFL._AC_SL1306_.jpg",
+            "accessedAt": "2026-11-16T10:30:48.482Z",
+            "sourceKind": "amazon-product-image",
+            "identity": "B0H4QZMTSY",
+            "originalSha256": "99185af5c4f3b51cacc5cf2ef09bbe98151275d4f5363d85817633cc5b9b3f2e",
+            "sha256": "dab25c331a8cdfc07575d67beb344d16403d0937adcf4b7bc87a1e33f4a2bab7",
+            "bytes": 109388,
+            "width": 1200,
+            "height": 1086
+          },
+          {
+            "file": "gallery-3.webp",
+            "sourceUrl": "https://m.media-amazon.com/images/I/71L2sXlpxvL._AC_SL1301_.jpg",
+            "accessedAt": "2026-11-16T10:30:48.627Z",
+            "sourceKind": "amazon-product-image",
+            "identity": "B0H4QZMTSY",
+            "originalSha256": "2d08b4c24977527ab165dfda4af6fa1f3510b7fff826e988d62d158044166966",
+            "sha256": "fa0c9f0ac63221944bd38ef01c4c4760602d9c57779bb408da97ba6801e3eca2",
+            "bytes": 84104,
+            "width": 1200,
+            "height": 1106
+          }
+        ]
+      },
+      "prices": [
+        {
+          "merchant": "amazon",
+          "price": 219,
+          "currency": "EUR",
+          "availability": "unknown",
+          "destination": "https://www.amazon.de/dp/B0H4QZMTSY?tag=yusha0f-21",
+          "affiliate": true,
+          "checkedAt": "2026-11-16T10:40:05.613Z",
+          "source": {
+            "id": "amazon.de",
+            "label": "amazon.de",
+            "type": "merchant"
+          },
+          "variant": "Edition 2026 inklusive Max GPS für 1 Jahr"
+        }
+      ],
+      "cockpit": {
+        "url": "/admin/seo/products/invoxia-biotracker-2026/",
+        "sharedPriceService": true,
+        "manualOverride": true,
+        "automaticRefresh": true,
+        "affiliateAndOffersEditable": true,
+        "criteriaSourcesStatusDateEditable": true,
+        "persistence": "Atomarer bestehender Frontmatter-Writer; Veröffentlichung statischer Ansichten beim nächsten Build.",
+        "evidence": "test/product-integration-35.8.test.mjs; Live-Refresh 7/7 erfolgreich"
+      },
+      "evaluation": {
+        "score": 83,
+        "rating": 4.2,
+        "criteriaCount": 5,
+        "source": "criteria",
+        "ratings": {
+          "ortung": 4.4,
+          "gesundheit": 4.8,
+          "app": 4.2,
+          "akku": 4.4,
+          "kosten": 3
+        },
+        "methodology": "Herstellerangaben werden getrennt von professionellen Tests und Nutzerbewertungen ausgewertet. Externe Sterne werden nicht direkt in den PfotenTechnik-Score übernommen.",
+        "testedHandsOn": false,
+        "editorialStatus": "complete",
+        "limitations": "Bestehende Bewertung unverändert"
+      },
+      "sources": [
+        {
+          "source": "Invoxia Biotracker Edition 2026",
+          "url": "https://www.invoxia.com/en-US/petcare/minitailz-dog-tracker",
+          "accessedAt": "2026-08-16T00:00:00.000Z",
+          "assertion": "Name, Gewicht, Funk, Akku, Schutzart und Trackingfunktionen sind Herstellerangaben.",
+          "fields": [
+            "specs",
+            "gps",
+            "decision"
+          ]
+        },
+        {
+          "source": "Invoxia Support – subscriptions",
+          "url": "https://invoxia-petcare.zendesk.com/hc/en-us/articles/9652849499037--Is-a-subscription-required-to-use-the-Minitailz-Biotracker-GPS",
+          "accessedAt": "2026-08-16T00:00:00.000Z",
+          "assertion": "Tarifabhängigkeit von Fernortung, Live-Tracking und Geofences stammt aus dem offiziellen Support.",
+          "fields": [
+            "specs",
+            "faq",
+            "comparisonData"
+          ]
+        },
+        {
+          "source": "CHIP · Invoxia BioTracker",
+          "url": "https://www.chip.de/test/Invoxia-Biotracker-GPS-Hundetracker-im-Test_186580902.html",
+          "accessedAt": "2026-08-16T00:00:00.000Z",
+          "assertion": "Labortest.",
+          "fields": [
+            "ratings",
+            "externalEvidence"
+          ]
+        },
+        {
+          "source": "Golem · BioTracker 2026",
+          "url": "https://www.golem.de/news/invoxia-biotracker-2026-im-test-whoop-fuer-wau-waus-2605-208683.html",
+          "accessedAt": "2026-08-16T00:00:00.000Z",
+          "assertion": "Langzeitnaher Praxistest.",
+          "fields": [
+            "ratings",
+            "externalEvidence"
+          ]
+        },
+        {
+          "source": "Trustpilot · Invoxia",
+          "url": "https://de.trustpilot.com/review/www.invoxia.com",
+          "accessedAt": "2026-08-16T00:00:00.000Z",
+          "assertion": "Markenweites Nutzersignal.",
+          "fields": [
+            "ratings",
+            "externalEvidence"
+          ]
+        },
+        {
+          "source": "Amazon.de ausgewählte Edition 2026",
+          "url": "https://www.amazon.de/dp/B0H4QZMTSY",
+          "accessedAt": "2026-11-16T10:09:53.807Z",
+          "assertion": "Titel bestätigt Edition 2026 + Max GPS 1 Jahr. Primäres Kaufangebot 219,00 EUR und Formular-ASIN B0H4QZMTSY direkt geprüft. Die zuvor angefragte ASIN B0H4J2JX4Y lieferte diese andere Auswahl und wurde nicht als Preisquelle akzeptiert.",
+          "fields": [
+            "asin",
+            "price",
+            "affiliate"
+          ],
+          "sourceType": "retailer"
+        },
+        {
+          "source": "Invoxia Deutschland Biotracker",
+          "url": "https://www.invoxia.com/de/petcare/biotracker",
+          "accessedAt": "2026-11-16T10:09:53.807Z",
+          "assertion": "Offizielle deutsche Seite grenzt Edition 2026 mit Live-Tracking und optionalen Tarifstufen ein. Keine medizinische Diagnose und kein eigener Praxistest.",
+          "fields": [
+            "evidenceSources",
+            "subscription"
+          ],
+          "sourceType": "manufacturer"
+        }
+      ],
+      "newInternalLinks": [],
+      "comparisonStatus": [
+        "beste-gps-tracker-fuer-hunde"
+      ],
+      "screenshots": [
+        {
+          "file": "invoxia-biotracker-2026-375-light.png",
+          "height": 13513,
+          "sha256": "560290eff4d0ff9f22995136f8bfff345b30e9bf83ed447a0c959b08b8c85061",
+          "path": "product-integration-35.8/invoxia-biotracker-2026-375-light.png",
+          "width": 375,
+          "theme": "light dark",
+          "route": "/produkt/invoxia-biotracker-2026/"
+        },
+        {
+          "file": "invoxia-biotracker-2026-375-dark.png",
+          "height": 13513,
+          "sha256": "ffd77f03fe7de115670e19578624c02ed712d07f099a27ea08fd59f1d8b09372",
+          "path": "product-integration-35.8/invoxia-biotracker-2026-375-dark.png",
+          "width": 375,
+          "theme": "light dark",
+          "route": "/produkt/invoxia-biotracker-2026/"
+        },
+        {
+          "file": "invoxia-biotracker-2026-1600-light.png",
+          "height": 8531,
+          "sha256": "4b330425c8ea6c0826b88fd1d9c4959ae59f5c35a33d876db58cb4cf518813e0",
+          "path": "product-integration-35.8/invoxia-biotracker-2026-1600-light.png",
+          "width": 1600,
+          "theme": "light dark",
+          "route": "/produkt/invoxia-biotracker-2026/"
+        },
+        {
+          "file": "invoxia-biotracker-2026-1600-dark.png",
+          "height": 8531,
+          "sha256": "11a77214f39e509929b82cf9296bd55810e2494d14c80fdcd7e8a97bd62db3cb",
+          "path": "product-integration-35.8/invoxia-biotracker-2026-1600-dark.png",
+          "width": 1600,
+          "theme": "light dark",
+          "route": "/produkt/invoxia-biotracker-2026/"
+        }
+      ],
+      "functionalQA": {
+        "cases": 4,
+        "overflow": "passed",
+        "images": "passed",
+        "gallery": "open-next-close passed",
+        "priceCTA": "passed",
+        "canonicalRobots": "passed"
+      },
+      "blockers": []
+    },
+    {
+      "slug": "petlibro-granary-2-vision",
+      "title": "PETLIBRO Granary 2 Vision",
+      "publicationStatus": "published",
+      "url": "https://pfotentechnik.de/produkt/petlibro-granary-2-vision/",
+      "urlExistsInProductionBuild": true,
+      "model": "PETLIBRO Granary 2 Vision",
+      "mpn": null,
+      "amazon": {
+        "asin": null,
+        "productLink": null,
+        "missingReason": "Amazon.de gezielt geprüft; Suchantworten nicht auswertbar/Blockseite. Keine bestätigte exakte ASIN gefunden. Dies beweist nicht, dass keine Amazon-Listung existiert."
+      },
+      "media": {
+        "source": "bestehende Bilder unverändert",
+        "authorization": "Bestandsintegration; in 35.8 kein neuer Download"
+      },
+      "prices": [
+        {
+          "merchant": "petlibro",
+          "price": 269.99,
+          "currency": "EUR",
+          "availability": "available",
+          "destination": "https://www.awin1.com/cread.php?awinmid=77942&awinaffid=2987821&ued=https%3A%2F%2Fde.petlibro.com%2Fproducts%2Fautomatischer-futterautomat-der-granary-2-serie%3Fvariant%3D54477261242734&clickref=petlibro-granary-2-vision_product-commerce_product",
+          "affiliate": true,
+          "checkedAt": "2026-11-16T10:40:01.435Z",
+          "source": {
+            "id": "petlibro-official",
+            "label": "PETLIBRO",
+            "type": "merchant",
+            "url": "https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie?variant=54477261242734"
+          },
+          "variant": "Granary 2 Vision"
+        }
+      ],
+      "cockpit": {
+        "url": "/admin/seo/products/petlibro-granary-2-vision/",
+        "sharedPriceService": true,
+        "manualOverride": true,
+        "automaticRefresh": true,
+        "affiliateAndOffersEditable": true,
+        "criteriaSourcesStatusDateEditable": true,
+        "persistence": "Atomarer bestehender Frontmatter-Writer; Veröffentlichung statischer Ansichten beim nächsten Build.",
+        "evidence": "test/product-integration-35.8.test.mjs; Live-Refresh 7/7 erfolgreich"
+      },
+      "evaluation": {
+        "score": 86,
+        "rating": 4.3,
+        "criteriaCount": 6,
+        "source": "score",
+        "ratings": {
+          "verarbeitung": 4.4,
+          "bedienung": 4.2,
+          "kamera": 4.4,
+          "portionierung": 4.5,
+          "tracking": 4.5,
+          "preisleistung": 3.7
+        },
+        "methodology": "Abgleich der offiziellen Produkt- und Serienseite mit den technischen Angaben zur Variante PLAF205. Kein eigener Ausgabe-, Waagen-, Kamera- oder Langzeittest.",
+        "testedHandsOn": false,
+        "editorialStatus": "complete",
+        "limitations": "Bestehende Bewertung unverändert"
+      },
+      "sources": [
+        {
+          "source": "petlibro-variants",
+          "url": "https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie.js",
+          "accessedAt": "2026-11-16T10:02:36.754Z",
+          "assertion": "Die bestehende Vision-Seite wird auf die exakte DE-Variante AF205, SKU PL-AF205-31B abgebildet; keine zweite Produktseite.",
+          "fields": [
+            "offers"
+          ],
+          "sourceType": "officialStore"
+        }
+      ],
+      "newInternalLinks": [],
+      "comparisonStatus": [],
+      "screenshots": [],
+      "functionalQA": {
+        "scope": "Mitgeprüfte bestehende Vision-Seite; keine neue visuelle Gestaltung"
+      },
+      "blockers": []
+    }
+  ],
+  "sourceCaptures": [
+    {
+      "id": "petlibro-cart",
+      "url": "https://de.petlibro.com/cart.js",
+      "resolvedUrl": "https://de.petlibro.com/cart.js",
+      "checkedAt": "2026-11-16T10:01:02.066Z",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "summary": {
+        "currency": "EUR"
+      },
+      "bodySha256": "54aead8b48df3af614ba5702a49982d7079e6d05ee91ebbd763ec1601ebba7e6"
+    },
+    {
+      "id": "petlibro-series",
+      "url": "https://de.petlibro.com/products/granary-2-series.js",
+      "error": "Quelle antwortet mit HTTP 404."
+    },
+    {
+      "id": "petlibro-catalog",
+      "url": "https://de.petlibro.com/products.json?limit=250",
+      "resolvedUrl": "https://de.petlibro.com/products.json?limit=250",
+      "checkedAt": "2026-11-16T10:01:02.195Z",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "summary": [
+        {
+          "title": "Granary 2 Series für Haustier",
+          "handle": "granary-2-series-fur-haustier",
+          "variants": [
+            {
+              "id": 67586709061998,
+              "sku": "PL-AF105-31B",
+              "title": "Granary 2",
+              "price": "169.99",
+              "available": true
+            },
+            {
+              "id": 67586709094766,
+              "sku": "PL-AF205-31B",
+              "title": "Granary 2 Vision",
+              "price": "269.99",
+              "available": true
+            },
+            {
+              "id": 67586709127534,
+              "sku": "PL-AF205-32B",
+              "title": "Granary 2 Vision Duo",
+              "price": "289.99",
+              "available": true
+            }
+          ]
+        },
+        {
+          "title": "Granary 2 Series",
+          "handle": "automatischer-futterautomat-der-granary-2-serie",
+          "variants": [
+            {
+              "id": 54477261275502,
+              "sku": "PL-AF205-32B",
+              "title": "Granary 2 Vision Duo",
+              "price": "289.99",
+              "available": true
+            },
+            {
+              "id": 54477261242734,
+              "sku": "PL-AF205-31B",
+              "title": "Granary 2 Vision",
+              "price": "269.99",
+              "available": true
+            },
+            {
+              "id": 54477261209966,
+              "sku": "PL-AF105-31B",
+              "title": "Granary 2",
+              "price": "169.99",
+              "available": true
+            }
+          ]
+        },
+        {
+          "title": "Granary 2 Trockenmittelbeutel",
+          "handle": "granary-2-trockenmittelbeutel",
+          "variants": [
+            {
+              "id": 55063350313326,
+              "sku": "PL-FD002-31W",
+              "title": "4 pakete",
+              "price": "19.99",
+              "available": true
+            },
+            {
+              "id": 55063350346094,
+              "sku": "PL-FD002-33W",
+              "title": "8 pakete",
+              "price": "22.99",
+              "available": true
+            }
+          ]
+        }
+      ],
+      "bodySha256": "1155261d570de4fab209fc8b634dc26b5946ac12e70fc046eac4c15985d04c77"
+    },
+    {
+      "id": "mova-fr",
+      "url": "https://fr.mova.tech/products/suretrack-pro-traceur-gps-animal.js",
+      "resolvedUrl": "https://fr.mova.tech/products/suretrack-pro-traceur-gps-animal.js",
+      "checkedAt": "2026-11-16T10:01:02.238Z",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "summary": {
+        "title": "MOVA SureTrack Pro Traceur GPS pour animaux",
+        "id": 9440569360604,
+        "variants": [
+          {
+            "id": 51271297499356,
+            "sku": "011508AA000002",
+            "title": "Default Title",
+            "price": 7900,
+            "available": true
+          }
+        ]
+      },
+      "bodySha256": "da6596f417364ac5f9b32b94e016b0ca5d6531be5bcc6ed2de110623a0d82d0b"
+    },
+    {
+      "id": "mova-catalog",
+      "url": "https://de.mova.tech/products.json?limit=250",
+      "resolvedUrl": "https://de.mova.tech/products.json?limit=250",
+      "checkedAt": "2026-11-16T10:01:02.367Z",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "summary": [
+        {
+          "title": "MOVA SureTrack Pro - GPS-Haustier-Tracker",
+          "handle": "suretrack-pro-gps-tiertracker",
+          "variants": [
+            {
+              "id": 45954311946438,
+              "sku": "011508AA000002",
+              "title": "Default Title",
+              "price": "79.00",
+              "available": true
+            }
+          ]
+        }
+      ],
+      "bodySha256": "362f948846c0b2960a5810a964734a198b1272b7364deb30fac94d76c51cb521"
+    },
+    {
+      "id": "satellai-cart",
+      "url": "https://global.satellai.com/en-eu/cart.js",
+      "resolvedUrl": "https://global.satellai.com/en-eu/cart.js",
+      "checkedAt": "2026-11-16T10:01:02.731Z",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "summary": {
+        "currency": "EUR"
+      },
+      "bodySha256": "de46a22489504341d84f9fcde7a9f2588d36b2bda68ecb91d73746c26ff0ce51"
+    },
+    {
+      "id": "satellai-product",
+      "url": "https://global.satellai.com/en-eu/products/satellai-collar-go-smart-dog-gps-tracker.js",
+      "resolvedUrl": "https://global.satellai.com/en-eu/products/satellai-collar-go-smart-dog-gps-tracker.js",
+      "checkedAt": "2026-11-16T10:01:02.832Z",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "summary": {
+        "title": "SATELLAI Collar Go -Smart Dog GPS Tracker",
+        "id": 10690204074268,
+        "variants": [
+          {
+            "id": 53484972802332,
+            "sku": "TG1-EU-BK-M",
+            "title": "Carbon Black / M",
+            "price": 6700,
+            "available": true
+          },
+          {
+            "id": 53484972835100,
+            "sku": "TG1-EU-BK-L",
+            "title": "Carbon Black / L",
+            "price": 6700,
+            "available": true
+          },
+          {
+            "id": 53484972867868,
+            "sku": "TG1-EU-SR-M",
+            "title": "Candy Apple Red / M",
+            "price": 6700,
+            "available": false
+          },
+          {
+            "id": 53484972900636,
+            "sku": "TG1-EU-SR-L",
+            "title": "Candy Apple Red / L",
+            "price": 6700,
+            "available": false
+          },
+          {
+            "id": 53484972933404,
+            "sku": "TG1-EU-PK-M",
+            "title": "Neon Pink / M",
+            "price": 6700,
+            "available": false
+          },
+          {
+            "id": 53484972966172,
+            "sku": "TG1-EU-PK-L",
+            "title": "Neon Pink / L",
+            "price": 6700,
+            "available": false
+          },
+          {
+            "id": 53484972998940,
+            "sku": "TG1-EU-DT-M",
+            "title": "Sandstone Beige / M",
+            "price": 6700,
+            "available": false
+          },
+          {
+            "id": 53484973031708,
+            "sku": "TG1-EU-DT-L",
+            "title": "Sandstone Beige / L",
+            "price": 6700,
+            "available": false
+          }
+        ]
+      },
+      "bodySha256": "de01d0701007c32a7b98ec05bfb2683bb671c06a478201eb8da0473f3573e83c"
+    },
+    {
+      "id": "tractive-official",
+      "url": "https://tractive.com/de/pd/gps-tracker-dog?shopCountry=DE",
+      "resolvedUrl": "https://tractive.com/de/pd/gps-tracker-dog?shopCountry=DE",
+      "checkedAt": "2026-11-16T10:01:03.038Z",
+      "status": 200,
+      "contentType": "text/html",
+      "summary": {
+        "title": "GPS Tracker Hund | Hunde Tracker | Tractive",
+        "asins": []
+      },
+      "bodySha256": "59ac83b74815dd277dcbeb36de64a38a0508f7c4c362477cb8037c0df3818ade"
+    },
+    {
+      "id": "amazon-search-0",
+      "url": "https://www.amazon.de/s?k=PETLIBRO%20Granary%202%20Vision%20Duo",
+      "resolvedUrl": "https://www.amazon.de/s?k=PETLIBRO%20Granary%202%20Vision%20Duo",
+      "checkedAt": "2026-11-16T10:01:03.100Z",
+      "status": 200,
+      "contentType": "text/html",
+      "summary": {
+        "title": "&nbsp;",
+        "asins": []
+      },
+      "bodySha256": "e85c00397bd8ec9796882c70334f9a4dce373756e3320795d261700f8e372cd2"
+    },
+    {
+      "id": "invoxia-official",
+      "url": "https://www.invoxia.com/en-US/petcare/minitailz-dog-tracker",
+      "resolvedUrl": "https://www.invoxia.com/en-US/petcare/biotracker",
+      "checkedAt": "2026-11-16T10:01:03.132Z",
+      "status": 200,
+      "contentType": "text/html",
+      "summary": {
+        "title": "Dog GPS Collar &amp; Health Tracker — Biotracker | Invoxia",
+        "asins": []
+      },
+      "bodySha256": "c01ef4be0b50b2dcc968a680bf7684e71bc30388c84bce6f97fd934fd33d70ea"
+    },
+    {
+      "id": "amazon-search-1",
+      "url": "https://www.amazon.de/s?k=PETLIBRO%20Granary%202%20AF105",
+      "resolvedUrl": "https://www.amazon.de/s?k=PETLIBRO%20Granary%202%20AF105",
+      "checkedAt": "2026-11-16T10:01:03.258Z",
+      "status": 200,
+      "contentType": "text/html",
+      "summary": {
+        "title": "&nbsp;",
+        "asins": []
+      },
+      "bodySha256": "64cb7d70f6911e8cce60bf0ed5e3541696a3ee69a3affd6dcc0c0c22af700815"
+    },
+    {
+      "id": "amazon-search-2",
+      "url": "https://www.amazon.de/s?k=MOVA%20SureTrack%20Pro",
+      "resolvedUrl": "https://www.amazon.de/s?k=MOVA%20SureTrack%20Pro",
+      "checkedAt": "2026-11-16T10:01:03.326Z",
+      "status": 200,
+      "contentType": "text/html",
+      "summary": {
+        "title": "&nbsp;",
+        "asins": []
+      },
+      "bodySha256": "d4aedbbe54b4807d787d96cd744493d2ba5b0464a79d4a756a15b3c4bfa3eb29"
+    },
+    {
+      "id": "amazon-search-3",
+      "url": "https://www.amazon.de/s?k=SATELLAI%20Collar%20Go",
+      "resolvedUrl": "https://www.amazon.de/s?k=SATELLAI%20Collar%20Go",
+      "checkedAt": "2026-11-16T10:01:03.358Z",
+      "status": 200,
+      "contentType": "text/html",
+      "summary": {
+        "title": "&nbsp;",
+        "asins": []
+      },
+      "bodySha256": "07f9fb02fd2d423f38d10c2ad8e88ffcc383627f0c50e44c2b2a663203c00876"
+    },
+    {
+      "id": "amazon-search-5",
+      "url": "https://www.amazon.de/s?k=Invoxia%20Biotracker%20Edition%202026",
+      "resolvedUrl": "https://www.amazon.de/s?k=Invoxia%20Biotracker%20Edition%202026",
+      "checkedAt": "2026-11-16T10:01:03.574Z",
+      "status": 200,
+      "contentType": "text/html",
+      "summary": {
+        "title": "&nbsp;",
+        "asins": []
+      },
+      "bodySha256": "ef500487fe62827500f42b2357888eefba34ab5d873965445c64c5a7dd985215"
+    },
+    {
+      "id": "amazon-search-4",
+      "url": "https://www.amazon.de/s?k=Tractive%20DOG%206",
+      "resolvedUrl": "https://www.amazon.de/s?k=Tractive%20DOG%206",
+      "checkedAt": "2026-11-16T10:01:03.574Z",
+      "status": 200,
+      "contentType": "text/html",
+      "summary": {
+        "title": "&nbsp;",
+        "asins": []
+      },
+      "bodySha256": "0222dfb6032c1e593a2752e487d7a03c0bc4428806fb1a048b38bc6598187069"
+    },
+    {
+      "id": "amazon-search-6",
+      "url": "https://www.amazon.de/s?k=PETLIBRO%20Granary%202%20X",
+      "resolvedUrl": "https://www.amazon.de/s?k=PETLIBRO%20Granary%202%20X",
+      "checkedAt": "2026-11-16T10:01:03.586Z",
+      "status": 200,
+      "contentType": "text/html",
+      "summary": {
+        "title": "&nbsp;",
+        "asins": []
+      },
+      "bodySha256": "e165b3f8997ce3d5e7816671752e3d041b4a6501e84949e8f66959251d545e3c"
+    },
+    {
+      "id": "petlibro-variants",
+      "url": "https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie.js",
+      "resolvedUrl": "https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie.js",
+      "checkedAt": "2026-11-16T10:02:36.754Z",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "bodySha256": "3906296fbc2dd1bcdfcf6174fe7a5e2a1162642e4474c887bc09271e6fd538ff"
+    },
+    {
+      "id": "petlibro-manuals",
+      "url": "https://de.petlibro.com/pages/user-manual",
+      "error": "Quelle antwortet mit HTTP 404."
+    },
+    {
+      "id": "petlibro-models",
+      "url": "https://petlibro.com/pages/how-is-granary-2af105-different-from-the-other-granary-2-models",
+      "resolvedUrl": "https://petlibro.com/pages/how-is-granary-2af105-different-from-the-other-granary-2-models",
+      "checkedAt": "2026-11-16T10:02:37.609Z",
+      "status": 200,
+      "title": "\n      How is Granary 2(AF105) different from the other Granary 2 models?\n",
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "8718208565b7b20b2e003b9fce0e0582a27a6ec60d4a0969fe85bf9c1343f5c3"
+    },
+    {
+      "id": "petlibro-de",
+      "url": "https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie",
+      "resolvedUrl": "https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie",
+      "checkedAt": "2026-11-16T10:02:37.687Z",
+      "status": 200,
+      "title": "\n      Automatischer Futterautomat der Granary-2-Serie | Jede Mahlzeit verfolgen, sehen und personalisieren\n",
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "06d645e2dbf5ce2665fb68bdba7892d6b381e113199a94af8a5e1702314ded42"
+    },
+    {
+      "id": "mova-variant",
+      "url": "https://de.mova.tech/products/suretrack-pro-gps-tiertracker.js",
+      "resolvedUrl": "https://de.mova.tech/products/suretrack-pro-gps-tiertracker.js",
+      "checkedAt": "2026-11-16T10:02:37.844Z",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "bodySha256": "0700d479ecc8376e695298c62279ed04d892f13e0c264cb79dbfbb4de76b3109"
+    },
+    {
+      "id": "mova-cart",
+      "url": "https://de.mova.tech/cart.js",
+      "resolvedUrl": "https://de.mova.tech/cart.js",
+      "checkedAt": "2026-11-16T10:02:38.085Z",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "bodySha256": "b38d5f692ac36a0ce86e38a23dd26201a886c037fc0a7965f35db6f76c69c0c2"
+    },
+    {
+      "id": "petlibro-terms",
+      "url": "https://de.petlibro.com/policies/terms-of-service",
+      "resolvedUrl": "https://de.petlibro.com/policies/terms-of-service",
+      "checkedAt": "2026-11-16T10:02:38.547Z",
+      "status": 200,
+      "title": "\n      AGB\n",
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "d09af7b0989fd6d14793ee4d1754fd9718712c7e859a7474d152285afbc4bed3"
+    },
+    {
+      "id": "invoxia-de",
+      "url": "https://www.invoxia.com/de-DE/petcare/biotracker",
+      "error": "Quelle antwortet mit HTTP 404."
+    },
+    {
+      "id": "satellai-faq",
+      "url": "https://global.satellai.com/en-eu/pages/collar-go-faq-page-for-eu",
+      "resolvedUrl": "https://global.satellai.com/en-eu/pages/collar-go-faq-page-for-eu",
+      "checkedAt": "2026-11-16T10:02:38.899Z",
+      "status": 200,
+      "title": "\n        FAQs Page - Nov 4, 19:13:22\n &ndash; SATELLAI-Global",
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "78c4b91edc21b255bb61837f8d23661dfa69db9155e991ca33267a75e0338416"
+    },
+    {
+      "id": "satellai-test",
+      "url": "https://www.chip.de/test-kaufberatung/hobby-freizeit/satellai-collar-g-im-test_e5ceb9ad-a5bb-41db-a82e-61edb2590e56.html",
+      "error": "Quelle antwortet mit HTTP 403."
+    },
+    {
+      "id": "mova-de",
+      "url": "https://de.mova.tech/products/suretrack-pro-gps-tiertracker",
+      "resolvedUrl": "https://de.mova.tech/products/suretrack-pro-gps-tiertracker",
+      "checkedAt": "2026-11-16T10:02:39.281Z",
+      "status": 200,
+      "title": "MOVA SureTrack Pro GPS Tracker für Hunde &amp; Katzen | MOVA Deutschland",
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "2c13abe32421c827449b0050569efd23b8d8e87114d89e35ec6cb000db04bbd1"
+    },
+    {
+      "id": "mova-connect",
+      "url": "https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html",
+      "resolvedUrl": "https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html",
+      "checkedAt": "2026-11-16T10:02:39.609Z",
+      "status": 200,
+      "title": "\n        GPS-Tracker für Hunde: Tractive Dog 6, Satellai Collar Go und Mova SureTrack Pro im Vergleich - connect     \n    ",
+      "contentType": "text/html; charset=UTF-8",
+      "bodySha256": "2add17b26514a8dd57184bed76847ed3ca01d5c8212fd52fccc01e0760c6a865"
+    },
+    {
+      "id": "invoxia-amazon",
+      "url": "https://www.amazon.de/dp/B0H4J2JX4Y",
+      "resolvedUrl": "https://www.amazon.de/dp/B0H4J2JX4Y",
+      "checkedAt": "2026-11-16T10:02:40.680Z",
+      "status": 200,
+      "title": "Invoxia Biotracker Edition 2026 + Max GPS 1 Jahr - GPS &amp; Gesundheit Hund | 4G-GPS in Echtzeit und Ausbruchalarm 1 Jahr inklusive, Herz- und Atemfrequenz in Ruhe, bis zu 15 Tage Akku je nach Nutzung: Amazon.de: Haustier",
+      "contentType": "text/html;charset=UTF-8",
+      "bodySha256": "a5dc8c41b48fcb7effed513835f53a89fa4d39ff0243419062fab4d10d83da53"
+    },
+    {
+      "id": "mova-test",
+      "url": "https://produkte-im-test.de/mova-suretrack-pro-im-praxistest/",
+      "resolvedUrl": "https://produkte-im-test.de/mova-suretrack-pro-im-praxistest/",
+      "checkedAt": "2026-11-16T10:02:40.692Z",
+      "status": 200,
+      "title": "MOVA SureTrack Pro im Test | GPS-Tracker für Hunde",
+      "contentType": "text/html; charset=UTF-8",
+      "bodySha256": "51c48f5907c0dd59a7470bd4891e8660ab148ec4e71b73fbb84e03171eef5905"
+    },
+    {
+      "id": "manual-af105",
+      "url": "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/Petlibro_Granary_2-AF105-user_manual.pdf?v=1781336477",
+      "resolvedUrl": "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/Petlibro_Granary_2-AF105-user_manual.pdf?v=1781336477",
+      "accessedAt": "2026-11-16T10:07:06.433Z",
+      "status": 200,
+      "contentType": "application/pdf"
+    },
+    {
+      "id": "manual-af205d",
+      "url": "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/Petlibro_Granary_vision_dual-AF205-D-user_manual.pdf?v=1781336481",
+      "resolvedUrl": "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/Petlibro_Granary_vision_dual-AF205-D-user_manual.pdf?v=1781336481",
+      "accessedAt": "2026-11-16T10:07:06.948Z",
+      "status": 200,
+      "contentType": "application/pdf"
+    },
+    {
+      "id": "invoxia-de-buy",
+      "url": "https://www.invoxia.com/de/petcare/biotracker/buy",
+      "resolvedUrl": "https://www.invoxia.com/de/petcare/biotracker/buy",
+      "accessedAt": "2026-11-16T10:07:07.012Z",
+      "status": 200,
+      "contentType": "text/html",
+      "bodySha256": "9ac611ccf7cb4015347fff48954b4be3ff4066040d6d77ede1498f1e72f5cefe"
+    },
+    {
+      "id": "manual-af205",
+      "url": "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/Petlibro_Granary_vision-AF205-S-user_manual.pdf?v=1781336477",
+      "resolvedUrl": "https://cdn.shopify.com/s/files/1/0252/5197/1119/files/Petlibro_Granary_vision-AF205-S-user_manual.pdf?v=1781336477",
+      "accessedAt": "2026-11-16T10:07:07.299Z",
+      "status": 200,
+      "contentType": "application/pdf"
+    },
+    {
+      "id": "invoxia-de-product",
+      "url": "https://www.invoxia.com/de/petcare/biotracker",
+      "resolvedUrl": "https://www.invoxia.com/de/petcare/biotracker",
+      "accessedAt": "2026-11-16T10:07:07.390Z",
+      "status": 200,
+      "contentType": "text/html",
+      "bodySha256": "acabf811ff098497aff72665cd23aac13812b7320e7ee46f10933d29438e165c"
+    },
+    {
+      "id": "mova-manuals",
+      "url": "https://de.mova.tech/pages/user-manuals-and-faqs",
+      "resolvedUrl": "https://de.mova.tech/pages/user-manuals-and-faqs",
+      "accessedAt": "2026-11-16T10:07:08.131Z",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "47bc90d51c2f97db07706edf1243a94271f1088c8ac4fa305bdb89c8c1695589"
+    },
+    {
+      "id": "satellai-html",
+      "url": "https://global.satellai.com/en-eu/products/satellai-collar-go-smart-dog-gps-tracker",
+      "resolvedUrl": "https://global.satellai.com/en-eu/products/satellai-collar-go-smart-dog-gps-tracker",
+      "accessedAt": "2026-11-16T10:07:08.183Z",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "3ef898be1d19e57294815ad463fef90eea652305f530179ee0c882b5ec1b8638"
+    },
+    {
+      "id": "dog-amazon",
+      "url": "https://www.amazon.de/dp/B0D6Z4L6BW",
+      "resolvedUrl": "https://www.amazon.de/dp/B0D6Z4L6BW",
+      "accessedAt": "2026-11-16T10:07:08.993Z",
+      "status": 200,
+      "contentType": "text/html;charset=UTF-8",
+      "bodySha256": "b3bc6e72d9e7a8f4a74f47bfd391e3aba708d3c67f4f9f82e76d13620d5becfe"
+    },
+    {
+      "id": "invoxia-selected",
+      "url": "https://www.amazon.de/dp/B0H4QZMTSY",
+      "resolvedUrl": "https://www.amazon.de/dp/B0H4QZMTSY",
+      "accessedAt": "2026-11-16T10:09:53.807Z",
+      "title": "Invoxia Biotracker Edition 2026 + Max GPS 1 Jahr - GPS &amp; Gesundheit Hund",
+      "offer": {
+        "current": 219,
+        "currency": "EUR",
+        "method": "amazon-buybox",
+        "pageUrl": "https://www.amazon.de/dp/B0H4QZMTSY"
+      },
+      "bodySha256": "a17b8e5a39788b0b274eab99e623e81b40cc72909fd80bbc720538368688370a"
+    }
+  ],
+  "validation": {
+    "build": {
+      "passed": true,
+      "pages": 390
+    },
+    "tests": {
+      "command": "npm run test:product-integration",
+      "passed": 140,
+      "failed": 0
+    },
+    "browser": {
+      "passed": 24,
+      "failed": 0
+    },
+    "diffCheck": "passed"
+  }
+}

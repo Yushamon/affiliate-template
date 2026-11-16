@@ -2,13 +2,14 @@
 import ProjectLayout from "../layouts/ProjectLayout.astro";
 import { getImage } from "astro:assets";
 import { getCollection } from "astro:content";
+import { getProducts } from "../domain/content/registry";
 import yaml from "js-yaml";
 import PetAdvisor from "../components/advisor/PetAdvisor.astro";
 import { mapDecisionProduct, isDecisionAdvisorProduct } from "../domain/advisor/decisionProduct";
 import foundation from "../../research/fountain-cost-35.0b.json";
 import { advisorEntries } from "../domain/advisor/entries";
 const sources = import.meta.glob("../content/products/*.md", { query: "?raw", import: "default", eager: true });
-const products = await Promise.all((await getCollection("products")).filter(isDecisionAdvisorProduct).map(async entry => {
+const products = await Promise.all((await getProducts()).filter(isDecisionAdvisorProduct).map(async entry => {
   const slug = entry.id.replace(/\.(md|mdx)$/i, "");
   const text = sources[`../content/products/${slug}.md`] as string;
   const raw = yaml.load(text.match(/^---\s*\r?\n([\s\S]*?)\r?\n---/)![1], { schema: yaml.JSON_SCHEMA });

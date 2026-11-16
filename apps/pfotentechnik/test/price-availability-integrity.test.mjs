@@ -95,11 +95,12 @@ test('manual stock confirmation is saved without changing editorial date or affi
   assert.equal(saved.data.availability,'available');assert.ok(saved.data.availabilityUpdated);
   assert.equal(saved.data.editorial.lastVerifiedAt,'2026-07-26');assert.equal(saved.data.affiliate.url,data.affiliate.url);
 });
-test('Granary 2 Vision retains editorial facts and USD history with unknown DE stock',async()=>{
+test('Granary 2 Vision retains editorial facts and uses the verified exact DE variant',async()=>{
   const {data}=await readProductDocument(new URL('../src/content/products/petlibro-granary-2-vision.md',import.meta.url));
-  const ops=deriveProductOperations(data);assert.equal(ops.availability,'unknown');assert.equal(ops.purchasable,false);
-  assert.equal(data.price.currency,'USD');assert.equal(data.price.current,129.99);assert.ok(data.affiliate.url);
-  assert.equal(data.editorial.lastVerifiedAt,'2026-07-26');assert.equal(data.offers[0].mappingStatus,'unresolved');
+  const ops=deriveProductOperations(data);assert.equal(ops.availability,'available');assert.equal(ops.purchasable,true);
+  assert.equal(data.price.currency,'EUR');assert.equal(data.price.current,269.99);assert.ok(data.affiliate.url.includes('54477261242734'));
+  assert.equal(data.editorial.lastVerifiedAt,'2026-07-26');assert.equal(data.offers[0].mappingStatus,'verified');
+  assert.equal(data.offers[0].expectedSku,'PL-AF205-31B');
 });
 test('historical automatic positive flags without stock evidence cannot emit InStock',()=>{
   const data=product({availability:'available',availabilityReason:'Bei der automatischen Preisprüfung als verfügbar erkannt.',availabilityUpdated:now});

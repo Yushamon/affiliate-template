@@ -804,6 +804,9 @@ export const createProductContentSchema = (image: ImageFunction) =>
       "unknown"
     ]),
 
+    publicationStatus: z.enum(["published", "draft"]).default("published"),
+    publicationBlockers: z.array(z.string().min(1)).default([]),
+
     recommendation:
       z.string(),
 
@@ -901,6 +904,12 @@ export const createProductContentSchema = (image: ImageFunction) =>
     alternatives: z
       .array(z.string())
       .default([]),
+
+    // Explicit per-product review; legacy automatic recommendations stay unchanged.
+    reviewedAlternatives: z.array(z.object({
+      slug: z.string().min(1),
+      reason: z.string().min(20)
+    }).strict()).default([]),
 
     comparisons: z
       .array(z.string())

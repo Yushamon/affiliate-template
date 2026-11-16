@@ -53,12 +53,12 @@ export function resolveCommerceOffers(data, context = {}, {now = Date.now(), pro
     const canLink = !!affiliateUrl && (amazon || (!superseded && !blocked && data.productStatus !== 'discontinued'));
     const purchasable = canLink && domestic && offer.availability === 'available' && data.productStatus !== 'discontinued' && offer.mappingStatus !== 'invalid';
     return {...offer, label: offer.label ?? program?.label ?? offer.merchant, destination,
-      affiliateUrl, affiliateReady: !!affiliateUrl, amazonLink: amazon ? amazonLink : null,
+      affiliateUrl, affiliateReady: !!affiliateUrl, commissionEligible: offer.affiliate?.provider !== 'official', amazonLink: amazon ? amazonLink : null,
       ctaLabel: amazon ? (offer.availability === 'available' ? 'Bei Amazon ansehen' : 'Preis und Verfügbarkeit bei Amazon prüfen') : `Bei ${offer.label ?? program?.label ?? offer.merchant} ansehen`,
       verified, domestic, superseded, canLink, purchasable, fresh, ageDays: age, current,
       currency: offer.price?.currency ?? 'EUR', formattedPrice: current == null ? null : formatPrice(current, offer.price?.currency),
       status: !verified ? offer.mappingStatus : offer.error ? 'error' : !affiliateUrl ? 'not-configured' : fresh ? 'fresh' : 'price-unknown-or-stale',
-      rel: AFFILIATE_REL, target: '_blank', tracking};
+      rel: offer.affiliate?.provider === 'official' ? 'nofollow noopener' : AFFILIATE_REL, target: '_blank', tracking};
   });
 }
 

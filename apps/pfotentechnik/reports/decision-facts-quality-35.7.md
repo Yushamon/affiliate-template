@@ -5949,7 +5949,7 @@ Technische Vergleichsdaten: [{"path":"specs.9.value","value":"265 × 220 × 167 
 
 Datei: src/content/products/petlibro-granary-2-vision.md
 
-SHA-256: 1684a1e133d54e7ea0cbe6711a52c45c3c291ffe7fab9e0219c44de586812a4c
+SHA-256: 2f1c1e2bc8a0ab24b8a234f8db8ec1512fb685a12cfe4a06cea33c4463345e4b
 
 Content-Speicher: preserved-exactly
 
@@ -8391,7 +8391,7 @@ Technische Vergleichsdaten: [{"path":"specs.15.value","value":"83 × 47 × 20 mm
 
 Datei: src/content/products/tractive-dog-6.md
 
-SHA-256: dada9f8ef68134e835b4b405e966b5a9d7c833a1217d6b05328a26cd8465088e
+SHA-256: e3a1480462f7abda3701f77a5bcf7f0cd68e694a8e2b0911bb0805a04f47fce6
 
 Content-Speicher: preserved-exactly
 

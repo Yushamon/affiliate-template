@@ -1,5 +1,7 @@
 ---
 import fs from "node:fs";
+import { createHash } from "node:crypto";
+import ProductEditorialEditor from "../../../../components/admin/ProductEditorialEditor.astro";
 import path from "node:path";
 import { getCollection } from "astro:content";
 import SeoAdminLayout from "../../../../layouts/SeoAdminLayout.astro";
@@ -52,6 +54,8 @@ export async function getStaticPaths() {
       params: { slug },
       props: {
         product: {
+          editorialData: entry.data,
+          sourceHash: createHash('sha256').update(fs.readFileSync(path.join(APP_ROOT, 'src/content/products', slug + '.md'))).digest('hex'),
           slug,
           route,
           title: entry.data.title || entry.data.name || slug,
@@ -73,6 +77,8 @@ export async function getStaticPaths() {
 
 interface Props {
   product: {
+    editorialData: any;
+    sourceHash: string;
     slug: string;
     route: string;
     title: string;
@@ -97,6 +103,7 @@ const eeatCount = count((item) => ["eeat", "author-coverage"].includes(item.area
 const technicalCount = count((item) => ["experience", "release", "engineering"].includes(item.category));
 const mediaCount = count((item) => item.category === "media");
 const blockers = count((item) => item.releaseBlocker);
+const draftPreviewEnabled = import.meta.env.DEV || process.env.PFOTENTECHNIK_DRAFT_PREVIEW === '1';
 ---
 <SeoAdminLayout
   title={product.title}
@@ -116,7 +123,7 @@ const blockers = count((item) => item.releaseBlocker);
         <h2>{product.title}</h2>
         <p class="seo-copy">{product.description || "Keine Kurzbeschreibung hinterlegt."}</p>
         <div class="seo-actions">
-          <a class="pt-button seo-button" href={product.route} target="_blank">Produktseite öffnen</a>
+          <a class="pt-button seo-button" href={product.editorialData.publicationStatus === 'draft' ? draftPreviewEnabled ? `/admin/seo/products/${product.slug}/preview/` : undefined : product.route} aria-disabled={product.editorialData.publicationStatus === 'draft' && !draftPreviewEnabled ? 'true' : undefined} target="_blank">{product.editorialData.publicationStatus === 'draft' ? draftPreviewEnabled ? 'Entwurf prüfen' : 'Vorschau im lokalen QA-Build' : 'Produktseite öffnen'}</a>
           <a class="pt-button seo-button" href="/admin/seo/prices/">Produktpflege</a>
           <a class="pt-button seo-button" href="/admin/seo/media/">Media Center</a>
         </div>
@@ -131,6 +138,9 @@ const blockers = count((item) => item.releaseBlocker);
         <div><dt>Stand</dt><dd>{product.updatedAt || "Nicht angegeben"}</dd></div>
       </dl>
     </section>
+
+    {product.editorialData.publicationStatus === 'draft' && <section class="seo-panel"><h2>Veröffentlichung gesperrt</h2><ul>{product.editorialData.publicationBlockers.map((blocker: string) => <li>{blocker}</li>)}</ul></section>}
+    <ProductEditorialEditor slug={product.slug} sourceHash={product.sourceHash} data={product.editorialData} />
 
     <section class="seo-grid" data-columns="3" aria-label="Arbeitsbereiche">
       <article class="seo-card">

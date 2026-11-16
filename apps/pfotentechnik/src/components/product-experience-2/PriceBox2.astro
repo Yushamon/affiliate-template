@@ -32,6 +32,7 @@ const merchantOffers = offers.map((offer) => {
   return { ...offer, displayPrice, historicalPrice: !offer.formattedPrice && Boolean(legacyPrice) && (!operations.priceAvailable || price?.isStale) };
 });
 const showService = Boolean(subscriptionCost && subscriptionCost.status !== "no-subscription");
+const hasAffiliateOffers = merchantOffers.some(offer => offer.commissionEligible !== false);
 const serviceLabel = subscriptionCost?.optional ? "Optionales Abo möglich" : subscriptionCost?.label;
 const servicePrice = subscriptionCost?.featuredPlan?.current ? subscriptionCost.featuredPlan.paymentLabel : null;
 const unavailableCopy = operations.availability === "discontinued"
@@ -48,7 +49,7 @@ const hasServiceDetails = Boolean(showService && subscriptionCost && (subscripti
 <section class="px2-price" aria-labelledby="px2-price-title" data-availability={operations.availability} data-subscription-status={subscriptionCost?.status}>
   <header class="px2-price__header">
     <h2 id="px2-price-title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14l1 14H4L5 7Zm4 0V5a3 3 0 0 1 6 0v2" /></svg>Preis &amp; Kaufen</h2>
-    <a href="/affiliate-hinweis/">Affiliate-Link</a>
+    {hasAffiliateOffers || !merchantOffers.length ? <a href="/affiliate-hinweis/">Affiliate-Link</a> : <span>Direkter Herstellerlink</span>}
   </header>
 
   {unavailableCopy && <aside class:list={["px2-availability", `is-${operations.availability}`]} role="status"><p>{unavailableCopy}</p></aside>}
@@ -63,7 +64,7 @@ const hasServiceDetails = Boolean(showService && subscriptionCost && (subscripti
           <small>{offer.historicalPrice ? (price?.isStale ? "Veralteter Preisstand" : "Nicht aktuell bestätigt") : "Hinterlegter Preis"}</small>
         </dl>}
         <a class="px2-price__cta" href={offer.affiliateUrl} rel={offer.rel} target={offer.target}
-          data-affiliate-link data-merchant={offer.merchant} data-product={offer.tracking.product} data-placement={offer.tracking.placement} data-page-type={offer.tracking.pageType} data-cta-kind="regular">
+          data-affiliate-link={offer.commissionEligible !== false ? true : undefined} data-merchant={offer.merchant} data-product={offer.tracking.product} data-placement={offer.tracking.placement} data-page-type={offer.tracking.pageType} data-cta-kind="regular">
           {`Bei ${offer.label} ansehen`}<span aria-hidden="true">→</span>
         </a>
       </div>
@@ -90,7 +91,7 @@ const hasServiceDetails = Boolean(showService && subscriptionCost && (subscripti
     </details> : !subscriptionCost.requiresPayment && <p class="px2-price__service-title"><strong>{serviceLabel}</strong>{servicePrice && <small>{servicePrice}</small>}{subscriptionCost.status === "service-included" && <small>{subscriptionCost.runningCostLabel}</small>}</p>}
   </div>}
 
-  {merchantOffers.length > 0 && <p class="px2-price__disclosure">Bei einem Kauf über diese Links erhalten wir ggf. eine Provision.</p>}
+  {hasAffiliateOffers && <p class="px2-price__disclosure">Bei einem Kauf über diese Links erhalten wir ggf. eine Provision.</p>}
 </section>
 
 <style>

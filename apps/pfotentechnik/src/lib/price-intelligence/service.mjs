@@ -5,6 +5,7 @@ import {
   readProductDocument,
   readProductFiles,
   updateProductOffer,
+  updateProductEditorial,
   updateProductOperations,
   updateProductPrice
 } from "./frontmatter-price.mjs";
@@ -29,6 +30,24 @@ import { httpsDestination } from '../../../../../packages/affiliate-core/src/aff
 const appRoot = path.resolve(fileURLToPath(new URL("../../..", import.meta.url)));
 const productsDir = path.join(appRoot, "src", "content", "products");
 const dedupePriceCheck = createInFlightDeduper();
+
+const editorialFields = data => ({ ratings: data.ratings, rating: data.rating, score: data.score,
+  editorialStatus: data.editorialStatus, updatedAt: data.updatedAt, priceAutomation: data.priceAutomation,
+  evidenceSources: data.evidenceSources, methodology: data.experience?.methodology ?? data.externalEvidence?.consensus?.editorialAssessment ?? '' });
+
+export async function readProductEditorial(slug, { find = findDocument } = {}) {
+  const document = await find(validateSlug(slug));
+  const { createHash } = await import('node:crypto');
+  return { sourceHash: createHash('sha256').update(document.source).digest('hex'), editorial: editorialFields(document.data) };
+}
+
+export async function saveProductEditorial(input, { find = findDocument } = {}) {
+  const document = await find(validateSlug(input?.slug));
+  const saved = await updateProductEditorial(document.file, input.patch, input.expectedHash);
+  const { createHash } = await import('node:crypto');
+  return { ...resultFromDocument(saved), sourceHash: createHash('sha256').update(saved.source).digest('hex'),
+    editorial: editorialFields(saved.data) };
+}
 
 const hostnameLabel = (url) => {
   try { return new URL(url).hostname.replace(/^www\./, ""); } catch { return "Händler"; }
@@ -157,7 +176,12 @@ export async function checkProductPrice(slugInput, {find = findDocument, checkLe
   return dedupePriceCheck(slug, async () => {
     const document = await find(slug);
     const tasks = [];
-    if (allowsAutomaticPriceCheck(document.data) && (document.data.affiliate?.url || document.data.price?.affiliateUrl)) {
+    const legacyTarget = document.data.affiliate?.url || document.data.price?.affiliateUrl;
+    const hasExactOfficialSource = (document.data.offers ?? []).some(offer => {
+      if (offer.mappingStatus !== 'verified' || offer.commerceDataProvider !== 'shopify-product') return false;
+      try { return new URL(offer.officialProductUrl).hostname === new URL(legacyTarget).hostname; } catch { return false; }
+    });
+    if (allowsAutomaticPriceCheck(document.data) && legacyTarget && !hasExactOfficialSource) {
       tasks.push({id:'legacy',provider:'structured-html',run:()=>checkLegacy(document)});
     }
     for (const offer of document.data.offers ?? []) {

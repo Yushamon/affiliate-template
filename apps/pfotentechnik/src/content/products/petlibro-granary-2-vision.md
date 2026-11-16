@@ -17,7 +17,7 @@ category:
   path: "/smarte-futterautomaten/"
 productUrl: "/produkt/petlibro-granary-2-vision/"
 publishedAt: "2026-07-26"
-updatedAt: "2026-07-26"
+updatedAt: '2026-11-16'
 author:
   name: "PfotenTechnik Redaktion"
 seo:
@@ -57,18 +57,19 @@ images:
     - src: "../../assets/images/products/petlibro-granary-2-vision/gallery-3.webp"
       alt: "PETLIBRO-App mit Fressprotokoll des Granary 2 Vision"
 price:
-  current: 129.99
-  currency: "USD"
+  current: 269.99
+  currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-10-16T07:59:53.233Z"
+  variantLabel: "Granary 2 Vision"
+  checkedAt: "2026-11-16T10:02:36.754Z"
   source:
-    id: "petlibro.com"
-    label: "petlibro.com"
+    id: "petlibro-official"
+    label: "PETLIBRO Deutschland"
     type: "merchant"
 affiliate:
   provider: "official"
   label: "Verfügbarkeit prüfen"
-  url: "https://petlibro.com/products/granary-2-series"
+  url: "https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie?variant=54477261242734"
   rel: "nofollow noopener"
   target: "_blank"
 conversion:
@@ -82,20 +83,49 @@ offers:
     merchant: "petlibro"
     network: "awin"
     program: "petlibro-de"
-    mappingStatus: "unresolved"
+    officialProductUrl: "https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie?variant=54477261242734"
+    variantId: "54477261242734"
+    expectedSku: "PL-AF205-31B"
+    mappingStatus: "verified"
+    verifiedAt: "2026-11-16T10:02:36.754Z"
     commerceDataProvider: "shopify-product"
     price:
-      current: null
+      current: 269.99
       currency: "EUR"
       status: "unknown"
-    priceState: "unknown"
-    availability: "unknown"
-    identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
-    evidenceSources: []
-    lastAttemptAt: "2026-11-16T09:07:05.020Z"
-    error: "Offizielle Produkt-URL unresolved."
+      checkedAt: "2026-11-16T10:40:01.435Z"
+      source:
+        id: "petlibro-official"
+        label: "PETLIBRO"
+        type: "merchant"
+        url: "https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie?variant=54477261242734"
+    priceState: "available"
+    availability: "available"
+    availabilityUpdated: "2026-11-16T10:40:01.435Z"
+    evidenceSources:
+      - source: "petlibro-variants"
+        url: "https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie.js"
+        accessedAt: "2026-11-16T10:02:36.754Z"
+        assertion: "Konkrete deutsche Shopify-Variante, SKU, Euro-Preis und Bestellbarkeit wurden getrennt je Modell geprüft."
+        fields:
+          - "officialProductUrl"
+          - "variantId"
+          - "expectedSku"
+          - "price"
+          - "availability"
+        sourceType: "officialStore"
+    lastAttemptAt: "2026-11-16T10:40:01.435Z"
+evidenceSources:
+  - source: petlibro-variants
+    url: https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie.js
+    accessedAt: '2026-11-16T10:02:36.754Z'
+    assertion: Die bestehende Vision-Seite wird auf die exakte DE-Variante AF205, SKU PL-AF205-31B abgebildet; keine zweite Produktseite.
+    fields:
+      - offers
+    sourceType: officialStore
+
 priceState: "available"
-priceUpdated: "2026-10-16T07:59:53.233Z"
+priceUpdated: "2026-11-16T10:02:36.754Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

@@ -1,6 +1,9 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import yaml from "js-yaml";
+import { createHash } from "node:crypto";
+import { productEditorialPatchSchema } from "../../content/schema/product-editorial-patch.mjs";
+import { calculateProductScore } from "../../domain/productScore.ts";
 import { atomicWriteFile } from "../admin/atomic-file.mjs";
 import { productOffersSchema } from '../../content/schema/commerce.mjs';
 import {
@@ -217,7 +220,7 @@ async function persistMutation(file, mutate) {
     const source = await fs.readFile(file, "utf8");
     const parts = splitFrontmatter(source, file);
     const originalData = yaml.load(parts.yaml) ?? {};
-    const result = await mutate({ data: structuredClone(originalData), frontmatter: parts.yaml });
+    const result = await mutate({ data: structuredClone(originalData), frontmatter: parts.yaml, source });
     let nextYaml = result.frontmatter ?? parts.yaml;
 
     if (result.price !== undefined) {
@@ -307,6 +310,32 @@ export async function updateProductPrice(file, price, options = {}) {
     const operationFields = operationFieldsFrom(nextData, { now });
 
     return { frontmatter, price: normalizedPrice, affiliate, removeAffiliate: options.removeAffiliate, operationFields, now };
+  });
+}
+
+// Reuse the serialized, atomic frontmatter writer; commerce fields are not editable here.
+export async function updateProductEditorial(file, input, expectedHash) {
+  const patch = productEditorialPatchSchema.parse(input);
+  if (!/^[a-f0-9]{64}$/.test(expectedHash ?? '')) throw new Error('Gültiger Versionsnachweis fehlt.');
+  return persistMutation(file, async ({ data, frontmatter, source }) => {
+    if (createHash('sha256').update(source).digest('hex') !== expectedHash) throw new Error('Konflikt: Produkt wurde zwischenzeitlich geändert. Neu laden.');
+    const nextData = { ...data };
+    const changes = JSON.parse(JSON.stringify(patch));
+    if (patch.methodology !== undefined) {
+      changes.experience = { ...data.experience, methodology: patch.methodology };
+      delete changes.methodology;
+    }
+    if (patch.ratings) {
+      const result = calculateProductScore({ ratings: patch.ratings });
+      changes.score = result.score;
+      changes.rating = result.rating;
+    }
+    let nextYaml = frontmatter;
+    for (const [key, value] of Object.entries(changes)) {
+      nextYaml = replaceTopLevelBlock(nextYaml, key, yaml.dump({ [key]: value }, { noRefs: true, lineWidth: -1 }).trimEnd());
+      nextData[key] = value;
+    }
+    return { frontmatter: nextYaml, operationFields: operationFieldsFrom(nextData) };
   });
 }
 

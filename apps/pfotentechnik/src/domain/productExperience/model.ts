@@ -298,6 +298,13 @@ const intelligentAlternatives = (
 ) => {
   const currentSlug = slugOf(current);
   const currentData = dataOf(current);
+  if (list<any>(currentData.reviewedAlternatives).length) {
+    return list<any>(currentData.reviewedAlternatives).flatMap((reviewed) => {
+      const entry = allProducts.find((candidate) => slugOf(candidate) === reviewed.slug);
+      if (!entry || reviewed.slug === currentSlug || dataOf(entry).productStatus === "discontinued") return [];
+      return [toAlternative(entry, "editorial", "Redaktionelles Vergleichsmodell", reviewed.reason, priceIndex.bySlug.get(reviewed.slug))];
+    });
+  }
   const currentPrice = priceIndex.bySlug.get(currentSlug);
   const currentAnimals = new Set(list<string>(currentData.comparisonFilters?.animal));
   const candidates = allProducts

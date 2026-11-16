@@ -14,32 +14,38 @@ manufacturer:
 category: { key: "gps-tracker", label: "GPS-Tracker", path: "/gps-tracker/" }
 productUrl: "/produkt/invoxia-biotracker-2026/"
 publishedAt: "2026-08-16"
-updatedAt: "2026-08-16"
+updatedAt: '2026-11-16'
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 seo: { title: "Invoxia Biotracker 2026: GPS, Akku und Tarife", description: "Invoxia Biotracker Edition 2026 mit 37 g, LTE-M, GPS, bis 15 Tagen Akku, IP67 und tarifabhängiger Fernortung einordnen.", canonical: "/produkt/invoxia-biotracker-2026/", sitemap: true, priority: 0.8 }
 hub: { sections: ["produkte", "gps-tracker"] }
 tags: ["gps-tracker", "hund", "invoxia", "gesundheitstracking", "abo"]
 images:
   hero:
-    src: "../../assets/images/products/invoxia-biotracker-2026/hero.webp"
-    alt: "Invoxia Biotracker Edition 2026 in redaktioneller Produktdarstellung"
+    src: ../../assets/images/products/invoxia-biotracker-2026/hero.webp
+    alt: Invoxia Biotracker Edition 2026 – Produktansicht aus dem bestätigten Amazon-Angebot.
   thumbnail:
-    src: "../../assets/images/products/invoxia-biotracker-2026/thumbnail.webp"
-    alt: "Invoxia Biotracker Edition 2026 als kompaktes Produktbild"
+    src: ../../assets/images/products/invoxia-biotracker-2026/thumbnail.webp
+    alt: Invoxia Biotracker Edition 2026 – Produktansicht aus dem bestätigten Amazon-Angebot.
   comparison:
-    src: "../../assets/images/products/invoxia-biotracker-2026/comparison.webp"
-    alt: "Invoxia Biotracker Edition 2026 für den Produktvergleich"
+    src: ../../assets/images/products/invoxia-biotracker-2026/comparison.webp
+    alt: Invoxia Biotracker Edition 2026 – Produktansicht aus dem bestätigten Amazon-Angebot.
   gallery:
-    - src: "../../assets/images/products/invoxia-biotracker-2026/gallery-1.webp"
-      alt: "Invoxia Biotracker Edition 2026 – Produktansicht 1"
-    - src: "../../assets/images/products/invoxia-biotracker-2026/gallery-2.webp"
-      alt: "Invoxia Biotracker Edition 2026 – Produktansicht 2"
-    - src: "../../assets/images/products/invoxia-biotracker-2026/gallery-3.webp"
-      alt: "Invoxia Biotracker Edition 2026 – Produktansicht 3"
-    - src: "../../assets/images/products/invoxia-biotracker-2026/gallery-4.webp"
-      alt: "Invoxia Biotracker Edition 2026 – Produktansicht 4"
+    - src: ../../assets/images/products/invoxia-biotracker-2026/gallery-1.webp
+      alt: >-
+        Invoxia Biotracker Edition 2026 – Herstellerabbildung 1 aus dem bestätigten Angebot; keine eigene
+        Messung.
+    - src: ../../assets/images/products/invoxia-biotracker-2026/gallery-2.webp
+      alt: >-
+        Invoxia Biotracker Edition 2026 – Herstellerabbildung 2 aus dem bestätigten Angebot; keine eigene
+        Messung.
+    - src: ../../assets/images/products/invoxia-biotracker-2026/gallery-3.webp
+      alt: >-
+        Invoxia Biotracker Edition 2026 – Herstellerabbildung 3 aus dem bestätigten Angebot; keine eigene
+        Messung.
 subscription:
-  status: required-subscription
+  status: service-included
+  includedServiceMonths: 12
+  additionalCostNote: "Das bestätigte Amazon-Angebot enthält zwölf Monate Max GPS. Danach ist für Fern-GPS eine kostenpflichtige Verlängerung erforderlich; aktuellen Tarif prüfen."
   requiredForCoreFunction: true
   serviceType: cellular
   serviceModel: subscription
@@ -52,32 +58,32 @@ subscription:
     - { name: "Max GPS monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 12.99, currency: EUR, effectiveMonthlyPrice: 12.99, autoRenew: true }
     - { name: "Max GPS jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 129.90, currency: EUR, effectiveMonthlyPrice: 10.83, autoRenew: true, featured: true, notes: "Jahresbetrag im Voraus" }
 price:
-  current: 119
+  current: 219
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-17T14:31:04.978Z"
+  variantLabel: "Edition 2026 inklusive Max GPS für 1 Jahr"
+  checkedAt: "2026-11-16T10:40:05.613Z"
   source:
-    id: "manual"
-    label: "Invoxia"
-    type: "manual"
-priceAutomation: "editorial"
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+priceAutomation: automatic
 rating: 4.2
 affiliate:
   provider: "invoxia"
   label: "Preis und Verfügbarkeit prüfen"
-  url: "https://amzn.to/3TWnQS5"
+  url: "https://www.amazon.de/dp/B0H4QZMTSY?tag=yusha0f-21"
   rel: "sponsored nofollow noopener"
   target: "_blank"
 
 priceState: "available"
-priceUpdated: "2026-08-17T14:31:04.978Z"
+priceUpdated: "2026-11-16T10:40:05.613Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"
-availabilityUpdated: "2026-08-17T14:31:04.978Z"
 editorialStatus: "complete"
 recommendationStatus: "limited"
-maintenanceStatus: "complete"
+maintenanceStatus: "required"
 
 ratings:
   ortung: 4.4
@@ -158,7 +164,7 @@ specs:
     value: "PC-LN2250 (Polycarbonat) und eloxiertes Aluminium"
 features: ["GPS-Ortung", "Live-Tracking tarifabhängig", "Geofences tarifabhängig", "Aktivität und Schlaf", "Vitalwerttrends"]
 useCase: "GPS-Tracker mit Schwerpunkt Gesundheits- und Aktivitätstrends"
-gps: { animal: ["dog"], deviceWeightGrams: 37, weightBasis: "device", subscriptionRequired: true, includedServiceMonths: 0, transmission: "lte", batteryMaxDays: 15, batteryCondition: "Herstellermaximum; abhängig von Netz, GPS und Nutzung", waterproofRating: "IP67", liveTracking: true, virtualFence: true, activityTracking: true, attachmentType: "collar-attachment" }
+gps: { animal: ["dog"], deviceWeightGrams: 37, weightBasis: "device", subscriptionRequired: true, includedServiceMonths: 12, transmission: "lte", batteryMaxDays: 15, batteryCondition: "Herstellermaximum; abhängig von Netz, GPS und Nutzung", waterproofRating: "IP67", liveTracking: true, virtualFence: true, activityTracking: true, attachmentType: "collar-attachment" }
 comparisonData: { version: 1, custom: { einsatzgebiet: "Gesundheits-/Aktivitätstracking plus GPS", hundegroesse: "Passform am Halsband prüfen", ortung: "GPS; 1-Sekunden-Live im Max-GPS-Tarif", abo: "Max GPS für Fernortung erforderlich", gewicht: "37 g", mindestgewicht: "Nicht separat ausgewiesen", kamera: "Nein", nachtsicht: "Nein", akkulaufzeit: "Bis 15 Tage Herstellerwert", geofencing: "Im Max-GPS-Tarif", audio: "Nein", groesse: "Nicht separat ausgewiesen" } }
 comparisonFilters: { animal: ["dog"], petSize: ["small", "medium", "large"], foodType: [], app: true, camera: false }
 alternatives: ["tractive-dog-6", "pawfit-3", "prothelis-area-pets"]
@@ -169,29 +175,60 @@ faq:
   - { question: "Funktioniert die Fernortung ohne Abo?", answer: "Der kostenlose Basisumfang ist begrenzt. Fern-GPS, Live-Tracking und Sicherheitszonen benötigen laut aktuellem Tarifmodell Max GPS." }
 editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-16", note: "Aktuelle Herstellerbezeichnung verifiziert; Minitailz bleibt nur Lifecycle-Kontext." }
 evidenceSources:
-  - { source: "Invoxia Biotracker Edition 2026", url: "https://www.invoxia.com/en-US/petcare/minitailz-dog-tracker", accessedAt: "2026-08-16", assertion: "Name, Gewicht, Funk, Akku, Schutzart und Trackingfunktionen sind Herstellerangaben.", fields: ["specs", "gps", "decision"] }
-  - { source: "Invoxia Support – subscriptions", url: "https://invoxia-petcare.zendesk.com/hc/en-us/articles/9652849499037--Is-a-subscription-required-to-use-the-Minitailz-Biotracker-GPS", accessedAt: "2026-08-16", assertion: "Tarifabhängigkeit von Fernortung, Live-Tracking und Geofences stammt aus dem offiziellen Support.", fields: ["specs", "faq", "comparisonData"] }
-  - source: "CHIP · Invoxia BioTracker"
-    url: "https://www.chip.de/test/Invoxia-Biotracker-GPS-Hundetracker-im-Test_186580902.html"
-    accessedAt: "2026-08-16"
-    assertion: "Labortest."
+  - source: Invoxia Biotracker Edition 2026
+    url: https://www.invoxia.com/en-US/petcare/minitailz-dog-tracker
+    accessedAt: '2026-08-16T00:00:00.000Z'
+    assertion: Name, Gewicht, Funk, Akku, Schutzart und Trackingfunktionen sind Herstellerangaben.
     fields:
-      - "ratings"
-      - "externalEvidence"
-  - source: "Golem · BioTracker 2026"
-    url: "https://www.golem.de/news/invoxia-biotracker-2026-im-test-whoop-fuer-wau-waus-2605-208683.html"
-    accessedAt: "2026-08-16"
-    assertion: "Langzeitnaher Praxistest."
+      - specs
+      - gps
+      - decision
+  - source: Invoxia Support – subscriptions
+    url: https://invoxia-petcare.zendesk.com/hc/en-us/articles/9652849499037--Is-a-subscription-required-to-use-the-Minitailz-Biotracker-GPS
+    accessedAt: '2026-08-16T00:00:00.000Z'
+    assertion: Tarifabhängigkeit von Fernortung, Live-Tracking und Geofences stammt aus dem offiziellen Support.
     fields:
-      - "ratings"
-      - "externalEvidence"
-  - source: "Trustpilot · Invoxia"
-    url: "https://de.trustpilot.com/review/www.invoxia.com"
-    accessedAt: "2026-08-16"
-    assertion: "Markenweites Nutzersignal."
+      - specs
+      - faq
+      - comparisonData
+  - source: CHIP · Invoxia BioTracker
+    url: https://www.chip.de/test/Invoxia-Biotracker-GPS-Hundetracker-im-Test_186580902.html
+    accessedAt: '2026-08-16T00:00:00.000Z'
+    assertion: Labortest.
     fields:
-      - "ratings"
-      - "externalEvidence"
+      - ratings
+      - externalEvidence
+  - source: Golem · BioTracker 2026
+    url: https://www.golem.de/news/invoxia-biotracker-2026-im-test-whoop-fuer-wau-waus-2605-208683.html
+    accessedAt: '2026-08-16T00:00:00.000Z'
+    assertion: Langzeitnaher Praxistest.
+    fields:
+      - ratings
+      - externalEvidence
+  - source: Trustpilot · Invoxia
+    url: https://de.trustpilot.com/review/www.invoxia.com
+    accessedAt: '2026-08-16T00:00:00.000Z'
+    assertion: Markenweites Nutzersignal.
+    fields:
+      - ratings
+      - externalEvidence
+  - source: Amazon.de ausgewählte Edition 2026
+    url: https://www.amazon.de/dp/B0H4QZMTSY
+    accessedAt: '2026-11-16T10:09:53.807Z'
+    assertion: Titel bestätigt Edition 2026 + Max GPS 1 Jahr. Primäres Kaufangebot 219,00 EUR und Formular-ASIN B0H4QZMTSY direkt geprüft. Die zuvor angefragte ASIN B0H4J2JX4Y lieferte diese andere Auswahl und wurde nicht als Preisquelle akzeptiert.
+    fields:
+      - asin
+      - price
+      - affiliate
+    sourceType: retailer
+  - source: Invoxia Deutschland Biotracker
+    url: https://www.invoxia.com/de/petcare/biotracker
+    accessedAt: '2026-11-16T10:09:53.807Z'
+    assertion: Offizielle deutsche Seite grenzt Edition 2026 mit Live-Tracking und optionalen Tarifstufen ein. Keine medizinische Diagnose und kein eigener Praxistest.
+    fields:
+      - evidenceSources
+      - subscription
+    sourceType: manufacturer
 experience:
   summary: >-
     Redaktionelle Einordnung aus Herstellerdokumentation, unabhängigen Tests und dokumentierten Nutzersignalen.
@@ -202,6 +239,7 @@ experience:
   reliability: >-
     Langzeit- und Zuverlässigkeitsaussagen werden nur so stark gewichtet, wie sie durch die
     angegebenen Quellen gedeckt sind.
+asin: B0H4QZMTSY
 ---
 
 ## Gesundheitsdaten mit klarer Grenze

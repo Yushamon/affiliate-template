@@ -1,0 +1,40 @@
+{
+  "initialResults": [
+    {
+      "slug": "petlibro-granary-2-vision-duo",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "slug": "petlibro-granary-2",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "slug": "mova-suretrack-pro",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "slug": "satellai-collar-go",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "slug": "petlibro-granary-2-vision",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "slug": "tractive-dog-6",
+      "ok": false,
+      "error": "legacy: Quelldatei \u00fcberschreitet das Gr\u00f6\u00dfenlimit."
+    },
+    {
+      "slug": "invoxia-biotracker-2026",
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "note": "DOG 6 was retried separately after the bounded Amazon fetch fix."
+}

@@ -1,0 +1,22 @@
+---
+import { getCollection, render } from 'astro:content';
+import ProjectLayout from '../../../../../layouts/ProjectLayout.astro';
+import ProductRenderer from '../../../../../components/product-standard-2/ProductRenderer.astro';
+import { getProducts } from '../../../../../domain/content/registry';
+import '../../../../../styles/pfotentechnik-product-mobile-premium.css';
+export async function getStaticPaths() {
+  if (!import.meta.env.DEV && process.env.PFOTENTECHNIK_DRAFT_PREVIEW !== '1') return [];
+  return (await getCollection('products')).filter(entry => entry.data.publicationStatus === 'draft')
+    .map(entry => ({ params: { slug: entry.data.slug }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const allProducts = [...await getProducts(), entry];
+---
+<ProjectLayout title={`Entwurf: ${entry.data.title}`} description={entry.data.description} canonical={`/admin/seo/products/${entry.data.slug}/preview/`} noindex={true} mainClass="container--page">
+  <aside><strong>Unveröffentlichter Entwurf.</strong><ul>{entry.data.publicationBlockers.map((blocker: string) => <li>{blocker}</li>)}</ul></aside>
+  <div class="pt-page pt-page--product pt-product-detail" data-product-page>
+    <ProductRenderer product={entry.data} currentEntry={entry} allProducts={allProducts} />
+    <article class="product-editorial-content"><Content /></article>
+  </div>
+</ProjectLayout>

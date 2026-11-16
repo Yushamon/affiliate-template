@@ -1,0 +1,64 @@
+---
+interface Props { slug: string; sourceHash: string; data: any; }
+const { slug, sourceHash, data } = Astro.props;
+const config = JSON.stringify({ slug, sourceHash, serviceUrl: import.meta.env.PUBLIC_SEARCH_ADMIN_URL || 'http://127.0.0.1:4178' }).replaceAll('<', '\\u003c');
+const date = data.updatedAt ? new Date(data.updatedAt).toISOString().slice(0, 10) : '';
+---
+<section class="seo-panel" data-editorial-editor>
+  <h2>Redaktionelle Produktpflege</h2>
+  <p>Kriterien, Quellen und Prüfstand pflegen. Die Gesamtbewertung folgt dem vorhandenen Kriterienmittel; Preise werden separat in der Produktpflege verwaltet.</p>
+  <form class="seo-stack" data-editorial-form>
+    <label>Teilbewertungen als JSON<textarea name="ratings" rows="7" required>{JSON.stringify(data.ratings ?? {}, null, 2)}</textarea></label>
+    <label>Bewertungsgrundlage<textarea name="methodology" rows="5" required>{data.experience?.methodology ?? data.externalEvidence?.consensus?.editorialAssessment ?? ''}</textarea></label>
+    <label>Quellen und Prüfnachweise als JSON<textarea name="evidenceSources" rows="10" required>{JSON.stringify(data.evidenceSources ?? [], null, 2)}</textarea></label>
+    <label>Redaktioneller Status<select name="editorialStatus">{['complete', 'recommended', 'required', 'archived'].map(status => <option value={status} selected={status === data.editorialStatus}>{status}</option>)}</select></label>
+    <label>Inhaltlicher Prüfstand<input name="updatedAt" type="date" value={date} required /></label>
+    <label>Automatische Preisprüfung<select name="priceAutomation"><option value="automatic" selected={data.priceAutomation !== 'editorial'}>Aktiv</option><option value="editorial" selected={data.priceAutomation === 'editorial'}>Redaktionell gesperrt</option></select></label>
+    <button class="pt-button seo-button" type="submit">Redaktionelle Angaben speichern</button>
+    <p role="status" aria-live="polite" data-editorial-result></p>
+  </form>
+  <script type="application/json" data-editorial-config set:html={config} />
+</section>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-editorial-editor]').forEach(root => {
+    const config = JSON.parse(root.querySelector('[data-editorial-config]')!.textContent!);
+    const form = root.querySelector<HTMLFormElement>('form')!;
+    const status = root.querySelector<HTMLElement>('[data-editorial-result]')!;
+    let dirty = false;
+    form.addEventListener('input', () => { dirty = true; });
+    // Read live values from the existing local service, rather than trusting a static build's hash.
+    fetch(`${config.serviceUrl}/api/admin/products/editorial?slug=${encodeURIComponent(config.slug)}`)
+      .then(async response => { if (!response.ok) throw new Error('Pflegeservice nicht erreichbar.'); return response.json(); })
+      .then(result => {
+        if (dirty) return;
+        config.sourceHash = result.sourceHash;
+        for (const name of ['ratings', 'evidenceSources', 'methodology', 'editorialStatus', 'updatedAt', 'priceAutomation']) {
+          const field = form.elements.namedItem(name) as HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
+          const value = result.editorial[name];
+          field.value = ['ratings', 'evidenceSources'].includes(name) ? JSON.stringify(value ?? (name === 'ratings' ? {} : []), null, 2)
+            : name === 'updatedAt' ? String(value ?? '').slice(0, 10) : String(value ?? (name === 'priceAutomation' ? 'automatic' : ''));
+        }
+      }).catch(() => { status.textContent = 'Der lokale Pflegeservice muss zum Speichern erreichbar sein.'; });
+    form.addEventListener('submit', async event => {
+      event.preventDefault();
+      const button = form.querySelector<HTMLButtonElement>('button')!;
+      button.disabled = true;
+      try {
+        const values = new FormData(form);
+        const patch = { ratings: JSON.parse(String(values.get('ratings'))), evidenceSources: JSON.parse(String(values.get('evidenceSources'))),
+          methodology: values.get('methodology'), editorialStatus: values.get('editorialStatus'), updatedAt: values.get('updatedAt'), priceAutomation: values.get('priceAutomation') };
+        const response = await fetch(`${config.serviceUrl}/api/admin/products/editorial`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ slug: config.slug, expectedHash: config.sourceHash, patch }) });
+        const result = await response.json();
+        if (!response.ok) throw new Error(result.error?.message ?? 'Speichern fehlgeschlagen.');
+        config.sourceHash = result.sourceHash;
+        status.textContent = `Gespeichert. Bewertung: ${result.editorial.score}/100. Die öffentliche statische Ansicht übernimmt die Angaben beim nächsten Build.`;
+      } catch (error) { status.textContent = error instanceof Error ? error.message : 'Speichern fehlgeschlagen.'; }
+      finally { button.disabled = false; }
+    });
+  });
+</script>
+<style>
+  label { display:grid; gap:.4rem; margin-block:1rem; }
+  textarea,input,select { width:100%; box-sizing:border-box; padding:.7rem; color:var(--pt-color-text); background:var(--pt-color-surface); border:1px solid var(--pt-color-border); border-radius:6px; }
+  textarea { resize:vertical; font:inherit; }
+</style>

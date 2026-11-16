@@ -4,6 +4,8 @@ import {
   priceAudit,
   setManualProductPrice,
   setProductCommerceOffer,
+  saveProductEditorial,
+  readProductEditorial,
   updateProductOperationsState
 } from "../price-intelligence/service.mjs";
 import {
@@ -33,9 +35,18 @@ const errorStatus = (error) =>
         ? 409
         : 422;
 
-export async function handleOperationsRoute({ request, response, requestUrl, origin, json, assertJsonRequest, readJsonBody }) {
+export async function handleOperationsRoute({ request, response, requestUrl, origin, json, assertJsonRequest, readJsonBody, editorialService = { read: readProductEditorial, save: saveProductEditorial } }) {
   const pathname = requestUrl.pathname;
   try {
+    if (request.method === 'GET' && pathname === '/api/admin/products/editorial') {
+      json(response, 200, await editorialService.read(requestUrl.searchParams.get('slug')), origin);
+      return true;
+    }
+    if (request.method === 'POST' && pathname === '/api/admin/products/editorial') {
+      assertJsonRequest(request);
+      json(response, 200, await editorialService.save(await readJsonBody(request, 131072)), origin);
+      return true;
+    }
     if (request.method === 'POST' && pathname === '/api/admin/prices/offer') {
       assertJsonRequest(request);
       json(response,200,await setProductCommerceOffer(await readJsonBody(request,32768)),origin);

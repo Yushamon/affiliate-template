@@ -1,10 +1,11 @@
 ---
 import { getCollection } from "astro:content";
+import { getProducts } from "../../domain/content/registry";
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import PetAdvisor from "../../components/advisor/PetAdvisor.astro";
 import { mapProductToAdvisor, isFeederAdvisorProduct } from "../../domain/advisor";
 
-const products = (await getCollection("products"))
+const products = (await getProducts())
   .filter(isFeederAdvisorProduct)
   .map(mapProductToAdvisor);
 ---

@@ -265,6 +265,8 @@ const mapComparisonEntry = (
   entry
 });
 
+import { isPublishedProduct } from "../productPublication.mjs";
+
 let pagesPromise: Promise<PageEntry[]> | undefined;
 let productsPromise: Promise<ProductEntry[]> | undefined;
 let manufacturersPromise: Promise<ManufacturerEntry[]> | undefined;
@@ -278,8 +280,8 @@ export const getPages = (): Promise<PageEntry[]> =>
 
 export const getProducts = (): Promise<ProductEntry[]> =>
   import.meta.env.PROD
-    ? (productsPromise ??= getCollection("products"))
-    : getCollection("products");
+    ? (productsPromise ??= getCollection("products", ({ data }) => isPublishedProduct(data)))
+    : getCollection("products", ({ data }) => isPublishedProduct(data));
 
 export const getManufacturers = (): Promise<ManufacturerEntry[]> =>
   import.meta.env.PROD

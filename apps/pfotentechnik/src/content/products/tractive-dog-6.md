@@ -21,7 +21,7 @@ category:
   path: /gps-tracker/
 productUrl: "/produkt/tractive-dog-6/"
 publishedAt: "2026-07-20"
-updatedAt: "2026-08-10"
+updatedAt: '2026-11-16'
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -46,21 +46,21 @@ tags:
   - abo
 images:
   hero:
-    src: "../../assets/images/products/tractive-dog-6/hero.webp"
-    alt: "Tractive DOG 6"
+    src: ../../assets/images/products/tractive-dog-6/hero.webp
+    alt: Tractive DOG 6 – Produktansicht aus dem bestätigten Amazon-Angebot.
   thumbnail:
-    src: "../../assets/images/products/tractive-dog-6/thumbnail.webp"
-    alt: "Tractive DOG 6 – kompakte Produktansicht"
+    src: ../../assets/images/products/tractive-dog-6/thumbnail.webp
+    alt: Tractive DOG 6 – Produktansicht aus dem bestätigten Amazon-Angebot.
   comparison:
-    src: "../../assets/images/products/tractive-dog-6/comparison.webp"
-    alt: "Tractive DOG 6 im GPS-Tracker-Vergleich"
+    src: ../../assets/images/products/tractive-dog-6/comparison.webp
+    alt: Tractive DOG 6 – Produktansicht aus dem bestätigten Amazon-Angebot.
   gallery:
-    - src: "../../assets/images/products/tractive-dog-6/gallery-1.webp"
-      alt: "Tractive DOG 6 – Produktansicht"
-    - src: "../../assets/images/products/tractive-dog-6/gallery-2.webp"
-      alt: "Tractive DOG 6 – Lifestyle-Aufnahme"
-    - src: "../../assets/images/products/tractive-dog-6/gallery-3.webp"
-      alt: "Tractive DOG 6 – Outdoor-Aufnahme"
+    - src: ../../assets/images/products/tractive-dog-6/gallery-1.webp
+      alt: Tractive DOG 6 – Herstellerabbildung 1 aus dem bestätigten Angebot; keine eigene Messung.
+    - src: ../../assets/images/products/tractive-dog-6/gallery-2.webp
+      alt: Tractive DOG 6 – Herstellerabbildung 2 aus dem bestätigten Angebot; keine eigene Messung.
+    - src: ../../assets/images/products/tractive-dog-6/gallery-3.webp
+      alt: Tractive DOG 6 – Herstellerabbildung 3 aus dem bestätigten Angebot; keine eigene Messung.
 subscription:
   status: required-subscription
   requiredForCoreFunction: true
@@ -79,7 +79,7 @@ price:
   current: 67.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-11-02T08:11:06.205Z"
+  checkedAt: "2026-11-16T10:40:03.833Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -94,7 +94,7 @@ rating: 4.6
 score: 92
 
 priceState: "available"
-priceUpdated: "2026-11-02T08:11:06.205Z"
+priceUpdated: "2026-11-16T10:40:03.833Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"
@@ -456,16 +456,34 @@ comparisonData:
       Befestigung, Gehäuse und Ladekontakte regelmäßig auf Schmutz und Schäden prüfen. Vor längeren Ausflügen
       vollständig laden und die Ortung im Freien testen.
 evidenceSources:
-  - source: "Tractive Kundenservice – Akkukapazität und Laufzeit"
-    url: "https://help.tractive.com/hc/de/articles/205664001-Wie-lange-h%C3%A4lt-der-Akku-meines-Trackers"
-    accessedAt: "2026-10-03"
-    assertion: "Modellspezifische Kapazität von 930 mAh sowie maximale Laufzeit mit und ohne Energiesparzone; keine eindeutige Angabe zu Zellchemie oder Nutzeraustausch in dieser Quelle."
-    fields: ["specs", "faq"]
-  - source: "Tractive Kundenservice – Tracker-Auswahl und Abo"
-    url: "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier"
-    accessedAt: "2026-08-25"
-    assertion: "Tractive führt den DOG 6 als aktuelles Modell und erklärt ausdrücklich, dass jeder Tractive-Tracker ein aktives Abo benötigt, um zu funktionieren."
-    fields: ["gps", "gps.subscriptionRequired"]
+  - source: Tractive Kundenservice – Akkukapazität und Laufzeit
+    url: https://help.tractive.com/hc/de/articles/205664001-Wie-lange-h%C3%A4lt-der-Akku-meines-Trackers
+    accessedAt: '2026-10-03T00:00:00.000Z'
+    assertion: Modellspezifische Kapazität von 930 mAh sowie maximale Laufzeit mit und ohne Energiesparzone; keine eindeutige Angabe zu Zellchemie oder Nutzeraustausch in dieser Quelle.
+    fields:
+      - specs
+      - faq
+  - source: Tractive Kundenservice – Tracker-Auswahl und Abo
+    url: https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier
+    accessedAt: '2026-08-25T00:00:00.000Z'
+    assertion: Tractive führt den DOG 6 als aktuelles Modell und erklärt ausdrücklich, dass jeder Tractive-Tracker ein aktives Abo benötigt, um zu funktionieren.
+    fields:
+      - gps
+      - gps.subscriptionRequired
+  - source: Amazon.de exakter DOG 6
+    url: https://www.amazon.de/dp/B0D6Z4L6BW
+    accessedAt: '2026-11-16T10:09:53.807Z'
+    assertion: ASIN und primärer Kaufpreis 67,99 EUR bestätigt. Keine Verfügbarkeit aus dem Preis abgeleitet.
+    fields:
+      - price
+    sourceType: retailer
+  - source: Tractive Deutschland
+    url: https://tractive.com/de/pd/gps-tracker-dog?shopCountry=DE
+    accessedAt: '2026-11-16T10:09:53.807Z'
+    assertion: Die aktuelle offizielle Hunde-Produktseite wurde erneut geprüft; keine Änderung der bestehenden Kriterienbewertungen und keine Vermischung mit DOG 6 XL.
+    fields:
+      - evidenceSources
+    sourceType: manufacturer
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -489,6 +507,7 @@ decisionFacts:
   - label: "Wasserschutz"
     value: "IP68"
     consequence: "Die Schutzklasse ist bei Regen, Reinigung und dauerhaftem Außeneinsatz relevant."
+priceAutomation: automatic
 ---
 Der Tractive DOG 6 ist ein kompakter GPS-Tracker für Hunde ab 4 kg. Er kombiniert satellitengestützte Positionsbestimmung mit LTE-Übertragung an die Tractive-App. Im Live-Modus wird der Standort laut Hersteller etwa alle zwei bis drei Sekunden aktualisiert.
 
