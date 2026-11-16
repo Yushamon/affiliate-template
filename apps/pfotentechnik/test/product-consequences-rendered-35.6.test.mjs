@@ -13,11 +13,13 @@ for (const slug of ['tractive-cat-6-mini', 'tractive-dog-6', 'tractive-dog-6-xl'
     const section = html.match(/<section\b[^>]*class="decision-facts"[^>]*>[\s\S]*?<\/section>/)?.[0];
     assert.ok(section, 'Die echte Produktseite enthält die Entscheidungshilfe.');
     const visible = section.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ');
-    for (const fact of data.decisionFacts) {
-      assert.ok(visible.includes(fact.value), `Sichtbarer Produktwert: ${fact.value}`);
-      assert.ok(visible.includes(fact.consequence), `Sichtbare Einordnung: ${fact.consequence}`);
+    for (const spec of data.specs.filter(spec => /akku/i.test(spec.label))) {
+      assert.ok(visible.includes(spec.value), `Sichtbarer Akkuwert: ${spec.value}`);
     }
-    assert.match(visible, /Live-Ortung/);
+    const consequences = [...section.matchAll(/<dd\b[^>]*>([\s\S]*?)<\/dd>/g)].map(match => match[1]);
+    const batteryCount = data.specs.filter(spec => /akku/i.test(spec.label)).length;
+    assert.equal(consequences.filter(text => /reale Akkulaufzeit/.test(text)).length, batteryCount);
+    assert.doesNotMatch(visible, /nachgefüllt/);
     assert.doesNotMatch(html, /Kein integrierter Akku|Ohne Netzstrom läuft das Gerät nur weiter/);
     // Missing details remain visible as uncertainty, rather than a claimed absence.
     assert.match(html, /Zellchemie und Austausch durch Nutzer/);

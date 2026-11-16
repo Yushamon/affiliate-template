@@ -32,11 +32,11 @@ const featureStatus = (value: string, feature: string, allowShortAnswer: boolean
   const modifiers = "(?:(?:ein|eine|einen|der|die|das|integrierte[mnrs]?|eingebaute[mnrs]?|wiederaufladbare[mnrs]?) )*";
   const noun = `(?:${feature})`;
   const absent = new RegExp(`\\b(?:kein(?:e[nrs]?)?|ohne) ${modifiers}${noun}\\b|\\b${noun} (?:ist |sind )?nicht (?:vorhanden|integriert|eingebaut|vorgesehen)\\b`);
-  if (absent.test(value) || (allowShortAnswer && /^(?:nein|nicht vorhanden|nicht vorgesehen)$/.test(value))) {
+  if (absent.test(value) || (allowShortAnswer && /^(?:nein|nicht vorhanden|nicht vorgesehen)(?: |$)/.test(value))) {
     return "absent";
   }
   const present = new RegExp(`\\b(?:integrierte[mnrs]?|eingebaute[mnrs]?|wiederaufladbare[mnrs]?) ${modifiers}${noun}\\b|\\b${noun} (?:ist |sind )?(?:vorhanden|integriert|eingebaut)\\b|\\bmit ${modifiers}${noun}\\b`);
-  if (present.test(value) || (allowShortAnswer && /^(?:ja|vorhanden|integriert)$/.test(value))) {
+  if (present.test(value) || (allowShortAnswer && /^(?:ja|vorhanden|integriert)(?: |$)/.test(value))) {
     return "present";
   }
   return "unknown";
@@ -51,7 +51,7 @@ const implicationFor = (
   const normalizedValue = normalize(value);
   const normalizedCategory = normalize(category);
 
-  if (key.includes("kapazitaet") || key.includes("volumen")) {
+  if (!key.includes("akku") && (key.includes("kapazitaet") || key.includes("volumen"))) {
     if (normalizedCategory.includes("futter")) {
       return "Die tatsächliche Reichweite hängt von Portionsgröße, Futterdichte und Anzahl der Tiere ab.";
     }

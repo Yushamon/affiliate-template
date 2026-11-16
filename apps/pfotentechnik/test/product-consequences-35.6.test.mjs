@@ -48,14 +48,32 @@ for (const label of ['App', 'WLAN', 'Kamera']) {
   test(`${label}: vorhandene Funktion trotz fehlender Detailangaben`, () => {
     assert.match(derive(label, `${label} vorhanden, keine Angaben zur Version`)[0]?.consequence ?? '', label === 'Kamera' ? /kontrollieren/ : /Ferne/);
   });
+  test(`${label}: eindeutige Kurzantwort mit zusätzlichen Details`, () => {
+    assert.match(derive(label, 'Ja, weitere Details nicht dokumentiert')[0]?.consequence ?? '', label === 'Kamera' ? /kontrollieren/ : /Ferne/);
+    assert.match(derive(label, 'Nein, weitere Details nicht dokumentiert')[0]?.consequence ?? '', label === 'Kamera' ? /beschränkt/ : /unabhängiger/);
+  });
 }
 
 const slugs = ['tractive-cat-6-mini', 'tractive-dog-6', 'tractive-dog-6-xl'];
+test('Akkukapazität beschreibt keinen nachfüllbaren Vorratsbehälter', () => {
+  assert.match(derive('Akkukapazität', '450 mAh')[0]?.consequence ?? '', /reale Akkulaufzeit/);
+  assert.deepEqual(derive('Akkukapazität', 'Keine Angaben'), []);
+});
+for (const category of ['Trinkbrunnen', 'Futterautomaten']) {
+  test(`mAh-Akkukapazität bleibt von Volumenregeln ausgeschlossen: ${category}`, () => {
+    const facts = derive('Akkukapazität', '2150 mAh laut Hersteller', category);
+    assert.equal(facts.length, 1);
+    assert.match(facts[0].consequence, /Ein Akku ermöglicht Betrieb/);
+    assert.doesNotMatch(facts[0].consequence, /Volumen|Nachfüllen|nachgefüllt|Futterdichte|Portionsgröße/);
+    assert.deepEqual(derive('Akkukapazität', 'Keine Angaben', category), []);
+  });
+}
+
 for (const slug of slugs) {
   test(`${slug}: echte Produktdaten und automatische Laufzeitableitung`, () => {
     const source = fs.readFileSync(new URL(`../src/content/products/${slug}.md`, import.meta.url), 'utf8');
     const data = yaml.load(source.match(/^---\s*\n([\s\S]*?)\n---/)[1]);
-    const batterySpecs = data.specs.filter(spec => /akku/i.test(spec.label) && !/kapazität/i.test(spec.label));
+    const batterySpecs = data.specs.filter(spec => /akku/i.test(spec.label));
     for (const spec of batterySpecs) {
       assert.match(derive(spec.label, spec.value)[0]?.consequence ?? '', /reale Akkulaufzeit/);
     }
