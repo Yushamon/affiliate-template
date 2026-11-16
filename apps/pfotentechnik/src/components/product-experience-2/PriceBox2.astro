@@ -59,7 +59,7 @@ const hasServiceDetails = Boolean(showService && subscriptionCost && (subscripti
       <div class="px2-offer__heading"><strong>{offer.label}</strong>{offer.variantLabel && <small>{offer.variantLabel}</small>}</div>
       <div class:list={["px2-offer__main", !offer.displayPrice && "has-no-price"]}>
         {offer.displayPrice && <dl class="px2-price__purchase">
-          <dt>{offer.historicalPrice ? "Früherer Anschaffungspreis" : "Anschaffungspreis"}</dt>
+          <dt>{offer.historicalPrice ? "Früherer Anschaffungspreis" : offer.variantLabel?.startsWith("Paketangebot:") ? "Paketpreis inklusive Jahrespaket" : "Anschaffungspreis"}</dt>
           <dd>{offer.displayPrice}</dd>
           <small>{offer.historicalPrice ? (price?.isStale ? "Veralteter Preisstand" : "Nicht aktuell bestätigt") : "Hinterlegter Preis"}</small>
         </dl>}
@@ -69,6 +69,7 @@ const hasServiceDetails = Boolean(showService && subscriptionCost && (subscripti
         </a>
       </div>
       {Number.isFinite(offer.shipping) && <small>Versand: {offer.shipping.toLocaleString('de-DE', {style:'currency',currency:offer.currency})}</small>}
+      {offer.commissionEligible === false && offer.availability === "unknown" && <p class="px2-price__note">Lieferbarkeit nicht bestätigt. Ein hinterlegter Preis belegt keine Lieferbarkeit.</p>}
     </article>)}
   </div> : <p class="px2-price__empty">Derzeit ist keine geprüfte Händleroption hinterlegt.</p>}
 
@@ -79,7 +80,7 @@ const hasServiceDetails = Boolean(showService && subscriptionCost && (subscripti
       <div><dt>Laufende Kosten</dt><dd><strong>{serviceLabel}</strong><span>{servicePrice || "Tarif beim Anbieter prüfen"}</span>{subscriptionCost.billingLabel && <small>{subscriptionCost.billingLabel}</small>}{subscriptionCost.stale && <small>Tarifstand veraltet</small>}</dd></div>
     </dl>}
     {hasServiceDetails ? <details class="px2-price__details">
-      <summary><span class="px2-price__service-title"><strong>{subscriptionCost.requiresPayment ? "Tarife und Berechnung" : serviceLabel}</strong>{!subscriptionCost.requiresPayment && servicePrice && <small>{servicePrice}</small>}{!subscriptionCost.requiresPayment && subscriptionCost.status === "service-included" && <small>{subscriptionCost.runningCostLabel}</small>}{subscriptionCost.optional && subscriptionCost.provider && <small>{subscriptionCost.provider}</small>}</span><span class="px2-price__chevron" aria-hidden="true">⌄</span></summary>
+      <summary><span class="px2-price__service-title"><strong>{subscriptionCost.requiresPayment ? "Tarife und Berechnung" : serviceLabel}</strong>{!subscriptionCost.requiresPayment && servicePrice && <small>{subscriptionCost.status === "service-included" ? `Nach der Inklusivzeit: ${servicePrice}` : servicePrice}</small>}{!subscriptionCost.requiresPayment && subscriptionCost.status === "service-included" && <small>{subscriptionCost.runningCostLabel}</small>}{subscriptionCost.optional && subscriptionCost.provider && <small>{subscriptionCost.provider}</small>}</span><span class="px2-price__chevron" aria-hidden="true">⌄</span></summary>
       <div class="px2-price__details-body">
         {subscriptionCost.additionalCostNote && <p>{subscriptionCost.additionalCostNote}</p>}
         {subscriptionCost.stale && <p><strong>Tarifstand veraltet:</strong> Aktuellen Tarif beim Anbieter prüfen.</p>}

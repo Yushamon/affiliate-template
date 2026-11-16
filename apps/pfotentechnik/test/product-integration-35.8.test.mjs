@@ -136,7 +136,7 @@ test('Invoxia-Jahrespaket zählt enthaltene Monate nicht noch einmal als Zusatzk
   const { buildSubscriptionCostModel } = await import('../src/domain/subscriptionCosts.ts');
   const { data } = await readProductDocument(new URL('../src/content/products/invoxia-biotracker-2026.md', import.meta.url).pathname);
   assert.equal(data.asin, 'B0H4QZMTSY');
-  assert.match(data.price.variantLabel, /1 Jahr/);
+  assert.match(data.price.variantLabel, /Paketangebot.*Jahrespaket.*12 Monate/);
   assert.equal(data.gps.includedServiceMonths, 12);
   assert.equal(data.subscription.includedServiceMonths, 12);
   const model = buildSubscriptionCostModel({ subscription: data.subscription, devicePrice: data.price.current, now: '2026-11-16' });

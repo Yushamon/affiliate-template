@@ -54,7 +54,8 @@ images:
       alt: MOVA SureTrack Pro – Herstellerabbildung 2; Funktionsdarstellung, keine eigene Messung.
     - src: ../../assets/images/products/mova-suretrack-pro/gallery-3.webp
       alt: MOVA SureTrack Pro – Herstellerabbildung 3; Funktionsdarstellung, keine eigene Messung.
-rating: 3
+rating: 2.9
+
 priceState: "available"
 priceUpdated: "2026-11-16T10:40:00.069Z"
 priceAvailable: true
@@ -67,12 +68,14 @@ recommendationStatus: "recommended"
 maintenanceStatus: "complete"
 
 ratings:
-  ortung: 3.5
+  ortung: 3
   app: 3
-  akku: 3
-  tragekomfort: 3
+  akku: 2.5
+  tragekomfort: 3.5
   kosten: 2.5
 decisionFacts: []
+score: 58
+
 editorial:
   assessmentType: data-review
   evidence:
@@ -100,6 +103,7 @@ strengths:
   - Sprach- beziehungsweise akustische Rückrufsignale
   - Herstellerangebot in Euro nachgewiesen
 weaknesses:
+  - "F.A.Z. Kaufkompass berichtet ausgebliebene Geofence-Alarme; Warnungen selbst testen."
   - Laufende Mobilfunkkosten
   - Reale Laufzeit hängt stark von Nutzung und Empfang ab
   - Keine eigene Messung von Ortungsgenauigkeit oder Alarmverzögerung
@@ -146,7 +150,7 @@ specs:
 evidenceSources:
   - source: mova-de
     url: https://de.mova.tech/products/suretrack-pro-gps-tiertracker
-    accessedAt: "2026-11-16T10:02:39.281Z"
+    accessedAt: '2026-11-16T10:02:39.281Z'
     assertion: Offizielle modellbezogene Angaben zu Masse, Schutzart, App und bedingter Laufzeit. Keine eigene Messung.
     fields:
       - specs
@@ -155,29 +159,42 @@ evidenceSources:
     sourceType: manufacturer
   - source: mova-variant
     url: https://de.mova.tech/products/suretrack-pro-gps-tiertracker.js
-    accessedAt: "2026-11-16T10:02:37.844Z"
+    accessedAt: '2026-11-16T10:02:37.844Z'
     assertion: Ausgewählte EU-/DE-Variante, SKU und aktueller Preis in Euro.
     fields:
       - mpn
       - price
     sourceType: officialStore
   - source: mova-connect
-    url: >-
-      https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html
-    accessedAt: "2026-11-16T10:02:39.609Z"
-    assertion: >-
-      Unabhängiger GPS-Tracker-Vergleich behandelt MOVA SureTrack Pro, SATELLAI Collar Go und Tractive DOG 6
-      ausdrücklich. Keine Übernahme fremder Testnoten als eigene Bewertung.
+    url: https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html
+    accessedAt: '2026-11-16T10:02:39.609Z'
+    assertion: Unabhängiger GPS-Tracker-Vergleich behandelt MOVA SureTrack Pro, SATELLAI Collar Go und Tractive DOG 6 ausdrücklich. Keine Übernahme fremder Testnoten als eigene Bewertung.
     fields:
       - experience
       - review
     sourceType: independentSource
   - source: mova-test
     url: https://produkte-im-test.de/mova-suretrack-pro-im-praxistest/
-    accessedAt: "2026-11-16T10:02:40.692Z"
+    accessedAt: '2026-11-16T10:02:40.692Z'
     assertion: Eigenständiger Praxistest; kostenlos vom Hersteller gestelltes Testgerät wird offengelegt.
     fields:
       - externalEvidence
+    sourceType: independentSource
+  - source: connect – modellübergreifender Praxistest
+    url: https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html
+    accessedAt: '2026-11-16T00:00:00.000Z'
+    assertion: Direkter Vergleich von App, Laufzeit und Gerätemasse; Protokoll und Betriebsbedingungen sind keine universellen Dauerwerte.
+    fields:
+      - ratings
+      - experience.methodology
+    sourceType: independentSource
+  - source: F.A.Z. Kaufkompass – SureTrack Pro
+    url: https://www.faz.net/kaufkompass/test/der-beste-gps-tracker-fuer-hunde/
+    accessedAt: '2026-11-16T00:00:00.000Z'
+    assertion: Abweichende Erfahrung mit Sicherheitszonen; Funktionsumfang und Einrichtung werden kritisch eingeordnet.
+    fields:
+      - ratings
+      - experience.methodology
     sourceType: independentSource
 priceAutomation: automatic
 price:
@@ -219,15 +236,8 @@ decision:
     - Hersteller-Maximallaufzeit ist kein Dauerwert
     - Gesundheitstrends liefern keine Diagnose
 experience:
-  summary: >-
-    Für Halter mit Mobilfunkabdeckung und Bereitschaft zu laufenden Abo-Kosten; Rückrufsignale erfordern
-    Gewöhnung und ersetzen kein Training.
-  methodology: >-
-    Konservative redaktionelle Eignungsbewertung aus Herstellerangaben und getrennt dokumentierten Fremdtests;
-    kein eigener Praxistest. Ortung 3,5/5 für dokumentierte Mobilfunk-/GPS-Funktionen ohne eigene
-    Latenzmessung; App 3,0/5 wegen Plattformabhängigkeit; Akku 3,0/5 wegen bedingter Maximalwerte;
-    Tragekomfort 3,0/5 wegen zu prüfender Masse und Befestigung; Kosten 2,5/5 wegen Pflicht-Abo. Fünf
-    Kriterien gleich gewichtet. Gerätepreis und Händlerprovision beeinflussen die Kriterien nicht.
+  summary: Für Halter mit Mobilfunkabdeckung und Bereitschaft zu laufenden Abo-Kosten; Rückrufsignale erfordern Gewöhnung und ersetzen kein Training.
+  methodology: 'Redaktionelle Datenbewertung, kein eigener Praxistest. Ortung 3,0/5: connect beurteilt die Positionierung positiv, F.A.Z. Kaufkompass meldet ausgebliebene Geofence-Alarme. App 3,0/5: verständlich, aber eingeschränkter Funktionsumfang. Akku 2,5/5: Fremdtests berichten etwa drei bis vier Tage. Tragekomfort 3,5/5: Gewichtsvorteil mit 36,4 g; keine eigene Tragemessung. Kosten 2,5/5: Pflicht-Abo. Kriterien gleich gewichtet; Gerätepreis und Provision ohne Einfluss. Widersprüchliche Testerfahrungen erlauben keine Zuverlässigkeitsgarantie.'
 subscription:
   status: required-subscription
   requiredForCoreFunction: true
@@ -294,7 +304,7 @@ Ausbruchwarnungen und Standortverlauf; Tiere mit passender Halsbandbefestigung. 
 
 ## Bewertung und Grenzen
 
-Konservative redaktionelle Eignungsbewertung aus Herstellerangaben und getrennt dokumentierten Fremdtests; kein eigener Praxistest. Ortung 3,5/5 für dokumentierte Mobilfunk-/GPS-Funktionen ohne eigene Latenzmessung; App 3,0/5 wegen Plattformabhängigkeit; Akku 3,0/5 wegen bedingter Maximalwerte; Tragekomfort 3,0/5 wegen zu prüfender Masse und Befestigung; Kosten 2,5/5 wegen Pflicht-Abo. Fünf Kriterien gleich gewichtet. Gerätepreis und Händlerprovision beeinflussen die Kriterien nicht.
+Redaktionelle Datenbewertung, kein eigener Praxistest. Ortung 3,0/5: connect beurteilt die Positionierung positiv, F.A.Z. Kaufkompass meldet ausgebliebene Geofence-Alarme. App 3,0/5: verständlich, aber eingeschränkter Funktionsumfang. Akku 2,5/5: Fremdtests berichten etwa drei bis vier Tage. Tragekomfort 3,5/5: Gewichtsvorteil mit 36,4 g; keine eigene Tragemessung. Kosten 2,5/5: Pflicht-Abo. Kriterien gleich gewichtet; Gerätepreis und Provision ohne Einfluss. Widersprüchliche Testerfahrungen erlauben keine Zuverlässigkeitsgarantie.
 
 ## Folgekosten und Betrieb
 
@@ -311,3 +321,5 @@ Ein Mobilfunktarif ist für die Fernortung erforderlich. Empfang, Live-Ortung un
 - [mova-variant](https://de.mova.tech/products/suretrack-pro-gps-tiertracker.js): Ausgewählte EU-/DE-Variante, SKU und aktueller Preis in Euro. Abruf: 2026-11-16.
 - [mova-connect](https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html): Unabhängiger GPS-Tracker-Vergleich behandelt MOVA SureTrack Pro, SATELLAI Collar Go und Tractive DOG 6 ausdrücklich. Keine Übernahme fremder Testnoten als eigene Bewertung. Abruf: 2026-11-16.
 - [mova-test](https://produkte-im-test.de/mova-suretrack-pro-im-praxistest/): Eigenständiger Praxistest; kostenlos vom Hersteller gestelltes Testgerät wird offengelegt. Abruf: 2026-11-16.
+
+- [F.A.Z. Kaufkompass: eigener GPS-Praxistest](https://www.faz.net/kaufkompass/test/der-beste-gps-tracker-fuer-hunde/): Abweichende Erfahrung mit Geofence-Alarmen; berücksichtigt bei Ortung und Bewertungsgrenzen. Abruf: 2026-11-16.

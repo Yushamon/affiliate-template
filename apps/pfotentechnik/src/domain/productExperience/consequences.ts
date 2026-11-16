@@ -182,13 +182,27 @@ export const buildDecisionFacts = (
 
   const output: DecisionFact[] = [];
   const seen = new Set<string>();
+  // Targeted GPS consolidation: experiment 35.5 covers other categories.
+  // Merge the presentation only; persisted editorial originals stay untouched.
+  const compact = /gps|tracker/.test(normalize(category));
+  const append = (fact: DecisionFact) => {
+    const previous = compact && output.find(item => normalize(item.consequence) === normalize(fact.consequence));
+    if (previous) {
+      if (previous.source === "technical-specification" && fact.source === "technical-specification") {
+        previous.label += ` / ${fact.label}`;
+        previous.value += ` · ${fact.value}`;
+      }
+      return;
+    }
+    output.push(fact);
+  };
 
   for (const fact of explicit) {
     const key = normalize(fact.label);
     if (seen.has(key)) continue;
     seen.add(key);
-    output.push(fact);
-    if (output.length >= 6) return output;
+    append(fact);
+    if (!compact && output.length >= 6) return output;
   }
 
   for (const spec of specs) {
@@ -197,16 +211,16 @@ export const buildDecisionFacts = (
     const key = normalize(spec.label);
     if (seen.has(key)) continue;
     seen.add(key);
-    output.push({
+    append({
       label: spec.label,
       value: spec.value,
       consequence,
       source: "technical-specification"
     });
-    if (output.length >= 6) break;
+    if (!compact && output.length >= 6) break;
   }
 
-  return output;
+  return output.slice(0, 6);
 };
 
 export type { DecisionFact };

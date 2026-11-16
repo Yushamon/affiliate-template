@@ -17,7 +17,7 @@ Zwei neue GPS-Produkte sind freigegeben, zwei PETLIBRO-Modelle bleiben unveröff
 
 ## Tests und Reproduktion
 
-Produktionsbuild: 390 Seiten erfolgreich. Relevante Tests: 140 bestanden, keine Fehler. Diff einschließlich Index und Arbeitskopie geprüft; keine Whitespace-Fehler.
+Produktionsbuild: 390 Seiten erfolgreich. Relevante Tests: 145 bestanden, keine Fehler. Diff einschließlich Index und Arbeitskopie geprüft; keine Whitespace-Fehler.
 
 Die maschinenlesbaren Details, Quellen und Feldzuordnungen stehen in [product-integration-35.8.json](product-integration-35.8.json). Der Browser prüft Galerie öffnen/weiter/schließen, Bilder, Überlauf, Preise, Kaufziele, Canonical und Robots in 24 Fällen. Cockpit-Tests prüfen echte API-Routen, atomare Speicherung, Versionskonflikte, Kriterienberechnung und eine manuelle Preisänderung bis in die echte Kaufkomponente. Der öffentliche Datenbestand übernimmt Änderungen beim nächsten statischen Build.
 
@@ -81,7 +81,7 @@ Die Integration legt nur fehlende Kandidatendateien an; bestehende redaktionelle
 - Preis: 79 EUR bei de.mova.tech; Prüfung 2026-11-16T10:40:00.069Z; Verfügbarkeit available.
 - Bilder: manufacturer-product-image; Herkunft und Prüfsummen: [Nachweis](../src/assets/images/products/mova-suretrack-pro/media-provenance-35.8.json).
 - Cockpit: [Produktpflege](https://pfotentechnik.de/admin/seo/products/mova-suretrack-pro/); bestehende Preis-/Angebotsverwaltung und neuer allgemeiner Editor für Kriterien, Quellen, Status und Datum.
-- Bewertung: 60/100. Konservative redaktionelle Eignungsbewertung aus Herstellerangaben und getrennt dokumentierten Fremdtests; kein eigener Praxistest. Ortung 3,5/5 für dokumentierte Mobilfunk-/GPS-Funktionen ohne eigene Latenzmessung; App 3,0/5 wegen Plattformabhängigkeit; Akku 3,0/5 wegen bedingter Maximalwerte; Tragekomfort 3,0/5 wegen zu prüfender Masse und Befestigung; Kosten 2,5/5 wegen Pflicht-Abo. Fünf Kriterien gleich gewichtet. Gerätepreis und Händlerprovision beeinflussen die Kriterien nicht.
+- Bewertung: 58/100. Redaktionelle Datenbewertung, kein eigener Praxistest. Ortung 3,0/5: connect beurteilt die Positionierung positiv, F.A.Z. Kaufkompass meldet ausgebliebene Geofence-Alarme. App 3,0/5: verständlich, aber eingeschränkter Funktionsumfang. Akku 2,5/5: Fremdtests berichten etwa drei bis vier Tage. Tragekomfort 3,5/5: Gewichtsvorteil mit 36,4 g; keine eigene Tragemessung. Kosten 2,5/5: Pflicht-Abo. Kriterien gleich gewichtet; Gerätepreis und Provision ohne Einfluss. Widersprüchliche Testerfahrungen erlauben keine Zuverlässigkeitsgarantie.
 - Verlinkung: Herstellerprofil, Kategorie, Alternativen und Hundevergleich öffentlich verknüpft.
 - Vergleiche: beste-gps-tracker-fuer-hunde.
 - Visuelle/Funktionsprüfung: 4 Fälle bestanden.
@@ -99,7 +99,7 @@ Die Integration legt nur fehlende Kandidatendateien an; bestehende redaktionelle
 - Preis: 67 EUR bei global.satellai.com; Prüfung 2026-11-16T10:40:01.240Z; Verfügbarkeit unknown.
 - Bilder: manufacturer-product-image; Herkunft und Prüfsummen: [Nachweis](../src/assets/images/products/satellai-collar-go/media-provenance-35.8.json).
 - Cockpit: [Produktpflege](https://pfotentechnik.de/admin/seo/products/satellai-collar-go/); bestehende Preis-/Angebotsverwaltung und neuer allgemeiner Editor für Kriterien, Quellen, Status und Datum.
-- Bewertung: 60/100. Konservative redaktionelle Eignungsbewertung aus Herstellerangaben und getrennt dokumentierten Fremdtests; kein eigener Praxistest. Ortung 3,5/5 für dokumentierte Mobilfunk-/GPS-Funktionen ohne eigene Latenzmessung; App 3,0/5 wegen Plattformabhängigkeit; Akku 3,0/5 wegen bedingter Maximalwerte; Tragekomfort 3,0/5 wegen zu prüfender Masse und Befestigung; Kosten 2,5/5 wegen Pflicht-Abo. Fünf Kriterien gleich gewichtet. Gerätepreis und Händlerprovision beeinflussen die Kriterien nicht.
+- Bewertung: 62/100. Redaktionelle Datenbewertung, kein eigener Praxistest. Ortung 3,5/5 und App 3,5/5: positive Fremdtests bei connect und CHIP. Akku 3,0/5: CHIP misst 108 Stunden; die höhere Hersteller-Maximallaufzeit wird nicht als Alltagsergebnis gewertet. Tragekomfort 3,0/5: 49 g laut EU-Daten, Befestigung vor jedem Einsatz prüfen. Kosten 2,5/5: Pflicht-Abo, regionaler Tarif ungeklärt. Kriterien gleich gewichtet; Gerätepreis, Lieferstatus und Provision ohne Einfluss. Unterschiedliche Testbedingungen begrenzen direkte Laufzeitvergleiche.
 - Verlinkung: Herstellerprofil, Kategorie, Alternativen und Hundevergleich öffentlich verknüpft.
 - Vergleiche: beste-gps-tracker-fuer-hunde.
 - Visuelle/Funktionsprüfung: 4 Fälle bestanden.
@@ -164,30 +164,30 @@ Die Integration legt nur fehlende Kandidatendateien an; bestehende redaktionelle
 
 ### tractive-cat-6-mini
 
-- **Akkutechnik und Austausch Integrierter, wiederaufladbarer Akku; Zellchemie und Austausch durch Nutzer in den geprüften modellspezifischen Herstellerangaben nicht eindeutig dokumentiert**: Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert.
+- **Akkutechnik und Austausch / Akkukapazität / Akkulaufzeit Integrierter, wiederaufladbarer Akku; Zellchemie und Austausch durch Nutzer in den geprüften modellspezifischen Herstellerangaben nicht eindeutig dokumentiert · 450 mAh · Bis zu 7 Tage mit Energiesparzone; bis zu 4 Tage ohne Energiesparzone**: Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert.
 - **Abo Erforderlich; ein Abo pro Tracker**: Für den realen Preisvergleich zählen die Gesamtkosten über mehrere Jahre, nicht nur der Gerätepreis.
 - **App Tractive GPS App; Android 10 oder neuer, iOS 17 oder neuer**: Einstellungen lassen sich aus der Ferne ändern; Einrichtung, Konto und Netzstabilität werden dafür wichtiger.
-- **Akkukapazität 450 mAh**: Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert.
-- **Akkulaufzeit Bis zu 7 Tage mit Energiesparzone; bis zu 4 Tage ohne Energiesparzone**: Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert.
 - **Stromversorgung Integrierter Akku**: Die Angabe zeigt, ob das Gerät am Netz, kabellos oder nur mit einer Backup-Lösung arbeitet und was bei Stromausfall weiterläuft.
+- **Wasserschutz IP68**: Die Schutzklasse ist besonders bei Regen, Reinigung und dauerhaftem Außeneinsatz relevant.
+- **Abmessungen 95 × 20 × 13 mm**: Die Maße sollten nicht nur zum Stellplatz, sondern auch zur Körpergröße und Nutzung des Tieres passen.
 
 ### tractive-dog-6
 
-- **Akkutechnik und Austausch Integrierter, wiederaufladbarer Akku; Zellchemie und Austausch durch Nutzer in den geprüften modellspezifischen Herstellerangaben nicht eindeutig dokumentiert**: Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert.
+- **Akkutechnik und Austausch / Akkulaufzeit / Akku Integrierter, wiederaufladbarer Akku; Zellchemie und Austausch durch Nutzer in den geprüften modellspezifischen Herstellerangaben nicht eindeutig dokumentiert · Laut Tractive bis zu 14 Tage mit Energiesparzonen; bis zu 6 Tage ohne · Integrierter Akku, laut Support 930 mAh**: Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert.
 - **Abo Erforderlich; ein eigenes Abo pro Tracker**: Für den realen Preisvergleich zählen die Gesamtkosten über mehrere Jahre, nicht nur der Gerätepreis.
 - **App Tractive GPS App; Android 10 oder neuer, iOS/iPadOS 17 oder neuer**: Einstellungen lassen sich aus der Ferne ändern; Einrichtung, Konto und Netzstabilität werden dafür wichtiger.
-- **Akkulaufzeit Laut Tractive bis zu 14 Tage mit Energiesparzonen; bis zu 6 Tage ohne**: Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert.
 - **Stromversorgung Integrierter Akku; Laden über das mitgelieferte USB-C-Ladekabel**: Die Angabe zeigt, ob das Gerät am Netz, kabellos oder nur mit einer Backup-Lösung arbeitet und was bei Stromausfall weiterläuft.
-- **Akku Integrierter Akku, laut Support 930 mAh**: Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert.
+- **Wasserschutz IP68**: Die Schutzklasse ist besonders bei Regen, Reinigung und dauerhaftem Außeneinsatz relevant.
+- **Abmessungen 71 × 29 × 17 mm**: Die Maße sollten nicht nur zum Stellplatz, sondern auch zur Körpergröße und Nutzung des Tieres passen.
 
 ### tractive-dog-6-xl
 
-- **Akkukapazität 2150 mAh laut Tractive**: Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert.
-- **Akkutechnik und Austausch Integrierter, wiederaufladbarer Akku; Zellchemie und Austausch durch Nutzer in den geprüften modellspezifischen Herstellerangaben nicht eindeutig dokumentiert**: Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert.
+- **Akkukapazität / Akkutechnik und Austausch / Akkulaufzeit 2150 mAh laut Tractive · Integrierter, wiederaufladbarer Akku; Zellchemie und Austausch durch Nutzer in den geprüften modellspezifischen Herstellerangaben nicht eindeutig dokumentiert · Bis zu 42 Tage mit Energiesparzonen; bis zu 20 Tage ohne**: Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert.
 - **Abo Erforderlich; ein eigenes Abo pro Tracker**: Für den realen Preisvergleich zählen die Gesamtkosten über mehrere Jahre, nicht nur der Gerätepreis.
 - **App Tractive GPS App; Android 10 oder neuer, iOS/iPadOS 17 oder neuer**: Einstellungen lassen sich aus der Ferne ändern; Einrichtung, Konto und Netzstabilität werden dafür wichtiger.
-- **Akkulaufzeit Bis zu 42 Tage mit Energiesparzonen; bis zu 20 Tage ohne**: Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert.
 - **Stromversorgung Integrierter Akku; Laden über das mitgelieferte USB-C-Ladekabel**: Die Angabe zeigt, ob das Gerät am Netz, kabellos oder nur mit einer Backup-Lösung arbeitet und was bei Stromausfall weiterläuft.
+- **Wasserschutz IP68**: Die Schutzklasse ist besonders bei Regen, Reinigung und dauerhaftem Außeneinsatz relevant.
+- **Abmessungen 83 × 47 × 20 mm**: Die Maße sollten nicht nur zum Stellplatz, sondern auch zur Körpergröße und Nutzung des Tieres passen.
 
 ## Granary 2 X
 

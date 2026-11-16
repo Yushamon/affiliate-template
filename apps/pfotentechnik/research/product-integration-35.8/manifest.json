@@ -698,12 +698,12 @@
           }
         ]
       },
-      "rating": 3,
+      "rating": 2.9,
       "ratings": {
-        "ortung": 3.5,
+        "ortung": 3,
         "app": 3,
-        "akku": 3,
-        "tragekomfort": 3,
+        "akku": 2.5,
+        "tragekomfort": 3.5,
         "kosten": 2.5
       },
       "editorialStatus": "required",
@@ -837,6 +837,28 @@
             "externalEvidence"
           ],
           "sourceType": "independentSource"
+        },
+        {
+          "source": "connect – modellübergreifender Praxistest",
+          "url": "https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html",
+          "assertion": "Direkter Vergleich von App, Laufzeit und Gerätemasse; Protokoll und Betriebsbedingungen sind keine universellen Dauerwerte.",
+          "accessedAt": "2026-11-16",
+          "fields": [
+            "ratings",
+            "experience.methodology"
+          ],
+          "sourceType": "independentSource"
+        },
+        {
+          "source": "F.A.Z. Kaufkompass – SureTrack Pro",
+          "url": "https://www.faz.net/kaufkompass/test/der-beste-gps-tracker-fuer-hunde/",
+          "assertion": "Abweichende Erfahrung mit Sicherheitszonen; Funktionsumfang und Einrichtung werden kritisch eingeordnet.",
+          "accessedAt": "2026-11-16",
+          "fields": [
+            "ratings",
+            "experience.methodology"
+          ],
+          "sourceType": "independentSource"
         }
       ],
       "priceAutomation": "automatic",
@@ -883,7 +905,7 @@
       },
       "experience": {
         "summary": "Für Halter mit Mobilfunkabdeckung und Bereitschaft zu laufenden Abo-Kosten; Rückrufsignale erfordern Gewöhnung und ersetzen kein Training.",
-        "methodology": "Konservative redaktionelle Eignungsbewertung aus Herstellerangaben und getrennt dokumentierten Fremdtests; kein eigener Praxistest. Ortung 3,5/5 für dokumentierte Mobilfunk-/GPS-Funktionen ohne eigene Latenzmessung; App 3,0/5 wegen Plattformabhängigkeit; Akku 3,0/5 wegen bedingter Maximalwerte; Tragekomfort 3,0/5 wegen zu prüfender Masse und Befestigung; Kosten 2,5/5 wegen Pflicht-Abo. Fünf Kriterien gleich gewichtet. Gerätepreis und Händlerprovision beeinflussen die Kriterien nicht."
+        "methodology": "Redaktionelle Datenbewertung, kein eigener Praxistest. Ortung 3,0/5: connect beurteilt die Positionierung positiv, F.A.Z. Kaufkompass meldet ausgebliebene Geofence-Alarme. App 3,0/5: verständlich, aber eingeschränkter Funktionsumfang. Akku 2,5/5: Fremdtests berichten etwa drei bis vier Tage. Tragekomfort 3,5/5: Gewichtsvorteil mit 36,4 g; keine eigene Tragemessung. Kosten 2,5/5: Pflicht-Abo. Kriterien gleich gewichtet; Gerätepreis und Provision ohne Einfluss. Widersprüchliche Testerfahrungen erlauben keine Zuverlässigkeitsgarantie."
       },
       "gps": {
         "animal": [
@@ -954,7 +976,8 @@
           }
         ],
         "additionalCostNote": "Der deutsche Shop nennt einen ersten Gratismonat und 96 EUR für ein Jahr. Regionale Bedingungen und Verlängerung vor Abschluss prüfen."
-      }
+      },
+      "score": 58
     },
     {
       "title": "SATELLAI Collar Go",
@@ -1030,10 +1053,10 @@
           }
         ]
       },
-      "rating": 3,
+      "rating": 3.1,
       "ratings": {
         "ortung": 3.5,
-        "app": 3,
+        "app": 3.5,
         "akku": 3,
         "tragekomfort": 3,
         "kosten": 2.5
@@ -1166,6 +1189,28 @@
             "decision"
           ],
           "sourceType": "manufacturer"
+        },
+        {
+          "source": "CHIP – Collar Go Praxistest",
+          "url": "https://www.chip.de/test-kaufberatung/hobby-freizeit/satellai-collar-g-im-test_e5ceb9ad-a5bb-41db-a82e-61edb2590e56.html",
+          "assertion": "Positive Ortungs- und App-Erfahrung, 108 Stunden Laufzeit im Test; Halterung bei Verdrehen kontrollieren.",
+          "accessedAt": "2026-11-16",
+          "fields": [
+            "ratings",
+            "experience.methodology"
+          ],
+          "sourceType": "independentSource"
+        },
+        {
+          "source": "connect – direkter GPS-Praxistest",
+          "url": "https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html",
+          "assertion": "App und Laufzeit im selben Vergleich günstiger als bei MOVA eingeordnet; Gewichtsnachteil separat berücksichtigt.",
+          "accessedAt": "2026-11-16",
+          "fields": [
+            "ratings",
+            "experience.methodology"
+          ],
+          "sourceType": "independentSource"
         }
       ],
       "priceAutomation": "automatic",
@@ -1212,7 +1257,7 @@
       },
       "experience": {
         "summary": "Für Halter mit Mobilfunkabdeckung und Bereitschaft zu laufenden Abo-Kosten; Rückrufsignale erfordern Gewöhnung und ersetzen kein Training.",
-        "methodology": "Konservative redaktionelle Eignungsbewertung aus Herstellerangaben und getrennt dokumentierten Fremdtests; kein eigener Praxistest. Ortung 3,5/5 für dokumentierte Mobilfunk-/GPS-Funktionen ohne eigene Latenzmessung; App 3,0/5 wegen Plattformabhängigkeit; Akku 3,0/5 wegen bedingter Maximalwerte; Tragekomfort 3,0/5 wegen zu prüfender Masse und Befestigung; Kosten 2,5/5 wegen Pflicht-Abo. Fünf Kriterien gleich gewichtet. Gerätepreis und Händlerprovision beeinflussen die Kriterien nicht."
+        "methodology": "Redaktionelle Datenbewertung, kein eigener Praxistest. Ortung 3,5/5 und App 3,5/5: positive Fremdtests bei connect und CHIP. Akku 3,0/5: CHIP misst 108 Stunden; die höhere Hersteller-Maximallaufzeit wird nicht als Alltagsergebnis gewertet. Tragekomfort 3,0/5: 49 g laut EU-Daten, Befestigung vor jedem Einsatz prüfen. Kosten 2,5/5: Pflicht-Abo, regionaler Tarif ungeklärt. Kriterien gleich gewichtet; Gerätepreis, Lieferstatus und Provision ohne Einfluss. Unterschiedliche Testbedingungen begrenzen direkte Laufzeitvergleiche."
       },
       "gps": {
         "animal": [
@@ -1267,7 +1312,8 @@
         ],
         "plans": [],
         "additionalCostNote": "Die offiziellen Seiten nennen uneinheitliche regionale Tarife. Deshalb ist hier kein konkreter Abopreis und keine daraus berechnete Gesamtsumme hinterlegt; EU-Tarif vor dem Kauf prüfen."
-      }
+      },
+      "score": 62
     }
   ],
   "relatedUpdates": [
@@ -1955,7 +2001,7 @@
         "currency": "EUR",
         "status": "unknown",
         "checkedAt": "2026-11-16T10:09:53.807Z",
-        "variantLabel": "Edition 2026 inklusive Max GPS für 1 Jahr",
+        "variantLabel": "Paketangebot: Gerät inklusive Max-GPS-Jahrespaket (12 Monate)",
         "source": {
           "id": "amazon.de",
           "label": "Amazon.de · Edition 2026 + Max GPS 1 Jahr",

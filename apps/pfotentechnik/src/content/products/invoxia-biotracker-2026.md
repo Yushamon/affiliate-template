@@ -61,7 +61,7 @@ price:
   current: 219
   currency: "EUR"
   status: "unknown"
-  variantLabel: "Edition 2026 inklusive Max GPS für 1 Jahr"
+  variantLabel: "Paketangebot: Gerät inklusive Max-GPS-Jahrespaket (12 Monate)"
   checkedAt: "2026-11-16T10:40:05.613Z"
   source:
     id: "amazon.de"

@@ -17,7 +17,8 @@ for (const slug of ['tractive-cat-6-mini', 'tractive-dog-6', 'tractive-dog-6-xl'
       assert.ok(visible.includes(spec.value), `Sichtbarer Akkuwert: ${spec.value}`);
     }
     const consequences = [...section.matchAll(/<dd\b[^>]*>([\s\S]*?)<\/dd>/g)].map(match => match[1]);
-    const batteryCount = data.specs.filter(spec => /akku/i.test(spec.label)).length;
+    const batteryCount = 1; // 35.8.1: alle Akkuwerte teilen sich eine Konsequenz.
+    assert.equal(new Set(consequences).size, consequences.length);
     assert.equal(consequences.filter(text => /reale Akkulaufzeit/.test(text)).length, batteryCount);
     assert.doesNotMatch(visible, /nachgefüllt/);
     assert.doesNotMatch(html, /Kein integrierter Akku|Ohne Netzstrom läuft das Gerät nur weiter/);
