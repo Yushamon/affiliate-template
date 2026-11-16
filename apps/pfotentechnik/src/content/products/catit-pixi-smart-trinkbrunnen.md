@@ -47,7 +47,7 @@ price:
     id: "manual"
     label: "Catit"
     type: "manual"
-priceAutomation: "editorial"
+priceAutomation: "automatic"
 rating: 3.9
 affiliate:
   provider: "catit"

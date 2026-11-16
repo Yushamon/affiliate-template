@@ -66,7 +66,7 @@ price:
     id: "manual"
     label: "Pawfit"
     type: "manual"
-priceAutomation: "editorial"
+priceAutomation: "automatic"
 rating: 3
 affiliate:
   provider: "pawfit"

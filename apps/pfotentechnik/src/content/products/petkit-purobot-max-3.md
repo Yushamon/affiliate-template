@@ -65,7 +65,7 @@ price:
     id: "manual"
     label: "Hersteller"
     type: "manual"
-priceAutomation: "editorial"
+priceAutomation: "automatic"
 rating: 4
 affiliate:
   provider: "hersteller"

@@ -49,7 +49,7 @@ price:
     id: "manual"
     label: "Whisker EU"
     type: "manual"
-priceAutomation: "editorial"
+priceAutomation: "automatic"
 rating: 4.4
 affiliate:
   provider: "whisker-eu"

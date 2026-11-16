@@ -67,7 +67,7 @@ for (const slug of slugs) {
   assert.equal(schemas.filter(s=>s['@type']==='Product').length,1);
   if(slug.startsWith('brook')) {
    assert.equal(schema.identifier.value,'B0D5DP2V53');
-   assert.equal(schema.offers,undefined,'No confirmed German offer exists.');
+   assert.equal(schema.offers,undefined,'A confirmed price does not confirm stock.');
    assert.match(html,/30,33–60,67 US-Dollar/);
   }
   for (const match of html.matchAll(/href="(\/[^"#?]*)(?:[?#][^"]*)?"/g)) {
@@ -105,7 +105,8 @@ for (const mapping of linkChecks.results) {
   const amazon=offers.filter(o=>o.amazonLink);
   assert.equal(amazon.length,1,'No duplicate legacy/explicit Amazon offer.');
   assert.equal(amazon[0].canLink,mapping.ctaEnabled);
-  assert.equal(amazon[0].current,null,'Other merchants prices must not become Amazon prices.');
+  assert.equal(amazon[0].current,data.price.current,'Use the verified price for this Amazon ASIN.');
+  assert.ok(amazon[0].current>0);
   assert.equal(amazon[0].availability,'unknown');
   assert.equal(mapping.ctaEnabled,true);
   assert.equal(data.asin,mapping.asin);

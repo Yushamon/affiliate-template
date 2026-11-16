@@ -50,7 +50,7 @@ price:
     id: "manual"
     label: "Furbo EU"
     type: "manual"
-priceAutomation: "editorial"
+priceAutomation: "automatic"
 rating: 3.8
 ratings: { interaktion: 4.6, datenschutz: 3.0, folgekosten: 2.8, alltag: 3.8 }
 decision:

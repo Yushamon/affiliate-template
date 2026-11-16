@@ -65,33 +65,31 @@ images:
     - src: ../../assets/images/products/catit-pixi-standard-trinkbrunnen/gallery-3.webp
       alt: "Trinkfläche des mintgrünen Catit PIXI Standard von oben; Bildquelle: Amazon-Angebot"
 price:
-  current: null
-  currency: EUR
-  status: unknown
+  current: 29.49
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-11-16T09:24:10.272Z"
   source:
-    id: amazon-owner-mapping
-    label: Amazon · Preis nicht bestätigt
-    type: manual
-    url: >-
-      https://www.amazon.de/Catit-Pixi-Trinkbrunnen-Katzen-mintgr%C3%BCn/dp/B095PZRWB1?linkCode=sl2&tag=yusha0f-21&linkId=f7a6fe8f15668fa37fdf5f3f2b52c709&gaOptInStatus=true&ref_=as_li_ss_tl&ascsubtag=srctok-7a552d20d27d0bc0&btn_type=ss&btn_ref=srctok-7a552d20d27d0bc0
-priceAutomation: editorial
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+priceAutomation: automatic
 affiliate:
-  provider: amazon
-  label: Preis und Verfügbarkeit bei Amazon prüfen
-  url: >-
-    https://www.amazon.de/Catit-Pixi-Trinkbrunnen-Katzen-mintgr%C3%BCn/dp/B095PZRWB1?linkCode=sl2&tag=yusha0f-21&linkId=f7a6fe8f15668fa37fdf5f3f2b52c709&gaOptInStatus=true&ref_=as_li_ss_tl&ascsubtag=srctok-7a552d20d27d0bc0&btn_type=ss&btn_ref=srctok-7a552d20d27d0bc0
-  rel: sponsored nofollow noopener
-  target: _blank
-priceState: unknown
-priceUpdated: "2026-11-04"
-priceAvailable: false
-affiliateAvailable: true
-availability: unknown
-availabilityUpdated: "2026-11-04"
-editorialStatus: complete
-recommendationStatus: limited
-maintenanceStatus: recommended
+  provider: "amazon"
+  label: "Preis und Verfügbarkeit bei Amazon prüfen"
+  url: "https://www.amazon.de/Catit-Pixi-Trinkbrunnen-Katzen-mintgr%C3%BCn/dp/B095PZRWB1?linkCode=sl2&tag=yusha0f-21&linkId=f7a6fe8f15668fa37fdf5f3f2b52c709&gaOptInStatus=true&ref_=as_li_ss_tl&ascsubtag=srctok-7a552d20d27d0bc0&btn_type=ss&btn_ref=srctok-7a552d20d27d0bc0"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.9
+priceState: "available"
+priceUpdated: "2026-11-16T09:24:10.272Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   bedienung: 4.2
   reinigung: 3.4

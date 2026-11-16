@@ -63,33 +63,31 @@ images:
     - src: ../../assets/images/products/brook-glass-pet-fountain/gallery-3.webp
       alt: "Brook Ersatzfiltersets und Ersatzteile im Anbieterbild; Bildquelle: Amazon-Angebot"
 price:
-  current: null
-  currency: EUR
-  status: unknown
+  current: 125.02
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-11-16T09:24:10.079Z"
   source:
-    id: amazon-owner-mapping
-    label: Amazon · Preis nicht bestätigt
-    type: manual
-    url: >-
-      https://www.amazon.de/Brook-Glas-Haustier-Brunnen-551-5/dp/B0D5DP2V53?linkCode=sl2&tag=yusha0f-21&linkId=b279ac454a5bac189b09f76272e9bf00&gaOptInStatus=true&ref_=as_li_ss_tl&ascsubtag=srctok-61dccee8b78f282c&btn_type=ss&btn_ref=srctok-61dccee8b78f282c
-priceAutomation: editorial
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+priceAutomation: automatic
 affiliate:
-  provider: amazon
-  label: Preis und Verfügbarkeit bei Amazon prüfen
-  url: >-
-    https://www.amazon.de/Brook-Glas-Haustier-Brunnen-551-5/dp/B0D5DP2V53?linkCode=sl2&tag=yusha0f-21&linkId=b279ac454a5bac189b09f76272e9bf00&gaOptInStatus=true&ref_=as_li_ss_tl&ascsubtag=srctok-61dccee8b78f282c&btn_type=ss&btn_ref=srctok-61dccee8b78f282c
-  rel: sponsored nofollow noopener
-  target: _blank
-priceState: unknown
-priceUpdated: "2026-11-04"
-priceAvailable: false
-affiliateAvailable: true
-availability: unknown
-availabilityUpdated: "2026-11-04"
-editorialStatus: complete
-recommendationStatus: limited
-maintenanceStatus: required
+  provider: "amazon"
+  label: "Preis und Verfügbarkeit bei Amazon prüfen"
+  url: "https://www.amazon.de/Brook-Glas-Haustier-Brunnen-551-5/dp/B0D5DP2V53?linkCode=sl2&tag=yusha0f-21&linkId=b279ac454a5bac189b09f76272e9bf00&gaOptInStatus=true&ref_=as_li_ss_tl&ascsubtag=srctok-61dccee8b78f282c&btn_type=ss&btn_ref=srctok-61dccee8b78f282c"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.7
+priceState: "available"
+priceUpdated: "2026-11-16T09:24:10.079Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   bedienung: 3.8
   reinigung: 4.3
@@ -294,6 +292,7 @@ alternatives:
   - petlibro-stainless-steel-fountain
 comparisons:
   - beste-trinkbrunnen-fuer-katzen
+  - beste-trinkbrunnen-fuer-hunde
 decisionJourney:
   cluster: trinkbrunnen
   stage: decision

@@ -64,33 +64,31 @@ images:
     - src: ../../assets/images/products/philips-pet-series-paw3210-02/gallery-3.webp
       alt: "Katze trinkt am Philips Pet Series PAW3210/02; Bildquelle: Amazon-Angebot"
 price:
-  current: null
-  currency: EUR
-  status: unknown
+  current: 24.99
+  currency: "EUR"
+  status: "unknown"
+  checkedAt: "2026-11-16T09:24:10.418Z"
   source:
-    id: amazon-owner-mapping
-    label: Amazon · Preis nicht bestätigt
-    type: manual
-    url: >-
-      https://www.amazon.de/Katzenbrunnen-Intelligenter-Auslaufschutz-Nachf%C3%BCll%C3%BCberwachung-Bewegungsaktivierung/dp/B0CWVKLXR8?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=11MBN80GSXG3L&dib=eyJ2IjoiMSJ9.VbuKPAhOcVK8THlPztTi7lA2LKnb_qVf2Uzm-KZOhGXPW-nOjuHny4gSzcczfTHdg5HYMaslmZlY2r3t9edtylSnvP6zkSFUXjJRR7DpJ9U0Db_4VWgBJyE02ydyDcjcRkfu5eMcr1uZjmVBwmmaeDLXkfekozeXoKRpULt-SnLSJwiFYAtnirVL6o_2F1KqMbIbs8dxiF-DLdHG-XOqlZgo6aPhpcLuI0lShMNKRgHVZxsK6jWIkTxpLNUc0TsVQKp-OdAdh42UKQ4005ST0N8KbGsD7rfC2opf-jLwL7Q.XcXf280wM66iUjUiMXYAi5lrVuWuFzxcdvWllTDgxsU&dib_tag=se&keywords=Philips+Pet+Series+Trinkbrunnen%2C&qid=1793781418&s=pet-supplies&sprefix=philips+pet+series+trinkbrunnen+%2Cpets%2C185&sr=1-4&ufe=app_do%3Aamzn1.fos.51cb8c0f-0aa5-4b3b-90c2-c740c1c5186f&linkCode=sl2&tag=yusha0f-21&linkId=9bad08bf562f520424bca11ce606f2d5&gaOptInStatus=true&ref_=as_li_ss_tl&ascsubtag=srctok-53c67dcb9a05c31a&btn_type=ss&btn_ref=srctok-53c67dcb9a05c31a
-priceAutomation: editorial
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
+priceAutomation: automatic
 affiliate:
-  provider: amazon
-  label: Preis und Verfügbarkeit bei Amazon prüfen
-  url: >-
-    https://www.amazon.de/Katzenbrunnen-Intelligenter-Auslaufschutz-Nachf%C3%BCll%C3%BCberwachung-Bewegungsaktivierung/dp/B0CWVKLXR8?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=11MBN80GSXG3L&dib=eyJ2IjoiMSJ9.VbuKPAhOcVK8THlPztTi7lA2LKnb_qVf2Uzm-KZOhGXPW-nOjuHny4gSzcczfTHdg5HYMaslmZlY2r3t9edtylSnvP6zkSFUXjJRR7DpJ9U0Db_4VWgBJyE02ydyDcjcRkfu5eMcr1uZjmVBwmmaeDLXkfekozeXoKRpULt-SnLSJwiFYAtnirVL6o_2F1KqMbIbs8dxiF-DLdHG-XOqlZgo6aPhpcLuI0lShMNKRgHVZxsK6jWIkTxpLNUc0TsVQKp-OdAdh42UKQ4005ST0N8KbGsD7rfC2opf-jLwL7Q.XcXf280wM66iUjUiMXYAi5lrVuWuFzxcdvWllTDgxsU&dib_tag=se&keywords=Philips+Pet+Series+Trinkbrunnen%2C&qid=1793781418&s=pet-supplies&sprefix=philips+pet+series+trinkbrunnen+%2Cpets%2C185&sr=1-4&ufe=app_do%3Aamzn1.fos.51cb8c0f-0aa5-4b3b-90c2-c740c1c5186f&linkCode=sl2&tag=yusha0f-21&linkId=9bad08bf562f520424bca11ce606f2d5&gaOptInStatus=true&ref_=as_li_ss_tl&ascsubtag=srctok-53c67dcb9a05c31a&btn_type=ss&btn_ref=srctok-53c67dcb9a05c31a
-  rel: sponsored nofollow noopener
-  target: _blank
-priceState: unknown
-priceUpdated: "2026-11-04"
-priceAvailable: false
-affiliateAvailable: true
-availability: unknown
-availabilityUpdated: "2026-11-04"
-editorialStatus: complete
-recommendationStatus: limited
-maintenanceStatus: recommended
+  provider: "amazon"
+  label: "Preis und Verfügbarkeit bei Amazon prüfen"
+  url: "https://www.amazon.de/Katzenbrunnen-Intelligenter-Auslaufschutz-Nachf%C3%BCll%C3%BCberwachung-Bewegungsaktivierung/dp/B0CWVKLXR8?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=11MBN80GSXG3L&dib=eyJ2IjoiMSJ9.VbuKPAhOcVK8THlPztTi7lA2LKnb_qVf2Uzm-KZOhGXPW-nOjuHny4gSzcczfTHdg5HYMaslmZlY2r3t9edtylSnvP6zkSFUXjJRR7DpJ9U0Db_4VWgBJyE02ydyDcjcRkfu5eMcr1uZjmVBwmmaeDLXkfekozeXoKRpULt-SnLSJwiFYAtnirVL6o_2F1KqMbIbs8dxiF-DLdHG-XOqlZgo6aPhpcLuI0lShMNKRgHVZxsK6jWIkTxpLNUc0TsVQKp-OdAdh42UKQ4005ST0N8KbGsD7rfC2opf-jLwL7Q.XcXf280wM66iUjUiMXYAi5lrVuWuFzxcdvWllTDgxsU&dib_tag=se&keywords=Philips+Pet+Series+Trinkbrunnen%2C&qid=1793781418&s=pet-supplies&sprefix=philips+pet+series+trinkbrunnen+%2Cpets%2C185&sr=1-4&ufe=app_do%3Aamzn1.fos.51cb8c0f-0aa5-4b3b-90c2-c740c1c5186f&linkCode=sl2&tag=yusha0f-21&linkId=9bad08bf562f520424bca11ce606f2d5&gaOptInStatus=true&ref_=as_li_ss_tl&ascsubtag=srctok-53c67dcb9a05c31a&btn_type=ss&btn_ref=srctok-53c67dcb9a05c31a"
+  rel: "sponsored nofollow noopener"
+  target: "_blank"
 rating: 3.7
+priceState: "available"
+priceUpdated: "2026-11-16T09:24:10.418Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "unknown"
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
+
 ratings:
   bedienung: 4
   reinigung: 3.2
@@ -304,6 +302,7 @@ alternatives:
   - petlibro-stainless-steel-fountain
 comparisons:
   - beste-trinkbrunnen-fuer-katzen
+  - beste-trinkbrunnen-fuer-hunde
 decisionJourney:
   cluster: trinkbrunnen
   stage: decision

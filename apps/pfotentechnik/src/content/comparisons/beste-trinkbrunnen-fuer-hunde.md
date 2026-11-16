@@ -3,7 +3,7 @@ title: Beste Trinkbrunnen für Hunde
 slug: beste-trinkbrunnen-fuer-hunde
 type: comparison
 layout: comparison
-description: Sechs Trinkbrunnen für Hunde nach Kapazität, Trinkfläche, Material, Reinigung, Filter und Stromversorgung vergleichen.
+description: Trinkbrunnen für Hunde nach Kapazität, Trinkfläche, Material, Reinigung, Filter und Stromversorgung vergleichen.
 publishedAt: "2026-07-24"
 updatedAt: "2026-08-06"
 author:
@@ -19,14 +19,14 @@ hub:
   sections:
     - vergleiche
   title: Beste Trinkbrunnen für Hunde
-  description: Sechs Modelle für kleine, mittelgroße und große Hunde nach Reserve, Trinkfläche und Reinigung.
+  description: Modelle für kleine, mittelgroße und große Hunde nach Reserve, Trinkfläche und Reinigung.
   icon: 🐕
   featured: true
   order: 21
 seo:
-  title: "Hundetrinkbrunnen Vergleich 2026: 6 Modelle bis 8 Liter"
+  title: "Hundetrinkbrunnen Vergleich 2026: Modelle bis 8 Liter"
   description: >-
-    Sechs Hundetrinkbrunnen vergleichen: Modelle bis knapp 8 Liter, breite Trinkflächen, Akku, Edelstahl, Reinigung und
+    Hundetrinkbrunnen vergleichen: Modelle bis knapp 8 Liter, breite Trinkflächen, Akku, Edelstahl, Reinigung und
     passende Bauformen für kleine bis große Hunde.
   canonical: /vergleiche/beste-trinkbrunnen-fuer-hunde/
   sitemap: true
@@ -180,7 +180,7 @@ recommendation:
     Großtank-Alternative, PETKIT Max 2 UVC die smarte Premiumoption für kleine Hunde.
   winnerSlug: oneisall-7l-dog-water-fountain
   alternativeSlug: oneisall-3-5l-cordless-fountain
-tableTitle: 6 Trinkbrunnen für Hunde direkt verglichen
+tableTitle: Trinkbrunnen für Hunde direkt verglichen
 cardsTitle: Empfehlungen nach Hundegröße und Aufstellung
 faq:
   - question: Welcher Trinkbrunnen eignet sich am besten für große Hunde?
@@ -324,7 +324,7 @@ Unabhängig von der Bauart sollte eine zweite Wasserstelle vorhanden sein. Ein l
 
 ## Methodik
 
-Der Vergleich priorisiert Hundegröße, nutzbare Trinkfläche, Kapazität und Reinigung vor App oder Sonderfunktionen. Die sechs Modelle wurden bewusst kuratiert. Nicht dokumentierte Herstellerangaben werden nicht geschätzt.
+Der Vergleich priorisiert Hundegröße, nutzbare Trinkfläche, Kapazität und Reinigung vor App oder Sonderfunktionen. Die Auswahl umfasst Großtankmodelle und kompakte Optionen für kleine Hunde. Nicht dokumentierte Herstellerangaben werden nicht geschätzt.
 
 Vertiefend helfen [Trinkbrunnen für Hunde und Katzen](/trinkbrunnen/), [Trinkbrunnen richtig reinigen](/katzentrinkbrunnen-richtig-reinigen/) und [Wie viel Wasser braucht ein Hund?](/wie-viel-wasser-braucht-ein-hund/).
 

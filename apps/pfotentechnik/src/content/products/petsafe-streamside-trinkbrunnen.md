@@ -47,7 +47,7 @@ price:
     id: "manual"
     label: "PetSafe Deutschland"
     type: "manual"
-priceAutomation: "editorial"
+priceAutomation: "automatic"
 rating: 4.3
 affiliate:
   provider: "petsafe-deutschland"

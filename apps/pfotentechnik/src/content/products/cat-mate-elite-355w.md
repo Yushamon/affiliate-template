@@ -47,7 +47,7 @@ price:
     id: "manual"
     label: "Closer Pets"
     type: "manual"
-priceAutomation: "editorial"
+priceAutomation: "automatic"
 rating: 4.1
 affiliate:
   provider: "closer-pets"
