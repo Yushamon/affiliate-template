@@ -546,7 +546,7 @@
       "slug": "invoxia-biotracker-2026",
       "file": "src/content/products/invoxia-biotracker-2026.md",
       "beforeSha256": "458f6aea55489d0de6bf601b7caa8430fca55177eb50c4cf781997e203620624",
-      "afterSha256": "bfe7d9f6633e1347d4155dc2942466a5d37a43672817aec6189a2d94ab738138",
+      "afterSha256": "060e13d33b0fe003855621bd33a31ae63c41659caf2ca62890bc1ede04476da2",
       "reason": "Präzise GPS-Positionen und reaktive Zonenwarnungen im mehrmonatigen Test. Teils falsch erkannte Aktivitäten und wenig verständlich aufbereitete Gesundheitsdaten.",
       "sources": [
         {
@@ -945,6 +945,21 @@
         "recommendation": {
           "before": "Für Hundehalter, die Gesundheits- und Aktivitätstrends mit Mobilfunkortung verbinden möchten und Tarifgrenzen sowie den nichtdiagnostischen Charakter der Daten akzeptieren.",
           "after": "GPS mit zusätzlichen Gesundheits- und Aktivitätstrends; Fehlklassifikationen begrenzen deren Entscheidungswert. Keine medizinische Diagnose. Das bestätigte Amazon-Paket enthält zwölf Monate Max GPS."
+        },
+        "weaknesses": {
+          "before": [
+            "Fern-GPS tarifabhängig",
+            "IP67 statt IP68",
+            "Keine medizinische Diagnose",
+            "Reale Laufzeit netz- und nutzungsabhängig"
+          ],
+          "after": [
+            "Fremdtest: falsch erkannte Aktivitäten und begrenzte Verständlichkeit der Gesundheitsdaten",
+            "Fern-GPS tarifabhängig",
+            "IP67 statt IP68",
+            "Keine medizinische Diagnose",
+            "Reale Laufzeit netz- und nutzungsabhängig"
+          ]
         },
         "reviewedAlternatives": {
           "before": null,

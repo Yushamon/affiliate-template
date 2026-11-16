@@ -58,7 +58,7 @@ test('Cockpit speichert Bewertung und Nachweise atomar; Preis und Affiliate blei
   assert.equal(result.editorial.rating, 3.5);
   assert.deepEqual(after.data.price, before.data.price);
   assert.deepEqual(after.data.affiliate, before.data.affiliate);
-  assert.deepEqual(after.data.evidenceSources, before.data.evidenceSources);
+  assert.deepEqual(after.data.evidenceSources, before.data.evidenceSources.map(source=>({...source,accessedAt:new Date(source.accessedAt).toISOString()})));
   assert.equal(after.data.publicationStatus, before.data.publicationStatus);
   await assert.rejects(saveProductEditorial({ slug: before.slug, expectedHash: hash(f.source), patch: { ratings: { ortung: 5 } } }, { find: f.find }), /Konflikt/);
 });

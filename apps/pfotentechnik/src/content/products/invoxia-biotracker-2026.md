@@ -174,7 +174,12 @@ review:
     GPS mit zusätzlichen Gesundheits- und Aktivitätstrends; Fehlklassifikationen begrenzen deren
     Entscheidungswert. Keine medizinische Diagnose. Das bestätigte Amazon-Paket enthält zwölf Monate Max GPS.
 strengths: ["37 g", "Bis 15 Tage Herstellerlaufzeit", "LTE-M und Bluetooth 5.3", "Aktivitäts- und Vitalwerttrends"]
-weaknesses: ["Fern-GPS tarifabhängig", "IP67 statt IP68", "Keine medizinische Diagnose", "Reale Laufzeit netz- und nutzungsabhängig"]
+weaknesses:
+  - "Fremdtest: falsch erkannte Aktivitäten und begrenzte Verständlichkeit der Gesundheitsdaten"
+  - Fern-GPS tarifabhängig
+  - IP67 statt IP68
+  - Keine medizinische Diagnose
+  - Reale Laufzeit netz- und nutzungsabhängig
 specs:
   - { label: "Ortung", value: "GPS; 1-Sekunden-Live-Tracking im Max-GPS-Tarif" }
   - { label: "Übertragung", value: "LTE-M und Bluetooth 5.3" }

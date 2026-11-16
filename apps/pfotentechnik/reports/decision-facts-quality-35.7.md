@@ -2034,7 +2034,7 @@ Technische Vergleichsdaten: [{"path":"specs.10.value","value":"Nein"}]
 
 Datei: src/content/products/neakasa-m1-lite.md
 
-SHA-256: e95a2385905d9e77b3199a4c475d015b43e527e1ecdd983dc56a0665ed1367e0
+SHA-256: 75ba72bfb089f412c4281a7678e712c4e9ee4d0ededdfb07fc89385b6b126ef3
 
 Content-Speicher: preserved-exactly
 
@@ -2156,7 +2156,7 @@ Kein Befund durch die begrenzten Regeln; redaktionelle Prüfung weiterhin offen.
 
 Datei: src/content/products/oneisall-2-2l-cordless-fountain.md
 
-SHA-256: 9d11af047daee243e2f9a0c2ac90ab7fd16912674ea56588e5c70e7ca50402fd
+SHA-256: ad7a8c8fededd55bdaaa328fd33e7ffccc950f4018b469e49ec6655cdded51b2
 
 Content-Speicher: preserved-exactly
 
@@ -2428,7 +2428,7 @@ Technische Vergleichsdaten: [{"path":"specs.13.value","value":"Nein"}]
 
 Datei: src/content/products/oneisall-3-2l-cordless-fountain.md
 
-SHA-256: c9737a5f27fb01a23d17f83ffe990d40c65cceba640027a7c9f4f2b20c6b5758
+SHA-256: d96a4f5d32b0897d3c04e0c503b4405b0b64dfb351190d979ceb1da1c2eeea7d
 
 Content-Speicher: preserved-exactly
 
@@ -2963,7 +2963,7 @@ Technische Vergleichsdaten: [{"path":"specs.12.value","value":"Herstellerangabe 
 
 Datei: src/content/products/paj-pet-finder-4g-mini.md
 
-SHA-256: 0431040a869a76c32af3db0daa6806501c152c7dcff0c117269a3d8796ce378e
+SHA-256: a20364bdbf421548b409ecd473d577cf4912354353ad3f998c7ee826a814b3d0
 
 Content-Speicher: preserved-exactly
 
@@ -5006,7 +5006,7 @@ Technische Vergleichsdaten: [{"path":"specs.11.value","value":"Nicht vom Herstel
 
 Datei: src/content/products/petlibro-air-wifi-feeder.md
 
-SHA-256: 6dd2b57b8ff8e0f3b92346ea57a7475f9ecf21b3c6a0289fb1e524562d8accc2
+SHA-256: 0101bb3adf39eb95404d5f7b9c99b48fbb0dcf40dd62049e099403a6b30152c8
 
 Content-Speicher: preserved-exactly
 
@@ -5949,7 +5949,7 @@ Technische Vergleichsdaten: [{"path":"specs.9.value","value":"265 × 220 × 167 
 
 Datei: src/content/products/petlibro-granary-2-vision.md
 
-SHA-256: 2f1c1e2bc8a0ab24b8a234f8db8ec1512fb685a12cfe4a06cea33c4463345e4b
+SHA-256: 0c388e7d520e9e6f6b7fa5b63e9dbb5c09f31c81c68a60d51d02ff19bf15df20
 
 Content-Speicher: preserved-exactly
 
@@ -6084,7 +6084,7 @@ Technische Vergleichsdaten: [{"path":"specs.18.value","value":"357 × 180 × 356
 
 Datei: src/content/products/petlibro-granary-camera-feeder.md
 
-SHA-256: 223688fd87ad07dfd6e0b0d8f0e47a24f0dabb97cca2d29617fbd32da2a75fc9
+SHA-256: c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f
 
 Content-Speicher: preserved-exactly
 
@@ -6218,7 +6218,7 @@ Technische Vergleichsdaten: [{"path":"specs.13.value","value":"Nicht vom Herstel
 
 Datei: src/content/products/petlibro-granary-dual-feeder.md
 
-SHA-256: 6eaa45b0058961806ecde3d2f7979c3ee3f58a38e162bbafa921de19f6acc8ca
+SHA-256: f56a25add4d437db9f63462eaa189b1a400e337c36282196e7160d241153383b
 
 Content-Speicher: preserved-exactly
 
@@ -6353,7 +6353,7 @@ Technische Vergleichsdaten: [{"path":"specs.10.value","value":"Netzadapter und d
 
 Datei: src/content/products/petlibro-granary-wifi-feeder.md
 
-SHA-256: 9408e36edc521ad74be808ec35fc8b5ee290994acc32fac6725a829d1816c80a
+SHA-256: e9b2cb1f3f7dbc7db12790126d75478305244dacb2c6f213debc150f412ce876
 
 Content-Speicher: preserved-exactly
 
@@ -6488,7 +6488,7 @@ Technische Vergleichsdaten: [{"path":"specs.9.value","value":"Nein"}]
 
 Datei: src/content/products/petlibro-one-rfid-smart-feeder.md
 
-SHA-256: e5bafcd6b6728ec826ea629768fc79fc5a2f4594232c1be98189656189e27be8
+SHA-256: 8cf1adcb850f8f76e64a1272ac182bb53ef80497d9d32aec6d24745c7981e4a2
 
 Content-Speicher: preserved-exactly
 
@@ -6754,7 +6754,7 @@ Technische Vergleichsdaten: [{"path":"specs.13.value","value":"drei AA-Batterien
 
 Datei: src/content/products/petlibro-space-smart-feeder.md
 
-SHA-256: e083054ff56f426bdb1a26784e3177cbaa7472eb9c5134c53ee1d99f204121ac
+SHA-256: ae2270780612542d2b7b00e5c6876c9265ffe29ad0c149cd5b55272c1ed266a6
 
 Content-Speicher: preserved-exactly
 
@@ -8131,7 +8131,7 @@ Kein Befund durch die begrenzten Regeln; redaktionelle Prüfung weiterhin offen.
 
 Datei: src/content/products/tractive-cat-6-mini.md
 
-SHA-256: ca4ce884ae47a7cef0e843ce011d0918574cb44507b0d4cace745964a66bd55e
+SHA-256: d6cc0f25e11e4e2458b0ef312ff68a1acc841418ea01e8edaa19ae40101fbbf8
 
 Content-Speicher: preserved-exactly
 
@@ -8261,7 +8261,7 @@ Technische Vergleichsdaten: [{"path":"specs.12.value","value":"IP68"}]
 
 Datei: src/content/products/tractive-dog-6-xl.md
 
-SHA-256: cea2259d08e24922e82bdfb68d120042b014dd7710ae24b177900f3899da75d9
+SHA-256: 7f9e90f36f4913a54722d8ee59605f9e5af13ccecbad4bd9928cdcde7564063c
 
 Content-Speicher: preserved-exactly
 
@@ -8391,7 +8391,7 @@ Technische Vergleichsdaten: [{"path":"specs.15.value","value":"83 × 47 × 20 mm
 
 Datei: src/content/products/tractive-dog-6.md
 
-SHA-256: e3a1480462f7abda3701f77a5bcf7f0cd68e694a8e2b0911bb0805a04f47fce6
+SHA-256: b22d88e4ca0c6b61fff9a0150e7e002a3f2f48a755606d0e83cbc436b3d3290e
 
 Content-Speicher: preserved-exactly
 
@@ -9318,7 +9318,7 @@ Technische Vergleichsdaten: [{"path":"specs.11.value","value":"Nein"}]
 
 Datei: src/content/products/xiaomi-smart-pet-food-feeder-2.md
 
-SHA-256: c3b808a7f74d4e616fa6e681648ba7b93605b11a990c792171c0b226bccfa59b
+SHA-256: 51cfe382c80005d3aef118f2694fbbb5ebcde655eb6cea144b544854a8a7dc20
 
 Content-Speicher: preserved-exactly
 
@@ -9449,7 +9449,7 @@ Technische Vergleichsdaten: [{"path":"specs.10.value","value":"Netzbetrieb und v
 
 Datei: src/content/products/xiaomi-smart-pet-fountain-2.md
 
-SHA-256: de2267b4926bb95a27a4a52b0353e8eeec847910613f3eea2c7c8ba3b42e3bbc
+SHA-256: 0ecc6e65619cf97b3be0d5b8630ea51907cc62819cd1923809cae03b1f285323
 
 Content-Speicher: preserved-exactly
 

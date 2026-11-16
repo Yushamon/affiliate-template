@@ -106,7 +106,7 @@
       },
       "protectedPages": 20,
       "protectedIncomingEdges": 205,
-      "unchangedSources": 215,
+      "unchangedSources": 187,
       "products": [
         {
           "slug": "petlibro-granary-2-vision-duo",
@@ -972,6 +972,46 @@
             "experience.methodology"
           ],
           "sourceType": "independentSource"
+        },
+        {
+          "source": "connect",
+          "url": "https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html",
+          "accessedAt": "2026-11-16",
+          "assertion": "Positionierung positiv beurteilt; leichteres Gerät im direkten Vergleich. Begrenzter App-Umfang; Laufzeit im Test etwa drei bis vier Tage.",
+          "fields": [
+            "externalEvidence"
+          ],
+          "sourceType": "independentSource"
+        },
+        {
+          "source": "F.A.Z. Kaufkompass",
+          "url": "https://www.faz.net/kaufkompass/test/der-beste-gps-tracker-fuer-hunde/",
+          "accessedAt": "2026-11-16",
+          "assertion": "Position in der App abrufbar. Geofence-Warnungen blieben im Test aus; Einrichtung und Übersetzung wurden kritisiert.",
+          "fields": [
+            "externalEvidence"
+          ],
+          "sourceType": "independentSource"
+        },
+        {
+          "source": "Produkte im Test",
+          "url": "https://produkte-im-test.de/mova-suretrack-pro-im-praxistest/",
+          "accessedAt": "2026-11-16",
+          "assertion": "Standort des Hundes im Versuch auffindbar. Wiederholt keine Geofence-Warnung; Spaziergangsaufzeichnungen brachen häufig ab.",
+          "fields": [
+            "externalEvidence"
+          ],
+          "sourceType": "independentSource"
+        },
+        {
+          "source": "Produkte im Test",
+          "url": "https://produkte-im-test.de/mova-suretrack-pro-im-praxistest/",
+          "accessedAt": "2026-11-16",
+          "assertion": "Ortung und automatische Fluchtwarnung getrennt bewerten; kein Nachweis eines allgemeinen Defekts.",
+          "fields": [
+            "experience"
+          ],
+          "sourceType": "independentSource"
         }
       ],
       "newInternalLinks": {
@@ -1248,6 +1288,36 @@
             "experience.methodology"
           ],
           "sourceType": "independentSource"
+        },
+        {
+          "source": "CHIP",
+          "url": "https://www.chip.de/test-kaufberatung/hobby-freizeit/satellai-collar-g-im-test_e5ceb9ad-a5bb-41db-a82e-61edb2590e56.html",
+          "accessedAt": "2026-11-16",
+          "assertion": "Schnelle, präzise Ortung; USB-C und umfangreiche App. 108 Stunden Laufzeit im Testprotokoll; Halterung konnte sich bei starkem Verdrehen lösen.",
+          "fields": [
+            "externalEvidence"
+          ],
+          "sourceType": "independentSource"
+        },
+        {
+          "source": "connect",
+          "url": "https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html",
+          "accessedAt": "2026-11-16",
+          "assertion": "App und Positionierung im Vergleich positiv. Etwa fünf bis sechs Tage im Test statt einer garantierten Maximallaufzeit.",
+          "fields": [
+            "externalEvidence"
+          ],
+          "sourceType": "independentSource"
+        },
+        {
+          "source": "SATELLAI Go · Apple App Store",
+          "url": "https://apps.apple.com/us/app/satellai-go/id6753865552",
+          "accessedAt": "2026-11-16",
+          "assertion": "App 2.9.1 dokumentiert Wochen-/Monatsberichte; Routine-Firmwareupdates werden separat in den Geräteeinstellungen angezeigt.",
+          "fields": [
+            "experience"
+          ],
+          "sourceType": "manufacturer"
         }
       ],
       "newInternalLinks": {
@@ -1678,21 +1748,21 @@
         "evidence": "test/product-integration-35.8.test.mjs; Live-Refresh 7/7 erfolgreich"
       },
       "evaluation": {
-        "score": 83,
-        "rating": 4.2,
+        "score": 78,
+        "rating": 3.9,
         "criteriaCount": 5,
-        "source": "criteria",
+        "source": "score",
         "ratings": {
           "ortung": 4.4,
-          "gesundheit": 4.8,
+          "gesundheit": 3.5,
           "app": 4.2,
           "akku": 4.4,
           "kosten": 3
         },
-        "methodology": "Herstellerangaben werden getrennt von professionellen Tests und Nutzerbewertungen ausgewertet. Externe Sterne werden nicht direkt in den PfotenTechnik-Score übernommen.",
+        "methodology": "Redaktionelle Fremdquellenauswertung, kein eigener Praxistest. Tom’s Guide France beschreibt Fehlklassifikationen und wenig verständliche Gesundheitsdarstellung; CHIP/Golem liefern daneben positive Funktions- und Verlaufsbefunde. Gesundheit deshalb 3,5 statt 4,8/5. Ortung 4,4, App 4,2, Akku 4,4 und Kosten 3,0 bleiben unverändert. Gleichgewichtet 78/100 (3,9/5). Gerätepreis und Provision ohne Einfluss; keine fremde Note übernommen.",
         "testedHandsOn": false,
         "editorialStatus": "complete",
-        "limitations": "Bestehende Bewertung unverändert"
+        "limitations": "In 36.0 einzeln neu begründet: siehe product-freshness-36.0.md."
       },
       "sources": [
         {
@@ -1769,6 +1839,26 @@
             "subscription"
           ],
           "sourceType": "manufacturer"
+        },
+        {
+          "source": "Tom's Guide France",
+          "url": "https://www.tomsguide.fr/test-biotracker-invoxia-edition-2026-excellent-pour-retrouver-son-chien-moins-pour-suivre-sa-sante/",
+          "accessedAt": "2026-11-16",
+          "assertion": "Präzise GPS-Positionen und reaktive Zonenwarnungen im mehrmonatigen Test. Teils falsch erkannte Aktivitäten und wenig verständlich aufbereitete Gesundheitsdaten.",
+          "fields": [
+            "externalEvidence"
+          ],
+          "sourceType": "independentSource"
+        },
+        {
+          "source": "Tom's Guide France",
+          "url": "https://www.tomsguide.fr/test-biotracker-invoxia-edition-2026-excellent-pour-retrouver-son-chien-moins-pour-suivre-sa-sante/",
+          "accessedAt": "2026-11-16",
+          "assertion": "Gesundheitstrends sind nicht durchgehend plausibel klassifiziert; GPS und Akku bleiben positiv, Kosten unverändert.",
+          "fields": [
+            "experience"
+          ],
+          "sourceType": "independentSource"
         }
       ],
       "newInternalLinks": [],
@@ -1896,6 +1986,16 @@
             "offers"
           ],
           "sourceType": "officialStore"
+        },
+        {
+          "source": "PETLIBRO · App Outage FAQ",
+          "url": "https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq",
+          "accessedAt": "2026-11-16",
+          "assertion": "App-Protokolle bestätigen während eines Dienstausfalls keine tatsächlich ausgegebene Mahlzeit; Offline-Verhalten modell- und zustandsabhängig.",
+          "fields": [
+            "experience"
+          ],
+          "sourceType": "manufacturer"
         }
       ],
       "newInternalLinks": [],

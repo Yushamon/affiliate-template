@@ -40,10 +40,15 @@ test('36.0: selektive Änderungen reproduzierbar, keine pauschale Neufassung',as
 test('36.0: alle URLs, SEO-Felder, Kaufziele, Preise und 437 Originalhinweise geschützt',async()=>{
  const facts=[];
  for(const p of baseline.products){const d=await document(p.slug);
+  const change=changes.products.find(c=>c.slug===p.slug);
+  for(const [key,value]of Object.entries(p.data))if(!change?.changedFields[key])assert.deepEqual(d[key],value,p.slug+': unverändertes Bestandsfeld '+key);
   for(const k of ['slug','productUrl','seo','affiliate','price','offers','publishedAt','publicationStatus','publicationBlockers','decisionFacts'])assert.deepEqual(d[k],p.data[k],p.slug+'.'+k);
   if(d.decisionFacts?.length)facts.push([p.slug,d.decisionFacts]);
   if(!changes.products.some(c=>c.slug===p.slug))assert.equal(sha(fs.readFileSync(path.join(app,p.file))),p.sha256,p.slug+': unbeabsichtigte Änderung');
  }
+ const originals=JSON.parse(fs.readFileSync(path.join(root,'originals.json')));
+ const block=source=>source.match(/^decisionFacts:.*(?:\n(?:[ \t].*|$))*/m)?.[0];
+ for(const [file,original]of Object.entries(originals))assert.equal(block(fs.readFileSync(path.join(app,file),'utf8')),block(original),file+': Originalhinweise auch im Rohtext unverändert');
  assert.equal(facts.length,73);assert.equal(facts.reduce((n,[,f])=>n+f.length,0),437);
  assert.deepEqual(JSON.parse(fs.readFileSync(path.join(app,'src/config/decision-fact-approvals.json'))),{version:1,approvals:[]});
 });
@@ -75,6 +80,9 @@ test('36.0: jede veränderte Produktseite rendert Hinweise, Kaufziele und konsis
   assert.deepEqual(ctas,resolveCommerceOffers(d).filter(o=>o.canLink).map(o=>o.affiliateUrl).sort(),c.slug+': Preis-CTA');
   for(const n of nodes.filter(n=>n.tagName==='a')){const href=attr(n,'href');if(!href?.startsWith('/')||href.startsWith('//'))continue;const target=href.split(/[?#]/)[0];if(target)assert.ok(fs.existsSync(path.join(app,'dist','.'+target,target.endsWith('/')?'index.html':'')),c.slug+': '+href)}
   const schemas=nodes.filter(n=>n.tagName==='script'&&attr(n,'type')==='application/ld+json').map(n=>JSON.parse(n.childNodes.map(n=>n.value??'').join('')));assert.ok(schemas.length,c.slug);
+  const product=schemas.find(s=>s['@type']==='Product');assert.ok(product,c.slug+': Product-Schema');
+  assert.equal(product.url,'https://pfotentechnik.de'+d.seo.canonical);assert.equal(product.name,d.title);
+  if(product.review)assert.equal(product.review.reviewRating.ratingValue,calculateProductScore(d).score,c.slug+': strukturierter ProductScore');
   assert.ok(!visible.includes('undefined'),c.slug);
  }
  const sat=text(dom('satellai-collar-go'));assert.match(sat,/Lieferbarkeit nicht bestätigt/);
@@ -92,6 +100,7 @@ test('36.0: 35.5-Seiten und 205 Linkzugänge exakt erhalten; Vergleichsauswahl m
  for(const slug of ['beste-gps-tracker-fuer-hunde','beste-trinkbrunnen-fuer-katzen','beste-automatische-katzentoiletten']){
   const nodes=[...walk(parse(fs.readFileSync(path.join(app,'dist/vergleiche',slug,'index.html'),'utf8')))];
   const products=new Set(nodes.map(n=>attr(n,'data-picker-card')).filter(Boolean));assert.ok(products.size>=10,slug+': '+products.size);
+  assert.ok([...products].filter(slug=>baseline.products.some(p=>p.slug===slug&&p.active&&p.published)).length>=10,slug+': mindestens zehn aktive veröffentlichte Vergleichsprodukte');
  }
 });
 

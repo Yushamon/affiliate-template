@@ -17,7 +17,7 @@ Zwei neue GPS-Produkte sind freigegeben, zwei PETLIBRO-Modelle bleiben unveröff
 
 ## Tests und Reproduktion
 
-Produktionsbuild: 390 Seiten erfolgreich. Relevante Tests: 145 bestanden, keine Fehler. Diff einschließlich Index und Arbeitskopie geprüft; keine Whitespace-Fehler.
+Historischer Prüfstand aus 35.8.1: 390 Build-Seiten und 145 bestandene Tests. Aktuelle Freshness-Änderungen und deren Validierung stehen in product-freshness-36.0.md. Der vorliegende Datenexport wird gegen den aktuellen Build geprüft.
 
 Die maschinenlesbaren Details, Quellen und Feldzuordnungen stehen in [product-integration-35.8.json](product-integration-35.8.json). Der Browser prüft Galerie öffnen/weiter/schließen, Bilder, Überlauf, Preise, Kaufziele, Canonical und Robots in 24 Fällen. Cockpit-Tests prüfen echte API-Routen, atomare Speicherung, Versionskonflikte, Kriterienberechnung und eine manuelle Preisänderung bis in die echte Kaufkomponente. Der öffentliche Datenbestand übernimmt Änderungen beim nächsten statischen Build.
 
@@ -135,7 +135,7 @@ Die Integration legt nur fehlende Kandidatendateien an; bestehende redaktionelle
 - Preis: 219 EUR bei amazon; Prüfung 2026-11-16T10:40:05.613Z; Verfügbarkeit unknown.
 - Bilder: amazon-product-image; Herkunft und Prüfsummen: [Nachweis](../src/assets/images/products/invoxia-biotracker-2026/media-provenance-35.8.json).
 - Cockpit: [Produktpflege](https://pfotentechnik.de/admin/seo/products/invoxia-biotracker-2026/); bestehende Preis-/Angebotsverwaltung und neuer allgemeiner Editor für Kriterien, Quellen, Status und Datum.
-- Bewertung: 83/100. Herstellerangaben werden getrennt von professionellen Tests und Nutzerbewertungen ausgewertet. Externe Sterne werden nicht direkt in den PfotenTechnik-Score übernommen.
+- Bewertung: 78/100. Redaktionelle Fremdquellenauswertung, kein eigener Praxistest. Tom’s Guide France beschreibt Fehlklassifikationen und wenig verständliche Gesundheitsdarstellung; CHIP/Golem liefern daneben positive Funktions- und Verlaufsbefunde. Gesundheit deshalb 3,5 statt 4,8/5. Ortung 4,4, App 4,2, Akku 4,4 und Kosten 3,0 bleiben unverändert. Gleichgewichtet 78/100 (3,9/5). Gerätepreis und Provision ohne Einfluss; keine fremde Note übernommen.
 - Verlinkung: Vorhandene Verlinkung erhalten.
 - Vergleiche: beste-gps-tracker-fuer-hunde.
 - Visuelle/Funktionsprüfung: 4 Fälle bestanden.

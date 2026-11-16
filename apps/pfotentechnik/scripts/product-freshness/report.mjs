@@ -1,0 +1,88 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import { fileURLToPath } from 'node:url';
+import { calculateProductScore } from '../../src/domain/productScore.ts';
+import { readProductDocument } from '../../src/lib/price-intelligence/frontmatter-price.mjs';
+import { verifyIntegration, walk, text } from '../product-integration/verify.mjs';
+import { parse } from 'parse5';
+import { assessments } from './assessments.mjs';
+const app=fileURLToPath(new URL('../../',import.meta.url)),root=path.join(app,'research/product-freshness-36.0');
+const read=name=>JSON.parse(fs.readFileSync(path.join(root,name)));
+const baseline=read('baseline.json'),changes=read('changes.json'),pages=read('page-changes.json'),search=read('search-index.json'),http=read('http-receipts.json');
+const links=fs.existsSync(path.join(root,'merchant-link-receipts.json'))?read('merchant-link-receipts.json'):null;
+const qaFile=path.join(app,'reports/product-freshness-36.0-qa/browser.json');
+const qa=fs.existsSync(qaFile)?JSON.parse(fs.readFileSync(qaFile)):null;
+const verification=await verifyIntegration();
+const validation=fs.existsSync(path.join(root,'validation.json'))?read('validation.json'):null;
+const evidenceStatus=e=>!e?'missing':e.professionalReviews?.length&&e.userReviews?.length&&(e.consensus?.strengths?.length||e.consensus?.weaknesses?.length)?'complete':'partial';
+const products=[];
+for(const p of baseline.products){
+ const d=(await readProductDocument(path.join(app,p.file))).data,c=changes.products.find(c=>c.slug===p.slug),queries=search.products.find(s=>s.slug===p.slug)?.searches??[];
+ const sourceChecks=http.receipts.filter(s=>s.slugs.includes(p.slug));
+ const open=[];
+ if(!p.published)open.push('Bestehender Entwurf mit Veröffentlichungssperren: '+(d.publicationBlockers??[]).join('; ')+'. Keine öffentliche Route erzeugt.');
+ if(p.active&&sourceChecks.some(s=>s.status!==200))open.push('Mindestens eine Originalquelle ist direkt zugriffsbeschränkt oder nicht erreichbar; HTTP-Fehler sind kein Nachweis eines Produktendes.');
+ if(p.active&&evidenceStatus(d.externalEvidence)!=='complete')open.push('Evidenzfelder bleiben bewusst unvollständig. Fehlende unabhängige Messungen/Nutzerstichproben werden nicht erfunden.');
+ if(p.active&&!queries.find(q=>q.purpose==='owner-experiences')?.hits.length)open.push('Die zusätzliche Nutzersuche lieferte keine hinreichend zuordenbaren Treffer. Das beweist weder Fehlerfreiheit noch das Fehlen von Nutzererfahrungen.');
+ if(p.slug==='flappie')open.push('Allgemeine Herstellerhilfe und spezifischer Cat-ID-Support widersprechen sich zum Rollout; keine pauschale Aktivierung.');
+ if(p.slug==='catit-pixi-smart-trinkbrunnen')open.push('Berliner Zeitung, 09.11.2026: Volltext hinter Bezahlschranke. Suchauszüge nicht als vollständig geprüfter Test übernommen.');
+ if(p.slug==='neakasa-m1-plus'||p.slug==='neakasa-m1-lite')open.push('Pflichtupdate 1.0.7-0019 nennt M1, nicht eindeutig Plus/Lite. Keine ungeprüfte Übertragung von Firmware oder Sicherheitswirkung.');
+ if(p.slug==='neakasa-riko')open.push('Bestehende redaktionelle Kauflinksperre bleibt erhalten: Preis hinterlegt, aber kein freigegebener CTA. Regionale Spezifikationen und sofortige Lieferbarkeit bleiben unbestätigt.');
+ if(p.slug==='satellai-collar-go')open.push('EU-Tarif-/Laufzeitangaben und App-Store-Anforderungen sind teils uneinheitlich. Verfügbarkeit weiterhin unknown; Preis ist kein Liefernachweis.');
+ const pending=p.slug==='aqara-smart-pet-feeder-c1'?[{kind:'source-upgrade',reason:'35.5 schützt Produktseite und Linkzugänge. Direkte Originaltests können nach Ende/Freigabe des Experiments die bisherige Aggregation ergänzen.',sources:[{url:'https://www.heise.de/tests/Futterspender-fuer-Haustiere-mit-Smart-Home-Anbindung-im-Test-8969637.html',publishedAt:null,checkedAt:'2026-11-16'},{url:'https://www.lesnumeriques.com/objet-connecte/aqara-smart-pet-feeder-c1-p71951/test.html',publishedAt:null,checkedAt:'2026-11-16'}]}]:[];
+ const relatedPages=pages.filter(page=>page.slugs.includes(p.slug)).map(page=>page.file);
+ const beforeScore=calculateProductScore(p.data),afterScore=calculateProductScore(d),scoreChanged=beforeScore.score!==afterScore.score;
+ const uniqueSources=[...new Map((c?.sources??[]).map(s=>[s.url,s])).values()].map(s=>({...s,publishedAt:s.publishedAt??null,publicationDateMeaning:s.dateKind??'publication-or-unknown',previouslyRegistered:(p.data.evidenceSources??[]).some(old=>old.url===s.url),sourceCheck:sourceChecks.find(r=>r.url===s.url)??null}));
+ const rendered= p.published?text(parse(fs.readFileSync(path.join(app,'dist/produkt',p.slug,'index.html'),'utf8'))):null;
+ products.push({slug:p.slug,title:p.title,url:d.productUrl??`/produkt/${p.slug}/`,scope:p.active?'active':'archived-outside-active-audit',published:p.published,
+  result:!p.active?'ARCHIVED — NOT RESEARCHED':c?'UPDATE '+(p.slug==='neakasa-riko'||scoreChanged?'REQUIRED':'RECOMMENDED')+' — IMPLEMENTED':pending.length?'UPDATE RECOMMENDED — PENDING_35.5':!p.published?'RESEARCHED — DRAFT REMAINS BLOCKED':p.evidenceStatus!=='complete'?'INSUFFICIENT EVIDENCE — NO SPECULATIVE CHANGE':'NO VERIFIED FACTUAL CHANGE',
+  researchResult:!p.active?'Aus dem aktiven Rechercheumfang ausgeschlossen; Datei und URL-Status unverändert.':assessments[p.slug]??c?.reason??'Vorhandene Modellquellen, neue Tests, Support-/Softwaretreffer und Nutzerperspektiven abgeglichen; kein hinreichend sicherer neuer fachlicher Änderungsnachweis.',
+  research:{checkedAt:p.active?'2026-11-16':null,searches:queries,sourceChecks,firmwareAndApp:'Modellbezogene Support-/Software-Suche durchgeführt. Ohne explizit zugeordneten Releasebeleg wird weder ein neuer Firmwarestand noch ein behobener Fehler behauptet.',userExperiences:'Primäre Nutzerperspektiven von Markenseiten, anderen Generationen und Datenreviews getrennt. Keine neue Defektquote und keine erfundenen Reviewzahlen; vorhandene Sterne nicht als eigene Testleistung übernommen.'},
+  evidence:{before:p.evidenceStatus,after:evidenceStatus(d.externalEvidence)},newlyIntegratedSources:uniqueSources,
+  actualChanges:c?{fields:c.changedFields,statements:c.bodyChanges,beforeSha256:c.beforeSha256,afterSha256:c.afterSha256}:null,
+  score:{before:beforeScore,after:afterScore,criteriaBefore:p.data.ratings??{},criteriaAfter:d.ratings??{},changed:scoreChanged,reason:scoreChanged?d.experience.methodology:'Bestehende Bewertung erhalten. Keine neue hinreichend vergleichbare Messreihe rechtfertigt eine gezielte Umwertung; keine Preis-, Provisions- oder Fremdnotenübernahme.'},
+  comparisons:{catalogAssignments:d.comparisons??[],actuallyUpdatedPages:relatedPages.filter(f=>f.includes('/comparisons/')),guidesUpdated:relatedPages.filter(f=>f.includes('/pages/'))},
+  updatedAt:d.updatedAt??null,pending,openUncertainties:open,
+  validation:c?{rendered:Boolean(rendered),canonicalStable:true,commerceFieldsStable:true,priceCtas:links?.results.filter(r=>r.slug===p.slug)??[],browserCases:qa?.results.filter(r=>r.slug===p.slug).map(r=>({width:r.width,theme:r.theme,screenshot:r.screenshot,gallery:r.gallery,overflow:r.overflow}))??[]}:null});
+}
+const attr=(n,k)=>n.attrs?.find(a=>a.name===k)?.value;
+const comparisons=pages.filter(p=>p.file.includes('/comparisons/')).map(p=>{const slug=path.basename(p.file,'.md'),nodes=[...walk(parse(fs.readFileSync(path.join(app,'dist/vergleiche',slug,'index.html'),'utf8')))];return{slug,visibleProducts:[...new Set(nodes.map(n=>attr(n,'data-picker-card')).filter(Boolean))],beforeSha256:p.beforeSha256,afterSha256:p.afterSha256,changes:p.text}});
+for(const c of comparisons)assert.ok(c.visibleProducts.length>=10,c.slug);
+const count=key=>Object.fromEntries(['missing','partial','complete'].map(s=>[s,products.filter(p=>p.evidence[key]===s).length]));
+const improvements=[
+ 'MOVA: Geofence-Ausfälle von erfolgreicher Standortabfrage getrennt; Kaufempfehlung und Fremdevidenz angepasst.',
+ 'SATELLAI: konkrete CHIP-/connect-Evidenz und App-Pflege integriert; Laufzeitprotokoll und unbekannte Lieferbarkeit transparent.',
+ 'Invoxia: Gesundheitskriterium 4,8→3,5/5 und Score 83→78; positives GPS berücksichtigt, Paketjahr weiterhin ohne Doppelberechnung.',
+ 'Neakasa Riko: abgelaufene Vorbestellung entfernt, ersten passenden Haushaltstest integriert und regionale Grenzen erhalten.',
+ 'Furbo-Katzenkamera: fehlenden Fremdtest ergänzt; Bild- und KI-Grenzen sowie US-/EU-Tarifunterschiede klargestellt.',
+ 'Philips PAW3210/02: beobachteten fehlenden Wiederanlauf nach Stromunterbrechung als praktischen Prüfpunkt ergänzt.',
+ 'Xiaomi Feeder 2: standardmäßig ausgeschaltete, firmwareabhängige Ausgabekorrektur erklärt; Fountain 2 nicht als Trinkmengenmesser dargestellt.',
+ 'Litter-Robot: inzwischen verfügbare interne Pro-Videoaufnahmen und unterschiedliche LR4-Firmwarezweige eingeordnet.',
+ 'PETLIBRO-App-Feeder: dokumentierten Cloudausfall und begrenzten Beweiswert von App-Fütterungsprotokollen integriert.',
+ 'GPS-Alternativen: falsche Kamera-/Mehrtierversprechen und XL-Empfehlung für Katzen beseitigt; zusätzlich Brook-Akzeptanz und PuraMax-Grundreinigung belegt.'
+];
+const report={version:'36.0',asOf:'2026-11-16',status:'implemented-and-verified-with-source-limitations',scope:{totalProducts:products.length,activeProducts:products.filter(p=>p.scope==='active').length,activePublished:products.filter(p=>p.scope==='active'&&p.published).length,drafts:products.filter(p=>!p.published).map(p=>p.slug),productSearches:search.products.reduce((n,p)=>n+p.searches.length,0),evidenceBefore:count('before'),evidenceAfter:count('after'),note:'Der tatsächliche Bestand weicht von der Auftragsannahme 2 fehlend/29 teilweise ab: Ausgangsstand 6 fehlend/32 teilweise/72 vollständig. Feldvollständigkeit ist keine Qualitäts- oder Aktualitätsfreigabe.'},
+ summary:{updatedProducts:changes.products.length,updatedComparisons:comparisons.length,updatedGuides:pages.filter(p=>p.file.includes('/pages/')).length,scoreChanges:products.filter(p=>p.score.changed).map(p=>({slug:p.slug,before:p.score.before.score,after:p.score.after.score})),sourceCaptures:http.receipts.length,sourceHttp200:http.receipts.filter(r=>r.status===200).length,restrictedOrUnreachableSources:http.receipts.filter(r=>r.status!==200).length,merchantLinkChecks:links?.results.length??0,browserCases:qa?.results.length??0},
+ improvements,limitations:['Nicht öffentlich erreichbare Originale, Bezahlschranken und unklare Modellzuordnung bleiben ausdrücklich offen. Suchauszüge, HTTP 200, neue Datumsanzeigen und Feldvollständigkeit sind keine unabhängigen Prüfbelege.','Keine technischen Daten aus anderen Generationen, keine behaupteten eigenen Praxistests, keine erfundenen Nutzerstichproben. Veröffentlichungsdatum bleibt null, wenn nicht verifiziert.','35.9 hat im lokalen Bestand keinen separat auffindbaren Report. Der gesicherte Ausgangsstand einschließlich Zugangs-, Einbau-, Mehrtier- und Ausfallfeldern wird nur an den einzeln protokollierten Stellen verändert.','Der Riko-Preis hat im Bestand kein freigegebenes Kaufziel. 36.0 aktiviert keinen neuen Affiliate-Link; alle vorhandenen Preis-/Kaufzielwerte sind unverändert.'],
+ safeguards:{protectedPages:verification.protectedPages,protectedIncomingEdges:verification.protectedIncomingEdges,originalDecisionFacts:437,productsWithProtectedFacts:73,approvedFacts:0,newProductUrls:0,merge:false,deployment:false},validation,comparisons,guides:pages.filter(p=>p.file.includes('/pages/')),renderedDecisionFacts:verification.renderedDecisionFacts,products,
+ reproduction:['node scripts/product-freshness/apply.mjs','node scripts/product-freshness/pages.mjs','npm run build','npm run test:product-integration','node --test test/product-freshness-36.0.test.mjs','node scripts/product-freshness/report.mjs --check','Für frische Netzbelege: node scripts/product-freshness/capture.mjs --refresh; node scripts/product-freshness/check-links.mjs. Anschließend erneute redaktionelle Bewertung; Netzantworten werden nie automatisch veröffentlicht.']};
+const code=v=>'`'+String(v??'nicht gesetzt').replaceAll('`','\u2032')+'`';
+const concise=v=>{const s=typeof v==='string'?v:JSON.stringify(v);return s?.length>650?s.slice(0,650)+' … (vollständig im JSON)':s??'nicht gesetzt'};
+let md=`# Product Freshness & Evidence Audit 36.0\n\nStand: 16. November 2026. ${report.scope.activeProducts} aktive Datensätze recherchiert (${report.scope.activePublished} veröffentlicht, 2 gesperrte Entwürfe); 15 archivierte Produkte separat erfasst. ${report.scope.productSearches} modellbezogene Suchläufe.\n\n**Tatsächlich umgesetzt:** ${report.summary.updatedProducts} Produktseiten, drei Vergleiche und ein Ratgeber. Eine Score-Änderung: Invoxia 83→78. Keine neuen Produkt-URLs, kein Merge und kein Deployment.\n\n${report.scope.note}\n\n## Zehn wichtigste Verbesserungen\n\n${improvements.map((s,i)=>`${i+1}. ${s}`).join('\n')}\n\n## Prüfung und Schutzregeln\n\n- Produktionsbuild: ${validation?.build?.pages??'ausstehend'} Seiten. Tests: ${validation?.tests?.passed??'ausstehend'} bestanden, ${validation?.tests?.failed??'ausstehend'} fehlgeschlagen.\n- 20 Experiment-/Kontrollseiten und 205 eingehende Linkkanten exakt unverändert; 73 Arrays mit 437 Originalhinweisen und leere Freigabeliste erhalten.\n- ${report.summary.sourceCaptures} direkte Quellenabrufe: ${report.summary.sourceHttp200} HTTP 200, ${report.summary.restrictedOrUnreachableSources} beschränkt/nicht erreichbar. HTTP-Erfolg ist ausdrücklich keine redaktionelle Quellenfreigabe.\n- ${report.summary.merchantLinkChecks} bestehende Kaufziel-URLs lesend geprüft; ${report.summary.browserCases} Browserfälle in 375/1600 Pixel und Hell/Dunkel. Alle geänderten Produktseiten zusätzlich im echten Build auf Hinweise, Canonical, Preis-CTA-Zuordnung und interne Links geprüft.\n- SEO-Felder, Canonicals, Preise, Angebote, Affiliate-Ziele und Veröffentlichungsstatus sämtlicher Produkte unverändert. Aktualisierungsdaten nur bei tatsächlichen Änderungen.\n- Invoxia: 219 € inklusive zwölf Monate Max GPS; erstes Jahr 219 €, zwei Jahre einschließlich hinterlegter Verlängerung 348,90 €.\n\n${report.limitations.map(s=>'- '+s).join('\n')}\n\n## Tatsächlich aktualisierte Vergleiche und Ratgeber\n\n${comparisons.map(c=>`- [${c.slug}](../src/content/comparisons/${c.slug}.md): ${c.visibleProducts.length} sichtbare Produkte; Rollen überprüft, keine künstlichen Füllprodukte oder unbelegten Rangverschiebungen.`).join('\n')}\n- [Futterautomat bei Stromausfall](../src/content/pages/futterautomat-bei-stromausfall.md): Grenzen von Zeitplan, Synchronisation und App-Protokoll.\n\n## Einzelbefunde für alle Produkte\n\nDie vollständigen Feldwerte vor/nach jeder Änderung stehen zusätzlich im [JSON-Report](product-freshness-36.0.json). Neue integrierte Quellen sind von bloßen Suchtreffern getrennt. Fehlende Veröffentlichungsdaten werden nicht ergänzt oder geschätzt.\n\n`;
+for(const p of products){md+=`### ${p.title} — ${p.slug}\n\n- Ergebnis: **${p.result}**. ${p.researchResult}\n- Route: ${code(p.url)}; ${p.published?'veröffentlicht':'Entwurf gesperrt'}. Evidenzfelder: ${p.evidence.before} → ${p.evidence.after}.\n- Bewertung: ${p.score.before.score??'ohne Score'} → ${p.score.after.score??'ohne Score'}/100. ${p.score.reason}\n- Aktualisierungsdatum im Produkt: ${code(p.updatedAt)}. Recherche: ${p.scope==='active'?'16.11.2026':'nicht im aktiven Umfang'}.\n`;
+ if(p.actualChanges){md+='- Geänderte Felder: '+Object.keys(p.actualChanges.fields).map(code).join(', ')+'.\n';for(const s of p.actualChanges.statements)md+=`- Alte Aussage: ${s.before??'Kein entsprechender Recherchehinweis vorhanden.'}\n- Neue Aussage: ${s.after}\n`;if(p.score.changed)md+=`- Kriterien vorher: ${code(JSON.stringify(p.score.criteriaBefore))}; danach: ${code(JSON.stringify(p.score.criteriaAfter))}.\n`}
+ else md+='- Tatsächliche Änderung: keine; vorhandene belastbare Informationen und Aktualisierungsdaten erhalten.\n';
+ for(const s of p.newlyIntegratedSources)md+=`- Integrierte Quelle: [${s.publisher}](${s.url}); Quellen-Datum ${s.publishedAt??'nicht ausgewiesen'} (${s.publicationDateMeaning}), Prüfung ${s.checkedAt}. ${s.claim} ${s.limitations??''}\n`;
+ if(p.scope==='active')md+=`- Recherchebelege: ${p.research.searches.length} Suchpfade, ${p.research.sourceChecks.length} direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).\n`;
+ const affected=[...p.comparisons.actuallyUpdatedPages,...p.comparisons.guidesUpdated];md+=`- Tatsächlich betroffene Vergleichs-/Ratgeberdateien: ${affected.length?affected.map(code).join(', '):'keine Änderung erforderlich oder sicher belegbar'}.\n`;
+ for(const pending of p.pending)md+=`- Ausstehend: ${pending.reason}\n`;
+ for(const open of p.openUncertainties)md+=`- Offen: ${open}\n`;
+ md+='\n';
+}
+md+='## Tatsächlich gerenderte Tractive-Entscheidungsaussagen\n\n';for(const [slug,facts]of Object.entries(report.renderedDecisionFacts))md+=`### ${slug}\n\n${facts.map(f=>`- **${f.fact}**: ${f.consequence}`).join('\n')}\n\n`;
+md+='## Reproduktion\n\n```sh\n'+report.reproduction.slice(0,-1).join('\n')+'\n```\n\n'+report.reproduction.at(-1)+'\n';
+for(const [name,content]of [['product-freshness-36.0.json',JSON.stringify(report,null,2)+'\n'],['product-freshness-36.0.md',md]]){
+ const file=path.join(app,'reports',name);if(process.argv.includes('--check'))assert.equal(fs.readFileSync(file,'utf8'),content,name+': veraltet');else fs.writeFileSync(file,content);
+}
+console.log(JSON.stringify({scope:report.scope,summary:report.summary,comparisons:comparisons.map(c=>[c.slug,c.visibleProducts.length])},null,2));
