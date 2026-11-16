@@ -1,3 +1,5 @@
+import { decisionFactApprovals, isDecisionFactApproved } from "./decisionFactReview.mjs";
+
 type DecisionFact = {
   label: string;
   value: string;
@@ -155,39 +157,39 @@ const implicationFor = (
   return null;
 };
 
-const GENERIC_POWER_CONSEQUENCE =
-  "Die Stromversorgung entscheidet, wie zuverlässig das Gerät bei Stromausfall oder unterwegs weiterarbeitet.";
-
 export const buildDecisionFacts = (
   data: any,
-  specs: Array<{ label: string; value: string }>
+  specs: Array<{ label: string; value: string }>,
+  approvals = decisionFactApprovals
 ): DecisionFact[] => {
   const category = text(data?.category?.label ?? data?.category?.key ?? data?.category);
   const explicit = Array.isArray(data?.decisionFacts)
     ? data.decisionFacts
+        .filter((item: any) => isDecisionFactApproved(data?.slug, item, approvals))
         .map((item: any) => {
           const label = text(item?.label);
           const value = text(item?.value);
           const supplied = text(item?.consequence);
-          const derived = implicationFor(label, value, category);
-          const consequence =
-            !supplied || supplied === GENERIC_POWER_CONSEQUENCE
-              ? derived ?? supplied
-              : supplied;
           return {
             label,
             value,
-            consequence,
+            consequence: supplied,
             source: "editorial" as const
           };
         })
         .filter((item: DecisionFact) => item.label && item.value && item.consequence)
     : [];
 
-  if (explicit.length > 0) return explicit.slice(0, 6);
-
   const output: DecisionFact[] = [];
   const seen = new Set<string>();
+
+  for (const fact of explicit) {
+    const key = normalize(fact.label);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    output.push(fact);
+    if (output.length >= 6) return output;
+  }
 
   for (const spec of specs) {
     const consequence = implicationFor(spec.label, spec.value, category);

@@ -90,6 +90,8 @@
     "audit:multicat-intent": "node scripts/seo/audit-week7-multicat-intent.mjs",
     "audit:comparison-schema": "node scripts/seo/audit-comparison-product-schema.mjs",
     "test:product-experience-2": "node --experimental-strip-types --test test/product-experience-2.test.mjs",
+    "audit:decision-facts": "node scripts/product-experience/audit-decision-facts.mjs",
+    "audit:decision-facts:check": "node scripts/product-experience/audit-decision-facts.mjs --check",
     "test:price-intelligence": "node --test test/price-intelligence.test.mjs",
     "price:audit": "node scripts/price-intelligence/audit.mjs",
     "price:audit:strict": "node scripts/price-intelligence/audit.mjs --strict",

@@ -1,4 +1,5 @@
 import { fact, consumablesSchema, consumablePolicySchema, replacementCommerceShape, fountainOperatingShape, validateFoundationEvidence } from "./consumables.mjs";
+import { productDecisionFactsSchema } from "./decision-facts.mjs";
 import { productAffiliateSchema, productPriceSchema, productPriceStateSchema, productAvailabilitySchema, productOffersSchema } from "./commerce.mjs";
 import {
   defineCollection,
@@ -878,6 +879,9 @@ export const createProductContentSchema = (image: ImageFunction) =>
 
     decision:
       productDecisionSchema,
+
+    // Storage is independent from publication; exact-text approvals gate rendering.
+    decisionFacts: productDecisionFactsSchema,
 
     review:
       productReviewSchema,
