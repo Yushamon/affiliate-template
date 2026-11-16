@@ -11,7 +11,7 @@ linking:
 categoryLabel: "Wasser & Hygiene"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-08-19"
+updatedAt: "2026-11-16"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkbrunnen, pumpe, reinigung, wartung, lautstaerke]
 hub: { sections: [wissen], title: "Pumpe im Katzenbrunnen reinigen", description: "Rotor, Pumpenraum und Vorfilter ohne blinde Stellen säubern.", order: 59 }
@@ -46,6 +46,8 @@ Brunnen vollständig leeren und Filter entfernen. Pumpe ausbauen, Abdeckung und 
 Ein Wattestäbchen kann Fasern verlieren und ist in engen Pumpenteilen nicht immer ideal. Besser sind die mitgelieferte Bürste oder eine passende kleine Reinigungsbürste. Schaumstoff-Vorfilter separat ausspülen und ersetzen, wenn er beschädigt oder nicht mehr sauber wird.
 
 Nach dem Spülen den Rotor frei einsetzen und alles korrekt zusammenbauen. Die Pumpe niemals längere Zeit trocken laufen lassen. Erst ausreichend Wasser einfüllen, dann einschalten und Durchfluss sowie Geräusch beobachten.
+
+Beim [Philips PAW3210/02](/produkt/philips-pet-series-paw3210-02/) ist Handreinigung vorgesehen; eine Spülmaschinenfreigabe ist nicht belegt. Nach einer Stromunterbrechung sollte der Wasserfluss ausdrücklich kontrolliert werden: Der auf der Produktseite eingeordnete unabhängige Test berichtet, dass ein erneuter Tastendruck nötig sein kann. Das ist ein modellspezifischer Prüfpunkt und keine Aussage über alle Brunnen.
 
 ## Pumpe reinigen: Reihenfolge in 6 Schritten
 

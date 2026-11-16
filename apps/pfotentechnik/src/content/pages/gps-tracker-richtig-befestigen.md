@@ -13,7 +13,7 @@ linking: { keywords: ["GPS Tracker befestigen", "GPS Halsband richtig anlegen", 
 tags: ["GPS", "Befestigung", "Halsband", "Geschirr", "Sicherheit"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion für smarte Haustiertechnik" }
 publishedAt: "2026-07-20"
-updatedAt: "2026-07-20"
+updatedAt: "2026-11-16"
 hub: { sections: ["wissen", "gps-tracker"], title: "GPS-Tracker richtig befestigen", description: "Sitz, Gewöhnung und Sicherheitskontrolle.", icon: "🔗", order: 366, featured: true }
 contentPlatform: { version: 2, cluster: "gps-tracker", intent: "how-to", animal: "both", products: [], decision: "off", blocks: [summary, fit, checklist, mistakes], summary: ["Der Tracker sitzt körpernah, verdrehsicher und ohne zu scheuern.", "Bei Katzen hat sichere Selbstbefreiung Vorrang vor Trackerverlust.", "Sitz und Haut werden täglich kontrolliert."], suitableFor: ["sichere Ersteinrichtung"], notSuitableFor: ["unbeaufsichtigtes Experimentieren"], checklist: ["Bandbreite passend", "Clip vollständig geschlossen", "zwei-Finger-Sitz beim Hund", "Sicherheitsöffnung bei Katze", "Bewegung normal"], mistakes: ["Tracker am Ring pendeln lassen", "Katzenhalsband ohne Öffnungsfunktion"], faqMode: "manual", theme: "green" }
 heroImage: { src: "../../assets/images/guides/gps-tracker/attachment.webp", alt: "Korrekte und fehlerhafte Tracker-Befestigung bei Hund und Katze" }
@@ -40,6 +40,8 @@ Der Tracker soll nicht rotieren oder frei schlagen. Band, Clip und zulässige Br
 ## Katze: Selbstbefreiung vor Geräteerhalt
 
 Freigänger klettern durch Büsche, Zäune und enge Öffnungen. Der Verschluss muss eine gefährliche Last lösen können. Ein verlorener Tracker ist ärgerlich; eine nicht lösbare Schlaufe ist das größere Risiko.
+
+Bei den aktuellen Tractive-Varianten unterscheiden sich Gerät und Tiergrenze deutlich: Der [CAT 6 Mini](/produkt/tractive-cat-6-mini/) wiegt inklusive integriertem Halsband 32 g und ist für Katzen von 3 bis 8 kg angegeben. Der [DOG 6](/produkt/tractive-dog-6/) wiegt rund 39 g und ist für Hunde ab 4 kg vorgesehen, der [DOG 6 XL](/produkt/tractive-dog-6-xl/) rund 70 g für Hunde ab 20 kg. Mehr Akkureserve beim XL ist deshalb kein Grund, die dokumentierte Tiergrenze oder Halsbandpassform zu übergehen.
 
 ## Täglicher 30-Sekunden-Check
 

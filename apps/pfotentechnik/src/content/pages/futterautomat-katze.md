@@ -15,7 +15,7 @@ linking:
 tags: ["Futterautomat", "Katze", "Kaufberatung"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 publishedAt: "2026-07-08"
-updatedAt: "2026-08-24"
+updatedAt: "2026-11-16"
 navigation:
   show: false
   label: "Für Katzen"
@@ -80,7 +80,9 @@ Eine App erleichtert Änderungen und kann Ausgaben protokollieren. Entscheidend 
 
 ## Mehrere Katzen am selben Napf
 
-Ein Ausgabeprotokoll sagt nur, dass Futter bereitgestellt wurde. Es sagt nicht, welche Katze es gefressen hat. Bei Futterneid oder unterschiedlichen Rationen braucht es getrennte Futterplätze, zeitweise Aufsicht oder ein geeignetes Zugangssystem. Kameraaufnahmen können Hinweise liefern, lösen die Zugangskontrolle aber nicht automatisch.
+Ein App-Protokoll ist kein sicherer Nachweis einer tatsächlichen Ausgabe oder Futteraufnahme. Selbst beobachtetes, bereitgestelltes Futter zeigt noch nicht, welche Katze gefressen hat. Bei Futterneid oder unterschiedlichen Rationen braucht es getrennte Futterplätze, zeitweise Aufsicht oder ein geeignetes Zugangssystem. Kameraaufnahmen können Hinweise liefern, lösen die Zugangskontrolle aber nicht automatisch.
+
+Der [PETLIBRO Granary 2 Vision](/produkt/petlibro-granary-2-vision/) kombiniert eine Waage mit Kamera und KI-Zuordnung von Aufnahmen; eine Zugangssperre pro Tier ist damit nicht dokumentiert. Der [PETLIBRO ONE RFID Smart Feeder](/produkt/petlibro-one-rfid-smart-feeder/) steuert den Napfzugang dagegen über einen RFID-Halsbandanhänger. Für getrennte Rationen ist diese Unterscheidung wichtiger als das bloße Vorhandensein eines Fütterungsprotokolls.
 
 ## Reinigung und Gewöhnung
 

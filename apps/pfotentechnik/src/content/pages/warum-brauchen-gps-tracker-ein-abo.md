@@ -13,7 +13,7 @@ linking: { keywords: ["warum GPS Tracker Abo", "GPS Tracker laufende Kosten", "T
 tags: ["GPS", "Abo", "Kosten", "SIM", "Cloud"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion für smarte Haustiertechnik" }
 publishedAt: "2026-07-20"
-updatedAt: "2026-09-29"
+updatedAt: "2026-11-16"
 hub: { sections: ["wissen", "gps-tracker"], title: "Warum brauchen Tracker ein Abo?", description: "SIM, Server und App als laufende Dienstkette.", icon: "💳", order: 365, featured: true }
 contentPlatform: { version: 2, cluster: "gps-tracker", intent: "informational", animal: "both", products: [], decision: "auto", blocks: [summary, comparison, checklist], summary: ["Das Abo bezahlt nicht GPS, sondern Mobilfunk und den betriebenen App-Dienst.", "Ein niedriger Gerätepreis kann durch mehrere Jahre Gebühren teurer werden.", "Ohne-Abo-Systeme verlagern Kosten oft in Empfänger und Hardware."], suitableFor: ["Gesamtkostenvergleich"], notSuitableFor: ["Preisvergleich nur nach Kaufpreis"], checklist: ["Drei-Jahres-Kosten rechnen", "Kündigung und Pause prüfen", "Funktionen nach Tarifende klären"], mistakes: ["Inklusivphase mit dauerhaft ohne Abo verwechseln"], faqMode: "manual", theme: "amber" }
 heroImage: { src: "../../assets/images/guides/gps-tracker/battery-subscription.webp", alt: "Mobilfunktracker mit Cloud-Abo und VHF-System mit Hardwarekosten" }
@@ -56,6 +56,8 @@ Die Modelle unterscheiden sich darin, wann Dienstkosten entstehen und welche Har
 - **Garmin Alpha:** VHF-Kernortung ohne Mobilfunkabo; Handgerät erforderlich.
 
 Aktuelle Produktbedingungen stehen auf den Seiten von [Tractive](/hersteller/tractive/), [Weenect](/hersteller/weenect/), [PAJ GPS](/hersteller/paj-gps/) und [Garmin](/hersteller/garmin/). Der [Vergleich ohne Abo](/vergleiche/gps-tracker-ohne-abo/) verhindert den falschen Vergleich mit Bluetooth-Tags.
+
+Beim hier erfassten Paket des [Invoxia Biotracker 2026](/produkt/invoxia-biotracker-2026/) sind zwölf Monate Max GPS enthalten. Dieses Paketjahr darf beim Kostenvergleich nicht nochmals als Abo-Aufschlag gerechnet werden. Für die Anbieter [MOVA](/hersteller/mova/) und [SATELLAI](/hersteller/satellai/) führen die Herstellerprofile zu den jeweiligen Geräten und den dokumentierten regionalen Tarifgrenzen; EU-Tarif und Verlängerung vor Vertragsabschluss gesondert prüfen.
 
 ## Quellen
 

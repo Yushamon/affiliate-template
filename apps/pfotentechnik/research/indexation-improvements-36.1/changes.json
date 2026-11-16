@@ -1,0 +1,116 @@
+{
+  "version": "36.1",
+  "changes": [
+    {
+      "file": "src/content/pages/warum-brauchen-gps-tracker-ein-abo.md",
+      "route": "/warum-brauchen-gps-tracker-ein-abo/",
+      "beforeSha256": "c705475613704de13a3700e7c3ffdd1d346ab008ce2a97b55a1610f52049a069",
+      "afterSha256": "9dc7067cbc7f981210ef6b14f5c3ceea957051eca700fa787600a10b42a8ae8c",
+      "reason": "Historisch indexierter Tarifratgeber verlinkt keines der neuen Modelle; MOVA-/SATELLAI-Profile erhalten bisher keine kontextuellen Zugänge.",
+      "addition": "Beim hier erfassten Paket des [Invoxia Biotracker 2026](/produkt/invoxia-biotracker-2026/) sind zwölf Monate Max GPS enthalten. Dieses Paketjahr darf beim Kostenvergleich nicht nochmals als Abo-Aufschlag gerechnet werden. Für die Anbieter [MOVA](/hersteller/mova/) und [SATELLAI](/hersteller/satellai/) führen die Herstellerprofile zu den jeweiligen Geräten und den dokumentierten regionalen Tarifgrenzen; EU-Tarif und Verlängerung vor Vertragsabschluss gesondert prüfen.",
+      "replacement": null,
+      "addedTargets": [
+        "/produkt/invoxia-biotracker-2026/",
+        "/hersteller/mova/",
+        "/hersteller/satellai/"
+      ],
+      "evidence": [
+        "src/content/products/invoxia-biotracker-2026.md: subscription.includedServiceMonths / price.variantLabel",
+        "src/content/manufacturers/mova.md",
+        "src/content/manufacturers/satellai.md"
+      ],
+      "status": "implemented"
+    },
+    {
+      "file": "src/content/pages/reichweite-von-gps-trackern.md",
+      "route": "/reichweite-von-gps-trackern/",
+      "beforeSha256": "5e94a4f099ba004ffe6efd14887caba6ca657a5445a3301c20c5ef0ea6425ecf",
+      "afterSha256": "26b7b25b3698450721ec501b242d742cbcb76bb796227a6c04a064e30202b742",
+      "reason": "MOVA und SATELLAI haben bislang jeweils nur das eigene Herstellerprofil als Kontextquelle; der belegte LTE-Datenweg passt zur Reichweitenfrage.",
+      "addition": "[MOVA SureTrack Pro](/produkt/mova-suretrack-pro/) und [SATELLAI Collar Go](/produkt/satellai-collar-go/) übertragen laut den erfassten Produktdaten per LTE. Damit ist ihre Suchdistanz nicht wie bei VHF allein durch den Abstand zum Handgerät begrenzt. Ohne unterstütztes Mobilfunknetz kann die Fernanzeige trotzdem ausbleiben; eine funktionierende Standortabfrage belegt außerdem keine rechtzeitige Geofence-Warnung.",
+      "replacement": null,
+      "addedTargets": [
+        "/produkt/mova-suretrack-pro/",
+        "/produkt/satellai-collar-go/"
+      ],
+      "evidence": [
+        "src/content/products/mova-suretrack-pro.md: gps.transmission / externalEvidence",
+        "src/content/products/satellai-collar-go.md: gps.transmission"
+      ],
+      "status": "implemented"
+    },
+    {
+      "file": "src/content/pages/gps-tracker-richtig-befestigen.md",
+      "route": "/gps-tracker-richtig-befestigen/",
+      "beforeSha256": "a78d758c0dbf816703018124511c4f8d670441f5061536fdbd6874581a5a606d",
+      "afterSha256": "daddbe0e14b907d4c4b70fbd86f06e909dfdb6a9f039a2a8ba324ad9ceadb7cc",
+      "reason": "Konkrete aktuelle Passformgrenzen fehlen im Befestigungsratgeber; Standard und XL sollen nicht als austauschbare Varianten erscheinen.",
+      "addition": "Bei den aktuellen Tractive-Varianten unterscheiden sich Gerät und Tiergrenze deutlich: Der [CAT 6 Mini](/produkt/tractive-cat-6-mini/) wiegt inklusive integriertem Halsband 32 g und ist für Katzen von 3 bis 8 kg angegeben. Der [DOG 6](/produkt/tractive-dog-6/) wiegt rund 39 g und ist für Hunde ab 4 kg vorgesehen, der [DOG 6 XL](/produkt/tractive-dog-6-xl/) rund 70 g für Hunde ab 20 kg. Mehr Akkureserve beim XL ist deshalb kein Grund, die dokumentierte Tiergrenze oder Halsbandpassform zu übergehen.",
+      "replacement": null,
+      "addedTargets": [
+        "/produkt/tractive-cat-6-mini/",
+        "/produkt/tractive-dog-6/",
+        "/produkt/tractive-dog-6-xl/"
+      ],
+      "evidence": [
+        "src/content/products/tractive-cat-6-mini.md: specs.Gewicht / Geeignet für",
+        "src/content/products/tractive-dog-6.md: specs.Gewicht / Geeignet für",
+        "src/content/products/tractive-dog-6-xl.md: specs.Gewicht / Geeignet für"
+      ],
+      "status": "implemented"
+    },
+    {
+      "file": "src/content/pages/futterautomat-katze.md",
+      "route": "/futterautomat-katze/",
+      "beforeSha256": "116b9e35a9edf3068b7ea999493384ad852bee8c1c7795e7f1fa0af4eabf56ee",
+      "afterSha256": "19623fe19dafb82d1956b9884ee7df2cfb7008b3417d3ca0e90e15cfa66b223a",
+      "reason": "Die Aussage zum Ausgabeprotokoll widerspricht den bereits dokumentierten PETLIBRO-Cloudgrenzen. Waage/KI und echte Zugangskontrolle benötigen unterschiedliche Kaufentscheidungen.",
+      "addition": "Der [PETLIBRO Granary 2 Vision](/produkt/petlibro-granary-2-vision/) kombiniert eine Waage mit Kamera und KI-Zuordnung von Aufnahmen; eine Zugangssperre pro Tier ist damit nicht dokumentiert. Der [PETLIBRO ONE RFID Smart Feeder](/produkt/petlibro-one-rfid-smart-feeder/) steuert den Napfzugang dagegen über einen RFID-Halsbandanhänger. Für getrennte Rationen ist diese Unterscheidung wichtiger als das bloße Vorhandensein eines Fütterungsprotokolls.",
+      "replacement": {
+        "before": "Ein Ausgabeprotokoll sagt nur, dass Futter bereitgestellt wurde. Es sagt nicht, welche Katze es gefressen hat.",
+        "after": "Ein App-Protokoll ist kein sicherer Nachweis einer tatsächlichen Ausgabe oder Futteraufnahme. Selbst beobachtetes, bereitgestelltes Futter zeigt noch nicht, welche Katze gefressen hat."
+      },
+      "addedTargets": [
+        "/produkt/petlibro-granary-2-vision/",
+        "/produkt/petlibro-one-rfid-smart-feeder/"
+      ],
+      "evidence": [
+        "src/content/products/petlibro-granary-2-vision.md: specs.Waage / Kamera / Tiererkennung / experience.reliability",
+        "src/content/products/petlibro-one-rfid-smart-feeder.md: specs.Zugangskontrolle"
+      ],
+      "status": "implemented"
+    },
+    {
+      "file": "src/content/pages/trinkmenge-katze-messen.md",
+      "route": "/trinkmenge-katze-messen/",
+      "beforeSha256": "d62bd627113b530abb99dcde89411af6d43c41ad11b9322f6c66cecbe3bf21af",
+      "afterSha256": "ebf0bf3e642e3430600f398aac6a464791b74b5af2564edc30503d447ac0ff7a",
+      "reason": "Der FEELNEEDY-8-Liter-Brunnen hat keinen Kontextlink. Sein dokumentiertes Fehlen einer Trinkmengenmessung verdeutlicht den Unterschied von Vorrat und Messung.",
+      "addition": "Ein großer Vorrat ist keine Messfunktion: Der [FEELNEEDY FN-W18 mit 8 Litern](/produkt/feelneedy-fn-w18-8l-katzenbrunnen/) hat laut den erfassten Produktdaten weder App noch Trinkmengenmessung. Auch bei diesem Modell bleibt die Differenz aus eingefülltem und verbleibendem Wasser eine Näherung einschließlich Verdunstung und Verschütten; sie lässt sich nicht automatisch einer einzelnen Katze zuordnen.",
+      "replacement": null,
+      "addedTargets": [
+        "/produkt/feelneedy-fn-w18-8l-katzenbrunnen/"
+      ],
+      "evidence": [
+        "src/content/products/feelneedy-fn-w18-8l-katzenbrunnen.md: specs.Gesamtkapazität / App / Trinkmengenmessung"
+      ],
+      "status": "implemented"
+    },
+    {
+      "file": "src/content/pages/pumpe-katzentrinkbrunnen-reinigen.md",
+      "route": "/pumpe-katzentrinkbrunnen-reinigen/",
+      "beforeSha256": "cd3015622c5e5f155c28e7b82ced0cfe63927d824d3aef3a59b958a154c9e8b0",
+      "afterSha256": "7dc778caaa1ca00e3e14343ecc90c374516b069b23aea58733e8cde59df3590c",
+      "reason": "Das neue Philips-Modell erhält bisher keinen Kontextzugang aus einem historisch indexierten Ratgeber; Handreinigung und Wiederanlauf sind konkrete Pflegeunterschiede.",
+      "addition": "Beim [Philips PAW3210/02](/produkt/philips-pet-series-paw3210-02/) ist Handreinigung vorgesehen; eine Spülmaschinenfreigabe ist nicht belegt. Nach einer Stromunterbrechung sollte der Wasserfluss ausdrücklich kontrolliert werden: Der auf der Produktseite eingeordnete unabhängige Test berichtet, dass ein erneuter Tastendruck nötig sein kann. Das ist ein modellspezifischer Prüfpunkt und keine Aussage über alle Brunnen.",
+      "replacement": null,
+      "addedTargets": [
+        "/produkt/philips-pet-series-paw3210-02/"
+      ],
+      "evidence": [
+        "src/content/products/philips-pet-series-paw3210-02.md: specs.Reinigung / experience.reliability / LydBilde-Test"
+      ],
+      "status": "implemented"
+    }
+  ]
+}

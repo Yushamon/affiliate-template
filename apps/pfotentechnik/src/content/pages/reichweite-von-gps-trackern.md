@@ -13,7 +13,7 @@ linking: { keywords: ["Reichweite GPS Tracker", "GPS Tracker unbegrenzte Reichwe
 tags: ["GPS", "Reichweite", "Mobilfunk", "VHF", "Bluetooth"]
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion für smarte Haustiertechnik" }
 publishedAt: "2026-07-20"
-updatedAt: "2026-07-20"
+updatedAt: "2026-11-16"
 hub: { sections: ["wissen", "gps-tracker"], title: "Reichweite von GPS-Trackern", description: "Distanzgrenze, Abdeckung und Signalweg getrennt prüfen.", icon: "📡", order: 364, featured: true }
 contentPlatform: { version: 2, cluster: "gps-tracker", intent: "informational", animal: "both", products: [], decision: "off", blocks: [summary, comparison, checklist], summary: ["Mobilfunktracker haben keine feste Distanzgrenze, aber brauchen unterstützte Netzabdeckung.", "VHF funktioniert ohne Mobilfunk, hat eine maximale Funkdistanz.", "Satellitenempfang und Datenübertragung sind zwei getrennte Reichweitenfragen."], suitableFor: ["Abdeckungsprüfung vor dem Kauf"], notSuitableFor: ["Versprechen vollständiger Erreichbarkeit"], checklist: ["Mobilfunkkarte prüfen", "typische Wege testen", "Offline- und Funklochverhalten kennen"], mistakes: ["unbegrenzt mit überall erreichbar gleichsetzen"], faqMode: "manual", theme: "blue" }
 heroImage: { src: "../../assets/images/guides/gps-tracker/range-accuracy.webp", alt: "Satellitenempfang und Mobilfunkübertragung in verschiedenen Umgebungen" }
@@ -46,6 +46,8 @@ Reichweite hat drei Ebenen: **Satellit zum Tracker, Tracker zum Netz oder Empfä
 | VHF | direkte Funkstrecke | Hersteller-Maximaldistanz |
 | Bluetooth direkt | Geräte-zu-Gerät | konkrete Funkimplementierung |
 | Bluetooth-Netzwerk | indirekte Fundmeldung | erreichbare Fremdgeräte |
+
+[MOVA SureTrack Pro](/produkt/mova-suretrack-pro/) und [SATELLAI Collar Go](/produkt/satellai-collar-go/) übertragen laut den erfassten Produktdaten per LTE. Damit ist ihre Suchdistanz nicht wie bei VHF allein durch den Abstand zum Handgerät begrenzt. Ohne unterstütztes Mobilfunknetz kann die Fernanzeige trotzdem ausbleiben; eine funktionierende Standortabfrage belegt außerdem keine rechtzeitige Geofence-Warnung.
 
 ## Praxistest vor dem Ernstfall
 

@@ -11,7 +11,7 @@ linking:
 categoryLabel: "Gesundheit & Wasser"
 categoryPath: "/wissen/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-09-29"
+updatedAt: "2026-11-16"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: [katze, trinkmenge, wasser, messen, gesundheit, smart-trinkbrunnen]
 hub: { sections: [wissen], title: "Trinkmenge bei Katzen messen", description: "Messbecher, Protokoll und Smart-Daten richtig interpretieren.", order: 66 }
@@ -52,6 +52,8 @@ Im Brunnen bleibt Wasser in Pumpe, Schläuchen, Filter und Kanälen. Ein Filterw
 Smart-Modelle erfassen je nach Technik Füllstandsänderungen, Laufzeit oder Besuche. Diese Daten sind für Trends interessant, aber nicht automatisch die tatsächlich geschluckte Menge. In mehreren Katzen sind sie ohne RFID oder andere sichere Identifikation nicht individuell.
 
 Auch der [PETKIT Eversweet Ultra](/produkt/petkit-eversweet-ultra/) ordnet laut Hersteller Kameraereignisse einzelnen Tierprofilen zu und schätzt Trinkmengen. Das verbessert die Verlaufssicht, validiert aber weder die geschluckte Menge noch eine Diagnose. Prüfe Video-/Cloudumfang, Fehlzuordnungen und parallele Wasserstellen im manuellen Protokoll.
+
+Ein großer Vorrat ist keine Messfunktion: Der [FEELNEEDY FN-W18 mit 8 Litern](/produkt/feelneedy-fn-w18-8l-katzenbrunnen/) hat laut den erfassten Produktdaten weder App noch Trinkmengenmessung. Auch bei diesem Modell bleibt die Differenz aus eingefülltem und verbleibendem Wasser eine Näherung einschließlich Verdunstung und Verschütten; sie lässt sich nicht automatisch einer einzelnen Katze zuordnen.
 
 ## Wasser im Futter gehört dazu
 

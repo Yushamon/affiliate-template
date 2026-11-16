@@ -1,0 +1,10 @@
+import fs from 'node:fs';import path from 'node:path';import {gzipSync} from 'node:zlib';
+import {app,scanBuild,sourceInventory} from './scan.mjs';
+const root=path.join(app,'research/indexation-improvements-36.1'),target=path.join(root,'baseline.json.gz');
+if(fs.existsSync(target))throw Error('36.1-Baseline existiert; kein Überschreiben.');
+const result=scanBuild();
+const experiment=JSON.parse(fs.readFileSync(path.join(app,'research/product-integration-35.8/baseline.json')));
+const protectedHtml=Object.fromEntries(experiment.routes.map(route=>[route,fs.readFileSync(path.join(app,'dist','.'+route,'index.html'),'utf8')]));
+fs.writeFileSync(target,gzipSync(JSON.stringify({capturedAt:new Date().toISOString(),...result,protectedHtml,sources:sourceInventory().map(({data,body,...s})=>s)})));
+console.log({canonicals:result.pages.length,sitemap:result.sitemap.length,excluded:result.excluded.length,protected:Object.keys(protectedHtml).length});
+console.log('Weak products',result.pages.filter(p=>p.type==='product'&&p.contextualSources.length<2).map(p=>({route:p.route,context:p.contextualSources.length,depth:p.clickDepth})).slice(0,30));

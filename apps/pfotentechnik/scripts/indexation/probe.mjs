@@ -1,0 +1,15 @@
+import fs from 'node:fs';import path from 'node:path';import {gunzipSync} from 'node:zlib';
+import {app,inspectHtml} from './scan.mjs';
+import {traceUrl} from '../seo/production-http-integrity.mjs';
+const root=path.join(app,'research/indexation-improvements-36.1'),target=path.join(root,'production-http.json');
+if(fs.existsSync(target)&&!process.argv.includes('--refresh'))throw Error('HTTP-Belege vorhanden; --refresh für neue lesende Prüfung verwenden.');
+const base=JSON.parse(gunzipSync(fs.readFileSync(path.join(root,'baseline.json.gz'))));
+const urls=[...base.pages.map(p=>p.url),'http://pfotentechnik.de/','https://www.pfotentechnik.de/','http://www.pfotentechnik.de/','https://pfotentechnik.de/robots.txt','https://pfotentechnik.de/sitemap-index.xml','https://pfotentechnik.de/sitemap-0.xml'];
+const results=[];let index=0;
+await Promise.all(Array.from({length:4},async()=>{while(index<urls.length){const url=urls[index++],checkedAt=new Date().toISOString();const trace=await traceUrl(url,{timeoutMs:12000});const {body,...receipt}=trace;
+ const html=/html/i.test(trace.chain.at(-1)?.contentType??'')?inspectHtml(body,new URL(url).pathname):null;
+ results.push({...receipt,checkedAt,mainCharacters:html?.mainText.length??null,h1:html?.h1??[],schemaErrors:html?.schemaErrors??[],structuredDataBlocks:html?.schemas.length??0,text:html?undefined:body.slice(0,100000)});
+ if(results.length%25===0)console.log(`${results.length}/${urls.length} geprüft`);
+}}));
+results.sort((a,b)=>a.url.localeCompare(b.url));fs.writeFileSync(target,JSON.stringify({startedAt:results.map(r=>r.checkedAt).sort()[0],finishedAt:new Date().toISOString(),method:'Read-only GET; redirects manual and bounded to production domain; no indexing submission',results},null,2)+'\n');
+console.log(JSON.stringify({urls:results.length,errors:results.filter(r=>r.error).length,statuses:results.reduce((a,r)=>(a[r.finalStatus??'error']=(a[r.finalStatus??'error']??0)+1,a),{})}));
