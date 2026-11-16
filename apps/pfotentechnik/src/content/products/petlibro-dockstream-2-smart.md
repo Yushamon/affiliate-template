@@ -100,7 +100,7 @@ offers:
       current: 105.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-11-02T08:10:17.664Z"
+      checkedAt: "2026-11-16T09:06:56.025Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -124,8 +124,8 @@ offers:
     variantId: "52389571527022"
     expectedSku: "PL-WF106-31W"
     variantLabel: "Weiß / Plug-In"
-    lastAttemptAt: "2026-11-02T08:10:17.664Z"
-    availabilityUpdated: "2026-11-02T08:10:17.664Z"
+    lastAttemptAt: "2026-11-16T09:06:56.025Z"
+    availabilityUpdated: "2026-11-16T09:06:56.025Z"
 priceState: "available"
 priceUpdated: "2026-10-16T07:59:43.926Z"
 priceAvailable: true

@@ -69,7 +69,7 @@ price:
   current: 54.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-11-02T08:10:11.679Z"
+  checkedAt: "2026-11-16T09:06:50.388Z"
   source:
     id: "mediamarkt.de"
     label: "mediamarkt.de"
@@ -84,12 +84,12 @@ rating: 3.6
 score: 72
 
 priceState: "available"
-priceUpdated: "2026-11-02T08:10:11.679Z"
+priceUpdated: "2026-11-16T09:06:50.388Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Händler meldet https://schema.org/InStock bei der automatischen Prüfung."
-availabilityUpdated: "2026-11-02T08:10:11.679Z"
+availabilityUpdated: "2026-11-16T09:06:50.388Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
@@ -299,7 +299,7 @@ offers:
     availability: "unknown"
     identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
     evidenceSources: []
-    lastAttemptAt: "2026-11-02T08:10:11.684Z"
+    lastAttemptAt: "2026-11-16T09:06:50.395Z"
     error: "Offizielle Produkt-URL unresolved."
 experience:
   summary: "Dies ist die lokale Air-Version mit Bedienfeld und Display, nicht Air WiFi. Es gibt keine Fernsteuerung oder Fütterungsprotokolle. Zwei Liter und bis zu sechs Mahlzeiten müssen zur tatsächlichen Tagesration passen; der Vorrat ist keine Portionsmessung."

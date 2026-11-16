@@ -63,11 +63,11 @@ images:
     - src: ../../assets/images/products/cat-mate-c300/gallery-4.webp
       alt: Cat Mate C300 im Katzenhaushalt
 price:
-  current: 34.99
+  current: 29.74
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 11 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-10-22T13:03:34.746Z"
+  checkedAt: "2026-11-16T09:05:47.392Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -82,7 +82,7 @@ rating: 3.6
 score: 73
 
 priceState: "available"
-priceUpdated: "2026-10-22T13:03:34.746Z"
+priceUpdated: "2026-11-16T09:05:47.392Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

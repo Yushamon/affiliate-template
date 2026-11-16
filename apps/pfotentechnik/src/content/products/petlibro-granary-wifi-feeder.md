@@ -339,7 +339,7 @@ offers:
       current: 109.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-11-02T08:10:32.734Z"
+      checkedAt: "2026-11-16T09:07:11.864Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -363,8 +363,8 @@ offers:
     variantId: "44414075732210"
     expectedSku: "PL-AF103-34W"
     variantLabel: "Weiß / Einzelne Schale"
-    lastAttemptAt: "2026-11-02T08:10:32.734Z"
-    availabilityUpdated: "2026-11-02T08:10:32.734Z"
+    lastAttemptAt: "2026-11-16T09:07:11.864Z"
+    availabilityUpdated: "2026-11-16T09:07:11.864Z"
 ---
 Der PETLIBRO Granary WiFi ist ein klassischer Vorratsautomat mit moderner App-Anbindung. Seine Stärke liegt in der Kombination aus großem Behälter, flexibler Planung und vergleichsweise breiter Futterkompatibilität.
 

@@ -62,10 +62,10 @@ images:
     - src: ../../assets/images/products/cat-mate-335-pet-fountain/gallery-3.webp
       alt: Cat Mate Pet Fountain 335 an einem ruhigen Trinkplatz
 price:
-  current: 29
+  current: 24.65
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-11-02T08:09:01.841Z"
+  checkedAt: "2026-11-16T09:05:42.751Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -80,7 +80,7 @@ rating: 3.9
 score: 79
 
 priceState: "available"
-priceUpdated: "2026-11-02T08:09:01.841Z"
+priceUpdated: "2026-11-16T09:05:42.751Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

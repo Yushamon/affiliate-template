@@ -60,7 +60,7 @@ price:
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 8 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-11-02T08:09:56.533Z"
+  checkedAt: "2026-11-16T09:06:36.419Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -75,7 +75,7 @@ rating: 4.4
 score: 87
 
 priceState: "available"
-priceUpdated: "2026-11-02T08:09:56.533Z"
+priceUpdated: "2026-11-16T09:06:36.419Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"
@@ -292,7 +292,6 @@ evidenceSources:
     sourceType: manufacturer
     assertion: "Specs nennen USB und Bluetooth; FAQ verlangt dauerhaften Stromanschluss. Wireless-Pumpe ist kein Akku; keine eigenständige WLAN-Fernüberwachung aus Bluetooth ableiten."
     fields: ["experience.summary", "experience.reliability"]
-
 ---
 Der Eversweet Solo 2 ist technisch weniger ambitioniert als die UVC-Modelle, dafür übersichtlich. Wichtig ist die Unterscheidung zwischen kabelloser Pumpe und kabellosem Gesamtbetrieb.
 

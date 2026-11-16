@@ -50,10 +50,10 @@ subscription:
     - { name: "Standard jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 129.99, currency: EUR, effectiveMonthlyPrice: 10.83, autoRenew: true, featured: true, notes: "7 Tage Videospeicher" }
     - { name: "Premium jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 189.99, currency: EUR, effectiveMonthlyPrice: 15.83, autoRenew: true, notes: "30 Tage Videospeicher" }
 price:
-  current: 559.98
+  current: 529.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-10-22T13:05:12.784Z"
+  checkedAt: "2026-11-16T09:07:13.898Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -155,7 +155,7 @@ offers:
       current: 799.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-11-02T08:10:34.930Z"
+      checkedAt: "2026-11-16T09:07:14.001Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -179,8 +179,8 @@ offers:
     variantId: "53374260642158"
     expectedSku: "PL-LB001-31W"
     variantLabel: "1 paket"
-    lastAttemptAt: "2026-11-02T08:10:34.930Z"
-    availabilityUpdated: "2026-11-02T08:10:34.930Z"
+    lastAttemptAt: "2026-11-16T09:07:14.001Z"
+    availabilityUpdated: "2026-11-16T09:07:14.001Z"
 sensorLimits:
   automaticModeMinimumWeightKg: 1
   belowMinimumBehavior: manualOnly
@@ -188,7 +188,7 @@ sensorLimits:
   sourceType: manufacturer
   verifiedAt: "2026-08-15"
 priceState: "available"
-priceUpdated: "2026-10-22T13:05:12.784Z"
+priceUpdated: "2026-11-16T09:07:13.898Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

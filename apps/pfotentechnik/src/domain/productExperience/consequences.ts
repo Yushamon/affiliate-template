@@ -21,6 +21,27 @@ const normalize = (value: unknown): string =>
     .replace(/[^a-z0-9]+/g, " ")
     .trim();
 
+type FeatureStatus = "present" | "absent" | "unknown";
+
+// Match statements about the feature itself. Negations of its documentation,
+// runtime, replaceability, etc. must not become negations of its existence.
+const featureStatus = (value: string, feature: string, allowShortAnswer: boolean): FeatureStatus => {
+  if (/\b(?:keine? angaben|nicht (?:dokumentiert|bekannt|belegt)|unklar|unbekannt)(?: (?:dazu|darueber))? ob\b/.test(value)) {
+    return "unknown";
+  }
+  const modifiers = "(?:(?:ein|eine|einen|der|die|das|integrierte[mnrs]?|eingebaute[mnrs]?|wiederaufladbare[mnrs]?) )*";
+  const noun = `(?:${feature})`;
+  const absent = new RegExp(`\\b(?:kein(?:e[nrs]?)?|ohne) ${modifiers}${noun}\\b|\\b${noun} (?:ist |sind )?nicht (?:vorhanden|integriert|eingebaut|vorgesehen)\\b`);
+  if (absent.test(value) || (allowShortAnswer && /^(?:nein|nicht vorhanden|nicht vorgesehen)$/.test(value))) {
+    return "absent";
+  }
+  const present = new RegExp(`\\b(?:integrierte[mnrs]?|eingebaute[mnrs]?|wiederaufladbare[mnrs]?) ${modifiers}${noun}\\b|\\b${noun} (?:ist |sind )?(?:vorhanden|integriert|eingebaut)\\b|\\bmit ${modifiers}${noun}\\b`);
+  if (present.test(value) || (allowShortAnswer && /^(?:ja|vorhanden|integriert)$/.test(value))) {
+    return "present";
+  }
+  return "unknown";
+};
+
 const implicationFor = (
   label: string,
   value: string,
@@ -41,33 +62,43 @@ const implicationFor = (
   }
 
   if (key.includes("app") || key.includes("wlan") || key.includes("wifi")) {
-    if (["ja", "vorhanden", "app", "wlan app", "mit app"].some((term) => normalizedValue.includes(term))) {
+    const status = featureStatus(normalizedValue, "app|wlan|wifi|wi fi", /^(app|wlan|wifi|wi fi)$/.test(key));
+    // A named app is evidence of availability; a mention in missing documentation is not.
+    const namedApp = /^(?:[a-z0-9]+ )*app(?:$| android | ios )/.test(normalizedValue)
+      && !/\b(?:kein\w*|ohne|nicht|unbekannt)\b/.test(normalizedValue);
+    if (status === "present" || (status === "unknown" && namedApp)) {
       return "Einstellungen lassen sich aus der Ferne ändern; Einrichtung, Konto und Netzstabilität werden dafür wichtiger.";
     }
-    if (["nein", "ohne", "nicht vorhanden"].some((term) => normalizedValue.includes(term))) {
+    if (status === "absent") {
       return "Die Nutzung bleibt unabhängiger von Konto, Cloud und WLAN.";
     }
   }
 
   if (key.includes("kamera")) {
-    if (["ja", "vorhanden", "integriert"].some((term) => normalizedValue.includes(term))) {
+    const status = featureStatus(normalizedValue, "kamera", key === "kamera");
+    if (status === "present") {
       return "Du kannst nicht nur die Geräteaktion, sondern auch die Situation am Napf oder Aufenthaltsort kontrollieren.";
     }
-    if (["nein", "ohne"].some((term) => normalizedValue.includes(term))) {
+    if (status === "absent") {
       return "Die Kontrolle beschränkt sich auf Statusmeldungen und Protokolle.";
     }
   }
 
   if (key.includes("akku")) {
-    if (["nein", "kein", "ohne", "nicht vorhanden", "nicht vorgesehen"].some((term) => normalizedValue.includes(term))) {
+    const status = featureStatus(normalizedValue, "akku", key === "akku");
+    if (status === "absent") {
       return "Kein integrierter Akku: Ohne Netzstrom läuft das Gerät nur weiter, wenn eine separate Batterie- oder Notstromlösung ausdrücklich vorgesehen ist.";
     }
+
+    const measuredBattery = (key.includes("laufzeit") && /^(?:laut \w+ )?(?:bis zu |ca |etwa )?\d+(?: \d+)? (?:stunden|tage|wochen|minuten)\b/.test(normalizedValue))
+      || (key.includes("kapazitaet") && /^\d+(?: \d+)? (?:mah|ah|wh)\b/.test(normalizedValue));
+    if (status !== "present" && !measuredBattery) return null;
 
     if (normalizedCategory.includes("gps") || normalizedCategory.includes("tracker")) {
       return "Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert.";
     }
 
-    return "Ein integrierter Akku ermöglicht Betrieb ohne permanente Stromverbindung. Entscheidend bleiben reale Laufzeit, Ladezeit und die Nutzung während des Ladens.";
+    return "Ein Akku ermöglicht Betrieb ohne permanente Stromverbindung. Entscheidend bleiben reale Laufzeit, Ladezeit und die Nutzung während des Ladens.";
   }
 
   if (key.includes("batterie") || key.includes("notstrom")) {

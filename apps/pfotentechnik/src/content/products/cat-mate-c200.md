@@ -59,11 +59,11 @@ images:
     - src: ../../assets/images/products/cat-mate-c200/gallery-3.webp
       alt: Kühlakku des Cat Mate C200
 price:
-  current: 32.49
+  current: 24.69
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 10 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-11-02T08:09:04.091Z"
+  checkedAt: "2026-11-16T09:05:45.059Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -78,7 +78,7 @@ rating: 3.5
 score: 71
 
 priceState: "available"
-priceUpdated: "2026-11-02T08:09:04.091Z"
+priceUpdated: "2026-11-16T09:05:45.059Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"
@@ -293,7 +293,6 @@ evidenceSources:
     sourceType: manufacturer
     assertion: "Hersteller nennt zwei vorgefüllte Fächer, 48-Stunden-Timer, Deckelverbinder und einen Kühlakku. Gleichzeitige Freigabe ist keine getrennte zeitliche Mahlzeitenfolge; Timerdauer ist keine validierte Futterhaltbarkeit."
     fields: ["experience.summary", "experience.reliability"]
-
 ---
 Der Cat Mate C200 ist bewusst einfach. Zwei analoge Timer steuern zwei getrennte Fächer, ohne App, WLAN oder Netzanschluss.
 

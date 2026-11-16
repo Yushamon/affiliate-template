@@ -55,10 +55,10 @@ subscription:
   plans:
     - { name: "Abo-Version", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 9.99, currency: EUR, effectiveMonthlyPrice: 9.99, autoRenew: true, featured: true }
 price:
-  current: 336.99
+  current: 335.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-11-02T08:09:47.647Z"
+  checkedAt: "2026-11-16T09:06:27.908Z"
   source:
     id: "onlycat.com"
     label: "onlycat.com"
@@ -73,7 +73,7 @@ editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentati
 rating: 3.6
 
 priceState: "available"
-priceUpdated: "2026-11-02T08:09:47.647Z"
+priceUpdated: "2026-11-16T09:06:27.908Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

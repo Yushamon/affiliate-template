@@ -274,7 +274,7 @@ offers:
       current: 119.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-11-02T08:10:30.431Z"
+      checkedAt: "2026-11-16T09:07:09.708Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -298,8 +298,8 @@ offers:
     variantId: "44414075764978"
     expectedSku: "PL-AF103-36W"
     variantLabel: "Weiß / Duale Schale"
-    lastAttemptAt: "2026-11-02T08:10:30.431Z"
-    availabilityUpdated: "2026-11-02T08:10:30.431Z"
+    lastAttemptAt: "2026-11-16T09:07:09.708Z"
+    availabilityUpdated: "2026-11-16T09:07:09.708Z"
 ---
 Der PETLIBRO Granary Dual ist technisch der bekannte PLAF103 mit Doppelschale und Futterteiler. Er ist für gemeinsame, nicht für individuell kontrollierte Fütterung gedacht.
 

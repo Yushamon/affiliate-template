@@ -61,7 +61,7 @@ price:
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 12 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-11-02T08:09:08.710Z"
+  checkedAt: "2026-11-16T09:05:49.634Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -76,7 +76,7 @@ rating: 3.6
 score: 73
 
 priceState: "available"
-priceUpdated: "2026-11-02T08:09:08.710Z"
+priceUpdated: "2026-11-16T09:05:49.634Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

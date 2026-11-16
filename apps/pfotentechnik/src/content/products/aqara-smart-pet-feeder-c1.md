@@ -59,11 +59,11 @@ images:
     - src: ../../assets/images/products/aqara-smart-pet-feeder-c1/gallery-3.webp
       alt: Aqara Smart Pet Feeder C1 – weitere Produktansicht
 price:
-  current: 89.99
+  current: 109.42
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 9 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-11-02T08:08:59.593Z"
+  checkedAt: "2026-11-16T09:05:40.645Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -78,7 +78,7 @@ rating: 4.4
 score: 88
 
 priceState: "available"
-priceUpdated: "2026-11-02T08:08:59.593Z"
+priceUpdated: "2026-11-16T09:05:40.645Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"
@@ -315,7 +315,6 @@ evidenceSources:
     sourceType: manufacturer
     assertion: "Produktseite: Aqara-Zigbee-Hub und Grammstatistik nach manueller Wägung; Herstelleranleitung bestätigt Hub-Voraussetzung. Keine Messung der tatsächlichen Futteraufnahme ableiten."
     fields: ["experience.summary", "experience.reliability"]
-
 ---
 Der Aqara Smart Pet Feeder C1 gehört zur Kategorie der [Smarten Futterautomaten](/smarte-futterautomaten/), richtet sich jedoch vor allem an Nutzer des Aqara-Ökosystems. Statt möglichst vieler Komfortfunktionen stehen lokale Zeitpläne, Zigbee-Automationen und ein Batterie-Backup im Mittelpunkt. Wer bereits Aqara-Komponenten nutzt, erhält dadurch einen besonders zuverlässigen Futterautomaten auch dann, wenn die Internetverbindung ausfällt.
 
