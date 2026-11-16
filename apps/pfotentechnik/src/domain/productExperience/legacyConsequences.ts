@@ -1,0 +1,226 @@
+import { decisionFactApprovals, isDecisionFactApproved } from "./decisionFactReview.mjs";
+
+type DecisionFact = {
+  label: string;
+  value: string;
+  consequence: string;
+  source: "product-data" | "technical-specification" | "editorial";
+};
+
+const text = (value: unknown): string => {
+  if (typeof value === "string") return value.trim();
+  if (typeof value === "number" || typeof value === "boolean") return String(value);
+  return "";
+};
+
+const normalize = (value: unknown): string =>
+  text(value)
+    .toLocaleLowerCase("de-DE")
+    .replaceAll("ä", "ae")
+    .replaceAll("ö", "oe")
+    .replaceAll("ü", "ue")
+    .replaceAll("ß", "ss")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+
+type FeatureStatus = "present" | "absent" | "unknown";
+
+// Match statements about the feature itself. Negations of its documentation,
+// runtime, replaceability, etc. must not become negations of its existence.
+const featureStatus = (value: string, feature: string, allowShortAnswer: boolean): FeatureStatus => {
+  if (/\b(?:keine? angaben|nicht (?:dokumentiert|bekannt|belegt)|unklar|unbekannt)(?: (?:dazu|darueber))? ob\b/.test(value)) {
+    return "unknown";
+  }
+  const modifiers = "(?:(?:ein|eine|einen|der|die|das|integrierte[mnrs]?|eingebaute[mnrs]?|wiederaufladbare[mnrs]?) )*";
+  const noun = `(?:${feature})`;
+  const absent = new RegExp(`\\b(?:kein(?:e[nrs]?)?|ohne) ${modifiers}${noun}\\b|\\b${noun} (?:ist |sind )?nicht (?:vorhanden|integriert|eingebaut|vorgesehen)\\b`);
+  if (absent.test(value) || (allowShortAnswer && /^(?:nein|nicht vorhanden|nicht vorgesehen)(?: |$)/.test(value))) {
+    return "absent";
+  }
+  const present = new RegExp(`\\b(?:integrierte[mnrs]?|eingebaute[mnrs]?|wiederaufladbare[mnrs]?) ${modifiers}${noun}\\b|\\b${noun} (?:ist |sind )?(?:vorhanden|integriert|eingebaut)\\b|\\bmit ${modifiers}${noun}\\b`);
+  if (present.test(value) || (allowShortAnswer && /^(?:ja|vorhanden|integriert)(?: |$)/.test(value))) {
+    return "present";
+  }
+  return "unknown";
+};
+
+const implicationFor = (
+  label: string,
+  value: string,
+  category: string
+): string | null => {
+  const key = normalize(label);
+  const normalizedValue = normalize(value);
+  const normalizedCategory = normalize(category);
+
+  if (!key.includes("akku") && (key.includes("kapazitaet") || key.includes("volumen"))) {
+    if (normalizedCategory.includes("futter")) {
+      return "Die tatsächliche Reichweite hängt von Portionsgröße, Futterdichte und Anzahl der Tiere ab.";
+    }
+    if (normalizedCategory.includes("trink") || normalizedCategory.includes("brunnen")) {
+      return "Mehr Volumen bedeutet selteneres Nachfüllen, ersetzt aber keine regelmäßige Reinigung.";
+    }
+    return "Die Größe beeinflusst, wie häufig nachgefüllt oder gewartet werden muss.";
+  }
+
+  if (key.includes("app") || key.includes("wlan") || key.includes("wifi")) {
+    const status = featureStatus(normalizedValue, "app|wlan|wifi|wi fi", /^(app|wlan|wifi|wi fi)$/.test(key));
+    // A named app is evidence of availability; a mention in missing documentation is not.
+    const namedApp = /^(?:[a-z0-9]+ )*app(?:$| android | ios )/.test(normalizedValue)
+      && !/\b(?:kein\w*|ohne|nicht|unbekannt)\b/.test(normalizedValue);
+    if (status === "present" || (status === "unknown" && namedApp)) {
+      return "Einstellungen lassen sich aus der Ferne ändern; Einrichtung, Konto und Netzstabilität werden dafür wichtiger.";
+    }
+    if (status === "absent") {
+      return "Die Nutzung bleibt unabhängiger von Konto, Cloud und WLAN.";
+    }
+  }
+
+  if (key.includes("kamera")) {
+    const status = featureStatus(normalizedValue, "kamera", key === "kamera");
+    if (status === "present") {
+      return "Du kannst nicht nur die Geräteaktion, sondern auch die Situation am Napf oder Aufenthaltsort kontrollieren.";
+    }
+    if (status === "absent") {
+      return "Die Kontrolle beschränkt sich auf Statusmeldungen und Protokolle.";
+    }
+  }
+
+  if (key.includes("akku")) {
+    const status = featureStatus(normalizedValue, "akku", key === "akku");
+    if (status === "absent") {
+      return "Kein integrierter Akku: Ohne Netzstrom läuft das Gerät nur weiter, wenn eine separate Batterie- oder Notstromlösung ausdrücklich vorgesehen ist.";
+    }
+
+    const measuredBattery = (key.includes("laufzeit") && /^(?:laut \w+ )?(?:bis zu |ca |etwa )?\d+(?: \d+)? (?:stunden|tage|wochen|minuten)\b/.test(normalizedValue))
+      || (key.includes("kapazitaet") && /^\d+(?: \d+)? (?:mah|ah|wh)\b/.test(normalizedValue));
+    if (status !== "present" && !measuredBattery) return null;
+
+    if (normalizedCategory.includes("gps") || normalizedCategory.includes("tracker")) {
+      return "Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert.";
+    }
+
+    return "Ein Akku ermöglicht Betrieb ohne permanente Stromverbindung. Entscheidend bleiben reale Laufzeit, Ladezeit und die Nutzung während des Ladens.";
+  }
+
+  if (key.includes("batterie") || key.includes("notstrom")) {
+    return "Batterien oder Notstrom überbrücken einen Stromausfall. Das ist nicht automatisch mit dauerhaftem kabellosem Betrieb gleichzusetzen.";
+  }
+
+  if (key.includes("stromversorgung") || key.includes("netzteil") || key.includes("netzbetrieb")) {
+    return "Die Angabe zeigt, ob das Gerät am Netz, kabellos oder nur mit einer Backup-Lösung arbeitet und was bei Stromausfall weiterläuft.";
+  }
+
+  if (key.includes("material")) {
+    if (normalizedValue.includes("edelstahl")) {
+      return "Edelstahl nimmt Gerüche meist weniger stark an und lässt sich in der Regel leichter hygienisch reinigen.";
+    }
+    if (normalizedValue.includes("keramik")) {
+      return "Keramik ist schwer und standfest, kann bei Stößen aber beschädigt werden.";
+    }
+    if (normalizedValue.includes("kunststoff")) {
+      return "Kunststoff ist leicht, sollte wegen Kratzern und Geruchsaufnahme besonders gründlich kontrolliert werden.";
+    }
+  }
+
+  if (key.includes("gewicht")) {
+    if (normalizedCategory.includes("gps") || normalizedCategory.includes("tracker")) {
+      return "Beim Tier zählt das Gesamtgewicht aus Gerät, Halterung und Halsband, nicht nur das Trackergewicht.";
+    }
+    return "Das Gewicht beeinflusst Standfestigkeit, Transport und Handhabung.";
+  }
+
+  if (key.includes("abmess") || key.includes("groesse") || key.includes("durchgang")) {
+    return "Die Maße sollten nicht nur zum Stellplatz, sondern auch zur Körpergröße und Nutzung des Tieres passen.";
+  }
+
+  if (key.includes("filter")) {
+    return "Filter verbessern die Wasser- oder Luftqualität nur bei regelmäßigem Wechsel und verursachen laufende Kosten.";
+  }
+
+  if (key.includes("laut") || key.includes("geraeusch")) {
+    return "Geräusche können bei schreckhaften Tieren oder im Schlafzimmer kaufentscheidend sein.";
+  }
+
+  if (key.includes("portion")) {
+    return "Entscheidend ist nicht nur die Anzahl der Stufen, sondern wie gleichmäßig die tatsächliche Futtermenge ausgegeben wird.";
+  }
+
+  if (key.includes("abo") || key.includes("monat") || key.includes("laufende kosten")) {
+    return "Für den realen Preisvergleich zählen die Gesamtkosten über mehrere Jahre, nicht nur der Gerätepreis.";
+  }
+
+  if (key.includes("schutz") || key.includes("wasserdicht") || key.includes("ip")) {
+    return "Die Schutzklasse ist besonders bei Regen, Reinigung und dauerhaftem Außeneinsatz relevant.";
+  }
+
+  return null;
+};
+
+export const buildLegacyDecisionFacts = (
+  data: any,
+  specs: Array<{ label: string; value: string }>,
+  approvals = decisionFactApprovals
+): DecisionFact[] => {
+  const category = text(data?.category?.label ?? data?.category?.key ?? data?.category);
+  const explicit = Array.isArray(data?.decisionFacts)
+    ? data.decisionFacts
+        .filter((item: any) => isDecisionFactApproved(data?.slug, item, approvals))
+        .map((item: any) => {
+          const label = text(item?.label);
+          const value = text(item?.value);
+          const supplied = text(item?.consequence);
+          return {
+            label,
+            value,
+            consequence: supplied,
+            source: "editorial" as const
+          };
+        })
+        .filter((item: DecisionFact) => item.label && item.value && item.consequence)
+    : [];
+
+  const output: DecisionFact[] = [];
+  const seen = new Set<string>();
+  // Targeted GPS consolidation: experiment 35.5 covers other categories.
+  // Merge the presentation only; persisted editorial originals stay untouched.
+  const compact = /gps|tracker/.test(normalize(category));
+  const append = (fact: DecisionFact) => {
+    const previous = compact && output.find(item => normalize(item.consequence) === normalize(fact.consequence));
+    if (previous) {
+      if (previous.source === "technical-specification" && fact.source === "technical-specification") {
+        previous.label += ` / ${fact.label}`;
+        previous.value += ` · ${fact.value}`;
+      }
+      return;
+    }
+    output.push(fact);
+  };
+
+  for (const fact of explicit) {
+    const key = normalize(fact.label);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    append(fact);
+    if (!compact && output.length >= 6) return output;
+  }
+
+  for (const spec of specs) {
+    const consequence = implicationFor(spec.label, spec.value, category);
+    if (!consequence) continue;
+    const key = normalize(spec.label);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    append({
+      label: spec.label,
+      value: spec.value,
+      consequence,
+      source: "technical-specification"
+    });
+    if (!compact && output.length >= 6) break;
+  }
+
+  return output.slice(0, 6);
+};
+
+export type { DecisionFact };

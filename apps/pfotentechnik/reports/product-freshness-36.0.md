@@ -2,7 +2,7 @@
 
 Stand: 16. November 2026. 95 aktive Datensätze recherchiert (93 veröffentlicht, 2 gesperrte Entwürfe); 15 archivierte Produkte separat erfasst. 285 modellbezogene Suchläufe.
 
-**Tatsächlich umgesetzt:** 29 Produktseiten, drei Vergleiche und ein Ratgeber. Eine Score-Änderung: Invoxia 83→78. Keine neuen Produkt-URLs, kein Merge und kein Deployment.
+**Tatsächlich umgesetzt:** 33 Produktseiten, drei Vergleiche und ein Ratgeber. Eine Score-Änderung: Invoxia 83→78. Keine neuen Produkt-URLs, kein Merge und kein Deployment.
 
 Der tatsächliche Bestand weicht von der Auftragsannahme 2 fehlend/29 teilweise ab: Ausgangsstand 6 fehlend/32 teilweise/72 vollständig. Feldvollständigkeit ist keine Qualitäts- oder Aktualitätsfreigabe.
 
@@ -21,10 +21,10 @@ Der tatsächliche Bestand weicht von der Auftragsannahme 2 fehlend/29 teilweise 
 
 ## Prüfung und Schutzregeln
 
-- Produktionsbuild: ausstehend Seiten. Tests: ausstehend bestanden, ausstehend fehlgeschlagen.
+- Produktionsbuild: 390 Seiten. Tests: 154 bestanden, 0 fehlgeschlagen.
 - 20 Experiment-/Kontrollseiten und 205 eingehende Linkkanten exakt unverändert; 73 Arrays mit 437 Originalhinweisen und leere Freigabeliste erhalten.
 - 286 direkte Quellenabrufe: 263 HTTP 200, 23 beschränkt/nicht erreichbar. HTTP-Erfolg ist ausdrücklich keine redaktionelle Quellenfreigabe.
-- 32 bestehende Kaufziel-URLs lesend geprüft; 36 Browserfälle in 375/1600 Pixel und Hell/Dunkel. Alle geänderten Produktseiten zusätzlich im echten Build auf Hinweise, Canonical, Preis-CTA-Zuordnung und interne Links geprüft.
+- 35 bestehende Kaufziel-URLs lesend geprüft; 52 Browserfälle in 375/1600 Pixel und Hell/Dunkel. Alle geänderten Produktseiten zusätzlich im echten Build auf Hinweise, Canonical, Preis-CTA-Zuordnung und interne Links geprüft.
 - SEO-Felder, Canonicals, Preise, Angebote, Affiliate-Ziele und Veröffentlichungsstatus sämtlicher Produkte unverändert. Aktualisierungsdaten nur bei tatsächlichen Änderungen.
 - Invoxia: 219 € inklusive zwölf Monate Max GPS; erstes Jahr 219 €, zwei Jahre einschließlich hinterlegter Verlängerung 348,90 €.
 
@@ -68,7 +68,7 @@ Die vollständigen Feldwerte vor/nach jeder Änderung stehen zusätzlich im [JSO
 
 WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbegrenzer trinken wollten. Die einstellbare Strömung kann bei der Gewöhnung helfen; eine universelle Trinkakzeptanz ist damit nicht belegt. [WIRED](https://www.wired.com/gallery/best-cat-water-fountains/)
 - Integrierte Quelle: [Emily Reviews](https://www.emilyreviews.com/2025/06/brook-all-glass-pet-fountain-is-worth-upgrading-to-giveaway.html); Quellen-Datum 2025-06-24 (publication-or-unknown), Prüfung 2026-11-16. Praktische Quelle vorhanden, aber Testgerätstellung und US-Kontext offengelegt. Hersteller stellte Testgerät; US-Haushalt mit einer Katze, keine neutrale Laborprüfung.
-- Integrierte Quelle: [WIRED](https://www.wired.com/gallery/best-cat-water-fountains/); Quellen-Datum 2026-11-07 (last-updated), Prüfung 2026-11-16. Wasserfluss beeinflusst Akzeptanz; Gerätekauf garantiert keine Nutzung durch jede Katze. 
+- Integrierte Quelle: [WIRED](https://www.wired.com/gallery/best-cat-water-fountains/); Quellen-Datum 2026-11-07 (last-updated), Prüfung 2026-11-16. Wasserfluss beeinflusst Akzeptanz; Gerätekauf garantiert keine Nutzung durch jede Katze.
 - Recherchebelege: 3 Suchpfade, 4 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`.
 - Offen: Evidenzfelder bleiben bewusst unvollständig. Fehlende unabhängige Messungen/Nutzerstichproben werden nicht erfunden.
@@ -267,7 +267,7 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 - Geänderte Felder: `evidenceSources`, `externalEvidence`, `experience`, `weaknesses`, `updatedAt`.
 - Alte Aussage: Kein entsprechender Recherchehinweis vorhanden.
 - Neue Aussage: Cats.com testete ausdrücklich die Katzenkamera: Audio, Nachtsicht und Leckerliwurf waren nützlich, das Bild im Vergleich körniger. Die KI verwechselte ähnlich gefärbte Tiere oder benannte sie gar nicht. Eine individuelle Zuordnung ist damit keine verlässliche Mehrkatzenkontrolle. Die im US-Test genannte Abo-Pflicht wird wegen unterschiedlicher Angebote nicht als allgemeine EU-Pflicht übernommen. [Cats.com](https://cats.com/best-pet-cat-camera)
-- Integrierte Quelle: [Cats.com](https://cats.com/best-pet-cat-camera); Quellen-Datum 2026-07-17 (last-updated), Prüfung 2026-11-16. Furbo-Katzenmodell tatsächlich getestet; regionale Tarifgrenzen und unsichere KI-Identifikation getrennt einordnen. 
+- Integrierte Quelle: [Cats.com](https://cats.com/best-pet-cat-camera); Quellen-Datum 2026-07-17 (last-updated), Prüfung 2026-11-16. Furbo-Katzenmodell tatsächlich getestet; regionale Tarifgrenzen und unsichere KI-Identifikation getrennt einordnen.
 - Recherchebelege: 3 Suchpfade, 5 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: keine Änderung erforderlich oder sicher belegbar.
 - Offen: Mindestens eine Originalquelle ist direkt zugriffsbeschränkt oder nicht erreichbar; HTTP-Fehler sind kein Nachweis eines Produktendes.
@@ -287,22 +287,26 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 
 ### Garmin Alpha T 20 — garmin-alpha-t-20
 
-- Ergebnis: **NO VERIFIED FACTUAL CHANGE**. Treeline-Originaltest wiedergefunden; VHF mit separatem Handgerät bleibt vom optionalen LTE anderer Geräte getrennt. US-Reichweite/Funkvariante ist keine ungeprüfte EU-Zusage.
+- Ergebnis: **UPDATE RECOMMENDED — IMPLEMENTED**. Treeline-Originaltest wiedergefunden; VHF mit separatem Handgerät bleibt vom optionalen LTE anderer Geräte getrennt. US-Reichweite/Funkvariante ist keine ungeprüfte EU-Zusage.
 - Route: `/produkt/garmin-alpha-t-20/`; veröffentlicht. Evidenzfelder: complete → complete.
 - Bewertung: 81 → 81/100. Bestehende Bewertung erhalten. Keine neue hinreichend vergleichbare Messreihe rechtfertigt eine gezielte Umwertung; keine Preis-, Provisions- oder Fremdnotenübernahme.
-- Aktualisierungsdatum im Produkt: `2026-07-23`. Recherche: 16.11.2026.
-- Tatsächliche Änderung: keine; vorhandene belastbare Informationen und Aktualisierungsdaten erhalten.
+- Aktualisierungsdatum im Produkt: `2026-11-16`. Recherche: 16.11.2026.
+- Geänderte Felder: `reviewedAlternatives`, `updatedAt`.
+- Alternativen vorher: `null` (null = automatische Volltextauswahl).
+- Alternativen danach: `[{"slug":"garmin-alpha-tt-25","reason":"Anderes Garmin-VHF-Modell mit zusätzlicher Ausstattung. Ein kompatibles Handgerät bleibt erforderlich; regionale Ausführung und benötigte Funktionen vor dem Kauf prüfen."}]`.
 - Recherchebelege: 3 Suchpfade, 5 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: keine Änderung erforderlich oder sicher belegbar.
 - Offen: Die zusätzliche Nutzersuche lieferte keine hinreichend zuordenbaren Treffer. Das beweist weder Fehlerfreiheit noch das Fehlen von Nutzererfahrungen.
 
 ### Garmin Alpha TT 25 — garmin-alpha-tt-25
 
-- Ergebnis: **INSUFFICIENT EVIDENCE — NO SPECULATIVE CHANGE**. Offizielles exaktes TT-25-Handbuch auffindbar; alte Fachquelle aktuell nicht direkt erreichbar. Kein neuer bestätigter Firmwareeffekt oder allgemeiner Eignungsnachweis. Trainingsfunktionen nicht ungeprüft in Alltagsempfehlungen erweitert.
+- Ergebnis: **UPDATE RECOMMENDED — IMPLEMENTED**. Offizielles exaktes TT-25-Handbuch auffindbar; alte Fachquelle aktuell nicht direkt erreichbar. Kein neuer bestätigter Firmwareeffekt oder allgemeiner Eignungsnachweis. Trainingsfunktionen nicht ungeprüft in Alltagsempfehlungen erweitert.
 - Route: `/produkt/garmin-alpha-tt-25/`; veröffentlicht. Evidenzfelder: partial → partial.
 - Bewertung: 78 → 78/100. Bestehende Bewertung erhalten. Keine neue hinreichend vergleichbare Messreihe rechtfertigt eine gezielte Umwertung; keine Preis-, Provisions- oder Fremdnotenübernahme.
-- Aktualisierungsdatum im Produkt: `2026-07-20`. Recherche: 16.11.2026.
-- Tatsächliche Änderung: keine; vorhandene belastbare Informationen und Aktualisierungsdaten erhalten.
+- Aktualisierungsdatum im Produkt: `2026-11-16`. Recherche: 16.11.2026.
+- Geänderte Felder: `reviewedAlternatives`, `updatedAt`.
+- Alternativen vorher: `null` (null = automatische Volltextauswahl).
+- Alternativen danach: `[{"slug":"garmin-alpha-t-20","reason":"Garmin-Alternative für den Schwerpunkt Hundeortung per VHF. Die direkte Übertragung benötigt ein kompatibles Handgerät und keinen Mobilfunktarif."}]`.
 - Recherchebelege: 3 Suchpfade, 5 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: keine Änderung erforderlich oder sicher belegbar.
 - Offen: Mindestens eine Originalquelle ist direkt zugriffsbeschränkt oder nicht erreichbar; HTTP-Fehler sind kein Nachweis eines Produktendes.
@@ -361,11 +365,13 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 - Route: `/produkt/invoxia-biotracker-2026/`; veröffentlicht. Evidenzfelder: complete → complete.
 - Bewertung: 83 → 78/100. Redaktionelle Fremdquellenauswertung, kein eigener Praxistest. Tom’s Guide France beschreibt Fehlklassifikationen und wenig verständliche Gesundheitsdarstellung; CHIP/Golem liefern daneben positive Funktions- und Verlaufsbefunde. Gesundheit deshalb 3,5 statt 4,8/5. Ortung 4,4, App 4,2, Akku 4,4 und Kosten 3,0 bleiben unverändert. Gleichgewichtet 78/100 (3,9/5). Gerätepreis und Provision ohne Einfluss; keine fremde Note übernommen.
 - Aktualisierungsdatum im Produkt: `2026-11-16`. Recherche: 16.11.2026.
-- Geänderte Felder: `evidenceSources`, `externalEvidence`, `experience`, `ratings`, `score`, `rating`, `review`, `recommendation`, `reviewedAlternatives`.
+- Geänderte Felder: `evidenceSources`, `externalEvidence`, `experience`, `ratings`, `score`, `rating`, `review`, `recommendation`, `weaknesses`, `reviewedAlternatives`.
 - Alte Aussage: Kein entsprechender Recherchehinweis vorhanden.
 - Neue Aussage: Der mehrmonatige Fremdtest beurteilt GPS und Zonenwarnungen positiv, berichtet aber fälschlich erkannte Transport- und Bellereignisse sowie schwer verständliche Gesundheitsgrafiken. Deshalb wird das Gesundheitskriterium von 4,8 auf 3,5/5 eingeordnet. Mit unveränderten übrigen Kriterien ergibt der gleichgewichtete Mittelwert 78/100. Die positive GPS-Evidenz bleibt berücksichtigt; Preis, Paket und Provision spielen bei dieser Korrektur keine Rolle. [Tom's Guide France](https://www.tomsguide.fr/test-biotracker-invoxia-edition-2026-excellent-pour-retrouver-son-chien-moins-pour-suivre-sa-sante/)
+- Alternativen vorher: `null` (null = automatische Volltextauswahl).
+- Alternativen danach: `[{"slug":"tractive-dog-6","reason":"Alltagsortung mit anderer App und eigenem Pflichtabo; Gesundheitsdaten beider Modelle sind keine Diagnose."},{"slug":"paj-pet-finder-4g-mini","reason":"Alternative für den Schwerpunkt Standortabfrage statt Vitalwerte; Paketlaufzeit und Anschlussabo getrennt vergleichen."}]`.
 - Kriterien vorher: `{"ortung":4.4,"gesundheit":4.8,"app":4.2,"akku":4.4,"kosten":3}`; danach: `{"ortung":4.4,"gesundheit":3.5,"app":4.2,"akku":4.4,"kosten":3}`.
-- Integrierte Quelle: [Tom's Guide France](https://www.tomsguide.fr/test-biotracker-invoxia-edition-2026-excellent-pour-retrouver-son-chien-moins-pour-suivre-sa-sante/); Quellen-Datum 2026-06-10 (publication-or-unknown), Prüfung 2026-11-16. Gesundheitstrends sind nicht durchgehend plausibel klassifiziert; GPS und Akku bleiben positiv, Kosten unverändert. 
+- Integrierte Quelle: [Tom's Guide France](https://www.tomsguide.fr/test-biotracker-invoxia-edition-2026-excellent-pour-retrouver-son-chien-moins-pour-suivre-sa-sante/); Quellen-Datum 2026-06-10 (publication-or-unknown), Prüfung 2026-11-16. Gesundheitstrends sind nicht durchgehend plausibel klassifiziert; GPS und Akku bleiben positiv, Kosten unverändert.
 - Recherchebelege: 3 Suchpfade, 5 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: `src/content/comparisons/beste-gps-tracker-fuer-hunde.md`.
 - Offen: Mindestens eine Originalquelle ist direkt zugriffsbeschränkt oder nicht erreichbar; HTTP-Fehler sind kein Nachweis eines Produktendes.
@@ -380,7 +386,7 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 - Geänderte Felder: `evidenceSources`, `experience`, `updatedAt`.
 - Alte Aussage: Kein entsprechender Recherchehinweis vorhanden.
 - Neue Aussage: Whisker trennt die Firmware nach Seriennummer: LR4S und LR4C besitzen unterschiedliche Versionszweige. Eine Versionsnummer des einen Zweigs ist kein Updateziel für den anderen. Die App-Notizen zu 1.46.0 nennen aktuelle Tagesdaten in Insights für LR4 und neuer; Umfang und Whisker+-Tarifgrenzen getrennt prüfen. [Whisker · Release Notes](https://www.whisker.com/app-releases)
-- Integrierte Quelle: [Whisker · Release Notes](https://www.whisker.com/app-releases); Quellen-Datum 2026-11-10 (release-entry), Prüfung 2026-11-16. Firmwarezweige LR4S und LR4C getrennt prüfen; App-Insights seit 1.46.0 mit heutigen Daten. 
+- Integrierte Quelle: [Whisker · Release Notes](https://www.whisker.com/app-releases); Quellen-Datum 2026-11-10 (release-entry), Prüfung 2026-11-16. Firmwarezweige LR4S und LR4C getrennt prüfen; App-Insights seit 1.46.0 mit heutigen Daten.
 - Recherchebelege: 3 Suchpfade, 5 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: `src/content/comparisons/beste-automatische-katzentoiletten.md`.
 
@@ -393,7 +399,7 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 - Geänderte Felder: `evidenceSources`, `experience`, `updatedAt`.
 - Alte Aussage: Kein entsprechender Recherchehinweis vorhanden.
 - Neue Aussage: Der ältere Fremdtest konnte die interne Videoaufzeichnung noch nicht nutzen. Whisker dokumentiert sie mit App 1.46.0 vom 10. November 2026 inzwischen für den Litter-Robot 5 Pro. Das ist ein neuer Softwarestand, kein nachträglicher Praxistest. Verfügbarkeit, Firmware und gebuchter Dienstumfang am eigenen Gerät prüfen. [Whisker · Release Notes](https://www.whisker.com/app-releases)
-- Integrierte Quelle: [Whisker · Release Notes](https://www.whisker.com/app-releases); Quellen-Datum 2026-11-10 (release-entry), Prüfung 2026-11-16. App 1.46.0 dokumentiert interne Besuchsaufnahmen; historische Testbeschränkung ist nicht mehr aktueller Funktionsstand. 
+- Integrierte Quelle: [Whisker · Release Notes](https://www.whisker.com/app-releases); Quellen-Datum 2026-11-10 (release-entry), Prüfung 2026-11-16. App 1.46.0 dokumentiert interne Besuchsaufnahmen; historische Testbeschränkung ist nicht mehr aktueller Funktionsstand.
 - Recherchebelege: 3 Suchpfade, 4 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: `src/content/comparisons/beste-automatische-katzentoiletten.md`.
 
@@ -410,8 +416,8 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 - Neue Aussage: Sprachkontakt und Standortabfrage; Tiere mit passender Halsbandbefestigung. Netzempfang und aktiver Tarif erforderlich. Fremdtests melden ausgebliebene Geofence-Warnungen. Hersteller-Maximallaufzeit ist kein Dauerwert. Gesundheitstrends liefern keine Diagnose.
 - Alte Aussage: Kein entsprechender Recherchehinweis vorhanden.
 - Neue Aussage: Der zusätzlich ausgewertete Praxistest konnte den Standort finden, erhielt aber wiederholt keine Geofence-Warnung und meldete abgebrochene Streckenaufzeichnungen. Das kostenlos gestellte Testgerät wird offengelegt. Diese Erfahrung stützt die bereits vorsichtige Bewertung; eine funktionierende Karte bestätigt keine funktionierenden Warnungen. [Produkte im Test](https://produkte-im-test.de/mova-suretrack-pro-im-praxistest/)
-- Integrierte Quelle: [connect](https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html); Quellen-Datum 2026-11-10 (publication-or-unknown), Prüfung 2026-11-16. Positionierung positiv beurteilt; leichteres Gerät im direkten Vergleich. Begrenzter App-Umfang; Laufzeit im Test etwa drei bis vier Tage. 
-- Integrierte Quelle: [F.A.Z. Kaufkompass](https://www.faz.net/kaufkompass/test/der-beste-gps-tracker-fuer-hunde/); Quellen-Datum 2026-10-29 (last-updated), Prüfung 2026-11-16. Position in der App abrufbar. Geofence-Warnungen blieben im Test aus; Einrichtung und Übersetzung wurden kritisiert. 
+- Integrierte Quelle: [connect](https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html); Quellen-Datum 2026-11-10 (publication-or-unknown), Prüfung 2026-11-16. Positionierung positiv beurteilt; leichteres Gerät im direkten Vergleich. Begrenzter App-Umfang; Laufzeit im Test etwa drei bis vier Tage.
+- Integrierte Quelle: [F.A.Z. Kaufkompass](https://www.faz.net/kaufkompass/test/der-beste-gps-tracker-fuer-hunde/); Quellen-Datum 2026-10-29 (last-updated), Prüfung 2026-11-16. Position in der App abrufbar. Geofence-Warnungen blieben im Test aus; Einrichtung und Übersetzung wurden kritisiert.
 - Integrierte Quelle: [Produkte im Test](https://produkte-im-test.de/mova-suretrack-pro-im-praxistest/); Quellen-Datum 2026-10-19 (publication-or-unknown), Prüfung 2026-11-16. Ortung und automatische Fluchtwarnung getrennt bewerten; kein Nachweis eines allgemeinen Defekts. Kostenloses Testgerät vom Hersteller offengelegt; keine unabhängige Langzeitstichprobe.
 - Recherchebelege: 3 Suchpfade, 7 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: `src/content/comparisons/beste-gps-tracker-fuer-hunde.md`.
@@ -456,8 +462,8 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 - Neue Aussage: [Neakasa Deutschland](https://neakasa.de/products/neakasa-riko-smart-wet-food-feeder) listet Riko am 16. November 2026 regulär. Die Vorbestellaktion vom September ist abgelaufen. Ein bestätigter sofortiger Liefertermin liegt hier nicht vor; der optionale Akku gehört nicht automatisch zum Standardmodell.
 - Alte Aussage: Kein entsprechender Recherchehinweis vorhanden.
 - Neue Aussage: Die deutsche Seite führt Riko am 16. November regulär im Sortiment. Die September-Vorbestellaktion ist abgelaufen; eine Bestellmöglichkeit bestätigt keinen konkreten Liefertermin. Cats.com beschreibt inzwischen einen Haushaltstest mit geeigneter gefriergetrockneter Nahrung. DE-Angaben zu Portionen und Behältern bleiben wegen regionaler Unterschiede getrennt von US-/EU-Tests. [Neakasa Deutschland](https://neakasa.de/products/neakasa-riko-smart-wet-food-feeder)
-- Integrierte Quelle: [Cats.com](https://cats.com/neakasa-riko-automatic-cat-feeder-review); Quellen-Datum 2026-11-05 (publication-or-unknown), Prüfung 2026-11-16. App-Einrichtung, einstellbare Wasserzugabe und abnehmbare Teile überzeugten im Haushaltstest. Mahlwerk und Mischweg erfordern regelmäßige Reinigung; keine Langzeitmessung. 
-- Integrierte Quelle: [Neakasa Deutschland](https://neakasa.de/products/neakasa-riko-smart-wet-food-feeder); Quellen-Datum nicht ausgewiesen (publication-or-unknown), Prüfung 2026-11-16. DE-Seite listet Riko regulär; die befristete September-Vorbestellung ist kein aktueller Verkaufsstatus. 
+- Integrierte Quelle: [Cats.com](https://cats.com/neakasa-riko-automatic-cat-feeder-review); Quellen-Datum 2026-11-05 (publication-or-unknown), Prüfung 2026-11-16. App-Einrichtung, einstellbare Wasserzugabe und abnehmbare Teile überzeugten im Haushaltstest. Mahlwerk und Mischweg erfordern regelmäßige Reinigung; keine Langzeitmessung.
+- Integrierte Quelle: [Neakasa Deutschland](https://neakasa.de/products/neakasa-riko-smart-wet-food-feeder); Quellen-Datum nicht ausgewiesen (publication-or-unknown), Prüfung 2026-11-16. DE-Seite listet Riko regulär; die befristete September-Vorbestellung ist kein aktueller Verkaufsstatus.
 - Recherchebelege: 3 Suchpfade, 3 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: keine Änderung erforderlich oder sicher belegbar.
 - Offen: Evidenzfelder bleiben bewusst unvollständig. Fehlende unabhängige Messungen/Nutzerstichproben werden nicht erfunden.
@@ -472,7 +478,7 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 - Geänderte Felder: `evidenceSources`, `experience`, `specs`, `updatedAt`.
 - Alte Aussage: Kein entsprechender Recherchehinweis vorhanden.
 - Neue Aussage: Der Herstellersupport führt dieses Modell als PW13. Die 2,2-Liter-Version PW13 und die 3,2-Liter-Version PW14 sind getrennte Geräte; Tests und Ersatzteile einer anderen Volumenvariante werden nicht übertragen. Ein belastbarer neuer unabhängiger Modelltest wurde nicht gefunden. [oneisall · Modellbezogener Support](https://oneisall.com/pages/support-fountains)
-- Integrierte Quelle: [oneisall · Modellbezogener Support](https://oneisall.com/pages/support-fountains); Quellen-Datum nicht ausgewiesen (publication-or-unknown), Prüfung 2026-11-16. Herstellersupport ordnet PW13 eindeutig der jeweiligen Volumenvariante zu. 
+- Integrierte Quelle: [oneisall · Modellbezogener Support](https://oneisall.com/pages/support-fountains); Quellen-Datum nicht ausgewiesen (publication-or-unknown), Prüfung 2026-11-16. Herstellersupport ordnet PW13 eindeutig der jeweiligen Volumenvariante zu.
 - Recherchebelege: 3 Suchpfade, 2 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: keine Änderung erforderlich oder sicher belegbar.
 - Offen: Evidenzfelder bleiben bewusst unvollständig. Fehlende unabhängige Messungen/Nutzerstichproben werden nicht erfunden.
@@ -498,7 +504,7 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 - Geänderte Felder: `evidenceSources`, `experience`, `specs`, `updatedAt`.
 - Alte Aussage: Kein entsprechender Recherchehinweis vorhanden.
 - Neue Aussage: Der Herstellersupport führt dieses Modell als PW14. Die 2,2-Liter-Version PW13 und die 3,2-Liter-Version PW14 sind getrennte Geräte; Tests und Ersatzteile einer anderen Volumenvariante werden nicht übertragen. Ein belastbarer neuer unabhängiger Modelltest wurde nicht gefunden. [oneisall · Modellbezogener Support](https://oneisall.com/pages/support-fountains)
-- Integrierte Quelle: [oneisall · Modellbezogener Support](https://oneisall.com/pages/support-fountains); Quellen-Datum nicht ausgewiesen (publication-or-unknown), Prüfung 2026-11-16. Herstellersupport ordnet PW14 eindeutig der jeweiligen Volumenvariante zu. 
+- Integrierte Quelle: [oneisall · Modellbezogener Support](https://oneisall.com/pages/support-fountains); Quellen-Datum nicht ausgewiesen (publication-or-unknown), Prüfung 2026-11-16. Herstellersupport ordnet PW14 eindeutig der jeweiligen Volumenvariante zu.
 - Recherchebelege: 3 Suchpfade, 2 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: keine Änderung erforderlich oder sicher belegbar.
 - Offen: Evidenzfelder bleiben bewusst unvollständig. Fehlende unabhängige Messungen/Nutzerstichproben werden nicht erfunden.
@@ -554,10 +560,12 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 - Route: `/produkt/paj-pet-finder-4g-mini/`; veröffentlicht. Evidenzfelder: complete → complete.
 - Bewertung: 82 → 82/100. Bestehende Bewertung erhalten. Keine neue hinreichend vergleichbare Messreihe rechtfertigt eine gezielte Umwertung; keine Preis-, Provisions- oder Fremdnotenübernahme.
 - Aktualisierungsdatum im Produkt: `2026-11-16`. Recherche: 16.11.2026.
-- Geänderte Felder: `evidenceSources`, `externalEvidence`, `experience`, `updatedAt`.
+- Geänderte Felder: `evidenceSources`, `externalEvidence`, `experience`, `reviewedAlternatives`, `updatedAt`.
 - Alte Aussage: Kein entsprechender Recherchehinweis vorhanden.
 - Neue Aussage: CHIP dokumentiert beim exakten Mini-Modell rund 144 Stunden aktive Nutzung außerhalb von Homezones und rund 240 Stunden Standby. Das sind unterschiedliche Testbedingungen, keine allgemeine Laufzeitgarantie. Ortung und App werden positiv beschrieben; eine Messung von Herz- oder Atemfrequenz gehört nicht zum Funktionsumfang. [CHIP](https://www.chip.de/test-kaufberatung/hobby-freizeit/paj-pet-finder-4g-mini-im-test_3c5f20ea-a7d7-49e1-8b7c-58bb7c688d79.html)
-- Integrierte Quelle: [CHIP](https://www.chip.de/test-kaufberatung/hobby-freizeit/paj-pet-finder-4g-mini-im-test_3c5f20ea-a7d7-49e1-8b7c-58bb7c688d79.html); Quellen-Datum 2026-11-01 (last-updated), Prüfung 2026-11-16. Modellbezogener Test trennt aktive Laufzeit von Homezone-/Standby-Betrieb. 
+- Alternativen vorher: `null` (null = automatische Volltextauswahl).
+- Alternativen danach: `[{"slug":"tractive-dog-6","reason":"Alternative für Hunde mit anderer App und zusätzlichen Gesundheitstrends; eigener Mobilfunktarif erforderlich."},{"slug":"weenect-xs","reason":"Kompakte Ortungsalternative für passende kleine Hunde oder Katzen; Befestigung, Halsband und Tarif getrennt prüfen."}]`.
+- Integrierte Quelle: [CHIP](https://www.chip.de/test-kaufberatung/hobby-freizeit/paj-pet-finder-4g-mini-im-test_3c5f20ea-a7d7-49e1-8b7c-58bb7c688d79.html); Quellen-Datum 2026-11-01 (last-updated), Prüfung 2026-11-16. Modellbezogener Test trennt aktive Laufzeit von Homezone-/Standby-Betrieb.
 - Recherchebelege: 3 Suchpfade, 5 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: `src/content/comparisons/beste-gps-tracker-fuer-hunde.md`.
 
@@ -577,6 +585,8 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 - Bewertung: 60 → 60/100. Bestehende Bewertung erhalten. Keine neue hinreichend vergleichbare Messreihe rechtfertigt eine gezielte Umwertung; keine Preis-, Provisions- oder Fremdnotenübernahme.
 - Aktualisierungsdatum im Produkt: `2026-11-16`. Recherche: 16.11.2026.
 - Geänderte Felder: `reviewedAlternatives`, `updatedAt`.
+- Alternativen vorher: `null` (null = automatische Volltextauswahl).
+- Alternativen danach: `[{"slug":"tractive-dog-6","reason":"Alltagsalternative mit positiveren Ortungsbefunden in den verlinkten Tests; Pflichtabo und Passform beachten."},{"slug":"paj-pet-finder-4g-mini","reason":"Kompakte Ortungsalternative ohne Vitalwertmessung. Homezones und Befestigung beeinflussen die Alltagseignung."}]`.
 - Recherchebelege: 3 Suchpfade, 4 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: `src/content/comparisons/beste-gps-tracker-fuer-hunde.md`.
 - Offen: Mindestens eine Originalquelle ist direkt zugriffsbeschränkt oder nicht erreichbar; HTTP-Fehler sind kein Nachweis eines Produktendes.
@@ -688,7 +698,7 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 - Geänderte Felder: `evidenceSources`, `externalEvidence`, `experience`, `weaknesses`, `updatedAt`.
 - Alte Aussage: Kein entsprechender Recherchehinweis vorhanden.
 - Neue Aussage: Cats.com berichtet positiv über Abdichtung und tägliches Aussieben, kritisiert aber Entleerung und Grundreinigung. Der Test fand aus Platzgründen auf Teppich mit deaktivierter Reinigungsautomatik statt; die Gewichtserfassung war dort ungenau. Das belegt keine sichere automatische Nutzung auf Teppich. Stellplatz und Herstelleranleitung bleiben maßgeblich. [Cats.com](https://cats.com/petkit-puramax-2-automatic-litter-box-review)
-- Integrierte Quelle: [Cats.com](https://cats.com/petkit-puramax-2-automatic-litter-box-review); Quellen-Datum 2025-12-10 (last-updated), Prüfung 2026-11-16. Tägliches Aussieben und Grundreinigung getrennt bewerten; Teppich-Aufstellung im Test eingeschränkt. 
+- Integrierte Quelle: [Cats.com](https://cats.com/petkit-puramax-2-automatic-litter-box-review); Quellen-Datum 2025-12-10 (last-updated), Prüfung 2026-11-16. Tägliches Aussieben und Grundreinigung getrennt bewerten; Teppich-Aufstellung im Test eingeschränkt.
 - Recherchebelege: 3 Suchpfade, 4 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: `src/content/comparisons/beste-automatische-katzentoiletten.md`.
 
@@ -947,7 +957,7 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 - Geänderte Felder: `evidenceSources`, `externalEvidence`, `experience`, `updatedAt`.
 - Alte Aussage: Kein entsprechender Recherchehinweis vorhanden.
 - Neue Aussage: Auch Cats.com beschreibt beim Scout Verwechslungen zwischen Katzen und ungleichmäßig ausgelöste Aufnahmen. Die vorhandenen Warnungen zur KI- und Cloud-Abhängigkeit bleiben deshalb bestehen. Ein funktionierendes Livebild beweist keine vollständige Ereignisaufzeichnung. [Cats.com](https://cats.com/best-pet-cat-camera)
-- Integrierte Quelle: [Cats.com](https://cats.com/best-pet-cat-camera); Quellen-Datum 2026-07-17 (last-updated), Prüfung 2026-11-16. Zusätzlicher Haushaltstest bestätigt die Grenze zwischen Livebild und verlässlicher individueller KI-Zuordnung. 
+- Integrierte Quelle: [Cats.com](https://cats.com/best-pet-cat-camera); Quellen-Datum 2026-07-17 (last-updated), Prüfung 2026-11-16. Zusätzlicher Haushaltstest bestätigt die Grenze zwischen Livebild und verlässlicher individueller KI-Zuordnung.
 - Recherchebelege: 3 Suchpfade, 6 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: keine Änderung erforderlich oder sicher belegbar.
 
@@ -1059,7 +1069,7 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 - Geänderte Felder: `evidenceSources`, `experience`, `updatedAt`.
 - Alte Aussage: Kein entsprechender Recherchehinweis vorhanden.
 - Neue Aussage: PetTec unterscheidet bei Cam 360°/Snoop Cube (Art. 15368) App-Updates von Kamera-Firmware. Bei Verbindungsproblemen zuerst Strom, WLAN und Neustart prüfen. Einen Werksreset nur nach der Modellanleitung durchführen; er erfordert erneutes Einrichten. Während eines laufenden Firmwareupdates weder zurücksetzen noch die Stromversorgung unterbrechen. [PetTec Support](https://support.pettec.de/hc/de/articles/11173527082514-PetTec-Cam-360-Cam-Lite-Verbindungsprobleme-nach-Update-Reset-und-neu-verbinden)
-- Integrierte Quelle: [PetTec Support](https://support.pettec.de/hc/de/articles/11173527082514-PetTec-Cam-360-Cam-Lite-Verbindungsprobleme-nach-Update-Reset-und-neu-verbinden); Quellen-Datum nicht ausgewiesen (publication-or-unknown), Prüfung 2026-11-16. Smartphone-App und Kamera-Firmware sind getrennte Updates; kein Reset während eines laufenden Firmwareupdates. 
+- Integrierte Quelle: [PetTec Support](https://support.pettec.de/hc/de/articles/11173527082514-PetTec-Cam-360-Cam-Lite-Verbindungsprobleme-nach-Update-Reset-und-neu-verbinden); Quellen-Datum nicht ausgewiesen (publication-or-unknown), Prüfung 2026-11-16. Smartphone-App und Kamera-Firmware sind getrennte Updates; kein Reset während eines laufenden Firmwareupdates.
 - Recherchebelege: 3 Suchpfade, 5 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: keine Änderung erforderlich oder sicher belegbar.
 - Offen: Die zusätzliche Nutzersuche lieferte keine hinreichend zuordenbaren Treffer. Das beweist weder Fehlerfreiheit noch das Fehlen von Nutzererfahrungen.
@@ -1085,7 +1095,7 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 - Geänderte Felder: `evidenceSources`, `externalEvidence`, `experience`, `weaknesses`, `updatedAt`.
 - Alte Aussage: Kein entsprechender Recherchehinweis vorhanden.
 - Neue Aussage: Lyd & Bilde berichtet, dass der geprüfte PAW3210/02 nach einer Stromunterbrechung erst durch Tastendruck wieder anlief. Vor unbeaufsichtigter Nutzung den Wiederanlauf am eigenen Gerät prüfen und zusätzlich einen zugänglichen Wassernapf bereitstellen. Die tägliche Reinigung wurde positiv, das Zerlegen der Pumpe aufwendiger beurteilt. [Lyd & Bilde](https://www.lydogbilde.no/test/smart-hjem/6-smarte-for-og-vannautomater-til-kjaeledyr/philips-water-fountain-paw3210/)
-- Integrierte Quelle: [Lyd & Bilde](https://www.lydogbilde.no/test/smart-hjem/6-smarte-for-og-vannautomater-til-kjaeledyr/philips-water-fountain-paw3210/); Quellen-Datum 2025-01-25 (publication-or-unknown), Prüfung 2026-11-16. Wiederanlauf nach Stromausfall laut Fremdtest nicht automatisch; am eigenen Gerät kontrollieren. 
+- Integrierte Quelle: [Lyd & Bilde](https://www.lydogbilde.no/test/smart-hjem/6-smarte-for-og-vannautomater-til-kjaeledyr/philips-water-fountain-paw3210/); Quellen-Datum 2025-01-25 (publication-or-unknown), Prüfung 2026-11-16. Wiederanlauf nach Stromausfall laut Fremdtest nicht automatisch; am eigenen Gerät kontrollieren.
 - Recherchebelege: 3 Suchpfade, 4 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`.
 - Offen: Evidenzfelder bleiben bewusst unvollständig. Fehlende unabhängige Messungen/Nutzerstichproben werden nicht erfunden.
@@ -1119,8 +1129,8 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 - Geänderte Felder: `evidenceSources`, `externalEvidence`, `experience`.
 - Alte Aussage: Kein entsprechender Recherchehinweis vorhanden.
 - Neue Aussage: Der iOS-Versionsverlauf nennt Wochen- und Monatsberichte ab Version 2.9.1 sowie einen separaten Hinweis auf Routine-Firmwareupdates in den Geräteeinstellungen. Das belegt Softwarepflege, aber weder eine bestimmte EU-Gerätefirmware noch eine medizinisch validierte Auswertung. Die unbekannte Lieferbarkeit bleibt ausdrücklich offen. [SATELLAI Go · Apple App Store](https://apps.apple.com/us/app/satellai-go/id6753865552)
-- Integrierte Quelle: [CHIP](https://www.chip.de/test-kaufberatung/hobby-freizeit/satellai-collar-g-im-test_e5ceb9ad-a5bb-41db-a82e-61edb2590e56.html); Quellen-Datum 2026-11-03 (last-updated), Prüfung 2026-11-16. Schnelle, präzise Ortung; USB-C und umfangreiche App. 108 Stunden Laufzeit im Testprotokoll; Halterung konnte sich bei starkem Verdrehen lösen. 
-- Integrierte Quelle: [connect](https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html); Quellen-Datum 2026-11-10 (publication-or-unknown), Prüfung 2026-11-16. App und Positionierung im Vergleich positiv. Etwa fünf bis sechs Tage im Test statt einer garantierten Maximallaufzeit. 
+- Integrierte Quelle: [CHIP](https://www.chip.de/test-kaufberatung/hobby-freizeit/satellai-collar-g-im-test_e5ceb9ad-a5bb-41db-a82e-61edb2590e56.html); Quellen-Datum 2026-11-03 (last-updated), Prüfung 2026-11-16. Schnelle, präzise Ortung; USB-C und umfangreiche App. 108 Stunden Laufzeit im Testprotokoll; Halterung konnte sich bei starkem Verdrehen lösen.
+- Integrierte Quelle: [connect](https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html); Quellen-Datum 2026-11-10 (publication-or-unknown), Prüfung 2026-11-16. App und Positionierung im Vergleich positiv. Etwa fünf bis sechs Tage im Test statt einer garantierten Maximallaufzeit.
 - Integrierte Quelle: [SATELLAI Go · Apple App Store](https://apps.apple.com/us/app/satellai-go/id6753865552); Quellen-Datum nicht ausgewiesen (publication-or-unknown), Prüfung 2026-11-16. App 2.9.1 dokumentiert Wochen-/Monatsberichte; Routine-Firmwareupdates werden separat in den Geräteeinstellungen angezeigt. US-App-Store-Verlauf; kein Nachweis der installierten Version eines konkreten EU-Geräts.
 - Recherchebelege: 3 Suchpfade, 8 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: `src/content/comparisons/beste-gps-tracker-fuer-hunde.md`.
@@ -1189,6 +1199,8 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 - Geänderte Felder: `evidenceSources`, `externalEvidence`, `experience`, `reviewedAlternatives`, `updatedAt`.
 - Alte Aussage: Kein entsprechender Recherchehinweis vorhanden.
 - Neue Aussage: Cats.com ergänzt eine positive Erfahrung mit Halsbandkomfort und Bluetooth-Nahsuche. Getestet wurde an einer Hauskatze; GPS-Prüfungen fanden auch separat bei Ausflügen statt, das Testgerät war kostenlos gestellt. Diese Evidenz widerlegt die von WIRED dokumentierten Alarmprobleme nicht. Der bisherige Score bleibt mangels einer vergleichbaren neuen Messreihe unverändert. [Cats.com](https://cats.com/tractive-cat-6-mini-review)
+- Alternativen vorher: `null` (null = automatische Volltextauswahl).
+- Alternativen danach: `[{"slug":"weenect-xs","reason":"Alternative für Katzen mit anderer Befestigung. Gewicht, Sicherheitshalsband und Mobilfunktarif vor dem Kauf prüfen."}]`.
 - Integrierte Quelle: [Cats.com](https://cats.com/tractive-cat-6-mini-review); Quellen-Datum 2026-09-23 (publication-or-unknown), Prüfung 2026-11-16. Zusätzliche praktische Einzelperspektive; Gesundheitsdaten und Laufzeit bleiben kontextabhängig. Kostenloses Testgerät, Hauskatze plus separate GPS-Ausflüge; US-Tarife nicht auf DE übertragen.
 - Recherchebelege: 3 Suchpfade, 4 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: keine Änderung erforderlich oder sicher belegbar.
@@ -1203,7 +1215,9 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 - Geänderte Felder: `evidenceSources`, `externalEvidence`, `experience`, `reviewedAlternatives`, `updatedAt`.
 - Alte Aussage: Kein entsprechender Recherchehinweis vorhanden.
 - Neue Aussage: Zum DOG 6 XL liegt jetzt zusätzlich ein konkreter CHIP-Test vor: rund 480 Stunden aktive Nutzung gegenüber 1.008 Stunden Standby. Beide Werte bleiben vom Hersteller-Maximalwert und voneinander getrennt. Das große Gehäuse und die Freigabe ab 20 kg bleiben die wesentliche Passformgrenze. [CHIP](https://www.chip.de/test-kaufberatung/hobby-freizeit/tractive-dog-6-xl-im-test_b864806c-217b-40e7-a760-139aade83670.html)
-- Integrierte Quelle: [CHIP](https://www.chip.de/test-kaufberatung/hobby-freizeit/tractive-dog-6-xl-im-test_b864806c-217b-40e7-a760-139aade83670.html); Quellen-Datum 2026-11-01 (last-updated), Prüfung 2026-11-16. DOG-6-XL-Test ergänzt bisherige Marktstartberichterstattung, ohne Hersteller-Maximum als Messung auszugeben. 
+- Alternativen vorher: `null` (null = automatische Volltextauswahl).
+- Alternativen danach: `[{"slug":"tractive-dog-6","reason":"Kompaktere Alternative für Hunde, wenn ein großes XL-Gehäuse und maximale Akkureserve nicht nötig sind."},{"slug":"weenect-xt","reason":"Outdoor-Alternative mit Ton und Vibration; Passform und laufenden Tarif vergleichen."}]`.
+- Integrierte Quelle: [CHIP](https://www.chip.de/test-kaufberatung/hobby-freizeit/tractive-dog-6-xl-im-test_b864806c-217b-40e7-a760-139aade83670.html); Quellen-Datum 2026-11-01 (last-updated), Prüfung 2026-11-16. DOG-6-XL-Test ergänzt bisherige Marktstartberichterstattung, ohne Hersteller-Maximum als Messung auszugeben.
 - Recherchebelege: 3 Suchpfade, 4 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: `src/content/comparisons/beste-gps-tracker-fuer-hunde.md`.
 - Offen: Mindestens eine Originalquelle ist direkt zugriffsbeschränkt oder nicht erreichbar; HTTP-Fehler sind kein Nachweis eines Produktendes.
@@ -1215,16 +1229,20 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 - Bewertung: 92 → 92/100. Bestehende Bewertung erhalten. Keine neue hinreichend vergleichbare Messreihe rechtfertigt eine gezielte Umwertung; keine Preis-, Provisions- oder Fremdnotenübernahme.
 - Aktualisierungsdatum im Produkt: `2026-11-16`. Recherche: 16.11.2026.
 - Geänderte Felder: `reviewedAlternatives`.
+- Alternativen vorher: `null` (null = automatische Volltextauswahl).
+- Alternativen danach: `[{"slug":"tractive-dog-6-xl","reason":"Größere Akkureserve für Hunde ab 20 kg; das größere Gehäuse und dessen Passform beachten."},{"slug":"weenect-xt","reason":"Outdoor-Modell mit anderer Befestigung und Ton-/Vibrationssignalen; benötigt ebenfalls einen Mobilfunktarif."}]`.
 - Recherchebelege: 3 Suchpfade, 4 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: keine Änderung erforderlich oder sicher belegbar.
 
 ### Weenect XS GPS-Tracker — weenect-xs
 
-- Ergebnis: **NO VERIFIED FACTUAL CHANGE**. Hersteller und weitere ältere Praxistests wiedergefunden. Aktuelle XS/XT-Befestigungs- und Laufzeitgrenzen nicht vermischt; Einzelberichte zur Ortung reichen nicht für einen neuen Bewertungsmaßstab.
+- Ergebnis: **UPDATE RECOMMENDED — IMPLEMENTED**. Hersteller und weitere ältere Praxistests wiedergefunden. Aktuelle XS/XT-Befestigungs- und Laufzeitgrenzen nicht vermischt; Einzelberichte zur Ortung reichen nicht für einen neuen Bewertungsmaßstab.
 - Route: `/produkt/weenect-xs/`; veröffentlicht. Evidenzfelder: complete → complete.
 - Bewertung: 92 → 92/100. Bestehende Bewertung erhalten. Keine neue hinreichend vergleichbare Messreihe rechtfertigt eine gezielte Umwertung; keine Preis-, Provisions- oder Fremdnotenübernahme.
-- Aktualisierungsdatum im Produkt: `2026-08-19`. Recherche: 16.11.2026.
-- Tatsächliche Änderung: keine; vorhandene belastbare Informationen und Aktualisierungsdaten erhalten.
+- Aktualisierungsdatum im Produkt: `2026-11-16`. Recherche: 16.11.2026.
+- Geänderte Felder: `reviewedAlternatives`, `updatedAt`.
+- Alternativen vorher: `null` (null = automatische Volltextauswahl).
+- Alternativen danach: `[{"slug":"tractive-cat-6-mini","reason":"Katzenalternative mit integriertem Sicherheitshalsband für Tiere von 3 bis 8 kg; nicht für Hunde übernehmen."},{"slug":"tractive-dog-6","reason":"Alternative für Hunde mit eigener Tractive-App und Pflichtabo; Bauform und Befestigung am eigenen Tier prüfen."}]`.
 - Recherchebelege: 3 Suchpfade, 4 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: keine Änderung erforderlich oder sicher belegbar.
 - Offen: Mindestens eine Originalquelle ist direkt zugriffsbeschränkt oder nicht erreichbar; HTTP-Fehler sind kein Nachweis eines Produktendes.
@@ -1232,11 +1250,13 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 
 ### Weenect XT GPS-Tracker — weenect-xt
 
-- Ergebnis: **NO VERIFIED FACTUAL CHANGE**. Vorhandene CHIP-/Dogorama-Tests und zusätzliche ältere Praxistests gefunden. Kein bestätigter neuer Funktionsstand mit Bewertungswirkung; Maximalakku und aktives Live-Tracking weiter getrennt.
+- Ergebnis: **UPDATE RECOMMENDED — IMPLEMENTED**. Vorhandene CHIP-/Dogorama-Tests und zusätzliche ältere Praxistests gefunden. Kein bestätigter neuer Funktionsstand mit Bewertungswirkung; Maximalakku und aktives Live-Tracking weiter getrennt.
 - Route: `/produkt/weenect-xt/`; veröffentlicht. Evidenzfelder: complete → complete.
 - Bewertung: 90 → 90/100. Bestehende Bewertung erhalten. Keine neue hinreichend vergleichbare Messreihe rechtfertigt eine gezielte Umwertung; keine Preis-, Provisions- oder Fremdnotenübernahme.
-- Aktualisierungsdatum im Produkt: `2026-07-26`. Recherche: 16.11.2026.
-- Tatsächliche Änderung: keine; vorhandene belastbare Informationen und Aktualisierungsdaten erhalten.
+- Aktualisierungsdatum im Produkt: `2026-11-16`. Recherche: 16.11.2026.
+- Geänderte Felder: `reviewedAlternatives`, `updatedAt`.
+- Alternativen vorher: `null` (null = automatische Volltextauswahl).
+- Alternativen danach: `[{"slug":"tractive-dog-6-xl","reason":"Alternative für große Hunde ab 20 kg mit hoher Akkureserve; größeres Gehäuse und Passform beachten."},{"slug":"paj-pet-finder-4g-mini","reason":"Kompaktere Ortungslösung ohne Vitalwertmessung; Homezones und Tarifmodell getrennt vergleichen."}]`.
 - Recherchebelege: 3 Suchpfade, 4 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: keine Änderung erforderlich oder sicher belegbar.
 - Offen: Mindestens eine Originalquelle ist direkt zugriffsbeschränkt oder nicht erreichbar; HTTP-Fehler sind kein Nachweis eines Produktendes.
@@ -1287,7 +1307,7 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 - Geänderte Felder: `evidenceSources`, `experience`, `updatedAt`.
 - Alte Aussage: Kein entsprechender Recherchehinweis vorhanden.
 - Neue Aussage: Xiaomi dokumentiert eine „Dispensing error correction“, die aktuelle Firmware voraussetzt und standardmäßig ausgeschaltet ist. Sie lässt sich auf der Geräteseite in Xiaomi Home aktivieren. Die Korrektur arbeitet in Rotationsschritten; sie ersetzt keine Kontrollwägung mit dem eigenen Futter und garantiert keine grammgenaue Einzelportion. [Xiaomi Support](https://www.mi.com/global/support/faq/details/KA-243164/)
-- Integrierte Quelle: [Xiaomi Support](https://www.mi.com/global/support/faq/details/KA-243164/); Quellen-Datum nicht ausgewiesen (publication-or-unknown), Prüfung 2026-11-16. Ausgabekorrektur benötigt aktuelle Firmware und ist standardmäßig ausgeschaltet. 
+- Integrierte Quelle: [Xiaomi Support](https://www.mi.com/global/support/faq/details/KA-243164/); Quellen-Datum nicht ausgewiesen (publication-or-unknown), Prüfung 2026-11-16. Ausgabekorrektur benötigt aktuelle Firmware und ist standardmäßig ausgeschaltet.
 - Recherchebelege: 3 Suchpfade, 4 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: keine Änderung erforderlich oder sicher belegbar.
 - Offen: Die zusätzliche Nutzersuche lieferte keine hinreichend zuordenbaren Treffer. Das beweist weder Fehlerfreiheit noch das Fehlen von Nutzererfahrungen.
@@ -1303,8 +1323,8 @@ WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbe
 - Neue Aussage: Les Numériques bestätigt Sensorbetrieb und den großen Vorrat, stellt aber ausdrücklich klar: Eine Messung der getrunkenen Wassermenge fehlt. App-Steuerung oder Filterhinweise dürfen deshalb nicht als individuelle Trinkkontrolle verstanden werden. [Les Numériques](https://www.lesnumeriques.com/objet-connecte/xiaomi-smart-pet-fountain-2-p76349/test.html)
 
 Firmwareupdates werden im Dreipunktmenü der Geräteseite angeboten; Xiaomi nennt auch geplante automatische und entfernte Updates. Eine konkrete neue Firmwareversion oder eine dadurch behobene Fehlfunktion ist damit nicht belegt. [Xiaomi Support · Fountain 2](https://www.mi.com/global/support/faq/details/KA-501990/)
-- Integrierte Quelle: [Les Numériques](https://www.lesnumeriques.com/objet-connecte/xiaomi-smart-pet-fountain-2-p76349/test.html); Quellen-Datum 2025-03-15 (publication-or-unknown), Prüfung 2026-11-16. App-Status ist keine Trinkmengenmessung. 
-- Integrierte Quelle: [Xiaomi Support · Fountain 2](https://www.mi.com/global/support/faq/details/KA-501990/); Quellen-Datum nicht ausgewiesen (publication-or-unknown), Prüfung 2026-11-16. Firmwareupdates sind über Gerät → Dreipunktmenü → Firmware update dokumentiert. 
+- Integrierte Quelle: [Les Numériques](https://www.lesnumeriques.com/objet-connecte/xiaomi-smart-pet-fountain-2-p76349/test.html); Quellen-Datum 2025-03-15 (publication-or-unknown), Prüfung 2026-11-16. App-Status ist keine Trinkmengenmessung.
+- Integrierte Quelle: [Xiaomi Support · Fountain 2](https://www.mi.com/global/support/faq/details/KA-501990/); Quellen-Datum nicht ausgewiesen (publication-or-unknown), Prüfung 2026-11-16. Firmwareupdates sind über Gerät → Dreipunktmenü → Firmware update dokumentiert.
 - Recherchebelege: 3 Suchpfade, 5 direkte Quellenabrufe. Bestehende Quellen und Treffer einschließlich URLs/Datumsmetadaten vollständig im JSON und [Suchindex](../research/product-freshness-36.0/search-index.json).
 - Tatsächlich betroffene Vergleichs-/Ratgeberdateien: `src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md`.
 - Offen: Die zusätzliche Nutzersuche lieferte keine hinreichend zuordenbaren Treffer. Das beweist weder Fehlerfreiheit noch das Fehlen von Nutzererfahrungen.
@@ -1355,9 +1375,12 @@ Firmwareupdates werden im Dreipunktmenü der Geräteseite angeboten; Xiaomi nenn
 node scripts/product-freshness/apply.mjs
 node scripts/product-freshness/pages.mjs
 npm run build
+node scripts/product-experience/audit-decision-facts.mjs
+node scripts/product-integration/verify.mjs
+node scripts/product-integration/report.mjs
 npm run test:product-integration
-node --test test/product-freshness-36.0.test.mjs
+npm run test:product-freshness
 node scripts/product-freshness/report.mjs --check
 ```
 
-Für frische Netzbelege: node scripts/product-freshness/capture.mjs --refresh; node scripts/product-freshness/check-links.mjs. Anschließend erneute redaktionelle Bewertung; Netzantworten werden nie automatisch veröffentlicht.
+Für frische Netzbelege: node scripts/product-freshness/capture.mjs --refresh; node scripts/product-freshness/check-links.mjs --refresh. Anschließend erneute redaktionelle Bewertung; Netzantworten werden nie automatisch veröffentlicht.

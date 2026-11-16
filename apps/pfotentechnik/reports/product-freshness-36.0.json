@@ -24,7 +24,7 @@
     "note": "Der tatsächliche Bestand weicht von der Auftragsannahme 2 fehlend/29 teilweise ab: Ausgangsstand 6 fehlend/32 teilweise/72 vollständig. Feldvollständigkeit ist keine Qualitäts- oder Aktualitätsfreigabe."
   },
   "summary": {
-    "updatedProducts": 29,
+    "updatedProducts": 33,
     "updatedComparisons": 3,
     "updatedGuides": 1,
     "scoreChanges": [
@@ -37,8 +37,8 @@
     "sourceCaptures": 286,
     "sourceHttp200": 263,
     "restrictedOrUnreachableSources": 23,
-    "merchantLinkChecks": 32,
-    "browserCases": 36
+    "merchantLinkChecks": 35,
+    "browserCases": 52
   },
   "improvements": [
     "MOVA: Geofence-Ausfälle von erfolgreicher Standortabfrage getrennt; Kaufempfehlung und Fremdevidenz angepasst.",
@@ -68,7 +68,27 @@
     "merge": false,
     "deployment": false
   },
-  "validation": null,
+  "validation": {
+    "phase": "36.0-before-35.9",
+    "build": {
+      "pages": 390,
+      "log": "/tmp/pt360-build-final.log",
+      "result": "passed"
+    },
+    "tests": {
+      "passed": 154,
+      "failed": 0,
+      "suites": {
+        "productIntegration": 145,
+        "productFreshness": 9
+      }
+    },
+    "browserCases": 52,
+    "protectedPages": 20,
+    "protectedIncomingEdges": 205,
+    "merge": false,
+    "deployment": false
+  },
   "comparisons": [
     {
       "slug": "beste-gps-tracker-fuer-hunde",
@@ -86,6 +106,18 @@
         "mova-suretrack-pro",
         "satellai-collar-go"
       ],
+      "activePublishedProducts": [
+        "tractive-dog-6",
+        "weenect-xs",
+        "paj-pet-finder-4g-mini",
+        "tractive-dog-6-xl",
+        "weenect-xt",
+        "garmin-alpha-t-20",
+        "invoxia-biotracker-2026",
+        "pawfit-3",
+        "mova-suretrack-pro",
+        "satellai-collar-go"
+      ],
       "beforeSha256": "286ecd4347b86bec9b396dd01387432e053ea85871cbe7ebe6a98066e4229ddd",
       "afterSha256": "f90be7d0f440528367a92cb88d9ef767135fcb839a320da45d2d7affb54f18c1",
       "changes": "Die ergänzende Recherche verändert die Einsatzgrenzen, nicht pauschal die Rangfolge. Beim **MOVA SureTrack Pro** stehen positiven Positionsbefunden ausgebliebene Geofence-Warnungen in Fremdtests gegenüber. Eine Standortkarte bestätigt keine funktionierende Fluchtwarnung. Beim **SATELLAI Collar Go** sind Ortung und App positiv beschrieben; die Halterung und die protokollabhängige Laufzeit bleiben Grenzen. Der hinterlegte Preis bestätigt weiterhin keine Lieferbarkeit.\n\nBeim **Invoxia Biotracker 2026** dokumentiert [Tom’s Guide France](https://www.tomsguide.fr/test-biotracker-invoxia-edition-2026-excellent-pour-retrouver-son-chien-moins-pour-suivre-sa-sante/) neben gutem GPS auch falsch erkannte Aktivitäten. Das Gesundheitskriterium sinkt redaktionell von 4,8 auf 3,5/5; die unveränderten übrigen Kriterien ergeben 78/100. Die Rolle bleibt „GPS plus Trends“, ohne diagnostische Zusicherung. Das bestätigte 219-€-Amazon-Paket enthält zwölf Monate Max GPS; dieses erste Jahr wird nicht zusätzlich berechnet.\n\nDie neuen CHIP-Protokolle trennen beim DOG 6 XL aktive Nutzung und Standby; beim PAJ Mini unterscheiden sie Nutzung außerhalb der Homezone und Standby. Diese Werte rechtfertigen keine pauschale Übertragung der Maximalwerte auf jeden Alltag. Produktrollen und sichtbare Auswahl bleiben erhalten."
@@ -93,6 +125,19 @@
     {
       "slug": "beste-automatische-katzentoiletten",
       "visibleProducts": [
+        "petkit-purobot-crystal-duo",
+        "neakasa-m1-lite",
+        "devoko-90l-automatisches-katzenklo",
+        "petlibro-luma-smart-litter-box",
+        "petkit-purobot-max-pro-2",
+        "petkit-purobot-max-3",
+        "petsnowy-snow-plus",
+        "petkit-puramax-2",
+        "litter-robot-4",
+        "litter-robot-5-pro",
+        "neakasa-m1-plus"
+      ],
+      "activePublishedProducts": [
         "petkit-purobot-crystal-duo",
         "neakasa-m1-lite",
         "devoko-90l-automatisches-katzenklo",
@@ -135,6 +180,27 @@
         "petlibro-dockstream-cordless",
         "petlibro-dockstream-rfid-smart",
         "petlibro-glacier-ultrafiltration",
+        "xiaomi-smart-pet-fountain-2"
+      ],
+      "activePublishedProducts": [
+        "petkit-eversweet-solo-2-fountain",
+        "oneisall-3-2l-cordless-fountain",
+        "petlibro-dockstream-2-smart",
+        "petlibro-dockstream-2-smart-cordless",
+        "petkit-eversweet-ultra",
+        "petlibro-stainless-steel-fountain",
+        "cat-mate-335-pet-fountain",
+        "petkit-eversweet-3-pro-uvc",
+        "catit-pixi-smart-trinkbrunnen",
+        "petsafe-streamside-trinkbrunnen",
+        "brook-glass-pet-fountain",
+        "philips-pet-series-paw3210-02",
+        "catit-pixi-standard-trinkbrunnen",
+        "feelneedy-fn-w18-8l-katzenbrunnen",
+        "oneisall-2-2l-cordless-fountain",
+        "petkit-eversweet-solo-se",
+        "petlibro-dockstream-cordless",
+        "petlibro-dockstream-rfid-smart",
         "xiaomi-smart-pet-fountain-2"
       ],
       "beforeSha256": "9a279feb97032d027480940834cde3b461708c0bc4a7071ba96a08e6b047c680",
@@ -8480,7 +8546,7 @@
       "url": "/produkt/garmin-alpha-t-20/",
       "scope": "active",
       "published": true,
-      "result": "NO VERIFIED FACTUAL CHANGE",
+      "result": "UPDATE RECOMMENDED — IMPLEMENTED",
       "researchResult": "Treeline-Originaltest wiedergefunden; VHF mit separatem Handgerät bleibt vom optionalen LTE anderer Geräte getrennt. US-Reichweite/Funkvariante ist keine ungeprüfte EU-Zusage.",
       "research": {
         "checkedAt": "2026-11-16",
@@ -8773,7 +8839,26 @@
         "after": "complete"
       },
       "newlyIntegratedSources": [],
-      "actualChanges": null,
+      "actualChanges": {
+        "fields": {
+          "reviewedAlternatives": {
+            "before": null,
+            "after": [
+              {
+                "slug": "garmin-alpha-tt-25",
+                "reason": "Anderes Garmin-VHF-Modell mit zusätzlicher Ausstattung. Ein kompatibles Handgerät bleibt erforderlich; regionale Ausführung und benötigte Funktionen vor dem Kauf prüfen."
+              }
+            ]
+          },
+          "updatedAt": {
+            "before": "2026-07-23",
+            "after": "2026-11-16"
+          }
+        },
+        "statements": [],
+        "beforeSha256": "f078b29441a5442f22f75373e7da8e7a445e7cbf0565d03509ad56b3019bb673",
+        "afterSha256": "d05199e15855d465f8c0d83984d34236590c305217480b4e03a433e7db4127f4"
+      },
       "score": {
         "before": {
           "score": 81,
@@ -8815,12 +8900,75 @@
         "actuallyUpdatedPages": [],
         "guidesUpdated": []
       },
-      "updatedAt": "2026-07-23",
+      "updatedAt": "2026-11-16",
       "pending": [],
       "openUncertainties": [
         "Die zusätzliche Nutzersuche lieferte keine hinreichend zuordenbaren Treffer. Das beweist weder Fehlerfreiheit noch das Fehlen von Nutzererfahrungen."
       ],
-      "validation": null
+      "validation": {
+        "rendered": true,
+        "canonicalStable": true,
+        "commerceFieldsStable": true,
+        "priceCtas": [
+          {
+            "slug": "garmin-alpha-t-20",
+            "url": "https://amzn.to/3Tjaqz5",
+            "expectedAsin": null,
+            "checkedAt": "2026-11-16T12:28:19.400Z",
+            "status": 200,
+            "finalUrl": "https://www.amazon.de/Garmin-Alpha-20-GPS-Hundehalsband/dp/B0BYGVLRHV?crid=3BW1LCH9VA98D&dib=eyJ2IjoiMSJ9.pgiw7uycoA8gcpHbDA96nvmCvsOcCgLrmEv6kr3yje3JOsMobTbo8IcmIy0OhX1-cjelpTOHxpaUn-6K00hL-tnEX32uqwBiDgYIjaaquMdlUQXjOFY_XfXN3EghQYVXQN7tR8qXXEmp4_m-QsEVXhRvnGYeftZWcyl1rcPrtUMvBKOFy9ihSRPl4E1GL3rbVBXLdQTwB4lWEDUJMQj9DFzvCMMCfiy6QCFxHJoMiOI.g4EAj2JpJdii8qkJpQgZjJYiL01hYzvk5vVCCvZE1L8&dib_tag=se&keywords=garmin+alpha+t20&qid=1784816851&sprefix=garmin+alpha+t,aps,153&sr=8-1&linkCode=sl2&tag=yusha0f-21&linkId=838177e07fd36974c95137464e11e0e7&ref_=as_li_ss_tl",
+            "title": "Garmin Alpha T 20 GPS Hundehalsband | Verfolgen Sie Ihren Hund bis zu 9 km mit einem kompatiblen Handgerät (separat erhältlich) : Amazon.de: Haustier",
+            "result": "reachable",
+            "identity": "URL-/Variantenprüfung und frühere Modellbelege separat; HTTP 200 allein bestätigt kein Modell und keine Lieferbarkeit."
+          }
+        ],
+        "browserCases": [
+          {
+            "width": 375,
+            "theme": "light dark",
+            "screenshot": {
+              "file": "garmin-alpha-t-20-375-light.png",
+              "height": 12951,
+              "sha256": "3e6493dff2de3cfc8e6b7524961792937016c74fdf53551882b317cb97374204"
+            },
+            "gallery": "open-next-close passed",
+            "overflow": 0
+          },
+          {
+            "width": 375,
+            "theme": "light dark",
+            "screenshot": {
+              "file": "garmin-alpha-t-20-375-dark.png",
+              "height": 12951,
+              "sha256": "dfd7f74a100a8b9a2b4f7d5f548388cf6d539b9c26f0573960550336637368f1"
+            },
+            "gallery": "open-next-close passed",
+            "overflow": 0
+          },
+          {
+            "width": 1600,
+            "theme": "light dark",
+            "screenshot": {
+              "file": "garmin-alpha-t-20-1600-light.png",
+              "height": 8970,
+              "sha256": "27d02e060c6f447afbad0fc99ae9825744047207673bbb682ed7979e9d2c8038"
+            },
+            "gallery": "open-next-close passed",
+            "overflow": 0
+          },
+          {
+            "width": 1600,
+            "theme": "light dark",
+            "screenshot": {
+              "file": "garmin-alpha-t-20-1600-dark.png",
+              "height": 8970,
+              "sha256": "47454a682eb185069a505b6497b687d27ccce997f0b9f87eccb3a58556141a59"
+            },
+            "gallery": "open-next-close passed",
+            "overflow": 0
+          }
+        ]
+      }
     },
     {
       "slug": "garmin-alpha-tt-25",
@@ -8828,7 +8976,7 @@
       "url": "/produkt/garmin-alpha-tt-25/",
       "scope": "active",
       "published": true,
-      "result": "INSUFFICIENT EVIDENCE — NO SPECULATIVE CHANGE",
+      "result": "UPDATE RECOMMENDED — IMPLEMENTED",
       "researchResult": "Offizielles exaktes TT-25-Handbuch auffindbar; alte Fachquelle aktuell nicht direkt erreichbar. Kein neuer bestätigter Firmwareeffekt oder allgemeiner Eignungsnachweis. Trainingsfunktionen nicht ungeprüft in Alltagsempfehlungen erweitert.",
       "research": {
         "checkedAt": "2026-11-16",
@@ -9151,7 +9299,26 @@
         "after": "partial"
       },
       "newlyIntegratedSources": [],
-      "actualChanges": null,
+      "actualChanges": {
+        "fields": {
+          "reviewedAlternatives": {
+            "before": null,
+            "after": [
+              {
+                "slug": "garmin-alpha-t-20",
+                "reason": "Garmin-Alternative für den Schwerpunkt Hundeortung per VHF. Die direkte Übertragung benötigt ein kompatibles Handgerät und keinen Mobilfunktarif."
+              }
+            ]
+          },
+          "updatedAt": {
+            "before": "2026-07-20",
+            "after": "2026-11-16"
+          }
+        },
+        "statements": [],
+        "beforeSha256": "ecd78472a2c6199e70b0ac8b749cacc6cecc487e3114b828ce31e606269efe2c",
+        "afterSha256": "315c908d9bab2854a83522b757e4457897e1d8963db265a8cc0606f3592d1675"
+      },
       "score": {
         "before": {
           "score": 78,
@@ -9190,13 +9357,64 @@
         "actuallyUpdatedPages": [],
         "guidesUpdated": []
       },
-      "updatedAt": "2026-07-20",
+      "updatedAt": "2026-11-16",
       "pending": [],
       "openUncertainties": [
         "Mindestens eine Originalquelle ist direkt zugriffsbeschränkt oder nicht erreichbar; HTTP-Fehler sind kein Nachweis eines Produktendes.",
         "Evidenzfelder bleiben bewusst unvollständig. Fehlende unabhängige Messungen/Nutzerstichproben werden nicht erfunden."
       ],
-      "validation": null
+      "validation": {
+        "rendered": true,
+        "canonicalStable": true,
+        "commerceFieldsStable": true,
+        "priceCtas": [],
+        "browserCases": [
+          {
+            "width": 375,
+            "theme": "light dark",
+            "screenshot": {
+              "file": "garmin-alpha-tt-25-375-light.png",
+              "height": 10609,
+              "sha256": "932a70cf11b358dd88134b1a5bcc1c45207da6acd728f0889666aefbc997a464"
+            },
+            "gallery": "open-next-close passed",
+            "overflow": 0
+          },
+          {
+            "width": 375,
+            "theme": "light dark",
+            "screenshot": {
+              "file": "garmin-alpha-tt-25-375-dark.png",
+              "height": 10609,
+              "sha256": "5cfba933aa053f870672bcf7d671d510c5e47249c6d0099cec93c44cc0916fc8"
+            },
+            "gallery": "open-next-close passed",
+            "overflow": 0
+          },
+          {
+            "width": 1600,
+            "theme": "light dark",
+            "screenshot": {
+              "file": "garmin-alpha-tt-25-1600-light.png",
+              "height": 7643,
+              "sha256": "a652ddeac1c9572f6bef634700f075609dd00a0b17ca847cd5dcf5068f6d1dbc"
+            },
+            "gallery": "open-next-close passed",
+            "overflow": 0
+          },
+          {
+            "width": 1600,
+            "theme": "light dark",
+            "screenshot": {
+              "file": "garmin-alpha-tt-25-1600-dark.png",
+              "height": 7643,
+              "sha256": "071ba2144c5fd4320ab0bb639ce10e05ae5e06acf8f8449fb3c3d3dc3f15ad15"
+            },
+            "gallery": "open-next-close passed",
+            "overflow": 0
+          }
+        ]
+      }
     },
     {
       "slug": "honeyguardian-a305d",
@@ -10958,6 +11176,21 @@
             "before": "Für Hundehalter, die Gesundheits- und Aktivitätstrends mit Mobilfunkortung verbinden möchten und Tarifgrenzen sowie den nichtdiagnostischen Charakter der Daten akzeptieren.",
             "after": "GPS mit zusätzlichen Gesundheits- und Aktivitätstrends; Fehlklassifikationen begrenzen deren Entscheidungswert. Keine medizinische Diagnose. Das bestätigte Amazon-Paket enthält zwölf Monate Max GPS."
           },
+          "weaknesses": {
+            "before": [
+              "Fern-GPS tarifabhängig",
+              "IP67 statt IP68",
+              "Keine medizinische Diagnose",
+              "Reale Laufzeit netz- und nutzungsabhängig"
+            ],
+            "after": [
+              "Fremdtest: falsch erkannte Aktivitäten und begrenzte Verständlichkeit der Gesundheitsdaten",
+              "Fern-GPS tarifabhängig",
+              "IP67 statt IP68",
+              "Keine medizinische Diagnose",
+              "Reale Laufzeit netz- und nutzungsabhängig"
+            ]
+          },
           "reviewedAlternatives": {
             "before": null,
             "after": [
@@ -10979,7 +11212,7 @@
           }
         ],
         "beforeSha256": "458f6aea55489d0de6bf601b7caa8430fca55177eb50c4cf781997e203620624",
-        "afterSha256": "bfe7d9f6633e1347d4155dc2942466a5d37a43672817aec6189a2d94ab738138"
+        "afterSha256": "060e13d33b0fe003855621bd33a31ae63c41659caf2ca62890bc1ede04476da2"
       },
       "score": {
         "before": {
@@ -11049,8 +11282,8 @@
             "theme": "light dark",
             "screenshot": {
               "file": "invoxia-biotracker-2026-375-light.png",
-              "height": 13469,
-              "sha256": "3beff765ee3ec0c1d2bb9b133c027e3dec58590b5598dd11e7558c30336f5f49"
+              "height": 13741,
+              "sha256": "9580729ed93ab5b69584d4f36b37d614a48a0a42db1722f7fadb66a8aa33e93c"
             },
             "gallery": "open-next-close passed",
             "overflow": 0
@@ -11060,8 +11293,8 @@
             "theme": "light dark",
             "screenshot": {
               "file": "invoxia-biotracker-2026-375-dark.png",
-              "height": 13469,
-              "sha256": "c7ec6db76a1dbb7bd33a5ed96ca2454badcc5f35690700ac2570d8c1a73b9f08"
+              "height": 13741,
+              "sha256": "23d21fd8a13a06b9cc69eb3c5c0f527c7b78dbe807964a3e1b5ec36a30e29456"
             },
             "gallery": "open-next-close passed",
             "overflow": 0
@@ -11071,8 +11304,8 @@
             "theme": "light dark",
             "screenshot": {
               "file": "invoxia-biotracker-2026-1600-light.png",
-              "height": 9027,
-              "sha256": "770198cc1131bdc5e0d93b23eb453c0360b52e7b306670d88a1260e684ff51ed"
+              "height": 9150,
+              "sha256": "ea23dabc0e51f1cd06b2afee8bbe730d9cc0ef5f0d7ebdf367b8780ff8f8a8ac"
             },
             "gallery": "open-next-close passed",
             "overflow": 0
@@ -11082,8 +11315,8 @@
             "theme": "light dark",
             "screenshot": {
               "file": "invoxia-biotracker-2026-1600-dark.png",
-              "height": 9027,
-              "sha256": "12da8b231a20187c673a71529a1971bc23140b5bfd671bb8833f91f50c408fb5"
+              "height": 9150,
+              "sha256": "5a4cfe04324a43bdd12b657842c082604410fd73f2f2cdd549a6635b9cc7918f"
             },
             "gallery": "open-next-close passed",
             "overflow": 0
@@ -17676,6 +17909,19 @@
               "reliability": "CHIP dokumentiert beim exakten Mini-Modell rund 144 Stunden aktive Nutzung außerhalb von Homezones und rund 240 Stunden Standby. Das sind unterschiedliche Testbedingungen, keine allgemeine Laufzeitgarantie. Ortung und App werden positiv beschrieben; eine Messung von Herz- oder Atemfrequenz gehört nicht zum Funktionsumfang."
             }
           },
+          "reviewedAlternatives": {
+            "before": null,
+            "after": [
+              {
+                "slug": "tractive-dog-6",
+                "reason": "Alternative für Hunde mit anderer App und zusätzlichen Gesundheitstrends; eigener Mobilfunktarif erforderlich."
+              },
+              {
+                "slug": "weenect-xs",
+                "reason": "Kompakte Ortungsalternative für passende kleine Hunde oder Katzen; Befestigung, Halsband und Tarif getrennt prüfen."
+              }
+            ]
+          },
           "updatedAt": {
             "before": "2026-07-23",
             "after": "2026-11-16"
@@ -17688,7 +17934,7 @@
           }
         ],
         "beforeSha256": "0431040a869a76c32af3db0daa6806501c152c7dcff0c117269a3d8796ce378e",
-        "afterSha256": "a20364bdbf421548b409ecd473d577cf4912354353ad3f998c7ee826a814b3d0"
+        "afterSha256": "f4ebdbcdade5f05e8b2906bf037936c682476af9d6376f0009e7f5ab03063f80"
       },
       "score": {
         "before": {
@@ -42110,7 +42356,7 @@
       "url": "/produkt/weenect-xs/",
       "scope": "active",
       "published": true,
-      "result": "NO VERIFIED FACTUAL CHANGE",
+      "result": "UPDATE RECOMMENDED — IMPLEMENTED",
       "researchResult": "Hersteller und weitere ältere Praxistests wiedergefunden. Aktuelle XS/XT-Befestigungs- und Laufzeitgrenzen nicht vermischt; Einzelberichte zur Ortung reichen nicht für einen neuen Bewertungsmaßstab.",
       "research": {
         "checkedAt": "2026-11-16",
@@ -42347,7 +42593,30 @@
         "after": "complete"
       },
       "newlyIntegratedSources": [],
-      "actualChanges": null,
+      "actualChanges": {
+        "fields": {
+          "reviewedAlternatives": {
+            "before": null,
+            "after": [
+              {
+                "slug": "tractive-cat-6-mini",
+                "reason": "Katzenalternative mit integriertem Sicherheitshalsband für Tiere von 3 bis 8 kg; nicht für Hunde übernehmen."
+              },
+              {
+                "slug": "tractive-dog-6",
+                "reason": "Alternative für Hunde mit eigener Tractive-App und Pflichtabo; Bauform und Befestigung am eigenen Tier prüfen."
+              }
+            ]
+          },
+          "updatedAt": {
+            "before": "2026-08-19",
+            "after": "2026-11-16"
+          }
+        },
+        "statements": [],
+        "beforeSha256": "2f025813ab7941d2ae6c343dfd350e207f01eba7737c7c176f89b2000895fc0e",
+        "afterSha256": "b90de15bc7b5a2bc259b1823e91d9a976fbf2af5cd86757f0312339c56210a18"
+      },
       "score": {
         "before": {
           "score": 92,
@@ -42388,13 +42657,76 @@
         "actuallyUpdatedPages": [],
         "guidesUpdated": []
       },
-      "updatedAt": "2026-08-19",
+      "updatedAt": "2026-11-16",
       "pending": [],
       "openUncertainties": [
         "Mindestens eine Originalquelle ist direkt zugriffsbeschränkt oder nicht erreichbar; HTTP-Fehler sind kein Nachweis eines Produktendes.",
         "Die zusätzliche Nutzersuche lieferte keine hinreichend zuordenbaren Treffer. Das beweist weder Fehlerfreiheit noch das Fehlen von Nutzererfahrungen."
       ],
-      "validation": null
+      "validation": {
+        "rendered": true,
+        "canonicalStable": true,
+        "commerceFieldsStable": true,
+        "priceCtas": [
+          {
+            "slug": "weenect-xs",
+            "url": "https://amzn.to/4fCeKkD",
+            "expectedAsin": null,
+            "checkedAt": "2026-11-16T12:28:19.443Z",
+            "status": 200,
+            "finalUrl": "https://www.amazon.de/Weenect-f%C3%BCr-Katzen-GPS-Tracking-Distanzlimit-Schwarz/dp/B0CHMZCYZC?th=1&linkCode=sl2&tag=yusha0f-21&linkId=cabaaf789aad1fe6de2e8c6b77945029&ref_=as_li_ss_tl",
+            "title": "Weenect Cat XS - Mini-GPS-Halsband für Katzen | Abonnement erforderlich | Kleinster auf dem Markt • Eine Position pro Sekunde • Ohne Entfernungslimit • Rückruftraining • Sicherheitshalsband inkl.: Amazon.de: Haustier",
+            "result": "reachable",
+            "identity": "URL-/Variantenprüfung und frühere Modellbelege separat; HTTP 200 allein bestätigt kein Modell und keine Lieferbarkeit."
+          }
+        ],
+        "browserCases": [
+          {
+            "width": 375,
+            "theme": "light dark",
+            "screenshot": {
+              "file": "weenect-xs-375-light.png",
+              "height": 14440,
+              "sha256": "ee825b25a925f176dc001a8fd0815b13b5fd6c180715155499826b82c5e9bf1d"
+            },
+            "gallery": "open-next-close passed",
+            "overflow": 0
+          },
+          {
+            "width": 375,
+            "theme": "light dark",
+            "screenshot": {
+              "file": "weenect-xs-375-dark.png",
+              "height": 14440,
+              "sha256": "64468981d0740fe00f236fb9d6ec9e73ccf7defc7be8b807f15c3b6378dd19e7"
+            },
+            "gallery": "open-next-close passed",
+            "overflow": 0
+          },
+          {
+            "width": 1600,
+            "theme": "light dark",
+            "screenshot": {
+              "file": "weenect-xs-1600-light.png",
+              "height": 9649,
+              "sha256": "7db1e49fc794cac93a230f1998e43d5ae734f86a6cec584f3ea1e5cb089ab56a"
+            },
+            "gallery": "open-next-close passed",
+            "overflow": 0
+          },
+          {
+            "width": 1600,
+            "theme": "light dark",
+            "screenshot": {
+              "file": "weenect-xs-1600-dark.png",
+              "height": 9649,
+              "sha256": "bf0a41ef43cb759326fbe5c42118d99a169626fcd026db6d6615441acb7f134b"
+            },
+            "gallery": "open-next-close passed",
+            "overflow": 0
+          }
+        ]
+      }
     },
     {
       "slug": "weenect-xt",
@@ -42402,7 +42734,7 @@
       "url": "/produkt/weenect-xt/",
       "scope": "active",
       "published": true,
-      "result": "NO VERIFIED FACTUAL CHANGE",
+      "result": "UPDATE RECOMMENDED — IMPLEMENTED",
       "researchResult": "Vorhandene CHIP-/Dogorama-Tests und zusätzliche ältere Praxistests gefunden. Kein bestätigter neuer Funktionsstand mit Bewertungswirkung; Maximalakku und aktives Live-Tracking weiter getrennt.",
       "research": {
         "checkedAt": "2026-11-16",
@@ -42664,7 +42996,30 @@
         "after": "complete"
       },
       "newlyIntegratedSources": [],
-      "actualChanges": null,
+      "actualChanges": {
+        "fields": {
+          "reviewedAlternatives": {
+            "before": null,
+            "after": [
+              {
+                "slug": "tractive-dog-6-xl",
+                "reason": "Alternative für große Hunde ab 20 kg mit hoher Akkureserve; größeres Gehäuse und Passform beachten."
+              },
+              {
+                "slug": "paj-pet-finder-4g-mini",
+                "reason": "Kompaktere Ortungslösung ohne Vitalwertmessung; Homezones und Tarifmodell getrennt vergleichen."
+              }
+            ]
+          },
+          "updatedAt": {
+            "before": "2026-07-26",
+            "after": "2026-11-16"
+          }
+        },
+        "statements": [],
+        "beforeSha256": "0a58d5924a279a8b9eeebd2c4c74beff326c1eef041dff15f0cb429d5f3b1ff8",
+        "afterSha256": "cc2e78052547ce65fb51a41622b3ef6dde84b292c642221a1d6b018f7c8ef8b8"
+      },
       "score": {
         "before": {
           "score": 90,
@@ -42703,13 +43058,76 @@
         "actuallyUpdatedPages": [],
         "guidesUpdated": []
       },
-      "updatedAt": "2026-07-26",
+      "updatedAt": "2026-11-16",
       "pending": [],
       "openUncertainties": [
         "Mindestens eine Originalquelle ist direkt zugriffsbeschränkt oder nicht erreichbar; HTTP-Fehler sind kein Nachweis eines Produktendes.",
         "Die zusätzliche Nutzersuche lieferte keine hinreichend zuordenbaren Treffer. Das beweist weder Fehlerfreiheit noch das Fehlen von Nutzererfahrungen."
       ],
-      "validation": null
+      "validation": {
+        "rendered": true,
+        "canonicalStable": true,
+        "commerceFieldsStable": true,
+        "priceCtas": [
+          {
+            "slug": "weenect-xt",
+            "url": "https://amzn.to/4x1VEey",
+            "expectedAsin": null,
+            "checkedAt": "2026-11-16T12:28:19.443Z",
+            "status": 200,
+            "finalUrl": "https://www.amazon.de/Weenect-Hund-GPS-Tracker-Wasserdicht-Erforderlich-Ohne-Halsband/dp/B0G7KPLBLB?crid=3I37X3OKJJO8U&dib=eyJ2IjoiMSJ9.IMxrqAz8dEOuzNQAHqfzk1JQLZHZCs4m9eq4EGVJPP-jMrO-B5LQK6lx0jeupDVpxQgxi6vDKk3SXK1KGa1VDXAW15KAqVWGYSezIeTt9FjKSqT9qNvarLBLnF47PlYMvhvTX4gQJvJDYQUyO0x2dbqJNASpjQCU7Ye9lsxqxXJ_i-s1hyXKh-mX0wOrDvs4.En2FPpNTP89zbHy8hj-0Cz8v92QeiZ9Cc7E1GxmOy_A&dib_tag=se&keywords=weenect%2Bcats%2B2&qid=1785042887&sprefix=weenect%2Bca,aps,124&sr=8-8&th=1&linkCode=sl2&tag=yusha0f-21&linkId=1ff10dfb460964c3006900221507e794&ref_=as_li_ss_tl",
+            "title": "Weenect Dog XT - GPS-Tracker für Hunde | Abonnement erforderlich | Eine Position pro Sekunde • XL-Antenne • 3 Wochen Akkulaufzeit • Weglauf-Alarm &lt; 1 Min. • Wasserdicht • Taschenlampe: Amazon.de: Elektronik &amp; Foto",
+            "result": "reachable",
+            "identity": "URL-/Variantenprüfung und frühere Modellbelege separat; HTTP 200 allein bestätigt kein Modell und keine Lieferbarkeit."
+          }
+        ],
+        "browserCases": [
+          {
+            "width": 375,
+            "theme": "light dark",
+            "screenshot": {
+              "file": "weenect-xt-375-light.png",
+              "height": 14206,
+              "sha256": "97e3987096ce5929e7872a6d8cf61dc3564c9ba832370d6820e0d3b199e4f501"
+            },
+            "gallery": "open-next-close passed",
+            "overflow": 0
+          },
+          {
+            "width": 375,
+            "theme": "light dark",
+            "screenshot": {
+              "file": "weenect-xt-375-dark.png",
+              "height": 14206,
+              "sha256": "396fb7b62794d17cf01a62f048c3a220d8889dba8c2ee3774c86fdeb0c8e3e9b"
+            },
+            "gallery": "open-next-close passed",
+            "overflow": 0
+          },
+          {
+            "width": 1600,
+            "theme": "light dark",
+            "screenshot": {
+              "file": "weenect-xt-1600-light.png",
+              "height": 9335,
+              "sha256": "ed832400b1c8c56325ca72f43932333b4a7aef6532c05f08588ef978d874c203"
+            },
+            "gallery": "open-next-close passed",
+            "overflow": 0
+          },
+          {
+            "width": 1600,
+            "theme": "light dark",
+            "screenshot": {
+              "file": "weenect-xt-1600-dark.png",
+              "height": 9335,
+              "sha256": "1209ff958491e2729918c0d48b70e63d94d53a6cf78e4de75ae49ad0cb597636"
+            },
+            "gallery": "open-next-close passed",
+            "overflow": 0
+          }
+        ]
+      }
     },
     {
       "slug": "wopet-cube-air-ca10",
@@ -44453,9 +44871,12 @@
     "node scripts/product-freshness/apply.mjs",
     "node scripts/product-freshness/pages.mjs",
     "npm run build",
+    "node scripts/product-experience/audit-decision-facts.mjs",
+    "node scripts/product-integration/verify.mjs",
+    "node scripts/product-integration/report.mjs",
     "npm run test:product-integration",
-    "node --test test/product-freshness-36.0.test.mjs",
+    "npm run test:product-freshness",
     "node scripts/product-freshness/report.mjs --check",
-    "Für frische Netzbelege: node scripts/product-freshness/capture.mjs --refresh; node scripts/product-freshness/check-links.mjs. Anschließend erneute redaktionelle Bewertung; Netzantworten werden nie automatisch veröffentlicht."
+    "Für frische Netzbelege: node scripts/product-freshness/capture.mjs --refresh; node scripts/product-freshness/check-links.mjs --refresh. Anschließend erneute redaktionelle Bewertung; Netzantworten werden nie automatisch veröffentlicht."
   ]
 }

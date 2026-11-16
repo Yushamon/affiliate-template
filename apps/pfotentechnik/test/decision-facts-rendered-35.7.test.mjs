@@ -37,7 +37,7 @@ test('alle 73 echten Produktseiten veröffentlichen ohne Freigabe ausschließlic
     const data = products.get(original.slug).data;
     const base = buildDecisionFacts({ ...data, decisionFacts: [] }, data.specs);
     const compatibility = buildLitterCompatibilityModel(data.litterCompatibility);
-    const expected = compatibility ? [...base.slice(0, 5), compatibility.decisionFact] : base;
+    const expected = base; // 35.9: Streu wird zentral priorisiert und dedupliziert.
     const html = fs.readFileSync(new URL(`../dist/produkt/${original.slug}/index.html`, import.meta.url), 'utf8');
     const section = [...walk(parseHtml(html))].find(node => node.tagName === 'section' && node.attrs.some(attr => attr.name === 'class' && attr.value.split(' ').includes('decision-facts')));
     if (!expected.length) { assert.equal(section, undefined, original.slug); continue; }

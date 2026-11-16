@@ -1,3 +1,4 @@
+import {decisionQualitySummary} from '../../domain/productExperience/decisionQuality.mjs';
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { extractOfferFromHtml } from "./extract-offer.mjs";
@@ -38,7 +39,7 @@ const editorialFields = data => ({ ratings: data.ratings, rating: data.rating, s
 export async function readProductEditorial(slug, { find = findDocument } = {}) {
   const document = await find(validateSlug(slug));
   const { createHash } = await import('node:crypto');
-  return { sourceHash: createHash('sha256').update(document.source).digest('hex'), editorial: editorialFields(document.data) };
+  return { decisionQuality: decisionQualitySummary(document.data), sourceHash: createHash('sha256').update(document.source).digest('hex'), editorial: editorialFields(document.data) };
 }
 
 export async function saveProductEditorial(input, { find = findDocument } = {}) {
@@ -46,7 +47,7 @@ export async function saveProductEditorial(input, { find = findDocument } = {}) 
   const saved = await updateProductEditorial(document.file, input.patch, input.expectedHash);
   const { createHash } = await import('node:crypto');
   return { ...resultFromDocument(saved), sourceHash: createHash('sha256').update(saved.source).digest('hex'),
-    editorial: editorialFields(saved.data) };
+    decisionQuality: decisionQualitySummary(saved.data), editorial: editorialFields(saved.data) };
 }
 
 const hostnameLabel = (url) => {

@@ -1,0 +1,25 @@
+{
+  "build": {
+    "pages": 390,
+    "result": "passed",
+    "log": "/tmp/pt359-build-final.log"
+  },
+  "tests": {
+    "passed": 177,
+    "failed": 0,
+    "suites": {
+      "productIntegration": 145,
+      "productFreshness": 9,
+      "productOperations": 11,
+      "decisionConsequences": 12
+    }
+  },
+  "browserCases": 32,
+  "browserReport": "reports/decision-consequences-35.9-qa/browser.json",
+  "productFileHashesUnchanged": 110,
+  "protectedPages": 20,
+  "protectedIncomingEdges": 205,
+  "diff": "git diff --check 7f017989 bestanden; Produktdatei-Hashes und gezielter Code-Diff kontrolliert",
+  "merge": false,
+  "deployment": false
+}

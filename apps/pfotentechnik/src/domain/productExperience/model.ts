@@ -590,9 +590,7 @@ export const buildProductExperienceModel = ({
     .map((item) => ({ label: text(item?.label), value: text(item?.value) }))
     .filter((item) => item.label && item.value));
   const litterCompatibility = buildLitterCompatibilityModel(data.litterCompatibility);
-  const decisionFacts = litterCompatibility
-    ? [...baseDecisionFacts.slice(0, 5), litterCompatibility.decisionFact]
-    : baseDecisionFacts;
+  const decisionFacts = baseDecisionFacts;
 
   const purchaseMistakes = list<any>(data.purchaseMistakes)
     .map((item) => {

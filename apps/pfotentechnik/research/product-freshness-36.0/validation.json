@@ -1,0 +1,21 @@
+{
+  "phase": "36.0-before-35.9",
+  "build": {
+    "pages": 390,
+    "log": "/tmp/pt360-build-final.log",
+    "result": "passed"
+  },
+  "tests": {
+    "passed": 154,
+    "failed": 0,
+    "suites": {
+      "productIntegration": 145,
+      "productFreshness": 9
+    }
+  },
+  "browserCases": 52,
+  "protectedPages": 20,
+  "protectedIncomingEdges": 205,
+  "merge": false,
+  "deployment": false
+}

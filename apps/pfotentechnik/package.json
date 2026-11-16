@@ -235,7 +235,10 @@
     "test:product-integration": "node --test test/product-integration-35.8.test.mjs test/product-integration-rendered-35.8.test.mjs test/product-consequences-35.6.test.mjs test/product-consequences-rendered-35.6.test.mjs test/decision-facts-35.7.test.mjs test/decision-facts-rendered-35.7.test.mjs test/price-intelligence.test.mjs test/price-availability-integrity.test.mjs test/multi-merchant-commerce.test.mjs test/seo-cockpit-generic-product-operations-30.1.0.test.mjs test/seo-price-editor-stability-1.0.0.test.mjs test/product-experience-2.test.mjs test/product-integration-35.8.1.test.mjs",
     "test:product-freshness": "node --test test/product-freshness-36.0.test.mjs",
     "report:product-freshness": "node scripts/product-freshness/report.mjs",
-    "check:product-freshness": "node scripts/product-freshness/report.mjs --check"
+    "check:product-freshness": "node scripts/product-freshness/report.mjs --check",
+    "report:decision-consequences": "node scripts/decision-consequences/report.mjs",
+    "check:decision-consequences": "node scripts/decision-consequences/report.mjs --check",
+    "test:decision-consequences": "node --test test/decision-consequences-35.9.test.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

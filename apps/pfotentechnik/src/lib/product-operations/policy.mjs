@@ -1,3 +1,4 @@
+import {decisionQualitySummary} from '../../domain/productExperience/decisionQuality.mjs';
 import { resolveCommerceOffers, commerceDiagnostics } from '../../domain/commerceOffers.mjs';
 
 export const AVAILABILITY_VALUES = Object.freeze([
@@ -288,6 +289,7 @@ export function deriveProductOperations(data, options = {}) {
 
   return {
     ...commerceDiagnostics(offers),
+    decisionQuality: decisionQualitySummary(data),
     current,
     currency: /^[A-Z]{3}$/.test(String(data?.price?.currency || "EUR")) ? String(data?.price?.currency || "EUR") : "EUR",
     formattedPrice: formatPrice(current, data?.price?.currency || "EUR"),
@@ -364,6 +366,7 @@ export function buildOperationsDashboard(rows) {
 
   return {
     products: total,
+    decisionQualityIssues: count(row => row.operations?.decisionQuality?.insufficientEvidence || row.operations?.decisionQuality?.uncertainValues > 0),
     missingPrice: count((row) => !row.operations?.priceAvailable && !row.operations?.editorialPriceControl && !row.operations?.consciouslyUnavailable && !row.operations?.archived),
     missingAffiliate: count((row) => !row.operations?.affiliateAvailable && !row.operations?.consciouslyUnavailable && !row.operations?.archived),
     unknownAvailability: count((row) => row.operations?.availability === "unknown"),

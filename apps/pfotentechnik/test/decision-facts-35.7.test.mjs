@@ -14,7 +14,7 @@ import { reviewProductDecisionFacts } from '../scripts/product-experience/decisi
 
 const fact = { label: 'Akku', value: 'Nein', consequence: 'Plane für die Nutzung einen Netzanschluss ein.' };
 const data = { slug: 'fixture', category: 'Trinkbrunnen', decisionFacts: [fact] };
-const specs = [{ label: 'Akku', value: 'Nein' }, { label: 'Gewicht', value: '1 kg' }];
+const specs = [{ label: 'Akku', value: 'Nein' }, { label: 'Kapazität', value: '2 Liter' }];
 const approve = (item = fact, slug = 'fixture') => [{ slug, fingerprint: decisionFactFingerprint(item), reviewedAt: '2026-11-16T12:00:00+01:00', reviewReference: 'Synthetic test approval only' }];
 
 test('Schema validiert vollständige Originaltexte ohne Änderungen', () => {
@@ -34,14 +34,14 @@ test('keine globale Freigabe oder Wildcard und keine vorhandene Freigabe', () =>
 test('ungeprüfte Frontmatter-Hinweise bleiben gesperrt und verwenden 35.6-Fallback', () => {
   const actual = buildDecisionFacts({ ...data, decisionFactsApproved: true }, specs);
   assert.ok(actual.every(item => item.source === 'technical-specification'));
-  assert.match(actual[0].consequence, /^Kein integrierter Akku/);
+  assert.match(actual.find(item => item.label === 'Akku').consequence, /^Kein integrierter Akku/);
   assert.equal(buildDecisionFacts(data, []).length, 0);
 });
 
 test('einzeln freigegebener Originaltext hat Vorrang, weitere Merkmale nutzen Fallback', () => {
   const result = buildDecisionFacts(data, specs, approve());
   assert.deepEqual(result[0], { ...fact, source: 'editorial' });
-  assert.equal(result[1].label, 'Gewicht');
+  assert.equal(result[1].label, 'Kapazität');
   assert.equal(result[1].source, 'technical-specification');
   assert.equal(result.filter(item => item.label === 'Akku').length, 1);
 });
@@ -54,7 +54,7 @@ test('Freigabe gilt nur für genaues Produkt und genaues Texttripel', () => {
 
 test('Teilfreigabe veröffentlicht keine Nachbareinträge und begrenzt Ausgabe auf sechs', () => {
   const extra = { label: 'App', value: 'Ja', consequence: 'Ungeprüfter Nachbartext.' };
-  const result = buildDecisionFacts({ ...data, decisionFacts: [fact, extra] }, [...specs, ...Array.from({ length: 10 }, (_, i) => ({ label: `Gewicht ${i}`, value: '1 kg' }))], approve());
+  const result = buildDecisionFacts({ ...data, decisionFacts: [fact, extra] }, [...specs, ...['Filter','Reinigung','App','Geeignet für','Lautstärke','Abmessungen'].map((label,i) => ({label,value:['Aktivkohle','Tank spülmaschinenfest','Hersteller-App','Katzen','25 dB','20 × 20 × 20 cm'][i]}))], approve());
   assert.equal(result.length, 6);
   assert.equal(result.filter(item => item.source === 'editorial').length, 1);
   assert.ok(result.every(item => item.consequence !== extra.consequence));
@@ -120,7 +120,7 @@ test('Astro rendert geprüfte Hinweise vollständig, sperrt ungeprüfte und esca
   const html = await container.renderToString(Component, { props: { facts: buildDecisionFacts(data, specs, approve()) } });
   assert.match(html, /Was die wichtigsten Daten bedeuten/);
   assert.ok(html.includes(fact.consequence));
-  assert.match(html, /Gewicht/);
+  assert.match(html, /Kapazität/);
   const unreviewed = await container.renderToString(Component, { props: { facts: buildDecisionFacts(data, specs) } });
   assert.ok(!unreviewed.includes(fact.consequence));
   assert.match(unreviewed, /Kein integrierter Akku/);

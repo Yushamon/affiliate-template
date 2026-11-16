@@ -5,6 +5,7 @@ export type EditorialStatus = "complete" | "recommended" | "required" | "archive
 export type MaintenanceStatus = "complete" | "recommended" | "required" | "archived";
 
 export type ProductOperations = {
+  decisionQuality: {version: string; protected: boolean; generated: number; unreviewedOriginals: number; originalFindings: number; uncertainValues: number; removedDuplicateTopics: number; insufficientEvidence: boolean};
   current: number | null;
   currency: string;
   formattedPrice: string | null;

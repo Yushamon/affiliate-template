@@ -165,29 +165,29 @@ Die Integration legt nur fehlende Kandidatendateien an; bestehende redaktionelle
 ### tractive-cat-6-mini
 
 - **Akkutechnik und Austausch / Akkukapazität / Akkulaufzeit Integrierter, wiederaufladbarer Akku; Zellchemie und Austausch durch Nutzer in den geprüften modellspezifischen Herstellerangaben nicht eindeutig dokumentiert · 450 mAh · Bis zu 7 Tage mit Energiesparzone; bis zu 4 Tage ohne Energiesparzone**: Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert.
-- **Abo Erforderlich; ein Abo pro Tracker**: Für den realen Preisvergleich zählen die Gesamtkosten über mehrere Jahre, nicht nur der Gerätepreis.
-- **App Tractive GPS App; Android 10 oder neuer, iOS 17 oder neuer**: Einstellungen lassen sich aus der Ferne ändern; Einrichtung, Konto und Netzstabilität werden dafür wichtiger.
-- **Stromversorgung Integrierter Akku**: Die Angabe zeigt, ob das Gerät am Netz, kabellos oder nur mit einer Backup-Lösung arbeitet und was bei Stromausfall weiterläuft.
-- **Wasserschutz IP68**: Die Schutzklasse ist besonders bei Regen, Reinigung und dauerhaftem Außeneinsatz relevant.
-- **Abmessungen 95 × 20 × 13 mm**: Die Maße sollten nicht nur zum Stellplatz, sondern auch zur Körpergröße und Nutzung des Tieres passen.
+- **Abo Erforderlich; ein Abo pro Tracker**: Vergleiche Vertragslaufzeit, enthaltenen Zeitraum und Verlängerungskosten zusammen mit dem Gerätepreis; ein enthaltenes Paketjahr darf nicht zusätzlich berechnet werden.
+- **Geeignet für Katzen von 3 bis 8 kg**: Gleiche die angegebenen Tier- und Halsbandgrenzen mit deinem Tier ab; eine Freigabe für Hunde lässt sich nicht auf Katzen oder leichtere Tiere übertragen.
+- **Übertragung LTE/4G (Cat 1 bis)**: Prüfe vor dem Kauf die unterstützten Netze und Länder für deinen Einsatzort. Satellitenortung allein garantiert noch keine Übertragung des Standorts an dich.
+- **Ortung GPS, GLONASS und Galileo**: Vergleiche die hier genannten Ortungsmodi und Aktualisierungsintervalle mit deinem Suchszenario. Eine Standortanzeige belegt keine zuverlässig rechtzeitige Ausbruchswarnung.
+- **Gewicht 32 g inklusive Halsband**: Beim Tier zählt das Gesamtgewicht aus Gerät, Halterung und Halsband, nicht nur das Trackergewicht.
 
 ### tractive-dog-6
 
 - **Akkutechnik und Austausch / Akkulaufzeit / Akku Integrierter, wiederaufladbarer Akku; Zellchemie und Austausch durch Nutzer in den geprüften modellspezifischen Herstellerangaben nicht eindeutig dokumentiert · Laut Tractive bis zu 14 Tage mit Energiesparzonen; bis zu 6 Tage ohne · Integrierter Akku, laut Support 930 mAh**: Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert.
-- **Abo Erforderlich; ein eigenes Abo pro Tracker**: Für den realen Preisvergleich zählen die Gesamtkosten über mehrere Jahre, nicht nur der Gerätepreis.
-- **App Tractive GPS App; Android 10 oder neuer, iOS/iPadOS 17 oder neuer**: Einstellungen lassen sich aus der Ferne ändern; Einrichtung, Konto und Netzstabilität werden dafür wichtiger.
-- **Stromversorgung Integrierter Akku; Laden über das mitgelieferte USB-C-Ladekabel**: Die Angabe zeigt, ob das Gerät am Netz, kabellos oder nur mit einer Backup-Lösung arbeitet und was bei Stromausfall weiterläuft.
-- **Wasserschutz IP68**: Die Schutzklasse ist besonders bei Regen, Reinigung und dauerhaftem Außeneinsatz relevant.
-- **Abmessungen 71 × 29 × 17 mm**: Die Maße sollten nicht nur zum Stellplatz, sondern auch zur Körpergröße und Nutzung des Tieres passen.
+- **Abo Erforderlich; ein eigenes Abo pro Tracker**: Vergleiche Vertragslaufzeit, enthaltenen Zeitraum und Verlängerungskosten zusammen mit dem Gerätepreis; ein enthaltenes Paketjahr darf nicht zusätzlich berechnet werden.
+- **Geeignet für Hunde ab 4 kg**: Gleiche die angegebenen Tier- und Halsbandgrenzen mit deinem Tier ab; eine Freigabe für Hunde lässt sich nicht auf Katzen oder leichtere Tiere übertragen.
+- **Übertragung LTE/4G (Cat 1 bis)**: Prüfe vor dem Kauf die unterstützten Netze und Länder für deinen Einsatzort. Satellitenortung allein garantiert noch keine Übertragung des Standorts an dich.
+- **Ortung GPS, GLONASS und Galileo**: Vergleiche die hier genannten Ortungsmodi und Aktualisierungsintervalle mit deinem Suchszenario. Eine Standortanzeige belegt keine zuverlässig rechtzeitige Ausbruchswarnung.
+- **Gewicht Rund 39 g**: Beim Tier zählt das Gesamtgewicht aus Gerät, Halterung und Halsband, nicht nur das Trackergewicht.
 
 ### tractive-dog-6-xl
 
 - **Akkukapazität / Akkutechnik und Austausch / Akkulaufzeit 2150 mAh laut Tractive · Integrierter, wiederaufladbarer Akku; Zellchemie und Austausch durch Nutzer in den geprüften modellspezifischen Herstellerangaben nicht eindeutig dokumentiert · Bis zu 42 Tage mit Energiesparzonen; bis zu 20 Tage ohne**: Die reale Akkulaufzeit hängt besonders von Live-Ortung, Empfang, Aktivität und Energiesparfunktionen ab. Hersteller-Maximalwerte sind deshalb kein typischer Dauerwert.
-- **Abo Erforderlich; ein eigenes Abo pro Tracker**: Für den realen Preisvergleich zählen die Gesamtkosten über mehrere Jahre, nicht nur der Gerätepreis.
-- **App Tractive GPS App; Android 10 oder neuer, iOS/iPadOS 17 oder neuer**: Einstellungen lassen sich aus der Ferne ändern; Einrichtung, Konto und Netzstabilität werden dafür wichtiger.
-- **Stromversorgung Integrierter Akku; Laden über das mitgelieferte USB-C-Ladekabel**: Die Angabe zeigt, ob das Gerät am Netz, kabellos oder nur mit einer Backup-Lösung arbeitet und was bei Stromausfall weiterläuft.
-- **Wasserschutz IP68**: Die Schutzklasse ist besonders bei Regen, Reinigung und dauerhaftem Außeneinsatz relevant.
-- **Abmessungen 83 × 47 × 20 mm**: Die Maße sollten nicht nur zum Stellplatz, sondern auch zur Körpergröße und Nutzung des Tieres passen.
+- **Abo Erforderlich; ein eigenes Abo pro Tracker**: Vergleiche Vertragslaufzeit, enthaltenen Zeitraum und Verlängerungskosten zusammen mit dem Gerätepreis; ein enthaltenes Paketjahr darf nicht zusätzlich berechnet werden.
+- **Geeignet für Hunde ab 20 kg**: Gleiche die angegebenen Tier- und Halsbandgrenzen mit deinem Tier ab; eine Freigabe für Hunde lässt sich nicht auf Katzen oder leichtere Tiere übertragen.
+- **Übertragung LTE/4G (Cat 1 bis)**: Prüfe vor dem Kauf die unterstützten Netze und Länder für deinen Einsatzort. Satellitenortung allein garantiert noch keine Übertragung des Standorts an dich.
+- **Ortung GPS, GLONASS und Galileo**: Vergleiche die hier genannten Ortungsmodi und Aktualisierungsintervalle mit deinem Suchszenario. Eine Standortanzeige belegt keine zuverlässig rechtzeitige Ausbruchswarnung.
+- **Gewicht Rund 70 g**: Beim Tier zählt das Gesamtgewicht aus Gerät, Halterung und Halsband, nicht nur das Trackergewicht.
 
 ## Granary 2 X
 

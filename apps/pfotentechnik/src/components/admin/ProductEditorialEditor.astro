@@ -1,12 +1,15 @@
 ---
+import {decisionQualitySummary} from "../../domain/productExperience/decisionQuality.mjs";
 interface Props { slug: string; sourceHash: string; data: any; }
 const { slug, sourceHash, data } = Astro.props;
+const quality = decisionQualitySummary(data);
 const config = JSON.stringify({ slug, sourceHash, serviceUrl: import.meta.env.PUBLIC_SEARCH_ADMIN_URL || 'http://127.0.0.1:4178' }).replaceAll('<', '\\u003c');
 const date = data.updatedAt ? new Date(data.updatedAt).toISOString().slice(0, 10) : '';
 ---
 <section class="seo-panel" data-editorial-editor>
   <h2>Redaktionelle Produktpflege</h2>
   <p>Kriterien, Quellen und Prüfstand pflegen. Die Gesamtbewertung folgt dem vorhandenen Kriterienmittel; Preise werden separat in der Produktpflege verwaltet.</p>
+  <p data-decision-quality>Entscheidungshinweise: {quality.generated} ausgewählt; {quality.uncertainValues} unklare Werte ausgelassen; {quality.unreviewedOriginals} Originalhinweise ohne Freigabe.{quality.protected ? " Experiment 35.5: bisherige Ausgabe bleibt geschützt." : ""}</p>
   <form class="seo-stack" data-editorial-form>
     <label>Teilbewertungen als JSON<textarea name="ratings" rows="7" required>{JSON.stringify(data.ratings ?? {}, null, 2)}</textarea></label>
     <label>Bewertungsgrundlage<textarea name="methodology" rows="5" required>{data.experience?.methodology ?? data.externalEvidence?.consensus?.editorialAssessment ?? ''}</textarea></label>
@@ -24,12 +27,17 @@ const date = data.updatedAt ? new Date(data.updatedAt).toISOString().slice(0, 10
     const config = JSON.parse(root.querySelector('[data-editorial-config]')!.textContent!);
     const form = root.querySelector<HTMLFormElement>('form')!;
     const status = root.querySelector<HTMLElement>('[data-editorial-result]')!;
+    const showQuality = (quality: any) => {
+      const target = root.querySelector<HTMLElement>('[data-decision-quality]');
+      if (target && quality) target.textContent = `Entscheidungshinweise: ${quality.generated} ausgewählt; ${quality.uncertainValues} unklare Werte ausgelassen; ${quality.unreviewedOriginals} Originalhinweise ohne Freigabe.${quality.protected ? ' Experiment 35.5: bisherige Ausgabe bleibt geschützt.' : ''}`;
+    };
     let dirty = false;
     form.addEventListener('input', () => { dirty = true; });
     // Read live values from the existing local service, rather than trusting a static build's hash.
     fetch(`${config.serviceUrl}/api/admin/products/editorial?slug=${encodeURIComponent(config.slug)}`)
       .then(async response => { if (!response.ok) throw new Error('Pflegeservice nicht erreichbar.'); return response.json(); })
       .then(result => {
+        showQuality(result.decisionQuality);
         if (dirty) return;
         config.sourceHash = result.sourceHash;
         for (const name of ['ratings', 'evidenceSources', 'methodology', 'editorialStatus', 'updatedAt', 'priceAutomation']) {
@@ -51,6 +59,7 @@ const date = data.updatedAt ? new Date(data.updatedAt).toISOString().slice(0, 10
         const result = await response.json();
         if (!response.ok) throw new Error(result.error?.message ?? 'Speichern fehlgeschlagen.');
         config.sourceHash = result.sourceHash;
+        showQuality(result.decisionQuality);
         status.textContent = `Gespeichert. Bewertung: ${result.editorial.score}/100. Die öffentliche statische Ansicht übernimmt die Angaben beim nächsten Build.`;
       } catch (error) { status.textContent = error instanceof Error ? error.message : 'Speichern fehlgeschlagen.'; }
       finally { button.disabled = false; }

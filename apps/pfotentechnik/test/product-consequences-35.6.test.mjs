@@ -42,15 +42,15 @@ for (const label of ['App', 'WLAN', 'Kamera']) {
   }
   for (const value of [`Ohne ${label}`, `${label} nicht vorhanden`]) {
     test(`${label}: tatsächliche Negation (${value})`, () => {
-      assert.match(derive(label, value)[0]?.consequence ?? '', label === 'Kamera' ? /beschränkt/ : /unabhängiger/);
+      assert.match(derive(label, value, 'Futterautomaten')[0]?.consequence ?? '', label === 'Kamera' ? /keine visuelle Kontrolle/ : /nicht zur Verfügung/);
     });
   }
   test(`${label}: vorhandene Funktion trotz fehlender Detailangaben`, () => {
-    assert.match(derive(label, `${label} vorhanden, keine Angaben zur Version`)[0]?.consequence ?? '', label === 'Kamera' ? /kontrollieren/ : /Ferne/);
+    assert.match(derive(label, `${label} vorhanden, keine Angaben zur Version`, 'Futterautomaten')[0]?.consequence ?? '', label === 'Kamera' ? /Bildbereich/ : /App.*Kontovoraussetzungen/);
   });
   test(`${label}: eindeutige Kurzantwort mit zusätzlichen Details`, () => {
-    assert.match(derive(label, 'Ja, weitere Details nicht dokumentiert')[0]?.consequence ?? '', label === 'Kamera' ? /kontrollieren/ : /Ferne/);
-    assert.match(derive(label, 'Nein, weitere Details nicht dokumentiert')[0]?.consequence ?? '', label === 'Kamera' ? /beschränkt/ : /unabhängiger/);
+    assert.match(derive(label, 'Ja, weitere Details nicht dokumentiert', 'Futterautomaten')[0]?.consequence ?? '', label === 'Kamera' ? /Bildbereich/ : /App.*Kontovoraussetzungen/);
+    assert.match(derive(label, 'Nein, weitere Details nicht dokumentiert', 'Futterautomaten')[0]?.consequence ?? '', label === 'Kamera' ? /keine visuelle Kontrolle/ : /nicht zur Verfügung/);
   });
 }
 
@@ -63,7 +63,7 @@ for (const category of ['Trinkbrunnen', 'Futterautomaten']) {
   test(`mAh-Akkukapazität bleibt von Volumenregeln ausgeschlossen: ${category}`, () => {
     const facts = derive('Akkukapazität', '2150 mAh laut Hersteller', category);
     assert.equal(facts.length, 1);
-    assert.match(facts[0].consequence, /Ein Akku ermöglicht Betrieb/);
+    assert.match(facts[0].consequence, /Akkuangabe allein belegt keine Laufzeit/);
     assert.doesNotMatch(facts[0].consequence, /Volumen|Nachfüllen|nachgefüllt|Futterdichte|Portionsgröße/);
     assert.deepEqual(derive('Akkukapazität', 'Keine Angaben', category), []);
   });
