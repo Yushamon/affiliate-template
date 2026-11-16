@@ -547,6 +547,15 @@ decisionFacts:
   - label: "Akkulaufzeit kontinuierliches Tracking"
     value: "aktuelle Detailangabe etwa 1 bis 2 Tage; FAQ nennt teils 1 bis 3 Tage"
     consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+reviewedAlternatives:
+  - slug: tractive-dog-6
+    reason: >-
+      Alternative für Hunde mit anderer App und zusätzlichen Gesundheitstrends; eigener Mobilfunktarif
+      erforderlich.
+  - slug: weenect-xs
+    reason: >-
+      Kompakte Ortungsalternative für passende kleine Hunde oder Katzen; Befestigung, Halsband und Tarif
+      getrennt prüfen.
 ---
 Der PAJ PET Finder 4G Mini ist ein kompakter Mobilfunktracker, der seine Position über eine integrierte SIM an die FINDER-Portal-App und das Webportal überträgt.
 

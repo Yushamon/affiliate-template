@@ -543,6 +543,54 @@
       ]
     },
     {
+      "slug": "garmin-alpha-t-20",
+      "file": "src/content/products/garmin-alpha-t-20.md",
+      "beforeSha256": "f078b29441a5442f22f75373e7da8e7a445e7cbf0565d03509ad56b3019bb673",
+      "afterSha256": "d05199e15855d465f8c0d83984d34236590c305217480b4e03a433e7db4127f4",
+      "reason": "Modellbezogene Recherche und fachlich passende Alternativen ohne unbelegte Kamera- oder Mehrtierversprechen.",
+      "sources": [],
+      "changedFields": {
+        "reviewedAlternatives": {
+          "before": null,
+          "after": [
+            {
+              "slug": "garmin-alpha-tt-25",
+              "reason": "Anderes Garmin-VHF-Modell mit zusätzlicher Ausstattung. Ein kompatibles Handgerät bleibt erforderlich; regionale Ausführung und benötigte Funktionen vor dem Kauf prüfen."
+            }
+          ]
+        },
+        "updatedAt": {
+          "before": "2026-07-23",
+          "after": "2026-11-16"
+        }
+      },
+      "bodyChanges": []
+    },
+    {
+      "slug": "garmin-alpha-tt-25",
+      "file": "src/content/products/garmin-alpha-tt-25.md",
+      "beforeSha256": "ecd78472a2c6199e70b0ac8b749cacc6cecc487e3114b828ce31e606269efe2c",
+      "afterSha256": "315c908d9bab2854a83522b757e4457897e1d8963db265a8cc0606f3592d1675",
+      "reason": "Modellbezogene Recherche und fachlich passende Alternativen ohne unbelegte Kamera- oder Mehrtierversprechen.",
+      "sources": [],
+      "changedFields": {
+        "reviewedAlternatives": {
+          "before": null,
+          "after": [
+            {
+              "slug": "garmin-alpha-t-20",
+              "reason": "Garmin-Alternative für den Schwerpunkt Hundeortung per VHF. Die direkte Übertragung benötigt ein kompatibles Handgerät und keinen Mobilfunktarif."
+            }
+          ]
+        },
+        "updatedAt": {
+          "before": "2026-07-20",
+          "after": "2026-11-16"
+        }
+      },
+      "bodyChanges": []
+    },
+    {
       "slug": "invoxia-biotracker-2026",
       "file": "src/content/products/invoxia-biotracker-2026.md",
       "beforeSha256": "458f6aea55489d0de6bf601b7caa8430fca55177eb50c4cf781997e203620624",
@@ -2664,7 +2712,7 @@
       "slug": "paj-pet-finder-4g-mini",
       "file": "src/content/products/paj-pet-finder-4g-mini.md",
       "beforeSha256": "0431040a869a76c32af3db0daa6806501c152c7dcff0c117269a3d8796ce378e",
-      "afterSha256": "a20364bdbf421548b409ecd473d577cf4912354353ad3f998c7ee826a814b3d0",
+      "afterSha256": "f4ebdbcdade5f05e8b2906bf037936c682476af9d6376f0009e7f5ab03063f80",
       "reason": "Zuverlässige Ortung und übersichtliche App im Test. Keine Vitalwerte; Gummibefestigung bei Bewegung kontrollieren.",
       "sources": [
         {
@@ -2928,6 +2976,19 @@
             "maintenance": "Halterung, Gummibänder, Gehäuse, Ladeanschluss und Dichtflächen regelmäßig prüfen. Tracker nach Salzwasser, Schmutz oder starkem Regen reinigen und trocknen. Vor längeren Ausflügen vollständig laden und Mobilfunkabdeckung sowie Geozaun testen.",
             "reliability": "CHIP dokumentiert beim exakten Mini-Modell rund 144 Stunden aktive Nutzung außerhalb von Homezones und rund 240 Stunden Standby. Das sind unterschiedliche Testbedingungen, keine allgemeine Laufzeitgarantie. Ortung und App werden positiv beschrieben; eine Messung von Herz- oder Atemfrequenz gehört nicht zum Funktionsumfang."
           }
+        },
+        "reviewedAlternatives": {
+          "before": null,
+          "after": [
+            {
+              "slug": "tractive-dog-6",
+              "reason": "Alternative für Hunde mit anderer App und zusätzlichen Gesundheitstrends; eigener Mobilfunktarif erforderlich."
+            },
+            {
+              "slug": "weenect-xs",
+              "reason": "Kompakte Ortungsalternative für passende kleine Hunde oder Katzen; Befestigung, Halsband und Tarif getrennt prüfen."
+            }
+          ]
         },
         "updatedAt": {
           "before": "2026-07-23",
@@ -5565,6 +5626,62 @@
           "after": "Zum DOG 6 XL liegt jetzt zusätzlich ein konkreter CHIP-Test vor: rund 480 Stunden aktive Nutzung gegenüber 1.008 Stunden Standby. Beide Werte bleiben vom Hersteller-Maximalwert und voneinander getrennt. Das große Gehäuse und die Freigabe ab 20 kg bleiben die wesentliche Passformgrenze. [CHIP](https://www.chip.de/test-kaufberatung/hobby-freizeit/tractive-dog-6-xl-im-test_b864806c-217b-40e7-a760-139aade83670.html)"
         }
       ]
+    },
+    {
+      "slug": "weenect-xs",
+      "file": "src/content/products/weenect-xs.md",
+      "beforeSha256": "2f025813ab7941d2ae6c343dfd350e207f01eba7737c7c176f89b2000895fc0e",
+      "afterSha256": "b90de15bc7b5a2bc259b1823e91d9a976fbf2af5cd86757f0312339c56210a18",
+      "reason": "Modellbezogene Recherche und fachlich passende Alternativen ohne unbelegte Kamera- oder Mehrtierversprechen.",
+      "sources": [],
+      "changedFields": {
+        "reviewedAlternatives": {
+          "before": null,
+          "after": [
+            {
+              "slug": "tractive-cat-6-mini",
+              "reason": "Katzenalternative mit integriertem Sicherheitshalsband für Tiere von 3 bis 8 kg; nicht für Hunde übernehmen."
+            },
+            {
+              "slug": "tractive-dog-6",
+              "reason": "Alternative für Hunde mit eigener Tractive-App und Pflichtabo; Bauform und Befestigung am eigenen Tier prüfen."
+            }
+          ]
+        },
+        "updatedAt": {
+          "before": "2026-08-19",
+          "after": "2026-11-16"
+        }
+      },
+      "bodyChanges": []
+    },
+    {
+      "slug": "weenect-xt",
+      "file": "src/content/products/weenect-xt.md",
+      "beforeSha256": "0a58d5924a279a8b9eeebd2c4c74beff326c1eef041dff15f0cb429d5f3b1ff8",
+      "afterSha256": "cc2e78052547ce65fb51a41622b3ef6dde84b292c642221a1d6b018f7c8ef8b8",
+      "reason": "Modellbezogene Recherche und fachlich passende Alternativen ohne unbelegte Kamera- oder Mehrtierversprechen.",
+      "sources": [],
+      "changedFields": {
+        "reviewedAlternatives": {
+          "before": null,
+          "after": [
+            {
+              "slug": "tractive-dog-6-xl",
+              "reason": "Alternative für große Hunde ab 20 kg mit hoher Akkureserve; größeres Gehäuse und Passform beachten."
+            },
+            {
+              "slug": "paj-pet-finder-4g-mini",
+              "reason": "Kompaktere Ortungslösung ohne Vitalwertmessung; Homezones und Tarifmodell getrennt vergleichen."
+            }
+          ]
+        },
+        "updatedAt": {
+          "before": "2026-07-26",
+          "after": "2026-11-16"
+        }
+      },
+      "bodyChanges": []
     },
     {
       "slug": "xiaomi-smart-pet-food-feeder-2",

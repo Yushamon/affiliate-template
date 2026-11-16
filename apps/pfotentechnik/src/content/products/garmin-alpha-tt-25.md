@@ -21,7 +21,7 @@ category:
   path: /gps-tracker/
 productUrl: "/produkt/garmin-alpha-tt-25/"
 publishedAt: "2026-07-20"
-updatedAt: "2026-07-20"
+updatedAt: "2026-11-16"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -316,6 +316,11 @@ decisionFacts:
   - label: "Gewicht"
     value: "Nicht im offiziellen Handbuch ausgewiesen"
     consequence: "Das Gewicht beeinflusst je nach Produkt Tragekomfort, Standfestigkeit oder Handhabung."
+reviewedAlternatives:
+  - slug: garmin-alpha-t-20
+    reason: >-
+      Garmin-Alternative für den Schwerpunkt Hundeortung per VHF. Die direkte Übertragung benötigt ein
+      kompatibles Handgerät und keinen Mobilfunktarif.
 ---
 Das TT 25 ist kein „besseres“ T 20 für jeden Haushalt. Seine Zusatzfunktionen erhöhen Komplexität und Verantwortungsbedarf, ohne die reine Haustierortung grundsätzlich zu verbessern.
 

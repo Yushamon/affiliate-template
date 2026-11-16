@@ -30,7 +30,7 @@ category:
 productUrl: "/produkt/weenect-xs/"
 
 publishedAt: "2026-07-20"
-updatedAt: "2026-08-19"
+updatedAt: "2026-11-16"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion für smarte Haustiertechnik"
@@ -568,6 +568,15 @@ decisionFacts:
   - label: "Akkulaufzeit"
     value: "Bis zu 7 Tage mit WLAN-Energiesparzonen; etwa 2 Tage bei durchgehender Ortung"
     consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+reviewedAlternatives:
+  - slug: tractive-cat-6-mini
+    reason: >-
+      Katzenalternative mit integriertem Sicherheitshalsband für Tiere von 3 bis 8 kg; nicht für Hunde
+      übernehmen.
+  - slug: tractive-dog-6
+    reason: >-
+      Alternative für Hunde mit eigener Tractive-App und Pflichtabo; Bauform und Befestigung am eigenen Tier
+      prüfen.
 ---
 
 Der **Weenect XS** ist ein 27 g leichter GPS-Tracker für Katzen und kleine Hunde ab 3 kg. Anders als ein Bluetooth-Tag überträgt er seine Position über eine integrierte SIM-Karte und ein unterstütztes Mobilfunknetz. Dadurch gibt es keine feste Distanzgrenze zum Smartphone – wohl aber eine Abhängigkeit von Satelliten- und Mobilfunkempfang.

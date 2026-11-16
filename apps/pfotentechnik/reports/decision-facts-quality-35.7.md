@@ -1245,7 +1245,7 @@ Kein Befund durch die begrenzten Regeln; redaktionelle Prüfung weiterhin offen.
 
 Datei: src/content/products/garmin-alpha-t-20.md
 
-SHA-256: f078b29441a5442f22f75373e7da8e7a445e7cbf0565d03509ad56b3019bb673
+SHA-256: d05199e15855d465f8c0d83984d34236590c305217480b4e03a433e7db4127f4
 
 Content-Speicher: preserved-exactly
 
@@ -1382,7 +1382,7 @@ Technische Vergleichsdaten: [{"path":"specs.17.value","value":"1 ATM; widersteht
 
 Datei: src/content/products/garmin-alpha-tt-25.md
 
-SHA-256: ecd78472a2c6199e70b0ac8b749cacc6cecc487e3114b828ce31e606269efe2c
+SHA-256: 315c908d9bab2854a83522b757e4457897e1d8963db265a8cc0606f3592d1675
 
 Content-Speicher: preserved-exactly
 
@@ -2963,7 +2963,7 @@ Technische Vergleichsdaten: [{"path":"specs.12.value","value":"Herstellerangabe 
 
 Datei: src/content/products/paj-pet-finder-4g-mini.md
 
-SHA-256: a20364bdbf421548b409ecd473d577cf4912354353ad3f998c7ee826a814b3d0
+SHA-256: f4ebdbcdade5f05e8b2906bf037936c682476af9d6376f0009e7f5ab03063f80
 
 Content-Speicher: preserved-exactly
 
@@ -8527,7 +8527,7 @@ Technische Vergleichsdaten: [{"path":"specs.15.value","value":"IP68"}]
 
 Datei: src/content/products/weenect-xs.md
 
-SHA-256: 2f025813ab7941d2ae6c343dfd350e207f01eba7737c7c176f89b2000895fc0e
+SHA-256: b90de15bc7b5a2bc259b1823e91d9a976fbf2af5cd86757f0312339c56210a18
 
 Content-Speicher: preserved-exactly
 
@@ -8661,7 +8661,7 @@ Technische Vergleichsdaten: [{"path":"specs.12.value","value":"Bis zu 7 Tage mit
 
 Datei: src/content/products/weenect-xt.md
 
-SHA-256: 0a58d5924a279a8b9eeebd2c4c74beff326c1eef041dff15f0cb429d5f3b1ff8
+SHA-256: cc2e78052547ce65fb51a41622b3ef6dde84b292c642221a1d6b018f7c8ef8b8
 
 Content-Speicher: preserved-exactly
 

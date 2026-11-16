@@ -29,8 +29,7 @@ category:
 productUrl: "/produkt/weenect-xt/"
 
 publishedAt: "2026-07-20"
-updatedAt: "2026-07-26"
-
+updatedAt: "2026-11-16"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion für smarte Haustiertechnik"
@@ -542,6 +541,11 @@ decisionFacts:
   - label: "Akkulaufzeit"
     value: "Bis zu 3 Wochen mit Energiesparzone; ungefähr 1 Woche bei kontinuierlichem Tracking"
     consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+reviewedAlternatives:
+  - slug: tractive-dog-6-xl
+    reason: Alternative für große Hunde ab 20 kg mit hoher Akkureserve; größeres Gehäuse und Passform beachten.
+  - slug: paj-pet-finder-4g-mini
+    reason: Kompaktere Ortungslösung ohne Vitalwertmessung; Homezones und Tarifmodell getrennt vergleichen.
 ---
 
 Der **Weenect XT** ist ein großer, robuster GPS-Tracker für Hunde. Seine Schwerpunkte sind nicht Miniaturisierung, sondern Akkureserve, Empfang, Sichtbarkeit und Befestigung bei längeren Outdoor-Einsätzen.

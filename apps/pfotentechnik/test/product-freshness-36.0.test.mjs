@@ -31,10 +31,10 @@ test('36.0: alle aktiven Modelle haben drei protokollierte Recherchepfade',()=>{
 });
 
 test('36.0: selektive Änderungen reproduzierbar, keine pauschale Neufassung',async()=>{
- assert.deepEqual(await applyDecisions(false),changes);assert.equal(changes.products.length,29);
+ assert.deepEqual(await applyDecisions(false),changes);assert.equal(changes.products.length,33);
  const original=JSON.parse(fs.readFileSync(path.join(root,'originals.json')));
  for(const p of changes.products){assert.equal(sha(original[p.file]),p.beforeSha256);assert.equal(sha(fs.readFileSync(path.join(app,p.file))),p.afterSha256);assert.ok(p.reason);assert.ok(Object.keys(p.changedFields).length)}
- assert.equal(approvedFreshnessChanges().size,33);
+ assert.equal(approvedFreshnessChanges().size,37);
 });
 
 test('36.0: alle URLs, SEO-Felder, Kaufziele, Preise und 437 Originalhinweise geschützt',async()=>{
@@ -89,7 +89,7 @@ test('36.0: jede veränderte Produktseite rendert Hinweise, Kaufziele und konsis
 });
 
 test('36.0: GPS-Alternativen behaupten keine Kamera und empfehlen kein XL-Modell für Katzen',async()=>{
- for(const slug of ['tractive-cat-6-mini','tractive-dog-6','tractive-dog-6-xl','pawfit-3','invoxia-biotracker-2026']){
+ for(const slug of ['tractive-cat-6-mini','tractive-dog-6','tractive-dog-6-xl','pawfit-3','invoxia-biotracker-2026','paj-pet-finder-4g-mini','weenect-xs','weenect-xt','garmin-alpha-t-20','garmin-alpha-tt-25','mova-suretrack-pro','satellai-collar-go']){
   const d=await document(slug);assert.ok(d.reviewedAlternatives.length);assert.ok(!text(dom(slug)).includes('Bessere Wahl mit Kamera'),slug);
  }
  const cat=await document('tractive-cat-6-mini');assert.ok(cat.reviewedAlternatives.every(r=>r.slug!=='tractive-dog-6-xl'));

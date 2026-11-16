@@ -22,7 +22,7 @@ category:
   path: /gps-tracker/
 productUrl: /produkt/garmin-alpha-t-20/
 publishedAt: "2026-07-20"
-updatedAt: "2026-07-23"
+updatedAt: "2026-11-16"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -451,6 +451,11 @@ decisionFacts:
   - label: "Wasserschutz"
     value: "1 ATM; widersteht laut Garmin einem Druck entsprechend 10 m Wassertiefe"
     consequence: "Die Schutzklasse ist bei Regen, Reinigung und dauerhaftem Außeneinsatz relevant."
+reviewedAlternatives:
+  - slug: garmin-alpha-tt-25
+    reason: >-
+      Anderes Garmin-VHF-Modell mit zusätzlicher Ausstattung. Ein kompatibles Handgerät bleibt erforderlich;
+      regionale Ausführung und benötigte Funktionen vor dem Kauf prüfen.
 ---
 Der Garmin Alpha T 20 ist kein gewöhnlicher GPS-Tracker für Spaziergänge. Er gehört zu einem professionellen VHF-Ortungssystem: Das Halsbandgerät bestimmt die Position des Hundes und sendet sie direkt an ein kompatibles Garmin-Alpha-Handgerät.
 
