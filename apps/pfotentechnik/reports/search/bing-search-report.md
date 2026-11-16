@@ -1,30 +1,32 @@
 # Bing Webmaster Tools Report
 
-Generiert: 2026-09-21T06:29:30.187Z
+Generiert: 2026-11-16T09:01:47.721Z
 
-Datenstand: 2026-09-19T00:00:00.000Z
+Datenstand: 2026-11-14T00:00:00.000Z
 
-Tagesdaten aus dem Export vom 21.09.2026; letzter erfasster Tag: 19.09.2026. Keine Positions-, Seiten- oder Suchanfragedaten enthalten.
+CSV-Export vom 16.11.2026; letzter gelieferter Tag: 14.11.2026. Positionen, Seiten, Suchanfragen und Crawl-Daten fehlen im Export.
 
 ## Kennzahlen
 
-- Klicks: 20
-- Impressionen: 487
-- CTR: 4.11 %
+- Klicks: 118
+- Impressionen: 3862
+- CTR: 3.06 %
 - Position: nicht verfügbar
 
 ## Top-Seiten
 
-Keine Einträge im gewählten Zeitraum.
+Nicht verfügbar: Der Bing-Export enthält keine Seitenwerte.
 
 ## Top-Queries
 
-Keine Einträge im gewählten Zeitraum.
+Nicht verfügbar: Der Bing-Export enthält keine Suchanfragen.
 
 ## Crawl-Hinweise
 
-Keine Crawl-Warnungen in den gelieferten Daten.
+Nicht verfügbar: Der Bing-Export enthält keine Crawl-Daten.
 
-## Exportabdeckung
+## CSV-Datenumfang
 
-Manueller Export vom 21.09.2026, Zeitraum 23.08.–19.09.2026. Der Export enthält ausschließlich Tageswerte; Seiten, Suchanfragen, Positionen und Crawl-Daten sind nicht verfügbar.
+Bing-CSV: Tageskennzahlen verfügbar; Positionen, Seiten, Suchanfragen und Crawl-Daten sind nicht exportiert. Unvollständige Tagesabdeckung: 91 von 92 Tagen; erster verfügbarer Tag 2026-08-16. Kein vollständiger Vergleichszeitraum verfügbar.
+
+Aktuelle Exporte für 6 und 12 Monate liegen nicht vor.

@@ -1,0 +1,82 @@
+{
+  "importedAt": "2026-11-16T09:01:47.463Z",
+  "exportDate": "2026-11-16",
+  "sources": [
+    {
+      "provider": "google",
+      "file": "reports/search/imports/2026-11-16/google/Suchanfragen.csv",
+      "sha256": "4446620e6db36488aa4135cde8e036f585f4d28a5f43b5fb2682066fc3ef062a",
+      "rows": 11
+    },
+    {
+      "provider": "google",
+      "file": "reports/search/imports/2026-11-16/google/Diagramm.csv",
+      "sha256": "13fef6b6f48c599e46430b15771ffe1acda2ec5adda29748358fa8559f823e11",
+      "rows": 92
+    },
+    {
+      "provider": "google",
+      "file": "reports/search/imports/2026-11-16/google/Länder.csv",
+      "sha256": "3e154ad5abe26f9be3ffda54f4f08e7adc5247948778035c9ada47925539b999",
+      "rows": 21
+    },
+    {
+      "provider": "google",
+      "file": "reports/search/imports/2026-11-16/google/Filter.csv",
+      "sha256": "d99c0011818905b3fb992ad7a2164a065f83bd3004ab304cb4896c644048b9ae",
+      "rows": 2
+    },
+    {
+      "provider": "google",
+      "file": "reports/search/imports/2026-11-16/google/Seiten.csv",
+      "sha256": "4934914cd9d024168f8f4251a4afd6fade90cc6dd179bc8815fa04c931b9da43",
+      "rows": 61
+    },
+    {
+      "provider": "google",
+      "file": "reports/search/imports/2026-11-16/google/Darstellung in der Suche.csv",
+      "sha256": "dd7f7886f742092692eede394cdf48d4b9d6f8e7a73e2b25133f1a454c69ba64",
+      "rows": 1
+    },
+    {
+      "provider": "google",
+      "file": "reports/search/imports/2026-11-16/google/Geräte.csv",
+      "sha256": "84cc4686947415267f1d030caa7f2703f552e57a430e9addfa2fe499adc1a58d",
+      "rows": 2
+    },
+    {
+      "provider": "bing",
+      "file": "reports/search/imports/2026-11-16/bing/pfotentechnik.de_SearchPerformanceOverview_All_11_16_2026.csv",
+      "sha256": "7eeecb879b0e2f571e58c63d7e74ac3116f49198bb68710aca7f02961daf1a61",
+      "rows": 91
+    }
+  ],
+  "availableRanges": [
+    "7d",
+    "28d",
+    "3m"
+  ],
+  "unavailableRanges": [
+    "6m",
+    "12m"
+  ],
+  "notes": [
+    "3m entspricht dem GSC-Exportzeitraum 2026-08-15 bis 2026-11-14 (92 Tage). Bing beginnt am 2026-08-16 (91 Tage); 3m ist dort unvollständig.",
+    "Frühere Datenstände bleiben in der Git-Historie erhalten; keine alten Detailzeilen in aktuelle Zeiträume übertragen.",
+    "Fehlende Vergleichsdaten und Bing-Positionen sind null, keine Nullmessungen. GSC-Seitenimpressionen und anonymisierte Query-Summen müssen nicht den Property-Gesamtsummen entsprechen."
+  ],
+  "totals": {
+    "google": {
+      "clicks": 0,
+      "impressions": 86,
+      "ctr": 0.0,
+      "position": 19.84
+    },
+    "bing": {
+      "clicks": 118,
+      "impressions": 3862,
+      "ctr": 3.06,
+      "position": null
+    }
+  }
+}

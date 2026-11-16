@@ -1,54 +1,55 @@
 {
   "schemaVersion": 1,
   "provider": "bing",
-  "generatedAt": "2026-09-21T06:29:30.187Z",
+  "generatedAt": "2026-11-16T09:01:47.721Z",
   "siteUrl": "https://pfotentechnik.de/",
-  "dataUpdatedAt": "2026-09-19T00:00:00.000Z",
+  "dataUpdatedAt": "2026-11-14T00:00:00.000Z",
   "freshness": {
     "status": "current",
     "ageDays": 2,
-    "note": "Tagesdaten aus dem Export vom 21.09.2026; letzter erfasster Tag: 19.09.2026. Keine Positions-, Seiten- oder Suchanfragedaten enthalten."
+    "note": "CSV-Export vom 16.11.2026; letzter gelieferter Tag: 14.11.2026. Positionen, Seiten, Suchanfragen und Crawl-Daten fehlen im Export."
   },
-  "range": "28d",
+  "range": "3m",
   "period": {
-    "startDate": "2026-08-23",
-    "endDate": "2026-09-19"
+    "startDate": "2026-08-15",
+    "endDate": "2026-11-14"
   },
   "metrics": {
     "current": {
-      "clicks": 20,
-      "impressions": 487,
-      "ctr": 4.11,
+      "clicks": 118,
+      "impressions": 3862,
+      "ctr": 3.06,
       "position": null
     },
-    "previous": {
-      "clicks": 2,
-      "impressions": 61,
-      "ctr": 3.28,
-      "position": null
-    },
-    "change": {
-      "clicks": 900,
-      "impressions": 698.4,
-      "ctr": 0.83,
-      "position": null
-    }
+    "previous": null,
+    "change": null
   },
   "topPages": [],
   "topQueries": [],
   "quickWins": [
     {
       "priority": "low",
-      "type": "export-data-limit",
-      "title": "Datenumfang des Exports",
+      "type": "import-coverage",
+      "title": "Datenumfang des CSV-Imports",
       "page": "",
-      "reason": "Bing-Export enthält nur Tageswerte: Positionen, Seiten, Suchanfragen und Crawl-Daten fehlen.",
-      "action": "Für zusätzliche Dimensionen oder Zeiträume einen passenden Export oder API-Sync verwenden."
+      "reason": "Bing-CSV: Tageskennzahlen verfügbar; Positionen, Seiten, Suchanfragen und Crawl-Daten sind nicht exportiert. Unvollständige Tagesabdeckung: 91 von 92 Tagen; erster verfügbarer Tag 2026-08-16. Kein vollständiger Vergleichszeitraum verfügbar.",
+      "action": "Fehlende Detaildaten bei Bedarf als separaten Export oder über die API ergänzen."
     }
   ],
   "crawlWarnings": [],
-  "dataNotices": [
-    "Manueller Export vom 21.09.2026, Zeitraum 23.08.–19.09.2026. Der Export enthält ausschließlich Tageswerte; Seiten, Suchanfragen, Positionen und Crawl-Daten sind nicht verfügbar."
-  ],
-  "partial": true
+  "sourceType": "csv-export",
+  "sourceManifest": "reports/search/imports/2026-11-16/manifest.json",
+  "coverage": {
+    "expectedDays": 92,
+    "availableDays": 91,
+    "firstAvailableDate": "2026-08-16",
+    "pages": false,
+    "queries": false,
+    "pageQueries": false,
+    "position": false,
+    "crawl": false
+  },
+  "partial": true,
+  "comparisonAvailable": false,
+  "dataNotice": "Bing-CSV: Tageskennzahlen verfügbar; Positionen, Seiten, Suchanfragen und Crawl-Daten sind nicht exportiert. Unvollständige Tagesabdeckung: 91 von 92 Tagen; erster verfügbarer Tag 2026-08-16. Kein vollständiger Vergleichszeitraum verfügbar."
 }
