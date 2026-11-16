@@ -1,0 +1,64 @@
+[
+  {
+    "file": "src/content/comparisons/beste-gps-tracker-fuer-hunde.md",
+    "slugs": [
+      "invoxia-biotracker-2026",
+      "mova-suretrack-pro",
+      "satellai-collar-go",
+      "tractive-dog-6-xl",
+      "paj-pet-finder-4g-mini",
+      "pawfit-3"
+    ],
+    "replacements": [
+      [
+        "recommendation: \"Für Hundehalter, die GPS mit Aktivitäts-, Schlaf- und Vitalwerttrends verbinden und den Max-GPS-Tarif bewusst wählen.\"",
+        "recommendation: \"GPS mit zusätzlichen Gesundheits- und Aktivitätstrends; Fehlklassifikationen begrenzen deren Aussagekraft. Das bestätigte Amazon-Paket enthält ein Jahr Max GPS.\""
+      ],
+      [
+        "recommendation: \"Für Hunde über 3,5 kg, wenn Audio-ID, Licht sowie Entfernungs- und Temperaturwarnungen wichtig sind.\"",
+        "recommendation: \"Audio-ID als Sonderfunktion; wegen kritischer Ortungsbefunde kein bevorzugtes Modell für verlässliche Fluchtwarnungen.\""
+      ]
+    ],
+    "text": "Die ergänzende Recherche verändert die Einsatzgrenzen, nicht pauschal die Rangfolge. Beim **MOVA SureTrack Pro** stehen positiven Positionsbefunden ausgebliebene Geofence-Warnungen in Fremdtests gegenüber. Eine Standortkarte bestätigt keine funktionierende Fluchtwarnung. Beim **SATELLAI Collar Go** sind Ortung und App positiv beschrieben; die Halterung und die protokollabhängige Laufzeit bleiben Grenzen. Der hinterlegte Preis bestätigt weiterhin keine Lieferbarkeit.\n\nBeim **Invoxia Biotracker 2026** dokumentiert [Tom’s Guide France](https://www.tomsguide.fr/test-biotracker-invoxia-edition-2026-excellent-pour-retrouver-son-chien-moins-pour-suivre-sa-sante/) neben gutem GPS auch falsch erkannte Aktivitäten. Das Gesundheitskriterium sinkt redaktionell von 4,8 auf 3,5/5; die unveränderten übrigen Kriterien ergeben 78/100. Die Rolle bleibt „GPS plus Trends“, ohne diagnostische Zusicherung. Das bestätigte 219-€-Amazon-Paket enthält zwölf Monate Max GPS; dieses erste Jahr wird nicht zusätzlich berechnet.\n\nDie neuen CHIP-Protokolle trennen beim DOG 6 XL aktive Nutzung und Standby; beim PAJ Mini unterscheiden sie Nutzung außerhalb der Homezone und Standby. Diese Werte rechtfertigen keine pauschale Übertragung der Maximalwerte auf jeden Alltag. Produktrollen und sichtbare Auswahl bleiben erhalten.",
+    "beforeSha256": "286ecd4347b86bec9b396dd01387432e053ea85871cbe7ebe6a98066e4229ddd",
+    "afterSha256": "f90be7d0f440528367a92cb88d9ef767135fcb839a320da45d2d7affb54f18c1"
+  },
+  {
+    "file": "src/content/comparisons/beste-automatische-katzentoiletten.md",
+    "slugs": [
+      "litter-robot-4",
+      "litter-robot-5-pro",
+      "neakasa-m1-lite",
+      "petkit-puramax-2"
+    ],
+    "text": "Für den **Litter-Robot 5 Pro** dokumentiert [Whisker mit App 1.46.0 vom 10. November 2026](https://www.whisker.com/app-releases) inzwischen interne Besuchsaufnahmen. Die entsprechende Einschränkung älterer Fremdtests ist damit ein historischer Softwarestand. Dienstumfang und Firmware am konkreten Gerät prüfen; beim LR4 die unterschiedlichen Seriennummernzweige LR4S und LR4C beachten.\n\n[Sitegeek testet ausdrücklich den M1 Plus Lite](https://www.sitegeek.fr/article-technologie/maison-connectee/neakasa-m1-plus-lite-test/) und bestätigt einfache Einrichtung, aber auch hohen Einstieg und Streuabhängigkeit. Beim **PuraMax 2** kritisiert [Cats.com](https://cats.com/petkit-puramax-2-automatic-litter-box-review) das Entleeren und die Grundreinigung. Der Test auf Teppich erfolgte mit abgeschalteter Automatik und ist keine Teppichfreigabe. Die bisherigen Einsatzrollen bleiben bestehen; automatische Reinigung ersetzt keine Betreuung.",
+    "beforeSha256": "8176074c2305b6aed8281520c0156dd5f1e0ab6762581bd016fe685164480fd6",
+    "afterSha256": "dc9aab23be9b887024779c5f43e03ac6885cf2959e249f25b2cb312f06710c2f"
+  },
+  {
+    "file": "src/content/comparisons/beste-trinkbrunnen-fuer-katzen.md",
+    "slugs": [
+      "philips-pet-series-paw3210-02",
+      "brook-glass-pet-fountain",
+      "xiaomi-smart-pet-fountain-2"
+    ],
+    "text": "Beim **Philips PAW3210/02** berichtet [Lyd & Bilde](https://www.lydogbilde.no/test/smart-hjem/6-smarte-for-og-vannautomater-til-kjaeledyr/philips-water-fountain-paw3210/), dass das Testgerät nach Stromunterbrechung erst per Tastendruck wieder anlief. Wiederanlauf am eigenen Gerät kontrollieren und einen zugänglichen Wassernapf vorsehen. Das ist eine konkrete Fremdbeobachtung, keine veröffentlichte Ausfallquote.\n\nBeim **Xiaomi Smart Pet Fountain 2** ist App-Steuerung keine Trinkmengenmessung: [Les Numériques](https://www.lesnumeriques.com/objet-connecte/xiaomi-smart-pet-fountain-2-p76349/test.html) bestätigt ausdrücklich die fehlende Verbrauchserfassung. Ein zusätzlicher Brook-Haushaltsbericht stammt aus den USA und nutzt ein gestelltes Testgerät; daraus folgen keine deutschen Liefer- oder Ersatzteilzusagen. Die Auswahl und ihre Einsatzrollen bleiben erhalten.",
+    "beforeSha256": "9a279feb97032d027480940834cde3b461708c0bc4a7071ba96a08e6b047c680",
+    "afterSha256": "2de6783e4e6bc23a059249cd2b7386a12a44895ff53786fac8a562125de84439"
+  },
+  {
+    "file": "src/content/pages/futterautomat-bei-stromausfall.md",
+    "slugs": [
+      "petlibro-granary-2-vision",
+      "petlibro-granary-camera-feeder",
+      "petlibro-granary-wifi-feeder",
+      "petlibro-granary-dual-feeder",
+      "petlibro-air-wifi-feeder",
+      "petlibro-space-smart-feeder",
+      "petlibro-one-rfid-smart-feeder"
+    ],
+    "text": "Die [PETLIBRO-Ausfall-FAQ vom 25. August 2026](https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq) zeigt, warum die reine Existenz eines lokalen Zeitplans nicht genügt: Während des Dienstausfalls konnten Protokolle fehlen, Mahlzeiten verspätet sein oder je nach Modell und Gerätezustand ausbleiben. Stromunterbrechungen können die Zeitsynchronisation zusätzlich beeinflussen.\n\nEin App-Eintrag ist während eines solchen Ausfalls kein sicherer Ausgabenachweis. Den Napf und tatsächliche Fütterungen kontrollieren; eine Kamera hilft nur, wenn sie nicht denselben ausgefallenen Dienst benötigt. Eine vollständige Liste betroffener EU-Modelle oder eine Ausfallquote veröffentlicht der Hersteller hier nicht. Die Quelle belegt deshalb keine gleichartige Störung jedes PETLIBRO-Geräts.",
+    "beforeSha256": "734c0e74109124e2a84c75b4ef17e9ba7b6a576852941466f16ff114568eb980",
+    "afterSha256": "bc83e2f88083a0eb34dec691599b1e4e64cb08dcd0a2b132b0df4ff01c873964"
+  }
+]

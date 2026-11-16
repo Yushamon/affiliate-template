@@ -48,8 +48,10 @@ priceUpdated: "2026-09-15"
 priceAvailable: true
 affiliateAvailable: false
 availability: "unknown"
-availabilityReason: "Vorbestellung: am 15.09.2026 für 199,99 € gelistet, Early-Bird bis 20.09.2026. Voraussichtlicher Versand ab 21.09.2026 laut Hersteller; keine bestätigte sofortige Lieferbarkeit."
-availabilityUpdated: "2026-09-15"
+availabilityReason: >-
+  Am 16.11.2026 regulär auf der deutschen Herstellerseite gelistet; kein belastbar bestätigter sofortiger
+  Liefertermin. Die Vorbestellaktion vom September ist abgelaufen.
+availabilityUpdated: "2026-11-16"
 editorialStatus: "complete"
 recommendationStatus: "limited"
 maintenanceStatus: "required"
@@ -140,53 +142,77 @@ multiPet:
   evidenceSourceUrls:
     - "https://neakasa.de/products/neakasa-riko-smart-wet-food-feeder"
 editorial:
-  assessmentType: "data-review"
+  assessmentType: data-review
   evidence:
-    - "manufacturer-documentation"
-    - "technical-specifications"
-    - "comparative-analysis"
+    - manufacturer-documentation
+    - technical-specifications
+    - comparative-analysis
   testedHandsOn: false
-  lastVerifiedAt: "2026-09-14"
-  note: "Technischer Datencheck auf Basis der abgeschlossenen DE-Recherche vom 14.09.2026; Preis und Vorbestellstatus am 15.09.2026 gezielt geprüft. Kein eigener Praxistest. Die vorläufige redaktionelle Bewertung 3,8/5 stammt aus dem gelieferten Redaktionsdraft, nicht aus Messungen oder Kundenbewertungen. EU-Spezifikationen weichen ab."
+  lastVerifiedAt: "2026-11-16"
+  note: >-
+    DE-Herstellerangaben und neuer Fremdtest getrennt ausgewertet. Kein eigener Praxistest. Vorläufige
+    Bewertung unverändert; abweichende regionale Daten nicht vermischt.
 evidenceSources:
-  - source: "Neakasa Deutschland – Riko Produktseite"
-    url: "https://neakasa.de/products/neakasa-riko-smart-wet-food-feeder"
+  - source: Neakasa Deutschland – Riko Produktseite
+    url: https://neakasa.de/products/neakasa-riko-smart-wet-food-feeder
     accessedAt: "2026-09-14"
-    assertion: "Technische DE-Daten und Futterkompatibilität aus der abgeschlossenen Recherche; keine unabhängigen Messwerte."
+    assertion: >-
+      Technische DE-Daten und Futterkompatibilität aus der abgeschlossenen Recherche; keine unabhängigen
+      Messwerte.
     fields:
-      - "specs"
-      - "decision"
-      - "multiPet"
-      - "comparisonFilters"
-      - "strengths"
-      - "weaknesses"
-    sourceType: "officialStore"
-  - source: "Neakasa Deutschland – IFA 2026"
-    url: "https://neakasa.de/blogs/news/ifa-2026-neakasa"
+      - specs
+      - decision
+      - multiPet
+      - comparisonFilters
+      - strengths
+      - weaknesses
+    sourceType: officialStore
+  - source: Neakasa Deutschland – IFA 2026
+    url: https://neakasa.de/blogs/news/ifa-2026-neakasa
     accessedAt: "2026-09-14"
-    assertion: "IFA-Kontext, Award, Funktionsprinzip und Marktstart."
+    assertion: IFA-Kontext, Award, Funktionsprinzip und Marktstart.
     fields:
-      - "review"
-      - "features"
-    sourceType: "manufacturer"
-  - source: "Neakasa Deutschland – aktuelle Vorbestellung"
-    url: "https://neakasa.de/products/neakasa-riko-smart-wet-food-feeder"
+      - review
+      - features
+    sourceType: manufacturer
+  - source: Neakasa Deutschland – aktuelle Vorbestellung
+    url: https://neakasa.de/products/neakasa-riko-smart-wet-food-feeder
     accessedAt: "2026-09-15"
-    assertion: "199,99 EUR Vorbestellerpreis bis 20.09.2026; voraussichtlicher Versand ab 21.09.2026. Keine bestätigte sofortige Lieferbarkeit."
+    assertion: >-
+      199,99 EUR Vorbestellerpreis bis 20.09.2026; voraussichtlicher Versand ab 21.09.2026. Keine bestätigte
+      sofortige Lieferbarkeit.
     fields:
-      - "price"
-      - "availability"
-    sourceType: "officialStore"
-  - source: "Neakasa EU – regionaler Quellenkonflikt"
-    url: "https://eu.neakasa.com/products/neakasa-riko-automatic-pet-feeder-for-wet-food"
+      - price
+      - availability
+    sourceType: officialStore
+  - source: Neakasa EU – regionaler Quellenkonflikt
+    url: https://eu.neakasa.com/products/neakasa-riko-automatic-pet-feeder-for-wet-food
     accessedAt: "2026-09-14"
-    assertion: "Abweichende EU-Werte zu Wassertank, Portion, Genauigkeit, Akku und Verbindung werden nicht mit den DE-Werten vermischt; EU-Maße und Geräusch bleiben unübernommen."
+    assertion: >-
+      Abweichende EU-Werte zu Wassertank, Portion, Genauigkeit, Akku und Verbindung werden nicht mit den
+      DE-Werten vermischt; EU-Maße und Geräusch bleiben unübernommen.
     fields:
-      - "specs"
-      - "editorial"
-    sourceType: "officialStore"
+      - specs
+      - editorial
+    sourceType: officialStore
+  - source: Cats.com
+    url: https://cats.com/neakasa-riko-automatic-cat-feeder-review
+    accessedAt: "2026-11-16"
+    assertion: >-
+      App-Einrichtung, einstellbare Wasserzugabe und abnehmbare Teile überzeugten im Haushaltstest. Mahlwerk
+      und Mischweg erfordern regelmäßige Reinigung; keine Langzeitmessung.
+    fields:
+      - externalEvidence
+    sourceType: independentSource
+  - source: Neakasa Deutschland
+    url: https://neakasa.de/products/neakasa-riko-smart-wet-food-feeder
+    accessedAt: "2026-11-16"
+    assertion: DE-Seite listet Riko regulär; die befristete September-Vorbestellung ist kein aktueller Verkaufsstatus.
+    fields:
+      - experience
+    sourceType: manufacturer
 publishedAt: "2026-09-15"
-updatedAt: "2026-09-15"
+updatedAt: "2026-11-16"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
@@ -217,19 +243,61 @@ decisionJourney:
   fallback:
     - "/ifa-2026-haustiertechnik/"
 faq:
-  - question: "Kann Riko Dosen- oder Beutelfutter ausgeben?"
-    answer: "Nein. Riko bevorratet geeignetes trockenes, primär gefriergetrocknetes Futter. Dosen-, Beutel-, Roh-, selbst gekochtes oder bereits feuchtes Futter gehören laut Hersteller nicht in den Behälter."
-  - question: "Erkennt Riko, welche Katze gefressen hat?"
-    answer: "Nein. Gemeinsame Nutzung ist möglich, aber es gibt keine individuelle Zugangserkennung oder sichere Zuordnung der aufgenommenen Portionen."
-  - question: "Ist Riko bereits sofort lieferbar?"
-    answer: "Bei der Prüfung am 15. September 2026 war Riko eine Vorbestellung mit voraussichtlichem Versand ab 21. September. Der Termin ist eine Herstellerankündigung, keine bestätigte Lieferung."
+  - question: Kann Riko Dosen- oder Beutelfutter ausgeben?
+    answer: >-
+      Nein. Riko bevorratet geeignetes trockenes, primär gefriergetrocknetes Futter. Dosen-, Beutel-, Roh-,
+      selbst gekochtes oder bereits feuchtes Futter gehören laut Hersteller nicht in den Behälter.
+  - question: Erkennt Riko, welche Katze gefressen hat?
+    answer: >-
+      Nein. Gemeinsame Nutzung ist möglich, aber es gibt keine individuelle Zugangserkennung oder sichere
+      Zuordnung der aufgenommenen Portionen.
+  - question: Ist Riko bereits sofort lieferbar?
+    answer: >-
+      Am 16.11.2026 regulär auf der deutschen Herstellerseite gelistet; kein belastbar bestätigter sofortiger
+      Liefertermin. Die Vorbestellaktion vom September ist abgelaufen.
+externalEvidence:
+  professionalReviews:
+    - publisher: Cats.com
+      title: Neakasa Riko Automatic Cat Feeder Review
+      url: https://cats.com/neakasa-riko-automatic-cat-feeder-review
+      publishedAt: "2026-11-05"
+      checkedAt: "2026-11-16"
+      methodology: hands-on
+      positives:
+        - App-Einrichtung, einstellbare Wasserzugabe und abnehmbare Teile überzeugten im Haushaltstest.
+      negatives:
+        - Mahlwerk und Mischweg erfordern regelmäßige Reinigung; keine Langzeitmessung.
+      findings:
+        - >-
+          Gefriergetrocknetes Futter getestet. Keine Übertragung auf beliebige Kroketten oder die abweichenden
+          EU-Spezifikationen.
+  userReviews: []
+  consensus:
+    strengths: []
+    weaknesses: []
+    editorialAssessment: >-
+      Ein erster modellbezogener Haushaltstest ist jetzt vorhanden. Er bestätigt das Zubereitungskonzept,
+      ersetzt aber keine Langzeitprüfung oder Freigabe beliebiger Futtersorten. Vorläufige Bewertung 3,8/5
+      unverändert.
+  note: >-
+    Kein eigener PfotenTechnik-Praxistest. Modell-, Länder-, Tarif- und Testzeitpunktgrenzen der Fremdquellen
+    beachten; keine Übernahme fremder Noten.
+experience:
+  summary: >-
+    Riko verbindet automatische Portionierung mit einer erst zur Fütterung erfolgenden Wasserzugabe. Das
+    Konzept unterscheidet sich deutlich von gekühlten Nassfutterautomaten.
+  reliability: >-
+    Die deutsche Seite führt Riko am 16. November regulär im Sortiment. Die September-Vorbestellaktion ist
+    abgelaufen; eine Bestellmöglichkeit bestätigt keinen konkreten Liefertermin. Cats.com beschreibt
+    inzwischen einen Haushaltstest mit geeigneter gefriergetrockneter Nahrung. DE-Angaben zu Portionen und
+    Behältern bleiben wegen regionaler Unterschiede getrennt von US-/EU-Tests.
 ---
 
 **Datencheck, kein Praxistest.** Die technischen Angaben beruhen auf der abgeschlossenen Herstellerrecherche vom 14. September 2026. Preis und Vorbestellung wurden am 15. September gezielt geprüft. Die vorläufige redaktionelle Bewertung aus dem vorbereiteten Draft ist keine gemessene Leistungsnote.
 
 ## Preis und Vorbestellung
 
-Am 15. September 2026 nennt [Neakasa Deutschland](https://neakasa.de/products/neakasa-riko-smart-wet-food-feeder) 199,99 € als Vorbestellerpreis bis einschließlich 20. September. Der Versand ist voraussichtlich ab 21. September angekündigt. Die Bestellbarkeit bestätigt keine sofortige Lieferbarkeit; der optionale Akku gehört nicht automatisch zum Standardmodell.
+[Neakasa Deutschland](https://neakasa.de/products/neakasa-riko-smart-wet-food-feeder) listet Riko am 16. November 2026 regulär. Die Vorbestellaktion vom September ist abgelaufen. Ein bestätigter sofortiger Liefertermin liegt hier nicht vor; der optionale Akku gehört nicht automatisch zum Standardmodell.
 
 ## Was Riko anders macht
 
@@ -284,3 +352,7 @@ Die deutsche Seite nennt Bluetooth und 2,4-GHz-WLAN sowie einen optionalen Akku 
 Der Ratgeber [Smarte Futterautomaten](/smarte-futterautomaten/) erklärt unterschiedliche Bauarten. Wer fertiges Dosen- oder Beutelfutter portionieren möchte, findet passende Konzepte im [Vergleich für Nassfutterautomaten](/vergleiche/beste-futterautomaten-fuer-nassfutter/). Riko ist dort kein gleichwertiger Ersatz.
 
 Den Messekontext liefert der [IFA-2026-PetTech-Überblick](/ifa-2026-haustiertechnik/). Weitere gepflegte Modelle stehen im [Neakasa-Herstellerprofil](/hersteller/neakasa/).
+
+## Recherche-Update vom 16. November 2026
+
+Die deutsche Seite führt Riko am 16. November regulär im Sortiment. Die September-Vorbestellaktion ist abgelaufen; eine Bestellmöglichkeit bestätigt keinen konkreten Liefertermin. Cats.com beschreibt inzwischen einen Haushaltstest mit geeigneter gefriergetrockneter Nahrung. DE-Angaben zu Portionen und Behältern bleiben wegen regionaler Unterschiede getrennt von US-/EU-Tests. [Neakasa Deutschland](https://neakasa.de/products/neakasa-riko-smart-wet-food-feeder)

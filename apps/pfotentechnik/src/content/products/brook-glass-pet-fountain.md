@@ -24,7 +24,7 @@ category:
   path: /trinkbrunnen/
 productUrl: /produkt/brook-glass-pet-fountain/
 publishedAt: "2026-11-04"
-updatedAt: "2026-11-04"
+updatedAt: "2026-11-16"
 author:
   name: PfotenTechnik Redaktion
   role: Redaktion
@@ -132,7 +132,14 @@ experience:
     Hygiene-, Haltbarkeits- oder Geräuschmessung. Keine eigenen Praxistests und keine übernommenen
     Kundensterne.
   maintenance: Glasteile wöchentlich reinigen und spülmaschinengeeignet; Pumpe separat alle 2–4 Wochen zerlegen
-  reliability: Keine eigene Langzeitprüfung. Angaben zu Geräusch, Hygiene und Lebensdauer sind keine eigenen Messungen.
+  reliability: >-
+    Keine eigene Langzeitprüfung. Angaben zu Geräusch, Hygiene und Lebensdauer sind keine eigenen Messungen.
+    Ein ergänzender US-Haushaltsbericht beschreibt leisen Betrieb und leicht zerlegbare Glasteile. Brook
+    stellte das Testgerät kostenlos. Das liefert eine praktische Einzelperspektive, bestätigt aber weder
+    deutsche Lieferbarkeit noch EU-Adapter oder Ersatzteilversorgung. Die bisherige Eignungsbewertung bleibt
+    bestehen. WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbegrenzer trinken
+    wollten. Die einstellbare Strömung kann bei der Gewöhnung helfen; eine universelle Trinkakzeptanz ist
+    damit nicht belegt.
 editorial:
   assessmentType: data-review
   evidence:
@@ -147,15 +154,42 @@ editorial:
     Trinkschale. Wartung 2,6/5: Ersatzteile dokumentiert, aber häufige Filterwechsel und ungeklärte deutsche
     Lieferkette. Gleichgewichteter Mittelwert: 74/100. Keine Hygiene-, Haltbarkeits- oder Geräuschmessung.
 externalEvidence:
-  professionalReviews: []
+  professionalReviews:
+    - publisher: Emily Reviews
+      title: Brook All-Glass Pet Fountain Is Worth Upgrading To
+      url: https://www.emilyreviews.com/2025/06/brook-all-glass-pet-fountain-is-worth-upgrading-to-giveaway.html
+      publishedAt: "2025-06-24"
+      checkedAt: "2026-11-16"
+      methodology: hands-on
+      positives:
+        - Sichtbarer Füllstand, leiser Normalbetrieb und zerlegbare Glasteile im Haushalt gelobt.
+      negatives:
+        - US-Einzelperspektive; keine Bestätigung deutscher Ersatzteil- oder Liefersituation.
+      findings:
+        - >-
+          Kostenloses Herstellergerät und Affiliate-Links offengelegt; keine allgemeine Reinigungs- oder
+          Nachfüllfrist ableiten.
+    - publisher: WIRED
+      title: Best Cat Water Fountains · Brook Glass Pet Fountain
+      url: https://www.wired.com/gallery/best-cat-water-fountains/
+      checkedAt: "2026-11-16"
+      methodology: hands-on
+      positives:
+        - Stabile Glasschale und veränderbare Pumpenposition im Test.
+      negatives:
+        - Testkatzen akzeptierten den Wasserfluss erst mit dem kleinsten Durchflussbegrenzer.
+      findings:
+        - Einzelhaushalt; keine allgemeine Akzeptanzgarantie. US-Versorgung nicht auf Deutschland übertragen.
   userReviews: []
   consensus:
     strengths: []
     weaknesses: []
     editorialAssessment: >-
-      Die Bewertung stützt sich auf dokumentierte Ausstattung und Pflegeanforderungen; keine unabhängigen
-      Praxistests oder Nutzerstichprobe ausgewertet.
-  note: Kein eigener Praxistest; keine Hersteller-Shopsterne als redaktionelle Messung übernommen.
+      WIRED liefert eine zusätzliche praktische Perspektive neben dem als gestellt offengelegten
+      Emily-Testgerät. Akzeptanz hängt auch vom Wasserfluss ab; Import- und Versorgungslücken bleiben offen.
+  note: >-
+    Kein eigener PfotenTechnik-Praxistest. Modell-, Länder-, Tarif- und Testzeitpunktgrenzen der Fremdquellen
+    beachten; keine Übernahme fremder Noten.
 specs:
   - label: Modell
     value: Brook All-Glass Pet Water Fountain 90 oz
@@ -404,6 +438,38 @@ evidenceSources:
       - affiliate.url
       - images
     sourceType: retailer
+  - source: Emily Reviews
+    url: https://www.emilyreviews.com/2025/06/brook-all-glass-pet-fountain-is-worth-upgrading-to-giveaway.html
+    accessedAt: "2026-11-16"
+    assertion: >-
+      Sichtbarer Füllstand, leiser Normalbetrieb und zerlegbare Glasteile im Haushalt gelobt.
+      US-Einzelperspektive; keine Bestätigung deutscher Ersatzteil- oder Liefersituation.
+    fields:
+      - externalEvidence
+    sourceType: independentSource
+  - source: Emily Reviews
+    url: https://www.emilyreviews.com/2025/06/brook-all-glass-pet-fountain-is-worth-upgrading-to-giveaway.html
+    accessedAt: "2026-11-16"
+    assertion: Praktische Quelle vorhanden, aber Testgerätstellung und US-Kontext offengelegt.
+    fields:
+      - experience
+    sourceType: independentSource
+  - source: WIRED
+    url: https://www.wired.com/gallery/best-cat-water-fountains/
+    accessedAt: "2026-11-16"
+    assertion: >-
+      Stabile Glasschale und veränderbare Pumpenposition im Test. Testkatzen akzeptierten den Wasserfluss erst
+      mit dem kleinsten Durchflussbegrenzer.
+    fields:
+      - externalEvidence
+    sourceType: independentSource
+  - source: WIRED
+    url: https://www.wired.com/gallery/best-cat-water-fountains/
+    accessedAt: "2026-11-16"
+    assertion: Wasserfluss beeinflusst Akzeptanz; Gerätekauf garantiert keine Nutzung durch jede Katze.
+    fields:
+      - experience
+    sourceType: independentSource
 ---
 
 ## Glasflächen mit klaren Materialgrenzen
@@ -456,3 +522,9 @@ Recherche am 4. November 2026. Preise sind datierte Händlerangaben, keine Preis
 Weitere Orientierung geben der [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/), die [Reinigungsanleitung](/katzentrinkbrunnen-richtig-reinigen/) und die [Hinweise zum Filterwechsel](/filter-im-katzentrinkbrunnen-wechseln/).
 
 - [Amazon · Modellvariante und Produktbilder](https://www.amazon.de/dp/B0D5DP2V53): Produktseite zur zugeordneten ASIN B0D5DP2V53 beim erneuten Abruf auswertbar; Bilder aus der Galerie der ausgewählten Variante. Amazon-Seitentitel und ausgewählte Produktgalerie zeigen den Brook Glas-Trinkbrunnen mit 2,7 Litern zur ASIN B0D5DP2V53. Kein Modellwiderspruch.
+
+## Recherche-Update vom 16. November 2026
+
+Ein ergänzender US-Haushaltsbericht beschreibt leisen Betrieb und leicht zerlegbare Glasteile. Brook stellte das Testgerät kostenlos. Das liefert eine praktische Einzelperspektive, bestätigt aber weder deutsche Lieferbarkeit noch EU-Adapter oder Ersatzteilversorgung. Die bisherige Eignungsbewertung bleibt bestehen. [Emily Reviews](https://www.emilyreviews.com/2025/06/brook-all-glass-pet-fountain-is-worth-upgrading-to-giveaway.html)
+
+WIRED beschreibt, dass die beiden Testkatzen erst mit dem kleinsten Durchflussbegrenzer trinken wollten. Die einstellbare Strömung kann bei der Gewöhnung helfen; eine universelle Trinkakzeptanz ist damit nicht belegt. [WIRED](https://www.wired.com/gallery/best-cat-water-fountains/)

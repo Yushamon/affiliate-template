@@ -19,7 +19,7 @@ category:
   path: /smarte-futterautomaten/
 productUrl: /produkt/petlibro-granary-camera-feeder/
 publishedAt: "2026-07-12"
-updatedAt: "2026-08-10"
+updatedAt: "2026-11-16"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -188,10 +188,16 @@ weaknesses:
   - Keine Mikrochip- oder RFID-Zugangskontrolle
 experience:
   summary: >-
-    Die Kamera zeigt, ob ein Tier am Napf erscheint. Sie misst aber nicht zuverlässig, wie viel tatsächlich gefressen
-    wurde.
+    Die Kamera zeigt, ob ein Tier am Napf erscheint. Sie misst aber nicht zuverlässig, wie viel tatsächlich
+    gefressen wurde.
   methodology: Redaktionelle Einordnung anhand der offiziellen PETLIBRO-Produktseiten; kein eigener Langzeittest.
   maintenance: Behälter, Ausgabekanal, Napf und Kamerafläche regelmäßig reinigen. Elektronische Basis nicht eintauchen.
+  reliability: >-
+    PETLIBROs Aufarbeitung des App-Ausfalls im August 2026 unterscheidet fehlende Protokolle von tatsächlich
+    verzögerten oder ausgefallenen Mahlzeiten. Das Verhalten hängt vom Modell, gespeicherten Zeitplan,
+    Gerätezustand und Stromunterbrechungen ab. Ein App-Eintrag allein bestätigt keine Ausgabe; vor Abwesenheit
+    mehrere reale Fütterungen und den Napf kontrollieren. Eine Ausfallquote für dieses konkrete EU-Modell ist
+    nicht veröffentlicht.
 alternatives:
   - petlibro-granary-dual-feeder
   - petkit-yumshare-solo
@@ -395,6 +401,16 @@ offers:
     variantLabel: "Weiß / Einzelne Schale"
     lastAttemptAt: "2026-11-16T09:07:07.369Z"
     availabilityUpdated: "2026-11-16T09:07:07.369Z"
+evidenceSources:
+  - source: PETLIBRO · App Outage FAQ
+    url: https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq
+    accessedAt: "2026-11-16"
+    assertion: >-
+      App-Protokolle bestätigen während eines Dienstausfalls keine tatsächlich ausgegebene Mahlzeit;
+      Offline-Verhalten modell- und zustandsabhängig.
+    fields:
+      - experience
+    sourceType: manufacturer
 ---
 Der PETLIBRO Granary Camera Feeder verbindet automatische Trockenfütterung mit einer integrierten Kamera. Das ist praktisch für Livekontrolle, aber kein Ersatz für direkte Beobachtung.
 
@@ -407,3 +423,7 @@ Die 1080p-Kamera deckt mit 145 Grad einen breiten Bereich ab. Aufzeichnung und l
 Die Dualvariante verteilt eine Ausgabe auf zwei Näpfe. Sie kontrolliert nicht, welches Tier frisst.
 
 **Quelle:** [PETLIBRO Granary Camera Feeder](https://de.petlibro.com/products/petlibro-granary-automatic-pet-feeder-with-camera). Bild: redaktionelle Visualisierung.
+
+## Recherche-Update vom 16. November 2026
+
+PETLIBROs Aufarbeitung des App-Ausfalls im August 2026 unterscheidet fehlende Protokolle von tatsächlich verzögerten oder ausgefallenen Mahlzeiten. Das Verhalten hängt vom Modell, gespeicherten Zeitplan, Gerätezustand und Stromunterbrechungen ab. Ein App-Eintrag allein bestätigt keine Ausgabe; vor Abwesenheit mehrere reale Fütterungen und den Napf kontrollieren. Eine Ausfallquote für dieses konkrete EU-Modell ist nicht veröffentlicht. [PETLIBRO · App Outage FAQ](https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq)

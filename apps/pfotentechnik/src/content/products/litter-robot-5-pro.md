@@ -14,7 +14,7 @@ manufacturer:
 category: { key: "automatische-katzentoiletten", label: "Automatische Katzentoiletten", path: "/automatische-katzentoiletten/" }
 productUrl: "/produkt/litter-robot-5-pro/"
 publishedAt: "2026-08-06"
-updatedAt: "2026-08-06"
+updatedAt: "2026-11-16"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 seo: { title: "Litter-Robot 5 Pro im Check", description: "Litter-Robot 5 Pro: automatische Katzentoilette mit zwei 1080p-Kameras. Mindestgewicht, geschlossene Trommel und Whisker+-abhängige Tiererkennung eingeordnet.", canonical: "/produkt/litter-robot-5-pro/", sitemap: true, priority: 0.8 }
 hub: { sections: ["produkte", "automatische-katzentoiletten"] }
@@ -116,15 +116,45 @@ decisionJourney: { cluster: "automatische-katzentoiletten", stage: "decision", i
 litterCompatibility: { status: partial, compatibleTypes: [bentonite, mineral-clumping], conditionalTypes: [silica-crystal, tofu, plant-fiber], incompatibleTypes: [wood, pellets, paper, non-clumping], clumpingRequirement: required, notes: ["Siebfähige Klumpstreu ist erforderlich; helle oder transparente Kristalle werden wegen möglicher Sensorprobleme nicht empfohlen."], researchedAt: "2026-09-03", evidence: [{ source: "Whisker Litter-Robot 5 Pro", url: "https://www.whisker.com/litter-robot-5-pro", sourceType: manufacturer, verifiedAt: "2026-09-03", assertion: "Hersteller nennt klumpende Tonstreu als beste Wahl und dokumentiert Einschränkungen für Kristall-, Pflanzen-, Papier- und Holzstreu." }] }
 multiPet: { sharedUse: supported, identificationMethods: [weight, cameraAi], individualProfiles: supported, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: supported, similarPetLimitation: { status: unknown, description: "WasteID belegt; Mindestgewichtsdifferenz nicht." }, evidenceSourceUrls: ["https://www.whisker.com/litter-robot-5-pro"] }
 evidenceSources:
-  - { source: "Whisker", url: "https://www.whisker.com/litter-robot-5-pro", accessedAt: "2026-08-06", assertion: "Dualkamera, WasteID, Gewichtsbereich, Mehrkatzenangabe und Whisker+-Abhängigkeit sind Herstellerangaben.", fields: ["specs", "decision", "strengths", "weaknesses"] }
+  - source: Whisker
+    url: https://www.whisker.com/litter-robot-5-pro
+    accessedAt: "2026-08-06"
+    assertion: Dualkamera, WasteID, Gewichtsbereich, Mehrkatzenangabe und Whisker+-Abhängigkeit sind Herstellerangaben.
+    fields:
+      - specs
+      - decision
+      - strengths
+      - weaknesses
+  - source: Whisker · Release Notes
+    url: https://www.whisker.com/app-releases
+    accessedAt: "2026-11-16"
+    assertion: >-
+      App 1.46.0 dokumentiert interne Besuchsaufnahmen; historische Testbeschränkung ist nicht mehr aktueller
+      Funktionsstand.
+    fields:
+      - experience
+    sourceType: manufacturer
 sensorLimits:
   minimumOperationalWeightKg: 1.36
   belowMinimumBehavior: unknown
   sourceUrl: https://www.whisker.com/litter-robot-5-pro
   sourceType: manufacturer
   verifiedAt: "2026-08-06"
+experience:
+  summary: >-
+    Whisker nennt zwei integrierte 1080p-Kameras, WasteID, Gewichts- und Besuchsprotokolle sowie bis zu fünf
+    Katzen.
+  reliability: >-
+    Der ältere Fremdtest konnte die interne Videoaufzeichnung noch nicht nutzen. Whisker dokumentiert sie mit
+    App 1.46.0 vom 10. November 2026 inzwischen für den Litter-Robot 5 Pro. Das ist ein neuer Softwarestand,
+    kein nachträglicher Praxistest. Verfügbarkeit, Firmware und gebuchter Dienstumfang am eigenen Gerät
+    prüfen.
 ---
 
 ## Sicherheitsgrenze
 
 Automatik erst aktivieren, wenn die Katze das dokumentierte Mindestgewicht erreicht, das Gerät waagerecht steht und alle Sensoren frei sind. Eine Kamera oder Gewichtskurve liefert Hinweise, aber keinen tierärztlichen Befund.
+
+## Recherche-Update vom 16. November 2026
+
+Der ältere Fremdtest konnte die interne Videoaufzeichnung noch nicht nutzen. Whisker dokumentiert sie mit App 1.46.0 vom 10. November 2026 inzwischen für den Litter-Robot 5 Pro. Das ist ein neuer Softwarestand, kein nachträglicher Praxistest. Verfügbarkeit, Firmware und gebuchter Dienstumfang am eigenen Gerät prüfen. [Whisker · Release Notes](https://www.whisker.com/app-releases)

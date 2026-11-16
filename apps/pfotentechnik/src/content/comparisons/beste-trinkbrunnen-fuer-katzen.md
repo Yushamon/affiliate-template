@@ -7,7 +7,7 @@ description: >-
   Vierzehn Katzenbrunnen nach Trinkfläche, Material, Reinigung, Filter, Lautstärke, Stromversorgung und Mehrkatzen-Eignung
   vergleichen.
 publishedAt: "2026-07-24"
-updatedAt: "2026-11-04"
+updatedAt: "2026-11-16"
 author:
   name: PfotenTechnik Redaktion
   role: Redaktion
@@ -496,3 +496,9 @@ Der **PETLIBRO Dockstream 2 Smart** lohnt sich, wenn Trinkereignisse und Wassera
 Viele Käufer optimieren Lautstärke und Filterstufen, aber nicht den Reinigungsweg. Zerlege das Wunschmodell gedanklich bis zum Rotor: Wie viele Dichtungen, Kanäle und kleine Bürsten sind nötig, und welche Teile dürfen in die Spülmaschine? Ein etwas einfacherer Brunnen, der alle zwei Tage wirklich gereinigt wird, ist im Alltag sinnvoller als ein aufwendiges UVC- oder App-System, dessen Pumpenkammer unangetastet bleibt.
 
 Bei mehreren Katzen sind zwei einfache Trinkorte oft informativer und stressärmer als ein einzelner Premiumbrunnen. Unterschiedliche Standorte zeigen außerdem, ob eine Katze fließendes Wasser meidet oder nur den gewählten Platz nicht akzeptiert.
+
+## Ergänzende Quellenprüfung vom 16. November 2026
+
+Beim **Philips PAW3210/02** berichtet [Lyd & Bilde](https://www.lydogbilde.no/test/smart-hjem/6-smarte-for-og-vannautomater-til-kjaeledyr/philips-water-fountain-paw3210/), dass das Testgerät nach Stromunterbrechung erst per Tastendruck wieder anlief. Wiederanlauf am eigenen Gerät kontrollieren und einen zugänglichen Wassernapf vorsehen. Das ist eine konkrete Fremdbeobachtung, keine veröffentlichte Ausfallquote.
+
+Beim **Xiaomi Smart Pet Fountain 2** ist App-Steuerung keine Trinkmengenmessung: [Les Numériques](https://www.lesnumeriques.com/objet-connecte/xiaomi-smart-pet-fountain-2-p76349/test.html) bestätigt ausdrücklich die fehlende Verbrauchserfassung. Ein zusätzlicher Brook-Haushaltsbericht stammt aus den USA und nutzt ein gestelltes Testgerät; daraus folgen keine deutschen Liefer- oder Ersatzteilzusagen. Die Auswahl und ihre Einsatzrollen bleiben erhalten.

@@ -14,7 +14,7 @@ manufacturer:
 category: { key: "automatische-katzentoiletten", label: "Automatische Katzentoiletten", path: "/automatische-katzentoiletten/" }
 productUrl: "/produkt/petkit-puramax-2/"
 publishedAt: "2026-08-16"
-updatedAt: "2026-08-16"
+updatedAt: "2026-11-16"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 seo:
   title: "PETKIT PuraMax 2: Einstieg, Sensoren und Folgekosten"
@@ -80,52 +80,70 @@ ratings:
   wartung: 4.4
 externalEvidence:
   professionalReviews:
-  - publisher: WIRED
-    title: Our Favorite Automatic Litter Box for Most People Is on Sale
-    url: https://www.wired.com/story/petkit-puramax-2-prime-big-deal-day-deal
-    checkedAt: '2026-08-16'
-    methodology: hands-on
-    positives:
-    - Sehr starke Geruchskontrolle, einfache Nutzung und rückenschonendes Nachfüllen.
-    - Für die meisten Haushalte als besonders ausgewogene PETKIT-Option empfohlen.
-    negatives:
-    - App- und Verbrauchsmaterial-Abhängigkeit bleiben Teil des Systems.
-    publishedAt: '2025-10-07'
-  - publisher: The Spruce Pets
-    title: The 10 Best Automatic Litter Boxes, Tested and Reviewed
-    url: https://www.thesprucepets.com/best-automatic-litter-boxes-4684419
-    checkedAt: '2026-08-16'
-    methodology: hands-on
-    positives:
-    - Niedriger Einstieg, leiser Betrieb und gute Geruchskontrolle.
-    negatives:
-    - App wurde im Test als umständlich beschrieben.
+    - publisher: WIRED
+      title: Our Favorite Automatic Litter Box for Most People Is on Sale
+      url: https://www.wired.com/story/petkit-puramax-2-prime-big-deal-day-deal
+      checkedAt: "2026-08-16"
+      methodology: hands-on
+      positives:
+        - Sehr starke Geruchskontrolle, einfache Nutzung und rückenschonendes Nachfüllen.
+        - Für die meisten Haushalte als besonders ausgewogene PETKIT-Option empfohlen.
+      negatives:
+        - App- und Verbrauchsmaterial-Abhängigkeit bleiben Teil des Systems.
+      publishedAt: "2025-10-07"
+    - publisher: The Spruce Pets
+      title: The 10 Best Automatic Litter Boxes, Tested and Reviewed
+      url: https://www.thesprucepets.com/best-automatic-litter-boxes-4684419
+      checkedAt: "2026-08-16"
+      methodology: hands-on
+      positives:
+        - Niedriger Einstieg, leiser Betrieb und gute Geruchskontrolle.
+      negatives:
+        - App wurde im Test als umständlich beschrieben.
+    - publisher: Cats.com
+      title: PETKIT PuraMax 2 Automatic Litter Box Review
+      url: https://cats.com/petkit-puramax-2-automatic-litter-box-review
+      checkedAt: "2026-11-16"
+      methodology: hands-on
+      positives:
+        - Abdichtung und tägliches Aussieben überzeugten bei kleineren Testkatzen.
+      negatives:
+        - Entleeren und Grundreinigung wurden als mühsam beschrieben; harter ebener Boden erforderlich.
+      findings:
+        - >-
+          Auf Teppich wurde die Automatik im Test deaktiviert und das Gewicht ungenau. Daraus keine bestätigte
+          sichere Automatik auf Teppich ableiten.
   userReviews:
-  - platform: Trustpilot · PETKIT gesamt
-    url: https://de.trustpilot.com/review/petkit.com
-    checkedAt: '2026-08-16'
-    rating: 3.1
-    scale: 5
-    reviewCount: 140
-    recurringPositives:
-    - Einzelne aktuelle Bewertungen nennen PuraMax/PuraMax 2 ausdrücklich positiv.
-    recurringCriticism:
-    - Das markenweite Signal enthält zugleich viel Kritik zu Support, Lieferung und Defekten.
+    - platform: Trustpilot · PETKIT gesamt
+      url: https://de.trustpilot.com/review/petkit.com
+      checkedAt: "2026-08-16"
+      rating: 3.1
+      scale: 5
+      reviewCount: 140
+      recurringPositives:
+        - Einzelne aktuelle Bewertungen nennen PuraMax/PuraMax 2 ausdrücklich positiv.
+      recurringCriticism:
+        - Das markenweite Signal enthält zugleich viel Kritik zu Support, Lieferung und Defekten.
   consensus:
     strengths:
-    - finding: Geruchskontrolle, Reinigungskomfort und niedriger Einstieg werden in unabhängigen Tests konsistent gestützt.
-      sourceCount: 2
-      confidence: high
+      - finding: >-
+          Geruchskontrolle, Reinigungskomfort und niedriger Einstieg werden in unabhängigen Tests konsistent
+          gestützt.
+        sourceCount: 2
+        confidence: high
     weaknesses:
-    - finding: App-Bedienung und laufende Verbrauchsmaterialien bleiben relevante Nachteile.
-      sourceCount: 2
-      confidence: medium
-    - finding: Trustpilot ist markenweit und darf nicht als PuraMax-2-Produktnote gelesen werden.
-      sourceCount: 1
-      confidence: high
-    editorialAssessment: PfotenTechnik-Kriterienbewertung aus unabhängigen Praxistests und Herstellerdaten; externe Sterne
-      werden nicht in den PfotenTechnik-Score kopiert.
-  note: Kein eigener PfotenTechnik-Praxistest. Markenweite Nutzerbewertungen sind getrennt gekennzeichnet.
+      - finding: App-Bedienung und laufende Verbrauchsmaterialien bleiben relevante Nachteile.
+        sourceCount: 2
+        confidence: medium
+      - finding: Trustpilot ist markenweit und darf nicht als PuraMax-2-Produktnote gelesen werden.
+        sourceCount: 1
+        confidence: high
+    editorialAssessment: >-
+      PfotenTechnik-Kriterienbewertung aus unabhängigen Praxistests und Herstellerdaten; externe Sterne werden
+      nicht in den PfotenTechnik-Score kopiert.
+  note: >-
+    Kein eigener PfotenTechnik-Praxistest. Modell-, Länder-, Tarif- und Testzeitpunktgrenzen der Fremdquellen
+    beachten; keine Übernahme fremder Noten.
 decision:
   bestFor:
     - "Katzen von 1,5 bis 10 kg und laut Hersteller ab sechs Monaten"
@@ -139,7 +157,12 @@ review:
   summary: "PuraMax 2 besetzt die PETKIT-Rolle einer geschlossenen Trommel ohne Kamera und trennt sie damit klar vom PUROBOT MAX PRO 2."
   verdict: "Datenbasierte Option für passenden Einstieg und Stellplatz; Streu, Sicherheitsgrenzen und Verbrauchsmaterial vor dem Kauf prüfen."
 strengths: ["20-cm-Einstieg", "76-Liter-Zylinder", "Elf Sensoren laut Hersteller", "App-Protokolle ohne Kamera"]
-weaknesses: ["Geschlossene Bauform", "Gewichts- und Altersgrenzen", "Proprietäres Geruchszubehör", "Nur 2,4-GHz-WLAN"]
+weaknesses:
+  - Geschlossene Bauform
+  - Gewichts- und Altersgrenzen
+  - Proprietäres Geruchszubehör
+  - Nur 2,4-GHz-WLAN
+  - "Cats.com: aufwendige Grundreinigung; automatische Nutzung auf Teppich nicht bestätigt"
 specs:
   - { label: "Modell", value: "P9902" }
   - { label: "Abmessungen", value: "620 × 538 × 552 mm" }
@@ -193,39 +216,73 @@ editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentati
 litterCompatibility: { status: partial, compatibleTypes: [bentonite, mineral-clumping, tofu, mixed], conditionalTypes: [], incompatibleTypes: [non-clumping], clumpingRequirement: required, grainSize: { maxLengthMm: 12, maxDiameterMm: 3 }, notes: ["Klumpende Ton-, Tofu- und Mischstreu innerhalb der Partikelgrenze sind dokumentiert."], researchedAt: "2026-09-03", evidence: [{ source: "PETKIT PuraMax 2", url: "https://www.petkit.com/products/puramax-2-ultimate-bundles", sourceType: manufacturer, verifiedAt: "2026-09-03", assertion: "Hersteller nennt klumpende Ton-, Tofu- und Mischstreu bis 12 mm Länge und 3 mm Durchmesser." }] }
 multiPet: { sharedUse: supported, identificationMethods: [weight], individualProfiles: partial, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: partial, similarPetLimitation: { status: unknown, description: "Keine Mindestgewichtsdifferenz abgesichert." }, evidenceSourceUrls: ["https://www.petkit.com/products/petkit-puramax-2"] }
 evidenceSources:
-  - { source: "PETKIT PuraMax 2", url: "https://www.petkit.com/products/petkit-puramax-2", accessedAt: "2026-08-16", assertion: "Modell, Abmessungen, Kapazität, Katzenprofil, Sensorik, App und Streukompatibilität sind Herstellerangaben.", fields: ["specs", "decision", "comparisonData"] }
-  - { source: "PETKIT PuraMax 2 Bedienungsanleitung", url: "https://instructions.petkit.com/App%20Manual/T4-2/T4-2_User%20Manual_EN_V1.1_250305_%20.pdf", accessedAt: "2026-08-16", assertion: "Strom, Funk, Gewichts- und Betriebsgrenzen stammen aus der Herstelleranleitung.", fields: ["specs", "faq"] }
-  - source: "WIRED · PuraMax 2"
-    url: "https://www.wired.com/story/petkit-puramax-2-prime-big-deal-day-deal"
+  - source: PETKIT PuraMax 2
+    url: https://www.petkit.com/products/petkit-puramax-2
     accessedAt: "2026-08-16"
-    assertion: "Praxistest zu Geruch, Alltag und Nachfüllen."
+    assertion: >-
+      Modell, Abmessungen, Kapazität, Katzenprofil, Sensorik, App und Streukompatibilität sind
+      Herstellerangaben.
     fields:
-      - "ratings"
-      - "externalEvidence"
-  - source: "The Spruce Pets · Automatic Litter Boxes"
-    url: "https://www.thesprucepets.com/best-automatic-litter-boxes-4684419"
+      - specs
+      - decision
+      - comparisonData
+  - source: PETKIT PuraMax 2 Bedienungsanleitung
+    url: https://instructions.petkit.com/App%20Manual/T4-2/T4-2_User%20Manual_EN_V1.1_250305_%20.pdf
     accessedAt: "2026-08-16"
-    assertion: "Vergleichstest zu Geruch, Einstieg, Sensorik und App."
+    assertion: Strom, Funk, Gewichts- und Betriebsgrenzen stammen aus der Herstelleranleitung.
     fields:
-      - "ratings"
-      - "externalEvidence"
-  - source: "Trustpilot · PETKIT"
-    url: "https://de.trustpilot.com/review/petkit.com"
+      - specs
+      - faq
+  - source: WIRED · PuraMax 2
+    url: https://www.wired.com/story/petkit-puramax-2-prime-big-deal-day-deal
     accessedAt: "2026-08-16"
-    assertion: "Markenweites Nutzersignal; nicht produktspezifisch."
+    assertion: Praxistest zu Geruch, Alltag und Nachfüllen.
     fields:
-      - "ratings"
-      - "externalEvidence"
+      - ratings
+      - externalEvidence
+  - source: The Spruce Pets · Automatic Litter Boxes
+    url: https://www.thesprucepets.com/best-automatic-litter-boxes-4684419
+    accessedAt: "2026-08-16"
+    assertion: Vergleichstest zu Geruch, Einstieg, Sensorik und App.
+    fields:
+      - ratings
+      - externalEvidence
+  - source: Trustpilot · PETKIT
+    url: https://de.trustpilot.com/review/petkit.com
+    accessedAt: "2026-08-16"
+    assertion: Markenweites Nutzersignal; nicht produktspezifisch.
+    fields:
+      - ratings
+      - externalEvidence
+  - source: Cats.com
+    url: https://cats.com/petkit-puramax-2-automatic-litter-box-review
+    accessedAt: "2026-11-16"
+    assertion: >-
+      Abdichtung und tägliches Aussieben überzeugten bei kleineren Testkatzen. Entleeren und Grundreinigung
+      wurden als mühsam beschrieben; harter ebener Boden erforderlich.
+    fields:
+      - externalEvidence
+    sourceType: independentSource
+  - source: Cats.com
+    url: https://cats.com/petkit-puramax-2-automatic-litter-box-review
+    accessedAt: "2026-11-16"
+    assertion: Tägliches Aussieben und Grundreinigung getrennt bewerten; Teppich-Aufstellung im Test eingeschränkt.
+    fields:
+      - experience
+    sourceType: independentSource
 experience:
   summary: >-
-    Redaktionelle Einordnung aus Herstellerdokumentation, unabhängigen Tests und dokumentierten Nutzersignalen.
-    PfotenTechnik behauptet für dieses Produkt keinen eigenen Praxistest.
+    Redaktionelle Einordnung aus Herstellerdokumentation, unabhängigen Tests und dokumentierten
+    Nutzersignalen. PfotenTechnik behauptet für dieses Produkt keinen eigenen Praxistest.
   methodology: >-
-    Herstellerangaben werden getrennt von professionellen Tests und Nutzerbewertungen ausgewertet.
-    Externe Sterne werden nicht direkt in den PfotenTechnik-Score übernommen.
+    Herstellerangaben werden getrennt von professionellen Tests und Nutzerbewertungen ausgewertet. Externe
+    Sterne werden nicht direkt in den PfotenTechnik-Score übernommen.
   reliability: >-
-    Langzeit- und Zuverlässigkeitsaussagen werden nur so stark gewichtet, wie sie durch die
-    angegebenen Quellen gedeckt sind.
+    Langzeit- und Zuverlässigkeitsaussagen werden nur so stark gewichtet, wie sie durch die angegebenen
+    Quellen gedeckt sind. Cats.com berichtet positiv über Abdichtung und tägliches Aussieben, kritisiert aber
+    Entleerung und Grundreinigung. Der Test fand aus Platzgründen auf Teppich mit deaktivierter
+    Reinigungsautomatik statt; die Gewichtserfassung war dort ungenau. Das belegt keine sichere automatische
+    Nutzung auf Teppich. Stellplatz und Herstelleranleitung bleiben maßgeblich.
 sensorLimits:
   minimumOperationalWeightKg: 1.5
   belowMinimumBehavior: unknown
@@ -239,3 +296,7 @@ sensorLimits:
 Der PuraMax 2 ist die PETKIT-Trommeloption ohne Kamera. Sein Mehrwert liegt nicht in übertragenen PUROBOT-Funktionen, sondern im 20-cm-Einstieg, der dokumentierten Streukompatibilität und der App-basierten Nutzungs- und Gewichtserfassung. Diese Daten können Veränderungen sichtbar machen, ersetzen aber keine tierärztliche Diagnose.
 
 Der [Kaufcheck](/automatische-katzentoiletten/) erklärt Ausschlusskriterien; der [Vergleich](/vergleiche/beste-automatische-katzentoiletten/) ordnet die Plattform gegenüber offenen, kameraorientierten und stärker geschlossenen Systemen ein.
+
+## Recherche-Update vom 16. November 2026
+
+Cats.com berichtet positiv über Abdichtung und tägliches Aussieben, kritisiert aber Entleerung und Grundreinigung. Der Test fand aus Platzgründen auf Teppich mit deaktivierter Reinigungsautomatik statt; die Gewichtserfassung war dort ungenau. Das belegt keine sichere automatische Nutzung auf Teppich. Stellplatz und Herstelleranleitung bleiben maßgeblich. [Cats.com](https://cats.com/petkit-puramax-2-automatic-litter-box-review)

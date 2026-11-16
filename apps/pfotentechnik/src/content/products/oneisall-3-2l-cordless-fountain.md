@@ -21,7 +21,7 @@ category:
   path: /trinkbrunnen/
 productUrl: /produkt/oneisall-3-2l-cordless-fountain/
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-23"
+updatedAt: "2026-11-16"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -144,8 +144,8 @@ weaknesses:
   - keine UV-Desinfektion
 experience:
   summary: >-
-    Der PW14 ist seit Ende 2025 am Markt. Das Konzept mit größerem Tank, Edelstahl-Trinkfläche und drei Betriebsmodi ist
-    schlüssig, aber mehrjährige Langzeiterfahrungen sind noch begrenzt.
+    Der PW14 ist seit Ende 2025 am Markt. Das Konzept mit größerem Tank, Edelstahl-Trinkfläche und drei
+    Betriebsmodi ist schlüssig, aber mehrjährige Langzeiterfahrungen sind noch begrenzt.
   positives:
     - mehr Reserve als beim 2,2-Liter-PW13
     - Edelstahl-Trinkfläche lässt sich glatter reinigen als eine reine Kunststoffschale
@@ -157,12 +157,16 @@ experience:
     - ABS-Tank kann mit der Zeit Kratzer und schwer lösbare Beläge entwickeln
     - Filterwechsel kann bei mehreren Tieren häufiger nötig sein als beworben
   methodology: >-
-    Redaktionelle Einordnung anhand der aktuellen oneisall-Produktseite, des offiziellen Supportbereichs und der
-    PW14-Anleitung; kein eigener Langzeit-, Akku-, Lautstärke-, Sensor- oder Hygienetest.
+    Redaktionelle Einordnung anhand der aktuellen oneisall-Produktseite, des offiziellen Supportbereichs und
+    der PW14-Anleitung; kein eigener Langzeit-, Akku-, Lautstärke-, Sensor- oder Hygienetest.
   maintenance: >-
-    Filter vor der ersten Verwendung fünf Minuten einweichen. Trinkfläche, Tank und Filterhalter mindestens alle ein bis
-    zwei Wochen reinigen, Wasser deutlich häufiger erneuern und Filter je nach Verschmutzung ungefähr alle zwei bis vier
-    Wochen ersetzen. Steuermodul und Ladebereich nicht eintauchen.
+    Filter vor der ersten Verwendung fünf Minuten einweichen. Trinkfläche, Tank und Filterhalter mindestens
+    alle ein bis zwei Wochen reinigen, Wasser deutlich häufiger erneuern und Filter je nach Verschmutzung
+    ungefähr alle zwei bis vier Wochen ersetzen. Steuermodul und Ladebereich nicht eintauchen.
+  reliability: >-
+    Der Herstellersupport führt dieses Modell als PW14. Die 2,2-Liter-Version PW13 und die 3,2-Liter-Version
+    PW14 sind getrennte Geräte; Tests und Ersatzteile einer anderen Volumenvariante werden nicht übertragen.
+    Ein belastbarer neuer unabhängiger Modelltest wurde nicht gefunden.
 alternatives:
   - oneisall-2-2l-cordless-fountain
   - oneisall-3-5l-cordless-fountain
@@ -224,16 +228,20 @@ specs:
   - label: Gewicht
     value: ca. 0,65 kg
   - label: Lieferumfang
-    value: Brunnen, Edelstahl-Trinkfläche, Pumpeneinheit, Filter, Bürste, USB-C-Kabel, 5-V/1-A-Adapter und Anleitung
+    value: >-
+      Brunnen, Edelstahl-Trinkfläche, Pumpeneinheit, Filter, Bürste, USB-C-Kabel, 5-V/1-A-Adapter und
+      Anleitung
   - label: Garantie
     value: 2 Jahre laut oneisall
   - label: Geeignet für
     value: Katzen und kleine Hunde
   - label: Reinigung
     value: >-
-      Filter vor der ersten Verwendung fünf Minuten einweichen. Trinkfläche, Tank und Filterhalter mindestens alle ein
-      bis zwei Wochen reinigen, Wasser deutlich häufiger erneuern und Filter je nach Verschmutzung ungefähr alle zwei
-      bis vier Wochen ersetzen. Steuermodul und Ladebereich nicht eintauchen.
+      Filter vor der ersten Verwendung fünf Minuten einweichen. Trinkfläche, Tank und Filterhalter mindestens
+      alle ein bis zwei Wochen reinigen, Wasser deutlich häufiger erneuern und Filter je nach Verschmutzung
+      ungefähr alle zwei bis vier Wochen ersetzen. Steuermodul und Ladebereich nicht eintauchen.
+  - label: Herstellermodell
+    value: PW14
 faq:
   - question: Ist der oneisall PW14 vollständig aus Edelstahl?
     answer: Nein. Die obere Trinkfläche besteht aus Edelstahl 304. Der eigentliche 3,2-Liter-Tank besteht aus ABS-Kunststoff.
@@ -373,19 +381,27 @@ evidenceSources:
     accessedAt: "2026-07-23"
     sourceType: manufacturer
     assertion: >-
-      Bereits dokumentierte technische Daten: Kapazität: 3,2 Liter beziehungsweise 108 fl. oz.; Material: ABS-Tank mit
-      Trinkfläche aus Edelstahl 304; Akkulaufzeit: Herstellerangabe bis zu 30 Tage; abhängig von Betriebsmodus und
-      Nutzung; Lautstärke: Herstellerangabe ungefähr 20 dB; Pumpe: abnehmbare kabellose SilentFlow-Pumpeneinheit;
-      Reinigung: Filter vor der ersten Verwendung fünf Minuten einweichen. Trinkfläche, Tank und Filterhalter mindestens
-      alle ein bis zwei Wochen reinigen, Wasser deutlich häufiger erneuern und Filter je nach Verschmutzung ungefähr alle
-      zwei bis vier Wochen ersetzen. Steuermodul und Ladebereich nicht eintauchen.. Normalisierung des vorhandenen
-      Quellenstands, keine erneute externe Prüfung.
+      Bereits dokumentierte technische Daten: Kapazität: 3,2 Liter beziehungsweise 108 fl. oz.; Material:
+      ABS-Tank mit Trinkfläche aus Edelstahl 304; Akkulaufzeit: Herstellerangabe bis zu 30 Tage; abhängig von
+      Betriebsmodus und Nutzung; Lautstärke: Herstellerangabe ungefähr 20 dB; Pumpe: abnehmbare kabellose
+      SilentFlow-Pumpeneinheit; Reinigung: Filter vor der ersten Verwendung fünf Minuten einweichen.
+      Trinkfläche, Tank und Filterhalter mindestens alle ein bis zwei Wochen reinigen, Wasser deutlich
+      häufiger erneuern und Filter je nach Verschmutzung ungefähr alle zwei bis vier Wochen ersetzen.
+      Steuermodul und Ladebereich nicht eintauchen.. Normalisierung des vorhandenen Quellenstands, keine
+      erneute externe Prüfung.
     fields:
       - comparisonData.fountain.capacityLiters
       - comparisonData.fountain.material
       - comparisonData.fountain.powerType
       - comparisonData.fountain.pumpRemovable
       - comparisonData.fountain.batteryRuntime
+  - source: oneisall · Modellbezogener Support
+    url: https://oneisall.com/pages/support-fountains
+    accessedAt: "2026-11-16"
+    assertion: Herstellersupport ordnet PW14 eindeutig der jeweiligen Volumenvariante zu.
+    fields:
+      - experience
+    sourceType: manufacturer
 ---
 Der oneisall PW14 ist ein kabelloser Trinkbrunnen mit 3,2 Litern Wasserreserve. Gegenüber dem kleineren PW13 bietet er mehr Volumen und eine Trinkfläche aus Edelstahl 304.
 
@@ -483,3 +499,7 @@ Die Bewertung ist eine redaktionelle Einordnung. Akkulaufzeit, Lautstärke, Sens
 Im Vergleich zum älteren oneisall 3,5-Liter-Modell wirkt der PW14 insgesamt ausgereifter. Die Bedienung wurde vereinfacht, die Warnanzeigen verbessert und die kabellose Pumpeneinheit erleichtert die regelmäßige Reinigung. Zwar fällt die Wasserkapazität etwas geringer aus, im Alltag überwiegen jedoch die Vorteile bei Bedienkomfort und Alltagstauglichkeit.
 
 Für die meisten Haushalte mit einer oder zwei Katzen ist dieses Modell deshalb die empfehlenswertere Wahl innerhalb der oneisall-Serie, sofern keine maximale Wasserreserve im Vordergrund steht.
+
+## Recherche-Update vom 16. November 2026
+
+Der Herstellersupport führt dieses Modell als PW14. Die 2,2-Liter-Version PW13 und die 3,2-Liter-Version PW14 sind getrennte Geräte; Tests und Ersatzteile einer anderen Volumenvariante werden nicht übertragen. Ein belastbarer neuer unabhängiger Modelltest wurde nicht gefunden. [oneisall · Modellbezogener Support](https://oneisall.com/pages/support-fountains)

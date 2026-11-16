@@ -150,7 +150,7 @@ specs:
 evidenceSources:
   - source: mova-de
     url: https://de.mova.tech/products/suretrack-pro-gps-tiertracker
-    accessedAt: '2026-11-16T10:02:39.281Z'
+    accessedAt: "2026-11-16T10:02:39.281Z"
     assertion: Offizielle modellbezogene Angaben zu Masse, Schutzart, App und bedingter Laufzeit. Keine eigene Messung.
     fields:
       - specs
@@ -159,42 +159,83 @@ evidenceSources:
     sourceType: manufacturer
   - source: mova-variant
     url: https://de.mova.tech/products/suretrack-pro-gps-tiertracker.js
-    accessedAt: '2026-11-16T10:02:37.844Z'
+    accessedAt: "2026-11-16T10:02:37.844Z"
     assertion: Ausgewählte EU-/DE-Variante, SKU und aktueller Preis in Euro.
     fields:
       - mpn
       - price
     sourceType: officialStore
   - source: mova-connect
-    url: https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html
-    accessedAt: '2026-11-16T10:02:39.609Z'
-    assertion: Unabhängiger GPS-Tracker-Vergleich behandelt MOVA SureTrack Pro, SATELLAI Collar Go und Tractive DOG 6 ausdrücklich. Keine Übernahme fremder Testnoten als eigene Bewertung.
+    url: >-
+      https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html
+    accessedAt: "2026-11-16T10:02:39.609Z"
+    assertion: >-
+      Unabhängiger GPS-Tracker-Vergleich behandelt MOVA SureTrack Pro, SATELLAI Collar Go und Tractive DOG 6
+      ausdrücklich. Keine Übernahme fremder Testnoten als eigene Bewertung.
     fields:
       - experience
       - review
     sourceType: independentSource
   - source: mova-test
     url: https://produkte-im-test.de/mova-suretrack-pro-im-praxistest/
-    accessedAt: '2026-11-16T10:02:40.692Z'
+    accessedAt: "2026-11-16T10:02:40.692Z"
     assertion: Eigenständiger Praxistest; kostenlos vom Hersteller gestelltes Testgerät wird offengelegt.
     fields:
       - externalEvidence
     sourceType: independentSource
   - source: connect – modellübergreifender Praxistest
-    url: https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html
-    accessedAt: '2026-11-16T00:00:00.000Z'
-    assertion: Direkter Vergleich von App, Laufzeit und Gerätemasse; Protokoll und Betriebsbedingungen sind keine universellen Dauerwerte.
+    url: >-
+      https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html
+    accessedAt: "2026-11-16T00:00:00.000Z"
+    assertion: >-
+      Direkter Vergleich von App, Laufzeit und Gerätemasse; Protokoll und Betriebsbedingungen sind keine
+      universellen Dauerwerte.
     fields:
       - ratings
       - experience.methodology
     sourceType: independentSource
   - source: F.A.Z. Kaufkompass – SureTrack Pro
     url: https://www.faz.net/kaufkompass/test/der-beste-gps-tracker-fuer-hunde/
-    accessedAt: '2026-11-16T00:00:00.000Z'
+    accessedAt: "2026-11-16T00:00:00.000Z"
     assertion: Abweichende Erfahrung mit Sicherheitszonen; Funktionsumfang und Einrichtung werden kritisch eingeordnet.
     fields:
       - ratings
       - experience.methodology
+    sourceType: independentSource
+  - source: connect
+    url: >-
+      https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html
+    accessedAt: "2026-11-16"
+    assertion: >-
+      Positionierung positiv beurteilt; leichteres Gerät im direkten Vergleich. Begrenzter App-Umfang;
+      Laufzeit im Test etwa drei bis vier Tage.
+    fields:
+      - externalEvidence
+    sourceType: independentSource
+  - source: F.A.Z. Kaufkompass
+    url: https://www.faz.net/kaufkompass/test/der-beste-gps-tracker-fuer-hunde/
+    accessedAt: "2026-11-16"
+    assertion: >-
+      Position in der App abrufbar. Geofence-Warnungen blieben im Test aus; Einrichtung und Übersetzung wurden
+      kritisiert.
+    fields:
+      - externalEvidence
+    sourceType: independentSource
+  - source: Produkte im Test
+    url: https://produkte-im-test.de/mova-suretrack-pro-im-praxistest/
+    accessedAt: "2026-11-16"
+    assertion: >-
+      Standort des Hundes im Versuch auffindbar. Wiederholt keine Geofence-Warnung; Spaziergangsaufzeichnungen
+      brachen häufig ab.
+    fields:
+      - externalEvidence
+    sourceType: independentSource
+  - source: Produkte im Test
+    url: https://produkte-im-test.de/mova-suretrack-pro-im-praxistest/
+    accessedAt: "2026-11-16"
+    assertion: Ortung und automatische Fluchtwarnung getrennt bewerten; kein Nachweis eines allgemeinen Defekts.
+    fields:
+      - experience
     sourceType: independentSource
 priceAutomation: automatic
 price:
@@ -218,26 +259,40 @@ description: >-
   GPS-Tracker für Hunde und Katzen ab 3,5 kg mit Sprach-Fernrückruf, App und Mobilfunk-Abo; 36,4 g laut
   Hersteller.
 recommendation: >-
-  Für Halter mit Mobilfunkabdeckung und Bereitschaft zu laufenden Abo-Kosten; Rückrufsignale erfordern
-  Gewöhnung und ersetzen kein Training.
+  Für Halter, die Sprachkontakt und geringes Gewicht suchen und die Warnfunktionen vor Ort prüfen. Wegen
+  ausgebliebener Geofence-Alarme in Fremdtests keine verlässliche alleinige Ausbruchsicherung.
 review:
   summary: >-
     GPS-Tracker für Hunde und Katzen ab 3,5 kg mit Sprach-Fernrückruf, App und Mobilfunk-Abo; 36,4 g laut
     Hersteller.
   verdict: >-
-    Für Halter mit Mobilfunkabdeckung und Bereitschaft zu laufenden Abo-Kosten; Rückrufsignale erfordern
-    Gewöhnung und ersetzen kein Training.
+    Für Halter, die Sprachkontakt und geringes Gewicht suchen und die Warnfunktionen vor Ort prüfen. Wegen
+    ausgebliebener Geofence-Alarme in Fremdtests keine verlässliche alleinige Ausbruchsicherung.
 decision:
   bestFor:
-    - Ausbruchwarnungen und Standortverlauf
+    - Sprachkontakt und Standortabfrage bei vorhandenem Mobilfunkempfang
     - Tiere mit passender Halsbandbefestigung
   attention:
     - Netzempfang und aktiver Tarif erforderlich
     - Hersteller-Maximallaufzeit ist kein Dauerwert
     - Gesundheitstrends liefern keine Diagnose
+    - Fremdtests melden ausgebliebene Geofence-Warnungen
 experience:
-  summary: Für Halter mit Mobilfunkabdeckung und Bereitschaft zu laufenden Abo-Kosten; Rückrufsignale erfordern Gewöhnung und ersetzen kein Training.
-  methodology: 'Redaktionelle Datenbewertung, kein eigener Praxistest. Ortung 3,0/5: connect beurteilt die Positionierung positiv, F.A.Z. Kaufkompass meldet ausgebliebene Geofence-Alarme. App 3,0/5: verständlich, aber eingeschränkter Funktionsumfang. Akku 2,5/5: Fremdtests berichten etwa drei bis vier Tage. Tragekomfort 3,5/5: Gewichtsvorteil mit 36,4 g; keine eigene Tragemessung. Kosten 2,5/5: Pflicht-Abo. Kriterien gleich gewichtet; Gerätepreis und Provision ohne Einfluss. Widersprüchliche Testerfahrungen erlauben keine Zuverlässigkeitsgarantie.'
+  summary: >-
+    Für Halter, die Sprachkontakt und geringes Gewicht suchen und die Warnfunktionen vor Ort prüfen. Wegen
+    ausgebliebener Geofence-Alarme in Fremdtests keine verlässliche alleinige Ausbruchsicherung.
+  methodology: >-
+    Redaktionelle Datenbewertung, kein eigener Praxistest. Ortung 3,0/5: connect beurteilt die Positionierung
+    positiv, F.A.Z. Kaufkompass meldet ausgebliebene Geofence-Alarme. App 3,0/5: verständlich, aber
+    eingeschränkter Funktionsumfang. Akku 2,5/5: Fremdtests berichten etwa drei bis vier Tage. Tragekomfort
+    3,5/5: Gewichtsvorteil mit 36,4 g; keine eigene Tragemessung. Kosten 2,5/5: Pflicht-Abo. Kriterien gleich
+    gewichtet; Gerätepreis und Provision ohne Einfluss. Widersprüchliche Testerfahrungen erlauben keine
+    Zuverlässigkeitsgarantie.
+  reliability: >-
+    Der zusätzlich ausgewertete Praxistest konnte den Standort finden, erhielt aber wiederholt keine
+    Geofence-Warnung und meldete abgebrochene Streckenaufzeichnungen. Das kostenlos gestellte Testgerät wird
+    offengelegt. Diese Erfahrung stützt die bereits vorsichtige Bewertung; eine funktionierende Karte
+    bestätigt keine funktionierenden Warnungen.
 subscription:
   status: required-subscription
   requiredForCoreFunction: true
@@ -290,17 +345,65 @@ comparisonFilters:
     - medium
     - large
   foodType: []
+externalEvidence:
+  professionalReviews:
+    - publisher: connect
+      title: "GPS-Tracker für Hunde: Tractive DOG 6, SATELLAI Collar Go und MOVA SureTrack Pro"
+      url: >-
+        https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html
+      publishedAt: "2026-11-10"
+      checkedAt: "2026-11-16"
+      methodology: hands-on
+      positives:
+        - Positionierung positiv beurteilt; leichteres Gerät im direkten Vergleich.
+      negatives:
+        - Begrenzter App-Umfang; Laufzeit im Test etwa drei bis vier Tage.
+      findings:
+        - Direkter Modellvergleich; keine eigene Messung.
+    - publisher: F.A.Z. Kaufkompass
+      title: Der beste GPS-Tracker für Hunde
+      url: https://www.faz.net/kaufkompass/test/der-beste-gps-tracker-fuer-hunde/
+      checkedAt: "2026-11-16"
+      methodology: hands-on
+      positives:
+        - Position in der App abrufbar.
+      negatives:
+        - Geofence-Warnungen blieben im Test aus; Einrichtung und Übersetzung wurden kritisiert.
+      findings:
+        - Testprotokoll einer Redaktion, keine Häufigkeitsmessung über die Gerätepopulation.
+    - publisher: Produkte im Test
+      title: MOVA SureTrack Pro im Praxistest
+      url: https://produkte-im-test.de/mova-suretrack-pro-im-praxistest/
+      publishedAt: "2026-10-19"
+      checkedAt: "2026-11-16"
+      methodology: hands-on
+      positives:
+        - Standort des Hundes im Versuch auffindbar.
+      negatives:
+        - Wiederholt keine Geofence-Warnung; Spaziergangsaufzeichnungen brachen häufig ab.
+      findings:
+        - Testgerät kostenlos gestellt. Beschriebene zwei bis drei Tage Laufzeit sind nutzungsabhängig.
+  userReviews: []
+  consensus:
+    strengths: []
+    weaknesses: []
+    editorialAssessment: >-
+      Positive Ortungserfahrungen stehen ausgebliebenen Geofence-Warnungen in anderen Tests gegenüber. Der
+      Score 58 bleibt vorsichtig; Warnungen nicht als verlässliche Ausbruchsicherung behandeln.
+  note: >-
+    Kein eigener PfotenTechnik-Praxistest. Modell-, Länder-, Tarif- und Testzeitpunktgrenzen der Fremdquellen
+    beachten; keine Übernahme fremder Noten.
 ---
 
 ## Einordnung
 
 GPS-Tracker für Hunde und Katzen ab 3,5 kg mit Sprach-Fernrückruf, App und Mobilfunk-Abo; 36,4 g laut Hersteller.
 
-Für Halter mit Mobilfunkabdeckung und Bereitschaft zu laufenden Abo-Kosten; Rückrufsignale erfordern Gewöhnung und ersetzen kein Training.
+Für Halter, die Sprachkontakt und geringes Gewicht suchen und die Warnfunktionen vor Ort prüfen. Wegen ausgebliebener Geofence-Alarme in Fremdtests keine verlässliche alleinige Ausbruchsicherung.
 
 ## Geeignet und ungeeignet
 
-Ausbruchwarnungen und Standortverlauf; Tiere mit passender Halsbandbefestigung. Netzempfang und aktiver Tarif erforderlich. Hersteller-Maximallaufzeit ist kein Dauerwert. Gesundheitstrends liefern keine Diagnose.
+Sprachkontakt und Standortabfrage; Tiere mit passender Halsbandbefestigung. Netzempfang und aktiver Tarif erforderlich. Fremdtests melden ausgebliebene Geofence-Warnungen. Hersteller-Maximallaufzeit ist kein Dauerwert. Gesundheitstrends liefern keine Diagnose.
 
 ## Bewertung und Grenzen
 
@@ -323,3 +426,7 @@ Ein Mobilfunktarif ist für die Fernortung erforderlich. Empfang, Live-Ortung un
 - [mova-test](https://produkte-im-test.de/mova-suretrack-pro-im-praxistest/): Eigenständiger Praxistest; kostenlos vom Hersteller gestelltes Testgerät wird offengelegt. Abruf: 2026-11-16.
 
 - [F.A.Z. Kaufkompass: eigener GPS-Praxistest](https://www.faz.net/kaufkompass/test/der-beste-gps-tracker-fuer-hunde/): Abweichende Erfahrung mit Geofence-Alarmen; berücksichtigt bei Ortung und Bewertungsgrenzen. Abruf: 2026-11-16.
+
+## Recherche-Update vom 16. November 2026
+
+Der zusätzlich ausgewertete Praxistest konnte den Standort finden, erhielt aber wiederholt keine Geofence-Warnung und meldete abgebrochene Streckenaufzeichnungen. Das kostenlos gestellte Testgerät wird offengelegt. Diese Erfahrung stützt die bereits vorsichtige Bewertung; eine funktionierende Karte bestätigt keine funktionierenden Warnungen. [Produkte im Test](https://produkte-im-test.de/mova-suretrack-pro-im-praxistest/)

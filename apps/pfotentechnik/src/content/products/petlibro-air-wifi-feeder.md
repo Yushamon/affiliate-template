@@ -19,7 +19,7 @@ category:
   path: /smarte-futterautomaten/
 productUrl: /produkt/petlibro-air-wifi-feeder/
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-23"
+updatedAt: "2026-11-16"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -188,12 +188,18 @@ experience:
     - bei schwachem WLAN kann der Akku schneller entladen werden
   methodology: >-
     Redaktionelle Einordnung anhand der aktuellen PETLIBRO-Produktseite, der offiziellen Support- und
-    Modellinformationen sowie eines unabhängigen Vergleichstests mit realen Katzen; kein eigener Langzeit-, Akku-, App-,
-    Portionierungs- oder Ausfallsicherheitstest.
+    Modellinformationen sowie eines unabhängigen Vergleichstests mit realen Katzen; kein eigener Langzeit-,
+    Akku-, App-, Portionierungs- oder Ausfallsicherheitstest.
   maintenance: >-
-    Futterbehälter, Rotorbasis, Napf und Halter regelmäßig leeren und reinigen. Alle Teile vollständig trocknen, bevor
-    neues Futter eingefüllt wird. Sensorbereich und Auslass von Staub befreien, Trockenmittel ungefähr alle zwei Wochen
-    wechseln und den Akku regelmäßig vollständig laden.
+    Futterbehälter, Rotorbasis, Napf und Halter regelmäßig leeren und reinigen. Alle Teile vollständig
+    trocknen, bevor neues Futter eingefüllt wird. Sensorbereich und Auslass von Staub befreien, Trockenmittel
+    ungefähr alle zwei Wochen wechseln und den Akku regelmäßig vollständig laden.
+  reliability: >-
+    PETLIBROs Aufarbeitung des App-Ausfalls im August 2026 unterscheidet fehlende Protokolle von tatsächlich
+    verzögerten oder ausgefallenen Mahlzeiten. Das Verhalten hängt vom Modell, gespeicherten Zeitplan,
+    Gerätezustand und Stromunterbrechungen ab. Ein App-Eintrag allein bestätigt keine Ausgabe; vor Abwesenheit
+    mehrere reale Fütterungen und den Napf kontrollieren. Eine Ausfallquote für dieses konkrete EU-Modell ist
+    nicht veröffentlicht.
 alternatives:
   - petlibro-air-automatic-feeder
   - petkit-fresh-element-solo
@@ -482,6 +488,16 @@ offers:
     evidenceSources: []
     lastAttemptAt: "2026-11-16T09:06:52.496Z"
     error: "Offizielle Produkt-URL unresolved."
+evidenceSources:
+  - source: PETLIBRO · App Outage FAQ
+    url: https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq
+    accessedAt: "2026-11-16"
+    assertion: >-
+      App-Protokolle bestätigen während eines Dienstausfalls keine tatsächlich ausgegebene Mahlzeit;
+      Offline-Verhalten modell- und zustandsabhängig.
+    fields:
+      - experience
+    sourceType: manufacturer
 ---
 Der PETLIBRO Air WiFi Feeder ist ein kompakter App-Futterautomat mit zwei Litern Vorrat und einem fest eingebauten 5.200-mAh-Akku.
 
@@ -619,3 +635,7 @@ Weniger passend ist es für:
 Die technischen Angaben stammen von der [aktuellen PETLIBRO-Air-Smart-Feeder-Produktseite](https://au.petlibro.com/products/air-wifi-feeder), dem [offiziellen PETLIBRO-Support für den PLAF108](https://petlibro.com/pages/pre-sale-inquiries-about-air-smart-feeder-af108-plaf108), der [PETLIBRO-Modell- und App-Zuordnung](https://designlibro.zendesk.com/hc/en-us/articles/44320183934873-Don-t-know-which-App-is-compatible-with-your-device) sowie den [Supportinformationen zur Akkuladung](https://petlibro.com/pages/how-long-does-it-take-to-fully-charge-the-built-in-battery-of-the-air-wi-fi-feeder-af108-plaf108).
 
 Für die Praxiseinordnung wurde außerdem ein unabhängiger Vergleichstest von The Spruce Pets berücksichtigt. Es liegt kein eigener Langzeit-, Akku-, App-, Portionierungs-, Reinigungs- oder Ausfallsicherheitstest vor. Die Produktbilder sind redaktionelle Darstellungen und müssen hinsichtlich Form, Farbe, Modellnummer und Lieferumfang mit dem konkret verlinkten Amazon-Angebot abgeglichen werden.
+
+## Recherche-Update vom 16. November 2026
+
+PETLIBROs Aufarbeitung des App-Ausfalls im August 2026 unterscheidet fehlende Protokolle von tatsächlich verzögerten oder ausgefallenen Mahlzeiten. Das Verhalten hängt vom Modell, gespeicherten Zeitplan, Gerätezustand und Stromunterbrechungen ab. Ein App-Eintrag allein bestätigt keine Ausgabe; vor Abwesenheit mehrere reale Fütterungen und den Napf kontrollieren. Eine Ausfallquote für dieses konkrete EU-Modell ist nicht veröffentlicht. [PETLIBRO · App Outage FAQ](https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq)

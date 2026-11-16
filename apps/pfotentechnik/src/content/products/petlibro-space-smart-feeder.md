@@ -22,7 +22,7 @@ category:
   path: /smarte-futterautomaten/
 productUrl: /produkt/petlibro-space-smart-feeder/
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-23"
+updatedAt: "2026-11-16"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -391,6 +391,29 @@ offers:
     evidenceSources: []
     lastAttemptAt: "2026-11-16T09:07:22.950Z"
     error: "Offizielle Produkt-URL unresolved."
+evidenceSources:
+  - source: PETLIBRO · App Outage FAQ
+    url: https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq
+    accessedAt: "2026-11-16"
+    assertion: >-
+      App-Protokolle bestätigen während eines Dienstausfalls keine tatsächlich ausgegebene Mahlzeit;
+      Offline-Verhalten modell- und zustandsabhängig.
+    fields:
+      - experience
+    sourceType: manufacturer
+experience:
+  summary: >-
+    Der PETLIBRO Space Smart Feeder kombiniert zeitgesteuerte Trockenfutterausgabe mit einem automatisch
+    vakuumierten Vorratsbehälter. Das unterscheidet ihn deutlich von vielen klassischen App-Futterautomaten.
+    Die Lösung ist sinnvoll, wenn Futter über mehrere Tage möglichst gut gegen Luftfeuchtigkeit abgeschirmt
+    werden soll. Weniger überzeugend ist der Space für Haushalte, die besonders kleine Portionen, eine Kamera,
+    Mehrtiererkennung oder einen langen vollständigen Batteriebetrieb benötigen.
+  reliability: >-
+    PETLIBROs Aufarbeitung des App-Ausfalls im August 2026 unterscheidet fehlende Protokolle von tatsächlich
+    verzögerten oder ausgefallenen Mahlzeiten. Das Verhalten hängt vom Modell, gespeicherten Zeitplan,
+    Gerätezustand und Stromunterbrechungen ab. Ein App-Eintrag allein bestätigt keine Ausgabe; vor Abwesenheit
+    mehrere reale Fütterungen und den Napf kontrollieren. Eine Ausfallquote für dieses konkrete EU-Modell ist
+    nicht veröffentlicht.
 ---
 ## PETLIBRO Space Smart Feeder: redaktionelle Einordnung
 
@@ -702,3 +725,6 @@ Diese Einschätzung ist ein redaktioneller Datencheck und kein eigener Langzeitt
 
 Stand der Quellenprüfung: 23. Juli 2026.
 
+## Recherche-Update vom 16. November 2026
+
+PETLIBROs Aufarbeitung des App-Ausfalls im August 2026 unterscheidet fehlende Protokolle von tatsächlich verzögerten oder ausgefallenen Mahlzeiten. Das Verhalten hängt vom Modell, gespeicherten Zeitplan, Gerätezustand und Stromunterbrechungen ab. Ein App-Eintrag allein bestätigt keine Ausgabe; vor Abwesenheit mehrere reale Fütterungen und den Napf kontrollieren. Eine Ausfallquote für dieses konkrete EU-Modell ist nicht veröffentlicht. [PETLIBRO · App Outage FAQ](https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq)

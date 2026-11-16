@@ -5,7 +5,7 @@ type: "comparison"
 layout: "comparison"
 description: "GPS-Tracker für Hunde nach Tiergröße, Übertragung, Akku, Abo, Wasserschutz und Einsatzgebiet vergleichen."
 publishedAt: "2026-07-20"
-updatedAt: "2026-08-16"
+updatedAt: "2026-11-16"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
@@ -94,7 +94,7 @@ items:
   - slug: "invoxia-biotracker-2026"
     type: "product"
     label: "Gesundheits- und Aktivitätstrends"
-    recommendation: "Für Hundehalter, die GPS mit Aktivitäts-, Schlaf- und Vitalwerttrends verbinden und den Max-GPS-Tarif bewusst wählen."
+    recommendation: "GPS mit zusätzlichen Gesundheits- und Aktivitätstrends; Fehlklassifikationen begrenzen deren Aussagekraft. Das bestätigte Amazon-Paket enthält ein Jahr Max GPS."
     values:
       einsatzgebiet: "Gesundheits-/Aktivitätstracking plus GPS"
       hundegroesse: "Passform am Halsband prüfen"
@@ -128,7 +128,7 @@ items:
   - slug: "pawfit-3"
     type: "product"
     label: "Audio-ID und Warnfunktionen"
-    recommendation: "Für Hunde über 3,5 kg, wenn Audio-ID, Licht sowie Entfernungs- und Temperaturwarnungen wichtig sind."
+    recommendation: "Audio-ID als Sonderfunktion; wegen kritischer Ortungsbefunde kein bevorzugtes Modell für verlässliche Fluchtwarnungen."
     values:
       einsatzgebiet: "Audio-ID und Warnfunktionen"
       hundegroesse: "Hunde über 3,5 kg"
@@ -384,3 +384,11 @@ Ein Tracker wird oft nach maximaler Reichweite gekauft, obwohl im eigenen Revier
 
 Der [Enabot ROLA PetTracker](/produkt/enabot-rola-pettracker/) ergänzt die Matrix für Nutzer, die zusätzlich ein Live-Bild und Zwei-Wege-Audio benötigen. Er wird nicht zum Testsieger: 70 g, die Grenze ab 4 kg, 480p, fehlende Nachtsicht und eine Herstellerlaufzeit von 3 bis 5 Tagen sind klare Zielkonflikte.
 <!-- pt:rola-special-case:end -->
+
+## Ergänzende Quellenprüfung vom 16. November 2026
+
+Die ergänzende Recherche verändert die Einsatzgrenzen, nicht pauschal die Rangfolge. Beim **MOVA SureTrack Pro** stehen positiven Positionsbefunden ausgebliebene Geofence-Warnungen in Fremdtests gegenüber. Eine Standortkarte bestätigt keine funktionierende Fluchtwarnung. Beim **SATELLAI Collar Go** sind Ortung und App positiv beschrieben; die Halterung und die protokollabhängige Laufzeit bleiben Grenzen. Der hinterlegte Preis bestätigt weiterhin keine Lieferbarkeit.
+
+Beim **Invoxia Biotracker 2026** dokumentiert [Tom’s Guide France](https://www.tomsguide.fr/test-biotracker-invoxia-edition-2026-excellent-pour-retrouver-son-chien-moins-pour-suivre-sa-sante/) neben gutem GPS auch falsch erkannte Aktivitäten. Das Gesundheitskriterium sinkt redaktionell von 4,8 auf 3,5/5; die unveränderten übrigen Kriterien ergeben 78/100. Die Rolle bleibt „GPS plus Trends“, ohne diagnostische Zusicherung. Das bestätigte 219-€-Amazon-Paket enthält zwölf Monate Max GPS; dieses erste Jahr wird nicht zusätzlich berechnet.
+
+Die neuen CHIP-Protokolle trennen beim DOG 6 XL aktive Nutzung und Standby; beim PAJ Mini unterscheiden sie Nutzung außerhalb der Homezone und Standby. Diese Werte rechtfertigen keine pauschale Übertragung der Maximalwerte auf jeden Alltag. Produktrollen und sichtbare Auswahl bleiben erhalten.

@@ -21,7 +21,7 @@ category:
   path: /smarte-futterautomaten/
 productUrl: /produkt/petlibro-granary-wifi-feeder/
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-16"
+updatedAt: "2026-11-16"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -165,7 +165,15 @@ weaknesses:
 experience:
   summary: Portionsvolumen und tatsächliches Gewicht unterscheiden sich je nach Krokettengröße, Dichte und Form.
   methodology: Redaktionelle Einordnung anhand der offiziellen PETLIBRO-Produktseite; kein eigener Langzeittest.
-  maintenance: Behälter, Ausgabekanal und Napf regelmäßig reinigen. Trockenmittelbeutel nach Herstellerintervall ersetzen.
+  maintenance: >-
+    Behälter, Ausgabekanal und Napf regelmäßig reinigen. Trockenmittelbeutel nach Herstellerintervall
+    ersetzen.
+  reliability: >-
+    PETLIBROs Aufarbeitung des App-Ausfalls im August 2026 unterscheidet fehlende Protokolle von tatsächlich
+    verzögerten oder ausgefallenen Mahlzeiten. Das Verhalten hängt vom Modell, gespeicherten Zeitplan,
+    Gerätezustand und Stromunterbrechungen ab. Ein App-Eintrag allein bestätigt keine Ausgabe; vor Abwesenheit
+    mehrere reale Fütterungen und den Napf kontrollieren. Eine Ausfallquote für dieses konkrete EU-Modell ist
+    nicht veröffentlicht.
 alternatives:
   - petkit-fresh-element-solo
   - xiaomi-smart-pet-food-feeder-2
@@ -365,6 +373,16 @@ offers:
     variantLabel: "Weiß / Einzelne Schale"
     lastAttemptAt: "2026-11-16T09:07:11.864Z"
     availabilityUpdated: "2026-11-16T09:07:11.864Z"
+evidenceSources:
+  - source: PETLIBRO · App Outage FAQ
+    url: https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq
+    accessedAt: "2026-11-16"
+    assertion: >-
+      App-Protokolle bestätigen während eines Dienstausfalls keine tatsächlich ausgegebene Mahlzeit;
+      Offline-Verhalten modell- und zustandsabhängig.
+    fields:
+      - experience
+    sourceType: manufacturer
 ---
 Der PETLIBRO Granary WiFi ist ein klassischer Vorratsautomat mit moderner App-Anbindung. Seine Stärke liegt in der Kombination aus großem Behälter, flexibler Planung und vergleichsweise breiter Futterkompatibilität.
 
@@ -377,3 +395,7 @@ Eine Portion entspricht laut PETLIBRO 20 ml und ungefähr 10 g. Diese Grammangab
 Die Doppelschale kann zwei Tiere gleichzeitig füttern, bietet aber keine Zugangskontrolle. In Haushalten mit Futterneid oder unterschiedlichen Diäten ist ein Mikrochip-System geeigneter.
 
 **Quelle:** [PETLIBRO Granary WiFi Feeder](https://de.petlibro.com/products/petlibro-5g-wifi-automatic-pet-feeder). Bild: redaktionelle Visualisierung.
+
+## Recherche-Update vom 16. November 2026
+
+PETLIBROs Aufarbeitung des App-Ausfalls im August 2026 unterscheidet fehlende Protokolle von tatsächlich verzögerten oder ausgefallenen Mahlzeiten. Das Verhalten hängt vom Modell, gespeicherten Zeitplan, Gerätezustand und Stromunterbrechungen ab. Ein App-Eintrag allein bestätigt keine Ausgabe; vor Abwesenheit mehrere reale Fütterungen und den Napf kontrollieren. Eine Ausfallquote für dieses konkrete EU-Modell ist nicht veröffentlicht. [PETLIBRO · App Outage FAQ](https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq)

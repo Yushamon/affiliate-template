@@ -14,7 +14,7 @@ manufacturer:
 category: { key: "automatische-katzentoiletten", label: "Automatische Katzentoiletten", path: "/automatische-katzentoiletten/" }
 productUrl: "/produkt/litter-robot-4/"
 publishedAt: "2026-08-16"
-updatedAt: "2026-08-26"
+updatedAt: "2026-11-16"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 seo: { title: "Litter-Robot 4: Größe, Gewicht und App im Check", description: "Litter-Robot 4 mit 40-cm-Eingang, 1,36-kg-Mindestgewicht, Whisker-App, Streu- und Abfallstand sowie Folgekosten einordnen.", canonical: "/produkt/litter-robot-4/", sitemap: true, priority: 0.8 }
 hub: { sections: ["produkte", "automatische-katzentoiletten"] }
@@ -207,41 +207,78 @@ repairability:
     - { type: seal, status: supported, officialPart: true, detail: "Die Bürstendichtstreifen sollen bei Abnutzung ersetzt werden und werden offiziell angeboten.", sourceUrl: "https://www.litter-robot.com/support/article/litter-robot-4-use-and-care/", sourceType: support, verifiedAt: "2026-08-31" }
     - { type: base, status: supported, officialPart: true, detail: "Für die Basis existiert eine offizielle Installationsanleitung; daraus folgt keine pauschale Nutzerreparatur anderer Elektronik.", sourceUrl: "https://www.litter-robot.com/eu/support/litter-robot-4/", sourceType: support, verifiedAt: "2026-08-31" }
 evidenceSources:
-  - { source: "Whisker EU – Litter-Robot 4", url: "https://www.litter-robot.com/eu/de/litter-robot-4.html", accessedAt: "2026-08-16", assertion: "Eingang, Gewicht, Katzenprofil, Mehrkatzenangabe, App und Strom sind Herstellerangaben.", fields: ["specs", "decision", "comparisonData"] }
-  - { source: "Litter-Robot 4 Bedienungsanleitung", url: "https://www.litter-robot.com/manual_pdf/Litter-Robot-4-Manual-EN-DE-FR-IT_LR4-8018-0B.pdf", accessedAt: "2026-08-16", assertion: "Außenmaße, Einstiegshöhe, Innenraum und Betriebsgrenzen stammen aus dem Herstellerhandbuch.", fields: ["specs", "faq"] }
-  - { source: "Whisker – Litter-Robot 4 Use and Care", url: "https://www.litter-robot.com/support/article/litter-robot-4-use-and-care/", accessedAt: "2026-08-26", assertion: "Normale 30-49-l-Müllbeutel sind möglich; dunkle Beutel können die Füllstandsmessung beeinträchtigen. Der optionale Aktivkohlefilter hält unter normalen Bedingungen ungefähr einen Monat.", fields: ["specs", "comparisonData"] }
-  - { source: "Whisker – Litter-Robot 4 Produkt-FAQ", url: "https://www.litter-robot.com/litter-robot/litter-robot-4.html", accessedAt: "2026-08-26", assertion: "Empfohlene und ausgeschlossene Streuarten; keine feste Partikelgröße angegeben.", fields: ["specs", "comparisonData"] }
-  - source: "Good Housekeeping · Litter-Robot 4"
-    url: "https://www.goodhousekeeping.com/home-products/a40510449/litter-robot-4-review/"
+  - source: Whisker EU – Litter-Robot 4
+    url: https://www.litter-robot.com/eu/de/litter-robot-4.html
     accessedAt: "2026-08-16"
-    assertion: "Mehrmonatiger Praxistest."
+    assertion: Eingang, Gewicht, Katzenprofil, Mehrkatzenangabe, App und Strom sind Herstellerangaben.
     fields:
-      - "ratings"
-      - "externalEvidence"
-  - source: "WIRED · Litter-Robot 4"
-    url: "https://www.wired.com/review/whisker-litter-robot-4/"
+      - specs
+      - decision
+      - comparisonData
+  - source: Litter-Robot 4 Bedienungsanleitung
+    url: https://www.litter-robot.com/manual_pdf/Litter-Robot-4-Manual-EN-DE-FR-IT_LR4-8018-0B.pdf
     accessedAt: "2026-08-16"
-    assertion: "Praxistest."
+    assertion: Außenmaße, Einstiegshöhe, Innenraum und Betriebsgrenzen stammen aus dem Herstellerhandbuch.
     fields:
-      - "ratings"
-      - "externalEvidence"
-  - source: "Trustpilot · Litter Robot EU"
-    url: "https://de.trustpilot.com/review/www.litter-robot.eu"
+      - specs
+      - faq
+  - source: Whisker – Litter-Robot 4 Use and Care
+    url: https://www.litter-robot.com/support/article/litter-robot-4-use-and-care/
+    accessedAt: "2026-08-26"
+    assertion: >-
+      Normale 30-49-l-Müllbeutel sind möglich; dunkle Beutel können die Füllstandsmessung beeinträchtigen. Der
+      optionale Aktivkohlefilter hält unter normalen Bedingungen ungefähr einen Monat.
+    fields:
+      - specs
+      - comparisonData
+  - source: Whisker – Litter-Robot 4 Produkt-FAQ
+    url: https://www.litter-robot.com/litter-robot/litter-robot-4.html
+    accessedAt: "2026-08-26"
+    assertion: Empfohlene und ausgeschlossene Streuarten; keine feste Partikelgröße angegeben.
+    fields:
+      - specs
+      - comparisonData
+  - source: Good Housekeeping · Litter-Robot 4
+    url: https://www.goodhousekeeping.com/home-products/a40510449/litter-robot-4-review/
     accessedAt: "2026-08-16"
-    assertion: "Kleines markenweites EU-Nutzersignal."
+    assertion: Mehrmonatiger Praxistest.
     fields:
-      - "ratings"
-      - "externalEvidence"
+      - ratings
+      - externalEvidence
+  - source: WIRED · Litter-Robot 4
+    url: https://www.wired.com/review/whisker-litter-robot-4/
+    accessedAt: "2026-08-16"
+    assertion: Praxistest.
+    fields:
+      - ratings
+      - externalEvidence
+  - source: Trustpilot · Litter Robot EU
+    url: https://de.trustpilot.com/review/www.litter-robot.eu
+    accessedAt: "2026-08-16"
+    assertion: Kleines markenweites EU-Nutzersignal.
+    fields:
+      - ratings
+      - externalEvidence
+  - source: Whisker · Release Notes
+    url: https://www.whisker.com/app-releases
+    accessedAt: "2026-11-16"
+    assertion: Firmwarezweige LR4S und LR4C getrennt prüfen; App-Insights seit 1.46.0 mit heutigen Daten.
+    fields:
+      - experience
+    sourceType: manufacturer
 experience:
   summary: >-
-    Redaktionelle Einordnung aus Herstellerdokumentation, unabhängigen Tests und dokumentierten Nutzersignalen.
-    PfotenTechnik behauptet für dieses Produkt keinen eigenen Praxistest.
+    Redaktionelle Einordnung aus Herstellerdokumentation, unabhängigen Tests und dokumentierten
+    Nutzersignalen. PfotenTechnik behauptet für dieses Produkt keinen eigenen Praxistest.
   methodology: >-
-    Herstellerangaben werden getrennt von professionellen Tests und Nutzerbewertungen ausgewertet.
-    Externe Sterne werden nicht direkt in den PfotenTechnik-Score übernommen.
+    Herstellerangaben werden getrennt von professionellen Tests und Nutzerbewertungen ausgewertet. Externe
+    Sterne werden nicht direkt in den PfotenTechnik-Score übernommen.
   reliability: >-
-    Langzeit- und Zuverlässigkeitsaussagen werden nur so stark gewichtet, wie sie durch die
-    angegebenen Quellen gedeckt sind.
+    Langzeit- und Zuverlässigkeitsaussagen werden nur so stark gewichtet, wie sie durch die angegebenen
+    Quellen gedeckt sind. Whisker trennt die Firmware nach Seriennummer: LR4S und LR4C besitzen
+    unterschiedliche Versionszweige. Eine Versionsnummer des einen Zweigs ist kein Updateziel für den anderen.
+    Die App-Notizen zu 1.46.0 nennen aktuelle Tagesdaten in Insights für LR4 und neuer; Umfang und
+    Whisker+-Tarifgrenzen getrennt prüfen.
 ---
 
 ## Referenzplattform ohne Kamera
@@ -249,3 +286,7 @@ experience:
 Der Litter-Robot 4 ist nicht bloß ein Lückenfüller unter dem 5 Pro. Er bildet die etablierte Whisker-Plattform ohne integrierte Dualkamera ab. Damit bleibt die Kaufentscheidung auf Siebung, Passform, App, Stellfläche und laufende Materialien konzentriert.
 
 Der [Katzentoiletten-Vergleich](/vergleiche/beste-automatische-katzentoiletten/) stellt ihn dem offenen M1 Lite, niedrigeren PETKIT-Einstiegen und Kamera-Systemen gegenüber.
+
+## Recherche-Update vom 16. November 2026
+
+Whisker trennt die Firmware nach Seriennummer: LR4S und LR4C besitzen unterschiedliche Versionszweige. Eine Versionsnummer des einen Zweigs ist kein Updateziel für den anderen. Die App-Notizen zu 1.46.0 nennen aktuelle Tagesdaten in Insights für LR4 und neuer; Umfang und Whisker+-Tarifgrenzen getrennt prüfen. [Whisker · Release Notes](https://www.whisker.com/app-releases)

@@ -30,7 +30,7 @@ heroImage:
   src: "../../assets/images/editorial/feeder-power-outage.webp"
   alt: "Automatischer Futterautomat mit Netzteil, eingelegten Backup-Batterien und ausgefallenem WLAN"
 publishedAt: "2026-07-12"
-updatedAt: "2026-11-02"
+updatedAt: "2026-11-16"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 tags: ["futterautomat", "stromausfall", "batterie", "netzteil", "wlan", "offline", "notstrom", "sicherheit"]
 hub:
@@ -719,3 +719,9 @@ Herstellerangaben zu Laufzeit und Notbetrieb werden nur modellbezogen übernomme
 Für die Modellauswahl helfen [Futterautomaten mit Akku oder Batterie-Backup](/vergleiche/beste-futterautomaten-mit-akku/), [Futterautomaten ohne WLAN](/vergleiche/beste-futterautomaten-ohne-wlan/) und [Futterautomaten mit App](/vergleiche/futterautomat-mit-app/).
 
 Vor längerer Abwesenheit sind außerdem [Futterautomat im Urlaub](/futterautomat-im-urlaub/), [Welcher Futterautomat ist der richtige?](/welcher-futterautomat-ist-der-richtige/) und [Welche Portionsgröße ist richtig?](/welche-portionsgroesse-ist-richtig/) relevant.
+
+## Ergänzende Quellenprüfung vom 16. November 2026
+
+Die [PETLIBRO-Ausfall-FAQ vom 25. August 2026](https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq) zeigt, warum die reine Existenz eines lokalen Zeitplans nicht genügt: Während des Dienstausfalls konnten Protokolle fehlen, Mahlzeiten verspätet sein oder je nach Modell und Gerätezustand ausbleiben. Stromunterbrechungen können die Zeitsynchronisation zusätzlich beeinflussen.
+
+Ein App-Eintrag ist während eines solchen Ausfalls kein sicherer Ausgabenachweis. Den Napf und tatsächliche Fütterungen kontrollieren; eine Kamera hilft nur, wenn sie nicht denselben ausgefallenen Dienst benötigt. Eine vollständige Liste betroffener EU-Modelle oder eine Ausfallquote veröffentlicht der Hersteller hier nicht. Die Quelle belegt deshalb keine gleichartige Störung jedes PETLIBRO-Geräts.

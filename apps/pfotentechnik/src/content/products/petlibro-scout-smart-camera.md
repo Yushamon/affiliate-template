@@ -17,7 +17,7 @@ category:
   path: "/haustierkameras/"
 productUrl: "/produkt/petlibro-scout-smart-camera/"
 publishedAt: "2026-08-06"
-updatedAt: "2026-08-15"
+updatedAt: "2026-11-16"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
@@ -85,42 +85,67 @@ ratings:
   alltag: 3.8
 externalEvidence:
   professionalReviews:
-    - publisher: "WIRED"
+    - publisher: WIRED
       title: "Petlibro Scout Smart Camera: Filled With Both Features and Kinks"
-      url: "https://www.wired.com/review/petlibro-scout-smart-camera/"
+      url: https://www.wired.com/review/petlibro-scout-smart-camera/
       checkedAt: "2026-08-11"
-      methodology: "hands-on"
+      methodology: hands-on
       positives:
-        - "Der Hands-on-Test lobt das klare 1080p-Bild, die intuitive App, flexible Montage und die automatische Schwenk- und Neigefunktion."
-        - "Die Kamera kann mehrere Haustiere unterscheiden und Aufnahmen nach Tier und Aktivität organisieren."
+        - >-
+          Der Hands-on-Test lobt das klare 1080p-Bild, die intuitive App, flexible Montage und die
+          automatische Schwenk- und Neigefunktion.
+        - Die Kamera kann mehrere Haustiere unterscheiden und Aufnahmen nach Tier und Aktivität organisieren.
       negatives:
-        - "Die entscheidenden AI-Funktionen liegen hinter einem vergleichsweise teuren Abonnement."
-        - "Im Test traten mehrtägige Ausfälle bei Tracking, Aktivitätsprotokoll und gespeicherten Clips auf."
-        - "WIRED kritisiert die Cloud-Abhängigkeit und unklare Datenschutzaspekte."
+        - Die entscheidenden AI-Funktionen liegen hinter einem vergleichsweise teuren Abonnement.
+        - Im Test traten mehrtägige Ausfälle bei Tracking, Aktivitätsprotokoll und gespeicherten Clips auf.
+        - WIRED kritisiert die Cloud-Abhängigkeit und unklare Datenschutzaspekte.
       findings:
-        - "Der Test lief zunächst ohne, anschließend mit bezahltem AI-Abo und dokumentiert konkrete Funktionsausfälle nach dem Upgrade."
+        - >-
+          Der Test lief zunächst ohne, anschließend mit bezahltem AI-Abo und dokumentiert konkrete
+          Funktionsausfälle nach dem Upgrade.
+    - publisher: Cats.com
+      title: 8 Best Pet Cameras for Cats · Furbo 360 Cat Camera
+      url: https://cats.com/best-pet-cat-camera
+      checkedAt: "2026-11-16"
+      methodology: hands-on
+      positives:
+        - Schnelle Einrichtung und nutzbares Livebild im zusätzlichen Haushaltstest.
+      negatives:
+        - Katzen wurden verwechselt und Aufnahmen entstanden ungleichmäßig.
+      findings:
+        - >-
+          Der Scout-Abschnitt desselben Kameravergleichs ist eigenständig; keine Übertragung der
+          Furbo-Funktionen.
   userReviews:
-    - platform: "Chewy"
-      url: "https://www.chewy.com/petlibro-scout-smart-pet-camera-ai/product-reviews/2289534"
+    - platform: Chewy
+      url: https://www.chewy.com/petlibro-scout-smart-pet-camera-ai/product-reviews/2289534
       checkedAt: "2026-08-11"
       rating: 4.3
       scale: 5
       reviewCount: 22
       recurringPositives:
-        - "Käufer loben Bildqualität, einfache Bedienung und den Live-Zugriff von unterwegs."
+        - Käufer loben Bildqualität, einfache Bedienung und den Live-Zugriff von unterwegs.
       recurringCriticism:
-        - "Mehrere Rückmeldungen beschreiben unzuverlässige Bewegungs- beziehungsweise Ereigniserkennung und Lücken in der Video-Historie."
+        - >-
+          Mehrere Rückmeldungen beschreiben unzuverlässige Bewegungs- beziehungsweise Ereigniserkennung und
+          Lücken in der Video-Historie.
   consensus:
     strengths:
-      - finding: "Bildqualität, Live-Zugriff und die übersichtliche App sind die am besten gestützten Stärken."
+      - finding: Bildqualität, Live-Zugriff und die übersichtliche App sind die am besten gestützten Stärken.
         sourceCount: 2
-        confidence: "high"
+        confidence: high
     weaknesses:
-      - finding: "AI-Mehrwert und Ereigniserkennung sind weniger zuverlässig als die Basiskamera; der volle Funktionsumfang ist zudem abonnementabhängig."
+      - finding: >-
+          AI-Mehrwert und Ereigniserkennung sind weniger zuverlässig als die Basiskamera; der volle
+          Funktionsumfang ist zudem abonnementabhängig.
         sourceCount: 2
-        confidence: "high"
-    editorialAssessment: "Professioneller Hands-on-Test und produktspezifische Nutzerberichte stimmen beim guten Kamerabild überein, zeigen aber zugleich Schwächen bei Tracking, Historie und AI-Zuverlässigkeit. Langzeitzuverlässigkeit bleibt offen."
-  note: "Die externe Evidenz bezieht sich auf die PETLIBRO Scout Smart Camera; Aussagen zu anderen PETLIBRO-Kameras wurden nicht übertragen."
+        confidence: high
+    editorialAssessment: >-
+      Der zusätzliche Cats.com-Test stützt die bereits dokumentierten Grenzen der KI-Zuordnung und
+      Aufzeichnung. Kein Nachweis verlässlicher individueller Tierkontrolle.
+  note: >-
+    Kein eigener PfotenTechnik-Praxistest. Modell-, Länder-, Tarif- und Testzeitpunktgrenzen der Fremdquellen
+    beachten; keine Übernahme fremder Noten.
 decision:
   bestFor:
     - "fester Innenbereich"
@@ -134,21 +159,23 @@ review:
   summary: "Scout bietet laut PETLIBRO 1080p, Farb-Nachtsicht, Zwei-Wege-Audio sowie Schwenk-, Neige- und Trackingfunktionen."
   verdict: "Eine spezialisierte feste Haustierkamera; lokale Speicherung und ein abofreier Vollbetrieb gehören nicht zu ihren Stärken."
 experience:
-  summary: "Scout bietet laut PETLIBRO 1080p, Farb-Nachtsicht, Zwei-Wege-Audio sowie Schwenk-, Neige- und Trackingfunktionen."
+  summary: >-
+    Scout bietet laut PETLIBRO 1080p, Farb-Nachtsicht, Zwei-Wege-Audio sowie Schwenk-, Neige- und
+    Trackingfunktionen.
   support: >-
-    Haustiererkennung richtig einstellen: Zuerst das Haustierprofil (Pet Profile)
-    korrekt einrichten. PETLIBRO bietet für Pet Detection Sensitivity fünf Stufen:
-    1 bedeutet niedrigere, 5 höhere Empfindlichkeit. Die aktuelle Einstellung zunächst
-    beobachten. Werden Vorhänge, Insekten oder andere Bewegungen fälschlich als Tier
-    erkannt, die Empfindlichkeit reduzieren. Läuft Hund oder Katze unerkannt durchs
-    Bild, die Empfindlichkeit erhöhen. Laut PETLIBRO jeweils nur eine Stufe verändern
-    und erneut beobachten. Höhere Empfindlichkeit kann mehr Fehlalarme erzeugen,
-    niedrigere Empfindlichkeit kann Tieraktivitäten verpassen.
+    Haustiererkennung richtig einstellen: Zuerst das Haustierprofil (Pet Profile) korrekt einrichten. PETLIBRO
+    bietet für Pet Detection Sensitivity fünf Stufen: 1 bedeutet niedrigere, 5 höhere Empfindlichkeit. Die
+    aktuelle Einstellung zunächst beobachten. Werden Vorhänge, Insekten oder andere Bewegungen fälschlich als
+    Tier erkannt, die Empfindlichkeit reduzieren. Läuft Hund oder Katze unerkannt durchs Bild, die
+    Empfindlichkeit erhöhen. Laut PETLIBRO jeweils nur eine Stufe verändern und erneut beobachten. Höhere
+    Empfindlichkeit kann mehr Fehlalarme erzeugen, niedrigere Empfindlichkeit kann Tieraktivitäten verpassen.
   reliability: >-
-    Die Einstellmöglichkeiten garantieren keine zuverlässige Erkennung. WIRED berichtet
-    über Ausfälle bei Tracking, Aktivitätsprotokoll und gespeicherten Clips;
-    Chewy-Nutzerberichte kritisieren Ereigniserkennung und Video-Historie.
-    Diese externen Praxiserfahrungen bleiben trotz der Hersteller-Einstellungen relevant.
+    Die Einstellmöglichkeiten garantieren keine zuverlässige Erkennung. WIRED berichtet über Ausfälle bei
+    Tracking, Aktivitätsprotokoll und gespeicherten Clips; Chewy-Nutzerberichte kritisieren Ereigniserkennung
+    und Video-Historie. Diese externen Praxiserfahrungen bleiben trotz der Hersteller-Einstellungen relevant.
+    Auch Cats.com beschreibt beim Scout Verwechslungen zwischen Katzen und ungleichmäßig ausgelöste Aufnahmen.
+    Die vorhandenen Warnungen zur KI- und Cloud-Abhängigkeit bleiben deshalb bestehen. Ein funktionierendes
+    Livebild beweist keine vollständige Ereignisaufzeichnung.
 strengths:
   - "Mehrtiere-Erkennung bis fünf Tiere laut Hersteller"
   - "manuelle Datenschutzabdeckung"
@@ -224,23 +251,27 @@ decisionJourney:
     - "/haustierkameras/"
 evidenceSources:
   - source: "PETLIBRO: What is Pet Detection?"
-    url: "https://de.petlibro.com/en/pages/what-is-pet-detection"
+    url: https://de.petlibro.com/en/pages/what-is-pet-detection
     accessedAt: "2026-09-21"
-    assertion: "Fünf Empfindlichkeitsstufen, Zielkonflikt zwischen Fehlalarmen und verpasster Tieraktivität sowie Anpassung in einzelnen Stufen laut Hersteller."
-    fields: ["experience.support"]
-  - source: "PETLIBRO Scout-FAQ"
-    url: "https://de.petlibro.com/en/pages/faq-product/pc-001"
-    accessedAt: "2026-09-21"
-    assertion: "Haustierprofil und Einstellmöglichkeiten der Haustiererkennung laut Hersteller."
-    fields: ["experience.support"]
-  - source: "PETLIBRO Deutschland"
-    url: "https://de.petlibro.com/en/products/scout-smart-camera"
-    accessedAt: "2026-08-06"
-    assertion: "1080p, Mehrtiere-Erkennung, Cloudspeicher, Abomodell und fehlende SD-Karte sind Herstellerangaben."
+    assertion: >-
+      Fünf Empfindlichkeitsstufen, Zielkonflikt zwischen Fehlalarmen und verpasster Tieraktivität sowie
+      Anpassung in einzelnen Stufen laut Hersteller.
     fields:
-      - "specs"
-      - "strengths"
-      - "weaknesses"
+      - experience.support
+  - source: PETLIBRO Scout-FAQ
+    url: https://de.petlibro.com/en/pages/faq-product/pc-001
+    accessedAt: "2026-09-21"
+    assertion: Haustierprofil und Einstellmöglichkeiten der Haustiererkennung laut Hersteller.
+    fields:
+      - experience.support
+  - source: PETLIBRO Deutschland
+    url: https://de.petlibro.com/en/products/scout-smart-camera
+    accessedAt: "2026-08-06"
+    assertion: 1080p, Mehrtiere-Erkennung, Cloudspeicher, Abomodell und fehlende SD-Karte sind Herstellerangaben.
+    fields:
+      - specs
+      - strengths
+      - weaknesses
   - source: Herstellerdokumentation · PETLIBRO Scout Smart Camera
     url: https://de.petlibro.com/pages/video-cloud-ai
     accessedAt: "2026-09-02"
@@ -258,6 +289,24 @@ evidenceSources:
       - comparisonData.camera.detectionTypes
       - comparisonData.camera.nightVision
     sourceType: manufacturer
+  - source: Cats.com
+    url: https://cats.com/best-pet-cat-camera
+    accessedAt: "2026-11-16"
+    assertion: >-
+      Schnelle Einrichtung und nutzbares Livebild im zusätzlichen Haushaltstest. Katzen wurden verwechselt und
+      Aufnahmen entstanden ungleichmäßig.
+    fields:
+      - externalEvidence
+    sourceType: independentSource
+  - source: Cats.com
+    url: https://cats.com/best-pet-cat-camera
+    accessedAt: "2026-11-16"
+    assertion: >-
+      Zusätzlicher Haushaltstest bestätigt die Grenze zwischen Livebild und verlässlicher individueller
+      KI-Zuordnung.
+    fields:
+      - experience
+    sourceType: independentSource
 affiliate:
   provider: "amzn-to"
   label: "Preis und Verfügbarkeit prüfen"
@@ -310,3 +359,7 @@ Die Seite ordnet dokumentierte Herstellerfunktionen ein. Sie bestätigt weder di
 ## Kosten über 24 Monate
 
 Zum Gerätepreis kommen bei vollständiger Cloud- und KI-Nutzung 24 Monatsanteile des gewählten Tarifs. Weil PETLIBRO Tarife ändern kann, rechnet der Vergleich mit dem aktuellen Checkoutpreis statt mit einem dauerhaft zugesicherten Betrag.
+
+## Recherche-Update vom 16. November 2026
+
+Auch Cats.com beschreibt beim Scout Verwechslungen zwischen Katzen und ungleichmäßig ausgelöste Aufnahmen. Die vorhandenen Warnungen zur KI- und Cloud-Abhängigkeit bleiben deshalb bestehen. Ein funktionierendes Livebild beweist keine vollständige Ereignisaufzeichnung. [Cats.com](https://cats.com/best-pet-cat-camera)

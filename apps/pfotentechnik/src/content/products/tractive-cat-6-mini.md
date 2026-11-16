@@ -21,7 +21,7 @@ category:
   path: /gps-tracker/
 productUrl: "/produkt/tractive-cat-6-mini/"
 publishedAt: "2026-07-20"
-updatedAt: "2026-11-02"
+updatedAt: "2026-11-16"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -107,65 +107,86 @@ ratings:
   kosten: 4
 externalEvidence:
   professionalReviews:
-    - publisher: "WIRED"
+    - publisher: WIRED
       title: "Review: Tractive Cat 6 Mini"
-      url: "https://www.wired.com/review/tractive-cat-6-mini/"
+      url: https://www.wired.com/review/tractive-cat-6-mini/
       publishedAt: "2026-10-01"
       checkedAt: "2026-11-02"
-      methodology: "hands-on"
-      rating: { value: 7, scale: 10 }
+      methodology: hands-on
+      rating:
+        value: 7
+        scale: 10
       positives:
-        - "Gesundheitsfunktionen positiv beurteilt."
+        - Gesundheitsfunktionen positiv beurteilt.
       negatives:
-        - "Begrenzte Laufzeit; verzögerte und falsche Standortalarme."
+        - Begrenzte Laufzeit; verzögerte und falsche Standortalarme.
       findings:
-        - "Begrenzter Einzeltest von Molly Higgins, keine medizinische Validierung."
-    - publisher: "GPS-Tracker-Tests.de"
+        - Begrenzter Einzeltest von Molly Higgins, keine medizinische Validierung.
+    - publisher: GPS-Tracker-Tests.de
       title: "Tractive CAT 6 Mini im Test 2026: App-Sieger für Katzen"
-      url: "https://gpstracker-tests.de/test/tractive-cat-mini/"
+      url: https://gpstracker-tests.de/test/tractive-cat-mini/
       checkedAt: "2026-08-11"
-      methodology: "hands-on"
+      methodology: hands-on
       positives:
-        - "Der Test bewertet Ortungsgenauigkeit, App-Bedienung und Tragekomfort besonders stark."
-        - "Live-Modus, Revierdarstellung sowie Ton- und Lichtfunktion werden als praktische Stärken eingeordnet."
+        - Der Test bewertet Ortungsgenauigkeit, App-Bedienung und Tragekomfort besonders stark.
+        - >-
+          Live-Modus, Revierdarstellung sowie Ton- und Lichtfunktion werden als praktische Stärken
+          eingeordnet.
       negatives:
-        - "Die laufenden Abo-Kosten werden als wesentlicher Nachteil bewertet."
-        - "Gesundheitsfunktionen werden ausdrücklich nicht als medizinische Diagnostik eingeordnet."
+        - Die laufenden Abo-Kosten werden als wesentlicher Nachteil bewertet.
+        - Gesundheitsfunktionen werden ausdrücklich nicht als medizinische Diagnostik eingeordnet.
       findings:
-        - "Die Quelle beschreibt einen 14-tägigen Alltagstest des konkreten CAT-6-Mini-Modells."
+        - Die Quelle beschreibt einen 14-tägigen Alltagstest des konkreten CAT-6-Mini-Modells.
+    - publisher: Cats.com
+      title: Tractive CAT 6 Mini Review
+      url: https://cats.com/tractive-cat-6-mini-review
+      publishedAt: "2026-09-23"
+      checkedAt: "2026-11-16"
+      methodology: hands-on
+      positives:
+        - Komfort des integrierten Sicherheitshalsbands und Nahsuche positiv.
+      negatives:
+        - Intensives Live-Tracking reduziert die Laufzeit.
+      findings:
+        - >-
+          Kostenloses Testgerät offengelegt. Kein Freigängerkatzen-Langzeittest; GPS auch separat mit
+          Testperson geprüft. US-Tarife werden nicht als deutsche Tarifregeln übernommen.
   userReviews:
-    - platform: "Trustpilot / Tractive"
-      url: "https://www.trustpilot.com/review/tractive.com"
+    - platform: Trustpilot / Tractive
+      url: https://www.trustpilot.com/review/tractive.com
       checkedAt: "2026-08-11"
       rating: 4.7
       scale: 5
       reviewCount: 58082
       recurringPositives:
-        - "Produktspezifische CAT-6-Mini-Berichte loben die Ortung und den praktischen Überblick über Freigänge."
-        - "Mehrere aktuelle Berichte beschreiben die Passform als unauffällig und die App als hilfreich."
+        - >-
+          Produktspezifische CAT-6-Mini-Berichte loben die Ortung und den praktischen Überblick über
+          Freigänge.
+        - Mehrere aktuelle Berichte beschreiben die Passform als unauffällig und die App als hilfreich.
       recurringCriticism:
-        - "Einzelne CAT-6-Mini-Berichte kritisieren, dass sich der Sicherheitsverschluss beziehungsweise das Halsband im Freigang lösen kann."
-        - "Die tatsächliche Akkulaufzeit kann bei aktiver Nutzung deutlich unter dem Hersteller-Maximum liegen."
+        - >-
+          Einzelne CAT-6-Mini-Berichte kritisieren, dass sich der Sicherheitsverschluss beziehungsweise das
+          Halsband im Freigang lösen kann.
+        - Die tatsächliche Akkulaufzeit kann bei aktiver Nutzung deutlich unter dem Hersteller-Maximum liegen.
   consensus:
     strengths:
-      - finding: "Ortung, App und die katzenspezifische Bauform sind die am klarsten gestützten Stärken des CAT 6 Mini."
+      - finding: >-
+          Ortung, App und die katzenspezifische Bauform sind die am klarsten gestützten Stärken des CAT 6
+          Mini.
         sourceCount: 2
-        confidence: "medium"
+        confidence: medium
     weaknesses:
-      - finding: "Abo-Kosten und das sicherheitsbedingt lösbare Halsband bleiben reale Trade-offs."
+      - finding: Abo-Kosten und das sicherheitsbedingt lösbare Halsband bleiben reale Trade-offs.
         sourceCount: 2
-        confidence: "medium"
+        confidence: medium
     editorialAssessment: >-
-      Zwei produktspezifische Hands-on-Tests und aktuelle CAT-6-Mini-Erfahrungsberichte beleuchten die Kernfunktionen.
-      Die abweichenden Ortungsbefunde sollten bei der Kaufentscheidung berücksichtigt werden.
-      Der Trustpilot-Gesamtscore ist allerdings markenweit und wird nicht als produktspezifische Durchschnittsnote interpretiert.
+      Zwei produktspezifische Hands-on-Tests und aktuelle CAT-6-Mini-Erfahrungsberichte beleuchten die
+      Kernfunktionen. Die abweichenden Ortungsbefunde sollten bei der Kaufentscheidung berücksichtigt werden.
+      Der Trustpilot-Gesamtscore ist allerdings markenweit und wird nicht als produktspezifische
+      Durchschnittsnote interpretiert.
   note: >-
-    WIRED (01.10.2026): etwa vier Tage Akku bei einer Wohnungskatze; im Verloren-Modus meist binnen vier Stunden leer.
-    Drei Warnversuche ohne mitgeführtes Handy dauerten etwa eine bis acht Minuten; auch Fehlalarme traten auf.
-    Schlechter Mobilfunkempfang vor Ort kann die Warnzeiten beeinflussen. Ein Monat mit einer Katze und separaten
-    Trageversuchen begrenzt die Übertragbarkeit. Die Gesundheitsfunktionen gefielen, ersetzen aber keine medizinische Prüfung.
-    Der Trustpilot-Ratingwert und die Review-Anzahl beziehen sich auf das Tractive-Unternehmensprofil.
-    Für die inhaltlichen Muster wurden nur eindeutig als CAT 6 Mini erkennbare aktuelle Berichte herangezogen.
+    Kein eigener PfotenTechnik-Praxistest. Modell-, Länder-, Tarif- und Testzeitpunktgrenzen der Fremdquellen
+    beachten; keine Übernahme fremder Noten.
 decision:
   bestFor:
     - Freigängerkatzen von 3 bis 8 kg
@@ -203,11 +224,16 @@ weaknesses:
 experience:
   summary: Redaktionelle Einordnung anhand von Hersteller- und Supportangaben sowie externen Praxistests.
   methodology: >-
-    Kein eigener Praxistest; technische Daten und Funktionsumfang wurden mit den offiziellen Angaben von Tractive
-    abgeglichen.
+    Kein eigener Praxistest; technische Daten und Funktionsumfang wurden mit den offiziellen Angaben von
+    Tractive abgeglichen.
   maintenance: >-
-    Passform und Sicherheitsverschluss regelmäßig kontrollieren, das Halsband nach starker Belastung prüfen und den Akku
-    vor längerem Freigang ausreichend laden.
+    Passform und Sicherheitsverschluss regelmäßig kontrollieren, das Halsband nach starker Belastung prüfen
+    und den Akku vor längerem Freigang ausreichend laden.
+  reliability: >-
+    Cats.com ergänzt eine positive Erfahrung mit Halsbandkomfort und Bluetooth-Nahsuche. Getestet wurde an
+    einer Hauskatze; GPS-Prüfungen fanden auch separat bei Ausflügen statt, das Testgerät war kostenlos
+    gestellt. Diese Evidenz widerlegt die von WIRED dokumentierten Alarmprobleme nicht. Der bisherige Score
+    bleibt mangels einer vergleichbaren neuen Messreihe unverändert.
 alternatives:
   - weenect-xs
   - paj-pet-finder-4g-mini
@@ -409,21 +435,50 @@ comparisonData:
       Passform und Sicherheitsverschluss regelmäßig kontrollieren, das Halsband nach starker Belastung prüfen und den
       Akku vor längerem Freigang ausreichend laden.
 evidenceSources:
-  - source: "Tractive Kundenservice – Akkukapazität und Laufzeit"
-    url: "https://help.tractive.com/hc/de/articles/205664001-Wie-lange-h%C3%A4lt-der-Akku-meines-Trackers"
+  - source: Tractive Kundenservice – Akkukapazität und Laufzeit
+    url: https://help.tractive.com/hc/de/articles/205664001-Wie-lange-h%C3%A4lt-der-Akku-meines-Trackers
     accessedAt: "2026-10-03"
-    assertion: "Modellspezifische Kapazität von 450 mAh sowie maximale Laufzeit mit und ohne Energiesparzone; keine eindeutige Angabe zu Zellchemie oder Nutzeraustausch in dieser Quelle."
-    fields: ["specs", "faq"]
-  - source: "Tractive – Bedienungsanleitung"
-    url: "https://help.tractive.com/hc/article_attachments/34953855727378"
+    assertion: >-
+      Modellspezifische Kapazität von 450 mAh sowie maximale Laufzeit mit und ohne Energiesparzone; keine
+      eindeutige Angabe zu Zellchemie oder Nutzeraustausch in dieser Quelle.
+    fields:
+      - specs
+      - faq
+  - source: Tractive – Bedienungsanleitung
+    url: https://help.tractive.com/hc/article_attachments/34953855727378
     accessedAt: "2026-10-03"
-    assertion: "Ladeverfahren, Energiesparzone und höherer Verbrauch bei LIVE Tracking; keine eindeutige Angabe zu Zellchemie oder Nutzeraustausch."
-    fields: ["specs", "faq"]
-  - source: "Tractive Kundenservice – Tracker-Auswahl und Abo"
-    url: "https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier"
+    assertion: >-
+      Ladeverfahren, Energiesparzone und höherer Verbrauch bei LIVE Tracking; keine eindeutige Angabe zu
+      Zellchemie oder Nutzeraustausch.
+    fields:
+      - specs
+      - faq
+  - source: Tractive Kundenservice – Tracker-Auswahl und Abo
+    url: >-
+      https://help.tractive.com/hc/de/articles/360001285329-Welcher-Tracker-ist-der-richtige-f%C3%BCr-mein-Haustier
     accessedAt: "2026-08-25"
-    assertion: "Tractive führt den CAT 6 Mini als aktuelles Modell und erklärt ausdrücklich, dass jeder Tractive-Tracker ein aktives Abo benötigt, um zu funktionieren."
-    fields: ["gps", "gps.subscriptionRequired"]
+    assertion: >-
+      Tractive führt den CAT 6 Mini als aktuelles Modell und erklärt ausdrücklich, dass jeder Tractive-Tracker
+      ein aktives Abo benötigt, um zu funktionieren.
+    fields:
+      - gps
+      - gps.subscriptionRequired
+  - source: Cats.com
+    url: https://cats.com/tractive-cat-6-mini-review
+    accessedAt: "2026-11-16"
+    assertion: >-
+      Komfort des integrierten Sicherheitshalsbands und Nahsuche positiv. Intensives Live-Tracking reduziert
+      die Laufzeit.
+    fields:
+      - externalEvidence
+    sourceType: independentSource
+  - source: Cats.com
+    url: https://cats.com/tractive-cat-6-mini-review
+    accessedAt: "2026-11-16"
+    assertion: Zusätzliche praktische Einzelperspektive; Gesundheitsdaten und Laufzeit bleiben kontextabhängig.
+    fields:
+      - experience
+    sourceType: independentSource
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -447,6 +502,11 @@ decisionFacts:
   - label: "Wasserschutz"
     value: "IP68"
     consequence: "Die Schutzklasse ist bei Regen, Reinigung und dauerhaftem Außeneinsatz relevant."
+reviewedAlternatives:
+  - slug: weenect-xs
+    reason: >-
+      Alternative für Katzen mit anderer Befestigung. Gewicht, Sicherheitshalsband und Mobilfunktarif vor dem
+      Kauf prüfen.
 ---
 Beim Tractive CAT 6 Mini bilden Tracker und Halsband eine konstruktive Einheit. Das vom Hersteller angegebene Gewicht von 32 g umfasst deshalb das vollständige System. Für die Auswahl sind neben dem Körpergewicht der Katze vor allem der zulässige Halsumfang von 19 bis 22,9 cm und der Sinn des Sicherheitsverschlusses entscheidend.
 
@@ -462,3 +522,7 @@ Für Herz- und Ruhe-Atemfrequenz benötigt Tractive laut Hilfe-Center zunächst 
 
 - [Tractive GPS Tracker für Katzen](https://tractive.com/de/pd/gps-tracker-cat)
 - [Tractive: Akkulaufzeit nach Trackermodell](https://help.tractive.com/hc/de/articles/205664001-Wie-lange-h%C3%A4lt-der-Akku-meines-Trackers)
+
+## Recherche-Update vom 16. November 2026
+
+Cats.com ergänzt eine positive Erfahrung mit Halsbandkomfort und Bluetooth-Nahsuche. Getestet wurde an einer Hauskatze; GPS-Prüfungen fanden auch separat bei Ausflügen statt, das Testgerät war kostenlos gestellt. Diese Evidenz widerlegt die von WIRED dokumentierten Alarmprobleme nicht. Der bisherige Score bleibt mangels einer vergleichbaren neuen Messreihe unverändert. [Cats.com](https://cats.com/tractive-cat-6-mini-review)

@@ -19,7 +19,7 @@ category:
   path: /trinkbrunnen/
 productUrl: "/produkt/oneisall-2-2l-cordless-fountain/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-07-16"
+updatedAt: "2026-11-16"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -134,8 +134,12 @@ experience:
   summary: Der kompakte Kunststoffaufbau ist leicht, aber weniger robust und kratzfest als Edelstahl.
   methodology: Redaktionelle Einordnung anhand der offiziellen oneisall-Produktseite; kein eigener Langzeittest.
   maintenance: >-
-    Filter vor Gebrauch einweichen. Brunnen alle ein bis zwei Wochen reinigen und Filter etwa alle zwei bis vier Wochen
-    wechseln.
+    Filter vor Gebrauch einweichen. Brunnen alle ein bis zwei Wochen reinigen und Filter etwa alle zwei bis
+    vier Wochen wechseln.
+  reliability: >-
+    Der Herstellersupport führt dieses Modell als PW13. Die 2,2-Liter-Version PW13 und die 3,2-Liter-Version
+    PW14 sind getrennte Geräte; Tests und Ersatzteile einer anderen Volumenvariante werden nicht übertragen.
+    Ein belastbarer neuer unabhängiger Modelltest wurde nicht gefunden.
 alternatives:
   - oneisall-3-2l-cordless-fountain
   - oneisall-3-5l-cordless-fountain
@@ -176,8 +180,8 @@ specs:
     value: Katzen und kleine Hunde
   - label: Reinigung
     value: >-
-      Filter vor Gebrauch einweichen. Brunnen alle ein bis zwei Wochen reinigen und Filter etwa alle zwei bis vier
-      Wochen wechseln.
+      Filter vor Gebrauch einweichen. Brunnen alle ein bis zwei Wochen reinigen und Filter etwa alle zwei bis
+      vier Wochen wechseln.
   - label: UV
     value: Nicht vom Hersteller ausgewiesen
   - label: Trinkhöhe
@@ -186,6 +190,8 @@ specs:
     value: Nicht vom Hersteller ausgewiesen
   - label: Maße
     value: Nicht vom Hersteller ausgewiesen
+  - label: Herstellermodell
+    value: PW13
 faq:
   - question: Ist der oneisall 2,2L aus Edelstahl?
     answer: Nein. oneisall nennt Polypropylen als Material. Die frühere Edelstahlbeschreibung war falsch.
@@ -260,15 +266,23 @@ evidenceSources:
     accessedAt: "2026-07-16"
     sourceType: manufacturer
     assertion: >-
-      Bereits dokumentierte technische Daten: Kapazität: 2,2 Liter; Material: Polypropylen (PP); Stromversorgung: Akku,
-      Laden über USB-C mit 5 V/1 A; Akkulaufzeit: Herstellerangabe bis 30 Tage; Lautstärke: Herstellerangabe unter 20 dB;
-      Reinigung: Filter vor Gebrauch einweichen. Brunnen alle ein bis zwei Wochen reinigen und Filter etwa alle zwei bis
-      vier Wochen wechseln.. Normalisierung des vorhandenen Quellenstands, keine erneute externe Prüfung.
+      Bereits dokumentierte technische Daten: Kapazität: 2,2 Liter; Material: Polypropylen (PP);
+      Stromversorgung: Akku, Laden über USB-C mit 5 V/1 A; Akkulaufzeit: Herstellerangabe bis 30 Tage;
+      Lautstärke: Herstellerangabe unter 20 dB; Reinigung: Filter vor Gebrauch einweichen. Brunnen alle ein
+      bis zwei Wochen reinigen und Filter etwa alle zwei bis vier Wochen wechseln.. Normalisierung des
+      vorhandenen Quellenstands, keine erneute externe Prüfung.
     fields:
       - comparisonData.fountain.capacityLiters
       - comparisonData.fountain.material
       - comparisonData.fountain.powerType
       - comparisonData.fountain.batteryRuntime
+  - source: oneisall · Modellbezogener Support
+    url: https://oneisall.com/pages/support-fountains
+    accessedAt: "2026-11-16"
+    assertion: Herstellersupport ordnet PW13 eindeutig der jeweiligen Volumenvariante zu.
+    fields:
+      - experience
+    sourceType: manufacturer
 ---
 Der oneisall 2,2L ist ein kompakter kabelloser Kunststoffbrunnen. Sein Hauptvorteil ist die flexible Platzierung, nicht Materialqualität oder Smart-Funktionalität.
 
@@ -281,3 +295,7 @@ Die offizielle Produktspezifikation nennt Polypropylen. Das Modell sollte daher 
 Kontrollmodul und Elektronik dürfen nicht eingetaucht werden. Filter vor dem ersten Einsatz einweichen und den Brunnen regelmäßig vollständig zerlegen.
 
 **Quelle:** [oneisall 2,2L Cordless Cat Water Fountain](https://oneisall.com/products/oneisall-2-2l-cordless-cat-water-fountain). Bild: redaktionelle Visualisierung.
+
+## Recherche-Update vom 16. November 2026
+
+Der Herstellersupport führt dieses Modell als PW13. Die 2,2-Liter-Version PW13 und die 3,2-Liter-Version PW14 sind getrennte Geräte; Tests und Ersatzteile einer anderen Volumenvariante werden nicht übertragen. Ein belastbarer neuer unabhängiger Modelltest wurde nicht gefunden. [oneisall · Modellbezogener Support](https://oneisall.com/pages/support-fountains)

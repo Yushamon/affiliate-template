@@ -5,7 +5,7 @@ type: "comparison"
 layout: "comparison"
 description: "Zehn automatische Katzentoiletten nach Bauform, Einstieg, Katzengewicht, Sicherheit, Streu, Verbrauchssystem, Kamera und Folgekosten vergleichen."
 publishedAt: "2026-08-06"
-updatedAt: "2026-08-21"
+updatedAt: "2026-11-16"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
@@ -502,3 +502,9 @@ Die Matrix ist keine lineare Rangliste. **Neakasa M1 Plus Lite** steht für offe
 
 Elektronische Sensorik und mechanische Konstruktion werden getrennt ausgewiesen. App-, Gewichts- und Toilettendaten bleiben Monitoring und keine Diagnose. Proprietäre Beutel, Filter oder Deodorizer zählen zu den Folgekosten.
 <!-- pt:litter-delta-33-3:end -->
+
+## Ergänzende Quellenprüfung vom 16. November 2026
+
+Für den **Litter-Robot 5 Pro** dokumentiert [Whisker mit App 1.46.0 vom 10. November 2026](https://www.whisker.com/app-releases) inzwischen interne Besuchsaufnahmen. Die entsprechende Einschränkung älterer Fremdtests ist damit ein historischer Softwarestand. Dienstumfang und Firmware am konkreten Gerät prüfen; beim LR4 die unterschiedlichen Seriennummernzweige LR4S und LR4C beachten.
+
+[Sitegeek testet ausdrücklich den M1 Plus Lite](https://www.sitegeek.fr/article-technologie/maison-connectee/neakasa-m1-plus-lite-test/) und bestätigt einfache Einrichtung, aber auch hohen Einstieg und Streuabhängigkeit. Beim **PuraMax 2** kritisiert [Cats.com](https://cats.com/petkit-puramax-2-automatic-litter-box-review) das Entleeren und die Grundreinigung. Der Test auf Teppich erfolgte mit abgeschalteter Automatik und ist keine Teppichfreigabe. Die bisherigen Einsatzrollen bleiben bestehen; automatische Reinigung ersetzt keine Betreuung.

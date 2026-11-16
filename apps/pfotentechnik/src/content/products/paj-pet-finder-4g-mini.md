@@ -21,7 +21,7 @@ category:
   path: /gps-tracker/
 productUrl: /produkt/paj-pet-finder-4g-mini/
 publishedAt: "2026-07-20"
-updatedAt: "2026-07-23"
+updatedAt: "2026-11-16"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -110,45 +110,70 @@ ratings:
   wasserschutz: 3.8
 externalEvidence:
   professionalReviews:
-    - publisher: "gpstracker-tests.de"
-      title: "PAJ PET Finder 4G Mini Test 2026"
-      url: "https://gpstracker-tests.de/test/paj-pet-finder-4g-mini/"
+    - publisher: gpstracker-tests.de
+      title: PAJ PET Finder 4G Mini Test 2026
+      url: https://gpstracker-tests.de/test/paj-pet-finder-4g-mini/
       checkedAt: "2026-08-11"
-      methodology: "editorial-review"
+      methodology: editorial-review
       positives:
-        - "Ortungsgenauigkeit, kompakte Bauform und Preis-Leistungs-Verhältnis werden positiv bewertet."
-        - "Das integrierte LED-Licht wird als praktischer Zusatznutzen hervorgehoben."
+        - Ortungsgenauigkeit, kompakte Bauform und Preis-Leistungs-Verhältnis werden positiv bewertet.
+        - Das integrierte LED-Licht wird als praktischer Zusatznutzen hervorgehoben.
       negatives:
-        - "Die Nutzung bleibt an ein Mobilfunk-/Abo-Modell gebunden."
-        - "Die Quelle arbeitet mit Affiliate-Links; ihre Wertung wird deshalb nicht als neutrale Messinstanz behandelt."
+        - Die Nutzung bleibt an ein Mobilfunk-/Abo-Modell gebunden.
+        - >-
+          Die Quelle arbeitet mit Affiliate-Links; ihre Wertung wird deshalb nicht als neutrale Messinstanz
+          behandelt.
       findings:
-        - "Der Test behandelt das konkrete PET Finder 4G Mini Modell und nennt mess- bzw. vergleichbare Kriterien."
+        - >-
+          Der Test behandelt das konkrete PET Finder 4G Mini Modell und nennt mess- bzw. vergleichbare
+          Kriterien.
+    - publisher: CHIP
+      title: PAJ PET Finder 4G Mini im Test
+      url: >-
+        https://www.chip.de/test-kaufberatung/hobby-freizeit/paj-pet-finder-4g-mini-im-test_3c5f20ea-a7d7-49e1-8b7c-58bb7c688d79.html
+      checkedAt: "2026-11-16"
+      methodology: lab-test
+      positives:
+        - Zuverlässige Ortung und übersichtliche App im Test.
+      negatives:
+        - Keine Vitalwerte; Gummibefestigung bei Bewegung kontrollieren.
+      findings:
+        - >-
+          CHIP protokolliert 144 Stunden aktiv außerhalb von Homezones und 240 Stunden Standby. Diese
+          Betriebsarten nicht gleichsetzen.
   userReviews:
-    - platform: "Trustpilot / PAJ GPS"
-      url: "https://de.trustpilot.com/review/paj-gps.com"
+    - platform: Trustpilot / PAJ GPS
+      url: https://de.trustpilot.com/review/paj-gps.com
       checkedAt: "2026-08-11"
       rating: 4.7
       scale: 5
       reviewCount: 417
-      scope: "brand-wide"
+      scope: brand-wide
       recurringPositives:
-        - "Markenweit werden einfache Bedienung, zuverlässige Ortung und schneller Support häufig genannt."
-        - "Einzelne Tiertracker-Nutzer beschreiben genaue Ortung und eine hilfreiche App."
+        - Markenweit werden einfache Bedienung, zuverlässige Ortung und schneller Support häufig genannt.
+        - Einzelne Tiertracker-Nutzer beschreiben genaue Ortung und eine hilfreiche App.
       recurringCriticism:
-        - "Einzelne Nutzer berichten über defekte Geräte, Erstverbindungsprobleme oder unerwartetes Energiesparverhalten."
-        - "Die Plattformbasis ist markenweit und nicht ausschließlich dem PET Finder 4G Mini zuzuordnen."
+        - >-
+          Einzelne Nutzer berichten über defekte Geräte, Erstverbindungsprobleme oder unerwartetes
+          Energiesparverhalten.
+        - Die Plattformbasis ist markenweit und nicht ausschließlich dem PET Finder 4G Mini zuzuordnen.
   consensus:
     strengths:
-      - finding: "Einfache Bedienung und brauchbare Ortungsleistung sind die konsistentesten externen Signale."
+      - finding: Einfache Bedienung und brauchbare Ortungsleistung sind die konsistentesten externen Signale.
         sourceCount: 2
-        confidence: "medium"
+        confidence: medium
     weaknesses:
-      - finding: "Abo-Abhängigkeit und vereinzelte Hardware- beziehungsweise Verbindungsprobleme bleiben relevante Gegenpunkte."
+      - finding: >-
+          Abo-Abhängigkeit und vereinzelte Hardware- beziehungsweise Verbindungsprobleme bleiben relevante
+          Gegenpunkte.
         sourceCount: 2
-        confidence: "medium"
+        confidence: medium
     editorialAssessment: >-
-      Der konkrete redaktionelle Test wird durch eine große, aber markenweite Nutzerbasis ergänzt. Die Markenbewertungen
-      werden ausdrücklich nicht als produktspezifischer Score übernommen.
+      Der konkrete redaktionelle Test wird durch eine große, aber markenweite Nutzerbasis ergänzt. Die
+      Markenbewertungen werden ausdrücklich nicht als produktspezifischer Score übernommen.
+  note: >-
+    Kein eigener PfotenTechnik-Praxistest. Modell-, Länder-, Tarif- und Testzeitpunktgrenzen der Fremdquellen
+    beachten; keine Übernahme fremder Noten.
 decision:
   bestFor:
     - Hunde ab 3 kg
@@ -193,9 +218,9 @@ weaknesses:
   - kein austauschbarer Akku
 experience:
   summary: >-
-    Die Herstellerangaben zeigen ein schlüssiges Kostenmodell und einen für Hunde kompakten Tracker. Die entscheidenden
-    Praxisfragen bleiben Netzabdeckung, reale Aktualisierungsintervalle, App-Stabilität, Halterung und Laufzeit bei
-    häufigem Live-Tracking.
+    Die Herstellerangaben zeigen ein schlüssiges Kostenmodell und einen für Hunde kompakten Tracker. Die
+    entscheidenden Praxisfragen bleiben Netzabdeckung, reale Aktualisierungsintervalle, App-Stabilität,
+    Halterung und Laufzeit bei häufigem Live-Tracking.
   positives:
     - lange Servicephase ist bereits im Kaufpreis enthalten
     - Tracker funktioniert im Mobilfunknetz ohne fremde Smartphones in der Nähe
@@ -208,12 +233,17 @@ experience:
     - Herstellerseiten nennen teils 1 bis 2, teils 1 bis 3 Tage bei aktivem Tracking
   methodology: >-
     Redaktionelle Einordnung anhand der aktuellen PAJ-Produktseite, der Hunde- und Katzenkategorieseiten, der
-    Bedienungsanleitung und der aktuellen Tarifbeschreibung; kein eigener Ortungs-, Akku-, App-, Wasserschutz- oder
-    Langzeittest.
+    Bedienungsanleitung und der aktuellen Tarifbeschreibung; kein eigener Ortungs-, Akku-, App-, Wasserschutz-
+    oder Langzeittest.
   maintenance: >-
-    Halterung, Gummibänder, Gehäuse, Ladeanschluss und Dichtflächen regelmäßig prüfen. Tracker nach Salzwasser, Schmutz
-    oder starkem Regen reinigen und trocknen. Vor längeren Ausflügen vollständig laden und Mobilfunkabdeckung sowie
-    Geozaun testen.
+    Halterung, Gummibänder, Gehäuse, Ladeanschluss und Dichtflächen regelmäßig prüfen. Tracker nach
+    Salzwasser, Schmutz oder starkem Regen reinigen und trocknen. Vor längeren Ausflügen vollständig laden und
+    Mobilfunkabdeckung sowie Geozaun testen.
+  reliability: >-
+    CHIP dokumentiert beim exakten Mini-Modell rund 144 Stunden aktive Nutzung außerhalb von Homezones und
+    rund 240 Stunden Standby. Das sind unterschiedliche Testbedingungen, keine allgemeine Laufzeitgarantie.
+    Ortung und App werden positiv beschrieben; eine Messung von Herz- oder Atemfrequenz gehört nicht zum
+    Funktionsumfang.
 alternatives:
   - weenect-xs
   - tractive-dog-6
@@ -458,16 +488,42 @@ comparisonData:
       sowie Geozaun testen.
     kapazitat: 27 Monate Tracking enthalten
 evidenceSources:
-  - source: "PAJ GPS – PET Finder 4G Mini"
-    url: "https://www.paj-gps.de/store/pet-finder-4g-mini/"
+  - source: PAJ GPS – PET Finder 4G Mini
+    url: https://www.paj-gps.de/store/pet-finder-4g-mini/
     accessedAt: "2026-08-25"
-    assertion: "PAJ nennt drei enthaltene Premium-Monate und verlangt danach einen kostenpflichtigen Tarif für die weitere reguläre Ortung; damit ist ein laufendes Abonnement nach dem Inklusivzeitraum erforderlich."
-    fields: ["gps", "gps.subscriptionRequired"]
-  - source: "PAJ GPS – PET Finder 4G Mini Schnellstart-Anleitung"
-    url: "https://www.paj-gps.de/wp-content/uploads/2026/03/Bedienungsanleitung-PET-Finder-4G-Mini-JAN26-DE.pdf"
+    assertion: >-
+      PAJ nennt drei enthaltene Premium-Monate und verlangt danach einen kostenpflichtigen Tarif für die
+      weitere reguläre Ortung; damit ist ein laufendes Abonnement nach dem Inklusivzeitraum erforderlich.
+    fields:
+      - gps
+      - gps.subscriptionRequired
+  - source: PAJ GPS – PET Finder 4G Mini Schnellstart-Anleitung
+    url: https://www.paj-gps.de/wp-content/uploads/2026/03/Bedienungsanleitung-PET-Finder-4G-Mini-JAN26-DE.pdf
     accessedAt: "2026-08-25"
-    assertion: "Die offizielle Anleitung führt die Aktivierung über das Finder-Portal und die Auswahl von Abo und Laufzeit als Bestandteil der Inbetriebnahme auf."
-    fields: ["gps", "gps.subscriptionRequired"]
+    assertion: >-
+      Die offizielle Anleitung führt die Aktivierung über das Finder-Portal und die Auswahl von Abo und
+      Laufzeit als Bestandteil der Inbetriebnahme auf.
+    fields:
+      - gps
+      - gps.subscriptionRequired
+  - source: CHIP
+    url: >-
+      https://www.chip.de/test-kaufberatung/hobby-freizeit/paj-pet-finder-4g-mini-im-test_3c5f20ea-a7d7-49e1-8b7c-58bb7c688d79.html
+    accessedAt: "2026-11-16"
+    assertion: >-
+      Zuverlässige Ortung und übersichtliche App im Test. Keine Vitalwerte; Gummibefestigung bei Bewegung
+      kontrollieren.
+    fields:
+      - externalEvidence
+    sourceType: independentSource
+  - source: CHIP
+    url: >-
+      https://www.chip.de/test-kaufberatung/hobby-freizeit/paj-pet-finder-4g-mini-im-test_3c5f20ea-a7d7-49e1-8b7c-58bb7c688d79.html
+    accessedAt: "2026-11-16"
+    assertion: Modellbezogener Test trennt aktive Laufzeit von Homezone-/Standby-Betrieb.
+    fields:
+      - experience
+    sourceType: independentSource
 metadata:
   version: 4.0.1
   normalizedAt: "2026-07-26"
@@ -603,3 +659,7 @@ Weniger passend ist er für:
 Die technischen Angaben stammen von der [aktuellen PAJ-Produktseite](https://www.paj-gps.de/store/pet-finder-4g-mini/), der [PAJ-Seite für Hundetracker](https://www.paj-gps.de/gps-tracker-fuer-hunde/), der [PAJ-Katzenübersicht](https://www.paj-gps.de/gps-tracker-fuer-katzen/), dem [aktuellen PAJ-Produktbeitrag](https://www.paj-gps.de/neue-paj-pet-finder-4g-mini/) und der [Bedienungsanleitungsseite](https://www.paj-gps.de/bedienungsanleitung-pet-finder-4g-mini/).
 
 Es liegt kein eigener Langzeit-, Akku-, App-, Netzabdeckungs-, Ortungs- oder Wasserschutztest vor. Die verwendeten Bilder sind generische redaktionelle Darstellungen und zeigen nicht den konkreten PAJ PET Finder 4G Mini.
+
+## Recherche-Update vom 16. November 2026
+
+CHIP dokumentiert beim exakten Mini-Modell rund 144 Stunden aktive Nutzung außerhalb von Homezones und rund 240 Stunden Standby. Das sind unterschiedliche Testbedingungen, keine allgemeine Laufzeitgarantie. Ortung und App werden positiv beschrieben; eine Messung von Herz- oder Atemfrequenz gehört nicht zum Funktionsumfang. [CHIP](https://www.chip.de/test-kaufberatung/hobby-freizeit/paj-pet-finder-4g-mini-im-test_3c5f20ea-a7d7-49e1-8b7c-58bb7c688d79.html)

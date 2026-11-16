@@ -5,6 +5,7 @@ import { execFileSync } from 'node:child_process';
 import { parse as parseStore } from 'devalue';
 import { verifyIntegration } from '../scripts/product-integration/verify.mjs';
 import { readProductDocument } from '../src/lib/price-intelligence/frontmatter-price.mjs';
+import { approvedFreshnessChanges } from '../scripts/product-freshness/approved-changes.mjs';
 
 const protectedFields=JSON.parse(await fs.readFile(new URL('../research/product-integration-35.8/protected-existing-fields.json',import.meta.url)));
 
@@ -25,7 +26,12 @@ test('regulärer Build schützt Entwürfe, Experiment-Zugänge und Vergleichsmit
 test('bestehende Scores, Teilbewertungen, SEO-Metadaten und decisionFacts bleiben exakt erhalten',async()=>{
  for(const [slug,fields] of Object.entries(protectedFields)){
   const {data}=await readProductDocument(new URL(`../src/content/products/${slug}.md`,import.meta.url).pathname);
-  for(const [key,value] of Object.entries(fields))assert.deepEqual(data[key],value,`${slug}.${key}`);
+  const approved=approvedFreshnessChanges().get(`src/content/products/${slug}.md`);
+  for(const [key,value] of Object.entries(fields)){
+   const change=['score','rating','ratings'].includes(key)?approved?.changedFields?.[key]:null;
+   if(change){assert.deepEqual(change.before,value,`${slug}.${key}: dokumentierter Ausgangswert`);assert.deepEqual(data[key],change.after,`${slug}.${key}: einzeln begründete 36.0-Bewertung`)}
+   else assert.deepEqual(data[key],value,`${slug}.${key}`);
+  }
  }
 });
 

@@ -17,7 +17,7 @@ category:
   path: "/haustierkameras/"
 productUrl: "/produkt/pettec-cam-360/"
 publishedAt: "2026-08-15"
-updatedAt: "2026-08-16"
+updatedAt: "2026-11-16"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
@@ -284,44 +284,46 @@ editorial:
   lastVerifiedAt: "2026-08-15"
   note: "Herstellerdaten; kein eigener Produkttest und keine Rechtsberatung."
 evidenceSources:
-  - source: "PetTec Cam 360"
-    url: "https://pettec.de/products/pet-cam-360"
+  - source: PetTec Cam 360
+    url: https://pettec.de/products/pet-cam-360
     accessedAt: "2026-08-15"
-    assertion: "3 MP, Pan/Tilt, Erkennung, Tracking, Nachtsicht, Audio, Maße und Speicheroptionen sind Herstellerangaben."
+    assertion: >-
+      3 MP, Pan/Tilt, Erkennung, Tracking, Nachtsicht, Audio, Maße und Speicheroptionen sind
+      Herstellerangaben.
     fields:
-      - "specs"
-      - "features"
-      - "comparisonData"
-  - source: "PetTec Kameras ohne Abo"
-    url: "https://pettec.de/pages/kameras-ohne-abo"
+      - specs
+      - features
+      - comparisonData
+  - source: PetTec Kameras ohne Abo
+    url: https://pettec.de/pages/kameras-ohne-abo
     accessedAt: "2026-08-15"
-    assertion: "Lokale microSD-Speicherung und Nutzung ohne Pflichtabo sind Herstellerangaben."
+    assertion: Lokale microSD-Speicherung und Nutzung ohne Pflichtabo sind Herstellerangaben.
     fields:
-      - "decision"
-      - "faq"
-      - "comparisonData"
-  - source: "PetTec App"
-    url: "https://pettec.de/pages/app"
+      - decision
+      - faq
+      - comparisonData
+  - source: PetTec App
+    url: https://pettec.de/pages/app
     accessedAt: "2026-08-15"
-    assertion: "Kostenlose Basisfunktionen und optionale Cloud-Dienste sind Herstellerangaben."
+    assertion: Kostenlose Basisfunktionen und optionale Cloud-Dienste sind Herstellerangaben.
     fields:
-      - "specs"
-      - "faq"
-      - "comparisonData"
-  - source: "F.A.Z. Kaufkompass · PetTec Cam 360"
-    url: "https://www.faz.net/kaufkompass/quickcheck/heim-liche-beobachtung-haustierkameras-im-test/"
+      - specs
+      - faq
+      - comparisonData
+  - source: F.A.Z. Kaufkompass · PetTec Cam 360
+    url: https://www.faz.net/kaufkompass/quickcheck/heim-liche-beobachtung-haustierkameras-im-test/
     accessedAt: "2026-08-16"
-    assertion: "Unabhängiger Haustierkamera-Praxistest."
+    assertion: Unabhängiger Haustierkamera-Praxistest.
     fields:
-      - "ratings"
-      - "externalEvidence"
-  - source: "Trustpilot · PetTec"
-    url: "https://de.trustpilot.com/review/pettec.de"
+      - ratings
+      - externalEvidence
+  - source: Trustpilot · PetTec
+    url: https://de.trustpilot.com/review/pettec.de
     accessedAt: "2026-08-16"
-    assertion: "Markenweites Nutzersignal."
+    assertion: Markenweites Nutzersignal.
     fields:
-      - "ratings"
-      - "externalEvidence"
+      - ratings
+      - externalEvidence
   - source: Herstellerdokumentation · PetTec Cam 360
     url: https://pettec.de/pages/cloud-plus
     accessedAt: "2026-09-03"
@@ -332,12 +334,33 @@ evidenceSources:
   - source: PetTec Cam 360
     url: https://pettec.de/products/pet-cam-360
     accessedAt: "2026-08-15"
-    assertion: 3 MP, Pan/Tilt, Erkennung, Tracking, Nachtsicht, Audio, Maße und Speicheroptionen sind Herstellerangaben.
+    assertion: >-
+      3 MP, Pan/Tilt, Erkennung, Tracking, Nachtsicht, Audio, Maße und Speicheroptionen sind
+      Herstellerangaben.
     fields:
       - comparisonData.camera.localStorage
       - comparisonData.camera.localStorageTypes
       - comparisonData.camera.detectionTypes
     sourceType: manufacturer
+  - source: PetTec Support
+    url: >-
+      https://support.pettec.de/hc/de/articles/11173527082514-PetTec-Cam-360-Cam-Lite-Verbindungsprobleme-nach-Update-Reset-und-neu-verbinden
+    accessedAt: "2026-11-16"
+    assertion: >-
+      Smartphone-App und Kamera-Firmware sind getrennte Updates; kein Reset während eines laufenden
+      Firmwareupdates.
+    fields:
+      - experience
+    sourceType: manufacturer
+experience:
+  summary: >-
+    PetTec trennt lokale microSD-Aufzeichnung und kostenlose Basisfunktionen von optionalen Cloud- und
+    AI-Diensten.
+  reliability: >-
+    PetTec unterscheidet bei Cam 360°/Snoop Cube (Art. 15368) App-Updates von Kamera-Firmware. Bei
+    Verbindungsproblemen zuerst Strom, WLAN und Neustart prüfen. Einen Werksreset nur nach der Modellanleitung
+    durchführen; er erfordert erneutes Einrichten. Während eines laufenden Firmwareupdates weder zurücksetzen
+    noch die Stromversorgung unterbrechen.
 ---
 
 ## Lokal speichern, Cloud optional halten
@@ -347,3 +370,7 @@ Die zentrale Kaufentscheidung ist nicht die höchste Auflösung. Die Cam 360 kan
 PetTec beschreibt DSGVO-Konformität und Server in Deutschland. Das sind Herstellerangaben, keine juristische Bestätigung durch PfotenTechnik. Datenschutz hängt außerdem von App-Konto, Mikrofon, Fernzugriff, Updates und Konfiguration ab.
 
 Der [Haustierkamera-Hub](/haustierkameras/) erklärt die Speicherentscheidung; der [Vergleich](/vergleiche/beste-haustierkameras/) stellt sie Cloud-only- und mobilen Kameraklassen gegenüber.
+
+## Recherche-Update vom 16. November 2026
+
+PetTec unterscheidet bei Cam 360°/Snoop Cube (Art. 15368) App-Updates von Kamera-Firmware. Bei Verbindungsproblemen zuerst Strom, WLAN und Neustart prüfen. Einen Werksreset nur nach der Modellanleitung durchführen; er erfordert erneutes Einrichten. Während eines laufenden Firmwareupdates weder zurücksetzen noch die Stromversorgung unterbrechen. [PetTec Support](https://support.pettec.de/hc/de/articles/11173527082514-PetTec-Cam-360-Cam-Lite-Verbindungsprobleme-nach-Update-Reset-und-neu-verbinden)

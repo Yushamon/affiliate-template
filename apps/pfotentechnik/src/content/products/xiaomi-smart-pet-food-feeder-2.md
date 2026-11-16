@@ -21,7 +21,7 @@ category:
   path: /smarte-futterautomaten/
 productUrl: /produkt/xiaomi-smart-pet-food-feeder-2/
 publishedAt: "2026-07-12"
-updatedAt: "2026-08-10"
+updatedAt: "2026-11-16"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -175,8 +175,13 @@ experience:
     Redaktionelle Einordnung anhand der offiziellen deutschen Xiaomi-Produkt- und Supportseiten; kein eigener
     Langzeittest.
   maintenance: >-
-    Behälter und Napf regelmäßig reinigen. Wiegenapf nach dem Einsetzen kalibrieren und Trockenmittelkartusche monatlich
-    austauschen.
+    Behälter und Napf regelmäßig reinigen. Wiegenapf nach dem Einsetzen kalibrieren und Trockenmittelkartusche
+    monatlich austauschen.
+  reliability: >-
+    Xiaomi dokumentiert eine „Dispensing error correction“, die aktuelle Firmware voraussetzt und
+    standardmäßig ausgeschaltet ist. Sie lässt sich auf der Geräteseite in Xiaomi Home aktivieren. Die
+    Korrektur arbeitet in Rotationsschritten; sie ersetzt keine Kontrollwägung mit dem eigenen Futter und
+    garantiert keine grammgenaue Einzelportion.
 alternatives:
   - petlibro-granary-wifi-feeder
   - petkit-fresh-element-solo
@@ -332,6 +337,14 @@ decisionFacts:
   - label: "Stromversorgung"
     value: "Netzbetrieb und vier AA-Batterien als Backup"
     consequence: "Die Stromversorgung bestimmt, wie flexibel das Gerät steht und wie es sich bei Stromausfall verhält."
+evidenceSources:
+  - source: Xiaomi Support
+    url: https://www.mi.com/global/support/faq/details/KA-243164/
+    accessedAt: "2026-11-16"
+    assertion: Ausgabekorrektur benötigt aktuelle Firmware und ist standardmäßig ausgeschaltet.
+    fields:
+      - experience
+    sourceType: manufacturer
 ---
 Der Xiaomi Smart Pet Food Feeder 2 ist technisch umfangreicher als viele klassische Vorratsautomaten. Der Wiegenapf und die automatische Entblockung sind seine wichtigsten Unterschiede.
 
@@ -351,3 +364,7 @@ Der Napf erkennt verbleibendes Futter mit einer Herstellerabweichung von höchst
 Der Smart Pet Food Feeder 2 stellt gegenüber dem Vorgänger und vielen Wettbewerbern einen deutlichen Entwicklungsschritt dar. Besonders der integrierte Wiegenapf, die automatische Entblockung, Füllstandswarnungen und die Xiaomi-Home-Integration sorgen für einen hohen Alltagsnutzen.
 
 Für Nutzer, die bereits Xiaomi Home verwenden, gehört dieses Modell zu den stärksten Empfehlungen im mittleren Preisbereich. Die Bewertung fällt deshalb höher aus als bei einfachen WLAN-Futterautomaten ohne Gewichtserfassung.
+
+## Recherche-Update vom 16. November 2026
+
+Xiaomi dokumentiert eine „Dispensing error correction“, die aktuelle Firmware voraussetzt und standardmäßig ausgeschaltet ist. Sie lässt sich auf der Geräteseite in Xiaomi Home aktivieren. Die Korrektur arbeitet in Rotationsschritten; sie ersetzt keine Kontrollwägung mit dem eigenen Futter und garantiert keine grammgenaue Einzelportion. [Xiaomi Support](https://www.mi.com/global/support/faq/details/KA-243164/)

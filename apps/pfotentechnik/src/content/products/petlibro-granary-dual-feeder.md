@@ -21,7 +21,7 @@ category:
   path: /smarte-futterautomaten/
 productUrl: /produkt/petlibro-granary-dual-feeder/
 publishedAt: "2026-07-17"
-updatedAt: "2026-07-17"
+updatedAt: "2026-11-16"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -139,10 +139,18 @@ weaknesses:
   - Trockenmittel und Reinigung verursachen Folgekosten und Aufwand
 experience:
   summary: >-
-    Die Doppelschale schafft Abstand, garantiert aber weder gleiche Portionen noch eine faire Aufnahme durch beide
-    Tiere.
+    Die Doppelschale schafft Abstand, garantiert aber weder gleiche Portionen noch eine faire Aufnahme durch
+    beide Tiere.
   methodology: Redaktionelle Einordnung anhand der offiziellen PETLIBRO-Produktseiten; kein eigener Langzeittest.
-  maintenance: Verteiler, Ausgabekanal und beide Näpfe regelmäßig reinigen. Trockenmittel ungefähr alle zwei Wochen ersetzen.
+  maintenance: >-
+    Verteiler, Ausgabekanal und beide Näpfe regelmäßig reinigen. Trockenmittel ungefähr alle zwei Wochen
+    ersetzen.
+  reliability: >-
+    PETLIBROs Aufarbeitung des App-Ausfalls im August 2026 unterscheidet fehlende Protokolle von tatsächlich
+    verzögerten oder ausgefallenen Mahlzeiten. Das Verhalten hängt vom Modell, gespeicherten Zeitplan,
+    Gerätezustand und Stromunterbrechungen ab. Ein App-Eintrag allein bestätigt keine Ausgabe; vor Abwesenheit
+    mehrere reale Fütterungen und den Napf kontrollieren. Eine Ausfallquote für dieses konkrete EU-Modell ist
+    nicht veröffentlicht.
 alternatives:
   - oneisall-5l-automatic-cat-feeder
   - honeyguardian-smart-pet-feeder-s305d
@@ -300,6 +308,16 @@ offers:
     variantLabel: "Weiß / Duale Schale"
     lastAttemptAt: "2026-11-16T09:07:09.708Z"
     availabilityUpdated: "2026-11-16T09:07:09.708Z"
+evidenceSources:
+  - source: PETLIBRO · App Outage FAQ
+    url: https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq
+    accessedAt: "2026-11-16"
+    assertion: >-
+      App-Protokolle bestätigen während eines Dienstausfalls keine tatsächlich ausgegebene Mahlzeit;
+      Offline-Verhalten modell- und zustandsabhängig.
+    fields:
+      - experience
+    sourceType: manufacturer
 ---
 Der PETLIBRO Granary Dual ist technisch der bekannte PLAF103 mit Doppelschale und Futterteiler. Er ist für gemeinsame, nicht für individuell kontrollierte Fütterung gedacht.
 
@@ -312,3 +330,7 @@ Beide Näpfe werden aus demselben Behälter und nach demselben Zeitplan versorgt
 Der Mahlzeitenteiler kann verschoben werden, um eine Seite stärker zu versorgen. Im Alltag sollte die Verteilung mehrfach mit dem verwendeten Futter geprüft werden.
 
 **Quelle:** [PETLIBRO Granary WiFi Dual Food Tray Feeder](https://petlibro.com/products/granary-wifi-dual-food-tray). Bild: redaktionelle Visualisierung.
+
+## Recherche-Update vom 16. November 2026
+
+PETLIBROs Aufarbeitung des App-Ausfalls im August 2026 unterscheidet fehlende Protokolle von tatsächlich verzögerten oder ausgefallenen Mahlzeiten. Das Verhalten hängt vom Modell, gespeicherten Zeitplan, Gerätezustand und Stromunterbrechungen ab. Ein App-Eintrag allein bestätigt keine Ausgabe; vor Abwesenheit mehrere reale Fütterungen und den Napf kontrollieren. Eine Ausfallquote für dieses konkrete EU-Modell ist nicht veröffentlicht. [PETLIBRO · App Outage FAQ](https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq)

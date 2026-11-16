@@ -143,7 +143,7 @@ specs:
 evidenceSources:
   - source: satellai-html
     url: https://global.satellai.com/en-eu/products/satellai-collar-go-smart-dog-gps-tracker
-    accessedAt: '2026-11-16T10:07:08.183Z'
+    accessedAt: "2026-11-16T10:07:08.183Z"
     assertion: Offizielle modellbezogene Angaben zu Masse, Schutzart, App und bedingter Laufzeit. Keine eigene Messung.
     fields:
       - specs
@@ -152,44 +152,84 @@ evidenceSources:
     sourceType: manufacturer
   - source: satellai-product
     url: https://global.satellai.com/en-eu/products/satellai-collar-go-smart-dog-gps-tracker.js
-    accessedAt: '2026-11-16T10:01:02.832Z'
+    accessedAt: "2026-11-16T10:01:02.832Z"
     assertion: Ausgewählte EU-/DE-Variante, SKU und aktueller Preis in Euro.
     fields:
       - mpn
       - price
     sourceType: officialStore
   - source: mova-connect
-    url: https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html
-    accessedAt: '2026-11-16T10:02:39.609Z'
-    assertion: Unabhängiger GPS-Tracker-Vergleich behandelt MOVA SureTrack Pro, SATELLAI Collar Go und Tractive DOG 6 ausdrücklich. Keine Übernahme fremder Testnoten als eigene Bewertung.
+    url: >-
+      https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html
+    accessedAt: "2026-11-16T10:02:39.609Z"
+    assertion: >-
+      Unabhängiger GPS-Tracker-Vergleich behandelt MOVA SureTrack Pro, SATELLAI Collar Go und Tractive DOG 6
+      ausdrücklich. Keine Übernahme fremder Testnoten als eigene Bewertung.
     fields:
       - experience
       - review
     sourceType: independentSource
   - source: satellai-faq
     url: https://global.satellai.com/en-eu/pages/collar-go-faq-page-for-eu
-    accessedAt: '2026-11-16T10:02:38.899Z'
-    assertion: EU-FAQ zu Einrichtung, regionaler Lieferung und Nutzung; keine Ableitung einer universellen Netzgarantie.
+    accessedAt: "2026-11-16T10:02:38.899Z"
+    assertion: >-
+      EU-FAQ zu Einrichtung, regionaler Lieferung und Nutzung; keine Ableitung einer universellen
+      Netzgarantie.
     fields:
       - faq
       - decision
     sourceType: manufacturer
   - source: CHIP – Collar Go Praxistest
-    url: https://www.chip.de/test-kaufberatung/hobby-freizeit/satellai-collar-g-im-test_e5ceb9ad-a5bb-41db-a82e-61edb2590e56.html
-    accessedAt: '2026-11-16T00:00:00.000Z'
-    assertion: Positive Ortungs- und App-Erfahrung, 108 Stunden Laufzeit im Test; Halterung bei Verdrehen kontrollieren.
+    url: >-
+      https://www.chip.de/test-kaufberatung/hobby-freizeit/satellai-collar-g-im-test_e5ceb9ad-a5bb-41db-a82e-61edb2590e56.html
+    accessedAt: "2026-11-16T00:00:00.000Z"
+    assertion: >-
+      Positive Ortungs- und App-Erfahrung, 108 Stunden Laufzeit im Test; Halterung bei Verdrehen
+      kontrollieren.
     fields:
       - ratings
       - experience.methodology
     sourceType: independentSource
   - source: connect – direkter GPS-Praxistest
-    url: https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html
-    accessedAt: '2026-11-16T00:00:00.000Z'
-    assertion: App und Laufzeit im selben Vergleich günstiger als bei MOVA eingeordnet; Gewichtsnachteil separat berücksichtigt.
+    url: >-
+      https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html
+    accessedAt: "2026-11-16T00:00:00.000Z"
+    assertion: >-
+      App und Laufzeit im selben Vergleich günstiger als bei MOVA eingeordnet; Gewichtsnachteil separat
+      berücksichtigt.
     fields:
       - ratings
       - experience.methodology
     sourceType: independentSource
+  - source: CHIP
+    url: >-
+      https://www.chip.de/test-kaufberatung/hobby-freizeit/satellai-collar-g-im-test_e5ceb9ad-a5bb-41db-a82e-61edb2590e56.html
+    accessedAt: "2026-11-16"
+    assertion: >-
+      Schnelle, präzise Ortung; USB-C und umfangreiche App. 108 Stunden Laufzeit im Testprotokoll; Halterung
+      konnte sich bei starkem Verdrehen lösen.
+    fields:
+      - externalEvidence
+    sourceType: independentSource
+  - source: connect
+    url: >-
+      https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html
+    accessedAt: "2026-11-16"
+    assertion: >-
+      App und Positionierung im Vergleich positiv. Etwa fünf bis sechs Tage im Test statt einer garantierten
+      Maximallaufzeit.
+    fields:
+      - externalEvidence
+    sourceType: independentSource
+  - source: SATELLAI Go · Apple App Store
+    url: https://apps.apple.com/us/app/satellai-go/id6753865552
+    accessedAt: "2026-11-16"
+    assertion: >-
+      App 2.9.1 dokumentiert Wochen-/Monatsberichte; Routine-Firmwareupdates werden separat in den
+      Geräteeinstellungen angezeigt.
+    fields:
+      - experience
+    sourceType: manufacturer
 priceAutomation: automatic
 price:
   current: 67
@@ -230,8 +270,21 @@ decision:
     - Hersteller-Maximallaufzeit ist kein Dauerwert
     - Gesundheitstrends liefern keine Diagnose
 experience:
-  summary: Für Halter mit Mobilfunkabdeckung und Bereitschaft zu laufenden Abo-Kosten; Rückrufsignale erfordern Gewöhnung und ersetzen kein Training.
-  methodology: 'Redaktionelle Datenbewertung, kein eigener Praxistest. Ortung 3,5/5 und App 3,5/5: positive Fremdtests bei connect und CHIP. Akku 3,0/5: CHIP misst 108 Stunden; die höhere Hersteller-Maximallaufzeit wird nicht als Alltagsergebnis gewertet. Tragekomfort 3,0/5: 49 g laut EU-Daten, Befestigung vor jedem Einsatz prüfen. Kosten 2,5/5: Pflicht-Abo, regionaler Tarif ungeklärt. Kriterien gleich gewichtet; Gerätepreis, Lieferstatus und Provision ohne Einfluss. Unterschiedliche Testbedingungen begrenzen direkte Laufzeitvergleiche.'
+  summary: >-
+    Für Halter mit Mobilfunkabdeckung und Bereitschaft zu laufenden Abo-Kosten; Rückrufsignale erfordern
+    Gewöhnung und ersetzen kein Training.
+  methodology: >-
+    Redaktionelle Datenbewertung, kein eigener Praxistest. Ortung 3,5/5 und App 3,5/5: positive Fremdtests bei
+    connect und CHIP. Akku 3,0/5: CHIP misst 108 Stunden; die höhere Hersteller-Maximallaufzeit wird nicht als
+    Alltagsergebnis gewertet. Tragekomfort 3,0/5: 49 g laut EU-Daten, Befestigung vor jedem Einsatz prüfen.
+    Kosten 2,5/5: Pflicht-Abo, regionaler Tarif ungeklärt. Kriterien gleich gewichtet; Gerätepreis,
+    Lieferstatus und Provision ohne Einfluss. Unterschiedliche Testbedingungen begrenzen direkte
+    Laufzeitvergleiche.
+  reliability: >-
+    Der iOS-Versionsverlauf nennt Wochen- und Monatsberichte ab Version 2.9.1 sowie einen separaten Hinweis
+    auf Routine-Firmwareupdates in den Geräteeinstellungen. Das belegt Softwarepflege, aber weder eine
+    bestimmte EU-Gerätefirmware noch eine medizinisch validierte Auswertung. Die unbekannte Lieferbarkeit
+    bleibt ausdrücklich offen.
 subscription:
   status: required-subscription
   requiredForCoreFunction: true
@@ -271,6 +324,43 @@ comparisonFilters:
     - medium
     - large
   foodType: []
+externalEvidence:
+  professionalReviews:
+    - publisher: CHIP
+      title: SATELLAI Collar Go im Test
+      url: >-
+        https://www.chip.de/test-kaufberatung/hobby-freizeit/satellai-collar-g-im-test_e5ceb9ad-a5bb-41db-a82e-61edb2590e56.html
+      checkedAt: "2026-11-16"
+      methodology: lab-test
+      positives:
+        - Schnelle, präzise Ortung; USB-C und umfangreiche App.
+      negatives:
+        - 108 Stunden Laufzeit im Testprotokoll; Halterung konnte sich bei starkem Verdrehen lösen.
+      findings:
+        - Testdatum 16.10.2026; 47 g gemessen gegenüber 49 g Herstellerangabe. Kein allgemeiner Laufzeitwert.
+    - publisher: connect
+      title: "GPS-Tracker für Hunde: Tractive DOG 6, SATELLAI Collar Go und MOVA SureTrack Pro"
+      url: >-
+        https://www.connect.de/testbericht/gps-tracker-hunde-tractive-dog-6-satellai-collar-go-mova-suretrack-pro-test-3213978.html
+      publishedAt: "2026-11-10"
+      checkedAt: "2026-11-16"
+      methodology: hands-on
+      positives:
+        - App und Positionierung im Vergleich positiv.
+      negatives:
+        - Etwa fünf bis sechs Tage im Test statt einer garantierten Maximallaufzeit.
+      findings:
+        - Protokollabhängiger Wert; nicht unmittelbar mit CHIP-Laufzeit vergleichbar.
+  userReviews: []
+  consensus:
+    strengths: []
+    weaknesses: []
+    editorialAssessment: >-
+      Der Score 62 bleibt bestehen. Schnelle Ortung und App-Komfort sind belegt; Laufzeit und Halterung
+      begrenzen die Eignung. Preis ist kein Liefernachweis.
+  note: >-
+    Kein eigener PfotenTechnik-Praxistest. Modell-, Länder-, Tarif- und Testzeitpunktgrenzen der Fremdquellen
+    beachten; keine Übernahme fremder Noten.
 ---
 
 ## Einordnung
@@ -304,3 +394,7 @@ Ein Mobilfunktarif ist für die Fernortung erforderlich. Empfang, Live-Ortung un
 - [satellai-faq](https://global.satellai.com/en-eu/pages/collar-go-faq-page-for-eu): EU-FAQ zu Einrichtung, regionaler Lieferung und Nutzung; keine Ableitung einer universellen Netzgarantie. Abruf: 2026-11-16.
 
 - [CHIP: eigener Collar-Go-Praxistest](https://www.chip.de/test-kaufberatung/hobby-freizeit/satellai-collar-g-im-test_e5ceb9ad-a5bb-41db-a82e-61edb2590e56.html): Ortung, App, Akku und Befestigung getrennt berücksichtigt. Abruf: 2026-11-16.
+
+## Recherche-Update vom 16. November 2026
+
+Der iOS-Versionsverlauf nennt Wochen- und Monatsberichte ab Version 2.9.1 sowie einen separaten Hinweis auf Routine-Firmwareupdates in den Geräteeinstellungen. Das belegt Softwarepflege, aber weder eine bestimmte EU-Gerätefirmware noch eine medizinisch validierte Auswertung. Die unbekannte Lieferbarkeit bleibt ausdrücklich offen. [SATELLAI Go · Apple App Store](https://apps.apple.com/us/app/satellai-go/id6753865552)

@@ -25,7 +25,7 @@ category:
   path: /trinkbrunnen/
 productUrl: /produkt/philips-pet-series-paw3210-02/
 publishedAt: "2026-11-04"
-updatedAt: "2026-11-04"
+updatedAt: "2026-11-16"
 author:
   name: PfotenTechnik Redaktion
   role: Redaktion
@@ -119,6 +119,7 @@ weaknesses:
   - Keine Akkuversorgung
   - Handreinigung trotz abweichender älterer Presseinformation
   - Kunststoff und modellgebundene Filter
+  - "Fremdtest: Wiederanlauf nach Stromunterbrechung erst per Tastendruck"
 experience:
   summary: >-
     Für Katzen und kleine Hunde, wenn ein kompakter Netzbrunnen mit Bewegungssensor und ohne App gesucht wird
@@ -134,7 +135,12 @@ experience:
   maintenance: >-
     Handreinigung laut Philips-Support; keine Spülmaschine. Anschluss trocken halten und Pumpe separat
     reinigen.
-  reliability: Keine eigene Langzeitprüfung. Angaben zu Geräusch, Hygiene und Lebensdauer sind keine eigenen Messungen.
+  reliability: >-
+    Keine eigene Langzeitprüfung. Angaben zu Geräusch, Hygiene und Lebensdauer sind keine eigenen Messungen.
+    Lyd & Bilde berichtet, dass der geprüfte PAW3210/02 nach einer Stromunterbrechung erst durch Tastendruck
+    wieder anlief. Vor unbeaufsichtigter Nutzung den Wiederanlauf am eigenen Gerät prüfen und zusätzlich einen
+    zugänglichen Wassernapf bereitstellen. Die tägliche Reinigung wurde positiv, das Zerlegen der Pumpe
+    aufwendiger beurteilt.
 editorial:
   assessmentType: data-review
   evidence:
@@ -150,15 +156,30 @@ editorial:
     nicht bestätigt. Gleichgewichteter Mittelwert: 73/100. Geräusch und Langzeitzuverlässigkeit wurden nicht
     getestet.
 externalEvidence:
-  professionalReviews: []
+  professionalReviews:
+    - publisher: Lyd & Bilde
+      title: "TEST: Philips Water Fountain PAW3210"
+      url: >-
+        https://www.lydogbilde.no/test/smart-hjem/6-smarte-for-og-vannautomater-til-kjaeledyr/philips-water-fountain-paw3210/
+      publishedAt: "2025-01-25"
+      checkedAt: "2026-11-16"
+      methodology: hands-on
+      positives:
+        - Bewegungsaktivierung und tägliche Reinigung überzeugten im Test.
+      negatives:
+        - Pumpe aufwendiger zu zerlegen; Testgerät startete nach Stromunterbrechung erst per Tastendruck.
+      findings:
+        - Konkreter PAW3210/02-Test. Keine Aussage zur Ausfallhäufigkeit oder zu allen Hardwareständen.
   userReviews: []
   consensus:
     strengths: []
     weaknesses: []
     editorialAssessment: >-
-      Die Bewertung stützt sich auf dokumentierte Ausstattung und Pflegeanforderungen; keine unabhängigen
-      Praxistests oder Nutzerstichprobe ausgewertet.
-  note: Kein eigener Praxistest; keine Hersteller-Shopsterne als redaktionelle Messung übernommen.
+      Modellbezogener Fremdtest vorhanden. Der beobachtete fehlende Wiederanlauf ist eine praktische Grenze;
+      die bisherige Eignungsbewertung bleibt wegen fehlender vergleichbarer Langzeitmessung bestehen.
+  note: >-
+    Kein eigener PfotenTechnik-Praxistest. Modell-, Länder-, Tarif- und Testzeitpunktgrenzen der Fremdquellen
+    beachten; keine Übernahme fremder Noten.
 specs:
   - label: Modell
     value: Pet Series 3000 PAW3210/02
@@ -423,6 +444,24 @@ evidenceSources:
       - affiliate.url
       - images
     sourceType: retailer
+  - source: Lyd & Bilde
+    url: >-
+      https://www.lydogbilde.no/test/smart-hjem/6-smarte-for-og-vannautomater-til-kjaeledyr/philips-water-fountain-paw3210/
+    accessedAt: "2026-11-16"
+    assertion: >-
+      Bewegungsaktivierung und tägliche Reinigung überzeugten im Test. Pumpe aufwendiger zu zerlegen;
+      Testgerät startete nach Stromunterbrechung erst per Tastendruck.
+    fields:
+      - externalEvidence
+    sourceType: independentSource
+  - source: Lyd & Bilde
+    url: >-
+      https://www.lydogbilde.no/test/smart-hjem/6-smarte-for-og-vannautomater-til-kjaeledyr/philips-water-fountain-paw3210/
+    accessedAt: "2026-11-16"
+    assertion: Wiederanlauf nach Stromausfall laut Fremdtest nicht automatisch; am eigenen Gerät kontrollieren.
+    fields:
+      - experience
+    sourceType: independentSource
 ---
 
 ## Das recherchierte Modell: PAW3210/02
@@ -476,3 +515,7 @@ Recherche am 4. November 2026. Preise sind datierte Händlerangaben, keine Preis
 Weitere Orientierung geben der [Katzenbrunnen-Vergleich](/vergleiche/beste-trinkbrunnen-fuer-katzen/), die [Reinigungsanleitung](/katzentrinkbrunnen-richtig-reinigen/) und die [Hinweise zum Filterwechsel](/filter-im-katzentrinkbrunnen-wechseln/).
 
 - [Amazon · Modellvariante und Produktbilder](https://www.amazon.de/dp/B0CWVKLXR8): Produktseite zur zugeordneten ASIN B0CWVKLXR8 beim erneuten Abruf auswertbar; Bilder aus der Galerie der ausgewählten Variante. Amazon-Seitentitel nennt PAW3210/02; ausgewählte Produktgalerie zeigt den Philips Pet Series Brunnen in Dunkelgrau. Kein Modellwiderspruch.
+
+## Recherche-Update vom 16. November 2026
+
+Lyd & Bilde berichtet, dass der geprüfte PAW3210/02 nach einer Stromunterbrechung erst durch Tastendruck wieder anlief. Vor unbeaufsichtigter Nutzung den Wiederanlauf am eigenen Gerät prüfen und zusätzlich einen zugänglichen Wassernapf bereitstellen. Die tägliche Reinigung wurde positiv, das Zerlegen der Pumpe aufwendiger beurteilt. [Lyd & Bilde](https://www.lydogbilde.no/test/smart-hjem/6-smarte-for-og-vannautomater-til-kjaeledyr/philips-water-fountain-paw3210/)

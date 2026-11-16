@@ -14,7 +14,7 @@ manufacturer:
 category: { key: "haustierkameras", label: "Haustierkameras", path: "/haustierkameras/" }
 productUrl: "/produkt/furbo-360-katzenkamera/"
 publishedAt: "2026-08-21"
-updatedAt: "2026-08-21"
+updatedAt: "2026-11-16"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 seo: { title: "Furbo 360° Katzenkamera: Abo & Funktionen", description: "Furbo 360 Katzenkamera mit 1080p, Tracking, Leckerliwurf, Feder-Spielzeug, Meowing Alert und Nanny-Abhängigkeiten.", canonical: "/produkt/furbo-360-katzenkamera/", sitemap: true, priority: 0.8 }
 hub: { sections: ["produkte", "haustierkameras"] }
@@ -58,7 +58,12 @@ decision:
   attention: ["Kitty Diary und Videoverlauf benötigen Furbo Nanny", "Meowing Alert ist ein Geräuschsignal, keine Befindlichkeitsdiagnose", "Mehrere Katzen werden nicht zuverlässig individuell identifiziert", "Spielzeug und Wurfgeräusch nur unter Beobachtung einführen"]
 review: { summary: "Die Katzenkamera ist ein eigenes Furbo-Modell mit Katzenaufsatz und Feder-Spielzeug, nicht nur eine Farbe der Hundekamera.", verdict: "Starke katzenspezifische Interaktion, aber Cloud-/Abo-Grenzen und fehlende individuelle Mehrkatzenerkennung bleiben kaufentscheidend." }
 strengths: ["1080p mit 360° und 4× Digitalzoom", "Auto-Tracking", "Leckerliwurf", "Feder-Spielzeug", "Meowing Alert"]
-weaknesses: ["Videoverlauf und Kitty Diary tarifabhängig", "keine lokale Speicherung belegt", "keine sichere individuelle Mehrkatzenerkennung", "Geräuscherkennung kann Kontext nicht erklären"]
+weaknesses:
+  - Videoverlauf und Kitty Diary tarifabhängig
+  - keine lokale Speicherung belegt
+  - keine sichere individuelle Mehrkatzenerkennung
+  - Geräuscherkennung kann Kontext nicht erklären
+  - "Cats.com: körnigeres Bild und unzuverlässige KI-Zuordnung im Vergleichstest"
 specs:
   - { label: "Video", value: "1080p FHD, rotierende 360°-Sicht, 4× Digitalzoom" }
   - { label: "Tracking", value: "Automatische Rotation und Zoom-Verfolgung laut Hersteller" }
@@ -115,8 +120,21 @@ faq:
   - { question: "Erkennt sie einzelne Katzen?", answer: "Eine belastbare individuelle Mehrkatzenerkennung ist nicht ausgewiesen. Tracking zeigt Bewegung im Kamerabereich, ordnet sie aber nicht sicher einer bestimmten Katze zu." }
 editorial: { assessmentType: "data-review", evidence: ["manufacturer-documentation", "technical-specifications", "comparative-analysis"], testedHandsOn: false, lastVerifiedAt: "2026-08-21", note: "Herstellerdaten redaktionell eingeordnet; kein eigener Produkttest." }
 evidenceSources:
-  - { source: "Furbo 360° Cat Camera EU", url: "https://www.furbo.com/eu-en/products/furbo-360-cat-camera", accessedAt: "2026-08-21", assertion: "Eigenständiges EU-Modell, Verfügbarkeit, Angebot und Garantiehinweise.", fields: ["availability", "decision"] }
-  - { source: "Furbo EU Kameravergleich", url: "https://furbo.com/eu-en/pages/comparison", accessedAt: "2026-08-21", assertion: "Video, Rotation, Zoom, Tracking, Interaktion, Nanny-Abhängigkeiten, Lieferumfang und Garantie.", fields: ["specs", "features", "comparisonData"] }
+  - source: Furbo 360° Cat Camera EU
+    url: https://www.furbo.com/eu-en/products/furbo-360-cat-camera
+    accessedAt: "2026-08-21"
+    assertion: Eigenständiges EU-Modell, Verfügbarkeit, Angebot und Garantiehinweise.
+    fields:
+      - availability
+      - decision
+  - source: Furbo EU Kameravergleich
+    url: https://furbo.com/eu-en/pages/comparison
+    accessedAt: "2026-08-21"
+    assertion: Video, Rotation, Zoom, Tracking, Interaktion, Nanny-Abhängigkeiten, Lieferumfang und Garantie.
+    fields:
+      - specs
+      - features
+      - comparisonData
   - source: Herstellerdokumentation · Furbo 360° Katzenkamera
     url: https://help.furbo.com/hc/de/articles/17462739016089-Furbo-Nanny-Abonnements-und-Preise
     accessedAt: "2026-09-02"
@@ -132,6 +150,24 @@ evidenceSources:
       - comparisonData.camera.detectionTypes
       - comparisonData.camera.nightVision
     sourceType: manufacturer
+  - source: Cats.com
+    url: https://cats.com/best-pet-cat-camera
+    accessedAt: "2026-11-16"
+    assertion: >-
+      Gute Nachtsicht, Audio und flexible Leckerliausgabe im Haushaltstest. Vergleichsweise körniges Bild und
+      unzuverlässige KI-Zuordnung einzelner Katzen.
+    fields:
+      - externalEvidence
+    sourceType: independentSource
+  - source: Cats.com
+    url: https://cats.com/best-pet-cat-camera
+    accessedAt: "2026-11-16"
+    assertion: >-
+      Furbo-Katzenmodell tatsächlich getestet; regionale Tarifgrenzen und unsichere KI-Identifikation getrennt
+      einordnen.
+    fields:
+      - experience
+    sourceType: independentSource
 affiliate:
   provider: "furbo-eu"
   label: "Preis und Verfügbarkeit prüfen"
@@ -148,6 +184,40 @@ availabilityUpdated: "2026-08-21T11:39:06.312Z"
 editorialStatus: "complete"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
+externalEvidence:
+  professionalReviews:
+    - publisher: Cats.com
+      title: 8 Best Pet Cameras for Cats · Furbo 360 Cat Camera
+      url: https://cats.com/best-pet-cat-camera
+      checkedAt: "2026-11-16"
+      methodology: hands-on
+      positives:
+        - Gute Nachtsicht, Audio und flexible Leckerliausgabe im Haushaltstest.
+      negatives:
+        - Vergleichsweise körniges Bild und unzuverlässige KI-Zuordnung einzelner Katzen.
+      findings:
+        - >-
+          US-Test mit abweichendem Abo-Angebot. Seine Abo-Pflicht wird nicht pauschal auf europäische Geräte
+          ohne Pflichtabo übertragen.
+  userReviews: []
+  consensus:
+    strengths: []
+    weaknesses: []
+    editorialAssessment: >-
+      Ein modellbezogener Fremdtest ergänzt die Herstellerbasis. Interaktion ist nachvollziehbar; Bildqualität
+      und individuelle KI-Zuordnung haben Grenzen. Regionale Bundle-/Tarifbedingungen getrennt prüfen.
+  note: >-
+    Kein eigener PfotenTechnik-Praxistest. Modell-, Länder-, Tarif- und Testzeitpunktgrenzen der Fremdquellen
+    beachten; keine Übernahme fremder Noten.
+experience:
+  summary: >-
+    Die Katzenkamera ist ein eigenes Furbo-Modell mit Katzenaufsatz und Feder-Spielzeug, nicht nur eine Farbe
+    der Hundekamera.
+  reliability: >-
+    Cats.com testete ausdrücklich die Katzenkamera: Audio, Nachtsicht und Leckerliwurf waren nützlich, das
+    Bild im Vergleich körniger. Die KI verwechselte ähnlich gefärbte Tiere oder benannte sie gar nicht. Eine
+    individuelle Zuordnung ist damit keine verlässliche Mehrkatzenkontrolle. Die im US-Test genannte
+    Abo-Pflicht wird wegen unterschiedlicher Angebote nicht als allgemeine EU-Pflicht übernommen.
 ---
 
 ## Eigenständiges Katzenmodell
@@ -163,3 +233,7 @@ Livebild, Zwei-Wege-Audio, Auto-Tracking, Leckerliwurf und Meowing Alert sind al
 Das Feder-Spielzeug kann kurze Jagdinteraktion ermöglichen, sollte aber wegen Schnur, Feder und individueller Reaktion zunächst beaufsichtigt eingeführt werden. Meowing Alert erkennt Geräusche, aber weder deren Ursache noch welche Katze miaut. In Mehrkatzenhaushalten kann die Kamera Aktivität zeigen; eine verlässliche individuelle Zuordnung ist nicht belegt.
 
 Der [Haustierkamera-Vergleich](/vergleiche/beste-haustierkameras/) stellt Katzeninteraktion, Abo und lokale Alternativen gegenüber.
+
+## Recherche-Update vom 16. November 2026
+
+Cats.com testete ausdrücklich die Katzenkamera: Audio, Nachtsicht und Leckerliwurf waren nützlich, das Bild im Vergleich körniger. Die KI verwechselte ähnlich gefärbte Tiere oder benannte sie gar nicht. Eine individuelle Zuordnung ist damit keine verlässliche Mehrkatzenkontrolle. Die im US-Test genannte Abo-Pflicht wird wegen unterschiedlicher Angebote nicht als allgemeine EU-Pflicht übernommen. [Cats.com](https://cats.com/best-pet-cat-camera)

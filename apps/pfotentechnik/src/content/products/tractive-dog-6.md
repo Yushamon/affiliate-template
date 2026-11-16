@@ -21,7 +21,7 @@ category:
   path: /gps-tracker/
 productUrl: "/produkt/tractive-dog-6/"
 publishedAt: "2026-07-20"
-updatedAt: '2026-11-16'
+updatedAt: "2026-11-16"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -508,6 +508,13 @@ decisionFacts:
     value: "IP68"
     consequence: "Die Schutzklasse ist bei Regen, Reinigung und dauerhaftem Außeneinsatz relevant."
 priceAutomation: automatic
+reviewedAlternatives:
+  - slug: tractive-dog-6-xl
+    reason: Größere Akkureserve für Hunde ab 20 kg; das größere Gehäuse und dessen Passform beachten.
+  - slug: weenect-xt
+    reason: >-
+      Outdoor-Modell mit anderer Befestigung und Ton-/Vibrationssignalen; benötigt ebenfalls einen
+      Mobilfunktarif.
 ---
 Der Tractive DOG 6 ist ein kompakter GPS-Tracker für Hunde ab 4 kg. Er kombiniert satellitengestützte Positionsbestimmung mit LTE-Übertragung an die Tractive-App. Im Live-Modus wird der Standort laut Hersteller etwa alle zwei bis drei Sekunden aktualisiert.
 

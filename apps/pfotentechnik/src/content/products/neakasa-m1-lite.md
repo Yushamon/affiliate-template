@@ -17,7 +17,7 @@ category:
   path: "/automatische-katzentoiletten/"
 productUrl: "/produkt/neakasa-m1-lite/"
 publishedAt: "2026-08-07"
-updatedAt: "2026-08-15"
+updatedAt: "2026-11-16"
 author:
   name: "PfotenTechnik Redaktion"
   role: "Redaktion"
@@ -89,29 +89,57 @@ ratings:
   folgekosten: 3.8
   datenschutz: 3.9
 externalEvidence:
-  status: "constrained"
+  status: constrained
   userReviews:
-    - platform: "Chewy"
-      url: "https://www.chewy.com/neakasa-m1-lite-open-top-self/product-reviews/2049302"
+    - platform: Chewy
+      url: https://www.chewy.com/neakasa-m1-lite-open-top-self/product-reviews/2049302
       checkedAt: "2026-08-11"
       rating: 3.9
       scale: 5
       reviewCount: 35
       recurringPositives:
-        - "Offene Bauform, einfache Inbetriebnahme und automatische Reinigung werden wiederholt positiv erwähnt."
+        - >-
+          Offene Bauform, einfache Inbetriebnahme und automatische Reinigung werden wiederholt positiv
+          erwähnt.
       recurringCriticism:
-        - "Mehrere Käufer berichten von Geruch, anhaftendem Abfall am Rand und höherem Reinigungsaufwand als erwartet."
-    - platform: "Best Buy"
-      url: "https://www.bestbuy.com/site/reviews/neakasa-m1-lite-open-top-self-cleaning-cat-litter-box-white/6632926"
+        - >-
+          Mehrere Käufer berichten von Geruch, anhaftendem Abfall am Rand und höherem Reinigungsaufwand als
+          erwartet.
+    - platform: Best Buy
+      url: >-
+        https://www.bestbuy.com/site/reviews/neakasa-m1-lite-open-top-self-cleaning-cat-litter-box-white/6632926
       checkedAt: "2026-08-11"
       rating: 5
       scale: 5
       reviewCount: 4
       recurringPositives:
-        - "Die kleine Stichprobe lobt leisen Betrieb, einfache Einrichtung und schnelle Akzeptanz."
+        - Die kleine Stichprobe lobt leisen Betrieb, einfache Einrichtung und schnelle Akzeptanz.
       recurringCriticism:
-        - "Die Stichprobe ist sehr klein und mehrere Reviews sind als incentiviert gekennzeichnet."
-  note: "Für das exakt als M1 Lite bezeichnete Modell wurde keine ausreichend belastbare unabhängige Hands-on-Review gefunden. Nutzerquellen allein reichen nicht für einen professionell gestützten Consensus."
+        - Die Stichprobe ist sehr klein und mehrere Reviews sind als incentiviert gekennzeichnet.
+  note: >-
+    Kein eigener PfotenTechnik-Praxistest. Modell-, Länder-, Tarif- und Testzeitpunktgrenzen der Fremdquellen
+    beachten; keine Übernahme fremder Noten.
+  professionalReviews:
+    - publisher: Sitegeek
+      title: Test de la Neakasa M1 Plus Lite
+      url: https://www.sitegeek.fr/article-technologie/maison-connectee/neakasa-m1-plus-lite-test/
+      publishedAt: "2026-11-12"
+      checkedAt: "2026-11-16"
+      methodology: hands-on
+      positives:
+        - Einfache Einrichtung und diskreter Betrieb im Einzelhaushalt.
+      negatives:
+        - Viel Stellfläche, hoher Einstieg und zwingend passende klumpende Streu.
+      findings:
+        - >-
+          Exakt M1 Plus Lite; keine Übertragung auf M1 oder M1 Plus. Aussagen über wochenlange Abwesenheit
+          werden nicht als sichere Nutzungsempfehlung übernommen.
+  consensus:
+    strengths: []
+    weaknesses: []
+    editorialAssessment: >-
+      Ein erster passender Haushaltstest ist vorhanden. Er bestätigt Passform- und Streugrenzen; Sicherheits-
+      und Mehrtierzuverlässigkeit bleiben ohne unabhängige Messreihe.
 decision:
   bestFor:
     - "Katzen von 1 bis 15 kg laut Hersteller"
@@ -273,21 +301,39 @@ editorial:
 litterCompatibility: { status: partial, compatibleTypes: [bentonite, mineral-clumping], conditionalTypes: [], incompatibleTypes: [wood, pellets, paper, non-clumping], clumpingRequirement: required, grainSize: { maxLengthMm: 10, maxDiameterMm: 3, notes: "Partikel müssen das Filtersieb passieren." }, notes: ["Hersteller empfiehlt schnell klumpende körnige Bentonit- oder Mineralstreu."], researchedAt: "2026-09-03", evidence: [{ source: "Neakasa M1 Lite", url: "https://eu.neakasa.com/products/m1-lite-self-cleaning-cat-litter-box", sourceType: manufacturer, verifiedAt: "2026-09-03", assertion: "Hersteller dokumentiert Klumpanforderung, ausgeschlossene Streuarten und maximal 3 mm Durchmesser beziehungsweise 10 mm Länge." }] }
 multiPet: { sharedUse: supported, identificationMethods: [weight], individualProfiles: partial, individualAccess: notApplicable, individualFeeding: notApplicable, individualUsageData: partial, similarPetLimitation: { status: unknown, description: "Keine Mindestgewichtsdifferenz dokumentiert." }, evidenceSourceUrls: ["https://eu.neakasa.com/products/m1-lite-self-cleaning-cat-litter-box"] }
 evidenceSources:
-  - source: "Neakasa EU"
-    url: "https://eu.neakasa.com/products/m1-lite-self-cleaning-cat-litter-box"
+  - source: Neakasa EU
+    url: https://eu.neakasa.com/products/m1-lite-self-cleaning-cat-litter-box
     accessedAt: "2026-08-15"
-    assertion: "Aktuelle EU-Modellidentität, Maße, Kapazitäten, Abdichtung und Streugrenzen sind Herstellerangaben."
+    assertion: Aktuelle EU-Modellidentität, Maße, Kapazitäten, Abdichtung und Streugrenzen sind Herstellerangaben.
     fields:
-      - "title"
-      - "specs"
-      - "decision"
-  - source: "Neakasa Lifecycle-Vergleich"
-    url: "https://neakasa.com/blogs/all/neakasa-m1-vs-m1-lite"
+      - title
+      - specs
+      - decision
+  - source: Neakasa Lifecycle-Vergleich
+    url: https://neakasa.com/blogs/all/neakasa-m1-vs-m1-lite
     accessedAt: "2026-08-15"
-    assertion: "Plus-Generation, Sensorik und Dichtungsänderungen sind Herstellerangaben; Abweichungen werden nicht aufgelöst durch Schätzung."
+    assertion: >-
+      Plus-Generation, Sensorik und Dichtungsänderungen sind Herstellerangaben; Abweichungen werden nicht
+      aufgelöst durch Schätzung.
     fields:
-      - "specs"
-      - "weaknesses"
+      - specs
+      - weaknesses
+  - source: Sitegeek
+    url: https://www.sitegeek.fr/article-technologie/maison-connectee/neakasa-m1-plus-lite-test/
+    accessedAt: "2026-11-16"
+    assertion: >-
+      Einfache Einrichtung und diskreter Betrieb im Einzelhaushalt. Viel Stellfläche, hoher Einstieg und
+      zwingend passende klumpende Streu.
+    fields:
+      - externalEvidence
+    sourceType: independentSource
+  - source: Sitegeek
+    url: https://www.sitegeek.fr/article-technologie/maison-connectee/neakasa-m1-plus-lite-test/
+    accessedAt: "2026-11-16"
+    assertion: Exakte Plus-Lite-Generation im neuen Haushaltstest; keine Gleichsetzung mit älteren M1-Modellen.
+    fields:
+      - experience
+    sourceType: independentSource
 metadata:
   # Intern: Diese Route bleibt Lifecycle-Owner für M1 Plus Lite / M1 Lite Plus.
   # Routing-/Workflow-Entscheidungen gehören nicht in öffentliche Produktmerkmale.
@@ -301,6 +347,15 @@ sensorLimits:
   sourceUrl: https://eu.neakasa.com/products/m1-lite-self-cleaning-cat-litter-box
   sourceType: manufacturer
   verifiedAt: "2026-08-15"
+experience:
+  summary: >-
+    Das Neakasa M1 Lite kombiniert offene Bauform, automatische Siebung, App-Steuerung und großen
+    Abfallbehälter. Technisch liegt es sehr nah am M1 Plus, spart aber beim Zubehör.
+  reliability: >-
+    Sitegeek beschreibt am 12. November das exakte M1-Plus-Lite-Modell im Haushalt. Positiv sind einfache
+    Einrichtung und unauffälliger Betrieb, kritisch bleiben Platzbedarf, hoher Einstieg und ungeeignete nicht
+    klumpende Streu. Eine automatische Toilette ersetzt auch nach diesem Bericht keine regelmäßige Kontrolle
+    durch eine Betreuungsperson.
 ---
 
 ## Kurz eingeordnet
@@ -495,3 +550,7 @@ Die Plus-Generation ergänzt laut Hersteller Bristle Seal, Composite-Sealing-Rin
 
 Für die Auswahl sind der hohe Einstieg, das Mindestgewicht und die Streufreigabe wichtiger als die App. Der [Kaufcheck](/automatische-katzentoiletten/) erklärt die Systemgrenzen, der [Vergleich](/vergleiche/beste-automatische-katzentoiletten/) ordnet offene und geschlossene Alternativen ein.
 <!-- pt:neakasa-plus-lifecycle:end -->
+
+## Recherche-Update vom 16. November 2026
+
+Sitegeek beschreibt am 12. November das exakte M1-Plus-Lite-Modell im Haushalt. Positiv sind einfache Einrichtung und unauffälliger Betrieb, kritisch bleiben Platzbedarf, hoher Einstieg und ungeeignete nicht klumpende Streu. Eine automatische Toilette ersetzt auch nach diesem Bericht keine regelmäßige Kontrolle durch eine Betreuungsperson. [Sitegeek](https://www.sitegeek.fr/article-technologie/maison-connectee/neakasa-m1-plus-lite-test/)

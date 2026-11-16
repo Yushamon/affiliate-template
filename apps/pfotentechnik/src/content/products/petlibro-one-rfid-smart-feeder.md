@@ -21,7 +21,7 @@ category:
   path: /smarte-futterautomaten/
 productUrl: /produkt/petlibro-one-rfid-smart-feeder/
 publishedAt: "2026-07-12"
-updatedAt: "2026-07-12"
+updatedAt: "2026-11-16"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -291,18 +291,46 @@ offers:
     lastAttemptAt: "2026-11-16T09:07:16.236Z"
     availabilityUpdated: "2026-11-16T09:07:16.236Z"
 experience:
-  summary: "Ein Gerät koppelt laut Hersteller nur einen RFID-Anhänger. Ein einzelner One RFID ist deshalb keine zentrale Station für mehrere individuell berechtigte Katzen. Für mehrere getrennt geschützte Rationen muss die benötigte Gerätezahl mitgeplant werden."
-  reliability: "Der One liest den passenden Halsbandanhänger, nicht den implantierten Mikrochip. Halsband- und Deckelakzeptanz sowie seitliches Mitfressen anderer Tiere müssen beobachtet werden. RFID-Zugang garantiert nicht, dass jedes Konkurrenzverhalten ausgeschlossen ist."
-  maintenance: "Portionen mit geeignetem Trockenfutter kalibrieren. Ein SureFeed-Napf kann implantierte Chips und vorbereitete Nassfutterrationen nutzen, gibt aber keine späteren Portionen aus einem Vorrat aus. Granary Dual schafft zwei offene Plätze ohne Zugangsschutz."
+  summary: >-
+    Ein Gerät koppelt laut Hersteller nur einen RFID-Anhänger. Ein einzelner One RFID ist deshalb keine
+    zentrale Station für mehrere individuell berechtigte Katzen. Für mehrere getrennt geschützte Rationen muss
+    die benötigte Gerätezahl mitgeplant werden.
+  reliability: >-
+    Der One liest den passenden Halsbandanhänger, nicht den implantierten Mikrochip. Halsband- und
+    Deckelakzeptanz sowie seitliches Mitfressen anderer Tiere müssen beobachtet werden. RFID-Zugang garantiert
+    nicht, dass jedes Konkurrenzverhalten ausgeschlossen ist. PETLIBROs Aufarbeitung des App-Ausfalls im
+    August 2026 unterscheidet fehlende Protokolle von tatsächlich verzögerten oder ausgefallenen Mahlzeiten.
+    Das Verhalten hängt vom Modell, gespeicherten Zeitplan, Gerätezustand und Stromunterbrechungen ab. Ein
+    App-Eintrag allein bestätigt keine Ausgabe; vor Abwesenheit mehrere reale Fütterungen und den Napf
+    kontrollieren. Eine Ausfallquote für dieses konkrete EU-Modell ist nicht veröffentlicht.
+  maintenance: >-
+    Portionen mit geeignetem Trockenfutter kalibrieren. Ein SureFeed-Napf kann implantierte Chips und
+    vorbereitete Nassfutterrationen nutzen, gibt aber keine späteren Portionen aus einem Vorrat aus. Granary
+    Dual schafft zwei offene Plätze ohne Zugangsschutz.
 evidenceSources:
-  - source: "PETLIBRO – One RFID"
-    url: "https://petlibro.com/pages/one-rfid-pet-feeder"
+  - source: PETLIBRO – One RFID
+    url: https://petlibro.com/pages/one-rfid-pet-feeder
     accessedAt: "2026-11-02"
-    assertion: "Ein Gerät kann nur einen RFID-Halsbandanhänger koppeln; der Leser erkennt den Anhänger und keinen implantierten Mikrochip."
+    assertion: >-
+      Ein Gerät kann nur einen RFID-Halsbandanhänger koppeln; der Leser erkennt den Anhänger und keinen
+      implantierten Mikrochip.
     fields:
-      - "experience"
+      - experience
+  - source: PETLIBRO · App Outage FAQ
+    url: https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq
+    accessedAt: "2026-11-16"
+    assertion: >-
+      App-Protokolle bestätigen während eines Dienstausfalls keine tatsächlich ausgegebene Mahlzeit;
+      Offline-Verhalten modell- und zustandsabhängig.
+    fields:
+      - experience
+    sourceType: manufacturer
 ---
 
 Der PETLIBRO One RFID Smart Feeder kombiniert automatische Fütterung mit einem geschützten Napfzugang und eignet sich ideal für Mehrkatzenhaushalte.
 
 Eine der besten Lösungen für Mehrkatzenhaushalte, wenn jedes Tier zuverlässig nur sein eigenes Futter erhalten soll.
+
+## Recherche-Update vom 16. November 2026
+
+PETLIBROs Aufarbeitung des App-Ausfalls im August 2026 unterscheidet fehlende Protokolle von tatsächlich verzögerten oder ausgefallenen Mahlzeiten. Das Verhalten hängt vom Modell, gespeicherten Zeitplan, Gerätezustand und Stromunterbrechungen ab. Ein App-Eintrag allein bestätigt keine Ausgabe; vor Abwesenheit mehrere reale Fütterungen und den Napf kontrollieren. Eine Ausfallquote für dieses konkrete EU-Modell ist nicht veröffentlicht. [PETLIBRO · App Outage FAQ](https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq)

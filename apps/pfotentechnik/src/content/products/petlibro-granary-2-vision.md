@@ -17,7 +17,7 @@ category:
   path: "/smarte-futterautomaten/"
 productUrl: "/produkt/petlibro-granary-2-vision/"
 publishedAt: "2026-07-26"
-updatedAt: '2026-11-16'
+updatedAt: "2026-11-16"
 author:
   name: "PfotenTechnik Redaktion"
 seo:
@@ -118,12 +118,22 @@ offers:
 evidenceSources:
   - source: petlibro-variants
     url: https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie.js
-    accessedAt: '2026-11-16T10:02:36.754Z'
-    assertion: Die bestehende Vision-Seite wird auf die exakte DE-Variante AF205, SKU PL-AF205-31B abgebildet; keine zweite Produktseite.
+    accessedAt: "2026-11-16T10:02:36.754Z"
+    assertion: >-
+      Die bestehende Vision-Seite wird auf die exakte DE-Variante AF205, SKU PL-AF205-31B abgebildet; keine
+      zweite Produktseite.
     fields:
       - offers
     sourceType: officialStore
-
+  - source: PETLIBRO · App Outage FAQ
+    url: https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq
+    accessedAt: "2026-11-16"
+    assertion: >-
+      App-Protokolle bestätigen während eines Dienstausfalls keine tatsächlich ausgegebene Mahlzeit;
+      Offline-Verhalten modell- und zustandsabhängig.
+    fields:
+      - experience
+    sourceType: manufacturer
 priceState: "available"
 priceUpdated: "2026-11-16T10:02:36.754Z"
 priceAvailable: true
@@ -229,19 +239,35 @@ weaknesses:
   - "Waage verlangt harten, ebenen Boden und regelmäßige Kalibrierung"
   - "sehr neue Produktgeneration ohne belastbare Langzeiterfahrung"
 experience:
-  summary: "Granary 2 Vision adressiert eine bekannte Schwäche klassischer Futterautomaten: Ein Ausgabeprotokoll beweist nicht, wie viel tatsächlich gefressen wurde. Die zusätzliche Napfwaage kann diese Lücke verkleinern, aber nicht jede Unsicherheit beseitigen."
+  summary: >-
+    Granary 2 Vision adressiert eine bekannte Schwäche klassischer Futterautomaten: Ein Ausgabeprotokoll
+    beweist nicht, wie viel tatsächlich gefressen wurde. Die zusätzliche Napfwaage kann diese Lücke
+    verkleinern, aber nicht jede Unsicherheit beseitigen.
   positives:
-    - "Messung von Ausgabe und Restmenge statt reinem Motorprotokoll"
-    - "klare Trennung von Smart-Refill und festen Mahlzeitenplänen"
-    - "dokumentierte Maße, Krokettengröße, Backup und WLAN-Bänder"
+    - Messung von Ausgabe und Restmenge statt reinem Motorprotokoll
+    - klare Trennung von Smart-Refill und festen Mahlzeitenplänen
+    - dokumentierte Maße, Krokettengröße, Backup und WLAN-Bänder
   criticism:
-    - "Kamera erkennt Aktivität, verhindert aber keinen Futterklau"
-    - "Hersteller nennt Abo-Abhängigkeiten für Insights, Aufzeichnung und Wiedergabe"
-    - "Deutschland- beziehungsweise EU-Start war zum Prüfdatum nicht belastbar"
-  support: "PETLIBRO nennt auf der US-Seite 24 Monate Herstellergarantie und 90 Tage Rückgaberecht für die Granary-2-Serie; Bedingungen können regional abweichen."
-  methodology: "Abgleich der offiziellen Produkt- und Serienseite mit den technischen Angaben zur Variante PLAF205. Kein eigener Ausgabe-, Waagen-, Kamera- oder Langzeittest."
-  maintenance: "Behälter trocken halten, Ausgabeschacht und Edelstahlnapf regelmäßig reinigen, Wiegebasis krümelfrei halten und die Waage nach Demontage und Zusammenbau neu kalibrieren."
-  reliability: "Die Fütterungsautomatik sollte vor einer Abwesenheit mit dem verwendeten Futter getestet werden. Besonders wichtig sind Krokettengröße, ebener Stellplatz, Akku-Backup, Blockadewarnungen und ein Vergleich der App-Werte mit einer Kontrollwägung."
+    - Kamera erkennt Aktivität, verhindert aber keinen Futterklau
+    - Hersteller nennt Abo-Abhängigkeiten für Insights, Aufzeichnung und Wiedergabe
+    - Deutschland- beziehungsweise EU-Start war zum Prüfdatum nicht belastbar
+  support: >-
+    PETLIBRO nennt auf der US-Seite 24 Monate Herstellergarantie und 90 Tage Rückgaberecht für die
+    Granary-2-Serie; Bedingungen können regional abweichen.
+  methodology: >-
+    Abgleich der offiziellen Produkt- und Serienseite mit den technischen Angaben zur Variante PLAF205. Kein
+    eigener Ausgabe-, Waagen-, Kamera- oder Langzeittest.
+  maintenance: >-
+    Behälter trocken halten, Ausgabeschacht und Edelstahlnapf regelmäßig reinigen, Wiegebasis krümelfrei
+    halten und die Waage nach Demontage und Zusammenbau neu kalibrieren.
+  reliability: >-
+    Die Fütterungsautomatik sollte vor einer Abwesenheit mit dem verwendeten Futter getestet werden. Besonders
+    wichtig sind Krokettengröße, ebener Stellplatz, Akku-Backup, Blockadewarnungen und ein Vergleich der
+    App-Werte mit einer Kontrollwägung. PETLIBROs Aufarbeitung des App-Ausfalls im August 2026 unterscheidet
+    fehlende Protokolle von tatsächlich verzögerten oder ausgefallenen Mahlzeiten. Das Verhalten hängt vom
+    Modell, gespeicherten Zeitplan, Gerätezustand und Stromunterbrechungen ab. Ein App-Eintrag allein
+    bestätigt keine Ausgabe; vor Abwesenheit mehrere reale Fütterungen und den Napf kontrollieren. Eine
+    Ausfallquote für dieses konkrete EU-Modell ist nicht veröffentlicht.
 alternatives:
   - "petlibro-granary-camera-feeder"
   - "xiaomi-smart-pet-food-feeder-2"
@@ -507,3 +533,7 @@ Abzüge entstehen wegen Abo-Abhängigkeit, fehlender Zugangssperre, unklarer deu
 - [PETLIBRO: Granary-2-Übersicht](https://petlibro.com/pages/granary-2-series)
 
 **Bildhinweis:** Die vorgesehenen Bilder sind redaktionelle Darstellungen und keine offiziellen Herstellerfotos.
+
+## Recherche-Update vom 16. November 2026
+
+PETLIBROs Aufarbeitung des App-Ausfalls im August 2026 unterscheidet fehlende Protokolle von tatsächlich verzögerten oder ausgefallenen Mahlzeiten. Das Verhalten hängt vom Modell, gespeicherten Zeitplan, Gerätezustand und Stromunterbrechungen ab. Ein App-Eintrag allein bestätigt keine Ausgabe; vor Abwesenheit mehrere reale Fütterungen und den Napf kontrollieren. Eine Ausfallquote für dieses konkrete EU-Modell ist nicht veröffentlicht. [PETLIBRO · App Outage FAQ](https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq)

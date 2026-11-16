@@ -7,6 +7,7 @@ import { parse } from 'parse5';
 import { readProductDocument } from '../../src/lib/price-intelligence/frontmatter-price.mjs';
 import { resolveCommerceOffers } from '../../src/domain/commerceOffers.mjs';
 import { isPublishedProduct } from '../../src/domain/productPublication.mjs';
+import { approvedFreshnessChanges } from '../product-freshness/approved-changes.mjs';
 const app=fileURLToPath(new URL('../../',import.meta.url));
 export const walk=function*(node){yield node;if(['script','style'].includes(node.tagName))return;for(const child of node.childNodes??[])yield*walk(child)};
 export const text=node=>[...walk(node)].filter(n=>n.nodeName==='#text').map(n=>n.value).join(' ').replace(/\s+/g,' ').trim();
@@ -15,7 +16,8 @@ export async function verifyIntegration(dist=path.join(app,'dist')){
  const manifest=JSON.parse(fs.readFileSync(path.join(app,'research/product-integration-35.8/manifest.json')));
  const baseline=JSON.parse(fs.readFileSync(path.join(app,'research/product-integration-35.8/baseline.json')));
  const allowed=new Set(['tractive-dog-6','invoxia-biotracker-2026','petlibro-granary-2-vision'].map(s=>`src/content/products/${s}.md`));
- let unchangedSources=0;for(const [file,hash] of Object.entries(baseline.sources)){if(allowed.has(file))continue;assert.equal(createHash('sha256').update(fs.readFileSync(path.join(app,file))).digest('hex'),hash,`${file}: unbeabsichtigte Inhaltsänderung`);unchangedSources++}
+ const freshness=approvedFreshnessChanges();
+ let unchangedSources=0;for(const [file,hash] of Object.entries(baseline.sources)){if(allowed.has(file))continue;const approved=freshness.get(file);if(approved){assert.equal(approved.beforeSha256,hash,`${file}: 36.0-Ausnahme muss am bisherigen Ausgangsstand ansetzen`);continue}assert.equal(createHash('sha256').update(fs.readFileSync(path.join(app,file))).digest('hex'),hash,`${file}: unbeabsichtigte Inhaltsänderung`);unchangedSources++}
  const incoming={},snapshots={},htmlByRoute=new Map();
  function visit(dir){for(const item of fs.readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,item.name);if(item.isDirectory()){visit(file);continue}if(item.name!=='index.html')continue;const route='/'+path.relative(dist,path.dirname(file)).split(path.sep).filter(Boolean).join('/')+'/';if(route.startsWith('/admin/'))continue;const dom=parse(fs.readFileSync(file,'utf8')),nodes=[...walk(dom)];htmlByRoute.set(route,{dom,nodes});const links=nodes.filter(n=>n.tagName==='a').map(n=>attr(n,'href')).filter(Boolean);for(const target of links)if(baseline.routes.includes(target)){const key=route+' -> '+target;incoming[key]=(incoming[key]??0)+1}if(baseline.routes.includes(route))snapshots[route]={text:text(dom),links};}}
  visit(dist);

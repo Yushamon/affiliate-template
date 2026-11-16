@@ -19,7 +19,7 @@ category:
   path: /trinkbrunnen/
 productUrl: "/produkt/xiaomi-smart-pet-fountain-2/"
 publishedAt: "2026-07-13"
-updatedAt: "2026-08-10"
+updatedAt: "2026-11-16"
 author:
   name: PfotenTechnik Redaktion
 seo:
@@ -94,56 +94,77 @@ ratings:
   preisleistung: 4.7
 externalEvidence:
   professionalReviews:
-    - publisher: "TecMundo"
-      title: "Xiaomi Smart Pet Fountain 2 não bate a clássica tigelinha [Review]"
-      url: "https://www.tecmundo.com.br/produto/408089-xiaomi-smart-pet-fountain-2-nao-bate-a-classica-tigelinha-review.htm"
+    - publisher: TecMundo
+      title: Xiaomi Smart Pet Fountain 2 não bate a clássica tigelinha [Review]
+      url: >-
+        https://www.tecmundo.com.br/produto/408089-xiaomi-smart-pet-fountain-2-nao-bate-a-classica-tigelinha-review.htm
       publishedAt: "2025-10-27"
       checkedAt: "2026-08-10"
-      methodology: "hands-on"
+      methodology: hands-on
       positives:
-        - "Der Brunnen wurde zwei Wochen praktisch getestet."
-        - "Kabellose Nutzung und die drei Betriebsmodi wurden als klare Vorteile beschrieben."
-        - "Der Näherungssensor wurde als sinnvollster der drei Modi hervorgehoben."
+        - Der Brunnen wurde zwei Wochen praktisch getestet.
+        - Kabellose Nutzung und die drei Betriebsmodi wurden als klare Vorteile beschrieben.
+        - Der Näherungssensor wurde als sinnvollster der drei Modi hervorgehoben.
       negatives:
-        - "Der Test stellt den Preis beziehungsweise die laufenden Kosten als wesentlichen Nachteil heraus."
+        - Der Test stellt den Preis beziehungsweise die laufenden Kosten als wesentlichen Nachteil heraus.
+    - publisher: Les Numériques
+      title: Test Xiaomi Smart Pet Fountain 2
+      url: https://www.lesnumeriques.com/objet-connecte/xiaomi-smart-pet-fountain-2-p76349/test.html
+      publishedAt: "2025-03-15"
+      checkedAt: "2026-11-16"
+      methodology: lab-test
+      positives:
+        - Großer Tank, ruhiger Betrieb und praxistauglicher Sensor.
+      negatives:
+        - Keine Erfassung der tatsächlich getrunkenen Wassermenge; proprietärer Filter.
+      findings:
+        - Getestet am 15.03.2025. Keine Übernahme der dynamischen Fremdnote.
   userReviews:
-    - platform: "Galaxus · gekaufte Produktbewertungen"
-      url: "https://www.galaxus.de/de/productrating/einer-der-besten-trinkbrunnen-8770031"
+    - platform: Galaxus · gekaufte Produktbewertungen
+      url: https://www.galaxus.de/de/productrating/einer-der-besten-trinkbrunnen-8770031
       checkedAt: "2026-08-10"
       recurringPositives:
-        - "Leise Arbeitsweise, einfache Reinigung und kabellose Nutzung werden positiv hervorgehoben."
-        - "Der verbesserte Aufbau gegenüber dem Vorgänger wird in einer weiteren gekauften Bewertung positiv beschrieben."
+        - Leise Arbeitsweise, einfache Reinigung und kabellose Nutzung werden positiv hervorgehoben.
+        - >-
+          Der verbesserte Aufbau gegenüber dem Vorgänger wird in einer weiteren gekauften Bewertung positiv
+          beschrieben.
       recurringCriticism:
-        - "Filterkosten werden als Nachteil genannt."
-        - "Eine weitere Langzeitbewertung berichtet nach etwa sechs Monaten über Undichtigkeit und Hygieneprobleme."
-    - platform: "Galaxus · Langzeitbewertung"
-      url: "https://www.galaxus.de/de/productrating/guter-brunnen-und-besseres-design-als-die-version-1-8973075"
+        - Filterkosten werden als Nachteil genannt.
+        - >-
+          Eine weitere Langzeitbewertung berichtet nach etwa sechs Monaten über Undichtigkeit und
+          Hygieneprobleme.
+    - platform: Galaxus · Langzeitbewertung
+      url: https://www.galaxus.de/de/productrating/guter-brunnen-und-besseres-design-als-die-version-1-8973075
       checkedAt: "2026-08-10"
       recurringPositives:
-        - "Befüllung, Akkubetrieb und Bedienung wurden gegenüber dem Vorgänger als verbessert beschrieben."
+        - Befüllung, Akkubetrieb und Bedienung wurden gegenüber dem Vorgänger als verbessert beschrieben.
       recurringCriticism:
-        - "Der konkrete Nutzer berichtet nach rund sechs Monaten über leichte Undichtigkeit."
-        - "Trotz Wasser- und Filterwechsel wurden grünliche Ablagerungen beschrieben."
+        - Der konkrete Nutzer berichtet nach rund sechs Monaten über leichte Undichtigkeit.
+        - Trotz Wasser- und Filterwechsel wurden grünliche Ablagerungen beschrieben.
   consensus:
     strengths:
-      - finding: "Kabellose Platzierung und flexible Wasserausgabemodi sind gut belegte Vorteile."
+      - finding: Kabellose Platzierung und flexible Wasserausgabemodi sind gut belegte Vorteile.
         sourceCount: 3
-        confidence: "high"
-      - finding: "Reinigung und Handhabung werden überwiegend positiv beschrieben."
+        confidence: high
+      - finding: Reinigung und Handhabung werden überwiegend positiv beschrieben.
         sourceCount: 2
-        confidence: "medium"
+        confidence: medium
     weaknesses:
-      - finding: "Filterkosten sind ein wiederkehrender Nachteil."
+      - finding: Filterkosten sind ein wiederkehrender Nachteil.
         sourceCount: 2
-        confidence: "medium"
-      - finding: "Es existiert ein konkreter Langzeitbericht über Undichtigkeit und Hygieneprobleme, aber kein Beleg für einen generellen Serienfehler."
+        confidence: medium
+      - finding: >-
+          Es existiert ein konkreter Langzeitbericht über Undichtigkeit und Hygieneprobleme, aber kein Beleg
+          für einen generellen Serienfehler.
         sourceCount: 1
-        confidence: "low"
+        confidence: low
     editorialAssessment: >-
       Der zweiwöchige Hands-on-Test bestätigt die zentralen Komfortvorteile. Der negative sechsmonatige
-      Nutzerbericht ist als Gegenbeleg relevant, reicht allein aber nicht für eine allgemeine Haltbarkeitsaussage.
+      Nutzerbericht ist als Gegenbeleg relevant, reicht allein aber nicht für eine allgemeine
+      Haltbarkeitsaussage.
   note: >-
-    Die Galaxus-Einträge sind einzelne gekaufte Produktbewertungen und kein repräsentativer Plattformdurchschnitt.
+    Kein eigener PfotenTechnik-Praxistest. Modell-, Länder-, Tarif- und Testzeitpunktgrenzen der Fremdquellen
+    beachten; keine Übernahme fremder Noten.
 decision:
   bestFor:
     - Katzen und kleine Hunde
@@ -178,11 +199,17 @@ weaknesses:
 experience:
   summary: Die beworbenen 100 Tage wurden laut Xiaomi bei 24 Wasserausgaben pro Tag im Sensormodus ermittelt.
   methodology: >-
-    Redaktionelle Einordnung anhand der offiziellen deutschen Xiaomi-Produkt- und Spezifikationsseiten; kein eigener
-    Langzeittest.
+    Redaktionelle Einordnung anhand der offiziellen deutschen Xiaomi-Produkt- und Spezifikationsseiten; kein
+    eigener Langzeittest.
   maintenance: >-
-    Xiaomi empfiehlt eine wöchentliche Reinigung und einen monatlichen Filterwechsel. Ladeanschluss beim Spülen
-    vollständig verschließen.
+    Xiaomi empfiehlt eine wöchentliche Reinigung und einen monatlichen Filterwechsel. Ladeanschluss beim
+    Spülen vollständig verschließen.
+  reliability: >-
+    Les Numériques bestätigt Sensorbetrieb und den großen Vorrat, stellt aber ausdrücklich klar: Eine Messung
+    der getrunkenen Wassermenge fehlt. App-Steuerung oder Filterhinweise dürfen deshalb nicht als individuelle
+    Trinkkontrolle verstanden werden. Firmwareupdates werden im Dreipunktmenü der Geräteseite angeboten;
+    Xiaomi nennt auch geplante automatische und entfernte Updates. Eine konkrete neue Firmwareversion oder
+    eine dadurch behobene Fehlfunktion ist damit nicht belegt.
 alternatives:
   - petlibro-dockstream-2-smart
   - petkit-eversweet-max-2-uvc
@@ -324,14 +351,38 @@ evidenceSources:
     sourceType: manufacturer
     assertion: >-
       Bereits dokumentierte technische Daten: Kapazität: 3 Liter; Material: Wassertank, Trinkschale und äußere
-      wasserführende Teile aus ABS; Stromversorgung: integrierter Akku, Laden mit 5 V/2 A; Akkulaufzeit: Herstellerangabe
-      bis 100 Tage; Reinigung: zerlegbar; Hersteller empfiehlt wöchentliche Reinigung; Lautstärke: Nicht vom Hersteller
-      ausgewiesen. Normalisierung des vorhandenen Quellenstands, keine erneute externe Prüfung.
+      wasserführende Teile aus ABS; Stromversorgung: integrierter Akku, Laden mit 5 V/2 A; Akkulaufzeit:
+      Herstellerangabe bis 100 Tage; Reinigung: zerlegbar; Hersteller empfiehlt wöchentliche Reinigung;
+      Lautstärke: Nicht vom Hersteller ausgewiesen. Normalisierung des vorhandenen Quellenstands, keine
+      erneute externe Prüfung.
     fields:
       - comparisonData.fountain.capacityLiters
       - comparisonData.fountain.material
       - comparisonData.fountain.powerType
       - comparisonData.fountain.batteryRuntime
+  - source: Les Numériques
+    url: https://www.lesnumeriques.com/objet-connecte/xiaomi-smart-pet-fountain-2-p76349/test.html
+    accessedAt: "2026-11-16"
+    assertion: >-
+      Großer Tank, ruhiger Betrieb und praxistauglicher Sensor. Keine Erfassung der tatsächlich getrunkenen
+      Wassermenge; proprietärer Filter.
+    fields:
+      - externalEvidence
+    sourceType: independentSource
+  - source: Les Numériques
+    url: https://www.lesnumeriques.com/objet-connecte/xiaomi-smart-pet-fountain-2-p76349/test.html
+    accessedAt: "2026-11-16"
+    assertion: App-Status ist keine Trinkmengenmessung.
+    fields:
+      - experience
+    sourceType: independentSource
+  - source: Xiaomi Support · Fountain 2
+    url: https://www.mi.com/global/support/faq/details/KA-501990/
+    accessedAt: "2026-11-16"
+    assertion: Firmwareupdates sind über Gerät → Dreipunktmenü → Firmware update dokumentiert.
+    fields:
+      - experience
+    sourceType: manufacturer
 ---
 Der Xiaomi Smart Pet Fountain 2 ist auf kabellose Platzierung und App-Unterstützung ausgelegt. Drei Betriebsarten erlauben unterschiedliche Kompromisse zwischen dauerhaftem Wasserfluss und Akkulaufzeit.
 
@@ -351,3 +402,9 @@ Der glatte Tank ist zerlegbar. Dennoch müssen Trinkfläche, Tank, Filterhalter 
 Im Vergleich zu vielen kabellosen Trinkbrunnen überzeugt der Xiaomi Smart Pet Fountain 2 durch die gelungene Kombination aus Smart-Home-Funktionen, flexibler Aufstellung und einer für diese Geräteklasse umfangreichen Softwareintegration. Besonders für Nutzer des Xiaomi-Ökosystems zählt das Modell zu den überzeugendsten Empfehlungen.
 
 Die beworbenen bis zu 100 Tage Akkulaufzeit sind als Hersteller-Maximalwert zu verstehen. Unabhängig davon bleibt der Brunnen aufgrund seiner Ausstattung, der guten App-Unterstützung und des hohen Bedienkomforts eine der stärksten Gesamtlösungen im mittleren Preissegment.
+
+## Recherche-Update vom 16. November 2026
+
+Les Numériques bestätigt Sensorbetrieb und den großen Vorrat, stellt aber ausdrücklich klar: Eine Messung der getrunkenen Wassermenge fehlt. App-Steuerung oder Filterhinweise dürfen deshalb nicht als individuelle Trinkkontrolle verstanden werden. [Les Numériques](https://www.lesnumeriques.com/objet-connecte/xiaomi-smart-pet-fountain-2-p76349/test.html)
+
+Firmwareupdates werden im Dreipunktmenü der Geräteseite angeboten; Xiaomi nennt auch geplante automatische und entfernte Updates. Eine konkrete neue Firmwareversion oder eine dadurch behobene Fehlfunktion ist damit nicht belegt. [Xiaomi Support · Fountain 2](https://www.mi.com/global/support/faq/details/KA-501990/)

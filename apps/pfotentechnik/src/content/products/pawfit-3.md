@@ -14,7 +14,7 @@ manufacturer:
 category: { key: "gps-tracker", label: "GPS-Tracker", path: "/gps-tracker/" }
 productUrl: "/produkt/pawfit-3/"
 publishedAt: "2026-08-16"
-updatedAt: "2026-08-16"
+updatedAt: "2026-11-16"
 author: { name: "PfotenTechnik Redaktion", role: "Redaktion" }
 seo: { title: "Pawfit 3: Gewicht, Akku, Abo und Audio-ID", description: "Pawfit 3 mit 27 g, 4G, GPS, WLAN, Bluetooth, bis 8 Tagen Akku, IP68, Audio-ID und Pflichtabo einordnen.", canonical: "/produkt/pawfit-3/", sitemap: true, priority: 0.8 }
 hub: { sections: ["produkte", "gps-tracker"] }
@@ -215,6 +215,15 @@ experience:
   reliability: >-
     Langzeit- und Zuverlässigkeitsaussagen werden nur so stark gewichtet, wie sie durch die
     angegebenen Quellen gedeckt sind.
+reviewedAlternatives:
+  - slug: tractive-dog-6
+    reason: >-
+      Alltagsalternative mit positiveren Ortungsbefunden in den verlinkten Tests; Pflichtabo und Passform
+      beachten.
+  - slug: paj-pet-finder-4g-mini
+    reason: >-
+      Kompakte Ortungsalternative ohne Vitalwertmessung. Homezones und Befestigung beeinflussen die
+      Alltagseignung.
 ---
 
 ## Audio statt Kamera
