@@ -1,0 +1,74 @@
+{
+  "at": "2026-11-17T12:34:27.951Z",
+  "readOnly": true,
+  "priceFilesWritten": 0,
+  "results": [
+    {
+      "name": "PETLIBRO bestätigte Variante",
+      "slug": "petlibro-dockstream-2-smart-cordless",
+      "ok": true,
+      "result": {
+        "id": "petlibro-de",
+        "merchant": "petlibro",
+        "network": "awin",
+        "program": "petlibro-de",
+        "mappingStatus": "verified",
+        "commerceDataProvider": "shopify-product",
+        "price": {
+          "current": 115.99,
+          "currency": "EUR",
+          "status": "unknown",
+          "checkedAt": "2026-11-17T12:34:27.391Z",
+          "source": {
+            "id": "petlibro-official",
+            "label": "PETLIBRO",
+            "type": "merchant",
+            "url": "https://de.petlibro.com/products/dockstream-2-smart-fountain?variant=52389571494254"
+          }
+        },
+        "priceState": "available",
+        "availability": "available",
+        "identityNote": "DE-Katalog, Produktseite (Dockstream 2 Smarter Trinkbrunnen) und SKU PL-WF116-31W gegen vorhandenes Modell geprüft; Einzelgerät, keine Mehrfachpackung.",
+        "evidenceSources": [
+          {
+            "source": "PETLIBRO DE – offizieller Katalog und strukturierte Produktdaten",
+            "url": "https://de.petlibro.com/products/dockstream-2-smart-fountain?variant=52389571494254",
+            "accessedAt": "2026-09-21T12:59:27.192Z",
+            "assertion": "Modell/Generation und Variante: Dockstream 2 Smarter Trinkbrunnen, Weiß / Schnurlos, SKU PL-WF116-31W. HTTP 200.",
+            "fields": [
+              "officialProductUrl",
+              "variantId",
+              "expectedSku"
+            ],
+            "sourceType": "officialStore"
+          }
+        ],
+        "officialProductUrl": "https://de.petlibro.com/products/dockstream-2-smart-fountain?variant=52389571494254",
+        "verifiedAt": "2026-09-21T12:59:27.192Z",
+        "variantId": "52389571494254",
+        "expectedSku": "PL-WF116-31W",
+        "variantLabel": "Weiß / Schnurlos",
+        "lastAttemptAt": "2026-11-17T12:34:27.391Z",
+        "availabilityUpdated": "2026-11-17T12:34:27.391Z"
+      }
+    },
+    {
+      "name": "PETLIBRO offizielle Variante",
+      "slug": "petlibro-air-automatic-feeder",
+      "ok": false,
+      "error": "Offizielle Produkt-URL unresolved."
+    },
+    {
+      "name": "Amazon bestehendes Produktziel",
+      "slug": "petlibro-air-automatic-feeder",
+      "ok": true,
+      "result": {
+        "current": 54.99,
+        "currency": "EUR",
+        "method": "json-ld",
+        "availability": "https://schema.org/InStock",
+        "pageUrl": "https://www.mediamarkt.de/de/product/_petlibro-pl-af008-91b-air-autompet-feed-black-2l-2989266.html?storeId=130"
+      }
+    }
+  ]
+}

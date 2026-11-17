@@ -1,7 +1,7 @@
 import {mapProductToAdvisor} from '../advisor/mapProduct.ts';
 import {assessProductReview} from '../productReview.ts';
 import {calculateProductScore} from '../productScore.ts';
-import {resolveCommerceOffers} from '../commerceOffers.mjs';
+import {resolveCommerceOffers,selectCommercePrice} from '../commerceOffers.mjs';
 import {deriveProductOperations} from '../../lib/product-operations/policy.mjs';
 import {resolveProductMedia} from '../mediaResolver.mjs';
 import {buildDecisionFacts} from '../productExperience/consequences.ts';
@@ -40,7 +40,7 @@ export function buildGiftCatalog(entries:any[],{now=Date.now()}={}){
    ['discontinued','legacy'].includes(d.productStatus)||operations.archived?'archived':['out-of-stock','temporarily-unavailable','discontinued'].includes(operations.availability)?'unavailable':null;
   if(reason){omitted.push({slug,reason});continue}
   const offers=resolveCommerceOffers(d,{}, {now}).filter((o:any)=>o.canLink&&!['out-of-stock','temporarily-unavailable','discontinued'].includes(o.availability)&&o.currency==='EUR');
-  const offer=offers.find((o:any)=>o.fresh&&o.current>0&&o.availability==='available')??offers.find((o:any)=>o.fresh&&o.current>0)??offers[0];
+  const offer=selectCommercePrice(d,{now,offers})?.offer??offers.find((o:any)=>o.fresh&&o.current>0&&o.availability==='available')??offers.find((o:any)=>o.fresh&&o.current>0)??offers[0];
   if(!offer){omitted.push({slug,reason:'no-verified-eur-destination'});continue}
   const score=calculateProductScore(d);
   // Existing comparison fallback also requires >=60 editorial points. This is

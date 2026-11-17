@@ -47,6 +47,8 @@ const metaValue = (html, keys) => {
 export function extractOfferFromHtml(html, pageUrl = "") {
   const amazonOffer = extractAmazonOffer(String(html), pageUrl);
   if (amazonOffer) return amazonOffer;
+  // Generic metadata on Amazon cannot substitute for exact ASIN/purchase-form evidence.
+  try{if(/^(?:www\.)?amazon\.de$/.test(new URL(pageUrl).hostname))return null}catch{}
   const offers = [];
   for (const match of String(html).matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {
     try { visit(JSON.parse(decode(match[1]).trim()), offers); } catch { /* malformed retailer data */ }

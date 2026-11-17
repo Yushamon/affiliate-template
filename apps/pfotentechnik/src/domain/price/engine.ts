@@ -163,7 +163,7 @@ export const buildPriceIndex = <TProduct>(
     .map((product) => {
       for (const adapter of adapters) {
         if (!adapter.supports(product)) continue;
-        const snapshot = adapter.read(product);
+        const snapshot = adapter.read(product,{now});
         if (snapshot) return snapshot;
       }
       return null;

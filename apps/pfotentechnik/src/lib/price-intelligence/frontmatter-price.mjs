@@ -146,6 +146,7 @@ export function renderPriceBlock(price) {
   if (price.comparisonKey) lines.push(`  comparisonKey: ${quote(price.comparisonKey)}`);
   if (price.variantLabel) lines.push(`  variantLabel: ${quote(price.variantLabel)}`);
   if (Number.isFinite(price.shipping)) lines.push(`  shipping: ${price.shipping}`);
+  if (price.changedAt) lines.push(`  changedAt: ${quote(price.changedAt)}`);
   if (price.checkedAt) lines.push(`  checkedAt: ${quote(price.checkedAt)}`);
   if (source.id || source.label) {
     lines.push("  source:");
@@ -282,6 +283,7 @@ export async function updateProductPrice(file, price, options = {}) {
       ...incomingPrice,
       source: incomingPrice.source ?? data.price?.source
     });
+    if(normalizedPrice.current!==data.price?.current||normalizedPrice.currency!==(data.price?.currency||'EUR'))normalizedPrice.changedAt=now;
     const canonicalUrl = options.removeAffiliate
       ? undefined
       : canonicalUrlFrom(data, options.affiliateUrl ?? price?.affiliateUrl);

@@ -27,7 +27,7 @@ export async function refreshOfficialOffer(offer, {fetchResource = fetchPublicRe
   const [product, cart] = await Promise.all([fetchJson(`${url.origin}${url.pathname}.js`), fetchJson(`${url.origin}/cart.js`)]);
   const result = extractShopifyVariant(product, offer, cart.currency);
   const checkedAt = new Date().toISOString();
-  return {...offer, price: {current:result.current, currency:result.currency, status:'unknown', checkedAt,
+  return {...offer, price: {current:result.current, currency:result.currency, changedAt:result.current!==offer.price?.current||result.currency!==offer.price?.currency?checkedAt:offer.price?.changedAt, status:'unknown', checkedAt,
     source:{id:'petlibro-official',label:'PETLIBRO',type:'merchant',url:destination}},
     availability:result.availability, availabilityUpdated:checkedAt, priceState:'available', lastAttemptAt:checkedAt, error:undefined};
 }

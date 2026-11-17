@@ -24,6 +24,9 @@ export function buildOperationsDashboard(rows) {
 
   return {
     products: total,
+    withPrice:count(row=>row.operations?.priceAvailable),
+    withAffiliate:count(row=>row.operations?.affiliateAvailable),
+    knownAvailability:count(row=>Boolean(row.operations?.availability)&&row.operations?.availability!=="unknown"),
     decisionQualityIssues: count(row => row.operations?.decisionQuality?.insufficientEvidence || row.operations?.decisionQuality?.uncertainValues > 0),
     missingPrice: count((row) => !row.operations?.priceAvailable && !row.operations?.editorialPriceControl && !row.operations?.consciouslyUnavailable && !row.operations?.archived),
     missingAffiliate: count((row) => !row.operations?.affiliateAvailable && !row.operations?.consciouslyUnavailable && !row.operations?.archived),

@@ -54,5 +54,5 @@ export type ProductPriceInsight = ProductPriceSnapshot & {
 export interface PriceAdapter<TProduct = unknown> {
   readonly id: string;
   supports(product: TProduct): boolean;
-  read(product: TProduct): ProductPriceSnapshot | null;
+  read(product: TProduct, options?: {now:Date}): ProductPriceSnapshot | null;
 }

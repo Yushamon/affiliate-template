@@ -1,7 +1,7 @@
 import {AVAILABILITY_LABELS,formatPrice,buildOperationsDashboard} from './display.mjs';
 export {AVAILABILITY_LABELS,formatPrice,buildOperationsDashboard};
 import {decisionQualitySummary} from '../../domain/productExperience/decisionQuality.mjs';
-import { resolveCommerceOffers, commerceDiagnostics } from '../../domain/commerceOffers.mjs';
+import { resolveCommerceOffers, commerceDiagnostics, selectCommercePrice } from '../../domain/commerceOffers.mjs';
 
 export const AVAILABILITY_VALUES = Object.freeze([
   "available",
@@ -181,11 +181,14 @@ export function deriveProductOperations(data, options = {}) {
       ? Number(options.now)
       : Date.now();
 
-  const current = validPrice(data?.price?.current);
-  const priceUpdatedRaw = data?.price?.checkedAt ?? data?.priceUpdated;
-  const priceAgeDays = ageInDays(priceUpdatedRaw, now);
+  const rawCurrent = validPrice(data?.price?.current);
+  let current=rawCurrent;
+  let priceUpdatedRaw = data?.price?.checkedAt;
+  let priceAgeDays = ageInDays(priceUpdatedRaw, now);
   const affiliateUrl = data?.affiliate?.url ?? data?.price?.affiliateUrl ?? data?.productUrl;
   const offers = resolveCommerceOffers(data, {}, { now });
+  const selectedPrice=selectCommercePrice(data,{now,offers});
+  if(selectedPrice){current=selectedPrice.storedCurrent;priceUpdatedRaw=selectedPrice.checkedAt;priceAgeDays=ageInDays(priceUpdatedRaw,now)}
   const affiliateAvailable = hasHttpsUrl(affiliateUrl) || offers.some(offer => offer.affiliateReady);
   const confirmedOffers = offers.filter(offer => offer.verified && !offer.superseded && offer.domestic);
   const availableOffer = confirmedOffers.find(offer => offer.availability === "available");
@@ -279,6 +282,11 @@ export function deriveProductOperations(data, options = {}) {
 
   return {
     ...commerceDiagnostics(offers),
+    selectedOfferId:selectedPrice?.id??'legacy',
+    selectedPriceSource:selectedPrice?.source?.label??data.price?.source?.label??'Nicht angegeben',
+    selectedPriceCheckedAt:selectedPrice?.checkedAt??data.price?.checkedAt??null,
+    publicPriceStateLabel:selectedPrice?.current!=null?'Preis öffentlich verwendbar':'Öffentlich: aktuellen Preis prüfen',
+    selectedPricePublicCurrent:selectedPrice?.current??null,
     decisionQuality: decisionQualitySummary(data),
     current,
     currency: /^[A-Z]{3}$/.test(String(data?.price?.currency || "EUR")) ? String(data?.price?.currency || "EUR") : "EUR",
@@ -305,6 +313,7 @@ export function deriveProductOperations(data, options = {}) {
     warnings,
     missingRequiredFields,
     consciouslyUnavailable: consciousUnavailable,
+    manuallyArchived,
     archived: maintenanceStatus === "archived",
     isArchive,
     isTask,
@@ -369,7 +378,9 @@ export function toOperationsRecord(data, options = {}) {
       const rating = Number(data?.rating);
       return Number.isFinite(rating) ? Math.round(rating * 20) : 0;
     })(),
-    lastPriceConfirmation:data.price?.checkedAt??null,
+    storedCurrent:validPrice(data.price?.current),
+    storedSourceLabel:data.price?.source?.label??'',
+    lastPriceConfirmation:operations.selectedPriceCheckedAt,
     lastContentChange:data.updatedAt??null,
     sourceLabel: String(data?.price?.source?.label || "Nicht angegeben"),
     comparisonText: String(data?.price?.comparisonText || ""),

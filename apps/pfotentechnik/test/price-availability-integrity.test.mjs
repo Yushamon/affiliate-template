@@ -20,7 +20,7 @@ async function document(t, data) {
   return readProductDocument(file);
 }
 const html = (availability, currency='EUR') => `<script type="application/ld+json">${JSON.stringify({'@type':'Product',offers:{'@type':'Offer',price:129.99,priceCurrency:currency,...(availability ? {availability}: {})}})}</script>`;
-const fetchText = (availability,currency) => async()=>({html:html(availability,currency),resolvedUrl:'https://www.amazon.de/dp/B012345678'});
+const fetchText = (availability,currency) => async()=>({html:html(availability,currency),resolvedUrl:'https://shop.example.de/product'});
 
 test('global Amazon price refresh ignores stock while retaining editorial automation locks', async () => {
   const called=[];
@@ -127,10 +127,11 @@ test('confirmed manufacturer offer determines stock independently of unavailable
   const ops=deriveProductOperations(product({availability:'out-of-stock',offers:[confirmedOfficial()]}));
   assert.equal(ops.availability,'available');assert.equal(ops.purchasable,true);assert.equal(ops.availabilityUpdated,now);
 });
-test('manufacturer-only product retains Awin affiliate readiness and independent stock date',()=>{
-  const ops=deriveProductOperations({slug:'official-only',offers:[confirmedOfficial()]});
+test('manufacturer-only product exposes the selected price confirmation and independent stock date',()=>{
+  const stockDate='2026-10-01T00:00:00.000Z';
+  const ops=deriveProductOperations({slug:'official-only',offers:[confirmedOfficial({availabilityUpdated:stockDate})]});
   assert.equal(ops.availability,'available');assert.equal(ops.affiliateAvailable,true);assert.equal(ops.purchasable,true);
-  assert.equal(ops.priceUpdated,undefined);assert.equal(ops.availabilityUpdated,now);
+  assert.equal(ops.priceUpdated,now);assert.equal(ops.selectedOfferId,'petlibro-de');assert.equal(ops.availabilityUpdated,stockDate);
 });
 test('an offer without a stock check date cannot borrow the legacy price or availability date',()=>{
   const ops=deriveProductOperations(product({availability:'unknown',availabilityUpdated:'2026-01-01',offers:[confirmedOfficial({availabilityUpdated:undefined})]}));

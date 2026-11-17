@@ -84,3 +84,13 @@ export function commerceDiagnostics(offers) {
     noMerchantOption: !offers.some(offer => offer.canLink)
   };
 }
+
+// One selection policy for advisor/catalog, page prices and Cockpit freshness.
+// A recent attempt never replaces a successful price confirmation.
+export function selectCommercePrice(data,{now=Date.now(),offers=resolveCommerceOffers(data,{}, {now})}={}){
+ const usable=offers.filter(o=>o.verified&&o.domestic&&o.canLink&&o.priceState!=='removed'&&Number.isFinite(o.price?.current)&&o.price.current>0);
+ const candidates=usable.map((offer,index)=>({offer,index,at:new Date(offer.price?.checkedAt).getTime()})).filter(o=>Number.isFinite(o.at)&&o.at<=Number(now)+60000);
+ candidates.sort((a,b)=>Number(b.offer.current!=null)-Number(a.offer.current!=null)||Number(b.offer.availability==='available')-Number(a.offer.availability==='available')||b.at-a.at||a.index-b.index);
+ const offer=candidates[0]?.offer??usable.find(o=>o.legacy)??null;
+ return offer?{offer,id:offer.id,storedCurrent:offer.price.current,current:offer.current,checkedAt:offer.price.checkedAt??null,source:offer.price.source??null,href:offer.affiliateUrl,currency:offer.currency,ageDays:offer.ageDays}:null;
+}

@@ -14,20 +14,22 @@ try{
  await send('Page.enable');await send('Page.bringToFront');await send('Runtime.enable');const results=[];
 
  await send('Emulation.setDeviceMetricsOverride',{width:1600,height:1100,deviceScaleFactor:1,mobile:false});
+ await send('Page.addScriptToEvaluateOnNewDocument',{source:`window.trustedClicks=Number(sessionStorage.getItem('qa-trusted-clicks')||0);document.addEventListener('click',e=>{if(e.isTrusted){window.trustedClicks++;sessionStorage.setItem('qa-trusted-clicks',String(window.trustedClicks))}})`});
  await send('Page.navigate',{url:base+'/admin/seo/prices/'});await sleep(4000);
  const click=async selector=>{await evaluate(`document.querySelector(${JSON.stringify(selector)}).scrollIntoView({block:'center'})`);const r=await evaluate(`(()=>{const r=document.querySelector(${JSON.stringify(selector)}).getBoundingClientRect();return {x:r.x+r.width/2,y:r.y+r.height/2}})()`);await send('Input.dispatchMouseEvent',{type:'mousePressed',button:'left',clickCount:1,...r});await send('Input.dispatchMouseEvent',{type:'mouseReleased',button:'left',clickCount:1,...r});await sleep(150)};
 
- const waitFor=async(expr,label)=>{for(let i=0;i<300;i++){if(await evaluate(expr))return;await sleep(100)}throw Error(label+': '+await evaluate(`document.querySelector('[data-ops-status]').textContent`))};
- const key=async(key,code=key,extra={})=>{await send('Input.dispatchKeyEvent',{type:'keyDown',key,code,...extra});await send('Input.dispatchKeyEvent',{type:'keyUp',key,code,...extra})};
+ const waitFor=async(expr,label)=>{for(let i=0;i<300;i++){if(await evaluate(`(()=>{try{return !!(${expr})}catch{return false}})()`))return;await sleep(100)}throw Error(label+': '+await evaluate(`document.querySelector('[data-ops-status]')?.textContent`))};
+ const key=async(key,code=key,extra={})=>{await send('Input.dispatchKeyEvent',{type:'rawKeyDown',key,code,windowsVirtualKeyCode:({Home:36,ArrowDown:40,ArrowUp:38,Enter:13,Escape:27})[key]??0,...extra});await send('Input.dispatchKeyEvent',{type:'keyUp',key,code,windowsVirtualKeyCode:({Home:36,ArrowDown:40,ArrowUp:38,Enter:13,Escape:27})[key]??0,...extra});await sleep(90)};
  const fill=async(selector,text)=>{await click(selector);await send('Input.dispatchKeyEvent',{type:'keyDown',key:'a',code:'KeyA',modifiers:4,commands:['selectAll']});await send('Input.dispatchKeyEvent',{type:'keyUp',key:'a',code:'KeyA',modifiers:4});await send('Input.insertText',{text});};
- const choose=async(selector,index)=>{await click(selector);await key('Home');for(let i=0;i<index;i++)await key('ArrowDown');await key('Enter')};
+ const choose=async(selector,index)=>{await click(selector);await key('Escape');const first=await evaluate(`document.querySelector(${JSON.stringify(selector)}).options[${index}].textContent.trim().charAt(0).toLowerCase()`);await send('Input.dispatchKeyEvent',{type:'keyDown',key:first,text:first,unmodifiedText:first,windowsVirtualKeyCode:first.toUpperCase().charCodeAt(0)});await send('Input.dispatchKeyEvent',{type:'keyUp',key:first,windowsVirtualKeyCode:first.toUpperCase().charCodeAt(0)});await key('Enter');assert.equal(await evaluate(`document.querySelector(${JSON.stringify(selector)}).selectedIndex`),index,'Native select '+selector)};
  const api=async()=>await(await fetch('http://127.0.0.1:4178/api/admin/prices')).json();
  const check=async(expr,label)=>{assert.ok(await evaluate(expr),label);results.push(label)};
  const initial=await api();assert.equal(initial.administration?.isolatedFixtureMode,true,'Browser mutations require isolated fixture mode');
  await waitFor(`!document.querySelector('[data-check-all]').disabled`,'Local service ready');
- await evaluate(`window.trustedClicks=0;document.addEventListener('click',e=>{if(e.isTrusted)window.trustedClicks++})`);
+
  await click('[data-view=all]');await fill('[data-search]','petlibro-air-automatic-feeder');
  const row='[data-product-row="petlibro-air-automatic-feeder"]',add=row+' [data-link-editor][data-action=add]',current=()=>api().then(a=>a.products.find(p=>p.slug==='petlibro-air-automatic-feeder'));
+ if((await current()).commerceOffers.some(o=>o.id==='qa-recovery')){await click(row+' [data-remove-offer=qa-recovery]');await waitFor(`document.querySelector('[data-ops-status]').textContent.includes('Händlerlink entfernt')`,'Fixture cleanup')}
  await click(row+' .ops-link-editor > summary');
  for(const [name,value]of Object.entries({id:'qa-recovery',merchant:'QA Händler',officialProductUrl:'https://example.com/qa-air',affiliateUrl:'https://example.com/qa-affiliate-one',variantId:'qa-air'}))await fill(add+` [name=${name}]`,value);
  await click(add+' [name=confirmIdentity]');await click(add+' button[type=submit]');
@@ -53,4 +55,4 @@ try{
  assert.deepEqual(exceptions,[]);assert.ok(await evaluate('window.trustedClicks')>20);results.push('Echte vertrauenswürdige Maus- und Tastaturereignisse, keine JS-Ausnahmen');
  fs.writeFileSync(path.join(output,'browser.json'),JSON.stringify({isolatedProductCopies:true,productionProductsChanged:false,results,exceptions,trustedClicks:await evaluate('window.trustedClicks'),finalStatus:await evaluate(`document.querySelector('[data-ops-status]').textContent`)},null,2));console.log(results);
 
-}finally{ws?.close();if(chrome&&chrome.exitCode===null)chrome.kill('SIGTERM');fs.rmSync(profile,{recursive:true,force:true})}
+}catch(error){console.error(error);try{const shot=await send('Page.captureScreenshot',{format:'png'});fs.writeFileSync(path.join(output,'browser-error.png'),Buffer.from(shot.data,'base64'))}catch{}throw error}finally{ws?.close();if(chrome&&chrome.exitCode===null){chrome.kill('SIGTERM');await Promise.race([new Promise(r=>chrome.once('exit',r)),sleep(2000)])}try{fs.rmSync(profile,{recursive:true,force:true,maxRetries:5,retryDelay:100})}catch{}}

@@ -178,7 +178,7 @@ export async function checkDocumentPrice(document, { fetchText = safeFetchText }
   });
 }
 
-export async function checkProductPrice(slugInput, {find = findDocument, checkLegacy = checkDocumentPrice, refresh = refreshOfficialOffer, persist = updateProductOffer} = {}) {
+export async function checkProductPrice(slugInput, {find = findDocument, checkLegacy = checkDocumentPrice, refresh = refreshOfficialOffer, persist = updateProductOffer, log=find===findDocument?searchLog:()=>{}} = {}) {
   const slug = validateSlug(slugInput);
   return dedupePriceCheck(slug, async () => {
     const document = await find(slug);
@@ -207,7 +207,7 @@ export async function checkProductPrice(slugInput, {find = findDocument, checkLe
       }});
     }
     const providerResults = await refreshCommerceTasks(tasks);
-    searchLog({action:'commerce-check:'+slug,provider:'commerce',status:providerResults.some(r=>r.ok)?'success':'error',message:JSON.stringify(providerResults.map(({id,ok,error,value})=>({id,ok,error,value}))) });
+    log({action:'commerce-check:'+slug,provider:'commerce',status:providerResults.some(r=>r.ok)?'success':'error',message:JSON.stringify(providerResults.map(({id,ok,error,value})=>({id,ok,error,checkedAt:value?.checkedAt,method:value?.method}))) });
     return resultFromDocument(await find(slug), {providerResults,
       ok:providerResults.some(r=>r.ok), error:providerResults.length ? providerResults.filter(r=>!r.ok).map(r=>`${r.id}: ${r.error}`).join(' · ') : 'Keine automatische Quelle konfiguriert.'});
   });
@@ -217,7 +217,7 @@ export async function checkAllProductPrices({ limit = Number.MAX_SAFE_INTEGER, i
   const documents = await listDocuments();
   const candidates = documents.filter((document) => {
     const state=deriveProductOperations(document.data);
-    if(!includeInactive&&(state.archived||state.consciouslyUnavailable))return false;
+    if(!includeInactive&&(document.data.maintenanceStatus==='archived'||document.data.recommendationStatus==='archived'))return false;
     if (document.data.offers?.length) return true;
     if (!allowsAutomaticPriceCheck(document.data)) return false;
     if (includeInactive) return true;
@@ -274,7 +274,7 @@ export async function setManualProductPrice(input = {}, {find = findDocument, pe
     const currency = validateCurrency(input.currency);
     const persisted = await persistOffer(document.file, offerId, offer => ({
       ...offer,
-      price: {...offer.price, current, currency, checkedAt:current!=null?now:undefined,
+      price: {...offer.price, current, currency, changedAt:current!==offer.price?.current||currency!==offer.price?.currency?now:offer.price?.changedAt, checkedAt:current!=null?now:undefined,
         source:{id:'cockpit-manual',label:affiliatePrograms[offer.program]?.label || offer.merchant,type:'manual'}},
       priceState:current == null ? 'unknown' : 'available', availability, availabilityUpdated: availability!==offer.availability||input.confirmAvailability===true ? (availability!=='unknown'?now:undefined) : offer.availabilityUpdated, error:undefined
     }),{expectedHash:input.expectedHash});
@@ -471,6 +471,8 @@ export async function setProductCommerceLink(input={}, {find=findDocument}={}){
  const affiliateUrl=input.affiliateUrl?httpsDestination(input.affiliateUrl):null;if(input.affiliateUrl&&!affiliateUrl)throw new Error('Ungültige HTTPS-Affiliate-URL.');
  if(network!=='none'&&!affiliateUrl&&!input.program)throw new Error('Affiliate-URL oder konfiguriertes Programm fehlt.');
  const program=input.program?affiliatePrograms[input.program]:null;if(input.program&&!program)throw new Error('Unbekanntes Affiliate-Programm.');
+ if(program&&program.network!==network)throw new Error('Netzwerk passt nicht zum gewählten Programm.');
+ if(network==='partnernet'){const {extractAmazonAsin}=await import('../../../../../packages/affiliate-core/src/affiliate/amazon.ts');const asin=extractAmazonAsin(officialProductUrl);if(!asin)throw new Error('Direkte Amazon-Produkt-URL mit gültiger ASIN erforderlich.');if(input.variantId&&input.variantId!==asin)throw new Error('ASIN und Produkt-URL stimmen nicht überein.')}
  if(program&&!program.hosts.includes(new URL(officialProductUrl).hostname))throw new Error('Produkt-URL gehört nicht zum gewählten Programm.');
  const same=existing&&existing.officialProductUrl===officialProductUrl&&(existing.variantId||'')===String(input.variantId||'').trim()&&existing.program===(input.program||undefined)&&existing.network===network&&existing.merchant===merchant;
  const confirmed=input.confirmIdentity===true;

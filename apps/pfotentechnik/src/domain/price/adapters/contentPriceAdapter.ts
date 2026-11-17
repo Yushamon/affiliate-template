@@ -1,4 +1,4 @@
-import { legacyCommerceOffer } from "../../commerceOffers.mjs";
+import { legacyCommerceOffer, selectCommercePrice } from "../../commerceOffers.mjs";
 import type {
   PriceAdapter,
   PriceAssessment,
@@ -85,9 +85,10 @@ const sourceFrom = (data: any, raw: any, affiliateUrl?: string): PriceSource | u
 export const contentPriceAdapter: PriceAdapter<any> = {
   id: "content",
   supports: () => true,
-  read(product) {
+  read(product, {now=new Date()}={}) {
     const data = product?.data ?? product ?? {};
-    const raw = data.price ?? {};
+    const selected=selectCommercePrice(data,{now:+now});
+    const raw = selected?.offer.price ?? data.price ?? {};
     const slug = text(data.slug ?? product?.slug ?? product?.id).replace(/\.mdx?$/i, "");
     if (!slug) return null;
 
@@ -100,7 +101,7 @@ export const contentPriceAdapter: PriceAdapter<any> = {
     // affiliate.url ist die kanonische URL-Wahrheit. Alte Preisfelder bleiben
     // als lesbarer Migrations-Fallback erhalten, werden aber nicht neu geschrieben.
     const affiliateUrl = text(
-      data.affiliate?.url ??
+      selected?.href ?? data.affiliate?.url ??
       raw.affiliateUrl ??
       raw.source?.url ??
       data.productUrl
@@ -111,11 +112,11 @@ export const contentPriceAdapter: PriceAdapter<any> = {
     ) as PriceTier;
 
     const legacy = legacyCommerceOffer(data);
-    const mappingConfirmed = !legacy || legacy.mappingStatus === "verified";
+    const mappingConfirmed = Boolean(selected)||!legacy || legacy.mappingStatus === "verified";
     return {
       slug,
       categoryKey: categoryKey(data) || "unbekannt",
-      current: mappingConfirmed && text(raw.currency || "EUR") === "EUR" && data.priceState !== "removed" ? current : null,
+      current: !selected?.offer.error && mappingConfirmed && text(raw.currency || "EUR") === "EUR" && data.priceState !== "removed" ? current : null,
       currency: text(raw.currency) || "EUR",
       status: assessmentValues.has(configuredStatus) ? configuredStatus : "unknown",
       comparisonText: text(raw.comparisonText) || undefined,

@@ -72,6 +72,7 @@ export const productPriceSchema =
     shipping: z.number().nonnegative().nullable().optional(),
     variantLabel: z.string().optional(),
     checkedAt: z.coerce.date().optional(),
+    changedAt: z.coerce.date().optional(),
     affiliateUrl: z.string().url().optional(),
     source: productPriceSourceSchema.optional()
   })

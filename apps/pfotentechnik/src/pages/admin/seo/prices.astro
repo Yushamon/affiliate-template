@@ -26,8 +26,8 @@ const formatDate = (value?: string | null) => value
   ? new Intl.DateTimeFormat("de-DE", { dateStyle: "medium" }).format(new Date(value))
   : "Nie";
 const metrics = [
-  ["missingPrice", "Ohne Preis"],
-  ["missingAffiliate", "Ohne Affiliate"],
+  ["missingPrice", "Aktive Pflegefälle ohne Preis"],
+  ["missingAffiliate", "Aktive Pflegefälle ohne Händlerziel"],
   ["unknownAvailability", "Verfügbarkeit unbekannt"],
   ["discontinued", "Eingestellt"],
   ["unavailable", "Nicht verfügbar"],
@@ -60,10 +60,12 @@ const metrics = [
     <button type="button" data-check-all disabled>Commerce-Daten aktualisieren</button>
   </section>
 
+  <datalist id="ops-providers"><option value="amazon"/><option value="petlibro"/><option value="tractive"/></datalist>
+  <p class="ops-inventory">Datenbestand: {([['products','Produkte'],['withPrice','mit gespeichertem Preis'],['withAffiliate','mit Händlerziel'],['knownAvailability','mit Statusangabe']] as const).map(([key,label])=><button type="button" data-metric-filter={key}><strong data-metric={key}>{dashboard[key]}</strong> {label}</button>)}. Gespeichert bedeutet nicht aktuell bestätigt.</p>
   <section class="ops-metrics" aria-label="Produktpflege-Kennzahlen">
     {metrics.map(([key, label]) => (
       <article class="pt-surface seo-card"><button type="button" data-metric-filter={key}>
-        <span>{label}</span>
+        <small>{["stale30","stale90"].includes(key)?"Aktualität":["unknownAvailability","discontinued","unavailable","archived"].includes(key)?"Bestandsstatus":"Pflegefälle"}</small><span>{label}</span>
         <strong data-metric={key}>
           {key === "maintenanceRate" ? `${dashboard[key]} %` : dashboard[key]}
         </strong></button>
@@ -130,7 +132,7 @@ const metrics = [
           </div>
           <div class="ops-cell">
             <strong data-field="formattedCurrent">{row.formattedCurrent ?? "Fehlt"}</strong>
-            <small data-field="sourceLabel">{row.sourceLabel}</small><small>Letzter Commerce-Versuch: <span data-field="lastCommerceAttemptAt">Noch nicht protokolliert</span></small>
+            <small data-field="selectedPriceSource">{row.selectedPriceSource}</small><small data-field="publicPriceStateLabel">{row.publicPriceStateLabel}</small><small>Verwendetes Angebot: <span data-field="selectedOfferId">{row.selectedOfferId}</span></small><small>Letzter Commerce-Versuch: <span data-field="lastCommerceAttemptAt">Noch nicht protokolliert</span></small>
           </div>
           <div class="ops-cell">
             <small>Letzte Preisprüfung</small>
@@ -173,13 +175,13 @@ const metrics = [
           <form class="ops-editor" data-editor={row.slug} hidden>
             <label>Empfehlbarkeit<select data-policy="recommendationOverride"><option value="auto" selected={row.recommendationOverride==='auto'}>Aus Produktdaten ableiten</option><option value="limited" selected={row.recommendationOverride==='limited'}>Bewusst einschränken</option></select></label><label>Pflegepriorität<select data-policy="maintenancePriority">{[['high','Hoch'],['normal','Normal'],['low','Niedrig']].map(([value,label])=><option value={value} selected={row.maintenancePriority===value}>{label}</option>)}</select></label><button type="button" disabled data-save-policy={row.slug}>Empfehlbarkeit und Priorität speichern</button>
             <label>
-              <span>Preis</span>
+              <span>Preis im bisherigen Hauptdatensatz (Händlerpreise separat unten)</span>
               <input
                 type="text"
                 inputmode="decimal"
                 autocomplete="off"
                 data-draft="current"
-                value={row.current ?? ""}
+                value={row.storedCurrent ?? ""}
                 placeholder="29,99"
               />
             </label>
@@ -367,10 +369,10 @@ const metrics = [
   };
 
   const draftFrom = (record: OperationsRecord): Draft => ({
-    current: record.current == null ? "" : String(record.current).replace(".", ","),
+    current: record.storedCurrent == null ? "" : String(record.storedCurrent).replace(".", ","),
     currency: record.currency || "EUR",
     priceState: record.priceState || "unknown",
-    sourceLabel: record.sourceLabel === "Nicht angegeben" ? "" : record.sourceLabel || "",
+    sourceLabel:record.storedSourceLabel||"",
     targetUrl: record.targetUrl || "",
     availability: record.availability || "unknown",
     availabilityReason: record.availabilityReason || "",
@@ -649,12 +651,12 @@ const metrics = [
       button.disabled = true;
       setStatus("Aktive Produkte werden nacheinander geprüft …");
       try {
-        const candidates=[...records.values()].filter(r=>!r.archived&&!r.consciouslyUnavailable&&r.automaticPriceCheckAllowed!==false&&(r.targetUrl||r.commerceOffers?.length));let succeeded=0,failed=0;
+        const candidates=[...records.values()].filter(r=>!r.manuallyArchived&&r.automaticPriceCheckAllowed!==false&&(r.targetUrl||r.commerceOffers?.length));let succeeded=0,failed=0,sourceFailures=0;
         for(const [i,r] of candidates.entries()){
           setStatus(`${i+1} von ${candidates.length}: ${r.title} wird geprüft …`);
-          try{const result=await fetchJson('/api/admin/prices/check',{method:'POST',body:JSON.stringify({slug:r.slug})});applyServerResult(result);if(result.ok)succeeded++;else failed++}catch(error){failed++;setStatus(String(error),'error')}
+          try{const result=await fetchJson('/api/admin/prices/check',{method:'POST',body:JSON.stringify({slug:r.slug})});applyServerResult(result);sourceFailures+=(result.providerResults||[]).filter((p:any)=>!p.ok).length;if(result.ok)succeeded++;else failed++}catch(error){failed++;setStatus(String(error),'error')}
         }
-        setStatus(`${succeeded} Produkte mit bestätigter Aktualisierung, ${failed} ohne bestätigtes Ergebnis. Fehlgeschlagene Prüfungen erneuern keine Preisbestätigung.`);
+        setStatus(`${succeeded} Produkte mit bestätigter Aktualisierung, ${failed} ohne bestätigtes Ergebnis; ${sourceFailures} Quellen ohne Bestätigung. Fehlgeschlagene Prüfungen erneuern keine Preisbestätigung.`);
 
       } catch (error) {
         setStatus(error instanceof Error ? error.message : String(error), "error");
@@ -729,13 +731,13 @@ const metrics = [
     } catch(error) { if(feedback) feedback.textContent = error instanceof Error ? error.message : String(error); }
     finally { if(button) button.disabled = false; }
   });
-  const matchesMetric=(r:any,key:string)=>({missingPrice:!r.priceAvailable&&!r.editorialPriceControl&&!r.consciouslyUnavailable&&!r.archived,missingAffiliate:!r.affiliateAvailable&&!r.consciouslyUnavailable&&!r.archived,unknownAvailability:r.availability==='unknown',discontinued:r.availability==='discontinued',unavailable:['temporarily-unavailable','out-of-stock'].includes(r.availability),stale30:r.priceAgeDays>30,stale90:r.priceAgeDays>90,maintenanceRequired:r.maintenanceStatus==='required',maintenanceRecommended:r.maintenanceStatus==='recommended',archived:r.archived,maintenanceRate:['complete','archived'].includes(r.maintenanceStatus)})[key]??false;
-  document.querySelectorAll<HTMLButtonElement>('[data-metric-filter]').forEach(b=>b.addEventListener('click',()=>{metricFilter=b.dataset.metricFilter||'';currentView='all';if(filter)filter.value='all';applyView();setStatus('Gefiltert: '+b.textContent?.trim())}));
+  const matchesMetric=(r:any,key:string)=>({products:true,withPrice:r.priceAvailable,withAffiliate:r.affiliateAvailable,knownAvailability:r.availability!=='unknown',missingPrice:!r.priceAvailable&&!r.editorialPriceControl&&!r.consciouslyUnavailable&&!r.archived,missingAffiliate:!r.affiliateAvailable&&!r.consciouslyUnavailable&&!r.archived,unknownAvailability:r.availability==='unknown',discontinued:r.availability==='discontinued',unavailable:['temporarily-unavailable','out-of-stock'].includes(r.availability),stale30:r.priceAgeDays>30,stale90:r.priceAgeDays>90,maintenanceRequired:r.maintenanceStatus==='required',maintenanceRecommended:r.maintenanceStatus==='recommended',archived:r.archived,maintenanceRate:['complete','archived'].includes(r.maintenanceStatus)})[key]??false;
+  document.querySelectorAll<HTMLButtonElement>('[data-metric-filter]').forEach(b=>b.addEventListener('click',()=>{metricFilter=b.dataset.metricFilter||'';currentView='all';document.querySelectorAll('[data-view]').forEach(n=>n.classList.toggle('is-active',(n as HTMLElement).dataset.view==='all'));if(filter)filter.value='all';applyView();setStatus('Gefiltert: '+b.textContent?.trim())}));
   document.querySelector('[data-ops-list]')?.addEventListener('click',async event=>{
     const policyButton=(event.target as Element).closest<HTMLButtonElement>('[data-save-policy]');if(policyButton&&serviceReady){const editor=policyButton.closest('form')!;policyButton.disabled=true;try{const patch=Object.fromEntries([...editor.querySelectorAll<HTMLSelectElement>('[data-policy]')].map(n=>[n.dataset.policy,n.value]));applyServerResult(await fetchJson('/api/admin/products/operations',{method:'POST',body:JSON.stringify({...patch,expectedHash:records.get(policyButton.dataset.savePolicy||'')?.sourceHash,slug:policyButton.dataset.savePolicy})}));setStatus('Empfehlbarkeit und Pflegepriorität gespeichert.')}catch(e){setStatus(String(e),'error')}finally{writable()}return}
 
     const b=(event.target as Element).closest<HTMLButtonElement>('[data-remove-offer]');if(!b||!serviceReady)return;
-    b.disabled=true;try{applyServerResult(await fetchJson('/api/admin/prices/link',{method:'POST',body:JSON.stringify({slug:b.dataset.slug,id:b.dataset.removeOffer,action:'remove',expectedHash:b.dataset.sourceHash})}));setStatus('Händlerlink entfernt. Andere Angebote sind erhalten.')}catch(e){setStatus(String(e),'error')}finally{writable()}
+    b.disabled=true;try{(document.activeElement as HTMLElement)?.blur();applyServerResult(await fetchJson('/api/admin/prices/link',{method:'POST',body:JSON.stringify({slug:b.dataset.slug,id:b.dataset.removeOffer,action:'remove',expectedHash:b.dataset.sourceHash})}));setStatus('Händlerlink entfernt. Andere Angebote sind erhalten.')}catch(e){setStatus(String(e),'error')}finally{writable()}
   });
   document.querySelector('[data-ops-list]')?.addEventListener('submit',async event=>{
     const f=(event.target as Element).closest<HTMLFormElement>('[data-link-editor]');if(!f)return;event.preventDefault();if(!serviceReady)return;
@@ -1023,3 +1025,5 @@ const metrics = [
 </style>
 
 <style>.ops-metrics button{appearance:none;border:0;background:none;color:inherit;text-align:left;display:grid;gap:8px;width:100%;cursor:pointer}.ops-link-editor{border-block:1px solid var(--pt-color-border);padding-block:12px}</style>
+
+<style>.ops-inventory button{border:0;background:none;color:inherit;text-decoration:underline;text-underline-offset:3px;padding:8px;cursor:pointer}.ops-metrics small{font-weight:400;opacity:.8}</style>

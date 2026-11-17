@@ -36,7 +36,7 @@ export function commerceCockpitMarkup(offers = [], slug = '', sourceHash = '') {
 }
 
 function linkForm(offer,slug,sourceHash){
- const field=(name,label,value,type='text')=>`<label>${label}<input name="${name}" type="${type}" value="${escape(value)}" ${['id','merchant','officialProductUrl'].includes(name)?'required':''}/></label>`;
+ const field=(name,label,value,type='text')=>`<label>${label}<input name="${name}" type="${type}" ${name==='merchant'?'list="ops-providers"':''} value="${escape(value)}" ${['id','merchant','officialProductUrl'].includes(name)?'required':''}/></label>`;
  return `<details class="ops-link-editor"><summary>${offer?'Händlerlink bearbeiten':'Händlerlink hinzufügen'}</summary><form data-link-editor data-slug="${escape(slug)}" data-source-hash="${escape(sourceHash)}" data-action="${offer?'edit':'add'}">
  ${field('id','Eindeutige Händlerkennung',offer?.id)}${field('merchant','Anbieter (bestehend oder neu)',offer?.merchant)}
  <label>Netzwerk<select name="network">${['partnernet','awin','adcell','none'].map(n=>`<option value="${n}"${(offer?.network??'none')===n?' selected':''}>${{partnernet:'Amazon PartnerNet',awin:'Awin',adcell:'ADCELL',none:'Direkter Anbieter'}[n]}</option>`).join('')}</select></label>

@@ -33,6 +33,12 @@ export function extractAmazonOffer(html, pageUrl) {
   const amount = input('items[0.base][customerVisiblePrice][amount]');
   const currency = input('items[0.base][customerVisiblePrice][currencyCode]');
   if (!/^\d+(?:\.\d{1,2})?$/.test(amount ?? '') || !(Number(amount) > 0) || currency !== 'EUR') return null;
-  // Amazon stock and purchase buttons do not determine whether a price can be updated.
-  return { current: Number(amount), currency, availability: undefined, method: 'amazon-buybox', pageUrl };
+  // Price and ordering evidence are separate. Only a live primary purchase
+  // control, exact ASIN, concrete offer token and cart action confirm stock.
+  const buy=formNodes.filter(n=>['input','button'].includes(n.tagName)&&!hidden(n)&&attr(n,'disabled')===undefined&&attr(n,'aria-disabled')!=='true'&&(/^(?:submit\.add-to-cart|submit\.addToCart)$/.test(attr(n,'name')??'')||attr(n,'id')==='add-to-cart-button'));
+  const token=input('items[0.base][offerListingId]')||input('offerListingID')||input('offeringID.1');
+  const condition=input('condition')||input('items[0.base][condition]');
+  let cartAction=false;try{const action=new URL(attr(forms[0],'action')||'',url);cartAction=action.origin===url.origin&&/\/(?:gp\/add-to-cart|cart\/add-to-cart)/.test(action.pathname)}catch{}
+  const orderable=buy.length===1&&Boolean(token)&&cartAction&&(!condition||condition.toLowerCase()==='new')&&!/vorbestell|pre.?order/i.test([attr(buy[0],'value'),attr(buy[0],'aria-label')].join(' '));
+  return { current: Number(amount), currency, availability: orderable?'https://schema.org/InStock':undefined, method: 'amazon-buybox', pageUrl };
 }
