@@ -1,3 +1,4 @@
+import {experimentAlternativeAssignments} from './experiment35-5.mjs';
 import { buildPriceIndex, type PriceIndex } from "../price/engine.ts";
 import type { ProductPriceInsight } from "../price/types.ts";
 import { isHigherPriceTier, isLowerPriceTier } from "../price/tier.ts";
@@ -319,9 +320,11 @@ const intelligentAlternatives = (
     reason: string,
     predicate: (entry: any, price: ProductPriceInsight | undefined, haystack: string) => boolean
   ) => {
+    const assigned=experimentAlternativeAssignments[currentSlug]?.[type];
     const match = candidates.find((entry) => {
       const slug = slugOf(entry);
       if (used.has(slug)) return false;
+      if(assigned)return slug===assigned;
       return predicate(entry, priceIndex.bySlug.get(slug), collectProductText(dataOf(entry)));
     });
     if (!match) return;
@@ -478,8 +481,8 @@ export const buildProductExperienceModel = ({
   const slug = slugOf(currentEntry);
   const priceIndex = getPriceIndex(allProducts, currentEntry);
   const price = priceIndex.bySlug.get(slug);
-  const operations = deriveProductOperations(data);
-  const commerceOffers = resolveCommerceOffers(data);
+  const operations = deriveProductOperations(data,{now:Date.parse(priceIndex.generatedAt)});
+  const commerceOffers = resolveCommerceOffers(data,{}, {now:Date.parse(priceIndex.generatedAt)});
   const primaryMerchant = commerceOffers.find(offer => offer.canLink);
   const subscriptionCosts = buildSubscriptionCostModel({
     subscription: data.subscription,

@@ -183,7 +183,7 @@ export function deriveProductOperations(data, options = {}) {
 
   const rawCurrent = validPrice(data?.price?.current);
   let current=rawCurrent;
-  let priceUpdatedRaw = data?.price?.checkedAt;
+  let priceUpdatedRaw = rawCurrent!=null?data?.price?.checkedAt:undefined;
   let priceAgeDays = ageInDays(priceUpdatedRaw, now);
   const affiliateUrl = data?.affiliate?.url ?? data?.price?.affiliateUrl ?? data?.productUrl;
   const offers = resolveCommerceOffers(data, {}, { now });
@@ -284,7 +284,7 @@ export function deriveProductOperations(data, options = {}) {
     ...commerceDiagnostics(offers),
     selectedOfferId:selectedPrice?.id??'legacy',
     selectedPriceSource:selectedPrice?.source?.label??data.price?.source?.label??'Nicht angegeben',
-    selectedPriceCheckedAt:selectedPrice?.checkedAt??data.price?.checkedAt??null,
+    selectedPriceCheckedAt:selectedPrice?.checkedAt??(rawCurrent!=null?data.price?.checkedAt:null)??null,
     publicPriceStateLabel:selectedPrice?.current!=null?'Preis öffentlich verwendbar':'Öffentlich: aktuellen Preis prüfen',
     selectedPricePublicCurrent:selectedPrice?.current??null,
     decisionQuality: decisionQualitySummary(data),

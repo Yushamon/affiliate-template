@@ -348,11 +348,8 @@ const deriveKnownValue = (
     case "ortung": return gps ? "GPS-Ortung" : undefined;
     case "uebertragung": return gps?.transmission;
     case "abo": {
-      const checkedAt = data.price?.checkedAt ? Date.parse(String(data.price.checkedAt)) : Number.NaN;
       const operations = deriveProductOperations(data);
-      const currentPrice = operations.priceAvailable && Number.isFinite(checkedAt) && Date.now() - checkedAt <= 14 * 86_400_000
-        ? data.price?.current
-        : null;
+      const currentPrice = operations.selectedPricePublicCurrent;
       return formatSubscriptionComparison(data.subscription, currentPrice)
         ?? (typeof gps?.subscriptionRequired === "boolean"
           ? gps.subscriptionRequired ? "Abo erforderlich" : "Kein Mobilfunkabo erforderlich"

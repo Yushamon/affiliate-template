@@ -90,7 +90,7 @@ export function commerceDiagnostics(offers) {
 export function selectCommercePrice(data,{now=Date.now(),offers=resolveCommerceOffers(data,{}, {now})}={}){
  const usable=offers.filter(o=>o.verified&&o.domestic&&o.canLink&&o.priceState!=='removed'&&Number.isFinite(o.price?.current)&&o.price.current>0);
  const candidates=usable.map((offer,index)=>({offer,index,at:new Date(offer.price?.checkedAt).getTime()})).filter(o=>Number.isFinite(o.at)&&o.at<=Number(now)+60000);
- candidates.sort((a,b)=>Number(b.offer.current!=null)-Number(a.offer.current!=null)||Number(b.offer.availability==='available')-Number(a.offer.availability==='available')||b.at-a.at||a.index-b.index);
+ candidates.sort((a,b)=>{const freshA=a.offer.current!=null,freshB=b.offer.current!=null;return Number(freshB)-Number(freshA)||(freshA&&freshB?(Number(b.offer.availability==='available')-Number(a.offer.availability==='available')||a.index-b.index):(b.at-a.at||a.index-b.index))});
  const offer=candidates[0]?.offer??usable.find(o=>o.legacy)??null;
  return offer?{offer,id:offer.id,storedCurrent:offer.price.current,current:offer.current,checkedAt:offer.price.checkedAt??null,source:offer.price.source??null,href:offer.affiliateUrl,currency:offer.currency,ageDays:offer.ageDays}:null;
 }

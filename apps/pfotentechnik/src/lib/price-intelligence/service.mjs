@@ -101,8 +101,17 @@ const validateManufacturer = (input) => {
   return { name, slug, key };
 };
 
+export function commerceRefreshEligible(data,{includeInactive=false}={}){
+ if(!includeInactive&&(data.maintenanceStatus==='archived'||data.recommendationStatus==='archived'))return false;
+ if(data.offers?.length)return true;
+ if(!allowsAutomaticPriceCheck(data))return false;
+ if(includeInactive)return true;
+ if(resolveCommerceOffers(data).some(o=>o.amazonLink&&o.canLink))return true;
+ const operations=deriveProductOperations(data);return !operations.consciouslyUnavailable&&!operations.archived;
+}
+
 const resultFromDocument = (document, extra = {}) => {
-  const record = {sourceHash:document.source?createHash('sha256').update(document.source).digest('hex'):undefined,...toOperationsRecord(document.data), commerceOffers: resolveCommerceOffers(document.data)};
+  const record = {automaticRefreshEligible:commerceRefreshEligible(document.data),sourceHash:document.source?createHash('sha256').update(document.source).digest('hex'):undefined,...toOperationsRecord(document.data), commerceOffers: resolveCommerceOffers(document.data)};
   return {
     ...record,
     ...extra,
@@ -215,18 +224,7 @@ export async function checkProductPrice(slugInput, {find = findDocument, checkLe
 
 export async function checkAllProductPrices({ limit = Number.MAX_SAFE_INTEGER, includeInactive = false } = {}, {listDocuments = listPriceDocuments, check = checkProductPrice} = {}) {
   const documents = await listDocuments();
-  const candidates = documents.filter((document) => {
-    const state=deriveProductOperations(document.data);
-    if(!includeInactive&&(document.data.maintenanceStatus==='archived'||document.data.recommendationStatus==='archived'))return false;
-    if (document.data.offers?.length) return true;
-    if (!allowsAutomaticPriceCheck(document.data)) return false;
-    if (includeInactive) return true;
-    const operations = deriveProductOperations(document.data);
-    if (resolveCommerceOffers(document.data).some(offer => offer.amazonLink && offer.canLink)) {
-      return document.data.maintenanceStatus !== 'archived' && document.data.recommendationStatus !== 'archived';
-    }
-    return !operations.consciouslyUnavailable && !operations.archived;
-  });
+  const candidates=documents.filter(document=>commerceRefreshEligible(document.data,{includeInactive}));
   const safeLimit = Math.min(candidates.length, Math.max(1, Number(limit) || candidates.length));
   const results = [];
 
@@ -397,7 +395,7 @@ export async function priceAudit() {
   const attempts=new Map();if(fs.existsSync(commerceAuditPath))for(const line of fs.readFileSync(commerceAuditPath,'utf8').split('\n')){try{const e=JSON.parse(line);if(e.action?.startsWith('commerce-check:'))attempts.set(e.action.slice(15),{lastCommerceAttemptAt:e.timestamp,lastCommerceAttemptStatus:e.status,lastCommerceAttemptMessage:e.message})}catch{}}
   const documents = await listPriceDocuments();
   const products = documents
-    .map(({ data, source }) => ({...attempts.get(data.slug),sourceHash:createHash('sha256').update(source).digest('hex'),...toOperationsRecord(data), commerceOffers: resolveCommerceOffers(data)}))
+    .map(({ data, source }) => ({...attempts.get(data.slug),automaticRefreshEligible:commerceRefreshEligible(data),sourceHash:createHash('sha256').update(source).digest('hex'),...toOperationsRecord(data), commerceOffers: resolveCommerceOffers(data)}))
     .map((record) => ({ ...record, operations: record }))
     .sort(compareMaintenanceRows)
     .map(({ operations: _operations, ...record }) => record);

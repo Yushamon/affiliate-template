@@ -653,7 +653,7 @@ const metrics = [
       button.disabled = true;
       setStatus("Aktive Produkte werden nacheinander geprüft …");
       try {
-        const candidates=[...records.values()].filter(r=>!r.manuallyArchived&&r.automaticPriceCheckAllowed!==false&&(r.targetUrl||r.commerceOffers?.length));let succeeded=0,failed=0,sourceFailures=0;
+        const candidates=[...records.values()].filter(r=>r.automaticRefreshEligible);let succeeded=0,failed=0,sourceFailures=0;
         for(const [i,r] of candidates.entries()){
           setStatus(`${i+1} von ${candidates.length}: ${r.title} wird geprüft …`);
           try{const result=await fetchJson('/api/admin/prices/check',{method:'POST',body:JSON.stringify({slug:r.slug})});applyServerResult(result);sourceFailures+=(result.providerResults||[]).filter((p:any)=>!p.ok).length;if(result.ok)succeeded++;else failed++}catch(error){failed++;setStatus(String(error),'error')}

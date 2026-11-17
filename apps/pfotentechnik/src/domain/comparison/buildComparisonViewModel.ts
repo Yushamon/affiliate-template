@@ -13,7 +13,7 @@ import type {
 import { buildPriceIndex } from "../price/engine";
 import { calculateProductScore } from "../productScore.ts";
 import type { ProductPriceInsight } from "../price/types";
-import { resolveCommerceOffers } from "../commerceOffers.mjs";
+import { resolveCommerceOffers,selectCommercePrice } from "../commerceOffers.mjs";
 import { deriveProductOperations } from "../../lib/product-operations/policy.mjs";
 import { selectComparisonFinalists } from "./finalistSelection.mjs";
 import { resolveComparisonProductImage } from "../mediaResolver.mjs";
@@ -848,8 +848,8 @@ export function buildComparisonViewModel({
       const product = productBySlug.get(item.slug);
       if (!product) return null;
 
-      const commerceOffers = resolveCommerceOffers(product.data);
-      const selectedOffer = commerceOffers.find(offer => offer.purchasable) ?? commerceOffers.find(offer => offer.canLink);
+      const commerceOffers = resolveCommerceOffers(product.data,{}, {now:Date.parse(priceIndex.generatedAt)});
+      const selectedOffer = selectCommercePrice(product.data,{now:Date.parse(priceIndex.generatedAt),offers:commerceOffers})?.offer ?? commerceOffers.find(offer => offer.purchasable) ?? commerceOffers.find(offer => offer.canLink);
       const affiliate = selectedOffer ? {
         provider: selectedOffer.merchant,
         label: selectedOffer.ctaLabel || `Preis und Verfügbarkeit bei ${selectedOffer.label} prüfen`,
@@ -864,6 +864,7 @@ export function buildComparisonViewModel({
         affiliateUrl: affiliate?.url,
         ...(selectedOffer && !selectedOffer.legacy ? {
           current: selectedOffer.current,
+          formattedCurrent:selectedOffer.formattedPrice,
           currency: selectedOffer.currency,
           checkedAt: selectedOffer.price?.checkedAt,
           source: { id: selectedOffer.merchant, label: selectedOffer.label, type: "merchant" as const },
