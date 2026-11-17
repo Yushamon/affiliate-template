@@ -234,6 +234,7 @@ const metrics = [
               <span>Kurze Preiseinordnung</span>
               <textarea rows="2" maxlength="360" data-draft="comparisonText">{row.comparisonText ?? ""}</textarea>
             </label>
+            <label class="wide"><input type="checkbox" data-confirm-price/> Diesen Hauptpreis heute ausdrücklich geprüft und bestätigt</label>
             <div class="ops-editor__actions wide">
               <button disabled type="submit" data-save-product={row.slug}>Produktdaten speichern</button>
               <button type="button" class="pt-button pt-button-secondary secondary" disabled data-archive-product={row.slug}>
@@ -407,6 +408,7 @@ const metrics = [
     drafts.set(record.slug, draft);
     writeDraftToEditor(editor, draft);
     editor.querySelectorAll<HTMLSelectElement>('[data-policy]').forEach(n=>n.value=record[n.dataset.policy!]||'');
+    const confirmed=editor.querySelector<HTMLInputElement>('[data-confirm-price]');if(confirmed)confirmed.checked=false;
     editor.dataset.dirty = "false";editor.dataset.sourceHash=record.sourceHash||"";
     return true;
   };
@@ -572,7 +574,7 @@ const metrics = [
           const result = await fetchJson("/api/admin/prices/manual", {
             method: "POST",
             body: JSON.stringify({
-              slug,expectedHash:editor.dataset.sourceHash,
+              slug,expectedHash:editor.dataset.sourceHash,confirmPrice:editor.querySelector<HTMLInputElement>('[data-confirm-price]')?.checked===true,
               current: draft.current,
               currency: draft.currency,
               priceState: draft.priceState,
