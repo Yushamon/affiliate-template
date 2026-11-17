@@ -63,9 +63,21 @@ export function buildGiftCatalog(entries:any[],{now=Date.now()}={}){
    checkedAt:offer.price?.checkedAt??d.priceUpdated??null,availabilityUpdated:offer.availabilityUpdated??d.availabilityUpdated??null,merchant:offer.label,offerHref:offer.affiliateUrl,offerRel:offer.rel,
    maximumWeight:Number(d.gps?.maximumPetWeightKg)||Number((d.specs??[]).find((s:any)=>/geeignet|herstellerempfehlung/i.test(s.label)&&/\d+(?:[.,]\d+)?\s*(?:bis|–|-)\s*(\d+(?:[.,]\d+)?)\s*kg/i.test(s.value))?.value.match(/\d+(?:[.,]\d+)?\s*(?:bis|–|-)\s*(\d+(?:[.,]\d+)?)\s*kg/i)?.[1]?.replace(',','.'))||null,
    score:score.score,scoreSource:score.source,reviewLabel:review.label,reviewBasis:review.basis,animals:animals.value,advisor,technical,comparison,
-   subscriptionLabel:subscription?.runningCostLabel??'Digitale Folgekosten nicht abschließend dokumentiert',tco12:subscription?.totals?.months12??null,
+   giftServiceLabel:giftServiceCopy(subscription,d.gps?.subscriptionRequired),subscriptionLabel:subscription?.runningCostLabel??'Digitale Folgekosten nicht abschließend dokumentiert',tco12:subscription?.totals?.months12??null,
    recommendation:d.recommendation,strengths:(d.strengths??[]).slice(0,2),weaknesses:(d.weaknesses??[]).slice(0,2),
    media:resolveProductMedia(d.images),testStatus:d.testStatus});
  }
  return {products:records,omitted};
+}
+
+// Reuse the central tariff model, including included months and price freshness.
+// No inferred annual service cost and no optional-service total in the gift UI.
+export function giftServiceCopy(model:ReturnType<typeof buildSubscriptionCostModel>,gpsRequired?:boolean){
+ if(!model)return gpsRequired===true?'Für die Ortungsfunktion ist ein kostenpflichtiges Abo erforderlich. Aktuellen Tarif prüfen.':'Mögliche digitale Zusatzkosten vor dem Kauf prüfen.';
+ const price=model.featuredPlan?.current?model.featuredPlan.paymentLabel:null;
+ if(model.status==='no-subscription')return 'Keine verpflichtenden digitalen Servicekosten.';
+ if(model.optional&&model.requiredForCoreFunction!==true)return `Optionaler Digitaldienst: ${price??'aktuellen Tarif prüfen'}.`;
+ if(model.status==='service-included')return `Digitaldienst: ${model.runningCostLabel}. Kosten nach dem enthaltenen Zeitraum prüfen.`;
+ if(model.requiresPayment||model.requiredForCoreFunction===true)return `${gpsRequired===true?'Für die Ortungsfunktion ist ein kostenpflichtiger Dienst erforderlich':'Kostenpflichtiger Dienst erforderlich'}${price?`: ${price}`:'. Aktuellen Tarif prüfen'}.`;
+ return 'Mögliche digitale Zusatzkosten vor dem Kauf prüfen.';
 }

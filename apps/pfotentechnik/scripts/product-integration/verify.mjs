@@ -8,6 +8,7 @@ import { readProductDocument } from '../../src/lib/price-intelligence/frontmatte
 import { resolveCommerceOffers } from '../../src/domain/commerceOffers.mjs';
 import { isPublishedProduct } from '../../src/domain/productPublication.mjs';
 import { approvedIndexationChanges } from '../indexation/approved-changes.mjs';
+import {protectedSnapshotAt} from './protected-snapshots.mjs';
 import { approvedFreshnessChanges } from '../product-freshness/approved-changes.mjs';
 const app=fileURLToPath(new URL('../../',import.meta.url));
 export const walk=function*(node){yield node;if(['script','style'].includes(node.tagName))return;for(const child of node.childNodes??[])yield*walk(child)};
@@ -20,7 +21,9 @@ export async function verifyIntegration(dist=path.join(app,'dist')){
  const freshness=approvedFreshnessChanges(),indexation=approvedIndexationChanges();
  let unchangedSources=0;for(const [file,hash] of Object.entries(baseline.sources)){if(allowed.has(file))continue;const approved=indexation.get(file)??freshness.get(file);if(approved){assert.equal(approved.beforeSha256,hash,`${file}: Einzelausnahme muss am bisherigen Ausgangsstand ansetzen`);continue}assert.equal(createHash('sha256').update(fs.readFileSync(path.join(app,file))).digest('hex'),hash,`${file}: unbeabsichtigte Inhaltsänderung`);unchangedSources++}
  const incoming={},snapshots={},htmlByRoute=new Map();
- function visit(dir){for(const item of fs.readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,item.name);if(item.isDirectory()){visit(file);continue}if(item.name!=='index.html')continue;const route='/'+path.relative(dist,path.dirname(file)).split(path.sep).filter(Boolean).join('/')+'/';if(route.startsWith('/admin/'))continue;const dom=parse(fs.readFileSync(file,'utf8')),nodes=[...walk(dom)];htmlByRoute.set(route,{dom,nodes});const links=nodes.filter(n=>n.tagName==='a').map(n=>attr(n,'href')).filter(Boolean);for(const target of links)if(baseline.routes.includes(target)){const key=route+' -> '+target;incoming[key]=(incoming[key]??0)+1}if(baseline.routes.includes(route))snapshots[route]={text:text(dom),links};}}
+ const snapshotAt=manifest.asOf+'T12:00:00.000Z';
+ const protectedProducts=new Map();for(const route of baseline.routes)if(route.startsWith('/produkt/')){const slug=route.split('/')[2];protectedProducts.set(route,(await readProductDocument(path.join(app,'src/content/products',slug+'.md'))).data)}
+ function visit(dir){for(const item of fs.readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,item.name);if(item.isDirectory()){visit(file);continue}if(item.name!=='index.html')continue;const route='/'+path.relative(dist,path.dirname(file)).split(path.sep).filter(Boolean).join('/')+'/';if(route.startsWith('/admin/'))continue;const dom=parse(fs.readFileSync(file,'utf8')),nodes=[...walk(dom)];htmlByRoute.set(route,{dom,nodes});const links=nodes.filter(n=>n.tagName==='a').map(n=>attr(n,'href')).filter(Boolean);for(const target of links)if(baseline.routes.includes(target)){const key=route+' -> '+target;incoming[key]=(incoming[key]??0)+1}if(baseline.routes.includes(route))snapshots[route]=protectedSnapshotAt(dom,{data:protectedProducts.get(route),snapshotAt,renderedAt:fs.statSync(file).mtime});}}
  visit(dist);
  for(const route of baseline.routes)assert.deepEqual(snapshots[route],baseline.snapshots[route],`${route}: Experiment-/Kontrollseite verändert`);
  assert.deepEqual(incoming,baseline.incomingLinks,'Linkzugänge des Experiments 35.5 verändert');

@@ -242,9 +242,11 @@
     "report:indexation": "node scripts/indexation/report.mjs",
     "check:indexation": "node scripts/indexation/verify.mjs",
     "test:indexation": "node --test test/indexation-improvements-36.1.test.mjs",
-    "test:gift-guide": "node --test test/gift-guide-37.0.test.mjs test/gift-guide-37.1.test.mjs",
-    "check:gift-guide": "node scripts/gift-guide/verify-37.1.mjs",
-    "qa:gift-guide": "node scripts/gift-guide/visual-37.1.mjs"
+    "test:gift-guide": "node --test test/gift-guide-37.0.test.mjs test/gift-guide-37.1.test.mjs test/gift-finder-37.3.test.mjs",
+    "check:gift-guide": "node scripts/gift-guide/verify-37.3.mjs",
+    "test:release-gate": "node --test test/release-gate-37.4.test.mjs",
+    "check:release-gate": "node scripts/release-gate/check-37.4.mjs",
+    "qa:gift-guide": "node scripts/gift-guide/visual-37.3.mjs"
   },
   "dependencies": {
     "@affiliate-core/core": "*",

@@ -185,7 +185,18 @@ test("alle aktiven GPS- und Haustierkamera-Produkte besitzen strukturierten Rese
     const match = source.match(/^---\s*\r?\n([\s\S]*?)\r?\n---/);
     return match ? yaml.load(match[1], { schema: yaml.JSON_SCHEMA }) : null;
   }).filter((data) => data?.productStatus === "active" && ["gps-tracker", "haustierkameras"].includes(data?.category?.key));
-  assert.equal(scoped.length, 20);
-  assert.equal(scoped.filter((data) => data.subscription?.status).length, 20);
-  assert.equal(scoped.filter((data) => data.subscription?.source && data.subscription?.researchedAt).length, 20);
+  assert.ok(scoped.length > 0, "Research-Prüfung darf nicht leer laufen");
+  assert.equal(new Set(scoped.map(data=>data.slug)).size,scoped.length,"Keine doppelten Modelle im Prüfumfang");
+  const statuses=new Set(["required-subscription","required-prepaid","optional-subscription","no-subscription","service-included","unknown"]);
+  for(const data of scoped){
+    const subscription=data.subscription;
+    assert.ok(subscription,`${data.slug}: strukturierter Tarifstatus fehlt`);
+    assert.ok(statuses.has(subscription.status),`${data.slug}: ungültiger Tarifstatus`);
+    assert.equal(new URL(subscription.source).protocol,"https:",`${data.slug}: nachvollziehbare HTTPS-Quelle erforderlich`);
+    assert.ok(Number.isFinite(Date.parse(subscription.researchedAt)),`${data.slug}: gültiges Research-Datum erforderlich`);
+    const cost=buildSubscriptionCostModel({subscription,devicePrice:data.price?.current,now:NOW});
+    assert.equal(cost.status,subscription.status,`${data.slug}: Tarifmodell vollständig verarbeitbar`);
+    if(["required-subscription","required-prepaid"].includes(subscription.status))assert.equal(subscription.requiredForCoreFunction,true,`${data.slug}: Pflichtdienst widerspruchsfrei`);
+    if(subscription.status==="no-subscription")assert.equal(subscription.requiredForCoreFunction,false,`${data.slug}: kein Pflichtdienst widerspruchsfrei`);
+  }
 });

@@ -1,0 +1,109 @@
+[
+  {
+    "scenario": {
+      "name": "GPS ohne numerische Eingabe",
+      "animal": "cat",
+      "goal": "outdoors",
+      "budget": "150",
+      "food": "unknown",
+      "weight": null,
+      "subscription": "any"
+    },
+    "before": {
+      "matches": [],
+      "possible": [
+        "weenect-xs",
+        "tractive-cat-6-mini",
+        "paj-pet-finder-4g-mini"
+      ]
+    },
+    "after": {
+      "matches": [
+        {
+          "slug": "weenect-xs",
+          "cautions": [
+            "Lieferbarkeit derzeit nicht bestätigt."
+          ]
+        },
+        {
+          "slug": "tractive-cat-6-mini",
+          "cautions": [
+            "Lieferbarkeit derzeit nicht bestätigt."
+          ]
+        },
+        {
+          "slug": "paj-pet-finder-4g-mini",
+          "cautions": [
+            "Lieferbarkeit derzeit nicht bestätigt."
+          ]
+        }
+      ],
+      "closest": false
+    }
+  },
+  {
+    "scenario": {
+      "name": "Fehlende Bestätigung trotz fachlich passender Modelle",
+      "animal": "dog",
+      "goal": "feeding",
+      "budget": "150",
+      "food": "unknown",
+      "weight": null,
+      "subscription": "any"
+    },
+    "before": {
+      "matches": [],
+      "possible": [
+        "petlibro-air-wifi-feeder",
+        "petlibro-air-automatic-feeder",
+        "petkit-yumshare-dual-hopper",
+        "xiaomi-smart-pet-food-feeder-2",
+        "petlibro-granary-dual-feeder",
+        "surefeed-microchip-pet-feeder",
+        "petlibro-space-smart-feeder",
+        "petkit-yumshare-solo-2",
+        "petlibro-granary-wifi-feeder",
+        "petkit-fresh-element-solo",
+        "imipaw-3l-automatic-cat-feeder",
+        "surefeed-microchip-pet-feeder-connect",
+        "cat-mate-c300"
+      ]
+    },
+    "after": {
+      "matches": [
+        {
+          "slug": "petlibro-air-automatic-feeder",
+          "cautions": [
+            "Vor dem Kauf die passende Futterart prüfen."
+          ]
+        },
+        {
+          "slug": "petkit-yumshare-dual-hopper",
+          "cautions": [
+            "Vor dem Kauf die passende Futterart prüfen.",
+            "Lieferbarkeit derzeit nicht bestätigt."
+          ]
+        },
+        {
+          "slug": "xiaomi-smart-pet-food-feeder-2",
+          "cautions": [
+            "Vor dem Kauf die passende Futterart prüfen.",
+            "Lieferbarkeit derzeit nicht bestätigt."
+          ]
+        }
+      ],
+      "closest": true
+    }
+  },
+  {
+    "name": "Optionaler Jahresdienst im dominanten Gesamtbetrag",
+    "slug": "petlibro-scout-smart-camera",
+    "device": "109,99 €",
+    "service": "129,99 € / Jahr",
+    "beforeTotal": {
+      "value": 239.98000000000002,
+      "label": "239,98 €"
+    },
+    "after": "Nur Gerätepreis primär; 129,99 € pro Jahr ausdrücklich optional und nachgeordnet; kein Gesamtbetrag."
+  }
+]

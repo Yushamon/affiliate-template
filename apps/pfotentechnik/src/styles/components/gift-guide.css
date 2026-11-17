@@ -110,3 +110,21 @@ main.gift-page{max-width:1440px;padding-inline:clamp(16px,3vw,40px);padding-bloc
 .gift-card:not(.gift-card--lead) .gift-card__body>.gift-button{grid-column:2;align-self:center;padding-inline:16px;font-size:12px}
 .gift-card:not(.gift-card--lead) .gift-card__price strong{font-size:23px}
 @media(max-width:760px){.gift-card:not(.gift-card--lead) .gift-card__body>.gift-button{padding-inline:12px;gap:8px}.gift-card:not(.gift-card--lead) .gift-card__price strong{font-size:22px}}
+
+/* 37.3: purchase price leads; uncertainty stays a short, quiet qualification. */
+.gift-weight-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-block:12px}
+.gift-weight-options .gift-choice{display:grid;gap:4px;padding:14px 8px;text-align:center;min-height:66px}
+.gift-weight-options small{font-size:11px}.gift-context [data-weight-animal]{margin-top:18px;min-width:0}
+.gift-context [data-weight-animal] legend{font-size:15px}.gift-exact-weight summary{cursor:pointer;font-size:12px;padding-block:12px;min-height:44px}
+.gift-card__verification{background:none;border:0;padding:0;color:var(--gift-muted);font-size:12px;line-height:1.6}
+.gift-card:not(.gift-card--lead) .gift-card__service{display:block;grid-column:1/-1}
+.gift-card__details-service,.gift-card:not(.gift-card--lead) .gift-card__details-service{display:none}
+.gift-card:not(.gift-card--lead):not(.gift-card--possible) .gift-card__fit{display:block}
+.gift-card--lead .gift-card__body{gap:16px;padding:26px}.gift-card--lead h3{font-size:30px}
+.gift-results__grid{align-items:start}.gift-card--lead{grid-row:auto}
+.gift-cost-device{display:grid;gap:5px;padding-block:22px}.gift-cost-device span{font-size:12px;color:var(--gift-muted)}.gift-cost-device strong{font-size:32px;letter-spacing:-.03em}
+@media(max-width:760px){.gift-card--lead .gift-card__body{gap:14px;padding:22px}.gift-card__decision{gap:14px}.gift-weight-options .gift-choice{padding:12px 5px}.gift-weight-options small{font-size:10px}}
+
+@media(min-width:1051px){.gift-results__grid{grid-template-columns:1.15fr 1fr 1fr}}
+
+.gift-card__details-service:not([hidden]),.gift-card:not(.gift-card--lead) .gift-card__details-service:not([hidden]){display:block}
