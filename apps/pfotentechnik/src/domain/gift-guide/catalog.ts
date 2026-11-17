@@ -1,3 +1,4 @@
+import {giftPricePresentation} from './presentation.ts';
 import {mapProductToAdvisor} from '../advisor/mapProduct.ts';
 import {assessProductReview} from '../productReview.ts';
 import {calculateProductScore} from '../productScore.ts';
@@ -42,6 +43,8 @@ export function buildGiftCatalog(entries:any[],{now=Date.now()}={}){
   const offers=resolveCommerceOffers(d,{}, {now}).filter((o:any)=>o.canLink&&!['out-of-stock','temporarily-unavailable','discontinued'].includes(o.availability)&&o.currency==='EUR');
   const offer=selectCommercePrice(d,{now,offers})?.offer??offers.find((o:any)=>o.fresh&&o.current>0&&o.availability==='available')??offers.find((o:any)=>o.fresh&&o.current>0)??offers[0];
   if(!offer){omitted.push({slug,reason:'no-verified-eur-destination'});continue}
+  const selected=selectCommercePrice(d,{now,offers});
+  const presentation=giftPricePresentation(selected,{now});
   const score=calculateProductScore(d);
   // Existing comparison fallback also requires >=60 editorial points. This is
   // an eligibility boundary, never a new gift score or a changed product rating.
@@ -53,16 +56,16 @@ export function buildGiftCatalog(entries:any[],{now=Date.now()}={}){
   if(animals.status!=='known'||!animals.value.length){omitted.push({slug,reason:'animal-unknown'});continue}
   advisor.score=score.score??undefined;
   const food=advisor.common.foodTypes.status==='known'?advisor.common.foodTypes:known(documentedFoodType(resolveComparisonValue({product:entry,item:{slug},criterion:{key:'futterart',label:'Futterart',fallback:''}})));
-  advisor.decisionFacts={animal:animals,giftPrice:known(offer.current),giftAvailable:known(operations.availability==='available'?true:null),giftFood:food,
+  advisor.decisionFacts={animal:animals,giftPrice:known(presentation.price),giftAvailable:known(operations.availability==='available'?true:null),giftFood:food,
    minimumWeight:known(d.gps?.minimumPetWeightKg),subscription:known(typeof d.subscription?.requiredForCoreFunction==='boolean'?d.subscription.requiredForCoreFunction:d.gps?.subscriptionRequired)};
-  const subscription=buildSubscriptionCostModel({subscription:d.subscription,devicePrice:offer.current,now:new Date(now)});
+  const subscription=buildSubscriptionCostModel({subscription:d.subscription,devicePrice:presentation.price,now:new Date(now)});
   advisor.decisionCautions=[];
   const technical=buildDecisionFacts(d,d.specs??[]).slice(0,6);
   const comparison=Object.fromEntries(giftComparisonRows.map(row=>[row.key,resolveComparisonValue({product:entry,item:{slug},criterion:{...row,fallback:'Nicht dokumentiert'}})]));
-  records.push({slug,title:d.title,category,categoryLabel:d.category.label,route:`/produkt/${slug}/`,price:offer.current,priceLabel:offer.formattedPrice??'Aktuellen Preis prüfen',availabilityConfirmed:operations.availability==='available',
+  records.push({slug,title:d.title,category,categoryLabel:d.category.label,route:`/produkt/${slug}/`,...presentation,availabilityConfirmed:operations.availability==='available',
    checkedAt:offer.price?.checkedAt??d.priceUpdated??null,availabilityUpdated:offer.availabilityUpdated??d.availabilityUpdated??null,merchant:offer.label,offerHref:offer.affiliateUrl,offerRel:offer.rel,
    maximumWeight:Number(d.gps?.maximumPetWeightKg)||Number((d.specs??[]).find((s:any)=>/geeignet|herstellerempfehlung/i.test(s.label)&&/\d+(?:[.,]\d+)?\s*(?:bis|–|-)\s*(\d+(?:[.,]\d+)?)\s*kg/i.test(s.value))?.value.match(/\d+(?:[.,]\d+)?\s*(?:bis|–|-)\s*(\d+(?:[.,]\d+)?)\s*kg/i)?.[1]?.replace(',','.'))||null,
-   score:score.score,scoreSource:score.source,reviewLabel:review.label,reviewBasis:review.basis,animals:animals.value,advisor,technical,comparison,
+   score:score.score,scoreSource:score.source,reviewLabel:'Redaktionelle Bewertung',reviewBasis:review.handsOn?'Eigener Praxistest.':'Bewertung anhand veröffentlichter Quellen; kein eigener Praxistest.',animals:animals.value,advisor,technical,comparison,
    giftServiceLabel:giftServiceCopy(subscription,d.gps?.subscriptionRequired),subscriptionLabel:subscription?.runningCostLabel??'Digitale Folgekosten nicht abschließend dokumentiert',tco12:subscription?.totals?.months12??null,
    recommendation:d.recommendation,strengths:(d.strengths??[]).slice(0,2),weaknesses:(d.weaknesses??[]).slice(0,2),
    media:resolveProductMedia(d.images),testStatus:d.testStatus});

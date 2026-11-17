@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-17T12:50:53.001Z",
+  "at": "2026-11-17T14:41:16.149Z",
   "readOnly": true,
   "priceFilesWritten": 0,
   "results": [
@@ -18,7 +18,7 @@
           "current": 115.99,
           "currency": "EUR",
           "status": "unknown",
-          "checkedAt": "2026-11-17T12:50:51.958Z",
+          "checkedAt": "2026-11-17T14:41:12.661Z",
           "source": {
             "id": "petlibro-official",
             "label": "PETLIBRO",
@@ -48,8 +48,8 @@
         "variantId": "52389571494254",
         "expectedSku": "PL-WF116-31W",
         "variantLabel": "Weiß / Schnurlos",
-        "lastAttemptAt": "2026-11-17T12:50:51.958Z",
-        "availabilityUpdated": "2026-11-17T12:50:51.958Z"
+        "lastAttemptAt": "2026-11-17T14:41:12.661Z",
+        "availabilityUpdated": "2026-11-17T14:41:12.661Z"
       }
     },
     {
@@ -59,7 +59,7 @@
       "error": "Offizielle Produkt-URL unresolved."
     },
     {
-      "name": "Amazon bestehendes Produktziel",
+      "name": "Bestehendes Händlerziel (MediaMarkt, trotz altem Provider-Label amazon)",
       "slug": "petlibro-air-automatic-feeder",
       "ok": true,
       "result": {
@@ -69,6 +69,12 @@
         "availability": "https://schema.org/InStock",
         "pageUrl": "https://www.mediamarkt.de/de/product/_petlibro-pl-af008-91b-air-autompet-feed-black-2l-2989266.html?storeId=130"
       }
+    },
+    {
+      "name": "Amazon exaktes Produktziel",
+      "slug": "invoxia-biotracker-2026",
+      "ok": false,
+      "error": "Keine belastbare exakte Amazon-Preis-/Bestellangabe gefunden."
     }
   ]
 }

@@ -1,7 +1,7 @@
 // Presentation transport only. The shared advisor consumes these exact fields;
 // marketing copy/common/spec objects are already represented in the card data.
 export function giftTransport(products:any[]){
- return products.map(({image:unusedImage,...p})=>({...p,advisor:{slug:p.advisor.slug,category:p.advisor.category,score:p.advisor.score,recommendationStatus:p.advisor.recommendationStatus,decisionFacts:p.advisor.decisionFacts,decisionCautions:p.advisor.decisionCautions}}));
+ return products.map(({reviewLabel,reviewBasis,priceSourceLabel,priceState,historicalPrice,...p})=>({...p,handsOn:reviewBasis==='Eigener Praxistest.',advisor:{slug:p.advisor.slug,category:p.advisor.category,score:p.advisor.score,recommendationStatus:p.advisor.recommendationStatus,decisionFacts:p.advisor.decisionFacts,decisionCautions:p.advisor.decisionCautions}}));
 }
 
 // Prefer an existing wording that distinguishes the visible alternatives.

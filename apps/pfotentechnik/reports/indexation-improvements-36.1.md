@@ -1,6 +1,6 @@
 # Indexierungsoptimierung und Seitenstruktur 36.1
 
-Stand: 16.11.2026. 269 selbstkanonische öffentliche HTML-Seiten geprüft; 268 indexierbare Sitemap-URLs. Die absichtlich nicht indexierbare Foundation-Vorschau ist separat enthalten. Adminseiten sind aus der öffentlichen Analyse ausgeschlossen.
+Stand: 16.11.2026. 270 selbstkanonische öffentliche HTML-Seiten geprüft; 269 indexierbare Sitemap-URLs. Die absichtlich nicht indexierbare Foundation-Vorschau ist separat enthalten. Adminseiten sind aus der öffentlichen Analyse ausgeschlossen.
 
 ## Datenstand und Grenzen
 
@@ -16,11 +16,11 @@ Statischer Hauptinhalt steht bei allen Canonicals unmittelbar im HTML; interakti
 
 ## Vorher und nachher
 
-- Kontextuelle Linkkanten: 1306 → 1318.
+- Kontextuelle Linkkanten: 1306 → 1326.
 - Herstellerprofile ohne Kontextquelle: 2 → 0.
 - Produkte ohne eine einzige Kontextquelle: 1 → 0.
 - Produkte ohne Kontext aus einer am 02.11. historisch indexierten Seite: 61 → 56. Der heutige Google-Status dieser Quellen ist ungeprüft.
-- 6 Ratgeber gezielt bearbeitet, 12 Kontextlinks ausdrücklich ergänzt; 12 zusätzliche Kontextkanten tatsächlich im Build nachgewiesen.
+- 6 Ratgeber gezielt bearbeitet, 12 Kontextlinks ausdrücklich ergänzt; 21 zusätzliche Kontextkanten tatsächlich im Build nachgewiesen.
 - Keine neuen öffentlichen Seiten, keine Produktdateien verändert, alle 437 Originalhinweise und Scores/Preise/Affiliate-Ziele erhalten.
 
 ## Tatsächlich umgesetzte Korrekturen
@@ -79,7 +79,7 @@ Belege im Bestand: src/content/products/philips-pet-series-paw3210-02.md: specs.
 
 - advisor: 1 Seiten; 0 ohne Kontextquelle; 0 Seiten mit technischem Befund.
 - comparison: 28 Seiten; 5 ohne Kontextquelle; 0 Seiten mit technischem Befund.
-- guide: 84 Seiten; 12 ohne Kontextquelle; 0 Seiten mit technischem Befund.
+- guide: 85 Seiten; 13 ohne Kontextquelle; 1 Seiten mit technischem Befund.
 - homepage: 1 Seiten; 1 ohne Kontextquelle; 0 Seiten mit technischem Befund.
 - manufacturer: 37 Seiten; 0 ohne Kontextquelle; 0 Seiten mit technischem Befund.
 - product: 108 Seiten; 0 ohne Kontextquelle; 0 Seiten mit technischem Befund.
@@ -88,7 +88,7 @@ Belege im Bestand: src/content/products/philips-pet-series-paw3210-02.md: specs.
 - Historisch gecrawlt, nicht indexiert (02.11., falls bekannt): 91 Seiten; 8 ohne Kontextquelle.
 - Historisch gefunden, nicht indexiert (02.11., falls bekannt): 78 Seiten; 3 ohne Kontextquelle.
 - Historisch indexiert (02.11., falls bekannt): 90 Seiten; 9 ohne Kontextquelle.
-- Kein exakter Statusbeleg (02.11., falls bekannt): 10 Seiten; 1 ohne Kontextquelle.
+- Kein exakter Statusbeleg (02.11., falls bekannt): 11 Seiten; 2 ohne Kontextquelle.
 
 ## Eigenständiger Seitenwert und Überschneidungen
 
@@ -97,13 +97,14 @@ Jede URL ist in der JSON-Fassung mit konkreter Nutzerfrage, Überschriften, spez
 Die Varianten DOG 6 und DOG 6 XL haben die höchste gemessene Paarähnlichkeit, aber unterschiedliche Gewichts-, Tiergrößen- und Akkugrenzen. Diese Unterschiede werden jetzt aus dem Befestigungsratgeber erreichbar. Bei neuen Einprodukt-Herstellerprofilen überschneiden sich Anbieter- und Produktinformationen; eine größere Neupositionierung bleibt eine Freigabeentscheidung.
 
 - /produkt/tractive-dog-6-xl/ ↔ /produkt/tractive-dog-6/: TF-IDF-Kosinus 0.662. Getrennte Produktabsicht anhand Spezifikationen prüfen; dokumentierte Größen-, Tier- und Funktionsunterschiede sprechen gegen eine automatische Zusammenlegung.
-- /hersteller/satellai/ ↔ /produkt/satellai-collar-go/: TF-IDF-Kosinus 0.561. Hersteller-/Produktrolle redaktionell abgrenzen. Eigenständige Vertrags-, Support- und Kompatibilitätsinformationen prüfen, bevor eine Konsolidierung erwogen wird.
+- /hersteller/satellai/ ↔ /produkt/satellai-collar-go/: TF-IDF-Kosinus 0.563. Hersteller-/Produktrolle redaktionell abgrenzen. Eigenständige Vertrags-, Support- und Kompatibilitätsinformationen prüfen, bevor eine Konsolidierung erwogen wird.
 - /hersteller/mova/ ↔ /produkt/mova-suretrack-pro/: TF-IDF-Kosinus 0.548. Hersteller-/Produktrolle redaktionell abgrenzen. Eigenständige Vertrags-, Support- und Kompatibilitätsinformationen prüfen, bevor eine Konsolidierung erwogen wird.
 - /hersteller/brook/ ↔ /produkt/brook-glass-pet-fountain/: TF-IDF-Kosinus 0.542. Hersteller-/Produktrolle redaktionell abgrenzen. Eigenständige Vertrags-, Support- und Kompatibilitätsinformationen prüfen, bevor eine Konsolidierung erwogen wird.
-- /hersteller/prothelis/ ↔ /produkt/prothelis-area-pets/: TF-IDF-Kosinus 0.536. Hersteller-/Produktrolle redaktionell abgrenzen. Eigenständige Vertrags-, Support- und Kompatibilitätsinformationen prüfen, bevor eine Konsolidierung erwogen wird.
+- /hersteller/prothelis/ ↔ /produkt/prothelis-area-pets/: TF-IDF-Kosinus 0.535. Hersteller-/Produktrolle redaktionell abgrenzen. Eigenständige Vertrags-, Support- und Kompatibilitätsinformationen prüfen, bevor eine Konsolidierung erwogen wird.
 - /produkt/sureflap-dualscan-mikrochip-katzenklappe/ ↔ /produkt/sureflap-mikrochip-katzenklappe/: TF-IDF-Kosinus 0.535. Getrennte Produktabsicht anhand Spezifikationen prüfen; dokumentierte Größen-, Tier- und Funktionsunterschiede sprechen gegen eine automatische Zusammenlegung.
 - /hersteller/mova/ ↔ /hersteller/satellai/: TF-IDF-Kosinus 0.525. Hersteller-/Produktrolle redaktionell abgrenzen. Eigenständige Vertrags-, Support- und Kompatibilitätsinformationen prüfen, bevor eine Konsolidierung erwogen wird.
 - /hund-frisst-nicht/ ↔ /katze-frisst-nicht/: TF-IDF-Kosinus 0.522. Nutzerfrage und Tierart im Volltext gegeneinander prüfen; Textähnlichkeit allein rechtfertigt weder Zusammenlegung noch Noindex.
+- /hersteller/reolink/ ↔ /produkt/reolink-e1-zoom/: TF-IDF-Kosinus 0.5. Hersteller-/Produktrolle redaktionell abgrenzen. Eigenständige Vertrags-, Support- und Kompatibilitätsinformationen prüfen, bevor eine Konsolidierung erwogen wird.
 
 **Keine automatische Konsolidierung empfohlen oder ausgeführt.** Alle Paare sind Prüf-, keine Löschkandidaten. Keine Canonicals zusammengelegt, keine Noindex-Anweisung oder Redirect-Regel gesetzt.
 
@@ -111,7 +112,7 @@ Die Varianten DOG 6 und DOG 6 XL haben die höchste gemessene Paarähnlichkeit, 
 
 Zehn Test- und zehn Kontrollseiten bleiben geschützt. Vorher-HTML aller 20 Seiten ist im unveränderlichen Baselinearchiv gesichert; Inhalt und eingehende Linkkanten werden gegen diese und die bestehende 35.8-Prüfung validiert. Die enge Inhaltsausnahme für 36.1 erlaubt ausschließlich die sechs manifestierten Ratgeberdateien mit exakten Vorher-/Nachher-Hashes; sie lockert keine Experimentprüfung.
 
-Abschlussprüfung: 20/20 HTML-Dateien nach ausschließlich SHA-belegter Bildalias-Normalisierung identisch (8 unverändert bis auf das letzte Byte); 205 eingehende Linkzugänge unverändert. 220 Tests bestanden; Build 390 Seiten. Vier Fullpage-Screenshots: 375/1600 Pixel, Light/Dark. Diff geprüft.
+Abschlussprüfung: 20/20 HTML-Dateien nach SHA-belegter Bildalias-Normalisierung und der freigegebenen, kanonisch validierten Commerce-Preisprojektion identisch (8 unverändert bis auf das letzte Byte); 205 eingehende Linkzugänge unverändert. 220 Tests bestanden; Build 390 Seiten. Vier Fullpage-Screenshots: 375/1600 Pixel, Light/Dark. Diff geprüft.
 
 ## Bestehendes SEO Cockpit
 
@@ -121,7 +122,7 @@ Die Indexierungsansicht ist im vorhandenen Search Cockpit integriert. Sie zeigt 
 
 ## Zehn wichtigste verbleibende Maßnahmen
 
-1. **Aktuellen Indexierungsstand autorisiert erheben** — Lokaler API-Zugang fehlt. Letzte exakte Coverage-Belege sind vom 02.11.; Google-selected Canonical und aktuelle Crawlzeit fehlen. OAuth/Property autorisieren und tatsächliches URL-Inspection-Kontingent nachweisen; dann priorisierte Stichprobe, keine pauschale API-Verfügbarkeit behaupten. Erwarteter Nutzen: Aktuelle Priorisierung statt Arbeit an möglicherweise überholten Zuständen. URLs: https://pfotentechnik.de/foundation/, https://pfotentechnik.de/hersteller/brook/, https://pfotentechnik.de/hersteller/mova/, https://pfotentechnik.de/hersteller/philips/, https://pfotentechnik.de/hersteller/satellai/, https://pfotentechnik.de/produkt/brook-glass-pet-fountain/, https://pfotentechnik.de/produkt/catit-pixi-standard-trinkbrunnen/, https://pfotentechnik.de/produkt/mova-suretrack-pro/, https://pfotentechnik.de/produkt/philips-pet-series-paw3210-02/, https://pfotentechnik.de/produkt/satellai-collar-go/
+1. **Aktuellen Indexierungsstand autorisiert erheben** — Lokaler API-Zugang fehlt. Letzte exakte Coverage-Belege sind vom 02.11.; Google-selected Canonical und aktuelle Crawlzeit fehlen. OAuth/Property autorisieren und tatsächliches URL-Inspection-Kontingent nachweisen; dann priorisierte Stichprobe, keine pauschale API-Verfügbarkeit behaupten. Erwarteter Nutzen: Aktuelle Priorisierung statt Arbeit an möglicherweise überholten Zuständen. URLs: https://pfotentechnik.de/foundation/, https://pfotentechnik.de/hersteller/brook/, https://pfotentechnik.de/hersteller/mova/, https://pfotentechnik.de/hersteller/philips/, https://pfotentechnik.de/hersteller/satellai/, https://pfotentechnik.de/produkt/brook-glass-pet-fountain/, https://pfotentechnik.de/produkt/catit-pixi-standard-trinkbrunnen/, https://pfotentechnik.de/produkt/mova-suretrack-pro/, https://pfotentechnik.de/produkt/philips-pet-series-paw3210-02/, https://pfotentechnik.de/produkt/satellai-collar-go/, https://pfotentechnik.de/ratgeber/technikgeschenke-haustiere/
 
 2. **HTTP-www-Weiterleitung im Hosting auf einen Schritt verkürzen** — Live beobachtet: http://www → https://www → https ohne www, zwei 301-Schritte. Kanonische URLs sind nicht betroffen. Nur als Hostingempfehlung dokumentiert; keine Deployment- oder Redirect-Änderung ausgeführt. Erwarteter Nutzen: Ein Request weniger bei diesem nichtkanonischen Einstieg. URLs: http://www.pfotentechnik.de/
 
@@ -150,7 +151,7 @@ Die Indexierungsansicht ist im vorhandenen Search Cockpit integriert. Sie zeigt 
 
 ## Vollständiger URL-Nachweis und Reproduktion
 
-Die [JSON-Fassung](indexation-improvements-36.1.json) enthält alle 269 Canonicals und ihre Einzelbefunde. Original-HTTP-Belege, GSC-Zugangsprüfung, Änderungen und Baseline liegen in research/indexation-improvements-36.1.
+Die [JSON-Fassung](indexation-improvements-36.1.json) enthält alle 270 Canonicals und ihre Einzelbefunde. Original-HTTP-Belege, GSC-Zugangsprüfung, Änderungen und Baseline liegen in research/indexation-improvements-36.1.
 
 ```sh
 node apps/pfotentechnik/scripts/indexation/apply.mjs

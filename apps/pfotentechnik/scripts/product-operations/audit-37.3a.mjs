@@ -41,7 +41,7 @@ const rows=sources.map(({data:d,file,sha256})=>{
   priceResearch:researchRecord?{checkedAt:researchRecord.checkedAt??null,observedPrice:researchRecord.offer?.current??null,currency:researchRecord.offer?.currency??null,resolvedUrl:researchRecord.resolvedUrl??null,classification:researchRecord.classification,error:researchRecord.error??researchRecord.reason??null,persistedByResearch:false,evidenceFile:researchFile}:null,
   latestEditorialResearch:d.editorial?.lastVerifiedAt??d.updatedAt??null,priceChangedAt:d.price?.changedAt??null,
   source:d.price?.source??null,affiliateTarget:d.affiliate?.url??d.price?.affiliateUrl??null,
-  priceAgeDays:p.priceAgeDays,lastDocumentedAttemptAt:attempts.map(o=>o.lastAttemptAt).filter(Boolean).sort().at(-1)??null,
+  priceAgeDays:p.priceAgeDays,lastDocumentedAttemptAt:[effective.lastCommerceAttemptAt,...attempts.map(o=>o.lastAttemptAt)].filter(Boolean).sort().at(-1)??null,lastCommerceAttemptStatus:effective.lastCommerceAttemptStatus??null,lastCommerceAttemptMessage:effective.lastCommerceAttemptMessage??null,automaticRefreshEligible:effective.automaticRefreshEligible,
   priceOver30Days:p.priceAgeDays>30,priceOver90Days:p.priceAgeDays>90,missingPriceAction:!p.priceAvailable&&!p.editorialPriceControl&&!p.consciouslyUnavailable&&!p.archived,
   priceCause,availability:p.availability,rawAvailability:d.availability??null,rawAvailabilityUpdated:d.availabilityUpdated??null,availabilityCause,archived:p.archived,consciouslyUnavailable:p.consciouslyUnavailable,
   isTask:p.isTask,maintenanceStatus:p.maintenanceStatus,automaticPriceCheckAllowed:d.priceAutomation!=='editorial'};

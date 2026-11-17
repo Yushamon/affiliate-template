@@ -3,8 +3,8 @@
   "asOf": "2026-11-16",
   "phase": "after-build",
   "scope": {
-    "canonicals": 269,
-    "indexableSitemapUrls": 268,
+    "canonicals": 270,
+    "indexableSitemapUrls": 269,
     "includesIntentionalNoindex": [
       "/foundation/"
     ],
@@ -140,18 +140,18 @@
     "limitation": "Kein lokaler autorisierter API-Zugang; keine URL-Inspection-Anfrage und kein Indexierungsantrag gesendet. Historische URL-Status und jüngerer Performance-Export werden strikt getrennt."
   },
   "summary": {
-    "canonicals": 269,
-    "sitemap": 268,
-    "contextualEdges": 1318,
+    "canonicals": 270,
+    "sitemap": 269,
+    "contextualEdges": 1326,
     "zeroContextManufacturers": 0,
     "zeroContextProducts": 0,
     "productsWithoutHistoricallyIndexedContext": 56,
     "unreachable": 1,
-    "technicalIssues": 1,
+    "technicalIssues": 2,
     "changedFiles": 6,
     "explicitContextLinks": 12,
-    "actuallyAddedContextLinks": 12,
-    "overlapCandidates": 8
+    "actuallyAddedContextLinks": 21,
+    "overlapCandidates": 9
   },
   "before": {
     "canonicals": 269,
@@ -164,14 +164,14 @@
     "technicalIssues": 1
   },
   "after": {
-    "canonicals": 269,
-    "sitemap": 268,
-    "contextualEdges": 1318,
+    "canonicals": 270,
+    "sitemap": 269,
+    "contextualEdges": 1326,
     "zeroContextManufacturers": 0,
     "zeroContextProducts": 0,
     "productsWithoutHistoricallyIndexedContext": 56,
     "unreachable": 1,
-    "technicalIssues": 1
+    "technicalIssues": 2
   },
   "byType": {
     "advisor": {
@@ -185,9 +185,9 @@
       "technicalIssues": 0
     },
     "guide": {
-      "pages": 84,
-      "zeroContext": 12,
-      "technicalIssues": 0
+      "pages": 85,
+      "zeroContext": 13,
+      "technicalIssues": 1
     },
     "homepage": {
       "pages": 1,
@@ -227,9 +227,9 @@
       "technicalIssues": 0
     },
     "unknown": {
-      "pages": 10,
-      "zeroContext": 1,
-      "technicalIssues": 0
+      "pages": 11,
+      "zeroContext": 2,
+      "technicalIssues": 1
     }
   },
   "byCluster": {
@@ -242,6 +242,11 @@
       "pages": 52,
       "zeroContext": 0,
       "technicalIssues": 0
+    },
+    "geschenke": {
+      "pages": 1,
+      "zeroContext": 1,
+      "technicalIssues": 1
     },
     "gps-tracker": {
       "pages": 33,
@@ -432,6 +437,60 @@
       "sourceHistoricallyIndexed": true
     },
     {
+      "source": "/ratgeber/technikgeschenke-haustiere/",
+      "target": "/ratgeber/technikgeschenke-haustiere/",
+      "anchor": "Kaufberatung vor dem Schenken",
+      "sourceHistoricallyIndexed": false
+    },
+    {
+      "source": "/ratgeber/technikgeschenke-haustiere/",
+      "target": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+      "anchor": "Vergleich für Mehrtierhaushalte",
+      "sourceHistoricallyIndexed": false
+    },
+    {
+      "source": "/ratgeber/technikgeschenke-haustiere/",
+      "target": "/trinkmenge-katze-messen/",
+      "anchor": "Ratgeber zur Trinkmengenmessung",
+      "sourceHistoricallyIndexed": false
+    },
+    {
+      "source": "/ratgeber/technikgeschenke-haustiere/",
+      "target": "/warum-brauchen-gps-tracker-ein-abo/",
+      "anchor": "warum viele Tracker einen Dienst benötigen",
+      "sourceHistoricallyIndexed": false
+    },
+    {
+      "source": "/ratgeber/technikgeschenke-haustiere/",
+      "target": "/vergleiche/beste-haustierkameras/",
+      "anchor": "Kameravergleich",
+      "sourceHistoricallyIndexed": false
+    },
+    {
+      "source": "/ratgeber/technikgeschenke-haustiere/",
+      "target": "/katzenklappen/",
+      "anchor": "Mikrochip-Katzenklappen",
+      "sourceHistoricallyIndexed": false
+    },
+    {
+      "source": "/ratgeber/technikgeschenke-haustiere/",
+      "target": "/automatische-katzentoiletten/",
+      "anchor": "automatische Katzentoiletten",
+      "sourceHistoricallyIndexed": false
+    },
+    {
+      "source": "/ratgeber/technikgeschenke-haustiere/",
+      "target": "/so-bewerten-wir/",
+      "anchor": "So bewerten wir",
+      "sourceHistoricallyIndexed": false
+    },
+    {
+      "source": "/ratgeber/technikgeschenke-haustiere/",
+      "target": "/affiliate-hinweis/",
+      "anchor": "Affiliate-Hinweis",
+      "sourceHistoricallyIndexed": false
+    },
+    {
       "source": "/reichweite-von-gps-trackern/",
       "target": "/produkt/mova-suretrack-pro/",
       "anchor": "MOVA SureTrack Pro",
@@ -469,6 +528,12 @@
     }
   ],
   "technicalProblems": [
+    {
+      "url": "https://pfotentechnik.de/ratgeber/technikgeschenke-haustiere/",
+      "issues": [
+        "HTTP_NOT_CHECKED"
+      ]
+    },
     {
       "url": "http://www.pfotentechnik.de/",
       "issues": [
@@ -525,7 +590,7 @@
     {
       "a": "/hersteller/satellai/",
       "b": "/produkt/satellai-collar-go/",
-      "similarity": 0.561,
+      "similarity": 0.563,
       "sameType": false,
       "sameCluster": true,
       "sharedBlocks": [
@@ -567,7 +632,7 @@
     {
       "a": "/hersteller/prothelis/",
       "b": "/produkt/prothelis-area-pets/",
-      "similarity": 0.536,
+      "similarity": 0.535,
       "sameType": false,
       "sameCluster": true,
       "sharedBlocks": [
@@ -617,6 +682,19 @@
       ],
       "automatic": false,
       "recommendation": "Nutzerfrage und Tierart im Volltext gegeneinander prüfen; Textähnlichkeit allein rechtfertigt weder Zusammenlegung noch Noindex."
+    },
+    {
+      "a": "/hersteller/reolink/",
+      "b": "/produkt/reolink-e1-zoom/",
+      "similarity": 0.5,
+      "sameType": false,
+      "sameCluster": true,
+      "sharedBlocks": [
+        "Für einen festen Innenbereich, wenn lokale Speicherung, Tiererkennung und optischer Zoom wichtiger sind als pet-spezifische Leckerli- oder Gesundheitsfunktionen.",
+        "Für einen festen Innenbereich, wenn lokale Speicherung, Tiererkennung und optischer Zoom wichtiger sind als pet-spezifische Leckerli- oder Gesundheitsfunktionen."
+      ],
+      "automatic": false,
+      "recommendation": "Hersteller-/Produktrolle redaktionell abgrenzen. Eigenständige Vertrags-, Support- und Kompatibilitätsinformationen prüfen, bevor eine Konsolidierung erwogen wird."
     }
   ],
   "duplicateVerdicts": [],
@@ -718,7 +796,9 @@
         "/hersteller/mova/",
         "/hersteller/satellai/",
         "/hund-frisst-nicht/",
-        "/katze-frisst-nicht/"
+        "/katze-frisst-nicht/",
+        "/hersteller/reolink/",
+        "/produkt/reolink-e1-zoom/"
       ],
       "reason": "Keine Löschung, Canonical-Zusammenlegung, Noindex-Änderung, neuen Redirects oder Variantenzusammenlegung ohne Freigabe; Ähnlichkeitsindikatoren sind kein Beweis gleicher Suchintention."
     }
@@ -737,7 +817,8 @@
         "https://pfotentechnik.de/produkt/catit-pixi-standard-trinkbrunnen/",
         "https://pfotentechnik.de/produkt/mova-suretrack-pro/",
         "https://pfotentechnik.de/produkt/philips-pet-series-paw3210-02/",
-        "https://pfotentechnik.de/produkt/satellai-collar-go/"
+        "https://pfotentechnik.de/produkt/satellai-collar-go/",
+        "https://pfotentechnik.de/ratgeber/technikgeschenke-haustiere/"
       ],
       "finding": "Lokaler API-Zugang fehlt. Letzte exakte Coverage-Belege sind vom 02.11.; Google-selected Canonical und aktuelle Crawlzeit fehlen.",
       "expectedBenefit": "Aktuelle Priorisierung statt Arbeit an möglicherweise überholten Zuständen.",
@@ -1294,6 +1375,7 @@
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/zeromouse-2-0/",
         "/pumpe-katzentrinkbrunnen-reinigen/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/reichweite-von-gps-trackern/",
         "/seniorenhunde-richtig-versorgen/",
@@ -1453,7 +1535,7 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 661,
+      "incomingEdges": 663,
       "contextualIncomingEdges": 0,
       "contextualOutgoing": [
         {
@@ -1756,6 +1838,7 @@
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/zeromouse-2-0/",
         "/pumpe-katzentrinkbrunnen-reinigen/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/reichweite-von-gps-trackern/",
         "/seniorenhunde-richtig-versorgen/",
@@ -1837,6 +1920,7 @@
         "/produkt/petlibro-one-rfid-smart-feeder/",
         "/produkt/petlibro-polar-wet-food-feeder/",
         "/produkt/petlibro-scout-smart-camera/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/so-bewerten-wir/"
       ],
@@ -1913,8 +1997,8 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 522,
-      "contextualIncomingEdges": 12,
+      "incomingEdges": 524,
+      "contextualIncomingEdges": 13,
       "contextualOutgoing": [
         {
           "target": "/so-bewerten-wir/",
@@ -2197,6 +2281,7 @@
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/zeromouse-2-0/",
         "/pumpe-katzentrinkbrunnen-reinigen/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/reichweite-von-gps-trackern/",
         "/seniorenhunde-richtig-versorgen/",
@@ -2273,6 +2358,7 @@
         "/produkt/devoko-90l-automatisches-katzenklo/",
         "/produkt/neakasa-m1-plus/",
         "/produkt/petkit-purobot-max-3/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/smarte-haustiertechnik/",
         "/vergleiche/beste-automatische-katzentoiletten/"
       ],
@@ -2377,8 +2463,8 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 866,
-      "contextualIncomingEdges": 10,
+      "incomingEdges": 870,
+      "contextualIncomingEdges": 11,
       "contextualOutgoing": [],
       "main": {
         "characters": 7885,
@@ -3296,6 +3382,7 @@
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/zeromouse-2-0/",
         "/pumpe-katzentrinkbrunnen-reinigen/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/reichweite-von-gps-trackern/",
         "/seniorenhunde-richtig-versorgen/",
@@ -3445,7 +3532,7 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 269,
+      "incomingEdges": 270,
       "contextualIncomingEdges": 0,
       "contextualOutgoing": [],
       "main": {
@@ -10962,6 +11049,7 @@
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/zeromouse-2-0/",
         "/pumpe-katzentrinkbrunnen-reinigen/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/reichweite-von-gps-trackern/",
         "/seniorenhunde-richtig-versorgen/",
@@ -11166,7 +11254,7 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 911,
+      "incomingEdges": 914,
       "contextualIncomingEdges": 14,
       "contextualOutgoing": [],
       "main": {
@@ -11432,6 +11520,7 @@
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/zeromouse-2-0/",
         "/pumpe-katzentrinkbrunnen-reinigen/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/reichweite-von-gps-trackern/",
         "/seniorenhunde-richtig-versorgen/",
@@ -11612,7 +11701,7 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 843,
+      "incomingEdges": 846,
       "contextualIncomingEdges": 7,
       "contextualOutgoing": [],
       "main": {
@@ -11883,6 +11972,7 @@
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/zeromouse-2-0/",
         "/pumpe-katzentrinkbrunnen-reinigen/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/reichweite-von-gps-trackern/",
         "/seniorenhunde-richtig-versorgen/",
@@ -12068,7 +12158,7 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 847,
+      "incomingEdges": 850,
       "contextualIncomingEdges": 1,
       "contextualOutgoing": [],
       "main": {
@@ -18399,7 +18489,7 @@
           {
             "a": "/hersteller/prothelis/",
             "b": "/produkt/prothelis-area-pets/",
-            "similarity": 0.536,
+            "similarity": 0.535,
             "sameType": false,
             "sameCluster": true,
             "sharedBlocks": [
@@ -18587,7 +18677,19 @@
           "Komplettklappe mit lokaler KI-Beuteerkennung.",
           "PetTec-Kameras und Datenwege."
         ],
-        "overlaps": [],
+        "overlaps": [
+          {
+            "a": "/hersteller/reolink/",
+            "b": "/produkt/reolink-e1-zoom/",
+            "similarity": 0.5,
+            "sameType": false,
+            "sameCluster": true,
+            "sharedBlocks": [
+              "Für einen festen Innenbereich, wenn lokale Speicherung, Tiererkennung und optischer Zoom wichtiger sind als pet-spezifische Leckerli- oder Gesundheitsfunktionen.",
+              "Für einen festen Innenbereich, wenn lokale Speicherung, Tiererkennung und optischer Zoom wichtiger sind als pet-spezifische Leckerli- oder Gesundheitsfunktionen."
+            ]
+          }
+        ],
         "duplicateVerdictWith": [],
         "interpretation": "Titel, Abschnitte und spezifische Datenauszüge sind Prüfbelege, keine automatische Bestätigung eigenständiger Suchintention. Ähnlichkeit ist kein Indexierungsgrund."
       },
@@ -18752,7 +18854,7 @@
           {
             "a": "/hersteller/satellai/",
             "b": "/produkt/satellai-collar-go/",
-            "similarity": 0.561,
+            "similarity": 0.563,
             "sameType": false,
             "sameCluster": true,
             "sharedBlocks": [
@@ -24449,6 +24551,7 @@
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/zeromouse-2-0/",
         "/pumpe-katzentrinkbrunnen-reinigen/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/reichweite-von-gps-trackern/",
         "/seniorenhunde-richtig-versorgen/",
@@ -24597,7 +24700,7 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 270,
+      "incomingEdges": 271,
       "contextualIncomingEdges": 1,
       "contextualOutgoing": [],
       "main": {
@@ -28506,6 +28609,7 @@
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/zeromouse-2-0/",
         "/pumpe-katzentrinkbrunnen-reinigen/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/reichweite-von-gps-trackern/",
         "/seniorenhunde-richtig-versorgen/",
@@ -28586,6 +28690,7 @@
         "/produkt/petwalk-medium-tiertuer/",
         "/produkt/sureflap-mikrochip-katzenklappe/",
         "/produkt/zeromouse-2-0/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/smarte-haustiertechnik/",
         "/vergleiche/beste-mikrochip-katzenklappen/",
         "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/"
@@ -28695,8 +28800,8 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 871,
-      "contextualIncomingEdges": 16,
+      "incomingEdges": 875,
+      "contextualIncomingEdges": 17,
       "contextualOutgoing": [],
       "main": {
         "characters": 8094,
@@ -30850,6 +30955,7 @@
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/zeromouse-2-0/",
         "/pumpe-katzentrinkbrunnen-reinigen/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/reichweite-von-gps-trackern/",
         "/seniorenhunde-richtig-versorgen/",
@@ -30986,7 +31092,7 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 809,
+      "incomingEdges": 812,
       "contextualIncomingEdges": 0,
       "contextualOutgoing": [],
       "main": {
@@ -31231,6 +31337,7 @@
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/zeromouse-2-0/",
         "/pumpe-katzentrinkbrunnen-reinigen/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/reichweite-von-gps-trackern/",
         "/seniorenhunde-richtig-versorgen/",
@@ -31380,7 +31487,7 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 407,
+      "incomingEdges": 408,
       "contextualIncomingEdges": 2,
       "contextualOutgoing": [],
       "main": {
@@ -31663,7 +31770,7 @@
         "Aqara",
         "Flappie"
       ],
-      "textSha256": "65d378a8773933fed4c4d7863fac83bfa25990baf40fa0d0cc46f6d6527f61ea",
+      "textSha256": "410e199e828550403239780fe54812e03a543410184d770267d4a53712a9314e",
       "incomingSources": [
         "/hersteller/aqara/",
         "/vergleiche/beste-futterautomaten-fuer-hunde/",
@@ -31878,7 +31985,7 @@
       ],
       "main": {
         "characters": 8929,
-        "sha256": "c1f99b7fbd38e01d570cc6d6b315986b3852fd930f209632ea2847d34a6cdbeb",
+        "sha256": "2f09cdaecfa6401e4e7592908a85566f07353c83888075fcb384badf5ec5ad04",
         "excerpt": "1 / 4 1 / 4 Aqara Smart Pet Feeder C1 in redaktioneller Produktdarstellung Futterautomaten Aqara Aqara Smart Pet Feeder C1 Besonders interessant für bestehende Aqara-Haushalte, die lokale Zeitpläne und Smart-Home-Verknüpfungen höher gewichten als Kamera oder direkte WLAN-Nutzung. Sehr gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Aqara-Smart-Home Katzen und kleine Hunde Lokale Zeitpläne Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 109,42 € Hinterlegter Preis Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Provision. Im Vergleich einordnen Entscheidung zuerst Was im A",
         "availableWithoutJavaScript": true
       },
@@ -32628,7 +32735,7 @@
         "Passend zum Produkt weiterlesen",
         "Cat Mate"
       ],
-      "textSha256": "4d82a884aa84cbc3e07bb3000c2a7d67a83abfedd535910f0304f369f76a56b6",
+      "textSha256": "f7775078f018c2d2708330fa94ce4e7947c0013828d781fcd07f415121614b2d",
       "incomingSources": [
         "/hersteller/cat-mate/",
         "/produkt/cat-mate-c300/",
@@ -32831,7 +32938,7 @@
       "contextualOutgoing": [],
       "main": {
         "characters": 8592,
-        "sha256": "cb3155270b0cce0ea8cb75e45caf0dbe32a58a0aa9ac5317c5b559f24256a093",
+        "sha256": "04a43e5a6b85d56076bde4354d16fd0b16363588f18942eadde3fe16049fb5dc",
         "excerpt": "1 / 4 1 / 4 Cat Mate C200 in redaktioneller Produktdarstellung Futterautomaten Cat Mate Cat Mate C200 Preiswerte Offline-Lösung für zwei vorbereitete Mahlzeiten, wenn einfache Bedienung wichtiger ist als minutengenaue Öffnung oder App-Steuerung. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. eine oder zwei Katzen kleine Hunde Nass- und Trockenfutter Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 24,69 € Hinterlegter Preis Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Provision. Im Vergleich einordnen Entscheidung zuerst Was im Alltag wirklich zählt Der wichtigste Vort",
         "availableWithoutJavaScript": true
       },
@@ -32897,7 +33004,7 @@
         "Passend zum Produkt weiterlesen",
         "Cat Mate"
       ],
-      "textSha256": "19cfba54f8af5ae049ff7d296b8ad1bf251450657f32f16aef233831fdbf39b3",
+      "textSha256": "80eb422efe3ca3d24561dc6bf360641cbae509dec8ba4f4db533065ba454cb21",
       "incomingSources": [
         "/hersteller/cat-mate/",
         "/produkt/imipaw-3l-automatic-cat-feeder/",
@@ -33110,7 +33217,7 @@
       ],
       "main": {
         "characters": 8576,
-        "sha256": "220283310382e6fb1c592eff23be299a5c88813b589604454c7be2912ba0b08e",
+        "sha256": "50e7fe6967535dd101ffa7d29cc918f8e0c41b28e48c30ca49a7ab71f4a7ebb8",
         "excerpt": "1 / 5 1 / 5 Cat Mate C300 in redaktioneller Produktdarstellung Futterautomaten Cat Mate Cat Mate C300 Einfache digitale Nass- und Trockenfutterlösung für bis zu zwei Katzen oder einen kleinen Hund, wenn drei Fächer und lokale Bedienung ausreichen. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. eine bis zwei Katzen kleine Hunde Nass- und Trockenfutter Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 29,74 € Hinterlegter Preis Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Provision. Im Vergleich einordnen Entscheidung zuerst Was im Alltag wirklich zählt Der wichtigste Vor",
         "availableWithoutJavaScript": true
       },
@@ -33176,7 +33283,7 @@
         "Passend zum Produkt weiterlesen",
         "Cat Mate"
       ],
-      "textSha256": "73f352593ac6ad21cd17f6f8c3d3d79522c47ba0dd9a5403042b93d48f6c65db",
+      "textSha256": "eb678dab4759ec75d7dd978542d8c10cc33ab1e63433cfcb7d9e8d047d44d39e",
       "incomingSources": [
         "/futterautomat-und-ernaehrung/",
         "/hersteller/cat-mate/",
@@ -33405,7 +33512,7 @@
       ],
       "main": {
         "characters": 9109,
-        "sha256": "77eeb244acc88cd060ea70a7b1c0c49821ac3446ab67a21e03812c4a6f65abb8",
+        "sha256": "580a1a0c79b8918894ca36fe60c20f3c94c21acf889ae8dc189723bfacb5a70c",
         "excerpt": "1 / 4 1 / 4 Cat Mate C500 in redaktioneller Produktdarstellung Futterautomaten Cat Mate Cat Mate C500 Pragmatische Nassfutter-Lösung für eine oder zwei Katzen beziehungsweise einen kleinen Hund, wenn lokale Timersteuerung und Kühlakkus ausreichen. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. eine bis zwei Katzen kleine Hunde Nass-, Trocken- oder Mischfutter Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 43,99 € Hinterlegter Preis Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Provision. Im Vergleich einordnen Entscheidung zuerst Was im Alltag wirklich zählt Der wicht",
         "availableWithoutJavaScript": true
       },
@@ -34004,7 +34111,7 @@
         "Catit",
         "Smarte Futterautomaten"
       ],
-      "textSha256": "774e3a6fd19c139184b38c7a626133b73595fb961e28ebaac9a717304af6de29",
+      "textSha256": "ac9b87c120ff9da78743b7c8a212e423b1f04ebebd0da5614c32a318dc90f6e6",
       "incomingSources": [
         "/hersteller/catit/",
         "/vergleiche/beste-futterautomaten-fuer-katzen/",
@@ -34279,7 +34386,7 @@
       ],
       "main": {
         "characters": 11018,
-        "sha256": "fc7e4f81f4b47d42bb4b30ac0730d6a6e863a6c39c739ab4c998339fe249f81d",
+        "sha256": "ab2963e55b00df5216ad21fd982716dbbc556227bcc5b59b5a5c8e9f28099e58",
         "excerpt": "1 / 4 1 / 4 Catit PIXI Smart 6-Meal Feeder mit rundem Sechs-Fächer-Einsatz Futterautomaten Catit Catit PIXI Smart 6-Meal Feeder Sinnvolle Lösung für Katzen mit mehreren kleinen Mahlzeiten, wenn sechs vorbereitete Fächer, lokale Bedienung und App-Zugriff wichtiger sind als aktive Kühlung oder individuelle Tiererkennung. Sehr gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzen mit mehreren kleinen Mahlzeiten Nassfutter, Trockenfutter und Snacks bis zu sechs vorbereitete Fächer Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 101,21 € Hinterlegter Preis Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese ",
         "availableWithoutJavaScript": true
       },
@@ -34983,7 +35090,7 @@
         "Catit",
         "Flappie"
       ],
-      "textSha256": "60a3f1bbd2d41b36157fb1573fa8e77ae60d0af214d696c71045c1bdbc45162d",
+      "textSha256": "ea614f5b7f34c0d043ce975295624e1cf0587aa836425d588f4df02a9fe7e888",
       "incomingSources": [
         "/hersteller/catit/",
         "/vergleiche/beste-futterautomaten-fuer-katzen/",
@@ -35216,7 +35323,7 @@
       ],
       "main": {
         "characters": 8581,
-        "sha256": "4cbd339ea639c2e4810c6d57cf1456b01935befecdb3ca3553f308250143543e",
+        "sha256": "1da7f8939ca315639a8f9b2901416c67be0ba31cc664cd6ae12a81d22d333c31",
         "excerpt": "1 / 4 1 / 4 Catit PIXI Vision Smart Feeder in redaktioneller Produktdarstellung Futterautomaten Catit Catit PIXI Vision Smart Feeder Spannender neuer Kamera-Automat für Katzen, wenn lokale microSD-Aufzeichnung und Dualband-WLAN wichtiger sind als ein großer Vorrat. Sehr gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzen Kamerakontrolle Lokale Videoaufzeichnung Preis & Kaufen Affiliate-Link Meintierdiscount Früherer Anschaffungspreis 199 € Veralteter Preisstand Bei Meintierdiscount ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Provision. Im Vergleich einordnen Entscheidung zuerst Was ",
         "availableWithoutJavaScript": true
       },
@@ -36389,7 +36496,7 @@
         "Flappie",
         "Welches Material beim Katzenbrunnen?"
       ],
-      "textSha256": "74286f82da7ae770c4a9df89aeb10a21e7dc69b38904ee5576142965359544bd",
+      "textSha256": "0ddad7a89a22e9d6f6cde3c6d51bcd5fab8f1521eb2d6c4d08e8e12a518676e6",
       "incomingSources": [
         "/produkt/oneisall-7l-dog-water-fountain/",
         "/trinkbrunnen/",
@@ -36688,9 +36795,9 @@
         }
       ],
       "main": {
-        "characters": 12076,
-        "sha256": "a13320ae8ad6ecc7384f09acd3eacb6721a21650aa7773b5f0d5b0616f6baa61",
-        "excerpt": "1 / 4 1 / 4 FEELNEEDY FN-W18 mit rundem Edelstahlbehälter, breiter Trinkschale und Bedieneinheit Trinkbrunnen FEELNEEDY FEELNEEDY FN-W18 8L Katzenbrunnen Interessante Großtank-Lösung für mehrere Katzen sowie kleine und mittelgroße Hunde, wenn kabellose Platzierung, Edelstahl und eine breite Trinkschale wichtiger sind als App-Auswertung oder besonders niedrige Geräuschwerte. Sehr gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Mehrkatzenhaushalte kleine und mittelgroße Hunde kabellose Platzierung ohne dauerhaftes Stromkabel Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 52,99 € Hinterlegter Preis Bei Amazon ansehen Preis und Verfügbarkeit be",
+        "characters": 12088,
+        "sha256": "5f0ec25ff0f5aff6557be322d28e5d588bf65124d21f35cb620c4f75a9d54f51",
+        "excerpt": "1 / 4 1 / 4 FEELNEEDY FN-W18 mit rundem Edelstahlbehälter, breiter Trinkschale und Bedieneinheit Trinkbrunnen FEELNEEDY FEELNEEDY FN-W18 8L Katzenbrunnen Interessante Großtank-Lösung für mehrere Katzen sowie kleine und mittelgroße Hunde, wenn kabellose Platzierung, Edelstahl und eine breite Trinkschale wichtiger sind als App-Auswertung oder besonders niedrige Geräuschwerte. Sehr gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Mehrkatzenhaushalte kleine und mittelgroße Hunde kabellose Platzierung ohne dauerhaftes Stromkabel Preis & Kaufen Affiliate-Link Amazon Früherer Anschaffungspreis 52,99 € Veralteter Preisstand Bei Amazon ansehen Preis und Verf",
         "availableWithoutJavaScript": true
       },
       "structuredData": {
@@ -37012,7 +37119,6 @@
       "headings": [
         "Preis & Kaufen",
         "Tarife",
-        "Rechenbeispiel",
         "Was im Alltag wirklich zählt",
         "360-Grad-Beobachtung",
         "optionale Nanny-Folgekosten",
@@ -37045,7 +37151,7 @@
         "Furbo",
         "Flappie"
       ],
-      "textSha256": "451b7cb9dc8c1db8b592784ae2c937cc5ef3f069ca8358bbcdd6b883ce197837",
+      "textSha256": "58f144546d3f04bf822158978dd4ee2464b3fae6f412ed3c0bbe9b3f6f00ee64",
       "incomingSources": [
         "/hersteller/furbo/",
         "/vergleiche/beste-haustierkameras/"
@@ -37101,7 +37207,6 @@
         "headings": [
           "Preis & Kaufen",
           "Tarife",
-          "Rechenbeispiel",
           "Was im Alltag wirklich zählt",
           "360-Grad-Beobachtung",
           "optionale Nanny-Folgekosten",
@@ -37205,9 +37310,9 @@
         }
       ],
       "main": {
-        "characters": 7577,
-        "sha256": "f0133d95231c83ca75cb8e47287bb7c5acfddc9afe6272c532a69d4a694c36b3",
-        "excerpt": "1 / 4 1 / 4 Furbo 360° Hundekamera in hochwertiger Produktansicht Haustierkameras Furbo Furbo 360° Hundekamera Für Hundehalter, die neben Beobachtung bewusst Ferninteraktion und Leckerliausgabe einsetzen möchten. Solide Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Hunde und ein überblickbarer Innenraum Ferninteraktion mit Ton und Leckerli Nutzer mit geprüfter Nanny-Tarifwahl Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 59,00 € Hinterlegter Preis Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Optionales Abo möglich 6,99 € / Monat Furbo Nanny Tarife Basic monatlich 6,99 € / Monat entspricht 6,99 € / Monat monatliche Zahlung ",
+        "characters": 7400,
+        "sha256": "f36da79a211be81b736ebf3d80dbc289d4c6a81e223e5195203a4fa931275d51",
+        "excerpt": "1 / 4 1 / 4 Furbo 360° Hundekamera in hochwertiger Produktansicht Haustierkameras Furbo Furbo 360° Hundekamera Für Hundehalter, die neben Beobachtung bewusst Ferninteraktion und Leckerliausgabe einsetzen möchten. Solide Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Hunde und ein überblickbarer Innenraum Ferninteraktion mit Ton und Leckerli Nutzer mit geprüfter Nanny-Tarifwahl Preis & Kaufen Affiliate-Link Amazon Früherer Anschaffungspreis 59 € Veralteter Preisstand Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Optionales Abo möglich 6,99 € / Monat Furbo Nanny Tarife Basic monatlich 6,99 € / Monat entspricht 6,99 € / Monat monatliche",
         "availableWithoutJavaScript": true
       },
       "structuredData": {
@@ -37270,7 +37375,7 @@
         "Furbo",
         "Flappie"
       ],
-      "textSha256": "83da749c7b8c135b1fff6d8a4deee4a5694e547d03c131fef7890129dcbf22f2",
+      "textSha256": "5ebd9817a8a92b05c8473c1c0f67af3d763fc1f0a29c0a534b3004a5d9b95998",
       "incomingSources": [
         "/hersteller/furbo/",
         "/produkt/pettec-cam-360/",
@@ -37448,8 +37553,8 @@
         }
       ],
       "main": {
-        "characters": 8511,
-        "sha256": "cb2057db172624941be4c795621fe4304ecb519e8adb0a5d5805c913eecb5da6",
+        "characters": 8512,
+        "sha256": "ae3f2780d07062c4ceb52a119788d16f1ac8cf804e61e6d1fa9bbfa967f94300",
         "excerpt": "1 / 4 1 / 4 Furbo 360° Katzenkamera mit Feder-Spielzeug, Leckerliausgabe und App-Ansicht Haustierkameras Furbo Furbo 360° Katzenkamera Für Katzenhaushalte, die drehbare Beobachtung mit Leckerliwurf und einem austauschbaren Feder-Spielzeug kombinieren möchten. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzen in einem offenen Hauptraum Bewusste Ferninteraktion mit Leckerli und Feder Haushalte, die Nanny-Kosten vorab trennen Preis & Kaufen Affiliate-Link Amazon Früherer Anschaffungspreis 179 € Veralteter Preisstand Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Optionales Abo möglich 6,99 € / Monat Furbo Nanny Tarife Basic monat",
         "availableWithoutJavaScript": true
       },
@@ -37527,6 +37632,7 @@
         "/produkt/petlibro-scout-smart-camera/",
         "/produkt/pettec-cam-360/",
         "/produkt/reolink-e1-zoom/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/vergleiche/beste-haustierkameras/"
       ],
       "contextualSources": [
@@ -37683,7 +37789,7 @@
           "automatic": false
         }
       ],
-      "incomingEdges": 13,
+      "incomingEdges": 15,
       "contextualIncomingEdges": 1,
       "contextualOutgoing": [
         {
@@ -38340,7 +38446,7 @@
         "Wie groß sollte ein Futterautomat sein?",
         "Smarte Futterautomaten"
       ],
-      "textSha256": "8a41f2a2c3fba8389d3310a01bb7e524b913e2826f82393aa61c828ca2e54782",
+      "textSha256": "2a386ce4d2783e2eca8bdb82c0aa3d54f47f953ed17adbe3bfdbc83f2b53eb0f",
       "incomingSources": [
         "/hersteller/honeyguardian/",
         "/wie-laut-sind-automatische-futterautomaten/"
@@ -38561,7 +38667,7 @@
       ],
       "main": {
         "characters": 6833,
-        "sha256": "3be0576b9a536c4ac6c0e34bf23e84b4b8a2feac7cc71de0fd8dd64263338f17",
+        "sha256": "e4b0ea2933dca53df9faa5a3ca7993c70a14535ddfdba667b0dd3645b4dc5082",
         "excerpt": "1 / 4 1 / 4 HoneyGuardian A305D in redaktioneller Produktdarstellung Futterautomaten HoneyGuardian HoneyGuardian A305D Dieses Produkt ist vorübergehend nicht verfügbar. Die Qualitätsbewertung bleibt bestehen, aktuell sollte jedoch eine Alternative geprüft werden. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. katze hund mehrere-tiere Preis & Kaufen Affiliate-Link Dieses Produkt ist vorübergehend nicht verfügbar. Preis und Lieferbarkeit beim Händler prüfen. Derzeit ist keine geprüfte Händleroption hinterlegt. Im Vergleich einordnen Entscheidung zuerst Was im Alltag wirklich zählt Der wichtigste Vorteil Keine App oder WLAN-Verbindung erforderlich De",
         "availableWithoutJavaScript": true
       },
@@ -38620,7 +38726,7 @@
         "Smarte Futterautomaten",
         "Futterautomaten für Hunde"
       ],
-      "textSha256": "63ed39bf42304efb9ad3d871dd78afb9aa5734f05305356c55e43abedcd1c9df",
+      "textSha256": "40f315b9758de818e3740341229ce9d0cda675593ccc9605dcfd62d6a3bc290c",
       "incomingSources": [
         "/hersteller/honeyguardian/",
         "/produkt/imipaw-3l-automatic-cat-feeder/",
@@ -38836,9 +38942,9 @@
         }
       ],
       "main": {
-        "characters": 6740,
-        "sha256": "2a21932eea7a7eea8ae7f4410195baf7787e0cf566dc8d31c4dda297d98cfa0f",
-        "excerpt": "1 / 4 1 / 4 HoneyGuardian A68 Smart Pet Feeder in redaktioneller Produktdarstellung Futterautomaten HoneyGuardian HoneyGuardian A68 Smart Pet Feeder Empfehlenswerter Smart-Futterautomat mit 6-Liter-Vorratsbehälter, App-Steuerung und Batterie-Backup für Katzen sowie kleine bis mittelgroße Hunde. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. katze hund app Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 99,98 € Hinterlegter Preis Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Provision. Im Vergleich einordnen Entscheidung zuerst Was im Alltag wirklich zählt Der wichtigst",
+        "characters": 6752,
+        "sha256": "6e200b86b75ebe45be7677a86bd7002c5770892af829a6fd9d0804e23c0f5ee8",
+        "excerpt": "1 / 4 1 / 4 HoneyGuardian A68 Smart Pet Feeder in redaktioneller Produktdarstellung Futterautomaten HoneyGuardian HoneyGuardian A68 Smart Pet Feeder Empfehlenswerter Smart-Futterautomat mit 6-Liter-Vorratsbehälter, App-Steuerung und Batterie-Backup für Katzen sowie kleine bis mittelgroße Hunde. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. katze hund app Preis & Kaufen Affiliate-Link Amazon Früherer Anschaffungspreis 99,98 € Veralteter Preisstand Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Provision. Im Vergleich einordnen Entscheidung zuerst Was im Alltag wirklich zählt D",
         "availableWithoutJavaScript": true
       },
       "structuredData": {
@@ -38900,7 +39006,7 @@
         "HoneyGuardian",
         "Smarte Futterautomaten"
       ],
-      "textSha256": "e763927150a07590ed2bd73ba3f6cebf844cda221484e46818b0f645dba6b170",
+      "textSha256": "cd8d9e2860691fe20343abb362f4afafc088511b447d815b30c1769c0ca7d827",
       "incomingSources": [
         "/hersteller/honeyguardian/",
         "/vergleiche/beste-futterautomaten-fuer-hunde/",
@@ -39105,7 +39211,7 @@
       "contextualOutgoing": [],
       "main": {
         "characters": 7799,
-        "sha256": "bc614274b1ada40b75e7693d63fa97d8c8789240a2aff42f58c8985d94203332",
+        "sha256": "ea8ca3ce40e8ee2d62a419202ac3f1d706bddbe257e0d74f49859f43be898c26",
         "excerpt": "1 / 4 1 / 4 HoneyGuardian Smart Pet Feeder S305D in redaktioneller Produktdarstellung Futterautomaten HoneyGuardian HoneyGuardian Smart Pet Feeder S305D Dieses Produkt ist vorübergehend nicht verfügbar. Die Qualitätsbewertung bleibt bestehen, aktuell sollte jedoch eine Alternative geprüft werden. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzen kleine Hunde preisbewusste App-Nutzer Preis & Kaufen Affiliate-Link Dieses Produkt ist vorübergehend nicht verfügbar. Preis und Lieferbarkeit beim Händler prüfen. Derzeit ist keine geprüfte Händleroption hinterlegt. Im Vergleich einordnen Entscheidung zuerst Was im Alltag wirklich zählt Der wichtigste ",
         "availableWithoutJavaScript": true
       },
@@ -39172,7 +39278,7 @@
         "IMIPAW",
         "Flappie"
       ],
-      "textSha256": "4dd390bd8c0e6bde7562e4015d21c335632c53d15a235b511534ca144cc7e3de",
+      "textSha256": "c1294af8410c7301779e0554d7434de3bd1a08fae5ea78e94766c9364b693c03",
       "incomingSources": [
         "/hersteller/imipaw/",
         "/produkt/cat-mate-c500/",
@@ -39432,9 +39538,9 @@
         }
       ],
       "main": {
-        "characters": 11912,
-        "sha256": "63aeeb3625ff75a6618d5f2a4d72127fae30d6ab3c8774ae96197f48f72d40d1",
-        "excerpt": "1 / 4 1 / 4 IMIPAW 3L Automatic Cat Feeder mit transparentem Futterbehälter und lokaler Bedienung Futterautomaten IMIPAW IMIPAW 3L Automatic Cat Feeder Preiswerte Offline-Lösung für Katzen und kleine Hunde mit mehreren Trockenfuttermahlzeiten. Gut, wenn lokale Bedienung und Batterie-Backup wichtiger sind als Fernkontrolle, Füllstandsmeldungen oder grammgenaue Portionen. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzen und kleine Hunde mit Trockenfutter bis zu sechs kleine Mahlzeiten pro Tag lokale Zeitplanung ohne App und WLAN Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 32,99 € Hinterlegter Preis Bei Amazon ansehen Preis und Verfüg",
+        "characters": 11924,
+        "sha256": "ca48044045c25ad07badee41ef9a6e1da85c65b0ca5740e630ea160edddbd769",
+        "excerpt": "1 / 4 1 / 4 IMIPAW 3L Automatic Cat Feeder mit transparentem Futterbehälter und lokaler Bedienung Futterautomaten IMIPAW IMIPAW 3L Automatic Cat Feeder Preiswerte Offline-Lösung für Katzen und kleine Hunde mit mehreren Trockenfuttermahlzeiten. Gut, wenn lokale Bedienung und Batterie-Backup wichtiger sind als Fernkontrolle, Füllstandsmeldungen oder grammgenaue Portionen. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzen und kleine Hunde mit Trockenfutter bis zu sechs kleine Mahlzeiten pro Tag lokale Zeitplanung ohne App und WLAN Preis & Kaufen Affiliate-Link Amazon Früherer Anschaffungspreis 32,99 € Veralteter Preisstand Bei Amazon ansehen Prei",
         "availableWithoutJavaScript": true
       },
       "structuredData": {
@@ -42707,7 +42813,7 @@
         "oneisall",
         "Flappie"
       ],
-      "textSha256": "45821c00b81c06c2f22cc5371dd4036ef95268cdfe057ae1e4aabf47fbb4fca3",
+      "textSha256": "f85d599867ccd997a50973e9336012c3a0a8978b5035279841defaa41420f44a",
       "incomingSources": [
         "/hersteller/oneisall/",
         "/vergleiche/beste-futterautomaten-fuer-katzen/",
@@ -42923,7 +43029,7 @@
       ],
       "main": {
         "characters": 8392,
-        "sha256": "47731fb21fe82f00e3782f3d4c8914f45deac4958f9943efbb34b49a390b339b",
+        "sha256": "f95c36db21a5cd455f5c38655ebc3d5375da4da9bf4656c4d8830f823016a177",
         "excerpt": "1 / 4 1 / 4 oneisall 5L Futterautomat mit zwei Näpfen und zwei Katzen Futterautomaten oneisall oneisall 5L Automatic Cat Feeder Preislich interessante Doppelschalen-Lösung für zwei friedlich fressende Katzen mit ähnlichem Bedarf, solange keine individuelle Zugangskontrolle nötig ist. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. zwei friedlich fressende Katzen ähnlicher Futter- und Mengenbedarf Trockenfütterung mit gemeinsamem Zeitplan Preis & Kaufen Affiliate-Link Amazon Früherer Anschaffungspreis 49,98 € Veralteter Preisstand Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine P",
         "availableWithoutJavaScript": true
       },
@@ -43574,7 +43680,6 @@
       "headings": [
         "Preis & Kaufen",
         "Tarife",
-        "Rechenbeispiel",
         "Was im Alltag wirklich zählt",
         "nur 33,1 g Gerätegewicht",
         "kein dauerhaft abofreier Betrieb",
@@ -43607,7 +43712,7 @@
         "PAJ GPS",
         "Flappie"
       ],
-      "textSha256": "21b35e3b89abeb2012da88f58a15267b6609a1ade8d6849cfb0d3e729651d3f8",
+      "textSha256": "2e70edfc4f941184eaf655442b06b7beddb17dfe411ca8110a7e4d414e453791",
       "incomingSources": [
         "/gps-tracker/",
         "/hersteller/paj-gps/",
@@ -43678,7 +43783,6 @@
         "headings": [
           "Preis & Kaufen",
           "Tarife",
-          "Rechenbeispiel",
           "Was im Alltag wirklich zählt",
           "nur 33,1 g Gerätegewicht",
           "kein dauerhaft abofreier Betrieb",
@@ -43909,9 +44013,9 @@
         }
       ],
       "main": {
-        "characters": 14816,
-        "sha256": "5318d078ba266034057686db45db82f56f678862062fe9acca7cd9d0be41545c",
-        "excerpt": "1 / 4 1 / 4 PAJ GPS PET Finder 4G Mini GPS-Tracker PAJ GPS PAJ PET Finder 4G Mini Interessante Kostenlösung für kleine bis große Hunde in Europa, wenn 27 Monate Live-Ortung im Kaufpreis, Geozaun und ein kompakter Tracker wichtiger sind als weltweite Abdeckung oder lange Laufzeit bei dauerhaftem Live-Tracking. Sehr gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Hunde ab 3 kg Ortung in mehr als 40 europäischen Ländern Nutzer mit Wunsch nach langer enthaltener Servicephase Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 58,99 € Hinterlegter Preis Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Laufende Kosten Abo erforderlich 3",
+        "characters": 14643,
+        "sha256": "f202d945cb2ba65a5cb15e85ebf273e763dbdbe2cde726b94fa5346d5c425a36",
+        "excerpt": "1 / 4 1 / 4 PAJ GPS PET Finder 4G Mini GPS-Tracker PAJ GPS PAJ PET Finder 4G Mini Interessante Kostenlösung für kleine bis große Hunde in Europa, wenn 27 Monate Live-Ortung im Kaufpreis, Geozaun und ein kompakter Tracker wichtiger sind als weltweite Abdeckung oder lange Laufzeit bei dauerhaftem Live-Tracking. Sehr gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Hunde ab 3 kg Ortung in mehr als 40 europäischen Ländern Nutzer mit Wunsch nach langer enthaltener Servicephase Preis & Kaufen Affiliate-Link Amazon Früherer Anschaffungspreis 58,99 € Veralteter Preisstand Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Laufende Kosten Abo er",
         "availableWithoutJavaScript": true
       },
       "structuredData": {
@@ -43969,7 +44073,7 @@
         "Smarte Futterautomaten",
         "Futterautomaten für Hunde"
       ],
-      "textSha256": "a500badeca6eb745459ace368f24c2577d0694a057167af18052992b2a170724",
+      "textSha256": "90b42da1359628a6c8fc423556f9545de5320f71fec14263e7fcac52c32fffaa",
       "incomingSources": [
         "/hersteller/pawbby/",
         "/hersteller/xiaomi/"
@@ -44173,7 +44277,7 @@
       ],
       "main": {
         "characters": 6805,
-        "sha256": "99fd58f35b0bdbb8b5241393f0f27f798de2c0e06e8399723a615f8d415be8a4",
+        "sha256": "090b4e4e86c81bf1451da214bfd6695124bbe2b9c151650a866001e1ec548fdd",
         "excerpt": "1 / 4 1 / 4 PAWBBY Smart Pet Feeder in redaktioneller Produktdarstellung Futterautomaten PAWBBY PAWBBY Smart Pet Feeder Dieses Produkt ist aktuell nicht lieferbar. Die Qualitätsbewertung bleibt bestehen, eine Kaufempfehlung wird derzeit nicht ausgespielt. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. katze hund app Preis & Kaufen Affiliate-Link Dieses Produkt ist aktuell nicht lieferbar. Prüfe die Alternativen auf dieser Seite. Derzeit ist keine geprüfte Händleroption hinterlegt. Im Vergleich einordnen Entscheidung zuerst Was im Alltag wirklich zählt Der wichtigste Vorteil Vernetzte Bedienung Vernetzter Trockenfutterautomat aus dem PAWBBY -Umfeld",
         "availableWithoutJavaScript": true
       },
@@ -44524,7 +44628,7 @@
         "PawSync",
         "Flappie"
       ],
-      "textSha256": "297c51ddbfd1fb1be37c1d7e481cc3e1e7abdf6d45175a073819fa33a8c8bb10",
+      "textSha256": "6abaff9ab402fae9c3492d7f819107f048a2c6bb7b1cc8373bb6a12b44b86723",
       "incomingSources": [
         "/hersteller/pawsync/",
         "/produkt/xiaomi-smart-pet-food-feeder-2/",
@@ -44741,9 +44845,9 @@
         }
       ],
       "main": {
-        "characters": 8291,
-        "sha256": "350e5eb05b2b9acdb3f3d8b20f14c57b8a7082746732ce54fa9232bfa33dd394",
-        "excerpt": "1 / 2 1 / 2 PawSync Smart Pet Feeder in redaktioneller Produktdarstellung Futterautomaten PawSync PawSync Smart Pet Feeder Starke Wahl für datenorientierte Halter, die Trockenfutter nach Gewicht statt nur nach mechanischen Portionen planen möchten. Hervorragend Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzen und kleine Hunde Abgewogene Trockenfutterportionen Fressprotokolle Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 50,99 € Hinterlegter Preis Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Provision. Im Vergleich einordnen Entscheidung zuerst Was im Alltag wirklic",
+        "characters": 8303,
+        "sha256": "9feee71efacfa374fe4f09533fe0a3c9b7b886d13cbdbbbe000494996db0be8a",
+        "excerpt": "1 / 2 1 / 2 PawSync Smart Pet Feeder in redaktioneller Produktdarstellung Futterautomaten PawSync PawSync Smart Pet Feeder Starke Wahl für datenorientierte Halter, die Trockenfutter nach Gewicht statt nur nach mechanischen Portionen planen möchten. Hervorragend Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzen und kleine Hunde Abgewogene Trockenfutterportionen Fressprotokolle Preis & Kaufen Affiliate-Link Amazon Früherer Anschaffungspreis 50,99 € Veralteter Preisstand Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Provision. Im Vergleich einordnen Entscheidung zuerst Was im Al",
         "availableWithoutJavaScript": true
       },
       "structuredData": {
@@ -44805,7 +44909,7 @@
         "PETKIT",
         "Flappie"
       ],
-      "textSha256": "a469f1e424d46cc1845fc2efc3181302f9a3716843a11e9f21034245c784c08f",
+      "textSha256": "eca1bcb052eca2282548f63e103c7b2f1244739614ac85c98503cd67ee0198b0",
       "incomingSources": [
         "/hersteller/petkit/",
         "/katzentrinkbrunnen-richtig-reinigen/",
@@ -45130,9 +45234,9 @@
         }
       ],
       "main": {
-        "characters": 12300,
-        "sha256": "95bc4cec9af584dd49d7d697224d926cd72368de0f775d377ce163addabcbffe",
-        "excerpt": "1 / 4 1 / 4 PETKIT Eversweet 3 Pro UVC mit weißem Gehäuse und Edelstahl-Wasserbehälter Trinkbrunnen PETKIT PETKIT Eversweet 3 Pro UVC Hochwertige kompakte Lösung für eine Katze oder einen kleinen Hund, wenn Edelstahlbehälter, zerlegbare UVC-Pumpe und App-Erinnerungen wichtiger sind als große Wasserreserve, Akku oder Trinkmengenmessung. Sehr gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. eine Katze oder einen kleinen Hund kleine Stellflächen Haushalte mit Wunsch nach Edelstahl-Wasserbehälter Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 67,89 € Hinterlegter Preis Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kau",
+        "characters": 12312,
+        "sha256": "41cddf8054db3476bedf9e068275486f4889f3a1d68faff12343e43f2bc2e137",
+        "excerpt": "1 / 4 1 / 4 PETKIT Eversweet 3 Pro UVC mit weißem Gehäuse und Edelstahl-Wasserbehälter Trinkbrunnen PETKIT PETKIT Eversweet 3 Pro UVC Hochwertige kompakte Lösung für eine Katze oder einen kleinen Hund, wenn Edelstahlbehälter, zerlegbare UVC-Pumpe und App-Erinnerungen wichtiger sind als große Wasserreserve, Akku oder Trinkmengenmessung. Sehr gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. eine Katze oder einen kleinen Hund kleine Stellflächen Haushalte mit Wunsch nach Edelstahl-Wasserbehälter Preis & Kaufen Affiliate-Link Amazon Früherer Anschaffungspreis 67,89 € Veralteter Preisstand Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. B",
         "availableWithoutJavaScript": true
       },
       "structuredData": {
@@ -47080,7 +47184,7 @@
         "Smarte Futterautomaten",
         "Futterautomaten für Hunde"
       ],
-      "textSha256": "06c5cc77b0e38080c4defd9d54c6a4a8685f04b5d575e4719f4dba5b889c183f",
+      "textSha256": "d8316f32dca42491c31ad5a352ca0c2df4e4facb4b995313c1e4c13e9adc1b69",
       "incomingSources": [
         "/hersteller/petkit/"
       ],
@@ -47286,7 +47390,7 @@
       ],
       "main": {
         "characters": 7431,
-        "sha256": "416382b7b337246857554a342929ce8d26e69676933503c494668bcb28467552",
+        "sha256": "7ad5e004cb8aa8e77af2cc1b8d29213d3ddebc623747f1a9dbe6b91d0a2340c2",
         "excerpt": "1 / 5 1 / 5 PETKIT Fresh Element Infinity in redaktioneller Produktdarstellung Futterautomaten PETKIT PETKIT Fresh Element Infinity Dieses Produkt ist eingestellt. Die redaktionelle Einordnung bleibt dokumentiert; für einen Kauf sind die verfügbaren Alternativen relevanter. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. katze hund app Preis & Kaufen Affiliate-Link Dieses Produkt wurde eingestellt und wird nicht mehr als Hauptempfehlung geführt. Prüfe die Alternativen auf dieser Seite. Derzeit ist keine geprüfte Händleroption hinterlegt. Im Vergleich einordnen Entscheidung zuerst Was im Alltag wirklich zählt Der wichtigste Vorteil Größerer Vorrat a",
         "availableWithoutJavaScript": true
       },
@@ -48539,7 +48643,7 @@
         "PETKIT",
         "Flappie"
       ],
-      "textSha256": "b44fa522dce4e37d71425f8e272526c0904124df0975d9630a8ee5f1c3b5a4d3",
+      "textSha256": "38566f1a43fdbd2bc95c64f4fd0a0dccbdd11aeafd21f86f22fa4b70fe52c66d",
       "incomingSources": [
         "/hersteller/petkit/",
         "/produkt/litter-robot-4/",
@@ -48747,9 +48851,9 @@
         }
       ],
       "main": {
-        "characters": 8639,
-        "sha256": "921709b58bf4304a5ec68ae5e2fa45920e0c8144687a5c5f22e27d9fe2268894",
-        "excerpt": "1 / 1 PETKIT PUROBOT MAX PRO 2 in hochwertiger Produktansicht Automatische Katzentoiletten PETKIT PETKIT PUROBOT MAX PRO 2 Fuer Katzen von 1,5 bis 10 kg und datenorientierte Mehrkatzenhaushalte, wenn geschlossener Innenraum, Kamera-Cloud und laufende Zubehoerkosten bewusst akzeptiert werden. Solide Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzen von 1,5 bis 10 kg Mehrkatzenhaushalte mit gewuenschter Gesichts- und Gewichtszuordnung Nutzer, die Kamera und Cloudspeicherung bewusst konfigurieren Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 549,00 € Hinterlegter Preis Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem",
+        "characters": 8648,
+        "sha256": "c521676211c28b1ac3215b1f0c1d1a358ac60777cbf8c130d59cf67365a9846f",
+        "excerpt": "1 / 1 PETKIT PUROBOT MAX PRO 2 in hochwertiger Produktansicht Automatische Katzentoiletten PETKIT PETKIT PUROBOT MAX PRO 2 Fuer Katzen von 1,5 bis 10 kg und datenorientierte Mehrkatzenhaushalte, wenn geschlossener Innenraum, Kamera-Cloud und laufende Zubehoerkosten bewusst akzeptiert werden. Solide Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzen von 1,5 bis 10 kg Mehrkatzenhaushalte mit gewuenschter Gesichts- und Gewichtszuordnung Nutzer, die Kamera und Cloudspeicherung bewusst konfigurieren Preis & Kaufen Affiliate-Link Amazon Früherer Anschaffungspreis 549 € Veralteter Preisstand Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. ",
         "availableWithoutJavaScript": true
       },
       "structuredData": {
@@ -48815,7 +48919,7 @@
         "Smarte Futterautomaten",
         "PETKIT"
       ],
-      "textSha256": "3e9b1c577f591feaa832f8d18bc3894fef8e1b0dbf8775e556eb4c0af1c633f8",
+      "textSha256": "cf193cf3df1977cc96bd5f155c9ff9ac5dfc3309ec4983a71e275221f0c180d5",
       "incomingSources": [
         "/futterautomat-katze/",
         "/hersteller/petkit/",
@@ -49209,9 +49313,9 @@
         }
       ],
       "main": {
-        "characters": 14062,
-        "sha256": "ba993f846436730f18169997445491cf876c6d9d029a9119e02c539bf3c92b2b",
-        "excerpt": "1 / 5 1 / 5 PETKIT YumShare Dual-Hopper 2 P592 mit zwei Vorratskammern, Kamera und Edelstahl-Napf Futterautomaten PETKIT PETKIT YumShare Dual-Hopper 2 Funktionsreiche Premiumlösung für Katzenhaushalte, die zwei Trockenfuttersorten flexibel mischen und Fressereignisse per Kamera einzelnen Tieren zuordnen möchten. Nicht geeignet, wenn Tiere zuverlässig voneinander getrennt gefüttert werden müssen. Hervorragend Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzenhaushalte mit zwei Trockenfuttersorten Mehrkatzenhaushalte mit Wunsch nach individueller Fresshistorie Nutzer von 2,4- oder 5-GHz-WLAN Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 109,",
+        "characters": 14074,
+        "sha256": "261393a5fcc470d98e8b0034e791a8b14bb8d03bd100ef40826bb12a36c7c2cf",
+        "excerpt": "1 / 5 1 / 5 PETKIT YumShare Dual-Hopper 2 P592 mit zwei Vorratskammern, Kamera und Edelstahl-Napf Futterautomaten PETKIT PETKIT YumShare Dual-Hopper 2 Funktionsreiche Premiumlösung für Katzenhaushalte, die zwei Trockenfuttersorten flexibel mischen und Fressereignisse per Kamera einzelnen Tieren zuordnen möchten. Nicht geeignet, wenn Tiere zuverlässig voneinander getrennt gefüttert werden müssen. Hervorragend Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzenhaushalte mit zwei Trockenfuttersorten Mehrkatzenhaushalte mit Wunsch nach individueller Fresshistorie Nutzer von 2,4- oder 5-GHz-WLAN Preis & Kaufen Affiliate-Link Amazon Früherer Anschaffungsp",
         "availableWithoutJavaScript": true
       },
       "structuredData": {
@@ -49582,7 +49686,7 @@
         "PETLIBRO",
         "Wie groß sollte ein Futterautomat sein?"
       ],
-      "textSha256": "8a93198d617dd7974b1ee15ef4219dad1c5a6301cca57df72bdd97acd1b5f56d",
+      "textSha256": "c02d661a48f231dc7d391b1128ea7c43e2828836878c8d0fbe5d376f85630a34",
       "incomingSources": [
         "/hersteller/petlibro/",
         "/wie-laut-sind-automatische-futterautomaten/"
@@ -49790,7 +49894,7 @@
       ],
       "main": {
         "characters": 8411,
-        "sha256": "4a1ddb01a4ce58f8656af1e181d9233bd7422e5adb2633b245fc68fd62cb4332",
+        "sha256": "c7a51049b64227435b7f3564567f932dfbc50fdb52596f83798f446e10eab563",
         "excerpt": "1 / 5 1 / 5 PETLIBRO Air Automatic Feeder in redaktioneller Produktdarstellung Futterautomaten PETLIBRO PETLIBRO Air Automatic Feeder Der PETLIBRO Air Automatic Feeder ist ein kompakter Trockenfutterautomat mit lokaler Zeitsteuerung. Er eignet sich für Katzen und kleine Hunde, wenn bewusst keine App oder WLAN-Verbindung benötigt wird. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. katze hund urlaub Preis & Kaufen Affiliate-Link mediamarkt.de Anschaffungspreis 54,99 € Hinterlegter Preis Bei mediamarkt.de ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Provision. Im Vergleich einordnen Ents",
         "availableWithoutJavaScript": true
       },
@@ -50569,6 +50673,7 @@
         "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
         "/katzentrinkbrunnen-laut-pumpe/",
         "/katzentrinkbrunnen-richtig-reinigen/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/trinkbrunnen-fuer-katzen-sinnvoll/",
         "/trinkbrunnen-fuer-kitten-sicher/",
         "/trinkbrunnen-seniorenkatzen/",
@@ -50789,7 +50894,7 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 26,
+      "incomingEdges": 28,
       "contextualIncomingEdges": 2,
       "contextualOutgoing": [
         {
@@ -50903,6 +51008,7 @@
         "/hersteller/petlibro/",
         "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
         "/katzentrinkbrunnen-laut-pumpe/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/trinkbrunnen-fuer-katzen-sinnvoll/",
         "/trinkbrunnen-fuer-kitten-sicher/",
         "/trinkbrunnen-seniorenkatzen/",
@@ -51122,7 +51228,7 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 23,
+      "incomingEdges": 25,
       "contextualIncomingEdges": 2,
       "contextualOutgoing": [
         {
@@ -51213,7 +51319,7 @@
         "PETLIBRO",
         "Flappie"
       ],
-      "textSha256": "b2a18b3efb72c10ab43b25a8b8c17ad5c75584a3e7dd435906cc37f6d4ee0d0d",
+      "textSha256": "48a4dfb0054f105a809fca16874f8bc2b7612c4c98046fcdd515861cf36ff92d",
       "incomingSources": [
         "/hersteller/petlibro/",
         "/vergleiche/beste-trinkbrunnen-fuer-katzen/"
@@ -51455,9 +51561,9 @@
         }
       ],
       "main": {
-        "characters": 7984,
-        "sha256": "8d572391ddf919008f5f6cfb0335a25c997b012b9b29a785d67dec5924d46aa4",
-        "excerpt": "1 / 4 1 / 4 PETLIBRO Dockstream Cordless in redaktioneller Visualisierung Trinkbrunnen PETLIBRO PETLIBRO Dockstream Cordless Solide kabellose Option für Katzen und kleine Hunde, wenn Bewegungssensor und flexible Aufstellung gewünscht sind, aber App und Trinktracking nicht benötigt werden. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. eine bis zwei Katzen kleine Hunde kabellose Aufstellung Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 67,99 € Hinterlegter Preis Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Provision. Im Vergleich einordnen Entscheidung zuerst Was im ",
+        "characters": 7996,
+        "sha256": "31ec2ef7c1aa0508dfb2a6a8c37b837096a249a78f29b1a0a5880d65c180a613",
+        "excerpt": "1 / 4 1 / 4 PETLIBRO Dockstream Cordless in redaktioneller Visualisierung Trinkbrunnen PETLIBRO PETLIBRO Dockstream Cordless Solide kabellose Option für Katzen und kleine Hunde, wenn Bewegungssensor und flexible Aufstellung gewünscht sind, aber App und Trinktracking nicht benötigt werden. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. eine bis zwei Katzen kleine Hunde kabellose Aufstellung Preis & Kaufen Affiliate-Link Amazon Früherer Anschaffungspreis 67,99 € Veralteter Preisstand Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Provision. Im Vergleich einordnen Entscheidung zu",
         "availableWithoutJavaScript": true
       },
       "structuredData": {
@@ -52140,7 +52246,7 @@
         "Flappie",
         "Smarte Futterautomaten"
       ],
-      "textSha256": "83e22d770496c20eb9d32dae02553906d00a245ccf41428722c67b4017e5a036",
+      "textSha256": "f4c64499d0f9e426b8fb4ff99b0c7f92692765815e9c7a915cfcd72f2acefd7b",
       "incomingSources": [
         "/futterautomat-katze/",
         "/hersteller/pawsync/",
@@ -52423,7 +52529,7 @@
       ],
       "main": {
         "characters": 13066,
-        "sha256": "46d54300c5d0e960e04f75a0d39c4c60620623eee38ffa89e406aeeca64c53c8",
+        "sha256": "c0ac37923028b9542bafcbba47a81419887baa2ec86b5c6fab16bdaceb59be29",
         "excerpt": "1 / 3 1 / 3 PETLIBRO Granary 2 Vision als redaktionelle Produktdarstellung Futterautomaten PETLIBRO PETLIBRO Granary 2 Vision Eine der interessantesten neuen Premium-Lösungen für eine Katze, wenn nicht nur Ausgaben, sondern auch verbleibendes Futter und Fressverlauf erfasst werden sollen. Für Futterklau ist erst der Granary 2 X gedacht; für zwei Näpfe die Vision-Duo-Variante. Sehr gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. eine Katze mit Trockenfutter und genauem Fressprotokoll Gewichtsmanagement mit dokumentierter Futteraufnahme als Alltagshilfe Nutzer, die Kamera, Napfwaage und App gemeinsam verwenden möchten Preis & Kaufen Affiliate-Link PE",
         "availableWithoutJavaScript": true
       },
@@ -52490,7 +52596,7 @@
         "PETLIBRO",
         "Smarte Futterautomaten"
       ],
-      "textSha256": "0b3134db5a2c507def14f1b4256fd4d4a4d18738bc2ed694b956c184632955fa",
+      "textSha256": "5a8de6aaaf2c252035ed5e4363c3d42bfa6b1eeb2bc562aea0e620d1feaa540a",
       "incomingSources": [
         "/futterautomat-hund/",
         "/futterautomat-im-urlaub/",
@@ -52774,7 +52880,7 @@
       ],
       "main": {
         "characters": 9744,
-        "sha256": "e6b149df6a4d9eeda77e841461215f88d38263a07604eecde967872ea6803193",
+        "sha256": "90bcf8033160eda9fbba4b8f1f066dd3d4ababd38be787c649956a39c72aa2ff",
         "excerpt": "1 / 4 1 / 4 PETLIBRO Granary Camera Feeder in redaktioneller Produktdarstellung Futterautomaten PETLIBRO PETLIBRO Granary Camera Feeder Premiumoption für Katzen und kleine bis mittelgroße Hunde, wenn Fütterung, Livebild und Zwei-Wege-Audio in einem Gerät wichtiger sind als ein niedriger Preis. Hervorragend Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzen und kleine bis mittelgroße Hunde Haushalte mit Wunsch nach Livebild und Fütterungsprotokoll Trockenfütterung mit bis zu zehn Mahlzeiten täglich Preis & Kaufen Affiliate-Link Amazon Bei Amazon ansehen PETLIBRO Weiß / Einzelne Schale Anschaffungspreis 169,99 € Hinterlegter Preis Bei PETLIBRO ansehe",
         "availableWithoutJavaScript": true
       },
@@ -52826,9 +52932,9 @@
         "Quellen und Prüfgrundlage",
         "Nutzerbewertungen nach Plattform",
         "Besser passend, nicht nur ähnlich",
-        "Xiaomi Smart Pet Food Feeder 2",
         "PETKIT YumShare Dual-Hopper 2",
         "PETLIBRO Granary Camera Feeder",
+        "Xiaomi Smart Pet Food Feeder 2",
         "So ist diese Seite einzuordnen",
         "Passend weiterentscheiden",
         "Beste Trinkbrunnen für Hunde",
@@ -52837,7 +52943,7 @@
         "PETLIBRO",
         "Smarte Futterautomaten"
       ],
-      "textSha256": "9b08e4b365d3cb56144157749c022b6d0fd3de9719ff1739c61eecd806f5dfa4",
+      "textSha256": "a27678d6d8c028f3ec21e8738527c6436814310b59fed5f9ff0a2a34fa26c811",
       "incomingSources": [
         "/hersteller/petlibro/",
         "/produkt/cat-mate-c200/",
@@ -52929,9 +53035,9 @@
           "Quellen und Prüfgrundlage",
           "Nutzerbewertungen nach Plattform",
           "Besser passend, nicht nur ähnlich",
-          "Xiaomi Smart Pet Food Feeder 2",
           "PETKIT YumShare Dual-Hopper 2",
           "PETLIBRO Granary Camera Feeder",
+          "Xiaomi Smart Pet Food Feeder 2",
           "So ist diese Seite einzuordnen",
           "Passend weiterentscheiden",
           "Beste Trinkbrunnen für Hunde",
@@ -53078,9 +53184,9 @@
         }
       ],
       "main": {
-        "characters": 8603,
-        "sha256": "82fbd2e0e2f68ab4630924999057f8fee43573f5c3a3d2315e4be253becd1953",
-        "excerpt": "1 / 4 1 / 4 PETLIBRO Granary Dual Feeder in redaktioneller Produktdarstellung Futterautomaten PETLIBRO PETLIBRO Granary WiFi Dual Food Tray Feeder Sinnvolle Doppelschalen-Lösung für zwei friedlich fressende Tiere mit ähnlichem Bedarf, wenn App-Steuerung und ein großer Trockenfuttervorrat wichtiger sind als Zugangskontrolle. Hervorragend Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Zwei Katzen mit ähnlichem Futterbedarf Kleine Hunde Trockenfütterung mit gemeinsamer Zeitplanung Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 104,96 € Hinterlegter Preis Bei Amazon ansehen PETLIBRO Weiß / Duale Schale Anschaffungspreis 119,99 € Hinterlegter Preis",
+        "characters": 8557,
+        "sha256": "a1ee91cb912c97df9b6b07e51f043942a95436e48d6fa379e2be0f2b7b6a10ba",
+        "excerpt": "1 / 4 1 / 4 PETLIBRO Granary Dual Feeder in redaktioneller Produktdarstellung Futterautomaten PETLIBRO PETLIBRO Granary WiFi Dual Food Tray Feeder Sinnvolle Doppelschalen-Lösung für zwei friedlich fressende Tiere mit ähnlichem Bedarf, wenn App-Steuerung und ein großer Trockenfuttervorrat wichtiger sind als Zugangskontrolle. Hervorragend Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Zwei Katzen mit ähnlichem Futterbedarf Kleine Hunde Trockenfütterung mit gemeinsamer Zeitplanung Preis & Kaufen Affiliate-Link Amazon Bei Amazon ansehen PETLIBRO Weiß / Duale Schale Anschaffungspreis 119,99 € Hinterlegter Preis Bei PETLIBRO ansehen Preis und Verfügbarkeit ",
         "availableWithoutJavaScript": true
       },
       "structuredData": {
@@ -53146,7 +53252,7 @@
         "PETLIBRO",
         "Flappie"
       ],
-      "textSha256": "7fc271c35590facd3e57e874badedecba3d2a08f0dabf067b4ea0a7d1ab6c98e",
+      "textSha256": "60869b42853e80ed4a10ad13f0462630821f821e6166856a351f0b273da0e0c5",
       "incomingSources": [
         "/futterautomat-bei-stromausfall/",
         "/futterautomat-bei-uebergewicht/",
@@ -53423,9 +53529,9 @@
         }
       ],
       "main": {
-        "characters": 9139,
-        "sha256": "94cf89efba894ab1855d8629183bb01294d452ab453853dbeaeb5330605fd865",
-        "excerpt": "1 / 4 1 / 4 PETLIBRO Granary WiFi Feeder in redaktioneller Produktdarstellung Futterautomaten PETLIBRO PETLIBRO Granary WiFi Feeder Ausgewogener Trockenfutter-Allrounder für Katzen und kleine bis mittelgroße Hunde, wenn flexible Zeitpläne, App-Protokolle und ein großer Vorrat wichtiger sind als Kamera oder Zugangskontrolle. Sehr gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzen kleine bis mittelgroße Hunde Trockenfütterung mit bis zu zehn Mahlzeiten täglich Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 104,96 € Hinterlegter Preis Bei Amazon ansehen PETLIBRO Weiß / Einzelne Schale Anschaffungspreis 109,99 € Hinterlegter Preis Bei PETLI",
+        "characters": 9093,
+        "sha256": "03d061e969c3dbe3cfd4ea75a0da8160cc5d521939a0eed85d4deb547fe57f4f",
+        "excerpt": "1 / 4 1 / 4 PETLIBRO Granary WiFi Feeder in redaktioneller Produktdarstellung Futterautomaten PETLIBRO PETLIBRO Granary WiFi Feeder Ausgewogener Trockenfutter-Allrounder für Katzen und kleine bis mittelgroße Hunde, wenn flexible Zeitpläne, App-Protokolle und ein großer Vorrat wichtiger sind als Kamera oder Zugangskontrolle. Sehr gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzen kleine bis mittelgroße Hunde Trockenfütterung mit bis zu zehn Mahlzeiten täglich Preis & Kaufen Affiliate-Link Amazon Bei Amazon ansehen PETLIBRO Weiß / Einzelne Schale Anschaffungspreis 109,99 € Hinterlegter Preis Bei PETLIBRO ansehen Preis und Verfügbarkeit beim Händl",
         "availableWithoutJavaScript": true
       },
       "structuredData": {
@@ -53492,7 +53598,7 @@
         "PETLIBRO",
         "Flappie"
       ],
-      "textSha256": "30404400f5ef83899ac1b70a05726510b7160231b4221fb6c8d3a42769762887",
+      "textSha256": "c38d5edc651e51960aa524442a4dafa6b4196eefa51836bd86c732f6beaa5f0c",
       "incomingSources": [
         "/automatische-katzentoiletten/",
         "/hersteller/petlibro/",
@@ -53708,8 +53814,8 @@
         }
       ],
       "main": {
-        "characters": 9854,
-        "sha256": "9cee2e406a3d3ff46b9251073d1379c9d521f12b251f034ce8abcbad20132633",
+        "characters": 9856,
+        "sha256": "5d168f1f30d6c27c3f7f40947e55ef8652d771c8623290bc9e239b00756ea234",
         "excerpt": "1 / 3 1 / 3 PETLIBRO Luma Smart Self-Cleaning Litter Box in hochwertiger Produktansicht Automatische Katzentoiletten PETLIBRO PETLIBRO Luma Smart Self-Cleaning Litter Box Für erwachsene Katzen von 1 bis 10 kg und Mehrkatzenhaushalte, wenn 34 cm Einstieg, harter Stellplatz, Kamera-Cloud und laufende Filter-/Beutelkosten passen. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. erwachsene Katzen von 1 bis 10 kg Mehrkatzenprofile für bis zu 10 Katzen Haushalte mit hartem ebenem Stellplatz und bewusst gewählter Kamera-Cloud Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 529,99 € Hinterlegter Preis Bei Amazon ansehen PETLIBRO 1 paket Anschaffungsp",
         "availableWithoutJavaScript": true
       },
@@ -53774,7 +53880,7 @@
         "PETLIBRO",
         "Flappie"
       ],
-      "textSha256": "c7162f6b9189f96e0081c843d6a193fa5cb1d4e25b13464153b854157fd50cf9",
+      "textSha256": "38d44df685961050360afd01cc88ab69b7a61efe6cd95215533dcbb1b08c6982",
       "incomingSources": [
         "/futterautomat-katze/",
         "/hersteller/petlibro/",
@@ -54022,7 +54128,7 @@
       ],
       "main": {
         "characters": 8792,
-        "sha256": "bcf8099c7d127690dc1b3af64cb36226c036a35d945c9821e210980784477a60",
+        "sha256": "e1cf3c95d0ee8db761400a8495b99465e385f155e01bc56cd2ec1e5f7b184f08",
         "excerpt": "1 / 4 1 / 4 PETLIBRO One RFID Smart Feeder in redaktioneller Produktdarstellung Futterautomaten PETLIBRO PETLIBRO One RFID Smart Feeder Der PETLIBRO One RFID Smart Feeder kombiniert automatische Fütterung mit einem geschützten Napfzugang und eignet sich ideal für Mehrkatzenhaushalte. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. katze mehrere-tiere app Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 141,54 € Hinterlegter Preis Bei Amazon ansehen PETLIBRO 1 Paket / Schwarz Anschaffungspreis 199,99 € Hinterlegter Preis Bei PETLIBRO ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Pro",
         "availableWithoutJavaScript": true
       },
@@ -54088,7 +54194,7 @@
         "Passend zum Produkt weiterlesen",
         "PETLIBRO"
       ],
-      "textSha256": "ce5de7a113b57a96da11528d549c9a7e6191bc9e67896ba9da10b3fcdf89d245",
+      "textSha256": "d5467e7ff8b51988ff564a7b39b307b138e182c6de4e3bc85f590b0d378d62fb",
       "incomingSources": [
         "/futterautomat-im-urlaub/",
         "/hersteller/petlibro/",
@@ -54336,7 +54442,7 @@
       ],
       "main": {
         "characters": 12115,
-        "sha256": "2999fda3867db5c14711f68666793a898c3c076af00ceeca314896314391bb31",
+        "sha256": "1ccda03cf9ba726bef2aa970a79fb558b1202a02c4a87d97d543b48ac3c59dce",
         "excerpt": "1 / 4 1 / 4 PETLIBRO Polar Wet Food Feeder mit drei gekühlten Nassfutterfächern Futterautomaten PETLIBRO PETLIBRO Polar Wet Food Feeder Eine der interessantesten automatischen Nassfutterlösungen für Katzen und kleine Hunde, wenn aktive Kühlung und drei vorbereitete Mahlzeiten wichtiger sind als vollständig netzunabhängiger Betrieb. Sehr gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzen und kleine Hunde mit Nassfutter bis zu drei vorbereitete Mahlzeiten aktive Kühlung ohne Kühlakkus Preis & Kaufen Affiliate-Link Amazon Bei Amazon ansehen PETLIBRO Schwarz / Edelstahlnapf Anschaffungspreis 199,99 € Hinterlegter Preis Bei PETLIBRO ansehen Preis un",
         "availableWithoutJavaScript": true
       },
@@ -54393,8 +54499,8 @@
         "Unabhängige Tests und Reviews",
         "Nutzerbewertungen nach Plattform",
         "Besser passend, nicht nur ähnlich",
-        "PetTec Cam 360",
         "Reolink E1 Zoom (4K)",
+        "PetTec Cam 360",
         "Furbo Mini 360",
         "So ist diese Seite einzuordnen",
         "Passend weiterentscheiden",
@@ -54404,11 +54510,12 @@
         "PETLIBRO",
         "Flappie"
       ],
-      "textSha256": "1cd92dbd5bdbba4c9883e72ef70c58dbacceaf2d81f4c520e0eb4ed0ae5ce914",
+      "textSha256": "2f5dc5e50e5ceccb755bd971f000c3fc6cb10132dd64bce04444ef9d3f0956d8",
       "incomingSources": [
         "/haustierkameras/",
         "/hersteller/petlibro/",
         "/produkt/furbo-360-katzenkamera/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/vergleiche/beste-haustierkameras/"
       ],
       "contextualSources": [
@@ -54486,8 +54593,8 @@
           "Unabhängige Tests und Reviews",
           "Nutzerbewertungen nach Plattform",
           "Besser passend, nicht nur ähnlich",
-          "PetTec Cam 360",
           "Reolink E1 Zoom (4K)",
+          "PetTec Cam 360",
           "Furbo Mini 360",
           "So ist diese Seite einzuordnen",
           "Passend weiterentscheiden",
@@ -54566,7 +54673,7 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 8,
+      "incomingEdges": 9,
       "contextualIncomingEdges": 1,
       "contextualOutgoing": [
         {
@@ -54590,7 +54697,7 @@
       ],
       "main": {
         "characters": 9560,
-        "sha256": "27d594ab27ea2b11888ed315a032adb588ff3711a5f0c719ea887e64fe42ea78",
+        "sha256": "7753150115425077babf5320920427cfae37c4f158bfda5cc72b93cddbdb789a",
         "excerpt": "1 / 1 PETLIBRO Scout Smart Camera in hochwertiger Produktansicht Haustierkameras PETLIBRO PETLIBRO Scout Smart Camera Für Haushalte, die mehrere Tiere an einem festen Innenbereich unterscheiden möchten und die Cloud- sowie Abokosten bewusst akzeptieren. Solide Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. fester Innenbereich bis zu fünf unterscheidbare Hunde oder Katzen Nutzer mit bewusst gewähltem Cloud-Abo Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 89,99 € Hinterlegter Preis Bei Amazon ansehen PETLIBRO 1 Paket / Weiß Anschaffungspreis 109,99 € Hinterlegter Preis Bei PETLIBRO ansehen Preis und Verfügbarkeit beim Händler prüfen. Optionale",
         "availableWithoutJavaScript": true
       },
@@ -55273,7 +55380,7 @@
         "PetSafe",
         "Smarte Futterautomaten"
       ],
-      "textSha256": "fcae1944294c538cb085657f72826d2a12876f99de6ac76d0f53cf35bd1daba7",
+      "textSha256": "066a01ddbe0021e6c5dde1ca3202ac0c725467b531f736983a6ec381890f22c7",
       "incomingSources": [
         "/hersteller/petsafe/",
         "/vergleiche/beste-futterautomaten-fuer-katzen/",
@@ -55492,7 +55599,7 @@
       ],
       "main": {
         "characters": 8919,
-        "sha256": "745b96880ea6114a967fec1cb3e5e98bad0e00e67072f2c1e6cbdd730e054551",
+        "sha256": "07cfc374f275b0b46e498d3888e40fffc92b1b8301c35bb49d13a576f8623b1e",
         "excerpt": "1 / 2 1 / 2 PetSafe FreshFeed Refrigerated Pet Feeder in redaktioneller Produktdarstellung Futterautomaten PetSafe PetSafe FreshFeed Refrigerated Pet Feeder Dieses Produkt ist aktuell nicht lieferbar. Die Qualitätsbewertung bleibt bestehen, eine Kaufempfehlung wird derzeit nicht ausgespielt. Hervorragend Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzen und kleine Hunde Nass- und Frischfutter Sechs vorbereitete Mahlzeiten Preis & Kaufen Affiliate-Link Dieses Produkt ist aktuell nicht lieferbar. Prüfe die Alternativen auf dieser Seite. Amazon Früherer Anschaffungspreis 219 € Veralteter Preisstand Bei Amazon ansehen Preis und Verfügbarkeit beim Händ",
         "availableWithoutJavaScript": true
       },
@@ -55559,7 +55666,7 @@
         "PetSafe",
         "Flappie"
       ],
-      "textSha256": "05a826c8c50b41c4bc1a0d3ec7e90c25b3c19adc5f376de2a7fdc1c58a5ef29b",
+      "textSha256": "63f34af89794946a253e3415b6ec6cad0aa46bed6471a1b337afdf365c408ce2",
       "incomingSources": [
         "/hersteller/petsafe/",
         "/vergleiche/beste-futterautomaten-fuer-hunde/",
@@ -55778,7 +55885,7 @@
       ],
       "main": {
         "characters": 8363,
-        "sha256": "d8a8c197afe769735ee8a705751d69c633ec70a514cb7932c74f406dace4faee",
+        "sha256": "41187c84369003410c8d69c8c4ff0123ebbfcd5aa3b21d63716494ee2c36ca67",
         "excerpt": "1 / 2 1 / 2 PetSafe Healthy Pet Simply Feed in redaktioneller Produktdarstellung Futterautomaten PetSafe PetSafe Healthy Pet Simply Feed Robuste Offline-Wahl für Katzen und kleine bis mittelgroße Hunde, wenn lokale Bedienung, großer Vorrat und breite Portionierung wichtiger sind als App oder Kamera. Sehr gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Offline-Betrieb Katzen und kleine bis mittelgroße Hunde Große Kroketten Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 219,99 € Hinterlegter Preis Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Provision. Im Vergleich eino",
         "availableWithoutJavaScript": true
       },
@@ -55845,7 +55952,7 @@
         "Flappie",
         "PetSafe"
       ],
-      "textSha256": "3ae7ac9cbd9be7997df82073872026f592faaa5d98d9a33c2d90816844df8ceb",
+      "textSha256": "fc158a99c00b7dc94351d126eed407b75d9a00782565b5ccbafbeb22071798db",
       "incomingSources": [
         "/hersteller/petsafe/",
         "/produkt/cat-mate-elite-355w/",
@@ -56018,9 +56125,9 @@
         }
       ],
       "main": {
-        "characters": 7692,
-        "sha256": "af5a9c415eb183ced61f7d3db2e37c3a9555f36e4d29a06a70aec1795ee34b76",
-        "excerpt": "1 / 4 1 / 4 PetSafe Mikrochip Katzenklappe in heller Studioaufnahme Katzenklappen PetSafe PetSafe Mikrochip Katzenklappe Für lokalen selektiven Eingang, wenn FDX-B-Kompatibilität vorab geprüft wird und keine App nötig ist. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Selektiver Eingang Bis zu 40 Katzen Lokaler Batteriebetrieb Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 69,95 € Hinterlegter Preis Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Provision. Im Vergleich einordnen Entscheidung zuerst Was im Alltag wirklich zählt Der wichtigste Vorteil Bis zu 40 Katzen D",
+        "characters": 7704,
+        "sha256": "6d2f1982959ca18f65754c0c221bf36d03bbc1b5b4b4c69be23e8675ae2d22b3",
+        "excerpt": "1 / 4 1 / 4 PetSafe Mikrochip Katzenklappe in heller Studioaufnahme Katzenklappen PetSafe PetSafe Mikrochip Katzenklappe Für lokalen selektiven Eingang, wenn FDX-B-Kompatibilität vorab geprüft wird und keine App nötig ist. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Selektiver Eingang Bis zu 40 Katzen Lokaler Batteriebetrieb Preis & Kaufen Affiliate-Link Amazon Früherer Anschaffungspreis 69,95 € Veralteter Preisstand Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Provision. Im Vergleich einordnen Entscheidung zuerst Was im Alltag wirklich zählt Der wichtigste Vorteil Bis zu",
         "availableWithoutJavaScript": true
       },
       "structuredData": {
@@ -56367,7 +56474,7 @@
         "Flappie",
         "PetSafe"
       ],
-      "textSha256": "6cb537db22b4a8aad96f693ed152be77326cd3f3402237c2855da129fe4bbe48",
+      "textSha256": "d26fc446d77f1569bc2cb8c8816ea675f8dfb6151b22a9ee84324aa278ce6fef",
       "incomingSources": [
         "/futterautomat-bei-stromausfall/",
         "/hersteller/petsafe/",
@@ -56582,7 +56689,7 @@
       ],
       "main": {
         "characters": 9208,
-        "sha256": "8cc66f1e513b2bf5fc08f0e69ce1a58f56cd29cd9173b6e124ee17f9fe48755e",
+        "sha256": "0ba3128328763d023c27451acc584b26d81363665d8b30091d4a9058781d231a",
         "excerpt": "1 / 4 1 / 4 PetSafe Smart Feed 2.0 in redaktioneller Produktdarstellung Futterautomaten PetSafe PetSafe Smart Feed 2.0 Eine etablierte Smart-Feed-Lösung für größere Portionen und Kroketten, sofern 2,4-GHz-WLAN, App und das große Gehäuse zum Haushalt passen. Sehr gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzen und kleine bis mittelgroße Hunde Große Portionen Großer Vorrat Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 174,64 € Hinterlegter Preis Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Provision. Im Vergleich einordnen Entscheidung zuerst Was im Alltag wirkl",
         "availableWithoutJavaScript": true
       },
@@ -58220,7 +58327,7 @@
           {
             "a": "/hersteller/prothelis/",
             "b": "/produkt/prothelis-area-pets/",
-            "similarity": 0.536,
+            "similarity": 0.535,
             "sameType": false,
             "sameCluster": true,
             "sharedBlocks": [
@@ -58514,7 +58621,19 @@
           "Die Produktdaten weisen dieses Modell ausdrücklich für große Hunde oder hohe Kapazität aus.",
           "Komplettklappe mit lokaler KI-Beuteerkennung."
         ],
-        "overlaps": [],
+        "overlaps": [
+          {
+            "a": "/hersteller/reolink/",
+            "b": "/produkt/reolink-e1-zoom/",
+            "similarity": 0.5,
+            "sameType": false,
+            "sameCluster": true,
+            "sharedBlocks": [
+              "Für einen festen Innenbereich, wenn lokale Speicherung, Tiererkennung und optischer Zoom wichtiger sind als pet-spezifische Leckerli- oder Gesundheitsfunktionen.",
+              "Für einen festen Innenbereich, wenn lokale Speicherung, Tiererkennung und optischer Zoom wichtiger sind als pet-spezifische Leckerli- oder Gesundheitsfunktionen."
+            ]
+          }
+        ],
         "duplicateVerdictWith": [],
         "interpretation": "Titel, Abschnitte und spezifische Datenauszüge sind Prüfbelege, keine automatische Bestätigung eigenständiger Suchintention. Ähnlichkeit ist kein Indexierungsgrund."
       },
@@ -58767,7 +58886,7 @@
           {
             "a": "/hersteller/satellai/",
             "b": "/produkt/satellai-collar-go/",
-            "similarity": 0.561,
+            "similarity": 0.563,
             "sameType": false,
             "sameCluster": true,
             "sharedBlocks": [
@@ -58898,7 +59017,7 @@
         "Smarte Futterautomaten",
         "SureFeed"
       ],
-      "textSha256": "0324574790eb9c2798e7a02651b527d1f253037efcc6b8a371204c5cf98858ad",
+      "textSha256": "7077b259ac6185da859e9ff53566689aab8a89c1fb80a5ac2799e6dbe9f7ca4e",
       "incomingSources": [
         "/hersteller/surefeed/",
         "/smarte-futterautomaten/",
@@ -59110,7 +59229,7 @@
       "contextualOutgoing": [],
       "main": {
         "characters": 8835,
-        "sha256": "bd763798b6a30a86e1d54ad3444cb2946599e31371fb617aa1bad197ec7c7fbd",
+        "sha256": "39b7cba51072c71b0cf4f2004dfa32374c294d67d420ca27f40a6fe71eee0c81",
         "excerpt": "1 / 2 1 / 2 SureFeed Microchip Pet Feeder Connect in redaktioneller Produktdarstellung Futterautomaten SureFeed SureFeed Microchip Pet Feeder Connect Sinnvoll für getrennte Rationen und nachvollziehbare Fressgewohnheiten; für die App wird ein vorhandener oder zusätzlich erworbener Sure Petcare Hub benötigt. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. katze mehrere-tiere app Preis & Kaufen Affiliate-Link Amazon Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Provision. Im Vergleich einordnen Entscheidung zuerst Was im Alltag wirklich zählt Der wichtigste Vorteil Kontrollierte",
         "availableWithoutJavaScript": true
       },
@@ -59177,7 +59296,7 @@
         "SureFeed",
         "Smarte Futterautomaten"
       ],
-      "textSha256": "4f823d7b63af6a481759d6942a9a0e3fcf2ec8513306f75caf7c8c0c1dca6f7f",
+      "textSha256": "a590f6c42e2de5647f1687a7e68ff4182e8e1c7168284d1cd45ce11969d33a6b",
       "incomingSources": [
         "/futterautomat-bei-uebergewicht/",
         "/hersteller/surefeed/",
@@ -59404,9 +59523,9 @@
         }
       ],
       "main": {
-        "characters": 8816,
-        "sha256": "b4f42bb920355e2c629bd955949d2784352e7745df039fabf43489f97543825d",
-        "excerpt": "1 / 4 1 / 4 SureFeed Microchip Pet Feeder in redaktioneller Produktdarstellung Futterautomaten SureFeed SureFeed Microchip Pet Feeder Die klare Wahl für Mehrtierhaushalte mit Futterklau, Spezialdiäten oder unterschiedlichen Rationen, wenn Zeitpläne und App-Auswertung nicht benötigt werden. Hervorragend Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Mehrkatzenhaushalte mit Futterklau unterschiedliche Diäten oder Medikamente Nass- und Trockenfutter Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 127,29 € Hinterlegter Preis Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Provis",
+        "characters": 8828,
+        "sha256": "989f6450eb5b6d455cea5ae8887c6109ce17328e22ba30530040a461cc1c2652",
+        "excerpt": "1 / 4 1 / 4 SureFeed Microchip Pet Feeder in redaktioneller Produktdarstellung Futterautomaten SureFeed SureFeed Microchip Pet Feeder Die klare Wahl für Mehrtierhaushalte mit Futterklau, Spezialdiäten oder unterschiedlichen Rationen, wenn Zeitpläne und App-Auswertung nicht benötigt werden. Hervorragend Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Mehrkatzenhaushalte mit Futterklau unterschiedliche Diäten oder Medikamente Nass- und Trockenfutter Preis & Kaufen Affiliate-Link Amazon Früherer Anschaffungspreis 127,29 € Veralteter Preisstand Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf.",
         "availableWithoutJavaScript": true
       },
       "structuredData": {
@@ -61912,7 +62031,7 @@
         "WOPET",
         "Smarte Futterautomaten"
       ],
-      "textSha256": "0f20afc70e5c5a303d35f544d6b3a2f114e36e4836b0c09fc885adb463760a68",
+      "textSha256": "25e3115f726685f518c7806993552bf07a3a280fd3076cff35758f4a024a09aa",
       "incomingSources": [
         "/hersteller/wopet/",
         "/vergleiche/futterautomat-mit-app/"
@@ -62141,7 +62260,7 @@
       ],
       "main": {
         "characters": 7644,
-        "sha256": "1d87fef5c5d9a1150478adc382ee8bce611b3c64658ad20d9a2ffb26f8b06d77",
+        "sha256": "5171559ae1f75160f6e96986716a641a53eebaccefb542c89b208b54ea3ba284",
         "excerpt": "1 / 1 WOPET Cube Air WiFi Pet Feeder CA10 in redaktioneller Produktdarstellung Futterautomaten WOPET WOPET Cube Air WiFi Pet Feeder CA10 Dieses Produkt ist aktuell nicht lieferbar. Die Qualitätsbewertung bleibt bestehen, eine Kaufempfehlung wird derzeit nicht ausgespielt. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. katze hund app Preis & Kaufen Affiliate-Link Dieses Produkt ist aktuell nicht lieferbar. Prüfe die Alternativen auf dieser Seite. Amazon Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Provision. Im Vergleich einordnen Entscheidung zuerst Was im Alltag wirklich zä",
         "availableWithoutJavaScript": true
       },
@@ -62202,7 +62321,7 @@
         "Smarte Futterautomaten",
         "WOPET"
       ],
-      "textSha256": "35516fefc50e2534992cedb70a7bfc60057ca0c547a444bebfed927a75a7373e",
+      "textSha256": "59b992785c9ba8acbda5520f4c09bb6a5b348b3a1dfa8e31bf818f9c6633a8dc",
       "incomingSources": [
         "/hersteller/wopet/",
         "/vergleiche/beste-futterautomaten-mit-kamera/"
@@ -62431,7 +62550,7 @@
       ],
       "main": {
         "characters": 7410,
-        "sha256": "77701cd1edfa38917087a78de872a6a90b7b1d85fdce4b1b5e71f0732d3b1840",
+        "sha256": "9b003f8fe23ddbc5e8c32946a1f3e4776a599a9678bf98b5a6942a302ffb1f23",
         "excerpt": "1 / 5 1 / 5 WOPET Heritage View Camera Feeder in redaktioneller Produktdarstellung Futterautomaten WOPET WOPET Heritage View Camera Feeder Dieses Produkt ist aktuell nicht lieferbar. Die Qualitätsbewertung bleibt bestehen, eine Kaufempfehlung wird derzeit nicht ausgespielt. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. katze hund kamera Preis & Kaufen Affiliate-Link Dieses Produkt ist aktuell nicht lieferbar. Prüfe die Alternativen auf dieser Seite. Derzeit ist keine geprüfte Händleroption hinterlegt. Im Vergleich einordnen Entscheidung zuerst Was im Alltag wirklich zählt Der wichtigste Vorteil Video und Fütterungsplan kombiniert 6-Liter- Futtera",
         "availableWithoutJavaScript": true
       },
@@ -62494,7 +62613,7 @@
         "WOPET",
         "Flappie"
       ],
-      "textSha256": "0f8496f81471cff0573e89fb46b9858f1beb011ad54a887f3a282e92ebfa5915",
+      "textSha256": "874f7d85f61519d4eeeccf15f46d5f5f1dbc48a8c14e9e1acb068d58472fb0f3",
       "incomingSources": [
         "/hersteller/wopet/",
         "/vergleiche/beste-futterautomaten-fuer-hunde/",
@@ -62721,7 +62840,7 @@
       ],
       "main": {
         "characters": 8150,
-        "sha256": "34ef2fab2cea2739e4f6223ad6f2295205d7b3f6b050b320b7f0f1ef90b70d7d",
+        "sha256": "73bd7ec00c239fa518d72fb1a7b629e6819023adf822bc40b704a708dc4a1dfa",
         "excerpt": "1 / 4 1 / 4 WOPET Patrol F07 Pro als weißer 6-Liter- Futterautomat Futterautomaten WOPET WOPET Patrol F07 Pro Dieses Produkt ist aktuell nicht lieferbar. Die Qualitätsbewertung bleibt bestehen, eine Kaufempfehlung wird derzeit nicht ausgespielt. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzen kleine bis mittelgroße Hunde bis zu 15 Mahlzeiten täglich Preis & Kaufen Affiliate-Link Dieses Produkt ist aktuell nicht lieferbar. Prüfe die Alternativen auf dieser Seite. Derzeit ist keine geprüfte Händleroption hinterlegt. Im Vergleich einordnen Entscheidung zuerst Was im Alltag wirklich zählt Der wichtigste Vorteil 6 Liter Kapazität Der Patrol F07 P",
         "availableWithoutJavaScript": true
       },
@@ -62782,7 +62901,7 @@
         "WOPET",
         "Wie groß sollte ein Futterautomat sein?"
       ],
-      "textSha256": "0356b286a8bac7b6ff5a8ae2db267eb804ea6b4a10230c1c4bcffa2249bcda9d",
+      "textSha256": "a0d7aaa60bef1ab0c2d4e59c94737c1450c2c90aafc86968dd9066f467a94b01",
       "incomingSources": [
         "/hersteller/wopet/"
       ],
@@ -62993,7 +63112,7 @@
       ],
       "main": {
         "characters": 7560,
-        "sha256": "bb858f90d6ea9adb428d6bfad9e0d093a9ad283659c0713abba6fe9a3913ed64",
+        "sha256": "66b1a34b2ea59b63b2b90138ce9fe3776e32512f9f6b30971e02e09ab42e6a75",
         "excerpt": "1 / 4 1 / 4 WOPET Pioneer F01 Plus in redaktioneller Produktdarstellung Futterautomaten WOPET WOPET Pioneer F01 Plus Dieses Produkt ist aktuell nicht lieferbar. Die Qualitätsbewertung bleibt bestehen, eine Kaufempfehlung wird derzeit nicht ausgespielt. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. katze hund urlaub Preis & Kaufen Affiliate-Link Dieses Produkt ist aktuell nicht lieferbar. Prüfe die Alternativen auf dieser Seite. Derzeit ist keine geprüfte Händleroption hinterlegt. Im Vergleich einordnen Entscheidung zuerst Was im Alltag wirklich zählt Der wichtigste Vorteil Großer Vorrat für längere Nachfüllintervalle Der WOPET Pioneer F01 Plus bi",
         "availableWithoutJavaScript": true
       },
@@ -63060,7 +63179,7 @@
         "Xiaomi",
         "Smarte Futterautomaten"
       ],
-      "textSha256": "2e302726bdc6aa591f4b7f268406825ee7f5dd0f0fc5247d29b36fdd3bfa7ea5",
+      "textSha256": "1da1d655ac8e117d1d27302a9d2c076cd244361f3db8118927aa73720af77f7a",
       "incomingSources": [
         "/futterautomat-bei-stromausfall/",
         "/futterautomat-bei-uebergewicht/",
@@ -63331,7 +63450,7 @@
       ],
       "main": {
         "characters": 9301,
-        "sha256": "cf62e2125033d632065529867f9389524b941ff538585bb38d41e49eef302d21",
+        "sha256": "de338328e304c8ba59605e8ee18351e9a24b109c1fa2f2de4c9c4bd3c24413ca",
         "excerpt": "1 / 4 1 / 4 Xiaomi Smart Pet Food Feeder 2 in redaktioneller Produktdarstellung Futterautomaten Xiaomi Xiaomi Smart Pet Food Feeder 2 Starke Smart-Home-Option für Katzen und Hunde bis 40 cm Schulterhöhe, wenn Napfgewicht, Füllstandswarnung und automatische Entblockung wichtig sind. Hervorragend Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzen Hunde bis 40 cm Xiaomi Home Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 87,99 € Hinterlegter Preis Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Provision. Im Vergleich einordnen Entscheidung zuerst Was im Alltag wirklich zäh",
         "availableWithoutJavaScript": true
       },
@@ -64312,6 +64431,258 @@
       "queryLimitation": "Export hat keine URL-Query-Paare; globale Suchanfragen nicht auf URLs verteilt."
     },
     {
+      "route": "/ratgeber/technikgeschenke-haustiere/",
+      "url": "https://pfotentechnik.de/ratgeber/technikgeschenke-haustiere/",
+      "type": "guide",
+      "cluster": "geschenke",
+      "title": "Sinnvolle Technikgeschenke für Hunde & Katzen | Geschenkfinder",
+      "source": "src/content/pages/technikgeschenke-haustiere.md",
+      "sourceSha256": "7296ef2ab6b1968ed85a68027eb031603104049c62c7646020d057c32d65ec80",
+      "description": "Finde durchdachte Technikgeschenke für Hunde, Katzen und ihre Menschen. Mit persönlichem Geschenkfinder, ehrlichen Grenzen und transparenten Folgekosten.",
+      "declaredCanonical": "/ratgeber/technikgeschenke-haustiere/",
+      "declaredNoindex": false,
+      "declaredSitemap": true,
+      "sitemapIncluded": true,
+      "canonical": [
+        "https://pfotentechnik.de/ratgeber/technikgeschenke-haustiere/"
+      ],
+      "robots": "index,follow,max-image-preview:large",
+      "schemaErrors": [],
+      "h1": [
+        "Sinnvolle Technikgeschenke. Für Hund, Katze & euch."
+      ],
+      "headings": [
+        "Eine kleine Auswahl. Eine gute Entscheidung.",
+        "Von der Idee zur Auswahl.",
+        "Ideen zum Kennenlernen.",
+        "PETLIBRO Dockstream 2 Smart Cordless",
+        "Furbo Mini 360",
+        "PETLIBRO Dockstream 2 Smart",
+        "Eine andere Geschenkidee könnte besser passen.",
+        "Die Unterschiede zählen.",
+        "Das beste Geschenk? Passt in ein echtes Leben.",
+        "Was soll leichter werden?",
+        "Wer übernimmt den Rest?",
+        "Ist die Idee wirklich gewünscht?",
+        "Was soll die Technik wirklich lösen?",
+        "Soll jedes Tier nur sein eigenes Futter bekommen?",
+        "Wird ein Einblick in die Wohnung wirklich gewünscht?",
+        "Sind Tiergröße, Netz und Dienstkosten schon geklärt?",
+        "Was kostet ein gutes Technikgeschenk?",
+        "Erst die Routine verstehen. Dann das Gerät aussuchen.",
+        "Fütterung: Das Futter setzt die Grenze",
+        "Trinkbrunnen: Pflege gehört zum Geschenk",
+        "GPS: Nur mit den Menschen zusammen planen",
+        "Kameras: Einblick braucht Einverständnis",
+        "Wann gemeinsames Aussuchen das bessere Geschenk ist",
+        "Ein Anlass ist kein Kaufargument",
+        "So entsteht die Vorauswahl",
+        "Häufige Fragen"
+      ],
+      "textSha256": "09a24d321ab44a33364d8bb0ccd8c849ec510a6ddde4625e4c88c69bb50e6624",
+      "incomingSources": [
+        "/ratgeber/technikgeschenke-haustiere/",
+        "/wissen/"
+      ],
+      "contextualSources": [],
+      "clickDepth": 2,
+      "indexation": {
+        "status": "unknown",
+        "observedAt": null,
+        "source": null,
+        "lastCrawl": null,
+        "googleSelectedCanonical": null,
+        "sitemapAssociation": null
+      },
+      "historicallyIndexedContextSources": [],
+      "protected": false,
+      "technicalIssues": [
+        "HTTP_NOT_CHECKED"
+      ],
+      "http": null,
+      "performance": null,
+      "performancePeriod": {
+        "startDate": "2026-08-15",
+        "endDate": "2026-11-14"
+      },
+      "pageQueries": null,
+      "valueReview": {
+        "question": "Sinnvolle Technikgeschenke für Hunde & Katzen | Geschenkfinder",
+        "headings": [
+          "Eine kleine Auswahl. Eine gute Entscheidung.",
+          "Von der Idee zur Auswahl.",
+          "Ideen zum Kennenlernen.",
+          "PETLIBRO Dockstream 2 Smart Cordless",
+          "Furbo Mini 360",
+          "PETLIBRO Dockstream 2 Smart",
+          "Eine andere Geschenkidee könnte besser passen.",
+          "Die Unterschiede zählen.",
+          "Das beste Geschenk? Passt in ein echtes Leben.",
+          "Was soll leichter werden?",
+          "Wer übernimmt den Rest?",
+          "Ist die Idee wirklich gewünscht?",
+          "Was soll die Technik wirklich lösen?",
+          "Soll jedes Tier nur sein eigenes Futter bekommen?",
+          "Wird ein Einblick in die Wohnung wirklich gewünscht?",
+          "Sind Tiergröße, Netz und Dienstkosten schon geklärt?",
+          "Was kostet ein gutes Technikgeschenk?",
+          "Erst die Routine verstehen. Dann das Gerät aussuchen.",
+          "Fütterung: Das Futter setzt die Grenze",
+          "Trinkbrunnen: Pflege gehört zum Geschenk",
+          "GPS: Nur mit den Menschen zusammen planen",
+          "Kameras: Einblick braucht Einverständnis",
+          "Wann gemeinsames Aussuchen das bessere Geschenk ist",
+          "Ein Anlass ist kein Kaufargument",
+          "So entsteht die Vorauswahl",
+          "Häufige Fragen"
+        ],
+        "recommendation": null,
+        "specificBlocks": [
+          "Für Tiermenschen, mit Bedacht gewählt",
+          "Für Hunde, Katzen und ihre Menschen: Finde eine Idee, die eine echte Aufgabe leichter macht – mit ehrlichen Grenzen statt großer Versprechen.",
+          "Dein Geschenk, durchdacht",
+          "Drei Fragen grenzen ein, was passen könnte. Offene Preis- und Verfügbarkeitsangaben bleiben sichtbar."
+        ],
+        "repeatedBlocks": [
+          "Eine starke Premium-Wahl für eine Katze oder einen kleinen Hund, wenn der Brunnen ohne dauerhaftes Stromkabel stehen soll und Trinkdaten wirklich genutzt werden. Für mehrere Tiere oder eine eindeutige Zuordnung pro Tier ist der Dockstream RFID sinnvoller.",
+          "Unterscheide nutzbares Wasservolumen vom maximalen Tankvolumen. Plane Nachfüllen nach dem Verbrauch deiner Tiere und frisches Wasser unabhängig davon.",
+          "Plane die Reinigung nach den freigegebenen Bauteilen; eine Spülmaschinenfreigabe einzelner Teile gilt nicht automatisch für Elektronik, Pumpe oder das gesamte Gerät.",
+          "Prüfe die passenden Ersatzfilter und das angegebene Wechselintervall vor dem Kauf. Aus der Filterausstattung folgt weder Keimfreiheit noch ein fester monatlicher Preis.",
+          "Prüfe den dokumentierten WLAN-Frequenzbereich an deinem Router. Ein vorhandenes WLAN-Netz belegt nicht, dass das Gerät dessen Frequenzband unterstützt.",
+          "Die Akkuangabe allein belegt keine Laufzeit im Dauerbetrieb. Vergleiche sie mit dem dokumentierten Betriebsmodus, bevor du einen Standort ohne Steckdose wählst.",
+          "Ein Herstellerwert in dB ist nur bei gleichen Messbedingungen vergleichbar. Prüfe den Aufstellort besonders bei Nutzung im Schlafzimmer.",
+          "Zwei-Wege-Audio",
+          "Vergleiche die dokumentierte Auflösung und den erfassten Bildbereich mit dem gewünschten Raum. Hohe Auflösung allein schließt tote Winkel nicht aus.",
+          "Prüfe Speicherort und Aufbewahrungsdauer getrennt vom Livebild; eine Liveansicht garantiert keine später abrufbare Aufnahme.",
+          "Vergleiche die dokumentierten Pflicht- und Zusatzkosten über die geplante Nutzungszeit; optionale Dienste und notwendige Verbrauchsmaterialien getrennt rechnen.",
+          "Plane den Standort passend zur dokumentierten Stromversorgung; ohne ausdrücklich belegtes Backup ist ein Weiterbetrieb bei Stromausfall nicht zugesichert.",
+          "Prüfe die hier genannten Interaktionsmöglichkeiten für deinen Alltag; Audio oder Leckerligabe ersetzen keine Betreuung vor Ort.",
+          "Die passendere Dockstream-2-Variante für einen festen Stellplatz mit Steckdose, wenn kontinuierlicher Wasserfluss und Trinktracking wichtiger sind als kabellose Aufstellung. Für Akku und Annäherungssensor gezielt den Dockstream 2 Smart Cordless prüfen.",
+          "Unterscheide nutzbares Wasservolumen vom maximalen Tankvolumen. Plane Nachfüllen nach dem Verbrauch deiner Tiere und frisches Wasser unabhängig davon.",
+          "Plane die Reinigung nach den freigegebenen Bauteilen; eine Spülmaschinenfreigabe einzelner Teile gilt nicht automatisch für Elektronik, Pumpe oder das gesamte Gerät.",
+          "Vergleiche die dokumentierten Pflicht- und Zusatzkosten über die geplante Nutzungszeit; optionale Dienste und notwendige Verbrauchsmaterialien getrennt rechnen.",
+          "Prüfe die passenden Ersatzfilter und das angegebene Wechselintervall vor dem Kauf. Aus der Filterausstattung folgt weder Keimfreiheit noch ein fester monatlicher Preis.",
+          "Plane den Standort passend zur dokumentierten Stromversorgung; ohne ausdrücklich belegtes Backup ist ein Weiterbetrieb bei Stromausfall nicht zugesichert.",
+          "Prüfe den dokumentierten WLAN-Frequenzbereich an deinem Router. Ein vorhandenes WLAN-Netz belegt nicht, dass das Gerät dessen Frequenzband unterstützt."
+        ],
+        "overlaps": [],
+        "duplicateVerdictWith": [],
+        "interpretation": "Titel, Abschnitte und spezifische Datenauszüge sind Prüfbelege, keine automatische Bestätigung eigenständiger Suchintention. Ähnlichkeit ist kein Indexierungsgrund."
+      },
+      "actions": [],
+      "suggestions": [
+        {
+          "priority": 1,
+          "kind": "technical-review",
+          "reason": "HTTP_NOT_CHECKED",
+          "automatic": false
+        },
+        {
+          "priority": 4,
+          "kind": "current-indexation-evidence",
+          "reason": "Kein exakter historischer URL-Beleg. Aktuelle URL Inspection erst nach autorisierter Einrichtung und unter Kontingentkontrolle.",
+          "automatic": false
+        }
+      ],
+      "incomingEdges": 9,
+      "contextualIncomingEdges": 0,
+      "contextualOutgoing": [
+        {
+          "target": "/ratgeber/technikgeschenke-haustiere/",
+          "hash": "#geschenkberatung",
+          "href": "#geschenkberatung",
+          "anchor": "Kaufberatung vor dem Schenken",
+          "contextual": true,
+          "inMain": true,
+          "automated": false
+        },
+        {
+          "target": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+          "hash": "",
+          "href": "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
+          "anchor": "Vergleich für Mehrtierhaushalte",
+          "contextual": true,
+          "inMain": true,
+          "automated": false
+        },
+        {
+          "target": "/trinkmenge-katze-messen/",
+          "hash": "",
+          "href": "/trinkmenge-katze-messen/",
+          "anchor": "Ratgeber zur Trinkmengenmessung",
+          "contextual": true,
+          "inMain": true,
+          "automated": false
+        },
+        {
+          "target": "/warum-brauchen-gps-tracker-ein-abo/",
+          "hash": "",
+          "href": "/warum-brauchen-gps-tracker-ein-abo/",
+          "anchor": "warum viele Tracker einen Dienst benötigen",
+          "contextual": true,
+          "inMain": true,
+          "automated": false
+        },
+        {
+          "target": "/vergleiche/beste-haustierkameras/",
+          "hash": "",
+          "href": "/vergleiche/beste-haustierkameras/",
+          "anchor": "Kameravergleich",
+          "contextual": true,
+          "inMain": true,
+          "automated": false
+        },
+        {
+          "target": "/katzenklappen/",
+          "hash": "",
+          "href": "/katzenklappen/",
+          "anchor": "Mikrochip-Katzenklappen",
+          "contextual": true,
+          "inMain": true,
+          "automated": false
+        },
+        {
+          "target": "/automatische-katzentoiletten/",
+          "hash": "",
+          "href": "/automatische-katzentoiletten/",
+          "anchor": "automatische Katzentoiletten",
+          "contextual": true,
+          "inMain": true,
+          "automated": false
+        },
+        {
+          "target": "/so-bewerten-wir/",
+          "hash": "",
+          "href": "/so-bewerten-wir/",
+          "anchor": "So bewerten wir",
+          "contextual": true,
+          "inMain": true,
+          "automated": false
+        },
+        {
+          "target": "/affiliate-hinweis/",
+          "hash": "",
+          "href": "/affiliate-hinweis/",
+          "anchor": "Affiliate-Hinweis",
+          "contextual": true,
+          "inMain": true,
+          "automated": false
+        }
+      ],
+      "main": {
+        "characters": 16802,
+        "sha256": "5108cb14de0acd9bee1160b146619cf1e2d4b3ca20bfb87dcafdd4d640eeb8d3",
+        "excerpt": "KI-generiertes Symbolbild Für Tiermenschen, mit Bedacht gewählt Sinnvolle Technikgeschenke. Für Hund, Katze & euch. Für Hunde, Katzen und ihre Menschen: Finde eine Idee, die eine echte Aufgabe leichter macht – mit ehrlichen Grenzen statt großer Versprechen. Zum Geschenkfinder Erst in Ruhe lesen Alltag statt Funktionsfülle Grenzen offen benannt Mit Bedacht ausgewählt Dein Geschenk, durchdacht Eine kleine Auswahl. Eine gute Entscheidung. Drei Fragen grenzen ein, was passen könnte. Offene Preis- und Verfügbarkeitsangaben bleiben sichtbar. Tier · Alltag · Budget Ohne interaktiven Finder: Entdecke die Modellbeispiele unten oder lies die Kaufberatung vor dem Schenken . Fütterung Futter & Routine T",
+        "availableWithoutJavaScript": true
+      },
+      "structuredData": {
+        "blocks": 4,
+        "valid": true
+      },
+      "queries": null,
+      "queryLimitation": "Export hat keine URL-Query-Paare; globale Suchanfragen nicht auf URLs verteilt."
+    },
+    {
       "route": "/redaktion/",
       "url": "https://pfotentechnik.de/redaktion/",
       "type": "utility",
@@ -64543,6 +64914,7 @@
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/zeromouse-2-0/",
         "/pumpe-katzentrinkbrunnen-reinigen/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/reichweite-von-gps-trackern/",
         "/seniorenhunde-richtig-versorgen/",
@@ -64696,7 +65068,7 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 552,
+      "incomingEdges": 553,
       "contextualIncomingEdges": 2,
       "contextualOutgoing": [
         {
@@ -65621,6 +65993,7 @@
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/zeromouse-2-0/",
         "/pumpe-katzentrinkbrunnen-reinigen/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/reichweite-von-gps-trackern/",
         "/seniorenhunde-richtig-versorgen/",
@@ -65890,7 +66263,7 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 1065,
+      "incomingEdges": 1068,
       "contextualIncomingEdges": 99,
       "contextualOutgoing": [
         {
@@ -66362,6 +66735,7 @@
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/zeromouse-2-0/",
         "/pumpe-katzentrinkbrunnen-reinigen/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/reichweite-von-gps-trackern/",
         "/seniorenhunde-richtig-versorgen/",
@@ -66570,7 +66944,7 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 320,
+      "incomingEdges": 321,
       "contextualIncomingEdges": 15,
       "contextualOutgoing": [
         {
@@ -67389,6 +67763,7 @@
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/zeromouse-2-0/",
         "/pumpe-katzentrinkbrunnen-reinigen/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/reichweite-von-gps-trackern/",
         "/seniorenhunde-richtig-versorgen/",
@@ -67461,6 +67836,7 @@
       ],
       "contextualSources": [
         "/affiliate-hinweis/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/vergleiche/beste-futterautomaten-fuer-hunde/",
         "/vergleiche/beste-futterautomaten-fuer-katzen/",
@@ -67585,8 +67961,8 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 445,
-      "contextualIncomingEdges": 16,
+      "incomingEdges": 447,
+      "contextualIncomingEdges": 17,
       "contextualOutgoing": [
         {
           "target": "/so-bewerten-wir/",
@@ -69736,6 +70112,7 @@
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/zeromouse-2-0/",
         "/pumpe-katzentrinkbrunnen-reinigen/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/reichweite-von-gps-trackern/",
         "/seniorenhunde-richtig-versorgen/",
@@ -69991,7 +70368,7 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 952,
+      "incomingEdges": 955,
       "contextualIncomingEdges": 75,
       "contextualOutgoing": [],
       "main": {
@@ -70317,6 +70694,7 @@
         "/hund-trinkt-ploetzlich-viel/",
         "/nierenkranke-katze-trinken/",
         "/produkt/petlibro-dockstream-2-smart-cordless/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/trinkbrunnen-fuer-katzen-sinnvoll/",
         "/trinkmenge-hund-messen/",
         "/trinkmenge-katze-messen/",
@@ -70327,7 +70705,8 @@
       ],
       "contextualSources": [
         "/hund-trinkt-ploetzlich-viel/",
-        "/produkt/petlibro-dockstream-2-smart-cordless/"
+        "/produkt/petlibro-dockstream-2-smart-cordless/",
+        "/ratgeber/technikgeschenke-haustiere/"
       ],
       "clickDepth": 2,
       "indexation": {
@@ -70420,8 +70799,8 @@
         }
       ],
       "suggestions": [],
-      "incomingEdges": 16,
-      "contextualIncomingEdges": 2,
+      "incomingEdges": 17,
+      "contextualIncomingEdges": 3,
       "contextualOutgoing": [
         {
           "target": "/trinkmenge-katze-messen/",
@@ -72873,6 +73252,7 @@
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/zeromouse-2-0/",
         "/pumpe-katzentrinkbrunnen-reinigen/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/reichweite-von-gps-trackern/",
         "/seniorenhunde-richtig-versorgen/",
@@ -73050,7 +73430,7 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 825,
+      "incomingEdges": 828,
       "contextualIncomingEdges": 16,
       "contextualOutgoing": [],
       "main": {
@@ -75069,6 +75449,7 @@
       "textSha256": "c716a16f89976a5b6274724a02d98dd46ef811833499648a8f4d0c1c7acf4979",
       "incomingSources": [
         "/glossar/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/vergleiche/",
         "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
         "/vergleiche/beste-futterautomaten-mit-kamera/",
@@ -75077,6 +75458,7 @@
       ],
       "contextualSources": [
         "/glossar/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
         "/vergleiche/beste-futterautomaten-mit-kamera/",
         "/welche-portionsgroesse-ist-richtig/",
@@ -75236,8 +75618,8 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 7,
-      "contextualIncomingEdges": 5,
+      "incomingEdges": 8,
+      "contextualIncomingEdges": 6,
       "contextualOutgoing": [
         {
           "target": "/smarte-futterautomaten/",
@@ -79930,7 +80312,7 @@
         "Flappie",
         "Haustierkameras"
       ],
-      "textSha256": "7792abf10aa05a7e57f2e8134017fcb5c299ed4f3f1cc856b725a6c7dc58270f",
+      "textSha256": "635e9558fd4b7ee379693e0fd1fedcf06d8c35fae3f2ae0f92ac2905622c3ff8",
       "incomingSources": [
         "/haustierkameras/",
         "/hersteller/enabot/",
@@ -79945,10 +80327,12 @@
         "/produkt/petlibro-scout-smart-camera/",
         "/produkt/pettec-cam-360/",
         "/produkt/reolink-e1-zoom/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/smarte-haustiertechnik/",
         "/vergleiche/"
       ],
       "contextualSources": [
+        "/ratgeber/technikgeschenke-haustiere/",
         "/smarte-haustiertechnik/"
       ],
       "clickDepth": 2,
@@ -80069,8 +80453,8 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 24,
-      "contextualIncomingEdges": 1,
+      "incomingEdges": 25,
+      "contextualIncomingEdges": 2,
       "contextualOutgoing": [
         {
           "target": "/haustierkameras/",
@@ -80147,7 +80531,7 @@
       ],
       "main": {
         "characters": 19335,
-        "sha256": "c7ecf589c647becfb2c169e135f2417658d2012f6a3a8d8b6f6f3287c14fa537",
+        "sha256": "cd3a5b61ef2756bdd825bad930879c23f215d861e5f5ea6d956537e30c3d0372",
         "excerpt": "Direktvergleich Haustierkameras im Vergleich Sechs Haustierkamera-Klassen nach lokaler Speicherung, Cloud, Abo, Tiererkennung, katzenspezifischer Interaktion und Tracking vergleichen. Finalist Reolink E1 Zoom (4K) Passt besonders für: Für einen festen Innenbereich, wenn lokale Speicherung, Tiererkennung und optischer Zoom wichtiger sind als pet-spezifische Leckerli- oder Gesundheitsfunktionen. 99,99 € Hervorragend Redaktioneller Score Produktcheck lesen Finalist für einen anderen Schwerpunkt PetTec Cam 360 Passt besonders für: Für einen festen Innenbereich, wenn lokale microSD-Aufzeichnung und kostenlose App-Basisfunktionen wichtiger sind als eine ausschließlich cloudbasierte Historie. 59,46",
         "availableWithoutJavaScript": true
       },
@@ -83768,6 +84152,7 @@
         "/glossar/",
         "/gps-tracker/",
         "/ifa-2026-haustiertechnik/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/vergleiche/gps-tracker-ohne-abo/",
         "/warum-brauchen-gps-tracker-ein-abo/",
         "/wie-funktionieren-gps-tracker/",
@@ -83775,6 +84160,7 @@
       ],
       "contextualSources": [
         "/glossar/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/vergleiche/gps-tracker-ohne-abo/"
       ],
       "clickDepth": 2,
@@ -83873,8 +84259,8 @@
         }
       ],
       "suggestions": [],
-      "incomingEdges": 10,
-      "contextualIncomingEdges": 2,
+      "incomingEdges": 11,
+      "contextualIncomingEdges": 3,
       "contextualOutgoing": [
         {
           "target": "/warum-brauchen-gps-tracker-ein-abo/",
@@ -91702,9 +92088,10 @@
         "Wie funktioniert ein Futterautomat?",
         "Wie viele Mahlzeiten braucht ein Hund?",
         "Wie viele Mahlzeiten braucht eine Katze?",
+        "Technik, die zum Alltag passt",
         "So bewertet PfotenTechnik"
       ],
-      "textSha256": "9bfcf881b3ca8d221cf1ff25d29e7b19692aeef23d1fcc6dae76dd3e02d80636",
+      "textSha256": "9d6e47ce0979e9bfcbf6ea58e533350faf44961191fae18543ddd3f5f7dea764",
       "incomingSources": [
         "/",
         "/affiliate-hinweis/",
@@ -91906,6 +92293,7 @@
         "/produkt/xiaomi-smart-pet-fountain-2/",
         "/produkt/zeromouse-2-0/",
         "/pumpe-katzentrinkbrunnen-reinigen/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/reichweite-von-gps-trackern/",
         "/seniorenhunde-richtig-versorgen/",
@@ -92114,6 +92502,7 @@
           "Wie funktioniert ein Futterautomat?",
           "Wie viele Mahlzeiten braucht ein Hund?",
           "Wie viele Mahlzeiten braucht eine Katze?",
+          "Technik, die zum Alltag passt",
           "So bewertet PfotenTechnik"
         ],
         "recommendation": null,
@@ -92155,13 +92544,13 @@
       },
       "actions": [],
       "suggestions": [],
-      "incomingEdges": 893,
+      "incomingEdges": 896,
       "contextualIncomingEdges": 1,
       "contextualOutgoing": [],
       "main": {
-        "characters": 9718,
-        "sha256": "7384825155dedf35e24710b2e16a0df85fa5d1fa52c7cfa2d640d0b30417f504",
-        "excerpt": "Wissen Ratgeber für moderne Tierhaltung Praxiswissen, Kaufberatung und unabhängige Vergleiche rund um smarte Haustiertechnik für Hunde und Katzen. 80 veröffentlichte Inhalte Regelmäßig neue Information zum Thema unserer besten Freunde. Empfohlen Der beste Einstieg 📷 Haustierkameras Blickbereich, Interaktion, Speicherung, Datenschutz und Folgekosten vor dem Modell klären. 🐈 Automatische Katzentoiletten Sicherheit, Passform, Streu, Gewöhnung und Gesamtkosten vor dem Modell klären. 🐾 Smarte Haustiertechnik Ratgeber zu Gerätekategorien, Datenschutz, Verbindungen, Folgekosten und Kaufentscheidungen. 📍 GPS-Tracker für Hunde und Katzen Ratgeber zu Technik, Tier-Fit, Kosten und aktuellen Modelle",
+        "characters": 9848,
+        "sha256": "9b8062d4560b4d54fceaded45044010b3af350a4cbe8bb75c5f01d19586c011f",
+        "excerpt": "Wissen Ratgeber für moderne Tierhaltung Praxiswissen, Kaufberatung und unabhängige Vergleiche rund um smarte Haustiertechnik für Hunde und Katzen. 81 veröffentlichte Inhalte Regelmäßig neue Information zum Thema unserer besten Freunde. Empfohlen Der beste Einstieg 📷 Haustierkameras Blickbereich, Interaktion, Speicherung, Datenschutz und Folgekosten vor dem Modell klären. 🐈 Automatische Katzentoiletten Sicherheit, Passform, Streu, Gewöhnung und Gesamtkosten vor dem Modell klären. 🐾 Smarte Haustiertechnik Ratgeber zu Gerätekategorien, Datenschutz, Verbindungen, Folgekosten und Kaufentscheidungen. 📍 GPS-Tracker für Hunde und Katzen Ratgeber zu Technik, Tier-Fit, Kosten und aktuellen Modelle",
         "availableWithoutJavaScript": true
       },
       "structuredData": {
@@ -93090,7 +93479,7 @@
     "productFilesUnchanged": 110,
     "editorialOriginalsPreserved": 437,
     "scoresPricesAffiliateLinksUnchanged": true,
-    "newPublicCanonicals": 0,
+    "newPublicCanonicals": 1,
     "experimentPages": 20,
     "protectedIncomingEdges": 205,
     "merge": false,

@@ -67,8 +67,8 @@ export function selectGifts<T extends GiftCandidate>(catalog:T[],answers:GiftAns
   }
   if(blocked){excluded++;continue}
   const priceUnknown=product.price==null||facts.giftPrice?.status!=='known';
-  if(priceUnknown)notes.push('Gerätepreis aktuell prüfen; Budgeteinhaltung offen.');
-  if(facts.giftAvailable?.status!=='known')notes.push('Lieferbarkeit derzeit nicht bestätigt.');
+  if(priceUnknown&&answers.budget!=='open')notes.push('Der aktuelle Preis kann über deinem Budget liegen.');
+  if(facts.giftAvailable?.status!=='known')notes.push('Lieferbarkeit vor dem Kauf beim Händler prüfen.');
   matches.push({product,reasons,cautions:notes,near,priceUnknown});
  }
  // One shared ranking: budget certainty first, technical fit next, then existing

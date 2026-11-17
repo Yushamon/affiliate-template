@@ -1,0 +1,74 @@
+{
+  "decision": "GO with documented neutral fallback where image rights are unproven",
+  "tests": [
+    {
+      "suite": "integration",
+      "tests": 145,
+      "pass": 145,
+      "fail": 0,
+      "skipped": 0,
+      "cancelled": 0
+    },
+    {
+      "suite": "gift",
+      "tests": 47,
+      "pass": 47,
+      "fail": 0,
+      "skipped": 0,
+      "cancelled": 0
+    },
+    {
+      "suite": "domain",
+      "tests": 137,
+      "pass": 137,
+      "fail": 0,
+      "skipped": 0,
+      "cancelled": 0
+    },
+    {
+      "suite": "seo",
+      "tests": 30,
+      "pass": 30,
+      "fail": 0,
+      "skipped": 0,
+      "cancelled": 0
+    }
+  ],
+  "totalTests": 359,
+  "failed": 0,
+  "skipped": 0,
+  "buildPages": 391,
+  "strictSeo": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "priceStates": {
+    "current": 35,
+    "historical": 20,
+    "unknown": 1
+  },
+  "protectedPages": 20,
+  "protectedIncomingEdges": 205,
+  "unchangedProductSources": 110,
+  "unchangedOriginalHints": 437,
+  "publicCanonicals": 270,
+  "sitemapUrls": 269,
+  "browser": {
+    "widths": [
+      375,
+      1600
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "screenshots": 6,
+    "exceptions": 0,
+    "imageRendererFixturePassed": true,
+    "cameraRegressionPassed": true
+  },
+  "realModelPhotosPublished": 0,
+  "imageLimitation": "Existing provenance documents source/operator download approval, not explicit website-use rights; compact neutral fallback applied.",
+  "merge": false,
+  "deployment": false
+}

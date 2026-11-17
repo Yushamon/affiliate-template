@@ -1,0 +1,61 @@
+{
+  "decision": "GO",
+  "scope": "Local Product Operations recovery and production build; no merge or deployment",
+  "tests": [
+    {
+      "suite": "integration",
+      "tests": 145,
+      "pass": 145,
+      "fail": 0,
+      "skipped": 0,
+      "cancelled": 0
+    },
+    {
+      "suite": "gift",
+      "tests": 38,
+      "pass": 38,
+      "fail": 0,
+      "skipped": 0,
+      "cancelled": 0
+    },
+    {
+      "suite": "domain",
+      "tests": 137,
+      "pass": 137,
+      "fail": 0,
+      "skipped": 0,
+      "cancelled": 0
+    },
+    {
+      "suite": "seo",
+      "tests": 30,
+      "pass": 30,
+      "fail": 0,
+      "skipped": 0,
+      "cancelled": 0
+    }
+  ],
+  "totalTests": 350,
+  "failed": 0,
+  "skipped": 0,
+  "buildPages": 391,
+  "strictSeo": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "protectedPages": 20,
+  "protectedIncomingEdges": 205,
+  "unchangedProductSources": 110,
+  "unchangedOriginalHints": 437,
+  "publicCanonicals": 270,
+  "sitemapUrls": 269,
+  "intentionallyExcluded": "/foundation/ (noindex)",
+  "browser": {
+    "trustedClicks": 34,
+    "exceptions": 0,
+    "isolatedProductCopies": true
+  },
+  "productionPriceOrAvailabilityWrites": 0,
+  "merge": false,
+  "deployment": false
+}

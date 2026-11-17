@@ -1,6 +1,8 @@
 // Read-only build/source proof; writes only this feature's reproducible QA report.
 import fs from 'node:fs';import path from 'node:path';import zlib from 'node:zlib';import assert from 'node:assert/strict';import {parse} from 'parse5';
 import {app,scanBuild,sourceInventory,sha} from '../indexation/scan.mjs';
+import {protectedSnapshotAt} from '../product-integration/protected-snapshots.mjs';
+import {buildGiftCatalog} from '../../src/domain/gift-guide/catalog.ts';
 import {selectGifts} from '../../src/domain/gift-guide/selection.ts';
 const root=path.join(app,'reports/gift-finder-37.3-qa'),baseline=JSON.parse(zlib.gunzipSync(fs.readFileSync(path.join(app,'research/gift-guide-37.0/baseline.json.gz')))),scan=scanBuild();
 for(const row of baseline.sources)assert.equal(sha(fs.readFileSync(path.join(app,row.file))),row.sha256,`Existing source changed: ${row.file}`);
@@ -14,13 +16,13 @@ const products=JSON.parse(nodes.find(n=>Object.hasOwn(attr(n),'data-gift-catalog
 const internal=page.links.filter(l=>!l.target.startsWith('/api/'));for(const l of internal)assert.ok(routes.has(l.target)||scan.excluded.some(p=>p.route===l.target),`Broken internal destination ${l.target}`);
 // The legacy exact snapshot check also freezes time-dependent price badges.
 // Prove links and all other text separately; report the raw drift explicitly.
+const priceSources=sourceInventory().filter(s=>s.collection==='products');
 const experiment=JSON.parse(fs.readFileSync(path.join(app,'research/product-integration-35.8/baseline.json'))),priceBadgeDrift=[];
 function* visible(n){yield n;if(['script','style'].includes(n.tagName))return;for(const c of n.childNodes??[])yield*visible(c)}
-const normalizePriceBadge=t=>t.replace(/Früherer Anschaffungspreis/g,'Anschaffungspreis').replace(/Veralteter Preisstand/g,'Hinterlegter Preis');
 for(const route of experiment.routes){
  const dom=parse(fs.readFileSync(path.join(app,'dist',route,'index.html'),'utf8')),all=[...visible(dom)],actual={text:all.filter(n=>n.nodeName==='#text').map(n=>n.value).join(' ').replace(/\s+/g,' ').trim(),links:all.filter(n=>n.tagName==='a').map(n=>n.attrs?.find(a=>a.name==='href')?.value).filter(Boolean)},old=experiment.snapshots[route];
  assert.deepEqual(actual.links,old.links,route+': protected links');
- if(actual.text!==old.text){assert.equal(normalizePriceBadge(actual.text),old.text,route+': only existing price freshness badges may age');priceBadgeDrift.push(route)}
+ if(actual.text!==old.text){assert.deepEqual(protectedSnapshotAt(dom,{data:priceSources.find(p=>p.route===route)?.data,products:priceSources.map(p=>p.data),snapshotAt:'2026-11-16T12:00:00.000Z',renderedAt:fs.statSync(path.join(app,'dist',route,'index.html')).mtime}),old,route+': only validated Commerce prices and clock labels may change');priceBadgeDrift.push(route)}
 }
 // scanBuild normalizes targets; use the original DOM hrefs for multiplicity.
 const exactIncoming={};for(const page of scan.pages){const dom=parse(fs.readFileSync(path.join(app,'dist',page.route,'index.html'),'utf8'));for(const n of visible(dom)){if(n.tagName!=='a')continue;const href=n.attrs?.find(a=>a.name==='href')?.value;if(experiment.routes.includes(href)){const key=page.route+' -> '+href;exactIncoming[key]=(exactIncoming[key]??0)+1}}}
@@ -32,7 +34,8 @@ const scenarios=[];for(const animal of ['cat','dog','both'])for(const goal of ['
 const sources=sourceInventory().filter(s=>s.collection==='products'),originals=sources.filter(s=>s.data.decisionFacts?.length),facts=originals.reduce((sum,s)=>sum+s.data.decisionFacts.length,0);assert.equal(originals.length,73);assert.equal(facts,437);
 const before=JSON.parse(zlib.gunzipSync(fs.readFileSync(path.join(app,'research/gift-guide-37.1/baseline.json.gz'))));
 assert.equal(products.length,before.catalog.length);
-for(const p of products){const old=before.catalog.find(o=>o.slug===p.slug);assert.ok(old);for(const key of ['price','priceLabel','score','offerHref','offerRel','technical','comparison','strengths','weaknesses','tco12']){if(['price','priceLabel','tco12'].includes(key)&&p.price===null){if(key!=='priceLabel')assert.equal(p[key],null);continue}assert.deepEqual(p[key],old[key],`${p.slug}: ${key}`)}}
+const expectedCatalog=buildGiftCatalog(priceSources.map(p=>({id:p.data.slug,data:p.data})),{now:+fs.statSync(path.join(app,'dist',route,'index.html')).mtime}).products;
+for(const p of products){const expected=expectedCatalog.find(o=>o.slug===p.slug);assert.ok(expected);for(const key of ['price','priceLabel','tco12','offerHref','checkedAt','comparison'])assert.deepEqual(p[key],JSON.parse(JSON.stringify(expected))[key],`${p.slug}: canonical ${key}`);const old=before.catalog.find(o=>o.slug===p.slug);assert.ok(old);assert.deepEqual({...p.comparison,abo:old.comparison.abo},old.comparison,`${p.slug}: protected comparison facts`);for(const key of ['score','offerHref','offerRel','technical','strengths','weaknesses']){if(['price','priceLabel','tco12'].includes(key)&&p.price===null){if(key!=='priceLabel')assert.equal(p[key],null);continue}assert.deepEqual(p[key],old[key],`${p.slug}: ${key}`)}}
 for(const scenario of scenarios)for(const slug of scenario.confirmed){const p=products.find(p=>p.slug===slug);if(scenario.answers.budget!=='open'&&p.price!==null)assert.ok(p.price<=Number(scenario.answers.budget));for(const species of scenario.answers.animal==='both'?['cat','dog']:[scenario.answers.animal])assert.ok(p.animals.includes(species))}
 assert.equal(nodes.filter(n=>n.tagName==='template').length,1);
 const htmlAfter=Buffer.byteLength(html),gzipAfter=zlib.gzipSync(html).length;assert.ok(htmlAfter<before.htmlBytes*.6,'Reduce HTML by at least 40%');

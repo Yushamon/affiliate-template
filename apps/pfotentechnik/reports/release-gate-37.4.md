@@ -31,3 +31,7 @@ Alle 110 Produktdateien einschließlich Preisen, Prüfdatumswerten, Scores, Text
 Zuerst `npm run build:pfotentechnik`, danach `npm --workspace apps/pfotentechnik run test:gift-guide`, `npm --workspace apps/pfotentechnik run test:product-integration`, `npm --workspace apps/pfotentechnik run test:release-gate`, `npm --workspace apps/pfotentechnik run check:release-gate` und `npm --workspace apps/pfotentechnik run audit:release-build-output:strict`.
 
 Die zusätzlichen sechs vollständigen Domainsuiten: `advisor-decision-b1`, `advisor-foundation`, `product-freshness-36.0`, `decision-consequences-35.9`, `product-operations`, `subscription-costs`; die beiden SEO-Suiten: `production-http-integrity-34.8` und `internal-url-policy`, jeweils unter `apps/pfotentechnik/test/*.test.mjs` mit `node --test` ausführen. Es wurden keine fehlgeschlagenen Fälle aus der abschließenden Testauswahl entfernt.
+
+## Ergänzender Abschluss nach 37.3A
+
+Der erneute Release-Check nach der Produktpflege-Reparatur besteht ebenfalls: **GO**, 350 vollständige relevante Tests ohne Fehler oder übersprungene Fälle, Produktionsbuild mit 391 Seiten und strikter SEO-Audit ohne Fehler/Warnungen. Die inzwischen ausdrücklich freigegebenen aktuellen Commerce-Preise werden gezielt validiert; Texte, Scores, Modellauswahl, 20 Experimentseiten und 205 eingehende Linkkanten bleiben geschützt. Die historische Baseline bleibt unverändert. Einzelheiten und externe Einschränkungen stehen im [37.3A-Bericht](product-operations-recovery-37.3a.md). Kein Merge, kein Deployment.

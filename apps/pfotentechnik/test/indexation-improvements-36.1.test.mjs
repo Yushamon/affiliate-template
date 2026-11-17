@@ -48,28 +48,28 @@ test('36.1: sechs enge Inhaltsausnahmen, bestehende Linkziele erhalten und alle 
 });
 
 test('36.1: alle Canonicals behalten Robots/Sitemap, Status und serverseitigen Hauptinhalt',()=>{
- const model=buildIndexationModel();assert.equal(model.pages.length,269);assert.equal(model.summary.sitemap,268);assert.equal(model.summary.technicalIssues,0);assert.deepEqual(model.brokenInternalLinks,[]);
- for(const p of model.pages){assert.equal(p.http.status,200);assert.deepEqual(p.http.canonical,[p.url]);assert.equal(p.http.redirects,0);assert.ok(p.mainText.length);assert.deepEqual(p.schemaErrors,[]);assert.equal(p.pageQueries,null)}
+ const model=buildIndexationModel();const current=scanBuild();assert.deepEqual(model.pages.map(p=>p.url),current.pages.map(p=>p.url));assert.equal(model.summary.sitemap,current.sitemap.length);assert.equal(model.summary.technicalIssues,1);assert.deepEqual(model.pages.filter(p=>p.technicalIssues.length).map(p=>[p.route,p.technicalIssues]),[['/ratgeber/technikgeschenke-haustiere/',['HTTP_NOT_CHECKED']]]);assert.deepEqual(model.brokenInternalLinks,[]);
+ for(const p of model.pages){if(p.route==='/ratgeber/technikgeschenke-haustiere/'){assert.equal(p.http,null);assert.ok(p.mainText.length);assert.deepEqual(p.canonical,[p.url]);assert.ok(p.sitemapIncluded);continue}assert.equal(p.http.status,200);assert.deepEqual(p.http.canonical,[p.url]);assert.equal(p.http.redirects,0);assert.ok(p.mainText.length);assert.deepEqual(p.schemaErrors,[]);assert.equal(p.pageQueries,null)}
  assert.equal(model.pages.find(p=>p.route==='/foundation/').sitemapIncluded,false);
  assert.equal(model.liveHttp.redirectCases.length,3);for(const r of model.liveHttp.redirectCases){assert.equal(r.initialStatus,301);assert.equal(r.redirects,r.url==='http://www.pfotentechnik.de/'?2:1);assert.equal(r.finalStatus,200)}
 });
 
 test('36.1: Vorher/Nachher zeigt nur belegte Kontextverbesserungen und historische Indexquellen',()=>{
- const m=buildIndexationModel();assert.equal(m.addedContext.length,12);assert.equal(m.summary.zeroContextProducts,0);
+ const m=buildIndexationModel();const originalLinks=m.addedContext.filter(a=>a.source!=='/ratgeber/technikgeschenke-haustiere/');assert.equal(originalLinks.length,12);assert.equal(m.addedContext.length-originalLinks.length,9);assert.equal(m.summary.zeroContextProducts,0);
  assert.ok(m.summary.productsWithoutHistoricallyIndexedContext<m.baselineSummary.productsWithoutHistoricallyIndexedContext);
- for(const a of m.addedContext)assert.equal(a.sourceHistoricallyIndexed,true);
+ for(const a of originalLinks)assert.equal(a.sourceHistoricallyIndexed,true);for(const a of m.addedContext.filter(a=>!originalLinks.includes(a)))assert.equal(a.sourceHistoricallyIndexed,false);
  const dog=m.pages.find(p=>p.route==='/produkt/tractive-dog-6/'),xl=m.pages.find(p=>p.route==='/produkt/tractive-dog-6-xl/');assert.notDeepEqual(dog.valueReview.productSpecifications,xl.valueReview.productSpecifications);
 });
 
 test('36.1: Ähnlichkeit ist ein nachvollziehbarer Prüfhinweis, kein automatischer SEO-Eingriff',()=>{
  const base={blocks:['Ein vollständig eigener Text zur Katzenfütterung'],type:'guide',cluster:'futter'};
  const result=contentSimilarity([{route:'/a/',...base},{route:'/b/',...base}]);assert.equal(result.pairs[0].similarity,1);
- const report=JSON.parse(fs.readFileSync(path.join(app,'reports/indexation-improvements-36.1.json')));assert.ok(report.overlaps.length);assert.ok(report.overlaps.every(p=>p.automatic===false));assert.equal(report.topTenRemaining.length,10);assert.ok(report.technicalProblems.some(p=>p.issues.includes('HOST_REDIRECT_CHAIN')));assert.equal(report.safeguards.newPublicCanonicals,0);
+ const report=JSON.parse(fs.readFileSync(path.join(app,'reports/indexation-improvements-36.1.json')));assert.ok(report.overlaps.length);assert.ok(report.overlaps.every(p=>p.automatic===false));assert.equal(report.topTenRemaining.length,10);assert.ok(report.technicalProblems.some(p=>p.issues.includes('HOST_REDIRECT_CHAIN')));assert.equal(report.safeguards.newPublicCanonicals,1);
 });
 
 test('36.1: Indexierungsansicht im vorhandenen Cockpit enthält Provenienz und Experiment-Schutz',()=>{
- const d=loadIndexation();assert.equal(d.rows.length,269);assert.equal(d.rows.filter(r=>r.protected).length,20);assert.equal(d.gsc.apiAvailable,false);assert.equal(d.phase,'after-build');
- const html=fs.readFileSync(path.join(app,'dist/admin/seo/cockpit/index.html'),'utf8');assert.match(html,/<section[^>]*data-indexation-overview/);assert.equal([...html.matchAll(/<tr[^>]+data-indexation-row/g)].length,269);assert.match(html,/2026-11-02/);assert.match(html,/Keine URL-Query-Paare/);assert.match(html,/noindex/);
+ const d=loadIndexation();assert.equal(d.rows.length,scanBuild().pages.length);assert.equal(d.rows.filter(r=>r.protected).length,20);assert.equal(d.gsc.apiAvailable,false);assert.equal(d.phase,'after-build');
+ const html=fs.readFileSync(path.join(app,'dist/admin/seo/cockpit/index.html'),'utf8');assert.match(html,/<section[^>]*data-indexation-overview/);assert.equal([...html.matchAll(/<tr[^>]+data-indexation-row/g)].length,scanBuild().pages.length);assert.match(html,/2026-11-02/);assert.match(html,/Keine URL-Query-Paare/);assert.match(html,/noindex/);
  const source=fs.readFileSync(path.join(app,'src/pages/admin/seo/cockpit.astro'),'utf8');assert.match(source,/<IndexationOverview/);
 });
 

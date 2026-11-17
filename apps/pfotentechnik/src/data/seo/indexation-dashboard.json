@@ -3,18 +3,18 @@
   "asOf": "2026-11-16",
   "phase": "after-build",
   "summary": {
-    "canonicals": 269,
-    "sitemap": 268,
-    "contextualEdges": 1318,
+    "canonicals": 270,
+    "sitemap": 269,
+    "contextualEdges": 1326,
     "zeroContextManufacturers": 0,
     "zeroContextProducts": 0,
     "productsWithoutHistoricallyIndexedContext": 56,
     "unreachable": 1,
-    "technicalIssues": 1,
+    "technicalIssues": 2,
     "changedFiles": 6,
     "explicitContextLinks": 12,
-    "actuallyAddedContextLinks": 12,
-    "overlapCandidates": 8
+    "actuallyAddedContextLinks": 21,
+    "overlapCandidates": 9
   },
   "before": {
     "canonicals": 269,
@@ -184,7 +184,8 @@
         "https://pfotentechnik.de/produkt/catit-pixi-standard-trinkbrunnen/",
         "https://pfotentechnik.de/produkt/mova-suretrack-pro/",
         "https://pfotentechnik.de/produkt/philips-pet-series-paw3210-02/",
-        "https://pfotentechnik.de/produkt/satellai-collar-go/"
+        "https://pfotentechnik.de/produkt/satellai-collar-go/",
+        "https://pfotentechnik.de/ratgeber/technikgeschenke-haustiere/"
       ],
       "finding": "Lokaler API-Zugang fehlt. Letzte exakte Coverage-Belege sind vom 02.11.; Google-selected Canonical und aktuelle Crawlzeit fehlen.",
       "expectedBenefit": "Aktuelle Priorisierung statt Arbeit an möglicherweise überholten Zuständen.",
@@ -352,7 +353,7 @@
       "statusSource": "reports/editorial-quality-recovery-35.4/inputs/indexed/Tabelle.csv",
       "lastCrawl": "2026-10-24",
       "googleSelectedCanonical": null,
-      "context": 12,
+      "context": 13,
       "contextSources": [
         "/produkt/petlibro-dockstream-2-smart-cordless/",
         "/produkt/petlibro-dockstream-2-smart/",
@@ -364,6 +365,7 @@
         "/produkt/petlibro-one-rfid-smart-feeder/",
         "/produkt/petlibro-polar-wet-food-feeder/",
         "/produkt/petlibro-scout-smart-camera/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/so-bewerten-wir/"
       ],
@@ -392,13 +394,14 @@
       "statusSource": "reports/editorial-quality-recovery-35.4/inputs/discovered/Tabelle.csv",
       "lastCrawl": null,
       "googleSelectedCanonical": null,
-      "context": 7,
+      "context": 8,
       "contextSources": [
         "/",
         "/ifa-2026-haustiertechnik/",
         "/produkt/devoko-90l-automatisches-katzenklo/",
         "/produkt/neakasa-m1-plus/",
         "/produkt/petkit-purobot-max-3/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/smarte-haustiertechnik/",
         "/vergleiche/beste-automatische-katzentoiletten/"
       ],
@@ -3170,7 +3173,7 @@
       "statusSource": "reports/editorial-quality-recovery-35.4/inputs/discovered/Tabelle.csv",
       "lastCrawl": null,
       "googleSelectedCanonical": null,
-      "context": 12,
+      "context": 13,
       "contextSources": [
         "/",
         "/glossar/",
@@ -3181,6 +3184,7 @@
         "/produkt/petwalk-medium-tiertuer/",
         "/produkt/sureflap-mikrochip-katzenklappe/",
         "/produkt/zeromouse-2-0/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/smarte-haustiertechnik/",
         "/vergleiche/beste-mikrochip-katzenklappen/",
         "/vergleiche/katzenklappen-mit-app-und-beuteerkennung/"
@@ -7315,6 +7319,43 @@
       ]
     },
     {
+      "route": "/ratgeber/technikgeschenke-haustiere/",
+      "title": "Sinnvolle Technikgeschenke für Hunde & Katzen | Geschenkfinder",
+      "type": "guide",
+      "status": "unknown",
+      "statusLabel": "Kein exakter Statusbeleg",
+      "statusDate": null,
+      "statusSource": null,
+      "lastCrawl": null,
+      "googleSelectedCanonical": null,
+      "context": 0,
+      "contextSources": [],
+      "indexedContext": 0,
+      "indexedContextSources": [],
+      "depth": 2,
+      "canonical": "https://pfotentechnik.de/ratgeber/technikgeschenke-haustiere/",
+      "robots": "index,follow,max-image-preview:large",
+      "sitemap": true,
+      "http": null,
+      "performance": null,
+      "protected": false,
+      "suggestions": [
+        {
+          "priority": 1,
+          "kind": "technical-review",
+          "reason": "HTTP_NOT_CHECKED",
+          "automatic": false
+        },
+        {
+          "priority": 4,
+          "kind": "current-indexation-evidence",
+          "reason": "Kein exakter historischer URL-Beleg. Aktuelle URL Inspection erst nach autorisierter Einrichtung und unter Kontingentkontrolle.",
+          "automatic": false
+        }
+      ],
+      "actions": []
+    },
+    {
       "route": "/redaktion/",
       "title": "Redaktion und Unabhängigkeit | PfotenTechnik",
       "type": "utility",
@@ -7628,9 +7669,10 @@
       "statusSource": "reports/editorial-quality-recovery-35.4/inputs/indexed/Tabelle.csv",
       "lastCrawl": "2026-10-17",
       "googleSelectedCanonical": null,
-      "context": 16,
+      "context": 17,
       "contextSources": [
         "/affiliate-hinweis/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/redaktion/",
         "/vergleiche/beste-futterautomaten-fuer-hunde/",
         "/vergleiche/beste-futterautomaten-fuer-katzen/",
@@ -7990,10 +8032,11 @@
       "statusSource": "reports/editorial-quality-recovery-35.4/inputs/indexed/Tabelle.csv",
       "lastCrawl": "2026-10-14",
       "googleSelectedCanonical": null,
-      "context": 2,
+      "context": 3,
       "contextSources": [
         "/hund-trinkt-ploetzlich-viel/",
-        "/produkt/petlibro-dockstream-2-smart-cordless/"
+        "/produkt/petlibro-dockstream-2-smart-cordless/",
+        "/ratgeber/technikgeschenke-haustiere/"
       ],
       "indexedContext": 1,
       "indexedContextSources": [
@@ -8342,9 +8385,10 @@
       "statusSource": "reports/editorial-quality-recovery-35.4/inputs/indexed/Tabelle.csv",
       "lastCrawl": "2026-10-13",
       "googleSelectedCanonical": null,
-      "context": 5,
+      "context": 6,
       "contextSources": [
         "/glossar/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/vergleiche/beste-futterautomaten-fuer-zwei-katzen/",
         "/vergleiche/beste-futterautomaten-mit-kamera/",
         "/welche-portionsgroesse-ist-richtig/",
@@ -8768,8 +8812,9 @@
       "statusSource": "reports/editorial-quality-recovery-35.4/inputs/discovered/Tabelle.csv",
       "lastCrawl": null,
       "googleSelectedCanonical": null,
-      "context": 1,
+      "context": 2,
       "contextSources": [
+        "/ratgeber/technikgeschenke-haustiere/",
         "/smarte-haustiertechnik/"
       ],
       "indexedContext": 1,
@@ -9121,9 +9166,10 @@
       "statusSource": "reports/editorial-quality-recovery-35.4/inputs/indexed/Tabelle.csv",
       "lastCrawl": "2026-09-14",
       "googleSelectedCanonical": null,
-      "context": 2,
+      "context": 3,
       "contextSources": [
         "/glossar/",
+        "/ratgeber/technikgeschenke-haustiere/",
         "/vergleiche/gps-tracker-ohne-abo/"
       ],
       "indexedContext": 1,

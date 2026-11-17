@@ -5,19 +5,23 @@ import ProjectLayout from '../../layouts/ProjectLayout.astro';
 import GiftGuide from '../../components/gift-guide/GiftGuide.astro';
 import {getProducts} from '../../domain/content/registry';
 import {buildGiftCatalog} from '../../domain/gift-guide/catalog.ts';
-import feeding from '../../assets/images/gift-guide/feeding.webp';
-import drinking from '../../assets/images/gift-guide/drinking.webp';
-import outdoors from '../../assets/images/gift-guide/outdoors.webp';
-import connection from '../../assets/images/gift-guide/connection.webp';
-const symbols={'futterautomaten':{src:feeding,alt:'KI-Symbolbild: Eine Katze nähert sich einer Futterschale. Keine Abbildung des konkreten Modells.'},'trinkbrunnen':{src:drinking,alt:'KI-Symbolbild: Ein Hund trinkt aus einer Wasserschale. Keine Abbildung des konkreten Modells.'},'gps-tracker':{src:outdoors,alt:'KI-Symbolbild: Ein Hund und ein Mensch gehen gemeinsam spazieren. Keine Abbildung eines konkreten Trackers.'},'haustierkameras':{src:connection,alt:'KI-Symbolbild: Eine Katze ruht in einem Wohnraum mit einer Kamera. Keine Abbildung des konkreten Modells.'}};
+import {giftModelImage} from '../../domain/gift-guide/presentation.ts';
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+const provenance=import.meta.glob('../../assets/images/products/*/media-provenance*.json',{eager:true,import:'default'});
 const entry=await getEntry('pages','ratgeber/technikgeschenke-haustiere');
 if(!entry)throw Error('Geschenkratgeber fehlt in der pages-Collection.');
 const {Content}=await render(entry);
-const catalog=buildGiftCatalog(await getProducts());
+const entries=await getProducts(),catalog=buildGiftCatalog(entries);
 const products=await Promise.all(catalog.products.map(async({media,...p})=>{
- const symbol=symbols[p.category];
- const image=await getImage({src:symbol.src,width:680,format:'webp',quality:82});
- return {...p,image:{src:image.src,width:Number(image.attributes.width),height:Number(image.attributes.height),alt:symbol.alt,symbolic:true}};
+ const entry=entries.find(e=>e.data.slug===p.slug),comparison=entry?.data.images?.comparison;
+ const grant=Object.entries(provenance).find(([file])=>file.includes(`/products/${p.slug}/`))?.[1];
+ const file=new URL(`../../assets/images/products/${p.slug}/comparison.webp`,import.meta.url);
+ const assetHash=grant&&fs.existsSync(file)?createHash('sha256').update(fs.readFileSync(file)).digest('hex'):undefined;
+ const model=giftModelImage(comparison,grant,p.slug,{assetHash});
+ if(!model)return {...p,image:null};
+ const variants=await Promise.all([160,320,640].map(width=>getImage({src:model.src,width,format:'webp',quality:82})));
+ return {...p,image:{src:variants[1].src,srcset:variants.map((v,i)=>`${v.src} ${[160,320,640][i]}w`).join(', '),width:model.src.width,height:model.src.height,alt:`${p.title} – Produktansicht`,symbolic:false}};
 }));
 ---
 <ProjectLayout title={entry.data.title} seoTitle={entry.data.seo.title} description={entry.data.description} seoDescription={entry.data.seo.description} canonical={entry.data.seo.canonical} schemaType="article" faq={entry.data.faq} author={entry.data.author} publishedAt={entry.data.publishedAt} updatedAt={entry.data.updatedAt} ogImage={entry.data.heroImage.src.src} mainClass="gift-page">

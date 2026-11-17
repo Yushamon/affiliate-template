@@ -1,84 +1,186 @@
-[
-  {
-    "route": "/produkt/aqara-smart-pet-feeder-c1/",
-    "linksUnchanged": true,
-    "changes": [
-      {
-        "before": "120,99",
-        "after": "169,99"
-      }
-    ]
-  },
-  {
-    "route": "/produkt/pawsync-smart-pet-feeder/",
-    "linksUnchanged": true,
-    "changes": [
-      {
-        "before": "120,99",
-        "after": "169,99"
-      }
-    ]
-  },
-  {
-    "route": "/produkt/oneisall-3-5l-cordless-fountain/",
-    "linksUnchanged": false,
-    "changes": [
-      {
-        "before": "oneisall 3,2L",
-        "after": "PETLIBRO Dockstream 2 Smart"
-      },
-      {
-        "before": "Cat Fountain",
-        "after": ""
-      },
-      {
-        "before": "60,50",
-        "after": "115,99"
-      }
-    ]
-  },
-  {
-    "route": "/produkt/cat-mate-c200/",
-    "linksUnchanged": true,
-    "changes": [
-      {
-        "before": "120,99",
-        "after": "169,99"
-      },
-      {
-        "before": "104,96",
-        "after": "119,99"
-      }
-    ]
-  },
-  {
-    "route": "/produkt/cat-mate-c500/",
-    "linksUnchanged": true,
-    "changes": [
-      {
-        "before": "120,99",
-        "after": "169,99"
-      }
-    ]
-  },
-  {
-    "route": "/produkt/petlibro-polar-wet-food-feeder/",
-    "linksUnchanged": true,
-    "changes": [
-      {
-        "before": "120,99",
-        "after": "169,99"
-      }
-    ]
-  },
-  {
-    "route": "/produkt/catit-pixi-smart-6-meal-feeder/",
-    "linksUnchanged": true,
-    "changes": [
-      {
-        "before": "120,99",
-        "after": "169,99"
-      }
-    ]
-  }
-]
+{
+  "authorization": "Current prices everywhere; protect editorial texts, scores, model assignments and links.",
+  "pages": [
+    {
+      "route": "/futterautomat-hund/",
+      "rawVisibleTextChanged": false,
+      "protectedSnapshotPassed": true,
+      "linksUnchanged": true,
+      "priceChanges": []
+    },
+    {
+      "route": "/welcher-futterautomat-ist-der-richtige/",
+      "rawVisibleTextChanged": false,
+      "protectedSnapshotPassed": true,
+      "linksUnchanged": true,
+      "priceChanges": []
+    },
+    {
+      "route": "/wie-funktioniert-ein-futterautomat/",
+      "rawVisibleTextChanged": false,
+      "protectedSnapshotPassed": true,
+      "linksUnchanged": true,
+      "priceChanges": []
+    },
+    {
+      "route": "/wie-laut-sind-automatische-futterautomaten/",
+      "rawVisibleTextChanged": false,
+      "protectedSnapshotPassed": true,
+      "linksUnchanged": true,
+      "priceChanges": []
+    },
+    {
+      "route": "/katzentrinkbrunnen-ohne-filter/",
+      "rawVisibleTextChanged": false,
+      "protectedSnapshotPassed": true,
+      "linksUnchanged": true,
+      "priceChanges": []
+    },
+    {
+      "route": "/katzentrinkbrunnen-dauerbetrieb-urlaub/",
+      "rawVisibleTextChanged": false,
+      "protectedSnapshotPassed": true,
+      "linksUnchanged": true,
+      "priceChanges": []
+    },
+    {
+      "route": "/trinkbrunnen-seniorenkatzen/",
+      "rawVisibleTextChanged": false,
+      "protectedSnapshotPassed": true,
+      "linksUnchanged": true,
+      "priceChanges": []
+    },
+    {
+      "route": "/katzentrinkbrunnen-material-edelstahl-keramik-kunststoff/",
+      "rawVisibleTextChanged": false,
+      "protectedSnapshotPassed": true,
+      "linksUnchanged": true,
+      "priceChanges": []
+    },
+    {
+      "route": "/trinkbrunnen-fuer-kitten-sicher/",
+      "rawVisibleTextChanged": false,
+      "protectedSnapshotPassed": true,
+      "linksUnchanged": true,
+      "priceChanges": []
+    },
+    {
+      "route": "/trinkbrunnen-hund/",
+      "rawVisibleTextChanged": false,
+      "protectedSnapshotPassed": true,
+      "linksUnchanged": true,
+      "priceChanges": []
+    },
+    {
+      "route": "/produkt/aqara-smart-pet-feeder-c1/",
+      "rawVisibleTextChanged": true,
+      "protectedSnapshotPassed": true,
+      "linksUnchanged": true,
+      "priceChanges": [
+        {
+          "href": "/produkt/petlibro-granary-camera-feeder/",
+          "before": "120,99 €",
+          "current": "169,99 €"
+        }
+      ]
+    },
+    {
+      "route": "/produkt/pawsync-smart-pet-feeder/",
+      "rawVisibleTextChanged": true,
+      "protectedSnapshotPassed": true,
+      "linksUnchanged": true,
+      "priceChanges": [
+        {
+          "href": "/produkt/petlibro-granary-camera-feeder/",
+          "before": "120,99 €",
+          "current": "169,99 €"
+        }
+      ]
+    },
+    {
+      "route": "/produkt/oneisall-3-5l-cordless-fountain/",
+      "rawVisibleTextChanged": false,
+      "protectedSnapshotPassed": true,
+      "linksUnchanged": true,
+      "priceChanges": []
+    },
+    {
+      "route": "/produkt/petlibro-dockstream-cordless/",
+      "rawVisibleTextChanged": true,
+      "protectedSnapshotPassed": true,
+      "linksUnchanged": true,
+      "priceChanges": []
+    },
+    {
+      "route": "/produkt/petkit-eversweet-solo-2-fountain/",
+      "rawVisibleTextChanged": false,
+      "protectedSnapshotPassed": true,
+      "linksUnchanged": true,
+      "priceChanges": []
+    },
+    {
+      "route": "/produkt/petkit-eversweet-solo-se/",
+      "rawVisibleTextChanged": false,
+      "protectedSnapshotPassed": true,
+      "linksUnchanged": true,
+      "priceChanges": []
+    },
+    {
+      "route": "/produkt/cat-mate-c200/",
+      "rawVisibleTextChanged": true,
+      "protectedSnapshotPassed": true,
+      "linksUnchanged": true,
+      "priceChanges": [
+        {
+          "href": "/produkt/petlibro-granary-camera-feeder/",
+          "before": "120,99 €",
+          "current": "169,99 €"
+        },
+        {
+          "href": "/produkt/petlibro-granary-dual-feeder/",
+          "before": "104,96 €",
+          "current": "119,99 €"
+        }
+      ]
+    },
+    {
+      "route": "/produkt/cat-mate-c500/",
+      "rawVisibleTextChanged": true,
+      "protectedSnapshotPassed": true,
+      "linksUnchanged": true,
+      "priceChanges": [
+        {
+          "href": "/produkt/petlibro-granary-camera-feeder/",
+          "before": "120,99 €",
+          "current": "169,99 €"
+        }
+      ]
+    },
+    {
+      "route": "/produkt/petlibro-polar-wet-food-feeder/",
+      "rawVisibleTextChanged": true,
+      "protectedSnapshotPassed": true,
+      "linksUnchanged": true,
+      "priceChanges": [
+        {
+          "href": "/produkt/petlibro-granary-camera-feeder/",
+          "before": "120,99 €",
+          "current": "169,99 €"
+        }
+      ]
+    },
+    {
+      "route": "/produkt/catit-pixi-smart-6-meal-feeder/",
+      "rawVisibleTextChanged": true,
+      "protectedSnapshotPassed": true,
+      "linksUnchanged": true,
+      "priceChanges": [
+        {
+          "href": "/produkt/petlibro-granary-camera-feeder/",
+          "before": "120,99 €",
+          "current": "169,99 €"
+        }
+      ]
+    }
+  ]
+}

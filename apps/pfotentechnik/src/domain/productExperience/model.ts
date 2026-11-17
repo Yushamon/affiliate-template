@@ -320,7 +320,9 @@ const intelligentAlternatives = (
     reason: string,
     predicate: (entry: any, price: ProductPriceInsight | undefined, haystack: string) => boolean
   ) => {
-    const assigned=experimentAlternativeAssignments[currentSlug]?.[type];
+    const assignments=experimentAlternativeAssignments[currentSlug];
+    if(assignments&&Object.hasOwn(assignments,type)&&assignments[type]===null)return;
+    const assigned=assignments?.[type];
     const match = candidates.find((entry) => {
       const slug = slugOf(entry);
       if (used.has(slug)) return false;

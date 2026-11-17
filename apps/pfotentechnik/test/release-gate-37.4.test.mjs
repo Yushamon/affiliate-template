@@ -48,3 +48,31 @@ test('37.4: historical baselines and all existing product files are byte-identic
  const inventory=JSON.parse(fs.readFileSync(path.join(app,'reports/release-gate-37.4-qa/protected-source-inventory.json')));
  for(const [file,hash] of Object.entries(inventory))assert.equal(sha(fs.readFileSync(path.join(app,file))),hash,file);
 });
+
+test('37.3A: authorized current alternative prices preserve all model, score and link guards',async()=>{
+ const source=await priceFixture('petlibro-granary-camera-feeder');
+ const {buildPriceIndex}=await import('../src/domain/price/engine.ts');
+ const current=buildPriceIndex([{id:source.slug,data:source}],undefined,new Date(newClock)).bySlug.get(source.slug).formattedCurrent;
+ const markup=price=>parse(`<section id="alternativen"><article><h3>Protected model</h3><span>87</span><div class="alternatives__meta"><b>${price}</b></div><a href="/produkt/${source.slug}/">Alternative ansehen</a></article></section>`);
+ const options={products:[source],snapshotAt:oldClock,renderedAt:newClock},expected=protectedSnapshotAt(markup(current),options);
+ assert.match(expected.text,/120,99/);
+ assert.throws(()=>protectedSnapshotAt(markup('1,00 €'),options),/current alternative price/);
+ for(const [from,to] of [['Protected model','Changed model'],['87','88'],['Alternative ansehen','Changed link label']]){
+  const changed=parse((await import('parse5')).serialize(markup(current)).replace(from,to));
+  assert.notDeepEqual(protectedSnapshotAt(changed,options),expected);
+ }
+ const changedLink=parse((await import('parse5')).serialize(markup(current)).replace(`/produkt/${source.slug}/`,'/produkt/other/'));
+ assert.throws(()=>protectedSnapshotAt(changedLink,options),/source/);
+});
+
+test('37.3A: HTML price projection retains scores, script fields and markup',async()=>{
+ const {protectedHtmlAt}=await import('../scripts/product-integration/protected-snapshots.mjs');
+ const {buildPriceIndex}=await import('../src/domain/price/engine.ts');
+ const source=await priceFixture('petlibro-granary-camera-feeder'),price=buildPriceIndex([{id:source.slug,data:source}],undefined,new Date(newClock)).bySlug.get(source.slug);
+ const state=pricePresentationAt(source,newClock)[0];
+ const html=tier=>`<main data-protected="yes"><p>Original</p><dl class="px2-price__purchase"><dt>${state.label}</dt><dd>${state.price}</dd><small>${state.badge}</small></dl><script type="application/json" data-fit-profile>{"priceTier":"${tier}","score":87}</script></main>`;
+ const old=html('unknown'),options={data:source,products:[source],snapshotAt:oldClock,renderedAt:newClock},projected=protectedHtmlAt(html(price.tier),old,options);
+ assert.equal(projected.current,projected.baseline);
+ assert.throws(()=>protectedHtmlAt(html('wrong-tier'),old,options),/canonical fit price tier/);
+ for(const changed of [html(price.tier).replace('87','88'),html(price.tier).replace('data-protected="yes"','data-protected="no"')]){const p=protectedHtmlAt(changed,old,options);assert.notEqual(p.current,p.baseline)}
+});
