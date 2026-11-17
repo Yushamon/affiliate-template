@@ -853,6 +853,8 @@ export const createProductContentSchema = (image: ImageFunction) =>
     availabilityUpdated: z.coerce.date().optional(),
     editorialStatus: productEditorialStatusSchema.default("complete"),
     recommendationStatus: productRecommendationStatusSchema.default("limited"),
+    maintenancePriority: z.enum(["high","normal","low"]).optional(),
+    recommendationOverride: z.enum(["auto","limited"]).optional(),
     maintenanceStatus: productMaintenanceStatusSchema.default("required"),
 
     editorial:

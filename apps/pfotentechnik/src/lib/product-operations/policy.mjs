@@ -1,3 +1,5 @@
+import {AVAILABILITY_LABELS,formatPrice,buildOperationsDashboard} from './display.mjs';
+export {AVAILABILITY_LABELS,formatPrice,buildOperationsDashboard};
 import {decisionQualitySummary} from '../../domain/productExperience/decisionQuality.mjs';
 import { resolveCommerceOffers, commerceDiagnostics } from '../../domain/commerceOffers.mjs';
 
@@ -36,13 +38,7 @@ export const MAINTENANCE_STATUS_VALUES = Object.freeze([
   "archived"
 ]);
 
-export const AVAILABILITY_LABELS = Object.freeze({
-  available: "Verfügbar",
-  "temporarily-unavailable": "Vorübergehend nicht verfügbar",
-  "out-of-stock": "Aktuell nicht lieferbar",
-  discontinued: "Eingestellt",
-  unknown: "Unbekannt"
-});
+
 
 export const STATUS_LABELS = Object.freeze({
   complete: "Vollständig gepflegt",
@@ -110,14 +106,7 @@ export function parseLocalizedPrice(value) {
     : null;
 }
 
-export function formatPrice(value, currency = "EUR") {
-  const number = validPrice(value);
-  if (number == null) return null;
-  return new Intl.NumberFormat("de-DE", {
-    style: "currency",
-    currency: /^[A-Z]{3}$/.test(currency) ? currency : "EUR"
-  }).format(number);
-}
+
 
 export function ageInDays(value, now = Date.now()) {
   const timestamp = dateValue(value);
@@ -193,7 +182,7 @@ export function deriveProductOperations(data, options = {}) {
       : Date.now();
 
   const current = validPrice(data?.price?.current);
-  const priceUpdatedRaw = data?.priceUpdated ?? data?.price?.checkedAt;
+  const priceUpdatedRaw = data?.price?.checkedAt ?? data?.priceUpdated;
   const priceAgeDays = ageInDays(priceUpdatedRaw, now);
   const affiliateUrl = data?.affiliate?.url ?? data?.price?.affiliateUrl ?? data?.productUrl;
   const offers = resolveCommerceOffers(data, {}, { now });
@@ -270,6 +259,7 @@ export function deriveProductOperations(data, options = {}) {
     recommendationStatus = "recommended";
   }
 
+  if(data.recommendationOverride==='limited'&&recommendationStatus!=='archived')recommendationStatus='limited';
   const isTask = maintenanceStatus === "required" || maintenanceStatus === "recommended";
   const isArchive = maintenanceStatus === "archived" || consciousUnavailable;
   const priorityRank = !isTask
@@ -318,7 +308,10 @@ export function deriveProductOperations(data, options = {}) {
     archived: maintenanceStatus === "archived",
     isArchive,
     isTask,
-    priorityRank,
+    priorityRank: isTask ? priorityRank + ({high:-5,normal:0,low:5}[data.maintenancePriority]??0) : priorityRank,
+    maintenancePriority:data.maintenancePriority??'normal',
+    recommendationOverride:data.recommendationOverride??'auto',
+    automaticPriceCheckAllowed:data.priceAutomation!=='editorial',
     purchasable,
     autoRecommendationEligible: !consciousUnavailable && recommendationStatus !== "archived"
   };
@@ -336,6 +329,8 @@ export function operationFieldsFrom(data, options = {}) {
     availabilityUpdated: operations.availabilityUpdated,
     editorialStatus: operations.editorialStatus,
     recommendationStatus: operations.recommendationStatus,
+    maintenancePriority:data.maintenancePriority,
+    recommendationOverride:data.recommendationOverride,
     maintenanceStatus: operations.maintenanceStatus
   };
 }
@@ -358,28 +353,6 @@ export function compareMaintenanceRows(left, right) {
   );
 }
 
-export function buildOperationsDashboard(rows) {
-  const list = Array.isArray(rows) ? rows : [];
-  const count = (predicate) => list.filter(predicate).length;
-  const total = list.length;
-  const complete = count((row) => ["complete", "archived"].includes(row.operations?.maintenanceStatus));
-
-  return {
-    products: total,
-    decisionQualityIssues: count(row => row.operations?.decisionQuality?.insufficientEvidence || row.operations?.decisionQuality?.uncertainValues > 0),
-    missingPrice: count((row) => !row.operations?.priceAvailable && !row.operations?.editorialPriceControl && !row.operations?.consciouslyUnavailable && !row.operations?.archived),
-    missingAffiliate: count((row) => !row.operations?.affiliateAvailable && !row.operations?.consciouslyUnavailable && !row.operations?.archived),
-    unknownAvailability: count((row) => row.operations?.availability === "unknown"),
-    discontinued: count((row) => row.operations?.availability === "discontinued"),
-    unavailable: count((row) => ["temporarily-unavailable", "out-of-stock"].includes(row.operations?.availability)),
-    stale30: count((row) => row.operations?.priceAgeDays != null && row.operations.priceAgeDays > 30),
-    stale90: count((row) => row.operations?.priceAgeDays != null && row.operations.priceAgeDays > 90),
-    maintenanceRequired: count((row) => row.operations?.maintenanceStatus === "required"),
-    maintenanceRecommended: count((row) => row.operations?.maintenanceStatus === "recommended"),
-    archived: count((row) => row.operations?.maintenanceStatus === "archived"),
-    maintenanceRate: total ? Math.round((complete / total) * 1000) / 10 : 100
-  };
-}
 
 export function toOperationsRecord(data, options = {}) {
   const operations = deriveProductOperations(data, options);
@@ -396,6 +369,8 @@ export function toOperationsRecord(data, options = {}) {
       const rating = Number(data?.rating);
       return Number.isFinite(rating) ? Math.round(rating * 20) : 0;
     })(),
+    lastPriceConfirmation:data.price?.checkedAt??null,
+    lastContentChange:data.updatedAt??null,
     sourceLabel: String(data?.price?.source?.label || "Nicht angegeben"),
     comparisonText: String(data?.price?.comparisonText || ""),
     currency: operations.currency,

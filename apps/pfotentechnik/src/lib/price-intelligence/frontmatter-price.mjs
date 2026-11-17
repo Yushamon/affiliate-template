@@ -26,7 +26,7 @@ const OPERATION_KEYS = new Set([
   "availabilityUpdated",
   "editorialStatus",
   "recommendationStatus",
-  "maintenanceStatus"
+  "maintenanceStatus", "maintenancePriority", "recommendationOverride"
 ]);
 
 export function splitFrontmatter(source, file = "Produktdatei") {
@@ -90,7 +90,7 @@ export function replaceProductOperations(frontmatter, fields) {
     "availabilityUpdated",
     "editorialStatus",
     "recommendationStatus",
-    "maintenanceStatus"
+    "maintenanceStatus", "maintenancePriority", "recommendationOverride"
   ];
 
   for (const key of ordered) {
@@ -274,7 +274,8 @@ export function canonicalizeProductPriceUrlSource(source, file = "Produktdatei")
 
 export async function updateProductPrice(file, price, options = {}) {
   const now = options.now ?? price?.checkedAt ?? new Date().toISOString();
-  return persistMutation(file, async ({ data, frontmatter }) => {
+  return persistMutation(file, async ({ data, frontmatter, source }) => {
+    if(options.expectedHash&&createHash('sha256').update(source).digest('hex')!==options.expectedHash)throw new Error('Konflikt: Produkt wurde inzwischen geändert. Bitte neu laden.');
     const incomingPrice = cleanPrice(price);
     const normalizedPrice = cleanPrice({
       ...(data.price ?? {}),
@@ -290,7 +291,7 @@ export async function updateProductPrice(file, price, options = {}) {
         ? canonicalAffiliateFrom(data, canonicalUrl, normalizedPrice?.source?.label)
         : data.affiliate;
 
-    const operationPatch = options.operations ?? {};
+    const operationPatch = Object.fromEntries(Object.entries(options.operations ?? {}).filter(([,value])=>value!==undefined));
     const nextData = {
       ...data,
       ...operationPatch,
@@ -341,7 +342,8 @@ export async function updateProductEditorial(file, input, expectedHash) {
 
 export async function updateProductOperations(file, patch = {}) {
   const now = patch.now ?? new Date().toISOString();
-  return persistMutation(file, async ({ data, frontmatter }) => {
+  return persistMutation(file, async ({ data, frontmatter, source }) => {
+    if(patch.expectedHash&&createHash('sha256').update(source).digest('hex')!==patch.expectedHash)throw new Error('Konflikt: Produkt wurde inzwischen geändert. Bitte neu laden.');
     const nextData = { ...data };
     let price = cleanPrice(data.price ?? { current: null, currency: "EUR", status: "unknown" });
     let manufacturer;
@@ -429,6 +431,7 @@ export async function updateProductOperations(file, patch = {}) {
       delete nextData.editorialStatus;
     }
 
+    for(const key of ['maintenancePriority','recommendationOverride'])if(patch[key]!==undefined)nextData[key]=patch[key];
     const operationData = { ...nextData, price };
     if (affiliate) operationData.affiliate = affiliate;
     else delete operationData.affiliate;
@@ -467,15 +470,18 @@ export async function readProductDocument(file) {
   return persistedDocument(file);
 }
 
-export async function updateProductOffer(file, id, update) {
+export async function updateProductOffer(file, id, update, options={}) {
   return runSerially(file, async () => {
     const source = await fs.readFile(file, 'utf8');
+    if(options.expectedHash&&createHash('sha256').update(source).digest('hex')!==options.expectedHash)throw new Error('Konflikt: Produkt wurde inzwischen geändert. Bitte neu laden.');
     const parts = splitFrontmatter(source, file);
     const data = yaml.load(parts.yaml, {schema: yaml.JSON_SCHEMA});
     const offers = [...(data.offers ?? [])];
     const index = offers.findIndex(offer => offer.id === id);
     const next = typeof update === 'function' ? await update(index < 0 ? null : offers[index]) : update;
-    if (index < 0) offers.push(next); else offers[index] = next;
+    if(next===null){if(index<0)throw new Error('Händlerangebot nicht gefunden.');offers.splice(index,1)}
+    else if (index < 0) offers.push(next); else offers[index] = next;
+    const destinations=offers.map(o=>o.officialProductUrl).filter(Boolean);if(new Set(destinations).size!==destinations.length)throw new Error('Diese Produkt-URL ist bereits als Händlerangebot hinterlegt.');
     productOffersSchema.parse(offers);
     const block = yaml.dump({offers}, {lineWidth: -1, noRefs: true, quotingType: '"', forceQuotes: true}).trimEnd();
     const frontmatter = replaceTopLevelBlock(parts.yaml, 'offers', block);

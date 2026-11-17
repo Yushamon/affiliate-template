@@ -36,7 +36,7 @@ const metrics = [
   ["maintenanceRequired", "Pflege erforderlich"],
   ["maintenanceRecommended", "Pflege empfohlen"],
   ["archived", "Archiviert"],
-  ["maintenanceRate", "Pflegequote"]
+  ["maintenanceRate", "Pflegefälle abgeschlossen (inkl. Archiv)"]
 ] as const;
 ---
 
@@ -57,16 +57,16 @@ const metrics = [
       <p>Händlerangebote je Produkt aufklappen: PETLIBRO über Awin, Preise aus offiziellen Produktdaten. ADCELL/Tractive ist vorbereitet; die bestätigten Programmdaten fehlen noch.</p>
       <p>Unter „Händlerangebote“ kannst du jeden Händlerpreis getrennt bearbeiten. Beide Preise bleiben gespeichert; die Veröffentlichung berücksichtigt Aktualität und Verfügbarkeit. Die bisherigen Tabellenkennzahlen beziehen sich auf den Hauptdatensatz.</p>
     </div>
-    <button type="button" data-check-all>Commerce-Daten aktualisieren</button>
+    <button type="button" data-check-all disabled>Commerce-Daten aktualisieren</button>
   </section>
 
   <section class="ops-metrics" aria-label="Produktpflege-Kennzahlen">
     {metrics.map(([key, label]) => (
-      <article class="pt-surface seo-card">
+      <article class="pt-surface seo-card"><button type="button" data-metric-filter={key}>
         <span>{label}</span>
         <strong data-metric={key}>
           {key === "maintenanceRate" ? `${dashboard[key]} %` : dashboard[key]}
-        </strong>
+        </strong></button>
       </article>
     ))}
   </section>
@@ -100,7 +100,7 @@ const metrics = [
     </label>
   </section>
 
-  <p class="ops-status" aria-live="polite" data-ops-status></p>
+  <p class="ops-status" aria-live="polite" data-ops-status>Schreibaktionen benötigen den lokalen Admin-Dienst: npm --workspace apps/pfotentechnik run seo:admin. Der öffentliche statische Build ist schreibgeschützt.</p><p>Pflegequote: Anteil vollständig bearbeiteter Fälle einschließlich bewusst archivierter Produkte an allen Produkten. Keine Liefer- oder Preisfrischequote. Kennzahlen überschneiden sich; anklicken zeigt die betroffenen Produkte.</p>
   <script type="application/json" data-ops-config set:html={serializedConfig}></script>
   <script type="application/json" data-ops-records set:html={serializedRows}></script>
 
@@ -130,11 +130,11 @@ const metrics = [
           </div>
           <div class="ops-cell">
             <strong data-field="formattedCurrent">{row.formattedCurrent ?? "Fehlt"}</strong>
-            <small data-field="sourceLabel">{row.sourceLabel}</small>
+            <small data-field="sourceLabel">{row.sourceLabel}</small><small>Letzter Commerce-Versuch: <span data-field="lastCommerceAttemptAt">Noch nicht protokolliert</span></small>
           </div>
           <div class="ops-cell">
             <small>Letzte Preisprüfung</small>
-            <span data-field="priceUpdated">{formatDate(row.priceUpdated)}</span>
+            <span data-field="lastPriceConfirmation">{formatDate(row.lastPriceConfirmation)}</span>
             <small data-field="priceAgeDays">
               {row.priceAgeDays == null ? "Kein Datenstand" : `${row.priceAgeDays} Tage alt`}
             </small>
@@ -163,7 +163,7 @@ const metrics = [
             <span class="pt-chip ops-chip" data-field="maintenanceStatus" data-state={row.maintenanceStatus}>{row.maintenanceLabel}</span>
           </div>
           <div class="ops-cell ops-actions">
-            <button type="button" data-check-price={row.slug} disabled={!row.targetUrl && !row.commerceOffers.length}>
+            <button type="button" data-check-price={row.slug} disabled>
               Commerce aktualisieren
             </button>
             <button type="button" class="pt-button pt-button-secondary secondary" data-toggle-editor={row.slug}>Pflegen</button>
@@ -171,6 +171,7 @@ const metrics = [
 
           <div class="ops-commerce" data-commerce-panel set:html={commerceCockpitMarkup(row.commerceOffers,row.slug)}></div>
           <form class="ops-editor" data-editor={row.slug} hidden>
+            <label>Empfehlbarkeit<select data-policy="recommendationOverride"><option value="auto" selected={row.recommendationOverride==='auto'}>Aus Produktdaten ableiten</option><option value="limited" selected={row.recommendationOverride==='limited'}>Bewusst einschränken</option></select></label><label>Pflegepriorität<select data-policy="maintenancePriority">{[['high','Hoch'],['normal','Normal'],['low','Niedrig']].map(([value,label])=><option value={value} selected={row.maintenancePriority===value}>{label}</option>)}</select></label><button type="button" disabled data-save-policy={row.slug}>Empfehlbarkeit und Priorität speichern</button>
             <label>
               <span>Preis</span>
               <input
@@ -232,8 +233,8 @@ const metrics = [
               <textarea rows="2" maxlength="360" data-draft="comparisonText">{row.comparisonText ?? ""}</textarea>
             </label>
             <div class="ops-editor__actions wide">
-              <button type="submit" data-save-product={row.slug}>Produktdaten speichern</button>
-              <button type="button" class="pt-button pt-button-secondary secondary" data-archive-product={row.slug}>
+              <button disabled type="submit" data-save-product={row.slug}>Produktdaten speichern</button>
+              <button type="button" class="pt-button pt-button-secondary secondary" disabled data-archive-product={row.slug}>
                 {row.maintenanceStatus === "archived" ? "Aus Archiv lösen" : "Bewusst archivieren"}
               </button>
               <button type="button" class="pt-button pt-button-secondary secondary" data-close-editor={row.slug}>Schließen</button>
@@ -247,6 +248,7 @@ const metrics = [
 </SeoAdminLayout>
 
 <script>
+  import {buildOperationsDashboard} from '../../../lib/product-operations/display.mjs';
   import { commerceCockpitMarkup } from '../../../lib/price-intelligence/commerce-view.mjs';
   // PT_SEO_PRICE_EDITOR_STABILITY_1_0_0: schützt aktive und ungespeicherte Preisentwürfe.
   type OperationsRecord = Record<string, any> & { slug: string; title: string };
@@ -311,7 +313,9 @@ const metrics = [
   const empty = document.querySelector<HTMLElement>("[data-empty]");
   const filter = document.querySelector<HTMLSelectElement>("[data-filter]");
   const search = document.querySelector<HTMLInputElement>("[data-search]");
-  let currentView = "tasks";
+  let currentView = 'tasks',metricFilter='';let serviceReady=false;
+  const localMode=['localhost','127.0.0.1','[::1]'].includes(location.hostname);
+  const writable=()=>{document.querySelectorAll<HTMLButtonElement>('[data-check-all],[data-check-price],[data-archive-product],[data-remove-offer],[data-save-policy],form button[type=submit]').forEach(b=>b.disabled=!serviceReady)};
 
   const setStatus = (message: string, level: "normal" | "error" = "normal") => {
     if (!status) return;
@@ -351,7 +355,7 @@ const metrics = [
 
   const textFor = (record: OperationsRecord, field: string) => {
     if (field === "formattedCurrent") return record.formattedCurrent || "Fehlt";
-    if (["priceUpdated", "availabilityUpdated", "editorialReviewedAt"].includes(field)) return formatDate(record[field]);
+    if (["priceUpdated", "availabilityUpdated", "editorialReviewedAt", "lastPriceConfirmation", "lastCommerceAttemptAt"].includes(field)) return formatDate(record[field]);
     if (field === "priceAgeDays") return record.priceAgeDays == null ? "Kein Datenstand" : `${record.priceAgeDays} Tage alt`;
     if (field === "affiliateAvailable") return record.affiliateAvailable ? "Vorhanden" : "Fehlt";
     if (field === "availability") return record.availabilityLabel;
@@ -400,7 +404,8 @@ const metrics = [
     const draft = draftFrom(record);
     drafts.set(record.slug, draft);
     writeDraftToEditor(editor, draft);
-    editor.dataset.dirty = "false";
+    editor.querySelectorAll<HTMLSelectElement>('[data-policy]').forEach(n=>n.value=record[n.dataset.policy!]||'');
+    editor.dataset.dirty = "false";editor.dataset.sourceHash=record.sourceHash||"";
     return true;
   };
   const updateRow = (record: OperationsRecord) => {
@@ -410,7 +415,7 @@ const metrics = [
     const panel = row.querySelector<HTMLElement>('[data-commerce-panel]');
     if (panel && !panel.contains(document.activeElement) && !panel.querySelector('[data-dirty="true"]')) {
       const open = panel.querySelector('details')?.open;
-      panel.innerHTML = commerceCockpitMarkup(record.commerceOffers,record.slug);
+      panel.innerHTML = commerceCockpitMarkup(record.commerceOffers,record.slug,record.sourceHash);
       const details = panel.querySelector('details'); if (details && open) details.open = true;
     }
     row.querySelectorAll<HTMLElement>("[data-field]").forEach((node) => {
@@ -425,32 +430,13 @@ const metrics = [
       check.disabled = !record.targetUrl && !record.commerceOffers?.length;
       check.textContent = "Commerce aktualisieren";
     }
-    syncEditor(record);
-  };
-
-  const metricValue = (key: string, values: OperationsRecord[]) => {
-    const count = (predicate: (record: OperationsRecord) => boolean) => values.filter(predicate).length;
-    if (key === "missingPrice") return count((record) => !record.priceAvailable && !record.consciouslyUnavailable && !record.archived);
-    if (key === "missingAffiliate") return count((record) => !record.affiliateAvailable && !record.consciouslyUnavailable && !record.archived);
-    if (key === "unknownAvailability") return count((record) => record.availability === "unknown");
-    if (key === "discontinued") return count((record) => record.availability === "discontinued");
-    if (key === "unavailable") return count((record) => ["temporarily-unavailable", "out-of-stock"].includes(record.availability));
-    if (key === "stale30") return count((record) => record.priceAgeDays != null && record.priceAgeDays > 30);
-    if (key === "stale90") return count((record) => record.priceAgeDays != null && record.priceAgeDays > 90);
-    if (key === "maintenanceRequired") return count((record) => record.maintenanceStatus === "required");
-    if (key === "maintenanceRecommended") return count((record) => record.maintenanceStatus === "recommended");
-    if (key === "archived") return count((record) => record.maintenanceStatus === "archived");
-    if (key === "maintenanceRate") {
-      const complete = count((record) => ["complete", "archived"].includes(record.maintenanceStatus));
-      return values.length ? `${Math.round((complete / values.length) * 1000) / 10} %` : "100 %";
-    }
-    return 0;
+    syncEditor(record);writable();
   };
 
   const refreshMetrics = () => {
     const values = [...records.values()];
     document.querySelectorAll<HTMLElement>("[data-metric]").forEach((node) => {
-      node.textContent = String(metricValue(node.dataset.metric || "", values));
+      node.textContent = node.dataset.metric==='maintenanceRate'?`${buildOperationsDashboard(values.map(operations=>({operations}))).maintenanceRate} %`:String(buildOperationsDashboard(values.map(operations=>({operations})))[node.dataset.metric||'']);
     });
   };
 
@@ -486,7 +472,7 @@ const metrics = [
       if (!row) continue;
       const viewMatch = currentView === "tasks" ? record.isTask : currentView === "archive" ? record.isArchive : true;
       const queryMatch = !query || `${record.title} ${record.category} ${record.slug}`.toLocaleLowerCase("de-DE").includes(query);
-      const show = viewMatch && queryMatch && matchesFilter(record, selectedFilter);
+      const show = viewMatch && queryMatch && matchesFilter(record, selectedFilter) && (!metricFilter || matchesMetric(record,metricFilter));
       row.hidden = !show;
       if (show) {
         list.append(row);
@@ -518,12 +504,12 @@ const metrics = [
 
   document.querySelectorAll<HTMLButtonElement>("[data-view]").forEach((button) => {
     button.addEventListener("click", () => {
-      currentView = button.dataset.view || "tasks";
+      metricFilter="";currentView = button.dataset.view || "tasks";
       document.querySelectorAll<HTMLButtonElement>("[data-view]").forEach((candidate) => candidate.classList.toggle("is-active", candidate === button));
       applyView();
     });
   });
-  filter?.addEventListener("change", applyView);
+  filter?.addEventListener("change", ()=>{metricFilter="";applyView()});
   search?.addEventListener("input", applyView);
 
   document.querySelectorAll<HTMLButtonElement>("[data-toggle-editor]").forEach((button) => {
@@ -584,7 +570,7 @@ const metrics = [
           const result = await fetchJson("/api/admin/prices/manual", {
             method: "POST",
             body: JSON.stringify({
-              slug,
+              slug,expectedHash:editor.dataset.sourceHash,
               current: draft.current,
               currency: draft.currency,
               priceState: draft.priceState,
@@ -663,15 +649,13 @@ const metrics = [
       button.disabled = true;
       setStatus("Aktive Produkte werden nacheinander geprüft …");
       try {
-        const result = await fetchJson("/api/admin/prices/check-all", {
-          method: "POST",
-          body: JSON.stringify({ includeInactive: false })
-        });
-        for (const item of result.results || []) {
-          if (item.record) applyServerResult(item);
+        const candidates=[...records.values()].filter(r=>!r.archived&&!r.consciouslyUnavailable&&r.automaticPriceCheckAllowed!==false&&(r.targetUrl||r.commerceOffers?.length));let succeeded=0,failed=0;
+        for(const [i,r] of candidates.entries()){
+          setStatus(`${i+1} von ${candidates.length}: ${r.title} wird geprüft …`);
+          try{const result=await fetchJson('/api/admin/prices/check',{method:'POST',body:JSON.stringify({slug:r.slug})});applyServerResult(result);if(result.ok)succeeded++;else failed++}catch(error){failed++;setStatus(String(error),'error')}
         }
-        const providerErrors = (result.results || []).flatMap((item: any) => (item.providerResults || []).filter((provider: any) => !provider.ok));
-        setStatus(`${result.succeeded} Produkte aktualisiert, ${result.failed} ohne Ergebnis, ${providerErrors.length} Quellen mit Hinweisen, ${result.skipped} übersprungen. Details bei den Händlerangeboten.`);
+        setStatus(`${succeeded} Produkte mit bestätigter Aktualisierung, ${failed} ohne bestätigtes Ergebnis. Fehlgeschlagene Prüfungen erneuern keine Preisbestätigung.`);
+
       } catch (error) {
         setStatus(error instanceof Error ? error.message : String(error), "error");
       } finally {
@@ -682,9 +666,10 @@ const metrics = [
 
   const refreshFromServer = async () => {
     try {
-      const payload = await fetchJson("/api/admin/prices");
+      if(!localMode){setStatus("Öffentliche Ansicht: Produktpflege nur im lokalen Administrationsmodus möglich.");writable();return}
+      const payload = await fetchJson("/api/admin/prices");serviceReady=true;
       for (const record of payload.products || []) updateRow(record);
-      refreshMetrics();
+      refreshMetrics();writable();
       const protectedCount = dirtyEditors.size;
       if (!hasProtectedEditorInteraction()) applyView();
       setStatus(
@@ -693,13 +678,13 @@ const metrics = [
           : "Persistierter Produktzustand ist synchronisiert."
       );
     } catch (error) {
-      setStatus(`Lokaler Admin-Dienst nicht erreichbar: ${error instanceof Error ? error.message : String(error)}`, "error");
+      serviceReady=false;writable();setStatus(`Lokaler Admin-Dienst nicht erreichbar. Starte npm --workspace apps/pfotentechnik run seo:admin und lade die Seite neu: ${error instanceof Error ? error.message : String(error)}`, "error");
       applyView();
     }
   };
 
   document.querySelector('[data-ops-list]')?.addEventListener('input', event => {
-    const form = (event.target as Element).closest<HTMLFormElement>('[data-offer-editor], [data-commerce-price-editor]');
+    const form = (event.target as Element).closest<HTMLFormElement>('[data-offer-editor], [data-commerce-price-editor], [data-link-editor]');
     if (form) form.dataset.dirty = 'true';
   });
   document.querySelector('[data-ops-list]')?.addEventListener('submit', async event => {
@@ -712,7 +697,7 @@ const metrics = [
       try {
         const fields = new FormData(priceForm);
         const result = await fetchJson('/api/admin/prices/manual', {method:'POST',body:JSON.stringify({
-          slug:priceForm.dataset.slug,offerId:priceForm.dataset.id,
+          slug:priceForm.dataset.slug,expectedHash:records.get(priceForm.dataset.slug||'')?.sourceHash,offerId:priceForm.dataset.id,
           current:fields.get('current'),currency:fields.get('currency'),availability:fields.get('availability'),
           priceState:String(fields.get('current') || '').trim() ? 'available' : 'unknown'
         })});
@@ -744,9 +729,20 @@ const metrics = [
     } catch(error) { if(feedback) feedback.textContent = error instanceof Error ? error.message : String(error); }
     finally { if(button) button.disabled = false; }
   });
-  refreshMetrics();
-  applyView();
-  void refreshFromServer();
+  const matchesMetric=(r:any,key:string)=>({missingPrice:!r.priceAvailable&&!r.editorialPriceControl&&!r.consciouslyUnavailable&&!r.archived,missingAffiliate:!r.affiliateAvailable&&!r.consciouslyUnavailable&&!r.archived,unknownAvailability:r.availability==='unknown',discontinued:r.availability==='discontinued',unavailable:['temporarily-unavailable','out-of-stock'].includes(r.availability),stale30:r.priceAgeDays>30,stale90:r.priceAgeDays>90,maintenanceRequired:r.maintenanceStatus==='required',maintenanceRecommended:r.maintenanceStatus==='recommended',archived:r.archived,maintenanceRate:['complete','archived'].includes(r.maintenanceStatus)})[key]??false;
+  document.querySelectorAll<HTMLButtonElement>('[data-metric-filter]').forEach(b=>b.addEventListener('click',()=>{metricFilter=b.dataset.metricFilter||'';currentView='all';if(filter)filter.value='all';applyView();setStatus('Gefiltert: '+b.textContent?.trim())}));
+  document.querySelector('[data-ops-list]')?.addEventListener('click',async event=>{
+    const policyButton=(event.target as Element).closest<HTMLButtonElement>('[data-save-policy]');if(policyButton&&serviceReady){const editor=policyButton.closest('form')!;policyButton.disabled=true;try{const patch=Object.fromEntries([...editor.querySelectorAll<HTMLSelectElement>('[data-policy]')].map(n=>[n.dataset.policy,n.value]));applyServerResult(await fetchJson('/api/admin/products/operations',{method:'POST',body:JSON.stringify({...patch,expectedHash:records.get(policyButton.dataset.savePolicy||'')?.sourceHash,slug:policyButton.dataset.savePolicy})}));setStatus('Empfehlbarkeit und Pflegepriorität gespeichert.')}catch(e){setStatus(String(e),'error')}finally{writable()}return}
+
+    const b=(event.target as Element).closest<HTMLButtonElement>('[data-remove-offer]');if(!b||!serviceReady)return;
+    b.disabled=true;try{applyServerResult(await fetchJson('/api/admin/prices/link',{method:'POST',body:JSON.stringify({slug:b.dataset.slug,id:b.dataset.removeOffer,action:'remove',expectedHash:b.dataset.sourceHash})}));setStatus('Händlerlink entfernt. Andere Angebote sind erhalten.')}catch(e){setStatus(String(e),'error')}finally{writable()}
+  });
+  document.querySelector('[data-ops-list]')?.addEventListener('submit',async event=>{
+    const f=(event.target as Element).closest<HTMLFormElement>('[data-link-editor]');if(!f)return;event.preventDefault();if(!serviceReady)return;
+    const b=f.querySelector<HTMLButtonElement>('button')!;b.disabled=true;
+    try{const input=Object.fromEntries(new FormData(f));const result=await fetchJson('/api/admin/prices/link',{method:'POST',body:JSON.stringify({...input,slug:f.dataset.slug,action:f.dataset.action,expectedHash:f.dataset.sourceHash,confirmIdentity:input.confirmIdentity==='on'})});f.dataset.dirty='false';(document.activeElement as HTMLElement)?.blur();applyServerResult(result);setStatus('Händlerlink persistent gespeichert. Produktseiten übernehmen ihn beim nächsten Build.')}catch(e){f.querySelector('[data-link-status]')!.textContent=String(e);setStatus(String(e),'error')}finally{writable()}
+  });
+  refreshMetrics();applyView();writable();void refreshFromServer();
 </script>
 
 
@@ -1025,3 +1021,5 @@ const metrics = [
     }
   }
 </style>
+
+<style>.ops-metrics button{appearance:none;border:0;background:none;color:inherit;text-align:left;display:grid;gap:8px;width:100%;cursor:pointer}.ops-link-editor{border-block:1px solid var(--pt-color-border);padding-block:12px}</style>

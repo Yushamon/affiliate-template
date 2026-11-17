@@ -1,4 +1,5 @@
 import {
+  setProductCommerceLink,
   checkAllProductPrices,
   checkProductPrice,
   priceAudit,
@@ -47,6 +48,7 @@ export async function handleOperationsRoute({ request, response, requestUrl, ori
       json(response, 200, await editorialService.save(await readJsonBody(request, 131072)), origin);
       return true;
     }
+    if(request.method==='POST'&&pathname==='/api/admin/prices/link'){assertJsonRequest(request);json(response,200,await setProductCommerceLink(await readJsonBody(request,32768)),origin);return true}
     if (request.method === 'POST' && pathname === '/api/admin/prices/offer') {
       assertJsonRequest(request);
       json(response,200,await setProductCommerceOffer(await readJsonBody(request,32768)),origin);

@@ -1,3 +1,7 @@
+import fs from 'node:fs';
+import {AUDIT_LOG_FILE} from '../search/config.mjs';
+import {createHash} from 'node:crypto';
+import {searchLog as sharedSearchLog,sanitizeLogEntry} from '../search/logging.mjs';
 import {decisionQualitySummary} from '../../domain/productExperience/decisionQuality.mjs';
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -29,7 +33,9 @@ import { affiliatePrograms } from '../../config/affiliate-programs.mjs';
 import { httpsDestination } from '../../../../../packages/affiliate-core/src/affiliate/networks.mjs';
 
 const appRoot = path.resolve(fileURLToPath(new URL("../../..", import.meta.url)));
-const productsDir = path.join(appRoot, "src", "content", "products");
+const productsDir = process.env.PFOTENTECHNIK_PRODUCT_FIXTURES || path.join(appRoot, "src", "content", "products");
+const commerceAuditPath=process.env.PFOTENTECHNIK_PRODUCT_FIXTURES?path.join(productsDir,'.commerce-audit.jsonl'):AUDIT_LOG_FILE;
+const searchLog=entry=>{if(process.env.PFOTENTECHNIK_PRODUCT_FIXTURES)fs.appendFileSync(commerceAuditPath,JSON.stringify(sanitizeLogEntry(entry))+'\n');else sharedSearchLog(entry)};
 const dedupePriceCheck = createInFlightDeduper();
 
 const editorialFields = data => ({ ratings: data.ratings, rating: data.rating, score: data.score,
@@ -96,7 +102,7 @@ const validateManufacturer = (input) => {
 };
 
 const resultFromDocument = (document, extra = {}) => {
-  const record = {...toOperationsRecord(document.data), commerceOffers: resolveCommerceOffers(document.data)};
+  const record = {sourceHash:document.source?createHash('sha256').update(document.source).digest('hex'):undefined,...toOperationsRecord(document.data), commerceOffers: resolveCommerceOffers(document.data)};
   return {
     ...record,
     ...extra,
@@ -201,6 +207,7 @@ export async function checkProductPrice(slugInput, {find = findDocument, checkLe
       }});
     }
     const providerResults = await refreshCommerceTasks(tasks);
+    searchLog({action:'commerce-check:'+slug,provider:'commerce',status:providerResults.some(r=>r.ok)?'success':'error',message:JSON.stringify(providerResults.map(({id,ok,error,value})=>({id,ok,error,value}))) });
     return resultFromDocument(await find(slug), {providerResults,
       ok:providerResults.some(r=>r.ok), error:providerResults.length ? providerResults.filter(r=>!r.ok).map(r=>`${r.id}: ${r.error}`).join(' · ') : 'Keine automatische Quelle konfiguriert.'});
   });
@@ -209,6 +216,8 @@ export async function checkProductPrice(slugInput, {find = findDocument, checkLe
 export async function checkAllProductPrices({ limit = Number.MAX_SAFE_INTEGER, includeInactive = false } = {}, {listDocuments = listPriceDocuments, check = checkProductPrice} = {}) {
   const documents = await listDocuments();
   const candidates = documents.filter((document) => {
+    const state=deriveProductOperations(document.data);
+    if(!includeInactive&&(state.archived||state.consciouslyUnavailable))return false;
     if (document.data.offers?.length) return true;
     if (!allowsAutomaticPriceCheck(document.data)) return false;
     if (includeInactive) return true;
@@ -265,10 +274,10 @@ export async function setManualProductPrice(input = {}, {find = findDocument, pe
     const currency = validateCurrency(input.currency);
     const persisted = await persistOffer(document.file, offerId, offer => ({
       ...offer,
-      price: {...offer.price, current, currency, checkedAt:now,
+      price: {...offer.price, current, currency, checkedAt:current!=null?now:undefined,
         source:{id:'cockpit-manual',label:affiliatePrograms[offer.program]?.label || offer.merchant,type:'manual'}},
-      priceState:current == null ? 'unknown' : 'available', availability, availabilityUpdated: availability !== 'unknown' ? now : undefined, error:undefined
-    }));
+      priceState:current == null ? 'unknown' : 'available', availability, availabilityUpdated: availability!==offer.availability||input.confirmAvailability===true ? (availability!=='unknown'?now:undefined) : offer.availabilityUpdated, error:undefined
+    }),{expectedHash:input.expectedHash});
     return resultFromDocument(persisted,{method:'manual-offer',offerId});
   }
   const hasCurrent = current != null;
@@ -297,10 +306,11 @@ export async function setManualProductPrice(input = {}, {find = findDocument, pe
       throw new Error("Für den Status Preis vorhanden oder veraltet muss ein Preis eingegeben werden.");
     }
     const patch = {
+      expectedHash:input.expectedHash,
       priceState,
       availability,
       availabilityReason,
-      availabilityUpdated: availability ? now : undefined,
+      availabilityUpdated: availability&&availability!==deriveProductOperations(data).availability ? now : data.availabilityUpdated,
       sourceLabel,
       comparisonText,
       ...(manufacturer ? { manufacturer } : {}),
@@ -317,6 +327,8 @@ export async function setManualProductPrice(input = {}, {find = findDocument, pe
   }
 
   const currency = validateCurrency(input.currency);
+  const unchangedPrice=current===Number(data.price?.current)&&String(input.currency||'EUR')===String(data.price?.currency||'EUR')&&!input.confirmPrice;
+  if(unchangedPrice){const patch={sourceLabel,comparisonText,expectedHash:input.expectedHash,...(manufacturer?{manufacturer}:{})};if(targetUrlProvided)patch.affiliateUrl=targetUrl;if(availability&&availability!==deriveProductOperations(data).availability){patch.availability=availability;patch.availabilityReason=availabilityReason}return resultFromDocument(await updateProductOperations(document.file,patch),{method:'manual-metadata'})}
   const persisted = await updateProductPrice(
     document.file,
     {
@@ -332,15 +344,16 @@ export async function setManualProductPrice(input = {}, {find = findDocument, pe
       }
     },
     {
+      expectedHash:input.expectedHash,
       affiliateUrl: targetUrl,
       syncAffiliateUrl: targetUrlProvided || Boolean(targetUrl),
       removeAffiliate: targetUrlProvided && !targetUrl,
       now,
       operations: {
         priceState,
-        availability,
+        availability:availability!==deriveProductOperations(data).availability?availability:undefined,
         availabilityReason,
-        availabilityUpdated: availability ? now : undefined
+        availabilityUpdated: availability&&availability!==deriveProductOperations(data).availability ? now : data.availabilityUpdated
       }
     }
   );
@@ -359,10 +372,10 @@ export async function setManualProductPrice(input = {}, {find = findDocument, pe
   });
 }
 
-export async function updateProductOperationsState(input = {}) {
+export async function updateProductOperationsState(input = {}, {find=findDocument}={}) {
   const slug = validateSlug(input.slug);
-  const document = await findDocument(slug);
-  const patch = { now: new Date().toISOString() };
+  const document = await find(slug);
+  const patch = { now: new Date().toISOString(),expectedHash:input.expectedHash };
 
   if (input.availability !== undefined) {
     if (!AVAILABILITY_VALUES.includes(input.availability)) throw new Error("Unbekannter Verfügbarkeitsstatus.");
@@ -373,6 +386,7 @@ export async function updateProductOperationsState(input = {}) {
     if (!PRICE_STATE_VALUES.includes(input.priceState)) throw new Error("Unbekannter Preisstatus.");
     patch.priceState = input.priceState;
   }
+  for(const [key,values] of [['maintenancePriority',['high','normal','low']],['recommendationOverride',['auto','limited']]])if(input[key]!==undefined){if(!values.includes(input[key]))throw new Error('Ungültige Pflegeeinstellung.');patch[key]=input[key]}
   if (input.archive !== undefined) patch.archive = Boolean(input.archive);
 
   const persisted = await updateProductOperations(document.file, patch);
@@ -380,9 +394,10 @@ export async function updateProductOperationsState(input = {}) {
 }
 
 export async function priceAudit() {
+  const attempts=new Map();if(fs.existsSync(commerceAuditPath))for(const line of fs.readFileSync(commerceAuditPath,'utf8').split('\n')){try{const e=JSON.parse(line);if(e.action?.startsWith('commerce-check:'))attempts.set(e.action.slice(15),{lastCommerceAttemptAt:e.timestamp,lastCommerceAttemptStatus:e.status,lastCommerceAttemptMessage:e.message})}catch{}}
   const documents = await listPriceDocuments();
   const products = documents
-    .map(({ data }) => ({...toOperationsRecord(data), commerceOffers: resolveCommerceOffers(data)}))
+    .map(({ data, source }) => ({...attempts.get(data.slug),sourceHash:createHash('sha256').update(source).digest('hex'),...toOperationsRecord(data), commerceOffers: resolveCommerceOffers(data)}))
     .map((record) => ({ ...record, operations: record }))
     .sort(compareMaintenanceRows)
     .map(({ operations: _operations, ...record }) => record);
@@ -392,6 +407,7 @@ export async function priceAudit() {
 
   return {
     generatedAt: new Date().toISOString(),
+    administration:{writable:true,isolatedFixtureMode:Boolean(process.env.PFOTENTECHNIK_PRODUCT_FIXTURES)},
     summary: {
       ...dashboard,
       amazonLinks: products.filter(p => p.amazonLinkPresent).length,
@@ -434,4 +450,43 @@ export async function setProductCommerceOffer(input = {}) {
     return productOfferSchema.parse(next);
   });
   return resultFromDocument(persisted);
+}
+
+// Link maintenance is independent of a price confirmation. It never stamps a
+// price/stock check, and it uses the existing offers array and atomic writer.
+export async function setProductCommerceLink(input={}, {find=findDocument}={}){
+ const document=await find(validateSlug(input.slug));
+ if(input.id==='legacy'){
+  if(input.action!=='remove')throw new Error('Den bisherigen Hauptlink im Produktformular bearbeiten.');
+  return resultFromDocument(await updateProductOperations(document.file,{affiliateUrl:undefined,expectedHash:input.expectedHash}));
+ }
+ const id=String(input.id||'').trim();if(!/^[a-z0-9][a-z0-9-]*$/.test(id))throw new Error('Ungültige Händlerkennung.');
+ const existing=document.data.offers?.find(o=>o.id===id);
+ if(input.action==='add'&&existing)throw new Error('Diese Händlerkennung ist bereits vergeben.');
+ if(input.action!=='add'&&!existing)throw new Error('Händlerangebot nicht gefunden.');
+ if(input.action==='remove')return resultFromDocument(await updateProductOffer(document.file,id,null,{expectedHash:input.expectedHash}));
+ const network=String(input.network||'none');if(!['partnernet','awin','adcell','none'].includes(network))throw new Error('Unbekanntes Affiliate-Netzwerk.');
+ const merchant=String(input.merchant||'').trim();if(!merchant||merchant.length>100)throw new Error('Anbietername fehlt oder ist zu lang.');
+ const officialProductUrl=httpsDestination(input.officialProductUrl);if(!officialProductUrl)throw new Error('Eine gültige direkte HTTPS-Produkt-URL ist erforderlich.');
+ const affiliateUrl=input.affiliateUrl?httpsDestination(input.affiliateUrl):null;if(input.affiliateUrl&&!affiliateUrl)throw new Error('Ungültige HTTPS-Affiliate-URL.');
+ if(network!=='none'&&!affiliateUrl&&!input.program)throw new Error('Affiliate-URL oder konfiguriertes Programm fehlt.');
+ const program=input.program?affiliatePrograms[input.program]:null;if(input.program&&!program)throw new Error('Unbekanntes Affiliate-Programm.');
+ if(program&&!program.hosts.includes(new URL(officialProductUrl).hostname))throw new Error('Produkt-URL gehört nicht zum gewählten Programm.');
+ const same=existing&&existing.officialProductUrl===officialProductUrl&&(existing.variantId||'')===String(input.variantId||'').trim()&&existing.program===(input.program||undefined)&&existing.network===network&&existing.merchant===merchant;
+ const confirmed=input.confirmIdentity===true;
+ if(!same&&!confirmed)throw new Error('Bitte Modell und Produktvariante vor dem Aktivieren bestätigen.');
+ const now=new Date().toISOString();
+ const persisted=await updateProductOffer(document.file,id,current=>productOfferSchema.parse({
+  ...(current||{}),id,merchant,network,program:input.program||undefined,officialProductUrl,
+  affiliate:{provider:affiliateUrl?merchant:'official',url:affiliateUrl||officialProductUrl,label:merchant,rel:affiliateUrl?'sponsored nofollow noopener':'nofollow noopener',target:'_blank'},
+  variantId:String(input.variantId||'').trim()||undefined,
+  mappingStatus:'verified',verifiedAt:same?current.verifiedAt:now,
+  commerceDataProvider:same?current.commerceDataProvider:'manual',
+  identityNote:'Produkt und Variante im lokalen Cockpit redaktionell bestätigt.',
+  price:same?current.price:{current:null,currency:'EUR',status:'unknown'},priceState:same?current.priceState:'unknown',
+  availability:same?current.availability:'unknown',availabilityUpdated:same?current.availabilityUpdated:undefined,
+  evidenceSources:same?current.evidenceSources:[{source:merchant,url:officialProductUrl,accessedAt:now,assertion:'Modell und Variante redaktionell bestätigt. Keine Preis- oder Lieferbestätigung.',fields:['officialProductUrl','variantId'],sourceType:'officialStore'}]
+ }),{expectedHash:input.expectedHash});
+ searchLog({provider:'commerce',action:'commerce-link:'+input.slug,status:'success',message:input.action+':'+id});
+ return resultFromDocument(persisted,{method:'commerce-link'});
 }

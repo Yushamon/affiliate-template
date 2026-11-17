@@ -1,0 +1,56 @@
+import fs from 'node:fs';import path from 'node:path';import os from 'node:os';import assert from 'node:assert/strict';import {spawn} from 'node:child_process';
+const output=path.resolve('apps/pfotentechnik/reports/product-operations-recovery-37.3a-qa');
+const profile=fs.mkdtempSync(path.join(os.tmpdir(),'pt373-chrome-')),sleep=ms=>new Promise(r=>setTimeout(r,ms));let chrome,ws;
+try{
+ fs.mkdirSync(output,{recursive:true});
+ const base='http://localhost:4321';
+ chrome=spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',['--headless','--disable-gpu','--disable-background-timer-throttling','--disable-renderer-backgrounding','--disable-backgrounding-occluded-windows','--no-first-run','--no-default-browser-check','--remote-debugging-port=0',`--user-data-dir=${profile}`],{stdio:'ignore'});
+ const portFile=path.join(profile,'DevToolsActivePort');for(let i=0;i<100&&!fs.existsSync(portFile);i++)await sleep(100);assert.ok(fs.existsSync(portFile));
+ const port=fs.readFileSync(portFile,'utf8').split('\n')[0],target=await(await fetch(`http://127.0.0.1:${port}/json/new?about:blank`,{method:'PUT'})).json();ws=new WebSocket(target.webSocketDebuggerUrl);await new Promise((resolve,reject)=>{ws.addEventListener('open',resolve,{once:true});ws.addEventListener('error',reject,{once:true})});
+ let id=0;const pending=new Map(),exceptions=[];
+ ws.addEventListener('message',event=>{const m=JSON.parse(event.data);if(m.method==='Runtime.exceptionThrown')exceptions.push(m.params.exceptionDetails.exception?.description??m.params.exceptionDetails.text);const p=pending.get(m.id);if(p){pending.delete(m.id);clearTimeout(p.timer);m.error?p.reject(Error(JSON.stringify(m.error))):p.resolve(m.result)}});
+ const send=(method,params={})=>new Promise((resolve,reject)=>{const key=++id,timer=setTimeout(()=>{pending.delete(key);reject(Error(method+': timeout'))},45000);pending.set(key,{resolve,reject,timer});ws.send(JSON.stringify({id:key,method,params}))});
+ const evaluate=async expression=>{const r=await send('Runtime.evaluate',{expression,awaitPromise:true,returnByValue:true});if(r.exceptionDetails)throw Error(JSON.stringify(r.exceptionDetails));return r.result.value};
+ await send('Page.enable');await send('Page.bringToFront');await send('Runtime.enable');const results=[];
+
+ await send('Emulation.setDeviceMetricsOverride',{width:1600,height:1100,deviceScaleFactor:1,mobile:false});
+ await send('Page.navigate',{url:base+'/admin/seo/prices/'});await sleep(4000);
+ const click=async selector=>{await evaluate(`document.querySelector(${JSON.stringify(selector)}).scrollIntoView({block:'center'})`);const r=await evaluate(`(()=>{const r=document.querySelector(${JSON.stringify(selector)}).getBoundingClientRect();return {x:r.x+r.width/2,y:r.y+r.height/2}})()`);await send('Input.dispatchMouseEvent',{type:'mousePressed',button:'left',clickCount:1,...r});await send('Input.dispatchMouseEvent',{type:'mouseReleased',button:'left',clickCount:1,...r});await sleep(150)};
+
+ const waitFor=async(expr,label)=>{for(let i=0;i<300;i++){if(await evaluate(expr))return;await sleep(100)}throw Error(label+': '+await evaluate(`document.querySelector('[data-ops-status]').textContent`))};
+ const key=async(key,code=key,extra={})=>{await send('Input.dispatchKeyEvent',{type:'keyDown',key,code,...extra});await send('Input.dispatchKeyEvent',{type:'keyUp',key,code,...extra})};
+ const fill=async(selector,text)=>{await click(selector);await send('Input.dispatchKeyEvent',{type:'keyDown',key:'a',code:'KeyA',modifiers:4,commands:['selectAll']});await send('Input.dispatchKeyEvent',{type:'keyUp',key:'a',code:'KeyA',modifiers:4});await send('Input.insertText',{text});};
+ const choose=async(selector,index)=>{await click(selector);await key('Home');for(let i=0;i<index;i++)await key('ArrowDown');await key('Enter')};
+ const api=async()=>await(await fetch('http://127.0.0.1:4178/api/admin/prices')).json();
+ const check=async(expr,label)=>{assert.ok(await evaluate(expr),label);results.push(label)};
+ const initial=await api();assert.equal(initial.administration?.isolatedFixtureMode,true,'Browser mutations require isolated fixture mode');
+ await waitFor(`!document.querySelector('[data-check-all]').disabled`,'Local service ready');
+ await evaluate(`window.trustedClicks=0;document.addEventListener('click',e=>{if(e.isTrusted)window.trustedClicks++})`);
+ await click('[data-view=all]');await fill('[data-search]','petlibro-air-automatic-feeder');
+ const row='[data-product-row="petlibro-air-automatic-feeder"]',add=row+' [data-link-editor][data-action=add]',current=()=>api().then(a=>a.products.find(p=>p.slug==='petlibro-air-automatic-feeder'));
+ await click(row+' .ops-link-editor > summary');
+ for(const [name,value]of Object.entries({id:'qa-recovery',merchant:'QA Händler',officialProductUrl:'https://example.com/qa-air',affiliateUrl:'https://example.com/qa-affiliate-one',variantId:'qa-air'}))await fill(add+` [name=${name}]`,value);
+ await click(add+' [name=confirmIdentity]');await click(add+' button[type=submit]');
+ await waitFor(`document.querySelector('[data-ops-status]').textContent.includes('Händlerlink persistent gespeichert')`,'Add affiliate');
+ assert.ok((await current()).commerceOffers.some(o=>o.id==='qa-recovery'&&o.affiliateUrl==='https://example.com/qa-affiliate-one'&&o.canLink));results.push('Linkanlage persistent, Angebot wird vom öffentlichen Commerce-Resolver als Kaufziel übernommen');
+ const shot=await send('Page.captureScreenshot',{format:'png'});fs.writeFileSync(path.join(output,'link-added.png'),Buffer.from(shot.data,'base64'));
+ await send('Page.reload');await waitFor(`document.querySelector('[data-ops-status]').textContent.includes('synchronisiert')`,'Reload');
+ await click('[data-view=all]');await fill('[data-search]','petlibro-air-automatic-feeder');
+ const edit=row+' [data-offer-id=qa-recovery] [data-link-editor]';await click(row+' [data-offer-id=qa-recovery] .ops-link-editor > summary');
+ await fill(edit+' [name=affiliateUrl]','https://example.com/qa-affiliate-two');await click(edit+' [name=confirmIdentity]');await click(edit+' button[type=submit]');await waitFor(`document.querySelector('[data-ops-status]').textContent.includes('Händlerlink persistent gespeichert')`,'Edit affiliate');
+ assert.equal((await current()).commerceOffers.find(o=>o.id==='qa-recovery').affiliateUrl,'https://example.com/qa-affiliate-two');results.push('Linkänderung und Neuladen');
+ // Server validation must leave the previously saved target unchanged.
+ await click(row+' [data-offer-id=qa-recovery] .ops-link-editor > summary');await fill(edit+' [name=affiliateUrl]','http://example.com/invalid');await click(edit+' [name=confirmIdentity]');await click(edit+' button[type=submit]');await waitFor(`document.querySelector('[data-ops-status]').textContent.includes('Ungültige HTTPS')`,'Validation error');assert.equal((await current()).commerceOffers.find(o=>o.id==='qa-recovery').affiliateUrl,'https://example.com/qa-affiliate-two');results.push('Validierungsfehler ohne Datenänderung');
+ await send('Page.reload');await waitFor(`document.querySelector('[data-ops-status]').textContent.includes('synchronisiert')`,'Reload after invalid input');await click('[data-view=all]');await fill('[data-search]','petlibro-air-automatic-feeder');
+ await click(row+' [data-remove-offer=qa-recovery]');await waitFor(`document.querySelector('[data-ops-status]').textContent.includes('Händlerlink entfernt')`,'Remove affiliate');assert.ok(!(await current()).commerceOffers.some(o=>o.id==='qa-recovery'));assert.ok((await current()).commerceOffers.some(o=>o.legacy));results.push('Link entfernt, ursprünglicher Hauptlink erhalten');
+ await click(row+' [data-toggle-editor]');const editor=row+' [data-editor]';
+ const beforeStock=(await current()).availabilityUpdated;
+ await fill(editor+' [data-draft=current]','55,99');await click(editor+' [data-save-product]');await waitFor(`document.querySelector('[data-ops-status]').textContent.includes('persistierter Zustand')`,'Price save');assert.equal((await current()).current,55.99);assert.equal((await current()).availabilityUpdated,beforeStock);results.push('Preis persistent, Lieferdatum bleibt bei reiner Preisänderung unverändert');
+ await choose(editor+' [data-draft=availability]',4);await click(editor+' [data-save-product]');await waitFor(`document.querySelector('[data-ops-status]').textContent.includes('persistierter Zustand')`,'Availability save');assert.equal((await current()).availability,'unknown');results.push('Verfügbarkeit manuell bearbeitet');
+ await choose(editor+' [data-policy=recommendationOverride]',1);await choose(editor+' [data-policy=maintenancePriority]',0);await click(editor+' [data-save-policy]');await waitFor(`document.querySelector('[data-ops-status]').textContent.includes('Pflegepriorität gespeichert')`,'Policy save');assert.equal((await current()).recommendationOverride,'limited');assert.equal((await current()).maintenancePriority,'high');results.push('Empfehlbarkeit und Pflegepriorität persistent');
+ await fill('[data-search]','');await click('[data-metric-filter=stale30]');await check(`[...document.querySelectorAll('[data-product-row]:not([hidden])')].length===Number(document.querySelector('[data-metric=stale30]').textContent)`,'Kennzahl filtert exakt ihre betroffenen Produkte');
+ await click('[data-check-all]');await waitFor(`document.querySelector('[data-ops-status]').textContent.includes('Produkte mit bestätigter Aktualisierung')`,'Sequential commerce workflow');results.push('Globaler Commerce-Button startet bestehenden Workflow mit sichtbarem Ergebnis');
+ assert.deepEqual(exceptions,[]);assert.ok(await evaluate('window.trustedClicks')>20);results.push('Echte vertrauenswürdige Maus- und Tastaturereignisse, keine JS-Ausnahmen');
+ fs.writeFileSync(path.join(output,'browser.json'),JSON.stringify({isolatedProductCopies:true,productionProductsChanged:false,results,exceptions,trustedClicks:await evaluate('window.trustedClicks'),finalStatus:await evaluate(`document.querySelector('[data-ops-status]').textContent`)},null,2));console.log(results);
+
+}finally{ws?.close();if(chrome&&chrome.exitCode===null)chrome.kill('SIGTERM');fs.rmSync(profile,{recursive:true,force:true})}
