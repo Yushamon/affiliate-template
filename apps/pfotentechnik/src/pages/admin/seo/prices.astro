@@ -709,7 +709,7 @@ const metrics = [
           : "Persistierter Produktzustand ist synchronisiert."
       );
       const job = await fetchJson('/api/admin/prices/check-all');
-      if (job?.status === 'running') void trackCommerceJob(job);
+      if (job) void trackCommerceJob(job);
     } catch (error) {
       serviceReady=false;writable();setStatus(`Lokaler Admin-Dienst nicht erreichbar. Starte npm --workspace apps/pfotentechnik run seo:admin und lade die Seite neu: ${error instanceof Error ? error.message : String(error)}`, "error");
       applyView();
