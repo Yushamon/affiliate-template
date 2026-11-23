@@ -60,7 +60,7 @@ price:
   current: 44.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-11-16T09:07:24.902Z"
+  checkedAt: "2026-11-23T13:55:06.884Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -75,7 +75,7 @@ rating: 3.8
 score: 75
 
 priceState: "available"
-priceUpdated: "2026-11-16T09:07:24.902Z"
+priceUpdated: "2026-11-23T13:55:06.884Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"
@@ -298,7 +298,7 @@ offers:
     availability: "unknown"
     identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
     evidenceSources: []
-    lastAttemptAt: "2026-11-16T09:07:24.905Z"
+    lastAttemptAt: "2026-11-23T13:55:06.899Z"
     error: "Offizielle Produkt-URL unresolved."
 evidenceSources:
   - source: Herstellerdokumentation · PETLIBRO Stainless Steel Fountain 3L

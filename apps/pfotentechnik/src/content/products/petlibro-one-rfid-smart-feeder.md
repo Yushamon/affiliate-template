@@ -64,11 +64,12 @@ images:
     - src: ../../assets/images/products/petlibro-one-rfid-smart-feeder/gallery-3.webp
       alt: Katze mit RFID-Halsbandanhänger vor dem geöffneten Zugang des PETLIBRO One
 price:
-  current: 141.54
+  current: 139.99
   currency: "EUR"
   status: "unknown"
   comparisonText: "Die typische Spanne basiert auf 18 aktuell hinterlegten Vergleichspreisen derselben Kategorie."
-  checkedAt: "2026-11-16T09:07:16.121Z"
+  changedAt: "2026-11-23T13:54:53.704Z"
+  checkedAt: "2026-11-23T13:54:53.704Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -83,7 +84,7 @@ rating: 3.7
 score: 74
 
 priceState: "available"
-priceUpdated: "2026-11-16T09:07:16.121Z"
+priceUpdated: "2026-11-23T13:54:53.704Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"
@@ -264,7 +265,7 @@ offers:
       current: 199.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-11-16T09:07:16.236Z"
+      checkedAt: "2026-11-23T13:54:53.901Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -288,8 +289,8 @@ offers:
     variantId: "53222683672942"
     expectedSku: "PL-AF301-38B"
     variantLabel: "1 Paket / Schwarz"
-    lastAttemptAt: "2026-11-16T09:07:16.236Z"
-    availabilityUpdated: "2026-11-16T09:07:16.236Z"
+    lastAttemptAt: "2026-11-23T13:54:53.901Z"
+    availabilityUpdated: "2026-11-23T13:54:53.901Z"
 experience:
   summary: >-
     Ein Gerät koppelt laut Hersteller nur einen RFID-Anhänger. Ein einzelner One RFID ist deshalb keine

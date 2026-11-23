@@ -62,10 +62,11 @@ images:
     - src: ../../assets/images/products/imipaw-3l-automatic-cat-feeder/gallery-3.webp
       alt: IMIPAW 3L mit Vorratsbehälter und Futterschale
 price:
-  current: 32.99
+  current: 34.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-11-02T08:09:31.486Z"
+  changedAt: "2026-11-23T13:52:54.367Z"
+  checkedAt: "2026-11-23T13:52:54.367Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -80,7 +81,7 @@ rating: 3.9
 score: 79
 
 priceState: "available"
-priceUpdated: "2026-11-02T08:09:31.486Z"
+priceUpdated: "2026-11-23T13:52:54.367Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

@@ -60,11 +60,12 @@ subscription:
     - { name: "Max GPS monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 12.99, currency: EUR, effectiveMonthlyPrice: 12.99, autoRenew: true }
     - { name: "Max GPS jährlich", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 129.90, currency: EUR, effectiveMonthlyPrice: 10.83, autoRenew: true, featured: true, notes: "Jahresbetrag im Voraus" }
 price:
-  current: 219
+  current: 153.3
   currency: "EUR"
   status: "unknown"
   variantLabel: "Paketangebot: Gerät inklusive Max-GPS-Jahrespaket (12 Monate)"
-  checkedAt: "2026-11-16T10:40:05.613Z"
+  changedAt: "2026-11-23T13:52:56.945Z"
+  checkedAt: "2026-11-23T13:52:56.945Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -79,7 +80,7 @@ affiliate:
   target: "_blank"
 
 priceState: "available"
-priceUpdated: "2026-11-16T10:40:05.613Z"
+priceUpdated: "2026-11-23T13:52:56.945Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

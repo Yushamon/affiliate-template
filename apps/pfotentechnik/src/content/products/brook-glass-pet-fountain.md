@@ -63,10 +63,11 @@ images:
     - src: ../../assets/images/products/brook-glass-pet-fountain/gallery-3.webp
       alt: "Brook Ersatzfiltersets und Ersatzteile im Anbieterbild; Bildquelle: Amazon-Angebot"
 price:
-  current: 125.02
+  current: 126.25
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-11-16T09:24:10.079Z"
+  changedAt: "2026-11-23T13:51:45.268Z"
+  checkedAt: "2026-11-23T13:51:45.268Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -79,8 +80,9 @@ affiliate:
   rel: "sponsored nofollow noopener"
   target: "_blank"
 rating: 3.7
+
 priceState: "available"
-priceUpdated: "2026-11-16T09:24:10.079Z"
+priceUpdated: "2026-11-23T13:51:45.268Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

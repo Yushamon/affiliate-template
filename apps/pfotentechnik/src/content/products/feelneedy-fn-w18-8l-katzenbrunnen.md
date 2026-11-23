@@ -59,10 +59,11 @@ images:
     - src: "../../assets/images/products/feelneedy-fn-w18-8l-katzenbrunnen/gallery-3.webp"
       alt: "Filterhalter, Mehrschichtfilter und Pumpenschwamm des FEELNEEDY FN-W18"
 price:
-  current: 52.99
+  current: 47.49
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-11-02T08:09:19.873Z"
+  changedAt: "2026-11-23T13:52:27.726Z"
+  checkedAt: "2026-11-23T13:52:27.726Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -77,7 +78,7 @@ rating: 4.0
 score: 80
 
 priceState: "available"
-priceUpdated: "2026-11-02T08:09:19.873Z"
+priceUpdated: "2026-11-23T13:52:27.726Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

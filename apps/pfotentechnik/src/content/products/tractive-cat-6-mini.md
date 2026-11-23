@@ -75,7 +75,7 @@ price:
   current: 69
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-11-16T09:07:40.897Z"
+  checkedAt: "2026-11-23T13:55:43.433Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -90,7 +90,7 @@ rating: 4.5
 score: 91
 
 priceState: "available"
-priceUpdated: "2026-11-16T09:07:40.897Z"
+priceUpdated: "2026-11-23T13:55:43.433Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"
@@ -514,7 +514,6 @@ reviewedAlternatives:
     reason: >-
       Alternative für Katzen mit anderer Befestigung. Gewicht, Sicherheitshalsband und Mobilfunktarif vor dem
       Kauf prüfen.
-
 ---
 Beim Tractive CAT 6 Mini bilden Tracker und Halsband eine konstruktive Einheit. Das vom Hersteller angegebene Gewicht von 32 g umfasst deshalb das vollständige System. Für die Auswahl sind neben dem Körpergewicht der Katze vor allem der zulässige Halsumfang von 19 bis 22,9 cm und der Sinn des Sicherheitsverschlusses entscheidend.
 

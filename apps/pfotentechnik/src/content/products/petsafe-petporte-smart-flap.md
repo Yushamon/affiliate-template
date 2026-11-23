@@ -24,7 +24,7 @@ rating: 4.0
 score: 81
 
 priceState: "available"
-priceUpdated: "2026-10-22T13:05:33.106Z"
+priceUpdated: "2026-11-23T13:55:17.607Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"
@@ -42,10 +42,11 @@ ratings:
   systemabhaengigkeit_und_folgekosten: 4.5
 
 price:
-  current: 139.99
+  current: 114.88
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-10-22T13:05:33.106Z"
+  changedAt: "2026-11-23T13:55:17.607Z"
+  checkedAt: "2026-11-23T13:55:17.607Z"
   source:
     id: "amazon.de"
     label: "amazon.de"

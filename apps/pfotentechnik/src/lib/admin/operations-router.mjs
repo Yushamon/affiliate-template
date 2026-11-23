@@ -1,6 +1,7 @@
 import {
   setProductCommerceLink,
-  checkAllProductPrices,
+  startCommerceRefresh,
+  getCommerceRefresh,
   checkProductPrice,
   priceAudit,
   setManualProductPrice,
@@ -64,13 +65,14 @@ export async function handleOperationsRoute({ request, response, requestUrl, ori
       json(response, 200, await checkProductPrice(String(body.slug || "")), origin);
       return true;
     }
+    if (request.method === "GET" && pathname === "/api/admin/prices/check-all") {
+      json(response, 200, getCommerceRefresh(), origin);
+      return true;
+    }
     if (request.method === "POST" && pathname === "/api/admin/prices/check-all") {
       assertJsonRequest(request);
-      const body = await readJsonBody(request, 32_768);
-      json(response, 200, await checkAllProductPrices({
-        limit: body.limit,
-        includeInactive: Boolean(body.includeInactive)
-      }), origin);
+      await readJsonBody(request, 32_768);
+      json(response, 202, startCommerceRefresh(), origin);
       return true;
     }
     if (request.method === "POST" && pathname === "/api/admin/prices/manual") {

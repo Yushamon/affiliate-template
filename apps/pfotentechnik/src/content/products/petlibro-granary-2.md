@@ -192,7 +192,7 @@ offers:
       current: 169.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-11-16T10:39:59.323Z"
+      checkedAt: "2026-11-23T13:54:34.350Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -200,7 +200,7 @@ offers:
         url: "https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie?variant=54477261209966"
     priceState: "available"
     availability: "available"
-    availabilityUpdated: "2026-11-16T10:39:59.323Z"
+    availabilityUpdated: "2026-11-23T13:54:34.350Z"
     evidenceSources:
       - source: "petlibro-variants"
         url: "https://de.petlibro.com/products/automatischer-futterautomat-der-granary-2-serie.js"
@@ -213,7 +213,7 @@ offers:
           - "price"
           - "availability"
         sourceType: "officialStore"
-    lastAttemptAt: "2026-11-16T10:39:59.323Z"
+    lastAttemptAt: "2026-11-23T13:54:34.350Z"
 decision:
   bestFor:
     - Eine Katze

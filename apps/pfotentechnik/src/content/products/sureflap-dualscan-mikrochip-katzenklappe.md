@@ -24,16 +24,16 @@ affiliate:
   url: "https://www.surepetcare.com/de-de/haustierklappen/dualscan-mikrochip-katzenklappe"
   rel: "sponsored nofollow noopener"
   target: "_blank"
-
 rating: 4.2
 price:
-  current: null
+  current: 155
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-05"
+  changedAt: "2026-11-23T13:55:35.615Z"
+  checkedAt: "2026-11-23T13:55:35.615Z"
   source:
-    id: "surepetcare-de-dualscan"
-    label: "Sure Petcare Deutschland"
+    id: "surepetcare.com"
+    label: "surepetcare.com"
     type: "merchant"
 images:
   hero:
@@ -112,15 +112,16 @@ weaknesses:
   - "Keine Aktivitätsprotokolle"
   - "Vier AA-Batterien erforderlich"
   - "Zum Prüfzeitpunkt nicht vorrätig"
-priceState: "unknown"
-priceUpdated: "2026-08-05"
-priceAvailable: false
+
+priceState: "available"
+priceUpdated: "2026-11-23T13:55:35.615Z"
+priceAvailable: true
 affiliateAvailable: true
-availability: "temporarily-unavailable"
-availabilityReason: "Im deutschen Hersteller-Shop gelistet, bei der Prüfung am 05.08.2026 jedoch als nicht vorrätig markiert."
-availabilityUpdated: "2026-08-05"
+availability: "available"
+availabilityReason: "Händler meldet https://schema.org/InStock bei der automatischen Prüfung."
+availabilityUpdated: "2026-11-23T13:55:35.615Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
+recommendationStatus: "recommended"
 maintenanceStatus: "complete"
 
 editorial:

@@ -39,14 +39,15 @@ images:
     - src: "../../assets/images/products/petsafe-streamside-trinkbrunnen/gallery-4.webp"
       alt: "PetSafe Keramik-Trinkbrunnen Streamside – Produktansicht 4"
 price:
-  current: 70.99
+  current: 57.59
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-17T14:34:46.836Z"
+  changedAt: "2026-11-23T13:55:24.153Z"
+  checkedAt: "2026-11-23T13:55:24.153Z"
   source:
-    id: "manual"
-    label: "PetSafe Deutschland"
-    type: "manual"
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 priceAutomation: "automatic"
 rating: 4.3
 affiliate:
@@ -57,14 +58,13 @@ affiliate:
   target: "_blank"
 
 priceState: "available"
-priceUpdated: "2026-08-17T14:34:46.836Z"
+priceUpdated: "2026-11-23T13:55:24.153Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"
-availabilityUpdated: "2026-08-17T14:34:46.836Z"
 editorialStatus: "complete"
 recommendationStatus: "limited"
-maintenanceStatus: "complete"
+maintenanceStatus: "required"
 
 ratings:
   lautstaerke: 4.7

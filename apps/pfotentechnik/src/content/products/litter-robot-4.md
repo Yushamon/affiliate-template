@@ -44,11 +44,11 @@ price:
   current: 799
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-17T14:31:40.245Z"
+  checkedAt: "2026-11-23T13:52:59.990Z"
   source:
-    id: "manual"
-    label: "Whisker EU"
-    type: "manual"
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 priceAutomation: "automatic"
 rating: 4.4
 affiliate:
@@ -59,14 +59,13 @@ affiliate:
   target: "_blank"
 
 priceState: "available"
-priceUpdated: "2026-08-17T14:31:40.245Z"
+priceUpdated: "2026-11-23T13:52:59.990Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"
-availabilityUpdated: "2026-08-17T14:31:40.245Z"
 editorialStatus: "complete"
 recommendationStatus: "limited"
-maintenanceStatus: "complete"
+maintenanceStatus: "required"
 
 ratings:
   reinigung: 4.8

@@ -57,14 +57,15 @@ images:
     - src: "../../assets/images/products/petkit-purobot-max-3/gallery-4.webp"
       alt: "PETKIT PUROBOT MAX 3 – Produktansicht 4"
 price:
-  current: 649.99
+  current: 439.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-17T11:06:34.080Z"
+  changedAt: "2026-11-23T13:54:07.186Z"
+  checkedAt: "2026-11-23T13:54:07.186Z"
   source:
-    id: "manual"
-    label: "Hersteller"
-    type: "manual"
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 priceAutomation: "automatic"
 rating: 4
 affiliate:
@@ -75,7 +76,7 @@ affiliate:
   target: "_blank"
 
 priceState: "available"
-priceUpdated: "2026-08-17T11:06:34.080Z"
+priceUpdated: "2026-11-23T13:54:07.186Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"

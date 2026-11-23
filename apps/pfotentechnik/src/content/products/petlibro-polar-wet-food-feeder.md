@@ -429,7 +429,7 @@ offers:
       current: 199.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-11-16T09:07:18.404Z"
+      checkedAt: "2026-11-23T13:54:57.259Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -453,8 +453,8 @@ offers:
     variantId: "52122051084654"
     expectedSku: "PL-AF109-33B"
     variantLabel: "Schwarz / Edelstahlnapf"
-    lastAttemptAt: "2026-11-16T09:07:18.404Z"
-    availabilityUpdated: "2026-11-16T09:07:18.404Z"
+    lastAttemptAt: "2026-11-23T13:54:57.259Z"
+    availabilityUpdated: "2026-11-23T13:54:57.259Z"
 ---
 Der **PETLIBRO Polar Wet Food Feeder PLAF109** gehört zu den wenigen Nassfutterautomaten mit aktiver Kühlung. Drei vorbereitete Portionen werden nicht nur mit Kühlakkus temperiert, sondern über ein thermoelektrisches System gekühlt. Im [Vergleich der besten Nassfutterautomaten](/vergleiche/beste-futterautomaten-fuer-nassfutter/) ordnen wir ihn direkt gegen aktive Kühlung, Kühlakku-Modelle und Offline-Lösungen ein.
 

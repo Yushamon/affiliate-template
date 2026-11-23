@@ -345,7 +345,7 @@ offers:
     availability: "unknown"
     identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
     evidenceSources: []
-    lastAttemptAt: "2026-11-16T09:07:00.392Z"
+    lastAttemptAt: "2026-11-23T13:54:29.340Z"
     error: "Offizielle Produkt-URL unresolved."
 evidenceSources:
   - source: Herstellerdokumentation · PETLIBRO Dockstream RFID Smart

@@ -28,7 +28,7 @@ price:
   current: 359.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-10-16T07:58:55.919Z"
+  checkedAt: "2026-11-23T13:53:06.634Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -111,22 +111,21 @@ affiliate:
   url: "https://www.amazon.de/Neakasa-selbstreinigend-Katzentoilette-App-Steuerung-Fassungsverm%C3%B6gen/dp/B0CSKBWBF6/ref=sr_1_4?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=135AOIM13EXV5&dib=eyJ2IjoiMSJ9.gyMWcRgnE_sssZIwUnJGPbovcHUlLMOA9ab5Dnp-DGUtJgwP44SCPMfdgDliCxxiMdltDqO1ZB2n5lqVRAgRFCkEffqpSLwRxubT2Gs9B24aVxGZPI5Ekjy1Yt-J4_bBktObrqnqB9BA9YSf17ZSp0TMLTCxFd9B6_U1mPlLKz4TozS51-LnHaT-2CC4179JNxIPTtW_R61JxO4eNmaKNlOuezXE9ZvRNb6aGZGfg31YSasGSTnl4W77u8ERA1-wzf3-e9Z92DyOUZavoKFNf3b1nSmYY6ldw6cpOxJDTNs.ylkUY8NxZ2MheR_ColLtkf_XL_V39sy7KPCv2_Y2BWE&dib_tag=se&keywords=Neakasa%2BM1%2BPlus%2BKatzenklo&qid=1786096727&s=pet-supplies&sprefix=neakasa%2Bm1%2Bplus%2Bkatzenklo%2B%2Cpets%2C127&sr=1-4&th=1"
   rel: "sponsored nofollow noopener"
   target: "_blank"
-priceState: "available"
-priceUpdated: "2026-10-16T07:58:55.919Z"
-priceAvailable: true
-affiliateAvailable: true
-availability: "available"
-availabilityReason: "Bei der automatischen Preisprüfung als verfügbar erkannt."
-availabilityUpdated: "2026-10-16T07:58:55.919Z"
-editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
 sensorLimits:
   automaticModeMinimumWeightKg: 1
   belowMinimumBehavior: automationDisabled
   sourceUrl: https://neakasa.com/products/neakasa-m1-cat-litter-box
   sourceType: manufacturer
   verifiedAt: "2026-08-06"
+priceState: "available"
+priceUpdated: "2026-11-23T13:53:06.634Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "unknown"
+availabilityReason: "Früherer automatischer Status ohne belastbaren Liefernachweis; Verfügbarkeit erneut prüfen."
+editorialStatus: "complete"
+recommendationStatus: "limited"
+maintenanceStatus: "required"
 ---
 
 ## Gewöhnung ohne Zwang

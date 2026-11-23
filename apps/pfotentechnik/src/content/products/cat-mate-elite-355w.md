@@ -43,7 +43,7 @@ price:
   currency: "EUR"
   status: "unknown"
   changedAt: "2026-11-23T12:17:50.712Z"
-  checkedAt: "2026-11-23T12:17:50.712Z"
+  checkedAt: "2026-11-23T13:52:03.123Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -58,7 +58,7 @@ affiliate:
   target: "_blank"
 
 priceState: "available"
-priceUpdated: "2026-11-23T12:17:50.712Z"
+priceUpdated: "2026-11-23T13:52:03.123Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

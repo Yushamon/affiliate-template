@@ -71,10 +71,11 @@ subscription:
   additionalCostNote: "Die VHF-Ortung benötigt kein Mobilfunkabo, aber ein kompatibles Garmin-Alpha-Handgerät als separate Hardware."
   plans: []
 price:
-  current: 273.58
+  current: 356.56
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-11-16T09:06:07.672Z"
+  changedAt: "2026-11-23T13:52:41.651Z"
+  checkedAt: "2026-11-23T13:52:41.651Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -89,7 +90,7 @@ rating: 4
 score: 81
 
 priceState: "available"
-priceUpdated: "2026-11-16T09:06:07.672Z"
+priceUpdated: "2026-11-23T13:52:41.651Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

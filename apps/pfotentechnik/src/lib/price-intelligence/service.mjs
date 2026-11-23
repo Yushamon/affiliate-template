@@ -25,6 +25,7 @@ import {
 } from "../product-operations/policy.mjs";
 import { resolveCommerceOffers } from '../../domain/commerceOffers.mjs';
 import { fetchStructuredPrice, refreshCommerceOffer, refreshCommerceTasks } from './commerce-refresh.mjs';
+import { createCommerceRefreshJob } from './commerce-refresh-job.mjs';
 import { productOfferSchema } from '../../content/schema/commerce.mjs';
 import { affiliatePrograms } from '../../config/affiliate-programs.mjs';
 import { httpsDestination } from '../../../../../packages/affiliate-core/src/affiliate/networks.mjs';
@@ -243,6 +244,10 @@ export async function checkAllProductPrices({ limit = Number.MAX_SAFE_INTEGER, i
     results
   };
 }
+
+const commerceRefreshJob = createCommerceRefreshJob({listDocuments: listPriceDocuments, check: checkProductPrice});
+export const startCommerceRefresh = () => commerceRefreshJob.start();
+export const getCommerceRefresh = () => commerceRefreshJob.get();
 
 export async function setManualProductPrice(input = {}, {find = findDocument, persistOffer = updateProductOffer} = {}) {
   // PT_MANUAL_PRICE_STATE_NORMALIZATION_2_0_1

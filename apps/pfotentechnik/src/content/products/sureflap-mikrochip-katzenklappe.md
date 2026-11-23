@@ -67,13 +67,14 @@ images:
       alt: "Detailaufnahme der transparenten Rauchglas-Klappe mit umlaufender Dichtung"
 
 price:
-  current: null
+  current: 100
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-04"
+  changedAt: "2026-11-23T13:55:40.239Z"
+  checkedAt: "2026-11-23T13:55:40.239Z"
   source:
-    id: "surepetcare-de"
-    label: "Sure Petcare Deutschland"
+    id: "surepetcare.com"
+    label: "surepetcare.com"
     type: "merchant"
 affiliate:
   provider: "surepetcare-de"
@@ -81,20 +82,20 @@ affiliate:
   url: "https://www.surepetcare.com/de-de/haustierklappen/mikrochip-katzenklappe"
   rel: "sponsored nofollow noopener"
   target: "_blank"
-
 testStatus: "manufacturer-data"
 productStatus: "active"
 
 rating: 4.1
-priceState: "unknown"
-priceUpdated: "2026-08-04"
-priceAvailable: false
+
+priceState: "available"
+priceUpdated: "2026-11-23T13:55:40.239Z"
+priceAvailable: true
 affiliateAvailable: true
-availability: "temporarily-unavailable"
-availabilityReason: "Im deutschen Hersteller-Shop gelistet, bei der Prüfung am 04.08.2026 jedoch als nicht vorrätig markiert."
-availabilityUpdated: "2026-08-04"
+availability: "available"
+availabilityReason: "Händler meldet https://schema.org/InStock bei der automatischen Prüfung."
+availabilityUpdated: "2026-11-23T13:55:40.239Z"
 editorialStatus: "complete"
-recommendationStatus: "limited"
+recommendationStatus: "recommended"
 maintenanceStatus: "complete"
 
 editorial:

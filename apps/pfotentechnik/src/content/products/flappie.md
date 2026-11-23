@@ -68,11 +68,12 @@ subscription:
     sind nicht belastbar veröffentlicht; deshalb wird kein Tarif und keine 12-/24-Monats-Summe berechnet.
   plans: []
 price:
-  current: 479
+  current: 429
   currency: "EUR"
   status: "unknown"
   comparisonText: "Deutscher Gerätepreis inkl. MwSt.; Versandkosten werden erst im Checkout ausgewiesen."
-  checkedAt: "2026-11-16T09:06:00.973Z"
+  changedAt: "2026-11-23T13:52:28.525Z"
+  checkedAt: "2026-11-23T13:52:28.525Z"
   source:
     id: "flappiedoors.com"
     label: "flappiedoors.com"
@@ -90,7 +91,7 @@ conversion:
   showSecondaryCta: true
 
 priceState: "available"
-priceUpdated: "2026-11-16T09:06:00.973Z"
+priceUpdated: "2026-11-23T13:52:28.525Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

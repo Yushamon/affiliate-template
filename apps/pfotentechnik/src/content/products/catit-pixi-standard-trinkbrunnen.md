@@ -65,10 +65,11 @@ images:
     - src: ../../assets/images/products/catit-pixi-standard-trinkbrunnen/gallery-3.webp
       alt: "Trinkfläche des mintgrünen Catit PIXI Standard von oben; Bildquelle: Amazon-Angebot"
 price:
-  current: 29.49
+  current: 34.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-11-16T09:24:10.272Z"
+  changedAt: "2026-11-23T13:52:12.798Z"
+  checkedAt: "2026-11-23T13:52:12.798Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -81,8 +82,9 @@ affiliate:
   rel: "sponsored nofollow noopener"
   target: "_blank"
 rating: 3.9
+
 priceState: "available"
-priceUpdated: "2026-11-16T09:24:10.272Z"
+priceUpdated: "2026-11-23T13:52:12.798Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

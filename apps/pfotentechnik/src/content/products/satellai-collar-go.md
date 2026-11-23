@@ -57,7 +57,7 @@ images:
 rating: 3.1
 
 priceState: "available"
-priceUpdated: "2026-11-16T10:40:01.240Z"
+priceUpdated: "2026-11-23T13:55:30.119Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"
@@ -236,7 +236,7 @@ price:
   currency: "EUR"
   status: "unknown"
   variantLabel: "EU Carbon Black / M"
-  checkedAt: "2026-11-16T10:40:01.240Z"
+  checkedAt: "2026-11-23T13:55:30.119Z"
   source:
     id: "global.satellai.com"
     label: "global.satellai.com"

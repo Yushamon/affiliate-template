@@ -57,12 +57,12 @@ images:
 rating: 2.9
 
 priceState: "available"
-priceUpdated: "2026-11-16T10:40:00.069Z"
+priceUpdated: "2026-11-23T13:53:02.411Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "available"
 availabilityReason: "Händler meldet https://schema.org/InStock bei der automatischen Prüfung."
-availabilityUpdated: "2026-11-16T10:40:00.069Z"
+availabilityUpdated: "2026-11-23T13:53:02.411Z"
 editorialStatus: "required"
 recommendationStatus: "recommended"
 maintenanceStatus: "complete"
@@ -243,7 +243,7 @@ price:
   currency: "EUR"
   status: "unknown"
   variantLabel: "SureTrack Pro"
-  checkedAt: "2026-11-16T10:40:00.069Z"
+  checkedAt: "2026-11-23T13:53:02.411Z"
   source:
     id: "de.mova.tech"
     label: "de.mova.tech"

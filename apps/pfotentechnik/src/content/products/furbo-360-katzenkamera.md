@@ -42,14 +42,15 @@ subscription:
     - { name: "Standard monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 7.99, currency: EUR, effectiveMonthlyPrice: 7.99, autoRenew: true }
     - { name: "Premium monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 9.99, currency: EUR, effectiveMonthlyPrice: 9.99, autoRenew: true }
 price:
-  current: 179
+  current: 139
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-21T11:39:06.312Z"
+  changedAt: "2026-11-23T13:52:35.096Z"
+  checkedAt: "2026-11-23T13:52:35.096Z"
   source:
-    id: "manual"
-    label: "Furbo EU"
-    type: "manual"
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 priceAutomation: "automatic"
 rating: 3.8
 ratings: { interaktion: 4.6, datenschutz: 3.0, folgekosten: 2.8, alltag: 3.8 }
@@ -174,16 +175,6 @@ affiliate:
   url: "https://amzn.to/4ydM5Kr"
   rel: "sponsored nofollow noopener"
   target: "_blank"
-priceState: "available"
-priceUpdated: "2026-08-21T11:39:06.312Z"
-priceAvailable: true
-affiliateAvailable: true
-availability: "available"
-availabilityReason: "Am 21.08.2026 im europäischen Furbo-Shop als eigenes Katzenmodell bestellbar; Angebot und Tarifwahl sind dynamisch."
-availabilityUpdated: "2026-08-21T11:39:06.312Z"
-editorialStatus: "complete"
-recommendationStatus: "recommended"
-maintenanceStatus: "complete"
 externalEvidence:
   professionalReviews:
     - publisher: Cats.com
@@ -218,6 +209,16 @@ experience:
     Bild im Vergleich körniger. Die KI verwechselte ähnlich gefärbte Tiere oder benannte sie gar nicht. Eine
     individuelle Zuordnung ist damit keine verlässliche Mehrkatzenkontrolle. Die im US-Test genannte
     Abo-Pflicht wird wegen unterschiedlicher Angebote nicht als allgemeine EU-Pflicht übernommen.
+priceState: "available"
+priceUpdated: "2026-11-23T13:52:35.096Z"
+priceAvailable: true
+affiliateAvailable: true
+availability: "available"
+availabilityReason: "Am 21.08.2026 im europäischen Furbo-Shop als eigenes Katzenmodell bestellbar; Angebot und Tarifwahl sind dynamisch."
+availabilityUpdated: "2026-08-21T11:39:06.312Z"
+editorialStatus: "complete"
+recommendationStatus: "recommended"
+maintenanceStatus: "complete"
 ---
 
 ## Eigenständiges Katzenmodell

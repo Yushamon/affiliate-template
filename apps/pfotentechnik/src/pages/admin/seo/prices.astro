@@ -317,8 +317,10 @@ const metrics = [
   const filter = document.querySelector<HTMLSelectElement>("[data-filter]");
   const search = document.querySelector<HTMLInputElement>("[data-search]");
   let currentView = 'tasks',metricFilter='';let serviceReady=false;
+  let commerceRunActive = false;
+  let commerceJobPolling = false;
   const localMode=['localhost','127.0.0.1','[::1]'].includes(location.hostname);
-  const writable=()=>{document.querySelectorAll<HTMLButtonElement>('[data-check-all],[data-check-price],[data-archive-product],[data-remove-offer],[data-save-policy],form button[type=submit]').forEach(b=>b.disabled=!serviceReady)};
+  const writable=()=>{document.querySelectorAll<HTMLButtonElement>('[data-check-all],[data-check-price],[data-archive-product],[data-remove-offer],[data-save-policy],form button[type=submit]').forEach(b=>b.disabled=!serviceReady||(b.hasAttribute('data-check-all')&&commerceRunActive))};
 
   const setStatus = (message: string, level: "normal" | "error" = "normal") => {
     if (!status) return;
@@ -647,23 +649,48 @@ const metrics = [
     });
   });
 
-  document.querySelector<HTMLButtonElement>("[data-check-all]")?.addEventListener("click", (event) => {
-    const button = event.currentTarget as HTMLButtonElement;
+  const trackCommerceJob = async (initial: any) => {
+    if (commerceJobPolling || !initial) return;
+    commerceJobPolling = true;
+    commerceRunActive = true;
+    writable();
+    let applied = 0;
+    try {
+      let job = initial;
+      while (job) {
+        for (const result of job.results.slice(applied)) if (result.record) applyServerResult(result);
+        applied = job.results.length;
+        if (job.status === 'failed') throw new Error(job.error || 'Commerce-Lauf fehlgeschlagen.');
+        if (job.status === 'completed') {
+          const sourceFailures = job.results.reduce((count: number, result: any) => count + (result.providerResults || []).filter((p: any) => !p.ok).length, 0);
+          setStatus(`${job.completed} von ${job.total} Produkten geprüft: ${job.succeeded} Produkte mit bestätigter Aktualisierung, ${job.failed} ohne bestätigtes Ergebnis; ${sourceFailures} Quellen ohne Bestätigung. Fehlgeschlagene Prüfungen erneuern keine Preisbestätigung.`);
+          break;
+        }
+        setStatus(job.total == null ? 'Produktbestand wird geladen …' : `${job.completed} von ${job.total} Produkten geprüft · ${job.currentTitle || 'Händlerangebote werden geprüft'}. Der Lauf läuft auch beim Neuladen weiter.`);
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        job = await fetchJson('/api/admin/prices/check-all');
+      }
+    } catch (error) {
+      setStatus(`Fortschritt nicht verfügbar; beim Neuladen wird der Serverlauf erneut abgefragt. ${error instanceof Error ? error.message : String(error)}`, 'error');
+    } finally {
+      commerceJobPolling = false;
+      commerceRunActive = false;
+      writable();
+    }
+  };
+
+  document.querySelector<HTMLButtonElement>("[data-check-all]")?.addEventListener("click", () => {
     runOnce("check-all", async () => {
-      button.disabled = true;
+      commerceRunActive = true;
+      writable();
       setStatus("Händlerangebote aller Produkte werden nacheinander geprüft …");
       try {
-        const candidates=[...records.values()];let succeeded=0,failed=0,sourceFailures=0;
-        for(const [i,r] of candidates.entries()){
-          setStatus(`${i+1} von ${candidates.length}: ${r.title} wird geprüft …`);
-          try{const result=await fetchJson('/api/admin/prices/check',{method:'POST',body:JSON.stringify({slug:r.slug})});applyServerResult(result);sourceFailures+=(result.providerResults||[]).filter((p:any)=>!p.ok).length;if(result.ok)succeeded++;else failed++}catch(error){failed++;setStatus(String(error),'error')}
-        }
-        setStatus(`${succeeded} Produkte mit bestätigter Aktualisierung, ${failed} ohne bestätigtes Ergebnis; ${sourceFailures} Quellen ohne Bestätigung. Fehlgeschlagene Prüfungen erneuern keine Preisbestätigung.`);
-
+        await trackCommerceJob(await fetchJson('/api/admin/prices/check-all', {method: 'POST', body: '{}'}));
       } catch (error) {
         setStatus(error instanceof Error ? error.message : String(error), "error");
       } finally {
-        button.disabled = false;
+        commerceRunActive = false;
+        writable();
       }
     });
   });
@@ -681,6 +708,8 @@ const metrics = [
           ? `${protectedCount} ungespeicherte Preisentwürfe wurden beibehalten; die übrigen Produktdaten sind synchronisiert.`
           : "Persistierter Produktzustand ist synchronisiert."
       );
+      const job = await fetchJson('/api/admin/prices/check-all');
+      if (job?.status === 'running') void trackCommerceJob(job);
     } catch (error) {
       serviceReady=false;writable();setStatus(`Lokaler Admin-Dienst nicht erreichbar. Starte npm --workspace apps/pfotentechnik run seo:admin und lade die Seite neu: ${error instanceof Error ? error.message : String(error)}`, "error");
       applyView();

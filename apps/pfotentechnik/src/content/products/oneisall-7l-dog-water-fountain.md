@@ -62,10 +62,11 @@ images:
     - src: ../../assets/images/products/oneisall-7l-dog-water-fountain/gallery-3.webp
       alt: oneisall 7L Trinkbrunnen an einem Trinkplatz für große Hunde
 price:
-  current: 59.49
+  current: 50.57
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-11-16T09:06:27.274Z"
+  changedAt: "2026-11-23T13:53:26.380Z"
+  checkedAt: "2026-11-23T13:53:26.380Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -80,7 +81,7 @@ rating: 4.1
 score: 82
 
 priceState: "available"
-priceUpdated: "2026-11-16T09:06:27.274Z"
+priceUpdated: "2026-11-23T13:53:26.380Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

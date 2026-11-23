@@ -51,10 +51,11 @@ images:
     - src: "../../assets/images/products/sureflap-mikrochip-katzenklappe-connect/gallery-3.webp"
       alt: "Frontansicht der SureFlap Mikrochip Katzenklappe Connect"
 price:
-  current: 249.47
+  current: 199.99
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-11-16T09:07:38.745Z"
+  changedAt: "2026-11-23T13:55:38.791Z"
+  checkedAt: "2026-11-23T13:55:38.791Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -70,7 +71,7 @@ testStatus: "manufacturer-data"
 rating: 3.9
 
 priceState: "available"
-priceUpdated: "2026-11-16T09:07:38.745Z"
+priceUpdated: "2026-11-23T13:55:38.791Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

@@ -51,11 +51,12 @@ subscription:
     - { name: "Standard monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 7.99, currency: EUR, effectiveMonthlyPrice: 7.99, autoRenew: true }
     - { name: "Premium monatlich", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 9.99, currency: EUR, effectiveMonthlyPrice: 9.99, autoRenew: true }
 price:
-  current: 59
+  current: 44
   currency: "EUR"
   status: "unknown"
   comparisonText: "https://amzn.to/46asA9o"
-  checkedAt: "2026-11-02T08:09:22.857Z"
+  changedAt: "2026-11-23T13:52:32.041Z"
+  checkedAt: "2026-11-23T13:52:32.041Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -159,7 +160,7 @@ affiliate:
   rel: "sponsored nofollow noopener"
   target: "_blank"
 priceState: "available"
-priceUpdated: "2026-11-02T08:09:22.857Z"
+priceUpdated: "2026-11-23T13:52:32.041Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

@@ -62,10 +62,11 @@ images:
     - src: ../../assets/images/products/honeyguardian-a68/gallery-3.webp
       alt: HoneyGuardian A68 Smart Pet Feeder, weitere redaktionelle Ansicht 3
 price:
-  current: 99.98
+  current: 94.98
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-11-02T08:09:29.131Z"
+  changedAt: "2026-11-23T13:52:48.114Z"
+  checkedAt: "2026-11-23T13:52:48.114Z"
   source:
     id: "amazon.de"
     label: "amazon.de"
@@ -80,7 +81,7 @@ rating: 4
 score: 79
 
 priceState: "available"
-priceUpdated: "2026-11-02T08:09:29.131Z"
+priceUpdated: "2026-11-23T13:52:48.114Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"

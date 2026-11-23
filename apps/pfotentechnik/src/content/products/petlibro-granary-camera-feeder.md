@@ -387,7 +387,7 @@ offers:
       current: 169.99
       currency: "EUR"
       status: "unknown"
-      checkedAt: "2026-11-16T09:07:07.369Z"
+      checkedAt: "2026-11-23T13:54:38.087Z"
       source:
         id: "petlibro-official"
         label: "PETLIBRO"
@@ -411,8 +411,8 @@ offers:
     variantId: "44070751502578"
     expectedSku: "PL-AF203-34W"
     variantLabel: "Weiß / Einzelne Schale"
-    lastAttemptAt: "2026-11-16T09:07:07.369Z"
-    availabilityUpdated: "2026-11-16T09:07:07.369Z"
+    lastAttemptAt: "2026-11-23T13:54:38.087Z"
+    availabilityUpdated: "2026-11-23T13:54:38.087Z"
 evidenceSources:
   - source: PETLIBRO · App Outage FAQ
     url: https://ca.petlibro.com/blogs/all/petlibro-app-outage-faq
