@@ -359,7 +359,8 @@ faq:
   - question: Wie spart die Energiesparzone Akku?
     answer: >-
       Im Bereich eines hinterlegten WLANs oder einer Tractive-Basisstation spart der Tracker Energie bei der
-      Positionsübertragung. LIVE Tracking ist dort nicht verfügbar und wird nach Verlassen der Zone wieder möglich.
+      Positionsübertragung. LIVE Tracking pausiert dort standardmäßig. Laut Tractive lässt es sich in
+      Bluetooth-Reichweite manuell aktivieren; außerhalb der Zone wird die normale Ortung wieder aufgenommen.
   - question: Wie schwer ist der Tractive CAT 6 Mini?
     answer: >-
       Tractive nennt 32 g inklusive des integrierten Halsbands. Dieser Wert ist deshalb nicht direkt mit dem reinen
@@ -435,6 +436,12 @@ comparisonData:
       Passform und Sicherheitsverschluss regelmäßig kontrollieren, das Halsband nach starker Belastung prüfen und den
       Akku vor längerem Freigang ausreichend laden.
 evidenceSources:
+  - source: "Tractive – Energiesparzone und manuelles LIVE Tracking"
+    url: "https://tractive.com/en/fp/battery"
+    accessedAt: "2026-11-23"
+    assertion: "LIVE Tracking pausiert standardmäßig in Energiesparzonen; in Bluetooth-Reichweite ist manuelle Aktivierung möglich."
+    fields: [faq]
+    sourceType: manufacturer
   - source: Tractive Kundenservice – Akkukapazität und Laufzeit
     url: https://help.tractive.com/hc/de/articles/205664001-Wie-lange-h%C3%A4lt-der-Akku-meines-Trackers
     accessedAt: "2026-10-03"
@@ -507,6 +514,7 @@ reviewedAlternatives:
     reason: >-
       Alternative für Katzen mit anderer Befestigung. Gewicht, Sicherheitshalsband und Mobilfunktarif vor dem
       Kauf prüfen.
+
 ---
 Beim Tractive CAT 6 Mini bilden Tracker und Halsband eine konstruktive Einheit. Das vom Hersteller angegebene Gewicht von 32 g umfasst deshalb das vollständige System. Für die Auswahl sind neben dem Körpergewicht der Katze vor allem der zulässige Halsumfang von 19 bis 22,9 cm und der Sinn des Sicherheitsverschlusses entscheidend.
 

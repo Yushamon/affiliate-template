@@ -16,11 +16,11 @@ Statischer Hauptinhalt steht bei allen Canonicals unmittelbar im HTML; interakti
 
 ## Vorher und nachher
 
-- Kontextuelle Linkkanten: 1306 → 1326.
+- Kontextuelle Linkkanten: 1306 → 1327.
 - Herstellerprofile ohne Kontextquelle: 2 → 0.
 - Produkte ohne eine einzige Kontextquelle: 1 → 0.
 - Produkte ohne Kontext aus einer am 02.11. historisch indexierten Seite: 61 → 56. Der heutige Google-Status dieser Quellen ist ungeprüft.
-- 6 Ratgeber gezielt bearbeitet, 12 Kontextlinks ausdrücklich ergänzt; 21 zusätzliche Kontextkanten tatsächlich im Build nachgewiesen.
+- 6 Ratgeber gezielt bearbeitet, 12 Kontextlinks ausdrücklich ergänzt; 22 zusätzliche Kontextkanten tatsächlich im Build nachgewiesen.
 - Keine neuen öffentlichen Seiten, keine Produktdateien verändert, alle 437 Originalhinweise und Scores/Preise/Affiliate-Ziele erhalten.
 
 ## Tatsächlich umgesetzte Korrekturen
@@ -98,7 +98,7 @@ Die Varianten DOG 6 und DOG 6 XL haben die höchste gemessene Paarähnlichkeit, 
 
 - /produkt/tractive-dog-6-xl/ ↔ /produkt/tractive-dog-6/: TF-IDF-Kosinus 0.662. Getrennte Produktabsicht anhand Spezifikationen prüfen; dokumentierte Größen-, Tier- und Funktionsunterschiede sprechen gegen eine automatische Zusammenlegung.
 - /hersteller/satellai/ ↔ /produkt/satellai-collar-go/: TF-IDF-Kosinus 0.563. Hersteller-/Produktrolle redaktionell abgrenzen. Eigenständige Vertrags-, Support- und Kompatibilitätsinformationen prüfen, bevor eine Konsolidierung erwogen wird.
-- /hersteller/mova/ ↔ /produkt/mova-suretrack-pro/: TF-IDF-Kosinus 0.548. Hersteller-/Produktrolle redaktionell abgrenzen. Eigenständige Vertrags-, Support- und Kompatibilitätsinformationen prüfen, bevor eine Konsolidierung erwogen wird.
+- /hersteller/mova/ ↔ /produkt/mova-suretrack-pro/: TF-IDF-Kosinus 0.549. Hersteller-/Produktrolle redaktionell abgrenzen. Eigenständige Vertrags-, Support- und Kompatibilitätsinformationen prüfen, bevor eine Konsolidierung erwogen wird.
 - /hersteller/brook/ ↔ /produkt/brook-glass-pet-fountain/: TF-IDF-Kosinus 0.542. Hersteller-/Produktrolle redaktionell abgrenzen. Eigenständige Vertrags-, Support- und Kompatibilitätsinformationen prüfen, bevor eine Konsolidierung erwogen wird.
 - /hersteller/prothelis/ ↔ /produkt/prothelis-area-pets/: TF-IDF-Kosinus 0.535. Hersteller-/Produktrolle redaktionell abgrenzen. Eigenständige Vertrags-, Support- und Kompatibilitätsinformationen prüfen, bevor eine Konsolidierung erwogen wird.
 - /produkt/sureflap-dualscan-mikrochip-katzenklappe/ ↔ /produkt/sureflap-mikrochip-katzenklappe/: TF-IDF-Kosinus 0.535. Getrennte Produktabsicht anhand Spezifikationen prüfen; dokumentierte Größen-, Tier- und Funktionsunterschiede sprechen gegen eine automatische Zusammenlegung.

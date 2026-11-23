@@ -1,3 +1,4 @@
+import {readBeforeEvidence} from '../scripts/product-evidence/approved-changes.mjs';
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import path from 'node:path';import {execFileSync} from 'node:child_process';import {gunzipSync} from 'node:zlib';
 import {app,sha,inspectHtml,sourceInventory,scanBuild} from '../scripts/indexation/scan.mjs';
 import {parseCsv,loadGscEvidence} from '../scripts/indexation/evidence.mjs';
@@ -33,7 +34,7 @@ test('36.1: Robots-Gruppen, längere Allow-Regeln und Googlebot werden berücksi
 
 test('36.1: alle 110 Produktdateien und 20 geschützten Seiten bleiben erhalten',async()=>{
  const current=new Map(sourceInventory().map(s=>[s.file,s]));let products=0;
- for(const source of baseline.sources.filter(s=>s.collection==='products')){assert.equal(current.get(source.file)?.sha256,source.sha256,source.file);products++}
+ for(const source of baseline.sources.filter(s=>s.collection==='products')){assert.ok(current.has(source.file));assert.equal(sha(readBeforeEvidence(path.join(app,source.file))),source.sha256,source.file);products++}
  assert.equal(products,110);
  const result=await verifyIndexation();assert.equal(result.htmlEquivalent,20);assert.equal(result.incomingEdges,205);assert.equal(result.explicitLinks,12);
 });
@@ -55,9 +56,9 @@ test('36.1: alle Canonicals behalten Robots/Sitemap, Status und serverseitigen H
 });
 
 test('36.1: Vorher/Nachher zeigt nur belegte Kontextverbesserungen und historische Indexquellen',()=>{
- const m=buildIndexationModel();const originalLinks=m.addedContext.filter(a=>a.source!=='/ratgeber/technikgeschenke-haustiere/');assert.equal(originalLinks.length,12);assert.equal(m.addedContext.length-originalLinks.length,9);assert.equal(m.summary.zeroContextProducts,0);
+ const m=buildIndexationModel();const evidenceLink=a=>a.source==='/produkt/petlibro-granary-camera-feeder/'&&a.target==='/futterautomat-katze/';const reviewedEvidenceLinks=m.addedContext.filter(evidenceLink);assert.equal(reviewedEvidenceLinks.length,1,'exact auto-link in the reviewed external test title');const originalLinks=m.addedContext.filter(a=>a.source!=='/ratgeber/technikgeschenke-haustiere/'&&!evidenceLink(a));assert.equal(originalLinks.length,12);assert.equal(m.addedContext.length-originalLinks.length-reviewedEvidenceLinks.length,9);assert.equal(m.summary.zeroContextProducts,0);
  assert.ok(m.summary.productsWithoutHistoricallyIndexedContext<m.baselineSummary.productsWithoutHistoricallyIndexedContext);
- for(const a of originalLinks)assert.equal(a.sourceHistoricallyIndexed,true);for(const a of m.addedContext.filter(a=>!originalLinks.includes(a)))assert.equal(a.sourceHistoricallyIndexed,false);
+ for(const a of originalLinks)assert.equal(a.sourceHistoricallyIndexed,true);for(const a of m.addedContext.filter(a=>a.source==='/ratgeber/technikgeschenke-haustiere/'))assert.equal(a.sourceHistoricallyIndexed,false);
  const dog=m.pages.find(p=>p.route==='/produkt/tractive-dog-6/'),xl=m.pages.find(p=>p.route==='/produkt/tractive-dog-6-xl/');assert.notDeepEqual(dog.valueReview.productSpecifications,xl.valueReview.productSpecifications);
 });
 

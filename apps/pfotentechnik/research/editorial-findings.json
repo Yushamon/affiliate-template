@@ -1,0 +1,618 @@
+{
+  "schemaVersion": 1,
+  "updatedOn": "2026-11-23",
+  "policy": "Status nur mit Evidenz und History ändern; lokale Korrektur ist kein Live-Nachweis. Null bedeutet unbekannt, nicht negativ.",
+  "findings": [
+    {
+      "id": "PTE-0001",
+      "title": "Früherer Akku-/Notstromtext",
+      "productOrManufacturer": "Tractive DOG 6",
+      "canonicals": [
+        "https://pfotentechnik.de/produkt/tractive-dog-6/"
+      ],
+      "firstKnown": null,
+      "firstRecorded": "2026-11-23",
+      "lastVerified": "2026-11-23",
+      "sources": [
+        {
+          "id": "live-tractive-dog-6",
+          "url": "https://pfotentechnik.de/produkt/tractive-dog-6/",
+          "type": "live-output",
+          "checkedOn": "2026-11-23",
+          "evidence": "HTTP 200; Akku vorhanden; keine Netzstromfehlbehauptung.",
+          "accessRecord": "reports/product-evidence-update-35.6/source-access.json#live-tractive-dog-6"
+        },
+        {
+          "id": "tractive-battery",
+          "url": "https://help.tractive.com/hc/en-us/articles/205664001-How-long-does-my-tracker-s-battery-last",
+          "type": "manufacturer",
+          "checkedOn": "2026-11-23",
+          "evidence": "Modellbezogene Akkukapazitäten und Laufzeitbedingungen.",
+          "accessRecord": "reports/product-evidence-update-35.6/source-access.json#tractive-battery"
+        }
+      ],
+      "claim": "Der früher gemeldete Fehler ist in der aktuell abgerufenen Live-Ausgabe nicht vorhanden.",
+      "existingWebsiteClaim": "Research-Hinweis: kein Akku/externe Notstromlösung. Aktuell korrekt: integrierter, wiederaufladbarer Akku.",
+      "priority": "P1",
+      "status": "Live verifiziert",
+      "kind": "editorial-problem",
+      "proposedChange": "Bei Wiederauftreten gerenderte Konsequenz und Merkmalsnegation prüfen.",
+      "implementedChange": "Keine erneute Akkutextkorrektur; Live-HTML und Buildausgabe überprüft.",
+      "changedFiles": [],
+      "gitCommit": null,
+      "liveVerifiedOn": "2026-11-23",
+      "liveEvidence": [
+        {
+          "url": "https://pfotentechnik.de/produkt/tractive-dog-6/",
+          "checkedOn": "2026-11-23",
+          "httpStatus": 200,
+          "sha256": "2645bceed9d9aad58df6262b08b7e938c7824d35114f9d8f2b41fec8bdedf8b6",
+          "observation": "Aktueller HTML-Body enthält integrierten Akku und keine der gesuchten Netz-/Notstromfehlbehauptungen."
+        }
+      ],
+      "openQuestions": [
+        "Datum des allerersten Research-Hinweises und damaliger fehlerhafter Live-Body nicht überliefert."
+      ],
+      "history": [
+        {
+          "date": "2026-11-23",
+          "status": "Live verifiziert",
+          "evidence": "reports/product-evidence-update-35.6/source-access.json#live-tractive-dog-6; reports/product-evidence-update-35.6/source-access.json#tractive-battery; Keine erneute Akkutextkorrektur; Live-HTML und Buildausgabe überprüft."
+        }
+      ]
+    },
+    {
+      "id": "PTE-0002",
+      "title": "Früherer Akku-/Notstromtext",
+      "productOrManufacturer": "Tractive CAT 6 Mini",
+      "canonicals": [
+        "https://pfotentechnik.de/produkt/tractive-cat-6-mini/"
+      ],
+      "firstKnown": null,
+      "firstRecorded": "2026-11-23",
+      "lastVerified": "2026-11-23",
+      "sources": [
+        {
+          "id": "live-tractive-cat-6-mini",
+          "url": "https://pfotentechnik.de/produkt/tractive-cat-6-mini/",
+          "type": "live-output",
+          "checkedOn": "2026-11-23",
+          "evidence": "HTTP 200; Akku vorhanden; keine Netzstromfehlbehauptung.",
+          "accessRecord": "reports/product-evidence-update-35.6/source-access.json#live-tractive-cat-6-mini"
+        },
+        {
+          "id": "tractive-battery",
+          "url": "https://help.tractive.com/hc/en-us/articles/205664001-How-long-does-my-tracker-s-battery-last",
+          "type": "manufacturer",
+          "checkedOn": "2026-11-23",
+          "evidence": "Modellbezogene Akkukapazitäten und Laufzeitbedingungen.",
+          "accessRecord": "reports/product-evidence-update-35.6/source-access.json#tractive-battery"
+        }
+      ],
+      "claim": "Der früher gemeldete Fehler ist in der aktuell abgerufenen Live-Ausgabe nicht vorhanden.",
+      "existingWebsiteClaim": "Research-Hinweis: kein Akku/externe Notstromlösung. Aktuell korrekt: integrierter, wiederaufladbarer Akku.",
+      "priority": "P1",
+      "status": "Live verifiziert",
+      "kind": "editorial-problem",
+      "proposedChange": "Bei Wiederauftreten gerenderte Konsequenz und Merkmalsnegation prüfen.",
+      "implementedChange": "Keine erneute Akkutextkorrektur; Live-HTML und Buildausgabe überprüft.",
+      "changedFiles": [],
+      "gitCommit": null,
+      "liveVerifiedOn": "2026-11-23",
+      "liveEvidence": [
+        {
+          "url": "https://pfotentechnik.de/produkt/tractive-cat-6-mini/",
+          "checkedOn": "2026-11-23",
+          "httpStatus": 200,
+          "sha256": "a8e19fd4958c853dc25b0f59e11a539ef98d9de226d64c3b821478714f785ee7",
+          "observation": "Aktueller HTML-Body enthält integrierten Akku und keine der gesuchten Netz-/Notstromfehlbehauptungen."
+        }
+      ],
+      "openQuestions": [
+        "Datum des allerersten Research-Hinweises und damaliger fehlerhafter Live-Body nicht überliefert."
+      ],
+      "history": [
+        {
+          "date": "2026-11-23",
+          "status": "Live verifiziert",
+          "evidence": "reports/product-evidence-update-35.6/source-access.json#live-tractive-cat-6-mini; reports/product-evidence-update-35.6/source-access.json#tractive-battery; Keine erneute Akkutextkorrektur; Live-HTML und Buildausgabe überprüft."
+        }
+      ]
+    },
+    {
+      "id": "PTE-0003",
+      "title": "Zu absolute Futterdiebstahl-Aussage",
+      "productOrManufacturer": "PETLIBRO One RFID",
+      "canonicals": [
+        "https://pfotentechnik.de/produkt/petlibro-one-rfid-smart-feeder/"
+      ],
+      "firstKnown": null,
+      "firstRecorded": "2026-11-23",
+      "lastVerified": "2026-11-23",
+      "sources": [
+        {
+          "id": "one-current",
+          "url": "https://de.petlibro.com/products/one-rfid-pet-feeder?variant=53222683672942",
+          "type": "manufacturer",
+          "checkedOn": "2026-11-23",
+          "evidence": "Ein eigener RFID-Anhänger je Gerät; kein implantierter Chip. Hersteller beschreibt Zugang, keine unabhängig gemessene Schutzquote.",
+          "accessRecord": "reports/product-evidence-update-35.6/source-access.json#one-current"
+        }
+      ],
+      "claim": "Zugangskontrolle ist kein Nachweis vollständiger Isolation am offenen Napf.",
+      "existingWebsiteClaim": "Stärkenliste: Verhindert Futterdiebstahl zuverlässig; Konsens und Urteil ähnlich absolut, vorhandener Detailtext eingeschränkt.",
+      "priority": "P1",
+      "status": "Korrigiert, aber unveröffentlicht",
+      "kind": "editorial-problem",
+      "proposedChange": "Absolute Zusage an vorhandene Einschränkung und Ein-Tier-Zuordnung angleichen.",
+      "implementedChange": "Stärke, Konsens und Urteil beschreiben kontrollierten Zugang und Prüfbedarf bei Mitfressen.",
+      "changedFiles": [
+        "src/content/products/petlibro-one-rfid-smart-feeder.md"
+      ],
+      "gitCommit": null,
+      "liveVerifiedOn": null,
+      "liveEvidence": [],
+      "openQuestions": [],
+      "history": [
+        {
+          "date": "2026-11-23",
+          "status": "Korrigiert, aber unveröffentlicht",
+          "evidence": "reports/product-evidence-update-35.6/source-access.json#one-current; Stärke, Konsens und Urteil beschreiben kontrollierten Zugang und Prüfbedarf bei Mitfressen."
+        }
+      ]
+    },
+    {
+      "id": "PTE-0004",
+      "title": "Blockierungswarnung ab V2.0.27",
+      "productOrManufacturer": "PETLIBRO One RFID AF301/PLAF301",
+      "canonicals": [
+        "https://pfotentechnik.de/produkt/petlibro-one-rfid-smart-feeder/"
+      ],
+      "firstKnown": null,
+      "firstRecorded": "2026-11-23",
+      "lastVerified": "2026-11-23",
+      "sources": [
+        {
+          "id": "one-outlet",
+          "url": "https://de.petlibro.com/pages/what-should-i-do-if-the-one-rfid-feeder-food-outlet-is-blocked-or-if-there-are-foreign-objects-in-the-food-outlet-plaf301-af301",
+          "type": "manufacturer",
+          "checkedOn": "2026-11-23",
+          "evidence": "V2.0.27 oder höher; Napf/Halter freimachen; tatsächliche Ausgabe prüfen.",
+          "accessRecord": "reports/product-evidence-update-35.6/source-access.json#one-outlet"
+        }
+      ],
+      "claim": "Herstellerhilfe dokumentiert Fortsetzung nach Warnmeldung, keine mechanische Entblockung.",
+      "existingWebsiteClaim": "Zuverlässigkeitsabschnitt differenzierte Warnmeldung und reale Blockade noch nicht firmwarebezogen.",
+      "priority": "P1",
+      "status": "Korrigiert, aber unveröffentlicht",
+      "kind": "editorial-problem",
+      "proposedChange": "Modellcode, Mindestversion, Reinigung und Ausgabekontrolle nennen.",
+      "implementedChange": "Spezifischen Absatz und Herstellerbeleg ergänzt.",
+      "changedFiles": [
+        "src/content/products/petlibro-one-rfid-smart-feeder.md"
+      ],
+      "gitCommit": null,
+      "liveVerifiedOn": null,
+      "liveEvidence": [],
+      "openQuestions": [
+        "Firmware-Veröffentlichungsdatum unbekannt.",
+        "Verhalten jeder älteren Firmware und echter mechanischer Blockaden nicht spezifiziert."
+      ],
+      "history": [
+        {
+          "date": "2026-11-23",
+          "status": "Korrigiert, aber unveröffentlicht",
+          "evidence": "reports/product-evidence-update-35.6/source-access.json#one-outlet; Spezifischen Absatz und Herstellerbeleg ergänzt."
+        }
+      ]
+    },
+    {
+      "id": "PTE-0005",
+      "title": "Blockierungswarnung ab V1.0.58",
+      "productOrManufacturer": "PETLIBRO Granary AF103/PLAF103",
+      "canonicals": [
+        "https://pfotentechnik.de/produkt/petlibro-granary-wifi-feeder/"
+      ],
+      "firstKnown": null,
+      "firstRecorded": "2026-11-23",
+      "lastVerified": "2026-11-23",
+      "sources": [
+        {
+          "id": "granary-outlet",
+          "url": "https://petlibro.com/pages/what-should-i-do-if-the-granary-smart-feeder-food-outlet-is-blocked-or-if-there-are-foreign-objects-in-the-food-outlet-af103-plaf103",
+          "type": "manufacturer",
+          "checkedOn": "2026-11-23",
+          "evidence": "V1.0.58 oder höher; Sensor trocken reinigen; bei normaler Ausgabe Warnung optional deaktivierbar.",
+          "accessRecord": "reports/product-evidence-update-35.6/source-access.json#granary-outlet"
+        }
+      ],
+      "claim": "Dokumentation ist auf AF103/PLAF103 begrenzt.",
+      "existingWebsiteClaim": "Zuverlässigkeitsabschnitt ohne modellspezifische Mindestversion und Warnungsabgrenzung.",
+      "priority": "P1",
+      "status": "Korrigiert, aber unveröffentlicht",
+      "kind": "editorial-problem",
+      "proposedChange": "Nur WiFi-Modell ergänzen; keine Übertragung auf Kamera/Dual/Granary 2.",
+      "implementedChange": "Spezifischen Absatz mit Sensorreinigung und Bedingung für optionales Deaktivieren ergänzt.",
+      "changedFiles": [
+        "src/content/products/petlibro-granary-wifi-feeder.md"
+      ],
+      "gitCommit": null,
+      "liveVerifiedOn": null,
+      "liveEvidence": [],
+      "openQuestions": [
+        "Firmwaredatum unbekannt.",
+        "Kameraversionen werden von dieser Modellhilfe nicht freigegeben."
+      ],
+      "history": [
+        {
+          "date": "2026-11-23",
+          "status": "Korrigiert, aber unveröffentlicht",
+          "evidence": "reports/product-evidence-update-35.6/source-access.json#granary-outlet; Spezifischen Absatz mit Sensorreinigung und Bedingung für optionales Deaktivieren ergänzt."
+        }
+      ]
+    },
+    {
+      "id": "PTE-0006",
+      "title": "Unabhängiger Futterautomatenvergleich",
+      "productOrManufacturer": "F.A.Z. Kaufkompass",
+      "canonicals": [
+        "https://pfotentechnik.de/produkt/petlibro-granary-camera-feeder/",
+        "https://pfotentechnik.de/produkt/petlibro-granary-wifi-feeder/",
+        "https://pfotentechnik.de/produkt/catit-pixi-smart-6-meal-feeder/",
+        "https://pfotentechnik.de/produkt/surefeed-microchip-pet-feeder/",
+        "https://pfotentechnik.de/produkt/surefeed-microchip-pet-feeder-connect/",
+        "https://pfotentechnik.de/produkt/petkit-fresh-element-solo/",
+        "https://pfotentechnik.de/produkt/petkit-yumshare-solo-2/",
+        "https://pfotentechnik.de/produkt/xiaomi-smart-pet-food-feeder-2/"
+      ],
+      "firstKnown": null,
+      "firstRecorded": "2026-11-23",
+      "lastVerified": "2026-11-23",
+      "sources": [
+        {
+          "id": "faz",
+          "url": "https://www.faz.net/kaufkompass/test/der-beste-futterautomat/",
+          "type": "independent-test",
+          "checkedOn": "2026-11-23",
+          "evidence": "Siehe independent-test-comparison.md; Artikel vollständig abgerufen.",
+          "accessRecord": "reports/product-evidence-update-35.6/source-access.json#faz"
+        }
+      ],
+      "claim": "Externe Testquelle ergänzt vorhandene Kameramodell-Evidenz.",
+      "existingWebsiteClaim": "F.A.Z. war bei Granary Camera noch nicht als externer Beleg aufgeführt.",
+      "priority": "P2",
+      "status": "Korrigiert, aber unveröffentlicht",
+      "kind": "evidence-addition",
+      "proposedChange": "Passenden Fremdtest kennzeichnen; Generationen, Empfehlungen und eigene Scores trennen.",
+      "implementedChange": "Nur beim Granary-Kameramodell externe Quelle ergänzt; Score und Ranking unverändert.",
+      "changedFiles": [
+        "src/content/products/petlibro-granary-camera-feeder.md"
+      ],
+      "gitCommit": null,
+      "liveVerifiedOn": null,
+      "liveEvidence": [],
+      "openQuestions": [
+        "Sechs Neuzugänge nicht einzeln im Update benannt; keine nachträgliche Rekonstruktion.",
+        "Solo-D4-2/P570-Zuordnung offen; Catit ist geschützte Kontrolle."
+      ],
+      "history": [
+        {
+          "date": "2026-11-23",
+          "status": "Korrigiert, aber unveröffentlicht",
+          "evidence": "reports/product-evidence-update-35.6/source-access.json#faz; Nur beim Granary-Kameramodell externe Quelle ergänzt; Score und Ranking unverändert."
+        }
+      ]
+    },
+    {
+      "id": "PTE-0007",
+      "title": "PETKIT Android-App-Release",
+      "productOrManufacturer": "PETKIT",
+      "canonicals": [
+        "https://pfotentechnik.de/produkt/petkit-fresh-element-solo/",
+        "https://pfotentechnik.de/produkt/petkit-yumshare-solo-2/",
+        "https://pfotentechnik.de/produkt/petkit-eversweet-ultra/"
+      ],
+      "firstKnown": null,
+      "firstRecorded": "2026-11-23",
+      "lastVerified": "2026-11-23",
+      "sources": [
+        {
+          "id": "petkit-play",
+          "url": "https://play.google.com/store/apps/details?id=com.petkit.oversea&hl=de&gl=DE",
+          "type": "app-store",
+          "checkedOn": "2026-11-23",
+          "evidence": "DE-HTML/AF_initData: Version 14.0.1, Datum 13.11.2026; Releasehinweis EVERSWEET ULTRA AI.",
+          "accessRecord": "reports/product-evidence-update-35.6/source-access.json#petkit-play"
+        },
+        {
+          "id": "petkit-solo",
+          "url": "https://petkit.co.uk/collections/feed/products/fresh-element-solo",
+          "type": "manufacturer",
+          "checkedOn": "2026-11-23",
+          "evidence": "Hersteller-FAQ: gespeicherter Fütterungsplan offline; fünf AAA als Backup.",
+          "accessRecord": "reports/product-evidence-update-35.6/source-access.json#petkit-solo"
+        }
+      ],
+      "claim": "Der am 12. November gemeldete Stand ist aktuell nicht bestätigt; Play nennt 13. November, 14.0.1 und EVERSWEET ULTRA AI.",
+      "existingWebsiteClaim": "Kein konkreter zu korrigierender Futterautomaten-Funktionstext identifiziert.",
+      "priority": "P2",
+      "status": "Verworfen",
+      "kind": "release-observation",
+      "proposedChange": "Nur modellbezogene, nachvollziehbare Änderungen übernehmen.",
+      "implementedChange": "Keine Website-Änderung; Research-Hinweis als Anlass für Feeder-Update verworfen, Releasebeobachtung archiviert.",
+      "changedFiles": [],
+      "gitCommit": null,
+      "liveVerifiedOn": null,
+      "liveEvidence": [],
+      "openQuestions": [
+        "Abweichender Rollout/Zeitzone am 12.11. nicht rekonstruierbar.",
+        "Keine generelle Feeder-Firmwareänderung aus App-Release ableitbar."
+      ],
+      "history": [
+        {
+          "date": "2026-11-23",
+          "status": "Verworfen",
+          "evidence": "reports/product-evidence-update-35.6/source-access.json#petkit-play; reports/product-evidence-update-35.6/source-access.json#petkit-solo; Keine Website-Änderung; Research-Hinweis als Anlass für Feeder-Update verworfen, Releasebeobachtung archiviert."
+        }
+      ]
+    },
+    {
+      "id": "PTE-0008",
+      "title": "Cloudstatus und bekannter Augustvorfall",
+      "productOrManufacturer": "PETLIBRO",
+      "canonicals": [
+        "https://pfotentechnik.de/produkt/petlibro-one-rfid-smart-feeder/",
+        "https://pfotentechnik.de/produkt/petlibro-granary-wifi-feeder/",
+        "https://pfotentechnik.de/produkt/petlibro-granary-camera-feeder/"
+      ],
+      "firstKnown": "2026-08-11",
+      "firstRecorded": "2026-11-23",
+      "lastVerified": "2026-11-23",
+      "sources": [
+        {
+          "id": "cloud",
+          "url": "https://de.petlibro.com/pages/petlibro-status",
+          "type": "manufacturer",
+          "checkedOn": "2026-11-23",
+          "evidence": "Aktuelle Statusanzeige betriebsbereit, Incident-Meldungen vom 11.–12.08.2026; kein neuer Novemberincident dokumentiert.",
+          "accessRecord": "reports/product-evidence-update-35.6/source-access.json#cloud"
+        }
+      ],
+      "claim": "Statusseite meldet betriebsbereite Dienste; die dokumentierte Incident-Historie betrifft August.",
+      "existingWebsiteClaim": "Vorhandene Hinweise ordnen den bekannten App-Ausfall bereits August 2026 zu.",
+      "priority": "P2",
+      "status": "Bestätigt",
+      "kind": "closed-event",
+      "proposedChange": "Keinen Novembervorfall ohne neuen Incident-Beleg anlegen.",
+      "implementedChange": "Keine Textänderung; abgeschlossenen Vorfall archiviert und Statusseite erneut geprüft.",
+      "changedFiles": [],
+      "gitCommit": null,
+      "liveVerifiedOn": null,
+      "liveEvidence": [],
+      "openQuestions": [
+        "Hersteller-Statusseite ist kein unabhängiges lückenloses Uptime-Monitoring."
+      ],
+      "history": [
+        {
+          "date": "2026-11-23",
+          "status": "Bestätigt",
+          "evidence": "reports/product-evidence-update-35.6/source-access.json#cloud; Keine Textänderung; abgeschlossenen Vorfall archiviert und Statusseite erneut geprüft."
+        }
+      ]
+    },
+    {
+      "id": "PTE-0009",
+      "title": "LIVE-Ausnahme in Energiesparzone",
+      "productOrManufacturer": "Tractive CAT 6 Mini",
+      "canonicals": [
+        "https://pfotentechnik.de/produkt/tractive-cat-6-mini/"
+      ],
+      "firstKnown": null,
+      "firstRecorded": "2026-11-23",
+      "lastVerified": "2026-11-23",
+      "sources": [
+        {
+          "id": "tractive-psz",
+          "url": "https://tractive.com/en/fp/battery",
+          "type": "manufacturer",
+          "checkedOn": "2026-11-23",
+          "evidence": "Abschnitt Will LIVE Tracking still work in a Power Saving Zone?: manuelle Aktivierung in Bluetooth-Nähe.",
+          "accessRecord": "reports/product-evidence-update-35.6/source-access.json#tractive-psz"
+        }
+      ],
+      "claim": "Laut aktueller Hersteller-FAQ ist manuelles LIVE Tracking in Bluetooth-Reichweite möglich.",
+      "existingWebsiteClaim": "FAQ sagte uneingeschränkt: LIVE Tracking ist dort nicht verfügbar.",
+      "priority": "P2",
+      "status": "Korrigiert, aber unveröffentlicht",
+      "kind": "editorial-problem",
+      "proposedChange": "Standardpause und Bluetooth-Ausnahme unterscheiden.",
+      "implementedChange": "FAQ präzisiert und aktuellen Herstellerbeleg ergänzt; Akkudaten unverändert.",
+      "changedFiles": [
+        "src/content/products/tractive-cat-6-mini.md"
+      ],
+      "gitCommit": null,
+      "liveVerifiedOn": null,
+      "liveEvidence": [],
+      "openQuestions": [],
+      "history": [
+        {
+          "date": "2026-11-23",
+          "status": "Korrigiert, aber unveröffentlicht",
+          "evidence": "reports/product-evidence-update-35.6/source-access.json#tractive-psz; FAQ präzisiert und aktuellen Herstellerbeleg ergänzt; Akkudaten unverändert."
+        }
+      ]
+    },
+    {
+      "id": "PTE-0010",
+      "title": "Akkustandsanzeige kann veraltet sein",
+      "productOrManufacturer": "Tractive",
+      "canonicals": [
+        "https://pfotentechnik.de/wie-funktionieren-gps-tracker/"
+      ],
+      "firstKnown": null,
+      "firstRecorded": "2026-11-23",
+      "lastVerified": "2026-11-23",
+      "sources": [
+        {
+          "id": "tractive-battery-level",
+          "url": "https://help.tractive.com/hc/en-us/articles/360001743159-How-to-check-your-tracker-s-battery-level",
+          "type": "manufacturer",
+          "checkedOn": "2026-11-23",
+          "evidence": "App zeigt letzten gemeldeten Akkustand; ohne Verbindung kann Akku inzwischen leer sein.",
+          "accessRecord": "reports/product-evidence-update-35.6/source-access.json#tractive-battery-level"
+        }
+      ],
+      "claim": "Eine Netzunterbrechung kann den letzten gemeldeten Ladestand stehen lassen.",
+      "existingWebsiteClaim": "Ratgeber unterschied Anzeigealter und tatsächliche Ladung noch nicht konkret.",
+      "priority": "P2",
+      "status": "Korrigiert, aber unveröffentlicht",
+      "kind": "evidence-addition",
+      "proposedChange": "Beispiel ausdrücklich auf Tractive begrenzen.",
+      "implementedChange": "Ratgeber um Statuszeitpunkt, Bluetooth-Aktualisierung und Netzverbindung ergänzt.",
+      "changedFiles": [
+        "src/content/pages/wie-funktionieren-gps-tracker.md"
+      ],
+      "gitCommit": null,
+      "liveVerifiedOn": null,
+      "liveEvidence": [],
+      "openQuestions": [],
+      "history": [
+        {
+          "date": "2026-11-23",
+          "status": "Korrigiert, aber unveröffentlicht",
+          "evidence": "reports/product-evidence-update-35.6/source-access.json#tractive-battery-level; Ratgeber um Statuszeitpunkt, Bluetooth-Aktualisierung und Netzverbindung ergänzt."
+        }
+      ]
+    },
+    {
+      "id": "PTE-0011",
+      "title": "Solo-Modellidentität vor Reinigungsübertragung",
+      "productOrManufacturer": "PETKIT Solo / Fresh Element Solo P570",
+      "canonicals": [
+        "https://pfotentechnik.de/produkt/petkit-fresh-element-solo/"
+      ],
+      "firstKnown": null,
+      "firstRecorded": "2026-11-23",
+      "lastVerified": "2026-11-23",
+      "sources": [
+        {
+          "id": "faz",
+          "url": "https://www.faz.net/kaufkompass/test/der-beste-futterautomat/",
+          "type": "independent-test",
+          "checkedOn": "2026-11-23",
+          "evidence": "Modellbezeichnung Solo ohne Typenschildcode; Amazon-Ziel B0CD7N5X3K.",
+          "accessRecord": "reports/product-evidence-update-35.6/source-access.json#faz"
+        },
+        {
+          "id": "petkit-solo",
+          "url": "https://petkit.co.uk/collections/feed/products/fresh-element-solo",
+          "type": "manufacturer",
+          "checkedOn": "2026-11-23",
+          "evidence": "Herstellerseite nennt P570.",
+          "accessRecord": "reports/product-evidence-update-35.6/source-access.json#petkit-solo"
+        },
+        {
+          "id": "solo-manual",
+          "url": "https://cdn.shopify.com/s/files/1/0739/0334/1803/files/D4_V1.2_20220729_manual.pdf?v=1768547185",
+          "type": "manual",
+          "checkedOn": "2026-11-23",
+          "evidence": "Offiziell verlinktes D4-Handbuch nennt ausdrücklich Produktcode P570. Der Modellcode des Testgeräts ist weiterhin nicht belegt.",
+          "accessRecord": "reports/product-evidence-release-35.6.1/source-checks.json#solo-manual"
+        }
+      ],
+      "claim": "Ein Handelslink des Fremdtests identifiziert nicht sicher die P570-Ausführung.",
+      "existingWebsiteClaim": "Bestehende Seite behandelt P570 und entnehmbare Komponenten; sie verspricht keine werkzeugfreie Grundreinigung.",
+      "priority": "P1",
+      "status": "Neu",
+      "kind": "editorial-problem",
+      "proposedChange": "Vor neuer modellbezogener Einschränkung Typenschild oder Herstellerzuordnung des Testgeräts beschaffen.",
+      "implementedChange": "Keine Änderung; vorläufiger Ergänzungsentwurf verworfen.",
+      "changedFiles": [],
+      "gitCommit": null,
+      "liveVerifiedOn": null,
+      "liveEvidence": [],
+      "openQuestions": [
+        "Modellcode/Typenschild oder eine Herstellerbestätigung zur ASIN B0CD7N5X3K des F.A.Z.-Testgeräts fehlt. Der D4-Dateiname allein trennt die Generationen nicht: Das Handbuch selbst nennt P570."
+      ],
+      "history": [
+        {
+          "date": "2026-11-23",
+          "status": "Neu",
+          "evidence": "reports/product-evidence-update-35.6/source-access.json#faz; reports/product-evidence-update-35.6/source-access.json#petkit-solo; Keine Änderung; vorläufiger Ergänzungsentwurf verworfen."
+        },
+        {
+          "date": "2026-11-23",
+          "status": "Neu",
+          "evidence": "35.6.1: offizielles Handbuch D4_V1.2_20220729 nennt P570; source-checks.json#solo-manual. Keine definitive Testgeräteidentität, kein Testergebnistransfer."
+        }
+      ]
+    },
+    {
+      "id": "PTE-0012",
+      "title": "SureFeed Standard und Connect getrennt bestätigt",
+      "productOrManufacturer": "Sure Petcare",
+      "canonicals": [
+        "https://pfotentechnik.de/produkt/surefeed-microchip-pet-feeder/",
+        "https://pfotentechnik.de/produkt/surefeed-microchip-pet-feeder-connect/"
+      ],
+      "firstKnown": null,
+      "firstRecorded": "2026-11-23",
+      "lastVerified": "2026-11-23",
+      "sources": [
+        {
+          "id": "surefeed",
+          "url": "https://www.surepetcare.com/en-us/pet-feeder/microchip-pet-feeder",
+          "type": "manufacturer",
+          "checkedOn": "2026-11-23",
+          "evidence": "Standard: Mikrochip/Markenanhänger, C-Batterien, manuell gefüllter Napf.",
+          "accessRecord": "reports/product-evidence-update-35.6/source-access.json#surefeed"
+        },
+        {
+          "id": "surefeed-connect",
+          "url": "https://www.surepetcare.com/en-us/pet-feeder/microchip-pet-feeder-connect",
+          "type": "manufacturer",
+          "checkedOn": "2026-11-23",
+          "evidence": "Connect: Waage; Hub für App-Verbindung.",
+          "accessRecord": "reports/product-evidence-update-35.6/source-access.json#surefeed-connect"
+        },
+        {
+          "id": "surefeed-accessories",
+          "url": "https://www.surepetcare.com/en-us/accessories",
+          "type": "manufacturer",
+          "checkedOn": "2026-11-23",
+          "evidence": "Schalen, Matte, Anhänger und Rückabdeckung werden angeboten.",
+          "accessRecord": "reports/product-evidence-update-35.6/source-access.json#surefeed-accessories"
+        },
+        {
+          "id": "surefeed-support",
+          "url": "https://www.surepetcare.com/en-us/support",
+          "type": "manufacturer",
+          "checkedOn": "2026-11-23",
+          "evidence": "Support und Kompatibilitätsprüfung verfügbar.",
+          "accessRecord": "reports/product-evidence-update-35.6/source-access.json#surefeed-support"
+        }
+      ],
+      "claim": "Modellrollen, Hub für App-Funktionen und Ersatzteile sind weiterhin dokumentiert.",
+      "existingWebsiteClaim": "Bestehende Modelltrennung ist korrekt.",
+      "priority": "P2",
+      "status": "Bestätigt",
+      "kind": "verification",
+      "proposedChange": "Nur konkrete Funktionsänderungen übernehmen.",
+      "implementedChange": "Keine Änderung; kein neuer belegter Firmware- oder Kompatibilitätswechsel.",
+      "changedFiles": [],
+      "gitCommit": null,
+      "liveVerifiedOn": null,
+      "liveEvidence": [],
+      "openQuestions": [
+        "Kein datiertes öffentliches vollständiges Firmware-Changelog verifiziert."
+      ],
+      "history": [
+        {
+          "date": "2026-11-23",
+          "status": "Bestätigt",
+          "evidence": "reports/product-evidence-update-35.6/source-access.json#surefeed; reports/product-evidence-update-35.6/source-access.json#surefeed-connect; reports/product-evidence-update-35.6/source-access.json#surefeed-accessories; reports/product-evidence-update-35.6/source-access.json#surefeed-support; Keine Änderung; kein neuer belegter Firmware- oder Kompatibilitätswechsel."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,397 @@
+[
+  {
+    "id": "E03",
+    "file": "test/compact-product-purchase.test.mjs:147:1",
+    "test": "all built product pages retain exact merchant URLs, metadata hooks and safe public price states",
+    "category": "C",
+    "initialMessage": "AssertionError [ERR_ASSERTION]: flappie",
+    "errorExcerpt": "  AssertionError [ERR_ASSERTION]: flappie\n      at TestContext.<anonymous> (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/test/compact-product-purchase.test.mjs:159:34)\n      at async Test.run (node:internal/test_runner/test:1389:7)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: 'nofollow noopener',\n    expected: /sponsored/,\n    operator: 'match',\n    diff: 'simple'\n  }",
+    "relationship": "Bestand vor 35.6",
+    "oldBaselineProven": true,
+    "cause": "Pauschale sponsored-Pflicht auch für provisionsfreie offizielle Händlerlinks; aktuell Flappie mit rel=nofollow noopener. Der Loop enthielt außerdem Entwürfe.",
+    "measure": "Exakte Rel-Werte aus dem Commerce-Modell prüfen, Provision/official unterscheiden und Entwurfsabwesenheit absichern.",
+    "changedFiles": [
+      "test/compact-product-purchase.test.mjs"
+    ],
+    "justification": "Offizielle Links sind keine automatisch provisionsberechtigten Affiliate-Links. Ziele und Produktionsausgabe bleiben unverändert.",
+    "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
+    "actualBefore": "AssertionError [ERR_ASSERTION]: flappie",
+    "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
+    "snapshotUpdate": false
+  },
+  {
+    "id": "E02",
+    "file": "test/compact-product-purchase.test.mjs:170:1",
+    "test": "all built heroes keep complete product names, source-backed chips and the secondary comparison link",
+    "category": "C",
+    "initialMessage": "Error: ENOENT: no such file or directory, open '/Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/dist/produkt/petlibro-granary-2-vision-duo/index.html'",
+    "errorExcerpt": "  Error: ENOENT: no such file or directory, open '/Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/dist/produkt/petlibro-granary-2-vision-duo/index.html'\n      at Object.readFileSync (node:fs:436:20)\n      at TestContext.<anonymous> (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/test/compact-product-purchase.test.mjs:173:33)\n      at async Test.run (node:internal/test_runner/test:1389:7)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {\n    errno: -2,\n    code: 'ENOENT',\n    syscall: 'open',\n    path: '/Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/dist/produkt/petlibro-granary-2-vision-duo/index.html'\n  }",
+    "relationship": "Bestand vor 35.6",
+    "oldBaselineProven": true,
+    "cause": "Iteration über Quellen einschließlich gesperrter Entwürfe; erwartete öffentliche Granary-2-Route fehlt zu Recht.",
+    "measure": "Nur publizierte Produkte auf Hero-Ausgabe prüfen; für Entwürfe ausdrücklich Routenabwesenheit verlangen.",
+    "changedFiles": [
+      "test/compact-product-purchase.test.mjs"
+    ],
+    "justification": "Publikationssperren müssen erhalten bleiben; keine Entwurfsseite zum Bestehen des Tests veröffentlichen.",
+    "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
+    "actualBefore": "Error: ENOENT: no such file or directory, open '/Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/dist/produkt/petlibro-granary-2-vision-duo/index.html'",
+    "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
+    "snapshotUpdate": false
+  },
+  {
+    "id": "S02",
+    "file": "test/decision-consequences-35.9.test.mjs:20:1",
+    "test": "35.9: alle 110 Dateien, Scores, Preise, Affiliate-Ziele und Originale bytegenau erhalten",
+    "category": "C",
+    "initialMessage": "AssertionError [ERR_ASSERTION]: petlibro-granary-camera-feeder",
+    "errorExcerpt": "  AssertionError [ERR_ASSERTION]: petlibro-granary-camera-feeder\n  + actual - expected\n  \n  + '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510'\n  - 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f'\n  \n      at TestContext.<anonymous> (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/test/decision-consequences-35.9.test.mjs:24:10)\n      at Test.runInAsyncScope (node:async_hooks:226:14)\n      at Test.run (node:internal/test_runner/test:1382:25)\n      at Test.start (node:internal/test_runner/test:1242:17)\n      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510',\n    expected: 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f',\n    operator: 'strictEqual',\n    diff: 'simple'\n  }",
+    "relationship": "Beabsichtigte fünf Evidenzänderungen aus 35.6",
+    "oldBaselineProven": false,
+    "cause": "Whole-file-SHA aus 35.9 kollidiert mit vier begründeten neuen Produktrevisionen.",
+    "measure": "Alten Bytevertrag erhalten und eine exakte Vorher-/Nachher-Brücke für 35.6 prüfen.",
+    "changedFiles": [
+      "test/decision-consequences-35.9.test.mjs",
+      "scripts/product-evidence/approved-changes.mjs"
+    ],
+    "justification": "Jedes weitere Byte scheitert; fünf bewusst begrenzte Einträge, keine Wildcards und keine geschützten Routen.",
+    "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
+    "actualBefore": "AssertionError [ERR_ASSERTION]: petlibro-granary-camera-feeder",
+    "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
+    "snapshotUpdate": false
+  },
+  {
+    "id": "S03",
+    "file": "test/decision-consequences-35.9.test.mjs:130:1",
+    "test": "35.9: alle 20 Experimentseiten und 205 eingehenden Linkkanten unverändert",
+    "category": "C",
+    "initialMessage": "AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md: Änderung entspricht nicht dem geprüften Umfang",
+    "errorExcerpt": "  AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md: Änderung entspricht nicht dem geprüften Umfang\n  + actual - expected\n  \n  + '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510'\n  - 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f'\n  \n      at file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-freshness/approved-changes.mjs:16:10\n      at Array.map (<anonymous>)\n      at approvedFreshnessChanges (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-freshness/approved-changes.mjs:12:25)\n      at verifyIntegration (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-integration/verify.mjs:21:18)\n      at TestContext.<anonymous> (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/test/decision-consequences-35.9.test.mjs:131:21)\n      at Test.runInAsyncScope (node:async_hooks:226:14)\n      at Test.run (node:internal/test_runner/test:1382:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)\n      at Test.postRun (node:internal/test_runner/test:1522:19)\n      at Test.run (node:internal/test_runner/test:1447:12) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510',\n    expected: 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f',\n    operator: 'strictEqual',\n    diff: 'simple'\n  }",
+    "relationship": "Beabsichtigte fünf Evidenzänderungen aus 35.6",
+    "oldBaselineProven": false,
+    "cause": "Gemeinsamer 36.0-/35.8-Quellhashvertrag scheitert vor der eigentlichen Experiment-/Buildprüfung.",
+    "measure": "Nur die bekannten Revisionen belegen und anschließend sämtliche Publikations-, Link- und Experimentschutzprüfungen ausführen.",
+    "changedFiles": [
+      "scripts/product-freshness/approved-changes.mjs",
+      "scripts/product-integration/verify.mjs"
+    ],
+    "justification": "Die ursprüngliche Fehlermeldung beweist keine veränderte Experimentseite. Der unabhängige Vergleich prüft sie weiterhin vollständig.",
+    "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
+    "actualBefore": "AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md: Änderung entspricht nicht dem geprüften Umfang",
+    "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
+    "snapshotUpdate": false
+  },
+  {
+    "id": "S04",
+    "file": "test/decision-consequences-35.9.test.mjs:134:1",
+    "test": "35.9: vollständiger Vorher-Nachher-Report ist reproduzierbar",
+    "category": "C",
+    "initialMessage": "Error: Command failed: /opt/homebrew/Cellar/node/26.3.0/bin/node scripts/decision-consequences/report.mjs --check",
+    "errorExcerpt": "  Error: Command failed: /opt/homebrew/Cellar/node/26.3.0/bin/node scripts/decision-consequences/report.mjs --check\n  node:internal/modules/run_main:107\n      triggerUncaughtException(\n      ^\n  \n  AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md: Änderung entspricht nicht dem geprüften Umfang\n  + actual - expected\n  \n  + '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510'\n  - 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f'\n  \n      at file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-freshness/approved-changes.mjs:16:10\n      at Array.map (<anonymous>)\n      at approvedFreshnessChanges (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-freshness/approved-changes.mjs:12:25)\n      at verifyIntegration (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-integration/verify.mjs:21:18)\n      at file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/decision-consequences/report.mjs:17:26 {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510',\n    expected: 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f',\n    operator: 'strictEqual',\n    diff: 'simple'\n  }\n  \n  Node.js v26.3.0\n  \n      at genericNodeError (node:internal/errors:998:15)\n      at wrappedFn (node:internal/errors:543:14)\n      at checkExecSyncError (node:child_process:926:11)\n      at execFileSync (node:child_process:962:15)\n      at TestContext.<anonymous> (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/test/decision-consequences-35.9.test.mjs:135:2)\n      at Test.runInAsyncScope (node:async_hooks:226:14)\n      at Test.run (node:internal/test_runner/test:1382:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)\n      at Test.postRun (node:internal/test_runner/test:1522:19)\n      at Test.run (node:internal/test_runner/test:1447:12) {\n    status: 1,\n    signal: null,\n    output: [ null, <Buffer >, <Buffer 6e 6f 64 65 3a 69 6e 74 65 72 6e 61 6c 2f 6d 6f 64 75 6c 65 73 2f 72 75 6e 5f 6d 61 69 6e 3a 31 30 37 0a 20 20 20 20 74 72 69 67 67 65 72 55 6e 63 61 ... 1218 more bytes> ],\n    pid: 12864,\n    stdout: <Buffer >,\n    stderr: <Buffer 6e 6f 64 65 3a 69 6e 74 65 72 6e 61 6c 2f 6d 6f 64 75 6c 65 73 2f 72 75 6e 5f 6d 61 69 6e 3a 31 30 37 0a 20 20 20 20 74 72 69 67 67 65 72 55 6e 63 61 ... 1218 more bytes>\n  }",
+    "relationship": "Beabsichtigte fünf Evidenzänderungen aus 35.6",
+    "oldBaselineProven": false,
+    "cause": "35.9-Berichtskette scheitert am vorgelagerten 36.0-/35.8-Quellhashvertrag.",
+    "measure": "Quellprüfung auf die explizit belegte historische Grenze plus aktuelle Revision erweitern.",
+    "changedFiles": [
+      "scripts/decision-consequences/report.mjs",
+      "scripts/product-freshness/approved-changes.mjs"
+    ],
+    "justification": "Keine Entscheidungskonsequenzen oder Scores geändert; die vollständige Berichtreproduktion bleibt Pflicht.",
+    "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
+    "actualBefore": "Error: Command failed: /opt/homebrew/Cellar/node/26.3.0/bin/node scripts/decision-consequences/report.mjs --check",
+    "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
+    "snapshotUpdate": false
+  },
+  {
+    "id": "S16",
+    "file": "test/decision-facts-rendered-35.7.test.mjs:55:1",
+    "test": "vollständiger Qualitätsreport ist reproduzierbar und erteilt keine Freigaben",
+    "category": "C",
+    "initialMessage": "Error: Command failed: /opt/homebrew/Cellar/node/26.3.0/bin/node /Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-experience/audit-decision-facts.mjs --check",
+    "errorExcerpt": "  Error: Command failed: /opt/homebrew/Cellar/node/26.3.0/bin/node /Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-experience/audit-decision-facts.mjs --check\n  file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-experience/audit-decision-facts.mjs:83\n      if (!fs.existsSync(file) || fs.readFileSync(file, 'utf8') !== content) throw new Error(`Report nicht reproduzierbar oder veraltet: ${file}`);\n                                                                                   ^\n  \n  Error: Report nicht reproduzierbar oder veraltet: /Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/reports/decision-facts-quality-35.7.json\n      at file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-experience/audit-decision-facts.mjs:83:82\n      at ModuleJob.run (node:internal/modules/esm/module_job:439:25)\n      at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:646:26)\n      at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n  \n  Node.js v26.3.0\n  \n      at genericNodeError (node:internal/errors:998:15)\n      at wrappedFn (node:internal/errors:543:14)\n      at checkExecSyncError (node:child_process:926:11)\n      at execFileSync (node:child_process:962:15)\n      at TestContext.<anonymous> (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/test/decision-facts-rendered-35.7.test.mjs:66:3)\n      at Test.runInAsyncScope (node:async_hooks:226:14)\n      at Test.run (node:internal/test_runner/test:1382:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)\n      at Test.postRun (node:internal/test_runner/test:1522:19)\n      at Test.run (node:internal/test_runner/test:1447:12) {\n    status: 1,\n    signal: null,\n    output: [ null, <Buffer >, <Buffer 66 69 6c 65 3a 2f 2f 2f 55 73 65 72 73 2f 62 6f 72 69 73 2e 62 75 63 6b 6f 77 69 74 7a 2f 45 78 74 65 6e 73 69 6f 6e 51 41 2f 61 66 66 69 6c 69 61 74 ... 879 more bytes> ],\n    pid: 12854,\n    stdout: <Buffer >,\n    stderr: <Buffer 66 69 6c 65 3a 2f 2f 2f 55 73 65 72 73 2f 62 6f 72 69 73 2e 62 75 63 6b 6f 77 69 74 7a 2f 45 78 74 65 6e 73 69 6f 6e 51 41 2f 61 66 66 69 6c 69 61 74 ... 879 more bytes>\n  }",
+    "relationship": "Beabsichtigte fünf Evidenzänderungen aus 35.6",
+    "oldBaselineProven": false,
+    "cause": "Quellhashes im 35.7-Report enthalten noch die alten vier Produktdateien. Die 437 Entscheidungshinweise selbst sind unverändert.",
+    "measure": "Nur vier sourceHash-Werte und zugehörige Markdown-Hashes erneuern.",
+    "changedFiles": [
+      "reports/decision-facts-quality-35.7.json",
+      "reports/decision-facts-quality-35.7.md"
+    ],
+    "justification": "Keine Freigaben, Hinweisfingerprints, Regeln oder Rohtexte geändert; vollständiger --check bleibt aktiv.",
+    "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
+    "actualBefore": "Error: Command failed: /opt/homebrew/Cellar/node/26.3.0/bin/node /Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-experience/audit-decision-facts.mjs --check",
+    "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
+    "snapshotUpdate": true
+  },
+  {
+    "id": "E01",
+    "file": "test/external-evidence-batch-3-33.6.2.test.mjs:16:1",
+    "test": "DOG 6 XL wird nicht fälschlich als hands-on getestet dargestellt",
+    "category": "C",
+    "initialMessage": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Plattformwert\\s+selbst ist aber nicht produktspezifisch/. Input:",
+    "errorExcerpt": "  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Plattformwert\\s+selbst ist aber nicht produktspezifisch/. Input:\n  \n  '---\\n' +\n    'title: Tractive DOG 6 XL\\n' +\n    'slug: tractive-dog-6-xl\\n' +\n    'type: product\\n' +\n    'layout: product\\n' +\n    'testStatus: manufacturer-data\\n' +\n    'productStatus: active\\n' +\n    'description: >-\\n' +\n    '  GPS- und Gesundheitstracker für Hunde ab 20 kg mit LTE-Live-Ortung, IP68, Sicherheitszonen und bis zu sechs Wochen\\n' +\n    '  Herstellerlaufzeit.\\n' +\n    'recommendation: >-\\n' +\n    '  Die stärkste Tractive-Option für große Hunde, wenn eine sehr lange Akkureserve, schnelle Live-Ortung und eine\\n' +\n    '  ausgereifte App wichtiger sind als niedriges Gewicht und ein Betrieb ohne Abo.\\n' +\n    'manufacturer:\\n' +\n    '  key: tractive\\n' +\n    '  name: Tractive\\n' +\n    '  slug: tractive\\n' +\n    'category:\\n' +\n    '  key: gps-tracker\\n' +\n    '  label: GPS-Tracker\\n' +\n    '  path: /gps-tracker/\\n' +\n    'productUrl: \"/produkt/tractive-dog-6-xl/\"\\n' +\n    'publishedAt: \"2026-07-20\"\\n' +\n    'updatedAt: \"2026-11-16\"\\n' +\n    'author:\\n' +\n    '  name: PfotenTechnik Redaktion\\n' +\n    'seo:\\n' +\n    '  title: \"Tractive DOG 6 XL: Akku, Abo und GPS-Tracker im Check\"\\n' +\n    '  description: >-\\n' +\n    '    Tractive DOG 6 XL eingeordnet: rund 70 g, LTE-Live-Ortung, IP68, Gesundheits-Trends, Abo und bis zu 42 Tage\\n' +\n    '    Akkulaufzeit.\\n' +\n    '  canonical: /produkt/tractive-dog-6-xl/\\n' +\n    '  sitemap: true\\n' +\n    '  priority: 0.85\\n' +\n    'hub:\\n' +\n    '  sections:\\n' +\n    '    - produkte\\n' +\n    '    - gps-tracker\\n' +\n    'tags:\\n' +\n    '  - gps-tracker\\n' +\n    '  - hunde\\n' +\n    '  - grosse-hunde\\n' +\n    '  - live-ortung\\n' +\n    '  - langer-akku\\n' +\n    '  - gesundheitstracking\\n' +\n    '  - abo\\n' +\n    'images:\\n' +\n    '  hero:\\n' +\n    '    src: ../../assets/images/guides/gps-tracker/hero.webp\\n' +\n    '    alt: Generische redaktionelle Darstellung eines GPS-Trackers an einem großen Hund; nicht das konkrete Produkt\\n' +\n    '  thumbnail:\\n' +\n    '    src: ../../assets/images/guides/gps-tracker/battery-subscription.webp\\n' +\n    '    alt: Redaktionelle Grafik zu Akkureserve und laufenden Mobilfunkkosten\\n' +\n    '  comparison:\\n' +\n    '    src: ../../assets/images/guides/gps-tracker/battery-subscription.webp\\n' +\n    '    alt: GPS-Tracker mit langer Akkulaufzeit und Abo im Vergleich\\n' +\n    '  gallery:\\n' +\n    '    - src: ../../assets/images/guides/gps-tracker/attachment.webp\\n' +\n    '      alt: Sichere Befestigung eines großen GPS-Trackers am Hundehalsband\\n' +\n    '    - src: ../../assets/images/guides/gps-tracker/range-accuracy.webp\\n' +\n    '      alt: Einfluss von GPS-Sicht und Mobilfunkempfang auf die Hundeortung\\n' +\n    'subscription:\\n' +\n    '  status: required-subscription\\n' +\n    '  requiredForCoreFunction: true\\n' +\n    '  serviceType: cellular\\n' +\n    '  serviceModel: subscription\\n' +\n    '  provider: Tractive\\n' +\n    '  researchedAt: \"2026-09-02\"\\n' +\n    '  source: \"https://tractive.com/de/pd/gps-tracker-dog?shopCountry=DE\"\\n' +\n    '  additionalCostNote: \"Jeder Tracker benötigt ein eigenes Abo.\"\\n' +\n    '  plans:\\n' +\n    '    - { name: \"Basic monatlich\", billingPeriod: monthly, commitmentMonths: 1, billingMode: recurring, price: 13, currency: EUR, effectiveMonthlyPrice: 13, autoRenew: true }\\n' +\n    '    - { name: \"Basic jährlich\", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 84, currency: EUR, effectiveMonthlyPrice: 7, autoRenew: true, featured: true }\\n' +\n    '    - { name: \"Basic 2 Jahre\", billingPeriod: term, commitmentMonths: 24, billingMode: upfront, price: 120, currency: EUR, effectiveMonthlyPrice: 5, autoRenew: true }\\n' +\n    '    - { name: \"Premium jährlich\", billingPeriod: annual, commitmentMonths: 12, billingMode: upfront, price: 96, currency: EUR, effectiveMonthlyPrice: 8, autoRenew: true }\\n' +\n    'price:\\n' +\n    '  current: 79.99\\n' +\n    '  currency: \"EUR\"\\n' +\n    '  status: \"unknown\"\\n' +\n    '  checkedAt: \"2026-11-16T09:07:43.118Z\"\\n' +\n    '  source:\\n' +\n    '    id: \"amazon.de\"\\n' +\n    '    label: \"amazon.de\"\\n' +\n    '    type: \"merchant\"\\n' +\n    'affiliate:\\n' +\n    '  provider: \"amazon\"\\n' +\n    '  label: \"Bei Amazon ansehen\"\\n' +\n    '  url: \"https://amzn.to/4pKPmOg\"\\n' +\n    '  rel: \"sponsored nofollow noopener\"\\n' +\n    '  target: \"_blank\"\\n' +\n    'rating: 4.6\\n' +\n    'score: 91\\n' +\n    '\\n' +\n    'priceState: \"available\"\\n' +\n    'priceUpdated: \"2026-11-16T09:07:43.118Z\"\\n' +\n    'priceAvailable: true\\n' +\n    'affiliateAvailable: true\\n' +\n    'availability: \"unknown\"\\n' +\n    'availabilityReason: \"Früherer automatischer Status ohne belastbaren Liefernachweis; Verfügbarkeit erneut prüfen.\"\\n' +\n    'editorialStatus: \"complete\"\\n' +\n    'recommendationStatus: \"limited\"\\n' +\n    'maintenanceStatus: \"required\"\\n' +\n    '\\n' +\n    'ratings:\\n' +\n    '  ortung: 4.7\\n' +\n    '  app: 4.8\\n' +\n    '  akku: 4.9\\n' +\n    '  tragekomfort: 4\\n' +\n    '  kosten: 4\\n' +\n    'externalEvidence:\\n' +\n    '  professionalReviews:\\n' +\n    '    - publisher: The Verge\\n' +\n    \"      title: Tractive's new dog and cat trackers provide more health insights for your pets\\n\" +\n    '      url: >-\\n' +\n    '        https://www.theverge.com/tech/907947/tractive-dog-6-xl-cat-mini-pet-trackers-health-monitoring-location\\n' +\n    '      publishedAt: \"2026-04-08\"\\n' +\n    '      checkedAt: \"2026-08-10\"\\n' +\n    '      methodology:",
+    "relationship": "Bestand vor 35.6",
+    "oldBaselineProven": true,
+    "cause": "Ersetzte Hinweisformulierung; der tatsächlich fehlgeschlagene Regex erwartete „Plattformwert selbst ist aber nicht produktspezifisch“.",
+    "measure": "Herstellerdatenstatus, ausdrücklich kein eigener Praxistest, The-Verge-Berichterstattung und externer CHIP-Labortest getrennt prüfen.",
+    "changedFiles": [
+      "test/external-evidence-batch-3-33.6.2.test.mjs"
+    ],
+    "justification": "Eine überholte Formulierung ist kein eigener Hands-on-Test; die ursprüngliche 35.6-Kurzdiagnose war hier zu grob.",
+    "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
+    "actualBefore": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Plattformwert\\s+selbst ist aber nicht produktspezifisch/. Input:",
+    "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
+    "snapshotUpdate": false
+  },
+  {
+    "id": "S12",
+    "file": "test/gift-guide-37.0.test.mjs:22:1",
+    "test": "all 110 product sources remain byte-identical, including original decisionFacts",
+    "category": "C",
+    "initialMessage": "AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md",
+    "errorExcerpt": "  AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md\n  + actual - expected\n  \n  + '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510'\n  - 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f'\n  \n      at TestContext.<anonymous> (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/test/gift-guide-37.0.test.mjs:22:217)\n      at Test.runInAsyncScope (node:async_hooks:226:14)\n      at Test.run (node:internal/test_runner/test:1382:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)\n      at Test.postRun (node:internal/test_runner/test:1522:19)\n      at Test.run (node:internal/test_runner/test:1447:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510',\n    expected: 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f',\n    operator: 'strictEqual',\n    diff: 'simple'\n  }",
+    "relationship": "Beabsichtigte fünf Evidenzänderungen aus 35.6",
+    "oldBaselineProven": false,
+    "cause": "Geschenkfinder-Quellinventar friert auch redaktionelle Evidenzfelder ein.",
+    "measure": "Historische Bytes und die exakt zugelassene aktuelle Revision gemeinsam validieren.",
+    "changedFiles": [
+      "test/gift-guide-37.0.test.mjs",
+      "scripts/product-evidence/approved-changes.mjs"
+    ],
+    "justification": "Kein Produkt wird aus dem Inventar entfernt; Originalhinweise bleiben unverändert.",
+    "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
+    "actualBefore": "AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md",
+    "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
+    "snapshotUpdate": false
+  },
+  {
+    "id": "S14",
+    "file": "test/gift-guide-37.1.test.mjs:14:1",
+    "test": "built canonical prices and derived totals are current; ratings, destinations and technical hints remain protected",
+    "category": "C",
+    "initialMessage": "AssertionError [ERR_ASSERTION]: petlibro-one-rfid-smart-feeder:strengths",
+    "errorExcerpt": "  AssertionError [ERR_ASSERTION]: petlibro-one-rfid-smart-feeder:strengths\n  + actual - expected\n  \n    [\n  +   'RFID-Zugang für das zugeordnete Tier; Mitfressen bleibt zu prüfen',\n  -   'Verhindert Futterdiebstahl zuverlässig',\n      'Automatische Portionierung und Zugangskontrolle kombiniert'\n    ]\n  \n      at TestContext.<anonymous> (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/test/gift-guide-37.1.test.mjs:14:953)\n      at Test.runInAsyncScope (node:async_hooks:226:14)\n      at Test.run (node:internal/test_runner/test:1382:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)\n      at Test.postRun (node:internal/test_runner/test:1522:19)\n      at Test.run (node:internal/test_runner/test:1447:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: [ 'RFID-Zugang für das zugeordnete Tier; Mitfressen bleibt zu prüfen', 'Automatische Portionierung und Zugangskontrolle kombiniert' ],\n    expected: [ 'Verhindert Futterdiebstahl zuverlässig', 'Automatische Portionierung und Zugangskontrolle kombiniert' ],\n    operator: 'deepStrictEqual',\n    diff: 'simple'\n  }",
+    "relationship": "Beabsichtigte fünf Evidenzänderungen aus 35.6",
+    "oldBaselineProven": false,
+    "cause": "Geschenkkatalog friert auch die überarbeitete erste One-RFID-Stärke als alte Produktbehauptung ein.",
+    "measure": "Nur für die exakt freigegebene strengths-Änderung den aktuellen, aus Quellen erzeugten Katalog erwarten.",
+    "changedFiles": [
+      "test/gift-guide-37.1.test.mjs",
+      "scripts/product-evidence/approved-changes.mjs"
+    ],
+    "justification": "Score, Preise, Kaufziele und technische Merkmale bleiben separat an alte und aktuelle Originaldaten gebunden.",
+    "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
+    "actualBefore": "AssertionError [ERR_ASSERTION]: petlibro-one-rfid-smart-feeder:strengths",
+    "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
+    "snapshotUpdate": false
+  },
+  {
+    "id": "S10",
+    "file": "test/indexation-improvements-36.1.test.mjs:34:1",
+    "test": "36.1: alle 110 Produktdateien und 20 geschützten Seiten bleiben erhalten",
+    "category": "C",
+    "initialMessage": "AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md",
+    "errorExcerpt": "  AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md\n  + actual - expected\n  \n  + '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510'\n  - 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f'\n  \n      at TestContext.<anonymous> (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/test/indexation-improvements-36.1.test.mjs:36:84)\n      at Test.runInAsyncScope (node:async_hooks:226:14)\n      at Test.run (node:internal/test_runner/test:1382:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)\n      at Test.postRun (node:internal/test_runner/test:1522:19)\n      at Test.run (node:internal/test_runner/test:1447:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510',\n    expected: 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f',\n    operator: 'strictEqual',\n    diff: 'simple'\n  }",
+    "relationship": "Beabsichtigte fünf Evidenzänderungen aus 35.6",
+    "oldBaselineProven": false,
+    "cause": "Dasselbe alte Quellhash-Inventar vor den vier Produktrevisionen; danach zusätzlich ortsabhängige Style-IDs in isolierter Prüfung.",
+    "measure": "Exakte Revisionsbrücke und beweisgebundenen Style-/Bildvergleich verwenden.",
+    "changedFiles": [
+      "test/indexation-improvements-36.1.test.mjs",
+      "scripts/indexation/verify.mjs"
+    ],
+    "justification": "20 Quellen und 205 Zugänge werden weiterhin vollständig geprüft. Style-Code und sämtliche CSS-Eigenschaften bleiben geschützt.",
+    "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
+    "actualBefore": "AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md",
+    "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
+    "snapshotUpdate": false
+  },
+  {
+    "id": "S09",
+    "file": "test/indexation-improvements-36.1.test.mjs:57:1",
+    "test": "36.1: Vorher/Nachher zeigt nur belegte Kontextverbesserungen und historische Indexquellen",
+    "category": "C",
+    "initialMessage": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:",
+    "errorExcerpt": "  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n  \n  13 !== 12\n  \n      at TestContext.<anonymous> (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/test/indexation-improvements-36.1.test.mjs:58:137)\n      at Test.runInAsyncScope (node:async_hooks:226:14)\n      at Test.run (node:internal/test_runner/test:1382:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)\n      at Test.postRun (node:internal/test_runner/test:1522:19)\n      at Test.run (node:internal/test_runner/test:1447:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {\n    generatedMessage: true,\n    code: 'ERR_ASSERTION',\n    actual: 13,\n    expected: 12,\n    operator: 'strictEqual',\n    diff: 'simple'\n  }",
+    "relationship": "Beabsichtigte fünf Evidenzänderungen aus 35.6",
+    "oldBaselineProven": false,
+    "cause": "Der neue F.A.Z.-Titel erzeugt durch vorhandenes Auto-Linking einen zusätzlichen gültigen Link von Granary Camera zu /futterautomat-katze/.",
+    "measure": "Genau diese einzelne Kante ergänzen; ursprüngliche zwölf Kontextlinks und neun Geschenkfinder-Kanten weiter exakt zählen.",
+    "changedFiles": [
+      "test/indexation-improvements-36.1.test.mjs"
+    ],
+    "justification": "Keine Experimentseite betroffen, keine entfernte Kante und keine neue URL. Kein allgemeines Erhöhen eines Toleranzwerts.",
+    "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
+    "actualBefore": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:",
+    "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
+    "snapshotUpdate": false
+  },
+  {
+    "id": "S08",
+    "file": "test/indexation-improvements-36.1.test.mjs:76:1",
+    "test": "36.1: Report und Änderungen sind reproduzierbar, Baseline wird nicht überschrieben",
+    "category": "C",
+    "initialMessage": "Error: Command failed: /opt/homebrew/Cellar/node/26.3.0/bin/node scripts/indexation/report.mjs --check",
+    "errorExcerpt": "  Error: Command failed: /opt/homebrew/Cellar/node/26.3.0/bin/node scripts/indexation/report.mjs --check\n  node:internal/modules/run_main:107\n      triggerUncaughtException(\n      ^\n  \n  AssertionError [ERR_ASSERTION]: reports/indexation-improvements-36.1.json: veraltet\n  + actual - expected\n  ... Skipped lines\n  \n    '{\\n' +\n      '  \"version\": \"36.1\",\\n' +\n      '  \"asOf\": \"2026-11-16\",\\n' +\n      '  \"phase\": \"after-build\",\\n' +\n      '  \"scope\": {\\n' +\n  ...\n      '    \"sitemap\": 269,\\n' +\n  +   '    \"contextualEdges\": 1326,\\n' +\n  -   '    \"contextualEdges\": 1327,\\n' +\n      '    \"zeroContextManufacturers\": 0,\\n' +\n      '    \"zeroContextProducts\": 0,\\n' +\n      '    \"productsWithoutHistoricallyIndexedContext\": 56,\\n' +\n      '    \"unreachable\": 1,\\n' +\n      '    \"technicalIssues\": 2,\\n' +\n      '    \"changedFiles\": 6,\\n' +\n      '    \"explicitContextLinks\": 12,\\n' +\n  +   '    \"actuallyAddedContextLinks\": 21,\\n' +\n  -   '    \"actuallyAddedContextLinks\": 22,\\n' +\n      '    \"overlapCandidates\": 9\\n' +\n      '  },\\n' +\n      '  \"before\": {\\n' +\n      '    \"canonicals\": 269,\\n' +\n      '    \"sitemap\": 268,\\n' +\n  ...\n      '    \"sitemap\": 269,\\n' +\n  +   '    \"contextualEdges\": 1326,\\n' +\n  -   '    \"contextualEdges\": 1327,\\n' +\n      '    \"zeroContextManufacturers\": 0,\\n' +\n      '    \"zeroContextProducts\": 0,\\n' +\n      '    \"productsWithoutHistoricallyIndexedContext\": 56,\\n' +\n      '    \"unreachable\": 1,\\n' +\n      '    \"technicalIssues\": 2\\n' +\n  ...\n      '      \"reason\": \"MOVA und SATELLAI haben bislang jeweils nur das eigene Herstellerprofil als Kontextquelle; der belegte LTE-Datenweg passt zur Reichweitenfrage.\",\\n' +\n  +   '      \"addition\": \"[MOVA SureTrack Pro](/produkt/mova-suretrack-pro/) und [SATELLAI Collar Go](/produkt/satella'... 3996036 more characters\n  -   '      \"addition\": \"[MOVA SureTrack Pro](/produkt/mova-suretrack-pro/) und [SATELLAI Collar Go](/produkt/satella'... 3995410 more characters\n  \n      at file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/indexation/report.mjs:35:76\n      at ModuleJob.run (node:internal/modules/esm/module_job:439:25)\n      at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:646:26)\n      at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: '{\\n' +\n      '  \"version\": \"36.1\",\\n' +\n      '  \"asOf\": \"2026-11-16\",\\n' +\n      '  \"phase\": \"after-build\",\\n' +\n      '  \"scope\": {\\n' +\n      '    \"canonicals\": 270,\\n' +\n      '    \"indexableSitemapUrls\": 269,\\n' +\n      '    \"includesIntentionalNoindex\": [\\n' +\n      '      \"/foundation/\"\\n' +\n      '    ],\\n' +\n      '    \"adminExcluded\": true\\n' +\n      '  },\\n' +\n      '  \"gsc\": {\\n' +\n      '    \"access\": {\\n' +\n      '      \"checkedAt\": \"2026-11-16T12:59:33.306Z\",\\n' +\n      '      \"clientPresent\": false,\\n' +\n      '      \"tokenPresent\": false,\\n' +\n      '      \"configPresent\": false,\\n' +\n      '      \"property\": \"sc-domain:pfotentechnik.de\",\\n' +\n      '      \"apiCalled\": false\\n' +\n      '    },\\n' +\n      '    \"coverageSources\": [\\n' +\n      '      {\\n' +\n      '        \"file\": \"reports/editorial-quality-recovery-35.4/inputs/indexed/Tabelle.csv\",\\n' +\n      '        \"sha256\": \"89d79844021e32e2bdec0e11ba82f6e846639ac7f0448e6dfeedc00a0631bd4f\",\\n' +\n      '        \"exportDate\": \"2026-11-02\",\\n' +\n      '        \"status\": \"indexed\"\\n' +\n      '      },\\n' +\n      '      {\\n' +\n      '        \"file\": \"reports/editorial-quality-recovery-35.4/inputs/crawled/Tabelle.csv\",\\n' +\n      '        \"sha256\": \"8d7b44feb49dc3c137dd4c93a383e125e552eb21687519df9e4b5425e5953e0d\",\\n' +\n      '        \"exportDate\": \"2026-11-02\",\\n' +\n      '        \"status\": \"crawled-not-indexed\"\\n' +\n      '      },\\n' +\n      '      {\\n' +\n      '        \"file\": \"reports/editorial-quality-recovery-35.4/inputs/discovered/Tabelle.csv\",\\n' +\n      '        \"sha256\": \"677ce18de5f06421da10886a7c31a88d4454853f29bdb55221ad4bbf9051072e\",\\n' +\n      '        \"exportDate\": \"2026-11-02\",\\n' +\n      '        \"status\": \"discovered-not-indexed\"\\n' +\n      '      }\\n' +\n      '    ],\\n' +\n      '    \"performance\": {\\n' +\n      '      \"sourceType\": \"csv-export\",\\n' +\n      '      \"manifest\": \"reports/search/imports/2026-11-16/manifest.json\",\\n' +\n      '      \"exportDate\": \"2026-11-16\",\\n' +\n      '      \"dataUpdatedAt\": \"2026-11-14T00:00:00.000Z\",\\n' +\n      '      \"period\": {\\n' +\n      '        \"startDate\": \"2026-08-15\",\\n' +\n      '        \"endDate\": \"2026-11-14\"\\n' +\n      '      },\\n' +\n      '      \"totals\": {\\n' +\n      '        \"clicks\": 0,\\n' +\n      '        \"impressions\": 86,\\n' +\n      '        \"ctr\": 0,\\n' +\n      '        \"position\": 19.84\\n' +\n      '      },\\n' +\n      '      \"queries\": [\\n' +\n      '        {\\n' +\n      '          \"query\": \"petsafe bewertung\",\\n' +\n      '          \"clicks\": 0,\\n' +\n      '          \"impressions\": 11,\\n' +\n      '          \"ctr\": 0,\\n' +\n      '          \"position\": 47.18\\n' +\n      '        },\\n' +\n      '        {\\n' +\n      '          \"query\": \"beuteerkennung\",\\n' +\n      '          \"clicks\": 0,\\n' +\n      '          \"impressions\": 3,\\n' +\n      '          \"ctr\": 0,\\n' +\n      '          \"position\": 70.33\\n' +\n      '        },\\n' +\n      '        {\\n' +\n      '          \"query\": \"petpuro\",\\n' +\n      '          \"clicks\": 0,\\n' +\n      '          \"impressions\": 1,\\n' +\n      '          \"ctr\": 0,\\n' +\n      '          \"position\": 2",
+    "relationship": "Beabsichtigte fünf Evidenzänderungen aus 35.6",
+    "oldBaselineProven": false,
+    "cause": "Abgeleiteter Indexationsreport enthält Text-/Hashmerkmale vor 35.6 und 21 statt 22 ergänzten Kontextkanten.",
+    "measure": "Diesen konkreten Report, sein Markdown und die Cockpit-Projektion nach semantischem Einzelvergleich aktualisieren.",
+    "changedFiles": [
+      "reports/indexation-improvements-36.1.json",
+      "reports/indexation-improvements-36.1.md",
+      "src/data/seo/indexation-dashboard.json"
+    ],
+    "justification": "Nur fünf Quellhashes ändern sich; weitere QA-Merkmale ändern sich durch Wiederholungszählung und eine neue Kante. Historische Google-Belege bleiben unverändert.",
+    "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
+    "actualBefore": "Error: Command failed: /opt/homebrew/Cellar/node/26.3.0/bin/node scripts/indexation/report.mjs --check",
+    "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
+    "snapshotUpdate": true
+  },
+  {
+    "id": "S07",
+    "file": "test/product-freshness-36.0.test.mjs:33:1",
+    "test": "36.0: selektive Änderungen reproduzierbar, keine pauschale Neufassung",
+    "category": "C",
+    "initialMessage": "AssertionError [ERR_ASSERTION]: petlibro-granary-camera-feeder: Ausgangsdatei inzwischen geändert",
+    "errorExcerpt": "  AssertionError [ERR_ASSERTION]: petlibro-granary-camera-feeder: Ausgangsdatei inzwischen geändert\n      at applyDecisions (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-freshness/apply.mjs:31:10)\n      at TestContext.<anonymous> (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/test/product-freshness-36.0.test.mjs:34:25)\n      at Test.runInAsyncScope (node:async_hooks:226:14)\n      at Test.run (node:internal/test_runner/test:1382:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)\n      at Test.postRun (node:internal/test_runner/test:1522:19)\n      at Test.run (node:internal/test_runner/test:1447:12)\n      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: false,\n    expected: true,\n    operator: '==',\n    diff: 'simple'\n  }",
+    "relationship": "Beabsichtigte fünf Evidenzänderungen aus 35.6",
+    "oldBaselineProven": false,
+    "cause": "36.0-Applier erlaubt nur seinen damaligen Ausgangs-/Endhash; neuere belegte Produktpräzisierungen passen nicht hinein.",
+    "measure": "Historische Berechnung gegen die hashgeprüfte vorherige Fassung reproduzieren; --write verweigert spätere Revisionen vor jedem Schreibzugriff.",
+    "changedFiles": [
+      "scripts/product-freshness/apply.mjs",
+      "test/product-freshness-36.0.test.mjs"
+    ],
+    "justification": "Kein Rückschreiben historischer Texte über die fachlich richtigen Ergänzungen aus 35.6.",
+    "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
+    "actualBefore": "AssertionError [ERR_ASSERTION]: petlibro-granary-camera-feeder: Ausgangsdatei inzwischen geändert",
+    "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
+    "snapshotUpdate": false
+  },
+  {
+    "id": "S06",
+    "file": "test/product-freshness-36.0.test.mjs:40:1",
+    "test": "36.0: alle URLs, SEO-Felder, Kaufziele, Preise und 437 Originalhinweise geschützt",
+    "category": "C",
+    "initialMessage": "AssertionError [ERR_ASSERTION]: petlibro-granary-camera-feeder: unverändertes Bestandsfeld externalEvidence",
+    "errorExcerpt": "  AssertionError [ERR_ASSERTION]: petlibro-granary-camera-feeder: unverändertes Bestandsfeld externalEvidence\n  + actual - expected\n  ... Skipped lines\n  \n    {\n      consensus: {\n        editorialAssessment: 'Die unabhängigen Tests bestätigen den Nutzen von Kamera, App und Zeitsteuerung. Nutzerkritik zu einzelnen Kamera- oder Ausgabefehlern bleibt ein Beobachtungspunkt, aber kein Beleg für einen generellen Defekt.',\n        strengths: [\n          {\n  ...\n        {\n  +       checkedAt: '2026-11-23',\n  +       findings: [\n  +         'Getestet wurde die Granary-Kameraversion der ersten Generation, nicht Granary WiFi oder Granary 2.'\n  +       ],\n  +       methodology: 'hands-on',\n  +       negatives: [\n  +         'Kamera nicht schwenkbar; Cloudfunktionen kosten extra.'\n  +       ],\n  +       positives: [\n  +         'Gleichmäßige Ausgabe und einfache Reinigung im externen Test.'\n  +       ],\n  +       publisher: 'F.A.Z. Kaufkompass',\n  +       title: 'Der beste Futterautomat für Katzen',\n  +       url: 'https://www.faz.net/kaufkompass/test/der-beste-futterautomat/'\n  +     },\n  +     {\n          checkedAt: '2026-08-10',\n          findings: [\n            'Der Test hebt den Nutzen der Kamera besonders in einem Mehrkatzenhaushalt mit unterschiedlichen Futterbedürfnissen hervor.'\n          ],\n          methodology: 'hands-on',\n  \n      at TestContext.<anonymous> (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/test/product-freshness-36.0.test.mjs:44:88)\n      at async Test.run (node:internal/test_runner/test:1389:7)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: { professionalReviews: [ [Object], [Object], [Object] ], userReviews: [ [Object], [Object] ], consensus: { strengths: [Array], weaknesses: [Array], editorialAssessment: 'Die unabhängigen Tests bestätigen den Nutzen von Kamera, App und Zeitsteuerung. Nutzerkritik zu einzelnen Kamera- oder Ausgabefehlern bleibt ein Beobachtungspunkt, aber kein Beleg für einen generellen Defekt.' }, note: 'Händlerbewertungen sind Momentaufnahmen zum Abrufdatum. Die beiden Händler-Scores werden nicht gemittelt und nicht in den redaktionellen PfotenTechnik-Score eingerechnet.' },\n    expected: { professionalReviews: [ [Object], [Object] ], userReviews: [ [Object], [Object] ], consensus: { strengths: [Array], weaknesses: [Array], editorialAssessment: 'Die unabhängigen Tests bestätigen den Nutzen von Kamera, App und Zeitsteuerung. Nutzerkritik zu einzelnen Kamera- oder Ausgabefehlern bleibt ein Beobachtungspunkt, aber kein Beleg für einen generellen Defekt.' }, note: 'Händlerbewertungen sind Momentaufnahmen zum Abrufdatum. Die beiden Händler-Scores werden nicht gemittelt und nicht in den redaktionellen PfotenTechnik-Score eingerechnet.' },\n    operator: 'deepStrictEqual',\n    diff: 'simple'\n  }",
+    "relationship": "Beabsichtigte fünf Evidenzänderungen aus 35.6",
+    "oldBaselineProven": false,
+    "cause": "Historischer Vollfeldvergleich behandelt neue experience-/FAQ-/Evidenzfelder als unbeabsichtigte Änderungen.",
+    "measure": "Für den historischen Feldvergleich ausschließlich die fünf exakt freigegebenen Revisionen zurückprojizieren; unveränderliche Felder zusätzlich direkt schützen.",
+    "changedFiles": [
+      "test/product-freshness-36.0.test.mjs",
+      "scripts/product-evidence/approved-changes.mjs"
+    ],
+    "justification": "Die aktuelle vollständige Datei muss den neuen Hash erfüllen. Scores, Kaufdaten, Metadaten und Originalhinweise dürfen nicht ausgenommen werden.",
+    "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
+    "actualBefore": "AssertionError [ERR_ASSERTION]: petlibro-granary-camera-feeder: unverändertes Bestandsfeld externalEvidence",
+    "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
+    "snapshotUpdate": false
+  },
+  {
+    "id": "S05",
+    "file": "test/product-freshness-36.0.test.mjs:98:1",
+    "test": "36.0: 35.5-Seiten und 205 Linkzugänge exakt erhalten; Vergleichsauswahl mindestens zehn",
+    "category": "C",
+    "initialMessage": "AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md: Änderung entspricht nicht dem geprüften Umfang",
+    "errorExcerpt": "  AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md: Änderung entspricht nicht dem geprüften Umfang\n  + actual - expected\n  \n  + '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510'\n  - 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f'\n  \n      at file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-freshness/approved-changes.mjs:16:10\n      at Array.map (<anonymous>)\n      at approvedFreshnessChanges (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-freshness/approved-changes.mjs:12:25)\n      at verifyIntegration (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-integration/verify.mjs:21:18)\n      at TestContext.<anonymous> (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/test/product-freshness-36.0.test.mjs:99:21)\n      at Test.runInAsyncScope (node:async_hooks:226:14)\n      at Test.run (node:internal/test_runner/test:1382:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)\n      at Test.postRun (node:internal/test_runner/test:1522:19)\n      at Test.run (node:internal/test_runner/test:1447:12) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510',\n    expected: 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f',\n    operator: 'strictEqual',\n    diff: 'simple'\n  }",
+    "relationship": "Beabsichtigte fünf Evidenzänderungen aus 35.6",
+    "oldBaselineProven": false,
+    "cause": "Gemeinsamer 36.0-/35.8-Quellhashvertrag scheitert vor der eigentlichen Experiment-/Buildprüfung.",
+    "measure": "Nur die bekannten Revisionen belegen und anschließend sämtliche Publikations-, Link- und Experimentschutzprüfungen ausführen.",
+    "changedFiles": [
+      "scripts/product-freshness/approved-changes.mjs",
+      "scripts/product-integration/verify.mjs"
+    ],
+    "justification": "Die ursprüngliche Fehlermeldung beweist keine veränderte Experimentseite. Der unabhängige Vergleich prüft sie weiterhin vollständig.",
+    "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
+    "actualBefore": "AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md: Änderung entspricht nicht dem geprüften Umfang",
+    "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
+    "snapshotUpdate": false
+  },
+  {
+    "id": "S15",
+    "file": "test/product-integration-rendered-35.8.test.mjs:12:1",
+    "test": "regulärer Build schützt Entwürfe, Experiment-Zugänge und Vergleichsmitgliedschaft",
+    "category": "C",
+    "initialMessage": "AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md: Änderung entspricht nicht dem geprüften Umfang",
+    "errorExcerpt": "  AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md: Änderung entspricht nicht dem geprüften Umfang\n  + actual - expected\n  \n  + '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510'\n  - 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f'\n  \n      at file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-freshness/approved-changes.mjs:16:10\n      at Array.map (<anonymous>)\n      at approvedFreshnessChanges (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-freshness/approved-changes.mjs:12:25)\n      at verifyIntegration (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-integration/verify.mjs:21:18)\n      at TestContext.<anonymous> (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/test/product-integration-rendered-35.8.test.mjs:13:21)\n      at Test.runInAsyncScope (node:async_hooks:226:14)\n      at Test.run (node:internal/test_runner/test:1382:25)\n      at Test.start (node:internal/test_runner/test:1242:17)\n      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510',\n    expected: 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f',\n    operator: 'strictEqual',\n    diff: 'simple'\n  }",
+    "relationship": "Beabsichtigte fünf Evidenzänderungen aus 35.6",
+    "oldBaselineProven": false,
+    "cause": "Gemeinsamer 36.0-/35.8-Quellhashvertrag scheitert vor der eigentlichen Experiment-/Buildprüfung.",
+    "measure": "Nur die bekannten Revisionen belegen und anschließend sämtliche Publikations-, Link- und Experimentschutzprüfungen ausführen.",
+    "changedFiles": [
+      "scripts/product-freshness/approved-changes.mjs",
+      "scripts/product-integration/verify.mjs"
+    ],
+    "justification": "Die ursprüngliche Fehlermeldung beweist keine veränderte Experimentseite. Der unabhängige Vergleich prüft sie weiterhin vollständig.",
+    "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
+    "actualBefore": "AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md: Änderung entspricht nicht dem geprüften Umfang",
+    "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
+    "snapshotUpdate": false
+  },
+  {
+    "id": "S13",
+    "file": "test/product-integration-rendered-35.8.test.mjs:26:1",
+    "test": "bestehende Scores, Teilbewertungen, SEO-Metadaten und decisionFacts bleiben exakt erhalten",
+    "category": "C",
+    "initialMessage": "AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md: Änderung entspricht nicht dem geprüften Umfang",
+    "errorExcerpt": "  AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md: Änderung entspricht nicht dem geprüften Umfang\n  + actual - expected\n  \n  + '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510'\n  - 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f'\n  \n      at file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-freshness/approved-changes.mjs:16:10\n      at Array.map (<anonymous>)\n      at approvedFreshnessChanges (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-freshness/approved-changes.mjs:12:25)\n      at TestContext.<anonymous> (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/test/product-integration-rendered-35.8.test.mjs:29:18)\n      at async Test.run (node:internal/test_runner/test:1389:7)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510',\n    expected: 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f',\n    operator: 'strictEqual',\n    diff: 'simple'\n  }",
+    "relationship": "Beabsichtigte fünf Evidenzänderungen aus 35.6",
+    "oldBaselineProven": false,
+    "cause": "Der Test ruft den gemeinsamen Freigabe-Verifier auf, der bereits beim neuen Evidenzhash abbricht. Kein nachgewiesener Scorefehler.",
+    "measure": "Vorgelagerten Hashvertrag korrigieren; alle geschützten Bewertungs-/SEO-/Kaufdatenvergleiche erhalten.",
+    "changedFiles": [
+      "scripts/product-freshness/approved-changes.mjs"
+    ],
+    "justification": "Nicht einen vermeintlichen Scorefehler durch geänderte Scores beseitigen.",
+    "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
+    "actualBefore": "AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md: Änderung entspricht nicht dem geprüften Umfang",
+    "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
+    "snapshotUpdate": false
+  },
+  {
+    "id": "S01",
+    "file": "test/product-integration-rendered-35.8.test.mjs:49:1",
+    "test": "35.8-Abschlussreport ist aus dem finalen Build reproduzierbar",
+    "category": "C",
+    "initialMessage": "Error: Command failed: /opt/homebrew/Cellar/node/26.3.0/bin/node /Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-integration/report.mjs --check",
+    "errorExcerpt": "  Error: Command failed: /opt/homebrew/Cellar/node/26.3.0/bin/node /Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-integration/report.mjs --check\n  node:internal/modules/run_main:107\n      triggerUncaughtException(\n      ^\n  \n  AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md: Änderung entspricht nicht dem geprüften Umfang\n  + actual - expected\n  \n  + '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510'\n  - 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f'\n  \n      at file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-freshness/approved-changes.mjs:16:10\n      at Array.map (<anonymous>)\n      at approvedFreshnessChanges (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-freshness/approved-changes.mjs:12:25)\n      at verifyIntegration (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-integration/verify.mjs:21:18)\n      at file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-integration/report.mjs:12:26 {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510',\n    expected: 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f',\n    operator: 'strictEqual',\n    diff: 'simple'\n  }\n  \n  Node.js v26.3.0\n  \n      at genericNodeError (node:internal/errors:998:15)\n      at wrappedFn (node:internal/errors:543:14)\n      at checkExecSyncError (node:child_process:926:11)\n      at execFileSync (node:child_process:962:15)\n      at TestContext.<anonymous> (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/test/product-integration-rendered-35.8.test.mjs:50:2)\n      at Test.runInAsyncScope (node:async_hooks:226:14)\n      at Test.run (node:internal/test_runner/test:1382:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)\n      at Test.postRun (node:internal/test_runner/test:1522:19)\n      at Test.run (node:internal/test_runner/test:1447:12) {\n    status: 1,\n    signal: null,\n    output: [ null, <Buffer >, <Buffer 6e 6f 64 65 3a 69 6e 74 65 72 6e 61 6c 2f 6d 6f 64 75 6c 65 73 2f 72 75 6e 5f 6d 61 69 6e 3a 31 30 37 0a 20 20 20 20 74 72 69 67 67 65 72 55 6e 63 61 ... 1216 more bytes> ],\n    pid: 12974,\n    stdout: <Buffer >,\n    stderr: <Buffer 6e 6f 64 65 3a 69 6e 74 65 72 6e 61 6c 2f 6d 6f 64 75 6c 65 73 2f 72 75 6e 5f 6d 61 69 6e 3a 31 30 37 0a 20 20 20 20 74 72 69 67 67 65 72 55 6e 63 61 ... 1216 more bytes>\n  }",
+    "relationship": "Beabsichtigte fünf Evidenzänderungen aus 35.6",
+    "oldBaselineProven": false,
+    "cause": "35.8-Berichtskette bricht im gemeinsamen Quellfreigabe-Verifier ab.",
+    "measure": "Gemeinsamen Verifier mit exakter Revisionsbrücke korrigieren; --check behalten.",
+    "changedFiles": [
+      "scripts/product-integration/verify.mjs",
+      "scripts/product-freshness/approved-changes.mjs"
+    ],
+    "justification": "Kein Anlass zum Neuschreiben dieses gesamten Berichts; die damalige Integration bleibt reproduzierbar.",
+    "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
+    "actualBefore": "Error: Command failed: /opt/homebrew/Cellar/node/26.3.0/bin/node /Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-integration/report.mjs --check",
+    "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
+    "snapshotUpdate": false
+  },
+  {
+    "id": "S11",
+    "file": "test/release-gate-37.4.test.mjs:47:1",
+    "test": "37.4: historical baselines and all existing product files are byte-identical to the pre-cleanup inventory",
+    "category": "C",
+    "initialMessage": "AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md",
+    "errorExcerpt": "  AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md\n  + actual - expected\n  \n  + '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510'\n  - 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f'\n  \n      at TestContext.<anonymous> (file:///Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/test/release-gate-37.4.test.mjs:49:60)\n      at Test.runInAsyncScope (node:async_hooks:226:14)\n      at Test.run (node:internal/test_runner/test:1382:25)\n      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)\n      at Test.postRun (node:internal/test_runner/test:1522:19)\n      at Test.run (node:internal/test_runner/test:1447:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510',\n    expected: 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f',\n    operator: 'strictEqual',\n    diff: 'simple'\n  }\nnpm error Lifecycle script `test` failed with error:\nnpm error code 1\nnpm error path /Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik\nnpm error workspace @affiliate-sites/pfotentechnik@1.0.0\nnpm error location /Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik\nnpm error command failed\nnpm error command sh -c node --test test/*.test.mjs",
+    "relationship": "Beabsichtigte fünf Evidenzänderungen aus 35.6",
+    "oldBaselineProven": false,
+    "cause": "37.4-Quellinventar erwartet alte Produktbytes.",
+    "measure": "Begrenzte Revisionsbrücke nur bei exakt bekanntem neuem Hash zulassen.",
+    "changedFiles": [
+      "test/release-gate-37.4.test.mjs",
+      "scripts/product-evidence/approved-changes.mjs"
+    ],
+    "justification": "Historische Baselines selbst werden nicht neu erzeugt; unbekannte Dateien werden unverändert streng geprüft.",
+    "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
+    "actualBefore": "AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md",
+    "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
+    "snapshotUpdate": false
+  }
+]

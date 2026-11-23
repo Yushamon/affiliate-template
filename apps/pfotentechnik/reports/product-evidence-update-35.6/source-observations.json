@@ -1,0 +1,46 @@
+[
+  {
+    "sourceId": "petkit-play",
+    "sha256": "ff36b821286389245d0f60867b09973e609ac59c3a93109f80bfa7b8491db650",
+    "locator": "AF_initData embedded package-detail data; adjacent version/release/date blocks",
+    "version": "14.0.1",
+    "updatedOn": "2026-11-13",
+    "releaseNote": "Release new product EVERSWEET ULTRA AI.",
+    "scope": "App support for named fountain; no feeder firmware change inferred"
+  },
+  {
+    "sourceId": "one-outlet",
+    "sha256": "033cf60db1cad7cd63c79908e3b51261357cd0cfefe58545b36b9d61d4fcef86",
+    "locator": "One RFID food outlet troubleshooting; numbered firmware step",
+    "model": "AF301/PLAF301",
+    "minimumFirmware": "V2.0.27",
+    "releaseDate": null
+  },
+  {
+    "sourceId": "granary-outlet",
+    "sha256": "6f88893eec85e0238f7c91a1e7abed7abbd9c6be4dd9efd8fce117e528819662",
+    "locator": "Granary Smart Feeder outlet troubleshooting; numbered firmware step",
+    "model": "AF103/PLAF103",
+    "minimumFirmware": "V1.0.58",
+    "releaseDate": null
+  },
+  {
+    "sourceId": "faz",
+    "sha256": "96592315b653d03d7d1a8af5fe753965026c149043c4069bffc7269e9f6ff8fe",
+    "locator": "time datetime; faz-update__date; methodology; individual review headings",
+    "updatedOn": "2026-10-20",
+    "declaredTested": 23,
+    "declaredAdded": 6,
+    "explicitAddedModelListAvailable": false,
+    "displayedComparisonModels": 20
+  },
+  {
+    "sourceId": "cloud",
+    "sha256": "a89431fcb3b4f0fb6b3b8dc873c7d846c713a6e18ce67a41d52af3d6c52ea69a",
+    "locator": "current service indicator versus incident timeline",
+    "currentStatus": "operational",
+    "incidentStartDocumented": "2026-08-11 05:00 PT",
+    "incidentResolvedDocumented": "2026-08-12 19:00 PT",
+    "novemberIncidentDocumented": false
+  }
+]

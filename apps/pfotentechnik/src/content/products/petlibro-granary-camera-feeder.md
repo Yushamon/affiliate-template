@@ -94,6 +94,17 @@ ratings:
   preisleistung: 4
 externalEvidence:
   professionalReviews:
+    - publisher: "F.A.Z. Kaufkompass"
+      title: "Der beste Futterautomat für Katzen"
+      url: "https://www.faz.net/kaufkompass/test/der-beste-futterautomat/"
+      checkedAt: "2026-11-23"
+      methodology: "hands-on"
+      positives:
+        - "Gleichmäßige Ausgabe und einfache Reinigung im externen Test."
+      negatives:
+        - "Kamera nicht schwenkbar; Cloudfunktionen kosten extra."
+      findings:
+        - "Getestet wurde die Granary-Kameraversion der ersten Generation, nicht Granary WiFi oder Granary 2."
     - publisher: "Tom's Guide"
       title: "My cats tested this smart pet feeder for a month"
       url: "https://www.tomsguide.com/home/my-cats-tested-this-smart-pet-feeder-for-a-month-and-now-i-cant-stop-watching-them"
@@ -189,7 +200,8 @@ weaknesses:
 experience:
   summary: >-
     Die Kamera zeigt, ob ein Tier am Napf erscheint. Sie misst aber nicht zuverlässig, wie viel tatsächlich
-    gefressen wurde.
+    gefressen wurde. Der Blickwinkel ist fest: Eine schwenkbare Raumüberwachung bietet dieses Modell nicht.
+    Das ist auch eine im externen F.A.Z.-Praxistest genannte Grenze der Kamera.
   methodology: Redaktionelle Einordnung anhand der offiziellen PETLIBRO-Produktseiten; kein eigener Langzeittest.
   maintenance: Behälter, Ausgabekanal, Napf und Kamerafläche regelmäßig reinigen. Elektronische Basis nicht eintauchen.
   reliability: >-

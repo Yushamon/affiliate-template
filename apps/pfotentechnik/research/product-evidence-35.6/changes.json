@@ -1,0 +1,66 @@
+{
+  "version": "35.6",
+  "baseCommit": "8f3bae47761007b9c5725f5a4add70ff0f898385",
+  "records": [
+    {
+      "file": "src/content/products/petlibro-granary-camera-feeder.md",
+      "beforeSha256": "c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f",
+      "afterSha256": "88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510",
+      "allowedFields": [
+        "externalEvidence",
+        "experience"
+      ],
+      "bodyChanged": false,
+      "reason": "35.6: verifizierte produktspezifische Präzisierung; siehe editorial-changes.md",
+      "evidence": "reports/product-evidence-update-35.6/editorial-changes.md"
+    },
+    {
+      "file": "src/content/products/petlibro-granary-wifi-feeder.md",
+      "beforeSha256": "e9b2cb1f3f7dbc7db12790126d75478305244dacb2c6f213debc150f412ce876",
+      "afterSha256": "aeb7d37ca47dbaaa489d2d2b5189bec01f726a81aefd2b1eec116e3da584219c",
+      "allowedFields": [
+        "experience",
+        "evidenceSources"
+      ],
+      "bodyChanged": false,
+      "reason": "35.6: verifizierte produktspezifische Präzisierung; siehe editorial-changes.md",
+      "evidence": "reports/product-evidence-update-35.6/editorial-changes.md"
+    },
+    {
+      "file": "src/content/products/petlibro-one-rfid-smart-feeder.md",
+      "beforeSha256": "8cf1adcb850f8f76e64a1272ac182bb53ef80497d9d32aec6d24745c7981e4a2",
+      "afterSha256": "5cbd7fe044096359b6a52f105bf89d040ec27a9745d8e08f7d5924728a895f61",
+      "allowedFields": [
+        "externalEvidence",
+        "review",
+        "strengths",
+        "experience",
+        "evidenceSources"
+      ],
+      "bodyChanged": true,
+      "reason": "35.6: verifizierte produktspezifische Präzisierung; siehe editorial-changes.md",
+      "evidence": "reports/product-evidence-update-35.6/editorial-changes.md"
+    },
+    {
+      "file": "src/content/products/tractive-cat-6-mini.md",
+      "beforeSha256": "d6cc0f25e11e4e2458b0ef312ff68a1acc841418ea01e8edaa19ae40101fbbf8",
+      "afterSha256": "9cbb99399fb6d7b1f90c20750d76d7b1ce79589aaa18553a8c37fb10564a35aa",
+      "allowedFields": [
+        "faq",
+        "evidenceSources"
+      ],
+      "bodyChanged": false,
+      "reason": "35.6: verifizierte produktspezifische Präzisierung; siehe editorial-changes.md",
+      "evidence": "reports/product-evidence-update-35.6/editorial-changes.md"
+    },
+    {
+      "file": "src/content/pages/wie-funktionieren-gps-tracker.md",
+      "beforeSha256": "05c7ea0d7ab0345ce34864fa58f548d9df4e805e3dba4f20dfd18f9253425f4e",
+      "afterSha256": "5ddfd8c9f573be761bd9efe285abdc37a16416d2961b62677531a23d636e6ce9",
+      "allowedFields": [],
+      "bodyChanged": true,
+      "reason": "35.6: verifizierte produktspezifische Präzisierung; siehe editorial-changes.md",
+      "evidence": "reports/product-evidence-update-35.6/editorial-changes.md"
+    }
+  ]
+}

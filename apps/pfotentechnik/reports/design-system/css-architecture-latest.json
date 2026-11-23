@@ -1,22 +1,22 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-16T12:56:36.549Z",
+  "generatedAt": "2026-11-23T12:10:56.724Z",
   "status": "ok",
   "safety": {
     "ruleLevelDeletionEnabled": false,
     "note": "Automatisch gelöscht werden ausschließlich leere bzw. reine Kommentar-CSS-Dateien."
   },
   "totals": {
-    "records": 89,
-    "cssFiles": 42,
-    "astroStyleFiles": 47,
-    "bytes": 689966,
-    "rules": 7339,
-    "important": 1169,
-    "actualImportantDeclarations": 1169,
-    "duplicateSelectors": 1429,
-    "duplicateDeclarationBlocks": 913,
-    "importEdges": 71,
+    "records": 91,
+    "cssFiles": 43,
+    "astroStyleFiles": 48,
+    "bytes": 723876,
+    "rules": 7812,
+    "important": 1209,
+    "actualImportantDeclarations": 1209,
+    "duplicateSelectors": 1548,
+    "duplicateDeclarationBlocks": 956,
+    "importEdges": 73,
     "brokenImports": 0,
     "unimportedCssFiles": 0,
     "emptyCssFiles": 0,
@@ -80,6 +80,23 @@
       "rules": 194,
       "important": 174,
       "maxSelectorDepth": 7
+    },
+    {
+      "file": "apps/pfotentechnik/src/styles/components/gift-guide.css",
+      "kind": "css",
+      "category": "global",
+      "owner": "design-system",
+      "bytes": 34752,
+      "meaningfulBytes": 34171,
+      "contentHash": "ca4f5e558e32ab1bb80f95cb7b8dde1568596cace48f37ecb223b32b6670cfd9",
+      "normalizedHash": "9bcb520bf36c8e81da65b303091e815b6e49e0c8e7a5a49f528adfefab89e1c4",
+      "importedBy": [
+        "apps/pfotentechnik/src/components/gift-guide/GiftGuide.astro"
+      ],
+      "imports": [],
+      "rules": 481,
+      "important": 40,
+      "maxSelectorDepth": 4
     },
     {
       "file": "apps/pfotentechnik/src/styles/pfotentechnik-foundation-contracts.css",
@@ -178,6 +195,7 @@
       "contentHash": "633364a5604b273fdfa4e89f774a78744265fbb5030c42a1d887fa8c6b5e5248",
       "normalizedHash": "0718bbe312e1edbf098276f382526a0632335ccdab4c07210eef4eba5aa188ca",
       "importedBy": [
+        "apps/pfotentechnik/src/pages/admin/seo/products/[slug]/preview.astro",
         "apps/pfotentechnik/src/pages/produkt/[product].astro"
       ],
       "imports": [],
@@ -203,6 +221,19 @@
       "maxSelectorDepth": 7
     },
     {
+      "file": "apps/pfotentechnik/src/pages/admin/seo/prices.astro",
+      "kind": "astro-style",
+      "category": "admin",
+      "owner": "admin-seo-copilot",
+      "bytes": 9096,
+      "meaningfulBytes": 8313,
+      "importedBy": [],
+      "imports": [],
+      "rules": 103,
+      "important": 2,
+      "maxSelectorDepth": 5
+    },
+    {
       "file": "apps/pfotentechnik/src/components/advisor/PetAdvisor.astro",
       "kind": "astro-style",
       "category": "component-inline",
@@ -212,19 +243,6 @@
       "importedBy": [],
       "imports": [],
       "rules": 84,
-      "important": 2,
-      "maxSelectorDepth": 5
-    },
-    {
-      "file": "apps/pfotentechnik/src/pages/admin/seo/prices.astro",
-      "kind": "astro-style",
-      "category": "admin",
-      "owner": "admin-seo-copilot",
-      "bytes": 8688,
-      "meaningfulBytes": 7905,
-      "importedBy": [],
-      "imports": [],
-      "rules": 99,
       "important": 2,
       "maxSelectorDepth": 5
     },
@@ -319,11 +337,11 @@
       "kind": "astro-style",
       "category": "component-inline",
       "owner": "component-owner-unresolved",
-      "bytes": 20179,
-      "meaningfulBytes": 19739,
+      "bytes": 20591,
+      "meaningfulBytes": 20143,
       "importedBy": [],
       "imports": [],
-      "rules": 158,
+      "rules": 162,
       "important": 0,
       "maxSelectorDepth": 7
     },
@@ -410,19 +428,6 @@
       "maxSelectorDepth": 8
     },
     {
-      "file": "apps/pfotentechnik/src/components/product-experience-2/ProductExperience2.astro",
-      "kind": "astro-style",
-      "category": "product",
-      "owner": "product-experience",
-      "bytes": 10191,
-      "meaningfulBytes": 9237,
-      "importedBy": [],
-      "imports": [],
-      "rules": 88,
-      "important": 0,
-      "maxSelectorDepth": 9
-    },
-    {
       "file": "packages/affiliate-core/src/components/Header.astro",
       "kind": "astro-style",
       "category": "component-inline",
@@ -454,6 +459,19 @@
       "maxSelectorDepth": 3
     },
     {
+      "file": "apps/pfotentechnik/src/components/product-experience-2/ProductExperience2.astro",
+      "kind": "astro-style",
+      "category": "product",
+      "owner": "product-experience",
+      "bytes": 9855,
+      "meaningfulBytes": 8907,
+      "importedBy": [],
+      "imports": [],
+      "rules": 85,
+      "important": 0,
+      "maxSelectorDepth": 9
+    },
+    {
       "file": "apps/pfotentechnik/src/components/product-experience-2/product-gallery-29.css",
       "kind": "css",
       "category": "product",
@@ -482,19 +500,6 @@
       "rules": 84,
       "important": 0,
       "maxSelectorDepth": 8
-    },
-    {
-      "file": "apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro",
-      "kind": "astro-style",
-      "category": "product",
-      "owner": "product-experience",
-      "bytes": 7236,
-      "meaningfulBytes": 6321,
-      "importedBy": [],
-      "imports": [],
-      "rules": 67,
-      "important": 0,
-      "maxSelectorDepth": 4
     },
     {
       "file": "packages/affiliate-core/src/styles/home.css",
@@ -528,17 +533,17 @@
       "maxSelectorDepth": 7
     },
     {
-      "file": "apps/pfotentechnik/src/components/product-experience-2/PriceBox2.astro",
+      "file": "apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro",
       "kind": "astro-style",
       "category": "product",
       "owner": "product-experience",
-      "bytes": 6686,
-      "meaningfulBytes": 6225,
+      "bytes": 6466,
+      "meaningfulBytes": 5671,
       "importedBy": [],
       "imports": [],
-      "rules": 58,
+      "rules": 53,
       "important": 0,
-      "maxSelectorDepth": 7
+      "maxSelectorDepth": 4
     },
     {
       "file": "apps/pfotentechnik/src/pages/admin/seo/topical-authority.astro",
@@ -622,6 +627,19 @@
       "rules": 41,
       "important": 0,
       "maxSelectorDepth": 5
+    },
+    {
+      "file": "apps/pfotentechnik/src/components/product-experience-2/PriceBox2.astro",
+      "kind": "astro-style",
+      "category": "product",
+      "owner": "product-experience",
+      "bytes": 5001,
+      "meaningfulBytes": 4911,
+      "importedBy": [],
+      "imports": [],
+      "rules": 48,
+      "important": 0,
+      "maxSelectorDepth": 7
     },
     {
       "file": "packages/affiliate-core/src/components/ImageLightbox.astro",
@@ -835,6 +853,19 @@
       "maxSelectorDepth": 7
     },
     {
+      "file": "apps/pfotentechnik/src/pages/produkt/[product].astro",
+      "kind": "astro-style",
+      "category": "component-inline",
+      "owner": "component-owner-unresolved",
+      "bytes": 3400,
+      "meaningfulBytes": 3096,
+      "importedBy": [],
+      "imports": [],
+      "rules": 21,
+      "important": 0,
+      "maxSelectorDepth": 6
+    },
+    {
       "file": "apps/pfotentechnik/src/styles/pfotentechnik-responsive-resilience.css",
       "kind": "css",
       "category": "legacy-or-override",
@@ -850,19 +881,6 @@
       "rules": 75,
       "important": 0,
       "maxSelectorDepth": 5
-    },
-    {
-      "file": "apps/pfotentechnik/src/pages/produkt/[product].astro",
-      "kind": "astro-style",
-      "category": "component-inline",
-      "owner": "component-owner-unresolved",
-      "bytes": 2576,
-      "meaningfulBytes": 2348,
-      "importedBy": [],
-      "imports": [],
-      "rules": 15,
-      "important": 0,
-      "maxSelectorDepth": 6
     },
     {
       "file": "apps/pfotentechnik/src/components/product-experience-2/ProductDetails2.astro",
@@ -1450,6 +1468,19 @@
       "maxSelectorDepth": 0
     },
     {
+      "file": "apps/pfotentechnik/src/components/admin/ProductEditorialEditor.astro",
+      "kind": "astro-style",
+      "category": "admin",
+      "owner": "admin-seo-copilot",
+      "bytes": 305,
+      "meaningfulBytes": 297,
+      "importedBy": [],
+      "imports": [],
+      "rules": 5,
+      "important": 0,
+      "maxSelectorDepth": 1
+    },
+    {
       "file": "apps/pfotentechnik/src/styles/seo-admin.css",
       "kind": "css",
       "category": "global",
@@ -1667,6 +1698,12 @@
   ],
   "importEdges": [
     {
+      "importer": "apps/pfotentechnik/src/components/gift-guide/GiftGuide.astro",
+      "raw": "../../styles/components/gift-guide.css",
+      "target": "apps/pfotentechnik/src/styles/components/gift-guide.css",
+      "exists": true
+    },
+    {
       "importer": "apps/pfotentechnik/src/components/product-experience-2/ProductGallery29.astro",
       "raw": "./product-gallery-29.css",
       "target": "apps/pfotentechnik/src/components/product-experience-2/product-gallery-29.css",
@@ -1724,6 +1761,12 @@
       "importer": "apps/pfotentechnik/src/layouts/SeoAdminLayout.astro",
       "raw": "../styles/seo-admin.css",
       "target": "apps/pfotentechnik/src/styles/seo-admin.css",
+      "exists": true
+    },
+    {
+      "importer": "apps/pfotentechnik/src/pages/admin/seo/products/[slug]/preview.astro",
+      "raw": "../../../../../styles/pfotentechnik-product-mobile-premium.css",
+      "target": "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
       "exists": true
     },
     {
@@ -2097,8 +2140,9 @@
   "duplicateSelectors": [
     {
       "selector": "h3",
-      "occurrences": 24,
+      "occurrences": 27,
       "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
         "apps/pfotentechnik/src/styles/components/panels.css",
         "apps/pfotentechnik/src/styles/foundation/foundation-33.css",
         "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
@@ -2114,6 +2158,23 @@
         "admin-seo-copilot"
       ],
       "important": 14
+    },
+    {
+      "selector": "h4",
+      "occurrences": 19,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "apps/pfotentechnik/src/styles/components/panels.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-primitives.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-ui-system.css",
+        "packages/affiliate-core/src/components/comparison/comparison-experience.css"
+      ],
+      "owners": [
+        "design-system",
+        "comparison-platform"
+      ],
+      "important": 15
     },
     {
       "selector": ":root",
@@ -2136,20 +2197,23 @@
       "important": 0
     },
     {
-      "selector": "h4",
-      "occurrences": 18,
+      "selector": "h2",
+      "occurrences": 17,
       "files": [
-        "apps/pfotentechnik/src/styles/components/panels.css",
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "apps/pfotentechnik/src/styles/foundation/foundation-33.css",
         "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
         "apps/pfotentechnik/src/styles/pfotentechnik-primitives.css",
         "apps/pfotentechnik/src/styles/pfotentechnik-ui-system.css",
-        "packages/affiliate-core/src/components/comparison/comparison-experience.css"
+        "packages/affiliate-core/src/components/comparison/comparison-experience.css",
+        "apps/pfotentechnik/src/pages/kaufberatung.astro"
       ],
       "owners": [
         "design-system",
-        "comparison-platform"
+        "comparison-platform",
+        "component-owner-unresolved"
       ],
-      "important": 15
+      "important": 9
     },
     {
       "selector": ".feature-card",
@@ -2248,24 +2312,6 @@
       "important": 12
     },
     {
-      "selector": "h2",
-      "occurrences": 15,
-      "files": [
-        "apps/pfotentechnik/src/styles/foundation/foundation-33.css",
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-        "apps/pfotentechnik/src/styles/pfotentechnik-primitives.css",
-        "apps/pfotentechnik/src/styles/pfotentechnik-ui-system.css",
-        "packages/affiliate-core/src/components/comparison/comparison-experience.css",
-        "apps/pfotentechnik/src/pages/kaufberatung.astro"
-      ],
-      "owners": [
-        "design-system",
-        "comparison-platform",
-        "component-owner-unresolved"
-      ],
-      "important": 9
-    },
-    {
       "selector": "li",
       "occurrences": 15,
       "files": [
@@ -2329,6 +2375,23 @@
       "important": 19
     },
     {
+      "selector": "select",
+      "occurrences": 13,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-primitives.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-responsive-resilience.css",
+        "apps/pfotentechnik/src/styles/seo-admin-foundation.css",
+        "apps/pfotentechnik/src/components/admin/ProductEditorialEditor.astro"
+      ],
+      "owners": [
+        "design-system",
+        "admin-seo-copilot"
+      ],
+      "important": 3
+    },
+    {
       "selector": ".product-summary",
       "occurrences": 12,
       "files": [
@@ -2351,20 +2414,6 @@
         "design-system"
       ],
       "important": 8
-    },
-    {
-      "selector": "select",
-      "occurrences": 11,
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-        "apps/pfotentechnik/src/styles/pfotentechnik-primitives.css",
-        "apps/pfotentechnik/src/styles/pfotentechnik-responsive-resilience.css",
-        "apps/pfotentechnik/src/styles/seo-admin-foundation.css"
-      ],
-      "owners": [
-        "design-system"
-      ],
-      "important": 3
     },
     {
       "selector": ".premium-v3--pfotentechnik .premium-v3-product-media",
@@ -2792,6 +2841,23 @@
       "important": 3
     },
     {
+      "selector": "input",
+      "occurrences": 8,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-primitives.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
+        "apps/pfotentechnik/src/styles/seo-admin-foundation.css",
+        "apps/pfotentechnik/src/components/admin/ProductEditorialEditor.astro"
+      ],
+      "owners": [
+        "design-system",
+        "admin-seo-copilot"
+      ],
+      "important": 0
+    },
+    {
       "selector": ".main-nav-v2 [data-pt-purchase-advice=\"nav\"]",
       "occurrences": 7,
       "files": [
@@ -2886,6 +2952,34 @@
       "owners": [
         "design-system",
         "component-owner-unresolved"
+      ],
+      "important": 0
+    },
+    {
+      "selector": "a",
+      "occurrences": 7,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-responsive-resilience.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-visual-density.css",
+        "apps/pfotentechnik/src/styles/seo-admin-foundation.css",
+        "packages/affiliate-core/src/styles/base.css",
+        "apps/pfotentechnik/src/components/advisor/DecisionJourney.astro"
+      ],
+      "owners": [
+        "design-system",
+        "component-owner-unresolved"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-results__grid",
+      "occurrences": 7,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
       ],
       "important": 0
     },
@@ -3148,6 +3242,20 @@
       "important": 3
     },
     {
+      "selector": "h4)",
+      "occurrences": 6,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+        "packages/affiliate-core/src/components/comparison/comparison-experience.css"
+      ],
+      "owners": [
+        "design-system",
+        "comparison-platform"
+      ],
+      "important": 2
+    },
+    {
       "selector": ".site-header-v2",
       "occurrences": 6,
       "files": [
@@ -3201,6 +3309,33 @@
       "important": 1
     },
     {
+      "selector": "ol)",
+      "occurrences": 6,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+        "packages/affiliate-core/src/components/comparison/comparison-experience.css",
+        "apps/pfotentechnik/src/layouts/LegalPageLayout.astro"
+      ],
+      "owners": [
+        "design-system",
+        "comparison-platform",
+        "component-owner-unresolved"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-card__decision",
+      "occurrences": 6,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
       "selector": "li)",
       "occurrences": 6,
       "files": [
@@ -3240,32 +3375,17 @@
       "important": 0
     },
     {
-      "selector": "input",
+      "selector": "textarea",
       "occurrences": 6,
       "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
         "apps/pfotentechnik/src/styles/pfotentechnik-primitives.css",
-        "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-        "apps/pfotentechnik/src/styles/seo-admin-foundation.css"
-      ],
-      "owners": [
-        "design-system"
-      ],
-      "important": 0
-    },
-    {
-      "selector": "a",
-      "occurrences": 6,
-      "files": [
         "apps/pfotentechnik/src/styles/pfotentechnik-responsive-resilience.css",
-        "apps/pfotentechnik/src/styles/pfotentechnik-visual-density.css",
         "apps/pfotentechnik/src/styles/seo-admin-foundation.css",
-        "packages/affiliate-core/src/styles/base.css",
-        "apps/pfotentechnik/src/components/advisor/DecisionJourney.astro"
+        "apps/pfotentechnik/src/components/admin/ProductEditorialEditor.astro"
       ],
       "owners": [
         "design-system",
-        "component-owner-unresolved"
+        "admin-seo-copilot"
       ],
       "important": 0
     },
@@ -3643,19 +3763,6 @@
       "important": 3
     },
     {
-      "selector": "h4)",
-      "occurrences": 5,
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-        "packages/affiliate-core/src/components/comparison/comparison-experience.css"
-      ],
-      "owners": [
-        "design-system",
-        "comparison-platform"
-      ],
-      "important": 2
-    },
-    {
       "selector": "h3)",
       "occurrences": 5,
       "files": [
@@ -3699,6 +3806,17 @@
         "apps/pfotentechnik/src/styles/components/cards.css",
         "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
         "apps/pfotentechnik/src/styles/pfotentechnik.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-card__fit",
+      "occurrences": 5,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
       ],
       "owners": [
         "design-system"
@@ -3750,21 +3868,6 @@
       ],
       "owners": [
         "design-system"
-      ],
-      "important": 0
-    },
-    {
-      "selector": "ol)",
-      "occurrences": 5,
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-        "packages/affiliate-core/src/components/comparison/comparison-experience.css",
-        "apps/pfotentechnik/src/layouts/LegalPageLayout.astro"
-      ],
-      "owners": [
-        "design-system",
-        "comparison-platform",
-        "component-owner-unresolved"
       ],
       "important": 0
     },
@@ -4596,6 +4699,17 @@
       "important": 2
     },
     {
+      "selector": ".gift-progress button",
+      "occurrences": 4,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 1
+    },
+    {
       "selector": ".footer-bottom-v2",
       "occurrences": 4,
       "files": [
@@ -4698,6 +4812,99 @@
       "files": [
         "apps/pfotentechnik/src/styles/components/cards.css",
         "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": "ul",
+      "occurrences": 4,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+        "packages/affiliate-core/src/components/comparison/comparison-experience.css",
+        "apps/pfotentechnik/src/layouts/LegalPageLayout.astro"
+      ],
+      "owners": [
+        "design-system",
+        "comparison-platform",
+        "component-owner-unresolved"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-hero__media",
+      "occurrences": 4,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-hero h1",
+      "occurrences": 4,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-finder",
+      "occurrences": 4,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-choice--animal",
+      "occurrences": 4,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-result-tools select",
+      "occurrences": 4,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-card__rating",
+      "occurrences": 4,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-card--lead .gift-card__body",
+      "occurrences": 4,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
       ],
       "owners": [
         "design-system"
@@ -4995,19 +5202,6 @@
       "files": [
         "apps/pfotentechnik/src/styles/pfotentechnik-primitives.css",
         "apps/pfotentechnik/src/styles/pfotentechnik-responsive-resilience.css"
-      ],
-      "owners": [
-        "design-system"
-      ],
-      "important": 0
-    },
-    {
-      "selector": "textarea",
-      "occurrences": 4,
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-primitives.css",
-        "apps/pfotentechnik/src/styles/pfotentechnik-responsive-resilience.css",
-        "apps/pfotentechnik/src/styles/seo-admin-foundation.css"
       ],
       "owners": [
         "design-system"
@@ -5427,6 +5621,19 @@
       "important": 16
     },
     {
+      "selector": "figure",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "apps/pfotentechnik/src/pages/hersteller/index.astro"
+      ],
+      "owners": [
+        "design-system",
+        "manufacturer-pages"
+      ],
+      "important": 13
+    },
+    {
       "selector": ".premium-v3--pfotentechnik .premium-v3-checklist .premium-v3-list li",
       "occurrences": 3,
       "files": [
@@ -5759,6 +5966,17 @@
       "important": 4
     },
     {
+      "selector": ".gift-progress",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 3
+    },
+    {
       "selector": "figcaption)",
       "occurrences": 3,
       "files": [
@@ -6017,6 +6235,20 @@
         "design-system"
       ],
       "important": 2
+    },
+    {
+      "selector": "p",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
+        "packages/affiliate-core/src/components/comparison/comparison-experience.css"
+      ],
+      "owners": [
+        "design-system",
+        "comparison-platform"
+      ],
+      "important": 1
     },
     {
       "selector": "textarea)::placeholder",
@@ -6322,6 +6554,273 @@
       "occurrences": 3,
       "files": [
         "apps/pfotentechnik/src/styles/components/cards.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": "summary):focus-visible",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-primitives.css",
+        "apps/pfotentechnik/src/components/category/CategoryExperience.astro"
+      ],
+      "owners": [
+        "design-system",
+        "component-owner-unresolved"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-hero",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-hero__copy",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-finder__intro h2",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-section-heading h2",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-editorial-intro h2",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-finder__intro>p:not(.gift-eyebrow)",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-finder legend",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-choice__check",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-topics a",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-topics strong",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-topics small",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-card__body",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-card__verification",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-card__decision h4",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-card ul",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-card__price small",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-result-tools label",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-editorial-intro",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-choice--animal small",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-card--lead",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-card--lead h3",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-card:not(.gift-card--lead) .gift-card__body",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ],
+      "owners": [
+        "design-system"
+      ],
+      "important": 0
+    },
+    {
+      "selector": ".gift-function-tool",
+      "occurrences": 3,
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
       ],
       "owners": [
         "design-system"
@@ -6758,21 +7257,6 @@
       "owners": [
         "design-system",
         "editorial-content"
-      ],
-      "important": 0
-    },
-    {
-      "selector": "ul",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
-        "packages/affiliate-core/src/components/comparison/comparison-experience.css",
-        "apps/pfotentechnik/src/layouts/LegalPageLayout.astro"
-      ],
-      "owners": [
-        "design-system",
-        "comparison-platform",
-        "component-owner-unresolved"
       ],
       "important": 0
     },
@@ -7565,424 +8049,6 @@
         "design-system"
       ],
       "important": 0
-    },
-    {
-      "selector": ".article .premium-render-block-steps .premium-render-label",
-      "occurrences": 3,
-      "files": [
-        "packages/affiliate-core/src/styles/premium-page.css"
-      ],
-      "owners": [
-        "design-system"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".article .premium-render-block-steps .premium-render-card h3",
-      "occurrences": 3,
-      "files": [
-        "packages/affiliate-core/src/styles/premium-page.css"
-      ],
-      "owners": [
-        "design-system"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".article .premium-render-block-steps .premium-render-card p",
-      "occurrences": 3,
-      "files": [
-        "packages/affiliate-core/src/styles/premium-page.css"
-      ],
-      "owners": [
-        "design-system"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".ranking-hero",
-      "occurrences": 3,
-      "files": [
-        "packages/affiliate-core/src/styles/product.css"
-      ],
-      "owners": [
-        "product-experience"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".ranking-recommendation-grid",
-      "occurrences": 3,
-      "files": [
-        "packages/affiliate-core/src/styles/product.css"
-      ],
-      "owners": [
-        "product-experience"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".product-ranking-card-media",
-      "occurrences": 3,
-      "files": [
-        "packages/affiliate-core/src/styles/product.css"
-      ],
-      "owners": [
-        "product-experience"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".product-ranking-cta",
-      "occurrences": 3,
-      "files": [
-        "packages/affiliate-core/src/styles/product.css"
-      ],
-      "owners": [
-        "product-experience"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".product-review-hero-v3",
-      "occurrences": 3,
-      "files": [
-        "packages/affiliate-core/src/styles/product.css"
-      ],
-      "owners": [
-        "product-experience"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".product-score-grid-v3",
-      "occurrences": 3,
-      "files": [
-        "packages/affiliate-core/src/styles/product.css"
-      ],
-      "owners": [
-        "product-experience"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".product-box-premium",
-      "occurrences": 3,
-      "files": [
-        "packages/affiliate-core/src/styles/product.css"
-      ],
-      "owners": [
-        "product-experience"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".pt-next-steps__card--product",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/DecisionNextSteps.astro"
-      ],
-      "owners": [
-        "component-owner-unresolved"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".pt-next-steps__score strong",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/DecisionNextSteps.astro"
-      ],
-      "owners": [
-        "component-owner-unresolved"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".pt-next-steps[data-feature=\"recommendation-cards-2.0\"]",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/DecisionNextSteps.astro"
-      ],
-      "owners": [
-        "component-owner-unresolved"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".pt-next-steps[data-feature=\"recommendation-cards-2.0\"] .pt-next-steps__card--product",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/DecisionNextSteps.astro"
-      ],
-      "owners": [
-        "component-owner-unresolved"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".editorial-evidence nav",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/EditorialEvidence.astro"
-      ],
-      "owners": [
-        "component-owner-unresolved"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".work-package-metrics",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/admin/SeoWorkPackages.astro"
-      ],
-      "owners": [
-        "admin-seo-copilot"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".work-package-filters",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/admin/SeoWorkPackages.astro"
-      ],
-      "owners": [
-        "admin-seo-copilot"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".pt-category-hub__hero h1",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/category/CategoryExperience.astro"
-      ],
-      "owners": [
-        "component-owner-unresolved"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".pt-category-hub__primary-comparison",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/category/CategoryExperience.astro"
-      ],
-      "owners": [
-        "component-owner-unresolved"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".pt-category-hub__primary-comparison-action",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/category/CategoryExperience.astro"
-      ],
-      "owners": [
-        "component-owner-unresolved"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".pt-category-hub__comparison-list > a",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/category/CategoryExperience.astro"
-      ],
-      "owners": [
-        "component-owner-unresolved"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".pt-category-hub__product",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/category/CategoryExperience.astro"
-      ],
-      "owners": [
-        "component-owner-unresolved"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".pt-category-hub__product-media",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/category/CategoryExperience.astro"
-      ],
-      "owners": [
-        "component-owner-unresolved"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".pt-category-hub__product-decision",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/category/CategoryExperience.astro"
-      ],
-      "owners": [
-        "component-owner-unresolved"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".pt-category-hub__product-decision :global(.pt-score)",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/category/CategoryExperience.astro"
-      ],
-      "owners": [
-        "component-owner-unresolved"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".pt-category-hub__closing",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/category/CategoryExperience.astro"
-      ],
-      "owners": [
-        "component-owner-unresolved"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".pt-category-hub__closing > a",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/category/CategoryExperience.astro"
-      ],
-      "owners": [
-        "component-owner-unresolved"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".rc33__product-meta",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro"
-      ],
-      "owners": [
-        "comparison-platform"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".rc33__verdict",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro"
-      ],
-      "owners": [
-        "comparison-platform"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".rc33__fast article",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro"
-      ],
-      "owners": [
-        "comparison-platform"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".rc33__final article",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro"
-      ],
-      "owners": [
-        "comparison-platform"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".rc33__explorer",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro"
-      ],
-      "owners": [
-        "comparison-platform"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".rc33__compromises",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro"
-      ],
-      "owners": [
-        "comparison-platform"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".rc33__scenarios dl>div",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro"
-      ],
-      "owners": [
-        "comparison-platform"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".alternatives__grid",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/product-experience-2/ProductAlternatives2.astro"
-      ],
-      "owners": [
-        "product-experience"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".category-fit form",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/product-experience-2/ProductCategoryFitAssistant.astro"
-      ],
-      "owners": [
-        "product-experience"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".timeline ol",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/product-experience-2/ProductEverydayTimeline.astro"
-      ],
-      "owners": [
-        "product-experience"
-      ],
-      "important": 0
-    },
-    {
-      "selector": ".evidence__method",
-      "occurrences": 3,
-      "files": [
-        "apps/pfotentechnik/src/components/product-experience-2/ProductEvidence2.astro"
-      ],
-      "owners": [
-        "product-experience"
-      ],
-      "important": 0
     }
   ],
   "duplicateDeclarationBlocks": [
@@ -8186,9 +8252,9 @@
         ".pt-category-hub__product-decision :global(.pt-score__copy)",
         ".pt-manufacturer__families summary::-webkit-details-marker",
         ".px2-price__details summary::-webkit-details-marker",
+        ".px2-price__cta > span",
         ".category-fit--reference33 fieldset:not(:first-child)",
         ".px2--reference33 :global(.decision-facts dd::before)",
-        ".px2-hero--reference33 :global(.px2-price__header)",
         ".ops-editor[hidden]",
         ".ops-head",
         ".ops-table article > .ops-cell:nth-child(3)",
@@ -8228,7 +8294,6 @@
         "apps/pfotentechnik/src/components/product-experience-2/PriceBox2.astro",
         "apps/pfotentechnik/src/components/product-experience-2/ProductCategoryFitAssistant.astro",
         "apps/pfotentechnik/src/components/product-experience-2/ProductExperience2.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro",
         "apps/pfotentechnik/src/pages/admin/seo/prices.astro",
         "packages/affiliate-core/src/components/EditorialScore.astro",
         "packages/affiliate-core/src/components/Header.astro",
@@ -8793,41 +8858,40 @@
       ]
     },
     {
-      "fingerprint": "grid-column: 2",
-      "occurrences": 25,
+      "fingerprint": "grid-template-columns:1fr",
+      "occurrences": 26,
       "selectors": [
-        ".pg29-lightbox__stage figure",
-        ".pt-home__guide-list > a > span",
-        ".pt-home__guide-list h3",
-        ".pt-home__guide-list p",
-        ".pt-home__guide-list small",
-        ".article .premium-render-block-steps .premium-render-card h3",
-        ".article .premium-render-block-steps .premium-render-card p",
-        ".article .premium-render-block-steps .premium-render-card ul",
-        ".article .premium-render-block-steps .premium-render-card a",
-        ".article .premium-v2-steps .premium-v2-card h3",
-        ".article .premium-v2-steps .premium-v2-card p",
-        ".article .premium-v2-steps .premium-v2-card ul",
-        ".article .premium-v2-steps .premium-v2-card a",
-        ".article .premium-v3-grid-steps .premium-v3-card h3",
-        ".article .premium-v3-grid-steps .premium-v3-card p",
-        ".article .premium-v3-grid-steps .premium-v3-card ul",
-        ".article .premium-v3-grid-steps .premium-v3-card a",
-        ".pt-category-hub__requirement-list li > p",
-        ".px2-hero--reference33 :is(.px2-hero__meta",
-        "h1",
-        ".px2-hero__lead",
-        ".px2-hero__scoreline",
-        ".px2-hero__suitability",
-        ".px2-hero__compare)",
-        ".px2-hero--reference33 :global(.px2-price)"
+        ".gift-possible .gift-card__decision",
+        ".gift-results__grid",
+        ".gift-possible .gift-results__grid",
+        ".trust-box-grid",
+        ".ranking-grid",
+        ".growth-visual__content li",
+        ".growth-card",
+        ".provider-grid",
+        ".status-grid",
+        ".work-package-filters",
+        ".rc33__stage",
+        ".rc33__fast>div",
+        ".rc33__split",
+        ".rc33__final>div",
+        ".rc33__alternatives article",
+        ".rc33__compromises",
+        ".rc33__alternatives>div",
+        ".alternatives__grid",
+        ".ta-opportunities",
+        ".ta-grid"
       ],
       "files": [
-        "apps/pfotentechnik/src/components/product-experience-2/product-gallery-29.css",
-        "packages/affiliate-core/src/components/home/home.css",
-        "packages/affiliate-core/src/styles/premium-page.css",
-        "apps/pfotentechnik/src/components/category/CategoryExperience.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro"
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "packages/affiliate-core/src/styles/article.css",
+        "packages/affiliate-core/src/styles/product.css",
+        "apps/pfotentechnik/src/components/admin/ResearchWorkbench.astro",
+        "apps/pfotentechnik/src/components/admin/SearchIntegrations.astro",
+        "apps/pfotentechnik/src/components/admin/SeoWorkPackages.astro",
+        "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductAlternatives2.astro",
+        "apps/pfotentechnik/src/pages/admin/seo/topical-authority.astro"
       ]
     },
     {
@@ -8923,39 +8987,6 @@
       ]
     },
     {
-      "fingerprint": "grid-template-columns:1fr",
-      "occurrences": 23,
-      "selectors": [
-        ".trust-box-grid",
-        ".ranking-grid",
-        ".growth-visual__content li",
-        ".growth-card",
-        ".provider-grid",
-        ".status-grid",
-        ".work-package-filters",
-        ".rc33__stage",
-        ".rc33__fast>div",
-        ".rc33__split",
-        ".rc33__final>div",
-        ".rc33__alternatives article",
-        ".rc33__compromises",
-        ".rc33__alternatives>div",
-        ".alternatives__grid",
-        ".ta-opportunities",
-        ".ta-grid"
-      ],
-      "files": [
-        "packages/affiliate-core/src/styles/article.css",
-        "packages/affiliate-core/src/styles/product.css",
-        "apps/pfotentechnik/src/components/admin/ResearchWorkbench.astro",
-        "apps/pfotentechnik/src/components/admin/SearchIntegrations.astro",
-        "apps/pfotentechnik/src/components/admin/SeoWorkPackages.astro",
-        "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductAlternatives2.astro",
-        "apps/pfotentechnik/src/pages/admin/seo/topical-authority.astro"
-      ]
-    },
-    {
       "fingerprint": "color: var(--pt-theme-text)",
       "occurrences": 22,
       "selectors": [
@@ -9047,7 +9078,7 @@
     },
     {
       "fingerprint": "margin-top: 0",
-      "occurrences": 20,
+      "occurrences": 21,
       "selectors": [
         ".article > :first-child",
         ".pt-disclosure__body > :first-child",
@@ -9067,6 +9098,7 @@
         ".pt-manufacturer__fit h3",
         ".pt-manufacturer__depth h3",
         ".details__faq h2",
+        ".product-editorial-content :global(h2:first-child)",
         ".product-highlights-v4",
         ".product-summary-card-v4 .product-highlights-v4 h2"
       ],
@@ -9082,6 +9114,7 @@
         "apps/pfotentechnik/src/components/guide/GuideExperience.astro",
         "apps/pfotentechnik/src/components/manufacturer/ManufacturerExperience.astro",
         "apps/pfotentechnik/src/components/product-experience-2/ProductDetails2.astro",
+        "apps/pfotentechnik/src/pages/produkt/[product].astro",
         "packages/affiliate-core/src/components/product/ProductReview.astro"
       ]
     },
@@ -9144,7 +9177,7 @@
     },
     {
       "fingerprint": "margin: 0",
-      "occurrences": 19,
+      "occurrences": 18,
       "selectors": [
         ".pg29__empty p",
         "[data-pt-foundation] :where(h1",
@@ -9161,7 +9194,6 @@
         ".pt-manufacturer__differences h3",
         ".px2--reference33 :global(.purchase-mistakes h3)",
         ".px2--reference33 :global(.details__faq > h2)",
-        ".px2-hero--reference33 .px2-hero__score-label",
         ".comparison-manufacturer-cta p",
         ".footer-bottom-v2 p",
         ".premium-v3--pfotentechnik .premium-v3-answer .premium-v3-header"
@@ -9175,10 +9207,68 @@
         "apps/pfotentechnik/src/components/admin/SearchIntegrations.astro",
         "apps/pfotentechnik/src/components/manufacturer/ManufacturerExperience.astro",
         "apps/pfotentechnik/src/components/product-experience-2/ProductExperience2.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro",
         "apps/pfotentechnik/src/pages/vergleiche/index.astro",
         "packages/affiliate-core/src/components/Footer.astro",
         "packages/affiliate-core/src/renderer/PremiumRenderer.astro"
+      ]
+    },
+    {
+      "fingerprint": "grid-column: 2",
+      "occurrences": 18,
+      "selectors": [
+        ".pg29-lightbox__stage figure",
+        ".pt-home__guide-list > a > span",
+        ".pt-home__guide-list h3",
+        ".pt-home__guide-list p",
+        ".pt-home__guide-list small",
+        ".article .premium-render-block-steps .premium-render-card h3",
+        ".article .premium-render-block-steps .premium-render-card p",
+        ".article .premium-render-block-steps .premium-render-card ul",
+        ".article .premium-render-block-steps .premium-render-card a",
+        ".article .premium-v2-steps .premium-v2-card h3",
+        ".article .premium-v2-steps .premium-v2-card p",
+        ".article .premium-v2-steps .premium-v2-card ul",
+        ".article .premium-v2-steps .premium-v2-card a",
+        ".article .premium-v3-grid-steps .premium-v3-card h3",
+        ".article .premium-v3-grid-steps .premium-v3-card p",
+        ".article .premium-v3-grid-steps .premium-v3-card ul",
+        ".article .premium-v3-grid-steps .premium-v3-card a",
+        ".pt-category-hub__requirement-list li > p"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/components/product-experience-2/product-gallery-29.css",
+        "packages/affiliate-core/src/components/home/home.css",
+        "packages/affiliate-core/src/styles/premium-page.css",
+        "apps/pfotentechnik/src/components/category/CategoryExperience.astro"
+      ]
+    },
+    {
+      "fingerprint": "display:none",
+      "occurrences": 18,
+      "selectors": [
+        ".gift-card__details summary::-webkit-details-marker",
+        ".gift-editorial-intro__image",
+        ".gift-principles span:last-child",
+        ".gift-finder__intro h2 br",
+        ".gift-finder__time",
+        ".gift-guide:not([data-enhanced]) [data-compare-toggle]",
+        ".gift-card:not(.gift-card--lead) .gift-card__service",
+        ".gift-card__details-service",
+        ".gift-guide:not([data-enhanced]) .gift-need-controls",
+        ".gift-card:not(.gift-card--lead):not(.gift-card--possible) .gift-card__fit",
+        ".gift-card:not(.gift-card--lead) .gift-card__details-service",
+        ":global(.pt-page--production-comparison > .comparison-content--production-depth > summary::-webkit-details-marker)",
+        ".rc33 details:not([open]) :global(.comparison-lab)",
+        ".rc33__technical-details>summary::-webkit-details-marker",
+        ".rc33__explorer>summary::-webkit-details-marker",
+        ".evidence__sources summary::-webkit-details-marker",
+        ".ta-cluster summary::-webkit-details-marker"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductEvidence2.astro",
+        "apps/pfotentechnik/src/pages/admin/seo/topical-authority.astro"
       ]
     },
     {
@@ -9317,6 +9407,35 @@
         "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css",
         "apps/pfotentechnik/src/pages/hersteller/index.astro",
         "packages/affiliate-core/src/components/ImageLightbox.astro"
+      ]
+    },
+    {
+      "fingerprint": "margin:0",
+      "occurrences": 17,
+      "selectors": [
+        ".gift-guide :is(h1",
+        "h2",
+        "h3",
+        "h4",
+        "p",
+        "figure",
+        "ul",
+        "ol)",
+        ".gift-faq .faq-section",
+        ".growth-head p",
+        ".cluster-progress p",
+        ".growth-brief__content p",
+        ".growth-brief__content ul",
+        ".growth-visual__content p",
+        ".rc33 dd",
+        ".evidence__note",
+        ".evidence__method"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "apps/pfotentechnik/src/components/admin/ResearchWorkbench.astro",
+        "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductEvidence2.astro"
       ]
     },
     {
@@ -9766,31 +9885,6 @@
       ]
     },
     {
-      "fingerprint": "background: transparent;border-radius: 0;border: 0;box-shadow: none;padding: 0",
-      "occurrences": 14,
-      "selectors": [
-        ":where(.pt-surface-flat)",
-        ":where(.pt-surface) > :where(.pt-surface) > :where(.pt-surface):not( .pt-surface-elevated",
-        ".product-card",
-        ".comparison-card",
-        ".recommendation-card",
-        "[data-interactive-card] )",
-        ".scenario-card__topline",
-        ".px2--reference33 :global(:is(.decision-facts",
-        ".purchase-mistakes",
-        ".timeline",
-        ".community",
-        ".details",
-        ".evidence))",
-        ".px2-hero--reference33 :global(.px2-price)"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-visual-density.css",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductExperience2.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro"
-      ]
-    },
-    {
       "fingerprint": "color: var(--text)",
       "occurrences": 14,
       "selectors": [
@@ -9899,6 +9993,29 @@
       ],
       "files": [
         "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
+      ]
+    },
+    {
+      "fingerprint": "background: transparent;border-radius: 0;border: 0;box-shadow: none;padding: 0",
+      "occurrences": 13,
+      "selectors": [
+        ":where(.pt-surface-flat)",
+        ":where(.pt-surface) > :where(.pt-surface) > :where(.pt-surface):not( .pt-surface-elevated",
+        ".product-card",
+        ".comparison-card",
+        ".recommendation-card",
+        "[data-interactive-card] )",
+        ".scenario-card__topline",
+        ".px2--reference33 :global(:is(.decision-facts",
+        ".purchase-mistakes",
+        ".timeline",
+        ".community",
+        ".details",
+        ".evidence))"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/pfotentechnik-visual-density.css",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductExperience2.astro"
       ]
     },
     {
@@ -10665,6 +10782,25 @@
       ]
     },
     {
+      "fingerprint": "grid-column:1/-1",
+      "occurrences": 9,
+      "selectors": [
+        ".gift-card:not(.gift-card--lead) :is(.gift-card__topline",
+        "h3",
+        ".gift-card__fit",
+        ".gift-card__verification",
+        ".gift-card__decision",
+        ".gift-card__details",
+        ".gift-card__rating",
+        ".gift-card__secondary)",
+        ".rc33__difference .rc33__ab article>span"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro"
+      ]
+    },
+    {
       "fingerprint": "color: var(--pt-theme-accent)!important",
       "occurrences": 9,
       "selectors": [
@@ -10850,6 +10986,27 @@
       ]
     },
     {
+      "fingerprint": "color: var(--px2-muted)",
+      "occurrences": 9,
+      "selectors": [
+        "[data-product-page] [data-product-experience=\"2.0\"] :is( p",
+        "li",
+        "dd",
+        "small",
+        "figcaption",
+        "label )",
+        ".px2-price__details-body small",
+        ".details__specs dt",
+        ".px2--reference33 :global(.decision-facts dt span)"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/pfotentechnik-ui-system.css",
+        "apps/pfotentechnik/src/components/product-experience-2/PriceBox2.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductDetails2.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductExperience2.astro"
+      ]
+    },
+    {
       "fingerprint": "padding: 24px",
       "occurrences": 9,
       "selectors": [
@@ -10929,6 +11086,23 @@
       ],
       "files": [
         "packages/affiliate-core/src/styles/premium-page.css"
+      ]
+    },
+    {
+      "fingerprint": "font-size:10px",
+      "occurrences": 8,
+      "selectors": [
+        ".gift-choice--goal small",
+        ".gift-topics small",
+        ".gift-step-label",
+        ".gift-back",
+        ".gift-result-tools .gift-link-button",
+        ".gift-affiliate",
+        ".gift-choice--animal small",
+        ".gift-weight-options small"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
       ]
     },
     {
@@ -11393,25 +11567,6 @@
       ]
     },
     {
-      "fingerprint": "color: var(--px2-muted)",
-      "occurrences": 8,
-      "selectors": [
-        "[data-product-page] [data-product-experience=\"2.0\"] :is( p",
-        "li",
-        "dd",
-        "small",
-        "figcaption",
-        "label )",
-        ".details__specs dt",
-        ".px2--reference33 :global(.decision-facts dt span)"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-ui-system.css",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductDetails2.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductExperience2.astro"
-      ]
-    },
-    {
       "fingerprint": "background: var(--seo-danger-soft);color: var(--seo-danger)",
       "occurrences": 8,
       "selectors": [
@@ -11428,25 +11583,6 @@
         "apps/pfotentechnik/src/styles/seo-admin-controls.css",
         "apps/pfotentechnik/src/components/admin/SearchIntegrations.astro",
         "apps/pfotentechnik/src/pages/admin/seo/prices.astro"
-      ]
-    },
-    {
-      "fingerprint": "margin:0",
-      "occurrences": 8,
-      "selectors": [
-        ".growth-head p",
-        ".cluster-progress p",
-        ".growth-brief__content p",
-        ".growth-brief__content ul",
-        ".growth-visual__content p",
-        ".rc33 dd",
-        ".evidence__note",
-        ".evidence__method"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/admin/ResearchWorkbench.astro",
-        "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductEvidence2.astro"
       ]
     },
     {
@@ -11483,6 +11619,22 @@
         "packages/affiliate-core/src/components/product/AlternativeRecommendationCard.astro",
         "packages/affiliate-core/src/components/product/ProductReview.astro",
         "packages/affiliate-core/src/renderer/PremiumRenderer.astro"
+      ]
+    },
+    {
+      "fingerprint": "font-size:11px",
+      "occurrences": 7,
+      "selectors": [
+        ".gift-text-link",
+        ".gift-card__decision h4",
+        ".gift-result-note",
+        ".gift-card__position",
+        ".gift-card__category",
+        ".gift-card__price small",
+        ".gift-weight-options small"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
       ]
     },
     {
@@ -11926,6 +12078,24 @@
       ]
     },
     {
+      "fingerprint": "margin-inline: 0;width: 100%",
+      "occurrences": 6,
+      "selectors": [
+        ".pg29__mobile",
+        ".pg29__slide",
+        ".pg29 .pg29__image",
+        ".article-hero",
+        ".px2--reference33 .px2__decision-zone",
+        ".px2-hero--reference33 .px2-hero__content"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/components/product-experience-2/product-gallery-29.css",
+        "packages/affiliate-core/src/styles/article.css",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductExperience2.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro"
+      ]
+    },
+    {
       "fingerprint": "transition: border-color 160ms ease,\n    box-shadow 160ms ease,\n    transform 160ms ease",
       "occurrences": 6,
       "selectors": [
@@ -11953,6 +12123,20 @@
       ],
       "files": [
         "apps/pfotentechnik/src/styles/components/cards.css"
+      ]
+    },
+    {
+      "fingerprint": "font-size:12px",
+      "occurrences": 6,
+      "selectors": [
+        ".gift-topics strong",
+        ".gift-choice strong",
+        ".gift-card__fit",
+        ".gift-three-questions p",
+        ".gift-card__decision h4"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
       ]
     },
     {
@@ -12281,7 +12465,7 @@
         ".pt-disclosure[open] > summary .pt-disclosure__icon",
         ".comparison-lab__group[open] .comparison-lab__group-chevron",
         ".comparison-methodology[open] .comparison-methodology__summary-icon",
-        ".px2-price__details[open] summary span",
+        ".px2-price__details[open] .px2-price__chevron",
         ".site-header-v2 .main-nav-v2__desktop-menu[open] .main-nav-v2__desktop-summary svg",
         ".pt-toc[open] .pt-toc__chevron"
       ],
@@ -12453,23 +12637,6 @@
       ]
     },
     {
-      "fingerprint": "display:none",
-      "occurrences": 6,
-      "selectors": [
-        ":global(.pt-page--production-comparison > .comparison-content--production-depth > summary::-webkit-details-marker)",
-        ".rc33 details:not([open]) :global(.comparison-lab)",
-        ".rc33__technical-details>summary::-webkit-details-marker",
-        ".rc33__explorer>summary::-webkit-details-marker",
-        ".evidence__sources summary::-webkit-details-marker",
-        ".ta-cluster summary::-webkit-details-marker"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductEvidence2.astro",
-        "apps/pfotentechnik/src/pages/admin/seo/topical-authority.astro"
-      ]
-    },
-    {
       "fingerprint": "background: var(--pt-color-brand-700);border-color: var(--pt-color-brand-700);color: var(--pt-color-on-brand)",
       "occurrences": 6,
       "selectors": [
@@ -12485,19 +12652,63 @@
       ]
     },
     {
-      "fingerprint": "margin-inline: 0;width: 100%",
+      "fingerprint": "touch-action:manipulation",
       "occurrences": 5,
       "selectors": [
-        ".pg29__mobile",
-        ".pg29__slide",
-        ".pg29 .pg29__image",
-        ".article-hero",
-        ".px2--reference33 .px2__decision-zone"
+        ".gift-guide button",
+        ".gift-guide a",
+        ".gift-guide input",
+        ".gift-guide select",
+        ".gift-guide summary"
       ],
       "files": [
-        "apps/pfotentechnik/src/components/product-experience-2/product-gallery-29.css",
-        "packages/affiliate-core/src/styles/article.css",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductExperience2.astro"
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ]
+    },
+    {
+      "fingerprint": "outline-offset:4px;outline:3px solid var(--pt-color-brand-500)",
+      "occurrences": 5,
+      "selectors": [
+        ".gift-guide :is(button",
+        "a",
+        "input",
+        "select",
+        "summary):focus-visible"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ]
+    },
+    {
+      "fingerprint": "transform:rotate(180deg)",
+      "occurrences": 5,
+      "selectors": [
+        ".gift-card__details[open] summary svg",
+        ":global(.pt-page--production-comparison > .comparison-content--production-depth[open] > summary .rc33__disclosure-icon)",
+        ":is(.rc33__technical-details",
+        ".rc33__explorer)[open]>summary .rc33__disclosure-icon",
+        ".evidence__sources[open] .evidence__chevron"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductEvidence2.astro"
+      ]
+    },
+    {
+      "fingerprint": "width:100%",
+      "occurrences": 5,
+      "selectors": [
+        ".gift-answer-chips",
+        ".gift-compare-actions button",
+        ".growth-copy-actions>*",
+        ".growth-actions>*",
+        ".action-row button"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "apps/pfotentechnik/src/components/admin/ResearchWorkbench.astro",
+        "apps/pfotentechnik/src/components/admin/SearchIntegrations.astro"
       ]
     },
     {
@@ -12697,6 +12908,24 @@
       ],
       "files": [
         "apps/pfotentechnik/src/styles/pfotentechnik-design-system.css"
+      ]
+    },
+    {
+      "fingerprint": "font-size: 1rem",
+      "occurrences": 5,
+      "selectors": [
+        ":where(body)",
+        "[data-product-page] [data-product-experience=\"2.0\"] .px2-price__comparison",
+        ".comparison-cover-filters__summary strong",
+        ".pt-category-hub__product-decision > p strong",
+        ".px2-offer__heading > strong"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/pfotentechnik-primitives.css",
+        "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
+        "packages/affiliate-core/src/components/comparison/comparison-experience.css",
+        "apps/pfotentechnik/src/components/category/CategoryExperience.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/PriceBox2.astro"
       ]
     },
     {
@@ -13166,19 +13395,84 @@
       ]
     },
     {
-      "fingerprint": "justify-self: start",
+      "fingerprint": "color:inherit",
       "occurrences": 4,
       "selectors": [
-        ".pg29-lightbox__header button:first-child",
-        ".comparison-alternatives__all",
-        ".pt-category-hub__closing > a",
-        ".px2-hero--reference33 .px2-hero__scoreline :global(.pt-score)"
+        ".gift-guide :is(h1",
+        "h2",
+        "h3",
+        "h4)"
       ],
       "files": [
-        "apps/pfotentechnik/src/components/product-experience-2/product-gallery-29.css",
-        "packages/affiliate-core/src/components/comparison/comparison-experience.css",
-        "apps/pfotentechnik/src/components/category/CategoryExperience.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro"
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ]
+    },
+    {
+      "fingerprint": "color:var(--gift-accent-text)",
+      "occurrences": 4,
+      "selectors": [
+        ".gift-principles svg",
+        ".gift-choice--animal>svg",
+        ".gift-topics a>svg",
+        ".gift-card__decision h4 svg"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ]
+    },
+    {
+      "fingerprint": "color:var(--gift-muted);font-size:12px",
+      "occurrences": 4,
+      "selectors": [
+        ".gift-card__fit",
+        ".gift-compare-actions>span",
+        ".gift-three-questions p",
+        ".gift-cost-device span"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ]
+    },
+    {
+      "fingerprint": "grid-template-columns:1fr 1fr",
+      "occurrences": 4,
+      "selectors": [
+        ".gift-editorial-intro",
+        ".alternatives__grid",
+        ".community__groups",
+        ".decision-facts dl"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductAlternatives2.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductCommunityInsights2.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductDecisionFacts2.astro"
+      ]
+    },
+    {
+      "fingerprint": "display:block",
+      "occurrences": 4,
+      "selectors": [
+        ".gift-card:not(.gift-card--lead) .gift-card__details-service",
+        ".gift-card:not(.gift-card--lead):not(.gift-card--possible) .gift-card__fit",
+        ".gift-card__details-service:not([hidden])",
+        ".gift-card:not(.gift-card--lead) .gift-card__details-service:not([hidden])"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ]
+    },
+    {
+      "fingerprint": "grid-row:auto",
+      "occurrences": 4,
+      "selectors": [
+        ".gift-card--lead",
+        ".gift-card__body .gift-card__rating",
+        ".provider-card:first-child"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "apps/pfotentechnik/src/components/admin/SearchIntegrations.astro"
       ]
     },
     {
@@ -13530,22 +13824,6 @@
       ],
       "files": [
         "apps/pfotentechnik/src/styles/pfotentechnik-primitives.css"
-      ]
-    },
-    {
-      "fingerprint": "font-size: 1rem",
-      "occurrences": 4,
-      "selectors": [
-        ":where(body)",
-        "[data-product-page] [data-product-experience=\"2.0\"] .px2-price__comparison",
-        ".comparison-cover-filters__summary strong",
-        ".pt-category-hub__product-decision > p strong"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/styles/pfotentechnik-primitives.css",
-        "apps/pfotentechnik/src/styles/pfotentechnik-product-mobile-premium.css",
-        "packages/affiliate-core/src/components/comparison/comparison-experience.css",
-        "apps/pfotentechnik/src/components/category/CategoryExperience.astro"
       ]
     },
     {
@@ -14077,21 +14355,6 @@
       ]
     },
     {
-      "fingerprint": "grid-column: auto",
-      "occurrences": 4,
-      "selectors": [
-        ".article .premium-block-answer .premium-block-card:first-child",
-        ".px2-price__summary.has-service > div:nth-child(odd):not(:first-child)",
-        ".ops-tabs",
-        ".ops-toolbar label"
-      ],
-      "files": [
-        "packages/affiliate-core/src/styles/premium-page.css",
-        "apps/pfotentechnik/src/components/product-experience-2/PriceBox2.astro",
-        "apps/pfotentechnik/src/pages/admin/seo/prices.astro"
-      ]
-    },
-    {
       "fingerprint": "max-width: 760px",
       "occurrences": 4,
       "selectors": [
@@ -14245,20 +14508,6 @@
       ]
     },
     {
-      "fingerprint": "transform:rotate(180deg)",
-      "occurrences": 4,
-      "selectors": [
-        ":global(.pt-page--production-comparison > .comparison-content--production-depth[open] > summary .rc33__disclosure-icon)",
-        ":is(.rc33__technical-details",
-        ".rc33__explorer)[open]>summary .rc33__disclosure-icon",
-        ".evidence__sources[open] .evidence__chevron"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductEvidence2.astro"
-      ]
-    },
-    {
       "fingerprint": "border-top:2px solid var(--rc-accent);padding:1rem 0",
       "occurrences": 4,
       "selectors": [
@@ -14296,21 +14545,6 @@
       ],
       "files": [
         "apps/pfotentechnik/src/components/guide/GuideExperience.astro"
-      ]
-    },
-    {
-      "fingerprint": "background: var(--px2-red-soft)",
-      "occurrences": 4,
-      "selectors": [
-        ".px2-availability.is-discontinued",
-        ".px2-availability.is-out-of-stock",
-        ".px2-hero__decision .is-limitation",
-        ".verdict__card.is-negative"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/product-experience-2/PriceBox2.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductVerdict2.astro"
       ]
     },
     {
@@ -14404,6 +14638,157 @@
       ],
       "files": [
         "apps/pfotentechnik/src/pages/admin/seo/topical-authority.astro"
+      ]
+    },
+    {
+      "fingerprint": "justify-self: start",
+      "occurrences": 3,
+      "selectors": [
+        ".pg29-lightbox__header button:first-child",
+        ".comparison-alternatives__all",
+        ".pt-category-hub__closing > a"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/components/product-experience-2/product-gallery-29.css",
+        "packages/affiliate-core/src/components/comparison/comparison-experience.css",
+        "apps/pfotentechnik/src/components/category/CategoryExperience.astro"
+      ]
+    },
+    {
+      "fingerprint": "font-family:Georgia,'Times New Roman',serif;font-size:clamp(29px,3.3vw,47px);font-weight:500;letter-spacing:-.035em;line-height:1.1",
+      "occurrences": 3,
+      "selectors": [
+        ".gift-finder__intro h2",
+        ".gift-section-heading h2",
+        ".gift-editorial-intro h2"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ]
+    },
+    {
+      "fingerprint": "font-weight:400",
+      "occurrences": 3,
+      "selectors": [
+        ".gift-finder__intro h2 em",
+        ".gift-editorial-intro h2 em",
+        ".gift-editorial-tools h2 em"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ]
+    },
+    {
+      "fingerprint": "background:var(--gift-surface);border-radius:8px;border:1px solid var(--gift-line);color:var(--gift-text);font-size:13px;min-height:44px;padding:9px 11px;width:100%",
+      "occurrences": 3,
+      "selectors": [
+        ".gift-context input",
+        ".gift-context select",
+        ".gift-result-tools select"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ]
+    },
+    {
+      "fingerprint": "color:var(--gift-muted);font-size:11px",
+      "occurrences": 3,
+      "selectors": [
+        ".gift-topics small",
+        ".gift-card__category",
+        ".gift-cost-tool__figures div>span"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ]
+    },
+    {
+      "fingerprint": "color:var(--gift-muted);font-size:10px;line-height:1.7",
+      "occurrences": 3,
+      "selectors": [
+        ".gift-method>span",
+        ".gift-method p",
+        ".gift-method a"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ]
+    },
+    {
+      "fingerprint": "font-size:9px",
+      "occurrences": 3,
+      "selectors": [
+        ".gift-choice--animal small",
+        ".gift-choice--goal small",
+        ".gift-topics small"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ]
+    },
+    {
+      "fingerprint": "animation:none!important;scroll-behavior:auto!important;transition:none!important",
+      "occurrences": 3,
+      "selectors": [
+        ".gift-guide *",
+        ".gift-guide *::before",
+        ".gift-guide *::after"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ]
+    },
+    {
+      "fingerprint": "grid-template-columns:repeat(3,minmax(0,1fr))",
+      "occurrences": 3,
+      "selectors": [
+        ".gift-possible .gift-results__grid",
+        ".rc33__alternatives>div",
+        ".ta-kpis"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro",
+        "apps/pfotentechnik/src/pages/admin/seo/topical-authority.astro"
+      ]
+    },
+    {
+      "fingerprint": "font-size:23px",
+      "occurrences": 3,
+      "selectors": [
+        ".gift-card:not(.gift-card--lead) h3",
+        ".gift-cost-tool__figures strong",
+        ".gift-card:not(.gift-card--lead) .gift-card__price strong"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css"
+      ]
+    },
+    {
+      "fingerprint": "padding:20px",
+      "occurrences": 3,
+      "selectors": [
+        ".gift-cost-tool__example",
+        ".community",
+        ".decision-facts"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductCommunityInsights2.astro",
+        "apps/pfotentechnik/src/components/product-experience-2/ProductDecisionFacts2.astro"
+      ]
+    },
+    {
+      "fingerprint": "white-space:nowrap",
+      "occurrences": 3,
+      "selectors": [
+        ".gift-card__rating strong",
+        ".rc33__alternative-meta>strong",
+        ".rc33__product-meta>strong"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/styles/components/gift-guide.css",
+        "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro"
       ]
     },
     {
@@ -15805,6 +16190,19 @@
       ]
     },
     {
+      "fingerprint": "grid-column: auto",
+      "occurrences": 3,
+      "selectors": [
+        ".article .premium-block-answer .premium-block-card:first-child",
+        ".ops-tabs",
+        ".ops-toolbar label"
+      ],
+      "files": [
+        "packages/affiliate-core/src/styles/premium-page.css",
+        "apps/pfotentechnik/src/pages/admin/seo/prices.astro"
+      ]
+    },
+    {
       "fingerprint": "max-width: 720px",
       "occurrences": 3,
       "selectors": [
@@ -15920,6 +16318,18 @@
       ]
     },
     {
+      "fingerprint": "background:var(--pt-color-surface);border-radius:6px;border:1px solid var(--pt-color-border);box-sizing:border-box;color:var(--pt-color-text);padding:.7rem;width:100%",
+      "occurrences": 3,
+      "selectors": [
+        "textarea",
+        "input",
+        "select"
+      ],
+      "files": [
+        "apps/pfotentechnik/src/components/admin/ProductEditorialEditor.astro"
+      ]
+    },
+    {
       "fingerprint": "color:var(--growth-text-muted)",
       "occurrences": 3,
       "selectors": [
@@ -15955,19 +16365,6 @@
       "files": [
         "apps/pfotentechnik/src/components/admin/ResearchWorkbench.astro",
         "apps/pfotentechnik/src/components/admin/SeoWorkPackages.astro"
-      ]
-    },
-    {
-      "fingerprint": "width:100%",
-      "occurrences": 3,
-      "selectors": [
-        ".growth-copy-actions>*",
-        ".growth-actions>*",
-        ".action-row button"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/admin/ResearchWorkbench.astro",
-        "apps/pfotentechnik/src/components/admin/SearchIntegrations.astro"
       ]
     },
     {
@@ -16106,296 +16503,6 @@
       ],
       "files": [
         "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro"
-      ]
-    },
-    {
-      "fingerprint": "gap:.45rem;grid-template-columns:1fr",
-      "occurrences": 3,
-      "selectors": [
-        ".rc33__differences dl>div",
-        ".rc33__scenarios dl>div"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/comparison/ComparisonProduction.astro"
-      ]
-    },
-    {
-      "fingerprint": "color: var(--pt-color-primary);font-weight: 850",
-      "occurrences": 3,
-      "selectors": [
-        ".pt-guide__summary li > span",
-        ".pt-guide__next nav > a > span",
-        ".pt-manufacturer__start nav > a > span"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/guide/GuideExperience.astro",
-        "apps/pfotentechnik/src/components/manufacturer/ManufacturerExperience.astro"
-      ]
-    },
-    {
-      "fingerprint": "max-width: 72ch",
-      "occurrences": 3,
-      "selectors": [
-        ".pt-guide__prose :global(p)",
-        ".pt-guide__prose :global(ul)",
-        ".pt-guide__prose :global(ol)"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/guide/GuideExperience.astro"
-      ]
-    },
-    {
-      "fingerprint": "border-top: 1px solid var(--pt-color-border);display: grid",
-      "occurrences": 3,
-      "selectors": [
-        ".pt-guide__next nav",
-        ".pt-manufacturer__start nav",
-        ".pt-manufacturer__comparison-list"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/guide/GuideExperience.astro",
-        "apps/pfotentechnik/src/components/manufacturer/ManufacturerExperience.astro"
-      ]
-    },
-    {
-      "fingerprint": "color: var(--pt-color-text-muted);line-height: 1.5;margin: 0",
-      "occurrences": 3,
-      "selectors": [
-        ".pt-guide__next nav p",
-        ".pt-manufacturer__start nav p",
-        ".pt-manufacturer__comparison-list p"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/guide/GuideExperience.astro",
-        "apps/pfotentechnik/src/components/manufacturer/ManufacturerExperience.astro"
-      ]
-    },
-    {
-      "fingerprint": "color: var(--pt-color-primary);font-size: .9rem;white-space: nowrap",
-      "occurrences": 3,
-      "selectors": [
-        ".pt-guide__next nav b",
-        ".pt-manufacturer__start nav b",
-        ".pt-manufacturer__comparison-list b"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/guide/GuideExperience.astro",
-        "apps/pfotentechnik/src/components/manufacturer/ManufacturerExperience.astro"
-      ]
-    },
-    {
-      "fingerprint": "color: var(--pt-color-text-muted);font-size: .72rem;font-weight: 800;letter-spacing: .05em;text-transform: uppercase",
-      "occurrences": 3,
-      "selectors": [
-        ".pt-manufacturer__hero-facts dt",
-        ".pt-manufacturer__families small",
-        ".pt-manufacturer__comparison-list small"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/manufacturer/ManufacturerExperience.astro"
-      ]
-    },
-    {
-      "fingerprint": "color: var(--px2-accent-text)",
-      "occurrences": 3,
-      "selectors": [
-        ".px2-price__service.is-required dt",
-        ".px2-price__service.is-unknown dt",
-        ".category-fit li[data-kind=\"positive\"]"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/product-experience-2/PriceBox2.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductCategoryFitAssistant.astro"
-      ]
-    },
-    {
-      "fingerprint": "grid-template-columns:1fr 1fr",
-      "occurrences": 3,
-      "selectors": [
-        ".alternatives__grid",
-        ".community__groups",
-        ".decision-facts dl"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/product-experience-2/ProductAlternatives2.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductCommunityInsights2.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductDecisionFacts2.astro"
-      ]
-    },
-    {
-      "fingerprint": "color: var(--px2-red)",
-      "occurrences": 3,
-      "selectors": [
-        ".category-fit li[data-kind=\"negative\"]",
-        ".details__column--negative .details__eyebrow",
-        ".verdict--reference33 .verdict__tradeoff > span"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/product-experience-2/ProductCategoryFitAssistant.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductDetails2.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductVerdict2.astro"
-      ]
-    },
-    {
-      "fingerprint": "border-top:0",
-      "occurrences": 3,
-      "selectors": [
-        ".decision-facts dl > div:first-child",
-        ".decision-facts dl > div:nth-child(-n + 2)",
-        ".evidence__source-content li:first-child"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/product-experience-2/ProductDecisionFacts2.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductEvidence2.astro"
-      ]
-    },
-    {
-      "fingerprint": "background: var(--px2-surface);border-radius: 20px;border: 1px solid var(--px2-border);min-width: 0;padding: 16px",
-      "occurrences": 3,
-      "selectors": [
-        ".details > aside",
-        ".details > details",
-        ".details > section"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/product-experience-2/ProductDetails2.astro"
-      ]
-    },
-    {
-      "fingerprint": "background: var(--px2-green-soft)",
-      "occurrences": 3,
-      "selectors": [
-        ".details__health",
-        ".px2-hero__decision > div:first-child",
-        ".verdict__card.is-positive"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/product-experience-2/ProductDetails2.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductVerdict2.astro"
-      ]
-    },
-    {
-      "fingerprint": "margin-inline: auto;width: calc(100% - 2 * var(--pt-page-gutter))",
-      "occurrences": 3,
-      "selectors": [
-        ".px2 > :not(.px2-hero)",
-        ".px2__decision-zone",
-        ".px2-hero__content"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/product-experience-2/ProductExperience2.astro",
-        "apps/pfotentechnik/src/components/product-experience-2/ProductHero2.astro"
-      ]
-    },
-    {
-      "fingerprint": "background: transparent;border-radius: 0;border: 0",
-      "occurrences": 3,
-      "selectors": [
-        ".px2--reference33 :global(.decision-facts dl)",
-        ".px2--reference33 :global(.community__groups)",
-        ".px2--reference33 :global(.evidence__sources)"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/product-experience-2/ProductExperience2.astro"
-      ]
-    },
-    {
-      "fingerprint": "color: var(--px2-text)",
-      "occurrences": 3,
-      "selectors": [
-        ".px2--reference33 :global(.purchase-mistakes header span)",
-        ".px2--reference33 :global(.details__column--negative .details__eyebrow)",
-        ".px2--reference33 :global(.community__group.is-negative h3 span)"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/product-experience-2/ProductExperience2.astro"
-      ]
-    },
-    {
-      "fingerprint": "display: grid;gap: 0",
-      "occurrences": 3,
-      "selectors": [
-        ".px2--reference33 :global(.evidence__basis)",
-        ".px2--reference33 :global(.details__faq)",
-        ".product-hero-v4__desktop-gallery"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/components/product-experience-2/ProductExperience2.astro",
-        "packages/affiliate-core/src/components/product/ProductReview.astro"
-      ]
-    },
-    {
-      "fingerprint": "margin-block: 0.85rem",
-      "occurrences": 3,
-      "selectors": [
-        ".pt-legal-reading :is(p",
-        "ul",
-        "ol)"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/layouts/LegalPageLayout.astro"
-      ]
-    },
-    {
-      "fingerprint": "max-width: 100%;overflow-wrap: anywhere",
-      "occurrences": 3,
-      "selectors": [
-        ".pt-legal-reading :is(table",
-        "pre",
-        "blockquote)"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/layouts/LegalPageLayout.astro"
-      ]
-    },
-    {
-      "fingerprint": "background: var(--seo-surface);border: 1px solid var(--seo-border);color: var(--seo-text)",
-      "occurrences": 3,
-      "selectors": [
-        "button.secondary",
-        ".ops-toolbar button"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/pages/admin/seo/media.astro",
-        "apps/pfotentechnik/src/pages/admin/seo/prices.astro"
-      ]
-    },
-    {
-      "fingerprint": "color: var(--seo-muted);line-height: 1.5",
-      "occurrences": 3,
-      "selectors": [
-        ".media-candidates > header p",
-        ".media-targets > header p",
-        ".media-history p"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/pages/admin/seo/media.astro"
-      ]
-    },
-    {
-      "fingerprint": "grid-template-columns: repeat(2, 1fr)",
-      "occurrences": 3,
-      "selectors": [
-        ".media-flow ol",
-        ".media-summary dl",
-        ".ops-metrics"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/pages/admin/seo/media.astro",
-        "apps/pfotentechnik/src/pages/admin/seo/prices.astro"
-      ]
-    },
-    {
-      "fingerprint": "color:var(--seo-text-muted,#5f6875);max-width:75ch",
-      "occurrences": 3,
-      "selectors": [
-        ".ta-hero p",
-        ".ta-cluster p",
-        ".ta-opportunities p"
-      ],
-      "files": [
-        "apps/pfotentechnik/src/pages/admin/seo/topical-authority.astro"
       ]
     }
   ],

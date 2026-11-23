@@ -142,7 +142,7 @@
   "summary": {
     "canonicals": 270,
     "sitemap": 269,
-    "contextualEdges": 1326,
+    "contextualEdges": 1327,
     "zeroContextManufacturers": 0,
     "zeroContextProducts": 0,
     "productsWithoutHistoricallyIndexedContext": 56,
@@ -150,7 +150,7 @@
     "technicalIssues": 2,
     "changedFiles": 6,
     "explicitContextLinks": 12,
-    "actuallyAddedContextLinks": 21,
+    "actuallyAddedContextLinks": 22,
     "overlapCandidates": 9
   },
   "before": {
@@ -166,7 +166,7 @@
   "after": {
     "canonicals": 270,
     "sitemap": 269,
-    "contextualEdges": 1326,
+    "contextualEdges": 1327,
     "zeroContextManufacturers": 0,
     "zeroContextProducts": 0,
     "productsWithoutHistoricallyIndexedContext": 56,
@@ -431,6 +431,12 @@
       "sourceHistoricallyIndexed": true
     },
     {
+      "source": "/produkt/petlibro-granary-camera-feeder/",
+      "target": "/futterautomat-katze/",
+      "anchor": "Futterautomat für Katzen",
+      "sourceHistoricallyIndexed": false
+    },
+    {
       "source": "/pumpe-katzentrinkbrunnen-reinigen/",
       "target": "/produkt/philips-pet-series-paw3210-02/",
       "anchor": "Philips PAW3210/02",
@@ -604,7 +610,7 @@
     {
       "a": "/hersteller/mova/",
       "b": "/produkt/mova-suretrack-pro/",
-      "similarity": 0.548,
+      "similarity": 0.549,
       "sameType": false,
       "sameCluster": true,
       "sharedBlocks": [
@@ -6994,6 +7000,7 @@
         "/produkt/oneisall-2-in-1-feeder-water/",
         "/produkt/oneisall-5l-automatic-cat-feeder/",
         "/produkt/petlibro-granary-2-vision/",
+        "/produkt/petlibro-granary-camera-feeder/",
         "/produkt/petlibro-one-rfid-smart-feeder/",
         "/produkt/surefeed-microchip-pet-feeder/",
         "/so-bewerten-wir/",
@@ -7011,6 +7018,7 @@
       "contextualSources": [
         "/fuetterungszeiten-nach-alter/",
         "/produkt/cat-mate-c300/",
+        "/produkt/petlibro-granary-camera-feeder/",
         "/so-bewerten-wir/",
         "/vergleiche/beste-futterautomaten-fuer-katzen/",
         "/vergleiche/beste-futterautomaten-fuer-mehrtierhaushalte/",
@@ -7133,8 +7141,8 @@
         }
       ],
       "suggestions": [],
-      "incomingEdges": 36,
-      "contextualIncomingEdges": 9,
+      "incomingEdges": 37,
+      "contextualIncomingEdges": 10,
       "contextualOutgoing": [
         {
           "target": "/futterautomat-katze/",
@@ -14977,7 +14985,7 @@
           {
             "a": "/hersteller/mova/",
             "b": "/produkt/mova-suretrack-pro/",
-            "similarity": 0.548,
+            "similarity": 0.549,
             "sameType": false,
             "sameCluster": true,
             "sharedBlocks": [
@@ -40571,7 +40579,7 @@
           {
             "a": "/hersteller/mova/",
             "b": "/produkt/mova-suretrack-pro/",
-            "similarity": 0.548,
+            "similarity": 0.549,
             "sameType": false,
             "sameCluster": true,
             "sharedBlocks": [
@@ -50238,7 +50246,6 @@
           "Prüfe die dokumentierte Zugangskontrolle pro Tier, wenn unterschiedliche Rationen oder Diätfutter getrennt bleiben müssen.",
           "Plane den Standort passend zur dokumentierten Stromversorgung; ohne ausdrücklich belegtes Backup ist ein Weiterbetrieb bei Stromausfall nicht zugesichert.",
           "Standort, Stromversorgung und mechanische Funktion vor der ersten unbeaufsichtigten Nutzung prüfen.",
-          "PETLIBROs Aufarbeitung des App-Ausfalls im August 2026 unterscheidet fehlende Protokolle von tatsächlich verzögerten oder ausgefallenen Mahlzeiten. Das Verhalten hängt vom Modell, gespeicherten Zeitplan, Gerätezustand und Stromunterbrechungen ab. Ein App-Eintrag allein bestätigt keine Ausgabe; vor Abwesenheit mehrere reale Fütterungen und den Napf kontrollieren. Eine Ausfallquote für dieses konkrete EU-Modell ist nicht veröffentlicht.",
           "bis zu zehn Mahlzeiten täglich",
           "Automatisierte Fütterung unterstützt Routinen, ersetzt aber nicht die Kontrolle von Futteraufnahme, Gewicht und Allgemeinzustand. Veränderungen sollten nicht nur anhand von App-Protokollen beurteilt werden.",
           "Trockenfutter",
@@ -52547,7 +52554,7 @@
       "cluster": "futterautomaten",
       "title": "PETLIBRO Granary Camera Feeder im Check",
       "source": "src/content/products/petlibro-granary-camera-feeder.md",
-      "sourceSha256": "c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f",
+      "sourceSha256": "88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510",
       "description": "5-Liter-Trockenfutterautomat mit 1080p-Kamera, 145°-Weitwinkel, Nachtsicht, Zwei-Wege-Audio und PETLIBRO-App.",
       "declaredCanonical": "/produkt/petlibro-granary-camera-feeder/",
       "declaredNoindex": false,
@@ -52596,7 +52603,7 @@
         "PETLIBRO",
         "Smarte Futterautomaten"
       ],
-      "textSha256": "5a8de6aaaf2c252035ed5e4363c3d42bfa6b1eeb2bc562aea0e620d1feaa540a",
+      "textSha256": "e28574ce3e2c85e62f026e78bae5fe95b7ab97540f41534722de489afd3866ba",
       "incomingSources": [
         "/futterautomat-hund/",
         "/futterautomat-im-urlaub/",
@@ -52812,7 +52819,7 @@
           "Haushalte mit Wunsch nach Livebild und Fütterungsprotokoll",
           "Der Granary Camera Feeder verbindet einen 5-Liter-Vorratsautomaten mit 1080p-Kamera, Nachtsicht und Zwei-Wege-Audio.",
           "Cloud-Aufzeichnung kann ein kostenpflichtiges Abonnement erfordern",
-          "Die Kamera zeigt, ob ein Tier am Napf erscheint. Sie misst aber nicht zuverlässig, wie viel tatsächlich gefressen wurde."
+          "Die Kamera zeigt, ob ein Tier am Napf erscheint. Sie misst aber nicht zuverlässig, wie viel tatsächlich gefressen wurde. Der Blickwinkel ist fest: Eine schwenkbare Raumüberwachung bietet dieses Modell nicht. Das ist auch eine im externen F.A.Z.-Praxistest genannte Grenze der Kamera."
         ],
         "repeatedBlocks": [
           "Premiumoption für Katzen und kleine bis mittelgroße Hunde, wenn Fütterung, Livebild und Zwei-Wege-Audio in einem Gerät wichtiger sind als ein niedriger Preis.",
@@ -52827,7 +52834,6 @@
           "Berechne die Vorratsdauer mit der gewogenen Tagesration deiner Tiere; Liter Behältervolumen lassen sich ohne Futterdichte nicht zuverlässig in Futtertage umrechnen.",
           "Gleiche die dokumentierte Tierart und Größenfreigabe mit deinem Tier ab; eine Freigabe für kleine Tiere gilt nicht automatisch für größere Tiere.",
           "Standort, Stromversorgung und mechanische Funktion vor der ersten unbeaufsichtigten Nutzung prüfen.",
-          "PETLIBROs Aufarbeitung des App-Ausfalls im August 2026 unterscheidet fehlende Protokolle von tatsächlich verzögerten oder ausgefallenen Mahlzeiten. Das Verhalten hängt vom Modell, gespeicherten Zeitplan, Gerätezustand und Stromunterbrechungen ab. Ein App-Eintrag allein bestätigt keine Ausgabe; vor Abwesenheit mehrere reale Fütterungen und den Napf kontrollieren. Eine Ausfallquote für dieses konkrete EU-Modell ist nicht veröffentlicht.",
           "Verdichtete Muster aus mehreren Quellen, keine einzelnen Rezensionen.",
           "5 Liter Kapazität",
           "Bis zu zehn Mahlzeiten täglich",
@@ -52876,11 +52882,20 @@
           "contextual": true,
           "inMain": true,
           "automated": false
+        },
+        {
+          "target": "/futterautomat-katze/",
+          "hash": "",
+          "href": "/futterautomat-katze/",
+          "anchor": "Futterautomat für Katzen",
+          "contextual": true,
+          "inMain": true,
+          "automated": false
         }
       ],
       "main": {
-        "characters": 9744,
-        "sha256": "90bcf8033160eda9fbba4b8f1f066dd3d4ababd38be787c649956a39c72aa2ff",
+        "characters": 9989,
+        "sha256": "619133d8deeb0d3100a5c4f6f4229c66427508f4dfc806ffa78652aa8975c0a9",
         "excerpt": "1 / 4 1 / 4 PETLIBRO Granary Camera Feeder in redaktioneller Produktdarstellung Futterautomaten PETLIBRO PETLIBRO Granary Camera Feeder Premiumoption für Katzen und kleine bis mittelgroße Hunde, wenn Fütterung, Livebild und Zwei-Wege-Audio in einem Gerät wichtiger sind als ein niedriger Preis. Hervorragend Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzen und kleine bis mittelgroße Hunde Haushalte mit Wunsch nach Livebild und Fütterungsprotokoll Trockenfütterung mit bis zu zehn Mahlzeiten täglich Preis & Kaufen Affiliate-Link Amazon Bei Amazon ansehen PETLIBRO Weiß / Einzelne Schale Anschaffungspreis 169,99 € Hinterlegter Preis Bei PETLIBRO ansehe",
         "availableWithoutJavaScript": true
       },
@@ -53133,7 +53148,6 @@
           "Prüfe den dokumentierten WLAN-Frequenzbereich an deinem Router. Ein vorhandenes WLAN-Netz belegt nicht, dass das Gerät dessen Frequenzband unterstützt.",
           "Plane die Reinigung nach den freigegebenen Bauteilen; eine Spülmaschinenfreigabe einzelner Teile gilt nicht automatisch für Elektronik, Pumpe oder das gesamte Gerät.",
           "Standort, Stromversorgung und mechanische Funktion vor der ersten unbeaufsichtigten Nutzung prüfen.",
-          "PETLIBROs Aufarbeitung des App-Ausfalls im August 2026 unterscheidet fehlende Protokolle von tatsächlich verzögerten oder ausgefallenen Mahlzeiten. Das Verhalten hängt vom Modell, gespeicherten Zeitplan, Gerätezustand und Stromunterbrechungen ab. Ein App-Eintrag allein bestätigt keine Ausgabe; vor Abwesenheit mehrere reale Fütterungen und den Napf kontrollieren. Eine Ausfallquote für dieses konkrete EU-Modell ist nicht veröffentlicht.",
           "5 Liter Kapazität",
           "Bis zu zehn Mahlzeiten täglich",
           "2,4- und 5-GHz-WLAN",
@@ -53203,7 +53217,7 @@
       "cluster": "futterautomaten",
       "title": "PETLIBRO Granary WiFi Feeder im Check",
       "source": "src/content/products/petlibro-granary-wifi-feeder.md",
-      "sourceSha256": "e9b2cb1f3f7dbc7db12790126d75478305244dacb2c6f213debc150f412ce876",
+      "sourceSha256": "aeb7d37ca47dbaaa489d2d2b5189bec01f726a81aefd2b1eec116e3da584219c",
       "description": "5-Liter-Trockenfutterautomat mit PETLIBRO-App, 2,4- und 5-GHz-WLAN, bis zu zehn Mahlzeiten täglich und Batterie-Backup.",
       "declaredCanonical": "/produkt/petlibro-granary-wifi-feeder/",
       "declaredNoindex": false,
@@ -53252,7 +53266,7 @@
         "PETLIBRO",
         "Flappie"
       ],
-      "textSha256": "60869b42853e80ed4a10ad13f0462630821f821e6166856a351f0b273da0e0c5",
+      "textSha256": "a491daad9c07c4062d240ce014369b49c02d8c16cf1fc701a2717716b6e8d1db",
       "incomingSources": [
         "/futterautomat-bei-stromausfall/",
         "/futterautomat-bei-uebergewicht/",
@@ -53460,7 +53474,7 @@
           "Der Granary WiFi kombiniert fünf Liter Vorrat, bis zu zehn Mahlzeiten täglich und eine verständliche App mit Fütterungsprotokoll.",
           "nur für Trockenfutter",
           "Portionsvolumen und tatsächliches Gewicht unterscheiden sich je nach Krokettengröße, Dichte und Form.",
-          "Behälter, Ausgabekanal und Napf regelmäßig reinigen. Trockenmittelbeutel nach Herstellerintervall ersetzen."
+          "PETLIBROs Aufarbeitung des App-Ausfalls im August 2026 unterscheidet fehlende Protokolle von tatsächlich verzögerten oder ausgefallenen Mahlzeiten. Das Verhalten hängt vom Modell, gespeicherten Zeitplan, Gerätezustand und Stromunterbrechungen ab. Ein App-Eintrag allein bestätigt keine Ausgabe; vor Abwesenheit mehrere reale Fütterungen und den Napf kontrollieren. Eine Ausfallquote für dieses konkrete EU-Modell ist nicht veröffentlicht. Für AF103/PLAF103 dokumentiert PETLIBRO ab Firmware V1.0.58 weitere Ausgaben trotz Blockierungswarnung. Auslass und Anti-Verstopfungssensor trocken reinigen und kontrollieren, ob tatsächlich Futter fällt. Die Warnung darf laut Hilfe erst bei normaler Ausgabe optional deaktiviert werden. Ein aktiver Zeitplan beseitigt keine mechanische Blockade. Ein Veröffentlichungsdatum dieser Firmware ist nicht belegt; die Angabe gilt nicht automatisch für Kamera-, Dual- oder Granary-2-Modelle."
         ],
         "repeatedBlocks": [
           "Ausgewogener Trockenfutter-Allrounder für Katzen und kleine bis mittelgroße Hunde, wenn flexible Zeitpläne, App-Protokolle und ein großer Vorrat wichtiger sind als Kamera oder Zugangskontrolle.",
@@ -53476,7 +53490,6 @@
           "Prüfe den dokumentierten WLAN-Frequenzbereich an deinem Router. Ein vorhandenes WLAN-Netz belegt nicht, dass das Gerät dessen Frequenzband unterstützt.",
           "Plane die Reinigung nach den freigegebenen Bauteilen; eine Spülmaschinenfreigabe einzelner Teile gilt nicht automatisch für Elektronik, Pumpe oder das gesamte Gerät.",
           "Standort, Stromversorgung und mechanische Funktion vor der ersten unbeaufsichtigten Nutzung prüfen.",
-          "PETLIBROs Aufarbeitung des App-Ausfalls im August 2026 unterscheidet fehlende Protokolle von tatsächlich verzögerten oder ausgefallenen Mahlzeiten. Das Verhalten hängt vom Modell, gespeicherten Zeitplan, Gerätezustand und Stromunterbrechungen ab. Ein App-Eintrag allein bestätigt keine Ausgabe; vor Abwesenheit mehrere reale Fütterungen und den Napf kontrollieren. Eine Ausfallquote für dieses konkrete EU-Modell ist nicht veröffentlicht.",
           "Verdichtete Muster aus mehreren Quellen, keine einzelnen Rezensionen.",
           "5 Liter Kapazität",
           "bis zu zehn Mahlzeiten täglich",
@@ -53529,8 +53542,8 @@
         }
       ],
       "main": {
-        "characters": 9093,
-        "sha256": "03d061e969c3dbe3cfd4ea75a0da8160cc5d521939a0eed85d4deb547fe57f4f",
+        "characters": 9578,
+        "sha256": "fc24a6d0ffdc10f3d3333edeab05ac8202569e9c82cb48b105ef1f6b6d4f811b",
         "excerpt": "1 / 4 1 / 4 PETLIBRO Granary WiFi Feeder in redaktioneller Produktdarstellung Futterautomaten PETLIBRO PETLIBRO Granary WiFi Feeder Ausgewogener Trockenfutter-Allrounder für Katzen und kleine bis mittelgroße Hunde, wenn flexible Zeitpläne, App-Protokolle und ein großer Vorrat wichtiger sind als Kamera oder Zugangskontrolle. Sehr gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Katzen kleine bis mittelgroße Hunde Trockenfütterung mit bis zu zehn Mahlzeiten täglich Preis & Kaufen Affiliate-Link Amazon Bei Amazon ansehen PETLIBRO Weiß / Einzelne Schale Anschaffungspreis 109,99 € Hinterlegter Preis Bei PETLIBRO ansehen Preis und Verfügbarkeit beim Händl",
         "availableWithoutJavaScript": true
       },
@@ -53833,7 +53846,7 @@
       "cluster": "futterautomaten",
       "title": "PETLIBRO One RFID Smart Feeder Test",
       "source": "src/content/products/petlibro-one-rfid-smart-feeder.md",
-      "sourceSha256": "8cf1adcb850f8f76e64a1272ac182bb53ef80497d9d32aec6d24745c7981e4a2",
+      "sourceSha256": "5cbd7fe044096359b6a52f105bf89d040ec27a9745d8e08f7d5924728a895f61",
       "description": "Der PETLIBRO One RFID Smart Feeder kombiniert automatische Fütterung mit einem geschützten Napfzugang und eignet sich ideal für Mehrkatzenhaushalte.",
       "declaredCanonical": "/produkt/petlibro-one-rfid-smart-feeder/",
       "declaredNoindex": false,
@@ -53850,7 +53863,7 @@
       "headings": [
         "Preis & Kaufen",
         "Was im Alltag wirklich zählt",
-        "Verhindert Futterdiebstahl zuverlässig",
+        "RFID-Zugang für das zugeordnete Tier; Mitfressen bleibt zu prüfen",
         "Nur für Trockenfutter geeignet",
         "Passt dieses Produkt zu deinem Alltag?",
         "Beantworte die Fragen für eine persönliche Einordnung.",
@@ -53880,7 +53893,7 @@
         "PETLIBRO",
         "Flappie"
       ],
-      "textSha256": "38d44df685961050360afd01cc88ab69b7a61efe6cd95215533dcbb1b08c6982",
+      "textSha256": "71751c4c7484c345c551cff56f357aaa0e4272945be6bf61ede3a818b17adfe0",
       "incomingSources": [
         "/futterautomat-katze/",
         "/hersteller/petlibro/",
@@ -53949,7 +53962,7 @@
         "headings": [
           "Preis & Kaufen",
           "Was im Alltag wirklich zählt",
-          "Verhindert Futterdiebstahl zuverlässig",
+          "RFID-Zugang für das zugeordnete Tier; Mitfressen bleibt zu prüfen",
           "Nur für Trockenfutter geeignet",
           "Passt dieses Produkt zu deinem Alltag?",
           "Beantworte die Fragen für eine persönliche Einordnung.",
@@ -54037,7 +54050,7 @@
             "value": "Nicht vom Hersteller ausgewiesen"
           }
         ],
-        "verdict": "Eine der besten Lösungen für Mehrkatzenhaushalte, wenn jedes Tier zuverlässig nur sein eigenes Futter erhalten soll.",
+        "verdict": "Für getrennte Trockenfutterrationen mit je einem Gerät pro berechtigtem Tier; Halsbandakzeptanz und mögliches Mitfressen müssen vorab geprüft werden.",
         "recommendation": "Der PETLIBRO One RFID Smart Feeder kombiniert automatische Fütterung mit einem geschützten Napfzugang und eignet sich ideal für Mehrkatzenhaushalte.",
         "specificBlocks": [
           "Der PETLIBRO One RFID Smart Feeder kombiniert automatische Fütterung mit einem geschützten Napfzugang und eignet sich ideal für Mehrkatzenhaushalte.",
@@ -54127,8 +54140,8 @@
         }
       ],
       "main": {
-        "characters": 8792,
-        "sha256": "e1cf3c95d0ee8db761400a8495b99465e385f155e01bc56cd2ec1e5f7b184f08",
+        "characters": 9368,
+        "sha256": "4450bb5a5e210c29af9e3dd64739f2aad0b39be4fbc931a166a618704e83c718",
         "excerpt": "1 / 4 1 / 4 PETLIBRO One RFID Smart Feeder in redaktioneller Produktdarstellung Futterautomaten PETLIBRO PETLIBRO One RFID Smart Feeder Der PETLIBRO One RFID Smart Feeder kombiniert automatische Fütterung mit einem geschützten Napfzugang und eignet sich ideal für Mehrkatzenhaushalte. Gut Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. katze mehrere-tiere app Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 141,54 € Hinterlegter Preis Bei Amazon ansehen PETLIBRO 1 Paket / Schwarz Anschaffungspreis 199,99 € Hinterlegter Preis Bei PETLIBRO ansehen Preis und Verfügbarkeit beim Händler prüfen. Bei einem Kauf über diese Links erhalten wir ggf. eine Pro",
         "availableWithoutJavaScript": true
       },
@@ -54968,7 +54981,6 @@
           "Bluetooth belegt eine Verbindung im Nahbereich; ein Fernzugriff von unterwegs ist damit allein nicht zugesichert.",
           "Plane die Reinigung nach den freigegebenen Bauteilen; eine Spülmaschinenfreigabe einzelner Teile gilt nicht automatisch für Elektronik, Pumpe oder das gesamte Gerät.",
           "Standort, Stromversorgung und mechanische Funktion vor der ersten unbeaufsichtigten Nutzung prüfen.",
-          "PETLIBROs Aufarbeitung des App-Ausfalls im August 2026 unterscheidet fehlende Protokolle von tatsächlich verzögerten oder ausgefallenen Mahlzeiten. Das Verhalten hängt vom Modell, gespeicherten Zeitplan, Gerätezustand und Stromunterbrechungen ab. Ein App-Eintrag allein bestätigt keine Ausgabe; vor Abwesenheit mehrere reale Fütterungen und den Napf kontrollieren. Eine Ausfallquote für dieses konkrete EU-Modell ist nicht veröffentlicht.",
           "Verdichtete Muster aus mehreren Quellen, keine einzelnen Rezensionen.",
           "Nur für Trockenfutter geeignet",
           "Automatisierte Fütterung unterstützt Routinen, ersetzt aber nicht die Kontrolle von Futteraufnahme, Gewicht und Allgemeinzustand. Veränderungen sollten nicht nur anhand von App-Protokollen beurteilt werden.",
@@ -60323,7 +60335,7 @@
       "cluster": "gps-tracker",
       "title": "Tractive CAT 6 Mini: Akku, Abo, Gewicht & Preis",
       "source": "src/content/products/tractive-cat-6-mini.md",
-      "sourceSha256": "d6cc0f25e11e4e2458b0ef312ff68a1acc841418ea01e8edaa19ae40101fbbf8",
+      "sourceSha256": "9cbb99399fb6d7b1f90c20750d76d7b1ce79589aaa18553a8c37fb10564a35aa",
       "description": "In ein Sicherheitshalsband integrierter LTE-GPS-Tracker für Katzen von 3 bis 8 kg mit 32 g Gesamtgewicht, IP68 und bis zu sieben Tagen Akkulaufzeit mit Energiesparzone.",
       "declaredCanonical": "/produkt/tractive-cat-6-mini/",
       "declaredNoindex": false,
@@ -60372,7 +60384,7 @@
         "Tractive",
         "Flappie"
       ],
-      "textSha256": "a24a0bf3b31daf0be77affe35e336deff2307bad9ab134e14a084c38ffe04334",
+      "textSha256": "e3b747fb9c64e0e2e7000f79c4b61841c5513357275250f3bba8223245c0cfe9",
       "incomingSources": [
         "/gps-tracker-richtig-befestigen/",
         "/gps-tracker/",
@@ -60620,8 +60632,8 @@
         }
       ],
       "main": {
-        "characters": 12077,
-        "sha256": "d3fcfb36433a5a776086aa0860f2c99cc477ff63204804d9866435b3b6f833b2",
+        "characters": 12167,
+        "sha256": "3fcda50aac45dd205a03f5be7d123c5af9a10397458ac6f172f2c377f3011b07",
         "excerpt": "1 / 4 1 / 4 Katze mit einem runden, in das Sicherheitshalsband integrierten GPS-Tracker GPS-Tracker Tractive Tractive CAT 6 Mini Starke Gesamtlösung für Freigängerkatzen von 3 bis 8 kg, wenn eine integrierte, ergonomische Halsbandlösung mit Live-Ortung und Gesundheitsdaten wichtiger ist als Abo-Freiheit oder ein frei wählbares Halsband. Hervorragend Redaktionelle Eignungsbewertung anhand dokumentierter Quellen; kein eigener Praxistest. Freigängerkatzen von 3 bis 8 kg integrierte Halsbandlösung Live-Ortung und virtuelle Zäune Preis & Kaufen Affiliate-Link Amazon Anschaffungspreis 69,00 € Hinterlegter Preis Bei Amazon ansehen Preis und Verfügbarkeit beim Händler prüfen. Laufende Kosten Abo erf",
         "availableWithoutJavaScript": true
       },
@@ -87241,7 +87253,7 @@
       "cluster": "gps-tracker",
       "title": "Wie funktionieren GPS-Tracker für Haustiere?",
       "source": "src/content/pages/wie-funktionieren-gps-tracker.md",
-      "sourceSha256": "05c7ea0d7ab0345ce34864fa58f548d9df4e805e3dba4f20dfd18f9253425f4e",
+      "sourceSha256": "5ddfd8c9f573be761bd9efe285abdc37a16416d2961b62677531a23d636e6ce9",
       "description": "GPS-Tracker verständlich erklärt: Satellitenposition, Mobilfunk oder VHF, App, Live-Modus, Geozaun, Akku und typische Ausfälle.",
       "declaredCanonical": null,
       "declaredNoindex": false,
@@ -87271,7 +87283,7 @@
         "Warum brauchen Tracker ein Abo?",
         "GPS-Tracker für Hunde und Katzen"
       ],
-      "textSha256": "4b452af7e40a9a58b42ae67115c55134d248057647f4cdc512d1aebd999ddadb",
+      "textSha256": "674ba593e5e47509d19eedbf1c5dc7ec04132d38d25cbd77930301d80e979dfc",
       "incomingSources": [
         "/gps-tracker/",
         "/reichweite-von-gps-trackern/",
@@ -87455,9 +87467,9 @@
         }
       ],
       "main": {
-        "characters": 6934,
-        "sha256": "daf6dba4b6522f34a8b819344f33f70e0cf6c9e523b4d1df4829b8d7f4fcf688",
-        "excerpt": "Startseite Wissen Wie funktionieren GPS-Tracker? Ratgeber · Technik verstehen Wie funktionieren GPS-Tracker? Der Tracker empfängt Zeitsignale mehrerer Satelliten und berechnet daraus seine Position. Anschließend sendet er sie über Mobilfunk an einen Server oder per VHF an ein Handgerät. Erst dann erscheint sie auf der Karte. Fällt eine Stufe aus, kann die App trotz funktionierendem GPS veraltet bleiben. PfotenTechnik Redaktion Redaktion für smarte Haustiertechnik Veröffentlicht: 20. Juli 2026 Zuletzt aktualisiert: 24. August 2026 Lesezeit: 2 Min. Zur Erklärung Direkte Orientierung Der entscheidende Unterschied 01 Satelliten liefern Signale; der Tracker berechnet seine Position selbst. 02 Mob",
+        "characters": 7329,
+        "sha256": "8f236ac1ff861abca83cc72c28a9e6a182a683465b4c9960cc877936365b7ca1",
+        "excerpt": "Startseite Wissen Wie funktionieren GPS-Tracker? Ratgeber · Technik verstehen Wie funktionieren GPS-Tracker? Der Tracker empfängt Zeitsignale mehrerer Satelliten und berechnet daraus seine Position. Anschließend sendet er sie über Mobilfunk an einen Server oder per VHF an ein Handgerät. Erst dann erscheint sie auf der Karte. Fällt eine Stufe aus, kann die App trotz funktionierendem GPS veraltet bleiben. PfotenTechnik Redaktion Redaktion für smarte Haustiertechnik Veröffentlicht: 20. Juli 2026 Zuletzt aktualisiert: 24. August 2026 Lesezeit: 3 Min. Zur Erklärung Direkte Orientierung Der entscheidende Unterschied 01 Satelliten liefern Signale; der Tracker berechnet seine Position selbst. 02 Mob",
         "availableWithoutJavaScript": true
       },
       "structuredData": {

@@ -1,3 +1,4 @@
+import {isPublishedProduct} from '../src/domain/productPublication.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -149,14 +150,16 @@ test('all built product pages retain exact merchant URLs, metadata hooks and saf
   assert.ok(files.length>0);
   for(const file of files){
     const {data}=await readProductDocument(file);
-    const html=fs.readFileSync(new URL(`../dist/produkt/${data.slug}/index.html`,import.meta.url),'utf8');
+    const builtUrl=new URL(`../dist/produkt/${data.slug}/index.html`,import.meta.url);
+    if(!isPublishedProduct(data)){assert.equal(fs.existsSync(builtUrl),false,data.slug+': draft must remain absent');continue;}
+    const html=fs.readFileSync(builtUrl,'utf8');
     const boxes=byClass(parseFragment(html),'px2-price');assert.equal(boxes.length,1,data.slug);
     const box=boxes[0];const expected=compareCommerceOffers(resolveCommerceOffers(data)).offers;
     const links=byClass(box,'px2-price__cta').filter(n=>n.tagName==='a');
     assert.deepEqual(links.map(n=>attr(n,'href')),expected.map(o=>o.affiliateUrl),data.slug);
     assert.equal(text(box).match(/Preis und Verfügbarkeit beim Händler prüfen/g)?.length??0,expected.length?1:0,data.slug);
     if(attr(box,'data-availability')==='unknown')assert.equal(byClass(box,'px2-availability').length,0,data.slug);
-    for(const a of links){assert.match(attr(a,'rel'),/sponsored/,data.slug);assert.equal(attr(a,'data-cta-kind'),'regular');assert.equal(attr(a,'data-product'),data.slug);}
+    for(const [i,a] of links.entries()){assert.equal(attr(a,'rel'),expected[i].rel,data.slug);assert.equal(/\bsponsored\b/.test(attr(a,'rel')),expected[i].commissionEligible!==false,data.slug+': paid versus official destination');assert.equal(attr(a,'data-cta-kind'),'regular');assert.equal(attr(a,'data-product'),data.slug);}
     if(data.subscription?.status==='no-subscription')assert.equal(byClass(box,'px2-price__service').length,0,data.slug);
   }
 });
@@ -170,7 +173,9 @@ test('a legacy price in a different currency is not assigned to a domestic merch
 test('all built heroes keep complete product names, source-backed chips and the secondary comparison link',async()=>{
   for(const file of await readProductFiles(fileURLToPath(new URL('../src/content/products/',import.meta.url)))){
     const {data}=await readProductDocument(file);
-    const root=parseFragment(fs.readFileSync(new URL(`../dist/produkt/${data.slug}/index.html`,import.meta.url),'utf8'));
+    const builtUrl=new URL(`../dist/produkt/${data.slug}/index.html`,import.meta.url);
+    if(!isPublishedProduct(data)){assert.equal(fs.existsSync(builtUrl),false,data.slug+': draft must remain absent');continue;}
+    const root=parseFragment(fs.readFileSync(builtUrl,'utf8'));
     const headings=nodes(root).filter(n=>n.tagName==='h1');assert.equal(headings.length,1,data.slug);assert.equal(text(headings[0]),data.title,data.slug);
     const hero=byClass(root,'px2-hero')[0];const chips=byClass(hero,'px2-hero__suitability')[0];
     const items=nodes(chips).filter(n=>n.tagName==='li');assert.ok(items.length<=3,data.slug);

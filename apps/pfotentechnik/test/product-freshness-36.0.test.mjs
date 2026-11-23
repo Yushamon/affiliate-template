@@ -1,3 +1,4 @@
+import {readBeforeEvidence,dataBeforeEvidence} from '../scripts/product-evidence/approved-changes.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -22,6 +23,7 @@ const attr=(n,k)=>n.attrs?.find(a=>a.name===k)?.value;
 const normalized=s=>String(s).replace(/\s/g,'');
 const store=parseStore(fs.readFileSync(path.join(app,'.astro-cache/data-store.json'),'utf8')).get('products');
 const document=async slug=>(await readProductDocument(path.join(app,'src/content/products',slug+'.md'))).data;
+const historicalDocument=async slug=>dataBeforeEvidence(path.join(app,'src/content/products',slug+'.md'),await document(slug));
 const dom=slug=>parse(fs.readFileSync(path.join(app,'dist/produkt',slug,'index.html'),'utf8'));
 
 test('36.0: alle aktiven Modelle haben drei protokollierte Recherchepfade',()=>{
@@ -33,18 +35,18 @@ test('36.0: alle aktiven Modelle haben drei protokollierte Recherchepfade',()=>{
 test('36.0: selektive Änderungen reproduzierbar, keine pauschale Neufassung',async()=>{
  assert.deepEqual(await applyDecisions(false),changes);assert.equal(changes.products.length,33);
  const original=JSON.parse(fs.readFileSync(path.join(root,'originals.json')));
- for(const p of changes.products){assert.equal(sha(original[p.file]),p.beforeSha256);assert.equal(sha(fs.readFileSync(path.join(app,p.file))),p.afterSha256);assert.ok(p.reason);assert.ok(Object.keys(p.changedFields).length)}
+ for(const p of changes.products){assert.equal(sha(original[p.file]),p.beforeSha256);assert.equal(sha(readBeforeEvidence(path.join(app,p.file))),p.afterSha256);assert.ok(p.reason);assert.ok(Object.keys(p.changedFields).length)}
  assert.equal(approvedFreshnessChanges().size,37);
 });
 
 test('36.0: alle URLs, SEO-Felder, Kaufziele, Preise und 437 Originalhinweise geschützt',async()=>{
  const facts=[];
- for(const p of baseline.products){const d=await document(p.slug);
+ for(const p of baseline.products){const d=await historicalDocument(p.slug);
   const change=changes.products.find(c=>c.slug===p.slug);
   for(const [key,value]of Object.entries(p.data))if(!change?.changedFields[key])assert.deepEqual(d[key],value,p.slug+': unverändertes Bestandsfeld '+key);
   for(const k of ['slug','productUrl','seo','affiliate','price','offers','publishedAt','publicationStatus','publicationBlockers','decisionFacts'])assert.deepEqual(d[k],p.data[k],p.slug+'.'+k);
   if(d.decisionFacts?.length)facts.push([p.slug,d.decisionFacts]);
-  if(!changes.products.some(c=>c.slug===p.slug))assert.equal(sha(fs.readFileSync(path.join(app,p.file))),p.sha256,p.slug+': unbeabsichtigte Änderung');
+  if(!changes.products.some(c=>c.slug===p.slug))assert.equal(sha(readBeforeEvidence(path.join(app,p.file))),p.sha256,p.slug+': unbeabsichtigte Änderung');
  }
  const originals=JSON.parse(fs.readFileSync(path.join(root,'originals.json')));
  const block=source=>source.match(/^decisionFacts:.*(?:\n(?:[ \t].*|$))*/m)?.[0];

@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
+import yaml from "js-yaml";
 import { fileURLToPath } from "node:url";
 const app=path.resolve(path.dirname(fileURLToPath(import.meta.url)),"..");
 const read=(p)=>fs.readFileSync(path.join(app,p),"utf8");
@@ -14,10 +15,18 @@ test("Batch 3 befüllt die letzten zwei Produkte der ersten Research-Queue",()=>
 });
 
 test("DOG 6 XL wird nicht fälschlich als hands-on getestet dargestellt",()=>{
-  const s=read(xl);
-  assert.doesNotMatch(s,/methodology: "hands-on"/);
-  assert.match(s,/kein Langzeit- oder Hands-on-Test/);
-  assert.match(s,/Plattformwert\s+selbst ist aber nicht produktspezifisch/);
+  const s=read(xl), data=yaml.load(s.match(/^---\s*\n([\s\S]*?)\n---/)[1]);
+  assert.equal(data.testStatus,'manufacturer-data');
+  assert.notEqual(data.editorial?.testedHandsOn,true);
+  assert.match(s,/kein eigener Praxis- oder Langzeittest/);
+  const launch=data.externalEvidence.professionalReviews.find(r=>r.publisher==='The Verge');
+  assert.equal(launch.methodology,'editorial-review');
+  assert.match(JSON.stringify(launch),/kein Langzeit- oder Hands-on-Test/);
+  const measured=data.externalEvidence.professionalReviews.find(r=>r.publisher==='CHIP');
+  assert.equal(measured.methodology,'lab-test');
+  assert.match(measured.url,/^https:\/\/www\.chip\.de\//);
+  assert.match(data.externalEvidence.note,/Kein eigener PfotenTechnik-Praxistest/);
+  assert.match(data.externalEvidence.note,/keine Übernahme fremder Noten/);
 });
 
 test("Oneisall Kooperation ist transparent gekennzeichnet",()=>{

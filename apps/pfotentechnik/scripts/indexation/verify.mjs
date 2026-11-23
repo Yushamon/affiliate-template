@@ -1,3 +1,4 @@
+import {buildStyleScopeProof} from '../product-evidence/style-scope-proof.mjs';
 import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {gunzipSync} from 'node:zlib';
 import {protectedHtmlAt} from '../product-integration/protected-snapshots.mjs';
 import {imageAliasNormalizer} from './image-aliases.mjs';
@@ -6,8 +7,8 @@ const root=path.join(app,'research/indexation-improvements-36.1');
 export async function verifyIndexation({rollback=false}={}){
  const baseline=JSON.parse(gunzipSync(fs.readFileSync(path.join(root,'baseline.json.gz')))),after=scanBuild(),byRoute=new Map(after.pages.map(p=>[p.route,p]));
  const priceSources=sourceInventory().filter(s=>s.collection==='products');
- const protectedRoutes=Object.keys(baseline.protectedHtml),problems=[],changedSources=new Set();let htmlByteEqual=0,htmlEquivalent=0;const images=imageAliasNormalizer();
- for(const route of protectedRoutes){const raw=fs.readFileSync(path.join(app,'dist','.'+route,'index.html'),'utf8');if(raw===baseline.protectedHtml[route])htmlByteEqual++;const projection=protectedHtmlAt(raw,baseline.protectedHtml[route],{data:priceSources.find(p=>p.route===route)?.data,products:priceSources.map(p=>p.data),snapshotAt:'2026-11-16T12:00:00.000Z',renderedAt:fs.statSync(path.join(app,'dist','.'+route,'index.html')).mtime});if(images.normalize(projection.current)===images.normalize(projection.baseline))htmlEquivalent++;else problems.push({route,code:'PROTECTED_HTML_CHANGED'});
+ const protectedRoutes=Object.keys(baseline.protectedHtml),problems=[],changedSources=new Set();let htmlByteEqual=0,htmlEquivalent=0;const images=imageAliasNormalizer(),styles=buildStyleScopeProof();
+ for(const route of protectedRoutes){const raw=fs.readFileSync(path.join(app,'dist','.'+route,'index.html'),'utf8');if(raw===baseline.protectedHtml[route])htmlByteEqual++;const projection=protectedHtmlAt(raw,baseline.protectedHtml[route],{data:priceSources.find(p=>p.route===route)?.data,products:priceSources.map(p=>p.data),snapshotAt:'2026-11-16T12:00:00.000Z',renderedAt:fs.statSync(path.join(app,'dist','.'+route,'index.html')).mtime});if(images.normalize(styles.normalize(projection.current))===images.normalize(styles.normalize(projection.baseline,{historical:true})))htmlEquivalent++;else problems.push({route,code:'PROTECTED_HTML_CHANGED'});
   const edges=pages=>Object.fromEntries(pages.map(p=>[p.route,p.links.filter(l=>l.target===route).length]).filter(([,n])=>n));
   const old=edges(baseline.pages),now=edges(after.pages);for(const source of new Set([...Object.keys(old),...Object.keys(now)]))if(old[source]!==now[source]){problems.push({route,source,code:'PROTECTED_INCOMING_CHANGED'});changedSources.add(source)}
  }

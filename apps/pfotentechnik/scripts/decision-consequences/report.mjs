@@ -1,3 +1,4 @@
+import {readBeforeEvidence} from '../product-evidence/approved-changes.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import assert from 'node:assert/strict';
@@ -21,7 +22,7 @@ const outputAudit=(data,facts,published)=>reviewRenderedConsequences(data,facts)
 const products=[];
 for(const old of baseline.products){
  const file=path.join(app,'src/content/products',old.slug+'.md');
- assert.equal(createHash('sha256').update(fs.readFileSync(file)).digest('hex'),old.sourceSha256,old.slug+': Produktdatei verändert');
+ assert.equal(createHash('sha256').update(readBeforeEvidence(file)).digest('hex'),old.sourceSha256,old.slug+': Produktdatei verändert');
  const data=store.get(old.slug)?.data;
  assert.ok(data,old.slug+': fehlt im Content-Speicher');
  const assessment=inspectDecisionFacts(data),generated=buildDecisionFacts(data,data.specs??[]),rendered=renderedFacts(old.slug);

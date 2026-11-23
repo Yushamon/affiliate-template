@@ -1,3 +1,4 @@
+import {readBeforeEvidence} from '../product-evidence/approved-changes.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -19,7 +20,7 @@ export async function verifyIntegration(dist=path.join(app,'dist')){
  const baseline=JSON.parse(fs.readFileSync(path.join(app,'research/product-integration-35.8/baseline.json')));
  const allowed=new Set(['tractive-dog-6','invoxia-biotracker-2026','petlibro-granary-2-vision'].map(s=>`src/content/products/${s}.md`));
  const freshness=approvedFreshnessChanges(),indexation=approvedIndexationChanges();
- let unchangedSources=0;for(const [file,hash] of Object.entries(baseline.sources)){if(allowed.has(file))continue;const approved=indexation.get(file)??freshness.get(file);if(approved){assert.equal(approved.beforeSha256,hash,`${file}: Einzelausnahme muss am bisherigen Ausgangsstand ansetzen`);continue}assert.equal(createHash('sha256').update(fs.readFileSync(path.join(app,file))).digest('hex'),hash,`${file}: unbeabsichtigte Inhaltsänderung`);unchangedSources++}
+ let unchangedSources=0;for(const [file,hash] of Object.entries(baseline.sources)){if(allowed.has(file))continue;const approved=indexation.get(file)??freshness.get(file);if(approved){assert.equal(approved.beforeSha256,hash,`${file}: Einzelausnahme muss am bisherigen Ausgangsstand ansetzen`);continue}assert.equal(createHash('sha256').update(readBeforeEvidence(path.join(app,file))).digest('hex'),hash,`${file}: unbeabsichtigte Inhaltsänderung`);unchangedSources++}
  const incoming={},snapshots={},htmlByRoute=new Map();
  const snapshotAt=manifest.asOf+'T12:00:00.000Z';
  const priceProducts=await Promise.all(fs.readdirSync(path.join(app,'src/content/products')).filter(f=>f.endsWith('.md')).map(async f=>(await readProductDocument(path.join(app,'src/content/products',f))).data));

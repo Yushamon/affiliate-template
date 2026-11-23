@@ -1,3 +1,4 @@
+import {readBeforeEvidence} from '../product-evidence/approved-changes.mjs';
 // Apply only the individually researched decisions, never rewrite the product collection.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -23,10 +24,12 @@ export async function applyDecisions(write=false){
  const records=[];
  const originals=fs.existsSync(path.join(root,'originals.json'))?JSON.parse(fs.readFileSync(path.join(root,'originals.json'))):{};
  const previous=fs.existsSync(path.join(root,'changes.json'))?JSON.parse(fs.readFileSync(path.join(root,'changes.json'))):null;
+ if(write)for(const decision of decisions(baseline)){const file=path.join(app,'src/content/products',decision.slug+'.md');assert.equal(fs.readFileSync(file,'utf8'),readBeforeEvidence(file,'utf8'),decision.slug+': spätere Evidenzänderung darf nicht überschrieben werden');}
  for(const decision of decisions(baseline)){
   const p=baseline.products.find(p=>p.slug===decision.slug);assert.ok(p,decision.slug);
   assert.ok(!protectedSlugs.has(`/produkt/${p.slug}/`),'35.5: '+p.slug);
-  const file=path.join(app,p.file),current=fs.readFileSync(file,'utf8');
+  const file=path.join(app,p.file),current=readBeforeEvidence(file,'utf8');
+  if(write)assert.equal(fs.readFileSync(file,'utf8'),current,p.slug+': spätere Evidenzänderung darf nicht überschrieben werden');
   const oldRecord=previous?.products.find(r=>r.slug===p.slug);
   assert.ok(hash(current)===p.sha256||hash(current)===oldRecord?.afterSha256,p.slug+': Ausgangsdatei inzwischen geändert');
   const before=originals[p.file]??current;assert.equal(hash(before),p.sha256,p.slug+': gesichertes Original stimmt nicht');

@@ -39,14 +39,15 @@ images:
     - src: "../../assets/images/products/catit-pixi-smart-trinkbrunnen/gallery-5.webp"
       alt: "Catit PIXI Smart-Trinkbrunnen – Produktansicht 4"
 price:
-  current: 83.89
+  current: 79.98
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-17T14:30:24.155Z"
+  changedAt: "2026-11-23T12:18:41.814Z"
+  checkedAt: "2026-11-23T12:18:41.814Z"
   source:
-    id: "manual"
-    label: "Catit"
-    type: "manual"
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 priceAutomation: "automatic"
 rating: 3.9
 affiliate:
@@ -57,14 +58,13 @@ affiliate:
   target: "_blank"
 
 priceState: "available"
-priceUpdated: "2026-08-17T14:30:24.155Z"
+priceUpdated: "2026-11-23T12:18:41.814Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"
-availabilityUpdated: "2026-08-17T14:30:24.155Z"
 editorialStatus: "complete"
 recommendationStatus: "limited"
-maintenanceStatus: "complete"
+maintenanceStatus: "required"
 
 ratings:
   lautstaerke: 4.7

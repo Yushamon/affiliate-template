@@ -1,0 +1,148 @@
+{
+  "checkedAt": "2026-11-23T11:36:25.519200+00:00",
+  "results": [
+    {
+      "name": "app-tests",
+      "command": [
+        "npm",
+        "--workspace",
+        "apps/pfotentechnik",
+        "test"
+      ],
+      "exitCode": 1
+    },
+    {
+      "name": "core-tests",
+      "command": [
+        "npm",
+        "run",
+        "test:affiliate"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "content-quality",
+      "command": [
+        "node",
+        "apps/pfotentechnik/scripts/content-quality/audit.mjs",
+        "--strict"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "editorial-lint",
+      "command": [
+        "npm",
+        "--workspace",
+        "apps/pfotentechnik",
+        "run",
+        "lint:content:strict"
+      ],
+      "exitCode": 1
+    },
+    {
+      "name": "url-consistency",
+      "command": [
+        "node",
+        "apps/pfotentechnik/scripts/seo/audit-url-consistency.mjs",
+        "--strict"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "build-output",
+      "command": [
+        "node",
+        "apps/pfotentechnik/scripts/seo/audit-release-build-output.mjs",
+        "--strict"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "internal-links",
+      "command": [
+        "node",
+        "scripts/audit-internal-links.mjs",
+        "--strict"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "internal-targets",
+      "command": [
+        "node",
+        "apps/pfotentechnik/scripts/audit-internal-link-targets.mjs",
+        "--strict"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "comparison-schema",
+      "command": [
+        "node",
+        "apps/pfotentechnik/scripts/seo/audit-comparison-product-schema.mjs"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "editorial-transparency",
+      "command": [
+        "node",
+        "apps/pfotentechnik/scripts/audit-editorial-transparency.mjs"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "product-data",
+      "command": [
+        "node",
+        "apps/pfotentechnik/scripts/audit-product-data.mjs",
+        "--strict"
+      ],
+      "exitCode": 1
+    },
+    {
+      "name": "product-operations",
+      "command": [
+        "node",
+        "apps/pfotentechnik/scripts/product-operations/audit.mjs",
+        "--strict"
+      ],
+      "exitCode": 1
+    },
+    {
+      "name": "product-standard",
+      "command": [
+        "node",
+        "apps/pfotentechnik/scripts/product-standard-3/audit.mjs",
+        "--strict"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "scores",
+      "command": [
+        "node",
+        "scripts/audit-pfotentechnik-product-scores.mjs"
+      ],
+      "exitCode": 1
+    },
+    {
+      "name": "ratings",
+      "command": [
+        "npm",
+        "run",
+        "ratings:check"
+      ],
+      "exitCode": 1
+    },
+    {
+      "name": "findings",
+      "command": [
+        "node",
+        "apps/pfotentechnik/scripts/product-evidence/check-findings.mjs"
+      ],
+      "exitCode": 0
+    }
+  ]
+}

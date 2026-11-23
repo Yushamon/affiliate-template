@@ -126,7 +126,7 @@ externalEvidence:
         - "Ein Nutzer kritisiert die Napfgeometrie, weil Futter nach hinten geschoben werden kann und dann schlechter erreichbar ist."
   consensus:
     strengths:
-      - finding: "Die RFID-Zugangskontrolle löst Futterdiebstahl und getrennte Diäten in passenden Mehrtierhaushalten überzeugend."
+      - finding: "Die RFID-Zugangskontrolle unterstützt getrennte Rationen in passenden Mehrtierhaushalten; sie garantiert keinen vollständigen Schutz vor Mitfressen."
         sourceCount: 2
         confidence: "high"
     weaknesses:
@@ -157,9 +157,9 @@ review:
   summary: >-
     Der PETLIBRO One RFID Smart Feeder kombiniert automatische Fütterung mit einem geschützten Napfzugang und eignet
     sich ideal für Mehrkatzenhaushalte.
-  verdict: Eine der besten Lösungen für Mehrkatzenhaushalte, wenn jedes Tier zuverlässig nur sein eigenes Futter erhalten soll.
+  verdict: Für getrennte Trockenfutterrationen mit je einem Gerät pro berechtigtem Tier; Halsbandakzeptanz und mögliches Mitfressen müssen vorab geprüft werden.
 strengths:
-  - Verhindert Futterdiebstahl zuverlässig
+  - RFID-Zugang für das zugeordnete Tier; Mitfressen bleibt zu prüfen
   - Automatische Portionierung und Zugangskontrolle kombiniert
   - Unterstützt 2,4- und 5-GHz-WLAN
 weaknesses:
@@ -303,6 +303,11 @@ experience:
     Das Verhalten hängt vom Modell, gespeicherten Zeitplan, Gerätezustand und Stromunterbrechungen ab. Ein
     App-Eintrag allein bestätigt keine Ausgabe; vor Abwesenheit mehrere reale Fütterungen und den Napf
     kontrollieren. Eine Ausfallquote für dieses konkrete EU-Modell ist nicht veröffentlicht.
+    Für den One RFID AF301/PLAF301 nennt PETLIBRO Firmware V2.0.27 oder höher: Eine
+    Blockierungsbenachrichtigung unterbindet die weitere Ausgabe danach nicht automatisch. Napf und Halter
+    freimachen, Krümel entfernen und die tatsächliche Ausgabe prüfen. Eine Warnung, ein weiterlaufender
+    Zeitplan und mechanisch frei ausgegebenes Futter sind verschiedene Dinge. Die Dokumentation belegt
+    keine Ausgabe durch eine echte mechanische Blockade und nennt kein Veröffentlichungsdatum der Firmware.
   maintenance: >-
     Portionen mit geeignetem Trockenfutter kalibrieren. Ein SureFeed-Napf kann implantierte Chips und
     vorbereitete Nassfutterrationen nutzen, gibt aber keine späteren Portionen aus einem Vorrat aus. Granary
@@ -325,11 +330,17 @@ evidenceSources:
     fields:
       - experience
     sourceType: manufacturer
+  - source: "PETLIBRO – One RFID: Auslasswarnung"
+    url: "https://de.petlibro.com/pages/what-should-i-do-if-the-one-rfid-feeder-food-outlet-is-blocked-or-if-there-are-foreign-objects-in-the-food-outlet-plaf301-af301"
+    accessedAt: "2026-11-23"
+    assertion: "AF301/PLAF301: ab V2.0.27 Ausgabe trotz Warnmeldung; Napf und Halter reinigen und reale Ausgabe prüfen. Firmwaredatum unbekannt."
+    fields: [experience]
+    sourceType: manufacturer
 ---
 
 Der PETLIBRO One RFID Smart Feeder kombiniert automatische Fütterung mit einem geschützten Napfzugang und eignet sich ideal für Mehrkatzenhaushalte.
 
-Eine der besten Lösungen für Mehrkatzenhaushalte, wenn jedes Tier zuverlässig nur sein eigenes Futter erhalten soll.
+Für getrennte Trockenfutterrationen mit je einem Gerät pro berechtigtem Tier; Halsbandakzeptanz und mögliches Mitfressen müssen vorab geprüft werden.
 
 ## Recherche-Update vom 16. November 2026
 

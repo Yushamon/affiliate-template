@@ -1,0 +1,52 @@
+{
+  "baselineFailures": [
+    "DOG 6 XL wird nicht fälschlich als hands-on getestet dargestellt",
+    "all built heroes keep complete product names, source-backed chips and the secondary comparison link",
+    "all built product pages retain exact merchant URLs, metadata hooks and safe public price states"
+  ],
+  "finalFailures": [
+    "35.8-Abschlussreport ist aus dem finalen Build reproduzierbar",
+    "35.9: alle 110 Dateien, Scores, Preise, Affiliate-Ziele und Originale bytegenau erhalten",
+    "35.9: alle 20 Experimentseiten und 205 eingehenden Linkkanten unverändert",
+    "35.9: vollständiger Vorher-Nachher-Report ist reproduzierbar",
+    "36.0: 35.5-Seiten und 205 Linkzugänge exakt erhalten; Vergleichsauswahl mindestens zehn",
+    "36.0: alle URLs, SEO-Felder, Kaufziele, Preise und 437 Originalhinweise geschützt",
+    "36.0: selektive Änderungen reproduzierbar, keine pauschale Neufassung",
+    "36.1: Report und Änderungen sind reproduzierbar, Baseline wird nicht überschrieben",
+    "36.1: Vorher/Nachher zeigt nur belegte Kontextverbesserungen und historische Indexquellen",
+    "36.1: alle 110 Produktdateien und 20 geschützten Seiten bleiben erhalten",
+    "37.4: historical baselines and all existing product files are byte-identical to the pre-cleanup inventory",
+    "DOG 6 XL wird nicht fälschlich als hands-on getestet dargestellt",
+    "all 110 product sources remain byte-identical, including original decisionFacts",
+    "all built heroes keep complete product names, source-backed chips and the secondary comparison link",
+    "all built product pages retain exact merchant URLs, metadata hooks and safe public price states",
+    "bestehende Scores, Teilbewertungen, SEO-Metadaten und decisionFacts bleiben exakt erhalten",
+    "built canonical prices and derived totals are current; ratings, destinations and technical hints remain protected",
+    "regulärer Build schützt Entwürfe, Experiment-Zugänge und Vergleichsmitgliedschaft",
+    "vollständiger Qualitätsreport ist reproduzierbar und erteilt keine Freigaben"
+  ],
+  "additionalSnapshotConflicts": [
+    "35.8-Abschlussreport ist aus dem finalen Build reproduzierbar",
+    "35.9: alle 110 Dateien, Scores, Preise, Affiliate-Ziele und Originale bytegenau erhalten",
+    "35.9: alle 20 Experimentseiten und 205 eingehenden Linkkanten unverändert",
+    "35.9: vollständiger Vorher-Nachher-Report ist reproduzierbar",
+    "36.0: 35.5-Seiten und 205 Linkzugänge exakt erhalten; Vergleichsauswahl mindestens zehn",
+    "36.0: alle URLs, SEO-Felder, Kaufziele, Preise und 437 Originalhinweise geschützt",
+    "36.0: selektive Änderungen reproduzierbar, keine pauschale Neufassung",
+    "36.1: Report und Änderungen sind reproduzierbar, Baseline wird nicht überschrieben",
+    "36.1: Vorher/Nachher zeigt nur belegte Kontextverbesserungen und historische Indexquellen",
+    "36.1: alle 110 Produktdateien und 20 geschützten Seiten bleiben erhalten",
+    "37.4: historical baselines and all existing product files are byte-identical to the pre-cleanup inventory",
+    "all 110 product sources remain byte-identical, including original decisionFacts",
+    "bestehende Scores, Teilbewertungen, SEO-Metadaten und decisionFacts bleiben exakt erhalten",
+    "built canonical prices and derived totals are current; ratings, destinations and technical hints remain protected",
+    "regulärer Build schützt Entwürfe, Experiment-Zugänge und Vergleichsmitgliedschaft",
+    "vollständiger Qualitätsreport ist reproduzierbar und erteilt keine Freigaben"
+  ],
+  "resolvedBaselineFailures": [],
+  "unchangedAuditLogs": {
+    "product-data": true,
+    "product-operations": true,
+    "scores": true
+  }
+}

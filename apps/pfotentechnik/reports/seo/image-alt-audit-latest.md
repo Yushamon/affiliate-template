@@ -1,7 +1,7 @@
 # Image Alt Audit 24.1.2
 
 - Modus: `source-only`
-- geprüfte Quelldateien: 122
+- geprüfte Quelldateien: 130
 - geprüfte Build-Dateien: 0
 - rohe Build-Fundstellen: 0
 - eindeutige Build-Fundstellen: 0
@@ -14,4 +14,4 @@ Keine blockierenden Alt-Text-Fehler gefunden.
 
 ## Hinweise
 
-- **INFO · IMAGE_ALT_EMPTY_DECORATIVE** `apps/pfotentechnik/src/components/product-experience-2/ProductGallery29.astro:138` – Leerer Alt-Text. Das Bild wird als dekorativ oder redundant behandelt.
+- **INFO · IMAGE_ALT_EMPTY_DECORATIVE** `apps/pfotentechnik/src/components/product-experience-2/ProductGallery29.astro:140` – Leerer Alt-Text. Das Bild wird als dekorativ oder redundant behandelt.

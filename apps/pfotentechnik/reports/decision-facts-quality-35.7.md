@@ -6084,7 +6084,7 @@ Technische Vergleichsdaten: [{"path":"specs.18.value","value":"357 × 180 × 356
 
 Datei: src/content/products/petlibro-granary-camera-feeder.md
 
-SHA-256: c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f
+SHA-256: 88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510
 
 Content-Speicher: preserved-exactly
 
@@ -6353,7 +6353,7 @@ Technische Vergleichsdaten: [{"path":"specs.10.value","value":"Netzadapter und d
 
 Datei: src/content/products/petlibro-granary-wifi-feeder.md
 
-SHA-256: e9b2cb1f3f7dbc7db12790126d75478305244dacb2c6f213debc150f412ce876
+SHA-256: aeb7d37ca47dbaaa489d2d2b5189bec01f726a81aefd2b1eec116e3da584219c
 
 Content-Speicher: preserved-exactly
 
@@ -6488,7 +6488,7 @@ Technische Vergleichsdaten: [{"path":"specs.9.value","value":"Nein"}]
 
 Datei: src/content/products/petlibro-one-rfid-smart-feeder.md
 
-SHA-256: 8cf1adcb850f8f76e64a1272ac182bb53ef80497d9d32aec6d24745c7981e4a2
+SHA-256: 5cbd7fe044096359b6a52f105bf89d040ec27a9745d8e08f7d5924728a895f61
 
 Content-Speicher: preserved-exactly
 
@@ -8131,7 +8131,7 @@ Kein Befund durch die begrenzten Regeln; redaktionelle Prüfung weiterhin offen.
 
 Datei: src/content/products/tractive-cat-6-mini.md
 
-SHA-256: d6cc0f25e11e4e2458b0ef312ff68a1acc841418ea01e8edaa19ae40101fbbf8
+SHA-256: 9cbb99399fb6d7b1f90c20750d76d7b1ce79589aaa18553a8c37fb10564a35aa
 
 Content-Speicher: preserved-exactly
 

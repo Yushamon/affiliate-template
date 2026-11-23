@@ -1,3 +1,4 @@
+import {readBeforeEvidence} from '../scripts/product-evidence/approved-changes.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -20,7 +21,7 @@ const fact=(label,value)=>({label,value});
 test('35.9: alle 110 Dateien, Scores, Preise, Affiliate-Ziele und Originale bytegenau erhalten',()=>{
  assert.equal(baseline.products.length,110);let originals=0;
  for(const p of baseline.products){
-  const raw=fs.readFileSync(new URL(`src/content/products/${p.slug}.md`,app));
+  const raw=readBeforeEvidence(new URL(`src/content/products/${p.slug}.md`,app));
   assert.equal(createHash('sha256').update(raw).digest('hex'),p.sourceSha256,p.slug);
   originals+=(p.data.decisionFacts??[]).length;
  }

@@ -174,6 +174,11 @@ experience:
     Gerätezustand und Stromunterbrechungen ab. Ein App-Eintrag allein bestätigt keine Ausgabe; vor Abwesenheit
     mehrere reale Fütterungen und den Napf kontrollieren. Eine Ausfallquote für dieses konkrete EU-Modell ist
     nicht veröffentlicht.
+    Für AF103/PLAF103 dokumentiert PETLIBRO ab Firmware V1.0.58 weitere Ausgaben trotz
+    Blockierungswarnung. Auslass und Anti-Verstopfungssensor trocken reinigen und kontrollieren, ob
+    tatsächlich Futter fällt. Die Warnung darf laut Hilfe erst bei normaler Ausgabe optional deaktiviert
+    werden. Ein aktiver Zeitplan beseitigt keine mechanische Blockade. Ein Veröffentlichungsdatum dieser
+    Firmware ist nicht belegt; die Angabe gilt nicht automatisch für Kamera-, Dual- oder Granary-2-Modelle.
 alternatives:
   - petkit-fresh-element-solo
   - xiaomi-smart-pet-food-feeder-2
@@ -382,6 +387,12 @@ evidenceSources:
       Offline-Verhalten modell- und zustandsabhängig.
     fields:
       - experience
+    sourceType: manufacturer
+  - source: "PETLIBRO – Granary AF103/PLAF103: Auslasswarnung"
+    url: "https://petlibro.com/pages/what-should-i-do-if-the-granary-smart-feeder-food-outlet-is-blocked-or-if-there-are-foreign-objects-in-the-food-outlet-af103-plaf103"
+    accessedAt: "2026-11-23"
+    assertion: "Ab V1.0.58 weitere Ausgaben trotz Warnung; Sensor reinigen und tatsächliche Ausgabe kontrollieren. Keine Zusage bei mechanischer Blockade."
+    fields: [experience]
     sourceType: manufacturer
 ---
 Der PETLIBRO Granary WiFi ist ein klassischer Vorratsautomat mit moderner App-Anbindung. Seine Stärke liegt in der Kombination aus großem Behälter, flexibler Planung und vergleichsweise breiter Futterkompatibilität.

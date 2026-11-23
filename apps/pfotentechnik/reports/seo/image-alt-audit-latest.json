@@ -1,8 +1,8 @@
 {
   "version": "24.1.2",
-  "generatedAt": "2026-10-16T12:56:37.188Z",
+  "generatedAt": "2026-11-23T12:10:58.870Z",
   "mode": "source-only",
-  "sourceFilesScanned": 122,
+  "sourceFilesScanned": 130,
   "distAvailable": true,
   "distFilesScanned": 0,
   "rawDistFindings": 0,
@@ -10,7 +10,7 @@
     {
       "scope": "source",
       "file": "apps/pfotentechnik/src/components/product-experience-2/ProductGallery29.astro",
-      "line": 138,
+      "line": 140,
       "tag": "<img class=\"pg29-lightbox__thumb-image\" src={item.thumbSrc} width={item.width} height={item.height} alt=\"\" loading=\"lazy\" decoding=\"async\" />",
       "severity": "info",
       "code": "IMAGE_ALT_EMPTY_DECORATIVE",

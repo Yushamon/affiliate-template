@@ -62,6 +62,8 @@ Tritt der Ton ohne erkennbaren Anlass auf, prüfe in dieser Reihenfolge: aktive 
 
 ## Warum Live-Modus Akku kostet
 
+Bei Tractive zeigt die App den zuletzt übermittelten Akkustand. Ohne Mobilfunkverbindung kann dieser Wert veraltet sein, selbst wenn der Akku inzwischen leer ist. Prüfe den Verbindungszeitpunkt und aktualisiere den Status in Bluetooth-Nähe oder nach Wiederherstellung der Mobilfunkverbindung. Das ist eine Grenze der Anzeige und kein Beleg für einen fehlenden Akku. [Tractive: Akkustand prüfen](https://help.tractive.com/hc/en-us/articles/360001743159-How-to-check-your-tracker-s-battery-level).
+
 Kurze Intervalle aktivieren Empfänger und Sender häufiger. Dazu kommen Bewegung, Empfangslage und Temperatur. Energiesparzonen reduzieren Aktivität in einem bekannten WLAN-Bereich. Deshalb sind Maximalwerte im [Akkuvergleich](/vergleiche/gps-tracker-mit-langer-akkulaufzeit/) immer mit ihrer Bedingung angegeben.
 
 ## Quellen

@@ -1,10 +1,11 @@
+import {readBeforeEvidence} from '../scripts/product-evidence/approved-changes.mjs';
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import path from 'node:path';import zlib from 'node:zlib';import {createHash} from 'node:crypto';import {parse} from 'parse5';
 import {selectGifts,parseGiftAnswers,giftSearchParams} from '../src/domain/gift-guide/selection.ts';
 import yaml from 'js-yaml';
 import {buildGiftCatalog,documentedFoodType} from '../src/domain/gift-guide/catalog.ts';
 import {recommendAdvisorCandidates,recommendAdvisorProducts} from '../src/domain/advisor/recommendProducts.ts';
 import {createAdvisorSession} from '../src/domain/advisor/decisionSession.ts';
-const app=new URL('../',import.meta.url),read=p=>fs.readFileSync(new URL(p,app),'utf8');
+const app=new URL('../',import.meta.url),read=p=>readBeforeEvidence(new URL(p,app),'utf8');
 const baseline=JSON.parse(zlib.gunzipSync(fs.readFileSync(new URL('research/gift-guide-37.0/baseline.json.gz',app))));
 const known=value=>({status:'known',value}),unknown={status:'unknown'};
 const answers={animal:'dog',goal:'feeding',budget:'150',food:'dry',weight:10,subscription:'any'};

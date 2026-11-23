@@ -486,7 +486,7 @@ offers:
     availability: "unknown"
     identityNote: "Keine sichere aktuelle DE-Produktzuordnung im offiziellen Katalog gefunden; keine US-/Nachfolgemodelle substituiert."
     evidenceSources: []
-    lastAttemptAt: "2026-11-16T09:06:52.496Z"
+    lastAttemptAt: "2026-11-23T12:18:39.565Z"
     error: "Offizielle Produkt-URL unresolved."
 evidenceSources:
   - source: PETLIBRO · App Outage FAQ

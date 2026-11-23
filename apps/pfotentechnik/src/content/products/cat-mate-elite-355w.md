@@ -39,14 +39,15 @@ images:
     - src: "../../assets/images/products/cat-mate-elite-355w/gallery-4.webp"
       alt: "Cat Mate Elite 355W Mikrochip-Katzenklappe mit Timer – Produktansicht 4"
 price:
-  current: 103.99
+  current: 78.39
   currency: "EUR"
   status: "unknown"
-  checkedAt: "2026-08-17T11:10:48.492Z"
+  changedAt: "2026-11-23T12:17:50.712Z"
+  checkedAt: "2026-11-23T12:17:50.712Z"
   source:
-    id: "manual"
-    label: "Closer Pets"
-    type: "manual"
+    id: "amazon.de"
+    label: "amazon.de"
+    type: "merchant"
 priceAutomation: "automatic"
 rating: 4.1
 affiliate:
@@ -57,14 +58,13 @@ affiliate:
   target: "_blank"
 
 priceState: "available"
-priceUpdated: "2026-08-17T11:10:48.492Z"
+priceUpdated: "2026-11-23T12:17:50.712Z"
 priceAvailable: true
 affiliateAvailable: true
 availability: "unknown"
-availabilityUpdated: "2026-08-17T11:10:48.492Z"
 editorialStatus: "complete"
 recommendationStatus: "limited"
-maintenanceStatus: "complete"
+maintenanceStatus: "required"
 
 ratings:
   chiperkennung: 4.4

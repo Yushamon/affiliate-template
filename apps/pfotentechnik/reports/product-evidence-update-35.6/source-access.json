@@ -1,0 +1,473 @@
+[
+  {
+    "id": "faz",
+    "requestedUrl": "https://www.faz.net/kaufkompass/test/der-beste-futterautomat/",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:14.246879+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://www.faz.net/kaufkompass/test/der-beste-futterautomat/",
+    "sha256": "96592315b653d03d7d1a8af5fe753965026c149043c4069bffc7269e9f6ff8fe",
+    "bytes": 815007
+  },
+  {
+    "id": "one-faq",
+    "requestedUrl": "https://de.petlibro.com/pages/faq-feeder?handle=essentieller-futterautomat",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:14.247209+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://de.petlibro.com/pages/faq-feeder?handle=essentieller-futterautomat",
+    "sha256": "bb55d0b2d238508c06d7d0fde58baccdf337d8ecda29b17909b6ccaa3d0a6ab6",
+    "bytes": 1354729
+  },
+  {
+    "id": "one-outlet",
+    "requestedUrl": "https://de.petlibro.com/pages/what-should-i-do-if-the-one-rfid-feeder-food-outlet-is-blocked-or-if-there-are-foreign-objects-in-the-food-outlet-plaf301-af301",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:14.247302+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://de.petlibro.com/pages/what-should-i-do-if-the-one-rfid-feeder-food-outlet-is-blocked-or-if-there-are-foreign-objects-in-the-food-outlet-plaf301-af301",
+    "sha256": "033cf60db1cad7cd63c79908e3b51261357cd0cfefe58545b36b9d61d4fcef86",
+    "bytes": 973292
+  },
+  {
+    "id": "granary-outlet",
+    "requestedUrl": "https://petlibro.com/pages/what-should-i-do-if-the-granary-smart-feeder-food-outlet-is-blocked-or-if-there-are-foreign-objects-in-the-food-outlet-af103-plaf103",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:14.247383+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://petlibro.com/pages/what-should-i-do-if-the-granary-smart-feeder-food-outlet-is-blocked-or-if-there-are-foreign-objects-in-the-food-outlet-af103-plaf103",
+    "sha256": "6f88893eec85e0238f7c91a1e7abed7abbd9c6be4dd9efd8fce117e528819662",
+    "bytes": 944337
+  },
+  {
+    "id": "one-product",
+    "requestedUrl": "https://petlibro.com/products/one-rfid-smart-feeder",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:14.247458+00:00",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "petkit-play",
+    "requestedUrl": "https://play.google.com/store/apps/details?id=com.petkit.oversea&hl=de&gl=DE",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:14.247527+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://play.google.com/store/apps/details?id=com.petkit.oversea&hl=de&gl=DE",
+    "sha256": "ff36b821286389245d0f60867b09973e609ac59c3a93109f80bfa7b8491db650",
+    "bytes": 1252022
+  },
+  {
+    "id": "petkit-solo",
+    "requestedUrl": "https://petkit.co.uk/collections/feed/products/fresh-element-solo",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:14.247588+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://petkit.co.uk/collections/feed/products/fresh-element-solo",
+    "sha256": "8f2cc3c8db88afd3e4716719f64d95249f6733e4f0790ceee1e83d31293825f2",
+    "bytes": 287991
+  },
+  {
+    "id": "petkit-support",
+    "requestedUrl": "https://petkit.com/pages/support",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:14.247640+00:00",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "surefeed",
+    "requestedUrl": "https://www.surepetcare.com/en-us/pet-feeder/microchip-pet-feeder",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:14.547029+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://www.surepetcare.com/en-us/pet-feeder/microchip-pet-feeder",
+    "sha256": "c6ad2cbe4a5d8f2d45bc005a23714335d5919f25a6ccebdbd1f43e173b6a2de3",
+    "bytes": 473972
+  },
+  {
+    "id": "surefeed-connect",
+    "requestedUrl": "https://www.surepetcare.com/en-us/pet-feeder/microchip-pet-feeder-connect",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:14.547555+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://www.surepetcare.com/en-us/pet-feeder/microchip-pet-feeder-connect",
+    "sha256": "e7d3cb6189befb59172d89d4869c771d9a3818fd9a08cb2bc97b4e11a2105803",
+    "bytes": 427357
+  },
+  {
+    "id": "cloud",
+    "requestedUrl": "https://de.petlibro.com/pages/petlibro-status",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:14.562121+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://de.petlibro.com/pages/petlibro-status",
+    "sha256": "a89431fcb3b4f0fb6b3b8dc873c7d846c713a6e18ce67a41d52af3d6c52ea69a",
+    "bytes": 1013623
+  },
+  {
+    "id": "tractive-battery",
+    "requestedUrl": "https://help.tractive.com/hc/en-us/articles/205664001-How-long-does-my-tracker-s-battery-last",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:14.573591+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://help.tractive.com/hc/en-us/articles/205664001-How-long-does-my-tracker-s-battery-last",
+    "sha256": "e541640120c0753560f20d7f78ea8f6245bf277a6e991c08fc671db57c9f3884",
+    "bytes": 54098
+  },
+  {
+    "id": "tractive-psz",
+    "requestedUrl": "https://tractive.com/en/fp/battery",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:14.625969+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://tractive.com/en/fp/battery",
+    "sha256": "aab715823bb4a7bb703d790f6f2b0c81ffb89271c555f8f5d0b435c41f43ce4b",
+    "bytes": 247505
+  },
+  {
+    "id": "tractive-privacy",
+    "requestedUrl": "https://tractive.com/en/privacy",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:14.813192+00:00",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "tractive-plans",
+    "requestedUrl": "https://tractive.com/de/c/plans",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:14.863363+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://tractive.com/de/c/plans",
+    "sha256": "aad1ec795db4489f094dd1d908d6ad6625211678f3811954d82905813a036116",
+    "bytes": 313311
+  },
+  {
+    "id": "live-enabot-rola-pettracker",
+    "requestedUrl": "https://pfotentechnik.de/produkt/enabot-rola-pettracker/",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:14.900666+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://pfotentechnik.de/produkt/enabot-rola-pettracker/",
+    "sha256": "d3a190fc8dfede7665baba78a1a7be53bf6f838389816a0cf5e21a02e7190b78",
+    "bytes": 92229,
+    "canonical": [
+      "https://pfotentechnik.de/produkt/enabot-rola-pettracker/"
+    ],
+    "forbiddenClaims": [],
+    "batteryPresent": true
+  },
+  {
+    "id": "live-garmin-alpha-t-20",
+    "requestedUrl": "https://pfotentechnik.de/produkt/garmin-alpha-t-20/",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:14.963338+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://pfotentechnik.de/produkt/garmin-alpha-t-20/",
+    "sha256": "67cd901c8896a641c27fe408f4bf0c6ae2ddea14760461ca3fe0c8567fc5ec78",
+    "bytes": 92485,
+    "canonical": [
+      "https://pfotentechnik.de/produkt/garmin-alpha-t-20/"
+    ],
+    "forbiddenClaims": [],
+    "batteryPresent": false
+  },
+  {
+    "id": "live-garmin-alpha-tt-25",
+    "requestedUrl": "https://pfotentechnik.de/produkt/garmin-alpha-tt-25/",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.020312+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://pfotentechnik.de/produkt/garmin-alpha-tt-25/",
+    "sha256": "6f02d589c866e99ce07597584ae02853281ddf09c5e6daf00ca9545a656a93cd",
+    "bytes": 78463,
+    "canonical": [
+      "https://pfotentechnik.de/produkt/garmin-alpha-tt-25/"
+    ],
+    "forbiddenClaims": [],
+    "batteryPresent": false
+  },
+  {
+    "id": "live-invoxia-biotracker-2026",
+    "requestedUrl": "https://pfotentechnik.de/produkt/invoxia-biotracker-2026/",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.038432+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://pfotentechnik.de/produkt/invoxia-biotracker-2026/",
+    "sha256": "1e663bcc48f94406106610ad720e04c7e9029bb428e48fc2f406b6354ea9d243",
+    "bytes": 92136,
+    "canonical": [
+      "https://pfotentechnik.de/produkt/invoxia-biotracker-2026/"
+    ],
+    "forbiddenClaims": [],
+    "batteryPresent": false
+  },
+  {
+    "id": "manufacturer-invoxia-biotracker-2026",
+    "requestedUrl": "https://www.invoxia.com/de/petcare/biotracker",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.087777+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://www.invoxia.com/de/petcare/biotracker",
+    "sha256": "63ada0235cd39a8c10bbafb5c13f2597bbddb8c3f7f6a3c5b36da6eff3a5936f",
+    "bytes": 496340
+  },
+  {
+    "id": "live-mova-suretrack-pro",
+    "requestedUrl": "https://pfotentechnik.de/produkt/mova-suretrack-pro/",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.106967+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://pfotentechnik.de/produkt/mova-suretrack-pro/",
+    "sha256": "5940450b8edef043f1ae09847e0763d9e6cc03512199cb9a7f2c0ac9cb13dd3f",
+    "bytes": 92289,
+    "canonical": [
+      "https://pfotentechnik.de/produkt/mova-suretrack-pro/"
+    ],
+    "forbiddenClaims": [],
+    "batteryPresent": false
+  },
+  {
+    "id": "manufacturer-mova-suretrack-pro",
+    "requestedUrl": "https://de.mova.tech/products/suretrack-pro-gps-tiertracker",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.113812+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://de.mova.tech/products/suretrack-pro-gps-tiertracker",
+    "sha256": "b96a3de820bf9f1f0202acfb3179efb6d676d8be58a9db2d9786ea2da54a28db",
+    "bytes": 2329940
+  },
+  {
+    "id": "live-paj-pet-finder-4g-mini",
+    "requestedUrl": "https://pfotentechnik.de/produkt/paj-pet-finder-4g-mini/",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.154601+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://pfotentechnik.de/produkt/paj-pet-finder-4g-mini/",
+    "sha256": "bbfc27de4de22a364534fd5ffb8abe9774bc425eac1ce5a25fff5cc895908b37",
+    "bytes": 100652,
+    "canonical": [
+      "https://pfotentechnik.de/produkt/paj-pet-finder-4g-mini/"
+    ],
+    "forbiddenClaims": [],
+    "batteryPresent": true
+  },
+  {
+    "id": "live-pawfit-3",
+    "requestedUrl": "https://pfotentechnik.de/produkt/pawfit-3/",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.175592+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://pfotentechnik.de/produkt/pawfit-3/",
+    "sha256": "b35a1596d8b1102819a679ba1da0a2d02ee69ad09c10ecf03385a32452b3a249",
+    "bytes": 91199,
+    "canonical": [
+      "https://pfotentechnik.de/produkt/pawfit-3/"
+    ],
+    "forbiddenClaims": [],
+    "batteryPresent": false
+  },
+  {
+    "id": "live-prothelis-area-pets",
+    "requestedUrl": "https://pfotentechnik.de/produkt/prothelis-area-pets/",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.215397+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://pfotentechnik.de/produkt/prothelis-area-pets/",
+    "sha256": "03cf727f60740221343459f8a36c1a28b0d6758bcf930badc8250623feb97bd4",
+    "bytes": 91340,
+    "canonical": [
+      "https://pfotentechnik.de/produkt/prothelis-area-pets/"
+    ],
+    "forbiddenClaims": [],
+    "batteryPresent": false
+  },
+  {
+    "id": "live-satellai-collar-go",
+    "requestedUrl": "https://pfotentechnik.de/produkt/satellai-collar-go/",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.301474+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://pfotentechnik.de/produkt/satellai-collar-go/",
+    "sha256": "d0e33c5ee196c4a7087d83a3b0879507a8d3a75d83c6a9e390d61cc62e938155",
+    "bytes": 87584,
+    "canonical": [
+      "https://pfotentechnik.de/produkt/satellai-collar-go/"
+    ],
+    "forbiddenClaims": [],
+    "batteryPresent": false
+  },
+  {
+    "id": "manufacturer-satellai-collar-go",
+    "requestedUrl": "https://global.satellai.com/en-eu/products/satellai-collar-go-smart-dog-gps-tracker",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.316096+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://global.satellai.com/en-eu/products/satellai-collar-go-smart-dog-gps-tracker",
+    "sha256": "60e3ea50fb86330703bf54a11603188f48e258d9763a8aec5df32fb9dc3cf9d6",
+    "bytes": 1160658
+  },
+  {
+    "id": "live-tractive-cat-6-mini",
+    "requestedUrl": "https://pfotentechnik.de/produkt/tractive-cat-6-mini/",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.323187+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://pfotentechnik.de/produkt/tractive-cat-6-mini/",
+    "sha256": "a8e19fd4958c853dc25b0f59e11a539ef98d9de226d64c3b821478714f785ee7",
+    "bytes": 93256,
+    "canonical": [
+      "https://pfotentechnik.de/produkt/tractive-cat-6-mini/"
+    ],
+    "forbiddenClaims": [],
+    "batteryPresent": true
+  },
+  {
+    "id": "live-tractive-dog-6-xl",
+    "requestedUrl": "https://pfotentechnik.de/produkt/tractive-dog-6-xl/",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.405200+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://pfotentechnik.de/produkt/tractive-dog-6-xl/",
+    "sha256": "ec5f043963b4386f6dfd63e42c26553fadca20deac2d7ed5805586093a75461e",
+    "bytes": 96123,
+    "canonical": [
+      "https://pfotentechnik.de/produkt/tractive-dog-6-xl/"
+    ],
+    "forbiddenClaims": [],
+    "batteryPresent": true
+  },
+  {
+    "id": "live-tractive-dog-6",
+    "requestedUrl": "https://pfotentechnik.de/produkt/tractive-dog-6/",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.409824+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://pfotentechnik.de/produkt/tractive-dog-6/",
+    "sha256": "2645bceed9d9aad58df6262b08b7e938c7824d35114f9d8f2b41fec8bdedf8b6",
+    "bytes": 97795,
+    "canonical": [
+      "https://pfotentechnik.de/produkt/tractive-dog-6/"
+    ],
+    "forbiddenClaims": [],
+    "batteryPresent": true
+  },
+  {
+    "id": "manufacturer-tractive-dog-6",
+    "requestedUrl": "https://tractive.com/de/pd/gps-tracker-dog?shopCountry=DE",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.410827+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://tractive.com/de/pd/gps-tracker-dog?shopCountry=DE",
+    "sha256": "f9e622f19b0f596f27cf7d097861209c67dce51bbe818e566545d62a01bf517c",
+    "bytes": 1142841
+  },
+  {
+    "id": "live-weenect-xs",
+    "requestedUrl": "https://pfotentechnik.de/produkt/weenect-xs/",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.482977+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://pfotentechnik.de/produkt/weenect-xs/",
+    "sha256": "5ef13a0e5048f783e7a5d1d5feb35a96c9f84556be82dc3f1207217c9ff0c4b3",
+    "bytes": 97547,
+    "canonical": [
+      "https://pfotentechnik.de/produkt/weenect-xs/"
+    ],
+    "forbiddenClaims": [],
+    "batteryPresent": true
+  },
+  {
+    "id": "live-weenect-xt",
+    "requestedUrl": "https://pfotentechnik.de/produkt/weenect-xt/",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.505197+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://pfotentechnik.de/produkt/weenect-xt/",
+    "sha256": "8e5a403364d81806f22f471c80d98df93333f033800d3f84548fe95d3890df78",
+    "bytes": 99025,
+    "canonical": [
+      "https://pfotentechnik.de/produkt/weenect-xt/"
+    ],
+    "forbiddenClaims": [],
+    "batteryPresent": true
+  },
+  {
+    "id": "one-current",
+    "requestedUrl": "https://de.petlibro.com/products/one-rfid-pet-feeder?variant=53222683672942",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.566157+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://de.petlibro.com/products/one-rfid-pet-feeder?variant=53222683672942",
+    "sha256": "511ce1685157147f9f79594d84f3edb77b58624b87cbc5d51751a9a74efa58b4",
+    "bytes": 1399003
+  },
+  {
+    "id": "one-page",
+    "requestedUrl": "https://petlibro.com/pages/one-rfid-pet-feeder",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.567029+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://petlibro.com/pages/one-rfid-pet-feeder",
+    "sha256": "df2698be423467afa8231e9974fd18ee63ada24cedb9ff54eb54f4db0406f63c",
+    "bytes": 932224
+  },
+  {
+    "id": "wired",
+    "requestedUrl": "https://www.wired.com/gallery/best-automatic-cat-feeders/",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.664283+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://www.wired.com/gallery/best-automatic-cat-feeders/",
+    "sha256": "235885159e882a045fc3249af4489f61d3adb1d9b9a903732d53d36e5ffca6c5",
+    "bytes": 2020337
+  },
+  {
+    "id": "petkit-manuals",
+    "requestedUrl": "https://petkit.co.uk/pages/manual-downloads-1",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.664911+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://petkit.co.uk/pages/manual-downloads-1",
+    "sha256": "9b80b359e821973ff896b052f7216dadb7d66247d1f6d40f2c3822e9cf31ea9f",
+    "bytes": 196078
+  },
+  {
+    "id": "tractive-battery-level",
+    "requestedUrl": "https://help.tractive.com/hc/en-us/articles/360001743159-How-to-check-your-tracker-s-battery-level",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.665345+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://help.tractive.com/hc/en-us/articles/360001743159-How-to-check-your-tracker-s-battery-level",
+    "sha256": "9b4b0b6477318441d638b76044f0f01f1d7ea4bb46c5d2df1fb6b6d5b4a41d38",
+    "bytes": 52108
+  },
+  {
+    "id": "tractive-privacy-current",
+    "requestedUrl": "https://tractive.com/de/l/privacy",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.840457+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://tractive.com/de/l/privacy",
+    "sha256": "9a129e29d389e5ba9b678c91917e7c9fe4dbbe0bef30f63aa95bb137e44c0455",
+    "bytes": 159671
+  },
+  {
+    "id": "surefeed-support",
+    "requestedUrl": "https://www.surepetcare.com/en-us/support",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.850894+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://www.surepetcare.com/en-us/support",
+    "sha256": "d3d4e324a56c81f3d9aa899ab811ce00d3c262ca13e5671fd6137787f3185b0f",
+    "bytes": 505239
+  },
+  {
+    "id": "surefeed-accessories",
+    "requestedUrl": "https://www.surepetcare.com/en-us/accessories",
+    "checkedOn": "2026-11-23",
+    "fetchedAtUtc": "2026-11-23T10:43:15.920211+00:00",
+    "httpStatus": 200,
+    "finalUrl": "https://www.surepetcare.com/en-us/accessories",
+    "sha256": "552728806bad55d0a1a92fe442ba12caec8fdc593b122985a591bea2963283b3",
+    "bytes": 763990
+  }
+]

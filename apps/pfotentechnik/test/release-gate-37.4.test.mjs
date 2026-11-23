@@ -1,3 +1,4 @@
+import {readBeforeEvidence} from '../scripts/product-evidence/approved-changes.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -46,7 +47,7 @@ test('37.4: two post-20 active models come from approved integration, with publi
 });
 test('37.4: historical baselines and all existing product files are byte-identical to the pre-cleanup inventory',()=>{
  const inventory=JSON.parse(fs.readFileSync(path.join(app,'reports/release-gate-37.4-qa/protected-source-inventory.json')));
- for(const [file,hash] of Object.entries(inventory))assert.equal(sha(fs.readFileSync(path.join(app,file))),hash,file);
+ for(const [file,hash] of Object.entries(inventory))assert.equal(sha(readBeforeEvidence(path.join(app,file))),hash,file);
 });
 
 test('37.3A: authorized current alternative prices preserve all model, score and link guards',async()=>{
