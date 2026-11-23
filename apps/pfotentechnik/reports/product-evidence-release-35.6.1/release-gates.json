@@ -1,0 +1,71 @@
+{
+  "recommendation": "READY WITH KNOWN ISSUES",
+  "scope": "Only the documented candidate diff; concurrent three product files excluded by user instruction.",
+  "gates": [
+    {
+      "id": "G1",
+      "status": "PASS",
+      "requirement": "Production Build",
+      "evidence": "logs/build.log",
+      "detail": "391 HTML-Dokumente, vollständiger Build Exit 0."
+    },
+    {
+      "id": "G2",
+      "status": "PASS",
+      "requirement": "Keine ungeklärten neuen Testfehler",
+      "evidence": "logs/app-tests.log",
+      "detail": "1230 App-, 26 Core- und 13 gesonderte Evidenzprüfungen bestanden."
+    },
+    {
+      "id": "G3",
+      "status": "PASS",
+      "requirement": "Snapshot-Konflikte geklärt",
+      "evidence": "snapshot-resolution.md",
+      "detail": "Alle 16 Einzelentscheidungen umgesetzt; ursprüngliche Prüfungen aktiv und erfolgreich."
+    },
+    {
+      "id": "G4",
+      "status": "PASS",
+      "requirement": "Redaktionelle Korrekturen belegt",
+      "evidence": "source-checks.json",
+      "detail": "Fünf vorhandene 35.6-Revisionen beibehalten, Originalquellen erneut geprüft; Solo ohne Ergebnistransfer offen."
+    },
+    {
+      "id": "G5",
+      "status": "PASS",
+      "requirement": "Experiment unverändert",
+      "evidence": "candidate-proof.json",
+      "detail": "20 Quellen/HTML-Dokumente und 205 Zugänge erhalten; technische Aliasse nur mit Beweis normalisiert."
+    },
+    {
+      "id": "G6",
+      "status": "PASS",
+      "requirement": "Canonicals, Links und Schema",
+      "evidence": "logs/build-output.log",
+      "detail": "Strikte URL-/Sitemap-/Linkprüfungen und Schema erfolgreich; keine neue Route."
+    },
+    {
+      "id": "G7",
+      "status": "PASS",
+      "requirement": "Keine unbeabsichtigten Änderungen",
+      "evidence": "release-files.json",
+      "detail": "668 Quellinvarianten; keine neuen Produkt-/Score-/Kauf-/Metadatenänderungen; drei Nutzerdateien ausgeschlossen."
+    },
+    {
+      "id": "G8",
+      "status": "PASS",
+      "requirement": "Befundregister konsistent",
+      "evidence": "candidate-proof.json",
+      "detail": "Zwölf gültige Datensätze; ursprüngliche Statuswerte unverändert, nur PTE-0011-Evidenz präzisiert."
+    }
+  ],
+  "knownIssues": [
+    "K01",
+    "K02",
+    "K03",
+    "K04",
+    "K05",
+    "K06",
+    "K07"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "version": "25.5.0",
+  "generatedAt": "2026-08-02T13:33:08.539Z",
+  "passed": true,
+  "skipBuild": true,
+  "steps": [
+    {
+      "id": "tests",
+      "label": "Product-Standard-3-Tests",
+      "status": "passed",
+      "durationMs": 1222,
+      "exitCode": 0
+    },
+    {
+      "id": "enricher-tests",
+      "label": "Enricher-Tests",
+      "status": "passed",
+      "durationMs": 799,
+      "exitCode": 0
+    },
+    {
+      "id": "audit",
+      "label": "Product-Standard-3-Audit",
+      "status": "passed",
+      "durationMs": 671,
+      "exitCode": 0
+    },
+    {
+      "id": "enrichment-preview",
+      "label": "Enrichment-Vorschau",
+      "status": "passed",
+      "durationMs": 540,
+      "exitCode": 0
+    }
+  ],
+  "auditSummary": {
+    "products": 67,
+    "blocked": 0,
+    "needsWork": 0,
+    "good": 0,
+    "strong": 67,
+    "errors": 0,
+    "warnings": 0,
+    "info": 129
+  },
+  "enrichmentSummary": {
+    "products": 67,
+    "eligible": 0,
+    "changed": 0,
+    "alreadyPresent": 67,
+    "noSafeFacts": 0,
+    "invalidFrontmatter": 0
+  }
+}

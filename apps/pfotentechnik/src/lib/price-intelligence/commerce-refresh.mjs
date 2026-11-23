@@ -1,6 +1,35 @@
 import { fetchPublicResource } from '../admin/public-fetch.mjs';
 import { affiliatePrograms } from '../../config/affiliate-programs.mjs';
 import { httpsDestination } from '../../../../../packages/affiliate-core/src/affiliate/networks.mjs';
+import { safeFetchText } from './safe-fetch.mjs';
+import { extractOfferFromHtml } from './extract-offer.mjs';
+import { availabilityFromOffer } from '../product-operations/policy.mjs';
+
+// Main and additional HTML offers share the same price and stock evidence rules.
+export async function fetchStructuredPrice(targetUrl, {fetchText = safeFetchText} = {}) {
+  const fetched = await fetchText(targetUrl);
+  const offer = extractOfferFromHtml(fetched.html, fetched.resolvedUrl);
+  if (!offer) throw new Error('Auf der Händlerseite wurde kein belastbarer strukturierter Preis gefunden.');
+  const merchant = new URL(fetched.resolvedUrl);
+  const germanMarket = merchant.hostname.endsWith('.de') || merchant.hostname.startsWith('de.') || /^\/de(?:[-/]|$)/.test(merchant.pathname);
+  return { ...offer, checkedAt: new Date().toISOString(),
+    sourceLabel: merchant.hostname.replace(/^www\./, ''),
+    detectedAvailability: germanMarket && offer.currency === 'EUR' ? availabilityFromOffer(offer.availability) ?? 'unknown' : 'unknown' };
+}
+
+export async function refreshCommerceOffer(offer, options = {}) {
+  if (offer.commerceDataProvider === 'shopify-product') return refreshOfficialOffer(offer, options);
+  const destination = httpsDestination(offer.officialProductUrl);
+  if (offer.mappingStatus !== 'verified' || !destination) throw new Error('Offizielle Produkt-URL unresolved.');
+  if (offer.commerceDataProvider !== 'structured-html') throw new Error('Automatische Preisquelle nicht konfiguriert; redaktionelle Pflege möglich.');
+  const result = await fetchStructuredPrice(destination, options);
+  return { ...offer,
+    price: { ...offer.price, current: result.current, currency: result.currency, status: 'unknown', checkedAt: result.checkedAt,
+      changedAt: result.current !== offer.price?.current || result.currency !== offer.price?.currency ? result.checkedAt : offer.price?.changedAt,
+      source: {id: result.sourceLabel, label: result.sourceLabel, type: 'merchant'} },
+    priceState: 'available', lastAttemptAt: result.checkedAt, error: undefined,
+    ...(result.detectedAvailability !== 'unknown' ? {availability: result.detectedAvailability, availabilityUpdated: result.checkedAt} : {}) };
+}
 
 export function extractShopifyVariant(product, offer, currency) {
   if (currency !== 'EUR') throw new Error('Händlerwährung ist nicht als EUR bestätigt.');

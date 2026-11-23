@@ -1,0 +1,1538 @@
+{
+  "baseCommit": "8f3bae47761007b9c5725f5a4add70ff0f898385",
+  "observedFinalHead": "47bcdb6639bb0fc8e5e200059aa0524785ecb2ba",
+  "recommendation": "READY WITH KNOWN ISSUES",
+  "scope": "Exact listed file versions only; nine excluded paths in final-scope-check.json.",
+  "files": [
+    {
+      "file": "apps/pfotentechnik/docs/editorial-findings.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "44d5c3b8b541f647da3b5ff113a66d5de36002fee004e2e81dae17530f7e344a"
+    },
+    {
+      "file": "apps/pfotentechnik/docs/product-evidence-validation.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "cf02b55e1b27b5fdd70cb38b6075b82122f756ce5b1344b7867aa14d3b76f577"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/decision-facts-quality-35.7.json",
+      "category": "Gezielte Snapshot-Aktualisierung",
+      "status": "modified",
+      "beforeSha256": "79bdf6450f4109a36cbdcb6c0d08c164243d47f37c9f01cb6cf0ad496d67219f",
+      "candidateSha256": "de0e1da7aadd813be19f2eddc34d5e56a34b3ddd881a22eb07fedcdb973401e6"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/decision-facts-quality-35.7.md",
+      "category": "Gezielte Snapshot-Aktualisierung",
+      "status": "modified",
+      "beforeSha256": "5ed00f10fb13cb4cdadaaa4671697e53ccaa2581d2a9edbda248a26addc5e255",
+      "candidateSha256": "d19bd3ed3a61594c19a74b578298515552452d354a549c5be19c471946ba8703"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/indexation-improvements-36.1.json",
+      "category": "Gezielte Snapshot-Aktualisierung",
+      "status": "modified",
+      "beforeSha256": "ce58fc07f1a0c6eeb4085e8143ae88c3925d47ce450e9e79d085364c1cd31a5d",
+      "candidateSha256": "afa79bff96b2d95ab6cca4025c554f6b7003454b38eec089ab5bb510baba6817"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/indexation-improvements-36.1.md",
+      "category": "Gezielte Snapshot-Aktualisierung",
+      "status": "modified",
+      "beforeSha256": "02b892a99c3230fee36fd10c5aaa980ca589ca90e3e5341dfbf08cb93f02f10e",
+      "candidateSha256": "2bda2dc8819f7bdecf4141f9f4d8f037a174f81a389f407fa908957113eedfca"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/README.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "7911a6d70b62143537dce0a9067e60595571b0be7e1da49fd1931b7208e6b87d"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/candidate-proof.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "82977ab42bd66c58510a3f5e90bba40dfdb893082fa5e25e976de5e602249a6b"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/excluded-local-changes.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "c7569a59b8ffd242df55b49e6ecf2f612b600aec55d250a884ffd7d6ecf1d17b"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/existing-test-issues.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "6429b0e57dc29fbb8f563337b81b922999fa60058c83cd1a91184db05f413bfb"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/experiment-integrity.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "73a808fa40fc827465759422981be751c83a15dd51b4396fbe8599b7d138c162"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/final-scope-check.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "da2a973d5dab3a1f7ac681501ddaea7e0e6307bb1297d83fcee80de1adfe233a"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/reports/content-quality/cannibalization-report.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "88ae4dd439e19b5ce2c5ce5fe0e2c227ea5625d55c395832dc36190cbe2f65b7"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/reports/content-quality/cannibalization-report.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "cb5b80e5d12394dacca145946961adfdea73938824f8aa89e15289aac6984148"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/reports/content-quality/content-inventory.csv",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "1bdd97dffb583a55e1626c9070577cd410541bbcbd947e73e49ae18f02b9f706"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/reports/content-quality/content-inventory.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "ab62919b9adbbc855567f6bdcf5c11c7207cd37a7a671a7a3873656f0f08ad70"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/reports/content-quality/content-inventory.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "7ef08a2f7726a7246c93b572a828a99aac57e2d31071af118d048780ba7faec6"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/reports/content-quality/indexation-decisions.csv",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "d37f02fc3ce77d56d5dd020c59a8e99813ff3715765a3272359b60c39b687413"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/reports/product-data-audit.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "410ba6827c4e05f549d0516d40d22e8fea4817d2a6d37670309e6026e6475259"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/reports/product-data-audit.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "35f9d026b2d293c614d371e0a1a4b8e9dbdcf91f378038f404869c9322cb9fc2"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/reports/product-standard-3/product-standard-3-enrichment-latest.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "0bd56748d0b37f6edf352d9f354903ea32cbd0b36662782554c430af14452d8d"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/reports/product-standard-3/product-standard-3-enrichment-latest.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "90ae9d082aacd418b2b6e238ee917cd610a39d8b19e0c3ed4e237aec50119e42"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/reports/product-standard-3/product-standard-3-latest.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "68a3538fac453bed8aa115c8e8f65b306c820e11766db6deeba2014bf092d550"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/reports/product-standard-3/product-standard-3-latest.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "37b13b6c76eb1a394506a0918eda05ade6f941f7af0bb3e2b37563b0a746835d"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/reports/product-standard-3/product-standard-3-release-latest.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "2be71f34ac8c890935452929c92aeec224e6abf2a4c212bd92372fbe6d869902"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/reports/product-standard-3/product-standard-3-release-latest.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "53e09c942ecd75130e7a70b8fbe32ca9b49a9ca0a85c9f6c16d142ea049ddccf"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/reports/seo-release/build-output-latest.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "b1550647cacbee9df8eb11a126c42a67ac8dc46d5948c631fe2c255a6a7a5004"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/reports/seo-release/build-output-latest.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "c5e32a6a9db827bc0fcc171b5c9402a6597f10b4afb02e3addaafe18ac55e1a8"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/reports/seo-release/preflight-latest.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "8510da573de76faa47f58b3de4feddc14bb0c0ba4b44907867a116036baf3456"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/reports/seo-release/production-http-latest.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "678bbbdfbfb749c11f1f655e79ef0cda661d8f14d537d769fb613e345af4d7e9"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/reports/seo-release/production-http-latest.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "a9c26203e4884d61ef8638e3b5cda4ac81bd6860cfee9d7990ed543fd66c9c2b"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/reports/url-consistency/url-consistency-audit.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "b6e02245dc862df5af1c210037ca87542c79b2a3d4067dd8d19f02220f475bd0"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/reports/url-consistency/url-consistency-audit.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "10e244972b6c18968730a0d6cc62fdd8eab1527fdd721bdc4a1dd8f6376dd9b8"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/research/indexation-improvements-36.1/image-alias-verification.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "a62513a5f4b6628c30ba094044b4658f3174958e89bc2ab044c7ba15ac04ce71"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/generated-audit-evidence/research/indexation-improvements-36.1/verification.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "43a244daa91c618357f08da1385032dd5e6db60043fbb004b687c1de6b7260b3"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/git-start.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "4456d7c955c9241a04c1451794e860a3175327948ca8505d0bd3da272baebdf1"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/independent-audit-comparison.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "094dce58334af79c5aa6d81818d76accaf3a5b6ed936f2475ffd4e55b4663d42"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/indexation-snapshot-edits.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "c09a1c8b8e8ec5864e1ea73f32bb59371a14f4155602bcd4011d4e0ddac5bd4d"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/app-before.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "8588cb204ff579e68a7e8f018c45b719291c2f5f478a2c96ef7e46817811c0a7"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/app-tests.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "61d917065e6773e56c55c17d6aa9c62ae9513b69155add79ba272818858c716d"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/build-output.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "c0b1f9ac640cdc4a1a00f8dad416b38f8dc4bab89ab1ab2e3ab51fda62d1c812"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/build.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "2ad011d0a4d968ff2808475805a1edddab587941702830a11d97dda10f00a170"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/candidate-proof.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "467711eda51369e56d6fc95122db32cbd61e058198f4f7e0c7b4b2577424c23d"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/content-quality.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "3ba28cb9e95d2e559aeb42e61d96967e6e5c23ae41a1fb5f703dc260a6814522"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/core-tests.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "f531e6de4a813bc6d3d13fde9c19bf19b23088d5acc850cdb4de68fb2b77f4bf"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/decision-facts.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "b0c4d4a6a90de7ca92021068689461ff29663fc4a931f23a1cb1acc00a0c0095"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/editorial-lint.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "67d6749ef1c0e0e053f6b0d3cf2a9a697787ff0b383fb57647afef5c228a203d"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/evidence-tests.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "70b5e22ebfd85bd22457948e5cf723c3b44117dbb7ce6111ea0a5761d9fbd078"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/existing-corrections.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "7fbadc879197ce11401e163eb19223ce3b27567372d0264ce96325e3534b6ec4"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/experiment.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "43a244daa91c618357f08da1385032dd5e6db60043fbb004b687c1de6b7260b3"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/findings.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "0697e83684f87bf3388de54084c489376cf54aff8e7e7a93db71f7c296eee810"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/focused-1.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "3fd0eba01dbdc4d768ffbb81921e9c41a48d1e096efadc0890e47c6bb5a23277"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/guards.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "f81b15528b33b2046f9ca4d9d5c63768b06bc0082e1f800ca250471dce26429d"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/indexation-focused.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "a3fea81aac9a766780abdf38dd72d52dc22f7216b46856f00f376a08b12cea8e"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/internal-links.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "70d96c0cb56ebf1e42a355c887a4f41ae718e956167d0a45a5c835951ac2f16a"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/internal-targets.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "079b4e628f311c8f33dcf5243cc5ad277525d1691a02bcb3182579602f42c7aa"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/operations.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "56477b02e4edd43b7fc040916b95e60e8212a968a53c6595089739e566df9c27"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/product-standard.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "cf0c9120f079ad2653029f9006e47bb3dcf8178f4eab3fb3099f41889615f9ea"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/products.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "72b832757d6b4c1a6e06ef10a59f445f24b2a6a62017e0a1bc448d508902c869"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/ratings.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "cbbe6d418a491b723d7c938565c1bcfa63c7dabd962ada7e6cacadb954ce521b"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/schema.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "db3248c9d18efdf900630fa0071e62c4dfa9cb31c49347f1f7b1e1a7ef4177dc"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/scores.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "b9f15e4de91fa9081f19be4126af8697037014b29b359350bb6b7f3e7c5c4b68"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/logs/url-consistency.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "be5b04db3ed54098dcac4edd6eb474a2e6223890a1a984547c7cf9a4af220011"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/original-test-failures.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "ffc6cc57ad39693aa966aad432e8337d4a7491111028f36df0a90f97199bdfa8"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/release-diff.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "cc601113a17652fb6a3c1b8afed5ad0dbd8c689c201f5a448724779447b464e0"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/release-files.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": null
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/release-gates.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "bb5c7bbdf26d52b54ed59472331a4f97b8fdd632734ace186fa92b4cabbe51fc"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/release-gates.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "67759e28cf5002facbd84a4feeb8c62e7271704de9bb27afb3f64c656744fe93"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/release-paths.txt",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": null
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/remaining-issues.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "2031c8e6556f66a19c6bcbb7cf15b34c6d3c101c9ca31312a5eb5d813dad99d4"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/restored-generated-files.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/scripts/check-sources.py",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "4d8d839b40b5b736c84739957d90de92d481ce3be0b6b9398d645412948f7386"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/scripts/run-validation.py",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "901465e36a67713eb762aa85b01e5a0ae0c913b4e03d91c30cf5216118f30630"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/scripts/verify-candidate.mjs",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "4fc144409a91bcd1c910a5a5101201e65acb21595ebde1d7c7963b68d5160000"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/snapshot-edits.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "138cb4fc5ed9bdc2f2935d145488f8f9b7da8789493fbffa358d902c414a9724"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/snapshot-resolution.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "8a5b7eb207ae5109902092f115b98ad356d868c78f9ceb5d89ab388a4e4dd8bc"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/solo-model-verification.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "6f79ffa1408cf490f4523f85ca4222935a17d4d5af501338f1b28e3ed3f0d2b5"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/source-checks.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "9062bd45831dfae6ab81e099c0db6aa7ba333a1d8560f1e7dffe790513bfd6dd"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/starting-file-hashes.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "d1ba233d1e590fb1da3493abe08e46febef5fc7b798b9e014c19b2cea8e73fcd"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/test-failure-analysis.csv",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "9a5921dd86f357820204d87927503c74804159aeb845cc0bcf15b232796e2a79"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/test-failure-analysis.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "fadc755969a9fa3e4737f718ddd431783f2d132dd3c81a1e7dacfd38e7c099c6"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/test-failure-analysis.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "bc9b30e3b66f3973975040484bec5fd214603fda4a6447362d94d9fb8631abf8"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/validation-commands.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "3c455ec68ac27482f021e9d4a507131017dbda3e3dbf209ee5d8bdfcda055246"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-release-35.6.1/validation.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "559dda6bc2b4390c6f9818b47ad97400818b7995b12f78397e36b85f0e29bb1b"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/README.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "5cc2a263dfe01ba2d02c673bcf79bf69a74986c73e1f3d29905c1b9e89eea15e"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/affected-canonicals.csv",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "30fc152721122817b23df58f30852187a362251d1c5d55dc2883f5c03e2afcfd"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/baseline-comparison.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "434c80ea9be878cc80c2ed9f976b94493bf0297b00ee1cc2f53bbf1bc94a9246"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/baseline.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "0daa2964d70396f4bf3e4c7fd8343525a77235ad5ed94df612dbd5a029252c8d"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/build-before-manifest.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "f8d5de4d73a0c6229616b4d595147be348206195cb399ef29db1e46b4bf29ea6"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/cross-product-error-audit.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "6be0c44a743e7650b587f0ce31f50c7752f946fe8c85024cd964ebcc1b890a24"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/editorial-changes.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "1eb8c2ee1044820b3b61408ae71de8b5ec618dcbbf98a9b838f5fc958c05786b"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/evidence-ledger.csv",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "a92d2abc4bf83b93cc7edc3fa0dda316fe53e23169adc92aeb979861142a6bca"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/experiment-html-before.json.gz",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "4c6ac92f29c610732123593ea46ceb3bb0e77aaf61c2ab47239859431fe93c34"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/reports/content-quality/cannibalization-report.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "88ae4dd439e19b5ce2c5ce5fe0e2c227ea5625d55c395832dc36190cbe2f65b7"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/reports/content-quality/cannibalization-report.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "cb5b80e5d12394dacca145946961adfdea73938824f8aa89e15289aac6984148"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/reports/content-quality/content-inventory.csv",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "e9c9aee4c13259f0d9f95adc8c39a4619516ba9f4cfc36a65be2bf31223dc282"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/reports/content-quality/content-inventory.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "97154890e4fc973d091743b3390e4420fe7239af5feedbfcbde46739a8ffc06b"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/reports/content-quality/content-inventory.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "7ef08a2f7726a7246c93b572a828a99aac57e2d31071af118d048780ba7faec6"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/reports/content-quality/indexation-decisions.csv",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "d37f02fc3ce77d56d5dd020c59a8e99813ff3715765a3272359b60c39b687413"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/reports/design-system/css-architecture-latest.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "79d06281e6fe18f5ab1a91a5c447c698b35b1057c0f8149af9b0cf643681b22b"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/reports/design-system/css-architecture-latest.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "900edb6ee65857d96e06bf55927e5cf2720dd1d3e955643ae3f1a40cb3ef7846"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/reports/internal-linking/internal-link-audit.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "61f8d0bb4fdca66f70996d36a682ce8a011e7cc091c01849955e7304ef164f5e"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/reports/internal-linking/internal-link-audit.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "7916d8bbd055af284c2762bef4f549ab8120911e2c96a101cf9604753c6c868a"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/reports/internal-linking/internal-link-migration.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "9d1d9819b96b61a219ef9dfaa1c720b221f980c524906abd7ffa15b0f41c6a4d"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/reports/internal-linking/internal-link-target-audit.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "8c4a4860c3247b072afbc20e298a8b18187fcdf45cf7e17f5bdf9b8410741f0b"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/reports/internal-linking/internal-link-target-audit.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "6092371a7bc478bbd4375fcbf1fdf3f6f6dc96e316866a0209193e3ded6e0704"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/reports/product-data-audit.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "1af7051020e2c6999ff9189ee951a1082df424e8a3c4c1e5197f43b5f833f7e3"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/reports/product-data-audit.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "59c50687ff6ab76f73940d0c6f4b9adece1fb23d4545301f7a845b752af46c78"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/reports/product-standard-3/product-standard-3-latest.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "89b4f9ddb4b7fd393adf0b2de71c29204939d0061d106270d5a5b14337ce4ee7"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/reports/product-standard-3/product-standard-3-latest.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "37b13b6c76eb1a394506a0918eda05ade6f941f7af0bb3e2b37563b0a746835d"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/reports/seo-release/build-output-latest.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "ac78506668d6e1afef1a00563705a72b3f6eac9b9fc04224c4c99ae1f4842d09"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/reports/seo/image-alt-audit-latest.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "91d3081a7285ff41c44feb754a83ca3447c641f77f3a0e1969211ce3b337b350"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/reports/seo/image-alt-audit-latest.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "7556949c143cce37b035bf84a15ed44dc9b03b7665ada41d4d2ad2c65ea7a067"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/reports/url-consistency/url-consistency-audit.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "37a80d7b5576356bd29dd5475359cb4913f527304c0f9371471a868a9181c9b7"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-audit-evidence/research/indexation-improvements-36.1/image-alias-verification.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "cce31123e9e61d27f3a405b0b53024705d12e1171ec4c0ce42a486b5bd359ab3"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/generated-product-check.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "7d06ad1ca640ffd5bec1e992593da8804d936f7b253f38be81475d2a507db766"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/independent-test-comparison.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "89808dd864bedd41ca3a0eb5a5c1f3843734316c9d5bf67504be32fbdfce812b"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/app-tests-baseline.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "61e36880e986efb4372ba4887d91f60e4dfc21c26e5c2127f536d14f228f9978"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/app-tests.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "719676f54cc4054e1a97e1d1f307e7a9e39735a4521a93a6042e765641dacca9"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/build-after.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "a69a1fb780efb238255af183b6d9cf37b169fb75c42bbf250d0061d125ffce44"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/build-baseline-verification.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "7af0354ec0db4d3adc4311982ffbb0f38debcf34990a2c2b81d48abb70d2416c"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/build-before.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "6264370057d38e55170a86b0dd50d59ce048c09dc1ff9ed6dd3966fd8fe77dd9"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/build-output.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "c0b1f9ac640cdc4a1a00f8dad416b38f8dc4bab89ab1ab2e3ab51fda62d1c812"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/comparison-schema.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "db3248c9d18efdf900630fa0071e62c4dfa9cb31c49347f1f7b1e1a7ef4177dc"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/content-quality.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "3ba28cb9e95d2e559aeb42e61d96967e6e5c23ae41a1fb5f703dc260a6814522"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/core-tests.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "dc2c828aabfc0cd63ede7be04dfdd6e7cdba34b5b5f5ebab09d4e2f9de436cc7"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/editorial-before.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "c7cdff6bec053bf04af122cc394396bf51693b676ba66670fbabad6d97b53db2"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/editorial-lint.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "c7cdff6bec053bf04af122cc394396bf51693b676ba66670fbabad6d97b53db2"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/editorial-transparency.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "0992714bc0e1d65941263fe83745f84c90050ddef6b97c8be2dfed24d88102c6"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/evidence-regression.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "0f0c44ce6964b570f203f69f62877ac8b45b0c69cec0bd6c62c3b0cdd3911c8f"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/findings.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "0697e83684f87bf3388de54084c489376cf54aff8e7e7a93db71f7c296eee810"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/internal-links.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "70d96c0cb56ebf1e42a355c887a4f41ae718e956167d0a45a5c835951ac2f16a"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/internal-targets.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "079b4e628f311c8f33dcf5243cc5ad277525d1691a02bcb3182579602f42c7aa"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/product-data-baseline.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "72b832757d6b4c1a6e06ef10a59f445f24b2a6a62017e0a1bc448d508902c869"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/product-data.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "72b832757d6b4c1a6e06ef10a59f445f24b2a6a62017e0a1bc448d508902c869"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/product-operations-baseline.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "56477b02e4edd43b7fc040916b95e60e8212a968a53c6595089739e566df9c27"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/product-operations.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "56477b02e4edd43b7fc040916b95e60e8212a968a53c6595089739e566df9c27"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/product-standard.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "cf0c9120f079ad2653029f9006e47bb3dcf8178f4eab3fb3099f41889615f9ea"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/ratings.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "b18d9713382ef1daa8faa3461143209909c576762215e3041eee1e7f587d9820"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/scope-and-render.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "9a6e50a3a2d67694279f2b97f16d0f4c6436919b6c01f9b28f4e7e9eac7517e3"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/scope-archived-reproduction.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "9a6e50a3a2d67694279f2b97f16d0f4c6436919b6c01f9b28f4e7e9eac7517e3"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/scores-baseline.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "b9f15e4de91fa9081f19be4126af8697037014b29b359350bb6b7f3e7c5c4b68"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/scores.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "b9f15e4de91fa9081f19be4126af8697037014b29b359350bb6b7f3e7c5c4b68"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/source-access.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "70f1855552a535f1b5b5d19618f0246b07241bf185a52e637e8a2f0e58a0362b"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/url-consistency.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "be5b04db3ed54098dcac4edd6eb474a2e6223890a1a984547c7cf9a4af220011"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/visual-baseline.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "4661e8c2448942c66843d3977d68c52883e2ce37427cdc62021b264b6ad4412c"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/logs/visual.log",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "4661e8c2448942c66843d3977d68c52883e2ce37427cdc62021b264b6ad4412c"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/manufacturer-update-review.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "a1a39af92818b5c1bcb550fbd4c168b6c2ce7ddb3454dcbd725910e4852ef06b"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/page-review.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "88d12a91b314c58cf73541430b27a62275e25a4a93b309a56b6c55778b1e35cf"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/petlibro-firmware-review.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "f6f88e703fff8112030ac5e873d84a55894990e77858e48d108d59bf847d2631"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/remaining-issues.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "733931cb44f45a205e6c4b1da64a1178159e522ef8bcf63f034a8a544a9ef8c1"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/rendered-before.json.gz",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "a07a56701ebf9d7db60bcb08fc9bd2520c0fef21b2727feef57719df66f76f66"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/research-findings.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "8fc476867327e20e3c8bfa6d49b468dabdb8056e23715b7d4b8ed00092260bbd"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/restored-generated-files.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "2b1c5983d7f8429b74b2e69bcdc4608a1204eac7167e10c6d7a490166c1cc40e"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/review-html-before.json.gz",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "a4acafa444fbb0a5b697d3ec087342a25967357d378f0e6d74a8ac24adba4bc8"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/scope-and-render-validation.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "d1956ea687a3a1833cee45bc066953296b5c73df21b22e01eaa943883c1f4bec"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/scripts/fetch-evidence.py",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "9dda55657fd813474106792b0b82d162d9fad5ecd3bf1fa598234b662821dbde"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/scripts/run-validation.py",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "320e6ed1fbd31c20d1c53a0720528dad1c4c9cc13f3c883834b5e6947fd6236c"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/scripts/verify-output.mjs",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "bbf8566e28f06775ae6a811ec393001c43c61027569c0c6282e7ab81558b1043"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/scripts/visual-check.mjs",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "73c2e4f8e3733c87ad6272a940c34b421ca603ecc5cff761435ac340d051c9cb"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/source-access.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "3f371c062a9a3f179cee5e8538273c0ddc1db4dae9524936629f782ce163ba78"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/source-catalog.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "71e7f6f7872daeb657e784f2e9eeab00a532f248ebdfea7bc8769ecbd172d9a2"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/source-observations.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "6e35391c7554dd508521ddb5b58a12baad4cebba4fa840f05ee12bebe388e50b"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/tractive-accuracy-review.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "710438908993661fc0816cefac58c5216fd9032036f6bdb44e8494abda704a34"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/validation-commands.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "0ea9564d2b96a42c7dbcae33e6f0bd88ecc4420292c52050cd30444d682b1176"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/validation.md",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "4a2bf6f49e4ad3823c6e15679eca00347379c09cc430039744c914a001cbb6f7"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual-baseline/_produkt_petlibro-granary-camera-feeder_dark.png",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "8f2307e5d87d60511451ae8f72c2744fb35165f540d44049143df7a319522ce2"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual-baseline/_produkt_petlibro-granary-camera-feeder_light.png",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "c4c20466f83ff42f95300f1d174aa229fd12c207036ff337722d6e8d73db4426"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual-baseline/_produkt_petlibro-granary-wifi-feeder_dark.png",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "99b8ba23f6c811056fb4b4d16269994ae97a71ccc209718c49876a09f69b1d02"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual-baseline/_produkt_petlibro-granary-wifi-feeder_light.png",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "94fc2ff3de09aede45f5425ad30e9bc5ccdbe5213070a498a0723d84089de582"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual-baseline/_produkt_petlibro-one-rfid-smart-feeder_dark.png",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "795e4ddd9d9dd516a0733d469936df5b0a1d6f98601a880a550b49c7a20d2163"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual-baseline/_produkt_petlibro-one-rfid-smart-feeder_light.png",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "315bcb04cb5e66c84b1bfc090ba5298af0a2b6941e9f00be38a6b418a39f86ea"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual-baseline/_produkt_tractive-cat-6-mini_dark.png",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "dbdce666b7cb4326c73e8218507a362345ab3c1f590ff4302a7c5320a3201347"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual-baseline/_produkt_tractive-cat-6-mini_light.png",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "36283053af965fadb54963a9ac08bc53af6a5d8b601593bc6efb0b63924f9a55"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual-baseline/_wie-funktionieren-gps-tracker_dark.png",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "0f82ed93078b22243513b031ca3ddcf0714910be59a2c5e30b3baaf23eb35bac"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual-baseline/_wie-funktionieren-gps-tracker_light.png",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "291cd4121e9965cb3a227b54db73aec7f0ea4edac4d849e50d056eb39d0bd964"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual-baseline/results.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "5a1b88d0e1e397acf1b465e94ba7ee7657987a08cfa90a2c7bd39e475a8bc2fa"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual-comparison.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "d6df09d0db7edfc5b750bf1905048bcdf2d2082f5ce25e1d7924b4cade25d4dc"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual/_produkt_petlibro-granary-camera-feeder_dark.png",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "7591cf8191a090657ae0a87508d630c6612c8e502c9d49010384eb0c1b482acf"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual/_produkt_petlibro-granary-camera-feeder_light.png",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "5e86ee360828e7e9c7ec4f7d51f3a59b029c5b2e0fa8601595b77703beebeacc"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual/_produkt_petlibro-granary-wifi-feeder_dark.png",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "01c534391d91cb1385b1fc9b6685801ab652393aab4e816d76dda89f4090c121"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual/_produkt_petlibro-granary-wifi-feeder_light.png",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "6455fc048f363a7b608a9e37fdcecbf2bf896d9a1bceac119d22179741ef7388"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual/_produkt_petlibro-one-rfid-smart-feeder_dark.png",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "f84aa639fd409db5a81d8e0b912b8a32708c4675cb96a2355b11127070bf344c"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual/_produkt_petlibro-one-rfid-smart-feeder_light.png",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "f925f8952d6c13423d69a97c210b18296f052998f5ffc03425a472bf2a7f4567"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual/_produkt_tractive-cat-6-mini_dark.png",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "744ec40596c2c0b3b5e69a78e09a019055720bdcba0ea2d4cb556550dcc6d751"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual/_produkt_tractive-cat-6-mini_light.png",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "d42f534dbc58ed87d6df8fa33300d991882d15c3042c8cc2455918bc192f580c"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual/_wie-funktionieren-gps-tracker_dark.png",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "12f6e6008dd92e82a522132c8886e728583137689370ff43319551726a7335e5"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual/_wie-funktionieren-gps-tracker_light.png",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "8fffac4629b102137472eb7b18e3ed577648cf0223557a75b27ade0d00218f35"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-evidence-update-35.6/visual/results.json",
+      "category": "Dokumentation und Prüfnachweise",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "5a1b88d0e1e397acf1b465e94ba7ee7657987a08cfa90a2c7bd39e475a8bc2fa"
+    },
+    {
+      "file": "apps/pfotentechnik/research/editorial-findings.json",
+      "category": "Befundregister und Validierung",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "1bc71cdfdce48764d0a105402c44f5baf3d02a11077d9e2c4b3ce6b8962e0061"
+    },
+    {
+      "file": "apps/pfotentechnik/research/product-evidence-35.6/changes.json",
+      "category": "Testkorrekturen und Prüfverträge 35.6.1",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "f136f52a5c1cb8a000fc066b52f1f020080b5677098c994cf9a476dc6bc6f256"
+    },
+    {
+      "file": "apps/pfotentechnik/research/product-evidence-35.6/originals.json.gz",
+      "category": "Testkorrekturen und Prüfverträge 35.6.1",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "6383d8c078ea79215e97e66ec1fd15a0c867ac3692212073d73354b5b737675b"
+    },
+    {
+      "file": "apps/pfotentechnik/research/product-evidence-35.6/style-scope-reference.json",
+      "category": "Testkorrekturen und Prüfverträge 35.6.1",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "2d24d6531528dd0af87044ddecd203c18cfef2a5ce27119edae89b8fdb33209f"
+    },
+    {
+      "file": "apps/pfotentechnik/scripts/decision-consequences/report.mjs",
+      "category": "Testkorrekturen und Prüfverträge 35.6.1",
+      "status": "modified",
+      "beforeSha256": "efd368248c33877b826f18e4feec731354bdba8d786a13fc43b86ec4846e3ac6",
+      "candidateSha256": "c4ecf2210a2b8b88688ef970a9b19bdb056943bba925864830d589c080050d5b"
+    },
+    {
+      "file": "apps/pfotentechnik/scripts/indexation/verify.mjs",
+      "category": "Testkorrekturen und Prüfverträge 35.6.1",
+      "status": "modified",
+      "beforeSha256": "9cfb59db615a07ac2d949e4e6c50b6476419417ca00878c105fa16ef9b876833",
+      "candidateSha256": "7751ccf7bf01f2cd2d914db5d8cbd7bd0135f54cd050828c6638bc44bde635d6"
+    },
+    {
+      "file": "apps/pfotentechnik/scripts/product-evidence/approved-changes.mjs",
+      "category": "Testkorrekturen und Prüfverträge 35.6.1",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "26e8d7fd59bd34d48b4db7ac112568900f7e3ecb8a343555873cb028ecf76db4"
+    },
+    {
+      "file": "apps/pfotentechnik/scripts/product-evidence/check-findings.mjs",
+      "category": "Befundregister und Validierung",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "6e5179cd7ff15ac2ef0e6c31bdc393fb6152d952535d7b5ef203e415647fc887"
+    },
+    {
+      "file": "apps/pfotentechnik/scripts/product-evidence/style-scope-proof.mjs",
+      "category": "Testkorrekturen und Prüfverträge 35.6.1",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "3dbafd6f2b96ec5474bfb1ccc1a64bbb6cc3e17a2ab49390bbfbf5b8f65c8074"
+    },
+    {
+      "file": "apps/pfotentechnik/scripts/product-freshness/apply.mjs",
+      "category": "Testkorrekturen und Prüfverträge 35.6.1",
+      "status": "modified",
+      "beforeSha256": "2cb6cc6d89860323d2de228a2d13fc17ca0df4edf9bac172c07321a905ae763e",
+      "candidateSha256": "698c2a7230f11da96642456d976b3d5b4520b87c8a16fc4f10c36ab8a55e4aeb"
+    },
+    {
+      "file": "apps/pfotentechnik/scripts/product-freshness/approved-changes.mjs",
+      "category": "Testkorrekturen und Prüfverträge 35.6.1",
+      "status": "modified",
+      "beforeSha256": "5b70f34ab38f0f31df907651d9682db7244de16330760c339b40b08084c2e049",
+      "candidateSha256": "0de31fc799683c491b35d5b6c80f1ec76840319350799bf1301b1f50f859afee"
+    },
+    {
+      "file": "apps/pfotentechnik/scripts/product-integration/verify.mjs",
+      "category": "Testkorrekturen und Prüfverträge 35.6.1",
+      "status": "modified",
+      "beforeSha256": "ec99aa9a0cfbc1732be1c6414d916d5f269df7f91cacbc9e720587115b4d2ccd",
+      "candidateSha256": "716748232f9c7ed8df895c0fa40539a644ea4e8fc62aba82eccbf6e8ceed4783"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/pages/wie-funktionieren-gps-tracker.md",
+      "category": "Redaktion 35.6",
+      "status": "modified",
+      "beforeSha256": "05c7ea0d7ab0345ce34864fa58f548d9df4e805e3dba4f20dfd18f9253425f4e",
+      "candidateSha256": "5ddfd8c9f573be761bd9efe285abdc37a16416d2961b62677531a23d636e6ce9"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-granary-camera-feeder.md",
+      "category": "Redaktion 35.6",
+      "status": "modified",
+      "beforeSha256": "c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f",
+      "candidateSha256": "88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-granary-wifi-feeder.md",
+      "category": "Redaktion 35.6",
+      "status": "modified",
+      "beforeSha256": "e9b2cb1f3f7dbc7db12790126d75478305244dacb2c6f213debc150f412ce876",
+      "candidateSha256": "aeb7d37ca47dbaaa489d2d2b5189bec01f726a81aefd2b1eec116e3da584219c"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-one-rfid-smart-feeder.md",
+      "category": "Redaktion 35.6",
+      "status": "modified",
+      "beforeSha256": "8cf1adcb850f8f76e64a1272ac182bb53ef80497d9d32aec6d24745c7981e4a2",
+      "candidateSha256": "5cbd7fe044096359b6a52f105bf89d040ec27a9745d8e08f7d5924728a895f61"
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/tractive-cat-6-mini.md",
+      "category": "Redaktion 35.6",
+      "status": "modified",
+      "beforeSha256": "d6cc0f25e11e4e2458b0ef312ff68a1acc841418ea01e8edaa19ae40101fbbf8",
+      "candidateSha256": "9cbb99399fb6d7b1f90c20750d76d7b1ce79589aaa18553a8c37fb10564a35aa"
+    },
+    {
+      "file": "apps/pfotentechnik/src/data/seo/indexation-dashboard.json",
+      "category": "Gezielte Snapshot-Aktualisierung",
+      "status": "modified",
+      "beforeSha256": "a0fa15404b285548ba9599a47e015024c0c288c29b5a80130660fe2b95b08568",
+      "candidateSha256": "0df317cfa356c7e4b6801cf7894613db26686651676d899d8d0757f2cf844930"
+    },
+    {
+      "file": "apps/pfotentechnik/test/compact-product-purchase.test.mjs",
+      "category": "Testkorrekturen und Prüfverträge 35.6.1",
+      "status": "modified",
+      "beforeSha256": "0ebfa577b11c8881c43c5a6befa003cf87b394c0fd86ea366426b086cacb28d9",
+      "candidateSha256": "bb73affbb637d331259eef4d2f9f3c1ea9bb95c6df0693bca4e4ee2bf4ab10eb"
+    },
+    {
+      "file": "apps/pfotentechnik/test/decision-consequences-35.9.test.mjs",
+      "category": "Testkorrekturen und Prüfverträge 35.6.1",
+      "status": "modified",
+      "beforeSha256": "f1935567cb731de9525e80c47f995d3705649f478ef55da464aff715bcee6f16",
+      "candidateSha256": "207a1786f9556a40776da497dfa7d5d16738b1c71f70ca106a554b8125f8e8c9"
+    },
+    {
+      "file": "apps/pfotentechnik/test/editorial-evidence-update-35.6.test.mjs",
+      "category": "Testkorrekturen und Prüfverträge 35.6.1",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "332566acac6b2f6c24f94ee435e5f7cae5e7dd78bac79cac3eea953b8be16364"
+    },
+    {
+      "file": "apps/pfotentechnik/test/external-evidence-batch-3-33.6.2.test.mjs",
+      "category": "Testkorrekturen und Prüfverträge 35.6.1",
+      "status": "modified",
+      "beforeSha256": "dd84be4a757506afab0fea1e45b71ac04189e3ad61db6ef1c0d91ef5c55828c1",
+      "candidateSha256": "c6ab57db55d8d5e38c68c6f2c8eb9d34598b537523136e1233886dbc80c3cb86"
+    },
+    {
+      "file": "apps/pfotentechnik/test/gift-guide-37.0.test.mjs",
+      "category": "Testkorrekturen und Prüfverträge 35.6.1",
+      "status": "modified",
+      "beforeSha256": "6ff2b034124faa87967239369fc2463c6022f65f7aedd75cb4a4aee987e6e1c4",
+      "candidateSha256": "6074ccc200eda3110aa11792f96aaf00b636cb07aed6af46424da14b0e314186"
+    },
+    {
+      "file": "apps/pfotentechnik/test/gift-guide-37.1.test.mjs",
+      "category": "Testkorrekturen und Prüfverträge 35.6.1",
+      "status": "modified",
+      "beforeSha256": "a753c047a95cc73c978e556d4b0b8e2c6512ae99701d96788b75156ee9687d4e",
+      "candidateSha256": "72b1fb10c8b78c927f2c2b3c811ae6f7b099de7bece5b7e5819798d17155ad9a"
+    },
+    {
+      "file": "apps/pfotentechnik/test/indexation-improvements-36.1.test.mjs",
+      "category": "Testkorrekturen und Prüfverträge 35.6.1",
+      "status": "modified",
+      "beforeSha256": "64f14835ad203a6866cb01b5fd48e8cb66e4d1eb8f91003be2756484217c5a94",
+      "candidateSha256": "d096e0a4ed621974a5c3f9559187e7bdbd844e70302c217123667fd73cfc6548"
+    },
+    {
+      "file": "apps/pfotentechnik/test/product-evidence-release-35.6.1.test.mjs",
+      "category": "Testkorrekturen und Prüfverträge 35.6.1",
+      "status": "added",
+      "beforeSha256": null,
+      "candidateSha256": "2a681424f502149e987a013a616491b811e17dbd8ddd7e6450e5b9013a33ebc8"
+    },
+    {
+      "file": "apps/pfotentechnik/test/product-freshness-36.0.test.mjs",
+      "category": "Testkorrekturen und Prüfverträge 35.6.1",
+      "status": "modified",
+      "beforeSha256": "b390ba5b1f9dda82a9182500b9b2f173b06798a3575986eef25eafd7f5da6aa2",
+      "candidateSha256": "2024effedeb03ec31322aad0cf29a3a1d379784094c501cedc02db2a3dd98cd9"
+    },
+    {
+      "file": "apps/pfotentechnik/test/release-gate-37.4.test.mjs",
+      "category": "Testkorrekturen und Prüfverträge 35.6.1",
+      "status": "modified",
+      "beforeSha256": "820c3442343db7cb345a712c38042057a0cfff4b91b6514c662256de8faf5584",
+      "candidateSha256": "bd620432342d2d1c73a4075722b51878404171a40b4de68e4850637252ed3097"
+    }
+  ],
+  "excludedFiles": [
+    "apps/pfotentechnik/src/content/products/cat-mate-elite-355w.md",
+    "apps/pfotentechnik/src/content/products/catit-pixi-smart-trinkbrunnen.md",
+    "apps/pfotentechnik/src/content/products/petlibro-air-wifi-feeder.md",
+    "apps/pfotentechnik/reports/design-system/css-architecture-latest.json",
+    "apps/pfotentechnik/reports/design-system/css-architecture-latest.md",
+    "apps/pfotentechnik/reports/product-standard-3/product-standard-3-latest.json",
+    "apps/pfotentechnik/reports/product-standard-3/product-standard-3-latest.md",
+    "apps/pfotentechnik/reports/seo/image-alt-audit-latest.json",
+    "apps/pfotentechnik/reports/seo/image-alt-audit-latest.md"
+  ]
+}

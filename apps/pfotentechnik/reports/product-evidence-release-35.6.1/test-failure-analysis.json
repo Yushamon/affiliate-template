@@ -17,7 +17,10 @@
     "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
     "actualBefore": "AssertionError [ERR_ASSERTION]: flappie",
     "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
-    "snapshotUpdate": false
+    "snapshotUpdate": false,
+    "expectedEvidence": "expected: /sponsored/,",
+    "actualEvidence": "actual: 'nofollow noopener',",
+    "finalResult": "PASS — original guard remains active; final full candidate suite 1230/1230"
   },
   {
     "id": "E02",
@@ -37,7 +40,10 @@
     "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
     "actualBefore": "Error: ENOENT: no such file or directory, open '/Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/dist/produkt/petlibro-granary-2-vision-duo/index.html'",
     "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
-    "snapshotUpdate": false
+    "snapshotUpdate": false,
+    "expectedEvidence": "Originaler vollständiger Mitschnitt: logs/app-before.log",
+    "actualEvidence": "Error: ENOENT: no such file or directory, open '/Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/dist/produkt/petlibro-granary-2-vision-duo/index.html'",
+    "finalResult": "PASS — original guard remains active; final full candidate suite 1230/1230"
   },
   {
     "id": "S02",
@@ -58,7 +64,10 @@
     "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
     "actualBefore": "AssertionError [ERR_ASSERTION]: petlibro-granary-camera-feeder",
     "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
-    "snapshotUpdate": false
+    "snapshotUpdate": false,
+    "expectedEvidence": "- 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f'",
+    "actualEvidence": "+ '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510'",
+    "finalResult": "PASS — original guard remains active; final full candidate suite 1230/1230"
   },
   {
     "id": "S03",
@@ -79,7 +88,10 @@
     "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
     "actualBefore": "AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md: Änderung entspricht nicht dem geprüften Umfang",
     "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
-    "snapshotUpdate": false
+    "snapshotUpdate": false,
+    "expectedEvidence": "- 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f'",
+    "actualEvidence": "+ '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510'",
+    "finalResult": "PASS — original guard remains active; final full candidate suite 1230/1230"
   },
   {
     "id": "S04",
@@ -100,7 +112,10 @@
     "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
     "actualBefore": "Error: Command failed: /opt/homebrew/Cellar/node/26.3.0/bin/node scripts/decision-consequences/report.mjs --check",
     "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
-    "snapshotUpdate": false
+    "snapshotUpdate": false,
+    "expectedEvidence": "- 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f'",
+    "actualEvidence": "+ '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510'",
+    "finalResult": "PASS — original guard remains active; final full candidate suite 1230/1230"
   },
   {
     "id": "S16",
@@ -121,7 +136,10 @@
     "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
     "actualBefore": "Error: Command failed: /opt/homebrew/Cellar/node/26.3.0/bin/node /Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-experience/audit-decision-facts.mjs --check",
     "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
-    "snapshotUpdate": true
+    "snapshotUpdate": true,
+    "expectedEvidence": "Originaler vollständiger Mitschnitt: logs/app-before.log",
+    "actualEvidence": "Error: Command failed: /opt/homebrew/Cellar/node/26.3.0/bin/node /Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-experience/audit-decision-facts.mjs --check",
+    "finalResult": "PASS — original guard remains active; final full candidate suite 1230/1230"
   },
   {
     "id": "E01",
@@ -141,7 +159,10 @@
     "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
     "actualBefore": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Plattformwert\\s+selbst ist aber nicht produktspezifisch/. Input:",
     "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
-    "snapshotUpdate": false
+    "snapshotUpdate": false,
+    "expectedEvidence": "Originaler vollständiger Mitschnitt: logs/app-before.log",
+    "actualEvidence": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Plattformwert\\s+selbst ist aber nicht produktspezifisch/. Input:",
+    "finalResult": "PASS — original guard remains active; final full candidate suite 1230/1230"
   },
   {
     "id": "S12",
@@ -162,7 +183,10 @@
     "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
     "actualBefore": "AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md",
     "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
-    "snapshotUpdate": false
+    "snapshotUpdate": false,
+    "expectedEvidence": "- 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f'",
+    "actualEvidence": "+ '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510'",
+    "finalResult": "PASS — original guard remains active; final full candidate suite 1230/1230"
   },
   {
     "id": "S14",
@@ -183,7 +207,10 @@
     "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
     "actualBefore": "AssertionError [ERR_ASSERTION]: petlibro-one-rfid-smart-feeder:strengths",
     "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
-    "snapshotUpdate": false
+    "snapshotUpdate": false,
+    "expectedEvidence": "expected: [ 'Verhindert Futterdiebstahl zuverlässig', 'Automatische Portionierung und Zugangskontrolle kombiniert' ],",
+    "actualEvidence": "actual: [ 'RFID-Zugang für das zugeordnete Tier; Mitfressen bleibt zu prüfen', 'Automatische Portionierung und Zugangskontrolle kombiniert' ],",
+    "finalResult": "PASS — original guard remains active; final full candidate suite 1230/1230"
   },
   {
     "id": "S10",
@@ -204,7 +231,10 @@
     "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
     "actualBefore": "AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md",
     "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
-    "snapshotUpdate": false
+    "snapshotUpdate": false,
+    "expectedEvidence": "- 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f'",
+    "actualEvidence": "+ '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510'",
+    "finalResult": "PASS — original guard remains active; final full candidate suite 1230/1230"
   },
   {
     "id": "S09",
@@ -224,7 +254,10 @@
     "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
     "actualBefore": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:",
     "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
-    "snapshotUpdate": false
+    "snapshotUpdate": false,
+    "expectedEvidence": "expected: 12,",
+    "actualEvidence": "actual: 13,",
+    "finalResult": "PASS — original guard remains active; final full candidate suite 1230/1230"
   },
   {
     "id": "S08",
@@ -246,7 +279,10 @@
     "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
     "actualBefore": "Error: Command failed: /opt/homebrew/Cellar/node/26.3.0/bin/node scripts/indexation/report.mjs --check",
     "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
-    "snapshotUpdate": true
+    "snapshotUpdate": true,
+    "expectedEvidence": "Originaler vollständiger Mitschnitt: logs/app-before.log",
+    "actualEvidence": "actual: '{\\n' +",
+    "finalResult": "PASS — original guard remains active; final full candidate suite 1230/1230"
   },
   {
     "id": "S07",
@@ -267,7 +303,10 @@
     "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
     "actualBefore": "AssertionError [ERR_ASSERTION]: petlibro-granary-camera-feeder: Ausgangsdatei inzwischen geändert",
     "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
-    "snapshotUpdate": false
+    "snapshotUpdate": false,
+    "expectedEvidence": "expected: true,",
+    "actualEvidence": "actual: false,",
+    "finalResult": "PASS — original guard remains active; final full candidate suite 1230/1230"
   },
   {
     "id": "S06",
@@ -288,7 +327,10 @@
     "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
     "actualBefore": "AssertionError [ERR_ASSERTION]: petlibro-granary-camera-feeder: unverändertes Bestandsfeld externalEvidence",
     "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
-    "snapshotUpdate": false
+    "snapshotUpdate": false,
+    "expectedEvidence": "expected: { professionalReviews: [ [Object], [Object] ], userReviews: [ [Object], [Object] ], consensus: { strengths: [Array], weaknesses: [Array], editorialAssessment: 'Die unabhängigen Tests bestätigen den Nutzen von Kamera, App und Zeitsteuerung. Nutzerkritik zu einzelnen Kamera- oder Ausgabefehlern bleibt ein Beobachtungspunkt, aber kein Beleg für einen generellen Defekt.' }, note: 'Händlerbewertungen sind Momentaufnahmen zum Abrufdatum. Die beiden Händler-Scores werden nicht gemittelt und nicht in den redaktionellen PfotenTechnik-Score eingerechnet.' },",
+    "actualEvidence": "actual: { professionalReviews: [ [Object], [Object], [Object] ], userReviews: [ [Object], [Object] ], consensus: { strengths: [Array], weaknesses: [Array], editorialAssessment: 'Die unabhängigen Tests bestätigen den Nutzen von Kamera, App und Zeitsteuerung. Nutzerkritik zu einzelnen Kamera- oder Ausgabefehlern bleibt ein Beobachtungspunkt, aber kein Beleg für einen generellen Defekt.' }, note: 'Händlerbewertungen sind Momentaufnahmen zum Abrufdatum. Die beiden Händler-Scores werden nicht gemittelt und nicht in den redaktionellen PfotenTechnik-Score eingerechnet.' },",
+    "finalResult": "PASS — original guard remains active; final full candidate suite 1230/1230"
   },
   {
     "id": "S05",
@@ -309,7 +351,10 @@
     "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
     "actualBefore": "AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md: Änderung entspricht nicht dem geprüften Umfang",
     "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
-    "snapshotUpdate": false
+    "snapshotUpdate": false,
+    "expectedEvidence": "- 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f'",
+    "actualEvidence": "+ '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510'",
+    "finalResult": "PASS — original guard remains active; final full candidate suite 1230/1230"
   },
   {
     "id": "S15",
@@ -330,7 +375,10 @@
     "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
     "actualBefore": "AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md: Änderung entspricht nicht dem geprüften Umfang",
     "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
-    "snapshotUpdate": false
+    "snapshotUpdate": false,
+    "expectedEvidence": "- 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f'",
+    "actualEvidence": "+ '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510'",
+    "finalResult": "PASS — original guard remains active; final full candidate suite 1230/1230"
   },
   {
     "id": "S13",
@@ -350,7 +398,10 @@
     "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
     "actualBefore": "AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md: Änderung entspricht nicht dem geprüften Umfang",
     "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
-    "snapshotUpdate": false
+    "snapshotUpdate": false,
+    "expectedEvidence": "- 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f'",
+    "actualEvidence": "+ '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510'",
+    "finalResult": "PASS — original guard remains active; final full candidate suite 1230/1230"
   },
   {
     "id": "S01",
@@ -371,7 +422,10 @@
     "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
     "actualBefore": "Error: Command failed: /opt/homebrew/Cellar/node/26.3.0/bin/node /Users/boris.buckowitz/ExtensionQA/affiliate-template/apps/pfotentechnik/scripts/product-integration/report.mjs --check",
     "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
-    "snapshotUpdate": false
+    "snapshotUpdate": false,
+    "expectedEvidence": "- 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f'",
+    "actualEvidence": "+ '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510'",
+    "finalResult": "PASS — original guard remains active; final full candidate suite 1230/1230"
   },
   {
     "id": "S11",
@@ -392,6 +446,9 @@
     "expected": "Historischer Vertrag unverändert erfüllt oder exakt dokumentierte 35.6-Revision; technische Schutzbedingungen bleiben aktiv.",
     "actualBefore": "AssertionError [ERR_ASSERTION]: src/content/products/petlibro-granary-camera-feeder.md",
     "impact": "Keine beabsichtigte Produktionsfunktionsänderung in 35.6.1; Tests und Verifikationswerkzeuge.",
-    "snapshotUpdate": false
+    "snapshotUpdate": false,
+    "expectedEvidence": "- 'c70de7c86857dd9e56f98b4b00fa16621f564ed2b8be143bc64198be2b6a0f8f'",
+    "actualEvidence": "+ '88e3f35a9cb543ee25113e6c329d115752a2806a6c3a2e737754e5231f12b510'",
+    "finalResult": "PASS — original guard remains active; final full candidate suite 1230/1230"
   }
 ]

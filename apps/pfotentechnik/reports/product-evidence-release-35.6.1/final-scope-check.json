@@ -1,0 +1,66 @@
+{
+  "baseCommit": "8f3bae47761007b9c5725f5a4add70ff0f898385",
+  "observedFinalHead": "47bcdb6639bb0fc8e5e200059aa0524785ecb2ba",
+  "externalCommitObserved": true,
+  "excludedProductHashesPreserved": true,
+  "candidateImplementationMatchesWorkingTree": true,
+  "implementationMismatches": [],
+  "excludedFiles": [
+    {
+      "file": "apps/pfotentechnik/src/content/products/cat-mate-elite-355w.md",
+      "initialSha256": "8b409abce3aded597c99d2e0d6fba0e7499645c388ab10c9e080a8d885da700c",
+      "preservedSha256": "53cef11238e643941a6250d5ea39ba1cc1f72b1b56b5c9a8bd88b4c00f98742f",
+      "decision": "User explicitly requested preservation outside 35.6.1; not part of candidate."
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/catit-pixi-smart-trinkbrunnen.md",
+      "initialSha256": "367829d061ad6caba7195b4ad984e63c9927651cb13ea4e5d97204844863f48b",
+      "preservedSha256": "f20950897cbed0aa5e46196dc723cd215aa460df990a5e7c78944376db54cb75",
+      "decision": "User explicitly requested preservation outside 35.6.1; not part of candidate."
+    },
+    {
+      "file": "apps/pfotentechnik/src/content/products/petlibro-air-wifi-feeder.md",
+      "initialSha256": "0101bb3adf39eb95404d5f7b9c99b48fbb0dcf40dd62049e099403a6b30152c8",
+      "preservedSha256": "929c3ec953727c0c50dd52229d0383823939de0004cd9c89918ea90a40ad3c77",
+      "decision": "User explicitly requested preservation outside 35.6.1; not part of candidate."
+    },
+    {
+      "file": "apps/pfotentechnik/reports/design-system/css-architecture-latest.json",
+      "reason": "Derived historical audit output outside intended release; preserve current repository version.",
+      "currentSha256": "4951ce6bf2d21d3d80be5281fcd59de1b3a0899939c6eeaa953a79a739ea2c86"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/design-system/css-architecture-latest.md",
+      "reason": "Derived historical audit output outside intended release; preserve current repository version.",
+      "currentSha256": "5636ac7d673ce5e2f302afcb979ecfbb7743b6c71cf21a566c5b5a7e6756d53e"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-standard-3/product-standard-3-latest.json",
+      "reason": "Derived historical audit output outside intended release; preserve current repository version.",
+      "currentSha256": "3108f315bdbc8217054e008f5c7f2c3a9d4c348011636d9fe255e79be3248ea8"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/product-standard-3/product-standard-3-latest.md",
+      "reason": "Derived historical audit output outside intended release; preserve current repository version.",
+      "currentSha256": "37b13b6c76eb1a394506a0918eda05ade6f941f7af0bb3e2b37563b0a746835d"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/seo/image-alt-audit-latest.json",
+      "reason": "Derived historical audit output outside intended release; preserve current repository version.",
+      "currentSha256": "9571087fd0fbb7d7d5318674140b8739493476c6bd1dbc3c8d2a3e9cf972bf34"
+    },
+    {
+      "file": "apps/pfotentechnik/reports/seo/image-alt-audit-latest.md",
+      "reason": "Derived historical audit output outside intended release; preserve current repository version.",
+      "currentSha256": "7556949c143cce37b035bf84a15ed44dc9b03b7665ada41d4d2ad2c65ea7a067"
+    }
+  ],
+  "intendedFileCounts": {
+    "Dokumentation und Prüfnachweise": 185,
+    "Gezielte Snapshot-Aktualisierung": 5,
+    "Befundregister und Validierung": 2,
+    "Testkorrekturen und Prüfverträge 35.6.1": 20,
+    "Redaktion 35.6": 5
+  },
+  "note": "No Git mutation performed by this task. Exclusions apply against the original base, even when included in a concurrently created local commit."
+}

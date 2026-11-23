@@ -5,7 +5,6 @@ import {searchLog as sharedSearchLog,sanitizeLogEntry} from '../search/logging.m
 import {decisionQualitySummary} from '../../domain/productExperience/decisionQuality.mjs';
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { extractOfferFromHtml } from "./extract-offer.mjs";
 import {
   readProductDocument,
   readProductFiles,
@@ -14,11 +13,9 @@ import {
   updateProductOperations,
   updateProductPrice
 } from "./frontmatter-price.mjs";
-import { safeFetchText } from "./safe-fetch.mjs";
 import {
   AVAILABILITY_VALUES,
   PRICE_STATE_VALUES,
-  availabilityFromOffer,
   buildOperationsDashboard,
   compareMaintenanceRows,
   createInFlightDeduper,
@@ -27,7 +24,7 @@ import {
   toOperationsRecord
 } from "../product-operations/policy.mjs";
 import { resolveCommerceOffers } from '../../domain/commerceOffers.mjs';
-import { refreshOfficialOffer, refreshCommerceTasks } from './commerce-refresh.mjs';
+import { fetchStructuredPrice, refreshCommerceOffer, refreshCommerceTasks } from './commerce-refresh.mjs';
 import { productOfferSchema } from '../../content/schema/commerce.mjs';
 import { affiliatePrograms } from '../../config/affiliate-programs.mjs';
 import { httpsDestination } from '../../../../../packages/affiliate-core/src/affiliate/networks.mjs';
@@ -101,13 +98,12 @@ const validateManufacturer = (input) => {
   return { name, slug, key };
 };
 
-export function commerceRefreshEligible(data,{includeInactive=false}={}){
- if(!includeInactive&&(data.maintenanceStatus==='archived'||data.recommendationStatus==='archived'))return false;
+const legacyPriceTarget = data => data.affiliate?.url || data.price?.affiliateUrl || httpsDestination(data.productUrl);
+
+export function commerceRefreshEligible(data){
  if(data.offers?.length)return true;
  if(!allowsAutomaticPriceCheck(data))return false;
- if(includeInactive)return true;
- if(resolveCommerceOffers(data).some(o=>o.amazonLink&&o.canLink))return true;
- const operations=deriveProductOperations(data);return !operations.consciouslyUnavailable&&!operations.archived;
+ return Boolean(legacyPriceTarget(data));
 }
 
 const resultFromDocument = (document, extra = {}) => {
@@ -133,23 +129,16 @@ async function findDocument(slug) {
 
 export const allowsAutomaticPriceCheck = (data = {}) => data?.priceAutomation !== "editorial";
 
-export async function checkDocumentPrice(document, { fetchText = safeFetchText } = {}) {
+export async function checkDocumentPrice(document, options = {}) {
   if (!allowsAutomaticPriceCheck(document.data)) {
     throw new Error("Die automatische Preisprüfung ist für dieses Produkt redaktionell gesperrt.");
   }
   const data = document.data ?? {};
-  const targetUrl = data.affiliate?.url || data.price?.affiliateUrl || data.productUrl;
+  const targetUrl = legacyPriceTarget(data);
   if (!targetUrl) throw new Error("Für dieses Produkt ist keine Händler-URL hinterlegt.");
 
-  const fetched = await fetchText(targetUrl);
-  const offer = extractOfferFromHtml(fetched.html, fetched.resolvedUrl);
-  if (!offer) throw new Error("Auf der Händlerseite wurde kein belastbarer strukturierter Preis gefunden.");
-
-  const checkedAt = new Date().toISOString();
-  const sourceLabel = hostnameLabel(fetched.resolvedUrl);
-  const resolvedMerchant = new URL(fetched.resolvedUrl);
-  const germanMarket = resolvedMerchant.hostname.endsWith('.de') || resolvedMerchant.hostname.startsWith('de.') || /^\/de(?:[-/]|$)/.test(resolvedMerchant.pathname);
-  const availability = germanMarket && offer.currency === "EUR" ? availabilityFromOffer(offer.availability) ?? "unknown" : "unknown";
+  const offer = await fetchStructuredPrice(targetUrl, options);
+  const {checkedAt, sourceLabel, detectedAvailability: availability} = offer;
 
   const persisted = await updateProductPrice(
     document.file,
@@ -187,15 +176,19 @@ export async function checkDocumentPrice(document, { fetchText = safeFetchText }
   });
 }
 
-export async function checkProductPrice(slugInput, {find = findDocument, checkLegacy = checkDocumentPrice, refresh = refreshOfficialOffer, persist = updateProductOffer, log=find===findDocument?searchLog:()=>{}} = {}) {
+export async function checkProductPrice(slugInput, {find = findDocument, checkLegacy = checkDocumentPrice, refresh = refreshCommerceOffer, persist = updateProductOffer, log=find===findDocument?searchLog:()=>{}} = {}) {
   const slug = validateSlug(slugInput);
   return dedupePriceCheck(slug, async () => {
     const document = await find(slug);
     const tasks = [];
-    const legacyTarget = document.data.affiliate?.url || document.data.price?.affiliateUrl;
+    const legacyTarget = legacyPriceTarget(document.data);
     const hasExactOfficialSource = (document.data.offers ?? []).some(offer => {
       if (offer.mappingStatus !== 'verified' || offer.commerceDataProvider !== 'shopify-product') return false;
-      try { return new URL(offer.officialProductUrl).hostname === new URL(legacyTarget).hostname; } catch { return false; }
+      try {
+        const official = new URL(offer.officialProductUrl), legacy = new URL(legacyTarget);
+        return official.origin === legacy.origin && official.pathname.replace(/\/+$/, '') === legacy.pathname.replace(/\/+$/, '') &&
+          (!legacy.searchParams.has('variant') || legacy.searchParams.get('variant') === offer.variantId);
+      } catch { return false; }
     });
     if (allowsAutomaticPriceCheck(document.data) && legacyTarget && !hasExactOfficialSource) {
       tasks.push({id:'legacy',provider:'structured-html',run:()=>checkLegacy(document)});
@@ -205,8 +198,8 @@ export async function checkProductPrice(slugInput, {find = findDocument, checkLe
         try {
           const next = await refresh(offer);
           await persist(document.file, offer.id, current => {
-            if (['officialProductUrl','variantId','expectedSku','program','mappingStatus'].some(key => current[key] !== offer[key])) throw new Error('Händlerzuordnung wurde während der Prüfung geändert; erneut prüfen.');
-            return {...current,price:next.price,priceState:next.priceState,availability:next.availability,availabilityUpdated:next.availabilityUpdated,lastAttemptAt:next.lastAttemptAt,error:undefined};
+            if (['officialProductUrl','variantId','expectedSku','program','mappingStatus','commerceDataProvider'].some(key => current?.[key] !== offer[key])) throw new Error('Händlerzuordnung wurde während der Prüfung geändert; erneut prüfen.');
+            return {...current,price:{...current.price,...next.price},priceState:next.priceState,availability:next.availability,availabilityUpdated:next.availabilityUpdated,lastAttemptAt:next.lastAttemptAt,error:undefined};
           });
           return {checkedAt:next.price.checkedAt};
         } catch(error) {

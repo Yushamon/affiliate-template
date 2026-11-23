@@ -29,15 +29,16 @@ export function resolveCommerceOffers(data, context = {}, {now = Date.now(), pro
   const raw = [...(legacy ? [legacy] : []), ...(data.offers ?? [])];
   return raw.map(offer => {
     const program = programs[offer.program];
+    const directPriceSource = ['manual', 'structured-html'].includes(offer.commerceDataProvider);
     const destination = httpsDestination(offer.officialProductUrl, program?.hosts ?? []);
     const variantMatches = offer.commerceDataProvider !== 'shopify-product' || (destination && !!offer.variantId && new URL(destination).searchParams.get('variant') === offer.variantId);
-    const verified = variantMatches && offer.mappingStatus === 'verified' && !!destination && (offer.legacy || (!!offer.verifiedAt && program?.merchant === offer.merchant && program?.network === offer.network) || (offer.commerceDataProvider==='manual'&&!!offer.verifiedAt&&offer.evidenceSources?.length>0));
+    const verified = variantMatches && offer.mappingStatus === 'verified' && !!destination && (offer.legacy || (!!offer.verifiedAt && program?.merchant === offer.merchant && program?.network === offer.network) || (directPriceSource&&!!offer.verifiedAt&&offer.evidenceSources?.length>0));
     const tracking = { product: data.slug, placement: 'product-commerce', pageType: 'product', ...context };
     let amazonLink = resolveAmazonProductAffiliate(offer.affiliate?.url || offer.officialProductUrl, amazonTrackingId, shortLinks);
     const amazon = offer.merchant === 'amazon' || amazonLink.isAmazon;
     if (amazon && offer.mappingStatus === 'invalid') amazonLink = {...amazonLink, url:null, error:'invalid-product-mapping'};
     const affiliateUrl = amazon ? offer.mappingStatus === 'invalid' ? null : amazonLink.url
-      : !verified ? null : offer.legacy ? offer.affiliate.url : offer.commerceDataProvider==='manual' ? (offer.affiliate?.url||buildNetworkLink(program,destination,tracking)) : buildNetworkLink(program, destination, tracking);
+      : !verified ? null : offer.legacy ? offer.affiliate.url : directPriceSource ? (offer.affiliate?.url||buildNetworkLink(program,destination,tracking)) : buildNetworkLink(program, destination, tracking);
     const age = ageInDays(offer.price?.checkedAt, now);
     const future = new Date(offer.price?.checkedAt).getTime() > now + 60000;
     const domestic = (offer.price?.currency ?? 'EUR') === 'EUR';
